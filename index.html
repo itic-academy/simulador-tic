@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Examen TIC A1/A2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="logo.jpeg" alt="ITIC Academy" class="logo-img">
+                <span class="logo-text">Simulador TIC</span>
+            </div>
+            <div class="stats-bar">
+                <div class="stat">
+                    <span class="stat-icon">📊</span>
+                    <span class="stat-value" id="exams-count">0</span>
+                    <span class="stat-label">Exámenes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">✅</span>
+                    <span class="stat-value" id="pass-rate">0%</span>
+                    <span class="stat-label">Aprobados</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">🏆</span>
+                    <span class="stat-value" id="best-score">0</span>
+                    <span class="stat-label">Mejor Nota</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Pantalla principal - Menú -->
+        <main class="screen" id="menu-screen">
+            <div class="menu-container">
+                <h1>Simulador de Examen</h1>
+                <p class="subtitle">Oposiciones TIC - Cuerpos A1 y A2</p>
+                <p class="questions-info" id="questions-info">Cargando preguntas...</p>
+
+                <div class="exam-cards">
+                    <div class="exam-card" onclick="startExam('A1')">
+                        <div class="exam-badge">A1</div>
+                        <h3>Cuerpo Superior</h3>
+                        <div class="exam-details">
+                            <p><strong>130 preguntas</strong></p>
+                            <p>Corte: 45,5 puntos</p>
+                            <p>+1 acierto / -0,33 fallo</p>
+                        </div>
+                        <button class="btn btn-primary">Comenzar Simulacro</button>
+                    </div>
+
+                    <div class="exam-card" onclick="startExam('A2')">
+                        <div class="exam-badge a2">A2</div>
+                        <h3>Cuerpo de Gestión</h3>
+                        <div class="exam-details">
+                            <p><strong>100 preguntas</strong></p>
+                            <p>Corte: 30 puntos</p>
+                            <p>+1 acierto / -0,33 fallo</p>
+                        </div>
+                        <button class="btn btn-primary">Comenzar Simulacro</button>
+                    </div>
+                </div>
+
+                <div class="menu-buttons">
+                    <button class="btn btn-secondary" onclick="showStats()">
+                        <span class="btn-icon">📊</span>
+                        Historial de Exámenes
+                    </button>
+                    <button class="btn btn-secondary" onclick="showPractice()">
+                        <span class="btn-icon">🎯</span>
+                        Modo Práctica (10 preguntas)
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Pantalla de Examen -->
+        <main class="screen hidden" id="exam-screen">
+            <div class="exam-container">
+                <div class="exam-header">
+                    <div class="exam-info">
+                        <span class="exam-type" id="exam-type">A1</span>
+                        <span class="exam-timer" id="exam-timer">--:--</span>
+                    </div>
+                    <div class="exam-progress">
+                        <span id="question-counter">1 / 130</span>
+                        <div class="mini-progress">
+                            <div class="mini-progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-danger btn-small" onclick="confirmFinish()">Finalizar</button>
+                </div>
+
+                <div class="exam-stats-bar">
+                    <span class="exam-stat correct" id="live-correct">✅ 0</span>
+                    <span class="exam-stat wrong" id="live-wrong">❌ 0</span>
+                    <span class="exam-stat blank" id="live-blank">⬜ 0</span>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-number" id="question-number">Pregunta 1</div>
+                    <h3 class="question-text" id="question-text">
+                        Cargando pregunta...
+                    </h3>
+                </div>
+
+                <div class="options-container" id="options-container">
+                    <!-- Se llena dinámicamente -->
+                </div>
+
+                <div class="exam-navigation">
+                    <button class="btn btn-secondary" id="prev-btn" onclick="prevQuestion()">← Anterior</button>
+                    <button class="btn btn-outline" onclick="leaveBlank()">Dejar en blanco</button>
+                    <button class="btn btn-primary" id="next-btn" onclick="nextQuestion()">Siguiente →</button>
+                </div>
+
+                <div class="question-navigator">
+                    <div class="navigator-title">Navegación rápida:</div>
+                    <div class="navigator-grid" id="navigator-grid">
+                        <!-- Se llena dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Pantalla de Resultados del Examen -->
+        <main class="screen hidden" id="results-screen">
+            <div class="results-container">
+                <div class="results-header">
+                    <h2 id="results-title">Resultado del Simulacro</h2>
+                </div>
+
+                <div class="results-verdict" id="results-verdict">
+                    <!-- Se llena dinámicamente -->
+                </div>
+
+                <div class="score-display">
+                    <div class="score-main">
+                        <span class="score-value" id="final-score">0.00</span>
+                        <span class="score-label">puntos</span>
+                    </div>
+                    <div class="score-cutoff">
+                        <span>Nota de corte: <strong id="cutoff-score">45,5</strong></span>
+                    </div>
+                </div>
+
+                <div class="results-breakdown">
+                    <div class="breakdown-item correct">
+                        <span class="breakdown-icon">✅</span>
+                        <span class="breakdown-value" id="result-correct">0</span>
+                        <span class="breakdown-label">Correctas (+1 c/u)</span>
+                        <span class="breakdown-points" id="points-correct">+0</span>
+                    </div>
+                    <div class="breakdown-item wrong">
+                        <span class="breakdown-icon">❌</span>
+                        <span class="breakdown-value" id="result-wrong">0</span>
+                        <span class="breakdown-label">Incorrectas (-0,33 c/u)</span>
+                        <span class="breakdown-points" id="points-wrong">-0</span>
+                    </div>
+                    <div class="breakdown-item blank">
+                        <span class="breakdown-icon">⬜</span>
+                        <span class="breakdown-value" id="result-blank">0</span>
+                        <span class="breakdown-label">En blanco (0 c/u)</span>
+                        <span class="breakdown-points">+0</span>
+                    </div>
+                </div>
+
+                <div class="results-extra">
+                    <p>Tiempo empleado: <strong id="time-spent">--:--</strong></p>
+                    <p>Precisión: <strong id="accuracy-display">0%</strong></p>
+                </div>
+
+                <div class="results-buttons">
+                    <button class="btn btn-primary btn-large" onclick="reviewExam()">
+                        📋 Revisar Respuestas
+                    </button>
+                    <button class="btn btn-secondary btn-large" onclick="showMenu()">
+                        🏠 Menú Principal
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Pantalla de Revisión -->
+        <main class="screen hidden" id="review-screen">
+            <div class="review-container">
+                <div class="screen-header">
+                    <button class="btn-back" onclick="showResults()">← Volver a Resultados</button>
+                    <h2>Revisión del Examen</h2>
+                </div>
+
+                <div class="review-filters">
+                    <button class="filter-btn active" onclick="filterReview('all')">Todas</button>
+                    <button class="filter-btn" onclick="filterReview('wrong')">❌ Incorrectas</button>
+                    <button class="filter-btn" onclick="filterReview('blank')">⬜ En blanco</button>
+                </div>
+
+                <div class="review-list" id="review-list">
+                    <!-- Se llena dinámicamente -->
+                </div>
+
+                <div class="review-buttons">
+                    <button class="btn btn-secondary btn-large" onclick="showMenu()">
+                        🏠 Menú Principal
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Pantalla de Estadísticas -->
+        <main class="screen hidden" id="stats-screen">
+            <div class="stats-container">
+                <div class="screen-header">
+                    <button class="btn-back" onclick="showMenu()">← Volver</button>
+                    <h2>Historial de Exámenes</h2>
+                </div>
+
+                <div class="stats-summary">
+                    <div class="stat-card">
+                        <span class="stat-card-icon">📝</span>
+                        <span class="stat-card-value" id="stat-total-exams">0</span>
+                        <span class="stat-card-label">Exámenes Realizados</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card-icon">✅</span>
+                        <span class="stat-card-value" id="stat-passed">0</span>
+                        <span class="stat-card-label">Aprobados</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card-icon">📈</span>
+                        <span class="stat-card-value" id="stat-avg-score">0</span>
+                        <span class="stat-card-label">Media de Puntos</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card-icon">🏆</span>
+                        <span class="stat-card-value" id="stat-best">0</span>
+                        <span class="stat-card-label">Mejor Puntuación</span>
+                    </div>
+                </div>
+
+                <h3>Últimos Exámenes</h3>
+                <div class="exam-history" id="exam-history">
+                    <!-- Se llena dinámicamente -->
+                </div>
+
+                <div class="reset-section">
+                    <button class="btn btn-danger" onclick="confirmReset()">
+                        🗑️ Borrar Historial
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
