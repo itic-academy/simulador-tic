@@ -1,0 +1,863 @@
+{
+  "fecha": "2026-10-13",
+  "alcance": "IDs 166–180; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 166,
+      "original": {
+        "id": 166,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El Instituto UPTIME diseñó el sistema estándar de clasificación TIER para evaluar las características de los Centros de Datos en base a sus instalaciones, capacidad y tiempo de actividad. Indique la afirmación correcta respecto a esta clasificación:",
+        "opciones": [
+          "TIER I es la clasificación más básica, con dos líneas de suministro eléctrico y doble fuente de alimentación en los servidores, pero sin contar con un generador de motor que garantice el funcionamiento del Centro antes cortes eléctricos.",
+          "TIER II incluye elementos dedicados de refrigeración, energía eléctrica y generador de motor, pero sin redundancia de los componentes básicos.",
+          "TIER III tiene niveles importantes de tolerancia a fallos al contar con los equipamientos críticos redundados, incluido el suministro eléctrico.",
+          "TIER IV tiene las mismas características de disponibilidad de TIER III, añadiendo seguridad adicional por vigilancia física de las instalaciones."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 166,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El Instituto UPTIME diseñó el sistema estándar de clasificación TIER para evaluar las características de los Centros de Datos en base a sus instalaciones, capacidad y tiempo de actividad. Indique la afirmación correcta respecto a esta clasificación:",
+        "opciones": [
+          "TIER I es la clasificación más básica, con dos líneas de suministro eléctrico y doble fuente de alimentación en los servidores, pero sin contar con un generador de motor que garantice el funcionamiento del Centro antes cortes eléctricos.",
+          "TIER II incluye elementos dedicados de refrigeración, energía eléctrica y generador de motor, pero sin redundancia de los componentes básicos.",
+          "Tier III permite realizar mantenimiento de los componentes y rutas de distribución sin interrumpir la operación del entorno crítico (mantenimiento concurrente).",
+          "TIER IV tiene las mismas características de disponibilidad de TIER III, añadiendo seguridad adicional por vigilancia física de las instalaciones."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Tier III se caracteriza por mantenimiento concurrente; Tier IV añade tolerancia a fallos. Se corrige la respuesta para no confundir redundancia con la tolerancia a fallos exigida a Tier IV.",
+        "clasificacion": {
+          "A1": [
+            "A1-53"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "CPD",
+          "Tier"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://uptimeinstitute.com/tiers",
+              "referencia": "Uptime Institute: Tier classification"
+            }
+          ],
+          "observaciones": "Tier III se caracteriza por mantenimiento concurrente; Tier IV añade tolerancia a fallos. Se corrige la respuesta para no confundir redundancia con la tolerancia a fallos exigida a Tier IV."
+        }
+      }
+    },
+    {
+      "id": 167,
+      "original": {
+        "id": 167,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el ámbito de la arquitectura de computadores, la técnica de segmentación:",
+        "opciones": [
+          "Disminuye el tiempo de ejecución de cada instrucción",
+          "Aumenta la frecuencia de reloj",
+          "Disminuye la frecuencia de reloj",
+          "No disminuye el tiempo de ejecución de cada instrucción"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 167,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es el efecto principal de la segmentación de instrucciones (pipelining) en una CPU?",
+        "opciones": [
+          "Garantiza que cada instrucción individual se ejecute en menos tiempo.",
+          "Elimina todas las dependencias entre instrucciones.",
+          "Obliga a ejecutar cada instrucción completa antes de comenzar la siguiente.",
+          "Mejora el ritmo de instrucciones completadas al solapar etapas, sin garantizar una menor latencia por instrucción."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La segmentación solapa etapas de instrucciones para mejorar el throughput; no garantiza reducir la latencia de una instrucción individual. El original también permitía defender una mayor frecuencia de reloj: se elimina esa ambigüedad.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "pipeline"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://www.cs.umd.edu/~meesh/411/Pipelining_Lecture.pdf",
+              "referencia": "Universidad de Maryland: Pipelining"
+            }
+          ],
+          "observaciones": "La segmentación solapa etapas de instrucciones para mejorar el throughput; no garantiza reducir la latencia de una instrucción individual. El original también permitía defender una mayor frecuencia de reloj: se elimina esa ambigüedad."
+        }
+      }
+    },
+    {
+      "id": 168,
+      "original": {
+        "id": 168,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación a la seguridad en la nube pública, indique la respuesta correcta:",
+        "opciones": [
+          "Importantes proveedores como Microsoft, Amazon y Google han auditado servicios de nube pública y cuentan con certificación de conformidad con el ENS en categoría alta",
+          "El Esquema Nacional de Seguridad no es aplicable a servicios de nube pública, porque su infraestructura no está bajo el control de la Administración",
+          "Según la guía CCN-STIC-803, los servicios de nube pública no pueden tener certificación de conformidad con el ENS, dado que se precisa que las claves de encriptación estén bajo el control de la Administración",
+          "El Esquema Nacional de Seguridad establece que la Administración no puede usar servicios de nube pública"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 168,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación a la seguridad en la nube pública, indique la respuesta correcta:",
+        "opciones": [
+          "Existen servicios de nube pública, como servicios de Microsoft Azure incluidos en su alcance certificado, con conformidad ENS de categoría ALTA.",
+          "El Esquema Nacional de Seguridad no es aplicable a servicios de nube pública, porque su infraestructura no está bajo el control de la Administración",
+          "Según la guía CCN-STIC-803, los servicios de nube pública no pueden tener certificación de conformidad con el ENS, dado que se precisa que las claves de encriptación estén bajo el control de la Administración",
+          "El Esquema Nacional de Seguridad establece que la Administración no puede usar servicios de nube pública"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Existen servicios de nube pública certificados en categoría ALTA, con alcance definido. Se usa un ejemplo documentado y no se generaliza la certificación a todo servicio de un proveedor ni al sistema del cliente.",
+        "clasificacion": {
+          "A1": [
+            "A1-55",
+            "A1-48"
+          ],
+          "A2": [
+            "A2-II-1",
+            "A2-I-9"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "cloud",
+          "ENS"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-ens-spain",
+              "referencia": "Microsoft: ENS High-Level Security Measures"
+            }
+          ],
+          "observaciones": "Existen servicios de nube pública certificados en categoría ALTA, con alcance definido. Se usa un ejemplo documentado y no se generaliza la certificación a todo servicio de un proveedor ni al sistema del cliente."
+        }
+      }
+    },
+    {
+      "id": 169,
+      "original": {
+        "id": 169,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "OpenStack es un proyecto de computación en la nube de código abierto, que permite controlar nodos de cómputo, almacenamiento y recursos de red. Indique cuál de los siguientes NO es un componente de OpenStack:",
+        "opciones": [
+          "Nova, infraestructura de cómputo.",
+          "Swift, infraestructura de almacenamiento.",
+          "Glance, servicios de imagen.",
+          "Tez, gestión de zonas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 169,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "OpenStack es un proyecto de computación en la nube de código abierto, que permite controlar nodos de cómputo, almacenamiento y recursos de red. Indique cuál de los siguientes NO es un componente de OpenStack:",
+        "opciones": [
+          "Nova, infraestructura de cómputo.",
+          "Swift, infraestructura de almacenamiento.",
+          "Glance, servicios de imagen.",
+          "Tez, gestión de zonas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Nova proporciona cómputo, Swift almacenamiento de objetos y Glance imágenes. Tez pertenece al ecosistema Apache de procesamiento de datos, no es un servicio de gestión de zonas de OpenStack.",
+        "clasificacion": {
+          "A1": [
+            "A1-55"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "OpenStack"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://docs.openstack.org/2025.1/",
+              "referencia": "OpenStack: documentación de servicios"
+            }
+          ],
+          "observaciones": "Nova proporciona cómputo, Swift almacenamiento de objetos y Glance imágenes. Tez pertenece al ecosistema Apache de procesamiento de datos, no es un servicio de gestión de zonas de OpenStack."
+        }
+      }
+    },
+    {
+      "id": 170,
+      "original": {
+        "id": 170,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Auto-tiering es una funcionalidad de los sistemas de almacenamiento que permite:",
+        "opciones": [
+          "Posicionar los datos en diferentes clases de almacenamiento según la frecuencia de acceso.",
+          "Utilizar de forma convergente almacenamiento NAS y SAN sin tener que utilizar diferentes dispositivos.",
+          "Eliminar datos redundados o duplicados con el objetivo de utilizar menor cantidad de espacio."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 170,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Auto-tiering es una funcionalidad de los sistemas de almacenamiento que permite:",
+        "opciones": [
+          "Posicionar los datos en diferentes clases de almacenamiento según la frecuencia de acceso.",
+          "Utilizar de forma convergente almacenamiento NAS y SAN sin tener que utilizar diferentes dispositivos.",
+          "Eliminar datos redundados o duplicados con el objetivo de utilizar menor cantidad de espacio."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La ubicación automática en niveles puede basarse en la frecuencia de acceso. No debe confundirse con almacenamiento unificado ni deduplicación.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "auto-tiering"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://www.redbooks.ibm.com/abstracts/tips1072.html",
+              "referencia": "IBM: Easy Tier"
+            }
+          ],
+          "observaciones": "La ubicación automática en niveles puede basarse en la frecuencia de acceso. No debe confundirse con almacenamiento unificado ni deduplicación."
+        }
+      }
+    },
+    {
+      "id": 171,
+      "original": {
+        "id": 171,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación a las arquitecturas de almacenamiento, indique la afirmación CORRECTA respecto al nivel RAID 1:",
+        "opciones": [
+          "Realiza una división de datos a nivel de bloques y distribuye la información de paridad entre todos los discos miembros del conjunto.",
+          "Distribuye los datos equitativamente entre dos o más discos (división o ‘striping’), sin información de paridad.",
+          "Distribuye los datos equitativamente entre dos o más discos (división o ‘striping’), con un disco adicional dedicado a información de paridad.",
+          "Crea una copia exacta (espejo o ‘mirroring’) de un conjunto de datos en dos o más discos."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 171,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación a las arquitecturas de almacenamiento, indique la afirmación CORRECTA respecto al nivel RAID 1:",
+        "opciones": [
+          "Realiza una división de datos a nivel de bloques y distribuye la información de paridad entre todos los discos miembros del conjunto.",
+          "Distribuye los datos equitativamente entre dos o más discos (división o ‘striping’), sin información de paridad.",
+          "Distribuye los datos equitativamente entre dos o más discos (división o ‘striping’), con un disco adicional dedicado a información de paridad.",
+          "Crea una copia exacta (espejo o ‘mirroring’) de un conjunto de datos en dos o más discos."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "RAID 1 mantiene copias espejo en discos distintos. Las alternativas describen RAID 5, RAID 0 y RAID 4.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "RAID-1"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://public.dhe.ibm.com/storage/7133/pdfs/PCRaidInst.pdf",
+              "referencia": "IBM: SSA RAID Adapter, RAID-1"
+            }
+          ],
+          "observaciones": "RAID 1 mantiene copias espejo en discos distintos. Las alternativas describen RAID 5, RAID 0 y RAID 4."
+        }
+      }
+    },
+    {
+      "id": 172,
+      "original": {
+        "id": 172,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si hablamos de arquitecturas de almacenamiento, identificar la arquitectura en la que se realiza acceso a ficheros directamente contra el servidor de ficheros o la cabina de almacenamiento donde se gestiona el sistema de ficheros, delegando la transformación de fichero a bloque de bits en la red de almacenamiento:",
+        "opciones": [
+          "Arquitectura SAN (Storage Area Network).",
+          "Arquitectura DAS (Direct Attached Storage).",
+          "Arquitectura NAS (Network Attached Storage).",
+          "Arquitectura Disco Interno."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 172,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué arquitectura proporciona acceso por red a archivos, dejando la gestión del sistema de archivos en el servidor o dispositivo de almacenamiento?",
+        "opciones": [
+          "Arquitectura SAN (Storage Area Network).",
+          "Arquitectura DAS (Direct Attached Storage).",
+          "Arquitectura NAS (Network Attached Storage).",
+          "Arquitectura Disco Interno."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "NAS ofrece acceso a archivos y gestiona el sistema de archivos en el servidor o dispositivo. Se elimina la descripción confusa de transformar archivos en bloques en la red.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "NAS"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/think/topics/network-attached-storage",
+              "referencia": "IBM: Network Attached Storage"
+            }
+          ],
+          "observaciones": "NAS ofrece acceso a archivos y gestiona el sistema de archivos en el servidor o dispositivo. Se elimina la descripción confusa de transformar archivos en bloques en la red."
+        }
+      }
+    },
+    {
+      "id": 173,
+      "original": {
+        "id": 173,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué define el estándar WSDL del W3C?",
+        "opciones": [
+          "Un esquema XML para sindicación de contenidos a través de lectores RSS",
+          "Una gramática XML para describir la interfaz de un servicio web",
+          "Pautas de Accesibilidad al Contenido en la Web",
+          "WSDL no es un estándar del W3C"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 173,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué describe WSDL 2.0, Recomendación del W3C?",
+        "opciones": [
+          "Un esquema XML para sindicación de contenidos a través de lectores RSS",
+          "Una gramática XML para describir la interfaz de un servicio web",
+          "Pautas de Accesibilidad al Contenido en la Web",
+          "WSDL no es un estándar del W3C"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "WSDL describe servicios web mediante XML, incluidas sus interfaces y enlaces. Se especifica la versión 2.0, que es Recomendación W3C, frente a la Nota WSDL 1.1.",
+        "clasificacion": {
+          "A1": [
+            "A1-58",
+            "A1-65"
+          ],
+          "A2": [
+            "A2-II-6",
+            "A2-III-12"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "WSDL"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://www.w3.org/TR/wsdl20/",
+              "referencia": "W3C: WSDL 2.0, resumen"
+            }
+          ],
+          "observaciones": "WSDL describe servicios web mediante XML, incluidas sus interfaces y enlaces. Se especifica la versión 2.0, que es Recomendación W3C, frente a la Nota WSDL 1.1."
+        }
+      }
+    },
+    {
+      "id": 174,
+      "original": {
+        "id": 174,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el ámbito de los sistemas operativos y la memoria virtual, ¿qué es Translation Lookaside Buffer (TLB)?",
+        "opciones": [
+          "Memoria caché que contiene partes de la información de la tabla de virtualización.",
+          "Memoria caché que contiene partes de la información de la memoria secundaria.",
+          "Memoria caché que contiene partes de la información de la memoria principal.",
+          "Memoria caché que contiene partes de la información de la tabla de paginación."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 174,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un sistema con memoria virtual paginada, ¿qué información almacena principalmente la Translation Lookaside Buffer (TLB)?",
+        "opciones": [
+          "Los contenidos completos de todos los archivos abiertos.",
+          "Los bloques de datos pendientes de escribir en disco.",
+          "Las instrucciones decodificadas pendientes de ejecución.",
+          "Traducciones de páginas virtuales a marcos físicos y atributos asociados."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La TLB almacena traducciones de direcciones, no los datos de las páginas. Se elimina el solapamiento de distractores que hablaban genéricamente de información en memoria principal.",
+        "clasificacion": {
+          "A1": [
+            "A1-59"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "TLB",
+          "memoria-virtual"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://cdn.kernel.org/doc/html/latest/mm/page_tables.html",
+              "referencia": "Linux Kernel: Page Tables"
+            }
+          ],
+          "observaciones": "La TLB almacena traducciones de direcciones, no los datos de las páginas. Se elimina el solapamiento de distractores que hablaban genéricamente de información en memoria principal."
+        }
+      }
+    },
+    {
+      "id": 175,
+      "original": {
+        "id": 175,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Dado un fichero de texto, se quieren obtener todas las líneas que no contengan la palabra “examen”. ¿Con qué herramienta de Linux podría hacerse esta acción?",
+        "opciones": [
+          "find",
+          "grep",
+          "locate",
+          "which"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 175,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Dado un fichero de texto, se quieren obtener todas las líneas que no contengan la palabra “examen”. ¿Con qué herramienta de Linux podría hacerse esta acción?",
+        "opciones": [
+          "find",
+          "grep",
+          "locate",
+          "which"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "grep -v invierte la selección; grep -vw examen fichero selecciona líneas sin la palabra completa examen, con distinción de mayúsculas por defecto.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2",
+            "A2-IV-1"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Linux",
+          "grep"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://man7.org/linux/man-pages/man1/grep.1.html",
+              "referencia": "GNU grep, opciones -v y -w"
+            }
+          ],
+          "observaciones": "grep -v invierte la selección; grep -vw examen fichero selecciona líneas sin la palabra completa examen, con distinción de mayúsculas por defecto."
+        }
+      }
+    },
+    {
+      "id": 176,
+      "original": {
+        "id": 176,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El directorio /etc en el sistema Linux:",
+        "opciones": [
+          "Es el directorio en el que los programas pueden dejar sus ficheros temporales",
+          "Es el directorio en el que se almacenan ficheros de configuración del sistema",
+          "No es un directorio estándar del sistema Linux",
+          "Contiene las librerías necesarias para la ejecución de los programas del sistema (no de los programas de los usuarios)"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 176,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El directorio /etc en el sistema Linux:",
+        "opciones": [
+          "Es el directorio en el que los programas pueden dejar sus ficheros temporales",
+          "Es el directorio en el que se almacenan ficheros de configuración del sistema",
+          "No es un directorio estándar del sistema Linux",
+          "Contiene las librerías necesarias para la ejecución de los programas del sistema (no de los programas de los usuarios)"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "/etc contiene configuración específica del sistema. Los temporales y bibliotecas se ubican en otros directorios de la jerarquía.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2",
+            "A2-IV-1"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Linux",
+          "FHS"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s07.html",
+              "referencia": "FHS 3.0, 3.7: /etc"
+            }
+          ],
+          "observaciones": "/etc contiene configuración específica del sistema. Los temporales y bibliotecas se ubican en otros directorios de la jerarquía."
+        }
+      }
+    },
+    {
+      "id": 177,
+      "original": {
+        "id": 177,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las afirmaciones respecto a las DLL en el sistema operativo Windows es INCORRECTA?",
+        "opciones": [
+          "Las DLL permiten compartir código común entre diferentes programas",
+          "Al modificar una DLL, los programas que la usan deben recompilarse",
+          "Es posible que un programa deje de funcionar correctamente después de que se haya modificado una DLL que dicho programa usa",
+          "Las DLL que un programa usa se vinculan de forma dinámica al programa cuando éste se ejecuta"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 177,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las afirmaciones respecto a las DLL en el sistema operativo Windows es INCORRECTA?",
+        "opciones": [
+          "Las DLL permiten compartir código común entre diferentes programas",
+          "Cualquier modificación de una DLL obliga siempre a recompilar todos los programas que la utilizan, aunque conserve la compatibilidad binaria.",
+          "Es posible que un programa deje de funcionar correctamente después de que se haya modificado una DLL que dicho programa usa",
+          "Las DLL que un programa usa se vinculan de forma dinámica al programa cuando éste se ejecuta"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Actualizar una DLL compatible no obliga a recompilar los consumidores. Cambios incompatibles sí pueden romperlos. Se explicita el carácter absoluto del distractor incorrecto.",
+        "clasificacion": {
+          "A1": [
+            "A1-61"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Windows",
+          "DLL"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/setup-upgrade-and-drivers/dynamic-link-library",
+              "referencia": "Microsoft: Dynamic link library"
+            }
+          ],
+          "observaciones": "Actualizar una DLL compatible no obliga a recompilar los consumidores. Cambios incompatibles sí pueden romperlos. Se explicita el carácter absoluto del distractor incorrecto."
+        }
+      }
+    },
+    {
+      "id": 178,
+      "original": {
+        "id": 178,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el desarrollo de aplicaciones nativas con iOS, la capa que proporciona la infraestructura básica de la aplicación y el soporte para tecnologías clave como la gestión multitarea, la entrada táctil o las notificaciones push se denomina:",
+        "opciones": [
+          "Núcleo del sistema operativo (Core OS Layer).",
+          "Capa de servicios del núcleo (Core Services Layer).",
+          "Capa Cocoa Touch (Cocoa Touch Layer).",
+          "Capa multimedia (Media Layer)."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 178,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la arquitectura clásica de iOS descrita en la documentación archivada de Apple «What Is Cocoa?», ¿cómo se denomina la capa de frameworks de aplicación que incluye UIKit?",
+        "opciones": [
+          "Núcleo del sistema operativo (Core OS Layer).",
+          "Capa de servicios del núcleo (Core Services Layer).",
+          "Capa Cocoa Touch (Cocoa Touch Layer).",
+          "Capa multimedia (Media Layer)."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La arquitectura clásica documentada por Apple llama Cocoa Touch a la capa de frameworks de aplicación, con UIKit como componente central. Se delimita a esa documentación histórica, sin presentar las cuatro capas como descripción exhaustiva de las API actuales.",
+        "clasificacion": {
+          "A1": [
+            "A1-62"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "iOS",
+          "Cocoa-Touch"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaFundamentals/WhatIsCocoa/WhatIsCocoa.html",
+              "referencia": "Apple, documentación archivada: How Cocoa Fits into iOS"
+            }
+          ],
+          "observaciones": "La arquitectura clásica documentada por Apple llama Cocoa Touch a la capa de frameworks de aplicación, con UIKit como componente central. Se delimita a esa documentación histórica, sin presentar las cuatro capas como descripción exhaustiva de las API actuales."
+        }
+      }
+    },
+    {
+      "id": 179,
+      "original": {
+        "id": 179,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el marco de un SGBD, si hablamos de que los resultados de una transacción o bien pasan a ser completados todos (commit) o bien pasan a ser todos deshechos (rollback), ¿de qué propiedad ACID estamos hablando?",
+        "opciones": [
+          "Durabilidad.",
+          "Aislamiento.",
+          "Consistencia.",
+          "Atomicidad."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 179,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el marco de un SGBD, si hablamos de que los resultados de una transacción o bien pasan a ser completados todos (commit) o bien pasan a ser todos deshechos (rollback), ¿de qué propiedad ACID estamos hablando?",
+        "opciones": [
+          "Durabilidad.",
+          "Aislamiento.",
+          "Consistencia.",
+          "Atomicidad."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La atomicidad proporciona la propiedad de todo o nada; durabilidad, aislamiento y consistencia describen otras garantías.",
+        "clasificacion": {
+          "A1": [
+            "A1-63",
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5",
+            "A2-III-4"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "ACID",
+          "atomicidad"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+              "referencia": "PostgreSQL: Transactions"
+            }
+          ],
+          "observaciones": "La atomicidad proporciona la propiedad de todo o nada; durabilidad, aislamiento y consistencia describen otras garantías."
+        }
+      }
+    },
+    {
+      "id": 180,
+      "original": {
+        "id": 180,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En las aplicaciones web, respecto de la validación de datos de entrada basada en Javascript y otros lenguajes de scripting en el navegador del usuario, ¿cuál de las siguientes afirmaciones es INCORRECTA?",
+        "opciones": [
+          "Permite aumentar la eficiencia al reducir las llamadas al servidor",
+          "Tiene como ventaja que el desarrollador puede garantizar la seguridad implementando las validaciones exclusivamente en el navegador",
+          "No impide ataques de tipo Cross-site scripting (XSS)",
+          "Es posible implementarla aunque no se use HTML5"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 180,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En las aplicaciones web, respecto de la validación de datos de entrada basada en Javascript y otros lenguajes de scripting en el navegador del usuario, ¿cuál de las siguientes afirmaciones es INCORRECTA?",
+        "opciones": [
+          "Permite aumentar la eficiencia al reducir las llamadas al servidor",
+          "Tiene como ventaja que el desarrollador puede garantizar la seguridad implementando las validaciones exclusivamente en el navegador",
+          "La validación ejecutada únicamente en el navegador no garantiza por sí sola la prevención de ataques XSS.",
+          "Es posible implementarla aunque no se use HTML5"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La validación del navegador es eludible y debe complementarse con validación en servidor. La prevención de XSS también requiere codificación de salida o sanitización según el contexto; se precisa que la validación cliente no garantiza por sí sola esa protección.",
+        "clasificacion": {
+          "A1": [
+            "A1-65",
+            "A1-126"
+          ],
+          "A2": [
+            "A2-III-12",
+            "A2-II-13"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "validacion",
+          "seguridad-web"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-13",
+          "fuentes": [
+            {
+              "url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+              "referencia": "OWASP: Input Validation Cheat Sheet"
+            }
+          ],
+          "observaciones": "La validación del navegador es eludible y debe complementarse con validación en servidor. La prevención de XSS también requiere codificación de salida o sanitización según el contexto; se precisa que la validación cliente no garantiza por sí sola esa protección."
+        }
+      }
+    }
+  ]
+}
