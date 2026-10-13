@@ -232,6 +232,13 @@ function displayQuestion() {
 
     // Texto de la pregunta
     document.getElementById('question-text').textContent = question.texto;
+    let metadata = document.getElementById('question-metadata');
+    if (!metadata) {
+        metadata = document.createElement('p');
+        metadata.id = 'question-metadata';
+        document.getElementById('question-text').after(metadata);
+    }
+    metadata.textContent = questionTopicLabel(question);
 
     // Opciones
     const optionsContainer = document.getElementById('options-container');
@@ -451,6 +458,15 @@ function reviewExam() {
     showScreen('review-screen');
 }
 
+function questionTopicLabel(question) {
+    if (!question.clasificacion) return 'Tema pendiente de clasificar · Vigencia sin revisar';
+    const topics = [...question.clasificacion.A1, ...question.clasificacion.A2];
+    const labels = topics.map(topic => topic.replace('A1-', 'A1 · Tema ').replace('A2-', 'A2 · ').replace(/-(\d+)$/, ' · Tema $1'));
+    const status = {vigente: 'Verificada', corregida: 'Corregida', historica: 'Histórica verificada', pendiente_fuente: 'Pendiente de verificar', pendiente_ambiguedad: 'Pendiente: enunciado ambiguo'};
+    const academy = question.clasificacion.bloque_academia;
+    return [...labels, academy == null ? 'Bloque de academia pendiente' : `Academia · Bloque ${academy}`, status[question.revision?.estado] || 'Vigencia sin revisar'].join(' | ');
+}
+
 function renderReview(filter) {
     const container = document.getElementById('review-list');
     container.innerHTML = '';
@@ -491,6 +507,23 @@ function renderReview(filter) {
             </div>
         `;
 
+        const metadata = document.createElement('p');
+        metadata.textContent = questionTopicLabel(question);
+        item.appendChild(metadata);
+        if (question.comentarios) {
+            const explanation = document.createElement('p');
+            explanation.textContent = question.comentarios;
+            item.appendChild(explanation);
+        }
+        for (const source of question.revision?.fuentes || []) {
+            const link = document.createElement('a');
+            link.href = source.url;
+            link.textContent = `Fuente: ${source.referencia || `artículo ${source.articulo}`}`;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            item.appendChild(link);
+            item.appendChild(document.createElement('br'));
+        }
         container.appendChild(item);
     });
 
