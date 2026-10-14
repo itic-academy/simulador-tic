@@ -9930,13 +9930,38 @@
         "Interface"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Adapter convierte la interfaz de una clase en otra esperada por el cliente para permitir colaborar a elementos con interfaces incompatibles.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Adapter"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.cs.cmu.edu/~aldrich/courses/654-sp09/slides/5-patterns.pdf",
+            "referencia": "CMU: Design Patterns, Adapter"
+          }
+        ],
+        "observaciones": "Adapter convierte la interfaz de una clase en otra esperada por el cliente para permitir colaborar a elementos con interfaces incompatibles."
+      }
     },
     {
       "id": 252,
       "bloque": 0,
       "tema": 0,
-      "texto": "En programación orientada a objetos, la capacidad que tienen los objetos de una clase de responder al mismo mensaje de distinta manera en función de los parámetros durante su invocación, se denomina:",
+      "texto": "En programación orientada a objetos, ¿cómo se denomina la capacidad de invocar una misma operación mediante una interfaz común y ejecutar distintas implementaciones según el tipo dinámico del objeto receptor?",
       "opciones": [
         "Herencia",
         "Polimorfismo",
@@ -9944,7 +9969,32 @@
         "Abstracción"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El original describía de forma imprecisa la sobrecarga según parámetros. Se concreta el polimorfismo por subtipado: la implementación ejecutada depende del tipo dinámico del receptor.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "polimorfismo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html",
+            "referencia": "Oracle: Polymorphism"
+          }
+        ],
+        "observaciones": "El original describía de forma imprecisa la sobrecarga según parámetros. Se concreta el polimorfismo por subtipado: la implementación ejecutada depende del tipo dinámico del receptor."
+      }
     },
     {
       "id": 253,
@@ -9958,7 +10008,32 @@
         "Diagrama de elementos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Diagrama de elementos no es una categoría de la taxonomía UML. Los otros tres corresponden a secuencia, comunicación y máquina de estados.",
+      "clasificacion": {
+        "A1": [
+          "A1-90"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5/PDF",
+            "referencia": "OMG UML 2.5: taxonomía de diagramas"
+          }
+        ],
+        "observaciones": "Diagrama de elementos no es una categoría de la taxonomía UML. Los otros tres corresponden a secuencia, comunicación y máquina de estados."
+      }
     },
     {
       "id": 254,
@@ -9972,21 +10047,73 @@
         "Persistencia."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La encapsulación oculta el estado interno y permite controlar su acceso mediante operaciones públicas. No todos los lenguajes impiden técnicamente acceder a cualquier dato, pero el principio descrito es correcto.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "encapsulacion"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+            "referencia": "Oracle: What Is an Object?"
+          }
+        ],
+        "observaciones": "La encapsulación oculta el estado interno y permite controlar su acceso mediante operaciones públicas. No todos los lenguajes impiden técnicamente acceder a cualquier dato, pero el principio descrito es correcto."
+      }
     },
     {
       "id": 255,
       "bloque": 0,
       "tema": 0,
-      "texto": "En programación orientada a objetos, una clase que no puede poseer instancias se denomina:",
+      "texto": "En programación orientada a objetos, ¿qué tipo de clase sirve como base para otras clases y no puede instanciarse directamente?",
       "opciones": [
         "Genérica.",
         "Final.",
-        "Estática.",
+        "Concreta.",
         "Abstracta."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Una clase abstracta no se instancia directamente, pero puede tener subclases concretas instanciables. Se elimina estática como distractor, porque en C# una clase estática tampoco se puede instanciar.",
+      "clasificacion": {
+        "A1": [
+          "A1-67",
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9",
+          "A2-II-3"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "clases-abstractas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html",
+            "referencia": "Oracle: Abstract Methods and Classes"
+          }
+        ],
+        "observaciones": "Una clase abstracta no se instancia directamente, pero puede tener subclases concretas instanciables. Se elimina estática como distractor, porque en C# una clase estática tampoco se puede instanciar."
+      }
     },
     {
       "id": 256,
@@ -10000,7 +10127,33 @@
         "Transparencia de ejecución"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La transparencia de ubicación oculta la información de localización al identificar y enlazar interfaces de objetos distribuidos.",
+      "clasificacion": {
+        "A1": [
+          "A1-93",
+          "A1-119"
+        ],
+        "A2": [
+          "A2-II-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "transparencia-ubicacion"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.903-200910-I%21%21PDF-E&lang=s&type=items",
+            "referencia": "ITU-T X.903: location transparency"
+          }
+        ],
+        "observaciones": "La transparencia de ubicación oculta la información de localización al identificar y enlazar interfaces de objetos distribuidos."
+      }
     },
     {
       "id": 257,
@@ -10014,7 +10167,32 @@
         "Diagrama de perspectiva."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Perspectiva no es un tipo de diagrama UML. Secuencia, actividades y máquina de estados sí lo son.",
+      "clasificacion": {
+        "A1": [
+          "A1-90"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5/PDF",
+            "referencia": "OMG UML 2.5: taxonomía de diagramas"
+          }
+        ],
+        "observaciones": "Perspectiva no es un tipo de diagrama UML. Secuencia, actividades y máquina de estados sí lo son."
+      }
     },
     {
       "id": 258,
@@ -10027,7 +10205,32 @@
         "C++"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Smalltalk es el ejemplo de lenguaje orientado a objetos puro entre las alternativas. C++ es multiparadigma. La clasificación no significa que ninguna versión de COBOL admita orientación a objetos.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Smalltalk"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://scg.unibe.ch/archive/lectures/ST-Smalltalk/ST2002.pdf",
+            "referencia": "Universidad de Berna: Object-Oriented Design with Smalltalk, a Pure OO Language"
+          }
+        ],
+        "observaciones": "Smalltalk es el ejemplo de lenguaje orientado a objetos puro entre las alternativas. C++ es multiparadigma. La clasificación no significa que ninguna versión de COBOL admita orientación a objetos."
+      }
     },
     {
       "id": 259,
@@ -10041,13 +10244,41 @@
         "Describe la relación entre datos y tablas."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Los casos de uso representan funcionalidades observables y sus relaciones con actores; no son un esquema de tablas.",
+      "clasificacion": {
+        "A1": [
+          "A1-88",
+          "A1-90"
+        ],
+        "A2": [
+          "A2-III-3",
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML",
+        "casos-uso"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5/PDF",
+            "referencia": "OMG UML 2.5: Use Cases"
+          }
+        ],
+        "observaciones": "Los casos de uso representan funcionalidades observables y sus relaciones con actores; no son un esquema de tablas."
+      }
     },
     {
       "id": 260,
       "bloque": 0,
       "tema": 0,
-      "texto": "Son las siglas de la implementación de la comunicación entre programas para sistemas UNIX, cuyos mecanismos incluyen tuberías, colas de mensajes y segmentos de memoria compartida:",
+      "texto": "¿Qué siglas designan la comunicación entre procesos, que en sistemas UNIX puede realizarse mediante tuberías, colas de mensajes o memoria compartida?",
       "opciones": [
         "IPC",
         "RMI",
@@ -10055,7 +10286,34 @@
         "RPC"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "IPC significa Interprocess Communication. Incluye distintos mecanismos de comunicación entre procesos, no una implementación única ni exclusiva de UNIX.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "IPC",
+        "Unix"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man7/sysvipc.7.html",
+            "referencia": "Linux man-pages: sysvipc(7); pipe(7)"
+          }
+        ],
+        "observaciones": "IPC significa Interprocess Communication. Incluye distintos mecanismos de comunicación entre procesos, no una implementación única ni exclusiva de UNIX."
+      }
     },
     {
       "id": 261,
@@ -10069,7 +10327,32 @@
         "Se heredan los atributos y la implementación de las operaciones."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "En esta clasificación, la herencia estricta conserva sin redefinir las propiedades heredadas y permite añadir otras nuevas. No debe confundirse con una prohibición de extender la clase.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "herencia-estricta"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.witpress.com/Secure/elibrary/papers/SQM94/SQM94029FU2.pdf",
+            "referencia": "Software Quality Management 1994, sección 4.1: Strict inheritance"
+          }
+        ],
+        "observaciones": "En esta clasificación, la herencia estricta conserva sin redefinir las propiedades heredadas y permite añadir otras nuevas. No debe confundirse con una prohibición de extender la clase."
+      }
     },
     {
       "id": 262,
@@ -10083,21 +10366,72 @@
         "La capacidad de producir componentes reutilizables para otros diseños o aplicaciones"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La misma operación puede invocar implementaciones distintas según el receptor. No se confunde con ocultación de información, modularidad o reutilización.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "polimorfismo"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html",
+            "referencia": "Oracle: Polymorphism"
+          }
+        ],
+        "observaciones": "La misma operación puede invocar implementaciones distintas según el receptor. No se confunde con ocultación de información, modularidad o reutilización."
+      }
     },
     {
       "id": 263,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el contexto de la notación UML 2.4.1, indique cuál de los siguientes diagramas NO se incluye en este lenguaje de modelado:",
+      "texto": "En UML 2, ¿cuál de los siguientes nombres NO corresponde a un tipo de diagrama del lenguaje?",
       "opciones": [
-        "Diagrama de colaboración",
+        "Diagrama de comunicación.",
         "Diagrama de secuencia",
         "Diagrama de actuación",
         "Diagrama de despliegue"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se actualiza colaboración a comunicación en las alternativas de UML 2. El diagrama de actuación no pertenece a su taxonomía.",
+      "clasificacion": {
+        "A1": [
+          "A1-90"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML",
+        "comunicacion"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5/PDF",
+            "referencia": "OMG UML 2.5: diagramas de interacción"
+          }
+        ],
+        "observaciones": "Se actualiza colaboración a comunicación en las alternativas de UML 2. El diagrama de actuación no pertenece a su taxonomía."
+      }
     },
     {
       "id": 264,
@@ -10111,21 +10445,75 @@
         "Diagrama de despliegue"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Actividades describe comportamiento. Paquetes, componentes y despliegue son diagramas estructurales.",
+      "clasificacion": {
+        "A1": [
+          "A1-89",
+          "A1-90",
+          "A1-92"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML",
+        "estructura"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5/PDF",
+            "referencia": "OMG UML 2.5: taxonomía de diagramas"
+          }
+        ],
+        "observaciones": "Actividades describe comportamiento. Paquetes, componentes y despliegue son diagramas estructurales."
+      }
     },
     {
       "id": 265,
       "bloque": 0,
       "tema": 0,
-      "texto": "La programación estructurada recurre únicamente a tres tipos de instrucciones de control. ¿Cuál de las siguientes NO es una de ellas?",
+      "texto": "¿Cuál NO pertenece a las tres estructuras básicas de control de la programación estructurada?",
       "opciones": [
         "Secuencia.",
         "Selección (Instrucción condicional).",
-        "Iteración (bucle de instrucciones) con condición inicial.",
+        "Iteración o repetición.",
         "Transferencia incondicional (GOTO)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Las tres estructuras básicas son secuencia, selección e iteración. GOTO es transferencia incondicional; la iteración no se limita conceptualmente a comprobar la condición al principio.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-II-3",
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "programacion-estructurada"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/ztpf/1.1.2025?topic=introduction-overview-structured-forms",
+            "referencia": "IBM: An overview of structured forms"
+          }
+        ],
+        "observaciones": "Las tres estructuras básicas son secuencia, selección e iteración. GOTO es transferencia incondicional; la iteración no se limita conceptualmente a comprobar la condición al principio."
+      }
     },
     {
       "id": 266,
@@ -10139,21 +10527,73 @@
         "De clases, de herencia compuesta, de secuencia, de comunicación, de clases."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La segunda opción contiene únicamente tipos UML. DFD y entidad-relación no pertenecen a esa taxonomía; herencia compuesta tampoco es una categoría de diagrama UML.",
+      "clasificacion": {
+        "A1": [
+          "A1-89",
+          "A1-90"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5/PDF",
+            "referencia": "OMG UML 2.5: taxonomía de diagramas"
+          }
+        ],
+        "observaciones": "La segunda opción contiene únicamente tipos UML. DFD y entidad-relación no pertenecen a esa taxonomía; herencia compuesta tampoco es una categoría de diagrama UML."
+      }
     },
     {
       "id": 267,
       "bloque": 0,
       "tema": 0,
-      "texto": "Es verdadero que:",
+      "texto": "Respecto al patrón Modelo-Vista-Controlador (MVC), ¿cuál de las siguientes afirmaciones es correcta?",
       "opciones": [
-        "El controlador representa objetos y sus interacciones del mundo real.",
-        "El controlador implementa la “Lógica del Negocio”.",
-        "La vista extrae datos de un XML para mostrarla al usuario.",
-        "MVC es un patrón de diseño orientado a objetos."
+        "El controlador es la única capa que representa todos los datos persistentes del dominio.",
+        "Toda la lógica de negocio debe implementarse exclusivamente en el controlador.",
+        "La vista debe obtener obligatoriamente todos sus datos de documentos XML.",
+        "MVC separa responsabilidades de modelo, vista y controlador."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "MVC separa modelo, vista y controlador. La vista no depende obligatoriamente de XML y la lógica de negocio no debe concentrarse en el controlador. Se precisa el enunciado y se eliminan distractores que podían ser ciertos en implementaciones concretas.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9",
+          "A2-III-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MVC"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-10.0",
+            "referencia": "Microsoft: MVC pattern"
+          }
+        ],
+        "observaciones": "MVC separa modelo, vista y controlador. La vista no depende obligatoriamente de XML y la lógica de negocio no debe concentrarse en el controlador. Se precisa el enunciado y se eliminan distractores que podían ser ciertos en implementaciones concretas."
+      }
     },
     {
       "id": 268,
@@ -10167,13 +10607,41 @@
         "El acoplamiento y cohesión débiles, la extensibilidad y la modularidad."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Un diseño suele buscar alta cohesión interna, bajo acoplamiento entre componentes y facilidad de extensión.",
+      "clasificacion": {
+        "A1": [
+          "A1-93",
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-9",
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "cohesion",
+        "acoplamiento"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/visualstudio/code-quality/code-metrics-class-coupling?view=visualstudio",
+            "referencia": "Microsoft: Class coupling"
+          }
+        ],
+        "observaciones": "Un diseño suele buscar alta cohesión interna, bajo acoplamiento entre componentes y facilidad de extensión."
+      }
     },
     {
       "id": 269,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes diagramas NO aporta información para la modelización de datos?",
+      "texto": "¿Cuál de los siguientes diagramas describe principalmente funcionalidades e interacción con actores, en lugar de representar directamente la estructura de los datos?",
       "opciones": [
         "Diagrama Entidad - Relación.",
         "Diagrama de Objetos.",
@@ -10181,7 +10649,35 @@
         "Diagrama de Casos de Uso."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Los casos de uso aportan requisitos que pueden orientar el modelo de datos, pero no representan directamente su estructura. Se corrige la afirmación absoluta de que no aportan información.",
+      "clasificacion": {
+        "A1": [
+          "A1-89",
+          "A1-90"
+        ],
+        "A2": [
+          "A2-III-4",
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "modelado-datos",
+        "casos-uso"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5/PDF",
+            "referencia": "OMG UML 2.5: Classes, Instances y Use Cases"
+          }
+        ],
+        "observaciones": "Los casos de uso aportan requisitos que pueden orientar el modelo de datos, pero no representan directamente su estructura. Se corrige la afirmación absoluta de que no aportan información."
+      }
     },
     {
       "id": 270,
@@ -10195,7 +10691,33 @@
         "Se indica mediante una línea de puntos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Una asociación binaria se dibuja con línea continua, admite nombre y multiplicidades y puede indicar navegabilidad. Una línea discontinua es propia de otras relaciones, como dependencia.",
+      "clasificacion": {
+        "A1": [
+          "A1-89"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML",
+        "asociacion"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-14",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/ISO/19505-2/PDF",
+            "referencia": "OMG / ISO 19505-2: tabla 7.3 y asociaciones"
+          }
+        ],
+        "observaciones": "Una asociación binaria se dibuja con línea continua, admite nombre y multiplicidades y puede indicar navegabilidad. Una línea discontinua es propia de otras relaciones, como dependencia."
+      }
     },
     {
       "id": 271,
