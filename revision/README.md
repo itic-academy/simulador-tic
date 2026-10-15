@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.713 preguntas sin revisión de contenido. Siguiente ID: 411. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 25 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.703 preguntas sin revisión de contenido. Siguiente ID: 421. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 25 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 410 registros de cambios y las 11.713 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 420 registros de cambios y las 11.703 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -150,3 +150,8 @@ Se actualizan JTA y Enterprise Beans a la nomenclatura Jakarta, se precisa la fu
 IDs 401–410: diez verificadas y siete corregidas. Acumulado: 410 examinadas, 385 verificadas, 25 pendientes y 246 con cambios de contenido. Estados: 136 vigentes, 234 corregidas, quince históricas y 25 pendientes. Quedan 11.713 sin revisar; siguiente ID 411.
 
 La 401 cambia de D a B tras concretar la compatibilidad de Apache 2.0 con GPLv3 frente a GPLv2. Se corrige la definición de OLTP y se eliminan absolutos sobre rendimiento OLAP y modificación de un data warehouse. Se precisan los data marts independientes, Atom y XLink. Se contrastan ID3 con el artículo original, JSON con RFC 8259 y AES con NIST. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 027 — 15 de octubre
+
+IDs 411–420: diez verificadas y ocho con cambios de contenido (siete corregidas y una histórica reformulada). Acumulado: 420 examinadas, 395 verificadas, 25 pendientes y 254 con cambios de contenido. Estados: 138 vigentes, 241 corregidas, dieciséis históricas y 25 pendientes. Quedan 11.703 sin revisar; siguiente ID 421.
+
+La pregunta 413 cambia de D a A: el artículo 11.3 del RD 255/2025 fija dos años para los certificados del DNI, frente a los 60 meses del banco. Se precisan formato físico del DNI, funciones CA/RA y criptoanálisis. Se acotan remolino y RAD y se corrige Merise; se contrastó además su enfoque sistémico en https://www.cnam.fr/formation/methodes-pour-linformatisation. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
