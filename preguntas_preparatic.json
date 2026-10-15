@@ -14365,73 +14365,204 @@
       "opciones": [
         "McCall",
         "McCabe",
-        "Hasltead",
+        "Halstead",
         "COCOMO"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La complejidad ciclomática se asocia a McCabe y al grafo de flujo de control. Se corrige la errata Halstead en un distractor.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "McCabe",
+        "complejidad-ciclomatica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.nist.gov/publications/structured-testing-software-testing-methodology-using-cyclomatic-complexity-metric",
+            "referencia": "NIST, SP 500-99, T. J. McCabe"
+          }
+        ],
+        "observaciones": "La complejidad ciclomática se asocia a McCabe y al grafo de flujo de control. Se corrige la errata Halstead en un distractor."
+      }
     },
     {
       "id": 362,
       "bloque": 0,
       "tema": 0,
-      "texto": "ISO/IEC 25000 es una familia de normas que tiene por objetivo la creación de un marco de trabajo común para evaluar la calidad de un producto software. También se la conoce con el nombre de:",
+      "texto": "¿Cómo se denomina la familia de normas de requisitos y evaluación de calidad de sistemas y software cuya guía es ISO/IEC 25000?",
       "opciones": [
         "SPICE (Software Process Improvement and Capability dEtermination).",
         "CAFES (Commun frAmework For Evaluation Software).",
-        "SQuaRE (System and Software Quality Requirements and Evaluation).",
+        "SQuaRE (Systems and software Quality Requirements and Evaluation).",
         "SQAE (Software Quality Assessment Exercise)."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "SQuaRE significa Systems and software Quality Requirements and Evaluation. ISO/IEC 25000 es la guía de esta familia; se distingue la norma concreta del conjunto de normas.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SQuaRE",
+        "ISO-25000"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/64764.html",
+            "referencia": "ISO/IEC 25000:2014, título y resumen oficial"
+          }
+        ],
+        "observaciones": "SQuaRE significa Systems and software Quality Requirements and Evaluation. ISO/IEC 25000 es la guía de esta familia; se distingue la norma concreta del conjunto de normas."
+      }
     },
     {
       "id": 363,
       "bloque": 0,
       "tema": 0,
-      "texto": "La actividad DSI-CAL2 se denomina:",
+      "texto": "En la interfaz de aseguramiento de la calidad de MÉTRICA v3, ¿cómo se denomina DSI-CAL2?",
       "opciones": [
-        "Revisión de la especificación técnica del plan de prueba",
-        "Revisión de la verificación de la arquitectura del sistema",
-        "Revisión de los requisitos de implantación",
-        "ninguna es cirrecta"
+        "Revisión de la especificación técnica del plan de pruebas.",
+        "Revisión de la verificación de la arquitectura del sistema.",
+        "Revisión de los requisitos de implantación.",
+        "Ninguna de las anteriores."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El extracto indexado del PDF oficial identifica DSI-CAL2 como revisión de la especificación técnica del plan de pruebas. La descarga directa devuelve Request Rejected; se ha contrastado la tabla indexada, no una descarga íntegra.",
+      "clasificacion": {
+        "A1": [
+          "A1-95",
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Metrica-v3",
+        "aseguramiento-calidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A6838aec9-835a-4562-bdc3-87a96fd9c743/METRICA_V3_Aseguramiento_de_la_Calidad.pdf",
+            "referencia": "MÉTRICA v3, Aseguramiento de la Calidad, DSI-CAL2, p. 18"
+          }
+        ],
+        "observaciones": "El extracto indexado del PDF oficial identifica DSI-CAL2 como revisión de la especificación técnica del plan de pruebas. La descarga directa devuelve Request Rejected; se ha contrastado la tabla indexada, no una descarga íntegra."
+      }
     },
     {
       "id": 364,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la técnica de medida de la complejidad de Halstead se mide la complejidad por:",
+      "texto": "En las métricas de Halstead, N1 y N2 son las apariciones totales de operadores y operandos, y n1 y n2 sus cantidades distintas. ¿Cuál es la longitud observada N del programa?",
       "opciones": [
-        "El número de operadores diferentes",
-        "El número de operandos diferentes",
-        "Por su volumen que es el logaritmo en base 2 del producto del numero de los operadores diferentes por el número de operandos diferentes",
-        "Por su longitud que es una función de los operandos diferentes y de los operadores diferentes y que es una buena aproximación a la suma del número total de operadores y del numero total de operandos"
+        "n1 + n2.",
+        "log2(n1 + n2).",
+        "N1 × N2.",
+        "N1 + N2."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La longitud observada N suma las apariciones totales de operadores y operandos. El vocabulario suma los elementos distintos; el volumen es N por log2 del vocabulario. Se sustituye la pregunta imprecisa sobre complejidad y longitud estimada por una métrica inequívoca.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Halstead",
+        "metricas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://ntrs.nasa.gov/api/citations/19880020920/downloads/19880020920.pdf",
+            "referencia": "NASA, capítulo 4, Size, Complexity, and Effort Metrics, p. 20"
+          }
+        ],
+        "observaciones": "La longitud observada N suma las apariciones totales de operadores y operandos. El vocabulario suma los elementos distintos; el volumen es N por log2 del vocabulario. Se sustituye la pregunta imprecisa sobre complejidad y longitud estimada por una métrica inequívoca."
+      }
     },
     {
       "id": 365,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la respuesta FALSA relativa a SQuaRE (Software Product Quality Requirements and Evaluation):",
+      "texto": "Señale la afirmación FALSA relativa a SQuaRE (Systems and software Quality Requirements and Evaluation):",
       "opciones": [
         "Permite la evaluación de la calidad del software.",
-        "Su certificación es complementaria a ISO/IEC 15504-SPICE.",
+        "ISO/IEC 25000 proporciona una guía y visión general de la familia SQuaRE.",
         "Así se conoce a las normas de la familia ISO/IEC 25000.",
         "Es un framework de programación de requisitos software."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "SQuaRE proporciona normas de requisitos y evaluación de calidad, no un framework de programación. Se elimina una afirmación genérica sobre certificación complementaria a SPICE que no define un esquema de certificación concreto.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SQuaRE",
+        "ISO-25000"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/64764.html",
+            "referencia": "ISO/IEC 25000:2014, Guide to SQuaRE, resumen"
+          }
+        ],
+        "observaciones": "SQuaRE proporciona normas de requisitos y evaluación de calidad, no un framework de programación. Se elimina una afirmación genérica sobre certificación complementaria a SPICE que no define un esquema de certificación concreto."
+      }
     },
     {
       "id": 366,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes no es un instrumento de control contemplado por el Plan General de Garantía de Calidad?",
+      "texto": "En el Plan General de Garantía de Calidad del MAP, edición de 1991, ¿cuál se clasifica como procedimiento de control y no como instrumento de control?",
       "opciones": [
         "Revisiones técnicas formales",
         "Guiones de recomendaciones",
@@ -14439,13 +14570,39 @@
         "Las tres anteriores son instrumentos de control contemplados por el PGGC"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Las revisiones técnicas formales sí pertenecen al PGGC, pero se clasifican como procedimientos de control. Las listas y los guiones son instrumentos utilizados por esos procedimientos. Contraste con extractos indexados oficiales; la descarga directa se rechaza.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "PGGC",
+        "instrumentos"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A018552c6-b17d-46a3-a982-32deb2fcaf5d/1991-Plan-General-de-Garantia-de-calidad-NIPO-328-91-023-6.pdf",
+            "referencia": "PGGC (1991), tabla II-1 y fascículo 4"
+          }
+        ],
+        "observaciones": "Las revisiones técnicas formales sí pertenecen al PGGC, pero se clasifican como procedimientos de control. Las listas y los guiones son instrumentos utilizados por esos procedimientos. Contraste con extractos indexados oficiales; la descarga directa se rechaza."
+      }
     },
     {
       "id": 367,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes elementos forma parte del 'bloque instrumental' del PGGC aplicable al desarrollo de equipos lógicos del CSI?",
+      "texto": "En el Plan General de Garantía de Calidad del MAP, edición de 1991, ¿qué elemento pertenece al bloque instrumental?",
       "opciones": [
         "Guía metodológica para la elaboración de planes de garantía de calidad",
         "Esquema formal para la clasificación de proyectos informáticos",
@@ -14453,21 +14610,73 @@
         "Todos los elementos anteriores son válidos"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El bloque instrumental reúne procedimientos de control e instrumentos auxiliares; la guía metodológica y la clasificación de proyectos integran el bloque metodológico. Se acota la pregunta a la edición de 1991. Se consultó el extracto indexado oficial, con descarga directa rechazada.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "PGGC",
+        "bloque-instrumental"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A018552c6-b17d-46a3-a982-32deb2fcaf5d/1991-Plan-General-de-Garantia-de-calidad-NIPO-328-91-023-6.pdf",
+            "referencia": "PGGC (1991), estructura del plan, p. 14"
+          }
+        ],
+        "observaciones": "El bloque instrumental reúne procedimientos de control e instrumentos auxiliares; la guía metodológica y la clasificación de proyectos integran el bloque metodológico. Se acota la pregunta a la edición de 1991. Se consultó el extracto indexado oficial, con descarga directa rechazada."
+      }
     },
     {
       "id": 368,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el modelo COCOMO un proyecto semiacoplado hace referencia a:",
+      "texto": "En el modelo histórico COCOMO 81, ¿qué caracteriza al modo semiacoplado (semidetached)?",
       "opciones": [
         "Aquel en el que el esfuerzo y el coste del proyecto se calcula en función de las LOC y además añade una evaluación subjetiva",
         "Proyectos pequeños y sencillos con un equipo de trabajo estable, con buena experiencia y que cuenten con unos requerimientos poco rígidos",
-        "Proyectos de complejidad media, equipos con distintos niveles de experiencia y dentro de un software con terminales y bases de datos",
+        "Proyectos de características intermedias entre los orgánicos y los empotrados, con una mezcla de experiencia en el equipo.",
         "Proyectos que deban desarrollarse para ser acoplados en un hardware y software estricto y con restricciones operativas"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "En COCOMO 81, semidetached es la categoría intermedia entre organic y embedded, con una mezcla de experiencia del equipo. La mera presencia de terminales y bases de datos no define la categoría. Se distingue de los modelos posteriores.",
+      "clasificacion": {
+        "A1": [
+          "A1-99"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "COCOMO-81",
+        "estimacion"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.ece.uvic.ca/~seng321/lectures/L30-2016-321-6up.pdf",
+            "referencia": "University of Victoria, SENG 321, COCOMO"
+          }
+        ],
+        "observaciones": "En COCOMO 81, semidetached es la categoría intermedia entre organic y embedded, con una mezcla de experiencia del equipo. La mera presencia de terminales y bases de datos no define la categoría. Se distingue de los modelos posteriores."
+      }
     },
     {
       "id": 369,
@@ -14481,13 +14690,39 @@
         "Del Vicepresidente Tercero del Gobierno y Ministro de Cooperación Territorial."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La disposición adicional novena establece expresamente la dependencia de la Comisión Sectorial de Administración Electrónica respecto de la Conferencia Sectorial de Administración Pública. Se conserva la clave A.",
+      "clasificacion": {
+        "A1": [
+          "A1-22"
+        ],
+        "A2": [
+          "A2-I-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "CSAE",
+        "Ley-40-2015"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566",
+            "referencia": "Ley 40/2015, disposición adicional novena, apartado 1"
+          }
+        ],
+        "observaciones": "La disposición adicional novena establece expresamente la dependencia de la Comisión Sectorial de Administración Electrónica respecto de la Conferencia Sectorial de Administración Pública. Se conserva la clave A."
+      }
     },
     {
       "id": 370,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones referentes a tipos de mantenimiento es falsa?",
+      "texto": "Según la clasificación presentada en MÉTRICA v3, ¿cuál de estas afirmaciones sobre los tipos de mantenimiento es FALSA?",
       "opciones": [
         "Mantenimiento Correctivo comprende aquellos cambios necesarios para corregir errores del producto software.",
         "Mantenimiento Evolutivo se refiere a las modificaciones necesarias para adaptar el sistema y el entorno a una nueva versión del producto.",
@@ -14495,7 +14730,34 @@
         "Mantenimiento Perfectivo son acciones llevadas a cabo para mejorar la calidad interna de los sistemas en cualquiera de sus aspectos: reestructuración del código, definición más clara del sistema y optimización del rendimiento y eficiencia."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La opción B es falsa: el mantenimiento evolutivo atiende cambios o ampliaciones de necesidades del usuario. Se explicita la taxonomía de MÉTRICA v3; su introducción describe los cuatro tipos, aunque adaptativo y perfectivo quedan fuera del alcance de su proceso MSI. Definiciones comprobadas en el extracto indexado del PDF oficial.",
+      "clasificacion": {
+        "A1": [
+          "A1-95",
+          "A1-101"
+        ],
+        "A2": [
+          "A2-III-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Metrica-v3",
+        "mantenimiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ae15c0c5b-dd9c-4e48-82e3-9e36ba18e839/METRICA_V3_Mantenimiento_de_Sistemas_de_Informacion.pdf",
+            "referencia": "MÉTRICA v3, Mantenimiento de Sistemas de Información, p. 1"
+          }
+        ],
+        "observaciones": "La opción B es falsa: el mantenimiento evolutivo atiende cambios o ampliaciones de necesidades del usuario. Se explicita la taxonomía de MÉTRICA v3; su introducción describe los cuatro tipos, aunque adaptativo y perfectivo quedan fuera del alcance de su proceso MSI. Definiciones comprobadas en el extracto indexado del PDF oficial."
+      }
     },
     {
       "id": 371,
