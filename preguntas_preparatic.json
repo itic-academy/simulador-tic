@@ -15571,7 +15571,33 @@
         "DELETE"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "DROP elimina objetos del esquema y pertenece al lenguaje de definición de datos. INSERT y DELETE manipulan filas; SELECT consulta datos. No debe confundirse DROP TABLE con DELETE de filas.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SQL",
+        "DDL"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/sql.html",
+            "referencia": "Oracle Database Concepts, SQL, DDL"
+          }
+        ],
+        "observaciones": "DROP elimina objetos del esquema y pertenece al lenguaje de definición de datos. INSERT y DELETE manipulan filas; SELECT consulta datos. No debe confundirse DROP TABLE con DELETE de filas."
+      }
     },
     {
       "id": 392,
@@ -15585,27 +15611,79 @@
         "El espacio lógico de almacenamiento de datos"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Un tablespace es un contenedor lógico de segmentos. Su soporte físico está en uno o varios datafiles o tempfiles; no equivale al espacio ocupado por una sola tabla o índice.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Oracle",
+        "tablespace"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/cd/E25178_01/server.1111/e25789/logical.htm",
+            "referencia": "Oracle Database Concepts, Overview of Tablespaces"
+          }
+        ],
+        "observaciones": "Un tablespace es un contenedor lógico de segmentos. Su soporte físico está en uno o varios datafiles o tempfiles; no equivale al espacio ocupado por una sola tabla o índice."
+      }
     },
     {
       "id": 393,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes APIs de JEE especifica la gestión de transacciones a través de sistemas distribuidos?",
+      "texto": "En Jakarta EE, ¿qué especificación sucede a Java Transaction API y define interfaces para la gestión de transacciones distribuidas?",
       "opciones": [
-        "JNDE",
-        "JNI",
-        "JTA",
-        "JAX"
+        "Java Naming and Directory Interface (JNDI).",
+        "Java Native Interface (JNI).",
+        "Jakarta Transactions (JTA).",
+        "Jakarta XML Binding."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Jakarta Transactions, sucesora de Java Transaction API, define interfaces entre gestor de transacciones, aplicación, servidor y gestores de recursos en transacciones distribuidas. Se actualiza la denominación y se sustituyen siglas incompletas en distractores.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Jakarta-Transactions",
+        "JTA"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/specifications/transactions/2.0/jakarta-transactions-spec-2.0.html",
+            "referencia": "Jakarta Transactions 2.0, introducción"
+          }
+        ],
+        "observaciones": "Jakarta Transactions, sucesora de Java Transaction API, define interfaces entre gestor de transacciones, aplicación, servidor y gestores de recursos en transacciones distribuidas. Se actualiza la denominación y se sustituyen siglas incompletas en distractores."
+      }
     },
     {
       "id": 394,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes son implementaciones de Java Persistence API?",
+      "texto": "En el contexto histórico de Oracle Fusion Middleware 11g, ¿cuál de estos productos era una implementación de Java Persistence API (JPA)?",
       "opciones": [
         "Mediator",
         "Composite",
@@ -15613,21 +15691,73 @@
         "Kodo"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Kodo implementó JPA y JDO; la propia documentación de Oracle 11g lo declara deprecado. Se conserva como identificación histórica, no como recomendación de proveedor actual. Mediator, Composite y Facade son patrones de diseño.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "JPA",
+        "Kodo"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/cd/E15523_01/web.1111/e14529/kodo.htm",
+            "referencia": "Oracle Fusion Middleware 11g, Kodo Development"
+          }
+        ],
+        "observaciones": "Kodo implementó JPA y JDO; la propia documentación de Oracle 11g lo declara deprecado. Se conserva como identificación histórica, no como recomendación de proveedor actual. Mediator, Composite y Facade son patrones de diseño."
+      }
     },
     {
       "id": 395,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes no es un servidor de aplicaciones J2EE?",
+      "texto": "¿Cuál de estos productos del proyecto Apache implementa tecnologías web como Jakarta Servlet y Jakarta Pages?",
       "opciones": [
         "WebLogic",
         "WebSphere",
         "Apache Tomcat",
-        "Jboss"
+        "JBoss"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Tomcat implementa tecnologías web como Servlet, Pages, EL y WebSocket. Se pregunta por esta identidad concreta y se elimina la clasificación genérica de no servidor de aplicaciones, que depende del sentido de ese término y del perfil de plataforma.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Tomcat",
+        "Jakarta-EE"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://tomcat.apache.org/",
+            "referencia": "Apache Tomcat, especificaciones implementadas"
+          }
+        ],
+        "observaciones": "Tomcat implementa tecnologías web como Servlet, Pages, EL y WebSocket. Se pregunta por esta identidad concreta y se elimina la clasificación genérica de no servidor de aplicaciones, que depende del sentido de ese término y del perfil de plataforma."
+      }
     },
     {
       "id": 396,
@@ -15641,55 +15771,159 @@
         "Jbuilder"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Spring Security ofrece autenticación, autorización y protección frente a ataques habituales. Es el framework de seguridad del ecosistema Spring; JSF y Struts se orientan a aplicaciones web y JBuilder es un entorno de desarrollo.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Spring",
+        "seguridad"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.spring.io/spring-security/reference/",
+            "referencia": "Spring Security Reference, introducción"
+          }
+        ],
+        "observaciones": "Spring Security ofrece autenticación, autorización y protección frente a ataques habituales. Es el framework de seguridad del ecosistema Spring; JSF y Struts se orientan a aplicaciones web y JBuilder es un entorno de desarrollo."
+      }
     },
     {
       "id": 397,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Dónde se ejecutan los applets de Java de las páginas web?",
+      "texto": "En el modelo histórico de applets con Java Plug-in de Java SE 8, ¿dónde se ejecutaba el código del applet descargado por una página web?",
       "opciones": [
         "En el proxy",
         "En el servidor de aplicaciones",
         "En el servidor web",
-        "En el navegador del cliente"
+        "En una JVM del equipo cliente asociada al navegador mediante el plug-in."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "En el modelo histórico de Java Plug-in, el applet se ejecutaba en una JVM del equipo cliente asociada al navegador, que podía ser un proceso separado. Se evita afirmar que se ejecutaba necesariamente dentro del proceso del navegador o presentar esa tecnología como la web actual.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "applets",
+        "Java-Plugin"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/applet_dev_guide.html",
+            "referencia": "Java SE 8 Deployment Guide, 12.1 y 12.2.1"
+          }
+        ],
+        "observaciones": "En el modelo histórico de Java Plug-in, el applet se ejecutaba en una JVM del equipo cliente asociada al navegador, que podía ser un proceso separado. Se evita afirmar que se ejecutaba necesariamente dentro del proceso del navegador o presentar esa tecnología como la web actual."
+      }
     },
     {
       "id": 398,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación a la Java Native Interface, cuál de las siguientes opciones es correcta:",
+      "texto": "¿Qué función proporciona Java Native Interface (JNI)?",
       "opciones": [
-        "Todas las aplicaciones y applets pueden invocar la JNI",
-        "Las aplicaciones pierden una de las características más importantes que Java le confiere, su portabilidad",
-        "JNI mantiene la recolección de basura en el código incorporado",
-        "JNI es una API de Java para acceder a servicios de procesos remotos"
+        "Ejecutar todo el código nativo sin restricciones ni configuración.",
+        "Permitir que el código Java de una JVM interopere con bibliotecas y aplicaciones nativas.",
+        "Gestionar automáticamente toda la memoria reservada por cualquier biblioteca C.",
+        "Proporcionar exclusivamente llamadas a servicios remotos por HTTP."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "JNI permite interoperar con bibliotecas y aplicaciones nativas escritas en C, C++ u otros lenguajes. Una biblioteca nativa puede requerir versiones para cada plataforma; no se pierde automáticamente toda portabilidad por usar la interfaz. Se sustituye esa afirmación absoluta por su función.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "JNI",
+        "codigo-nativo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/java/javase/26/docs/specs/jni/intro.html",
+            "referencia": "JNI Specification, Introduction y Java Native Interface Overview"
+          }
+        ],
+        "observaciones": "JNI permite interoperar con bibliotecas y aplicaciones nativas escritas en C, C++ u otros lenguajes. Una biblioteca nativa puede requerir versiones para cada plataforma; no se pierde automáticamente toda portabilidad por usar la interfaz. Se sustituye esa afirmación absoluta por su función."
+      }
     },
     {
       "id": 399,
       "bloque": 0,
       "tema": 0,
-      "texto": "Uno de los siguientes es un elemento de Java EE:",
+      "texto": "¿Qué contenedor de Jakarta EE gestiona la ejecución de los componentes Enterprise Beans?",
       "opciones": [
         "Contenedor HTTP",
         "Servidor JDBC",
-        "Contenedor Enterprise Java Beans",
+        "Contenedor de Jakarta Enterprise Beans (EJB).",
         "Contenedor JDBC"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El contenedor de Enterprise Beans gestiona la ejecución de esos componentes y servicios asociados. Se actualiza el nombre de plataforma a Jakarta EE sin confundir JDBC, una API de acceso a datos, con un tipo de contenedor.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Jakarta-Enterprise-Beans",
+        "contenedores"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/9.1/intro/overview/overview.html",
+            "referencia": "Jakarta EE Tutorial 9.1, Container Types"
+          }
+        ],
+        "observaciones": "El contenedor de Enterprise Beans gestiona la ejecución de esos componentes y servicios asociados. Se actualiza el nombre de plataforma a Jakarta EE sin confundir JDBC, una API de acceso a datos, con un tipo de contenedor."
+      }
     },
     {
       "id": 400,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué módulo de Apache se incluye para aportar seguridad a Axis2?",
+      "texto": "¿Qué módulo del proyecto Apache aporta implementaciones de WS-Security y otras especificaciones WS-Sec a Apache Axis2?",
       "opciones": [
         "MySQL",
         "Php",
@@ -15697,7 +15931,34 @@
         "Addressing"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Rampart implementa especificaciones WS-Sec para Apache Axis2, incluidas WS-Security y WS-SecurityPolicy. Se precisa que es un módulo para Axis2 y no un módulo del servidor Apache HTTP Server.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Axis2",
+        "Rampart",
+        "WS-Security"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://axis.apache.org/axis2/java/rampart/",
+            "referencia": "Apache Rampart, Welcome"
+          }
+        ],
+        "observaciones": "Rampart implementa especificaciones WS-Sec para Apache Axis2, incluidas WS-Security y WS-SecurityPolicy. Se precisa que es un módulo para Axis2 y no un módulo del servidor Apache HTTP Server."
+      }
     },
     {
       "id": 401,

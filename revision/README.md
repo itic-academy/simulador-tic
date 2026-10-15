@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.733 preguntas sin revisión de contenido. Siguiente ID: 391. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 25 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.723 preguntas sin revisión de contenido. Siguiente ID: 401. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 25 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 390 registros de cambios y las 11.733 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 58 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 400 registros de cambios y las 11.723 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -140,3 +140,8 @@ Se corrige la expansión de CAAT, se precisa la finalidad de Gantt y se acota la
 IDs 381–390: diez verificadas y ocho corregidas. Acumulado: 390 examinadas, 365 verificadas, 25 pendientes y 232 con cambios de contenido. Estados: 130 vigentes, 222 corregidas, trece históricas y 25 pendientes. Quedan 11.733 sin revisar; siguiente ID 391.
 
 Se precisan quantum round-robin, hashes y marcadores de shadow e inodos. Se elimina la garantía absoluta de portabilidad por ODBC y la independencia del diseño conceptual respecto de los usuarios. Se reformula la pregunta de distribuciones sobre el patrocinio de Fedora, y se distinguen los esquemas conceptual y externo ANSI/SPARC. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 025 — 15 de octubre
+
+IDs 391–400: diez verificadas y siete con cambios de contenido (cinco corregidas y dos históricas reformuladas). Acumulado: 400 examinadas, 375 verificadas, 25 pendientes y 239 con cambios de contenido. Estados: 133 vigentes, 227 corregidas, quince históricas y 25 pendientes. Quedan 11.723 sin revisar; siguiente ID 401.
+
+Se actualizan JTA y Enterprise Beans a la nomenclatura Jakarta, se precisa la función de JNI y se elimina la clasificación ambigua de Tomcat. Kodo y applets quedan expresamente históricos; se distingue la JVM cliente del proceso del navegador. Se precisa Rampart como módulo de Axis2. El inventario encuentra 57 candidatos léxicos, que siguen sin ser una comprobación de vigencia. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
