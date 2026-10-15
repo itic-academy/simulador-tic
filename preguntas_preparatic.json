@@ -12745,15 +12745,41 @@
       "id": 321,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes opciones NO es una vista de UML?",
+      "texto": "¿Cuál de las siguientes NO es una vista del modelo arquitectónico 4+1 de Kruchten?",
       "opciones": [
-        "Vista de Proceso.",
-        "Vista de Despliegue.",
-        "Vista de Casos de Uso.",
-        "Vista de Flujo de Datos."
+        "Vista de procesos.",
+        "Vista física.",
+        "Vista de escenarios o casos de uso.",
+        "Vista de flujo de datos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Las vistas del modelo 4+1 son lógica, procesos, desarrollo, física y escenarios. No constituyen una clasificación normativa de vistas de UML. Se identifica el modelo y se usan sus denominaciones.",
+      "clasificacion": {
+        "A1": [
+          "A1-92"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "arquitectura",
+        "4+1"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.cs.ubc.ca/~gregor/teaching/papers/4%2B1view-architecture.pdf",
+            "referencia": "Philippe Kruchten: Architectural Blueprints, The 4+1 View Model"
+          }
+        ],
+        "observaciones": "Las vistas del modelo 4+1 son lógica, procesos, desarrollo, física y escenarios. No constituyen una clasificación normativa de vistas de UML. Se identifica el modelo y se usan sus denominaciones."
+      }
     },
     {
       "id": 322,
@@ -12761,13 +12787,40 @@
       "tema": 0,
       "texto": "¿Cuál de las siguientes afirmaciones NO es correcta con respecto a la herencia en Programación Orientada a Objetos (OO)?",
       "opciones": [
-        "La clase que hereda contará con los atributos y métodos de la clase de la que hereda y podrá añadir otros nuevos.",
-        "La clase que hereda contará con los atributos y métodos de la que la que hereda y podrá modificar los métodos heredados.",
-        "La herencia entre dos clases puede ser múltiple, aunque no todos los lenguajes orientados a objetos ofrecen esta posibilidad.",
-        "La herencia entre dos clases puede ser múltiple y todo lenguaje orientado a objetos debe ofrecer esta posibilidad."
+        "Una clase derivada puede incorporar miembros heredables y añadir miembros propios.",
+        "Una clase derivada puede redefinir métodos cuando las reglas del lenguaje lo permiten.",
+        "Algunos lenguajes permiten que una clase tenga varias superclases directas y otros no.",
+        "Todo lenguaje orientado a objetos debe permitir que una clase tenga varias superclases directas."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Java permite una sola superclase directa y múltiples interfaces. La herencia múltiple de clases no es obligatoria en un lenguaje orientado a objetos. Se matizan los miembros heredables y la redefinición según las reglas del lenguaje.",
+      "clasificacion": {
+        "A1": [
+          "A1-67",
+          "A1-93"
+        ],
+        "A2": [
+          "A2-II-3",
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "herencia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html",
+            "referencia": "Oracle: Inheritance"
+          }
+        ],
+        "observaciones": "Java permite una sola superclase directa y múltiples interfaces. La herencia múltiple de clases no es obligatoria en un lenguaje orientado a objetos. Se matizan los miembros heredables y la redefinición según las reglas del lenguaje."
+      }
     },
     {
       "id": 323,
@@ -12781,21 +12834,69 @@
         "Globe y RMI"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "",
+      "clasificacion": {
+        "A1": [
+          "A1-92"
+        ],
+        "A2": [
+          "A2-II-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "objetos-distribuidos",
+        "persistencia"
+      ],
+      "revision": {
+        "estado": "pendiente_fuente",
+        "fecha": "2026-10-15",
+        "fuentes": [],
+        "observaciones": "Se ha localizado un fragmento indexado de Distributed Systems: Concepts and Design que compara esquemas concretos de CORBA y Persistent Java, pero el PDF devuelve un bucle de redirección. No permite certificar una regla general sobre estas tecnologías ni delimitar implementación y versión. Se conserva la clave original A sin verificar."
+      }
     },
     {
       "id": 324,
       "bloque": 0,
       "tema": 0,
-      "texto": "En UML (Unified Modeling Language), el Rol de una relación de asociación es:",
+      "texto": "En UML, el nombre de rol de un extremo de una asociación identifica:",
       "opciones": [
-        "El nombre de la relación.",
+        "El papel que desempeñan las instancias participantes en ese extremo de la asociación.",
         "La cardinalidad de la relación.",
         "El atributo de la relación.",
         "La clase de la relación."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El nombre de rol identifica un extremo de la asociación y el papel de las instancias participantes. Es distinto del nombre de la asociación completa. Se corrige la opción A manteniendo el índice de respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-89"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML",
+        "asociacion",
+        "rol"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5/PDF",
+            "referencia": "OMG UML 2.5, 11.4.5 y 11.5.4"
+          }
+        ],
+        "observaciones": "El nombre de rol identifica un extremo de la asociación y el papel de las instancias participantes. Es distinto del nombre de la asociación completa. Se corrige la opción A manteniendo el índice de respuesta."
+      }
     },
     {
       "id": 325,
@@ -12809,49 +12910,156 @@
         "State"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Memento conserva un estado que el originador puede restaurar sin exponer su representación interna al cuidador. Observer notifica cambios, State cambia comportamiento según estado y Flyweight comparte objetos.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "patrones",
+        "Memento"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.cs.sjsu.edu/~pearce/oom/patterns/structural/Mementos.htm",
+            "referencia": "San José State University: Mementos"
+          }
+        ],
+        "observaciones": "Memento conserva un estado que el originador puede restaurar sin exponer su representación interna al cuidador. Observer notifica cambios, State cambia comportamiento según estado y Flyweight comparte objetos."
+      }
     },
     {
       "id": 326,
       "bloque": 0,
       "tema": 0,
-      "texto": "UML 2.0 define _____ tipos de diagramas, dividido en ______ categorias:",
+      "texto": "Según la taxonomía del anexo A de UML 2.5, ¿cuántos tipos de diagramas se enumeran y cuáles son sus dos grandes familias?",
       "opciones": [
-        "12 y 2",
-        "13 y 3",
-        "12 y 3",
-        "13 y 4"
+        "Doce tipos: clases y objetos.",
+        "Catorce tipos: estructura y comportamiento.",
+        "Trece tipos: estructura e interacción.",
+        "Catorce tipos: despliegue y componentes."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "UML 2.5 enumera catorce tipos en dos grandes familias: estructura y comportamiento. Los diagramas de interacción son una subfamilia de comportamiento. Se actualiza la referencia 2.0 y se evita contar niveles jerárquicos como categorías equivalentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-89",
+          "A1-90"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML",
+        "diagramas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5/PDF",
+            "referencia": "OMG UML 2.5, anexo A, figura A.5"
+          }
+        ],
+        "observaciones": "UML 2.5 enumera catorce tipos en dos grandes familias: estructura y comportamiento. Los diagramas de interacción son una subfamilia de comportamiento. Se actualiza la referencia 2.0 y se evita contar niveles jerárquicos como categorías equivalentes."
+      }
     },
     {
       "id": 327,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique en cuál de los siguientes lenguajes de programación es posible hacer que una clase herede de varias superclases:",
+      "texto": "¿En cuál de los siguientes lenguajes puede una clase heredar directamente de varias clases base?",
       "opciones": [
-        "Java",
-        "Python",
-        "Visual Basic",
-        ".NET C#"
+        "Java.",
+        "Python.",
+        "Visual Basic .NET.",
+        "C#."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Python permite varias clases base directas. Java, C# y Visual Basic .NET solo permiten una clase base directa, aunque admiten varias interfaces. Se especifica herencia directa y la variante .NET de Visual Basic.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-II-3",
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Python",
+        "herencia-multiple"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.python.org/3/tutorial/classes.html#multiple-inheritance",
+            "referencia": "Python: Classes, Multiple Inheritance"
+          }
+        ],
+        "observaciones": "Python permite varias clases base directas. Java, C# y Visual Basic .NET solo permiten una clase base directa, aunque admiten varias interfaces. Se especifica herencia directa y la variante .NET de Visual Basic."
+      }
     },
     {
       "id": 328,
       "bloque": 0,
       "tema": 0,
-      "texto": "Se comporta como un procedimiento local del cliente, pero en lugar de ejecutar la llamada empaqueta el identificador del procedimiento y los argumentos en un mensaje de petición que se envía su módulo de comunicación al servidor:",
+      "texto": "En RPC, ¿qué componente ofrece al cliente una entrada similar a un procedimiento local, empaqueta los argumentos y solicita a la biblioteca de comunicación que envíe la llamada al servidor?",
       "opciones": [
         "Un procedimiento enlazado",
         "Un procedimiento de resguardo del servidor",
         "Un lenguaje de interface",
-        "Un procedimiento de resguardo"
+        "Un procedimiento de resguardo del cliente (client stub)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "El stub cliente recibe la llamada local, empaqueta argumentos y usa la biblioteca de ejecución para invocar el procedimiento remoto. Se precisa que es el resguardo del cliente y se corrige la sintaxis del enunciado.",
+      "clasificacion": {
+        "A1": [
+          "A1-92",
+          "A1-93"
+        ],
+        "A2": [
+          "A2-II-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "RPC",
+        "stub"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/win32/midl/the-client-stub",
+            "referencia": "Microsoft: The Client Stub"
+          }
+        ],
+        "observaciones": "El stub cliente recibe la llamada local, empaqueta argumentos y usa la biblioteca de ejecución para invocar el procedimiento remoto. Se precisa que es el resguardo del cliente y se corrige la sintaxis del enunciado."
+      }
     },
     {
       "id": 329,
@@ -12865,7 +13073,34 @@
         "Restricciones."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Los perfiles emplean estereotipos, propiedades cuyos valores son valores etiquetados y restricciones. Los adornos son recursos de notación gráfica, no un mecanismo semántico de extensión.",
+      "clasificacion": {
+        "A1": [
+          "A1-89",
+          "A1-90"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML",
+        "extensibilidad"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5/PDF",
+            "referencia": "OMG UML 2.5, capítulo 12, Profiles"
+          }
+        ],
+        "observaciones": "Los perfiles emplean estereotipos, propiedades cuyos valores son valores etiquetados y restricciones. Los adornos son recursos de notación gráfica, no un mecanismo semántico de extensión."
+      }
     },
     {
       "id": 330,
@@ -12879,7 +13114,35 @@
         "No seguir un diseño en cascada."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Muchas dependencias entre módulos dificultan mantenimiento y reutilización. Alta cohesión y ausencia de duplicación son cualidades deseables; elegir un ciclo de vida distinto de cascada no indica por sí mismo mala calidad del diseño.",
+      "clasificacion": {
+        "A1": [
+          "A1-93",
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-9",
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "acoplamiento",
+        "calidad"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/visualstudio/code-quality/code-metrics-class-coupling?view=visualstudio",
+            "referencia": "Microsoft: Code metrics, Class coupling"
+          }
+        ],
+        "observaciones": "Muchas dependencias entre módulos dificultan mantenimiento y reutilización. Alta cohesión y ausencia de duplicación son cualidades deseables; elegir un ciclo de vida distinto de cascada no indica por sí mismo mala calidad del diseño."
+      }
     },
     {
       "id": 331,
