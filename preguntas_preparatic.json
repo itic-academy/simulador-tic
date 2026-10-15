@@ -15166,27 +15166,79 @@
       "tema": 0,
       "texto": "En relación a la administración de procesos de los sistemas operativos, ¿en qué consiste la planificación round-robin?",
       "opciones": [
-        "En asignar un tiempo de ejecución a cada proceso",
+        "En repartir turnos de CPU con un quantum entre procesos preparados de la misma prioridad, devolviendo al final de la cola al que agota su turno.",
         "En ejecutar primero el proceso más corto",
         "En asignar a cada proceso una prioridad y ejecutar el proceso que más prioridad tenga",
         "En ejecutar los procesos de forma aleatoria"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Round-robin reparte turnos con un quantum; si una tarea agota su turno y sigue preparada, vuelve al final de la cola correspondiente. En SCHED_RR de Linux se aplica entre tareas de la misma prioridad. Se precisa el enunciado genérico de asignar tiempo.",
+      "clasificacion": {
+        "A1": [
+          "A1-59"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "planificacion",
+        "round-robin"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man7/sched.7.html",
+            "referencia": "Linux man-pages, sched(7), SCHED_RR"
+          }
+        ],
+        "observaciones": "Round-robin reparte turnos con un quantum; si una tarea agota su turno y sigue preparada, vuelve al final de la cola correspondiente. En SCHED_RR de Linux se aplica entre tareas de la misma prioridad. Se precisa el enunciado genérico de asignar tiempo."
+      }
     },
     {
       "id": 382,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones sobre los ficheros de Linux es cierta?",
+      "texto": "En un sistema Linux con cuentas locales y contraseñas shadow, ¿qué afirmación es correcta?",
       "opciones": [
-        "/etc/passwd: sólo es accesible para root",
-        "/etc/shadow: contiene las contraseñas encriptadas de los usuarios",
-        "/etc/ftpusers: contienes los usuarios que pueden acceder al sistema vía ftp",
-        "/etc/dhcpconfig: contiene información de configuración del cliente DHCP"
+        "/etc/passwd almacena siempre las contraseñas en texto claro.",
+        "/etc/shadow almacena información de contraseña, que puede incluir un hash o un marcador de bloqueo, y datos de caducidad.",
+        "/etc/shadow debe ser legible por cualquier usuario.",
+        "Todas las cuentas de /etc/shadow tienen necesariamente una contraseña utilizable."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El fichero shadow contiene información de contraseñas y caducidad; el campo de contraseña puede albergar un hash o un marcador como ! o *. No contiene necesariamente una contraseña utilizable para todas las cuentas. Se evita confundir hashing con cifrado reversible.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Linux",
+        "shadow"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man5/shadow.5.html",
+            "referencia": "shadow(5), campos y acceso"
+          }
+        ],
+        "observaciones": "El fichero shadow contiene información de contraseñas y caducidad; el campo de contraseña puede albergar un hash o un marcador como ! o *. No contiene necesariamente una contraseña utilizable para todas las cuentas. Se evita confundir hashing con cifrado reversible."
+      }
     },
     {
       "id": 383,
@@ -15200,27 +15252,80 @@
         "Es implementada habitualmente mediante el comando ntbackup"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La definición de copia incremental no depende del sistema operativo: guarda cambios desde la última completa o incremental. La opción B describe una diferencial y C una completa del conjunto elegido. ntbackup corresponde al entorno Windows.",
+      "clasificacion": {
+        "A1": [
+          "A1-56",
+          "A1-60"
+        ],
+        "A2": [
+          "A2-IV-3"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "backup",
+        "incremental"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://aws.amazon.com/compare/the-difference-between-incremental-differential-and-other-backups/",
+            "referencia": "AWS, diferencias entre copias incrementales y diferenciales"
+          }
+        ],
+        "observaciones": "La definición de copia incremental no depende del sistema operativo: guarda cambios desde la última completa o incremental. La opción B describe una diferencial y C una completa del conjunto elegido. ntbackup corresponde al entorno Windows."
+      }
     },
     {
       "id": 384,
       "bloque": 0,
       "tema": 0,
-      "texto": "Seleccione la afirmación cierta respecto al Sistema Operativo UNIX:",
+      "texto": "En un sistema de ficheros Linux basado en inodos, ¿qué afirmación es correcta?",
       "opciones": [
-        "UNIX no permite la comunicación entre procesos",
-        "loctl es un comando que permite crear un fichero",
-        "Las normas POSIX definen la forma de organizar la memoria",
-        "Cada fichero lleva asociada una estructura llamada nodo-i (inode)"
+        "El nombre de cada fichero se almacena necesariamente dentro de su inode.",
+        "Cada enlace duro a un fichero necesita un inode distinto.",
+        "El inode contiene únicamente el texto del nombre del propietario.",
+        "Cada fichero tiene asociado un inode que describe sus metadatos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "El inode representa metadatos del fichero, como tipo, permisos, propietario y tamaño. Varias entradas de directorio pueden referirse al mismo inode mediante enlaces duros; el nombre no se almacena en el inode. Se evita extender detalles de implementación a todos los sistemas certificados UNIX.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UNIX",
+        "inode"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man7/inode.7.html",
+            "referencia": "Linux man-pages, inode(7)"
+          }
+        ],
+        "observaciones": "El inode representa metadatos del fichero, como tipo, permisos, propietario y tamaño. Varias entradas de directorio pueden referirse al mismo inode mediante enlaces duros; el nombre no se almacena en el inode. Se evita extender detalles de implementación a todos los sistemas certificados UNIX."
+      }
     },
     {
       "id": 385,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale cuál de las siguientes distribuciones no se basa en Debian:",
+      "texto": "¿Cuál de estas distribuciones Linux se desarrolla mediante un proyecto comunitario patrocinado por Red Hat?",
       "opciones": [
         "Ubuntu",
         "Knoppix",
@@ -15228,13 +15333,39 @@
         "Guadalinex"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La documentación del proyecto identifica Fedora como distribución comunitaria apoyada por Red Hat. Se reformula la comparación de linajes sin versión de distribuciones para preguntar por esta relación explícita.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Linux",
+        "Fedora"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://fedoraproject.org/wiki/FAQ",
+            "referencia": "Fedora Project FAQ, Getting Started"
+          }
+        ],
+        "observaciones": "La documentación del proyecto identifica Fedora como distribución comunitaria apoyada por Red Hat. Se reformula la comparación de linajes sin versión de distribuciones para preguntar por esta relación explícita."
+      }
     },
     {
       "id": 386,
       "bloque": 0,
       "tema": 0,
-      "texto": "En una aplicación desarrollada para el entorno WINDOWS, la posibilidad de cambiar de base de datos relacional a la que se accede sin tener que modificar la aplicación, está garantizada por la utilización de:",
+      "texto": "¿Qué tecnología proporciona una interfaz estándar y controladores para acceder desde una aplicación a distintos SGBD relacionales, facilitando la portabilidad cuando se usan funciones y SQL compatibles?",
       "opciones": [
         "Drivers ODBC",
         "La tecnología COM",
@@ -15242,27 +15373,78 @@
         "El API adecuado"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "ODBC estandariza la interfaz de acceso y permite cambiar controladores. La portabilidad no es incondicional: depende de las funciones disponibles y del SQL empleado. Se retira la garantía absoluta de no modificar ninguna aplicación.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ODBC",
+        "interoperabilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/sql/odbc/reference/the-odbc-solution?view=sql-server-ver17",
+            "referencia": "Microsoft, The ODBC Solution"
+          }
+        ],
+        "observaciones": "ODBC estandariza la interfaz de acceso y permite cambiar controladores. La portabilidad no es incondicional: depende de las funciones disponibles y del SQL empleado. Se retira la garantía absoluta de no modificar ninguna aplicación."
+      }
     },
     {
       "id": 387,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes es una propiedad del modelo conceptual?",
+      "texto": "En el diseño de bases de datos, ¿qué caracteriza al modelo conceptual?",
       "opciones": [
-        "Complejo",
-        "Máximo",
-        "Explícito en todas sus restricciones",
-        "Informal"
+        "Especificar los índices físicos y las páginas de disco.",
+        "Depender de las opciones de almacenamiento de un SGBD concreto.",
+        "Representar entidades, relaciones y reglas del dominio sin decidir el almacenamiento físico.",
+        "Prescindir de los requisitos de información del negocio."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El modelo conceptual describe entidades, relaciones y reglas del dominio sin decidir su almacenamiento físico. La frase original sobre todas las restricciones era absoluta y no identificaba la clase de modelo. Se concreta la propiedad que se evalúa.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "modelado-conceptual"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/think/topics/data-modeling",
+            "referencia": "IBM, Conceptual data models"
+          }
+        ],
+        "observaciones": "El modelo conceptual describe entidades, relaciones y reglas del dominio sin decidir su almacenamiento físico. La frase original sobre todas las restricciones era absoluta y no identificaba la clase de modelo. Se concreta la propiedad que se evalúa."
+      }
     },
     {
       "id": 388,
       "bloque": 0,
       "tema": 0,
-      "texto": "En una metodología de diseño de bases de datos, ¿cómo se llama la etapa cuyo objetivo es obtener una buena representación de los recursos de información con independencia de los usuarios o el SGBD, y sin realizar consideraciones sobre la eficiencia?",
+      "texto": "¿Qué etapa del diseño de una base de datos representa los requisitos de información del negocio y de sus usuarios con independencia del SGBD y sin decidir la organización física del almacenamiento?",
       "opciones": [
         "Diseño conceptual",
         "Diseño lógico estándar",
@@ -15270,13 +15452,38 @@
         "Diseño preliminar"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El diseño conceptual se basa en requisitos del negocio y de los usuarios y es independiente del SGBD concreto. No es independiente de los usuarios como decía el original. Las decisiones de almacenamiento e implementación se abordan después.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "diseno-conceptual"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/think/topics/data-modeling",
+            "referencia": "IBM, etapas conceptual, lógica y física"
+          }
+        ],
+        "observaciones": "El diseño conceptual se basa en requisitos del negocio y de los usuarios y es independiente del SGBD concreto. No es independiente de los usuarios como decía el original. Las decisiones de almacenamiento e implementación se abordan después."
+      }
     },
     {
       "id": 389,
       "bloque": 0,
       "tema": 0,
-      "texto": "Qué esquema de bases de datos incluye la descripción de todos los datos e interrelaciones entre éstos, así como las restricciones de integridad y de confidencialidad:",
+      "texto": "En la arquitectura ANSI/SPARC, ¿qué esquema describe la estructura global de la base de datos, sus entidades, relaciones y restricciones, ocultando los detalles del almacenamiento físico?",
       "opciones": [
         "Esquema interno",
         "Esquema conceptual",
@@ -15284,7 +15491,33 @@
         "Esquema físico"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El esquema conceptual representa la estructura global, entidades, relaciones y restricciones, ocultando detalles físicos. Se explicita ANSI/SPARC y se evita atribuir de forma genérica toda confidencialidad a un único nivel.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ANSI-SPARC",
+        "esquema-conceptual"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.cs.montana.edu/courses/spring2004/435/lectures/ConceptsArchitecture.html",
+            "referencia": "Montana State University, Conceptual or logical level"
+          }
+        ],
+        "observaciones": "El esquema conceptual representa la estructura global, entidades, relaciones y restricciones, ocultando detalles físicos. Se explicita ANSI/SPARC y se evita atribuir de forma genérica toda confidencialidad a un único nivel."
+      }
     },
     {
       "id": 390,
@@ -15298,7 +15531,33 @@
         "Existen dos tipos de independencia de datos: básica y completa"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Los esquemas externos presentan vistas para necesidades particulares. Los niveles son externo, conceptual e interno, y la independencia de datos es lógica o física. Se conserva la respuesta B.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ANSI-SPARC",
+        "esquema-externo"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.cs.montana.edu/courses/spring2004/435/lectures/ConceptsArchitecture.html",
+            "referencia": "Montana State University, Three-schema Architecture, External Level, Data independence"
+          }
+        ],
+        "observaciones": "Los esquemas externos presentan vistas para necesidades particulares. Los niveles son externo, conceptual e interno, y la independencia de datos es lógica o física. Se conserva la respuesta B."
+      }
     },
     {
       "id": 391,
