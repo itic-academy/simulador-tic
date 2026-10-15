@@ -15964,43 +15964,123 @@
       "id": 401,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale cuál de las siguientes licencias es la única que puede considerarse licencia de software libre compatible con la GNU GPL:",
+      "texto": "Según la Free Software Foundation, ¿qué afirmación sobre Apache License 2.0 y la GNU GPL es correcta?",
       "opciones": [
-        "Sun Community Source License",
-        "Apache License. Version 2.0",
-        "Microsoft Public License (MS-OL)",
-        "GNU Lesser General Public License (LGPL)"
+        "Apache License 2.0 no es una licencia de software libre.",
+        "Apache License 2.0 es compatible con GPLv3, pero no con GPLv2.",
+        "Apache License 2.0 es compatible con GPLv2, pero no con GPLv3.",
+        "La compatibilidad es idéntica para todas las versiones de la GPL."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "La compatibilidad depende de la versión: Apache 2.0 es compatible con GPLv3 pero no con GPLv2. El original omitía versiones y excluía indebidamente Apache 2.0. Se reformula como una afirmación de compatibilidad, con B como respuesta en lugar de D.",
+      "clasificacion": {
+        "A1": [
+          "A1-43",
+          "A1-69"
+        ],
+        "A2": [
+          "A2-II-14"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "licencias",
+        "GPL",
+        "Apache-2.0"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/licenses/license-list.html#apache2",
+            "referencia": "FSF, Apache License Version 2.0"
+          }
+        ],
+        "observaciones": "La compatibilidad depende de la versión: Apache 2.0 es compatible con GPLv3 pero no con GPLv2. El original omitía versiones y excluía indebidamente Apache 2.0. Se reformula como una afirmación de compatibilidad, con B como respuesta en lugar de D."
+      }
     },
     {
       "id": 402,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes características acerca de OLAP es correcta?",
+      "texto": "¿Qué distinción describe correctamente la orientación de OLAP y OLTP?",
       "opciones": [
-        "La principal característica que potencia a OLAP, es que es lo más rápido a la hora de ejecutar sentencias SQL de tipo UPDATE, en contraposición con OLTP que es la mejor opción para operaciones de tipo DELETE.",
-        "La principal característica que potencia a OLAP, es que es lo más rápido a la hora de ejecutar sentencias SQL de tipo SELECT, en contraposición con OLTP que es la mejor opción para operaciones de tipo INSERT, UPDATE, DELETE.",
-        "La principal característica que potencia a OLAP, es que es lo más rápido a la hora de ejecutar sentencias SQL de tipo DELETE, en contraposición con OLTP que es la mejor opción para operaciones de tipo UPDATE.",
-        "La principal característica que potencia a OLAP, es que es lo más rápido a la hora de ejecutar sentencias SQL de tipo DELETE, en contraposición con OLTP que es la mejor opción para operaciones de tipo SELECT, INSERT y UPDATE."
+        "OLAP se limita a borrar filas y OLTP solo ejecuta consultas SELECT.",
+        "OLAP se orienta al análisis complejo de datos; OLTP, al procesamiento de transacciones operativas.",
+        "OLAP prohíbe consultas agregadas y OLTP exige cubos multidimensionales.",
+        "OLTP no admite modificaciones de datos."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "OLAP se orienta al análisis complejo y OLTP a transacciones operativas breves y concurrentes. Ambos pueden ejecutar consultas; no existe una superioridad universal para todo SELECT, INSERT, UPDATE o DELETE.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4",
+          "A2-III-15"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "OLAP",
+        "OLTP"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/think/topics/olap-vs-oltp",
+            "referencia": "IBM, OLAP vs. OLTP"
+          }
+        ],
+        "observaciones": "OLAP se orienta al análisis complejo y OLTP a transacciones operativas breves y concurrentes. Ambos pueden ejecutar consultas; no existe una superioridad universal para todo SELECT, INSERT, UPDATE o DELETE."
+      }
     },
     {
       "id": 403,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes NO es una característica de un Data Mart?",
+      "texto": "¿Cuál de estas afirmaciones sobre un data mart es FALSA?",
       "opciones": [
-        "Especializado en el almacenamiento de los datos de un área de negocio específica.",
-        "Debe ser alimentado siempre desde un Data Warehouse.",
-        "En los Data Mart OLAP la estructura para el análisis de su información se basa en los cubos OLAP.",
-        "En los Data Mart OLTP la estructura para el análisis de su información está montada sobre una base de datos OLTP, como en el Data Warehouse."
+        "Se enfoca en un área de negocio o grupo de usuarios concreto.",
+        "Siempre debe obtener todos sus datos de un data warehouse corporativo.",
+        "Un data mart independiente puede obtener datos de sistemas operacionales u otras fuentes.",
+        "Un data mart dependiente obtiene sus datos de un data warehouse."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Un data mart atiende un área o grupo concreto. Puede depender de un almacén corporativo o recibir datos de otras fuentes. Se eliminan los distractores confusos sobre data marts OLTP y se conserva B como afirmación falsa.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "data-mart"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/cd/A81042_01/DOC/server.816/a76994/marts.htm",
+            "referencia": "Oracle, Data Marts, tipos dependiente, independiente e híbrido"
+          }
+        ],
+        "observaciones": "Un data mart atiende un área o grupo concreto. Puede depender de un almacén corporativo o recibir datos de otras fuentes. Se eliminan los distractores confusos sobre data marts OLTP y se conserva B como afirmación falsa."
+      }
     },
     {
       "id": 404,
@@ -16014,7 +16094,34 @@
         "Las redes neuronales"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El artículo original describe ID3 como un sistema de inducción de árboles de decisión a partir de ejemplos. No es un algoritmo de agrupamiento ni una red neuronal.",
+      "clasificacion": {
+        "A1": [
+          "A1-70",
+          "A1-71"
+        ],
+        "A2": [
+          "A2-III-15"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ID3",
+        "arboles-decision"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1007/BF00116251",
+            "referencia": "J. R. Quinlan (1986), Induction of decision trees, resumen del artículo original"
+          }
+        ],
+        "observaciones": "El artículo original describe ID3 como un sistema de inducción de árboles de decisión a partir de ejemplos. No es un algoritmo de agrupamiento ni una red neuronal."
+      }
     },
     {
       "id": 405,
@@ -16024,39 +16131,118 @@
       "opciones": [
         "Almacenar gran cantidad de datos de forma integrada, no volátil y variable en el tiempo.",
         "Generar informes para la dirección.",
-        "Captura de datos heterogéneos y sin organización de diferentes fuentes.",
+        "Procesar transacciones operativas, como pedidos o reservas, manteniendo la integridad de los datos.",
         "Agiliza la consulta de grandes volúmenes de datos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "OLTP procesa transacciones de la operativa diaria, por ejemplo pedidos o reservas, con concurrencia e integridad. Capturar datos heterogéneos sin organización no define OLTP; se corrige la opción C que el original señalaba.",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "OLTP",
+        "transacciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/think/topics/olap-vs-oltp",
+            "referencia": "IBM, What is OLTP?"
+          }
+        ],
+        "observaciones": "OLTP procesa transacciones de la operativa diaria, por ejemplo pedidos o reservas, con concurrencia e integridad. Capturar datos heterogéneos sin organización no define OLTP; se corrige la opción C que el original señalaba."
+      }
     },
     {
       "id": 406,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la respuesta correcta en relación al Almacén de Datos (Data Warehouse):",
+      "texto": "¿Qué afirmación describe correctamente la actualización de un data warehouse?",
       "opciones": [
-        "La estructura lógica está compuesta por los niveles centralizado, organizado en torno a temas e integrado.",
-        "La estructura física está compuesta por los niveles de metadatos, datos detallados actuales y datos detallados históricos.",
-        "El almacén de datos no es volátil, no se pueden modificar datos almacenados, solamente se permite la consulta y la carga de nuevos datos.",
-        "Entre los criterios más importantes a considerar para elegir el SGBD que gestionará el almacén, está el esfuerzo necesario para determinar el estado de los datos disponibles en los sistemas OLTP de la organización."
+        "Un data warehouse debe actualizarse exclusivamente mediante transacciones manuales de cada usuario final.",
+        "Su uso analítico impide toda carga posterior a su creación.",
+        "Puede actualizarse mediante procesos de integración como ETL, diferenciados de la operativa transaccional habitual.",
+        "Un data warehouse no puede almacenar datos históricos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "No volátil caracteriza el uso analítico estable frente a la actualización transaccional habitual, no una prohibición técnica absoluta de modificar datos. Oracle describe actualizaciones por procesos ETL; se sustituye la afirmación de imposibilidad por esa distinción.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "data-warehouse",
+        "ETL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/18/dwhsg/introduction-data-warehouse-concepts.html",
+            "referencia": "Oracle, Data Warehouse and OLTP Systems, Data modifications"
+          }
+        ],
+        "observaciones": "No volátil caracteriza el uso analítico estable frente a la actualización transaccional habitual, no una prohibición técnica absoluta de modificar datos. Oracle describe actualizaciones por procesos ETL; se sustituye la afirmación de imposibilidad por esa distinción."
+      }
     },
     {
       "id": 407,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes elementos se puede decir que genuinamente forma parte de la web 2.0?",
+      "texto": "¿Qué función cumple un formato de feeds como Atom (RFC 4287)?",
       "opciones": [
-        "Sindicación de contenidos",
-        "Sistemas de administración de contenidos (CMS)",
-        "Páginas personales",
-        "Directorios (taxonomías)"
+        "Sindicación de contenidos.",
+        "Gestión del particionado físico de discos.",
+        "Cifrado simétrico de bloques.",
+        "Planificación de procesos del sistema operativo."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Atom es un formato de sindicación basado en XML para listas de información relacionada o feeds. Se sustituye la etiqueta imprecisa de elemento genuino de web 2.0 por una función concreta verificable.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "sindicacion",
+        "Atom"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4287",
+            "referencia": "RFC 4287, introducción"
+          }
+        ],
+        "observaciones": "Atom es un formato de sindicación basado en XML para listas de información relacionada o feeds. Se sustituye la etiqueta imprecisa de elemento genuino de web 2.0 por una función concreta verificable."
+      }
     },
     {
       "id": 408,
@@ -16070,21 +16256,72 @@
         "Componentes modulares de interfaz de usuario gestionados y visualizados en un portal web"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "JSON es un formato textual ligero e independiente del lenguaje para intercambiar datos estructurados. No es una tecnología de integración de portales ni un componente de interfaz.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "JSON"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8259",
+            "referencia": "RFC 8259, introducción"
+          }
+        ],
+        "observaciones": "JSON es un formato textual ligero e independiente del lenguaje para intercambiar datos estructurados. No es una tecnología de integración de portales ni un componente de interfaz."
+      }
     },
     {
       "id": 409,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dentro de los estándares XML, aquel donde se definen los enlaces a otros documentos, a código ejecutable, etc. Es:",
+      "texto": "¿Qué recomendación del W3C permite crear y describir enlaces entre recursos mediante elementos XML?",
       "opciones": [
         "DTD",
         "XSL",
-        "XLL",
+        "XLink.",
         "DHTML"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "XLink permite describir enlaces entre recursos mediante elementos XML. Se sustituye XLL, denominación antigua e imprecisa, por el nombre de la recomendación XLink; DTD describe estructura y XSL trata presentación y transformación.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "XML",
+        "XLink"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/xlink11/",
+            "referencia": "W3C, XML Linking Language (XLink) 1.1, resumen"
+          }
+        ],
+        "observaciones": "XLink permite describir enlaces entre recursos mediante elementos XML. Se sustituye XLL, denominación antigua e imprecisa, por el nombre de la recomendación XLink; DTD describe estructura y XSL trata presentación y transformación."
+      }
     },
     {
       "id": 410,
@@ -16098,7 +16335,31 @@
         "Blowfish"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "NIST retiró el estándar DES y señaló FIPS 197 (AES), aprobado en 2001, como alternativa más fuerte. Se conserva la respuesta B; se trata de un hecho histórico de estandarización, no de una recomendación de configuración criptográfica.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "AES",
+        "DES"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/news/2005/withdrawal-of-fips-46-3-fips-74-and-fips-81",
+            "referencia": "NIST, Withdrawal of FIPS 46-3, FIPS 74 and FIPS 81 (2005)"
+          }
+        ],
+        "observaciones": "NIST retiró el estándar DES y señaló FIPS 197 (AES), aprobado en 2001, como alternativa más fuerte. Se conserva la respuesta B; se trata de un hecho histórico de estandarización, no de una recomendación de configuración criptográfica."
+      }
     },
     {
       "id": 411,
