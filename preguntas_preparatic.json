@@ -13148,7 +13148,7 @@
       "id": 331,
       "bloque": 0,
       "tema": 0,
-      "texto": "UML 2 permite la modificación de todos sus componentes mediante mecanismos de extensibilidad, ¿cuál es de ellos?:",
+      "texto": "En UML, ¿cuál de estos conceptos permite expresar una condición que deben satisfacer elementos del modelo?",
       "opciones": [
         "Agregación",
         "Asociación",
@@ -13156,7 +13156,34 @@
         "Restricción"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Una restricción impone una condición sobre elementos del modelo. Los perfiles permiten extensiones controladas, no modificar arbitrariamente todos los componentes ni contradecir la semántica UML. Se elimina esa premisa del original.",
+      "clasificacion": {
+        "A1": [
+          "A1-89",
+          "A1-90"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML",
+        "restricciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5/PDF",
+            "referencia": "OMG UML 2.5, capítulos 7 y 12"
+          }
+        ],
+        "observaciones": "Una restricción impone una condición sobre elementos del modelo. Los perfiles permiten extensiones controladas, no modificar arbitrariamente todos los componentes ni contradecir la semántica UML. Se elimina esa premisa del original."
+      }
     },
     {
       "id": 332,
@@ -13170,27 +13197,81 @@
         "Por secuencia."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Datos, control y contenido pertenecen a la clasificación clásica de acoplamiento. Secuencial es una categoría de cohesión, no de esa clasificación de acoplamiento.",
+      "clasificacion": {
+        "A1": [
+          "A1-93",
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-9",
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "acoplamiento"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.cs.colostate.edu/~france/CS314/Lectures/2009-lectures/314Design.pdf",
+            "referencia": "Robert France, Colorado State University: Module Coupling"
+          }
+        ],
+        "observaciones": "Datos, control y contenido pertenecen a la clasificación clásica de acoplamiento. Secuencial es una categoría de cohesión, no de esa clasificación de acoplamiento."
+      }
     },
     {
       "id": 333,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la programación orientada a objetos, se utiliza el concepto del polimorfismo, que consiste en:",
+      "texto": "En programación orientada a objetos, ¿en qué consiste el polimorfismo por subtipos con despacho dinámico?",
       "opciones": [
         "Una clase puede heredar características de otra.",
-        "Una misma llamada puede suponer la ejecución de dos funciones distintas en tiempo de ejecución, según la clase del objeto.",
+        "La implementación ejecutada por una llamada a un método puede variar según el tipo real del objeto receptor.",
         "Pasar mensajes a un objeto a través de sus atributos públicos.",
         "Extender una clase abstracta."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El despacho dinámico selecciona la implementación según el tipo real del objeto receptor. Una llamada no ejecuta necesariamente dos funciones: puede resolver a implementaciones distintas en objetos de distintos tipos.",
+      "clasificacion": {
+        "A1": [
+          "A1-67",
+          "A1-93"
+        ],
+        "A2": [
+          "A2-II-3",
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "polimorfismo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html",
+            "referencia": "Oracle: Polymorphism"
+          }
+        ],
+        "observaciones": "El despacho dinámico selecciona la implementación según el tipo real del objeto receptor. Una llamada no ejecuta necesariamente dos funciones: puede resolver a implementaciones distintas en objetos de distintos tipos."
+      }
     },
     {
       "id": 334,
       "bloque": 0,
       "tema": 0,
-      "texto": "Conforme al patrón de diseño de aplicaciones MVC (Modelo-Vista-Controlador), señale en qué módulo/s se representa el acceso a los datos de las aplicaciones:",
+      "texto": "En MVC, ¿qué componente representa el estado de la aplicación y su lógica de negocio, pudiendo colaborar con servicios de persistencia?",
       "opciones": [
         "Modelo.",
         "Vista.",
@@ -13198,13 +13279,39 @@
         "Modelo y Controlador."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El modelo representa el estado y la lógica de negocio; la persistencia puede delegarse en repositorios o servicios. MVC no exige que toda operación de acceso a datos esté escrita directamente en una clase del modelo. Se pregunta por su responsabilidad característica.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MVC",
+        "modelo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-10.0",
+            "referencia": "Microsoft: Model Responsibilities"
+          }
+        ],
+        "observaciones": "El modelo representa el estado y la lógica de negocio; la persistencia puede delegarse en repositorios o servicios. MVC no exige que toda operación de acceso a datos esté escrita directamente en una clase del modelo. Se pregunta por su responsabilidad característica."
+      }
     },
     {
       "id": 335,
       "bloque": 0,
       "tema": 0,
-      "texto": "En programación orientada a objetos, ¿cuántos métodos destructores puede tener una clase?",
+      "texto": "En C#, ¿cuántos finalizadores (históricamente llamados destructores) puede declarar como máximo una clase?",
       "opciones": [
         "Uno.",
         "Dos.",
@@ -13212,41 +13319,124 @@
         "Ninguna de las respuestas es correcta."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "En C# una clase puede declarar como máximo un finalizador, históricamente llamado destructor. No puede sobrecargarse y no es obligatorio declararlo. Se acota el lenguaje para no generalizar a toda la programación orientada a objetos.",
+      "clasificacion": {
+        "A1": [
+          "A1-66",
+          "A1-93"
+        ],
+        "A2": [
+          "A2-II-3",
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "C#",
+        "finalizadores"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/finalizers",
+            "referencia": "Microsoft: Finalizers, C#"
+          }
+        ],
+        "observaciones": "En C# una clase puede declarar como máximo un finalizador, históricamente llamado destructor. No puede sobrecargarse y no es obligatorio declararlo. Se acota el lenguaje para no generalizar a toda la programación orientada a objetos."
+      }
     },
     {
       "id": 336,
       "bloque": 0,
       "tema": 0,
-      "texto": "Tres tecnologías de parte de la Vista son:",
+      "texto": "En una aplicación ASP.NET Core MVC, ¿qué conjunto corresponde a tecnologías usadas para construir y presentar las vistas web?",
       "opciones": [
-        "Soap, Html y Recuest",
-        "Jpg, text y Html",
-        "Xm, Http, get",
-        "Post, Html y Razor"
+        "SOAP, WSDL y UDDI.",
+        "HTML, CSS y Razor.",
+        "SQL, JDBC y ODBC.",
+        "TCP, UDP y BGP."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Las vistas de ASP.NET Core MVC usan archivos .cshtml que combinan HTML con sintaxis Razor y pueden utilizar CSS para presentación. POST y GET son métodos HTTP; SOAP es un protocolo de mensajería. Se sustituye la lista original de formatos y términos deteriorados.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-66",
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9",
+          "A2-III-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MVC",
+        "Razor"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/views/overview?view=aspnetcore-10.0",
+            "referencia": "Microsoft: Views in ASP.NET Core MVC"
+          }
+        ],
+        "observaciones": "Las vistas de ASP.NET Core MVC usan archivos .cshtml que combinan HTML con sintaxis Razor y pueden utilizar CSS para presentación. POST y GET son métodos HTTP; SOAP es un protocolo de mensajería. Se sustituye la lista original de formatos y términos deteriorados."
+      }
     },
     {
       "id": 337,
       "bloque": 0,
       "tema": 0,
-      "texto": "En programación orientada a objetos, sobrecargar un método es:",
+      "texto": "En Java, sobrecargar un método consiste en:",
       "opciones": [
-        "crear un método con el mismo nombre de otro existente pero con distintos argumentos.",
+        "Declarar métodos con el mismo nombre y distintas listas de tipos de parámetros.",
         "cambiarle el nombre a un método existente pero dejarlo con la misma funcionalidad.",
         "cambiarle el nombre a un método existente y modificar su funcionalidad.",
         "ninguna de las anteriores."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La sobrecarga usa el mismo nombre y diferentes listas de tipos de parámetros. Cambiar solo los nombres de parámetros, los valores de argumentos o el tipo de retorno no basta. Se acota a Java.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Java",
+        "sobrecarga"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html",
+            "referencia": "Oracle: Defining Methods, Overloading Methods"
+          }
+        ],
+        "observaciones": "La sobrecarga usa el mismo nombre y diferentes listas de tipos de parámetros. Cambiar solo los nombres de parámetros, los valores de argumentos o el tipo de retorno no basta. Se acota a Java."
+      }
     },
     {
       "id": 338,
       "bloque": 0,
       "tema": 0,
-      "texto": "En programación orientada a objetos, si sólo se hereda la declaración de las características que la clase padre declara como públicas, la herencia se denomina:",
+      "texto": "En diseño orientado a objetos, ¿cómo se denomina la herencia del contrato público sin heredar su implementación?",
       "opciones": [
         "Herencia múltiple.",
         "Polimorfismo.",
@@ -13254,13 +13444,38 @@
         "Sobrecarga."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La herencia de interfaz transmite el contrato público; la de implementación reutiliza código. Se distingue el concepto de las interfaces de lenguajes que permiten métodos con implementación predeterminada.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "herencia-interfaz"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rh-kind",
+            "referencia": "C++ Core Guidelines, C.129"
+          }
+        ],
+        "observaciones": "La herencia de interfaz transmite el contrato público; la de implementación reutiliza código. Se distingue el concepto de las interfaces de lenguajes que permiten métodos con implementación predeterminada."
+      }
     },
     {
       "id": 339,
       "bloque": 0,
       "tema": 0,
-      "texto": "Protocolo de resguardo para internet dedicado para invocaciones de métodos remotos soportados por CORBA:",
+      "texto": "¿Qué protocolo de CORBA concreta GIOP sobre TCP/IP para la comunicación interoperable entre ORB?",
       "opciones": [
         "IIOP",
         "IOR",
@@ -13268,7 +13483,34 @@
         "RTS"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "IIOP es la concreción de GIOP sobre TCP/IP para interoperabilidad entre ORB. IOR es una referencia interoperable de objeto y ORB es el intermediario de solicitudes. Se corrige la expresión protocolo de resguardo.",
+      "clasificacion": {
+        "A1": [
+          "A1-92",
+          "A1-93"
+        ],
+        "A2": [
+          "A2-II-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "CORBA",
+        "IIOP"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/CORBA/ISO/19500-2/PDF",
+            "referencia": "OMG CORBA Interoperability: GIOP e IIOP"
+          }
+        ],
+        "observaciones": "IIOP es la concreción de GIOP sobre TCP/IP para interoperabilidad entre ORB. IOR es una referencia interoperable de objeto y ORB es el intermediario de solicitudes. Se corrige la expresión protocolo de resguardo."
+      }
     },
     {
       "id": 340,
@@ -13282,7 +13524,34 @@
         "Una función del objeto."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Los campos almacenan estado y los métodos implementan comportamiento. Entre las opciones, función del objeto expresa ese comportamiento; no es una variable ni un estado.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-II-3",
+          "A2-III-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "objetos",
+        "metodos"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+            "referencia": "Oracle: What Is an Object?"
+          }
+        ],
+        "observaciones": "Los campos almacenan estado y los métodos implementan comportamiento. Entre las opciones, función del objeto expresa ese comportamiento; no es una variable ni un estado."
+      }
     },
     {
       "id": 341,
