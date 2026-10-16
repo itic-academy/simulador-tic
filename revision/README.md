@@ -28,11 +28,11 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.693 preguntas sin revisión de contenido. Siguiente ID: 431. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 26 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.683 preguntas sin revisión de contenido. Siguiente ID: 441. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 27 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
-Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323 y 428. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105 y 111. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
+Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428 y 438. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105 y 111. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
 
 Correcciones destacadas de esta continuación: LDAP (64) contenía dos respuestas defendibles; Java static (79) cambia la respuesta correcta de A a B; la fecha del artículo 6.d de la Orden ETD/465/2021 (89) pasa a 1 de marzo de 2023 conforme a la modificación de 2022; WebAssembly (98) admite ejecución fuera del navegador; Data Act (100) se actualiza a su aplicación general desde septiembre de 2025. Se conservan los originales completos.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 430 registros de cambios y las 11.693 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 440 registros de cambios y las 11.683 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -160,3 +160,8 @@ La pregunta 413 cambia de D a A: el artículo 11.3 del RD 255/2025 fija dos año
 IDs 421–430: diez examinadas, nueve verificadas, una pendiente y seis corregidas. Acumulado: 430 examinadas, 404 verificadas, 26 pendientes y 260 con cambios de contenido. Estados: 141 vigentes, 247 corregidas, dieciséis históricas y 26 pendientes. Quedan 11.693 sin revisar; siguiente ID 431.
 
 Se precisan el perfil de analista de MÉTRICA, DataRow, clase abstracta C#, despliegue UML, diccionario Oracle y proceso frente a almacén en DFD. La 428 conserva su original y queda pendiente: no se ha contrastado la regla de consistencia DFD/modelo de datos y el PDF oficial de técnicas sigue rechazando el acceso. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 029 — 16 de octubre
+
+IDs 431–440: diez examinadas, nueve verificadas, una pendiente y cinco corregidas. Acumulado: 440 examinadas, 413 verificadas, 27 pendientes y 265 con cambios de contenido. Estados: 145 vigentes, 252 corregidas, dieciséis históricas y 27 pendientes. Quedan 11.683 sin revisar; siguiente ID 441.
+
+Se elimina la ambigüedad del acoplamiento de marca frente a herencia, se precisa el orden parcial de eventos UML y se distingue actividad de tarea en PSI 7. Se aclaran cobertura de caja blanca e independencia lineal de caminos básicos. Memento, Singleton, gestión de configuración y DSI 11.2 se conservan con explicación y fuente. La 438 queda pendiente por rechazo de acceso al PDF oficial de técnicas; tampoco se ha resuelto la 428 mediante ese documento. Los pasajes de PSI, DSI y configuración se contrastaron con extractos indexados oficiales. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
