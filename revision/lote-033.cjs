@@ -1,0 +1,26 @@
+const n='https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-125.pdf';
+const records=[
+[471,[125],['II-13'],['troyano'],'https://csrc.nist.gov/glossary/term/trojan_horse','NIST, Trojan horse','El troyano aparenta utilidad y oculta código malicioso. El mero acceso remoto del original también puede ser legítimo; se incorpora el engaño característico.'],
+[472,[130],['IV-16'],['H.323','H.235'],'https://www.itu.int/rec/T-REC-H.235.0-201401-I','UIT-T H.235.0','El marco de seguridad de H.323 es H.235, no H.325. La errata dejaba sin respuesta válida el original. H.323 permite multimedia sobre redes de paquetes.'],
+[473,[57,132],['IV-6'],['Popek-Goldberg'],'https://www.cs.columbia.edu/~cdall/candidacy/pdf/Popek.pdf','Popek y Goldberg, 1974, sección 1','Las propiedades clásicas del VMM son equivalencia, eficiencia y control de recursos. Escalabilidad no integra la tríada. Se precisa el alcance del modelo clásico.'],
+[474,[57,132],['IV-6'],['hipervisor'],n,'NIST SP 800-125, sección 2','Hipervisor y VMM son denominaciones equivalentes. En tipo 1 se ejecuta directamente sobre hardware. Se eliminan las respuestas duplicadas y la comparación con HBA, que es hardware.'],
+[475,[57,132],['IV-6'],['consolidacion'],n,'NIST SP 800-125, sección 2','Alojar varias cargas como máquinas virtuales en menos servidores físicos es consolidación. No tiene por qué ser el primer paso de todo proyecto. SaaS significa Software as a Service.'],
+[476,[57,132],['IV-6'],['paravirtualizacion'],'https://handbook.xenproject.org/users/concepts.html','Xen Project, Virtualization Concepts','El invitado coopera con el hipervisor mediante hipercalls para reducir sobrecostes de emulación. No se garantiza superar siempre el rendimiento de la virtualización asistida por hardware.'],
+[477,[57,132],['IV-6'],['hipervisor'],n,'NIST SP 800-125, sección 2','Tipo 1 se ejecuta sobre hardware y tipo 2 sobre un sistema operativo anfitrión. Ambos emplean hipervisor; la oposición original era imprecisa.'],
+[478,[57,132],['IV-6'],['recursos'],n,'NIST SP 800-125, sección 2','El hipervisor reparte recursos físicos entre invitados. No garantiza ahorros universales ni elimina las copias de seguridad. Se distinguen capacidades de beneficios dependientes del contexto.'],
+[479,[60],['II-2'],['BSD','historica'],'https://docs.freebsd.org/en/books/design-44bsd/','The Design and Implementation of 4.4BSD, evolución BSD','4.2BSD pertenece a Berkeley Software Distribution. Se evita clasificar indiscriminadamente como SVR4 a los otros UNIX comerciales del original.','historica'],
+[480,[60],['II-2'],['ext4'],'https://docs.kernel.org/filesystems/ext4/super.html','Linux Kernel, ext4, Super Block','El superbloque ext4 registra totales de inodos y bloques. Se acota a ext4: los sistemas de archivos Unix no comparten necesariamente disposición física ni estructura de metadatos.']
+];
+const edits={
+471:{texto:'¿Cómo se denomina un programa que aparenta ser legítimo o útil, pero oculta código malicioso que se ejecuta al utilizarlo?'},
+472:{opcion:[2,'Su marco de seguridad se define en la familia de recomendaciones UIT-T H.235.']},
+473:{texto:'¿Cuál NO es una de las tres propiedades clásicas de un monitor de máquina virtual (VMM) descritas por Popek y Goldberg?'},
+474:{texto:'En virtualización de tipo 1 (bare metal), ¿qué componente software se ejecuta directamente sobre el hardware para gestionar las máquinas virtuales?',opciones:['El hipervisor o monitor de máquinas virtuales (VMM).','El navegador de un usuario invitado.','Una aplicación del sistema operativo invitado.','El cliente de correo del invitado.']},
+475:{texto:'¿Cómo se denomina el proyecto que reúne en menos servidores físicos varias cargas de trabajo, utilizando máquinas virtuales?',opciones:['Consolidación de servidores.','Desfragmentación de archivos.','SaaS (Software as a Service).','Compilación cruzada.']},
+476:{texto:'¿Qué objetivo persigue la cooperación del invitado con el hipervisor mediante hipercalls en la paravirtualización?',opcion:[1,'Reducir sobrecostes de emulación y mejorar el rendimiento en las operaciones afectadas.']},
+477:{texto:'¿Qué clasificación distingue hipervisores según se ejecuten directamente sobre hardware o sobre un sistema operativo anfitrión?',opcion:[0,'Tipo 1 (bare metal) y tipo 2 (hospedados).']},
+478:{texto:'¿Qué capacidad aporta la virtualización de servidores a un centro de datos?',opciones:['Garantiza eliminar la necesidad de personal de operaciones.','Garantiza reducir todos los costes de mantenimiento en cualquier escenario.','Hace innecesarias las copias de seguridad.','Permite repartir y administrar recursos físicos entre múltiples máquinas virtuales.']},
+479:{texto:'¿Cuál de los siguientes sistemas corresponde explícitamente a una distribución histórica de la familia Berkeley Software Distribution (BSD)?'},
+480:{texto:'En el sistema de archivos ext4 de Linux, el superbloque:',opciones:['Contiene exclusivamente instrucciones para arrancar el sistema.','Es siempre el sector físico cero del disco completo.','Contiene el número total de inodos y de bloques del sistema de archivos, entre otros metadatos.','Todas las anteriores son correctas.']}
+};
+require('./aplicar-lote.cjs')({numero:'033',fecha:'2026-10-17',records,edits});
