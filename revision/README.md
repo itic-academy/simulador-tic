@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.663 preguntas sin revisión de contenido. Siguiente ID: 461. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 27 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.653 preguntas sin revisión de contenido. Siguiente ID: 471. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 27 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 460 registros de cambios y las 11.663 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 470 registros de cambios y las 11.653 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -177,3 +177,9 @@ COCOMO 81 y CMMI 1.3 quedan delimitados históricamente. Se sustituye la referen
 IDs 451–460: diez verificadas y nueve con cambios de contenido (siete corregidas y dos históricas reformuladas). Acumulado: 460 examinadas, 433 verificadas, 27 pendientes y 283 con cambios de contenido. Estados: 147 vigentes, 266 corregidas, veinte históricas y 27 pendientes. Quedan 11.663 sin revisar; siguiente ID 461.
 
 Se corrige xDSL, se delimitan Mobile WiMAX y clases IPv4 como referencias históricas, se distingue Bluetooth Classic de LE y tasa física de caudal útil. Se eliminan distractores ambiguos de ADSL2plus, se actualiza TCP a RFC 9293 y se corrige UDP: datagramas sin garantía de entrega u orden, no flujo unidireccional. Se precisan FTP básico y host privado; la máscara /20 se confirma contando los bits. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+
+## Lote 032 — 16 de octubre
+
+IDs 461–470: diez verificadas y nueve con cambios de contenido (ocho corregidas y una histórica reformulada). Acumulado: 470 examinadas, 443 verificadas, 27 pendientes y 292 con cambios de contenido. Estados: 148 vigentes, 274 corregidas, veintiuna históricas y 27 pendientes. Quedan 11.653 sin revisar; siguiente ID 471.
+
+Se actualiza la referencia IPv6 a RFC 4291 y se precisa FF00::/8; NGN deja de describirse como una promesa futura. Se corrige el primer dividendo digital a 790–862 MHz con contexto histórico y se sustituye la falsa diferencia de bidireccionalidad POP/IMAP por gestión y sincronización de buzones. RADIUS queda acotado a RFC 2865, sin atribuirle PPP obligatorio; se precisa el filtrado por cabeceras y se contrasta la adscripción CCN–CNI en el artículo 1.3 del RD 421/2004. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
