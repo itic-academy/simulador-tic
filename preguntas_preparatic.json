@@ -21559,7 +21559,7 @@
       "id": 541,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un entorno UNIX/Linux, los procesos no interactivos o de background se denominan:",
+      "texto": "En UNIX/Linux, ¿cómo se denomina habitualmente un proceso de servicio que se ejecuta en segundo plano?",
       "opciones": [
         "Zombies",
         "Swaps",
@@ -21567,7 +21567,33 @@
         "Daemons"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Un daemon es un proceso de servicio que se ejecuta en segundo plano. No todo trabajo lanzado en background ni todo proceso no interactivo es necesariamente un daemon; se elimina esa equivalencia del enunciado.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "daemons",
+        "procesos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.man7.org/linux/man-pages/man7/daemon.7.html",
+            "referencia": "Linux man-pages, daemon(7)"
+          }
+        ],
+        "observaciones": "Un daemon es un proceso de servicio que se ejecuta en segundo plano. No todo trabajo lanzado en background ni todo proceso no interactivo es necesariamente un daemon; se elimina esa equivalencia del enunciado."
+      }
     },
     {
       "id": 542,
@@ -21581,35 +21607,115 @@
         "Saber cuál es nuestra impresora asignada"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "pwd muestra el nombre del directorio de trabajo actual. La respuesta B se mantiene; no cambia contraseñas ni configura impresoras.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "pwd"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/s/coreutils/manual/html_node/pwd-invocation.html",
+            "referencia": "GNU Coreutils, pwd invocation"
+          }
+        ],
+        "observaciones": "pwd muestra el nombre del directorio de trabajo actual. La respuesta B se mantiene; no cambia contraseñas ni configura impresoras."
+      }
     },
     {
       "id": 543,
       "bloque": 0,
       "tema": 0,
-      "texto": "El Kernel del sistema objetivo del proyecto GNU es:",
+      "texto": "¿Qué componente del proyecto GNU consiste en un conjunto de servidores sobre el microkernel Mach?",
       "opciones": [
-        "El kernel 'Linux', mantenido por Linus Torvalds",
-        "El kernel de Minix, de Andrew S. Tanembaum",
-        "El kernel Hurd",
-        "Todas son falsas"
+        "Linux",
+        "MINIX",
+        "GNU Hurd",
+        "GRUB"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "GNU Hurd es un conjunto de servidores sobre el microkernel Mach que implementan funciones de sistema de archivos, red y control de acceso. Se precisa su arquitectura para no confundir esos servidores con GNU Mach ni con el núcleo Linux empleado en GNU/Linux.",
+      "clasificacion": {
+        "A1": [
+          "A1-59",
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "GNU",
+        "Hurd",
+        "microkernel"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/software/hurd/doc/hurd_1.html",
+            "referencia": "GNU Hurd Reference Manual, Introduction"
+          }
+        ],
+        "observaciones": "GNU Hurd es un conjunto de servidores sobre el microkernel Mach que implementan funciones de sistema de archivos, red y control de acceso. Se precisa su arquitectura para no confundir esos servidores con GNU Mach ni con el núcleo Linux empleado en GNU/Linux."
+      }
     },
     {
       "id": 544,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de las siguientes afirmaciones es correcta:",
+      "texto": "En el diseño histórico de ReiserFS, ¿qué función tiene el empaquetado de colas de archivos (tail packing)?",
       "opciones": [
-        "El sistema de ficheros extendido, ext2fs o ext2, es recomendable para grandes particiones por su menor carga de registro.",
-        "El sistema de fichero extendido, ext4fs o ext4, no permite trabajar con discos muy grandes (más de 32 terabytes) o ficheros muy grandes (por encima de 2 terabytes).",
-        "ReiserFS utiliza varias técnicas para encajar los finales de los ficheros en los espacios sin utilizar de los otros ficheros.",
-        "Linux maneja las particiones mediante la asignación de una letra para cada unidad."
+        "Asignar letras de unidad a las particiones.",
+        "Eliminar siempre la necesidad de metadatos.",
+        "Almacenar archivos pequeños y fragmentos finales de archivos en el árbol del sistema de archivos.",
+        "Convertir automáticamente todos los archivos a formato ext4."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La documentación de ReiserFS describe almacenamiento de archivos pequeños y colas de archivos en su árbol; notail desactiva ese empaquetado. Se conserva como cuestión histórica, sin recomendar su implantación actual ni afirmar que escriba datos dentro de otros archivos.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ReiserFS",
+        "tail-packing",
+        "historica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.man7.org/linux/man-pages/man8/mount.8.html",
+            "referencia": "util-linux, mount(8), Mount options for reiserfs: notail"
+          }
+        ],
+        "observaciones": "La documentación de ReiserFS describe almacenamiento de archivos pequeños y colas de archivos en su árbol; notail desactiva ese empaquetado. Se conserva como cuestión histórica, sin recomendar su implantación actual ni afirmar que escriba datos dentro de otros archivos."
+      }
     },
     {
       "id": 545,
@@ -21619,11 +21725,37 @@
       "opciones": [
         "Un emulador X11 para Windows",
         "Un emulador X11 para Linux",
-        "Una implementación de código fuente abierto de la API de Windows que funciona sobre una plataforma X11",
+        "Una capa de compatibilidad de código abierto que permite ejecutar aplicaciones de Windows en sistemas como Linux.",
         "Nada de lo anterior"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Wine es una capa de compatibilidad para ejecutar aplicaciones Windows en sistemas como Linux. Se elimina la dependencia genérica de X11 de la definición y no se garantiza compatibilidad con todas las aplicaciones.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Wine",
+        "compatibilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.winehq.org/about",
+            "referencia": "WineHQ, About Wine"
+          }
+        ],
+        "observaciones": "Wine es una capa de compatibilidad para ejecutar aplicaciones Windows en sistemas como Linux. Se elimina la dependencia genérica de X11 de la definición y no se garantiza compatibilidad con todas las aplicaciones."
+      }
     },
     {
       "id": 546,
