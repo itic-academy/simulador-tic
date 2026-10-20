@@ -21965,7 +21965,7 @@
       "id": 551,
       "bloque": 0,
       "tema": 0,
-      "texto": "En los sistemas operativos actuales, cada nodo-i dispone de los siguientes apuntadores o índices:",
+      "texto": "En el esquema de direccionamiento de bloques de un inodo ext2 para un archivo regular, ¿qué punteros se utilizan?",
       "opciones": [
         "12 apuntadores directos, un indirecto simple, un indirecto doble y un indirecto triple",
         "10 apuntadores directos, 1 indirecto simple y 1 indirecto doble",
@@ -21973,7 +21973,33 @@
         "todas son falsas"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El esquema de bloques de ext2 tiene doce punteros directos y tres de indirección: simple, doble y triple. No es una propiedad universal de los sistemas operativos actuales; otros formatos emplean estructuras distintas, como extensiones.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ext2",
+        "inodos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.kernel.org/doc/html/v6.12/filesystems/ext2.html",
+            "referencia": "Linux Kernel Documentation, The Second Extended Filesystem"
+          }
+        ],
+        "observaciones": "El esquema de bloques de ext2 tiene doce punteros directos y tres de indirección: simple, doble y triple. No es una propiedad universal de los sistemas operativos actuales; otros formatos emplean estructuras distintas, como extensiones."
+      }
     },
     {
       "id": 552,
@@ -21983,11 +22009,37 @@
       "opciones": [
         "No, tiene que estar en disco duro obligatoriamente",
         "Sí, en todos los casos",
-        "Sí, dependiendo de la versión de GNU/Linux",
+        "Sí, con un medio óptico arrancable y una imagen compatible, si el equipo y su firmware admiten ese arranque.",
         "No, aunque se podría parchear el arranque para que mirase el CD primero"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Es posible arrancar desde un medio óptico preparado como arrancable cuando el equipo y su firmware lo admiten y la imagen es compatible. No depende exclusivamente de una versión de GNU/Linux ni funciona en todos los casos.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "arranque",
+        "medios-opticos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.debian.org/releases/stable/amd64/ch05s01.en.html",
+            "referencia": "Debian Installation Guide, Booting the Installer"
+          }
+        ],
+        "observaciones": "Es posible arrancar desde un medio óptico preparado como arrancable cuando el equipo y su firmware lo admiten y la imagen es compatible. No depende exclusivamente de una versión de GNU/Linux ni funciona en todos los casos."
+      }
     },
     {
       "id": 553,
@@ -22001,7 +22053,33 @@
         "Se usa para visualizar los ficheros que se encuentran en una cola de impresión"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "tee recibe datos por la entrada estándar y los copia a la salida estándar y a los archivos indicados. En una tubería permite conservar la salida de una orden en un archivo y continuar enviándola a la salida estándar. Se mantiene A.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "tee",
+        "redireccion"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/software/gawk/manual/html_node/Tee-Program.html",
+            "referencia": "GNU Awk, Tee Program"
+          }
+        ],
+        "observaciones": "tee recibe datos por la entrada estándar y los copia a la salida estándar y a los archivos indicados. En una tubería permite conservar la salida de una orden en un archivo y continuar enviándola a la salida estándar. Se mantiene A."
+      }
     },
     {
       "id": 554,
@@ -22015,21 +22093,76 @@
         "Unix y OS/360 IBM."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Las notas originales describen la relación con MINIX y el objetivo de ejecutar software UNIX. Inspiración no significa reutilización de código: Torvalds indica expresamente que no contiene código de MINIX. Kernel.org también describe Linux como una implementación escrita desde cero de tipo UNIX: https://www.kernel.org/linux.html.",
+      "clasificacion": {
+        "A1": [
+          "A1-59",
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Linux",
+        "historia",
+        "MINIX"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://kernel.googlesource.com/pub/scm/linux/kernel/git/nico/archive/+/8331b82c1ac6ebe96db75d5853b4329b1502d5d3",
+            "referencia": "Linus Torvalds, anuncio y notas de Linux 0.01, archivo del kernel"
+          }
+        ],
+        "observaciones": "Las notas originales describen la relación con MINIX y el objetivo de ejecutar software UNIX. Inspiración no significa reutilización de código: Torvalds indica expresamente que no contiene código de MINIX. Kernel.org también describe Linux como una implementación escrita desde cero de tipo UNIX: https://www.kernel.org/linux.html."
+      }
     },
     {
       "id": 555,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la frase correcta sobre la gestión de procesos en los sistemas UNIX:",
+      "texto": "En Linux, una llamada válida a msgrcv sobre una cola System V no encuentra mensajes del tipo solicitado y no usa IPC_NOWAIT. ¿Qué sucede?",
       "opciones": [
-        "El estado de un proceso en un sistema Unix se codifica usando 3 bits.",
-        "El control de procesos en Unix permite la comunicación síncrona entre procesos mediante paso de mensajes.",
-        "Los procesos “daemon” son procesos interactivos del usuario root.",
-        "Los sistemas Unix permiten variar la prioridad de un proceso en tiempo de ejecución pero no los permisos con que se ejecuta."
+        "Devuelve siempre inmediatamente ENOMSG.",
+        "Bloquea al proceso hasta que llegue un mensaje adecuado, se elimine la cola o una señal interrumpa la espera.",
+        "Convierte el proceso en un daemon interactivo.",
+        "Descarta automáticamente todos los mensajes de otros tipos."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La recepción en una cola System V puede bloquear: sin IPC_NOWAIT, msgrcv espera un mensaje del tipo solicitado cuando no hay ninguno, salvo interrupción por señal o eliminación de la cola. Se sustituye la vaga comunicación síncrona por este comportamiento preciso; una cola no implica rendezvous entre emisor y receptor.",
+      "clasificacion": {
+        "A1": [
+          "A1-59",
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "IPC",
+        "colas-de-mensajes"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man2/msgop.2.html",
+            "referencia": "Linux man-pages, msgop(2), msgrcv"
+          }
+        ],
+        "observaciones": "La recepción en una cola System V puede bloquear: sin IPC_NOWAIT, msgrcv espera un mensaje del tipo solicitado cuando no hay ninguno, salvo interrupción por señal o eliminación de la cola. Se sustituye la vaga comunicación síncrona por este comportamiento preciso; una cola no implica rendezvous entre emisor y receptor."
+      }
     },
     {
       "id": 556,
