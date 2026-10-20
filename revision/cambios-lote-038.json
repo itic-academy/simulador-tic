@@ -1,0 +1,294 @@
+{
+  "fecha": "2026-10-20",
+  "alcance": "IDs 506–510; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 506,
+      "original": {
+        "id": 506,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes NO es una distribución LINUX?",
+        "opciones": [
+          "Fedora.",
+          "Mandriva.",
+          "Solaris.",
+          "Ubuntu."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 506,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes NO es una distribución LINUX?",
+        "opciones": [
+          "Fedora.",
+          "Mandriva.",
+          "Solaris.",
+          "Ubuntu."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Solaris es un sistema UNIX, no una distribución del núcleo Linux. Fedora, Ubuntu y la histórica Mandriva son distribuciones Linux; la pregunta no afirma que todas sigan mantenidas.",
+        "clasificacion": {
+          "A1": [
+            "A1-60",
+            "A1-62"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Solaris",
+          "distribuciones"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.opengroup.org/membership/forums/platform/unix",
+              "referencia": "The Open Group, The UNIX Standard"
+            }
+          ],
+          "observaciones": "Solaris es un sistema UNIX, no una distribución del núcleo Linux. Fedora, Ubuntu y la histórica Mandriva son distribuciones Linux; la pregunta no afirma que todas sigan mantenidas."
+        }
+      }
+    },
+    {
+      "id": 507,
+      "original": {
+        "id": 507,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El soporte de módulos en Linux tiene tres componentes:",
+        "opciones": [
+          "Gestión de E/S, Interfaces y Gestión del almacenamiento.",
+          "Gestión del almacenamiento, Gestión de seguridad y Gestión de integridad.",
+          "Gestión de módulos, Módulo registro de controladores y Mecanismo de resolución de conflictos.",
+          "Gestión de memoria, Gestión de discos y Gestión de impresión."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 507,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación describe correctamente los módulos cargables del núcleo Linux?",
+        "opciones": [
+          "Son siempre aplicaciones aisladas en espacio de usuario.",
+          "Pueden cargarse sin restricciones en cualquier versión y arquitectura del núcleo.",
+          "Permiten incorporar funcionalidades al núcleo; los módulos externos se construyen mediante kbuild para un núcleo compatible.",
+          "Obligan a recompilar íntegramente el núcleo cada vez que se carga un módulo ya compilado."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Los módulos se construyen como objetos .ko mediante kbuild para un núcleo compatible y pueden ampliar sus funciones, por ejemplo mediante controladores. Se sustituye la taxonomía de tres componentes sin contexto del original por una propiedad técnica comprobable; la compatibilidad y la configuración del núcleo condicionan su carga.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "modulos",
+          "kbuild"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://docs.kernel.org/kbuild/modules.html",
+              "referencia": "Linux Kernel, Building External Modules"
+            }
+          ],
+          "observaciones": "Los módulos se construyen como objetos .ko mediante kbuild para un núcleo compatible y pueden ampliar sus funciones, por ejemplo mediante controladores. Se sustituye la taxonomía de tres componentes sin contexto del original por una propiedad técnica comprobable; la compatibilidad y la configuración del núcleo condicionan su carga."
+        }
+      }
+    },
+    {
+      "id": 508,
+      "original": {
+        "id": 508,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué características tiene shorewall?",
+        "opciones": [
+          "Es una herramienta de configuración de gateway/firewall para GNU/Linux.",
+          "Si se quiere configurar el firewall para Ipv6 se debe instalar shorewall6.",
+          "Todas las anteriores son correctas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 508,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la organización de paquetes descrita en la documentación de Shorewall, ¿qué afirmaciones son correctas?",
+        "opciones": [
+          "Shorewall es una herramienta de configuración de cortafuegos para GNU/Linux.",
+          "El paquete Shorewall6 añade los componentes para configurar un cortafuegos IPv6.",
+          "Las dos anteriores son correctas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La documentación distingue Shorewall para IPv4 y Shorewall6 para los componentes IPv6, además de variantes lite para administración centralizada. Se acota la afirmación al esquema de paquetes documentado, evitando imponer una instalación local idéntica en toda arquitectura de despliegue.",
+        "clasificacion": {
+          "A1": [
+            "A1-60",
+            "A1-127"
+          ],
+          "A2": [
+            "A2-II-2",
+            "A2-IV-12"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Shorewall",
+          "IPv6"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.shorewall.org/Introduction.html",
+              "referencia": "Shorewall, Introduction: Shorewall Packages"
+            }
+          ],
+          "observaciones": "La documentación distingue Shorewall para IPv4 y Shorewall6 para los componentes IPv6, además de variantes lite para administración centralizada. Se acota la afirmación al esquema de paquetes documentado, evitando imponer una instalación local idéntica en toda arquitectura de despliegue."
+        }
+      }
+    },
+    {
+      "id": 509,
+      "original": {
+        "id": 509,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En referencia a Sistemas Operativos multiproceso tipo UNIX ¿qué se entiende por “proceso zombi”?",
+        "opciones": [
+          "Un proceso hijo que ha acabado de realizar sus tareas pero que el padre todavía no ha ejecutado la orden de esperar a que el hijo acabe.",
+          "Un proceso padre que se ha quedado bloqueado a la espera de que sus hijos acaben sus tareas pendientes.",
+          "Un par de procesos en el que el primero está a la espera de que el segundo proceso acabe y este segundo proceso.",
+          "Un proceso hijo que está bloqueado a la espera de que el proceso padre le envíe datos que necesita."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 509,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En UNIX/Linux, ¿qué describe un proceso hijo en estado zombi?",
+        "opciones": [
+          "Ha terminado, pero aún se conserva su estado de terminación pendiente de que el padre lo recoja mediante wait o una llamada equivalente.",
+          "Es un padre bloqueado esperando a que terminen sus hijos.",
+          "Es un proceso en ejecución que consume toda la CPU.",
+          "Es un hijo bloqueado esperando datos de su padre."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Un hijo terminado permanece zombi mientras se conserva su estado de terminación para que el padre lo recoja con wait o una llamada equivalente. Ya no está ejecutándose. Se precisa la recogida del estado y se repara el distractor incompleto; existen configuraciones SIGCHLD que evitan crear zombis.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "zombi",
+          "wait"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.man7.org/linux/man-pages/man2/waitpid.2.html",
+              "referencia": "Linux man-pages, wait(2), NOTES"
+            }
+          ],
+          "observaciones": "Un hijo terminado permanece zombi mientras se conserva su estado de terminación para que el padre lo recoja con wait o una llamada equivalente. Ya no está ejecutándose. Se precisa la recogida del estado y se repara el distractor incompleto; existen configuraciones SIGCHLD que evitan crear zombis."
+        }
+      }
+    },
+    {
+      "id": 510,
+      "original": {
+        "id": 510,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique cuál de los siguientes términos no identifica un gestor de arranque del Sistema Operativo:",
+        "opciones": [
+          "NT OS Loader.",
+          "LILO (Linux Loader).",
+          "LIUL (Linux Unified Loader).",
+          "GRUB (Grand Unified Bootloader)."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 510,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Considerando también cargadores históricos, ¿cuál de estos programas NO es un cargador de arranque?",
+        "opciones": [
+          "NTLDR (NT Loader).",
+          "LILO (Linux Loader).",
+          "chmod.",
+          "GRUB (GRand Unified Bootloader)."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "GRUB es un cargador de arranque. También lo son los históricos LILO (https://wiki.debian.org/LILO) y NTLDR (https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/troubleshoot-ntldr-is-missing-error). chmod modifica permisos (https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html). Se sustituye LIUL, denominación sin fuente primaria identificada, por una utilidad real cuya función se puede contrastar.",
+        "clasificacion": {
+          "A1": [
+            "A1-59",
+            "A1-60",
+            "A1-61"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "arranque",
+          "historica"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.gnu.org/software/grub/",
+              "referencia": "GNU GRUB: Multiboot boot loader"
+            }
+          ],
+          "observaciones": "GRUB es un cargador de arranque. También lo son los históricos LILO (https://wiki.debian.org/LILO) y NTLDR (https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/troubleshoot-ntldr-is-missing-error). chmod modifica permisos (https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html). Se sustituye LIUL, denominación sin fuente primaria identificada, por una utilidad real cuya función se puede contrastar."
+        }
+      }
+    }
+  ]
+}
