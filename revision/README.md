@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.588 preguntas sin revisión de contenido. Siguiente ID: 536. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.583 preguntas sin revisión de contenido. Siguiente ID: 541. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 535 registros de cambios y las 11.588 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 540 registros de cambios y las 11.583 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -240,3 +240,8 @@ Se precisan señales y permisos 640, se confirma fork y se corrige XCFE por Xfce
 IDs 531–535: cinco verificadas y cinco con cambios de contenido (cuatro corregidas y una histórica reformulada). Acumulado: 535 examinadas, 507 verificadas, 28 pendientes y 343 con cambios de contenido. Estados: 161 vigentes, 318 corregidas, 28 históricas y 28 pendientes. Quedan 11.588 sin revisar; siguiente ID 536.
 
 Se precisa que tee copia a todos los archivos indicados y se delimita PID 0 a Linux. Pine queda identificado históricamente por su función de correo. Se elimina el solapamiento entre shell e interfaz de usuario y se actualizan los distractores de sistemas de archivos con ext4, XFS, Btrfs y Bash. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 044 — 20 de octubre
+
+IDs 536–540: cinco verificadas y cuatro con cambios de contenido. Acumulado: 540 examinadas, 512 verificadas, 28 pendientes y 347 con cambios de contenido. Estados: 162 vigentes, 322 corregidas, 28 históricas y 28 pendientes. Quedan 11.583 sin revisar; siguiente ID 541.
+
+Se confirma /etc, se precisa la operación de tune2fs -j sin referencias a últimas versiones y se sustituye Mandeva por FreeBSD. Se acota resolv.conf al resolver de la biblioteca C y la relación nombre-inodo a entradas ext4, sin presentarla como lista exhaustiva de campos. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.

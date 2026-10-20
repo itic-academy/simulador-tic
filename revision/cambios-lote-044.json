@@ -1,0 +1,293 @@
+{
+  "fecha": "2026-10-20",
+  "alcance": "IDs 536–540; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 536,
+      "original": {
+        "id": 536,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el directorio /etc de un sistema Linux:",
+        "opciones": [
+          "Se almacenan los resultados de la extracción, transformación y carga de datos.",
+          "Residen los ficheros temporales de la ejecución de programas.",
+          "Residen las librerías para la ejecución de los programas de base.",
+          "Se almacenan ficheros de configuración del sistema."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 536,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el directorio /etc de un sistema Linux:",
+        "opciones": [
+          "Se almacenan los resultados de la extracción, transformación y carga de datos.",
+          "Residen los ficheros temporales de la ejecución de programas.",
+          "Residen las librerías para la ejecución de los programas de base.",
+          "Se almacenan ficheros de configuración del sistema."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El FHS reserva /etc para configuración específica del sistema. Los archivos temporales y las bibliotecas tienen otras ubicaciones; la respuesta D se mantiene.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "FHS",
+          "configuracion"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://specifications.freedesktop.org/fhs/latest/etc.html",
+              "referencia": "Filesystem Hierarchy Standard, /etc"
+            }
+          ],
+          "observaciones": "El FHS reserva /etc para configuración específica del sistema. Los archivos temporales y las bibliotecas tienen otras ubicaciones; la respuesta D se mantiene."
+        }
+      }
+    },
+    {
+      "id": 537,
+      "original": {
+        "id": 537,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué comando se utiliza para convertir un sistema de ficheros ext2 a ext3 en las últimas versiones de Suse Linux?",
+        "opciones": [
+          "tune2fs -c ldev/hdbX",
+          "tune2fs -j /dev/hdbX",
+          "make2fs /devlhdbX",
+          "mount -t ext3 /dev/hdbX /mountpoint"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 537,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un sistema de archivos ext2 existente en /dev/sdb1, ¿qué comando de e2fsprogs añade un journal ext3?",
+        "opciones": [
+          "tune2fs -c 1 /dev/sdb1",
+          "tune2fs -j /dev/sdb1",
+          "tune2fs -l /dev/sdb1",
+          "mount -t ext3 /dev/sdb1 /mnt"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La opción -j añade un journal ext3 a un sistema de archivos. Se elimina la referencia temporal indeterminada a las últimas versiones de SUSE y se pregunta por esa operación concreta, sin presentarla como un procedimiento completo de migración.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "ext2",
+          "ext3",
+          "tune2fs"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://man7.org/linux/man-pages/man8/tune2fs.8.html",
+              "referencia": "e2fsprogs, tune2fs(8), opción -j"
+            }
+          ],
+          "observaciones": "La opción -j añade un journal ext3 a un sistema de archivos. Se elimina la referencia temporal indeterminada a las últimas versiones de SUSE y se pregunta por esa operación concreta, sin presentarla como un procedimiento completo de migración."
+        }
+      }
+    },
+    {
+      "id": 538,
+      "original": {
+        "id": 538,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Identifique el término que no corresponde a una distribución de Linux:",
+        "opciones": [
+          "Ubuntu",
+          "Debian",
+          "Mandeva",
+          "Red Hat"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 538,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Identifique el término que no corresponde a una distribución de Linux:",
+        "opciones": [
+          "Ubuntu",
+          "Debian GNU/Linux",
+          "FreeBSD",
+          "Red Hat Enterprise Linux"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "FreeBSD deriva de BSD y no es una distribución Linux. Se sustituye Mandeva, denominación que podía confundirse con Mandriva, por una alternativa real verificable y se precisa Red Hat Enterprise Linux.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "distribuciones",
+          "FreeBSD"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.freebsd.org/about/",
+              "referencia": "FreeBSD Project, About FreeBSD"
+            }
+          ],
+          "observaciones": "FreeBSD deriva de BSD y no es una distribución Linux. Se sustituye Mandeva, denominación que podía confundirse con Mandriva, por una alternativa real verificable y se precisa Red Hat Enterprise Linux."
+        }
+      }
+    },
+    {
+      "id": 539,
+      "original": {
+        "id": 539,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Seleccione el fichero de Linux que contiene las direcciones de los servidores DNS necesarios para la navegación por Internet:",
+        "opciones": [
+          "crontab",
+          "interfaces",
+          "resolv.conf",
+          "dns.conf"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 539,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué archivo configura tradicionalmente el resolver DNS de la biblioteca C en Linux mediante directivas nameserver?",
+        "opciones": [
+          "/etc/crontab",
+          "/etc/network/interfaces",
+          "/etc/resolv.conf",
+          "/etc/dns.conf"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "/etc/resolv.conf configura el resolver de la biblioteca C; nameserver indica la dirección del servidor consultado. No se afirma que ese servidor sea necesariamente externo ni que todos los programas de navegación utilicen este mecanismo.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "DNS",
+          "resolver"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.man7.org/linux/man-pages/man5/resolv.conf.5.html",
+              "referencia": "Linux man-pages, resolv.conf(5)"
+            }
+          ],
+          "observaciones": "/etc/resolv.conf configura el resolver de la biblioteca C; nameserver indica la dirección del servidor consultado. No se afirma que ese servidor sea necesariamente externo ni que todos los programas de navegación utilicen este mecanismo."
+        }
+      }
+    },
+    {
+      "id": 540,
+      "original": {
+        "id": 540,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Unix, ¿qué información contienen los directorios?",
+        "opciones": [
+          "El número de i-nodo, el nombre del fichero, el uid del propietario, el gid del grupo y los permisos de acceso",
+          "El número de i-nodo y el nombre del fichero",
+          "El nombre del fichero y la dirección del bloque de disco donde comienza el principio de los datos",
+          "El nombre del fichero y la dirección dentro de la TOC (Table of Contents) del disco donde empieza la concatenación de asignación de espacio"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 540,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En ext4, ¿qué asociación fundamental representa una entrada de directorio?",
+        "opciones": [
+          "El nombre con el UID, GID y todos los permisos almacenados en la propia entrada.",
+          "El nombre del archivo con su número de inodo.",
+          "El nombre con la dirección física del primer sector de datos.",
+          "El nombre con una posición en una tabla TOC de disco."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Una entrada ext4 asocia el nombre con un número de inodo. Incluye además longitudes y, según el formato, tipo de archivo; la respuesta no debe entenderse como una enumeración exhaustiva de campos. Se concreta ext4 para evitar generalizar la representación física a cualquier sistema UNIX.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "ext4",
+          "directorios",
+          "inodos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://kernel.org/doc/html/latest/filesystems/ext4/directory.html",
+              "referencia": "Linux Kernel Documentation, ext4 Directory Entries"
+            }
+          ],
+          "observaciones": "Una entrada ext4 asocia el nombre con un número de inodo. Incluye además longitudes y, según el formato, tipo de archivo; la respuesta no debe entenderse como una enumeración exhaustiva de campos. Se concreta ext4 para evitar generalizar la representación física a cualquier sistema UNIX."
+        }
+      }
+    }
+  ]
+}

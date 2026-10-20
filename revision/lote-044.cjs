@@ -1,0 +1,14 @@
+const records=[
+[536,[60],['II-2'],['FHS','configuracion'],'https://specifications.freedesktop.org/fhs/latest/etc.html','Filesystem Hierarchy Standard, /etc','El FHS reserva /etc para configuración específica del sistema. Los archivos temporales y las bibliotecas tienen otras ubicaciones; la respuesta D se mantiene.'],
+[537,[60],['II-2'],['ext2','ext3','tune2fs'],'https://man7.org/linux/man-pages/man8/tune2fs.8.html','e2fsprogs, tune2fs(8), opción -j','La opción -j añade un journal ext3 a un sistema de archivos. Se elimina la referencia temporal indeterminada a las últimas versiones de SUSE y se pregunta por esa operación concreta, sin presentarla como un procedimiento completo de migración.'],
+[538,[60],['II-2'],['distribuciones','FreeBSD'],'https://www.freebsd.org/about/','FreeBSD Project, About FreeBSD','FreeBSD deriva de BSD y no es una distribución Linux. Se sustituye Mandeva, denominación que podía confundirse con Mandriva, por una alternativa real verificable y se precisa Red Hat Enterprise Linux.'],
+[539,[60],['II-2'],['DNS','resolver'],'https://www.man7.org/linux/man-pages/man5/resolv.conf.5.html','Linux man-pages, resolv.conf(5)','/etc/resolv.conf configura el resolver de la biblioteca C; nameserver indica la dirección del servidor consultado. No se afirma que ese servidor sea necesariamente externo ni que todos los programas de navegación utilicen este mecanismo.'],
+[540,[60],['II-2'],['ext4','directorios','inodos'],'https://kernel.org/doc/html/latest/filesystems/ext4/directory.html','Linux Kernel Documentation, ext4 Directory Entries','Una entrada ext4 asocia el nombre con un número de inodo. Incluye además longitudes y, según el formato, tipo de archivo; la respuesta no debe entenderse como una enumeración exhaustiva de campos. Se concreta ext4 para evitar generalizar la representación física a cualquier sistema UNIX.']
+];
+const edits={
+537:{texto:'En un sistema de archivos ext2 existente en /dev/sdb1, ¿qué comando de e2fsprogs añade un journal ext3?',opciones:['tune2fs -c 1 /dev/sdb1','tune2fs -j /dev/sdb1','tune2fs -l /dev/sdb1','mount -t ext3 /dev/sdb1 /mnt']},
+538:{opciones:['Ubuntu','Debian GNU/Linux','FreeBSD','Red Hat Enterprise Linux']},
+539:{texto:'¿Qué archivo configura tradicionalmente el resolver DNS de la biblioteca C en Linux mediante directivas nameserver?',opciones:['/etc/crontab','/etc/network/interfaces','/etc/resolv.conf','/etc/dns.conf']},
+540:{texto:'En ext4, ¿qué asociación fundamental representa una entrada de directorio?',opciones:['El nombre con el UID, GID y todos los permisos almacenados en la propia entrada.','El nombre del archivo con su número de inodo.','El nombre con la dirección física del primer sector de datos.','El nombre con una posición en una tabla TOC de disco.']}
+};
+require('./aplicar-lote.cjs')({numero:'044',fecha:'2026-10-20',records,edits});
