@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.608 preguntas sin revisión de contenido. Siguiente ID: 516. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.603 preguntas sin revisión de contenido. Siguiente ID: 521. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 515 registros de cambios y las 11.608 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 520 registros de cambios y las 11.603 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -220,3 +220,8 @@ Se precisa la construcción de módulos Linux, se delimita el esquema de paquete
 IDs 511–515: cinco verificadas y tres con cambios de contenido. Acumulado: 515 examinadas, 487 verificadas, 28 pendientes y 327 con cambios de contenido. Estados: 157 vigentes, 304 corregidas, 26 históricas y 28 pendientes. Quedan 11.608 sin revisar; siguiente ID 516.
 
 Se corrige el falso distractor CFS, que sí es un sistema de archivos para Unix, sustituyéndolo por SSH. Se precisa el acceso restringido a shadow sin afirmar exclusividad universal de root y se aclaran PV/VG/LV. Se confirman RPM y RBAC en SELinux. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 040 — 20 de octubre
+
+IDs 516–520: cinco verificadas y tres con cambios de contenido. Acumulado: 520 examinadas, 492 verificadas, 28 pendientes y 330 con cambios de contenido. Estados: 159 vigentes, 307 corregidas, 26 históricas y 28 pendientes. Quedan 11.603 sin revisar; siguiente ID 521.
+
+Se confirman POSIX y Samba. Se explicita la regla sudoers que autoriza wheel, se sustituye un recuento universal de estados UNIX por el significado verificable de R en ps y se distingue el contenido lógico del archivo regular de su almacenamiento físico. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.

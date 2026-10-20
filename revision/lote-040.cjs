@@ -1,0 +1,13 @@
+const records=[
+[516,[59,60],['II-2'],['POSIX'],'https://www.opengroup.org/austin/papers/posix_faq.html','The Open Group, POSIX.1 FAQ','POSIX normaliza interfaces para facilitar la portabilidad de aplicaciones entre sistemas operativos. ISO es una organización, OSI un modelo de interconexión y XENIX un sistema operativo.'],
+[517,[60],['II-2'],['Samba','SMB'],'https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_and_using_network_file_services/using-samba-as-a-server','Red Hat, Using Samba as a server','Samba proporciona servicios de archivos e impresión mediante SMB, interoperables con Windows. NFS utiliza otro protocolo, por lo que no sustituye indistintamente a Samba en el supuesto SMB.'],
+[518,[60],['II-2'],['sudo','wheel'],'https://man7.org/linux/man-pages/man5/sudoers.5.html','sudo, sudoers(5): especificación de grupos','El prefijo % designa un grupo en sudoers. La regla %wheel autoriza al grupo wheel; los permisos efectivos dependen de las reglas, no de un nombre de grupo obligatorio en cualquier instalación. Se concreta el supuesto de configuración.'],
+[519,[59,60],['II-2'],['procesos','ps'],'https://www.man7.org/linux/man-pages/man1/ps.1.html','procps-ng, ps(1), PROCESS STATE CODES','En ps, R significa ejecutándose o listo para ejecutarse. El original presentaba como universal un modelo de nueve estados de UNIX sin identificar implementación o modelo docente y mezclaba estados con identificadores de procesos. Se sustituye por una observación concreta de Linux.'],
+[520,[59,60],['II-2'],['archivo','bytes'],'https://ftp.gnu.org/old-gnu/Manuals/glibc-2.2.3/html_mono/libc.html','GNU C Library, File Position','La posición en un archivo POSIX se expresa como desplazamiento en bytes desde su comienzo. Se distingue el contenido lógico de un archivo regular de su representación física mediante bloques y metadatos; no se generaliza a directorios o dispositivos.']
+];
+const edits={
+518:{texto:'En un sistema CentOS con la regla activa %wheel ALL=(ALL) ALL en sudoers, ¿qué grupo recibe autorización mediante esa regla?'},
+519:{texto:'En Linux, ¿qué significa el código R en el estado de un proceso mostrado por ps?',opciones:['Proceso terminado pendiente de recogida por su padre.','Proceso detenido por una señal de control de trabajos.','Proceso en ejecución o listo para ejecutarse.','Proceso en espera ininterrumpible.']},
+520:{texto:'Desde la perspectiva lógica de lectura y escritura en UNIX/POSIX, el contenido de un archivo regular se representa como:'}
+};
+require('./aplicar-lote.cjs')({numero:'040',fecha:'2026-10-20',records,edits});

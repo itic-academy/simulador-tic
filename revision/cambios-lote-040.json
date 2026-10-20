@@ -1,0 +1,293 @@
+{
+  "fecha": "2026-10-20",
+  "alcance": "IDs 516–520; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 516,
+      "original": {
+        "id": 516,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Las normas básicas para constituir un interfaz común de sistemas UNIX con las aplicaciones son:",
+        "opciones": [
+          "OSI",
+          "ISO",
+          "POSIX",
+          "XENIX"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 516,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Las normas básicas para constituir un interfaz común de sistemas UNIX con las aplicaciones son:",
+        "opciones": [
+          "OSI",
+          "ISO",
+          "POSIX",
+          "XENIX"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "POSIX normaliza interfaces para facilitar la portabilidad de aplicaciones entre sistemas operativos. ISO es una organización, OSI un modelo de interconexión y XENIX un sistema operativo.",
+        "clasificacion": {
+          "A1": [
+            "A1-59",
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "POSIX"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.opengroup.org/austin/papers/posix_faq.html",
+              "referencia": "The Open Group, POSIX.1 FAQ"
+            }
+          ],
+          "observaciones": "POSIX normaliza interfaces para facilitar la portabilidad de aplicaciones entre sistemas operativos. ISO es una organización, OSI un modelo de interconexión y XENIX un sistema operativo."
+        }
+      }
+    },
+    {
+      "id": 517,
+      "original": {
+        "id": 517,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál se utiliza para compartir recursos desde un sistema tipo Unix a equipos Windows utilizando el protocolo SMB?",
+        "opciones": [
+          "NFS",
+          "Samba",
+          "Cualquiera de los 2 indistintamente",
+          "Ninguno de los 2"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 517,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál se utiliza para compartir recursos desde un sistema tipo Unix a equipos Windows utilizando el protocolo SMB?",
+        "opciones": [
+          "NFS",
+          "Samba",
+          "Cualquiera de los 2 indistintamente",
+          "Ninguno de los 2"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Samba proporciona servicios de archivos e impresión mediante SMB, interoperables con Windows. NFS utiliza otro protocolo, por lo que no sustituye indistintamente a Samba en el supuesto SMB.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Samba",
+          "SMB"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_and_using_network_file_services/using-samba-as-a-server",
+              "referencia": "Red Hat, Using Samba as a server"
+            }
+          ],
+          "observaciones": "Samba proporciona servicios de archivos e impresión mediante SMB, interoperables con Windows. NFS utiliza otro protocolo, por lo que no sustituye indistintamente a Samba en el supuesto SMB."
+        }
+      }
+    },
+    {
+      "id": 518,
+      "original": {
+        "id": 518,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se llama en CentOS el grupo de 'sudoers'?",
+        "opciones": [
+          "brake",
+          "wheel",
+          "groot",
+          "susers"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 518,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un sistema CentOS con la regla activa %wheel ALL=(ALL) ALL en sudoers, ¿qué grupo recibe autorización mediante esa regla?",
+        "opciones": [
+          "brake",
+          "wheel",
+          "groot",
+          "susers"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "El prefijo % designa un grupo en sudoers. La regla %wheel autoriza al grupo wheel; los permisos efectivos dependen de las reglas, no de un nombre de grupo obligatorio en cualquier instalación. Se concreta el supuesto de configuración.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "sudo",
+          "wheel"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://man7.org/linux/man-pages/man5/sudoers.5.html",
+              "referencia": "sudo, sudoers(5): especificación de grupos"
+            }
+          ],
+          "observaciones": "El prefijo % designa un grupo en sudoers. La regla %wheel autoriza al grupo wheel; los permisos efectivos dependen de las reglas, no de un nombre de grupo obligatorio en cualquier instalación. Se concreta el supuesto de configuración."
+        }
+      }
+    },
+    {
+      "id": 519,
+      "original": {
+        "id": 519,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el sistema operativo UNIX los estados en los que puede estar un proceso:",
+        "opciones": [
+          "Son dos, donde el proceso 0 corresponde al proceso intercambiador",
+          "Son 8, donde el proceso 0 se denomina init, y es el antecesor de todos los procesos",
+          "Son 9, entre los que se encuentran los procesos ejecución en modo de usuario y ejecución en modo núcleo",
+          "Son 8, entre ellos el proceso cerrado o nonato que significa que está aguardando un suceso y tiene que intercambiarse desde la memoria secundaria"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 519,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Linux, ¿qué significa el código R en el estado de un proceso mostrado por ps?",
+        "opciones": [
+          "Proceso terminado pendiente de recogida por su padre.",
+          "Proceso detenido por una señal de control de trabajos.",
+          "Proceso en ejecución o listo para ejecutarse.",
+          "Proceso en espera ininterrumpible."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "En ps, R significa ejecutándose o listo para ejecutarse. El original presentaba como universal un modelo de nueve estados de UNIX sin identificar implementación o modelo docente y mezclaba estados con identificadores de procesos. Se sustituye por una observación concreta de Linux.",
+        "clasificacion": {
+          "A1": [
+            "A1-59",
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "procesos",
+          "ps"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.man7.org/linux/man-pages/man1/ps.1.html",
+              "referencia": "procps-ng, ps(1), PROCESS STATE CODES"
+            }
+          ],
+          "observaciones": "En ps, R significa ejecutándose o listo para ejecutarse. El original presentaba como universal un modelo de nueve estados de UNIX sin identificar implementación o modelo docente y mezclaba estados con identificadores de procesos. Se sustituye por una observación concreta de Linux."
+        }
+      }
+    },
+    {
+      "id": 520,
+      "original": {
+        "id": 520,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En UNIX, un archivo se compone de:",
+        "opciones": [
+          "Un conjunto de i-nodos más un conjunto de bloques de datos",
+          "Una secuencia de bytes",
+          "Un conjunto de bloques de datos más la estructura de punteros que determina dónde se encuentran éstos",
+          "Un bloque de datos más una cabecera de direccionamiento"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 520,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Desde la perspectiva lógica de lectura y escritura en UNIX/POSIX, el contenido de un archivo regular se representa como:",
+        "opciones": [
+          "Un conjunto de i-nodos más un conjunto de bloques de datos",
+          "Una secuencia de bytes",
+          "Un conjunto de bloques de datos más la estructura de punteros que determina dónde se encuentran éstos",
+          "Un bloque de datos más una cabecera de direccionamiento"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La posición en un archivo POSIX se expresa como desplazamiento en bytes desde su comienzo. Se distingue el contenido lógico de un archivo regular de su representación física mediante bloques y metadatos; no se generaliza a directorios o dispositivos.",
+        "clasificacion": {
+          "A1": [
+            "A1-59",
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "archivo",
+          "bytes"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://ftp.gnu.org/old-gnu/Manuals/glibc-2.2.3/html_mono/libc.html",
+              "referencia": "GNU C Library, File Position"
+            }
+          ],
+          "observaciones": "La posición en un archivo POSIX se expresa como desplazamiento en bytes desde su comienzo. Se distingue el contenido lógico de un archivo regular de su representación física mediante bloques y metadatos; no se generaliza a directorios o dispositivos."
+        }
+      }
+    }
+  ]
+}
