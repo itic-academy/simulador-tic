@@ -19548,63 +19548,165 @@
       "id": 491,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el sistema operativo Linux, el nivel 6 de ejecución se define como:",
+      "texto": "En el esquema tradicional de niveles de ejecución SysV utilizado por sistemas Linux, ¿qué representa el nivel 6?",
       "opciones": [
-        "Sistema Detenido (system hall)",
-        "Modo de usuario individual (single mode user)",
-        "Reinio del sistema (system reboot)",
-        "Modo multiusario completo (full multiuser)"
+        "Detención del sistema.",
+        "Modo monousuario.",
+        "Reinicio del sistema.",
+        "Modo multiusuario completo."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El nivel 6 de SysV corresponde al reinicio. systemd utiliza targets y conserva la correspondencia con reboot.target por compatibilidad; no todos los Linux usan niveles SysV. Se corrigen además las erratas.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SysV",
+        "arranque"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.freedesktop.org/software/systemd/man/253/runlevel.html",
+            "referencia": "systemd, runlevel: tabla de correspondencias"
+          }
+        ],
+        "observaciones": "El nivel 6 de SysV corresponde al reinicio. systemd utiliza targets y conserva la correspondencia con reboot.target por compatibilidad; no todos los Linux usan niveles SysV. Se corrigen además las erratas."
+      }
     },
     {
       "id": 492,
       "bloque": 0,
       "tema": 0,
-      "texto": "El proyecto POSIX está auspiciado por:",
+      "texto": "¿Qué organización publica POSIX.1-2024 con la designación de estándar 1003.1-2024, conjuntamente con The Open Group?",
       "opciones": [
         "ISO",
         "IEEE",
         "GNU",
-        "Berkley University"
+        "Universidad de California, Berkeley"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "POSIX.1-2024 corresponde a IEEE Std 1003.1-2024 y se publica conjuntamente con The Open Group. Se evita atribuir todo su desarrollo exclusivamente a una entidad mediante el término ambiguo auspiciado.",
+      "clasificacion": {
+        "A1": [
+          "A1-59",
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "POSIX"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://pubs.opengroup.org/onlinepubs/9799919799/download/index.html",
+            "referencia": "POSIX.1-2024, IEEE Std 1003.1-2024"
+          }
+        ],
+        "observaciones": "POSIX.1-2024 corresponde a IEEE Std 1003.1-2024 y se publica conjuntamente con The Open Group. Se evita atribuir todo su desarrollo exclusivamente a una entidad mediante el término ambiguo auspiciado."
+      }
     },
     {
       "id": 493,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de las siguientes distribuciones de Linux NO está basada en debian:",
+      "texto": "¿Cuál de estas distribuciones Linux NO pertenece a la familia derivada de Debian, considerando también la derivación indirecta a través de Ubuntu?",
       "opciones": [
-        "linux mint",
-        "kali linux",
-        "kubuntu",
-        "fedora"
+        "Linux Mint",
+        "Kali Linux",
+        "Kubuntu",
+        "Fedora"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Fedora procede de la línea Red Hat. Kali se basa en Debian (https://www.kali.org/docs/introduction/what-is-kali-linux/); Mint en Debian o Ubuntu (https://www.linuxmint.com/about.php); Kubuntu es una variante de Ubuntu (https://kubuntu.org/about/), a su vez basada en Debian (https://ubuntu.com/community/docs/governance/debian). Se explicita que la derivación puede ser indirecta.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "distribuciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://fedoraproject.org/wiki/History_of_Red_Hat_Linux",
+            "referencia": "Fedora Project, History of Red Hat Linux"
+          }
+        ],
+        "observaciones": "Fedora procede de la línea Red Hat. Kali se basa en Debian (https://www.kali.org/docs/introduction/what-is-kali-linux/); Mint en Debian o Ubuntu (https://www.linuxmint.com/about.php); Kubuntu es una variante de Ubuntu (https://kubuntu.org/about/), a su vez basada en Debian (https://ubuntu.com/community/docs/governance/debian). Se explicita que la derivación puede ser indirecta."
+      }
     },
     {
       "id": 494,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué características tiene Ubuntu?",
+      "texto": "¿Qué afirmaciones sobre el proyecto Ubuntu son correctas?",
       "opciones": [
-        "Se orienta al usuario novel y promedio.",
-        "Tiene un fuerte enfoque en la facilidad de uso.",
-        "Su patrocinador es Canonical.",
-        "Todas son correctas."
+        "Se basa en Debian.",
+        "Su origen incluye el objetivo de ofrecer un escritorio Linux fácil de usar.",
+        "Canonical respalda el proyecto.",
+        "Todas las anteriores son correctas."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Ubuntu nació para ofrecer un escritorio Linux fácil de usar y Canonical es la empresa que respalda el proyecto. Se sustituye la clasificación subjetiva de usuario novel y promedio por hechos: base Debian, facilidad de uso como objetivo y respaldo de Canonical.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Ubuntu"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://ubuntu.com/about",
+            "referencia": "Ubuntu, About the Ubuntu project"
+          }
+        ],
+        "observaciones": "Ubuntu nació para ofrecer un escritorio Linux fácil de usar y Canonical es la empresa que respalda el proyecto. Se sustituye la clasificación subjetiva de usuario novel y promedio por hechos: base Debian, facilidad de uso como objetivo y respaldo de Canonical."
+      }
     },
     {
       "id": 495,
       "bloque": 0,
       "tema": 0,
-      "texto": "Identifique las dos versiones históricas generadas de Unix al final de los años 80, motivadas por la coexistencia de dos desarrollos en paralelo:",
+      "texto": "¿Cuáles son dos grandes familias históricas de sistemas UNIX derivadas de la línea original de AT&T?",
       "opciones": [
         "System V y BSD",
         "System IV y System V",
@@ -19612,7 +19714,34 @@
         "Posix y Motif"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "System V y BSD son dos grandes familias históricas derivadas de UNIX de AT&T. Su desarrollo no comenzó al final de los años ochenta; se retira esa cronología incorrecta. POSIX es un estándar y Motif una tecnología de interfaz gráfica, no familias UNIX.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UNIX",
+        "BSD",
+        "historica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://docs.freebsd.org/en/articles/explaining-bsd/",
+            "referencia": "FreeBSD, Explaining BSD: origen de BSD y System V"
+          }
+        ],
+        "observaciones": "System V y BSD son dos grandes familias históricas derivadas de UNIX de AT&T. Su desarrollo no comenzó al final de los años ochenta; se retira esa cronología incorrecta. POSIX es un estándar y Motif una tecnología de interfaz gráfica, no familias UNIX."
+      }
     },
     {
       "id": 496,

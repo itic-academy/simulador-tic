@@ -1,0 +1,15 @@
+const records=[
+[491,[60],['II-2'],['SysV','arranque'],'https://www.freedesktop.org/software/systemd/man/253/runlevel.html','systemd, runlevel: tabla de correspondencias','El nivel 6 de SysV corresponde al reinicio. systemd utiliza targets y conserva la correspondencia con reboot.target por compatibilidad; no todos los Linux usan niveles SysV. Se corrigen además las erratas.'],
+[492,[59,60],['II-2'],['POSIX'],'https://pubs.opengroup.org/onlinepubs/9799919799/download/index.html','POSIX.1-2024, IEEE Std 1003.1-2024','POSIX.1-2024 corresponde a IEEE Std 1003.1-2024 y se publica conjuntamente con The Open Group. Se evita atribuir todo su desarrollo exclusivamente a una entidad mediante el término ambiguo auspiciado.'],
+[493,[60],['II-2'],['distribuciones'],'https://fedoraproject.org/wiki/History_of_Red_Hat_Linux','Fedora Project, History of Red Hat Linux','Fedora procede de la línea Red Hat. Kali se basa en Debian (https://www.kali.org/docs/introduction/what-is-kali-linux/); Mint en Debian o Ubuntu (https://www.linuxmint.com/about.php); Kubuntu es una variante de Ubuntu (https://kubuntu.org/about/), a su vez basada en Debian (https://ubuntu.com/community/docs/governance/debian). Se explicita que la derivación puede ser indirecta.'],
+[494,[60],['II-2'],['Ubuntu'],'https://ubuntu.com/about','Ubuntu, About the Ubuntu project','Ubuntu nació para ofrecer un escritorio Linux fácil de usar y Canonical es la empresa que respalda el proyecto. Se sustituye la clasificación subjetiva de usuario novel y promedio por hechos: base Debian, facilidad de uso como objetivo y respaldo de Canonical.'],
+[495,[60],['II-2'],['UNIX','BSD','historica'],'https://docs.freebsd.org/en/articles/explaining-bsd/','FreeBSD, Explaining BSD: origen de BSD y System V','System V y BSD son dos grandes familias históricas derivadas de UNIX de AT&T. Su desarrollo no comenzó al final de los años ochenta; se retira esa cronología incorrecta. POSIX es un estándar y Motif una tecnología de interfaz gráfica, no familias UNIX.','historica']
+];
+const edits={
+491:{texto:'En el esquema tradicional de niveles de ejecución SysV utilizado por sistemas Linux, ¿qué representa el nivel 6?',opciones:['Detención del sistema.','Modo monousuario.','Reinicio del sistema.','Modo multiusuario completo.']},
+492:{texto:'¿Qué organización publica POSIX.1-2024 con la designación de estándar 1003.1-2024, conjuntamente con The Open Group?',opcion:[3,'Universidad de California, Berkeley']},
+493:{texto:'¿Cuál de estas distribuciones Linux NO pertenece a la familia derivada de Debian, considerando también la derivación indirecta a través de Ubuntu?',opciones:['Linux Mint','Kali Linux','Kubuntu','Fedora']},
+494:{texto:'¿Qué afirmaciones sobre el proyecto Ubuntu son correctas?',opciones:['Se basa en Debian.','Su origen incluye el objetivo de ofrecer un escritorio Linux fácil de usar.','Canonical respalda el proyecto.','Todas las anteriores son correctas.']},
+495:{texto:'¿Cuáles son dos grandes familias históricas de sistemas UNIX derivadas de la línea original de AT&T?'}
+};
+require('./aplicar-lote.cjs')({numero:'035',fecha:'2026-10-20',records,edits});
