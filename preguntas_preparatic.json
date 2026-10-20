@@ -20763,63 +20763,194 @@
         "Elimina el mapa de memoria del proceso que hace la llamada."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "fork crea un proceso hijo duplicando el proceso llamante, con un PID distinto y las excepciones de herencia documentadas. En Linux se utiliza copia en escritura; duplicar no implica copiar inmediatamente todas las páginas físicas.",
+      "clasificacion": {
+        "A1": [
+          "A1-59",
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "fork"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man2/fork.2.html",
+            "referencia": "Linux man-pages, fork(2), DESCRIPTION"
+          }
+        ],
+        "observaciones": "fork crea un proceso hijo duplicando el proceso llamante, con un PID distinto y las excepciones de herencia documentadas. En Linux se utiliza copia en escritura; duplicar no implica copiar inmediatamente todas las páginas físicas."
+      }
     },
     {
       "id": 522,
       "bloque": 0,
       "tema": 0,
-      "texto": "Grub (Grand Unifier Bootloader) es un gestor de arranque de sistemas operativos, indica qué afirmación es FALSA:",
+      "texto": "Sobre GNU GRUB 2 (GRand Unified Bootloader) y su configuración con grub-mkconfig, señale la afirmación FALSA:",
       "opciones": [
-        "El directorio /etc/grub.d contiene los scripts.",
-        "La instrucción chainloader se utiliza para pasar el control a otro cargador de arranque.",
-        "GRUB_BACKGROUND se utiliza para agregar una imagen de fondo en la selección de sistema operativo.",
-        "Sólo permite arrancar sistemas operativos libres."
+        "/etc/grub.d contiene scripts utilizados para generar la configuración.",
+        "chainloader permite encadenar otro cargador de arranque.",
+        "GRUB_BACKGROUND permite especificar una imagen de fondo para el terminal gráfico.",
+        "Solo permite arrancar sistemas operativos libres."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "GRUB también puede iniciar sistemas propietarios mediante encadenamiento, incluido Windows. grub-mkconfig utiliza scripts en /etc/grub.d y GRUB_BACKGROUND configura una imagen para el terminal gráfico. Se corrige el nombre GRand Unified Bootloader y se acota a GRUB 2.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "GRUB"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/software/grub/manual/grub/grub.html",
+            "referencia": "GNU GRUB Manual, Simple configuration y Chain-loading"
+          }
+        ],
+        "observaciones": "GRUB también puede iniciar sistemas propietarios mediante encadenamiento, incluido Windows. grub-mkconfig utiliza scripts en /etc/grub.d y GRUB_BACKGROUND configura una imagen para el terminal gráfico. Se corrige el nombre GRand Unified Bootloader y se acota a GRUB 2."
+      }
     },
     {
       "id": 523,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la respuesta falsa. El sistema de ficheros en Unix:",
+      "texto": "En Linux, señale la afirmación FALSA sobre la interfaz de sistemas de archivos:",
       "opciones": [
-        "Está formado por i-nodos",
-        "Se utiliza para acceder a los periféricos",
-        "Tiene una estructura no basada en jerarquías",
-        "Está basado en listas enlazadas, con varios niveles de indirección"
+        "El VFS utiliza objetos inode para representar objetos del sistema de archivos.",
+        "Existen archivos especiales que representan dispositivos.",
+        "El espacio de nombres carece de directorios y subdirectorios.",
+        "El VFS proporciona una interfaz común para distintos tipos de sistemas de archivos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El VFS ofrece una interfaz común para sistemas de archivos, utiliza objetos inode y permite operaciones sobre directorios y archivos de dispositivo. El espacio de nombres es jerárquico. Se elimina la afirmación universal del original sobre listas enlazadas e indirección, que dependía del formato concreto.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "VFS",
+        "archivos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://docs.kernel.org/filesystems/vfs.html",
+            "referencia": "Linux Kernel, Overview of the Linux Virtual File System"
+          }
+        ],
+        "observaciones": "El VFS ofrece una interfaz común para sistemas de archivos, utiliza objetos inode y permite operaciones sobre directorios y archivos de dispositivo. El espacio de nombres es jerárquico. Se elimina la afirmación universal del original sobre listas enlazadas e indirección, que dependía del formato concreto."
+      }
     },
     {
       "id": 524,
       "bloque": 0,
       "tema": 0,
-      "texto": "En cuanto al núcleo kernel del sistema Unix/Linux, es INCORRECTO:",
+      "texto": "Sobre la portabilidad del núcleo Linux, señale la afirmación INCORRECTA:",
       "opciones": [
-        "El núcleo independiente del kernel se encarga de las interrupciones, los manejadores de dispositivos de bajo nivel (lower half) y parte del manejo de la memoria.",
-        "El núcleo independiente es igual en todas las plataformas.",
-        "El núcleo independiente permite el acceso controlado de los procesos a los periféricos tales como: terminales, unidades de disco, equipos de red.",
-        "El núcleo independiente asigna memoria secundaria para lograr un almacenamiento y recuperación eficiente de los datos de usuario."
+        "Todo el código del núcleo es independiente de la arquitectura del procesador.",
+        "Existe código común utilizado por varias arquitecturas.",
+        "El núcleo incluye implementaciones específicas para distintas arquitecturas de CPU.",
+        "El soporte de una arquitectura requiere atender sus particularidades de bajo nivel."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Linux contiene implementaciones específicas de arquitectura junto a código común. No todo su código es independiente del procesador. Se sustituye la redacción confusa núcleo independiente del kernel por afirmaciones explícitas sobre esa separación.",
+      "clasificacion": {
+        "A1": [
+          "A1-59",
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "kernel",
+        "arquitecturas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://docs.kernel.org/arch/index.html",
+            "referencia": "Linux Kernel, CPU Architectures"
+          }
+        ],
+        "observaciones": "Linux contiene implementaciones específicas de arquitectura junto a código común. No todo su código es independiente del procesador. Se sustituye la redacción confusa núcleo independiente del kernel por afirmaciones explícitas sobre esa separación."
+      }
     },
     {
       "id": 525,
       "bloque": 0,
       "tema": 0,
-      "texto": "En Unix un proceso puede crear otro proceso Unix si:",
+      "texto": "En Linux, ¿qué circunstancia puede impedir crear un proceso hijo mediante fork()?",
       "opciones": [
-        "Tiene privilegios suficientes",
-        "Tiene mayor prioridad que un determinado umbral",
-        "Tiene suficientes recursos disponibles",
-        "No puede"
+        "Que el proceso llamante no sea root, en cualquier configuración.",
+        "Que su prioridad no supere un umbral universal exigido por fork.",
+        "Que se haya alcanzado un límite de procesos o no haya memoria suficiente para las estructuras necesarias.",
+        "La imposibilidad de que un proceso cree otros procesos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "fork puede fallar por límites de procesos/hilos (EAGAIN) o por falta de memoria para estructuras del núcleo (ENOMEM). No exige en general ser root ni superar un umbral de prioridad; disponer de recursos tampoco constituye garantía universal si hay otras restricciones.",
+      "clasificacion": {
+        "A1": [
+          "A1-59",
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "fork",
+        "limites"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man2/fork.2.html",
+            "referencia": "Linux man-pages, fork(2), ERRORS"
+          }
+        ],
+        "observaciones": "fork puede fallar por límites de procesos/hilos (EAGAIN) o por falta de memoria para estructuras del núcleo (ENOMEM). No exige en general ser root ni superar un umbral de prioridad; disponer de recursos tampoco constituye garantía universal si hay otras restricciones."
+      }
     },
     {
       "id": 526,
