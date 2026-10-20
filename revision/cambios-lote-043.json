@@ -1,0 +1,292 @@
+{
+  "fecha": "2026-10-20",
+  "alcance": "IDs 531–535; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 531,
+      "original": {
+        "id": 531,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El comando de Unix 'tee':",
+        "opciones": [
+          "Muestra el archivo byte a byte incluyendo caracteres no imprimibles",
+          "Descompone la entrada en 2 flujos de salida, una es la salida estándar y la otra un archivo",
+          "No existe",
+          "Busca un patrón en uno o más archivos"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 531,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El comando de Unix 'tee':",
+        "opciones": [
+          "Muestra el archivo byte a byte incluyendo caracteres no imprimibles",
+          "Copia la entrada estándar a la salida estándar y a cada archivo indicado como argumento.",
+          "No existe",
+          "Busca un patrón en uno o más archivos"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "tee copia la entrada estándar a la salida estándar y a cada archivo indicado. No divide los datos en partes ni se limita necesariamente a un único archivo.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "tee",
+          "redireccion"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.gnu.org/software/gawk/manual/html_node/Tee-Program.html",
+              "referencia": "GNU Awk, Tee Program"
+            }
+          ],
+          "observaciones": "tee copia la entrada estándar a la salida estándar y a cada archivo indicado. No divide los datos en partes ni se limita necesariamente a un único archivo."
+        }
+      }
+    },
+    {
+      "id": 532,
+      "original": {
+        "id": 532,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El PID 0 se asigna en Unix/Linux a:",
+        "opciones": [
+          "Swapper",
+          "Init",
+          "Page daemon",
+          "Load"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 532,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Linux, ¿qué representa la tarea inicial del núcleo con PID 0?",
+        "opciones": [
+          "La tarea que, tras el arranque, ejecuta el bucle idle.",
+          "El proceso init de espacio de usuario, con PID 1.",
+          "Un servidor de correo de usuario.",
+          "El intérprete de órdenes de cada sesión de usuario."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "En Linux, init_task es la tarea inicial del núcleo con PID 0; tras el arranque ejecuta el bucle idle. No debe confundirse con init de espacio de usuario, PID 1. Se concreta Linux para evitar extender esta organización a cualquier UNIX.",
+        "clasificacion": {
+          "A1": [
+            "A1-59",
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "PID",
+          "idle"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://people.kernel.org/linusw/",
+              "referencia": "Linus Walleij, descripción de init_task y cpu_startup_entry"
+            }
+          ],
+          "observaciones": "En Linux, init_task es la tarea inicial del núcleo con PID 0; tras el arranque ejecuta el bucle idle. No debe confundirse con init de espacio de usuario, PID 1. Se concreta Linux para evitar extender esta organización a cualquier UNIX."
+        }
+      }
+    },
+    {
+      "id": 533,
+      "original": {
+        "id": 533,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes programas en Linux no es un editor de textos?",
+        "opciones": [
+          "vi",
+          "emacs",
+          "pine",
+          "joe"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 533,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Entre estos programas utilizados en entornos UNIX/Linux, ¿cuál se documentó históricamente como cliente de correo electrónico, siendo esa su finalidad principal?",
+        "opciones": [
+          "vi",
+          "emacs",
+          "pine",
+          "joe"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "El manual histórico de Pine describe un programa de correo electrónico con buzón de entrada y funciones de composición y envío. Se pregunta por su finalidad principal, sin negar que permita editar mensajes ni afirmar su vigencia como recomendación actual.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Pine",
+          "correo",
+          "historica"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://snebulos.mit.edu/htdocs/pine/",
+              "referencia": "University of Washington, Getting Started With Email Using Pine, copia en MIT"
+            }
+          ],
+          "observaciones": "El manual histórico de Pine describe un programa de correo electrónico con buzón de entrada y funciones de composición y envío. Se pregunta por su finalidad principal, sin negar que permita editar mensajes ni afirmar su vigencia como recomendación actual."
+        }
+      }
+    },
+    {
+      "id": 534,
+      "original": {
+        "id": 534,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Unix o compatibles, la parte del sistema operativo que interactúa con el usuario, aceptando comandos, interpretando los procedimientos, etc, se denomina genéricamente:",
+        "opciones": [
+          "Kernel",
+          "Interfaz de usuario",
+          "Shell",
+          "Motif"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 534,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denomina genéricamente el intérprete de órdenes que permite ejecutar comandos y scripts en UNIX/Linux?",
+        "opciones": [
+          "Kernel",
+          "Sistema de archivos",
+          "Shell",
+          "Controlador de dispositivo"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La shell interpreta órdenes y permite automatizarlas mediante programas. Interfaz de usuario también era una descripción genérica válida: se elimina ese distractor solapado y se pregunta por el nombre del intérprete.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "shell"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.gnu.org/software/bash/manual/html_node/What-is-a-shell_003f.html",
+              "referencia": "GNU Bash, What is a shell?"
+            }
+          ],
+          "observaciones": "La shell interpreta órdenes y permite automatizarlas mediante programas. Interfaz de usuario también era una descripción genérica válida: se elimina ese distractor solapado y se pregunta por el nombre del intérprete."
+        }
+      }
+    },
+    {
+      "id": 535,
+      "original": {
+        "id": 535,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes opciones NO corresponde a un sistema de ficheros empleado en Sistemas Operativos GNU/Linux?",
+        "opciones": [
+          "ext3",
+          "mini fs",
+          "ReiserFS",
+          "Reiser4"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 535,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes opciones NO corresponde a un sistema de ficheros empleado en Sistemas Operativos GNU/Linux?",
+        "opciones": [
+          "ext4",
+          "Bash",
+          "XFS",
+          "Btrfs"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "ext4, XFS y Btrfs son sistemas de archivos documentados por Linux. Bash es un intérprete de órdenes, según https://www.gnu.org/software/bash/manual/html_node/What-is-a-shell_003f.html. Se actualizan las opciones; no se certifica la inexistencia de la denominación imprecisa mini fs del original.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "sistemas-de-archivos",
+          "Bash"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://docs.kernel.org/filesystems/index.html",
+              "referencia": "Linux Kernel Documentation, Filesystems"
+            }
+          ],
+          "observaciones": "ext4, XFS y Btrfs son sistemas de archivos documentados por Linux. Bash es un intérprete de órdenes, según https://www.gnu.org/software/bash/manual/html_node/What-is-a-shell_003f.html. Se actualizan las opciones; no se certifica la inexistencia de la denominación imprecisa mini fs del original."
+        }
+      }
+    }
+  ]
+}
