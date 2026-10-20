@@ -20351,15 +20351,41 @@
       "id": 511,
       "bloque": 0,
       "tema": 0,
-      "texto": "Entre los siguientes, señale el que no es un sistema de archivos de sistemas operativos de la familia UNIX:",
+      "texto": "¿Cuál de los siguientes es un protocolo de acceso remoto seguro y NO un sistema de archivos local o de red?",
       "opciones": [
         "ZFS",
         "XFS",
-        "CFS",
+        "SSH",
         "NFS"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "SSH es un protocolo de acceso remoto seguro, no un sistema de archivos. ZFS y XFS son sistemas de archivos y NFS ofrece acceso a archivos por red. El original era incorrecto: CFS sí designa un sistema de archivos criptográfico para Unix, documentado por su autor en https://www.mattblaze.org/software/ y https://www.mattblaze.org/papers/cfs.pdf. Se sustituye esa opción por SSH.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "sistemas-archivos",
+        "SSH"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4251",
+            "referencia": "RFC 4251, SSH Protocol Architecture"
+          }
+        ],
+        "observaciones": "SSH es un protocolo de acceso remoto seguro, no un sistema de archivos. ZFS y XFS son sistemas de archivos y NFS ofrece acceso a archivos por red. El original era incorrecto: CFS sí designa un sistema de archivos criptográfico para Unix, documentado por su autor en https://www.mattblaze.org/software/ y https://www.mattblaze.org/papers/cfs.pdf. Se sustituye esa opción por SSH."
+      }
     },
     {
       "id": 512,
@@ -20373,7 +20399,33 @@
         "tgz"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "SUSE Linux Enterprise utiliza paquetes RPM. Un paquete binario de este formato tiene extensión .rpm; .deb corresponde a otro formato y tar.gz/tgz indican archivos tar comprimidos.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SUSE",
+        "RPM"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://documentation.suse.com/sles/15-SP4/single-html/SLES-administration/index.html",
+            "referencia": "SUSE, Administration Guide, RPM"
+          }
+        ],
+        "observaciones": "SUSE Linux Enterprise utiliza paquetes RPM. Un paquete binario de este formato tiene extensión .rpm; .deb corresponde a otro formato y tar.gz/tgz indican archivos tar comprimidos."
+      }
     },
     {
       "id": 513,
@@ -20387,35 +20439,115 @@
         "SELinux"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "SELinux admite reglas de control de acceso basado en roles (RBAC), además de Type Enforcement y, según la política, MLS. No debe confundirse RBAC con la totalidad del modelo de control obligatorio de SELinux.",
+      "clasificacion": {
+        "A1": [
+          "A1-60",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-II-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SELinux",
+        "RBAC"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://access.redhat.com/articles/4854201",
+            "referencia": "Red Hat, Stability of the SELinux Policy API"
+          }
+        ],
+        "observaciones": "SELinux admite reglas de control de acceso basado en roles (RBAC), además de Type Enforcement y, según la política, MLS. No debe confundirse RBAC con la totalidad del modelo de control obligatorio de SELinux."
+      }
     },
     {
       "id": 514,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un sistema UNIX, ¿cuál es la diferencia entre los ficheros /etc/passwd y /etc/shadow?",
+      "texto": "En una configuración Linux que utiliza contraseñas shadow, ¿qué distingue normalmente /etc/passwd de /etc/shadow?",
       "opciones": [
-        "/etc/shadow es una copia exacta del fichero /etc/password pero sólo visible por root.",
-        "/etc/password alberga las passwords de los usuarios y /etc/shadow alberga la historia de comandos realizadas por los mismos.",
-        "/etc/passwd es legible por todos los usuarios, mientras que /etc/shadow es legible sólo por root.",
-        "/etc/passwd alberga las passwords de los usuarios mientras que /etc/shadow alberga el nombre de los usuarios."
+        "/etc/shadow es una copia exacta de /etc/passwd.",
+        "/etc/shadow almacena el historial de órdenes de cada usuario.",
+        "/etc/passwd contiene datos de cuentas normalmente legibles por los usuarios; /etc/shadow contiene hashes de contraseñas y datos de caducidad, con lectura restringida a sujetos autorizados.",
+        "Ambos archivos almacenan necesariamente las contraseñas en texto claro."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "En Linux con contraseñas shadow, passwd contiene datos de las cuentas y normalmente un marcador en lugar del hash; shadow conserva hashes y datos de caducidad con lectura restringida. No es universal que únicamente root pueda leerlo: pueden existir grupos o servicios autorizados. passwd(5): https://man7.org/linux/man-pages/man5/passwd.5.html.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "passwd",
+        "shadow"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.man7.org/linux/man-pages/man5/shadow.5.html",
+            "referencia": "shadow-utils, shadow(5)"
+          }
+        ],
+        "observaciones": "En Linux con contraseñas shadow, passwd contiene datos de las cuentas y normalmente un marcador en lugar del hash; shadow conserva hashes y datos de caducidad con lectura restringida. No es universal que únicamente root pueda leerlo: pueden existir grupos o servicios autorizados. passwd(5): https://man7.org/linux/man-pages/man5/passwd.5.html."
+      }
     },
     {
       "id": 515,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones es cierta sobre el gestor de volúmenes lógicos de Linux LVM 2.0 (Logical Volume Manager Versión 2)?",
+      "texto": "¿Cuál de las siguientes afirmaciones es correcta sobre LVM2 en Linux?",
       "opciones": [
-        "Un volumen lógico (LV) puede pertenecer a distintos grupos de volúmenes lógicos (LVG).",
-        "Un disco físico solo puede pertenecer a un volumen físico (PV).",
-        "Un grupo de LVG se puede formar a partir de varios PV.",
-        "El número de LV incluidos en un grupo de LVG debe ser siempre par."
+        "Un mismo volumen lógico pertenece simultáneamente a varios grupos de volúmenes.",
+        "Un disco particionado nunca puede contener más de un volumen físico LVM.",
+        "Un grupo de volúmenes (VG) puede reunir varios volúmenes físicos (PV).",
+        "El número de volúmenes lógicos de un grupo debe ser siempre par."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Un grupo de volúmenes (VG) reúne uno o más volúmenes físicos (PV), de cuyo espacio se asignan volúmenes lógicos (LV). Un PV puede ser una partición o un disco entero; un disco particionado puede contener varios PV. Se normaliza VG y se elimina la confusión entre disco y PV.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "LVM",
+        "volumenes"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_and_managing_logical_volumes/overview-of-logical-volume-management_configuring-and-managing-logical-volumes",
+            "referencia": "Red Hat, Overview of logical volume management"
+          }
+        ],
+        "observaciones": "Un grupo de volúmenes (VG) reúne uno o más volúmenes físicos (PV), de cuyo espacio se asignan volúmenes lógicos (LV). Un PV puede ser una partición o un disco entero; un disco particionado puede contener varios PV. Se normaliza VG y se elimina la confusión entre disco y PV."
+      }
     },
     {
       "id": 516,
