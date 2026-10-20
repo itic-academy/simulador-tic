@@ -1,0 +1,295 @@
+{
+  "fecha": "2026-10-20",
+  "alcance": "IDs 546–550; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 546,
+      "original": {
+        "id": 546,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un ejemplo de herramienta Open Source de administración remota de sistemas Unix/Linux es:",
+        "opciones": [
+          "WebMin",
+          "WMI (Web Management & Instrumentation)",
+          "syslog",
+          "Performance Monitor"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 546,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un ejemplo de herramienta Open Source de administración remota de sistemas Unix/Linux es:",
+        "opciones": [
+          "Webmin",
+          "WMI (Windows Management Instrumentation)",
+          "syslog",
+          "Performance Monitor"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Webmin permite administrar sistemas tipo UNIX mediante una interfaz web y se distribuye con licencia BSD. Se corrige el desarrollo de WMI: Windows Management Instrumentation, según https://learn.microsoft.com/en-us/windows/win32/WmiSdk/about-wmi.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Webmin",
+          "administracion"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://github.com/webmin/webmin",
+              "referencia": "Webmin, repositorio oficial y licencia BSD"
+            }
+          ],
+          "observaciones": "Webmin permite administrar sistemas tipo UNIX mediante una interfaz web y se distribuye con licencia BSD. Se corrige el desarrollo de WMI: Windows Management Instrumentation, según https://learn.microsoft.com/en-us/windows/win32/WmiSdk/about-wmi."
+        }
+      }
+    },
+    {
+      "id": 547,
+      "original": {
+        "id": 547,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el UNIX System V, los i-nodos tienen una tabla de direcciones con:",
+        "opciones": [
+          "11 entradas.",
+          "12 entradas.",
+          "13 entradas.",
+          "14 entradas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 547,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el formato histórico de inodo del sistema de archivos System V (representado por struct sysv_inode en Linux), ¿cuántas direcciones contiene el campo de bloques?",
+        "opciones": [
+          "11 entradas.",
+          "12 entradas.",
+          "13 entradas.",
+          "14 entradas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La estructura de disco System V/Coherent reserva i_data[3*(10+1+1+1)]: trece direcciones de tres bytes. Se delimita el formato histórico y no se generaliza el recuento a todos los sistemas de archivos utilizables en un UNIX.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "System-V",
+          "inodos",
+          "historica"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://raw.githubusercontent.com/torvalds/linux/v6.12/include/linux/sysv_fs.h",
+              "referencia": "Linux v6.12, include/linux/sysv_fs.h, struct sysv_inode"
+            }
+          ],
+          "observaciones": "La estructura de disco System V/Coherent reserva i_data[3*(10+1+1+1)]: trece direcciones de tres bytes. Se delimita el formato histórico y no se generaliza el recuento a todos los sistemas de archivos utilizables en un UNIX."
+        }
+      }
+    },
+    {
+      "id": 548,
+      "original": {
+        "id": 548,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Se presentan a continuación una lista de comandos UNIX, y una lista de funciones. 1) “ls”. 2) “pwd”. 3) “cat”. 4) “more”. I) Lista los archivos del directorio activo. II) Muestra en pantalla el contenido de un archivo página a página. III) Muestra el camino completo del directorio actual. IV) Imprime en la salida estándar el contenido de un archivo. El orden correcto de emparejamiento entre comandos y funciones es:",
+        "opciones": [
+          "1-I, 2-II, 3-III y 4-IV.",
+          "1-I, 2-III, 3-IV y 4-II.",
+          "1-II, 2-III, 3-IV y 4-IV.",
+          "1-III, 2-IV, 3-I y 4-II."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 548,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Se presentan a continuación una lista de comandos UNIX, y una lista de funciones. 1) “ls”. 2) “pwd”. 3) “cat”. 4) “more”. I) Lista los archivos del directorio activo. II) Muestra en pantalla el contenido de un archivo página a página. III) Muestra el camino completo del directorio actual. IV) Imprime en la salida estándar el contenido de un archivo. El orden correcto de emparejamiento entre comandos y funciones es:",
+        "opciones": [
+          "1-I, 2-II, 3-III y 4-IV.",
+          "1-I, 2-III, 3-IV y 4-II.",
+          "1-II, 2-III, 3-IV y 4-IV.",
+          "1-III, 2-IV, 3-I y 4-II."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La correspondencia correcta es B: ls lista el directorio actual si no se indica otro; pwd muestra el directorio de trabajo; cat copia el archivo a la salida estándar. more pagina el texto según https://www.man7.org/linux/man-pages/man1/more.1.html. ls omite por defecto nombres que empiezan por punto; la descripción no afirma que muestre todos los archivos ocultos.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "comandos",
+          "ls",
+          "pwd",
+          "cat",
+          "more"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.gnu.org/software/coreutils/manual/coreutils.html",
+              "referencia": "GNU Coreutils, ls, pwd y cat"
+            }
+          ],
+          "observaciones": "La correspondencia correcta es B: ls lista el directorio actual si no se indica otro; pwd muestra el directorio de trabajo; cat copia el archivo a la salida estándar. more pagina el texto según https://www.man7.org/linux/man-pages/man1/more.1.html. ls omite por defecto nombres que empiezan por punto; la descripción no afirma que muestre todos los archivos ocultos."
+        }
+      }
+    },
+    {
+      "id": 549,
+      "original": {
+        "id": 549,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el entorno de escritorio KDE, Kate es:",
+        "opciones": [
+          "El navegador del escritorio",
+          "Un generador de informes para la empresa",
+          "Un editor de fórmulas matemáticas",
+          "Un editor de texto"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 549,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el entorno de escritorio KDE, Kate es:",
+        "opciones": [
+          "El navegador del escritorio",
+          "Un generador de informes para la empresa",
+          "Un editor de fórmulas matemáticas",
+          "Un editor de texto"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Kate es un editor de texto del proyecto KDE. Se mantiene la opción D; no es un navegador ni un generador de informes.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "KDE",
+          "Kate"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://kate-editor.org/",
+              "referencia": "Kate, sitio oficial"
+            }
+          ],
+          "observaciones": "Kate es un editor de texto del proyecto KDE. Se mantiene la opción D; no es un navegador ni un generador de informes."
+        }
+      }
+    },
+    {
+      "id": 550,
+      "original": {
+        "id": 550,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si en un sistema UNIX, se quiere que el archivo test.txt pueda ser leído, modificado (escrito) y ejecutado por su propietario, leído y ejecutado por los usuarios que pertenecen al mismo grupo que el propietario, y tan sólo leído por el resto, ¿qué instrucción de las siguientes se debe ejecutar?",
+        "opciones": [
+          "chmod 652 test.txt",
+          "chmod 754 test.txt",
+          "chmod 654 test.txt",
+          "chmod 752 test.txt"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 550,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Para un archivo regular test.txt, sin ACL adicionales, ¿qué instrucción establece los permisos tradicionales de lectura, escritura y ejecución para el propietario, lectura y ejecución para el grupo del archivo, y solo lectura para los demás usuarios?",
+        "opciones": [
+          "chmod 652 test.txt",
+          "chmod 754 test.txt",
+          "chmod 654 test.txt",
+          "chmod 752 test.txt"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "7=4+2+1 da lectura, escritura y ejecución al propietario; 5=4+1 da lectura y ejecución al grupo del archivo; 4 da lectura al resto. El grupo del archivo no tiene por qué coincidir con el grupo del propietario. Se acota a permisos tradicionales sin ACL adicionales.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "chmod",
+          "permisos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-20",
+          "fuentes": [
+            {
+              "url": "https://www.gnu.org/s/coreutils/manual/html_node/Numeric-Modes.html",
+              "referencia": "GNU Coreutils, Numeric Modes"
+            }
+          ],
+          "observaciones": "7=4+2+1 da lectura, escritura y ejecución al propietario; 5=4+1 da lectura y ejecución al grupo del archivo; 4 da lectura al resto. El grupo del archivo no tiene por qué coincidir con el grupo del propietario. Se acota a permisos tradicionales sin ACL adicionales."
+        }
+      }
+    }
+  ]
+}

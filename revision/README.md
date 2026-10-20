@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.578 preguntas sin revisión de contenido. Siguiente ID: 546. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.573 preguntas sin revisión de contenido. Siguiente ID: 551. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 545 registros de cambios y las 11.578 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 550 registros de cambios y las 11.573 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -250,3 +250,8 @@ Se confirma /etc, se precisa la operación de tune2fs -j sin referencias a últi
 IDs 541–545: cinco verificadas y cuatro con cambios de contenido (tres corregidas y una histórica reformulada). Acumulado: 545 examinadas, 517 verificadas, 28 pendientes y 351 con cambios de contenido. Estados: 163 vigentes, 325 corregidas, 29 históricas y 28 pendientes. Quedan 11.578 sin revisar; siguiente ID 546.
 
 Se distingue daemon de cualquier trabajo en background, se confirma pwd y se precisa la arquitectura de Hurd sobre Mach. El empaquetado de ReiserFS queda delimitado históricamente y Wine se define como capa de compatibilidad sin exigir X11. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 046 — 20 de octubre
+
+IDs 546–550: cinco verificadas y tres con cambios de contenido (dos corregidas y una histórica reformulada). Acumulado: 550 examinadas, 522 verificadas, 28 pendientes y 354 con cambios de contenido. Estados: 165 vigentes, 327 corregidas, 30 históricas y 28 pendientes. Quedan 11.573 sin revisar; siguiente ID 551.
+
+Se corrige la expansión de WMI, se acotan las trece direcciones al formato histórico System V y se confirma el emparejamiento ls/pwd/cat/more y el editor Kate. Se precisa que chmod 754 se refiere al grupo del archivo, no al del propietario. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.

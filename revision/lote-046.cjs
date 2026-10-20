@@ -1,0 +1,13 @@
+const records=[
+[546,[60],['II-2'],['Webmin','administracion'],'https://github.com/webmin/webmin','Webmin, repositorio oficial y licencia BSD','Webmin permite administrar sistemas tipo UNIX mediante una interfaz web y se distribuye con licencia BSD. Se corrige el desarrollo de WMI: Windows Management Instrumentation, según https://learn.microsoft.com/en-us/windows/win32/WmiSdk/about-wmi.'],
+[547,[60],['II-2'],['System-V','inodos','historica'],'https://raw.githubusercontent.com/torvalds/linux/v6.12/include/linux/sysv_fs.h','Linux v6.12, include/linux/sysv_fs.h, struct sysv_inode','La estructura de disco System V/Coherent reserva i_data[3*(10+1+1+1)]: trece direcciones de tres bytes. Se delimita el formato histórico y no se generaliza el recuento a todos los sistemas de archivos utilizables en un UNIX.','historica'],
+[548,[60],['II-2'],['comandos','ls','pwd','cat','more'],'https://www.gnu.org/software/coreutils/manual/coreutils.html','GNU Coreutils, ls, pwd y cat','La correspondencia correcta es B: ls lista el directorio actual si no se indica otro; pwd muestra el directorio de trabajo; cat copia el archivo a la salida estándar. more pagina el texto según https://www.man7.org/linux/man-pages/man1/more.1.html. ls omite por defecto nombres que empiezan por punto; la descripción no afirma que muestre todos los archivos ocultos.'],
+[549,[60],['II-2'],['KDE','Kate'],'https://kate-editor.org/','Kate, sitio oficial','Kate es un editor de texto del proyecto KDE. Se mantiene la opción D; no es un navegador ni un generador de informes.'],
+[550,[60],['II-2'],['chmod','permisos'],'https://www.gnu.org/s/coreutils/manual/html_node/Numeric-Modes.html','GNU Coreutils, Numeric Modes','7=4+2+1 da lectura, escritura y ejecución al propietario; 5=4+1 da lectura y ejecución al grupo del archivo; 4 da lectura al resto. El grupo del archivo no tiene por qué coincidir con el grupo del propietario. Se acota a permisos tradicionales sin ACL adicionales.']
+];
+const edits={
+546:{opciones:['Webmin','WMI (Windows Management Instrumentation)','syslog','Performance Monitor']},
+547:{texto:'En el formato histórico de inodo del sistema de archivos System V (representado por struct sysv_inode en Linux), ¿cuántas direcciones contiene el campo de bloques?'},
+550:{texto:'Para un archivo regular test.txt, sin ACL adicionales, ¿qué instrucción establece los permisos tradicionales de lectura, escritura y ejecución para el propietario, lectura y ejecución para el grupo del archivo, y solo lectura para los demás usuarios?'}
+};
+require('./aplicar-lote.cjs')({numero:'046',fecha:'2026-10-20',records,edits});
