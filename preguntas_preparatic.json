@@ -19755,7 +19755,34 @@
         "dd."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "top muestra una vista dinámica de los procesos y un resumen del uso de recursos. mount monta sistemas de archivos, chmod modifica permisos y dd copia o convierte datos; no cumplen esa función de monitorización.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-4"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "top",
+        "monitorizacion"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://gitlab.com/procps-ng/procps/-/blob/master/man/top.1?ref_type=heads",
+            "referencia": "procps-ng, manual top(1)"
+          }
+        ],
+        "observaciones": "top muestra una vista dinámica de los procesos y un resumen del uso de recursos. mount monta sistemas de archivos, chmod modifica permisos y dd copia o convierte datos; no cumplen esa función de monitorización."
+      }
     },
     {
       "id": 497,
@@ -19765,17 +19792,43 @@
       "opciones": [
         "Standard IEEE para definir una arquitectura hardware multiprocesador.",
         "Standard diseñado por Microsoft, que permite conectividad con sistemas UNIX.",
-        "Standard IEEE que define el interface entre SO y los programas.",
+        "Estándares de interfaces y utilidades de sistemas operativos, de la familia IEEE 1003, orientados a la portabilidad de aplicaciones.",
         "Standard ISO para implementar servicios de red."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "POSIX significa Portable Operating System Interface. Normaliza interfaces y utilidades para facilitar la portabilidad de aplicaciones; no especifica una arquitectura hardware multiprocesador ni es un estándar de Microsoft.",
+      "clasificacion": {
+        "A1": [
+          "A1-59",
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "POSIX"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.opengroup.org/austin/papers/posix_faq.html",
+            "referencia": "The Open Group, POSIX.1 FAQ"
+          }
+        ],
+        "observaciones": "POSIX significa Portable Operating System Interface. Normaliza interfaces y utilidades para facilitar la portabilidad de aplicaciones; no especifica una arquitectura hardware multiprocesador ni es un estándar de Microsoft."
+      }
     },
     {
       "id": 498,
       "bloque": 0,
       "tema": 0,
-      "texto": "A la estructura en disco que contiene la información de control de un fichero en un sistema de ficheros Unix se le denomina:",
+      "texto": "En el sistema de archivos ext4 de Linux, ¿cómo se denomina la estructura en disco que contiene metadatos de un archivo, como propietario, permisos y tamaño?",
       "opciones": [
         "I-nodo",
         "Clúster",
@@ -19783,7 +19836,33 @@
         "Ninguna de las respuestas anteriores es correcta"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El inodo ext4 almacena metadatos del archivo, como propietario, permisos, tamaño y referencias a sus datos. El nombre se asocia al número de inodo en las entradas de directorio. Se acota el supuesto a ext4 para evitar atribuir la misma estructura a cualquier sistema de archivos utilizable en Unix.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "inodo",
+        "ext4"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://docs.kernel.org/filesystems/ext4/inodes.html",
+            "referencia": "Linux Kernel, ext4, Index Nodes"
+          }
+        ],
+        "observaciones": "El inodo ext4 almacena metadatos del archivo, como propietario, permisos, tamaño y referencias a sus datos. El nombre se asocia al número de inodo en las entradas de directorio. Se acota el supuesto a ext4 para evitar atribuir la misma estructura a cualquier sistema de archivos utilizable en Unix."
+      }
     },
     {
       "id": 499,
@@ -19797,21 +19876,72 @@
         "ps"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "ls lista el contenido de directorios. Por defecto no desciende recursivamente ni muestra los nombres que comienzan por punto; -R y -a permiten esos comportamientos. pwd muestra el directorio de trabajo y ps información de procesos.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ls"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/s/coreutils/manual/html_node/ls-invocation.html",
+            "referencia": "GNU Coreutils, ls: List directory contents"
+          }
+        ],
+        "observaciones": "ls lista el contenido de directorios. Por defecto no desciende recursivamente ni muestra los nombres que comienzan por punto; -R y -a permiten esos comportamientos. pwd muestra el directorio de trabajo y ps información de procesos."
+      }
     },
     {
       "id": 500,
       "bloque": 0,
       "tema": 0,
-      "texto": "El comando 'kill' en Linux:",
+      "texto": "¿Cuál es la función general del comando kill en Linux?",
       "opciones": [
-        "Se utiliza para eliminar un proceso a través de su PID",
-        "Se utiliza para comunicarse con los procesos y enviarles señales",
-        "Desconecta a un usuario",
-        "Ninguna de las anteriores respuestas es correcta"
+        "Borrar automáticamente el ejecutable y los archivos abiertos por un proceso.",
+        "Enviar señales a procesos o grupos de procesos, sujeto a los permisos correspondientes.",
+        "Terminar siempre de forma inmediata cualquier proceso, con independencia de la señal y los permisos.",
+        "Desconectar físicamente la interfaz de red de un usuario."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "kill envía señales a procesos o grupos de procesos, sujeto a permisos. No toda señal termina el proceso: por ejemplo, STOP lo detiene y CONT lo reanuda. Se elimina el solapamiento del distractor original, pues enviar una señal de terminación sí puede terminar un proceso.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "kill",
+        "senales"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/s/coreutils/manual/html_node/kill-invocation.html",
+            "referencia": "GNU Coreutils, kill: Send a signal to processes"
+          }
+        ],
+        "observaciones": "kill envía señales a procesos o grupos de procesos, sujeto a permisos. No toda señal termina el proceso: por ejemplo, STOP lo detiene y CONT lo reanuda. Se elimina el solapamiento del distractor original, pues enviar una señal de terminación sí puede terminar un proceso."
+      }
     },
     {
       "id": 501,
