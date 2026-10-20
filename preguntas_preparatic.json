@@ -20956,21 +20956,46 @@
       "id": 526,
       "bloque": 0,
       "tema": 0,
-      "texto": "Una señal en UNIX es un mecanismo de comunicación:",
+      "texto": "¿Qué función pueden cumplir las señales en UNIX/Linux?",
       "opciones": [
-        "Bidireccional.",
-        "Síncrono.",
-        "Entre procesos.",
-        "En el fichero de cabecera <stdio.h> están definidas todas las señales, número y nombre."
+        "Crear siempre un canal bidireccional de datos.",
+        "Garantizar que toda notificación sea síncrona.",
+        "Notificar eventos y permitir comunicación entre procesos.",
+        "Definir todas sus constantes en la cabecera stdio.h."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Las señales permiten notificar eventos y enviar notificaciones entre procesos mediante kill, entre otras interfaces. También pueden originarse en el núcleo por excepciones. No todas son necesariamente síncronas o asíncronas; se precisa la descripción para evitar esa falsa dicotomía.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "senales"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man7/signal.7.html",
+            "referencia": "Linux man-pages, signal(7)"
+          }
+        ],
+        "observaciones": "Las señales permiten notificar eventos y enviar notificaciones entre procesos mediante kill, entre otras interfaces. También pueden originarse en el núcleo por excepciones. No todas son necesariamente síncronas o asíncronas; se precisa la descripción para evitar esa falsa dicotomía."
+      }
     },
     {
       "id": 527,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si un archivo de Linux tiene el modo de protección 640 (en octal), ¿qué pueden hacer el propietario, el grupo del propietario y los demás?",
+      "texto": "En un archivo regular Linux con modo 640, sin ACL adicionales ni privilegios especiales, ¿qué permisos tradicionales tienen propietario, grupo del archivo y demás usuarios?",
       "opciones": [
         "El propietario leer, escribir y ejecutar, el grupo leer y escribir y los demás leer.",
         "El propietario leer y escribir, el grupo leer y los demás nada.",
@@ -20978,7 +21003,33 @@
         "El propietario leer, escribir y ejecutar, el grupo leer y los demás nada."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "En los bits tradicionales, 6=4+2 corresponde a lectura y escritura, 4 a lectura y 0 a ningún permiso. Se refiere al grupo del archivo, no necesariamente al grupo del propietario. El supuesto excluye ACL adicionales y accesos privilegiados.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "permisos",
+        "octal"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/s/coreutils/manual/html_node/Numeric-Modes.html",
+            "referencia": "GNU Coreutils, Numeric Modes"
+          }
+        ],
+        "observaciones": "En los bits tradicionales, 6=4+2 corresponde a lectura y escritura, 4 a lectura y 0 a ningún permiso. Se refiere al grupo del archivo, no necesariamente al grupo del propietario. El supuesto excluye ACL adicionales y accesos privilegiados."
+      }
     },
     {
       "id": 528,
@@ -20992,7 +21043,33 @@
         "exec"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "fork crea un hijo duplicando el proceso llamante, con las diferencias documentadas, incluido un PID propio. exec sustituye la imagen del proceso existente; no crea por sí solo otro proceso.",
+      "clasificacion": {
+        "A1": [
+          "A1-59",
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "fork"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man2/fork.2.html",
+            "referencia": "Linux man-pages, fork(2)"
+          }
+        ],
+        "observaciones": "fork crea un hijo duplicando el proceso llamante, con las diferencias documentadas, incluido un PID propio. exec sustituye la imagen del proceso existente; no crea por sí solo otro proceso."
+      }
     },
     {
       "id": 529,
@@ -21000,27 +21077,80 @@
       "tema": 0,
       "texto": "¿Cuál no es un entorno de escritorio para Linux?",
       "opciones": [
-        "KDE",
+        "KDE Plasma",
         "GNOME",
-        "XCFE",
-        "SUSE"
+        "Xfce",
+        "SUSE Linux Enterprise Server"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Xfce es un entorno de escritorio: se corrige la errata XCFE y se utiliza KDE Plasma como nombre del escritorio. SUSE Linux Enterprise Server es una distribución, no un escritorio: https://www.suse.com/products/server/.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "escritorios"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://xfce.org/about",
+            "referencia": "Xfce, About"
+          }
+        ],
+        "observaciones": "Xfce es un entorno de escritorio: se corrige la errata XCFE y se utiliza KDE Plasma como nombre del escritorio. SUSE Linux Enterprise Server es una distribución, no un escritorio: https://www.suse.com/products/server/."
+      }
     },
     {
       "id": 530,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes sistemas operativos son implementaciones de POSIX (IEEE 1003.1)?",
+      "texto": "¿Qué producto de IBM aparece en su boletín C/370 de diciembre de 1993 como entorno con interfaces POSIX 1003.1?",
       "opciones": [
         "Microsoft Windows para Trabajo en Grupo 3.11",
-        "MVS de IBM",
+        "MVS/ESA OpenEdition",
         "System 7 de Apple",
-        "ATT UNIX SVR4"
+        "AT&T UNIX SVR4"
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "IBM documentó interfaces POSIX 1003.1 en MVS/ESA OpenEdition. El distractor MVS sin versión hacía ambigua la pregunta original: no se puede excluir toda esa familia de POSIX. Se reformula con un producto y documento históricos identificados. El resultado de búsqueda permite consultar el pasaje, aunque la apertura completa falla por decodificación.",
+      "clasificacion": {
+        "A1": [
+          "A1-59",
+          "A1-62"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "POSIX",
+        "MVS",
+        "historica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://public.dhe.ibm.com/s390/c370/oldnews/1993/DECEMBER.HTML",
+            "referencia": "IBM C/370 Newsletter, diciembre de 1993"
+          }
+        ],
+        "observaciones": "IBM documentó interfaces POSIX 1003.1 en MVS/ESA OpenEdition. El distractor MVS sin versión hacía ambigua la pregunta original: no se puede excluir toda esa familia de POSIX. Se reformula con un producto y documento históricos identificados. El resultado de búsqueda permite consultar el pasaje, aunque la apertura completa falla por decodificación."
+      }
     },
     {
       "id": 531,

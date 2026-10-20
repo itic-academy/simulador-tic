@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.598 preguntas sin revisión de contenido. Siguiente ID: 526. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.593 preguntas sin revisión de contenido. Siguiente ID: 531. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 525 registros de cambios y las 11.598 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 530 registros de cambios y las 11.593 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -230,3 +230,8 @@ Se confirman POSIX y Samba. Se explicita la regla sudoers que autoriza wheel, se
 IDs 521–525: cinco verificadas y cuatro con cambios de contenido. Acumulado: 525 examinadas, 497 verificadas, 28 pendientes y 334 con cambios de contenido. Estados: 160 vigentes, 311 corregidas, 26 históricas y 28 pendientes. Quedan 11.598 sin revisar; siguiente ID 526.
 
 Se confirma fork, se concreta GRUB 2 y se elimina la generalización de listas enlazadas para todos los sistemas de archivos. Se aclara la distinción entre código común y específico de arquitectura en Linux y se precisan límites y recursos como causas de fallo de fork. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 042 — 20 de octubre
+
+IDs 526–530: cinco verificadas y cuatro con cambios de contenido (tres corregidas y una histórica reformulada). Acumulado: 530 examinadas, 502 verificadas, 28 pendientes y 338 con cambios de contenido. Estados: 161 vigentes, 314 corregidas, 27 históricas y 28 pendientes. Quedan 11.593 sin revisar; siguiente ID 531.
+
+Se precisan señales y permisos 640, se confirma fork y se corrige XCFE por Xfce. La pregunta POSIX no podía excluir MVS sin concretar versión: IBM documenta MVS/ESA OpenEdition con interfaces POSIX. Se convierte en una referencia histórica explícita y se cambia la clave a B. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.

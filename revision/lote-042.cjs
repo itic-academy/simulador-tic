@@ -1,0 +1,14 @@
+const records=[
+[526,[60],['II-2'],['senales'],'https://man7.org/linux/man-pages/man7/signal.7.html','Linux man-pages, signal(7)','Las señales permiten notificar eventos y enviar notificaciones entre procesos mediante kill, entre otras interfaces. También pueden originarse en el núcleo por excepciones. No todas son necesariamente síncronas o asíncronas; se precisa la descripción para evitar esa falsa dicotomía.'],
+[527,[60],['II-2'],['permisos','octal'],'https://www.gnu.org/s/coreutils/manual/html_node/Numeric-Modes.html','GNU Coreutils, Numeric Modes','En los bits tradicionales, 6=4+2 corresponde a lectura y escritura, 4 a lectura y 0 a ningún permiso. Se refiere al grupo del archivo, no necesariamente al grupo del propietario. El supuesto excluye ACL adicionales y accesos privilegiados.'],
+[528,[59,60],['II-2'],['fork'],'https://man7.org/linux/man-pages/man2/fork.2.html','Linux man-pages, fork(2)','fork crea un hijo duplicando el proceso llamante, con las diferencias documentadas, incluido un PID propio. exec sustituye la imagen del proceso existente; no crea por sí solo otro proceso.'],
+[529,[60],['II-2'],['escritorios'],'https://xfce.org/about','Xfce, About','Xfce es un entorno de escritorio: se corrige la errata XCFE y se utiliza KDE Plasma como nombre del escritorio. SUSE Linux Enterprise Server es una distribución, no un escritorio: https://www.suse.com/products/server/.'],
+[530,[59,62],['II-2'],['POSIX','MVS','historica'],'https://public.dhe.ibm.com/s390/c370/oldnews/1993/DECEMBER.HTML','IBM C/370 Newsletter, diciembre de 1993','IBM documentó interfaces POSIX 1003.1 en MVS/ESA OpenEdition. El distractor MVS sin versión hacía ambigua la pregunta original: no se puede excluir toda esa familia de POSIX. Se reformula con un producto y documento históricos identificados. El resultado de búsqueda permite consultar el pasaje, aunque la apertura completa falla por decodificación.','historica']
+];
+const edits={
+526:{texto:'¿Qué función pueden cumplir las señales en UNIX/Linux?',opciones:['Crear siempre un canal bidireccional de datos.','Garantizar que toda notificación sea síncrona.','Notificar eventos y permitir comunicación entre procesos.','Definir todas sus constantes en la cabecera stdio.h.']},
+527:{texto:'En un archivo regular Linux con modo 640, sin ACL adicionales ni privilegios especiales, ¿qué permisos tradicionales tienen propietario, grupo del archivo y demás usuarios?'},
+529:{opciones:['KDE Plasma','GNOME','Xfce','SUSE Linux Enterprise Server']},
+530:{texto:'¿Qué producto de IBM aparece en su boletín C/370 de diciembre de 1993 como entorno con interfaces POSIX 1003.1?',opciones:['Microsoft Windows para Trabajo en Grupo 3.11','MVS/ESA OpenEdition','System 7 de Apple','AT&T UNIX SVR4'],respuesta_correcta:1}
+};
+require('./aplicar-lote.cjs')({numero:'042',fecha:'2026-10-20',records,edits});
