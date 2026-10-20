@@ -19955,7 +19955,32 @@
         "cat"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "chmod modifica los bits de permisos del archivo, sujeto a autorización. pwd muestra el directorio actual, rmdir elimina directorios vacíos y cat concatena o muestra archivos.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "chmod"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+            "referencia": "GNU Coreutils, chmod"
+          }
+        ],
+        "observaciones": "chmod modifica los bits de permisos del archivo, sujeto a autorización. pwd muestra el directorio actual, rmdir elimina directorios vacíos y cat concatena o muestra archivos."
+      }
     },
     {
       "id": 502,
@@ -19969,21 +19994,74 @@
         "Solaris"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "AIX, HP-UX y Solaris pertenecen a UNIX. OpenVMS constituye otra familia de sistemas operativos: disponer de utilidades de compatibilidad UNIX no lo convierte en UNIX. VSI documenta esa capa de compatibilidad en https://vmssoftware.com/docs/VSI_OVMS_SPD_QS_V842L1.pdf.",
+      "clasificacion": {
+        "A1": [
+          "A1-60",
+          "A1-62"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UNIX",
+        "OpenVMS"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.opengroup.org/membership/forums/platform/unix",
+            "referencia": "The Open Group, The UNIX Standard"
+          }
+        ],
+        "observaciones": "AIX, HP-UX y Solaris pertenecen a UNIX. OpenVMS constituye otra familia de sistemas operativos: disponer de utilidades de compatibilidad UNIX no lo convierte en UNIX. VSI documenta esa capa de compatibilidad en https://vmssoftware.com/docs/VSI_OVMS_SPD_QS_V842L1.pdf."
+      }
     },
     {
       "id": 503,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la respuesta correcta respecto a un sistema de archivos de UNIX System V:",
+      "texto": "¿Qué descripción corresponde a la organización del formato histórico SystemV FS?",
       "opciones": [
         "Posee una estructura relacional de archivos.",
         "En el sistema de archivos se encuentra el bloque de arranque. El superbloque, la lista de nodos y los bloques de datos se leen de la BIOS directamente.",
-        "La lista de i-nodos se encuentra a continuación del superbloque.",
+        "Distingue bloque de arranque, superbloque y áreas separadas para inodos y para directorios/datos.",
         "Los dispositivos y periféricos no son archivos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El formato histórico SystemV FS separa bloque de arranque, superbloque, área de inodos y área de directorios/datos. No se generaliza a cualquier sistema de archivos montable en System V ni a una lectura directa desde BIOS.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SystemV",
+        "historica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.kernel.org/doc/html/v6.9/filesystems/sysv-fs.html",
+            "referencia": "Linux Kernel, SystemV Filesystem: General layout"
+          }
+        ],
+        "observaciones": "El formato histórico SystemV FS separa bloque de arranque, superbloque, área de inodos y área de directorios/datos. No se generaliza a cualquier sistema de archivos montable en System V ni a una lectura directa desde BIOS."
+      }
     },
     {
       "id": 504,
@@ -19991,27 +20069,79 @@
       "tema": 0,
       "texto": "¿Qué comando crea enlaces simbólicos en UNIX?",
       "opciones": [
-        "ln",
+        "ln -s",
         "mkdir",
         "ls",
         "mv"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "ln crea enlaces duros por defecto; con -s crea enlaces simbólicos. Se incorpora la opción para que la respuesta indique la invocación adecuada.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ln",
+        "enlaces"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html",
+            "referencia": "GNU Coreutils, ln, opción -s"
+          }
+        ],
+        "observaciones": "ln crea enlaces duros por defecto; con -s crea enlaces simbólicos. Se incorpora la opción para que la respuesta indique la invocación adecuada."
+      }
     },
     {
       "id": 505,
       "bloque": 0,
       "tema": 0,
-      "texto": "El entorno de escritorio KDE:",
+      "texto": "En una sesión Wayland de KDE Plasma, ¿qué componente realiza la composición y gestión de ventanas?",
       "opciones": [
-        "Utiliza como gestor de ventanas uno propio",
-        "No posee gestor de ventanas propio",
-        "Define sus interfaces mediante tecnología CORBA",
-        "No proporciona diferentes configuraciones para distintos idiomas"
+        "KWin",
+        "Dolphin",
+        "Konsole",
+        "Kate"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "KWin es el compositor Wayland de KDE Plasma y gestiona las ventanas. La pregunta se concreta en Wayland y nombra el componente; se evita confundir KDE, la comunidad, con el nombre actual del escritorio Plasma.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "KDE",
+        "KWin"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-20",
+        "fuentes": [
+          {
+            "url": "https://github.com/KDE/kwin",
+            "referencia": "KDE, repositorio KWin, descripción del proyecto"
+          }
+        ],
+        "observaciones": "KWin es el compositor Wayland de KDE Plasma y gestiona las ventanas. La pregunta se concreta en Wayland y nombra el componente; se evita confundir KDE, la comunidad, con el nombre actual del escritorio Plasma."
+      }
     },
     {
       "id": 506,
