@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.538 preguntas sin revisión de contenido. Siguiente ID: 586. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.533 preguntas sin revisión de contenido. Siguiente ID: 591. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 585 registros de cambios y las 11.538 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 590 registros de cambios y las 11.533 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -290,3 +290,8 @@ Se delimita históricamente la regla par/impar de versiones Linux y se confirman
 IDs 581–585: cinco verificadas y cuatro con cambios de contenido. Acumulado: 585 examinadas, 557 verificadas, 28 pendientes y 381 con cambios de contenido. Estados: 173 vigentes, 348 corregidas, 36 históricas y 28 pendientes. Quedan 11.538 sin revisar; siguiente ID 586.
 
 Se corrige iwconfig, se precisa la relación entre root y prioridad de planificación y se delimita procfs a Linux. Se confirma la denominación root. Se corrige la inversión de cliente y servidor X en la pregunta sobre DISPLAY. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 054 — 21 de octubre
+
+IDs 586–590: cinco verificadas y dos con cambios de contenido. Acumulado: 590 examinadas, 562 verificadas, 28 pendientes y 383 con cambios de contenido. Estados: 176 vigentes, 350 corregidas, 36 históricas y 28 pendientes. Quedan 11.533 sin revisar; siguiente ID 591.
+
+Se confirma sed y la separación entre inodo y nombre en el directorio. Se precisa main de Ubuntu sin atribuir una licencia única a todos sus paquetes. Se confirma IRIX y se registra su equivalencia con la pregunta 561. Se pregunta por passwd sin universalizar su ruta de instalación. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
