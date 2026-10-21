@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.568 preguntas sin revisión de contenido. Siguiente ID: 556. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.563 preguntas sin revisión de contenido. Siguiente ID: 561. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 555 registros de cambios y las 11.568 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 560 registros de cambios y las 11.563 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -260,3 +260,8 @@ Se corrige la expansión de WMI, se acotan las trece direcciones al formato hist
 IDs 551–555: cinco verificadas y tres con cambios de contenido. Acumulado: 555 examinadas, 527 verificadas, 28 pendientes y 357 con cambios de contenido. Estados: 167 vigentes, 330 corregidas, 30 históricas y 28 pendientes. Quedan 11.568 sin revisar; siguiente ID 556.
 
 Se acota el esquema de punteros a ext2, se precisan los requisitos del arranque óptico y se confirma tee. Se contrasta la relación histórica de Linux con UNIX y MINIX mediante las notas originales de Torvalds. La comunicación por mensajes se reformula como recepción bloqueante de msgrcv, evitando confundir colas con rendezvous. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 048 — 21 de octubre
+
+IDs 556–560: cinco verificadas y cinco con cambios de contenido (tres corregidas y dos históricas reformuladas). Acumulado: 560 examinadas, 532 verificadas, 28 pendientes y 362 con cambios de contenido. Estados: 167 vigentes, 333 corregidas, 32 históricas y 28 pendientes. Quedan 11.563 sin revisar; siguiente ID 561.
+
+Se distingue registro textual de formato binario sin universalizar nombres de archivos, se sustituye un ranking ofimático sin fundamento y se elimina la errata Genome. Se corrige la clave de RFS de AT&T: D, no NFS de Sun. Se concreta el acceso a un recurso NFS montado. El despliegue del lote 047, cuya comprobación quedó bloqueada por el límite temporal del revisor automático, se ha confirmado satisfactorio. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.

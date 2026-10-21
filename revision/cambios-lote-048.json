@@ -1,0 +1,293 @@
+{
+  "fecha": "2026-10-21",
+  "alcance": "IDs 556–560; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 556,
+      "original": {
+        "id": 556,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con la seguridad en UNIX y particularmente con la auditoría del sistema, cuál de los siguientes archivos de registro de equipos UNIX se guardan en texto claro, y pueden visualizarse con una orden como cat o similares:",
+        "opciones": [
+          "syslog, wtmp, lastlog, sulog.",
+          "syslogd, utmpx, faillog, loginlog.",
+          "syslog, debug, sulog, loginlog.",
+          "syslog, btmp, lastlog, loginlog."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 556,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Linux, con permisos de lectura suficientes, ¿cuál de estos registros permite leer directamente sus mensajes como texto mediante cat?",
+        "opciones": [
+          "Un archivo utmp en su formato binario habitual.",
+          "Un archivo wtmp en su formato binario habitual.",
+          "Un archivo generado por rsyslog omfile con plantilla textual y sin compresión.",
+          "El ejecutable binario rsyslogd."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La legibilidad depende del formato y la configuración, no solo del nombre del archivo. Una salida textual de omfile sin compresión puede leerse con cat. utmp y wtmp usan registros binarios; véase https://www.man7.org/linux/man-pages/man1/utmpdump.1.html. Se elimina la lista universal de nombres que varían entre UNIX.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "registros",
+          "rsyslog"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://docs.rsyslog.com/doc/configuration/modules/omfile.html",
+              "referencia": "rsyslog, omfile: File Output Module"
+            }
+          ],
+          "observaciones": "La legibilidad depende del formato y la configuración, no solo del nombre del archivo. Una salida textual de omfile sin compresión puede leerse con cat. utmp y wtmp usan registros binarios; véase https://www.man7.org/linux/man-pages/man1/utmpdump.1.html. Se elimina la lista universal de nombres que varían entre UNIX."
+        }
+      }
+    },
+    {
+      "id": 557,
+      "original": {
+        "id": 557,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes respuestas sobre el sistema operativo Unix es falsa?",
+        "opciones": [
+          "Fue escrito en los laboratorios Bell de ATT por Ken Thompson en 1969",
+          "Ultrix es una versión modificada del Unix comercializada por un determinado fabricante de sistemas informáticos",
+          "Es el sistema operativo con mayor cantidad de software ofimático desarrollado para él",
+          "La Universidad de Berkeley adaptó una versión ampliamente utilizada en los primeros años en los ambientes universitarios"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 557,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación sobre el origen de UNIX es falsa?",
+        "opciones": [
+          "Su desarrollo inicial se sitúa en 1969.",
+          "Ken Thompson participó en su desarrollo inicial.",
+          "Se originó en Microsoft como una versión de Windows.",
+          "Su origen está en Bell Laboratories."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Ritchie sitúa el nacimiento de UNIX en 1969 en Bell Labs, con participación de Thompson. Se sustituye el ranking de software ofimático, sin fecha ni medida comprobable, por una afirmación histórica inequívocamente falsa.",
+        "clasificacion": {
+          "A1": [
+            "A1-59",
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "UNIX",
+          "historia"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html",
+              "referencia": "Dennis M. Ritchie, The Evolution of the Unix Time-sharing System"
+            }
+          ],
+          "observaciones": "Ritchie sitúa el nacimiento de UNIX en 1969 en Bell Labs, con participación de Thompson. Se sustituye el ranking de software ofimático, sin fecha ni medida comprobable, por una afirmación histórica inequívocamente falsa."
+        }
+      }
+    },
+    {
+      "id": 558,
+      "original": {
+        "id": 558,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes es un escritorio de Linux?",
+        "opciones": [
+          "X11",
+          "Genome",
+          "KDE",
+          "Ninguno de ellos"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 558,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes es un escritorio de Linux?",
+        "opciones": [
+          "X11",
+          "Bash",
+          "KDE Plasma",
+          "Ninguno de ellos"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Plasma es el entorno de escritorio de KDE. Se actualiza su nombre y se sustituye Genome, que podía interpretarse como una errata de GNOME y provocar dos respuestas válidas.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "KDE",
+          "Plasma"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://kde.org/plasma-desktop/",
+              "referencia": "KDE, Plasma"
+            }
+          ],
+          "observaciones": "Plasma es el entorno de escritorio de KDE. Se actualiza su nombre y se sustituye Genome, que podía interpretarse como una errata de GNOME y provocar dos respuestas válidas."
+        }
+      }
+    },
+    {
+      "id": 559,
+      "original": {
+        "id": 559,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes versiones del sistema de archivos UNIX fue creada por ATT?",
+        "opciones": [
+          "Virtual File System",
+          "Fast File System",
+          "Network File System",
+          "Remote File System"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 559,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué mecanismo de compartición remota aparece como RFS en las notas de AT&T UNIX System V/386 Release 3.2 de 1988?",
+        "opciones": [
+          "Virtual File System",
+          "Fast File System",
+          "Network File System",
+          "Remote File Sharing"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Las notas de AT&T documentan Remote File Sharing (RFS). La clave original NFS era incorrecta: RFC 1094 identifica a Sun Microsystems, https://www.rfc-editor.org/info/rfc1094/. Se corrige a D y se precisa la denominación de RFS.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "RFS",
+          "NFS",
+          "historia"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://www.bitsavers.org/pdf/att/unix/System_V_386_Release_3.2/UNIX_System_V_386_Release_3.2_Release_Notes_1988.pdf",
+              "referencia": "AT&T, UNIX System V/386 Release 3.2 Release Notes (1988), Remote File Sharing"
+            }
+          ],
+          "observaciones": "Las notas de AT&T documentan Remote File Sharing (RFS). La clave original NFS era incorrecta: RFC 1094 identifica a Sun Microsystems, https://www.rfc-editor.org/info/rfc1094/. Se corrige a D y se precisa la denominación de RFS."
+        }
+      }
+    },
+    {
+      "id": 560,
+      "original": {
+        "id": 560,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Marque cuál de las siguientes afirmaciones es cierta con respecto al sistema de ficheros en red NFS:",
+        "opciones": [
+          "Proporciona una visión idéntica del espacio de nombres para todos los usuarios del sistema con independencia de su localización",
+          "Una vez realizado el montaje remoto, proporciona transparencia de la localización en el nombrado de ficheros",
+          "Proporciona una semántica igual a la que ofrece el sistema Unix en el acceso concurrente a los ficheros",
+          "Proporciona transparencia de la replicación"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 560,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Tras montar correctamente un recurso NFS servidor:/datos en /mnt/datos de un cliente Linux, ¿cómo accede una aplicación a un archivo informe.txt situado en la raíz de ese recurso?",
+        "opciones": [
+          "Debe utilizar siempre una URL HTTP.",
+          "Mediante la ruta /mnt/datos/informe.txt, sujeta a los permisos de acceso.",
+          "Mediante una letra de unidad asignada obligatoriamente por NFS.",
+          "Solo copiándolo antes a otro sistema de archivos."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "El recurso remoto servidor:/ruta se monta en un directorio local. Las aplicaciones utilizan rutas bajo ese punto de montaje; ello no garantiza un espacio de nombres idéntico en todos los clientes ni equivalencia universal con las propiedades de un sistema de archivos local.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "NFS",
+          "montaje"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://www.man7.org/linux/man-pages/man8/mount.nfs.8.html",
+              "referencia": "nfs-utils, mount.nfs(8)"
+            }
+          ],
+          "observaciones": "El recurso remoto servidor:/ruta se monta en un directorio local. Las aplicaciones utilizan rutas bajo ese punto de montaje; ello no garantiza un espacio de nombres idéntico en todos los clientes ni equivalencia universal con las propiedades de un sistema de archivos local."
+        }
+      }
+    }
+  ]
+}
