@@ -24991,49 +24991,151 @@
         "Algoritmo devorador (Greedy)"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Heapsort es un algoritmo de ordenación basado en montículos: construye el montículo y extrae sucesivamente los elementos para ordenar. Se mantiene B. Backtracking y greedy son estrategias generales; la búsqueda dicotómica busca en una secuencia ordenada. No se asigna un tema A1 directo sin correspondencia específica.",
+      "clasificacion": {
+        "A1": [],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ordenación",
+        "heapsort"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://algs4.cs.princeton.edu/24pq/",
+            "referencia": "Sedgewick y Wayne, Algorithms, Priority Queues"
+          }
+        ],
+        "observaciones": "Heapsort es un algoritmo de ordenación basado en montículos: construye el montículo y extrae sucesivamente los elementos para ordenar. Se mantiene B. Backtracking y greedy son estrategias generales; la búsqueda dicotómica busca en una secuencia ordenada. No se asigna un tema A1 directo sin correspondencia específica."
+      }
     },
     {
       "id": 627,
       "bloque": 0,
       "tema": 0,
-      "texto": "Para evaluar diferentes sistemas de recuperación de información, ¿qué parámetros suelen analizarse?",
+      "texto": "¿Qué par de medidas básicas evalúa, respectivamente, la proporción de documentos recuperados que son relevantes y la proporción de documentos relevantes que se recupera?",
       "opciones": [
-        "Índice de retorno e índice de precisión",
-        "Índice de estimación cuantificable",
-        "Índice de ajuste de material devuelto",
-        "Número de referencias correctas"
+        "Precisión y exhaustividad (recall).",
+        "Latencia y caudal de red.",
+        "Número de documentos y tamaño en bytes.",
+        "Tiempo de CPU y ocupación de disco."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Las medidas básicas son precisión (relevantes recuperados/recuperados) y exhaustividad o recall (relevantes recuperados/relevantes). Se sustituye retorno por el término explícito y se pregunta por el par de medidas, pues el número de referencias correctas también puede analizarse.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "precisión",
+        "exhaustividad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-unranked-retrieval-sets-1.html",
+            "referencia": "Introduction to Information Retrieval, Evaluation of unranked retrieval sets"
+          }
+        ],
+        "observaciones": "Las medidas básicas son precisión (relevantes recuperados/recuperados) y exhaustividad o recall (relevantes recuperados/relevantes). Se sustituye retorno por el término explícito y se pregunta por el par de medidas, pues el número de referencias correctas también puede analizarse."
+      }
     },
     {
       "id": 628,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los ficheros inversos se utilizan preferentemente en:",
+      "texto": "En recuperación de información textual, ¿qué relación almacena un índice o fichero invertido básico?",
       "opciones": [
-        "Bases de datos relacionales.",
-        "Bases de datos jerárquicas.",
-        "Sistemas de recuperación de información.",
-        "Bases de datos reticulares."
+        "Cada usuario con su contraseña cifrada.",
+        "Cada disco con su velocidad de rotación.",
+        "Cada término con la lista de documentos que lo contienen.",
+        "Cada documento con una copia íntegra de todos los demás."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Un índice invertido asocia términos con listas de documentos que los contienen. Se sustituye una comparación imprecisa entre tipos de sistemas por esta función: también pueden existir índices invertidos dentro de sistemas relacionales.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "índice-invertido"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/a-first-take-at-building-an-inverted-index-1.html",
+            "referencia": "Introduction to Information Retrieval, A first take at building an inverted index"
+          }
+        ],
+        "observaciones": "Un índice invertido asocia términos con listas de documentos que los contienen. Se sustituye una comparación imprecisa entre tipos de sistemas por esta función: también pueden existir índices invertidos dentro de sistemas relacionales."
+      }
     },
     {
       "id": 629,
       "bloque": 0,
       "tema": 0,
-      "texto": "Entre los estándares que aplican a la conservación de la información en formato electrónico encontramos ISO 19005-1:2005 PDF/A-1, que identifica:",
+      "texto": "¿Qué especifica ISO 19005-1:2005 (PDF/A-1)?",
       "opciones": [
-        "Las recomendaciones para la conservación a largo plazo de información electrónica basada en documentos.",
-        "Los requisitos para la conservación a largo plazo de documentos electrónicos.",
-        "El formato de archivo de documentos electrónicos para conservación a largo plazo.",
-        "Las recomendaciones para la veracidad y fiabilidad de información almacenada electrónicamente."
+        "Un algoritmo de cifrado para garantizar el secreto de cualquier archivo.",
+        "Un calendario universal de plazos de eliminación de documentos administrativos.",
+        "El uso de PDF 1.4 como formato de documentos electrónicos para conservación a largo plazo.",
+        "Un protocolo de transferencia de archivos por la red."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "ISO 19005-1 especifica el uso de PDF 1.4 para conservar documentos electrónicos a largo plazo (PDF/A-1). Se precisa C y se distinguen los distractores del alcance de un formato. La ficha ISO confirma esta edición en 2026 y enumera correcciones de 2007 y 2011; no se ha consultado el texto íntegro de pago.",
+      "clasificacion": {
+        "A1": [
+          "A1-104",
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "PDF/A-1",
+        "conservación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/38920.html",
+            "referencia": "ISO 19005-1:2005, título, resumen y estado publicados por ISO"
+          }
+        ],
+        "observaciones": "ISO 19005-1 especifica el uso de PDF 1.4 para conservar documentos electrónicos a largo plazo (PDF/A-1). Se precisa C y se distinguen los distractores del alcance de un formato. La ficha ISO confirma esta edición en 2026 y enumera correcciones de 2007 y 2011; no se ha consultado el texto íntegro de pago."
+      }
     },
     {
       "id": 630,
@@ -25047,7 +25149,33 @@
         "Basado en la teoría de conjuntos."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene B en la comparación de modelos clásicos. El modelo probabilístico de independencia binaria aplica Bayes para estimar la probabilidad de relevancia. La explicación concreta el modelo; no afirma que toda técnica probabilística de recuperación utilice necesariamente esta misma formulación.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Bayes",
+        "modelo-probabilístico"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/the-binary-independence-model-1.html",
+            "referencia": "Introduction to Information Retrieval, The Binary Independence Model"
+          }
+        ],
+        "observaciones": "Se mantiene B en la comparación de modelos clásicos. El modelo probabilístico de independencia binaria aplica Bayes para estimar la probabilidad de relevancia. La explicación concreta el modelo; no afirma que toda técnica probabilística de recuperación utilice necesariamente esta misma formulación."
+      }
     },
     {
       "id": 631,
