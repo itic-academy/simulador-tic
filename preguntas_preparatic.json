@@ -25373,57 +25373,159 @@
       "id": 636,
       "bloque": 0,
       "tema": 0,
-      "texto": "Misión principal de un Sistema de Recuperación de Información:",
+      "texto": "¿Cuál es la misión principal de un sistema de recuperación de información?",
       "opciones": [
-        "Asistir la búsqueda de textos en bases de datos relacionales para localizar los documentos o referencias interesantes o relevantes ignorando todas las demás.",
-        "Asistir la búsqueda de textos en bases de datos documentales o textuales para localizar los documentos o referencias interesantes o relevantes ignorando todas las demás.",
-        "Asistir la búsqueda de textos en bases de datos documentales o textuales para localizar todos los documentos o referencias que aparezcan.",
-        "Asistir la búsqueda de imágenes en bases de datos relacionales para localizar todos los documentos o referencias que aparezcan."
+        "Devolver siempre toda la colección, sin atender a la consulta.",
+        "Ayudar a localizar documentos o información que satisfagan la necesidad de información del usuario.",
+        "Garantizar que solo se pueda buscar en bases de datos relacionales.",
+        "Modificar automáticamente el contenido de todos los documentos recuperados."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La misión es localizar material que satisfaga una necesidad de información. No depende de que el almacenamiento sea documental o relacional, ni está limitada al texto. Se elimina la falsa exclusión del almacenamiento relacional y la promesa implícita de descartar siempre todo lo irrelevante.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "recuperación-de-información"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/boolean-retrieval-1.html",
+            "referencia": "Introduction to Information Retrieval, definición inicial"
+          }
+        ],
+        "observaciones": "La misión es localizar material que satisfaga una necesidad de información. No depende de que el almacenamiento sea documental o relacional, ni está limitada al texto. Se elimina la falsa exclusión del almacenamiento relacional y la promesa implícita de descartar siempre todo lo irrelevante."
+      }
     },
     {
       "id": 637,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el ámbito de las copias de seguridad, es CIERTO:",
+      "texto": "En un esquema convencional de copia completa inicial seguida de copias incrementales no acumulativas, ¿qué afirmación es correcta?",
       "opciones": [
-        "Para recuperar una copia de seguridad incremental solo habrá que comprobar su existencia en dos copias de respaldo: la última copia incremental realizada y la última copia completa realizada.",
-        "Una copia de seguridad incremental no almacena todos los ficheros, sino solo los ficheros modificados desde la anterior copia.",
-        "Una copia de seguridad incremental no sólo copia los datos que se hayan modificado desde la última copia, si no todos los que se hayan modificado desde la última copia completa realizada.",
-        "Una copia de seguridad diferencial solo copia los datos que han variado desde la última copia de respaldo realizada, ya fuera incremental, diferencial o completa."
+        "Para restaurar cualquier punto basta siempre con la última incremental, sin la completa.",
+        "Cada incremental posterior a la completa respalda los datos nuevos o modificados desde la copia anterior.",
+        "Cada incremental copia siempre todos los datos modificados desde la última completa, aunque ya se hayan copiado.",
+        "Cada incremental vuelve a copiar siempre todos los datos sin excepción."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "En el esquema convencional, tras la copia completa inicial, una incremental copia los datos nuevos o modificados desde la anterior copia; la diferencial acumula cambios desde la completa. Se precisa el esquema porque existen nomenclaturas y mecanismos específicos de producto. La restauración de una cadena incremental convencional requiere la completa y las incrementales necesarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-132"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "copias-incrementales",
+        "copias-diferenciales"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/think/topics/backup-and-restore",
+            "referencia": "IBM, What is backup and restore, tipos de copia"
+          }
+        ],
+        "observaciones": "En el esquema convencional, tras la copia completa inicial, una incremental copia los datos nuevos o modificados desde la anterior copia; la diferencial acumula cambios desde la completa. Se precisa el esquema porque existen nomenclaturas y mecanismos específicos de producto. La restauración de una cadena incremental convencional requiere la completa y las incrementales necesarias."
+      }
     },
     {
       "id": 638,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indicar la respuesta falsa sobre modelos de recuperación de información:",
+      "texto": "Indique la afirmación FALSA sobre el modelo vectorial de recuperación que compara consultas y documentos mediante similitud coseno:",
       "opciones": [
-        "En general, el modelo vectorial se comporta peor que el probabilístico cuando se usa contra colecciones genéricas de documentos",
-        "Las redes neuronales son muy útiles en un sistema de recuperación de información por su potencia reconociendo patrones",
-        "Las redes de inferencia y las redes de confianza son modelos basados en redes bayesianas",
-        "Los modelos estructurados permiten combinar la especificación de consultas con la información de la estructura del documento"
+        "Un documento solo puede recibir una puntuación distinta de cero si contiene todos los términos de la consulta.",
+        "Las consultas pueden representarse como vectores de términos.",
+        "Se pueden utilizar diferentes esquemas de ponderación de términos.",
+        "Las puntuaciones permiten ordenar los documentos para una consulta."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La comparación de rendimiento del original carecía de colección, métrica y configuración; las otras afirmaciones también eran amplias. Se sustituye por propiedades verificables del modelo vectorial, conservando A como falsa: puede puntuar documentos aunque no contengan todos los términos de la consulta.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "modelo-vectorial"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/queries-as-vectors-1.html",
+            "referencia": "Introduction to Information Retrieval, Queries as vectors"
+          }
+        ],
+        "observaciones": "La comparación de rendimiento del original carecía de colección, métrica y configuración; las otras afirmaciones también eran amplias. Se sustituye por propiedades verificables del modelo vectorial, conservando A como falsa: puede puntuar documentos aunque no contengan todos los términos de la consulta."
+      }
     },
     {
       "id": 639,
       "bloque": 0,
       "tema": 0,
-      "texto": "En los sistemas de recuperación de información full text ¿qué operaciones son válidas para reducir el conjunto de palabras clave?",
+      "texto": "¿Qué operaciones pueden reducir el número de términos distintos del vocabulario indexado, en lugar de limitarse a comprimir su almacenamiento sin pérdida?",
       "opciones": [
-        "Eliminación de palabras vacías (stop words)",
-        "Identificación de la raíz gramatical (stemming)",
-        "Compresión de los conjuntos de palabras obtenidos",
-        "Todas las anteriores son operaciones válidas"
+        "Excluir los términos de una lista de palabras vacías.",
+        "Aplicar stemming para confluir variantes en una forma común.",
+        "Comprimir sin pérdida el diccionario manteniendo exactamente sus términos.",
+        "Las operaciones A y B."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Eliminar stop words o confluir variantes puede reducir el vocabulario indexado. La compresión sin pérdida reduce el espacio de representación, no el conjunto lógico de términos. Se corrige la equiparación del original manteniendo D con una combinación explícita. Fuente complementaria: https://nlp.stanford.edu/IR-book/html/htmledition/index-compression-1.html",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "vocabulario",
+        "compresión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html",
+            "referencia": "Introduction to Information Retrieval, Stemming and lemmatization; Index compression"
+          }
+        ],
+        "observaciones": "Eliminar stop words o confluir variantes puede reducir el vocabulario indexado. La compresión sin pérdida reduce el espacio de representación, no el conjunto lógico de términos. Se corrige la equiparación del original manteniendo D con una combinación explícita. Fuente complementaria: https://nlp.stanford.edu/IR-book/html/htmledition/index-compression-1.html"
+      }
     },
     {
       "id": 640,
@@ -25437,7 +25539,32 @@
         "Una técnica de eliminación de palabras vacías"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene B como clasificación por el nivel lingüístico sobre el que actúa: el stemming reduce variantes a una forma común, normalmente mediante reglas heurísticas de afijos. No equivale a un análisis morfológico completo ni garantiza obtener una raíz lingüística o un lema válido; tampoco consiste en eliminar stop words.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "stemming"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html",
+            "referencia": "Introduction to Information Retrieval, Stemming and lemmatization"
+          }
+        ],
+        "observaciones": "Se mantiene B como clasificación por el nivel lingüístico sobre el que actúa: el stemming reduce variantes a una forma común, normalmente mediante reglas heurísticas de afijos. No equivale a un análisis morfológico completo ni garantiza obtener una raíz lingüística o un lema válido; tampoco consiste en eliminar stop words."
+      }
     },
     {
       "id": 641,
