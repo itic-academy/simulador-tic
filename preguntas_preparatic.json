@@ -28441,21 +28441,49 @@
       "id": 711,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las respuestas siguientes no se aplica a los servicios de red orientados a conexión?",
+      "texto": "En un servicio de paquetes con circuito virtual conmutado, como una llamada virtual X.25, ¿qué afirmación NO es correcta?",
       "opciones": [
-        "Requiere que todas las conexiones sean explícitamente establecidas y terminadas.",
-        "Requiere que a cada paquete se le añada toda la dirección de encaminamiento antes de transmitirlo.",
-        "Predetermina el path desde la fuente al destino antes de transmitir los datos.",
-        "Reserva los recursos de red antes de transmitir los datos."
+        "Se establece la llamada antes de transferir datos y se libera al terminar.",
+        "Cada paquete de datos lleva la dirección completa de destino para que la red calcule su ruta de forma independiente.",
+        "Los paquetes se asocian al canal lógico del circuito virtual establecido.",
+        "El encaminamiento lógico del circuito se determina antes de transferir los datos de usuario."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se corrige y acota el enunciado a un servicio de paquetes con circuito virtual conmutado, como la llamada virtual X.25. Se mantiene B como única afirmación incorrecta: los paquetes de datos se asocian al canal lógico del circuito y siguen el encaminamiento establecido; no incluyen la dirección completa para que cada paquete se encamine independientemente. La reserva de recursos no es una propiedad universal de todos los servicios orientados a conexión.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "conmutación-paquetes",
+        "circuito-virtual",
+        "X.25",
+        "encaminamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-X.25/en",
+            "referencia": "UIT-T, Recomendación X.25 (componentes 1996 y corrigendo en vigor); la interfaz contempla llamadas virtuales y circuitos virtuales permanentes. Véase también la edición histórica oficial X.25, con procedimientos de circuitos virtuales y canales lógicos"
+          }
+        ],
+        "observaciones": "Se corrige y acota el enunciado a un servicio de paquetes con circuito virtual conmutado, como la llamada virtual X.25. Se mantiene B como única afirmación incorrecta: los paquetes de datos se asocian al canal lógico del circuito y siguen el encaminamiento establecido; no incluyen la dirección completa para que cada paquete se encamine independientemente. La reserva de recursos no es una propiedad universal de todos los servicios orientados a conexión."
+      }
     },
     {
       "id": 712,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuántas direcciones IP serán asignadas en la subred 220.8.7.0/28, sin considerar las direcciones de subred y de broadcast?",
+      "texto": "¿Cuántas direcciones IPv4 de host son asignables en la subred 220.8.7.0/28, excluidas la dirección de red y la de broadcast?",
       "opciones": [
         "256.",
         "254.",
@@ -28463,27 +28491,83 @@
         "28."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene C (14). Un prefijo /28 deja cuatro bits para direcciones: 2^4 = 16 direcciones en total. En la subred convencional se excluyen la dirección de red y la de broadcast, por lo que hay 14 direcciones asignables a interfaces; el enunciado especifica expresamente esas exclusiones.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8",
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "IPv4",
+        "CIDR",
+        "subred",
+        "/28"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1878.html",
+            "referencia": "RFC 1878, tabla de máscaras de longitud variable: /28 contiene 16 direcciones totales; excluyendo red y broadcast quedan 14 direcciones de host en una subred IPv4 convencional"
+          }
+        ],
+        "observaciones": "Se mantiene C (14). Un prefijo /28 deja cuatro bits para direcciones: 2^4 = 16 direcciones en total. En la subred convencional se excluyen la dirección de red y la de broadcast, por lo que hay 14 direcciones asignables a interfaces; el enunciado especifica expresamente esas exclusiones."
+      }
     },
     {
       "id": 713,
       "bloque": 0,
       "tema": 0,
-      "texto": "El protocolo IP se diserió en la RFT:",
+      "texto": "¿En qué RFC se publicó la especificación base clásica de IPv4 (Internet Protocol)?",
       "opciones": [
-        "R_FC 793.",
+        "RFC 793.",
         "RFC 791.",
         "RFC 768.",
         "RFC 821."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se corrige la errata «RFT» y se pregunta por la especificación base clásica de IPv4. La respuesta continúa siendo B, RFC 791, publicado en 1981 como Internet Protocol y registrado como STD 5. No se afirma que cada detalle del protocolo permanezca sin actualizar: el RFC Editor recoge actualizaciones posteriores de campos y servicios.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "IPv4",
+        "RFC-791",
+        "Internet-Protocol"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+            "referencia": "RFC 791, Internet Protocol (septiembre de 1981), especificación base histórica de IPv4 y STD 5; el RFC Editor registra RFC 791 como estándar actualizado por documentos posteriores"
+          }
+        ],
+        "observaciones": "Se corrige la errata «RFT» y se pregunta por la especificación base clásica de IPv4. La respuesta continúa siendo B, RFC 791, publicado en 1981 como Internet Protocol y registrado como STD 5. No se afirma que cada detalle del protocolo permanezca sin actualizar: el RFC Editor recoge actualizaciones posteriores de campos y servicios."
+      }
     },
     {
       "id": 714,
       "bloque": 0,
       "tema": 0,
-      "texto": "La RFC que contiene las especificaciones del protocolo IPv6 es:",
+      "texto": "¿Qué RFC es la especificación base de IPv6, identificada también como STD 86?",
       "opciones": [
         "RFC 1945.",
         "RFC 1884.",
@@ -28491,21 +28575,77 @@
         "RFC 2584."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se precisa la pregunta: RFC 8200 (STD 86) es la especificación base de IPv6 y sustituye a RFC 2460. La respuesta sigue siendo C. Para no presentar el documento como inmutable, se añade que el RFC Editor registra la actualización RFC 9673 sobre el procesamiento de opciones Hop-by-Hop.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "IPv6",
+        "RFC-8200",
+        "IETF",
+        "STD-86"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/info/rfc8200/",
+            "referencia": "RFC 8200, Internet Protocol, Version 6 (IPv6) Specification, STD 86; el RFC Editor indica que sustituye a RFC 2460 y que fue actualizado por RFC 9673"
+          }
+        ],
+        "observaciones": "Se precisa la pregunta: RFC 8200 (STD 86) es la especificación base de IPv6 y sustituye a RFC 2460. La respuesta sigue siendo C. Para no presentar el documento como inmutable, se añade que el RFC Editor registra la actualización RFC 9673 sobre el procesamiento de opciones Hop-by-Hop."
+      }
     },
     {
       "id": 715,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un sistema informático SCADA es:",
+      "texto": "En tecnología operacional (OT), ¿qué significa el acrónimo SCADA?",
       "opciones": [
-        "Un sistema de supervisión, control y adquisición de datos.",
-        "Un sistema de procesamiento paralelo optimizado para cálculo matemático.",
-        "Un sistema único multiprocesador que experimenta el uso del plasma en la construcción de CPUs más rápidas.",
-        "Un sistema de realidad virtual con periféricos de inmersión en la escena y retomo de la información de los sensores."
+        "Supervisión, control y adquisición de datos.",
+        "Cálculo paralelo de propósito general para operaciones matemáticas.",
+        "Procesamiento gráfico distribuido para crear escenas de realidad virtual.",
+        "Compresión y análisis estadístico de documentos administrativos."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene A. SCADA significa Supervisory Control and Data Acquisition (supervisión, control y adquisición de datos). NIST describe estos sistemas como una forma de tecnología operacional que centraliza la adquisición de datos para supervisar o controlar activos distribuidos, mediante adquisición de campo, transmisión y software HMI. Se sustituyen distractores deteriorados por definiciones inequívocamente distintas.",
+      "clasificacion": {
+        "A1": [
+          "A1-127"
+        ],
+        "A2": [
+          "A2-II-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SCADA",
+        "OT",
+        "ICS",
+        "adquisición-de-datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf",
+            "referencia": "NIST SP 800-82 Rev. 3, Guide to Operational Technology Security, § 2.3.2: definición, finalidad y componentes de los sistemas SCADA"
+          }
+        ],
+        "observaciones": "Se mantiene A. SCADA significa Supervisory Control and Data Acquisition (supervisión, control y adquisición de datos). NIST describe estos sistemas como una forma de tecnología operacional que centraliza la adquisición de datos para supervisar o controlar activos distribuidos, mediante adquisición de campo, transmisión y software HMI. Se sustituyen distractores deteriorados por definiciones inequívocamente distintas."
+      }
     },
     {
       "id": 716,
