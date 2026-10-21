@@ -1,0 +1,294 @@
+{
+  "fecha": "2026-10-21",
+  "alcance": "IDs 571–575; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 571,
+      "original": {
+        "id": 571,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Comparando el sistema de archivos Ext4 frente a Ext3, señale la opción correcta:",
+        "opciones": [
+          "Ext4 soporta sistemas de ficheros de hasta 1024 TB frente a los 16 TB de Ext3.",
+          "La migración de un sistema de ficheros Ext3 a uno Ext4 requiere reformatear el sistema de archivos afectado.",
+          "Ext4 soporta ficheros de hasta 16 TB frente a los 2 TB de Ext3.",
+          "Ext4 introduce la capacidad de journaling (registro por diario), no presente en Ext3."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 571,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Comparando el sistema de archivos Ext4 frente a Ext3, señale la opción correcta:",
+        "opciones": [
+          "Ext3 carece de soporte para directorios.",
+          "Toda migración de ext3 a ext4 exige obligatoriamente reformatear.",
+          "Ext4 incorpora extents para representar rangos contiguos de bloques, frente al esquema de mapas indirectos de ext3.",
+          "Ext4 introduce por primera vez el journaling, ausente en ext3."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Ext4 incorpora extents y permite convertir mapas indirectos de ext3. Se sustituyen límites numéricos sin tamaño de bloque ni distinción TB/TiB por una diferencia estructural: las cifras originales podían hacer defendibles varias opciones. Ext3 ya disponía de journaling.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "ext4",
+          "ext3",
+          "extents"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://cdn.kernel.org/doc/html/latest/admin-guide/ext4.html",
+              "referencia": "Linux Kernel Documentation, ext4 General Information"
+            }
+          ],
+          "observaciones": "Ext4 incorpora extents y permite convertir mapas indirectos de ext3. Se sustituyen límites numéricos sin tamaño de bloque ni distinción TB/TiB por una diferencia estructural: las cifras originales podían hacer defendibles varias opciones. Ext3 ya disponía de journaling."
+        }
+      }
+    },
+    {
+      "id": 572,
+      "original": {
+        "id": 572,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Del kernel o núcleo de Unix podemos afirmar que es:",
+        "opciones": [
+          "De tipo jerárquico, monolítico y monotarea.",
+          "De tipo microkernel, multitarea y monousuario.",
+          "De tipo máquina virtual, monotarea y multiusuario.",
+          "De tipo monolítico, multitarea y multiusuario."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 572,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se clasifica la arquitectura del núcleo Linux, aunque admita módulos cargables?",
+        "opciones": [
+          "Microkernel con todos los controladores en procesos de usuario.",
+          "Exokernel que delega todos los servicios en bibliotecas de aplicaciones.",
+          "Intérprete de órdenes sin gestión de memoria.",
+          "Núcleo monolítico."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La publicación describe Linux como sistema monolítico. Se concreta Linux, pues UNIX designa una familia y no impone una única arquitectura de núcleo. Monolítico no significa que carezca de módulos cargables.",
+        "clasificacion": {
+          "A1": [
+            "A1-59",
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "kernel",
+          "arquitectura"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://www.kernel.org/doc/mirror/ols2007v1.pdf",
+              "referencia": "Proceedings of the Linux Symposium 2007, vol. 1, p. 255"
+            }
+          ],
+          "observaciones": "La publicación describe Linux como sistema monolítico. Se concreta Linux, pues UNIX designa una familia y no impone una única arquitectura de núcleo. Monolítico no significa que carezca de módulos cargables."
+        }
+      }
+    },
+    {
+      "id": 573,
+      "original": {
+        "id": 573,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes no es un entorno de escritorio de Linux?",
+        "opciones": [
+          "Xfce",
+          "Gnome",
+          "KDE",
+          "Metacity"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 573,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes no es un entorno de escritorio de Linux?",
+        "opciones": [
+          "Xfce",
+          "GNOME",
+          "KDE Plasma",
+          "Metacity"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Metacity es un gestor de ventanas utilizado en GNOME Flashback, no un entorno de escritorio completo. Se precisa KDE Plasma y se normaliza GNOME.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Metacity",
+          "KDE",
+          "escritorios"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://wiki.gnome.org/Projects/Metacity",
+              "referencia": "GNOME, Projects/Metacity"
+            }
+          ],
+          "observaciones": "Metacity es un gestor de ventanas utilizado en GNOME Flashback, no un entorno de escritorio completo. Se precisa KDE Plasma y se normaliza GNOME."
+        }
+      }
+    },
+    {
+      "id": 574,
+      "original": {
+        "id": 574,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El Bourne shell:",
+        "opciones": [
+          "Está basado en el lenguaje C",
+          "Es posterior al shell de korn",
+          "No es un shell de Unix sólo de Linux",
+          "Es el shell más antiguo"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 574,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El Bourne shell:",
+        "opciones": [
+          "Es exclusivamente un shell de Linux.",
+          "Fue creado como parte de Microsoft Windows.",
+          "Es el nombre del gestor de ventanas de UNIX.",
+          "Es el shell de Stephen Bourne que apareció en la séptima edición de UNIX de Bell Labs."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El manual de Bash identifica el shell de Stephen Bourne en la séptima edición de UNIX de Bell Labs. Se sustituye el superlativo absoluto del original por esta referencia histórica comprobable.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Bourne",
+          "historia"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://www.gnu.org/software/bash/manual/html_node/What-is-Bash_003f.html",
+              "referencia": "GNU Bash Reference Manual, What is Bash?"
+            }
+          ],
+          "observaciones": "El manual de Bash identifica el shell de Stephen Bourne en la séptima edición de UNIX de Bell Labs. Se sustituye el superlativo absoluto del original por esta referencia histórica comprobable."
+        }
+      }
+    },
+    {
+      "id": 575,
+      "original": {
+        "id": 575,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale, entre los siguientes, cuál es un cliente WebDAV de línea de comandos para entornos Unix:",
+        "opciones": [
+          "cadaver",
+          "audacity",
+          "mahout",
+          "CalDAV"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 575,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale, entre los siguientes, cuál es un cliente WebDAV de línea de comandos para entornos Unix:",
+        "opciones": [
+          "cadaver",
+          "audacity",
+          "mahout",
+          "CalDAV"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "El autor describe cadaver como cliente WebDAV de línea de comandos para UNIX, con operaciones de transferencia, edición, colecciones y bloqueo de recursos. Se mantiene A.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "WebDAV",
+          "cadaver"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://notroj.github.io/cadaver/",
+              "referencia": "Joe Orton, cadaver"
+            }
+          ],
+          "observaciones": "El autor describe cadaver como cliente WebDAV de línea de comandos para UNIX, con operaciones de transferencia, edición, colecciones y bloqueo de recursos. Se mantiene A."
+        }
+      }
+    }
+  ]
+}
