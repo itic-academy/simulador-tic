@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 082 (IDs 726–730). Acumulado: 730 preguntas revisadas, 699 verificadas (201 vigentes, 451 corregidas y 47 históricas) y 31 pendientes de resolver; quedan 11.393 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 083 (IDs 731–735). Acumulado: 735 preguntas revisadas, 704 verificadas (201 vigentes, 455 corregidas y 48 históricas) y 31 pendientes de resolver; quedan 11.388 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.393 preguntas sin revisión de contenido. Siguiente ID: 731. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.388 preguntas sin revisión de contenido. Siguiente ID: 736. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. Tras el lote 082 se han ejecutado el inventario y el verificador: comprueban los 730 registros de cambios y las 11.393 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 14 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. Tras el lote 082 se han ejecutado el inventario y el verificador: comprueban los 735 registros de cambios y las 11.388 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 14 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -431,6 +431,12 @@ Se delimita EFQM a la edición 2013: además de sus nueve criterios, admitía au
 IDs 716–720: cinco verificadas, cuatro corregidas y una histórica contextualizada. Acumulado: 720 examinadas, 689 verificadas y 31 pendientes; 483 preguntas con cambios de contenido. Estados: 201 vigentes, 444 corregidas, 44 históricas y 31 pendientes. Quedan 11.403 sin revisar; siguiente ID 721.
 
 IEEE 802.4 se confirma como Token Bus (anillo lógico en bus físico) y se marca histórica porque IEEE la clasifica inactiva-retirada (716). Se identifica GetBulkRequest en las operaciones SNMPv2 vigentes, corrigiendo la pregunta que pedía varias PDU aunque daba opciones singulares (717). Se delimita la pregunta SNMPv3 a los servicios de seguridad USM y se evita confundir detección de errores con integridad/autenticación (718). Se coteja el cifrado de Red SARA y su SAT con la ficha oficial vigente, actualizando distractores institucionales (719). UIT-T X.400 corresponde a tratamiento de mensajes MHS, con componente 1999 en vigor (720). No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de convocatorias en este lote.
+## Lote 083 — 22 de octubre
+
+IDs 731–735: cinco preguntas examinadas y verificadas, cuatro precisadas y una contextualizada como histórica. Acumulado: 735 examinadas, 704 verificadas y 31 pendientes; 498 preguntas con cambios de contenido. Estados: 201 vigentes, 455 corregidas, 48 históricas y 31 pendientes. Quedan 11.388 sin revisar; siguiente ID 736.
+
+Se documenta como meta histórica el 50 % de servicios públicos disponibles en app móvil que España Digital 2025 fijó para 2025 (731). La meta europea del 80 % de población de 16–74 años con capacidades digitales básicas para 2030 se verifica en la Decisión (UE) 2022/2481 (732). Se distingue el Plan de Digitalización de AAPP del Plan Nacional de Competencias Digitales: App Factory, puesto de trabajo inteligente y SOC pertenecen al primero; el fomento de especialistas TIC aparece como línea del segundo (733). Se atribuyen a Kemly Camacho los enfoques infraestructura/capacitación/uso de recursos y la tipología acceso/uso/calidad del uso, señalando que son marcos concretos y no una clasificación única universal (734–735). No se han cotejado PDFs adicionales de academia ni las posibles correcciones posteriores de las convocatorias en este lote.
+
 ## Lote 082 — 22 de octubre
 
 IDs 726–730: cinco preguntas examinadas y verificadas, dos con estado corregida y tres históricas. Acumulado: 730 examinadas, 699 verificadas y 31 pendientes; 493 preguntas con cambios de contenido. Estados: 201 vigentes, 451 corregidas, 47 históricas y 31 pendientes. Quedan 11.393 sin revisar; siguiente ID 731.
