@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.503 preguntas sin revisión de contenido. Siguiente ID: 621. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.498 preguntas sin revisión de contenido. Siguiente ID: 626. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 620 registros de cambios y las 11.503 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 625 registros de cambios y las 11.498 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -325,3 +325,8 @@ Se precisan los modelos vectorial y probabilístico, se hace explícita la exclu
 IDs 616–620: cinco verificadas y cinco con cambios de contenido. Acumulado: 620 examinadas, 592 verificadas, 28 pendientes y 409 con cambios de contenido. Estados: 180 vigentes, 376 corregidas, 36 históricas y 28 pendientes. Quedan 11.503 sin revisar; siguiente ID 621.
 
 Se elimina la identificación exclusiva por frecuencias del modelo vectorial y se sustituye una afirmación sin fuente sobre la principal línea de investigación por una propiedad concreta de LSI. Se corrige el objetivo de recuperación documental y el significado de antidiccionario. Se diferencia CBT de RCT y se precisa su utilidad para copias incrementales. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 061 — 21 de octubre
+
+IDs 621–625: cinco verificadas y dos con cambios de contenido. Acumulado: 625 examinadas, 597 verificadas, 28 pendientes y 411 con cambios de contenido. Estados: 183 vigentes, 378 corregidas, 36 históricas y 28 pendientes. Quedan 11.498 sin revisar; siguiente ID 626.
+
+Se precisa el modelo probabilístico que aplica Bayes y se elimina una falsa diferencia entre bases documentales y relacionales: estas también pueden indexar texto completo. Se confirman las categorías de consultas web, la precisión y los productos con CMS mediante fuentes primarias. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
