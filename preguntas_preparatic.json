@@ -24191,63 +24191,196 @@
         "Documentos relevantes conocidos recuperados frente a Documentos relevantes conocidos."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La precisión divide los documentos relevantes recuperados entre todos los recuperados. Se mantiene B. Dividir entre todos los relevantes mide exhaustividad.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "precisión",
+        "recuperación-información"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-unranked-retrieval-sets-1.html",
+            "referencia": "Introduction to Information Retrieval, Evaluation of unranked retrieval sets"
+          }
+        ],
+        "observaciones": "La precisión divide los documentos relevantes recuperados entre todos los recuperados. Se mantiene B. Dividir entre todos los relevantes mide exhaustividad."
+      }
     },
     {
       "id": 607,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el contexto de la disponibilidad de la información es FALSO:",
+      "texto": "Respecto a los objetivos de recuperación RPO y RTO, señale la afirmación FALSA:",
       "opciones": [
-        "Un RPO (Recovery Point Objetive) alto minimiza el impacto de un desastre en la organización.",
-        "RTO (Recovery Time Objetive) representa cuánto tarda la restauración desde el incidente hasta que las operaciones normales estén disponibles para los usuarios.",
-        "RPO (Recovery Point Objetive) viene dado por el tiempo desde la última copia de la información.",
-        "RPO (Recovery Point Objetive) define la cantidad máxima permitida de datos perdidos, medidos en el tiempo, desde la ocurrencia de un fallo, hasta la fecha última de backup válido."
+        "Un RPO mayor reduce por sí mismo la pérdida de datos tolerada.",
+        "El RTO fija un objetivo temporal para recuperar el sistema o servicio.",
+        "El RPO establece el punto temporal al que deben recuperarse los datos tras una interrupción.",
+        "Un RPO más reducido exige poder recuperar datos más próximos al momento de la interrupción."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Un RPO mayor admite una ventana mayor de pérdida de datos; no reduce por sí mismo el impacto. RPO y RTO son objetivos, no mediciones automáticas de la última copia ni del tiempo real de restauración. Fuente complementaria: https://csrc.nist.gov/glossary/term/Recovery_Time_Objective",
+      "clasificacion": {
+        "A1": [
+          "A1-56",
+          "A1-128"
+        ],
+        "A2": [
+          "A2-IV-3",
+          "A2-IV-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "RPO",
+        "RTO",
+        "continuidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/recovery_point_objective",
+            "referencia": "NIST, Recovery Point Objective; Recovery Time Objective"
+          }
+        ],
+        "observaciones": "Un RPO mayor admite una ventana mayor de pérdida de datos; no reduce por sí mismo el impacto. RPO y RTO son objetivos, no mediciones automáticas de la última copia ni del tiempo real de restauración. Fuente complementaria: https://csrc.nist.gov/glossary/term/Recovery_Time_Objective"
+      }
     },
     {
       "id": 608,
       "bloque": 0,
       "tema": 0,
-      "texto": "El tipo de indización por descriptores consistente en utilizar técnicas de análisis morfológico y semántico para captar la estructura del texto, se denomina:",
+      "texto": "En el procesamiento lingüístico de documentos, ¿qué análisis identifica la estructura gramatical de las oraciones y relaciones como sujeto y objeto?",
       "opciones": [
-        "Método estadístico",
-        "Método por asignación de los conceptos clave del documento",
-        "Método sintáctico",
-        "Ninguna de las anteriores respuestas es correcta"
+        "Recuento de frecuencias sin analizar relaciones gramaticales.",
+        "Cifrado del contenido.",
+        "Análisis sintáctico.",
+        "Compresión de imágenes."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El análisis sintáctico identifica estructura gramatical, sintagmas y relaciones como sujeto y objeto. Se reemplaza una taxonomía imprecisa que mezclaba morfología y semántica por la función específica del análisis sintáctico.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "análisis-sintáctico",
+        "indización"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/software/lex-parser.shtml",
+            "referencia": "Stanford Parser, About"
+          }
+        ],
+        "observaciones": "El análisis sintáctico identifica estructura gramatical, sintagmas y relaciones como sujeto y objeto. Se reemplaza una taxonomía imprecisa que mezclaba morfología y semántica por la función específica del análisis sintáctico."
+      }
     },
     {
       "id": 609,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los métodos de recuperación de información se basan fundamentalmente en:",
+      "texto": "En recuperación textual basada en términos mediante un índice invertido, ¿qué operación es fundamental?",
       "opciones": [
-        "Manipulación de volúmenes de información muy pequeños",
-        "Identificación de claves (palabras, fragmentos o frases) y su búsqueda en la base de información o ficheros auxiliares",
-        "Tratamiento de información mediante sistemas hipertexto",
-        "Grabación y recuperación de imágenes"
+        "Limitar la colección a unos pocos documentos.",
+        "Relacionar los términos de consulta con las listas de documentos que los contienen.",
+        "Convertir obligatoriamente todos los documentos en imágenes.",
+        "Prescindir de los términos y de cualquier índice."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Un índice invertido relaciona términos con listas de documentos en los que aparecen. Se delimita la pregunta a recuperación textual basada en términos, evitando generalizar esa técnica a todos los sistemas de recuperación.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "índice-invertido",
+        "búsqueda-textual"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/a-first-take-at-building-an-inverted-index-1.html",
+            "referencia": "Introduction to Information Retrieval, A first take at building an inverted index"
+          }
+        ],
+        "observaciones": "Un índice invertido relaciona términos con listas de documentos en los que aparecen. Se delimita la pregunta a recuperación textual basada en términos, evitando generalizar esa técnica a todos los sistemas de recuperación."
+      }
     },
     {
       "id": 610,
       "bloque": 0,
       "tema": 0,
-      "texto": "Se define Índice de pertinencia (un valor entre 0 y 1) como:",
+      "texto": "Para un conjunto no vacío de resultados, definiendo ruido como la proporción de documentos no relevantes entre los recuperados, ¿qué expresión corresponde a la precisión?",
       "opciones": [
-        "la relación entre el número de documentos relevantes recuperados y todos los documentos recuperados en una búsqueda",
-        "la relación entre el número de documentos relevantes recuperados y todos los documentos relevantes de la base de datos en una búsqueda",
-        "1 menos el Ruido",
-        "Son correctas A ý C"
+        "Documentos relevantes recuperados divididos entre todos los documentos recuperados.",
+        "Documentos relevantes recuperados divididos entre todos los documentos relevantes de la colección.",
+        "Uno menos la proporción de ruido.",
+        "Son correctas A y C."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Si los recuperados se dividen en relevantes y no relevantes, precisión y proporción de ruido suman uno. Se exige un conjunto no vacío y se define ruido como proporción, evitando confundirlo con un recuento. Se elimina la etiqueta ambigua índice de pertinencia.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "precisión",
+        "ruido"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-unranked-retrieval-sets-1.html",
+            "referencia": "Introduction to Information Retrieval, precisión; complemento algebraico"
+          }
+        ],
+        "observaciones": "Si los recuperados se dividen en relevantes y no relevantes, precisión y proporción de ruido suman uno. Se exige un conjunto no vacío y se define ruido como proporción, evitando confundirlo con un recuento. Se elimina la etiqueta ambigua índice de pertinencia."
+      }
     },
     {
       "id": 611,

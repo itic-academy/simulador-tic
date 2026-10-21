@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.518 preguntas sin revisión de contenido. Siguiente ID: 606. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.513 preguntas sin revisión de contenido. Siguiente ID: 611. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 28 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 605 registros de cambios y las 11.518 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 610 registros de cambios y las 11.513 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -310,3 +310,8 @@ Se acota el ciclo documental al modelo NARA, se elimina la atribución estadíst
 IDs 601–605: cinco verificadas y cinco con cambios de contenido. Acumulado: 605 examinadas, 577 verificadas, 28 pendientes y 396 con cambios de contenido. Estados: 178 vigentes, 363 corregidas, 36 históricas y 28 pendientes. Quedan 11.518 sin revisar; siguiente ID 606.
 
 Se sustituye la exclusión del análisis morfológico por lematización, se precisa la propiedad de los conjuntos borrosos y se separa deduplicación de disponibilidad. Se elimina un distractor ambiguo sobre lenguajes recuperativos y se define RTO como objetivo de recuperación. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 058 — 21 de octubre
+
+IDs 606–610: cinco verificadas y cuatro con cambios de contenido. Acumulado: 610 examinadas, 582 verificadas, 28 pendientes y 400 con cambios de contenido. Estados: 179 vigentes, 367 corregidas, 36 históricas y 28 pendientes. Quedan 11.513 sin revisar; siguiente ID 611.
+
+Se confirma la precisión y se distingue el objetivo RPO de la antigüedad real de una copia. Se precisa el análisis sintáctico, se acota la búsqueda a índices invertidos y se define la proporción de ruido para expresar su relación con la precisión. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
