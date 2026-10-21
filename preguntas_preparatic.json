@@ -24581,71 +24581,203 @@
       "id": 616,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué técnica de recuperación se basa en la observación de las frecuencias de aparición de términos?",
+      "texto": "¿Qué modelo de recuperación representa documentos y consultas mediante vectores de términos ponderados y puede calcular su similitud mediante el coseno?",
       "opciones": [
-        "Lógica borrosa",
-        "Modelos probabilísticos",
-        "Modelos vectoriales",
-        "Lenguaje natural"
+        "Modelo booleano estricto, basado exclusivamente en operaciones AND, OR y NOT.",
+        "Modelo de independencia binaria, basado en probabilidades de relevancia.",
+        "Modelo vectorial.",
+        "Selección aleatoria de documentos, sin representar términos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La frecuencia de términos también interviene en otros enfoques, por lo que no identifica por sí sola al modelo vectorial. Se concreta la representación mediante vectores ponderados y la similitud coseno; se mantiene C.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "modelo-vectorial",
+        "similitud"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/queries-as-vectors-1.html",
+            "referencia": "Introduction to Information Retrieval, Queries as vectors"
+          }
+        ],
+        "observaciones": "La frecuencia de términos también interviene en otros enfoques, por lo que no identifica por sí sola al modelo vectorial. Se concreta la representación mediante vectores ponderados y la similitud coseno; se mantiene C."
+      }
     },
     {
       "id": 617,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es la principal línea de trabajo en el campo de la recuperación de la información?",
+      "texto": "¿Qué operación caracteriza a la indexación semántica latente (LSI) en recuperación de información?",
       "opciones": [
-        "Aproximaciones semánticas",
-        "Estadísticas",
-        "Las respuestas a) y b) son verdaderas",
-        "Las respuestas a) y b) son falsas"
+        "Ordenar los documentos únicamente por su fecha de creación.",
+        "Cifrar cada documento con la clave pública del usuario.",
+        "Aplicar descomposición en valores singulares (SVD) a la matriz término-documento para obtener una representación de rango reducido.",
+        "Eliminar toda relación entre términos y documentos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La pregunta original no identifica época ni fuente para afirmar cuál es la principal línea de trabajo. Se sustituye por una propiedad comprobable de LSI: usa SVD para obtener una aproximación de rango reducido de la matriz término-documento y representar documentos y consultas en ese espacio.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "indexación-semántica-latente",
+        "SVD"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/latent-semantic-indexing-1.html",
+            "referencia": "Introduction to Information Retrieval, Latent semantic indexing"
+          }
+        ],
+        "observaciones": "La pregunta original no identifica época ni fuente para afirmar cuál es la principal línea de trabajo. Se sustituye por una propiedad comprobable de LSI: usa SVD para obtener una aproximación de rango reducido de la matriz término-documento y representar documentos y consultas en ese espacio."
+      }
     },
     {
       "id": 618,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los sistemas de recuperación de información tienen como objeto fundamental:",
+      "texto": "En búsqueda documental, ¿cuál es el objetivo fundamental de un sistema de recuperación de información?",
       "opciones": [
-        "Recuperación de bases de datos CODASYL y relacionales",
-        "Análisis documental",
-        "Restaurar ficheros y bases de datos pseudo relacionales",
-        "Consultas y modificaciones de bases de datos a través del lenguaje SQL"
+        "Restaurar exclusivamente bases de datos desde copias de seguridad.",
+        "Encontrar documentos o información que satisfagan una necesidad de información del usuario.",
+        "Reparar físicamente discos dañados.",
+        "Modificar obligatoriamente los documentos mediante sentencias SQL."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El objetivo de la recuperación de información es encontrar material que satisfaga una necesidad de información. El análisis documental puede contribuir a ello, pero no equivale al objetivo. Se distingue este sentido de recuperación de la restauración de copias.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "recuperación-de-información"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/boolean-retrieval-1.html",
+            "referencia": "Introduction to Information Retrieval, Boolean retrieval, definición inicial"
+          }
+        ],
+        "observaciones": "El objetivo de la recuperación de información es encontrar material que satisfaga una necesidad de información. El análisis documental puede contribuir a ello, pero no equivale al objetivo. Se distingue este sentido de recuperación de la restauración de copias."
+      }
     },
     {
       "id": 619,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué es un 'antidiccionario'?",
+      "texto": "En indexación documental, ¿qué es un antidiccionario o lista de palabras vacías (stop list)?",
       "opciones": [
         "Un conjunto de palabras de caracterización o palabras clave",
         "Un conjunto de palabras y signos algebraico-matemático que puede encontrarse en los textos",
-        "Un conjunto de palabras vacías de significado (artículos, preposiciones...)",
+        "Una lista de términos que el sistema está configurado para excluir de la indexación.",
         "Un diccionario en orden alfabético inverso"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Un antidiccionario o stop list recoge términos que se decide excluir de la indexación. Su uso es opcional; esos términos no carecen necesariamente de significado y excluirlos puede afectar a consultas de frases. Se corrige esa generalización.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "palabras-vacías",
+        "indexación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/dropping-common-terms-stop-words-1.html",
+            "referencia": "Introduction to Information Retrieval, Dropping common terms: stop words"
+          }
+        ],
+        "observaciones": "Un antidiccionario o stop list recoge términos que se decide excluir de la indexación. Su uso es opcional; esos términos no carecen necesariamente de significado y excluirlos puede afectar a consultas de frases. Se corrige esa generalización."
+      }
     },
     {
       "id": 620,
       "bloque": 0,
       "tema": 0,
-      "texto": "Changed Block Tracking o Resilient Change Tracking:",
+      "texto": "¿Qué función comparten Changed Block Tracking (CBT) de VMware y Resilient Change Tracking (RCT) de Hyper-V en sistemas de copia compatibles?",
       "opciones": [
-        "permite acelerar los tiempos de backups en entornos virtualizados.",
-        "permite reducir los tiempos de recuperación de backups en entornos virtualizados.",
-        "proporciona aislamiento en el backup.",
-        "ninguna de las anteriores."
+        "Registrar bloques modificados de discos virtuales para facilitar copias incrementales eficientes.",
+        "Garantizar por sí solos que toda restauración sea instantánea.",
+        "Aislar automáticamente las copias de cualquier acceso desde la red.",
+        "Sustituir la necesidad de almacenar las copias de seguridad."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "CBT de VMware y RCT de Hyper-V son mecanismos distintos que registran cambios en bloques de discos virtuales y permiten evitar copiar de nuevo todos los datos en copias incrementales compatibles. No garantizan por sí solos menor tiempo de restauración ni aislamiento. Fuente complementaria RCT: https://learn.microsoft.com/en-us/azure/backup/back-up-hyper-v-virtual-machines-mabs",
+      "clasificacion": {
+        "A1": [
+          "A1-56",
+          "A1-132"
+        ],
+        "A2": [
+          "A2-IV-3",
+          "A2-IV-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "copias-incrementales",
+        "CBT",
+        "RCT"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://knowledge.broadcom.com/external/article/320557/changed-block-tracking-cbt-on-virtual-ma.html",
+            "referencia": "Broadcom, Changed Block Tracking; Microsoft, Back up Hyper-V virtual machines with MABS"
+          }
+        ],
+        "observaciones": "CBT de VMware y RCT de Hyper-V son mecanismos distintos que registran cambios en bloques de discos virtuales y permiten evitar copiar de nuevo todos los datos en copias incrementales compatibles. No garantizan por sí solos menor tiempo de restauración ni aislamiento. Fuente complementaria RCT: https://learn.microsoft.com/en-us/azure/backup/back-up-hyper-v-virtual-machines-mabs"
+      }
     },
     {
       "id": 621,
