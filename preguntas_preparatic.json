@@ -25181,57 +25181,160 @@
       "id": 631,
       "bloque": 0,
       "tema": 0,
-      "texto": "El método de recuperación de la información basado en ficheros auxiliares de términos (claves o índices de palabras) o ficheros de apuntadores (referencias de los documentos base) es propio de:",
+      "texto": "¿Qué estructura de indexación combina un diccionario de términos con listas de referencias a los documentos que contienen cada término?",
       "opciones": [
-        "Modelo booleano",
-        "Indexación y recuperación automática vectorial",
-        "Índices invertidos",
-        "Retroalimentación"
+        "Una cola de impresión.",
+        "Una tabla de claves criptográficas.",
+        "Un índice invertido.",
+        "Un registro de sesiones de usuario."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Un índice invertido contiene un diccionario de términos y listas de referencias a los documentos donde aparecen. Se pregunta por la estructura, pues tanto modelos booleanos como vectoriales pueden utilizarla; no es un modelo de relevancia alternativo a ellos.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "índice-invertido"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/a-first-take-at-building-an-inverted-index-1.html",
+            "referencia": "Introduction to Information Retrieval, A first take at building an inverted index"
+          }
+        ],
+        "observaciones": "Un índice invertido contiene un diccionario de términos y listas de referencias a los documentos donde aparecen. Se pregunta por la estructura, pues tanto modelos booleanos como vectoriales pueden utilizarla; no es un modelo de relevancia alternativo a ellos."
+      }
     },
     {
       "id": 632,
       "bloque": 0,
       "tema": 0,
-      "texto": "En qué supuesto será el mirroring o la duplicación de datos la estrategia de recuperación más aconsejable en caso de desastre:",
+      "texto": "¿Qué requisito justifica evaluar replicación frecuente de datos hacia un entorno de recuperación, verificando que su retraso sea compatible con el objetivo?",
       "opciones": [
-        "Cuando el SDO (Objetivo de Entrega de Servicio) es inferior al SDO habitual.",
-        "Cuando la pérdida de datos es aceptable.",
-        "Cuando el RPO (Objetivo de Punto de Recuperación) está en minutos.",
-        "Cuando el negocio puede aceptar indisponibilidad de servicios de TI."
+        "Que el tamaño de las pantallas sea idéntico en ambas sedes.",
+        "Que cualquier cantidad de datos perdidos sea aceptable.",
+        "Que el RPO limite la pérdida aceptable a unos pocos minutos de datos.",
+        "Que no exista ninguna necesidad de recuperar los datos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La replicación hacia un entorno preparado puede permitir objetivos de recuperación de minutos, pero no es universalmente la mejor estrategia por un único valor de RPO. Se explicita el límite de pérdida de datos y la necesidad de comprobar el retraso de replicación; la selección también depende de costes, distancia y RTO.",
+      "clasificacion": {
+        "A1": [
+          "A1-128",
+          "A1-132"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "RPO",
+        "replicación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://cloud.ibm.com/docs/resiliency?topic=resiliency-understanding-dr",
+            "referencia": "IBM Cloud, Understanding disaster recovery, Minimal operation"
+          }
+        ],
+        "observaciones": "La replicación hacia un entorno preparado puede permitir objetivos de recuperación de minutos, pero no es universalmente la mejor estrategia por un único valor de RPO. Se explicita el límite de pérdida de datos y la necesidad de comprobar el retraso de replicación; la selección también depende de costes, distancia y RTO."
+      }
     },
     {
       "id": 633,
       "bloque": 0,
       "tema": 0,
-      "texto": "El elemento dentro de un Sistema de Recuperación de la Información que facilita eliminar información irrelevante desde el punto de vista del ordenamiento y la búsqueda y que se realiza durante la fase de ingreso del documento en el sistema, se denomina:",
+      "texto": "En un sistema configurado para excluir determinados términos durante la indexación de documentos, ¿qué recurso enumera esos términos?",
       "opciones": [
-        "Taxonomía.",
-        "Tesauro.",
-        "Descriptor o Signatura.",
-        "Lista de palabras vacías."
+        "Taxonomía de categorías temáticas.",
+        "Tesauro de relaciones semánticas.",
+        "Signatura de localización del documento.",
+        "Lista de palabras vacías (stop list)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La lista de palabras vacías permite excluir términos durante la indexación si así se configura. No elimina universalmente información irrelevante: las palabras excluidas pueden ser significativas en frases. Se precisa la operación y su carácter opcional.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "palabras-vacías"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/dropping-common-terms-stop-words-1.html",
+            "referencia": "Introduction to Information Retrieval, Dropping common terms: stop words"
+          }
+        ],
+        "observaciones": "La lista de palabras vacías permite excluir términos durante la indexación si así se configura. No elimina universalmente información irrelevante: las palabras excluidas pueden ser significativas en frases. Se precisa la operación y su carácter opcional."
+      }
     },
     {
       "id": 634,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto de los sistemas de recuperación de información indicar la respuesta CORRECTA:",
+      "texto": "¿Qué afirmación sobre búsqueda y navegación exploratoria (browsing) en recuperación de información es correcta?",
       "opciones": [
-        "Cuando el usuario trata de localizar información útil, está llevando a cabo un ojeo (browsing).",
-        "Cuando el usuario esté interesado en un tema inherentemente amplio o que no tiene claramente definido, la interacción con el sistema suele realizarse mediante acciones de búsqueda (retrieval) en lugar de mediante técnicas de ojeo (browsing).",
-        "Los sistemas clásicos de Recuperación de Información están orientados en su mayoría a las acciones de búsqueda, mientras que los sistemas basados en hipertextos se ajustan habitualmente a permitir un ojeo rápido.",
-        "Los sistemas modernos y los buscadores Web solo utilizan acciones de ojeo (browsing) para proporcionar capacidades de recuperación de información mejoradas."
+        "Toda búsqueda de información útil es necesariamente browsing.",
+        "La navegación exploratoria exige conocer de antemano una consulta exacta.",
+        "La navegación por grupos de documentos puede ayudar cuando no se tienen claros los términos de búsqueda y puede combinarse con consultas.",
+        "Los buscadores web solo permiten browsing y no consultas."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La navegación por grupos facilita explorar colecciones cuando el usuario no tiene claros los términos de consulta. Puede combinarse con búsqueda; el capítulo muestra navegación por agrupaciones de resultados. Se sustituye una generalización histórica por esta relación concreta.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "browsing",
+        "búsqueda"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/clustering-in-information-retrieval-1.html",
+            "referencia": "Introduction to Information Retrieval, Clustering in information retrieval"
+          }
+        ],
+        "observaciones": "La navegación por grupos facilita explorar colecciones cuando el usuario no tiene claros los términos de consulta. Puede combinarse con búsqueda; el capítulo muestra navegación por agrupaciones de resultados. Se sustituye una generalización histórica por esta relación concreta."
+      }
     },
     {
       "id": 635,
@@ -25244,7 +25347,27 @@
         "menos eficaces que las basadas en sistemas booleanos tradicionales"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "normas-gamma"
+      ],
+      "revision": {
+        "estado": "pendiente_fuente",
+        "fecha": "2026-10-21",
+        "fuentes": [],
+        "observaciones": "No se ha localizado una fuente primaria que defina Normas Gamma en este contexto y confirme la opción B. Se buscaron las expresiones exactas normas gamma con información y gamma norms con retrieval, sin obtener una definición pertinente. Falta identificar autor, publicación o denominación original en el temario de academia. Se conservan enunciado y clave sin certificarlos; no se equipara por conjetura a ponderación vectorial ni a códigos gamma de compresión."
+      }
     },
     {
       "id": 636,
