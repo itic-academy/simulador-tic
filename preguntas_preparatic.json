@@ -28027,71 +28027,206 @@
       "id": 701,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el UML, ¿cómo se muestra la 'agregación compuesta' en el extremo correspondiente al compuesto?",
+      "texto": "En UML 2.5.1, ¿qué símbolo se coloca en el extremo del compuesto para representar una asociación de composición?",
       "opciones": [
-        "Punta de flecha sombreada.",
-        "Punta de flecha en blanco.",
-        "Diamante sombreado.",
-        "Asterisco."
+        "Una punta de flecha rellena.",
+        "Una punta de flecha abierta.",
+        "Un diamante relleno.",
+        "Un asterisco."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene C. UML distingue la agregación compartida, representada con diamante vacío, de la composición, cuyo extremo agregado lleva un diamante relleno; el rombo se coloca en el extremo del compuesto.",
+      "clasificacion": {
+        "A1": [
+          "A1-88"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UML",
+        "composición",
+        "agregación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+            "referencia": "OMG UML 2.5.1, notación de asociaciones: la composición utiliza un diamante relleno en el extremo del compuesto"
+          }
+        ],
+        "observaciones": "Se mantiene C. UML distingue la agregación compartida, representada con diamante vacío, de la composición, cuyo extremo agregado lleva un diamante relleno; el rombo se coloca en el extremo del compuesto."
+      }
     },
     {
       "id": 702,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el ámbito de los patrones de diseño, ¿qué es un singleton?",
+      "texto": "En los patrones de diseño GoF, ¿qué caracteriza esencialmente a Singleton?",
       "opciones": [
-        "Un objeto del que obtenemos referencias a otros.",
-        "Un objeto del que sólo existe una instancia.",
-        "Un objeto que adapta las llamadas a otro y actúa como intermediario.",
-        "Una clase que no se puede instanciar."
+        "Un objeto que proporciona referencias a otros objetos.",
+        "Una clase que garantiza una única instancia y ofrece un punto de acceso a ella.",
+        "Un objeto adaptador que traduce llamadas a otro componente.",
+        "Una clase abstracta que no puede instanciarse directamente."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene B. El patrón Singleton garantiza una única instancia de la clase y proporciona un punto de acceso conocido a ella; “objeto del que existe una sola instancia” es la opción que identifica su propiedad esencial, aunque la descripción completa incluye el acceso.",
+      "clasificacion": {
+        "A1": [
+          "A1-88"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "singleton",
+        "patrones-diseño",
+        "orientación-objetos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://www.oreilly.com/library/view/the-design-patterns/9781628256581/chapter32.xhtml",
+            "referencia": "Gamma, Helm, Johnson y Vlissides, Design Patterns (1994), intención del patrón Singleton: una instancia y un punto de acceso conocido"
+          }
+        ],
+        "observaciones": "Se mantiene B. El patrón Singleton garantiza una única instancia de la clase y proporciona un punto de acceso conocido a ella; “objeto del que existe una sola instancia” es la opción que identifica su propiedad esencial, aunque la descripción completa incluye el acceso."
+      }
     },
     {
       "id": 703,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la respuesta incorrecta: el principio de 'ocultamiento de la información'...",
+      "texto": "Señale la afirmación incorrecta sobre el ocultamiento de información en el diseño de software:",
       "opciones": [
-        "Permite acceder a componentes software a través de sus interfaces.",
-        "Está contemplado en un diseño orientado a objetos.",
-        "No está contemplado en un diseño de tipo estructurado.",
-        "Impide conocer cómo se han desarrollado los componentes software."
+        "Permite utilizar componentes mediante interfaces que ocultan detalles internos.",
+        "Es aplicable al diseño orientado a objetos.",
+        "No puede aplicarse en un diseño modular de tipo estructurado.",
+        "Busca que los clientes de un módulo no dependan de sus decisiones internas de implementación."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene C como la afirmación incorrecta. El ocultamiento de información es un criterio de modularización general, no exclusivo del diseño orientado a objetos; Parnas lo expuso al comparar descomposiciones modulares convencionales y alternativas. Los módulos ofrecen interfaces y ocultan decisiones de implementación.",
+      "clasificacion": {
+        "A1": [
+          "A1-88"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ocultamiento-información",
+        "modularidad",
+        "Parnas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1145/361598.361623",
+            "referencia": "D. L. Parnas, “On the Criteria to Be Used in Decomposing Systems into Modules”, Communications of the ACM (1972)"
+          }
+        ],
+        "observaciones": "Se mantiene C como la afirmación incorrecta. El ocultamiento de información es un criterio de modularización general, no exclusivo del diseño orientado a objetos; Parnas lo expuso al comparar descomposiciones modulares convencionales y alternativas. Los módulos ofrecen interfaces y ocultan decisiones de implementación."
+      }
     },
     {
       "id": 704,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la respuesta correcta: Métrica V3 tiene un enfoque...",
+      "texto": "¿Qué enfoque metodológico caracteriza a MÉTRICA versión 3?",
       "opciones": [
-        "Orientado al proceso.",
-        "Orientado a objetos.",
-        "Estructurado.",
-        "Orientado a prototipos."
+        "Orientado a procesos, con procesos, actividades, tareas y productos.",
+        "Orientado exclusivamente a objetos.",
+        "Basado únicamente en análisis y diseño estructurado, sin contemplar objetos.",
+        "Orientado exclusivamente a la construcción de prototipos."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene A: MÉTRICA versión 3 tiene un enfoque orientado a procesos. Su estructura organiza procesos, actividades, tareas y productos, y adapta la selección de procesos al proyecto.",
+      "clasificacion": {
+        "A1": [
+          "A1-95"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Métrica-v3",
+        "orientación-procesos",
+        "metodologías"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A0f07660d-1044-489e-a3be-3a94b80fbb16/METRICA_V3_Gestion_de_Proyectos.pdf",
+            "referencia": "Portal de Administración Electrónica, MÉTRICA v3: estructura en procesos, actividades y tareas"
+          }
+        ],
+        "observaciones": "Se mantiene A: MÉTRICA versión 3 tiene un enfoque orientado a procesos. Su estructura organiza procesos, actividades, tareas y productos, y adapta la selección de procesos al proyecto."
+      }
     },
     {
       "id": 705,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes actividades no se incluye en la fase de mantenimiento de software?",
+      "texto": "En el ciclo de vida del software, ¿cuál de estas actividades corresponde a la definición inicial del sistema y no a su mantenimiento?",
       "opciones": [
-        "Mejoras de las capacidades.",
-        "Eliminación de funciones obsoletas.",
-        "Optimización.",
-        "Validación de requisitos."
+        "Mejorar capacidades existentes mediante mantenimiento perfectivo.",
+        "Retirar o sustituir funciones que han quedado obsoletas.",
+        "Optimizar el software desplegado.",
+        "Validar por primera vez los requisitos del sistema antes de iniciar su desarrollo."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se mantiene D y se acota el enunciado a la validación inicial de requisitos antes del desarrollo. MÉTRICA v3 incluye en mantenimiento analizar peticiones, preparar modificaciones, ejecutar pruebas de regresión y aceptar cambios; la validación inicial de requisitos pertenece a la definición del sistema, aunque los requisitos puedan cambiar y revisarse durante el mantenimiento.",
+      "clasificacion": {
+        "A1": [
+          "A1-101"
+        ],
+        "A2": [
+          "A2-III-1"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "mantenimiento-software",
+        "Métrica-v3",
+        "ciclo-de-vida"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ae15c0c5b-dd9c-4e48-82e3-9e36ba18e839/METRICA_V3_Mantenimiento_de_Sistemas_de_Informacion.pdf",
+            "referencia": "Portal de Administración Electrónica, MÉTRICA v3, proceso MSI; ISO/IEC/IEEE 14764:2022, proceso de mantenimiento"
+          }
+        ],
+        "observaciones": "Se mantiene D y se acota el enunciado a la validación inicial de requisitos antes del desarrollo. MÉTRICA v3 incluye en mantenimiento analizar peticiones, preparar modificaciones, ejecutar pruebas de regresión y aceptar cambios; la validación inicial de requisitos pertenece a la definición del sistema, aunque los requisitos puedan cambiar y revisarse durante el mantenimiento."
+      }
     },
     {
       "id": 706,

@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.423 preguntas sin revisión de contenido. Siguiente ID: 701. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.418 preguntas sin revisión de contenido. Siguiente ID: 706. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -413,3 +413,9 @@ Se distinguen los tipos MIME de ODF y OOXML conforme a OASIS e IANA (691); la at
 IDs 696–700: cinco examinadas, cuatro verificadas y una pendiente de ambigüedad. Acumulado: 700 examinadas, 669 verificadas y 31 pendientes; 463 preguntas con cambios de contenido. Estados: 201 vigentes, 428 corregidas, 40 históricas y 31 pendientes. Quedan 11.423 sin revisar; siguiente ID 701.
 
 Se precisa que el resumen hash de longitud fija sirve para comprobar integridad solo comparándolo con un valor confiable o protegiéndolo mediante firma/MAC (696). El CSV se delimita como posible sistema de firma en las condiciones de la Ley 40/2015 y el RD 203/2021 (697). Se descarta que FNMT sea el único proveedor, conforme a las listas de confianza previstas en la Ley 6/2020 (698). El modelo en cascada se acota como modelo secuencial clásico con requisitos definidos antes de cerrar el diseño, considerando la realimentación que ya contempla Royce (699). El contenido de un “Plan de Sistemas” no tiene definición inequívoca en el enunciado ni se ha localizado aún el marco de academia que originó la pregunta 700; se conserva sin validar y queda pendiente de cotejo.
+
+## Lote 077 — 21 de octubre
+
+IDs 701–705: cinco verificadas, todas con cambios de contenido. Acumulado: 705 examinadas, 674 verificadas y 31 pendientes; 468 preguntas con cambios de contenido. Estados: 201 vigentes, 433 corregidas, 40 históricas y 31 pendientes. Quedan 11.418 sin revisar; siguiente ID 706.
+
+Se contrasta la notación de composición UML con la especificación OMG (701), y la definición canónica de Singleton con el texto de GoF (702). El ocultamiento de información se documenta como criterio modular aplicable también al diseño estructurado (703). La documentación oficial de MÉTRICA v3 confirma su enfoque por procesos (704). Se distingue la definición inicial y validación de requisitos de las tareas de mantenimiento según MÉTRICA MSI, que sí contempla análisis de peticiones, pruebas de regresión y aceptación de cambios (705). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote.
