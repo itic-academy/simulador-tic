@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.453 preguntas sin revisión de contenido. Siguiente ID: 671. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 29 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.448 preguntas sin revisión de contenido. Siguiente ID: 676. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 29 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 670 registros de cambios y las 11.453 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 675 registros de cambios y las 11.448 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -377,3 +377,9 @@ Se confirma el plazo del certificado de silencio, se precisa la denominación de
 IDs 666–670: cinco verificadas y tres con cambios de contenido. Acumulado: 670 examinadas, 641 verificadas, 29 pendientes y 441 con cambios de contenido. Estados: 197 vigentes, 408 corregidas, 36 históricas y 29 pendientes. Quedan 11.453 sin revisar; siguiente ID 671.
 
 Se matiza el desperdicio eliminable en Lean y se reemplaza una afirmación universal sobre inexistencia de herramientas por una propiedad documentada de axe-core. Se identifica la versión del logotipo WCAG y se confirma su carácter de declaración del proveedor. Se contrastan la resolución mínima de digitalización y los campos obligatorios y opcionales del índice electrónico. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+
+## Lote 071 — 21 de octubre
+
+IDs 671–675: cinco examinadas, cuatro verificadas y una histórica con contexto. Acumulado: 675 examinadas, 641 verificadas, 29 pendientes y 445 con cambios de contenido. Estados: 198 vigentes, 411 corregidas, 37 históricas y 29 pendientes. Quedan 11.448 sin revisar; siguiente ID 676.
+
+Se contrasta la clasificación ENS del marco operacional, se contextualiza STORK como proyecto concluido, y se actualiza la interoperabilidad registral desde SICRES 3.0 a la NTI SICRES 4.0 con conexión certificada a SIR. Se delimitan las versiones W3C y OASIS en los estándares de servicios web y se aclara que no todo RFC constituye un estándar de Internet. Los conteos de revisión reflejan el estado corregido de STORK como histórica. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
