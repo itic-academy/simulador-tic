@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.418 preguntas sin revisión de contenido. Siguiente ID: 706. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.413 preguntas sin revisión de contenido. Siguiente ID: 711. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -419,3 +419,9 @@ Se precisa que el resumen hash de longitud fija sirve para comprobar integridad 
 IDs 701–705: cinco verificadas, todas con cambios de contenido. Acumulado: 705 examinadas, 674 verificadas y 31 pendientes; 468 preguntas con cambios de contenido. Estados: 201 vigentes, 433 corregidas, 40 históricas y 31 pendientes. Quedan 11.418 sin revisar; siguiente ID 706.
 
 Se contrasta la notación de composición UML con la especificación OMG (701), y la definición canónica de Singleton con el texto de GoF (702). El ocultamiento de información se documenta como criterio modular aplicable también al diseño estructurado (703). La documentación oficial de MÉTRICA v3 confirma su enfoque por procesos (704). Se distingue la definición inicial y validación de requisitos de las tareas de mantenimiento según MÉTRICA MSI, que sí contempla análisis de peticiones, pruebas de regresión y aceptación de cambios (705). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote.
+
+## Lote 078 — 22 de octubre
+
+IDs 706–710: cinco examinadas y verificadas, con dos correcciones y tres referencias históricas contextualizadas. Acumulado: 710 examinadas, 679 verificadas y 31 pendientes; 473 preguntas con cambios de contenido. Estados: 201 vigentes, 435 corregidas, 43 históricas y 31 pendientes. Quedan 11.413 sin revisar; siguiente ID 711.
+
+Se delimita EFQM a la edición 2013: además de sus nueve criterios, admitía autoevaluación y no se basaba exclusivamente en evaluación externa; la pregunta se etiqueta histórica frente a las guías EFQM 2020/2025 (706). Se confirma que LLC y MAC son subcapas de enlace de datos (707), y se precisa el papel de ingreso/egreso de los LER de MPLS (708). IEEE 802.11i-2004 se registra como enmienda histórica de seguridad posteriormente sustituida (709). En 802.16-2004 se acotan las PHY OFDM/OFDMA, las cargas MAC de longitud variable y la capacidad de funcionamiento NLOS, lo que invalida la exigencia absoluta de línea de visión (710). No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de convocatorias en este lote.
