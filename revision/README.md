@@ -28,11 +28,11 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.438 preguntas sin revisión de contenido. Siguiente ID: 686. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 29 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.428 preguntas sin revisión de contenido. Siguiente ID: 696. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 30 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
-Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489 y 635. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105 y 111. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
+Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635 y 692. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105 y 111. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
 
 Correcciones destacadas de esta continuación: LDAP (64) contenía dos respuestas defendibles; Java static (79) cambia la respuesta correcta de A a B; la fecha del artículo 6.d de la Orden ETD/465/2021 (89) pasa a 1 de marzo de 2023 conforme a la modificación de 2022; WebAssembly (98) admite ejecución fuera del navegador; Data Act (100) se actualiza a su aplicación general desde septiembre de 2025. Se conservan los originales completos.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 685 registros de cambios y las 11.438 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 695 registros de cambios y las 11.428 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -401,3 +401,9 @@ Se confirma WHEN OTHERS en PL/SQL, se acotan los atributos de jQuery Mobile 1.4 
 IDs 686–690: cinco examinadas, dos verificadas como vigentes, una corregida y dos históricas contextualizadas. Acumulado: 690 examinadas, 661 verificadas y 29 pendientes; 455 preguntas con cambios de contenido. Estados: 202 vigentes, 420 corregidas, 40 históricas y 29 pendientes. Quedan 11.433 sin revisar; siguiente ID 691.
 
 Se concreta la secuencia de niveles estándar de Log4j 2 y se distingue gravedad de detalle. Se acotan los EJB al contenedor de negocio y los servlets al contenedor web en la arquitectura Java EE/J2EE; se marca esa nomenclatura como histórica. Apache Struts mantiene el patrón MVC, aunque la denominación Struts 2 corresponde a una generación anterior. Se corrige la errata de «corno» y se delimita la pregunta sobre bytecode PHP: OPcache, APC y versiones antiguas de WinCache se contrastan con sus fuentes, mientras que Memcached es un almacén genérico de objetos y valores; los cambios de versión se registran como contexto histórico. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+
+## Lote 075 — 21 de octubre
+
+IDs 691–695: cinco examinadas, cuatro verificadas y una pendiente de fuente. Acumulado: 695 examinadas, 665 verificadas y 30 pendientes; 459 preguntas con cambios de contenido. Estados: 201 vigentes, 424 corregidas, 40 históricas y 30 pendientes. Quedan 11.428 sin revisar; siguiente ID 696.
+
+Se distinguen los tipos MIME de ODF y OOXML conforme a OASIS e IANA (691); la atribución a «ePupil» queda pendiente al no localizar respaldo primario, sin dar por cierta su inexistencia (692). Se separan los datos vectoriales de los ráster (693) y se acota la función del almacén de datos en una arquitectura clásica de BI (694). XML puede almacenarse en tipos nativos de bases de datos, conforme a W3C y la documentación de Microsoft (695). No se han estudiado nuevos PDFs de academia ni cotejado las posibles correcciones posteriores de las convocatorias.
