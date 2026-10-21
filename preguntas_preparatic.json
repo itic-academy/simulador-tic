@@ -24386,29 +24386,81 @@
       "id": 611,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los métodos vectoriales y probabilísticos de recuperación de información se basan:",
+      "texto": "¿Qué asociación describe correctamente el modelo vectorial y el modelo probabilístico de independencia binaria, respectivamente?",
       "opciones": [
-        "Álgebra de Boole y frecuencia de términos respectivamente",
-        "Sistemas de retroalimentación y lenguaje natural respectivamente",
-        "Indexación y recuperación vectorial",
-        "Frecuencia de aparición de términos y teorema de Bayes"
+        "Cifrado de documentos y compresión de imágenes.",
+        "Ordenación por fecha y eliminación de términos.",
+        "Ausencia de representación documental en ambos casos.",
+        "Comparación de vectores de términos y estimación de probabilidades de relevancia mediante Bayes."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "El modelo vectorial compara representaciones de consultas y documentos; el modelo de independencia binaria estima probabilidades de relevancia aplicando Bayes. Se evita reducir todos los modelos vectoriales a frecuencia bruta. Fuente complementaria: https://nlp.stanford.edu/IR-book/html/htmledition/the-binary-independence-model-1.html",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "modelo-vectorial",
+        "modelo-probabilístico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/queries-as-vectors-1.html",
+            "referencia": "Introduction to Information Retrieval, Queries as vectors y The Binary Independence Model"
+          }
+        ],
+        "observaciones": "El modelo vectorial compara representaciones de consultas y documentos; el modelo de independencia binaria estima probabilidades de relevancia aplicando Bayes. Se evita reducir todos los modelos vectoriales a frecuencia bruta. Fuente complementaria: https://nlp.stanford.edu/IR-book/html/htmledition/the-binary-independence-model-1.html"
+      }
     },
     {
       "id": 612,
       "bloque": 0,
       "tema": 0,
-      "texto": "En informática, el término de recuperación en texto libre se utiliza para describir:",
+      "texto": "En un sistema de búsqueda en texto completo configurado para excluir una lista de palabras vacías durante la indexación, ¿qué ocurre con los términos de esa lista?",
       "opciones": [
-        "La recuperación en un base de datos que posee índices asociados",
-        "La recuperación en un base de datos que almacena el texto íntegro, y donde cada palabra del texto es indexada",
-        "La recuperación en un base de datos que almacena el texto íntegro y carece de índices",
-        "La recuperación en un base de datos que almacena el texto íntegro, y donde cada palabra del texto es indexada, a excepción de las contenidas en el diccionario de palabras vacías"
+        "Son los únicos que se incorporan al índice.",
+        "Se indexan obligatoriamente pese a la configuración.",
+        "Se elimina todo el documento si contiene cualquiera de ellos.",
+        "Se excluyen del índice de términos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Excluir palabras vacías es opcional y depende del sistema. Se explicita una configuración con lista de exclusión para mantener D sin presentarla como requisito universal de la búsqueda en texto completo.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "texto-completo",
+        "palabras-vacías"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/dropping-common-terms-stop-words-1.html",
+            "referencia": "Introduction to Information Retrieval, Dropping common terms: stop words"
+          }
+        ],
+        "observaciones": "Excluir palabras vacías es opcional y depende del sistema. Se explicita una configuración con lista de exclusión para mantener D sin presentarla como requisito universal de la búsqueda en texto completo."
+      }
     },
     {
       "id": 613,
@@ -24420,35 +24472,110 @@
         "Se pueden usar pilas para trabajar con operaciones aritméticas en notación postfix"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Una pila permite evaluar expresiones postfix: se apilan operandos y se extraen al aplicar operadores. Se mantiene B. Su disciplina es LIFO, no FIFO. No se asigna un tema A1 directo sin correspondencia específica.",
+      "clasificacion": {
+        "A1": [],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "pilas",
+        "postfix"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://introcs.cs.princeton.edu/java/43stack/EvaluatePostfix.java.html",
+            "referencia": "Sedgewick y Wayne, EvaluatePostfix, Stacks and Queues"
+          }
+        ],
+        "observaciones": "Una pila permite evaluar expresiones postfix: se apilan operandos y se extraen al aplicar operadores. Se mantiene B. Su disciplina es LIFO, no FIFO. No se asigna un tema A1 directo sin correspondencia específica."
+      }
     },
     {
       "id": 614,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes no es un modelo clásico de recuperación de información?",
+      "texto": "¿Qué enfoque de recuperación de información combina condiciones sobre el contenido documental y sobre su estructura?",
       "opciones": [
-        "Probabilístico",
-        "Estructurado",
-        "Vectorial",
-        "Booleano"
+        "Búsqueda exclusivamente por coincidencia de palabras, ignorando toda estructura.",
+        "Recuperación estructurada.",
+        "Ordenación exclusivamente por tamaño del archivo.",
+        "Selección aleatoria de documentos."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La recuperación estructurada permite combinar condiciones de contenido y estructura documental. Se sustituye una clasificación no atribuida de clásico por esa característica explícita; Proximal Nodes constituye un ejemplo.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "recuperación-estructurada"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://users.dcc.uchile.cl/~gnavarro/ps/tois97.pdf",
+            "referencia": "Navarro y Baeza-Yates, Proximal Nodes, resumen"
+          }
+        ],
+        "observaciones": "La recuperación estructurada permite combinar condiciones de contenido y estructura documental. Se sustituye una clasificación no atribuida de clásico por esa característica explícita; Proximal Nodes constituye un ejemplo."
+      }
     },
     {
       "id": 615,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de las siguientes opciones corresponde a un modelo o técnica de recuperación de la información:",
+      "texto": "¿Qué modelo clásico representa documentos y consultas como vectores de términos y puede compararlos mediante similitud coseno?",
       "opciones": [
         "Modelo vectorial.",
-        "Modelo conceptual.",
-        "Modelo de Borh.",
-        "Modelo empírico."
+        "Modelo atómico de Bohr.",
+        "Modelo de colas M/M/1.",
+        "Modelo de color RGB."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El modelo vectorial representa consultas y documentos mediante vectores y puede usar similitud coseno. Se precisa esta propiedad para evitar que etiquetas genéricas como modelo conceptual o empírico funcionen como distractores ambiguos.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "modelo-vectorial",
+        "similitud"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/queries-as-vectors-1.html",
+            "referencia": "Introduction to Information Retrieval, Queries as vectors"
+          }
+        ],
+        "observaciones": "El modelo vectorial representa consultas y documentos mediante vectores y puede usar similitud coseno. Se precisa esta propiedad para evitar que etiquetas genéricas como modelo conceptual o empírico funcionen como distractores ambiguos."
+      }
     },
     {
       "id": 616,
