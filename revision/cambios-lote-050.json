@@ -1,0 +1,293 @@
+{
+  "fecha": "2026-10-21",
+  "alcance": "IDs 566–570; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 566,
+      "original": {
+        "id": 566,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes afirmaciones es falsa respecto a Linux?",
+        "opciones": [
+          "Está constituido por un núcleo Kernel, y cada usuario debe construirse las librerías y programas para poderlo utilizar",
+          "Es un sistema operativo compatible con Unix",
+          "Es software libre",
+          "El sistema viene acompañado del código fuente"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 566,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación sobre la instalación de software en Debian GNU/Linux es falsa?",
+        "opciones": [
+          "Cada usuario debe compilar obligatoriamente todas sus bibliotecas y aplicaciones.",
+          "Existen imágenes binarias con programas precompilados.",
+          "Se ofrecen también imágenes con código fuente.",
+          "Los programas precompilados permiten instalar software sin compilarlo personalmente."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Debian ofrece imágenes binarias con programas precompilados y también imágenes de fuentes. Usar GNU/Linux no exige que cada usuario compile sus bibliotecas y aplicaciones. Se evita afirmar que toda descarga binaria lleva físicamente el código fuente adjunto.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "distribuciones",
+          "software-libre"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://www.debian.org/CD/faq/",
+              "referencia": "Debian, Frequently Asked Questions about CD/DVD/USB images"
+            }
+          ],
+          "observaciones": "Debian ofrece imágenes binarias con programas precompilados y también imágenes de fuentes. Usar GNU/Linux no exige que cada usuario compile sus bibliotecas y aplicaciones. Se evita afirmar que toda descarga binaria lleva físicamente el código fuente adjunto."
+        }
+      }
+    },
+    {
+      "id": 567,
+      "original": {
+        "id": 567,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Unix la gestión de procesos se realiza:",
+        "opciones": [
+          "Cuanta más CPU ha consumido un proceso mayor se hace su prioridad, ya que se considera que debe ser uno de los procesos principales del sistema",
+          "Existe una única cola de procesos. La prioridad se asigna según el orden de llegada de los mismos",
+          "El mecanismo de planificación funciona mediante un timeout que ordena a un driver llamar a una subrutina del kernel cuando ha transcurrido un determinado tiempo",
+          "El scheduler asigna rodajas de tiempo (time slicers) a los distintos procesos. La duración de cada rodaja es variable según la prioridad que tenga asignada el proceso"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 567,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Linux, ¿qué sucede cuando un hilo ejecutado con SCHED_RR agota su quantum y continúa listo para ejecutarse?",
+        "opciones": [
+          "Su prioridad aumenta automáticamente por haber consumido CPU.",
+          "Se elimina definitivamente de las colas de planificación.",
+          "Se convierte automáticamente en un hilo SCHED_FIFO.",
+          "Pasa al final de la lista de hilos de su misma prioridad."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "En SCHED_RR, al agotar el quantum un hilo pasa al final de la lista de su prioridad. Se concreta esta política de Linux: no existe una regla universal de rodajas variables por prioridad para todo UNIX y todas sus clases de planificación.",
+        "clasificacion": {
+          "A1": [
+            "A1-59",
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "planificacion",
+          "SCHED_RR"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://man7.org/linux/man-pages/man7/sched.7.html",
+              "referencia": "Linux man-pages, sched(7), SCHED_RR"
+            }
+          ],
+          "observaciones": "En SCHED_RR, al agotar el quantum un hilo pasa al final de la lista de su prioridad. Se concreta esta política de Linux: no existe una regla universal de rodajas variables por prioridad para todo UNIX y todas sus clases de planificación."
+        }
+      }
+    },
+    {
+      "id": 568,
+      "original": {
+        "id": 568,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes no es una versión propietaria del sistema operativo Unix?",
+        "opciones": [
+          "HP-UX",
+          "Solaris",
+          "IRIX",
+          "Todas las anteriores lo son"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 568,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes núcleos se distribuye bajo GPL versión 2 únicamente, con la excepción de llamadas al sistema documentada?",
+        "opciones": [
+          "El núcleo de HP-UX.",
+          "El núcleo propietario de Oracle Solaris.",
+          "El núcleo de IRIX.",
+          "El núcleo Linux."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El núcleo Linux se distribuye bajo GPL versión 2 únicamente, con la excepción de llamadas al sistema documentada. Se sustituye la clasificación genérica de familias UNIX por una pregunta de licencia concreta, evitando confundir Solaris con OpenSolaris o componentes libres incluidos en productos comerciales.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "licencias",
+          "Linux"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://docs.kernel.org/6.9/process/license-rules.html",
+              "referencia": "Linux kernel licensing rules"
+            }
+          ],
+          "observaciones": "El núcleo Linux se distribuye bajo GPL versión 2 únicamente, con la excepción de llamadas al sistema documentada. Se sustituye la clasificación genérica de familias UNIX por una pregunta de licencia concreta, evitando confundir Solaris con OpenSolaris o componentes libres incluidos en productos comerciales."
+        }
+      }
+    },
+    {
+      "id": 569,
+      "original": {
+        "id": 569,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El comando Linux que deberemos usar si queremos saber las dependencias de librerías que tiene el programa bash:",
+        "opciones": [
+          "lib /bin/bash",
+          "ldd /bin/bash",
+          "lcd /bin/bash",
+          "lsoft /bin/bash"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 569,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Linux, si /bin/bash es un ejecutable existente y enlazado dinámicamente, ¿qué comando muestra las bibliotecas compartidas que requiere?",
+        "opciones": [
+          "lib /bin/bash",
+          "ldd /bin/bash",
+          "lcd /bin/bash",
+          "lsoft /bin/bash"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "ldd muestra los objetos compartidos requeridos por un ejecutable. Se explicita que /bin/bash existe y está enlazado dinámicamente, pues las rutas y el tipo de enlace pueden variar entre instalaciones.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "ldd",
+          "bibliotecas"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://man7.org/linux/man-pages/man1/ldd.1.html",
+              "referencia": "Linux man-pages, ldd(1)"
+            }
+          ],
+          "observaciones": "ldd muestra los objetos compartidos requeridos por un ejecutable. Se explicita que /bin/bash existe y está enlazado dinámicamente, pues las rutas y el tipo de enlace pueden variar entre instalaciones."
+        }
+      }
+    },
+    {
+      "id": 570,
+      "original": {
+        "id": 570,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El kernel desarrollado por el proyecto GNU es conocido como:",
+        "opciones": [
+          "Hurd",
+          "Linux",
+          "Emacs",
+          "Debian"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 570,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se llama el conjunto de servidores del proyecto GNU que funciona sobre Mach e implementa servicios propios de un núcleo UNIX?",
+        "opciones": [
+          "Hurd",
+          "Linux",
+          "Emacs",
+          "Debian"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Hurd es el conjunto de servidores que, sobre Mach, implementa funciones normalmente incluidas en un núcleo UNIX. Se precisa esta arquitectura en lugar de equiparar el conjunto de servidores con el microkernel que lo soporta.",
+        "clasificacion": {
+          "A1": [
+            "A1-59",
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "GNU",
+          "Hurd"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://www.gnu.org/software/hurd/doc/hurd_1.html",
+              "referencia": "GNU Hurd Reference Manual, Introduction"
+            }
+          ],
+          "observaciones": "Hurd es el conjunto de servidores que, sobre Mach, implementa funciones normalmente incluidas en un núcleo UNIX. Se precisa esta arquitectura en lugar de equiparar el conjunto de servidores con el microkernel que lo soporta."
+        }
+      }
+    }
+  ]
+}
