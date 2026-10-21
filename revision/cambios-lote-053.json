@@ -1,0 +1,290 @@
+{
+  "fecha": "2026-10-21",
+  "alcance": "IDs 581–585; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 581,
+      "original": {
+        "id": 581,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes comandos de Linux se utiliza para configurar un firewall?",
+        "opciones": [
+          "inetfw",
+          "iptables",
+          "tcpdump",
+          "Iwconfig"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 581,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes comandos de Linux se utiliza para configurar un firewall?",
+        "opciones": [
+          "inetfw",
+          "iptables",
+          "tcpdump",
+          "iwconfig"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "iptables administra reglas de filtrado IPv4 en Linux; se mantiene B. No es la única herramienta para cortafuegos. Se corrige la errata del distractor iwconfig.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "iptables",
+          "cortafuegos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://man7.org/linux/man-pages/man8/iptables.8.html",
+              "referencia": "iptables(8), DESCRIPTION"
+            }
+          ],
+          "observaciones": "iptables administra reglas de filtrado IPv4 en Linux; se mantiene B. No es la única herramienta para cortafuegos. Se corrige la errata del distractor iwconfig."
+        }
+      }
+    },
+    {
+      "id": 582,
+      "original": {
+        "id": 582,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale cuál de las siguientes afirmaciones es correcta con respecto a los procesos arrancados por el superusuario (root) en un sistema operativo Linux:",
+        "opciones": [
+          "Su código se ejecuta con el procesador en modo núcleo (kernel)",
+          "Pueden ejecutarse con menos prioridad de planificación que un proceso de usuario normal",
+          "Tiene acceso directo a los dispositivos de E/S",
+          "Acceden directamente al mapa de memoria de otros procesos"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 582,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes afirmaciones sobre la prioridad de planificación de los procesos de root en Linux es correcta?",
+        "opciones": [
+          "Todos deben ejecutarse siempre con la máxima prioridad de tiempo real.",
+          "Pueden ejecutarse con menos prioridad de planificación que un proceso de usuario normal.",
+          "No pueden aumentar su valor nice para reducir su prioridad.",
+          "Su prioridad de planificación se determina exclusivamente por el UID y no puede modificarse."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Ser root no impone la máxima prioridad de planificación. Un valor nice mayor representa menor prioridad; también puede aplicarse a un proceso privilegiado. Se mantiene B y se eliminan distractores ambiguos sobre acceso directo a recursos.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "procesos",
+          "nice",
+          "root"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://man7.org/linux/man-pages/man2/nice.2.html",
+              "referencia": "Linux man-pages, nice(2), DESCRIPTION"
+            }
+          ],
+          "observaciones": "Ser root no impone la máxima prioridad de planificación. Un valor nice mayor representa menor prioridad; también puede aplicarse a un proceso privilegiado. Se mantiene B y se eliminan distractores ambiguos sobre acceso directo a recursos."
+        }
+      }
+    },
+    {
+      "id": 583,
+      "original": {
+        "id": 583,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué es procfs en Unix?",
+        "opciones": [
+          "Un sistema de ficheros especial con información sobre procesos y otros recursos del sistema",
+          "Un comando que devuelve información sobre los procesos relacionados con el sistema de ficheros",
+          "Nada de lo anterior"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 583,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué es procfs en Linux?",
+        "opciones": [
+          "Un sistema de ficheros especial con información sobre procesos y otros recursos del sistema",
+          "Un comando que devuelve información sobre los procesos relacionados con el sistema de ficheros",
+          "Nada de lo anterior"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "procfs es un pseudosistema de archivos que expone información de procesos y del sistema, normalmente en /proc. Algunos archivos permiten modificar parámetros del núcleo. Se concreta Linux para no universalizar detalles entre variantes UNIX.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "procfs",
+          "sistemas-de-archivos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://man7.org/linux/man-pages/man5/proc.5.html",
+              "referencia": "Linux man-pages, proc(5), DESCRIPTION y Overview"
+            }
+          ],
+          "observaciones": "procfs es un pseudosistema de archivos que expone información de procesos y del sistema, normalmente en /proc. Algunos archivos permiten modificar parámetros del núcleo. Se concreta Linux para no universalizar detalles entre variantes UNIX."
+        }
+      }
+    },
+    {
+      "id": 584,
+      "original": {
+        "id": 584,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El superusuario administrador de un sistema UNIX se conoce como:",
+        "opciones": [
+          "admin",
+          "root",
+          "superadmin",
+          "Ninguno de los anteriores"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 584,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El superusuario administrador de un sistema UNIX se conoce como:",
+        "opciones": [
+          "admin",
+          "root",
+          "superadmin",
+          "Ninguno de los anteriores"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "El superusuario se denomina convencionalmente root. Se mantiene B; en el modelo tradicional de permisos se asocia al identificador efectivo de usuario cero.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "root",
+          "usuarios"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://www.man7.org/linux/man-pages/man7/capabilities.7.html",
+              "referencia": "Linux man-pages, capabilities(7), DESCRIPTION"
+            }
+          ],
+          "observaciones": "El superusuario se denomina convencionalmente root. Se mantiene B; en el modelo tradicional de permisos se asocia al identificador efectivo de usuario cero."
+        }
+      }
+    },
+    {
+      "id": 585,
+      "original": {
+        "id": 585,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿En qué variable de entorno UNIX se le reporta al servidor de X-Windows la dirección del cliente X donde debe abrir las ventanas?",
+        "opciones": [
+          "DISPLAY",
+          "SCREEN",
+          "XHOST",
+          "XCLIENT"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 585,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En X Window System (X11), ¿qué variable de entorno indica a una aplicación cliente el display del servidor X al que debe conectarse?",
+        "opciones": [
+          "DISPLAY",
+          "SCREEN",
+          "XHOST",
+          "XCLIENT"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "DISPLAY identifica el display al que se conectan los clientes X. El enunciado original invertía cliente y servidor: la aplicación es cliente y utiliza los servicios del servidor X. Se mantiene A y se corrige esa inversión.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "X11",
+          "DISPLAY"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-21",
+          "fuentes": [
+            {
+              "url": "https://xorg.freedesktop.org/archive/X11R6.7.0/doc/startx.1.html",
+              "referencia": "X.Org, startx(1), Environment Variables"
+            }
+          ],
+          "observaciones": "DISPLAY identifica el display al que se conectan los clientes X. El enunciado original invertía cliente y servidor: la aplicación es cliente y utiliza los servicios del servidor X. Se mantiene A y se corrige esa inversión."
+        }
+      }
+    }
+  ]
+}
