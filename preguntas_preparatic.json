@@ -27378,7 +27378,7 @@
       "id": 686,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación a los niveles de prioridad de mensajes de la librería log4j de Apache Software Foundation, indique cuál de las siguientes respuestas está ordenada de menor a mayor detalle:",
+      "texto": "En Log4j 2, ¿cuál es el orden de niveles desde el de menor detalle hasta el de mayor detalle?",
       "opciones": [
         "FATAL, ERROR, WARN, INFO, DEBUG y TRACE.",
         "ERROR, FATAL, INFO, WARN, DEBUG y TRACE.",
@@ -27386,62 +27386,215 @@
         "FATAL, ERROR, WARN, INFO, TRACE y DEBUG."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva A. En Log4j 2 los niveles incorporados se ordenan por prioridad numérica FATAL, ERROR, WARN, INFO, DEBUG y TRACE; TRACE es el más detallado y FATAL el menos detallado. La pregunta usa «detalle» como el sentido inverso a gravedad/prioridad; la explicación lo explicita.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Log4j",
+        "niveles-log",
+        "Java"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://logging.apache.org/log4j/2.x/manual/customloglevels.html",
+            "referencia": "Apache Log4j 2, niveles estándar y prioridad"
+          }
+        ],
+        "observaciones": "Se conserva A. En Log4j 2 los niveles incorporados se ordenan por prioridad numérica FATAL, ERROR, WARN, INFO, DEBUG y TRACE; TRACE es el más detallado y FATAL el menos detallado. La pregunta usa «detalle» como el sentido inverso a gravedad/prioridad; la explicación lo explicita."
+      }
     },
     {
       "id": 687,
       "bloque": 0,
       "tema": 0,
-      "texto": "En una arquitectura J2EE de tres niveles, ¿dónde se ejecutan habitualmente los componentes Enterprise Java Beans (EJB)?",
+      "texto": "En la arquitectura J2EE clásica de tres niveles, ¿en qué nivel se ejecutan normalmente los componentes Enterprise JavaBeans (EJB)?",
       "opciones": [
-        "En el servidor J2EE.",
-        "En el cliente.",
-        "En el servidor EIS (Enterprise Information System).",
-        "En el servidor de base de datos."
+        "En el nivel medio o de negocio, dentro del servidor/contenedor EJB de la plataforma.",
+        "En el cliente, dentro del navegador web.",
+        "En el sistema de información empresarial (EIS), como si fueran parte del servidor de base de datos.",
+        "En el equipo cliente, fuera del servidor de aplicaciones."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene A con contexto histórico. En la arquitectura J2EE de tres niveles, los EJB se ejecutan en el nivel medio/de negocio en el servidor o contenedor EJB de la plataforma; el EIS/base de datos es el nivel de datos. La terminología J2EE es antigua y evolucionó a Java EE y Jakarta EE.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "EJB",
+        "J2EE",
+        "histórica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javaee/7/tutorial/overview004.htm",
+            "referencia": "Oracle Java EE 7 Tutorial, niveles de una aplicación empresarial: EJB en el nivel de negocio"
+          }
+        ],
+        "observaciones": "Se mantiene A con contexto histórico. En la arquitectura J2EE de tres niveles, los EJB se ejecutan en el nivel medio/de negocio en el servidor o contenedor EJB de la plataforma; el EIS/base de datos es el nivel de datos. La terminología J2EE es antigua y evolucionó a Java EE y Jakarta EE."
+      }
     },
     {
       "id": 688,
       "bloque": 0,
       "tema": 0,
-      "texto": "En una arquitectura J2EE de tres niveles, los Java Servlets son:",
+      "texto": "En la arquitectura J2EE clásica, ¿qué papel y ubicación corresponden normalmente a los Java Servlets?",
       "opciones": [
-        "Componentes web que se ejecutan en el cliente.",
-        "Componentes de negocio que se ejecutan en el servidor J2EE.",
-        "Componentes de negocio que se ejecutan en el servidor EIS (Enterprise Information System).",
-        "Componentes web que se ejecutan en el servidor J2EE."
+        "Componentes de interfaz que se ejecutan dentro del navegador del cliente.",
+        "Componentes de negocio que se ejecutan en el servidor EIS.",
+        "Componentes de persistencia que se ejecutan dentro del gestor de base de datos.",
+        "Componentes web del lado servidor, ejecutados en un contenedor web."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se mantiene D con contexto histórico. Un servlet es un componente web del lado servidor que procesa solicitudes y genera respuestas en el nivel web, en un contenedor web; no se ejecuta en el cliente ni es por sí mismo un componente de negocio EJB. La pregunta conserva la nomenclatura histórica J2EE.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Servlet",
+        "J2EE",
+        "histórica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javaee/7/tutorial/overview004.htm",
+            "referencia": "Oracle Java EE 7 Tutorial, niveles de una aplicación empresarial: servlet en el nivel web"
+          }
+        ],
+        "observaciones": "Se mantiene D con contexto histórico. Un servlet es un componente web del lado servidor que procesa solicitudes y genera respuestas en el nivel web, en un contenedor web; no se ejecuta en el cliente ni es por sí mismo un componente de negocio EJB. La pregunta conserva la nomenclatura histórica J2EE."
+      }
     },
     {
       "id": 689,
       "bloque": 0,
       "tema": 0,
-      "texto": "Para el concepto de Struts 2, indique cuál de las siguientes opciones es correcta:",
+      "texto": "Respecto de Apache Struts 2, ¿cuál de estas afirmaciones describe correctamente el framework?",
       "opciones": [
-        "Struts 2 es un framework que se basa en la tecnología JSF (Java Server Faces).",
-        "Struts 2 es un framework que se basa en el patrón MVC (Model View Controller).",
-        "Struts 2 es un patrón de diseño para plataformas JEE (Java Enterprise Edition)."
+        "Es un framework basado en JavaServer Faces (JSF), que sustituye al patrón MVC.",
+        "Es un framework MVC para desarrollar aplicaciones web Java.",
+        "Es un patrón de diseño para plataformas Java EE, no un framework."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene B. Apache Struts es un framework MVC para aplicaciones Java; «Struts 2» fue la denominación de una generación anterior, mientras que el proyecto activo publica hoy versiones 6 y 7. No se basa en JSF ni es un patrón de diseño.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Apache-Struts",
+        "MVC",
+        "Java-framework"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://struts.apache.org/",
+            "referencia": "Apache Struts, documentación oficial del proyecto y versiones mantenidas"
+          }
+        ],
+        "observaciones": "Se mantiene B. Apache Struts es un framework MVC para aplicaciones Java; «Struts 2» fue la denominación de una generación anterior, mientras que el proyecto activo publica hoy versiones 6 y 7. No se basa en JSF ni es un patrón de diseño."
+      }
     },
     {
       "id": 690,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuáles de los siguientes mecanismos no existe específicamente corno caché de código PHP?",
+      "texto": "¿Cuál de estas opciones es un sistema genérico de caché distribuida de objetos/valores en memoria, y no una extensión de PHP para caché de bytecode?",
       "opciones": [
-        "OpCache.",
-        "WinCache Extension for PHP.",
-        "Memcached.",
-        "Alternative PHP Cache."
+        "OPcache, que almacena bytecode PHP precompilado.",
+        "WinCache en las versiones que incluían opcode cache (antes de 2.0.0).",
+        "Memcached, un almacén distribuido genérico de valores en memoria.",
+        "Alternative PHP Cache (APC), que históricamente incluyó caché de opcode."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene C y se corrige la errata «corno». Se delimita la pregunta a las generaciones citadas: OPcache y APC (histórico) son cachés de bytecode de PHP; WinCache incluyó opcode cache en versiones anteriores a 2.0.0, donde se retiró. Memcached es un almacén distribuido genérico de objetos/valores en memoria, no una extensión PHP de opcode caching. Se etiqueta histórica por las diferencias de versión y soporte entre esas opciones.",
+      "clasificacion": {
+        "A1": [
+          "A1-68"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "PHP",
+        "OPcache",
+        "Memcached",
+        "caché-bytecode",
+        "histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://www.php.net/manual/en/book.opcache.php",
+            "referencia": "PHP Manual, OPcache: almacena bytecode precompilado."
+          },
+          {
+            "url": "https://www.php.net/manual/en/book.wincache.php",
+            "referencia": "PHP Manual, WinCache: opcode cache histórico y retirado en WinCache 2.0.0."
+          },
+          {
+            "url": "https://www.memcached.org/",
+            "referencia": "Memcached, descripción oficial: almacén distribuido genérico de objetos/valores en memoria."
+          },
+          {
+              "url": "https://www.php.net/manual/en/intro.apc.php",
+              "referencia": "PHP Manual archivado, APC: caché de opcode para PHP."
+            },
+            {
+            "url": "https://www.php.net/manual/en/book.apcu.php",
+              "referencia": "PHP Manual, APCu: caché de variables de usuario separada de la antigua caché de opcode de APC."
+          }
+        ],
+        "observaciones": "Se mantiene C y se corrige la errata «corno». Se delimita la pregunta a las generaciones citadas: OPcache y APC (histórico) son cachés de bytecode de PHP; WinCache incluyó opcode cache en versiones anteriores a 2.0.0, donde se retiró. Memcached es un almacén distribuido genérico de objetos/valores en memoria, no una extensión PHP de opcode caching. Se etiqueta histórica por las diferencias de versión y soporte entre esas opciones."
+      }
     },
     {
       "id": 691,

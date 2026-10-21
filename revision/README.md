@@ -395,3 +395,9 @@ Se sustituye una generalización sobre portabilidad de servicios web por la defi
 IDs 681–685: cinco verificadas, dos históricas con contexto y tres con cambios de contenido. Acumulado: 685 examinadas, 656 verificadas, 29 pendientes y 451 con cambios de contenido. Estados: 201 vigentes, 416 corregidas, 39 históricas y 29 pendientes. Quedan 11.438 sin revisar; siguiente ID 686.
 
 Se confirma WHEN OTHERS en PL/SQL, se acotan los atributos de jQuery Mobile 1.4 y se corrige WebDAV conforme al RFC 4918. Se contextualizan las denominaciones antiguas de .NET Core y se confirma la obligación de las subclases concretas Java ante métodos abstractos heredados. jQuery Mobile y .NET Core como denominación anterior se registran como históricos. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+
+## Lote 074 — 21 de octubre
+
+IDs 686–690: cinco examinadas, dos verificadas como vigentes, una corregida y dos históricas contextualizadas. Acumulado: 690 examinadas, 661 verificadas y 29 pendientes; 455 preguntas con cambios de contenido. Estados: 202 vigentes, 420 corregidas, 40 históricas y 29 pendientes. Quedan 11.433 sin revisar; siguiente ID 691.
+
+Se concreta la secuencia de niveles estándar de Log4j 2 y se distingue gravedad de detalle. Se acotan los EJB al contenedor de negocio y los servlets al contenedor web en la arquitectura Java EE/J2EE; se marca esa nomenclatura como histórica. Apache Struts mantiene el patrón MVC, aunque la denominación Struts 2 corresponde a una generación anterior. Se corrige la errata de «corno» y se delimita la pregunta sobre bytecode PHP: OPcache, APC y versiones antiguas de WinCache se contrastan con sus fuentes, mientras que Memcached es un almacén genérico de objetos y valores; los cambios de versión se registran como contexto histórico. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
