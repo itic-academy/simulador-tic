@@ -28,11 +28,11 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.428 preguntas sin revisión de contenido. Siguiente ID: 696. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 30 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.423 preguntas sin revisión de contenido. Siguiente ID: 701. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
-Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635 y 692. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105 y 111. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
+Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635 y 692. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105, 111 y 700. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
 
 Correcciones destacadas de esta continuación: LDAP (64) contenía dos respuestas defendibles; Java static (79) cambia la respuesta correcta de A a B; la fecha del artículo 6.d de la Orden ETD/465/2021 (89) pasa a 1 de marzo de 2023 conforme a la modificación de 2022; WebAssembly (98) admite ejecución fuera del navegador; Data Act (100) se actualiza a su aplicación general desde septiembre de 2025. Se conservan los originales completos.
 
@@ -407,3 +407,9 @@ Se concreta la secuencia de niveles estándar de Log4j 2 y se distingue gravedad
 IDs 691–695: cinco examinadas, cuatro verificadas y una pendiente de fuente. Acumulado: 695 examinadas, 665 verificadas y 30 pendientes; 459 preguntas con cambios de contenido. Estados: 201 vigentes, 424 corregidas, 40 históricas y 30 pendientes. Quedan 11.428 sin revisar; siguiente ID 696.
 
 Se distinguen los tipos MIME de ODF y OOXML conforme a OASIS e IANA (691); la atribución a «ePupil» queda pendiente al no localizar respaldo primario, sin dar por cierta su inexistencia (692). Se separan los datos vectoriales de los ráster (693) y se acota la función del almacén de datos en una arquitectura clásica de BI (694). XML puede almacenarse en tipos nativos de bases de datos, conforme a W3C y la documentación de Microsoft (695). No se han estudiado nuevos PDFs de academia ni cotejado las posibles correcciones posteriores de las convocatorias.
+
+## Lote 076 — 21 de octubre
+
+IDs 696–700: cinco examinadas, cuatro verificadas y una pendiente de ambigüedad. Acumulado: 700 examinadas, 669 verificadas y 31 pendientes; 463 preguntas con cambios de contenido. Estados: 201 vigentes, 428 corregidas, 40 históricas y 31 pendientes. Quedan 11.423 sin revisar; siguiente ID 701.
+
+Se precisa que el resumen hash de longitud fija sirve para comprobar integridad solo comparándolo con un valor confiable o protegiéndolo mediante firma/MAC (696). El CSV se delimita como posible sistema de firma en las condiciones de la Ley 40/2015 y el RD 203/2021 (697). Se descarta que FNMT sea el único proveedor, conforme a las listas de confianza previstas en la Ley 6/2020 (698). El modelo en cascada se acota como modelo secuencial clásico con requisitos definidos antes de cerrar el diseño, considerando la realimentación que ya contempla Royce (699). El contenido de un “Plan de Sistemas” no tiene definición inequívoca en el enunciado ni se ha localizado aún el marco de academia que originó la pregunta 700; se conserva sin validar y queda pendiente de cotejo.

@@ -27824,57 +27824,170 @@
       "id": 696,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de las siguientes afirmaciones es cierta:",
+      "texto": "Sobre las funciones hash criptográficas, señale la afirmación correcta:",
       "opciones": [
-        "Las funciones hash se utilizan en los mecanismos de cifrado/descifrado de mensajes.",
-        "Las funciones hash se pueden utilizar para garantizar la integridad de los mensajes transmitidos.",
-        "Las funciones hash generan valores cuya longitud, en bits, depende de la longitud del mensaje original.",
-        "Las funciones hash requieren el uso de claves de cifrado."
+        "Una función hash cifra el mensaje y permite recuperarlo mediante descifrado.",
+        "El resumen hash puede contribuir a detectar cambios si se compara con un valor de confianza o se protege mediante firma/MAC.",
+        "La longitud del resumen depende del número de bits del mensaje de entrada.",
+        "Toda función hash requiere una clave secreta de cifrado."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se conserva B con una precisión necesaria: una función hash criptográfica puede contribuir a comprobar integridad al comparar el resumen con un valor de confianza; el hash aislado no autentica el origen ni protege frente a un atacante que sustituya a la vez mensaje y resumen. El digest tiene longitud fija según el algoritmo, no según el tamaño del mensaje; el hash no cifra ni exige clave. NIST distingue el hash del MAC con clave y de la firma digital.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [
+          "A2-II-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "función-hash",
+        "integridad",
+        "NIST"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/Projects/hash-functions",
+            "referencia": "NIST, Hash Functions y FIPS 180-4: resumen de longitud fija; la detección de cambios requiere comparar/proteger el resumen"
+          }
+        ],
+        "observaciones": "Se conserva B con una precisión necesaria: una función hash criptográfica puede contribuir a comprobar integridad al comparar el resumen con un valor de confianza; el hash aislado no autentica el origen ni protege frente a un atacante que sustituya a la vez mensaje y resumen. El digest tiene longitud fija según el algoritmo, no según el tamaño del mensaje; el hash no cifra ni exige clave. NIST distingue el hash del MAC con clave y de la firma digital."
+      }
     },
     {
       "id": 697,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la respuesta correcta: El CSV es…",
+      "texto": "Conforme al artículo 42.b de la Ley 40/2015, ¿qué puede ser el código seguro de verificación (CSV) en una actuación administrativa automatizada?",
       "opciones": [
         "Una organización que establece estándares de usabilidad de aplicaciones.",
-        "Consejo Superior de Vigilancia: contribuye a la mejora de la ciberseguridad española.",
-        "Un tipo de firma de un documento electrónico.",
+        "Un órgano de vigilancia de ciberseguridad.",
+        "Un sistema de firma electrónica vinculado a la Administración que permite verificar la integridad del documento en su sede, en las condiciones establecidas.",
         "Una aplicación móvil multiplataforma."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene C, pero se acota el CSV: en el marco de la pregunta es el código seguro de verificación que, vinculado a una Administración y conforme a sus condiciones, puede operar como sistema de firma electrónica para actuaciones administrativas automatizadas; permite comprobar la integridad accediendo a la sede electrónica. No todo código llamado CSV constituye por sí solo una firma.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-I-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "CSV",
+        "firma-electrónica",
+        "Administración-electrónica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/eli/es/l/2015/10/01/40/con/20191501",
+            "referencia": "Ley 40/2015, art. 42.b, y RD 203/2021, art. 21: CSV como sistema de firma electrónica en actuaciones automatizadas"
+          }
+        ],
+        "observaciones": "Se mantiene C, pero se acota el CSV: en el marco de la pregunta es el código seguro de verificación que, vinculado a una Administración y conforme a sus condiciones, puede operar como sistema de firma electrónica para actuaciones administrativas automatizadas; permite comprobar la integridad accediendo a la sede electrónica. No todo código llamado CSV constituye por sí solo una firma."
+      }
     },
     {
       "id": 698,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación a la afirmación de que la única empresa u organismo en España que proporciona certificados digitales es la FNMT (Fábrica Nacional de Moneda y Timbre) indique la alternativa correcta:",
+      "texto": "¿Es cierto que la FNMT es la única entidad que proporciona certificados digitales en España?",
       "opciones": [
-        "Es completamente falso.",
-        "Es completamente cierto.",
-        "Es cierto para certificados servidor.",
-        "Es cierto sólo para certificados de empleado público, sede electrónica y sello electrónico."
+        "No. Existen otros prestadores; la lista de confianza identifica los prestadores cualificados y los servicios que prestan.",
+        "Sí, la FNMT es la única entidad autorizada para cualquier certificado.",
+        "Sí, salvo los certificados de servidor, que solo expiden otros organismos públicos.",
+        "Sí, excepto para certificados de empleado público, sede y sello electrónico."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene A: es falso que la FNMT sea la única entidad que proporciona certificados en España. La ley prevé una lista de confianza de prestadores cualificados y los servicios que prestan; el estado y alcance se verifican en la lista oficial vigente, no mediante una lista cerrada de tipos de certificado.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "certificados",
+        "FNMT",
+        "prestadores-confianza"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/eli/es/l/2020/11/11/6/con/20201112",
+            "referencia": "Ley 6/2020, art. 16, y listas nacionales de confianza publicadas por la Comisión Europea: prestadores cualificados sujetos a lista"
+          }
+        ],
+        "observaciones": "Se mantiene A: es falso que la FNMT sea la única entidad que proporciona certificados en España. La ley prevé una lista de confianza de prestadores cualificados y los servicios que prestan; el estado y alcance se verifican en la lista oficial vigente, no mediante una lista cerrada de tipos de certificado."
+      }
     },
     {
       "id": 699,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la respuesta correcta sobre el modelo de ciclo de vida en cascada:",
+      "texto": "En el modelo secuencial clásico de ciclo de vida en cascada, ¿qué supuesto caracteriza la planificación de las fases?",
       "opciones": [
-        "Si se han cometido errores en una fase, es fácil volver atrás.",
-        "Permite mostrar al cliente resultados parciales durante el proceso.",
-        "Necesita disponer de todos los requisitos al principio.",
-        "Nunca se ha utilizado para proyectos de reingeniería."
+        "Los errores de una fase se resuelven siempre fácilmente volviendo atrás.",
+        "Se entregan necesariamente al cliente resultados parciales al final de cada fase.",
+        "Los requisitos se establecen y documentan antes de cerrar el diseño y avanzar secuencialmente, aunque pueden existir realimentaciones entre fases.",
+        "El modelo no se ha utilizado nunca en proyectos de reingeniería."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene C y se acota al modelo secuencial clásico: requiere definir y documentar los requisitos del sistema antes de cerrar el diseño y avanzar por fases; no significa que sea imposible revisar requisitos. Royce describe realimentación entre fases adyacentes y advierte de los riesgos de aplicar una secuencia rígida. Las otras opciones tampoco caracterizan el modelo tradicional: la vuelta atrás no es fácil, no entrega necesariamente resultados parciales y sí puede emplearse en reingeniería.",
+      "clasificacion": {
+        "A1": [
+          "A1-86",
+          "A1-88"
+        ],
+        "A2": [
+          "A2-III-1",
+          "A2-III-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ciclo-de-vida",
+        "cascada",
+        "requisitos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://cse.msu.edu/~cse435/Homework/HW3/royce1970.pdf",
+            "referencia": "Winston W. Royce, “Managing the Development of Large Software Systems” (1970), modelo secuencial y ciclos de realimentación"
+          }
+        ],
+        "observaciones": "Se mantiene C y se acota al modelo secuencial clásico: requiere definir y documentar los requisitos del sistema antes de cerrar el diseño y avanzar por fases; no significa que sea imposible revisar requisitos. Royce describe realimentación entre fases adyacentes y advierte de los riesgos de aplicar una secuencia rígida. Las otras opciones tampoco caracterizan el modelo tradicional: la vuelta atrás no es fácil, no entrega necesariamente resultados parciales y sí puede emplearse en reingeniería."
+      }
     },
     {
       "id": 700,
@@ -27888,7 +28001,27 @@
         "Plan de migración de datos de sistemas anteriores."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "",
+      "clasificacion": {
+        "A1": [
+          "A1-87"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "planificación-sistemas",
+        "plan-de-sistemas",
+        "pendiente-ambigüedad"
+      ],
+      "revision": {
+        "estado": "pendiente_ambiguedad",
+        "fecha": "2026-10-21",
+        "fuentes": [],
+        "observaciones": "No se ha identificado en el enunciado un marco metodológico o fuente que defina unívocamente el contenido del “Plan de Sistemas”; mantener la respuesta sin verificar hasta localizar el temario de academia o una fuente que origine la pregunta."
+      }
     },
     {
       "id": 701,
