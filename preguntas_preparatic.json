@@ -25578,63 +25578,192 @@
         "Lógica borrosa."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene A: en la retroalimentación explícita de relevancia el usuario valora resultados y el sistema refina la representación de su necesidad de información. La modificación del vector corresponde a una realización vectorial, como Rocchio; la retroalimentación no se limita a ese modelo.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "retroalimentación",
+        "relevancia"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/relevance-feedback-and-pseudo-relevance-feedback-1.html",
+            "referencia": "Introduction to Information Retrieval, Relevance feedback"
+          }
+        ],
+        "observaciones": "Se mantiene A: en la retroalimentación explícita de relevancia el usuario valora resultados y el sistema refina la representación de su necesidad de información. La modificación del vector corresponde a una realización vectorial, como Rocchio; la retroalimentación no se limita a ese modelo."
+      }
     },
     {
       "id": 642,
       "bloque": 0,
       "tema": 0,
-      "texto": "El método booleano de recuperación de información presenta como problema fundamental:",
+      "texto": "¿Qué limitación presenta el modelo booleano estricto de recuperación, sin mecanismos adicionales de ranking?",
       "opciones": [
-        "Es de sintaxis compleja y la consulta debe reintentarse normalmente para obtener una cantidad razonable de documentos",
-        "Deben utilizarse múltiples ficheros auxiliares",
-        "Utilizan operadores lógicos y modelos probabilísticos simultáneamente",
-        "Está basado en sistemas expertos"
+        "Devuelve un conjunto de coincidencias sin asignar por sí mismo una puntuación gradual de relevancia.",
+        "No permite combinar términos mediante AND.",
+        "Necesita obligatoriamente una red neuronal para evaluar OR.",
+        "No permite excluir términos mediante NOT."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se sustituye una valoración subjetiva de complejidad por una limitación concreta del modelo booleano estricto: devuelve coincidencias sin una puntuación gradual de relevancia. El sistema puede añadir después una ordenación por fecha u otros criterios.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "modelo-booleano"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/the-extended-boolean-model-versus-ranked-retrieval-1.html",
+            "referencia": "Introduction to Information Retrieval, Boolean versus ranked retrieval"
+          }
+        ],
+        "observaciones": "Se sustituye una valoración subjetiva de complejidad por una limitación concreta del modelo booleano estricto: devuelve coincidencias sin una puntuación gradual de relevancia. El sistema puede añadir después una ordenación por fecha u otros criterios."
+      }
     },
     {
       "id": 643,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los sistemas de recuperación de información consistente en rápidas ojeadas de selección buscando referencias en textos sin análisis con profundidad de los contenidos, auxiliándose de señaladores implícitos y explícitos:",
+      "texto": "¿Qué actividad ejemplifica la navegación exploratoria (browsing) en una colección documental?",
       "opciones": [
-        "Se denominan hojeo-ojeo.",
-        "Son relativamente poco complejos.",
-        "Todas las anteriores.",
-        "Ninguna de las anteriores."
+        "Calcular exclusivamente el hash de cada archivo.",
+        "Restaurar una copia de seguridad completa.",
+        "Recorrer y seleccionar grupos de documentos para explorar sus contenidos.",
+        "Cifrar los documentos con una clave simétrica."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La exploración o browsing permite seleccionar y recorrer agrupaciones de documentos. Se elimina la afirmación no fundamentada de que estos sistemas son poco complejos y se conserva C con una descripción concreta.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "browsing"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/clustering-in-information-retrieval-1.html",
+            "referencia": "Introduction to Information Retrieval, Clustering in information retrieval"
+          }
+        ],
+        "observaciones": "La exploración o browsing permite seleccionar y recorrer agrupaciones de documentos. Se elimina la afirmación no fundamentada de que estos sistemas son poco complejos y se conserva C con una descripción concreta."
+      }
     },
     {
       "id": 644,
       "bloque": 0,
       "tema": 0,
-      "texto": "El tesauro es un diccionario dinámico de descriptores que pasa las relaciones entre sus términos:",
+      "texto": "¿Qué relaciones se utilizan en un tesauro documental?",
       "opciones": [
-        "En operadores de jerarquía",
-        "En operaciones asociativos",
-        "En operadores semánticos y preferenciales",
-        "Son correctas todas las respuestas anteriores"
+        "Jerárquicas, como término más general y más específico.",
+        "Asociativas, entre conceptos relacionados sin relación jerárquica.",
+        "De equivalencia, vinculando términos preferidos y no preferidos para un concepto.",
+        "Todas las anteriores."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Los tesauros distinguen relaciones jerárquicas, asociativas y equivalencia entre términos preferidos y no preferidos. Se corrige la redacción defectuosa y se evita tratarlas como operadores de consulta. SKOS representa jerarquía y asociación entre conceptos, y términos equivalentes como etiquetas del mismo concepto.",
+      "clasificacion": {
+        "A1": [
+          "A1-104",
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "tesauro",
+        "relaciones-semánticas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/skos-primer/",
+            "referencia": "W3C, SKOS Primer, apartados 2.2, 2.3 y comparación de tesauros"
+          }
+        ],
+        "observaciones": "Los tesauros distinguen relaciones jerárquicas, asociativas y equivalencia entre términos preferidos y no preferidos. Se corrige la redacción defectuosa y se evita tratarlas como operadores de consulta. SKOS representa jerarquía y asociación entre conceptos, y términos equivalentes como etiquetas del mismo concepto."
+      }
     },
     {
       "id": 645,
       "bloque": 0,
       "tema": 0,
-      "texto": "Una de las características especiales de las bases de datos documentales, con respecto a otros tipos de bases de datos es que:",
+      "texto": "En un sistema de búsqueda documental textual que utiliza un índice invertido, ¿cómo se organiza este índice básico?",
       "opciones": [
-        "Están integradas por campos",
-        "Son adecuadas para una información muy estructurada",
-        "Están basadas en sistemas de archivo y ficheros inversos",
-        "Se almacenan en tablas"
+        "Relaciona exclusivamente usuarios con sus permisos.",
+        "Guarda únicamente las fechas de creación, sin términos.",
+        "Asocia cada término con referencias a los documentos donde aparece.",
+        "Almacena únicamente imágenes de las páginas, sin referencias documentales."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Un índice invertido permite localizar documentos por términos, pero no es una propiedad exclusiva ni obligatoria de toda base documental. Se acota a un sistema textual que emplea esa estructura y se pregunta por su organización.",
+      "clasificacion": {
+        "A1": [
+          "A1-105"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "índice-invertido",
+        "búsqueda-documental"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-21",
+        "fuentes": [
+          {
+            "url": "https://nlp.stanford.edu/IR-book/html/htmledition/a-first-take-at-building-an-inverted-index-1.html",
+            "referencia": "Introduction to Information Retrieval, A first take at building an inverted index"
+          }
+        ],
+        "observaciones": "Un índice invertido permite localizar documentos por términos, pero no es una propiedad exclusiva ni obligatoria de toda base documental. Se acota a un sistema textual que emplea esa estructura y se pregunta por su organización."
+      }
     },
     {
       "id": 646,

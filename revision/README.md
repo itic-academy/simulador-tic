@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.483 preguntas sin revisión de contenido. Siguiente ID: 641. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 29 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.478 preguntas sin revisión de contenido. Siguiente ID: 646. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 29 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 640 registros de cambios y las 11.483 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. En esta continuación se han ejecutado el inventario y el verificador: comprueban los 645 registros de cambios y las 11.478 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 16 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -345,3 +345,8 @@ Se distingue el índice invertido de los modelos que lo utilizan, se acota la ju
 IDs 636–640: cinco verificadas y cuatro con cambios de contenido. Acumulado: 640 examinadas, 611 verificadas, 29 pendientes y 422 con cambios de contenido. Estados: 186 vigentes, 389 corregidas, 36 históricas y 29 pendientes. Quedan 11.483 sin revisar; siguiente ID 641.
 
 Se corrige la limitación de recuperación a bases documentales, se acota el esquema incremental y se sustituye una comparación de rendimiento sin condiciones por propiedades del modelo vectorial. Se distingue reducción del vocabulario de compresión sin pérdida y se matiza stemming frente a lematización. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
+## Lote 065 — 21 de octubre
+
+IDs 641–645: cinco verificadas y cuatro con cambios de contenido. Acumulado: 645 examinadas, 616 verificadas, 29 pendientes y 426 con cambios de contenido. Estados: 187 vigentes, 393 corregidas, 36 históricas y 29 pendientes. Quedan 11.478 sin revisar; siguiente ID 646.
+
+Se confirma la retroalimentación explícita de relevancia, se concreta una limitación del modelo booleano y se elimina una valoración de complejidad sin fundamento sobre browsing. Se corrigen las relaciones de tesauro y la atribución exclusiva de índices invertidos a bases documentales. No se han estudiado nuevos PDFs de academia ni resuelto pendientes anteriores en este lote.
