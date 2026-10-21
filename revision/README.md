@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 079 (IDs 711–715). Acumulado: 715 preguntas revisadas, 684 verificadas (201 vigentes, 440 corregidas y 43 históricas) y 31 pendientes de resolver; quedan 11.408 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 080 (IDs 716–720). Acumulado: 720 preguntas revisadas, 689 verificadas (201 vigentes, 444 corregidas y 44 históricas) y 31 pendientes de resolver; quedan 11.403 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.408 preguntas sin revisión de contenido. Siguiente ID: 716. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.403 preguntas sin revisión de contenido. Siguiente ID: 721. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -42,7 +42,7 @@ En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regr
 
 Desde la raíz del repositorio, ejecutar `node revision/servidor.cjs` y abrir `http://127.0.0.1:8765/revision.html`. El servidor solo escucha en este equipo. Debe permanecer abierto para consultar la vista.
 
-En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. Tras el lote 079 se han ejecutado el inventario y el verificador: comprueban los 715 registros de cambios y las 11.408 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 14 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
+En una comprobación anterior en navegador se verificaron la carga del banco, la búsqueda por ID, el despliegue del original y el filtro de preguntas con dudas. Tras el lote 079 se han ejecutado el inventario y el verificador: comprueban los 720 registros de cambios y las 11.403 preguntas intactas frente al commit original. El inventario no detecta errores estructurales; señala 14 grupos con enunciados repetidos y 57 candidatos por referencias potencialmente antiguas, pendientes de revisión contextual. La reducción de un grupo repetido se debe a reformular un enunciado, no a eliminar preguntas. Los scripts de lote se aplican una sola vez; abortan si detectan preguntas ya revisadas.
 
 ## Lote 010 — 14 de octubre
 
@@ -425,3 +425,9 @@ Se contrasta la notación de composición UML con la especificación OMG (701), 
 IDs 706–710: cinco examinadas y verificadas, con dos correcciones y tres referencias históricas contextualizadas. Acumulado: 710 examinadas, 679 verificadas y 31 pendientes; 473 preguntas con cambios de contenido. Estados: 201 vigentes, 435 corregidas, 43 históricas y 31 pendientes. Quedan 11.413 sin revisar; siguiente ID 711.
 
 Se delimita EFQM a la edición 2013: además de sus nueve criterios, admitía autoevaluación y no se basaba exclusivamente en evaluación externa; la pregunta se etiqueta histórica frente a las guías EFQM 2020/2025 (706). Se confirma que LLC y MAC son subcapas de enlace de datos (707), y se precisa el papel de ingreso/egreso de los LER de MPLS (708). IEEE 802.11i-2004 se registra como enmienda histórica de seguridad posteriormente sustituida (709). En 802.16-2004 se acotan las PHY OFDM/OFDMA, las cargas MAC de longitud variable y la capacidad de funcionamiento NLOS, lo que invalida la exigencia absoluta de línea de visión (710). No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de convocatorias en este lote.
+
+## Lote 080 — 22 de octubre
+
+IDs 716–720: cinco verificadas, cuatro corregidas y una histórica contextualizada. Acumulado: 720 examinadas, 689 verificadas y 31 pendientes; 483 preguntas con cambios de contenido. Estados: 201 vigentes, 444 corregidas, 44 históricas y 31 pendientes. Quedan 11.403 sin revisar; siguiente ID 721.
+
+IEEE 802.4 se confirma como Token Bus (anillo lógico en bus físico) y se marca histórica porque IEEE la clasifica inactiva-retirada (716). Se identifica GetBulkRequest en las operaciones SNMPv2 vigentes, corrigiendo la pregunta que pedía varias PDU aunque daba opciones singulares (717). Se delimita la pregunta SNMPv3 a los servicios de seguridad USM y se evita confundir detección de errores con integridad/autenticación (718). Se coteja el cifrado de Red SARA y su SAT con la ficha oficial vigente, actualizando distractores institucionales (719). UIT-T X.400 corresponde a tratamiento de mensajes MHS, con componente 1999 en vigor (720). No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de convocatorias en este lote.

@@ -10,7 +10,7 @@ module.exports=function({numero,fecha,records,edits={}}){
   const original=structuredClone(q),{opcion,...edit}=edits[id]||{};Object.assign(q,edit);if(opcion)q.opciones[opcion[0]]=opcion[1];
   q.clasificacion={A1:a1.map(n=>`A1-${n}`),A2:a2.map(n=>`A2-${n}`),bloque_academia:null,estado:'revisada',nota:'Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa.'};
   for(const t of [...q.clasificacion.A1,...q.clasificacion.A2])assert.ok(topics.has(t),t);
-  q.etiquetas=etiquetas;q.revision={estado:state||(edits[id]?'corregida':'vigente'),fecha,fuentes:url?[{url,referencia}]:[],observaciones:note};if(url)q.comentarios=note;
+  q.etiquetas=etiquetas;const fuentes=!url?[]:(Array.isArray(url)?url:[{url,referencia}]);q.revision={estado:state||(edits[id]?'corregida':'vigente'),fecha,fuentes,observaciones:note};if(url)q.comentarios=note;
   assert.ok(Number.isInteger(q.respuesta_correcta)&&q.respuesta_correcta>=0&&q.respuesta_correcta<q.opciones.length);
   assert.ok(url||q.revision.estado.startsWith('pendiente_'));
   changes.push({id,original,actualizada:structuredClone(q)});
