@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 101 (IDs 821–825). Acumulado: 825 preguntas revisadas, 789 verificadas (225 vigentes, 492 corregidas y 72 históricas) y 36 pendientes de resolver; quedan 11.298 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 102 (IDs 826–830). Acumulado: 830 preguntas revisadas, 794 verificadas (227 vigentes, 495 corregidas y 72 históricas) y 36 pendientes de resolver; quedan 11.293 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.298 preguntas sin revisión de contenido. Siguiente ID: 826. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 36 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.293 preguntas sin revisión de contenido. Siguiente ID: 831. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 36 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -574,3 +574,11 @@ IDs 821–825 examinados individualmente. Tres verificadas y corregidas; dos que
 La 821 queda pendiente porque el acrónimo «MADL» no está definido y XML es un estándar general que puede serializar RDF, pero no un lenguaje de ontologías por sí solo. La 822 también queda pendiente: la herencia es clásica en redes semánticas, pero el emparejamiento y la afirmación de que ambos son los mecanismos universales dependen del formalismo. En la 823 se concreta que se pregunta por modelización predictiva: regresión bayesiana, regresión lineal y SVM son métodos posibles. La 824 corrige CMS por LMS, la categoría que Moodle asigna a su plataforma. La 825 elimina la confusión entre proyección cartográfica y geocodificación, y distingue esta última de la simbolización de mapas.
 
 Fuentes primarias consultadas: W3C (OWL, RDF/XML y XML); John F. Sowa y Stanford Encyclopedia of Philosophy (redes semánticas y herencia); documentación de scikit-learn (modelos lineales, regresión bayesiana y SVM); MoodleDocs (LMS); OGC Location Services y OGC API - Maps, y Comisión Europea GISCO (geocodificación y representación cartográfica). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 825 cambios registrados y 11.298 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 102 — 22 de octubre
+
+IDs 826–830 examinados individualmente y verificados. Dos se precisaron con cambios de contenido y tres conservan la clave con contexto actualizado. Acumulado: 830 examinadas, 794 verificadas y 36 pendientes; 564 preguntas con cambios de contenido. Estados: 227 vigentes, 495 corregidas, 72 históricas y 36 pendientes (21 de fuente y 15 de ambigüedad). Quedan 11.293 sin revisar; siguiente ID 831.
+
+Se aclara que OLAP puede producir informes de apoyo a decisiones sin ser minería de datos y no requiere necesariamente un hipercubo en todas las implementaciones (826). HTTP/2 se especifica actualmente en RFC 9113, que reemplaza RFC 7540 (827). La Ley 56/2007 recoge expresamente la obligatoriedad en el ámbito contractual estatal; la Ley 25/2013 desarrolla la presentación de factura electrónica ante las Administraciones Públicas (828). Whirlpool produce 512 bits, longitud superior a las otras opciones, sin que longitud aislada sea medida suficiente de seguridad (829). En 830 se elimina la afirmación excesiva de garantía absoluta: la igualdad de hashes es una comprobación práctica, no prueba de identidad libre de colisiones ni mecanismo de autenticación o confidencialidad.
+
+Fuentes primarias consultadas: Microsoft Learn (OLAP y data mining); RFC Editor (RFC 9113 y RFC 7540); BOE (Ley 56/2007 y Ley 25/2013); ETSI (Whirlpool y su resumen de 512 bits), NIST (FIPS 180-4, RFC 1321 y guía/glosario sobre hashes). No se han cotejado nuevos PDFs de academia ni posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 830 cambios registrados y 11.293 preguntas sin revisión de contenido idénticas al commit original.
