@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 107 (IDs 851–855). Acumulado: 855 preguntas revisadas, 818 verificadas (234 vigentes, 510 corregidas y 74 históricas) y 37 pendientes de resolver; quedan 11.268 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 108 (IDs 856–860). Acumulado: 860 preguntas revisadas, 823 verificadas (234 vigentes, 512 corregidas y 77 históricas) y 37 pendientes de resolver; quedan 11.263 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -622,3 +622,11 @@ IDs 851–855 examinados individualmente y verificados. Una se conserva como his
 Se acota la pregunta ITIL a la versión 4 y se identifica «focalizarse en la planificación» como distractor ajeno a sus siete principios guía (851). Se especifica que store-and-forward recibe la trama Ethernet completa y comprueba su CRC/FCS (852). Se corrige «ISO/EIS DIS» a ISO/IEC 11801, serie vigente de cableado genérico y clases de enlace/canal (853). Se sustituye «distancia entre estaciones» por longitud máxima de segmento 10BASE-T, 100 m entre estación y repetidor/concentrador, evitando confundirlo con una trayectoria a través de dos enlaces (854). Se corrige la clave de Bluetooth: emplea FHSS, no DSSS más FHSS (855).
 
 Fuentes primarias consultadas: PeopleCert (ITIL 4 Foundation y FAQ de transición a ITIL Version 5); Cisco (métodos de conmutación y especificaciones de Ethernet 10BASE-T); ISO/IEC 11801-1:2017 con AMD1:2025; Bluetooth SIG Core Specification v6.3 y Technology Overview. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 855 cambios registrados y 11.268 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 108 — 22 de octubre
+
+IDs 856–860 examinados individualmente y verificados. Tres se conservan como históricas y dos se corrigieron. Acumulado: 860 examinadas, 823 verificadas y 37 pendientes (22 de fuente y 15 de ambigüedad); 586 preguntas con cambios de contenido. Estados: 234 vigentes, 512 corregidas, 77 históricas y 37 pendientes. Quedan 11.263 sin revisar; siguiente ID 861.
+
+Se delimita 802.11p como la enmienda WLAN para entorno vehicular y se advierte que IEEE la marca como sustituida/integrada en ediciones posteriores de 802.11 (856). Se confirma 802.5 como Token Ring y se conserva el dato con estado histórico, pues el estándar se retiró (857). Se distingue IEEE 802.20/MBWA de 802.16/WiMAX y se documenta que 802.20-2008 fue retirado en 2018 (858). Se concreta STP clásico IEEE 802.1D: enlace/capa 2, sin encaminamiento IP y con convergencia más lenta que RSTP en las condiciones apropiadas (859). Se reescribe DOCSIS 3.1 para hacer inequívoca su opción correcta: OFDM en bajada y OFDMA en subida; la especificación inicial fue publicada en 2013, conserva interoperabilidad con SC-QAM heredado y no define un certificado EuroDOCSIS 3.1 separado (860).
+
+Fuentes primarias consultadas: IEEE SA (802.11p, 802.11-2024, 802.5-1997 y 802.20-2008); Cisco (STP/RSTP); CableLabs (DOCSIS 3.1 PHY, historia de especificación y PKI). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 860 cambios registrados y 11.263 preguntas sin revisión de contenido idénticas al commit original.
