@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 090 (IDs 766–770). Acumulado: 770 preguntas revisadas, 739 verificadas (208 vigentes, 465 corregidas y 66 históricas) y 31 pendientes de resolver; quedan 11.353 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 091 (IDs 771–775). Acumulado: 775 preguntas revisadas, 744 verificadas (211 vigentes, 467 corregidas y 66 históricas) y 31 pendientes de resolver; quedan 11.348 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.353 preguntas sin revisión de contenido. Siguiente ID: 771. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.348 preguntas sin revisión de contenido. Siguiente ID: 776. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -488,3 +488,10 @@ Se cotejan en el texto constitucional vigente la delegación legislativa y la co
 IDs 766–770: cinco preguntas verificadas, cuatro con reformulación o corrección de contenido. Acumulado: 770 examinadas, 739 verificadas y 31 pendientes; 527 preguntas con cambios de contenido. Estados: 208 vigentes, 465 corregidas, 66 históricas y 31 pendientes. Quedan 11.353 sin revisar; siguiente ID 771.
 
 En Europa 2020 (766) la versión española de la Comisión denomina la prioridad «crecimiento integrador»; «inclusivo» no era un distractor inequívocamente falso, por lo que se sustituye por «expansivo» y se conserva la etiqueta histórica de la estrategia con horizonte 2020. La regla general de entrada en vigor de la Ley 39/2015 (767) fue un año, con efectos diferidos de algunas previsiones electrónicas hasta 2021; se contextualiza como fecha pasada. La representación administrativa (768) se verifica con el artículo 5.4 y el RD 203/2021. La 769 se precisa como artículo 2.2.b de la Ley 40/2015. La 770 cambia su respuesta: la sede electrónica se identifica mediante certificados de autenticación de sitio web reconocidos o cualificados, o medio equivalente, no mediante certificados de firma electrónica. Fuentes primarias: Comisión Europea/EUR-Lex y BOE.
+## Lote 091 — 22 de octubre
+
+IDs 771–775: cinco preguntas examinadas y verificadas; tres conservan respuesta y dos se corrigen para reflejar requisitos inequívocos y normativa vigente. Acumulado: 775 examinadas, 744 verificadas y 31 pendientes; 529 preguntas con cambios de contenido. Estados: 211 vigentes, 467 corregidas, 66 históricas y 31 pendientes. Quedan 11.348 sin revisar; siguiente ID 776.
+
+La Ley 39/2015 confirma la definición de documento público administrativo (771), los metadatos visibles de las copias electrónicas auténticas (772) y el silencio desestimatorio del recurso extraordinario de revisión tras tres meses (773). La 774 se acota al artículo 118.3 porque el enunciado previo pedía un requisito genérico con afirmaciones discutibles; se contrasta además la publicación trimestral de los contratos menores del artículo 63.4. En la 775 se actualiza el umbral armonizado de obras y concesiones a 5.404.000 euros, en vigor desde el 1 de enero de 2026, conforme a la Orden HAC/1517/2025 y el Reglamento Delegado (UE) 2025/2151.
+
+No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. El inventario y el verificador se ejecutaron correctamente: 12.123 preguntas estructuralmente válidas, 775 cambios registrados y 11.348 preguntas sin revisión de contenido idénticas al commit original.
