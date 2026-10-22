@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 104 (IDs 836–840). Acumulado: 840 preguntas revisadas, 804 verificadas (231 vigentes, 501 corregidas y 72 históricas) y 36 pendientes de resolver; quedan 11.283 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 105 (IDs 841–845). Acumulado: 845 preguntas revisadas, 808 verificadas (232 vigentes, 504 corregidas y 72 históricas) y 37 pendientes de resolver; quedan 11.278 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -32,7 +32,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
-Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635, 692 y 805. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105, 111, 700, 792, 810, 821 y 822. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
+Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635, 692, 805 y 842. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105, 111, 700, 792, 810, 821 y 822. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
 
 Correcciones destacadas de esta continuación: LDAP (64) contenía dos respuestas defendibles; Java static (79) cambia la respuesta correcta de A a B; la fecha del artículo 6.d de la Orden ETD/465/2021 (89) pasa a 1 de marzo de 2023 conforme a la modificación de 2022; WebAssembly (98) admite ejecución fuera del navegador; Data Act (100) se actualiza a su aplicación general desde septiembre de 2025. Se conservan los originales completos.
 
@@ -598,3 +598,11 @@ IDs 836–840 examinados individualmente. Cuatro se corrigieron y una se mantien
 Se formaliza la diferencia entre especialización EER total y solapada y la consecuencia de retirar la última pertenencia de subtipo (836). Se corrige la comparación de BPMN y XPDL para reflejar que BPMN 2.0 ya define una serialización XML, además de la notación gráfica (837). SPEM se define como metamodelo de OMG basado en MOF y alineado con UML 2, no como un simple lenguaje que extiende UML (838). Se actualiza la taxonomía de mantenimiento a ISO/IEC/IEEE 14764:2022: agregar funciones es mantenimiento aditivo (839). Se conserva correcta y acotada a MÉTRICA v3 la combinación de catalogación, diagrama de clases y DFD en EVS 2 (840).
 
 Fuentes primarias consultadas: Elmasri y Navathe, *Fundamentals of Database Systems*, cap. EER; OMG (BPMN 2.0.2 y SPEM 2.0); Workflow Management Coalition (XPDL); ISO/IEC/IEEE 14764:2022 y vista previa de SIST; MÉTRICA v3, copia del documento ministerial y transcripción de sus tareas EVS. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 840 cambios registrados y 11.283 preguntas aún no revisadas idénticas al commit original.
+
+## Lote 105 — 22 de octubre
+
+IDs 841–845 examinados individualmente. Cuatro verificadas —una vigente y tres corregidas—; la 842 queda pendiente de fuente. Acumulado: 845 examinadas, 808 verificadas y 37 pendientes (22 de fuente y 15 de ambigüedad); 573 preguntas con cambios de contenido. Estados: 232 vigentes, 504 corregidas, 72 históricas y 37 pendientes. Quedan 11.278 sin revisar; siguiente ID 846.
+
+Se confirma en MÉTRICA v3 que EVS 3 reúne al Jefe de Proyecto, Analistas y Usuarios Expertos (841). La 842 no se certifica: el PDF ministerial identificado devuelve rechazo de acceso y falta cotejar la formulación precisa sobre DFD y flujos de control en la fuente metodológica. Se actualiza TFS a su denominación contemporánea y se distingue el control de versiones Git/TFVC de Apache Tomcat, que es un contenedor web (843). Se corrige la clasificación de verificación y validación: auditorías y revisiones son análisis estático en NIST SP 500-234, mientras el análisis formal es una categoría diferenciada (844). Se concreta qué significa «cobertura de texto» para que no se confunda con líneas o sentencias ejecutables, preservando la clave sobre cobertura estructural (845).
+
+Fuentes consultadas: MÉTRICA v3, documento ministerial de EVS identificado y tabla transcrita; Microsoft Learn (repositorios Git/TFVC); Apache Software Foundation (Tomcat); NIST SP 500-234; ISTQB CTFL v4.0.1. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 845 cambios registrados y 11.278 preguntas sin revisión de contenido idénticas al commit original.
