@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 096 (IDs 796–800). Acumulado: 800 preguntas revisadas, 768 verificadas (220 vigentes, 478 corregidas y 70 históricas) y 32 pendientes de resolver; quedan 11.323 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 097 (IDs 801–805). Acumulado: 805 preguntas revisadas, 772 verificadas (221 vigentes, 481 corregidas y 70 históricas) y 33 pendientes de resolver; quedan 11.318 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.323 preguntas sin revisión de contenido. Siguiente ID: 801. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 32 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.318 preguntas sin revisión de contenido. Siguiente ID: 806. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 33 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -534,3 +534,11 @@ IDs 796–800 examinados individualmente y verificados. Se mantienen las respues
 El RPO limita la pérdida de datos al indicar el punto temporal al que deben recuperarse tras una interrupción (796). MAGERIT v3 identifica los árboles de ataque como técnica para representar distintas vías para alcanzar un objetivo (797). La serie CCN-STIC-800 trata las guías de implementación de medidas ENS; el enunciado se actualiza al RD 311/2022 vigente y se advierte que la página informativa del CCN conserva una referencia histórica al RD 3/2010 (798). SIA incluye procedimientos y servicios tanto de AGE como de las administraciones participantes, incluidas CCAA y entidades locales (799). Se reformula la pregunta sobre normalización europea: una EN no es obligatoria por sí sola, aunque la legislación puede hacer vinculante su cumplimiento en el ámbito correspondiente; se elimina la referencia histórica a ENV para evitar una segunda lectura (800).
 
 Fuentes oficiales: NIST CSRC (RPO); MAGERIT v3, Libro III, Guía de técnicas, portal PILAR/CCN; CCN-CERT y BOE (serie 800 y RD 311/2022); PAe/CTT (ficha SIA); CEN-CENELEC (FAQ sobre adopción nacional, voluntariedad y relación con la legislación). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 800 cambios registrados y 11.323 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 097 — 22 de octubre
+
+IDs 801–805 examinados individualmente. Cuatro verificadas —tres corregidas y una vigente—; la 805 queda pendiente de fuente porque sus afirmaciones sobre costes y usuarios no se pueden certificar con el marco citado. Acumulado: 805 examinadas, 772 verificadas y 33 pendientes; 548 preguntas con cambios de contenido. Estados: 221 vigentes, 481 corregidas, 70 históricas y 33 pendientes (21 de fuente y 12 de ambigüedad). Quedan 11.318 sin revisar; siguiente ID 806.
+
+Se reformula la definición de RFC para distinguir la serie archivística y sus diversos estados de la categoría de Internet Standard (801). La Comisión Europea confirma que Horizonte Europa sucedió al programa Horizonte 2020 y cubre 2021–2027 (802). Se corrige SMP a «Symmetric Multiprocessing» y se elimina una descripción subjetiva de rendimiento (803). Se actualizan los tipos de tablespace de Oracle a permanente, temporal y undo, diferenciándolos de nombres concretos como SYSTEM y SYSAUX (804). La 805 se conserva íntegra y pendiente: las opciones de costes no son universalmente válidas y «usuarios inoperativos» parece una errata; se cotejará con el temario de academia antes de alterar texto o clave.
+
+Fuentes consultadas: RFC Editor (definición y estados de RFC); Comisión Europea (fichas oficiales de Horizonte 2020 y Horizonte Europa); IBM Documentation (SMP); Oracle Database 26ai Administrator’s Guide (tablespaces). No se han consultado nuevos documentos de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 805 cambios registrados y 11.318 preguntas sin revisión de contenido idénticas al commit original.
