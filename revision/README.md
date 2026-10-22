@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 115 (IDs 891–895). Acumulado: 895 preguntas revisadas, 857 verificadas (245 vigentes, 533 corregidas y 79 históricas) y 38 pendientes de resolver (22 de fuente y 16 de ambigüedad); quedan 11.228 sin revisión de contenido. Hay 617 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 116 (IDs 896–900). Acumulado: 900 preguntas revisadas, 861 verificadas (248 vigentes, 533 corregidas y 80 históricas) y 39 pendientes de resolver (22 de fuente y 17 de ambigüedad); quedan 11.223 sin revisión de contenido. Hay 621 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,11 +28,11 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.228 preguntas sin revisión de contenido. Siguiente ID: 896. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 38 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.223 preguntas sin revisión de contenido. Siguiente ID: 901. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 39 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
-Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635, 692, 805 y 842. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105, 111, 700, 792, 810, 821 y 822. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
+Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635, 692, 805 y 842. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105, 111, 700, 792, 810, 821, 822, 881 y 899. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
 
 Correcciones destacadas de esta continuación: LDAP (64) contenía dos respuestas defendibles; Java static (79) cambia la respuesta correcta de A a B; la fecha del artículo 6.d de la Orden ETD/465/2021 (89) pasa a 1 de marzo de 2023 conforme a la modificación de 2022; WebAssembly (98) admite ejecución fuera del navegador; Data Act (100) se actualiza a su aplicación general desde septiembre de 2025. Se conservan los originales completos.
 
@@ -686,3 +686,11 @@ IDs 891–895 revisados individualmente y verificados. Tres reformulados/corregi
 Se precisan las dos actividades DSI que hacen correcta la opción conjunta en la pregunta de MÉTRICA (891). Acoplamiento es la manera/grado de interdependencia entre módulos, según el glosario IEEE 610.12 (892). Se acota PUDS al Proceso Unificado de Rational: Pruebas es flujo de ingeniería, mientras configuración/cambios, gestión de proyectos y entorno son flujos de soporte (893). En MÉTRICA, las pruebas unitarias se ejecutan en CSI; DSI genera especificaciones de construcción y la incorporación en operación corresponde a implantación (894). Se corrige la pareja terminológica atribuida a Sommerville: requisitos de usuario y requisitos del sistema, no «de sistema y de software» (895).
 
 Fuentes primarias consultadas: documentos ministeriales de MÉTRICA v3 (Diseño y Construcción del Sistema de Información); IEEE Std 610.12-1990, alojado por NIST y ficha IEEE Xplore; IBM Rational Unified Process; Ian Sommerville, *Software Engineering*, 9.ª edición, capítulo 4, y ficha editorial Pearson de la 10.ª edición. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 895 cambios registrados y 11.228 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 116 — 22 de octubre
+
+IDs 896–900 revisados individualmente: tres verificadas y dos pendientes (una histórica y una por ambigüedad). Acumulado: 900 examinadas, 861 verificadas y 39 pendientes (22 de fuente y 17 de ambigüedad); 621 preguntas con cambios de contenido. Estados: 248 vigentes, 533 corregidas, 80 históricas y 39 pendientes. Quedan 11.223 sin revisar; siguiente ID 901.
+
+Se corrige la caracterización de ITIL v3: era un conjunto de publicaciones/buenas prácticas y no una norma ISO ni una escala de madurez; se conserva como contenido histórico versionado (896). Se confirma que en MÉTRICA v3 los casos de uso expresan funciones del sistema y perspectiva de actores (897); para su técnica DFD, MÉTRICA nombra el nivel 0 como diagrama de contexto (898). No se certifica la pregunta genérica sobre sistemas de gestión documental: ISO define captura, almacenamiento, control y entrega, pero no convierte el envío directo por fax/correo ni la capacidad de «millones en segundos» en propiedades universales; el enunciado no especifica estándar o producto para descartar una sola opción (899). Se precisa la respuesta sobre principios guía en ITIL 4: orientan decisiones en cualquier circunstancia; ITIL 4 mantiene guía y certificaciones y PeopleCert comunica que ITIL 5 conserva esos conceptos (900).
+
+Fuentes primarias consultadas: AXELOS y PeopleCert (ITIL); Ministerio de Administraciones Públicas, MÉTRICA v3 (Análisis del Sistema y Técnicas/Prácticas); ISO 19475:2021 e ISO/TC 46/SC 11 (gestión documental). La URL ministerial de Técnicas está publicada en el portal pero puede responder «Request Rejected» al acceso automatizado; el fragmento indexado del documento oficial confirma la denominación DFD nivel 0/contexto. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 900 cambios registrados y 11.223 preguntas sin revisión de contenido idénticas al commit original.
