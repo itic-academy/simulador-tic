@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 089 (IDs 761–765). Acumulado: 765 preguntas revisadas, 734 verificadas (207 vigentes, 463 corregidas y 64 históricas) y 31 pendientes de resolver; quedan 11.358 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 090 (IDs 766–770). Acumulado: 770 preguntas revisadas, 739 verificadas (208 vigentes, 465 corregidas y 66 históricas) y 31 pendientes de resolver; quedan 11.353 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.358 preguntas sin revisión de contenido. Siguiente ID: 766. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.353 preguntas sin revisión de contenido. Siguiente ID: 771. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -483,3 +483,8 @@ La pregunta 756 se corrige porque todas las opciones originales podían guardar 
 IDs 761–765: cinco preguntas verificadas, tres reformuladas para precisar el supuesto. Acumulado: 765 examinadas, 734 verificadas y 31 pendientes; 523 preguntas con cambios de contenido. Estados: 207 vigentes, 463 corregidas, 64 históricas y 31 pendientes. Quedan 11.358 sin revisar; siguiente ID 766.
 
 Se cotejan en el texto constitucional vigente la delegación legislativa y la composición del Congreso (761–762). La 763 se reformula para incluir tanto el nombramiento formal por el Rey como la propuesta del CGPJ, de acuerdo con el artículo 123.2. La 764 concreta la función consultiva y representativa del Comité Europeo de las Regiones según el TFUE. La 765 acota la composición del Consejo Europeo al artículo 15.2 TUE y distingue a sus miembros del Alto Representante, que participa en sus trabajos. Fuentes primarias: BOE, EUR-Lex, Comisión/Consejo de la UE y Comité Europeo de las Regiones. No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de convocatorias en este lote.
+## Lote 090 — 22 de octubre
+
+IDs 766–770: cinco preguntas verificadas, cuatro con reformulación o corrección de contenido. Acumulado: 770 examinadas, 739 verificadas y 31 pendientes; 527 preguntas con cambios de contenido. Estados: 208 vigentes, 465 corregidas, 66 históricas y 31 pendientes. Quedan 11.353 sin revisar; siguiente ID 771.
+
+En Europa 2020 (766) la versión española de la Comisión denomina la prioridad «crecimiento integrador»; «inclusivo» no era un distractor inequívocamente falso, por lo que se sustituye por «expansivo» y se conserva la etiqueta histórica de la estrategia con horizonte 2020. La regla general de entrada en vigor de la Ley 39/2015 (767) fue un año, con efectos diferidos de algunas previsiones electrónicas hasta 2021; se contextualiza como fecha pasada. La representación administrativa (768) se verifica con el artículo 5.4 y el RD 203/2021. La 769 se precisa como artículo 2.2.b de la Ley 40/2015. La 770 cambia su respuesta: la sede electrónica se identifica mediante certificados de autenticación de sitio web reconocidos o cualificados, o medio equivalente, no mediante certificados de firma electrónica. Fuentes primarias: Comisión Europea/EUR-Lex y BOE.
