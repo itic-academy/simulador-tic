@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 113 (IDs 881–885). Acumulado: 885 preguntas revisadas, 847 verificadas (240 vigentes, 529 corregidas y 78 históricas) y 38 pendientes de resolver (22 de fuente y 16 de ambigüedad); quedan 11.238 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 114 (IDs 886–890). Acumulado: 890 preguntas revisadas, 851 verificadas (243 vigentes, 530 corregidas y 79 históricas) y 38 pendientes de resolver (22 de fuente y 16 de ambigüedad); quedan 11.233 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.238 preguntas sin revisión de contenido. Siguiente ID: 886. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 38 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.233 preguntas sin revisión de contenido. Siguiente ID: 891. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 38 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -670,3 +670,11 @@ IDs 881–885 examinados individualmente: cuatro verificadas (240 vigentes, 529 
 Se deja sin certificar la conversión entre puntos de función, DSI y nivel del lenguaje de la pregunta 881: la relación circula como conversión empírica para estimar líneas, pero el enunciado la atribuye a COCOMO y no se localizó la fuente primaria exacta que sustenta el coeficiente. Se mantiene el original sin modificar y se registra la duda en vez de heredar la clave como verificada. Se confirma el acrónimo ACID (882); se aclara la distinción UML entre clase ordinaria y activa frente a «clase pasiva» como metaclase independiente (883). La definición de política de calidad se conserva como histórica porque la pregunta cita ISO 9000:2000, ya sustituida (884). Se concreta en el modelo E-R el límite máximo de participación como cardinalidad, diferenciándolo del grado y de participación total/parcial (885).
 
 Fuentes primarias consultadas: Microsoft Learn (ACID); OMG UML 2.5.1; ISO 9000 vigente; Peter Chen (MIT Sloan, artículo fundacional del modelo E-R). Para la pregunta 881 se revisaron conversiones de puntos de función/DSI, pero falta una fuente primaria verificable y queda pendiente. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 885 cambios registrados y 11.238 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 114 — 22 de octubre
+
+IDs 886–890 revisados individualmente. Tres preguntas verificadas y corregidas, una vigente conservada y una histórica delimitada a una edición concreta. Acumulado: 890 examinadas, 851 verificadas y 38 pendientes (22 de fuente y 16 de ambigüedad); 608 preguntas con cambios de contenido. Estados: 243 vigentes, 530 corregidas, 79 históricas y 38 pendientes. Quedan 11.233 sin revisar; siguiente ID 891.
+
+Se precisa que la pregunta EFQM se refiere al modelo clásico de 2013 y se conserva como histórica, explicitando REDER/RADAR, su visión holística y la capacidad de adaptación del ciclo de evaluación y mejora (886). El modelo de referencia WfMC distingue funciones de control en tiempo de ejecución, interacción con actividades y distribución/interfaces; el «lanzamiento programado» no es categoría del modelo (887). En MÉTRICA v3 se corrige la respuesta de D a A: los grupos son inicio, seguimiento/control y finalización, que incluye el registro documental de gestión (888). Se confirma la limitación del trabajo en curso como práctica Kanban, sin exigir iteraciones fijas ni roles de Scrum (889). «Línea base» se define como la configuración aprobada que sirve de referencia y se cambia mediante control formal (890).
+
+Fuentes primarias consultadas: Ministerio de Administraciones Públicas (MÉTRICA v3, Gestión de Proyectos); Workflow Management Coalition (Workflow Reference Model TC00-1003); Kanban University y Scrum.org (límites WIP); NASA Systems Engineering Handbook e ISO 10007:2017 (gestión de configuración); Ministerio para la Transformación Digital, EFQM España, EFQM e INSST (modelo EFQM y lógica REDER/RADAR). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 890 cambios registrados y 11.233 preguntas sin revisión de contenido idénticas al commit original.
