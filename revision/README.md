@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 092 (IDs 776–780). Acumulado: 780 preguntas revisadas, 749 verificadas (214 vigentes, 467 corregidas y 68 históricas) y 31 pendientes de resolver; quedan 11.343 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 093 (IDs 781–785). Acumulado: 785 preguntas revisadas, 754 verificadas (217 vigentes, 469 corregidas y 68 históricas) y 31 pendientes de resolver; quedan 11.338 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.343 preguntas sin revisión de contenido. Siguiente ID: 781. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.338 preguntas sin revisión de contenido. Siguiente ID: 786. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -503,3 +503,11 @@ IDs 776–780: cinco preguntas examinadas y verificadas; dos históricas context
 La Ley General de Subvenciones atribuye la concesión en la AGE a ministros y secretarios de Estado y exige autorización previa para importes superiores a 12 millones (776). El INE confirma que Cataluña recibió más turistas internacionales en 2022 (777), dato histórico. La PPC mantiene como marco básico la reforma del Reglamento (UE) 1380/2013, aplicada desde enero de 2014 (778). El artículo 11 de la LO 3/2007 regula las acciones positivas (779). La pregunta 780 se precisa al principio de igualdad retributiva del artículo 119 del Tratado CEE y distingue la firma en 1957 de su entrada en vigor en 1958.
 
 No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador completados sin errores: 12.123 preguntas estructuralmente válidas, 780 cambios registrados y 11.343 preguntas todavía sin revisión de contenido intactas frente al commit original.
+
+## Lote 093 — 22 de octubre
+
+IDs 781–785: cinco preguntas examinadas y verificadas; dos reformuladas para corregir terminología y actualización institucional. Acumulado: 785 examinadas, 754 verificadas y 31 pendientes; 533 preguntas con cambios de contenido. Estados: 217 vigentes, 469 corregidas, 68 históricas y 31 pendientes. Quedan 11.338 sin revisar; siguiente ID 786.
+
+Se corrige la tipología social de Weber a clase, estatus y partido, en vez de sustituir esas dimensiones por riqueza y poder (781). La LO 3/2007 respalda la identificación de las personas responsables en los protocolos de acoso (782) y define la discriminación directa por razón de sexo (783). La pregunta sobre medios compartidos se actualiza: tras el RD 1125/2024 son «transversales» y, como regla general, la AEAD desarrolla e implanta estos servicios; la CETIC realiza su declaración (784). El artículo 79 del TREBEP mantiene el concurso como procedimiento normal de provisión (785).
+
+No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador completados sin errores: 12.123 preguntas estructuralmente válidas, 785 cambios registrados y 11.338 preguntas aún sin revisión de contenido intactas frente al commit original.
