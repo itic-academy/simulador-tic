@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 093 (IDs 781–785). Acumulado: 785 preguntas revisadas, 754 verificadas (217 vigentes, 469 corregidas y 68 históricas) y 31 pendientes de resolver; quedan 11.338 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 094 (IDs 786–790). Acumulado: 790 preguntas revisadas, 759 verificadas (218 vigentes, 471 corregidas y 70 históricas) y 31 pendientes de resolver; quedan 11.333 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.338 preguntas sin revisión de contenido. Siguiente ID: 786. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.333 preguntas sin revisión de contenido. Siguiente ID: 791. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -511,3 +511,11 @@ IDs 781–785: cinco preguntas examinadas y verificadas; dos reformuladas para c
 Se corrige la tipología social de Weber a clase, estatus y partido, en vez de sustituir esas dimensiones por riqueza y poder (781). La LO 3/2007 respalda la identificación de las personas responsables en los protocolos de acoso (782) y define la discriminación directa por razón de sexo (783). La pregunta sobre medios compartidos se actualiza: tras el RD 1125/2024 son «transversales» y, como regla general, la AEAD desarrolla e implanta estos servicios; la CETIC realiza su declaración (784). El artículo 79 del TREBEP mantiene el concurso como procedimiento normal de provisión (785).
 
 No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador completados sin errores: 12.123 preguntas estructuralmente válidas, 785 cambios registrados y 11.338 preguntas aún sin revisión de contenido intactas frente al commit original.
+
+## Lote 094 — 22 de octubre
+
+IDs 786–790 examinados individualmente. Cinco verificadas; tres corregidas/reformuladas y dos contextualizadas como históricas. Acumulado: 790 examinadas, 759 verificadas y 31 pendientes; 538 preguntas con cambios de contenido. Estados: 218 vigentes, 471 corregidas, 70 históricas y 31 pendientes. Quedan 11.333 sin revisar; siguiente ID 791.
+
+Se distingue el objeto histórico del RD 1720/2007 de la vigencia actual, limitada por incompatibilidad con el RGPD y la LO 3/2018 (786). La primacía del Derecho de la Unión se formula solo ante incompatibilidad irreconciliable, no como regla para cualquier solapamiento del RGPD y la LOPDGDD (787). El ciclo elemental de procesamiento se delimita como entrada, procesamiento, almacenamiento y salida; la copia de seguridad no es una fase independiente (788). La cifra de 3.165 millones se vincula a la referencia gubernamental de julio de 2022 sobre el Plan de Digitalización de las Administraciones Públicas y se etiqueta como dato histórico, sin confundirla con el presupuesto total del Componente 11 (789). La disposición adicional novena de la Ley 40/2015 confirma que la Comisión Sectorial de Administración Electrónica es el órgano técnico de cooperación (790).
+
+Fuentes primarias consultadas: BOE (RD 1720/2007, LO 3/2018 y Ley 40/2015), EUR-Lex (primacía del Derecho de la Unión y artículo 288 TFUE), portal oficial PRTR y referencia del Consejo de Ministros de 5 de julio de 2022. Para el modelo de ciclo de procesamiento se consultó el texto educativo universitario abierto de OpenStax. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 790 cambios registrados y 11.333 preguntas sin revisión de contenido idénticas al commit original.
