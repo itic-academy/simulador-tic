@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 116 (IDs 896–900). Acumulado: 900 preguntas revisadas, 861 verificadas (248 vigentes, 533 corregidas y 80 históricas) y 39 pendientes de resolver (22 de fuente y 17 de ambigüedad); quedan 11.223 sin revisión de contenido. Hay 621 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 117 (IDs 901–905). Acumulado: 905 preguntas revisadas, 866 verificadas (249 vigentes, 537 corregidas y 80 históricas) y 39 pendientes de resolver (22 de fuente y 17 de ambigüedad); quedan 11.218 sin revisión de contenido. Hay 625 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.223 preguntas sin revisión de contenido. Siguiente ID: 901. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 39 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.218 preguntas sin revisión de contenido. Siguiente ID: 906. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 39 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -694,3 +694,11 @@ IDs 896–900 revisados individualmente: tres verificadas y dos pendientes (una 
 Se corrige la caracterización de ITIL v3: era un conjunto de publicaciones/buenas prácticas y no una norma ISO ni una escala de madurez; se conserva como contenido histórico versionado (896). Se confirma que en MÉTRICA v3 los casos de uso expresan funciones del sistema y perspectiva de actores (897); para su técnica DFD, MÉTRICA nombra el nivel 0 como diagrama de contexto (898). No se certifica la pregunta genérica sobre sistemas de gestión documental: ISO define captura, almacenamiento, control y entrega, pero no convierte el envío directo por fax/correo ni la capacidad de «millones en segundos» en propiedades universales; el enunciado no especifica estándar o producto para descartar una sola opción (899). Se precisa la respuesta sobre principios guía en ITIL 4: orientan decisiones en cualquier circunstancia; ITIL 4 mantiene guía y certificaciones y PeopleCert comunica que ITIL 5 conserva esos conceptos (900).
 
 Fuentes primarias consultadas: AXELOS y PeopleCert (ITIL); Ministerio de Administraciones Públicas, MÉTRICA v3 (Análisis del Sistema y Técnicas/Prácticas); ISO 19475:2021 e ISO/TC 46/SC 11 (gestión documental). La URL ministerial de Técnicas está publicada en el portal pero puede responder «Request Rejected» al acceso automatizado; el fragmento indexado del documento oficial confirma la denominación DFD nivel 0/contexto. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 900 cambios registrados y 11.223 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 117 — 22 de octubre
+
+IDs 901–905 revisados individualmente. Una pregunta se conserva vigente y cuatro se corrigen/formulan con mayor precisión. Acumulado: 905 examinadas, 866 verificadas y 39 pendientes (22 de fuente y 17 de ambigüedad); 625 preguntas con cambios de contenido. Estados: 249 vigentes, 537 corregidas, 80 históricas y 39 pendientes. Quedan 11.218 sin revisar; siguiente ID 906.
+
+Se confirma la ingeniería hacia delante como paso desde abstracciones y diseños independientes de implementación hasta la implementación física, según Chikofsky y Cross (901). Se ajusta la pregunta 902 al primer paso exacto del modelo de mejora continua ITIL 4: comprender la visión y objetivos. En MÉTRICA v3, ASI 2.4 valida requisitos y casos de uso como válidos, consistentes y completos; integridad no aparece entre esos criterios (903). Se especifica «Mean Time To Recovery» para evitar la expansión alternativa de MTTR y se distingue recuperación de tiempo entre fallos y reparación (904). Se delimita Calidad Total/TQM frente a la familia de normas ISO 9000 con una definición centrada en cliente, mejora continua y participación organizativa (905).
+
+Fuentes consultadas: artículo de Chikofsky y Cross en IEEE Software (DOI 10.1109/52.43044); PeopleCert, guía oficial ITIL 4 y modelo de mejora continua; Ministerio de Administraciones Públicas, MÉTRICA v3, ASI 2.4; NIST CSRC Glossary y SP 800-55v1 (2024); American Society for Quality (TQM) e ISO (familia ISO 9000). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote; ambos pendientes permanecen documentados. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 905 cambios registrados y 11.218 preguntas sin revisión de contenido idénticas al commit original.
