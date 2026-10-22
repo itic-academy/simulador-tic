@@ -32859,21 +32859,86 @@
         "Una base de datos que contiene descripciones para secuencias de escape que pueden cambiar el color de la pantalla."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se conserva la opción C. UUCP es la suite de comunicación entre sistemas Unix; el comando `uucp` programa transferencias de ficheros y `uux` solicitudes de ejecución remota. La opción describe el conjunto, no solo el ejecutable `uucp`.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UUCP",
+        "UNIX-to-UNIX Copy",
+        "uucp",
+        "uux",
+        "transferencia de ficheros",
+        "ejecución remota"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/zos/2.5.0?topic=users-using-uucp-network",
+            "referencia": "IBM Documentation, Using the UUCP network: la suite permite transferir ficheros y solicitar ejecución de comandos en sistemas remotos; uucp programa intercambios de ficheros y uux programa comandos remotos."
+          }
+        ],
+        "observaciones": "Se conserva la opción C. UUCP es la suite de comunicación entre sistemas Unix; el comando `uucp` programa transferencias de ficheros y `uux` solicitudes de ejecución remota. La opción describe el conjunto, no solo el ejecutable `uucp`."
+      }
     },
     {
       "id": 812,
       "bloque": 0,
       "tema": 0,
-      "texto": "Seleccione la respuesta INCORRECTA respecto a WinRM (Windows Remote Management):",
+      "texto": "Señale la afirmación incorrecta sobre el transporte predeterminado de WinRM:",
       "opciones": [
-        "Es un servicio que permite el intercambio de información de gestión entre sistemas.",
-        "Está basado en web services, siguiendo el estándar WS-Management.",
-        "WINRM utiliza HTTPS como protocolo de transporte.",
-        "Mediante WNRM se pueden ejecutar scripts en sistemas remotos."
+        "WinRM intercambia información de gestión entre sistemas.",
+        "WinRM implementa el protocolo WS-Management.",
+        "El listener creado por defecto por `winrm quickconfig` usa HTTPS.",
+        "PowerShell Remoting puede ejecutar comandos y scripts en sistemas remotos mediante WinRM."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene C como incorrecta, pero se reformula para preguntar por el transporte predeterminado. WinRM puede configurarse con HTTP o HTTPS; el listener creado por defecto usa HTTP, no HTTPS. Se corrige también la errata «WNRM» del original.",
+      "clasificacion": {
+        "A1": [
+          "A1-61"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "WinRM",
+        "WS-Management",
+        "HTTP",
+        "HTTPS",
+        "PowerShell Remoting",
+        "5985",
+        "5986"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-au/windows/win32/winrm/installation-and-configuration-for-windows-remote-management",
+            "referencia": "Microsoft Learn, Installation and configuration for WinRM: WinRM implementa WS-Management; sus listeners admiten HTTP o HTTPS y el transporte predeterminado creado por `winrm quickconfig` es HTTP."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/powershell/scripting/learn/remoting/winrmsecurity?view=powershell-7.3",
+            "referencia": "Microsoft Learn, Security considerations for PowerShell Remoting using WinRM: describe PowerShell Remoting a través de WinRM y sus puertos HTTP 5985 y HTTPS 5986."
+          }
+        ],
+        "observaciones": "Se mantiene C como incorrecta, pero se reformula para preguntar por el transporte predeterminado. WinRM puede configurarse con HTTP o HTTPS; el listener creado por defecto usa HTTP, no HTTPS. Se corrige también la errata «WNRM» del original."
+      }
     },
     {
       "id": 813,
@@ -32887,13 +32952,43 @@
         "(A)tomicidad, (C)onsistencia, a(I)slamiento y (D)urabilidad"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La opción D es correcta: ACID corresponde a atomicidad, consistencia, aislamiento y durabilidad de las transacciones. «Integridad» no sustituye a «aislamiento», y «confidencialidad» no forma parte del acrónimo.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ACID",
+        "atomicidad",
+        "consistencia",
+        "aislamiento",
+        "durabilidad",
+        "transacciones"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://www.postgresql.org/docs/current/glossary.html",
+            "referencia": "PostgreSQL Documentation, Glossary, entrada ACID: Atomicity, Consistency, Isolation, and Durability."
+          }
+        ],
+        "observaciones": "La opción D es correcta: ACID corresponde a atomicidad, consistencia, aislamiento y durabilidad de las transacciones. «Integridad» no sustituye a «aislamiento», y «confidencialidad» no forma parte del acrónimo."
+      }
     },
     {
       "id": 814,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué extensión tienen en Forms 4.5 los módulos Menú en binario?",
+      "texto": "En Oracle Forms 4.5, ¿qué extensión identifica el módulo de menú guardado antes de compilarlo?",
       "opciones": [
         ".mmb",
         ".mxb",
@@ -32901,21 +32996,80 @@
         ".bll"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva la respuesta A (.mmb) y se precisa que es la extensión del módulo de menú guardado antes de compilarlo; el ejecutable compilado usa .mmx. Oracle Forms 4.5 es una versión histórica sin soporte actual, por lo que la pregunta queda contextualizada como conocimiento de legado, no como recomendación tecnológica vigente.",
+      "clasificacion": {
+        "A1": [],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Oracle Forms 4.5",
+        "módulo de menú",
+        "MMB",
+        "MMX",
+        "tecnología histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://www.oracle.com/ocom/groups/public/%40otn/documents/webcontent/496307.htm",
+            "referencia": "Oracle, Creating Oracle Forms Menus: los módulos de menú se guardan con extensión .mmb; para ejecutar el menú se genera el archivo compilado .mmx."
+          },
+          {
+            "url": "https://www.oracle.com/application-development/technologies/forms/forms-developer-and-forms-server.html",
+            "referencia": "Oracle, archivo oficial de documentación de Forms: las guías de Forms 4.5 y versiones previas se ofrecen como material histórico y las versiones referidas ya no tienen soporte."
+          }
+        ],
+        "observaciones": "Se conserva la respuesta A (.mmb) y se precisa que es la extensión del módulo de menú guardado antes de compilarlo; el ejecutable compilado usa .mmx. Oracle Forms 4.5 es una versión histórica sin soporte actual, por lo que la pregunta queda contextualizada como conocimiento de legado, no como recomendación tecnológica vigente."
+      }
     },
     {
       "id": 815,
       "bloque": 0,
       "tema": 0,
-      "texto": "En Tecnologías de la Información y Comunicaciones, CRUD:",
+      "texto": "¿Qué significa el acrónimo CRUD en la gestión de datos?",
       "opciones": [
-        "es el acrónimo de Crear, Leer/Obtener, Actualizar y Borrar (Create, Read/Retrieve, Update, Delete).",
-        "es la base de arquitecturas Web RESTful (basadas en REST).",
-        "tiene su origen en sentencias de base de datos relacionales.",
-        "las opciones a, b y c son ciertas."
+        "Create, Read/Retrieve, Update y Delete (crear, leer/consultar, actualizar y borrar).",
+        "Es una extensión de REST obligatoria para todas las aplicaciones web.",
+        "Es el nombre de un conjunto específico de sentencias SQL del estándar ANSI.",
+        "Es un protocolo de transporte que sustituye a HTTP en las API."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Se corrige la clave a A y se pregunta directamente por la expansión del acrónimo. CRUD significa Create, Read/Retrieve, Update y Delete. Se evita afirmar que todas las arquitecturas REST se reducen a CRUD o atribuir el origen del término exclusivamente a sentencias SQL.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "CRUD",
+        "Create",
+        "Read/Retrieve",
+        "Update",
+        "Delete",
+        "API REST"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/iis-administration/api/crud",
+            "referencia": "Microsoft Learn, CRUD: desarrolla las operaciones Create, Read, Update y Delete y muestra su correspondencia habitual con métodos HTTP en esa API REST."
+          }
+        ],
+        "observaciones": "Se corrige la clave a A y se pregunta directamente por la expansión del acrónimo. CRUD significa Create, Read/Retrieve, Update y Delete. Se evita afirmar que todas las arquitecturas REST se reducen a CRUD o atribuir el origen del término exclusivamente a sentencias SQL."
+      }
     },
     {
       "id": 816,
