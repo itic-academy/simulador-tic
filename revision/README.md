@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 117 (IDs 901–905). Acumulado: 905 preguntas revisadas, 866 verificadas (249 vigentes, 537 corregidas y 80 históricas) y 39 pendientes de resolver (22 de fuente y 17 de ambigüedad); quedan 11.218 sin revisión de contenido. Hay 625 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 118 (IDs 906–910). Acumulado: 910 preguntas revisadas, 869 verificadas (250 vigentes, 539 corregidas y 80 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.213 sin revisión de contenido. Hay 627 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,11 +28,11 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.218 preguntas sin revisión de contenido. Siguiente ID: 906. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 39 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.213 preguntas sin revisión de contenido. Siguiente ID: 911. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
-Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635, 692, 805 y 842. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105, 111, 700, 792, 810, 821, 822, 881 y 899. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
+Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635, 692, 805, 842 y 910. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105, 111, 700, 792, 810, 821, 822, 881, 899 y 909. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
 
 Correcciones destacadas de esta continuación: LDAP (64) contenía dos respuestas defendibles; Java static (79) cambia la respuesta correcta de A a B; la fecha del artículo 6.d de la Orden ETD/465/2021 (89) pasa a 1 de marzo de 2023 conforme a la modificación de 2022; WebAssembly (98) admite ejecución fuera del navegador; Data Act (100) se actualiza a su aplicación general desde septiembre de 2025. Se conservan los originales completos.
 
@@ -702,3 +702,11 @@ IDs 901–905 revisados individualmente. Una pregunta se conserva vigente y cuat
 Se confirma la ingeniería hacia delante como paso desde abstracciones y diseños independientes de implementación hasta la implementación física, según Chikofsky y Cross (901). Se ajusta la pregunta 902 al primer paso exacto del modelo de mejora continua ITIL 4: comprender la visión y objetivos. En MÉTRICA v3, ASI 2.4 valida requisitos y casos de uso como válidos, consistentes y completos; integridad no aparece entre esos criterios (903). Se especifica «Mean Time To Recovery» para evitar la expansión alternativa de MTTR y se distingue recuperación de tiempo entre fallos y reparación (904). Se delimita Calidad Total/TQM frente a la familia de normas ISO 9000 con una definición centrada en cliente, mejora continua y participación organizativa (905).
 
 Fuentes consultadas: artículo de Chikofsky y Cross en IEEE Software (DOI 10.1109/52.43044); PeopleCert, guía oficial ITIL 4 y modelo de mejora continua; Ministerio de Administraciones Públicas, MÉTRICA v3, ASI 2.4; NIST CSRC Glossary y SP 800-55v1 (2024); American Society for Quality (TQM) e ISO (familia ISO 9000). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote; ambos pendientes permanecen documentados. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 905 cambios registrados y 11.218 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 118 — 22 de octubre
+
+IDs 906–910 revisados individualmente: tres verificadas/corregidas y dos pendientes de resolver (una por fuente y otra por ambigüedad). Acumulado: 910 examinadas, 869 verificadas y 41 pendientes (23 de fuente y 18 de ambigüedad); 627 preguntas con cambios de contenido. Estados: 250 vigentes, 539 corregidas, 80 históricas y 41 pendientes. Quedan 11.213 sin revisar; siguiente ID 911.
+
+Se confirman en McCall las tres perspectivas operación, revisión y transición del producto (906). La pregunta de niveles de prueba se limita al sistema completo e integrado: ISTQB reconoce que las pruebas de características no funcionales pueden ejecutarse en varios niveles; se excluye «despliegue», que puede designar instalación o aceptación (907). MÉTRICA v3 ubica CSI-CAL 4, revisión de formación a usuarios finales, dentro de Construcción del Sistema de Información (908). La pregunta genérica de gestor documental no se certifica: sin producto o requisitos explícitos, tanto la restricción de formatos como el volumen/velocidad son capacidades dependientes de la solución (909). La clasificación de prototipos atribuida a J. Whitten queda pendiente porque no se localizó edición y página que sustenten la taxonomía específica (910).
+
+Fuentes consultadas: McCall, Richards y Walters (RADC-TR-77-369, 1977), verificado mediante la síntesis técnica de NIST; ISTQB CTFL Syllabus v4.0.1 (2024); Ministerio de Administraciones Públicas, MÉTRICA v3, Aseguramiento de la Calidad; ISO 19475 e ISO/TC 46/SC 11. Para Whitten no se halló la fuente primaria precisa y se conserva sin validar. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote; esos pendientes continúan abiertos. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 910 cambios registrados y 11.213 preguntas sin revisión de contenido idénticas al commit original.
