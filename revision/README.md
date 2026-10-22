@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 120 (IDs 916–920). Acumulado: 920 preguntas revisadas, 879 verificadas (252 vigentes, 544 corregidas y 83 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.203 sin revisión de contenido. Hay 635 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 121 (IDs 921–925). Acumulado: 925 preguntas revisadas, 884 verificadas (252 vigentes, 549 corregidas y 83 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.198 sin revisión de contenido. Hay 640 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.203 preguntas sin revisión de contenido. Siguiente ID: 921. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.198 preguntas sin revisión de contenido. Siguiente ID: 926. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -728,3 +728,11 @@ IDs 916–920 revisados individualmente. Dos se conservan vigentes, dos se corri
 Se confirma en la especificación OMG que UML 2.5.1 clasifica los diagramas principalmente en estructurales y de comportamiento, con constructos suplementarios que pueden mezclar aspectos (916). La estructura por fases y la centralidad de Service Strategy se acotan a ITIL v3; «marco de control de amplio alcance» corresponde a COBIT (917). El Daily Scrum se alinea con la Scrum Guide 2020: inspeccionar el progreso hacia el Sprint Goal y adaptar el Sprint Backlog; la resolución detallada de problemas se hace fuera de la reunión (918). El modelo de agrupamiento se contrasta con Bertrand Meyer: un cluster es un conjunto de clases lógicamente relacionadas (919). En entrega incremental, Sommerville establece priorizar primero los servicios de mayor valor; se completa el supuesto para justificar que la gestión básica de documentos sea la prioridad del primer incremento (920).
 
 Fuentes consultadas: OMG UML 2.5.1; Office of Government Commerce/AXELOS, Foundations of ITIL v3, e ISACA; Scrum Guide 2020 de Schwaber y Sutherland; Bertrand Meyer, Object-Oriented Software Construction, 2.ª ed.; Ian Sommerville, Software Engineering, 10.ª ed., §2.3.2. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 920 cambios registrados y 11.203 preguntas restantes idénticas al commit original.
+
+## Lote 121 — 22 de octubre
+
+IDs 921–925 revisados individualmente y corregidos. Acumulado: 925 examinadas, 884 verificadas (252 vigentes, 549 corregidas y 83 históricas) y 41 pendientes (23 de fuente y 18 de ambigüedad); 640 preguntas con cambios de contenido. Quedan 11.198 sin revisar; siguiente ID 926.
+
+Se corrige la última fase de RUP a transición y se evita equiparar fase con iteración (921). Se identifica cobertura de ramas como técnica estructural de caja blanca y se reemplaza un distractor de regresión que podía admitir técnicas de ambos tipos (922). Se matiza el objetivo de coste en gestión de servicios para evitar prometer reducción absoluta (923). Se define el indicador ANS con población y periodo explícitos (924). Se precisa Planning Poker como estimación privada con revelado simultáneo y discusión; Fibonacci modificada es frecuente, no obligatoria (925).
+
+Fuentes consultadas: documentación IBM Rational sobre las fases RUP; ISTQB CTFL v4.0.1; ISO/IEC 20000-2 y PeopleCert ITIL 4; ejemplo de KPI de cumplimiento de SLA de ServiceNow; artículo original de Planning Poker de James Grenning y nota de Mike Cohn sobre escalas Fibonacci modificadas. No se han estudiado nuevos PDFs de academia ni cotejado correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 925 cambios registrados y 11.198 preguntas restantes idénticas al commit original.
