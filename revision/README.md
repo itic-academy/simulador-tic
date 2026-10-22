@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 088 (IDs 756–760). Acumulado: 760 preguntas revisadas, 729 verificadas (204 vigentes, 461 corregidas y 64 históricas) y 31 pendientes de resolver; quedan 11.363 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 089 (IDs 761–765). Acumulado: 765 preguntas revisadas, 734 verificadas (207 vigentes, 463 corregidas y 64 históricas) y 31 pendientes de resolver; quedan 11.358 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.363 preguntas sin revisión de contenido. Siguiente ID: 761. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.358 preguntas sin revisión de contenido. Siguiente ID: 766. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -478,3 +478,8 @@ Se precisa Info.plist como archivo de información del bundle iOS, teniendo en c
 IDs 756–760: cinco preguntas examinadas y verificadas, tres con cambios de contenido. Acumulado: 760 examinadas, 729 verificadas y 31 pendientes; 520 preguntas con cambios de contenido. Estados: 204 vigentes, 461 corregidas, 64 históricas y 31 pendientes. Quedan 11.363 sin revisar; siguiente ID 761.
 
 La pregunta 756 se corrige porque todas las opciones originales podían guardar relación con la brecha digital; ahora distingue el acceso a habilidades del acceso material y los factores sociales, con el modelo de Van Dijk. En DESI 2022 (757) se confirma que las tres afirmaciones son ciertas: España fue tercera en datos abiertos, quinta en servicios públicos digitales y superó ligeramente a la UE en titulados TIC (4,0 % frente a 3,9 %); se conserva D como respuesta histórica. La 758 se reformula como pregunta conceptual: blogs, redes, vídeo y sindicación son ejemplos asociados a Web 2.0, etiqueta sin definición técnica cerrada. En España Digital 2025 (759), la fuente oficial dice «cerca de 50 medidas», no exactamente 48; se conserva el dato inequívoco de diez ejes. Horizonte Europa (760) se confirma para 2021–2027 mediante la Comisión y la Decisión (UE) 2021/764. No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de convocatorias en este lote.
+## Lote 089 — 22 de octubre
+
+IDs 761–765: cinco preguntas verificadas, tres reformuladas para precisar el supuesto. Acumulado: 765 examinadas, 734 verificadas y 31 pendientes; 523 preguntas con cambios de contenido. Estados: 207 vigentes, 463 corregidas, 64 históricas y 31 pendientes. Quedan 11.358 sin revisar; siguiente ID 766.
+
+Se cotejan en el texto constitucional vigente la delegación legislativa y la composición del Congreso (761–762). La 763 se reformula para incluir tanto el nombramiento formal por el Rey como la propuesta del CGPJ, de acuerdo con el artículo 123.2. La 764 concreta la función consultiva y representativa del Comité Europeo de las Regiones según el TFUE. La 765 acota la composición del Consejo Europeo al artículo 15.2 TUE y distingue a sus miembros del Alto Representante, que participa en sus trabajos. Fuentes primarias: BOE, EUR-Lex, Comisión/Consejo de la UE y Comité Europeo de las Regiones. No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de convocatorias en este lote.
