@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 123 (IDs 931–935). Acumulado: 935 preguntas revisadas, 894 verificadas (253 vigentes, 556 corregidas y 85 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.188 sin revisión de contenido. Hay 649 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 124 (IDs 936–940). Acumulado: 940 preguntas revisadas, 899 verificadas (254 vigentes, 560 corregidas y 85 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.183 sin revisión de contenido. Hay 653 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.188 preguntas sin revisión de contenido. Siguiente ID: 936. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.183 preguntas sin revisión de contenido. Siguiente ID: 941. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -750,3 +750,15 @@ IDs 931–935 revisados individualmente: una se conserva vigente, tres se corrig
 Se distingue la prueba de regresión de la prueba de confirmación tras un cambio (931). Se acota el uso del diagrama de despliegue de MÉTRICA v3 a DSI 1.1 y al particionamiento físico para eliminar respuestas defendibles en otras tareas (932). EFQM criterio 9 se marca histórico para la versión de 2013 y se diferencia del modelo actual de siete criterios (933). Se corrige la relación esfuerzo/plazo de la ecuación de Putnam/SLIM, explicitando sus supuestos y la dependencia aproximada de T⁻⁴ (934). Se precisa el prototipado como apoyo al descubrimiento y validación de requisitos poco claros, no como práctica universal ni evidencia suficiente de seguridad (935).
 
 Fuentes consultadas: ISTQB CTFL Syllabus v4.0.1; MÉTRICA v3 del Ministerio de Administraciones Públicas; guías EFQM 2013 de Club Excelencia en Gestión/AEVAL y modelo EFQM actual; Putnam y Myers y explicación de QSM; Ian Sommerville, *Software Engineering*, 10.ª edición. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote; ambos pendientes siguen abiertos. `inventario.cjs` y `verificar.cjs` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 935 cambios registrados y 11.188 preguntas restantes idénticas al commit original.
+
+## Lote 124 — 22 de octubre
+
+IDs 936–940 revisados individualmente: una vigente y cuatro corregidas. Acumulado: 940 examinadas, 899 verificadas (254 vigentes, 560 corregidas y 85 históricas) y 41 pendientes (23 de fuente y 18 de ambigüedad); 653 preguntas con cambios de contenido. Quedan 11.183 sin revisar; siguiente ID 941.
+
+Se documenta la CMDB como repositorio de elementos de configuración y sus relaciones (936); se corrige la definición de rama Git como referencia móvil a commits, sin implicar copia física del repositorio (937); se corrige la clave y se distingue tamaño funcional en puntos de función de productividad por unidad de esfuerzo (938); y se delimitan dos cuestiones de MÉTRICA v3: derivación del modelo físico desde el modelo lógico normalizado en DSI 6 (939), y pruebas de regresión para evitar el efecto onda en MSI 3.3 (940).
+
+Cotejo parcial con materiales de Drive: el bloque 41 «ITIL y COBIT» (2026) explica que los CI y sus relaciones se registran en la CMDB; el tema 93 de MÉTRICA v3 recoge DSI y técnicas de prueba; el bloque 38 «Análisis, diseño y construcción» (2026) define regresión como detección de roturas del comportamiento previamente válido y recoge Git como control de versiones. El bloque 9 de organización y gestión trata productividad/throughput, pero no fundamenta por sí mismo el cálculo de puntos de función; para la pregunta 938 se usa la referencia primaria de IFPUG. Esto es cotejo de materiales pertinentes, no revisión exhaustiva de todos los PDFs de academia.
+
+Se consultó la convocatoria oficial BOE-A-2025-25938 (Cuerpo Superior TIC, 16 de diciembre de 2025), de la que procede el programa A1, y la BOE-A-2025-26262 para el programa A2, junto con búsquedas de correcciones posteriores por identificador/título; no se localizó una corrección de esas convocatorias en los resultados oficiales consultados. La comprobación global de modificaciones y correcciones de convocatorias sigue pendiente.
+
+Fuentes técnicas: PeopleCert/ITIL; documentación oficial de Git; IFPUG, Function Point Analysis y MetricViews (agosto de 2015); Ministerio de Administraciones Públicas, MÉTRICA v3, Diseño del Sistema de Información, Participantes y Mantenimiento de Sistemas de Información. `inventario.cjs` y `verificar.cjs` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 940 cambios registrados y 11.183 preguntas restantes idénticas al commit original.
