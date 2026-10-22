@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 108 (IDs 856–860). Acumulado: 860 preguntas revisadas, 823 verificadas (234 vigentes, 512 corregidas y 77 históricas) y 37 pendientes de resolver; quedan 11.263 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 109 (IDs 861–865). Acumulado: 865 preguntas revisadas, 828 verificadas (236 vigentes, 515 corregidas y 77 históricas) y 37 pendientes de resolver; quedan 11.258 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -630,3 +630,11 @@ IDs 856–860 examinados individualmente y verificados. Tres se conservan como h
 Se delimita 802.11p como la enmienda WLAN para entorno vehicular y se advierte que IEEE la marca como sustituida/integrada en ediciones posteriores de 802.11 (856). Se confirma 802.5 como Token Ring y se conserva el dato con estado histórico, pues el estándar se retiró (857). Se distingue IEEE 802.20/MBWA de 802.16/WiMAX y se documenta que 802.20-2008 fue retirado en 2018 (858). Se concreta STP clásico IEEE 802.1D: enlace/capa 2, sin encaminamiento IP y con convergencia más lenta que RSTP en las condiciones apropiadas (859). Se reescribe DOCSIS 3.1 para hacer inequívoca su opción correcta: OFDM en bajada y OFDMA en subida; la especificación inicial fue publicada en 2013, conserva interoperabilidad con SC-QAM heredado y no define un certificado EuroDOCSIS 3.1 separado (860).
 
 Fuentes primarias consultadas: IEEE SA (802.11p, 802.11-2024, 802.5-1997 y 802.20-2008); Cisco (STP/RSTP); CableLabs (DOCSIS 3.1 PHY, historia de especificación y PKI). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 860 cambios registrados y 11.263 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 109 — 22 de octubre
+
+IDs 861–865 examinados individualmente y verificados. Dos se conservan vigentes y tres se corrigieron. Acumulado: 865 examinadas, 828 verificadas y 37 pendientes (22 de fuente y 15 de ambigüedad); 591 preguntas con cambios de contenido. Estados: 236 vigentes, 515 corregidas, 77 históricas y 37 pendientes. Quedan 11.258 sin revisar; siguiente ID 866.
+
+Se confirma CMTS como sistema de cabecera que intercambia datos con cable módems DOCSIS (861). Se delimita S/MIME: el contenido MIME, cuerpo y adjuntos se cifran normalmente; las cabeceras externas quedan visibles salvo encapsulación expresa de un mensaje completo (862). DECT se mantiene como tecnología de telefonía inalámbrica para hogares, empresas y despliegues densos; ETSI sigue manteniendo tanto DECT clásico como DECT-2020 NR (863). Se concreta el diseño celular en dividir cobertura en celdas planificadas y reutilizar grupos de frecuencias separados para evitar interferencias (864). Se precisa que la afirmación falsa sobre 5G es que equipos LTE exclusivos acceden a 5G NR por retrocompatibilidad; se acotan beamforming y la meta radio de 1 ms a sus condiciones, sin presentarlas como absolutos (865).
+
+Fuentes primarias consultadas: CableLabs (CMTS/Remote PHY); IETF RFC 8551 y 9787 (S/MIME); ETSI DECT y TR 101 178; Rappaport, *Wireless Communications: Principles and Practice*, y UIT (planificación celular e IMT-2020/5G). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 865 cambios registrados y 11.258 preguntas sin revisión de contenido idénticas al commit original.
