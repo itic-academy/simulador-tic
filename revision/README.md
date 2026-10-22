@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 119 (IDs 911–915). Acumulado: 915 preguntas revisadas, 874 verificadas (250 vigentes, 542 corregidas y 82 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.208 sin revisión de contenido. Hay 632 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 120 (IDs 916–920). Acumulado: 920 preguntas revisadas, 879 verificadas (252 vigentes, 544 corregidas y 83 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.203 sin revisión de contenido. Hay 635 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.208 preguntas sin revisión de contenido. Siguiente ID: 916. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.203 preguntas sin revisión de contenido. Siguiente ID: 921. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -720,3 +720,11 @@ IDs 911–915 revisados individualmente. Tres corregidos y dos delimitados como 
 Se restringe CMMI a la suite v1.3, cuyos modelos eran Development, Acquisition y Services; la taxonomía actual CMMI v3.0 tiene ocho dominios (911). COBIT 4.1 se limita a los tres ejes clásicos del cubo; «personas» integra los recursos de TI, no es un eje adicional (912). ISACA fecha la primera publicación de COBIT en 1996, por lo que se corrige «finales de 1995» (913). Se formula con mayor precisión el desarrollo incremental por construcciones sucesivas (914). Se corrige la clave del DFD: representa procesos/funciones y flujos de datos, no el modelo conceptual de datos (915).
 
 Fuentes consultadas: Software Engineering Institute (CMMI v1.3) y CMMI Institute (dominios v3.0); ISACA e IT Governance Institute (COBIT y COBIT 4.1); NASA Software Engineering Handbook (ciclo incremental); Ministerio de Administraciones Públicas (MÉTRICA v3, Análisis del Sistema) y directriz DFD de MÉTRICA alojada por la Universidad de Castilla-La Mancha. No se han estudiado nuevos PDFs de academia ni cotejado correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 915 cambios registrados y 11.208 preguntas restantes idénticas al commit original.
+
+## Lote 120 — 22 de octubre
+
+IDs 916–920 revisados individualmente. Dos se conservan vigentes, dos se corrigen y una queda delimitada como histórica. Acumulado: 920 examinadas, 879 verificadas y 41 pendientes (23 de fuente y 18 de ambigüedad); 635 preguntas con cambios de contenido. Estados: 252 vigentes, 544 corregidas, 83 históricas y 41 pendientes. Quedan 11.203 sin revisar; siguiente ID 921.
+
+Se confirma en la especificación OMG que UML 2.5.1 clasifica los diagramas principalmente en estructurales y de comportamiento, con constructos suplementarios que pueden mezclar aspectos (916). La estructura por fases y la centralidad de Service Strategy se acotan a ITIL v3; «marco de control de amplio alcance» corresponde a COBIT (917). El Daily Scrum se alinea con la Scrum Guide 2020: inspeccionar el progreso hacia el Sprint Goal y adaptar el Sprint Backlog; la resolución detallada de problemas se hace fuera de la reunión (918). El modelo de agrupamiento se contrasta con Bertrand Meyer: un cluster es un conjunto de clases lógicamente relacionadas (919). En entrega incremental, Sommerville establece priorizar primero los servicios de mayor valor; se completa el supuesto para justificar que la gestión básica de documentos sea la prioridad del primer incremento (920).
+
+Fuentes consultadas: OMG UML 2.5.1; Office of Government Commerce/AXELOS, Foundations of ITIL v3, e ISACA; Scrum Guide 2020 de Schwaber y Sutherland; Bertrand Meyer, Object-Oriented Software Construction, 2.ª ed.; Ian Sommerville, Software Engineering, 10.ª ed., §2.3.2. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 920 cambios registrados y 11.203 preguntas restantes idénticas al commit original.
