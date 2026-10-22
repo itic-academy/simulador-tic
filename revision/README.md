@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 121 (IDs 921–925). Acumulado: 925 preguntas revisadas, 884 verificadas (252 vigentes, 549 corregidas y 83 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.198 sin revisión de contenido. Hay 640 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 122 (IDs 926–930). Acumulado: 930 preguntas revisadas, 889 verificadas (252 vigentes, 553 corregidas y 84 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.193 sin revisión de contenido. Hay 645 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.198 preguntas sin revisión de contenido. Siguiente ID: 926. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.193 preguntas sin revisión de contenido. Siguiente ID: 931. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -736,3 +736,10 @@ IDs 921–925 revisados individualmente y corregidos. Acumulado: 925 examinadas,
 Se corrige la última fase de RUP a transición y se evita equiparar fase con iteración (921). Se identifica cobertura de ramas como técnica estructural de caja blanca y se reemplaza un distractor de regresión que podía admitir técnicas de ambos tipos (922). Se matiza el objetivo de coste en gestión de servicios para evitar prometer reducción absoluta (923). Se define el indicador ANS con población y periodo explícitos (924). Se precisa Planning Poker como estimación privada con revelado simultáneo y discusión; Fibonacci modificada es frecuente, no obligatoria (925).
 
 Fuentes consultadas: documentación IBM Rational sobre las fases RUP; ISTQB CTFL v4.0.1; ISO/IEC 20000-2 y PeopleCert ITIL 4; ejemplo de KPI de cumplimiento de SLA de ServiceNow; artículo original de Planning Poker de James Grenning y nota de Mike Cohn sobre escalas Fibonacci modificadas. No se han estudiado nuevos PDFs de academia ni cotejado correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 925 cambios registrados y 11.198 preguntas restantes idénticas al commit original.
+## Lote 122 — 22 de octubre
+
+IDs 926–930 revisados individualmente: cuatro corregidos y uno histórico con atribución y alcance versionados. Acumulado: 930 examinadas, 889 verificadas (252 vigentes, 553 corregidas y 84 históricas) y 41 pendientes (23 de fuente y 18 de ambigüedad); 645 preguntas con cambios de contenido. Quedan 11.193 sin revisar; siguiente ID 931.
+
+Se rectifica la atribución a ITIL de la definición de plan de contingencia, que corresponde a lineamientos de AGETIC, y se reformula la pregunta citando esa fuente (926). Se aclara la jerarquía DFD de MÉTRICA v3: funciones en nivel 2 y subfunciones en nivel 3 (927). JAD se describe como taller facilitado de obtención/acuerdo de requisitos y se precisa que puede usarse en DSDM sin ser exclusiva de ese método (928). Se distinguen los ejemplos de flujos de consulta, actualización y diálogo de MÉTRICA frente al distractor de sincronización (929). En COBIT 5, «cubrir la empresa de extremo a extremo» sí es principio; se reemplaza la opción para dejar una única afirmación falsa y se marca la taxonomía como histórica frente a COBIT 2019 (930).
+
+Fuentes consultadas: AGETIC, lineamientos para planes de contingencia tecnológica; Ministerio de Administraciones Públicas, MÉTRICA v3, Técnicas y Prácticas (jerarquía y notación DFD); Centre for Software Engineering (DSDM) y PMI (JAD); ISACA (principios de COBIT 5 y comparación con COBIT 2019). No se han estudiado nuevos PDFs de academia ni cotejado correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 930 cambios registrados y 11.193 preguntas restantes idénticas al commit original.
