@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 097 (IDs 801–805). Acumulado: 805 preguntas revisadas, 772 verificadas (221 vigentes, 481 corregidas y 70 históricas) y 33 pendientes de resolver; quedan 11.318 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 098 (IDs 806–810). Acumulado: 810 preguntas revisadas, 776 verificadas (221 vigentes, 485 corregidas y 70 históricas) y 34 pendientes de resolver; quedan 11.313 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,11 +28,11 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.318 preguntas sin revisión de contenido. Siguiente ID: 806. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 33 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.313 preguntas sin revisión de contenido. Siguiente ID: 811. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 34 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
-Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635 y 692. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105, 111 y 700. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
+Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635, 692 y 805. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105, 111, 700 y 810. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
 
 Correcciones destacadas de esta continuación: LDAP (64) contenía dos respuestas defendibles; Java static (79) cambia la respuesta correcta de A a B; la fecha del artículo 6.d de la Orden ETD/465/2021 (89) pasa a 1 de marzo de 2023 conforme a la modificación de 2022; WebAssembly (98) admite ejecución fuera del navegador; Data Act (100) se actualiza a su aplicación general desde septiembre de 2025. Se conservan los originales completos.
 
@@ -542,3 +542,11 @@ IDs 801–805 examinados individualmente. Cuatro verificadas —tres corregidas 
 Se reformula la definición de RFC para distinguir la serie archivística y sus diversos estados de la categoría de Internet Standard (801). La Comisión Europea confirma que Horizonte Europa sucedió al programa Horizonte 2020 y cubre 2021–2027 (802). Se corrige SMP a «Symmetric Multiprocessing» y se elimina una descripción subjetiva de rendimiento (803). Se actualizan los tipos de tablespace de Oracle a permanente, temporal y undo, diferenciándolos de nombres concretos como SYSTEM y SYSAUX (804). La 805 se conserva íntegra y pendiente: las opciones de costes no son universalmente válidas y «usuarios inoperativos» parece una errata; se cotejará con el temario de academia antes de alterar texto o clave.
 
 Fuentes consultadas: RFC Editor (definición y estados de RFC); Comisión Europea (fichas oficiales de Horizonte 2020 y Horizonte Europa); IBM Documentation (SMP); Oracle Database 26ai Administrator’s Guide (tablespaces). No se han consultado nuevos documentos de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 805 cambios registrados y 11.318 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 098 — 22 de octubre
+
+IDs 806–810 examinados individualmente. Cuatro verificadas y corregidas; la 810 queda pendiente por ambigüedad histórica entre creación de un CD arrancable y escritura de imágenes de arranque para medios distintos. Acumulado: 810 examinadas, 776 verificadas y 34 pendientes; 552 preguntas con cambios de contenido. Estados: 221 vigentes, 485 corregidas, 70 históricas y 34 pendientes (21 de fuente y 13 de ambigüedad). Quedan 11.313 sin revisar; siguiente ID 811.
+
+REST y SOAP se distinguen como estilo arquitectónico y marco de mensajería XML, respectivamente (806). Se delimita la ubicación lógica de la presentación al modelo clásico de tres niveles, sin exigir que cada nivel sea una máquina física diferente (807). Se separa la sintaxis JSON de ECMA-404 del objeto y métodos JSON definidos por ECMA-262 y se corrige el distractor XML (808). Se elimina la generalización errónea de que RPC usa solo transporte no orientado a conexión: ONC RPC puede operar sobre UDP y TCP (809). La 810 se conserva sin certificar porque no concreta distribución, época ni medio de arranque y `dd`, `rawrite` y `mkbootdisk` no describen un procedimiento único intercambiable.
+
+Fuentes consultadas: Roy Fielding (tesis doctoral sobre REST) y W3C (SOAP 1.2); Microsoft Learn (arquitectura lógica de tres niveles); Ecma International (ECMA-404 y ECMA-262); RFC Editor (RFC 5531); Oracle se consultó en el lote anterior. No se han cotejado PDFs de academia ni posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 810 cambios registrados y 11.313 preguntas sin revisión de contenido idénticas al commit original.
