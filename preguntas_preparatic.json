@@ -35672,7 +35672,7 @@
       "id": 871,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el ENS la medida de Plan de Continuidad aplica alnivel:",
+      "texto": "En el Esquema Nacional de Seguridad aprobado por el Real Decreto 311/2022, ¿a qué nivel de categoría se aplica la medida de continuidad op.cont.2 del anexo II?",
       "opciones": [
         "Alto",
         "Medio",
@@ -35680,41 +35680,136 @@
         "Alto y medio"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La clave ALTO es correcta para la medida op.cont.2 del ENS aprobado por RD 311/2022. Se explicita la medida porque el plan del anexo II se aplica a nivel ALTO; no se generaliza esta regla a todo plan organizativo de continuidad, cuyo alcance depende del análisis de impacto.",
+      "clasificacion": {
+        "A1": [
+          "A1-48",
+          "A1-128"
+        ],
+        "A2": [
+          "A2-I-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ENS",
+        "op.cont.2",
+        "plan de continuidad",
+        "nivel alto"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/pdf/2022/BOE-A-2022-7191-consolidado.pdf",
+            "referencia": "Real Decreto 311/2022, anexo II, §4.6.2, medida op.cont.2: el plan de continuidad aplica a sistemas de categoría ALTA; detalla la identificación de funciones y los medios alternativos para sostener servicios esenciales."
+          }
+        ],
+        "observaciones": "La clave ALTO es correcta para la medida op.cont.2 del ENS aprobado por RD 311/2022. Se explicita la medida porque el plan del anexo II se aplica a nivel ALTO; no se generaliza esta regla a todo plan organizativo de continuidad, cuyo alcance depende del análisis de impacto."
+      }
     },
     {
       "id": 872,
       "bloque": 0,
       "tema": 0,
-      "texto": "La norma ISO 22301 tiene su precedente en la:",
+      "texto": "¿Qué estándar británico anterior constituye el antecedente de referencia de ISO 22301 para sistemas de gestión de continuidad del negocio?",
       "opciones": [
         "ISO 9001",
-        "ISO 27001",
+        "ISO/IEC 27001",
         "BS 25999",
-        "Ninguna de las anteriores"
+        "Ninguno de los anteriores"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "BS 25999 es el antecedente británico de referencia para la norma internacional ISO 22301. Se acota temporalmente la pregunta a ese antecedente: ISO 22301:2012 fue la primera edición internacional y la vigente es ISO 22301:2019, con modificación de 2024.",
+      "clasificacion": {
+        "A1": [
+          "A1-128"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ISO 22301",
+        "BS 25999",
+        "continuidad de negocio",
+        "historia normativa"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/news/2012/06/Ref1602.html",
+            "referencia": "ISO, “ISO 22301 when things go seriously wrong” (2012): explica que BS 25999 fue el estándar británico de gestión certificable anterior y que el trabajo de ISO/TC 223 produjo ISO 22301:2012."
+          },
+          {
+            "url": "https://www.iso.org/standard/75106.html",
+            "referencia": "ISO 22301:2019, ficha de la edición vigente, con Amendment 1:2024."
+          }
+        ],
+        "observaciones": "BS 25999 es el antecedente británico de referencia para la norma internacional ISO 22301. Se acota temporalmente la pregunta a ese antecedente: ISO 22301:2012 fue la primera edición internacional y la vigente es ISO 22301:2019, con modificación de 2024."
+      }
     },
     {
       "id": 873,
       "bloque": 0,
       "tema": 0,
-      "texto": "El protocolo Oauth:",
+      "texto": "¿Qué describe correctamente OAuth 2.0?",
       "opciones": [
-        "Es propietario de Twitter, y permite gestionar el acceso a su API por parte de otras aplicaciones",
-        "Permite su uso en aplicaciones web y móviles, pero no en aplicaciones de escritorio",
-        "Permite el acceso a la identidad completa del usuario por parte del servidor de aplicaciones",
-        "Permite utilizar la cuenta de Facebook para acceder a otras aplicaciones"
+        "Un marco de autorización que permite a una aplicación de terceros obtener acceso limitado a recursos HTTP mediante tokens, con autorización del titular.",
+        "Un protocolo de identidad que por sí solo autentica al usuario y entrega a la aplicación su identidad completa.",
+        "Un protocolo propietario de Twitter para administrar exclusivamente su API.",
+        "Un mecanismo que entrega a las aplicaciones de terceros la contraseña del usuario para reutilizarla en otros servicios."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Se reescribe porque las opciones originales mezclaban afirmaciones falsas, propiedad comercial y el caso de inicio de sesión social. OAuth 2.0 es un marco de autorización delegada para acceso limitado a recursos; no es propiedad de Twitter ni define por sí solo identidad/autenticación. OpenID Connect es la capa de identidad construida sobre OAuth 2.0.",
+      "clasificacion": {
+        "A1": [
+          "A1-109",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-III-12",
+          "A2-IV-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "OAuth 2.0",
+        "autorización delegada",
+        "tokens de acceso",
+        "OpenID Connect"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc6749.html",
+            "referencia": "IETF RFC 6749, resumen y §§1 y 1.3: OAuth 2.0 permite a una aplicación de terceros obtener acceso limitado a un servicio HTTP mediante autorización y tokens, sin compartir con ella las credenciales del usuario."
+          },
+          {
+            "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+            "referencia": "OpenID Foundation, OpenID Connect Core 1.0: añade una capa de identidad/autenticación sobre OAuth 2.0; OAuth por sí solo es un marco de autorización, no un protocolo de identidad."
+          }
+        ],
+        "observaciones": "Se reescribe porque las opciones originales mezclaban afirmaciones falsas, propiedad comercial y el caso de inicio de sesión social. OAuth 2.0 es un marco de autorización delegada para acceso limitado a recursos; no es propiedad de Twitter ni define por sí solo identidad/autenticación. OpenID Connect es la capa de identidad construida sobre OAuth 2.0."
+      }
     },
     {
       "id": 874,
       "bloque": 0,
       "tema": 0,
-      "texto": "Queremos crear un nuevo sistema de ficheros en un nuevo volumen LVM en una máquina virtual Linux. Esta máquina ha sido convertida recientemente a virtual mediante un proceso de P2V. Indique el orden correcto de ejecución de los comandos necesarios:",
+      "texto": "Se dispone de un dispositivo de bloques nuevo en una máquina Linux y se quiere crear sobre él un sistema de archivos en un nuevo volumen lógico LVM. ¿En qué orden se ejecutan las operaciones?",
       "opciones": [
         "lvcreate, pvcreate, vgcreate, mkfs",
         "lvcreate, vgcreate, pvcreate, mkfs",
@@ -35722,21 +35817,90 @@
         "pvcreate, vgcreate, lvcreate, mkfs"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Con un dispositivo de bloques nuevo que aún no sea PV, el orden es pvcreate → vgcreate → lvcreate → mkfs. Se explicita esta precondición porque una máquina P2V puede conservar metadatos LVM y, en ese escenario, no necesariamente se debe volver a ejecutar pvcreate sobre el disco ya convertido.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Linux",
+        "LVM",
+        "pvcreate",
+        "vgcreate",
+        "lvcreate",
+        "mkfs"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_and_managing_logical_volumes/basic-logical-volume-management",
+            "referencia": "Red Hat Enterprise Linux 10, Basic logical volume management: el dispositivo se inicializa como PV; los PV se agrupan en VG; el LV se crea dentro del VG."
+          },
+          {
+            "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/system_design_guide/configuring_and_managing_logical_volumes",
+            "referencia": "Red Hat Enterprise Linux 8, §67: pvcreate inicializa un PV y el sistema de archivos se crea sobre el dispositivo lógico resultante."
+          }
+        ],
+        "observaciones": "Con un dispositivo de bloques nuevo que aún no sea PV, el orden es pvcreate → vgcreate → lvcreate → mkfs. Se explicita esta precondición porque una máquina P2V puede conservar metadatos LVM y, en ese escenario, no necesariamente se debe volver a ejecutar pvcreate sobre el disco ya convertido."
+      }
     },
     {
       "id": 875,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según Ken Schwaber, uno de sus creadores, el ciclo de vida de SCRUM es:",
+      "texto": "Según el artículo original de Ken Schwaber sobre Scrum, ¿a qué tipo de ciclo de desarrollo mejora Scrum?",
       "opciones": [
-        "Una mejora del ciclo de vida en espiral.",
-        "Una mejora del ciclo de vida basado en prototipos.",
-        "Una mejora del ciclo de vida incremental e iterativo.",
-        "Una mejora del ciclo de vida en V."
+        "Al ciclo de vida en espiral.",
+        "Al ciclo de vida basado en prototipos.",
+        "Al ciclo de desarrollo orientado a objetos iterativo e incremental.",
+        "Al ciclo de vida en V."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La opción incremental e iterativa es la respaldada por el artículo original de Ken Schwaber y por la Scrum Guide actual. Se actualiza la expresión para identificar el ciclo de desarrollo de software y no sugerir una variante del modelo en espiral, prototipos o ciclo en V.",
+      "clasificacion": {
+        "A1": [
+          "A1-86",
+          "A1-88"
+        ],
+        "A2": [
+          "A2-III-1",
+          "A2-III-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Scrum",
+        "Ken Schwaber",
+        "ciclo de vida iterativo",
+        "desarrollo incremental"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://www.scrum.org/resources/scrum-development-process",
+            "referencia": "Ken Schwaber, The Scrum Development Process (artículo original presentado en OOPSLA 1995, versión de 1996): describe Scrum como una mejora del ciclo de desarrollo orientado a objetos iterativo e incremental."
+          },
+          {
+            "url": "https://scrumguides.org/scrum-guide.html",
+            "referencia": "The Scrum Guide, sección Scrum Theory: Scrum emplea un enfoque iterativo e incremental para optimizar la predictibilidad y controlar el riesgo."
+          }
+        ],
+        "observaciones": "La opción incremental e iterativa es la respaldada por el artículo original de Ken Schwaber y por la Scrum Guide actual. Se actualiza la expresión para identificar el ciclo de desarrollo de software y no sugerir una variante del modelo en espiral, prototipos o ciclo en V."
+      }
     },
     {
       "id": 876,
