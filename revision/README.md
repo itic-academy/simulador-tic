@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 124 (IDs 936–940). Acumulado: 940 preguntas revisadas, 899 verificadas (254 vigentes, 560 corregidas y 85 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.183 sin revisión de contenido. Hay 653 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 125 (IDs 941–945). Acumulado: 945 preguntas revisadas, 904 verificadas (256 vigentes, 562 corregidas y 86 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.178 sin revisión de contenido. Hay 656 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.183 preguntas sin revisión de contenido. Siguiente ID: 941. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.178 preguntas sin revisión de contenido. Siguiente ID: 946. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -762,3 +762,15 @@ Cotejo parcial con materiales de Drive: el bloque 41 «ITIL y COBIT» (2026) exp
 Se consultó la convocatoria oficial BOE-A-2025-25938 (Cuerpo Superior TIC, 16 de diciembre de 2025), de la que procede el programa A1, y la BOE-A-2025-26262 para el programa A2, junto con búsquedas de correcciones posteriores por identificador/título; no se localizó una corrección de esas convocatorias en los resultados oficiales consultados. La comprobación global de modificaciones y correcciones de convocatorias sigue pendiente.
 
 Fuentes técnicas: PeopleCert/ITIL; documentación oficial de Git; IFPUG, Function Point Analysis y MetricViews (agosto de 2015); Ministerio de Administraciones Públicas, MÉTRICA v3, Diseño del Sistema de Información, Participantes y Mantenimiento de Sistemas de Información. `inventario.cjs` y `verificar.cjs` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 940 cambios registrados y 11.183 preguntas restantes idénticas al commit original.
+
+## Lote 125 — 22 de octubre
+
+IDs 941–945 revisados individualmente: dos vigentes, dos corregidas y una histórica. Acumulado: 945 examinadas, 904 verificadas (256 vigentes, 562 corregidas y 86 históricas) y 41 pendientes (23 de fuente y 18 de ambigüedad); 656 preguntas con cambios de contenido. Quedan 11.178 sin revisar; siguiente ID 946.
+
+Se corrige el emparejamiento de estándares: IEEE 1219-1998 era la norma de mantenimiento y 610.12-1990 el glosario de ingeniería del software; 610.13-1993 era un glosario de lenguajes y se retiró (941). Se marca la pregunta como histórica porque 1219 fue sustituida por ISO/IEC 14764 y 610.12 por ISO/IEC/IEEE 24765. Se rectifica la confusión entre corrección y fiabilidad en McCall (942); se mantiene el modelo Entidad-Relación para expresar datos y sus relaciones (943); se verifica que usabilidad es factor de operación y mantenibilidad/reutilización pertenecen a otras perspectivas de McCall (944). En lenguajes OO se corrige la ambigüedad: COBOL, Fortran y Ada tienen características OO en estándares posteriores, por lo que la opción A original también podía sostenerse. Se introducen distractores con C para dejar una única opción íntegramente OO (945).
+
+Cotejo de academia en Drive: «39_Bloque_39_ITIC_Academy_Calidad_Mantenimiento_2026» enumera correctamente las perspectivas de McCall (operación, revisión y transición) y separa puntos de función/tamaño funcional de razones de productividad; el tema «Calidad_2021» cubre McCall, productividad y los estándares de mantenimiento, pero conserva referencias históricas que se contrastaron con las fichas actuales de IEEE SA. «Tema 093 - Métrica v3» contiene el modelo Entidad/Relación y la obtención del modelo físico desde el lógico; «Tema BBDD v1.1» trata el modelo ER. Este cotejo temático no supone revisar todos los materiales de Drive.
+
+Se volvieron a consultar en BOE las convocatorias A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262 y se buscaron correcciones por número y título; no se encontró una corrección de errores de esas dos convocatorias en los resultados oficiales consultados. La comprobación exhaustiva de todas las modificaciones de convocatorias y normas continúa pendiente.
+
+Fuentes técnicas: IEEE Standards Association (fichas de IEEE 1219, 610.12 y 610.13); McCall, Richards y Walters, informe original RADC-TR-77-369; Ministerio de Administraciones Públicas, MÉTRICA v3, Análisis del Sistema de Información; ISO C++ draft, Oracle JLS, ECMA-367 Eiffel, GNU Smalltalk. `inventario.cjs` y `verificar.cjs` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 945 cambios registrados y 11.178 preguntas restantes idénticas al commit original.

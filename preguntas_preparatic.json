@@ -38864,29 +38864,95 @@
       "id": 941,
       "bloque": 0,
       "tema": 0,
-      "texto": "El mantenimiento SW está basado en los estándares:",
+      "texto": "En una pregunta histórica sobre estándares IEEE de ingeniería del software, ¿qué pareja relaciona correctamente el mantenimiento de software con la terminología de ingeniería del software?",
       "opciones": [
-        "IEEE 1219 y IEEE 610.13",
-        "IEEE 1219 y IEEE 610.12",
-        "IEEE 1217 y IEEE 610.13",
-        "IEEE 1217 y IEEE 610.12"
+        "IEEE 1219-1998 y IEEE 610.13-1993.",
+        "IEEE 1219-1998 y IEEE 610.12-1990.",
+        "IEEE 1217-1993 y IEEE 610.13-1993.",
+        "IEEE 1217-1993 y IEEE 610.12-1990."
       ],
-      "respuesta_correcta": 0,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Se conserva como cuestión histórica y se reescribe para que la pareja se identifique sin ambigüedad: IEEE 1219-1998 era la norma de mantenimiento y IEEE 610.12-1990 el glosario de ingeniería del software. La opción que combinaba 1219 con 610.13 confundía este último con un glosario de lenguajes. Ambas normas son históricas/sustituidas; no se presentan como estándares vigentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-101"
+        ],
+        "A2": [
+          "A2-III-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "IEEE 1219-1998",
+        "IEEE 610.12-1990",
+        "mantenimiento del software",
+        "estándares históricos"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/1219/1842/",
+            "referencia": "IEEE Standards Association, IEEE 1219-1998: norma de mantenimiento de software; la ficha oficial indica que fue sustituida por ISO/IEC 14764:2006."
+          },
+          {
+            "url": "https://standards.ieee.org/ieee/610.12/855/",
+            "referencia": "IEEE Standards Association, IEEE 610.12-1990: glosario de terminología de ingeniería del software; la ficha indica que fue sustituido por ISO/IEC/IEEE 24765."
+          },
+          {
+            "url": "https://standards.ieee.org/ieee/610.13/858/",
+            "referencia": "IEEE Standards Association, IEEE 610.13-1993: glosario de lenguajes de ordenador, retirado en 2000; no es el glosario de ingeniería del software."
+          }
+        ],
+        "observaciones": "Se conserva como cuestión histórica y se reescribe para que la pareja se identifique sin ambigüedad: IEEE 1219-1998 era la norma de mantenimiento y IEEE 610.12-1990 el glosario de ingeniería del software. La opción que combinaba 1219 con 610.13 confundía este último con un glosario de lenguajes. Ambas normas son históricas/sustituidas; no se presentan como estándares vigentes."
+      }
     },
     {
       "id": 942,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señalar la definición falsa sobre las métricas de calidad del software:",
+      "texto": "Según el modelo de calidad de McCall, señale la afirmación falsa:",
       "opciones": [
-        "Las métricas de productividad se centran fundamentalmente en el coste del proceso de la ingeniería del software",
-        "Las métricas de fiabilidad tratan de evaluar si el software producido se ajusta a los requerimientos del usuario",
-        "Las métricas de los factores de calidad basan su evaluación en la medida de una relación de factores denominados de calidad del software",
-        "La métricas de complejidad se orientan esencialmente a evaluar la facilidad de mantenimiento del software"
+        "La corrección, la fiabilidad, la eficiencia, la integridad y la usabilidad son factores de operación del producto.",
+        "La fiabilidad mide el grado en que el software satisface sus especificaciones y los objetivos de misión del usuario.",
+        "La mantenibilidad es un factor de revisión del producto.",
+        "La portabilidad es un factor de transición del producto."
       ],
-      "respuesta_correcta": 0,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Se corrige la clasificación falsa del original: en el modelo de McCall, cumplimiento de especificaciones y objetivos de usuario corresponde a corrección (correctness), no a fiabilidad (reliability). La fiabilidad se refiere al desempeño de la función prevista con la precisión requerida. Las otras opciones se han formulado según las categorías de operación, revisión y transición del modelo.",
+      "clasificacion": {
+        "A1": [
+          "A1-98",
+          "A1-99"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "modelo de McCall",
+        "corrección",
+        "fiabilidad",
+        "mantenibilidad",
+        "factores de calidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://cgi.csc.liv.ac.uk/~comp208/2013/GetTRDoc.pdf",
+            "referencia": "McCall, Richards y Walters, RADC-TR-77-369, Factors in Software Quality, vol. I (1977), informe técnico original: define correctness como cumplimiento de especificaciones y objetivos de misión, reliability como ejecución de la función prevista con precisión, y agrupa los factores en operación, revisión y transición."
+          }
+        ],
+        "observaciones": "Se corrige la clasificación falsa del original: en el modelo de McCall, cumplimiento de especificaciones y objetivos de usuario corresponde a corrección (correctness), no a fiabilidad (reliability). La fiabilidad se refiere al desempeño de la función prevista con la precisión requerida. Las otras opciones se han formulado según las categorías de operación, revisión y transición del modelo."
+      }
     },
     {
       "id": 943,
@@ -38900,7 +38966,35 @@
         "DFD (Diagrama de Flujo de Datos)."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El modelo Entidad-Relación representa los datos del dominio y las relaciones entre ellos. Los DFD representan flujos y transformaciones de datos; los diagramas de transición describen estados y eventos, y el seudocódigo expresa algoritmos.",
+      "clasificacion": {
+        "A1": [
+          "A1-89"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "modelo entidad-relación",
+        "análisis de datos",
+        "relaciones entre datos",
+        "MÉTRICA v3"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Aad870327-56b7-4dfa-af15-e62222f45b90/METRICA_V3_Analisis_del_Sistema_de_Informacion.pdf",
+            "referencia": "Ministerio de Administraciones Públicas, MÉTRICA v3, Análisis del Sistema de Información: incluye el modelo lógico de datos y el modelo Entidad/Relación como técnica para representar entidades y relaciones en el análisis."
+          }
+        ],
+        "observaciones": "El modelo Entidad-Relación representa los datos del dominio y las relaciones entre ellos. Los DFD representan flujos y transformaciones de datos; los diagramas de transición describen estados y eventos, y el seudocódigo expresa algoritmos."
+      }
     },
     {
       "id": 944,
@@ -38914,7 +39008,35 @@
         "Reusabilidad"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "En el modelo de McCall, la usabilidad es uno de los factores de operación; mantenibilidad y flexibilidad son factores de revisión, y reutilización pertenece a transición. Se mantiene la respuesta C, con el ámbito del modelo expresado en el enunciado.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "modelo de McCall",
+        "operación del producto",
+        "usabilidad",
+        "factores de calidad"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://cgi.csc.liv.ac.uk/~comp208/2013/GetTRDoc.pdf",
+            "referencia": "McCall, Richards y Walters, RADC-TR-77-369, Factors in Software Quality, vol. I (1977), informe técnico original: los factores de operación del producto incluyen corrección, fiabilidad, eficiencia, integridad y usabilidad; mantenibilidad y flexibilidad pertenecen a revisión."
+          }
+        ],
+        "observaciones": "En el modelo de McCall, la usabilidad es uno de los factores de operación; mantenibilidad y flexibilidad son factores de revisión, y reutilización pertenece a transición. Se mantiene la respuesta C, con el ámbito del modelo expresado en el enunciado."
+      }
     },
     {
       "id": 945,
@@ -38922,13 +39044,58 @@
       "tema": 0,
       "texto": "Son lenguajes que al menos en sus últimos estándares soportan la programación orientada a objetos:",
       "opciones": [
-        "C++, COBOL, FORTRAN, Ada.",
-        "Java, Lisp, Algol, Eiffel.",
-        "C++, Java, Eiffel, Smalltalk.",
-        "C++, Smalltalk, Eiffel, REXX."
+        "C, COBOL, FORTRAN y Ada.",
+        "Java, Lisp, C y Eiffel.",
+        "C++, Java, Eiffel y Smalltalk.",
+        "C++, Smalltalk, Eiffel y C."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El original admitía varias respuestas: COBOL, Fortran y Ada incorporan características OO en estándares posteriores, por lo que la opción A también podía defenderse. Se modifican los distractores para que cada uno incluya C, cuyo estándar no define clases/herencia nativas; la única opción íntegramente formada por lenguajes OO es C++/Java/Eiffel/Smalltalk.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "programación orientada a objetos",
+        "C++",
+        "Java",
+        "Eiffel",
+        "Smalltalk"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-22",
+        "fuentes": [
+          {
+            "url": "https://isocpp.org/files/papers/N4860.pdf",
+            "referencia": "ISO C++ Committee, draft international standard N4860: especifica clases y objetos en C++."
+          },
+          {
+            "url": "https://docs.oracle.com/javase/specs/jls/se26/html/jls-1.html",
+            "referencia": "Oracle, Java Language Specification, Java SE 26, capítulo 1: caracteriza Java como lenguaje basado en clases y orientado a objetos."
+          },
+          {
+            "url": "https://ecma-international.org/publications-and-standards/standards/ecma-367/",
+            "referencia": "Ecma International, ECMA-367, Eiffel: Analysis, Design and Programming Language, estándar del lenguaje Eiffel."
+          },
+          {
+            "url": "https://www.gnu.org/software/smalltalk/manual/html_node/Overview.html",
+            "referencia": "GNU Smalltalk User’s Guide: describe Smalltalk como lenguaje orientado a objetos y sus conceptos de objetos, clases y métodos."
+          },
+          {
+            "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf",
+            "referencia": "ISO/IEC JTC 1/SC 22/WG 14, borrador público de C23: especificación del lenguaje C, que no define el soporte nativo de clases y herencia propio de la opción correcta."
+          }
+        ],
+        "observaciones": "El original admitía varias respuestas: COBOL, Fortran y Ada incorporan características OO en estándares posteriores, por lo que la opción A también podía defenderse. Se modifican los distractores para que cada uno incluya C, cuyo estándar no define clases/herencia nativas; la única opción íntegramente formada por lenguajes OO es C++/Java/Eiffel/Smalltalk."
+      }
     },
     {
       "id": 946,
