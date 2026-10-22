@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 091 (IDs 771–775). Acumulado: 775 preguntas revisadas, 744 verificadas (211 vigentes, 467 corregidas y 66 históricas) y 31 pendientes de resolver; quedan 11.348 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 092 (IDs 776–780). Acumulado: 780 preguntas revisadas, 749 verificadas (214 vigentes, 467 corregidas y 68 históricas) y 31 pendientes de resolver; quedan 11.343 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.348 preguntas sin revisión de contenido. Siguiente ID: 776. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.343 preguntas sin revisión de contenido. Siguiente ID: 781. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -495,3 +495,11 @@ IDs 771–775: cinco preguntas examinadas y verificadas; tres conservan respuest
 La Ley 39/2015 confirma la definición de documento público administrativo (771), los metadatos visibles de las copias electrónicas auténticas (772) y el silencio desestimatorio del recurso extraordinario de revisión tras tres meses (773). La 774 se acota al artículo 118.3 porque el enunciado previo pedía un requisito genérico con afirmaciones discutibles; se contrasta además la publicación trimestral de los contratos menores del artículo 63.4. En la 775 se actualiza el umbral armonizado de obras y concesiones a 5.404.000 euros, en vigor desde el 1 de enero de 2026, conforme a la Orden HAC/1517/2025 y el Reglamento Delegado (UE) 2025/2151.
 
 No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. El inventario y el verificador se ejecutaron correctamente: 12.123 preguntas estructuralmente válidas, 775 cambios registrados y 11.348 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 092 — 22 de octubre
+
+IDs 776–780: cinco preguntas examinadas y verificadas; dos históricas contextualizadas y dos enunciados reformulados para evitar errores de fecha y ambigüedad. Acumulado: 780 examinadas, 749 verificadas y 31 pendientes; 531 preguntas con cambios de contenido. Estados: 214 vigentes, 467 corregidas, 68 históricas y 31 pendientes. Quedan 11.343 sin revisar; siguiente ID 781.
+
+La Ley General de Subvenciones atribuye la concesión en la AGE a ministros y secretarios de Estado y exige autorización previa para importes superiores a 12 millones (776). El INE confirma que Cataluña recibió más turistas internacionales en 2022 (777), dato histórico. La PPC mantiene como marco básico la reforma del Reglamento (UE) 1380/2013, aplicada desde enero de 2014 (778). El artículo 11 de la LO 3/2007 regula las acciones positivas (779). La pregunta 780 se precisa al principio de igualdad retributiva del artículo 119 del Tratado CEE y distingue la firma en 1957 de su entrada en vigor en 1958.
+
+No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador completados sin errores: 12.123 preguntas estructuralmente válidas, 780 cambios registrados y 11.343 preguntas todavía sin revisión de contenido intactas frente al commit original.
