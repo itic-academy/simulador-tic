@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 125 (IDs 941–945). Acumulado: 945 preguntas revisadas, 904 verificadas (256 vigentes, 562 corregidas y 86 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.178 sin revisión de contenido. Hay 656 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 126 (IDs 946–950). Acumulado: 950 preguntas revisadas, 909 verificadas (258 vigentes, 563 corregidas y 88 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.173 sin revisión de contenido. Hay 660 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -774,3 +774,15 @@ Cotejo de academia en Drive: «39_Bloque_39_ITIC_Academy_Calidad_Mantenimiento_2
 Se volvieron a consultar en BOE las convocatorias A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262 y se buscaron correcciones por número y título; no se encontró una corrección de errores de esas dos convocatorias en los resultados oficiales consultados. La comprobación exhaustiva de todas las modificaciones de convocatorias y normas continúa pendiente.
 
 Fuentes técnicas: IEEE Standards Association (fichas de IEEE 1219, 610.12 y 610.13); McCall, Richards y Walters, informe original RADC-TR-77-369; Ministerio de Administraciones Públicas, MÉTRICA v3, Análisis del Sistema de Información; ISO C++ draft, Oracle JLS, ECMA-367 Eiffel, GNU Smalltalk. `inventario.cjs` y `verificar.cjs` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 945 cambios registrados y 11.178 preguntas restantes idénticas al commit original.
+
+## Lote 126 — 22 de octubre
+
+IDs 946–950 revisados individualmente: dos vigentes, una corregida y dos históricas. Acumulado: 950 examinadas, 909 verificadas (258 vigentes, 563 corregidas y 88 históricas) y 41 pendientes (23 de fuente y 18 de ambigüedad); 660 preguntas con cambios de enunciado, opciones o clave. Quedan 11.173 sin revisar; siguiente ID 951.
+
+Se acota la escala de madurez de ISO 9004 como referencia histórica: el nivel 3 corresponde a «aproximación del sistema formal estable», pero se señala que el descriptor de cinco niveles procede de materiales basados en el anexo A de ISO 9004:2000, y que las ediciones 2009 y 2000 están retiradas y cuentan con versiones sucesoras (946). Para ITIL 4, se comprueba que la definición describe la cadena de valor del servicio, no el SVS ni las cuatro dimensiones (947). MÉTRICA v3 llama «proceso primitivo» al proceso terminal que se especifica a partir de los niveles de un DFD (948). Se concreta que la prueba de bucles es estructural/de caja blanca y se ajusta el enunciado para evitar confundirla con pruebas basadas en grafos (949). La clasificación de tres posturas coste/calidad de la pregunta 950 se delimita al tema académico histórico que la enumera, sin presentarla como taxonomía normalizada o consenso actual.
+
+Cotejo con Drive: «41_Bloque_41_Tema_ITIL_y_COBIT_2026» cubre el tema oficial A1-106 y sitúa ITIL 4/gestión del servicio; «088.pdf» (Carlos Corral Mata, 2007) trata la calidad del software, cita el artículo de Lawler de 1981 y enumera las hipótesis de productividad, coste libre, calidad/coste y modelo compuesto; «test_temas_2_0003.pdf» reproduce una pregunta sobre el modelo compuesto. La búsqueda de la carpeta 2026 también localizó material separado de MÉTRICA y pruebas/calidad; el contraste con los documentos pertinentes es parcial, no una auditoría de todo Drive.
+
+Se consultaron nuevamente las fichas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2) y se buscaron en los textos de ambas las menciones a correcciones de errores; esas consultas no mostraron una corrección dentro de las propias resoluciones. Esto no descarta una disposición posterior publicada por separado: la comprobación exhaustiva de modificaciones de convocatorias y normativa sigue pendiente.
+
+Fuentes técnicas: ISO, ficha de ISO 9004:2009 y artículo alojado en iso.org sobre la escala histórica; PeopleCert, ITIL 4 Foundation; Administración Electrónica, MÉTRICA v3, ASI; ISTQB Glossary, técnica de caja blanca. Los materiales de Drive citados se contrastaron solo como apoyo curricular. `inventario.cjs` y `verificar.cjs` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 950 cambios registrados y 11.173 preguntas restantes idénticas al commit original.
