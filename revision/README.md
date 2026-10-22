@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 103 (IDs 831–835). Acumulado: 835 preguntas revisadas, 799 verificadas (230 vigentes, 497 corregidas y 72 históricas) y 36 pendientes de resolver; quedan 11.288 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 104 (IDs 836–840). Acumulado: 840 preguntas revisadas, 804 verificadas (231 vigentes, 501 corregidas y 72 históricas) y 36 pendientes de resolver; quedan 11.283 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.288 preguntas sin revisión de contenido. Siguiente ID: 836. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 36 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.283 preguntas sin revisión de contenido. Siguiente ID: 841. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 36 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -590,3 +590,11 @@ IDs 831–835 examinados individualmente. Tres verificadas como vigentes y dos c
 Se confirma DN como Distinguished Name en LDAP (831). Se actualiza la pregunta DNIe al marco vigente y se distingue la renovación de la tarjeta de la renovación voluntaria de certificados; una tarjeta aún vigente puede conservarse al renovar certificados, de modo que la opción que obliga a renovar el DNI al caducar aquellos es falsa (832). La ISCA documenta «synthesis by rule» como denominación clásica de síntesis por formantes (833). La 834 explicita que el nombre «léxico-sintáctico» agrupa dos tareas relacionadas pero distintas: reconocimiento morfológico de unidades y análisis sintáctico de su combinación. Se confirma evento como mecanismo de notificación entre objetos (835).
 
 Fuentes primarias consultadas: IETF RFC 4512/4514; Dirección General de la Policía, DPC DNIe v3.2 (05-05-2025), portal DNIe y Real Decreto 255/2025 en BOE; ISCA, Classic Speech Synthesis; Universal Dependencies y Stanford NLP Group; Microsoft Learn (.NET events). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 835 cambios registrados y 11.288 preguntas aún no revisadas idénticas al commit original.
+
+## Lote 104 — 22 de octubre
+
+IDs 836–840 examinados individualmente. Cuatro se corrigieron y una se mantiene vigente con el contexto de MÉTRICA v3. Acumulado: 840 examinadas, 804 verificadas y 36 pendientes; 570 preguntas con cambios de contenido. Estados: 231 vigentes, 501 corregidas, 72 históricas y 36 pendientes (21 de fuente y 15 de ambigüedad). Quedan 11.283 sin revisar; siguiente ID 841.
+
+Se formaliza la diferencia entre especialización EER total y solapada y la consecuencia de retirar la última pertenencia de subtipo (836). Se corrige la comparación de BPMN y XPDL para reflejar que BPMN 2.0 ya define una serialización XML, además de la notación gráfica (837). SPEM se define como metamodelo de OMG basado en MOF y alineado con UML 2, no como un simple lenguaje que extiende UML (838). Se actualiza la taxonomía de mantenimiento a ISO/IEC/IEEE 14764:2022: agregar funciones es mantenimiento aditivo (839). Se conserva correcta y acotada a MÉTRICA v3 la combinación de catalogación, diagrama de clases y DFD en EVS 2 (840).
+
+Fuentes primarias consultadas: Elmasri y Navathe, *Fundamentals of Database Systems*, cap. EER; OMG (BPMN 2.0.2 y SPEM 2.0); Workflow Management Coalition (XPDL); ISO/IEC/IEEE 14764:2022 y vista previa de SIST; MÉTRICA v3, copia del documento ministerial y transcripción de sus tareas EVS. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 840 cambios registrados y 11.283 preguntas aún no revisadas idénticas al commit original.
