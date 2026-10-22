@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 085 (IDs 741–745). Acumulado: 745 preguntas revisadas, 714 verificadas (201 vigentes, 458 corregidas y 55 históricas) y 31 pendientes de resolver; quedan 11.378 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 086 (IDs 746–750). Acumulado: 750 preguntas revisadas, 719 verificadas (202 vigentes, 459 corregidas y 58 históricas) y 31 pendientes de resolver; quedan 11.373 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.378 preguntas sin revisión de contenido. Siguiente ID: 746. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.373 preguntas sin revisión de contenido. Siguiente ID: 751. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -442,6 +442,12 @@ Se confirma que la adopción de banda ancha fija de al menos 1 Gbps era el indic
 IDs 736–740: cinco preguntas examinadas y verificadas, dos corregidas y tres históricas. Acumulado: 740 examinadas, 709 verificadas y 31 pendientes; 503 preguntas con cambios de contenido. Estados: 201 vigentes, 457 corregidas, 51 históricas y 31 pendientes. Quedan 11.383 sin revisar; siguiente ID 741.
 
 Se coteja el 75,4 % de uso del smartphone entre compradores online con el informe de Fundación Telefónica; se reemplaza el distractor de pymes por una afirmación temporal con cifra inequívocamente falsa (736). Se verifican en el ONTSI las cifras de teletrabajo España/UE de 2021–2022 y se conservan como históricas (737). Se contrasta la edición 2023 de la brecha digital de género: el dato del 17,8 % es correcto; las otras opciones contradicen diferencias de uso y cifras de empleo TIC del informe (738). La brecha digital se precisa como fenómeno multifactorial, apoyado en investigación académica sobre factores económicos, políticos, educativos y de género (739). La Decisión (UE) 2022/2481 respalda las cuatro áreas de la Década Digital (740). No se han cotejado PDFs adicionales de academia ni las posibles correcciones posteriores de las convocatorias en este lote.
+
+## Lote 086 — 22 de octubre
+
+IDs 746–750: cinco preguntas examinadas y verificadas; una corregida y tres acotadas como históricas. Acumulado: 750 examinadas, 719 verificadas y 31 pendientes; 512 preguntas con cambios de contenido. Estados: 202 vigentes, 459 corregidas, 58 históricas y 31 pendientes. Quedan 11.373 sin revisar; siguiente ID 751.
+
+Se confirma el esquema de diez ejes estratégicos y dos transversales de España Digital 2026 (746). En DESI 2022 se precisa que España estaba por debajo de la media en especialistas TIC (4,1 % frente a 4,5 %) y ligeramente por encima en titulados TIC (4,0 % frente a 3,9 %), con denominadores diferenciados (747). El informe ONTSI de 2021 registra al smartphone como dispositivo más señalado para consumir contenidos digitales (76,7 %) (748). Se corrige la pregunta sobre la Década Digital: la Decisión (UE) 2022/2481 fija tres metas del 100 % para servicios clave en línea, acceso a historiales médicos electrónicos y acceso a identificación electrónica segura y reconocida; el 80 % de uso de identidad electrónica no era la meta final (749). Se concreta la dimensión mejor situada de España en DESI 2021 como conectividad, donde ocupó el tercer puesto (750). No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de las convocatorias en este lote.
 
 ## Lote 083 — 22 de octubre
 
