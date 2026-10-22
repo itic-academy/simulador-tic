@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 122 (IDs 926–930). Acumulado: 930 preguntas revisadas, 889 verificadas (252 vigentes, 553 corregidas y 84 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.193 sin revisión de contenido. Hay 645 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 123 (IDs 931–935). Acumulado: 935 preguntas revisadas, 894 verificadas (253 vigentes, 556 corregidas y 85 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.188 sin revisión de contenido. Hay 649 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.193 preguntas sin revisión de contenido. Siguiente ID: 931. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.188 preguntas sin revisión de contenido. Siguiente ID: 936. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -743,3 +743,10 @@ IDs 926–930 revisados individualmente: cuatro corregidos y uno histórico con 
 Se rectifica la atribución a ITIL de la definición de plan de contingencia, que corresponde a lineamientos de AGETIC, y se reformula la pregunta citando esa fuente (926). Se aclara la jerarquía DFD de MÉTRICA v3: funciones en nivel 2 y subfunciones en nivel 3 (927). JAD se describe como taller facilitado de obtención/acuerdo de requisitos y se precisa que puede usarse en DSDM sin ser exclusiva de ese método (928). Se distinguen los ejemplos de flujos de consulta, actualización y diálogo de MÉTRICA frente al distractor de sincronización (929). En COBIT 5, «cubrir la empresa de extremo a extremo» sí es principio; se reemplaza la opción para dejar una única afirmación falsa y se marca la taxonomía como histórica frente a COBIT 2019 (930).
 
 Fuentes consultadas: AGETIC, lineamientos para planes de contingencia tecnológica; Ministerio de Administraciones Públicas, MÉTRICA v3, Técnicas y Prácticas (jerarquía y notación DFD); Centre for Software Engineering (DSDM) y PMI (JAD); ISACA (principios de COBIT 5 y comparación con COBIT 2019). No se han estudiado nuevos PDFs de academia ni cotejado correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 930 cambios registrados y 11.193 preguntas restantes idénticas al commit original.
+## Lote 123 — 22 de octubre
+
+IDs 931–935 revisados individualmente: una se conserva vigente, tres se corrigen y una queda delimitada como histórica. Acumulado: 935 examinadas, 894 verificadas y 41 pendientes (23 de fuente y 18 de ambigüedad); 649 preguntas con cambios de contenido. Estados: 253 vigentes, 556 corregidas, 85 históricas y 41 pendientes. Quedan 11.188 sin revisar; siguiente ID 936.
+
+Se distingue la prueba de regresión de la prueba de confirmación tras un cambio (931). Se acota el uso del diagrama de despliegue de MÉTRICA v3 a DSI 1.1 y al particionamiento físico para eliminar respuestas defendibles en otras tareas (932). EFQM criterio 9 se marca histórico para la versión de 2013 y se diferencia del modelo actual de siete criterios (933). Se corrige la relación esfuerzo/plazo de la ecuación de Putnam/SLIM, explicitando sus supuestos y la dependencia aproximada de T⁻⁴ (934). Se precisa el prototipado como apoyo al descubrimiento y validación de requisitos poco claros, no como práctica universal ni evidencia suficiente de seguridad (935).
+
+Fuentes consultadas: ISTQB CTFL Syllabus v4.0.1; MÉTRICA v3 del Ministerio de Administraciones Públicas; guías EFQM 2013 de Club Excelencia en Gestión/AEVAL y modelo EFQM actual; Putnam y Myers y explicación de QSM; Ian Sommerville, *Software Engineering*, 10.ª edición. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote; ambos pendientes siguen abiertos. `inventario.cjs` y `verificar.cjs` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 935 cambios registrados y 11.188 preguntas restantes idénticas al commit original.
