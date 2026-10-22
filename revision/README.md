@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 095 (IDs 791–795). Acumulado: 795 preguntas revisadas, 763 verificadas (218 vigentes, 475 corregidas y 70 históricas) y 32 pendientes de resolver; quedan 11.328 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 096 (IDs 796–800). Acumulado: 800 preguntas revisadas, 768 verificadas (220 vigentes, 478 corregidas y 70 históricas) y 32 pendientes de resolver; quedan 11.323 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.328 preguntas sin revisión de contenido. Siguiente ID: 796. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 32 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.323 preguntas sin revisión de contenido. Siguiente ID: 801. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 32 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -526,3 +526,11 @@ IDs 791–795: cuatro verificadas y corregidas; la 792 queda pendiente por ambig
 La Ley 37/2007, artículo 11.1.b, califica como grave en el ámbito de la AGE reutilizar información con una finalidad distinta de la concedida (791). La pregunta genérica sobre funciones directivas se conserva sin certificar mientras no se identifique su fuente o se precise un modelo funcional (792). El artículo 100.1 del TRLPI contempla reproducción o transformación, incluida la corrección de errores, si es necesaria para el uso por el usuario legítimo conforme a la finalidad propuesta, con la salvedad contractual legal (793). Se concreta que la EUPL puede usarla cualquier persona u organización en todo el mundo y se separa compatibilidad condicionada con GPL de equivalencia entre licencias (794). En SICRES 4.0 se cambia la respuesta de A a B: la NTI reemplaza el envío de ficheros por referencias a los documentos adjuntos, mientras sí incorpora metadatos para automatizar el tratamiento (795).
 
 Fuentes oficiales: BOE (Ley 37/2007, TRLPI y resolución de 22 de julio de 2021 SICRES 4.0), Comisión Europea/Interoperable Europe Portal (texto y FAQ de la EUPL). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 795 cambios registrados y 11.328 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 096 — 22 de octubre
+
+IDs 796–800 examinados individualmente y verificados. Se mantienen las respuestas de 796 y 797; se precisan y actualizan 798–800 para evitar referencias normativas obsoletas y afirmaciones ambiguas. Acumulado: 800 examinadas, 768 verificadas y 32 pendientes; 545 preguntas con cambios de contenido. Estados: 220 vigentes, 478 corregidas, 70 históricas y 32 pendientes. Quedan 11.323 sin revisar; siguiente ID 801.
+
+El RPO limita la pérdida de datos al indicar el punto temporal al que deben recuperarse tras una interrupción (796). MAGERIT v3 identifica los árboles de ataque como técnica para representar distintas vías para alcanzar un objetivo (797). La serie CCN-STIC-800 trata las guías de implementación de medidas ENS; el enunciado se actualiza al RD 311/2022 vigente y se advierte que la página informativa del CCN conserva una referencia histórica al RD 3/2010 (798). SIA incluye procedimientos y servicios tanto de AGE como de las administraciones participantes, incluidas CCAA y entidades locales (799). Se reformula la pregunta sobre normalización europea: una EN no es obligatoria por sí sola, aunque la legislación puede hacer vinculante su cumplimiento en el ámbito correspondiente; se elimina la referencia histórica a ENV para evitar una segunda lectura (800).
+
+Fuentes oficiales: NIST CSRC (RPO); MAGERIT v3, Libro III, Guía de técnicas, portal PILAR/CCN; CCN-CERT y BOE (serie 800 y RD 311/2022); PAe/CTT (ficha SIA); CEN-CENELEC (FAQ sobre adopción nacional, voluntariedad y relación con la legislación). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 800 cambios registrados y 11.323 preguntas sin revisión de contenido idénticas al commit original.
