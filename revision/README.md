@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 084 (IDs 736–740). Acumulado: 740 preguntas revisadas, 709 verificadas (201 vigentes, 457 corregidas y 51 históricas) y 31 pendientes de resolver; quedan 11.383 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 085 (IDs 741–745). Acumulado: 745 preguntas revisadas, 714 verificadas (201 vigentes, 458 corregidas y 55 históricas) y 31 pendientes de resolver; quedan 11.378 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.383 preguntas sin revisión de contenido. Siguiente ID: 741. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.378 preguntas sin revisión de contenido. Siguiente ID: 746. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -431,6 +431,12 @@ Se delimita EFQM a la edición 2013: además de sus nueve criterios, admitía au
 IDs 716–720: cinco verificadas, cuatro corregidas y una histórica contextualizada. Acumulado: 720 examinadas, 689 verificadas y 31 pendientes; 483 preguntas con cambios de contenido. Estados: 201 vigentes, 444 corregidas, 44 históricas y 31 pendientes. Quedan 11.403 sin revisar; siguiente ID 721.
 
 IEEE 802.4 se confirma como Token Bus (anillo lógico en bus físico) y se marca histórica porque IEEE la clasifica inactiva-retirada (716). Se identifica GetBulkRequest en las operaciones SNMPv2 vigentes, corrigiendo la pregunta que pedía varias PDU aunque daba opciones singulares (717). Se delimita la pregunta SNMPv3 a los servicios de seguridad USM y se evita confundir detección de errores con integridad/autenticación (718). Se coteja el cifrado de Red SARA y su SAT con la ficha oficial vigente, actualizando distractores institucionales (719). UIT-T X.400 corresponde a tratamiento de mensajes MHS, con componente 1999 en vigor (720). No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de convocatorias en este lote.
+## Lote 085 — 22 de octubre
+
+IDs 741–745: cinco preguntas examinadas y verificadas, una corregida y cuatro contextualizadas como históricas. Acumulado: 745 examinadas, 714 verificadas y 31 pendientes; 508 preguntas con cambios de contenido. Estados: 201 vigentes, 458 corregidas, 55 históricas y 31 pendientes. Quedan 11.378 sin revisar; siguiente ID 746.
+
+Se confirma que la adopción de banda ancha fija de al menos 1 Gbps era el indicador muy por debajo de la media europea en el DESI 2022 (741). El enunciado sobre la actualización de España Digital tenía varias respuestas ciertas; se sustituye por una pregunta precisa sobre sus dos ejes transversales, PERTE y RETECH (742). Se verifica la meta histórica de preparar el 100 % del espectro para 5G en España Digital 2025 (743). Se evita la expresión ordinal «principal dimensión» y se pregunta por la infrarrepresentación de las mujeres en formación STEM que describe ONTSI (744). Se confirma el tercer puesto de España en conectividad en DESI 2022, por segundo año consecutivo (745). La publicación previa del lote 084 quedó desplegada y comprobada: Pages completó correctamente el workflow `39689839931` para el commit `2b5a5c98b9f8034ee40687163a0f516d8cadcee8` y el JSON público contiene los cambios 736–740.
+
 ## Lote 084 — 22 de octubre
 
 IDs 736–740: cinco preguntas examinadas y verificadas, dos corregidas y tres históricas. Acumulado: 740 examinadas, 709 verificadas y 31 pendientes; 503 preguntas con cambios de contenido. Estados: 201 vigentes, 457 corregidas, 51 históricas y 31 pendientes. Quedan 11.383 sin revisar; siguiente ID 741.
