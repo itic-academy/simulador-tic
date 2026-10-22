@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 100 (IDs 816–820). Acumulado: 820 preguntas revisadas, 786 verificadas (225 vigentes, 489 corregidas y 72 históricas) y 34 pendientes de resolver; quedan 11.303 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 101 (IDs 821–825). Acumulado: 825 preguntas revisadas, 789 verificadas (225 vigentes, 492 corregidas y 72 históricas) y 36 pendientes de resolver; quedan 11.298 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,11 +28,11 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.308 preguntas sin revisión de contenido. Siguiente ID: 816. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 34 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.298 preguntas sin revisión de contenido. Siguiente ID: 826. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 36 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
-Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635, 692 y 805. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105, 111, 700, 792 y 810. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
+Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 323, 428, 438, 489, 635, 692 y 805. Pendientes por ambigüedad: 13, 31, 60, 68, 80, 86, 88, 99, 105, 111, 700, 792, 810, 821 y 822. Las observaciones de revisión de cada pregunta explican el motivo concreto. Son trabajo pendiente del revisor, no una petición de revisión al usuario.
 
 Correcciones destacadas de esta continuación: LDAP (64) contenía dos respuestas defendibles; Java static (79) cambia la respuesta correcta de A a B; la fecha del artículo 6.d de la Orden ETD/465/2021 (89) pasa a 1 de marzo de 2023 conforme a la modificación de 2022; WebAssembly (98) admite ejecución fuera del navegador; Data Act (100) se actualiza a su aplicación general desde septiembre de 2025. Se conservan los originales completos.
 
@@ -566,3 +566,11 @@ IDs 816–820 examinados individualmente y verificados. Tres se reformularon par
 La 816 se acota a las RIA históricas basadas en complementos como Silverlight: el cliente ejecutaba presentación y parte de la lógica, sin elevarlo a característica universal de las RIA. La 817 se precisa como CIL/IL de .NET, distinto del bytecode de Java. La especificación de Jakarta confirma el propósito de JSTL para JSP (818). Oracle y la JLS confirman el uso de `@Override` y la búsqueda dinámica de métodos sobrescritos en Java (819). La FSF define las cuatro libertades y permite distribuir copias gratis o a cambio de precio; por ello la restricción no comercial de la 820 no es una libertad esencial.
 
 Fuentes primarias: Microsoft Learn (archivo de arquitectura RIA Silverlight y proceso de ejecución .NET); Eclipse Foundation/Jakarta (especificación JSTL); Oracle (Java Tutorials) y Java Language Specification; GNU Project/Free Software Foundation (definición de software libre). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 820 cambios registrados y 11.303 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 101 — 22 de octubre
+
+IDs 821–825 examinados individualmente. Tres verificadas y corregidas; dos quedan pendientes por ambigüedad en la fuente o el marco conceptual. Acumulado: 825 examinadas, 789 verificadas y 36 pendientes; 561 preguntas con cambios de contenido. Estados: 225 vigentes, 492 corregidas, 72 históricas y 36 pendientes (21 de fuente y 15 de ambigüedad). Quedan 11.298 sin revisar; siguiente ID 826.
+
+La 821 queda pendiente porque el acrónimo «MADL» no está definido y XML es un estándar general que puede serializar RDF, pero no un lenguaje de ontologías por sí solo. La 822 también queda pendiente: la herencia es clásica en redes semánticas, pero el emparejamiento y la afirmación de que ambos son los mecanismos universales dependen del formalismo. En la 823 se concreta que se pregunta por modelización predictiva: regresión bayesiana, regresión lineal y SVM son métodos posibles. La 824 corrige CMS por LMS, la categoría que Moodle asigna a su plataforma. La 825 elimina la confusión entre proyección cartográfica y geocodificación, y distingue esta última de la simbolización de mapas.
+
+Fuentes primarias consultadas: W3C (OWL, RDF/XML y XML); John F. Sowa y Stanford Encyclopedia of Philosophy (redes semánticas y herencia); documentación de scikit-learn (modelos lineales, regresión bayesiana y SVM); MoodleDocs (LMS); OGC Location Services y OGC API - Maps, y Comisión Europea GISCO (geocodificación y representación cartográfica). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 825 cambios registrados y 11.298 preguntas sin revisión de contenido idénticas al commit original.
