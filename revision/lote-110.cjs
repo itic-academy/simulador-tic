@@ -1,0 +1,32 @@
+const apply=require('./aplicar-lote.cjs');
+const records=[
+  [866,[108,125],['II-8','IV-12'],['PPP','IPsec','seguridad de red','protocolos'],[
+    {url:'https://www.rfc-editor.org/rfc/rfc1661.html',referencia:'IETF RFC 1661, resumen y §§1, 2 y 3: PPP transporta datagramas multiprotocolo por enlaces punto a punto; LCP configura y prueba el enlace de datos.'},
+    {url:'https://www.rfc-editor.org/rfc/rfc4301.html',referencia:'IETF RFC 4301, arquitectura de seguridad IP: IPsec protege datagramas IP y puede operar en modo transporte o túnel.'}
+  ],null,'El enunciado original tenía varias afirmaciones generales susceptibles de ser defendidas, incluida la relativa a los protocolos de aplicación. Se concreta el ámbito de PPP. PPP transporta datagramas entre dos pares sobre un enlace punto a punto; puede negociar autenticación, pero no es por sí mismo un mecanismo de cifrado extremo a extremo. La respuesta correcta queda inequívoca.','corregida'],
+  [867,[79,108,125],['II-8','IV-12'],['IPsec','AH','ESP','IKEv2','modo transporte','modo túnel'],[
+    {url:'https://www.rfc-editor.org/rfc/rfc4301.html',referencia:'IETF RFC 4301, §§3.2 y 5.1: los hosts deben implementar modos transporte y túnel; las pasarelas de seguridad deben admitir túnel y pueden admitir transporte.'},
+    {url:'https://www.rfc-editor.org/rfc/rfc4302.html',referencia:'IETF RFC 4302, Authentication Header (AH): servicios de integridad y autenticación del origen, sin confidencialidad.'},
+    {url:'https://www.rfc-editor.org/rfc/rfc4303.html',referencia:'IETF RFC 4303, Encapsulating Security Payload (ESP): define ESP y sus modos de uso.'},
+    {url:'https://www.iana.org/assignments/protocol-numbers',referencia:'IANA Protocol Numbers Registry: protocolo IP 50 asignado a ESP y 51 a AH; registro consultado en octubre de 2026.'},
+    {url:'https://www.rfc-editor.org/rfc/rfc7296.html',referencia:'IETF RFC 7296: IKEv2 es un componente de IPsec para autenticación mutua y establecimiento/mantenimiento de asociaciones de seguridad.'}
+  ],null,'La opción falsa es la D: ESP sí puede utilizarse en modo transporte y en modo túnel. AH proporciona integridad y autenticación del origen, no confidencialidad; ESP está asignado al protocolo IP 50; e IKEv2 establece y mantiene asociaciones de seguridad IPsec.','vigente'],
+  [868,[127],['II-13'],['troyano','caballo de Troya','malware','código malicioso'],[
+    {url:'https://csrc.nist.gov/glossary/term/trojan_horse',referencia:'NIST CSRC Glossary, Trojan horse: programa que parece útil, pero contiene una función maliciosa oculta ejecutada al invocarlo.'}
+  ],null,'La descripción corresponde a un troyano: software que aparenta ser útil o legítimo y oculta una función maliciosa. A diferencia de un virus, no se define por autorreplicarse infectando otros archivos. Se corrige la tilde de «inocuo» en el enunciado.','corregida'],
+  [869,[56,105],['IV-3','IV-5'],['copias de seguridad','backup incremental','backup diferencial','almacenamiento'],[
+    {url:'https://www.ibm.com/think/topics/backup-as-a-service',referencia:'IBM, Backup as a Service: el incremental copia los cambios desde el último trabajo de copia y requiere menos almacenamiento que el completo; para restaurar se necesita el último completo y los incrementales posteriores.'},
+    {url:'https://csrc.nist.gov/publications/detail/sp/800-209/final',referencia:'NIST SP 800-209, Security Guidelines for Storage Infrastructure: contempla distintos tipos de copia y protección de datos almacenados.'}
+  ],null,'Bajo el criterio habitual de volumen de almacenamiento por ciclo, la copia incremental suele ser la más eficiente porque guarda solo los cambios desde la última copia. El resultado depende de la frecuencia, la variación de datos y la implementación; la restauración puede exigir encadenar la copia completa y todos los incrementales posteriores. Se explicita el supuesto para evitar presentar una regla universal independiente del escenario.','corregida'],
+  [870,[128],['IV-6'],['continuidad de negocio','BCP','procesos críticos','recuperación'],[
+    {url:'https://csrc.nist.gov/glossary/term/business_continuity_plan',referencia:'NIST CSRC Glossary, BCP, basado en NIST SP 800-34 Rev. 1: conjunto predeterminado de instrucciones o procedimientos para mantener los procesos de misión/negocio durante y después de una interrupción significativa.'},
+    {url:'https://www.iso.org/standard/75106.html',referencia:'ISO 22301:2019, Security and resilience — Business continuity management systems — Requirements: marco para preparar, responder y recuperarse de incidentes disruptivos.'}
+  ],null,'Se sustituye «recuperar servicios críticos» por la finalidad más precisa: mantener durante la interrupción y después de ella los procesos priorizados de misión/negocio, con procedimientos previamente definidos. La restauración completa de capacidad corresponde a objetivos de recuperación y reconstitución, no describe por sí sola toda la misión del BCP.','corregida']
+];
+const edits={
+  866:{texto:'¿Qué afirmación describe correctamente el alcance de PPP?',opciones:['PPP cifra y autentica extremo a extremo todos los datagramas IP.','PPP transporta datagramas multiprotocolo entre dos pares a través de un enlace punto a punto.','PPP es un protocolo de encaminamiento entre sistemas autónomos.','PPP protege las aplicaciones web mediante cifrado TLS.'],respuesta_correcta:1},
+  868:{texto:'Un programa que aparenta ser útil o inocuo, pero contiene una función maliciosa oculta que se ejecuta al instalarlo o invocarlo, se denomina:',opciones:['honeypot','bomba lógica','virus','troyano'],respuesta_correcta:3},
+  869:{texto:'En el esquema habitual de copias de seguridad, si se busca minimizar el volumen de datos guardado en cada ejecución respecto de repetir una copia completa, ¿qué tipo suele ser más eficiente en espacio?',opciones:['Copia completa','Copia incremental','Copia diferencial','Copia persistente'],respuesta_correcta:1},
+  870:{texto:'Según la definición de NIST, ¿cuál es la finalidad de un Plan de Continuidad del Negocio (BCP) ante una interrupción significativa?',opciones:['Eliminar la necesidad de procedimientos de respuesta y recuperación.','Mantener los procesos de misión o negocio mediante instrucciones y procedimientos predeterminados durante y después de la interrupción.','Garantizar que toda la organización opere siempre sin degradación.','Restaurar exclusivamente los equipos informáticos en su ubicación original.'],respuesta_correcta:1}
+};
+apply({numero:'110',fecha:'2026-10-22',records,edits});

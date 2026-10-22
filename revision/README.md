@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 109 (IDs 861–865). Acumulado: 865 preguntas revisadas, 828 verificadas (236 vigentes, 515 corregidas y 77 históricas) y 37 pendientes de resolver; quedan 11.258 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 110 (IDs 866–870). Acumulado: 870 preguntas revisadas, 833 verificadas (237 vigentes, 519 corregidas y 77 históricas) y 37 pendientes de resolver; quedan 11.253 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.268 preguntas sin revisión de contenido. Siguiente ID: 856. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 36 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.253 preguntas sin revisión de contenido. Siguiente ID: 871. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 37 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -638,3 +638,11 @@ IDs 861–865 examinados individualmente y verificados. Dos se conservan vigente
 Se confirma CMTS como sistema de cabecera que intercambia datos con cable módems DOCSIS (861). Se delimita S/MIME: el contenido MIME, cuerpo y adjuntos se cifran normalmente; las cabeceras externas quedan visibles salvo encapsulación expresa de un mensaje completo (862). DECT se mantiene como tecnología de telefonía inalámbrica para hogares, empresas y despliegues densos; ETSI sigue manteniendo tanto DECT clásico como DECT-2020 NR (863). Se concreta el diseño celular en dividir cobertura en celdas planificadas y reutilizar grupos de frecuencias separados para evitar interferencias (864). Se precisa que la afirmación falsa sobre 5G es que equipos LTE exclusivos acceden a 5G NR por retrocompatibilidad; se acotan beamforming y la meta radio de 1 ms a sus condiciones, sin presentarlas como absolutos (865).
 
 Fuentes primarias consultadas: CableLabs (CMTS/Remote PHY); IETF RFC 8551 y 9787 (S/MIME); ETSI DECT y TR 101 178; Rappaport, *Wireless Communications: Principles and Practice*, y UIT (planificación celular e IMT-2020/5G). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 865 cambios registrados y 11.258 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 110 — 22 de octubre
+
+IDs 866–870 examinados individualmente. Cuatro preguntas verificadas y corregidas; la de IPsec se conserva con estado vigente. Acumulado: 870 examinadas, 833 verificadas y 37 pendientes (22 de fuente y 15 de ambigüedad); 595 preguntas con cambios de contenido. Estados: 237 vigentes, 519 corregidas, 77 históricas y 37 pendientes. Quedan 11.253 sin revisar; siguiente ID 871.
+
+Se desambigua el alcance de PPP: transporta datagramas multiprotocolo sobre enlaces punto a punto, sin constituir cifrado extremo a extremo por sí mismo (866). La opción falsa de IPsec es que ESP no admita modo transporte; RFC 4301 define ambos modos para hosts (867). Se corrige el error ortográfico de «inocuo» y se precisa la definición NIST de troyano (868). La copia incremental se presenta como la que suele minimizar el volumen por ejecución, con sus supuestos y coste de restauración en cadena (869). Se alinea la finalidad del BCP con la definición NIST de mantener procesos de misión/negocio durante y después de una interrupción (870).
+
+Fuentes primarias consultadas: IETF RFC 1661, 4301, 4302, 4303 y 7296; IANA, registro vigente de números de protocolo IP; NIST CSRC Glossary y SP 800-209; IBM, documentación de tipos de copia y restauración; ISO 22301:2019. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 870 cambios registrados y 11.253 preguntas sin revisión de contenido idénticas al commit original.
