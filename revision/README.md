@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 111 (IDs 871–875). Acumulado: 875 preguntas revisadas, 838 verificadas (237 vigentes, 524 corregidas y 77 históricas) y 37 pendientes de resolver; quedan 11.248 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 112 (IDs 876–880). Acumulado: 880 preguntas revisadas, 843 verificadas (239 vigentes, 527 corregidas y 77 históricas) y 37 pendientes de resolver; quedan 11.243 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.248 preguntas sin revisión de contenido. Siguiente ID: 876. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 37 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.243 preguntas sin revisión de contenido. Siguiente ID: 881. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 37 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -654,3 +654,11 @@ IDs 871–875 examinados individualmente y verificados. Cinco preguntas reformul
 Se acota la medida ENS op.cont.2, de aplicación al nivel ALTO según RD 311/2022 (871). Se sitúa BS 25999 como antecedente británico de ISO 22301 y se distingue la edición actual ISO 22301:2019 (872). Se separa OAuth 2.0, marco de autorización delegada, de OpenID Connect, capa de identidad, y se eliminan afirmaciones falsas sobre Twitter, aplicaciones de escritorio y entrega de credenciales (873). Se determina el orden LVM para un dispositivo de bloques nuevo, advirtiendo que una conversión P2V puede conservar metadatos previos (874). Se vincula la descripción histórica de Schwaber con su artículo original de 1996 y se confirma el enfoque iterativo e incremental de Scrum (875).
 
 Fuentes consultadas: BOE, RD 311/2022 consolidado; ISO (historia y edición 2019 de ISO 22301); IETF RFC 6749 y OpenID Foundation (OpenID Connect Core 1.0); Red Hat Enterprise Linux 10 (LVM); Ken Schwaber/Scrum.org (artículo original sobre Scrum) y Scrum Guide. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 875 cambios registrados y 11.248 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 112 — 22 de octubre
+
+IDs 876–880 examinados individualmente y verificados. Tres se reformularon para delimitar las definiciones; dos se corrigieron. Acumulado: 880 examinadas, 843 verificadas y 37 pendientes (22 de fuente y 15 de ambigüedad); 603 preguntas con cambios de contenido. Estados: 239 vigentes, 527 corregidas, 77 históricas y 37 pendientes. Quedan 11.243 sin revisar; siguiente ID 881.
+
+Se identifica como dependencia UML la flecha discontinua abierta que señala al proveedor (876). Se precisa Haskell como lenguaje funcional puro y se distingue su sistema de type classes de la orientación a objetos (877). Se concreta la evaluación de calidad del software como adecuación a requisitos funcionales y necesidades de usuarios (878). Se verifica en el documento ministerial de MÉTRICA v3 que CSI, tarea 8.2, genera los procedimientos de migración y carga inicial (879); la estructura metodológica se desglosa en procesos, actividades y tareas (880).
+
+Fuentes primarias consultadas: OMG UML 2.5.1; Haskell 2010 Language Report; ISO/IEC 25010:2011 y 2023; documentos oficiales del Ministerio de Administraciones Públicas sobre MÉTRICA v3 (Gestión de Proyectos y Construcción del Sistema de Información). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 880 cambios registrados y 11.243 preguntas sin revisión de contenido idénticas al commit original.

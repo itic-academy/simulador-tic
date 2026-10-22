@@ -1,0 +1,27 @@
+const apply=require('./aplicar-lote.cjs');
+const records=[
+  [876,[86],['III-9'],['UML','diagrama de clases','dependencia','notación'],[
+    {url:'https://www.omg.org/spec/UML/2.5.1/PDF',referencia:'OMG UML 2.5.1, §7.7.4: una dependencia se representa con una flecha discontinua entre el cliente y el proveedor; la punta señala el proveedor.'}
+  ],null,'La línea discontinua con punta de flecha abierta identifica una dependencia UML: el elemento cliente depende del proveedor señalado por la flecha. Asociación, agregación y composición tienen notaciones distintas.','vigente'],
+  [877,[93],['III-2'],['Haskell','programación funcional','lenguajes de programación','orientación a objetos'],[
+    {url:'https://www.haskell.org/onlinereport/intro.html',referencia:'Haskell 2010 Language Report, introducción: caracteriza Haskell como lenguaje funcional puro de propósito general y describe sus clases como entidades del sistema de tipos.'}
+  ],null,'Smalltalk, C++ y Eiffel se clasifican convencionalmente como lenguajes orientados a objetos. Haskell es un lenguaje funcional puro; sus «type classes» no son clases/objetos de orientación a objetos. Se corrige la tilde de «¿Cuál?» y se explicita el criterio de clasificación convencional.','corregida'],
+  [878,[91,96],['III-2'],['calidad del software','métricas de calidad','adecuación funcional','requisitos de usuario'],[
+    {url:'https://www.iso.org/obp/ui/?_escaped_fragment_=iso:std:iso-iec:25010:ed-1:v1:en',referencia:'ISO/IEC 25010:2011, modelo de calidad de producto: la adecuación funcional mide si las funciones satisfacen las necesidades declaradas e implícitas; incluye completitud, corrección y adecuación funcional.'},
+    {url:'https://committee.iso.org/cms/live/live/en/sites/isoorg/contents/data/standard/07/81/78176.html',referencia:'ISO/IEC 25010:2023, modelo de calidad de producto vigente, que incluye adecuación funcional entre las características de calidad.'}
+  ],null,'Se precisa «cumplir los requerimientos» como adecuación funcional dentro de las métricas de calidad. La calidad incluye características además de la funcionalidad; por eso el enunciado corregido delimita que se evalúa la adecuación del producto a las necesidades y requisitos especificados por los usuarios.','corregida'],
+  [879,[95],['III-1','III-2'],['MÉTRICA v3','CSI','migración de datos','construcción'],[
+    {url:'https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf',referencia:'Ministerio de Administraciones Públicas, MÉTRICA v3, Construcción del Sistema de Información: tarea CSI 8.2 genera el código de componentes y procedimientos de migración y carga inicial; el producto de salida incluye los Procedimientos de Migración y Carga Inicial de Datos.'}
+  ],null,'La respuesta es Construcción del Sistema de Información (CSI), en concreto la tarea CSI 8.2, cuyo producto incluye los procedimientos de migración y carga inicial de datos. Se conserva la clave original y se añade la referencia de tarea para evitar confundirla con el proceso de Implantación y Aceptación.','vigente'],
+  [880,[86,95],['III-1','III-2'],['MÉTRICA v3','procesos','actividades','tareas'],[
+    {url:'https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A0f07660d-1044-489e-a3be-3a94b80fbb16/METRICA_V3_Gestion_de_Proyectos.pdf',referencia:'Ministerio de Administraciones Públicas, MÉTRICA v3, Gestión de Proyectos: determina procesos principales y la estructura de actividades, tareas y productos; la metodología desglosa procesos en actividades y éstas en tareas.'},
+    {url:'https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf',referencia:'Ministerio de Administraciones Públicas, MÉTRICA v3, Construcción del Sistema de Información: muestra los procesos, actividades y tareas del desarrollo.'}
+  ],null,'MÉTRICA v3 organiza el desarrollo mediante procesos, descompuestos en actividades y éstas en tareas. Las revisiones/inspecciones y las interfaces, incluidas fases o módulos, no son el desglose general preguntado. Se precisa el alcance del enunciado.','corregida']
+];
+const edits={
+  877:{texto:'¿Cuál de estos lenguajes se clasifica convencionalmente como funcional puro y no como lenguaje orientado a objetos?',opciones:['Smalltalk','C++','Eiffel','Haskell'],respuesta_correcta:3},
+  878:{texto:'¿Qué tipo de métricas evalúa atributos de calidad del software —por ejemplo, su adecuación funcional a las necesidades y requisitos especificados por los usuarios—?',opciones:['Métricas de productividad','Métricas de calidad del software','Métricas de complejidad','Ninguna de las anteriores'],respuesta_correcta:1},
+  879:{texto:'En MÉTRICA v3, ¿en qué proceso se genera, entre otros productos, el documento «Procedimientos de Migración y Carga Inicial de Datos»?',opciones:['Análisis del Sistema de Información (ASI).','Diseño del Sistema de Información (DSI).','Construcción del Sistema de Información (CSI).','Implantación y Aceptación del Sistema (IAS).'],respuesta_correcta:2},
+  880:{texto:'Según MÉTRICA v3, ¿cómo se descompone cada proceso de la metodología?',opciones:['En revisiones técnicas formales e inspecciones informales.','En actividades y, a su vez, en tareas.','En fases y módulos, sin actividades ni tareas.','En interfaces y fases.'],respuesta_correcta:1}
+};
+apply({numero:'112',fecha:'2026-10-22',records,edits});
