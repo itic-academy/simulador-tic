@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 126 (IDs 946–950). Acumulado: 950 preguntas revisadas, 909 verificadas (258 vigentes, 563 corregidas y 88 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.173 sin revisión de contenido. Hay 660 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 127 (IDs 951–955). Acumulado: 955 preguntas revisadas, 914 verificadas (259 vigentes, 567 corregidas y 88 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.168 sin revisión de contenido. Hay 664 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -9,6 +9,7 @@ Estado parcial, no revisión completa del banco. Publicación desde la rama `mai
 - `cambios-lote-002.json`: original y resultado de los IDs 13–40.
 - `cambios-lote-003.json` y `cambios-lote-004.json`: IDs 41–100.
 - `cambios-lote-005.json` a `cambios-lote-009.json`: IDs 101–200, examinadas individualmente el 13 de octubre. Total acumulado: 200 clasificadas; 177 verificadas (66 vigentes, 105 corregidas y 6 históricas); 23 con dudas abiertas. El bloque de academia de los IDs 41–200 sigue pendiente de cotejo.
+- `lote-127.cjs` y `cambios-lote-127.json`: IDs 951–955, con el original íntegro, clasificación, fuentes y resultado revisado.
 - 109 preguntas tienen cambios en enunciado, opciones o respuesta respecto al banco original: 57 en los IDs 101–200. Este recuento excluye cambios solo de etiquetas y comentarios e incluye las preguntas históricas cuyo enunciado se ha precisado. Por eso no coincide con el estado «corregida».
 - `inventario.json`: comprobación estructural de las 12.123 preguntas, grupos con enunciado repetido y referencias que necesitan revisión contextual. Las coincidencias de palabras no demuestran obsolescencia. No se elimina ningún duplicado automáticamente.
 - El simulador muestra los temas y estado; su pantalla de revisión muestra explicaciones y enlaces de este lote.
@@ -28,7 +29,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.178 preguntas sin revisión de contenido. Siguiente ID: 946. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.168 preguntas sin revisión de contenido. Siguiente ID: 956. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -39,6 +40,16 @@ Correcciones destacadas de esta continuación: LDAP (64) contenía dos respuesta
 En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regresión y caja blanca con distractores solapados (102, 114); TCP frente a sockets genéricos (109); Wi-Fi 6E (112); DEHú (115); EIGRP (120); plazo de alzada de actos expresos (142); CETIC según RD 1125/2024 (154); denominación de la NTI de firma y sello (157); requisitos ENS según RD 311/2022 (161); modalidades Cl@ve y REG (163–164); mantenimiento concurrente Tier III (166); traducciones TLB (174); Jakarta Pages (183); firma digital sin equipararla genéricamente a cifrado (193); EER con dos respuestas equivalentes en el original (197). Las preguntas de EPA 2022 (150) y arquitectura clásica iOS (178) se delimitan como históricas.
 
 En los IDs 911–915 se delimitan como históricas las taxonomías de CMMI v1.3 (911) y el cubo de COBIT 4.1 (912), se corrige el año de publicación inicial de COBIT a 1996 según ISACA (913), se precisa el ciclo incremental mediante builds sucesivos (914) y se corrige la clave del DFD, que modela procesos/funciones y flujos de datos, no el modelo conceptual de datos (915). Fuentes primarias: Software Engineering Institute/CMMI Institute, ISACA/IT Governance Institute, NASA y MÉTRICA v3 del Ministerio de Administraciones Públicas. Continúan sin resolver las dudas previas; no se han estudiado en este lote nuevos PDFs de academia ni cotejado las correcciones de las convocatorias.
+
+## Lote 127 — 22 de octubre
+
+IDs 951–955 revisados individualmente: una vigente y cuatro corregidas. Acumulado: 955 examinadas, 914 verificadas (259 vigentes, 567 corregidas y 88 históricas) y 41 pendientes (23 de fuente y 18 de ambigüedad); 664 preguntas con cambios de contenido. Quedan 11.168 sin revisar; siguiente ID 956.
+
+Se sustituye el beneficio impreciso de la gestión de cambios de ITIL v3 por el propósito de Change Enablement en ITIL 4: aumentar los cambios exitosos mediante evaluación de riesgos, autorización y programación (951). Se confirma que limitar el trabajo en curso es una práctica general del método Kanban (952). La pregunta de ayuda de Git tenía dos distractores incorrectos y ninguna combinación válida; se reformula distinguiendo `git help add` y `man git-add` de la opción mal formada `git add -help` (953). En el DFD de MÉTRICA v3 se retira la recomendación infundada de mostrar entidades externas solo en el nivel cero; se pregunta por la conexión inválida entre entidad externa y almacén sin proceso intermedio (954). Se conserva la definición de ingeniería inversa y se atribuye con precisión a la taxonomía de Chikofsky y Cross citada por IEEE (955).
+
+Cotejo temático con Drive: el bloque «41_Bloque_41_Tema_ITIL_y_COBIT_2026» cubre la práctica de Change Enablement; «38_ITIC_Academy_Analisis_Diseno_Construccion_SI_2026» trata Kanban, Git y la distinción entre ingeniería inversa y directa; «Tema 093 - Métrica v3» cubre el DFD. Se han contrastado estos materiales de academia con las fuentes técnicas primarias, no se ha auditado todo Drive. Para el programa se revisaron los anexos I y IX de BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): la materia corresponde, respectivamente, a A1-106/A2-IV-4 (951), A1-37 y A1-88/A2-III-2 (952), A1-100 y A1-102/A2-IV-4 (953), A1-95/A2-III-3 (954) y A1-100/A1-101/A2-III-8 (955). Las búsquedas exploratorias en BOE por referencia y por «corrección de errores» no localizaron una corrección de los anexos del programa; sí devolvieron publicaciones posteriores de tramitación y composición de tribunales. No se toma esa búsqueda como prueba exhaustiva de que no exista una disposición posterior, ni como auditoría de todas las modificaciones normativas del banco.
+
+Fuentes técnicas: PeopleCert, práctica ITIL 4 Change Enablement; Kanban University, Official Guide to The Kanban Method; manual oficial Git `git-help`; directrices DFD de MÉTRICA v3 del grupo ALARCOS-UCLM; IEEE Technology Navigator y Chikofsky/Cross, IEEE Software 7(1), DOI 10.1109/52.43044. `inventario.cjs` y `verificar.cjs` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 955 cambios registrados y 11.168 preguntas restantes idénticas al commit original.
 
 ## Vista local y comprobaciones
 
