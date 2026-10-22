@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 118 (IDs 906–910). Acumulado: 910 preguntas revisadas, 869 verificadas (250 vigentes, 539 corregidas y 80 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.213 sin revisión de contenido. Hay 627 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 119 (IDs 911–915). Acumulado: 915 preguntas revisadas, 874 verificadas (250 vigentes, 542 corregidas y 82 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.208 sin revisión de contenido. Hay 632 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.213 preguntas sin revisión de contenido. Siguiente ID: 911. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.208 preguntas sin revisión de contenido. Siguiente ID: 916. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -37,6 +37,8 @@ Pendientes de fuente: 11, 32, 38, 48, 52, 54, 67, 73, 76, 77, 94, 95, 108, 306, 
 Correcciones destacadas de esta continuación: LDAP (64) contenía dos respuestas defendibles; Java static (79) cambia la respuesta correcta de A a B; la fecha del artículo 6.d de la Orden ETD/465/2021 (89) pasa a 1 de marzo de 2023 conforme a la modificación de 2022; WebAssembly (98) admite ejecución fuera del navegador; Data Act (100) se actualiza a su aplicación general desde septiembre de 2025. Se conservan los originales completos.
 
 En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regresión y caja blanca con distractores solapados (102, 114); TCP frente a sockets genéricos (109); Wi-Fi 6E (112); DEHú (115); EIGRP (120); plazo de alzada de actos expresos (142); CETIC según RD 1125/2024 (154); denominación de la NTI de firma y sello (157); requisitos ENS según RD 311/2022 (161); modalidades Cl@ve y REG (163–164); mantenimiento concurrente Tier III (166); traducciones TLB (174); Jakarta Pages (183); firma digital sin equipararla genéricamente a cifrado (193); EER con dos respuestas equivalentes en el original (197). Las preguntas de EPA 2022 (150) y arquitectura clásica iOS (178) se delimitan como históricas.
+
+En los IDs 911–915 se delimitan como históricas las taxonomías de CMMI v1.3 (911) y el cubo de COBIT 4.1 (912), se corrige el año de publicación inicial de COBIT a 1996 según ISACA (913), se precisa el ciclo incremental mediante builds sucesivos (914) y se corrige la clave del DFD, que modela procesos/funciones y flujos de datos, no el modelo conceptual de datos (915). Fuentes primarias: Software Engineering Institute/CMMI Institute, ISACA/IT Governance Institute, NASA y MÉTRICA v3 del Ministerio de Administraciones Públicas. Continúan sin resolver las dudas previas; no se han estudiado en este lote nuevos PDFs de academia ni cotejado las correcciones de las convocatorias.
 
 ## Vista local y comprobaciones
 
@@ -710,3 +712,11 @@ IDs 906–910 revisados individualmente: tres verificadas/corregidas y dos pendi
 Se confirman en McCall las tres perspectivas operación, revisión y transición del producto (906). La pregunta de niveles de prueba se limita al sistema completo e integrado: ISTQB reconoce que las pruebas de características no funcionales pueden ejecutarse en varios niveles; se excluye «despliegue», que puede designar instalación o aceptación (907). MÉTRICA v3 ubica CSI-CAL 4, revisión de formación a usuarios finales, dentro de Construcción del Sistema de Información (908). La pregunta genérica de gestor documental no se certifica: sin producto o requisitos explícitos, tanto la restricción de formatos como el volumen/velocidad son capacidades dependientes de la solución (909). La clasificación de prototipos atribuida a J. Whitten queda pendiente porque no se localizó edición y página que sustenten la taxonomía específica (910).
 
 Fuentes consultadas: McCall, Richards y Walters (RADC-TR-77-369, 1977), verificado mediante la síntesis técnica de NIST; ISTQB CTFL Syllabus v4.0.1 (2024); Ministerio de Administraciones Públicas, MÉTRICA v3, Aseguramiento de la Calidad; ISO 19475 e ISO/TC 46/SC 11. Para Whitten no se halló la fuente primaria precisa y se conserva sin validar. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote; esos pendientes continúan abiertos. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 910 cambios registrados y 11.213 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 119 — 22 de octubre
+
+IDs 911–915 revisados individualmente. Tres corregidos y dos delimitados como históricos. Acumulado: 915 examinadas, 874 verificadas y 41 pendientes (23 de fuente y 18 de ambigüedad); 632 preguntas con cambios de contenido. Estados: 250 vigentes, 542 corregidas, 82 históricas y 41 pendientes. Quedan 11.208 sin revisar; siguiente ID 916.
+
+Se restringe CMMI a la suite v1.3, cuyos modelos eran Development, Acquisition y Services; la taxonomía actual CMMI v3.0 tiene ocho dominios (911). COBIT 4.1 se limita a los tres ejes clásicos del cubo; «personas» integra los recursos de TI, no es un eje adicional (912). ISACA fecha la primera publicación de COBIT en 1996, por lo que se corrige «finales de 1995» (913). Se formula con mayor precisión el desarrollo incremental por construcciones sucesivas (914). Se corrige la clave del DFD: representa procesos/funciones y flujos de datos, no el modelo conceptual de datos (915).
+
+Fuentes consultadas: Software Engineering Institute (CMMI v1.3) y CMMI Institute (dominios v3.0); ISACA e IT Governance Institute (COBIT y COBIT 4.1); NASA Software Engineering Handbook (ciclo incremental); Ministerio de Administraciones Públicas (MÉTRICA v3, Análisis del Sistema) y directriz DFD de MÉTRICA alojada por la Universidad de Castilla-La Mancha. No se han estudiado nuevos PDFs de academia ni cotejado correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 915 cambios registrados y 11.208 preguntas restantes idénticas al commit original.
