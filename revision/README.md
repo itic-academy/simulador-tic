@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 106 (IDs 846–850). Acumulado: 850 preguntas revisadas, 813 verificadas (233 vigentes, 507 corregidas y 73 históricas) y 37 pendientes de resolver; quedan 11.273 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 107 (IDs 851–855). Acumulado: 855 preguntas revisadas, 818 verificadas (234 vigentes, 510 corregidas y 74 históricas) y 37 pendientes de resolver; quedan 11.268 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.283 preguntas sin revisión de contenido. Siguiente ID: 841. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 36 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.268 preguntas sin revisión de contenido. Siguiente ID: 856. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 36 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -614,3 +614,11 @@ IDs 846–850 examinados individualmente y verificados. Una se delimita como his
 Se acota la clasificación orgánico/semiacoplado/empotrado al COCOMO original de 1981 y se distingue esta edición de COCOMO II/III (846). Se corrige el distractor «puntos función de Boehm»: los 3D Function Points son una extensión desarrollada en Boeing y Boehm creó COCOMO (847). Se delimita COCOMO como modelo algorítmico de esfuerzo/coste/calendario (848). Se sustituye una definición demasiado amplia de documentación por los elementos de información del ciclo de vida, planificados para los procesos y productos de cada sistema (849). La pregunta sobre la versión actual de ITIL cambia de ITIL 4 a ITIL (Version 5), que PeopleCert publica desde 2026; ITIL 4 continúa disponible durante el periodo de transición (850).
 
 Fuentes primarias consultadas: PeopleCert (ITIL Version 5); Barry Boehm, *Software Engineering Economics* (COCOMO 81); NASA y USC (estimación con COCOMO II); IFPUG (FPA de Albrecht); ISO/IEC 20968:2002 (MkII FPA); Boeing/Whitmire (3D Function Points); Gustav Karner (Use Case Points); ISO/IEC/IEEE 15289:2019 y MÉTRICA v3 (documentación de ciclo de vida). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 850 cambios registrados y 11.273 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 107 — 22 de octubre
+
+IDs 851–855 examinados individualmente y verificados. Una se conserva como histórica y cuatro se corrigieron. Acumulado: 855 examinadas, 818 verificadas y 37 pendientes (22 de fuente y 15 de ambigüedad); 581 preguntas con cambios de contenido. Estados: 234 vigentes, 510 corregidas, 74 históricas y 37 pendientes. Quedan 11.268 sin revisar; siguiente ID 856.
+
+Se acota la pregunta ITIL a la versión 4 y se identifica «focalizarse en la planificación» como distractor ajeno a sus siete principios guía (851). Se especifica que store-and-forward recibe la trama Ethernet completa y comprueba su CRC/FCS (852). Se corrige «ISO/EIS DIS» a ISO/IEC 11801, serie vigente de cableado genérico y clases de enlace/canal (853). Se sustituye «distancia entre estaciones» por longitud máxima de segmento 10BASE-T, 100 m entre estación y repetidor/concentrador, evitando confundirlo con una trayectoria a través de dos enlaces (854). Se corrige la clave de Bluetooth: emplea FHSS, no DSSS más FHSS (855).
+
+Fuentes primarias consultadas: PeopleCert (ITIL 4 Foundation y FAQ de transición a ITIL Version 5); Cisco (métodos de conmutación y especificaciones de Ethernet 10BASE-T); ISO/IEC 11801-1:2017 con AMD1:2025; Bluetooth SIG Core Specification v6.3 y Technology Overview. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 855 cambios registrados y 11.268 preguntas sin revisión de contenido idénticas al commit original.
