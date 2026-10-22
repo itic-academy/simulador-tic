@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 087 (IDs 751–755). Acumulado: 755 preguntas revisadas, 724 verificadas (203 vigentes, 460 corregidas y 61 históricas) y 31 pendientes de resolver; quedan 11.368 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 088 (IDs 756–760). Acumulado: 760 preguntas revisadas, 729 verificadas (204 vigentes, 461 corregidas y 64 históricas) y 31 pendientes de resolver; quedan 11.363 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.368 preguntas sin revisión de contenido. Siguiente ID: 756. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.363 preguntas sin revisión de contenido. Siguiente ID: 761. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -472,3 +472,9 @@ La pregunta de virtualización (726) deja claro que consolidar servidores puede 
 IDs 721–725: cinco verificadas, todas corregidas para concretar el supuesto o eliminar ambigüedades. Acumulado: 725 examinadas, 694 verificadas y 31 pendientes; 488 preguntas con cambios de contenido. Estados: 201 vigentes, 449 corregidas, 44 históricas y 31 pendientes. Quedan 11.398 sin revisar; siguiente ID 726.
 
 Se precisa Info.plist como archivo de información del bundle iOS, teniendo en cuenta su generación durante la compilación (721). Se confirman los modos transporte y túnel de IPsec según RFC 4301 (722); la búsqueda exhaustiva de claves se identifica como fuerza bruta con definición NIST (723). Se acota jitter a variación del retardo de paquetes en redes IP multimedia, pues RFC 3393 advierte de sus varios usos técnicos (724). SSO se define como autenticación integrada para varias aplicaciones, sin equipararlo a almacenar contraseñas o a conceder automáticamente autorización (725). No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de convocatorias en este lote.
+
+## Lote 088 — 22 de octubre
+
+IDs 756–760: cinco preguntas examinadas y verificadas, tres con cambios de contenido. Acumulado: 760 examinadas, 729 verificadas y 31 pendientes; 520 preguntas con cambios de contenido. Estados: 204 vigentes, 461 corregidas, 64 históricas y 31 pendientes. Quedan 11.363 sin revisar; siguiente ID 761.
+
+La pregunta 756 se corrige porque todas las opciones originales podían guardar relación con la brecha digital; ahora distingue el acceso a habilidades del acceso material y los factores sociales, con el modelo de Van Dijk. En DESI 2022 (757) se confirma que las tres afirmaciones son ciertas: España fue tercera en datos abiertos, quinta en servicios públicos digitales y superó ligeramente a la UE en titulados TIC (4,0 % frente a 3,9 %); se conserva D como respuesta histórica. La 758 se reformula como pregunta conceptual: blogs, redes, vídeo y sindicación son ejemplos asociados a Web 2.0, etiqueta sin definición técnica cerrada. En España Digital 2025 (759), la fuente oficial dice «cerca de 50 medidas», no exactamente 48; se conserva el dato inequívoco de diez ejes. Horizonte Europa (760) se confirma para 2021–2027 mediante la Comisión y la Decisión (UE) 2021/764. No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de convocatorias en este lote.
