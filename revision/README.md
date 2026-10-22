@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 094 (IDs 786–790). Acumulado: 790 preguntas revisadas, 759 verificadas (218 vigentes, 471 corregidas y 70 históricas) y 31 pendientes de resolver; quedan 11.333 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 095 (IDs 791–795). Acumulado: 795 preguntas revisadas, 763 verificadas (218 vigentes, 475 corregidas y 70 históricas) y 32 pendientes de resolver; quedan 11.328 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.333 preguntas sin revisión de contenido. Siguiente ID: 791. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.328 preguntas sin revisión de contenido. Siguiente ID: 796. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 32 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -519,3 +519,10 @@ IDs 786–790 examinados individualmente. Cinco verificadas; tres corregidas/ref
 Se distingue el objeto histórico del RD 1720/2007 de la vigencia actual, limitada por incompatibilidad con el RGPD y la LO 3/2018 (786). La primacía del Derecho de la Unión se formula solo ante incompatibilidad irreconciliable, no como regla para cualquier solapamiento del RGPD y la LOPDGDD (787). El ciclo elemental de procesamiento se delimita como entrada, procesamiento, almacenamiento y salida; la copia de seguridad no es una fase independiente (788). La cifra de 3.165 millones se vincula a la referencia gubernamental de julio de 2022 sobre el Plan de Digitalización de las Administraciones Públicas y se etiqueta como dato histórico, sin confundirla con el presupuesto total del Componente 11 (789). La disposición adicional novena de la Ley 40/2015 confirma que la Comisión Sectorial de Administración Electrónica es el órgano técnico de cooperación (790).
 
 Fuentes primarias consultadas: BOE (RD 1720/2007, LO 3/2018 y Ley 40/2015), EUR-Lex (primacía del Derecho de la Unión y artículo 288 TFUE), portal oficial PRTR y referencia del Consejo de Ministros de 5 de julio de 2022. Para el modelo de ciclo de procesamiento se consultó el texto educativo universitario abierto de OpenStax. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 790 cambios registrados y 11.333 preguntas sin revisión de contenido idénticas al commit original.
+## Lote 095 — 22 de octubre
+
+IDs 791–795: cuatro verificadas y corregidas; la 792 queda pendiente por ambigüedad porque no se cita un marco que permita excluir la planificación financiera como función directiva. Acumulado: 795 examinadas, 763 verificadas y 32 pendientes; 542 preguntas con cambios de contenido. Estados: 218 vigentes, 475 corregidas, 70 históricas y 32 pendientes. Quedan 11.328 sin revisar; siguiente ID 796.
+
+La Ley 37/2007, artículo 11.1.b, califica como grave en el ámbito de la AGE reutilizar información con una finalidad distinta de la concedida (791). La pregunta genérica sobre funciones directivas se conserva sin certificar mientras no se identifique su fuente o se precise un modelo funcional (792). El artículo 100.1 del TRLPI contempla reproducción o transformación, incluida la corrección de errores, si es necesaria para el uso por el usuario legítimo conforme a la finalidad propuesta, con la salvedad contractual legal (793). Se concreta que la EUPL puede usarla cualquier persona u organización en todo el mundo y se separa compatibilidad condicionada con GPL de equivalencia entre licencias (794). En SICRES 4.0 se cambia la respuesta de A a B: la NTI reemplaza el envío de ficheros por referencias a los documentos adjuntos, mientras sí incorpora metadatos para automatizar el tratamiento (795).
+
+Fuentes oficiales: BOE (Ley 37/2007, TRLPI y resolución de 22 de julio de 2021 SICRES 4.0), Comisión Europea/Interoperable Europe Portal (texto y FAQ de la EUPL). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 795 cambios registrados y 11.328 preguntas sin revisión de contenido idénticas al commit original.
