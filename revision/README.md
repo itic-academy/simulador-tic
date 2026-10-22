@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 086 (IDs 746–750). Acumulado: 750 preguntas revisadas, 719 verificadas (202 vigentes, 459 corregidas y 58 históricas) y 31 pendientes de resolver; quedan 11.373 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 087 (IDs 751–755). Acumulado: 755 preguntas revisadas, 724 verificadas (203 vigentes, 460 corregidas y 61 históricas) y 31 pendientes de resolver; quedan 11.368 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -28,7 +28,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.373 preguntas sin revisión de contenido. Siguiente ID: 751. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.368 preguntas sin revisión de contenido. Siguiente ID: 756. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 31 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -448,6 +448,12 @@ Se coteja el 75,4 % de uso del smartphone entre compradores online con el inform
 IDs 746–750: cinco preguntas examinadas y verificadas; una corregida y tres acotadas como históricas. Acumulado: 750 examinadas, 719 verificadas y 31 pendientes; 512 preguntas con cambios de contenido. Estados: 202 vigentes, 459 corregidas, 58 históricas y 31 pendientes. Quedan 11.373 sin revisar; siguiente ID 751.
 
 Se confirma el esquema de diez ejes estratégicos y dos transversales de España Digital 2026 (746). En DESI 2022 se precisa que España estaba por debajo de la media en especialistas TIC (4,1 % frente a 4,5 %) y ligeramente por encima en titulados TIC (4,0 % frente a 3,9 %), con denominadores diferenciados (747). El informe ONTSI de 2021 registra al smartphone como dispositivo más señalado para consumir contenidos digitales (76,7 %) (748). Se corrige la pregunta sobre la Década Digital: la Decisión (UE) 2022/2481 fija tres metas del 100 % para servicios clave en línea, acceso a historiales médicos electrónicos y acceso a identificación electrónica segura y reconocida; el 80 % de uso de identidad electrónica no era la meta final (749). Se concreta la dimensión mejor situada de España en DESI 2021 como conectividad, donde ocupó el tercer puesto (750). No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de las convocatorias en este lote.
+
+## Lote 087 — 22 de octubre
+
+IDs 751–755: cinco preguntas examinadas y verificadas; una corregida y tres contextualizadas como históricas. Acumulado: 755 examinadas, 724 verificadas y 31 pendientes; 517 preguntas con cambios de contenido. Estados: 203 vigentes, 460 corregidas, 61 históricas y 31 pendientes. Quedan 11.368 sin revisar; siguiente ID 756.
+
+Se corrige la atribución de la Secretaría del Consejo Consultivo para la Transformación Digital: la Orden ETD/920/2020 señala a la Subdirección General de Ordenación de las Telecomunicaciones, no a la SGAD (751). Se confirma que los cuatro ejes transversales del PRTR son transición ecológica, transformación digital, cohesión social y territorial e igualdad de género (752). Los datos EPA de ONTSI para 2021 muestran una adopción del teletrabajo habitual superior entre mujeres ocupadas; el enunciado se limita al segundo trimestre para fijar el periodo (753). Se distingue la lista oficial de diez políticas palanca de las medidas concretas contra brechas digitales (754). Se precisan las metas de España Digital 2026: app móvil para el 50 % de los servicios públicos en 2025, transformación digital de entidades regionales y locales con horizonte 2026, y objetivo de 25 % de empresas usuarias de IA y Big Data (755). No se han cotejado nuevos PDFs de academia ni las posibles correcciones posteriores de las convocatorias en este lote.
 
 ## Lote 083 — 22 de octubre
 
