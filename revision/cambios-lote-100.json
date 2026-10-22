@@ -1,0 +1,324 @@
+{
+  "fecha": "2026-10-22",
+  "alcance": "IDs 816–820; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 816,
+      "original": {
+        "id": 816,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el caso de una aplicación enriquecida de Internet (Rich Internet Application), ¿dónde residen la capa de presentación y la capa de negocio?:",
+        "opciones": [
+          "En el Business layer.",
+          "En el Cliente, concretamente, en el plugin del browser.",
+          "En el Data layer.",
+          "En el Presentation layer."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 816,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una arquitectura histórica de aplicación RIA basada en un complemento de navegador (por ejemplo, Silverlight), ¿dónde se ejecutaban la presentación y parte de la lógica de la aplicación?",
+        "opciones": [
+          "Únicamente en la capa de negocio del servidor.",
+          "En el cliente, dentro del complemento del navegador.",
+          "Únicamente en la capa de datos.",
+          "Solo en el servidor web, sin código de presentación en el cliente."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se contextualiza como arquitectura histórica de RIA basadas en complementos como Silverlight. En ese supuesto, el complemento se ejecuta en el cliente y alberga la presentación y parte de la lógica; no es una regla universal de las RIA actuales, que suelen usar tecnologías web nativas. Se conserva la clave B y se etiqueta histórica.",
+        "clasificacion": {
+          "A1": [
+            "A1-65"
+          ],
+          "A2": [
+            "A2-III-12"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "RIA",
+          "Rich Internet Application",
+          "complemento de navegador",
+          "Silverlight",
+          "Flex",
+          "arquitectura histórica"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-22",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/archive/msdn-magazine/2010/june/msdn-magazine-silverlight-online-silverlight-in-an-occasionally-connected-world",
+              "referencia": "Microsoft Learn (archivo MSDN Magazine), Silverlight in an Occasionally Connected World: documenta Silverlight como tecnología para construir aplicaciones RIA que se ejecutaban en el cliente y podían operar fuera del navegador; se usa como ejemplo histórico, no como arquitectura universal."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/january/architecture-rich-internet-applications-with-net",
+              "referencia": "Microsoft Learn (archivo MSDN Magazine), Architecture: Rich Internet Applications with .NET: describe la arquitectura cliente de una RIA basada en Silverlight y el papel del cliente enriquecido."
+            }
+          ],
+          "observaciones": "Se contextualiza como arquitectura histórica de RIA basadas en complementos como Silverlight. En ese supuesto, el complemento se ejecuta en el cliente y alberga la presentación y parte de la lógica; no es una regla universal de las RIA actuales, que suelen usar tecnologías web nativas. Se conserva la clave B y se etiqueta histórica."
+        }
+      }
+    },
+    {
+      "id": 817,
+      "original": {
+        "id": 817,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En .NET el código fuente se compila a un lenguaje intermedio:",
+        "opciones": [
+          "que se llama Bytecode, igual que en Java",
+          "denominado IL, Lenguaje intermedio",
+          "No se compila, sino que el código es interpretado directamente por un intérprete CLR",
+          "que depende de la máquina en la que se va a ejecutar"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 817,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denomina el lenguaje intermedio al que compilan normalmente los compiladores de .NET antes de su ejecución por el runtime?",
+        "opciones": [
+          "El bytecode de Java, idéntico al generado para la máquina virtual Java.",
+          "Common Intermediate Language (CIL), también denominado IL.",
+          "Código fuente interpretado directamente por el CLR sin una fase de compilación intermedia.",
+          "Código nativo específico de la máquina de destino, generado siempre durante la compilación inicial."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se reformula para evitar que «bytecode» permita más de una interpretación: el nombre preciso del lenguaje intermedio de .NET es CIL (Common Intermediate Language), también denominado IL o históricamente MSIL. No debe confundirse con el bytecode de Java, que tiene otro formato.",
+        "clasificacion": {
+          "A1": [
+            "A1-66"
+          ],
+          "A2": [
+            "A2-III-11"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          ".NET",
+          "IL",
+          "CIL",
+          "MSIL",
+          "lenguaje intermedio",
+          "JIT"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-22",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process",
+              "referencia": "Microsoft Learn, Managed Execution Process: los compiladores .NET traducen código fuente a Common Intermediate Language (CIL), también denominado IL, y el runtime lo compila a código nativo, normalmente mediante JIT."
+            }
+          ],
+          "observaciones": "Se reformula para evitar que «bytecode» permita más de una interpretación: el nombre preciso del lenguaje intermedio de .NET es CIL (Common Intermediate Language), también denominado IL o históricamente MSIL. No debe confundirse con el bytecode de Java, que tiene otro formato."
+        }
+      }
+    },
+    {
+      "id": 818,
+      "original": {
+        "id": 818,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Elija la respuesta correcta:",
+        "opciones": [
+          "La JavaServer Pages Standard Tag Library (JSTL) es una colección de bibliotecas de etiquetas con utilidades ampliamente utilizadas en el desarrollo de páginas web.",
+          "Apache Struts es un framework de desarrollo bajo el modelo vista controlador que sirve para crear Aplicaciones web con Smalltalk.",
+          "El Unified Expression Language (EL) integra los JSP con los servlets.",
+          "Los Applets y las Java Server Pages (JSPs) son dos métodos de creación de páginas web dinámicas en servidor usando el lenguaje Java."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 818,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué describe correctamente la JavaServer Pages Standard Tag Library (JSTL), hoy denominada Jakarta Standard Tag Library?",
+        "opciones": [
+          "Una biblioteca de etiquetas que amplía JSP con acciones comunes como control de flujo, formato e internacionalización.",
+          "Un framework MVC escrito para crear aplicaciones web con el lenguaje Smalltalk.",
+          "Un protocolo de red que conecta directamente JSP con servlets mediante HTTP.",
+          "Un complemento de navegador para ejecutar servlets en el equipo cliente."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se sustituye el enunciado genérico «Elija la respuesta correcta» por una pregunta concreta sobre JSTL. La opción A es la única respuesta y se elimina la ambigüedad de otras afirmaciones sobre Struts, EL, applets y JSP. La especificación actual se denomina Jakarta Standard Tag Library; JSTL es la denominación histórica ampliamente usada.",
+        "clasificacion": {
+          "A1": [
+            "A1-65",
+            "A1-67"
+          ],
+          "A2": [
+            "A2-III-10",
+            "A2-III-12"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "JSTL",
+          "Jakarta Standard Tag Library",
+          "JSP",
+          "biblioteca de etiquetas",
+          "Java web"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-22",
+          "fuentes": [
+            {
+              "url": "https://jakarta.ee/specifications/tags/",
+              "referencia": "Eclipse Foundation, Jakarta Standard Tag Library: define JSTL como conjunto de etiquetas que simplifica el desarrollo con Jakarta Server Pages (JSP)."
+            },
+            {
+              "url": "https://jakarta.ee/specifications/tags/2.0/jakarta-tags-spec-2.0",
+              "referencia": "Jakarta Standard Tag Library Specification 2.0, introducción y objetivos: la biblioteca amplía JSP con etiquetas para tareas comunes como flujo de control, acceso a datos e internacionalización."
+            }
+          ],
+          "observaciones": "Se sustituye el enunciado genérico «Elija la respuesta correcta» por una pregunta concreta sobre JSTL. La opción A es la única respuesta y se elimina la ambigüedad de otras afirmaciones sobre Struts, EL, applets y JSP. La especificación actual se denomina Jakarta Standard Tag Library; JSTL es la denominación histórica ampliamente usada."
+        }
+      }
+    },
+    {
+      "id": 819,
+      "original": {
+        "id": 819,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la respuesta correcta en relación con el polimorfismo en el lenguaje Java:",
+        "opciones": [
+          "En el polimorfismo dinámico el tipo del objeto se determina en tiempo de compilación",
+          "La sobrecarga de métodos de una clase es una forma de polimorfismo dinámico",
+          "La notación @Override es una forma de indicar al compilador que compruebe que se está sobrescribiendo un método de una clase superior"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 819,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la respuesta correcta en relación con el polimorfismo en el lenguaje Java:",
+        "opciones": [
+          "En el polimorfismo dinámico el tipo del objeto se determina en tiempo de compilación",
+          "La sobrecarga de métodos de una clase es una forma de polimorfismo dinámico",
+          "La notación @Override es una forma de indicar al compilador que compruebe que se está sobrescribiendo un método de una clase superior"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La opción C es correcta: `@Override` permite que el compilador compruebe que el método realmente sobrescribe uno heredado. La sobrecarga se resuelve en compilación; la sobrescritura de métodos de instancia usa búsqueda dinámica en ejecución.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-III-9"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Java",
+          "polimorfismo",
+          "sobrescritura",
+          "Override",
+          "anotaciones"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-22",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/javase/tutorial/java/IandI/override.html",
+              "referencia": "Oracle Java Tutorials, Overriding and Hiding Methods: `@Override` indica la intención de sobrescribir un método y el compilador genera un error si no existe una sobrescritura válida."
+            },
+            {
+              "url": "https://docs.oracle.com/javase/specs/jls/se25/html/jls-15.html",
+              "referencia": "Java Language Specification, §15.12: la selección de una implementación sobrescrita de un método de instancia se realiza mediante búsqueda dinámica en tiempo de ejecución."
+            }
+          ],
+          "observaciones": "La opción C es correcta: `@Override` permite que el compilador compruebe que el método realmente sobrescribe uno heredado. La sobrecarga se resuelve en compilación; la sobrescritura de métodos de instancia usa búsqueda dinámica en ejecución."
+        }
+      }
+    },
+    {
+      "id": 820,
+      "original": {
+        "id": 820,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el proyecto GNU, ¿cuál de las siguientes NO puede ser considerada una libertad esencial del software libre?",
+        "opciones": [
+          "La libertad de ejecutar el programa como se desee, con cualquier propósito.",
+          "La libertad de estudiar cómo funciona el programa, y modificarlo para que tenga la funcionalidad deseada.",
+          "La libertad de redistribuir copias para ayudar al prójimo.",
+          "La libertad de distribuir a terceros versiones modificadas siempre que no tengan uso comercial."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 820,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el proyecto GNU, ¿cuál de las siguientes NO puede ser considerada una libertad esencial del software libre?",
+        "opciones": [
+          "La libertad de ejecutar el programa como se desee, con cualquier propósito.",
+          "La libertad de estudiar cómo funciona el programa, y modificarlo para que tenga la funcionalidad deseada.",
+          "La libertad de redistribuir copias para ayudar al prójimo.",
+          "La libertad de distribuir a terceros versiones modificadas siempre que no tengan uso comercial."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La opción D es la que no constituye una libertad esencial: no se puede restringir la distribución de versiones modificadas a usos no comerciales. Las libertades de distribución admiten cobrar por las copias; «libre» se refiere a las libertades de uso, estudio, modificación y distribución, no a precio cero.",
+        "clasificacion": {
+          "A1": [
+            "A1-69"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "GNU",
+          "FSF",
+          "software libre",
+          "cuatro libertades",
+          "distribución comercial"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-22",
+          "fuentes": [
+            {
+              "url": "https://www.gnu.org/philosophy/free-sw.en.html",
+              "referencia": "Free Software Foundation, What is Free Software?: recoge las cuatro libertades, aclara que la distribución puede ser gratuita o a cambio de un precio y que la libertad incluye comercializar copias."
+            },
+            {
+              "url": "https://www.gnu.org/gnu/the-gnu-project.en.html",
+              "referencia": "GNU Project, The GNU Project: enumera las libertades esenciales, incluida la distribución de versiones modificadas y la posibilidad de vender copias."
+            }
+          ],
+          "observaciones": "La opción D es la que no constituye una libertad esencial: no se puede restringir la distribución de versiones modificadas a usos no comerciales. Las libertades de distribución admiten cobrar por las copias; «libre» se refiere a las libertades de uso, estudio, modificación y distribución, no a precio cero."
+        }
+      }
+    }
+  ]
+}

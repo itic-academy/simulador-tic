@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 099 (IDs 811–815). Acumulado: 815 preguntas revisadas, 781 verificadas (223 vigentes, 487 corregidas y 71 históricas) y 34 pendientes de resolver; quedan 11.308 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 100 (IDs 816–820). Acumulado: 820 preguntas revisadas, 786 verificadas (225 vigentes, 489 corregidas y 72 históricas) y 34 pendientes de resolver; quedan 11.303 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -558,3 +558,11 @@ IDs 811–815 examinados individualmente y verificados. Tres se corrigieron o pr
 UUCP se describe como una suite que transfiere ficheros y programa órdenes remotas mediante sus utilidades diferenciadas (811). WinRM se acota al listener predeterminado HTTP; puede configurarse HTTPS y utiliza WS-Management (812). ACID se confirma como atomicidad, consistencia, aislamiento y durabilidad (813). La extensión de módulo de menú Oracle Forms 4.5 se precisa como .mmb antes de compilar y .mmx para el ejecutable; se conserva como pregunta histórica por tratar de una versión sin soporte (814). Se corrige la respuesta de CRUD a «Create, Read/Retrieve, Update, Delete» y se eliminan las generalizaciones sobre REST y SQL (815).
 
 Fuentes oficiales consultadas: IBM Documentation (UUCP); Microsoft Learn (WinRM, WS-Management y puertos por defecto); PostgreSQL Documentation (ACID); Oracle (módulos de menú MMB/MMX y archivo de documentación legado); Microsoft Learn (CRUD). No se han cotejado PDFs de academia ni posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 815 cambios registrados y 11.308 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 100 — 22 de octubre
+
+IDs 816–820 examinados individualmente y verificados. Tres se reformularon para precisar conceptos o eliminar ambigüedades; la 816 se mantiene como histórica por referirse a complementos de navegador. Acumulado: 820 examinadas, 786 verificadas y 34 pendientes; 558 preguntas con cambios de contenido. Estados: 225 vigentes, 489 corregidas, 72 históricas y 34 pendientes (21 de fuente y 13 de ambigüedad). Quedan 11.303 sin revisar; siguiente ID 821.
+
+La 816 se acota a las RIA históricas basadas en complementos como Silverlight: el cliente ejecutaba presentación y parte de la lógica, sin elevarlo a característica universal de las RIA. La 817 se precisa como CIL/IL de .NET, distinto del bytecode de Java. La especificación de Jakarta confirma el propósito de JSTL para JSP (818). Oracle y la JLS confirman el uso de `@Override` y la búsqueda dinámica de métodos sobrescritos en Java (819). La FSF define las cuatro libertades y permite distribuir copias gratis o a cambio de precio; por ello la restricción no comercial de la 820 no es una libertad esencial.
+
+Fuentes primarias: Microsoft Learn (archivo de arquitectura RIA Silverlight y proceso de ejecución .NET); Eclipse Foundation/Jakarta (especificación JSTL); Oracle (Java Tutorials) y Java Language Specification; GNU Project/Free Software Foundation (definición de software libre). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. Inventario y verificador ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 820 cambios registrados y 11.303 preguntas sin revisión de contenido idénticas al commit original.
