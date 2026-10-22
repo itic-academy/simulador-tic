@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 22 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 105 (IDs 841–845). Acumulado: 845 preguntas revisadas, 808 verificadas (232 vigentes, 504 corregidas y 72 históricas) y 37 pendientes de resolver; quedan 11.278 sin revisión de contenido. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 106 (IDs 846–850). Acumulado: 850 preguntas revisadas, 813 verificadas (233 vigentes, 507 corregidas y 73 históricas) y 37 pendientes de resolver; quedan 11.273 sin revisión de contenido. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -606,3 +606,11 @@ IDs 841–845 examinados individualmente. Cuatro verificadas —una vigente y tr
 Se confirma en MÉTRICA v3 que EVS 3 reúne al Jefe de Proyecto, Analistas y Usuarios Expertos (841). La 842 no se certifica: el PDF ministerial identificado devuelve rechazo de acceso y falta cotejar la formulación precisa sobre DFD y flujos de control en la fuente metodológica. Se actualiza TFS a su denominación contemporánea y se distingue el control de versiones Git/TFVC de Apache Tomcat, que es un contenedor web (843). Se corrige la clasificación de verificación y validación: auditorías y revisiones son análisis estático en NIST SP 500-234, mientras el análisis formal es una categoría diferenciada (844). Se concreta qué significa «cobertura de texto» para que no se confunda con líneas o sentencias ejecutables, preservando la clave sobre cobertura estructural (845).
 
 Fuentes consultadas: MÉTRICA v3, documento ministerial de EVS identificado y tabla transcrita; Microsoft Learn (repositorios Git/TFVC); Apache Software Foundation (Tomcat); NIST SP 500-234; ISTQB CTFL v4.0.1. No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 845 cambios registrados y 11.278 preguntas sin revisión de contenido idénticas al commit original.
+
+## Lote 106 — 22 de octubre
+
+IDs 846–850 examinados individualmente y verificados. Una se delimita como histórica y cuatro se corrigieron. Acumulado: 850 examinadas, 813 verificadas y 37 pendientes (22 de fuente y 15 de ambigüedad); 577 preguntas con cambios de contenido. Estados: 233 vigentes, 507 corregidas, 73 históricas y 37 pendientes. Quedan 11.273 sin revisar; siguiente ID 851.
+
+Se acota la clasificación orgánico/semiacoplado/empotrado al COCOMO original de 1981 y se distingue esta edición de COCOMO II/III (846). Se corrige el distractor «puntos función de Boehm»: los 3D Function Points son una extensión desarrollada en Boeing y Boehm creó COCOMO (847). Se delimita COCOMO como modelo algorítmico de esfuerzo/coste/calendario (848). Se sustituye una definición demasiado amplia de documentación por los elementos de información del ciclo de vida, planificados para los procesos y productos de cada sistema (849). La pregunta sobre la versión actual de ITIL cambia de ITIL 4 a ITIL (Version 5), que PeopleCert publica desde 2026; ITIL 4 continúa disponible durante el periodo de transición (850).
+
+Fuentes primarias consultadas: PeopleCert (ITIL Version 5); Barry Boehm, *Software Engineering Economics* (COCOMO 81); NASA y USC (estimación con COCOMO II); IFPUG (FPA de Albrecht); ISO/IEC 20968:2002 (MkII FPA); Boeing/Whitmire (3D Function Points); Gustav Karner (Use Case Points); ISO/IEC/IEEE 15289:2019 y MÉTRICA v3 (documentación de ciclo de vida). No se han estudiado nuevos PDFs de academia ni cotejado posibles correcciones posteriores de convocatorias en este lote. `inventario.cjs` y `verificar.cjs` ejecutados sin errores: 12.123 preguntas estructuralmente válidas, 850 cambios registrados y 11.273 preguntas sin revisión de contenido idénticas al commit original.
