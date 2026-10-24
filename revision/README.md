@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 148 (IDs 1056–1060). Acumulado: 1.060 preguntas revisadas, 1.018 verificadas (276 vigentes, 647 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.063 sin revisión de contenido. Hay 755 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 149 (IDs 1061–1065). Acumulado: 1.065 preguntas revisadas, 1.023 verificadas (276 vigentes, 652 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.058 sin revisión de contenido. Hay 760 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -134,6 +134,18 @@ Cotejo con Drive: bloque 32 de ITIC Academy, versión 2026.1, § 5.9 (greedy y A
 Fuentes: Poole y Mackworth, *Artificial Intelligence: Foundations of Computational Agents*, § 3.6; Akka, guía del modelo de actores, y Hewitt, “Viewing control structures as patterns of passing messages” (1977); Princeton Algorithms, 4.ª ed., clase `BinarySearch`, y Cornell CS2110 sobre O(log n); “Intelligent Monitoring and Control”, clasificación de conocimiento estratégico/inferencial; Rice University y University of Maryland sobre ámbitos y aplicaciones de IA; bloque 32 de ITIC Academy; anexos I y IX de BOE-A-2025-25938 y BOE-A-2025-26262.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.060 registros de revisión y 11.063 preguntas restantes idénticas al commit original.
+
+## Lote 149 — 24 de octubre
+
+IDs 1061–1065 revisados individualmente y corregidos. Acumulado: 1.065 examinadas, 1.023 verificadas (276 vigentes, 652 corregidas y 95 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 760 preguntas con cambios de contenido. Quedan 11.058 sin revisar; siguiente ID 1.066.
+
+Se sustituye una referencia oscura y ambigua a “sistemas de Kleene” por la distinción verificable entre sistemas formales de prueba (sintaxis/teoría de la demostración) y semántica de modelos e interpretaciones (1061). Se concreta Prolog como lenguaje declarativo de programación lógica asociado históricamente a IA simbólica; la etiqueta genérica «lenguaje específico» permitía objetar que C++ y Java también se usan en ingeniería del conocimiento (1062). Se explica el aprendizaje neuronal mediante ajuste de pesos y sesgos a partir de ejemplos y una función de pérdida, reemplazando «en base a la experiencia» por el mecanismo de entrenamiento (1063). Se limita la pareja base de conocimiento/motor de inferencia a los componentes nucleares de sistemas expertos clásicos, sin generalizarla a cualquier paradigma de representación (1064–1065).
+
+Cotejo con Drive: ITIC Academy, bloque 32, versión 2026.1: § 6.2 (IA simbólica, lógica y Prolog), § 6.4 (base de conocimiento y motor de inferencia) y §§ 10.1–10.2 (neurona artificial y aprendizaje de redes). El documento no formula expresamente la distinción teoría de la demostración/semántica; ese alcance se contrastó con material universitario de lógica. Correspondencias: A1-70/A2-III-5 en los cinco ítems. La comprobación global de modificaciones posteriores de las convocatorias y las 42 dudas anteriores siguen pendientes.
+
+Fuentes: University of Cambridge, *Logic and Proof*; Umeå University, *Foundations of Logic and Model Theory*; Colmerauer y Roussel, «The Birth of Prolog», HOPL-II/ACM (1993); Rumelhart, Hinton y Williams, «Learning representations by back-propagating errors», *Nature* 323 (1986), DOI 10.1038/323533a0; documentación TensorFlow sobre entrenamiento; Stanford HAI sobre sistemas expertos; Buchanan y Shortliffe (eds.), *Rule-Based Expert Systems* (1984); bloque 32 de ITIC Academy; anexos I y IX de BOE-A-2025-25938 y BOE-A-2025-26262.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.065 registros de revisión y 11.058 preguntas restantes idénticas al commit original.
 
 ## Vista local y comprobaciones
 
