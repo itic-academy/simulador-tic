@@ -44017,71 +44017,291 @@
       "id": 1031,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué tipo de búsqueda en un espacio de estados NO se corresponde con una búsqueda heurística?",
+      "texto": "En un juego de dos jugadores con turnos alternos, ¿qué algoritmo de búsqueda adversaria calcula valores max/min en el árbol de juego?",
       "opciones": [
-        "Branch and bound.",
-        "Greedy.",
-        "MINIMAX.",
-        "A*."
+        "Greedy, que selecciona el nodo con menor estimación heurística.",
+        "A*, que ordena nodos mediante g(n)+h(n).",
+        "MINIMAX, que supone que ambos jugadores eligen racionalmente para maximizar su propio resultado.",
+        "Dijkstra, que calcula caminos mínimos con costes de arista no negativos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El original contrastaba MINIMAX con greedy/A* y branch-and-bound bajo la etiqueta general «búsqueda heurística»; branch-and-bound puede describirse como búsqueda con cotas, lo que deja la taxonomía demasiado abierta. Se pregunta ahora por el algoritmo adversario de árbol de juego con turnos max/min: MINIMAX. Se mantiene la clave C, pero cambian el supuesto y los distractores para que exista una única categoría correcta. Cotejado con los apartados de búsqueda y MINIMAX del bloque 32.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MINIMAX",
+        "búsqueda adversaria",
+        "árbol de juego",
+        "heurísticas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://inst.eecs.berkeley.edu/~cs188/textbook/games/summary.html",
+            "referencia": "UC Berkeley CS188, resumen de búsqueda adversaria: MINIMAX elige acciones frente a un oponente que busca frustrar la meta; distingue esta búsqueda de los problemas de ruta y búsqueda informada."
+          },
+          {
+            "url": "https://inst.eecs.berkeley.edu/~cs188/textbook/search/informed.html",
+            "referencia": "UC Berkeley CS188, búsqueda informada: greedy y A* ordenan la frontera mediante estimaciones heurísticas; A* combina g(n) y h(n)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: cotejados los apartados sobre agentes y sistemas multiagente, aprendizaje supervisado/no supervisado/por refuerzo, búsqueda adversaria, ontologías y sistemas expertos, además de las preguntas y soluciones del bloque."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático, sistemas expertos y agentes inteligentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: estructuras de datos, algoritmos de búsqueda y fundamentos de inteligencia artificial."
+          }
+        ],
+        "observaciones": "El original contrastaba MINIMAX con greedy/A* y branch-and-bound bajo la etiqueta general «búsqueda heurística»; branch-and-bound puede describirse como búsqueda con cotas, lo que deja la taxonomía demasiado abierta. Se pregunta ahora por el algoritmo adversario de árbol de juego con turnos max/min: MINIMAX. Se mantiene la clave C, pero cambian el supuesto y los distractores para que exista una única categoría correcta. Cotejado con los apartados de búsqueda y MINIMAX del bloque 32."
+      }
     },
     {
       "id": 1032,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indicar cuál de los tipos de problemas citados a continuación NO es estudiado por la Inteligencia Artificial Distribuida (IAD):",
+      "texto": "¿Cuál es un problema central de la Inteligencia Artificial Distribuida y de los sistemas multiagente?",
       "opciones": [
-        "Cómo asegurar que los agentes actúen coherentemente al tomar decisiones o realizar acciones.",
-        "Cómo capacitar a los agentes para razonar sobre acciones y planes de otros agentes para coordinarse.",
-        "Cómo optimizar a los agentes para que se asocien en entidades dependientes que den lugar a un nuevo paradigma inteligente.",
-        "Cómo desarrollar plataformas de Sistemas Multiagentes y metodologías de desarrollo."
+        "Coordinar agentes autónomos que interactúan para resolver tareas comunes o gestionar dependencias entre sus planes.",
+        "Calcular un camino mínimo en un grafo con costes no negativos mediante un único proceso central.",
+        "Ajustar un modelo de regresión con un único conjunto de datos etiquetado.",
+        "Analizar la sintaxis de una expresión regular sin interacción entre componentes autónomos."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La pregunta negativa original trataba como ajena a la IAD una formulación imprecisa sobre asociación de agentes, aunque coaliciones y organizaciones de agentes también son materia multiagente. Se sustituye por una pregunta positiva: coordinar agentes autónomos que interactúan para resolver tareas comunes es un problema central de IAD/SMA. Se cambia la clave de C a A. Cotejado con los apartados de agentes e IA distribuida del bloque 32.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "inteligencia artificial distribuida",
+        "sistemas multiagente",
+        "coordinación",
+        "agentes autónomos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.cs.ox.ac.uk/people/michael.wooldridge/teaching/agents/",
+            "referencia": "Michael Wooldridge, University of Oxford, material docente de sistemas multiagente: cooperación, coordinación, planificación distribuida, protocolos de interacción y plataformas para construir sistemas de agentes."
+          },
+          {
+            "url": "https://www.cs.ox.ac.uk/people/michael.wooldridge/pubs/imas/Contents.html",
+            "referencia": "Wooldridge, An Introduction to MultiAgent Systems, índice de capítulos: cooperación distribuida, coordinación, planificación multiagente, comunicación y metodologías de desarrollo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: cotejados los apartados sobre agentes y sistemas multiagente, aprendizaje supervisado/no supervisado/por refuerzo, búsqueda adversaria, ontologías y sistemas expertos, además de las preguntas y soluciones del bloque."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático, sistemas expertos y agentes inteligentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: estructuras de datos, algoritmos de búsqueda y fundamentos de inteligencia artificial."
+          }
+        ],
+        "observaciones": "La pregunta negativa original trataba como ajena a la IAD una formulación imprecisa sobre asociación de agentes, aunque coaliciones y organizaciones de agentes también son materia multiagente. Se sustituye por una pregunta positiva: coordinar agentes autónomos que interactúan para resolver tareas comunes es un problema central de IAD/SMA. Se cambia la clave de C a A. Cotejado con los apartados de agentes e IA distribuida del bloque 32."
+      }
     },
     {
       "id": 1033,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de estos no es un tipo de aprendizaje automático?",
+      "texto": "¿Qué caracteriza al aprendizaje supervisado?",
       "opciones": [
-        "Aprendizaje supervisado",
-        "Aprendizaje no supervisado",
-        "Aprendizaje por refuerzo",
-        "Aprendizaje singular"
+        "Aprende únicamente agrupando observaciones sin etiquetas ni variable objetivo.",
+        "Ajusta un modelo con ejemplos de entrenamiento que incluyen entradas y etiquetas o valores objetivo conocidos.",
+        "Aprende exclusivamente mediante recompensas recibidas al interactuar con un entorno.",
+        "Consiste en buscar una solución en un árbol de juego mediante MINIMAX."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "«Aprendizaje singular» no es una categoría general estándar, pero una pregunta sobre qué nombre no figura en una lista podía convertir la respuesta en una cuestión terminológica abierta. Se reemplaza por una afirmación positiva y verificable: el aprendizaje supervisado aprende con ejemplos que contienen entradas y etiquetas/valores objetivo conocidos. Cotejado con la clasificación de paradigmas de aprendizaje y las soluciones del bloque 32. La clasificación no pretende agotar todas las taxonomías posibles.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "aprendizaje supervisado",
+        "etiquetas",
+        "machine learning"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://scikit-learn.org/stable/supervised_learning.html",
+            "referencia": "Documentación oficial scikit-learn, aprendizaje supervisado: los estimadores ajustan una función a partir de datos de entrenamiento con etiquetas/objetivos conocidos."
+          },
+          {
+            "url": "https://www.andrew.cmu.edu/course/10-703/textbook/BartoSutton.pdf",
+            "referencia": "Sutton y Barto, Reinforcement Learning: An Introduction, 2.ª ed., cap. 1: presenta el aprendizaje por refuerzo como paradigma diferenciado basado en interacción y señal de recompensa."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: cotejados los apartados sobre agentes y sistemas multiagente, aprendizaje supervisado/no supervisado/por refuerzo, búsqueda adversaria, ontologías y sistemas expertos, además de las preguntas y soluciones del bloque."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático, sistemas expertos y agentes inteligentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: estructuras de datos, algoritmos de búsqueda y fundamentos de inteligencia artificial."
+          }
+        ],
+        "observaciones": "«Aprendizaje singular» no es una categoría general estándar, pero una pregunta sobre qué nombre no figura en una lista podía convertir la respuesta en una cuestión terminológica abierta. Se reemplaza por una afirmación positiva y verificable: el aprendizaje supervisado aprende con ejemplos que contienen entradas y etiquetas/valores objetivo conocidos. Cotejado con la clasificación de paradigmas de aprendizaje y las soluciones del bloque 32. La clasificación no pretende agotar todas las taxonomías posibles."
+      }
     },
     {
       "id": 1034,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la respuesta correcta más amplia posible:",
+      "texto": "¿Qué afirmación describe correctamente la relación entre RDF Schema y OWL en la Web Semántica?",
       "opciones": [
-        "la web semántica tiene como objetivo dotar a los recursos de la Web de metadatos que los describan en formatos accesibles para todas las personas, con independencia de su origen, idioma o capacidades psico-físicas.",
-        "una ontología es una jerarquía de conceptos con atributos y relaciones, que define una terminología consensuada para definir redes semánticas de unidades de información interrelacionadas y con ciertas reglas.",
-        "para la definición de ontologías en la web semántica se emplean los lenguajes RDF Schema (el más completo) y OWL (un subconjunto con la funcionalidad básica y más comúnmente utilizada del anterior).",
-        "todas las anteriores son correctas."
+        "RDF Schema es más expresivo que OWL; OWL solo ofrece un subconjunto de sus constructores.",
+        "OWL sustituye a RDF y no puede utilizar datos serializados como grafos RDF.",
+        "OWL permite expresar ontologías con constructores más ricos y semántica adicional sobre la base de RDF/RDFS.",
+        "RDF Schema y OWL son dos nombres para la misma recomendación del W3C y tienen idéntico vocabulario."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "El original invertía la relación de expresividad: RDF Schema no es «el más completo» ni OWL un subconjunto suyo. Se formula una pregunta precisa sobre la relación entre ambos: OWL añade a la base RDF/RDFS constructores más expresivos para definir ontologías, incluidas restricciones de propiedades y expresiones de clases. Se cambia la clave de B a C. La descripción de accesibilidad universal se elimina porque no define la finalidad técnica de la Web Semántica. Cotejado con la cobertura de ontologías/representación del conocimiento del bloque 32.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Web Semántica",
+        "RDF Schema",
+        "OWL",
+        "ontologías"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/owl2-rdf-based-semantics/",
+            "referencia": "W3C Recommendation, OWL 2 RDF-Based Semantics: OWL 2 es un lenguaje de ontologías compatible con RDF y añade semántica/constructores a RDFS."
+          },
+          {
+            "url": "https://www.w3.org/TR/owl2-overview/",
+            "referencia": "W3C, OWL 2 Document Overview: especificación y documentos oficiales del lenguaje de ontologías OWL 2 para la Web Semántica."
+          },
+          {
+            "url": "https://www.w3.org/TR/rdf-schema/",
+            "referencia": "W3C Recommendation, RDF Schema 1.1: vocabulario para clases, propiedades, subclases, subpropiedades, dominio y rango."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: cotejados los apartados sobre agentes y sistemas multiagente, aprendizaje supervisado/no supervisado/por refuerzo, búsqueda adversaria, ontologías y sistemas expertos, además de las preguntas y soluciones del bloque."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático, sistemas expertos y agentes inteligentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: estructuras de datos, algoritmos de búsqueda y fundamentos de inteligencia artificial."
+          }
+        ],
+        "observaciones": "El original invertía la relación de expresividad: RDF Schema no es «el más completo» ni OWL un subconjunto suyo. Se formula una pregunta precisa sobre la relación entre ambos: OWL añade a la base RDF/RDFS constructores más expresivos para definir ontologías, incluidas restricciones de propiedades y expresiones de clases. Se cambia la clave de B a C. La descripción de accesibilidad universal se elimina porque no define la finalidad técnica de la Web Semántica. Cotejado con la cobertura de ontologías/representación del conocimiento del bloque 32."
+      }
     },
     {
       "id": 1035,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes conceptos no es característico de los sistemas expertos?",
+      "texto": "En un sistema experto basado en reglas, ¿dónde se representan normalmente los hechos y reglas generales del dominio?",
       "opciones": [
-        "Base de conocimiento",
-        "Encadenamiento de reglas",
-        "Motor de inferencia",
-        "Proceso algorítmico"
+        "En la base de conocimiento.",
+        "En el motor de inferencia, que ejecuta el razonamiento sobre el conocimiento.",
+        "En la interfaz de usuario, que recoge consultas y presenta resultados.",
+        "En el generador de explicaciones, que justifica las conclusiones obtenidas."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La afirmación del original de que un «proceso algorítmico» no caracteriza los sistemas expertos es demasiado absoluta: son programas y sí ejecutan procedimientos algorítmicos, aunque el conocimiento experto y la inferencia heurística sean sus elementos distintivos. Se pregunta ahora dónde se representan las reglas y hechos del dominio: en la base de conocimiento. Se cambia la clave de D a A. Cotejado con el apartado 6 de sistemas expertos del bloque 32.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "sistemas expertos",
+        "base de conocimiento",
+        "hechos",
+        "reglas",
+        "motor de inferencia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.eis.mdx.ac.uk/staffpages/rvb/teaching/BIS4410/lect11.pdf",
+            "referencia": "Middlesex University, «Lecture 11: Expert Systems»: en los sistemas expertos basados en reglas, la base de conocimiento almacena reglas y hechos; la memoria de trabajo guarda los hechos del problema y el motor de inferencia aplica el razonamiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: cotejados los apartados sobre agentes y sistemas multiagente, aprendizaje supervisado/no supervisado/por refuerzo, búsqueda adversaria, ontologías y sistemas expertos, además de las preguntas y soluciones del bloque."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático, sistemas expertos y agentes inteligentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: estructuras de datos, algoritmos de búsqueda y fundamentos de inteligencia artificial."
+          }
+        ],
+        "observaciones": "La afirmación del original de que un «proceso algorítmico» no caracteriza los sistemas expertos es demasiado absoluta: son programas y sí ejecutan procedimientos algorítmicos, aunque el conocimiento experto y la inferencia heurística sean sus elementos distintivos. Se pregunta ahora dónde se representan las reglas y hechos del dominio: en la base de conocimiento. Se cambia la clave de D a A. Cotejado con el apartado 6 de sistemas expertos del bloque 32."
+      }
     },
     {
       "id": 1036,
