@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 140 (IDs 1016–1020). Acumulado: 1.020 preguntas revisadas, 978 verificadas (270 vigentes, 613 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.103 sin revisión de contenido. Hay 720 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 141 (IDs 1021–1025). Acumulado: 1.025 preguntas revisadas, 983 verificadas (272 vigentes, 616 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.098 sin revisión de contenido. Hay 723 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -33,7 +33,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.103 preguntas sin revisión de contenido. Siguiente ID: 1021. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.098 preguntas sin revisión de contenido. Siguiente ID: 1026. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -946,4 +946,12 @@ Se corrige la notación tipográfica de la complejidad temporal de heapsort a O(
 Cotejo temático con Drive: bloque 32 de ITIC Academy, versión 2026.1, contenidos de algoritmos de ordenación, IA/redes neuronales, agentes y representación del conocimiento; se consultaron solo los apartados pertinentes. Correspondencias: A2-III-5 para heapsort (1016); A1-70/A2-III-5 para perceptrón, agentes y marcos (1017, 1018 y 1020); A1-70 para ChatGPT (1019). Fuentes: University of Waterloo y University of São Paulo sobre heapsort; el informe de Rosenblatt de Cornell y su publicación de 1958; Luck y d’Inverno, Carnegie Mellon, Carleton University y la literatura sobre taxonomías de agentes; anuncio oficial de OpenAI; University of Nijmegen, Universidad de Düsseldorf y Northwestern sobre marcos y herencia. Las taxonomías de agentes son diversas, por lo que la pregunta se formula deliberadamente sin presentar una lista como exhaustiva.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.020 registros de revisión y 11.103 preguntas restantes idénticas al commit original.
+
+## Lote 141 — 24 de octubre
+
+IDs 1021–1025 revisados individualmente: dos vigentes y tres corregidas. Acumulado: 1.025 examinadas, 983 verificadas (272 vigentes, 616 corregidas y 95 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 723 preguntas con cambios de contenido. Quedan 11.098 sin revisar; siguiente ID 1.026.
+
+Se confirma scikit-learn como biblioteca de aprendizaje automático en Python (1021). Se acota la inferencia en sistemas de producción a encadenamiento hacia adelante o atrás, sustituyendo la opción «todas» del original que mezclaba propiedades generales de redes semánticas, marcos y reglas (1022). Se separa el número de clases del tipo de características: la clasificación binaria no exige predictores booleanos; la variante Naïve Bayes establece el modelo de distribución de las características (1023). Se confirma A* como búsqueda informada guiada por heurística, con f(n)=g(n)+h(n) (1024). Se reformula GPS para preguntar por el análisis medios-fines y la selección recursiva de operadores que reducen una diferencia, con subobjetivos cuando faltan precondiciones (1025). Se conservan íntegros los originales en `cambios-lote-141.json`.
+
+Cotejo con Drive: en ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1, se consultaron los apartados de IA/herramientas, IA simbólica y sistemas expertos, aprendizaje automático, ordenación y búsqueda, y sus soluciones. El documento ubica A* en A2 D5 y define Naïve Bayes por las distribuciones de características; se usa para verificar cobertura, no como autoridad técnica. Correspondencias con BOE-A-2025-25938, anexo I (A1-70), y BOE-A-2025-26262, anexo IX (A2-III-5/D5). Fuentes técnicas: documentación oficial scikit-learn (Python y variantes Gaussian, Multinomial, Bernoulli y Categorical Naïve Bayes); UC Berkeley CS188, búsqueda informada; Brachman y Levesque, *Knowledge Representation and Reasoning*, cap. 7; y Newell y Simon, «GPS, a Program that Simulates Human Thought» (1961). `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.025 registros de revisión y 11.098 preguntas restantes idénticas al commit original. Las 42 dudas anteriores y la comprobación global de correcciones de convocatoria siguen pendientes.
 
