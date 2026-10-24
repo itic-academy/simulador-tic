@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 131 (IDs 971–975). Acumulado: 975 preguntas revisadas, 933 verificadas (263 vigentes, 581 corregidas y 89 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.148 sin revisión de contenido. Hay 683 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 132 (IDs 976–980). Acumulado: 980 preguntas revisadas, 938 verificadas (264 vigentes, 583 corregidas y 91 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.143 sin revisión de contenido. Hay 688 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -9,6 +9,7 @@ Estado parcial, no revisión completa del banco. Publicación desde la rama `mai
 - `cambios-lote-002.json`: original y resultado de los IDs 13–40.
 - `cambios-lote-003.json` y `cambios-lote-004.json`: IDs 41–100.
 - `cambios-lote-005.json` a `cambios-lote-009.json`: IDs 101–200, examinadas individualmente el 13 de octubre. Total acumulado: 200 clasificadas; 177 verificadas (66 vigentes, 105 corregidas y 6 históricas); 23 con dudas abiertas. El bloque de academia de los IDs 41–200 sigue pendiente de cotejo.
+- `lote-132.cjs` y `cambios-lote-132.json`: IDs 976–980, con el original íntegro, clasificación, fuentes, cotejo de apartados pertinentes de academia y resultado revisado.
 - `lote-131.cjs` y `cambios-lote-131.json`: IDs 971–975, con el original íntegro, clasificación, fuentes, comprobación temática del material pertinente de academia y resultado revisado.
 - `lote-127.cjs` y `cambios-lote-127.json`: IDs 951–955, con el original íntegro, clasificación, fuentes y resultado revisado.
 - 109 preguntas tienen cambios en enunciado, opciones o respuesta respecto al banco original: 57 en los IDs 101–200. Este recuento excluye cambios solo de etiquetas y comentarios e incluye las preguntas históricas cuyo enunciado se ha precisado. Por eso no coincide con el estado «corregida».
@@ -30,7 +31,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.148 preguntas sin revisión de contenido. Siguiente ID: 976. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.143 preguntas sin revisión de contenido. Siguiente ID: 981. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -51,6 +52,16 @@ Se acota la técnica de factores críticos de éxito a la planificación PSI de 
 Cotejo temático con Drive: el bloque 12 de planificación estratégica incluye PSI y FCE; el bloque 03 trata calidad en los servicios públicos; el bloque 29 de bases de datos desarrolla ER y cardinalidades; el bloque 41 cubre ITIL 4; y el bloque 38 recoge análisis estructurado y MÉTRICA. Se cotejaron esos apartados concretos y se contrastaron con las fuentes primarias, no se auditó todo Drive. Correspondencias revisadas contra BOE-A-2025-25938, anexo I, y BOE-A-2025-26262, anexo IX: A1-87/A1-95 y A2-III-2 (971); A1-22 (972); A1-89/A2-III-4 (973); A1-106 (974); A1-90/A1-95 y A2-III-2/A2-III-3 (975). No se revisaron en este lote correcciones posteriores de las convocatorias; la comprobación global sigue pendiente.
 
 Fuentes: Ministerio de Administraciones Públicas, MÉTRICA v3, PSI, ASI 1.1 y Técnicas; Real Decreto 210/2024, texto consolidado, art. 11.1.e; PeopleCert y AXELOS, ITIL 4 Foundation, §4.1; grupo ALARCOS-UCLM, notación DFD de MÉTRICA v3. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 975 registros de revisión y 11.148 preguntas restantes idénticas al commit original.
+
+## Lote 132 — 24 de octubre
+
+IDs 976–980 revisados individualmente: una vigente, dos corregidas y dos históricas. Acumulado: 980 examinadas, 938 verificadas (264 vigentes, 583 corregidas y 91 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 688 preguntas con cambios de contenido. Quedan 11.143 sin revisar; siguiente ID 981.
+
+Se limita la relación entre el modelo funcional y el de objetos al método OMT de Rumbaugh: las afirmaciones del original son aceptables dentro de esa metodología histórica, no como regla universal de diseño OO (976). Se conserva la finalidad de PSI de MÉTRICA v3 y se descartan dos distractores que confundían planificación estratégica con programación temporal del proyecto (977). PMP se describe según PMI como certificación que reconoce experiencia y pericia en liderazgo de proyectos, sujeta a elegibilidad; se evita afirmar que sea una habilitación legal necesaria y se reemplaza «CMP» por un distractor identificable (978). CMMI v1.2 queda delimitado a capacidad 4 de la representación continua y marcado histórico frente a la evolución posterior del modelo (979). El atributo en centímetros se clasifica como derivado solo después de establecer que se calcula desde metros y no se almacena independientemente (980).
+
+Cotejo temático con Drive: el bloque 38 de análisis/diseño recoge DFD y modelos OO; el bloque 12 expone la finalidad y actividades PSI de MÉTRICA v3; el bloque 39 compara CMMI V3.0 actual con referencias anteriores; y el bloque 29 trata los atributos almacenados/derivados y el modelado E/R. Se revisaron esos apartados concretos, no todo Drive. Correspondencias comprobadas contra BOE-A-2025-25938, anexo I, y BOE-A-2025-26262, anexo IX: A1-89/A1-93 y A2-III-9 (976); A1-87/A1-95 y A2-III-2 (977); A1-35/A2-III-2 (978); A1-98/A2-III-13 (979); A1-89/A2-III-4 (980). No se comprobó en este lote si las convocatorias han recibido correcciones o modificaciones posteriores; la comprobación global sigue pendiente.
+
+Fuentes: Rumbaugh et al., *Object-Oriented Modeling and Design* (1991), OMT; Ministerio de Administraciones Públicas, MÉTRICA v3, PSI y Técnicas; Project Management Institute, PMP certification; Software Engineering Institute, *CMMI for Development v1.2*; Elmasri y Navathe, *Fundamentals of Database Systems*, modelado ER. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 980 registros de revisión y 11.143 preguntas restantes idénticas al commit original.
 
 ## Lote 127 — 22 de octubre
 
