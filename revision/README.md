@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 150 (IDs 1066–1070). Acumulado: 1.070 preguntas revisadas, 1.028 verificadas (276 vigentes, 656 corregidas y 96 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.053 sin revisión de contenido. Hay 765 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 151 (IDs 1071–1075). Acumulado: 1.075 preguntas revisadas, 1.033 verificadas (276 vigentes, 661 corregidas y 96 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.048 sin revisión de contenido. Hay 770 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -31,9 +31,19 @@ El material de Drive está accesible y se ha inspeccionado su inventario; todav�
 
 Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copias HTML; `node revision/inventario.cjs` valida el banco y actualiza el informe. `node revision/lote-001.cjs` solo debe ejecutarse sobre el banco original: impide aplicar el lote dos veces. `node revision/verificar.cjs` comprueba que los cambios estén registrados y que las preguntas fuera del lote permanezcan iguales al commit inicial.
 
+## Lote 151 — 24 de octubre
+
+IDs 1071–1075 revisados individualmente: cinco corregidas. Acumulado: 1.075 examinadas, 1.033 verificadas (276 vigentes, 661 corregidas y 96 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 770 preguntas con cambios de contenido. Quedan 11.048 sin revisar; siguiente ID 1.076.
+
+Se corrige la generalización de que los sistemas expertos solo operan con conocimiento completo: MYCIN podía representar grados de certeza y razonar con evidencia clínica incierta (1071). Se concreta la señal de recompensa en aprendizaje por refuerzo y su objetivo de retorno acumulado esperado, sin extender la afirmación a todos los algoritmos de ML (1072). Se separa Adaptive Resonance Theory como familia arquitectónica distinta de Perceptron/ADALINE y MADALINE (1073). Se identifica la escalada por máxima pendiente como mejora local iterativa, diferenciándola de búsqueda en árbol y A* (1074). Se completa ciclo hamiltoniano como recorrido que visita cada vértice una vez y vuelve al inicial (1075). Se conservan íntegros los cinco originales en `cambios-lote-151.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 32, versión 2026.1, §§ 1 y 6 (IA simbólica y sistemas expertos), § 2.10 (grafos), §§ 4–5 (diseño de algoritmos y búsqueda), § 8.4 (aprendizaje por refuerzo) y § 10 (redes neuronales). El material cubre las áreas temáticas; para MYCIN, ART, hill climbing y ciclos hamiltonianos se contrastaron las afirmaciones específicas con sus publicaciones/documentación técnica y universitaria citadas en las fichas. Correspondencias revisadas contra BOE-A-2025-25938, anexo I, A1-70, y BOE-A-2025-26262, anexo IX, bloque III, tema 5.
+
+Fuentes: Buchanan y Shortliffe, *Rule-Based Expert Systems* (1984), capítulos 10–11 sobre MYCIN y factores de certeza; Sutton y Barto, *Reinforcement Learning: An Introduction*, 2.ª ed., capítulos 1 y 3; publicaciones de Bernard Widrow (Stanford) sobre ADALINE/MADALINE y Carpenter/Grossberg sobre ART; UC Berkeley CS188 y Poole/Mackworth, § 4.6, sobre hill climbing/mejora local; Hamilton, *Account of the Icosian Calculus* (1858), y Carnegie Mellon sobre ciclos hamiltonianos. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 1.075 registros de revisión y 11.048 preguntas restantes idénticas al commit original.
+
 ## Pendiente
 
-11.068 preguntas sin revisión de contenido. Siguiente ID: 1056. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.048 preguntas sin revisión de contenido. Siguiente ID: 1076. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
