@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 144 (IDs 1036–1040). Acumulado: 1.040 preguntas revisadas, 998 verificadas (274 vigentes, 629 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.083 sin revisión de contenido. Hay 736 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 145 (IDs 1041–1045). Acumulado: 1.045 preguntas revisadas, 1.003 verificadas (274 vigentes, 634 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.078 sin revisión de contenido. Hay 741 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -33,7 +33,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.083 preguntas sin revisión de contenido. Siguiente ID: 1041. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.078 preguntas sin revisión de contenido. Siguiente ID: 1046. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -86,6 +86,18 @@ Cotejo temático con Drive: bloque 32 de ITIC Academy, versión 2026.1; apartado
 Fuentes: Quinlan, «Induction of decision trees», *Machine Learning* 1 (1986), DOI 10.1007/BF00116251; University of Waikato sobre ID3 y ganancia de información; manual de SWI-Prolog sobre programas lógicos; University of Calgary, modelo conceptual KADS; Wielinga, Schreiber y Breuker, «KADS: a modelling approach to knowledge engineering», *Knowledge Acquisition* 4 (1992), DOI 10.1016/1042-8143(92)90013-Q; Poole y Mackworth, University of British Columbia, algoritmos de backtracking. ITIC Academy, bloque 32 versión 2026.1, solo en los apartados indicados.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.040 registros de revisión y 11.083 preguntas restantes idénticas al commit original.
+
+## Lote 145 — 24 de octubre
+
+IDs 1041–1045 revisados individualmente: cinco corregidas. Acumulado: 1.045 examinadas, 1.003 verificadas (274 vigentes, 634 corregidas y 95 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 741 preguntas con cambios de contenido. Quedan 11.078 sin revisar; siguiente ID 1.046.
+
+Se elimina la ambigüedad sobre si una regla activada puede borrar hechos y se precisa el encadenamiento hacia delante monótono: añade la conclusión a los hechos conocidos y puede habilitar reglas posteriores (1041). «Método uniformado» se corrige por el concepto estándar de búsqueda de coste uniforme, y la denominación errónea queda como única opción no estándar (1042). Se distingue el motor de inferencia de la base de conocimiento, la interfaz/memoria de trabajo y la adquisición de conocimiento (1043). Se concreta la afirmación histórica sobre MARC: la Library of Congress lo desarrolló a finales de los años sesenta para codificar fichas catalográficas en forma legible por máquina; no fue sustituido por ISBD (1044). Se reemplaza la expresión imprecisa «el conocimiento no varía» por la propiedad formal de monotonía: añadir premisas no elimina conclusiones ya derivadas (1045). Se conservan íntegros los originales en `cambios-lote-145.json`.
+
+Cotejo temático con Drive: bloque 32 de ITIC Academy, versión 2026.1, apartados 4.6 (backtracking) y 6.2, 6.4–6.6 (lógica, sistemas expertos, motor de inferencia y encadenamientos). El bloque 40, versión 2026.1, sección 3, se consultó por su marco de gestión documental/metadatos, aunque no contiene MARC específicamente. La propiedad formal de monotonía se contrastó con Stanford Encyclopedia of Philosophy, no con el material de academia. Correspondencias: A1-70 y A2-III-5/D5 (1041–1043 y 1045); A1-105 y A2-II-16 (1044). El programa oficial se consultó en BOE-A-2025-25938, anexo I, y BOE-A-2025-26262, anexo IX. La revisión global de modificaciones/correcciones de las convocatorias y las 42 dudas abiertas siguen pendientes.
+
+Fuentes: UC Berkeley CS188, encadenamiento hacia delante y estrategias de búsqueda; IEEE Technology Navigator y Negnevitsky, *Artificial Intelligence: A Guide to Intelligent Systems*, para motores de inferencia; Library of Congress, historia y formatos MARC 21; IFLA, documentación de UNIMARC; Stanford Encyclopedia of Philosophy, «Non-monotonic Logic» (revisión de 2024), para monotonía de la consecuencia. ITIC Academy, bloques 32 y 40, solo en los apartados especificados.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.045 registros de revisión y 11.078 preguntas restantes idénticas al commit original.
 
 ## Vista local y comprobaciones
 

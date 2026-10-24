@@ -1,0 +1,379 @@
+{
+  "fecha": "2026-10-24",
+  "alcance": "IDs 1041–1045; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1041,
+      "original": {
+        "id": 1041,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En sistemas de representación del conocimiento mediante reglas, el disparo de una regla en el mecanismo de inferencia con encadenamiento hacia delante:",
+        "opciones": [
+          "Produce en general cambios en la base de hechos, de forma que reglas que se podían disparar dejan de poder hacerlo y otras pasan a verificar su antecedente",
+          "Produce en general cambios en la base de hechos, de forma que reglas que se podían disparar pueden seguir haciéndolo y otras pasan también a verificar su antecedente",
+          "El antecedente de la regla seleccionada está formado por hechos que son consi-derados ahora como subobjetivos iniciando de nuevo el proceso",
+          "La idea es partir del objetivo, seleccionar una regla y entonces elegir como otro u otros subobjetivos los hechos que están en el antecedente de la regla seleccionada, repitiendo el proceso de selección de regla hasta alcanzar los datos"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1041,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el encadenamiento hacia delante monótono con reglas de la forma «premisas → conclusión», ¿qué ocurre cuando se dispara una regla cuyas premisas son conocidas?",
+        "opciones": [
+          "Se añade su conclusión al conjunto de hechos conocidos; esta puede habilitar otras reglas.",
+          "Se eliminan necesariamente todos los hechos que activaron la regla.",
+          "Las premisas se convierten en subobjetivos que se buscan desde una meta final.",
+          "El sistema detiene la inferencia antes de incorporar la conclusión."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Las dos primeras opciones del original describían cambios compatibles con variantes de sistemas de producción que añaden o modifican hechos; no fijaban si el disparo elimina hechos. Se concreta el supuesto a encadenamiento hacia delante monótono con cláusulas definidas: si se satisfacen las premisas, se agrega la conclusión al conjunto de hechos y pueden habilitarse nuevas reglas. Se conserva el índice de respuesta A. Cotejado con la sección 6.5 del bloque de academia y con CS188.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "encadenamiento hacia delante",
+          "reglas",
+          "hechos",
+          "inferencia"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://inst.eecs.berkeley.edu/~cs188/textbook/logic/forward.html",
+              "referencia": "UC Berkeley CS188, «Forward Chaining»: al satisfacerse las premisas de una regla, se añade su conclusión a los hechos conocidos y esta puede activar reglas posteriores."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: apartados 4.6 (backtracking) y 6.2, 6.4–6.6 (lógica, sistemas expertos, motor de inferencia y encadenamientos). El bloque no formula la propiedad lógica de monotonía."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático y sistemas expertos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: estructuras y algoritmos de búsqueda y fundamentos de inteligencia artificial."
+            }
+          ],
+          "observaciones": "Las dos primeras opciones del original describían cambios compatibles con variantes de sistemas de producción que añaden o modifican hechos; no fijaban si el disparo elimina hechos. Se concreta el supuesto a encadenamiento hacia delante monótono con cláusulas definidas: si se satisfacen las premisas, se agrega la conclusión al conjunto de hechos y pueden habilitarse nuevas reglas. Se conserva el índice de respuesta A. Cotejado con la sección 6.5 del bloque de academia y con CS188."
+        }
+      }
+    },
+    {
+      "id": 1042,
+      "original": {
+        "id": 1042,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Inteligencia Artificial (IA) existen varios métodos para realizar búsquedas. Indique cuál de los siguientes NO es un método aplicable en IA:",
+        "opciones": [
+          "Método informado.",
+          "Método heurístico.",
+          "Método uniformado.",
+          "Método ciego."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1042,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes opciones no es una denominación estándar de una estrategia de búsqueda en IA?",
+        "opciones": [
+          "Búsqueda en anchura (BFS).",
+          "Búsqueda en profundidad (DFS).",
+          "Búsqueda de coste uniforme.",
+          "Búsqueda uniformada."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "«Método uniformado» parece una deformación de uniform-cost search y hacía que el original fuera una pregunta de terminología dudosa. Se sustituye por un contraste explícito: BFS, DFS, búsqueda de coste uniforme y «búsqueda uniformada». La última no es una denominación estándar en la clasificación consultada, por lo que la clave pasa de C a D. Cotejado con la sección 5 del bloque de academia.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "búsqueda en espacio de estados",
+          "búsqueda informada",
+          "coste uniforme",
+          "algoritmos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://inst.eecs.berkeley.edu/~cs188/textbook/search/summary.html",
+              "referencia": "UC Berkeley CS188, resumen de búsqueda: incluye BFS, DFS, búsqueda de coste uniforme, greedy y A*; distingue búsqueda no informada e informada."
+            },
+            {
+              "url": "https://inst.eecs.berkeley.edu/~cs188/textbook/search/uninformed.html",
+              "referencia": "UC Berkeley CS188, búsqueda no informada: describe DFS, BFS y uniform-cost search como estrategias de búsqueda."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: apartados 4.6 (backtracking) y 6.2, 6.4–6.6 (lógica, sistemas expertos, motor de inferencia y encadenamientos). El bloque no formula la propiedad lógica de monotonía."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático y sistemas expertos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: estructuras y algoritmos de búsqueda y fundamentos de inteligencia artificial."
+            }
+          ],
+          "observaciones": "«Método uniformado» parece una deformación de uniform-cost search y hacía que el original fuera una pregunta de terminología dudosa. Se sustituye por un contraste explícito: BFS, DFS, búsqueda de coste uniforme y «búsqueda uniformada». La última no es una denominación estándar en la clasificación consultada, por lo que la clave pasa de C a D. Cotejado con la sección 5 del bloque de academia."
+        }
+      }
+    },
+    {
+      "id": 1043,
+      "original": {
+        "id": 1043,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un Sistema Experto (SE), el “motor de inferencias”:",
+        "opciones": [
+          "Contiene el conocimiento obtenido de los datos iniciales y se actualiza con nuevos hechos durante la ejecución de los procesos de inferencia.",
+          "Es el conjunto de reglas que permiten representar los conocimientos del dominio del experto.",
+          "Interpreta las reglas contenidas en la base de conocimientos y realiza procesos de inferencia que relacionan los hechos con las reglas.",
+          "Es un una herramienta software para el desarrollo de los sistemas basados en la adquisición del conocimiento."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1043,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un sistema experto basado en reglas, ¿qué función corresponde al motor de inferencia?",
+        "opciones": [
+          "Almacenar de forma persistente las reglas y los hechos generales del dominio.",
+          "Recoger la consulta del usuario y presentar la respuesta por pantalla.",
+          "Aplicar las reglas pertinentes a los hechos disponibles para derivar conclusiones.",
+          "Entrevistar al experto y adquirir el conocimiento que después se incorporará al sistema."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La clave C del original es correcta. Se corrige el error gramatical y se especifica el contexto de sistema experto basado en reglas, distinguiendo motor de inferencia de base de conocimiento, memoria de trabajo y módulo de adquisición. Se reescribe el resto de distractores para evitar definiciones solapadas. Cotejado con los apartados 6.4–6.6 del bloque de academia y con IEEE y el texto de Negnevitsky.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "sistemas expertos",
+          "motor de inferencia",
+          "base de conocimiento",
+          "reglas"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://technav.ieee.org/topic/expert-systems/",
+              "referencia": "IEEE Technology Navigator, «Expert systems»: diferencia la base de conocimiento, que almacena hechos y reglas del dominio, del motor de inferencia, que aplica esas reglas a hechos para derivar conclusiones."
+            },
+            {
+              "url": "https://ai.ia.agh.edu.pl/wiki/_media/pl:dydaktyka:psi:labs:negnevitsky-chapter2-rbs.pdf",
+              "referencia": "Negnevitsky, *Artificial Intelligence: A Guide to Intelligent Systems*, capítulo sobre sistemas expertos basados en reglas: el motor de inferencia manipula el conocimiento almacenado mediante algoritmos generales y estrategias de búsqueda."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: apartados 4.6 (backtracking) y 6.2, 6.4–6.6 (lógica, sistemas expertos, motor de inferencia y encadenamientos). El bloque no formula la propiedad lógica de monotonía."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático y sistemas expertos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: estructuras y algoritmos de búsqueda y fundamentos de inteligencia artificial."
+            }
+          ],
+          "observaciones": "La clave C del original es correcta. Se corrige el error gramatical y se especifica el contexto de sistema experto basado en reglas, distinguiendo motor de inferencia de base de conocimiento, memoria de trabajo y módulo de adquisición. Se reescribe el resto de distractores para evitar definiciones solapadas. Cotejado con los apartados 6.4–6.6 del bloque de academia y con IEEE y el texto de Negnevitsky."
+        }
+      }
+    },
+    {
+      "id": 1044,
+      "original": {
+        "id": 1044,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes afirmaciones relativas al formato MARC (Machine-Readable Cataloging) es cierta?",
+        "opciones": [
+          "Es un estándar para la catalogación de documentos de archivo.",
+          "EUROMARC es la versión europea de dicho formato.",
+          "Fue desarrollado por la Library of Congress de los Estados Unidos en los años 60.",
+          "Ha dejado de utilizarse, habiendo sido sustituido por las ISBD (International Standard Bibliographic Description)."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1044,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la historia de MARC publicada por la Library of Congress, ¿qué afirmación describe su desarrollo inicial?",
+        "opciones": [
+          "UNIMARC fue creado por la Library of Congress a finales de los años sesenta como formato de intercambio bibliográfico.",
+          "MARC fue desarrollado por IFLA en 1977 y posteriormente renombrado como ISBD.",
+          "La Library of Congress desarrolló MARC a finales de los años sesenta para codificar datos de fichas catalográficas en forma legible por máquina.",
+          "MARC fue creado por ISO como sustituto de los formatos bibliográficos de la Library of Congress."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La clave histórica C del original era válida, pero los distractores «documentos de archivo» y «EUROMARC» no eran precisos, y el formato sigue vigente en sus distintas familias. Se reformula el enunciado para preguntar por el origen temprano de MARC según la Library of Congress y se reemplazan las opciones: la única correcta indica su desarrollo por la Library of Congress a finales de los sesenta para codificar fichas catalográficas en forma legible por máquina. Se mantiene el índice C. Se etiqueta como contenido histórico verificable, no como formato sustituido por ISBD. El bloque 40 de academia se cotejó solo en su marco de gestión documental/metadatos; no trata específicamente MARC.",
+        "clasificacion": {
+          "A1": [
+            "A1-105"
+          ],
+          "A2": [
+            "A2-II-16"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "MARC",
+          "MARC 21",
+          "Library of Congress",
+          "formatos bibliográficos",
+          "historia"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.loc.gov/bibframe/pdf/bibframework-10312011",
+              "referencia": "Library of Congress, «A Bibliographic Framework for the Digital Age», apéndice «A Brief History of MARC 21»: relata su desarrollo a finales de los años sesenta para convertir datos de fichas catalográficas a forma legible por máquina y facilitar el intercambio electrónico."
+            },
+            {
+              "url": "https://www.loc.gov/marc/marcdocz.html",
+              "referencia": "Library of Congress, documentación oficial de los formatos MARC 21: mantiene formatos bibliográficos, de autoridades, fondos, clasificación e información comunitaria."
+            },
+            {
+              "url": "https://www.ifla.org/g/unimarc-rg/unimarc-updates/",
+              "referencia": "IFLA, grupo de revisión UNIMARC: identifica UNIMARC como un conjunto de formatos bibliográficos, de autoridades, clasificación y fondos mantenidos por IFLA, distinto del MARC original de la Library of Congress."
+            },
+            {
+              "url": "https://drive.google.com/file/d/17UpEFvYfjQ4iUrx8UNNTJIFcj5xO4vlz/view?usp=drivesdk",
+              "referencia": "ITIC Academy, «40_Bloque_40_ITIC_Academy_Gestion_Documental_2026.pdf», versión 2026.1: se cotejó el marco temático de gestión documental y metadatos (sección 3); no contiene una explicación específica de MARC."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático y sistemas expertos."
+            }
+          ],
+          "observaciones": "La clave histórica C del original era válida, pero los distractores «documentos de archivo» y «EUROMARC» no eran precisos, y el formato sigue vigente en sus distintas familias. Se reformula el enunciado para preguntar por el origen temprano de MARC según la Library of Congress y se reemplazan las opciones: la única correcta indica su desarrollo por la Library of Congress a finales de los sesenta para codificar fichas catalográficas en forma legible por máquina. Se mantiene el índice C. Se etiqueta como contenido histórico verificable, no como formato sustituido por ISBD. El bloque 40 de academia se cotejó solo en su marco de gestión documental/metadatos; no trata específicamente MARC."
+        }
+      }
+    },
+    {
+      "id": 1045,
+      "original": {
+        "id": 1045,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Seleccione la respuesta correcta acerca de los sistemas de representación del conocimiento:",
+        "opciones": [
+          "La representación del conocimiento mediante ternas Objeto, Atributo, Valor, no tiene mecanismos inferenciales.",
+          "Las redes semánticas no tienen capacidad de representar acciones.",
+          "La representación en marcos admite el concepto de herencia, pero las redes semánticas no.",
+          "En los sistemas de razonamiento monótono el conocimiento no varía durante el proceso de razonamiento."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1045,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué propiedad caracteriza una relación de consecuencia monótona?",
+        "opciones": [
+          "Una conclusión derivada debe retirarse cada vez que se incorpora una premisa nueva.",
+          "La incorporación de premisas cambia necesariamente el valor de verdad de todos los hechos previos.",
+          "Una conclusión solo se conserva si las premisas nuevas son idénticas a las originales.",
+          "Si una conclusión se sigue de un conjunto de premisas, sigue siendo consecuencia al añadir otras premisas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El original afirmaba que en el razonamiento monótono «el conocimiento no varía», lo que no expresa la propiedad formal y puede confundirse con una base estática. Se pregunta ahora por la monotonía de la relación de consecuencia: si una conclusión se sigue de unas premisas, continúa siguiéndose al añadir premisas. Se cambia la clave de A a D. Cotejado con el apartado 6.2 del bloque de academia; la propiedad formal se contrastó con Stanford Encyclopedia of Philosophy.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "razonamiento monótono",
+          "lógica",
+          "monotonía",
+          "premisas",
+          "consecuencias"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://plato.stanford.edu/entries/logic-nonmonotonic/",
+              "referencia": "Stanford Encyclopedia of Philosophy, «Non-monotonic Logic», revisión de 23 de noviembre de 2024: define monotonía de la consecuencia; al añadir premisas no se pierden conclusiones ya derivadas, a diferencia del razonamiento no monótono."
+            },
+            {
+              "url": "https://plato.stanford.edu/entries/classical-logic/",
+              "referencia": "Stanford Encyclopedia of Philosophy, «Classical Logic»: trata la consecuencia clásica como monótona."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: apartados 4.6 (backtracking) y 6.2, 6.4–6.6 (lógica, sistemas expertos, motor de inferencia y encadenamientos). El bloque no formula la propiedad lógica de monotonía."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático y sistemas expertos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: estructuras y algoritmos de búsqueda y fundamentos de inteligencia artificial."
+            }
+          ],
+          "observaciones": "El original afirmaba que en el razonamiento monótono «el conocimiento no varía», lo que no expresa la propiedad formal y puede confundirse con una base estática. Se pregunta ahora por la monotonía de la relación de consecuencia: si una conclusión se sigue de unas premisas, continúa siguiéndose al añadir premisas. Se cambia la clave de A a D. Cotejado con el apartado 6.2 del bloque de academia; la propiedad formal se contrastó con Stanford Encyclopedia of Philosophy."
+        }
+      }
+    }
+  ]
+}
