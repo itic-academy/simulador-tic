@@ -1,8 +1,18 @@
 # Revisión del banco TIC — estado al 25 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 241 (IDs 1521–1525). Acumulado: 1.525 preguntas examinadas, 1.476 verificadas (362 vigentes, 992 corregidas y 122 históricas) y 49 pendientes de resolver (27 de fuente y 22 de ambigüedad); quedan 10.598 sin revisar de contenido. Hay 1.145 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 242 (IDs 1526–1530). Acumulado: 1.530 preguntas examinadas, 1.481 verificadas (363 vigentes, 996 corregidas y 122 históricas) y 49 pendientes de resolver (27 de fuente y 22 de ambigüedad); quedan 10.593 sin revisar de contenido. Hay 1.149 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 241 — 25 de octubre
+
+## Lote 242 — 25 de octubre
+
+IDs 1526–1530 revisados individualmente. Se confirma BLE en la banda ISM de 2,4 GHz (1526); se precisa que 802.11b y 802.11g operan en 2,4 GHz y 802.11a en 5 GHz (1527); se corrige el reactivo sobre TCP/IP para preguntar únicamente por el servicio IPv4 y separar sus garantías de las del transporte (1528); se concreta la inundación de unicast desconocido dentro de la VLAN de entrada, excluyendo el puerto de ingreso (1529); y se distingue el puente de capa 2 del encaminamiento IP (1530). Se preservan íntegramente los originales en `cambios-lote-242.json`.
+
+Cotejo con Drive: ITIC Academy, bloque Redes, versión 2026.1 (29-09-2026): §2.4 medios no guiados (1526–1527), §§1.2 y 9.2 OSI/TCP-IP y nivel IP (1528), y §4.4 dispositivos de interconexión, §4.5 VLAN (1529–1530). Correspondencias oficiales A1/A2 cotejadas con `temario-oficial.json` y las convocatorias BOE-A-2025-25938/BOE-A-2025-26262 y guardadas por pregunta. La academia aporta encaje curricular, no sustituye la evidencia normativa/técnica primaria.
+
+Fuentes primarias: Bluetooth Core Specification 6.2, Vol. 6, Part A, §§1–2; IEEE SA, *Wi-Fi Timeline*; RFC 791 y RFC 6250 (modelo de servicio y encaminamiento IP); Cisco, *Troubleshoot LAN Switching Environments* (inundación dentro de VLAN) y *Troubleshooting LAN Switching Environments*, “Bridges and Switches” (switch como dispositivo de capa 2 que aplica puente transparente). Ejecutados `node revision/lote-242.cjs`, `node revision/academia-lote-242.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas, 1.530 registros revisados, cero errores y 10.593 preguntas que siguen idénticas al original.
 
 ## Lote 241 — 25 de octubre
 
