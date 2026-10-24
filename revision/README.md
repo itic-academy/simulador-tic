@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 194 (IDs 1286–1290). Acumulado: 1.290 preguntas examinadas, 1.247 verificadas (309 vigentes, 827 corregidas y 111 históricas) y 43 pendientes de resolver (24 de fuente y 19 de ambigüedad); quedan 10.833 sin revisar de contenido. Hay 957 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 195 (IDs 1291–1295). Acumulado: 1.295 preguntas examinadas, 1.252 verificadas (310 vigentes, 830 corregidas y 112 históricas) y 43 pendientes de resolver (24 de fuente y 19 de ambigüedad); quedan 10.828 sin revisar de contenido. Hay 961 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -1502,6 +1502,16 @@ Cotejo con ITIC Academy 2026.1: bloque 29, apartado 2.2 (claves); bloque 18 (pro
 Fuentes primarias: [OpenALG, The Relational Model—Keys](https://alg.manifoldapp.org/read/guide-to-database-systems/section/b8bd26b4-9bbd-4159-86dc-f11c7695fd0c); [GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.es.html#ModifiedJustBinary) y [GNU GPLv3, § 6](https://www.gnu.org/licenses/gpl-3.0.html#section6); [scikit-learn, Clustering](https://scikit-learn.org/stable/modules/clustering.html); [MDN, CSS ID selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/ID_selectors); [RD 255/2025, texto consolidado, art. 11.3](https://www.boe.es/eli/es/rd/2025/04/01/255/con) y [RD 1553/2005, texto consolidado y nota de derogación](https://www.boe.es/buscar/act.php?id=BOE-A-2005-21163&p=20250402&tn=0). Los documentos de academia están citados en cada ficha y enlazados en el registro de cambios.
 
 `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.285 registros de revisión y 10.838 preguntas restantes idénticas al commit original.
+
+## Lote 195 — 24 de octubre
+
+IDs 1291–1295 revisados individualmente: una vigente, tres corregidas y una histórica. Acumulado: 1.295 examinadas, 1.252 verificadas (310 vigentes, 830 corregidas y 112 históricas) y 43 pendientes (24 de fuente y 19 de ambigüedad); 961 preguntas con cambios de contenido. Quedan 10.828 sin revisar; siguiente ID 1.296.
+
+Se reescribe 1291 para diferenciar WSDL como lenguaje XML de descripción de servicios, SOAP como mensajería, UDDI como directorio y BPEL como descripción de procesos. La clave WSDL se confirma mediante las recomendaciones del W3C. En 1292 se corrige la idea de que dejar de usar un objeto Java implica que ya no esté referenciado: solo un objeto no alcanzable queda elegible para reclamación, y la JVM no garantiza recolección inmediata. La 1293 se conserva como histórica, pero se reemplaza la afirmación “todas son ciertas”: ActiveX se basa en COM y tuvo integración con Internet Explorer; no constituye interoperabilidad de red independiente del lenguaje y Edge no admite controles ActiveX en su modo normal. En 1294 se precisa ntoskrnl.exe como imagen del kernel de Windows NT que contiene componentes del kernel y del ejecutivo, no una interfaz gráfica de llamadas al sistema. En 1295 se define el no repudio como propiedad de seguridad apoyada por evidencia verificable de origen/autoría, sin equipararla a interactividad, simultaneidad o automatización. Se conserva íntegro cada original en `cambios-lote-195.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 30, versión 2026.1 (WSDL, XML, servicios web, ActiveX dentro de tecnologías históricas y entorno Java); bloque 27, versión 2026.1 (sistemas operativos Windows y componentes del sistema); bloque 36, versión 2026.1 (seguridad, criptografía, identificación y firma). Correspondencias revisadas con BOE-A-2025-25938, anexo I: A1-65, A1-67, A1-77, A1-78, A1-80, A1-125 y A1-59; y BOE-A-2025-26262, anexo IX: A2-II-9, A2-III-10, A2-III-12, A2-IV-1, A2-I-6 y A2-IV-12. Las correspondencias indican temario, no sustituyen la comprobación de cada afirmación.
+
+Fuentes primarias: W3C, WSDL 1.1 y WSDL 2.0; Oracle Java SE 24 Garbage Collection Tuning Guide y Java SE API `java.lang.ref`; Microsoft Learn, ActiveX Controls, FAQ empresarial de Edge y Windows boot issues troubleshooting; NIST FIPS 186-5 y CSRC Glossary (non-repudiation). `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.295 registros de revisión y 10.828 preguntas restantes idénticas al commit original.
 
 ## Lote 194 — 24 de octubre
 
