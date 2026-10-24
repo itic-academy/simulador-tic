@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 172 (IDs 1176–1180). Acumulado: 1.180 preguntas revisadas, 1.138 verificadas (291 vigentes, 740 corregidas y 107 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.943 sin revisar de contenido. Hay 865 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 173 (IDs 1181–1185). Acumulado: 1.185 preguntas revisadas, 1.143 verificadas (293 vigentes, 743 corregidas y 107 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.938 sin revisar de contenido. Hay 870 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -84,7 +84,7 @@ Fuentes: Rumelhart, Hinton y Williams, «Learning representations by back-propag
 
 ## Pendientes globales
 
-Tras el lote 170 quedan 10.953 preguntas sin revisión de contenido; siguiente ID: 1.171. La revisión completa no está terminada. También siguen abiertas las 42 dudas ya identificadas (24 de fuente y 18 de ambigüedad), la revisión contextual de grupos repetidos/candidatos de vigencia y el cotejo de correcciones posteriores de las convocatorias. Los pendientes se conservan individualizados y no se marcan como verificados hasta resolverlos.
+Tras el lote 173 quedan 10.938 preguntas sin revisión de contenido; siguiente ID: 1.186. La revisión completa no está terminada. También siguen abiertas las 42 dudas ya identificadas (24 de fuente y 18 de ambigüedad), la revisión contextual de grupos repetidos/candidatos de vigencia y el cotejo de correcciones posteriores de las convocatorias. Los pendientes se conservan individualizados y no se marcan como verificados hasta resolverlos.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -1277,3 +1277,13 @@ Se confirma `vmstat` como resumen de procesos, memoria, swap, paginación, E/S d
 Cotejo con Drive: ITIC Academy, bloque 27, edición 2026 actualizada, monitorización Linux; bloque 30, edición 2026, Java/Jakarta; bloque 36, edición 2026, criptografía y clave pública; bloque 29, edición 2026, § 2.5 Reglas de Codd y apartados de log/WAL, checkpoints y recuperación. Al cotejar los PDF se corrigieron las referencias erróneas de academia de los IDs 1164 y 1174, que antes apuntaban al archivo del bloque 30; sus snapshots originales se conservaron y ahora enlazan el PDF correcto del bloque 29. La corrección queda reproducida en `correccion-referencias-academia-172.cjs`. Correspondencias oficiales: 1176 A1-59/A2-II-2; 1177 A1-67/A2-II-3; 1178 A1-79/A2-IV-12; 1179 A1-63/A2-II-5; 1180 A1-64/A2-II-5.
 
 Fuentes: procps-ng, manual `vmstat(8)`; Oracle, Java Language Specification SE 26, cap. 9; IETF RFC 2828, RFC 2631 y RFC 8017; OASIS PKCS #11 Specification 3.1; PostgreSQL Documentation sobre WAL y recuperación desde checkpoint; E. F. Codd, regla 8 en la transcripción de sus publicaciones de 1985. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.180 registros de revisión y 10.943 preguntas restantes idénticas al commit original.
+
+## Lote 173 — 24 de octubre
+
+IDs 1181–1185 revisados individualmente: tres corregidas y dos vigentes. Acumulado: 1.185 examinadas, 1.143 verificadas (293 vigentes, 743 corregidas y 107 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 870 preguntas con cambios de contenido. Quedan 10.938 sin revisar; siguiente ID: 1.186.
+
+Se actualiza la formulación de los certificados cualificados de firma al texto vigente del anexo I eIDAS, tras la modificación de su letra i) por el Reglamento (UE) 2024/1183 (1181). La cuestión sobre scraping era amplia y su clave «todas» dependía de productos sin versión; se acota a la función Auto-detect documentada por Octoparse (1182). JBOD se precisa para cubrir las dos formas habituales de exponer los discos —individuales o concatenados— y distinguirlas de RAID con redundancia/paridad (1183). Se confirma que insertar y borrar filas son operaciones DML (1184). GIMP se identifica como editor libre de imágenes bajo GPL (1185). Los originales completos se conservan en `cambios-lote-173.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 36, versión 2026.1, §§ 6 y 9 (eIDAS/certificados); bloque 50, § 6.5 (rastreo, robots y búsqueda; contexto temático de scraping, sin atribuir al PDF marcas de producto); bloque 26, §§ 7–8 (almacenamiento y RAID); bloque 29, §§ 5.2 y 6.3 (DML, cotejo directo); bloque 37 (tratamiento de imágenes) y bloque 18, § 4 (software libre). Correspondencias oficiales: 1181 A1-80/A2-I-6; 1182 A1-104/A2-II-16; 1183 A1-56/A2-IV-5; 1184 A1-63/A2-II-5; 1185 A1-69/A2-II-14.
+
+Fuentes: Reglamento (UE) 910/2014 eIDAS, texto consolidado EUR-Lex, art. 28 y anexo I, letras c), e) e i), modificado por Reglamento (UE) 2024/1183; Octoparse Help Center, «Welcome aboard!» (29-01-2026); IBM Documentation sobre discos JBOD como unidades independientes y Apple Disk Utility sobre conjuntos concatenados; Oracle AI Database 26 SQL Language Reference, clasificación DML; páginas oficiales GIMP About y User FAQ sobre finalidad y GPL. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.185 registros de revisión y 10.938 preguntas restantes idénticas al commit original.
