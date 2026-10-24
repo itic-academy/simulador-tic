@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 168 (IDs 1156–1160). Acumulado: 1.160 preguntas revisadas, 1.118 verificadas (286 vigentes, 729 corregidas y 103 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.963 sin revisar de contenido. Hay 847 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 169 (IDs 1161–1165). Acumulado: 1.165 preguntas revisadas, 1.123 verificadas (287 vigentes, 733 corregidas y 103 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.958 sin revisar de contenido. Hay 852 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -84,7 +84,7 @@ Fuentes: Rumelhart, Hinton y Williams, «Learning representations by back-propag
 
 ## Pendiente
 
-10.963 preguntas sin revisión de contenido. Siguiente ID: 1161. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+10.958 preguntas sin revisión de contenido. Siguiente ID: 1166. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -1238,3 +1238,12 @@ Se despeja la ambigüedad de «impresión por inyección»: la fabricación adit
 Cotejo con Drive: ITIC Academy, bloque 26, edición 2026.1, impresión 3D (A1-83) y procesadores (A1-52/A2-II-1); bloque 36, edición 2026.1, XML (A1-77/A2-II-9), certificados (A1-80/A2-I-6) y software libre (A1-69/A2-II-14). Las afirmaciones técnicas se cotejaron con NIST, W3C, IETF RFC Editor, material universitario de arquitectura, y GNU/FSF.
 
 Fuentes: NIST, “What is Additive Manufacturing?”; W3C Recommendation, XML 1.0, § 2.5; IETF RFC 5280, §§ 5.1 y 5.2.5; MC732 Computer Systems Design, Universidade Estadual de Campinas, pipelining/latency/throughput; GNU Project/FSF, “What is Free Software?”. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.160 registros de revisión y 10.963 preguntas restantes idénticas al commit original.
+## Lote 169 — 24 de octubre
+
+IDs 1161–1165 revisados individualmente: cuatro corregidas y una vigente. Acumulado: 1.165 examinadas, 1.123 verificadas (287 vigentes, 733 corregidas y 103 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 852 preguntas con cambios de contenido. Quedan 10.958 sin revisar; siguiente ID 1.166.
+
+Se aclara que OGC es el consorcio que publica estándares, no un servicio; WMS/WMTS/WFS sí son servicios/estándares geoespaciales (1161). XML se mantiene como subconjunto restringido de SGML conforme a la recomendación (1162). El cálculo de tabla de marcos que no tenía tamaño de página explícito se reemplaza por datos completos: 32 MiB físicos/4 KiB por marco = 8192 entradas × 4 bytes = 32 KiB (1163). Codd sí incluyó operaciones de inserción, actualización y borrado de alto nivel; se corrige la clave del original, que lo negaba, y se usa un distractor ajeno a sus doce reglas (1164). Se eliminan comparaciones absolutas y contradictorias entre BDR/BDM: en una carga analítica, un modelo dimensional organiza hechos y dimensiones para facilitar agregaciones (1165). Se preservan los cinco originales íntegros en `cambios-lote-169.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 33, edición 2026.1, A1-74 (IDE/SIG); bloque 36, edición 2026.1, A1-77/A2-II-9 (XML); bloque 47, edición 2026.1, A1-59/A2-II-2 (memoria virtual); bloque 29, edición 2026.1, A1-63/A1-64/A2-II-5 (modelo relacional); bloque 12, edición 2026.2, A1-75/A2-II-4/A2-III-15 (data warehouse y OLAP). Las afirmaciones se contrastaron con OGC, IDEE, W3C, RFC 5280, Codd y Microsoft Learn.
+
+Fuentes: Open Geospatial Consortium, catálogo de estándares; IDEE, directorio de servicios; W3C XML 1.0; University of Wisconsin–Madison CS 537, gestión de memoria paginada; E. F. Codd, reglas relacionales publicadas en *Computerworld* (1985), transcripción cotejada; Microsoft Learn, modelos multidimensionales OLAP. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.165 registros de revisión y 10.958 preguntas restantes idénticas al commit original.
