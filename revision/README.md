@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 138 (IDs 1006–1010). Acumulado: 1.010 preguntas revisadas, 968 verificadas (268 vigentes, 606 corregidas y 94 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.113 sin revisión de contenido. Hay 713 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 139 (IDs 1011–1015). Acumulado: 1.015 preguntas revisadas, 973 verificadas (269 vigentes, 610 corregidas y 94 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.108 sin revisión de contenido. Hay 717 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -33,7 +33,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.128 preguntas sin revisión de contenido. Siguiente ID: 996. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.108 preguntas sin revisión de contenido. Siguiente ID: 1016. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -922,4 +922,17 @@ Cotejo con Drive: bloque 32 de ITIC Academy, versión 2026.1, apartados 5, 2.6, 
 Fuentes principales: Poole y Mackworth y UC Berkeley CS188 para búsqueda no informada; Johns Hopkins y Washington para marcos; PyTorch y Google for Developers para softmax; Stanford HAI y Queensland Brain Institute para redes neuronales; Microsoft Learn y UiPath para idoneidad de RPA. ITIC Academy, bloque 32 versión 2026.1, solo en los apartados citados.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.010 registros de revisión y 11.113 preguntas restantes idénticas al commit original.
+
+
+## Lote 139 — 24 de octubre
+
+IDs 1011–1015 revisados individualmente: una vigente y cuatro corregidas. Acumulado: 1.015 examinadas, 973 verificadas (269 vigentes, 610 corregidas y 94 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 717 preguntas con cambios de contenido. Quedan 11.108 sin revisar; siguiente ID 1.016.
+
+Se confirma que el aprendizaje por refuerzo busca maximizar la recompensa acumulada esperada, no solo la recompensa inmediata (1011). La pregunta de agentes se reformula: el original contenía dos opciones incorrectas —descripción del control de la pizarra y roles de Contract Net invertidos—, así que ahora pregunta directamente por Contract Net y distingue manager de contractor (1012). Se acota la comparación de lógica a una diferencia comprobable entre interpretación semántica y derivación mediante reglas formales, eliminando afirmaciones discutibles sobre Kleene y eficiencia de búsqueda (1013). Se corrige la descripción contradictoria de una shell: la base de reglas es parte de la base de conocimiento; se define el shell como entorno reutilizable con mecanismo de inferencia al que se incorpora conocimiento del dominio (1014). Se sustituye una pregunta de «afirmación falsa» con generalizaciones incompatibles sobre enfoques declarativos/procedimentales por una pregunta positiva sobre adquisición, representación y validación del conocimiento junto con expertos (1015). Se conservan los cinco originales completos en `cambios-lote-139.json`.
+
+Cotejo con Drive: bloque 32 de ITIC Academy, versión 2026.1, apartados de aprendizaje por refuerzo, agentes y coordinación, lógica y sistemas expertos/representación del conocimiento. Correspondencias oficiales revisadas contra BOE-A-2025-25938, anexo I, A1-70, y BOE-A-2025-26262, anexo IX, A2-III-5. El bloque de academia se utilizó para comprobar la cobertura temática, no como fuente normativa o autoridad técnica. Siguen pendientes el cotejo exhaustivo de modificaciones posteriores de las convocatorias y las 42 dudas previas.
+
+Fuentes: Sutton y Barto, *Reinforcement Learning: An Introduction*, 2.ª ed., MIT Press, para retorno acumulado; Smith, «The Contract Net Protocol», *IEEE Transactions on Computers* 29(12), 1980, y NASA para roles y control en blackboard; Stanford Encyclopedia of Philosophy y Cambridge para semántica/demostración; UMBC CLIPS User’s Guide y University of Calgary para shells; Purdue y Brian Gaines (University of Victoria) para adquisición, modelado y validación del conocimiento. ITIC Academy, bloque 32, versión 2026.1, solo en los apartados indicados.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.015 registros de revisión y 11.108 preguntas restantes idénticas al commit original.
 
