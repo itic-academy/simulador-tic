@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 158 (IDs 1106–1110). Acumulado: 1.110 preguntas revisadas, 1.068 verificadas (278 vigentes, 692 corregidas y 98 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.013 sin revisar de contenido. Hay 803 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 159 (IDs 1111–1115). Acumulado: 1.115 preguntas revisadas, 1.073 verificadas (279 vigentes, 695 corregidas y 99 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.008 sin revisar de contenido. Hay 807 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -1139,3 +1139,15 @@ Se acota la comparación SSL/SET al plano histórico: SSL 3.0 proporciona protec
 Cotejo con Drive: ITIC Academy tema 78 para pagos/comercio electrónico; ASTIC tema 64 para Java; material sobre DNIe como contexto histórico; ITIC Academy tema 73, edición 2026.1, para LCMS/LMS (sin correspondencia A2 según el material); ITIC Academy tema 121 para directorios/LDAP. Correspondencias oficiales: 1106 A1-78/A1-125 y A2-IV-12; 1107 A1-67/A1-77 y A2-III-10/A2-III-12; 1108 A1-81 y A2-I-6; 1109 A1-73; 1110 A1-80/A1-122 y A2-II-8. Fuentes: IETF RFC 6101, RFC 2828 y OWASP para SSL/SET; Oracle Java API, Apache Axis/JAXB y Microsoft Learn para las tecnologías web; LO 4/2015 art. 10; RFC 4511 §§ 4.6, 5.1–5.2; y el material del tema 73 para el vocabulario LMS/LCMS.
 
 inventario.cjs, verificar.cjs y git diff --check ejecutados: 12.123 preguntas, cero errores estructurales, 1.110 registros de revisión y 11.013 preguntas restantes idénticas al original. Siguen pendientes las 42 dudas anteriores y la comprobación global de correcciones de convocatorias.
+
+## Lote 159 — 24 de octubre
+
+IDs 1111–1115 revisados individualmente: tres corregidas, una vigente y una histórica. Acumulado: 1.115 examinadas, 1.073 verificadas (279 vigentes, 695 corregidas y 99 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 807 preguntas con cambios de contenido. Quedan 11.008 sin revisar; siguiente ID 1.116.
+
+Se concreta ERP como sistema que integra y automatiza procesos de varias áreas empresariales, distinguiéndolo de CRM y de la categoría general MIS (1111). Se corrige la terminología imprecisa sobre qué “describe” el DDL: define la estructura del esquema y sus objetos; DML actúa sobre las filas almacenadas (1112). Se confirma ETRS89 para la Península Ibérica conforme al artículo 3 del RD 1071/2007, con REGCAN95 para Canarias (1113). La taxonomía original de SIG mezclaba despliegue, aplicaciones funcionales y productos; se pregunta por modalidades de despliegue/interacción, dejando claro que es una clasificación didáctica y no una taxonomía universal (1114). Se confirma el bloque DES de 64 bits y se distingue de sus 56 bits efectivos de clave; se conserva como conocimiento histórico porque NIST retiró el estándar en 2005 (1115). Los originales completos están en `revision/cambios-lote-159.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 30, edición 2026.1, tema A1-72, para ERP/CRM; bloque 29, edición 2026.1, A1-63/64 y A2-II-5, para bases de datos/SQL; ASTIC, tema 074, para SIG; e ITIC Academy, bloque 36, edición 2026.1, para criptografía. El temario SIG consultado no impone una taxonomía de productos: la delimitación de la pregunta 1114 se apoya además en ejemplos documentados por Esri de GIS empresarial, ArcGIS Pro de escritorio y aplicaciones web. Correspondencias: 1111 A1-72; 1112 A1-63/A1-64 y A2-II-5; 1113–1114 A1-74; 1115 A1-79 y A2-IV-12.
+
+Fuentes técnicas y primarias: Microsoft Learn, ERP y categorías DDL/DML de SQL Server; Oracle Database Concepts, DDL y objetos de esquema; BOE, RD 1071/2007, art. 3; ASTIC, tema 074; documentación Esri de ArcGIS Enterprise y sus aplicaciones; NIST FIPS PUB 46 y FIPS 81 (bloque DES y longitud de clave) y ficha NIST de retirada de FIPS 46-3.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.115 registros de revisión y 11.008 preguntas restantes idénticas al commit original. Siguen pendientes las 42 dudas previas y la comprobación global de correcciones posteriores de las convocatorias.
