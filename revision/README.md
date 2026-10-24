@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 167 (IDs 1151–1155). Acumulado: 1.155 preguntas revisadas, 1.113 verificadas (286 vigentes, 724 corregidas y 103 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.968 sin revisar de contenido. Hay 842 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 168 (IDs 1156–1160). Acumulado: 1.160 preguntas revisadas, 1.118 verificadas (286 vigentes, 729 corregidas y 103 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.963 sin revisar de contenido. Hay 847 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -84,7 +84,7 @@ Fuentes: Rumelhart, Hinton y Williams, «Learning representations by back-propag
 
 ## Pendiente
 
-10.968 preguntas sin revisión de contenido. Siguiente ID: 1156. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+10.963 preguntas sin revisión de contenido. Siguiente ID: 1161. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -1229,3 +1229,12 @@ Se separa correctamente la impresión láser de inyección, sublimación e impre
 Cotejo con Drive: ITIC Academy, bloque 26, edición 2026.1, periféricos y almacenamiento (A1-56/A2-IV-5), seguridad/criptografía (A1-79/A2-IV-12) y arquitectura de ordenadores (A1-52/A2-II-1); bloque 47, edición 2026.1, sistemas Unix (A1-59/A1-60/A2-II-2) y seguridad; bloque 36, edición 2026.1, RGPD y protección de datos (A1-27/A2-I-7); bloque 30, edición 2026.1, Java y .NET (A1-67/A2-III-10 y A1-66/A2-III-11). Las afirmaciones se cotejaron con The Open Group, Microsoft Learn, EUR-Lex, NIST, HP, Xerox, Oracle y Computer History Museum.
 
 Fuentes: HP, explicación de impresoras láser e inyección; Xerox, *Solid Ink White Paper*; The Open Group Base Specifications Issue 8 (POSIX.1-2024); Oracle Java SE 26 API Specification; Microsoft Learn, integración de load balancing hardware, boxing en C# y Common Language Runtime; Reglamento (UE) 2016/679, art. 5.2, EUR-Lex; NIST SP 800-21, § 1.5; Computer History Museum, ENIAC y EDSAC. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.155 registros de revisión y 10.968 preguntas restantes idénticas al commit original.
+## Lote 168 — 24 de octubre
+
+IDs 1156–1160 revisados individualmente: cinco corregidas. Acumulado: 1.160 examinadas, 1.118 verificadas (286 vigentes, 729 corregidas y 103 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 847 preguntas con cambios de contenido. Quedan 10.963 sin revisar; siguiente ID 1.161.
+
+Se despeja la ambigüedad de «impresión por inyección»: la fabricación aditiva (estereolitografía, extrusión/material jetting) se diferencia del moldeo por inyección convencional (1156). Se fija XML 1.0 y se advierte que `--` no puede aparecer dentro de comentarios (1157). Se precisa que la afirmación sobre revocaciones de varias CA solo describe una CRL indirecta; RFC 5280 admite ese alcance, mientras cada entrada identifica el certificado por número de serie y fecha y no proporciona una consulta de estado en tiempo real (1158). Pipeline mejora la productividad solapando etapas, pero no la latencia inherente de una instrucción individual (1159). Se formula la libertad excluida con claridad: impedir la redistribución no es una libertad del usuario; vender software libre sí está permitido (1160). Se conservan íntegros los cinco originales en `cambios-lote-168.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 26, edición 2026.1, impresión 3D (A1-83) y procesadores (A1-52/A2-II-1); bloque 36, edición 2026.1, XML (A1-77/A2-II-9), certificados (A1-80/A2-I-6) y software libre (A1-69/A2-II-14). Las afirmaciones técnicas se cotejaron con NIST, W3C, IETF RFC Editor, material universitario de arquitectura, y GNU/FSF.
+
+Fuentes: NIST, “What is Additive Manufacturing?”; W3C Recommendation, XML 1.0, § 2.5; IETF RFC 5280, §§ 5.1 y 5.2.5; MC732 Computer Systems Design, Universidade Estadual de Campinas, pipelining/latency/throughput; GNU Project/FSF, “What is Free Software?”. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.160 registros de revisión y 10.963 preguntas restantes idénticas al commit original.
