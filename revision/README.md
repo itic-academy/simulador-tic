@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 177 (IDs 1201–1205). Acumulado: 1.205 preguntas examinadas, 1.163 verificadas (293 vigentes, 761 corregidas y 109 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.918 sin revisar de contenido. Hay 890 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 178 (IDs 1206–1210). Acumulado: 1.210 preguntas examinadas, 1.168 verificadas (294 vigentes, 765 corregidas y 109 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.913 sin revisar de contenido. Hay 894 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -1331,3 +1331,13 @@ Se corrige 1201: Jakarta Servlet 6.1 exige una instancia por declaración en el 
 Cotejo con Drive: ITIC Academy, bloque 30, versión 2026.1 (Java/Jakarta, JDBC, arquitectura web y blockchain/smart contracts; A1-65/A1-66/A1-85 y A2-III-12); bloque 29, versión 2026.1 (SGBD/JDBC e interoperabilidad, A1-63/A1-64/A2-II-5); bloque 26, versión 2026.1 (almacenamiento/SAN, A1-56/A2-IV-5). Fuentes específicas prevalecen para concurrencia y cardinalidad de servlet, clasificación JDBC, garantías de blockchain, lenguaje Solidity/terminología de Fabric y controles de SAN.
 
 Fuentes: Jakarta Servlet Specification 6.1, §§ 2.2 y 2.3.3.1; Oracle, Java Tutorials, “Getting Started” de JDBC; NISTIR 8202, *Blockchain Technology Overview*; Ethereum.org, Smart Contract Languages; Hyperledger Fabric Documentation, “Smart Contracts and Chaincode”; Cisco MDS 9000 Fabric Configuration Guide 9.x y capítulo de Port Security; IBM Documentation sobre LUN masking; NetApp ONTAP sobre FlexClone LUN. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.205 registros de revisión y 10.918 preguntas restantes idénticas al commit original.
+
+## Lote 178 — 24 de octubre
+
+IDs 1206–1210 revisados individualmente: una vigente y cuatro corregidas. Acumulado: 1.210 examinadas, 1.168 verificadas (294 vigentes, 765 corregidas y 109 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 894 preguntas con cambios de contenido. Quedan 10.913 sin revisar; siguiente ID: 1.211.
+
+Se precisa que `fdisk` modifica tablas de particiones, no formatea sistemas de archivos (1206). La 1207 explicita licencia GPL para distinguir software libre de software necesariamente gratuito; la correspondencia directa de minería de datos es A2-III-15. En la 1208, la relación estudiantes-asignaturas queda modelada mediante una tabla intermedia con una fila por asociación. La 1209 confirma, sin modificar, los cuatro componentes de una IDE según MITECO: datos, metadatos, servicios y aspectos organizativos. La 1210 concreta el remuestreo ráster que acompaña a una transformación geométrica: vecino más próximo toma el valor de la celda de entrada más cercana y no es una corrección radiométrica. Se guardan completos los cinco originales en `cambios-lote-178.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 27, versión 2026.1 (14-08-2026), sistemas operativos/particiones; bloque 29, versión 2026.1, diseño relacional y SGBD; bloque 33, versión 2026.1 (31-07-2026), § 2 SIG. Este último identifica A1-74 y declara A2 «NO APLICA»; por ello no se asigna tema A2 a las preguntas de IDE y remuestreo. Para minería de datos se registra A2-III-15, pero no se atribuye al temario de academia una cobertura específica de Weka que no aparece en los bloques consultados. Las correspondencias se comprobaron contra `temario-oficial.json`.
+
+Fuentes: Linux man-pages, `fdisk(8)`; University of Waikato, Weka Workbench y Weka Wiki sobre GPL; Microsoft Learn, many-to-many relationships y tabla puente; MITECO, «¿Qué es una IDE?»; Esri ArcMap Documentation, fundamentos de georreferenciación de ráster y método de remuestreo. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.210 registros de revisión y 10.913 preguntas restantes idénticas al commit original.
