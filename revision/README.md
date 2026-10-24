@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 157 (IDs 1101–1105). Acumulado: 1.105 preguntas revisadas, 1.063 verificadas (277 vigentes, 688 corregidas y 98 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.018 sin revisar de contenido. Hay 799 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 158 (IDs 1106–1110). Acumulado: 1.110 preguntas revisadas, 1.068 verificadas (278 vigentes, 692 corregidas y 98 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.013 sin revisar de contenido. Hay 803 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -1128,3 +1128,14 @@ La expresión «representación paramétrica del conocimiento» se concreta al c
 Cotejo con Drive: bloque 32 de ITIC Academy, edición 2026.1, §§ 1.3, 5, 6.1 y 8.8–8.10; la edición 2023, sección 4, detalla redes semánticas, marcos, guiones y herencia de slots. Correspondencias oficiales: A1-70/A2-III-5 para 1101–1104 y A2-III-5 para ordenación 1105. Fuentes: Goodfellow, Bengio y Courville, Deep Learning, cap. 5; Minsky, “A Framework for Representing Knowledge” (1974); RFC 6962 § 2.1 para árboles de Merkle; guía oficial scikit-learn para SVM, Naive Bayes y árboles de decisión; OpenDSA, Virginia Tech, para Bubble Sort.
 
 inventario.cjs, verificar.cjs y git diff --check ejecutados: 12.123 preguntas, cero errores estructurales, 1.105 registros de revisión y 11.018 preguntas restantes idénticas al original. Siguen pendientes las 42 dudas anteriores y la comprobación global de correcciones de convocatorias.
+
+
+## Lote 158 — 24 de octubre
+
+IDs 1106–1110 revisados individualmente: cuatro corregidas y una vigente. Acumulado: 1.110 examinadas, 1.068 verificadas (278 vigentes, 692 corregidas y 98 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 803 preguntas con cambios de contenido. Quedan 11.013 sin revisar; siguiente ID 1.111.
+
+Se acota la comparación SSL/SET al plano histórico: SSL 3.0 proporciona protección genérica sobre transporte fiable, mientras que SET se diseñó específicamente para pagos con tarjeta; se avisa de que SSL está obsoleto (1106). Se precisa que AWT es principalmente una API de escritorio, frente a JAXB, Axis y WSE, vinculados a XML/SOAP/servicios web; no se niega que un programa de escritorio pueda ser cliente web (1107). Se aclara la diferencia jurídica entre la competencia exclusiva del Ministerio del Interior y su ejercicio por la Dirección General de la Policía (1108). Se diferencia LCMS, orientado a contenido y objetos formativos, de LMS, que administra cursos/participantes, SCORM como modelo de interoperabilidad y CRM (1109). Se confirma que LDAPv3 se codifica con ASN.1/BER, define transporte sobre TCP y exige atomicidad para cambios agrupados en una petición Modify sobre una entrada; no se generaliza a transacciones entre varias peticiones (1110). Se conservan los originales íntegros en revision/cambios-lote-158.json.
+
+Cotejo con Drive: ITIC Academy tema 78 para pagos/comercio electrónico; ASTIC tema 64 para Java; material sobre DNIe como contexto histórico; ITIC Academy tema 73, edición 2026.1, para LCMS/LMS (sin correspondencia A2 según el material); ITIC Academy tema 121 para directorios/LDAP. Correspondencias oficiales: 1106 A1-78/A1-125 y A2-IV-12; 1107 A1-67/A1-77 y A2-III-10/A2-III-12; 1108 A1-81 y A2-I-6; 1109 A1-73; 1110 A1-80/A1-122 y A2-II-8. Fuentes: IETF RFC 6101, RFC 2828 y OWASP para SSL/SET; Oracle Java API, Apache Axis/JAXB y Microsoft Learn para las tecnologías web; LO 4/2015 art. 10; RFC 4511 §§ 4.6, 5.1–5.2; y el material del tema 73 para el vocabulario LMS/LCMS.
+
+inventario.cjs, verificar.cjs y git diff --check ejecutados: 12.123 preguntas, cero errores estructurales, 1.110 registros de revisión y 11.013 preguntas restantes idénticas al original. Siguen pendientes las 42 dudas anteriores y la comprobación global de correcciones de convocatorias.

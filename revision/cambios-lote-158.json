@@ -1,0 +1,344 @@
+{
+  "fecha": "2026-10-24",
+  "alcance": "IDs 1106–1110; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1106,
+      "original": {
+        "id": 1106,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si comparamos SSL y SET:",
+        "opciones": [
+          "SSL es un nivel de transporte (uso genérico) mientras que SET es una aplicación (uso específico)",
+          "gozan actualmente de aproximadamente el mismo grado de implantación en el mercado",
+          "los datos de una aplicación SET no pueden circular sobre canales SSL al ser incompatibles",
+          "SET usa certificados mientras que SSL no los utiliza"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1106,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una comparación histórica de capas y finalidad entre SSL 3.0 (obsoleto) y SET, ¿qué afirmación es correcta?",
+        "opciones": [
+          "SSL 3.0 se sitúa sobre un transporte fiable y protege de forma genérica protocolos de aplicación; SET especificaba seguridad para transacciones de pago con tarjeta.",
+          "SET sustituye a TCP y SSL solo sirve para cifrar archivos almacenados.",
+          "SSL y SET son protocolos incompatibles que no pueden aparecer en una misma arquitectura.",
+          "SSL 3.0 no permite autenticar al servidor mediante certificados, mientras que SET sí usa certificados."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La opción arquitectónica del original es defendible, pero «SSL» puede leerse como recomendación actual y la expresión «nivel de transporte» es imprecisa. Se acota al SSL 3.0 histórico (obsoleto): funciona sobre transporte fiable y protege de forma genérica protocolos de aplicación; SET especificaba seguridad para transacciones con tarjetas. Se evita sugerir que hoy deba desplegarse SSL. Cotejo temático con ITIC Academy, tema 78; el detalle se fundamenta en RFC 6101, RFC 2828 y OWASP. Cotejo con el tema 78 de ITIC Academy (comercio electrónico/pagos); al ser un protocolo legado, la comparación técnica se verifica con RFC 6101 y RFC 2828 y la obsolescencia SSL con OWASP.",
+        "clasificacion": {
+          "A1": [
+            "A1-78",
+            "A1-125"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "78 y 121 (seguridad/capas; cotejo temático)",
+          "estado": "revisada",
+          "nota": "Cotejo con el tema 78 de ITIC Academy (comercio electrónico/pagos); al ser un protocolo legado, la comparación técnica se verifica con RFC 6101 y RFC 2828 y la obsolescencia SSL con OWASP."
+        },
+        "etiquetas": [
+          "SSL",
+          "SET",
+          "seguridad de pagos",
+          "capas de protocolos",
+          "tecnología histórica"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://datatracker.ietf.org/doc/rfc6101/",
+              "referencia": "IETF RFC 6101 (2011, histórico): SSL 3.0 se sitúa sobre un transporte fiable (por ejemplo TCP) y encapsula protocolos de aplicación; la propia página señala su carácter histórico."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc2828.html",
+              "referencia": "RFC 2828, Internet Security Glossary, entrada SET: Secure Electronic Transaction es un protocolo de Visa/MasterCard para confidencialidad, integridad de pagos y autenticación de participantes en pagos con tarjeta."
+            },
+            {
+              "url": "https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html",
+              "referencia": "OWASP TLS Cheat Sheet: SSLv2 y SSLv3 tienen debilidades criptográficas graves y no deben utilizarse; se conserva la pregunta únicamente como comparación arquitectónica histórica."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1yM-FjY3ZA_1QN7uuV4phhVRZqQk1A2hg/view?usp=drivesdk",
+              "referencia": "ITIC Academy, tema 78, comercio electrónico y mecanismos de pago: cotejo temático para SET y pagos electrónicos; es material de academia, no la especificación técnica."
+            }
+          ],
+          "observaciones": "La opción arquitectónica del original es defendible, pero «SSL» puede leerse como recomendación actual y la expresión «nivel de transporte» es imprecisa. Se acota al SSL 3.0 histórico (obsoleto): funciona sobre transporte fiable y protege de forma genérica protocolos de aplicación; SET especificaba seguridad para transacciones con tarjetas. Se evita sugerir que hoy deba desplegarse SSL. Cotejo temático con ITIC Academy, tema 78; el detalle se fundamenta en RFC 6101, RFC 2828 y OWASP. Cotejo con el tema 78 de ITIC Academy (comercio electrónico/pagos); al ser un protocolo legado, la comparación técnica se verifica con RFC 6101 y RFC 2828 y la obsolescencia SSL con OWASP."
+        }
+      }
+    },
+    {
+      "id": 1107,
+      "original": {
+        "id": 1107,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale cuál de los siguientes conceptos NO está ligado al desarrollo de aplicaciones basadas en servicios web:",
+        "opciones": [
+          "JAXB",
+          "AWT",
+          "AXIS",
+          "WSE"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1107,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de estas tecnologías tiene como finalidad principal crear interfaces gráficas de escritorio, en vez de proporcionar una API o motor para desarrollar servicios web?",
+        "opciones": [
+          "JAXB, para enlazar clases Java y esquemas/XML.",
+          "AWT, para interfaces de usuario y gráficos de escritorio.",
+          "Apache Axis, motor SOAP para clientes y servicios.",
+          "Microsoft Web Services Enhancements (WSE), extensiones para servicios web en .NET."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "JAXB enlaza objetos Java con XML y se integra en herramientas web service; Apache Axis es motor SOAP y Microsoft WSE amplía servicios SOAP/WSE. AWT es la API de interfaces gráficas de escritorio, aunque una aplicación AWT podría actuar como cliente de un servicio. Se pregunta por la finalidad principal del paquete, evitando afirmar que sea imposible usarlo junto con web services. Cotejo con el tema 64 de Java y las correspondencias de servicios web del programa. Cotejo con ASTIC, tema 64, entorno Java; el detalle de AWT, Axis, JAXB y WSE se contrastó con Oracle, Apache y Microsoft Learn.",
+        "clasificacion": {
+          "A1": [
+            "A1-67",
+            "A1-77"
+          ],
+          "A2": [
+            "A2-III-10",
+            "A2-III-12"
+          ],
+          "bloque_academia": "64 (Java; edición 2017)",
+          "estado": "revisada",
+          "nota": "Cotejo con ASTIC, tema 64, entorno Java; el detalle de AWT, Axis, JAXB y WSE se contrastó con Oracle, Apache y Microsoft Learn."
+        },
+        "etiquetas": [
+          "Java",
+          "servicios web",
+          "JAXB",
+          "AWT",
+          "Apache Axis",
+          "WSE"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/java/awt/package-summary.html",
+              "referencia": "Oracle Java SE 18 API, java.awt: el paquete contiene clases para crear interfaces de usuario y pintar gráficos e imágenes; es una API de escritorio."
+            },
+            {
+              "url": "https://axis.apache.org/axis/java/user-guide",
+              "referencia": "Apache Axis User Guide: Axis es un motor SOAP/framework para construir procesadores SOAP, clientes, servidores y gateways de servicios web."
+            },
+            {
+              "url": "https://axis.apache.org/docs/jaxws-guide.html",
+              "referencia": "Apache Axis2 JAX-WS Guide, sección JAXB: JAXB enlaza clases Java y esquemas XML y se utiliza como tecnología de binding en aplicaciones de servicios web."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/dotnet/framework/wcf/feature-details/interoperability-with-web-services-enhancements-3-0",
+              "referencia": "Microsoft Learn, interoperabilidad con Web Services Enhancements 3.0: documenta WSE como clientes y servicios compatibles a nivel de protocolo con WCF."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1C8_hX_lPM88f6tp9XZd3xQgI7HWRuWbK/view?usp=drivesdk",
+              "referencia": "ASTIC, tema 64, Entorno de desarrollo Java (ed. 2017): cotejo temático de Java y APIs del entorno; WSE se contrasta con Microsoft Learn."
+            }
+          ],
+          "observaciones": "JAXB enlaza objetos Java con XML y se integra en herramientas web service; Apache Axis es motor SOAP y Microsoft WSE amplía servicios SOAP/WSE. AWT es la API de interfaces gráficas de escritorio, aunque una aplicación AWT podría actuar como cliente de un servicio. Se pregunta por la finalidad principal del paquete, evitando afirmar que sea imposible usarlo junto con web services. Cotejo con el tema 64 de Java y las correspondencias de servicios web del programa. Cotejo con ASTIC, tema 64, entorno Java; el detalle de AWT, Axis, JAXB y WSE se contrastó con Oracle, Apache y Microsoft Learn."
+        }
+      }
+    },
+    {
+      "id": 1108,
+      "original": {
+        "id": 1108,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El órgano competente para la expedición del DNIe es:",
+        "opciones": [
+          "Ministerio de Defensa",
+          "Ministerio del Interior",
+          "Ministerio de Presidencia",
+          "Secretaria de Estado de Función Pública"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1108,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el artículo 10 de la Ley Orgánica 4/2015, ¿a qué Ministerio corresponde la competencia exclusiva sobre la confección y expedición del DNI, ejercida por la Dirección General de la Policía?",
+        "opciones": [
+          "Ministerio de Defensa.",
+          "Ministerio del Interior.",
+          "Ministerio de la Presidencia.",
+          "Secretaría de Estado de Función Pública."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La formulación original podía confundir al ministerio titular de la competencia con el órgano que la ejerce. El art. 10 de la LO 4/2015 distingue ambos niveles: la competencia exclusiva sobre confección y expedición corresponde al Ministerio del Interior y la ejerce la Dirección General de la Policía. Como el ítem pregunta por el Ministerio entre opciones de ese rango, la clave sigue siendo Ministerio del Interior. Cotejo histórico con el material de academia sobre DNIe; prevalece la ley vigente. Cotejo contextual con el material de academia sobre DNIe; la respuesta legal actual se verifica con el art. 10 LO 4/2015, que distingue Ministerio del Interior y Dirección General de la Policía.",
+        "clasificacion": {
+          "A1": [
+            "A1-81"
+          ],
+          "A2": [
+            "A2-I-6"
+          ],
+          "bloque_academia": "DNIe/PKI, material histórico de academia",
+          "estado": "revisada",
+          "nota": "Cotejo contextual con el material de academia sobre DNIe; la respuesta legal actual se verifica con el art. 10 LO 4/2015, que distingue Ministerio del Interior y Dirección General de la Policía."
+        },
+        "etiquetas": [
+          "DNI electrónico",
+          "competencia administrativa",
+          "Dirección General de la Policía",
+          "Ministerio del Interior"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-3442&lang=es",
+              "referencia": "Ley Orgánica 4/2015, de 30 de marzo, art. 10: la competencia exclusiva sobre confección y expedición del DNI corresponde al Ministerio del Interior y la ejerce la Dirección General de la Policía."
+            },
+            {
+              "url": "https://drive.google.com/file/d/0Bw-rS_kOHzMKLWxKOTZPZzZVcVE/view?usp=drivesdk&resourcekey=0-6m80D7w8oMCWC4eeVjsO1w",
+              "referencia": "Documento de academia, Infraestructura de clave pública/DNI electrónico (2006): contexto histórico; la competencia y su ejercicio se verifican con el art. 10 de la LO 4/2015 vigente."
+            }
+          ],
+          "observaciones": "La formulación original podía confundir al ministerio titular de la competencia con el órgano que la ejerce. El art. 10 de la LO 4/2015 distingue ambos niveles: la competencia exclusiva sobre confección y expedición corresponde al Ministerio del Interior y la ejerce la Dirección General de la Policía. Como el ítem pregunta por el Ministerio entre opciones de ese rango, la clave sigue siendo Ministerio del Interior. Cotejo histórico con el material de academia sobre DNIe; prevalece la ley vigente. Cotejo contextual con el material de academia sobre DNIe; la respuesta legal actual se verifica con el art. 10 LO 4/2015, que distingue Ministerio del Interior y Dirección General de la Policía."
+        }
+      }
+    },
+    {
+      "id": 1109,
+      "original": {
+        "id": 1109,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes son subsistemas usuales en un sistema de e-learning?",
+        "opciones": [
+          "LCMS (Learning Content Management System)",
+          "LOMS (Learning Objects Management System)",
+          "CRM (Customer Relationship Management)",
+          "Todos los anteriores"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1109,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué tipo de plataforma está orientada específicamente a crear, gestionar, organizar y reutilizar contenidos y objetos de aprendizaje en e-learning?",
+        "opciones": [
+          "LCMS (Learning Content Management System).",
+          "CRM (Customer Relationship Management).",
+          "SCORM (Sharable Content Object Reference Model).",
+          "LMS (Learning Management System), centrado en administrar cursos, participantes y actividades formativas."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "El original usa «subsistemas usuales» sin delimitar qué parte de la arquitectura cubre cada término y presenta LOMS y CRM como alternativas comparables. Se concreta la función de gestionar, organizar y reutilizar contenidos y objetos de aprendizaje, para la que el material actual utiliza LCMS; CRM gestiona relaciones con clientes, SCORM es un modelo/estándar de interoperabilidad y LMS administra cursos y participantes. Cotejo con ITIC Academy, tema 73, edición 2026.1, que distingue plataformas LMS/LCMS y declara que este tema no aplica a A2. Cotejo con ITIC Academy, tema 73, edición 2026.1, que incluye LMS, LCMS y objetos de aprendizaje; el programa indica que no aplica correspondencia A2.",
+        "clasificacion": {
+          "A1": [
+            "A1-73"
+          ],
+          "A2": [],
+          "bloque_academia": "73, edición 2026.1",
+          "estado": "revisada",
+          "nota": "Cotejo con ITIC Academy, tema 73, edición 2026.1, que incluye LMS, LCMS y objetos de aprendizaje; el programa indica que no aplica correspondencia A2."
+        },
+        "etiquetas": [
+          "e-learning",
+          "LCMS",
+          "LMS",
+          "objetos de aprendizaje",
+          "gestión de contenidos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+              "referencia": "ITIC Academy, tema 73, edición 2026.1: incluye plataformas LMS y LCMS y objetos de aprendizaje; el bloque indica que no aplica correspondencia A2."
+            }
+          ],
+          "observaciones": "El original usa «subsistemas usuales» sin delimitar qué parte de la arquitectura cubre cada término y presenta LOMS y CRM como alternativas comparables. Se concreta la función de gestionar, organizar y reutilizar contenidos y objetos de aprendizaje, para la que el material actual utiliza LCMS; CRM gestiona relaciones con clientes, SCORM es un modelo/estándar de interoperabilidad y LMS administra cursos y participantes. Cotejo con ITIC Academy, tema 73, edición 2026.1, que distingue plataformas LMS/LCMS y declara que este tema no aplica a A2. Cotejo con ITIC Academy, tema 73, edición 2026.1, que incluye LMS, LCMS y objetos de aprendizaje; el programa indica que no aplica correspondencia A2."
+        }
+      }
+    },
+    {
+      "id": 1110,
+      "original": {
+        "id": 1110,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En los servicios de directorio:",
+        "opciones": [
+          "varias entradas pueden compartir un DN",
+          "las operaciones de actualización de LDAP no son atómicas",
+          "LDAP utiliza habitualmente la pila de protocolos TCP / IP",
+          "LDAP no se describe en términos de ASN.1"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1110,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según LDAPv3 (RFC 4511), ¿cuál de estas afirmaciones sobre codificación y transporte es correcta?",
+        "opciones": [
+          "Un DN puede identificar simultáneamente varias entradas distintas.",
+          "Las modificaciones incluidas en una misma petición Modify se aplican una a una y no son atómicas.",
+          "LDAP se codifica mediante ASN.1/BER y su especificación define el transporte sobre TCP.",
+          "El protocolo LDAP no utiliza tipos definidos en ASN.1."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se conserva la opción C: LDAP se define con codificación ASN.1/BER y la especificación define LDAP sobre TCP. Las restantes son falsas: el DN identifica una entrada, los cambios dentro de una sola petición Modify se aplican atómicamente, y LDAP sí se describe mediante tipos ASN.1. El alcance de atomicidad es una petición sobre una entrada, no una transacción arbitraria que abarque varias peticiones/entradas. Cotejo con ITIC Academy, tema 121, y RFC 4511 §§ 4.6, 5.1 y 5.2. Cotejo con ITIC Academy, tema 121, servicios de directorio, y el RFC 4511, fuente normativa/técnica primaria del protocolo LDAPv3.",
+        "clasificacion": {
+          "A1": [
+            "A1-80",
+            "A1-122"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "121, edición 2026",
+          "estado": "revisada",
+          "nota": "Cotejo con ITIC Academy, tema 121, servicios de directorio, y el RFC 4511, fuente normativa/técnica primaria del protocolo LDAPv3."
+        },
+        "etiquetas": [
+          "LDAP",
+          "servicios de directorio",
+          "ASN.1",
+          "BER",
+          "TCP"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4511.html",
+              "referencia": "IETF RFC 4511: § 4.6 requiere atomicidad para la lista de modificaciones de una petición Modify; § 5.1 codifica con ASN.1 BER y § 5.2 define LDAP sobre TCP. La sintaxis de DN/RDN figura en §§ 4.1 y 4.1.3."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1vvfm-lB7oMhP5TP-vHSNIJpg8cfJbLia/view?usp=drivesdk",
+              "referencia": "ITIC Academy, tema 121, servicios de directorio: cotejo de LDAP; se complementa con el estándar IETF RFC 4511."
+            }
+          ],
+          "observaciones": "Se conserva la opción C: LDAP se define con codificación ASN.1/BER y la especificación define LDAP sobre TCP. Las restantes son falsas: el DN identifica una entrada, los cambios dentro de una sola petición Modify se aplican atómicamente, y LDAP sí se describe mediante tipos ASN.1. El alcance de atomicidad es una petición sobre una entrada, no una transacción arbitraria que abarque varias peticiones/entradas. Cotejo con ITIC Academy, tema 121, y RFC 4511 §§ 4.6, 5.1 y 5.2. Cotejo con ITIC Academy, tema 121, servicios de directorio, y el RFC 4511, fuente normativa/técnica primaria del protocolo LDAPv3."
+        }
+      }
+    }
+  ]
+}
