@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 145 (IDs 1041–1045). Acumulado: 1.045 preguntas revisadas, 1.003 verificadas (274 vigentes, 634 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.078 sin revisión de contenido. Hay 741 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 146 (IDs 1046–1050). Acumulado: 1.050 preguntas revisadas, 1.008 verificadas (275 vigentes, 638 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.073 sin revisión de contenido. Hay 745 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -33,7 +33,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.078 preguntas sin revisión de contenido. Siguiente ID: 1046. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.073 preguntas sin revisión de contenido. Siguiente ID: 1051. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -98,6 +98,18 @@ Cotejo temático con Drive: bloque 32 de ITIC Academy, versión 2026.1, apartado
 Fuentes: UC Berkeley CS188, encadenamiento hacia delante y estrategias de búsqueda; IEEE Technology Navigator y Negnevitsky, *Artificial Intelligence: A Guide to Intelligent Systems*, para motores de inferencia; Library of Congress, historia y formatos MARC 21; IFLA, documentación de UNIMARC; Stanford Encyclopedia of Philosophy, «Non-monotonic Logic» (revisión de 2024), para monotonía de la consecuencia. ITIC Academy, bloques 32 y 40, solo en los apartados especificados.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.045 registros de revisión y 11.078 preguntas restantes idénticas al commit original.
+
+## Lote 146 — 24 de octubre
+
+IDs 1046–1050 revisados individualmente: cuatro corregidas y una vigente. Acumulado: 1.050 examinadas, 1.008 verificadas (275 vigentes, 638 corregidas y 95 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 745 preguntas con cambios de contenido. Quedan 11.073 sin revisar; siguiente ID 1.051.
+
+Se amplía la definición de base de conocimiento de un sistema experto para incluir la representación del dominio (hechos, reglas y, según el formalismo, otras estructuras), separándola del motor de inferencia (1046). Se delimita la representación simbólica de IA frente a los diagramas de flujo de datos de análisis estructurado (1047). Se acota la detección heurística de antimalware como posibilidad basada en rasgos similares a malware conocido, sin firma exacta ni garantía absoluta (1048). Se especifica qué guarda un slot de un marco: valores/instancias, restricciones o referencias asociados a una característica (1049). Se confirma la estructura de redes semánticas mediante nodos para conceptos y arcos para relaciones; se conserva el original y su clave (1050). Se conservan íntegros los originales en `cambios-lote-146.json`.
+
+Cotejo temático con Drive: bloque 32 de ITIC Academy, versión 2026.1, secciones 6.1–6.4 para IA simbólica, representación del conocimiento, redes semánticas y sistemas expertos; 6.5 para encadenamiento hacia delante. El material no trata específicamente DFD ni desarrolla la estructura interna de marcos. Bloque 48, versión 2026.1, para seguridad del puesto, antimalware/EDR y detección por firmas, heurística y comportamiento (1048). Se cotejaron esos apartados pertinentes, no todo Drive. Correspondencias comprobadas contra BOE-A-2025-25938, anexo I, A1-70 (1046, 1047, 1049 y 1050) y A1-54 (1048), y BOE-A-2025-26262, anexo IX, A2-III-5 (1046, 1047, 1049 y 1050) y A2-IV-12/C10 (1048). Las 42 dudas previas y la comprobación global de correcciones posteriores de las convocatorias siguen pendientes.
+
+Fuentes: IEEE Technology Navigator y CLIPS 6.4 User’s Guide para bases de conocimiento/motor de inferencia; University of Pisa sobre redes semánticas y representación simbólica; University of Colorado Boulder sobre DFD; Microsoft Learn sobre heurística de Microsoft Defender; Marvin Minsky, MIT AI Laboratory Memo 306 (1974), para marcos y slots; University at Buffalo sobre redes semánticas. ITIC Academy, bloques 32 y 48, solo en los apartados indicados.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.050 registros de revisión y 11.073 preguntas restantes idénticas al commit original.
 
 ## Vista local y comprobaciones
 
