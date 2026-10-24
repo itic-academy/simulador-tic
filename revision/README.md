@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 143 (IDs 1031–1035). Acumulado: 1.035 preguntas revisadas, 993 verificadas (274 vigentes, 624 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.088 sin revisión de contenido. Hay 731 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 144 (IDs 1036–1040). Acumulado: 1.040 preguntas revisadas, 998 verificadas (274 vigentes, 629 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.083 sin revisión de contenido. Hay 736 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -33,7 +33,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.088 preguntas sin revisión de contenido. Siguiente ID: 1036. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.083 preguntas sin revisión de contenido. Siguiente ID: 1041. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -74,6 +74,18 @@ Se sustituye el beneficio impreciso de la gestión de cambios de ITIL v3 por el 
 Cotejo temático con Drive: el bloque «41_Bloque_41_Tema_ITIL_y_COBIT_2026» cubre la práctica de Change Enablement; «38_ITIC_Academy_Analisis_Diseno_Construccion_SI_2026» trata Kanban, Git y la distinción entre ingeniería inversa y directa; «Tema 093 - Métrica v3» cubre el DFD. Se han contrastado estos materiales de academia con las fuentes técnicas primarias, no se ha auditado todo Drive. Para el programa se revisaron los anexos I y IX de BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): la materia corresponde, respectivamente, a A1-106/A2-IV-4 (951), A1-37 y A1-88/A2-III-2 (952), A1-100 y A1-102/A2-IV-4 (953), A1-95/A2-III-3 (954) y A1-100/A1-101/A2-III-8 (955). Las búsquedas exploratorias en BOE por referencia y por «corrección de errores» no localizaron una corrección de los anexos del programa; sí devolvieron publicaciones posteriores de tramitación y composición de tribunales. No se toma esa búsqueda como prueba exhaustiva de que no exista una disposición posterior, ni como auditoría de todas las modificaciones normativas del banco.
 
 Fuentes técnicas: PeopleCert, práctica ITIL 4 Change Enablement; Kanban University, Official Guide to The Kanban Method; manual oficial Git `git-help`; directrices DFD de MÉTRICA v3 del grupo ALARCOS-UCLM; IEEE Technology Navigator y Chikofsky/Cross, IEEE Software 7(1), DOI 10.1109/52.43044. `inventario.cjs` y `verificar.cjs` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 955 cambios registrados y 11.168 preguntas restantes idénticas al commit original.
+
+## Lote 144 — 24 de octubre
+
+IDs 1036–1040 revisados individualmente: cinco corregidas. Acumulado: 1.040 examinadas, 998 verificadas (274 vigentes, 629 corregidas y 95 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 736 preguntas con cambios de contenido. Quedan 11.083 sin revisar; siguiente ID 1.041.
+
+Se aclara que ID3 induce árboles de decisión desde ejemplos etiquetados y selecciona divisiones mediante ganancia de información/entropía, no produce genéricamente «reglas» por deducción (1036). Prolog se acota a programación lógica históricamente asociada a la IA simbólica, sin presentarlo como lenguaje exclusivo de IA (1037). Se sustituye una afirmación negativa y absoluta sobre ingeniería del conocimiento por el principio KADS que separa conocimiento de dominio y de control (1038). Se define el retroceso en backtracking de CSP como poda de una rama incompatible y vuelta a una decisión anterior (1039). La pregunta sobre KADS queda delimitada al artículo de Wielinga, Schreiber y Breuker y sus dos fases para construir el primer modelo de experiencia: identificación y modelado del conocimiento (1040). Se conservan íntegros los originales en `cambios-lote-144.json`.
+
+Cotejo temático con Drive: bloque 32 de ITIC Academy, versión 2026.1; apartados 4.6 (backtracking), 6.2 (lógica y Prolog) y 8.10 (árboles de decisión), además del resumen y las soluciones. El documento no desarrolla expresamente KADS; esa parte se verificó con las fuentes universitarias y el artículo académico citado. Correspondencias: A1-70 y A2-III-5/D5 (1036–1038 y 1040); A2-III-5/D5 (1039). El programa oficial se consultó en BOE-A-2025-25938, anexo I, y BOE-A-2025-26262, anexo IX. La revisión global de modificaciones/correcciones de las convocatorias y las 42 dudas abiertas siguen pendientes.
+
+Fuentes: Quinlan, «Induction of decision trees», *Machine Learning* 1 (1986), DOI 10.1007/BF00116251; University of Waikato sobre ID3 y ganancia de información; manual de SWI-Prolog sobre programas lógicos; University of Calgary, modelo conceptual KADS; Wielinga, Schreiber y Breuker, «KADS: a modelling approach to knowledge engineering», *Knowledge Acquisition* 4 (1992), DOI 10.1016/1042-8143(92)90013-Q; Poole y Mackworth, University of British Columbia, algoritmos de backtracking. ITIC Academy, bloque 32 versión 2026.1, solo en los apartados indicados.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.040 registros de revisión y 11.083 preguntas restantes idénticas al commit original.
 
 ## Vista local y comprobaciones
 
