@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 133 (IDs 981–985). Acumulado: 985 preguntas revisadas, 943 verificadas (266 vigentes, 585 corregidas y 92 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.138 sin revisión de contenido. Hay 690 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 134 (IDs 986–990). Acumulado: 990 preguntas revisadas, 948 verificadas (266 vigentes, 589 corregidas y 93 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.133 sin revisión de contenido. Hay 695 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -31,7 +31,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.143 preguntas sin revisión de contenido. Siguiente ID: 981. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.133 preguntas sin revisión de contenido. Siguiente ID: 991. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -859,3 +859,13 @@ Se confirma en la tabla de participantes de MÉTRICA v3 que el Comité de Direcc
 Cotejo con Drive: el bloque 12 de ITIC Academy describe las nueve actividades PSI y ubica arquitectura tecnológica en PSI 7; el bloque 38 trata proceso unificado, UML, acoplamiento y wireframes/prototipos; el bloque 39 identifica la asociación histórica SPICE–ISO/IEC 15504 y recomienda la familia 330xx actual. Se consultaron los apartados pertinentes, no la totalidad de esos PDFs. Correspondencias del BOE: A1-95/A2-III-2 (981), A1-88/A1-93/A2-III-9 (982), A1-93/A2-III-9 (983), A1-98/A2-III-13 (984) y A1-94/A2-III-3/A2-III-12 (985). Se mantienen pendientes la revisión exhaustiva de modificaciones posteriores de las convocatorias y los 42 casos señalados.
 
 Fuentes: MÉTRICA v3 del Ministerio de Administraciones Públicas (tabla de participantes PSI); OMG, especificaciones UML e IBM Rational; artículo académico LACCEI 2009 sobre acoplamiento normal y guía de conceptos de MÉTRICA v3; ISO, fichas oficiales de ISO/IEC 15504-2:2003 (retirada), 33001:2015 y 33020:2019 (vigentes/confirmadas en 2026); Digital.gov y Comisión Europea, definiciones de wireframe. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote: banco válido, 985 registros de revisión y 11.138 preguntas restantes idénticas al commit original.
+
+## Lote 134 — 24 de octubre
+
+IDs 986–990 revisados individualmente: una histórica y cuatro corregidas. Acumulado: 990 examinadas, 948 verificadas (266 vigentes, 589 corregidas y 93 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 695 preguntas con cambios de contenido. Quedan 11.133 sin revisar; siguiente ID 991.
+
+La secuencia RAD se acota a las cinco fases de Pressman (modelado del negocio, datos, procesos, generación de aplicaciones y pruebas/entrega), sin presentarla como única definición del método (986, histórica). Se precisa el alcance de COBIT 2019 como gobierno y gestión de I&T empresarial frente a marcos centrados en ITSM, conservando la clave D con un supuesto explícito (987). En MÉTRICA v3, GPS 11.2 extrapola resultados del seguimiento para estimar la evolución futura si continúa la situación actual; se ajusta la opción correcta a esa definición y a su producto Diagrama de extrapolación (988). Se corrige la clave de C a A: IF-ADDED se dispara al añadir un valor a un slot; IF-NEEDED al solicitar un valor que debe calcularse (989). La pregunta sobre tendencias de SBC se reformula para distinguir una característica definitoria de una tendencia discutible; se conserva C como descripción del sistema basado en conocimiento (990).
+
+Cotejo con Drive: el bloque 15 de ITIC Academy cubre modelos del ciclo de vida y RAD; el bloque 41 versión 2026.1 diferencia gestión de servicios de TI y gobierno/gestión empresarial de I&T; el bloque de proyectos Gantt/PERT incluye seguimiento y extrapolación; el bloque 32 versión 2026.1 cubre IA simbólica, sistemas expertos y fundamentos de IA. Se consultaron los apartados relacionados, no la totalidad de los materiales. Correspondencias verificadas contra los anexos I y IX de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262: A1-86/A2-III-1 (986); A1-106 (987); A1-95/A2-III-2 (988); A1-70/A2-III-5 (989 y 990). No se asigna A2 directo a 987. Sigue pendiente el cotejo exhaustivo de modificaciones posteriores de las convocatorias; las 42 dudas abiertas previas permanecen sin resolver.
+
+Fuentes: Pressman, *Software Engineering: A Practitioner’s Approach*, 5.ª ed., cap. 2, fig. 2.6; McGraw Hill, ficha bibliográfica de la obra; ISACA, COBIT 2019 Framework y glosario; VeriSM, FitSM y The Open Group IT4IT; Ministerio de Administraciones Públicas, MÉTRICA v3, Gestión de Proyectos, GPS 11.2; Brachman y Levesque, *Knowledge Representation and Reasoning*, sección de marcos y procedimientos IF-ADDED/IF-NEEDED; ITIC Academy, bloques 15, 32 y 41. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 990 registros de revisión y 11.133 preguntas restantes idénticas al commit original.
