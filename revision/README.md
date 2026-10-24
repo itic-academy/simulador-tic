@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 156 (IDs 1096–1100). Acumulado: 1.100 preguntas revisadas, 1.058 verificadas (276 vigentes, 684 corregidas y 98 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.023 sin revisar de contenido. Hay 795 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 157 (IDs 1101–1105). Acumulado: 1.105 preguntas revisadas, 1.063 verificadas (277 vigentes, 688 corregidas y 98 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.018 sin revisar de contenido. Hay 799 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -1117,3 +1117,14 @@ Se acota el perceptrón a la regla clásica binaria supervisada con etiquetas, e
 Cotejo con Drive: bloque 32 de ITIC Academy, edición 2026.1, §§ 7.1 y 7.3 para agentes y resolución distribuida, § 10 para perceptrón/redes neuronales y cobertura general de IA; el tema 94 de 2009 para la taxonomía histórica de reconocimiento de voz; y el bloque 32 de 2023 para la lista específica de inferencia en marcos. Correspondencias oficiales: A1-70 y A2-III-5 para los cinco IDs. Fuentes técnicas: MIT 6.036 sobre el perceptrón con ejemplos etiquetados; Rosenblatt (1958) como contexto histórico; Durfee, “Coordination of Distributed Problem Solvers” (Springer, 1988) y Wooldridge sobre agentes; Sakoe y Chiba (1978) sobre DTW; Rabiner (1989) sobre HMM en reconocimiento de voz; Minsky (1974) como antecedente de marcos. Se reparó además una inconsistencia de metadatos en las clasificaciones oficiales de los IDs 1091–1095: se restablecieron los identificadores completos del catálogo y quedaron reflejados en los registros de ambos lotes.
 
 inventario.cjs, verificar.cjs y git diff --check ejecutados: 12.123 preguntas, cero errores estructurales, 1.100 registros de revisión y 11.023 preguntas restantes idénticas al original. Siguen pendientes las 42 dudas anteriores y la comprobación global de correcciones de convocatorias.
+
+
+## Lote 157 — 24 de octubre
+
+IDs 1101–1105 revisados individualmente: cuatro corregidas y una vigente. Acumulado: 1.105 examinadas, 1.063 verificadas (277 vigentes, 688 corregidas y 98 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 799 preguntas con cambios de contenido. Quedan 11.018 sin revisar; siguiente ID 1.106.
+
+La expresión «representación paramétrica del conocimiento» se concreta al contraste vigente entre reglas simbólicas explícitas y modelos de aprendizaje que ajustan parámetros con datos; las redes neuronales son la opción pertinente entre las ofrecidas, sin afirmar que sean la única familia paramétrica (1101). Se reformula la pregunta sobre marcos para evaluar la herencia de un slot desde la clase superior cuando el marco hijo no aporta un valor local, en lugar de tratar la herencia como ajena a la inferencia (1102). «Diagramas» se limita a una representación genérica no especificada y se compara con tres formalismos concretos (redes semánticas, marcos y guiones) (1103). Se distingue el árbol de Merkle, estructura criptográfica para hashes y pruebas de integridad, de los algoritmos supervisados SVM, Naive Bayes y árboles de decisión (1104). La pregunta de Bubble Sort se conserva porque la definición original de comparaciones e intercambios adyacentes es correcta (1105). Se conservan íntegros los originales en revision/cambios-lote-157.json.
+
+Cotejo con Drive: bloque 32 de ITIC Academy, edición 2026.1, §§ 1.3, 5, 6.1 y 8.8–8.10; la edición 2023, sección 4, detalla redes semánticas, marcos, guiones y herencia de slots. Correspondencias oficiales: A1-70/A2-III-5 para 1101–1104 y A2-III-5 para ordenación 1105. Fuentes: Goodfellow, Bengio y Courville, Deep Learning, cap. 5; Minsky, “A Framework for Representing Knowledge” (1974); RFC 6962 § 2.1 para árboles de Merkle; guía oficial scikit-learn para SVM, Naive Bayes y árboles de decisión; OpenDSA, Virginia Tech, para Bubble Sort.
+
+inventario.cjs, verificar.cjs y git diff --check ejecutados: 12.123 preguntas, cero errores estructurales, 1.105 registros de revisión y 11.018 preguntas restantes idénticas al original. Siguen pendientes las 42 dudas anteriores y la comprobación global de correcciones de convocatorias.
