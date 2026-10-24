@@ -67057,27 +67057,95 @@
         "Read Uncommitted (lecturas no comprometidas)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La lectura sucia es leer datos escritos por otra transacción que todavía no ha confirmado. En la matriz de fenómenos mínimos del estándar SQL puede ocurrir en READ UNCOMMITTED; los gestores pueden ofrecer garantías más estrictas. Por ejemplo, PostgreSQL equipara internamente READ UNCOMMITTED con READ COMMITTED, por lo que no permite lecturas sucias. Cotejo curricular con ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); temas A1-64/A2-II-5. Cotejo curricular: ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026), modelo relacional y SQL, aislamiento transaccional; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-64/A2-II-5. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026), modelo relacional y SQL, aislamiento transaccional; correspondencia A1-64/A2-II-5.",
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026), modelo relacional y SQL, aislamiento transaccional; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-64/A2-II-5. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "SQL",
+        "transacciones",
+        "aislamiento",
+        "lectura sucia",
+        "Read Uncommitted"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-25",
+        "fuentes": [
+          {
+            "url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+            "referencia": "PostgreSQL 18, Transaction Isolation, tabla 13.1: según el mínimo del estándar SQL, una lectura sucia está permitida en Read Uncommitted y prohibida en los otros tres niveles; PostgreSQL implementa Read Uncommitted como Read Committed."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026), modelo relacional y SQL, aislamiento transaccional; correspondencia A1-64/A2-II-5"
+          }
+        ],
+        "observaciones": "La lectura sucia es leer datos escritos por otra transacción que todavía no ha confirmado. En la matriz de fenómenos mínimos del estándar SQL puede ocurrir en READ UNCOMMITTED; los gestores pueden ofrecer garantías más estrictas. Por ejemplo, PostgreSQL equipara internamente READ UNCOMMITTED con READ COMMITTED, por lo que no permite lecturas sucias. Cotejo curricular con ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); temas A1-64/A2-II-5. Cotejo curricular: ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026), modelo relacional y SQL, aislamiento transaccional; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-64/A2-II-5. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 1482,
       "bloque": 0,
       "tema": 0,
-      "texto": "El entorno Microsoft, WebDAV:",
+      "texto": "¿Qué describe correctamente WebDAV?",
       "opciones": [
-        "Se basa en las llamadas a procedimientos remotos para la replicación entre controladores de dominio.",
-        "Es un protocolo seguro de transferencia de archivos sobre Internet e Intranets.",
-        "Es una interfaz ActiveX que permite la distribución de aplicaciones en un entorno de red.",
-        "Aumenta la seguridad entre los controladores de dominio gracias a la utilización de Kerberos."
+        "Una extensión de HTTP para la autoría web distribuida y la gestión remota de recursos, como propiedades, colecciones y bloqueos.",
+        "Un protocolo de replicación de controladores de dominio basado en llamadas a procedimientos remotos.",
+        "Una interfaz ActiveX para distribuir aplicaciones en una red.",
+        "Un mecanismo que aumenta la seguridad de los controladores de dominio mediante Kerberos."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "El enunciado original atribuía a WebDAV una transferencia segura de ficheros, lo que no define el protocolo. RFC 4918 lo especifica como extensiones de HTTP para autoría web distribuida y gestión remota de recursos (propiedades, colecciones, bloqueos y operaciones como MOVE/COPY). WebDAV no proporciona por sí solo cifrado del transporte: la protección de confidencialidad puede aportarse mediante HTTPS/TLS. Se reformula para preguntar por su función protocolaria. Cotejo curricular con ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), desarrollo web y servicios/protocolos; y bloque 48 Seguridad en redes y en el nivel de aplicación, actualización 2026, A1-125/126 y A2-C10/D12. Correspondencia oficial A1-65/A1-109/A2-II-6/A2-IV-13. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), desarrollo web, HTTP, servicios y protocolos; la definición de WebDAV se sustenta en RFC 4918; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-65/A1-109/A2-II-6/A2-IV-13. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-109"
+        ],
+        "A2": [
+          "A2-II-6",
+          "A2-IV-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), desarrollo web, HTTP, servicios y protocolos; la definición de WebDAV se sustenta en RFC 4918; correspondencia A1-65/A1-109/A2-II-6/A2-IV-13.",
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), desarrollo web, HTTP, servicios y protocolos; la definición de WebDAV se sustenta en RFC 4918; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-65/A1-109/A2-II-6/A2-IV-13. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "WebDAV",
+        "HTTP",
+        "autoría web distribuida",
+        "gestión de recursos",
+        "RFC 4918"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-25",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4918",
+            "referencia": "IETF RFC 4918, HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV), resumen e introducción: extensión de HTTP para autoría web remota, propiedades, colecciones, bloqueo y operaciones de espacio de nombres."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), desarrollo web, HTTP, servicios y protocolos; la definición de WebDAV se sustenta en RFC 4918; correspondencia A1-65/A1-109/A2-II-6/A2-IV-13"
+          }
+        ],
+        "observaciones": "El enunciado original atribuía a WebDAV una transferencia segura de ficheros, lo que no define el protocolo. RFC 4918 lo especifica como extensiones de HTTP para autoría web distribuida y gestión remota de recursos (propiedades, colecciones, bloqueos y operaciones como MOVE/COPY). WebDAV no proporciona por sí solo cifrado del transporte: la protección de confidencialidad puede aportarse mediante HTTPS/TLS. Se reformula para preguntar por su función protocolaria. Cotejo curricular con ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), desarrollo web y servicios/protocolos; y bloque 48 Seguridad en redes y en el nivel de aplicación, actualización 2026, A1-125/126 y A2-C10/D12. Correspondencia oficial A1-65/A1-109/A2-II-6/A2-IV-13. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), desarrollo web, HTTP, servicios y protocolos; la definición de WebDAV se sustenta en RFC 4918; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-65/A1-109/A2-II-6/A2-IV-13. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 1483,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale cuál de estas tecnologías no es compatible con Microsoft .NET:",
+      "texto": "¿Cuál es principalmente un framework multiplataforma para desarrollar aplicaciones e interfaces con C++/QML, en lugar de una librería de acceso a datos o un SDK de .NET?",
       "opciones": [
         "Dapper.",
         "Dapr.",
@@ -67085,7 +67153,54 @@
         "Qt."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La frase original «no es compatible con Microsoft .NET» era demasiado absoluta: un framework puede integrarse mediante bindings o interoperabilidad de terceros. Se sustituye por una comparación de categorías más precisa. Dapper es un mapper .NET, Dapr dispone de SDK .NET y Entity Framework es un ORM .NET; Qt es principalmente un framework multiplataforma de aplicaciones e interfaces basado en C++ y QML, no una librería de acceso a datos/SDK .NET. Eso no niega que existan integraciones de terceros. Cotejo curricular con ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), temas A1-66 y A2-D11; la clasificación oficial de lenguajes/plataformas se corresponde también con A2-II-3. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), entorno Microsoft .NET y tecnologías de desarrollo; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-66/A2-II-3. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), entorno Microsoft .NET y tecnologías de desarrollo; correspondencia A1-66/A2-II-3.",
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), entorno Microsoft .NET y tecnologías de desarrollo; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-66/A2-II-3. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "Microsoft .NET",
+        "Dapper",
+        "Dapr",
+        "Entity Framework",
+        "Qt",
+        "C++",
+        "QML"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-25",
+        "fuentes": [
+          {
+            "url": "https://github.com/DapperLib/Dapper",
+            "referencia": "Repositorio oficial DapperLib: Dapper se describe como un object mapper sencillo para .NET."
+          },
+          {
+            "url": "https://docs.dapr.io/developing-applications/sdks/dotnet/",
+            "referencia": "Dapr Docs, .NET SDK: ofrece paquetes para desarrollar clientes, servidores y actores virtuales .NET."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/ef/",
+            "referencia": "Microsoft Learn, Entity Framework documentation hub: ORM para construir capas de acceso a datos con .NET."
+          },
+          {
+            "url": "https://doc.qt.io/qt-6/",
+            "referencia": "Qt 6 Documentation: framework de desarrollo de aplicaciones e interfaces para escritorio, sistemas embebidos y móviles; documenta módulos C++ y QML/JavaScript."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), entorno Microsoft .NET y tecnologías de desarrollo; correspondencia A1-66/A2-II-3"
+          }
+        ],
+        "observaciones": "La frase original «no es compatible con Microsoft .NET» era demasiado absoluta: un framework puede integrarse mediante bindings o interoperabilidad de terceros. Se sustituye por una comparación de categorías más precisa. Dapper es un mapper .NET, Dapr dispone de SDK .NET y Entity Framework es un ORM .NET; Qt es principalmente un framework multiplataforma de aplicaciones e interfaces basado en C++ y QML, no una librería de acceso a datos/SDK .NET. Eso no niega que existan integraciones de terceros. Cotejo curricular con ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), temas A1-66 y A2-D11; la clasificación oficial de lenguajes/plataformas se corresponde también con A2-II-3. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), entorno Microsoft .NET y tecnologías de desarrollo; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-66/A2-II-3. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 1484,
@@ -67099,21 +67214,105 @@
         "Son aplicaciones Java J2ME para dispositivos móviles"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La opción marcada describe correctamente el uso histórico del término: un MIDlet es una aplicación Java escrita para el perfil MIDP de Java ME, normalmente sobre CLDC en dispositivos con recursos limitados. Se conserva como pregunta histórica porque J2ME/MIDP fue una plataforma de aplicaciones móviles característica de teléfonos y PDA anteriores al predominio de los sistemas actuales; no se presenta como el modelo habitual de desarrollo móvil contemporáneo. Cotejo curricular con ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), Java (A1-67/A2-D10), y bloque 47 Aplicaciones Móviles y Sistemas Operativos, versión 2026.1 (30-09-2026), sistemas móviles (A1-62). Cotejo curricular: ITIC Academy, bloque 47 Aplicaciones Móviles y Sistemas Operativos, versión 2026.1 (30-09-2026), sistemas móviles y sus plataformas; bloque 30, Java/Java ME como contexto de desarrollo histórico; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-62/A1-67/A2-II-2/A2-II-3. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-62",
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 47 Aplicaciones Móviles y Sistemas Operativos, versión 2026.1 (30-09-2026), sistemas móviles y sus plataformas; bloque 30, Java/Java ME como contexto de desarrollo histórico; correspondencia A1-62/A1-67/A2-II-2/A2-II-3.",
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 47 Aplicaciones Móviles y Sistemas Operativos, versión 2026.1 (30-09-2026), sistemas móviles y sus plataformas; bloque 30, Java/Java ME como contexto de desarrollo histórico; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-62/A1-67/A2-II-2/A2-II-3. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "Java ME",
+        "J2ME",
+        "MIDlet",
+        "MIDP",
+        "CLDC",
+        "telefonía móvil",
+        "tecnología histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-25",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javame/mobile.html",
+            "referencia": "Oracle Java ME & Java Card Documentation: MIDP, combinado con CLDC, constituye el entorno Java ME para dispositivos de información móviles; la documentación se mantiene como archivo tecnológico."
+          },
+          {
+            "url": "https://docs.oracle.com/javame/config/cldc/ref-impl/midp1.0/jsr037/javax/microedition/midlet/MIDlet.html",
+            "referencia": "Oracle MIDP API, clase javax.microedition.midlet.MIDlet: un MIDlet es una aplicación del perfil MIDP cuyo ciclo de vida gestiona el software de administración de aplicaciones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 47 Aplicaciones Móviles y Sistemas Operativos, versión 2026.1 (30-09-2026), sistemas móviles y sus plataformas; bloque 30, Java/Java ME como contexto de desarrollo histórico; correspondencia A1-62/A1-67/A2-II-2/A2-II-3"
+          }
+        ],
+        "observaciones": "La opción marcada describe correctamente el uso histórico del término: un MIDlet es una aplicación Java escrita para el perfil MIDP de Java ME, normalmente sobre CLDC en dispositivos con recursos limitados. Se conserva como pregunta histórica porque J2ME/MIDP fue una plataforma de aplicaciones móviles característica de teléfonos y PDA anteriores al predominio de los sistemas actuales; no se presenta como el modelo habitual de desarrollo móvil contemporáneo. Cotejo curricular con ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), Java (A1-67/A2-D10), y bloque 47 Aplicaciones Móviles y Sistemas Operativos, versión 2026.1 (30-09-2026), sistemas móviles (A1-62). Cotejo curricular: ITIC Academy, bloque 47 Aplicaciones Móviles y Sistemas Operativos, versión 2026.1 (30-09-2026), sistemas móviles y sus plataformas; bloque 30, Java/Java ME como contexto de desarrollo histórico; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-62/A1-67/A2-II-2/A2-II-3. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 1485,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación a Java y JavaScript indique la respuesta FALSA:",
+      "texto": "¿Qué especificación define el lenguaje ECMAScript, base del lenguaje JavaScript?",
       "opciones": [
-        "JavaScript es un lenguaje de programación posterior a Java.",
-        "Java JDK 8 no integra un motor de JavaScript.",
-        "JavaScript es un lenguaje interpretado, y Java es compilado.",
-        "JavaScript es estándar, Java no."
+        "Java Language Specification (JLS).",
+        "ECMA-262.",
+        "Java SE API Specification.",
+        "RFC 4918 (WebDAV)."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El original pedía seleccionar una afirmación «falsa», pero acumulaba varias ambigüedades: JDK 8 sí incorporó Nashorn; describir JavaScript como exclusivamente interpretado y Java como exclusivamente compilado ignora la compilación/JIT de los motores modernos; y ambos lenguajes tienen especificaciones. Se reemplaza por una pregunta positiva y única: ECMA-262 especifica ECMAScript, base de JavaScript; la JLS especifica Java. Como contexto histórico, Nashorn estuvo incluido desde JDK 8 y fue eliminado en JDK 15. Cotejo curricular con ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), §2.4 JavaScript/ECMAScript y lenguajes Java; temas A1-65/A1-67/A2-T3. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), §2.4 JavaScript/ECMAScript y lenguajes/plataformas Java; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-65/A1-67/A2-II-3. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), §2.4 JavaScript/ECMAScript y lenguajes/plataformas Java; correspondencia A1-65/A1-67/A2-II-3.",
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), §2.4 JavaScript/ECMAScript y lenguajes/plataformas Java; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-65/A1-67/A2-II-3. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "Java",
+        "JavaScript",
+        "ECMAScript",
+        "ECMA-262",
+        "JLS",
+        "Nashorn"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-25",
+        "fuentes": [
+          {
+            "url": "https://tc39.es/ecma262/",
+            "referencia": "ECMA-262, ECMAScript Language Specification, especificación normativa del lenguaje ECMAScript, base de los lenguajes JavaScript actuales."
+          },
+          {
+            "url": "https://docs.oracle.com/javase/specs/jls/se8/html/index.html",
+            "referencia": "Oracle, Java Language Specification, Java SE 8 Edition: especificación del lenguaje Java para Java SE 8."
+          },
+          {
+            "url": "https://bugs.openjdk.org/browse/JDK-8241749",
+            "referencia": "OpenJDK JDK-8241749, Remove the Nashorn JavaScript Engine: Nashorn se incorporó al JDK a partir del JDK 8 y se eliminó en el JDK 15."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), §2.4 JavaScript/ECMAScript y lenguajes/plataformas Java; correspondencia A1-65/A1-67/A2-II-3"
+          }
+        ],
+        "observaciones": "El original pedía seleccionar una afirmación «falsa», pero acumulaba varias ambigüedades: JDK 8 sí incorporó Nashorn; describir JavaScript como exclusivamente interpretado y Java como exclusivamente compilado ignora la compilación/JIT de los motores modernos; y ambos lenguajes tienen especificaciones. Se reemplaza por una pregunta positiva y única: ECMA-262 especifica ECMAScript, base de JavaScript; la JLS especifica Java. Como contexto histórico, Nashorn estuvo incluido desde JDK 8 y fue eliminado en JDK 15. Cotejo curricular con ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), §2.4 JavaScript/ECMAScript y lenguajes Java; temas A1-65/A1-67/A2-T3. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026), §2.4 JavaScript/ECMAScript y lenguajes/plataformas Java; temas oficiales contrastados en temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): A1-65/A1-67/A2-II-3. La academia se usa como encaje curricular y no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 1486,
