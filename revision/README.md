@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 151 (IDs 1071–1075). Acumulado: 1.075 preguntas revisadas, 1.033 verificadas (276 vigentes, 661 corregidas y 96 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.048 sin revisión de contenido. Hay 770 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 152 (IDs 1076–1080). Acumulado: 1.080 preguntas revisadas, 1.038 verificadas (276 vigentes, 666 corregidas y 96 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.043 sin revisión de contenido. Hay 775 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -41,9 +41,19 @@ Cotejo con Drive: ITIC Academy, bloque 32, versión 2026.1, §§ 1 y 6 (IA simb�
 
 Fuentes: Buchanan y Shortliffe, *Rule-Based Expert Systems* (1984), capítulos 10–11 sobre MYCIN y factores de certeza; Sutton y Barto, *Reinforcement Learning: An Introduction*, 2.ª ed., capítulos 1 y 3; publicaciones de Bernard Widrow (Stanford) sobre ADALINE/MADALINE y Carpenter/Grossberg sobre ART; UC Berkeley CS188 y Poole/Mackworth, § 4.6, sobre hill climbing/mejora local; Hamilton, *Account of the Icosian Calculus* (1858), y Carnegie Mellon sobre ciclos hamiltonianos. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 1.075 registros de revisión y 11.048 preguntas restantes idénticas al commit original.
 
+## Lote 152 — 24 de octubre
+
+IDs 1076–1080 revisados individualmente: cinco corregidas. Acumulado: 1.080 examinadas, 1.038 verificadas (276 vigentes, 666 corregidas y 96 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 775 preguntas con cambios de contenido. Quedan 11.043 sin revisar; siguiente ID 1.081.
+
+Se precisan como mecanismos comunes y no exhaustivos la herencia/recorrido de relaciones en redes semánticas, el razonamiento con slots y procedimientos ligados en marcos y los dos sentidos de encadenamiento en sistemas de reglas (1076). Se sustituye una secuencia universal y dependiente de implementación para consultar slots por la semántica estable de IF-NEEDED: intentar calcular u obtener un filler cuando se solicita y no hay uno disponible (1077). Se conserva greedy best-first como búsqueda heurística y se explica su prioridad por h(n), frente a g(n) en coste uniforme y g(n)+h(n) en A* (1078). Se corrige una pregunta negativa que admitía varias respuestas: Prolog se identifica positivamente como lenguaje de programación lógica; Common Lisp es multiparadigma y CLOS es su sistema de objetos (1079). Se delimita BFS/primero en anchura como método no informado que expande niveles sin estimación heurística de distancia a la meta (1080). Se guardan los cinco originales íntegros en `cambios-lote-152.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 32, versión 2026.1, §§ 5.8–5.9 (BFS, búsqueda heurística y diferencias entre g(n), h(n) y g(n)+h(n)); §§ 6.2–6.6 (Prolog, redes semánticas, sistemas expertos y encadenamientos). La academia no fija el orden operativo general para valores de slot y procedimientos IF-NEEDED; ese detalle se contrastó con el informe original de FRL y las referencias universitarias. Correspondencias: A1-70 y A2-III-5 en todos los ítems.
+
+Fuentes: ITIC Academy, bloque 32, §§ 5.8–5.9 y 6.2–6.6; MIT AI Memo 408, Roberts y Goldstein, *The FRL Primer* (1977); materiales universitarios de University of Perugia sobre representación con marcos; UC Berkeley CS188 y Poole/Mackworth sobre búsqueda informada; SWI-Prolog Reference Manual sobre programación declarativa/lógica; *Common Lisp the Language*, capítulo 28, especificación de CLOS; Carnegie Mellon y Poole/Mackworth sobre BFS y búsqueda no informada. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 1.080 registros de revisión y 11.043 preguntas restantes idénticas al commit original.
+
 ## Pendiente
 
-11.048 preguntas sin revisión de contenido. Siguiente ID: 1076. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.043 preguntas sin revisión de contenido. Siguiente ID: 1081. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
