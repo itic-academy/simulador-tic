@@ -1,8 +1,16 @@
 # Revisión del banco TIC — estado al 25 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 238 (IDs 1506–1510). Acumulado: 1.510 preguntas examinadas, 1.462 verificadas (360 vigentes, 981 corregidas y 121 históricas) y 48 pendientes de resolver (27 de fuente y 21 de ambigüedad); quedan 10.613 sin revisar de contenido. Hay 1.131 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 239 (IDs 1511–1515). Acumulado: 1.515 preguntas examinadas, 1.466 verificadas (360 vigentes, 985 corregidas y 121 históricas) y 49 pendientes de resolver (27 de fuente y 22 de ambigüedad); quedan 10.608 sin revisar de contenido. Hay 1.135 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 239 — 25 de octubre
+
+IDs 1511–1515 revisados individualmente. Se corrigieron 1511 (defecto de regresión ligado a cambios), 1512 (portabilidad como transferencia entre entornos, distinguiendo la definición histórica de la edición ISO vigente), 1514 (interfaz de gestión de configuración de MÉTRICA v3) y 1515 (dimensiones del Modelo EFQM 2025: Dirección, Ejecución y Resultados). La 1513 se conserva sin alteraciones de contenido y queda `pendiente_ambiguedad`: no identifica organización ni marco de operación que permita establecer una lista universal de roles de producción. Los cinco originales quedan en `cambios-lote-239.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 39 «Calidad y Mantenimiento», versión 2026.1 (23-09-2026), en los epígrafes de pruebas de regresión, estándares de calidad, gestión de configuración, despliegue y EFQM; el mapeo oficial para 1511–1515 consta por ID en el registro y la ficha. Correspondencias contrastadas con `temario-oficial.json` y BOE-A-2025-25938/A2 BOE-A-2025-26262. El documento académico se emplea como encaje curricular; no sustituye fuentes primarias.
+
+Fuentes: glosario oficial ISTQB para regresión; ISO/IEC 25010:2011 (definición histórica de portabilidad, hoy retirada) e ISO/IEC 25010:2023 (modelo actual); Ministerio de Administraciones Públicas, MÉTRICA v3, *Gestión de la Configuración*; EFQM, *El Modelo EFQM*. `node revision/lote-239.cjs`, `node revision/academia-lote-239.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas, 1.515 registros, cero errores y 10.608 preguntas restantes idénticas al commit original.
 
 ## Lote 238 — 25 de octubre
 

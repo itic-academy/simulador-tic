@@ -68578,29 +68578,97 @@
       "id": 1511,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuando se habla de las pruebas de regresión en el contexto de la calidad del software, ¿qué tipo de fallo (bug) es un fallo de regresión?",
+      "texto": "En un sistema previamente probado, ¿qué describe mejor un defecto de regresión asociado a una modificación?",
       "opciones": [
-        "EI que parece arreglarse espontáneamente y que posteriormente no es posible determinar el origen del mismo.",
-        "Todos aquellos que son de tipo lógico y que edemas consistan bien en un bucle infinito, bien en una lIamada recursiva infinita.",
-        "Todos aquellos derivados de problemas de concurrencia entre diferentes hilos accediendo a un mismo recurso: condiciones de carrera, deadlocks, etc.",
-        "Aquel que inicialmente no existe o no se manifiesta, pero que aparece al introducir otros cambios en el programa o arreglar otro fallo en el, o tras ocurrir un evento externo dado."
+        "Un defecto que parece corregirse espontáneamente, sin que pueda conocerse su origen.",
+        "Un defecto necesariamente causado por un bucle infinito o una llamada recursiva infinita.",
+        "Un defecto necesariamente causado por una condición de carrera o un interbloqueo.",
+        "Un defecto introducido o descubierto a raíz de un cambio, incluso en una zona que antes funcionaba correctamente."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "En pruebas de regresión, el defecto relevante es una degradación o fallo introducido o dejado al descubierto por un cambio, a menudo en una zona que antes funcionaba. Se sustituye la definición confusa de «fallo que aparece espontáneamente» y se diferencia el defecto del tipo de prueba que lo detecta. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); pruebas de regresión, defectos introducidos o descubiertos tras cambios y aseguramiento de la calidad; temas oficiales A1-96/A1-98/A2-III-7/A2-III-13 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática.",
+      "clasificacion": {
+        "A1": [
+          "A1-96",
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-7",
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); pruebas de regresión, defectos introducidos o descubiertos tras cambios y aseguramiento de la calidad; correspondencia A1-96/A1-98/A2-III-7/A2-III-13.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); pruebas de regresión, defectos introducidos o descubiertos tras cambios y aseguramiento de la calidad; temas oficiales A1-96/A1-98/A2-III-7/A2-III-13 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática."
+      },
+      "etiquetas": [
+        "pruebas de regresión",
+        "defectos de regresión",
+        "calidad del software"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-25",
+        "fuentes": [
+          {
+            "url": "https://glossary.istqb.org/en_US/search?attributes=%5B%22name%22,%22abbreviation%22,%22definition%22,%22synonyms%22,%22reference%22%5D&exact_matches_first=true&keywords_only=true&syllabus_id=23&term=",
+            "referencia": "ISTQB, Certified Tester Glossary: regression/regression testing; una regresión es degradación de calidad por un cambio y las pruebas buscan defectos introducidos o descubiertos en áreas no modificadas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); pruebas de regresión, defectos introducidos o descubiertos tras cambios y aseguramiento de la calidad; correspondencia A1-96/A1-98/A2-III-7/A2-III-13, contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262"
+          }
+        ],
+        "observaciones": "En pruebas de regresión, el defecto relevante es una degradación o fallo introducido o dejado al descubierto por un cambio, a menudo en una zona que antes funcionaba. Se sustituye la definición confusa de «fallo que aparece espontáneamente» y se diferencia el defecto del tipo de prueba que lo detecta. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); pruebas de regresión, defectos introducidos o descubiertos tras cambios y aseguramiento de la calidad; temas oficiales A1-96/A1-98/A2-III-7/A2-III-13 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática."
+      }
     },
     {
       "id": 1512,
       "bloque": 0,
       "tema": 0,
-      "texto": "Al esfuerzo requerido para transferir un programa desde una cierta configuración hardware o entorno operativo a otro se llama:",
+      "texto": "¿Qué concepto describe el grado de eficacia y eficiencia con que un sistema puede transferirse de un entorno hardware, software u operativo a otro?",
       "opciones": [
-        "Portabilidad",
-        "Reusabilidad",
-        "Interoperatividad",
-        "Mantenibilidad"
+        "Portabilidad.",
+        "Reusabilidad.",
+        "Interoperabilidad.",
+        "Mantenibilidad."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La portabilidad es la capacidad de trasladar un sistema eficaz y eficientemente entre entornos. Se precisa la definición clásica y se evita atribuirla como característica independiente al modelo ISO/IEC 25010:2023: la edición de 2011 que la enumeraba está retirada y la edición vigente reorganiza el modelo. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); modelos y evaluación de calidad del software; portabilidad y evolución del modelo ISO/IEC 25010; temas oficiales A1-98/A2-III-13 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); modelos y evaluación de calidad del software; portabilidad y evolución del modelo ISO/IEC 25010; correspondencia A1-98/A2-III-13.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); modelos y evaluación de calidad del software; portabilidad y evolución del modelo ISO/IEC 25010; temas oficiales A1-98/A2-III-13 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática."
+      },
+      "etiquetas": [
+        "portabilidad",
+        "calidad del software",
+        "transferencia entre entornos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-25",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/obp/ui/?_escaped_fragment_=iso%3Astd%3Aiso-iec%3A25010%3Aed-1%3Av1%3Aen",
+            "referencia": "ISO/IEC 25010:2011, apartado 4.2.8: portability era el grado de eficacia y eficiencia con que un sistema podía transferirse entre entornos; la edición 2011 está retirada."
+          },
+          {
+            "url": "https://www.iso.org/standard/78176.html",
+            "referencia": "ISO/IEC 25010:2023, edición publicada vigente que reemplaza a la edición de 2011 y define el modelo actual de calidad de producto; no se presenta aquí la portabilidad como característica independiente vigente."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); modelos y evaluación de calidad del software; portabilidad y evolución del modelo ISO/IEC 25010; correspondencia A1-98/A2-III-13, contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262"
+          }
+        ],
+        "observaciones": "La portabilidad es la capacidad de trasladar un sistema eficaz y eficientemente entre entornos. Se precisa la definición clásica y se evita atribuirla como característica independiente al modelo ISO/IEC 25010:2023: la edición de 2011 que la enumeraba está retirada y la edición vigente reorganiza el modelo. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); modelos y evaluación de calidad del software; portabilidad y evolución del modelo ISO/IEC 25010; temas oficiales A1-98/A2-III-13 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática."
+      }
     },
     {
       "id": 1513,
@@ -68614,35 +68682,127 @@
         "Jefes de proyecto, analistas y desarrolladores"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Pendiente: la pregunta no identifica una organización, modelo operativo ni marco (por ejemplo, ITIL, DevOps o una estructura de soporte). Las funciones y responsabilidades de producción varían; la lista de opciones no puede afirmarse como universal ni verificarse sin ese contexto. Se conserva intacto el enunciado, las opciones y la clave original. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); despliegue, entornos de producción, responsabilidades operativas y DevOps; la correspondencia curricular no resuelve la falta de un modelo organizativo en el enunciado; temas oficiales A1-97/A2-III-6 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática.",
+      "clasificacion": {
+        "A1": [
+          "A1-97"
+        ],
+        "A2": [
+          "A2-III-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); despliegue, entornos de producción, responsabilidades operativas y DevOps; la correspondencia curricular no resuelve la falta de un modelo organizativo en el enunciado; correspondencia A1-97/A2-III-6.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); despliegue, entornos de producción, responsabilidades operativas y DevOps; la correspondencia curricular no resuelve la falta de un modelo organizativo en el enunciado; temas oficiales A1-97/A2-III-6 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática."
+      },
+      "etiquetas": [
+        "entorno de producción",
+        "roles",
+        "operación",
+        "despliegue"
+      ],
+      "revision": {
+        "estado": "pendiente_ambiguedad",
+        "fecha": "2026-10-25",
+        "fuentes": [
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); despliegue, entornos de producción, responsabilidades operativas y DevOps; la correspondencia curricular no resuelve la falta de un modelo organizativo en el enunciado; correspondencia A1-97/A2-III-6, contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262"
+          }
+        ],
+        "observaciones": "Pendiente: la pregunta no identifica una organización, modelo operativo ni marco (por ejemplo, ITIL, DevOps o una estructura de soporte). Las funciones y responsabilidades de producción varían; la lista de opciones no puede afirmarse como universal ni verificarse sin ese contexto. Se conserva intacto el enunciado, las opciones y la clave original. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); despliegue, entornos de producción, responsabilidades operativas y DevOps; la correspondencia curricular no resuelve la falta de un modelo organizativo en el enunciado; temas oficiales A1-97/A2-III-6 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática."
+      }
     },
     {
       "id": 1514,
       "bloque": 0,
       "tema": 0,
-      "texto": "La gestión de configuración según Metrica v3:",
+      "texto": "Según MÉTRICA v3, ¿cómo se integra la interfaz de gestión de configuración?",
       "opciones": [
-        "es un proceso dentro del Desarrollo de Sistemas de Información (DSI)",
-        "es una ténica dentro del Desarrollo de Sistemas de Información (DSI)",
-        "es una interface que se realiza previa al Desarrollo de Sistemas de Información (DSI)",
-        "es una interface que se realiza durante el Desarrollo de Sistemas de Información (DSI)"
+        "Como interfaz de apoyo a lo largo de los procesos de desarrollo y que continúa durante el mantenimiento.",
+        "Como un proceso interno exclusivo de DSI.",
+        "Como una técnica que solo se aplica antes de iniciar DSI.",
+        "Como una actividad previa al desarrollo, sin actuación durante ASI, DSI, CSI o IAS."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "MÉTRICA v3 define la gestión de configuración como una interfaz de apoyo que opera a lo largo de los procesos de desarrollo (ASI, DSI, CSI e IAS) y continúa en mantenimiento; no es un proceso interno exclusivo de DSI ni una actividad previa aislada. Se corrigen la errata «interface» y el alcance limitado del original. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); interfaz de gestión de configuración, control de cambios, entornos y despliegue; temas oficiales A1-95/A1-102/A2-III-2/A2-III-6 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática.",
+      "clasificacion": {
+        "A1": [
+          "A1-95",
+          "A1-102"
+        ],
+        "A2": [
+          "A2-III-2",
+          "A2-III-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); interfaz de gestión de configuración, control de cambios, entornos y despliegue; correspondencia A1-95/A1-102/A2-III-2/A2-III-6.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); interfaz de gestión de configuración, control de cambios, entornos y despliegue; temas oficiales A1-95/A1-102/A2-III-2/A2-III-6 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática."
+      },
+      "etiquetas": [
+        "MÉTRICA v3",
+        "gestión de configuración",
+        "interfaces de gestión",
+        "control de cambios"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-25",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A1f321d6d-fb6a-46ed-a369-617c0080c51d/METRICA_V3_Gestion_de_Configuracion.pdf",
+            "referencia": "Ministerio de Administraciones Públicas, MÉTRICA v3, Gestión de la Configuración: interfaz relacionada con ASI, DSI, CSI e IAS, con actividades repetidas en los procesos de desarrollo y continuidad en mantenimiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); interfaz de gestión de configuración, control de cambios, entornos y despliegue; correspondencia A1-95/A1-102/A2-III-2/A2-III-6, contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262"
+          }
+        ],
+        "observaciones": "MÉTRICA v3 define la gestión de configuración como una interfaz de apoyo que opera a lo largo de los procesos de desarrollo (ASI, DSI, CSI e IAS) y continúa en mantenimiento; no es un proceso interno exclusivo de DSI ni una actividad previa aislada. Se corrigen la errata «interface» y el alcance limitado del original. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); interfaz de gestión de configuración, control de cambios, entornos y despliegue; temas oficiales A1-95/A1-102/A2-III-2/A2-III-6 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática."
+      }
     },
     {
       "id": 1515,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el modelo EFQM (European Foundation Quality Management) se identifican una serie de elementos que son la base para la Gestión de Calidad Total dentro de las organizaciones y que se agrupan en dos grandes bloques:",
+      "texto": "En el Modelo EFQM 2025, ¿cuáles son sus tres dimensiones principales?",
       "opciones": [
-        "Agentes y Acciones",
-        "Agentes y Niveles de Satisfacción",
-        "Agentes y Resultados",
-        "Resultados y Acciones"
+        "Agentes, acciones y satisfacción.",
+        "Agentes y resultados.",
+        "Dirección, ejecución y resultados.",
+        "Resultados y acciones."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El enunciado original no indica edición y describe la estructura histórica de agentes y resultados. Se actualiza expresamente a EFQM 2025: sus tres dimensiones son Dirección, Ejecución y Resultados. La formulación antigua solo sería válida al especificar una edición previa del modelo. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); EFQM 2025, calidad de los servicios de información y excelencia en instituciones públicas; temas oficiales A1-23/A1-103 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática.",
+      "clasificacion": {
+        "A1": [
+          "A1-23"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); EFQM 2025, calidad de los servicios de información y excelencia en instituciones públicas; correspondencia A1-23/A1-103.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); EFQM 2025, calidad de los servicios de información y excelencia en instituciones públicas; temas oficiales A1-23/A1-103 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática."
+      },
+      "etiquetas": [
+        "EFQM",
+        "calidad total",
+        "excelencia organizativa",
+        "modelo EFQM 2025"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-25",
+        "fuentes": [
+          {
+            "url": "https://efqm.org/es/el-modelo-efqm/",
+            "referencia": "EFQM, El Modelo EFQM: su estructura responde a Por qué/Dirección, Cómo/Ejecución y Qué/Resultados."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); EFQM 2025, calidad de los servicios de información y excelencia en instituciones públicas; correspondencia A1-23/A1-103, contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262"
+          }
+        ],
+        "observaciones": "El enunciado original no indica edición y describe la estructura histórica de agentes y resultados. Se actualiza expresamente a EFQM 2025: sus tres dimensiones son Dirección, Ejecución y Resultados. La formulación antigua solo sería válida al especificar una edición previa del modelo. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026); EFQM 2025, calidad de los servicios de información y excelencia en instituciones públicas; temas oficiales A1-23/A1-103 (revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262). El documento se usa para encaje curricular; no sustituye a las fuentes técnicas primarias citadas en las fichas. La cuestión 1513 sigue pendiente de contexto pese a su clasificación temática."
+      }
     },
     {
       "id": 1516,
