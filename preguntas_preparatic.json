@@ -55215,15 +55215,51 @@
       "id": 1246,
       "bloque": 0,
       "tema": 0,
-      "texto": "Para eliminar una tabla de una base de datos relacional, se utiliza la sentencia DDL:",
+      "texto": "¿Qué sentencia SQL elimina la definición de una tabla del esquema, además de dejar inaccesibles sus datos?",
       "opciones": [
-        "Delete table.",
-        "rm table.",
-        "Delete table now.",
-        "DROP TABLE."
+        "DELETE FROM nombre_tabla;",
+        "TRUNCATE TABLE nombre_tabla;",
+        "DROP TABLE nombre_tabla;",
+        "REMOVE TABLE nombre_tabla;"
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "Se distingue eliminar una tabla del esquema de borrar solo sus filas. `DROP TABLE` elimina el objeto tabla y sus datos; `DELETE FROM` elimina filas y `TRUNCATE TABLE` vacía la tabla, pero no elimina su definición. La respuesta es la sentencia DDL `DROP TABLE` (con el nombre del objeto en una ejecución real). Cotejo temático con ITIC Academy: 29 · Bases de datos/SQL, versión 2026.1, SQL y sentencias DDL/DML. Correspondencia orientativa con el programa oficial: A1-64/A2-II-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "29 · Bases de datos/SQL, versión 2026.1, SQL y sentencias DDL/DML.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: 29 · Bases de datos/SQL, versión 2026.1, SQL y sentencias DDL/DML. Correspondencia orientativa: A1-64/A2-II-5."
+      },
+      "etiquetas": [
+        "SQL",
+        "DDL",
+        "DROP TABLE",
+        "eliminación de objetos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DROP-TABLE.html",
+            "referencia": "Oracle Database SQL Language Reference 26, DROP TABLE: elimina el objeto tabla y sus datos; CREATE, ALTER y DROP son sentencias DDL."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Types-of-SQL-Statements.html",
+            "referencia": "Oracle Database SQL Language Reference 26, Types of SQL Statements: DDL crea, altera y elimina objetos de esquema."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, 29 · Bases de datos/SQL, versión 2026.1, SQL y sentencias DDL/DML. Correspondencia temática con A1-64/A2-II-5."
+          }
+        ],
+        "observaciones": "Se distingue eliminar una tabla del esquema de borrar solo sus filas. `DROP TABLE` elimina el objeto tabla y sus datos; `DELETE FROM` elimina filas y `TRUNCATE TABLE` vacía la tabla, pero no elimina su definición. La respuesta es la sentencia DDL `DROP TABLE` (con el nombre del objeto en una ejecución real). Cotejo temático con ITIC Academy: 29 · Bases de datos/SQL, versión 2026.1, SQL y sentencias DDL/DML. Correspondencia orientativa con el programa oficial: A1-64/A2-II-5."
+      }
     },
     {
       "id": 1247,
@@ -55237,49 +55273,196 @@
         "No tiene una Implementación propia para el parser y obligatoriamente debe utilizar el parser del modelo DOM."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La afirmación original se mantiene: JAXP proporciona APIs para procesar XML mediante DOM y SAX. La documentación actual de Java SE incluye además StAX y APIs de validación, transformación y XPath; no se afirma que DOM y SAX sean las únicas alternativas. Las fábricas JAXP permiten elegir o configurar implementaciones, por lo que tampoco es correcto afirmar que el JDK carezca de implementación propia o exija una única externa. Cotejo temático con ITIC Academy: 30 · Tecnologías de sistemas de información, versión 2026.1, Java/JAXP y XML; § 2 y materia de XML en desarrollo web. Correspondencia orientativa con el programa oficial: A1-65/A1-67/A1-77; A2-II-9/III-10.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-67",
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9",
+          "A2-III-10"
+        ],
+        "bloque_academia": "30 · Tecnologías de sistemas de información, versión 2026.1, Java/JAXP y XML; § 2 y materia de XML en desarrollo web.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: 30 · Tecnologías de sistemas de información, versión 2026.1, Java/JAXP y XML; § 2 y materia de XML en desarrollo web. Correspondencia orientativa: A1-65/A1-67/A1-77; A2-II-9/III-10."
+      },
+      "etiquetas": [
+        "Java",
+        "JAXP",
+        "XML",
+        "DOM",
+        "SAX",
+        "StAX"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.xml/module-summary.html",
+            "referencia": "Oracle Java SE 25 API, módulo java.xml: JAXP incluye APIs de parsing DOM, SAX y StAX, además de validación, transformación y consulta."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, 30 · Tecnologías de sistemas de información, versión 2026.1, Java/JAXP y XML; § 2 y materia de XML en desarrollo web. Correspondencia temática con A1-65/A1-67/A1-77; A2-II-9/III-10."
+          }
+        ],
+        "observaciones": "La afirmación original se mantiene: JAXP proporciona APIs para procesar XML mediante DOM y SAX. La documentación actual de Java SE incluye además StAX y APIs de validación, transformación y XPath; no se afirma que DOM y SAX sean las únicas alternativas. Las fábricas JAXP permiten elegir o configurar implementaciones, por lo que tampoco es correcto afirmar que el JDK carezca de implementación propia o exija una única externa. Cotejo temático con ITIC Academy: 30 · Tecnologías de sistemas de información, versión 2026.1, Java/JAXP y XML; § 2 y materia de XML en desarrollo web. Correspondencia orientativa con el programa oficial: A1-65/A1-67/A1-77; A2-II-9/III-10."
+      }
     },
     {
       "id": 1248,
       "bloque": 0,
       "tema": 0,
-      "texto": "En lo que se refiere a las Firmas Digitales, ¿cuál de las siguientes afirmaciones es falsa?",
+      "texto": "En un esquema de firma digital que emplea una clave privada para firmar y la clave pública correspondiente para verificar, ¿cuál de estas afirmaciones es falsa?",
       "opciones": [
-        "Si una firma digital es válida para un documento es válida para otro distinto.",
-        "Sólo puede ser generada por su legítimo titular.",
-        "Es públicamente verificable.",
-        "La forma más extendida de calcular firmas digitales consiste en emplear una combinación de cifrado asimétrico y funciones resumen."
+        "La verificación de una firma válida es independiente del contenido del documento, por lo que puede reutilizarse sin cambios para validar otro documento distinto.",
+        "La firma se calcula sobre los datos que se desean firmar.",
+        "La clave pública correspondiente permite comprobar la firma.",
+        "Una modificación del contenido firmado debe detectarse al verificar una firma correctamente implementada."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La pregunta negativa original mezclaba una afirmación criptográfica con otra sobre quién puede ser el titular legítimo, que no se deduce de la validez matemática de la firma (por ejemplo, una clave privada puede estar comprometida). Se concreta la falsedad: la verificación de una firma no es independiente del contenido firmado; cambiar el documento debe hacer fallar la comprobación, con un esquema y parámetros seguros. Se explicitan por separado las propiedades de integridad y autenticación, y el uso de claves privada/pública. Cotejo temático con ITIC Academy: 36 · Seguridad, criptografía, identificación y firma, versión 2026.1, temas 79–81. Correspondencia orientativa con el programa oficial: A1-80/A1-81; A2-I-6/IV-12.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "36 · Seguridad, criptografía, identificación y firma, versión 2026.1, temas 79–81.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: 36 · Seguridad, criptografía, identificación y firma, versión 2026.1, temas 79–81. Correspondencia orientativa: A1-80/A1-81; A2-I-6/IV-12."
+      },
+      "etiquetas": [
+        "firma digital",
+        "integridad",
+        "autenticación de origen",
+        "clave privada",
+        "clave pública",
+        "función hash"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/digital_signature",
+            "referencia": "NIST CSRC, Digital Signature: la firma se calcula sobre datos/mensajes; el uso correcto aporta integridad y autenticación de origen. La operación asimétrica usa clave privada para firmar y la pública correspondiente para verificar."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Rix8RBBUSoXJBOAt8iWyU9j5tPiqlXzk/view?usp=drivesdk",
+            "referencia": "ITIC Academy, 36 · Seguridad, criptografía, identificación y firma, versión 2026.1, temas 79–81. Correspondencia temática con A1-80/A1-81; A2-I-6/IV-12."
+          }
+        ],
+        "observaciones": "La pregunta negativa original mezclaba una afirmación criptográfica con otra sobre quién puede ser el titular legítimo, que no se deduce de la validez matemática de la firma (por ejemplo, una clave privada puede estar comprometida). Se concreta la falsedad: la verificación de una firma no es independiente del contenido firmado; cambiar el documento debe hacer fallar la comprobación, con un esquema y parámetros seguros. Se explicitan por separado las propiedades de integridad y autenticación, y el uso de claves privada/pública. Cotejo temático con ITIC Academy: 36 · Seguridad, criptografía, identificación y firma, versión 2026.1, temas 79–81. Correspondencia orientativa con el programa oficial: A1-80/A1-81; A2-I-6/IV-12."
+      }
     },
     {
       "id": 1249,
       "bloque": 0,
       "tema": 0,
-      "texto": "Sean dos transacciones A y B: 1º)A accede al registro 1. 2º)B accede al registro 2. 3º)A pide el registro 2, pero debe esperar que B lo libere. 4º)B pide el registro 1, pero debe esperar que A lo libere. Entonces:",
+      "texto": "Dos transacciones mantienen bloqueos incompatibles: A conserva el bloqueo del registro 1 y espera el 2; B conserva el 2 y espera el 1. ¿Qué condición describe esta espera circular?",
       "opciones": [
-        "Se produjo algún fallo en el diseño lógico de datos, pues esto no debe suceder",
-        "Estamos ante un caso de diseño defectuoso de los procesos A y B",
-        "Se ha producido una situación de 'deadlock'",
-        "El transaccional desbloqueará los registros bloqueados y permitirá que las transacciones continúen sin más problemas"
+        "Una anomalía de serialización que obliga a modificar el esquema.",
+        "Una condición de carrera que se resuelve por el orden de llegada.",
+        "Un interbloqueo o deadlock entre las transacciones.",
+        "Una espera normal que siempre permite que ambas transacciones finalicen sin intervención del gestor."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La secuencia describe un ciclo de espera: A conserva el bloqueo de 1 y espera 2, mientras B conserva el de 2 y espera 1. Eso es un deadlock, no necesariamente un defecto del esquema o de una transacción aislada. Los SGBD suelen detectarlo y abortar/revertir una víctima para liberar recursos; la pregunta se limita a identificar la condición, sin sugerir que ambas transacciones continúen intactas. Cotejo temático con ITIC Academy: 29 · Bases de datos/SQL, versión 2026.1, §§ 7.5–7.7 (bloqueos, concurrencia y deadlocks). Correspondencia orientativa con el programa oficial: A1-64; A2-III-4.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": "29 · Bases de datos/SQL, versión 2026.1, §§ 7.5–7.7 (bloqueos, concurrencia y deadlocks).",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: 29 · Bases de datos/SQL, versión 2026.1, §§ 7.5–7.7 (bloqueos, concurrencia y deadlocks). Correspondencia orientativa: A1-64; A2-III-4."
+      },
+      "etiquetas": [
+        "base de datos",
+        "transacciones",
+        "bloqueos",
+        "espera circular",
+        "deadlock",
+        "concurrencia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.postgresql.org/docs/17/explicit-locking.html#LOCKING-DEADLOCKS",
+            "referencia": "PostgreSQL Documentation 17, Explicit Locking § 13.3.4: hay deadlock cuando transacciones esperan circularmente locks retenidos por otras; el SGBD detecta y aborta una transacción."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-deadlocks-guide?view=sql-server-ver17",
+            "referencia": "Microsoft Learn, SQL Server Deadlocks Guide: el ciclo de dependencias define el deadlock; el motor elige una víctima, revierte su transacción y permite continuar a las restantes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, 29 · Bases de datos/SQL, versión 2026.1, §§ 7.5–7.7 (bloqueos, concurrencia y deadlocks). Correspondencia temática con A1-64; A2-III-4."
+          }
+        ],
+        "observaciones": "La secuencia describe un ciclo de espera: A conserva el bloqueo de 1 y espera 2, mientras B conserva el de 2 y espera 1. Eso es un deadlock, no necesariamente un defecto del esquema o de una transacción aislada. Los SGBD suelen detectarlo y abortar/revertir una víctima para liberar recursos; la pregunta se limita a identificar la condición, sin sugerir que ambas transacciones continúen intactas. Cotejo temático con ITIC Academy: 29 · Bases de datos/SQL, versión 2026.1, §§ 7.5–7.7 (bloqueos, concurrencia y deadlocks). Correspondencia orientativa con el programa oficial: A1-64; A2-III-4."
+      }
     },
     {
       "id": 1250,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a AJAX es falso que:",
+      "texto": "¿Qué afirmación describe correctamente la técnica Ajax en una aplicación web?",
       "opciones": [
-        "Reduce el volumen de información a intercambiar entre el cliente y el servidor frente al empleo del refresco de página completa.",
-        "No se puede emplear para desarrollar aplicaciones RIA.",
-        "Existen múltiples librerías para simplificar el desarrollo con AJAX.",
-        "Son las siglas de Asynchronous JavaScript And XML."
+        "Permite solicitar datos de forma asíncrona y actualizar parte de la página sin recargar el documento completo.",
+        "Impide desarrollar aplicaciones de una sola página o RIA.",
+        "Obliga a que todas las respuestas del servidor estén en formato XML.",
+        "Exige recargar por completo la página tras cada petición."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "El enunciado negativo original podía admitir más de una lectura: las peticiones parciales suelen reducir los bytes transferidos, pero no lo garantizan en todos los casos, y Ajax ya no implica que la respuesta sea XML. Se formula en positivo: Ajax permite solicitar datos de forma asíncrona y actualizar partes de la interfaz sin recargar toda la página; sirve para construir aplicaciones de una sola página/RIA y puede intercambiar JSON. La expansión histórica del acrónimo no restringe el formato actual. Cotejo temático con ITIC Academy: 30 · Tecnologías de sistemas de información, versión 2026.1, §§ 2.2–2.5 (DOM, JavaScript y cliente web); apartado de preguntas históricas sobre Ajax. Correspondencia orientativa con el programa oficial: A1-65/A1-77; A2-II-9/III-12.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9",
+          "A2-III-12"
+        ],
+        "bloque_academia": "30 · Tecnologías de sistemas de información, versión 2026.1, §§ 2.2–2.5 (DOM, JavaScript y cliente web); apartado de preguntas históricas sobre Ajax.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: 30 · Tecnologías de sistemas de información, versión 2026.1, §§ 2.2–2.5 (DOM, JavaScript y cliente web); apartado de preguntas históricas sobre Ajax. Correspondencia orientativa: A1-65/A1-77; A2-II-9/III-12."
+      },
+      "etiquetas": [
+        "AJAX",
+        "JavaScript",
+        "peticiones asíncronas",
+        "actualización parcial",
+        "RIA",
+        "JSON"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://developer.mozilla.org/en-US/docs/Glossary/AJAX",
+            "referencia": "MDN Web Docs, Ajax: técnica de peticiones HTTP asíncronas y actualización parcial sin recarga completa; puede usarse para aplicaciones de una sola página/RIA y hoy suele intercambiar JSON en vez de XML."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, 30 · Tecnologías de sistemas de información, versión 2026.1, §§ 2.2–2.5 (DOM, JavaScript y cliente web); apartado de preguntas históricas sobre Ajax. Correspondencia temática con A1-65/A1-77; A2-II-9/III-12."
+          }
+        ],
+        "observaciones": "El enunciado negativo original podía admitir más de una lectura: las peticiones parciales suelen reducir los bytes transferidos, pero no lo garantizan en todos los casos, y Ajax ya no implica que la respuesta sea XML. Se formula en positivo: Ajax permite solicitar datos de forma asíncrona y actualizar partes de la interfaz sin recargar toda la página; sirve para construir aplicaciones de una sola página/RIA y puede intercambiar JSON. La expansión histórica del acrónimo no restringe el formato actual. Cotejo temático con ITIC Academy: 30 · Tecnologías de sistemas de información, versión 2026.1, §§ 2.2–2.5 (DOM, JavaScript y cliente web); apartado de preguntas históricas sobre Ajax. Correspondencia orientativa con el programa oficial: A1-65/A1-77; A2-II-9/III-12."
+      }
     },
     {
       "id": 1251,
