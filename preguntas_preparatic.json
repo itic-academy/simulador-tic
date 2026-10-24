@@ -58902,43 +58902,164 @@
       "id": 1316,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes aseveraciones es FALSA en relación con los sistemas de discos múltiples RAID (Redundant Array of Independent Disks)?",
+      "texto": "¿Cuál afirmación sobre los niveles RAID descritos es FALSA?",
       "opciones": [
-        "Un RAID 1 crea una copia exacta (o espejo) de un conjunto de datos en dos o más discos.",
-        "Un RAID 1 resulta útil cuando el rendimiento en lectura es más importante que la capacidad.",
-        "Un RAID 2 divide los datos a nivel de bits en lugar de a nivel de bloques y usa un código de Hamming para la corrección de errores.",
-        "Un RAID 0 (también llamado conjunto dividido o volumen dividido) distribuye los datos equitativamente entre dos o más discos con información de paridad para proporcionar redundancia."
+        "RAID 1 mantiene copias espejo de los datos en dos o más discos.",
+        "RAID 1 puede favorecer las lecturas en ciertas implementaciones, aunque reduce la capacidad útil por la duplicación.",
+        "RAID 2, nivel histórico, divide los datos a nivel de bit y emplea códigos de corrección como Hamming.",
+        "RAID 0 distribuye datos entre dos o más discos y almacena paridad para proporcionar redundancia."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se conserva como falsa la opción sobre RAID 0: este nivel distribuye bloques (striping), pero no almacena paridad ni ofrece redundancia o tolerancia a fallos. RAID 1 mantiene espejos y puede mejorar lecturas en configuraciones que las distribuyen entre copias, a costa de capacidad; el beneficio de rendimiento depende de la implementación. RAID 2 es un nivel histórico que usa striping a nivel de bit y códigos de corrección. Se afinan las opciones para evitar presentar el rendimiento de RAID 1 como garantía universal. Cotejo con ITIC Academy, bloque 26, §8.1. Cotejo temático con ITIC Academy: Bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1, §8.1 (RAID: rendimiento y tolerancia a fallos), pp. 20–21. Correspondencia orientativa con el temario oficial: A1-56/A2-IV-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "Bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1, §8.1 (RAID: rendimiento y tolerancia a fallos), pp. 20–21.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: Bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1, §8.1 (RAID: rendimiento y tolerancia a fallos), pp. 20–21. Correspondencia orientativa con el temario oficial: A1-56/A2-IV-5."
+      },
+      "etiquetas": [
+        "RAID",
+        "RAID 0",
+        "RAID 1",
+        "RAID 2",
+        "Hamming",
+        "paridad",
+        "redundancia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://cloud.ibm.com/docs/bare-metal?locale=en&topic=bare-metal-bm-raid-levels",
+            "referencia": "IBM Cloud Docs, About RAID: RAID 0 is striping without parity or fault tolerance; RAID 1 mirrors data, can improve reads and trades usable capacity for redundancy."
+          },
+          {
+            "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg246399.pdf",
+            "referencia": "IBM Redbooks, SG24-6399, Storage Concepts: RAID 0 has no fault tolerance; RAID 1 is mirroring; RAID 2 uses bit-level striping and error-correcting codes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1, §8.1 (RAID: rendimiento y tolerancia a fallos), pp. 20–21. Correspondencia: A1-56/A2-IV-5."
+          }
+        ],
+        "observaciones": "Se conserva como falsa la opción sobre RAID 0: este nivel distribuye bloques (striping), pero no almacena paridad ni ofrece redundancia o tolerancia a fallos. RAID 1 mantiene espejos y puede mejorar lecturas en configuraciones que las distribuyen entre copias, a costa de capacidad; el beneficio de rendimiento depende de la implementación. RAID 2 es un nivel histórico que usa striping a nivel de bit y códigos de corrección. Se afinan las opciones para evitar presentar el rendimiento de RAID 1 como garantía universal. Cotejo con ITIC Academy, bloque 26, §8.1. Cotejo temático con ITIC Academy: Bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1, §8.1 (RAID: rendimiento y tolerancia a fallos), pp. 20–21. Correspondencia orientativa con el temario oficial: A1-56/A2-IV-5."
+      }
     },
     {
       "id": 1317,
       "bloque": 0,
       "tema": 0,
-      "texto": "Seleccionequé tecnología no es usada en técnicas PET",
+      "texto": "¿Cuál de estas opciones no es, por sí sola, una tecnología o técnica de mejora de la privacidad (PET)?",
       "opciones": [
-        "Entornos de ejecución de confianza.",
-        "Identificación Workflow idóneo.",
-        "Anonimización.",
-        "Cifrado homomórfico."
+        "Un entorno de ejecución de confianza (TEE) para procesar datos en un enclave protegido.",
+        "La anonimización de datos personales mediante técnicas que reduzcan la posibilidad de identificación.",
+        "El cifrado homomórfico, que permite ciertas operaciones sobre datos cifrados.",
+        "El balanceo de carga HTTP genérico, sin una función específica de protección de la privacidad."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 3,
+      "comentarios": "La respuesta “Identificación Workflow idóneo” del original está corrupta y no permite valorar el concepto. Se reemplaza por una opción inequívoca: el balanceo HTTP genérico, por sí solo, no es una PET. NIST incluye enclaves/TEE y cifrado homomórfico entre las tecnologías de privacidad; el EDPB trata la anonimización como técnica pertinente para la protección de datos. PET no es una lista cerrada y una técnica concreta solo mejora privacidad si se diseña para ese fin y se evalúa en contexto. Cotejo con ITIC Academy, bloque 32, que menciona anonimización como aplicación de IA/datos; el material no desarrolla la taxonomía PET, por lo que la clasificación técnica se contrasta con NIST y EDPB. Cotejo temático con ITIC Academy: Bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1, §19 (ética, seguridad y regulación): menciona anonimización en el contexto de IA/datos, pero no desarrolla taxonomía técnica de PET. Correspondencia orientativa con el temario oficial: A1-75/A1-82/A2-I-7.",
+      "clasificacion": {
+        "A1": [
+          "A1-75",
+          "A1-82"
+        ],
+        "A2": [
+          "A2-I-7"
+        ],
+        "bloque_academia": "Bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1, §19 (ética, seguridad y regulación): menciona anonimización en el contexto de IA/datos, pero no desarrolla taxonomía técnica de PET.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: Bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1, §19 (ética, seguridad y regulación): menciona anonimización en el contexto de IA/datos, pero no desarrolla taxonomía técnica de PET. Correspondencia orientativa con el temario oficial: A1-75/A1-82/A2-I-7."
+      },
+      "etiquetas": [
+        "PET",
+        "tecnologías de mejora de privacidad",
+        "TEE",
+        "cifrado homomórfico",
+        "anonimización",
+        "balanceo de carga"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-226.pdf",
+            "referencia": "NIST SP 800-226 (2025), Guidelines for Evaluating Differential Privacy Guarantees: identifies secure hardware enclaves/TEEs and homomorphic encryption among privacy-enhancing technologies; notes their limits."
+          },
+          {
+            "url": "https://www.edpb.europa.eu/system/files/2025-06/spe-training-on-ai-and-data-protection-legal_en.pdf",
+            "referencia": "European Data Protection Board, training material “Privacy-Enhancing Technologies”: describes anonymisation and differential privacy among techniques that reduce data-protection risks."
+          },
+          {
+            "url": "https://www.edpb.europa.eu/topics/ai-and-technology/anonymisation-pseudonymisation_en",
+            "referencia": "EDPB, Anonymisation / pseudonymisation: explains the distinct legal and technical concepts; the adopted Guidelines 02/2026 on Anonymisation were under public consultation at the date checked."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1, §6 (IA simbólica y sistemas expertos); incluye anonimización como aplicación de datos/IA, pero no desarrolla una taxonomía técnica completa de PET. Correspondencia: A1-75/A1-82/A2-I-7."
+          }
+        ],
+        "observaciones": "La respuesta “Identificación Workflow idóneo” del original está corrupta y no permite valorar el concepto. Se reemplaza por una opción inequívoca: el balanceo HTTP genérico, por sí solo, no es una PET. NIST incluye enclaves/TEE y cifrado homomórfico entre las tecnologías de privacidad; el EDPB trata la anonimización como técnica pertinente para la protección de datos. PET no es una lista cerrada y una técnica concreta solo mejora privacidad si se diseña para ese fin y se evalúa en contexto. Cotejo con ITIC Academy, bloque 32, que menciona anonimización como aplicación de IA/datos; el material no desarrolla la taxonomía PET, por lo que la clasificación técnica se contrasta con NIST y EDPB. Cotejo temático con ITIC Academy: Bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1, §19 (ética, seguridad y regulación): menciona anonimización en el contexto de IA/datos, pero no desarrolla taxonomía técnica de PET. Correspondencia orientativa con el temario oficial: A1-75/A1-82/A2-I-7."
+      }
     },
     {
       "id": 1318,
       "bloque": 0,
       "tema": 0,
-      "texto": "EI Documento Nacional de Identidad electrónico:",
+      "texto": "Conforme al artículo 3 del Real Decreto 255/2025, el Documento Nacional de Identidad:",
       "opciones": [
-        "Acredita electrónicamente la identidad personal de su titular y permite la firma electrónica de documentos.",
-        "Sólo se podrá utilizar para acreditar la identidad de su titular.",
-        "Permitirá acreditar la identidad de las personas físicas o jurídicas.",
-        "Puede almacenar información penal y sanitario del titular."
+        "Permite la identificación electrónica de su titular y la firma electrónica de documentos en los términos previstos por la legislación específica.",
+        "Solo puede utilizarse para acreditar físicamente la identidad de su titular.",
+        "Acredita la identidad de personas físicas o jurídicas como titulares del DNI.",
+        "Puede almacenar libremente información penal y sanitaria del titular."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El artículo 3.1 del Real Decreto 255/2025 establece que el DNI permite la identificación electrónica de su titular y la firma electrónica de documentos en los términos de la legislación específica; el apartado 3.2 trata la eficacia de los certificados. Se precisa que la pregunta habla de las funciones electrónicas del DNI y sus certificados, no de asumir que la aplicación DNI digital/MiDNI ofrezca automáticamente firma remota. Los distractores sobre limitarlo a identificación, personas jurídicas o datos penales/sanitarios no se corresponden con la norma. Cotejo con ITIC Academy, bloque 36, §10.1, que distingue DNIe y DNI digital. Cotejo temático con ITIC Academy: Bloque 36, Seguridad, criptografía, identificación y firma, versión 2026.1, §10.1 (DNI electrónico y DNI digital/MiDNI). Correspondencia orientativa con el temario oficial: A1-80/A1-81/A2-I-6.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "Bloque 36, Seguridad, criptografía, identificación y firma, versión 2026.1, §10.1 (DNI electrónico y DNI digital/MiDNI).",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: Bloque 36, Seguridad, criptografía, identificación y firma, versión 2026.1, §10.1 (DNI electrónico y DNI digital/MiDNI). Correspondencia orientativa con el temario oficial: A1-80/A1-81/A2-I-6."
+      },
+      "etiquetas": [
+        "DNI electrónico",
+        "DNIe",
+        "certificados electrónicos",
+        "identificación electrónica",
+        "firma electrónica",
+        "MiDNI"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/eli/es/rd/2025/04/01/255/con",
+            "referencia": "Real Decreto 255/2025, de 1 de abril, arts. 2.3 y 3.1–3.2: DNI supports electronic identification and electronic signature of documents under the applicable legislation; recognition concerns the holder and the signature/integrity of documents signed with its electronic certificates."
+          },
+          {
+            "url": "https://www.dnielectronico.es/PortalDNIe/",
+            "referencia": "Portal oficial DNI electrónico: information on the physical DNIe, its electronic certificates and their use for identification and electronic signature. The question is limited to the card/certificates and does not equate them with every function of the DNI digital app."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 «Seguridad, criptografía, identificación y firma», versión 2026.1, §10.1 (DNI electrónico y DNI digital/MiDNI) y temas oficiales 80–81. Correspondencia: A1-80/A1-81/A2-I-6."
+          }
+        ],
+        "observaciones": "El artículo 3.1 del Real Decreto 255/2025 establece que el DNI permite la identificación electrónica de su titular y la firma electrónica de documentos en los términos de la legislación específica; el apartado 3.2 trata la eficacia de los certificados. Se precisa que la pregunta habla de las funciones electrónicas del DNI y sus certificados, no de asumir que la aplicación DNI digital/MiDNI ofrezca automáticamente firma remota. Los distractores sobre limitarlo a identificación, personas jurídicas o datos penales/sanitarios no se corresponden con la norma. Cotejo con ITIC Academy, bloque 36, §10.1, que distingue DNIe y DNI digital. Cotejo temático con ITIC Academy: Bloque 36, Seguridad, criptografía, identificación y firma, versión 2026.1, §10.1 (DNI electrónico y DNI digital/MiDNI). Correspondencia orientativa con el temario oficial: A1-80/A1-81/A2-I-6."
+      }
     },
     {
       "id": 1319,
@@ -58946,27 +59067,100 @@
       "tema": 0,
       "texto": "En el diseño de un SGBD, nos referimos por reglas ACID a:",
       "opciones": [
-        "Atomicidad, Consistencia, Integridad y Duración.",
-        "Atomicidad, Consistencia, Aislamiento y Duración o persistencia.",
-        "Autenticación, Integridad, Confidencialidad y Disponibilidad.",
-        "Aislamiento, Consistencia, Integridad y Duración o persistencia."
+        "Atomicidad, consistencia, integridad y durabilidad.",
+        "Atomicidad, consistencia, aislamiento y durabilidad (durability).",
+        "Autenticación, integridad, confidencialidad y disponibilidad.",
+        "Aislamiento, consistencia, integridad y durabilidad."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "ACID significa Atomicity, Consistency, Isolation, Durability: atomicidad, consistencia, aislamiento y durabilidad. «Duración» es un error de traducción; puede encontrarse «persistencia» como explicación informal de durability, pero el término usual en español técnico es durabilidad. Se corrige la opción que contiene la expansión completa y se coteja con ITIC Academy, bloque 29, §7.1. Cotejo temático con ITIC Academy: Bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1, §7.1 (propiedades ACID), p. 24. Correspondencia orientativa con el temario oficial: A1-63/A2-II-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "Bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1, §7.1 (propiedades ACID), p. 24.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: Bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1, §7.1 (propiedades ACID), p. 24. Correspondencia orientativa con el temario oficial: A1-63/A2-II-5."
+      },
+      "etiquetas": [
+        "SGBD",
+        "ACID",
+        "atomicidad",
+        "consistencia",
+        "aislamiento",
+        "durabilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.postgresql.org/docs/18/glossary.html",
+            "referencia": "PostgreSQL 18 Glossary, ACID: Atomicity, Consistency, Isolation and Durability; the properties apply to database transactions."
+          },
+          {
+            "url": "https://www.postgresql.org/files/developer/transactions.pdf",
+            "referencia": "PostgreSQL, Transaction Processing: explains the four ACID properties and the meaning of durable commit."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado», versión 2026.1, §7.1 (propiedades ACID), p. 24. Correspondencia: A1-63/A2-II-5."
+          }
+        ],
+        "observaciones": "ACID significa Atomicity, Consistency, Isolation, Durability: atomicidad, consistencia, aislamiento y durabilidad. «Duración» es un error de traducción; puede encontrarse «persistencia» como explicación informal de durability, pero el término usual en español técnico es durabilidad. Se corrige la opción que contiene la expansión completa y se coteja con ITIC Academy, bloque 29, §7.1. Cotejo temático con ITIC Academy: Bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1, §7.1 (propiedades ACID), p. 24. Correspondencia orientativa con el temario oficial: A1-63/A2-II-5."
+      }
     },
     {
       "id": 1320,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indicar la respuesta incorrecta sobre los sistemas expertos en inteligencia artificial:",
+      "texto": "En la arquitectura clásica de los sistemas expertos, ¿cuál afirmación es incorrecta?",
       "opciones": [
-        "La característica diferencial de los sistemas expertos es la ubicación externa del conocimiento necesario para resolver un problema, que aparece como estructura procesable separada de los procedimientos que la manipulan",
-        "Un entorno es básicamente un lenguaje más un conjunto de procedimientos hechos como ayuda a la construcción de sistemas expertos",
-        "Una shell es básicamente un sistema experto con la base de conocimiento vacía; es decir, la arquitectura del sistema final está preestablecida",
-        "Los lenguajes utilizados en la construcción de sistemas expertos son principalmente lenguajes orientados a la inteligencia artificial como el LISP o el PROLOG y lenguajes convencionales de propósito general tales como el C, FORTRAN, PASCAL, etc"
+        "El conocimiento del dominio puede representarse en una base separada de los procedimientos de inferencia que lo manipulan.",
+        "Un entorno de desarrollo puede combinar un lenguaje con herramientas que ayudan a construir sistemas expertos.",
+        "Una shell proporciona una arquitectura/mecanismo de inferencia reutilizable al que se incorpora la base de conocimiento del dominio.",
+        "LISP y PROLOG no se han utilizado para implementar sistemas expertos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La clave original era errónea: el NBS/NIST describe LISP y PROLOG como lenguajes empleados para sistemas expertos y también contempla herramientas convencionales; por tanto, esa afirmación no es la incorrecta. Se rehace el distractor como una afirmación falsable (“LISP y PROLOG no se han utilizado…”). Una shell proporciona herramientas/mecanismo de inferencia y permite añadir la base de conocimiento del dominio; el entorno de desarrollo puede incluir además lenguaje y utilidades. Se mantienen las opciones técnicas restantes, acotadas a la arquitectura clásica. Cotejo con ITIC Academy, bloque 32, §6. Cotejo temático con ITIC Academy: Bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1, §6 (IA simbólica y sistemas expertos). Correspondencia orientativa con el temario oficial: A1-70/A2-III-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "Bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1, §6 (IA simbólica y sistemas expertos).",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: Bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1, §6 (IA simbólica y sistemas expertos). Correspondencia orientativa con el temario oficial: A1-70/A2-III-5."
+      },
+      "etiquetas": [
+        "inteligencia artificial",
+        "sistemas expertos",
+        "base de conocimiento",
+        "motor de inferencia",
+        "shell",
+        "LISP",
+        "PROLOG"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication728.pdf",
+            "referencia": "NBS Special Publication 728, Expert Systems and Emergency Management (1986), §§3.2 and 5: separates knowledge base and inference/control; describes shells as packages that help construct knowledge bases and provide inference procedures; discusses LISP/PROLOG and conventional languages."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1, §6 (IA simbólica y sistemas expertos); incluye anonimización como aplicación de datos/IA, pero no desarrolla una taxonomía técnica completa de PET. Correspondencia: A1-70/A2-III-5."
+          }
+        ],
+        "observaciones": "La clave original era errónea: el NBS/NIST describe LISP y PROLOG como lenguajes empleados para sistemas expertos y también contempla herramientas convencionales; por tanto, esa afirmación no es la incorrecta. Se rehace el distractor como una afirmación falsable (“LISP y PROLOG no se han utilizado…”). Una shell proporciona herramientas/mecanismo de inferencia y permite añadir la base de conocimiento del dominio; el entorno de desarrollo puede incluir además lenguaje y utilidades. Se mantienen las opciones técnicas restantes, acotadas a la arquitectura clásica. Cotejo con ITIC Academy, bloque 32, §6. Cotejo temático con ITIC Academy: Bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1, §6 (IA simbólica y sistemas expertos). Correspondencia orientativa con el temario oficial: A1-70/A2-III-5."
+      }
     },
     {
       "id": 1321,
