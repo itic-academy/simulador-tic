@@ -1,0 +1,347 @@
+{
+  "fecha": "2026-10-24",
+  "alcance": "IDs 1406–1410; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1406,
+      "original": {
+        "id": 1406,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En lo referente a protocolos de encaminamiento en redes de telecomunicaciones:",
+        "opciones": [
+          "Los protocolos de encaminamiento estáticos tienen en cuenta el estado de la red para tomar decisiones de enrutamiento. Las tablas de los nodos se configuran manualmente y permanecen estáticas hasta que no se vuelva a actuar sobre ellas.",
+          "En los protocolos de encaminamiento dinámico los routers comparten información sobre la accesibilidad y el estado de la red, actualizándose mutuamente sobre las redes que conocen y colocando esta información en sus tablas de enrutamiento.",
+          "En los algoritmos del estado de enlace cada router mantiene una tabla o vector que le indica la distancia mínima conocida hacia cada posible destino y que línea o interfaz debe utilizar para llegar a él.",
+          "En los algoritmos de vector de distancia cada router envía información a todos los routers de la red. Esta información incluye solamente el estado de cada uno de los enlaces con sus nodos vecinos."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1406,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre el encaminamiento estático y dinámico, ¿qué afirmación es correcta?",
+        "opciones": [
+          "Una ruta estática se adapta automáticamente a los cambios de topología porque la tabla se recalcula mediante intercambio de actualizaciones.",
+          "Los protocolos de encaminamiento dinámico intercambian información de rutas —normalmente con los vecinos que define cada protocolo— y pueden actualizar las rutas cuando cambia la alcanzabilidad o la topología.",
+          "OSPF es un protocolo de vector de distancia que anuncia a cada vecino únicamente la distancia al destino.",
+          "RIP es un protocolo de estado de enlace que difunde a todos los routers la descripción completa de cada enlace."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se reescribe para distinguir propiedades de protocolos concretos y evitar la generalización de que todo encaminamiento dinámico usa una métrica única. La opción correcta describe el intercambio de información de encaminamiento y el posible recálculo tras cambios de alcanzabilidad/topología; las tablas estáticas requieren configuración administrativa. RIP es vector de distancia e intercambia rutas/métricas con vecinos, mientras OSPF difunde información de estado de enlace para formar la base topológica. Cotejo: ITIC Academy, bloque 42 Redes y bloque 43 Protocolos, versión 2026.1. Correspondencia oficial: A1-108/111/115 y A2-II-8/IV-10. Cotejo temático: ITIC Academy, bloque 42 Redes y bloque 43 Protocolos, versión 2026.1 (29-09-2026): encaminamiento, redes IP, protocolos RIP/OSPF y contraste de tecnologías. Correspondencias A1-108/111/115 y A2-II-8/IV-10. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-111",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8",
+            "A2-IV-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes y bloque 43 Protocolos, versión 2026.1 (29-09-2026): encaminamiento, redes IP, protocolos RIP/OSPF y contraste de tecnologías. Correspondencias A1-108/111/115 y A2-II-8/IV-10.",
+          "estado": "revisada",
+          "nota": "Cotejo temático: ITIC Academy, bloque 42 Redes y bloque 43 Protocolos, versión 2026.1 (29-09-2026): encaminamiento, redes IP, protocolos RIP/OSPF y contraste de tecnologías. Correspondencias A1-108/111/115 y A2-II-8/IV-10. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado."
+        },
+        "etiquetas": [
+          "encaminamiento",
+          "routing dinámico",
+          "vector de distancia",
+          "estado de enlace",
+          "RIP",
+          "OSPF"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc2453.html",
+              "referencia": "RFC 2453, §§3.4–3.5: RIP usa algoritmo de vector de distancia; los routers mantienen destinos, métrica y siguiente salto e intercambian actualizaciones con vecinos."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc2328.html",
+              "referencia": "RFC 2328, resumen y §2: OSPF es de estado de enlace; cada router mantiene una base de datos de topología y calcula un árbol de caminos mínimos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view",
+              "referencia": "ITIC Academy, ITIC Academy, bloque 42 Redes y bloque 43 Protocolos, versión 2026.1 (29-09-2026): encaminamiento, redes IP, protocolos RIP/OSPF y contraste de tecnologías. Correspondencias A1-108/111/115 y A2-II-8/IV-10."
+            }
+          ],
+          "observaciones": "Se reescribe para distinguir propiedades de protocolos concretos y evitar la generalización de que todo encaminamiento dinámico usa una métrica única. La opción correcta describe el intercambio de información de encaminamiento y el posible recálculo tras cambios de alcanzabilidad/topología; las tablas estáticas requieren configuración administrativa. RIP es vector de distancia e intercambia rutas/métricas con vecinos, mientras OSPF difunde información de estado de enlace para formar la base topológica. Cotejo: ITIC Academy, bloque 42 Redes y bloque 43 Protocolos, versión 2026.1. Correspondencia oficial: A1-108/111/115 y A2-II-8/IV-10. Cotejo temático: ITIC Academy, bloque 42 Redes y bloque 43 Protocolos, versión 2026.1 (29-09-2026): encaminamiento, redes IP, protocolos RIP/OSPF y contraste de tecnologías. Correspondencias A1-108/111/115 y A2-II-8/IV-10. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado."
+        }
+      }
+    },
+    {
+      "id": 1407,
+      "original": {
+        "id": 1407,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el ámbito de Internet, ¿cuál de estas afirmaciones es cierta?",
+        "opciones": [
+          "IANA/ICANN asigna direccionamiento IP y números de Sistema Autónomo a las RIRs (Regional Internet Registries) que tienen delegada la tarea de distribuir, gestionar y registrar el direccionamiento y ASNs asignado por la IANA/ICANN en sus respectivas regiones.",
+          "ISOC (Internet Society) asigna números de recursos de Internet (IP's, nombres de dominio, parámetros de los protocolos asignados por IETF...).",
+          "DNS es la organización internacional que establece las normas que permiten resolver los nombres de dominios y de hosts en sus correspondientes direcciones IP.",
+          "W3C tiene como misión asegurar la evolución y uso abierto de Internet para beneficio de todas las personas en todo el mundo."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1407,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre la coordinación de recursos numéricos de Internet, ¿qué afirmación es correcta?",
+        "opciones": [
+          "IANA asigna bloques de direcciones IP y números de Sistema Autónomo a los RIR; estos realizan asignaciones regionales a operadores conforme a sus políticas.",
+          "Internet Society asigna directamente direcciones IP, nombres de dominio y parámetros de protocolo a los usuarios finales.",
+          "DNS es una organización internacional que asigna nombres y normaliza los protocolos de Internet.",
+          "La misión principal del W3C es asignar direcciones IP y números de Sistema Autónomo a las organizaciones."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se reemplaza la formulación «IANA/ICANN» por el papel concreto de IANA para no confundir coordinación institucional con las asignaciones operativas. La afirmación correcta es que IANA asigna bloques de recursos numéricos (direcciones IP y ASNs) a los RIR y estos los asignan a operadores conforme a las políticas regionales; no implica asignación directa general a usuarios finales. Cotejo: ITIC Academy, bloque 43 Protocolos, apartado sobre organizaciones y gobierno de Internet, versión 2026.1. Correspondencia oficial: A1-109/111 y A2-II-8/IV-13. Cotejo temático: ITIC Academy, bloque 43 Protocolos, versión 2026.1 (29-09-2026): apartado «Organismos de normalización y gobierno de Internet». Correspondencias A1-109/111 y A2-II-8/IV-13. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado.",
+        "clasificacion": {
+          "A1": [
+            "A1-109",
+            "A1-111"
+          ],
+          "A2": [
+            "A2-II-8",
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 Protocolos, versión 2026.1 (29-09-2026): apartado «Organismos de normalización y gobierno de Internet». Correspondencias A1-109/111 y A2-II-8/IV-13.",
+          "estado": "revisada",
+          "nota": "Cotejo temático: ITIC Academy, bloque 43 Protocolos, versión 2026.1 (29-09-2026): apartado «Organismos de normalización y gobierno de Internet». Correspondencias A1-109/111 y A2-II-8/IV-13. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado."
+        },
+        "etiquetas": [
+          "IANA",
+          "ICANN",
+          "RIR",
+          "recursos de Internet",
+          "números de Sistema Autónomo"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.iana.org/help/abuse-answers",
+              "referencia": "IANA, Abuse Issues and IP Addresses: IANA mantiene el espacio global y asigna bloques a los cinco RIR; estos asignan direcciones a operadores e ISP."
+            },
+            {
+              "url": "https://www.iana.org/assignments/as-numbers",
+              "referencia": "IANA, Autonomous System (AS) Numbers registry, actualizado el 1-06-2026: IANA asigna ASNs a RIRs; los RIR los asignan a operadores conforme a sus políticas."
+            },
+            {
+              "url": "https://www.iana.org/numbers/allocations/",
+              "referencia": "IANA, Number Resource Allocation Data: proporciona a los RIR los pools de direcciones y números AS no asignados."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view",
+              "referencia": "ITIC Academy, ITIC Academy, bloque 43 Protocolos, versión 2026.1 (29-09-2026): apartado «Organismos de normalización y gobierno de Internet». Correspondencias A1-109/111 y A2-II-8/IV-13."
+            }
+          ],
+          "observaciones": "Se reemplaza la formulación «IANA/ICANN» por el papel concreto de IANA para no confundir coordinación institucional con las asignaciones operativas. La afirmación correcta es que IANA asigna bloques de recursos numéricos (direcciones IP y ASNs) a los RIR y estos los asignan a operadores conforme a las políticas regionales; no implica asignación directa general a usuarios finales. Cotejo: ITIC Academy, bloque 43 Protocolos, apartado sobre organizaciones y gobierno de Internet, versión 2026.1. Correspondencia oficial: A1-109/111 y A2-II-8/IV-13. Cotejo temático: ITIC Academy, bloque 43 Protocolos, versión 2026.1 (29-09-2026): apartado «Organismos de normalización y gobierno de Internet». Correspondencias A1-109/111 y A2-II-8/IV-13. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado."
+        }
+      }
+    },
+    {
+      "id": 1408,
+      "original": {
+        "id": 1408,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el ámbito de las redes, podemos decir de un switch que:",
+        "opciones": [
+          "Permite interconectar redes que utilizan distintos protocolos: por ejemplo, TCP/IP, SNA, Netware, VoIP.",
+          "Centraliza en un único dispositivo varios segmentos de una red LAN, de forma que todos ellos quedan conectados a un mismo dominio de colisión, retransmitiendo cada paquete de datos recibidos por uno de los puertos a los demás puertos.",
+          "Permite la interconexión de redes de área local a través de una red de telecomunicaciones, basada en tecnología IP, y con múltiples caminos posibles entre dispositivos. Para tomar las decisiones de encaminamiento utilizan el esquema de direccionamiento IP.",
+          "Permite la interconexión de múltiples segmentos de red a través de sus bocas. Al recibir una trama por una boca, el switch identifica la dirección destino y conmuta dicha trama exclusivamente a la boca donde está conectado el segmento de red al cual pertenece dicho destino."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1408,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una LAN Ethernet conmutada, ¿qué hace un switch transparente cuando recibe una trama unicast cuyo destino MAC está aprendido en su tabla CAM?",
+        "opciones": [
+          "La reenvía por todos los puertos, incluidos los de otras VLAN, porque opera como repetidor físico.",
+          "La enruta necesariamente entre redes IP distintas, aunque no tenga configurada una función de capa 3.",
+          "La copia exclusivamente al puerto de entrada para que el equipo de origen la procese.",
+          "La reenvía por el puerto asociado a esa MAC en la CAM, dentro de la VLAN correspondiente; las tramas broadcast o con destino desconocido siguen reglas de inundación."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se acota la clave a una trama unicast cuyo destino está aprendido en la tabla CAM y a su VLAN. No se afirma que todo tráfico se envíe siempre a un único puerto: los destinos MAC desconocidos y las tramas broadcast se inundan dentro de la VLAN; un switch multicapa también puede enrutar, pero eso no convierte en correcta la descripción del distractor del router IP. Cotejo: ITIC Academy, bloque 42 Redes, dispositivos Ethernet/LAN y VLAN, versión 2026.1. Correspondencia oficial: A1-110/118 y A2-IV-8. Cotejo temático: ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): switching Ethernet, dispositivos de interconexión y VLAN. Correspondencias A1-110/118 y A2-IV-8. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado.",
+        "clasificacion": {
+          "A1": [
+            "A1-110",
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): switching Ethernet, dispositivos de interconexión y VLAN. Correspondencias A1-110/118 y A2-IV-8.",
+          "estado": "revisada",
+          "nota": "Cotejo temático: ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): switching Ethernet, dispositivos de interconexión y VLAN. Correspondencias A1-110/118 y A2-IV-8. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado."
+        },
+        "etiquetas": [
+          "switch",
+          "conmutación Ethernet",
+          "dirección MAC",
+          "tabla CAM",
+          "VLAN"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+              "referencia": "Cisco, Troubleshoot LAN Switching Environments, «Transparent Bridging Algorithm»: una MAC conocida se reenvía por el puerto asociado en la CAM y dentro de la VLAN; destinos desconocidos y broadcast se inundan por los demás puertos de esa VLAN."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view",
+              "referencia": "ITIC Academy, ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): switching Ethernet, dispositivos de interconexión y VLAN. Correspondencias A1-110/118 y A2-IV-8."
+            }
+          ],
+          "observaciones": "Se acota la clave a una trama unicast cuyo destino está aprendido en la tabla CAM y a su VLAN. No se afirma que todo tráfico se envíe siempre a un único puerto: los destinos MAC desconocidos y las tramas broadcast se inundan dentro de la VLAN; un switch multicapa también puede enrutar, pero eso no convierte en correcta la descripción del distractor del router IP. Cotejo: ITIC Academy, bloque 42 Redes, dispositivos Ethernet/LAN y VLAN, versión 2026.1. Correspondencia oficial: A1-110/118 y A2-IV-8. Cotejo temático: ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): switching Ethernet, dispositivos de interconexión y VLAN. Correspondencias A1-110/118 y A2-IV-8. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado."
+        }
+      }
+    },
+    {
+      "id": 1409,
+      "original": {
+        "id": 1409,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con el aislamiento del cableado de una red de ordenadores se puede afirmar que:",
+        "opciones": [
+          "STP: No presentan ningún tipo de pantalla.",
+          "UTP: los pares se encuentran cubiertos, cada uno de ellos, de una malla de cobre.",
+          "2-UTP: cable UTP en el que se aplica al conjunto de todos los pares que lo componen una cubierta formada por una lámina de aluminio.",
+          "S/FTP: cable con pantalla global y apantallamiento par a par."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1409,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según las designaciones de cableado balanceado empleadas en ISO/IEC 11801, ¿qué descripción de S/FTP es correcta?",
+        "opciones": [
+          "U/UTP: cable sin pantalla global ni pantalla individual de los pares.",
+          "F/UTP: cada par está cubierto por una lámina y el cable no tiene pantalla global.",
+          "S/FTP: pantalla global de trenza y pares apantallados individualmente con lámina.",
+          "S/FTP: cable sin pantalla global, con pares también sin apantallar."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se sustituye la nomenclatura heredada y ambigua «STP/2-UTP» por designaciones precisas conforme al esquema de ISO/IEC 11801. U/UTP carece de apantallamiento global e individual; F/UTP tiene lámina global y pares no apantallados; S/FTP combina trenza global con lámina en cada par. La opción S/FTP es la única correcta. Cotejo: ITIC Academy, bloque 42 Redes, medios de transmisión y cableado estructurado, versión 2026.1. Correspondencia oficial: A1-108/110 y A2-IV-8. Cotejo temático: ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): medios de transmisión y cableado estructurado. Correspondencias A1-108/110 y A2-IV-8. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-110"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): medios de transmisión y cableado estructurado. Correspondencias A1-108/110 y A2-IV-8.",
+          "estado": "revisada",
+          "nota": "Cotejo temático: ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): medios de transmisión y cableado estructurado. Correspondencias A1-108/110 y A2-IV-8. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado."
+        },
+        "etiquetas": [
+          "cableado estructurado",
+          "par trenzado",
+          "U/UTP",
+          "F/UTP",
+          "S/FTP",
+          "apantallamiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://static.datwyler-itinfra.com/assets/Downloads/cable_design_description_iso_iec_11801_0713_e.pdf",
+              "referencia": "Datwyler, Copper data cable design description in accordance with ISO/IEC 11801: U/UTP no apantallado; F/UTP pantalla global de lámina y pares sin apantallar; S/FTP pantalla global de trenza y pares apantallados individualmente con lámina."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view",
+              "referencia": "ITIC Academy, ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): medios de transmisión y cableado estructurado. Correspondencias A1-108/110 y A2-IV-8."
+            }
+          ],
+          "observaciones": "Se sustituye la nomenclatura heredada y ambigua «STP/2-UTP» por designaciones precisas conforme al esquema de ISO/IEC 11801. U/UTP carece de apantallamiento global e individual; F/UTP tiene lámina global y pares no apantallados; S/FTP combina trenza global con lámina en cada par. La opción S/FTP es la única correcta. Cotejo: ITIC Academy, bloque 42 Redes, medios de transmisión y cableado estructurado, versión 2026.1. Correspondencia oficial: A1-108/110 y A2-IV-8. Cotejo temático: ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): medios de transmisión y cableado estructurado. Correspondencias A1-108/110 y A2-IV-8. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado."
+        }
+      }
+    },
+    {
+      "id": 1410,
+      "original": {
+        "id": 1410,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación a las cabeceras del protocolo IPv6:",
+        "opciones": [
+          "Al ser más pequeña que la cabecera de IPv4 es menos eficiente su procesamiento.",
+          "Usa 128 bits para especificar las direcciones origen y destino.",
+          "La longitud de la cabecera es variable y viene determinado en el campo LON de la misma.",
+          "Tiene un tamaño mínimo de 20 bytes y máximo de 40 bytes."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1410,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto de la cabecera base de IPv6 especificada en RFC 8200, ¿qué afirmación es correcta?",
+        "opciones": [
+          "La cabecera base tiene longitud variable, indicada por un campo «LON», y puede medir entre 20 y 40 bytes.",
+          "Los campos de dirección de origen y de destino tienen 128 bits cada uno.",
+          "La cabecera base cambia de longitud cuando se añaden opciones, que se incorporan en un campo de longitud variable dentro de ella.",
+          "La cabecera base IPv6 mide entre 20 y 40 bytes, mientras las direcciones de origen y destino son de 32 bits."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se delimita la pregunta a la cabecera base. Las direcciones de origen y destino tienen 128 bits; el formato fijo de la cabecera base tiene 40 octetos y las cabeceras de extensión son estructuras separadas. IPv6 no incluye un campo «LON» para expresar una longitud variable de la cabecera base; el campo Payload Length mide lo que sigue a dicha cabecera. Cotejo: ITIC Academy, bloque 43 Protocolos, IPv6 y transición IPv4/IPv6, versión 2026.1. Correspondencia oficial: A1-111/115 y A2-II-8. Cotejo temático: ITIC Academy, bloque 43 Protocolos, versión 2026.1 (29-09-2026): formato y funcionalidades de IPv6. Correspondencias A1-111/115 y A2-II-8. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado.",
+        "clasificacion": {
+          "A1": [
+            "A1-111",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 Protocolos, versión 2026.1 (29-09-2026): formato y funcionalidades de IPv6. Correspondencias A1-111/115 y A2-II-8.",
+          "estado": "revisada",
+          "nota": "Cotejo temático: ITIC Academy, bloque 43 Protocolos, versión 2026.1 (29-09-2026): formato y funcionalidades de IPv6. Correspondencias A1-111/115 y A2-II-8. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado."
+        },
+        "etiquetas": [
+          "IPv6",
+          "cabecera fija",
+          "direcciones de 128 bits",
+          "cabeceras de extensión"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+              "referencia": "RFC 8200, §3: formato de cabecera base IPv6 con campos Source Address y Destination Address de 128 bits; la cabecera base es fija y las cabeceras de extensión se codifican separadamente en el payload."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view",
+              "referencia": "ITIC Academy, ITIC Academy, bloque 43 Protocolos, versión 2026.1 (29-09-2026): formato y funcionalidades de IPv6. Correspondencias A1-111/115 y A2-II-8."
+            }
+          ],
+          "observaciones": "Se delimita la pregunta a la cabecera base. Las direcciones de origen y destino tienen 128 bits; el formato fijo de la cabecera base tiene 40 octetos y las cabeceras de extensión son estructuras separadas. IPv6 no incluye un campo «LON» para expresar una longitud variable de la cabecera base; el campo Payload Length mide lo que sigue a dicha cabecera. Cotejo: ITIC Academy, bloque 43 Protocolos, IPv6 y transición IPv4/IPv6, versión 2026.1. Correspondencia oficial: A1-111/115 y A2-II-8. Cotejo temático: ITIC Academy, bloque 43 Protocolos, versión 2026.1 (29-09-2026): formato y funcionalidades de IPv6. Correspondencias A1-111/115 y A2-II-8. El temario sirve para asignar contexto y correspondencia; la respuesta se sustenta en estándares/documentación técnica primaria citada por separado."
+        }
+      }
+    }
+  ]
+}
