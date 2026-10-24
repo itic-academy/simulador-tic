@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 166 (IDs 1146–1150). Acumulado: 1.150 preguntas revisadas, 1.108 verificadas (285 vigentes, 720 corregidas y 103 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.973 sin revisar de contenido. Hay 837 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 167 (IDs 1151–1155). Acumulado: 1.155 preguntas revisadas, 1.113 verificadas (286 vigentes, 724 corregidas y 103 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.968 sin revisar de contenido. Hay 842 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -84,7 +84,7 @@ Fuentes: Rumelhart, Hinton y Williams, «Learning representations by back-propag
 
 ## Pendiente
 
-10.973 preguntas sin revisión de contenido. Siguiente ID: 1151. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+10.968 preguntas sin revisión de contenido. Siguiente ID: 1156. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -1220,3 +1220,12 @@ La comparación filosófica del API Unix/Win32 se reemplaza por una distinción 
 Cotejo con Drive: ITIC Academy, bloque 47, edición 2026.1, A1-59/A1-60/A2-II-2 (sistemas Unix/Linux y fundamentos); bloque 30, A1-67/A2-III-10 (Java) y A1-66/A2-III-11 (.NET); bloque 26, A1-53/A1-57/A1-132/A2-IV-6 (servidores, CPD, balanceo y virtualización) y A1-52/A2-II-1 (hardware y ordenadores). Las formulaciones específicas se contrastaron con The Open Group, Microsoft Learn, Oracle Java SE API y Computer History Museum.
 
 Fuentes: The Open Group Base Specifications Issue 8 (POSIX.1-2024); Microsoft Learn, Windows API index; Oracle Java SE 26 API Specification, `java.lang.Throwable`; Microsoft Learn, Windows Server VMM load balancing, y documentación C# sobre boxing; Computer History Museum, “1949: EDSAC computer employs delay-line storage” y Timeline of Computer History. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.150 registros de revisión y 10.973 preguntas restantes idénticas al commit original.
+## Lote 167 — 24 de octubre
+
+IDs 1151–1155 revisados individualmente: cuatro corregidas, una vigente. Acumulado: 1.155 examinadas, 1.113 verificadas (286 vigentes, 724 corregidas y 103 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 842 preguntas con cambios de contenido. Quedan 10.968 sin revisar; siguiente ID 1.156.
+
+Se separa correctamente la impresión láser de inyección, sublimación e impresión por impacto: el láser usa tóner en polvo transferido desde un tambor y fijado por calor, no barras enceradas (1151). Se precisa que Unix no está restringido a procesadores de más de 32 bits; la interoperabilidad POSIX se formula como interfaz estandarizada para sistemas conformes, sin prometer compatibilidad de cada implementación con todo el hardware (1152). Se sustituye la interpretación impropia de accountability como obligación universal de auditoría por el texto del RGPD: responsabilidad del responsable y capacidad de demostrar el cumplimiento (1153). Se explica el cifrado como transformación criptográfica de texto en claro a cifrado, independientemente de si el soporte es manuscrito o digital, evitando confundir código con criptografía (1154). La sigla CLR se mantiene y se delimita como entorno de ejecución de código administrado .NET, diferenciándolo de CIL (1155). Se preservan los cinco originales íntegros en `cambios-lote-167.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 26, edición 2026.1, periféricos y almacenamiento (A1-56/A2-IV-5), seguridad/criptografía (A1-79/A2-IV-12) y arquitectura de ordenadores (A1-52/A2-II-1); bloque 47, edición 2026.1, sistemas Unix (A1-59/A1-60/A2-II-2) y seguridad; bloque 36, edición 2026.1, RGPD y protección de datos (A1-27/A2-I-7); bloque 30, edición 2026.1, Java y .NET (A1-67/A2-III-10 y A1-66/A2-III-11). Las afirmaciones se cotejaron con The Open Group, Microsoft Learn, EUR-Lex, NIST, HP, Xerox, Oracle y Computer History Museum.
+
+Fuentes: HP, explicación de impresoras láser e inyección; Xerox, *Solid Ink White Paper*; The Open Group Base Specifications Issue 8 (POSIX.1-2024); Oracle Java SE 26 API Specification; Microsoft Learn, integración de load balancing hardware, boxing en C# y Common Language Runtime; Reglamento (UE) 2016/679, art. 5.2, EUR-Lex; NIST SP 800-21, § 1.5; Computer History Museum, ENIAC y EDSAC. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.155 registros de revisión y 10.968 preguntas restantes idénticas al commit original.
