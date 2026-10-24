@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 146 (IDs 1046–1050). Acumulado: 1.050 preguntas revisadas, 1.008 verificadas (275 vigentes, 638 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.073 sin revisión de contenido. Hay 745 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 147 (IDs 1051–1055). Acumulado: 1.055 preguntas revisadas, 1.013 verificadas (275 vigentes, 643 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.068 sin revisión de contenido. Hay 750 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -33,7 +33,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.073 preguntas sin revisión de contenido. Siguiente ID: 1051. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.068 preguntas sin revisión de contenido. Siguiente ID: 1056. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -110,6 +110,18 @@ Cotejo temático con Drive: bloque 32 de ITIC Academy, versión 2026.1, seccione
 Fuentes: IEEE Technology Navigator y CLIPS 6.4 User’s Guide para bases de conocimiento/motor de inferencia; University of Pisa sobre redes semánticas y representación simbólica; University of Colorado Boulder sobre DFD; Microsoft Learn sobre heurística de Microsoft Defender; Marvin Minsky, MIT AI Laboratory Memo 306 (1974), para marcos y slots; University at Buffalo sobre redes semánticas. ITIC Academy, bloques 32 y 48, solo en los apartados indicados.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.050 registros de revisión y 11.073 preguntas restantes idénticas al commit original.
+
+## Lote 147 — 24 de octubre
+
+IDs 1051–1055 revisados individualmente: cinco corregidas. Acumulado: 1.055 examinadas, 1.013 verificadas (275 vigentes, 643 corregidas y 95 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 750 preguntas con cambios de contenido. Quedan 11.068 sin revisar; siguiente ID 1.056.
+
+Se aclara que un perceptrón multicapa puede tener una o más capas ocultas, entre la entrada y la salida; no tiene que limitarse a una sola (1051). Se resuelve la ambigüedad de «plataforma de Google»: TensorFlow se pregunta expresamente como plataforma abierta para crear y entrenar modelos, mientras Vertex AI se identifica como servicio gestionado de Google Cloud (1052). Se añade el supuesto de conocimiento completo que hace válida la hipótesis del mundo cerrado: si un hecho no se deriva de la base que se considera completa, se trata por defecto como falso (1053). Se distinguen las cuatro conversiones SECI de la creación de conocimiento, que es el proceso general que describe el modelo (1054). Se delimita la pregunta de Chomsky a la etiqueta asignada a las gramáticas de tipo 2, llamadas independientes del contexto; tipo 3 es regular, tipo 1 sensible al contexto y tipo 0 no restringida (1055). Se conservan íntegros los originales en `cambios-lote-147.json`.
+
+Cotejo con Drive: bloque 32 de ITIC Academy, versión 2026.1, §§ 10.1–10.2 (perceptrón y MLP) y § 17.1 (TensorFlow frente a otros marcos), para 1051–1052; bloque 07, versión 2026, § 2.5 «Gestión del conocimiento», presenta el modelo SECI como espiral de cuatro fases para 1054. Esos materiales se usaron para el cotejo temático, y la respuesta se contrastó con documentación técnica y el artículo fuente. El bloque 32 no desarrolla la hipótesis del mundo cerrado ni la jerarquía de Chomsky; se deja constancia y se contrastan con Poole/Mackworth y Chomsky. Correspondencias consultadas contra BOE-A-2025-25938, anexo I: A1-70 (1051–1053) y A1-29 (1054); BOE-A-2025-26262, anexo IX: A2-III-5 (1051–1053) y A2-II-3 (1055). No se asigna A2 a SECI por falta de correspondencia directa.
+
+Fuentes: TensorFlow Core y Google Cloud Vertex AI para distinguir arquitectura neuronal, framework abierto y plataforma gestionada; Poole y Mackworth, *Artificial Intelligence: Foundations of Computational Agents*, §§ 5.7 y 15.9, para mundo cerrado/abierto; Nonaka, «A Dynamic Theory of Organizational Knowledge Creation», *Organization Science* 5(1), 1994, DOI 10.1287/orsc.5.1.14; Chomsky, «On Certain Formal Properties of Grammars», *Information and Control* 2(2), 1959, DOI 10.1016/S0019-9958(59)90362-6, y University of Waterloo, jerarquía de Chomsky. ITIC Academy, bloques 32 y 07, solo en los apartados indicados.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.055 registros de revisión y 11.068 preguntas restantes idénticas al commit original.
 
 ## Vista local y comprobaciones
 

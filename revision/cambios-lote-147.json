@@ -1,0 +1,377 @@
+{
+  "fecha": "2026-10-24",
+  "alcance": "IDs 1051–1055; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1051,
+      "original": {
+        "id": 1051,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Las capas de una RNA son:",
+        "opciones": [
+          "Capa de entrada, capa oculta, capa de salida",
+          "Capa de entrada, capa de procesamiento, capa de salida",
+          "Capa de entrada, capa oculta, capa de procesamiento, capa de salida",
+          "Ninguna de las anteriores"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1051,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una red neuronal feed-forward multicapa que tiene al menos una capa oculta, ¿cómo se ordenan sus tipos de capa por función?",
+        "opciones": [
+          "Entrada, una o más capas ocultas y salida.",
+          "Entrada, capa de procesamiento obligatorio única y salida.",
+          "Entrada, capa oculta, capa de salida y otra capa oculta después de la salida.",
+          "Solo capas ocultas; las capas de entrada y salida son siempre externas a la red."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La respuesta A del original expresa la organización didáctica habitual de un perceptrón multicapa, pero no toda red tiene exactamente una capa oculta. Se precisa que el supuesto es una red feed-forward multicapa con capa oculta y que hay una o más capas ocultas entre entrada y salida. Se conserva el índice A. Cotejado con §§ 10.1–10.2 del bloque 32 y la documentación TensorFlow.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "redes neuronales",
+          "perceptrón multicapa",
+          "capas",
+          "deep learning"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.tensorflow.org/tutorials/customization/custom_training_walkthrough",
+              "referencia": "TensorFlow Core, «Custom training: walkthrough»: ilustra redes con una o más capas ocultas, además de entrada y salida; la arquitectura concreta depende de la tarea."
+            },
+            {
+              "url": "https://www.tensorflow.org/tutorials/keras/classification",
+              "referencia": "TensorFlow Core, tutorial de clasificación: construye un modelo secuencial con capas de entrada/procesamiento y una capa de salida."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: §§ 10.1–10.2 sobre neurona artificial y MLP (capa de entrada, capas ocultas y salida); § 17.1 diferencia scikit-learn, TensorFlow, PyTorch y JAX. Cotejo temático; la definición se contrasta con documentación oficial."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático y deep learning."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: algoritmos, fundamentos de IA, tecnologías asociadas y aplicaciones."
+            }
+          ],
+          "observaciones": "La respuesta A del original expresa la organización didáctica habitual de un perceptrón multicapa, pero no toda red tiene exactamente una capa oculta. Se precisa que el supuesto es una red feed-forward multicapa con capa oculta y que hay una o más capas ocultas entre entrada y salida. Se conserva el índice A. Cotejado con §§ 10.1–10.2 del bloque 32 y la documentación TensorFlow."
+        }
+      }
+    },
+    {
+      "id": 1052,
+      "original": {
+        "id": 1052,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique cómo se denomina la plataforma de Google para la implementación de modelos de Aprendizaje Automático:",
+        "opciones": [
+          "GoogleML",
+          "TensorFlow",
+          "IAPack",
+          "IAFoundry"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1052,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denomina la plataforma abierta de extremo a extremo, desarrollada originalmente por Google, que ofrece APIs para crear y entrenar modelos de aprendizaje automático?",
+        "opciones": [
+          "PyTorch.",
+          "TensorFlow.",
+          "Vertex AI, servicio gestionado de Google Cloud.",
+          "scikit-learn."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "El original mezcla el concepto de plataforma de ML con el nombre de un producto de Google: TensorFlow es un framework/plataforma abierta y Vertex AI es un servicio gestionado de Google Cloud, por lo que ambos podían defenderse según el alcance. Se delimita a la plataforma abierta y de extremo a extremo, originalmente desarrollada por Google, para crear y entrenar modelos: TensorFlow. Se conserva el índice B. Cotejado con el § 17.1 del bloque 32; Google Cloud confirma por separado el alcance de Vertex AI.",
+        "clasificacion": {
+          "A1": [
+            "A1-70",
+            "A1-71"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "aprendizaje automático",
+          "TensorFlow",
+          "framework",
+          "Google"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.tensorflow.org/",
+              "referencia": "TensorFlow.org, sitio oficial: presenta TensorFlow como plataforma de extremo a extremo para machine learning y ofrece APIs para crear modelos."
+            },
+            {
+              "url": "https://cloud.google.com/ai-platform/docs",
+              "referencia": "Google Cloud, «Introduction to Vertex AI»: Vertex AI es el servicio gestionado en la nube para entrenar y desplegar modelos; se distingue del framework TensorFlow."
+            },
+            {
+              "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-launches-vertex-ai-unified-platform-for-mlops",
+              "referencia": "Google Cloud, anuncio de Vertex AI: describe la plataforma gestionada de Google Cloud para construir, entrenar y desplegar modelos a escala."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: §§ 10.1–10.2 sobre neurona artificial y MLP (capa de entrada, capas ocultas y salida); § 17.1 diferencia scikit-learn, TensorFlow, PyTorch y JAX. Cotejo temático; la definición se contrasta con documentación oficial."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático y deep learning."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: algoritmos, fundamentos de IA, tecnologías asociadas y aplicaciones."
+            }
+          ],
+          "observaciones": "El original mezcla el concepto de plataforma de ML con el nombre de un producto de Google: TensorFlow es un framework/plataforma abierta y Vertex AI es un servicio gestionado de Google Cloud, por lo que ambos podían defenderse según el alcance. Se delimita a la plataforma abierta y de extremo a extremo, originalmente desarrollada por Google, para crear y entrenar modelos: TensorFlow. Se conserva el índice B. Cotejado con el § 17.1 del bloque 32; Google Cloud confirma por separado el alcance de Vertex AI."
+        }
+      }
+    },
+    {
+      "id": 1053,
+      "original": {
+        "id": 1053,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Inteligencia Artificial, la hipótesis del mundo cerrado consiste en:",
+        "opciones": [
+          "Suponer falso todo lo que no está almacenado en la base de hechos.",
+          "Suponer cierto todo lo que está almacenado en la base de hechos.",
+          "Suponer unas veces cierto y otras falso la información almacenada en la base de hechos.",
+          "Ninguna de las anteriores."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1053,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si se adopta la hipótesis del mundo cerrado para una base de hechos que contiene toda la información relevante, ¿cómo se trata una afirmación que no puede derivarse de esa base?",
+        "opciones": [
+          "Se considera falsa por defecto.",
+          "Se considera necesariamente verdadera.",
+          "Se mantiene desconocida, como en la hipótesis del mundo abierto.",
+          "Se excluye la posibilidad de que la base contenga hechos."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La opción A es correcta solo bajo la hipótesis de que la base contiene todos los hechos relevantes para el predicado considerado. Se añade esa condición: si un hecho no se deriva, se trata por defecto como falso, a diferencia de la hipótesis de mundo abierto. Se conserva la clave A. El bloque 32 cubre fundamentos de IA; el detalle lógico se contrastó con Poole y Mackworth.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "hipótesis del mundo cerrado",
+          "base de hechos",
+          "conocimiento completo",
+          "lógica"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.cs.ubc.ca/~poole/aibook/3e/html/ArtInt3e.Ch5.S7.html",
+              "referencia": "Poole y Mackworth, *Artificial Intelligence: Foundations of Computational Agents*, § 5.7 «Complete Knowledge Assumption»: bajo la hipótesis de conocimiento completo, un átomo que no puede derivarse se considera falso; también se denomina hipótesis del mundo cerrado."
+            },
+            {
+              "url": "https://www.cs.ubc.ca/~poole/aibook/3e/html/ArtInt3e.Ch15.S9.html",
+              "referencia": "Poole y Mackworth, § 15.9: contrasta la hipótesis del mundo cerrado con la hipótesis de mundo abierto, que no permite inferir falsedad por falta de conocimiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, «32_Bloque_32_Inteligencia_Artificial_Ciencia_de_Datos_nuevo_temario_2026», versión 2026.1: §§ 10.1–10.2 sobre neurona artificial y MLP (capa de entrada, capas ocultas y salida); § 17.1 diferencia scikit-learn, TensorFlow, PyTorch y JAX. Cotejo temático; la definición se contrasta con documentación oficial."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: inteligencia artificial, aprendizaje automático y deep learning."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5/D5: algoritmos, fundamentos de IA, tecnologías asociadas y aplicaciones."
+            }
+          ],
+          "observaciones": "La opción A es correcta solo bajo la hipótesis de que la base contiene todos los hechos relevantes para el predicado considerado. Se añade esa condición: si un hecho no se deriva, se trata por defecto como falso, a diferencia de la hipótesis de mundo abierto. Se conserva la clave A. El bloque 32 cubre fundamentos de IA; el detalle lógico se contrastó con Poole y Mackworth."
+        }
+      }
+    },
+    {
+      "id": 1054,
+      "original": {
+        "id": 1054,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes NO es un modo de conversión del conocimiento según el modelo SECI de gestión del conocimiento",
+        "opciones": [
+          "Socialización",
+          "Externalización",
+          "Creación",
+          "Internalización"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1054,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes no es uno de los cuatro modos de conversión del conocimiento del modelo SECI de Nonaka y Takeuchi?",
+        "opciones": [
+          "Socialización.",
+          "Externalización.",
+          "Creación del conocimiento, que designa el proceso general del modelo.",
+          "Internalización."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "El modelo SECI distingue cuatro modos de conversión: socialización, externalización, combinación e internalización. «Creación del conocimiento» nombra el proceso general descrito por el modelo, no uno de esos cuatro modos; se reformula para explicitar la diferencia. Se conserva el índice C. Cotejado con el § 2.5 de gestión del conocimiento del bloque 07 de academia y con el artículo de Nonaka. No se asigna A2 al no encontrar correspondencia directa en el programa consultado.",
+        "clasificacion": {
+          "A1": [
+            "A1-29"
+          ],
+          "A2": [],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "SECI",
+          "Nonaka",
+          "gestión del conocimiento",
+          "socialización",
+          "externalización",
+          "combinación",
+          "internalización"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://pubsonline.informs.org/doi/10.1287/orsc.5.1.14",
+              "referencia": "Ikujiro Nonaka, «A Dynamic Theory of Organizational Knowledge Creation», *Organization Science* 5(1), 1994, pp. 14–37, DOI 10.1287/orsc.5.1.14: identifica cuatro modos de interacción/conversión de conocimiento tácito y explícito."
+            },
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/0969593194900272",
+              "referencia": "International Business Review, «Organizational knowledge creation theory: A first comprehensive test» (1994): confirma las cuatro conversiones —socialización, externalización, combinación e internalización— como procesos del modelo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk",
+              "referencia": "ITIC Academy, «7_Bloque_07_Direccion_Publica_Empleo_Transparencia_ITIC_2026.pdf», versión consultada 2026: § 2.5 «Gestión del conocimiento», que presenta SECI como espiral de cuatro fases para convertir conocimiento tácito y explícito."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-29: información y organizaciones basadas en la información."
+            }
+          ],
+          "observaciones": "El modelo SECI distingue cuatro modos de conversión: socialización, externalización, combinación e internalización. «Creación del conocimiento» nombra el proceso general descrito por el modelo, no uno de esos cuatro modos; se reformula para explicitar la diferencia. Se conserva el índice C. Cotejado con el § 2.5 de gestión del conocimiento del bloque 07 de academia y con el artículo de Nonaka. No se asigna A2 al no encontrar correspondencia directa en el programa consultado."
+        }
+      }
+    },
+    {
+      "id": 1055,
+      "original": {
+        "id": 1055,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique la afirmación correcta, según la clasificación de gramáticas y lenguajes formales de Chomsky",
+        "opciones": [
+          "Los lenguajes representados por las gramáticas del tipo 1 se llaman lenguajes regulares",
+          "Los lenguajes representados por las gramáticas del tipo 2 se llaman lenguajes independientes del contexto",
+          "Los lenguajes representados por las gramáticas del tipo 3 se llaman lenguajes irregulares",
+          "Los lenguajes representados por las gramáticas del tipo 4 se llaman lenguajes sin restricciones"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1055,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la clasificación clásica de Chomsky, ¿cómo se denomina la clase de gramáticas de tipo 2?",
+        "opciones": [
+          "Gramáticas regulares.",
+          "Gramáticas independientes del contexto.",
+          "Gramáticas sensibles al contexto.",
+          "Gramáticas no restringidas."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La asociación correcta en la jerarquía clásica es tipo 2 → gramática independiente del contexto (context-free); tipo 3 corresponde a gramáticas regulares, tipo 1 a sensibles al contexto y tipo 0 a no restringidas. Se precisa el sujeto de la pregunta como la clase asignada a las gramáticas tipo 2, para evitar que la inclusión entre clases se confunda con la etiqueta de la clasificación. Se conserva el índice B. La academia consultada no desarrolla Chomsky; se indica esa limitación y se cita el artículo original.",
+        "clasificacion": {
+          "A1": [],
+          "A2": [
+            "A2-II-3"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "gramáticas formales",
+          "jerarquía de Chomsky",
+          "lenguaje independiente del contexto",
+          "tipo 2"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1016/S0019-9958(59)90362-6",
+              "referencia": "Noam Chomsky, «On Certain Formal Properties of Grammars», *Information and Control* 2(2), 1959, pp. 137–167: define los tipos de gramática y caracteriza las de tipo 2 como independientes del contexto."
+            },
+            {
+              "url": "https://student.cs.uwaterloo.ca/~cs360/Hall/chier.html",
+              "referencia": "University of Waterloo, «The Chomsky Hierarchy»: resume tipo 2 como gramáticas y lenguajes libres/independientes del contexto y tipo 3 como regulares."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32, versión 2026.1: cubre el epígrafe A2 D5 de algoritmos y fundamentos de IA; no desarrolla la jerarquía de gramáticas de Chomsky, comprobada aquí con la referencia académica primaria."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-II-3: características técnicas de los lenguajes y paradigmas actuales de programación."
+            }
+          ],
+          "observaciones": "La asociación correcta en la jerarquía clásica es tipo 2 → gramática independiente del contexto (context-free); tipo 3 corresponde a gramáticas regulares, tipo 1 a sensibles al contexto y tipo 0 a no restringidas. Se precisa el sujeto de la pregunta como la clase asignada a las gramáticas tipo 2, para evitar que la inclusión entre clases se confunda con la etiqueta de la clasificación. Se conserva el índice B. La academia consultada no desarrolla Chomsky; se indica esa limitación y se cita el artículo original."
+        }
+      }
+    }
+  ]
+}
