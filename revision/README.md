@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 163 (IDs 1131–1135). Acumulado: 1.135 preguntas revisadas, 1.093 verificadas (283 vigentes, 710 corregidas y 100 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.988 sin revisar de contenido. Hay 823 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 164 (IDs 1136–1140). Acumulado: 1.140 preguntas revisadas, 1.098 verificadas (284 vigentes, 712 corregidas y 102 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.983 sin revisar de contenido. Hay 827 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -1191,3 +1191,13 @@ Se confirma el máximo de cinco años para certificados cualificados, conforme a
 Cotejo con ITIC Academy: bloque 36, edición 2026.1, A1-80/A2-I-6 para certificados; bloque 47, edición 2026.1, A2-C2 para fundamentos de sistemas operativos; bloque 26, edición 2026.1, A1-52/A2-T1 para arquitectura; bloque 30, edición 2026.1, A1-65/A1-77/A2-T3/T9 para lenguajes y estándares web; bloque 8, versión 2026.3 (01/10/2026), A1-27/A2-O7 para protección de datos. La verificación normativa/técnica se apoya en BOE, Microsoft Learn, Patterson y Ditzel (1980), Ecma International y material universitario de sistemas operativos. Correspondencias: 1131 A1-80/A2-I-6; 1132 A1-59/A2-IV-1; 1133 A1-52/A2-II-1; 1134 A1-65/A1-77 y A2-II-3/A2-III-12; 1135 A1-27/A2-I-7.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.135 registros de revisión y 10.988 preguntas restantes idénticas al commit original. Las 42 dudas anteriores y la comprobación global de correcciones de convocatoria siguen pendientes.
+
+## Lote 164 — 24 de octubre
+
+IDs 1136–1140 revisados individualmente: una vigente, dos corregidas y dos históricas. Acumulado: 1.140 examinadas, 1.098 verificadas (284 vigentes, 712 corregidas y 102 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 827 preguntas con cambios de contenido. Quedan 10.983 sin revisar; siguiente ID 1.141.
+
+Se fija la pregunta sobre el formato XML a la versión histórica Visa 3DS 1.0.2 y se explica que EMV 3DS v2 usa JSON/JWE/JWS (1136). Se sustituyen combinaciones ambiguas de herramientas SIG por una pareja enteramente abierta: gvSIG Desktop y Leaflet; ArcMap/ArcGIS son propietarios y ArcMap se retiró en marzo de 2026 (1137). Se confirma que los recursos instrumentados con JMX se exponen mediante MBeans registrados en un MBean Server (1138). Se corrige la confusión entre Dispose y Finalize y se distingue la liberación determinista de recursos de la reclamación no inmediata de memoria administrada por el GC (1139). Se acota la lista de topologías Fibre Channel a la clasificación básica —punto a punto, arbitrated loop y fabric— y se etiqueta como contenido histórico/técnico, sin sugerir que FC-AL sea la topología predominante actual (1140). Los originales completos están en `cambios-lote-164.json`.
+
+Cotejo con ITIC Academy: tema 78 para comercio electrónico/pagos; bloque 33, A1-74, para SIG; bloque 30, A1-67/A2-III-10 para Java/JMX y A1-66/A2-III-11 para .NET; bloque 26, A1-56/A2-C5 para SAN/almacenamiento. Correspondencias oficiales: 1136 A1-78; 1137 A1-74/A2-II-14; 1138 A1-67/A2-III-10; 1139 A1-66/A2-III-11; 1140 A1-56/A2-IV-5. Las respuestas se contrastaron con Visa/EMVCo, OSGeo, Leaflet y Esri, Oracle Java SE 26, Microsoft Learn y Fibre Channel Industry Association.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.140 registros de revisión y 10.983 preguntas restantes idénticas al commit original. Las 42 dudas anteriores y la comprobación global de correcciones de convocatoria siguen pendientes.
