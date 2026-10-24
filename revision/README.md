@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 159 (IDs 1111–1115). Acumulado: 1.115 preguntas revisadas, 1.073 verificadas (279 vigentes, 695 corregidas y 99 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.008 sin revisar de contenido. Hay 807 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 160 (IDs 1116–1120). Acumulado: 1.120 preguntas revisadas, 1.078 verificadas (280 vigentes, 698 corregidas y 100 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.003 sin revisar de contenido. Hay 811 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -1151,3 +1151,15 @@ Cotejo con Drive: ITIC Academy, bloque 30, edición 2026.1, tema A1-72, para ERP
 Fuentes técnicas y primarias: Microsoft Learn, ERP y categorías DDL/DML de SQL Server; Oracle Database Concepts, DDL y objetos de esquema; BOE, RD 1071/2007, art. 3; ASTIC, tema 074; documentación Esri de ArcGIS Enterprise y sus aplicaciones; NIST FIPS PUB 46 y FIPS 81 (bloque DES y longitud de clave) y ficha NIST de retirada de FIPS 46-3.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.115 registros de revisión y 11.008 preguntas restantes idénticas al commit original. Siguen pendientes las 42 dudas previas y la comprobación global de correcciones posteriores de las convocatorias.
+
+## Lote 160 — 24 de octubre
+
+IDs 1116–1120 revisados individualmente: tres corregidas, una vigente y una histórica. Acumulado: 1.120 examinadas, 1.078 verificadas (280 vigentes, 698 corregidas y 100 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 811 preguntas con cambios de contenido. Quedan 11.003 sin revisar; siguiente ID 1.121.
+
+En ADO.NET se reemplazan varias afirmaciones ambiguas o falsas por una pregunta directa sobre el papel del DataAdapter como puente entre DataSet y origen; DataReader es un flujo de lectura y DataSet incluye relaciones y restricciones (1116). Kotlin se confirma como lenguaje de programación interoperable con Java y se mantiene el ítem sin cambios de contenido (1117). Se corrige la afirmación de que BCL carece de APIs de seguridad y se pregunta por el .NET Framework clásico, distinguiendo BCL/FCL de una arquitectura por capas (1118). iBATIS se identifica como nombre histórico del framework de persistencia que continuó como MyBatis (1119). La pregunta de funciones digest tenía dos respuestas problemáticas: HMAC es una construcción MAC y MD8 no es un algoritmo hash estándar; ahora se pregunta por la diferencia MAC/hash con distractores hash inequívocos y se advierte del riesgo actual de MD5 (1120). Los originales íntegros están en `revision/cambios-lote-160.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 30, edición 2026.1, § 7.5 ADO.NET/Entity Framework Core y § 7.2 BCL/FCL; para Kotlin, el mismo bloque aporta contexto Java/JVM y la propiedad de interoperabilidad se comprueba en JetBrains; ASTIC, tema 62, § 6.2.2 (actualización 2017), documenta iBATIS/MyBatis y la capa de persistencia; ITIC Academy, bloque 36, edición 2026.1, A1-79, cubre criptografía y hashes. Correspondencias: 1116 A1-66/A2-III-11; 1117 A1-67/A2-II-3; 1118 A1-66/A2-III-11; 1119 A1-67/A2-III-10; 1120 A1-79/A2-IV-12.
+
+Fuentes primarias: Microsoft Learn, arquitectura y proveedores ADO.NET, DataSet constraints, Entity Framework, System.Security y bibliotecas .NET; JetBrains, documentación oficial de Kotlin; historia y guía oficial de MyBatis; NIST FIPS 198-1 y CSRC Hash Functions; IETF RFC 1321 y RFC 6151 para MD5 y sus límites.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.120 registros de revisión y 11.003 preguntas restantes idénticas al commit original. Siguen pendientes las 42 dudas previas y la comprobación global de correcciones posteriores de las convocatorias.
