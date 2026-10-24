@@ -54188,71 +54188,261 @@
       "id": 1226,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los métodos de compresión de imágenes basados en la codificación del dominio transformado (transformada de Fourier, coseno discreta, etc):",
+      "texto": "En JPEG, ¿qué caracteriza al proceso secuencial basado en la transformada discreta del coseno (DCT) cuando se cuantizan sus coeficientes?",
       "opciones": [
-        "Son métodos de compresión sin pérdidas",
-        "Son métodos de compresión con pérdidas",
-        "La codificación del dominio transformado no tiene aplicación para la compresión de imágenes",
-        "Se conocen también como codificación de Huffman"
+        "Es un proceso con pérdidas; la cuantización descarta precisión, aunque JPEG también define procesos sin pérdidas basados en predicción.",
+        "Es necesariamente sin pérdidas porque la DCT es reversible.",
+        "La DCT no se utiliza en JPEG.",
+        "La cuantización es una forma de codificación Huffman."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "El original generalizaba incorrectamente: la codificación por transformadas no es por naturaleza con pérdidas y JPEG incluye procesos sin pérdida. Se concreta en JPEG secuencial basado en DCT con cuantización, proceso con pérdida; se conserva la distinción entre transformación, cuantización y codificación entrópica. Cotejo temático con ITIC Academy, bloque 26, §§ 7–8 (tratamiento multimedia/compresión y almacenamiento); el PDF no atribuye pérdida a toda codificación transformada. Cotejo temático con ITIC Academy, bloque 26, §§ 7–8. La distinción JPEG DCT/cuantiﬁcación con pérdida frente a modo predictivo sin pérdida se comprobó en ITU-T T.81.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "26 · Hardware, servidores, almacenamiento y virtualización, versión 2026.1, §§ 7–8 (multimedia, compresión, SAN); el material no afirma que toda codificación transformada sea con pérdidas.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 26, §§ 7–8. La distinción JPEG DCT/cuantiﬁcación con pérdida frente a modo predictivo sin pérdida se comprobó en ITU-T T.81."
+      },
+      "etiquetas": [
+        "JPEG",
+        "DCT",
+        "transformada discreta del coseno",
+        "cuantización",
+        "compresión con pérdidas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-T.81/en",
+            "referencia": "ITU-T Recommendation T.81 | ISO/IEC 10918-1, Digital compression and coding of continuous-tone still images: especifica procesos JPEG DCT con cuantización (con pérdidas) y también un modo predictivo sin pérdidas; el DCT por sí solo no implica necesariamente pérdida."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-T.417-199710-I%21Amd1%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T T.417, Amendment 1, § 11.8: resume T.81; distingue procesos JPEG con pérdida basados en DCT y procesos sin pérdida predictivos; en DCT se cuantizan coeficientes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026), §§ 7–8: multimedia/compresión, SAN y Fibre Channel."
+          }
+        ],
+        "observaciones": "El original generalizaba incorrectamente: la codificación por transformadas no es por naturaleza con pérdidas y JPEG incluye procesos sin pérdida. Se concreta en JPEG secuencial basado en DCT con cuantización, proceso con pérdida; se conserva la distinción entre transformación, cuantización y codificación entrópica. Cotejo temático con ITIC Academy, bloque 26, §§ 7–8 (tratamiento multimedia/compresión y almacenamiento); el PDF no atribuye pérdida a toda codificación transformada. Cotejo temático con ITIC Academy, bloque 26, §§ 7–8. La distinción JPEG DCT/cuantiﬁcación con pérdida frente a modo predictivo sin pérdida se comprobó en ITU-T T.81."
+      }
     },
     {
       "id": 1227,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los certificados electrónicos de representante que actualmente emite la FNMT-RCM son:",
+      "texto": "Según la oferta publicada por FNMT-RCM consultada el 24 de octubre de 2026, ¿qué clases de certificado de representante ofrece?",
       "opciones": [
-        "Sólo los de personas jurídicas.",
-        "Sólo para entidades sin personalidad jurídica y para personas jurídicas.",
-        "Para entidades sin personalidad jurídica, para personas jurídicas y para administrador único o solidario.",
-        "Sólo para entidades sin personalidad jurídica."
+        "Solo certificado de representante de persona jurídica.",
+        "Certificados de representante de persona jurídica y de entidad sin personalidad jurídica.",
+        "Certificados de representante de persona jurídica, de entidad sin personalidad jurídica y de administrador único o solidario.",
+        "Solo certificado de representante de entidad sin personalidad jurídica."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La opción marcada como correcta incluye las tres clases que oferta actualmente FNMT-RCM, pero el adverbio «actualmente» hace la clave perecedera. Se fija el alcance temporal en la redacción y se conserva la respuesta correcta. La documentación de academia cubre el epígrafe de certificados e identificación; la lista concreta se coteja en la sede vigente de FNMT. Cotejo temático con ITIC Academy, bloque 36. El PDF no enumera los productos actuales de FNMT; la oferta de tres clases se verifica en la documentación vigente del emisor.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "36 · Seguridad, criptografía, identificación y firma, versión 2026.1, temas 79–81; contexto del epígrafe oficial de certificados.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 36. El PDF no enumera los productos actuales de FNMT; la oferta de tres clases se verifica en la documentación vigente del emisor."
+      },
+      "etiquetas": [
+        "FNMT-RCM",
+        "certificado de representante",
+        "persona jurídica",
+        "entidad sin personalidad jurídica",
+        "administrador único",
+        "administrador solidario",
+        "eIDAS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.sede.fnmt.gob.es/certificados/certificado-de-representante",
+            "referencia": "FNMT-RCM, Certificado Electrónico de Empresa / Certificado de Representante, consulta 24-10-2026: publica certificados de representante de persona jurídica, de entidad sin personalidad jurídica y de administrador único o solidario."
+          },
+          {
+            "url": "https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/documentacion",
+            "referencia": "FNMT-RCM, Documentación del certificado de representante, consulta 24-10-2026: detalla por separado las tres clases y sus condiciones actuales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Rix8RBBUSoXJBOAt8iWyU9j5tPiqlXzk/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36, temas 79–81, Seguridad, criptografía, identificación y firma, versión 2026.1; contexto curricular de certificados cualificados. Las clases emitidas por FNMT se verifican en su documentación vigente."
+          }
+        ],
+        "observaciones": "La opción marcada como correcta incluye las tres clases que oferta actualmente FNMT-RCM, pero el adverbio «actualmente» hace la clave perecedera. Se fija el alcance temporal en la redacción y se conserva la respuesta correcta. La documentación de academia cubre el epígrafe de certificados e identificación; la lista concreta se coteja en la sede vigente de FNMT. Cotejo temático con ITIC Academy, bloque 36. El PDF no enumera los productos actuales de FNMT; la oferta de tres clases se verifica en la documentación vigente del emisor."
+      }
     },
     {
       "id": 1228,
       "bloque": 0,
       "tema": 0,
-      "texto": "En una red SAN de fibra óptica podemos tener estos 3 tipos de topologías:",
+      "texto": "¿Cuáles son las tres topologías básicas de interconexión de Fibre Channel utilizadas en redes SAN?",
       "opciones": [
-        "FC-AL, FC-HW, punto-a-punto",
-        "FC-BL, FC-SW, FCoE",
-        "FC-BL, FC-HW, FCoE",
-        "FC-AL, FC-SW, punto-a-punto"
+        "Arbitrated loop, punto a punto y switched fabric.",
+        "Arbitrated loop, half-duplex y punto a punto.",
+        "Broadcast loop, switched fabric y FCoE.",
+        "Arbitrated loop, Ethernet conmutada y Fibre Channel sobre IP."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La clave original es correcta. Se reemplazan abreviaturas distractoras poco inteligibles por los nombres normalizados y se asocia FC-AL con arbitrated loop y FC-SW con switched fabric. Cotejo directo con ITIC Academy, bloque 26, § 8.2, Fibre Channel/SAN. Cotejo directo con ITIC Academy, bloque 26, § 8.2 Fibre Channel; se precisa el nombre de las tres topologías según IBM.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "26 · Hardware, servidores, almacenamiento y virtualización, versión 2026.1, § 8.2 (SAN y Fibre Channel).",
+        "estado": "revisada",
+        "nota": "Cotejo directo con ITIC Academy, bloque 26, § 8.2 Fibre Channel; se precisa el nombre de las tres topologías según IBM."
+      },
+      "etiquetas": [
+        "SAN",
+        "Fibre Channel",
+        "FC-AL",
+        "switched fabric",
+        "punto a punto",
+        "topologías de almacenamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/ds8880/8.5.1?topic=attachment-fibre-channel-architecture",
+            "referencia": "IBM Documentation, Fibre Channel architecture: enumera las tres topologías básicas: arbitrated loop, point-to-point y switched fabric; define FC-AL y fabric."
+          },
+          {
+            "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg246143.pdf",
+            "referencia": "IBM Redbooks, SAN Survival Guide, § 2.4, p. 30: define punto a punto, arbitrated loop y switched fabric como las tres topologías Fibre Channel."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026), §§ 7–8: multimedia/compresión, SAN y Fibre Channel."
+          }
+        ],
+        "observaciones": "La clave original es correcta. Se reemplazan abreviaturas distractoras poco inteligibles por los nombres normalizados y se asocia FC-AL con arbitrated loop y FC-SW con switched fabric. Cotejo directo con ITIC Academy, bloque 26, § 8.2, Fibre Channel/SAN. Cotejo directo con ITIC Academy, bloque 26, § 8.2 Fibre Channel; se precisa el nombre de las tres topologías según IBM."
+      }
     },
     {
       "id": 1229,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un procesador superescalar es aquél que:",
+      "texto": "¿Qué rasgo caracteriza a un procesador superescalar?",
       "opciones": [
-        "Contiene varias unidades de ejecución independientes de forma que puede ejecutar varias instrucciones simultáneamente",
-        "Está optimizado para maquinas multiprocesador, principalmente por su implementación de algoritmos que aseguran la coherencia de las cachés",
-        "Contiene varias unidades de coma flotante posibilitando la paralelización de código en servidores de cálculo intensivo",
-        "Ninguna de las respuestas anteriores es correcta"
+        "Puede emitir o iniciar más de una instrucción en un ciclo, si las instrucciones disponibles y los recursos lo permiten.",
+        "Está definido por garantizar coherencia de caché entre varios procesadores.",
+        "Solo contiene varias unidades de coma flotante y no puede emitir instrucciones enteras en paralelo.",
+        "Es un procesador que ejecuta necesariamente una instrucción por ciclo."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se acota la definición al rasgo arquitectónico: capacidad de emitir o iniciar más de una instrucción por ciclo; el número efectivo depende de dependencias y del flujo disponible. Varias unidades de ejecución pueden implementarlo, pero no definen por sí solas todo procesador superescalar. Cotejo temático con ITIC Academy, bloque 26, §§ 2.1–2.2 (CPU, ISA y multiprocesamiento); el PDF no desarrolla de forma explícita el término superescalar. Cotejo temático con ITIC Academy, bloque 26, §§ 2.1–2.2; el PDF no define expresamente superscalar. Definición de emisión múltiple contrastada con University of Stirling.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "26 · Hardware, servidores, almacenamiento y virtualización, versión 2026.1, §§ 2.1–2.2 (CPU, ISA y arquitecturas de multiprocesamiento).",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 26, §§ 2.1–2.2; el PDF no define expresamente superscalar. Definición de emisión múltiple contrastada con University of Stirling."
+      },
+      "etiquetas": [
+        "procesador superescalar",
+        "emisión múltiple",
+        "instrucciones por ciclo",
+        "paralelismo a nivel de instrucción",
+        "CPU"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.cs.stir.ac.uk/~lss/31r6/8-superscalar.pdf",
+            "referencia": "University of Stirling, Computer Design, «Superscalar Machines», diapositivas 74–75: procesadores de emisión múltiple que pueden emitir más de una instrucción en cada ciclo; la cantidad depende del flujo de instrucciones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026), §§ 7–8: multimedia/compresión, SAN y Fibre Channel."
+          }
+        ],
+        "observaciones": "Se acota la definición al rasgo arquitectónico: capacidad de emitir o iniciar más de una instrucción por ciclo; el número efectivo depende de dependencias y del flujo disponible. Varias unidades de ejecución pueden implementarlo, pero no definen por sí solas todo procesador superescalar. Cotejo temático con ITIC Academy, bloque 26, §§ 2.1–2.2 (CPU, ISA y multiprocesamiento); el PDF no desarrolla de forma explícita el término superescalar. Cotejo temático con ITIC Academy, bloque 26, §§ 2.1–2.2; el PDF no define expresamente superscalar. Definición de emisión múltiple contrastada con University of Stirling."
+      }
     },
     {
       "id": 1230,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuál de las siguientes respuestas es falsa:",
+      "texto": "¿Cuál de las siguientes afirmaciones sobre compilación AOT, JIT y código nativo es falsa?",
       "opciones": [
-        "Los compiladores nativos eliminan la independencia de la plataforma del código compilado a cambio de proporcionar un mayor rendimiento.",
-        "Los compiladores nativos AOT (Ahead-Of-time) compilan a código máquina nativo antes de la ejecución de la aplicación.",
-        "Los compiladores JIT (Just in Time) compilan durante la ejecución.",
-        "Todas son verdaderas."
+        "AOT traduce el código antes de ejecutar la aplicación y suele generar un artefacto dirigido a un entorno de destino.",
+        "JIT traduce código intermedio a código nativo a demanda durante la ejecución.",
+        "Un binario nativo suele estar ligado a una arquitectura, sistema operativo o ABI de destino.",
+        "La compilación AOT garantiza siempre más rendimiento de ejecución que JIT, cualquiera que sea la aplicación y la carga."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se corrige la pregunta negativa que no tenía una respuesta falsa defendible: AOT suele dirigirse a una plataforma concreta, pero no garantiza mayor rendimiento para toda aplicación. JIT traduce código intermedio a demanda durante la ejecución y puede optimizar con información de la carga. Cotejo directo con ITIC Academy, bloque 30, §§ 7.2–7.3, y Microsoft Learn. Cotejo directo con ITIC Academy, bloque 30, §§ 7.2–7.3. Se mantiene que AOT y JIT tienen trade-offs, no una superioridad universal de rendimiento.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "30 · Tecnologías de sistemas de información, versión 2026.1, §§ 7.2–7.3 (CIL, JIT y AOT).",
+        "estado": "revisada",
+        "nota": "Cotejo directo con ITIC Academy, bloque 30, §§ 7.2–7.3. Se mantiene que AOT y JIT tienen trade-offs, no una superioridad universal de rendimiento."
+      },
+      "etiquetas": [
+        "compilación AOT",
+        "compilación JIT",
+        "código nativo",
+        "dependencia de plataforma",
+        ".NET",
+        "rendimiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/",
+            "referencia": "Microsoft Learn, Native AOT deployment: Native AOT compila IL a código nativo durante la publicación, antes de la ejecución, y se dirige a un entorno/plataforma concreta."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process",
+            "referencia": "Microsoft Learn, Managed execution process: el JIT traduce CIL a código nativo a demanda durante la ejecución; su optimización y resultado dependen del runtime, arquitectura y carga."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/maui/deployment/runtimes-compilation",
+            "referencia": "Microsoft Learn, Runtimes and compilation: la tabla comparativa muestra ventajas distintas entre JIT, AOT y ReadyToRun; JIT optimizado puede alcanzar mayor rendimiento sostenido y no existe una garantía universal de que AOT sea más rápido."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, Tecnologías de sistemas de la información, versión 2026.1, §§ 7.2–7.3: CIL, compilación JIT/AOT y ejecución .NET."
+          }
+        ],
+        "observaciones": "Se corrige la pregunta negativa que no tenía una respuesta falsa defendible: AOT suele dirigirse a una plataforma concreta, pero no garantiza mayor rendimiento para toda aplicación. JIT traduce código intermedio a demanda durante la ejecución y puede optimizar con información de la carga. Cotejo directo con ITIC Academy, bloque 30, §§ 7.2–7.3, y Microsoft Learn. Cotejo directo con ITIC Academy, bloque 30, §§ 7.2–7.3. Se mantiene que AOT y JIT tienen trade-offs, no una superioridad universal de rendimiento."
+      }
     },
     {
       "id": 1231,
