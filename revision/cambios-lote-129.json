@@ -1,0 +1,367 @@
+{
+  "fecha": "2026-10-24",
+  "alcance": "IDs 961–965; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 961,
+      "original": {
+        "id": 961,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un diagrama de comunicación UML, en el que un objeto :Agenda envía un mensaje crearEvento(DescripcionEvento desc, int prioridad) a un objeto :Calendario, ¿qué tipo de relación existe entre las clases Calendario y DescripcionEvento?",
+        "opciones": [
+          "Navegabilidad.",
+          "Dependencia.",
+          "Realización.",
+          "Herencia."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 961,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La operación crearEvento(DescripcionEvento desc, int prioridad) está declarada en la clase Calendario. En UML, ¿qué relación entre las clases Calendario y DescripcionEvento expresa que el tipo de un parámetro se usa en la firma de la operación?",
+        "opciones": [
+          "Navegabilidad de una asociación.",
+          "Dependencia de Calendario hacia DescripcionEvento.",
+          "Realización de una interfaz.",
+          "Herencia entre las clases."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "El mensaje se dirige a un objeto de clase Calendario y la operación receptora declara un parámetro de tipo DescripcionEvento. En un diagrama de clases, ese uso de un clasificador en la firma de una operación se representa como dependencia desde Calendario (cliente) hacia DescripcionEvento (proveedor); no implica herencia, realización ni navegabilidad de una asociación. Se reformula para explicitar que la operación pertenece a Calendario y que se pregunta por la relación entre clases, no por el enlace de comunicación entre objetos. Correspondencia cotejada con A1-89 y A2-III-9.",
+        "clasificacion": {
+          "A1": [
+            "A1-89"
+          ],
+          "A2": [
+            "A2-III-9"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "UML",
+          "dependencia",
+          "firma de operación",
+          "tipo de parámetro"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+              "referencia": "OMG, Unified Modeling Language 2.5.1: define dependencia como relación de uso entre elementos y establece los parámetros tipados de las operaciones."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view",
+              "referencia": "ITIC Academy, 38_ITIC_Academy_Analisis_Diseno_Construccion_SI_2026.pdf, versión 2026.1: dependencia entre clases, garantía de calidad y pruebas de regresión."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I: programa oficial A1; cotejo de clasificación."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX: programa oficial A2 de ingreso libre; cotejo de clasificación."
+            }
+          ],
+          "observaciones": "El mensaje se dirige a un objeto de clase Calendario y la operación receptora declara un parámetro de tipo DescripcionEvento. En un diagrama de clases, ese uso de un clasificador en la firma de una operación se representa como dependencia desde Calendario (cliente) hacia DescripcionEvento (proveedor); no implica herencia, realización ni navegabilidad de una asociación. Se reformula para explicitar que la operación pertenece a Calendario y que se pregunta por la relación entre clases, no por el enlace de comunicación entre objetos. Correspondencia cotejada con A1-89 y A2-III-9."
+        }
+      }
+    },
+    {
+      "id": 962,
+      "original": {
+        "id": 962,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El conjunto de actividades que es necesario realizar para asegurar que el producto software responde a las necesidades expresadas por el usuario se denomina:",
+        "opciones": [
+          "Control de calidad",
+          "Modelo de calidad",
+          "Garantía de calidad",
+          "Plan General de Calidad"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 962,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según ISO 9000:2015, la parte de la gestión de la calidad enfocada en proporcionar confianza en que se cumplirán los requisitos de calidad se denomina:",
+        "opciones": [
+          "Control de calidad.",
+          "Modelo de calidad.",
+          "Aseguramiento de la calidad.",
+          "Plan general de calidad."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C era la pretendida, pero el original mezclaba «necesidades expresadas por el usuario» con el nombre del proceso y podía confundirse con validación o control. Se reescribe con la definición vigente de ISO 9000:2015: aseguramiento proporciona confianza en el cumplimiento de requisitos de calidad; el control se enfoca en cumplirlos. El material académico trata separadamente QA, control y validación. Clasificación cotejada con A1-96/A1-98 y A2-III-13.",
+        "clasificacion": {
+          "A1": [
+            "A1-96",
+            "A1-98"
+          ],
+          "A2": [
+            "A2-III-13"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "aseguramiento de la calidad",
+          "ISO 9000",
+          "calidad del software"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso%3A9000%3Aed-5%3Av1%3Aen",
+              "referencia": "ISO 9000:2015, 3.2.7: aseguramiento de la calidad es la parte de la gestión de calidad enfocada en dar confianza en que se cumplirán los requisitos de calidad; distingue control de calidad en 3.2.8."
+            },
+            {
+              "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view",
+              "referencia": "ITIC Academy, 39_Bloque_39_ITIC_Academy_Calidad_Mantenimiento_2026.pdf, versión 2026.1: aseguramiento de calidad y modelo ISO/IEC 25010."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view",
+              "referencia": "ITIC Academy, 38_ITIC_Academy_Analisis_Diseno_Construccion_SI_2026.pdf, versión 2026.1: dependencia entre clases, garantía de calidad y pruebas de regresión."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I: programa oficial A1; cotejo de clasificación."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX: programa oficial A2 de ingreso libre; cotejo de clasificación."
+            }
+          ],
+          "observaciones": "La respuesta C era la pretendida, pero el original mezclaba «necesidades expresadas por el usuario» con el nombre del proceso y podía confundirse con validación o control. Se reescribe con la definición vigente de ISO 9000:2015: aseguramiento proporciona confianza en el cumplimiento de requisitos de calidad; el control se enfoca en cumplirlos. El material académico trata separadamente QA, control y validación. Clasificación cotejada con A1-96/A1-98 y A2-III-13."
+        }
+      }
+    },
+    {
+      "id": 963,
+      "original": {
+        "id": 963,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si una vez determinadas las fortalezas y debilidades, así como las amenazas y oportunidades, se define una estrategia defensiva:",
+        "opciones": [
+          "Significa que la empresa está preparada para enfrentarse a las amenazas",
+          "Significa que la empresa se enfrenta a las amenazas externas sin las fortalezas internas necesarias",
+          "Significa que la empresa cuenta con las fortalezas internas y además se le presentan oportunidades externas",
+          "Significa que a la empresa se le presentan oportunidades pero carece de preparación para afrontarlas"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 963,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la matriz TOWS/DAFO, ¿qué caracteriza a la estrategia defensiva FA (fortalezas-amenazas)?",
+        "opciones": [
+          "La organización emplea sus fortalezas internas para responder a amenazas externas.",
+          "La organización se enfrenta a amenazas externas sin fortalezas internas.",
+          "La organización usa fortalezas internas para aprovechar oportunidades externas.",
+          "La organización aprovecha oportunidades externas para corregir debilidades internas."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se precisa «estrategia defensiva» como la combinación FA (fortalezas internas frente a amenazas externas) de la matriz TOWS/DAFO. La opción A expresa el sentido; se evitan las otras combinaciones: FO ofensiva, DO reorientación y DA supervivencia. La terminología se verifica con el artículo original de Weihrich y se coteja con el material de planificación estratégica de ITIC Academy. Clasificación directa A1-35/A1-87; no se fuerza una equivalencia A2 porque el anexo IX no contiene un tema específico de planificación estratégica corporativa.",
+        "clasificacion": {
+          "A1": [
+            "A1-35",
+            "A1-87"
+          ],
+          "A2": [],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "DAFO",
+          "TOWS",
+          "estrategia defensiva",
+          "fortalezas",
+          "amenazas"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1016/0024-6301(82)90120-0",
+              "referencia": "Heinz Weihrich, «The TOWS Matrix—A Tool for Situational Analysis», Long Range Planning 15(2), 1982, pp. 54–66, DOI 10.1016/0024-6301(82)90120-0: combina fortalezas y debilidades internas con oportunidades y amenazas externas para formular estrategias."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view",
+              "referencia": "ITIC Academy, 12_Bloque_12_Directivo_TIC_Planificacion_Estrategica_ITIC_2026.pdf: matriz DAFO/CAME y las combinaciones F+O, F+A, D+O y D+A; identifica F+A como defensiva."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I: programa oficial A1; cotejo de clasificación."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX: programa oficial A2 de ingreso libre; cotejo de clasificación."
+            }
+          ],
+          "observaciones": "Se precisa «estrategia defensiva» como la combinación FA (fortalezas internas frente a amenazas externas) de la matriz TOWS/DAFO. La opción A expresa el sentido; se evitan las otras combinaciones: FO ofensiva, DO reorientación y DA supervivencia. La terminología se verifica con el artículo original de Weihrich y se coteja con el material de planificación estratégica de ITIC Academy. Clasificación directa A1-35/A1-87; no se fuerza una equivalencia A2 porque el anexo IX no contiene un tema específico de planificación estratégica corporativa."
+        }
+      }
+    },
+    {
+      "id": 964,
+      "original": {
+        "id": 964,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En MÉTRICA V3, ¿cuál de los distintos tipos de pruebas está destinado a “eliminar el efecto onda, es decir, comprobar que los cambios sobre un componente de información, no introducen un comportamiento no deseado o errores adicionales en otros componentes no modificados”?",
+        "opciones": [
+          "Pruebas de integración",
+          "Pruebas de implantación",
+          "Pruebas de aceptación",
+          "Pruebas de regresión"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 964,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En MÉTRICA V3, ¿cuál de los distintos tipos de pruebas está destinado a “eliminar el efecto onda, es decir, comprobar que los cambios sobre un componente de información, no introducen un comportamiento no deseado o errores adicionales en otros componentes no modificados”?",
+        "opciones": [
+          "Pruebas de integración",
+          "Pruebas de implantación",
+          "Pruebas de aceptación",
+          "Pruebas de regresión"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se confirma la opción D mediante la tarea MSI 3.3 de MÉTRICA v3: las pruebas de regresión comprueban que un cambio no cause comportamientos no deseados ni errores adicionales en componentes no modificados. La propia metodología describe explícitamente este objetivo como eliminación del «efecto onda». El concepto continúa vigente aunque la referencia metodológica sea histórica. Correspondencia cotejada con A1-95/A1-96 y A2-III-7.",
+        "clasificacion": {
+          "A1": [
+            "A1-95",
+            "A1-96"
+          ],
+          "A2": [
+            "A2-III-7"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "MÉTRICA v3",
+          "pruebas de regresión",
+          "efecto onda",
+          "mantenimiento de software"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ae15c0c5b-dd9c-4e48-82e3-9e36ba18e839/METRICA_V3_Mantenimiento_de_Sistemas_de_Informacion.pdf",
+              "referencia": "Ministerio de Administraciones Públicas, MÉTRICA v3, MSI 3.3 «Especificación del Plan de Pruebas de Regresión»: evitar el efecto onda y errores en componentes no modificados."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view",
+              "referencia": "ITIC Academy, 38_ITIC_Academy_Analisis_Diseno_Construccion_SI_2026.pdf, versión 2026.1: dependencia entre clases, garantía de calidad y pruebas de regresión."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I: programa oficial A1; cotejo de clasificación."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX: programa oficial A2 de ingreso libre; cotejo de clasificación."
+            }
+          ],
+          "observaciones": "Se confirma la opción D mediante la tarea MSI 3.3 de MÉTRICA v3: las pruebas de regresión comprueban que un cambio no cause comportamientos no deseados ni errores adicionales en componentes no modificados. La propia metodología describe explícitamente este objetivo como eliminación del «efecto onda». El concepto continúa vigente aunque la referencia metodológica sea histórica. Correspondencia cotejada con A1-95/A1-96 y A2-III-7."
+        }
+      }
+    },
+    {
+      "id": 965,
+      "original": {
+        "id": 965,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuáles son los criterios agentes en el modelo de calidad EFQM de excelencia?",
+        "opciones": [
+          "Liderazgo, personal, política y estrategia, colaboradores y recursos, procesos",
+          "Liderazgo, personal, política y estrategia, innovación y aprendizaje, procesos",
+          "Rendimiento, personal, política y estrategia, colaboradores y recursos, procesos",
+          "Ninguna de las anteriores"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 965,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo histórico EFQM 2013, ¿cuáles eran los cinco criterios agentes facilitadores?",
+        "opciones": [
+          "Liderazgo; personas; política y estrategia; alianzas y recursos; procesos, productos y servicios.",
+          "Liderazgo; personas; política y estrategia; innovación y aprendizaje; procesos.",
+          "Rendimiento; personas; política y estrategia; alianzas y recursos; procesos.",
+          "Ninguna de las anteriores."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se conserva la clave A como respuesta al modelo EFQM 2013, pero se explicita el año y se completa «procesos» como «procesos, productos y servicios», nombre del quinto criterio facilitador de esa edición. Se clasifica como histórica: el modelo EFQM actual se estructura en Direction, Execution y Results y no conserva la división de criterios entre agentes y resultados. El documento de academia actualizado distingue EFQM 2025 del CAF 2020, que sí mantiene cinco agentes facilitadores; por eso no se presenta la respuesta de 2013 como modelo vigente. Correspondencia A1-103; el anexo IX A2 no contiene correspondencia directa específica.",
+        "clasificacion": {
+          "A1": [
+            "A1-103"
+          ],
+          "A2": [],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "EFQM 2013",
+          "criterios agentes facilitadores",
+          "modelo histórico de excelencia"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://digital.gob.es/funcion-publica/gobernanza-publica/calidad-administraciones-publicas/metodologias-y-guias/modelo-efqm-2013.html",
+              "referencia": "Ministerio para la Transformación Digital y de la Función Pública, guía oficial «Modelo EFQM 2013», edición histórica y adaptación para administraciones públicas."
+            },
+            {
+              "url": "https://efqm.org/the-efqm-model/",
+              "referencia": "EFQM, modelo vigente: estructura en tres dimensiones, Direction, Execution y Results; ya no organiza los criterios como agentes facilitadores/resultados."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view",
+              "referencia": "ITIC Academy, 3_Bloque_03_Actuacion_Administrativa_ITIC_2026.pdf: distingue EFQM 2025 del CAF 2020 y sus cinco agentes facilitadores; material contextual para diferenciar versiones."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I: programa oficial A1; cotejo de clasificación."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX: programa oficial A2 de ingreso libre; cotejo de clasificación."
+            }
+          ],
+          "observaciones": "Se conserva la clave A como respuesta al modelo EFQM 2013, pero se explicita el año y se completa «procesos» como «procesos, productos y servicios», nombre del quinto criterio facilitador de esa edición. Se clasifica como histórica: el modelo EFQM actual se estructura en Direction, Execution y Results y no conserva la división de criterios entre agentes y resultados. El documento de academia actualizado distingue EFQM 2025 del CAF 2020, que sí mantiene cinco agentes facilitadores; por eso no se presenta la respuesta de 2013 como modelo vigente. Correspondencia A1-103; el anexo IX A2 no contiene correspondencia directa específica."
+        }
+      }
+    }
+  ]
+}

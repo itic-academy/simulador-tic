@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 128 (IDs 956–960). Acumulado: 960 preguntas revisadas, 918 verificadas (259 vigentes, 571 corregidas y 88 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.163 sin revisión de contenido. Hay 669 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 129 (IDs 961–965). Acumulado: 965 preguntas revisadas, 923 verificadas (260 vigentes, 574 corregidas y 89 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.158 sin revisión de contenido. Hay 673 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -29,7 +29,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.163 preguntas sin revisión de contenido. Siguiente ID: 961. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.158 preguntas sin revisión de contenido. Siguiente ID: 966. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -807,3 +807,13 @@ Se corrige el error ortográfico de throughput y se delimita como caudal efectiv
 Cotejo temático con Drive: el bloque 39 «Calidad y mantenimiento» presenta ISO/IEC 25010:2023 y mantenibilidad; el tema 15 de metodologías/ciclo de vida trata la espiral; el bloque 41 ITIL/COBIT recoge incidentes, impacto y urgencia y actualiza el material a Version 5; el bloque 9 de organización y gestión trata evaluación del rendimiento, benchmark y throughput. Los PDFs se cotejaron en esos apartados y se contrastaron con fuentes técnicas primarias; no se auditó todo Drive. La clasificación se comprobó en BOE-A-2025-25938, anexo I (A1-91, A1-98, A1-86 y A1-106) y BOE-A-2025-26262, anexo IX (A2-IV-4, A2-III-13, A2-III-1 y A2-IV-3). No se localizaron correcciones de esas convocatorias en las búsquedas oficiales efectuadas para el lote; la comprobación global y exhaustiva sigue pendiente.
 
 Fuentes técnicas: IETF RFC 6349 y RFC 1242; ISO/IEC 25010:2023; NASA Software Engineering Handbook SWE-019 y Boehm (1988); PeopleCert/ITIL.com para el marco ITIL Version 5; guía ITIL 4 únicamente como referencia histórica y no como verificación de la regla en Version 5; SPEC CPU2026 y CPU2000. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote: banco estructuralmente válido, 960 registros de revisión y 11.163 preguntas sin cambios frente al commit original. Una pregunta permanece pendiente de fuente.
+
+## Lote 129 — 24 de octubre
+
+IDs 961–965 revisados individualmente: una vigente, tres corregidas y una histórica. Acumulado: 965 examinadas, 923 verificadas (260 vigentes, 574 corregidas y 89 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 673 preguntas con cambios de contenido. Quedan 11.158 sin revisar; siguiente ID 966.
+
+Se aclara la dependencia UML entre la clase que declara una operación y el tipo usado por uno de sus parámetros, separándola de la comunicación entre instancias (961). La garantía de calidad se actualiza a la definición de ISO 9000:2015 y se distingue del control de calidad (962). La estrategia DAFO se especifica como FA: fortalezas internas para responder a amenazas externas, frente a FO, DO y DA (963). Se confirma la definición literal de las pruebas de regresión de MÉTRICA v3, tarea MSI 3.3 (964). EFQM se delimita a la edición 2013: se completa el quinto criterio facilitador como «procesos, productos y servicios» y se marca histórica porque el modelo vigente se estructura en Direction, Execution y Results (965).
+
+Cotejo temático con Drive: el bloque 38 de análisis/diseño incluye dependencia, aseguramiento de calidad y regresión; el bloque 39 de calidad separa aseguramiento y control; el bloque 12 de dirección TIC identifica explícitamente F+A como estrategia defensiva; el bloque 3 actualizado distingue el EFQM vigente del CAF 2020. Se estudiaron los apartados pertinentes de esos documentos, no todos los materiales de academia. Correspondencias del BOE: A1-89/A2-III-9 (961), A1-96/A1-98/A2-III-13 (962), A1-35/A1-87 (963; sin tema A2 directo), A1-95/A1-96/A2-III-7 (964) y A1-103 (965; sin tema A2 directo). Se consultaron las convocatorias A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262; la revisión exhaustiva de correcciones y modificaciones posteriores sigue pendiente.
+
+Fuentes técnicas: OMG UML 2.5.1; ISO 9000:2015, términos 3.2.7–3.2.8; Weihrich, «The TOWS Matrix», Long Range Planning 15(2), 1982, DOI 10.1016/0024-6301(82)90120-0; Ministerio de Administraciones Públicas, MÉTRICA v3, MSI 3.3; Ministerio para la Transformación Digital y de la Función Pública, guía EFQM 2013; EFQM, modelo vigente. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote: banco estructuralmente válido, 965 registros de revisión y 11.158 preguntas restantes idénticas al commit original.
