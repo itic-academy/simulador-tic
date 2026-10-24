@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 195 (IDs 1291–1295). Acumulado: 1.295 preguntas examinadas, 1.252 verificadas (310 vigentes, 830 corregidas y 112 históricas) y 43 pendientes de resolver (24 de fuente y 19 de ambigüedad); quedan 10.828 sin revisar de contenido. Hay 961 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 196 (IDs 1296–1300). Acumulado: 1.300 preguntas examinadas, 1.256 verificadas (311 vigentes, 832 corregidas y 113 históricas) y 44 pendientes de resolver (24 de fuente y 20 de ambigüedad); quedan 10.823 sin revisar de contenido. Hay 965 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -1502,6 +1502,16 @@ Cotejo con ITIC Academy 2026.1: bloque 29, apartado 2.2 (claves); bloque 18 (pro
 Fuentes primarias: [OpenALG, The Relational Model—Keys](https://alg.manifoldapp.org/read/guide-to-database-systems/section/b8bd26b4-9bbd-4159-86dc-f11c7695fd0c); [GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.es.html#ModifiedJustBinary) y [GNU GPLv3, § 6](https://www.gnu.org/licenses/gpl-3.0.html#section6); [scikit-learn, Clustering](https://scikit-learn.org/stable/modules/clustering.html); [MDN, CSS ID selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/ID_selectors); [RD 255/2025, texto consolidado, art. 11.3](https://www.boe.es/eli/es/rd/2025/04/01/255/con) y [RD 1553/2005, texto consolidado y nota de derogación](https://www.boe.es/buscar/act.php?id=BOE-A-2005-21163&p=20250402&tn=0). Los documentos de academia están citados en cada ficha y enlazados en el registro de cambios.
 
 `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.285 registros de revisión y 10.838 preguntas restantes idénticas al commit original.
+
+## Lote 196 — 24 de octubre
+
+IDs 1296–1300 examinados individualmente: una vigente, dos corregidas, una histórica y una pendiente de ambigüedad. Acumulado: 1.300 examinadas, 1.256 verificadas (311 vigentes, 832 corregidas y 113 históricas) y 44 pendientes (24 de fuente y 20 de ambigüedad); 965 preguntas con cambios de contenido. Quedan 10.823 sin revisar; siguiente ID 1.301.
+
+Se precisa 1296: XLink expresa el vínculo y XPointer direcciona fragmentos XML; se conserva la combinación y se corrige el uso indiferenciado de “localizador”. En 1297 se identifica WFS como el servicio OGC clásico de acceso a entidades geográficas y propiedades, distinguiéndolo de WMS y CSW; OGC mantiene el estándar WFS 2.0.2 e impulsa OGC API–Features para servicios nuevos. En 1298 se conserva el caso de IDS 11.70 como histórico: versión y configuración de chunks compatibles, logging para replicación, y compresión no requerida ni ejecutada en la secundaria HDR; el enunciado revisado pregunta explícitamente por la condición incorrecta. La 1299 queda pendiente: sin fecha ni criterio, las categorías MOOC/marketplace/suscripción no son disjuntas; Lynda.com migró a LinkedIn Learning en 2021 y fuentes comerciales y académicas clasifican de forma distinta a Udemy y Tutellus. No se certifica una terna como única y se preserva literalmente el original sin validar su clave. En 1300 se confirma NAS por el dispositivo con IP propia que sirve ficheros a clientes de la LAN, separándolo de SAN (acceso de bloque) y RAID (organización de discos). Los originales íntegros constan en `cambios-lote-196.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 30, versión 2026.1 (XML/enlaces web); bloque 33, versión 2026 (E-Learning/MOOC y SIG); bloque 29, versión 2026.1 (SGBD y administración); y bloque 26, versión 2026.1 (hardware y almacenamiento). Correspondencias con BOE-A-2025-25938, anexo I: A1-77, A1-65, A1-74, A1-57, A1-63, A1-73 y A1-56; y BOE-A-2025-26262, anexo IX: A2-II-9, A2-III-12, A2-II-5, A2-IV-2, A2-II-16 y A2-IV-5. El tema da encaje programático, no sustituye la verificación de la respuesta.
+
+Fuentes primarias de especificaciones y producto: W3C XLink 1.1 y XPointer Framework, estándar OGC WFS 2.0.2, documentación IBM Informix y documentación IBM sobre NAS/SAN. Fuentes complementarias para la clasificación comercial de MOOCs: anuncio corporativo de LinkedIn, white paper de Tutellus y estudio académico de Comunicar; se usan para constatar la variación de uso, no como criterio normativo. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.300 registros de revisión y 10.823 preguntas restantes idénticas al commit original.
 
 ## Lote 195 — 24 de octubre
 

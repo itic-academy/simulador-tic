@@ -57861,43 +57861,172 @@
       "id": 1296,
       "bloque": 0,
       "tema": 0,
-      "texto": "Para especificar localizadores en XML se usa:",
+      "texto": "Para enlazar recursos XML y señalar fragmentos concretos dentro de ellos, ¿qué especificaciones se complementan?",
       "opciones": [
-        "sólo el estándar Xlink",
-        "sólo el estándar Xpointer",
-        "los estándares Xlink y Xpointer",
-        "ninguno de los anteriores"
+        "Solo XLink, que además define por sí mismo todas las expresiones de fragmento XML.",
+        "Solo XPointer, que reemplaza la necesidad de expresar enlaces entre recursos.",
+        "XLink para expresar vínculos y XPointer para direccionar fragmentos XML.",
+        "Ninguna: XML no admite mecanismos estandarizados de enlace o direccionamiento de fragmentos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se precisa el uso de los estándares: XLink expresa vínculos entre recursos XML y XPointer sirve para direccionar partes o fragmentos de recursos XML. No son dos alternativas excluyentes para el caso descrito. La pregunta original usaba “localizador” como si ambos estándares fueran idénticos; se reformula para asignar cada función. Cotejo temático con ITIC Academy: Bloque 30, Tecnologías de sistemas de información, versión 2026.1 (XML y tecnologías web). Correspondencia orientativa: A1-77/A2-II-9.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": "Bloque 30, Tecnologías de sistemas de información, versión 2026.1 (XML y tecnologías web).",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: Bloque 30, Tecnologías de sistemas de información, versión 2026.1 (XML y tecnologías web). Correspondencia orientativa con el programa oficial: A1-77/A2-II-9."
+      },
+      "etiquetas": [
+        "XML",
+        "XLink",
+        "XPointer",
+        "direccionamiento",
+        "fragment identifier"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/xlink11/",
+            "referencia": "W3C Recommendation, XML Linking Language (XLink) Version 1.1: define atributos y elementos para expresar vínculos entre recursos XML; no debe confundirse con el mecanismo que selecciona fragmentos XML."
+          },
+          {
+            "url": "https://www.w3.org/TR/xptr-framework/",
+            "referencia": "W3C Recommendation, XPointer Framework: define un sistema extensible de direccionamiento de partes/fragmentos de recursos XML y puede emplearse como sintaxis de fragment identifier."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, Tecnologías de sistemas de información, versión 2026.1: XML y tecnologías de enlaces web."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, Tecnologías de sistemas de información, versión 2026.1: XML y tecnologías de enlaces web. Correspondencia: A1-77/A2-II-9."
+          }
+        ],
+        "observaciones": "Se precisa el uso de los estándares: XLink expresa vínculos entre recursos XML y XPointer sirve para direccionar partes o fragmentos de recursos XML. No son dos alternativas excluyentes para el caso descrito. La pregunta original usaba “localizador” como si ambos estándares fueran idénticos; se reformula para asignar cada función. Cotejo temático con ITIC Academy: Bloque 30, Tecnologías de sistemas de información, versión 2026.1 (XML y tecnologías web). Correspondencia orientativa: A1-77/A2-II-9."
+      }
     },
     {
       "id": 1297,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué define el Web Feature Service (WFS) de la OGC?",
+      "texto": "En el estándar clásico Web Feature Service (WFS) de OGC, ¿qué tipo de acceso proporciona principalmente?",
       "opciones": [
-        "Servicio web para consultar objetos geográficos (vectorial)",
-        "Servicio web para la generación de cartografía",
-        "Servicio web para consulta de metadatos y catálogos de información geográfica",
-        "Servicio web para consultar atributos del espacio (ráster)"
+        "Acceso detallado a entidades geográficas y a sus propiedades, para consultarlas y, si se habilita, gestionarlas.",
+        "Generación y entrega únicamente de imágenes cartográficas renderizadas.",
+        "Consulta exclusiva de metadatos y registros de catálogo.",
+        "Consulta de píxeles de coberturas ráster como única función."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "WFS es el servicio web clásico de OGC para descubrir, consultar y, según operaciones habilitadas, gestionar entidades geográficas y sus propiedades, habitualmente datos vectoriales. No es el servicio de mapas renderizados (WMS) ni el catálogo de metadatos (CSW). Se concreta que se pregunta por el estándar WFS; para nuevos desarrollos OGC promueve OGC API – Features. Cotejo con ITIC Academy, bloque 33, GIS. Cotejo temático con ITIC Academy: Bloque 33, Temas 73–74 E-Learning y GIS, versión 2026 (servicios y datos geográficos). Correspondencia orientativa: A1-65/A1-74/A2-III-12.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-74"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "Bloque 33, Temas 73–74 E-Learning y GIS, versión 2026 (servicios y datos geográficos).",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: Bloque 33, Temas 73–74 E-Learning y GIS, versión 2026 (servicios y datos geográficos). Correspondencia orientativa con el programa oficial: A1-65/A1-74/A2-III-12."
+      },
+      "etiquetas": [
+        "OGC",
+        "WFS",
+        "Web Feature Service",
+        "entidades geográficas",
+        "vectorial",
+        "OGC API Features"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.ogc.org/standards/wfs/",
+            "referencia": "OGC Web Feature Service Standard (WFS 2.0.2): permite acceso detallado a información geográfica al nivel de entidades y propiedades; incluye operaciones de consulta y transacción. OGC recomienda considerar OGC API – Features para desarrollos nuevos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 33, Temas 73–74 E-Learning y GIS, versión 2026, apartado SIG y servicios geográficos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 33, Temas 73–74 E-Learning y GIS, versión 2026, apartado SIG y servicios geográficos. Correspondencia: A1-65/A1-74/A2-III-12."
+          }
+        ],
+        "observaciones": "WFS es el servicio web clásico de OGC para descubrir, consultar y, según operaciones habilitadas, gestionar entidades geográficas y sus propiedades, habitualmente datos vectoriales. No es el servicio de mapas renderizados (WMS) ni el catálogo de metadatos (CSW). Se concreta que se pregunta por el estándar WFS; para nuevos desarrollos OGC promueve OGC API – Features. Cotejo con ITIC Academy, bloque 33, GIS. Cotejo temático con ITIC Academy: Bloque 33, Temas 73–74 E-Learning y GIS, versión 2026 (servicios y datos geográficos). Correspondencia orientativa: A1-65/A1-74/A2-III-12."
+      }
     },
     {
       "id": 1298,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un cluster Informix 11 HDR, el servidor primario y el secundario necesitan cumplir (señale la respuesta INCORRECTA):",
+      "texto": "En una pareja de alta disponibilidad HDR de IBM Informix Dynamic Server 11.70, señale la afirmación INCORRECTA:",
       "opciones": [
-        "Ejecutar la misma versión de Informix",
-        "Los chunks deben tener los mismos nombres de ruta",
-        "Todas las bases de datos a replicar tienen que tener activada la anotación cronológica (transaction logging).",
-        "Tanto el servidor primario como el secundario deben usar compresión de datos."
+        "Los servidores primario y secundario deben usar la misma versión de IDS.",
+        "La configuración de los chunks (incluidas sus rutas) debe ser compatible para que la secundaria replique la instancia.",
+        "Las bases que se quieran replicar deben tener activado el transaction logging.",
+        "La secundaria HDR debe ejecutar compresión de disco, aunque el primario no la use."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se acota a IDS 11.70 y se conserva como pregunta histórica de administración. La versión y la geometría/configuración de chunks deben ser compatibles en el par HDR y las bases replicadas necesitan transaction logging. No es requisito que ambos servidores ejecuten compresión: IBM indica que una secundaria HDR no debe ejecutar operaciones de compresión; las filas que el primario ya comprimió se replican como datos comprimidos. Así, la afirmación “ambos deben usar compresión” es la incorrecta. Cotejo temático con ITIC Academy, bloque 29; la versión antigua se identifica expresamente. Cotejo temático con ITIC Academy: Bloque 29, Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (SGBD y disponibilidad). Correspondencia orientativa: A1-57/A1-63/A2-II-5/A2-IV-2.",
+      "clasificacion": {
+        "A1": [
+          "A1-57",
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-IV-2"
+        ],
+        "bloque_academia": "Bloque 29, Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (SGBD y disponibilidad).",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: Bloque 29, Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (SGBD y disponibilidad). Correspondencia orientativa con el programa oficial: A1-57/A1-63/A2-II-5/A2-IV-2."
+      },
+      "etiquetas": [
+        "Informix",
+        "HDR",
+        "alta disponibilidad",
+        "transaction logging",
+        "chunks",
+        "compresión",
+        "histórica-IDS-11"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg247488.pdf",
+            "referencia": "IBM Redbooks, Informix Dynamic Server 11: Extending Availability and Replication, capítulo 3: HDR requiere instancias de la misma versión y configuración de dispositivos/chunks espejada, incluidos paths; la secundaria reproduce logs del primario."
+          },
+          {
+            "url": "https://publib.boulder.ibm.com/epubs/html/25122672/admin650.htm",
+            "referencia": "IBM Informix Administrator’s Guide, requisitos de configuración HDR: misma versión; mismos dbspaces/chunks, tamaños, paths y offsets."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/informix-servers/14.10.0?topic=clusters-database-data-requirements",
+            "referencia": "IBM Informix 14.10, Database and data requirements for clusters: las bases que se replican deben tener transaction logging; la secundaria HDR no debe ejecutar operaciones de compresión de disco."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, versión 2026.1: SGBD, alta disponibilidad y administración de bases de datos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, versión 2026.1: SGBD, alta disponibilidad y administración de bases de datos. Correspondencia: A1-57/A1-63/A2-II-5/A2-IV-2."
+          }
+        ],
+        "observaciones": "Se acota a IDS 11.70 y se conserva como pregunta histórica de administración. La versión y la geometría/configuración de chunks deben ser compatibles en el par HDR y las bases replicadas necesitan transaction logging. No es requisito que ambos servidores ejecuten compresión: IBM indica que una secundaria HDR no debe ejecutar operaciones de compresión; las filas que el primario ya comprimió se replican como datos comprimidos. Así, la afirmación “ambos deben usar compresión” es la incorrecta. Cotejo temático con ITIC Academy, bloque 29; la versión antigua se identifica expresamente. Cotejo temático con ITIC Academy: Bloque 29, Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (SGBD y disponibilidad). Correspondencia orientativa: A1-57/A1-63/A2-II-5/A2-IV-2."
+      }
     },
     {
       "id": 1299,
@@ -57911,21 +58040,111 @@
         "Lynda, Udemy e iMOOC."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Pendiente de ambigüedad: el enunciado no fija fecha ni criterio para llamar “plataforma MOOC”. Lynda.com dejó de ser una marca independiente tras su transición a LinkedIn Learning en 2021; Udemy se describe como marketplace y Tutellus ofrece una mezcla de formatos. La literatura académica ha incluido Udemy/Tutellus en muestras de MOOCs, pero también advierte que no todos sus cursos cumplen la definición. No se certifica ninguna terna como única sin una fuente/periodo de referencia; se preserva intacto el original y su clave histórica no se presenta como verificada. Cotejo temático con ITIC Academy, bloque 33, E-Learning/MOOC. Cotejo temático con ITIC Academy: Bloque 33, E-Learning y GIS, versión 2026 (concepto y plataformas MOOC); clasificación comercial ambigua, pendiente de criterio/fecha. Correspondencia orientativa: A1-73/A2-II-16.",
+      "clasificacion": {
+        "A1": [
+          "A1-73"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": "Bloque 33, E-Learning y GIS, versión 2026 (concepto y plataformas MOOC); clasificación comercial ambigua, pendiente de criterio/fecha.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: Bloque 33, E-Learning y GIS, versión 2026 (concepto y plataformas MOOC); clasificación comercial ambigua, pendiente de criterio/fecha. Correspondencia orientativa con el programa oficial: A1-73/A2-II-16."
+      },
+      "etiquetas": [
+        "MOOC",
+        "E-learning",
+        "Coursera",
+        "Tutellus",
+        "Lynda",
+        "Udemy",
+        "pendiente de criterio y fecha"
+      ],
+      "revision": {
+        "estado": "pendiente_ambiguedad",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://news.linkedin.com/2021/may/lynda-com-sunset",
+            "referencia": "LinkedIn News, 25-05-2021: concluyó la transición de lynda.com a LinkedIn Learning; el nombre Lynda.com no identifica una plataforma actual independiente."
+          },
+          {
+            "url": "https://lib.tutellus.com/ico/pdf/tutellus.io_whitepaper_v5.1.1_en.pdf",
+            "referencia": "Tutellus, white paper v5.1: distingue “MOOC platforms” como Coursera/edX de modelos de suscripción como Lynda y marketplaces como Udemy; por ser una fuente promocional se usa como evidencia de que las etiquetas comerciales no son uniformes, no como taxonomía normativa."
+          },
+          {
+            "url": "https://cradall.org/sites/default/files/comunicar44-en_0.pdf",
+            "referencia": "Estudio académico publicado en Comunicar, “MOOCs in Education”: incluye Tutellus y Udemy en su muestra de plataformas MOOC, pero advierte que parte de su oferta no se ajusta al concepto. La clasificación requiere fijar criterio y periodo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 33, E-Learning y GIS, versión 2026, apartado E-Learning/MOOC."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 33, E-Learning y GIS, versión 2026, apartado E-Learning/MOOC. Correspondencia: A1-73/A2-II-16."
+          }
+        ],
+        "observaciones": "Pendiente de ambigüedad: el enunciado no fija fecha ni criterio para llamar “plataforma MOOC”. Lynda.com dejó de ser una marca independiente tras su transición a LinkedIn Learning en 2021; Udemy se describe como marketplace y Tutellus ofrece una mezcla de formatos. La literatura académica ha incluido Udemy/Tutellus en muestras de MOOCs, pero también advierte que no todos sus cursos cumplen la definición. No se certifica ninguna terna como única sin una fuente/periodo de referencia; se preserva intacto el original y su clave histórica no se presenta como verificada. Cotejo temático con ITIC Academy, bloque 33, E-Learning/MOOC. Cotejo temático con ITIC Academy: Bloque 33, E-Learning y GIS, versión 2026 (concepto y plataformas MOOC); clasificación comercial ambigua, pendiente de criterio/fecha. Correspondencia orientativa: A1-73/A2-II-16."
+      }
     },
     {
       "id": 1300,
       "bloque": 0,
       "tema": 0,
-      "texto": "Tres discos duros con una dirección de red única y propia y sirviendo ficheros a usuarios de estaciones de trabajo en LAN es una:",
+      "texto": "Un dispositivo con discos propios, dirección IP en la LAN y que comparte ficheros con varios equipos es, por su función, una:",
       "opciones": [
-        "SAN",
-        "NAS",
-        "RAID",
-        "Cabina de discos"
+        "SAN, que presenta almacenamiento en bloque a los servidores.",
+        "NAS, que ofrece almacenamiento de ficheros a través de la red.",
+        "RAID, que es por sí mismo un servidor de ficheros.",
+        "Cabina de discos, necesariamente conectada mediante un protocolo SAN."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "NAS (Network Attached Storage) es un dispositivo de almacenamiento conectado a la red que sirve ficheros a varios clientes mediante protocolos de archivo. La combinación de dirección IP propia, discos internos y servicio de ficheros en la LAN describe una NAS; RAID es una técnica/conjunto de niveles de redundancia y una cabina no implica por sí sola servicio de ficheros. Cotejo con ITIC Academy, bloque 26, almacenamiento. Cotejo temático con ITIC Academy: Bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1. Correspondencia orientativa: A1-56/A1-57/A2-IV-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-56",
+          "A1-57"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "Bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy: Bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1. Correspondencia orientativa con el programa oficial: A1-56/A1-57/A2-IV-5."
+      },
+      "etiquetas": [
+        "NAS",
+        "Network Attached Storage",
+        "LAN",
+        "servidor de ficheros",
+        "SAN",
+        "RAID"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/think/topics/network-attached-storage",
+            "referencia": "IBM, What is Network Attached Storage?: NAS es un dispositivo dedicado que comparte ficheros por Ethernet/Wi-Fi en una LAN, con acceso normalmente a nivel de fichero; contrasta con SAN a nivel de bloque."
+          },
+          {
+            "url": "https://www.ibm.com/think/topics/san-vs-nas",
+            "referencia": "IBM, Storage Area Network (SAN) vs. Network Attached Storage (NAS): NAS sirve ficheros sobre red local; una caja NAS puede tener dirección IP propia, interfaz y varias bahías de disco."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1. Correspondencia: A1-56/A1-57/A2-IV-5."
+          }
+        ],
+        "observaciones": "NAS (Network Attached Storage) es un dispositivo de almacenamiento conectado a la red que sirve ficheros a varios clientes mediante protocolos de archivo. La combinación de dirección IP propia, discos internos y servicio de ficheros en la LAN describe una NAS; RAID es una técnica/conjunto de niveles de redundancia y una cabina no implica por sí sola servicio de ficheros. Cotejo con ITIC Academy, bloque 26, almacenamiento. Cotejo temático con ITIC Academy: Bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1. Correspondencia orientativa: A1-56/A1-57/A2-IV-5."
+      }
     },
     {
       "id": 1301,
