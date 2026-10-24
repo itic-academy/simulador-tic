@@ -47510,10 +47510,10 @@
       "comentarios": "Se formula la pregunta para identificar la retropropagación como procedimiento que propaga el error desde la salida por las capas y obtiene señales/gradientes usados en el ajuste de pesos. No se confunde con el optimizador (por ejemplo, descenso del gradiente), que es quien aplica una regla de actualización concreta. La fuente original presenta el ajuste iterativo de pesos para minimizar una medida de discrepancia; el enunciado evita equiparar toda pérdida con MSE. Cotejo con ITIC Academy, bloque 32, § 10. Cotejo con ITIC Academy, bloque 32, versión 2026.1, § 10 (redes neuronales y entrenamiento supervisado); el artículo original de Nature sustenta el procedimiento de retropropagación.",
       "clasificacion": {
         "A1": [
-          "70"
+          "A1-70"
         ],
         "A2": [
-          "III-5"
+          "A2-III-5"
         ],
         "bloque_academia": "32",
         "estado": "revisada",
@@ -47565,10 +47565,10 @@
       "comentarios": "La respuesta C se conserva, pero el nuevo enunciado limita el supuesto al modelo didáctico de marcos con herencia de la edición 2023 del temario de academia. En esa fuente Z agota las facetas localmente antes de ascender; N asciende buscando la misma faceta antes de pasar a otra. No se presenta Z/N como una norma ni como taxonomía universal: la edición 2026.1 sigue cubriendo marcos, pero no desarrolla esos nombres. Cotejo directo con ambas ediciones de ITIC Academy y correspondencia temática con A1-70/A2-III-5. Cotejo literal con ITIC Academy, bloque 32, versión 2023, apartado de inferencia en marcos con herencia: contiene las dos estrategias Z/N descritas. El bloque 32, versión 2026.1, § 6, mantiene la cobertura de marcos pero no desarrolla esos nombres; por eso el nuevo enunciado atribuye expresamente la taxonomía a la edición 2023.",
       "clasificacion": {
         "A1": [
-          "70"
+          "A1-70"
         ],
         "A2": [
-          "III-5"
+          "A2-III-5"
         ],
         "bloque_academia": "32 (ediciones 2023 y 2026.1; Z/N solo en 2023)",
         "estado": "revisada",
@@ -47622,10 +47622,10 @@
       "comentarios": "El original agrupaba mecanismos de inferencia con formalismos de representación, herramientas de construcción y familias de razonamiento, por lo que la categoría era inconsistente. Se pregunta ahora por dos estrategias de control efectivamente utilizadas en sistemas expertos basados en reglas: encadenamiento hacia delante, desde hechos, y hacia atrás, desde una meta. Cotejo con ITIC Academy, bloque 32, §§ 6.4–6.6, y con NIST SP 500-188. Cotejo con ITIC Academy, bloque 32, versión 2026.1, §§ 6.4–6.6 (sistemas expertos, motores de inferencia y encadenamientos); contrastado con NIST SP 500-188.",
       "clasificacion": {
         "A1": [
-          "70"
+          "A1-70"
         ],
         "A2": [
-          "III-5"
+          "A2-III-5"
         ],
         "bloque_academia": "32",
         "estado": "revisada",
@@ -47681,10 +47681,10 @@
       "comentarios": "La lista original trataba «eficiencia» como una ventaja siempre válida, aunque esta depende de la tarea, la calidad del conocimiento, la integración, el mantenimiento y el coste total. Se delimita la pregunta: permanencia del conocimiento codificado mientras se mantenga el sistema, facilidad de reproducción y consistencia al aplicar las mismas reglas/datos son propiedades típicas; no puede prometerse una mejora universal de eficiencia frente al proceso humano. NIST condiciona la adecuación a un problema concreto y exige valorar productividad y recursos; FHWA trata validación/evaluación como parte crítica. Cotejo temático con ITIC Academy, bloque 32, §§ 6.4–6.6. Cotejo con ITIC Academy, bloque 32, versión 2026.1, §§ 6.4–6.6: arquitectura y límites de los sistemas expertos; el material no presenta una mejora de eficiencia como garantía universal. La aplicabilidad se verifica con NIST y FHWA.",
       "clasificacion": {
         "A1": [
-          "70"
+          "A1-70"
         ],
         "A2": [
-          "III-5"
+          "A2-III-5"
         ],
         "bloque_academia": "32",
         "estado": "revisada",
@@ -47740,12 +47740,12 @@
       "comentarios": "Se mantiene la idea de que OCR, NLP y componentes de IA pueden ampliar algunas soluciones RPA, pero se elimina la lectura de que toda instalación los usa. Microsoft documenta modelos de texto, extracción de entidades/frases, sentimiento y procesamiento de documentos ejecutables en Power Automate; IBM documenta OCR dentro de tareas RPA. La aplicación en contact center también es posible: Microsoft publica un ejemplo de RPA para validar credenciales de clientes. El temario actual de academia cubre IA/OCR y automatización de procesos, pero no presenta RPA como epígrafe independiente; por ello las fuentes de producto verifican el detalle técnico. Las correspondencias A1-90/A2-II-16 se indican como contexto de flujos de trabajo, no como mención literal de RPA. Cotejo con ITIC Academy, bloque 32, versión 2026.1, §§ 1, 12 y 13 (IA, OCR y automatización de procesos). El material no trata RPA en detalle; las capacidades concretas se verifican con documentación primaria de Microsoft e IBM.",
       "clasificacion": {
         "A1": [
-          "70",
-          "84",
-          "90"
+          "A1-70",
+          "A1-84",
+          "A1-90"
         ],
         "A2": [
-          "II-16"
+          "A2-II-16"
         ],
         "bloque_academia": "32 (cobertura parcial; RPA no se desarrolla como epígrafe)",
         "estado": "revisada",
@@ -47804,71 +47804,254 @@
       "id": 1096,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dada una red neuronal constituida por un perceptrón unicapa, cuál de estos métodos NO es empleado para su entrenamiento:",
+      "texto": "En la regla clásica del perceptrón para clasificación binaria, ¿qué información utiliza el procedimiento de entrenamiento para comparar la predicción con el objetivo?",
       "opciones": [
-        "Aprendizaje por refuerzo.",
-        "Aprendizaje supervisado.",
-        "Aprendizaje no supervisado.",
-        "Aprendizaje significativo."
+        "La etiqueta o clase objetivo conocida para cada ejemplo de entrenamiento.",
+        "Únicamente una recompensa escalar posterior a una acción, sin etiquetas de clase.",
+        "Datos sin etiquetas cuyo objetivo es agrupar ejemplos por similitud.",
+        "Solo el siguiente estado de la secuencia, sin objetivo de clasificación."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "El enunciado «perceptrón unicapa» no determina un único paradigma para todas las variantes históricas de aprendizaje. Se sustituye por el caso explícito de la regla clásica del perceptrón binario: se conocen etiquetas/objetivos y se ajustan pesos según el error de clasificación, por lo que el procedimiento descrito es supervisado. No se afirma que todo modelo temprano de Rosenblatt fuese exclusivamente supervisado; su trabajo histórico también exploró adaptación mediante señales de refuerzo. Cotejo temático con ITIC Academy, bloque 32, edición 2026.1, § 10. Cotejo con ITIC Academy, bloque 32, edición 2026.1, § 10; se mantiene la distinción entre el algoritmo clásico supervisado y modelos adaptativos históricos.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "32, § 10",
+        "estado": "revisada",
+        "nota": "Cotejo con ITIC Academy, bloque 32, edición 2026.1, § 10; se mantiene la distinción entre el algoritmo clásico supervisado y modelos adaptativos históricos."
+      },
+      "etiquetas": [
+        "redes neuronales",
+        "perceptrón",
+        "aprendizaje supervisado",
+        "clasificación binaria"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://openlearninglibrary.mit.edu/assets/courseware/v1/8f4f9aca5581dde50291b0d0e29d0148/asset-v1%3AMITx%2B6.036%2B1T2019%2Btype%40asset%2Bblock/notes_chapter_The_Perceptron.pdf",
+            "referencia": "MITx 6.036, The Perceptron: formula el entrenamiento clásico con ejemplos etiquetados (x,y), y ∈ {−1,+1}, y actualiza pesos en función de la discrepancia entre predicción y etiqueta."
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/13602029/",
+            "referencia": "Rosenblatt, F. (1958), “The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain”, Psychological Review 65(6), DOI 10.1037/h0042519. Fuente histórica; sus modelos adaptativos tempranos no deben generalizarse como la regla clásica supervisada."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32, edición 2026.1: § 7.1 (agentes inteligentes) y § 7.3 (resolución distribuida; coordinación, cooperación, competencia y objetivos potencialmente incompatibles); § 10 para aprendizaje y redes neuronales."
+          }
+        ],
+        "observaciones": "El enunciado «perceptrón unicapa» no determina un único paradigma para todas las variantes históricas de aprendizaje. Se sustituye por el caso explícito de la regla clásica del perceptrón binario: se conocen etiquetas/objetivos y se ajustan pesos según el error de clasificación, por lo que el procedimiento descrito es supervisado. No se afirma que todo modelo temprano de Rosenblatt fuese exclusivamente supervisado; su trabajo histórico también exploró adaptación mediante señales de refuerzo. Cotejo temático con ITIC Academy, bloque 32, edición 2026.1, § 10. Cotejo con ITIC Academy, bloque 32, edición 2026.1, § 10; se mantiene la distinción entre el algoritmo clásico supervisado y modelos adaptativos históricos."
+      }
     },
     {
       "id": 1097,
       "bloque": 0,
       "tema": 0,
-      "texto": "La resolución distribuida de problemas (RDP) estudia sistemas inteligentes distribuidos, cuyos agentes cumplen unas características mínimas de:",
+      "texto": "¿Qué caracteriza de forma general a un sistema de resolución distribuida de problemas?",
       "opciones": [
-        "Benevolencia, objetivos compartidos, diseño central",
-        "Benevolencia, objetivos compartidos, diseño distribuido",
-        "Benevolencia, objetivos propios. diseño distribuido",
-        "Benevolencia, objetivos propios, diseño central"
+        "Varios agentes semiautónomos distribuidos interactúan y coordinan la resolución de problemas.",
+        "Un único agente central resuelve todos los problemas y los demás solo almacenan sus datos.",
+        "Todos los agentes deben ser benevolentes y compartir necesariamente una meta idéntica.",
+        "La coordinación distribuida requiere que cada agente tenga control completo del problema."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La pregunta original imponía como «mínimas» benevolencia, objetivos compartidos y diseño central o distribuido, aunque esas propiedades dependen del modelo y no describen universalmente todos los sistemas multiagente. Se formula ahora sobre el concepto comprobable de resolución distribuida: varios agentes semiautónomos, distribuidos y capaces de interactuar para abordar problemas que ningún agente controla por completo. La literatura contempla cooperación y también competencia u objetivos incompatibles; no se exige benevolencia universal. Cotejo con ITIC Academy, bloque 32, edición 2026.1, §§ 7.1 y 7.3. Cotejo con ITIC Academy, bloque 32, edición 2026.1, §§ 7.1 y 7.3: los agentes pueden cooperar o competir y tener objetivos incompatibles; no se presupone benevolencia universal.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "32, §§ 7.1 y 7.3",
+        "estado": "revisada",
+        "nota": "Cotejo con ITIC Academy, bloque 32, edición 2026.1, §§ 7.1 y 7.3: los agentes pueden cooperar o competir y tener objetivos incompatibles; no se presupone benevolencia universal."
+      },
+      "etiquetas": [
+        "inteligencia artificial distribuida",
+        "resolución distribuida de problemas",
+        "agentes",
+        "coordinación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://link.springer.com/book/10.1007/978-1-4613-1699-2",
+            "referencia": "Durfee, E. H. (1988), Coordination of Distributed Problem Solvers, Springer. Define la resolución distribuida mediante redes distribuidas y débilmente acopladas de agentes semiautónomos que resuelven problemas e interactúan/cooperan."
+          },
+          {
+            "url": "https://www.aaai.org/Papers/ICMAS/1995/ICMAS95-042.pdf",
+            "referencia": "Durfee, E. H. (1995), “Networks for Integrated Intelligent Systems”, AAAI: trata coordinación de entidades inteligentes distribuidas sin presuponer que todos los agentes tengan idénticos objetivos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32, edición 2026.1: § 7.1 (agentes inteligentes) y § 7.3 (resolución distribuida; coordinación, cooperación, competencia y objetivos potencialmente incompatibles); § 10 para aprendizaje y redes neuronales."
+          }
+        ],
+        "observaciones": "La pregunta original imponía como «mínimas» benevolencia, objetivos compartidos y diseño central o distribuido, aunque esas propiedades dependen del modelo y no describen universalmente todos los sistemas multiagente. Se formula ahora sobre el concepto comprobable de resolución distribuida: varios agentes semiautónomos, distribuidos y capaces de interactuar para abordar problemas que ningún agente controla por completo. La literatura contempla cooperación y también competencia u objetivos incompatibles; no se exige benevolencia universal. Cotejo con ITIC Academy, bloque 32, edición 2026.1, §§ 7.1 y 7.3. Cotejo con ITIC Academy, bloque 32, edición 2026.1, §§ 7.1 y 7.3: los agentes pueden cooperar o competir y tener objetivos incompatibles; no se presupone benevolencia universal."
+      }
     },
     {
       "id": 1098,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes metodologías/arquitecturas permite la implementación de soluciones de inteligencia artificial distribuida?",
+      "texto": "¿Qué paradigma organiza explícitamente una solución de IA distribuida mediante varios agentes autónomos que interactúan?",
       "opciones": [
-        "Razonamiento Basado en Casos",
-        "Sistemas Multi-Agente",
-        "Clasificadores ensamblados (Ensemble Classifier).",
-        "Aprendizaje profundo"
+        "Razonamiento basado en casos.",
+        "Sistemas multiagente.",
+        "Clasificadores ensamblados.",
+        "Aprendizaje profundo."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La opción «sistemas multiagente» es la metodología/arquitectura pertinente, pero el enunciado original sugería que las otras técnicas jamás podrían ejecutarse de manera distribuida. Se delimita el supuesto: se pregunta por el paradigma que modela explícitamente varios agentes autónomos que interactúan y coordinan una solución; no por cualquier técnica que pueda desplegarse sobre hardware distribuido. Cotejo con ITIC Academy, bloque 32, edición 2026.1, §§ 7.1 y 7.3. Cotejo con ITIC Academy, bloque 32, edición 2026.1, §§ 7.1 y 7.3 sobre agentes inteligentes, sistemas multiagente y coordinación.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "32, §§ 7.1 y 7.3",
+        "estado": "revisada",
+        "nota": "Cotejo con ITIC Academy, bloque 32, edición 2026.1, §§ 7.1 y 7.3 sobre agentes inteligentes, sistemas multiagente y coordinación."
+      },
+      "etiquetas": [
+        "inteligencia artificial distribuida",
+        "sistemas multiagente",
+        "agentes inteligentes"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://link.springer.com/book/10.1007/978-1-4613-1699-2",
+            "referencia": "Durfee, E. H. (1988), Coordination of Distributed Problem Solvers, Springer: caracteriza estos sistemas mediante agentes semiautónomos distribuidos que interactúan y coordinan la resolución de problemas."
+          },
+          {
+            "url": "https://global.oup.com/academic/product/an-introduction-to-multiagent-systems-9780470519462",
+            "referencia": "Wooldridge, M. (2009), An Introduction to MultiAgent Systems, 2.ª ed., Wiley/Oxford: presenta los sistemas multiagente como un paradigma explícito para sistemas compuestos por agentes autónomos que interactúan."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32, edición 2026.1: § 7.1 (agentes inteligentes) y § 7.3 (resolución distribuida; coordinación, cooperación, competencia y objetivos potencialmente incompatibles); § 10 para aprendizaje y redes neuronales."
+          }
+        ],
+        "observaciones": "La opción «sistemas multiagente» es la metodología/arquitectura pertinente, pero el enunciado original sugería que las otras técnicas jamás podrían ejecutarse de manera distribuida. Se delimita el supuesto: se pregunta por el paradigma que modela explícitamente varios agentes autónomos que interactúan y coordinan una solución; no por cualquier técnica que pueda desplegarse sobre hardware distribuido. Cotejo con ITIC Academy, bloque 32, edición 2026.1, §§ 7.1 y 7.3. Cotejo con ITIC Academy, bloque 32, edición 2026.1, §§ 7.1 y 7.3 sobre agentes inteligentes, sistemas multiagente y coordinación."
+      }
     },
     {
       "id": 1099,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indicar cuál de las siguientes son técnicas basadas en la comparación de patrones para el reconocimiento de la voz:",
+      "texto": "En el reconocimiento de voz basado en patrones de referencia, ¿qué técnica usa programación dinámica para alinear una secuencia de características acústicas con un patrón de duración posiblemente distinta?",
       "opciones": [
-        "Programación dinámica o DTW (Dynamic Time Warping)",
-        "Modelos ocultos de Markov o HMM (Hidden Markov Models)",
-        "Las respuestas a) y b) son verdaderas",
-        "Ninguna es verdadera"
+        "Dynamic Time Warping (DTW).",
+        "Modelo oculto de Markov (HMM).",
+        "Máquina de vectores soporte aplicada a un vector estático.",
+        "Análisis de predicción lineal (LPC), que estima la envolvente espectral."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La clasificación «comparación de patrones» del original agrupaba DTW y HMM sin precisar el sentido histórico del término, lo que facilita confundir dos métodos distintos. Se conserva el contenido de reconocimiento de voz y se pregunta ahora por la técnica de programación dinámica que alinea una secuencia acústica con patrones de referencia permitiendo variaciones de duración: DTW. HMM es otra familia estadística de modelos secuenciales; el material académico de 2009 presenta ambos bajo una taxonomía histórica, que no se universaliza aquí. Cotejo con ITIC Academy, tema 94 (2009), y bloque 32, edición 2026.1, en cobertura de IA/procesamiento del lenguaje. Cotejo con ITIC Academy, tema 94 (edición 2009), para DTW/HMM y reconocimiento de voz; la edición 2026.1 del bloque 32 aporta cobertura general de IA. El enunciado evita convertir la antigua agrupación pedagógica en una taxonomía universal.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "94 (ed. 2009; reconocimiento de voz) y 32 (ed. 2026.1; cobertura general)",
+        "estado": "revisada",
+        "nota": "Cotejo con ITIC Academy, tema 94 (edición 2009), para DTW/HMM y reconocimiento de voz; la edición 2026.1 del bloque 32 aporta cobertura general de IA. El enunciado evita convertir la antigua agrupación pedagógica en una taxonomía universal."
+      },
+      "etiquetas": [
+        "reconocimiento de voz",
+        "DTW",
+        "programación dinámica",
+        "alineación temporal"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://jeffe.cs.illinois.edu/teaching/compgeom/refs/Sakoe-Chiba-DTW.pdf",
+            "referencia": "Sakoe, H. y Chiba, S. (1978), “Dynamic programming algorithm optimization for spoken word recognition”, IEEE Transactions on Acoustics, Speech, and Signal Processing 26(1), pp. 43–49. Describe normalización temporal dinámica mediante programación dinámica para alinear patrones de voz de distinta duración."
+          },
+          {
+            "url": "https://web.mit.edu/6.435/www/Rabiner89.pdf",
+            "referencia": "Rabiner, L. R. (1989), “A tutorial on hidden Markov models and selected applications in speech recognition”, Proceedings of the IEEE 77(2), pp. 257–286. Fuente primaria/tutorial técnico sobre HMM y reconocimiento de voz; trata un modelo estadístico secuencial distinto de la alineación DTW."
+          },
+          {
+            "url": "https://drive.google.com/file/d/0Bw-rS_kOHzMKQVFfV3cxQks2VGs/view?usp=drivesdk&resourcekey=0-3ynF5TtgOiaV5UVU2o1b8Q",
+            "referencia": "ITIC Academy, tema 94 (2009), reconocimiento de voz: presenta DTW y HMM en la taxonomía histórica de reconocedores por comparación de patrones; describe la alineación temporal dinámica de DTW."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32, edición 2026.1: § 7.1 (agentes inteligentes) y § 7.3 (resolución distribuida; coordinación, cooperación, competencia y objetivos potencialmente incompatibles); § 10 para aprendizaje y redes neuronales."
+          }
+        ],
+        "observaciones": "La clasificación «comparación de patrones» del original agrupaba DTW y HMM sin precisar el sentido histórico del término, lo que facilita confundir dos métodos distintos. Se conserva el contenido de reconocimiento de voz y se pregunta ahora por la técnica de programación dinámica que alinea una secuencia acústica con patrones de referencia permitiendo variaciones de duración: DTW. HMM es otra familia estadística de modelos secuenciales; el material académico de 2009 presenta ambos bajo una taxonomía histórica, que no se universaliza aquí. Cotejo con ITIC Academy, tema 94 (2009), y bloque 32, edición 2026.1, en cobertura de IA/procesamiento del lenguaje. Cotejo con ITIC Academy, tema 94 (edición 2009), para DTW/HMM y reconocimiento de voz; la edición 2026.1 del bloque 32 aporta cobertura general de IA. El enunciado evita convertir la antigua agrupación pedagógica en una taxonomía universal."
+      }
     },
     {
       "id": 1100,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale qué opción contiene los distintos mecanismos de inferencia utilizando la representación del conocimiento basada en marcos (frameworks):",
+      "texto": "En la clasificación de mecanismos de inferencia en marcos empleada por el temario ITIC Academy de 2023, ¿qué trío se enumera?",
       "opciones": [
-        "Deducción de valores de slots; actualización de valores de slots; y herencia de marcos",
-        "Deducción de valores de slots; actualización de valores de slots; y equiparación de marcos",
-        "Deducción de valores de slots; herencia de slots; y equiparación de marcos",
-        "Reducción de valores de slots; actualización de valores de slots; y equiparación de marcos"
+        "Deducción de valores de slots, actualización de valores de slots y herencia de marcos.",
+        "Deducción de valores de slots, actualización de valores de slots y equiparación de marcos.",
+        "Deducción de valores de slots, herencia de slots y equiparación de marcos.",
+        "Reducción de valores de slots, actualización de valores de slots y equiparación de marcos."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se precisa la procedencia de la lista y se elimina el anglicismo “frameworks” entre paréntesis, que podía sugerir un marco de programación en lugar de representación del conocimiento. La edición 2023 de ITIC Academy enumera deducción de valores de slots, actualización de valores de slots y equiparación de marcos; por eso el enunciado acota la respuesta a esa clasificación docente. No se presenta como taxonomía universal vigente de inferencia en todos los sistemas de marcos. Cotejo con la edición 2023 y con la edición 2026.1 del bloque 32, que mantiene la cobertura general de marcos pero no reproduce esa lista. Cotejo literal con ITIC Academy, bloque 32, edición 2023, apartado de inferencia en marcos. La edición 2026.1 mantiene marcos como materia, pero no desarrolla esa lista concreta.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "32 (ediciones 2023 y 2026.1; lista de mecanismos solo en la edición 2023)",
+        "estado": "revisada",
+        "nota": "Cotejo literal con ITIC Academy, bloque 32, edición 2023, apartado de inferencia en marcos. La edición 2026.1 mantiene marcos como materia, pero no desarrolla esa lista concreta."
+      },
+      "etiquetas": [
+        "representación del conocimiento",
+        "marcos",
+        "inferencia",
+        "equiparación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://drive.google.com/file/d/1iqL2-TEeR7aSwDQwmbI-ZD4A0r2TOvcY/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Inteligencia Artificial y Ciencia de Datos, edición 2023, apartado sobre inferencia en marcos: enumera deducción de valores, actualización de valores y equiparación de marcos."
+          },
+          {
+            "url": "https://www.mit.edu/~dxh/marvin/web.media.mit.edu/~minsky/papers/Frames/frames.html",
+            "referencia": "Minsky, M. (1974), “A Framework for Representing Knowledge”, MIT AI Lab Memo 306: expone marcos, slots, valores por defecto y procesos de recuperación/equiparación; sirve de antecedente conceptual, mientras que la lista de tres mecanismos se atribuye expresamente al temario de academia de 2023."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32, edición 2026.1: § 7.1 (agentes inteligentes) y § 7.3 (resolución distribuida; coordinación, cooperación, competencia y objetivos potencialmente incompatibles); § 10 para aprendizaje y redes neuronales."
+          }
+        ],
+        "observaciones": "Se precisa la procedencia de la lista y se elimina el anglicismo “frameworks” entre paréntesis, que podía sugerir un marco de programación en lugar de representación del conocimiento. La edición 2023 de ITIC Academy enumera deducción de valores de slots, actualización de valores de slots y equiparación de marcos; por eso el enunciado acota la respuesta a esa clasificación docente. No se presenta como taxonomía universal vigente de inferencia en todos los sistemas de marcos. Cotejo con la edición 2023 y con la edición 2026.1 del bloque 32, que mantiene la cobertura general de marcos pero no reproduce esa lista. Cotejo literal con ITIC Academy, bloque 32, edición 2023, apartado de inferencia en marcos. La edición 2026.1 mantiene marcos como materia, pero no desarrolla esa lista concreta."
+      }
     },
     {
       "id": 1101,

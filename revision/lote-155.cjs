@@ -92,8 +92,8 @@ const academyBlocks = {
 };
 for (const change of log.cambios) {
   const q = bank.preguntas.find(x => x.id === change.id);
-  q.clasificacion.A1 = a1Ids[q.id].map(n => n.replace('A1-', ''));
-  q.clasificacion.A2 = a2Ids[q.id].map(n => n.replace('A2-', ''));
+  q.clasificacion.A1 = a1Ids[q.id];
+  q.clasificacion.A2 = a2Ids[q.id];
   q.clasificacion.bloque_academia = academyBlocks[q.id];
   q.clasificacion.nota = academyNotes[q.id];
   q.comentarios = `${q.revision.observaciones} ${academyNotes[q.id]}`;
