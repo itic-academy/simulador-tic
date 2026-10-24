@@ -1,8 +1,16 @@
 # Revisión del banco TIC — estado al 25 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 239 (IDs 1511–1515). Acumulado: 1.515 preguntas examinadas, 1.466 verificadas (360 vigentes, 985 corregidas y 121 históricas) y 49 pendientes de resolver (27 de fuente y 22 de ambigüedad); quedan 10.608 sin revisar de contenido. Hay 1.135 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 240 (IDs 1516–1520). Acumulado: 1.520 preguntas examinadas, 1.471 verificadas (362 vigentes, 987 corregidas y 122 históricas) y 49 pendientes de resolver (27 de fuente y 22 de ambigüedad); quedan 10.603 sin revisar de contenido. Hay 1.140 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 240 — 25 de octubre
+
+IDs 1516–1520 revisados individualmente y cotejados con referencias primarias. Se precisó el origen de EFQM distinguiendo la carta de intención de catorce dirigentes empresariales de su constitución posterior; se actualizó la descripción de ISACA; se confirmó la respuesta Plan en ITIL 4 y se dejó explícito que el reactivo corresponde a esa edición anterior; se acotó la Clase F tradicional a 600 MHz; y se explicó el cálculo de atenuación 10 dB/m. Los cinco originales íntegros quedan en `cambios-lote-240.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 39 Calidad y Mantenimiento (EFQM), bloque 16 Auditoría Informática (ISACA), bloque 41 ITIL y COBIT (ITIL 4; el propio bloque también incorpora ITIL Version 5) y bloque 42 Redes (cableado y medios de transmisión). La correspondencia con los temas oficiales A1/A2 consta por pregunta en el registro y en cada ficha; se contrastó con `temario-oficial.json` y las convocatorias BOE-A-2025-25938/A2 BOE-A-2025-26262. El material académico solo orienta el encaje curricular.
+
+Fuentes primarias: EFQM, *Our History*; ISACA, *About Us* e *IT Audit Resources*; AXELOS, *ITIL 4 Foundation Official Sample Paper 1* (pregunta 21), y PeopleCert, esquema de ITIL que ya incluye Version 5; ISO/IEC 11801-1:2017 y clasificación reproducida en ITU-T L.76; Cisco, *Introduction to Optical Fibers, dB, Attenuation and Measurements*. Ejecutados `node revision/lote-240.cjs`, `node revision/academia-lote-240.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas, 1.520 registros, cero errores y 10.603 preguntas restantes idénticas al commit original.
 
 ## Lote 239 — 25 de octubre
 
