@@ -1,8 +1,16 @@
 # Revisión del banco TIC — estado al 25 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 237 (IDs 1501–1505). Acumulado: 1.505 preguntas examinadas, 1.457 verificadas (360 vigentes, 976 corregidas y 121 históricas) y 48 pendientes de resolver (27 de fuente y 21 de ambigüedad); quedan 10.618 sin revisar de contenido. Hay 1.126 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 238 (IDs 1506–1510). Acumulado: 1.510 preguntas examinadas, 1.462 verificadas (360 vigentes, 981 corregidas y 121 históricas) y 48 pendientes de resolver (27 de fuente y 21 de ambigüedad); quedan 10.613 sin revisar de contenido. Hay 1.131 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 238 — 25 de octubre
+
+IDs 1506–1510 revisados individualmente y corregidos. La 1506 distingue una entidad identificable de las demás y separa esa instancia de su representación gráfica como tipo/conjunto en el diagrama E/R. La 1507 identifica la definición de interfaces de usuario como actividad ASI 8. La 1508 confirma que el Grupo de Aseguramiento de la Calidad se agrupa en el perfil Analista de MÉTRICA v3. La 1509 precisa que la ERS se elabora en la tarea ASI 9.4 y que allí participan analistas. La 1510 concreta la especificación de casos de uso en ASI 2.2 y sus condiciones de obligatoriedad según el enfoque de desarrollo. Se conservan los originales íntegros en `cambios-lote-238.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (1506); bloque 38 Análisis, diseño y construcción de sistemas, versión 2026.1 (1507–1510). Correspondencias contrastadas con `temario-oficial.json` y BOE-A-2025-25938/A2 BOE-A-2025-26262: 1506 A1-63/A1-64/A2-II-5; 1507 A1-88/A1-95/A2-III-2; 1508 A1-95/A2-III-2; 1509 A1-88/A1-95/A2-III-3; 1510 A1-88/A1-95/A2-III-3. La academia aporta encaje curricular; la guía oficial de MÉTRICA v3 y material universitario técnico sustentan las respuestas.
+
+Fuentes: Simon Fraser University, *The E-R Model*; Ministerio de Administraciones Públicas, MÉTRICA v3, *Análisis del Sistema de Información* y *Participantes*. `node revision/lote-238.cjs`, `node revision/academia-lote-238.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas, 1.510 registros, cero errores y 10.613 preguntas restantes idénticas al commit original.
 
 ## Lote 237 — 25 de octubre
 
