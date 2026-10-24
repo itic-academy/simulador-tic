@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 149 (IDs 1061–1065). Acumulado: 1.065 preguntas revisadas, 1.023 verificadas (276 vigentes, 652 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.058 sin revisión de contenido. Hay 760 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 150 (IDs 1066–1070). Acumulado: 1.070 preguntas revisadas, 1.028 verificadas (276 vigentes, 656 corregidas y 96 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.053 sin revisión de contenido. Hay 765 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -146,6 +146,18 @@ Cotejo con Drive: ITIC Academy, bloque 32, versión 2026.1: § 6.2 (IA simbólic
 Fuentes: University of Cambridge, *Logic and Proof*; Umeå University, *Foundations of Logic and Model Theory*; Colmerauer y Roussel, «The Birth of Prolog», HOPL-II/ACM (1993); Rumelhart, Hinton y Williams, «Learning representations by back-propagating errors», *Nature* 323 (1986), DOI 10.1038/323533a0; documentación TensorFlow sobre entrenamiento; Stanford HAI sobre sistemas expertos; Buchanan y Shortliffe (eds.), *Rule-Based Expert Systems* (1984); bloque 32 de ITIC Academy; anexos I y IX de BOE-A-2025-25938 y BOE-A-2025-26262.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.065 registros de revisión y 11.058 preguntas restantes idénticas al commit original.
+
+## Lote 150 — 24 de octubre
+
+IDs 1066–1070 revisados individualmente: cuatro corregidas y una histórica reformulada. Acumulado: 1.070 examinadas, 1.028 verificadas (276 vigentes, 656 corregidas y 96 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 765 preguntas con cambios de contenido. Quedan 11.053 sin revisar; siguiente ID 1.071.
+
+Se corrige la descripción de los CSP: restricciones especifican combinaciones permitidas de valores de variables, y una solución satisface el conjunto, no expresan necesariamente causalidad o sincronización (1066). Se acota MINIMAX a decisiones adversarias alternas, dos jugadores y suma cero, especificando el sentido de maximizar la utilidad mínima garantizable (1067). Se generalizan las redes semánticas a grafos de conceptos y relaciones, sin reducirlas a conocimiento lingüístico ni confundirlas con redes neuronales ponderadas (1068–1069). Se sustituye una periodización no definida de la IA por una pregunta histórica acotada: la búsqueda heurística es fundacional en la IA simbólica temprana (GPS, años cincuenta), aunque sigue usándose actualmente; por ello el registro queda histórico y no afirma exclusividad temporal (1070).
+
+Cotejo con Drive: ITIC Academy, bloque 32, versión 2026.1: § 4.6 (backtracking y CSP), §§ 5.9–5.10 (búsqueda heurística y MINIMAX), § 6.3 (redes semánticas). El bloque presenta la búsqueda heurística como técnica vigente, pero no define una periodización histórica; se usaron fuentes primarias de GPS y A*. Correspondencias: A1-70/A2-III-5 para todos los ítems. Siguen pendientes el cotejo global de modificaciones posteriores de las convocatorias y las 42 dudas previas.
+
+Fuentes: Poole y Mackworth, *Artificial Intelligence: Foundations of Computational Agents*, §§ 4.1 y 5.10; Mackworth, «Consistency in Networks of Relations», *Artificial Intelligence* 8(1), 1977; Shapiro, «Associative Networks: The SNePS Semantic Network Processing System» (1979); Quillian, «Word Concepts: A Theory and Simulation of Some Basic Semantic Capabilities», *Behavioral Science* 12(5), 1967, DOI 10.1002/bs.3830120511; Newell, Shaw y Simon, «A General Problem-Solving Program for a Computer» (1959); Hart, Nilsson y Raphael, «A Formal Basis for the Heuristic Determination of Minimum Cost Paths» (1968); bloque 32 de ITIC Academy; anexos I y IX de BOE-A-2025-25938 y BOE-A-2025-26262.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.070 registros de revisión y 11.053 preguntas restantes idénticas al commit original.
 
 ## Vista local y comprobaciones
 
