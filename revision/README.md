@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 164 (IDs 1136–1140). Acumulado: 1.140 preguntas revisadas, 1.098 verificadas (284 vigentes, 712 corregidas y 102 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.983 sin revisar de contenido. Hay 827 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 165 (IDs 1141–1145). Acumulado: 1.145 preguntas revisadas, 1.103 verificadas (285 vigentes, 716 corregidas y 102 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.978 sin revisar de contenido. Hay 832 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -84,7 +84,7 @@ Fuentes: Rumelhart, Hinton y Williams, «Learning representations by back-propag
 
 ## Pendiente
 
-11.028 preguntas sin revisión de contenido. Siguiente ID: 1096. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+10.978 preguntas sin revisión de contenido. Siguiente ID: 1146. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -1201,3 +1201,13 @@ Se fija la pregunta sobre el formato XML a la versión histórica Visa 3DS 1.0.2
 Cotejo con ITIC Academy: tema 78 para comercio electrónico/pagos; bloque 33, A1-74, para SIG; bloque 30, A1-67/A2-III-10 para Java/JMX y A1-66/A2-III-11 para .NET; bloque 26, A1-56/A2-C5 para SAN/almacenamiento. Correspondencias oficiales: 1136 A1-78; 1137 A1-74/A2-II-14; 1138 A1-67/A2-III-10; 1139 A1-66/A2-III-11; 1140 A1-56/A2-IV-5. Las respuestas se contrastaron con Visa/EMVCo, OSGeo, Leaflet y Esri, Oracle Java SE 26, Microsoft Learn y Fibre Channel Industry Association.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.140 registros de revisión y 10.983 preguntas restantes idénticas al commit original. Las 42 dudas anteriores y la comprobación global de correcciones de convocatoria siguen pendientes.
+
+## Lote 165 — 24 de octubre
+
+IDs 1141–1145 revisados individualmente: cuatro corregidas y una vigente. Acumulado: 1.145 examinadas, 1.103 verificadas (285 vigentes, 716 corregidas y 102 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 832 preguntas con cambios de contenido. Quedan 10.978 sin revisar; siguiente ID 1.146.
+
+Se corrige la descripción de Bash: no es el shell original de Unix, sino el shell de GNU, compatible en gran medida con `sh` y con mejoras interactivas/de programación (1141). UTM queda formulada como conteo de zonas longitudinales numeradas, 60 de seis grados cada una, sin decir que la proyección cubra las regiones polares (1142). Se desambigua cliente-servidor preguntando explícitamente por el número de niveles; capas lógicas y niveles físicos de despliegue no son equivalentes (1143). WSUS permanece como clave para administrar actualizaciones en una instalación existente, añadiendo que está obsoleto/deprecated y sin nuevas funciones, aunque mantiene soporte para producción conforme al ciclo de vida (1144). Se conserva la clave de firma no criptográfica y se añade la condición omitida: la normativa reguladora aplicable debe disponer su uso; categoría básica ENS y media cuando no se requiera firma avanzada (1145). Se conservan los cinco originales íntegros en `cambios-lote-165.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 47, edición 2026.1, A1-60/A2-II-2 (Bash y SO) y A1-61/A2-II-2 (actualización de sistemas); bloque 33, edición 2026.1, A1-74 (SIG y UTM); bloque 30, edición 2026.1, A1-58/A2-II-6 (cliente-servidor y multicapas); bloque 36, edición 2026.1, A1-80/A2-I-6 (identificación y firma electrónica). Las características específicas de Bash, UTM, arquitectura n-tier, el estado de WSUS y la condición normativa de firma se cotejaron además con fuentes primarias oficiales.
+
+Fuentes: GNU Bash Reference Manual, “What is Bash?”; U.S. Geological Survey, “How are UTM coordinates measured on USGS topographic maps?”; Microsoft Learn, “Designing Multi-Tier IIS Applications” y “Windows Server Update Services (WSUS) overview”; Resolución SGAD de 20 de octubre de 2022, BOE-A-2022-17170, apartado tercero. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.145 registros de revisión y 10.978 preguntas restantes idénticas al commit original.
