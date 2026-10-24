@@ -52712,71 +52712,242 @@
       "id": 1196,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuáles de los siguientes son modos de renderizado de aplicaciones SPA:",
+      "texto": "En una aplicación web, ¿qué estrategia de renderizado construye o actualiza la interfaz principalmente en el navegador mediante JavaScript?",
       "opciones": [
-        "Client Side Rendering (CSR)",
-        "Server Side Rendering (SSR)",
-        "Static Side Generation (SSG)",
-        "Todos los anteriores"
+        "Client-Side Rendering (CSR).",
+        "Server-Side Rendering (SSR) por petición.",
+        "Static Site Generation (SSG) durante la compilación.",
+        "Todas describen renderizado en el navegador."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "El listado original mezclaba estrategias posibles de renderizado con la definición de SPA: una aplicación de página única no implica que todos sus modos sean equivalentes ni que cada framework los implemente igual. Se pregunta ahora por el caso inequívoco de CSR: JavaScript del navegador construye/actualiza la interfaz. SSG genera HTML durante la compilación y SSR lo genera en servidor por petición; ambos pueden intervenir en arquitecturas de navegación SPA. Cotejo temático con ITIC Academy, bloque 30; terminología contrastada con documentación de Next.js. Cotejo temático con ITIC Academy, bloque 30, arquitectura y desarrollo web; el PDF no convierte CSR, SSR y SSG en modos equivalentes de SPA. La distinción concreta se contrasta con la documentación oficial de Next.js.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "30 · Tecnologías de sistemas de la información, versión 2026.1, arquitectura web y A1-65/A2-III-12",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 30, arquitectura y desarrollo web; el PDF no convierte CSR, SSR y SSG en modos equivalentes de SPA. La distinción concreta se contrasta con la documentación oficial de Next.js."
+      },
+      "etiquetas": [
+        "SPA",
+        "CSR",
+        "SSR",
+        "SSG",
+        "renderizado web"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation",
+            "referencia": "Next.js Documentation, guía de Static Site Generation y renderizado en navegador/servidor. Distingue la generación estática durante build, el prerenderizado del servidor por petición y la ejecución/renderizado en cliente; la documentación también describe el inicio de aplicaciones como SPA."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, apartados de arquitectura web, renderizado y tema A1-72/CRM-ERP. Cotejo temático; los comportamientos de Next.js se contrastan con su documentación oficial."
+          }
+        ],
+        "observaciones": "El listado original mezclaba estrategias posibles de renderizado con la definición de SPA: una aplicación de página única no implica que todos sus modos sean equivalentes ni que cada framework los implemente igual. Se pregunta ahora por el caso inequívoco de CSR: JavaScript del navegador construye/actualiza la interfaz. SSG genera HTML durante la compilación y SSR lo genera en servidor por petición; ambos pueden intervenir en arquitecturas de navegación SPA. Cotejo temático con ITIC Academy, bloque 30; terminología contrastada con documentación de Next.js. Cotejo temático con ITIC Academy, bloque 30, arquitectura y desarrollo web; el PDF no convierte CSR, SSR y SSG en modos equivalentes de SPA. La distinción concreta se contrasta con la documentación oficial de Next.js."
+      }
     },
     {
       "id": 1197,
       "bloque": 0,
       "tema": 0,
-      "texto": "En sistema operativo UNIX indicar, entre las siguientes características cuál no corresponde a cualquier sistema de archivo usado: VFS, NFS, etc…",
+      "texto": "En un sistema Unix-like, ¿qué estructura describe la organización jerárquica de directorios recorrida al resolver rutas desde la raíz o un directorio?",
       "opciones": [
-        "Capacidad de crear y destruir archivos",
-        "Crecimiento dinámico de archivos",
-        "Tratamiento de cualquier dispositivo periférico como archivo",
-        "Estructura matricial"
+        "Una jerarquía de árbol recorrida por componentes de ruta.",
+        "Una estructura matricial de filas y columnas.",
+        "Una lista plana sin relaciones entre directorios.",
+        "Una tabla relacional que sustituye a los nombres de ruta."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Se elimina «cualquier sistema de archivos» y la lista VFS/NFS, porque son capas/tipos heterogéneos y las capacidades varían según el sistema. La pregunta queda limitada a la organización de rutas en Unix-like: la jerarquía de directorios se recorre por componentes desde la raíz o el directorio actual; «matriz» no describe esa estructura. Cotejo temático con ITIC Academy, bloque 27, y con Linux Kernel Documentation. Cotejo con ITIC Academy, bloque 27, Unix/Linux y sistemas de archivos. La jerarquía de rutas y resolución por componentes se verifica con la documentación del kernel Linux.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "27 · Sistemas operativos, versión 2026 actualizada, A1-59–62/A2-II-2",
+        "estado": "revisada",
+        "nota": "Cotejo con ITIC Academy, bloque 27, Unix/Linux y sistemas de archivos. La jerarquía de rutas y resolución por componentes se verifica con la documentación del kernel Linux."
+      },
+      "etiquetas": [
+        "Unix",
+        "Linux",
+        "VFS",
+        "sistema de archivos",
+        "jerarquía de directorios"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://docs.kernel.org/filesystems/path-lookup.html",
+            "referencia": "Linux Kernel Documentation, Pathname lookup: explica rutas absolutas desde la raíz, componentes de directorio, relaciones padre/hijo y resolución de nombres en VFS. La afirmación se limita a la jerarquía de rutas de sistemas Unix-like."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 «Sistemas operativos», versión 2026 actualizada, A1-59–62/A2-II-2; incluye Unix/Linux, sistemas de archivos y organización de rutas. Cotejo temático directo."
+          }
+        ],
+        "observaciones": "Se elimina «cualquier sistema de archivos» y la lista VFS/NFS, porque son capas/tipos heterogéneos y las capacidades varían según el sistema. La pregunta queda limitada a la organización de rutas en Unix-like: la jerarquía de directorios se recorre por componentes desde la raíz o el directorio actual; «matriz» no describe esa estructura. Cotejo temático con ITIC Academy, bloque 27, y con Linux Kernel Documentation. Cotejo con ITIC Academy, bloque 27, Unix/Linux y sistemas de archivos. La jerarquía de rutas y resolución por componentes se verifica con la documentación del kernel Linux."
+      }
     },
     {
       "id": 1198,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dentro del chip criptográfico del DNI electrónico podemos encontrar tres zonas de datos diferenciadas. Una de las zonas sólo es accesible por la Dirección General de la Policía. Señale su nombre:",
+      "texto": "Según la guía oficial del DNIe v1.1 (2014), ¿qué zona del chip puede leer el ciudadano mediante su PIN?",
       "opciones": [
-        "Zona pública",
-        "Zona de seguridad",
-        "Zona privada",
-        "Zona confidencial"
+        "Zona pública.",
+        "Zona de seguridad.",
+        "Zona privada.",
+        "Zona confidencial."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "La clave original «zona de seguridad» es incorrecta para la afirmación de acceso exclusivo de la Policía: la guía oficial DNIe v1.1 dice que la zona de seguridad es legible por el ciudadano en los Puntos de Actualización, y que la zona privada es legible por el ciudadano mediante PIN. Se reformula expresamente para la tarjeta/sistema heredado DNIe v1.1 descrito en la guía 1.4 (2014), sin extrapolar esa partición a toda generación actual. Cotejo temático con ITIC Academy, bloque 36; por su versión concreta, se conserva como contenido histórico. Cotejo temático con ITIC Academy, bloque 36, DNI electrónico. La partición y accesos descritos solo se atribuyen al chip DNIe v1.1 de la guía oficial de 2014; no se extrapolan a otras generaciones.",
+      "clasificacion": {
+        "A1": [
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "36 · Seguridad, criptografía, identificación y firma, versión 2026.1, A1-79–81/A2-I-6",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 36, DNI electrónico. La partición y accesos descritos solo se atribuyen al chip DNIe v1.1 de la guía oficial de 2014; no se extrapolan a otras generaciones."
+      },
+      "etiquetas": [
+        "DNI electrónico",
+        "DNIe v1.1",
+        "zona privada",
+        "PIN",
+        "histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.dnielectronico.es/PDFs/Guia_de_referencia_basica_v1_4.pdf",
+            "referencia": "DNIe, Guía de referencia básica, versión 1.4, 04-07-2014, § 2, pp. 11–12: describe expresamente el chip/sistema DNIe v1.1 y sus zonas pública, privada y de seguridad. La guía señala que la zona privada es legible por el ciudadano con PIN y que la zona de seguridad puede leerse por el ciudadano en los Puntos de Actualización; por ello no respalda el enunciado original sobre acceso exclusivo de la Policía."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 «Seguridad, criptografía, identificación y firma», versión 2026.1, A1-79–81/A2-I-6; apartado de DNI electrónico. Cotejo temático; el detalle de zonas se contrasta con la guía oficial del DNIe de 2014."
+          }
+        ],
+        "observaciones": "La clave original «zona de seguridad» es incorrecta para la afirmación de acceso exclusivo de la Policía: la guía oficial DNIe v1.1 dice que la zona de seguridad es legible por el ciudadano en los Puntos de Actualización, y que la zona privada es legible por el ciudadano mediante PIN. Se reformula expresamente para la tarjeta/sistema heredado DNIe v1.1 descrito en la guía 1.4 (2014), sin extrapolar esa partición a toda generación actual. Cotejo temático con ITIC Academy, bloque 36; por su versión concreta, se conserva como contenido histórico. Cotejo temático con ITIC Academy, bloque 36, DNI electrónico. La partición y accesos descritos solo se atribuyen al chip DNIe v1.1 de la guía oficial de 2014; no se extrapolan a otras generaciones."
+      }
     },
     {
       "id": 1199,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dentro de las soluciones propietarias de CRM no se encuentra:",
+      "texto": "¿Qué edición de Compiere se documentó como solución ERP+CRM de código abierto distribuida bajo GPLv2?",
       "opciones": [
-        "Compiere",
-        "Siebel",
-        "Epiphany",
-        "Todas son soluciones comerciales"
+        "Compiere ERP+CRM Community Edition.",
+        "Siebel CRM.",
+        "Epiphany CRM.",
+        "Ninguna: Compiere solo existió como producto propietario."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "«Solución propietaria» era impreciso: Compiere tuvo una Community Edition ERP+CRM distribuida como software libre GPLv2 y también ofertas comerciales/servicios. Se pregunta ahora por la edición documentada como open source, evitando generalizar el modelo de negocio a todas las ediciones. Cotejo temático con ITIC Academy, bloque 30, tema de CRM/ERP; licenciamiento comprobado con el archivo del proyecto y la web de Compiere. Cotejo temático con ITIC Academy, bloque 30, CRM/ERP. La clasificación de Compiere se circunscribe a la Community Edition documentada como GPLv2; el producto también tuvo ediciones/servicios comerciales.",
+      "clasificacion": {
+        "A1": [
+          "A1-72"
+        ],
+        "A2": [
+          "A2-II-12"
+        ],
+        "bloque_academia": "30 · Tecnologías de sistemas de la información, versión 2026.1, A1-72/A2-II-12",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 30, CRM/ERP. La clasificación de Compiere se circunscribe a la Community Edition documentada como GPLv2; el producto también tuvo ediciones/servicios comerciales."
+      },
+      "etiquetas": [
+        "CRM",
+        "ERP",
+        "Compiere",
+        "software de código abierto",
+        "GPLv2"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://sourceforge.net/projects/compiere/",
+            "referencia": "Archivo del proyecto Compiere ERP+CRM en SourceForge: describe Compiere como solución ERP+CRM de código abierto y declara distribución GPLv2. Corroborado por la página del producto Compiere Community Edition, que la identifica como ERP open source."
+          },
+          {
+            "url": "https://www.compiere.com/products/download/download-thanks.php",
+            "referencia": "Compiere, página de descarga de Community Edition: la identifica expresamente como solución ERP open source; se usa para precisar que la pregunta se refiere a esa edición, no a todas las ofertas comerciales o servicios de la empresa."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, apartados de arquitectura web, renderizado y tema A1-72/CRM-ERP. Cotejo temático; los comportamientos de Next.js se contrastan con su documentación oficial."
+          }
+        ],
+        "observaciones": "«Solución propietaria» era impreciso: Compiere tuvo una Community Edition ERP+CRM distribuida como software libre GPLv2 y también ofertas comerciales/servicios. Se pregunta ahora por la edición documentada como open source, evitando generalizar el modelo de negocio a todas las ediciones. Cotejo temático con ITIC Academy, bloque 30, tema de CRM/ERP; licenciamiento comprobado con el archivo del proyecto y la web de Compiere. Cotejo temático con ITIC Academy, bloque 30, CRM/ERP. La clasificación de Compiere se circunscribe a la Community Edition documentada como GPLv2; el producto también tuvo ediciones/servicios comerciales."
+      }
     },
     {
       "id": 1200,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un servicio de directorio electrónico NO se caracteriza por:",
+      "texto": "¿Qué afirmación es falsa para LDAPv3 según RFC 4511?",
       "opciones": [
-        "ser flexible",
-        "Aceptar cierta inconsistencia temporal de la información en su replicación",
-        "Ser estático",
-        "Poder ser consultado y actualizado en línea"
+        "Define una operación Search para consultar entradas.",
+        "Define Add y Delete para crear y eliminar entradas.",
+        "Define Modify para cambiar atributos de una entrada.",
+        "Exige que las entradas sean estáticas e inmutables."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 3,
+      "comentarios": "La pregunta negativa «no se caracteriza» podía depender de generalizaciones sobre flexibilidad y consistencia de réplicas. Se concreta en LDAPv3: RFC 4511 define Search y operaciones de actualización Add, Delete y Modify, así que no puede describirse su contenido como necesariamente estático/inmutable. Cotejo con el PDF ITIC Academy de servicios de directorio, tema 121 (A1) y contenido de administración de usuarios en redes (A2-C7); protocolo contrastado con el RFC. Cotejo con el PDF ITIC Academy de servicios de directorio y con el contenido A2 de gestión de usuarios en administración de redes. Las operaciones concretas de LDAPv3 se verifican con RFC 4511.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-122"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": "121 · Correo electrónico y servicios de directorio, versión 2 (22-05-2026), A1-122/A2-IV-9 (contenido de administración de usuarios)",
+        "estado": "revisada",
+        "nota": "Cotejo con el PDF ITIC Academy de servicios de directorio y con el contenido A2 de gestión de usuarios en administración de redes. Las operaciones concretas de LDAPv3 se verifican con RFC 4511."
+      },
+      "etiquetas": [
+        "LDAP",
+        "servicios de directorio",
+        "Add",
+        "Modify",
+        "Delete",
+        "X.500"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4511.html",
+            "referencia": "IETF RFC 4511, LDAPv3, §§ 4.6–4.8: define las operaciones Modify, Add y Delete, además de Search; por tanto, LDAP no impone que los datos de directorio sean inmutables o estáticos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1vvfm-lB7oMhP5TP-vHSNIJpg8cfJbLia/view?usp=drivesdk",
+            "referencia": "ITIC Academy, «Tema 121 - Correo Electrónico. Servicios de directorio», versión 2, actualizada el 22-05-2026. El PDF identifica el contenido oficial A1-121 y A2-C6/C7/C10; A2-C7 comprende administración de redes locales y gestión de usuarios/dispositivos. Cotejo del marco temático."
+          }
+        ],
+        "observaciones": "La pregunta negativa «no se caracteriza» podía depender de generalizaciones sobre flexibilidad y consistencia de réplicas. Se concreta en LDAPv3: RFC 4511 define Search y operaciones de actualización Add, Delete y Modify, así que no puede describirse su contenido como necesariamente estático/inmutable. Cotejo con el PDF ITIC Academy de servicios de directorio, tema 121 (A1) y contenido de administración de usuarios en redes (A2-C7); protocolo contrastado con el RFC. Cotejo con el PDF ITIC Academy de servicios de directorio y con el contenido A2 de gestión de usuarios en administración de redes. Las operaciones concretas de LDAPv3 se verifican con RFC 4511."
+      }
     },
     {
       "id": 1201,
