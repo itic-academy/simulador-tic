@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 130 (IDs 966–970). Acumulado: 970 preguntas revisadas, 928 verificadas (261 vigentes, 578 corregidas y 89 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.153 sin revisión de contenido. Hay 678 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 131 (IDs 971–975). Acumulado: 975 preguntas revisadas, 933 verificadas (263 vigentes, 581 corregidas y 89 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.148 sin revisión de contenido. Hay 683 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -9,6 +9,7 @@ Estado parcial, no revisión completa del banco. Publicación desde la rama `mai
 - `cambios-lote-002.json`: original y resultado de los IDs 13–40.
 - `cambios-lote-003.json` y `cambios-lote-004.json`: IDs 41–100.
 - `cambios-lote-005.json` a `cambios-lote-009.json`: IDs 101–200, examinadas individualmente el 13 de octubre. Total acumulado: 200 clasificadas; 177 verificadas (66 vigentes, 105 corregidas y 6 históricas); 23 con dudas abiertas. El bloque de academia de los IDs 41–200 sigue pendiente de cotejo.
+- `lote-131.cjs` y `cambios-lote-131.json`: IDs 971–975, con el original íntegro, clasificación, fuentes, comprobación temática del material pertinente de academia y resultado revisado.
 - `lote-127.cjs` y `cambios-lote-127.json`: IDs 951–955, con el original íntegro, clasificación, fuentes y resultado revisado.
 - 109 preguntas tienen cambios en enunciado, opciones o respuesta respecto al banco original: 57 en los IDs 101–200. Este recuento excluye cambios solo de etiquetas y comentarios e incluye las preguntas históricas cuyo enunciado se ha precisado. Por eso no coincide con el estado «corregida».
 - `inventario.json`: comprobación estructural de las 12.123 preguntas, grupos con enunciado repetido y referencias que necesitan revisión contextual. Las coincidencias de palabras no demuestran obsolescencia. No se elimina ningún duplicado automáticamente.
@@ -29,7 +30,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.158 preguntas sin revisión de contenido. Siguiente ID: 966. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.148 preguntas sin revisión de contenido. Siguiente ID: 976. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -40,6 +41,16 @@ Correcciones destacadas de esta continuación: LDAP (64) contenía dos respuesta
 En los IDs 101–200 destacan: snapshot frente a copia independiente (101); regresión y caja blanca con distractores solapados (102, 114); TCP frente a sockets genéricos (109); Wi-Fi 6E (112); DEHú (115); EIGRP (120); plazo de alzada de actos expresos (142); CETIC según RD 1125/2024 (154); denominación de la NTI de firma y sello (157); requisitos ENS según RD 311/2022 (161); modalidades Cl@ve y REG (163–164); mantenimiento concurrente Tier III (166); traducciones TLB (174); Jakarta Pages (183); firma digital sin equipararla genéricamente a cifrado (193); EER con dos respuestas equivalentes en el original (197). Las preguntas de EPA 2022 (150) y arquitectura clásica iOS (178) se delimitan como históricas.
 
 En los IDs 911–915 se delimitan como históricas las taxonomías de CMMI v1.3 (911) y el cubo de COBIT 4.1 (912), se corrige el año de publicación inicial de COBIT a 1996 según ISACA (913), se precisa el ciclo incremental mediante builds sucesivos (914) y se corrige la clave del DFD, que modela procesos/funciones y flujos de datos, no el modelo conceptual de datos (915). Fuentes primarias: Software Engineering Institute/CMMI Institute, ISACA/IT Governance Institute, NASA y MÉTRICA v3 del Ministerio de Administraciones Públicas. Continúan sin resolver las dudas previas; no se han estudiado en este lote nuevos PDFs de academia ni cotejado las correcciones de las convocatorias.
+
+## Lote 131 — 24 de octubre
+
+IDs 971–975 revisados individualmente: dos vigentes y tres corregidas. Acumulado: 975 examinadas, 933 verificadas (263 vigentes, 581 corregidas y 89 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 683 preguntas con cambios de contenido. Quedan 11.148 sin revisar; siguiente ID 976.
+
+Se acota la técnica de factores críticos de éxito a la planificación PSI de MÉTRICA v3, evitando presentarla como técnica general de obtención de requisitos en análisis (971). Se mantiene como vigente la atribución de los programas de calidad de servicios públicos a la Dirección General de Gobernanza Pública, añadiendo la cita al artículo 11.1.e del Real Decreto 210/2024 y la comprobación del texto consolidado (972). En el modelo entidad-relación se corrige la clave «todas»: las cardinalidades mínimas y máximas expresan límites de participación, mientras que el tipo de correspondencia no se deduce únicamente de las entidades, sin reglas de negocio (973). Se confirma la definición del Sistema de Valor del Servicio de ITIL 4 Foundation (974). Se corrige el diagrama de contexto de MÉTRICA v3: en el DFD de nivel 0 se representa el sistema con un proceso único y las entidades externas, no almacenes de datos (975).
+
+Cotejo temático con Drive: el bloque 12 de planificación estratégica incluye PSI y FCE; el bloque 03 trata calidad en los servicios públicos; el bloque 29 de bases de datos desarrolla ER y cardinalidades; el bloque 41 cubre ITIL 4; y el bloque 38 recoge análisis estructurado y MÉTRICA. Se cotejaron esos apartados concretos y se contrastaron con las fuentes primarias, no se auditó todo Drive. Correspondencias revisadas contra BOE-A-2025-25938, anexo I, y BOE-A-2025-26262, anexo IX: A1-87/A1-95 y A2-III-2 (971); A1-22 (972); A1-89/A2-III-4 (973); A1-106 (974); A1-90/A1-95 y A2-III-2/A2-III-3 (975). No se revisaron en este lote correcciones posteriores de las convocatorias; la comprobación global sigue pendiente.
+
+Fuentes: Ministerio de Administraciones Públicas, MÉTRICA v3, PSI, ASI 1.1 y Técnicas; Real Decreto 210/2024, texto consolidado, art. 11.1.e; PeopleCert y AXELOS, ITIL 4 Foundation, §4.1; grupo ALARCOS-UCLM, notación DFD de MÉTRICA v3. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 975 registros de revisión y 11.148 preguntas restantes idénticas al commit original.
 
 ## Lote 127 — 22 de octubre
 
