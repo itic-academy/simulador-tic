@@ -1,8 +1,16 @@
 # Revisión del banco TIC — estado al 25 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 240 (IDs 1516–1520). Acumulado: 1.520 preguntas examinadas, 1.471 verificadas (362 vigentes, 987 corregidas y 122 históricas) y 49 pendientes de resolver (27 de fuente y 22 de ambigüedad); quedan 10.603 sin revisar de contenido. Hay 1.140 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 241 (IDs 1521–1525). Acumulado: 1.525 preguntas examinadas, 1.476 verificadas (362 vigentes, 992 corregidas y 122 históricas) y 49 pendientes de resolver (27 de fuente y 22 de ambigüedad); quedan 10.598 sin revisar de contenido. Hay 1.145 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 241 — 25 de octubre
+
+IDs 1521–1525 revisados individualmente. Se confirma que OM4 es fibra multimodo 50/125 µm (1521); se precisa que la capa de presentación negocia sintaxis de transferencia y transforma formatos según el modelo OSI (1522); se corrige la definición de fibra oscura para indicar que el tramo se ofrece sin electrónica activa y el cliente puede iluminarlo con sus propios equipos (1523); se corrige la afirmación falsa sobre SDH con base en G.707 (1524); y se acota la pregunta de WEP/WPA/WPA2 al vocabulario Wi-Fi/WLAN documentado por NIST, evitando una negación universal sobre siglas (1525). Los originales íntegros quedan en `cambios-lote-241.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): §2.3 fibra óptica (1521 y 1523), §1.2 modelos OSI/TCP-IP (1522), §7.3 jerarquías PDH/SDH/OTN (1524) y §4.8 seguridad de LAN (1525). Se contrastaron las correspondencias de temas oficiales A1/A2 con `temario-oficial.json` y las convocatorias BOE-A-2025-25938/A2 BOE-A-2025-26262; los epígrafes exactos se conservan en cada ficha. La academia sirve de encaje curricular y no sustituye las fuentes primarias.
+
+Fuentes primarias: IEC 60793-2-10:2019+AMD1:2022; ITU-T X.200 (07/1994), en vigor, §7.2.4; Ofcom, *Wholesale Fixed Telecoms Market Review 2021–26*, anexo 1, A2.43 y nota 60; ITU-T G.707/Y.1322 (01/2007); NIST CSRC Glossary (WEP y WPA2) y NIST SP 800-48 Rev. 1. Ejecutados `node revision/lote-241.cjs`, `node revision/academia-lote-241.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas, 1.525 registros, cero errores y 10.598 preguntas restantes idénticas al commit original.
 
 ## Lote 240 — 25 de octubre
 
