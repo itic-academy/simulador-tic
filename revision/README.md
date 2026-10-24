@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 139 (IDs 1011–1015). Acumulado: 1.015 preguntas revisadas, 973 verificadas (269 vigentes, 610 corregidas y 94 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.108 sin revisión de contenido. Hay 717 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 140 (IDs 1016–1020). Acumulado: 1.020 preguntas revisadas, 978 verificadas (270 vigentes, 613 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.103 sin revisión de contenido. Hay 720 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -33,7 +33,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.108 preguntas sin revisión de contenido. Siguiente ID: 1016. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.103 preguntas sin revisión de contenido. Siguiente ID: 1021. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -935,4 +935,15 @@ Cotejo con Drive: bloque 32 de ITIC Academy, versión 2026.1, apartados de apren
 Fuentes: Sutton y Barto, *Reinforcement Learning: An Introduction*, 2.ª ed., MIT Press, para retorno acumulado; Smith, «The Contract Net Protocol», *IEEE Transactions on Computers* 29(12), 1980, y NASA para roles y control en blackboard; Stanford Encyclopedia of Philosophy y Cambridge para semántica/demostración; UMBC CLIPS User’s Guide y University of Calgary para shells; Purdue y Brian Gaines (University of Victoria) para adquisición, modelado y validación del conocimiento. ITIC Academy, bloque 32, versión 2026.1, solo en los apartados indicados.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.015 registros de revisión y 11.108 preguntas restantes idénticas al commit original.
+
+
+## Lote 140 — 24 de octubre
+
+IDs 1016–1020 revisados individualmente: tres corregidas, una vigente y una histórica. Acumulado: 1.020 examinadas, 978 verificadas (270 vigentes, 613 corregidas y 95 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 720 preguntas con cambios de contenido. Quedan 11.103 sin revisar; siguiente ID 1.021.
+
+Se corrige la notación tipográfica de la complejidad temporal de heapsort a O(n log n), que es la cota del peor caso (1016). Se confirma la atribución del perceptrón a Rosenblatt mediante su informe técnico de enero de 1957 y se conserva como pregunta histórica (1017). Se matiza que las taxonomías de agentes varían según su eje; se conserva la terna de tipos de aplicación interfaz, información y virtuales como selección reconocida, no como clasificación universal ni exhaustiva (1018). Se verifica que OpenAI presentó ChatGPT en 2022 (1019). Se precisa que una jerarquía de herencia ISA entre marcos debe ser acíclica; la herencia múltiple no es por sí misma inválida, y las relaciones cíclicas ajenas a esa taxonomía quedan fuera del supuesto (1020). Se guardan los cinco originales en `cambios-lote-140.json`.
+
+Cotejo temático con Drive: bloque 32 de ITIC Academy, versión 2026.1, contenidos de algoritmos de ordenación, IA/redes neuronales, agentes y representación del conocimiento; se consultaron solo los apartados pertinentes. Correspondencias: A2-III-5 para heapsort (1016); A1-70/A2-III-5 para perceptrón, agentes y marcos (1017, 1018 y 1020); A1-70 para ChatGPT (1019). Fuentes: University of Waterloo y University of São Paulo sobre heapsort; el informe de Rosenblatt de Cornell y su publicación de 1958; Luck y d’Inverno, Carnegie Mellon, Carleton University y la literatura sobre taxonomías de agentes; anuncio oficial de OpenAI; University of Nijmegen, Universidad de Düsseldorf y Northwestern sobre marcos y herencia. Las taxonomías de agentes son diversas, por lo que la pregunta se formula deliberadamente sin presentar una lista como exhaustiva.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.020 registros de revisión y 11.103 preguntas restantes idénticas al commit original.
 
