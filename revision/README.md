@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 152 (IDs 1076–1080). Acumulado: 1.080 preguntas revisadas, 1.038 verificadas (276 vigentes, 666 corregidas y 96 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.043 sin revisión de contenido. Hay 775 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 153 (IDs 1081–1085). Acumulado: 1.085 preguntas revisadas, 1.043 verificadas (276 vigentes, 670 corregidas y 97 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.038 sin revisión de contenido. Hay 780 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -51,9 +51,18 @@ Cotejo con Drive: ITIC Academy, bloque 32, versión 2026.1, §§ 5.8–5.9 (BFS,
 
 Fuentes: ITIC Academy, bloque 32, §§ 5.8–5.9 y 6.2–6.6; MIT AI Memo 408, Roberts y Goldstein, *The FRL Primer* (1977); materiales universitarios de University of Perugia sobre representación con marcos; UC Berkeley CS188 y Poole/Mackworth sobre búsqueda informada; SWI-Prolog Reference Manual sobre programación declarativa/lógica; *Common Lisp the Language*, capítulo 28, especificación de CLOS; Carnegie Mellon y Poole/Mackworth sobre BFS y búsqueda no informada. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 1.080 registros de revisión y 11.043 preguntas restantes idénticas al commit original.
 
+## Lote 153 — 24 de octubre
+
+IDs 1081–1085 revisados individualmente: cuatro corregidas y una histórica. Acumulado: 1.085 examinadas, 1.043 verificadas (276 vigentes, 670 corregidas y 97 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 780 preguntas con cambios de contenido. Quedan 11.038 sin revisar; siguiente ID 1.086.
+
+Se acota 1081 a la finalidad estándar de LinearRegression (objetivo continuo), sin afirmar que nunca pueda adaptarse a clasificación. En 1082 se conserva la respuesta tradicional “serie de términos sin conexiones”, pero se limita expresamente a esa taxonomía bibliográfica, que no es una clasificación normativa de ISO 25964; el PDF de academia describe tesauros funcionales como vocabularios jerárquicos con relaciones. La 1083 queda como pregunta histórica sobre el documento ENIA publicado en 2020: seis ejes para 2020–2025; la pregunta original mezclaba esa estructura con una caracterización errónea de España Digital 2025 y con datos que cambiaron. En 1084 se sustituyen características universales infundadas por la arquitectura clásica de base de conocimiento y mecanismo de inferencia. En 1085 se corrige la clave: RDF Schema 1.1 admite varias declaraciones `rdfs:range`, y los valores se infieren como miembros de todas las clases (conjunción); la antigua opción sobre dominio/email, fecha e identificador corresponde al esquema `tag:` de RFC 4151, no a RDF Schema. Se conserva cada original íntegro en `cambios-lote-153.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 32, versión 2026.1, §§ 6.3–6.4 (RDF, ontologías y sistemas expertos) y § 8 (clasificación/regresión). También se consultó el PDF “Tema 103 y 104 - Gestión Documental v2”, edición 2026, § 2.4: presenta el tesauro como vocabulario controlado con relaciones jerárquicas/asociativas. Se registró que la taxonomía lineal/arborescente/reticular es bibliográfica tradicional y no ISO 25964. Correspondencias revisadas contra BOE-A-2025-25938, anexo I, temas 70, 105 y 107, y BOE-A-2025-26262, anexo IX, bloques II tema 16 y III tema 5.
+
+Fuentes: scikit-learn, Linear Models (regresión lineal y clasificación logística); Estrategia Nacional de Inteligencia Artificial, documento oficial de 2020, y BOE-A-2021-10680; NIST, An Overview of Expert Systems (NBSIR 82-2505); W3C Recommendation, RDF Schema 1.1, §§ 3.1 y 6.1; IETF RFC 4151, The “tag” URI Scheme; NISO, descripción de ISO 25964-1; repositorio institucional Universidad del Azuay sobre la tipología bibliográfica de estructuras de tesauro. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.085 registros de revisión y 11.038 preguntas restantes idénticas al commit original.
 ## Pendiente
 
-11.043 preguntas sin revisión de contenido. Siguiente ID: 1081. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.038 preguntas sin revisión de contenido. Siguiente ID: 1086. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
