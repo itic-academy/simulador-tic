@@ -52953,69 +52953,253 @@
       "id": 1201,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si una aplicación web desplegada en una JVM utiliza un servlet para generar páginas web de forma dinámica, dicho servlet no implementa la interfaz SingleThreadModel, y en un momento determinado se encuentra recibiendo múltiples peticiones de clientes de forma concurrente, ¿cuántos objetos de dicha clase estarán cargados en la memoria de la JVM?",
+      "texto": "Según Jakarta Servlet 6.1, en una aplicación web no distribuida con una declaración de servlet, ¿cuántas instancias debe usar el contenedor aunque lleguen peticiones concurrentes?",
       "opciones": [
-        "Tantos como peticiones concurrentes tenga",
-        "Tantos como le permita la memoria de la JVM"
+        "Una instancia por declaración; las peticiones pueden atenderse concurrentemente en varios hilos.",
+        "Una instancia nueva por cada petición concurrente.",
+        "Una instancia por cada cliente conectado.",
+        "El número de instancias depende de la memoria disponible y no lo limita la especificación."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La pregunta original confundía solicitudes concurrentes con instancias del servlet. La especificación actual 6.1 dice que, en el caso por defecto no distribuido, el contenedor usa una sola instancia por declaración; puede invocar service() concurrentemente mediante varios hilos. Se incorpora expresamente ese supuesto. Cotejo temático con ITIC Academy, bloque 30 (Java/Jakarta y arquitectura web). Cotejo temático con ITIC Academy, bloque 30, tecnologías Java/Jakarta y arquitectura web; cardinalidad de instancias y concurrencia verificadas contra Jakarta Servlet 6.1.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "30 · Tecnologías de sistemas de la información, versión 2026.1, Java/Jakarta y A1-65/A1-66/A2-III-12",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 30, tecnologías Java/Jakarta y arquitectura web; cardinalidad de instancias y concurrencia verificadas contra Jakarta Servlet 6.1."
+      },
+      "etiquetas": [
+        "Jakarta Servlet",
+        "servlet",
+        "instancias",
+        "concurrencia",
+        "hilos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/specifications/servlet/6.1/jakarta-servlet-spec-6.1.html",
+            "referencia": "Jakarta Servlet Specification 6.1, §§ 2.2 y 2.3.3.1: para una aplicación no distribuida (caso por defecto) exige una instancia por declaración de servlet y permite solicitudes concurrentes mediante varios hilos sobre service()."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, A1-65/A1-66/A1-85 y A2-III-12: arquitectura web, tecnologías Java/JDBC y blockchain/smart contracts. Cotejo temático."
+          }
+        ],
+        "observaciones": "La pregunta original confundía solicitudes concurrentes con instancias del servlet. La especificación actual 6.1 dice que, en el caso por defecto no distribuido, el contenedor usa una sola instancia por declaración; puede invocar service() concurrentemente mediante varios hilos. Se incorpora expresamente ese supuesto. Cotejo temático con ITIC Academy, bloque 30 (Java/Jakarta y arquitectura web). Cotejo temático con ITIC Academy, bloque 30, tecnologías Java/Jakarta y arquitectura web; cardinalidad de instancias y concurrencia verificadas contra Jakarta Servlet 6.1."
+      }
     },
     {
       "id": 1202,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes tipos de drivers interacciona con un Middleware que será el que convierta las peticiones JDBC en el protocolo específico del SGBD?",
+      "texto": "En la clasificación clásica de cuatro tipos de drivers JDBC, ¿qué tipo emplea un cliente Java que se comunica con middleware mediante un protocolo independiente del SGBD?",
       "opciones": [
-        "Native-Api Driver",
-        "Network Protocol Driver",
-        "Native Protocol Driver",
-        "JDBC-OBDC Bridge"
+        "Tipo 2: driver Java con API nativa del fabricante.",
+        "Tipo 3: Network Protocol Driver, con middleware que traduce al protocolo del SGBD.",
+        "Tipo 4: driver Java que se conecta directamente al protocolo del SGBD.",
+        "Tipo 1: puente JDBC-ODBC."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "En la clasificación clásica de cuatro tipos JDBC, el tipo 3 (Network Protocol Driver) habla con un middleware mediante protocolo independiente del SGBD; el middleware convierte y reenvía las solicitudes al protocolo específico. Se formula dentro de esa taxonomía histórica para no presentarla como enumeración normativa exhaustiva de los drivers modernos. Cotejo temático con ITIC Academy, bloques 29 (SGBD/JDBC) y 30 (Java y acceso a datos). Cotejo temático con ITIC Academy, bloques 29 y 30, SGBD y acceso de aplicaciones Java a datos. Se identifica expresamente como taxonomía clásica porque no constituye un catálogo normativo de drivers actuales.",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "29 · Bases de datos, SQL y modelado de datos, versión 2026.1, A1-63/A1-64/A2-II-5; 30 · Java/JDBC",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloques 29 y 30, SGBD y acceso de aplicaciones Java a datos. Se identifica expresamente como taxonomía clásica porque no constituye un catálogo normativo de drivers actuales."
+      },
+      "etiquetas": [
+        "JDBC",
+        "driver tipo 3",
+        "middleware",
+        "protocolo de red",
+        "histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/gettingstarted.html",
+            "referencia": "Oracle, The Java Tutorials, JDBC Basics, “Getting Started”: documenta la taxonomía clásica JDBC tipos 1–4 y define el tipo 3 como cliente Java que usa protocolo independiente de base de datos y middleware. Se registra como taxonomía histórica de JDBC, no como catálogo normativo actual de drivers."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1, A1-63/A1-64/A2-II-5; cotejo temático de conectividad/acceso JDBC y SGBD."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, A1-65/A1-66/A1-85 y A2-III-12: arquitectura web, tecnologías Java/JDBC y blockchain/smart contracts. Cotejo temático."
+          }
+        ],
+        "observaciones": "En la clasificación clásica de cuatro tipos JDBC, el tipo 3 (Network Protocol Driver) habla con un middleware mediante protocolo independiente del SGBD; el middleware convierte y reenvía las solicitudes al protocolo específico. Se formula dentro de esa taxonomía histórica para no presentarla como enumeración normativa exhaustiva de los drivers modernos. Cotejo temático con ITIC Academy, bloques 29 (SGBD/JDBC) y 30 (Java y acceso a datos). Cotejo temático con ITIC Academy, bloques 29 y 30, SGBD y acceso de aplicaciones Java a datos. Se identifica expresamente como taxonomía clásica porque no constituye un catálogo normativo de drivers actuales."
+      }
     },
     {
       "id": 1203,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué ventajas aporta blockchain frente a las soluciones clásicas de registro?",
+      "texto": "¿Qué propiedad describe NIST como característica básica de una blockchain, sin asumir garantías de privacidad o anonimato?",
       "opciones": [
-        "Resiliencia, transparencia, privacidad y anonimato.",
-        "Integridad, confianza distribuida, resiliencia.",
-        "Integridad, transparencia, bajo consumo energético.",
-        "Resiliencia, confianza distribuida, privacidad y anonimato."
+        "Ledger distribuido con evidencia de manipulación y resistencia a cambios publicados bajo el funcionamiento normal de la red.",
+        "Anonimato absoluto de todos los participantes y transacciones.",
+        "Confidencialidad automática de todos los datos registrados.",
+        "Consumo energético siempre menor que el de cualquier registro centralizado."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La pregunta «ventajas frente a soluciones clásicas» y las opciones originales convertían en universales propiedades como privacidad, anonimato o bajo consumo, que dependen del diseño y consenso. Se pregunta ahora por lo que NIST caracteriza como la propiedad base: registro distribuido, evidente ante manipulaciones y resistente a cambios, no una garantía absoluta de imposibilidad de cambio ni de anonimato. Cotejo temático con ITIC Academy, bloque 30, blockchain (A1-85). Cotejo temático con ITIC Academy, bloque 30, apartado de blockchain y tecnologías de registro distribuido; la definición técnica se contrasta con NISTIR 8202.",
+      "clasificacion": {
+        "A1": [
+          "A1-85"
+        ],
+        "A2": [],
+        "bloque_academia": "30 · Tecnologías de sistemas de la información, versión 2026.1, blockchain A1-85",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 30, apartado de blockchain y tecnologías de registro distribuido; la definición técnica se contrasta con NISTIR 8202."
+      },
+      "etiquetas": [
+        "blockchain",
+        "DLT",
+        "ledger distribuido",
+        "integridad",
+        "resiliencia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/ir/8202/final",
+            "referencia": "NISTIR 8202, Blockchain Technology Overview (2018), resumen: define blockchain como ledger digital distribuido, tamper-evident y tamper-resistant, normalmente sin repositorio ni autoridad central. No promete por ello anonimato, confidencialidad ni eficiencia energética."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, A1-65/A1-66/A1-85 y A2-III-12: arquitectura web, tecnologías Java/JDBC y blockchain/smart contracts. Cotejo temático."
+          }
+        ],
+        "observaciones": "La pregunta «ventajas frente a soluciones clásicas» y las opciones originales convertían en universales propiedades como privacidad, anonimato o bajo consumo, que dependen del diseño y consenso. Se pregunta ahora por lo que NIST caracteriza como la propiedad base: registro distribuido, evidente ante manipulaciones y resistente a cambios, no una garantía absoluta de imposibilidad de cambio ni de anonimato. Cotejo temático con ITIC Academy, bloque 30, blockchain (A1-85). Cotejo temático con ITIC Academy, bloque 30, apartado de blockchain y tecnologías de registro distribuido; la definición técnica se contrasta con NISTIR 8202."
+      }
     },
     {
       "id": 1204,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la respuesta correcta en relación a la tecnología de registros distribuidos:",
+      "texto": "¿Cuál de estas descripciones identifica Solidity en el ecosistema Ethereum?",
       "opciones": [
-        "R3 Corda es un proyecto organizado por Linux Foundation.",
-        "Los SmartContracts se denominan chaincode en la red Ethereum.",
-        "Hyperledger Fabric es una blockchain no permisionada.",
-        "Solidity es un lenguaje utilizado para programar SmartContracts en Ethereum."
+        "Lenguaje de alto nivel, tipado estáticamente y con sintaxis de llaves, usado para implementar smart contracts de la EVM.",
+        "Nombre que Ethereum da a todos los contratos desplegados en su red.",
+        "Protocolo de consenso que sustituye a la EVM.",
+        "Lenguaje exclusivo de Hyperledger Fabric, donde las aplicaciones se denominan chaincode."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La clave Solidity era correcta, pero el conjunto original mezclaba afirmaciones cambiantes sobre Corda, Linux Foundation y denominaciones de chaincode. Se pregunta ahora por la propiedad distintiva de Solidity como lenguaje de alto nivel, de llaves y tipado estático para contratos EVM. Fabric usa “chaincode” para sus smart contracts, mientras Ethereum documenta también otros lenguajes como Vyper. Cotejo temático con ITIC Academy, bloque 30, smart contracts/blockchain (A1-85). Cotejo temático con ITIC Academy, bloque 30, blockchain/smart contracts. Lenguajes y terminología se contrastan con Ethereum.org y la documentación de Hyperledger Fabric.",
+      "clasificacion": {
+        "A1": [
+          "A1-85"
+        ],
+        "A2": [],
+        "bloque_academia": "30 · Tecnologías de sistemas de la información, versión 2026.1, blockchain y smart contracts A1-85",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 30, blockchain/smart contracts. Lenguajes y terminología se contrastan con Ethereum.org y la documentación de Hyperledger Fabric."
+      },
+      "etiquetas": [
+        "Ethereum",
+        "Solidity",
+        "smart contracts",
+        "EVM",
+        "blockchain"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://ethereum.org/developers/docs/smart-contracts/languages/",
+            "referencia": "Ethereum.org, documentación de lenguajes de smart contracts: enumera Solidity y Vyper como lenguajes activos; describe Solidity como lenguaje de alto nivel, orientado a contratos, tipado estáticamente y con sintaxis de llaves para implementar contratos. Se formula una propiedad distintiva para que las alternativas no oculten que existen otros lenguajes en Ethereum."
+          },
+          {
+            "url": "https://hyperledger-fabric.readthedocs.io/en/latest/chaincode4ade.html",
+            "referencia": "Hyperledger Fabric Documentation, “Smart Contracts and Chaincode”: en Fabric los programas que definen la lógica de activos se denominan smart contracts y se despliegan en la red como chaincode; no es el término propio de Ethereum."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, A1-65/A1-66/A1-85 y A2-III-12: arquitectura web, tecnologías Java/JDBC y blockchain/smart contracts. Cotejo temático."
+          }
+        ],
+        "observaciones": "La clave Solidity era correcta, pero el conjunto original mezclaba afirmaciones cambiantes sobre Corda, Linux Foundation y denominaciones de chaincode. Se pregunta ahora por la propiedad distintiva de Solidity como lenguaje de alto nivel, de llaves y tipado estático para contratos EVM. Fabric usa “chaincode” para sus smart contracts, mientras Ethereum documenta también otros lenguajes como Vyper. Cotejo temático con ITIC Academy, bloque 30, smart contracts/blockchain (A1-85). Cotejo temático con ITIC Academy, bloque 30, blockchain/smart contracts. Lenguajes y terminología se contrastan con Ethereum.org y la documentación de Hyperledger Fabric."
+      }
     },
     {
       "id": 1205,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de los siguientes NO es un mecanismo en la gestión de una SAN para incrementar la seguridad:",
+      "texto": "¿Cuál de las siguientes operaciones no es un mecanismo de control de acceso en una SAN, sino la creación de una copia de un LUN?",
       "opciones": [
-        "Masking",
-        "Cluning",
-        "Zoning",
-        "Port Binding"
+        "LUN masking.",
+        "Cloning de un LUN.",
+        "Zoning.",
+        "Port binding."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se corrige «Cluning» por «cloning» y se acota la pregunta a control de acceso SAN: LUN masking limita qué hosts ven los LUN, zoning controla comunicación entre miembros de zonas y Cisco documenta port binding como seguridad de puerto. Cloning crea una copia de datos LUN, no una política de autorización. Cotejo con ITIC Academy, bloque 26, almacenamiento/SAN; el detalle de mecanismos se contrasta con Cisco, IBM y NetApp. Cotejo temático con ITIC Academy, bloque 26, almacenamiento/SAN. Zoning y port binding se verifican en Cisco; LUN masking en IBM y cloning en NetApp.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "26 · Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1, A1-56/A2-IV-5",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 26, almacenamiento/SAN. Zoning y port binding se verifican en Cisco; LUN masking en IBM y cloning en NetApp."
+      },
+      "etiquetas": [
+        "SAN",
+        "LUN masking",
+        "zoning",
+        "port binding",
+        "clonación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/linux-on-systems?topic=devices-step-3-lun-masking",
+            "referencia": "IBM Documentation, “LUN masking”: define el propósito del enmascaramiento como controlar qué instancias/hosts pueden acceder a LUN concretas, mediante la autorización de WWPN."
+          },
+          {
+            "url": "https://www.cisco.com/c/en/us/td/docs/dcn/mds9000/sw/9x/configuration/fabric/cisco-mds-9000-nx-os-fabric-configuration-guide-9x/configuring_and_managing_zones.html",
+            "referencia": "Cisco MDS 9000 NX-OS Fabric Configuration Guide 9.x, “Configuring and Managing Zones”: los miembros de una zona pueden acceder entre sí y los de zonas distintas no, describiendo zoning como control de acceso SAN."
+          },
+          {
+            "url": "https://www.cisco.com/en/US/docs/storage/san_switches/mds9000/sw/rel_3_x/configuration/guides/fm_3_3_3/psec.pdf",
+            "referencia": "Cisco MDS 9000 Fabric Manager Switch Configuration Guide, capítulo de Port Security: documenta port binding entre WWN de dispositivo e interfaz/puerto como política de seguridad del puerto SAN."
+          },
+          {
+            "url": "https://docs.netapp.com/us-en/ontap/san-admin/flexclone-luns-protect-your-data-concept.html",
+            "referencia": "NetApp ONTAP, “Protect your data with ONTAP FlexClone LUNs”: un clon LUN es una copia de escritura de un LUN en un punto temporal, utilizable para pruebas/copia de datos; la clonación no es por sí misma un mecanismo de control de acceso SAN."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1, A1-56/A2-IV-5; cotejo temático de SAN, almacenamiento y controles de acceso."
+          }
+        ],
+        "observaciones": "Se corrige «Cluning» por «cloning» y se acota la pregunta a control de acceso SAN: LUN masking limita qué hosts ven los LUN, zoning controla comunicación entre miembros de zonas y Cisco documenta port binding como seguridad de puerto. Cloning crea una copia de datos LUN, no una política de autorización. Cotejo con ITIC Academy, bloque 26, almacenamiento/SAN; el detalle de mecanismos se contrasta con Cisco, IBM y NetApp. Cotejo temático con ITIC Academy, bloque 26, almacenamiento/SAN. Zoning y port binding se verifican en Cisco; LUN masking en IBM y cloning en NetApp."
+      }
     },
     {
       "id": 1206,
