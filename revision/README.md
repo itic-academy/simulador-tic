@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 154 (IDs 1086–1090). Acumulado: 1.090 preguntas revisadas, 1.048 verificadas (276 vigentes, 674 corregidas y 98 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.033 sin revisión de contenido. Hay 785 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 155 (IDs 1091–1095). Acumulado: 1.095 preguntas revisadas, 1.053 verificadas (276 vigentes, 679 corregidas y 98 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.028 sin revisión de contenido. Hay 790 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -70,9 +70,21 @@ Cotejo con Drive: ITIC Academy, bloque 32, versión 2026.1, §§ 6.1 (IA simból
 
 Fuentes: Smolensky, “On the Proper Treatment of Connectionism”, *Behavioral and Brain Sciences* 11 (1988), para la distinción simbólico/subsimbólico y sus límites; University of Texas at Austin CS343 y W3C RIF Production Rule Dialect para equiparación, conjunto de conflicto, selección y disparo; Benítez, Castro y Requena, “Are Artificial Neural Networks Black Boxes?”, *IEEE Transactions on Neural Networks* 8(5) (1997), y NISTIR 4824 de Grother para interpretabilidad y OCR neuronal con vectores de características; Stanford CS108, “OOP Encapsulation”, para interfaz e implementación; Microsoft Source (16-01-1997) y Eric Horvitz/Microsoft Research, proyecto Lumiere, para el Ayudante de Office de Office 97. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.090 registros de revisión y 11.033 preguntas restantes idénticas al commit original.
 
+## Lote 155 — 24 de octubre
+
+IDs 1091–1095 revisados individualmente: cinco corregidas. Acumulado: 1.095 examinadas, 1.053 verificadas (276 vigentes, 679 corregidas y 98 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 790 preguntas con cambios de contenido. Quedan 11.028 sin revisar; siguiente ID 1.096.
+
+Se concreta retropropagación como el cálculo propagado de los gradientes del error en la red, separándolo de la regla de optimización que actualiza los pesos (1091). La distinción de inferencia en marcos Z/N queda expresamente atribuida a la edición 2023 de ITIC Academy: Z agota primero las facetas locales y N asciende por la faceta actual antes de cambiar de faceta; no se eleva esa nomenclatura a clasificación universal, pues la edición 2026.1 no la reproduce (1092). Se separan los mecanismos de control de inferencia (encadenamiento hacia delante/atrás) de las representaciones y herramientas que mezclaba el original (1093). Se sustituye «eficiencia» como supuesto distractor absoluto por la falta de garantía de que cualquier sistema experto mejore la eficiencia total de cualquier tarea; la utilidad depende de dominio, recursos y validación (1094). En RPA se precisa que OCR y capacidades de IA/NLP pueden integrarse en algunas soluciones, sin implicar que sean requisitos de todas ellas; se comprueba además el uso de RPA en un caso de atención al cliente (1095). Se conservan los cinco originales completos en `cambios-lote-155.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 32, versión 2026.1, §§ 1.3, 6, 10 y 12, para IA simbólica, sistemas expertos, redes neuronales y OCR. Para 1092 se consultó también «Tema 070 y 71 Inteligencia Artificial y Ciencia de datos», versión 2023, donde se describen expresamente las estrategias Z/N; se documenta que la edición actual conserva el tema de marcos, pero no esos nombres. El material actual no desarrolla RPA como epígrafe independiente: en 1095 solo se usa para encuadre con IA/OCR/procesos y se contrasta el detalle técnico con documentación de producto. Correspondencias BOE-A-2025-25938, anexo I: A1-70 (1091–1094), A1-70/A1-84/A1-90 (1095); BOE-A-2025-26262, anexo IX: A2-III-5 (1091–1094) y A2-II-16 (1095, correspondencia contextual con flujos de trabajo, no mención literal de RPA).
+
+Fuentes: Rumelhart, Hinton y Williams, «Learning representations by back-propagating errors», *Nature* 323 (1986), DOI 10.1038/323533a0; ITIC Academy, bloque 32, ediciones 2023 y 2026.1; NIST SP 500-188, sobre arquitectura, estrategias de inferencia, selección del problema y recursos de desarrollo de sistemas expertos; FHWA, *Verification, Validation and Evaluation of Expert Systems* (1995); Microsoft Learn sobre capacidades de AI Builder en Power Automate y sobre automatización RPA de tareas de contact center; IBM Robotic Process Automation, documentación de OCR integrado durante la automatización.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.095 registros de revisión y 11.028 preguntas restantes idénticas al commit original. Las 42 dudas anteriores y la comprobación global de modificaciones de las convocatorias siguen pendientes.
+
 ## Pendiente
 
-11.033 preguntas sin revisión de contenido. Siguiente ID: 1091. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.028 preguntas sin revisión de contenido. Siguiente ID: 1096. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
