@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 147 (IDs 1051–1055). Acumulado: 1.055 preguntas revisadas, 1.013 verificadas (275 vigentes, 643 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.068 sin revisión de contenido. Hay 750 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 148 (IDs 1056–1060). Acumulado: 1.060 preguntas revisadas, 1.018 verificadas (276 vigentes, 647 corregidas y 95 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.063 sin revisión de contenido. Hay 755 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -122,6 +122,18 @@ Cotejo con Drive: bloque 32 de ITIC Academy, versión 2026.1, §§ 10.1–10.2 (
 Fuentes: TensorFlow Core y Google Cloud Vertex AI para distinguir arquitectura neuronal, framework abierto y plataforma gestionada; Poole y Mackworth, *Artificial Intelligence: Foundations of Computational Agents*, §§ 5.7 y 15.9, para mundo cerrado/abierto; Nonaka, «A Dynamic Theory of Organizational Knowledge Creation», *Organization Science* 5(1), 1994, DOI 10.1287/orsc.5.1.14; Chomsky, «On Certain Formal Properties of Grammars», *Information and Control* 2(2), 1959, DOI 10.1016/S0019-9958(59)90362-6, y University of Waterloo, jerarquía de Chomsky. ITIC Academy, bloques 32 y 07, solo en los apartados indicados.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.055 registros de revisión y 11.068 preguntas restantes idénticas al commit original.
+
+## Lote 148 — 24 de octubre
+
+IDs 1056–1060 revisados individualmente: una vigente y cuatro corregidas. Acumulado: 1.060 examinadas, 1.018 verificadas (276 vigentes, 647 corregidas y 95 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 755 preguntas con cambios de contenido. Quedan 11.063 sin revisar; siguiente ID 1.061.
+
+Se acota la falta de garantía de optimalidad a greedy best-first, que prioriza h(n), sin extenderla a toda búsqueda heurística: A* puede ser óptimo con heurística admisible y las condiciones apropiadas (1056). Se especifica el modelo de actores como abstracción para sistemas concurrentes/distribuidos que también puede utilizarse en sistemas multiagente, evitando presentarlo como método de IA en sí mismo (1057). Se confirma O(log n) para búsqueda binaria en una tabla ordenada con acceso por índice (1058). Se alinea la distinción de conocimiento estratégico e inferencial con la taxonomía publicada: pasos de la tarea frente a deducción de hechos/hipótesis nuevos; la academia cubre el tema de sistemas expertos, pero no desarrolla expresamente esta taxonomía (1059). Se reescribe en positivo la pregunta de ámbitos de IA para eliminar la doble negación y no mezclar métodos con aplicaciones como si fueran una categoría única (1060).
+
+Cotejo con Drive: bloque 32 de ITIC Academy, versión 2026.1, § 5.9 (greedy y A*), § 5.7 (búsqueda binaria), § 7.3 (IA distribuida y sistemas multiagente), §§ 6.4–6.6 (sistemas basados en conocimiento e inferencia) y § 1 más §§ 6, 7 y 13 (ámbitos de IA). El material no desarrolla expresamente el modelo de actores ni la taxonomía estratégico/inferencial, limitaciones documentadas en las preguntas; se completan con fuentes técnicas. Correspondencias: A1-70/A2-III-5 (1056, 1057, 1059 y 1060); A2-III-5 (1058). La comprobación global de modificaciones posteriores de las convocatorias y las 42 dudas anteriores siguen pendientes.
+
+Fuentes: Poole y Mackworth, *Artificial Intelligence: Foundations of Computational Agents*, § 3.6; Akka, guía del modelo de actores, y Hewitt, “Viewing control structures as patterns of passing messages” (1977); Princeton Algorithms, 4.ª ed., clase `BinarySearch`, y Cornell CS2110 sobre O(log n); “Intelligent Monitoring and Control”, clasificación de conocimiento estratégico/inferencial; Rice University y University of Maryland sobre ámbitos y aplicaciones de IA; bloque 32 de ITIC Academy; anexos I y IX de BOE-A-2025-25938 y BOE-A-2025-26262.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.060 registros de revisión y 11.063 preguntas restantes idénticas al commit original.
 
 ## Vista local y comprobaciones
 

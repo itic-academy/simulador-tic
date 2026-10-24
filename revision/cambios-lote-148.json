@@ -1,0 +1,376 @@
+{
+  "fecha": "2026-10-24",
+  "alcance": "IDs 1056–1060; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1056,
+      "original": {
+        "id": 1056,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los métodos de busca heurística…",
+        "opciones": [
+          "Nunca encuentran la solución óptima",
+          "Dan con la solución óptima en menos tiempo",
+          "Dan con la solución óptima pero pueden ser más lentos que otros métodos",
+          "Permiten encontrar una buena solución rápidamente pero puede no ser la óptima"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1056,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si se utiliza greedy best-first search, que prioriza el valor heurístico h(n), ¿qué garantía ofrece sobre la calidad de la primera solución que encuentra?",
+        "opciones": [
+          "Siempre es una solución óptima.",
+          "Nunca encuentra una solución.",
+          "La solución siempre es óptima, aunque el algoritmo tarde más que A*.",
+          "Puede encontrar pronto una solución, pero no garantiza que sea óptima."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El original generaliza sobre todos los métodos heurísticos: algunos, como greedy best-first, pueden hallar rápidamente una solución no óptima, pero otros, como A* con heurística admisible y condiciones apropiadas, sí conservan optimalidad. Se delimita el supuesto a greedy best-first, que prioriza h(n), y se pregunta por su garantía: puede hallar pronto una solución, sin garantizar que sea óptima. Se conserva el índice D. Cotejado con § 5.9 de ITIC Academy; el propio material distingue greedy de A*. § 5.9: búsqueda greedy best-first y A*; se explicita que el texto compara sus garantías y no atribuye falta de optimalidad a toda búsqueda heurística.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "32",
+          "estado": "revisada",
+          "nota": "Cotejo temático del bloque 32, versión 2026.1: § 5.9: búsqueda greedy best-first y A*; se explicita que el texto compara sus garantías y no atribuye falta de optimalidad a toda búsqueda heurística."
+        },
+        "etiquetas": [
+          "búsqueda heurística",
+          "greedy best-first",
+          "optimalidad",
+          "A*"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.cs.ubc.ca/~poole/aibook/3e/html/ArtInt3e.Ch3.S6.html",
+              "referencia": "Poole y Mackworth, Artificial Intelligence: Foundations of Computational Agents, § 3.6: greedy best-first prioriza h(n) y puede dar soluciones no óptimas; A* puede ser óptimo con heurística admisible y las condiciones indicadas."
+            },
+            {
+              "url": "https://aimacode.github.io/aima-exercises/search-exercises/",
+              "referencia": "Russell y Norvig, recursos de Artificial Intelligence: A Modern Approach: la optimalidad de búsqueda depende del algoritmo y de propiedades de la heurística; “búsqueda heurística” no es una única garantía."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32, versión 2026.1: § 5.9 distingue búsqueda greedy y A*; § 5.7 explica búsqueda binaria; § 7.3 cubre IA distribuida y sistemas multiagente; § 6.4–6.6 describe sistemas basados en conocimiento y encadenamiento. El cotejo es temático y se indican expresamente los conceptos que el material no desarrolla."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: IA, sistemas expertos, agentes inteligentes y robótica."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5: estructuras de datos, algoritmos de búsqueda y fundamentos de inteligencia artificial."
+            }
+          ],
+          "observaciones": "El original generaliza sobre todos los métodos heurísticos: algunos, como greedy best-first, pueden hallar rápidamente una solución no óptima, pero otros, como A* con heurística admisible y condiciones apropiadas, sí conservan optimalidad. Se delimita el supuesto a greedy best-first, que prioriza h(n), y se pregunta por su garantía: puede hallar pronto una solución, sin garantizar que sea óptima. Se conserva el índice D. Cotejado con § 5.9 de ITIC Academy; el propio material distingue greedy de A*. § 5.9: búsqueda greedy best-first y A*; se explicita que el texto compara sus garantías y no atribuye falta de optimalidad a toda búsqueda heurística."
+        }
+      }
+    },
+    {
+      "id": 1057,
+      "original": {
+        "id": 1057,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes es un modelo de inteligencia artificial distribuida?",
+        "opciones": [
+          "Modelo de actores",
+          "Modelo de puntos de función",
+          "Modelo de regresión múltiple",
+          "Modelo de Nashville"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1057,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué modelo de computación ofrece una abstracción para sistemas concurrentes y distribuidos, y puede utilizarse al implementar sistemas multiagente de inteligencia artificial?",
+        "opciones": [
+          "Modelo de actores.",
+          "Modelo de puntos de función.",
+          "Modelo de regresión múltiple.",
+          "Modelo de Nashville."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "El modelo de actores es un modelo general de computación concurrente/distribuida, no un modelo que por sí solo implemente inteligencia artificial. Se precisa que se pregunta por el modelo que ofrece una abstracción para sistemas distribuidos y que también puede usarse al implementar sistemas multiagente de IA; la opción correcta sigue siendo “modelo de actores”. ITIC Academy § 7.3 cubre IA distribuida y sistemas multiagente, pero no desarrolla expresamente el modelo de actores; para este matiz se usa la documentación Akka y el artículo de Hewitt. § 7.3: IA distribuida y sistemas multiagente. El material no desarrolla expresamente el modelo de actores; ese aspecto se completa con la documentación de Akka y el artículo de Hewitt.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "32",
+          "estado": "revisada",
+          "nota": "Cotejo temático del bloque 32, versión 2026.1: § 7.3: IA distribuida y sistemas multiagente. El material no desarrolla expresamente el modelo de actores; ese aspecto se completa con la documentación de Akka y el artículo de Hewitt."
+        },
+        "etiquetas": [
+          "modelo de actores",
+          "sistemas distribuidos",
+          "agentes",
+          "concurrencia"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://doc.akka.io/libraries/akka-core/current/typed/guide/actors-intro.html",
+              "referencia": "Akka, “How the Actor Model Meets the Needs of Modern, Distributed Systems”: el modelo de actores sirve de abstracción para entidades concurrentes que se comunican mediante mensajes y puede mapear la comunicación remota."
+            },
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/0004370277900339",
+              "referencia": "Carl Hewitt, “Viewing control structures as patterns of passing messages”, Artificial Intelligence 8(3), 1977, DOI 10.1016/0004-3702(77)90033-9: fundamenta el paso de mensajes para sistemas de resolución de problemas basados en conocimiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32, versión 2026.1: § 5.9 distingue búsqueda greedy y A*; § 5.7 explica búsqueda binaria; § 7.3 cubre IA distribuida y sistemas multiagente; § 6.4–6.6 describe sistemas basados en conocimiento y encadenamiento. El cotejo es temático y se indican expresamente los conceptos que el material no desarrolla."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: IA, sistemas expertos, agentes inteligentes y robótica."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5: estructuras de datos, algoritmos de búsqueda y fundamentos de inteligencia artificial."
+            }
+          ],
+          "observaciones": "El modelo de actores es un modelo general de computación concurrente/distribuida, no un modelo que por sí solo implemente inteligencia artificial. Se precisa que se pregunta por el modelo que ofrece una abstracción para sistemas distribuidos y que también puede usarse al implementar sistemas multiagente de IA; la opción correcta sigue siendo “modelo de actores”. ITIC Academy § 7.3 cubre IA distribuida y sistemas multiagente, pero no desarrolla expresamente el modelo de actores; para este matiz se usa la documentación Akka y el artículo de Hewitt. § 7.3: IA distribuida y sistemas multiagente. El material no desarrolla expresamente el modelo de actores; ese aspecto se completa con la documentación de Akka y el artículo de Hewitt."
+        }
+      }
+    },
+    {
+      "id": 1058,
+      "original": {
+        "id": 1058,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿De qué orden de complejidad es la búsqueda dicotómica en una tabla ordenada?",
+        "opciones": [
+          "Logarítmica.",
+          "Lineal.",
+          "Exponencial.",
+          "Cuadrática."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1058,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una tabla ordenada con acceso por índice, ¿cuál es la complejidad temporal en el peor caso de la búsqueda binaria?",
+        "opciones": [
+          "O(log n), logarítmica.",
+          "O(n), lineal.",
+          "O(2^n), exponencial.",
+          "O(n²), cuadrática."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se confirma la clave A: en una tabla ordenada con acceso adecuado, la búsqueda binaria descarta aproximadamente la mitad del intervalo en cada comparación, lo que da complejidad O(log n). Se precisa “peor caso” y se conserva el índice A. Cotejado con § 5.7 del bloque 32, que explica el requisito de orden y la complejidad O(log n). § 5.7: búsqueda binaria sobre estructura ordenada, reducción a la mitad del intervalo y O(log n).",
+        "clasificacion": {
+          "A1": [],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "32",
+          "estado": "revisada",
+          "nota": "Cotejo temático del bloque 32, versión 2026.1: § 5.7: búsqueda binaria sobre estructura ordenada, reducción a la mitad del intervalo y O(log n)."
+        },
+        "etiquetas": [
+          "búsqueda binaria",
+          "tabla ordenada",
+          "complejidad",
+          "O(log n)"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://algs4.cs.princeton.edu/code/javadoc/edu/princeton/cs/algs4/BinarySearch.html",
+              "referencia": "Princeton, Algorithms, 4th ed., clase BinarySearch: el método busca en array ordenado y sus operaciones indexOf toman tiempo logarítmico en el peor caso."
+            },
+            {
+              "url": "https://www.cs.cornell.edu/courses/cs2110/2026fa/lectures/lec05/",
+              "referencia": "Cornell University, CS 2110, “Analyzing Complexity”: la búsqueda binaria reduce a la mitad la ventana de búsqueda en cada iteración y ejecuta O(log N) pasos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32, versión 2026.1: § 5.9 distingue búsqueda greedy y A*; § 5.7 explica búsqueda binaria; § 7.3 cubre IA distribuida y sistemas multiagente; § 6.4–6.6 describe sistemas basados en conocimiento y encadenamiento. El cotejo es temático y se indican expresamente los conceptos que el material no desarrolla."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5: estructuras de datos, algoritmos de búsqueda y fundamentos de inteligencia artificial."
+            }
+          ],
+          "observaciones": "Se confirma la clave A: en una tabla ordenada con acceso adecuado, la búsqueda binaria descarta aproximadamente la mitad del intervalo en cada comparación, lo que da complejidad O(log n). Se precisa “peor caso” y se conserva el índice A. Cotejado con § 5.7 del bloque 32, que explica el requisito de orden y la complejidad O(log n). § 5.7: búsqueda binaria sobre estructura ordenada, reducción a la mitad del intervalo y O(log n)."
+        }
+      }
+    },
+    {
+      "id": 1059,
+      "original": {
+        "id": 1059,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un sistema basado en el conocimiento, ¿qué diferencia hay entre el conocimiento inferencial y el conocimiento estratégico o de control?",
+        "opciones": [
+          "El conocimiento inferencial está contenido en la base de hechos y el de control es el que se obtiene mediante inferencia.",
+          "Los dos son equivalentes.",
+          "Los sistemas basados en el conocimiento no utilizan conocimiento estratégico.",
+          "El conocimiento inferencial procede de razonamientos y el estratégico permite decidir qué regla se aplica en cada momento."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1059,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la clasificación del conocimiento usada en adquisición de conocimiento experto, ¿qué distingue al conocimiento inferencial del estratégico?",
+        "opciones": [
+          "El inferencial contiene solo hechos iniciales; el estratégico consiste en conclusiones ya derivadas.",
+          "Son dos nombres para el mismo tipo de conocimiento.",
+          "El conocimiento estratégico no se utiliza en sistemas basados en conocimiento.",
+          "El estratégico describe los pasos de la tarea; el inferencial explica cómo se deducen hechos o hipótesis nuevos desde la información disponible."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se ajusta la formulación para seguir la taxonomía de adquisición de conocimiento citada: el estratégico describe los pasos que sigue el experto al realizar la tarea; el inferencial describe cómo deduce nuevos hechos o hipótesis a partir de la información disponible. La opción D mantiene el sentido correcto del original, pero ya no reduce el conocimiento estratégico a elegir una regla concreta. El bloque 32 § 6.4–6.6 explica base de conocimiento, motor de inferencia y selección de reglas, aunque no desarrolla expresamente estos dos rótulos; se deja constancia de ese límite. §§ 6.4–6.6: base de conocimiento, motor de inferencia y selección de reglas. El material no desarrolla expresamente la taxonomía estratégico/inferencial citada; se hace constar y se usa la referencia técnica externa.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "32",
+          "estado": "revisada",
+          "nota": "Cotejo temático del bloque 32, versión 2026.1: §§ 6.4–6.6: base de conocimiento, motor de inferencia y selección de reglas. El material no desarrolla expresamente la taxonomía estratégico/inferencial citada; se hace constar y se usa la referencia técnica externa."
+        },
+        "etiquetas": [
+          "sistemas basados en conocimiento",
+          "conocimiento inferencial",
+          "conocimiento estratégico",
+          "sistemas expertos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://files01.core.ac.uk/download/25256773.pdf",
+              "referencia": "“Intelligent Monitoring and Control”, sección sobre adquisición y clasificación del conocimiento: strategic knowledge describe los pasos que sigue el experto; inferential/judgmental knowledge explica cómo deduce hechos o hipótesis nuevos a partir de la información disponible."
+            },
+            {
+              "url": "https://home.cse.ust.hk/~dekai/523/notes/KM_Slides_Ch08.pdf",
+              "referencia": "Dekai Wu, HKUST, Knowledge Management lecture slides, knowledge-based systems: diferencia conocimiento del dominio y mecanismo procedural/de inferencia que lo aplica."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32, versión 2026.1: § 5.9 distingue búsqueda greedy y A*; § 5.7 explica búsqueda binaria; § 7.3 cubre IA distribuida y sistemas multiagente; § 6.4–6.6 describe sistemas basados en conocimiento y encadenamiento. El cotejo es temático y se indican expresamente los conceptos que el material no desarrolla."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: IA, sistemas expertos, agentes inteligentes y robótica."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5: estructuras de datos, algoritmos de búsqueda y fundamentos de inteligencia artificial."
+            }
+          ],
+          "observaciones": "Se ajusta la formulación para seguir la taxonomía de adquisición de conocimiento citada: el estratégico describe los pasos que sigue el experto al realizar la tarea; el inferencial describe cómo deduce nuevos hechos o hipótesis a partir de la información disponible. La opción D mantiene el sentido correcto del original, pero ya no reduce el conocimiento estratégico a elegir una regla concreta. El bloque 32 § 6.4–6.6 explica base de conocimiento, motor de inferencia y selección de reglas, aunque no desarrolla expresamente estos dos rótulos; se deja constancia de ese límite. §§ 6.4–6.6: base de conocimiento, motor de inferencia y selección de reglas. El material no desarrolla expresamente la taxonomía estratégico/inferencial citada; se hace constar y se usa la referencia técnica externa."
+        }
+      }
+    },
+    {
+      "id": 1060,
+      "original": {
+        "id": 1060,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes no es un grupo de áreas de aplicación de la inteligencia artificial?",
+        "opciones": [
+          "Juegos, sistemas expertos, demostración de teoremas",
+          "Lenguaje natural, razonamiento automático, redes neuronales",
+          "Algoritmos genéticos, modelización del comportamiento humano, robótica",
+          "Todas son áreas de aplicación de la inteligencia artificial"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1060,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación describe correctamente los ámbitos indicados?",
+        "opciones": [
+          "Los juegos y los sistemas expertos no guardan relación con la inteligencia artificial.",
+          "El procesamiento del lenguaje natural y las redes neuronales quedan fuera de la IA.",
+          "La demostración de teoremas, los algoritmos genéticos y la robótica no son áreas ni aplicaciones de IA.",
+          "Los juegos, los sistemas expertos, la demostración de teoremas, el procesamiento del lenguaje, el razonamiento automático, las redes neuronales, los algoritmos genéticos y la robótica son ámbitos reconocidos de IA."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El enunciado negativo del original era confuso y mezclaba áreas, técnicas y aplicaciones. Se reformula en positivo: juegos, sistemas expertos, demostración de teoremas, procesamiento del lenguaje, razonamiento automático, redes neuronales, algoritmos genéticos y robótica son áreas, métodos o aplicaciones reconocidas de IA; por tanto la opción D es la afirmación correcta. Se conserva el índice D. Cotejado con el § 1 y los §§ 6, 7 y 13 del bloque 32; Rice y Maryland respaldan la amplitud de la lista. § 1 y §§ 6, 7 y 13: finalidad/ámbitos de IA, sistemas expertos, agentes e IA distribuida y robótica; se cotejó el alcance temático, no una lista literal de cada ejemplo.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "32",
+          "estado": "revisada",
+          "nota": "Cotejo temático del bloque 32, versión 2026.1: § 1 y §§ 6, 7 y 13: finalidad/ámbitos de IA, sistemas expertos, agentes e IA distribuida y robótica; se cotejó el alcance temático, no una lista literal de cada ejemplo."
+        },
+        "etiquetas": [
+          "áreas de aplicación de la IA",
+          "juegos",
+          "sistemas expertos",
+          "NLP",
+          "robótica"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://aiml.rice.edu/ai-applications",
+              "referencia": "Rice University, AI Applications: recoge aplicaciones y técnicas de IA como juegos, razonamiento, representación del conocimiento, planificación, aprendizaje, NLP y robótica."
+            },
+            {
+              "url": "https://www.cs.umd.edu/researcharea/artificial-intelligence",
+              "referencia": "University of Maryland, Artificial Intelligence research area: incluye juegos, sistemas multiagente, procesamiento del lenguaje, redes neuronales y computación evolutiva entre áreas de investigación de IA."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32, versión 2026.1: § 5.9 distingue búsqueda greedy y A*; § 5.7 explica búsqueda binaria; § 7.3 cubre IA distribuida y sistemas multiagente; § 6.4–6.6 describe sistemas basados en conocimiento y encadenamiento. El cotejo es temático y se indican expresamente los conceptos que el material no desarrolla."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-70: IA, sistemas expertos, agentes inteligentes y robótica."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-III-5: estructuras de datos, algoritmos de búsqueda y fundamentos de inteligencia artificial."
+            }
+          ],
+          "observaciones": "El enunciado negativo del original era confuso y mezclaba áreas, técnicas y aplicaciones. Se reformula en positivo: juegos, sistemas expertos, demostración de teoremas, procesamiento del lenguaje, razonamiento automático, redes neuronales, algoritmos genéticos y robótica son áreas, métodos o aplicaciones reconocidas de IA; por tanto la opción D es la afirmación correcta. Se conserva el índice D. Cotejado con el § 1 y los §§ 6, 7 y 13 del bloque 32; Rice y Maryland respaldan la amplitud de la lista. § 1 y §§ 6, 7 y 13: finalidad/ámbitos de IA, sistemas expertos, agentes e IA distribuida y robótica; se cotejó el alcance temático, no una lista literal de cada ejemplo."
+        }
+      }
+    }
+  ]
+}
