@@ -53,7 +53,10 @@ function render(){
   }
   if(!found.length)el('questions').appendChild(node('p','No hay preguntas que coincidan con los filtros.'));
 }
-async function json(url){const response=await fetch(url);if(!response.ok)throw Error(`${url}: ${response.status}`);return response.json();}
+// Incrementar esta versión al publicar un lote evita que el navegador reutilice
+// una copia antigua del banco o del inventario desde su caché HTTP.
+const DATA_VERSION='20261024-210';
+async function json(url){const response=await fetch(`${url}?v=${DATA_VERSION}`,{cache:'no-cache'});if(!response.ok)throw Error(`${url}: ${response.status}`);return response.json();}
 async function initReview(){
   try{
     const [bank,catalog,inventory]=await Promise.all([json('preguntas_preparatic.json'),json('revision/temario-oficial.json'),json('revision/inventario.json')]);

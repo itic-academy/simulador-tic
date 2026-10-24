@@ -2,6 +2,8 @@
 
 Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 210 (IDs 1366–1370). Acumulado: 1.370 preguntas examinadas, 1.324 verificadas (337 vigentes, 872 corregidas y 115 históricas) y 46 pendientes de resolver (25 de fuente y 21 de ambigüedad); quedan 10.753 sin revisar de contenido. Hay 1.008 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
+La página de revisión y el simulador cargan el banco con `DATA_VERSION`/parámetro `v` para evitar datos obsoletos en la caché; incrementar ese valor en `revision/vista.js` y `app.js` al publicar cada lote.
+
 ## Último avance
 El 24 de octubre se revisaron individualmente los IDs 1366–1370: tres vigentes y dos corregidos. Se confirma que RFC no es una publicación de CEN (1366); se actualiza la terminología de ANSI/TIA-942-C a Rated-1–4 y se distingue Rated-3, mantenible en servicio con una ruta activa y otra de reserva, de Rated-4, con rutas activas y tolerancia a fallos (1367). Se verifica COBO como dispositivo corporativo de uso exclusivamente profesional (1368); se reemplaza la opción ambigua sobre nube pública por el criterio NIST de uso abierto al público general (1369); y se confirma una capacidad de 3 TB decimales para RAID 0+1 sobre seis discos de 1 TB (1370). Originales completos y resultados en `cambios-lote-210.json`.
 
