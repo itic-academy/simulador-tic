@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 186 (IDs 1246–1250). Acumulado: 1.250 preguntas examinadas, 1.208 verificadas (299 vigentes, 799 corregidas y 110 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.873 sin revisar de contenido. Hay 929 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 187 (IDs 1251–1255). Acumulado: 1.255 preguntas examinadas, 1.213 verificadas (300 vigentes, 802 corregidas y 111 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.868 sin revisar de contenido. Hay 933 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -10,6 +10,7 @@ Estado parcial, no revisión completa del banco. Publicación desde la rama `mai
 - `cambios-lote-003.json` y `cambios-lote-004.json`: IDs 41–100.
 - `cambios-lote-005.json` a `cambios-lote-009.json`: IDs 101–200, examinadas individualmente el 13 de octubre. Total acumulado: 200 clasificadas; 177 verificadas (66 vigentes, 105 corregidas y 6 históricas); 23 con dudas abiertas. El bloque de academia de los IDs 41–200 sigue pendiente de cotejo.
 - `lote-132.cjs` y `cambios-lote-132.json`: IDs 976–980, con el original íntegro, clasificación, fuentes, cotejo de apartados pertinentes de academia y resultado revisado.
+- `lote-187.cjs` y `cambios-lote-187.json`: IDs 1251–1255, con originales, revisión individual y cotejo temático de academia. Incluye la distinción ISO 19110/19115, el EtherType de FCoE frente a FIP, la desambiguación de RQL como RDF Query Language, la retirada en 2026 de la antigua guía de extintores de FM Global 5-32 y el artículo 6 de eIDAS consolidado.
 - `lote-135.cjs` y `cambios-lote-135.json`: IDs 991–995, con originales, revisión individual, fuentes y cotejo de temario.
 - lote-136.cjs y cambios-lote-136.json: IDs 996–1000, con originales, revisión individual, fuentes primarias y cotejo del bloque 32 de academia.
 - `lote-131.cjs` y `cambios-lote-131.json`: IDs 971–975, con el original íntegro, clasificación, fuentes, comprobación temática del material pertinente de academia y resultado revisado.
@@ -109,6 +110,16 @@ Fuentes: CIO, “What is a data artist?” (19-09-2018; entrevistas a profesiona
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.190 registros de revisión y 10.933 preguntas restantes idénticas al commit original.
 
 Tras el lote 175 quedan 10.928 preguntas sin revisión de contenido; siguiente ID: 1.196. La revisión completa no está terminada. También siguen abiertas las 42 dudas ya identificadas (24 de fuente y 18 de ambigüedad), la revisión contextual de grupos repetidos/candidatos de vigencia y el cotejo de correcciones posteriores de las convocatorias. Los pendientes se conservan individualizados y no se marcan como verificados hasta resolverlos.
+
+## Lote 187 — 24 de octubre
+
+IDs 1251–1255 revisados individualmente: una vigente, tres corregidas y una histórica. Acumulado: 1.255 examinadas, 1.213 verificadas (300 vigentes, 802 corregidas y 111 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 933 preguntas con cambios de contenido. Quedan 10.868 sin revisar; siguiente ID: 1.256.
+
+La 1251 se reformula para distinguir con precisión ISO 19110, metodología para catalogar tipos de objetos geográficos, de ISO 19115-1, norma de metadatos geográficos; el *clearinghouse* del original mezclaba conceptos. La 1252 conserva 0x8906 para el plano de datos FCoE y distingue 0x8914 para FIP. La 1253 delimita RQL como el lenguaje RDF Query Language del proyecto ICS-FORTH, pues el acrónimo aparece en otros contextos. La 1254 queda como histórica: FM Global DS 5-32 (edición 2024) decía no usar polvo químico seco en salas con equipos electrónicos, pero la copia oficial actual (enero de 2026, revisión provisional de julio de 2026) eliminó esa guía de extintores portátiles; no se presenta como requisito actual universal. La 1255 se centra en la condición del artículo 6.1.a eIDAS (sistema incluido en la lista del artículo 9); se aclara que el nivel, el supuesto del organismo público y el plazo de hasta 12 meses son requisitos distintos del texto consolidado. Se conservan íntegros los originales en `cambios-lote-187.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 33, versión 2026.1, tema 74 para SIG (el PDF declara que no aplica A2); bloque 26, versión 2026.1, § 8.2 para Fibre Channel/SAN y § 5.6 para incendios en CPD; bloques 29 y 30 para consultas relacionales/SQL y XML/tecnologías web (sin desarrollar RQL para RDF/S); bloque 36 para identidad electrónica y eIDAS. El material se usó como cotejo temático y no se le atribuyen detalles que no contiene. Correspondencias comprobadas contra BOE-A-2025-25938, anexo I, A1-74, A1-56, A1-76, A1-53 y A1-80; BOE-A-2025-26262, anexo IX, A2-IV-5, A2-IV-6 y A2-I-6. No se asigna una correspondencia A2 directa a SIG ni a la consulta RQL/RDF/S.
+
+Fuentes: ISO, ISO 19110:2016 (ficha de vigencia revisada en 2022) e ISO 19115-1:2014, junto con el registro de revisión de ISO/TC 211; NISO, ANSI/NISO Z39.50-2003 (S2014), y Library of Congress para la identificación de ISO 23950 con el protocolo Z39.50; IEEE 802.1, documento P802f YANG Data Model for Ethertypes, y guía técnica Cisco sobre EtherTypes FCoE/FIP; ICS-FORTH, páginas y manual originales de RQL; FM Global Data Sheet 5-32, ediciones 2024 y enero de 2026 con revisión provisional de julio de 2026; EUR-Lex, versión consolidada de eIDAS a 18-10-2024 y Reglamento modificativo (UE) 2024/1183. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.255 registros con revisión y 10.868 preguntas restantes idénticas al commit de referencia.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
