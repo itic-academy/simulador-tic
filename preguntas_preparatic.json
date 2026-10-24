@@ -41645,21 +41645,73 @@
       "id": 991,
       "bloque": 0,
       "tema": 0,
-      "texto": "Sobre lenguajes de comunicación entre sistemas multiagente cual es cierta:",
+      "texto": "¿Qué lenguaje de la iniciativa DARPA Knowledge Sharing Effort se diseñó como formato y protocolo de mensajes para compartir conocimiento en tiempo de ejecución entre agentes?",
       "opciones": [
-        "Se utiliza KQML porque aporta generalidad y ortogonalidad",
-        "Se utiliza KQML porque aporta generalidad y no ortogonalidad",
-        "utiliza KIF porque aporta generalidad y ortogonalidad",
-        "Se utiliza ARCHON porque aporta generalidad y ortogonalidad"
+        "KQML, mediante mensajes con performativas y contenido separado.",
+        "KIF, como lenguaje lógico de representación del contenido.",
+        "ARCHON, como arquitectura para sistemas inteligentes distribuidos.",
+        "FIPA ACL, como lenguaje normalizado posteriormente por FIPA, no como producto de esa iniciativa DARPA."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva la respuesta KQML, pero se sustituye la justificación imprecisa basada en «generalidad y ortogonalidad» por una propiedad documentada: KQML es un formato y protocolo de mensajes para compartir conocimiento entre agentes y organiza los mensajes mediante performativas, separando el nivel del mensaje del contenido. KIF se utiliza como representación/lenguaje de contenido, no como protocolo de comunicación; ARCHON es una arquitectura. Cotejado con los apartados de KQML/KIF y representación del conocimiento de los bloques 32 de academia 2026 y 2024. Correspondencia: A1-70 y A2-III-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "KQML",
+        "KIF",
+        "comunicación entre agentes",
+        "DARPA Knowledge Sharing Effort"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://research.cs.umbc.edu/kqml/papers/kbkshtml/kbks.html",
+            "referencia": "Finin, Fritzson, McKay y McEntire, «KQML — A Language and Protocol for Knowledge and Information Exchange», UMBC Technical Report CS-94-02: define KQML como formato de mensaje y protocolo de gestión para compartir conocimiento en ejecución entre agentes."
+          },
+          {
+            "url": "https://research.cs.umbc.edu/kqml/kqmlspec/spec.html",
+            "referencia": "DARPA Knowledge Sharing Initiative, Specification of the KQML Agent-Communication Language: especificación de KQML como lenguaje de comunicación de agentes con performativas y parámetros de mensaje/contenido."
+          },
+          {
+            "url": "https://ebiquity.umbc.edu/_file_directory_/papers/280.pdf",
+            "referencia": "Genesereth et al., especificación de sistemas de representación: ejemplifica KQML como lenguaje de performativas y KIF como lenguaje de contenido para intercambio de conocimiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1: cubre el programa A1-70 y A2-D5, incluidos búsqueda heurística, estructuras de datos, KQML frente a KIF, IA simbólica, redes neuronales y sistemas expertos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TK0LY4JDblNzmcSMFecDpT5DAm04fjXK/view?usp=drivesdk",
+            "referencia": "ITIC Academy, tema 070/071 de IA y Ciencia de Datos, versión 2024: apartado «Representación del Conocimiento», junto con métodos de búsqueda, agentes y sistemas expertos; cotejo pedagógico histórico, actualizado por el bloque 32 de 2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I: correspondencia con el programa oficial A1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con el programa oficial A2 de ingreso libre."
+          }
+        ],
+        "observaciones": "Se conserva la respuesta KQML, pero se sustituye la justificación imprecisa basada en «generalidad y ortogonalidad» por una propiedad documentada: KQML es un formato y protocolo de mensajes para compartir conocimiento entre agentes y organiza los mensajes mediante performativas, separando el nivel del mensaje del contenido. KIF se utiliza como representación/lenguaje de contenido, no como protocolo de comunicación; ARCHON es una arquitectura. Cotejado con los apartados de KQML/KIF y representación del conocimiento de los bloques 32 de academia 2026 y 2024. Correspondencia: A1-70 y A2-III-5."
+      }
     },
     {
       "id": 992,
       "bloque": 0,
       "tema": 0,
-      "texto": "El método de búsqueda informado que tiene en cuenta el coste mínimo necesario para llegar al estado solución pasando por el estado X, es el denominado:",
+      "texto": "¿Qué búsqueda informada prioriza el nodo con menor heurística h(n), que estima el coste restante hasta una meta, sin sumar el coste g(n) ya recorrido?",
       "opciones": [
         "Método de búsqueda bidireccional.",
         "Búsqueda ávida (Greedy search).",
@@ -41667,48 +41719,232 @@
         "Método Escalada simple (Hill-climbing search)."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La clave B se conserva con una formulación más precisa. La búsqueda ávida (greedy best-first) ordena la frontera por h(n), estimación del coste restante desde el nodo a una meta; no combina esa heurística con el coste ya recorrido g(n). A* sí usa g(n)+h(n). El original podía confundirse con la estimación de una ruta completa «pasando por X»; ahora identifica el criterio propio de greedy. El bloque 32 de academia trata búsqueda heurística y A2-D5. Correspondencia: A1-70 y A2-III-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "búsqueda informada",
+        "búsqueda ávida",
+        "heurística",
+        "h(n)",
+        "greedy"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.cs.ubc.ca/~poole/aibook/3e/html/ArtInt3e.Ch3.S6.html",
+            "referencia": "Poole y Mackworth, Artificial Intelligence: Foundations of Computational Agents, §3.6: la función heurística h(n) estima el coste de la ruta de menor coste desde el nodo hasta una meta."
+          },
+          {
+            "url": "https://inst.eecs.berkeley.edu/~cs188/textbook/search/informed.html",
+            "referencia": "UC Berkeley, CS 188, «Informed Search»: greedy search expande el nodo de frontera con menor valor heurístico h(n) (coste estimado hacia delante) y no suma el coste recorrido g(n), a diferencia de A*."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1: cubre el programa A1-70 y A2-D5, incluidos búsqueda heurística, estructuras de datos, KQML frente a KIF, IA simbólica, redes neuronales y sistemas expertos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I: correspondencia con el programa oficial A1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con el programa oficial A2 de ingreso libre."
+          }
+        ],
+        "observaciones": "La clave B se conserva con una formulación más precisa. La búsqueda ávida (greedy best-first) ordena la frontera por h(n), estimación del coste restante desde el nodo a una meta; no combina esa heurística con el coste ya recorrido g(n). A* sí usa g(n)+h(n). El original podía confundirse con la estimación de una ruta completa «pasando por X»; ahora identifica el criterio propio de greedy. El bloque 32 de academia trata búsqueda heurística y A2-D5. Correspondencia: A1-70 y A2-III-5."
+      }
     },
     {
       "id": 993,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la orientación lógica de la inteligencia artificial podemos afirmar que:",
+      "texto": "En lógica proposicional clásica, ¿qué afirmación es correcta?",
       "opciones": [
-        "El cálculo proposicional entra en la semántica de las proposiciones, distinguiendo en ella los componentes predicados y los términos",
-        "El cálculo de predicados representa el lenguaje usual tomando como elemento básico de la formulación una representación matemática de las frases declarativas simples (proposiciones)",
-        "En el cálculo proposicional, una proposición es la unidad mínima del lenguaje con un contenido de información, sobre cuyo significado es posible afirmar la verdad o falsedad",
-        "Las clases de conectivas que pertenecen al cálculo de predicadosse llaman: negación y condicional."
+        "El cálculo proposicional descompone las proposiciones en predicados y términos sobre individuos.",
+        "El cálculo proposicional incorpora cuantificadores para expresar propiedades de objetos.",
+        "Una proposición atómica es una unidad evaluable como verdadera o falsa; las conectivas permiten formar proposiciones compuestas.",
+        "Sus únicas conectivas son la negación y el condicional."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La clave C es correcta: en lógica proposicional, las proposiciones atómicas son unidades completas evaluables como verdaderas o falsas; las conectivas forman fórmulas compuestas. Los predicados y términos pertenecen al análisis de primer orden, y las conectivas proposicionales no se reducen a negación y condicional. Se reescriben los distractores que mezclaban la semántica proposicional con componentes del cálculo de predicados. El bloque antiguo de academia cubría representación del conocimiento; el 32 de 2026 mantiene los fundamentos de IA. Correspondencia: A1-70 y A2-III-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "lógica proposicional",
+        "proposiciones",
+        "conectivas",
+        "lógica de predicados"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://plato.stanford.edu/entries/logic-propositional/",
+            "referencia": "Stanford Encyclopedia of Philosophy, «Propositional Logic»: distingue variables proposicionales atómicas y conectivas, que operan sobre proposiciones completas; el análisis clásico asigna valores de verdad."
+          },
+          {
+            "url": "https://plato.stanford.edu/entries/logic-classical/",
+            "referencia": "Stanford Encyclopedia of Philosophy, «Classical Logic»: exposición del lenguaje formal, fórmulas y semántica bivalente de la lógica clásica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TK0LY4JDblNzmcSMFecDpT5DAm04fjXK/view?usp=drivesdk",
+            "referencia": "ITIC Academy, tema 070/071 de IA y Ciencia de Datos, versión 2024: apartado «Representación del Conocimiento», junto con métodos de búsqueda, agentes y sistemas expertos; cotejo pedagógico histórico, actualizado por el bloque 32 de 2026."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1: cubre el programa A1-70 y A2-D5, incluidos búsqueda heurística, estructuras de datos, KQML frente a KIF, IA simbólica, redes neuronales y sistemas expertos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I: correspondencia con el programa oficial A1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con el programa oficial A2 de ingreso libre."
+          }
+        ],
+        "observaciones": "La clave C es correcta: en lógica proposicional, las proposiciones atómicas son unidades completas evaluables como verdaderas o falsas; las conectivas forman fórmulas compuestas. Los predicados y términos pertenecen al análisis de primer orden, y las conectivas proposicionales no se reducen a negación y condicional. Se reescriben los distractores que mezclaban la semántica proposicional con componentes del cálculo de predicados. El bloque antiguo de academia cubría representación del conocimiento; el 32 de 2026 mantiene los fundamentos de IA. Correspondencia: A1-70 y A2-III-5."
+      }
     },
     {
       "id": 994,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el ámbito de las estructuras de datos, señale la respuesta correcta en relación a un árbol perfectamente equilibrado:",
+      "texto": "Según la definición de árbol binario perfectamente equilibrado de Niklaus Wirth, ¿qué condición se cumple en cada nodo?",
       "opciones": [
-        "Para que un árbol esté perfectamente equilibrado se requiere que, para cada nodo, el número de nodos del subárbol izquierdo sea igual al número de nodos en el subárbol derecho.",
-        "Para que un árbol esté perfectamente equilibrado se requiere que, para cada nodo, el número de nodos del subárbol izquierdo y el número de nodos en el subárbol derecho difieran como mucho en una unidad.",
-        "Un árbol está perfectamente equilibrado si está ordenado, independientemente del número de nodos de cada subárbol."
+        "Los subárboles izquierdo y derecho tienen exactamente el mismo número de nodos.",
+        "Los números de nodos de los subárboles izquierdo y derecho difieren como máximo en uno.",
+        "El árbol está ordenado por clave, con independencia del tamaño de sus subárboles."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene la clave B, pero se acota el término «perfectamente equilibrado», que no se usa de forma uniforme en todos los textos. El enunciado pregunta ahora explícitamente por la definición de Wirth: en cada nodo, los tamaños de los subárboles izquierdo y derecho difieren como máximo en uno. No se confunde con un árbol AVL, cuya condición usual compara alturas, ni con el árbol binario completo. Cotejado con el apartado de árboles del bloque 32 de academia, dentro de A2-D5. Correspondencia: A2-III-5; no se asigna A1 directo.",
+      "clasificacion": {
+        "A1": [],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "árbol binario",
+        "árbol perfectamente equilibrado",
+        "Wirth",
+        "subárboles"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://people.inf.ethz.ch/~wirth/AD.pdf",
+            "referencia": "Niklaus Wirth, Algorithms and Data Structures, sección de árboles binarios, definición de «perfectly balanced»: para cada nodo, el número de nodos en sus subárboles izquierdo y derecho difiere como máximo en uno."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32, sección de estructuras de datos del tema A2-D5: árboles y estructuras jerárquicas; cotejo temático, la definición concreta se contrasta con Wirth."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con el programa oficial A2 de ingreso libre."
+          }
+        ],
+        "observaciones": "Se mantiene la clave B, pero se acota el término «perfectamente equilibrado», que no se usa de forma uniforme en todos los textos. El enunciado pregunta ahora explícitamente por la definición de Wirth: en cada nodo, los tamaños de los subárboles izquierdo y derecho difieren como máximo en uno. No se confunde con un árbol AVL, cuya condición usual compara alturas, ni con el árbol binario completo. Cotejado con el apartado de árboles del bloque 32 de academia, dentro de A2-D5. Correspondencia: A2-III-5; no se asigna A1 directo."
+      }
     },
     {
       "id": 995,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señalar la sentencia correcta respecto de la ingeniería del conocimiento:",
+      "texto": "¿Qué afirmación describe correctamente una representación paramétrica del conocimiento?",
       "opciones": [
-        "Las reglas de producción y las reglas deductivas son maneras de representación paramétrica del conocimiento",
-        "Ejemplos de modelos de representación del conocimiento en forma paramétrica son el perceptrón y las redes neuronales",
-        "Uno de los algoritmos más utilizados en el proceso de entrenamiento viene dado por el filtrado de Waltz",
-        "El razonamiento no monótono es un modelo de razonamiento cuyo objetivo es asignar medidas o factores de certeza a un conjunto de proposiciones intermedias a partir de las asignadas a las proposiciones iniciales"
+        "Las reglas de producción y las reglas deductivas codifican explícitamente el conocimiento mediante símbolos y reglas.",
+        "En los perceptrones y redes neuronales el conocimiento aprendido se codifica de forma distribuida en parámetros como pesos y sesgos.",
+        "El algoritmo de Waltz es un método de entrenamiento de redes para asignar pesos a partir de datos.",
+        "El razonamiento no monótono asigna factores numéricos de certeza a proposiciones sin retirar conclusiones previas."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La respuesta B se conserva, pero se precisa el contraste entre representaciones simbólicas y paramétricas: perceptrones y redes neuronales codifican conocimiento aprendido en pesos/parámetros. Las reglas de producción y las reglas deductivas son representaciones simbólicas; el algoritmo de Waltz resuelve un problema de etiquetado/interpretación de líneas en visión, no entrena redes; y los factores de certeza tratan incertidumbre, no definen el razonamiento no monótono, que permite retirar conclusiones por defecto ante nueva información. El bloque 32 de academia cubre redes neuronales, IA simbólica y sistemas expertos; el tema 2024 incluía representación del conocimiento. Correspondencia: A1-70 y A2-III-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ingeniería del conocimiento",
+        "representación paramétrica",
+        "redes neuronales",
+        "conocimiento distribuido",
+        "razonamiento no monótono"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://ntrs.nasa.gov/citations/19980040349",
+            "referencia": "Matheus y Hohensee, NASA/CR-87-206203, Learning in Artificial Neural Systems: describe el conocimiento aprendido en redes conexionistas como distribuido a través de los pesos/conexiones modificados durante el aprendizaje."
+          },
+          {
+            "url": "https://stanford.edu/~jlmcc/papers/McCBotvinick20DeepLearningOhHM.pdf",
+            "referencia": "McClelland et al., «Knowledge and Learning in a Deep Neural Network»: identifica los valores de los pesos y sesgos como parámetros que contienen el conocimiento que usa la red."
+          },
+          {
+            "url": "https://www.cs.columbia.edu/~waltz/Papers/Understanding%20Line%20Drawing%20of%20Scenes%20with%20Shadows%20PH%20Winston%201975.pdf",
+            "referencia": "David Waltz, «Understanding Line Drawings of Scenes with Shadows», 1975: el procedimiento analiza y restringe etiquetados de dibujos de líneas; no es un algoritmo de entrenamiento de redes."
+          },
+          {
+            "url": "https://redirect.cs.umbc.edu/courses/671/fall09/notes/12.pdf",
+            "referencia": "Universidad de Maryland, Baltimore County, apuntes de representación del conocimiento: separan el razonamiento por defecto/no monótono de los factores de certeza, que propagan medidas de creencia en reglas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1: cubre el programa A1-70 y A2-D5, incluidos búsqueda heurística, estructuras de datos, KQML frente a KIF, IA simbólica, redes neuronales y sistemas expertos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TK0LY4JDblNzmcSMFecDpT5DAm04fjXK/view?usp=drivesdk",
+            "referencia": "ITIC Academy, tema 070/071 de IA y Ciencia de Datos, versión 2024: apartado «Representación del Conocimiento», junto con métodos de búsqueda, agentes y sistemas expertos; cotejo pedagógico histórico, actualizado por el bloque 32 de 2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I: correspondencia con el programa oficial A1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con el programa oficial A2 de ingreso libre."
+          }
+        ],
+        "observaciones": "La respuesta B se conserva, pero se precisa el contraste entre representaciones simbólicas y paramétricas: perceptrones y redes neuronales codifican conocimiento aprendido en pesos/parámetros. Las reglas de producción y las reglas deductivas son representaciones simbólicas; el algoritmo de Waltz resuelve un problema de etiquetado/interpretación de líneas en visión, no entrena redes; y los factores de certeza tratan incertidumbre, no definen el razonamiento no monótono, que permite retirar conclusiones por defecto ante nueva información. El bloque 32 de academia cubre redes neuronales, IA simbólica y sistemas expertos; el tema 2024 incluía representación del conocimiento. Correspondencia: A1-70 y A2-III-5."
+      }
     },
     {
       "id": 996,
