@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 135 (IDs 991–995). Acumulado: 995 preguntas revisadas, 953 verificadas (266 vigentes, 594 corregidas y 93 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.128 sin revisión de contenido. Hay 700 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 137 (IDs 1001–1005). Acumulado: 1.005 preguntas revisadas, 963 verificadas (268 vigentes, 601 corregidas y 94 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.118 sin revisión de contenido. Hay 708 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -896,4 +896,17 @@ Cotejo con Drive: el bloque 32 de ITIC Academy, versión 2026.1, cubre IA simbó
 Fuentes: Shortliffe, «Mycin: A Knowledge-Based Computer Program Applied to Infectious Diseases» (1977), y Shortliffe y Buchanan, «A model of inexact reasoning in medicine» (1975); materiales universitarios de Johns Hopkins, Washington y Northwestern sobre marcos; University of Alberta y OpenDSA sobre recorridos; Brachman y Levesque y la referencia de O’Reilly sobre reglas y estrategias de encadenamiento; University of Iowa y Waikato sobre aprendizaje supervisado/no supervisado e IBM sobre clustering. ITIC Academy, bloque 32 versión 2026.1.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.000 registros de revisión y 11.123 preguntas restantes idénticas al commit original.
+
+
+## Lote 137 — 24 de octubre
+
+IDs 1001–1005 revisados individualmente: tres corregidas, una vigente y una histórica. Acumulado: 1.005 examinadas, 963 verificadas (268 vigentes, 601 corregidas y 94 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 708 preguntas con cambios de contenido. Quedan 11.118 sin revisar; siguiente ID 1.006.
+
+Se diferencia la representación mediante marcos, con slots y valores, de una red semántica, que expresa conceptos y relaciones como grafo (1001). Se corrige «descendientes» por «hijos directos» en la definición del árbol binario; las tres definiciones de grado quedan correctas (1002). Se confirma con el artículo original de Fikes y Nilsson la expansión Stanford Research Institute Problem Solver (1003). La antigua referencia a «Web Semántica 3.0» se reemplaza por una pregunta histórica verificable: WDML es la iniciativa World Digital Mathematics Library, mientras SHOE, DAML+OIL y RDF son tecnologías/lenguajes en la historia de la Web Semántica (1004). Se aclara el encadenamiento hacia delante como razonamiento desde hechos hacia reglas cuyas premisas coinciden, distinguiéndolo de encadenamiento hacia atrás y de la resolución de conflictos (1005).
+
+Cotejo con Drive: bloque 32 de ITIC Academy, versión 2026.1, apartados 2.6 (árboles y recorridos), 6 (IA simbólica y representación del conocimiento) y preguntas razonadas. Correspondencias: A1-70/A2-III-5 (1001, 1003–1005); A2-III-5 (1002). La referencia histórica a WDML se verificó en la International Mathematical Union y las denominaciones SHOE/RDF/DAML+OIL en materiales de W3C. Sigue pendiente el cotejo exhaustivo de modificaciones posteriores de las convocatorias y permanecen abiertas las 42 dudas anteriores.
+
+Fuentes principales: Johns Hopkins University y University of Washington sobre marcos y redes semánticas; OpenDSA y Cornell sobre árboles; Fikes y Nilsson (1971) sobre STRIPS; W3C sobre la historia de ontologías Web y DAML+OIL; International Mathematical Union sobre WDML; Brachman y Levesque y Middlesex University sobre sistemas expertos y encadenamiento. ITIC Academy, bloque 32 versión 2026.1.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.005 registros de revisión y 11.118 preguntas restantes idénticas al commit original.
 
