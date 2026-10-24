@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 174 (IDs 1186–1190). Acumulado: 1.190 preguntas examinadas, 1.148 verificadas (293 vigentes, 748 corregidas y 107 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.933 sin revisar de contenido. Hay 875 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 175 (IDs 1191–1195). Acumulado: 1.195 preguntas examinadas, 1.153 verificadas (293 vigentes, 753 corregidas y 107 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.928 sin revisar de contenido. Hay 880 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -82,6 +82,18 @@ Fuentes: Rumelhart, Hinton y Williams, «Learning representations by back-propag
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.095 registros de revisión y 11.028 preguntas restantes idénticas al commit original. Las 42 dudas anteriores y la comprobación global de modificaciones de las convocatorias siguen pendientes.
 
+## Lote 175 — 24 de octubre
+
+IDs 1191–1195 revisados individualmente: cinco corregidas. Acumulado: 1.195 examinadas, 1.153 verificadas (293 vigentes, 753 corregidas y 107 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 880 preguntas con cambios en contenido. Quedan 10.928 sin revisar; siguiente ID 1.196.
+
+Se corrige en 1191 «estándar» por «sistema»: CTS define cómo se declaran, usan y administran los tipos en el CLR y favorece la integración entre lenguajes (1191). Se actualiza el significado oficial recursivo de PHP y se distingue del nombre histórico PHP/FI (1192). Se precisa k-means como algoritmo de clustering no supervisado que agrupa en K clusters y minimiza la inercia; se distingue de clasificación supervisada y se evita atribuirle una aplicación exclusiva de fraude (1193). Se resuelve la categoría ambigua de PostCSS: la pregunta pide su función distintiva de transformar CSS mediante JavaScript y plugins, en lugar de considerarlo sin matices otro preprocesador clásico como Sass o Stylus (1194). Se define Amazon SQS por su servicio gestionado de colas de mensajes durables/escalables para desacoplar sistemas, sin confundirlo con bases de datos, virtualización o seguridad SSL (1195). Se conservan íntegros los originales en `cambios-lote-175.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 30, versión 2026.1, A1-66/A2-III-11, CTS/CLR (.NET; 1191), A1-68/A2-III-12, PHP (1192), y A1-65/A1-77/A2-III-12, tecnologías web/CSS (1194). Bloque 32, versión 2026.1, § 8.13, K-means (1193). Bloque 55, versión 2026.1, cloud computing (1195; cotejo temático, no detalla el catálogo de AWS). No se atribuye a academia una clasificación o descripción que no contiene: CTS y PHP se verifican con los proyectos respectivos, k-means con scikit-learn, PostCSS/Sass/Stylus con su documentación y SQS con AWS.
+
+Fuentes: Microsoft Learn, «Common Type System»; PHP Manual oficial, FAQ general (significado actual recursivo); scikit-learn 1.9, «Clustering: K-means»; PostCSS.org, documentación oficial; Sass Guide y Stylus.org; AWS, Amazon SQS Developer Guide, «What is Amazon Simple Queue Service?». Correspondencias comprobadas contra BOE-A-2025-25938, anexo I: A1-66 (1191), A1-68 (1192), A1-70/A1-71 (1193), A1-65/A1-77 (1194), A1-55 (1195); BOE-A-2025-26262, anexo IX: A2-III-11 (1191), A2-III-12 (1192 y 1194), A2-III-15 (1193) y A2-II-1 (1195).
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.195 registros de revisión y 10.928 preguntas restantes idénticas al commit original.
+
 ## Pendientes globales
 
 ## Lote 174 — 24 de octubre
@@ -96,7 +108,7 @@ Fuentes: CIO, “What is a data artist?” (19-09-2018; entrevistas a profesiona
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.190 registros de revisión y 10.933 preguntas restantes idénticas al commit original.
 
-Tras el lote 174 quedan 10.933 preguntas sin revisión de contenido; siguiente ID: 1.191. La revisión completa no está terminada. También siguen abiertas las 42 dudas ya identificadas (24 de fuente y 18 de ambigüedad), la revisión contextual de grupos repetidos/candidatos de vigencia y el cotejo de correcciones posteriores de las convocatorias. Los pendientes se conservan individualizados y no se marcan como verificados hasta resolverlos.
+Tras el lote 175 quedan 10.928 preguntas sin revisión de contenido; siguiente ID: 1.196. La revisión completa no está terminada. También siguen abiertas las 42 dudas ya identificadas (24 de fuente y 18 de ambigüedad), la revisión contextual de grupos repetidos/candidatos de vigencia y el cotejo de correcciones posteriores de las convocatorias. Los pendientes se conservan individualizados y no se marcan como verificados hasta resolverlos.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
