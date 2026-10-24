@@ -11,6 +11,7 @@ Estado parcial, no revisión completa del banco. Publicación desde la rama `mai
 - `cambios-lote-005.json` a `cambios-lote-009.json`: IDs 101–200, examinadas individualmente el 13 de octubre. Total acumulado: 200 clasificadas; 177 verificadas (66 vigentes, 105 corregidas y 6 históricas); 23 con dudas abiertas. El bloque de academia de los IDs 41–200 sigue pendiente de cotejo.
 - `lote-132.cjs` y `cambios-lote-132.json`: IDs 976–980, con el original íntegro, clasificación, fuentes, cotejo de apartados pertinentes de academia y resultado revisado.
 - `lote-135.cjs` y `cambios-lote-135.json`: IDs 991–995, con originales, revisión individual, fuentes y cotejo de temario.
+- lote-136.cjs y cambios-lote-136.json: IDs 996–1000, con originales, revisión individual, fuentes primarias y cotejo del bloque 32 de academia.
 - `lote-131.cjs` y `cambios-lote-131.json`: IDs 971–975, con el original íntegro, clasificación, fuentes, comprobación temática del material pertinente de academia y resultado revisado.
 - `lote-127.cjs` y `cambios-lote-127.json`: IDs 951–955, con el original íntegro, clasificación, fuentes y resultado revisado.
 - 109 preguntas tienen cambios en enunciado, opciones o respuesta respecto al banco original: 57 en los IDs 101–200. Este recuento excluye cambios solo de etiquetas y comentarios e incluye las preguntas históricas cuyo enunciado se ha precisado. Por eso no coincide con el estado «corregida».
@@ -882,4 +883,17 @@ Cotejo con Drive: el bloque 32 de ITIC Academy, versión 2026, cubre KIF/KQML, b
 Fuentes principales: informe original de KQML de UMBC y especificación DARPA; libro abierto de Poole y Mackworth y CS188 de Berkeley para búsqueda informada; Stanford Encyclopedia of Philosophy para lógica proposicional; Wirth, *Algorithms and Data Structures*, para la definición de árbol perfectamente equilibrado; informe técnico de NASA sobre redes conexionistas y McClelland et al. sobre pesos como representación del conocimiento. ITIC Academy, bloque 32 versión 2026.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 995 registros de revisión y 11.128 preguntas restantes idénticas al commit original.
+
+
+## Lote 136 — 24 de octubre
+
+IDs 996–1000 revisados individualmente: una vigente y cuatro corregidas. Acumulado: 1.000 examinadas, 958 verificadas (267 vigentes, 598 corregidas y 93 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 704 preguntas con cambios de contenido. Quedan 11.123 sin revisar; siguiente ID 1.001.
+
+Se corrige la atribución de MYCIN: su tratamiento de incertidumbre emplea factores de certeza, no la teoría de Dempster–Shafer (996). La pregunta sobre marcos se reformula para que la afirmación falsa sea inequívoca: los marcos sí agrupan slots/valores y admiten relaciones y herencia (997). Se conserva como vigente la secuencia de preorden raíz, subárbol izquierdo y derecho (998). La dirección de inferencia no es una ventaja fijada por la representación mediante reglas: los motores pueden encadenar hacia delante o hacia atrás (999). Se reformula la pregunta de minería para distinguir tareas supervisadas concretas de clustering sin etiquetas, evitando generalizar que una familia de redes o árboles es siempre supervisada (1000).
+
+Cotejo con Drive: el bloque 32 de ITIC Academy, versión 2026.1, cubre IA simbólica y sistemas expertos, tipos de aprendizaje, clustering y recorridos de árboles (apartados 2.6, 6 y 8 y preguntas razonadas). No atribuye a MYCIN el formalismo técnico exacto de factores de certeza; esto se contrastó con los artículos de Shortliffe y Buchanan. Correspondencias: A1-70/A2-III-5 (996, 997, 999); A2-III-5 (998); A1-71/A2-III-15 (1000). Sigue pendiente el cotejo exhaustivo de modificaciones posteriores de las convocatorias y permanecen abiertas las 42 dudas anteriores.
+
+Fuentes: Shortliffe, «Mycin: A Knowledge-Based Computer Program Applied to Infectious Diseases» (1977), y Shortliffe y Buchanan, «A model of inexact reasoning in medicine» (1975); materiales universitarios de Johns Hopkins, Washington y Northwestern sobre marcos; University of Alberta y OpenDSA sobre recorridos; Brachman y Levesque y la referencia de O’Reilly sobre reglas y estrategias de encadenamiento; University of Iowa y Waikato sobre aprendizaje supervisado/no supervisado e IBM sobre clustering. ITIC Academy, bloque 32 versión 2026.1.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.000 registros de revisión y 11.123 preguntas restantes idénticas al commit original.
 

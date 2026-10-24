@@ -41953,26 +41953,122 @@
       "texto": "En un sistema experto tipo MYCIN, ¿cómo se realiza el tratamiento de la incertidumbre?",
       "opciones": [
         "Mediante un modelo de inferencia bayesiana.",
-        "Mediante conjuntos borrosos, utilizando la teoría de Zadeh.",
-        "Mediante factores de incertidumbre, utilizando la teoría de Dempster-Shafer.",
-        "No hay tratamiento de la incertidumbre."
+        "Mediante conjuntos borrosos basados en la teoría de Zadeh.",
+        "Mediante factores de certeza, según el modelo asociado a Shortliffe y Buchanan.",
+        "Mediante la teoría de Dempster–Shafer como mecanismo propio de MYCIN."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "MYCIN manejaba evidencia incierta mediante factores de certeza, no mediante la teoría de Dempster–Shafer como respuesta a este ítem. Se corrige la opción C para nombrar el mecanismo; la clave se mantiene en el índice 2. El bloque 32 de academia cubre los sistemas expertos, pero no detalla MYCIN ni sus factores de certeza; la respuesta se verifica con Shortliffe y Buchanan. Correspondencia: A1-70 y A2-III-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MYCIN",
+        "sistemas expertos",
+        "factores de certeza",
+        "incertidumbre"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2464549/",
+            "referencia": "Shortliffe, «Mycin: A Knowledge-Based Computer Program Applied to Infectious Diseases» (1977), artículo primario sobre el sistema MYCIN."
+          },
+          {
+            "url": "https://doi.org/10.1016/0025-5564(75)90047-4",
+            "referencia": "Shortliffe y Buchanan, «A model of inexact reasoning in medicine», Mathematical Biosciences 23 (1975), pp. 351–379: presenta el modelo de factores de certeza empleado por MYCIN."
+          },
+          {
+            "url": "https://www.microsoft.com/en-us/research/publication/certainty-factors-belief-networks/",
+            "referencia": "Heckerman y Shortliffe, «From Certainty Factors to Belief Networks» (1992): sitúa el modelo de factores de certeza en sistemas basados en reglas y lo diferencia del razonamiento probabilístico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1 (31/08/2026): se cotejaron los apartados 2.6 (recorridos de árboles), 6 (IA simbólica y sistemas expertos), 8 (machine learning) y las preguntas razonadas; el documento no se tomó como fuente única para resolver los detalles técnicos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I: correspondencia con los temas oficiales A1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con los temas oficiales A2 de ingreso libre."
+          }
+        ],
+        "observaciones": "MYCIN manejaba evidencia incierta mediante factores de certeza, no mediante la teoría de Dempster–Shafer como respuesta a este ítem. Se corrige la opción C para nombrar el mecanismo; la clave se mantiene en el índice 2. El bloque 32 de academia cubre los sistemas expertos, pero no detalla MYCIN ni sus factores de certeza; la respuesta se verifica con Shortliffe y Buchanan. Correspondencia: A1-70 y A2-III-5."
+      }
     },
     {
       "id": 997,
       "bloque": 0,
       "tema": 0,
-      "texto": "De las siguientes cuestiones sobre Ingeniería del conocimiento indique cuál es FALSA:",
+      "texto": "Sobre los marcos de representación del conocimiento, señale la afirmación FALSA:",
       "opciones": [
-        "EI conocimiento puede representarse de forma procedimental.",
-        "Un sistema experto tiene dos componentes: la base de conocimiento y el motor de inferencia.",
-        "Mediante lenguajes de propósito general como C o Java podemos construir Sistemas Expertos.",
-        "Un marco representa un conjunto de conceptos relacionados."
+        "Un marco organiza atributos de un concepto en slots con valores asociados.",
+        "Un marco puede representar una clase o una instancia y enlazarse con otros marcos.",
+        "Un marco puede usar valores por defecto y herencia para facilitar inferencias.",
+        "Un marco solo almacena hechos planos y no permite expresar relaciones ni herencia."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La pregunta original no hacía inequívoca la opción falsa: un marco sí puede representar información relacionada sobre un concepto. Se reformula para que la afirmación falsa sea que un marco solo puede contener hechos planos y no admite relaciones ni herencia. La clave D se conserva. Se cotejó el apartado de IA simbólica del bloque 32; la definición precisa se apoya en materiales universitarios de representación del conocimiento. Correspondencia: A1-70 y A2-III-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "marcos",
+        "representación del conocimiento",
+        "slots",
+        "herencia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.cs.jhu.edu/~phi/ai/slides-2019/lecture-knowledge-representation.pdf",
+            "referencia": "Philipp Koehn, Johns Hopkins University, «Knowledge Representation» (2019), diapositivas sobre marcos: una colección de atributos/slots y valores que representa una entidad, clase o instancia."
+          },
+          {
+            "url": "https://courses.cs.washington.edu/courses/cse473/09au/schedule/KnowledgeRepresentations.pdf",
+            "referencia": "University of Washington, «Knowledge Representations»: los marcos agrupan conocimiento relacionado sobre un sujeto, con slots que pueden contener hechos, reglas, imágenes o enlaces a otros marcos."
+          },
+          {
+            "url": "https://www.cs.northwestern.edu/325/readings/mops.html",
+            "referencia": "Northwestern University, lectura sobre marcos y slots: las estructuras permiten representar conceptos y relaciones mediante atributos y valores."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1 (31/08/2026): se cotejaron los apartados 2.6 (recorridos de árboles), 6 (IA simbólica y sistemas expertos), 8 (machine learning) y las preguntas razonadas; el documento no se tomó como fuente única para resolver los detalles técnicos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I: correspondencia con los temas oficiales A1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con los temas oficiales A2 de ingreso libre."
+          }
+        ],
+        "observaciones": "La pregunta original no hacía inequívoca la opción falsa: un marco sí puede representar información relacionada sobre un concepto. Se reformula para que la afirmación falsa sea que un marco solo puede contener hechos planos y no admite relaciones ni herencia. La clave D se conserva. Se cotejó el apartado de IA simbólica del bloque 32; la definición precisa se apoya en materiales universitarios de representación del conocimiento. Correspondencia: A1-70 y A2-III-5."
+      }
     },
     {
       "id": 998,
@@ -41986,35 +42082,168 @@
         "Nodo actual, subárbol derecho, subárbol izquierdo"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La secuencia del preorden en árbol binario es nodo actual/raíz, subárbol izquierdo y subárbol derecho. La respuesta original es correcta y se conserva; se cotejó expresamente con el apartado 2.6 del material de academia y fuentes universitarias abiertas. Correspondencia: A2-III-5.",
+      "clasificacion": {
+        "A1": [],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "árboles binarios",
+        "recorridos",
+        "preorden"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://sites.ualberta.ca/~rosanna/books/PDSA/chapter8/traversals.html",
+            "referencia": "University of Alberta, «Traversals», sección Pre-order Traversal: se visita el nodo antes que sus descendientes, recorriendo primero el subárbol izquierdo y después el derecho."
+          },
+          {
+            "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/eu_book/html/BinaryTreeTraversal.html",
+            "referencia": "OpenDSA, «Binary Tree Traversals»: el preorden enumera primero la raíz, luego todo el subárbol izquierdo y finalmente el derecho."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32, versión 2026.1, apartado 2.6 «Árboles binarios y recorridos», que expresa preorden como raíz, izquierdo, derecho."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con los temas oficiales A2 de ingreso libre."
+          }
+        ],
+        "observaciones": "La secuencia del preorden en árbol binario es nodo actual/raíz, subárbol izquierdo y subárbol derecho. La respuesta original es correcta y se conserva; se cotejó expresamente con el apartado 2.6 del material de academia y fuentes universitarias abiertas. Correspondencia: A2-III-5."
+      }
     },
     {
       "id": 999,
       "bloque": 0,
       "tema": 0,
-      "texto": "Ventajas de la representación del conocimiento mediante reglas. Señale la falsa:",
+      "texto": "En la representación del conocimiento mediante reglas de producción, ¿qué afirmación NO es una ventaja inherente al formalismo?",
       "opciones": [
-        "Facilidad de representación",
-        "Dirección de inferencia prefijada",
-        "Modularidad",
-        "Flexibilidad"
+        "Las reglas IF–THEN expresan conocimiento de forma modular.",
+        "La representación obliga a utilizar siempre una única dirección de inferencia.",
+        "Las reglas pueden expresar conocimiento de forma legible para especialistas del dominio.",
+        "La base de reglas puede ampliarse añadiendo reglas, aunque haya que controlar interacciones y conflictos."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se conserva B como afirmación falsa solo tras precisar su alcance: las reglas no imponen por sí mismas una única dirección de inferencia. Un motor puede aplicar encadenamiento hacia delante o hacia atrás, según su estrategia; modularidad y legibilidad sí son ventajas comúnmente atribuidas. Se mantienen las opciones y se precisa el enunciado para excluir una lectura de «dirección prefijada» como configuración concreta de un sistema. Cotejo temático con el bloque 32; la distinción técnica se apoya en fuentes de representación del conocimiento. Correspondencia: A1-70 y A2-III-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "reglas de producción",
+        "modularidad",
+        "encadenamiento",
+        "representación del conocimiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.oreilly.com/library/view/intelligent-systems-for/9781000484120/ch2.xhtml",
+            "referencia": "«Intelligent Systems for Engineers and Scientists», 4.ª ed., cap. 2: las reglas IF–THEN son flexibles y expresivas; el sentido de encadenamiento es parte de la estrategia de inferencia."
+          },
+          {
+            "url": "https://bista.sites.dmi.unipg.it/didattica/CSP/knowledge-representation-and-reasoning-the-morgan-kaufmann-series-in-artificial-intelligence.pdf",
+            "referencia": "Brachman y Levesque, Knowledge Representation and Reasoning, cap. 7: distingue encadenamiento hacia delante y hacia atrás; son direcciones de cómputo seleccionadas por el sistema, no una ventaja inherente que fije la representación mediante reglas."
+          },
+          {
+            "url": "https://www.sciencedirect.com/topics/computer-science/production-rule",
+            "referencia": "ScienceDirect Topics, entrada Production Rule, con referencia a la Encyclopedia of Information Systems: identifica la modularidad como una ventaja de las reglas y explica el encadenamiento hacia delante como modo de operación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1 (31/08/2026): se cotejaron los apartados 2.6 (recorridos de árboles), 6 (IA simbólica y sistemas expertos), 8 (machine learning) y las preguntas razonadas; el documento no se tomó como fuente única para resolver los detalles técnicos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I: correspondencia con los temas oficiales A1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con los temas oficiales A2 de ingreso libre."
+          }
+        ],
+        "observaciones": "Se conserva B como afirmación falsa solo tras precisar su alcance: las reglas no imponen por sí mismas una única dirección de inferencia. Un motor puede aplicar encadenamiento hacia delante o hacia atrás, según su estrategia; modularidad y legibilidad sí son ventajas comúnmente atribuidas. Se mantienen las opciones y se precisa el enunciado para excluir una lectura de «dirección prefijada» como configuración concreta de un sistema. Cotejo temático con el bloque 32; la distinción técnica se apoya en fuentes de representación del conocimiento. Correspondencia: A1-70 y A2-III-5."
+      }
     },
     {
       "id": 1000,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes técnicas de minería de datos o data mining se utiliza en modelos de descubrimiento del conocimiento mediante algoritmos no supervisados?",
+      "texto": "¿Qué técnica busca formar grupos de observaciones sin disponer de etiquetas de clase como variable objetivo?",
       "opciones": [
-        "Redes neuronales.",
-        "Regresión lineal.",
-        "Clustering.",
-        "Arboles de decisión."
+        "Regresión lineal ajustada a valores objetivo conocidos.",
+        "Clasificación mediante un árbol entrenado con ejemplos etiquetados.",
+        "Clustering de observaciones según similitud, sin etiquetas de clase.",
+        "Predicción supervisada con una red neuronal entrenada con una variable objetivo."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Clustering agrupa observaciones sin una variable objetivo etiquetada y es el método inequívocamente no supervisado entre las opciones. La versión original podía sugerir que redes neuronales y árboles son siempre supervisados, algo demasiado amplio: ambas familias admiten distintos usos. Se reformula el supuesto para distinguir tareas concretas entrenadas con etiquetas de clustering sin objetivo conocido; se conserva la clave C. Cotejo con el bloque 32, apartados 8 y soluciones razonadas; contrastado con fuentes académicas. Correspondencia: A1-71 y A2-III-15.",
+      "clasificacion": {
+        "A1": [
+          "A1-71"
+        ],
+        "A2": [
+          "A2-III-15"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "minería de datos",
+        "aprendizaje no supervisado",
+        "clustering",
+        "regresión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://homepage.divms.uiowa.edu/~luke/classes/STAT7400-2023/_book/statistical-learning.html",
+            "referencia": "University of Iowa, «Statistical Learning», sección 8.1: clustering es no supervisado; clasificación y regresión son tareas supervisadas cuando se entrenan con respuestas objetivo."
+          },
+          {
+            "url": "https://book.moa.cms.waikato.ac.nz/chapter_2.html",
+            "referencia": "Waikato University, «Machine Learning for Data Streams», secciones 2.1 y 2.4: agrupar ejemplos sin etiquetas en clusters es aprendizaje no supervisado; clasificación y regresión requieren ejemplos etiquetados."
+          },
+          {
+            "url": "https://www.ibm.com/think/topics/clustering",
+            "referencia": "IBM, «What is clustering?» (2024): define clustering como algoritmo no supervisado que organiza observaciones en grupos según similitud."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1 (31/08/2026): se cotejaron los apartados 2.6 (recorridos de árboles), 6 (IA simbólica y sistemas expertos), 8 (machine learning) y las preguntas razonadas; el documento no se tomó como fuente única para resolver los detalles técnicos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I: correspondencia con los temas oficiales A1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con los temas oficiales A2 de ingreso libre."
+          }
+        ],
+        "observaciones": "Clustering agrupa observaciones sin una variable objetivo etiquetada y es el método inequívocamente no supervisado entre las opciones. La versión original podía sugerir que redes neuronales y árboles son siempre supervisados, algo demasiado amplio: ambas familias admiten distintos usos. Se reformula el supuesto para distinguir tareas concretas entrenadas con etiquetas de clustering sin objetivo conocido; se conserva la clave C. Cotejo con el bloque 32, apartados 8 y soluciones razonadas; contrastado con fuentes académicas. Correspondencia: A1-71 y A2-III-15."
+      }
     },
     {
       "id": 1001,
