@@ -12,7 +12,7 @@ const docs = {
   elearning: {url: 'https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk', label: 'ITIC Academy, bloque 33 E-learning y Sistemas de Información Geográfica, versión 2026.1 (31-07-2026)'}
 };
 const mapping = {
-  1486: {doc: 'systems', detail: 'PHP como lenguaje de desarrollo web y su CLI SAPI; complemento del bloque e-learning sobre tecnologías de formación digital', topics: ['A1-65', 'A2-II-9', 'A2-III-12']},
+  1486: {doc: 'systems', detail: 'desarrollo web y entornos de programación, en correspondencia curricular con PHP y su CLI SAPI', topics: ['A1-65', 'A2-II-9', 'A2-III-12']},
   1487: {doc: 'software', detail: 'licencias y protección jurídica del software; contraste con conceptos de software libre', topics: ['A1-69', 'A1-43', 'A2-II-14']},
   1488: {doc: 'science', detail: 'ciencia de datos, preprocesamiento y técnicas de reducción/resumen estadístico; bloque 34 para analítica y Big Data', topics: ['A1-71', 'A2-III-15']},
   1489: {doc: 'bi', detail: 'Business Intelligence, visualización analítica y cuadros de mando; bloque 32, ciclo de ciencia de datos y visualización', topics: ['A1-71', 'A2-II-4']},
