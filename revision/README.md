@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 178 (IDs 1206–1210). Acumulado: 1.210 preguntas examinadas, 1.168 verificadas (294 vigentes, 765 corregidas y 109 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.913 sin revisar de contenido. Hay 894 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 179 (IDs 1211–1215). Acumulado: 1.215 preguntas examinadas, 1.173 verificadas (295 vigentes, 769 corregidas y 109 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.908 sin revisar de contenido. Hay 898 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -1341,3 +1341,13 @@ Se precisa que `fdisk` modifica tablas de particiones, no formatea sistemas de a
 Cotejo con Drive: ITIC Academy, bloque 27, versión 2026.1 (14-08-2026), sistemas operativos/particiones; bloque 29, versión 2026.1, diseño relacional y SGBD; bloque 33, versión 2026.1 (31-07-2026), § 2 SIG. Este último identifica A1-74 y declara A2 «NO APLICA»; por ello no se asigna tema A2 a las preguntas de IDE y remuestreo. Para minería de datos se registra A2-III-15, pero no se atribuye al temario de academia una cobertura específica de Weka que no aparece en los bloques consultados. Las correspondencias se comprobaron contra `temario-oficial.json`.
 
 Fuentes: Linux man-pages, `fdisk(8)`; University of Waikato, Weka Workbench y Weka Wiki sobre GPL; Microsoft Learn, many-to-many relationships y tabla puente; MITECO, «¿Qué es una IDE?»; Esri ArcMap Documentation, fundamentos de georreferenciación de ráster y método de remuestreo. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.210 registros de revisión y 10.913 preguntas restantes idénticas al commit original.
+
+## Lote 179 — 24 de octubre
+
+IDs 1211–1215 revisados individualmente: una vigente y cuatro corregidas. Acumulado: 1.215 examinadas, 1.173 verificadas (295 vigentes, 769 corregidas y 109 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 898 preguntas con cambios de contenido. Quedan 10.908 sin revisar; siguiente ID: 1.216.
+
+Se confirma NFS como sistema/protocolo de ficheros de red (1211). En la 1212 se distingue el día sidéreo del día solar y se acota GEO al caso circular ecuatorial geostacionario: una órbita geosíncrona genérica puede no permanecer fija respecto del suelo. La 1213 mantiene WFS, pero especifica que la operación Transaction es opcional y señala OGC API–Features como estándar web más moderno, sin confundir ambos protocolos. La 1214 ubica el ajuste de una regresión lineal en el modelado y separa esa fase del preprocesamiento y la validación. La 1215 explicita el marco de fenómenos permitidos por SQL: READ COMMITTED impide lecturas sucias, aunque permite lecturas no repetibles y fantasma; algunos motores ofrecen garantías superiores. Se conservan íntegros los cinco originales en `cambios-lote-179.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 27 (Linux y sistemas de archivos); bloque 46, versión 2026.1 (radiocomunicaciones: correspondencia temática con satélites, sin contenido específico sobre el período GEO); bloque 33, versión 2026.1 (§ 2 SIG; A1-74, A2 no aplica); bloque 34, versión 2026 (ciencia de datos/modelado y minería); y bloque 29, versión 2026.1 (SQL y concurrencia). Correspondencias oficiales cotejadas con `temario-oficial.json`: 1211 A1-60/A2-II-2; 1212 A1-108/A2-IV-7 con alcance curricular aproximado; 1213 A1-74, sin A2; 1214 A1-71/A2-III-15; 1215 A1-64/A2-II-5/A2-III-4.
+
+Fuentes: IETF RFC 8881; ESA «Types of orbits» y NASA/JPL *Astrodynamic Parameters*; OGC WFS Standard y WFS 2.0 Interface Standard; scikit-learn `LinearRegression`; PostgreSQL 16, § 13.2 sobre aislamiento de transacciones. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.215 registros de revisión y 10.908 preguntas restantes idénticas al commit original.
