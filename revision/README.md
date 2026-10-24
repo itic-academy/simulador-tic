@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 165 (IDs 1141–1145). Acumulado: 1.145 preguntas revisadas, 1.103 verificadas (285 vigentes, 716 corregidas y 102 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.978 sin revisar de contenido. Hay 832 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 166 (IDs 1146–1150). Acumulado: 1.150 preguntas revisadas, 1.108 verificadas (285 vigentes, 720 corregidas y 103 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.973 sin revisar de contenido. Hay 837 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -84,7 +84,7 @@ Fuentes: Rumelhart, Hinton y Williams, «Learning representations by back-propag
 
 ## Pendiente
 
-10.978 preguntas sin revisión de contenido. Siguiente ID: 1146. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+10.973 preguntas sin revisión de contenido. Siguiente ID: 1151. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -1211,3 +1211,12 @@ Se corrige la descripción de Bash: no es el shell original de Unix, sino el she
 Cotejo con Drive: ITIC Academy, bloque 47, edición 2026.1, A1-60/A2-II-2 (Bash y SO) y A1-61/A2-II-2 (actualización de sistemas); bloque 33, edición 2026.1, A1-74 (SIG y UTM); bloque 30, edición 2026.1, A1-58/A2-II-6 (cliente-servidor y multicapas); bloque 36, edición 2026.1, A1-80/A2-I-6 (identificación y firma electrónica). Las características específicas de Bash, UTM, arquitectura n-tier, el estado de WSUS y la condición normativa de firma se cotejaron además con fuentes primarias oficiales.
 
 Fuentes: GNU Bash Reference Manual, “What is Bash?”; U.S. Geological Survey, “How are UTM coordinates measured on USGS topographic maps?”; Microsoft Learn, “Designing Multi-Tier IIS Applications” y “Windows Server Update Services (WSUS) overview”; Resolución SGAD de 20 de octubre de 2022, BOE-A-2022-17170, apartado tercero. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.145 registros de revisión y 10.978 preguntas restantes idénticas al commit original.
+## Lote 166 — 24 de octubre
+
+IDs 1146–1150 revisados individualmente: cuatro corregidas y una histórica. Acumulado: 1.150 examinadas, 1.108 verificadas (285 vigentes, 720 corregidas y 103 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 837 preguntas con cambios de contenido. Quedan 10.973 sin revisar; siguiente ID 1.151.
+
+La comparación filosófica del API Unix/Win32 se reemplaza por una distinción documentable: POSIX normaliza interfaces para portabilidad y Windows mantiene su API de plataforma; no hay regla general que limite todas las operaciones Unix a una sola función o asigne tres/cuatro formas a Win32 (1146). Se conserva `Throwable` como clase de `java.lang` y superclase de errores/excepciones, pero se quita la referencia de versión Java SE 7 (1147). Se sustituye la pregunta negativa ambigua de técnicas de configuración por la confirmación directa de que el balanceo puede realizarse con software o appliances hardware (1148). En C# se acota boxing a conversiones de tipos valor a `object` o interfaces implementadas, no de «cualquier tipo» indistintamente (1149). EDSAC y ENIAC se identifican como ordenadores electrónicos digitales tempranos de los años 1940; se mantiene su clasificación histórica sin reclamar primacía (1150). Se conservan los cinco originales íntegros en `cambios-lote-166.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 47, edición 2026.1, A1-59/A1-60/A2-II-2 (sistemas Unix/Linux y fundamentos); bloque 30, A1-67/A2-III-10 (Java) y A1-66/A2-III-11 (.NET); bloque 26, A1-53/A1-57/A1-132/A2-IV-6 (servidores, CPD, balanceo y virtualización) y A1-52/A2-II-1 (hardware y ordenadores). Las formulaciones específicas se contrastaron con The Open Group, Microsoft Learn, Oracle Java SE API y Computer History Museum.
+
+Fuentes: The Open Group Base Specifications Issue 8 (POSIX.1-2024); Microsoft Learn, Windows API index; Oracle Java SE 26 API Specification, `java.lang.Throwable`; Microsoft Learn, Windows Server VMM load balancing, y documentación C# sobre boxing; Computer History Museum, “1949: EDSAC computer employs delay-line storage” y Timeline of Computer History. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.150 registros de revisión y 10.973 preguntas restantes idénticas al commit original.

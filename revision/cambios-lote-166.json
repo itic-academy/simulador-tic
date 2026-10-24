@@ -1,0 +1,339 @@
+{
+  "fecha": "2026-10-24",
+  "alcance": "IDs 1146–1150; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1146,
+      "original": {
+        "id": 1146,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿En qué se diferencia la API de Windows y Unix en cuanto a filosofía?",
+        "opciones": [
+          "En Unix las funciones de sistema operativo son simples, con pocos parámetros.",
+          "Win32 ofrece interfaces muy extensas con muchos parámetros.",
+          "En Unix suele haber pocas formas de realizar una operación, mientras en Win32 hay a menudo 3 o 4 formas de realizar lo mismo.",
+          "Todas son correctas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1146,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación distingue correctamente POSIX de la API de Windows?",
+        "opciones": [
+          "POSIX define interfaces normalizadas de portabilidad para sistemas compatibles; Windows documenta su API de plataforma, incluida Win32.",
+          "POSIX exige que cada operación solo tenga una llamada posible y Windows exactamente cuatro.",
+          "Win32 es el estándar portable de IEEE para Unix y Linux.",
+          "POSIX y Win32 son nombres intercambiables de la misma especificación."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La comparación original presentaba como universales afirmaciones discutibles sobre el número de parámetros y de vías para hacer una operación. Se reemplaza por una distinción verificable: POSIX normaliza interfaces de sistema portables y Windows ofrece su API de plataforma; ninguno de esos estándares sostiene el eslogan absoluto del original. Cotejo con ITIC Academy, bloque 47, A1-59/A1-60/A2-II-2; fuentes normativas y de plataforma consultadas directamente. Cotejo con ITIC Academy, bloque 47, edición 2026.1, A1-59/A1-60/A2-II-2; diferencia POSIX/Windows comprobada con The Open Group y Microsoft Learn.",
+        "clasificacion": {
+          "A1": [
+            "A1-59",
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "47 · Fundamentos y sistemas operativos, edición 2026.1, A1-59/A1-60/A2-II-2",
+          "estado": "revisada",
+          "nota": "Cotejo con ITIC Academy, bloque 47, edición 2026.1, A1-59/A1-60/A2-II-2; diferencia POSIX/Windows comprobada con The Open Group y Microsoft Learn."
+        },
+        "etiquetas": [
+          "Unix",
+          "POSIX",
+          "Windows API",
+          "Win32",
+          "interfaz de sistema"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://pubs.opengroup.org/onlinepubs/9799919799/",
+              "referencia": "The Open Group Base Specifications, Issue 8 (POSIX.1-2024): especifica interfaces normalizadas de shell y servicios del sistema; no establece como regla normativa que Unix disponga de una sola vía para cada operación."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list",
+              "referencia": "Microsoft Learn, Windows API index: catálogo de APIs Win32/Windows por áreas (interfaz, E/S, procesos, seguridad, red, administración, etc.); no respalda una comparación absoluta de número de formas de programar frente a Unix."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 47, edición 2026.1, A1-59/A1-60/A2-II-2, fundamentos y sistemas operativos Unix/Linux: cotejo temático; el estándar POSIX y la documentación de Windows se consultan para formular la comparación con precisión."
+            }
+          ],
+          "observaciones": "La comparación original presentaba como universales afirmaciones discutibles sobre el número de parámetros y de vías para hacer una operación. Se reemplaza por una distinción verificable: POSIX normaliza interfaces de sistema portables y Windows ofrece su API de plataforma; ninguno de esos estándares sostiene el eslogan absoluto del original. Cotejo con ITIC Academy, bloque 47, A1-59/A1-60/A2-II-2; fuentes normativas y de plataforma consultadas directamente. Cotejo con ITIC Academy, bloque 47, edición 2026.1, A1-59/A1-60/A2-II-2; diferencia POSIX/Windows comprobada con The Open Group y Microsoft Learn."
+        }
+      }
+    },
+    {
+      "id": 1147,
+      "original": {
+        "id": 1147,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Throwable es la superclase de todos los errores y excepciones de Java SE 7. ¿A qué paquete de Java pertenece Throwable?",
+        "opciones": [
+          "java.lang",
+          "java.error",
+          "java.util",
+          "Throwable no es una clase, es un interface, y éste pertenece al paquete java.io"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1147,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Java SE, ¿a qué paquete pertenece la clase Throwable, superclase de Error y Exception?",
+        "opciones": [
+          "java.lang",
+          "java.error",
+          "java.util",
+          "java.io"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La clase java.lang.Throwable es la superclase de Error y Exception; la afirmación sigue siendo válida en Java SE 26. Se elimina la referencia innecesaria a Java SE 7 para evitar que parezca ligada a una versión antigua. Cotejo con ITIC Academy, bloque 30, A1-67/A2-III-10; jerarquía verificada en Oracle Java SE API. Cotejo con ITIC Academy, bloque 30, edición 2026.1, A1-67/A2-III-10; paquete y jerarquía confirmados en Oracle Java SE API.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-III-10"
+          ],
+          "bloque_academia": "30 · Java y arquitectura Java EE/Jakarta EE, edición 2026.1, A1-67/A2-III-10",
+          "estado": "revisada",
+          "nota": "Cotejo con ITIC Academy, bloque 30, edición 2026.1, A1-67/A2-III-10; paquete y jerarquía confirmados en Oracle Java SE API."
+        },
+        "etiquetas": [
+          "Java",
+          "Throwable",
+          "java.lang",
+          "Error",
+          "Exception"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Throwable.html",
+              "referencia": "Oracle Java SE 26 API Specification, clase java.lang.Throwable: es la superclase de los errores y excepciones de Java; pertenece a java.lang."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30, edición 2026.1, Java, A1-67/A2-III-10: cotejo temático de jerarquía de errores y excepciones; paquete y jerarquía verificados en la API oficial Oracle."
+            }
+          ],
+          "observaciones": "La clase java.lang.Throwable es la superclase de Error y Exception; la afirmación sigue siendo válida en Java SE 26. Se elimina la referencia innecesaria a Java SE 7 para evitar que parezca ligada a una versión antigua. Cotejo con ITIC Academy, bloque 30, A1-67/A2-III-10; jerarquía verificada en Oracle Java SE API. Cotejo con ITIC Academy, bloque 30, edición 2026.1, A1-67/A2-III-10; paquete y jerarquía confirmados en Oracle Java SE API."
+        }
+      }
+    },
+    {
+      "id": 1148,
+      "original": {
+        "id": 1148,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique la frase ERRÓNEA acerca de las técnicas de configuración de servidores:",
+        "opciones": [
+          "Existen tres tipos de cluster: de alta disponibilidad, de alto rendimiento y de balanceo de carga",
+          "La principal limitación técnica para un centro de respaldo en configuración activo-activo es el tiempo de latencia",
+          "El balanceo de carga solo puede implementarse por software",
+          "La virtualización permite optimizar el uso del procesador y la memoria de los equipos físicos"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1148,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación sobre la implementación del balanceo de carga es correcta?",
+        "opciones": [
+          "Solo se puede implementar por software; los balanceadores hardware no existen.",
+          "Puede implementarse mediante software o mediante appliances hardware.",
+          "Requiere siempre virtualizar los servidores de destino.",
+          "Solo funciona en clústeres de alto rendimiento, nunca en alta disponibilidad."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se aísla la afirmación falsa: el balanceo de carga puede implementarse mediante software o appliances hardware. La formulación original mezclaba otros enunciados discutibles (taxonomía de clústeres y limitaciones de activo-activo), por lo que se sustituye por una pregunta positiva inequívoca. Cotejo con ITIC Academy, bloque 26, A1-53/A1-57/A1-132/A2-IV-6; implementación de balanceadores hardware contrastada con Microsoft Learn. Cotejo con ITIC Academy, bloque 26, edición 2026.1, servidores, CPD y virtualización; modos de implementación contrastados con Microsoft Learn.",
+        "clasificacion": {
+          "A1": [
+            "A1-53",
+            "A1-57",
+            "A1-132"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": "26 · Hardware, servidores, CPD y virtualización, edición 2026.1, A1-53/A1-57/A1-132/A2-IV-6",
+          "estado": "revisada",
+          "nota": "Cotejo con ITIC Academy, bloque 26, edición 2026.1, servidores, CPD y virtualización; modos de implementación contrastados con Microsoft Learn."
+        },
+        "etiquetas": [
+          "clúster",
+          "alta disponibilidad",
+          "balanceo de carga",
+          "balanceador hardware",
+          "virtualización",
+          "centro de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/system-center/vmm/network-nlb?view=sc-vmm-2025",
+              "referencia": "Microsoft Learn, System Center VMM, “Integrate Load Balancing with VMM Service Templates”: documenta la configuración de balanceadores hardware; Microsoft también documenta Software Load Balancing, por lo que el balanceo no es exclusivamente software."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26, edición 2026.1, almacenamiento, servidores y arquitectura de CPD; cotejo de infraestructura. La existencia de balanceadores hardware y software se verifica con Microsoft Learn."
+            }
+          ],
+          "observaciones": "Se aísla la afirmación falsa: el balanceo de carga puede implementarse mediante software o appliances hardware. La formulación original mezclaba otros enunciados discutibles (taxonomía de clústeres y limitaciones de activo-activo), por lo que se sustituye por una pregunta positiva inequívoca. Cotejo con ITIC Academy, bloque 26, A1-53/A1-57/A1-132/A2-IV-6; implementación de balanceadores hardware contrastada con Microsoft Learn. Cotejo con ITIC Academy, bloque 26, edición 2026.1, servidores, CPD y virtualización; modos de implementación contrastados con Microsoft Learn."
+        }
+      }
+    },
+    {
+      "id": 1149,
+      "original": {
+        "id": 1149,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denomina a la conversión implícita de cualquier tipo de valor al tipo objeto en el lenguaje C#?",
+        "opciones": [
+          "Casting.",
+          "Boxing.",
+          "Unboxing.",
+          "Down-casting."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1149,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En C#, ¿qué describe una conversión boxing?",
+        "opciones": [
+          "La conversión explícita de un objeto a un tipo valor.",
+          "La conversión implícita de un tipo valor a object o a una interfaz implementada por ese tipo.",
+          "La conversión implícita de cualquier tipo referencia a object mediante copia del valor.",
+          "La conversión de una clase derivada a su clase base, que siempre asigna en el heap una copia."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Boxing no convierte «cualquier valor» de cualquier tipo a object: es la conversión implícita de un tipo valor a object o a una interfaz que implemente, con reglas específicas para enums y nullable. Un objeto de tipo referencia convertido a object no está boxed. Cotejo con ITIC Academy, bloque 30, A1-66/A2-III-11; reglas contrastadas con Microsoft Learn. Cotejo con ITIC Academy, bloque 30, edición 2026.1, A1-66/A2-III-11; reglas de boxing comprobadas en Microsoft Learn.",
+        "clasificacion": {
+          "A1": [
+            "A1-66"
+          ],
+          "A2": [
+            "A2-III-11"
+          ],
+          "bloque_academia": "30 · Plataforma .NET, edición 2026.1, A1-66/A2-III-11",
+          "estado": "revisada",
+          "nota": "Cotejo con ITIC Academy, bloque 30, edición 2026.1, A1-66/A2-III-11; reglas de boxing comprobadas en Microsoft Learn."
+        },
+        "etiquetas": [
+          "C#",
+          "boxing",
+          "unboxing",
+          "tipos valor",
+          "object",
+          "interfaces"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/conversions",
+              "referencia": "Microsoft Learn, C# conversions, casting and boxing: boxing convierte un tipo valor (por ejemplo, struct) en object o en una interfaz implementada; un tipo referencia ya no sufre boxing al convertirse a object."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30, edición 2026.1, plataforma .NET, A1-66/A2-III-11: cotejo temático de conversiones; reglas verificadas con la documentación y especificación de C# de Microsoft."
+            }
+          ],
+          "observaciones": "Boxing no convierte «cualquier valor» de cualquier tipo a object: es la conversión implícita de un tipo valor a object o a una interfaz que implemente, con reglas específicas para enums y nullable. Un objeto de tipo referencia convertido a object no está boxed. Cotejo con ITIC Academy, bloque 30, A1-66/A2-III-11; reglas contrastadas con Microsoft Learn. Cotejo con ITIC Academy, bloque 30, edición 2026.1, A1-66/A2-III-11; reglas de boxing comprobadas en Microsoft Learn."
+        }
+      }
+    },
+    {
+      "id": 1150,
+      "original": {
+        "id": 1150,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "EDSAC y ENIAC son ejemplos de:",
+        "opciones": [
+          "comités reguladores de auditorías informáticas",
+          "algoritmos criptográficos de clave simétrica",
+          "estándares de tecnologías de almacenamiento",
+          "ordenadores de mediados del siglo XX"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1150,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué fueron EDSAC y ENIAC?",
+        "opciones": [
+          "Comités internacionales de auditoría informática.",
+          "Algoritmos de cifrado simétrico.",
+          "Estándares para dispositivos de almacenamiento.",
+          "Ordenadores electrónicos digitales tempranos desarrollados en la década de 1940."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "EDSAC y ENIAC son ordenadores electrónicos digitales tempranos, construidos en la década de 1940; EDSAC ejecutó su primer programa en 1949 y ENIAC fue presentado públicamente en 1946. Se mantiene la clave histórica, evitando una afirmación de primacía no necesaria. Cotejo con ITIC Academy, bloque 26, A1-52/A2-II-1; fechas verificadas con Computer History Museum. Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-52/A2-II-1; referencias históricas comprobadas con Computer History Museum.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "26 · Hardware y arquitectura de ordenadores, edición 2026.1, A1-52/A2-II-1",
+          "estado": "revisada",
+          "nota": "Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-52/A2-II-1; referencias históricas comprobadas con Computer History Museum."
+        },
+        "etiquetas": [
+          "EDSAC",
+          "ENIAC",
+          "historia de la informática",
+          "programa almacenado",
+          "ordenadores electrónicos"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.computerhistory.org/timeline/computers/",
+              "referencia": "Computer History Museum, Timeline of Computer History: ENIAC se desarrolló en la década de 1940 y fue presentado públicamente en 1946."
+            },
+            {
+              "url": "https://www.computerhistory.org/storageengine/edsac-computer-employs-delay-line/",
+              "referencia": "Computer History Museum, “1949: EDSAC computer employs delay-line storage”: EDSAC ejecutó su primer programa en mayo de 1949 y fue un ordenador digital electrónico temprano de programa almacenado."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26, edición 2026.1, A1-52/A2-II-1: cotejo temático de arquitectura e historia de ordenadores; fechas contrastadas con Computer History Museum."
+            }
+          ],
+          "observaciones": "EDSAC y ENIAC son ordenadores electrónicos digitales tempranos, construidos en la década de 1940; EDSAC ejecutó su primer programa en 1949 y ENIAC fue presentado públicamente en 1946. Se mantiene la clave histórica, evitando una afirmación de primacía no necesaria. Cotejo con ITIC Academy, bloque 26, A1-52/A2-II-1; fechas verificadas con Computer History Museum. Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-52/A2-II-1; referencias históricas comprobadas con Computer History Museum."
+        }
+      }
+    }
+  ]
+}
