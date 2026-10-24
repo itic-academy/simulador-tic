@@ -1,6 +1,6 @@
-# Revisión del banco TIC — estado al 22 de octubre de 2026
+# Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 127 (IDs 951–955). Acumulado: 955 preguntas revisadas, 914 verificadas (259 vigentes, 567 corregidas y 88 históricas) y 41 pendientes de resolver (23 de fuente y 18 de ambigüedad); quedan 11.168 sin revisión de contenido. Hay 664 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 128 (IDs 956–960). Acumulado: 960 preguntas revisadas, 918 verificadas (259 vigentes, 571 corregidas y 88 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.163 sin revisión de contenido. Hay 669 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -29,7 +29,7 @@ Desde la raíz: `node revision/catalogo.cjs` reconstruye el mapa desde las copia
 
 ## Pendiente
 
-11.168 preguntas sin revisión de contenido. Siguiente ID: 956. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 41 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
+11.163 preguntas sin revisión de contenido. Siguiente ID: 961. Completar el estudio por bloques, las correspondencias de cada pregunta y las explicaciones; resolver las 42 dudas abiertas; revisar los grupos repetidos y los candidatos de vigencia. La revisión completa no está terminada.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
@@ -797,3 +797,13 @@ Cotejo con Drive: «41_Bloque_41_Tema_ITIL_y_COBIT_2026» cubre el tema oficial 
 Se consultaron nuevamente las fichas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2) y se buscaron en los textos de ambas las menciones a correcciones de errores; esas consultas no mostraron una corrección dentro de las propias resoluciones. Esto no descarta una disposición posterior publicada por separado: la comprobación exhaustiva de modificaciones de convocatorias y normativa sigue pendiente.
 
 Fuentes técnicas: ISO, ficha de ISO 9004:2009 y artículo alojado en iso.org sobre la escala histórica; PeopleCert, ITIL 4 Foundation; Administración Electrónica, MÉTRICA v3, ASI; ISTQB Glossary, técnica de caja blanca. Los materiales de Drive citados se contrastaron solo como apoyo curricular. `inventario.cjs` y `verificar.cjs` ejecutados tras el lote: 12.123 preguntas estructuralmente válidas, 950 cambios registrados y 11.173 preguntas restantes idénticas al commit original.
+
+## Lote 128 — 24 de octubre
+
+IDs 956–960 revisados individualmente: cuatro corregidas y una pendiente de fuente. Acumulado: 960 examinadas, 918 verificadas (259 vigentes, 571 corregidas y 88 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 669 preguntas con cambios de contenido. Quedan 11.163 sin revisar; siguiente ID 961.
+
+Se corrige el error ortográfico de throughput y se delimita como caudal efectivo por unidad de tiempo, distinguiéndolo de latencia y ancho de banda teórico (956). Se actualiza la definición de mantenibilidad a ISO/IEC 25010:2023, que sustituyó técnicamente a la edición 2011 (957). Se aclara el modelo espiral de cuatro fases según NASA: la evaluación revisa la iteración y replantea la siguiente espiral (958). La pregunta de benchmark se precisa como medición y comparación de sistemas con una carga definida y comparable (960). La pregunta 959 se moderniza a ITIL (Version 5), pero queda pendiente de fuente: la documentación pública oficial confirma que Version 5 es el marco actual y contiene la práctica de incidentes, pero no se localizó una fuente primaria pública que certifique el detalle de la regla de prioridad para esa versión. La guía disponible de ITIL 4 y el material de academia 2026 no bastan para trasladar la afirmación como verificada a Version 5.
+
+Cotejo temático con Drive: el bloque 39 «Calidad y mantenimiento» presenta ISO/IEC 25010:2023 y mantenibilidad; el tema 15 de metodologías/ciclo de vida trata la espiral; el bloque 41 ITIL/COBIT recoge incidentes, impacto y urgencia y actualiza el material a Version 5; el bloque 9 de organización y gestión trata evaluación del rendimiento, benchmark y throughput. Los PDFs se cotejaron en esos apartados y se contrastaron con fuentes técnicas primarias; no se auditó todo Drive. La clasificación se comprobó en BOE-A-2025-25938, anexo I (A1-91, A1-98, A1-86 y A1-106) y BOE-A-2025-26262, anexo IX (A2-IV-4, A2-III-13, A2-III-1 y A2-IV-3). No se localizaron correcciones de esas convocatorias en las búsquedas oficiales efectuadas para el lote; la comprobación global y exhaustiva sigue pendiente.
+
+Fuentes técnicas: IETF RFC 6349 y RFC 1242; ISO/IEC 25010:2023; NASA Software Engineering Handbook SWE-019 y Boehm (1988); PeopleCert/ITIL.com para el marco ITIL Version 5; guía ITIL 4 únicamente como referencia histórica y no como verificación de la regla en Version 5; SPEC CPU2026 y CPU2000. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote: banco estructuralmente válido, 960 registros de revisión y 11.163 preguntas sin cambios frente al commit original. Una pregunta permanece pendiente de fuente.
