@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 173 (IDs 1181–1185). Acumulado: 1.185 preguntas revisadas, 1.143 verificadas (293 vigentes, 743 corregidas y 107 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.938 sin revisar de contenido. Hay 870 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 174 (IDs 1186–1190). Acumulado: 1.190 preguntas examinadas, 1.148 verificadas (293 vigentes, 748 corregidas y 107 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.933 sin revisar de contenido. Hay 875 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -84,7 +84,19 @@ Fuentes: Rumelhart, Hinton y Williams, «Learning representations by back-propag
 
 ## Pendientes globales
 
-Tras el lote 173 quedan 10.938 preguntas sin revisión de contenido; siguiente ID: 1.186. La revisión completa no está terminada. También siguen abiertas las 42 dudas ya identificadas (24 de fuente y 18 de ambigüedad), la revisión contextual de grupos repetidos/candidatos de vigencia y el cotejo de correcciones posteriores de las convocatorias. Los pendientes se conservan individualizados y no se marcan como verificados hasta resolverlos.
+## Lote 174 — 24 de octubre
+
+IDs 1186–1190 revisados individualmente: cinco corregidas. Acumulado: 1.190 examinadas, 1.148 verificadas (293 vigentes, 748 corregidas y 107 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 875 preguntas con cambios en contenido. Quedan 10.933 sin revisar; siguiente ID 1.191.
+
+Se sustituye en 1186 la descripción imprecisa de “procesamiento gráfico y textual” por el cometido que describen las fuentes sobre un Data Artist: comunicar hallazgos mediante visualizaciones. Se advierte que el nombre del perfil no está normalizado y que el material de academia no usa esa taxonomía. En 1187 se delimita TIA-942 al diseño y requisitos de infraestructura de centros de datos y salas de equipos; la revisión C, publicada por TIA en mayo de 2024, es la actual (ANSI/TIA-942-C). En 1188 se aclara que `#!/bin/bash` identifica el intérprete del script en Linux, no ejecuta una orden para mostrar texto; se limita el alcance porque los detalles de `#!` no son uniformes ni forman parte de POSIX. En 1189 se acota la pregunta a módulos DDR de primera generación: 200 contactos en el SODIMM citado y 184 en el DIMM citado; 194 es la cifra errónea en ese supuesto. En 1190 se precisa el comportamiento en Oracle: `TRUNCATE TABLE` elimina filas, conserva la definición, es DDL y confirma inmediatamente; `DELETE FROM` también puede vaciar la tabla, pero es DML y no ofrece esa semántica. Se conservan íntegros los originales en `cambios-lote-174.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 32, versión 2026.1, A1-71 (§ 18, visualización de datos) y A2-III-15, como cotejo temático para el perfil Data Artist; la academia no emplea los nombres Data Artist/Data Hygienist. Bloque 26, versión 2026.1, A1-53/A2-IV-6, diseño e implantación de CPD (1187); bloque 27, versión 2026, A1-60/A2-II-2, sistemas Unix/Linux y shell (1188); bloque 26, A1-54/A2-II-1, hardware y dispositivos (1189); bloque 29, versión 2026.1, A1-64/A2-II-5, SQL y diferencia DDL/DML (1190). En todos los casos se cotejaron los apartados temáticos señalados, no el PDF completo. Los datos de estándar, shell, contactos y semántica Oracle se verificaron separadamente con documentación de sus autores/fabricantes.
+
+Fuentes: CIO, “What is a data artist?” (19-09-2018; entrevistas a profesionales de visualización; etiqueta no normalizada); Telecommunications Industry Association, ficha ANSI/TIA-942-C y anuncio oficial de la revisión C (mayo de 2024); Linux man-pages, `execve(2)`, sección “Interpreter scripts”; fichas técnicas Kingston ValueRAM KVR400X64SC3A/512 (DDR400 SODIMM de 200 contactos) y KVR400X64C3A/512 (DDR400 DIMM de 184 contactos); Oracle Database 26, “Truncating Tables and Clusters”, sobre `TRUNCATE`, `DELETE` y conservación de estructuras. Correspondencias comprobadas contra BOE-A-2025-25938, anexo I: A1-71 (1186), A1-53 (1187), A1-60 (1188), A1-54 (1189) y A1-64 (1190); BOE-A-2025-26262, anexo IX: A2-III-15, A2-IV-6, A2-II-2, A2-II-1 y A2-II-5, respectivamente.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.190 registros de revisión y 10.933 preguntas restantes idénticas al commit original.
+
+Tras el lote 174 quedan 10.933 preguntas sin revisión de contenido; siguiente ID: 1.191. La revisión completa no está terminada. También siguen abiertas las 42 dudas ya identificadas (24 de fuente y 18 de ambigüedad), la revisión contextual de grupos repetidos/candidatos de vigencia y el cotejo de correcciones posteriores de las convocatorias. Los pendientes se conservan individualizados y no se marcan como verificados hasta resolverlos.
 
 GitHub Pages publica desde `main`, carpeta raíz. La vista de revisión está disponible en `/simulador-tic/revision.html` después del despliegue de estos cambios. Publicar un lote no certifica las preguntas pendientes ni las que siguen sin revisar.
 
