@@ -1,0 +1,326 @@
+{
+  "fecha": "2026-10-24",
+  "alcance": "IDs 1126–1130; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1126,
+      "original": {
+        "id": 1126,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un data warehouse:",
+        "opciones": [
+          "Jamás se debe normalizar ninguna tabla.",
+          "Es normal que algunas tablas de dimensión se desnormalicen buscando mayor eficiencia.",
+          "Las tablas se mantienen en la máxima forma normal para no perder consistencia dado el alto número de operaciones de modificación que se realizan.",
+          "Todas las respuestas son falsas."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1126,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un almacén de datos que utiliza un esquema dimensional en estrella, ¿qué afirmación sobre las tablas de dimensión es habitual?",
+        "opciones": [
+          "Deben permanecer siempre en tercera forma normal y no se permite aplanar jerarquías.",
+          "A menudo se desnormalizan para aplanar jerarquías y simplificar las consultas; un esquema snowflake es una alternativa normalizada.",
+          "Nunca pueden contener atributos descriptivos redundantes.",
+          "Se diseñan principalmente para registrar transacciones operativas de alta frecuencia."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La respuesta original era plausible pero podía sugerir que desnormalizar es universal. Se acota a modelado dimensional: suele aplanarse la jerarquía de las dimensiones para facilitar consultas; existe como excepción la dimensión snowflake normalizada. Cotejo con ITIC Academy, bloque 12, versión 2026.2, A2-T4 (almacenes de datos/OLAP); diseño contrastado con Microsoft Learn. Cotejo temático con ITIC Academy, bloque 12, versión 2026.2 (02/10/2026), A2-T4, almacenes de datos y OLAP; el diseño de dimensiones se contrasta con Microsoft Learn.",
+        "clasificacion": {
+          "A1": [
+            "A1-75"
+          ],
+          "A2": [
+            "A2-II-4"
+          ],
+          "bloque_academia": "12 · Planificación estratégica, actualización 2026.2, A2-T4 (inteligencia de negocio y almacenes de datos)",
+          "estado": "revisada",
+          "nota": "Cotejo temático con ITIC Academy, bloque 12, versión 2026.2 (02/10/2026), A2-T4, almacenes de datos y OLAP; el diseño de dimensiones se contrasta con Microsoft Learn."
+        },
+        "etiquetas": [
+          "data warehouse",
+          "almacén de datos",
+          "modelado dimensional",
+          "tablas dimensión",
+          "desnormalización"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/fabric/data-warehouse/dimensional-modeling-dimension-tables",
+              "referencia": "Microsoft Learn, dimensional modeling in Fabric Warehouse, “Denormalization vs. normalization”: dimension tables are almost always denormalized in dimensional models to flatten hierarchies and improve query usability/performance; snowflake dimensions are a documented normalized exception."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 12, versión 2026.2 (02/10/2026), A2-T4: inteligencia de negocio, almacenes de datos y OLTP/OLAP; cotejo de correspondencia temática."
+            }
+          ],
+          "observaciones": "La respuesta original era plausible pero podía sugerir que desnormalizar es universal. Se acota a modelado dimensional: suele aplanarse la jerarquía de las dimensiones para facilitar consultas; existe como excepción la dimensión snowflake normalizada. Cotejo con ITIC Academy, bloque 12, versión 2026.2, A2-T4 (almacenes de datos/OLAP); diseño contrastado con Microsoft Learn. Cotejo temático con ITIC Academy, bloque 12, versión 2026.2 (02/10/2026), A2-T4, almacenes de datos y OLAP; el diseño de dimensiones se contrasta con Microsoft Learn."
+        }
+      }
+    },
+    {
+      "id": 1127,
+      "original": {
+        "id": 1127,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los sistemas operativos multitarea:",
+        "opciones": [
+          "Se conocen también como sistemas multiproceso",
+          "El procesador cambia de una tarea a otra dando la apariencia de que se realizan concurrentemente"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1127,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un sistema operativo multitarea con un único procesador lógico disponible, ¿cómo puede dar la impresión de ejecutar varias tareas a la vez?",
+        "opciones": [
+          "Porque multitarea significa necesariamente que el equipo dispone de varios procesadores.",
+          "Porque el planificador alterna tareas mediante intervalos de ejecución y cambios de contexto; no implica que se ejecuten simultáneamente en ese único procesador."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se conserva el concepto de la segunda opción y se distingue explícitamente multitarea de multiproceso: con un solo procesador, el sistema intercala tareas mediante intervalos y cambios de contexto, dando impresión de concurrencia; la ejecución simultánea real requiere varios procesadores/núcleos disponibles. Cotejo con ITIC Academy, bloque 47, A2-C2 (fundamentos de SO); se contrasta el mecanismo con Microsoft Learn. Cotejo con ITIC Academy, bloque 47, edición 2026.1, A2-C2, fundamentos y características funcionales de sistemas operativos; mecanismo de reparto de CPU y cambio de contexto contrastado con Microsoft Learn.",
+        "clasificacion": {
+          "A1": [
+            "A1-59"
+          ],
+          "A2": [
+            "A2-IV-1"
+          ],
+          "bloque_academia": "47 · Aplicaciones móviles y sistemas operativos, versión 2026.1, A2-C2",
+          "estado": "revisada",
+          "nota": "Cotejo con ITIC Academy, bloque 47, edición 2026.1, A2-C2, fundamentos y características funcionales de sistemas operativos; mecanismo de reparto de CPU y cambio de contexto contrastado con Microsoft Learn."
+        },
+        "etiquetas": [
+          "sistemas operativos",
+          "multitarea",
+          "planificación",
+          "cambio de contexto",
+          "concurrencia"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/multitasking",
+              "referencia": "Microsoft Learn, Multitasking (actualizado 14/07/2025): el SO multitarea distribuye tiempo de procesador entre procesos/hilos mediante intervalos y cambios de contexto; en un procesador, la ejecución intercalada puede aparentar simultaneidad, mientras que varios procesadores permiten ejecución simultánea real."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 47, versión 2026.1, A2-C2: conceptos y fundamentos de sistemas operativos y características funcionales; cotejo temático."
+            }
+          ],
+          "observaciones": "Se conserva el concepto de la segunda opción y se distingue explícitamente multitarea de multiproceso: con un solo procesador, el sistema intercala tareas mediante intervalos y cambios de contexto, dando impresión de concurrencia; la ejecución simultánea real requiere varios procesadores/núcleos disponibles. Cotejo con ITIC Academy, bloque 47, A2-C2 (fundamentos de SO); se contrasta el mecanismo con Microsoft Learn. Cotejo con ITIC Academy, bloque 47, edición 2026.1, A2-C2, fundamentos y características funcionales de sistemas operativos; mecanismo de reparto de CPU y cambio de contexto contrastado con Microsoft Learn."
+        }
+      }
+    },
+    {
+      "id": 1128,
+      "original": {
+        "id": 1128,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es la diferencia entre ERP y CRM?",
+        "opciones": [
+          "Mientras ERP sirve para planificar los recursos empresariales, CRM se utiliza para gestionar la relación con los clientes.",
+          "Mientras CRM sirve para gestionar claves, ERP se utiliza para gestionar proveedores.",
+          "Mientras CRM sirve para gestionar clientes, ERP se utiliza para gestionar proveedores.",
+          "No hay diferencias."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1128,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué diferencia funcional predominante distingue a un sistema CRM de un ERP?",
+        "opciones": [
+          "El CRM se centra en las relaciones e interacciones con clientes; el ERP integra procesos internos como finanzas, compras, operaciones y recursos humanos.",
+          "El CRM gestiona exclusivamente claves criptográficas y el ERP solo inventario de proveedores.",
+          "El CRM es el sistema operativo de la empresa y el ERP el protocolo de red que conecta sus oficinas.",
+          "No tienen diferencias funcionales ni pueden integrarse."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se precisa la diferencia por función predominante: CRM gestiona relaciones e interacciones con clientes (front-office) y ERP integra procesos organizativos como finanzas, operaciones, compras y RR. HH. (back-office). Se indica que las suites pueden integrar funcionalidades, evitando entender la distinción como incompatibilidad. Cotejo con ITIC Academy, bloque 30, edición 2026.1, A1-72; contraste con Oracle. Cotejo con ITIC Academy, bloque 30, edición 2026.1, A1-72 (CRM, ERP e informes a dirección); el ámbito funcional de ambos productos se contrasta con documentación Oracle.",
+        "clasificacion": {
+          "A1": [
+            "A1-72"
+          ],
+          "A2": [],
+          "bloque_academia": "30 · Tecnologías de sistemas de información, edición 2026.1, A1-72",
+          "estado": "revisada",
+          "nota": "Cotejo con ITIC Academy, bloque 30, edición 2026.1, A1-72 (CRM, ERP e informes a dirección); el ámbito funcional de ambos productos se contrasta con documentación Oracle."
+        },
+        "etiquetas": [
+          "ERP",
+          "CRM",
+          "procesos empresariales",
+          "front-office",
+          "back-office"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.oracle.com/erp/erp-vs-crm/",
+              "referencia": "Oracle, CRM vs ERP: CRM se centra principalmente en las interacciones/funciones front-office (marketing, ventas, servicio); ERP integra funciones de back-office como finanzas, compras, operaciones y RR. HH. Pueden integrarse y solaparse en algunas suites."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30, edición 2026.1, A1-72: sistemas CRM/ERP e informes a dirección; cotejo de la distinción funcional, complementado con fuente del fabricante Oracle."
+            }
+          ],
+          "observaciones": "Se precisa la diferencia por función predominante: CRM gestiona relaciones e interacciones con clientes (front-office) y ERP integra procesos organizativos como finanzas, operaciones, compras y RR. HH. (back-office). Se indica que las suites pueden integrar funcionalidades, evitando entender la distinción como incompatibilidad. Cotejo con ITIC Academy, bloque 30, edición 2026.1, A1-72; contraste con Oracle. Cotejo con ITIC Academy, bloque 30, edición 2026.1, A1-72 (CRM, ERP e informes a dirección); el ámbito funcional de ambos productos se contrasta con documentación Oracle."
+        }
+      }
+    },
+    {
+      "id": 1129,
+      "original": {
+        "id": 1129,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes arquitecturas de almacenamiento ofrece un acceso a nivel de fichero?",
+        "opciones": [
+          "Discos internos.",
+          "DAS (Direct Attached Storage).",
+          "SAN (Storage Area Network).",
+          "NAS (Network Attached Storage)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1129,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes arquitecturas de almacenamiento ofrece un acceso a nivel de fichero?",
+        "opciones": [
+          "Discos internos.",
+          "DAS (Direct Attached Storage).",
+          "SAN (Storage Area Network).",
+          "NAS (Network Attached Storage)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "NAS ofrece normalmente acceso en el nivel de ficheros; SAN presenta dispositivos/bloques al host. Se conserva la clave NAS. Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-56/A2-C5; distinción contrastada con documentación NetApp. Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-56 y A2-C5 (arquitectura, tipos y protocolos de almacenamiento); distinción de acceso a archivos/bloques contrastada con NetApp.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "26 · Hardware, servidores, CPD, almacenamiento y virtualización, edición 2026.1, A1-56/A2-C5",
+          "estado": "revisada",
+          "nota": "Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-56 y A2-C5 (arquitectura, tipos y protocolos de almacenamiento); distinción de acceso a archivos/bloques contrastada con NetApp."
+        },
+        "etiquetas": [
+          "almacenamiento",
+          "NAS",
+          "SAN",
+          "DAS",
+          "acceso a ficheros",
+          "acceso a bloques"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.netapp.com/data-storage/what-is-san-storage-area-network/",
+              "referencia": "NetApp, SAN vs NAS: SAN presenta almacenamiento a nivel de bloques; NAS proporciona acceso basado en ficheros/compartición de archivos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26, edición 2026.1, A1-56/A2-C5: almacenamiento, arquitecturas, componentes y protocolos; cotejo temático SAN/NAS y acceso."
+            }
+          ],
+          "observaciones": "NAS ofrece normalmente acceso en el nivel de ficheros; SAN presenta dispositivos/bloques al host. Se conserva la clave NAS. Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-56/A2-C5; distinción contrastada con documentación NetApp. Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-56 y A2-C5 (arquitectura, tipos y protocolos de almacenamiento); distinción de acceso a archivos/bloques contrastada con NetApp."
+        }
+      }
+    },
+    {
+      "id": 1130,
+      "original": {
+        "id": 1130,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un almacenamiento SAN, el término LUN se refiere a:",
+        "opciones": [
+          "Un identificador único de dispositivo de almacenamiento.",
+          "Un identificador único de máquina virtual.",
+          "Un identificador único para cada servidor.",
+          "Un identificador único del puerto de comunicaciones."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1130,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En SCSI, dentro de una SAN, ¿qué identifica el número de unidad lógica (LUN) en el direccionamiento del almacenamiento?",
+        "opciones": [
+          "Una unidad lógica presentada por un target de almacenamiento al host; es su identificador/dirección dentro de ese contexto.",
+          "La identidad global y única del servidor que consume el almacenamiento.",
+          "El puerto físico de la HBA del host.",
+          "La dirección IP del switch de la SAN."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La respuesta original llamaba al LUN un «identificador único de dispositivo», afirmación demasiado general: la unicidad depende del target o del espacio de direcciones del host y LUN nombra el número/dirección que identifica una unidad lógica SCSI presentada al host. Se reescribe para probar esa definición precisa y se descartan como distractores la identidad de la máquina, del servidor o del puerto. Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-56/A2-C5; definición técnica con SNIA y NetApp. Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-56/A2-C5. La definición del LUN se precisa con SNIA y la documentación de asignación a host de NetApp.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "26 · Hardware, servidores, CPD, almacenamiento y virtualización, edición 2026.1, A1-56/A2-C5",
+          "estado": "revisada",
+          "nota": "Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-56/A2-C5. La definición del LUN se precisa con SNIA y la documentación de asignación a host de NetApp."
+        },
+        "etiquetas": [
+          "almacenamiento",
+          "SAN",
+          "SCSI",
+          "LUN",
+          "unidad lógica",
+          "direccionamiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.snia.org/education/online-dictionary/term/logical-unit-number",
+              "referencia": "SNIA Dictionary, Logical Unit Number: en SCSI es el identificador de una unidad lógica dentro de un target; en un sistema de almacenamiento es la dirección de una unidad lógica."
+            },
+            {
+              "url": "https://docs.netapp.com/us-en/e-series-santricity/sm-storage/host-terminology.html",
+              "referencia": "NetApp SANtricity, host terminology: LUN es el número/asignación de espacio de direcciones usado por un host para acceder al volumen; cada host mantiene su propio espacio de direcciones LUN, por lo que no equivale a un identificador global de dispositivo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26, edición 2026.1, A1-56/A2-C5: almacenamiento, arquitecturas, componentes y protocolos; cotejo temático SAN/NAS y acceso."
+            }
+          ],
+          "observaciones": "La respuesta original llamaba al LUN un «identificador único de dispositivo», afirmación demasiado general: la unicidad depende del target o del espacio de direcciones del host y LUN nombra el número/dirección que identifica una unidad lógica SCSI presentada al host. Se reescribe para probar esa definición precisa y se descartan como distractores la identidad de la máquina, del servidor o del puerto. Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-56/A2-C5; definición técnica con SNIA y NetApp. Cotejo con ITIC Academy, bloque 26, edición 2026.1, A1-56/A2-C5. La definición del LUN se precisa con SNIA y la documentación de asignación a host de NetApp."
+        }
+      }
+    }
+  ]
+}

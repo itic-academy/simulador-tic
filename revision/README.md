@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 161 (IDs 1121–1125). Acumulado: 1.125 preguntas revisadas, 1.083 verificadas (281 vigentes, 702 corregidas y 100 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.998 sin revisar de contenido. Hay 815 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 162 (IDs 1126–1130). Acumulado: 1.130 preguntas revisadas, 1.088 verificadas (282 vigentes, 706 corregidas y 100 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 10.993 sin revisar de contenido. Hay 819 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
