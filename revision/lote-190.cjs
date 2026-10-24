@@ -1,0 +1,137 @@
+const apply = require('./aplicar-lote.cjs');
+
+const sources = {
+  codd: {
+    url: 'https://doi.org/10.1145/1734714.1734716',
+    referencia: 'E. F. Codd, Normalized database structure: a brief tutorial, ACM SIGFIDET 1971: fuente clásica del tratamiento de normalización; para revisar la redacción se usa la definición formal actual de 3FN basada en dependencias funcionales, superclaves y atributos primos.'
+  },
+  normalization: {
+    url: 'https://www.cs.emory.edu/~cheung/Courses/377/Syllabus/9-NormalForms/New/3NF.html',
+    referencia: 'Emory University, Database Systems, Third Normal Form: formaliza 3FN mediante dependencias funcionales: para toda dependencia funcional no trivial X→A, X es superclave o A es atributo primo.'
+  },
+  linker: {
+    url: 'https://learn.microsoft.com/en-us/cpp/build/reference/linking?view=msvc-170',
+    referencia: 'Microsoft Learn, Linking: el paso de enlazado posterior a la compilación combina archivos objeto en un ejecutable. La referencia MSVC también describe archivos objeto/bibliotecas de entrada y resolución de símbolos.'
+  },
+  linkInputs: {
+    url: 'https://learn.microsoft.com/en-us/cpp/build/reference/link-input-files?view=msvc-170',
+    referencia: 'Microsoft Learn, LINK input files: el enlazador recibe, entre otros, archivos .obj y bibliotecas .lib y resuelve símbolos pendientes; distingue esa fase de compilación.'
+  },
+  ld: {
+    url: 'https://man7.org/linux/man-pages/man1/ld.1.html',
+    referencia: 'GNU/Linux man-pages, ld(1): GNU ld combina archivos objeto y de archivo, reorganiza datos y enlaza referencias a símbolos; es la fase de enlace, diferenciada de cargar/ejecutar el programa.'
+  },
+  loader: {
+    url: 'https://man7.org/linux/man-pages/man8/ld.so.8.html',
+    referencia: 'Linux man-pages, ld.so(8): documenta el enlazador dinámico/cargador que localiza y carga las bibliotecas compartidas para un programa; permite distinguir la carga en ejecución del enlace estático de ld(1).'
+  },
+  facesSpec: {
+    url: 'https://jakarta.ee/specifications/faces/4.1/jakarta-faces-4.1',
+    referencia: 'Jakarta Faces 4.1, § 7.7: describe Facelets como implementación de VDL; JSP fue otro VDL históricamente y se deprecó en Faces 2. La especificación actual conserva la distinción entre lenguaje de vistas y servlet de procesamiento.'
+  },
+  faces23: {
+    url: 'https://javaee.github.io/javaserverfaces-spec/downloads/JSF_2_3/Final/JSF_2.3.pdf',
+    referencia: 'JavaServer Faces 2.3 Specification, § 7.7: la versión 2 formalizó View Declaration Language para Facelets, preservando compatibilidad con páginas JSP existentes.'
+  },
+  facelets: {
+    url: 'https://jakarta.ee/learn/docs/jakartaee-tutorial/current/web/faces-facelets/faces-facelets.html',
+    referencia: 'Jakarta EE Tutorial, Introduction to Facelets: Facelets forma parte de la especificación Jakarta Faces y es la tecnología de presentación preferida; JSP fue la tecnología anterior.'
+  },
+  ac: {
+    url: 'https://www.rfc-editor.org/rfc/rfc5755.html',
+    referencia: 'IETF RFC 5755, § 1 y §§ 4.1–4.2: un certificado de atributos no contiene clave pública y puede expresar grupo, rol, habilitación u otros datos de autorización; el titular puede vincularse a una PKC, sin exigir que se adjunten siempre ni que emita ambos certificados la misma autoridad.'
+  },
+  rsa: {
+    url: 'https://csrc.nist.gov/pubs/sp/800/56/b/r2/final',
+    referencia: 'NIST SP 800-56B Rev. 2, reaffirmed 2026-01-06: define esquemas de establecimiento de claves basados en criptografía de factorización entera, en particular RSA; no afirma una equivalencia general entre romper cualquier esquema RSA y factorizar.'
+  },
+  rabin: {
+    url: 'https://dspace.mit.edu/handle/1721.1/149499',
+    referencia: 'Michael O. Rabin, Digitalized Signatures and Public-key Functions as Intractable as Factorization, MIT-LCS-TR-212 (1979): construye funciones de clave pública sobre un módulo producto de primos y estudia su relación con la factorización.'
+  },
+  williams: {
+    url: 'https://doi.org/10.1109/TIT.1980.1056264',
+    referencia: 'H. C. Williams, A Modification of the RSA Public-key Encryption Procedure, IEEE Transactions on Information Theory 26(6), 1980, pp. 726–729: describe la modificación de Williams de RSA, conocida como esquema Rabin–Williams, y su relación con la factorización del módulo.'
+  },
+  ripemd: {
+    url: 'https://homes.esat.kuleuven.be/~bosselae/ripemd160/pdf/AB-9601/AB-9601.pdf',
+    referencia: 'H. Dobbertin, A. Bosselaers y B. Preneel, RIPEMD-160: A Strengthened Version of RIPEMD (1996): presenta RIPEMD-160 como función hash criptográfica.'
+  },
+  dsa: {
+    url: 'https://csrc.nist.gov/pubs/fips/186-5/final',
+    referencia: 'NIST FIPS 186-5, Digital Signature Standard (2023): especifica algoritmos de firma digital y sus parámetros; DSA/ECDSA se encuadran en problemas de logaritmo discreto, a diferencia de factorización entera.'
+  },
+  dhe: {
+    url: 'https://www.rfc-editor.org/rfc/rfc7919.html',
+    referencia: 'IETF RFC 7919, §§ 1 y 8.2: especifica DHE efímero de campo finito y se refiere expresamente al problema de logaritmo discreto (DLOG), en contraste con la factorización entera.'
+  },
+  aes: {
+    url: 'https://csrc.nist.gov/pubs/fips/197/final',
+    referencia: 'NIST FIPS 197, Advanced Encryption Standard, actualización editorial 2023: AES/Rijndael es un cifrador simétrico de bloque, no un criptosistema de clave pública basado en factorización.'
+  }
+};
+
+const academy = {
+  db: {
+    url: 'https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk',
+    referencia: 'ITIC Academy, bloque Bases de datos, SQL y modelado de datos, versión 2026.1, §§ 3.1–3.2: dependencias funcionales, 1FN/2FN/3FN y normalización. Cotejo de alcance temático; la definición se verifica además con Codd y el material universitario citado.'
+  },
+  development: {
+    url: 'https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk',
+    referencia: 'ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1: A1-65/A1-67 y A2-III-10/III-12; cotejo temático de herramientas y tecnologías de desarrollo web Java, sin atribuir al bloque la pregunta concreta sobre enlazadores.'
+  },
+  security: {
+    url: 'https://drive.google.com/file/d/1Rix8RBBUSoXJBOAt8iWyU9j5tPiqlXzk/view?usp=drivesdk',
+    referencia: 'ITIC Academy, bloque Seguridad, versión 2026.1, apartados de criptografía, certificados, identidad digital y protocolos; cotejo de alcance temático, contrastado para los certificados de atributos y algoritmos con RFC/NIST.'
+  }
+};
+
+const records = [
+  [1266, [64], ['II-5', 'III-4'], ['bases de datos', 'modelo relacional', 'normalización', 'tercera forma normal', '3FN', 'dependencias funcionales', 'atributos primos'], [sources.codd, sources.normalization], null,
+    'Se corrige la simplificación del original: la 3FN no se define simplemente con “dependencias directas a la clave primaria”, formulación que deja ambiguos el tipo de clave y el significado de directo. Se pregunta por el criterio formal: para toda dependencia funcional no trivial X→A, X debe ser superclave o A debe ser atributo primo (perteneciente a alguna clave candidata). Esta condición equivale a 2FN sin dependencias transitivas de atributos no clave, pero expresa con precisión los casos que permite la 3FN y la distingue de BCNF. Cotejo temático con ITIC Academy, bloque de bases de datos, §§ 3.1–3.2.', 'corregida'],
+  [1267, [59], ['II-2'], ['software de sistema', 'compilador', 'código objeto', 'enlazador', 'linker', 'cargador', 'loader'], [sources.linker, sources.linkInputs, sources.ld, sources.loader], null,
+    'El original mezcla el montador/enlazador con el cargador. Se reformula para pedir una fase concreta: el enlazador combina módulos/archivos objeto y bibliotecas, resuelve referencias externas y produce un ejecutable o módulo enlazado; el cargador lo prepara en memoria para su ejecución. Los términos montador y ensamblador pueden variar entre textos, por lo que se usa “enlazador (linker)” de forma explícita. Cotejo temático con ITIC Academy, bloque de tecnologías de desarrollo, sin atribuirle esta distinción específica.', 'corregida'],
+  [1268, [67], ['III-10', 'III-12'], ['Java', 'JavaServer Faces', 'JSF', 'Facelets', 'JSP', 'VDL', 'servlets'], [sources.facesSpec, sources.faces23, sources.facelets], null,
+    'La clave del original confunde el controlador Servlet con el lenguaje de plantillas/vistas. Se pregunta directamente por JSF 2.x: Facelets es el lenguaje de declaración de vistas incorporado y predeterminado en JSF 2; JSP fue la tecnología anterior y siguió siendo VDL por compatibilidad. FacesServlet recibe y procesa el ciclo de vida de las peticiones, pero no es un sistema de plantillas. Cotejo temático con ITIC Academy, bloque de tecnologías de sistemas de información, tecnologías Java/Jakarta EE y aplicaciones web.', 'corregida'],
+  [1269, [80, 81], ['I-6', 'IV-12'], ['X.509', 'certificado de atributos', 'certificado de clave pública', 'PKC', 'autorización', 'atributos', 'certificados digitales'], [sources.ac], null,
+    'Se sustituye una pregunta compuesta cuyas opciones podían fallar por varios motivos. El certificado de atributos (AC) no contiene una clave pública: vincula un titular con atributos de autorización como rol, grupo o habilitación. Puede referenciar una PKC para identificar al titular, pero no tiene que acompañarse siempre de ella, y quien emite el AC puede ser una autoridad de atributos distinta de quien emitió la PKC. Cotejo temático con ITIC Academy, bloque de seguridad, apartados de certificados e identidad digital.', 'corregida'],
+  [1270, [79], ['IV-12'], ['criptografía', 'factorización entera', 'RSA', 'Rabin-Williams', 'RIPEMD-160', 'DHE', 'DSA', 'Rijndael', 'AES'], [sources.rsa, sources.rabin, sources.williams, sources.ripemd, sources.dsa, sources.dhe, sources.aes], null,
+    'El original usa “RW” sin expandirlo y mezcla familias distintas. Se formula la pregunta con el nombre Rabin–Williams: RSA y Rabin–Williams son criptosistemas de clave pública asociados a un módulo producto de primos y al problema de factorización; no se afirma que toda variante RSA sea formalmente equivalente a factorizar. RIPEMD-160 es una función hash, DHE/DSA se basan en problemas de logaritmo discreto, y Rijndael/AES es cifrado simétrico de bloque. Cotejo temático con ITIC Academy, bloque de seguridad, criptografía y algoritmos.', 'corregida']
+];
+
+apply({ numero: '190', fecha: '2026-10-24', records, edits: {
+  1266: { texto: 'Según el criterio formal de dependencias funcionales, ¿cuándo está una relación en tercera forma normal (3FN)?', opciones: ['Si toda dependencia funcional no trivial X→A cumple que X es superclave o A es atributo primo.', 'Si cada atributo contiene un único valor atómico, aunque haya dependencias transitivas.', 'Si todo atributo no primo depende de cualquier subconjunto de una clave candidata.', 'Si la relación está en 2FN y sus claves candidatas son todas de un solo atributo.'], respuesta_correcta: 0 },
+  1267: { texto: '¿Qué función realiza un enlazador (linker) después de compilar los módulos de un programa?', opciones: ['Combina archivos objeto y bibliotecas, resuelve referencias externas y genera el ejecutable o módulo enlazado.', 'Carga un ejecutable ya enlazado en memoria y prepara su proceso para comenzar a ejecutarse.', 'Traduce directamente el código fuente de alto nivel a instrucciones objeto.', 'Asigna turnos de CPU a los procesos listos para ejecución.'], respuesta_correcta: 0 },
+  1268: { texto: 'En JavaServer Faces 2.x, ¿qué tecnología es el lenguaje de declaración de vistas predeterminado para crear las páginas de la interfaz?', opciones: ['Facelets, que permite declarar vistas de componentes con páginas XHTML.', 'FacesServlet, que es el motor de plantillas que sustituye a XHTML.', 'JSP exclusivamente, pues JSF 2 no incorporó ningún lenguaje de vistas nuevo.', 'HTML estático, que no puede incluir componentes de JSF.'], respuesta_correcta: 0 },
+  1269: { texto: '¿Qué distingue a un certificado X.509 de atributos (AC) de un certificado de clave pública (PKC)?', opciones: ['El AC no contiene una clave pública; asocia a su titular atributos de autorización, como roles o pertenencia a grupos.', 'El AC contiene siempre una clave pública y sustituye al certificado que la vincula con una identidad.', 'Todo AC debe presentarse junto con una PKC emitida necesariamente por la misma autoridad.', 'El AC solo puede contener extensiones de una PKC y no puede tener período de validez propio.'], respuesta_correcta: 0 },
+  1270: { texto: '¿Qué pareja de criptosistemas de clave pública se asocia tradicionalmente a la factorización del módulo entero producto de primos?', opciones: ['RSA y Rabin–Williams.', 'RIPEMD-160 y SHA-256.', 'Diffie–Hellman efímero (DHE) y DSA.', 'Rijndael/AES y ChaCha20.'], respuesta_correcta: 0 }
+}});
+
+const fs = require('node:fs');
+const path = require('node:path');
+const bankPath = path.join(__dirname, '..', 'preguntas_preparatic.json');
+const logPath = path.join(__dirname, 'cambios-lote-190.json');
+const bank = JSON.parse(fs.readFileSync(bankPath, 'utf8'));
+const log = JSON.parse(fs.readFileSync(logPath, 'utf8'));
+const notes = {
+  1266: { academy: 'db', block: 'Bloque Bases de datos, SQL y modelado de datos, versión 2026.1, §§ 3.1–3.2 (dependencias funcionales y normalización).', topics: 'A1-64/A2-II-5/III-4' },
+  1267: { academy: 'development', block: 'Bloque Tecnologías de sistemas de información, versión 2026.1, entornos de desarrollo Java y tecnologías web; cotejo de alcance, con la función específica del linker contrastada en Microsoft/GNU.', topics: 'A1-59/A2-II-2' },
+  1268: { academy: 'development', block: 'Bloque Tecnologías de sistemas de información, versión 2026.1, A1-67 y A2-III-10/III-12 (Java/Jakarta EE y aplicaciones web).', topics: 'A1-67/A2-III-10/III-12' },
+  1269: { academy: 'security', block: 'Bloque Seguridad, versión 2026.1, certificados digitales, identidad y autorización.', topics: 'A1-80/A1-81/A2-I-6/IV-12' },
+  1270: { academy: 'security', block: 'Bloque Seguridad, versión 2026.1, § 2.1 y apartados de criptografía simétrica, asimétrica y gestión de claves.', topics: 'A1-79/A2-IV-12' }
+};
+for (const change of log.cambios) {
+  const q = bank.preguntas.find(item => item.id === change.id);
+  const meta = notes[q.id];
+  const source = academy[meta.academy];
+  q.clasificacion.bloque_academia = meta.block;
+  q.clasificacion.nota = `Cotejo temático con ITIC Academy: ${meta.block} Correspondencia orientativa: ${meta.topics}.`;
+  const comment = ` Cotejo temático con ITIC Academy: ${meta.block} Correspondencia orientativa con el programa oficial: ${meta.topics}.`;
+  q.comentarios += comment;
+  q.revision.observaciones += comment;
+  q.revision.fuentes.push({ url: source.url, referencia: `ITIC Academy, ${meta.block} Correspondencia temática con ${meta.topics}.` });
+  change.actualizada = structuredClone(q);
+}
+fs.writeFileSync(bankPath, JSON.stringify(bank, null, 2) + '\n');
+fs.writeFileSync(logPath, JSON.stringify(log, null, 2) + '\n');
+console.log('Cotejo temático de academia y registro actualizados para el lote 190.');
