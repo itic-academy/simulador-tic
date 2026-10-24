@@ -1,0 +1,392 @@
+{
+  "fecha": "2026-10-24",
+  "alcance": "IDs 1006–1010; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1006,
+      "original": {
+        "id": 1006,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En los métodos de búsqueda heurística:",
+        "opciones": [
+          "El proceso de solución se plantea como la búsqueda de estados que contiene todas las posibles soluciones",
+          "Las estrategias de búsqueda en anchura pertenecen a la heurística deductiva",
+          "La amplitud del espacio de estados en un problema dado, difícilmente puede dar lugar a una explosión combinatoria al tratar de enumerar todas las posibilidades",
+          "En un caso extremo, una búsqueda ciega (sin función heurística), obligará a realizar una exploración exhaustiva (en anchura o en profundidad)"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1006,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación sobre las búsquedas no informadas es correcta?",
+        "opciones": [
+          "Ordenan la frontera mediante una estimación heurística del coste restante h(n).",
+          "La búsqueda en anchura es una forma de búsqueda heurística deductiva.",
+          "La ausencia de heurística impide que aparezca una explosión combinatoria.",
+          "No usan una estimación heurística para guiar la exploración y, según el espacio y la estrategia, pueden expandir un número exponencial de estados."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se acota el enunciado a búsqueda no informada. La búsqueda no tiene por qué recorrer exhaustivamente todos los estados en cualquier caso: puede detenerse al hallar una meta, DFS puede no ser completa en espacios infinitos y BFS es completa bajo ramificación finita, aunque su coste temporal y espacial puede crecer exponencialmente. La nueva opción D expresa esa posibilidad sin convertirla en una regla universal. Se conserva la clave D. Correspondencia: A1-70 y A2-III-5; cotejo con el apartado 5 del bloque 32.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "búsqueda no informada",
+          "heurísticas",
+          "explosión combinatoria",
+          "espacio de estados"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.cs.ubc.ca/~poole/aibook/3e/html/ArtInt3e.Ch3.S5.html",
+              "referencia": "Poole y Mackworth, Artificial Intelligence: Foundations of Computational Agents, 3.ª ed., §3.5: BFS y otras estrategias no informadas no emplean la ubicación de la meta para guiar la selección; BFS puede requerir tiempo y espacio exponenciales en la profundidad."
+            },
+            {
+              "url": "https://www.cs.ubc.ca/~poole/aibook/3e/html/ArtInt3e.Ch3.S7.html",
+              "referencia": "Poole y Mackworth, §3.7: distingue completitud, coste exponencial, uso de memoria y condiciones bajo las que DFS puede no terminar."
+            },
+            {
+              "url": "https://inst.eecs.berkeley.edu/~cs188/textbook/search/uninformed.html",
+              "referencia": "UC Berkeley CS188, «Uninformed Search»: BFS y DFS exploran sin heurística; el crecimiento exponencial y la completitud dependen de estrategia y supuestos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1 (31/08/2026): se cotejaron el apartado 5 (búsqueda), 2.6 (árboles), 6 (IA simbólica/sistemas expertos), 10 (redes profundas y funciones de activación), y las soluciones del bloque. El PDF no trata RPA de forma específica."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I: correspondencia con los temas oficiales A1."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con los temas oficiales A2 de ingreso libre."
+            }
+          ],
+          "observaciones": "Se acota el enunciado a búsqueda no informada. La búsqueda no tiene por qué recorrer exhaustivamente todos los estados en cualquier caso: puede detenerse al hallar una meta, DFS puede no ser completa en espacios infinitos y BFS es completa bajo ramificación finita, aunque su coste temporal y espacial puede crecer exponencialmente. La nueva opción D expresa esa posibilidad sin convertirla en una regla universal. Se conserva la clave D. Correspondencia: A1-70 y A2-III-5; cotejo con el apartado 5 del bloque 32."
+        }
+      }
+    },
+    {
+      "id": 1007,
+      "original": {
+        "id": 1007,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Se desea representar usando el formalismo de marcos que 'El cuerpo humano se divide en cabeza, tronco y extremidades'. La etiqueta a utilizar en las relaciones que parten del marco 'cuerpo humano' y van a los marcos 'cabeza', 'tronco' y 'extremidadeses' es:",
+        "opciones": [
+          "Subclase de",
+          "Superclase de",
+          "Compuesto de",
+          "Parte de"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1007,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una representación mediante marcos, el marco «Cuerpo humano» enlaza con los marcos «Cabeza», «Tronco» y «Extremidades», que son sus componentes. ¿Qué etiqueta expresa la relación desde el conjunto hacia sus componentes?",
+        "opciones": [
+          "Subclase de.",
+          "Superclase de.",
+          "Compuesto de.",
+          "Parte de."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La dirección de la relación debe distinguirse: desde el marco «Cuerpo humano» hacia los marcos que designan sus componentes, «Compuesto de» expresa la relación parte-todo; «Parte de» describe la relación inversa. Se corrige el error tipográfico original «extremidadeses» y se formula el supuesto como relación entre marcos. Se conserva la clave C. Correspondencia: A1-70 y A2-III-5.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "representación mediante marcos",
+          "relación parte-todo",
+          "slots",
+          "meronimia"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://www.cs.jhu.edu/~phi/ai/slides-2019/lecture-knowledge-representation.pdf",
+              "referencia": "Johns Hopkins University, «Knowledge Representation»: los marcos representan clases o instancias mediante slots y valores; las relaciones entre marcos pueden modelar atributos y componentes."
+            },
+            {
+              "url": "https://courses.cs.washington.edu/courses/cse473/09au/schedule/KnowledgeRepresentations.pdf",
+              "referencia": "University of Washington, «Knowledge Representations»: describe marcos como conocimiento relacionado sobre un sujeto, con slots que contienen valores y enlaces a otros marcos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32, versión 2026.1, apartado 6: representación simbólica y marcos en sistemas de conocimiento."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I: correspondencia con los temas oficiales A1."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con los temas oficiales A2 de ingreso libre."
+            }
+          ],
+          "observaciones": "La dirección de la relación debe distinguirse: desde el marco «Cuerpo humano» hacia los marcos que designan sus componentes, «Compuesto de» expresa la relación parte-todo; «Parte de» describe la relación inversa. Se corrige el error tipográfico original «extremidadeses» y se formula el supuesto como relación entre marcos. Se conserva la clave C. Correspondencia: A1-70 y A2-III-5."
+        }
+      }
+    },
+    {
+      "id": 1008,
+      "original": {
+        "id": 1008,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En aprendizaje profundo, ¿para qué se emplea una función de activación softmax?",
+        "opciones": [
+          "Para resolver problemas de clasificación.",
+          "Para predecir series temporales.",
+          "Para ajustar la dimensionalidad de entrada a las capas posteriores de la red.",
+          "Para reducir la carga computacional del modelo."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1008,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una red neuronal, ¿qué hace softmax cuando se aplica a un vector de logits en la dimensión de clases?",
+        "opciones": [
+          "Lo transforma en valores entre 0 y 1 que suman 1 y pueden interpretarse como una distribución sobre las clases.",
+          "Selecciona por sí sola la etiqueta final y garantiza que las probabilidades estén calibradas.",
+          "Reduce el número de características de entrada antes de las capas posteriores.",
+          "Disminuye necesariamente el coste computacional del modelo."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Softmax transforma logits en valores no negativos que suman 1 a lo largo de una dimensión; en una capa de salida suele interpretarse como distribución sobre clases mutuamente excluyentes. Se reformula la respuesta para distinguir esta función de la elección final de etiqueta y evitar afirmar que softmax se usa exclusivamente para clasificación. La clave A se conserva. Cotejo con el apartado 10 del bloque 32. Correspondencia: A1-70 y A2-III-5.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "deep learning",
+          "softmax",
+          "logits",
+          "clasificación multiclase"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Softmax.html",
+              "referencia": "PyTorch, documentación de torch.nn.Softmax: exponentia y normaliza las entradas para obtener valores entre 0 y 1 cuya suma por dimensión es 1."
+            },
+            {
+              "url": "https://developers.google.com/machine-learning/glossary?hl=en#softmax",
+              "referencia": "Google for Developers, Machine Learning Glossary, entrada softmax: transforma logits en probabilidades para las clases posibles de un modelo de clasificación multiclase."
+            },
+            {
+              "url": "https://d2l.ai/chapter_linear-classification/softmax-regression.html",
+              "referencia": "Dive into Deep Learning, sección Softmax Regression: normaliza logits a una distribución sobre clases; la salida no convierte por sí sola toda aplicación de softmax en una tarea de clasificación."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1 (31/08/2026): se cotejaron el apartado 5 (búsqueda), 2.6 (árboles), 6 (IA simbólica/sistemas expertos), 10 (redes profundas y funciones de activación), y las soluciones del bloque. El PDF no trata RPA de forma específica."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I: correspondencia con los temas oficiales A1."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con los temas oficiales A2 de ingreso libre."
+            }
+          ],
+          "observaciones": "Softmax transforma logits en valores no negativos que suman 1 a lo largo de una dimensión; en una capa de salida suele interpretarse como distribución sobre clases mutuamente excluyentes. Se reformula la respuesta para distinguir esta función de la elección final de etiqueta y evitar afirmar que softmax se usa exclusivamente para clasificación. La clave A se conserva. Cotejo con el apartado 10 del bloque 32. Correspondencia: A1-70 y A2-III-5."
+        }
+      }
+    },
+    {
+      "id": 1009,
+      "original": {
+        "id": 1009,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Las redes neuronales son:",
+        "opciones": [
+          "Redes de comunicaciones controladas por inteligencia artificial",
+          "Redes de ordenadores que piensan",
+          "Una tecnología que emula el funcionamiento del cerebro humano",
+          "Nada de lo anterior"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1009,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es una descripción adecuada de una red neuronal artificial?",
+        "opciones": [
+          "Una red de comunicaciones cuyos routers se controlan mediante IA.",
+          "Un ordenador que reproduce de forma fiel la actividad y estructura de un cerebro humano.",
+          "Un modelo computacional de unidades interconectadas que realizan operaciones matemáticas y está inspirado de forma simplificada en redes neuronales biológicas.",
+          "Un sistema que solo puede aprender sin datos ni parámetros."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La afirmación «emula el funcionamiento del cerebro humano» sobrestima la semejanza biológica. Se pregunta por una definición precisa: modelo computacional de unidades interconectadas que realizan operaciones matemáticas y cuyo diseño está inspirado de forma simplificada en redes neuronales biológicas. Se conserva la posición C y se elimina la explicación antropomórfica. Correspondencia: A1-70 y A2-III-5; cotejo con el apartado de redes neuronales del bloque 32.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "redes neuronales artificiales",
+          "neuronas artificiales",
+          "modelos inspirados en biología"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://hai.stanford.edu/ai-definitions/what-is-a-neural-network",
+              "referencia": "Stanford HAI, «What is a Neural Network?»: modelo computacional de unidades artificiales conectadas, inspirado en la estructura cerebral, con operaciones parametrizadas."
+            },
+            {
+              "url": "https://qbi.uq.edu.au/brain/intelligent-machines/what-artificial-intelligence-ai",
+              "referencia": "Queensland Brain Institute, University of Queensland: las redes neuronales artificiales son modelos informáticos simplificados y abstractos, inspirados libremente en la arquitectura cerebral."
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10604784/",
+              "referencia": "Revisión académica sobre correspondencias entre redes artificiales y cerebro: las ANN se inspiran en algunos aspectos biológicos, pero difieren sustancialmente en estructura, sustrato y cómputo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1 (31/08/2026): se cotejaron el apartado 5 (búsqueda), 2.6 (árboles), 6 (IA simbólica/sistemas expertos), 10 (redes profundas y funciones de activación), y las soluciones del bloque. El PDF no trata RPA de forma específica."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I: correspondencia con los temas oficiales A1."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX: correspondencia con los temas oficiales A2 de ingreso libre."
+            }
+          ],
+          "observaciones": "La afirmación «emula el funcionamiento del cerebro humano» sobrestima la semejanza biológica. Se pregunta por una definición precisa: modelo computacional de unidades interconectadas que realizan operaciones matemáticas y cuyo diseño está inspirado de forma simplificada en redes neuronales biológicas. Se conserva la posición C y se elimina la explicación antropomórfica. Correspondencia: A1-70 y A2-III-5; cotejo con el apartado de redes neuronales del bloque 32."
+        }
+      }
+    },
+    {
+      "id": 1010,
+      "original": {
+        "id": 1010,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique cuál, de entre los siguientes tipos de procesos, es un buen candidato para ser robotizado mediante RPA (Robotic Process Automation):",
+        "opciones": [
+          "Procesos que tienen poco volumen de transacciones y son llevados a cabo esporádicamente.",
+          "Procesos que requieren muy pocas intervenciones manuales.",
+          "Procesos con pasos que deben ser gobernados por reglas de negocio complejas y con muchas excepciones en su ejecución.",
+          "Procesos en los que intervienen múltiples sistemas y que, para completarse, necesitan que varios recursos accedan a diferentes sistemas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1010,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué proceso es el candidato más adecuado para automatizar mediante RPA?",
+        "opciones": [
+          "Una tarea esporádica y de bajo volumen, distinta en cada ejecución.",
+          "Un proceso que exige interpretación humana frecuente de documentos y decisiones no estructuradas.",
+          "Un flujo con reglas que cambian continuamente y numerosas excepciones que requieren juicio.",
+          "Un proceso estable, repetitivo y de alto volumen, basado en reglas y datos estructurados, que intercambia información entre varias aplicaciones."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "RPA resulta más apropiada cuando los pasos son repetitivos, deterministas, estables, basados en reglas y usan entradas estructuradas; interactuar con varias aplicaciones puede ser útil, pero no basta por sí solo para elegir el proceso. Se reformulan las opciones para que la D incluya esos criterios y para excluir trabajos esporádicos, juicio humano frecuente y excepciones complejas. La clave D se conserva. La academia consultada no desarrolla RPA específicamente; la respuesta se contrasta con documentación oficial de Microsoft y UiPath. Correspondencia: A1-90 y A2-II-16.",
+        "clasificacion": {
+          "A1": [
+            "A1-90"
+          ],
+          "A2": [
+            "A2-II-16"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "RPA",
+          "automatización de procesos",
+          "procesos repetitivos",
+          "reglas de negocio"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-24",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows-365/agents/when-to-use-w365a",
+              "referencia": "Microsoft Learn: RPA se ajusta a procesos estables y predecibles, de alto volumen, repetitivos y basados en reglas, con entradas estructuradas y pocas excepciones."
+            },
+            {
+              "url": "https://www.uipath.com/platform/agentic-automation/rpa",
+              "referencia": "UiPath, guía oficial de RPA: mejor ajuste para trabajo repetitivo, basado en reglas y con datos estructurados; puede automatizar transacciones entre aplicaciones, incluidos sistemas heredados."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "BOE-A-2025-25938, anexo I, A1-90: modelado de procesos y BPMN."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "BOE-A-2025-26262, anexo IX, A2-II-16: gestión de flujos de trabajo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32, versión 2026.1: cotejo del encaje general de automatización, datos y sistemas inteligentes; el material no desarrolla RPA, por lo que no se usa para decidir sus criterios de idoneidad."
+            }
+          ],
+          "observaciones": "RPA resulta más apropiada cuando los pasos son repetitivos, deterministas, estables, basados en reglas y usan entradas estructuradas; interactuar con varias aplicaciones puede ser útil, pero no basta por sí solo para elegir el proceso. Se reformulan las opciones para que la D incluya esos criterios y para excluir trabajos esporádicos, juicio humano frecuente y excepciones complejas. La clave D se conserva. La academia consultada no desarrolla RPA específicamente; la respuesta se contrasta con documentación oficial de Microsoft y UiPath. Correspondencia: A1-90 y A2-II-16."
+        }
+      }
+    }
+  ]
+}

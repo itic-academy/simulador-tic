@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 24 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 137 (IDs 1001–1005). Acumulado: 1.005 preguntas revisadas, 963 verificadas (268 vigentes, 601 corregidas y 94 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.118 sin revisión de contenido. Hay 708 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 138 (IDs 1006–1010). Acumulado: 1.010 preguntas revisadas, 968 verificadas (268 vigentes, 606 corregidas y 94 históricas) y 42 pendientes de resolver (24 de fuente y 18 de ambigüedad); quedan 11.113 sin revisión de contenido. Hay 713 preguntas con cambios en enunciado, opciones o clave respecto del original. La cobertura total sigue pendiente.
 
 ## Entregables
 
@@ -909,4 +909,17 @@ Cotejo con Drive: bloque 32 de ITIC Academy, versión 2026.1, apartados 2.6 (ár
 Fuentes principales: Johns Hopkins University y University of Washington sobre marcos y redes semánticas; OpenDSA y Cornell sobre árboles; Fikes y Nilsson (1971) sobre STRIPS; W3C sobre la historia de ontologías Web y DAML+OIL; International Mathematical Union sobre WDML; Brachman y Levesque y Middlesex University sobre sistemas expertos y encadenamiento. ITIC Academy, bloque 32 versión 2026.1.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.005 registros de revisión y 11.118 preguntas restantes idénticas al commit original.
+
+
+## Lote 138 — 24 de octubre
+
+IDs 1006–1010 revisados individualmente: cinco corregidas. Acumulado: 1.010 examinadas, 968 verificadas (268 vigentes, 606 corregidas y 94 históricas) y 42 pendientes (24 de fuente y 18 de ambigüedad); 713 preguntas con cambios de contenido. Quedan 11.113 sin revisar; siguiente ID 1.011.
+
+Se precisa que la búsqueda no informada no utiliza h(n) y que puede sufrir explosión combinatoria, sin afirmar que toda ejecución explore exhaustivamente el espacio (1006). Se aclara la dirección del vínculo parte-todo en marcos: desde «Cuerpo humano» a «Cabeza/Tronco/Extremidades» corresponde «Compuesto de» (1007). Se concreta softmax como normalización de logits a valores no negativos que suman 1, sin confundirlos con una etiqueta elegida ni garantizar calibración (1008). Se sustituye la metáfora de que las redes neuronales «emulan el cerebro» por una definición de modelos computacionales inspirados de forma simplificada en redes biológicas (1009). Se corrige la pregunta RPA para exigir pasos estables, repetitivos, basados en reglas, estructurados y de volumen alto; la interacción entre aplicaciones no basta por sí sola (1010).
+
+Cotejo con Drive: bloque 32 de ITIC Academy, versión 2026.1, apartados 5, 2.6, 6 y 10. El bloque no desarrolla RPA; para ese ítem se consultaron Microsoft Learn y UiPath, que describen procesos estables, repetitivos, con datos estructurados y excepciones limitadas. Correspondencias: A1-70/A2-III-5 (1006–1009); A1-90/A2-II-16 (1010). Las 42 dudas previas y el cotejo exhaustivo de modificaciones posteriores de las convocatorias siguen pendientes.
+
+Fuentes principales: Poole y Mackworth y UC Berkeley CS188 para búsqueda no informada; Johns Hopkins y Washington para marcos; PyTorch y Google for Developers para softmax; Stanford HAI y Queensland Brain Institute para redes neuronales; Microsoft Learn y UiPath para idoneidad de RPA. ITIC Academy, bloque 32 versión 2026.1, solo en los apartados citados.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.010 registros de revisión y 11.113 preguntas restantes idénticas al commit original.
 
