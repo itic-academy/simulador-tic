@@ -53924,71 +53924,265 @@
       "id": 1221,
       "bloque": 0,
       "tema": 0,
-      "texto": "Completa la frase: A diferencia de NIS, LDAP …",
+      "texto": "¿Qué afirmación distingue correctamente la codificación de mensajes LDAP de la del servicio de nombres NIS tradicional?",
       "opciones": [
-        "No está restringido a redes UNIX",
-        "Usa notación ASN.1",
-        "No soporta implementaciones de software libre",
-        "Se usa sobre TCP/IP"
+        "Los mensajes LDAP se codifican con ASN.1 BER; ONC RPC, usado por servicios NIS tradicionales, emplea XDR.",
+        "LDAP solo funciona en redes Unix y NIS en redes Windows.",
+        "NIS codifica sus mensajes LDAP con ASN.1 BER.",
+        "LDAP no puede transportarse sobre TCP/IP."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se elimina la ambigüedad del original, cuyas opciones describían varias diferencias verdaderas. LDAP codifica sus mensajes protocolarios con ASN.1 BER y los transporta sobre TCP; NIS tradicional se apoya en su propio servicio de nombres y no comparte esa codificación LDAP. LDAP es un protocolo de directorio de aplicación, no una tecnología exclusiva de Unix. Cotejo con ITIC Academy, bloque 45, que desarrolla directamente LDAPv3, BER, TCP/IP y el contexto NIS. Cotejo directo con ITIC Academy, bloque 45 (17-08-2026): LDAPv3, RFC 4511, ASN.1/BER, TCP/IP y NIS.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-122"
+        ],
+        "A2": [
+          "A2-II-8",
+          "A2-IV-9"
+        ],
+        "bloque_academia": "45 · Correo, mensajería y directorios, versión 2026.1; A1-80/A1-122 y A2-II-8/IV-9.",
+        "estado": "revisada",
+        "nota": "Cotejo directo con ITIC Academy, bloque 45 (17-08-2026): LDAPv3, RFC 4511, ASN.1/BER, TCP/IP y NIS."
+      },
+      "etiquetas": [
+        "LDAP",
+        "NIS",
+        "ASN.1",
+        "BER",
+        "RPC",
+        "XDR",
+        "servicios de directorio"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4511.html",
+            "referencia": "IETF RFC 4511, Lightweight Directory Access Protocol: The Protocol, §§ 5.1–5.2: mensajes LDAP se codifican en ASN.1 BER y se transportan sobre TCP."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc2307.html",
+            "referencia": "IETF RFC 2307, An Approach for Using LDAP as a Network Information Service, § 2.1: distingue NIS como servicio de nombres, a menudo basado en mapas/archivos planos, de LDAP como servicio de directorio distribuido y con esquema extensible."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1057.html",
+            "referencia": "IETF RFC 1057, ONC RPC Protocol Specification, § 8: define la representación de mensajes RPC mediante XDR; se utiliza como contraste protocolario con LDAP ASN.1/BER."
+          },
+          {
+            "url": "https://docs.google.com/document/d/1TquAQ4a5u1wiDtMpLGimvmFONKEQa2Gv/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 45, tema 122 «Correo, mensajería y directorios», versión 2026.1 (17-08-2026): LDAPv3, RFC 4511, codificación ASN.1/BER, TCP/IP y contraste de servicios de directorio."
+          }
+        ],
+        "observaciones": "Se elimina la ambigüedad del original, cuyas opciones describían varias diferencias verdaderas. LDAP codifica sus mensajes protocolarios con ASN.1 BER y los transporta sobre TCP; NIS tradicional se apoya en su propio servicio de nombres y no comparte esa codificación LDAP. LDAP es un protocolo de directorio de aplicación, no una tecnología exclusiva de Unix. Cotejo con ITIC Academy, bloque 45, que desarrolla directamente LDAPv3, BER, TCP/IP y el contexto NIS. Cotejo directo con ITIC Academy, bloque 45 (17-08-2026): LDAPv3, RFC 4511, ASN.1/BER, TCP/IP y NIS."
+      }
     },
     {
       "id": 1222,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones sobre las API de JEE7 es correcta?",
+      "texto": "En Java EE 7, ¿qué API define específicamente servicios web construidos conforme al estilo arquitectónico REST?",
       "opciones": [
-        "La API JPA (Java Persistence API) gestiona la transaccionalidad con la base de datos.",
-        "La API JMS (Java Message Service) es la única API que permite el envío de notificaciones por correo electrónico.",
-        "JAX-RS define las API para el desarrollo de servicios web construidos de acuerdo con el estilo arquitectónico REST (Representational State Transfer).",
-        "La API Java para WebSocket permite a las aplicaciones JEE comunicarse mediante el protocolo WebSocket, mediante comunicación half-duplex a través de HTTP."
+        "JPA, API de persistencia y mapeo objeto-relacional.",
+        "JMS, API de mensajería empresarial.",
+        "JAX-RS, API para servicios web RESTful.",
+        "Java API for WebSocket, API de comunicación bidireccional/full-duplex."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se concreta la pregunta en la API de Java EE 7 que define servicios REST: JAX-RS. JPA proporciona persistencia/ORM y puede participar en transacciones; por ello la opción original sobre transaccionalidad también era discutiblemente cierta. JMS no es la única vía para correo electrónico (existe JavaMail), y WebSocket es bidireccional/full-duplex, no half-duplex. Cotejo con ITIC Academy, bloque 30, que separa JPA/Jakarta Persistence y JAX-RS/Jakarta REST. Cotejo con ITIC Academy, bloque 30 (26-09-2026): distingue JPA/Jakarta Persistence de JAX-RS/Jakarta REST. Correspondencia A1-67/A1-119 y A2-III-10/III-12.",
+      "clasificacion": {
+        "A1": [
+          "A1-67",
+          "A1-119"
+        ],
+        "A2": [
+          "A2-III-10",
+          "A2-III-12"
+        ],
+        "bloque_academia": "30 · Tecnologías de sistemas de información, versión 2026.1; Java EE/Jakarta EE y servicios web.",
+        "estado": "revisada",
+        "nota": "Cotejo con ITIC Academy, bloque 30 (26-09-2026): distingue JPA/Jakarta Persistence de JAX-RS/Jakarta REST. Correspondencia A1-67/A1-119 y A2-III-10/III-12."
+      },
+      "etiquetas": [
+        "Java EE 7",
+        "JEE7",
+        "JPA",
+        "JMS",
+        "JAX-RS",
+        "REST",
+        "WebSocket",
+        "half-duplex"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://download.oracle.com/javaee-archive/jax-rs-spec.java.net/users/att-2621/spec.pdf",
+            "referencia": "JSR 339, Java API for RESTful Web Services 2.0, especificación final de Java EE 7: define APIs Java para construir servicios web según el estilo arquitectónico REST."
+          },
+          {
+            "url": "https://www.oracle.com/technical-resources/articles/java/jaxrs20.html",
+            "referencia": "Oracle, «Java EE 7 and JAX-RS 2.0»: documenta JAX-RS 2.0 como tecnología Java EE 7 para servicios RESTful."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, tecnologías SI, versión 2026.1 (26-09-2026): JPA/Jakarta Persistence y JAX-RS/Jakarta REST (APIs RESTful); cotejo de alcance funcional, sin reproducir la confusión del enunciado original."
+          }
+        ],
+        "observaciones": "Se concreta la pregunta en la API de Java EE 7 que define servicios REST: JAX-RS. JPA proporciona persistencia/ORM y puede participar en transacciones; por ello la opción original sobre transaccionalidad también era discutiblemente cierta. JMS no es la única vía para correo electrónico (existe JavaMail), y WebSocket es bidireccional/full-duplex, no half-duplex. Cotejo con ITIC Academy, bloque 30, que separa JPA/Jakarta Persistence y JAX-RS/Jakarta REST. Cotejo con ITIC Academy, bloque 30 (26-09-2026): distingue JPA/Jakarta Persistence de JAX-RS/Jakarta REST. Correspondencia A1-67/A1-119 y A2-III-10/III-12."
+      }
     },
     {
       "id": 1223,
       "bloque": 0,
       "tema": 0,
-      "texto": "LINQ (Language-Integrated Query) es:",
+      "texto": "¿Qué describe con mayor precisión Language Integrated Query (LINQ) en .NET?",
       "opciones": [
-        "Es una librería de Javascript para la integración de aplicaciones con HTML5.",
-        "Es la tecnología que permite la integración de elementos Java dentro de una aplicación .NET y viceversa.",
-        "Facilita el acceso a bases de datos y ficheros XML desde una aplicación .NET.",
-        "Es el API de integración de la red social profesional Linkedin, basado en OAuth."
+        "Una librería JavaScript para integrar aplicaciones con HTML5.",
+        "Una tecnología de interoperabilidad entre Java y .NET.",
+        "Un conjunto de tecnologías que integra capacidades de consulta en lenguajes .NET para consultar fuentes compatibles, como colecciones, XML y bases de datos mediante proveedores.",
+        "La API OAuth de la red profesional LinkedIn."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "LINQ integra capacidades de consulta en los lenguajes .NET y aplica operadores comunes a fuentes habilitadas: colecciones, XML y bases de datos mediante proveedores. La opción de acceso a bases de datos/XML era la más cercana, pero confundía ejemplos de uso con la definición y podía sugerir acceso universal sin proveedor; se sustituye por una definición precisa. Cotejo con ITIC Academy, bloque 30, § LINQ y tecnologías .NET. Cotejo con ITIC Academy, bloque 30, sección LINQ, A1-66/A2-III-11.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "30 · Tecnologías de sistemas de información, versión 2026.1; LINQ y .NET.",
+        "estado": "revisada",
+        "nota": "Cotejo con ITIC Academy, bloque 30, sección LINQ, A1-66/A2-III-11."
+      },
+      "etiquetas": [
+        ".NET",
+        "LINQ",
+        "consulta integrada",
+        "XML",
+        "bases de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/csharp/linq",
+            "referencia": "Microsoft Learn, «Language Integrated Query (LINQ)»: integra capacidades de consulta en C# para fuentes habilitadas, como colecciones, XML y proveedores de bases de datos; no es un puente Java/.NET ni una API de LinkedIn."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, tecnologías SI, versión 2026.1 (26-09-2026): LINQ como sintaxis/API de consulta integrada en lenguajes .NET."
+          }
+        ],
+        "observaciones": "LINQ integra capacidades de consulta en los lenguajes .NET y aplica operadores comunes a fuentes habilitadas: colecciones, XML y bases de datos mediante proveedores. La opción de acceso a bases de datos/XML era la más cercana, pero confundía ejemplos de uso con la definición y podía sugerir acceso universal sin proveedor; se sustituye por una definición precisa. Cotejo con ITIC Academy, bloque 30, § LINQ y tecnologías .NET. Cotejo con ITIC Academy, bloque 30, sección LINQ, A1-66/A2-III-11."
+      }
     },
     {
       "id": 1224,
       "bloque": 0,
       "tema": 0,
-      "texto": "En los ordenadores, por lo general, los programas que realizan tareas de arranque de la máquina y de diagnósticos se almacenan en:",
+      "texto": "En un PC actual, ¿dónde se almacena normalmente el firmware BIOS/UEFI utilizado para inicializar el hardware y arrancar el equipo?",
       "opciones": [
-        "RAM",
-        "ROM",
-        "memoria interna del procesador",
-        "disco duro asociado a la UAL y la UC"
+        "En RAM, que se borra al apagar el equipo.",
+        "En memoria flash no volátil reprogramable.",
+        "En la memoria caché interna del procesador.",
+        "En el disco duro asociado a la UAL y la UC."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se actualiza la generalización «ROM»: en los PC modernos, el firmware BIOS/UEFI de arranque se conserva normalmente en memoria flash no volátil reprogramable, no en ROM en sentido estricto. ROM describe el soporte histórico o se usa coloquialmente como «BIOS ROM». Cotejo temático con ITIC Academy, bloque 26, que trata firmware/UEFI y almacenamiento no volátil. Cotejo temático con ITIC Academy, bloque 26, firmware UEFI y almacenamiento; el soporte reprogramable actual se contrasta con NIST/UEFI. Correspondencia A1-41/A1-54 y A2-II-1.",
+      "clasificacion": {
+        "A1": [
+          "A1-41",
+          "A1-54"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "26 · Hardware, versión 2026; firmware/UEFI y arranque.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 26, firmware UEFI y almacenamiento; el soporte reprogramable actual se contrasta con NIST/UEFI. Correspondencia A1-41/A1-54 y A2-II-1."
+      },
+      "etiquetas": [
+        "hardware",
+        "firmware",
+        "BIOS",
+        "UEFI",
+        "memoria flash",
+        "arranque"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/147/final",
+            "referencia": "NIST SP 800-147, BIOS Protection Guidelines: describe firmware BIOS/UEFI en memoria flash de sistemas cliente."
+          },
+          {
+            "url": "https://uefi.org/specs/PI/1.8/V3_Design_Discussion.html",
+            "referencia": "UEFI Platform Initialization Specification 1.8, § 2.1.1: los dispositivos flash son los repositorios no volátiles más comunes para volúmenes de firmware."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26, hardware, versión 2026: firmware/UEFI, arranque seguro y almacenamiento no volátil; cotejo temático del soporte de arranque moderno."
+          }
+        ],
+        "observaciones": "Se actualiza la generalización «ROM»: en los PC modernos, el firmware BIOS/UEFI de arranque se conserva normalmente en memoria flash no volátil reprogramable, no en ROM en sentido estricto. ROM describe el soporte histórico o se usa coloquialmente como «BIOS ROM». Cotejo temático con ITIC Academy, bloque 26, que trata firmware/UEFI y almacenamiento no volátil. Cotejo temático con ITIC Academy, bloque 26, firmware UEFI y almacenamiento; el soporte reprogramable actual se contrasta con NIST/UEFI. Correspondencia A1-41/A1-54 y A2-II-1."
+      }
     },
     {
       "id": 1225,
       "bloque": 0,
       "tema": 0,
-      "texto": "Que es LAMP:",
+      "texto": "¿Qué componentes identifica tradicionalmente el acrónimo LAMP en una pila de servidor web?",
       "opciones": [
-        "Una arquitectura web basada en software libre",
-        "Una arquitectura web basada en j2ee",
-        "Una arquitectura web basada en Net",
-        "Ninguna de las anteriores"
+        "Linux, Apache, MySQL y PHP (con variantes como Perl o Python para la capa de aplicación).",
+        "Java, Apache, Microsoft SQL Server y PowerShell.",
+        "Linux, IIS, Oracle Database y .NET.",
+        "Un protocolo de iluminación para redes."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se define LAMP por sus componentes históricos: Linux, Apache, MySQL y PHP. Ubuntu documenta variantes con Perl o Python y sustituciones de servidor/base de datos; por tanto «arquitectura basada en software libre» era demasiado genérico y no identificaba el acrónimo. Cotejo temático con ITIC Academy, bloque 30, sobre servidores web y tecnologías de servidor; el bloque no emplea expresamente el nombre LAMP. Cotejo temático con ITIC Academy, bloque 30, servidores web y tecnologías de servidor; el PDF no denomina expresamente la pila LAMP. Correspondencia A1-57/A1-119 y A2-III-12.",
+      "clasificacion": {
+        "A1": [
+          "A1-57",
+          "A1-119"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "30 · Tecnologías de sistemas de información, versión 2026.1; servidores web.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy, bloque 30, servidores web y tecnologías de servidor; el PDF no denomina expresamente la pila LAMP. Correspondencia A1-57/A1-119 y A2-III-12."
+      },
+      "etiquetas": [
+        "LAMP",
+        "Linux",
+        "Apache",
+        "MySQL",
+        "PHP",
+        "servidor web"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-24",
+        "fuentes": [
+          {
+            "url": "https://assets.ubuntu.com/v1/1074ba1e-ubuntu-server-guide.pdf",
+            "referencia": "Ubuntu Server Guide, «LAMP Applications»: LAMP se desarrolla como Linux + Apache + MySQL + PHP/Perl/Python, una pila popular de servidor; documenta sustituciones posibles de base de datos, servidor web y lenguaje."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, tecnologías SI, versión 2026.1 (26-09-2026): servidores web y tecnologías de servidor; el material cubre los componentes, pero no utiliza necesariamente el rótulo histórico LAMP."
+          }
+        ],
+        "observaciones": "Se define LAMP por sus componentes históricos: Linux, Apache, MySQL y PHP. Ubuntu documenta variantes con Perl o Python y sustituciones de servidor/base de datos; por tanto «arquitectura basada en software libre» era demasiado genérico y no identificaba el acrónimo. Cotejo temático con ITIC Academy, bloque 30, sobre servidores web y tecnologías de servidor; el bloque no emplea expresamente el nombre LAMP. Cotejo temático con ITIC Academy, bloque 30, servidores web y tecnologías de servidor; el PDF no denomina expresamente la pila LAMP. Correspondencia A1-57/A1-119 y A2-III-12."
+      }
     },
     {
       "id": 1226,
