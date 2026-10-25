@@ -1,10 +1,16 @@
 # Revisión del banco TIC — estado al 25 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 242 (IDs 1526–1530). Acumulado: 1.530 preguntas examinadas, 1.481 verificadas (363 vigentes, 996 corregidas y 122 históricas) y 49 pendientes de resolver (27 de fuente y 22 de ambigüedad); quedan 10.593 sin revisar de contenido. Hay 1.149 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 243 (IDs 1531–1535). Acumulado: 1.535 preguntas examinadas, 1.486 verificadas (364 vigentes, 1.000 corregidas y 122 históricas) y 49 pendientes de resolver (27 de fuente y 22 de ambigüedad); quedan 10.588 sin revisar de contenido. Hay 1.153 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
 
-## Lote 241 — 25 de octubre
+## Lote 243 — 25 de octubre
+
+IDs 1531–1535 revisados individualmente. Se confirma la descripción de la interfaz DTE/DCE de X.25 (1531); se corrige una confusión conceptual entre arquitectura jerárquica y centralizada de gestión/control (1532); se precisa que EuroDOCSIS es la adaptación europea histórica de DOCSIS para el plan de frecuencias de cable europeo (1533); se acota UMTS a la pareja tradicional de bandas UTRA FDD de 900 y 2100 MHz sin presentarla como exhaustiva ni universal (1534); y se precisa el intercambio Kerberos AS: las credenciales se cifran con la clave secreta del cliente y no se transmite la contraseña en claro (1535). Los textos originales íntegros se conservan en `cambios-lote-243.json`.
+
+Cotejo con Drive: ITIC Academy, bloque 42 Redes, versión 2026.1 (29-09-2026): §1.3 conmutación de paquetes/§8 redes públicas (1531), §5 gestión de redes (1532), §8.3 CATV (1533); bloque 46 Redes inalámbricas y móviles, versión 2026.1 (30-09-2026), §12.3 UMTS (1534); y bloque 48 Seguridad en redes y aplicaciones, versión 2026, §6.7 Kerberos (1535). Correspondencias oficiales A1/A2 contrastadas con `temario-oficial.json` y las convocatorias BOE-A-2025-25938/BOE-A-2025-26262 y registradas por pregunta. El material académico se emplea para encaje curricular, no como evidencia normativa.
+
+Fuentes primarias: ITU-T X.25 (en vigor); ITU-T G.7702, §§6.5 y 11.5 (gestión/control jerárquicos por niveles); CableLabs DOCSIS 3.1 y ETSI TS 101 909-23 (DOCSIS sobre HFC y EuroDOCSIS europeo); ETSI TS 125 101 V18.0.0, tabla 5.0 (bandas UTRA I y VIII); RFC 4120, §§1.1, 1.2 y 3.1 (modelo, base de datos de principals y respuesta AS cifrada). Ejecutados `node revision/lote-243.cjs`, `node revision/academia-lote-243.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas, 1.535 registros revisados, cero errores y 10.588 preguntas aún sin revisión de contenido.
 
 ## Lote 242 — 25 de octubre
 
