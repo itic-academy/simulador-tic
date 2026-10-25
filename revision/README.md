@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 25 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 247 (IDs 1551–1555). Acumulado: 1.555 preguntas examinadas, 1.505 verificadas (369 vigentes, 1.014 corregidas y 122 históricas) y 50 pendientes de resolver (27 de fuente y 23 de ambigüedad); quedan 10.568 sin revisar de contenido. Hay 1.168 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 247 (IDs 1551–1555). Acumulado: 1.555 preguntas examinadas, 1.505 verificadas (369 vigentes, 1.014 corregidas y 122 históricas) y 50 pendientes de resolver (27 de fuente y 23 de ambigüedad); quedan 10.568 sin revisar de contenido. Hay 1.167 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
 
