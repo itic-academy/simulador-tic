@@ -1,8 +1,18 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 274 (IDs 1686–1690). Acumulado: 1.690 preguntas examinadas, 1.638 verificadas (379 vigentes, 1.134 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.433 sin revisar de contenido. Hay 1.290 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 275 (IDs 1691–1695). Acumulado: 1.695 preguntas examinadas, 1.643 verificadas (382 vigentes, 1.136 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.428 sin revisar de contenido. Hay 1.292 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 275 — 27 de octubre
+
+IDs 1691–1695 revisados individualmente: tres vigentes y dos corregidos. Acumulado: 1.695 examinadas; 1.643 verificadas (382 vigentes, 1.136 corregidas y 125 históricas), 52 pendientes (28 de fuente y 24 de ambigüedad); 1.292 preguntas con cambios de contenido. Quedan 10.428 sin revisar; siguiente ID: 1.696. Originales íntegros conservados en `cambios-lote-275.json`.
+
+La 1691 confirma que «constellation» no es una topología Fibre Channel: las tres básicas son point-to-point, arbitrated loop y switched fabric. En la 1692 se sustituye una comparativa ambigua —la respuesta sobre rendimiento variaba según carga y controlador— por un caso controlado de cuatro unidades iguales: RAID 5 aporta aproximadamente tres unidades útiles y dos espejos RAID 1 aproximadamente dos; RAID 5 no tolera dos fallos simultáneos. Las 1693 y 1694 conservan su clave: RAID 3 intercala datos por bytes con paridad dedicada, frente a RAID 4 por bloques con paridad dedicada. La 1695 reemplaza una definición vaga por la descripción de una SAN clásica como red especializada que interconecta hosts y almacenamiento y suele presentar bloques al host; se aclara que SNIA admite distintas tecnologías, topologías y protocolos, y no se afirma que todas las SAN sean Fibre Channel.
+
+Cotejo con ITIC Academy en Drive: bloque 26, versión 2026.1 (31-08-2026), apartados 7.2–8.2 (SAN, Fibre Channel y topologías) y 8.1 (RAID, paridad y capacidad). Correspondencia individual con `temario-oficial.json` y BOE-A-2025-25938/BOE-A-2025-26262: 1691 A1-56/A1-110/A2-IV-5/A2-IV-8; 1692–1694 A1-56/A2-IV-5; 1695 A1-56/A1-110/A2-IV-5/A2-IV-8. La academia orienta el encaje, no sustituye la comprobación técnica.
+
+Fuentes primarias/técnicas: IBM Documentation, RAID level summary, RAID 3 y mirroring; IBM Support, descripciones RAID 3/4; SNIA, What Is a SAN?; IBM Documentation sobre SAN/FCP y datos en bloques; ejecutados `node revision/lote-275.cjs`, `node revision/academia-lote-275.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas estructuralmente válidas, 1.695 registros, cero errores y 10.428 preguntas aún sin revisar.
 
 ## Lote 274 — 27 de octubre
 

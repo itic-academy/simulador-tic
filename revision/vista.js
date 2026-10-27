@@ -55,7 +55,7 @@ function render(){
 }
 // Incrementar esta versión al publicar un lote evita que el navegador reutilice
 // una copia antigua del banco o del inventario desde su caché HTTP.
-const DATA_VERSION='20261027-274';
+const DATA_VERSION='20261027-275';
 async function json(url){const response=await fetch(`${url}?v=${DATA_VERSION}`,{cache:'no-cache'});if(!response.ok)throw Error(`${url}: ${response.status}`);return response.json();}
 async function initReview(){
   try{
