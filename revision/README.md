@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 281 (IDs 1721–1725); se resolvieron además seis pendientes antiguos. Acumulado: 1.725 preguntas examinadas, 1.679 verificadas (385 vigentes, 1.168 corregidas y 126 históricas) y 46 pendientes (23 de fuente y 23 de ambigüedad); quedan 10.398 sin revisar de contenido. Hay 1.325 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 282 (IDs 1726–1730); se resolvieron además seis pendientes antiguos. Acumulado: 1.730 preguntas examinadas, 1.684 verificadas (385 vigentes, 1.173 corregidas y 126 históricas) y 46 pendientes (23 de fuente y 23 de ambigüedad); quedan 10.393 sin revisar de contenido. Hay 1.330 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -16,6 +16,18 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 282 — 27 de octubre
+
+IDs 1726–1730 revisados individualmente y cotejados con documentación primaria: cinco correcciones. Acumulado: 1.730 examinadas; 1.684 verificadas (385 vigentes, 1.173 corregidas y 126 históricas); 46 pendientes (23 de fuente y 23 de ambigüedad); 1.330 cambios de contenido; 10.393 aún sin revisar. Siguiente ID: 1.731. Se conservaron los originales en `cambios-lote-282.json`.
+
+- La 1726 sustituye “dispositivo sin relación con almacenamiento”, que mezclaba una técnica de reconocimiento (OCR), una organización de discos (RAID), una propiedad/tecnología de almacenamiento (WORM) y una tecnología/formato de cinta DAT. Ahora pregunta específicamente qué término convierte texto en imágenes en texto legible por máquina. Fuentes: NIST CSRC RAID, SNIA WORM, IBM Redbooks sobre DAT/DDS e IBM OCR.
+- La 1727 concreta la pregunta histórica sobre Sun: Solaris/Sun documentó plataformas SPARC y x86, y el manual Sun386i documenta Intel 80386; no se fuerza una afirmación universal sobre todas las arquitecturas posibles ni se atribuye MIPS sin soporte primario. Fuentes Oracle/Sun.
+- La 1728 fija la diferencia normativa entre iFCP y FCIP. RFC 4172 define iFCP como protocolo gateway-to-gateway que presta funcionalidad de fabric FC por TCP/IP; RFC 3821 define FCIP como transporte/encapsulado de tramas FC sobre IP.
+- La 1729 reemplaza una comparación incondicional de espacio/tiempo por la diferencia estable entre puntos de referencia: diferencial desde la última completa; incremental desde la copia más reciente. La duración y el volumen concretos dependen de los datos y el producto.
+- La 1730 deja de ordenar tiempos de reloj sin contexto. Pregunta por el número de imágenes necesarias en la restauración convencional: full, full+última diferencial, full+cadena incremental.
+
+Cotejo curricular con ITIC Academy, bloque 26, versión 2026.1: cap. 8 (RAID/SAN/Fibre Channel/almacenamiento); cap. 2.1 (CPU/ISA, solo correspondencia temática para el dato Sun histórico); cap. 9.2 (completa/incremental/diferencial, cotejo directo para 1729–1730). El documento no enumera OCR como medio de almacenamiento ni iFCP como epígrafe explícito. Correspondencia A1/A2 comprobada con BOE-A-2025-25938 y BOE-A-2025-26262. Ejecutados `node revision/lote-282.cjs`, `node revision/academia-lote-282.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas estructuralmente válidas, cero errores y 10.393 sin revisar de contenido.
 
 ## Lote 281 — 27 de octubre
 
