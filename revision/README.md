@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 283 (IDs 1731–1735); se resolvieron además seis pendientes antiguos. Acumulado: 1.735 preguntas examinadas, 1.689 verificadas (385 vigentes, 1.178 corregidas y 126 históricas) y 46 pendientes (23 de fuente y 23 de ambigüedad); quedan 10.388 sin revisar de contenido. Hay 1.335 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 284 (IDs 1736–1740); se resolvieron además seis pendientes antiguos. Acumulado: 1.740 preguntas examinadas, 1.694 verificadas (385 vigentes, 1.183 corregidas y 126 históricas) y 46 pendientes (23 de fuente y 23 de ambigüedad); quedan 10.383 sin revisar de contenido. Hay 1.340 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -16,6 +16,20 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 284 — 27 de octubre
+
+IDs 1736–1740 revisados individualmente con estándares y documentación primaria; cinco correcciones. Acumulado: 1.740 examinadas; 1.694 verificadas (385 vigentes, 1.183 corregidas y 126 históricas); 46 pendientes (23 de fuente y 23 de ambigüedad); 1.340 cambios de contenido; 10.383 aún sin revisar. Siguiente ID: 1.741. Se conservaron los originales en `cambios-lote-284.json`.
+
+- La 1736 identifica RAID 6 por la doble paridad distribuida y acota la tolerancia a dos unidades fallidas según su definición convencional.
+- La 1737 mantiene la expansión TMS = Tape Management System y explicita el contexto de gestión de medios de respaldo en cinta.
+- La 1738 mantiene MAGERIT, pero corrige su clasificación a gestión de riesgos: A1-47 y A2-II-10. El material de academia y el CCN identifican MAGERIT v3 como metodología de análisis/gestión de riesgos elaborada originalmente por el Consejo Superior de Administración Electrónica.
+- La 1739 sustituye una lista heterogénea de transportes ópticos y protocolos por una pregunta precisa de FCIP. Se distingue de iFCP (funcionalidad de fabric mediante gateways) y de iSCSI (SCSI sobre TCP/IP).
+- La 1740 reemplaza «menor coste» como no-beneficio categórico por una pregunta matizada: la SAN puede reducir costes por utilización y gestión centralizadas, pero el ahorro no es universal ni está garantizado.
+
+Cotejo Drive: ITIC Academy, bloque 26, versión 2026.1 (31-08-2026), §§ 7.2 (DAS/NAS/SAN), 8.1 (RAID 6: doble paridad distribuida), 8.2 (Fibre Channel/SAN) y apartado de copias/almacenamiento (TMS no se desarrolla expresamente); correspondencia temática para 1736, 1737, 1739 y 1740. ITIC Academy, bloque 48 Seguridad en redes y aplicaciones, versión 2026.1 (30-09-2026), § 1.2, trata explícitamente MAGERIT v3 y análisis de riesgos (1738). Correspondencias oficiales contrastadas con `temario-oficial.json` y los anexos de las convocatorias A1/A2: A1-56/A2-IV-5 (1736, 1739, 1740), A1-56/A2-IV-3 (1737) y A1-47/A2-II-10 (1738), conforme a [A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Fuentes técnicas: [IBM, RAID 6](https://www.ibm.com/docs/en/i/7.6.0?topic=concepts-raid-6), [IBM, TMS](https://www.ibm.com/docs/en/ttooz/2.2.0?topic=guide-glossary), [CCN-CERT, MAGERIT](https://www.ccn-cert.cni.es/es/component/content/article/551-nueva-version-de-magerit.html?Itemid=11827&catid=23), [IETF RFC 3821, FCIP](https://www.rfc-editor.org/rfc/rfc3821.html), [RFC 4172, iFCP](https://www.rfc-editor.org/rfc/rfc4172.html), [RFC 3720, iSCSI](https://www.rfc-editor.org/rfc/rfc3720.html) e [IBM, redes SAN](https://www.ibm.com/docs/en/i/7.5.0?topic=solutions-storage-area-networks). La academia se utiliza para comprobar cobertura, no como fuente técnica normativa.
+
+Ejecutados `node revision/lote-284.cjs`, `node revision/academia-lote-284.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas estructuralmente válidas, 1.740 registros de revisión, cero errores y 10.383 preguntas aún sin revisar de contenido.
 
 ## Lote 283 — 27 de octubre
 
