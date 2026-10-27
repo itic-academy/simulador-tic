@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 306 (IDs 1846–1850); se resolvieron además seis pendientes antiguos. Acumulado: 1.850 preguntas examinadas, 1.802 verificadas (398 vigentes, 1.274 corregidas y 130 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.273 sin revisar de contenido. Hay 1.435 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 307 (IDs 1851–1855); se resolvieron además seis pendientes antiguos. Acumulado: 1.855 preguntas examinadas, 1.807 verificadas (398 vigentes, 1.279 corregidas y 130 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.268 sin revisar de contenido. Hay 1.440 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 307 — 27 de octubre
+
+IDs 1851–1855 revisados individualmente con documentación oficial/institucional y técnica, cotejo de materiales de academia en Drive y correspondencias A1/A2. Se conservaron las versiones originales completas en `cambios-lote-307.json`. Acumulado: 1.855 examinadas; 1.807 verificadas (398 vigentes, 1.279 corregidas, 130 históricas); 48 pendientes (24 de fuente, 24 de ambigüedad), 1.440 con cambios de contenido y 10.268 sin revisión individual.
+
+- La 1851 mantiene G2B y delimita la relación: la TGSS ofrece a las empresas los trámites electrónicos de cotización/ingreso, según Sistema RED. Cotejo Drive: Tema 78 de Comercio electrónico y factura electrónica.
+- La 1852 mantiene la opción de WAL: el registro de cambios se hace persistente antes que las páginas de datos modificadas; no se exige vaciar todos los logs antes de iniciar cada transacción. Cotejo Drive: bloque 29 Bases de datos, transacciones y recuperación.
+- La 1853 mantiene como falsa la suficiencia universal del ciclo en un grafo de asignación: con varios ejemplares por tipo puede haber ciclo sin interbloqueo. Se corrige además la opción que afirmaba que un interbloqueo impide ejecutar cualquier otro trabajo. Cotejo Drive: bloque 47 declara fundamentos de sistemas operativos; se documenta expresamente que la academia no aportó el matiz específico de instancias múltiples.
+- La 1854 conserva Small Computer System Interface como expansión de SCSI y retira la traducción literal equívoca “interfaz para pequeños sistemas”. Cotejo Drive: bloque 26 Hardware/Almacenamiento; expansión contrastada con NIST y comité T10.
+- La 1855 conserva la opción del artículo 9.3: disposiciones sancionadoras no favorables o restrictivas de derechos individuales. Cotejo Drive: bloque 01 Constitución; alcance legal comprobado en el texto consolidado BOE.
+
+Cotejo curricular con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1851 A1-78/A2-I-9; 1852 A1-63/A2-IV-2; 1853 A1-59/A2-II-2; 1854 A1-56/A2-IV-5; 1855 A1-1/A2-I-1. Correspondencia curricular no sustituye evidencia técnica primaria.
+
+Fuentes: [TGSS, Sistema RED](https://www.seg-social.es/wps/portal/wss/internet/InformacionUtil/5300/1889/7019/39263/7020?changeLanguage=es); [PostgreSQL 16, WAL](https://www.postgresql.org/docs/16/wal-intro.html); [University of Illinois Urbana-Champaign, Deadlock](https://cs341.cs.illinois.edu/coursebook/Deadlock); [NIST CSRC Glossary, SCSI](https://csrc.nist.gov/glossary/term/scsi) y [INCITS T10](https://t10.t10.org/intro.htm); [Constitución Española consolidada, BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a9).
+
+Ejecutados `node revision/lote-307.cjs`, `node revision/academia-lote-307.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario 12.123 preguntas, errores 0; 1.855 examinadas y 10.268 aún sin revisión individual de contenido.
 
 ## Lote 306 — 27 de octubre
 
