@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 310 (IDs 1866–1870); se resolvieron además seis pendientes antiguos. Acumulado: 1.870 preguntas examinadas, 1.822 verificadas (399 vigentes, 1.292 corregidas y 131 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.253 sin revisar de contenido. Hay 1.454 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 311 (IDs 1871–1875); se resolvieron además seis pendientes antiguos. Acumulado: 1.875 preguntas examinadas, 1.827 verificadas (400 vigentes, 1.295 corregidas y 132 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.248 sin revisar de contenido. Hay 1.458 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 311 — 27 de octubre
+
+IDs 1871–1875 revisados individualmente con fuentes primarias oficiales y cotejo de academia en Drive/temarios A1-A2. Tres se corrigieron, una se confirmó vigente y una se conserva como histórica; los originales completos están en `cambios-lote-311.json`. Acumulado: 1.875 examinadas; 1.827 verificadas (400 vigentes, 1.295 corregidas y 132 históricas); 48 pendientes (24 de fuente, 24 de ambigüedad), 1.458 con cambios y 10.248 sin revisión individual.
+
+- La 1871 corrige la frase “más de 50”: la obligación general de plan de igualdad alcanza a empresas con 50 o más personas trabajadoras; el convenio colectivo puede imponerla también en otros supuestos. Cotejo Drive: bloque 06, políticas de igualdad.
+- La 1872 sustituye 1,19 por el dato definitivo INE de 2022: 1,16 hijos por mujer. Cotejo Drive: bloque 06, tendencias demográficas; dato comprobado en la serie INEbase revisada.
+- La 1873 conserva la respuesta tras verificarla con INE: población activa dividida por población de 16 y más años. Se diferencia de tasas de empleo y paro. Cotejo Drive: bloque 06, mercado de trabajo y magnitudes.
+- La 1874 precisa que Programadores informáticos encabezaron las categorías comparadas por contratación de especialistas TIC en enero-agosto de 2021 (23,5 %), y queda marcada histórica. No se presenta ese ranking del informe ONTSI como dato actual; la academia cubre empleo tecnológico, pero no se encontró el dato puntual en el documento cotejado.
+- La 1875 acota la excepción de comunicaciones comerciales a clientes: relación contractual previa, datos obtenidos lícitamente, productos/servicios propios similares y oposición sencilla y gratuita. Identificarse como remitente o enviar por SMS no basta. Cotejo Drive: bloque 03 de sociedad de la información y Tema 78 de comercio electrónico.
+
+Cotejo curricular con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1871 A1-16/A2-I-5; 1872 A1-16; 1873 A1-17; 1874 A1-19; 1875 A1-22/A2-I-6.
+
+Fuentes primarias: [LO 3/2007 consolidada, art. 45](https://boe.es/buscar/act.php?id=BOE-A-2007-6115&lang=es&p=20240802&tn=1#a45); [INEbase, fecundidad 2022 (serie definitiva)](https://www.ine.es/consul/serie.do?c=2&d=true&s=IDB72160); [INE, tasa de actividad](https://www.ine.es/DEFIne/es/concepto.htm?c=4459); [ONTSI, informe de empleo tecnológico 2021](https://www.ontsi.es/es/publicaciones/empleo-tecnologico-navegando-indicadores-espana-ue) y [Red.es, nota con el desglose de contratos](https://www.red.es/sites/redes/files/media/documents/3.%20NP_ONTSI_Red_es_Informe%20Empleo%20Tecnol%C3%B3gico.pdf); [Ley 34/2002 consolidada, art. 21](https://www.boe.es/eli/es/l/2002/07/11/34/con).
+
+Ejecutados `node revision/lote-311.cjs`, `node revision/academia-lote-311.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario 12.123 preguntas, errores 0; 1.875 examinadas y 10.248 sin revisión individual.
 
 ## Lote 310 — 27 de octubre
 
