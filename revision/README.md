@@ -1,8 +1,18 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 265 (IDs 1641–1645). Acumulado: 1.645 preguntas examinadas, 1.593 verificadas (378 vigentes, 1.090 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.478 sin revisar de contenido. Hay 1.246 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 266 (IDs 1646–1650). Acumulado: 1.650 preguntas examinadas, 1.598 verificadas (378 vigentes, 1.095 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.473 sin revisar de contenido. Hay 1.251 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 266 — 27 de octubre
+
+IDs 1646–1650 revisados individualmente; cinco corregidos. Acumulado: 1.650 examinadas; 1.598 verificadas (378 vigentes, 1.095 corregidas y 125 históricas), 52 pendientes (28 de fuente y 24 de ambigüedad); 1.251 preguntas con cambios de contenido. Quedan 10.473 sin revisar; siguiente ID: 1.651. Originales íntegros conservados en `cambios-lote-266.json`.
+
+La 1646 se contrasta con la disposición adicional novena de la LOPDGDD y se reescribe incluyendo todas las entidades habilitadas, la limitación de tiempo/alcance y las medidas de seguridad proporcionales al riesgo. La 1647 repara un literal corrupto y distingue la ruta activa `$INFORMIXDIR/etc/$ONCONFIG` del fichero por defecto cuando no se establece ONCONFIG. La 1648 acota la comparación RAID al rendimiento secuencial sin redundancia: para cargas aleatorias/IOPS RAID 10 puede ser preferible. La 1649 explicita el cálculo idealizado de capacidad por cilindro y excluye sobrecargas no especificadas. La 1650 elimina una afirmación universal de rendimiento y pregunta por el mayor coste inicial típico de una controladora hardware dedicada frente a RAID por software sobre hardware ya disponible.
+
+Cotejo con Drive: ITIC Academy, bloque 8 Protección de Datos (LOPDGDD, seguridad y brechas); bloque 29 Bases de Datos, SQL y Modelado de Datos (Informix/SGBD); bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización (RAID, rendimiento, geometría y coste de controladoras). Correspondencias contrastadas individualmente con `temario-oficial.json` y los anexos de BOE-A-2025-25938/BOE-A-2025-26262: 1646 A1-27/A1-47/A1-48/A2-I-7/A2-II-13; 1647 A1-60/A2-II-2; 1648–1649 A1-56/A2-IV-5; 1650 A1-41/A1-56/A2-II-1/A2-IV-5. La academia orienta el encaje y no sustituye las fuentes primarias.
+
+Fuentes primarias/técnicas: BOE, Ley Orgánica 3/2018, disposición adicional novena; IBM Informix Documentation y IBM Redbooks para ONCONFIG; Seagate RAID Manager para rendimiento secuencial de RAID 0 y cargas IOPS de RAID 10; IBM Redbooks para geometría de disco y comparación de coste de RAID hardware/software. Ejecutados `node revision/lote-266.cjs`, `node revision/academia-lote-266.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas, 1.650 registros, cero errores estructurales y 10.473 preguntas aún sin revisar.
 
 ## Lote 265 — 27 de octubre
 
