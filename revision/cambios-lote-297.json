@@ -1,0 +1,342 @@
+{
+  "fecha": "2026-10-27",
+  "alcance": "IDs 1801–1805; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1801,
+      "original": {
+        "id": 1801,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un SGBD, a nivel físico, ¿cómo denominamos la unidad mínima de acceso?",
+        "opciones": [
+          "Tabla",
+          "Registro",
+          "Fila",
+          "Página"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1801,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Microsoft SQL Server, ¿cuál es la unidad fundamental de almacenamiento de los datos y de las operaciones de E/S de disco?",
+        "opciones": [
+          "La tabla.",
+          "El registro de transacciones.",
+          "La fila.",
+          "La página."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Cotejo curricular de almacenamiento y arquitectura de bases de datos; el término página se concreta para SQL Server con Microsoft Learn, sin generalizar la nomenclatura a todos los SGBD. Cotejo curricular: ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; apartados de arquitectura de almacenamiento, bloques/páginas y organización física de datos en SGBD Correspondencia A1-63, A2-II-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-63"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; apartados de arquitectura de almacenamiento, bloques/páginas y organización física de datos en SGBD",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; apartados de arquitectura de almacenamiento, bloques/páginas y organización física de datos en SGBD Correspondencia A1-63, A2-II-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+        },
+        "etiquetas": [
+          "SQL Server",
+          "SGBD",
+          "página",
+          "unidad de almacenamiento",
+          "E/S física"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/sql/relational-databases/pages-and-extents-architecture-guide?view=sql-server-ver16",
+              "referencia": "Microsoft Learn, Page and extent architecture guide: la página es la unidad fundamental de almacenamiento de datos de SQL Server y las operaciones de E/S de disco se efectúan a nivel de página."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; apartados de arquitectura de almacenamiento, bloques/páginas y organización física de datos en SGBD; material formativo de Drive cotejado para cobertura curricular."
+            }
+          ],
+          "observaciones": "Cotejo curricular de almacenamiento y arquitectura de bases de datos; el término página se concreta para SQL Server con Microsoft Learn, sin generalizar la nomenclatura a todos los SGBD. Cotejo curricular: ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; apartados de arquitectura de almacenamiento, bloques/páginas y organización física de datos en SGBD Correspondencia A1-63, A2-II-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1802,
+      "original": {
+        "id": 1802,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto a la búsqueda en un árbol binario, el peor de los casos para el algoritmo T, “búsqueda e inserción en un árbol”, se da cuando las claves se han introducido en el árbol de forma:",
+        "opciones": [
+          "Aleatoria o al azar, que produciría un árbol degenerado que especificaría esencialmente una búsqueda binaria óptima.",
+          "Aleatoria o al azar, que produciría un árbol degenerado que especificaría esencialmente una búsqueda secuencial.",
+          "Creciente u ordenada, que produciría un árbol degenerado que especificaría esencialmente una búsqueda binaria óptima.",
+          "Creciente u ordenada, que produciría un árbol degenerado que especificaría esencialmente una búsqueda secuencial."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1802,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un árbol binario de búsqueda sin autoequilibrado, ¿qué orden de inserción puede producir el peor caso, una cadena de nodos con búsqueda O(n)?",
+        "opciones": [
+          "Un orden aleatorio siempre produce una cadena y búsquedas O(log n).",
+          "Insertar las claves en orden creciente o decreciente puede producir un árbol degenerado y búsquedas lineales.",
+          "Insertar las claves en orden creciente produce siempre un árbol perfectamente equilibrado.",
+          "El orden de inserción no afecta a la altura ni al coste de búsqueda."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Cotejo con la sección de árboles del bloque de IA/estructuras de datos; el análisis del peor caso se contrasta de forma independiente con material de Cornell y Princeton. Cotejo curricular: ITIC Academy, bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1 (actualizado 19-10-2026); tema A2-D5, sección de estructuras de datos, árboles binarios, búsqueda e inserción Correspondencia A2-III-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.",
+        "clasificacion": {
+          "A1": [],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1 (actualizado 19-10-2026); tema A2-D5, sección de estructuras de datos, árboles binarios, búsqueda e inserción",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1 (actualizado 19-10-2026); tema A2-D5, sección de estructuras de datos, árboles binarios, búsqueda e inserción Correspondencia A2-III-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+        },
+        "etiquetas": [
+          "árbol binario de búsqueda",
+          "inserción ordenada",
+          "árbol degenerado",
+          "complejidad O(n)",
+          "búsqueda secuencial"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://courses.cis.cornell.edu/courses/cs2110/2026sp/lectures/lec17/",
+              "referencia": "Cornell University, CS 2110, Binary Search Trees: insertar claves en orden puede degenerar el BST en una estructura con un nodo por nivel, con altura lineal y sin mejora asintótica frente a una lista."
+            },
+            {
+              "url": "https://algs4.cs.princeton.edu/32bst/",
+              "referencia": "Princeton University, Algorithms, sección Binary Search Trees: el coste de búsqueda e inserción es proporcional a la altura del árbol; sin equilibrio, la altura puede llegar a N."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1 (actualizado 19-10-2026); tema A2-D5, sección de estructuras de datos, árboles binarios, búsqueda e inserción; material formativo de Drive cotejado para cobertura curricular."
+            }
+          ],
+          "observaciones": "Cotejo con la sección de árboles del bloque de IA/estructuras de datos; el análisis del peor caso se contrasta de forma independiente con material de Cornell y Princeton. Cotejo curricular: ITIC Academy, bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1 (actualizado 19-10-2026); tema A2-D5, sección de estructuras de datos, árboles binarios, búsqueda e inserción Correspondencia A2-III-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1803,
+      "original": {
+        "id": 1803,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cúal de las siguientes nomenclaturas pedagógicas se corresponde con la siguiente definición? Provisión de materiales didácticos para la interiorización previa por parte del estudiante, para a continuación, cerrar el circulo de la enseñanza con la resolución de dudas sobre los materiales y la puesta en práctica de las enseñanzas.",
+        "opciones": [
+          "Lesson Learn.",
+          "Loops Learning.",
+          "Flipped Classroom.",
+          "Circular Learning."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1803,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué metodología proporciona materiales para que el alumnado conozca los contenidos antes de la sesión y dedica el tiempo de aula a resolver dudas y aplicarlos?",
+        "opciones": [
+          "La lección magistral tradicional.",
+          "La evaluación sumativa final.",
+          "El aula invertida (flipped classroom).",
+          "El aprendizaje exclusivamente síncrono."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Cotejo curricular de e-learning y métodos/materiales de formación; la definición de aula invertida se verifica con centros universitarios de docencia. Cotejo curricular: ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, versión 2026.1; apartados de e-learning, metodologías didácticas y diseño de actividades antes/durante la sesión Correspondencia A1-73, A2-III-6 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-73"
+          ],
+          "A2": [
+            "A2-III-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, versión 2026.1; apartados de e-learning, metodologías didácticas y diseño de actividades antes/durante la sesión",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, versión 2026.1; apartados de e-learning, metodologías didácticas y diseño de actividades antes/durante la sesión Correspondencia A1-73, A2-III-6 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+        },
+        "etiquetas": [
+          "e-learning",
+          "aula invertida",
+          "flipped classroom",
+          "aprendizaje activo",
+          "material previo"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://citt.it.ufl.edu/resources/course-development/student-engagement/adopting-active-learning-approaches/flipping-a-class/",
+              "referencia": "University of Florida, Center for Instructional Technology and Training, Flipping a Class: el alumnado estudia materiales antes de clase y el tiempo presencial se dedica a aplicar, aclarar y practicar contenidos."
+            },
+            {
+              "url": "https://www.queensu.ca/ctl/resources/instructors/instructional-strategies/interactive-lecturing/flipping-classroom",
+              "referencia": "Queen’s University Centre for Teaching and Learning, Flipping the Classroom: prepara contenidos antes de clase y reserva el aula para actividades activas donde se aclaran y aplican."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, versión 2026.1; apartados de e-learning, metodologías didácticas y diseño de actividades antes/durante la sesión; material formativo de Drive cotejado para cobertura curricular."
+            }
+          ],
+          "observaciones": "Cotejo curricular de e-learning y métodos/materiales de formación; la definición de aula invertida se verifica con centros universitarios de docencia. Cotejo curricular: ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, versión 2026.1; apartados de e-learning, metodologías didácticas y diseño de actividades antes/durante la sesión Correspondencia A1-73, A2-III-6 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1804,
+      "original": {
+        "id": 1804,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué es IPAM en Windows Server?",
+        "opciones": [
+          "IP Address Management",
+          "Internet Proccess Advanced Management",
+          "IP Access Management",
+          "Ninguna de las anteriores"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1804,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué es IPAM en Windows Server?",
+        "opciones": [
+          "IP Address Management",
+          "Internet Proccess Advanced Management",
+          "IP Access Management",
+          "Ninguna de las anteriores"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Cotejo de administración de Windows Server y servicios de red; la expansión y alcance del IPAM se confirman en Microsoft Learn. Cotejo curricular: ITIC Academy, bloque 27, Sistemas operativos, versión 2026.1 (14-08-2026); administración de Windows Server, servicios de infraestructura de red, DHCP/DNS y gestión de direcciones IP Correspondencia A1-61, A2-II-2 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-61"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 27, Sistemas operativos, versión 2026.1 (14-08-2026); administración de Windows Server, servicios de infraestructura de red, DHCP/DNS y gestión de direcciones IP",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 27, Sistemas operativos, versión 2026.1 (14-08-2026); administración de Windows Server, servicios de infraestructura de red, DHCP/DNS y gestión de direcciones IP Correspondencia A1-61, A2-II-2 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+        },
+        "etiquetas": [
+          "Windows Server",
+          "IPAM",
+          "IP Address Management",
+          "direcciones IP",
+          "administración de redes"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top",
+              "referencia": "Microsoft Learn, IP Address Management (IPAM): expansión oficial del acrónimo y descripción de la suite integrada para planificar, desplegar, administrar y monitorizar la infraestructura de direcciones IP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 27, Sistemas operativos, versión 2026.1 (14-08-2026); administración de Windows Server, servicios de infraestructura de red, DHCP/DNS y gestión de direcciones IP; material formativo de Drive cotejado para cobertura curricular."
+            }
+          ],
+          "observaciones": "Cotejo de administración de Windows Server y servicios de red; la expansión y alcance del IPAM se confirman en Microsoft Learn. Cotejo curricular: ITIC Academy, bloque 27, Sistemas operativos, versión 2026.1 (14-08-2026); administración de Windows Server, servicios de infraestructura de red, DHCP/DNS y gestión de direcciones IP Correspondencia A1-61, A2-II-2 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1805,
+      "original": {
+        "id": 1805,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "De entre las siguientes opciones en el ámbito del almacenamiento en los sistemas de información, señale la verdadera:",
+        "opciones": [
+          "SAS es una interfaz de transferencia de datos en serie",
+          "SATA es una Interfaz de transferencia de datos en paralelo",
+          "Los dispositivos SAS se identifican por el World Wide Web Name (WWWN)",
+          "El conector SATA posee 68 pines"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1805,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál afirmación es correcta sobre las interfaces de almacenamiento SAS y SATA?",
+        "opciones": [
+          "SAS (Serial Attached SCSI) es una interfaz de transferencia de datos en serie.",
+          "SATA (Serial ATA) es una interfaz de transferencia de datos en paralelo.",
+          "SAS identifica los dispositivos mediante un «World Wide Web Name» (WWWN).",
+          "El conector de datos SATA tiene 68 pines."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Cotejo curricular de interfaces y almacenamiento; las diferencias técnicas entre SAS/SATA y WWN se comprueban en T10, Seagate y Oracle. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; apartado 7, interfaces y buses de almacenamiento SATA/SAS y conectores de unidades Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; apartado 7, interfaces y buses de almacenamiento SATA/SAS y conectores de unidades",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; apartado 7, interfaces y buses de almacenamiento SATA/SAS y conectores de unidades Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+        },
+        "etiquetas": [
+          "SAS",
+          "Serial Attached SCSI",
+          "SATA",
+          "Serial ATA",
+          "WWN",
+          "almacenamiento",
+          "interfaz serie"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.t10.org/ftp/t10/document.04/04-331r0.pdf",
+              "referencia": "T10, SAS-1.1 PHY Definitions and Acronyms: define Serial Attached SCSI y Serial ATA como estándares/protocolos distintos dentro del entorno de almacenamiento."
+            },
+            {
+              "url": "https://www.seagate.com/support/kb/serial-ata-basics-193811en/",
+              "referencia": "Seagate, Serial ATA Basics: describe los conectores SATA separados de datos y alimentación; el cable de datos serial ATA no es una interfaz paralela ni un conector de 68 contactos."
+            },
+            {
+              "url": "https://docs.oracle.com/cd/E19508-01/E54520/appa.html",
+              "referencia": "Oracle, SAS single path configuration: muestra direcciones WWN (World Wide Name) para puertos SAS y su uso para identificar puertos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; apartado 7, interfaces y buses de almacenamiento SATA/SAS y conectores de unidades; material formativo de Drive cotejado para cobertura curricular."
+            }
+          ],
+          "observaciones": "Cotejo curricular de interfaces y almacenamiento; las diferencias técnicas entre SAS/SATA y WWN se comprueban en T10, Seagate y Oracle. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; apartado 7, interfaces y buses de almacenamiento SATA/SAS y conectores de unidades Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+        }
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 296 (IDs 1796–1800); se resolvieron además seis pendientes antiguos. Acumulado: 1.800 preguntas examinadas, 1.752 verificadas (392 vigentes, 1.231 corregidas y 129 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.323 sin revisar de contenido. Hay 1.391 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 297 (IDs 1801–1805); se resolvieron además seis pendientes antiguos. Acumulado: 1.805 preguntas examinadas, 1.757 verificadas (393 vigentes, 1.235 corregidas y 129 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.318 sin revisar de contenido. Hay 1.395 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -14,6 +14,22 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 - La 52 se corrigió: la secuencia de siete pasos y su paso final (Monitor) pertenecen al RMF de NIST SP 800-37 Rev. 2. La guía CCN-STIC 801 del catálogo oficial se titula «ENS. Responsabilidades y Funciones», así que se retiró la atribución original no sustentada. No se fuerza equivalencia de academia.
 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
+
+## Lote 297 — 27 de octubre
+
+IDs 1801–1805 revisados individualmente con documentación técnica primaria, estándares y cotejo curricular. Cuatro se corrigieron y una (IPAM) conserva su contenido y clave tras verificarse. Acumulado: 1.805 examinadas; 1.757 verificadas (393 vigentes, 1.235 corregidas y 129 históricas); 48 pendientes (24 de fuente y 24 de ambigüedad); 1.395 preguntas con cambios de contenido; 10.318 aún sin revisión individual. Siguiente ID: 1.806. Los originales completos permanecen en `cambios-lote-297.json`.
+
+- La 1801 se acota a Microsoft SQL Server: la página es su unidad fundamental de almacenamiento y el nivel al que el motor realiza E/S en los archivos de datos. Se evita atribuir esa nomenclatura sin matices a todos los SGBD.
+- La 1802 corrige el enunciado redundante y los distractores contradictorios: en un BST sin autoequilibrado, insertar claves en orden puede degenerar el árbol en una cadena y llevar la búsqueda al peor caso lineal O(n).
+- La 1803 corrige «Cúal» y el círculo de enseñanza mal descrito; define aula invertida por el trabajo previo del estudiante y el uso de la clase para resolver dudas, aplicar y practicar.
+- La 1804 mantiene IP Address Management (IPAM), expansión oficial de Microsoft, y precisa su función en Windows Server para planificar, administrar y supervisar infraestructura de direcciones IP.
+- La 1805 corrige varios errores técnicos: tanto SAS como SATA son seriales; los puertos SAS usan dirección SAS/WWN (World Wide Name), no WWWN, y el conector SATA de datos no tiene 68 pines.
+
+Cotejo de academia en Drive: bloque 29 para almacenamiento/páginas de base de datos; bloque 32 para árboles y estructuras de datos; bloque 33 para e-learning y aula invertida; bloque 27 para administración de Windows Server; bloque 26 para interfaces y buses de almacenamiento. Correspondencias contrastadas con `temario-oficial.json` y convocatorias [A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1801 A1-63/A2-II-5; 1802 A2-III-5 (sin tema A1 directo); 1803 A1-73/A2-III-6; 1804 A1-61/A2-II-2; 1805 A1-56/A2-IV-5. Academia coteja cobertura y no sustituye las fuentes técnicas.
+
+Fuentes: [Microsoft Learn, Page and extent architecture guide](https://learn.microsoft.com/en-us/sql/relational-databases/pages-and-extents-architecture-guide?view=sql-server-ver16); [Cornell University, Binary Search Trees](https://courses.cis.cornell.edu/courses/cs2110/2026sp/lectures/lec17/) y [Princeton Algorithms, BST](https://algs4.cs.princeton.edu/32bst/); [University of Florida, Flipping a Class](https://citt.it.ufl.edu/resources/course-development/student-engagement/adopting-active-learning-approaches/flipping-a-class/) y [Queen’s University, Flipping the Classroom](https://www.queensu.ca/ctl/resources/instructors/instructional-strategies/interactive-lecturing/flipping-classroom); [Microsoft Learn, IP Address Management](https://learn.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top); [T10, SAS-1.1 acronym definitions](https://www.t10.org/ftp/t10/document.04/04-331r0.pdf), [Seagate, Serial ATA Basics](https://www.seagate.com/support/kb/serial-ata-basics-193811en/) y [Oracle, SAS WWN examples](https://docs.oracle.com/cd/E19508-01/E54520/appa.html).
+
+Ejecutados `node revision/lote-297.cjs`, `node revision/academia-lote-297.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario de 12.123 preguntas, errores 0; 1.805 examinadas, 10.318 sin revisión individual de contenido. Los 48 pendientes anteriores continúan sin certificarse.
 
 ## Lote 296 — 27 de octubre
 
