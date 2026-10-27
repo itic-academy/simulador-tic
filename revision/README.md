@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 282 (IDs 1726–1730); se resolvieron además seis pendientes antiguos. Acumulado: 1.730 preguntas examinadas, 1.684 verificadas (385 vigentes, 1.173 corregidas y 126 históricas) y 46 pendientes (23 de fuente y 23 de ambigüedad); quedan 10.393 sin revisar de contenido. Hay 1.330 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 283 (IDs 1731–1735); se resolvieron además seis pendientes antiguos. Acumulado: 1.735 preguntas examinadas, 1.689 verificadas (385 vigentes, 1.178 corregidas y 126 históricas) y 46 pendientes (23 de fuente y 23 de ambigüedad); quedan 10.388 sin revisar de contenido. Hay 1.335 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -16,6 +16,20 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 283 — 27 de octubre
+
+IDs 1731–1735 revisados individualmente y contrastados con fuentes técnicas primarias; cinco correcciones. Acumulado: 1.735 examinadas; 1.689 verificadas (385 vigentes, 1.178 corregidas y 126 históricas); 46 pendientes (23 de fuente y 23 de ambigüedad); 1.335 cambios de contenido; 10.388 aún sin revisar. Siguiente ID: 1.736. Se conservaron los originales en `cambios-lote-283.json`.
+
+- La 1731 fija que la comparación es de velocidades máximas nominales de señalización y no de caudal real: USB 2.0 (480 Mb/s), FireWire 800 (800 Mb/s), USB 3.0 (5 Gb/s), Thunderbolt original (10 Gb/s) y Thunderbolt 2 (20 Gb/s). Se evita generalizar “Thunderbolt” a toda la familia posterior.
+- La 1732 define RAID 10 como striping sobre parejas espejadas (“stripe of mirrors”), distinto de RAID 0+1 (“mirror of stripes”). Se matiza que la tolerancia depende de qué discos fallen.
+- La 1733 distingue los nombres persistentes WWNN/WWPN del FC_ID de 24 bits asignado dinámicamente por la fabric.
+- La 1734 elimina afirmaciones universales sobre E/S y eficiencia de CPU: el efecto directo comprobable es reducir el espacio físico para datos compresibles; otros efectos dependen de implementación y carga, y puede haber sobrecoste.
+- La 1735 delimita la pregunta a Windows Server Backup/VSS copy (`-vssCopy`): copia los archivos seleccionados sin actualizar su historial, para no interferir con secuencias independientes incrementales/diferenciales.
+
+Cotejo Drive: ITIC Academy, bloque 26, versión 2026.1 (31-08-2026), §§ 2.1 (conectividad; no incluye la comparación histórica exacta de tasas), 7.4 (compresión), 8.1 (RAID), 8.2 (Fibre Channel, WWN/WWPN y FCID) y bloque 9.2 (copia completa/incremental/diferencial; no trata explícitamente `wbadmin -vssCopy`). Los contenidos específicos no cubiertos se contrastan con USB-IF, IEEE, Intel, IBM, IETF y Microsoft Learn, sin atribuirlos al material de academia. Correspondencias comprobadas en `temario-oficial.json` frente a las convocatorias A1 y A2: A1-54/A2-IV-7 (1731); A1-56/A2-IV-5 (1732–1734); A1-56/A2-IV-3 (1735), con A2-III-5 en el ámbito de copias/restauración según el programa oficial. La academia sirve de cotejo temático, no de autoridad técnica o normativa.
+
+Ejecutados `node revision/lote-283.cjs`, `node revision/academia-lote-283.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas estructuralmente válidas, 1.735 registros de revisión, cero errores y 10.388 preguntas aún sin revisar de contenido.
 
 ## Lote 282 — 27 de octubre
 
