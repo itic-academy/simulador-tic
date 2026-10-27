@@ -1,0 +1,367 @@
+{
+  "fecha": "2026-10-27",
+  "alcance": "IDs 1711–1715; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1711,
+      "original": {
+        "id": 1711,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La diferencia entre iSCSI (Internet Small Computer System Interface) y FCoE (Fibre Channel over Ethernet) es que:",
+        "opciones": [
+          "iSCSI encapsula el tráfico en tramas Ethernet, FCoE en tramas TCP/IP.",
+          "iSCSI encapsula el tráfico en tramas TCP/IP, FCoE en tramas Ethernet.",
+          "iSCSI es un estándar más reciente, ambas encapsulan en tramas TCP/IP.",
+          "Son nombres comerciales, ambas encapsulan en tramas Ethernet."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1711,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué describe correctamente el transporte de iSCSI y de FCoE?",
+        "opciones": [
+          "iSCSI transporta SCSI sobre TCP/IP; FCoE encapsula tramas Fibre Channel en Ethernet.",
+          "iSCSI encapsula tramas Ethernet dentro de Fibre Channel; FCoE transporta SCSI directamente sobre TCP.",
+          "Ambos son nombres distintos para SCSI sobre TCP/IP.",
+          "FCoE es una variante de iSCSI que sustituye TCP por UDP."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Cotejado con los epígrafes de Fibre Channel, FCoE y almacenamiento IP del bloque 26. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 8.2–8.3: Fibre Channel over Ethernet e iSCSI (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 8.2–8.3: Fibre Channel over Ethernet e iSCSI (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 8.2–8.3: Fibre Channel over Ethernet e iSCSI (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        },
+        "etiquetas": [
+          "iSCSI",
+          "FCoE",
+          "TCP",
+          "Ethernet",
+          "Fibre Channel"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc7143.html",
+              "referencia": "IETF RFC 7143, iSCSI (Consolidated): define iSCSI como protocolo para transporte de SCSI sobre conexiones TCP."
+            },
+            {
+              "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/fcoe/configuration/guide/b_Cisco_NX-OS_FCoE_Configuration_Guide_6x/configuring_fcoe.html",
+              "referencia": "Cisco NX-OS FCoE Configuration Guide: FCoE encapsula tramas Fibre Channel dentro de tramas Ethernet."
+            },
+            {
+              "url": "https://fibrechannel.org/wp-content/uploads/2015/10/FCIA_Sol_Guide_Fall09_Finalv1.pdf",
+              "referencia": "Fibre Channel Industry Association, Fibre Channel Solutions Guide: contrasta el transporte iSCSI sobre TCP/IP con FCoE sobre Ethernet."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 8.2–8.3: Fibre Channel over Ethernet e iSCSI (A1-56/A2-IV-5); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con los epígrafes de Fibre Channel, FCoE y almacenamiento IP del bloque 26. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 8.2–8.3: Fibre Channel over Ethernet e iSCSI (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1712,
+      "original": {
+        "id": 1712,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes afirmaciones relativa a los sistemas de almacenamiento y métodos de acceso NO es cierta?",
+        "opciones": [
+          "El índice basado en árbol B presenta mayores densidades que el basado en árbol B*",
+          "Un fichero de datos puede tener varios índices, pero como mucho uno puede ser denso",
+          "Una clave de búsqueda no tiene por qué ser unívoca",
+          "Los niveles n-1 (con n > 1) de un índice multinivel (no arbóreo) son índices no-densos que indizan el nivel n"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1712,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la terminología habitual de índices de bases de datos, ¿qué caracteriza a un índice denso?",
+        "opciones": [
+          "Contiene una entrada para cada valor de clave de búsqueda presente en el fichero.",
+          "Contiene únicamente una entrada por bloque de datos y ninguna por valor de clave.",
+          "Contiene solo entradas para los valores mínimo y máximo de la clave.",
+          "Solo puede existir un índice denso por fichero."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Cotejado con el apartado de índices. La reformulación evita que la terminología variable de índices densos/dispersos convierta varias opciones del original en falsas. Cotejo curricular: ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); apartado 8.5: índices y estructuras de acceso a datos (A1-63/A1-64/A2-III-4). Correspondencia A1-63, A1-64, A2-III-4 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-63",
+            "A1-64"
+          ],
+          "A2": [
+            "A2-III-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); apartado 8.5: índices y estructuras de acceso a datos (A1-63/A1-64/A2-III-4)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); apartado 8.5: índices y estructuras de acceso a datos (A1-63/A1-64/A2-III-4). Correspondencia A1-63, A1-64, A2-III-4 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        },
+        "etiquetas": [
+          "índices",
+          "bases de datos",
+          "índice denso",
+          "índice disperso"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.cs.dartmouth.edu/~cs61/notes12.html",
+              "referencia": "Dartmouth CS 61, Database Systems, notas de persistencia: define índice denso como el que tiene una entrada por cada valor de clave de búsqueda del fichero y distingue el índice disperso."
+            },
+            {
+              "url": "https://www.yale.db-book.com/",
+              "referencia": "Sitio oficial de Database System Concepts, de Silberschatz, Korth y Sudarshan, texto de referencia sobre índices y estructuras de almacenamiento de bases de datos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); apartado 8.5: índices y estructuras de acceso a datos (A1-63/A1-64/A2-III-4); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con el apartado de índices. La reformulación evita que la terminología variable de índices densos/dispersos convierta varias opciones del original en falsas. Cotejo curricular: ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); apartado 8.5: índices y estructuras de acceso a datos (A1-63/A1-64/A2-III-4). Correspondencia A1-63, A1-64, A2-III-4 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1713,
+      "original": {
+        "id": 1713,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En los discos ópticos (CD-ROM, WROM etc) la densidad de grabación es:",
+        "opciones": [
+          "Constante",
+          "Variable, dependiendo de la distancia al centro",
+          "Depende del tipo",
+          "Igual que en los discos magnéticos"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1713,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un CD-ROM conforme al sistema de pista espiral y marcas de longitud normalizada, leído a velocidad lineal constante (CLV), ¿cómo es la densidad lineal de bits a lo largo de la pista?",
+        "opciones": [
+          "Aproximadamente constante a lo largo de la pista.",
+          "Aumenta necesariamente con el radio porque el disco gira a velocidad angular constante.",
+          "Disminuye necesariamente con el radio al desplazarse el cabezal hacia el borde.",
+          "Es necesariamente igual a la de cualquier disco magnético."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Cotejado con soportes ópticos. El alcance del enunciado se limita al CD-ROM CLV y se respalda en ECMA-130 y la investigación académica citada. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.3: medios ópticos y dispositivos para tratamiento multimedia (A1-56/A2-II-1/A2-IV-5). Correspondencia A1-56, A2-II-1, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-II-1",
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.3: medios ópticos y dispositivos para tratamiento multimedia (A1-56/A2-II-1/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.3: medios ópticos y dispositivos para tratamiento multimedia (A1-56/A2-II-1/A2-IV-5). Correspondencia A1-56, A2-II-1, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        },
+        "etiquetas": [
+          "CD-ROM",
+          "CLV",
+          "densidad lineal",
+          "discos ópticos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://ecma-international.org/publications-and-standards/standards/ecma-130/",
+              "referencia": "ECMA-130, Data interchange on read-only 120 mm optical data disks (CD-ROM), 2.ª edición: especifica geometría de pista y características de grabación CD-ROM."
+            },
+            {
+              "url": "https://dev.ecma-international.org/wp-content/uploads/ECMA-130_2nd_edition_june_1996.pdf",
+              "referencia": "Texto completo ECMA-130; estándar de referencia para CD-ROM."
+            },
+            {
+              "url": "https://research.tue.nl/files/1604466/522301.pdf",
+              "referencia": "Tesis doctoral de Eindhoven University of Technology, Optimization of the CD-ROM system towards higher data rates: explica que marcas de igual longitud a radios distintos implican densidad lineal y velocidad CLV constantes a lo largo de la espiral del CD."
+            },
+            {
+              "url": "https://ecma-international.org/wp-content/uploads/ECMA-395_1st_edition_december_2010.pdf",
+              "referencia": "ECMA-395 define CLV (constant linear velocity) como velocidad tangencial de paso de las marcas/pits y lands por el punto láser."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.3: medios ópticos y dispositivos para tratamiento multimedia (A1-56/A2-II-1/A2-IV-5); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con soportes ópticos. El alcance del enunciado se limita al CD-ROM CLV y se respalda en ECMA-130 y la investigación académica citada. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.3: medios ópticos y dispositivos para tratamiento multimedia (A1-56/A2-II-1/A2-IV-5). Correspondencia A1-56, A2-II-1, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1714,
+      "original": {
+        "id": 1714,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El protocolo que permite llevar peticiones para bloques de dispositivos SCSI sobre una red IP es:",
+        "opciones": [
+          "uSCSI",
+          "FCP",
+          "iSCSI",
+          "FCIP"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1714,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué protocolo transporta comandos y datos SCSI mediante PDUs sobre conexiones TCP/IP, permitiendo acceder a dispositivos de bloques a través de una red IP?",
+        "opciones": [
+          "uSCSI.",
+          "Fibre Channel Protocol (FCP).",
+          "iSCSI.",
+          "FCIP."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Cotejado con iSCSI. RFC 7143 es la referencia técnica vigente y actualiza RFC 3720. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.3: iSCSI y protocolos de almacenamiento sobre IP (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.3: iSCSI y protocolos de almacenamiento sobre IP (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.3: iSCSI y protocolos de almacenamiento sobre IP (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        },
+        "etiquetas": [
+          "iSCSI",
+          "SCSI",
+          "TCP/IP",
+          "LUN",
+          "RFC 7143"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc7143.html",
+              "referencia": "IETF RFC 7143, iSCSI (Consolidated): especificación vigente de las PDUs iSCSI sobre conexiones TCP; actualiza RFC 3720."
+            },
+            {
+              "url": "https://datatracker.ietf.org/doc/html/rfc7143",
+              "referencia": "Registro IETF de RFC 7143 y su estado."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.3: iSCSI y protocolos de almacenamiento sobre IP (A1-56/A2-IV-5); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con iSCSI. RFC 7143 es la referencia técnica vigente y actualiza RFC 3720. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.3: iSCSI y protocolos de almacenamiento sobre IP (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1715,
+      "original": {
+        "id": 1715,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes formas de virtualización de almacenamiento NO es un método de acceso a nivel de bloque?",
+        "opciones": [
+          "NAS.",
+          "SAN.",
+          "LVD.",
+          "RAID."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1715,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué arquitectura ofrece normalmente recursos a nivel de fichero por la red, sin exponer al cliente una LUN como dispositivo de bloques?",
+        "opciones": [
+          "NAS que exporta recursos mediante NFS o SMB.",
+          "SAN Fibre Channel que presenta una LUN al host.",
+          "Almacenamiento iSCSI que presenta una LUN al iniciador.",
+          "RAID que crea un volumen lógico de bloques a partir de discos."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Cotejado con el acceso a nivel de fichero y de bloque. La correspondencia temática no se usa como fuente para determinar la clave. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.4: SAN/NAS y virtualización del almacenamiento (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-56",
+            "A1-110"
+          ],
+          "A2": [
+            "A2-IV-5",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.4: SAN/NAS y virtualización del almacenamiento (A1-56/A1-110/A2-IV-5/A2-IV-8)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.4: SAN/NAS y virtualización del almacenamiento (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        },
+        "etiquetas": [
+          "NAS",
+          "SAN",
+          "acceso a ficheros",
+          "acceso a bloques",
+          "NFS",
+          "SMB",
+          "iSCSI",
+          "RAID"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_virtualization/3.6/html/technical_reference/types_of_storage_backing_storage_domains",
+              "referencia": "Red Hat Virtualization Technical Reference: diferencia almacenamiento basado en ficheros (NFS y sistemas POSIX; servido por NAS) y basado en bloques (LUN conectada por iSCSI, FCoE o SAS)."
+            },
+            {
+              "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_file_systems/overview-of-available-file-systems",
+              "referencia": "Red Hat Enterprise Linux 10, Overview of available file systems: NFS y SMB ofrecen acceso de red a ficheros; los clientes de un sistema de ficheros de red no acceden directamente al almacenamiento de bloques subyacente."
+            },
+            {
+              "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-libstoragemgmt-terminology",
+              "referencia": "Red Hat Storage Administration Guide: una SAN expone volúmenes que el host trata como dispositivos de bloques; NAS expone sistemas de ficheros por NFS/CIFS."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.4: SAN/NAS y virtualización del almacenamiento (A1-56/A1-110/A2-IV-5/A2-IV-8); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con el acceso a nivel de fichero y de bloque. La correspondencia temática no se usa como fuente para determinar la clave. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.4: SAN/NAS y virtualización del almacenamiento (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        }
+      }
+    }
+  ]
+}
