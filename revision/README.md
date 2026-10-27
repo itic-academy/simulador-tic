@@ -1,8 +1,18 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 277 (IDs 1701–1705). Acumulado: 1.705 preguntas examinadas, 1.653 verificadas (384 vigentes, 1.144 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.418 sin revisar de contenido. Hay 1.300 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 278 (IDs 1706–1710). Acumulado: 1.710 preguntas examinadas, 1.658 verificadas (384 vigentes, 1.149 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.413 sin revisar de contenido. Hay 1.305 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 278 — 27 de octubre
+
+IDs 1706–1710 revisados individualmente; cinco corregidos. Acumulado: 1.710 examinadas; 1.658 verificadas (384 vigentes, 1.149 corregidas y 125 históricas), 52 pendientes (28 de fuente y 24 de ambigüedad); 1.305 preguntas con cambios de contenido. Quedan 10.413 sin revisar; siguiente ID: 1.711. Originales íntegros conservados en `cambios-lote-278.json`.
+
+La 1706 actualiza la referencia obsoleta RFC 3720 por RFC 7143 y formula la capa de iSCSI sobre TCP: en TCP/IP, iSCSI es protocolo de aplicación y TCP el de transporte. La 1707 especifica RAID 10 como espejo RAID 1 más striping de RAID 0, no paridad. La 1708 sustituye la explicación confusa de SAN por el flujo de bloques: la SAN presenta un volumen al host y éste organiza los datos con su sistema de archivos. La 1709 descarta afirmaciones FC antiguas que podían tener más de una respuesta y pregunta directamente por FC-4, capa que mapea protocolos superiores; FC-3 ofrece servicios comunes. La 1710 precisa FCIP como encapsulación de tramas y extensión transparente de una fabric FC sobre TCP/IP, diferenciándolo de iFCP, que interconecta N_Ports por gateways.
+
+Cotejo con ITIC Academy en Drive: bloque 26, versión 2026.1 (31-08-2026). La 1706 corresponde a 8.3 (iSCSI y protocolos sobre IP); 1707 a 8.1 (RAID); 1708 a 7.2 y 8.2 (SAN y acceso en bloque); 1709 a 8.2 (capas Fibre Channel); 1710 a 8.2–8.3 (Fibre Channel, FCIP e IP). Correspondencia cotejada por pregunta con `temario-oficial.json` y BOE-A-2025-25938/BOE-A-2025-26262: 1706–1707 A1-56/A2-IV-5; 1708–1710 A1-56/A1-110/A2-IV-5/A2-IV-8. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.
+
+Fuentes primarias: IETF RFC 7143 y RFC 3720 para iSCSI/TCP; IBM Documentation para RAID 10; SNIA para SAN y almacenamiento por bloques; Fibre Channel Industry Association para capas FC; IETF RFC 3821 (FCIP) y RFC 4172 (iFCP). Ejecutados `node revision/lote-278.cjs`, `node revision/academia-lote-278.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas estructuralmente válidas, 1.710 registros, cero errores y 10.413 preguntas aún sin revisar.
 
 ## Lote 277 — 27 de octubre
 
