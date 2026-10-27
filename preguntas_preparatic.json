@@ -85991,21 +85991,64 @@
       "id": 1846,
       "bloque": 0,
       "tema": 0,
-      "texto": "Las aplicaciones fundamentales de la criptografía asimétrica son:",
+      "texto": "¿Cuáles son dos usos fundamentales de la criptografía de clave pública?",
       "opciones": [
-        "El cifrado eficiente y la firma digital",
-        "El intercambio seguro de claves privadas o de sesión y la firma digital",
-        "El intercambio seguro de claves privadas o de sesión y el cifrado eficiente",
-        "Todas las anteriores"
+        "Cifrar eficientemente grandes volúmenes de datos e intercambiar claves privadas.",
+        "Establecer o transportar de forma segura una clave simétrica de sesión y generar/verificar firmas digitales.",
+        "Reemplazar toda clave secreta por claves públicas compartidas y generar hashes.",
+        "Todas las anteriores."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La opción original “intercambio de claves privadas o de sesión” es conceptualmente incorrecta: una clave privada no se distribuye a la contraparte. Se reformula para distinguir establecimiento/transporte de una clave simétrica de sesión mediante criptografía de clave pública y firma digital. Para cifrar grandes volúmenes se emplea normalmente criptografía simétrica; no se atribuye a los algoritmos asimétricos cifrado eficiente de datos masivos. Cotejo Drive: bloque 36 de Seguridad/Criptografía/Identificación/Firma, temas A1-79 y A2-O6; cubre claves públicas/privadas, algoritmos asimétricos y firma. Se contrasta el matiz de key transport con NIST. Correspondencia A1-79/A2-I-6. Cotejo curricular directo de criptografía asimétrica/firma. La distinción entre transportar una clave simétrica de sesión y no distribuir la clave privada se valida con el glosario y guías de NIST. Correspondencia A1-79, A2-I-6 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36, Seguridad/Criptografía/Identificación/Firma, versión 2026.1; el contenido aborda algoritmos simétricos/asimétricos, claves públicas/privadas y firma; se coteja el matiz de key establishment con NIST",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo de criptografía asimétrica/firma. La distinción entre transportar una clave simétrica de sesión y no distribuir la clave privada se valida con el glosario y guías de NIST. Correspondencia A1-79, A2-I-6 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria."
+      },
+      "etiquetas": [
+        "criptografía asimétrica",
+        "clave pública",
+        "clave privada",
+        "firma digital",
+        "clave de sesión",
+        "acuerdo de claves",
+        "cifrado simétrico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/public_key_cryptography",
+            "referencia": "NIST CSRC Glossary, public-key cryptography: distingue la clave pública (distribuible) de la privada (se mantiene secreta); describe firma con clave privada verificable con la pública y establecimiento de claves."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/56/b/r2/final",
+            "referencia": "NIST SP 800-56B Rev. 2, confirmada vigente en 2026: especifica procedimientos de establecimiento de claves RSA, tanto key agreement como key transport, para establecer material secreto compartido."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+            "referencia": "NIST SP 800-57 Part 1 Rev. 5: recomendaciones actuales de gestión de claves; la criptografía asimétrica se utiliza para establecer/transportar claves y para firma, no para intercambiar claves privadas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36, Seguridad/Criptografía/Identificación/Firma, versión 2026.1; cotejo de cobertura curricular y límites."
+          }
+        ],
+        "observaciones": "La opción original “intercambio de claves privadas o de sesión” es conceptualmente incorrecta: una clave privada no se distribuye a la contraparte. Se reformula para distinguir establecimiento/transporte de una clave simétrica de sesión mediante criptografía de clave pública y firma digital. Para cifrar grandes volúmenes se emplea normalmente criptografía simétrica; no se atribuye a los algoritmos asimétricos cifrado eficiente de datos masivos. Cotejo Drive: bloque 36 de Seguridad/Criptografía/Identificación/Firma, temas A1-79 y A2-O6; cubre claves públicas/privadas, algoritmos asimétricos y firma. Se contrasta el matiz de key transport con NIST. Correspondencia A1-79/A2-I-6. Cotejo curricular directo de criptografía asimétrica/firma. La distinción entre transportar una clave simétrica de sesión y no distribuir la clave privada se valida con el glosario y guías de NIST. Correspondencia A1-79, A2-I-6 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria."
+      }
     },
     {
       "id": 1847,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes etiquetas fue introducida en HTML5?",
+      "texto": "¿Qué elemento estándar se incorporó en HTML5 para representar contenido de vídeo?",
       "opciones": [
         "<head>",
         "<video>",
@@ -86013,49 +86056,208 @@
         "<background>"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La etiqueta `<video>` es el elemento HTML incorporado para contenido de vídeo y fue introducida en HTML5; `<head>` ya existía en HTML previo, mientras que `<music>` y `<background>` no son elementos HTML estándar. Se reescribe la pregunta para distinguir el elemento normativo y no confundir sintaxis propietaria o elementos inexistentes con novedades de HTML5. Cotejo Drive: bloque 30 de Tecnologías de Sistemas de Información incluye HTML/CSS/XML en A1-77 y HTML en A2-T9; el documento aporta el ámbito curricular, mientras que la definición de etiqueta se verifica en W3C/WHATWG. Correspondencia A1-77/A2-II-9. Cotejo de cobertura de HTML y lenguajes de marca. El hecho histórico de incorporación del elemento video se comprueba con la recomendación W3C HTML5 y WHATWG. Correspondencia A1-77, A2-II-9 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1; el bloque incluye HTML, CSS, XML y compatibilidad de estándares en A1-77/A2-T9; el documento no se atribuye como fuente del historial exacto del elemento video",
+        "estado": "revisada",
+        "nota": "Cotejo de cobertura de HTML y lenguajes de marca. El hecho histórico de incorporación del elemento video se comprueba con la recomendación W3C HTML5 y WHATWG. Correspondencia A1-77, A2-II-9 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria."
+      },
+      "etiquetas": [
+        "HTML5",
+        "elemento video",
+        "etiqueta video",
+        "HTML",
+        "multimedia",
+        "estándar W3C"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/2014/REC-html5-20141028/",
+            "referencia": "W3C Recommendation HTML5, 28-10-2014: define la quinta revisión de HTML y los nuevos elementos; su sección 4.8.6 define el elemento video."
+          },
+          {
+            "url": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
+            "referencia": "WHATWG HTML Living Standard, sección The video element: definición vigente del elemento video para contenido audiovisual."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1; cotejo de cobertura curricular y límites."
+          }
+        ],
+        "observaciones": "La etiqueta `<video>` es el elemento HTML incorporado para contenido de vídeo y fue introducida en HTML5; `<head>` ya existía en HTML previo, mientras que `<music>` y `<background>` no son elementos HTML estándar. Se reescribe la pregunta para distinguir el elemento normativo y no confundir sintaxis propietaria o elementos inexistentes con novedades de HTML5. Cotejo Drive: bloque 30 de Tecnologías de Sistemas de Información incluye HTML/CSS/XML en A1-77 y HTML en A2-T9; el documento aporta el ámbito curricular, mientras que la definición de etiqueta se verifica en W3C/WHATWG. Correspondencia A1-77/A2-II-9. Cotejo de cobertura de HTML y lenguajes de marca. El hecho histórico de incorporación del elemento video se comprueba con la recomendación W3C HTML5 y WHATWG. Correspondencia A1-77, A2-II-9 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria."
+      }
     },
     {
       "id": 1848,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Bajo qué licencias de código abierto se encuentra liberado el código fuente de Android?",
+      "texto": "¿Qué afirmación describe mejor las licencias del código fuente de Android Open Source Project (AOSP)?",
       "opciones": [
-        "Apache 2.0 y GNU GPL2",
-        "GNU GPL y AGPL",
-        "BSD y AGPL",
-        "Apache y BSD"
+        "La mayoría del software AOSP usa Apache 2.0; los parches del kernel Linux usan GPLv2 con excepciones de sistema, y hay otras licencias por componente.",
+        "Todo AOSP, incluido el kernel Linux, se distribuye exclusivamente bajo Apache 2.0.",
+        "Todo AOSP, incluidos los componentes de espacio de usuario, se distribuye exclusivamente bajo AGPL.",
+        "Android es software propietario y no se publica código fuente."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva la clave, pero se desambigua la afirmación “Android se licencia bajo Apache y GPL”: el código AOSP no tiene una licencia única. Apache 2.0 es la licencia mayoritaria/preferida para software no kernel; los parches del kernel Linux están bajo GPLv2 con excepciones de sistema, y hay otros componentes/licencias. La respuesta se reformula para indicar expresamente esta distribución. Cotejo Drive: bloque 47 de Aplicaciones Móviles y Sistemas Operativos (2026.1) aborda Android; no se localizó detalle de licencias del código fuente en el material consultado, por lo que el dato se contrasta con AOSP. Correspondencia A1-69/A1-62 y A2-II-2. Cotejo de cobertura académica de Android/sistemas móviles. El detalle por componentes (Apache 2.0, GPLv2 y excepciones) no se atribuye al material de academia; se verifica en la documentación del proyecto AOSP. Correspondencia A1-69, A1-62, A2-II-2 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-69",
+          "A1-62"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 47 Aplicaciones Móviles y Sistemas Operativos, versión 2026.1; el bloque aborda Android y sistemas operativos móviles en A1-124/A2-C2; no se localizó una exposición específica de las licencias de AOSP",
+        "estado": "revisada",
+        "nota": "Cotejo de cobertura académica de Android/sistemas móviles. El detalle por componentes (Apache 2.0, GPLv2 y excepciones) no se atribuye al material de academia; se verifica en la documentación del proyecto AOSP. Correspondencia A1-69, A1-62, A2-II-2 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria."
+      },
+      "etiquetas": [
+        "Android",
+        "AOSP",
+        "Apache 2.0",
+        "GPLv2",
+        "Linux kernel",
+        "licencia de código abierto"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://source.android.com/docs/setup/contribute/licenses",
+            "referencia": "Android Open Source Project, Contributor License Agreements and Headers: Apache License 2.0 es la licencia preferida y cubre la mayoría del software AOSP; los parches del kernel Linux usan GPLv2 con excepciones de sistema. También existen otras licencias por componente."
+          },
+          {
+            "url": "https://source.android.com/docs/setup/about/faqs",
+            "referencia": "Android Open Source Project FAQ: aclara que la mayor parte del código Android se distribuye bajo Apache 2.0, no que toda la plataforma tenga una única licencia."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 47 Aplicaciones Móviles y Sistemas Operativos, versión 2026.1; cotejo de cobertura curricular y límites."
+          }
+        ],
+        "observaciones": "Se conserva la clave, pero se desambigua la afirmación “Android se licencia bajo Apache y GPL”: el código AOSP no tiene una licencia única. Apache 2.0 es la licencia mayoritaria/preferida para software no kernel; los parches del kernel Linux están bajo GPLv2 con excepciones de sistema, y hay otros componentes/licencias. La respuesta se reformula para indicar expresamente esta distribución. Cotejo Drive: bloque 47 de Aplicaciones Móviles y Sistemas Operativos (2026.1) aborda Android; no se localizó detalle de licencias del código fuente en el material consultado, por lo que el dato se contrasta con AOSP. Correspondencia A1-69/A1-62 y A2-II-2. Cotejo de cobertura académica de Android/sistemas móviles. El detalle por componentes (Apache 2.0, GPLv2 y excepciones) no se atribuye al material de academia; se verifica en la documentación del proyecto AOSP. Correspondencia A1-69, A1-62, A2-II-2 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria."
+      }
     },
     {
       "id": 1849,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es el lugar más conveniente para la instalación de un CPD de respaldo en la ribera del Pisuerga?",
+      "texto": "Al seleccionar el emplazamiento de un CPD de respaldo con riesgo de inundación, ¿qué criterio es preferible?",
       "opciones": [
-        "La planta más elevada del edificio de usos múltiples",
-        "Una sala aneja al garaje subterráneo",
-        "La primera planta de un edificio de cinco plantas",
-        "La planta baja"
+        "Elegir una zona fuera de la zona inundable cartografiada, reduciendo la exposición del emplazamiento.",
+        "Elegir el sótano del edificio si está próximo a un garaje.",
+        "Elegir cualquier planta del mismo edificio situado en la zona inundable, sin evaluar cotas ni protecciones.",
+        "Elegir siempre la planta baja, por facilitar el acceso."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La pregunta original pedía elegir una planta concreta de un edificio situado en la ribera del Pisuerga, sin datos de cota de inundación, mapa de peligrosidad, accesos, compartimentación, servicios ni evaluación del edificio; no era posible demostrar que una planta específica fuera “la más conveniente”. Se sustituye por un criterio verificable de selección de emplazamiento: priorizar un sitio fuera de la zona inundable cartografiada; no basta con elegir otra planta dentro del mismo emplazamiento de riesgo. Cotejo Drive: bloque 26 Hardware/CPD 2026.1 cubre diseño y gestión de CPD; Tema 47 de riesgos/continuidad cubre recuperación ante desastres. La academia establece cobertura temática, y NIST respalda el criterio de exposición a inundación. Correspondencia A1-53/A2-IV-6. Cotejo temático de CPD, riesgo y continuidad. La academia no permite inferir una planta concreta para la ribera del Pisuerga; se reformula a criterio de selección de emplazamiento y se contrasta con NIST sobre evitar zonas inundables. Correspondencia A1-53, A2-IV-6 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-53"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware/Servidores/CPD/Almacenamiento/Virtualización, versión 2026.1; ITIC Academy, Tema 47 Seguridad de sistemas, análisis de riesgos, recuperación ante desastres y continuidad; bloque 26 trata diseño/gestión de CPD y bloque 47 recuperación ante desastres/continuidad; no se localizó una regla que seleccione una planta concreta del edificio",
+        "estado": "revisada",
+        "nota": "Cotejo temático de CPD, riesgo y continuidad. La academia no permite inferir una planta concreta para la ribera del Pisuerga; se reformula a criterio de selección de emplazamiento y se contrasta con NIST sobre evitar zonas inundables. Correspondencia A1-53, A2-IV-6 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria."
+      },
+      "etiquetas": [
+        "CPD",
+        "inundación",
+        "zona inundable",
+        "emplazamiento",
+        "continuidad",
+        "Pisuerga",
+        "centro de respaldo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/gcr/2023/NIST.GCR.23-037.pdf",
+            "referencia": "NIST GCR 23-037, Resilience for Critical Facilities, enero de 2023, sección 4.3.1: al seleccionar un emplazamiento nuevo para un centro de datos recomienda reducir la exposición y, si es posible, situarlo fuera de zonas inundables."
+          },
+          {
+            "url": "https://www.nist.gov/publications/contingency-planning-guide-federal-information-systems",
+            "referencia": "NIST SP 800-34 Rev. 1, Contingency Planning Guide for Federal Information Systems: planificación de continuidad y emplazamientos alternativos, con evaluación de riesgos y peligros físicos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware/Servidores/CPD/Almacenamiento/Virtualización, versión 2026.1; cotejo de cobertura curricular y límites."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1pcRr4uiP4Zkk-RNTzhqfSq3V6LfHSwO1/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Tema 47 Seguridad de sistemas, análisis de riesgos, recuperación ante desastres y continuidad; cotejo de cobertura curricular y límites."
+          }
+        ],
+        "observaciones": "La pregunta original pedía elegir una planta concreta de un edificio situado en la ribera del Pisuerga, sin datos de cota de inundación, mapa de peligrosidad, accesos, compartimentación, servicios ni evaluación del edificio; no era posible demostrar que una planta específica fuera “la más conveniente”. Se sustituye por un criterio verificable de selección de emplazamiento: priorizar un sitio fuera de la zona inundable cartografiada; no basta con elegir otra planta dentro del mismo emplazamiento de riesgo. Cotejo Drive: bloque 26 Hardware/CPD 2026.1 cubre diseño y gestión de CPD; Tema 47 de riesgos/continuidad cubre recuperación ante desastres. La academia establece cobertura temática, y NIST respalda el criterio de exposición a inundación. Correspondencia A1-53/A2-IV-6. Cotejo temático de CPD, riesgo y continuidad. La academia no permite inferir una planta concreta para la ribera del Pisuerga; se reformula a criterio de selección de emplazamiento y se contrasta con NIST sobre evitar zonas inundables. Correspondencia A1-53, A2-IV-6 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria."
+      }
     },
     {
       "id": 1850,
       "bloque": 0,
       "tema": 0,
-      "texto": "La configuración RAID que ofrece la mejor relación precio/rendimiento de entre las siguientes es:",
+      "texto": "¿Qué característica distingue a RAID 5 frente a RAID 4 en la distribución de paridad?",
       "opciones": [
-        "RAID 1",
-        "RAID 2",
-        "RAID 4",
-        "RAID 5"
+        "RAID 5 hace una copia espejo completa de cada disco.",
+        "RAID 5 no usa paridad y solo distribuye datos.",
+        "RAID 5 distribuye bloques de paridad entre los discos y tolera el fallo de una unidad.",
+        "RAID 5 dedica un único disco fijo a toda la paridad."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "La pregunta original preguntaba por “la mejor relación precio/rendimiento”, criterio subjetivo que depende de número/tipo de discos, controlador, carga de E/S, capacidad y tolerancia a fallos; no tiene respuesta universal. Se formula una propiedad técnica que sí discrimina las opciones: RAID 5 distribuye la paridad entre las unidades, tolera un fallo de disco y dedica capacidad equivalente a una unidad a la paridad. RAID 4 mantiene paridad dedicada; RAID 1 refleja datos y RAID 2 es una configuración histórica. Cotejo Drive: bloque 26 Hardware/Almacenamiento 2026.1 incluye tipos RAID y A2-C5; la definición actual y diferencias de comportamiento se validan con documentación IBM. Correspondencia A1-56/A2-IV-5. Cotejo curricular directo de tipos RAID y almacenamiento. La afirmación técnica se verifica con documentación de IBM; no se conserva como hecho universal una comparación subjetiva de precio/rendimiento. Correspondencia A1-56, A2-IV-5 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware/Servidores/CPD/Almacenamiento/Virtualización, versión 2026.1; índice del bloque incluye tipos RAID y almacenamiento en A1-56/A2-C5; se documentan RAID 1/2/4/5 y la paridad distribuida",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo de tipos RAID y almacenamiento. La afirmación técnica se verifica con documentación de IBM; no se conserva como hecho universal una comparación subjetiva de precio/rendimiento. Correspondencia A1-56, A2-IV-5 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria."
+      },
+      "etiquetas": [
+        "RAID 5",
+        "paridad distribuida",
+        "tolerancia a fallo",
+        "redundancia",
+        "RAID 4",
+        "RAID 1",
+        "capacidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/i/7.5.0?topic=concepts-raid-5",
+            "referencia": "IBM i 7.5, RAID 5 concepts: distribuye la información de paridad entre discos y permite continuar tras el fallo de una unidad; la capacidad equivalente a una unidad se dedica a paridad."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/cmofm/10.5.0?topic=protection-overview",
+            "referencia": "IBM Content Manager OnDemand, planificación RAID: RAID 4 usa disco de paridad dedicado que puede ser cuello de botella; RAID 5 distribuye paridad y permite accesos concurrentes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware/Servidores/CPD/Almacenamiento/Virtualización, versión 2026.1; cotejo de cobertura curricular y límites."
+          }
+        ],
+        "observaciones": "La pregunta original preguntaba por “la mejor relación precio/rendimiento”, criterio subjetivo que depende de número/tipo de discos, controlador, carga de E/S, capacidad y tolerancia a fallos; no tiene respuesta universal. Se formula una propiedad técnica que sí discrimina las opciones: RAID 5 distribuye la paridad entre las unidades, tolera un fallo de disco y dedica capacidad equivalente a una unidad a la paridad. RAID 4 mantiene paridad dedicada; RAID 1 refleja datos y RAID 2 es una configuración histórica. Cotejo Drive: bloque 26 Hardware/Almacenamiento 2026.1 incluye tipos RAID y A2-C5; la definición actual y diferencias de comportamiento se validan con documentación IBM. Correspondencia A1-56/A2-IV-5. Cotejo curricular directo de tipos RAID y almacenamiento. La afirmación técnica se verifica con documentación de IBM; no se conserva como hecho universal una comparación subjetiva de precio/rendimiento. Correspondencia A1-56, A2-IV-5 cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se distingue cobertura académica de verificación primaria."
+      }
     },
     {
       "id": 1851,
