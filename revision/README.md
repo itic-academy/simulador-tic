@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 308 (IDs 1856–1860); se resolvieron además seis pendientes antiguos. Acumulado: 1.860 preguntas examinadas, 1.812 verificadas (398 vigentes, 1.284 corregidas y 130 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.263 sin revisar de contenido. Hay 1.445 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 309 (IDs 1861–1865); se resolvieron además seis pendientes antiguos. Acumulado: 1.865 preguntas examinadas, 1.817 verificadas (398 vigentes, 1.289 corregidas y 130 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.258 sin revisar de contenido. Hay 1.450 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 309 — 27 de octubre
+
+IDs 1861–1865 contrastados individualmente con legislación consolidada del BOE y cotejados con materiales de academia accesibles en Drive y programa oficial. Los originales íntegros se guardaron en `cambios-lote-309.json`. Acumulado: 1.865 examinadas; 1.817 verificadas (398 vigentes, 1.289 corregidas y 130 históricas); 48 pendientes (24 de fuente, 24 de ambigüedad), 1.450 con cambios y 10.258 sin revisión individual.
+
+- La 1861 delimita el plazo de dos años del artículo 23.2.e de la Ley 40/2015 a la prestación de servicios profesionales; no limita con ese plazo el motivo distinto de tener relación de servicio con la persona interesada. Cotejo Drive: bloque 03, Leyes 39/40 y régimen jurídico.
+- La 1862 conserva el artículo 14 de la Ley 39/2015 y especifica el derecho y obligación de relación electrónica. Cotejo Drive: bloque 03 Actuación administrativa y Administración digital.
+- La 1863 mantiene instrucciones y órdenes de servicio conforme al artículo 6.1 de la Ley 40/2015, diferenciándolas de reglamentos. Cotejo Drive: bloque 03.
+- La 1864 elimina la duplicación de opciones “personas jurídicas”/“entidades con personalidad jurídica”: pregunta qué sujeto enumera la letra 14.2.a, y distingue entidades sin personalidad de la letra b. Cotejo Drive: bloque 03.
+- La 1865 conserva la definición general de suministro del artículo 16.1 LCSP y precisa la excepción: programas desarrollados a medida son servicios, no suministros. Cotejo Drive: bloque 05 Contratación y Compra TIC.
+
+Cotejo con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1861–1864 A1-8/A2-I-8; 1865 A1-11 (sin epígrafe equivalente A2).
+
+Fuentes primarias: [Ley 40/2015 consolidada, art. 23](https://boe.es/buscar/pdf/2015/BOE-A-2015-10566-consolidado.pdf), [Ley 39/2015, art. 14](https://www.boe.es/eli/es/l/2015/10/01/39), [Ley 40/2015, art. 6](https://www.boe.es/eli/es/l/2015/10/01/40/con/20240802) y [Ley 9/2017 consolidada, art. 16](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902&p=20251226&tn=1#a16).
+
+Ejecutados `node revision/lote-309.cjs`, `node revision/academia-lote-309.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario 12.123 preguntas, errores 0; 1.865 examinadas, 10.258 sin revisión individual.
 
 ## Lote 308 — 27 de octubre
 
