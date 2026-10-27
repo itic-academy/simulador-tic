@@ -1,0 +1,339 @@
+{
+  "fecha": "2026-10-27",
+  "alcance": "IDs 1656–1660; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1656,
+      "original": {
+        "id": 1656,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Se cuenta con 4 discos físicos que se desea configurar como una única unidad, por ejemplo /root. Se desea maximizar la capacidad útil de almacenamiento proporcionando algún mecanismo de redundancia ante fallos. Por favor, elija entre las siguientes la mejor opción a utilizar:",
+        "opciones": [
+          "RAID 0",
+          "RAID 1",
+          "RAID 0+1",
+          "RAID 5"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1656,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Con cuatro discos de igual capacidad se quiere maximizar la capacidad útil conservando redundancia para tolerar el fallo de un disco. ¿Qué nivel de las opciones es el más adecuado?",
+        "opciones": [
+          "RAID 0: utiliza toda la capacidad, pero no ofrece redundancia.",
+          "RAID 1: mantiene copias espejo y dedica más capacidad a duplicación.",
+          "RAID 0+1: combina striping y espejado, con menor capacidad útil que RAID 5.",
+          "RAID 5: distribuye datos y paridad; con cuatro discos utiliza el equivalente a tres para datos y tolera un fallo."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El bloque 26 cubre RAID y optimización de capacidad/protección; el requisito de un fallo y cuatro discos se resuelve con la relación capacidad/paridad de RAID 5. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, capacidad útil y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, capacidad útil y tolerancia a fallos (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, capacidad útil y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias."
+        },
+        "etiquetas": [
+          "RAID",
+          "RAID 5",
+          "capacidad útil",
+          "redundancia",
+          "cuatro discos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://cloud.ibm.com/docs/bare-metal?topic=bare-metal-bm-raid-levels",
+              "referencia": "IBM Cloud Docs, RAID levels: RAID 5 distribuye bloques de datos y paridad entre los discos; necesita al menos tres unidades y tolera el fallo de una, reservando capacidad equivalente a una unidad para paridad."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/i/7.4.0?topic=concepts-raid-5",
+              "referencia": "IBM Documentation, RAID 5 concepts: protege ante el fallo de una unidad; la capacidad lógica de una unidad del conjunto se dedica a paridad distribuida."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, capacidad útil y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "El bloque 26 cubre RAID y optimización de capacidad/protección; el requisito de un fallo y cuatro discos se resuelve con la relación capacidad/paridad de RAID 5. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, capacidad útil y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 1657,
+      "original": {
+        "id": 1657,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Caso de utilizar un único método, se economizan cintas con backups de tipo:",
+        "opciones": [
+          "Completo",
+          "Diferencial",
+          "Incremental",
+          "Es indiferente"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1657,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si se realizan copias de cambio entre copias completas periódicas y se comparan ejecuciones que respaldan el mismo conjunto de cambios, ¿qué tipo suele utilizar menos cinta por ejecución?",
+        "opciones": [
+          "Completo, porque vuelve a copiar el conjunto entero.",
+          "Diferencial, porque acumula los cambios desde el último completo.",
+          "Incremental, porque copia los cambios desde la última copia (completa o incremental).",
+          "Es indiferente: todos copian los mismos datos en cada ejecución."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "El apartado 9 del bloque 26 trata full, incremental y diferencial, medios y recuperación; se incorpora el matiz de consumo por ejecución y la contrapartida de la cadena de restauración. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); copias completas, incrementales/diferenciales, uso de medios y recuperación (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-3"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); copias completas, incrementales/diferenciales, uso de medios y recuperación (A1-56/A2-IV-3)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); copias completas, incrementales/diferenciales, uso de medios y recuperación (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias."
+        },
+        "etiquetas": [
+          "copias de seguridad",
+          "incremental",
+          "diferencial",
+          "cintas"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg246548.pdf",
+              "referencia": "IBM Redbooks, System Storage Business Continuity: Part 2 Solutions Guide, capítulo 4: la copia incremental guarda ficheros creados o modificados desde el último backup completo o incremental y usa mucha menos cinta por ejecución; la diferencial guarda todos los cambios desde el último completo y consume más medio a medida que se acumulan cambios."
+            },
+            {
+              "url": "https://www.ibm.com/think/topics/backup-as-a-service/jcr%3Acontent",
+              "referencia": "IBM, What is Backup as a Service?: el backup incremental copia solo cambios desde la ejecución anterior y normalmente usa menos espacio; la restauración requiere el último completo y los incrementales posteriores."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); copias completas, incrementales/diferenciales, uso de medios y recuperación (A1-56/A2-IV-3). Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "El apartado 9 del bloque 26 trata full, incremental y diferencial, medios y recuperación; se incorpora el matiz de consumo por ejecución y la contrapartida de la cadena de restauración. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); copias completas, incrementales/diferenciales, uso de medios y recuperación (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 1658,
+      "original": {
+        "id": 1658,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un sistema de ficheros, la funcionalidad por la que se van registrando los cambios que todavía no han sido confirmados para que, en caso de fallo o pérdida de corriente, el sistema se pueda restablecer de forma rápida y con menos probabilidad de corrupción es:",
+        "opciones": [
+          "Inodo",
+          "Junction point",
+          "Journaling",
+          "Fsck"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1658,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En sistemas de archivos como ext4, ¿qué mecanismo registra transacciones —normalmente de metadatos— para poder reproducirlas y recuperar la consistencia tras una caída?",
+        "opciones": [
+          "El inodo, que almacena metadatos y referencias a datos de un objeto.",
+          "Un junction point, que redirige rutas entre directorios o volúmenes.",
+          "El journaling (registro en diario).",
+          "fsck, que revisa y puede reparar estructuras del sistema de archivos, pero no es el registro previo de transacciones."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "El bloque 27 desarrolla sistemas de ficheros Linux y el apartado 4.5 «Consistencia, journaling y copy-on-write»; allí se describe el diario como medio para recuperar consistencia después de un corte. Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); sistemas de archivos Linux/UNIX; el apartado de consistencia cubre journaling y recuperación ante cortes (A1-60/A2-II-2). Correspondencia A1-60, A2-II-2 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); sistemas de archivos Linux/UNIX; el apartado de consistencia cubre journaling y recuperación ante cortes (A1-60/A2-II-2)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); sistemas de archivos Linux/UNIX; el apartado de consistencia cubre journaling y recuperación ante cortes (A1-60/A2-II-2). Correspondencia A1-60, A2-II-2 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias."
+        },
+        "etiquetas": [
+          "sistema de archivos",
+          "journaling",
+          "journal",
+          "recuperación ante fallos",
+          "Linux"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.kernel.org/doc/html/latest/filesystems/ext4/journal.html",
+              "referencia": "Linux Kernel Documentation, ext4 journal (jbd2): el journal protege contra inconsistencias de metadatos tras una caída; en el modo habitual ext4 registra metadatos y puede reproducir el journal al montar para recuperar consistencia. No implica que todos los datos del usuario estén siempre registrados."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); sistemas de archivos Linux/UNIX; el apartado de consistencia cubre journaling y recuperación ante cortes (A1-60/A2-II-2). Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "El bloque 27 desarrolla sistemas de ficheros Linux y el apartado 4.5 «Consistencia, journaling y copy-on-write»; allí se describe el diario como medio para recuperar consistencia después de un corte. Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); sistemas de archivos Linux/UNIX; el apartado de consistencia cubre journaling y recuperación ante cortes (A1-60/A2-II-2). Correspondencia A1-60, A2-II-2 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 1659,
+      "original": {
+        "id": 1659,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué sistema RAID distribuye los datos equitativamente entre dos o más discos sin información de paridad?",
+        "opciones": [
+          "RAID 0.",
+          "RAID 1.",
+          "RAID 2."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1659,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué nivel RAID distribuye (striping) los datos entre dos o más discos sin almacenar paridad ni redundancia?",
+        "opciones": [
+          "RAID 0.",
+          "RAID 1.",
+          "RAID 2.",
+          "RAID 5."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "El bloque 26 incluye las técnicas de striping/paridad de RAID y la protección que cada nivel proporciona; RAID 0 se distingue por no tener redundancia. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, striping, paridad y redundancia (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, striping, paridad y redundancia (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, striping, paridad y redundancia (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias."
+        },
+        "etiquetas": [
+          "RAID",
+          "RAID 0",
+          "striping",
+          "paridad",
+          "bloques"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.redbooks.ibm.com/redpapers/pdfs/redp5234.pdf",
+              "referencia": "IBM Redbooks, IBM Power Systems RAID Solutions Introduction and Technical Overview, §1.2.3: RAID 0 (striping) divide datos entre varios discos sin paridad, redundancia ni tolerancia a fallos."
+            },
+            {
+              "url": "https://www.ibm.com/support/pages/raid-level-descriptions-servers",
+              "referencia": "IBM Support, RAID level descriptions: RAID 0 distribuye datos en todos los discos y no guarda información de paridad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, striping, paridad y redundancia (A1-56/A2-IV-5). Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "El bloque 26 incluye las técnicas de striping/paridad de RAID y la protección que cada nivel proporciona; RAID 0 se distingue por no tener redundancia. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, striping, paridad y redundancia (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 1660,
+      "original": {
+        "id": 1660,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El sistema de almacenamiento de datos que usa una división de los datos a nivel de bloques distribuyendo la información de paridad entre todos los miembros del conjunto se conoce como:",
+        "opciones": [
+          "RAID 0.",
+          "RAID 1.",
+          "RAID 3.",
+          "RAID 5."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1660,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué nivel RAID estándar aplica striping de datos a nivel de bloque y distribuye la información de paridad entre todos los discos del conjunto?",
+        "opciones": [
+          "RAID 0.",
+          "RAID 1.",
+          "RAID 3.",
+          "RAID 5."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El bloque 26 incluye niveles RAID, paridad distribuida y reconstrucción; la semántica concreta de RAID 5 se coteja además con IBM Documentation. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, striping por bloques, paridad distribuida y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, striping por bloques, paridad distribuida y tolerancia a fallos (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, striping por bloques, paridad distribuida y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias."
+        },
+        "etiquetas": [
+          "RAID",
+          "RAID 5",
+          "striping por bloques",
+          "paridad distribuida"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/power9/9009-22A?topic=srl-raid-5-1",
+              "referencia": "IBM Documentation, RAID 5: distribuye datos en bloques (striping) a través de los discos y reparte la paridad entre todas las unidades; permite seguir operando con un disco fallido en modo degradado."
+            },
+            {
+              "url": "https://cloud.ibm.com/docs/bare-metal?topic=bare-metal-bm-raid-levels",
+              "referencia": "IBM Cloud Docs, RAID 5: define striping a nivel de bloque y paridad distribuida; requiere al menos tres discos y admite el fallo de una unidad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, striping por bloques, paridad distribuida y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "El bloque 26 incluye niveles RAID, paridad distribuida y reconstrucción; la semántica concreta de RAID 5 se coteja además con IBM Documentation. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); almacenamiento RAID, striping por bloques, paridad distribuida y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes primarias."
+        }
+      }
+    }
+  ]
+}

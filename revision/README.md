@@ -1,8 +1,18 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 267 (IDs 1651–1655). Acumulado: 1.655 preguntas examinadas, 1.603 verificadas (378 vigentes, 1.100 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.468 sin revisar de contenido. Hay 1.256 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 268 (IDs 1656–1660). Acumulado: 1.660 preguntas examinadas, 1.608 verificadas (378 vigentes, 1.105 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.463 sin revisar de contenido. Hay 1.261 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 268 — 27 de octubre
+
+IDs 1656–1660 revisados individualmente; cinco corregidos. Acumulado: 1.660 examinadas; 1.608 verificadas (378 vigentes, 1.105 corregidas y 125 históricas), 52 pendientes (28 de fuente y 24 de ambigüedad); 1.261 preguntas con cambios de contenido. Quedan 10.463 sin revisar; siguiente ID: 1.661. Originales íntegros conservados en `cambios-lote-268.json`.
+
+La 1656 especifica que se maximiza capacidad útil para cuatro discos tolerando el fallo de uno, por lo que RAID 5 ofrece el equilibrio pedido. La 1657 formula una comparación controlada del medio escrito por ejecución: incremental escribe los cambios desde la copia anterior y utiliza menos cinta que diferencial, con más pasos de restauración. La 1658 precisa que ext4 registra habitualmente metadatos en el journal; reproducirlo tras una caída recupera consistencia, pero no garantiza que todo dato de usuario esté registrado. La 1659 pregunta por RAID 0 como striping sin redundancia y repone el cuarto distractor. La 1660 define RAID 5 por striping a nivel de bloque con paridad distribuida.
+
+Cotejo con Drive: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización (RAID y copias); bloque 27 Sistemas Operativos (sistemas de ficheros Linux/UNIX y apartado de journaling). Correspondencias contrastadas individualmente con `temario-oficial.json` y BOE-A-2025-25938/BOE-A-2025-26262: 1656 A1-56/A2-IV-5; 1657 A1-56/A2-IV-3; 1658 A1-60/A2-II-2; 1659–1660 A1-56/A2-IV-5. La academia orienta el encaje y no sustituye las fuentes primarias.
+
+Fuentes primarias/técnicas: IBM Documentation/IBM Cloud Docs sobre RAID 0 y RAID 5; IBM Redbooks sobre uso de cintas en copias incrementales y diferenciales; Linux Kernel Documentation, ext4 journal y modo de registro predeterminado; materiales de ITIC Academy bloques 26 y 27 y anexos BOE de los temarios. Ejecutados `node revision/lote-268.cjs`, `node revision/academia-lote-268.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas, 1.660 registros, cero errores estructurales y 10.463 preguntas aún sin revisar.
 
 ## Lote 267 — 27 de octubre
 
