@@ -1,0 +1,19 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(bankPath,'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-300.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ os:{url:'https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk',label:'ITIC Academy, bloque 27, Sistemas operativos, versión 2026.1 (14-08-2026)'},
+ si:{url:'https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk',label:'ITIC Academy, bloque 30, Tecnologías de sistemas de información, versión 2026.1 (31-08-2026)'},
+ security:{url:'https://drive.google.com/file/d/1e63zmnn7AdxZtHG6iIfiqbGqH7l7fjP6/view?usp=drivesdk',label:'ITIC Academy, bloque 36, Seguridad, criptografía, identificación y firma, versión 2026.1 (17-09-2026)'}
+};
+const mapping={
+ 1816:{doc:'os',detail:'sección 12.3, memoria virtual de Windows y administración de regiones de espacio virtual.',topics:['A1-61','A2-II-2'],note:'Cotejo curricular de memoria virtual y arquitectura interna de Windows; la expansión y uso de VAD se contrastan con Microsoft Learn.'},
+ 1817:{doc:'si',detail:'sección 5.3, API Servlet/Jakarta Servlet, sesiones HTTP y desarrollo web en servidor.',topics:['A1-67','A2-III-12'],note:'Cotejo curricular de Java/Jakarta Servlet y componentes web de servidor; la diferencia entre HttpServletRequest.getSession() y la interfaz HttpSession se comprueba en la API oficial de Jakarta.'},
+ 1818:{doc:'security',detail:'sección 4. Funciones hash, algoritmos y distinción frente a cifrado simétrico.',topics:['A1-79','A2-IV-12'],note:'Cotejo curricular de funciones hash y criptografía; se corrige que BASH sí es una familia hash estandarizada y se distingue de Blowfish, un cifrador por bloques.'},
+ 1819:{doc:'si',detail:'secciones 1.3 y 2, arquitecturas por capas y separación front-end, aplicación web en servidor y acceso a datos.',topics:['A1-65','A2-III-12'],note:'Cotejo curricular de arquitectura web y componentes en servidor; la ubicación de la lógica de negocio se verifica con documentación de Microsoft e IBM.'},
+ 1820:{doc:'security',detail:'secciones 3 y 6.1, certificados cualificados y marco eIDAS vigente.',topics:['A1-80','A2-I-6'],note:'Cotejo curricular de certificados cualificados, firma electrónica y eIDAS 2; el efecto de revocación y la suspensión temporal se contrastan con el texto consolidado vigente en EUR-Lex y el DOUE/BOE.'}
+};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),r=mapping[c.id],doc=r&&docs[r.doc];assert.ok(q?.revision&&r&&doc,`Falta cotejo ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2,...r.topics])assert.ok(official.has(id),id);const curr=`${doc.label}; ${r.detail.replace(/\.$/,'')}`,note=`Cotejo curricular: ${curr} Correspondencia ${r.topics.join(', ')} contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.`;q.revision.observaciones=`${r.note} ${note}`;q.revision.fuentes.push({url:doc.url,referencia:`${curr}; material formativo de Drive cotejado para cobertura curricular.`});q.clasificacion.bloque_academia=curr;q.clasificacion.nota=note;q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q)}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular y BOE actualizado para 1816–1820.');

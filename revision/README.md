@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 299 (IDs 1811–1815); se resolvieron además seis pendientes antiguos. Acumulado: 1.815 preguntas examinadas, 1.767 verificadas (394 vigentes, 1.244 corregidas y 129 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.308 sin revisar de contenido. Hay 1.404 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 300 (IDs 1816–1820); se resolvieron además seis pendientes antiguos. Acumulado: 1.820 preguntas examinadas, 1.772 verificadas (394 vigentes, 1.249 corregidas y 129 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.303 sin revisar de contenido. Hay 1.409 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -14,6 +14,22 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 - La 52 se corrigió: la secuencia de siete pasos y su paso final (Monitor) pertenecen al RMF de NIST SP 800-37 Rev. 2. La guía CCN-STIC 801 del catálogo oficial se titula «ENS. Responsabilidades y Funciones», así que se retiró la atribución original no sustentada. No se fuerza equivalencia de academia.
 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
+
+## Lote 300 — 27 de octubre
+
+IDs 1816–1820 revisados individualmente con fuentes oficiales/técnicas primarias y cotejo de academia y temario. Los cinco se corrigieron; el lote conserva cada versión anterior completa en `cambios-lote-300.json`. Acumulado: 1.820 examinadas; 1.772 verificadas (394 vigentes, 1.249 corregidas y 129 históricas); 48 pendientes (24 de fuente y 24 de ambigüedad); 1.409 preguntas con cambios de contenido; 10.303 aún sin revisión individual. Siguiente ID: 1.821.
+
+- 1816 acota VAD al gestor de memoria de Windows y expande la sigla como Virtual Address Descriptor, descriptor de regiones del espacio virtual de un proceso.
+- 1817 distingue la petición HTTP (HttpServletRequest.getSession()) del objeto que contiene y expone los atributos de sesión (HttpSession), y actualiza la formulación a Jakarta Servlet.
+- 1818 corrige un error en la clave original: BASH sí es una familia de funciones hash, definida en STB 34.101.77-2020; las cuatro opciones originales eran hashes. Se sustituye BASH por Blowfish, que es un cifrador por bloques, para que exista una respuesta única.
+- 1819 especifica los tres niveles (presentación, aplicación y datos) y ubica la lógica de negocio en el nivel intermedio/de aplicación.
+- 1820 acota los estados según eIDAS vigente: válido, revocado o suspendido temporalmente si el Derecho nacional permite la suspensión; la revocación no es reversible. Se deja constancia de la reforma 2024/1183 y de que esta actualizó el apartado 6, no los apartados 4–5 preguntados.
+
+Cotejo de academia en Drive: bloque 27, sección 12.3, para memoria virtual Windows; bloque 30, sección 5.3 y arquitectura web, para Servlets, sesiones y lógica de aplicación; bloque 36, secciones 4 y 6.1, para hash/criptografía, certificados cualificados y eIDAS. Correspondencias cotejadas con `temario-oficial.json` y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): 1816 A1-61/A2-II-2; 1817 A1-67/A2-III-12; 1818 A1-79/A2-IV-12; 1819 A1-65/A2-III-12; 1820 A1-80/A2-I-6. El cotejo académico verifica cobertura, no sustituye la fuente técnica o legal primaria.
+
+Fuentes: [Microsoft Learn, depuración de VAD](https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/-vad) y [espacio de direcciones virtuales de Windows](https://learn.microsoft.com/en-us/windows/win32/memory/virtual-address-space); [Jakarta Servlet 6.1, HttpServletRequest](https://jakarta.ee/specifications/servlet/6.1/apidocs/jakarta.servlet/jakarta/servlet/http/httpservletrequest) y [HttpSession](https://jakarta.ee/specifications/servlet/5.0/apidocs/jakarta/servlet/http/httpsession); [NIST FIPS 180-4](https://csrc.nist.gov/files/pubs/fips/180-4/final/docs/fips180-4.pdf), [STB 34.101.77-2020](https://apmi.bsu.by/assets/files/std/bash-spec244.pdf), [artículo de los autores de BASH en IACR](https://eprint.iacr.org/2016/587.pdf), [WHIRLPOOL/OpenSSL](https://docs.openssl.org/4.1/man3/EVP_whirlpool/), [HAVAL/ECRYPT](https://ehash.isec.tugraz.at/wiki/HAVAL.html) y [Bruce Schneier, Blowfish](https://www.schneier.com/academic/archives/1994/09/description_of_a_new.html); [Microsoft Learn, arquitectura de tres niveles](https://learn.microsoft.com/en-us/windows/win32/cossdk/using-a-three-tier-architecture-model) e [IBM, three-tier architecture](https://www.ibm.com/think/topics/three-tier-architecture); [EUR-Lex, Reglamento eIDAS consolidado](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A02014R0910-20241018), [Reglamento (UE) 2024/1183](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32024R1183) y [BOE/DOUE-L-2014-81822](https://www.boe.es/buscar/doc.php?id=DOUE-L-2014-81822).
+
+Ejecutados `node revision/lote-300.cjs`, `node revision/academia-lote-300.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario 12.123 preguntas, errores 0; 1.820 examinadas y 10.303 sin revisión individual de contenido.
 
 ## Lote 299 — 27 de octubre
 
