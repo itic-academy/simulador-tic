@@ -79450,63 +79450,234 @@
       "id": 1721,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo se denomina cada una de las particiones lógicas de una Storage Área Network?",
+      "texto": "En SCSI, ¿cómo se denomina el identificador que direcciona una unidad lógica dentro de un dispositivo target?",
       "opciones": [
-        "LUN",
-        "HBA",
-        "Clúster",
-        "Usci"
+        "LUN (Logical Unit Number).",
+        "HBA (Host Bus Adapter).",
+        "Clúster.",
+        "WWN (World Wide Name)."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Cotejado con SAN y acceso a bloques. El material de academia sirve de contexto; SNIA define LUN con mayor precisión y distingue LUN de partición. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.2: SAN, Fibre Channel, iSCSI y unidades lógicas (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.2: SAN, Fibre Channel, iSCSI y unidades lógicas (A1-56/A2-IV-5)",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.2: SAN, Fibre Channel, iSCSI y unidades lógicas (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+      },
+      "etiquetas": [
+        "SAN",
+        "SCSI",
+        "LUN",
+        "unidad lógica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.snia.org/education/online-dictionary/term/logical-unit-number",
+            "referencia": "SNIA Dictionary, logical unit number: en SCSI, identificador de una unidad lógica dentro de un target; en sistemas de almacenamiento, dirección de una unidad lógica."
+          },
+          {
+            "url": "https://www.snia.org/blog/2015/life-storage-packet-walk-qa",
+            "referencia": "SNIA, Life of a Storage Packet: distingue LUN/unidad lógica de partición, volumen y disco; una LUN aparece al host como unidad lógica."
+          },
+          {
+            "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_virtualization/3.6/html/technical_reference/types_of_storage_backing_storage_domains",
+            "referencia": "Red Hat Virtualization: define una LUN como dispositivo de bloques individual accesible mediante protocolos como iSCSI, FCoE o SAS."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.2: SAN, Fibre Channel, iSCSI y unidades lógicas (A1-56/A2-IV-5); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.2: SAN, Fibre Channel, iSCSI y unidades lógicas (A1-56/A2-IV-5); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Cotejado con SAN y acceso a bloques. El material de academia sirve de contexto; SNIA define LUN con mayor precisión y distingue LUN de partición. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.2: SAN, Fibre Channel, iSCSI y unidades lógicas (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+      }
     },
     {
       "id": 1722,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuando una copia de seguridad copia los archivos creados o modificados desde la última copia de seguridad normal o incremental, poniendo una marca de copiado a los archivos se habla de:",
+      "texto": "Tras una copia completa, cada ejecución diaria guarda solo los archivos modificados desde la copia de seguridad inmediatamente anterior. ¿Qué tipo de copia describe el esquema?",
       "opciones": [
-        "Copia de seguridad incremental.",
-        "Copia de seguridad diaria.",
-        "Copia de seguridad intermedia.",
-        "Copia de seguridad diferencial."
+        "Copia incremental.",
+        "Copia diaria (tipo independiente del método de comparación).",
+        "Copia intermedia.",
+        "Copia diferencial."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Cotejado con métodos incremental/diferencial y recuperación. El material de academia no convierte el atributo de archivo en requisito universal; esa precisión se apoya en la documentación del producto. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad y recuperación (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad y recuperación (A1-56/A2-IV-3)",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad y recuperación (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+      },
+      "etiquetas": [
+        "copia incremental",
+        "backup",
+        "copia diferencial",
+        "restauración"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/storage-protect/8.2.1?topic=windows-full-partial-incremental-backup",
+            "referencia": "IBM Storage Protect 8.2.1, Full and partial incremental backup: las copias incrementales posteriores guardan archivos nuevos o modificados desde la copia anterior."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/backup/backup-architecture",
+            "referencia": "Microsoft Learn, Azure Backup architecture: incremental recoge cambios desde la copia anterior; diferencial recoge cambios desde la copia completa inicial."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad y recuperación (A1-56/A2-IV-3); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad y recuperación (A1-56/A2-IV-3); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Cotejado con métodos incremental/diferencial y recuperación. El material de academia no convierte el atributo de archivo en requisito universal; esa precisión se apoya en la documentación del producto. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad y recuperación (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+      }
     },
     {
       "id": 1723,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuál de las siguientes características responde a las que posee un disco de tipo SSD (Solid State Drive):",
+      "texto": "¿Qué característica identifica a un SSD frente a un disco duro mecánico (HDD)?",
       "opciones": [
-        "Usan la misma interfaz que los discos duros convencionales y son por tanto fácilmente intercambiables sin necesidades de tarjetas adicionales",
-        "Usan platos giratorios magnéticos",
-        "Son más sensibles a los golpes que los discos convencionales",
-        "Su precio es más económico que el de un disco duro"
+        "Almacena los datos en memoria no volátil de estado sólido, normalmente NAND flash, sin platos ni cabezales móviles.",
+        "Guarda los datos en platos magnéticos giratorios leídos por un cabezal móvil.",
+        "Siempre utiliza interfaz SATA y no puede usar PCIe/NVMe ni SAS.",
+        "Es necesariamente más sensible a golpes y vibraciones que un HDD en funcionamiento."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Cotejado con SSD y dispositivos. La clasificación se basa en memoria de estado sólido y ausencia de partes móviles; la interfaz SATA, SAS o NVMe no es uniforme. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de dispositivos personales y almacenamiento SSD (A1-54/A1-56/A2-IV-5). Correspondencia A1-54, A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-56",
+          "A1-54"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de dispositivos personales y almacenamiento SSD (A1-54/A1-56/A2-IV-5)",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de dispositivos personales y almacenamiento SSD (A1-54/A1-56/A2-IV-5). Correspondencia A1-54, A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+      },
+      "etiquetas": [
+        "SSD",
+        "memoria flash",
+        "NAND",
+        "discos mecánicos",
+        "almacenamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/think/topics/solid-state-drives",
+            "referencia": "IBM, What Is a Solid-State Drive?: un SSD usa memoria de estado sólido no volátil, carece de piezas móviles y se diferencia del HDD de platos giratorios/cabezal."
+          },
+          {
+            "url": "https://www.ibm.com/think/topics/ssd-vs-nvme",
+            "referencia": "IBM, SSD vs NVMe: no todos los SSD usan NVMe/PCIe; también existen SSD con SATA/SAS, de modo que interfaz física y protocolo no definen por sí solos un SSD."
+          },
+          {
+            "url": "https://www.ibm.com/think/topics/hard-disk-drive-vs-solid-state-drive",
+            "referencia": "IBM, HDD vs SSD: compara memoria semiconductora en SSD con discos magnéticos giratorios y cabezales mecánicos en HDD."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de dispositivos personales y almacenamiento SSD (A1-54/A1-56/A2-IV-5); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de dispositivos personales y almacenamiento SSD (A1-54/A1-56/A2-IV-5); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Cotejado con SSD y dispositivos. La clasificación se basa en memoria de estado sólido y ausencia de partes móviles; la interfaz SATA, SAS o NVMe no es uniforme. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de dispositivos personales y almacenamiento SSD (A1-54/A1-56/A2-IV-5). Correspondencia A1-54, A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+      }
     },
     {
       "id": 1724,
       "bloque": 0,
       "tema": 0,
-      "texto": "Para los siguientes tipos de copias de seguridad, indique cuál de las siguientes secuencias los ordena de mayor a menor tiempo de restauración:",
+      "texto": "En un esquema convencional que conserva una copia completa y copias posteriores, ¿qué orden requiere más imágenes de copia que aplicar para restaurar al último punto, de mayor a menor número de imágenes?",
       "opciones": [
-        "Incremental, diferencial, completa.",
-        "Completa, incremental, diferencial.",
-        "Completa, diferencial, incremental.",
-        "No hay diferencia en el tiempo de restauración, encontrándose la diferencia en el espacio de almacenamiento consumido."
+        "Completa + todas las incrementales posteriores; completa + la última diferencial; solo completa.",
+        "Completa + la última diferencial; completa + todas las incrementales; solo completa.",
+        "Solo completa; completa + la última diferencial; completa + todas las incrementales.",
+        "Los tres esquemas siempre aplican el mismo número de imágenes."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Cotejado con estrategias de backup/restore. Se mide número de imágenes que se deben aplicar, no un tiempo físico universal dependiente de medios y volúmenes. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad, restauración y recuperación (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad, restauración y recuperación (A1-56/A2-IV-3)",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad, restauración y recuperación (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+      },
+      "etiquetas": [
+        "backup",
+        "incremental",
+        "diferencial",
+        "completa",
+        "recuperación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/backup/backup-architecture",
+            "referencia": "Microsoft Learn, Azure Backup architecture: diferencia copias incrementales (cambios desde la copia anterior) y diferenciales (cambios desde la copia completa base)."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/db2-warehouse?topic=table-incremental-schema-backup-restore",
+            "referencia": "IBM Db2 Warehouse, Incremental schema backup and restore: la restauración incremental comienza con una imagen completa y aplica después las imágenes necesarias en orden cronológico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad, restauración y recuperación (A1-56/A2-IV-3); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad, restauración y recuperación (A1-56/A2-IV-3); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Cotejado con estrategias de backup/restore. Se mide número de imágenes que se deben aplicar, no un tiempo físico universal dependiente de medios y volúmenes. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de copias de seguridad, restauración y recuperación (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+      }
     },
     {
       "id": 1725,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dentro de las arquitecturas de almacenamiento, las siglas inglesas SSA responden a:",
+      "texto": "En la documentación de almacenamiento de IBM, ¿qué significa la sigla histórica SSA?",
       "opciones": [
         "Serialized Storage Area.",
         "Serial Storage Area.",
@@ -79514,7 +79685,51 @@
         "Serialized Storage Architecture."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Cotejo temático con almacenamiento; SSA es una arquitectura histórica de IBM y no se fuerza su equivalencia con protocolos actuales del temario académico. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de arquitectura y protocolos de almacenamiento (A1-56/A2-IV-5); SSA se registra expresamente como tecnología histórica. Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de arquitectura y protocolos de almacenamiento (A1-56/A2-IV-5); SSA se registra expresamente como tecnología histórica",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de arquitectura y protocolos de almacenamiento (A1-56/A2-IV-5); SSA se registra expresamente como tecnología histórica. Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+      },
+      "etiquetas": [
+        "SSA",
+        "Serial Storage Architecture",
+        "IBM",
+        "interfaces de almacenamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://research.ibm.com/publications/serial-storage-architecture",
+            "referencia": "IBM Research, Serial storage architecture (1996): identifica SSA como Serial Storage Architecture y describe el enlace serie para conectar dispositivos de E/S."
+          },
+          {
+            "url": "https://public.dhe.ibm.com/storage/7133/pdfs/ClustInst.pdf",
+            "referencia": "IBM SSA RAID Cluster Adapter Installation and User’s Guide, apéndice C.1: expande SSA como Serial Storage Architecture y la describe como interfaz serie para conectar dispositivos de almacenamiento."
+          },
+          {
+            "url": "https://ftp.software.ibm.com/storage/subsystem/tools/latest/f2asdd01.htm",
+            "referencia": "IBM Storage Systems, glosario: define serial storage architecture (SSA) como interfaz estándar IBM para periféricos, con protocolo lógico SCSI sobre interfaz serie y topología en anillo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de arquitectura y protocolos de almacenamiento (A1-56/A2-IV-5); SSA se registra expresamente como tecnología histórica; epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de arquitectura y protocolos de almacenamiento (A1-56/A2-IV-5); SSA se registra expresamente como tecnología histórica; epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Cotejo temático con almacenamiento; SSA es una arquitectura histórica de IBM y no se fuerza su equivalencia con protocolos actuales del temario académico. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); epígrafes de arquitectura y protocolos de almacenamiento (A1-56/A2-IV-5); SSA se registra expresamente como tecnología histórica. Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+      }
     },
     {
       "id": 1726,
