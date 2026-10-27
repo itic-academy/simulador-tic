@@ -1,6 +1,24 @@
-# Revisión del banco TIC — estado al 27 de octubre de 2026
+# Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 315 (IDs 1891–1895); se resolvieron además seis pendientes antiguos. Acumulado: 1.895 preguntas examinadas, 1.845 verificadas (407 vigentes, 1.305 corregidas y 133 históricas) y 50 pendientes (25 de fuente y 25 de ambigüedad); quedan 10.228 sin revisar de contenido. Hay 1.468 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 316 (IDs 1896–1900); se resolvieron además seis pendientes antiguos. Acumulado: 1.900 preguntas examinadas, 1.850 verificadas (407 vigentes, 1.309 corregidas y 134 históricas) y 50 pendientes (25 de fuente y 25 de ambigüedad); quedan 10.223 sin revisar de contenido. Hay 1.473 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 316 — 28 de octubre
+
+IDs 1896–1900 revisados individualmente con fuentes primarias vigentes, cotejo de materiales de ITIC Academy y temarios oficiales. Cuatro preguntas se corrigieron y una se conserva como histórica por la retirada del producto; se preservan los enunciados, opciones y claves originales en `cambios-lote-316.json`. Acumulado: 1.900 examinadas; 1.850 verificadas (407 vigentes, 1.309 corregidas y 134 históricas); 50 pendientes (25 de fuente y 25 de ambigüedad), 1.473 con cambios y 10.223 sin revisión individual.
+
+- La 1896 se rehace como pregunta de respuesta correcta actual. La antigua mezclaba la estructura institucional previa a 2017 con la afirmación falsa de que AENOR sería el único certificador ISO 9000. UNE es hoy el organismo nacional de normalización y surgió de la separación de las actividades de normalización y certificación; la acreditación ENAC no establece exclusividad de AENOR para certificar ISO 9001.
+- La 1897 se actualiza: POSIX.1-2024 es un estándar conjunto IEEE/Open Group y su trabajo se articula mediante el Austin Joint Working Group. Se sustituye la atribución simplificada al solo IEEE por el nombre preciso del grupo.
+- La 1898 se mantiene como conocimiento histórico: Globus Toolkit se utilizó para construir grids, pero su sitio oficial declara retirado el toolkit y ya no lo ofrece como herramienta autogestionada.
+- La 1899 conserva la ley de Gustafson, pero corrige la afirmación universal: estudia el speedup escalado conforme aumentan el tamaño del problema y los procesadores; no afirma que todo problema suficientemente grande sea paralelizable.
+- La 1900 precisa que Arm es una arquitectura cuyas especificaciones se licencian a socios; Armv8-A distingue estados AArch32 y AArch64. No es un SoC de Qualcomm ni implica que Arm fabrique en exclusiva los chips de dispositivos de consumo.
+
+Cotejo curricular con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1896 A1-50 (el programa A2 no contiene epígrafe específico sobre organismos de normalización); 1897 A1-59/A2-II-2; 1898 y 1899 A1-52/A2-II-1; 1900 A1-54/A2-II-1.
+
+Fuentes primarias: [RD 1230/2024, identificación actual de UNE y separación de AENOR Internacional](https://www.boe.es/eli/es/rd/2024/12/03/1230); [ENAC, acreditación de certificadores de sistemas de gestión](https://www.enac.es/que-hacemos/servicios-de-acreditacion/sistemas-de-gestion); [IEEE SA, estándar POSIX.1-2024 y Austin Joint Working Group](https://standards.ieee.org/ieee/9945/12489/); [Globus Toolkit, aviso oficial de retirada](https://toolkit.globus.org/); [Gustafson, «Reevaluating Amdahl’s Law», ACM, DOI 10.1145/42411.42415](https://doi.org/10.1145/42411.42415); [Arm, arquitectura y modelo de licenciamiento](https://www.arm.com/architecture) y [Armv8-A, estados AArch32/AArch64](https://developer.arm.com/community/arm-community-blogs/b/architectures-and-processors-blog/posts/arm-architecture-reference-manual-for-armv8-a-64-bit-publicly-released).
+
+Materiales de academia cotejados: [bloque 24, organismos de normalización A1-50](https://drive.google.com/file/d/1HKwUIuFhm-wVG0e8kZfFm1R8qI1rGS2G/view?usp=drivesdk); [bloque 47, sistemas operativos A2-C2](https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk); [bloque Hardware, arquitectura, Grid Computing y microprocesadores](https://drive.google.com/file/d/12heek9CTZHiGHjtWvLjdjOE7vIQdlYFm/view?usp=drivesdk). El material de academia permite cotejar cobertura, pero la clave se fundamenta en las fuentes institucionales y técnicas primarias citadas.
+
+Ejecutados `node revision/lote-316.cjs`, `node revision/academia-lote-316.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario de 12.123 preguntas, errores 0; 1.900 examinadas y 10.223 sin revisión individual.
 
 ## Lote 315 — 28 de octubre
 
