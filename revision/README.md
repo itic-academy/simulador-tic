@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 298 (IDs 1806–1810); se resolvieron además seis pendientes antiguos. Acumulado: 1.810 preguntas examinadas, 1.762 verificadas (394 vigentes, 1.239 corregidas y 129 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.313 sin revisar de contenido. Hay 1.399 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 299 (IDs 1811–1815); se resolvieron además seis pendientes antiguos. Acumulado: 1.815 preguntas examinadas, 1.767 verificadas (394 vigentes, 1.244 corregidas y 129 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.308 sin revisar de contenido. Hay 1.404 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -14,6 +14,22 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 - La 52 se corrigió: la secuencia de siete pasos y su paso final (Monitor) pertenecen al RMF de NIST SP 800-37 Rev. 2. La guía CCN-STIC 801 del catálogo oficial se titula «ENS. Responsabilidades y Funciones», así que se retiró la atribución original no sustentada. No se fuerza equivalencia de academia.
 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
+
+## Lote 299 — 27 de octubre
+
+IDs 1811–1815 revisados individualmente con documentación primaria actual y cotejo del programa y materiales de academia. Los cinco enunciados/opciones se corrigieron para delimitar el concepto; cada cambio conserva el objeto original completo en `cambios-lote-299.json`. Acumulado: 1.815 examinadas; 1.767 verificadas (394 vigentes, 1.244 corregidas y 129 históricas); 48 pendientes (24 de fuente y 24 de ambigüedad); 1.404 preguntas con cambios de contenido; 10.308 aún sin revisión individual. Siguiente ID: 1.816.
+
+- 1811 fija el alcance en ASP.NET Framework/System.Web y pregunta por la enumeración SessionStateMode: Microsoft enumera Off, InProc, StateServer, SQLServer y Custom; ClusterServer no es un modo válido.
+- 1812 corrige la generalización de que siempre debe ejecutarse al menos un mapper. Hadoop permite trabajos map-only con cero tareas reduce; en ese caso, la salida de map es la salida final.
+- 1813 deja de inferir una categoría de Flynn solo por la etiqueta MPP. Se pregunta por la propiedad que define MIMD: procesadores autónomos ejecutando instrucciones y flujos de datos distintos.
+- 1814 elimina la afirmación absoluta de que la estatura no puede usarse como rasgo biométrico. Puede medirse, pero usarla sola no suele proporcionar unicidad suficiente para identificar a toda una población amplia.
+- 1815 reemplaza «estrategias de virtualización» por la distribución de responsabilidades de NIST: el proveedor gestiona la infraestructura subyacente en PaaS y el consumidor despliega/controla sus aplicaciones.
+
+Cotejo de academia en Drive: bloque 30 para .NET/desarrollo web de servidor; bloque 34, sección 5.2, para Hadoop y MapReduce; bloque 26, sección 2.2, para SMP/NUMA/MPP y sección de cloud/virtualización; bloque 37, apartado A1-84 y sección 12, para biometría. Correspondencias verificadas con `temario-oficial.json` y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2): 1811 A1-66/A2-III-12; 1812 A1-71/A2-III-15; 1813 A1-56/A2-II-1; 1814 A1-84/A2-I-9; 1815 A1-55/A2-II-1. Los materiales de academia cotejan cobertura, no sustituyen las fuentes técnicas.
+
+Fuentes: [Microsoft Learn, SessionStateMode (.NET Framework 4.8)](https://learn.microsoft.com/en-us/dotnet/api/system.web.sessionstate.sessionstatemode?view=netframework-4.8) y [modos de estado de sesión](https://learn.microsoft.com/en-us/previous-versions/aspnet/ms178586(v=vs.100)); [Apache Hadoop 3.4, trabajos map-only](https://hadoop.apache.org/docs/r3.4.0/hadoop-streaming/HadoopStreaming.html); [Cornell Virtual Workshop, taxonomía de computadores paralelos](https://cvw.cac.cornell.edu/parallel/hpc/taxonomy-parallel-computers) y [UC Berkeley ERL-94-101, arquitecturas paralelas](https://digicoll.lib.berkeley.edu/record/137640/files/ERL-94-101.pdf); [National Research Council, Biometric Recognition: Challenges and Opportunities](https://www.ncbi.nlm.nih.gov/books/NBK219892/), [NIST, característica biométrica](https://csrc.nist.gov/glossary/term/biometric_characteristic) y [NIST, biometrics](https://csrc.nist.gov/glossary/term/Biometrics); [NIST SP 800-145](https://csrc.nist.gov/pubs/sp/800/145/final) y [glosario NIST de PaaS](https://csrc.nist.gov/glossary/term/platform_as_a_service).
+
+Ejecutados `node revision/lote-299.cjs`, `node revision/academia-lote-299.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario 12.123 preguntas, errores 0; 1.815 examinadas y 10.308 sin revisión individual de contenido.
 
 ## Lote 298 — 27 de octubre
 

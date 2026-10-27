@@ -84143,71 +84143,268 @@
       "id": 1811,
       "bloque": 0,
       "tema": 0,
-      "texto": "ASP.NET proporciona varios modos de persistencia para las variables de sesión. Indique cuál de las respuestas NO es un modo válido:",
+      "texto": "En ASP.NET Framework (System.Web), ¿cuál de estas cadenas NO es un valor válido de SessionStateMode?",
       "opciones": [
         "InProc",
         "StateServer",
+        "SQLServer",
         "ClusterServer",
-        "SqlServer"
+        "Custom"
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 3,
+      "comentarios": "Cotejo curricular del entorno .NET y del desarrollo web en servidor; los valores válidos de SessionStateMode se confirman con la enumeración oficial de Microsoft Learn. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de sistemas de información, versión 2026.1 (31-08-2026); apartado de entorno de desarrollo Microsoft .NET y tecnologías web en servidor Correspondencia A1-66, A2-III-12 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30, Tecnologías de sistemas de información, versión 2026.1 (31-08-2026); apartado de entorno de desarrollo Microsoft .NET y tecnologías web en servidor",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de sistemas de información, versión 2026.1 (31-08-2026); apartado de entorno de desarrollo Microsoft .NET y tecnologías web en servidor Correspondencia A1-66, A2-III-12 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "ASP.NET",
+        "System.Web",
+        "session state",
+        "SessionStateMode",
+        "InProc",
+        "StateServer",
+        "SQLServer",
+        "Custom"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/api/system.web.sessionstate.sessionstatemode?view=netframework-4.8",
+            "referencia": "Microsoft Learn, SessionStateMode Enum (.NET Framework 4.8): valores definidos Off, InProc, StateServer, SQLServer y Custom; ClusterServer no pertenece a la enumeración."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/previous-versions/aspnet/ms178586(v=vs.100)",
+            "referencia": "Microsoft Learn, Session-State Modes: describe los modos de almacenamiento de estado de sesión de ASP.NET Framework y su configuración."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, Tecnologías de sistemas de información, versión 2026.1 (31-08-2026); apartado de entorno de desarrollo Microsoft .NET y tecnologías web en servidor; material formativo de Drive cotejado para cobertura curricular."
+          }
+        ],
+        "observaciones": "Cotejo curricular del entorno .NET y del desarrollo web en servidor; los valores válidos de SessionStateMode se confirman con la enumeración oficial de Microsoft Learn. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de sistemas de información, versión 2026.1 (31-08-2026); apartado de entorno de desarrollo Microsoft .NET y tecnologías web en servidor Correspondencia A1-66, A2-III-12 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 1812,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el paradigma MapReduce",
+      "texto": "En un trabajo de Apache Hadoop MapReduce con una función map definida, ¿qué afirmación sobre la fase reduce es correcta?",
       "opciones": [
-        "Siempre tiene que haber por lo menos un Mapper, pero puede no haber Reducer",
-        "Puede no haber un Mapper, pero siempre tiene que haber al menos un Reducer",
-        "Puede no haber ni Mapper ni Reducer",
-        "Tiene que haber por lo menos un Mapper y un Reducer"
+        "Puede omitirse configurando cero tareas reduce; en ese caso, la salida de los mappers constituye la salida final del trabajo.",
+        "Siempre debe ejecutarse al menos una tarea reduce, aunque el trabajo no tenga datos de entrada.",
+        "La fase reduce es obligatoria en todos los trabajos Hadoop MapReduce.",
+        "La fase reduce se ejecuta antes de map y produce los datos que recibe el mapper."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Cotejo curricular de Hadoop/MapReduce dentro de Big Data; la posibilidad map-only y su configuración concreta se verifica con la documentación primaria de Apache Hadoop. Cotejo curricular: ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026); sección 5.2, Hadoop: Common, HDFS, YARN y MapReduce Correspondencia A1-71, A2-III-15 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-71"
+        ],
+        "A2": [
+          "A2-III-15"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026); sección 5.2, Hadoop: Common, HDFS, YARN y MapReduce",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026); sección 5.2, Hadoop: Common, HDFS, YARN y MapReduce Correspondencia A1-71, A2-III-15 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "MapReduce",
+        "Hadoop",
+        "mapper",
+        "reducer",
+        "map-only",
+        "procesamiento por lotes"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://hadoop.apache.org/docs/r3.4.0/hadoop-streaming/HadoopStreaming.html",
+            "referencia": "Apache Hadoop 3.4.0, Hadoop Streaming, sección Specifying Map-Only Jobs: al configurar mapreduce.job.reduces=0 no se crean tareas reducer y la salida de los mappers es la salida final."
+          },
+          {
+            "url": "https://hadoop.apache.org/docs/r3.4.0/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html",
+            "referencia": "Apache Hadoop 3.4.0, MapReduce Tutorial: describe la configuración y ejecución de trabajos MapReduce sobre Hadoop."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026); sección 5.2, Hadoop: Common, HDFS, YARN y MapReduce; material formativo de Drive cotejado para cobertura curricular."
+          }
+        ],
+        "observaciones": "Cotejo curricular de Hadoop/MapReduce dentro de Big Data; la posibilidad map-only y su configuración concreta se verifica con la documentación primaria de Apache Hadoop. Cotejo curricular: ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026); sección 5.2, Hadoop: Common, HDFS, YARN y MapReduce Correspondencia A1-71, A2-III-15 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 1813,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dentro de la clasificación de Flynn, un ordenador con Multiprocesador Masivamente Paralelo (MPP), se clasificaría en la siguiente categoría:",
+      "texto": "En la taxonomía de Flynn, ¿cómo se clasifica un sistema cuyos procesadores autónomos ejecutan simultáneamente instrucciones distintas sobre flujos de datos distintos?",
       "opciones": [
-        "SISD",
-        "SIMD",
-        "MISD",
-        "MIMD"
+        "SISD (Single Instruction, Single Data).",
+        "SIMD (Single Instruction, Multiple Data).",
+        "MISD (Multiple Instruction, Single Data).",
+        "MIMD (Multiple Instruction, Multiple Data)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Cotejo curricular de MPP y sistemas HPC; la pregunta se redefine según las dos dimensiones de Flynn (flujos de instrucciones y datos), verificadas con Cornell y Berkeley. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; sección 2.2, SMP, NUMA y MPP, y arquitecturas de altas prestaciones Correspondencia A1-56, A2-II-1 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; sección 2.2, SMP, NUMA y MPP, y arquitecturas de altas prestaciones",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; sección 2.2, SMP, NUMA y MPP, y arquitecturas de altas prestaciones Correspondencia A1-56, A2-II-1 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "taxonomía de Flynn",
+        "MIMD",
+        "flujos de instrucciones",
+        "flujos de datos",
+        "multiprocesador",
+        "arquitectura paralela"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://cvw.cac.cornell.edu/parallel/hpc/taxonomy-parallel-computers",
+            "referencia": "Cornell Virtual Workshop, Taxonomy of Parallel Computers: Flynn clasifica por número de flujos de instrucciones y de datos; MIMD incluye nodos/procesadores que operan independientemente."
+          },
+          {
+            "url": "https://digicoll.lib.berkeley.edu/record/137640/files/ERL-94-101.pdf",
+            "referencia": "University of California, Berkeley, ERL-94-101, Parallel Architectures: explica Flynn, caracteriza MIMD y documenta que la denominación MPP describe sistemas paralelos masivos, no una de las cuatro casillas de Flynn por sí sola."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; sección 2.2, SMP, NUMA y MPP, y arquitecturas de altas prestaciones; material formativo de Drive cotejado para cobertura curricular."
+          }
+        ],
+        "observaciones": "Cotejo curricular de MPP y sistemas HPC; la pregunta se redefine según las dos dimensiones de Flynn (flujos de instrucciones y datos), verificadas con Cornell y Berkeley. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; sección 2.2, SMP, NUMA y MPP, y arquitecturas de altas prestaciones Correspondencia A1-56, A2-II-1 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 1814,
       "bloque": 0,
       "tema": 0,
-      "texto": "La estatura de una persona no puede emplearse en reconocimiento biométrico porque NO cumple el requisito de:",
+      "texto": "Si se intentara identificar de forma unívoca a cada persona de una población amplia usando únicamente su estatura, ¿qué requisito de idoneidad biométrica sería previsiblemente insuficiente?",
       "opciones": [
-        "Universalidad",
-        "Distintividad",
-        "Evaluabilidad",
-        "Aceptabilidad"
+        "Universalidad: que las personas posean el rasgo.",
+        "Unicidad o distintividad: que el rasgo diferencie suficientemente a las personas.",
+        "Permanencia: que el rasgo sea suficientemente estable en el tiempo.",
+        "Aceptabilidad: que las personas estén dispuestas a presentarlo."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Cotejo curricular del reconocimiento biométrico y de sus métricas; unicidad/distintividad se contrasta con National Research Council y el glosario NIST. Cotejo curricular: ITIC Academy, bloque 37, Tratamiento de imágenes, OCR, biometría y gestión de contenidos, versión 2026.1 (18-09-2026); epígrafe A1-84 y sección 12, métricas y características de reconocimiento biométrico Correspondencia A1-84, A2-I-9 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-84"
+        ],
+        "A2": [
+          "A2-I-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 37, Tratamiento de imágenes, OCR, biometría y gestión de contenidos, versión 2026.1 (18-09-2026); epígrafe A1-84 y sección 12, métricas y características de reconocimiento biométrico",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 37, Tratamiento de imágenes, OCR, biometría y gestión de contenidos, versión 2026.1 (18-09-2026); epígrafe A1-84 y sección 12, métricas y características de reconocimiento biométrico Correspondencia A1-84, A2-I-9 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "biometría",
+        "estatura",
+        "unicidad",
+        "distintividad",
+        "identificación biométrica",
+        "características biométricas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK219892/",
+            "referencia": "National Research Council, Biometric Recognition: Challenges and Opportunities, capítulo Introduction and Fundamental Concepts, siete factores de idoneidad; uniqueness requiere diferencias suficientes entre miembros de la población."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/biometric_characteristic",
+            "referencia": "NIST CSRC Glossary, Biometric Characteristic: atributo biológico del que pueden extraerse valores distintivos y repetibles para reconocimiento automatizado."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/Biometrics",
+            "referencia": "NIST CSRC Glossary, Biometrics: característica física medible o rasgo conductual utilizado para reconocer o verificar identidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xTMCpPmwNi8hpb0nZ3sMqpgvrhLXT-yf/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 37, Tratamiento de imágenes, OCR, biometría y gestión de contenidos, versión 2026.1 (18-09-2026); epígrafe A1-84 y sección 12, métricas y características de reconocimiento biométrico; material formativo de Drive cotejado para cobertura curricular."
+          }
+        ],
+        "observaciones": "Cotejo curricular del reconocimiento biométrico y de sus métricas; unicidad/distintividad se contrasta con National Research Council y el glosario NIST. Cotejo curricular: ITIC Academy, bloque 37, Tratamiento de imágenes, OCR, biometría y gestión de contenidos, versión 2026.1 (18-09-2026); epígrafe A1-84 y sección 12, métricas y características de reconocimiento biométrico Correspondencia A1-84, A2-I-9 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 1815,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indica la afirmación CORRECTA con respecto al modelo de PaaS (Platform as a Service) en Cloud Computing",
+      "texto": "Según la definición de PaaS de NIST SP 800-145, ¿qué responsabilidad corresponde al proveedor y no al consumidor del servicio?",
       "opciones": [
-        "En el modelo PaaS el cliente debe realizar las tareas de actualización del sistema operativo",
-        "Un ejemplo de este modelo de Cloud es Microsoft Office 365",
-        "En el modelo PaaS el cliente debe configurar los parámetros de red del sistema operativo",
-        "En el modelo PaaS el cliente no puede tomar decisiones sobre el sistema operativo o las estrategias de virtualización"
+        "Gestionar el sistema operativo subyacente y la infraestructura de red y servidores.",
+        "Administrar el sistema operativo de cada servidor físico del proveedor.",
+        "Gestionar el hipervisor y el almacenamiento que componen la infraestructura subyacente.",
+        "Mantener la infraestructura subyacente; el consumidor despliega sus aplicaciones y puede configurar algunos parámetros del entorno de alojamiento."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Cotejo curricular de cloud computing, PaaS y virtualización; la matriz de responsabilidades se verifica según la definición de NIST SP 800-145. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; sección 1, capas de infraestructura, y sección 2, virtualización; el bloque remite al modelo NIST IaaS/PaaS/SaaS Correspondencia A1-55, A2-II-1 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-55"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; sección 1, capas de infraestructura, y sección 2, virtualización; el bloque remite al modelo NIST IaaS/PaaS/SaaS",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; sección 1, capas de infraestructura, y sección 2, virtualización; el bloque remite al modelo NIST IaaS/PaaS/SaaS Correspondencia A1-55, A2-II-1 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "PaaS",
+        "Platform as a Service",
+        "NIST SP 800-145",
+        "sistema operativo subyacente",
+        "responsabilidad compartida",
+        "cloud computing"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+            "referencia": "NIST SP 800-145, The NIST Definition of Cloud Computing, sección 2: en PaaS el consumidor despliega aplicaciones y no gestiona la infraestructura subyacente, incluidos sistemas operativos."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/platform_as_a_service",
+            "referencia": "NIST CSRC Glossary, Platform as a Service: reproduce la definición de SP 800-145 y precisa que el consumidor controla las aplicaciones desplegadas y quizá la configuración de su entorno de alojamiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; sección 1, capas de infraestructura, y sección 2, virtualización; el bloque remite al modelo NIST IaaS/PaaS/SaaS; material formativo de Drive cotejado para cobertura curricular."
+          }
+        ],
+        "observaciones": "Cotejo curricular de cloud computing, PaaS y virtualización; la matriz de responsabilidades se verifica según la definición de NIST SP 800-145. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; sección 1, capas de infraestructura, y sección 2, virtualización; el bloque remite al modelo NIST IaaS/PaaS/SaaS Correspondencia A1-55, A2-II-1 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 1816,

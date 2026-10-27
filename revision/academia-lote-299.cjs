@@ -1,0 +1,20 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(bankPath,'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-299.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ si:{url:'https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk',label:'ITIC Academy, bloque 30, Tecnologías de sistemas de información, versión 2026.1 (31-08-2026)'},
+ bigdata:{url:'https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk',label:'ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026)'},
+ hardware:{url:'https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk',label:'ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1'},
+ biometric:{url:'https://drive.google.com/file/d/1xTMCpPmwNi8hpb0nZ3sMqpgvrhLXT-yf/view?usp=drivesdk',label:'ITIC Academy, bloque 37, Tratamiento de imágenes, OCR, biometría y gestión de contenidos, versión 2026.1 (18-09-2026)'}
+};
+const mapping={
+ 1811:{doc:'si',detail:'apartado de entorno de desarrollo Microsoft .NET y tecnologías web en servidor.',topics:['A1-66','A2-III-12'],note:'Cotejo curricular del entorno .NET y del desarrollo web en servidor; los valores válidos de SessionStateMode se confirman con la enumeración oficial de Microsoft Learn.'},
+ 1812:{doc:'bigdata',detail:'sección 5.2, Hadoop: Common, HDFS, YARN y MapReduce.',topics:['A1-71','A2-III-15'],note:'Cotejo curricular de Hadoop/MapReduce dentro de Big Data; la posibilidad map-only y su configuración concreta se verifica con la documentación primaria de Apache Hadoop.'},
+ 1813:{doc:'hardware',detail:'sección 2.2, SMP, NUMA y MPP, y arquitecturas de altas prestaciones.',topics:['A1-56','A2-II-1'],note:'Cotejo curricular de MPP y sistemas HPC; la pregunta se redefine según las dos dimensiones de Flynn (flujos de instrucciones y datos), verificadas con Cornell y Berkeley.'},
+ 1814:{doc:'biometric',detail:'epígrafe A1-84 y sección 12, métricas y características de reconocimiento biométrico.',topics:['A1-84','A2-I-9'],note:'Cotejo curricular del reconocimiento biométrico y de sus métricas; unicidad/distintividad se contrasta con National Research Council y el glosario NIST.'},
+ 1815:{doc:'hardware',detail:'sección 1, capas de infraestructura, y sección 2, virtualización; el bloque remite al modelo NIST IaaS/PaaS/SaaS.',topics:['A1-55','A2-II-1'],note:'Cotejo curricular de cloud computing, PaaS y virtualización; la matriz de responsabilidades se verifica según la definición de NIST SP 800-145.'}
+};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),r=mapping[c.id],doc=r&&docs[r.doc];assert.ok(q?.revision&&r&&doc,`Falta cotejo ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2,...r.topics])assert.ok(official.has(id),id);const curr=`${doc.label}; ${r.detail.replace(/\.$/,'')}`,note=`Cotejo curricular: ${curr} Correspondencia ${r.topics.join(', ')} contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.`;q.revision.observaciones=`${r.note} ${note}`;q.revision.fuentes.push({url:doc.url,referencia:`${curr}; material formativo de Drive cotejado para cobertura curricular.`});q.clasificacion.bloque_academia=curr;q.clasificacion.nota=note;q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q)}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular y BOE actualizado para 1811–1815.');
