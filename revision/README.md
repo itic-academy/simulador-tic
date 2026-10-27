@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 307 (IDs 1851–1855); se resolvieron además seis pendientes antiguos. Acumulado: 1.855 preguntas examinadas, 1.807 verificadas (398 vigentes, 1.279 corregidas y 130 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.268 sin revisar de contenido. Hay 1.440 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 308 (IDs 1856–1860); se resolvieron además seis pendientes antiguos. Acumulado: 1.860 preguntas examinadas, 1.812 verificadas (398 vigentes, 1.284 corregidas y 130 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.263 sin revisar de contenido. Hay 1.445 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 308 — 27 de octubre
+
+IDs 1856–1860 revisados con Constitución/legislación consolidada en BOE, documentación institucional de Parlamento Europeo y Consejo de la UE, y cotejo individual de academia Drive y temarios oficiales. Los originales se conservan íntegros en `cambios-lote-308.json`. Acumulado: 1.860 examinadas; 1.812 verificadas (398 vigentes, 1.284 corregidas y 130 históricas); 48 pendientes (24 de fuente, 24 de ambigüedad), 1.445 con cambios y 10.263 sin revisión individual.
+
+- La 1856 acota la pregunta a la enumeración que sigue a «actúa de acuerdo con los principios de» en el artículo 103.1 CE. Eficacia pertenece a esa lista; objetividad también figura en el artículo, pero en la cláusula anterior, de modo que el enunciado original admitía dos respuestas. Cotejo Drive: bloque 01 Constitución/AGE.
+- La 1857 conserva Estrasburgo, delimitando las doce sesiones plenarias ordinarias anuales; también existen sesiones parciales adicionales en Bruselas. Cotejo Drive: bloque 02 Unión Europea.
+- La 1858 reemplaza la obsoleta ponderación de votos por la regla general vigente de doble mayoría del Consejo: al menos 55 % de Estados miembros y 65 % de población, con excepciones de los Tratados. Cotejo Drive: bloque 02 Unión Europea.
+- La 1859 incorpora la salvedad del artículo 71.2 de la Ley 40/2015: Real Decreto para unidades de Subdirección General o equivalentes y Orden conjunta para órganos inferiores. También diferencia la dependencia de servicios no integrados (órgano central, art. 71.3) e integrados (Delegado/Subdelegado por Secretaría General, art. 71.4). Cotejo Drive: bloques 01 y 03.
+- La 1860 precisa que pregunta por el primer párrafo del artículo 45.1 de la Ley 39/2015 (normas del procedimiento o razones de interés público); el artículo también establece supuestos de publicación obligatoria. Cotejo Drive: bloque 03 Actuación administrativa.
+
+Cotejo con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1856 A1-4/A2-I-1; 1857 A1-5 (A2 no incluye tema específico de UE); 1858 A1-5 (sin tema A2 de UE); 1859 A1-6/A2-I-8; 1860 A1-8/A2-I-8.
+
+Fuentes primarias: [Constitución Española, arts. 103 y 9, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520&tn=1); [Parlamento Europeo, Plenary Sessions](https://www.europarl.europa.eu/news/en/faq/9/dietas); [Consejo de la UE, mayoría cualificada](https://www.consilium.europa.eu/en/council-eu/how-does-the-council-vote/qualified-majority/); [Ley 40/2015, art. 71, texto BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566&lang=es&p=20260929&tn=1#a71); [Ley 39/2015, art. 45, texto BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565&p=20180622&tn=0#a45).
+
+Ejecutados `node revision/lote-308.cjs`, `node revision/academia-lote-308.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario 12.123 preguntas, errores 0; 1.860 examinadas y 10.263 sin revisión individual.
 
 ## Lote 307 — 27 de octubre
 
