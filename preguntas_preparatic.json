@@ -74202,7 +74202,7 @@
       "id": 1621,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes sentencias JCL (Job Control language) marca el final de un trabajo?",
+      "texto": "En JCL de z/OS, ¿qué sentencia nula marca normalmente el final de las sentencias de control de un trabajo?",
       "opciones": [
         "//",
         "// JOB",
@@ -74210,7 +74210,42 @@
         "// DD"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La sentencia nula son únicamente dos barras en las columnas 1 y 2; en JCL marca el final del trabajo. IBM señala además que el fin puede reconocerse al comenzar otro JOB o al terminar el flujo de entrada, y documenta matices particulares de JES2. Se concreta el entorno JCL/z/OS para no presentarlo como una regla universal de cualquier lenguaje de control de trabajos. Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); JCL se sitúa en el tratamiento de trabajos en sistemas z/OS y mainframe; la respuesta concreta procede del manual IBM (A1-62 y A2-IV-1). Correspondencia A1-62, A2-IV-1 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); JCL se sitúa en el tratamiento de trabajos en sistemas z/OS y mainframe; la respuesta concreta procede del manual IBM (A1-62 y A2-IV-1)",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); JCL se sitúa en el tratamiento de trabajos en sistemas z/OS y mainframe; la respuesta concreta procede del manual IBM (A1-62 y A2-IV-1). Correspondencia A1-62, A2-IV-1 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria."
+      },
+      "etiquetas": [
+        "JCL",
+        "z/OS",
+        "null statement",
+        "fin de trabajo",
+        "mainframe"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/zos/3.1.0?topic=reference-null-statement",
+            "referencia": "IBM z/OS MVS JCL Reference, cap. Null Statement: la sentencia nula consta de // en columnas 1–2 y marca el final de un trabajo; también identifica las excepciones de procesamiento JES2."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/zos/3.1.0?topic=reference-job-statement",
+            "referencia": "IBM z/OS MVS JCL Reference, JOB statement: el comienzo de otro JOB en una entrada apilada también puede delimitar el fin del trabajo anterior."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); JCL se sitúa en el tratamiento de trabajos en sistemas z/OS y mainframe; la respuesta concreta procede del manual IBM (A1-62 y A2-IV-1). Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "La sentencia nula son únicamente dos barras en las columnas 1 y 2; en JCL marca el final del trabajo. IBM señala además que el fin puede reconocerse al comenzar otro JOB o al terminar el flujo de entrada, y documenta matices particulares de JES2. Se concreta el entorno JCL/z/OS para no presentarlo como una regla universal de cualquier lenguaje de control de trabajos. Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); JCL se sitúa en el tratamiento de trabajos en sistemas z/OS y mainframe; la respuesta concreta procede del manual IBM (A1-62 y A2-IV-1). Correspondencia A1-62, A2-IV-1 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria."
+      }
     },
     {
       "id": 1622,
@@ -74224,49 +74259,196 @@
         "La gestión de prioridad híbrida emplea simultáneamente los conceptos de gestión distribuida y programada"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva íntegro el reactivo original, pero no se certifica la clave. Las fuentes técnicas consultadas describen el arbitraje de bus en términos de esquemas centralizados y distribuidos y muestran variantes dependientes de la arquitectura; no permiten validar la clasificación usada aquí (“programada”, “distribuida” e “híbrida”) ni la afirmación de cuál es la más utilizada/conveniente para bus o multiplexor. Para resolverlo hace falta identificar el manual o temario concreto del que procede esa terminología y comprobar sus definiciones. Estado pendiente de ambigüedad; no contar la clave original como verificada. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); arbitraje de acceso al bus en arquitectura de computadores (A1-52/A2-II-1); el bloque orienta la materia, pero no confirma la taxonomía ambigua del enunciado. Correspondencia A1-52, A2-II-1 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); arbitraje de acceso al bus en arquitectura de computadores (A1-52/A2-II-1); el bloque orienta la materia, pero no confirma la taxonomía ambigua del enunciado",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); arbitraje de acceso al bus en arquitectura de computadores (A1-52/A2-II-1); el bloque orienta la materia, pero no confirma la taxonomía ambigua del enunciado. Correspondencia A1-52, A2-II-1 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria."
+      },
+      "etiquetas": [
+        "arbitraje de bus",
+        "prioridad de periféricos",
+        "prioridad distribuida",
+        "multiplexor",
+        "periféricos"
+      ],
+      "revision": {
+        "estado": "pendiente_ambiguedad",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://courses.csail.mit.edu/6.826/1997/html/Lec17/tsld020.htm",
+            "referencia": "MIT 6.826, material docente sobre multiplexación y arbitraje: distingue esquemas centralizados y distribuidos, y muestra que la elección depende del mecanismo de reserva/contienda; no define la taxonomía “prioridad programada/distribuida/híbrida” del reactivo."
+          },
+          {
+            "url": "https://ftp.cs.fiu.edu/cnt4713/cda4101/x-arbiter.htm",
+            "referencia": "Florida International University, notas de arquitectura sobre arbitraje de bus: separa centralizado y distribuido y ofrece implementaciones concretas, sin establecer una regla universal que vincule prioridad distribuida con conexión por bus o multiplexor."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); arbitraje de acceso al bus en arquitectura de computadores (A1-52/A2-II-1); el bloque orienta la materia, pero no confirma la taxonomía ambigua del enunciado. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Se conserva íntegro el reactivo original, pero no se certifica la clave. Las fuentes técnicas consultadas describen el arbitraje de bus en términos de esquemas centralizados y distribuidos y muestran variantes dependientes de la arquitectura; no permiten validar la clasificación usada aquí (“programada”, “distribuida” e “híbrida”) ni la afirmación de cuál es la más utilizada/conveniente para bus o multiplexor. Para resolverlo hace falta identificar el manual o temario concreto del que procede esa terminología y comprobar sus definiciones. Estado pendiente de ambigüedad; no contar la clave original como verificada. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); arbitraje de acceso al bus en arquitectura de computadores (A1-52/A2-II-1); el bloque orienta la materia, pero no confirma la taxonomía ambigua del enunciado. Correspondencia A1-52, A2-II-1 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria."
+      }
     },
     {
       "id": 1623,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿En qué consiste el CRA (Customer Relationship Analisis?",
+      "texto": "En el contexto de CRM, ¿qué describe mejor el análisis de las relaciones con los clientes?",
       "opciones": [
-        "Es un conjunto de herramientas que proveen de soporte técnico al CRM.",
-        "Es el precursor del CRM.",
-        "Es el análisis de datos acerca de los clientes y su relación con la empresa.",
-        "Integración del software de análisis de datos con las bases de datos y el inventario de las organizaciones."
+        "Un conjunto de herramientas de soporte técnico que constituye un requisito previo para implantar CRM.",
+        "Una tecnología que precedió históricamente a los sistemas CRM.",
+        "El análisis de datos de clientes e interacciones para comprender y mejorar la relación con la organización.",
+        "La integración obligatoria del software analítico con todas las bases de datos y el inventario de la organización."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La opción 3 es la única que describe la actividad analítica vinculada al CRM: conectar y analizar datos de clientes e interacciones para conocerlos mejor. Se elimina “CRA” como si fuera un acrónimo normalizado (y se corrige la errata inglesa “Analisis”); las fuentes consultadas describen CRM analítico, pero no acreditan que CRA sea una categoría o producto universal separado, precursor o conjunto obligatorio de herramientas. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque 30 incluye CRM y gestión de clientes; el epígrafe oficial A1-72 cubre sistemas CRM y ERP. La definición se contrasta aparte con documentación de CRM analítico. Correspondencia A1-72 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-72"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque 30 incluye CRM y gestión de clientes; el epígrafe oficial A1-72 cubre sistemas CRM y ERP. La definición se contrasta aparte con documentación de CRM analítico",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque 30 incluye CRM y gestión de clientes; el epígrafe oficial A1-72 cubre sistemas CRM y ERP. La definición se contrasta aparte con documentación de CRM analítico. Correspondencia A1-72 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria."
+      },
+      "etiquetas": [
+        "CRM",
+        "análisis de clientes",
+        "CRM analítico",
+        "datos de clientes",
+        "relación con clientes"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.oracle.com/uk/cx/what-is-crm/types-of-crm/",
+            "referencia": "Oracle, Types of CRM: describe CRM analítico como sistemas enfocados en conectar datos, analizarlos y elaborar informes para comprender mejor a los clientes."
+          },
+          {
+            "url": "https://www.oracle.com/europe/cx/what-is-crm/",
+            "referencia": "Oracle, What is CRM?: explica que los sistemas CRM recopilan, conectan y analizan datos sobre clientes e interacciones con la empresa."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque 30 incluye CRM y gestión de clientes; el epígrafe oficial A1-72 cubre sistemas CRM y ERP. La definición se contrasta aparte con documentación de CRM analítico. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "La opción 3 es la única que describe la actividad analítica vinculada al CRM: conectar y analizar datos de clientes e interacciones para conocerlos mejor. Se elimina “CRA” como si fuera un acrónimo normalizado (y se corrige la errata inglesa “Analisis”); las fuentes consultadas describen CRM analítico, pero no acreditan que CRA sea una categoría o producto universal separado, precursor o conjunto obligatorio de herramientas. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque 30 incluye CRM y gestión de clientes; el epígrafe oficial A1-72 cubre sistemas CRM y ERP. La definición se contrasta aparte con documentación de CRM analítico. Correspondencia A1-72 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria."
+      }
     },
     {
       "id": 1624,
       "bloque": 0,
       "tema": 0,
-      "texto": "Codd estableció en 1986 doce principios, de los cuales al menos seis deben satisfacerse para que una base de datos pueda considerarse totalmente relacional. Entre ellos están:",
+      "texto": "Según las reglas de Codd publicadas en 1985, ¿qué conjunto está formado por reglas relacionales auténticas?",
       "opciones": [
-        "Acceso garantizado, catálogo dinámico e independencia física de los datos",
-        "Gestión de una base de datos relacional, representación de la información y regla de inversión",
-        "Independencia de integridad, distribución dependiente y sublenguaje global de datos",
-        "Actualización de vistas, inserciones de alto nivel y núcleo funcional independiente"
+        "Acceso garantizado (regla 2), catálogo en línea dinámico (regla 4) e independencia física de los datos (regla 8).",
+        "Gestión relacional de bases de datos (regla 1), representación de la información (regla 2) y regla de inversión (regla 3).",
+        "Independencia de integridad (regla 9), dependencia de distribución (regla 10) y sublenguaje global de datos (regla 11).",
+        "Actualización de vistas (regla 5), inserciones de alto nivel (regla 6) y núcleo funcional independiente (regla 12)."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La primera combinación es correcta: acceso garantizado es la regla 2, catálogo en línea dinámico la 4 e independencia física la 8. Codd publicó las reglas en dos artículos de octubre de 1985; la regla 0 es fundacional y junto con las reglas numeradas 1–12 suele llamarse “las doce reglas”. No es correcto exigir que baste con cumplir seis, ni atribuir la lista a 1986. Cotejo curricular: ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); el bloque de bases de datos orienta las reglas del modelo relacional y su administración (A1-63/A1-64/A2-IV-2); las reglas y fechas se contrastan con los artículos de Codd. Correspondencia A1-63, A1-64, A2-IV-2 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-64"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); el bloque de bases de datos orienta las reglas del modelo relacional y su administración (A1-63/A1-64/A2-IV-2); las reglas y fechas se contrastan con los artículos de Codd",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); el bloque de bases de datos orienta las reglas del modelo relacional y su administración (A1-63/A1-64/A2-IV-2); las reglas y fechas se contrastan con los artículos de Codd. Correspondencia A1-63, A1-64, A2-IV-2 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria."
+      },
+      "etiquetas": [
+        "Codd",
+        "modelo relacional",
+        "reglas de Codd",
+        "regla cero",
+        "independencia física",
+        "catálogo dinámico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://thaumatorium.com/articles/the-papers-of-ef-the-coddfather-codd/1985a-is-your-dbms-really-relational/",
+            "referencia": "E. F. Codd, “Is Your DBMS Really Relational?”, Computerworld, 14-10-1985, transcripción del artículo original: presenta las doce reglas y una regla fundacional cero; define la regla 2 de acceso garantizado, la 4 de catálogo en línea dinámico y la 8 de independencia física."
+          },
+          {
+            "url": "https://www.geschichte-der-informatik.de/articles/edgar_codd_and_the_relational_model/",
+            "referencia": "Archivo histórico con referencias bibliográficas a los dos artículos de Codd publicados en Computerworld el 14 y 21 de octubre de 1985; documenta que la lista es de 1985, no de 1986."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); el bloque de bases de datos orienta las reglas del modelo relacional y su administración (A1-63/A1-64/A2-IV-2); las reglas y fechas se contrastan con los artículos de Codd. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "La primera combinación es correcta: acceso garantizado es la regla 2, catálogo en línea dinámico la 4 e independencia física la 8. Codd publicó las reglas en dos artículos de octubre de 1985; la regla 0 es fundacional y junto con las reglas numeradas 1–12 suele llamarse “las doce reglas”. No es correcto exigir que baste con cumplir seis, ni atribuir la lista a 1986. Cotejo curricular: ITIC Academy, bloque 29 Bases de Datos, SQL y Modelado de Datos, versión 2026.1 (31-08-2026); el bloque de bases de datos orienta las reglas del modelo relacional y su administración (A1-63/A1-64/A2-IV-2); las reglas y fechas se contrastan con los artículos de Codd. Correspondencia A1-63, A1-64, A2-IV-2 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria."
+      }
     },
     {
       "id": 1625,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la opción verdadera:",
+      "texto": "En el análisis digital del habla, ¿qué procedimiento trabaja explícitamente con una representación en el dominio de la frecuencia?",
       "opciones": [
-        "Los avances más recientes en la síntesis del habla han ido por el camino de una parametrización de la señal original para suprimir la información redundante contenida en las ondas acústicas.",
-        "En el nivel fonético distintivo se determinan los objetos sonoros elementales, tales como los fonemas, las sílabas o los ruidos simples.",
-        "En el nivel fonético se analizan las características físicas de la señal vocal, tales como la frecuencia fundamental, los formantes, las transiciones, etc.",
-        "El estudio en el dominio de la frecuencia ha conducido al análisis del habla por transformadas de Fourier y por bancos de filtros en paralelo."
+        "Medir únicamente la amplitud de la forma de onda en el dominio temporal, sin transformarla.",
+        "Etiquetar fonemas a partir de una transcripción ortográfica sin analizar la señal acústica.",
+        "Estimar el orden temporal de las palabras exclusivamente mediante reglas gramaticales.",
+        "Aplicar una transformada de Fourier a segmentos de la señal para obtener su espectro y analizar sus componentes frecuenciales."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La opción 4 identifica el análisis espectral por DFT/Fourier, normalmente aplicado a ventanas cortas de una señal no estacionaria como el habla. El enunciado original era inválido como pregunta de respuesta única: además de la opción marcada, varias afirmaciones sobre parámetros, fonética y síntesis podían ser verdaderas según el contexto. Se sustituye por una pregunta específica y unívoca sobre el análisis frecuencial, sin hacer afirmaciones generales sobre “los avances más recientes”. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque aborda dispositivos y tratamiento de información multimedia; el procesamiento de voz se encuadra en tratamiento de señal multimedia (A1-56). Correspondencia A1-56 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque aborda dispositivos y tratamiento de información multimedia; el procesamiento de voz se encuadra en tratamiento de señal multimedia (A1-56)",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque aborda dispositivos y tratamiento de información multimedia; el procesamiento de voz se encuadra en tratamiento de señal multimedia (A1-56). Correspondencia A1-56 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria."
+      },
+      "etiquetas": [
+        "análisis del habla",
+        "procesamiento de señal",
+        "dominio de frecuencia",
+        "transformada de Fourier",
+        "bancos de filtros",
+        "fonética acústica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://speechprocessingbook.aalto.fi/representations/short-time-analysis/",
+            "referencia": "Aalto University, Introduction to Speech Processing: explica el uso de la DFT para obtener el espectro de señales de habla y su análisis espectral de corto tiempo."
+          },
+          {
+            "url": "https://speechprocessingbook.aalto.fi/representations/spectrogram-and-the-stft/",
+            "referencia": "Aalto University, Spectrogram and the STFT: el DFT/STFT ofrece representación en frecuencia y es una herramienta usual para analizar y procesar habla."
+          },
+          {
+            "url": "https://www.oreilly.com/library/view/speech-and-audio/9780470195369/29_chapter19.html",
+            "referencia": "Gold, Morgan y Ellis, Speech and Audio Signal Processing, 2.ª ed., cap. 19: describe estimaciones espectrales y bancos de filtros como métodos de análisis del habla."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque aborda dispositivos y tratamiento de información multimedia; el procesamiento de voz se encuadra en tratamiento de señal multimedia (A1-56). Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "La opción 4 identifica el análisis espectral por DFT/Fourier, normalmente aplicado a ventanas cortas de una señal no estacionaria como el habla. El enunciado original era inválido como pregunta de respuesta única: además de la opción marcada, varias afirmaciones sobre parámetros, fonética y síntesis podían ser verdaderas según el contexto. Se sustituye por una pregunta específica y unívoca sobre el análisis frecuencial, sin hacer afirmaciones generales sobre “los avances más recientes”. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque aborda dispositivos y tratamiento de información multimedia; el procesamiento de voz se encuadra en tratamiento de señal multimedia (A1-56). Correspondencia A1-56 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; no sustituye la evidencia técnica primaria."
+      }
     },
     {
       "id": 1626,

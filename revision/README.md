@@ -1,10 +1,12 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 260 (IDs 1601–1620). Acumulado: 1.620 preguntas examinadas, 1.569 verificadas (377 vigentes, 1.067 corregidas y 125 históricas) y 51 pendientes de resolver (28 de fuente y 23 de ambigüedad); quedan 10.503 sin revisar de contenido. Hay 1.223 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 261 (IDs 1621–1625). Acumulado: 1.625 preguntas examinadas, 1.573 verificadas (377 vigentes, 1.071 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.498 sin revisar de contenido. Hay 1.227 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
 
-## Lote 260 — 27 de octubre
+## Lote 261 — 27 de octubre
+
+IDs 1621–1625 revisados individualmente. Se precisa la sentencia nula ## Lote 260 — 27 de octubre
 
 IDs 1616–1620 revisados individualmente. Se actualiza la referencia antigua ODF/ISO 26300:2006 a ISO/IEC 26300-1:2015 y se delimita la edición v1.2 (1616); se acota la copia en papel con CSV al documento administrativo y al mecanismo de cotejo exigido en el art. 27.3.c de la Ley 39/2015, sin afirmar que imprimir cualquier fichero conserve autenticidad (1617); se reemplaza “fuerte tipado”, término de clasificación no uniforme, por el criterio comprobable de tipado estático para C++ (1618); se precisa RAID 0 como striping que requiere dos o más discos, puede aumentar rendimiento agregado y no aporta redundancia (1619); y se corrige “Poof of Hash” como errata, distinguiéndolo de Proof of History y de Tower BFT en Solana (1620). Los originales íntegros se conservan en `cambios-lote-260.json`.
 
