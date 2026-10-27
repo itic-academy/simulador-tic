@@ -1,8 +1,18 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 273 (IDs 1681–1685). Acumulado: 1.685 preguntas examinadas, 1.633 verificadas (379 vigentes, 1.129 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.438 sin revisar de contenido. Hay 1.285 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 274 (IDs 1686–1690). Acumulado: 1.690 preguntas examinadas, 1.638 verificadas (379 vigentes, 1.134 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.433 sin revisar de contenido. Hay 1.290 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 274 — 27 de octubre
+
+IDs 1686–1690 revisados individualmente; cinco corregidos. Acumulado: 1.690 examinadas; 1.638 verificadas (379 vigentes, 1.134 corregidas y 125 históricas), 52 pendientes (28 de fuente y 24 de ambigüedad); 1.290 preguntas con cambios de contenido. Quedan 10.433 sin revisar; siguiente ID: 1.691. Originales íntegros conservados en `cambios-lote-274.json`.
+
+La 1686 elimina la opción malformada «FC-Land location» y presenta «FC-LAN» como distractor; las tres topologías básicas son point-to-point, arbitrated loop y switched fabric. La 1687 especifica que FCoE encapsula tramas FC en Ethernet, a diferencia de FCIP, que sí puede transportar FC por TCP/IP. La 1688 acota los 16 Gbit/s a SATA Express de SATA 3.2 con hasta dos líneas PCIe; no afirma que SATA convencional supere su tasa de 6 Gbit/s. La 1689 distingue la velocidad de puerto Fibre Channel de un solo carril de un enlace FCoE agregado de cuatro carriles 40GFCoE; se fija ese alcance para evitar confundir velocidades nominales. La 1690 formula FC-AL como topología lógica de loop/anillo y no generaliza su representación al cableado físico.
+
+Cotejo con ITIC Academy en Drive: bloque 26, versión 2026.1 (31-08-2026), apartados 7.1–7.2 (interfaces y arquitecturas de almacenamiento) y 8.1–8.2 (RAID, SAN y Fibre Channel). Correspondencia por pregunta con `temario-oficial.json` y BOE-A-2025-25938/BOE-A-2025-26262: 1686–1687 y 1689–1690 A1-56/A1-110/A2-IV-5/A2-IV-8; 1688 A1-56/A2-IV-5. La academia orienta el encaje y no sustituye a las fuentes técnicas.
+
+Fuentes: IBM Documentation sobre topologías FC y RAID; Fibre Channel Industry Association (FCIA), topologías y hoja de velocidades; Cisco, documentación vigente de FCoE y formato de trama; SATA-IO FAQ y ficha Intel para SATA 3.2/SATA Express; ejecutados `node revision/lote-274.cjs`, `node revision/academia-lote-274.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas estructuralmente válidas, 1.690 registros, cero errores y 10.433 preguntas aún sin revisar.
 
 ## Lote 273 — 27 de octubre
 
