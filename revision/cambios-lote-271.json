@@ -1,0 +1,355 @@
+{
+  "fecha": "2026-10-27",
+  "alcance": "IDs 1671–1675; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1671,
+      "original": {
+        "id": 1671,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El sistema de redundancia que calcula dos bloques de paridad independientes por cada escritura, enviando cada uno de los bloques de paridad a un disco diferente y permite recuperarse del fallo simultáneo de dos discos es:",
+        "opciones": [
+          "RAID 0",
+          "RAID 6",
+          "RAID 5",
+          "RAID 3"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1671,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué nivel RAID usa dos bloques de paridad independientes distribuidos entre los discos y permite reconstruir datos si fallan simultáneamente dos unidades?",
+        "opciones": [
+          "RAID 0.",
+          "RAID 6.",
+          "RAID 5.",
+          "RAID 3."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Cotejado con 8.1 («RAID: rendimiento y tolerancia a fallo»). La semántica exacta de doble paridad se verifica además en IBM Documentation. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID, paridad, fallos y recuperación (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID, paridad, fallos y recuperación (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID, paridad, fallos y recuperación (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "RAID 6",
+          "paridad doble",
+          "P/Q",
+          "tolerancia a fallos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/i/7.6.0?topic=concepts-raid-6",
+              "referencia": "IBM Documentation, RAID 6 concepts: RAID 6 protege ante hasta dos fallos de unidades; la capacidad equivalente a dos discos se reserva para paridad, aunque los bloques de paridad se distribuyen por el conjunto."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/power10/9786-42H?topic=recovery-raid-6-disk",
+              "referencia": "IBM Documentation, RAID 6 disk recovery: la doble paridad se distribuye por todos los discos y permite reconstruir datos tras el fallo de uno o dos; un tercer fallo simultáneo rebasa su tolerancia."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID, paridad, fallos y recuperación (A1-56/A2-IV-5); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con 8.1 («RAID: rendimiento y tolerancia a fallo»). La semántica exacta de doble paridad se verifica además en IBM Documentation. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID, paridad, fallos y recuperación (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1672,
+      "original": {
+        "id": 1672,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué es Zoning?",
+        "opciones": [
+          "Es un concepto perteneciente a las redes SAN de FC",
+          "Cada zona se comporta como si en la red SAN sólo existieran los dispositivos que forman parte de ella",
+          "El servidor y la cabina debe estar en la misma zona y adicionalmente la cabina debe permitir el acceso del servicio a dicha LUN",
+          "Todas son válidas"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1672,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué función cumple el zoning en una SAN Fibre Channel?",
+        "opciones": [
+          "Segmenta lógicamente la fabric: en la configuración activa, los puertos incluidos en una zona pueden comunicarse según sus reglas de pertenencia.",
+          "Asigna por sí mismo permisos de escritura sobre el sistema de archivos del host.",
+          "Encripta las tramas de Fibre Channel de extremo a extremo.",
+          "Calcula las paridades RAID de las LUN presentadas."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Cotejado con la arquitectura SAN y el apartado de Fibre Channel del bloque; el comportamiento de zonificación se valida además con IBM Documentation. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, Fibre Channel, zoning y aislamiento de puertos (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56",
+            "A1-110"
+          ],
+          "A2": [
+            "A2-IV-5",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, Fibre Channel, zoning y aislamiento de puertos (A1-56/A1-110/A2-IV-5/A2-IV-8)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, Fibre Channel, zoning y aislamiento de puertos (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "SAN",
+          "Fibre Channel",
+          "zoning",
+          "segmentación",
+          "control de acceso"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/linux-on-systems?topic=devices-step-2-define-zones",
+              "referencia": "IBM Documentation, Defining Fibre Channel zones: la zona agrupa puertos FC especificados por puerto o WWN y permite que se comuniquen con los de su misma zona; para acceder al destino, el iniciador y el puerto objetivo deben compartir zona."
+            },
+            {
+              "url": "https://public.dhe.ibm.com/storage/EOS/flashsystem_a9000/v12.3.2/flashsystem-a9000-12.3.2-documentation.pdf",
+              "referencia": "IBM FlashSystem A9000 Documentation, Fibre Channel zoning: zoning aísla conexiones en una SAN FC; solo miembros de la misma zona se comunican dentro de ella y la zonificación segmenta la fabric."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, Fibre Channel, zoning y aislamiento de puertos (A1-56/A1-110/A2-IV-5/A2-IV-8); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con la arquitectura SAN y el apartado de Fibre Channel del bloque; el comportamiento de zonificación se valida además con IBM Documentation. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, Fibre Channel, zoning y aislamiento de puertos (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1673,
+      "original": {
+        "id": 1673,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El sistema de redundancia que consiste en la división a nivel de bloques más un disco de paridad dedicado se denomina:",
+        "opciones": [
+          "RAID 1",
+          "RAID 3",
+          "RAID 4",
+          "RAID 6"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1673,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué nivel RAID combina división de datos a nivel de bloque con una unidad dedicada para almacenar la paridad?",
+        "opciones": [
+          "RAID 1.",
+          "RAID 3: paridad dedicada con striping a nivel de byte.",
+          "RAID 4: striping por bloques y disco de paridad dedicado.",
+          "RAID 6: doble paridad distribuida."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Cotejado con la comparación de niveles RAID; la diferencia RAID 3/4/5 y la paridad dedicada se comprueba en IBM Redbooks. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: niveles RAID, striping por bloques y paridad dedicada/distribuida (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: niveles RAID, striping por bloques y paridad dedicada/distribuida (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: niveles RAID, striping por bloques y paridad dedicada/distribuida (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "RAID 4",
+          "striping de bloques",
+          "paridad dedicada",
+          "cuello de botella"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.redbooks.ibm.com/redpapers/pdfs/redp5234.pdf",
+              "referencia": "IBM Redbooks, Power Systems RAID Solutions: RAID 4 aplica striping a nivel de bloque y utiliza un disco dedicado a paridad; las escrituras pueden crear un cuello de botella en ese disco."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/cmofm/10.5.0?topic=protection-overview",
+              "referencia": "IBM Documentation, Planning overview: diferencia RAID 4 (striping de sectores con disco de paridad dedicado) de RAID 3 (striping intercalado por bytes) y RAID 5 (paridad distribuida)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: niveles RAID, striping por bloques y paridad dedicada/distribuida (A1-56/A2-IV-5); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con la comparación de niveles RAID; la diferencia RAID 3/4/5 y la paridad dedicada se comprueba en IBM Redbooks. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: niveles RAID, striping por bloques y paridad dedicada/distribuida (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1674,
+      "original": {
+        "id": 1674,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué niveles RAID (Redundant Array of Independent Disks) pueden presentar tolerancia a fallos en dos unidades de disco (drivers) simultáneamente?",
+        "opciones": [
+          "RAID1 y RAID5",
+          "RAID4 y RAID5",
+          "RAID1 y RAID6",
+          "RAID2, RAID3, RAID4 y RAID5"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1674,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué nivel RAID está diseñado para reconstruir datos tras el fallo simultáneo de cualquier pareja de discos del conjunto, gracias a doble paridad?",
+        "opciones": [
+          "RAID 1 (el número de fallos depende de la cantidad y disposición de copias espejo).",
+          "RAID 5 (paridad simple).",
+          "RAID 6 (doble paridad).",
+          "RAID 4 (paridad simple dedicada)."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Cotejado con RAID y tolerancia a fallos. Se conserva el matiz de que RAID 1 depende de número y distribución de espejos, que no debe reducirse a una promesa universal. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: capacidad de protección RAID y número/tipo de fallos tolerados (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: capacidad de protección RAID y número/tipo de fallos tolerados (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: capacidad de protección RAID y número/tipo de fallos tolerados (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "RAID 6",
+          "doble paridad",
+          "dos fallos",
+          "mirroring"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/i/7.6.0?topic=concepts-raid-6",
+              "referencia": "IBM Documentation, RAID 6 concepts: RAID 6 usa capacidad equivalente a dos discos para paridad distribuida y protege ante hasta dos fallos."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/flashsystem-5x00/9.1.2?topic=configurations-distributed-raid-array-properties",
+              "referencia": "IBM Documentation, Distributed RAID array properties: RAID 6 lleva dos bandas de paridad por franja y tolera cualesquiera dos fallos concurrentes; RAID 5 solo tolera uno. La resistencia RAID 1 depende del número/disposición de espejos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: capacidad de protección RAID y número/tipo de fallos tolerados (A1-56/A2-IV-5); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con RAID y tolerancia a fallos. Se conserva el matiz de que RAID 1 depende de número y distribución de espejos, que no debe reducirse a una promesa universal. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: capacidad de protección RAID y número/tipo de fallos tolerados (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1675,
+      "original": {
+        "id": 1675,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto a las arquitecturas de almacenamiento SAN Fibre Channel, indique la respuesta incorrecta:",
+        "opciones": [
+          "Cada equipo de la red se identifica de forma unívoca mediante una dirección de 64 bits.",
+          "El SNS asigna los FCID y permite traducir de FCID a WWN.",
+          "Los switches FC intercambian información de enrutado de tramas mediante un protocolo del tipo EGP adaptado a las redes FC.",
+          "La señalización del canal de fibra puede funcionar sobre pares de cobre."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1675,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto de la arquitectura de una SAN Fibre Channel, indique la respuesta INCORRECTA:",
+        "opciones": [
+          "Cada puerto N_Port tiene un WWPN de 64 bits que lo identifica de forma mundialmente única.",
+          "El fabric asigna un FCID al iniciar sesión y el Name Server registra/permite consultar la correspondencia entre identificadores y nombres de puerto.",
+          "Los switches calculan las rutas entre ellos mediante un protocolo EGP (Exterior Gateway Protocol) adaptado a Fibre Channel.",
+          "Según la interfaz y el alcance, FC puede transmitir señal por fibra óptica o por determinados cables de cobre."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Cotejado con arquitectura SAN y apartado Fibre Channel; el detalle de FCID, Name Server y routing FSPF se valida con FCIA, Cisco, IETF y IBM. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, Fibre Channel, fabric, direcciones de puerto y topologías (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56",
+            "A1-110"
+          ],
+          "A2": [
+            "A2-IV-5",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, Fibre Channel, fabric, direcciones de puerto y topologías (A1-56/A1-110/A2-IV-5/A2-IV-8)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, Fibre Channel, fabric, direcciones de puerto y topologías (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "Fibre Channel",
+          "WWPN",
+          "FCID",
+          "FSPF",
+          "topología SAN"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4626.html",
+              "referencia": "IETF RFC 4626, FSPF MIB: define FSPF como protocolo link-state de selección de rutas en fabric Fibre Channel, y no como protocolo de gateway externo."
+            },
+            {
+              "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_x/configuration/guides/fabric/DCNM-SAN_published/fm_fabric/fspf.pdf",
+              "referencia": "Cisco, Configuring Fibre Channel Routing Services and Protocols: FSPF es el protocolo estándar de selección de rutas de las fabrics Fibre Channel y calcula caminos entre switches."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/ds8870/7.3.0?topic=attachment-fibre-channel-architecture",
+              "referencia": "IBM Documentation, Fibre Channel architecture: describe la arquitectura de nodos/puertos FC, enlaces y topologías de la red."
+            },
+            {
+              "url": "https://fibrechannel.org/fibre-channel-cabling-qa/",
+              "referencia": "Fibre Channel Industry Association, Fibre Channel Cabling Q&A: FC también utiliza cableado de cobre twinaxial para ciertas distancias/velocidades; no debe confundirse con par trenzado Ethernet."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, Fibre Channel, fabric, direcciones de puerto y topologías (A1-56/A1-110/A2-IV-5/A2-IV-8); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con arquitectura SAN y apartado Fibre Channel; el detalle de FCID, Name Server y routing FSPF se valida con FCIA, Cisco, IETF y IBM. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, Fibre Channel, fabric, direcciones de puerto y topologías (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    }
+  ]
+}
