@@ -1,0 +1,362 @@
+{
+  "fecha": "2026-10-27",
+  "alcance": "IDs 1606–1610; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1606,
+      "original": {
+        "id": 1606,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Se dispone únicamente de dos discos, con los que se pretende implementar una matriz redundante (RAID) con tolerancia a fallos y con el mejor rendimiento posible tanto en lectura como en escritura, ¿qué tipo escogería?",
+        "opciones": [
+          "RAID-0",
+          "RAID-1",
+          "RAID-3",
+          "RAID-0 ó RAID-1"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1606,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Con dos discos iguales y el requisito de mantener los datos disponibles si falla uno, ¿qué nivel de RAID de las opciones aporta redundancia?",
+        "opciones": [
+          "RAID 0 (distribución en bandas), que no mantiene una copia redundante.",
+          "RAID 1 (espejo), que replica los datos entre ambos discos.",
+          "RAID 3, que requiere una organización con disco dedicado a paridad y no es la opción de espejo de dos discos.",
+          "RAID 0 o RAID 1 indistintamente, pues ambos toleran el fallo de un disco."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "RAID 1 es la opción con redundancia de espejo para dos discos. El enunciado original exigía “el mejor rendimiento posible tanto en lectura como en escritura”, criterio dependiente de carga, controlador y equipo: RAID 0 puede rendir más, pero pierde disponibilidad ante el fallo de cualquiera de sus discos; el espejo puede ayudar a lecturas y añade trabajo de escritura. Se reformula para que la condición verificable sea la tolerancia a fallos, sin prometer un máximo de rendimiento universal. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque aborda almacenamiento, discos y configuraciones RAID, en relación con el almacenamiento de grandes sistemas (A1-56) y arquitecturas/administración del almacenamiento (A2-IV-5). Correspondencia con A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque aborda almacenamiento, discos y configuraciones RAID, en relación con el almacenamiento de grandes sistemas (A1-56) y arquitecturas/administración del almacenamiento (A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque aborda almacenamiento, discos y configuraciones RAID, en relación con el almacenamiento de grandes sistemas (A1-56) y arquitecturas/administración del almacenamiento (A2-IV-5). Correspondencia con A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+        },
+        "etiquetas": [
+          "RAID",
+          "RAID 1",
+          "mirroring",
+          "redundancia",
+          "tolerancia a fallos",
+          "almacenamiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/cd/E19253-01/816-4520/storage-overview-1/index.html",
+              "referencia": "Oracle Solaris Volume Manager Administration Guide, General Performance Guidelines: RAID 0/striping ofrece buen rendimiento pero no redundancia; RAID 1 proporciona disponibilidad, suele reducir el rendimiento de escritura y puede mejorar lecturas aleatorias."
+            },
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/ntqrf/overview-of-hardware-or-operating-system-striping.html",
+              "referencia": "Oracle Database 19c, Overview of Hardware or Operating System Striping: RAID 1 espeja escrituras en otro disco y mantiene el volumen disponible ante fallo de uno; RAID 0 carece de tolerancia a fallos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque aborda almacenamiento, discos y configuraciones RAID, en relación con el almacenamiento de grandes sistemas (A1-56) y arquitecturas/administración del almacenamiento (A2-IV-5). Correspondencia oficial contrastada con revision/temario-oficial.json y los programas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "RAID 1 es la opción con redundancia de espejo para dos discos. El enunciado original exigía “el mejor rendimiento posible tanto en lectura como en escritura”, criterio dependiente de carga, controlador y equipo: RAID 0 puede rendir más, pero pierde disponibilidad ante el fallo de cualquiera de sus discos; el espejo puede ayudar a lecturas y añade trabajo de escritura. Se reformula para que la condición verificable sea la tolerancia a fallos, sin prometer un máximo de rendimiento universal. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque aborda almacenamiento, discos y configuraciones RAID, en relación con el almacenamiento de grandes sistemas (A1-56) y arquitecturas/administración del almacenamiento (A2-IV-5). Correspondencia con A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+        }
+      }
+    },
+    {
+      "id": 1607,
+      "original": {
+        "id": 1607,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación a los servicios web señale la opción incorrecta:",
+        "opciones": [
+          "SOAP (Simple Object access Protocol ó Services-Oriented Architecture Protocol) es el protocolo de comunicaciones para los Servicios Web",
+          "WSML (Web Service Markup Language) describe el interfaz externo de un Servicio Web y cómo utilizarlo",
+          "UDDI (Universal Discovery, Description and Integration) es un protocolo para registros basados en web que contiene información acerca de servicios. Un registro UDDI es como el listín de los servicios",
+          "Un Servicio Web se describe con un archivo WSDL, se registra en UDDI y se muestra en web a través de SOAP"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1607,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre los estándares y lenguajes relacionados con servicios web, señale la afirmación INCORRECTA:",
+        "opciones": [
+          "SOAP define un marco de mensajería para intercambiar información estructurada; no es un sinónimo de Service-Oriented Architecture.",
+          "WSML es una recomendación W3C que reemplazó WSDL y constituye el formato universal obligatorio para describir la interfaz externa de cualquier servicio web.",
+          "UDDI define un servicio de registro que permite publicar y descubrir servicios y consultar metadatos asociados.",
+          "WSDL 2.0 describe interfaces y operaciones, así como bindings y endpoints concretos de servicios web."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La opción incorrecta es la que presenta WSML como recomendación W3C sustitutiva y universal: WSML fue una Member Submission para modelar servicios web semánticos y sus interfaces, mientras WSDL es la recomendación W3C destinada a describir interfaces, operaciones y endpoints. SOAP es mensajería —no la expansión “Services-Oriented Architecture Protocol”— y UDDI es un registro de publicación y descubrimiento. Se reemplaza la secuencia simplista del original (“WSDL, UDDI y SOAP”) por afirmaciones técnicamente delimitadas. Cotejo curricular: ITIC Academy, bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026 V2 (26-09-2026); el bloque de arquitectura SOA y sistemas distribuidos orienta los servicios web, interoperabilidad, SOAP, WSDL y UDDI (A1-58 y A2-II-6). Correspondencia con A1-58, A2-II-6 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas.",
+        "clasificacion": {
+          "A1": [
+            "A1-58"
+          ],
+          "A2": [
+            "A2-II-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026 V2 (26-09-2026); el bloque de arquitectura SOA y sistemas distribuidos orienta los servicios web, interoperabilidad, SOAP, WSDL y UDDI (A1-58 y A2-II-6)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026 V2 (26-09-2026); el bloque de arquitectura SOA y sistemas distribuidos orienta los servicios web, interoperabilidad, SOAP, WSDL y UDDI (A1-58 y A2-II-6). Correspondencia con A1-58, A2-II-6 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+        },
+        "etiquetas": [
+          "servicios web",
+          "SOAP",
+          "WSML",
+          "WSDL",
+          "UDDI",
+          "SOA",
+          "interoperabilidad"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.w3.org/TR/soap12-part1/",
+              "referencia": "W3C Recommendation, SOAP Version 1.2 Part 1: Messaging Framework: SOAP define un marco extensible de mensajería para intercambiar información estructurada y puede vincularse a distintos protocolos subyacentes."
+            },
+            {
+              "url": "https://www.w3.org/TR/wsdl20/",
+              "referencia": "W3C Recommendation, Web Services Description Language (WSDL) Version 2.0: describe interfaces, operaciones, bindings y endpoints de servicios web."
+            },
+            {
+              "url": "https://www.w3.org/submissions/WSML/",
+              "referencia": "W3C Member Submission, Web Service Modeling Language (WSML): lenguaje de modelado semántico de ontologías, metas, servicios web e interfaces; es una presentación de miembros, no una recomendación W3C que sustituya a WSDL."
+            },
+            {
+              "url": "https://www.oasis-open.org/committees/uddi-spec/faq.php",
+              "referencia": "OASIS UDDI Specification TC, FAQ: la especificación UDDI define servicios de registro para publicar servicios y permitir a consumidores descubrirlos y obtener sus metadatos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026 V2 (26-09-2026); el bloque de arquitectura SOA y sistemas distribuidos orienta los servicios web, interoperabilidad, SOAP, WSDL y UDDI (A1-58 y A2-II-6). Correspondencia oficial contrastada con revision/temario-oficial.json y los programas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "La opción incorrecta es la que presenta WSML como recomendación W3C sustitutiva y universal: WSML fue una Member Submission para modelar servicios web semánticos y sus interfaces, mientras WSDL es la recomendación W3C destinada a describir interfaces, operaciones y endpoints. SOAP es mensajería —no la expansión “Services-Oriented Architecture Protocol”— y UDDI es un registro de publicación y descubrimiento. Se reemplaza la secuencia simplista del original (“WSDL, UDDI y SOAP”) por afirmaciones técnicamente delimitadas. Cotejo curricular: ITIC Academy, bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026 V2 (26-09-2026); el bloque de arquitectura SOA y sistemas distribuidos orienta los servicios web, interoperabilidad, SOAP, WSDL y UDDI (A1-58 y A2-II-6). Correspondencia con A1-58, A2-II-6 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+        }
+      }
+    },
+    {
+      "id": 1608,
+      "original": {
+        "id": 1608,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "PingCastle es una conocida herramienta de:",
+        "opciones": [
+          "Auditoría de Directorio Activo",
+          "Monitorización de dispositivos TCP/IP",
+          "Control de versiones",
+          "Gestión de bases de datos sobre múltiples SGBD"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1608,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "PingCastle es una conocida herramienta de:",
+        "opciones": [
+          "Auditoría de Directorio Activo",
+          "Monitorización de dispositivos TCP/IP",
+          "Control de versiones",
+          "Gestión de bases de datos sobre múltiples SGBD"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La respuesta es auditoría/evaluación de seguridad de Active Directory: el proyecto oficial describe PingCastle como una herramienta de evaluación de riesgos y madurez de AD, no como monitor de dispositivos TCP/IP, control de versiones ni gestor de SGBD. Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1 (30-09-2026); el bloque de seguridad aborda evaluación de riesgos, herramientas y auditoría; PingCastle es una herramienta concreta para evaluar Active Directory (A1-47 y A2-II-11). Correspondencia con A1-47, A2-II-11 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas.",
+        "clasificacion": {
+          "A1": [
+            "A1-47"
+          ],
+          "A2": [
+            "A2-II-11"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1 (30-09-2026); el bloque de seguridad aborda evaluación de riesgos, herramientas y auditoría; PingCastle es una herramienta concreta para evaluar Active Directory (A1-47 y A2-II-11)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1 (30-09-2026); el bloque de seguridad aborda evaluación de riesgos, herramientas y auditoría; PingCastle es una herramienta concreta para evaluar Active Directory (A1-47 y A2-II-11). Correspondencia con A1-47, A2-II-11 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+        },
+        "etiquetas": [
+          "PingCastle",
+          "Active Directory",
+          "seguridad",
+          "auditoría",
+          "evaluación de riesgos"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://github.com/netwrix/pingcastle",
+              "referencia": "Repositorio oficial de Netwrix PingCastle: la herramienta presenta una metodología de evaluación de riesgos y madurez de seguridad de Active Directory; incluye health check y comprobaciones específicas."
+            },
+            {
+              "url": "https://www.pingcastle.com/",
+              "referencia": "Sitio oficial de PingCastle/Netwrix: documentación y finalidad de evaluación de la seguridad de Active Directory."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1 (30-09-2026); el bloque de seguridad aborda evaluación de riesgos, herramientas y auditoría; PingCastle es una herramienta concreta para evaluar Active Directory (A1-47 y A2-II-11). Correspondencia oficial contrastada con revision/temario-oficial.json y los programas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "La respuesta es auditoría/evaluación de seguridad de Active Directory: el proyecto oficial describe PingCastle como una herramienta de evaluación de riesgos y madurez de AD, no como monitor de dispositivos TCP/IP, control de versiones ni gestor de SGBD. Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1 (30-09-2026); el bloque de seguridad aborda evaluación de riesgos, herramientas y auditoría; PingCastle es una herramienta concreta para evaluar Active Directory (A1-47 y A2-II-11). Correspondencia con A1-47, A2-II-11 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+        }
+      }
+    },
+    {
+      "id": 1609,
+      "original": {
+        "id": 1609,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Con respecto al tipo abstracto de datos árbol podemos decir que:",
+        "opciones": [
+          "La profundidad de un nodo en un árbol es la longitud del camino desde dicho nodo a la hoja más lejana que sea alcanzable desde él",
+          "La altura de un nodo en un árbol es la longitud del único camino existente desde el nodo raíz hasta dicho nodo",
+          "La altura de un árbol es el nivel de la hoja menos profunda",
+          "El grado de un árbol es el número máximo de hijos que pueden tener sus subárboles"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1609,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un árbol enraizado, usando la convención de contar las aristas y definir el grado del árbol a partir del número de hijos, ¿qué afirmación es correcta?",
+        "opciones": [
+          "La profundidad de un nodo es la longitud del camino descendente más largo desde él hasta una hoja.",
+          "La altura de un nodo es la distancia desde la raíz hasta ese nodo.",
+          "La altura de un árbol no vacío es la profundidad mínima de una hoja.",
+          "El grado del árbol es el máximo número de hijos que tiene cualquiera de sus nodos."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La respuesta es la opción 4. Se explicita la convención para evitar la imprecisión del original: en un árbol enraizado, la profundidad de un nodo es su distancia a la raíz y la altura del árbol es la máxima profundidad; el grado de un nodo cuenta sus hijos y el del árbol es el máximo de ellos. La altura de un nodo suele definirse como su distancia descendente a la hoja más lejana, pero algunos textos varían al tratar árbol vacío y al contar nodos o aristas. Cotejo curricular: ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, versión 2026.1 (31-08-2026); el bloque de estructuras y ciencia de datos orienta la clasificación en el programa A2, que incluye expresamente tipos abstractos y estructuras de datos (A2-III-5); no se fuerza una correspondencia A1 específica. Correspondencia con A2-III-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas.",
+        "clasificacion": {
+          "A1": [],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, versión 2026.1 (31-08-2026); el bloque de estructuras y ciencia de datos orienta la clasificación en el programa A2, que incluye expresamente tipos abstractos y estructuras de datos (A2-III-5); no se fuerza una correspondencia A1 específica",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, versión 2026.1 (31-08-2026); el bloque de estructuras y ciencia de datos orienta la clasificación en el programa A2, que incluye expresamente tipos abstractos y estructuras de datos (A2-III-5); no se fuerza una correspondencia A1 específica. Correspondencia con A2-III-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+        },
+        "etiquetas": [
+          "tipo abstracto de datos",
+          "árbol",
+          "grado",
+          "profundidad",
+          "altura",
+          "estructuras de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://xlinux.nist.gov/dads/HTML/degree.html",
+              "referencia": "NIST Dictionary of Algorithms and Data Structures, degree: el grado de un nodo de árbol es el número de hijos; el grado de un árbol se asocia con el grado máximo de sus nodos."
+            },
+            {
+              "url": "https://xlinux.nist.gov/dads/HTML/depth.html",
+              "referencia": "NIST Dictionary of Algorithms and Data Structures, depth: la profundidad de un nodo es su distancia a la raíz; la raíz tiene profundidad cero."
+            },
+            {
+              "url": "https://xlinux.nist.gov/dads/HTML/height.html",
+              "referencia": "NIST Dictionary of Algorithms and Data Structures, height: la altura del árbol es la máxima distancia de un nodo a la raíz, equivalente a la máxima profundidad; la raíz sola tiene altura cero en esta convención."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, versión 2026.1 (31-08-2026); el bloque de estructuras y ciencia de datos orienta la clasificación en el programa A2, que incluye expresamente tipos abstractos y estructuras de datos (A2-III-5); no se fuerza una correspondencia A1 específica. Correspondencia oficial contrastada con revision/temario-oficial.json y los programas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "La respuesta es la opción 4. Se explicita la convención para evitar la imprecisión del original: en un árbol enraizado, la profundidad de un nodo es su distancia a la raíz y la altura del árbol es la máxima profundidad; el grado de un nodo cuenta sus hijos y el del árbol es el máximo de ellos. La altura de un nodo suele definirse como su distancia descendente a la hoja más lejana, pero algunos textos varían al tratar árbol vacío y al contar nodos o aristas. Cotejo curricular: ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, versión 2026.1 (31-08-2026); el bloque de estructuras y ciencia de datos orienta la clasificación en el programa A2, que incluye expresamente tipos abstractos y estructuras de datos (A2-III-5); no se fuerza una correspondencia A1 específica. Correspondencia con A2-III-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+        }
+      }
+    },
+    {
+      "id": 1610,
+      "original": {
+        "id": 1610,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Considerando las memorias VRAM, indique la respuesta que es falsa:",
+        "opciones": [
+          "Incluyen una memoria DRAM y unos registros de desplazamiento que permiten acceso en forma serie",
+          "Están especialmente diseñadas para construir memorias de refresco de determinados gráficos",
+          "Es un tipo de RAM que no es dinámica",
+          "Equivale a Video RAM"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1610,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre la VRAM clásica de doble puerto empleada como memoria de vídeo, señale la afirmación FALSA:",
+        "opciones": [
+          "Puede combinar una matriz DRAM con un registro de acceso serie (SAM) para atender transferencias de imagen.",
+          "Se diseñó para facilitar el almacenamiento y la lectura secuencial de datos del búfer de vídeo.",
+          "La VRAM clásica es necesariamente memoria SRAM y, por tanto, no necesita refresco dinámico.",
+          "VRAM es la sigla de Video RAM."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La afirmación falsa es que la VRAM clásica sea necesariamente SRAM: dispositivos multiport VRAM como el TMS44C251 de Texas Instruments se construían con una matriz DRAM y un registro serie SAM, con puertos de acceso de memoria y serie. Se acota a la VRAM clásica de doble puerto: el uso actual de “video memory” también abarca tecnologías distintas y no debe generalizarse esta arquitectura a toda memoria gráfica moderna. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque trata almacenamiento y tratamiento de información multimedia (A1-56), además de arquitecturas y memoria de sistemas (A2-II-1) y almacenamiento (A2-IV-5). Correspondencia con A1-56, A2-II-1, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque trata almacenamiento y tratamiento de información multimedia (A1-56), además de arquitecturas y memoria de sistemas (A2-II-1) y almacenamiento (A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque trata almacenamiento y tratamiento de información multimedia (A1-56), además de arquitecturas y memoria de sistemas (A2-II-1) y almacenamiento (A2-IV-5). Correspondencia con A1-56, A2-II-1, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+        },
+        "etiquetas": [
+          "memoria",
+          "VRAM",
+          "video RAM",
+          "DRAM",
+          "SAM",
+          "memoria de vídeo",
+          "multimedia"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://bitsavers.trailing-edge.com/components/ti/_dataBooks/1989_TI_MOS_Memory_Data_Book.pdf",
+              "referencia": "Texas Instruments, MOS Memory Data Book (1989), ficha TMS44C251, pp. 4-79–4-80: el fabricante describe la multiport video RAM como DRAM con acceso dual y un registro/puerto serie SAM (Serial Access Memory), accesibles de forma simultánea y asíncrona salvo durante transferencias."
+            },
+            {
+              "url": "https://www.ti.com/lit/ug/spru178/spru178.pdf",
+              "referencia": "Texas Instruments, C80 Programmer’s Guide, apartado 2.6.2 VRAM: documenta VRAM con puerto de procesador y puerto serie para acceso de pantalla."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque trata almacenamiento y tratamiento de información multimedia (A1-56), además de arquitecturas y memoria de sistemas (A2-II-1) y almacenamiento (A2-IV-5). Correspondencia oficial contrastada con revision/temario-oficial.json y los programas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "La afirmación falsa es que la VRAM clásica sea necesariamente SRAM: dispositivos multiport VRAM como el TMS44C251 de Texas Instruments se construían con una matriz DRAM y un registro serie SAM, con puertos de acceso de memoria y serie. Se acota a la VRAM clásica de doble puerto: el uso actual de “video memory” también abarca tecnologías distintas y no debe generalizarse esta arquitectura a toda memoria gráfica moderna. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); el bloque trata almacenamiento y tratamiento de información multimedia (A1-56), además de arquitecturas y memoria de sistemas (A2-II-1) y almacenamiento (A2-IV-5). Correspondencia con A1-56, A2-II-1, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+        }
+      }
+    }
+  ]
+}
