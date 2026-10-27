@@ -76493,71 +76493,259 @@
       "id": 1666,
       "bloque": 0,
       "tema": 0,
-      "texto": "El tiempo de latencia en un disco:",
+      "texto": "En un disco duro magnético (HDD), una vez que el cabezal está sobre la pista buscada, ¿cuál es la latencia rotacional media para acceder al sector solicitado?",
       "opciones": [
-        "Tiempo medio necesario para que la información pase por debajo de la cabeza de lectura-escritura cuando está posicionada sobre la pista adecuada",
-        "Corresponde al tiempo empleado para realizar la mitad del giro",
-        "Es equivalente al tiempo de espera",
-        "Todas las respuestas anteriores son ciertas"
+        "El tiempo de transferencia del bloque, sin considerar el giro del plato.",
+        "La mitad del periodo de una revolución del plato: en promedio, el sector espera media vuelta para quedar bajo el cabezal.",
+        "El tiempo que tarda el cabezal en desplazarse entre dos pistas (seek time).",
+        "El tiempo medio de acceso completo, que suma búsqueda, latencia rotacional y transferencia."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Cotejado con el apartado 7.1 de métricas de almacenamiento. La definición matemática de latencia rotacional media se confirma además con documentación IBM. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.1: métricas de almacenamiento y latencia en HDD (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.1: métricas de almacenamiento y latencia en HDD (A1-56/A2-IV-5)",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.1: métricas de almacenamiento y latencia en HDD (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "HDD",
+        "latencia rotacional",
+        "tiempo de acceso",
+        "rpm"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg246039.pdf",
+            "referencia": "IBM Redbooks, Introduction to AIX performance monitoring and tuning, §1: la latencia rotacional media es el tiempo de media revolución; se distingue del tiempo medio de acceso, que agrega seek, latencia rotacional y transferencia."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/db2/11.5.x?topic=design-table-space-impact-query-optimization",
+            "referencia": "IBM Documentation, Table space impact on query optimization: modela el overhead medio como tiempo medio de búsqueda más la mitad de la latencia rotacional."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.1: métricas de almacenamiento y latencia en HDD (A1-56/A2-IV-5); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Cotejado con el apartado 7.1 de métricas de almacenamiento. La definición matemática de latencia rotacional media se confirma además con documentación IBM. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.1: métricas de almacenamiento y latencia en HDD (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+      }
     },
     {
       "id": 1667,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la opción ordenada correctamente de menor a mayor:",
+      "texto": "Usando múltiplos decimales SI para cantidades de información, ¿qué secuencia ordena correctamente desde byte (10⁰) hasta yottabyte (10²⁴)?",
       "opciones": [
-        "byte, kilobyte, megabyte, gigabyte, terabyte, petabyte, zettabyte, exabyte, yottabyte",
-        "byte, kilobyte, megabyte, gigabyte, terabyte, exabyte, petabyte, zettabyte, yottabyte",
-        "byte, kilobyte, megabyte, gigabyte, terabyte, petabyte, exabyte, zettabyte, yottabyte",
-        "byte, kilobyte, megabyte, gigabyte, terabyte, petabyte, exabyte, yottabyte, zettabyte"
+        "B, kB, MB, GB, TB, ZB, EB, PB, YB.",
+        "B, kB, MB, GB, TB, PB, ZB, EB, YB.",
+        "B, kB, MB, GB, TB, PB, EB, ZB, YB.",
+        "B, kB, MB, GB, TB, PB, EB, YB, ZB."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Cotejado en el bloque de métricas y unidades de almacenamiento; los factores decimal SI se verifican directamente con BIPM. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.1–7.2: capacidad, unidades y arquitectura del almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.1–7.2: capacidad, unidades y arquitectura del almacenamiento (A1-56/A2-IV-5)",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.1–7.2: capacidad, unidades y arquitectura del almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "unidades de almacenamiento",
+        "prefijos SI",
+        "byte",
+        "zetta",
+        "yotta"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.bipm.org/en/measurement-units/si-prefixes/",
+            "referencia": "Bureau International des Poids et Mesures (BIPM), SI prefixes: establece los factores decimales kilo 10^3, mega 10^6, giga 10^9, tera 10^12, peta 10^15, exa 10^18, zetta 10^21 y yotta 10^24; ronna/quetta son mayores y se añadieron en 2022."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.1–7.2: capacidad, unidades y arquitectura del almacenamiento (A1-56/A2-IV-5); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Cotejado en el bloque de métricas y unidades de almacenamiento; los factores decimal SI se verifican directamente con BIPM. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.1–7.2: capacidad, unidades y arquitectura del almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+      }
     },
     {
       "id": 1668,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué es LUN Masking?",
+      "texto": "¿Qué función cumple el LUN masking en una SAN?",
       "opciones": [
-        "La cabina presenta una LUN a un servidor y éste puede acceder.",
-        "Se evita que un servidor pueda acceder a una LUN que pertenece a otro servidor.",
-        "Es un método de seguridad en red SAN de la interfaz SCSI.",
-        "Todos son válidas."
+        "Controlar qué hosts/iniciadores pueden ver y acceder a determinadas LUN presentadas por el sistema de almacenamiento.",
+        "Cifrar automáticamente el contenido de cada LUN.",
+        "Crear una copia espejo de todas las LUN.",
+        "Filtrar paquetes IP entre las subredes de la organización."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Cotejado con SAN/almacenamiento de bloque y Fibre Channel; se diferencia el masking de LUN del zoning de la fabric. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, presentación de bloques/LUN, Fibre Channel y controles de acceso (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-56",
+          "A1-110"
+        ],
+        "A2": [
+          "A2-IV-5",
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, presentación de bloques/LUN, Fibre Channel y controles de acceso (A1-56/A1-110/A2-IV-5/A2-IV-8)",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, presentación de bloques/LUN, Fibre Channel y controles de acceso (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "SAN",
+        "LUN masking",
+        "control de acceso",
+        "LUN",
+        "host"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/linux-on-systems?topic=devices-step-3-lun-masking",
+            "referencia": "IBM Documentation, Step 3: LUN masking: el objetivo es controlar el acceso de las instancias a las LUN y permitir al almacenamiento decidir qué WWPN/host puede acceder a cada LUN."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/sanvolumecontroller/9.1.0?topic=hosts-host-mapping",
+            "referencia": "IBM Documentation, Mapping volumes to a host: el mapeo/masking controla qué hosts tienen acceso a unidades lógicas específicas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, presentación de bloques/LUN, Fibre Channel y controles de acceso (A1-56/A1-110/A2-IV-5/A2-IV-8); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Cotejado con SAN/almacenamiento de bloque y Fibre Channel; se diferencia el masking de LUN del zoning de la fabric. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, presentación de bloques/LUN, Fibre Channel y controles de acceso (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+      }
     },
     {
       "id": 1669,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo es SAN iSCSI (Internet SCSI) respecto a FC?",
+      "texto": "Frente a una SAN Fibre Channel dedicada, ¿qué ventaja económica puede ofrecer iSCSI en una organización que ya dispone de una red Ethernet/IP adecuada?",
       "opciones": [
-        "A nivel funcional pueden ofrecer las mismas capacidades pero es más cara",
-        "Igual",
-        "A nivel funcional pueden ofrecer similares capacidades pero es más barata",
-        "SCSI se utiliza en tecnologías NAS y no en SAN"
+        "Garantiza siempre mayor rendimiento que Fibre Channel y elimina todo coste de red.",
+        "Solo funciona mediante una cabina NAS y no ofrece acceso a bloques.",
+        "Puede reutilizar adaptadores, cableado y conmutación Ethernet/IP y así reducir el coste de infraestructura; el ahorro depende del diseño y de los requisitos de rendimiento/aislamiento.",
+        "No utiliza SCSI y por ello no puede ofrecer capacidades funcionales similares a una SAN FC."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Cotejado con las secciones sobre SAN e iSCSI. La ventaja de coste queda condicionada a reutilizar una red Ethernet/IP adecuada y no se plantea como universal. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.3: SAN, almacenamiento de bloques e iSCSI/NVMe-oF (A1-56/A1-108/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-108, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-56",
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-5",
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.3: SAN, almacenamiento de bloques e iSCSI/NVMe-oF (A1-56/A1-108/A2-IV-5/A2-IV-8)",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.3: SAN, almacenamiento de bloques e iSCSI/NVMe-oF (A1-56/A1-108/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-108, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "SAN",
+        "iSCSI",
+        "Fibre Channel",
+        "Ethernet",
+        "coste de infraestructura"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/qsip/7.4.0?topic=overview-external-storage-options",
+            "referencia": "IBM Documentation, External storage options: iSCSI usa un canal de almacenamiento sobre infraestructura Ethernet estándar, en lugar de una red SAN FC dedicada; por esa razón puede ser más sencillo y coste-efectivo, sujeto a la configuración."
+          },
+          {
+            "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg247986.pdf",
+            "referencia": "IBM Redbooks, Storage and Network Convergence Using FCoE and iSCSI: iSCSI ofrece acceso de bloque similar a FC mediante Ethernet/IP existente; la opción puede reducir el coste de infraestructura, pero rendimiento y coste dependen de la velocidad, configuración y requisitos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.3: SAN, almacenamiento de bloques e iSCSI/NVMe-oF (A1-56/A1-108/A2-IV-5/A2-IV-8); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Cotejado con las secciones sobre SAN e iSCSI. La ventaja de coste queda condicionada a reutilizar una red Ethernet/IP adecuada y no se plantea como universal. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.3: SAN, almacenamiento de bloques e iSCSI/NVMe-oF (A1-56/A1-108/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-108, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+      }
     },
     {
       "id": 1670,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un protocolo usado específicamente para controlar el backup de datos entre el almacenamiento primario y el centro de respaldo es:",
+      "texto": "¿Qué protocolo de gestión de datos en red se utiliza para coordinar operaciones de copia y recuperación de servidores NAS entre almacenamiento primario y secundario?",
       "opciones": [
-        "Common Management Information Protocol (CMIP)",
-        "Network Data Management Protocol (NDMP)",
-        "Point-to-Point Protocol (PPP)",
-        "Bootstrap Protocol (BOOTP)"
+        "Common Management Information Protocol (CMIP).",
+        "Network Data Management Protocol (NDMP).",
+        "Point-to-Point Protocol (PPP).",
+        "Bootstrap Protocol (BOOTP)."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Cotejado con las secciones de backup y recuperación. NDMP está cubierto también como protocolo de backup NAS en el apartado 8; su objeto normativo se confirma con SNIA/IETF. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 9.1–9.2: copias de seguridad, recuperación y medios (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 9.1–9.2: copias de seguridad, recuperación y medios (A1-56/A2-IV-3)",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 9.1–9.2: copias de seguridad, recuperación y medios (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "copias de seguridad",
+        "NDMP",
+        "NAS",
+        "recuperación",
+        "almacenamiento primario/secundario"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.snia.org/ndmp",
+            "referencia": "SNIA, Network Data Management Protocol: NDMP es un protocolo estándar abierto para backup en red de NAS; controla el intercambio entre aplicaciones de backup y servidores de ficheros/almacenamiento."
+          },
+          {
+            "url": "https://datatracker.ietf.org/wg/ndmp/about/",
+            "referencia": "IETF Datatracker, Charter of concluded NDMP WG: NDMP define un mecanismo/protocolo en red para controlar backup y recuperación y otras transferencias entre almacenamiento primario y secundario; separa la aplicación de gestión, servidores de datos y de cinta."
+          },
+          {
+            "url": "https://docs.netapp.com/us-en/ontap/tape-backup/overview-concept.html",
+            "referencia": "NetApp ONTAP, Tape backup of FlexVol volumes: permite ejecutar backup/restauración de NAS a cinta mediante aplicaciones compatibles con NDMP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 9.1–9.2: copias de seguridad, recuperación y medios (A1-56/A2-IV-3); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Cotejado con las secciones de backup y recuperación. NDMP está cubierto también como protocolo de backup NAS en el apartado 8; su objeto normativo se confirma con SNIA/IETF. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 9.1–9.2: copias de seguridad, recuperación y medios (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+      }
     },
     {
       "id": 1671,
