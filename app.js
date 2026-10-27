@@ -61,7 +61,7 @@ async function init() {
 
 async function loadQuestions() {
     try {
-        const response = await fetch('preguntas_preparatic.json?v=20261027-285', { cache: 'no-cache' });
+        const response = await fetch('preguntas_preparatic.json?v=20261027-286', { cache: 'no-cache' });
         const data = await response.json();
         allQuestions = data.preguntas;
         document.getElementById('questions-info').textContent =

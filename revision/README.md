@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 284 (IDs 1736–1740); se resolvieron además seis pendientes antiguos. Acumulado: 1.740 preguntas examinadas, 1.694 verificadas (385 vigentes, 1.183 corregidas y 126 históricas) y 46 pendientes (23 de fuente y 23 de ambigüedad); quedan 10.383 sin revisar de contenido. Hay 1.340 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 285 (IDs 1741–1745); se resolvieron además seis pendientes antiguos. Acumulado: 1.745 preguntas examinadas, 1.699 verificadas (385 vigentes, 1.188 corregidas y 126 históricas) y 46 pendientes (23 de fuente y 23 de ambigüedad); quedan 10.378 sin revisar de contenido. Hay 1.345 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -16,6 +16,20 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 285 — 27 de octubre
+
+IDs 1741–1745 revisados individualmente y contrastados con estándares/documentación técnica primaria; cinco correcciones. Acumulado: 1.745 examinadas; 1.699 verificadas (385 vigentes, 1.188 corregidas y 126 históricas); 46 pendientes (23 de fuente y 23 de ambigüedad); 1.345 cambios de contenido; 10.378 aún sin revisar. Siguiente ID: 1.746. Se conservaron los originales en `cambios-lote-285.json`.
+
+- La 1741 deja de declarar universalmente cuál esquema de backup es «más eficiente»: pregunta por el mecanismo de deduplicación y explica que el ahorro depende de la repetición y del patrón de datos.
+- La 1742 restringe la pregunta al uso convencional de SAN host–almacenamiento compartido. No sostiene que SAS nunca pueda formar un dominio/fabric: lo distingue como interconexión serie de dispositivos, frente a los transportes SAN de la lista.
+- La 1743 reemplaza «en ningún caso» por el criterio de interfaz de datos directa habitual para disco/SSD: SATA, mSATA y PCIe/NVMe sí corresponden; RS-232 es una interfaz serie de comunicación DTE/DCE.
+- La 1744 confirma tres unidades como mínimo convencional para RAID 5.
+- La 1745 define la comparación como proporción de capacidad bruta dedicada a redundancia con discos iguales: el espejo RAID 1 conserva aproximadamente el 50% como capacidad útil; la fracción de paridad de RAID 3/5 depende del ancho del conjunto y disminuye al aumentar discos. Se evita convertir esa proporción en un coste monetario universal.
+
+Cotejo Drive: ITIC Academy, bloque 26, versión 2026.1 (31-08-2026), §§ 7.4 (deduplicación), 9 (copias de seguridad), 2.1 (conectividad como contexto), 7.2 (DAS/NAS/SAN) y 8.1–8.2 (RAID/Fibre Channel/SAN). En la comparación SATA/mSATA/PCIe y RS-232 no se atribuye al material una lista concreta que no aparece en el apartado revisado. Correspondencias oficiales en `temario-oficial.json` frente a las convocatorias [A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): A1-56/A2-IV-3 (1741); A1-56/A2-IV-5 (1742–1745). Fuentes técnicas: [IBM, deduplicación](https://www.ibm.com/docs/en/storage-protect/8.1.27?topic=application-data-deduplication), [SNIA, SAN](https://www.snia.org/education/storage_networking_primer/san/what_san), [IBM, SAS](https://www.ibm.com/docs/en/power9/9008-22L?topic=linux-sas-overview), [SATA-IO, SATA 3.3/mSATA](https://sata-io.org/system/files/specifications/SerialATA_Revision_3_3_Gold.pdf), [NVM Express](https://nvmexpress.org/specifications/), [Texas Instruments, RS-232](https://www.ti.com/lit/an/slla607/slla607.pdf), [IBM, RAID 5](https://www.ibm.com/docs/en/i/7.5.0?topic=concepts-how-raid-5-works), [IBM, opciones de protección](https://www.ibm.com/docs/en/i/7.4?topic=protection-comparing-disk-options) y [resumen de niveles RAID](https://www.ibm.com/docs/en/power7/8231-E2C?topic=arrays-raid-level-summary). La academia se usa para comprobar cobertura temática, no como sustituto de las fuentes técnicas.
+
+Ejecutados `node revision/lote-285.cjs`, `node revision/academia-lote-285.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas estructuralmente válidas, 1.745 registros de revisión, cero errores y 10.378 preguntas aún sin revisar de contenido.
 
 ## Lote 284 — 27 de octubre
 
