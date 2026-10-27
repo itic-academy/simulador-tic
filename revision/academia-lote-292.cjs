@@ -1,0 +1,20 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(bankPath,'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-292.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ web:{url:'https://docs.google.com/document/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/edit?usp=drivesdk',label:'ITIC Academy, bloque 30, Sistemas de información y desarrollo web, versión 2026.1 (31-08-2026)'},
+ database:{url:'https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk',label:'ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1 (31-08-2026)'},
+ hardware:{url:'https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk',label:'ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026)'},
+ os:{url:'https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk',label:'ITIC Academy, bloque 27, Sistemas operativos, versión 2026.1 (14-08-2026)'}
+};
+const mapping={
+ 1776:{doc:'web',detail:'apartados de tecnologías Java/Jakarta EE y desarrollo web dinámico.',topics:['A1-65','A1-67','A2-III-10','A2-III-12'],note:'Cotejo con el bloque de desarrollo web y Java: cubre tecnología de servidor y páginas dinámicas. JSP se conserva como nombre histórico de Java EE y se actualiza la referencia curricular a Jakarta Pages.'},
+ 1777:{doc:'database',detail:'apartados de almacenes de datos, arquitectura analítica, procesos de preparación y modelos de acceso.',topics:['A1-75','A2-II-4'],note:'Cotejo con el bloque de bases de datos e inteligencia de negocio: el ítem se relaciona con arquitectura de almacenes de datos y componentes analíticos.'},
+ 1778:{doc:'database',detail:'apartados de transacciones, concurrencia de acceso y mecanismos de resolución de conflictos.',topics:['A1-64','A2-III-4'],note:'Cotejo con el bloque de bases de datos: trata los problemas de concurrencia y los mecanismos de control/resolución de conflictos.'},
+ 1779:{doc:'hardware',detail:'apartados de módulos, tecnologías y componentes de memoria de equipos.',topics:['A1-54','A2-II-1'],note:'Cotejo con el bloque de hardware: DIMM/SIMM se ubican como formatos de módulos de memoria. Este cotejo sólo confirma cobertura temática.'},
+ 1780:{doc:'os',detail:'apartados de sistemas de archivos, unidades/volúmenes y compatibilidad de sistemas operativos.',topics:['A1-59','A2-II-2'],note:'Cotejo con el bloque de sistemas operativos: FAT32 se trata en el contexto de sistemas de archivos y sus límites; la cifra exacta se contrasta con Microsoft Learn.'}
+};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),r=mapping[c.id],doc=r&&docs[r.doc];assert.ok(q?.revision&&r&&doc,`Falta cotejo ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2,...r.topics])assert.ok(official.has(id),id);const curr=`${doc.label}; ${r.detail.replace(/\.$/,'')}`,note=`Cotejo curricular: ${curr}. Encaje ${r.topics.join(', ')} comprobado frente a revision/temario-oficial.json y a las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia se usa como cotejo de cobertura, no como autoridad normativa o técnica.`;q.revision.observaciones=`${r.note} ${note}`;q.revision.fuentes.push({url:doc.url,referencia:`${curr}; material formativo accesible de Drive cotejado para cobertura curricular.`});q.clasificacion.bloque_academia=curr;q.clasificacion.nota=note;q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q)}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular y BOE actualizado para 1776–1780.');

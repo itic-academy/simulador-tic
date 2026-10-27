@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 291 (IDs 1771–1775); se resolvieron además seis pendientes antiguos. Acumulado: 1.775 preguntas examinadas, 1.728 verificadas (387 vigentes, 1.213 corregidas y 128 históricas) y 47 pendientes (24 de fuente y 23 de ambigüedad); quedan 10.348 sin revisar de contenido. Hay 1.372 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 292 (IDs 1776–1780); se resolvieron además seis pendientes antiguos. Acumulado: 1.780 preguntas examinadas, 1.733 verificadas (387 vigentes, 1.218 corregidas y 128 históricas) y 47 pendientes (24 de fuente y 23 de ambigüedad); quedan 10.343 sin revisar de contenido. Hay 1.377 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -14,6 +14,22 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 - La 52 se corrigió: la secuencia de siete pasos y su paso final (Monitor) pertenecen al RMF de NIST SP 800-37 Rev. 2. La guía CCN-STIC 801 del catálogo oficial se titula «ENS. Responsabilidades y Funciones», así que se retiró la atribución original no sustentada. No se fuerza equivalencia de academia.
 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
+
+## Lote 292 — 27 de octubre
+
+IDs 1776–1780 revisados individualmente, con fuentes primarias/documentación oficial y cotejo de cobertura curricular. Las cinco se corrigieron. Acumulado: 1.780 preguntas examinadas; 1.733 verificadas (387 vigentes, 1.218 corregidas y 128 históricas); 47 pendientes (24 de fuente y 23 de ambigüedad); 1.377 preguntas con cambios de contenido; 10.343 aún sin revisión individual. Siguiente ID: 1.781. Los originales completos permanecen en `cambios-lote-292.json`.
+
+- La 1776 actualiza la denominación: JSP era la tecnología pertinente de Java EE y hoy se publica como Jakarta Server Pages dentro de Jakarta EE. La especificación de la Eclipse Foundation confirma que genera contenido web dinámico.
+- La 1777 concreta «áreas de información»: un almacén de datos puede componerse, según el diseño, de staging area y data marts; Oracle también documenta la función del ODS. No se afirma que todas las arquitecturas deban contener cada componente.
+- La 1778 sustituye «solucionar colisiones» por el cometido preciso del bloqueo: coordinar transacciones con escrituras incompatibles sobre la misma fila. El comportamiento concreto depende del SGBD, y un interbloqueo es un conflicto distinto.
+- La 1779 cambia «encapsulados» por «módulos/formatos de módulo»: DIMM significa Dual In-Line Memory Module y SIMM, Single In-Line Memory Module.
+- La 1780 precisa que el máximo FAT32 es 2^32−1 bytes (4 GiB menos un byte), en lugar del redondeo ambiguo «4GB».
+
+Cotejo con academia accesible: bloque 30 para JSP/desarrollo web; bloque 29 para data warehouse y concurrencia; bloque 26 para módulos de memoria; bloque 27 para sistemas de archivos. Correspondencias verificadas contra `temario-oficial.json` y convocatorias [A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1776 A1-65/A1-67 y A2-III-10/A2-III-12; 1777 A1-75/A2-II-4; 1778 A1-64/A2-III-4; 1779 A1-54/A2-II-1; 1780 A1-59/A2-II-2. Los documentos de academia cotejan cobertura, no reemplazan las fuentes técnicas.
+
+Fuentes: [especificación Jakarta Server Pages 3.1](https://jakarta.ee/specifications/pages/3.1/jakarta-server-pages-spec-3.1.pdf); [Oracle Data Warehousing Guide](https://docs.oracle.com/en/database/oracle/oracle-database/26/dwhsg/introduction-data-warehouse-concepts.html) y [glosario Oracle de data warehousing](https://www.oracle.com/database/technologies/datawarehouse-bigdata/glossary-dw.html); [Oracle Database Concepts 26, control de concurrencia](https://docs.oracle.com/en/database/oracle/oracle-database/26/lnpcc/database-concepts.html); [Kingston Memory Glossary](https://www.kingston.com/en/memory/kingston-glossary); [Microsoft Learn, límites FAT32 en WinPE](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim?view=windows-11) y [comparativa de sistemas de archivos](https://learn.microsoft.com/en-ca/windows/win32/fileio/filesystem-functionality-comparison).
+
+Ejecutados `node revision/lote-292.cjs`, `node revision/academia-lote-292.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: total 12.123, errores de inventario 0; 1.780 revisadas, 10.343 sin revisión individual de contenido. Se mantienen explícitamente los 47 pendientes; no se contaron como verificadas.
 
 ## Lote 291 — 27 de octubre
 
