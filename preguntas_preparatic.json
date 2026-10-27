@@ -72617,70 +72617,270 @@
       "id": 1591,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Se pueden ejecutar programas MS Windows bajo un entorno Linux?",
+      "texto": "¿Cómo puede ejecutarse en Linux cierto software desarrollado para Microsoft Windows cuando es compatible con la solución utilizada?",
       "opciones": [
-        "Nunca",
-        "De forma nativa, linux es compatible binario con MS Windows",
-        "Sí, a través de programas específico para ello",
-        "Sí, a través del comando SMB"
+        "Nunca: los programas Windows no pueden ejecutarse en ningún caso en Linux.",
+        "De forma nativa, porque Linux es binariamente compatible con Microsoft Windows.",
+        "Mediante software de compatibilidad, por ejemplo Wine; la compatibilidad depende de la aplicación.",
+        "Mediante el protocolo SMB, que convierte programas Windows en ejecutables Linux."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Wine es una capa de compatibilidad para ejecutar determinadas aplicaciones Windows en Linux y otros sistemas POSIX. No hace a Linux binariamente compatible con Windows, SMB es un protocolo para compartir recursos y Wine no asegura que toda aplicación funcione. Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); el bloque desarrolla Linux/UNIX y las características y administración de sistemas operativos (A1-60 y A2-II-2); Wine se contrasta con la documentación del propio proyecto. Correspondencia con A1-60, A2-II-2 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); el bloque desarrolla Linux/UNIX y las características y administración de sistemas operativos (A1-60 y A2-II-2); Wine se contrasta con la documentación del propio proyecto",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); el bloque desarrolla Linux/UNIX y las características y administración de sistemas operativos (A1-60 y A2-II-2); Wine se contrasta con la documentación del propio proyecto. Correspondencia con A1-60, A2-II-2 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+      },
+      "etiquetas": [
+        "Linux",
+        "Windows",
+        "Wine",
+        "compatibilidad",
+        "POSIX"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.winehq.org/about",
+            "referencia": "WineHQ, About Wine: Wine es una capa de compatibilidad que permite ejecutar aplicaciones Windows en sistemas POSIX como Linux; traduce llamadas a la API de Windows y no es un emulador ni garantiza compatibilidad universal."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); el bloque desarrolla Linux/UNIX y las características y administración de sistemas operativos (A1-60 y A2-II-2); Wine se contrasta con la documentación del propio proyecto. Correspondencia oficial contrastada con revision/temario-oficial.json y los programas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "Wine es una capa de compatibilidad para ejecutar determinadas aplicaciones Windows en Linux y otros sistemas POSIX. No hace a Linux binariamente compatible con Windows, SMB es un protocolo para compartir recursos y Wine no asegura que toda aplicación funcione. Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1 (14-08-2026); el bloque desarrolla Linux/UNIX y las características y administración de sistemas operativos (A1-60 y A2-II-2); Wine se contrasta con la documentación del propio proyecto. Correspondencia con A1-60, A2-II-2 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+      }
     },
     {
       "id": 1592,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique una característica falsa de Java:",
+      "texto": "En el modelo habitual de ejecución de Java sobre la JVM, señale la afirmación FALSA:",
       "opciones": [
-        "Es interpretado y portable a distintas plataformas",
-        "Soporta programación multihilo (multithreading)",
-        "Es un entorno seguro porque el sistema runtime incorpora protección contra virus y alteraciones de código",
-        "Todas las anteriores son características de Java"
+        "El bytecode Java puede ejecutarse en plataformas que dispongan de una implementación compatible de la JVM.",
+        "Java permite programación multihilo y ofrece APIs de concurrencia.",
+        "El entorno de ejecución incorpora un antivirus que garantiza que las aplicaciones Java no contienen malware ni pueden alterar código.",
+        "Java administra memoria automáticamente y comprueba los límites de los arrays."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "La opción 3 es falsa: la JVM y la plataforma Java incorporan mecanismos de seguridad y comprobaciones, pero no son un antivirus ni garantizan que una aplicación carezca de malware o vulnerabilidades. Las opciones restantes describen el modelo habitual de JVM, la concurrencia Java y comprobaciones de memoria. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque incluye Java y el desarrollo de aplicaciones Java/Jakarta EE (A1-67, A2-II-3 y A2-III-10); las especificaciones de la JVM, las APIs de concurrencia y las guías de codificación segura determinan el alcance de cada afirmación. Correspondencia con A1-67, A2-II-3, A2-III-10 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3",
+          "A2-III-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque incluye Java y el desarrollo de aplicaciones Java/Jakarta EE (A1-67, A2-II-3 y A2-III-10); las especificaciones de la JVM, las APIs de concurrencia y las guías de codificación segura determinan el alcance de cada afirmación",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque incluye Java y el desarrollo de aplicaciones Java/Jakarta EE (A1-67, A2-II-3 y A2-III-10); las especificaciones de la JVM, las APIs de concurrencia y las guías de codificación segura determinan el alcance de cada afirmación. Correspondencia con A1-67, A2-II-3, A2-III-10 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+      },
+      "etiquetas": [
+        "Java",
+        "JVM",
+        "bytecode",
+        "multihilo",
+        "seguridad",
+        "antivirus",
+        "validación de entradas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/java/javase/26/docs/specs/jvms/",
+            "referencia": "Oracle, Java Virtual Machine Specification, Java SE 26: define la máquina virtual, el formato de clase y la ejecución del bytecode; la ejecución requiere una implementación compatible de la JVM."
+          },
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/essential/concurrency/",
+            "referencia": "Oracle, The Java Tutorials, Concurrency: Java permite ejecutar varias tareas mediante hilos y proporciona las APIs de concurrencia correspondientes."
+          },
+          {
+            "url": "https://www.oracle.com/java/technologies/javase/seccodeguide.html",
+            "referencia": "Oracle, Secure Coding Guidelines for Java SE, versión 11.0 (junio de 2025): los mecanismos de seguridad ayudan, pero no garantizan ausencia de vulnerabilidades; se requieren validación y prácticas de codificación segura. También reconoce gestión automática de memoria y comprobaciones de límites de arrays."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque incluye Java y el desarrollo de aplicaciones Java/Jakarta EE (A1-67, A2-II-3 y A2-III-10); las especificaciones de la JVM, las APIs de concurrencia y las guías de codificación segura determinan el alcance de cada afirmación. Correspondencia oficial contrastada con revision/temario-oficial.json y los programas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "La opción 3 es falsa: la JVM y la plataforma Java incorporan mecanismos de seguridad y comprobaciones, pero no son un antivirus ni garantizan que una aplicación carezca de malware o vulnerabilidades. Las opciones restantes describen el modelo habitual de JVM, la concurrencia Java y comprobaciones de memoria. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque incluye Java y el desarrollo de aplicaciones Java/Jakarta EE (A1-67, A2-II-3 y A2-III-10); las especificaciones de la JVM, las APIs de concurrencia y las guías de codificación segura determinan el alcance de cada afirmación. Correspondencia con A1-67, A2-II-3, A2-III-10 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+      }
     },
     {
       "id": 1593,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación con las tecnologías JAXP y StAX seleccione la respuesta errónea:",
+      "texto": "Sobre JAXP y StAX en Java, señale la afirmación errónea:",
       "opciones": [
-        "La forma de realizar el parsing es distinta, de tipo push en el caso de StAX frente al tipo pull de SAX.",
-        "La API JAXP nos facilita el acceso, la generación, validación y transformación de ficheros XML.",
-        "La API StAX es bidireccional, permitiendo tanto la lectura como la escritura de documentos XML.",
-        "La API StAX expone métodos para el procesamiento de documentos XML de forma iterativa y basada en eventos."
+        "StAX utiliza un modelo push, mientras que SAX utiliza un modelo pull.",
+        "JAXP agrupa APIs Java para analizar, generar, validar y transformar documentos XML.",
+        "StAX permite tanto leer como escribir documentos XML.",
+        "StAX ofrece APIs de cursor e iterador para procesar un flujo XML avanzando por eventos."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La afirmación errónea es la opción 1: invierte los modelos. StAX es pull (el cliente solicita el siguiente evento) y puede leer y escribir; SAX es push (el analizador llama a los manejadores) y es de lectura. Se explicita que JAXP es el conjunto de APIs XML de Java y se evita describir todo su procesamiento como una sola API. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque aborda tecnologías Java y aplicaciones web (A1-67, A2-III-10 y A2-III-12); la documentación oficial JAXP diferencia los modelos de procesamiento de StAX y SAX. Correspondencia con A1-67, A2-III-10, A2-III-12 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10",
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque aborda tecnologías Java y aplicaciones web (A1-67, A2-III-10 y A2-III-12); la documentación oficial JAXP diferencia los modelos de procesamiento de StAX y SAX",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque aborda tecnologías Java y aplicaciones web (A1-67, A2-III-10 y A2-III-12); la documentación oficial JAXP diferencia los modelos de procesamiento de StAX y SAX. Correspondencia con A1-67, A2-III-10, A2-III-12 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+      },
+      "etiquetas": [
+        "JAXP",
+        "StAX",
+        "SAX",
+        "XML",
+        "pull parsing",
+        "push parsing",
+        "eventos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/jaxp/stax/why.html",
+            "referencia": "Oracle, Java API for XML Processing (JAXP), Why StAX?: especifica que StAX es pull y bidireccional (lectura y escritura), mientras SAX es push y de solo lectura."
+          },
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/jaxp/stax/using.html",
+            "referencia": "Oracle, Java API for XML Processing (JAXP), Using StAX: documenta las APIs de cursor/iterador y el procesamiento iterativo de eventos XML."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/26/docs/api/java.xml/module-summary.html",
+            "referencia": "Oracle, Java SE 26 API, módulo `java.xml`: documenta las APIs Java para procesamiento XML, incluidas JAXP, SAX, StAX, DOM y transformación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque aborda tecnologías Java y aplicaciones web (A1-67, A2-III-10 y A2-III-12); la documentación oficial JAXP diferencia los modelos de procesamiento de StAX y SAX. Correspondencia oficial contrastada con revision/temario-oficial.json y los programas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "La afirmación errónea es la opción 1: invierte los modelos. StAX es pull (el cliente solicita el siguiente evento) y puede leer y escribir; SAX es push (el analizador llama a los manejadores) y es de lectura. Se explicita que JAXP es el conjunto de APIs XML de Java y se evita describir todo su procesamiento como una sola API. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque aborda tecnologías Java y aplicaciones web (A1-67, A2-III-10 y A2-III-12); la documentación oficial JAXP diferencia los modelos de procesamiento de StAX y SAX. Correspondencia con A1-67, A2-III-10, A2-III-12 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+      }
     },
     {
       "id": 1594,
       "bloque": 0,
       "tema": 0,
-      "texto": "Entre las extensiones del Data Mining se encuentra:",
+      "texto": "Si se clasifican las aplicaciones de minería de datos por el tipo de fuente analizada, ¿qué pareja designa, respectivamente, la minería aplicada a información de la Web y la aplicada a colecciones de texto?",
       "opciones": [
         "Web Mining y Text Mining.",
-        "Web Mining, Text Mining e Hipertext Mining.",
-        "Text Mining e Hipertext Mining.",
-        "Web Mining e Hipertext Mining."
+        "Web Mining y Data Warehousing.",
+        "Text Mining y procesamiento analítico en línea (OLAP).",
+        "Process Mining y Text Mining."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La pareja es Web Mining y Text Mining. Se reformula la pregunta porque “extensiones de Data Mining” no tiene una taxonomía universal y “Hypertext Mining” puede aparecer como parte o denominación relacionada con la minería web; la pregunta ahora especifica las fuentes de datos y evita esa ambigüedad. Cotejo curricular: ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1 (16-09-2026); el bloque cubre explotación de datos y Big Data (A1-75), inteligencia de negocio y almacenes (A2-II-4) y minería de datos (A2-III-15); las publicaciones de investigación sustentan las áreas Web Mining y Text Mining. Correspondencia con A1-75, A2-II-4, A2-III-15 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4",
+          "A2-III-15"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1 (16-09-2026); el bloque cubre explotación de datos y Big Data (A1-75), inteligencia de negocio y almacenes (A2-II-4) y minería de datos (A2-III-15); las publicaciones de investigación sustentan las áreas Web Mining y Text Mining",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1 (16-09-2026); el bloque cubre explotación de datos y Big Data (A1-75), inteligencia de negocio y almacenes (A2-II-4) y minería de datos (A2-III-15); las publicaciones de investigación sustentan las áreas Web Mining y Text Mining. Correspondencia con A1-75, A2-II-4, A2-III-15 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+      },
+      "etiquetas": [
+        "minería de datos",
+        "Web Mining",
+        "Text Mining",
+        "minería web",
+        "minería de texto",
+        "Big Data"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://dmr.cs.umn.edu/Papers/P1997_5.pdf",
+            "referencia": "Cooley, Mobasher y Srivastava, Web Mining: Information and Pattern Discovery on the World Wide Web: presenta Web Mining como aplicación de técnicas de minería de datos a información de la Web y expone categorías de contenido y uso."
+          },
+          {
+            "url": "https://aclanthology.org/P99-1001/",
+            "referencia": "Marti A. Hearst, Untangling Text Data Mining, Proceedings of ACL 1999, DOI 10.3115/1034678.1034679: analiza la minería de datos aplicada a grandes colecciones de texto y la distingue de la recuperación de información."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1 (16-09-2026); el bloque cubre explotación de datos y Big Data (A1-75), inteligencia de negocio y almacenes (A2-II-4) y minería de datos (A2-III-15); las publicaciones de investigación sustentan las áreas Web Mining y Text Mining. Correspondencia oficial contrastada con revision/temario-oficial.json y los programas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "La pareja es Web Mining y Text Mining. Se reformula la pregunta porque “extensiones de Data Mining” no tiene una taxonomía universal y “Hypertext Mining” puede aparecer como parte o denominación relacionada con la minería web; la pregunta ahora especifica las fuentes de datos y evita esa ambigüedad. Cotejo curricular: ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1 (16-09-2026); el bloque cubre explotación de datos y Big Data (A1-75), inteligencia de negocio y almacenes (A2-II-4) y minería de datos (A2-III-15); las publicaciones de investigación sustentan las áreas Web Mining y Text Mining. Correspondencia con A1-75, A2-II-4, A2-III-15 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+      }
     },
     {
       "id": 1595,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de las siguientes proposiciones es cierta:",
+      "texto": "Como dato histórico sobre AngularJS 1.x, señale la afirmación correcta:",
       "opciones": [
-        "AngularJS es un framework de JavaScript de código abierto que sigue el patrón de diseño MVC.",
-        "PrimeFaces es una extensión de AngularJS que permite la integración de componentes RichFaces.",
-        "El framework Spring es compatible con el uso del ORM Hibernate, pero es incompatible con el uso de Java Server Faces en la capa de presentación."
+        "Fue un framework JavaScript de código abierto para aplicaciones web del lado cliente; su soporte oficial terminó en enero de 2022.",
+        "PrimeFaces es una extensión de AngularJS que integra componentes de RichFaces.",
+        "Spring es incompatible con Hibernate y no puede utilizarse con aplicaciones Java web.",
+        "AngularJS sigue recibiendo soporte oficial y actualizaciones de seguridad."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La primera afirmación es histórica y correcta: AngularJS fue un framework JavaScript de código abierto para aplicaciones web de cliente. El proyecto terminó su soporte oficial en enero de 2022, por lo que no debe presentarse como una opción actualmente mantenida. La pregunta se acota a ese hecho histórico y evita la afirmación imprecisa de que siguiera estrictamente el patrón MVC. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque trata frameworks y desarrollo web de cliente y servidor (A1-65, A2-III-10 y A2-III-12); se registra AngularJS como tecnología histórica conforme a su aviso oficial de fin de soporte. Correspondencia con A1-65, A2-III-10, A2-III-12 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10",
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque trata frameworks y desarrollo web de cliente y servidor (A1-65, A2-III-10 y A2-III-12); se registra AngularJS como tecnología histórica conforme a su aviso oficial de fin de soporte",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque trata frameworks y desarrollo web de cliente y servidor (A1-65, A2-III-10 y A2-III-12); se registra AngularJS como tecnología histórica conforme a su aviso oficial de fin de soporte. Correspondencia con A1-65, A2-III-10, A2-III-12 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+      },
+      "etiquetas": [
+        "AngularJS",
+        "framework JavaScript",
+        "aplicaciones web",
+        "fin de soporte",
+        "tecnología histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://github.com/angular/angular.js",
+            "referencia": "Proyecto oficial angular/angular.js: identifica AngularJS como framework JavaScript del lado cliente; el propio proyecto indica que el soporte oficial terminó en enero de 2022."
+          },
+          {
+            "url": "https://docs.angularjs.org/guide/migration",
+            "referencia": "Documentación oficial de AngularJS, Migrating from Previous Versions: confirma el fin del soporte oficial de AngularJS en enero de 2022."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque trata frameworks y desarrollo web de cliente y servidor (A1-65, A2-III-10 y A2-III-12); se registra AngularJS como tecnología histórica conforme a su aviso oficial de fin de soporte. Correspondencia oficial contrastada con revision/temario-oficial.json y los programas BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2)."
+          }
+        ],
+        "observaciones": "La primera afirmación es histórica y correcta: AngularJS fue un framework JavaScript de código abierto para aplicaciones web de cliente. El proyecto terminó su soporte oficial en enero de 2022, por lo que no debe presentarse como una opción actualmente mantenida. La pregunta se acota a ese hecho histórico y evita la afirmación imprecisa de que siguiera estrictamente el patrón MVC. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1 (31-08-2026); el bloque trata frameworks y desarrollo web de cliente y servidor (A1-65, A2-III-10 y A2-III-12); se registra AngularJS como tecnología histórica conforme a su aviso oficial de fin de soporte. Correspondencia con A1-65, A2-III-10, A2-III-12 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. El temario de academia orienta la clasificación; las fuentes técnicas primarias determinan las respuestas."
+      }
     },
     {
       "id": 1596,
