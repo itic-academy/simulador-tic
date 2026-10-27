@@ -1,0 +1,344 @@
+{
+  "fecha": "2026-10-27",
+  "alcance": "IDs 1831–1835; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1831,
+      "original": {
+        "id": 1831,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una tabla de una base de datos relacional:",
+        "opciones": [
+          "La definición de un mayor número de índices siempre supone mejora en el rendimiento de las operaciones de consulta.",
+          "La definición de un mayor número de índices siempre mejora el rendimiento de las operaciones de inserción.",
+          "Nunca deben incluirse en los índices atributos que no forman parte de la cláusula WHERE.",
+          "Si las filas de un índice contienen todas las columnas referenciadas en el SELECT, se elimina la necesidad de acceder a la tabla."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1831,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una consulta a una tabla relacional, ¿cuándo puede un índice cubriente evitar acceder a las filas de la tabla base?",
+        "opciones": [
+          "Siempre que exista más de un índice, con independencia de la consulta.",
+          "Siempre que la consulta incluya inserciones.",
+          "Nunca; todos los índices exigen leer además la tabla base.",
+          "Cuando el índice contiene todas las columnas necesarias para la consulta y el motor puede resolverla mediante un acceso index-only."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La respuesta se acota a un índice cubriente: puede evitar el acceso a la tabla base cuando el índice contiene todas las columnas que la consulta necesita y el optimizador elige un acceso index-only. No basta con que estén solo las columnas del SELECT: pueden requerirse además columnas de WHERE, JOIN, GROUP BY u ORDER BY, y el motor puede tener requisitos propios. La respuesta no afirma que se suprima siempre toda lectura adicional en todos los gestores. Cotejo de academia: bloque 29 Bases de datos, sección 8.6; la tabla «Covering/INCLUDE» indica que puede evitar accesos a tabla en ciertas consultas y advierte del mayor tamaño/mantenimiento; A1 tema 63 y A2 tema II-5. Cotejo académico directo: «Covering / INCLUDE» permite evitar accesos a tabla para determinadas consultas y aumenta tamaño/mantenimiento; se usa un índice cubriente sólo si incluye todo lo que necesita la consulta. Correspondencia A1-63, A2-II-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-63"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1 (31-08-2026); sección 8.6, índices, cobertura de consultas e impacto en DML",
+          "estado": "revisada",
+          "nota": "Cotejo académico directo: «Covering / INCLUDE» permite evitar accesos a tabla para determinadas consultas y aumenta tamaño/mantenimiento; se usa un índice cubriente sólo si incluye todo lo que necesita la consulta. Correspondencia A1-63, A2-II-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria."
+        },
+        "etiquetas": [
+          "índice cubriente",
+          "covering index",
+          "índice de cobertura",
+          "index-only scan",
+          "consulta",
+          "acceso a tabla"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+              "referencia": "Microsoft Learn, Index Architecture and Design Guide: un covering index contiene en el índice todas las columnas necesarias para la consulta (incluidas las usadas en filtros, joins, agrupaciones y proyección), por lo que el motor puede satisfacerla sin acceder a la tabla base; los índices excesivos elevan espacio y coste de actualización."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1 (31-08-2026); sección 8.6, índices, cobertura de consultas e impacto en DML; documento de Drive cotejado para cobertura y límites."
+            }
+          ],
+          "observaciones": "La respuesta se acota a un índice cubriente: puede evitar el acceso a la tabla base cuando el índice contiene todas las columnas que la consulta necesita y el optimizador elige un acceso index-only. No basta con que estén solo las columnas del SELECT: pueden requerirse además columnas de WHERE, JOIN, GROUP BY u ORDER BY, y el motor puede tener requisitos propios. La respuesta no afirma que se suprima siempre toda lectura adicional en todos los gestores. Cotejo de academia: bloque 29 Bases de datos, sección 8.6; la tabla «Covering/INCLUDE» indica que puede evitar accesos a tabla en ciertas consultas y advierte del mayor tamaño/mantenimiento; A1 tema 63 y A2 tema II-5. Cotejo académico directo: «Covering / INCLUDE» permite evitar accesos a tabla para determinadas consultas y aumenta tamaño/mantenimiento; se usa un índice cubriente sólo si incluye todo lo que necesita la consulta. Correspondencia A1-63, A2-II-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria."
+        }
+      }
+    },
+    {
+      "id": 1832,
+      "original": {
+        "id": 1832,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indicar la afirmación falsa:",
+        "opciones": [
+          "Los Servicios Web son más simples que la arquitectura CORBA",
+          "Es muy difícil hacer interactuar una plataforma en COM con otra en CORBA",
+          "No es posible que un objeto CORBA se comunique con un objeto JavaRMI",
+          "CORBA tiene múltiples implementaciones"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1832,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Históricamente, ¿qué mecanismo de Java permitía interoperar mediante IIOP entre servidores Java RMI y clientes/objetos CORBA, sujeto a restricciones de interfaz?",
+        "opciones": [
+          "Java RMI-IIOP (RMI over IIOP).",
+          "JDBC-IIOP.",
+          "CORBA-to-COM Bridge.",
+          "SOAP-RMI."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Históricamente, la interoperabilidad se ofrecía mediante Java RMI-IIOP (RMI sobre IIOP), que permitía a clientes CORBA acceder a servidores RMI-IIOP y a clientes RMI-IIOP acceder a determinados objetos CORBA, bajo restricciones de mapeo/interfaz. No implicaba que cualquier objeto CORBA fuera automáticamente compatible. Java SE retiró los módulos CORBA y herramientas asociadas en JDK 11; se conserva como pregunta histórica de middleware y no se presenta como capacidad disponible en el JDK moderno por defecto. Cotejo Drive: el material 064 de arquitectura Java describe Java IDL invocando objetos CORBA mediante IIOP, aunque no nombra RMI-IIOP; se documenta como cobertura histórica relacionada, no como fuente de la afirmación concreta. Correspondencia A1 tema 67 y A2 tema III-10. Cotejo académico de Java IDL/CORBA/IIOP. El texto no localiza el nombre RMI-IIOP, así que no se atribuye la comprobación concreta al temario; Oracle documenta la interoperabilidad y su condición histórica. Correspondencia A1-67, A2-III-10 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-III-10"
+          ],
+          "bloque_academia": "ITIC Academy/ASTIC, material 064 de arquitectura Java (documento histórico consultado en Drive); sección 15.4.6, Java IDL e invocación de objetos CORBA mediante IIOP. El documento consultado no contiene el término RMI-IIOP; se registra como contexto relacionado, no como prueba del mecanismo concreto",
+          "estado": "revisada",
+          "nota": "Cotejo académico de Java IDL/CORBA/IIOP. El texto no localiza el nombre RMI-IIOP, así que no se atribuye la comprobación concreta al temario; Oracle documenta la interoperabilidad y su condición histórica. Correspondencia A1-67, A2-III-10 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria."
+        },
+        "etiquetas": [
+          "CORBA",
+          "Java RMI",
+          "RMI-IIOP",
+          "RMI over IIOP",
+          "IIOP",
+          "interoperabilidad de objetos",
+          "histórico"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/javase/8/docs/technotes/guides/rmi-iiop/rmi_iiop_pg.html",
+              "referencia": "Oracle Java SE 8, RMI-IIOP Programmer’s Guide: explica que RMI-IIOP permite a objetos/servidores Java RMI comunicarse sobre IIOP con clientes CORBA, sujeto a restricciones de interfaces."
+            },
+            {
+              "url": "https://docs.oracle.com/en/java/javase/26/migrate/removed-tools-components.html",
+              "referencia": "Oracle JDK 26, Removed Tools and Components: Java SE retiró sus módulos CORBA/RMI-IIOP estándar en JDK 11; el material se presenta por ello como interoperabilidad histórica, no como capacidad incluida en el JDK actual."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1C8_hX_lPM88f6tp9XZd3xQgI7HWRuWbK/view?usp=drivesdk",
+              "referencia": "ITIC Academy/ASTIC, material 064 de arquitectura Java (documento histórico consultado en Drive); sección 15.4.6, Java IDL e invocación de objetos CORBA mediante IIOP. El documento consultado no contiene el término RMI-IIOP; se registra como contexto relacionado, no como prueba del mecanismo concreto; documento de Drive cotejado para cobertura y límites."
+            }
+          ],
+          "observaciones": "Históricamente, la interoperabilidad se ofrecía mediante Java RMI-IIOP (RMI sobre IIOP), que permitía a clientes CORBA acceder a servidores RMI-IIOP y a clientes RMI-IIOP acceder a determinados objetos CORBA, bajo restricciones de mapeo/interfaz. No implicaba que cualquier objeto CORBA fuera automáticamente compatible. Java SE retiró los módulos CORBA y herramientas asociadas en JDK 11; se conserva como pregunta histórica de middleware y no se presenta como capacidad disponible en el JDK moderno por defecto. Cotejo Drive: el material 064 de arquitectura Java describe Java IDL invocando objetos CORBA mediante IIOP, aunque no nombra RMI-IIOP; se documenta como cobertura histórica relacionada, no como fuente de la afirmación concreta. Correspondencia A1 tema 67 y A2 tema III-10. Cotejo académico de Java IDL/CORBA/IIOP. El texto no localiza el nombre RMI-IIOP, así que no se atribuye la comprobación concreta al temario; Oracle documenta la interoperabilidad y su condición histórica. Correspondencia A1-67, A2-III-10 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria."
+        }
+      }
+    },
+    {
+      "id": 1833,
+      "original": {
+        "id": 1833,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Cuál es la forma correcta de crear un sello electrónico según la normativa sobre administración electrónica:",
+        "opciones": [
+          "Resolución del Ministro publicado en BOE",
+          "Resolución del Ministro publicado en sede",
+          "Resolución de la subsecretaría publicado en la Sede",
+          "Resolución del Consejo de Ministros publicado en BOE"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1833,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el ámbito estatal, para crear el sello electrónico de un Ministerio, ¿qué acto prevé el artículo 19.3 del Real Decreto 203/2021?",
+        "opciones": [
+          "Resolución de la persona titular de la Subsecretaría del Ministerio, publicada en su sede electrónica o sede asociada.",
+          "Resolución ministerial publicada exclusivamente en el BOE.",
+          "Resolución del Consejo de Ministros publicada en la sede del Ministerio.",
+          "Resolución de una Subsecretaría publicada exclusivamente en el BOE."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "El artículo 19(3) del RD 203/2021 establece para la AGE que el sello de un Ministerio se crea por resolución de su titular de Subsecretaría y se publica en la sede electrónica o sede asociada correspondiente. Para un organismo público o entidad vinculada/dependiente, el propio apartado contempla la resolución de su Presidencia o Dirección. Se reformula para preguntar específicamente por un Ministerio y no generalizar un único órgano creador para todos los entes estatales. Cotejo de academia: bloque 10 Gobernanza TIC y Administración Digital, actualizado a octubre de 2026, cubre sedes, firma y administración digital; el artículo procedimental se verifica en BOE. Correspondencia A1 tema 80 y A2 tema I-9. Cotejo de cobertura general con el bloque 10 actualizado a octubre de 2026; la regla de quién crea el sello de un Ministerio y dónde publica se verifica de forma independiente en el BOE, art. 19.3 del RD 203/2021. Correspondencia A1-80, A2-I-9 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-80"
+          ],
+          "A2": [
+            "A2-I-9"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 10, Gobernanza TIC y Administración Digital, actualización octubre de 2026; alcance de gobernanza/administración digital: sedes, identificación, firma y actuación electrónica. La extracción consultada no localizó literalmente el procedimiento del art. 19.3 sobre creación de sellos",
+          "estado": "revisada",
+          "nota": "Cotejo de cobertura general con el bloque 10 actualizado a octubre de 2026; la regla de quién crea el sello de un Ministerio y dónde publica se verifica de forma independiente en el BOE, art. 19.3 del RD 203/2021. Correspondencia A1-80, A2-I-9 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria."
+        },
+        "etiquetas": [
+          "sello electrónico",
+          "Administración General del Estado",
+          "Subsecretaría",
+          "resolución",
+          "sede electrónica",
+          "RD 203/2021"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-5032",
+              "referencia": "Real Decreto 203/2021, artículo 19(3): en el ámbito estatal, crear el sello electrónico de un Ministerio corresponde a resolución de la persona titular de su Subsecretaría, publicada en la sede electrónica o asociada correspondiente."
+            },
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566",
+              "referencia": "Ley 40/2015, artículo 40: regula la identificación de las Administraciones Públicas mediante sello electrónico y su publicidad/verificación; el procedimiento estatal de creación se concreta en el artículo 19 del RD 203/2021."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1alTzv7f2Katg4EdxJ72SYkLm6UScCCho/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 10, Gobernanza TIC y Administración Digital, actualización octubre de 2026; alcance de gobernanza/administración digital: sedes, identificación, firma y actuación electrónica. La extracción consultada no localizó literalmente el procedimiento del art. 19.3 sobre creación de sellos; documento de Drive cotejado para cobertura y límites."
+            }
+          ],
+          "observaciones": "El artículo 19(3) del RD 203/2021 establece para la AGE que el sello de un Ministerio se crea por resolución de su titular de Subsecretaría y se publica en la sede electrónica o sede asociada correspondiente. Para un organismo público o entidad vinculada/dependiente, el propio apartado contempla la resolución de su Presidencia o Dirección. Se reformula para preguntar específicamente por un Ministerio y no generalizar un único órgano creador para todos los entes estatales. Cotejo de academia: bloque 10 Gobernanza TIC y Administración Digital, actualizado a octubre de 2026, cubre sedes, firma y administración digital; el artículo procedimental se verifica en BOE. Correspondencia A1 tema 80 y A2 tema I-9. Cotejo de cobertura general con el bloque 10 actualizado a octubre de 2026; la regla de quién crea el sello de un Ministerio y dónde publica se verifica de forma independiente en el BOE, art. 19.3 del RD 203/2021. Correspondencia A1-80, A2-I-9 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria."
+        }
+      }
+    },
+    {
+      "id": 1834,
+      "original": {
+        "id": 1834,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el ámbito de las bases de datos Oracle, ANALYZE:",
+        "opciones": [
+          "Recopila estadísticas acerca de los objetos del esquema usados por el optimizador.",
+          "Es una herramienta de la base de datos con la que se realiza el análisis del modelo de datos.",
+          "Es una herramienta de la base de datos con la que se realiza el diseño del modelo de datos.",
+          "Es una vista ordinaria."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1834,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Oracle AI Database 26, ¿qué afirmación describe con mayor precisión la sentencia ANALYZE?",
+        "opciones": [
+          "Puede validar objetos e identificar filas encadenadas; Oracle considera obsoleto usarla para estadísticas del optimizador y recomienda DBMS_STATS.",
+          "Es la única forma vigente de recopilar estadísticas del optimizador.",
+          "Es una vista del diccionario que no ejecuta operaciones.",
+          "Fue eliminada y no puede usarse para validar objetos."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La clave original era incompleta para la versión actual: ANALYZE todavía puede recopilar o gestionar cierta información de objetos, pero Oracle considera obsoleto usarlo para estadísticas del optimizador y recomienda DBMS_STATS. Se actualiza la opción correcta para distinguir los usos válidos residuales (VALIDATE, LIST CHAINED ROWS y datos físicos específicos) del flujo vigente recomendado para estadísticas del optimizador. Cotejo de academia: bloque 29 Bases de datos/SQL cubre índices, optimizador y estadísticas de SGBD; no se encontró una mención específica a la sentencia Oracle ANALYZE, por lo que la vigencia se sustenta en documentación Oracle Database 26. Correspondencia A1 tema 63 y A2 tema IV-2. Cotejo de la cobertura general de base de datos y administración de SGBD; no se atribuye al material académico el detalle de la deprecación, contrastado en Oracle Database 26. Correspondencia A1-63, A2-IV-2 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-63"
+          ],
+          "A2": [
+            "A2-IV-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1 (31-08-2026); contenidos de optimizador, índices, estadísticas y administración de SGBD; no se encontró mención literal a ANALYZE/DBMS_STATS en el material consultado",
+          "estado": "revisada",
+          "nota": "Cotejo de la cobertura general de base de datos y administración de SGBD; no se atribuye al material académico el detalle de la deprecación, contrastado en Oracle Database 26. Correspondencia A1-63, A2-IV-2 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria."
+        },
+        "etiquetas": [
+          "Oracle",
+          "ANALYZE",
+          "DBMS_STATS",
+          "estadísticas del optimizador",
+          "estadísticas de objetos",
+          "comando heredado"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ANALYZE.html",
+              "referencia": "Oracle AI Database 26 SQL Language Reference, ANALYZE: actualmente sirve para validar estructuras, identificar filas migradas/encadenadas y recopilar ciertos datos; su uso para estadísticas del optimizador es obsoleto y debe preferirse DBMS_STATS."
+            },
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/managing-schema-objects.html",
+              "referencia": "Oracle AI Database 26 Administrator’s Guide, Managing Schema Objects: desaconseja ANALYZE para estadísticas del optimizador y recomienda DBMS_STATS; conserva casos de uso específicos de ANALYZE."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1 (31-08-2026); contenidos de optimizador, índices, estadísticas y administración de SGBD; no se encontró mención literal a ANALYZE/DBMS_STATS en el material consultado; documento de Drive cotejado para cobertura y límites."
+            }
+          ],
+          "observaciones": "La clave original era incompleta para la versión actual: ANALYZE todavía puede recopilar o gestionar cierta información de objetos, pero Oracle considera obsoleto usarlo para estadísticas del optimizador y recomienda DBMS_STATS. Se actualiza la opción correcta para distinguir los usos válidos residuales (VALIDATE, LIST CHAINED ROWS y datos físicos específicos) del flujo vigente recomendado para estadísticas del optimizador. Cotejo de academia: bloque 29 Bases de datos/SQL cubre índices, optimizador y estadísticas de SGBD; no se encontró una mención específica a la sentencia Oracle ANALYZE, por lo que la vigencia se sustenta en documentación Oracle Database 26. Correspondencia A1 tema 63 y A2 tema IV-2. Cotejo de la cobertura general de base de datos y administración de SGBD; no se atribuye al material académico el detalle de la deprecación, contrastado en Oracle Database 26. Correspondencia A1-63, A2-IV-2 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria."
+        }
+      }
+    },
+    {
+      "id": 1835,
+      "original": {
+        "id": 1835,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale cuál de las siguientes afirmaciones corresponde a una de las características de los procesadores paralelos (MIMD):",
+        "opciones": [
+          "Todas las unidades de ejecución paralela están sincronizadas y todas responden a una sola instrucción que emana de un único contador de programa.",
+          "Una memoria central contiene los programas y una unidad de control centralizada se encarga de extraer cada instrucción y ejecutarla.",
+          "Son útiles para las operaciones que repiten los mismos cálculos en un conjunto de datos (vectores).",
+          "Se trata de un grupo de procesadores independientes cada uno de ellos con su propio contador de programa y sus propios datos."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1835,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale cuál de las siguientes afirmaciones corresponde a una de las características de los procesadores paralelos (MIMD):",
+        "opciones": [
+          "Todas las unidades de ejecución paralela están sincronizadas y todas responden a una sola instrucción que emana de un único contador de programa.",
+          "Una memoria central contiene los programas y una unidad de control centralizada se encarga de extraer cada instrucción y ejecutarla.",
+          "Son útiles para las operaciones que repiten los mismos cálculos en un conjunto de datos (vectores).",
+          "Se trata de un grupo de procesadores independientes cada uno de ellos con su propio contador de programa y sus propios datos."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La opción correcta es MIMD (Multiple Instruction, Multiple Data): en la taxonomía de Flynn hay varios flujos de instrucciones y de datos. Procesadores independientes con control/programa propio son una caracterización didáctica frecuente; la definición clasificatoria se basa en esos flujos, no en que cada equipo tenga necesariamente una organización física concreta de memoria. Las opciones 0 y 2 describen SIMD; la 1 se aproxima a una organización centralizada SISD. Cotejo de academia: bloque 26 Hardware/Arquitectura, apartados «Arquitecturas de ordenadores» y «Taxonomía de Flynn», define MIMD como múltiples instrucciones sobre múltiples datos simultáneamente. Correspondencia A1 tema 52 y A2 tema II-1. Cotejo académico directo de taxonomía de Flynn y paralelismo MIMD; se confirma la base conceptual con el artículo original de Flynn de 1966. Correspondencia A1-52, A2-II-1 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, Hardware v2_2026, arquitectura de ordenadores y taxonomía de Flynn; apartados «Arquitecturas de ordenadores» y «Taxonomía de Flynn»; MIMD se define por flujos múltiples de instrucciones y datos",
+          "estado": "revisada",
+          "nota": "Cotejo académico directo de taxonomía de Flynn y paralelismo MIMD; se confirma la base conceptual con el artículo original de Flynn de 1966. Correspondencia A1-52, A2-II-1 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria."
+        },
+        "etiquetas": [
+          "MIMD",
+          "Flynn",
+          "Multiple Instruction Multiple Data",
+          "flujo de instrucciones",
+          "flujo de datos",
+          "arquitectura paralela"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1109/PROC.1966.5273",
+              "referencia": "Michael J. Flynn, “Very High-Speed Computing Systems”, Proceedings of the IEEE 54(12), 1966, DOI 10.1109/PROC.1966.5273: define las categorías SISD/SIMD/MISD/MIMD según multiplicidad de flujos de instrucción y datos; en MIMD los flujos son múltiples."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12heek9CTZHiGHjtWvLjdjOE7vIQdlYFm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, Hardware v2_2026, arquitectura de ordenadores y taxonomía de Flynn; apartados «Arquitecturas de ordenadores» y «Taxonomía de Flynn»; MIMD se define por flujos múltiples de instrucciones y datos; documento de Drive cotejado para cobertura y límites."
+            }
+          ],
+          "observaciones": "La opción correcta es MIMD (Multiple Instruction, Multiple Data): en la taxonomía de Flynn hay varios flujos de instrucciones y de datos. Procesadores independientes con control/programa propio son una caracterización didáctica frecuente; la definición clasificatoria se basa en esos flujos, no en que cada equipo tenga necesariamente una organización física concreta de memoria. Las opciones 0 y 2 describen SIMD; la 1 se aproxima a una organización centralizada SISD. Cotejo de academia: bloque 26 Hardware/Arquitectura, apartados «Arquitecturas de ordenadores» y «Taxonomía de Flynn», define MIMD como múltiples instrucciones sobre múltiples datos simultáneamente. Correspondencia A1 tema 52 y A2 tema II-1. Cotejo académico directo de taxonomía de Flynn y paralelismo MIMD; se confirma la base conceptual con el artículo original de Flynn de 1966. Correspondencia A1-52, A2-II-1 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). Se diferencian cobertura curricular y verificación primaria."
+        }
+      }
+    }
+  ]
+}
