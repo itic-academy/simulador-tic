@@ -27,7 +27,7 @@ const context = vm.createContext({document: {addEventListener() {}}});
 vm.runInContext(fs.readFileSync(path.join(root, 'app.js'), 'utf8'), context);
 assert.match(context.questionTopicLabel(current.preguntas[9]), /A1 · Tema 80/);
 assert.match(context.questionTopicLabel(current.preguntas[9]), /A2 · I · Tema 6/);
-assert.match(context.questionTopicLabel(current.preguntas[10]), /Pendiente de verificar/);
+assert.match(context.questionTopicLabel(current.preguntas[10]), /Corregida/);
 assert.match(context.questionTopicLabel(current.preguntas[12]), /ambiguo/);
 assert.match(context.questionTopicLabel(current.preguntas[24]), /Histórica verificada/);
 assert.match(context.questionTopicLabel(current.preguntas.find(q => !q.revision)), /Vigencia sin revisar/);

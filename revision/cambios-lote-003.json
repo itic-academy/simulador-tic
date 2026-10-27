@@ -434,7 +434,7 @@
           "Ninguna de las respuestas anteriores es correcta."
         ],
         "respuesta_correcta": 3,
-        "comentarios": "",
+        "comentarios": "La pregunta se refiere expresamente al Plan 2021–2025 y se conserva como reactivo histórico. El PDF oficial identifica el eje 2 como «Proyectos de alto impacto en la digitalización del Sector Público» y el eje 3 como «Transformación Digital y Modernización del Ministerio de Política Territorial y Función Pública, Comunidades Autónomas y Entidades Locales». Por tanto, la opción D («ninguna») era correcta: la opción A altera el nombre del ministerio; la B no reproduce el eje; la C es el eje 2. El periodo del plan concluyó en 2025, por eso no se presenta como política vigente. Cotejo curricular: No se asigna un bloque ITIC Academy: en los materiales consultados no se encontró un epígrafe directo para este plan temporal; se mantiene el encaje oficial A1-30/A1-51 sin forzar correspondencia.",
         "clasificacion": {
           "A1": [
             "A1-30",
@@ -445,17 +445,24 @@
           ],
           "bloque_academia": null,
           "estado": "revisada",
-          "nota": "Correspondencia con el bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          "nota": "No se asigna un bloque ITIC Academy: en los materiales consultados no se encontró un epígrafe directo para este plan temporal; se mantiene el encaje oficial A1-30/A1-51 sin forzar correspondencia."
         },
         "etiquetas": [
           "plan-digitalizacion",
-          "plan-2021-2025"
+          "plan-2021-2025",
+          "plan-historico",
+          "eje-3"
         ],
         "revision": {
-          "estado": "pendiente_fuente",
-          "fecha": "2026-10-01",
-          "fuentes": [],
-          "observaciones": "El periodo del plan ya ha terminado. Falta cotejar el título exacto del eje 3 con el documento oficial, cuya descarga fue rechazada. No se certifica la opción «ninguna» ni se sustituye por una estrategia distinta."
+          "estado": "historica",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://administracionelectronica.gob.es/dam/jcr%3Aae43f87a-9cdb-4ed9-9d78-d665a5d8491a/20210127_Plan_Digitalizacion_AP_2021-2025.pdf",
+              "referencia": "Ministerio de Asuntos Económicos y Transformación Digital, Plan de Digitalización de las Administraciones Públicas 2021–2025, objetivos estratégicos, ejes 2 y 3; publicación oficial en el portal de Administración electrónica."
+            }
+          ],
+          "observaciones": "Respuesta históricamente correcta conforme al documento oficial; el plan terminó en 2025 y no debe memorizarse como vigente."
         }
       }
     },
@@ -653,15 +660,15 @@
         "id": 52,
         "bloque": 0,
         "tema": 0,
-        "texto": "¿Cuál de los siguientes pasos será el último en un Proceso de Gestión de Riesgos, según se establece en la Guía de Seguridad de las TIC CCN-STIC 801?",
+        "texto": "En el marco de gestión de riesgos NIST SP 800-37 Rev. 2, ¿cuál es el último paso del Risk Management Framework (RMF)?",
         "opciones": [
-          "Implementar las medidas de seguridad.",
-          "Obtener la autorización para operar.",
-          "Monitorizar.",
-          "Evaluar la seguridad del sistema de información."
+          "Implementar los controles de seguridad.",
+          "Autorizar el sistema de información.",
+          "Monitorizar el sistema y sus controles de seguridad.",
+          "Evaluar los controles de seguridad."
         ],
         "respuesta_correcta": 2,
-        "comentarios": "",
+        "comentarios": "El RMF de NIST SP 800-37 Rev. 2 tiene siete pasos: Prepare, Categorize, Select, Implement, Assess, Authorize y Monitor; el último es monitorizar. La atribución original a CCN-STIC 801 no se sostiene: el catálogo oficial del CCN identifica esa guía como “ENS. Responsabilidades y Funciones”, no como la fuente de la secuencia de siete pasos. Se corrige la fuente normativa del reactivo. Sin correspondencia directa asignada en el programa ITIC Academy consultado; clasificación oficial A1-47/A1-48/A2-I-9/A2-II-10 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. No se fuerza un bloque curricular.",
         "clasificacion": {
           "A1": [
             "A1-47",
@@ -673,17 +680,29 @@
           ],
           "bloque_academia": null,
           "estado": "revisada",
-          "nota": "Correspondencia con el bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          "nota": "Sin correspondencia directa asignada en el programa ITIC Academy consultado; clasificación oficial A1-47/A1-48/A2-I-9/A2-II-10 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. No se fuerza un bloque curricular."
         },
         "etiquetas": [
           "ENS",
-          "CCN-STIC-801"
+          "CCN-STIC-801",
+          "NIST-SP-800-37",
+          "RMF",
+          "monitorizacion"
         ],
         "revision": {
-          "estado": "pendiente_fuente",
-          "fecha": "2026-10-01",
-          "fuentes": [],
-          "observaciones": "Falta identificar y cotejar la edición de CCN-STIC 801 que contiene esta secuencia. Monitorizar puede ser continuo; no se certifica el orden como universal."
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+              "referencia": "NIST SP 800-37 Rev. 2, Risk Management Framework for Information Systems and Organizations, §3 y Figura 1: el paso 7 es Monitor; publicación final vigente consultada."
+            },
+            {
+              "url": "https://www.ccn-cert.cni.es/gl/800-guia-esquema-nacional-de-seguridad.html?limit=20&limitstart=0",
+              "referencia": "Catálogo oficial de la serie CCN-STIC 800: la guía CCN-STIC-801 se titula ENS. Responsabilidades y Funciones; no documenta el proceso RMF de siete pasos atribuido por el enunciado original."
+            }
+          ],
+          "observaciones": "Se reemplaza la atribución no sustentada a CCN-STIC 801 por el marco NIST SP 800-37 Rev. 2, cuya secuencia y paso final están explícitos en la fuente primaria."
         }
       }
     },

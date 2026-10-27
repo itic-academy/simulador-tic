@@ -1,6 +1,19 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 278 (IDs 1706–1710). Acumulado: 1.710 preguntas examinadas, 1.658 verificadas (384 vigentes, 1.149 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.413 sin revisar de contenido. Hay 1.305 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 278 (IDs 1706–1710); se resolvieron además seis pendientes antiguos. Acumulado: 1.710 preguntas examinadas, 1.664 verificadas (385 vigentes, 1.153 corregidas y 126 históricas) y 46 pendientes (23 de fuente y 23 de ambigüedad); quedan 10.413 sin revisar de contenido. Hay 1.310 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Resolución de pendientes anteriores — 27 de octubre
+
+Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en los lotes de origen. El anexo `resolucion-pendientes-2026-10-27.json` guarda el estado anterior y la nueva revisión; en los lotes 001–003 sólo se actualizó el campo `actualizada` para que el registro final concuerde con el banco.
+
+- La 11 se reformuló como pregunta comprobable sobre el triángulo estratégico de Mark H. Moore: valor público, legitimidad y apoyo, y capacidad operativa. Fuentes: Harvard Kennedy School y Bloomberg Harvard City Leadership Initiative. Cotejo Drive: ITIC Academy, bloque 7, versión 2026.2 (01-10-2026), función gerencial y management público; A1-20/A1-23.
+- La 31 pregunta ahora por la definición de fan-in (conexiones entrantes). Se descartó la asociación universal con reutilización o complejidad, pues ésta depende del modelo compuesto usado. Fuente: Software Engineering Institute, CMU/SEI-2015-TR-013. Cotejo Drive: bloque 38, versión 2026.1, diseño estructurado, modularidad y acoplamiento; A1-93/A1-98/A2-III-13.
+- La 32 conserva la respuesta, pero fija la fuente: en el modelo de Boehm, el radio representa el coste acumulado y el ángulo el progreso en el ciclo. Fuente primaria: artículo de Boehm en IEEE Computer, DOI 10.1109/2.59. Cotejo Drive: bloque 15, ciclo de vida, tema 37/A1-86.
+- La 38 mantiene la clave y explicita que los atributos —incluidos posibles identificadores— describen la entidad en MÉTRICA v3. Fuente oficial: Ministerio de Administraciones Públicas, documento ASI de MÉTRICA v3. Cotejo Drive: bloque 38 y epígrafes A1-89/A1-95/A2-III-4.
+- La 48 queda como histórica: el Plan 2021–2025 ya terminó, pero su eje 3 sí se identifica literalmente en el PDF oficial; las tres respuestas propuestas alteraban el texto o describían el eje 2, por lo que «ninguna» era correcta. No se fuerza equivalencia en el temario de academia.
+- La 52 se corrigió: la secuencia de siete pasos y su paso final (Monitor) pertenecen al RMF de NIST SP 800-37 Rev. 2. La guía CCN-STIC 801 del catálogo oficial se titula «ENS. Responsabilidades y Funciones», así que se retiró la atribución original no sustentada. No se fuerza equivalencia de academia.
+
+La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
 

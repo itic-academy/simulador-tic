@@ -1031,15 +1031,15 @@
         "id": 31,
         "bloque": 0,
         "tema": 0,
-        "texto": "Seleccione la respuesta verdadera:",
+        "texto": "En las métricas de flujo de información de módulos, ¿qué cuenta el fan-in de un módulo?",
         "opciones": [
-          "El fan-in de un módulo es usado como una medida de reusabilidad",
-          "El fan-in de un módulo es usado como una medida de complejidad",
-          "Las dos anteriores son verdaderas",
-          "Todas son falsas"
+          "El número de conexiones entrantes al módulo.",
+          "El número de conexiones salientes del módulo.",
+          "La suma del fan-in y el fan-out, elevada al cuadrado.",
+          "El número de instrucciones ejecutables del módulo."
         ],
         "respuesta_correcta": 0,
-        "comentarios": "",
+        "comentarios": "Fan-in cuenta las conexiones entrantes y fan-out las salientes. En modelos de flujo de información, la complejidad se calcula combinando medidas (por ejemplo, fan-in y fan-out con el tamaño del módulo); fan-in aislado no es una medida universal de complejidad ni garantiza reutilización. El enunciado original mezclaba esas interpretaciones sin fijar el modelo. Cotejo curricular con ITIC Academy: ITIC Academy, bloque 38 Análisis, diseño y construcción de sistemas de información, versión 2026.1 (18-09-2026), apartados 5.3–5.4 (diseño estructurado, modularidad, cohesión y acoplamiento; A1-93/A1-98/A2-III-13). Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2); la academia orienta el encaje, no sustituye las fuentes primarias.",
         "clasificacion": {
           "A1": [
             "A1-93",
@@ -1048,19 +1048,30 @@
           "A2": [
             "A2-III-13"
           ],
-          "bloque_academia": 38,
+          "bloque_academia": "ITIC Academy, bloque 38 Análisis, diseño y construcción de sistemas de información, versión 2026.1 (18-09-2026), apartados 5.3–5.4 (diseño estructurado, modularidad, cohesión y acoplamiento; A1-93/A1-98/A2-III-13). Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2); la academia orienta el encaje, no sustituye las fuentes primarias.",
           "estado": "revisada",
-          "nota": ""
+          "nota": "ITIC Academy, bloque 38 Análisis, diseño y construcción de sistemas de información, versión 2026.1 (18-09-2026), apartados 5.3–5.4 (diseño estructurado, modularidad, cohesión y acoplamiento; A1-93/A1-98/A2-III-13). Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2); la academia orienta el encaje, no sustituye las fuentes primarias."
         },
         "etiquetas": [
           "metricas-software",
-          "fan-in"
+          "fan-in",
+          "flujo-de-informacion",
+          "fan-out"
         ],
         "revision": {
-          "estado": "pendiente_ambiguedad",
-          "fecha": "2026-10-01",
-          "fuentes": [],
-          "observaciones": "La relación del fan-in con reutilización y complejidad depende de la métrica y del modelo utilizados. Falta precisar el contexto para excluir la opción «las dos anteriores»."
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.sei.cmu.edu/documents/478/2016_019_001_484344.pdf",
+              "referencia": "Software Engineering Institute, CMU/SEI-2015-TR-013, § complexity metrics: define fan-in como conexiones entrantes y fan-out como salientes; la métrica de complejidad de flujo de información combina ambos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 38, versión 2026.1 (18-09-2026), apartados 5.3–5.4; diseño estructurado, modularidad, cohesión y acoplamiento. ITIC Academy, bloque 38 Análisis, diseño y construcción de sistemas de información, versión 2026.1 (18-09-2026), apartados 5.3–5.4 (diseño estructurado, modularidad, cohesión y acoplamiento; A1-93/A1-98/A2-III-13). Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2); la academia orienta el encaje, no sustituye las fuentes primarias."
+            }
+          ],
+          "observaciones": "Reformulada a la definición del fan-in: la asociación con reutilización o complejidad depende de cómo se construya la métrica, no de una propiedad universal del indicador aislado."
         }
       }
     },
@@ -1084,15 +1095,15 @@
         "id": 32,
         "bloque": 0,
         "tema": 0,
-        "texto": "En una representación gráfica del ciclo de vida de desarrollo software en espiral, indicar qué es lo que representa la dimensión radial:",
+        "texto": "En el modelo de ciclo de vida en espiral de Boehm, ¿qué representa la dimensión radial del diagrama?",
         "opciones": [
-          "El progreso hecho en completar cada ciclo de la espiral",
-          "Coste acumulativo en el que se ha incurrido en las etapas realizadas hasta el momento actual",
-          "El análisis de riesgos",
-          "Los costes de explotación del proyecto"
+          "El progreso angular completado dentro del ciclo actual.",
+          "El coste acumulado del proyecto hasta ese punto.",
+          "La cantidad de riesgos todavía no identificados.",
+          "Los costes de explotación una vez puesto el sistema en servicio."
         ],
         "respuesta_correcta": 1,
-        "comentarios": "",
+        "comentarios": "En la representación de Boehm, el radio expresa el coste acumulado incurrido al completar los pasos hasta el momento, mientras el ángulo muestra el progreso a través de un ciclo. Se conserva la clave y se elimina la opción que confundía la dimensión radial con el progreso. Cotejo con ITIC Academy: ITIC Academy, bloque 15 Metodologías ágiles y ciclo de vida, versión 2026 (documento fechado 2026) (sin fecha detallada en la carátula consultada), tema 37 y A1-86 (modelos de ciclo de vida). Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2); la academia orienta el encaje, no sustituye las fuentes primarias.",
         "clasificacion": {
           "A1": [
             "A1-86"
@@ -1100,19 +1111,34 @@
           "A2": [
             "A2-III-1"
           ],
-          "bloque_academia": 15,
+          "bloque_academia": "ITIC Academy, bloque 15 Metodologías ágiles y ciclo de vida, versión 2026 (documento fechado 2026) (sin fecha detallada en la carátula consultada), tema 37 y A1-86 (modelos de ciclo de vida). Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2); la academia orienta el encaje, no sustituye las fuentes primarias.",
           "estado": "revisada",
-          "nota": ""
+          "nota": "ITIC Academy, bloque 15 Metodologías ágiles y ciclo de vida, versión 2026 (documento fechado 2026) (sin fecha detallada en la carátula consultada), tema 37 y A1-86 (modelos de ciclo de vida). Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2); la academia orienta el encaje, no sustituye las fuentes primarias."
         },
         "etiquetas": [
           "ciclo-vida",
-          "espiral"
+          "espiral",
+          "coste-acumulado",
+          "progreso-angular"
         ],
         "revision": {
-          "estado": "pendiente_fuente",
-          "fecha": "2026-10-01",
-          "fuentes": [],
-          "observaciones": "Clasificada. Pendiente de cotejo con el artículo original de Boehm; no se modifica ni se certifica aún la respuesta."
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1109/2.59",
+              "referencia": "Barry W. Boehm, “A Spiral Model of Software Development and Enhancement”, IEEE Computer, 21(5), 1988, pp. 61–72, DOI 10.1109/2.59; fuente original del modelo."
+            },
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/B9780080515748500315",
+              "referencia": "Reproducción editorial del capítulo de Boehm: explicita que la dimensión radial representa el coste acumulado y la angular el progreso en cada ciclo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 15, versión 2026.1 (26-08-2026), tema 37/A1-86. ITIC Academy, bloque 15 Metodologías ágiles y ciclo de vida, versión 2026 (documento fechado 2026) (sin fecha detallada en la carátula consultada), tema 37 y A1-86 (modelos de ciclo de vida). Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2); la academia orienta el encaje, no sustituye las fuentes primarias."
+            }
+          ],
+          "observaciones": "Verificada con la descripción de Boehm; el radio es coste acumulado y el ángulo, progreso."
         }
       }
     },
@@ -1424,15 +1450,15 @@
         "id": 38,
         "bloque": 0,
         "tema": 0,
-        "texto": "En el modelo Entidad-Relación utilizado en la metodología MÉTRICA, las Entidades se describen mediante:",
+        "texto": "En el modelo Entidad-Relación de MÉTRICA v3, ¿qué elementos describen a una entidad?",
         "opciones": [
-          "Los datos",
-          "Las relaciones",
-          "Los atributos",
-          "Otras entidades"
+          "Los datos que se guardan en cualquier soporte.",
+          "Las relaciones que mantiene con otras entidades.",
+          "Sus atributos, incluidos los que puedan actuar como identificadores.",
+          "Otras entidades del sistema."
         ],
         "respuesta_correcta": 2,
-        "comentarios": "",
+        "comentarios": "MÉTRICA v3 indica que el modelo conceptual identifica entidades, sus atributos —distinguiendo los que pueden ser identificadores—, dominios y relaciones. La respuesta es «atributos»; la relación es un elemento distinto del modelo. Cotejo curricular: ITIC Academy, bloque 38, Análisis, diseño y construcción de sistemas de información, versión 2026.1 (18-09-2026), apartados de análisis/diseño de datos (A1-89/A1-95/A2-III-4); correspondencia contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262.",
         "clasificacion": {
           "A1": [
             "A1-89",
@@ -1441,20 +1467,31 @@
           "A2": [
             "A2-III-4"
           ],
-          "bloque_academia": 38,
+          "bloque_academia": "ITIC Academy, bloque 38, Análisis, diseño y construcción de sistemas de información, versión 2026.1 (18-09-2026), apartados de análisis/diseño de datos (A1-89/A1-95/A2-III-4); correspondencia contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262.",
           "estado": "revisada",
-          "nota": ""
+          "nota": "ITIC Academy, bloque 38, Análisis, diseño y construcción de sistemas de información, versión 2026.1 (18-09-2026), apartados de análisis/diseño de datos (A1-89/A1-95/A2-III-4); correspondencia contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262."
         },
         "etiquetas": [
           "modelado-datos",
           "entidad-relacion",
-          "metrica"
+          "metrica",
+          "identificador",
+          "metrica-v3"
         ],
         "revision": {
-          "estado": "pendiente_fuente",
-          "fecha": "2026-10-01",
-          "fuentes": [],
-          "observaciones": "Clasificada. La copia oficial de MÉTRICA no pudo recuperarse; queda pendiente de cotejar la terminología con el documento de técnicas y prácticas."
+          "estado": "vigente",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Aad870327-56b7-4dfa-af15-e62222f45b90/METRICA_V3_Analisis_del_Sistema_de_Informacion.pdf",
+              "referencia": "Ministerio de Administraciones Públicas, MÉTRICA v3, Análisis del Sistema de Información, tarea ASI 1.1: define entidades, atributos e identificadores, dominios y relaciones."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 38, análisis, diseño y construcción de sistemas, versión 2026.1. ITIC Academy, bloque 38, Análisis, diseño y construcción de sistemas de información, versión 2026.1 (18-09-2026), apartados de análisis/diseño de datos (A1-89/A1-95/A2-III-4); correspondencia contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262."
+            }
+          ],
+          "observaciones": "La formulación y la clave coinciden con MÉTRICA v3; se explicita que los atributos identificadores forman parte de la descripción de la entidad."
         }
       }
     },
