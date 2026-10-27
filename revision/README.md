@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 293 (IDs 1781–1785); se resolvieron además seis pendientes antiguos. Acumulado: 1.785 preguntas examinadas, 1.738 verificadas (388 vigentes, 1.222 corregidas y 128 históricas) y 47 pendientes (24 de fuente y 23 de ambigüedad); quedan 10.338 sin revisar de contenido. Hay 1.381 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 294 (IDs 1786–1790); se resolvieron además seis pendientes antiguos. Acumulado: 1.790 preguntas examinadas, 1.743 verificadas (390 vigentes, 1.225 corregidas y 128 históricas) y 47 pendientes (24 de fuente y 23 de ambigüedad); quedan 10.333 sin revisar de contenido. Hay 1.384 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -14,6 +14,22 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 - La 52 se corrigió: la secuencia de siete pasos y su paso final (Monitor) pertenecen al RMF de NIST SP 800-37 Rev. 2. La guía CCN-STIC 801 del catálogo oficial se titula «ENS. Responsabilidades y Funciones», así que se retiró la atribución original no sustentada. No se fuerza equivalencia de academia.
 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
+
+## Lote 294 — 27 de octubre
+
+IDs 1786–1790 revisados individualmente. Tres se corrigieron y dos conservaron su contenido con verificación y explicación. Acumulado: 1.790 examinadas; 1.743 verificadas (390 vigentes, 1.225 corregidas y 128 históricas); 47 pendientes (24 de fuente y 23 de ambigüedad); 1.384 preguntas con cambios de contenido; 10.333 aún sin revisión individual. Siguiente ID: 1.791. Los originales completos permanecen en `cambios-lote-294.json`.
+
+- La 1786 confirma que SRTF es la variante preemptiva de SJF que compara tiempos restantes; la clave original era correcta.
+- La 1787 corrige errores de escritura y acota la pregunta al catálogo clásico Core J2EE Patterns de Oracle. Este enumera Session Facade, MVC y DAO; no “abstraction inversion”.
+- La 1788 precisa PDF417 como simbología de código de barras bidimensional apilada, especificada por ISO/IEC 15438. El estándar está publicado y su revisión se ha reabierto; se verifica la identidad técnica, sin afirmar que no vaya a ser sustituido en el futuro.
+- La 1789 identifica Nemo en su contexto: gestor de archivos oficial de Cinnamon/Linux Mint; se resuelve la falta de sistema operativo en el enunciado original.
+- La 1790 mantiene Jakarta EE como nombre de la plataforma empresarial Java transferida a la Eclipse Foundation.
+
+Cotejo de academia: bloque 27 para planificación de procesos y Nemo/Linux; bloque 30 para Java/J2EE y Jakarta EE; bloque 26 para dispositivos/captura de información. No se encontró en el bloque 26 una explicación específica de PDF417 y se deja constancia: la respuesta de la 1788 se sustenta en ISO, no en una inferencia curricular. Correspondencias comprobadas frente a `temario-oficial.json` y convocatorias [A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1786 A1-59/A2-II-2; 1787 A1-65/A1-67/A2-III-10/A2-III-12; 1788 A1-54/A2-II-1; 1789 A1-60/A2-II-2; 1790 A1-67/A2-III-10.
+
+Fuentes: [University of Illinois, CS 341 Scheduling](https://cs341.cs.illinois.edu/coursebook/Scheduling); [Oracle J2EE Patterns Catalog](https://www.oracle.com/java/technologies/design-patterns-catalog.html), [Session Facade](https://www.oracle.com/java/technologies/session-facade.html) y [DAO](https://www.oracle.com/java/technologies/dataaccessobject.html); [ISO/IEC 15438:2015](https://www.iso.org/standard/65502.html); [proyecto oficial Linux Mint Nemo](https://github.com/linuxmint/nemo); [FAQ Jakarta EE de Eclipse Foundation](https://jakarta.ee/about/faq/).
+
+Ejecutados `node revision/lote-294.cjs`, `node revision/academia-lote-294.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: total 12.123, errores de inventario 0; 1.790 examinadas, 10.333 sin revisión individual de contenido. Se mantienen los 47 pendientes.
 
 ## Lote 293 — 27 de octubre
 
