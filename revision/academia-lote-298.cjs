@@ -1,0 +1,19 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(bankPath,'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-298.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ si:{url:'https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk',label:'ITIC Academy, bloque 30, Tecnologías de sistemas de información, versión 2026.1 (31-08-2026)'},
+ db:{url:'https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk',label:'ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1'},
+ os:{url:'https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk',label:'ITIC Academy, bloque 27, Sistemas operativos, versión 2026.1 (14-08-2026)'}
+};
+const mapping={
+ 1806:{doc:'si',detail:'sección 11.2, CRM: gestión de las relaciones con clientes/usuarios a lo largo de marketing, ventas, servicio y fidelización.',topics:['A1-72','A2-II-12'],note:'Cotejo con la sección de sistemas CRM del bloque de tecnologías de sistemas de información; el alcance definitorio se verifica además con documentación oficial del producto Salesforce.'},
+ 1807:{doc:'db',detail:'sección 6.2, arquitectura ANSI/SPARC de tres niveles e independencia lógica y física de los datos.',topics:['A1-63','A2-II-5'],note:'Cotejo curricular de arquitectura ANSI/SPARC e independencia de datos; la definición se contrasta con el informe bibliográfico ANSI/X3/SPARC, NIST y material universitario.'},
+ 1808:{doc:'os',detail:'secciones 6.1–6.3, familias UNIX/Linux, distribuciones Linux y distinción entre kernel, sistema y distribución.',topics:['A1-60','A2-II-2'],note:'Cotejo curricular de sistemas operativos UNIX/Linux y distribuciones; la clasificación de Fedora, Debian, Ubuntu y Solaris se verifica con los proyectos y fabricantes correspondientes.'},
+ 1809:{doc:'os',detail:'sección 15.5, JCL, JES2 y ciclo de un trabajo batch en z/OS.',topics:['A1-62','A2-II-2'],note:'Cotejo curricular de z/OS y procesamiento JCL/JES; se distingue la recepción y planificación de JES de la ejecución que efectúa el iniciador, según IBM.'},
+ 1810:{doc:'os',detail:'sección 6.7, jerarquía de archivos UNIX/Linux; /home como ubicación habitual de datos personales.',topics:['A1-60','A2-II-2'],note:'Cotejo curricular de jerarquía de sistemas de archivos Linux; se conserva la salvedad de FHS de que /home es opcional y específico del sitio.'}
+};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),r=mapping[c.id],doc=r&&docs[r.doc];assert.ok(q?.revision&&r&&doc,`Falta cotejo ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2,...r.topics])assert.ok(official.has(id),id);const curr=`${doc.label}; ${r.detail.replace(/\.$/,'')}`,note=`Cotejo curricular: ${curr} Correspondencia ${r.topics.join(', ')} contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia comprueba cobertura, no sustituye la fuente técnica primaria.`;q.revision.observaciones=`${r.note} ${note}`;q.revision.fuentes.push({url:doc.url,referencia:`${curr}; material formativo de Drive cotejado para cobertura curricular.`});q.clasificacion.bloque_academia=curr;q.clasificacion.nota=note;q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q)}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular y BOE actualizado para 1806–1810.');

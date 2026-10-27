@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 297 (IDs 1801–1805); se resolvieron además seis pendientes antiguos. Acumulado: 1.805 preguntas examinadas, 1.757 verificadas (393 vigentes, 1.235 corregidas y 129 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.318 sin revisar de contenido. Hay 1.395 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 298 (IDs 1806–1810); se resolvieron además seis pendientes antiguos. Acumulado: 1.810 preguntas examinadas, 1.762 verificadas (394 vigentes, 1.239 corregidas y 129 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.313 sin revisar de contenido. Hay 1.399 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -14,6 +14,22 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 - La 52 se corrigió: la secuencia de siete pasos y su paso final (Monitor) pertenecen al RMF de NIST SP 800-37 Rev. 2. La guía CCN-STIC 801 del catálogo oficial se titula «ENS. Responsabilidades y Funciones», así que se retiró la atribución original no sustentada. No se fuerza equivalencia de academia.
 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
+
+## Lote 298 — 27 de octubre
+
+IDs 1806–1810 revisados individualmente con fuentes institucionales, estándares y documentación técnica primaria; cuatro se corrigieron y una conserva contenido y clave tras verificarse. Acumulado: 1.810 examinadas; 1.762 verificadas (394 vigentes, 1.239 corregidas y 129 históricas); 48 pendientes (24 de fuente y 24 de ambigüedad); 1.399 preguntas con cambios de contenido; 10.313 aún sin revisión individual. Siguiente ID: 1.811. Los originales completos permanecen en cambios-lote-298.json.
+
+- La 1806 delimita CRM como la gestión de interacciones y relaciones con clientes y clientes potenciales, y separa el alcance principal del CRM de las relaciones laborales y de los procesos internos ERP.
+- La 1807 corrige «ANSI/SQL» por ANSI/SPARC y mantiene la respuesta independencia de datos, explicando las variantes lógica y física.
+- La 1808 mantiene Solaris como respuesta: Oracle Solaris es un sistema operativo basado en UNIX, mientras Fedora, Debian y Ubuntu son Linux.
+- La 1809 delimita el procesamiento JCL en z/OS: JES recibe, encola y planifica trabajos; el iniciador interpreta JCL, asigna recursos y ejecuta el programa.
+- La 1810 acota /home a la convención FHS; es una ubicación común para directorios personales, pero opcional y dependiente del sitio.
+
+Cotejo de academia en Drive: bloque 30, sección 11.2 (CRM); bloque 29, sección 6.2 (ANSI/SPARC); bloque 27, secciones 6.1–6.3 (UNIX/Linux y distribuciones), 6.7 (jerarquía de archivos) y 15.5 (JCL/JES2 y trabajos batch). Correspondencias contrastadas con temario-oficial.json y convocatorias [A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1806 A1-72/A2-II-12; 1807 A1-63/A2-II-5; 1808 A1-60/A2-II-2; 1809 A1-62/A2-II-2; 1810 A1-60/A2-II-2. Los bloques de academia contrastan cobertura, no sustituyen la evidencia técnica primaria.
+
+Fuentes: [Salesforce Help, definición de CRM](https://help.salesforce.com/s/articleView?id=000220989&language=en_US&type=1); [informe original ANSI/X3/SPARC (registro ACM SIGMOD)](https://sigmod.org/publications/dblp/db/journals/sigmod/SPARC75.html), [NIST NBS IR 85-3173](https://www.nist.gov/publications/reference-model-dbms-standardization-database-architecture-framework-task-group-daftg) y [Edinburgh Napier University, Data independence](https://bdavison.napier.ac.uk/db/Notes/Introduction/independence/); [Fedora Project](https://fedoraproject.org/), [Debian Project](https://www.debian.org/intro/), [Ubuntu](https://ubuntu.com/download), [Oracle Solaris Documentation](https://docs.oracle.com/en/operating-systems/solaris/index.html) y [Oracle, Solaris basado en UNIX System V](https://docs.oracle.com/cd/E19455-01/805-6331/6j5vgg66g/index.html); [IBM, procesamiento de trabajos JCL en z/OS](https://www.ibm.com/docs/en/zos-basic-skills?topic=zc-processing-work-zos-how-system-starts-manages-batch-jobs), [IBM, JES](https://www.ibm.com/docs/en/zos-basic-skills?topic=jobs-what-is-jes) e [IBM z/OS 3.2, referencia JCL](https://www.ibm.com/docs/en/zos/3.2.0?topic=mvs-zos-jcl-reference); [Linux Foundation, FHS 3.0](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html).
+
+Ejecutados node revision/lote-298.cjs, node revision/academia-lote-298.cjs, node revision/inventario.cjs, node revision/verificar.cjs y git diff --check: inventario 12.123 preguntas, errores 0; 1.810 examinadas y 10.313 sin revisión individual de contenido.
 
 ## Lote 297 — 27 de octubre
 
