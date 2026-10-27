@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 312 (IDs 1876–1880); se resolvieron además seis pendientes antiguos. Acumulado: 1.880 preguntas examinadas, 1.832 verificadas (401 vigentes, 1.298 corregidas y 133 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.243 sin revisar de contenido. Hay 1.461 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 313 (IDs 1881–1885); se resolvieron además seis pendientes antiguos. Acumulado: 1.885 preguntas examinadas, 1.836 verificadas (404 vigentes, 1.299 corregidas y 133 históricas) y 49 pendientes (25 de fuente y 24 de ambigüedad); quedan 10.238 sin revisar de contenido. Hay 1.462 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 313 — 27 de octubre
+
+IDs 1881–1885 revisados individualmente con fuentes primarias, cotejo de Drive y temarios A1/A2. Una pregunta se corrigió, tres se verificaron vigentes y una queda pendiente de fuente; se conservan originales en `cambios-lote-313.json`. Acumulado: 1.885 examinadas; 1.836 verificadas (404 vigentes, 1.299 corregidas, 133 históricas); 49 pendientes (25 de fuente, 24 de ambigüedad), 1.462 con cambios y 10.238 sin revisión individual.
+
+- La 1881 deja de llamar «falta grave» a una categoría que el RGPD no denomina así. Se formula sobre las infracciones del artículo 83.4: máximo de 10 millones EUR o, para empresas, 2 % del volumen de negocio global anual anterior, la mayor cifra. Se diferencia del máximo superior del artículo 83.5. Cotejo: bloque 03, protección de datos.
+- La 1882 se verifica sin cambios: el artículo 49 LO 3/2018 incluye diputado, senador, representante del CGPJ y de seguridad de la información, entre otros; no incluye a un magistrado del Tribunal Constitucional por razón de ese cargo. Cotejo: bloque 03, AEPD/protección de datos.
+- La 1883 queda pendiente de fuente. La academia cubre centros de sistemas de información y sistemas operativos, pero no identifica la unidad organizativa concreta del enunciado ni acredita que todas las tareas listadas sean formalmente suyas. Se conserva la clave original sin verificarla. Correspondencia orientativa A1-34/A2-IV-1; el cotejo curricular no resuelve el pendiente.
+- La 1884 conserva la definición de gestión del alcance: incluir todo el trabajo necesario y solo el necesario para completar el proyecto. Cotejo: bloque 12, dirección TIC/proyectos; definición contrastada con PMI.
+- La 1885 se verifica sin cambios: 5S es un método de organización y estandarización del puesto (Seiri, Seiton, Seiso, Seiketsu, Shitsuke), no un límite temporal/procesal ni cinco principios de Kaizen. Cotejo: bloque 38, metodologías; definición validada con Lean Enterprise Institute.
+
+Cotejo curricular con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1881 A1-27/A2-I-7; 1882 A1-27/A2-I-7; 1883 A1-34/A2-IV-1 (orientativo y pendiente); 1884 A1-35/A2-III-2; 1885 A1-37/A2-III-2.
+
+Fuentes primarias: [RGPD, EUR-Lex, artículo 83.4](https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32016R0679); [LO 3/2018 consolidada, art. 49](https://www.boe.es/eli/es/lo/2018/12/05/3/con); [PMI, gestión del alcance de proyectos TIC](https://www.pmi.org/learning/library/information-communications-technology-scope-management-7355); [Lean Enterprise Institute, 5S](https://www.lean.org/lexicon-terms/five-s/). Para la 1883 no se encontró fuente primaria que permita validar el nombre de unidad y su atribución de funciones; queda expresamente pendiente.
+
+Ejecutados `node revision/lote-313.cjs`, `node revision/academia-lote-313.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario de 12.123 preguntas, errores 0; 1.885 examinadas y 10.238 sin revisión individual.
 
 ## Lote 312 — 27 de octubre
 
