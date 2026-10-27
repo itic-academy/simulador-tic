@@ -1,8 +1,18 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 266 (IDs 1646–1650). Acumulado: 1.650 preguntas examinadas, 1.598 verificadas (378 vigentes, 1.095 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.473 sin revisar de contenido. Hay 1.251 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 267 (IDs 1651–1655). Acumulado: 1.655 preguntas examinadas, 1.603 verificadas (378 vigentes, 1.100 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.468 sin revisar de contenido. Hay 1.256 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 267 — 27 de octubre
+
+IDs 1651–1655 revisados individualmente; cinco corregidos. Acumulado: 1.655 examinadas; 1.603 verificadas (378 vigentes, 1.100 corregidas y 125 históricas), 52 pendientes (28 de fuente y 24 de ambigüedad); 1.256 preguntas con cambios de contenido. Quedan 10.468 sin revisar; siguiente ID: 1.656. Originales íntegros conservados en `cambios-lote-267.json`.
+
+La 1651 concreta la deduplicación como reducción del espacio al evitar guardar datos redundantes, sin atribuirle tolerancia a fallos. La 1652 resuelve el término vago “armario de protección combinada” atribuyendo la combinación térmica/electromagnética al producto ABB DATA 46023 y advierte que no es una prestación universal de todos los armarios. La 1653 sustituye “copia intermedia” por el tipo Copy de Windows, que copia sin actualizar el historial de backup. La 1654 explicita los acrónimos históricos WORM/WMRA y su diferencia de reescritura. La 1655 confirma RAID 6 con doble paridad y precisa que tolera hasta dos fallos, no un tercero durante la reconstrucción.
+
+Cotejo con Drive: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1. Las cinco preguntas se relacionan con los apartados de almacenamiento, copias de seguridad, medios, RAID y recuperación. Correspondencias cotejadas individualmente con `temario-oficial.json` y BOE-A-2025-25938/BOE-A-2025-26262: 1651–1652 y 1654–1655 A1-56/A2-IV-5; 1653 A1-56/A2-IV-3. La academia orienta el encaje y no sustituye las fuentes primarias.
+
+Fuentes primarias/técnicas: IBM Storage Protect y material IBM sobre deduplicación; ABB M.E.O. para las prestaciones expresamente declaradas del modelo DATA 46023 y Chubbsafes para distinguir certificaciones de fuego de los soportes de datos; Microsoft Learn, VSS `VSS_BT_COPY`; Sveriges Riksdag, SOU 1997:49 para la definición histórica de WORM/WMRA; IBM Documentation para RAID 6. Ejecutados `node revision/lote-267.cjs`, `node revision/academia-lote-267.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas, 1.655 registros, cero errores estructurales y 10.468 preguntas aún sin revisar.
 
 ## Lote 266 — 27 de octubre
 
