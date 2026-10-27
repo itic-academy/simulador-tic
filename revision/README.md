@@ -1,8 +1,18 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 264 (IDs 1636–1640). Acumulado: 1.640 preguntas examinadas, 1.588 verificadas (378 vigentes, 1.085 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.483 sin revisar de contenido. Hay 1.241 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 265 (IDs 1641–1645). Acumulado: 1.645 preguntas examinadas, 1.593 verificadas (378 vigentes, 1.090 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.478 sin revisar de contenido. Hay 1.246 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 265 — 27 de octubre
+
+IDs 1641–1645 revisados individualmente; cinco corregidos. Acumulado: 1.645 examinadas; 1.593 verificadas (378 vigentes, 1.090 corregidas y 125 históricas), 52 pendientes (28 de fuente y 24 de ambigüedad); 1.246 preguntas con cambios de contenido. Quedan 10.478 sin revisar; siguiente ID: 1.646. Originales íntegros conservados en `cambios-lote-265.json`.
+
+En 1641 se verifica el nombre propio International Data Spaces Association (IDSA) y se sustituyen distractores mal escritos/duplicados. En 1642 se corrige la confusión entre el roadmap general LDAP (RFC 4510) y el RFC 4512, que especifica el modelo de información del directorio. En 1643 se acota la ventaja de un pool al coste de crear conexiones repetidamente; no aporta replicación ni optimiza por sí mismo las consultas. En 1644 se conserva `fax` como valor no estándar, pero se pregunta por el atributo `type` conforme al HTML Living Standard. En 1645 se actualiza el reactivo de EJB a Jakarta Enterprise Beans: un stateful conserva estado conversacional entre llamadas; se evita presentar entity beans como tipo actual obligatorio.
+
+Cotejo con Drive: ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos (espacios de datos); bloque 30 Tecnologías de Sistemas de la Información (LDAP, HTML y Jakarta EE); bloque 29 Bases de Datos, SQL y Modelado de Datos (pool de conexiones). Correspondencias cotejadas con `temario-oficial.json` y los anexos de BOE-A-2025-25938/BOE-A-2025-26262: 1641 A1-107/A2-III-15; 1642 A1-80; 1643 A1-65/A2-IV-2; 1644 A1-65/A2-III-14; 1645 A1-67/A2-III-10. La academia orienta el encaje y no sustituye las fuentes técnicas primarias.
+
+Fuentes primarias/técnicas: IDSA Knowledge Base/Rulebook; IETF RFC 4510 y RFC 4512; Oracle JDBC Connection Pooling y API `DataSource`; WHATWG HTML Living Standard; Jakarta Enterprise Beans 4.0 Specification y Jakarta EE Tutorial. Ejecutados `node revision/lote-265.cjs`, `node revision/academia-lote-265.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas, 1.645 registros, cero errores estructurales y 10.478 preguntas aún sin revisar.
 
 ## Lote 264 — 27 de octubre
 
