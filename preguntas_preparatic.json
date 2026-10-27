@@ -83078,15 +83078,50 @@
       "id": 1791,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un SGBD Oracle, ¿cómo se denomina al tipo de vista que almacena físicamente los datos resultantes de ejecutar la consulta definida?",
+      "texto": "En Oracle Database, ¿qué tipo de vista almacena en la base de datos el resultado de la consulta definida?",
       "opciones": [
-        "Vista tableada",
-        "Vista almacenada",
-        "Vista cacheada",
-        "Vista materializada"
+        "Una vista ordinaria, que guarda una copia permanente de todas las filas.",
+        "Una vista materializada, cuyo resultado se almacena y puede refrescarse.",
+        "Una vista temporal, que siempre conserva los datos tras cerrar la sesión.",
+        "Una vista externa, que exporta automáticamente el resultado a un archivo."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Cotejo de vistas materializadas y almacenamiento de resultados; la semántica concreta y el comportamiento de refresco se justifican con la documentación de Oracle. Cotejo curricular: ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; §5.11, vistas y vistas materializadas Correspondencia A1-63, A1-64, A2-II-5, A2-IV-2 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica.",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-IV-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; §5.11, vistas y vistas materializadas",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; §5.11, vistas y vistas materializadas Correspondencia A1-63, A1-64, A2-II-5, A2-IV-2 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica."
+      },
+      "etiquetas": [
+        "Oracle",
+        "SGBD",
+        "vista materializada",
+        "resultado almacenado",
+        "refresco"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/dwhsg/basic-materialized-views.html",
+            "referencia": "Oracle AI Database 26c Data Warehousing Guide, Basic Materialized Views: una vista materializada requiere y ocupa espacio de almacenamiento en la base de datos; se usa para conservar resultados precalculados y Oracle describe su refresco."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; §5.11, vistas y vistas materializadas; material formativo de Drive cotejado para cobertura curricular."
+          }
+        ],
+        "observaciones": "Cotejo de vistas materializadas y almacenamiento de resultados; la semántica concreta y el comportamiento de refresco se justifican con la documentación de Oracle. Cotejo curricular: ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; §5.11, vistas y vistas materializadas Correspondencia A1-63, A1-64, A2-II-5, A2-IV-2 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica."
+      }
     },
     {
       "id": 1792,
@@ -83100,48 +83135,210 @@
         "Es una representación abstracta de la base de datos, diferente para cada usuario"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Cotejo del modelo de datos y sus niveles de abstracción; la descripción ANSI/SPARC se verifica de forma independiente con material universitario de arquitectura de bases de datos. Cotejo curricular: ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; apartados de arquitectura, modelos y esquemas de bases de datos Correspondencia A1-63, A2-II-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; apartados de arquitectura, modelos y esquemas de bases de datos",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; apartados de arquitectura, modelos y esquemas de bases de datos Correspondencia A1-63, A2-II-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica."
+      },
+      "etiquetas": [
+        "ANSI/SPARC",
+        "nivel conceptual",
+        "esquema conceptual",
+        "esquema global",
+        "independencia de datos"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.cs.montana.edu/courses/spring2004/435/lectures/ConceptsArchitecture.html",
+            "referencia": "Montana State University, Concepts and Database Architecture, sección Conceptual or logical level: el nivel conceptual describe qué datos se almacenan y las relaciones entre ellos, abstraído de los detalles físicos; representa la visión global de la base de datos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; apartados de arquitectura, modelos y esquemas de bases de datos; material formativo de Drive cotejado para cobertura curricular."
+          }
+        ],
+        "observaciones": "Cotejo del modelo de datos y sus niveles de abstracción; la descripción ANSI/SPARC se verifica de forma independiente con material universitario de arquitectura de bases de datos. Cotejo curricular: ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1; apartados de arquitectura, modelos y esquemas de bases de datos Correspondencia A1-63, A2-II-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica."
+      }
     },
     {
       "id": 1793,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes acrónimos NO corresponde a un estándar del W3C?",
+      "texto": "Tomando estas versiones concretas, ¿cuál NO fue publicada como Recomendación del W3C?",
       "opciones": [
-        "WSDL.",
-        "SOAP.",
-        "UDDI.",
-        "XHTML."
+        "WSDL 2.0.",
+        "SOAP 1.2.",
+        "UDDI 3.0.2.",
+        "XHTML 1.1."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Cotejo de servicios web e interoperabilidad; las categorías normativas y versiones W3C/OASIS se determinan mediante los organismos de normalización correspondientes. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de sistemas de información y desarrollo web, versión 2026.1; apartados de servicios web, estándares, interoperabilidad y tecnologías XML Correspondencia A1-58, A2-II-6 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica.",
+      "clasificacion": {
+        "A1": [
+          "A1-58"
+        ],
+        "A2": [
+          "A2-II-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30, Tecnologías de sistemas de información y desarrollo web, versión 2026.1; apartados de servicios web, estándares, interoperabilidad y tecnologías XML",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de sistemas de información y desarrollo web, versión 2026.1; apartados de servicios web, estándares, interoperabilidad y tecnologías XML Correspondencia A1-58, A2-II-6 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica."
+      },
+      "etiquetas": [
+        "W3C",
+        "OASIS",
+        "WSDL 2.0",
+        "SOAP 1.2",
+        "XHTML 1.1",
+        "UDDI 3.0.2",
+        "servicios web"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/wsdl20/",
+            "referencia": "W3C Recommendation, Web Services Description Language (WSDL) Version 2.0, 26-06-2007."
+          },
+          {
+            "url": "https://www.w3.org/TR/soap12/",
+            "referencia": "W3C Recommendation, SOAP Version 1.2, partes 1 y 2."
+          },
+          {
+            "url": "https://www.w3.org/TR/xhtml11/",
+            "referencia": "W3C Recommendation, XHTML 1.1 Second Edition (23-11-2010), posteriormente marcada como Superseded Recommendation; sirve para comprobar su estatus de Recomendación histórica."
+          },
+          {
+            "url": "https://www.oasis-open.org/committees/uddi-spec/doc/tcspecs.htm",
+            "referencia": "OASIS UDDI Specifications TC: UDDI Version 3.0 es un OASIS Standard y define registros interoperables de servicios web."
+          },
+          {
+            "url": "https://www.oasis-open.org/standards/",
+            "referencia": "OASIS, catálogo de estándares y anuncio de aprobación de UDDI v3.0.2 como OASIS Standard."
+          },
+          {
+            "url": "https://docs.google.com/document/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, Tecnologías de sistemas de información y desarrollo web, versión 2026.1; apartados de servicios web, estándares, interoperabilidad y tecnologías XML; material formativo de Drive cotejado para cobertura curricular."
+          }
+        ],
+        "observaciones": "Cotejo de servicios web e interoperabilidad; las categorías normativas y versiones W3C/OASIS se determinan mediante los organismos de normalización correspondientes. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de sistemas de información y desarrollo web, versión 2026.1; apartados de servicios web, estándares, interoperabilidad y tecnologías XML Correspondencia A1-58, A2-II-6 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica."
+      }
     },
     {
       "id": 1794,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale qué lenguaje intermedio específico de representación de conocimiento se utiliza en el área de inteligencia artificial:",
+      "texto": "¿Qué lenguaje orientado a computador se diseñó para representar e intercambiar conocimiento entre programas?",
       "opciones": [
-        "XML",
-        "STRIPS",
-        "KIF",
-        "EXML"
+        "XML, lenguaje de marcado de propósito general.",
+        "STRIPS, formalismo de representación de acciones y planificación.",
+        "KIF (Knowledge Interchange Format), lenguaje declarativo para el intercambio de conocimiento.",
+        "EXML, lenguaje universal normalizado de representación del conocimiento."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Cotejo curricular de representación del conocimiento; la definición de KIF y su finalidad se verifican con materiales de investigación de UMBC vinculados al Knowledge Sharing Effort. Cotejo curricular: ITIC Academy, bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1; apartados de representación e intercambio del conocimiento y de inteligencia artificial simbólica Correspondencia A1-70, A2-III-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1; apartados de representación e intercambio del conocimiento y de inteligencia artificial simbólica",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1; apartados de representación e intercambio del conocimiento y de inteligencia artificial simbólica Correspondencia A1-70, A2-III-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica."
+      },
+      "etiquetas": [
+        "IA",
+        "KIF",
+        "Knowledge Interchange Format",
+        "representación del conocimiento",
+        "intercambio de conocimiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://research.cs.umbc.edu/kif/",
+            "referencia": "University of Maryland, Baltimore County, Knowledge Interchange Format: define KIF como lenguaje orientado a computador para intercambiar conocimiento entre programas distintos, con semántica declarativa y capacidad de expresar lógica de primer orden."
+          },
+          {
+            "url": "https://research.cs.umbc.edu/kse/",
+            "referencia": "UMBC, DARPA Knowledge Sharing Effort: contextualiza KIF como uno de los lenguajes desarrollados para representar e intercambiar conocimiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1; apartados de representación e intercambio del conocimiento y de inteligencia artificial simbólica; material formativo de Drive cotejado para cobertura curricular."
+          }
+        ],
+        "observaciones": "Cotejo curricular de representación del conocimiento; la definición de KIF y su finalidad se verifican con materiales de investigación de UMBC vinculados al Knowledge Sharing Effort. Cotejo curricular: ITIC Academy, bloque 32, Inteligencia artificial y ciencia de datos, versión 2026.1; apartados de representación e intercambio del conocimiento y de inteligencia artificial simbólica Correspondencia A1-70, A2-III-5 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica."
+      }
     },
     {
       "id": 1795,
       "bloque": 0,
       "tema": 0,
-      "texto": "WildFly es:",
+      "texto": "¿Qué es WildFly, el proyecto de servidor antes conocido como JBoss AS?",
       "opciones": [
-        "Un servidor de aplicaciones, anteriormente conocido como JBOSS.",
-        "Un sistema de gestión de base de datos, anteriormente conocido como PostreSQL.",
-        "Un software de streaming de vídeo."
+        "Un servidor de aplicaciones de código abierto para tecnologías Jakarta y MicroProfile.",
+        "Un sistema gestor de bases de datos, antes llamado PostgreSQL.",
+        "Un servicio de streaming de vídeo."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Cotejo curricular de plataformas empresariales Java y servidores de aplicaciones; la función y denominación histórica de WildFly se confirman con el proyecto oficial. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de sistemas de información y desarrollo web, versión 2026.1; apartados de plataformas Java/Jakarta, middleware y servidores de aplicaciones Correspondencia A1-67, A2-III-10 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30, Tecnologías de sistemas de información y desarrollo web, versión 2026.1; apartados de plataformas Java/Jakarta, middleware y servidores de aplicaciones",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de sistemas de información y desarrollo web, versión 2026.1; apartados de plataformas Java/Jakarta, middleware y servidores de aplicaciones Correspondencia A1-67, A2-III-10 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica."
+      },
+      "etiquetas": [
+        "WildFly",
+        "JBoss AS",
+        "servidor de aplicaciones",
+        "Jakarta EE",
+        "Java EE"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-27",
+        "fuentes": [
+          {
+            "url": "https://www.wildfly.org/",
+            "referencia": "Proyecto oficial WildFly: lo identifica como servidor de aplicaciones modular, abierto y ligero."
+          },
+          {
+            "url": "https://docs.wildfly.org/42/Getting_Started_Guide.html",
+            "referencia": "WildFly Getting Started Guide 42: describe WildFly como una serie de ofertas de servidor de aplicaciones de código abierto e implementación de especificaciones Jakarta y MicroProfile."
+          },
+          {
+            "url": "https://www.wildfly.org/assets/conference/202503-wildfly-foundation.pdf",
+            "referencia": "Presentación del proyecto WildFly alojada en su sitio oficial: identifica el proyecto WildFly como anteriormente denominado JBoss AS."
+          },
+          {
+            "url": "https://docs.google.com/document/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, Tecnologías de sistemas de información y desarrollo web, versión 2026.1; apartados de plataformas Java/Jakarta, middleware y servidores de aplicaciones; material formativo de Drive cotejado para cobertura curricular."
+          }
+        ],
+        "observaciones": "Cotejo curricular de plataformas empresariales Java y servidores de aplicaciones; la función y denominación histórica de WildFly se confirman con el proyecto oficial. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de sistemas de información y desarrollo web, versión 2026.1; apartados de plataformas Java/Jakarta, middleware y servidores de aplicaciones Correspondencia A1-67, A2-III-10 contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia sirve para comprobar cobertura, no como fuente normativa o técnica."
+      }
     },
     {
       "id": 1796,

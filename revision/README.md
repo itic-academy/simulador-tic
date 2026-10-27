@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 294 (IDs 1786–1790); se resolvieron además seis pendientes antiguos. Acumulado: 1.790 preguntas examinadas, 1.743 verificadas (390 vigentes, 1.225 corregidas y 128 históricas) y 47 pendientes (24 de fuente y 23 de ambigüedad); quedan 10.333 sin revisar de contenido. Hay 1.384 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 295 (IDs 1791–1795); se resolvieron además seis pendientes antiguos. Acumulado: 1.795 preguntas examinadas, 1.748 verificadas (391 vigentes, 1.229 corregidas y 128 históricas) y 47 pendientes (24 de fuente y 23 de ambigüedad); quedan 10.328 sin revisar de contenido. Hay 1.388 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -14,6 +14,22 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 - La 52 se corrigió: la secuencia de siete pasos y su paso final (Monitor) pertenecen al RMF de NIST SP 800-37 Rev. 2. La guía CCN-STIC 801 del catálogo oficial se titula «ENS. Responsabilidades y Funciones», así que se retiró la atribución original no sustentada. No se fuerza equivalencia de academia.
 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
+
+## Lote 295 — 27 de octubre
+
+IDs 1791–1795 revisados individualmente. Cuatro se corrigieron y una (ANSI/SPARC) conserva contenido y clave tras verificarse. Acumulado: 1.795 examinadas; 1.748 verificadas (391 vigentes, 1.229 corregidas y 128 históricas); 47 pendientes (24 de fuente y 23 de ambigüedad); 1.388 preguntas con cambios de contenido; 10.328 aún sin revisión individual. Siguiente ID: 1.796. Los originales completos quedan en `cambios-lote-295.json`.
+
+- La 1791 limpia los nombres inventados o informales de los distractores de vista materializada y distingue almacenamiento del resultado de consulta de la vista ordinaria; Oracle documenta que requiere espacio de almacenamiento y admite refresco.
+- La 1792 mantiene la definición correcta del nivel conceptual ANSI/SPARC: estructura lógica global de la base de datos, no vista personalizada por usuario ni descripción de almacenamiento físico.
+- La 1793 resuelve una ambigüedad de estatus normativo al fijar versiones: WSDL 2.0, SOAP 1.2 y XHTML 1.1 fueron Recomendaciones W3C; UDDI 3.0.2 es estándar OASIS. XHTML 1.1 fue después sustituida, por lo que no se afirma que siga siendo la recomendación actual.
+- La 1794 identifica KIF por nombre completo y función documentada de intercambio de conocimiento entre programas. Se retira la expresión imprecisa «lenguaje intermedio específico» y se diferencia KIF de un protocolo de mensajes entre agentes.
+- La 1795 conserva la respuesta pero precisa el nombre histórico: WildFly es un servidor de aplicaciones y el proyecto se conocía como JBoss AS; «JBoss» sin delimitación puede abarcar otros productos o marcas.
+
+Cotejo de academia en Drive: bloque 29 para bases de datos, vistas y modelo ANSI/SPARC; bloque 30 para servicios web, estándares, middleware y servidores Java/Jakarta; bloque 32 para IA simbólica y representación del conocimiento. Correspondencias contrastadas con `temario-oficial.json` y convocatorias [A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1791 A1-63/A1-64/A2-II-5/A2-IV-2; 1792 A1-63/A2-II-5; 1793 A1-58/A2-II-6; 1794 A1-70/A2-III-5; 1795 A1-67/A2-III-10. La academia comprueba cobertura curricular; las fuentes técnicas primarias sustentan las respuestas.
+
+Fuentes: [Oracle AI Database 26c, Basic Materialized Views](https://docs.oracle.com/en/database/oracle/oracle-database/26/dwhsg/basic-materialized-views.html); [Montana State University, Conceptual or logical level](https://www.cs.montana.edu/courses/spring2004/435/lectures/ConceptsArchitecture.html); [WSDL 2.0, W3C Recommendation](https://www.w3.org/TR/wsdl20/), [SOAP 1.2, W3C Recommendation](https://www.w3.org/TR/soap12/), [XHTML 1.1, W3C Superseded Recommendation](https://www.w3.org/TR/xhtml11/) y [UDDI, OASIS UDDI Specifications TC](https://www.oasis-open.org/committees/uddi-spec/doc/tcspecs.htm); [UMBC, Knowledge Interchange Format](https://research.cs.umbc.edu/kif/) y [DARPA Knowledge Sharing Effort](https://research.cs.umbc.edu/kse/); [proyecto WildFly](https://www.wildfly.org/), [guía oficial WildFly 42](https://docs.wildfly.org/42/Getting_Started_Guide.html) y [presentación histórica del proyecto](https://www.wildfly.org/assets/conference/202503-wildfly-foundation.pdf).
+
+Ejecutados `node revision/lote-295.cjs`, `node revision/academia-lote-295.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario de 12.123 preguntas, errores 0; 1.795 examinadas, 10.328 sin revisión individual de contenido. Se mantienen explícitamente los 47 pendientes.
 
 ## Lote 294 — 27 de octubre
 
