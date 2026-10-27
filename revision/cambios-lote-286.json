@@ -1,0 +1,344 @@
+{
+  "fecha": "2026-10-27",
+  "alcance": "IDs 1746–1750; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1746,
+      "original": {
+        "id": 1746,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El mínimo espacio de almacenamiento posible y el método de copia de seguridad más rápido se alcanzan:",
+        "opciones": [
+          "Usando una combinación de copias de seguridad normales e incrementales.",
+          "Usando una combinación de copias de seguridad normales y diferenciales.",
+          "Al crear por primera vez un conjunto de copia.",
+          "Nunca pueden alcanzarse ambos a la vez."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1746,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el esquema clásico de copias de seguridad, ¿qué describe una copia incremental?",
+        "opciones": [
+          "Guarda los datos nuevos o modificados desde la copia más reciente, sea completa o incremental.",
+          "Guarda todos los cambios desde la última copia completa, aunque haya copias posteriores.",
+          "Vuelve a guardar siempre el conjunto completo de datos.",
+          "Garantiza por definición el menor tiempo de copia y de restauración en cualquier sistema."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Cotejo directo con las definiciones de backup del temario; la precisión del punto de comparación y la ausencia de una garantía universal de rendimiento se contrastan con IBM y Microsoft. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 9.2, copias completas, incrementales y diferenciales. Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-3"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 9.2, copias completas, incrementales y diferenciales",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 9.2, copias completas, incrementales y diferenciales. Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "copia incremental",
+          "copia diferencial",
+          "copia completa",
+          "backup"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/storage-protect/8.1.27?topic=use-file-backup-techniques",
+              "referencia": "IBM Storage Protect 8.1.27, File backup techniques: progressive incremental backs up files changed since the last full or incremental backup."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/azure/backup/backup-architecture",
+              "referencia": "Microsoft Learn, Azure Backup architecture, Backup types: incremental captures changes since the previous backup; differential is based on and captures changes since the full backup. La documentación también advierte que la eficiencia depende del producto y del caso."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 9.2, copias completas, incrementales y diferenciales; epígrafe cotejado en el documento de Drive. Correspondencia oficial contrastada con el temario y BOE-A-2025-25938/BOE-A-2025-26262."
+            }
+          ],
+          "observaciones": "Cotejo directo con las definiciones de backup del temario; la precisión del punto de comparación y la ausencia de una garantía universal de rendimiento se contrastan con IBM y Microsoft. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 9.2, copias completas, incrementales y diferenciales. Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1747,
+      "original": {
+        "id": 1747,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes características NO es propia del sistema de almacenamiento RAID 5?",
+        "opciones": [
+          "La paridad está en un disco dedicado",
+          "La división se produce a nivel de bloques",
+          "Tiene un bajo coste de redundancia",
+          "Se necesitan al menos 3 discos"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1747,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se almacena la información de paridad en un conjunto RAID 5 convencional?",
+        "opciones": [
+          "En un único disco dedicado a paridad.",
+          "Distribuida entre las unidades del conjunto.",
+          "RAID 5 no almacena información de paridad.",
+          "Como una segunda paridad independiente, igual que en RAID 6."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "El temario trata RAID y paridad; se confirma con documentación IBM que RAID 5 distribuye la paridad entre las unidades. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 8.1, distribución de paridad en RAID 5 frente a RAID 3/6. Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 8.1, distribución de paridad en RAID 5 frente a RAID 3/6",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 8.1, distribución de paridad en RAID 5 frente a RAID 3/6. Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "RAID 5",
+          "paridad distribuida",
+          "paridad RAID"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/i/7.5.0?topic=concepts-how-raid-5-works",
+              "referencia": "IBM i 7.5, How RAID 5 works: RAID 5 distribuye los datos y la información de paridad entre las unidades; el conjunto necesita al menos tres unidades."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/power9/9223-22S?topic=srl-raid-5-1",
+              "referencia": "IBM Power Systems, RAID 5: los datos se dividen en bloques y la paridad se distribuye entre los discos del conjunto, sin un único disco dedicado a paridad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 8.1, distribución de paridad en RAID 5 frente a RAID 3/6; epígrafe cotejado en el documento de Drive. Correspondencia oficial contrastada con el temario y BOE-A-2025-25938/BOE-A-2025-26262."
+            }
+          ],
+          "observaciones": "El temario trata RAID y paridad; se confirma con documentación IBM que RAID 5 distribuye la paridad entre las unidades. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 8.1, distribución de paridad en RAID 5 frente a RAID 3/6. Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1748,
+      "original": {
+        "id": 1748,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿A qué se refiere el término de 'Sistema de reporting'?",
+        "opciones": [
+          "Un sistema de denuncias públicas empleando soluciones TIC que permiten garantizar el anonimato.",
+          "Un mecanismo de protección a los denunciantes para evitarles represalias.",
+          "Una técnica de ventas.",
+          "Una solución que busca satisfacer las necesidades de información de la organización."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1748,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el contexto de Business Intelligence y los sistemas de información para la gestión, ¿qué función cumple el reporting?",
+        "opciones": [
+          "Ofrecer un canal TIC para presentar denuncias protegidas.",
+          "Proteger jurídicamente a las personas denunciantes frente a represalias.",
+          "Aplicar una técnica de ventas.",
+          "Presentar datos seleccionados y organizados en informes para responder a necesidades de información y apoyar el seguimiento o la toma de decisiones."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Cotejo directo: el material distingue BI/reporting y define que los MIS producen informes periódicos; se fija BI/MIS como contexto para evitar la ambigüedad con canales de denuncias. Cotejo curricular: ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026); § 1.1, alcance de BI, y § 1.2, informes MIS, DSS y EIS. Correspondencia A1-28, A1-29, A1-33, A2-II-4 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-28",
+            "A1-29",
+            "A1-33"
+          ],
+          "A2": [
+            "A2-II-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026); § 1.1, alcance de BI, y § 1.2, informes MIS, DSS y EIS",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026); § 1.1, alcance de BI, y § 1.2, informes MIS, DSS y EIS. Correspondencia A1-28, A1-29, A1-33, A2-II-4 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "reporting",
+          "Business Intelligence",
+          "informes de gestión",
+          "sistemas de información"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/cognos-analytics/12.1.x?topic=workflow-analyzing-your-requirements-source-data",
+              "referencia": "IBM Cognos Analytics 12.1, Analyzing Your Requirements and Source Data: recomienda analizar a los usuarios y los informes OLAP que necesitan para diseñar un modelo BI efectivo."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/cognos-analytics/12.0.x?topic=security-reports-cubes",
+              "referencia": "IBM Cognos Analytics 12.0, Reports and Cubes: los informes y cubos permiten analizar datos para apoyar decisiones informadas y oportunas; pueden publicarse para ofrecer información relevante a usuarios de la organización."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026); § 1.1, alcance de BI, y § 1.2, informes MIS, DSS y EIS; epígrafe cotejado en el documento de Drive. Correspondencia oficial contrastada con el temario y BOE-A-2025-25938/BOE-A-2025-26262."
+            }
+          ],
+          "observaciones": "Cotejo directo: el material distingue BI/reporting y define que los MIS producen informes periódicos; se fija BI/MIS como contexto para evitar la ambigüedad con canales de denuncias. Cotejo curricular: ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026); § 1.1, alcance de BI, y § 1.2, informes MIS, DSS y EIS. Correspondencia A1-28, A1-29, A1-33, A2-II-4 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1749,
+      "original": {
+        "id": 1749,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se llama la conexión de Intel que supera en velocidad a USB 3.0, basada en LightPeak?",
+        "opciones": [
+          "Thundercat",
+          "LightFire",
+          "Thunderbolt",
+          "USB 4.0"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1749,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué nombre comercial anunció Intel en 2011 para la tecnología de conexión que hasta entonces tenía el nombre en clave “Light Peak”?",
+        "opciones": [
+          "Thunderbolt.",
+          "ThunderCat.",
+          "LightFire.",
+          "USB 4.0."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Cotejo temático con conectividad de equipos y dispositivos del programa; la atribución histórica del nombre Light Peak se comprueba en el comunicado original de Intel, no en el temario. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 6.3, conectividad de endpoints y dispositivos personales. Correspondencia A1-54, A2-II-1 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-54"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 6.3, conectividad de endpoints y dispositivos personales",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 6.3, conectividad de endpoints y dispositivos personales. Correspondencia A1-54, A2-II-1 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "Thunderbolt",
+          "Light Peak",
+          "Intel",
+          "conectividad de dispositivos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.intc.com/news-events/press-releases/detail/678/intel-announces-thunderbolttm-technology-the-fastest",
+              "referencia": "Intel, comunicado de 24-02-2011: anuncia Thunderbolt a 10 Gbit/s e indica que la tecnología se conocía anteriormente con el nombre en clave “Light Peak”. Es una afirmación histórica."
+            },
+            {
+              "url": "https://www.intel.com/content/www/us/en/newsroom/news/thunderbolt-tech-turns-10.html",
+              "referencia": "Intel, Thunderbolt Tech Turns 10 (2021): sitúa el lanzamiento de Thunderbolt en 2011 y describe su evolución posterior, por lo que no se generalizan las tasas de una generación a toda la familia actual."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 6.3, conectividad de endpoints y dispositivos personales; epígrafe cotejado en el documento de Drive. Correspondencia oficial contrastada con el temario y BOE-A-2025-25938/BOE-A-2025-26262."
+            }
+          ],
+          "observaciones": "Cotejo temático con conectividad de equipos y dispositivos del programa; la atribución histórica del nombre Light Peak se comprueba en el comunicado original de Intel, no en el temario. Cotejo curricular: ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); § 6.3, conectividad de endpoints y dispositivos personales. Correspondencia A1-54, A2-II-1 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1750,
+      "original": {
+        "id": 1750,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique la opción verdadera respecto a los certificados X.509v3:",
+        "opciones": [
+          "El formato de certificados X.509 es un estándar del ITU-T.",
+          "Uno de sus elementos es el número de serie del certificado, un número secuencial que recomienza cada 1 de enero.",
+          "Emplean un formato llamado ASN-3 para la transmisión de datos.",
+          "Son válidos de forma permanente salvo que se incluyan en una lista de anulación de certificados (CRLs)."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1750,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes afirmaciones es verdadera sobre los certificados X.509?",
+        "opciones": [
+          "X.509 es una Recomendación ITU-T que especifica, entre otros, marcos de certificados de clave pública.",
+          "El número de serie debe ser único en todo el mundo y se reinicia cada 1 de enero.",
+          "Su sintaxis de datos se denomina ASN-3.",
+          "Todo certificado es permanente y solo deja de ser válido si se publica en una CRL."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Cotejo directo con certificados X.509 y PKI del temario; la sintaxis, campos, validez y unicidad de serie se contrastan con ITU-T e IETF. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, criptografía, identificación y firma, versión 2026.1 (17-09-2026); § 9, certificados digitales X.509; §§ 9.1–9.3, ciclo de vida, validación y PKI. Correspondencia A1-80, A2-IV-12 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-80"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 36, Seguridad, criptografía, identificación y firma, versión 2026.1 (17-09-2026); § 9, certificados digitales X.509; §§ 9.1–9.3, ciclo de vida, validación y PKI",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 36, Seguridad, criptografía, identificación y firma, versión 2026.1 (17-09-2026); § 9, certificados digitales X.509; §§ 9.1–9.3, ciclo de vida, validación y PKI. Correspondencia A1-80, A2-IV-12 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "X.509",
+          "ITU-T",
+          "ASN.1",
+          "DER",
+          "número de serie",
+          "validez de certificado"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=X.509",
+              "referencia": "ITU-T Recommendation X.509 (10/2019), en vigor y con corrigenda/enmiendas posteriores: marcos de certificados de clave pública y de atributos; X.509 es una Recomendación ITU-T."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc5280.html",
+              "referencia": "IETF RFC 5280 §§4.1 y 4.1.2.2–4.1.2.5: la sintaxis usa ASN.1/DER, la serie es un entero positivo único por CA emisora, y Validity contiene notBefore y notAfter."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 36, Seguridad, criptografía, identificación y firma, versión 2026.1 (17-09-2026); § 9, certificados digitales X.509; §§ 9.1–9.3, ciclo de vida, validación y PKI; epígrafe cotejado en el documento de Drive. Correspondencia oficial contrastada con el temario y BOE-A-2025-25938/BOE-A-2025-26262."
+            }
+          ],
+          "observaciones": "Cotejo directo con certificados X.509 y PKI del temario; la sintaxis, campos, validez y unicidad de serie se contrastan con ITU-T e IETF. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, criptografía, identificación y firma, versión 2026.1 (17-09-2026); § 9, certificados digitales X.509; §§ 9.1–9.3, ciclo de vida, validación y PKI. Correspondencia A1-80, A2-IV-12 contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    }
+  ]
+}

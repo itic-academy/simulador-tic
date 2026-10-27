@@ -1,0 +1,19 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(bankPath,'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-286.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ storage:{url:'https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk',label:'ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026)'},
+ bi:{url:'https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk',label:'ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1 (16-09-2026)'},
+ security:{url:'https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk',label:'ITIC Academy, bloque 36, Seguridad, criptografía, identificación y firma, versión 2026.1 (17-09-2026)'}
+};
+const mapping={
+ 1746:{doc:'storage',detail:'§ 9.2, copias completas, incrementales y diferenciales',topics:['A1-56','A2-IV-3'],note:'Cotejo directo con las definiciones de backup del temario; la precisión del punto de comparación y la ausencia de una garantía universal de rendimiento se contrastan con IBM y Microsoft.'},
+ 1747:{doc:'storage',detail:'§ 8.1, distribución de paridad en RAID 5 frente a RAID 3/6',topics:['A1-56','A2-IV-5'],note:'El temario trata RAID y paridad; se confirma con documentación IBM que RAID 5 distribuye la paridad entre las unidades.'},
+ 1748:{doc:'bi',detail:'§ 1.1, alcance de BI, y § 1.2, informes MIS, DSS y EIS',topics:['A1-28','A1-29','A1-33','A2-II-4'],note:'Cotejo directo: el material distingue BI/reporting y define que los MIS producen informes periódicos; se fija BI/MIS como contexto para evitar la ambigüedad con canales de denuncias.'},
+ 1749:{doc:'storage',detail:'§ 6.3, conectividad de endpoints y dispositivos personales',topics:['A1-54','A2-II-1'],note:'Cotejo temático con conectividad de equipos y dispositivos del programa; la atribución histórica del nombre Light Peak se comprueba en el comunicado original de Intel, no en el temario.'},
+ 1750:{doc:'security',detail:'§ 9, certificados digitales X.509; §§ 9.1–9.3, ciclo de vida, validación y PKI',topics:['A1-80','A2-IV-12'],note:'Cotejo directo con certificados X.509 y PKI del temario; la sintaxis, campos, validez y unicidad de serie se contrastan con ITU-T e IETF.'}
+};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),r=mapping[c.id],doc=r&&docs[r.doc];assert.ok(q?.revision&&r&&doc,`Falta cotejo ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2,...r.topics])assert.ok(official.has(id),id);const curr=`${doc.label}; ${r.detail}`,note=`Cotejo curricular: ${curr}. Correspondencia ${r.topics.join(', ')} contrastada con revision/temario-oficial.json y las convocatorias oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262. La academia sirve para verificar cobertura temática, no sustituye las fuentes técnicas primarias.`;q.revision.observaciones=`${r.note} ${note}`;q.revision.fuentes.push({url:doc.url,referencia:`${curr}; epígrafe cotejado en el documento de Drive. Correspondencia oficial contrastada con el temario y BOE-A-2025-25938/BOE-A-2025-26262.`});q.clasificacion.bloque_academia=curr;q.clasificacion.nota=note;q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q)}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular y BOE actualizado para 1746–1750.');
