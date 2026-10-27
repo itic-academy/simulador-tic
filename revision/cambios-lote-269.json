@@ -1,0 +1,353 @@
+{
+  "fecha": "2026-10-27",
+  "alcance": "IDs 1661–1665; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1661,
+      "original": {
+        "id": 1661,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes interfaces de unidades de disco tiene el mejor rendimiento y la latenciamás baja?",
+        "opciones": [
+          "SATA",
+          "SAS",
+          "NVMe",
+          "SSD SATA3"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1661,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una comparación general de SSD conectados al host, ¿qué interfaz/protocolo se diseñó para aprovechar la paralelización de la memoria flash y suele ofrecer menor latencia y mayor rendimiento que las interfaces heredadas SATA/SAS?",
+        "opciones": [
+          "SATA.",
+          "SAS.",
+          "NVMe, normalmente sobre PCIe en este escenario.",
+          "SATA III: protocolo heredado de SSD SATA."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se coteja con el apartado 8 («RAID, SAN, Fibre Channel, iSCSI, NVMe…»), que sitúa NVMe en arquitecturas SSD de baja latencia; la comparación de protocolo se confirma en las especificaciones NVM Express. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8: NVMe; SSD, interfaces, paralelismo y latencia (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8: NVMe; SSD, interfaces, paralelismo y latencia (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8: NVMe; SSD, interfaces, paralelismo y latencia (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "NVMe",
+          "PCIe",
+          "SSD",
+          "latencia",
+          "paralelismo"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://nvmexpress.org/faq_category/specifications/",
+              "referencia": "NVM Express, FAQ de especificaciones: NVMe se diseñó específicamente para memoria no volátil/SSD y ofrece una arquitectura de colas de alto rendimiento, menor latencia y mayor eficiencia que los protocolos heredados concebidos para discos duros, incluidos SATA y SAS; la comparación concreta depende del dispositivo, transporte y carga."
+            },
+            {
+              "url": "https://nvmexpress.org/SPECIFICATIONS/",
+              "referencia": "NVM Express, Specifications: NVMe define cómo se comunica el software host con subsistemas de memoria no volátil sobre distintos transportes; PCIe es uno de ellos y NVMe también puede usar RDMA y TCP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8: NVMe; SSD, interfaces, paralelismo y latencia (A1-56/A2-IV-5); documento y apartados inspeccionados en Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Se coteja con el apartado 8 («RAID, SAN, Fibre Channel, iSCSI, NVMe…»), que sitúa NVMe en arquitecturas SSD de baja latencia; la comparación de protocolo se confirma en las especificaciones NVM Express. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8: NVMe; SSD, interfaces, paralelismo y latencia (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1662,
+      "original": {
+        "id": 1662,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la afirmación correcta sobre las redes SAN iSCSI:",
+        "opciones": [
+          "Intercambian tramas SCSI sobre FC.",
+          "Es una red de almacenamiento de acceso a ficheros.",
+          "No permite implementar iSCSI en software.",
+          "Puede usar TCP/IP como transporte."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1662,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la afirmación correcta sobre iSCSI en una SAN:",
+        "opciones": [
+          "Transporta el protocolo SCSI mediante Fibre Channel (FCP), no sobre IP.",
+          "Proporciona acceso a ficheros compartidos y no a bloques.",
+          "No puede implementarse mediante software en los sistemas host.",
+          "Transporta comandos SCSI sobre TCP/IP y puede aprovechar una red IP."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se coteja con los apartados 7.2 (DAS/NAS/SAN y bloque/fichero) y 8.2–8.3 (Fibre Channel e iSCSI). La semántica normativa exacta de iSCSI sobre TCP se verifica con RFC 7143. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7–8: arquitectura SAN, almacenamiento de bloques, iSCSI y protocolos de almacenamiento (A1-56/A1-108/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-108, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56",
+            "A1-108"
+          ],
+          "A2": [
+            "A2-IV-5",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7–8: arquitectura SAN, almacenamiento de bloques, iSCSI y protocolos de almacenamiento (A1-56/A1-108/A2-IV-5/A2-IV-8)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7–8: arquitectura SAN, almacenamiento de bloques, iSCSI y protocolos de almacenamiento (A1-56/A1-108/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-108, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "SAN",
+          "iSCSI",
+          "SCSI",
+          "TCP/IP",
+          "almacenamiento por bloques"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc7143.html",
+              "referencia": "IETF RFC 7143, Internet Small Computer System Interface (iSCSI) Protocol, resumen e introducción: iSCSI es un protocolo de transporte SCSI sobre TCP y transporta paquetes/comandos SCSI sobre TCP/IP."
+            },
+            {
+              "url": "https://www.snia.org/education/what-is-fibre-channel",
+              "referencia": "SNIA, What is Fibre Channel?: las SAN ofrecen almacenamiento de bloques; Fibre Channel transporta el protocolo SCSI-FCP y es una tecnología distinta de iSCSI."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7–8: arquitectura SAN, almacenamiento de bloques, iSCSI y protocolos de almacenamiento (A1-56/A1-108/A2-IV-5/A2-IV-8); documento y apartados inspeccionados en Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Se coteja con los apartados 7.2 (DAS/NAS/SAN y bloque/fichero) y 8.2–8.3 (Fibre Channel e iSCSI). La semántica normativa exacta de iSCSI sobre TCP se verifica con RFC 7143. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7–8: arquitectura SAN, almacenamiento de bloques, iSCSI y protocolos de almacenamiento (A1-56/A1-108/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-108, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1663,
+      "original": {
+        "id": 1663,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique la respuesta INCORRECTA asociada a la tecnología de red “Fibre Channel” o FC:",
+        "opciones": [
+          "Se utiliza principalmente para conectar las cabinas de almacenamiento SAN.",
+          "La tarjeta de red de los servidores se conoce con el nombre Fabric.",
+          "Cada HBA tiene un identificador único (World Wide Name).",
+          "Podemos distinguir tres topologías: punto a punto, en anillo y conmutada."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1663,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique la respuesta INCORRECTA sobre Fibre Channel (FC):",
+        "opciones": [
+          "Se utiliza habitualmente para conectar servidores y sistemas de almacenamiento en una SAN.",
+          "La tarjeta/adaptador FC del servidor se denomina fabric; HBA es el nombre del conjunto de switches FC.",
+          "Los puertos FC se identifican mediante WWPN (World Wide Port Name).",
+          "Entre sus topologías básicas están punto a punto, arbitrated loop y switched fabric."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se coteja con el apartado 8.2 («Fibre Channel») y arquitectura SAN del bloque; la definición de HBA, WWPN y topologías se valida además con SNIA e IBM Documentation. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7–8: conectividad de almacenamiento SAN y Fibre Channel (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56",
+            "A1-110"
+          ],
+          "A2": [
+            "A2-IV-5",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7–8: conectividad de almacenamiento SAN y Fibre Channel (A1-56/A1-110/A2-IV-5/A2-IV-8)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7–8: conectividad de almacenamiento SAN y Fibre Channel (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "Fibre Channel",
+          "FC",
+          "HBA",
+          "WWPN",
+          "WWN",
+          "topologías"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/ds8870/7.3.0?topic=attachment-fibre-channel-architecture",
+              "referencia": "IBM Documentation, Fibre Channel architecture: identifica las topologías básicas como arbitrated loop, point-to-point y switched-fabric; FC-AL puede organizar los nodos en una topología de anillo. También explica los puertos FC de host/adaptadores."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/flashsystem-7x00/9.1.2?topic=connectivity-fibre-channel-port-numbers-worldwide-port-names",
+              "referencia": "IBM Documentation, Fibre Channel port numbers and worldwide port names: los puertos FC se identifican por número físico y WWPN; los WWPN identifican de forma única dispositivos/puertos en la SAN."
+            },
+            {
+              "url": "https://www.snia.org/education/what-is-fibre-channel",
+              "referencia": "SNIA, What is Fibre Channel?: Fibre Channel conecta hosts a dispositivos de almacenamiento con topologías punto a punto o fabric; las SAN FC emplean almacenamiento por bloques."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7–8: conectividad de almacenamiento SAN y Fibre Channel (A1-56/A1-110/A2-IV-5/A2-IV-8); documento y apartados inspeccionados en Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Se coteja con el apartado 8.2 («Fibre Channel») y arquitectura SAN del bloque; la definición de HBA, WWPN y topologías se valida además con SNIA e IBM Documentation. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7–8: conectividad de almacenamiento SAN y Fibre Channel (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1664,
+      "original": {
+        "id": 1664,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto a tecnologías RAID:",
+        "opciones": [
+          "RAID 0 aumenta el rendimiento",
+          "RAID 1 utiliza códigos hamming",
+          "RAID 2 utiliza discos espejo",
+          "RAID 5 utiliza discos espejo"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1664,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto a tecnologías RAID, ¿qué afirmación describe correctamente RAID 0?",
+        "opciones": [
+          "Distribuye los datos (striping) entre los discos y puede aumentar el rendimiento de ciertas operaciones, pero no aporta redundancia ni tolerancia a fallos.",
+          "RAID 1 almacena códigos Hamming en lugar de copias espejo.",
+          "RAID 2 se define por duplicar todos los datos en discos espejo.",
+          "RAID 5 se define por espejar los discos sin usar paridad."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se coteja con el apartado 8.1 («RAID: rendimiento y tolerancia a fallo»). La posible mejora de rendimiento de RAID 0 se condiciona al paralelismo y tipo de operación, en línea con documentación de IBM. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID, striping, rendimiento y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID, striping, rendimiento y tolerancia a fallos (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID, striping, rendimiento y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "RAID 0",
+          "striping",
+          "rendimiento",
+          "sin redundancia"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/support/pages/raid-level-descriptions-servers",
+              "referencia": "IBM Support, RAID level descriptions: RAID 0 distribuye datos entre discos; sus ventajas incluyen tasa de transacciones I/O alta, búsquedas paralelas y balanceo de carga, pero no tiene paridad ni redundancia."
+            },
+            {
+              "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg246399.pdf",
+              "referencia": "IBM Redbooks, RAID and disk subsystem concepts: RAID 0 hace striping y operaciones paralelas que pueden mejorar rendimiento; RAID 1 es mirroring y RAID 2 usa codificación correctora/ECC, históricamente con códigos Hamming."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID, striping, rendimiento y tolerancia a fallos (A1-56/A2-IV-5); documento y apartados inspeccionados en Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Se coteja con el apartado 8.1 («RAID: rendimiento y tolerancia a fallo»). La posible mejora de rendimiento de RAID 0 se condiciona al paralelismo y tipo de operación, en línea con documentación de IBM. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID, striping, rendimiento y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1665,
+      "original": {
+        "id": 1665,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La capacidad efectiva de información útil de un disco es:",
+        "opciones": [
+          "El tamaño en pulgadas del disco",
+          "El número de bits que pueden almacenarse en el disco sin formatear",
+          "El número de bit que pueden almacenarse en el disco formateado",
+          "El número de bit que pueden almacenarse en una pista"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1665,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En terminología de almacenamiento, ¿qué representa la capacidad útil o formateada de un disco/dispositivo?",
+        "opciones": [
+          "Su tamaño físico expresado en pulgadas.",
+          "El total de bits físicos en bruto, incluidos los destinados a control y formato.",
+          "La cantidad de bytes disponibles para escritura tras prepararlo/formatearlo para su uso, sin contar las áreas reservadas para el propio sistema o protección.",
+          "La capacidad de una sola pista, independientemente del formato."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se coteja con los apartados de métricas y arquitectura de almacenamiento; la distinción concreta entre capacidad bruta y formateada/usable corresponde al glosario SNIA. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.1–7.2 y 8: métricas de almacenamiento, capacidad bruta/usable y protección RAID (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.1–7.2 y 8: métricas de almacenamiento, capacidad bruta/usable y protección RAID (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.1–7.2 y 8: métricas de almacenamiento, capacidad bruta/usable y protección RAID (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "capacidad útil",
+          "capacidad formateada",
+          "capacidad bruta",
+          "almacenamiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.snia.org/sites/default/files/snia-dictionary-pdf/SNIADictionary.pdf",
+              "referencia": "SNIA Dictionary (28-04-2026), voz “formatted capacity”: total de bytes disponibles para escritura después de formatear el sistema o dispositivo; también llamada capacidad usable, es menor o igual que la capacidad bruta y excluye las áreas reservadas para sistema, repuestos, paridad, checksum, remapeos y etiquetado."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/ds8880/8.5.3?topic=system-drives",
+              "referencia": "IBM Documentation, Drives: diferencia la capacidad bruta del disco de la capacidad efectiva del sistema una vez configurado; la capacidad útil disponible depende de la configuración y del formato."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.1–7.2 y 8: métricas de almacenamiento, capacidad bruta/usable y protección RAID (A1-56/A2-IV-5); documento y apartados inspeccionados en Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Se coteja con los apartados de métricas y arquitectura de almacenamiento; la distinción concreta entre capacidad bruta y formateada/usable corresponde al glosario SNIA. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.1–7.2 y 8: métricas de almacenamiento, capacidad bruta/usable y protección RAID (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje y no sustituye las fuentes técnicas primarias."
+        }
+      }
+    }
+  ]
+}

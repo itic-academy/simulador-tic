@@ -1,8 +1,18 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 268 (IDs 1656–1660). Acumulado: 1.660 preguntas examinadas, 1.608 verificadas (378 vigentes, 1.105 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.463 sin revisar de contenido. Hay 1.261 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 269 (IDs 1661–1665). Acumulado: 1.665 preguntas examinadas, 1.613 verificadas (378 vigentes, 1.110 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.458 sin revisar de contenido. Hay 1.266 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 269 — 27 de octubre
+
+IDs 1661–1665 revisados individualmente; cinco corregidos. Acumulado: 1.665 examinadas; 1.613 verificadas (378 vigentes, 1.110 corregidas y 125 históricas), 52 pendientes (28 de fuente y 24 de ambigüedad); 1.266 preguntas con cambios de contenido. Quedan 10.458 sin revisar; siguiente ID: 1.666. Originales íntegros conservados en `cambios-lote-269.json`.
+
+La 1661 acota la ventaja habitual de NVMe sobre interfaces heredadas SATA/SAS al comparar SSD de forma general: depende del transporte, dispositivo y carga; NVMe también admite transportes distintos de PCIe. La 1662 distingue iSCSI (SCSI sobre TCP/IP, almacenamiento de bloques) de FCP y acceso a ficheros. La 1663 reemplaza «anillo» por el nombre técnico arbitrated loop, identifica la tarjeta host como HBA y precisa que WWPN identifica puertos FC. La 1664 limita la mejora de RAID 0 a determinadas cargas paralelizables e indica expresamente que no tiene redundancia. La 1665 formula capacidad usable/formateada según SNIA: datos disponibles para escritura tras preparar el dispositivo, por debajo o igual a capacidad bruta y descontando reservas.
+
+Cotejo con ITIC Academy en Drive: bloque 26, versión 2026.1 (31-08-2026), apartados 7.1–7.2 de métricas y arquitecturas de almacenamiento, 8.1 RAID, 8.2 Fibre Channel y 8.3 iSCSI/NVMe-oF; contiene un test sobre almacenamiento de bloque/fichero, SAN, NVMe, RAID y FC. Correspondencias con `temario-oficial.json` y BOE-A-2025-25938/BOE-A-2025-26262: 1661 A1-56/A2-IV-5; 1662 A1-56/A1-108/A2-IV-5/A2-IV-8; 1663 A1-56/A1-110/A2-IV-5/A2-IV-8; 1664–1665 A1-56/A2-IV-5. La academia orienta el encaje; las afirmaciones técnicas se contrastan con las fuentes primarias citadas en cada registro.
+
+Fuentes técnicas primarias: NVM Express, especificaciones y FAQ sobre NVMe; IETF RFC 7143 para iSCSI sobre TCP; SNIA e IBM Documentation para SAN, WWPN, HBA y topologías Fibre Channel; IBM Support/Redbooks para RAID 0; SNIA Dictionary, edición 28-04-2026, para capacidad formateada/usual. Ejecutados `node revision/lote-269.cjs`, `node revision/academia-lote-269.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas estructuralmente válidas, 1.665 registros, cero errores y 10.458 preguntas aún sin revisar.
 
 ## Lote 268 — 27 de octubre
 
