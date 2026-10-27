@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 311 (IDs 1871–1875); se resolvieron además seis pendientes antiguos. Acumulado: 1.875 preguntas examinadas, 1.827 verificadas (400 vigentes, 1.295 corregidas y 132 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.248 sin revisar de contenido. Hay 1.458 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 312 (IDs 1876–1880); se resolvieron además seis pendientes antiguos. Acumulado: 1.880 preguntas examinadas, 1.832 verificadas (401 vigentes, 1.298 corregidas y 133 históricas) y 48 pendientes (24 de fuente y 24 de ambigüedad); quedan 10.243 sin revisar de contenido. Hay 1.461 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 312 — 27 de octubre
+
+IDs 1876–1880 revisados individualmente con fuentes primarias y cotejo de materiales de ITIC Academy en Drive y temarios oficiales. Tres preguntas se corrigieron, una se verificó vigente y una se conserva como histórica. Los enunciados originales están en `cambios-lote-312.json`. Acumulado: 1.880 examinadas; 1.832 verificadas (401 vigentes, 1.298 corregidas, 133 históricas); 48 pendientes (24 de fuente, 24 de ambigüedad), 1.461 con cambios y 10.243 sin revisión individual.
+
+- La 1876 conserva la respuesta sobre inclusión de personas con discapacidad, coherente con el área de alfabetización, competencias e inclusión de la Agenda Digital para Europa. Se marca histórica (COM(2010) 245), no como iniciativa vigente. Cotejo: bloque 06, brecha digital y evolución de agendas.
+- La 1877 corrige el sujeto de la obligación: la Ley 25/2007 obliga a los operadores descritos en su artículo 2, no de manera general a cualquier prestador de servicios de la sociedad de la información. Conserva los límites de finalidad, datos no relativos al contenido y autorización judicial. Cotejo: bloque 03, legislación de sociedad de la información.
+- La 1878 actualiza el distractor del traslado de domicilio: el artículo 37.3.c ET reconoce un día, no tres. La respuesta correcta continúa siendo el tiempo indispensable para cumplir un deber inexcusable público y personal. El material académico cotejado cubre el mercado de trabajo, pero no se atribuye a este el detalle de permisos que se valida con el BOE.
+- La 1879 precisa que el EBEP obliga a las Administraciones a establecer sistemas de evaluación del desempeño; no es una mera facultad ni un modelo único. Se recuerda también el efecto sobre continuidad en puestos obtenidos por concurso. Cotejo: bloque 03 (EBEP) y bloque 07 (empleo público/gestión de personas).
+- La 1880 se verifica sin cambios: es falsa la atribución a las unidades de información de la función de elaborar legislación. El artículo 21.2 de la Ley 19/2013 enumera sus tareas de publicidad activa y gestión de solicitudes. Cotejo directo: bloque 07, transparencia y UITS.
+
+Cotejo curricular con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1876 A1-18/A1-51/A2-I-6; 1877 A1-22/A2-I-6; 1878 A1-17; 1879 A1-24/A2-I-8; 1880 A1-25/A2-I-4.
+
+Fuentes primarias: [Comisión Europea, Agenda Digital para Europa COM(2010)245, apartado 2.6](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:52010DC0245); [Ley 25/2007 consolidada, arts. 1–7](https://www.boe.es/eli/es/l/2007/10/18/25/con); [Estatuto de los Trabajadores consolidado, art. 37.3](https://www.boe.es/eli/es/rdlg/2015/10/23/2/con); [EBEP consolidado, art. 20](https://www.boe.es/eli/es/rdlg/2015/10/30/5/con); [Ley 19/2013 consolidada, art. 21.2](https://www.boe.es/eli/es/l/2013/12/09/19/con).
+
+Ejecutados `node revision/lote-312.cjs`, `node revision/academia-lote-312.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario de 12.123 preguntas, errores 0; 1.880 examinadas y 10.243 sin revisión individual.
 
 ## Lote 311 — 27 de octubre
 
