@@ -1,0 +1,352 @@
+{
+  "fecha": "2026-10-27",
+  "alcance": "IDs 1676–1680; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1676,
+      "original": {
+        "id": 1676,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Dado un sistema RAID-0, formado por un disco de 1 TB de capacidad y 1 disco de 500 GB, el tamaño de almacenamiento disponible, aproximadamente, será de:",
+        "opciones": [
+          "500 GB.",
+          "1,5 TB.",
+          "1 TB.",
+          "2 TB."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1676,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Linux MD (mdadm), un RAID 0 nuevo combina un dispositivo de 1 TB y otro de 500 GB (capacidades decimales). Sin contar metadatos ni pequeños ajustes de alineación, ¿qué capacidad aproximada presenta?",
+        "opciones": [
+          "500 GB.",
+          "1,5 TB.",
+          "1 TB.",
+          "2 TB."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Cotejado con el apartado de RAID. La capacidad de miembros desiguales depende de la implementación; el caso se restringe expresamente a Linux MD y se verifica con su documentación. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 0, bandas y capacidad útil de conjuntos con discos de distinto tamaño (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 0, bandas y capacidad útil de conjuntos con discos de distinto tamaño (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 0, bandas y capacidad útil de conjuntos con discos de distinto tamaño (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "RAID 0",
+          "md Linux",
+          "striping",
+          "discos de distinta capacidad"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://man7.org/linux/man-pages/man4/md.4.html",
+              "referencia": "Linux man-pages, md(4), apartado RAID0: cuando los dispositivos difieren en tamaño, tras agotarse el menor, Linux MD forma bandas menores que abarcan solo los dispositivos que aún tienen espacio. El tamaño bruto útil se aproxima a la suma de capacidades, sujeto a alineación por chunks y metadatos."
+            },
+            {
+              "url": "https://www.intel.com/content/www/us/en/support/articles/000005867.html",
+              "referencia": "Intel Support, Defining RAID Volumes for Intel Rapid Storage Technology: define RAID 0 por bloques distribuidos y ejemplifica la capacidad agregada para unidades iguales; muestra por qué la implementación y sus reglas deben declararse al preguntar por discos desiguales."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 0, bandas y capacidad útil de conjuntos con discos de distinto tamaño (A1-56/A2-IV-5); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            },
+            {
+              "url": "https://community.intel.com/t/two-completely-different-drive-raid-0/24564/1",
+              "referencia": "Intel Community, respuesta de personal técnico de Intel sobre Intel RAID 0 con unidades distintas: su controlador toma como referencia la unidad de menor capacidad (ejemplo 400 GB + 480 GB = 400 GB). Se usa como ejemplo de que la política varía por implementación, no como regla de RAID 0 universal."
+            }
+          ],
+          "observaciones": "Cotejado con el apartado de RAID. La capacidad de miembros desiguales depende de la implementación; el caso se restringe expresamente a Linux MD y se verifica con su documentación. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 0, bandas y capacidad útil de conjuntos con discos de distinto tamaño (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1677,
+      "original": {
+        "id": 1677,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué es CAS?",
+        "opciones": [
+          "Content Address Storage",
+          "Permiten almacenar una única copia de la información duplicada",
+          "Permiten reducir el espacio de almacenamiento requerido",
+          "Todas son correctas"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1677,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el contexto del almacenamiento de archivo Dell EMC Centera, ¿qué afirmación describe correctamente CAS?",
+        "opciones": [
+          "Significa Content Addressable Storage: los objetos se identifican y recuperan mediante una dirección derivada de su contenido.",
+          "Centera puede aplicar single-instancing para evitar almacenar de nuevo objetos duplicados.",
+          "La eliminación de duplicados puede reducir el espacio de archivo requerido.",
+          "Todas las anteriores."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Cotejado con el bloque de almacenamiento. La expansión y el comportamiento concreto de single-instancing se contrastan con documentación de Dell EMC Centera e IBM FileNet. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8: almacenamiento de objetos/SAN, deduplicación y tecnologías de almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8: almacenamiento de objetos/SAN, deduplicación y tecnologías de almacenamiento (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8: almacenamiento de objetos/SAN, deduplicación y tecnologías de almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "CAS",
+          "Content Addressable Storage",
+          "Centera",
+          "deduplicación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.dell.com/en-us/infohub/articles/dell-centera-to-dell-ecs-technology-refresh-with-veritas-enterprise-vault",
+              "referencia": "Dell Technologies, Dell Centera to Dell ECS Technology Refresh: define CAS como Content Addressable Storage y explica que ECS no single-instancia duplicados mientras Centera sí; demuestra que la deduplicación es un comportamiento de producto, no una propiedad lógica de todo CAS."
+            },
+            {
+              "url": "https://public.dhe.ibm.com/software/data/cm/filenet/docs/isdoc/41x/SDS.pdf",
+              "referencia": "IBM FileNet Image Services, SDS Procedures and Guidelines, apéndice EMC Centera: los objetos se recuperan mediante una dirección/identificador derivado del contenido (CLIP ID)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8: almacenamiento de objetos/SAN, deduplicación y tecnologías de almacenamiento (A1-56/A2-IV-5); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con el bloque de almacenamiento. La expansión y el comportamiento concreto de single-instancing se contrastan con documentación de Dell EMC Centera e IBM FileNet. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8: almacenamiento de objetos/SAN, deduplicación y tecnologías de almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1678,
+      "original": {
+        "id": 1678,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes NO es un formato de cintas magnéticas de almacenamiento?",
+        "opciones": [
+          "DAT",
+          "DLT",
+          "TRACBAN",
+          "LTO"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1678,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de estas denominaciones, escrita literalmente, NO corresponde a una familia o formato de cinta magnética? No confunda «TRACBAN» con «Travan», que sí es una familia real.",
+        "opciones": [
+          "DAT",
+          "DLT",
+          "TRACBAN",
+          "LTO"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Cotejado con tecnologías de cinta y medios de copia; IBM y el manual del fabricante verifican Travan y las familias DAT/DLT/LTO. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 9: tecnologías de medios de copia y almacenamiento en cinta, compatibilidad de formatos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 9: tecnologías de medios de copia y almacenamiento en cinta, compatibilidad de formatos (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 9: tecnologías de medios de copia y almacenamiento en cinta, compatibilidad de formatos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "cinta magnética",
+          "Travan",
+          "DAT",
+          "DLT",
+          "LTO"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/support/pages/tape-files-index-software-tape-drives-and-libraries",
+              "referencia": "IBM Support, Tape Files index: enumera Travan, DDS/DAT, DLT y LTO como familias de cintas y productos de cinta."
+            },
+            {
+              "url": "https://qsupport.quantum.com/freedownloads/Certance/manuals/productmanuals/prod_man_sttx401a_en.pdf",
+              "referencia": "Seagate/Certance Travan 40 Product Manual, capítulo 6: documenta el formato Travan 40 y las técnicas de escritura/lectura correspondientes."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 9: tecnologías de medios de copia y almacenamiento en cinta, compatibilidad de formatos (A1-56/A2-IV-5); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con tecnologías de cinta y medios de copia; IBM y el manual del fabricante verifican Travan y las familias DAT/DLT/LTO. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 9: tecnologías de medios de copia y almacenamiento en cinta, compatibilidad de formatos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1679,
+      "original": {
+        "id": 1679,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué es la tecnología TRIM que emplean los discos duros de estado sólido?",
+        "opciones": [
+          "Permite al disco SSD optimizar el almacenamiento de la información, de forma que todos los datos estén contiguos, mejorando así el rendimiento",
+          "Permite al sistema operativo comunicarle al disco SSD qué celdas no están en uso",
+          "Permite que el disco SSD entre en hibernación cuando no se usa, mejorando así su vida útil",
+          "Permite reducir el ruido y calor generado por el disco SSD, así como su consumo energético"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1679,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué función cumple TRIM cuando un sistema operativo y una unidad SSD lo admiten?",
+        "opciones": [
+          "Reordena físicamente todos los datos para que queden contiguos.",
+          "Notifica rangos de bloques lógicos (LBA) que ya no contienen datos necesarios, para que la unidad pueda gestionarlos o reclamarlos.",
+          "Pone la unidad en hibernación cuando no se usa.",
+          "Reduce por sí mismo el ruido, el calor y el consumo eléctrico de la unidad."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Cotejado con medios y gestión de almacenamiento. La semántica de TRIM se verifica con Microsoft Learn: avisos sobre rangos LBA ya no necesarios. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.1: dispositivos SSD, bloques lógicos y gestión/reclamación de almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.1: dispositivos SSD, bloques lógicos y gestión/reclamación de almacenamiento (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.1: dispositivos SSD, bloques lógicos y gestión/reclamación de almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "SSD",
+          "TRIM",
+          "LBA",
+          "reclamación de bloques"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/compatibility/new-api-allows-apps-to-send-trim-and-unmap-hints",
+              "referencia": "Microsoft Learn, TRIM and Unmap hints: TRIM comunica al dispositivo sectores/regiones previamente asignados que ya no se necesitan; se define como una indicación para el medio, no como una orden de compactación física inmediata."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/storage/thin-provisioning",
+              "referencia": "Microsoft Learn, Thin Provisioning: el stack traduce notificaciones de borrado/reclamación en ATA TRIM o SCSI UNMAP según el dispositivo; distingue esos avisos de uso del mecanismo interno del soporte."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.1: dispositivos SSD, bloques lógicos y gestión/reclamación de almacenamiento (A1-56/A2-IV-5); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con medios y gestión de almacenamiento. La semántica de TRIM se verifica con Microsoft Learn: avisos sobre rangos LBA ya no necesarios. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 7.1: dispositivos SSD, bloques lógicos y gestión/reclamación de almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 1680,
+      "original": {
+        "id": 1680,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con las definiciones de RAID (Redundant Array of Inexpensive Disks), indique la respuesta errónea:",
+        "opciones": [
+          "Un RAID 6 es similar a RAID 5, salvo que calcula dos bloques de paridad independientes por cada escritura, mandando cada uno de los bloques de paridad a un disco diferente.",
+          "Un RAID 4 Consiste en “stripping” a nivel de bloque, como RAID 0 más un disco de paridad dedicado. Cada bloque escrito es dividido en partes, se obtiene un bloque de paridad que permite recomponer el bloque inicial en caso de pérdida de alguna de las partes.",
+          "Un RAID 2 divide los bits a nivel de bloque. Por cada “palabra” enviada a escritura calcula un código de Hamming que permite recuperar la información en caso de fallo de un disco y envía posteriormente cada bloque a su disco correspondiente para mantener la paridad.",
+          "Un RAID 5 Este nivel de RAID es similar a RAID 4, salvo que no utiliza un disco de paridad dedicado, sino que distribuye los bloques de paridad por todos los discos del array."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1680,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre los niveles RAID clásicos, señale la afirmación errónea:",
+        "opciones": [
+          "RAID 6 distribuye dos bloques de paridad independientes por franja y puede reconstruir datos tras el fallo de hasta dos unidades.",
+          "RAID 4 combina striping por bloques con un disco dedicado a paridad.",
+          "RAID 2 realiza striping por bloques y no incorpora códigos de corrección de errores.",
+          "RAID 5 combina striping por bloques con paridad distribuida entre las unidades."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Cotejado con niveles RAID. La clasificación histórica se confirma en IBM Redbooks y la tolerancia/doble paridad RAID 6 en IBM Documentation. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 2/4/5/6, granularidad de striping, ECC y distribución de paridad (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 2/4/5/6, granularidad de striping, ECC y distribución de paridad (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 2/4/5/6, granularidad de striping, ECC y distribución de paridad (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "RAID 2",
+          "RAID 4",
+          "RAID 5",
+          "RAID 6",
+          "striping",
+          "paridad"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg246399.pdf",
+              "referencia": "IBM Redbooks, Software Configuration Management with IBM Rational ClearCase and ClearQuest UCM, sección «Some words on RAID levels»: RAID 2 usa striping a nivel de bit y códigos correctores; RAID 4, striping por bloques con paridad dedicada; RAID 5, paridad distribuida por bloques; RAID 6, doble paridad distribuida."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/power10/9786-42H?topic=recovery-raid-6-disk",
+              "referencia": "IBM Documentation, RAID 6 disk recovery: explica doble paridad distribuida y recuperación frente a hasta dos unidades fallidas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 2/4/5/6, granularidad de striping, ECC y distribución de paridad (A1-56/A2-IV-5); apartados inspeccionados en el documento de Drive. Correspondencia oficial cotejada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            },
+            {
+              "url": "https://cloud.ibm.com/docs/bare-metal?topic=bare-metal-bm-raid-levels",
+              "referencia": "IBM Cloud Docs, About RAID: RAID 5 realiza striping a nivel de bloque con paridad distribuida; RAID 6 usa doble paridad distribuida y soporta dos fallos."
+            }
+          ],
+          "observaciones": "Cotejado con niveles RAID. La clasificación histórica se confirma en IBM Redbooks y la tolerancia/doble paridad RAID 6 en IBM Documentation. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 2/4/5/6, granularidad de striping, ECC y distribución de paridad (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas primarias."
+        }
+      }
+    }
+  ]
+}
