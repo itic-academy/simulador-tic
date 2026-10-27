@@ -1,0 +1,19 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(bankPath,'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-293.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ hardware:{url:'https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk',label:'ITIC Academy, bloque 26, Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026)'},
+ law:{url:'https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk',label:'ITIC Academy, bloque 03, Actuación administrativa y Administración digital, versión 2026.2 (01-10-2026)'},
+ crypto:{url:'https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk',label:'ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1 (17-09-2026)'}
+};
+const mapping={
+ 1781:{doc:'hardware',detail:'§ 3, sistemas de altas prestaciones y Grid Computing.',topics:['A1-52','A2-II-1'],note:'Cotejo con el tratamiento de Grid Computing y sistemas de altas prestaciones del bloque 26; la arquitectura por capas se comprueba en la publicación primaria de Foster, Kesselman y Tuecke.'},
+ 1782:{doc:'law',detail:'apartados sobre procedimiento administrativo, identificación y firma electrónica.',topics:['A1-8','A2-I-8'],note:'Cotejo con el bloque 03, que cubre procedimiento administrativo y relación electrónica. El artículo y su numeración actuales se contrastan con el texto consolidado del BOE.'},
+ 1783:{doc:'crypto',detail:'apartados de criptografía simétrica y asimétrica, claves y protección de la información.',topics:['A1-79','A2-IV-12'],note:'Cotejo con el bloque 36, fundamentos de cifrado y gestión de claves. La respuesta concreta se apoya en la guía NIST de gestión de claves, no en el material de academia.'},
+ 1784:{doc:'hardware',detail:'apartados de servidores, disponibilidad, redundancia y continuidad de servicio en CPD.',topics:['A1-53','A1-128','A2-IV-6'],note:'Cotejo con el bloque 26, infraestructura de servidores/CPD y redundancia. La definición técnica de tolerancia a fallos se contrasta con NIST.'},
+ 1785:{doc:'hardware',detail:'apartados de conectividad de dispositivos y tecnologías inalámbricas de corto alcance.',topics:['A1-54','A2-II-1'],note:'Cotejo temático con el bloque 26, conectividad de dispositivos. La frecuencia nominal de NFC se verifica en NFC Forum e ISO/IEC 18092:2023.'}
+};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),r=mapping[c.id],doc=r&&docs[r.doc];assert.ok(q?.revision&&r&&doc,`Falta cotejo ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2,...r.topics])assert.ok(official.has(id),id);const curr=`${doc.label}; ${r.detail.replace(/\.$/,'')}`,note=`Cotejo curricular: ${curr}. Encaje ${r.topics.join(', ')} comprobado frente a revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2). La academia se usa como cotejo de cobertura; las fuentes primarias determinan la respuesta.`;q.revision.observaciones=`${r.note} ${note}`;q.revision.fuentes.push({url:doc.url,referencia:`${curr}; material formativo de Drive cotejado para cobertura curricular.`});q.clasificacion.bloque_academia=curr;q.clasificacion.nota=note;q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q)}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular y BOE actualizado para 1781–1785.');

@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 292 (IDs 1776–1780); se resolvieron además seis pendientes antiguos. Acumulado: 1.780 preguntas examinadas, 1.733 verificadas (387 vigentes, 1.218 corregidas y 128 históricas) y 47 pendientes (24 de fuente y 23 de ambigüedad); quedan 10.343 sin revisar de contenido. Hay 1.377 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 293 (IDs 1781–1785); se resolvieron además seis pendientes antiguos. Acumulado: 1.785 preguntas examinadas, 1.738 verificadas (388 vigentes, 1.222 corregidas y 128 históricas) y 47 pendientes (24 de fuente y 23 de ambigüedad); quedan 10.338 sin revisar de contenido. Hay 1.381 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Resolución de pendientes anteriores — 27 de octubre
 
@@ -14,6 +14,22 @@ Se cerraron seis pendientes sin cambiar sus originales, que siguen íntegros en 
 - La 52 se corrigió: la secuencia de siete pasos y su paso final (Monitor) pertenecen al RMF de NIST SP 800-37 Rev. 2. La guía CCN-STIC 801 del catálogo oficial se titula «ENS. Responsabilidades y Funciones», así que se retiró la atribución original no sustentada. No se fuerza equivalencia de academia.
 
 La 13 permanece pendiente de ambigüedad: el enunciado no define qué serie ni qué criterio de «crecimiento» emplea; no se valida ninguna opción hasta fijar y comprobar ese criterio.
+
+## Lote 293 — 27 de octubre
+
+IDs 1781–1785 revisados individualmente. Cuatro se corrigieron y una (NFC) quedó vigente sin alterar su respuesta. Acumulado: 1.785 examinadas; 1.738 verificadas (388 vigentes, 1.222 corregidas y 128 históricas); 47 pendientes (24 de fuente y 23 de ambigüedad); 1.381 preguntas con cambios de contenido; 10.338 aún sin revisión individual. Siguiente ID: 1.786. Los originales completos permanecen en `cambios-lote-293.json`.
+
+- La 1781 delimita las cinco capas del modelo Grid de Foster, Kesselman y Tuecke y evita presentarlo como arquitectura universal de todo sistema distribuido.
+- La 1782 se actualiza a la redacción consolidada vigente de la Ley 39/2015. La identidad acreditada por el acto de firma está en el art. 10.5 actual (no en el apartado 4 original); también se corrigen distractores que conservaban una autorización ya obsoleta y negaban el efecto interadministrativo de la aceptación AGE.
+- La 1783 limita la clave pública cifrada al esquema híbrido clásico de transporte de clave por sobre. Los protocolos que acuerdan una clave, en vez de transportarla cifrada, no quedan descritos por esa regla.
+- La 1784 define tolerancia a fallos como continuidad correcta del servicio ante fallos; la redundancia se presenta como mecanismo posible y no como definición suficiente por sí sola.
+- La 1785 mantiene la clave 13,56 MHz, confirmada por NFC Forum e ISO/IEC 18092:2023 vigente.
+
+Cotejo de academia: bloque 26 para Grid, tolerancia a fallos y conectividad; bloque 03 para procedimiento administrativo electrónico; bloque 36 para criptografía. Correspondencias comprobadas frente a `temario-oficial.json` y convocatorias [A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1781 A1-52/A2-II-1; 1782 A1-8/A2-I-8; 1783 A1-79/A2-IV-12; 1784 A1-53/A1-128/A2-IV-6; 1785 A1-54/A2-II-1. Academia coteja cobertura, no sustituye la fuente técnica o jurídica.
+
+Fuentes: [Foster, Kesselman y Tuecke, The Anatomy of the Grid](https://www.mcs.anl.gov/papers/P870.pdf); [Ley 39/2015, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565); [NIST CSRC, key transport](https://csrc.nist.gov/glossary/term/key_transport) y [NIST SP 800-57 Part 1 Rev. 5](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final); [NIST CSRC, fault tolerance](https://csrc.nist.gov/glossary/term/fault_tolerance); [NFC Forum, NFC Technology](https://www.nfc-forum.org/learn/nfc-technology/) e [ISO/IEC 18092:2023](https://www.iso.org/standard/82095.html).
+
+Ejecutados `node revision/lote-293.cjs`, `node revision/academia-lote-293.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: total 12.123, errores de inventario 0; 1.785 examinadas, 10.338 sin revisión individual de contenido. Se mantienen explícitamente los 47 pendientes.
 
 ## Lote 292 — 27 de octubre
 
