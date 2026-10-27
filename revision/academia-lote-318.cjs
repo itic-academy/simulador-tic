@@ -1,0 +1,20 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(bankPath,'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-318.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ hardware:{url:'https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk',label:'ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, A1-52/53/54/56/57, versión 2026.1'},
+ os:{url:'https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view',label:'ITIC Academy, bloque 27 Sistemas operativos, entrada/salida y DMA, A1-59/A2-II-2/IV-1, versión 2026.1'},
+ soa:{url:'https://drive.google.com/file/d/11qGK4GbJ0QV81HEyboRAy5AZorijJmhs/view?usp=drivesdk',label:'ITIC Academy, bloque 28 Arquitectura SOA y requisitos no funcionales, A1-58/91 y A2-II-6, versión 2026.1'},
+ db:{url:'https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk',label:'ITIC Academy, bloque 29 Bases de datos, SQL y modelado, A1-63/64/89 y A2-II-5, versión 2026.1'}
+};
+const mapping={
+ 1906:{doc:['os','hardware'],detail:'el bloque de sistemas operativos cubre E/S y DMA; hardware incluye buses, CPU y memoria.',topics:['A1-59','A2-II-2','A2-IV-1'],note:'Cotejo académico de E/S/DMA y arquitectura básica. La semántica de la transferencia se valida con la documentación del kernel Linux.'},
+ 1907:{doc:['soa'],detail:'el bloque incluye requisitos no funcionales y rendimiento (A1-91); sirve para encaje temático, no como fuente de la variante exacta de notación.',topics:['A1-91','A2-IV-4'],note:'Cotejo de rendimiento/capacidad. La variante A/B/X/Y/Z se comprueba en bibliografía de teoría de colas; se distingue de la notación extendida A/B/c/K/N/D.'},
+ 1908:{doc:['os'],detail:'bloque de fundamentos y administración de sistemas operativos, incluidas autenticación y administración Linux.',topics:['A1-60','A2-II-2'],note:'Cotejo temático Linux/sistemas operativos; el comportamiento de pam_unix y los hashes actuales se comprueba en documentación de Linux-PAM y Ubuntu.'},
+ 1909:{doc:['os'],detail:'bloque de administración de sistemas y gestión de copias/recuperación.',topics:['A1-60','A2-IV-1'],note:'Cotejo temático de administración Unix/Linux y copias; las opciones y modos concretos se validan en los manuales GNU.'},
+ 1910:{doc:['db'],detail:'el bloque contiene fundamentos de SGBD, arquitectura ANSI/SPARC y metadatos del sistema.',topics:['A1-63','A2-II-5'],note:'Cotejo curricular de SGBD y catálogo; se concreta el ejemplo con documentación primaria de Oracle, sin universalizar implementaciones.'}
+};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),r=mapping[c.id];assert.ok(q?.revision&&r,`Falta cotejo ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2,...r.topics])assert.ok(official.has(id),id);const selections=r.doc.map(k=>docs[k]);assert.ok(selections.every(Boolean));q.clasificacion.bloque_academia=`${selections.map(d=>d.label).join('; ')}; ${r.detail}`;q.clasificacion.nota=`${r.note} Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias.`;q.revision.observaciones+=` ${q.clasificacion.nota}`;q.comentarios=q.revision.observaciones;for(const d of selections)q.revision.fuentes.push({url:d.url,referencia:`${d.label}; cotejo de cobertura y límites.`});c.actualizada=structuredClone(q)}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo de academia, temario oficial y convocatorias actualizado para IDs 1906–1910.');

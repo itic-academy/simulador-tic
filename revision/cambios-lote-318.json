@@ -1,0 +1,349 @@
+{
+  "fecha": "2026-10-28",
+  "alcance": "IDs 1906–1910; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1906,
+      "original": {
+        "id": 1906,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El sistema DMA permite:",
+        "opciones": [
+          "a los diferentes núcleos del ordenador el acceso a la memoria de forma directa.",
+          "a los periféricos acceder a la memoria sin necesidad de uso de la CPU.",
+          "a dos procesos software compartir memoria.",
+          "el aumento de memoria de un sistema de forma dinámica."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1906,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El acceso directo a memoria (DMA) permite que:",
+        "opciones": [
+          "un controlador o dispositivo DMA transfiera bloques entre un periférico y la memoria después de que la CPU prepare la operación, sin que esta copie cada byte.",
+          "cualquier periférico acceda a cualquier dirección virtual sin configuración del sistema.",
+          "dos procesos compartan memoria sin intervención del sistema operativo.",
+          "el sistema amplíe automáticamente la memoria física durante la ejecución."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se corrige el absoluto «sin necesidad de uso de la CPU»: la CPU y el controlador preparan/configuran la operación y gestionan su finalización; durante el movimiento DMA, el dispositivo/controlador transfiere bloques entre periférico y memoria sin que la CPU copie cada byte. Cotejo académico: bloque 27, sistemas operativos, E/S y DMA; clasificación A1-59/A2-II-2/A2-IV-1. Cotejo académico de E/S/DMA y arquitectura básica. La semántica de la transferencia se valida con la documentación del kernel Linux. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-59"
+          ],
+          "A2": [
+            "A2-II-2",
+            "A2-IV-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 27 Sistemas operativos, entrada/salida y DMA, A1-59/A2-II-2/IV-1, versión 2026.1; ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, A1-52/53/54/56/57, versión 2026.1; el bloque de sistemas operativos cubre E/S y DMA; hardware incluye buses, CPU y memoria.",
+          "estado": "revisada",
+          "nota": "Cotejo académico de E/S/DMA y arquitectura básica. La semántica de la transferencia se valida con la documentación del kernel Linux. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias."
+        },
+        "etiquetas": [
+          "DMA",
+          "acceso directo a memoria",
+          "periféricos",
+          "entrada/salida",
+          "memoria"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://docs.kernel.org/core-api/dma-api-howto.html",
+              "referencia": "Linux Kernel Documentation, Dynamic DMA mapping Guide: la CPU/driver prepara el buffer y mapeo DMA; el dispositivo usa la dirección DMA para transferir datos hacia/desde memoria sin que la CPU copie cada byte."
+            },
+            {
+              "url": "https://docs.kernel.org/driver-api/dmaengine/provider.html",
+              "referencia": "Linux Kernel Documentation, DMAengine: describe operaciones de transferencia memory-to-device y device-to-memory y la función de los controladores DMA."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view",
+              "referencia": "ITIC Academy, bloque 27 Sistemas operativos, entrada/salida y DMA, A1-59/A2-II-2/IV-1, versión 2026.1; cotejo de cobertura y límites."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, A1-52/53/54/56/57, versión 2026.1; cotejo de cobertura y límites."
+            }
+          ],
+          "observaciones": "Se corrige el absoluto «sin necesidad de uso de la CPU»: la CPU y el controlador preparan/configuran la operación y gestionan su finalización; durante el movimiento DMA, el dispositivo/controlador transfiere bloques entre periférico y memoria sin que la CPU copie cada byte. Cotejo académico: bloque 27, sistemas operativos, E/S y DMA; clasificación A1-59/A2-II-2/A2-IV-1. Cotejo académico de E/S/DMA y arquitectura básica. La semántica de la transferencia se valida con la documentación del kernel Linux. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 1907,
+      "original": {
+        "id": 1907,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En notación Kendall A/B/X/Y/Z:",
+        "opciones": [
+          "B especifica la distribución del tiempo de servicio.",
+          "A especifica la distribución de las llegadas al sistema.",
+          "Z especifica la disciplina de cola.",
+          "Todas las anteriores son válidas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1907,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En notación Kendall A/B/X/Y/Z:",
+        "opciones": [
+          "B especifica la distribución del tiempo de servicio.",
+          "A especifica la distribución de las llegadas al sistema.",
+          "Z especifica la disciplina de cola.",
+          "Todas las anteriores son válidas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se confirma la opción «Todas» para la variante de cinco campos A/B/X/Y/Z: A describe llegadas, B servicio y Z disciplina de cola. X representa servidores paralelos e Y la restricción de capacidad. Se nombra la variante concreta, pues también circula la forma extendida A/B/c/K/N/D y las letras posteriores no son idénticas. Cotejo curricular: A1-91 (rendimiento) y A2-IV-4 (monitorización y evaluación del rendimiento/capacidad). Cotejo de rendimiento/capacidad. La variante A/B/X/Y/Z se comprueba en bibliografía de teoría de colas; se distingue de la notación extendida A/B/c/K/N/D. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-91"
+          ],
+          "A2": [
+            "A2-IV-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 28 Arquitectura SOA y requisitos no funcionales, A1-58/91 y A2-II-6, versión 2026.1; el bloque incluye requisitos no funcionales y rendimiento (A1-91); sirve para encaje temático, no como fuente de la variante exacta de notación.",
+          "estado": "revisada",
+          "nota": "Cotejo de rendimiento/capacidad. La variante A/B/X/Y/Z se comprueba en bibliografía de teoría de colas; se distingue de la notación extendida A/B/c/K/N/D. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias."
+        },
+        "etiquetas": [
+          "Kendall",
+          "notación A/B/X/Y/Z",
+          "distribución de llegadas",
+          "tiempo de servicio",
+          "disciplina de cola",
+          "teoría de colas"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1371/journal.pone.0133229",
+              "referencia": "PLOS ONE, artículo de investigación sobre un modelo M/M/c/K y tabla 7: en la notación Kendall A/B/X/Y/Z, A es distribución entre llegadas, B distribución del servicio y Z disciplina de cola."
+            },
+            {
+              "url": "https://drive.google.com/file/d/11qGK4GbJ0QV81HEyboRAy5AZorijJmhs/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 28 Arquitectura SOA y requisitos no funcionales, A1-58/91 y A2-II-6, versión 2026.1; cotejo de cobertura y límites."
+            }
+          ],
+          "observaciones": "Se confirma la opción «Todas» para la variante de cinco campos A/B/X/Y/Z: A describe llegadas, B servicio y Z disciplina de cola. X representa servidores paralelos e Y la restricción de capacidad. Se nombra la variante concreta, pues también circula la forma extendida A/B/c/K/N/D y las letras posteriores no son idénticas. Cotejo curricular: A1-91 (rendimiento) y A2-IV-4 (monitorización y evaluación del rendimiento/capacidad). Cotejo de rendimiento/capacidad. La variante A/B/X/Y/Z se comprueba en bibliografía de teoría de colas; se distingue de la notación extendida A/B/c/K/N/D. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 1908,
+      "original": {
+        "id": 1908,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En cuanto al proceso de autenticación en Linux, indique cuál de las siguientes afirmaciones es correcta:",
+        "opciones": [
+          "Linux emplea para el proceso de autenticación por contraseña el sistema DEC.",
+          "Linux emplea para el proceso de autenticación por contraseña el sistema MD6.",
+          "Linux emplea dos sistemas para el proceso de autenticación por contraseña, DES y MD5.",
+          "Linux emplea dos sistemas para el proceso de autenticación por contraseña, DEC y MD6."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1908,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una distribución Linux actual con autenticación local basada en PAM, indique la afirmación correcta:",
+        "opciones": [
+          "Las contraseñas locales se almacenan siempre en texto claro dentro de /etc/passwd.",
+          "El módulo pam_unix suele consultar /etc/passwd y, si se usa shadow, /etc/shadow; el algoritmo de hash depende de la distribución y de su configuración.",
+          "Todas las distribuciones Linux actuales autentican exclusivamente con DES y MD5.",
+          "Linux autentica contraseñas mediante los algoritmos DEC y MD6."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se sustituye la afirmación desfasada de que Linux emplea siempre DES y MD5. En una configuración local habitual, PAM/pam_unix consulta /etc/passwd y normalmente /etc/shadow; el esquema de hash depende de la distribución y configuración. Por ejemplo, Ubuntu 22.04 y posteriores usan yescrypt por defecto; DES y MD5 son mecanismos heredados y no constituyen el estándar universal actual. Se distingue autenticación (PAM) del algoritmo de hash. Cotejo temático Linux/sistemas operativos; el comportamiento de pam_unix y los hashes actuales se comprueba en documentación de Linux-PAM y Ubuntu. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 27 Sistemas operativos, entrada/salida y DMA, A1-59/A2-II-2/IV-1, versión 2026.1; bloque de fundamentos y administración de sistemas operativos, incluidas autenticación y administración Linux.",
+          "estado": "revisada",
+          "nota": "Cotejo temático Linux/sistemas operativos; el comportamiento de pam_unix y los hashes actuales se comprueba en documentación de Linux-PAM y Ubuntu. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias."
+        },
+        "etiquetas": [
+          "Linux",
+          "PAM",
+          "pam_unix",
+          "/etc/shadow",
+          "yescrypt",
+          "hash de contraseña"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.man7.org/linux/man-pages/man8/pam_unix.8.html",
+              "referencia": "Linux-PAM pam_unix(8): módulo estándar de autenticación Unix; consulta normalmente /etc/passwd y, cuando se usa shadow, /etc/shadow; el método de hash depende de configuración del sistema."
+            },
+            {
+              "url": "https://documentation.ubuntu.com/security/security-features/cryptography/password-hashing/",
+              "referencia": "Ubuntu Security Documentation, Password hashing: los hashes locales se guardan en /etc/shadow; el algoritmo por defecto depende de versión/distribución (Ubuntu 22.04 y posteriores usan yescrypt)."
+            },
+            {
+              "url": "https://github.com/linux-pam/linux-pam/blob/master/modules/pam_unix/support.h",
+              "referencia": "Linux-PAM, código fuente de pam_unix: mantiene selectores de algoritmos que incluyen MD5, SHA-256/512, yescrypt y otros, por lo que no hay una pareja universal DES/MD5."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view",
+              "referencia": "ITIC Academy, bloque 27 Sistemas operativos, entrada/salida y DMA, A1-59/A2-II-2/IV-1, versión 2026.1; cotejo de cobertura y límites."
+            }
+          ],
+          "observaciones": "Se sustituye la afirmación desfasada de que Linux emplea siempre DES y MD5. En una configuración local habitual, PAM/pam_unix consulta /etc/passwd y normalmente /etc/shadow; el esquema de hash depende de la distribución y configuración. Por ejemplo, Ubuntu 22.04 y posteriores usan yescrypt por defecto; DES y MD5 son mecanismos heredados y no constituyen el estándar universal actual. Se distingue autenticación (PAM) del algoritmo de hash. Cotejo temático Linux/sistemas operativos; el comportamiento de pam_unix y los hashes actuales se comprueba en documentación de Linux-PAM y Ubuntu. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 1909,
+      "original": {
+        "id": 1909,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con la administración de un sistema operativo Linux, indique cuál de los siguientes comandos NO está destinado a realizar copias de seguridad:",
+        "opciones": [
+          "tar con los parámetros cvf",
+          "tar con los parámetros tvf",
+          "cpio en conjunción con el comando ls",
+          "cpio en conjunción con el comando find"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1909,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con la administración de un sistema operativo Linux, indique cuál de los siguientes comandos NO está destinado a realizar copias de seguridad:",
+        "opciones": [
+          "tar con los parámetros cvf",
+          "tar con los parámetros tvf",
+          "cpio en conjunción con el comando ls",
+          "cpio en conjunción con el comando find"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se confirma sin cambios la opción `tar tvf`: la operación t lista miembros de un archivo y no crea la copia; `cvf` usa c para crearla. El manual de cpio documenta el uso de listas producidas por find o ls con el modo de salida -o. Cotejo académico: bloque 27, sistemas operativos y administración/copia de seguridad. Cotejo temático de administración Unix/Linux y copias; las opciones y modos concretos se validan en los manuales GNU. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-IV-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 27 Sistemas operativos, entrada/salida y DMA, A1-59/A2-II-2/IV-1, versión 2026.1; bloque de administración de sistemas y gestión de copias/recuperación.",
+          "estado": "revisada",
+          "nota": "Cotejo temático de administración Unix/Linux y copias; las opciones y modos concretos se validan en los manuales GNU. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias."
+        },
+        "etiquetas": [
+          "tar",
+          "cpio",
+          "copias de seguridad",
+          "archivo",
+          "listar contenido"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.gnu.org/software/tar/manual/html_node/list.html",
+              "referencia": "GNU tar manual: -t/--list muestra el contenido de un archivo; -c/--create lo crea. La combinación tvf lista un archivo existente, mientras cvf crea uno."
+            },
+            {
+              "url": "https://www.gnu.org/s/cpio/manual/cpio.html",
+              "referencia": "GNU cpio manual: en modo -o crea un archivo a partir de una lista recibida por entrada estándar; el manual documenta listas suministradas tanto por find como por ls."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view",
+              "referencia": "ITIC Academy, bloque 27 Sistemas operativos, entrada/salida y DMA, A1-59/A2-II-2/IV-1, versión 2026.1; cotejo de cobertura y límites."
+            }
+          ],
+          "observaciones": "Se confirma sin cambios la opción `tar tvf`: la operación t lista miembros de un archivo y no crea la copia; `cvf` usa c para crearla. El manual de cpio documenta el uso de listas producidas por find o ls con el modo de salida -o. Cotejo académico: bloque 27, sistemas operativos y administración/copia de seguridad. Cotejo temático de administración Unix/Linux y copias; las opciones y modos concretos se validan en los manuales GNU. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 1910,
+      "original": {
+        "id": 1910,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes respuestas corresponde con la siguiente definición de un componente relacionado con un sistema gestor de bases de datos? 'Consiste en una lista de metadatos que reflejan las características de los diversos tipos de datos incluidos en la base de datos. Además, estos metadatos informan sobre los permisos de uso de cada registro y su representación física.'",
+        "opciones": [
+          "Diccionario de datos",
+          "Lenguaje de definición de datos",
+          "Componente de estructuración de datos",
+          "Esquema de manipulación de datos"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1910,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un SGBD, ¿cómo se denomina el conjunto de tablas o vistas del sistema que contiene metadatos sobre objetos y esquemas de la base de datos, como definiciones, usuarios, privilegios y almacenamiento asignado?",
+        "opciones": [
+          "Diccionario o catálogo de datos.",
+          "Lenguaje de definición de datos (DDL).",
+          "Lenguaje de manipulación de datos (DML).",
+          "Esquema externo de una vista de usuario."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se reformula para evitar afirmar que todo catálogo registra permisos por cada fila o que el diccionario guarda necesariamente una representación física detallada de cada registro. El diccionario/catálogo de un SGBD contiene metadatos de objetos y esquema; en Oracle, la documentación incluye definiciones, usuarios y privilegios, auditoría y espacio asignado/usado. Cotejo académico: bloque 29, bases de datos, SGBD y modelo ANSI; A1-63/A2-II-5. Cotejo curricular de SGBD y catálogo; se concreta el ejemplo con documentación primaria de Oracle, sin universalizar implementaciones. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-63"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado, A1-63/64/89 y A2-II-5, versión 2026.1; el bloque contiene fundamentos de SGBD, arquitectura ANSI/SPARC y metadatos del sistema.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de SGBD y catálogo; se concreta el ejemplo con documentación primaria de Oracle, sin universalizar implementaciones. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias."
+        },
+        "etiquetas": [
+          "diccionario de datos",
+          "catálogo del sistema",
+          "metadatos",
+          "privilegios",
+          "esquema de base de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/data-dictionary-and-dynamic-performance-views.html",
+              "referencia": "Oracle Database Concepts 26, Data Dictionary: catálogo de tablas/vistas de metadatos; describe definiciones de objetos de esquema, usuarios, privilegios/roles y espacio usado por objetos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado, A1-63/64/89 y A2-II-5, versión 2026.1; cotejo de cobertura y límites."
+            }
+          ],
+          "observaciones": "Se reformula para evitar afirmar que todo catálogo registra permisos por cada fila o que el diccionario guarda necesariamente una representación física detallada de cada registro. El diccionario/catálogo de un SGBD contiene metadatos de objetos y esquema; en Oracle, la documentación incluye definiciones, usuarios y privilegios, auditoría y espacio asignado/usado. Cotejo académico: bloque 29, bases de datos, SGBD y modelo ANSI; A1-63/A2-II-5. Cotejo curricular de SGBD y catálogo; se concreta el ejemplo con documentación primaria de Oracle, sin universalizar implementaciones. Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias."
+        }
+      }
+    }
+  ]
+}
