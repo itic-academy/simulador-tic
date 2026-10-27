@@ -1,0 +1,345 @@
+{
+  "fecha": "2026-10-27",
+  "alcance": "IDs 1701–1705; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 1701,
+      "original": {
+        "id": 1701,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la FALSA en lo relativo a la tecnología RAID de discos duros:",
+        "opciones": [
+          "En RAID 5 los bloques de paridad solo se leen cuando la lectura de un sector de datos provoca un error de CRC.",
+          "Un RAID 6 amplía el nivel RAID 5 añadiendo otro bloque de paridad.",
+          "El RAID 6 proporciona protección contra fallos dobles de discos y contra fallos cuando se está reconstruyendo un disco.",
+          "Un RAID 2 necesitaría como mínimo 32 discos (los necesarios para formar una palabra)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1701,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la afirmación FALSA sobre niveles RAID:",
+        "opciones": [
+          "RAID 5 distribuye una paridad y normalmente permite reconstruir los datos tras el fallo de una unidad.",
+          "RAID 6 añade una segunda información de paridad respecto a RAID 5.",
+          "RAID 6 tolera el fallo concurrente de hasta dos unidades, según la implementación.",
+          "RAID 6 usa una sola paridad y, por ello, solo tolera el fallo de una unidad."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Cotejado con el apartado de RAID. IBM documenta la paridad simple de RAID 5 y la doble paridad y dos fallos tolerados de RAID 6. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: niveles RAID, paridad y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: niveles RAID, paridad y tolerancia a fallos (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: niveles RAID, paridad y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        },
+        "etiquetas": [
+          "RAID",
+          "RAID 5",
+          "RAID 6",
+          "paridad",
+          "tolerancia a fallos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://cloud.ibm.com/docs/bare-metal?topic=bare-metal-bm-raid-levels",
+              "referencia": "IBM Cloud Docs, About RAID: RAID 5 distribuye paridad simple y tolera un fallo; RAID 6 incorpora doble paridad y permite dos fallos."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/i/7.6.0?topic=concepts-raid-6",
+              "referencia": "IBM Documentation, RAID 6 concepts: capacidad de dos discos dedicada a paridad, que protege frente a fallos de hasta dos unidades."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: niveles RAID, paridad y tolerancia a fallos (A1-56/A2-IV-5); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con el apartado de RAID. IBM documenta la paridad simple de RAID 5 y la doble paridad y dos fallos tolerados de RAID 6. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: niveles RAID, paridad y tolerancia a fallos (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1702,
+      "original": {
+        "id": 1702,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuáles son las claves de la estrategia de backup 3-2-1?",
+        "opciones": [
+          "Mantener copias de la información en 3 discos independientes durante 2 meses en 1 servidor dedicado.",
+          "Mantener las copias de la última semana en 3 medios distintos, del último mes en 2 y del último año en 1.",
+          "Mantener 3 copias de la información (2 copias + origen) en 2 medios distintos y 1 de ellas almacenada en un lugar diferente a las otras 2.",
+          "No existe esa estrategia."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1702,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuáles son las claves de la estrategia de backup 3-2-1?",
+        "opciones": [
+          "Mantener copias de la información en 3 discos independientes durante 2 meses en 1 servidor dedicado.",
+          "Mantener las copias de la última semana en 3 medios distintos, del último mes en 2 y del último año en 1.",
+          "Mantener 3 copias de la información (2 copias + origen) en 2 medios distintos y 1 de ellas almacenada en un lugar diferente a las otras 2.",
+          "No existe esa estrategia."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Cotejado con copias, recuperación y resiliencia frente a ransomware. La regla se presenta como buena práctica, no como norma jurídica universal. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 9.2 y 9.5: estrategia de copias, recuperación y regla 3-2-1 (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-3"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 9.2 y 9.5: estrategia de copias, recuperación y regla 3-2-1 (A1-56/A2-IV-3)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 9.2 y 9.5: estrategia de copias, recuperación y regla 3-2-1 (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        },
+        "etiquetas": [
+          "backup",
+          "copias de seguridad",
+          "regla 3-2-1",
+          "recuperación"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/backup-plan-to-protect-against-ransomware",
+              "referencia": "Microsoft Learn, Azure backup and restore plan to protect against ransomware: presenta 3-2-1 como buena práctica: original más dos copias, dos tipos de almacenamiento y una copia externa o fría."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/sharepoint/administration/best-practices-for-backup-and-restore",
+              "referencia": "Microsoft Learn, SharePoint backup best practices: mantener tres copias de medios y al menos una fuera del sitio."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 9.2 y 9.5: estrategia de copias, recuperación y regla 3-2-1 (A1-56/A2-IV-3); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con copias, recuperación y resiliencia frente a ransomware. La regla se presenta como buena práctica, no como norma jurídica universal. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 9.2 y 9.5: estrategia de copias, recuperación y regla 3-2-1 (A1-56/A2-IV-3). Correspondencia A1-56, A2-IV-3 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1703,
+      "original": {
+        "id": 1703,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si disponemos de 8 discos SAS de 1TB netos configurados en RAID1, ¿de qué capacidad neta se dispone en RAID1 en el sistema de almacenamiento?",
+        "opciones": [
+          "6 TB.",
+          "8 TB.",
+          "7 TB.",
+          "4 TB."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1703,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un sistema tiene ocho discos SAS de 1 TB decimal cada uno, sin reservar discos de repuesto. Se configuran como cuatro parejas espejo RAID 1 independientes. ¿Cuál es la capacidad útil total aproximada antes del formato?",
+        "opciones": [
+          "6 TB.",
+          "8 TB.",
+          "7 TB.",
+          "4 TB."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Cotejado con niveles RAID y capacidad efectiva. Se explicitan cuatro parejas espejo para que el cálculo de capacidad sea reproducible. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 1, espejo y capacidad útil (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 1, espejo y capacidad útil (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 1, espejo y capacidad útil (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        },
+        "etiquetas": [
+          "RAID 1",
+          "discos espejo",
+          "capacidad útil",
+          "almacenamiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/power7/8231-E2C?topic=arrays-raid-level-summary",
+              "referencia": "IBM Documentation, RAID level summary: el mirroring guarda datos redundantes en pares espejo y proporciona aproximadamente 50 % de capacidad útil."
+            },
+            {
+              "url": "https://cloud.ibm.com/docs/bare-metal?topic=bare-metal-bm-raid-levels",
+              "referencia": "IBM Cloud Docs, About RAID: RAID 1 duplica datos en discos espejo; capacidad y tolerancia dependen del conjunto configurado."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 1, espejo y capacidad útil (A1-56/A2-IV-5); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con niveles RAID y capacidad efectiva. Se explicitan cuatro parejas espejo para que el cálculo de capacidad sea reproducible. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartado 8.1: RAID 1, espejo y capacidad útil (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1704,
+      "original": {
+        "id": 1704,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la opción correcta respecto a SAN, Storage Area Network:",
+        "opciones": [
+          "SAN se sitúa entre el servidor de aplicaciones y el sistema de ficheros",
+          "SAN es una red separada de la LAN, de dispositivos de almacenamiento homogéneos",
+          "La diferencia entre NAS y SAN es que ésta última utiliza fibra óptica para sus interconexiones",
+          "Todos los dispositivos de almacenamiento de la SAN son accesibles a todos los servidores de la LAN"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1704,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación describe correctamente una SAN (Storage Area Network)?",
+        "opciones": [
+          "Es una red especializada que conecta hosts y recursos de almacenamiento; suele presentar almacenamiento en bloque y el acceso puede restringirse por host.",
+          "Está formada necesariamente por dispositivos homogéneos y siempre usa fibra óptica.",
+          "Todos los dispositivos de la SAN son accesibles automáticamente para todos los servidores de la LAN.",
+          "Se instala obligatoriamente entre el servidor de aplicaciones y su sistema de ficheros."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Cotejado con SAN e interconexión. SNIA describe múltiples transportes/protocolos y los controles zoning/LUN masking que restringen el acceso. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, arquitectura de almacenamiento y Fibre Channel (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-56",
+            "A1-110"
+          ],
+          "A2": [
+            "A2-IV-5",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, arquitectura de almacenamiento y Fibre Channel (A1-56/A1-110/A2-IV-5/A2-IV-8)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, arquitectura de almacenamiento y Fibre Channel (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        },
+        "etiquetas": [
+          "SAN",
+          "almacenamiento en bloque",
+          "zoning",
+          "LUN",
+          "control de acceso"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://www.snia.org/education/storage_networking_primer/san/what_san",
+              "referencia": "SNIA, What Is a Storage Area Network?: SAN es una red especializada que conecta hosts, switches y almacenamiento mediante diversas tecnologías, topologías y protocolos; presenta el almacenamiento como conectado localmente."
+            },
+            {
+              "url": "https://www.snia.org/sites/default/files/2024-12/SNIA-Fibre-Channel-Security-Tech-Whitepaper.pdf",
+              "referencia": "SNIA, Storage Security: Fibre Channel Security, sección 3.2: zoning y LUN masking limitan qué hosts pueden ver los dispositivos/LUN; no todos acceden automáticamente a todos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, arquitectura de almacenamiento y Fibre Channel (A1-56/A1-110/A2-IV-5/A2-IV-8); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con SAN e interconexión. SNIA describe múltiples transportes/protocolos y los controles zoning/LUN masking que restringen el acceso. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.2: SAN, arquitectura de almacenamiento y Fibre Channel (A1-56/A1-110/A2-IV-5/A2-IV-8). Correspondencia A1-56, A1-110, A2-IV-5, A2-IV-8 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 1705,
+      "original": {
+        "id": 1705,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un CPD donde no tengo cabina de almacenamiento quiero instalar una solución software de virtualización de almacenamiento en servidores. ¿Cuál de las siguientes tecnologías utilizaré para esto?",
+        "opciones": [
+          "VMware Airwatch.",
+          "VMware vSAN.",
+          "Citrix vSphere.",
+          "Citrix XenApp."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 1705,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un clúster VMware vSphere sin cabina externa, ¿qué tecnología puede agrupar los dispositivos locales de hosts ESXi para ofrecer almacenamiento compartido definido por software?",
+        "opciones": [
+          "Una plataforma de gestión de dispositivos móviles (MDM).",
+          "VMware vSAN.",
+          "Un hipervisor, por sí solo, sin una función de almacenamiento distribuido.",
+          "Un sistema de publicación o virtualización de aplicaciones."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Cotejado con SDS/virtualización del almacenamiento. VMware/Broadcom describen vSAN como almacenamiento definido por software integrado con vSphere que agrega dispositivos locales en clúster. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.4: arquitecturas de almacenamiento y SDS/virtualización del almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.4: arquitecturas de almacenamiento y SDS/virtualización del almacenamiento (A1-56/A2-IV-5)",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.4: arquitecturas de almacenamiento y SDS/virtualización del almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        },
+        "etiquetas": [
+          "vSAN",
+          "almacenamiento definido por software",
+          "virtualización del almacenamiento",
+          "ESXi"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-27",
+          "fuentes": [
+            {
+              "url": "https://blogs.vmware.com/cloud-foundation/2024/01/22/vsan-hci-or-storage-clusters-which-deployment-option-is-right-for-you/",
+              "referencia": "VMware Cloud Foundation, vSAN HCI or Storage Clusters: vSAN es una solución software integrada en el hipervisor que puede agrupar almacenamiento local en los hosts; las topologías vSAN HCI y vSAN Max tienen diseños distintos."
+            },
+            {
+              "url": "https://knowledge.broadcom.com/external/article/414966/vsan-disks-are-ssd-disks-showing-as-hdd.html",
+              "referencia": "Broadcom Knowledge Base, artículo 414966 (actualizado 12-05-2025): caracteriza vSAN como almacenamiento definido por software que agrega dispositivos locales a un datastore compartido."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.4: arquitecturas de almacenamiento y SDS/virtualización del almacenamiento (A1-56/A2-IV-5); epígrafes cotejados en el documento de Drive. Correspondencia oficial contrastada con revision/temario-oficial.json y BOE-A-2025-25938 (A1)/BOE-A-2025-26262 (A2)."
+            }
+          ],
+          "observaciones": "Cotejado con SDS/virtualización del almacenamiento. VMware/Broadcom describen vSAN como almacenamiento definido por software integrado con vSphere que agrega dispositivos locales en clúster. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); apartados 7.2 y 8.4: arquitecturas de almacenamiento y SDS/virtualización del almacenamiento (A1-56/A2-IV-5). Correspondencia A1-56, A2-IV-5 contrastada con revision/temario-oficial.json y BOE-A-2025-25938/BOE-A-2025-26262. La academia orienta el encaje, no sustituye la comprobación técnica primaria."
+        }
+      }
+    }
+  ]
+}
