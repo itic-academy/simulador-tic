@@ -1,8 +1,18 @@
 # Revisión del banco TIC — estado al 27 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 272 (IDs 1676–1680). Acumulado: 1.680 preguntas examinadas, 1.628 verificadas (378 vigentes, 1.125 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.443 sin revisar de contenido. Hay 1.281 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote aplicado: 273 (IDs 1681–1685). Acumulado: 1.685 preguntas examinadas, 1.633 verificadas (379 vigentes, 1.129 corregidas y 125 históricas) y 52 pendientes de resolver (28 de fuente y 24 de ambigüedad); quedan 10.438 sin revisar de contenido. Hay 1.285 preguntas con cambios en enunciado, opciones o clave respecto del original. Estos contadores se recalcularon sobre los registros de lote y el estado del banco; la cobertura total sigue pendiente.
 
 Al publicar cada lote, incrementar las versiones de `preguntas_preparatic.json` en `app.js` y `revision/vista.js`, y también el parámetro de versión de los `<script>` que los cargan en `index.html` y `revision.html`: si el propio JavaScript queda en caché, su cambio interno no llega a ejecutarse y la página puede seguir pidiendo el banco de un lote previo.
+
+## Lote 273 — 27 de octubre
+
+IDs 1681–1685 revisados individualmente: una vigente y cuatro corregidas. Acumulado: 1.685 examinadas; 1.633 verificadas (379 vigentes, 1.129 corregidas y 125 históricas), 52 pendientes (28 de fuente y 24 de ambigüedad); 1.285 preguntas con cambios de contenido. Quedan 10.438 sin revisar; siguiente ID: 1.686. Originales íntegros conservados en `cambios-lote-273.json`.
+
+La 1681 conserva su clave tras confirmar en IBM que RAID 0 no ofrece redundancia y que RAID 1 sí refleja datos. La 1682 corrige la errata «RAID O» por «RAID 0» y mantiene RAID 1 como mirroring. La 1683 pregunta específicamente por capacidad nativa de DDS-3 (12 GB); 24 GB es valor comprimido bajo la hipótesis 2:1 y no debe llamarse capacidad sin matiz. La 1684 reemplaza las frases vagas sobre “sobrecargar” la red y aprovechar excedentes: un NAS puede consumir el ancho de banda de una LAN compartida, DAS conecta almacenamiento directamente al host y la agregación distribuida de nodos no define DAS. La 1685 acota el acceso cliente a un NAS convencional: NFS/SMB entregan ficheros; SCSI puede aparecer en la implementación interna del NAS o en almacenamiento en bloque, pero no es el protocolo de acceso a esos ficheros compartidos. También se elimina la comparación universal de capacidad máxima NAS/SAN, que depende de la solución.
+
+Cotejo con ITIC Academy en Drive: bloque 26, versión 2026.1 (31-08-2026), apartados 7.1–7.2 (medios y arquitecturas DAS/NAS/SAN), 8.1 (RAID) y 9 (copias/cintas). Correspondencia por pregunta con `temario-oficial.json` y BOE-A-2025-25938/BOE-A-2025-26262: 1681–1685 A1-56/A2-IV-5. La academia orienta el encaje; los detalles se validan con fuentes técnicas.
+
+Fuentes primarias/técnicas: IBM Documentation y IBM Redbooks para RAID 0/1 y mirroring; HPE QuickSpecs y soporte para capacidad nativa/comprimida DDS-3; IBM Think para NAS, carga/bottleneck de red, protocolos de fichero y acceso por bloques; IBM Redbooks para NFS/CIFS y la traducción interna a órdenes SCSI del NAS. Ejecutados `node revision/lote-273.cjs`, `node revision/academia-lote-273.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas estructuralmente válidas, 1.685 registros, cero errores y 10.438 preguntas aún sin revisar.
 
 ## Lote 272 — 27 de octubre
 
