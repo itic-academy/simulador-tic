@@ -1,0 +1,18 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(bankPath,'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-317.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ hardware:{url:'https://drive.google.com/file/d/12heek9CTZHiGHjtWvLjdjOE7vIQdlYFm/view?usp=drivesdk',label:'ITIC Academy, bloque Hardware, temas A1-52/53/56 y A2-I-1, versión 2026.2'},
+ soa:{url:'https://drive.google.com/file/d/11qGK4GbJ0QV81HEyboRAy5AZorijJmhs/view?usp=drivesdk',label:'ITIC Academy, bloque Arquitectura SOA y requisitos no funcionales, A1-58/A2-II-6, versión 2026.1'}
+};
+const mapping={
+ 1901:{doc:['hardware'],detail:'el material incluye el tema de equipos/servidores y centros de proceso de datos A1-53; la equivalencia FM-200/HFC-227ea y las designaciones IG se validan con fuentes de EPA y UNEP, no se atribuyen al temario.',topics:['A1-53','A2-IV-6'],note:'Cotejo de seguridad e instalaciones de CPD. El material académico solo aporta correspondencia temática; las alternativas y designaciones de gases se verifican con EPA/UNEP.'},
+ 1902:{doc:['hardware'],detail:'el bloque contiene los temas de hardware, interfaces, almacenamiento y sistemas de alto rendimiento; corresponde a A1-56/A2-IV-5.',topics:['A1-56','A2-IV-5'],note:'Cotejo de almacenamiento e interfaces SATA; la tasa y la diferencia entre enlace nominal y rendimiento real se comprueban en SATA-IO.'},
+ 1903:{doc:['soa'],detail:'el bloque trata arquitectura cliente-servidor, SOA, servicios web, middleware y separación de capas.',topics:['A1-58','A2-II-6'],note:'Cotejo temático de arquitectura multicapa y servicios web; la ubicación lógica de la regla de negocio se comprueba en la documentación técnica.'},
+ 1904:{doc:['soa'],detail:'el bloque incluye servicios web y arquitectura SOA, y se actualiza conforme a interoperabilidad de componentes.',topics:['A1-58','A2-II-6'],note:'Cotejo temático de SOA y servicios web; la neutralidad del modelo de programación y las extensiones de seguridad se contrastan con W3C/OASIS.'},
+ 1905:{doc:['soa'],detail:'el bloque cubre servicios web, middleware, mensajería y arquitectura orientada a servicios.',topics:['A1-58','A2-II-6'],note:'Cotejo temático de SOAP dentro de SOA; se usa la recomendación W3C para definir el protocolo.'}
+};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),r=mapping[c.id];assert.ok(q?.revision&&r,`Falta cotejo ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2,...r.topics])assert.ok(official.has(id),id);const selections=r.doc.map(k=>docs[k]);assert.ok(selections.every(Boolean));q.clasificacion.bloque_academia=`${selections.map(d=>d.label).join('; ')}; ${r.detail}`;q.clasificacion.nota=`${r.note} Correspondencia cotejada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo curricular acredita cobertura temática, no sustituye las fuentes primarias.`;q.revision.observaciones+=` ${q.clasificacion.nota}`;q.comentarios=q.revision.observaciones;for(const d of selections)q.revision.fuentes.push({url:d.url,referencia:`${d.label}; cotejo de cobertura y límites.`});c.actualizada=structuredClone(q)}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo de academia, temario oficial y convocatorias actualizado para IDs 1901–1905.');

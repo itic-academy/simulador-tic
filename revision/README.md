@@ -1,6 +1,24 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 316 (IDs 1896–1900); se resolvieron además seis pendientes antiguos. Acumulado: 1.900 preguntas examinadas, 1.850 verificadas (407 vigentes, 1.309 corregidas y 134 históricas) y 50 pendientes (25 de fuente y 25 de ambigüedad); quedan 10.223 sin revisar de contenido. Hay 1.473 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 317 (IDs 1901–1905); se resolvieron además seis pendientes antiguos. Acumulado: 1.905 preguntas examinadas, 1.855 verificadas (407 vigentes, 1.314 corregidas y 134 históricas) y 50 pendientes (25 de fuente y 25 de ambigüedad); quedan 10.218 sin revisar de contenido. Hay 1.478 preguntas con cambios en enunciado, opciones o clave respecto del original. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 317 — 28 de octubre
+
+IDs 1901–1905 revisados individualmente con fuentes técnicas primarias, cotejo de materiales de ITIC Academy y temarios oficiales. Las cinco preguntas se corrigieron y se conservan los originales en `cambios-lote-317.json`. Acumulado: 1.905 examinadas; 1.855 verificadas (407 vigentes, 1.314 corregidas y 134 históricas); 50 pendientes (25 de fuente y 25 de ambigüedad), 1.478 con cambios y 10.218 sin revisión individual.
+
+- La 1901 abandona distractores comerciales no identificados con seguridad y pregunta por la denominación del HFC-227ea: FM-200. Se contextualiza su uso como sustituto del Halón 1301 sin generalizar la autorización a cualquier aplicación. Argonite es IG-55, Inergen IG-541 y Halón 1301 es el agente original.
+- La 1902 precisa que los 600 MB/s de SATA Revision 3.0 son una tasa nominal del enlace de 6 Gb/s. SATA-IO advierte que la carga útil real es inferior por la sobrecarga de comandos, estado y handshaking.
+- La 1903 distingue capa lógica de despliegue físico: las reglas de negocio pertenecen a la capa intermedia o servicios de aplicación del modelo de tres capas, aunque no necesariamente residan en una máquina física separada.
+- La 1904 corrige el distractor sobre la integración de lenguajes: SOAP es independiente del modelo de programación y las extensiones WS-Security están definidas para mensajes SOAP. Se retira una referencia innecesaria a una implementación antigua de Axis2/C.
+- La 1905 reemplaza una explicación que confundía SOAP con RPC, HTML y transporte. SOAP define un marco de mensajería estructurada mediante XML, independiente del modelo de programación y vinculable a protocolos subyacentes.
+
+Cotejo curricular con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1901 A1-53/A2-IV-6; 1902 A1-56/A2-IV-5; 1903–1905 A1-58/A2-II-6.
+
+Fuentes primarias: [US EPA, SNAP y sustitutos de Halón 1301, incluido HFC-227ea/FM-200](https://www.epa.gov/snap/substitutes-streaming-agents); [UNEP Halons Technical Options Committee, designaciones de Inergen IG-541, Argonite IG-55 y Halón 1301](https://ozone.unep.org/sites/default/files/2019-05/HTOC94.pdf); [SATA-IO, FAQ de SATA Revision 3.0, 6 Gb/s y tasa efectiva](https://sata-io.org/sites/default/files/documents/SATA-Revision-3.0-FAQ-FINAL.pdf); [Microsoft Learn, modelo de arquitectura de tres capas](https://learn.microsoft.com/en-us/windows/win32/cossdk/using-a-three-tier-architecture-model); [W3C, SOAP 1.2](https://www.w3.org/TR/soap12/); [OASIS, WS-Security: SOAP Message Security](https://docs.oasis-open.org/wss/v1.1/wss-v1.1-spec-pr-SOAPMessageSecurity-01.htm).
+
+Materiales de academia cotejados: [bloque Hardware, temas A1-52/53/56 y A2-I-1](https://drive.google.com/file/d/12heek9CTZHiGHjtWvLjdjOE7vIQdlYFm/view?usp=drivesdk); [bloque Arquitectura SOA y requisitos no funcionales, A1-58/A2-II-6](https://drive.google.com/file/d/11qGK4GbJ0QV81HEyboRAy5AZorijJmhs/view?usp=drivesdk). El material identifica encaje de programa y conceptos de CPD, almacenamiento, capas y servicios web; los valores técnicos y definiciones se verifican en las fuentes primarias enlazadas.
+
+Ejecutados `node revision/lote-317.cjs`, `node revision/academia-lote-317.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario de 12.123 preguntas, errores 0; 1.905 examinadas y 10.218 sin revisión individual.
 
 ## Lote 316 — 28 de octubre
 
