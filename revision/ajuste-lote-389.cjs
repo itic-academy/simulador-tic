@@ -1,0 +1,17 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-389.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const q=bank.preguntas.find(x=>x.id===2265),entry=log.cambios.find(x=>x.id===2265);assert.ok(q&&entry);
+q.opciones[2]='El prototipado siempre aumenta el esfuerzo total, porque todo prototipo debe descartarse.';
+q.revision.estado='corregida';
+q.revision.observaciones='Se corrige el distractor para expresar una afirmación inequívocamente falsa: Gordon y Bieman distinguen el prototipado desechable (el prototipo no pasa al producto) del evolutivo (se conserva total o parcialmente), y recogen casos con reducción del esfuerzo total. Desechar un prototipo en la modalidad throw-away no demuestra que siempre aumente el esfuerzo total, ni todo prototipo deba desecharse. La clave 3 (índice 2) queda verificada como la afirmación NO correcta.';
+q.comentarios=q.revision.observaciones;
+q.revision.fuentes[0].referencia='V. Scott Gordon y James M. Bieman, “Reported Effects of Rapid Prototyping on Industrial Software Quality”, Software Quality Journal 2(2), 1993, pp. 93–110. Distingue prototipado desechable y evolutivo; documenta casos industriales con reducción del esfuerzo total y no establece que el esfuerzo siempre aumente al desechar un prototipo.';
+const academic='ITIC Academy, bloque 38, Análisis, Diseño y Construcción de Sistemas de Información, versión 2026; cubre prototipos y diseño de interfaces. Correspondencia temática: A1-94 y A2-III-3.';
+q.clasificacion.bloque_academia=academic;
+q.clasificacion.nota='Cotejo curricular con bloque 38 de ITIC Academy y programas oficiales A1/A2. El material de academia aporta encuadre temático; la respuesta se contrasta con el artículo de Gordon y Bieman.';
+q.revision.observaciones+=' Cotejo curricular actualizado: el bloque 38 de ITIC Academy cubre prototipos y diseño de interfaces (A1-94/A2-III-3); la clave se comprueba con el artículo de Gordon y Bieman.';
+q.comentarios=q.revision.observaciones;
+entry.actualizada=structuredClone(q);
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');
+console.log('Ajuste de precisión 2265 registrado en el snapshot del lote 389.');

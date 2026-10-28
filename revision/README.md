@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 388 (IDs 2256–2260). Acumulado: 2.260 preguntas examinadas, 2.198 verificadas (516 vigentes, 1.516 corregidas y 166 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.863 sin revisar individualmente. Hay 1.724 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 389 (IDs 2261–2265). Acumulado: 2.265 preguntas examinadas, 2.203 verificadas (518 vigentes, 1.519 corregidas y 166 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.858 sin revisar individualmente. Hay 1.729 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 389 — 28 de octubre
+
+IDs 2261–2265 examinados individualmente y cotejados con fuentes técnicas primarias, la academia accesible en Drive y los programas oficiales A1/A2. Se confirman dos claves y se precisan las redacciones/opciones de las otras tres. Se conservan los cinco originales íntegros en `cambios-lote-389.json`. Acumulado: 2.265 examinadas, 2.203 verificadas (518 vigentes, 1.519 corregidas y 166 históricas), 62 pendientes y 9.858 todavía sin revisar individualmente.
+
+- La 2261 pregunta por la incorporación del elemento semántico `section`; se confirma HTML5 según el HTML Living Standard. A1-77/A2-II-9/III-12.
+- La 2262 se corrige: el tamaño jumbo no tiene umbral normalizado por IEEE Ethernet; el fabricante define el límite y Cisco describe tamaños típicos superiores a 9000 bytes. Se evita equiparar jumbo con cualquier carga útil mayor de 1500 bytes. A1-118/A2-II-8.
+- La 2263 se acota al catálogo estatal de la DGRCC: el AM 27/2012 expiró en 2017, no fue renovado y el catálogo actual no incluye uno específico para alojamiento de sistemas. No se infiere que no existan otros contratos o instrumentos. A1-11/39, A2-II-15.
+- La 2264 identifica Ansible como plataforma de automatización/gestión de configuración; se confirma la clave y se explicita que el proyecto oficial usa GPL-3.0-or-later. A1-60/69, A2-II-2/14/IV-1.
+- La 2265 se corrige para que el distractor cuestionado afirme que el esfuerzo siempre aumenta y que todo prototipo debe descartarse. Gordon y Bieman distinguen prototipos desechables y evolutivos, y documentan casos con menor esfuerzo total; la generalización es falsa. A1-94/A2-III-3.
+
+Cotejo curricular con Drive: bloque 30 (HTML, estándares y tecnologías web), bloque 42 (LAN y redes), temas 11/39 (contratación pública y compra TIC), bloques 27 y 18 (sistemas operativos y licencias de software) y bloque 38 (prototipos y diseño de interfaces). Los bloques aportan encuadre temático; no sustituyen a las fuentes técnicas ni prueban por sí solos la respuesta. Las correspondencias se verificaron contra `temario-oficial.json` y los anexos de las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
+
+Fuentes técnicas primarias: WHATWG HTML Living Standard §4.3.3; Cisco, “Troubleshoot Switch Port and Interface Problems”; catálogo y Memoria 2017 de la DGRCC; documentación de arquitectura y repositorio oficial Ansible; Gordon y Bieman, “Reported Effects of Rapid Prototyping on Industrial Software Quality” (1993), DOI 10.1007/BF00590438. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.265 registros de revisión, 62 pendientes y 9.858 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 388 — 28 de octubre
 
