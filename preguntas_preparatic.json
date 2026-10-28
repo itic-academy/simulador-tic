@@ -119772,71 +119772,217 @@
       "id": 2496,
       "bloque": 0,
       "tema": 0,
-      "texto": "ACID es un acrónimo que, en el contexto de las bases de datos, hace referencia a un conjunto de características que deben asumir las transacciones para garantizar su procesamiento fiable. De entre éstas:",
+      "texto": "Sobre las propiedades ACID de las transacciones en bases de datos, ¿qué opción describe correctamente la durabilidad?",
       "opciones": [
-        "La Consistencia (C) hace referencia a que las operaciones llevadas a cabo por la transacción serán completadas y confirmadas en su totalidad, o serán deshechas, de modo que no quede ninguna operación a medias.",
-        "La característica de Integridad (I) garantiza que la base de datos se transforma desde un estado íntegro o válido a otro estado íntegro o válido.",
-        "Autenticidad (A) es la prueba de quién es el autor de un dato y garantiza su no repudio.",
-        "Durabilidad (D) es la propiedad que asegura que una vez realizada la operación, ésta persistirá y no se podrá deshacer aunque falle el sistema y que de esta forma los datos sobrevivan de alguna manera."
+        "La consistencia garantiza que una transacción se complete íntegramente o no produzca ningún efecto.",
+        "El aislamiento transforma necesariamente la base de datos de un estado válido en otro estado válido.",
+        "La autenticidad es la propiedad ACID que acredita la autoría de un dato y garantiza su no repudio.",
+        "La durabilidad asegura que, una vez confirmada una transacción, sus resultados no se pierdan por fallos posteriores del sistema."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se distingue cada propiedad ACID: atomicidad significa todo o nada; consistencia mantiene las restricciones; aislamiento regula la interacción concurrente; durabilidad conserva el resultado de una transacción confirmada ante fallos posteriores. La durabilidad no significa que una operación confirmada sea imposible de revertir mediante otra transacción. Cotejo curricular: ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; encuadra transacciones, SGBD relacionales y propiedades de consistencia. Transacciones, integridad/consistencia y SGBD relacionales. Documento consultado en Drive: https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; encuadra transacciones, SGBD relacionales y propiedades de consistencia. Transacciones, integridad/consistencia y SGBD relacionales. Documento consultado en Drive: https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas."
+      },
+      "etiquetas": [
+        "ACID",
+        "transacciones",
+        "atomicidad",
+        "consistencia",
+        "aislamiento",
+        "durabilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.postgresql.org/files/developer/transactions.pdf",
+            "referencia": "PostgreSQL, «Transaction Processing in PostgreSQL», exposición de ACID: atomicidad hace que la transacción tenga efecto completo o ninguno; consistencia conserva las restricciones del sistema; aislamiento separa las transacciones concurrentes; durabilidad conserva los resultados una vez confirmados, pese a fallos posteriores."
+          }
+        ],
+        "observaciones": "Se distingue cada propiedad ACID: atomicidad significa todo o nada; consistencia mantiene las restricciones; aislamiento regula la interacción concurrente; durabilidad conserva el resultado de una transacción confirmada ante fallos posteriores. La durabilidad no significa que una operación confirmada sea imposible de revertir mediante otra transacción. Cotejo curricular: ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; encuadra transacciones, SGBD relacionales y propiedades de consistencia. Transacciones, integridad/consistencia y SGBD relacionales. Documento consultado en Drive: https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas."
+      }
     },
     {
       "id": 2497,
       "bloque": 0,
       "tema": 0,
-      "texto": "Son sistemas de firma para la actuación administrativa automatizada:",
+      "texto": "Según el artículo 42 de la Ley 40/2015, ¿qué sistemas de firma electrónica puede determinar una Administración para la actuación administrativa automatizada?",
       "opciones": [
         "El sello electrónico.",
-        "El código seguro de verifcación.",
+        "El código seguro de verificación (CSV).",
         "Los dos anteriores.",
         "Ninguno de los anteriores."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La clave es «los dos anteriores». El artículo 42 de la Ley 40/2015 enumera tanto el sello electrónico como el código seguro de verificación vinculado a la Administración como sistemas de firma posibles para actuaciones administrativas automatizadas. Se corrige la errata «verifcación». Cotejo curricular: ITIC Academy, bloque 3 «Actuación administrativa y Administración Digital», versión 2026.2 (01-10-2026); firma/sello electrónicos y actuación automatizada. Firma electrónica en la actuación administrativa automatizada. Documento consultado en Drive: https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-22"
+        ],
+        "A2": [
+          "A2-I-9"
+        ],
+        "bloque_academia": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 3 «Actuación administrativa y Administración Digital», versión 2026.2 (01-10-2026); firma/sello electrónicos y actuación automatizada. Firma electrónica en la actuación administrativa automatizada. Documento consultado en Drive: https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas."
+      },
+      "etiquetas": [
+        "Ley 40/2015",
+        "actuación administrativa automatizada",
+        "sello electrónico",
+        "CSV",
+        "artículo 42"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/eli/es/l/2015/10/01/40/con",
+            "referencia": "Ley 40/2015, artículo 42, texto consolidado: para la actuación administrativa automatizada pueden utilizarse como sistemas de firma electrónica el sello electrónico y el código seguro de verificación (CSV) vinculado a la Administración, órgano, organismo o entidad, con verificación de integridad en sede."
+          }
+        ],
+        "observaciones": "La clave es «los dos anteriores». El artículo 42 de la Ley 40/2015 enumera tanto el sello electrónico como el código seguro de verificación vinculado a la Administración como sistemas de firma posibles para actuaciones administrativas automatizadas. Se corrige la errata «verifcación». Cotejo curricular: ITIC Academy, bloque 3 «Actuación administrativa y Administración Digital», versión 2026.2 (01-10-2026); firma/sello electrónicos y actuación automatizada. Firma electrónica en la actuación administrativa automatizada. Documento consultado en Drive: https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas."
+      }
     },
     {
       "id": 2498,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el contexto de las redes P2P, los nodos de la red:",
+      "texto": "En una arquitectura de red P2P (peer-to-peer), ¿qué caracteriza a los pares o peers?",
       "opciones": [
-        "Son siempre clientes.",
-        "Son servidores o clientes pero no simultáneamente.",
-        "Son siempre servidores.",
-        "Son servidores o clientes simultáneamente."
+        "Solo solicitan servicios y nunca comparten recursos.",
+        "Proporcionan servicios, pero no pueden solicitar servicios a otros nodos.",
+        "Son clientes o servidores, pero no pueden desempeñar ambos papeles en la arquitectura.",
+        "Pueden solicitar y proporcionar servicios a otros nodos, compartiendo recursos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se precisa el concepto: en el modelo P2P los pares pueden solicitar y proporcionar servicios a otros nodos, compartiendo recursos; no se afirma que todo nodo desempeñe necesariamente ambas funciones a la vez en cada intercambio. RFC 5694 advierte además que hay arquitecturas híbridas y matices de definición. Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); arquitectura, servicios y nodos de red. Arquitectura de pares P2P como servicio/arquitectura distribuida de Internet. Documento consultado en Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-13"
+        ],
+        "bloque_academia": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); arquitectura, servicios y nodos de red. Arquitectura de pares P2P como servicio/arquitectura distribuida de Internet. Documento consultado en Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas."
+      },
+      "etiquetas": [
+        "redes P2P",
+        "peer-to-peer",
+        "cliente",
+        "servidor",
+        "RFC 5694"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5694.html",
+            "referencia": "IETF RFC 5694, §2, definición de sistema P2P: sus elementos comparten recursos, proporcionan servicios a otros elementos y solicitan servicios de otros; peers cumplen ambas funciones, mientras los clientes generalmente solo solicitan."
+          }
+        ],
+        "observaciones": "Se precisa el concepto: en el modelo P2P los pares pueden solicitar y proporcionar servicios a otros nodos, compartiendo recursos; no se afirma que todo nodo desempeñe necesariamente ambas funciones a la vez en cada intercambio. RFC 5694 advierte además que hay arquitecturas híbridas y matices de definición. Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); arquitectura, servicios y nodos de red. Arquitectura de pares P2P como servicio/arquitectura distribuida de Internet. Documento consultado en Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas."
+      }
     },
     {
       "id": 2499,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo se denomina a la red neuronal diseñada para mejorar las capacidades de vigilancia y reducir la superficie de exposición de los sistemas frente a las amenazas del ciberespacio en tiempo real?",
+      "texto": "¿Qué siglas identifican el Entorno de Superficie de Exposición «S» del CCN-CERT, descrito como una red neuronal adaptativa para mejorar la vigilancia y reducir en tiempo real la exposición de los sistemas a amenazas del ciberespacio?",
       "opciones": [
-        "ANA",
-        "ANGELES",
-        "ADA",
-        "ESE"
+        "ANA.",
+        "ANGELES.",
+        "ADA.",
+        "ESE."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La sigla correcta es ESE, Entorno de Superficie de Exposición «S», descrito por el CCN como una red neuronal adaptativa para vigilancia continua y reducción de la exposición a amenazas. No se confunde ESE con ANA, una de las neuronas/componentes que el CCN menciona dentro del entorno. La página institucional estaba temporalmente en mantenimiento, por lo que se deja constancia de esa limitación de acceso. Cotejo curricular: ITIC Academy, bloque 22 «Seguridad, ENS y Ciberseguridad», versión 2026; amenazas y capacidades de seguridad. Vigilancia y reducción de superficie de exposición frente a amenazas; el sistema descrito es un recurso del CCN-CERT. Documento consultado en Drive: https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-48"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 22 «Seguridad, ENS y Ciberseguridad», versión 2026; amenazas y capacidades de seguridad. Vigilancia y reducción de superficie de exposición frente a amenazas; el sistema descrito es un recurso del CCN-CERT. Documento consultado en Drive: https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas."
+      },
+      "etiquetas": [
+        "CCN-CERT",
+        "ESE",
+        "superficie de exposición",
+        "ciberseguridad",
+        "vigilancia continua"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.ccn.cni.es/index.php/es/?id=19",
+            "referencia": "Centro Criptológico Nacional, Entorno de Superficie de Exposición «S» (ESE): describe ESE como red neuronal adaptativa para mejorar la vigilancia y reducir en tiempo real la superficie de exposición de los sistemas ante amenazas del ciberespacio. La página institucional se encontraba temporalmente en mantenimiento al consultar; su resultado oficial indexado reproduce esa descripción."
+          }
+        ],
+        "observaciones": "La sigla correcta es ESE, Entorno de Superficie de Exposición «S», descrito por el CCN como una red neuronal adaptativa para vigilancia continua y reducción de la exposición a amenazas. No se confunde ESE con ANA, una de las neuronas/componentes que el CCN menciona dentro del entorno. La página institucional estaba temporalmente en mantenimiento, por lo que se deja constancia de esa limitación de acceso. Cotejo curricular: ITIC Academy, bloque 22 «Seguridad, ENS y Ciberseguridad», versión 2026; amenazas y capacidades de seguridad. Vigilancia y reducción de superficie de exposición frente a amenazas; el sistema descrito es un recurso del CCN-CERT. Documento consultado en Drive: https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas."
+      }
     },
     {
       "id": 2500,
       "bloque": 0,
       "tema": 0,
-      "texto": "En desarrollo web, ¿para que se utiliza ESLint?",
+      "texto": "En desarrollo web, ¿para qué se utiliza principalmente ESLint?",
       "opciones": [
-        "Para detectar fallos y problemas de estilo en código JavaScript",
-        "Para compilar código escrito en TypeScript",
-        "Para deplegar aplicaciones en entornos cloud",
-        "Para realizar revisiones de accesibilidad"
+        "Para analizar código JavaScript y detectar problemas o incumplimientos de reglas de calidad y estilo.",
+        "Para compilar código TypeScript sin herramientas adicionales.",
+        "Para desplegar aplicaciones en entornos cloud.",
+        "Para realizar por sí solo auditorías de accesibilidad web."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "ESLint analiza estáticamente código JavaScript para detectar problemas y aplicar reglas de calidad/estilo; no compila TypeScript, despliega aplicaciones ni realiza por sí solo auditorías de accesibilidad. Se corrige «deplegar» y se concreta el enunciado a la función principal documentada por el proyecto. Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de Sistemas de Información», versión 2026.1 (31-08-2026); desarrollo web, JavaScript y herramientas del entorno .NET/Java. Desarrollo web y scripts de cliente; ESLint analiza código JavaScript y reglas de calidad/estilo. Documento consultado en Drive: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de Sistemas de Información», versión 2026.1 (31-08-2026); desarrollo web, JavaScript y herramientas del entorno .NET/Java. Desarrollo web y scripts de cliente; ESLint analiza código JavaScript y reglas de calidad/estilo. Documento consultado en Drive: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas."
+      },
+      "etiquetas": [
+        "JavaScript",
+        "ESLint",
+        "análisis estático",
+        "linting",
+        "desarrollo web"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://eslint.org/docs/latest/use/core-concepts",
+            "referencia": "Documentación oficial de ESLint, «Core Concepts»: linter configurable para localizar y corregir problemas en código JavaScript, desde errores potenciales hasta incumplimientos de buenas prácticas y estilo; no es un compilador de TypeScript ni una herramienta de despliegue o auditoría de accesibilidad."
+          }
+        ],
+        "observaciones": "ESLint analiza estáticamente código JavaScript para detectar problemas y aplicar reglas de calidad/estilo; no compila TypeScript, despliega aplicaciones ni realiza por sí solo auditorías de accesibilidad. Se corrige «deplegar» y se concreta el enunciado a la función principal documentada por el proyecto. Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de Sistemas de Información», versión 2026.1 (31-08-2026); desarrollo web, JavaScript y herramientas del entorno .NET/Java. Desarrollo web y scripts de cliente; ESLint analiza código JavaScript y reglas de calidad/estilo. Documento consultado en Drive: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. La correspondencia se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy contextualiza el temario; las fuentes normativas y técnicas primarias citadas en revision.fuentes sustentan las respuestas."
+      }
     },
     {
       "id": 2501,
