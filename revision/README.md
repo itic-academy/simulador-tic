@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 385 (IDs 2241–2245). Acumulado: 2.245 preguntas examinadas, 2.184 verificadas (509 vigentes, 1.510 corregidas y 165 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.878 sin revisar individualmente. Hay 1.716 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 386 (IDs 2246–2250). Acumulado: 2.250 preguntas examinadas, 2.189 verificadas (511 vigentes, 1.513 corregidas y 165 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.873 sin revisar individualmente. Hay 1.719 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 386 — 28 de octubre
+
+IDs 2246–2250 revisados individualmente y cotejados con fuentes primarias. Dos preguntas se confirman y tres se corrigen: se actualiza la normativa del DNI, se precisa el procedimiento de cambio de PIN y se acota la revocación PKI a los certificados almacenados en la tarjeta DNIe. Se conservan los cinco originales íntegros en `cambios-lote-386.json`. Acumulado: 2.250 examinadas, 2.189 verificadas (511 vigentes, 1.513 corregidas y 165 históricas), 61 pendientes y 9.873 todavía sin revisión individual.
+
+- La 2246 confirma las dimensiones del DNIe en formato ID-1: 85,60 mm de ancho por 53,98 mm de alto. A1-81/A2-I-6.
+- La 2247 confirma C3 como contacto de reloj CLK según ISO/IEC 7816-3. A1-81/A2-I-6/IV-12.
+- La 2248 corrige el procedimiento ambiguo: el cambio normal del PIN del DNIe se realiza en un PAD de una Oficina de Expedición; las funciones biométricas requieren terminales autorizados. A1-81/A2-I-6.
+- La 2249 sustituye como norma vigente el RD 1553/2005, derogado, por el RD 255/2025, en vigor desde el 2 de abril de 2025. A1-80/A2-I-6.
+- La 2250 precisa que la revocación de certificados personales contenidos en la tarjeta DNIe se solicita presencialmente ante cualquier equipo expedidor del DNI, conforme a la DPC de la PKI del DNI v3.2; no se generaliza a otras PKI o al certificado centralizado. A1-80/A2-I-6/IV-12.
+
+Cotejo curricular con Drive: bloque 36 (Seguridad, criptografía, identificación y firma). Correspondencias contrastadas con `temario-oficial.json` y programas de las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La academia se usa como encuadre, no como autoridad normativa ni técnica.
+
+Fuentes primarias: Policía Nacional, Portal DNIe (dimensiones y cambio de PIN); ISO/IEC 7816-3:2006/Amd 1:2025; BOE, RD 255/2025 y ficha de derogación del RD 1553/2005; DGP, Declaración de Prácticas y Políticas de Certificación PKI del DNI v3.2, §4.9.3. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.250 registros de revisión, 61 pendientes y 9.873 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 385 — 28 de octubre
 
