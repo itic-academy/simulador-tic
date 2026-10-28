@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 460 (IDs 2611–2615). Acumulado: 2.615 preguntas examinadas, 2.548 verificadas (532 vigentes, 1.825 corregidas y 191 históricas) y 67 pendientes (31 de fuente y 36 de ambigüedad); quedan 9.508 sin revisar individualmente. Hay 2.069 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 461 (IDs 2616–2620). Acumulado: 2.620 preguntas examinadas, 2.553 verificadas (532 vigentes, 1.830 corregidas y 191 históricas) y 67 pendientes (31 de fuente y 36 de ambigüedad); quedan 9.503 sin revisar individualmente. Hay 2.074 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 461 — 28 de octubre
+
+IDs 2616–2620 revisados individualmente y registrados en `cambios-lote-461.json`. Se corrigen cinco reactivos: se separa safety de reliability, se precisa la reacción de Deming, se delimita el nivel CMMI, se evita una doble respuesta en las métricas de complejidad y se define COPQ con la clasificación PAF.
+
+- **2616 — requisitos de seguridad:** se corrige la clave de «fiabilidad» a «seguridad funcional (safety)». Evitar daño a personas/bienes es safety; reliability se refiere a funcionar bajo condiciones y tiempo especificados. A1-96/A1-98/A2-II-10/A2-III-3.
+- **2617 — reacción en cadena de Deming:** no se afirma que cualquier producto de mayor calidad cueste menos; al mejorar la calidad del proceso se reducen defectos/retrabajo y costes y aumenta la productividad. A1-98/A1-103/A2-III-13.
+- **2618 — CMMI:** se concreta la representación staged y se pregunta por niveles de madurez; nivel 5 es Optimizing/Optimizado, distinto de los niveles de capacidad. A1-96/A1-98/A2-III-13.
+- **2619 — complejidad del código:** se aclara que McCall es un modelo de calidad, no una métrica de complejidad. Se reemplaza Bang por métricas de flujo de información porque el SEI clasifica Bang como métrica de tamaño, lo que hacía ambiguo el conjunto original. A1-98/A2-III-13.
+- **2620 — coste de mala calidad:** se acota a COPQ en la clasificación PAF: suma fallos internos y externos; prevención y evaluación pertenecen al coste total de calidad, no a COPQ. A1-98/A1-103/A2-III-13.
+
+Fuentes: [ISO/IEC/IEEE 24641, definición de safety, reliability y security](https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso-iec-ieee%3A24641%3Aed-1%3Av1%3Aen) y [NASA Software Engineering Handbook, SWE-023](https://swehb.nasa.gov/spaces/SWEHBVB/pages/32604459/SWE-023+-%2BSoftware+Safety); [Deming, Improvement of quality and productivity through action by management (1981)](https://onlinelibrary.wiley.com/doi/10.1002/npr.4040010105); [CMMI Institute, niveles de capacidad y madurez](https://cmmiinstitute.com/learning/appraisals/levels); [SEI, Software Metrics, CMU/SEI-88-CM-012](https://www.sei.cmu.edu/library/software-metrics/) y [McCall et al., RADC-TR-77-369 (1977)](https://apps.dtic.mil/sti/pdfs/ADA049014.pdf); [ASQ, Cost of Quality/COPQ](https://asq.org/quality-resources/cost-of-quality).
+
+Cotejo curricular: [ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026.1](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk), cuyo contenido consultado incluye safety como característica de calidad de producto, CMMI, métricas de McCabe/Halstead, pruebas y aseguramiento; encuadre de los temas, no fuente técnica. A1 y A2 contrastados con `temario-oficial.json` y las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). A2-D13 es etiqueta interna de Academy; el tema oficial aplicado es A2-III-13.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.620 revisadas individualmente, 2.553 verificadas, 67 pendientes documentados y 9.503 todavía sin revisión de contenido. El inventario estructural no acredita revisión individual.
 
 ## Lote 460 — 28 de octubre
 
