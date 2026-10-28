@@ -1,0 +1,358 @@
+{
+  "fecha": "2026-10-28",
+  "alcance": "IDs 2016–2020; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 2016,
+      "original": {
+        "id": 2016,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Se desea establecer un sistema de salvaguarda de información (back-up) que asegure una pérdida potencial máxima del trabajo realizado en 24 horas. Con el fin de facilitar el proceso se han propuesto diversas medidas. Indicar aquélla que sea válida:",
+        "opciones": [
+          "Copiar inmediatamente en cinta todas las modificaciones efectuadas por cualquiera de los usuarios según éstas se vayan produciendo",
+          "Realizar salvaguardas al final de cada día de toda la información contenida en los discos mediante algún procedimiento automático lanzado por el administrador del sistema",
+          "Obligar a cada usuario a realizar su copia de seguridad una vez terminado el trabajo efectuado durante el día",
+          "No se puede efectuar un sistema de salvaguarda basado en cinta para un sistema distribuido en el que las estaciones de trabajo no posean cinta magnética"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2016,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Se desea establecer un sistema de salvaguarda de información (back-up) que asegure una pérdida potencial máxima del trabajo realizado en 24 horas. Con el fin de facilitar el proceso se han propuesto diversas medidas. Indicar aquélla que sea válida:",
+        "opciones": [
+          "Copiar inmediatamente en cinta todas las modificaciones efectuadas por cualquiera de los usuarios según éstas se vayan produciendo",
+          "Realizar salvaguardas al final de cada día de toda la información contenida en los discos mediante algún procedimiento automático lanzado por el administrador del sistema",
+          "Obligar a cada usuario a realizar su copia de seguridad una vez terminado el trabajo efectuado durante el día",
+          "No se puede efectuar un sistema de salvaguarda basado en cinta para un sistema distribuido en el que las estaciones de trabajo no posean cinta magnética"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Pendiente por ambigüedad material. La clave original propone una copia automática diaria y esta puede limitar a 24 horas la pérdida entre copias si se comprueba su ejecución y recuperación. Sin embargo, copiar inmediatamente todos los cambios a cinta también puede satisfacer el límite (con RPO menor), si la copia es íntegra y recuperable. Como ambas alternativas son válidas bajo el enunciado actual, se conserva la pregunta y su clave sin certificarla. NIST define el RPO como un objetivo temporal de recuperación y advierte que debe guiar el diseño de las copias. A1-56/A2-IV-3.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-3"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 26 Hardware, almacenamiento y virtualización, edición 2026.1 (31-08-2026); trata copias de seguridad, almacenamiento y recuperación; se mantiene pendiente porque dos alternativas del enunciado alcanzan el RPO de 24 horas.",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Pendiente por ambigüedad material. La clave original propone una copia automática diaria y esta puede limitar a 24 horas la pérdida entre copias si se comprueba su ejecución y recuperación. Sin embargo, copiar inmediatamente todos los cambios a cinta también puede satisfacer el límite (con RPO menor), si la copia es íntegra y recuperable. Como ambas alternativas son válidas bajo el enunciado actual, se conserva la pregunta y su clave sin certificarla. NIST define el RPO como un objetivo temporal de recuperación y advierte que debe guiar el diseño de las copias. A1-56/A2-IV-3."
+        },
+        "etiquetas": [
+          "copia de seguridad",
+          "RPO",
+          "recuperación ante desastres",
+          "cinta",
+          "ambigüedad"
+        ],
+        "revision": {
+          "estado": "pendiente_ambiguedad",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/glossary/term/recovery_point_objective",
+              "referencia": "NIST CSRC Glossary: RPO es el punto temporal al que deben recuperarse los datos después de una interrupción."
+            },
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-209.pdf",
+              "referencia": "NIST SP 800-209, Security Guidelines for Storage Infrastructure: define RPO como pérdida de datos expresada en tiempo y exige fijarlo para cada activo y diseñar la protección según ese objetivo."
+            },
+            {
+              "url": "https://www.nccoe.nist.gov/publication/1800-11/VolB/",
+              "referencia": "NIST SP 1800-11B, Data Integrity: Detecting and Responding to Ransomware and Other Destructive Events: muestra que una copia diaria puede dejar expuesto hasta un día de cambios y que la frecuencia depende del objetivo y el riesgo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, Bloque 26 Hardware, almacenamiento y virtualización, edición 2026.1 (31-08-2026); cotejo de cobertura temática frente al programa oficial."
+            }
+          ],
+          "observaciones": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Pendiente por ambigüedad material. La clave original propone una copia automática diaria y esta puede limitar a 24 horas la pérdida entre copias si se comprueba su ejecución y recuperación. Sin embargo, copiar inmediatamente todos los cambios a cinta también puede satisfacer el límite (con RPO menor), si la copia es íntegra y recuperable. Como ambas alternativas son válidas bajo el enunciado actual, se conserva la pregunta y su clave sin certificarla. NIST define el RPO como un objetivo temporal de recuperación y advierte que debe guiar el diseño de las copias. A1-56/A2-IV-3."
+        }
+      }
+    },
+    {
+      "id": 2017,
+      "original": {
+        "id": 2017,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo de procesos de Reingeniería del Software propuesto por Pressman, la actividad de modificación del código fuente de un módulo con la finalidad de adecuarlo para futuros cambios, recibe la denominación de:",
+        "opciones": [
+          "Ingeniería Inversa de procesos.",
+          "Reestructuración del software.",
+          "Ingeniería de la Integración de módulos.",
+          "Ingeniería Avanzada."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2017,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo de reingeniería del software de Pressman, ¿cómo se denomina específicamente la modificación del código fuente para facilitar cambios futuros?",
+        "opciones": [
+          "Ingeniería inversa de procesos.",
+          "Reestructuración del código (code restructuring).",
+          "Integración de módulos.",
+          "Ingeniería avanzada."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Se conserva la clave 1 y se afina la denominación: la acción descrita es reestructuración del código (code restructuring), una modalidad de reestructuración dentro de la reingeniería, no ingeniería inversa ni ingeniería avanzada. Pressman define restructuring como modificar código fuente y/o datos para facilitar cambios futuros. A1-101/A2-III-8.",
+        "clasificacion": {
+          "A1": [
+            "A1-101"
+          ],
+          "A2": [
+            "A2-III-8"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, edición 2026 (2026); cubre mantenimiento y evolución del software; la definición exacta de reestructuración del código se contrasta con Pressman.",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Se conserva la clave 1 y se afina la denominación: la acción descrita es reestructuración del código (code restructuring), una modalidad de reestructuración dentro de la reingeniería, no ingeniería inversa ni ingeniería avanzada. Pressman define restructuring como modificar código fuente y/o datos para facilitar cambios futuros. A1-101/A2-III-8."
+        },
+        "etiquetas": [
+          "reingeniería del software",
+          "reestructuración de código",
+          "mantenimiento",
+          "Pressman"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://mlsu.ac.in/econtents/16_EBOOK-7th_ed_software_engineering_a_practitioners_approach_by_roger_s._pressman_.pdf",
+              "referencia": "Roger S. Pressman, Software Engineering: A Practitioner’s Approach, 7.ª ed., §29.7: restructuring modifies source code and/or data to make it amenable to future changes; §29.7.1 denomina code restructuring a la transformación del código."
+            },
+            {
+              "url": "https://www.mheducation.com/highered/product/software-engineering-a-practitioners-approach-pressman.html",
+              "referencia": "McGraw Hill, ficha editorial de Software Engineering: A Practitioner’s Approach, de Roger S. Pressman."
+            },
+            {
+              "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+              "referencia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, edición 2026 (2026); cotejo de cobertura temática frente al programa oficial."
+            }
+          ],
+          "observaciones": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Se conserva la clave 1 y se afina la denominación: la acción descrita es reestructuración del código (code restructuring), una modalidad de reestructuración dentro de la reingeniería, no ingeniería inversa ni ingeniería avanzada. Pressman define restructuring como modificar código fuente y/o datos para facilitar cambios futuros. A1-101/A2-III-8."
+        }
+      }
+    },
+    {
+      "id": 2018,
+      "original": {
+        "id": 2018,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con la virtualización basada en VDI (Virtual Desktop Infraestructure) es VERDADERO:",
+        "opciones": [
+          "Se basa en la solución XenApp de Citrix.",
+          "Con un VDI no persistente cada usuario tiene una única imagen de escritorio que puede personalizar con aplicaciones y datos que se guardan para un uso futuro.",
+          "Con un VDI persistente cuando el usuario cierra la sesión éste vuelve a su estado inalterado.",
+          "Proporciona aislamiento y control sobre los puestos de trabajo gestionados."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2018,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con la virtualización de puestos de trabajo mediante infraestructura de escritorios virtuales (VDI), señale la afirmación VERDADERA:",
+        "opciones": [
+          "VDI consiste en publicar aplicaciones XenApp como si fueran escritorios virtuales.",
+          "En un escritorio no persistente, los cambios de la máquina virtual se conservan tras reiniciarla.",
+          "En un escritorio persistente, los cambios de la máquina virtual se descartan al reiniciarla.",
+          "VDI proporciona aislamiento y control sobre los puestos de trabajo gestionados."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Se corrige el error tipográfico «Infraestructure» y se conservan los conceptos con opciones inequívocas. VDI entrega escritorios de sistema operativo en máquinas virtuales; XenApp publicado entrega aplicaciones o escritorios de servidor. En perfiles no persistentes los cambios de la máquina se descartan al reiniciar; en un escritorio persistente se conservan. La opción correcta sigue siendo la 3: VDI permite aislamiento y control de los puestos gestionados. A1-132/A2-IV-6.",
+        "clasificacion": {
+          "A1": [
+            "A1-132"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 26 Hardware, almacenamiento y virtualización, edición 2026.1 (31-08-2026); incluye virtualización de puestos y centros de datos; la persistencia se verifica en documentación del fabricante Citrix.",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Se corrige el error tipográfico «Infraestructure» y se conservan los conceptos con opciones inequívocas. VDI entrega escritorios de sistema operativo en máquinas virtuales; XenApp publicado entrega aplicaciones o escritorios de servidor. En perfiles no persistentes los cambios de la máquina se descartan al reiniciar; en un escritorio persistente se conservan. La opción correcta sigue siendo la 3: VDI permite aislamiento y control de los puestos gestionados. A1-132/A2-IV-6."
+        },
+        "etiquetas": [
+          "VDI",
+          "virtualización de puestos",
+          "escritorio persistente",
+          "escritorio no persistente",
+          "Citrix"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://docs.citrix.com/en-us/xenapp-and-xendesktop/7-15-ltsr/technical-overview/delivery-methods/vdi-desktops.html",
+              "referencia": "Citrix Documentation, VDI desktops: distingue escritorios aleatorios y estáticos no persistentes, cuyos cambios se pierden al reiniciar, de los persistentes, cuyos cambios se conservan; compara además VDI con escritorios publicados XenApp."
+            },
+            {
+              "url": "https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/2212/citrix-virtual-apps-and-desktops-7-2212.pdf",
+              "referencia": "Citrix Virtual Apps and Desktops 7 2212, documentación del fabricante: confirma persistencia y pérdida de cambios al reiniciar según el tipo de escritorio."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, Bloque 26 Hardware, almacenamiento y virtualización, edición 2026.1 (31-08-2026); cotejo de cobertura temática frente al programa oficial."
+            }
+          ],
+          "observaciones": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Se corrige el error tipográfico «Infraestructure» y se conservan los conceptos con opciones inequívocas. VDI entrega escritorios de sistema operativo en máquinas virtuales; XenApp publicado entrega aplicaciones o escritorios de servidor. En perfiles no persistentes los cambios de la máquina se descartan al reiniciar; en un escritorio persistente se conservan. La opción correcta sigue siendo la 3: VDI permite aislamiento y control de los puestos gestionados. A1-132/A2-IV-6."
+        }
+      }
+    },
+    {
+      "id": 2019,
+      "original": {
+        "id": 2019,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una de las capas o niveles del modelo de referencia de interconexión de sistemas abiertos (OSI) no corresponde a la operación de los dispositivos mencionados. ¿Cual?",
+        "opciones": [
+          "Físico - Repetidor (“repeater”), Concentrador (“hub”), Módem, TR1, AT",
+          "Enlace - Puente (“bridge”), Conmutador (“switch”)",
+          "Enlace - Conector V.24, Conector V.35",
+          "Red - Encaminador (“router”)"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2019,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo de referencia OSI, una asignación de dispositivo o interfaz a una capa no es correcta. ¿Cuál?",
+        "opciones": [
+          "Física: repetidor, concentrador, módem e interfaz de acceso básico RDSI.",
+          "Enlace: puente y conmutador.",
+          "Enlace: circuitos/interfaz DTE-DCE V.24 o interfaz V.35.",
+          "Red: encaminador."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Se conserva la respuesta 2 y se sustituye «conector V.24/V.35» por «interfaz/circuitos V.24 y V.35»: V.24 define circuitos de intercambio DTE-DCE y V.35 es una especificación física histórica retirada, por lo que no corresponde asignarlos a la capa de enlace. Repetidores/hubs se asocian a la capa física; puentes/conmutadores a enlace; routers a red. A1-108/A2-II-8.",
+        "clasificacion": {
+          "A1": [
+            "A1-108"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 43 Protocolos, edición 2026; incluye el modelo OSI, capas e interfaces; las especificaciones V.24/V.35 se contrastan con ITU-T.",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Se conserva la respuesta 2 y se sustituye «conector V.24/V.35» por «interfaz/circuitos V.24 y V.35»: V.24 define circuitos de intercambio DTE-DCE y V.35 es una especificación física histórica retirada, por lo que no corresponde asignarlos a la capa de enlace. Repetidores/hubs se asocian a la capa física; puentes/conmutadores a enlace; routers a red. A1-108/A2-II-8."
+        },
+        "etiquetas": [
+          "OSI",
+          "V.24",
+          "V.35",
+          "interfaces DTE-DCE",
+          "capa física",
+          "capa de enlace"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=4938",
+              "referencia": "ITU-T Recommendation V.24, vigente: define la lista de circuitos de intercambio entre DTE y DCE; la recomendación especifica circuitos/interfaz, no un conector de capa de enlace."
+            },
+            {
+              "url": "https://www.itu.int/rec/T-REC-V.35/es",
+              "referencia": "ITU-T V.35: recomendación histórica retirada; su materia es la interfaz de transmisión de datos, no un protocolo de capa de enlace."
+            },
+            {
+              "url": "https://www.iso.org/standard/20269.html",
+              "referencia": "ISO/IEC 7498-1:1994, modelo básico de referencia OSI, ficha oficial del estándar."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, Bloque 43 Protocolos, edición 2026; cotejo de cobertura temática frente al programa oficial."
+            }
+          ],
+          "observaciones": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. Se conserva la respuesta 2 y se sustituye «conector V.24/V.35» por «interfaz/circuitos V.24 y V.35»: V.24 define circuitos de intercambio DTE-DCE y V.35 es una especificación física histórica retirada, por lo que no corresponde asignarlos a la capa de enlace. Repetidores/hubs se asocian a la capa física; puentes/conmutadores a enlace; routers a red. A1-108/A2-II-8."
+        }
+      }
+    },
+    {
+      "id": 2020,
+      "original": {
+        "id": 2020,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique cuál de las siguientes es una herramienta de e-learning:",
+        "opciones": [
+          "Kerberos",
+          "WebCT",
+          "Kagera",
+          "Tuxedo"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2020,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes fue históricamente una herramienta de gestión del aprendizaje (LMS) utilizada en e-learning?",
+        "opciones": [
+          "Kerberos",
+          "WebCT",
+          "Kagera",
+          "Tuxedo"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. WebCT fue un sistema de gestión de cursos/aprendizaje usado históricamente en e-learning; la clave 1 se mantiene. Se actualiza el tiempo verbal para no presentarlo como plataforma vigente: la Universidad de Kioto documenta su sustitución en 2013, y la guía de WebCT describe funciones de administración de cursos. A1-73/A2-III-6.",
+        "clasificacion": {
+          "A1": [
+            "A1-73"
+          ],
+          "A2": [
+            "A2-III-6"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 33 E-learning y GIS, edición 2026.1 (31-07-2026); incluye conceptos y herramientas de e-learning; WebCT se trata como LMS histórico, no plataforma vigente.",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. WebCT fue un sistema de gestión de cursos/aprendizaje usado históricamente en e-learning; la clave 1 se mantiene. Se actualiza el tiempo verbal para no presentarlo como plataforma vigente: la Universidad de Kioto documenta su sustitución en 2013, y la guía de WebCT describe funciones de administración de cursos. A1-73/A2-III-6."
+        },
+        "etiquetas": [
+          "e-learning",
+          "LMS",
+          "WebCT",
+          "herramienta histórica",
+          "gestión de cursos"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.iimc.kyoto-u.ac.jp/ja/news/information/130319014164",
+              "referencia": "Universidad de Kioto, aviso institucional de 2013: identifica Blackboard Learning System (nombre anterior WebCT) como sistema de apoyo al aprendizaje y anuncia su sustitución."
+            },
+            {
+              "url": "https://www1.udel.edu/karenk/webct/webct41/system_administrator_guide_ce_4.1.pdf",
+              "referencia": "WebCT Campus Edition 4.1, guía oficial de administración: documenta la gestión de cursos dentro del sistema WebCT."
+            },
+            {
+              "url": "https://www.sec.gov/Archives/edgar/data/1106942/000095013307000781/w30711e10vk.htm",
+              "referencia": "Blackboard, informe anual presentado ante SEC: los productos antes conocidos como WebCT Campus Edition y WebCT Vista pasaron a formar parte de Blackboard Academic Suite."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+              "referencia": "ITIC Academy, Bloque 33 E-learning y GIS, edición 2026.1 (31-07-2026); cotejo de cobertura temática frente al programa oficial."
+            }
+          ],
+          "observaciones": "Correspondencia cotejada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. La academia aporta contexto curricular; no sustituye a las fuentes primarias. WebCT fue un sistema de gestión de cursos/aprendizaje usado históricamente en e-learning; la clave 1 se mantiene. Se actualiza el tiempo verbal para no presentarlo como plataforma vigente: la Universidad de Kioto documenta su sustitución en 2013, y la guía de WebCT describe funciones de administración de cursos. A1-73/A2-III-6."
+        }
+      }
+    }
+  ]
+}
