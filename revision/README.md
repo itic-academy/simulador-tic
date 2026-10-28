@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 401 (IDs 2321–2325). Acumulado: 2.325 preguntas examinadas, 2.263 verificadas (519 vigentes, 1.577 corregidas y 167 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.798 sin revisar individualmente. Hay 1.788 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 402 (IDs 2326–2330). Acumulado: 2.330 preguntas examinadas, 2.268 verificadas (519 vigentes, 1.581 corregidas y 168 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.793 sin revisar individualmente. Hay 1.793 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 ## Lote 401 — 28 de octubre
 
@@ -4073,3 +4073,13 @@ Cotejo temático con ITIC Academy: bloque 33 (SIG y capas/servicios geográficos
 Fuentes: [Oracle, Server-Side Mashups](https://www.oracle.com/technical-resources/articles/javaee/server-side-mashups.html) y [OpenLayers, ejemplo oficial de capa WMS](https://openlayers.org/en/latest/examples/wms-tiled.html); [Gpg4win, funcionalidades de Kleopatra](https://files.gpg4win.org/website-beta/gpg4win/web/features.html); [IBM i 7.4, records, blocks and tape formats](https://www.ibm.com/docs/en/i/7.4?topic=concepts-records-blocks-formats); [Reglamento (UE) 2024/573](https://eur-lex.europa.eu/eli/reg/2024/573/oj) y [ISO 14520-14:2015, agente IG-55](https://www.iso.org/standard/55349.html); [Reglamento (UE) 2016/679, considerando 26 y art. 4.5](https://eur-lex.europa.eu/eli/reg/2016/679/oj). Los documentos y apartados de academia se vinculan en cada registro; la normativa vigente prevalece sobre el temario.
 
 `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 1.290 registros de revisión, cero errores y 10.833 preguntas restantes idénticas al commit original. La pregunta 1289 permanece explícitamente sin respuesta verificada.
+
+## Lote 402 — 28 de octubre
+
+IDs 2326–2330 revisados individualmente con normas y estándares primarios de IEEE, Jakarta Persistence y BOE; se cotejaron los temas de ITIC Academy en Drive y los programas oficiales A1/A2. Los originales completos se conservan en `cambios-lote-402.json`. La 2330 es histórica: el RD 806/2014 fue derogado el 7-11-2024. Acumulado: 2.330 examinadas, 2.268 verificadas (519 vigentes, 1.581 corregidas y 168 históricas), 62 pendientes y 9.793 aún sin revisar individualmente.
+
+- **2326 — IEEE 802.16/WiMAX:** se corrige la afirmación de que solo usa bandas licenciadas; IEEE documenta también bandas exentas, además de la orientación WirelessMAN metropolitana, QoS y modos TDD/FDD según versión. A1-112/A2-IV-11; Academy, bloque 46.
+- **2327 — ENI/NTI:** se añade como respuesta la Política de firma electrónica y de certificados en el ámbito estatal, incluida por RD 203/2021; se distingue de la NTI ya existente sobre la política de firma de la Administración. A1-46/A2-I-9; Academy, bloque 03.
+- **2328 — fibra y Ethernet:** se corrige el alcance de 100GBASE-SR4 sobre OM4 a 100 m conforme a IEEE 802.3bm; se corrigen erratas y unidades de OM2/OM3. A1-110/A2-IV-7; Academy, bloque 42.
+- **2329 — persistencia:** se concreta que el estado se mantiene fuera de la ejecución que lo creó; Jakarta Persistence normaliza la gestión y el mapeo de ese estado a bases de datos. A1-67/A2-III-10; Academy, bloque 30.
+- **2330 — RD 806/2014:** se resuelve la opción múltiple no única sustituyendo el distractor; se señala que el real decreto está derogado por RD 1125/2024, por lo que el reactivo queda histórico. A1-30/A2-I-10; Academy, bloque 10.
