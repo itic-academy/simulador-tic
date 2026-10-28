@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 384 (IDs 2236–2240). Acumulado: 2.240 preguntas examinadas, 2.179 verificadas (507 vigentes, 1.507 corregidas y 165 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.883 sin revisar individualmente. Hay 1.713 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 385 (IDs 2241–2245). Acumulado: 2.245 preguntas examinadas, 2.184 verificadas (509 vigentes, 1.510 corregidas y 165 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.878 sin revisar individualmente. Hay 1.716 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 385 — 28 de octubre
+
+IDs 2241–2245 revisados individualmente. Dos preguntas se confirman y tres se corrigen para delimitar licencia de QR normalizado, precisar virtualización de escritorio y distinguir el alcance de CRL completas. Se conservan los cinco originales íntegros en `cambios-lote-385.json`. Acumulado: 2.245 examinadas, 2.184 verificadas (509 vigentes, 1.510 corregidas y 165 históricas), 61 pendientes y 9.878 todavía sin revisión individual.
+
+- La 2241 corrige la afirmación sobre QR cerrados y de pago: la especificación ISO/IEC 18004:2024 es pública y DENSO WAVE no exige licencia ni tasa para códigos QR conformes con JIS/ISO; la marca y las variantes propietarias se distinguen. A1-50.
+- La 2242 precisa VirtualBox como virtualizador alojado para ejecutar sistemas operativos en máquinas virtuales de escritorio; no se confunde con herramientas de audio, middleware o administración de bases de datos. A1-57/A2-II-1.
+- La 2243 confirma ISO/IEC 14443 para tarjetas de proximidad y distingue ISO/IEC 15693 (vicinity) e ISO/IEC 10536 (close-coupled). A1-81, A2-I-6/IV-12.
+- La 2244 delimita la CRL completa de RFC 5280 al alcance y motivos cubiertos; una CRL «full and complete» es la que cubre todos los certificados del emisor y cualquier motivo. A1-80, A2-I-6/IV-12.
+- La 2245 confirma ISO/IEC 7816-3 para interfaz eléctrica y protocolos de transmisión; la edición de 2006 fue confirmada y tiene la enmienda 1:2025. A1-81, A2-I-6/IV-12.
+
+Cotejo con Drive: bloque 26 (virtualización de hardware/sistemas), bloque 36 (smart cards, identificación y seguridad); para la 2241 se contrastó el índice académico disponible y no se localizó un epígrafe específico de QR, por lo que se clasifica únicamente en A1-50, normalización. Las correspondencias se validaron contra `temario-oficial.json` y programas de las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); no se fuerza una etiqueta A2 cuando no hay encaje directo.
+
+Fuentes primarias: ISO/IEC 18004:2024; DENSO WAVE y Japan Patent Office sobre uso de QR normalizados; Oracle VirtualBox User Guide 7.2; ISO/IEC 14443-1:2018 e ISO/IEC 15693-3:2026; IETF RFC 5280; ISO/IEC 7816-3:2006/Amd 1:2025. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.245 registros de revisión, 61 pendientes y 9.878 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 384 — 28 de octubre
 
