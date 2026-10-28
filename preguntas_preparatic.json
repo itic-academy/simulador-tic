@@ -123097,70 +123097,242 @@
       "id": 2566,
       "bloque": 0,
       "tema": 0,
-      "texto": "Las variables declaradas en un interface deben ser:",
+      "texto": "Según la Java Language Specification SE 25, los campos declarados en el cuerpo de una interfaz son implícitamente:",
       "opciones": [
-        "public, static y final",
-        "private static y final",
-        "Sólo protected",
-        "En un interface no se deben incluir variables"
+        "public, static y final.",
+        "private, static y final.",
+        "protected y final.",
+        "public y abstract."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se sustituye «variables» por campos declarados en una interfaz Java y se cita JLS SE 25 §9.3: todo campo de interfaz es implícitamente public, static y final, aunque no es obligatorio escribir los tres modificadores. A1-67/A2-II-3. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, edición 2026; entorno Java, Java EE/Jakarta EE. El modificador implícito de los campos de interfaz se verifica en JLS SE 25.. El bloque cubre Java/Jakarta; la regla de los campos implícitos se comprueba en la especificación normativa de Java SE 25. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, edición 2026; entorno Java, Java EE/Jakarta EE. El modificador implícito de los campos de interfaz se verifica en JLS SE 25.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, edición 2026; entorno Java, Java EE/Jakarta EE. El modificador implícito de los campos de interfaz se verifica en JLS SE 25.. El bloque cubre Java/Jakarta; la regla de los campos implícitos se comprueba en la especificación normativa de Java SE 25. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta."
+      },
+      "etiquetas": [
+        "Java",
+        "interface",
+        "campos",
+        "public",
+        "static",
+        "final"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/specs/jls/se25/html/jls-9.html#jls-9.3",
+            "referencia": "Oracle, Java Language Specification, Java SE 25, §9.3 Field (Constant) Declarations: every field declaration in an interface is implicitly public, static and final; those modifiers may also be written redundantly."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, edición 2026; entorno Java, Java EE/Jakarta EE. El modificador implícito de los campos de interfaz se verifica en JLS SE 25.; El bloque cubre Java/Jakarta; la regla de los campos implícitos se comprueba en la especificación normativa de Java SE 25."
+          }
+        ],
+        "observaciones": "Se sustituye «variables» por campos declarados en una interfaz Java y se cita JLS SE 25 §9.3: todo campo de interfaz es implícitamente public, static y final, aunque no es obligatorio escribir los tres modificadores. A1-67/A2-II-3. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, edición 2026; entorno Java, Java EE/Jakarta EE. El modificador implícito de los campos de interfaz se verifica en JLS SE 25.. El bloque cubre Java/Jakarta; la regla de los campos implícitos se comprueba en la especificación normativa de Java SE 25. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta."
+      }
     },
     {
       "id": 2567,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué se suele encontrar en una DMZ?",
+      "texto": "Según el patrón de red perimetral descrito por NIST SP 800-41 Rev. 1, ¿qué servicio se sitúa comúnmente en una DMZ cuando debe ser accesible desde Internet?",
       "opciones": [
-        "un proxy de correo",
-        "un cache web",
-        "un server web",
-        "todas las anteriores"
+        "Un servidor web público.",
+        "Una base de datos interna con información sensible.",
+        "Un puesto de trabajo de usuario.",
+        "Un controlador de dominio interno."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La pregunta original trataba proxy de correo, caché y servidor web como si siempre debieran residir en una DMZ; la ubicación depende de función y arquitectura. Se formula ahora sobre el patrón común citado por NIST: situar servidores públicos web/correo en una red perimetral, no en la red interna protegida. A1-125/A2-IV-12. Cotejo curricular: ITIC Academy, bloque 48, Seguridad en Redes y en el Nivel de Aplicación, edición 2026; cortafuegos, seguridad perimetral, VPN y protección de redes.. El bloque encuadra seguridad perimetral y redes; NIST SP 800-41 sustenta el patrón común y aclara que la DMZ no tiene una definición técnica única. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48, Seguridad en Redes y en el Nivel de Aplicación, edición 2026; cortafuegos, seguridad perimetral, VPN y protección de redes.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 48, Seguridad en Redes y en el Nivel de Aplicación, edición 2026; cortafuegos, seguridad perimetral, VPN y protección de redes.. El bloque encuadra seguridad perimetral y redes; NIST SP 800-41 sustenta el patrón común y aclara que la DMZ no tiene una definición técnica única. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta."
+      },
+      "etiquetas": [
+        "DMZ",
+        "zona desmilitarizada",
+        "servidores públicos",
+        "servidor web",
+        "seguridad perimetral"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/41/r1/final",
+            "referencia": "NIST SP 800-41 Rev. 1, Guidelines on Firewalls and Firewall Policy, §3. DMZ: a perimeter network is separated from protected internal networks; it is common to put public-facing web and email servers there. The publication cautions that DMZ has no single technical definition, so the question asks about this common pattern rather than a universal placement rule."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48, Seguridad en Redes y en el Nivel de Aplicación, edición 2026; cortafuegos, seguridad perimetral, VPN y protección de redes.; El bloque encuadra seguridad perimetral y redes; NIST SP 800-41 sustenta el patrón común y aclara que la DMZ no tiene una definición técnica única."
+          }
+        ],
+        "observaciones": "La pregunta original trataba proxy de correo, caché y servidor web como si siempre debieran residir en una DMZ; la ubicación depende de función y arquitectura. Se formula ahora sobre el patrón común citado por NIST: situar servidores públicos web/correo en una red perimetral, no en la red interna protegida. A1-125/A2-IV-12. Cotejo curricular: ITIC Academy, bloque 48, Seguridad en Redes y en el Nivel de Aplicación, edición 2026; cortafuegos, seguridad perimetral, VPN y protección de redes.. El bloque encuadra seguridad perimetral y redes; NIST SP 800-41 sustenta el patrón común y aclara que la DMZ no tiene una definición técnica única. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta."
+      }
     },
     {
       "id": 2568,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes no es uno de los niveles identificados en el modelo lógico de 3 capas?",
+      "texto": "En una arquitectura lógica de aplicación de tres capas —presentación, lógica de negocio y datos—, ¿cuál de las siguientes NO es una capa de la aplicación?",
       "opciones": [
-        "Aplicación",
-        "Presentación",
-        "Red"
+        "Presentación.",
+        "Lógica de negocio o aplicación.",
+        "Acceso y persistencia de datos.",
+        "Red IP de transporte."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 3,
+      "comentarios": "Se aclara que se pregunta por los niveles lógicos de una aplicación de tres capas, no por capas OSI ni por equipos físicos. Presentación, lógica de negocio/aplicación y acceso/persistencia de datos son las tres; la red es infraestructura y no una capa lógica de aplicación. A1-119/A2-II-6. Cotejo curricular: ITIC Academy, bloque 28, Arquitectura SOA y requisitos no funcionales, edición 2026; arquitectura de tres capas con presentación, lógica de negocio y datos.. El bloque presenta explícitamente presentación, lógica de negocio y datos como las tres capas lógicas; Microsoft Learn respalda la distinción entre capas lógicas y equipos físicos. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-119"
+        ],
+        "A2": [
+          "A2-II-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 28, Arquitectura SOA y requisitos no funcionales, edición 2026; arquitectura de tres capas con presentación, lógica de negocio y datos.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 28, Arquitectura SOA y requisitos no funcionales, edición 2026; arquitectura de tres capas con presentación, lógica de negocio y datos.. El bloque presenta explícitamente presentación, lógica de negocio y datos como las tres capas lógicas; Microsoft Learn respalda la distinción entre capas lógicas y equipos físicos. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta."
+      },
+      "etiquetas": [
+        "arquitectura de tres capas",
+        "presentación",
+        "lógica de negocio",
+        "datos",
+        "capas lógicas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/win32/cossdk/using-a-three-tier-architecture-model",
+            "referencia": "Microsoft Learn, Using a Three-Tier Architecture Model: the logical tiers are presentation/user services, middle/business services, and data/data services. Physical distribution across machines can vary; an IP network is infrastructure and not one of the three application tiers."
+          },
+          {
+            "url": "https://drive.google.com/file/d/11qGK4GbJ0QV81HEyboRAy5AZorijJmhs/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 28, Arquitectura SOA y requisitos no funcionales, edición 2026; arquitectura de tres capas con presentación, lógica de negocio y datos.; El bloque presenta explícitamente presentación, lógica de negocio y datos como las tres capas lógicas; Microsoft Learn respalda la distinción entre capas lógicas y equipos físicos."
+          }
+        ],
+        "observaciones": "Se aclara que se pregunta por los niveles lógicos de una aplicación de tres capas, no por capas OSI ni por equipos físicos. Presentación, lógica de negocio/aplicación y acceso/persistencia de datos son las tres; la red es infraestructura y no una capa lógica de aplicación. A1-119/A2-II-6. Cotejo curricular: ITIC Academy, bloque 28, Arquitectura SOA y requisitos no funcionales, edición 2026; arquitectura de tres capas con presentación, lógica de negocio y datos.. El bloque presenta explícitamente presentación, lógica de negocio y datos como las tres capas lógicas; Microsoft Learn respalda la distinción entre capas lógicas y equipos físicos. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta."
+      }
     },
     {
       "id": 2569,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dentro de la familia de estándares ISO 27000, ¿qué norma se encarga de ayudar a las organizaciones a medir, a informar y, por lo tanto, a mejorar sistemáticamente la eficacia de su Sistema de Información de Gestión de la Seguridad (SGSI)?",
+      "texto": "A 28 de octubre de 2026, ¿qué norma ISO/IEC publicada ofrece directrices para monitorizar y medir el rendimiento de seguridad de la información y la eficacia de un SGSI?",
       "opciones": [
-        "ISO 27001.",
-        "ISO 27002.",
-        "ISO 27003.",
-        "ISO 27004."
+        "ISO/IEC 27001:2022.",
+        "ISO/IEC 27002:2022.",
+        "ISO/IEC 27003:2017.",
+        "ISO/IEC 27004:2016."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se especifica la edición publicada vigente consultada: ISO/IEC 27004:2016 orienta la medición y evaluación de la eficacia del SGSI y de sus procesos/controles. ISO muestra DIS 27004 en desarrollo, por lo que se evita presentar el texto de 2016 como edición futura o como norma de requisitos (función de ISO/IEC 27001). Se corrige además «Sistema de Información de Gestión de la Seguridad» por «sistema de gestión de seguridad de la información (SGSI)». A1-48/A2-II-13. Cotejo curricular: ITIC Academy, bloque 22, ENS y Ciberseguridad, edición 2026; gestión de seguridad y SGSI. La función específica de medición se contrasta con ISO/IEC 27004 publicada.. El bloque sitúa SGSI y gestión de seguridad; la identidad de ISO/IEC 27004 como edición publicada, alcance y estado de DIS se verifican en el catálogo oficial ISO. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-48"
+        ],
+        "A2": [
+          "A2-II-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 22, ENS y Ciberseguridad, edición 2026; gestión de seguridad y SGSI. La función específica de medición se contrasta con ISO/IEC 27004 publicada.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 22, ENS y Ciberseguridad, edición 2026; gestión de seguridad y SGSI. La función específica de medición se contrasta con ISO/IEC 27004 publicada.. El bloque sitúa SGSI y gestión de seguridad; la identidad de ISO/IEC 27004 como edición publicada, alcance y estado de DIS se verifican en el catálogo oficial ISO. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta."
+      },
+      "etiquetas": [
+        "ISO/IEC 27000",
+        "ISO/IEC 27004:2016",
+        "SGSI",
+        "medición",
+        "eficacia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/64120.html",
+            "referencia": "ISO/IEC 27004:2016, Monitoring, measurement, analysis and evaluation: ISO identifies this as the published second edition, whose scope covers monitoring and measuring information-security performance and ISMS effectiveness, and analyzing/evaluating results. ISO lists a new DIS 27004 as under development, so the question names the currently published edition rather than implying no revision is underway."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 22, ENS y Ciberseguridad, edición 2026; gestión de seguridad y SGSI. La función específica de medición se contrasta con ISO/IEC 27004 publicada.; El bloque sitúa SGSI y gestión de seguridad; la identidad de ISO/IEC 27004 como edición publicada, alcance y estado de DIS se verifican en el catálogo oficial ISO."
+          }
+        ],
+        "observaciones": "Se especifica la edición publicada vigente consultada: ISO/IEC 27004:2016 orienta la medición y evaluación de la eficacia del SGSI y de sus procesos/controles. ISO muestra DIS 27004 en desarrollo, por lo que se evita presentar el texto de 2016 como edición futura o como norma de requisitos (función de ISO/IEC 27001). Se corrige además «Sistema de Información de Gestión de la Seguridad» por «sistema de gestión de seguridad de la información (SGSI)». A1-48/A2-II-13. Cotejo curricular: ITIC Academy, bloque 22, ENS y Ciberseguridad, edición 2026; gestión de seguridad y SGSI. La función específica de medición se contrasta con ISO/IEC 27004 publicada.. El bloque sitúa SGSI y gestión de seguridad; la identidad de ISO/IEC 27004 como edición publicada, alcance y estado de DIS se verifican en el catálogo oficial ISO. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta."
+      }
     },
     {
       "id": 2570,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué componente no es usado en la construcción de espacio de datos?",
+      "texto": "En la arquitectura europea Simpl-Open para espacios de datos, ¿cuál NO se identifica como componente o servicio de la arquitectura?",
       "opciones": [
-        "Conector.",
-        "Indexación de procesos.",
-        "Catálogo de recursos.",
-        "Intercambio seguro de datos."
+        "Un conector de espacio de datos.",
+        "Un catálogo local o federado de recursos.",
+        "Un servicio de transferencia de datos entre participantes.",
+        "La indexación de procesos de negocio como componente independiente."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 3,
+      "comentarios": "Se acota “espacio de datos” a la arquitectura europea Simpl-Open, porque los espacios de datos no tienen una lista universal y cerrada de componentes. La arquitectura oficial identifica conectores, catálogos de activos/federados y transferencia de datos; «indexación de procesos de negocio» no es uno de los componentes o servicios que enumera. A1-75/A2-I-9. Cotejo curricular: ITIC Academy, bloque 34, Business Intelligence y Big Data, edición 2026; incluye espacios de datos, sus aspectos tecnológicos y organizativos, y protección de datos.; ITIC Academy, bloque 11, RISP, Datos Abiertos y Transparencia, actualización octubre de 2026; reutilización, intercambio de datos y su marco europeo.. El bloque 34 aborda explícitamente espacios de datos y el bloque 11, reutilización/intercambio. Se elige una arquitectura concreta para que el distractor se contraste con los componentes de Simpl-Open y no se convierta en una afirmación universal. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-I-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34, Business Intelligence y Big Data, edición 2026; incluye espacios de datos, sus aspectos tecnológicos y organizativos, y protección de datos.; ITIC Academy, bloque 11, RISP, Datos Abiertos y Transparencia, actualización octubre de 2026; reutilización, intercambio de datos y su marco europeo.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 34, Business Intelligence y Big Data, edición 2026; incluye espacios de datos, sus aspectos tecnológicos y organizativos, y protección de datos.; ITIC Academy, bloque 11, RISP, Datos Abiertos y Transparencia, actualización octubre de 2026; reutilización, intercambio de datos y su marco europeo.. El bloque 34 aborda explícitamente espacios de datos y el bloque 11, reutilización/intercambio. Se elige una arquitectura concreta para que el distractor se contraste con los componentes de Simpl-Open y no se convierta en una afirmación universal. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta."
+      },
+      "etiquetas": [
+        "espacios de datos",
+        "Simpl-Open",
+        "conector",
+        "catálogo federado",
+        "intercambio seguro",
+        "Data Transfer"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://ssg-website-ad5a79.pages.code.europa.eu/resources/architecture/",
+            "referencia": "European Commission, Simpl-Open Functional and Technical Architecture Specifications, D1.3.4 (2025–2026), sections 2.1–2.2: names Data Space Connector, Local Assets Catalogue, Federated Catalogue/Search, Data Transfer and transfer processes as data-space services/components. The architecture contains no component called “indexing of business processes”; this is an example within the specified Simpl-Open architecture, not a claim that all data spaces have a universal component set."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34, Business Intelligence y Big Data, edición 2026; incluye espacios de datos, sus aspectos tecnológicos y organizativos, y protección de datos.; El bloque 34 aborda explícitamente espacios de datos y el bloque 11, reutilización/intercambio. Se elige una arquitectura concreta para que el distractor se contraste con los componentes de Simpl-Open y no se convierta en una afirmación universal."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17B9a1yxMFgHCHEyVVBi0PG-cdCYABVvd/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 11, RISP, Datos Abiertos y Transparencia, actualización octubre de 2026; reutilización, intercambio de datos y su marco europeo.; El bloque 34 aborda explícitamente espacios de datos y el bloque 11, reutilización/intercambio. Se elige una arquitectura concreta para que el distractor se contraste con los componentes de Simpl-Open y no se convierta en una afirmación universal."
+          }
+        ],
+        "observaciones": "Se acota “espacio de datos” a la arquitectura europea Simpl-Open, porque los espacios de datos no tienen una lista universal y cerrada de componentes. La arquitectura oficial identifica conectores, catálogos de activos/federados y transferencia de datos; «indexación de procesos de negocio» no es uno de los componentes o servicios que enumera. A1-75/A2-I-9. Cotejo curricular: ITIC Academy, bloque 34, Business Intelligence y Big Data, edición 2026; incluye espacios de datos, sus aspectos tecnológicos y organizativos, y protección de datos.; ITIC Academy, bloque 11, RISP, Datos Abiertos y Transparencia, actualización octubre de 2026; reutilización, intercambio de datos y su marco europeo.. El bloque 34 aborda explícitamente espacios de datos y el bloque 11, reutilización/intercambio. Se elige una arquitectura concreta para que el distractor se contraste con los componentes de Simpl-Open y no se convierta en una afirmación universal. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; la academia aporta encuadre, no sustituye las fuentes primarias que sustentan la respuesta."
+      }
     },
     {
       "id": 2571,
