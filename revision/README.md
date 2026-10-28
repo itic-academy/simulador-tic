@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 382 (IDs 2226–2230). Acumulado: 2.230 preguntas examinadas, 2.169 verificadas (504 vigentes, 1.501 corregidas y 164 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.893 sin revisar individualmente. Hay 1.706 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 383 (IDs 2231–2235). Acumulado: 2.235 preguntas examinadas, 2.174 verificadas (505 vigentes, 1.505 corregidas y 164 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.888 sin revisar individualmente. Hay 1.710 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 383 — 28 de octubre
+
+IDs 2231–2235 revisados individualmente: una respuesta se confirma y cuatro preguntas se corrigen para precisar formatos AJAX, alcance de .NET, nombre RSA y alcance probatorio de la firma digital. Se conservan los cinco originales íntegros en `cambios-lote-383.json`. Acumulado: 2.235 examinadas, 2.174 verificadas (505 vigentes, 1.505 corregidas y 164 históricas), 61 pendientes y 9.888 sin revisión individual.
+
+- La 2231 mantiene como falsa la exclusividad de XML: Ajax admite otros formatos, hoy comúnmente JSON. A1-65/77, A2-III-12.
+- La 2232 conserva “Todas las anteriores”, pero cambia C++ por C# para que el ejemplo de escritorio corresponda inequívocamente a .NET; ASP.NET permite web y plataformas formativas. A1-66/A2-III-11.
+- La 2233 confirma RSA como criptografía de clave pública, distingue los cifrados simétricos de las alternativas y corrige la errata “Adelman” por Adleman. A1-79/A2-IV-12.
+- La 2234 precisa que la firma verifica integridad y uso de la clave privada correspondiente; la identidad del titular requiere una asociación de confianza como un certificado. No proporciona confidencialidad. A1-79/80, A2-I-6/IV-12.
+- La 2235 confirma que una superclave identifica unívocamente una tupla y puede incluir atributos redundantes; la mínima es una clave candidata. A1-64/A2-III-4.
+
+Cotejo con Drive: bloque 30 (Ajax, desarrollo web, .NET y tecnologías de cliente), bloque 36 (criptografía, firma e identidad) y bloque 29 (modelo relacional y claves). Correspondencias cotejadas con `temario-oficial.json` y las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Los documentos académicos contextualizan el temario; las respuestas se sustentan en MDN, Microsoft Learn, NIST, eIDAS y materiales universitarios de bases de datos.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.235 registros de revisión, 61 pendientes y 9.888 preguntas todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 382 — 28 de octubre
 
