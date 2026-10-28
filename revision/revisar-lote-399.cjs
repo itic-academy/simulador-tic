@@ -1,0 +1,41 @@
+const apply = require('./aplicar-lote.cjs');
+
+const sources = {
+  sip: [
+    { url: 'https://www.rfc-editor.org/rfc/rfc3261.html', referencia: 'IETF RFC 3261, §§1, 4, 7.1–7.2: SIP es un protocolo de control de capa de aplicación; define mensajes de solicitud y respuesta y transacciones entre cliente y servidor. El RFC sigue siendo la especificación base de SIP, con extensiones posteriores.' },
+    { url: 'https://www.rfc-editor.org/rfc/rfc2327.html', referencia: 'IETF RFC 2327: define SDP (Session Description Protocol), no SIP; RFC 2327 fue obsoleto por RFC 4566, que a su vez fue obsoleto por RFC 8866.' },
+    { url: 'https://www.rfc-editor.org/rfc/rfc8866.html', referencia: 'IETF RFC 8866: especificación vigente de SDP que obsoleta RFC 4566; sirve para confirmar la evolución de RFC 2327.' }
+  ],
+  revoke: { url: 'https://www.postgresql.org/docs/current/sql-revoke.html', referencia: 'PostgreSQL 18, comando REVOKE: retira privilegios concedidos previamente. La revocación de una concesión concreta no elimina filas; privilegios heredados desde PUBLIC u otros roles pueden seguir disponibles.' },
+  html: { url: 'https://html.spec.whatwg.org/multipage/dom.html#elements', referencia: 'WHATWG HTML Living Standard, §3.2.1: el elemento ol representa una lista ordenada.' },
+  magerit: [
+    { url: 'https://www.hacienda.gob.es/sgt/catalogo_sefp/048_magerit_v3_libro3.pdf', referencia: 'MAGERIT v3, Libro III, Guía de técnicas, § «Impacto acumulado de una amenaza sobre un activo»: el impacto acumulado es la pérdida de valor acumulado; en el modelo cuantitativo, i = v × d, donde v es el valor acumulado y d la degradación.' },
+    { url: 'https://www.hacienda.gob.es/sgt/catalogo_sefp/046_magerit_v3_libro1_metodo.pdf', referencia: 'MAGERIT v3, Libro I, §3.1.3: el impacto acumulado tiene en cuenta el valor acumulado del activo y las amenazas; el valor acumulado incorpora el valor propio y las dependencias de activos superiores.' }
+  ],
+  wcag: { url: 'https://www.w3.org/TR/WCAG21/', referencia: 'W3C Recommendation, Web Content Accessibility Guidelines (WCAG) 2.1, introducción: los cuatro principios son Perceivable, Operable, Understandable y Robust.' }
+};
+
+const academy = {
+  protocols: { url: 'https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk', label: 'ITIC Academy, bloque 43, Protocolos, versión 2026.1: incluye el tema A1-116 y el tema A2-C12, NGN/IMS, VoIP y comunicaciones unificadas.' },
+  db: { url: 'https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk', label: 'ITIC Academy, bloque 29, Bases de datos, SQL y modelado de datos, versión 2026.1: incluye A1-63/64 y A2-T5, SQL y sistemas relacionales.' },
+  web: { url: 'https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk', label: 'ITIC Academy, bloque 30, Tecnologías de Sistemas de la Información, versión 2026.1: HTML, UX y accesibilidad web; incluye A1-65/77 y A2-T9/D12.' },
+  risk: { url: 'https://drive.google.com/file/d/1XG92ItmeycvU5yzWzg2pm10gQ8fVrpJ8/view?usp=drivesdk', label: 'ITIC Academy, Tema 048, Análisis y gestión de riesgos: contempla MAGERIT v3 como metodología de referencia.' }
+};
+
+const records = [
+  [2311, [116], ['IV-14'], ['SIP', 'VoIP', 'RFC 3261', 'SDP', 'RFC 2327'], sources.sip, 'La opción incorrecta es la que atribuye SIP al RFC 2327: ese RFC define SDP, protocolo complementario para describir sesiones. SIP se especifica en RFC 3261 y es de control de capa de aplicación; sus transacciones intercambian solicitudes y respuestas SIP entre cliente y servidor. Se precisa que la similitud transaccional con HTTP no convierte a ambos protocolos en equivalentes. El RFC 2327 quedó obsoleto en la cadena de especificaciones de SDP, actualmente RFC 8866. Cotejo con ITIC Academy, bloque 43, y los temas oficiales A1-116/A2-IV-14.', 'corregida'],
+  [2312, [64], ['II-5'], ['SQL', 'PostgreSQL', 'REVOKE', 'privilegios', 'DELETE'], sources.revoke, 'Se presupone PostgreSQL y que administrators es una tabla y user el rol al que se concedió directamente el privilegio. REVOKE DELETE revoca esa concesión; no deshace borrados ni elimina datos o el rol. PostgreSQL advierte que el permiso podría seguir efectivo si también llega por PUBLIC u otra pertenencia de rol. Cotejo con ITIC Academy, bloque 29, apartado de SQL y control de acceso, y con A1-64/A2-II-5.', 'corregida'],
+  [2313, [77], ['III-12'], ['HTML', 'ol', 'listas ordenadas', 'WHATWG'], [sources.html], 'Se normaliza «línea» y se explicita que el elemento ol representa una lista ordenada según la semántica de HTML; no se confunde el orden con un formato visual concreto de numeración. Cotejo con ITIC Academy, bloque 30, epígrafes HTML y lenguajes de marca, y con A1-77/A2-III-12.', 'corregida'],
+  [2314, [47], ['II-10'], ['MAGERIT v3', 'impacto acumulado', 'valor acumulado', 'degradación'], sources.magerit, 'La clave original se confirma al distinguir el valor propio del valor acumulado. MAGERIT v3 define el impacto acumulado cuantitativo como i = v × d, donde v es el valor acumulado, que incorpora las dependencias de activos superiores, y d la degradación. Conocer solo el valor propio de 1.000.000 y una degradación del 70 % permitiría calcular un impacto directo de 700.000, pero no el acumulado sin el valor acumulado del activo. Se reformula el enunciado para que esa distinción sea explícita. Cotejo con ITIC Academy, Tema 048, y A1-47/A2-II-10.', 'corregida'],
+  [2315, [44], ['III-14'], ['WCAG 2.1', 'accesibilidad web', 'principios', 'W3C'], [sources.wcag], 'Los cuatro principios de WCAG 2.1 son perceptible (Perceivable), operable (Operable), comprensible (Understandable) y robusto (Robust). «Repetible» no es uno de ellos. Se mantiene la referencia expresa a 2.1 porque la pregunta trata esa versión, sin inferir de ello que sea la versión más reciente. Cotejo con ITIC Academy, bloque 30, apartado Responsive, UX y accesibilidad; la lista normativa se valida con W3C y se asigna a A1-44/A2-III-14.', 'corregida']
+];
+
+const edits = {
+  2311: { texto: 'Señale la afirmación INCORRECTA sobre SIP (Session Initiation Protocol):', opciones: [[0, 'SIP está definido por el RFC 2327.'], [1, 'Es un protocolo de control de la capa de aplicación.'], [2, 'Organiza intercambios en transacciones con solicitudes del cliente y respuestas del servidor, de forma comparable —sin ser equivalente— al modelo de HTTP.'], [3, 'Las solicitudes y respuestas del protocolo se transportan como mensajes SIP.']], respuesta_correcta: 0 },
+  2312: { texto: 'En PostgreSQL, suponiendo que administrators es una tabla y user un rol al que se concedió directamente el privilegio, ¿qué efecto tiene «REVOKE DELETE ON administrators FROM user»?', opciones: [[0, 'Deshace las operaciones de borrado que user realizó anteriormente.'], [1, 'Revoca a user la concesión directa del privilegio DELETE sobre administrators; otro camino de concesión podría mantenerle el acceso.'], [2, 'Otorga a user permisos de administrador.'], [3, 'Revoca todos los privilegios de user y borra la tabla administrators.']], respuesta_correcta: 1 },
+  2313: { texto: 'Según la semántica del estándar HTML, ¿qué representa el elemento <code>&lt;ol&gt;</code>?', opciones: [[0, 'Una lista no ordenada de elementos.'], [1, 'Una lista descriptiva de términos y sus definiciones.'], [2, 'Una lista ordenada de elementos.'], [3, 'Un salto de línea.']], respuesta_correcta: 2 },
+  2314: { texto: 'En el modelo cuantitativo de MAGERIT v3, se conoce el valor propio de un activo (1.000.000) y la degradación que causaría una amenaza (70 %). Para calcular el impacto acumulado de esa amenaza, ¿qué dato adicional es imprescindible?', opciones: [[0, 'Ninguno: el impacto acumulado es necesariamente 700.000.'], [1, 'El valor de la amenaza, sumado al valor propio del activo.'], [2, 'La probabilidad de la amenaza, que sustituye al valor del activo.'], [3, 'El valor acumulado del activo, que incorpora el valor propio y las dependencias de otros activos.']], respuesta_correcta: 3 },
+  2315: { texto: '¿Cuál de estos términos NO corresponde a uno de los cuatro principios de WCAG 2.1?', opciones: [[0, 'Repetible.'], [1, 'Operable.'], [2, 'Comprensible.'], [3, 'Robusto.']], respuesta_correcta: 0 }
+};
+
+apply({ numero: '399', fecha: '2026-10-28', records, edits });
