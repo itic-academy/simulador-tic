@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 357 (IDs 2101–2105). Acumulado: 2.105 preguntas examinadas, 2.049 verificadas (468 vigentes, 1.426 corregidas y 155 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.018 sin revisar individualmente. Hay 1.618 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 358 (IDs 2106–2110). Acumulado: 2.110 preguntas examinadas, 2.054 verificadas (470 vigentes, 1.428 corregidas y 156 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.013 sin revisar individualmente. Hay 1.621 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 358 — 28 de octubre
+
+IDs 2106–2110 revisados individualmente con Facturae, BOE, la especificación histórica SET, el RFC de IETF y documentación oficial de pasarelas/carteras digitales. Tres preguntas se reformularon para precisar el alcance o corregir el umbral, una queda confirmada y SET se conserva como contenido histórico. Se guardan los originales completos en `cambios-lote-358.json`. Acumulado: 2.110 examinadas, 2.054 verificadas (470 vigentes, 1.428 corregidas y 156 históricas), 56 pendientes (27 de fuente, 29 de ambigüedad), 1.621 cambios de contenido y 10.013 preguntas aún sin revisión individual.
+
+- La 2106 confirma que Facturae 3.2.x es estructurado en XML y usa firma XAdES; la Orden PRE/2971/2007 vincula el perfil de Facturae con XML Advanced Electronic Signatures. A1-78/A2-I-10.
+- La 2107 sustituye una opción falsa de 3.000 € por la pregunta directa: la Ley 25/2013 permite exclusión reglamentaria de la obligación hasta 5.000 €. También se evita afirmar que solo la firma avanzada puede emplearse, pues la ley contempla el sello avanzado bajo sus requisitos. A1-78/A2-I-10.
+- La 2108 queda como histórica: SET 1.0 ofrecía confidencialidad, autenticación e integridad para pagos con tarjeta; la especificación advierte que el no repudio no se provee automáticamente. A1-78.
+- La 2109 delimita la respuesta a la política Facturae v3.1: la referencia a la factura XML usa la transformación XMLDSig `enveloped-signature`, dentro de una firma XAdES-EPES. A1-78/A2-I-10.
+- La 2110 distingue Apple Pay como cartera/método de pago de las pasarelas o plataformas de comercio: Apple documenta su integración a través de PSP y plataformas, mientras Redsys, Stripe y PayPal Payflow ofrecen servicios de pasarela/procesamiento. A1-78.
+
+Cotejo curricular con [ITIC Academy, bloque 35 Comercio electrónico y factura electrónica, versión 2026.2](https://drive.google.com/file/d/1FPkzhljZaHbxADbo36QNm9U9gwGy7lIt/view?usp=drivesdk), §§3–4 y 7–8; correspondencia A1 Tema 78 y A2-I-10 verificada frente a [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La academia se usa solo para alcance curricular.
+
+Fuentes: [Facturae, formato y firma](https://www.facturae.gob.es/formato) y [políticas de firma](https://www.facturae.gob.es/formato/politicas-firma-electronica); [Orden PRE/2971/2007, art. 4 y anexo](https://www.boe.es/eli/es/o/2007/10/05/pre2971); [Ley 25/2013, arts. 4–5](https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722); [Facturae v3.1, política oficial](https://www.facturae.gob.es/politica_de_firma_formato_facturae/politica_de_firma_formato_facturae_v3_1.pdf); [IETF RFC 2828, definición de SET](https://www.rfc-editor.org/rfc/rfc2828.html) y [SET Specification, Book 2, sección Services](https://citeseerx.ist.psu.edu/document?doi=0bff042534505546731830e3a58843e01ba65c86&repid=rep1&type=pdf); [Apple Developer, plataformas y proveedores para Apple Pay](https://developer.apple.com/apple-pay/payment-platforms/); [Redsys, pasarela](https://pagosonline.redsys.es/desarrolladores-inicio/documentacion-tipos-de-integracion/modulos-pago/); [PayPal Developer, Payflow Gateway](https://developer.paypal.com/api/nvp-soap/payflow/payflow-gateway/); [Stripe, pasarelas](https://stripe.com/resources/more/payment-gateways-101).
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.110 registros de revisión, 56 pendientes y 10.013 preguntas pendientes de revisión individual. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 357 — 28 de octubre
 
@@ -32,7 +48,7 @@ Cotejo curricular con [ITIC Academy, bloque 35 Comercio electrónico y factura e
 
 Fuentes: [Bitcoin white paper](https://bitcoin.org/bitcoin.pdf) y [FAQ oficial](https://bitcoin.org/en/faq); [Ley 25/2013, arts. 5–6 y DA 2.ª/5.ª](https://www.boe.es/eli/es/l/2013/12/27/25/con); [formato oficial Facturae](https://www.facturae.gob.es/formato); [PAe/CTT, FACe](https://administracionelectronica.gob.es/ctt/face) y [portal histórico con aviso de migración](https://arta.face.gob.es/), [FACe Proveedores](https://proveedores.face.gob.es/inicio); [Orden EHA/2027/2007, art. 4 y anexo VII bis, texto consolidado](https://www.boe.es/eli/es/o/2007/06/28/eha2027/con); [AEAT, qué es el NRC](https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/pago-impuestos-deudas-tasas-ayuda-tecnica/que-nrc.html); [PAe/CTT, servicio de pasarela de pagos y operaciones NRC](https://administracionelectronica.gob.es/ctt/pagos/infoadicional).
 
-`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.105 registros de revisión y 10.018 preguntas pendientes de revisión individual. El inventario estructural no acredita revisión de contenido.
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote 356: 12.123 preguntas estructuralmente válidas, 2.100 registros de revisión y 10.023 preguntas pendientes de revisión individual. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 355 — 28 de octubre
 
