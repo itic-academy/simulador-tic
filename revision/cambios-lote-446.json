@@ -1,0 +1,339 @@
+{
+  "fecha": "2026-10-28",
+  "alcance": "IDs 2541–2545; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 2541,
+      "original": {
+        "id": 2541,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿En qué se diferencia la memoria flash de tipo NOR y la de tipo NAND?",
+        "opciones": [
+          "La de NAND es menos fiable.",
+          "La de tipo NOR tiene un coste mayor.",
+          "Las de tipo NAND sólo permiten acceso secuencial (más orientado a dispositivos de almacenamiento masivo) frente a las memorias flash basadas en NOR que permiten lectura de acceso aleatorio.",
+          "Todas son correctas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2541,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué diferencia de acceso caracteriza habitualmente a las memorias flash NOR y NAND?",
+        "opciones": [
+          "NOR admite lecturas aleatorias direccionables y puede permitir XIP; NAND se lee por páginas y normalmente no ejecuta código directamente desde el chip.",
+          "NOR solo puede leerse por páginas; NAND permite ejecutar código directamente desde cualquier dirección.",
+          "NOR y NAND tienen idéntica granularidad de lectura; solo se diferencian por ser volátil o no volátil.",
+          "NAND es siempre menos fiable y más cara que NOR, con independencia del tipo de celda y del producto."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La afirmación original “NAND es menos fiable” no es universal: la fiabilidad depende, entre otros factores, del tipo de celda y del dispositivo. Tampoco es exacto resumir NAND como “solo secuencial”. La distinción técnica evaluada aquí es la granularidad de lectura: NOR admite lecturas aleatorias direccionables y puede ejecutar código directamente (XIP); NAND se accede por páginas y normalmente requiere copiar el código a RAM para ejecutarlo. Densidad, coste y fiabilidad son consideraciones de producto, no una regla absoluta para todos los chips. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); incluye A1-56 y A2-T1/C5, y un apartado específico sobre contenedores y Kubernetes.; la academia sitúa memoria flash dentro del bloque oficial de almacenamiento; el detalle NOR/NAND se verificó con documentación de Microchip y Micron. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-II-1",
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); incluye A1-56 y A2-T1/C5, y un apartado específico sobre contenedores y Kubernetes.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); incluye A1-56 y A2-T1/C5, y un apartado específico sobre contenedores y Kubernetes.; la academia sitúa memoria flash dentro del bloque oficial de almacenamiento; el detalle NOR/NAND se verificó con documentación de Microchip y Micron. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta."
+        },
+        "etiquetas": [
+          "memoria flash",
+          "NOR",
+          "NAND",
+          "granularidad de acceso",
+          "acceso aleatorio",
+          "XIP"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.microchip.com/en-us/products/memory/serial-and-parallel-flash/getting-started",
+              "referencia": "Microchip Technology, “NOR vs. NAND Flash”: NOR provides random-address reads similar to RAM and supports execute-in-place; NAND lacks a random-address external bus and is read in pages. This distinguishes access granularity without asserting that all NAND is less reliable or that NAND is strictly sequential in every system."
+            },
+            {
+              "url": "https://assets.micron.com/adobe/assets/urn%3Aaaid%3Aaem%3Ae98bc653-e42d-45a7-9b8c-03cb3d488f05/original/as/nor-nand-flash-guide.pdf",
+              "referencia": "Micron, NOR and NAND Flash Guide: NOR has fast random access and is suitable for code storage; NAND covers multiple cell technologies (SLC/MLC/TLC/QLC) with differing reliability/cost tradeoffs and requires controller functions such as ECC, bad-block management and wear leveling. Reliability is not a categorical NOR-versus-NAND truth independent of device and cell type."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); incluye A1-56 y A2-T1/C5, y un apartado específico sobre contenedores y Kubernetes.; la academia sitúa memoria flash dentro del bloque oficial de almacenamiento; el detalle NOR/NAND se verificó con documentación de Microchip y Micron."
+            }
+          ],
+          "observaciones": "La afirmación original “NAND es menos fiable” no es universal: la fiabilidad depende, entre otros factores, del tipo de celda y del dispositivo. Tampoco es exacto resumir NAND como “solo secuencial”. La distinción técnica evaluada aquí es la granularidad de lectura: NOR admite lecturas aleatorias direccionables y puede ejecutar código directamente (XIP); NAND se accede por páginas y normalmente requiere copiar el código a RAM para ejecutarlo. Densidad, coste y fiabilidad son consideraciones de producto, no una regla absoluta para todos los chips. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); incluye A1-56 y A2-T1/C5, y un apartado específico sobre contenedores y Kubernetes.; la academia sitúa memoria flash dentro del bloque oficial de almacenamiento; el detalle NOR/NAND se verificó con documentación de Microchip y Micron. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta."
+        }
+      }
+    },
+    {
+      "id": 2542,
+      "original": {
+        "id": 2542,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "De entre las siguientes opciones, ¿cuál es una red privada de telefonía móvil que permite a los integrantes de un colectivo limitado mantener entre ellos comunicaciones bidireccionales de voz y datos en tiempo real vía radio?",
+        "opciones": [
+          "Trunking",
+          "Paging",
+          "Tethering",
+          "Phubbing"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2542,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un sistema de radiocomunicación móvil privada troncalizada (trunking), ¿qué función distingue la gestión troncalizada de los canales?",
+        "opciones": [
+          "Asignar dinámicamente un canal compartido a la llamada o grupo autorizado y liberarlo al terminar.",
+          "Reservar un canal fijo y exclusivo para cada usuario, sin reasignarlo.",
+          "Transmitir mensajes unidireccionales de aviso sin canal de retorno.",
+          "Compartir la conexión de datos de un teléfono con otros terminales (tethering)."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Trunking designa sistemas privados/profesionales de radiocomunicación móvil que comparten un conjunto de canales y asignan uno dinámicamente a cada llamada/grupo; después se libera para otros usuarios. “Telefonía móvil” podía sugerir una red celular pública, y la descripción no aclaraba el mecanismo distintivo. Se formula como sistema PMR troncalizado, no como servicio de telefonía celular. Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, actualización 2026; encuadre de radiocomunicación y sistemas móviles.; el bloque encuadra radiocomunicación y comunicaciones móviles; la asignación dinámica de canales se verifica con reguladores de telecomunicaciones. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-123"
+          ],
+          "A2": [
+            "A2-IV-15"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, actualización 2026; encuadre de radiocomunicación y sistemas móviles.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, actualización 2026; encuadre de radiocomunicación y sistemas móviles.; el bloque encuadra radiocomunicación y comunicaciones móviles; la asignación dinámica de canales se verifica con reguladores de telecomunicaciones. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta."
+        },
+        "etiquetas": [
+          "trunking",
+          "PMR",
+          "radiocomunicación móvil privada",
+          "asignación dinámica de canales",
+          "grupo de usuarios"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.trai.gov.in/sites/default/files/2024-09/CP_PMRTS_08022018.pdf",
+              "referencia": "Telecom Regulatory Authority of India, consultation on Public Mobile Radio Trunking Service (PMRTS): describes trunked private mobile radio used by organizations and groups, distinguishing it from public cellular mobile telephone service."
+            },
+            {
+              "url": "https://www.tcra.go.tz/uploads/text-editor/files/RADIO%20FREQUENCY%20BAND%20PLAN%20FOR%20PRIVATE%20MOBILE%20RADIOS%28PMR%29_1717622555.pdf",
+              "referencia": "Tanzania Communications Regulatory Authority, Radio Frequency Band Plan for Private Mobile Radio, definition “Trunked PMR”: radio channels are dynamically assigned to users as needed and shared for the call, then returned to the pool."
+            },
+            {
+              "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, actualización 2026; encuadre de radiocomunicación y sistemas móviles.; el bloque encuadra radiocomunicación y comunicaciones móviles; la asignación dinámica de canales se verifica con reguladores de telecomunicaciones."
+            }
+          ],
+          "observaciones": "Trunking designa sistemas privados/profesionales de radiocomunicación móvil que comparten un conjunto de canales y asignan uno dinámicamente a cada llamada/grupo; después se libera para otros usuarios. “Telefonía móvil” podía sugerir una red celular pública, y la descripción no aclaraba el mecanismo distintivo. Se formula como sistema PMR troncalizado, no como servicio de telefonía celular. Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, actualización 2026; encuadre de radiocomunicación y sistemas móviles.; el bloque encuadra radiocomunicación y comunicaciones móviles; la asignación dinámica de canales se verifica con reguladores de telecomunicaciones. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta."
+        }
+      }
+    },
+    {
+      "id": 2543,
+      "original": {
+        "id": 2543,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La técnica criptográfica basada en un conjunto de métodos que permiten tener comunicación segura entre las partes, siempre y cuando previamente ambas partes hayan intercambiado una clave privada, se denomina:",
+        "opciones": [
+          "Criptografía asimétrica.",
+          "Criptografía simétrica.",
+          "Criptografía de clave pública.",
+          "Criptografía paralela."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2543,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denomina la criptografía que utiliza la misma clave secreta compartida para cifrar y descifrar?",
+        "opciones": [
+          "Criptografía asimétrica.",
+          "Criptografía simétrica.",
+          "Criptografía de clave pública.",
+          "Criptografía paralela."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "En criptografía simétrica la misma clave secreta compartida se usa para cifrar y descifrar (operación e inversa). “Clave privada” se reserva normalmente para la clave privada de un par asimétrico; por ello se reemplaza por “clave secreta compartida” y se pregunta directamente por el uso de la clave. Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, actualización 2026; criptografía, seguridad lógica y técnicas criptográficas.; el bloque encuadra criptografía y seguridad de redes; la definición de clave simétrica se verifica con el glosario NIST. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-125"
+          ],
+          "A2": [
+            "A2-II-13",
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, actualización 2026; criptografía, seguridad lógica y técnicas criptográficas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, actualización 2026; criptografía, seguridad lógica y técnicas criptográficas.; el bloque encuadra criptografía y seguridad de redes; la definición de clave simétrica se verifica con el glosario NIST. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta."
+        },
+        "etiquetas": [
+          "criptografía simétrica",
+          "clave secreta compartida",
+          "cifrado",
+          "descifrado"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/glossary/term/symmetric_key",
+              "referencia": "NIST CSRC Glossary, “symmetric key”: one secret key performs a cryptographic operation and its inverse; the term is contrasted with the private key in an asymmetric/public-key pair. The question uses “shared secret key,” avoiding the ambiguous expression “private key.”"
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, actualización 2026; criptografía, seguridad lógica y técnicas criptográficas.; el bloque encuadra criptografía y seguridad de redes; la definición de clave simétrica se verifica con el glosario NIST."
+            }
+          ],
+          "observaciones": "En criptografía simétrica la misma clave secreta compartida se usa para cifrar y descifrar (operación e inversa). “Clave privada” se reserva normalmente para la clave privada de un par asimétrico; por ello se reemplaza por “clave secreta compartida” y se pregunta directamente por el uso de la clave. Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, actualización 2026; criptografía, seguridad lógica y técnicas criptográficas.; el bloque encuadra criptografía y seguridad de redes; la definición de clave simétrica se verifica con el glosario NIST. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta."
+        }
+      }
+    },
+    {
+      "id": 2544,
+      "original": {
+        "id": 2544,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale cuál de las siguientes herramientas es un orquestador de contenedores (esto es, permite gestionar los propios contenedores y el despliegue y gestión de las aplicaciones que alojan):",
+        "opciones": [
+          "Puppet",
+          "Jenkins",
+          "Docker",
+          "Kubernetes"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2544,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué plataforma gestiona cargas de trabajo en contenedores y automatiza su despliegue y escalado mediante configuración declarativa?",
+        "opciones": [
+          "Puppet, herramienta de gestión de configuración.",
+          "Jenkins, servidor de automatización de integración y entrega.",
+          "Kubernetes, plataforma de gestión de cargas de trabajo en contenedores.",
+          "Docker Engine, motor para crear y ejecutar contenedores."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Kubernetes gestiona cargas de trabajo y servicios en contenedores mediante configuración declarativa y automatización, incluido su despliegue y escalado. Se acota el enunciado a estas funciones: Docker también ofrece componentes de contenedores y herramientas de orquestación en otros modos/productos, así que no se debe inferir que todo producto llamado Docker sea incapaz de orquestar. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); incluye A1-56 y A2-T1/C5, y un apartado específico sobre contenedores y Kubernetes.; el bloque contiene una sección específica de contenedores y Kubernetes; despliegue y escalado se comprueban con la documentación oficial Kubernetes. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-55"
+          ],
+          "A2": [
+            "A2-II-7"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); incluye A1-56 y A2-T1/C5, y un apartado específico sobre contenedores y Kubernetes.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); incluye A1-56 y A2-T1/C5, y un apartado específico sobre contenedores y Kubernetes.; el bloque contiene una sección específica de contenedores y Kubernetes; despliegue y escalado se comprueban con la documentación oficial Kubernetes. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta."
+        },
+        "etiquetas": [
+          "contenedores",
+          "Kubernetes",
+          "orquestación",
+          "despliegue",
+          "escalado"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://kubernetes.io/docs/concepts/overview/",
+              "referencia": "Kubernetes official documentation, Concepts/Overview: Kubernetes is a platform for managing containerized workloads and services through declarative configuration and automation; it supports deployment, scaling and lifecycle management. This is the uniquely correct option among the listed tools."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); incluye A1-56 y A2-T1/C5, y un apartado específico sobre contenedores y Kubernetes.; el bloque contiene una sección específica de contenedores y Kubernetes; despliegue y escalado se comprueban con la documentación oficial Kubernetes."
+            }
+          ],
+          "observaciones": "Kubernetes gestiona cargas de trabajo y servicios en contenedores mediante configuración declarativa y automatización, incluido su despliegue y escalado. Se acota el enunciado a estas funciones: Docker también ofrece componentes de contenedores y herramientas de orquestación en otros modos/productos, así que no se debe inferir que todo producto llamado Docker sea incapaz de orquestar. Cotejo curricular: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1 (31-08-2026); incluye A1-56 y A2-T1/C5, y un apartado específico sobre contenedores y Kubernetes.; el bloque contiene una sección específica de contenedores y Kubernetes; despliegue y escalado se comprueban con la documentación oficial Kubernetes. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta."
+        }
+      }
+    },
+    {
+      "id": 2545,
+      "original": {
+        "id": 2545,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La dirección de los flujos entre almacén y proceso en un DFD (Diagrama de Flujos de Datos) puede ser:",
+        "opciones": [
+          "De consulta",
+          "De actualización",
+          "De diálogo",
+          "Todas las anteriores"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2545,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la notación de DFD de MÉTRICA v3, ¿qué tipos de flujos se definen entre un proceso y un almacén de datos?",
+        "opciones": [
+          "De consulta.",
+          "De actualización.",
+          "De diálogo.",
+          "Todos los anteriores."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "En la notación DFD de MÉTRICA v3, entre un proceso y un almacén hay flujos de consulta (lectura/consulta de valores), de actualización (alta, modificación o eliminación) y de diálogo, que combina consulta y actualización. Por tanto, las tres opciones corresponden a tipos definidos en esa metodología. Se añade el marco MÉTRICA v3 al enunciado porque la denominación de estos tres tipos es metodológica. Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, versión 2026.1 (18-09-2026); incluye análisis estructurado y MÉTRICA.; el bloque cubre análisis estructurado y MÉTRICA; las tres clases de flujo se cotejan con la técnica DFD oficial de MÉTRICA v3. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-90",
+            "A1-95"
+          ],
+          "A2": [
+            "A2-III-3"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, versión 2026.1 (18-09-2026); incluye análisis estructurado y MÉTRICA.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, versión 2026.1 (18-09-2026); incluye análisis estructurado y MÉTRICA.; el bloque cubre análisis estructurado y MÉTRICA; las tres clases de flujo se cotejan con la técnica DFD oficial de MÉTRICA v3. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta."
+        },
+        "etiquetas": [
+          "MÉTRICA v3",
+          "diagramas de flujo de datos",
+          "DFD",
+          "flujo de consulta",
+          "flujo de actualización",
+          "flujo de diálogo",
+          "almacén de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ada7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+              "referencia": "Secretaría General de Administración Digital / Ministerio de Administraciones Públicas, MÉTRICA v3, Técnicas, section “Diagrama de Flujo de Datos”: defines flows between a process and a data store as consulta, actualización and diálogo; diálogo represents a query plus an update. All three therefore apply."
+            },
+            {
+              "url": "https://docs.google.com/document/d/1za_7e_LlvUEpja7VJyYElIgRIPu_AbE3/edit?usp=drivesdk&ouid=107088454749630873035&rtpof=true&sd=true",
+              "referencia": "ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, versión 2026.1 (18-09-2026); incluye análisis estructurado y MÉTRICA.; el bloque cubre análisis estructurado y MÉTRICA; las tres clases de flujo se cotejan con la técnica DFD oficial de MÉTRICA v3."
+            }
+          ],
+          "observaciones": "En la notación DFD de MÉTRICA v3, entre un proceso y un almacén hay flujos de consulta (lectura/consulta de valores), de actualización (alta, modificación o eliminación) y de diálogo, que combina consulta y actualización. Por tanto, las tres opciones corresponden a tipos definidos en esa metodología. Se añade el marco MÉTRICA v3 al enunciado porque la denominación de estos tres tipos es metodológica. Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, versión 2026.1 (18-09-2026); incluye análisis estructurado y MÉTRICA.; el bloque cubre análisis estructurado y MÉTRICA; las tres clases de flujo se cotejan con la técnica DFD oficial de MÉTRICA v3. Epígrafes contrastados con revision/temario-oficial.json y las convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2 GSI). La academia contextualiza el programa, no es la fuente decisoria de la respuesta."
+        }
+      }
+    }
+  ]
+}
