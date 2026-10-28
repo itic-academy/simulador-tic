@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 379 (IDs 2211–2215). Acumulado: 2.215 preguntas examinadas, 2.154 verificadas (494 vigentes, 1.497 corregidas y 163 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.908 sin revisar individualmente. Hay 1.701 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 380 (IDs 2216–2220). Acumulado: 2.220 preguntas examinadas, 2.159 verificadas (497 vigentes, 1.499 corregidas y 163 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.903 sin revisar individualmente. Hay 1.703 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 380 — 28 de octubre
+
+IDs 2216–2220 revisados individualmente. Tres respuestas se confirman y dos preguntas se corrigen para usar términos precisos de ACID y de mecanismos distribuidos. Los cinco originales completos se conservan en `cambios-lote-380.json`. Acumulado: 2.220 examinadas, 2.159 verificadas (497 vigentes, 1.499 corregidas y 163 históricas), 61 pendientes y 9.903 aún sin revisión individual.
+
+- La 2216 confirma a la Dirección General de la Policía, dependiente del Ministerio del Interior, como Autoridad de Certificación del DNIe; FNMT y Hacienda se citan como prestadores de validación. A1-80/A2-I-6.
+- La 2217 confirma volumen, variedad y velocidad como las tres V clásicas, aclarando que la bibliografía actual amplía a veces el conjunto. A1-70/A2-III-15.
+- La 2218 confirma que Jakarta Faces/JSF aporta componentes de interfaz y AJAX permite actualizaciones asíncronas parciales. A1-65/A1-67, A2-III-10/III-12.
+- La 2219 especifica «independencia de los datos», que no es propiedad ACID; la I del modelo es aislamiento. A1-64/A2-II-5/III-4.
+- La 2220 se reformula para reflejar el rasgo común de RMI, DCOM, CORBA y RPC: soportan llamadas o comunicación entre componentes distribuidos. Se evita equiparar sus protocolos, interoperabilidad o relación histórica con servicios web. A1-58/A2-II-6.
+
+Cotejo con Drive: bloques 36 (DNIe/PKI), 34 (Big Data), 30 (Java/web y sistemas) y 29 (bases de datos/transacciones). Correspondencias oficiales verificadas en `temario-oficial.json` y en las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La academia contextualiza el programa; las respuestas se apoyan en DNIe/DGP, IBM, Jakarta EE, MDN, PostgreSQL/Db2, Oracle, OMG, Microsoft e IETF.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.220 registros de revisión, 61 pendientes y 9.903 preguntas todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 379 — 28 de octubre
 
