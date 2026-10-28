@@ -90831,27 +90831,91 @@
         "Característica."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se confirma «Entidad»: el método Mark II de Symons introduce referencias a tipos de entidad en el cálculo (UFP = NI·WI + NE·WE + NO·WO), frente al concepto de ficheros lógicos de la formulación de Albrecht. Se interpreta “entidad” como tipo/referencia de entidad, no como una entidad individual sin contexto. Clasificación A1-99 y A2-III-2, por encaje en métricas de tamaño y estimación. Cotejo temático con estimación y medición de tamaño. Se deja claro que la definición de referencias a entidades procede de la fuente técnica de Symons/SEI, no se atribuye al material académico. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-99"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 17 Adquisición de Sistemas y Rentabilidad, versión 2026.2; el bloque 17 desarrolla medición funcional, puntos de función, COSMIC y LOC como enfoques de estimación; la portada/fragmentos consultados no desarrolla la diferencia Mark II de Symons, que se verifica con el informe técnico de SEI/CMU.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con estimación y medición de tamaño. Se deja claro que la definición de referencias a entidades procede de la fuente técnica de Symons/SEI, no se atribuye al material académico. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria."
+      },
+      "etiquetas": [
+        "puntos de función",
+        "Mark II",
+        "Charles Symons",
+        "referencias a entidades"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.sei.cmu.edu/documents/1125/1995_005_001_16376.pdf",
+            "referencia": "CMU/SEI-95-TR-002, resumen de Charles Symons, “Function Point Analysis: Difficulties and Improvements”: la fórmula Mark II incluye NE, número de referencias a tipos de entidad; el método sustituye el concepto de fichero lógico usado en el planteamiento anterior de Albrecht."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 17 Adquisición de Sistemas y Rentabilidad, versión 2026.2; cotejo de contenido y alcance."
+          }
+        ],
+        "observaciones": "Se confirma «Entidad»: el método Mark II de Symons introduce referencias a tipos de entidad en el cálculo (UFP = NI·WI + NE·WE + NO·WO), frente al concepto de ficheros lógicos de la formulación de Albrecht. Se interpreta “entidad” como tipo/referencia de entidad, no como una entidad individual sin contexto. Clasificación A1-99 y A2-III-2, por encaje en métricas de tamaño y estimación. Cotejo temático con estimación y medición de tamaño. Se deja claro que la definición de referencias a entidades procede de la fuente técnica de Symons/SEI, no se atribuye al material académico. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria."
+      }
     },
     {
       "id": 1942,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dado un respositorio gestionado por la herramienta Git, ¿qué nombre tiene el fichero en que se indican aquellos ficheros que no deben ser tenidos en cuenta por el control de versiones?",
+      "texto": "En un repositorio Git, ¿qué fichero versionable se utiliza habitualmente para especificar patrones de rutas no rastreadas que el repositorio debe ignorar?",
       "opciones": [
-        ".giignore",
-        ".gituntranck",
+        ".gitignore",
+        ".git/info/exclude",
         ".gitexclude",
-        ".gituncommit"
+        ".gituntracked"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se corrige la errata del nombre de archivo y se distingue el fichero compartible .gitignore del excluidor local .git/info/exclude. Git ignora con estos patrones ficheros no rastreados; añadir una ruta ya versionada a .gitignore no la elimina del índice. Correspondencia A1-102 (configuración, cambios y versiones) y A2-IV-4. Cotejo académico de Git/control de versiones; la semántica exacta y diferencia con info/exclude se verifica en git-scm.com. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-102"
+        ],
+        "A2": [
+          "A2-IV-4"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.2; el bloque 39 incluye un apartado específico de control de versiones con Git dentro de gestión de configuración y cambios; no se atribuye al temario una explicación literal de los patrones .gitignore, que se confirman con la documentación oficial de Git.",
+        "estado": "revisada",
+        "nota": "Cotejo académico de Git/control de versiones; la semántica exacta y diferencia con info/exclude se verifica en git-scm.com. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria."
+      },
+      "etiquetas": [
+        "Git",
+        "gitignore",
+        "ficheros no rastreados",
+        "control de versiones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://git-scm.com/docs/gitignore",
+            "referencia": "Documentación oficial Git, gitignore: el fichero .gitignore contiene patrones para que Git ignore rutas intencionadamente no rastreadas; no deja de rastrear archivos ya incluidos en el índice. Distingue .gitignore del excluidor local .git/info/exclude."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.2; cotejo de contenido y alcance."
+          }
+        ],
+        "observaciones": "Se corrige la errata del nombre de archivo y se distingue el fichero compartible .gitignore del excluidor local .git/info/exclude. Git ignora con estos patrones ficheros no rastreados; añadir una ruta ya versionada a .gitignore no la elimina del índice. Correspondencia A1-102 (configuración, cambios y versiones) y A2-IV-4. Cotejo académico de Git/control de versiones; la semántica exacta y diferencia con info/exclude se verifica en git-scm.com. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria."
+      }
     },
     {
       "id": 1943,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de los siguientes criterios NO es correcto de acuerdo con el Modelo EFQM de Excelencia:",
+      "texto": "Según el EFQM Excellence Model 2013, edición histórica con nueve criterios, indique cuál de estos NO era un criterio del modelo.",
       "opciones": [
         "Alianzas y recursos.",
         "Liderazgo.",
@@ -90859,7 +90923,41 @@
         "Viabilidad económica."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se fija expresamente la edición 2013, pues “Modelo EFQM” sin fecha es ambiguo: las etiquetas “Alianzas y recursos”, “Liderazgo” y “Resultados en la sociedad” pertenecen al modelo histórico de nueve criterios. “Viabilidad económica” no era uno de esos criterios. El modelo vigente emplea una estructura distinta y no se proyectan sobre él las etiquetas antiguas. Se marca histórica verificada. Clasificación curricular A1-103; no se fuerza equivalencia A2. El material académico 2026 cubre el modelo actual; el ítem se rotula como histórico y se contrasta con el documento de EFQM 2013 para evitar mezclar ediciones. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-103"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.2; el bloque 39 actualizado aborda el modelo EFQM 2025 y REDER; el enunciado se conserva como pregunta histórica explícita de EFQM 2013, edición de nueve criterios, con esos términos antiguos.",
+        "estado": "revisada",
+        "nota": "El material académico 2026 cubre el modelo actual; el ítem se rotula como histórico y se contrasta con el documento de EFQM 2013 para evitar mezclar ediciones. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria."
+      },
+      "etiquetas": [
+        "EFQM",
+        "modelo de excelencia",
+        "criterios EFQM 2013",
+        "modelo histórico"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.qualityscotland.co.uk/sites/default/files/efqm/EFQM%20Excellence%20Model%20Book%202013.pdf",
+            "referencia": "EFQM Excellence Model 2013, modelo histórico de nueve criterios: Leadership, Partnerships & Resources y Society Results son criterios; la viabilidad económica no es un criterio independiente."
+          },
+          {
+            "url": "https://www.efqm.org/the-efqm-model/",
+            "referencia": "EFQM, página institucional del modelo actual: explica la estructura de Dirección, Ejecución y Resultados y la lógica Why/How/What; el modelo actual no debe mezclarse con las etiquetas del modelo de 2013."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.2; cotejo de contenido y alcance."
+          }
+        ],
+        "observaciones": "Se fija expresamente la edición 2013, pues “Modelo EFQM” sin fecha es ambiguo: las etiquetas “Alianzas y recursos”, “Liderazgo” y “Resultados en la sociedad” pertenecen al modelo histórico de nueve criterios. “Viabilidad económica” no era uno de esos criterios. El modelo vigente emplea una estructura distinta y no se proyectan sobre él las etiquetas antiguas. Se marca histórica verificada. Clasificación curricular A1-103; no se fuerza equivalencia A2. El material académico 2026 cubre el modelo actual; el ítem se rotula como histórico y se contrasta con el documento de EFQM 2013 para evitar mezclar ediciones. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria."
+      }
     },
     {
       "id": 1944,
@@ -90873,21 +90971,99 @@
         "ISO 9000 habla de fundamentos y vocabulario"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se verifica la falsa: decir que ISO 19011 no pertenecía a la familia histórica es incorrecto; en la agrupación ISO 9000:2000 se incluía ISO 19011:2002 como guía de auditoría de calidad y medioambiente. ISO 9004:2000 guiaba la mejora del desempeño, ISO 9001:2000 tenía ocho cláusulas principales (1–8) e ISO 9000 cubría fundamentos y vocabulario. Se mantiene el contexto histórico explícito y se evita presentar esa lista como la familia vigente en 2026. Cotejo con la actualización de calidad/ISO en la academia. La taxonomía citada queda fechada como 2000 y no se atribuye al temario moderno. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-103"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.2; el bloque 39 estudia la gestión de calidad y actualiza ISO 9000/9001 a las ediciones de 2026; no pretende reproducir la lista histórica de normas de 2000. La composición del conjunto antiguo se verifica en el manual del Banco Mundial.",
+        "estado": "revisada",
+        "nota": "Cotejo con la actualización de calidad/ISO en la academia. La taxonomía citada queda fechada como 2000 y no se atribuye al temario moderno. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria."
+      },
+      "etiquetas": [
+        "ISO 9000:2000",
+        "ISO 9001:2000",
+        "ISO 9004:2000",
+        "ISO 19011:2002",
+        "gestión de la calidad",
+        "pregunta histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://documents1.worldbank.org/curated/en/570841468233360300/pdf/340710ENGLISH0PV0quality0manual.pdf",
+            "referencia": "World Bank, Quality Manual, tabla 1.2 “ISO 9000:2000 Family of Standards”: enumera ISO 9000:2000, ISO 9001:2000, ISO 9004:2000 e ISO 19011:2002; explica que 19011 ofrece guía de auditoría y pertenece a ese conjunto histórico."
+          },
+          {
+            "url": "https://www.iso.org/standard/19011",
+            "referencia": "ISO 19011:2026, edición actual para auditoría de sistemas de gestión; aporta contexto de actualización, no cambia la respuesta sobre el conjunto histórico de 2000."
+          },
+          {
+            "url": "https://committee.iso.org/standards/popular/iso-9000-family",
+            "referencia": "ISO, familia actual ISO 9000: incluye 9001 y normas de apoyo de gestión de la calidad; las ediciones y el contenido de la familia evolucionan respecto de la agrupación histórica de 2000."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.2; cotejo de contenido y alcance."
+          }
+        ],
+        "observaciones": "Se verifica la falsa: decir que ISO 19011 no pertenecía a la familia histórica es incorrecto; en la agrupación ISO 9000:2000 se incluía ISO 19011:2002 como guía de auditoría de calidad y medioambiente. ISO 9004:2000 guiaba la mejora del desempeño, ISO 9001:2000 tenía ocho cláusulas principales (1–8) e ISO 9000 cubría fundamentos y vocabulario. Se mantiene el contexto histórico explícito y se evita presentar esa lista como la familia vigente en 2026. Cotejo con la actualización de calidad/ISO en la academia. La taxonomía citada queda fechada como 2000 y no se atribuye al temario moderno. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria."
+      }
     },
     {
       "id": 1945,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según ITIL v3, la gestión de cambios está intrínsecamente relacionada con:",
+      "texto": "En la fase Service Transition de ITIL v3, ¿con qué proceso trabaja estrechamente Change Management para consultar los elementos de configuración, evaluar el impacto y seguir la implementación del cambio?",
       "opciones": [
-        "La gestión de la capacidad.",
-        "La gestión de la configuración.",
-        "La gestión del catálogo.",
-        "La gestión de la disponibilidad."
+        "Gestión de la capacidad.",
+        "Gestión de activos de servicio y configuración.",
+        "Gestión del catálogo.",
+        "Gestión de la disponibilidad."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se precisa el enunciado: en ITIL v3 la gestión de cambios trabaja estrechamente con Service Asset and Configuration Management; la información fiable del CMS/CMDB sobre CI permite evaluar el impacto y seguir la implementación. Se conserva la opción de gestión de configuración. Se marca histórica porque la pregunta exige ITIL v3, edición superada por marcos posteriores; no se extrapola esta terminología a ITIL actual. Correspondencia A1-106 (ITIL/gestión de servicios) y A2-IV-4 (configuración y control de cambios). Cotejo directo del marco académico actual y de su advertencia sobre v3; la respuesta histórica se comprueba en Service Transition y el glosario v3. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-106"
+        ],
+        "A2": [
+          "A2-IV-4"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 41 ITIL y COBIT, versión 2026.1; el bloque 41 cubre A1-106 y A2-C2; advierte que ITIL v3 es histórico, que ITIL 4 sustituyó su ciclo de vida y que el marco vigente cambia el nombre/práctica a Change Enablement. La relación de la pregunta se conserva solo para Service Transition de ITIL v3.",
+        "estado": "revisada",
+        "nota": "Cotejo directo del marco académico actual y de su advertencia sobre v3; la respuesta histórica se comprueba en Service Transition y el glosario v3. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria."
+      },
+      "etiquetas": [
+        "ITIL v3",
+        "Service Transition",
+        "gestión de cambios",
+        "gestión de configuración",
+        "elementos de configuración",
+        "pregunta histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.kornev-online.net/ITIL/03%20-%20ITIL%20V3%202011%20Service%20Transition%20ST.pdf",
+            "referencia": "ITIL v3 (2011), Service Transition, §4.2.6.5, interfaz entre Change Management y Service Asset and Configuration Management: el CMS proporciona información fiable de elementos de configuración para evaluar impactos y seguir el flujo del cambio; se actualiza la información al implantar cambios."
+          },
+          {
+            "url": "https://www.itil.co.il/ITIL_Files/ITIL_2007_English_Glossary_V3_1_24.pdf",
+            "referencia": "Glosario ITIL v3.1.24 (2007): los elementos de configuración están bajo control de Change Management y la gestión de configuración mantiene los datos/relaciones de los CI."
+          },
+          {
+            "url": "https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 41 ITIL y COBIT, versión 2026.1; cotejo de contenido y alcance."
+          }
+        ],
+        "observaciones": "Se precisa el enunciado: en ITIL v3 la gestión de cambios trabaja estrechamente con Service Asset and Configuration Management; la información fiable del CMS/CMDB sobre CI permite evaluar el impacto y seguir la implementación. Se conserva la opción de gestión de configuración. Se marca histórica porque la pregunta exige ITIL v3, edición superada por marcos posteriores; no se extrapola esta terminología a ITIL actual. Correspondencia A1-106 (ITIL/gestión de servicios) y A2-IV-4 (configuración y control de cambios). Cotejo directo del marco académico actual y de su advertencia sobre v3; la respuesta histórica se comprueba en Service Transition y el glosario v3. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); el cotejo temático no sustituye la fuente primaria."
+      }
     },
     {
       "id": 1946,
