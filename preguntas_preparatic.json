@@ -127973,71 +127973,309 @@
       "id": 2661,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿En qué técnica de pruebas del software se utiliza la complejidad ciclomática?",
+      "texto": "¿Qué técnica de pruebas estructurales (caja blanca) usa la complejidad ciclomática de McCabe para seleccionar caminos independientes del flujo de control?",
       "opciones": [
-        "Prueba de caja negra",
-        "Prueba del camino básico",
-        "Prueba de la partición equivalente",
-        "Ninguna de las anteriores"
+        "Prueba de caja negra.",
+        "Prueba del camino básico (basis path testing).",
+        "Prueba de partición de equivalencia.",
+        "Prueba de aceptación."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La complejidad ciclomática se aplica en la prueba estructurada del camino básico (basis path testing), una técnica estructural/de caja blanca que selecciona caminos independientes del grafo de flujo. Se corrige “pruebas del camino básico” como nombre preciso y se descartan caja negra y partición equivalente. A1-96/98; A2-III.7/III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 incluye pruebas y técnicas de software, métricas y modelos de calidad. La correspondencia específica con pruebas estructurales se recoge en A1-96 y A2-III.7; la complejidad como métrica también se relaciona con A1-98 y A2-III.13. Academy sirve de contexto curricular, mientras la técnica se verifica con NIST/McCabe. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas.",
+      "clasificacion": {
+        "A1": [
+          "A1-96",
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-7",
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive; El bloque 39 incluye pruebas y técnicas de software, métricas y modelos de calidad. La correspondencia específica con pruebas estructurales se recoge en A1-96 y A2-III.7; la complejidad como métrica también se relaciona con A1-98 y A2-III.13. Academy sirve de contexto curricular, mientras la técnica se verifica con NIST/McCabe.",
+        "estado": "revisada",
+        "nota": "La complejidad ciclomática se aplica en la prueba estructurada del camino básico (basis path testing), una técnica estructural/de caja blanca que selecciona caminos independientes del grafo de flujo. Se corrige “pruebas del camino básico” como nombre preciso y se descartan caja negra y partición equivalente. A1-96/98; A2-III.7/III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 incluye pruebas y técnicas de software, métricas y modelos de calidad. La correspondencia específica con pruebas estructurales se recoge en A1-96 y A2-III.7; la complejidad como métrica también se relaciona con A1-98 y A2-III.13. Academy sirve de contexto curricular, mientras la técnica se verifica con NIST/McCabe. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas."
+      },
+      "etiquetas": [
+        "pruebas de software",
+        "caja blanca",
+        "complejidad ciclomática",
+        "McCabe",
+        "camino básico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication500-235.pdf",
+            "referencia": "Watson y McCabe, NIST Special Publication 500-235, Structured Testing: A Testing Methodology Using the Cyclomatic Complexity Metric (1996), metodología de pruebas estructuradas o basis path testing: la complejidad ciclomática guía la cobertura de caminos independientes."
+          },
+          {
+            "url": "https://despistadolux.wordpress.com/wp-content/uploads/2009/05/mccabe-complejidad-ciclomatica-paper.pdf",
+            "referencia": "McCabe, T. J., “A Complexity Measure”, IEEE Transactions on Software Engineering, SE-2(4), diciembre de 1976, pp. 308–320: introduce la medida ciclomática y una estrategia de pruebas por caminos básicos independientes. Copia consultada del artículo original."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive; El bloque 39 incluye pruebas y técnicas de software, métricas y modelos de calidad. La correspondencia específica con pruebas estructurales se recoge en A1-96 y A2-III.7; la complejidad como métrica también se relaciona con A1-98 y A2-III.13. Academy sirve de contexto curricular, mientras la técnica se verifica con NIST/McCabe."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Programa oficial A1, BOE-A-2025-25938; correspondencia con A1-96 contrastada en el programa publicado en BOE."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Programa oficial A1, BOE-A-2025-25938; correspondencia con A1-98 contrastada en el programa publicado en BOE."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Programa oficial A2 GSI, BOE-A-2025-26262; correspondencia con A2-III-7 contrastada en el programa publicado en BOE."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Programa oficial A2 GSI, BOE-A-2025-26262; correspondencia con A2-III-13 contrastada en el programa publicado en BOE."
+          }
+        ],
+        "observaciones": "La complejidad ciclomática se aplica en la prueba estructurada del camino básico (basis path testing), una técnica estructural/de caja blanca que selecciona caminos independientes del grafo de flujo. Se corrige “pruebas del camino básico” como nombre preciso y se descartan caja negra y partición equivalente. A1-96/98; A2-III.7/III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 incluye pruebas y técnicas de software, métricas y modelos de calidad. La correspondencia específica con pruebas estructurales se recoge en A1-96 y A2-III.7; la complejidad como métrica también se relaciona con A1-98 y A2-III.13. Academy sirve de contexto curricular, mientras la técnica se verifica con NIST/McCabe. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas."
+      }
     },
     {
       "id": 2662,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cúal NO es un factor de McCall de revisión?",
+      "texto": "En el modelo de McCall, ¿cuál es un factor de Product Operation (operación del producto), y no de Product Revision (revisión del producto)?",
       "opciones": [
-        "Flexibilidad",
-        "Usabilidad",
-        "Verificabilidad",
-        "Mantenibilidad"
+        "Flexibility (flexibilidad).",
+        "Usability (usabilidad).",
+        "Testability (capacidad de prueba).",
+        "Maintainability (mantenibilidad)."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El enunciado original era ambiguo: Usability sí es un factor de McCall, pero de Product Operation; Verifiability tampoco pertenece a los tres factores de Product Revision (Maintainability, Flexibility y Testability) y procede de otras taxonomías. Se reformula para preguntar qué factor de McCall pertenece a Product Operation y no a Product Revision; la respuesta inequívoca es Usability. Histórica. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 incluye modelos de calidad y menciona McCall. La tabla concreta Product Operation/Product Revision se contrasta con el informe original RADC-TR-77-369; la reformulación separa pertenencia a un grupo de pertenencia al modelo completo. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive; El bloque 39 incluye modelos de calidad y menciona McCall. La tabla concreta Product Operation/Product Revision se contrasta con el informe original RADC-TR-77-369; la reformulación separa pertenencia a un grupo de pertenencia al modelo completo.",
+        "estado": "revisada",
+        "nota": "El enunciado original era ambiguo: Usability sí es un factor de McCall, pero de Product Operation; Verifiability tampoco pertenece a los tres factores de Product Revision (Maintainability, Flexibility y Testability) y procede de otras taxonomías. Se reformula para preguntar qué factor de McCall pertenece a Product Operation y no a Product Revision; la respuesta inequívoca es Usability. Histórica. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 incluye modelos de calidad y menciona McCall. La tabla concreta Product Operation/Product Revision se contrasta con el informe original RADC-TR-77-369; la reformulación separa pertenencia a un grupo de pertenencia al modelo completo. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas."
+      },
+      "etiquetas": [
+        "McCall",
+        "Product Revision",
+        "flexibilidad",
+        "mantenibilidad",
+        "prueba de calidad",
+        "modelo histórico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://apps.dtic.mil/sti/pdfs/ADA049014.pdf",
+            "referencia": "McCall, Richards y Walters, Factors in Software Quality, RADC-TR-77-369, vol. I (1977), modelo histórico y agrupación de factores de operación, revisión y transición."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive; El bloque 39 incluye modelos de calidad y menciona McCall. La tabla concreta Product Operation/Product Revision se contrasta con el informe original RADC-TR-77-369; la reformulación separa pertenencia a un grupo de pertenencia al modelo completo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Programa oficial A1, BOE-A-2025-25938; correspondencia con A1-98 contrastada en el programa publicado en BOE."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Programa oficial A2 GSI, BOE-A-2025-26262; correspondencia con A2-III-13 contrastada en el programa publicado en BOE."
+          }
+        ],
+        "observaciones": "El enunciado original era ambiguo: Usability sí es un factor de McCall, pero de Product Operation; Verifiability tampoco pertenece a los tres factores de Product Revision (Maintainability, Flexibility y Testability) y procede de otras taxonomías. Se reformula para preguntar qué factor de McCall pertenece a Product Operation y no a Product Revision; la respuesta inequívoca es Usability. Histórica. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 incluye modelos de calidad y menciona McCall. La tabla concreta Product Operation/Product Revision se contrasta con el informe original RADC-TR-77-369; la reformulación separa pertenencia a un grupo de pertenencia al modelo completo. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas."
+      }
     },
     {
       "id": 2663,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los principales factores de calidad según Bertrand Meyer son:",
+      "texto": "En la síntesis de calidad del capítulo 1 de Object-Oriented Software Construction, ¿qué dos agrupaciones de factores de Bertrand Meyer aparecen como principales?",
       "opciones": [
-        "Eficiencia y fiabilidad",
-        "Fiabilidad y modularidad",
-        "Fiabilidad y extensibilidad",
-        "Corrección y verificabilidad"
+        "Eficiencia y fiabilidad.",
+        "Fiabilidad y modularidad.",
+        "Fiabilidad y extensibilidad.",
+        "Corrección y verificabilidad."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La expresión “principales factores” se acota a la síntesis del capítulo inicial de Object-Oriented Software Construction: correctness y robustness se agrupan como reliability; reusability y extendibility como modularity. Entre las opciones, la respuesta es fiabilidad y modularidad. Es una agrupación del marco de Meyer, no una clasificación universal ni la lista completa de atributos externos. Histórica. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 incluye modelos de calidad del software. La síntesis de fiabilidad y modularidad se limita al pasaje de OOSC escrito por Bertrand Meyer, fuente primaria de su propio marco, sin generalizarla a todos los modelos. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive; El bloque 39 incluye modelos de calidad del software. La síntesis de fiabilidad y modularidad se limita al pasaje de OOSC escrito por Bertrand Meyer, fuente primaria de su propio marco, sin generalizarla a todos los modelos.",
+        "estado": "revisada",
+        "nota": "La expresión “principales factores” se acota a la síntesis del capítulo inicial de Object-Oriented Software Construction: correctness y robustness se agrupan como reliability; reusability y extendibility como modularity. Entre las opciones, la respuesta es fiabilidad y modularidad. Es una agrupación del marco de Meyer, no una clasificación universal ni la lista completa de atributos externos. Histórica. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 incluye modelos de calidad del software. La síntesis de fiabilidad y modularidad se limita al pasaje de OOSC escrito por Bertrand Meyer, fuente primaria de su propio marco, sin generalizarla a todos los modelos. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas."
+      },
+      "etiquetas": [
+        "Bertrand Meyer",
+        "fiabilidad",
+        "modularidad",
+        "calidad del software",
+        "modelo histórico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://archive.eiffel.com/doc/oosc/",
+            "referencia": "Bertrand Meyer, Object-Oriented Software Construction, 2.ª ed. (1997), capítulo 1 «Software quality», fuente primaria (referencia bibliográfica oficial del autor/editor). La síntesis se contrasta con la exposición técnica de Eiffel sobre reliability y extendibility/reusability."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive; El bloque 39 incluye modelos de calidad del software. La síntesis de fiabilidad y modularidad se limita al pasaje de OOSC escrito por Bertrand Meyer, fuente primaria de su propio marco, sin generalizarla a todos los modelos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Programa oficial A1, BOE-A-2025-25938; correspondencia con A1-98 contrastada en el programa publicado en BOE."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Programa oficial A2 GSI, BOE-A-2025-26262; correspondencia con A2-III-13 contrastada en el programa publicado en BOE."
+          },
+          {
+            "url": "https://www.eiffel.org/doc/eiffel/I2E-_Design_Principles",
+            "referencia": "Bertrand Meyer, I2E: Design Principles, documentación oficial de Eiffel; describe reliability como software correcto y robusto y los objetivos de reusabilidad y extensibilidad."
+          }
+        ],
+        "observaciones": "La expresión “principales factores” se acota a la síntesis del capítulo inicial de Object-Oriented Software Construction: correctness y robustness se agrupan como reliability; reusability y extendibility como modularity. Entre las opciones, la respuesta es fiabilidad y modularidad. Es una agrupación del marco de Meyer, no una clasificación universal ni la lista completa de atributos externos. Histórica. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 incluye modelos de calidad del software. La síntesis de fiabilidad y modularidad se limita al pasaje de OOSC escrito por Bertrand Meyer, fuente primaria de su propio marco, sin generalizarla a todos los modelos. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas."
+      }
     },
     {
       "id": 2664,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según la norma española UNE 66-904, que recoge los costes totales de calidad, el «coste resultante de un bien o servicio que no cumple los requisitos de calidad, y cuyo fallo se pone de manifiesto antes de su entrega», es un:",
+      "texto": "En la clasificación PAF (prevención, evaluación y fallos), ¿cómo se clasifica el coste de un producto o servicio no conforme cuyo defecto se detecta antes de entregarlo al cliente? La referencia a UNE 66904:1990 es histórica y no implica que siga vigente.",
       "opciones": [
-        "Costes de prevención",
-        "Coste de fallos internos",
-        "Coste de evaluación",
-        "Coste de fallos externos"
+        "Coste de prevención.",
+        "Coste de fallos internos.",
+        "Coste de evaluación.",
+        "Coste de fallos externos."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "La definición identifica un fallo detectado antes de la entrega: coste de fallos internos. Se elimina la afirmación de que UNE 66904 siga vigente: la edición internacional equivalente ISO 9004:1987 está retirada según ISO; el reactivo pregunta ahora por la clasificación PAF y señala el carácter histórico de la cita normativa. No se atribuye vigencia actual a la UNE. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 trata calidad y costes. La categoría de fallo interno se contrasta con la definición PAF de ASQ. La referencia UNE se conserva únicamente como trasfondo histórico: el catálogo ISO confirma retirada de ISO 9004:1987, edición internacional equivalente, por lo que no se atribuye vigencia al estándar citado. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive; El bloque 39 trata calidad y costes. La categoría de fallo interno se contrasta con la definición PAF de ASQ. La referencia UNE se conserva únicamente como trasfondo histórico: el catálogo ISO confirma retirada de ISO 9004:1987, edición internacional equivalente, por lo que no se atribuye vigencia al estándar citado.",
+        "estado": "revisada",
+        "nota": "La definición identifica un fallo detectado antes de la entrega: coste de fallos internos. Se elimina la afirmación de que UNE 66904 siga vigente: la edición internacional equivalente ISO 9004:1987 está retirada según ISO; el reactivo pregunta ahora por la clasificación PAF y señala el carácter histórico de la cita normativa. No se atribuye vigencia actual a la UNE. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 trata calidad y costes. La categoría de fallo interno se contrasta con la definición PAF de ASQ. La referencia UNE se conserva únicamente como trasfondo histórico: el catálogo ISO confirma retirada de ISO 9004:1987, edición internacional equivalente, por lo que no se atribuye vigencia al estándar citado. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas."
+      },
+      "etiquetas": [
+        "coste de calidad",
+        "PAF",
+        "fallos internos",
+        "fallos externos",
+        "UNE 66904",
+        "norma retirada"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://asq.org/quality-resources/cost-of-quality",
+            "referencia": "ASQ, Cost of Quality: define las categorías PAF; los fallos detectados antes de que el producto o servicio llegue al cliente son costes de fallos internos."
+          },
+          {
+            "url": "https://committee.iso.org/standard/16540.html?browse=ics",
+            "referencia": "ISO 9004:1987, edición internacional idéntica de la que derivó UNE 66904:1990, figura retirada en el catálogo oficial ISO; la antigua UNE fue sucedida. No se presenta como norma vigente."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive; El bloque 39 trata calidad y costes. La categoría de fallo interno se contrasta con la definición PAF de ASQ. La referencia UNE se conserva únicamente como trasfondo histórico: el catálogo ISO confirma retirada de ISO 9004:1987, edición internacional equivalente, por lo que no se atribuye vigencia al estándar citado."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Programa oficial A1, BOE-A-2025-25938; correspondencia con A1-98 contrastada en el programa publicado en BOE."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Programa oficial A2 GSI, BOE-A-2025-26262; correspondencia con A2-III-13 contrastada en el programa publicado en BOE."
+          },
+          {
+            "url": "https://www.intertekinform.com/en-us/standards/une-66904-1990-32416_saig_une_une_2854579/",
+            "referencia": "Catálogo de normas UNE: UNE 66904:1990 identificada como sucedida en 1995; registro de catálogo usado solo para documentar la situación histórica, no para la definición PAF."
+          }
+        ],
+        "observaciones": "La definición identifica un fallo detectado antes de la entrega: coste de fallos internos. Se elimina la afirmación de que UNE 66904 siga vigente: la edición internacional equivalente ISO 9004:1987 está retirada según ISO; el reactivo pregunta ahora por la clasificación PAF y señala el carácter histórico de la cita normativa. No se atribuye vigencia actual a la UNE. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 trata calidad y costes. La categoría de fallo interno se contrasta con la definición PAF de ASQ. La referencia UNE se conserva únicamente como trasfondo histórico: el catálogo ISO confirma retirada de ISO 9004:1987, edición internacional equivalente, por lo que no se atribuye vigencia al estándar citado. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas."
+      }
     },
     {
       "id": 2665,
       "bloque": 0,
       "tema": 0,
-      "texto": "El modelo de calidad de la norma ISO/IEC 25010:2011, de la serie Systems and software Quality Requirements and Evaluation (SQuaRE), identifica ocho caracteristicas para la calidad del producto software. Entre dichas características se encuentra:",
+      "texto": "En la edición histórica ISO/IEC 25010:2011 (retirada y sustituida por ISO/IEC 25010:2023), ¿cuál de estas era una de sus ocho características de calidad del producto?",
       "opciones": [
-        "Portabilidad",
-        "Simplicidad",
-        "Flexibilidad",
-        "Extensibilidad"
+        "Portabilidad.",
+        "Simplicidad.",
+        "Flexibilidad.",
+        "Extensibilidad."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se explicita que pregunta por la edición retirada ISO/IEC 25010:2011: su modelo de calidad de producto comprendía ocho características e incluía Portability (portabilidad). La edición vigente ISO/IEC 25010:2023 contiene nueve características y sustituyó Portability por Flexibility; por ello no se presenta “portabilidad” como característica actual. Histórica. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 aborda la familia SQuaRE y presenta ISO/IEC 25010:2023. La Academy no se usa para validar el dato de la edición retirada: ISO confirma tanto la edición de 2011 como su sustitución y describe en 2023 el modelo de nueve características. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive; El bloque 39 aborda la familia SQuaRE y presenta ISO/IEC 25010:2023. La Academy no se usa para validar el dato de la edición retirada: ISO confirma tanto la edición de 2011 como su sustitución y describe en 2023 el modelo de nueve características.",
+        "estado": "revisada",
+        "nota": "Se explicita que pregunta por la edición retirada ISO/IEC 25010:2011: su modelo de calidad de producto comprendía ocho características e incluía Portability (portabilidad). La edición vigente ISO/IEC 25010:2023 contiene nueve características y sustituyó Portability por Flexibility; por ello no se presenta “portabilidad” como característica actual. Histórica. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 aborda la familia SQuaRE y presenta ISO/IEC 25010:2023. La Academy no se usa para validar el dato de la edición retirada: ISO confirma tanto la edición de 2011 como su sustitución y describe en 2023 el modelo de nueve características. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas."
+      },
+      "etiquetas": [
+        "ISO/IEC 25010",
+        "SQuaRE",
+        "portabilidad",
+        "flexibilidad",
+        "edición 2011",
+        "modelo histórico"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/obp/ui/?_escaped_fragment_=iso%3Astd%3Aiso-iec%3A25010%3Aed-1%3Av1%3Aen",
+            "referencia": "ISO/IEC 25010:2011, edición 1, modelo histórico de calidad de producto con ocho características; retirada y sustituida por la edición de 2023."
+          },
+          {
+            "url": "https://www.iso.org/standard/78176.html",
+            "referencia": "ISO/IEC 25010:2023, edición 2 vigente/publicada: modelo de producto con nueve características; reemplaza la edición 2011, entre otros cambios sustituye Portability por Flexibility e incorpora Safety."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive; El bloque 39 aborda la familia SQuaRE y presenta ISO/IEC 25010:2023. La Academy no se usa para validar el dato de la edición retirada: ISO confirma tanto la edición de 2011 como su sustitución y describe en 2023 el modelo de nueve características."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Programa oficial A1, BOE-A-2025-25938; correspondencia con A1-98 contrastada en el programa publicado en BOE."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Programa oficial A2 GSI, BOE-A-2025-26262; correspondencia con A2-III-13 contrastada en el programa publicado en BOE."
+          }
+        ],
+        "observaciones": "Se explicita que pregunta por la edición retirada ISO/IEC 25010:2011: su modelo de calidad de producto comprendía ocho características e incluía Portability (portabilidad). La edición vigente ISO/IEC 25010:2023 contiene nueve características y sustituyó Portability por Flexibility; por ello no se presenta “portabilidad” como característica actual. Histórica. A1-98/A2-III.13. Cotejo curricular: ITIC Academy, Bloque 39 Calidad y Mantenimiento, versión 2026.1 (23-09-2026), cotejado directamente en Drive. El bloque 39 aborda la familia SQuaRE y presenta ISO/IEC 25010:2023. La Academy no se usa para validar el dato de la edición retirada: ISO confirma tanto la edición de 2011 como su sustitución y describe en 2023 el modelo de nueve características. Correspondencia contrastada con revision/temario-oficial.json y las convocatorias Programa oficial A1, BOE-A-2025-25938 y Programa oficial A2 GSI, BOE-A-2025-26262. Academy aporta encaje curricular, no sustituye las fuentes técnicas."
+      }
     },
     {
       "id": 2666,
