@@ -1,6 +1,24 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 325 (IDs 1941–1945). Acumulado: 1.945 preguntas examinadas, 1.895 verificadas (423 vigentes, 1.335 corregidas y 137 históricas) y 50 pendientes (25 de fuente y 25 de ambigüedad); quedan 10.178 sin revisar de contenido. Hay 1.506 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 326 (IDs 1946–1950). Acumulado: 1.950 preguntas examinadas, 1.900 verificadas (424 vigentes, 1.339 corregidas y 137 históricas) y 50 pendientes (25 de fuente y 25 de ambigüedad); quedan 10.173 sin revisar individualmente. Hay 1.510 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 326 — 28 de octubre
+
+IDs 1946–1950 comprobados individualmente con documentación de Apache HTTP Server, RFC del IETF y especificación Bluetooth SIG; cotejo del material de ITIC Academy en Drive y de las convocatorias oficiales A1/A2. Cuatro preguntas se corrigieron y una se confirmó vigente. Se conservan los cinco originales completos en `cambios-lote-326.json`. Acumulado: 1.950 examinadas, 1.900 verificadas (424 vigentes, 1.339 corregidas y 137 históricas), 50 pendientes y 10.173 por revisar.
+
+- La 1946 cambia «huellas» por los registros de acceso del servidor web. Se acota que estos son útiles para auditar solicitudes, pero solo cubren lo recibido y conservado según configuración, filtros y retención; no garantizan por sí solos conocer todos los accesos. Las cookies mantienen estado/sesiones del cliente HTTP, no constituyen logs exhaustivos. Clasificación A1-119/A2-IV-13.
+- La 1947 conserva «segmento» al precisar que se habla de una respuesta HTTP sobre TCP. La encapsulación posterior usa paquete IP y trama de enlace; HTTP/3 sobre QUIC/UDP impide generalizar «segmento» a todo tráfico HTTP. A1-111/A2-II-8.
+- La 1948 precisa que una entrada de etiqueta MPLS añade 32 bits (4 octetos), y que el overhead total de un paquete depende del número de entradas y del encapsulado. RFC 3032 distribuye cada entrada en Label 20, EXP 3, S 1 y TTL 8. A1-113/A2-IV-10.
+- La 1949 confirma 20 bits para el campo Label de los 32 de una entrada según RFC 3032. A1-113/A2-IV-10.
+- La 1950 limita el dato a la piconet Bluetooth clásica BR/EDR: un dispositivo central y hasta siete subordinados activos, por el campo AM_ADDR de 3 bits. Se evita aplicar los roles o el límite a BLE. A1-114/A2-IV-11.
+
+Cotejo de `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 1946 A1-119/A2-IV-13; 1947 A1-111/A2-II-8; 1948–1949 A1-113/A2-IV-10; 1950 A1-114/A2-IV-11. La clasificación indica afinidad curricular y no sustituye la evidencia técnica.
+
+Material académico localizado y leído en Drive: ITIC Academy, Bloque 42 «Redes», actualización 2026, que incluye las redes de transporte MPLS (A1-113), Internet/arquitectura de redes y el marco de redes; Bloque 46 «Redes Inalámbricas y Comunicaciones Móviles», versión 2026.1, que indica piconet Bluetooth clásico con siete dispositivos activos y distingue BLE; Bloque 48 «Seguridad en Redes y en el Nivel de Aplicación», actualización 2026, que trata sesiones/cookies y seguridad web. El material se utiliza como mapa de estudio, no como autoridad para claves; para 1946–1949 mandan las fuentes técnicas primarias citadas.
+
+Fuentes: [Apache HTTP Server 2.4, Log Files](https://httpd.apache.org/docs/current/en/logs.html); [IETF RFC 6265, HTTP State Management Mechanism](https://www.rfc-editor.org/rfc/rfc6265); [IETF RFC 9293, TCP](https://www.rfc-editor.org/rfc/rfc9293) y [RFC 768, UDP](https://www.rfc-editor.org/rfc/rfc768); [IETF RFC 3032, MPLS Label Stack Encoding](https://www.rfc-editor.org/rfc/rfc3032); [Bluetooth Core Specification 6.1, arquitectura y BR/EDR](https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core-61/out/en/index-en.html).
+
+Ejecutados `node revision/lote-326.cjs`, `node revision/academia-lote-326.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: inventario de 12.123 preguntas, 0 errores estructurales; 1.950 examinadas y 10.173 sin revisión individual.
 
 ## Lote 325 — 28 de octubre
 

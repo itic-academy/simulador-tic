@@ -91069,43 +91069,153 @@
       "id": 1946,
       "bloque": 0,
       "tema": 0,
-      "texto": "Para evitar el problema que suponen las cachés y las sesiones a la hora de estudiar los accesos a una web se usa una técnica para garantizar el conocimiento de todos los accesos. Esta técnica se conoce como:",
+      "texto": "En un servidor web, ¿qué mecanismo registra las solicitudes recibidas para poder auditar y analizar accesos, sujeto a la configuración y retención del servidor?",
       "opciones": [
-        "cookies",
-        "logs",
-        "huellas",
-        "ninguna de las anteriores"
+        "Cookies de sesión",
+        "Registros de acceso (access logs)",
+        "Huellas digitales del navegador",
+        "Caché HTTP"
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Se corrige «huellas» por «logs/registro de accesos», que es la técnica para conservar eventos de solicitudes del servidor y poder analizarlos frente a caché/estado de sesión. Se acota la afirmación absoluta: un access log solo registra lo que su configuración recibe y conserva; no garantiza por sí mismo todos los accesos ni sustituye una política de auditoría. Las cookies mantienen estado de cliente/servidor y no son un log. Clasificación A1-119/A2-IV-13. Cotejo de alcance temático con ITIC Academy 2026; la semántica de access logs frente a cookies se fundamenta en Apache HTTP Server y RFC 6265. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-119"
+        ],
+        "A2": [
+          "A2-IV-13"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 Tema Redes, actualización 2026; ITIC Academy, Bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026; el bloque 42 aborda servicios/arquitectura de Internet y servidores; el bloque 48 aborda seguridad de aplicaciones, sesiones y cookies. Sirven para situar el epígrafe y sus conceptos, no sostienen que cookies sean registros exhaustivos de acceso; la diferencia concreta se contrasta con Apache e IETF.",
+        "estado": "revisada",
+        "nota": "Cotejo de alcance temático con ITIC Academy 2026; la semántica de access logs frente a cookies se fundamenta en Apache HTTP Server y RFC 6265. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "registro de accesos",
+        "access log",
+        "cookies",
+        "sesiones HTTP",
+        "caché"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://httpd.apache.org/docs/current/en/logs.html",
+            "referencia": "Apache HTTP Server 2.4, Log Files: la función de logging permite registrar actividad y solicitudes desde la petición inicial; los access logs recogen solicitudes procesadas según la configuración. El registro puede estar limitado por configuración, filtros y retención, por lo que no garantiza por sí solo que se conozcan todos los accesos."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc6265",
+            "referencia": "IETF RFC 6265, HTTP State Management Mechanism: las cookies permiten mantener estado/sesiones entre solicitudes; no constituyen un registro exhaustivo de todos los accesos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 42 Tema Redes, actualización 2026; cotejo de contenido, edición y alcance académico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026; cotejo de contenido, edición y alcance académico."
+          }
+        ],
+        "observaciones": "Se corrige «huellas» por «logs/registro de accesos», que es la técnica para conservar eventos de solicitudes del servidor y poder analizarlos frente a caché/estado de sesión. Se acota la afirmación absoluta: un access log solo registra lo que su configuración recibe y conserva; no garantiza por sí mismo todos los accesos ni sustituye una política de auditoría. Las cookies mantienen estado de cliente/servidor y no son un log. Clasificación A1-119/A2-IV-13. Cotejo de alcance temático con ITIC Academy 2026; la semántica de access logs frente a cookies se fundamenta en Apache HTTP Server y RFC 6265. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias."
+      }
     },
     {
       "id": 1947,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuando el servidor web envia una respuesta, según el modelo OSI los datos primero se encapsulan en un:",
+      "texto": "Cuando una respuesta HTTP se transporta sobre TCP, ¿en qué unidad de datos la encapsula primero la capa de transporte?",
       "opciones": [
-        "Paquete",
-        "Segmento",
-        "Trama",
-        "Frame"
+        "Paquete IP",
+        "Segmento TCP",
+        "Trama Ethernet",
+        "Frame HTTP"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La opción «segmento» es correcta si se explicita que la respuesta de aplicación se transporta sobre TCP: antes de la PDU de red, TCP la encapsula en un segmento; después IP la transporta en un paquete y el enlace en una trama. No se generaliza a cualquier tráfico web: HTTP/3 usa QUIC sobre UDP, cuya unidad de transporte es un datagrama. A1-111/A2-II-8. Cotejo académico del modelo OSI y protocolos; la precisión sobre segmento TCP/datagrama UDP se fundamenta en RFC 9293 y RFC 768. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-111"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 Tema Redes, actualización 2026; el bloque 42 incluye arquitectura de redes, protocolos y los epígrafes oficiales de OSI/TCP-IP. El término «segmento TCP» se precisa con RFC 9293; el enunciado queda limitado a HTTP sobre TCP.",
+        "estado": "revisada",
+        "nota": "Cotejo académico del modelo OSI y protocolos; la precisión sobre segmento TCP/datagrama UDP se fundamenta en RFC 9293 y RFC 768. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "encapsulación",
+        "OSI",
+        "TCP",
+        "segmento",
+        "datagrama"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9293",
+            "referencia": "IETF RFC 9293, TCP: define los segmentos TCP como unidades de datos entre módulos TCP y muestra la cabecera seguida de los datos del segmento. Para una respuesta HTTP transportada sobre TCP, la PDU de transporte es un segmento; en UDP se habla de datagrama."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc768",
+            "referencia": "IETF RFC 768, User Datagram Protocol: define el datagrama de usuario, matiz que muestra por qué el enunciado OSI genérico debe especificar el protocolo de transporte."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 42 Tema Redes, actualización 2026; cotejo de contenido, edición y alcance académico."
+          }
+        ],
+        "observaciones": "La opción «segmento» es correcta si se explicita que la respuesta de aplicación se transporta sobre TCP: antes de la PDU de red, TCP la encapsula en un segmento; después IP la transporta en un paquete y el enlace en una trama. No se generaliza a cualquier tráfico web: HTTP/3 usa QUIC sobre UDP, cuya unidad de transporte es un datagrama. A1-111/A2-II-8. Cotejo académico del modelo OSI y protocolos; la precisión sobre segmento TCP/datagrama UDP se fundamenta en RFC 9293 y RFC 768. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias."
+      }
     },
     {
       "id": 1948,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuánto overhead o sobrecarga genera cada paquete MPLS?",
+      "texto": "En MPLS, ¿qué sobrecarga añade cada entrada de etiqueta de la pila (label stack entry) al paquete?",
       "opciones": [
-        "4 bits.",
-        "5 bits.",
-        "32 bits.",
-        "258 bits."
+        "4 bits",
+        "5 bits",
+        "32 bits (4 octetos)",
+        "258 bits"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se precisa «sobrecarga de cada entrada de etiqueta MPLS»: cada entrada de la pila añade 32 bits (4 octetos). No existe una sobrecarga total fija por paquete si la pila contiene varias etiquetas, y pueden intervenir otras cabeceras/encapsulados. La opción de 32 bits sigue siendo la correcta para una entrada. A1-113/A2-IV-10. Cotejo temático MPLS; el valor de 32 bits por entrada se fundamenta directamente en RFC 3032 y no se atribuye como dato textual a la academia. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-113"
+        ],
+        "A2": [
+          "A2-IV-10"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 Tema Redes, actualización 2026; el bloque 42 desarrolla MPLS como red de transporte y el epígrafe oficial A1-113. El tamaño de una entrada de etiqueta se comprueba directamente en RFC 3032.",
+        "estado": "revisada",
+        "nota": "Cotejo temático MPLS; el valor de 32 bits por entrada se fundamenta directamente en RFC 3032 y no se atribuye como dato textual a la academia. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "MPLS",
+        "etiqueta",
+        "pila de etiquetas",
+        "sobrecarga"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3032",
+            "referencia": "IETF RFC 3032, MPLS Label Stack Encoding, figura 1: cada label stack entry tiene exactamente 32 bits, divididos en etiqueta de 20 bits, EXP de 3, S de 1 y TTL de 8; se inserta una entrada por cada etiqueta de la pila."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 42 Tema Redes, actualización 2026; cotejo de contenido, edición y alcance académico."
+          }
+        ],
+        "observaciones": "Se precisa «sobrecarga de cada entrada de etiqueta MPLS»: cada entrada de la pila añade 32 bits (4 octetos). No existe una sobrecarga total fija por paquete si la pila contiene varias etiquetas, y pueden intervenir otras cabeceras/encapsulados. La opción de 32 bits sigue siendo la correcta para una entrada. A1-113/A2-IV-10. Cotejo temático MPLS; el valor de 32 bits por entrada se fundamenta directamente en RFC 3032 y no se atribuye como dato textual a la academia. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias."
+      }
     },
     {
       "id": 1949,
@@ -91119,21 +91229,85 @@
         "16"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Verificada: conforme a la figura 1 de RFC 3032, de los 32 bits de una entrada de pila MPLS, el campo Label ocupa 20 bits; no debe confundirse con el tamaño completo de la entrada, que es de 4 octetos. A1-113/A2-IV-10. Cotejo temático MPLS; el reparto exacto de bits procede de RFC 3032. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-113"
+        ],
+        "A2": [
+          "A2-IV-10"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 Tema Redes, actualización 2026; el bloque 42 sitúa MPLS en redes de transporte; el campo de 20 bits se comprueba directamente en la figura 1 y §2 de RFC 3032.",
+        "estado": "revisada",
+        "nota": "Cotejo temático MPLS; el reparto exacto de bits procede de RFC 3032. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "MPLS",
+        "RFC 3032",
+        "campo Label",
+        "20 bits"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3032",
+            "referencia": "IETF RFC 3032, figura 1 y §2: en la entrada MPLS de 32 bits, el valor Label ocupa 20 bits; los restantes se distribuyen en EXP 3, S 1 y TTL 8."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 42 Tema Redes, actualización 2026; cotejo de contenido, edición y alcance académico."
+          }
+        ],
+        "observaciones": "Verificada: conforme a la figura 1 de RFC 3032, de los 32 bits de una entrada de pila MPLS, el campo Label ocupa 20 bits; no debe confundirse con el tamaño completo de la entrada, que es de 4 octetos. A1-113/A2-IV-10. Cotejo temático MPLS; el reparto exacto de bits procede de RFC 3032. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias."
+      }
     },
     {
       "id": 1950,
       "bloque": 0,
       "tema": 0,
-      "texto": "Una red bluetooth de tipo piconet tiene un máximo de:",
+      "texto": "En Bluetooth clásico BR/EDR, una piconet puede tener como máximo:",
       "opciones": [
-        "1 maestro y 7 esclavos",
-        "1 maestro y 15 esclavos",
-        "1 maestro y 16 esclavos",
-        "1 maestro y 32 esclavos"
+        "1 dispositivo central y 7 dispositivos subordinados activos",
+        "1 dispositivo central y 15 dispositivos subordinados activos",
+        "1 dispositivo central y 16 dispositivos subordinados activos",
+        "1 dispositivo central y 32 dispositivos subordinados activos"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se acota la pregunta a Bluetooth clásico BR/EDR: una piconet admite un dispositivo central (en textos antiguos, «maestro») y hasta siete dispositivos subordinados activos (históricamente «esclavos»), por el direccionamiento AM_ADDR de 3 bits; puede haber dispositivos aparcados adicionales. No se traslada el límite ni esos roles al modelo BLE, que emplea central/periférico. La respuesta es 1+7. A1-114/A2-IV-11. Cotejo directo con el material ITIC Academy 2026 y la especificación Bluetooth Core 6.1; se explicita BR/EDR para no confundir la topología con BLE. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-114"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 46 Redes Inalámbricas y Comunicaciones Móviles, versión 2026.1; el bloque 46 (v2026.1) contiene la sección de Bluetooth BR/EDR y declara en el resumen técnico la topología de piconet con siete dispositivos activos; diferencia el modelo BLE. Se contrasta el dato con la especificación Bluetooth Core vigente.",
+        "estado": "revisada",
+        "nota": "Cotejo directo con el material ITIC Academy 2026 y la especificación Bluetooth Core 6.1; se explicita BR/EDR para no confundir la topología con BLE. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "Bluetooth BR/EDR",
+        "piconet",
+        "siete dispositivos activos",
+        "topología"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core-61/out/en/index-en.html",
+            "referencia": "Bluetooth Core Specification 6.1, Vol. 1, Part A, §4.1.1 (BR/EDR topology) y Vol. 2, Part B (Baseband): topología piconet BR/EDR y direccionamiento AM_ADDR de 3 bits, con hasta siete miembros activos subordinados además del dispositivo central."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 46 Redes Inalámbricas y Comunicaciones Móviles, versión 2026.1; cotejo de contenido, edición y alcance académico."
+          }
+        ],
+        "observaciones": "Se acota la pregunta a Bluetooth clásico BR/EDR: una piconet admite un dispositivo central (en textos antiguos, «maestro») y hasta siete dispositivos subordinados activos (históricamente «esclavos»), por el direccionamiento AM_ADDR de 3 bits; puede haber dispositivos aparcados adicionales. No se traslada el límite ni esos roles al modelo BLE, que emplea central/periférico. La respuesta es 1+7. A1-114/A2-IV-11. Cotejo directo con el material ITIC Academy 2026 y la especificación Bluetooth Core 6.1; se explicita BR/EDR para no confundir la topología con BLE. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); la afinidad curricular no sustituye las fuentes técnicas primarias."
+      }
     },
     {
       "id": 1951,
