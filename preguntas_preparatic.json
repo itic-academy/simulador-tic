@@ -101212,15 +101212,67 @@
       "id": 2146,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Es posible personalizar un sistema SAP ERP añadiendo tablas, campos en tablas o transacciones al sistema?",
+      "texto": "En SAP ERP clásico basado en ABAP Dictionary, ¿qué puede hacerse mediante mecanismos de ampliación y desarrollo en el espacio de nombres de cliente?",
       "opciones": [
-        "No, SAP es un sistema estándar que se puede parametrizar de acuerdo a las necesidades del cliente, pero no añadir campos, tablas o transacciones.",
-        "No se puede añadir campos a las tablas estándar del sistema, pero sí es posible crear nuevas tablas y transacciones que operen sobre dichas tablas.",
-        "Es posible añadir nuevas transacciones que implementen nueva funcionalidad como nuevos informes, modelos de impresión, etc. pero no añadir nuevas tablas o nuevos campos a tablas estándar.",
-        "Es posible añadir campos a tablas, crear nuevas tablas o nuevas transacciones."
+        "Crear objetos propios y transacciones y, cuando la categoría de ampliación lo permite, añadir campos de cliente a tablas estándar mediante append structures.",
+        "Modificar sin restricciones cualquier campo de las tablas estándar, sin mecanismos de ampliación ni controles de compatibilidad.",
+        "Crear transacciones propias, pero nunca tablas de cliente ni campos adicionales en estructuras estándar.",
+        "Parametrizar el sistema, pero el entorno ABAP no permite desarrollar tablas ni transacciones de cliente."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La respuesta original «es posible todo» es demasiado amplia sin especificar sistema, versión ni mecanismo; no autoriza a modificar libremente el núcleo estándar. Se acota a SAP ERP clásico basado en ABAP Dictionary: es posible crear objetos propios y códigos de transacción y añadir campos de cliente a tablas estándar mediante append structures cuando la categoría de ampliación lo permite. Se distingue ese mecanismo soportado de modificar directamente definiciones estándar; en ABAP Cloud rigen además las APIs/tablas liberadas para extensión. Cotejo curricular: A1-72 incluye expresamente sistemas ERP. El bloque 30 de academia trata la diferencia entre ERP y CRM y su uso en los sistemas corporativos; los mecanismos concretos ABAP se contrastan con SAP Help. Correspondencia A1-72 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas.",
+      "clasificacion": {
+        "A1": [
+          "A1-72"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; A1-72 incluye expresamente sistemas ERP. El bloque 30 de academia trata la diferencia entre ERP y CRM y su uso en los sistemas corporativos; los mecanismos concretos ABAP se contrastan con SAP Help.",
+        "estado": "revisada",
+        "nota": "A1-72 incluye expresamente sistemas ERP. El bloque 30 de academia trata la diferencia entre ERP y CRM y su uso en los sistemas corporativos; los mecanismos concretos ABAP se contrastan con SAP Help. Correspondencia A1-72 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas."
+      },
+      "etiquetas": [
+        "SAP ERP",
+        "ABAP",
+        "ampliabilidad",
+        "append structures",
+        "tablas Z",
+        "transacciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://help.sap.com/saphelp_gbt10/helpdata/EN/cf/21eb61446011d189700000e8322d00/content.htm?no_cache=true",
+            "referencia": "SAP Help, ABAP Dictionary—Append Structures: permite añadir campos de cliente a tablas/estructuras, incluso estándar, mediante append structures en el espacio de nombres de cliente; la ampliación debe respetar la categoría de ampliación del objeto."
+          },
+          {
+            "url": "https://help.sap.com/docs/ABAP_PLATFORM/ec1c9c8191b74de98feb94001a95dd76/44f4ef984a1c2952e10000000a11466f.html?version=1709.011",
+            "referencia": "SAP Help, ABAP Dictionary—Creating Database Tables and Table Fields: documenta la creación de tablas de cliente desde SE11 y el uso de espacio de nombres de cliente para las clases de entrega aplicables."
+          },
+          {
+            "url": "https://help.sap.com/docs/ABAP_PLATFORM_NEW/bd833c8355f34e96a6e83096b38bf192/432c43b427bf601fe10000000a422035.html",
+            "referencia": "SAP Help, ABAP Platform 2025 FPS01, Creating and Maintaining Transactions: documenta la creación y mantenimiento de códigos de transacción desde SE93 o ABAP Workbench."
+          },
+          {
+            "url": "https://learning.sap.com/courses/building-data-models-with-the-abap-dictionary-and-abap-core-data-services/extending-dictionary-objects_b0c9bfa6-d415-408c-baed-2f15fb3a977f",
+            "referencia": "SAP Learning, Extending Dictionary Objects: describe append structures y el límite vigente de ABAP Cloud, donde solo se amplían tablas liberadas por el proveedor."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-72."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) ."
+          }
+        ],
+        "observaciones": "La respuesta original «es posible todo» es demasiado amplia sin especificar sistema, versión ni mecanismo; no autoriza a modificar libremente el núcleo estándar. Se acota a SAP ERP clásico basado en ABAP Dictionary: es posible crear objetos propios y códigos de transacción y añadir campos de cliente a tablas estándar mediante append structures cuando la categoría de ampliación lo permite. Se distingue ese mecanismo soportado de modificar directamente definiciones estándar; en ABAP Cloud rigen además las APIs/tablas liberadas para extensión. Cotejo curricular: A1-72 incluye expresamente sistemas ERP. El bloque 30 de academia trata la diferencia entre ERP y CRM y su uso en los sistemas corporativos; los mecanismos concretos ABAP se contrastan con SAP Help. Correspondencia A1-72 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas."
+      }
     },
     {
       "id": 2147,
@@ -101234,7 +101286,48 @@
         "<td>"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La opción `td` es la respuesta vigente: el estándar define este elemento como celda de datos de una tabla y diferencia `th`, que representa una celda de encabezado. El enunciado y las opciones ya permiten una única respuesta, por lo que se conservan sin cambios. Cotejo curricular: A1-77 incluye HTML y compatibilidad con estándares; A2-II-9 trata HTML y lenguajes de marca. El bloque 30 de academia cubre HTML semántico y estándares web; el significado de td se verifica en WHATWG. Correspondencia A1-77, A2-II-9 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; A1-77 incluye HTML y compatibilidad con estándares; A2-II-9 trata HTML y lenguajes de marca. El bloque 30 de academia cubre HTML semántico y estándares web; el significado de td se verifica en WHATWG.",
+        "estado": "revisada",
+        "nota": "A1-77 incluye HTML y compatibilidad con estándares; A2-II-9 trata HTML y lenguajes de marca. El bloque 30 de academia cubre HTML semántico y estándares web; el significado de td se verifica en WHATWG. Correspondencia A1-77, A2-II-9 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas."
+      },
+      "etiquetas": [
+        "HTML",
+        "WHATWG",
+        "tablas HTML",
+        "td",
+        "celda de datos"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://html.spec.whatwg.org/dev/tables.html#the-td-element",
+            "referencia": "WHATWG HTML Standard, §4.9.9: el elemento td representa una celda de datos; th representa una celda de encabezado."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-77."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) A2-II-9."
+          }
+        ],
+        "observaciones": "La opción `td` es la respuesta vigente: el estándar define este elemento como celda de datos de una tabla y diferencia `th`, que representa una celda de encabezado. El enunciado y las opciones ya permiten una única respuesta, por lo que se conservan sin cambios. Cotejo curricular: A1-77 incluye HTML y compatibilidad con estándares; A2-II-9 trata HTML y lenguajes de marca. El bloque 30 de academia cubre HTML semántico y estándares web; el significado de td se verifica en WHATWG. Correspondencia A1-77, A2-II-9 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas."
+      }
     },
     {
       "id": 2148,
@@ -101248,35 +101341,164 @@
         "AV1 y WEBP"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La pareja WebP y AVIF está formada por formatos de imagen. WebM es un formato contenedor de vídeo/audio y AV1 es un códec de vídeo, por lo que las demás parejas mezclan categorías o incluyen vídeo. El enunciado ya distingue los formatos de fichero de imagen y tiene clave única; se confirma sin cambiar el contenido. Cotejo curricular: A1-83 comprende el tratamiento de imágenes y tecnologías asociadas. El bloque 37 de academia desarrolla formatos y procesamiento de imágenes; las definiciones de WebP y AVIF se contrastan con Google y AOM. Correspondencia A1-83 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas.",
+      "clasificacion": {
+        "A1": [
+          "A1-83"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 37 Tratamiento de imágenes, OCR, biometría y gestión de contenidos, versión 2026.1; A1-83 comprende el tratamiento de imágenes y tecnologías asociadas. El bloque 37 de academia desarrolla formatos y procesamiento de imágenes; las definiciones de WebP y AVIF se contrastan con Google y AOM.",
+        "estado": "revisada",
+        "nota": "A1-83 comprende el tratamiento de imágenes y tecnologías asociadas. El bloque 37 de academia desarrolla formatos y procesamiento de imágenes; las definiciones de WebP y AVIF se contrastan con Google y AOM. Correspondencia A1-83 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas."
+      },
+      "etiquetas": [
+        "formatos de imagen",
+        "WebP",
+        "AVIF",
+        "formatos de vídeo"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://developers.google.com/speed/webp/docs/riff_container",
+            "referencia": "Google for Developers, WebP Container Specification: declara WebP un formato de imagen y documenta su contenedor RIFF."
+          },
+          {
+            "url": "https://aomedia.org/specifications/avif/",
+            "referencia": "Alliance for Open Media, AV1 Image File Format: define AVIF como formato de archivo de imagen basado en HEIF y AV1."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xTMCpPmwNi8hpb0nZ3sMqpgvrhLXT-yf/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 37 Tratamiento de imágenes, OCR, biometría y gestión de contenidos, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-83."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) ."
+          }
+        ],
+        "observaciones": "La pareja WebP y AVIF está formada por formatos de imagen. WebM es un formato contenedor de vídeo/audio y AV1 es un códec de vídeo, por lo que las demás parejas mezclan categorías o incluyen vídeo. El enunciado ya distingue los formatos de fichero de imagen y tiene clave única; se confirma sin cambiar el contenido. Cotejo curricular: A1-83 comprende el tratamiento de imágenes y tecnologías asociadas. El bloque 37 de academia desarrolla formatos y procesamiento de imágenes; las definiciones de WebP y AVIF se contrastan con Google y AOM. Correspondencia A1-83 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas."
+      }
     },
     {
       "id": 2149,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de las siguientes afirmaciones es VERDADERA:",
+      "texto": "Según NIST SP 800-57, ¿qué propiedad caracteriza a un algoritmo de clave pública correctamente dimensionado?",
       "opciones": [
-        "En un criptosistema simétrico el conocimiento de la clave pública no permite calcular la clave privada.",
-        "En un criptosistema de clave pública el conocimiento de la clave pública permite calcular la clave privada.",
-        "En un criptosistema de clave privada el conocimiento de la clave pública permite calcular la clave privada.",
-        "En un criptosistema asimétrico el conocimiento de la clave pública no permite calcular la clave privada."
+        "La clave pública permite calcular la clave privada, pero solo si ambas tienen la misma longitud.",
+        "La clave privada se deriva de cualquier clave pública mediante una operación directa y eficiente.",
+        "La clave pública y la privada son la misma clave, compartida por emisor y receptor.",
+        "Dada la clave pública, debe ser computacionalmente inviable determinar la clave privada correspondiente."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se mantiene la respuesta asimétrica, pero se elimina el contraste terminológicamente inconsistente del original entre «clave secreta», «clave privada» y «pública». La propiedad no es una imposibilidad matemática absoluta: NIST la formula como inviabilidad computacional bajo los parámetros y supuestos de seguridad del algoritmo. Cotejo curricular: A1-79 comprende algoritmos simétricos/asimétricos y A1-80 las claves públicas y privadas; A2-IV-12 trata técnicas criptográficas. El bloque 36 cubre criptografía e identidad digital; el requisito formal se contrasta con NIST. Correspondencia A1-79, A1-80 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas.",
+      "clasificacion": {
+        "A1": [
+          "A1-79",
+          "A1-80"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad, criptografía, identificación y firma, versión 2026.1; A1-79 comprende algoritmos simétricos/asimétricos y A1-80 las claves públicas y privadas; A2-IV-12 trata técnicas criptográficas. El bloque 36 cubre criptografía e identidad digital; el requisito formal se contrasta con NIST.",
+        "estado": "revisada",
+        "nota": "A1-79 comprende algoritmos simétricos/asimétricos y A1-80 las claves públicas y privadas; A2-IV-12 trata técnicas criptográficas. El bloque 36 cubre criptografía e identidad digital; el requisito formal se contrasta con NIST. Correspondencia A1-79, A1-80 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas."
+      },
+      "etiquetas": [
+        "criptografía asimétrica",
+        "clave pública",
+        "clave privada",
+        "NIST SP 800-57"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+            "referencia": "NIST SP 800-57 Part 1 Rev. 5, glosario: un algoritmo de clave pública usa claves pública y privada relacionadas y debe ser computacionalmente inviable determinar la privada a partir de la pública."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/public_key_cryptography",
+            "referencia": "NIST CSRC Glossary, Public Key Cryptography: recoge la definición de NIST SP 800-56B Rev. 2 sobre la inviabilidad computacional de derivar la clave privada desde la pública."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 Seguridad, criptografía, identificación y firma, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-79, A1-80."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) ."
+          }
+        ],
+        "observaciones": "Se mantiene la respuesta asimétrica, pero se elimina el contraste terminológicamente inconsistente del original entre «clave secreta», «clave privada» y «pública». La propiedad no es una imposibilidad matemática absoluta: NIST la formula como inviabilidad computacional bajo los parámetros y supuestos de seguridad del algoritmo. Cotejo curricular: A1-79 comprende algoritmos simétricos/asimétricos y A1-80 las claves públicas y privadas; A2-IV-12 trata técnicas criptográficas. El bloque 36 cubre criptografía e identidad digital; el requisito formal se contrasta con NIST. Correspondencia A1-79, A1-80 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas."
+      }
     },
     {
       "id": 2150,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según la arquitectura estándar de los SGBD, ANSI/X3/SPARC ¿en qué nivel se define el esquema de la base de datos?",
+      "texto": "En la arquitectura ANSI/X3/SPARC de tres esquemas, ¿qué nivel describe la estructura lógica global e integrada de la base de datos, independiente de las vistas externas y del almacenamiento físico?",
       "opciones": [
         "Nivel conceptual.",
-        "Nivel físico.",
+        "Nivel físico o interno.",
         "Nivel de aplicación.",
-        "Nivel lógico."
+        "Nivel externo o de vistas de usuario."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El original usa «esquema de la base de datos», expresión demasiado general porque el modelo distingue esquemas externos, conceptual e interno. Se delimita como la estructura lógica global e integrada, independiente de las vistas particulares y del almacenamiento físico; corresponde al nivel conceptual. Se cita el informe técnico conservado por NIST/GovInfo, que reproduce el modelo de referencia ANSI/X3/SPARC. Cotejo curricular: A1-63 incluye el modelo de referencia ANSI para sistemas de bases de datos y A2-II-5 nombra expresamente ANSI/SPARC. El bloque 29 de academia trata la arquitectura de tres niveles y la independencia de datos; la respuesta se fundamenta en el informe NBSIR 85-3173. Correspondencia A1-63, A2-II-5 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; A1-63 incluye el modelo de referencia ANSI para sistemas de bases de datos y A2-II-5 nombra expresamente ANSI/SPARC. El bloque 29 de academia trata la arquitectura de tres niveles y la independencia de datos; la respuesta se fundamenta en el informe NBSIR 85-3173.",
+        "estado": "revisada",
+        "nota": "A1-63 incluye el modelo de referencia ANSI para sistemas de bases de datos y A2-II-5 nombra expresamente ANSI/SPARC. El bloque 29 de academia trata la arquitectura de tres niveles y la independencia de datos; la respuesta se fundamenta en el informe NBSIR 85-3173. Correspondencia A1-63, A2-II-5 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas."
+      },
+      "etiquetas": [
+        "ANSI/X3/SPARC",
+        "arquitectura de tres esquemas",
+        "esquema conceptual",
+        "bases de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-f55f11d78745e6c51f75a39a44913f22/pdf/GOVPUB-C13-f55f11d78745e6c51f75a39a44913f22.pdf",
+            "referencia": "NBSIR 85-3173, Reference Model for DBMS Standardization, §2.1 y figura 4.2: presenta la arquitectura de tres esquemas ANSI/X3/SPARC y muestra los esquemas externos mapeados al conceptual, que se mapea al esquema interno."
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-3cac9cb7d048b38f397af01be9ccd220/pdf/GOVPUB-C13-3cac9cb7d048b38f397af01be9ccd220.pdf",
+            "referencia": "NBS Special Publication sobre arquitecturas de bases de datos: caracteriza el esquema conceptual como visión a largo plazo de la organización, independiente de sus bases de datos y aplicaciones de procesamiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-63."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) A2-II-5."
+          }
+        ],
+        "observaciones": "El original usa «esquema de la base de datos», expresión demasiado general porque el modelo distingue esquemas externos, conceptual e interno. Se delimita como la estructura lógica global e integrada, independiente de las vistas particulares y del almacenamiento físico; corresponde al nivel conceptual. Se cita el informe técnico conservado por NIST/GovInfo, que reproduce el modelo de referencia ANSI/X3/SPARC. Cotejo curricular: A1-63 incluye el modelo de referencia ANSI para sistemas de bases de datos y A2-II-5 nombra expresamente ANSI/SPARC. El bloque 29 de academia trata la arquitectura de tres niveles y la independencia de datos; la respuesta se fundamenta en el informe NBSIR 85-3173. Correspondencia A1-63, A2-II-5 cotejada con material académico de Drive y programas oficiales Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia encuadra el contenido en el temario; la verificación técnica se apoya en las fuentes primarias señaladas."
+      }
     },
     {
       "id": 2151,
