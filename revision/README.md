@@ -1,6 +1,24 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 463 (IDs 2626–2630). Acumulado: 2.630 preguntas examinadas, 2.563 verificadas (533 vigentes, 1.832 corregidas y 198 históricas) y 67 pendientes (31 de fuente y 36 de ambigüedad); quedan 9.493 sin revisar individualmente. Hay 2.084 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 464 (IDs 2631–2635). Acumulado: 2.635 preguntas examinadas, 2.568 verificadas (533 vigentes, 1.832 corregidas y 203 históricas) y 67 pendientes (31 de fuente y 36 de ambigüedad); quedan 9.488 sin revisar individualmente. Hay 2.089 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 464 — 28 de octubre
+
+IDs 2631–2635 revisados individualmente y conservados en `cambios-lote-464.json`. Se acotan los modelos versionados ISO/IEC 25010, McCall y CMMI, se explicita la reusabilidad y se documenta el alcance histórico de System Bang.
+
+- **2631 — adaptabilidad en ISO/IEC 25010:** en la edición 2011, Adaptability era subcaracterística de Portability. Se corrige una errata y se marca histórica: ISO/IEC 25010:2023 sustituye la edición 2011 y revisa el modelo, incluyendo el reemplazo de Portability por Flexibility. A1-98/A2-III-13.
+- **2632 — reusabilidad:** se especifica que se pregunta por el factor del modelo clásico de McCall: posibilidad de reutilizar partes del software al construir otras aplicaciones. Histórica. A1-98/A2-III-13.
+- **2633 — jerarquía McCall:** se explicita la relación factores–criterios–métricas del modelo clásico y se mantiene “todas las anteriores”. Histórica. A1-98/A2-III-13.
+- **2634 — Bang de DeMarco:** se delimita como System Bang sobre especificaciones estructuradas. Las primitivas abarcan transformaciones de DFD, elementos de datos y objetos/modelo de datos; se conserva “todas son correctas”. Histórica. A1-98/A2-III-13.
+- **2635 — proceso CMMI:** se acota a CMMI-DEV v1.3 en representación staged: Supplier Agreement Management pertenece al nivel de madurez 2. Histórica para no extrapolar esta estructura a versiones posteriores. A1-98/A2-III-13.
+
+Fuentes técnicas: [ISO/IEC 25010:2011, vista oficial](https://www.iso.org/obp/ui/?_escaped_fragment_=iso%3Astd%3Aiso-iec%3A25010%3Aed-1%3Av1%3Aen) y [ficha de ISO/IEC 25010:2023](https://www.iso.org/standard/78176.html), sustitución y cambios de modelo; [McCall et al., RADC-TR-77-369 (1977)](https://apps.dtic.mil/sti/pdfs/ADA049014.pdf); [SEI, Software Metrics, CMU/SEI-88-CM-012](https://resources.sei.cmu.edu/asset_files/CurriculumModule/1988_007_001_15608.pdf) y [Pressman, §19.3.2, Bang Metric](https://repository.unikom.ac.id/45085/1/Software%20Engineering%20-%20Roger%20S%20Pressman%20%5B5th%20edition%5D.pdf); [CMMI for Development v1.3, SEI](https://insights.sei.cmu.edu/documents/853/2010_005_001_15287.pdf), Supplier Agreement Management en nivel 2.
+
+Cotejo curricular: [ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026.1](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk), consultado: incluye McCall–SQuaRE, ISO/IEC 25010:2023, CMMI/ISO 330xx y métricas McCabe/Halstead; no trata Bang ni enumera el proceso específico de CMMI-DEV v1.3, que se comprobó con fuentes técnicas. Correspondencia contrastada con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), principalmente A1-98/A2-III-13.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.635 revisadas individualmente, 2.568 verificadas, 67 pendientes documentados y 9.488 todavía sin revisión de contenido. El inventario estructural no acredita revisión individual.
+
+## Lote 463 — 28 de octubre
 
 ## Lote 463 — 28 de octubre
 
