@@ -1,0 +1,29 @@
+const apply=require('./aplicar-lote.cjs');
+const records=[
+ [2021,[49],["I-10"],['Carpeta Ciudadana','Cl@ve','servicios comunes','favoritos'],[
+  {url:'https://administracionelectronica.gob.es/ctt/ccd/infoadicional',referencia:'Portal de Administración Electrónica, ficha funcional oficial de Carpeta Ciudadana: indica que no almacena información, el acceso se realiza con Cl@ve y permite personalizar servicios favoritos/destacados.'},
+  {url:'https://masinformacioncarpeta.carpetaciudadana.gob.es/infocc/mapa-web',referencia:'Portal actual de Mi Carpeta Ciudadana: mantiene las secciones Mis servicios y Mis preferencias.'}
+ ],null,'La opción 2 es correcta: el servicio permite personalizar los servicios favoritos o destacados. La ficha oficial aclara además que no necesita registro previo independiente y que la información se consulta en los sistemas de origen; por eso las opciones 0, 1 y 3 no describen la prestación. La interfaz pública vigente mantiene la sección Mis preferencias. A1-49/A2-I-10.','vigente'],
+ [2022,[126],["III-12"],['WS-Trust','OASIS','STS','token de seguridad','validación','renovación'],[
+  {url:'https://docs.oasis-open.org/ws-sx/ws-trust/v1.4/ws-trust.html',referencia:'OASIS WS-Trust 1.4, especificación normativa: define bindings para emisión de tokens por STS, renovación, cancelación y validación.'},
+  {url:'https://www.oasis-open.org/standard/ws-trust/',referencia:'OASIS, ficha oficial del estándar WS-Trust.'}
+ ],null,'WS-Trust define el marco de solicitud de tokens y las operaciones de emisión, renovación, cancelación y validación en un Security Token Service. WS-Security protege mensajes; WS-SecurityPolicy expresa requisitos/políticas; WS-SecureConversation establece contextos de seguridad de conversación. Respuesta 2. A1-126/A2-III-12.','vigente'],
+ [2023,[115],["II-8"],['IPv4','RFC 1918','direccionamiento privado','CIDR','clases de red obsoletas'],[
+  {url:'https://www.rfc-editor.org/rfc/rfc1918.html',referencia:'RFC 1918, §3: reserva 172.16.0.0–172.31.255.255 (172.16/12) para redes privadas.'},
+  {url:'https://www.rfc-editor.org/rfc/rfc4632.html',referencia:'RFC 4632: documenta CIDR y el enrutamiento sin clases; la antigua división en clases no debe usarse para determinar el prefijo de una dirección.'}
+ ],null,'172.30.20.20 pertenece al bloque privado 172.16.0.0/12 de RFC 1918. Se eliminan las opciones de clase C/D y se advierte que la clasificación por clases A/B/C es obsoleta frente a CIDR; no se infiere que la dirección sea pública por no ser una de las direcciones más comunes. A1-115/A2-II-8.','corregida'],
+ [2024,[120],["I-10"],['Red SARA','VPLS','calidad de servicio','gestión centralizada','histórica'],[
+  {url:'https://www.hacienda.gob.es/SGT/catalogo_sefp/254_guia_conex-red-aa-pp-esp-internet.pdf',referencia:'Guía oficial de aplicación de la NTI de requisitos de conexión a Red SARA, §4.1 (2011): describe VPLS/QoS y precisa que, aunque la seguridad se distribuye por nodos, la política es homogénea y la gestión centralizada; flexibilidad significa evolucionar y crecer.'},
+  {url:'https://administracionelectronica.gob.es/ctt/redsara',referencia:'Portal de Administración Electrónica, ficha actual de Red SARA: recoge como características fiabilidad, seguridad, capacidad, QoS e interoperabilidad; no atribuye gestión descentralizada.'}
+ ],null,'Se marca histórica y se acota a la guía técnica de 2011 que sustenta las opciones sobre VPLS. En esa guía, QoS y seguridad mediante VPN sí se describen; el diseño es punto-multipunto, pero la política es homogénea y la gestión centralizada. Flexibilidad alude a crecer y evolucionar, no a gestión descentralizada: la opción 3 es la que NO corresponde. La ficha oficial actual presenta características actualizadas, por lo que no se generalizan sin fecha los detalles antiguos de capacidad/tecnología. A1-120/A2-I-10.','historica'],
+ [2025,[62],["II-2"],['sistemas operativos móviles','HTC','Android','Symbian','BlackBerry','histórica'],[
+  {url:'https://investors.htc.com/en/about-htc/',referencia:'HTC, presentación corporativa oficial: se describe como empresa de productos/tecnología móvil y fabricante histórico de smartphones; HTC identifica marca/fabricante, no un sistema operativo.'},
+  {url:'https://www.android.com/phones/',referencia:'Android, página oficial de dispositivos: Android es el sistema operativo que incorporan teléfonos de distintos fabricantes.'}
+ ],null,'Se precisa el distractor como «HTC Mobile (marca/fabricante de dispositivos)»: HTC no es un sistema operativo. Android, SymbianOS y BlackBerry OS fueron sistemas operativos móviles, aunque Symbian y BlackBerry sean plataformas históricas; se evita sugerir que estas últimas sean actuales. Respuesta 2. A1-62/A2-II-2.','corregida']
+];
+const edits={
+ 2023:{texto:'La dirección IPv4 172.30.20.20, conforme a los bloques de direcciones reservados por RFC 1918:',opciones:['Pertenece al bloque privado 172.16.0.0/12.','Es una dirección pública globalmente enrutable.','Es una dirección de clase C.','Es una dirección de clase D.'],respuesta_correcta:0},
+ 2024:{texto:'Según la Guía de aplicación de la NTI de conexión a Red SARA (2011), ¿cuál NO es una característica descrita de la red?',opciones:['Fiabilidad: alta disponibilidad complementada por un centro de soporte 24 × 7.','Seguridad: uso de VPN y cifrado del tráfico troncal.','Calidad de servicio: la tecnología VPLS permite tratar cada dato según su naturaleza.','Flexibilidad: se basa en una política de gestión descentralizada.'],respuesta_correcta:3},
+ 2025:{texto:'¿Cuál de los siguientes NO es ni fue un sistema operativo móvil? (HTC Mobile designa aquí una marca/fabricante de dispositivos.)',opciones:['Android.','SymbianOS.','HTC Mobile (marca/fabricante de dispositivos).','RIM BlackBerry OS.'],respuesta_correcta:2}
+};
+apply({numero:'341',fecha:'2026-10-28',records,edits});
