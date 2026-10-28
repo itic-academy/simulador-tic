@@ -1,6 +1,24 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 354 (IDs 2086–2090). Acumulado: 2.090 preguntas examinadas, 2.034 verificadas (463 vigentes, 1.416 corregidas y 155 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.033 sin revisar individualmente. Hay 1.608 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 355 (IDs 2091–2095). Acumulado: 2.095 preguntas examinadas, 2.039 verificadas (465 vigentes, 1.419 corregidas y 155 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.028 sin revisar individualmente. Hay 1.611 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 355 — 28 de octubre
+
+IDs 2091–2095 revisados individualmente con el Reglamento de facturación consolidado a 2026, la Orden EHA/962/2007 y su resolución de desarrollo, el portal Facturae y el PCI SSC. Tres preguntas se corrigieron y dos se confirman vigentes en su contexto. Los originales íntegros se conservan en `cambios-lote-355.json`. Acumulado: 2.095 examinadas, 2.039 verificadas (465 vigentes, 1.419 corregidas y 155 históricas), 56 pendientes (27 de fuente y 29 de ambigüedad), 1.611 con cambios de contenido y 10.028 aún sin revisión individual.
+
+- La 2091 recoge que, en el régimen general, la autenticidad e integridad pueden acreditarse con cualquier medio de prueba admitido y con controles de gestión que generen pista de auditoría fiable; diferencia los medios específicos y la regla especial B2B añadida en 2026. A1-78/A2-I-9.
+- La 2092 confirma el ámbito territorial del trámite de homologación del software de digitalización certificada: entidad desarrolladora establecida en España o en otro Estado miembro de la UE, no en cualquier tercer país. A1-78/A2-I-9.
+- La 2093 sustituye una pregunta de opción «incorrecta» cuyo resto de afirmaciones dependía de matices por la fecha inequívoca: el RD 1619/2012 entró en vigor el 01-01-2013, no en 2014. A1-78/A2-I-9.
+- La 2094 confirma XAdES para el formato Facturae B2G 3.2.x, sin extrapolarlo a toda factura electrónica de cualquier relación. A1-78/A2-I-9.
+- La 2095 delimita PCI DSS como estándar de seguridad de PCI SSC y describe su alcance publicado; no lo presenta como una ley universal ni afirma que todas las entidades tengan idénticas obligaciones de validación. A1-78/A2-I-9.
+
+Cotejo curricular: [ITIC Academy, bloque 35/Tema 78 Comercio electrónico y factura electrónica](https://drive.google.com/file/d/1FPkzhljZaHbxADbo36QNm9U9gwGy7lIt/view?usp=drivesdk); correspondencia con programas y convocatorias oficiales [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) / [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La academia se usa para el alcance curricular, no como autoridad de respuesta.
+
+Fuentes: [RD 1619/2012 consolidado, arts. 8 y 10 y DF 4.ª](https://www.boe.es/eli/es/rd/2012/11/30/1619/con); [RD 238/2026, modificación y regla B2B](https://www.boe.es/eli/es/rd/2026/03/25/238/con/20260331); [Orden EHA/962/2007, art. 7.3.g](https://www.boe.es/eli/es/o/2007/04/10/eha962) y [Resolución AEAT de 24-10-2007](https://www.boe.es/eli/es/res/2007/10/24/(1)); [formato Facturae y XAdES](https://www.facturae.gob.es/formato) y [políticas de firma](https://www.facturae.gob.es/formato/politicas-firma-electronica); [PCI SSC, PCI DSS](https://www.pcisecuritystandards.org/standards/pci-dss/) y [FAQ de alcance para comercios](https://www.pcisecuritystandards.org/faqs/does-pci-dss-apply-to-merchants-who-outsource-all-payment-processing-operations-and-never-store-process-or-transmit-cardholder-data/).
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.095 registros de revisión y 10.028 preguntas pendientes de revisión individual. El inventario estructural no acredita revisión de contenido.
+
+## Lote 354 — 28 de octubre
 
 ## Lote 354 — 28 de octubre
 
