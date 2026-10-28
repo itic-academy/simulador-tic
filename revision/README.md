@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 381 (IDs 2221–2225). Acumulado: 2.225 preguntas examinadas, 2.164 verificadas (501 vigentes, 1.500 corregidas y 163 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.898 sin revisar individualmente. Hay 1.704 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 382 (IDs 2226–2230). Acumulado: 2.230 preguntas examinadas, 2.169 verificadas (504 vigentes, 1.501 corregidas y 164 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.893 sin revisar individualmente. Hay 1.706 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 382 — 28 de octubre
+
+IDs 2226–2230 revisados individualmente: tres respuestas se confirman, una pregunta se corrige y una queda clasificada como histórica tras fijar su fecha. Los cinco originales íntegros están en `cambios-lote-382.json`. Acumulado: 2.230 examinadas, 2.169 verificadas (504 vigentes, 1.501 corregidas y 164 históricas), 61 pendientes y 9.893 todavía sin revisión individual.
+
+- La 2226 confirma `ServiciosController` según la convención del ASP.NET MVC clásico; la carpeta `Controllers` por sí sola no valida cualquier nombre. A1-65/A2-III-12.
+- La 2227 confirma el nivel fonético para identificar teléfonos/unidades sonoras elementales; el acústico describe propiedades físicas de la señal. A1-70/A2-III-5.
+- La 2228 corrige las opciones para que la expansión exacta sea **Java Native Interface**; la opción antigua era una descripción funcional, no el significado literal de JNI. A1-67/A2-II-3.
+- La 2229 confirma estrella, copo de nieve y constelación de hechos como modelos dimensionales; la última comparte dimensiones entre tablas de hechos. A1-71/A2-II-4/III-15.
+- La 2230 queda como histórica y precisa que Chrome 45 retiró NPAPI en septiembre de 2015; la afirmación ya no se expresa como un cambio “de las últimas versiones”. A1-77/A2-III-12.
+
+Cotejo con Drive: bloque 30 (ASP.NET MVC, Java, navegadores y tecnologías web), bloque 32 (NLP y reconocimiento de voz) y bloque 34 (modelado dimensional y esquemas estrella/copo/constelación). Correspondencias cotejadas con `temario-oficial.json` y las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); el tema académico aporta encuadre, no reemplaza fuentes técnicas.
+
+Fuentes técnicas: Microsoft Learn (convención de controladores ASP.NET MVC); Aalto University y Universidad de Salamanca (niveles fonético/acústico); especificación JNI de Oracle; IBM y Microsoft Learn (modelado dimensional); guía oficial de deprecación NPAPI de Chromium. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.230 registros de revisión, 61 pendientes y 9.893 preguntas aún sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 381 — 28 de octubre
 
