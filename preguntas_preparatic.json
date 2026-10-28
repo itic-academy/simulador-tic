@@ -97302,15 +97302,51 @@
       "id": 2071,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un sistema operativo Linux, ¿cuál es el último script que se ejecuta antes de iniciarse el proceso 'login'?",
+      "texto": "En un sistema Linux histórico con arranque System V (SysV), ¿qué script local se ejecutaba tradicionalmente al final de la secuencia de arranque?",
       "opciones": [
-        "rc.local",
+        "/etc/rc.local (si estaba presente y configurado).",
         "autoexec.bat",
         "rc4",
         "prelogin"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. No existe una secuencia universal para las distribuciones Linux actuales: systemd ejecuta rc-local.service en late boot y en paralelo con muchos servicios. Se limita la pregunta al arranque histórico SysV, donde /etc/rc.local era el hook local tradicional ejecutado al final de la secuencia antes de habilitar el acceso normal.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 27 Sistemas operativos UNIX-LINUX y Microsoft, edición 2026; El bloque cubre administración Linux/UNIX; rc.local se contrasta con el manual oficial de systemd para distinguir su semántica SysV histórica de la actual.",
+        "estado": "revisada",
+        "nota": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. No existe una secuencia universal para las distribuciones Linux actuales: systemd ejecuta rc-local.service en late boot y en paralelo con muchos servicios. Se limita la pregunta al arranque histórico SysV, donde /etc/rc.local era el hook local tradicional ejecutado al final de la secuencia antes de habilitar el acceso normal."
+      },
+      "etiquetas": [
+        "Linux",
+        "Unix",
+        "arranque",
+        "rc.local",
+        "histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": {
+              "url": "https://www.freedesktop.org/software/systemd/man/250/rc-local.service.html",
+              "referencia": "systemd-rc-local-generator/rc-local.service: documenta que la versión System V tradicional de /etc/rc.local se ejecutaba «last» en el proceso de arranque; systemd conserva el hook por compatibilidad con semántica distinta."
+            },
+            "referencia": "systemd-rc-local-generator, rc-local.service(8)"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 27 Sistemas operativos UNIX-LINUX y Microsoft, edición 2026; cotejo de epígrafes y alcance curricular."
+          }
+        ],
+        "observaciones": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. No existe una secuencia universal para las distribuciones Linux actuales: systemd ejecuta rc-local.service en late boot y en paralelo con muchos servicios. Se limita la pregunta al arranque histórico SysV, donde /etc/rc.local era el hook local tradicional ejecutado al final de la secuencia antes de habilitar el acceso normal."
+      }
     },
     {
       "id": 2072,
@@ -97324,49 +97360,194 @@
         "El ENS no considera suficiente una autoevaluación en ningún sistema de información de categoría BÁSICA, MEDIA o ALTA."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. La clave 0 refleja literalmente el nivel de auditoría para categoría BÁSICA del anexo III del ENS. Debe precisarse que la autoevaluación es documentada, que el responsable de seguridad analiza su informe y que la regla no exime a categorías MEDIA o ALTA de auditoría. El art. 31 establece la auditoría regular y el anexo III concreta niveles y excepción.",
+      "clasificacion": {
+        "A1": [
+          "A1-38",
+          "A1-48"
+        ],
+        "A2": [
+          "A2-I-9",
+          "A2-II-11"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 16 Auditoría informática, versión 2026; El bloque 16 abarca metodología y auditoría del ENS; el bloque 22 cubre niveles y medidas del ENS. El detalle de autoevaluación básica se verifica directamente en BOE.",
+        "estado": "revisada",
+        "nota": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. La clave 0 refleja literalmente el nivel de auditoría para categoría BÁSICA del anexo III del ENS. Debe precisarse que la autoevaluación es documentada, que el responsable de seguridad analiza su informe y que la regla no exime a categorías MEDIA o ALTA de auditoría. El art. 31 establece la auditoría regular y el anexo III concreta niveles y excepción."
+      },
+      "etiquetas": [
+        "ENS",
+        "auditoría de seguridad",
+        "autoevaluación",
+        "categoría básica"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": {
+              "url": "https://www.boe.es/buscar/pdf/2022/BOE-A-2022-7191-consolidado.pdf",
+              "referencia": "Real Decreto 311/2022, de 3 de mayo, anexo III, apartado 2.1.a: los sistemas BÁSICOS no precisan auditoría; basta autoevaluación documentada por el personal administrador o por quien delegue. El responsable de seguridad analiza el informe."
+            },
+            "referencia": "RD 311/2022, anexo III, § 2.1.a"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1D93MNUzOWGwD6IyuWdxIMnHaL7aXvYhp/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 16 Auditoría informática, versión 2026; cotejo de epígrafes y alcance curricular."
+          }
+        ],
+        "observaciones": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. La clave 0 refleja literalmente el nivel de auditoría para categoría BÁSICA del anexo III del ENS. Debe precisarse que la autoevaluación es documentada, que el responsable de seguridad analiza su informe y que la regla no exime a categorías MEDIA o ALTA de auditoría. El art. 31 establece la auditoría regular y el anexo III concreta niveles y excepción."
+      }
     },
     {
       "id": 2073,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la estructura del sistema operativo Unix:",
+      "texto": "En sistemas Unix-like, ¿qué significa de forma precisa la convención de tratar muchos dispositivos como archivos?",
       "opciones": [
-        "Una de las funciones del kernel o núcleo es la de gestionar el sistema de archivos",
-        "El tratamiento de cualquier dispositivo periférico como un archivo",
-        "La shell muestra la interfaz entre el Unix y el usuario, incorpora una serie de utilidades para realizar las tareas solicitadas por el usuario",
-        "Dentro del kernel existen dos subsistemas: la interfaz de llamadas al sistema, y el planificador (scheduler)"
+        "El kernel prescinde de controladores y accede a cada periférico como a un archivo ordinario.",
+        "Muchos dispositivos se exponen mediante nodos especiales, normalmente en /dev, y operaciones de archivo, sin que esto elimine los controladores ni cubra todos los dispositivos.",
+        "La shell es el componente del kernel encargado de gestionar el sistema de archivos.",
+        "Todo periférico debe implementarse exclusivamente como un archivo regular."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. La pregunta original permitía varias respuestas: el kernel gestiona sistemas de archivos y la shell sirve de interfaz, mientras «todo dispositivo como archivo» es una simplificación. Se pregunta ahora por el significado acotado de la convención: muchos dispositivos se exponen con nodos especiales en /dev y operaciones de archivo, sin abolir sus controladores ni convertir todos los periféricos en archivos regulares.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 27 Sistemas operativos UNIX-LINUX y Microsoft, edición 2026; El bloque cubre fundamentos UNIX/Linux y administración; la descripción precisa de nodos especiales y /dev se verifica con documentación del kernel Linux.",
+        "estado": "revisada",
+        "nota": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. La pregunta original permitía varias respuestas: el kernel gestiona sistemas de archivos y la shell sirve de interfaz, mientras «todo dispositivo como archivo» es una simplificación. Se pregunta ahora por el significado acotado de la convención: muchos dispositivos se exponen con nodos especiales en /dev y operaciones de archivo, sin abolir sus controladores ni convertir todos los periféricos en archivos regulares."
+      },
+      "etiquetas": [
+        "Unix",
+        "Linux",
+        "dispositivos",
+        "nodos de dispositivo",
+        "sistema de archivos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": {
+              "url": "https://www.kernel.org/doc/html/latest/admin-guide/devices.html",
+              "referencia": "Linux kernel documentation, Linux allocated devices: registra los nodos de dispositivo de /dev, incluidos dispositivos de carácter, bloque y especiales, que exponen interfaces de dispositivo."
+            },
+            "referencia": "Linux kernel documentation, Linux allocated devices"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 27 Sistemas operativos UNIX-LINUX y Microsoft, edición 2026; cotejo de epígrafes y alcance curricular."
+          }
+        ],
+        "observaciones": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. La pregunta original permitía varias respuestas: el kernel gestiona sistemas de archivos y la shell sirve de interfaz, mientras «todo dispositivo como archivo» es una simplificación. Se pregunta ahora por el significado acotado de la convención: muchos dispositivos se exponen con nodos especiales en /dev y operaciones de archivo, sin abolir sus controladores ni convertir todos los periféricos en archivos regulares."
+      }
     },
     {
       "id": 2074,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes NO es un tipo de sistema OLAP (Online Analytical Processing)?",
+      "texto": "Si se comparan las tres arquitecturas de almacenamiento OLAP habituales —multidimensional, relacional e híbrida—, ¿cuál de estas siglas no identifica una de ellas?",
       "opciones": [
-        "HOLAP, Hybrid OLAP",
-        "MOLAP, Multidimensional OLAP",
-        "ROLAP, Relational OLAP",
-        "BOLAP, Business OLAP"
+        "HOLAP (Hybrid OLAP).",
+        "MOLAP (Multidimensional OLAP).",
+        "ROLAP (Relational OLAP).",
+        "BOLAP (Business OLAP)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. Se delimita la pregunta a las tres arquitecturas de almacenamiento comunes descritas por IBM: MOLAP, ROLAP y HOLAP. La expresión «tipo OLAP» puede abarcar otras taxonomías (p. ej., DOLAP o WOLAP), por lo que se evita presentar la lista como exhaustiva; BOLAP no es una de las tres categorías aquí contrastadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 34 Business Intelligence y Big Data, edición 2026; El bloque desarrolla BI, almacenes de datos, OLTP/OLAP y tipologías de cubos; la clasificación MOLAP/ROLAP/HOLAP se contrasta con IBM.",
+        "estado": "revisada",
+        "nota": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. Se delimita la pregunta a las tres arquitecturas de almacenamiento comunes descritas por IBM: MOLAP, ROLAP y HOLAP. La expresión «tipo OLAP» puede abarcar otras taxonomías (p. ej., DOLAP o WOLAP), por lo que se evita presentar la lista como exhaustiva; BOLAP no es una de las tres categorías aquí contrastadas."
+      },
+      "etiquetas": [
+        "OLAP",
+        "MOLAP",
+        "ROLAP",
+        "HOLAP",
+        "inteligencia de negocio"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": {
+              "url": "https://www.ibm.com/think/topics/olap",
+              "referencia": "IBM, What is OLAP?, sección MOLAP vs. ROLAP vs. HOLAP: distingue OLAP multidimensional, relacional e híbrido; «BOLAP» no figura entre estas tres arquitecturas de almacenamiento habituales."
+            },
+            "referencia": "IBM, What is OLAP?, MOLAP vs. ROLAP vs. HOLAP"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 34 Business Intelligence y Big Data, edición 2026; cotejo de epígrafes y alcance curricular."
+          }
+        ],
+        "observaciones": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. Se delimita la pregunta a las tres arquitecturas de almacenamiento comunes descritas por IBM: MOLAP, ROLAP y HOLAP. La expresión «tipo OLAP» puede abarcar otras taxonomías (p. ej., DOLAP o WOLAP), por lo que se evita presentar la lista como exhaustiva; BOLAP no es una de las tres categorías aquí contrastadas."
+      }
     },
     {
       "id": 2075,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señalar la respuesta correcta si hablamos de eficacia y eficiencia en los proyectos de tecnologías de la información:",
+      "texto": "Según ISO 9000:2015, ¿qué significa eficiencia?",
       "opciones": [
-        "La eficiencia de un sistema es la medida de la correcta utilización de equipos, instalaciones y personal que participa en él.",
-        "La eficacia de un sistema es la medida de la correcta utilización de equipos, instalaciones y personal que participan en él.",
-        "La eficiencia es la medida del cumplimiento de los objetivos del organismo y de los requisitos de los usuarios.",
-        "La eficacia óptima se logra cuando se alcanzan los objetivos de los usuarios con los mínimos recursos posibles."
+        "La relación entre el resultado logrado y los recursos utilizados.",
+        "El grado en que se realizan las actividades planificadas y se alcanzan los resultados planificados.",
+        "La satisfacción de los usuarios, con independencia de los resultados o recursos.",
+        "Alcanzar el resultado planificado sin considerar los recursos utilizados."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. La formulación original equiparaba eficiencia con uso correcto de recursos y mezclaba eficacia con lograr objetivos usando recursos mínimos. Se pregunta ahora por la definición exacta de ISO 9000: la eficiencia relaciona resultados y recursos; la eficacia mide la realización de actividades y resultados planificados.",
+      "clasificacion": {
+        "A1": [
+          "A1-35"
+        ],
+        "A2": [
+          "A2-II-15"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 12 Estrategias y herramientas del directivo público TIC, planificación estratégica, edición octubre de 2026; El bloque incorpora planificación de proyectos y dirección por objetivos y recursos; las definiciones normativas de eficacia y eficiencia se toman de ISO 9000:2015.",
+        "estado": "revisada",
+        "nota": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. La formulación original equiparaba eficiencia con uso correcto de recursos y mezclaba eficacia con lograr objetivos usando recursos mínimos. Se pregunta ahora por la definición exacta de ISO 9000: la eficiencia relaciona resultados y recursos; la eficacia mide la realización de actividades y resultados planificados."
+      },
+      "etiquetas": [
+        "gestión de proyectos TIC",
+        "eficacia",
+        "eficiencia",
+        "recursos",
+        "resultados"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": {
+              "url": "https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso%3A9000%3Aed-5%3Av1%3Aen",
+              "referencia": "ISO 9000:2015, vocabulario, entradas 3.7.16 y 3.7.17: eficiencia = relación entre resultado logrado y recursos utilizados; eficacia = grado en que se realizan actividades planificadas y se alcanzan resultados planificados."
+            },
+            "referencia": "ISO 9000:2015, §§ 3.7.16–3.7.17"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 12 Estrategias y herramientas del directivo público TIC, planificación estratégica, edición octubre de 2026; cotejo de epígrafes y alcance curricular."
+          }
+        ],
+        "observaciones": "Correspondencia curricular contrastada con Convocatorias oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262, cotejadas con revision/temario-oficial.json. El material académico sirve para verificar el alcance del temario; la clave se fundamenta en la norma o documentación técnica citada. La formulación original equiparaba eficiencia con uso correcto de recursos y mezclaba eficacia con lograr objetivos usando recursos mínimos. Se pregunta ahora por la definición exacta de ISO 9000: la eficiencia relaciona resultados y recursos; la eficacia mide la realización de actividades y resultados planificados."
+      }
     },
     {
       "id": 2076,
