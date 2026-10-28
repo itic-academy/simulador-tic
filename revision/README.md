@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 380 (IDs 2216–2220). Acumulado: 2.220 preguntas examinadas, 2.159 verificadas (497 vigentes, 1.499 corregidas y 163 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.903 sin revisar individualmente. Hay 1.703 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 381 (IDs 2221–2225). Acumulado: 2.225 preguntas examinadas, 2.164 verificadas (501 vigentes, 1.500 corregidas y 163 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.898 sin revisar individualmente. Hay 1.704 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 381 — 28 de octubre
+
+IDs 2221–2225 revisados individualmente. Cuatro respuestas se confirman y una pregunta se corrige para precisar el nivel que no pertenece a ANSI/SPARC. Se conservan los cinco originales completos en `cambios-lote-381.json`. Acumulado: 2.225 examinadas, 2.164 verificadas (501 vigentes, 1.500 corregidas y 163 históricas), 61 pendientes y 9.898 aún sin revisión individual.
+
+- La 2221 confirma que .NET Framework consta de CLR y biblioteca de clases; JIT es una función del CLR, no un componente independiente. A1-66/A2-III-11.
+- La 2222 reformula el reactivo: los tres niveles ANSI/SPARC son externo, conceptual e interno; una interfaz DML no es uno de esos niveles. A1-63/A2-II-5.
+- La 2223 confirma que la afirmación falsa es que XML Schema no se basa en namespaces: W3C define namespaces y target namespaces para los esquemas. A1-77/A2-II-9/III-12.
+- La 2224 confirma la formulación clásica de primera forma normal sin grupos repetitivos; se distingue de claves foráneas y dependencias de otras formas normales. A1-64/A2-II-5/III-4.
+- La 2225 confirma que el grado de multiprogramación refleja cuántos procesos residen/compiten en memoria en el modelo clásico. A1-59/A2-II-2.
+
+Cotejo con Drive: bloques 30 (.NET y tecnologías web), 29 (bases de datos), 27 (sistemas operativos); para la cuestión de namespaces se usa el contexto de XML/web del bloque 30. Correspondencias oficiales cotejadas con `temario-oficial.json` y las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Fuentes técnicas primarias: Microsoft Learn, informe ANSI/SPARC/NBS, W3C, IBM y materiales universitarios de sistemas operativos.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.225 registros de revisión, 61 pendientes y 9.898 preguntas todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 380 — 28 de octubre
 
