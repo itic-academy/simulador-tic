@@ -1,0 +1,34 @@
+const apply = require('./aplicar-lote.cjs');
+
+const records = [
+  [2456, [108], ['IV-7'], ['ADSL', 'xDSL', 'par de cobre', 'derivación puenteada', 'diafonía', 'atenuación'], [
+    { url: 'https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=4718', referencia: 'ITU-T G.992.1, ADSL sobre pares metálicos: la tasa alcanzable depende del entorno de despliegue y del ruido de línea.' },
+    { url: 'https://www.itu.int/dms_pub/itu-d/opb/stg/D-STG-SG02.12-2002-OAS-PDF-E.pdf', referencia: 'ITU-D, Report on DSL technologies, §§4.1 y 4.2: la diafonía limita prestaciones; longitud/calibre del bucle y derivaciones puenteadas producen atenuación, nulos e impedancias que reducen el rendimiento.' }
+  ], '', 'La tasa ADSL depende de la longitud y características del bucle, del ruido/diafonía y de derivaciones puenteadas. Se precisa la opción que no es un factor físico: el contenido semántico de la señal de voz que comparte simultáneamente el par no determina por sí mismo la tasa de datos; sí importan la coexistencia espectral y las condiciones eléctricas de la línea. La opción se reescribe para evitar confundir señalización del servicio con interferencia.', 'corregida'],
+  [2457, [116], ['IV-14'], ['VoIP', 'calidad de voz', 'MOS', 'ITU-T P.800', 'opinión subjetiva'], [
+    { url: 'https://www.itu.int/rec/T-REC-P.800/en', referencia: 'ITU-T P.800, Methods for subjective determination of transmission quality: define escalas de opinión para evaluar subjetivamente calidad percibida en conversación; las respuestas se agregan como mean conversation-opinion score.' },
+    { url: 'https://www.itu.int/rec/T-REC-P.800.1', referencia: 'ITU-T P.800.1 (07/2016), vigente: normaliza la terminología MOS y distingue puntuaciones subjetivas (MOS-CQS) de predicciones objetivas (MOS-CQO) y de planificación (MOS-CQE).' }
+  ], '', 'MOS (Mean Opinion Score) es una puntuación media de opiniones subjetivas para resumir calidad percibida de voz; no es por sí sola una técnica de medida. Existen métodos objetivos que predicen puntuaciones MOS y pruebas subjetivas normalizadas, por lo que se delimita el enunciado a la métrica basada en las valoraciones de oyentes.', 'corregida'],
+  [2458, [108], ['II-8'], ['HDLC', 'trama', 'flag', 'delimitador', '01111110'], [
+    { url: 'https://www.rfc-editor.org/rfc/rfc1662.html', referencia: 'IETF RFC 1662, §3.1: la secuencia de bandera HDLC-like es el octeto 0x7e (01111110), que delimita el comienzo y final de la trama.' },
+    { url: 'https://preview.sist.si/sist-preview/31050/aca5339e7939450ca2a2ba722177e703/ISO-IEC-13239-2000.pdf', referencia: 'ISO/IEC 13239:2000, definición 3.1.23: flag sequence es la secuencia única de ocho bits 01111110 empleada para delimitar apertura/cierre de una trama.' }
+  ], '', 'El delimitador HDLC es la bandera 01111110, por tanto tiene ocho bits. El original no ofrecía 8 como respuesta, así que se añade esa opción y se conserva el resto de alternativas como distractores.', 'corregida'],
+  [2459, [108, 115], ['II-8'], ['IP', 'datagrama', 'servicio no orientado a conexión', 'orden de entrega', 'conmutación de paquetes'], [
+    { url: 'https://www.rfc-editor.org/rfc/rfc1009.html', referencia: 'IETF RFC 1009, §1.1.2: el servicio IP de datagramas permite que se pierdan, dupliquen, sufran errores o se entreguen fuera de orden; la fiabilidad/reordenación corresponde a protocolos superiores cuando se requiere.' },
+    { url: 'https://www.rfc-editor.org/rfc/rfc4737.html', referencia: 'IETF RFC 4737: el orden de paquetes puede cambiar en tránsito, por ejemplo al utilizar caminos múltiples con distintos retardos o por inestabilidad de rutas.' }
+  ], '', 'El servicio IP no orientado a conexión trata cada datagrama independientemente y no garantiza una ruta o una secuencia de entrega. El original contenía varias afirmaciones demasiado absolutas sobre rutas virtuales y fallos; se reformula para que solo una alternativa contradiga la ausencia de garantía de orden: que todos los datagramas lleguen necesariamente en la secuencia enviada.', 'corregida'],
+  [2460, [108], ['IV-9'], ['SNMP', 'gestión de redes', 'agente', 'gestor', 'elemento gestionado', 'RFC 3411'], [
+    { url: 'https://www.rfc-editor.org/rfc/rfc3411.html', referencia: 'IETF RFC 3411, §1.2: un sistema SNMP comprende nodos/elementos gestionados con agentes, al menos una entidad gestora y el protocolo de gestión que comunica información entre entidades.' },
+    { url: 'https://www.rfc-editor.org/rfc/rfc1157.html', referencia: 'IETF RFC 1157, §3: el modelo SNMP clásico describe estaciones de gestión de red y elementos de red con agentes de gestión; SNMP intercambia la información entre estaciones y agentes.' }
+  ], '', 'En el modelo clásico, los elementos/dispositivos gestionados ejecutan agentes; las estaciones o entidades gestoras supervisan/controlan esos elementos y SNMP lleva la información de gestión. Un VLR es un registro de localización de redes móviles y no un componente de la arquitectura SNMP. Se mantiene la respuesta original, añadiendo precisión y la referencia a la arquitectura actualizada de RFC 3411.', 'corregida']
+];
+
+const edits = {
+  2456: { texto: 'En ADSL sobre un par de cobre, ¿qué elemento no determina por sí mismo la tasa de datos alcanzable?', opciones: ['La longitud del bucle de cobre.', 'La presencia de derivaciones puenteadas.', 'El contenido semántico de la señal de voz transmitida simultáneamente.', 'La diafonía de pares cercanos.'], respuesta_correcta: 2 },
+  2457: { texto: '¿Qué métrica expresa la media de valoraciones subjetivas de oyentes utilizada para resumir la calidad percibida de la voz?', opciones: ['Comparison of Speech Quality (CSQ).', 'Latency Rate Measure (LRM).', 'Algorithm Stream Rate (ASR).', 'Mean Opinion Score (MOS).'], respuesta_correcta: 3 },
+  2458: { texto: 'En HDLC, ¿cuántos bits forman la secuencia de bandera (flag) 01111110 que delimita una trama?', opciones: ['8 bits.', 'Variable.', '16 bits.', '32 bits.'], respuesta_correcta: 0 },
+  2459: { texto: '¿Cuál de las siguientes afirmaciones sobre el servicio IP de datagramas es incorrecta?', opciones: ['Cada datagrama puede encaminarse de forma independiente.', 'IP garantiza que los datagramas se entreguen en el mismo orden en que se enviaron.', 'Un datagrama puede perderse, duplicarse o llegar fuera de orden.', 'Los protocolos superiores pueden reordenar los datos cuando la aplicación requiere entrega ordenada.'], respuesta_correcta: 1 },
+  2460: { texto: 'En la arquitectura clásica de gestión SNMP, ¿cuál de estos elementos no es uno de sus componentes?', opciones: ['Los elementos o dispositivos gestionados.', 'Los agentes de gestión residentes en esos elementos.', 'Las estaciones o entidades gestoras.', 'El registro de ubicación de visitantes (VLR) de una red móvil.'], respuesta_correcta: 3 }
+};
+
+apply({numero:'429', fecha:'2026-10-28', records, edits});
