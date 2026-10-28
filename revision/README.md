@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 455 (IDs 2586–2590). Acumulado: 2.590 preguntas examinadas, 2.526 verificadas (532 vigentes, 1.815 corregidas y 179 históricas) y 64 pendientes (30 de fuente y 34 de ambigüedad); quedan 9.533 sin revisar individualmente. Hay 2.047 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 456 (IDs 2591–2595). Acumulado: 2.595 preguntas examinadas, 2.529 verificadas (532 vigentes, 1.817 corregidas y 180 históricas) y 66 pendientes (30 de fuente y 36 de ambigüedad); quedan 9.528 sin revisar individualmente. Hay 2.050 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 456 — 28 de octubre
+
+IDs 2591–2595 revisados individualmente y registrados en `cambios-lote-456.json`. Dos preguntas quedan pendientes porque sus términos no identifican un modelo o criterio inequívoco; se conservaron sin certificar las claves heredadas. Se acota el modelo histórico de McCall para separar transición y revisión, se corrige la opción de testabilidad y se especifica qué mide Halstead.
+
+- **2591 — productividad en software orientado a objetos:** `pendiente_ambiguedad`. El reactivo pregunta por el criterio “más importante” sin especificar una métrica, denominador, proceso u objetivo. Reutilización puede influir en productividad, pero no es una respuesta universal. Se conserva texto, opciones y clave original hasta localizar la fuente o delimitar el modelo.
+- **2592 — “teoría libre” de calidad:** `pendiente_ambiguedad`. La expresión no identifica un modelo conocido de coste de calidad; podría aludir a Crosby (“quality is free”), pero las opciones no se deducen de forma fiable de esa posible referencia. Se mantiene intacta hasta obtener la fuente o precisar el concepto.
+- **2593 — factores de transición en McCall:** se reformula como pregunta histórica explícita. Product transition agrupa interoperabilidad, reutilización y portabilidad; flexibilidad corresponde a product revision. La respuesta es Flexibilidad. A1-98/A2-III-13.
+- **2594 — testabilidad en McCall:** se sustituye “Verificabilidad” por “Facilidad de prueba (testability)” y se explicita el modelo histórico. La testabilidad es el esfuerzo de probar que el programa realiza la función prevista. A1-96/A1-98/A2-III-13.
+- **2595 — métricas de Halstead:** se especifica que las métricas derivan volumen, dificultad y esfuerzo de recuentos de operadores y operandos. A1-98/A2-III-13.
+
+Fuentes técnicas: [McCall, Richards y Walters, Factors in Software Quality, informe original RADC-TR-77-369 (1977), catálogo NTIS](https://ntrl.ntis.gov/NTRL/dashboard/searchResults/titleDetail/ADA049014.xhtml), modelo histórico y factores de calidad; [NIST SP 500-234, métricas de Halstead](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication500-234.pdf), recuentos de operadores/operandos y medidas derivadas. El reactivo 2591 no afirma que una métrica o criterio sea siempre el principal; para 2592 no se atribuye una teoría de coste sin identificación suficiente.
+
+Cotejo curricular ITIC Academy: [bloque 39 Calidad y Mantenimiento, edición 2026.1](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk), actualizado el 23-09-2026: incluye productividad, métricas, McCall, calidad y pruebas. Confirma pertinencia temática, pero no resuelve las ambigüedades de 2591–2592. Correspondencias contrastadas con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); el material académico aporta contexto, no evidencia decisoria.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.595 revisadas individualmente, 2.529 verificadas, cero errores, 66 pendientes documentados y 9.528 todavía sin revisión de contenido.
 
 ## Lote 455 — 28 de octubre
 
