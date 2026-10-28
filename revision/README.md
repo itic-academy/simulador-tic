@@ -1,6 +1,24 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 462 (IDs 2621–2625). Acumulado: 2.625 preguntas examinadas, 2.558 verificadas (532 vigentes, 1.831 corregidas y 195 históricas) y 67 pendientes (31 de fuente y 36 de ambigüedad); quedan 9.498 sin revisar individualmente. Hay 2.079 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 463 (IDs 2626–2630). Acumulado: 2.630 preguntas examinadas, 2.563 verificadas (533 vigentes, 1.832 corregidas y 198 históricas) y 67 pendientes (31 de fuente y 36 de ambigüedad); quedan 9.493 sin revisar individualmente. Hay 2.084 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 463 — 28 de octubre
+
+IDs 2626–2630 revisados individualmente y registrados en `cambios-lote-463.json`. Se eliminó una ambigüedad en costes de calidad, se delimitó SPICE a capacidad de proceso, se precisaron las métricas de McCabe y COCOMO 81 y se acotó la agrupación histórica de McCall.
+
+- **2626 — costes de calidad:** se reescribe el conjunto para que solo haya una afirmación falsa. PAF diferencia prevención/evaluación y fallos internos/externos; “costes fijos” no es una quinta categoría ni parte de la descomposición. Se evita presentar una desigualdad constante entre gasto de calidad y fallos como regla de rentabilidad. A1-98/A2-III-13.
+- **2627 — niveles SPICE:** se corrige la confusión entre madurez organizativa y capacidad de proceso. La dimensión continua de ISO/IEC 15504-2 tenía seis niveles, 0–5; la familia 15504 fue retirada y sustituida por las normas 33000. Histórica. A1-98/A2-III-13.
+- **2628 — McCabe:** se concreta que la complejidad ciclomática mide complejidad del flujo de control de un programa; se conserva la clave “complejidad”. A1-98/A2-III-13.
+- **2629 — COCOMO 81:** se corrige la clasificación de sus tres formas a básica, intermedia y detallada. La afirmación falsa es que el modelo original basaba el tamaño en puntos de función: su entrada de tamaño es KDSI. Los modos son orgánico, semiacoplado y empotrado. Histórica, sin extender el enunciado a COCOMO II. A1-98/A2-III-13.
+- **2630 — factores de operación de McCall:** se explicita Product Operation: corrección, fiabilidad, eficiencia, integridad y usabilidad. Los factores de revisión/transición de las otras opciones pertenecen a categorías distintas. Histórica. A1-98/A2-III-13.
+
+Fuentes técnicas: [ASQ, Cost of Quality](https://asq.org/quality-resources/cost-of-quality), categorías PAF y COPQ; [ISO/IEC 15504-2:2003](https://www.iso.org/standard/37458.html), ficha oficial de los seis niveles de capacidad y de su retirada; [ISO/IEC 33020:2019](https://www.iso.org/standard/78526.html), marco vigente para evaluación de capacidad de procesos; [McCabe, “A Complexity Measure” (1976)](https://doi.org/10.1109/tse.1976.233837), artículo original; [Boehm Center for Systems and Software Engineering, COCOMO 81](https://boehmcsse.org/tools/cocomo81/) y [NASA NTRS, COSTMODL](https://ntrs.nasa.gov/api/citations/19920013466/downloads/19920013466.pdf?attachment=true), formas, modos y tamaño KDSI; [McCall et al., RADC-TR-77-369 (1977)](https://apps.dtic.mil/sti/pdfs/ADA049014.pdf), categorías de factores del modelo.
+
+Cotejo curricular: [ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026.1](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk), que ofrece encuadre sobre calidad, modelos, métricas y aseguramiento. El temario no sustituye las fuentes que deciden la clasificación PAF, niveles SPICE, McCabe, COCOMO 81 o factores de McCall. Correspondencia contrastada con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), principalmente A1-98/A2-III-13.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.630 revisadas individualmente, 2.563 verificadas, 67 pendientes documentados y 9.493 todavía sin revisión de contenido. El inventario estructural no acredita revisión individual.
+
+## Lote 462 — 28 de octubre
 
 ## Lote 462 — 28 de octubre
 
@@ -17,8 +35,6 @@ Fuentes técnicas: [McCall, Richards y Walters, RADC-TR-77-369 (1977)](https://a
 Cotejo curricular: [ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026.1](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk), que cubre modelos de calidad, McCall, métricas McCabe/Halstead y aseguramiento; contextualiza el temario, pero la pareja normativa de MÉTRICA se acredita con el manual oficial. Correspondencias contrastadas con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). A2-D13 es el código interno de Academy; el tema oficial aplicado es A2-III-13.
 
 `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.625 revisadas individualmente, 2.558 verificadas, 67 pendientes documentados y 9.498 todavía sin revisión de contenido. El inventario estructural no acredita revisión individual.
-
-## Lote 461 — 28 de octubre
 
 ## Lote 461 — 28 de octubre
 
