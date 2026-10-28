@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 353 (IDs 2081–2085). Acumulado: 2.085 preguntas examinadas, 2.029 verificadas (463 vigentes, 1.412 corregidas y 154 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.038 sin revisar individualmente. Hay 1.603 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 354 (IDs 2086–2090). Acumulado: 2.090 preguntas examinadas, 2.034 verificadas (463 vigentes, 1.416 corregidas y 155 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.033 sin revisar individualmente. Hay 1.608 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 354 — 28 de octubre
+
+IDs 2086–2090 revisados individualmente con el manual de FACe y normativa, el estándar OASIS UBL, la especificación histórica Visa/MasterCard SET, la política oficial de firma Facturae y el Reglamento de facturación consolidado a 2026. Cuatro preguntas se corrigieron y una se conserva expresamente como histórica. Se guardan completas las versiones anteriores en `cambios-lote-354.json`. Acumulado: 2.090 examinadas, 2.034 verificadas (463 vigentes, 1.416 corregidas y 155 históricas), 56 pendientes (27 de fuente y 29 de ambigüedad), 1.608 con cambios de contenido y 10.033 todavía sin revisión individual.
+
+- La 2086 sustituye la afirmación no documentada de que los tres DIR3 pueden coincidir por la lista comprobable del manual oficial FACe: Oficina Contable, Órgano Gestor y Unidad Tramitadora. A1-78/A2-I-9.
+- La 2087 delimita UBL 2.4 como una biblioteca XML OASIS de documentos de negocio, no solo facturas; reescribe los distractores para que solo haya una opción incorrecta. A1-78/A2-I-9.
+- La 2088 conserva SET 1.0 como antecedente histórico. La especificación de 1997 separa el pedido destinado al comercio de las instrucciones de pago cifradas para la pasarela/adquirente; se corrige el falso origen «Visa e IBM en 1990». A1-78/A2-I-9.
+- La 2089 confirma que la política de firma de Facturae define perfiles XAdES para el XML; se evita afirmar que toda factura electrónica usa necesariamente el mismo perfil. A1-78/A2-I-9.
+- La 2090 se basa en los artículos 19–21 del RD 1619/2012, consolidado con última actualización a 31-03-2026: deben conservarse copias o matrices expedidas y las recibidas; se permite conservar electrónicamente cumpliendo autenticidad, integridad, legibilidad y acceso. A1-78/A2-I-9.
+
+Cotejo académico: [ITIC Academy, bloque 35/Tema 78 Comercio electrónico y factura electrónica](https://drive.google.com/file/d/1FPkzhljZaHbxADbo36QNm9U9gwGy7lIt/view?usp=drivesdk); programas oficiales y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) / [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La academia se usa para alcance curricular, no como autoridad de respuesta.
+
+Fuentes: [Manual de proveedores FACe (PAe/CTT), directorio DIR3](https://administracionelectronica.gob.es/ctt/resources/Soluciones/334/Descargas/FACe-Manual-Proveedores.pdf); [Ley 25/2013, arts. 5 y 9](https://www.boe.es/eli/es/l/2013/12/27/25/con); [OASIS UBL 2.4](https://docs.oasis-open.org/ubl/UBL-2.4.html); [SET 1.0 Book 1: Business Description, 31-05-1997](https://www.maithean.com/docs/set_bk1.pdf) y [IETF RFC 2828, entrada SET](https://www.rfc-editor.org/rfc/rfc2828.html); [política de firma Facturae v3.1, perfiles XAdES](https://www.facturae.gob.es/content/dam/facturae/formato/polticasfirma/a%29-versi%C3%B3n-3-1/Politica_Firma_formato_facturae_v3_1.pdf); [RD 1619/2012, texto consolidado](https://www.boe.es/eli/es/rd/2012/11/30/1619/con).
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.090 registros de revisión y 10.033 preguntas pendientes de revisión individual. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 353 — 28 de octubre
 
