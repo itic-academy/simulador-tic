@@ -1,0 +1,22 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const bankPath=path.join(__dirname,'..','preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-406.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ java:{url:'https://drive.google.com/file/d/1zk8UbyZCGo2GZrgnrA4aiwQxa8zi6S7U/view?usp=drivesdk',label:'ITIC Academy, «Tecnologías de sistemas de información», Temas 065/066/067/072/077/106, PDF de Drive: incluye A1-67, entorno de desarrollo Java. El documento encontrado es una edición 2025; la vigencia conceptual se contrasta con la JLS vigente, no se atribuye a Academy una norma técnica.'},
+ os:{url:'https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk',label:'ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1: A1-60 UNIX/Linux; A2-T2/C1 fundamentos y administración de sistemas operativos.'},
+ admin:{url:'https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk',label:'ITIC Academy, bloque 03 «Actuación administrativa y Administración digital», versión 2026.2 (01-10-2026): A1-8 régimen jurídico y procedimiento; A2-O8/Leyes 39 y 40/2015.'},
+ db:{url:'https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk',label:'ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31-08-2026): A1-89 modelado de dominio/ER; A2-D4 modelado, diseño y bases de datos.'},
+ protocols:{url:'https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk',label:'ITIC Academy, bloque 43 «Protocolos», actualización 2026: protocolos de transporte dentro de TCP/IP; A1-111/115 y A2-T8/C6 para arquitectura, capas, protocolos y redes.'}
+};
+const mapping={
+ 2346:{topics:['A1-67','A2-III-9'],doc:'java',detail:'A1-67 cubre el entorno Java; A2-III-9 aborda análisis y diseño orientado a objetos. No se fuerza la arquitectura Java EE/Jakarta EE (A2-III-10), pues la pregunta trata del concepto general de clase.'},
+ 2347:{topics:['A1-60','A2-II-2'],doc:'os',detail:'La tarea concreta de crontab se clasifica en administración de Linux (A1-60) y administración de sistemas operativos (A2-II-2/C1); no es específica de la administración de SGBD (A2-IV-2), por lo que se excluye.'},
+ 2348:{topics:['A1-8','A2-I-8'],doc:'admin',detail:'La pregunta corresponde al procedimiento administrativo y Ley 39/2015; se cita A1-8 y A2-I-8, no el tema A2-O8 relativo a sociedad de la información.'},
+ 2349:{topics:['A1-89','A2-III-4'],doc:'db',detail:'A1-89 comprende el modelo entidad-relación y análisis de dominio; A2-III-4 modelado y diseño de bases de datos.'},
+ 2350:{topics:['A1-111','A1-115','A2-II-8'],doc:'protocols',detail:'A1-111 contempla el modelo OSI y sus capas; A1-115 redes IP; A2-II-8 TCP/IP, capas y protocolos. Se asocia UDP con transporte, sin afirmar que IP sea de esa capa.'}
+};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+const calls=['https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938','https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262'];
+assert.equal(log.cambios.length,5);assert.deepEqual(log.cambios.map(c=>c.id),[2346,2347,2348,2349,2350]);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=mapping[c.id],d=docs[m.doc];assert.ok(q?.revision&&m&&d,`Falta ${c.id}`);assert.ok(m.topics.every(x=>official.has(x)),`Tema inexistente ${c.id}`);q.clasificacion.A1=m.topics.filter(x=>x.startsWith('A1-'));q.clasificacion.A2=m.topics.filter(x=>x.startsWith('A2-'));const curriculum=`${d.label}. ${m.detail}`;const note=`Cotejo curricular: ${curriculum} Correspondencia contrastada con revision/temario-oficial.json y los anexos de los programas oficiales A1 y A2 GSI, BOE-A-2025-25938 y BOE-A-2025-26262 (${calls.join('; ')}). Academy sirve como encuadre curricular; las respuestas se sustentan en las fuentes técnicas o normativas primarias indicadas.`;q.clasificacion.bloque_academia=curriculum;q.clasificacion.nota=note;q.revision.observaciones+=` ${note}`;q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q);}
+fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');console.log('Cotejo curricular del lote 406 completado.');
