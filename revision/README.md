@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 415 (IDs 2386–2390). Acumulado: 2.390 preguntas examinadas, 2.328 verificadas (521 vigentes, 1.639 corregidas y 168 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.733 sin revisar individualmente. Hay 1.853 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 416 (IDs 2391–2395). Acumulado: 2.395 preguntas examinadas, 2.333 verificadas (522 vigentes, 1.643 corregidas y 168 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.728 sin revisar individualmente. Hay 1.858 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 416 — 28 de octubre
+
+IDs 2391–2395 revisados individualmente con el BOE consolidado, el RGPD y el temario oficial A1/A2; se cotejó en Drive el bloque 08 de ITIC Academy (versión 2026.3). Se conservan íntegros los originales en `cambios-lote-416.json`.
+
+- **2391 — novedad de la LO 3/2018:** se mantiene la garantía de los derechos digitales como elemento expreso añadido por la LOPDGDD frente a la LO 15/1999; los derechos de acceso, oposición y rectificación ya existían. A1-27/A2-I-7; Academy, bloque 08.
+- **2392 — admisión de reclamaciones AEPD:** el art. 65.1 LO 3/2018 atribuye a la AEPD la evaluación de admisibilidad. Tras la reforma de la Ley 11/2023, debe notificar en tres meses; la ausencia de notificación significa que continúa la tramitación, no rechazo. Se actualiza el enunciado que arrastraba el plazo anterior de un mes. A1-27/A2-I-7; Academy, bloque 08.
+- **2393 — título y marco vigente:** se conserva la LO 3/2018 con su título oficial y se evita sugerir que sea por sí sola toda la normativa aplicable: se interpreta conjuntamente con el RGPD, directamente aplicable. A1-27/A2-I-7; Academy, bloque 08.
+- **2394 — mandato del Consejo Consultivo de la AEPD:** se confirma el plazo de cinco años del art. 24.1 RD 389/2021, con las excepciones y cobertura de vacantes de los apartados siguientes. A1-27/A2-I-7; Academy, bloque 08.
+- **2395 — rectificación y supresión:** la pregunta original mezclaba el derecho de «cancelación» de la derogada LO 15/1999 y una regla de gratuidad hoy sujeta a las excepciones del RGPD. Se rehace conforme al art. 12.5 RGPD: ejercicio gratuito como norma, con canon razonable o negativa solo ante solicitudes manifiestamente infundadas o excesivas, especialmente repetitivas, y carga de prueba del responsable. A1-27/A2-I-7; Academy, bloque 08.
+
+Fuentes primarias: [LO 3/2018 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673), arts. 1, 49 y 65; [Ley 11/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-11022), DF 9.ª; [Estatuto de la AEPD, RD 389/2021 consolidado](https://www.boe.es/buscar/act.php?id=BOE-A-2021-9175), art. 24; [RGPD en español](https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=es), art. 12.5; y [LO 15/1999 derogada](https://www.boe.es/buscar/act.php?id=BOE-A-1999-23750), arts. 16–17, para explicar la terminología histórica.
+
+Cotejo curricular Drive: [bloque 08 Protección de datos, versión 2026.3](https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk), cuya portada e índice incluyen RGPD/LOPDGDD, catálogo de derechos y autoridades de protección de datos. Los cinco registros se encuadran en A1-27 y A2-I-7, conforme a `temario-oficial.json` y los anexos de las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La academia es referencia curricular; los criterios y plazos se comprobaron en las fuentes primarias.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.395 registros de revisión, 62 pendientes y 9.728 aún sin revisar individualmente; 12 grupos repetidos y 61 candidatos de inspección contextual. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 415 — 28 de octubre
 
