@@ -102374,35 +102374,131 @@
       "id": 2166,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones es verdadera?",
+      "texto": "En un sistema operativo con memoria virtual, si la presión de memoria obliga a recuperar con mayor frecuencia páginas desde el almacenamiento de paginación, ¿qué efecto cabe esperar?",
       "opciones": [
-        "A mayor tamaño del quantum mayor overhead.",
-        "A mayor swapping mayor overhead.",
-        "A mayor throughput mayor overhead.",
-        "Ninguna de las anteriores es cierta."
+        "Disminuye la sobrecarga, porque el acceso al almacenamiento sustituye al acceso a RAM sin coste adicional.",
+        "Aumenta la sobrecarga por las operaciones adicionales de paginación y E/S.",
+        "No cambia el trabajo del sistema operativo; solo afecta a la capacidad del disco.",
+        "Ninguna de las anteriores."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El enunciado original mezclaba quantum de CPU, throughput y swapping sin definir «overhead». Se reformula para preguntar por la sobrecarga causada por paginación: con mayor presión y más recuperaciones de páginas desde almacenamiento, aumentan las operaciones de E/S y el trabajo del sistema; no se formula una ley general que relacione swapping con cualquier tipo de overhead. Cotejo curricular: A1-61 y A2-II-2 tratan sistemas operativos y memoria virtual; el bloque 27 de academia aborda sistemas Microsoft. Las consecuencias del paging se contrastan con documentación Microsoft Learn. Correspondencia A1-61, A2-II-2 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-61"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 Sistemas operativos, versión 2026; A1-61 y A2-II-2 tratan sistemas operativos y memoria virtual; el bloque 27 de academia aborda sistemas Microsoft. Las consecuencias del paging se contrastan con documentación Microsoft Learn.",
+        "estado": "revisada",
+        "nota": "A1-61 y A2-II-2 tratan sistemas operativos y memoria virtual; el bloque 27 de academia aborda sistemas Microsoft. Las consecuencias del paging se contrastan con documentación Microsoft Learn. Correspondencia A1-61, A2-II-2 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "Windows",
+        "gestión de memoria",
+        "paginación",
+        "swapping",
+        "fallos de página",
+        "sobrecarga"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/windows/azure-windows-vm-memory-issue",
+            "referencia": "Microsoft Learn, Troubleshoot high memory issues: bajo presión de memoria el SO mueve páginas entre RAM y almacenamiento de paginación para atender la demanda de los procesos."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/previous-versions/windows/desktop/xperf/hard-faults",
+            "referencia": "Microsoft Learn, Hard Faults: un fallo duro requiere recuperar páginas desde disco en lugar de las páginas residentes en memoria, añadiendo operaciones de E/S."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 Sistemas operativos, versión 2026; cotejo curricular. Material de academia utilizado para encuadre, no como autoridad técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; programa del anexo, tema(s) A1-61."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; programa del anexo, tema(s) A2-II-2."
+          }
+        ],
+        "observaciones": "El enunciado original mezclaba quantum de CPU, throughput y swapping sin definir «overhead». Se reformula para preguntar por la sobrecarga causada por paginación: con mayor presión y más recuperaciones de páginas desde almacenamiento, aumentan las operaciones de E/S y el trabajo del sistema; no se formula una ley general que relacione swapping con cualquier tipo de overhead. Cotejo curricular: A1-61 y A2-II-2 tratan sistemas operativos y memoria virtual; el bloque 27 de academia aborda sistemas Microsoft. Las consecuencias del paging se contrastan con documentación Microsoft Learn. Correspondencia A1-61, A2-II-2 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2167,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes características NO es aplicable en una aplicación desarrollada con la tecnología Java WebStart?",
+      "texto": "Sobre Java Web Start (tecnología retirada del JDK 11), ¿cuál de estas afirmaciones NO es correcta?",
       "opciones": [
-        "Permite ejecutar aplicaciones independientemente de cual sea la plataforma cliente",
-        "Soporta múltiples versiones de entornos de ejecución Java en el cliente",
-        "Se requiere la firma de las aplicaciones que vayan a ejecutarse en ese entorno para garantizar la seguridad del cliente",
-        "La actualización de las aplicaciones se hace en el servidor, y el cliente sólo precisa descargar los componentes actualizados"
+        "Permitía ejecutar aplicaciones Java en distintas plataformas cliente compatibles.",
+        "Podía solicitar una versión concreta del entorno de ejecución Java, y varias versiones podían coexistir.",
+        "Toda aplicación, incluso la limitada al sandbox, debía estar firmada para poder ejecutarse.",
+        "Comprobaba si existían actualizaciones y podía descargar componentes actualizados desde el servidor."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La afirmación de que toda aplicación Web Start necesita firma para ejecutarse es la que no es aplicable: las aplicaciones sin firmar podían ejecutarse en un entorno restringido (sandbox); la firma era necesaria para solicitar acceso irrestricto y mejoraba la identificación de su autor. Los controles de seguridad de Java 7/8 podían bloquear aplicaciones sin firmar por defecto o requerir excepciones, por lo que no se debe generalizar que bastaba con descargarlas sin advertencias. Se marca histórica: Web Start se eliminó del JDK 11. Cotejo curricular: A1-67 comprende el entorno Java y A2-II-3 las características y lenguajes de programación. El bloque 30 contextualiza Java y su entorno; seguridad y ciclo histórico de Java Web Start se verifican con documentación Oracle. Correspondencia A1-67, A2-II-3 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; A1-67 comprende el entorno Java y A2-II-3 las características y lenguajes de programación. El bloque 30 contextualiza Java y su entorno; seguridad y ciclo histórico de Java Web Start se verifican con documentación Oracle.",
+        "estado": "revisada",
+        "nota": "A1-67 comprende el entorno Java y A2-II-3 las características y lenguajes de programación. El bloque 30 contextualiza Java y su entorno; seguridad y ciclo histórico de Java Web Start se verifican con documentación Oracle. Correspondencia A1-67, A2-II-3 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "Java Web Start",
+        "JNLP",
+        "sandbox",
+        "firma de código",
+        "múltiples versiones JRE",
+        "obsoleto"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/8/docs/technotes/guides/javaws/developersguide/faq.html",
+            "referencia": "Oracle Java Web Start FAQ: comprueba automáticamente si hay una versión más reciente y la descarga; las aplicaciones sin firma se ejecutan en un entorno restringido y seguro, y solo necesitan firma para acceso irrestricto."
+          },
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/deployment/webstart/",
+            "referencia": "Oracle Java Tutorials, Java Web Start: documenta portabilidad entre plataformas, selección de múltiples versiones simultáneas de Java y sandbox por defecto."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/24/migrate/significant-changes-jdk-11.html",
+            "referencia": "Oracle JDK Migration Guide: Java Web Start y el stack de despliegue fueron retirados del JDK 11."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; cotejo curricular. Material de academia utilizado para encuadre, no como autoridad técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; programa del anexo, tema(s) A1-67."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; programa del anexo, tema(s) A2-II-3."
+          }
+        ],
+        "observaciones": "La afirmación de que toda aplicación Web Start necesita firma para ejecutarse es la que no es aplicable: las aplicaciones sin firmar podían ejecutarse en un entorno restringido (sandbox); la firma era necesaria para solicitar acceso irrestricto y mejoraba la identificación de su autor. Los controles de seguridad de Java 7/8 podían bloquear aplicaciones sin firmar por defecto o requerir excepciones, por lo que no se debe generalizar que bastaba con descargarlas sin advertencias. Se marca histórica: Web Start se eliminó del JDK 11. Cotejo curricular: A1-67 comprende el entorno Java y A2-II-3 las características y lenguajes de programación. El bloque 30 contextualiza Java y su entorno; seguridad y ciclo histórico de Java Web Start se verifican con documentación Oracle. Correspondencia A1-67, A2-II-3 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2168,
       "bloque": 0,
       "tema": 0,
-      "texto": "Qué le ocurre a una transacción si recupera todos los datos que satisfacen una condición y después otra transacción incorpora nuevos datos que satisfacen dicha condición, cuando repite la lectura inicial:",
+      "texto": "Durante una transacción, se consulta un conjunto de filas mediante un predicado. Otra transacción confirma una nueva fila que cumple ese predicado y, al repetir la consulta, aparece en el resultado. ¿Qué fenómeno de aislamiento describe?",
       "opciones": [
         "Nada",
         "Una lectura sucia",
@@ -102410,82 +102506,358 @@
         "Una escritura sucia"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se precisa que la segunda transacción confirma la inserción y que se repite la consulta por la misma condición. Si aparecen filas nuevas que satisfacen el predicado, es una lectura fantasma (phantom read), no una lectura sucia; la aparición concreta depende del nivel de aislamiento y de las garantías del SGBD. Cotejo curricular: A1-64 cubre el modelo relacional; A2-II-5 incluye SGBD relacionales y A2-III-4 problemas de concurrencia. El bloque 29 trata aislamiento y consistencia de transacciones; la definición de lectura fantasma se contrasta con PostgreSQL. Correspondencia A1-64, A2-II-5, A2-III-4 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; A1-64 cubre el modelo relacional; A2-II-5 incluye SGBD relacionales y A2-III-4 problemas de concurrencia. El bloque 29 trata aislamiento y consistencia de transacciones; la definición de lectura fantasma se contrasta con PostgreSQL.",
+        "estado": "revisada",
+        "nota": "A1-64 cubre el modelo relacional; A2-II-5 incluye SGBD relacionales y A2-III-4 problemas de concurrencia. El bloque 29 trata aislamiento y consistencia de transacciones; la definición de lectura fantasma se contrasta con PostgreSQL. Correspondencia A1-64, A2-II-5, A2-III-4 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "transacciones",
+        "aislamiento",
+        "lectura fantasma",
+        "concurrencia",
+        "predicate query"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+            "referencia": "PostgreSQL Documentation, Transaction Isolation: define phantom read como repetir una consulta por predicado y obtener un conjunto distinto por cambios confirmados en otra transacción; SERIALIZABLE impide el fenómeno."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; cotejo curricular. Material de academia utilizado para encuadre, no como autoridad técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; programa del anexo, tema(s) A1-64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; programa del anexo, tema(s) A2-II-5, A2-III-4."
+          }
+        ],
+        "observaciones": "Se precisa que la segunda transacción confirma la inserción y que se repite la consulta por la misma condición. Si aparecen filas nuevas que satisfacen el predicado, es una lectura fantasma (phantom read), no una lectura sucia; la aparición concreta depende del nivel de aislamiento y de las garantías del SGBD. Cotejo curricular: A1-64 cubre el modelo relacional; A2-II-5 incluye SGBD relacionales y A2-III-4 problemas de concurrencia. El bloque 29 trata aislamiento y consistencia de transacciones; la definición de lectura fantasma se contrasta con PostgreSQL. Correspondencia A1-64, A2-II-5, A2-III-4 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2169,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un buen sistema operativo, en cuanto a la gestión de memoria principal, debe:",
+      "texto": "En un sistema operativo generalista con memoria virtual, ¿qué función de gestión de memoria se ofrece normalmente a los procesos?",
       "opciones": [
-        "Repartirla entre los diversos procesos, de forma que cada uno sepa desde el comienzo que solo cuenta con la que se le ha asignado. Así el programador sabe lo que tiene que hacer en cada momento en cuanto al trasiego de datos a la memoria principal",
-        "No afectarle demasiado, dejando que ella misma se gestione sin intervención del sistema operativo",
-        "Asignar memoria dinámicamente a los programas según la vayan necesitando, de forma transparente para el programador",
-        "Reservarse una cantidad pequeña para sí mismo, dejando que cada aplicación tenga mayor cantidad limitada de forma fija"
+        "Asignar a cada proceso una cantidad física fija desde el inicio, que nunca puede cambiar.",
+        "Dejar que cada aplicación gestione por sí sola la RAM física y el trasiego con el disco.",
+        "Proporcionar mecanismos de asignación dinámica y administrar los espacios virtuales y su correspondencia con memoria física.",
+        "Reservar memoria únicamente para el sistema y limitar todas las aplicaciones a una cuota idéntica e invariable."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se sustituye la generalización «un buen sistema operativo» por una función verificable de un sistema generalista con memoria virtual: ofrece a los procesos mecanismos de asignación dinámica y gestiona el mapeo de memoria sin exigir al programa administrar directamente la memoria física. No se afirma que el SO determine por sí solo las necesidades lógicas de cada aplicación. Cotejo curricular: A1-61 y A2-II-2 abarcan fundamentos y administración de sistemas operativos. El bloque 27 trata memoria virtual y sistemas Microsoft; la función del administrador de memoria se comprueba con Microsoft Learn. Correspondencia A1-61, A2-II-2 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-61"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 Sistemas operativos, versión 2026; A1-61 y A2-II-2 abarcan fundamentos y administración de sistemas operativos. El bloque 27 trata memoria virtual y sistemas Microsoft; la función del administrador de memoria se comprueba con Microsoft Learn.",
+        "estado": "revisada",
+        "nota": "A1-61 y A2-II-2 abarcan fundamentos y administración de sistemas operativos. El bloque 27 trata memoria virtual y sistemas Microsoft; la función del administrador de memoria se comprueba con Microsoft Learn. Correspondencia A1-61, A2-II-2 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "sistema operativo",
+        "gestión de memoria",
+        "memoria virtual",
+        "espacio de direcciones",
+        "asignación dinámica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/virtual-address-spaces",
+            "referencia": "Microsoft Learn, Virtual Address Spaces: cada proceso de 32 o 64 bits tiene un espacio virtual propio y el sistema asigna páginas físicas según necesidades y restricciones."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/win32/memory/memory-management",
+            "referencia": "Microsoft Learn, Memory Management: el sistema operativo proporciona a procesos funciones para reservar, confirmar, liberar y administrar memoria virtual."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 Sistemas operativos, versión 2026; cotejo curricular. Material de academia utilizado para encuadre, no como autoridad técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; programa del anexo, tema(s) A1-61."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; programa del anexo, tema(s) A2-II-2."
+          }
+        ],
+        "observaciones": "Se sustituye la generalización «un buen sistema operativo» por una función verificable de un sistema generalista con memoria virtual: ofrece a los procesos mecanismos de asignación dinámica y gestiona el mapeo de memoria sin exigir al programa administrar directamente la memoria física. No se afirma que el SO determine por sí solo las necesidades lógicas de cada aplicación. Cotejo curricular: A1-61 y A2-II-2 abarcan fundamentos y administración de sistemas operativos. El bloque 27 trata memoria virtual y sistemas Microsoft; la función del administrador de memoria se comprueba con Microsoft Learn. Correspondencia A1-61, A2-II-2 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2170,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la opción correcta referente a ADO.NET",
+      "texto": "¿Cuál de estas afirmaciones describe correctamente ADO.NET?",
       "opciones": [
-        "ADO no permite sentencias SQL",
-        "No es posible integración con XML",
-        "Corresponde a ActiveX Data Object"
+        "No admite ejecutar consultas SQL contra proveedores de datos.",
+        "No permite integrar o intercambiar datos con XML.",
+        "Es el modelo administrado de acceso a datos de .NET: ofrece proveedores y DataSet/XML, con funcionalidad relacionada con ADO/COM pero sin ser el mismo componente.",
+        "Es únicamente otro nombre para el proveedor OLE DB."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La pregunta original no tenía una opción inequívocamente correcta: negaba soporte SQL y XML, mientras «corresponde a ActiveX Data Object» confundía ADO con ADO.NET. Microsoft describe ADO.NET como el modelo de acceso a datos administrado para .NET, con proveedores para SQL y otras fuentes, DataSet e integración con XML; ofrece funcionalidad similar a ADO basado en COM, pero no es ese mismo componente. Se reescribe una opción para recoger esa distinción. Cotejo curricular: A1-63/A2-II-5 cubren los SGBD y el acceso a datos; A1-66/A2-III-11, la plataforma .NET. Los bloques 29 y 30 encuadran bases de datos y tecnologías .NET; la descripción exacta de ADO.NET se verifica con Microsoft Learn. Correspondencia A1-63, A1-66, A2-II-5, A2-III-11 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-66"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; A1-63/A2-II-5 cubren los SGBD y el acceso a datos; A1-66/A2-III-11, la plataforma .NET. Los bloques 29 y 30 encuadran bases de datos y tecnologías .NET; la descripción exacta de ADO.NET se verifica con Microsoft Learn. | ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; A1-63/A2-II-5 cubren los SGBD y el acceso a datos; A1-66/A2-III-11, la plataforma .NET. Los bloques 29 y 30 encuadran bases de datos y tecnologías .NET; la descripción exacta de ADO.NET se verifica con Microsoft Learn.",
+        "estado": "revisada",
+        "nota": "A1-63/A2-II-5 cubren los SGBD y el acceso a datos; A1-66/A2-III-11, la plataforma .NET. Los bloques 29 y 30 encuadran bases de datos y tecnologías .NET; la descripción exacta de ADO.NET se verifica con Microsoft Learn. Correspondencia A1-63, A1-66, A2-II-5, A2-III-11 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "ADO.NET",
+        ".NET Framework",
+        "SQL",
+        "XML",
+        "ActiveX Data Objects",
+        "proveedores de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview",
+            "referencia": "Microsoft Learn, ADO.NET Overview: acceso uniforme a orígenes SQL y XML, proveedores de datos .NET y DataSet integrado con clases XML; es el modelo administrado de acceso a datos de .NET, no el componente COM ADO."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; cotejo curricular. Material de academia utilizado para encuadre, no como autoridad técnica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; cotejo curricular. Material de academia utilizado para encuadre, no como autoridad técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; programa del anexo, tema(s) A1-63, A1-66."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; programa del anexo, tema(s) A2-II-5, A2-III-11."
+          }
+        ],
+        "observaciones": "La pregunta original no tenía una opción inequívocamente correcta: negaba soporte SQL y XML, mientras «corresponde a ActiveX Data Object» confundía ADO con ADO.NET. Microsoft describe ADO.NET como el modelo de acceso a datos administrado para .NET, con proveedores para SQL y otras fuentes, DataSet e integración con XML; ofrece funcionalidad similar a ADO basado en COM, pero no es ese mismo componente. Se reescribe una opción para recoger esa distinción. Cotejo curricular: A1-63/A2-II-5 cubren los SGBD y el acceso a datos; A1-66/A2-III-11, la plataforma .NET. Los bloques 29 y 30 encuadran bases de datos y tecnologías .NET; la descripción exacta de ADO.NET se verifica con Microsoft Learn. Correspondencia A1-63, A1-66, A2-II-5, A2-III-11 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia aporta contexto curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2171,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué es el striping?",
+      "texto": "En RAID 0, ¿qué describe el striping de datos?",
       "opciones": [
-        "Procedimiento de comprobación para la detección de errores",
-        "Método por el que un bloque de datos se rompe en piezas, y estas se graban de modo simultáneo en varios discos",
-        "Proceso que genera valores de paridad",
-        "Ninguna de las anteriores"
+        "Un procedimiento de comprobación que detecta errores mediante datos de redundancia.",
+        "La distribución de bloques de datos en bandas entre varios discos para atender operaciones de E/S en paralelo.",
+        "El cálculo y almacenamiento de valores de paridad para reconstruir datos.",
+        "La duplicación de todos los datos en otro disco."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se acota la definición al nivel RAID 0 para distinguir distribución de datos de cálculo de paridad: RAID 0 reparte las unidades de datos por varios discos y permite atender E/S en paralelo, pero no incorpora redundancia ni tolerancia a fallos. Los niveles con paridad también pueden usar striping, por lo que la palabra aislada no significa «sin paridad» en todos los RAID. Cotejo curricular: A1-56 incluye sistemas de almacenamiento y A2-IV-5 arquitectura y tipos de almacenamiento; el bloque 26 trata discos, RAID y almacenamiento. La distinción entre striping y paridad se comprueba en documentación de IBM. Correspondencia A1-56, A2-IV-5 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; A1-56 incluye sistemas de almacenamiento y A2-IV-5 arquitectura y tipos de almacenamiento; el bloque 26 trata discos, RAID y almacenamiento. La distinción entre striping y paridad se comprueba en documentación de IBM.",
+        "estado": "revisada",
+        "nota": "A1-56 incluye sistemas de almacenamiento y A2-IV-5 arquitectura y tipos de almacenamiento; el bloque 26 trata discos, RAID y almacenamiento. La distinción entre striping y paridad se comprueba en documentación de IBM. Correspondencia A1-56, A2-IV-5 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "RAID 0",
+        "striping",
+        "distribución de bloques",
+        "almacenamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/ds8000/10.0.0?topic=implementation-raid-10-overview",
+            "referencia": "IBM Documentation, RAID 10 overview: explica que RAID 0 distribuye (stripe) los datos de volumen entre varios discos; la redundancia procede del mirroring añadido por RAID 10, no del striping por sí solo."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/flashsystem-5x00?topic=STHGUJ%2Fcom.ibm.flashsystem.5200.8401.doc%2Fmlt_glossary.htm",
+            "referencia": "IBM Storage glossary: define data striping como técnica de distribución de datos entre discos y distingue RAID 0 de la paridad y de la protección de datos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; cotejo del contenido curricular. Material de academia usado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; programa del anexo, tema(s) A1-56."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; programa del anexo, tema(s) A2-IV-5."
+          }
+        ],
+        "observaciones": "Se acota la definición al nivel RAID 0 para distinguir distribución de datos de cálculo de paridad: RAID 0 reparte las unidades de datos por varios discos y permite atender E/S en paralelo, pero no incorpora redundancia ni tolerancia a fallos. Los niveles con paridad también pueden usar striping, por lo que la palabra aislada no significa «sin paridad» en todos los RAID. Cotejo curricular: A1-56 incluye sistemas de almacenamiento y A2-IV-5 arquitectura y tipos de almacenamiento; el bloque 26 trata discos, RAID y almacenamiento. La distinción entre striping y paridad se comprueba en documentación de IBM. Correspondencia A1-56, A2-IV-5 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2172,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si se dispone correctamente de una solución CRM, ¿qué ventajas puede reportar? Señale la falsa:",
+      "texto": "Una solución CRM correctamente diseñada e integrada puede contribuir a varias mejoras. ¿Cuál NO es una ventaja operativa potencial?",
       "opciones": [
-        "Reducción de los costes del centro de contacto.",
-        "Aumento de la satisfacción de los clientes y de los porcentajes de conversión de las ventas.",
-        "Mejora de los resultados de ventas en todos los canales (directos, indirectos y a través de socios).",
-        "Aumento de los costes de las operaciones del servicio “in situ”."
+        "Reducir costes de atención en el centro de contacto mediante mejor información, automatización o autoservicio.",
+        "Mejorar potencialmente la satisfacción de los clientes y las tasas de conversión de ventas.",
+        "Mejorar potencialmente la coordinación y los resultados comerciales entre canales directos, indirectos y socios.",
+        "Aumentar los costes de las operaciones del servicio in situ."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se evita presentar beneficios potenciales como resultados garantizados. Con CRM correctamente diseñada e integrada, pueden reducirse costes de atención y servicio y mejorar satisfacción, conversión y coordinación multicanal; la reducción de costes del trabajo in situ es coherente con las capacidades de programación y optimización de Field Service. Por eso, el aumento de esos costes no es una ventaja. Se ha sustituido la afirmación absoluta sobre «todos los canales» por una mejora potencial de coordinación y resultados. Cotejo curricular: A1-72 incluye expresamente CRM; A2-II-12 trata CRM y centros de contacto. El bloque 30 encuadra los sistemas CRM; las ventajas se contrastan con documentación oficial de Microsoft y Oracle, sin presentar los resultados como garantía. Correspondencia A1-72, A2-II-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-72"
+        ],
+        "A2": [
+          "A2-II-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; A1-72 incluye expresamente CRM; A2-II-12 trata CRM y centros de contacto. El bloque 30 encuadra los sistemas CRM; las ventajas se contrastan con documentación oficial de Microsoft y Oracle, sin presentar los resultados como garantía.",
+        "estado": "revisada",
+        "nota": "A1-72 incluye expresamente CRM; A2-II-12 trata CRM y centros de contacto. El bloque 30 encuadra los sistemas CRM; las ventajas se contrastan con documentación oficial de Microsoft y Oracle, sin presentar los resultados como garantía. Correspondencia A1-72, A2-II-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "CRM",
+        "centro de contacto",
+        "servicio de campo",
+        "experiencia de cliente",
+        "canales de venta"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/service-to-cash-introduction",
+            "referencia": "Microsoft Learn, service-to-deliver: automatización y mejor gestión de recursos pueden mejorar la atención, satisfacción y los ingresos, y reducir costes asociados a prestar servicio y cobrar."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/dynamics365/field-service/overview",
+            "referencia": "Microsoft Learn, Dynamics 365 Field Service: programación y optimización del servicio in situ reducen desplazamientos, kilometraje y tiempos improductivos; incluye gestión coordinada de solicitudes, clientes y técnicos."
+          },
+          {
+            "url": "https://www.oracle.com/cx/what-is-crm/implementation/",
+            "referencia": "Oracle, CRM implementation: una implantación bien diseñada puede mejorar los procesos de ventas, la información disponible, la satisfacción y los indicadores comerciales; advierte que los resultados dependen de objetivos y ejecución."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; cotejo del contenido curricular. Material de academia usado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; programa del anexo, tema(s) A1-72."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; programa del anexo, tema(s) A2-II-12."
+          }
+        ],
+        "observaciones": "Se evita presentar beneficios potenciales como resultados garantizados. Con CRM correctamente diseñada e integrada, pueden reducirse costes de atención y servicio y mejorar satisfacción, conversión y coordinación multicanal; la reducción de costes del trabajo in situ es coherente con las capacidades de programación y optimización de Field Service. Por eso, el aumento de esos costes no es una ventaja. Se ha sustituido la afirmación absoluta sobre «todos los canales» por una mejora potencial de coordinación y resultados. Cotejo curricular: A1-72 incluye expresamente CRM; A2-II-12 trata CRM y centros de contacto. El bloque 30 encuadra los sistemas CRM; las ventajas se contrastan con documentación oficial de Microsoft y Oracle, sin presentar los resultados como garantía. Correspondencia A1-72, A2-II-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2173,
       "bloque": 0,
       "tema": 0,
-      "texto": "Las iniciales ACID en una transacción ¿qué significan?:",
+      "texto": "En una transacción, ¿qué significan las siglas ACID?",
       "opciones": [
-        "Aislamiento, Capacidad, Autenticidad y Persistencia.",
-        "Atomicidad, Consistencia, Aislamiento y Persistencia.",
-        "Atomicidad, Confidencialidad, Aislamiento y Privacidad.",
+        "Aislamiento, capacidad, autenticidad y persistencia.",
+        "Atomicidad, consistencia, aislamiento y durabilidad.",
+        "Atomicidad, confidencialidad, aislamiento y privacidad.",
         "Ninguna de las anteriores."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se corrige la traducción no estándar «persistencia» por «durabilidad», término español habitual para durability. ACID significa atomicidad, consistencia, aislamiento y durabilidad: una transacción completa o no produce efectos parciales, conserva las reglas de consistencia, controla la interacción concurrente y mantiene lo confirmado ante fallos según las garantías del gestor. Cotejo curricular: A1-63 cubre sistemas gestores de bases de datos; A2-II-5 trata SGBD relacionales y A2-III-4, diseño, concurrencia y transacciones. El bloque 29 cubre arquitectura y propiedades de los gestores; la expansión ACID se verifica con Microsoft Learn. Correspondencia A1-63, A2-II-5, A2-III-4 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; A1-63 cubre sistemas gestores de bases de datos; A2-II-5 trata SGBD relacionales y A2-III-4, diseño, concurrencia y transacciones. El bloque 29 cubre arquitectura y propiedades de los gestores; la expansión ACID se verifica con Microsoft Learn.",
+        "estado": "revisada",
+        "nota": "A1-63 cubre sistemas gestores de bases de datos; A2-II-5 trata SGBD relacionales y A2-III-4, diseño, concurrencia y transacciones. El bloque 29 cubre arquitectura y propiedades de los gestores; la expansión ACID se verifica con Microsoft Learn. Correspondencia A1-63, A2-II-5, A2-III-4 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "transacciones",
+        "ACID",
+        "atomicidad",
+        "consistencia",
+        "aislamiento",
+        "durabilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/win32/cossdk/acid-properties",
+            "referencia": "Microsoft Learn, ACID Properties: desarrolla atomicity, consistency, isolation y durability y define el comportamiento esperado de las transacciones."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide",
+            "referencia": "Microsoft Learn, SQL Server transaction locking and row versioning: presenta las cuatro propiedades de una transacción como atomicidad, consistencia, aislamiento y durabilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; cotejo del contenido curricular. Material de academia usado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; programa del anexo, tema(s) A1-63."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; programa del anexo, tema(s) A2-II-5, A2-III-4."
+          }
+        ],
+        "observaciones": "Se corrige la traducción no estándar «persistencia» por «durabilidad», término español habitual para durability. ACID significa atomicidad, consistencia, aislamiento y durabilidad: una transacción completa o no produce efectos parciales, conserva las reglas de consistencia, controla la interacción concurrente y mantiene lo confirmado ante fallos según las garantías del gestor. Cotejo curricular: A1-63 cubre sistemas gestores de bases de datos; A2-II-5 trata SGBD relacionales y A2-III-4, diseño, concurrencia y transacciones. El bloque 29 cubre arquitectura y propiedades de los gestores; la expansión ACID se verifica con Microsoft Learn. Correspondencia A1-63, A2-II-5, A2-III-4 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2174,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué rol de Windows Server contiene el servidor para NFS?",
+      "texto": "En Windows Server, ¿dentro de qué rol de servidor se agrega el servicio de rol Server for NFS?",
       "opciones": [
         "Servicios de Escritorio remoto",
         "Servicios de archivos y almacenamiento",
@@ -102493,13 +102865,54 @@
         "Windows Server Update Services"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se delimita la jerarquía solicitada: Server for NFS es un servicio de rol dentro de File and iSCSI Services, que a su vez pertenece al rol File and Storage Services. Entre las opciones dadas, «Servicios de archivos y almacenamiento» es el rol que lo contiene; no se confunde el nombre del rol con el servicio NFS concreto. Cotejo curricular: A1-61 comprende sistemas operativos Microsoft y A1-57 servidores; A2-II-2 incluye administración de Windows. El bloque 27 incluye sistemas Microsoft/Windows Server; la jerarquía del rol NFS se verifica en Microsoft Learn. Correspondencia A1-61, A1-57, A2-II-2 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-61",
+          "A1-57"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 Sistemas operativos, versión 2026; A1-61 comprende sistemas operativos Microsoft y A1-57 servidores; A2-II-2 incluye administración de Windows. El bloque 27 incluye sistemas Microsoft/Windows Server; la jerarquía del rol NFS se verifica en Microsoft Learn.",
+        "estado": "revisada",
+        "nota": "A1-61 comprende sistemas operativos Microsoft y A1-57 servidores; A2-II-2 incluye administración de Windows. El bloque 27 incluye sistemas Microsoft/Windows Server; la jerarquía del rol NFS se verifica en Microsoft Learn. Correspondencia A1-61, A1-57, A2-II-2 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "Windows Server",
+        "NFS",
+        "File and Storage Services",
+        "File and iSCSI Services"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-server/storage/nfs/deploy-nfs",
+            "referencia": "Microsoft Learn, Deploy Network File System, aplicable a Windows Server 2016–2025: el asistente instala Server for NFS bajo File and Storage Services > File and iSCSI Services."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 Sistemas operativos, versión 2026; cotejo del contenido curricular. Material de academia usado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; programa del anexo, tema(s) A1-61, A1-57."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; programa del anexo, tema(s) A2-II-2."
+          }
+        ],
+        "observaciones": "Se delimita la jerarquía solicitada: Server for NFS es un servicio de rol dentro de File and iSCSI Services, que a su vez pertenece al rol File and Storage Services. Entre las opciones dadas, «Servicios de archivos y almacenamiento» es el rol que lo contiene; no se confunde el nombre del rol con el servicio NFS concreto. Cotejo curricular: A1-61 comprende sistemas operativos Microsoft y A1-57 servidores; A2-II-2 incluye administración de Windows. El bloque 27 incluye sistemas Microsoft/Windows Server; la jerarquía del rol NFS se verifica en Microsoft Learn. Correspondencia A1-61, A1-57, A2-II-2 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2175,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un lenguaje de programación que permita desarrollar aplicaciones de .NET Framework cumple las especificaciones de:",
+      "texto": "Si un compilador genera CIL conforme al estándar ECMA-335 para producir aplicaciones .NET interoperables, ¿a qué especificación de la CLI se ajusta?",
       "opciones": [
         "Custom Language Runtime (CLR).",
         "Nativa Language Generator (NLgen).",
@@ -102507,7 +102920,53 @@
         "Common Language Infrastructure (CLI)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se corrige una imprecisión conceptual: el estándar de conformidad pertinente es CLI (ECMA-335), no el CLR, que es una implementación/entorno de ejecución, ni BCL, que designa bibliotecas. Técnicamente quien declara conformidad es el compilador o la implementación del lenguaje que genera CIL conforme a ECMA-335; no se afirma que el lenguaje como tal sea una implementación. Cotejo curricular: A1-66 y A2-III-11 incluyen el entorno y la plataforma Microsoft .NET. El bloque 30 contextualiza las tecnologías de sistemas y .NET; la conformidad de CLI y CIL se verifica en ECMA-335, no en el material de academia. Correspondencia A1-66, A2-III-11 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; A1-66 y A2-III-11 incluyen el entorno y la plataforma Microsoft .NET. El bloque 30 contextualiza las tecnologías de sistemas y .NET; la conformidad de CLI y CIL se verifica en ECMA-335, no en el material de academia.",
+        "estado": "revisada",
+        "nota": "A1-66 y A2-III-11 incluyen el entorno y la plataforma Microsoft .NET. El bloque 30 contextualiza las tecnologías de sistemas y .NET; la conformidad de CLI y CIL se verifica en ECMA-335, no en el material de academia. Correspondencia A1-66, A2-III-11 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        ".NET Framework",
+        "ECMA-335",
+        "CLI",
+        "CLR",
+        "BCL",
+        "CIL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://ecma-international.org/publications-and-standards/standards/ecma-335/",
+            "referencia": "Ecma International, ECMA-335 Common Language Infrastructure: estándar que especifica infraestructura, sistema de tipos, VES y CIL para ejecutar aplicaciones producidas desde distintos lenguajes."
+          },
+          {
+            "url": "https://dev.ecma-international.org/wp-content/uploads/ECMA-335_6th_edition_june_2012.pdf",
+            "referencia": "ECMA-335, sexta edición, apartado I.2 Conformance: un compilador que genera CIL y declara conformidad produce archivos y CIL conforme a los requisitos del estándar."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; cotejo del contenido curricular. Material de academia usado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; programa del anexo, tema(s) A1-66."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; programa del anexo, tema(s) A2-III-11."
+          }
+        ],
+        "observaciones": "Se corrige una imprecisión conceptual: el estándar de conformidad pertinente es CLI (ECMA-335), no el CLR, que es una implementación/entorno de ejecución, ni BCL, que designa bibliotecas. Técnicamente quien declara conformidad es el compilador o la implementación del lenguaje que genera CIL conforme a ECMA-335; no se afirma que el lenguaje como tal sea una implementación. Cotejo curricular: A1-66 y A2-III-11 incluyen el entorno y la plataforma Microsoft .NET. El bloque 30 contextualiza las tecnologías de sistemas y .NET; la conformidad de CLI y CIL se verifica en ECMA-335, no en el material de academia. Correspondencia A1-66, A2-III-11 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para el encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2176,
