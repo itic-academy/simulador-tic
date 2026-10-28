@@ -1,4 +1,4 @@
-# Revisión del banco TIC — estado al 28 de octubre de 2026
+# Revisión del banco TIC — estado al 29 de octubre de 2026
 
 Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 467 (IDs 2646–2650). Acumulado: 2.650 preguntas examinadas, 2.583 verificadas (534 vigentes, 1.840 corregidas y 209 históricas) y 67 pendientes (31 de fuente y 36 de ambigüedad); quedan 9.473 sin revisar individualmente. Hay 2.104 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
