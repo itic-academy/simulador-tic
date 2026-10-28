@@ -1,0 +1,339 @@
+{
+  "fecha": "2026-10-28",
+  "alcance": "IDs 2451–2455; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 2451,
+      "original": {
+        "id": 2451,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los protocolos de control de enlace se orientan:",
+        "opciones": [
+          "A objeto",
+          "A baudio",
+          "A carácter o a bit",
+          "A una trama de tamaño variable, hasta 256 bits"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2451,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la clasificación clásica de los protocolos de control de enlace, ¿qué distingue a los orientados a carácter/byte de los orientados a bit?",
+        "opciones": [
+          "Los primeros interpretan unidades y delimitadores en límites de carácter; los segundos tratan el flujo como bits y pueden usar delimitadores y bit stuffing.",
+          "Los primeros solo funcionan en redes inalámbricas y los segundos solo en fibra óptica.",
+          "Los primeros pertenecen siempre a la capa de transporte y los segundos a la de red.",
+          "No existe diferencia de encuadre: ambos exigen tramas de longitud fija de 256 bits."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La clasificación clásica distingue protocolos de enlace orientados a carácter/byte (las unidades y delimitadores se interpretan en límites de carácter) de los orientados a bit (se procesa el flujo de bits y se emplea, por ejemplo, bit stuffing). HDLC es un ejemplo de protocolo orientado a bits y BSC/Bisync es orientado a caracteres. Se aclara que es una clasificación didáctica histórica, no una propiedad universal de todo protocolo moderno. Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); trata capa de enlace, UDP/TCP, SDH/ATM, medios de transmisión e interconexión. Protocolos de control de enlace, encuadre por bits y por caracteres. Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-108"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); trata capa de enlace, UDP/TCP, SDH/ATM, medios de transmisión e interconexión. Protocolos de control de enlace, encuadre por bits y por caracteres. Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes."
+        },
+        "etiquetas": [
+          "control de enlace",
+          "capa de enlace",
+          "protocolos orientados a bit",
+          "protocolos orientados a carácter",
+          "HDLC",
+          "BSC"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.oreilly.com/library/view/fundamentals-of-data/9781119436256/c03.xhtml",
+              "referencia": "Fundamentals of Data Communication Networks, capítulo 3: describe HDLC como protocolo orientado a bits y contrasta el encuadre actual con los protocolos históricos orientados a caracteres."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1662.html",
+              "referencia": "IETF RFC 1662, §4: PPP usa un método de encuadre HDLC-like con una bandera de bits y mecanismos de transparencia distintos según enlaces síncronos o asíncronos; ayuda a distinguir framing por bits y por octetos."
+            }
+          ],
+          "observaciones": "La clasificación clásica distingue protocolos de enlace orientados a carácter/byte (las unidades y delimitadores se interpretan en límites de carácter) de los orientados a bit (se procesa el flujo de bits y se emplea, por ejemplo, bit stuffing). HDLC es un ejemplo de protocolo orientado a bits y BSC/Bisync es orientado a caracteres. Se aclara que es una clasificación didáctica histórica, no una propiedad universal de todo protocolo moderno. Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); trata capa de enlace, UDP/TCP, SDH/ATM, medios de transmisión e interconexión. Protocolos de control de enlace, encuadre por bits y por caracteres. Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 2452,
+      "original": {
+        "id": 2452,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el modelo OSI de ISO:",
+        "opciones": [
+          "La función de reenvío (forwarding) de la capa de transporte implica la transferencia de un paquete desde un enlace de entrada a un enlace de salida dentro de un mismo router.",
+          "La configuración de un circuito virtual en la capa de red sólo implica a los dos sistemas terminales.",
+          "Un datagrama no puede ser manipulado por distintos protocolos de la capa de enlace en los distintos enlaces disponibles a lo largo de la ruta.",
+          "El protocolo UDP proporciona un servicio sin control de flujo ni control de la congestión."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2452,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación describe correctamente el servicio básico de UDP?",
+        "opciones": [
+          "Incluye control de flujo y retransmisión de extremo a extremo.",
+          "Incorpora siempre control de congestión equivalente al de TCP.",
+          "UDP proporciona un servicio mínimo de datagramas sin control de flujo ni control de congestión incorporados; las aplicaciones pueden necesitar implementar esas funciones.",
+          "Forwarding es una función de la capa de transporte que mueve paquetes entre interfaces de un router."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La clave UDP era correcta, pero las opciones del original contenían errores de capa y afirmaciones muy amplias sobre circuitos virtuales y encapsulación. Se sustituye el reactivo por una afirmación precisa: UDP no incorpora control de flujo ni de congestión. La ausencia de control de congestión en UDP no exime a las aplicaciones de Internet: RFC 8085 recomienda que implementen mecanismos adecuados. Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); trata capa de enlace, UDP/TCP, SDH/ATM, medios de transmisión e interconexión. Modelo TCP/IP, protocolos de transporte UDP/TCP y control de flujo/congestión. Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); trata capa de enlace, UDP/TCP, SDH/ATM, medios de transmisión e interconexión. Modelo TCP/IP, protocolos de transporte UDP/TCP y control de flujo/congestión. Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes."
+        },
+        "etiquetas": [
+          "OSI",
+          "TCP/IP",
+          "UDP",
+          "control de flujo",
+          "control de congestión",
+          "capa de transporte"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8095.html",
+              "referencia": "IETF RFC 8095, §3.3: UDP no proporciona control de flujo del receptor ni control de congestión; las aplicaciones que necesiten esas funciones han de implementarlas o utilizar otro protocolo de transporte."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8085.html",
+              "referencia": "IETF RFC 8085, BCP 145, §§3.1 y 3.1.4: los programas que usan UDP para comunicarse por Internet deben emplear mecanismos apropiados de control de congestión."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc768.html",
+              "referencia": "IETF RFC 768, especificación base de UDP: proporciona un mecanismo mínimo de datagramas sin garantía de entrega ni protección contra duplicados."
+            }
+          ],
+          "observaciones": "La clave UDP era correcta, pero las opciones del original contenían errores de capa y afirmaciones muy amplias sobre circuitos virtuales y encapsulación. Se sustituye el reactivo por una afirmación precisa: UDP no incorpora control de flujo ni de congestión. La ausencia de control de congestión en UDP no exime a las aplicaciones de Internet: RFC 8085 recomienda que implementen mecanismos adecuados. Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); trata capa de enlace, UDP/TCP, SDH/ATM, medios de transmisión e interconexión. Modelo TCP/IP, protocolos de transporte UDP/TCP y control de flujo/congestión. Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 2453,
+      "original": {
+        "id": 2453,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué relación hay entre Jerarquía Digital Síncrona y ATM?",
+        "opciones": [
+          "Son dos estándares correspondientes al mismo nivel ISO-OSI, por lo que la decisión entre uno y otro es alternativa",
+          "Las celdas ATM suelen viajar 'embebidas' en tramas JDS",
+          "Las tramas JDS suelen viajar embebidas en tramas ATM",
+          "ATM y JDS son dos nombres distintos para el mismo estándar"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2453,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo puede transportarse un flujo de celdas ATM mediante una red de Jerarquía Digital Síncrona (JDS/SDH)?",
+        "opciones": [
+          "ATM y SDH son nombres alternativos del mismo estándar de transporte.",
+          "Las celdas ATM se mapean en la carga útil de contenedores virtuales SDH, como VC-4.",
+          "Una trama SDH se encapsula obligatoriamente en la cabecera de cada celda ATM.",
+          "Solo pueden transportar ATM los enlaces Ethernet; SDH es incompatible con ATM."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "ATM y JDS/SDH no son estándares alternativos del mismo nivel ni nombres distintos. Un flujo de celdas ATM puede mapearse en la carga útil de contenedores virtuales SDH, por ejemplo VC-4; la adaptación inserta celdas ociosas cuando procede y la delimitación de celda se recupera mediante el campo HEC. Se cambia «embebidas en tramas» por el término exacto «mapeadas en la carga útil SDH». Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); trata capa de enlace, UDP/TCP, SDH/ATM, medios de transmisión e interconexión. Interfuncionamiento de ATM y SDH en redes de transporte de área extensa. Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-108"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); trata capa de enlace, UDP/TCP, SDH/ATM, medios de transmisión e interconexión. Interfuncionamiento de ATM y SDH en redes de transporte de área extensa. Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes."
+        },
+        "etiquetas": [
+          "SDH",
+          "JDS",
+          "ATM",
+          "ITU-T G.707",
+          "VC-4",
+          "red de transporte"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/T-REC-G.707/en",
+              "referencia": "ITU-T G.707/Y.1322 (01/2007), con enmiendas vigentes: interfaz de nodo para SDH; cláusula 10 define la correspondencia de flujos/celdas ATM en contenedores y contenedores virtuales SDH (VC-4/VC-3)."
+            },
+            {
+              "url": "https://www.itu.int/dms_pubrec/itu-r/rec/s/R-REC-S.1149-2-200502-I%21%21PDF-E.pdf",
+              "referencia": "ITU-R S.1149-2, §2.2.1: describe ATM soportado sobre redes de capa SDH y las capas ATM/SDH que transportan el tráfico."
+            }
+          ],
+          "observaciones": "ATM y JDS/SDH no son estándares alternativos del mismo nivel ni nombres distintos. Un flujo de celdas ATM puede mapearse en la carga útil de contenedores virtuales SDH, por ejemplo VC-4; la adaptación inserta celdas ociosas cuando procede y la delimitación de celda se recupera mediante el campo HEC. Se cambia «embebidas en tramas» por el término exacto «mapeadas en la carga útil SDH». Cotejo curricular: ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026); trata capa de enlace, UDP/TCP, SDH/ATM, medios de transmisión e interconexión. Interfuncionamiento de ATM y SDH en redes de transporte de área extensa. Drive: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 2454,
+      "original": {
+        "id": 2454,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de estas tecnologías inalámbricas puede alcanzar una cobertura de hasta 80 kilómetros?",
+        "opciones": [
+          "Zigbee",
+          "WiMAX",
+          "Ethernet",
+          "Wibree"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2454,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué tecnología de acceso inalámbrico de banda ancha se basa en la familia de normas IEEE 802.16 para redes metropolitanas punto-multipunto?",
+        "opciones": [
+          "Zigbee (IEEE 802.15.4).",
+          "WiMAX (Worldwide Interoperability for Microwave Access).",
+          "Ethernet cableado (IEEE 802.3).",
+          "Wibree, posteriormente integrado en Bluetooth Low Energy."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "El alcance «hasta 80 km» del original no queda sustentado por la documentación IEEE localizada. La descripción de WiMAX suele citar alcances teóricos de hasta 50 km bajo línea de vista, mientras que una instalación real depende de propagación, frecuencia, potencia, antenas, modulación y disponibilidad. Se elimina la cifra y se pregunta por la tecnología estandarizada en la familia IEEE 802.16. Cotejo curricular: ITIC Academy, bloque 46 «Redes inalámbricas y movilidad», versión 2026.1 (30-09-2026); sitúa WiMAX y WLAN dentro de las tecnologías de acceso y seguridad inalámbrica. Acceso inalámbrico de banda ancha y redes metropolitanas IEEE 802.16. Drive: https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-108"
+          ],
+          "A2": [
+            "A2-IV-11"
+          ],
+          "bloque_academia": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 46 «Redes inalámbricas y movilidad», versión 2026.1 (30-09-2026); sitúa WiMAX y WLAN dentro de las tecnologías de acceso y seguridad inalámbrica. Acceso inalámbrico de banda ancha y redes metropolitanas IEEE 802.16. Drive: https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes."
+        },
+        "etiquetas": [
+          "WiMAX",
+          "IEEE 802.16",
+          "WirelessMAN",
+          "MAN",
+          "alcance radioeléctrico"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://technav.ieee.org/topic/wimax/",
+              "referencia": "IEEE Technology Navigator: WiMAX es una tecnología de acceso inalámbrico de banda ancha basada en la familia IEEE 802.16; describe enlaces punto-multipunto y cita hasta 50 km en condiciones de línea de vista, no 80 km como alcance universal."
+            },
+            {
+              "url": "https://standards.ieee.org/ieee/485/6996/",
+              "referencia": "IEEE SA, IEEE 802.16-2017, estado Active Standard: especifica la interfaz aérea MAC/PHY de los sistemas de acceso inalámbrico de banda ancha fijos y móviles punto-multipunto."
+            }
+          ],
+          "observaciones": "El alcance «hasta 80 km» del original no queda sustentado por la documentación IEEE localizada. La descripción de WiMAX suele citar alcances teóricos de hasta 50 km bajo línea de vista, mientras que una instalación real depende de propagación, frecuencia, potencia, antenas, modulación y disponibilidad. Se elimina la cifra y se pregunta por la tecnología estandarizada en la familia IEEE 802.16. Cotejo curricular: ITIC Academy, bloque 46 «Redes inalámbricas y movilidad», versión 2026.1 (30-09-2026); sitúa WiMAX y WLAN dentro de las tecnologías de acceso y seguridad inalámbrica. Acceso inalámbrico de banda ancha y redes metropolitanas IEEE 802.16. Drive: https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 2455,
+      "original": {
+        "id": 2455,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El impulso de las redes WLAN (Wireless Local Area Network) se ha visto rodeado de fuertes críticas respecto a la seguridad que ofrecen a los usuarios, ya que las señales se transportan a través del aire, que es un entorno que permite a un hacker/craker interceptar dichas señales. ¿Cuál de las siguientes afirmaciones respecto a los estándares y protocolos de seguridad desarrollados para las redes WLAN NO es cierta?",
+        "opciones": [
+          "El protocolo WEP (Wired Equivalent Privacy) se diseñó para asegurar el enlace de radio entre dispositivos en redes IEEE (Institute of Electrical and Electronics Engineers) 802.11 y utiliza el algoritmo de cifrado simétrico RC4.",
+          "El protocolo WEP dinámico fue creado, como solución temporal para resolver los problemas de seguridad del protocolo WEP, y está basado en el estándar IEEE 802.1x.",
+          "El protocolo WPA (Wi-fi Protected Access) define los modos de trabajo WPA-PERSONAL y WPAENTERPRISE.",
+          "IEEE 802.1i es el estándar que ha definido una arquitectura más robusta y segura para las redes inalámbricas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2455,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto de la seguridad histórica de IEEE 802.11, ¿qué afirmación es incorrecta?",
+        "opciones": [
+          "WEP empleaba RC4 y hoy se considera inseguro.",
+          "WEP dinámico podía usar autenticación EAP/IEEE 802.1X para distribuir claves por sesión.",
+          "WPA2 es la implementación de Wi-Fi Alliance basada en el estándar IEEE 802.11i ratificado.",
+          "La enmienda de seguridad para WLAN se denominó IEEE 802.1i; IEEE 802.11i era el estándar de control de acceso por puerto."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La afirmación incorrecta era la identificación «IEEE 802.1i»: la enmienda de seguridad de la WLAN fue IEEE 802.11i; IEEE 802.1X es el mecanismo de control de acceso/autenticación de puerto utilizado en determinados modos empresariales. NIST documenta que WEP estático y dinámico empleaban RC4 y que WEP dinámico podía derivar claves mediante EAP/802.1X; WPA2 implementó la arquitectura ratificada 802.11i. Se explicita que son mecanismos históricos: WEP y WPA/TKIP no deben recomendarse hoy como protección WLAN. Cotejo curricular: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026; desarrolla controles y protección de redes inalámbricas. Seguridad de WLAN, WEP/WPA y autenticación 802.1X. Drive: https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-48"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026; desarrolla controles y protección de redes inalámbricas. Seguridad de WLAN, WEP/WPA y autenticación 802.1X. Drive: https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes."
+        },
+        "etiquetas": [
+          "IEEE 802.11i",
+          "IEEE 802.1X",
+          "WEP",
+          "RC4",
+          "WPA",
+          "WPA2",
+          "seguridad WLAN"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-97.pdf",
+              "referencia": "NIST SP 800-97, tablas 4-2 y secciones 4.2–4.3: compara WEP estático/dinámico, RC4, autenticación EAP con IEEE 802.1X, TKIP y CCMP/AES bajo el marco RSN de IEEE 802.11i."
+            },
+            {
+              "url": "https://www.nist.gov/publications/establishing-wireless-robust-security-networks-guide-ieee-80211i",
+              "referencia": "NIST, ficha de SP 800-97: el informe describe WEP como inherentemente defectuoso y explica el enfoque transitorio y de largo plazo de IEEE 802.11i."
+            },
+            {
+              "url": "https://www.cisco.com/c/en/us/td/docs/wireless/controller/9800/26-1/configuration-guide/wl-26-1-cg/configuring-wlan-security/wpa1-and-wpa2.html",
+              "referencia": "Cisco, guía actualizada en 2026: WPA2 es la implementación de Wi-Fi Alliance del estándar IEEE 802.11i ratificado; diferencia WPA1/TKIP de WPA2/AES-CCMP."
+            }
+          ],
+          "observaciones": "La afirmación incorrecta era la identificación «IEEE 802.1i»: la enmienda de seguridad de la WLAN fue IEEE 802.11i; IEEE 802.1X es el mecanismo de control de acceso/autenticación de puerto utilizado en determinados modos empresariales. NIST documenta que WEP estático y dinámico empleaban RC4 y que WEP dinámico podía derivar claves mediante EAP/802.1X; WPA2 implementó la arquitectura ratificada 802.11i. Se explicita que son mecanismos históricos: WEP y WPA/TKIP no deben recomendarse hoy como protección WLAN. Cotejo curricular: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026; desarrolla controles y protección de redes inalámbricas. Seguridad de WLAN, WEP/WPA y autenticación 802.1X. Drive: https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; la evidencia técnica está en las fuentes enlazadas en revision.fuentes."
+        }
+      }
+    }
+  ]
+}
