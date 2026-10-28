@@ -1,0 +1,383 @@
+{
+  "fecha": "2026-10-28",
+  "alcance": "IDs 2156–2160; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 2156,
+      "original": {
+        "id": 2156,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué se conoce como CPU Throttling en IIS 8.0?",
+        "opciones": [
+          "A reducir automáticamente la frecuencia de trabajo de la CPU para evitar el calentamiento de la máquina",
+          "A la asignación de CPU a cada proceso en un entorno multiprocesador",
+          "A los fallos de CPU ante una sobrecarga de trabajo",
+          "A la limitación automática de los recursos de CPU entre los tenants del sistema"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2156,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En IIS 8.0, ¿qué hace CPU Throttling cuando se configura para un application pool?",
+        "opciones": [
+          "Reduce la frecuencia física del procesador para evitar el calentamiento del equipo.",
+          "Reserva núcleos de CPU para cada proceso en un entorno multiprocesador.",
+          "Detecta fallos físicos de la CPU ante una sobrecarga de trabajo.",
+          "Limita el consumo de CPU de los procesos del pool al máximo configurado, aplicando la acción de throttling elegida."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se concreta el concepto: IIS no reduce la frecuencia física del procesador ni reserva núcleos. El límite se configura por application pool y restringe el consumo de sus procesos según el límite y la acción elegidos; los pools permiten aislar cargas o tenants. La opción correcta se reescribe para expresar esa limitación sin atribuir una asignación de CPU. Cotejo curricular: A1-53 cubre servidores y centros de proceso de datos; A2-II-6, arquitectura cliente-servidor y servicios web. El bloque 26 incluye servidores, CPD y virtualización; el límite de CPU se verifica en Microsoft Learn. Correspondencia A1-53, A2-II-6 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente.",
+        "clasificacion": {
+          "A1": [
+            "A1-53"
+          ],
+          "A2": [
+            "A2-II-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; A1-53 cubre servidores y centros de proceso de datos; A2-II-6, arquitectura cliente-servidor y servicios web. El bloque 26 incluye servidores, CPD y virtualización; el límite de CPU se verifica en Microsoft Learn.",
+          "estado": "revisada",
+          "nota": "A1-53 cubre servidores y centros de proceso de datos; A2-II-6, arquitectura cliente-servidor y servicios web. El bloque 26 incluye servidores, CPD y virtualización; el límite de CPU se verifica en Microsoft Learn. Correspondencia A1-53, A2-II-6 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente."
+        },
+        "etiquetas": [
+          "IIS 8.0",
+          "CPU throttling",
+          "application pool",
+          "límite de CPU",
+          "servidores web"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-cpu-throttling-sand-boxing-sites-and-applications",
+              "referencia": "Microsoft Learn, IIS 8.0 CPU Throttling: el límite se configura por application pool, limita el consumo agregado de sus procesos y permite Throttle o ThrottleUnderLoad; no reserva CPU."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/iis/configuration/system.applicationhost/applicationpools/add/cpu",
+              "referencia": "Microsoft Learn, configuración <cpu> de application pools: define el porcentaje máximo de CPU y la acción de limitación para los procesos del pool."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad técnica o normativa."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-53."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) A2-II-6."
+            }
+          ],
+          "observaciones": "Se concreta el concepto: IIS no reduce la frecuencia física del procesador ni reserva núcleos. El límite se configura por application pool y restringe el consumo de sus procesos según el límite y la acción elegidos; los pools permiten aislar cargas o tenants. La opción correcta se reescribe para expresar esa limitación sin atribuir una asignación de CPU. Cotejo curricular: A1-53 cubre servidores y centros de proceso de datos; A2-II-6, arquitectura cliente-servidor y servicios web. El bloque 26 incluye servidores, CPD y virtualización; el límite de CPU se verifica en Microsoft Learn. Correspondencia A1-53, A2-II-6 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente."
+        }
+      }
+    },
+    {
+      "id": 2157,
+      "original": {
+        "id": 2157,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el estándar ANSI/TIA relativo a infraestructuras para centros de proceso de datos, durante el diseño del mismo, debe proporcionarse a ingenieros y arquitectos los requerimientos relativos a (señale la respuesta INCORRECTA):",
+        "opciones": [
+          "Distribución de la iluminación.",
+          "Seguridad de acceso.",
+          "Peso máximo a soportar por el suelo.",
+          "Protección eléctrica."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2157,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el estándar ANSI/TIA relativo a infraestructuras para centros de proceso de datos, durante el diseño del mismo, debe proporcionarse a ingenieros y arquitectos los requerimientos relativos a (señale la respuesta INCORRECTA):",
+        "opciones": [
+          "Distribución de la iluminación.",
+          "Seguridad de acceso.",
+          "Peso máximo a soportar por el suelo.",
+          "Protección eléctrica."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "No se valida la clave heredada. La ficha oficial de TIA confirma que la edición C (mayo de 2024) cubre infraestructura, arquitectura, electricidad, seguridad y otros requisitos, pero no expone la cláusula de coordinación ni enumera qué requisitos se entregan a arquitectos e ingenieros. La pregunta parece derivar de una edición antigua, y un extracto de terceros no basta para confirmar que «distribución de la iluminación» sea la opción incorrecta conforme a la edición vigente. Queda pendiente de cotejar el texto autorizado de la cláusula aplicable; la clasificación curricular no acredita la respuesta. Cotejo curricular: A1-53 incluye diseño, implantación y gestión de CPD; A2-IV-6, planificación física y dimensionamiento de centros de procesamiento de datos. El bloque 26 incluye TIA-942-C y diseño de CPD; la respuesta sigue pendiente de cotejo con el texto autorizado de la cláusula TIA aplicable. Correspondencia A1-53, A2-IV-6 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente.",
+        "clasificacion": {
+          "A1": [
+            "A1-53"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; A1-53 incluye diseño, implantación y gestión de CPD; A2-IV-6, planificación física y dimensionamiento de centros de procesamiento de datos. El bloque 26 incluye TIA-942-C y diseño de CPD; la respuesta sigue pendiente de cotejo con el texto autorizado de la cláusula TIA aplicable.",
+          "estado": "revisada",
+          "nota": "A1-53 incluye diseño, implantación y gestión de CPD; A2-IV-6, planificación física y dimensionamiento de centros de procesamiento de datos. El bloque 26 incluye TIA-942-C y diseño de CPD; la respuesta sigue pendiente de cotejo con el texto autorizado de la cláusula TIA aplicable. Correspondencia A1-53, A2-IV-6 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente."
+        },
+        "etiquetas": [
+          "ANSI/TIA-942",
+          "CPD",
+          "diseño de centros de datos",
+          "carga de suelo",
+          "iluminación",
+          "fuente primaria pendiente"
+        ],
+        "revision": {
+          "estado": "pendiente_fuente",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://tiaonline.org/standard/tia-942/",
+              "referencia": "Telecommunications Industry Association, ficha oficial de ANSI/TIA-942-C (mayo de 2024): confirma la edición vigente y su alcance, pero no publica el texto del apartado ni la lista concreta que plantea la pregunta. Se conserva como referencia de alcance; no permite verificar la clave."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad técnica o normativa."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-53."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) A2-IV-6."
+            }
+          ],
+          "observaciones": "No se valida la clave heredada. La ficha oficial de TIA confirma que la edición C (mayo de 2024) cubre infraestructura, arquitectura, electricidad, seguridad y otros requisitos, pero no expone la cláusula de coordinación ni enumera qué requisitos se entregan a arquitectos e ingenieros. La pregunta parece derivar de una edición antigua, y un extracto de terceros no basta para confirmar que «distribución de la iluminación» sea la opción incorrecta conforme a la edición vigente. Queda pendiente de cotejar el texto autorizado de la cláusula aplicable; la clasificación curricular no acredita la respuesta. Cotejo curricular: A1-53 incluye diseño, implantación y gestión de CPD; A2-IV-6, planificación física y dimensionamiento de centros de procesamiento de datos. El bloque 26 incluye TIA-942-C y diseño de CPD; la respuesta sigue pendiente de cotejo con el texto autorizado de la cláusula TIA aplicable. Correspondencia A1-53, A2-IV-6 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente."
+        }
+      }
+    },
+    {
+      "id": 2158,
+      "original": {
+        "id": 2158,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con el modelo “BYOD”, señale cuál de las siguientes afirmaciones es correcta:",
+        "opciones": [
+          "No procede la implantación de un modelo BYOD a través del uso de contenedores.",
+          "Suele acompañarse del despliegue de tecnologías EMM (Enterprise Mobility Management) en la organización, para el control y la gestión de sus dispositivos móviles.",
+          "Consiste en que el empleado pueda utilizar su ordenador corporativo en el ámbito personal.",
+          "Son las siglas de “Bring your Own DataFlow”."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2158,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una organización que permite BYOD, ¿qué afirmación sobre la gestión de los dispositivos personales enrolados es correcta?",
+        "opciones": [
+          "El uso de contenedores es incompatible con BYOD.",
+          "Una solución EMM puede aplicar políticas y administrar los dispositivos personales enrolados conforme a las condiciones de la organización.",
+          "BYOD significa que el empleado utiliza necesariamente un ordenador propiedad de la organización para fines personales.",
+          "BYOD significa “Bring your Own DataFlow”."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se sustituye la afirmación vaga «suele acompañarse» por una propiedad comprobable: una solución EMM puede aplicar gestión y políticas organizativas a dispositivos móviles personales enrolados bajo las condiciones de la organización. BYOD no excluye el uso de contenedores. La pregunta no equipara EMM con consentimiento ilimitado ni con propiedad empresarial del dispositivo. Cotejo curricular: A1-54 cubre dispositivos personales/móviles y sus medidas de seguridad y gestión; A2-IV-12 incluye seguridad en el puesto del usuario. El bloque 26 trata BYOD, MDM, MAM, EMM y UEM; el alcance técnico se contrasta con NIST SP 800-124 Rev. 2. Correspondencia A1-54, A2-IV-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente.",
+        "clasificacion": {
+          "A1": [
+            "A1-54"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; A1-54 cubre dispositivos personales/móviles y sus medidas de seguridad y gestión; A2-IV-12 incluye seguridad en el puesto del usuario. El bloque 26 trata BYOD, MDM, MAM, EMM y UEM; el alcance técnico se contrasta con NIST SP 800-124 Rev. 2.",
+          "estado": "revisada",
+          "nota": "A1-54 cubre dispositivos personales/móviles y sus medidas de seguridad y gestión; A2-IV-12 incluye seguridad en el puesto del usuario. El bloque 26 trata BYOD, MDM, MAM, EMM y UEM; el alcance técnico se contrasta con NIST SP 800-124 Rev. 2. Correspondencia A1-54, A2-IV-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente."
+        },
+        "etiquetas": [
+          "BYOD",
+          "EMM",
+          "gestión de dispositivos móviles",
+          "dispositivos personales",
+          "seguridad móvil"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/pubs/sp/800/124/r2/final",
+              "referencia": "NIST SP 800-124 Rev. 2, final: incluye escenarios de dispositivos personales (BYOD), tecnologías de gestión centralizada y enterprise mobility management (EMM) entre las estrategias para proteger dispositivos móviles en la organización."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad técnica o normativa."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-54."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) A2-IV-12."
+            }
+          ],
+          "observaciones": "Se sustituye la afirmación vaga «suele acompañarse» por una propiedad comprobable: una solución EMM puede aplicar gestión y políticas organizativas a dispositivos móviles personales enrolados bajo las condiciones de la organización. BYOD no excluye el uso de contenedores. La pregunta no equipara EMM con consentimiento ilimitado ni con propiedad empresarial del dispositivo. Cotejo curricular: A1-54 cubre dispositivos personales/móviles y sus medidas de seguridad y gestión; A2-IV-12 incluye seguridad en el puesto del usuario. El bloque 26 trata BYOD, MDM, MAM, EMM y UEM; el alcance técnico se contrasta con NIST SP 800-124 Rev. 2. Correspondencia A1-54, A2-IV-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente."
+        }
+      }
+    },
+    {
+      "id": 2159,
+      "original": {
+        "id": 2159,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Qué método NO se emplea para generar contenido dinámico en el cliente:",
+        "opciones": [
+          "Applets",
+          "JavaScript",
+          "ActiveX",
+          "CGI"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2159,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la arquitectura clásica de una aplicación web, ¿cuál de estas tecnologías se ejecuta en el servidor para generar la respuesta y no en el navegador del cliente?",
+        "opciones": [
+          "Applets",
+          "JavaScript",
+          "ActiveX",
+          "CGI"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se acota el enunciado a la arquitectura clásica de páginas web: CGI se ejecuta en el servidor como interfaz para invocar scripts, mientras que JavaScript y los antiguos applets/controles ActiveX eran tecnologías de ejecución en el cliente. Se marca histórica porque applets y ActiveX ya no representan opciones de uso normal en navegadores actuales; no se presenta la lista como tecnologías vigentes equivalentes. Cotejo curricular: A1-65 incluye scripts de cliente y desarrollo web en servidor; A2-III-12 cubre aplicaciones web y desarrollo front-end y servidor. El bloque 30 encuadra tecnologías de sistemas; la distinción CGI/cliente se prueba con RFC 3875 y estándares de plataforma. Correspondencia A1-65, A2-III-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente.",
+        "clasificacion": {
+          "A1": [
+            "A1-65"
+          ],
+          "A2": [
+            "A2-III-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; A1-65 incluye scripts de cliente y desarrollo web en servidor; A2-III-12 cubre aplicaciones web y desarrollo front-end y servidor. El bloque 30 encuadra tecnologías de sistemas; la distinción CGI/cliente se prueba con RFC 3875 y estándares de plataforma.",
+          "estado": "revisada",
+          "nota": "A1-65 incluye scripts de cliente y desarrollo web en servidor; A2-III-12 cubre aplicaciones web y desarrollo front-end y servidor. El bloque 30 encuadra tecnologías de sistemas; la distinción CGI/cliente se prueba con RFC 3875 y estándares de plataforma. Correspondencia A1-65, A2-III-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente."
+        },
+        "etiquetas": [
+          "JavaScript",
+          "CGI",
+          "contenido dinámico",
+          "cliente web",
+          "tecnología histórica",
+          "Java applets",
+          "ActiveX"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/info/rfc3875/",
+              "referencia": "IETF/RFC Editor, RFC 3875 §1.1 y §3.1: CGI es la interfaz entre un servidor HTTP y un script; el servidor ejecuta el script para generar la respuesta."
+            },
+            {
+              "url": "https://html.spec.whatwg.org/multipage/scripting.html",
+              "referencia": "WHATWG HTML Living Standard, scripting: define los scripts integrados en documentos y su procesamiento en el entorno del navegador."
+            },
+            {
+              "url": "https://www.oracle.com/technetwork/java/javase/javaclientroadmapupdatev2020may-6548840.pdf",
+              "referencia": "Oracle Java Client Roadmap: el soporte de applets en navegadores terminó en marzo de 2019; Java SE 11 retiró la tecnología."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-gb/previous-versions/windows/internet-explorer/ie-it-pro/internet-explorer-11/ie11-deploy-guide/out-of-date-activex-control-blocking",
+              "referencia": "Microsoft Learn, documentación heredada de Internet Explorer: ActiveX es tecnología de controles del navegador asociada al Internet Explorer retirado; Microsoft Edge no admite esos controles."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad técnica o normativa."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-65."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) A2-III-12."
+            }
+          ],
+          "observaciones": "Se acota el enunciado a la arquitectura clásica de páginas web: CGI se ejecuta en el servidor como interfaz para invocar scripts, mientras que JavaScript y los antiguos applets/controles ActiveX eran tecnologías de ejecución en el cliente. Se marca histórica porque applets y ActiveX ya no representan opciones de uso normal en navegadores actuales; no se presenta la lista como tecnologías vigentes equivalentes. Cotejo curricular: A1-65 incluye scripts de cliente y desarrollo web en servidor; A2-III-12 cubre aplicaciones web y desarrollo front-end y servidor. El bloque 30 encuadra tecnologías de sistemas; la distinción CGI/cliente se prueba con RFC 3875 y estándares de plataforma. Correspondencia A1-65, A2-III-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente."
+        }
+      }
+    },
+    {
+      "id": 2160,
+      "original": {
+        "id": 2160,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes acrónimos hace referencia a un estándar de modelo de agregación de contenidos Web para eLearning?",
+        "opciones": [
+          "CORBA",
+          "OWR",
+          "SCORM",
+          "IQC"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2160,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué modelo de referencia desarrollado por ADL incluye un Content Aggregation Model para describir y empaquetar contenidos de aprendizaje reutilizables?",
+        "opciones": [
+          "CORBA",
+          "OWR",
+          "SCORM",
+          "IQC"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se reformula para evitar llamar a SCORM simplemente «un estándar de modelo de agregación»: SCORM es un modelo de referencia de ADL y su libro CAM define componentes y métodos de agregación/empaquetado, metadatos e información de secuenciación de contenidos. Entre las opciones, la respuesta inequívoca sigue siendo SCORM. Cotejo curricular: A1-73 recoge e-learning, herramientas, sistemas de implantación y normalización. El bloque 33 aborda SCORM, estándares de interoperabilidad y contenidos digitales; la función concreta del libro CAM se verifica con la guía oficial de ADL. Correspondencia A1-73 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente.",
+        "clasificacion": {
+          "A1": [
+            "A1-73"
+          ],
+          "A2": [],
+          "bloque_academia": "ITIC Academy, bloque 33 E-learning y Sistemas de Información Geográfica, versión 2026.1; A1-73 recoge e-learning, herramientas, sistemas de implantación y normalización. El bloque 33 aborda SCORM, estándares de interoperabilidad y contenidos digitales; la función concreta del libro CAM se verifica con la guía oficial de ADL.",
+          "estado": "revisada",
+          "nota": "A1-73 recoge e-learning, herramientas, sistemas de implantación y normalización. El bloque 33 aborda SCORM, estándares de interoperabilidad y contenidos digitales; la función concreta del libro CAM se verifica con la guía oficial de ADL. Correspondencia A1-73 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente."
+        },
+        "etiquetas": [
+          "SCORM",
+          "ADL",
+          "e-learning",
+          "Content Aggregation Model",
+          "empaquetado de contenidos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://adlnet.gov/assets/uploads/SCORM_Users_Guide_for_Programmers.pdf",
+              "referencia": "ADL Initiative, SCORM Users Guide for Programmers, sección 13.2.1: describe el libro Content Aggregation Model de SCORM y su función de empaquetar, describir, descubrir y secuenciar componentes de una experiencia de aprendizaje."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 33 E-learning y Sistemas de Información Geográfica, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad técnica o normativa."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-73."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) ."
+            }
+          ],
+          "observaciones": "Se reformula para evitar llamar a SCORM simplemente «un estándar de modelo de agregación»: SCORM es un modelo de referencia de ADL y su libro CAM define componentes y métodos de agregación/empaquetado, metadatos e información de secuenciación de contenidos. Entre las opciones, la respuesta inequívoca sigue siendo SCORM. Cotejo curricular: A1-73 recoge e-learning, herramientas, sistemas de implantación y normalización. El bloque 33 aborda SCORM, estándares de interoperabilidad y contenidos digitales; la función concreta del libro CAM se verifica con la guía oficial de ADL. Correspondencia A1-73 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se usa para encuadre curricular; no sustituye la fuente técnica primaria ni permite dar por verificada una respuesta pendiente."
+        }
+      }
+    }
+  ]
+}
