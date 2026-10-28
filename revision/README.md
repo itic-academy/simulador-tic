@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 387 (IDs 2251–2255). Acumulado: 2.255 preguntas examinadas, 2.193 verificadas (513 vigentes, 1.514 corregidas y 166 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.868 sin revisar individualmente. Hay 1.722 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 388 (IDs 2256–2260). Acumulado: 2.260 preguntas examinadas, 2.198 verificadas (516 vigentes, 1.516 corregidas y 166 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.863 sin revisar individualmente. Hay 1.724 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 388 — 28 de octubre
+
+IDs 2256–2260 revisados individualmente con fuentes primarias técnicas y cotejo curricular. Tres preguntas se confirman y dos se corrigen para precisar el ámbito local de Zigbee y las condiciones de la semántica SUID. Se conservan los cinco originales íntegros en `cambios-lote-388.json`. Acumulado: 2.260 examinadas, 2.198 verificadas (516 vigentes, 1.516 corregidas y 166 históricas), 62 pendientes y 9.863 todavía sin revisión individual.
+
+- La 2256 confirma la sustitución de Liskov dentro de SOLID, contrastada con el requisito de subtipado conductual de Liskov y Wing. A1-93/A2-III-9.
+- La 2257 confirma domótica para automatización y control de vivienda, incluida la climatización, el uso de tarifas horarias y la seguridad. A1-117/A2-IV-13 como encuadre curricular relacionado, sin equiparar domótica e IoT.
+- La 2258 corrige «redes de área local» por redes malladas IoT de corto alcance basadas en IEEE 802.15.4; Zigbee es la respuesta y se diferencia de LPWAN/móvil. A1-117/A2-IV-13.
+- La 2259 confirma que el Proceso Unificado/RUP está dirigido por casos de uso; también se explica que es iterativo y centrado en la arquitectura. A1-86/88, A2-III-1/9.
+- La 2260 precisa que SUID establece el UID efectivo del propietario al ejecutar, cuando el kernel, el montaje y el entorno permiten la semántica; `nosuid` puede hacer que se ignore. A1-60/A2-II-2.
+
+Cotejo curricular con Drive: bloque 38 (análisis, diseño y construcción, incluidos OOAD y patrones), bloque 44 (IoT y conectividad; contexto curricular cercano para domótica/hogares conectados), bloque 15 (modelos del ciclo de vida, casos de uso y RUP) y bloque 27 (sistemas operativos UNIX/Linux). No se localizó un documento académico dedicado exclusivamente a domótica ni una explicación literal de SUID en el bloque de sistemas operativos; se registran esas limitaciones y se conserva la autoridad de las fuentes técnicas primarias. Temas oficiales comprobados en `temario-oficial.json` y en los anexos de programa de las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
+
+Fuentes técnicas primarias: Liskov y Wing, “A Behavioral Notion of Subtyping” (1994), Robert C. Martin sobre SOLID; IDAE, Domótica; Connectivity Standards Alliance, Zigbee Specification; LoRa Alliance y GSMA para LPWAN; IBM Redbooks sobre Rational Unified Process; GNU Coreutils y POSIX `chmod`. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.260 registros de revisión, 62 pendientes y 9.863 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 387 — 28 de octubre
 
