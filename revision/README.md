@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 383 (IDs 2231–2235). Acumulado: 2.235 preguntas examinadas, 2.174 verificadas (505 vigentes, 1.505 corregidas y 164 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.888 sin revisar individualmente. Hay 1.710 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 384 (IDs 2236–2240). Acumulado: 2.240 preguntas examinadas, 2.179 verificadas (507 vigentes, 1.507 corregidas y 165 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.883 sin revisar individualmente. Hay 1.713 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 384 — 28 de octubre
+
+IDs 2236–2240 revisados individualmente y cotejados con fuentes primarias. Tres preguntas se corrigen para delimitar el patrón AJAX clásico, expresar con rigor la Ley de Demeter y evitar confundir ausencia de una frase exacta en RFC 3775 con ausencia del concepto. Una se confirma y una conserva su respuesta bajo clasificación histórica. Se guardan los cinco originales íntegros en `cambios-lote-384.json`. Acumulado: 2.240 examinadas, 2.179 verificadas (507 vigentes, 1.507 corregidas y 165 históricas), 61 pendientes y 9.883 todavía sin revisión individual.
+
+- La 2236 confirma la regla 2 de Codd, «Acceso garantizado», y la separa del tratamiento de nulos de la regla 3. A1-64/A2-III-4.
+- La 2237 precisa que XMLHttpRequest/XHR corresponde al patrón AJAX clásico; MDN documenta que puede recibir formatos distintos de XML y que Fetch es una alternativa moderna. A1-65/77, A2-III-12.
+- La 2238 reformula la Ley de Demeter mediante su regla característica de comunicarse con colaboradores inmediatos; favorece encapsulación y modularidad y limita el acoplamiento. A1-89/A2-III-9.
+- La 2239 confirma ISO/IEC/IEEE 29119, distinguiendo conceptos generales (parte 1), procesos (parte 2), documentación (parte 3) y técnicas (parte 4). A1-96/A2-III-7.
+- La 2240 acota el reactivo a la expresión literal «care-of registration»: RFC 3775 menciona L3 handover, correspondent node y home agent, y sí describe el registro de una care-of address. RFC 3775 fue reemplazado por RFC 6275, por lo que la pregunta se conserva como histórica. A1-115/A2-II-8.
+
+Cotejo con Drive: bloque 29 (modelo relacional y bases de datos), bloque 30 (desarrollo web y tecnologías de cliente), bloque 38 (diseño, modularidad y acoplamiento), bloque 39 (calidad y pruebas de software) y bloques 42–43 (redes y protocolos). Correspondencias contrastadas con `temario-oficial.json` y programas de las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La academia se usa para encuadre curricular, no como fuente de autoridad técnica.
+
+Fuentes técnicas: Codd, reimpresión de las reglas originales de 1985 y material universitario; Ley de Demeter, Northeastern University/OOPSLA; MDN Web Docs, XMLHttpRequest y Fetch; ISO/IEC/IEEE 29119-1:2022 y estructura de la serie; IETF RFC Editor 3775 y 6275. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.240 registros de revisión, 61 pendientes y 9.883 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 383 — 28 de octubre
 
