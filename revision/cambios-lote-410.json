@@ -1,0 +1,327 @@
+{
+  "fecha": "2026-10-28",
+  "alcance": "IDs 2361–2365; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 2361,
+      "original": {
+        "id": 2361,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Cuál es la afirmación correcta sobre la dirección IP 208.67.222.222/26:",
+        "opciones": [
+          "La dirección de la red correspondiente es 208.67.222.193.",
+          "La subred a que corresponde puede alojar 62 IPs posibles para hosts.",
+          "La dirección de broadcast es la 208.67.222.254"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2361,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una subred IPv4 convencional, ¿cuántas direcciones de host utilizables hay en el bloque al que pertenece 208.67.222.222/26?",
+        "opciones": [
+          "64, porque todas las direcciones del bloque se asignan a hosts.",
+          "62, excluidas la dirección de red y la de broadcast.",
+          "126, como en una subred /25.",
+          "30, como en una subred /27."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se calcula el prefijo /26: 32−26=6 bits de host, 2^6=64 direcciones en el bloque. La dirección indicada pertenece al bloque 208.67.222.192/26; .192 es red y .255 broadcast, por lo que quedan .193–.254 (62 hosts utilizables) en la convención IPv4 ordinaria. Se corrige el enunciado para distinguir cantidad total del bloque y hosts utilizables. Cotejo curricular: ITIC Academy, bloque 43 «Protocolos», actualización 2026: IPv4/IPv6, direccionamiento y encaminamiento (temas A1-111/115 y A2-T8). Direccionamiento IPv4, prefijos y subredes: temas A1 de redes IP y direccionamiento y epígrafes A2 de protocolos y redes locales. Documentos Drive: https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro.",
+        "clasificacion": {
+          "A1": [
+            "A1-111",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk — ITIC Academy, bloque 43 «Protocolos», actualización 2026: IPv4/IPv6, direccionamiento y encaminamiento (temas A1-111/115 y A2-T8). Direccionamiento IPv4, prefijos y subredes: temas A1 de redes IP y direccionamiento y epígrafes A2 de protocolos y redes locales.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 43 «Protocolos», actualización 2026: IPv4/IPv6, direccionamiento y encaminamiento (temas A1-111/115 y A2-T8). Direccionamiento IPv4, prefijos y subredes: temas A1 de redes IP y direccionamiento y epígrafes A2 de protocolos y redes locales. Documentos Drive: https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro."
+        },
+        "etiquetas": [
+          "IPv4",
+          "CIDR",
+          "/26",
+          "subred",
+          "dirección de red",
+          "broadcast",
+          "hosts utilizables"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+              "referencia": "IETF RFC 4632, §3 y tabla de prefijos CIDR: un bloque /26 contiene 64 direcciones IPv4. Para 208.67.222.222/26, el bloque alineado es 208.67.222.192–208.67.222.255; en una subred IPv4 convencional se reservan red y broadcast, quedando 62 direcciones de host utilizables."
+            }
+          ],
+          "observaciones": "Se calcula el prefijo /26: 32−26=6 bits de host, 2^6=64 direcciones en el bloque. La dirección indicada pertenece al bloque 208.67.222.192/26; .192 es red y .255 broadcast, por lo que quedan .193–.254 (62 hosts utilizables) en la convención IPv4 ordinaria. Se corrige el enunciado para distinguir cantidad total del bloque y hosts utilizables. Cotejo curricular: ITIC Academy, bloque 43 «Protocolos», actualización 2026: IPv4/IPv6, direccionamiento y encaminamiento (temas A1-111/115 y A2-T8). Direccionamiento IPv4, prefijos y subredes: temas A1 de redes IP y direccionamiento y epígrafes A2 de protocolos y redes locales. Documentos Drive: https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro."
+        }
+      }
+    },
+    {
+      "id": 2362,
+      "original": {
+        "id": 2362,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El servicio Amazon Aurora:",
+        "opciones": [
+          "Ofrece un sistema de gestión de colas fiables y ampliable",
+          "Es una base de datos relacional administrada de alto rendimiento",
+          "Permite monitorear recursos y aplicaciones",
+          "Ofrece un sistema de ayuda a la virtualización"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2362,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué tipo de servicio es Amazon Aurora (motores Aurora MySQL y Aurora PostgreSQL)?",
+        "opciones": [
+          "Un servicio administrado de colas de mensajes.",
+          "Un motor de base de datos relacional administrado, compatible con MySQL y PostgreSQL.",
+          "Un servicio de monitorización de recursos y aplicaciones.",
+          "Un hipervisor para virtualización de máquinas."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Aurora es un servicio/motor de base de datos relacional administrado de AWS, compatible con MySQL y PostgreSQL; los otros distractores describen categorías distintas de productos. Se acota «Aurora» a los motores relacionales compatibles, evitando mezclarlo con Aurora DSQL, que AWS documenta como oferta relacional distribuida separada. Cotejo curricular: ITIC Academy, bloque 25 «Cloud Computing», edición 2026: elasticidad, aprovisionamiento y modelos de nube (A1-55 y A2-T1). ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», edición 2026: SGBD y bases de datos relacionales (A1-63/64 y A2-T5). Servicio de base de datos relacional gestionado en nube: computación en nube y sistemas de gestión de bases de datos. El temario clasifica el concepto de SGBD; la marca AWS se estudia solo como ejemplo de producto. Documentos Drive: https://drive.google.com/file/d/16Er3cneQ-Vik3zSjYq6zQUOfSKK4vxVu/view?usp=drivesdk; https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro.",
+        "clasificacion": {
+          "A1": [
+            "A1-55",
+            "A1-63"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "https://drive.google.com/file/d/16Er3cneQ-Vik3zSjYq6zQUOfSKK4vxVu/view?usp=drivesdk; https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk — ITIC Academy, bloque 25 «Cloud Computing», edición 2026: elasticidad, aprovisionamiento y modelos de nube (A1-55 y A2-T1). ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», edición 2026: SGBD y bases de datos relacionales (A1-63/64 y A2-T5). Servicio de base de datos relacional gestionado en nube: computación en nube y sistemas de gestión de bases de datos. El temario clasifica el concepto de SGBD; la marca AWS se estudia solo como ejemplo de producto.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 25 «Cloud Computing», edición 2026: elasticidad, aprovisionamiento y modelos de nube (A1-55 y A2-T1). ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», edición 2026: SGBD y bases de datos relacionales (A1-63/64 y A2-T5). Servicio de base de datos relacional gestionado en nube: computación en nube y sistemas de gestión de bases de datos. El temario clasifica el concepto de SGBD; la marca AWS se estudia solo como ejemplo de producto. Documentos Drive: https://drive.google.com/file/d/16Er3cneQ-Vik3zSjYq6zQUOfSKK4vxVu/view?usp=drivesdk; https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro."
+        },
+        "etiquetas": [
+          "Amazon Aurora",
+          "AWS",
+          "base de datos relacional administrada",
+          "MySQL",
+          "PostgreSQL",
+          "computación en nube"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html",
+              "referencia": "AWS, Amazon Aurora User Guide, What is Amazon Aurora?: Aurora es un motor de base de datos relacional administrado y compatible con MySQL y PostgreSQL (además de la oferta Aurora DSQL, descrita separadamente). No es un servicio de colas ni de monitorización."
+            }
+          ],
+          "observaciones": "Aurora es un servicio/motor de base de datos relacional administrado de AWS, compatible con MySQL y PostgreSQL; los otros distractores describen categorías distintas de productos. Se acota «Aurora» a los motores relacionales compatibles, evitando mezclarlo con Aurora DSQL, que AWS documenta como oferta relacional distribuida separada. Cotejo curricular: ITIC Academy, bloque 25 «Cloud Computing», edición 2026: elasticidad, aprovisionamiento y modelos de nube (A1-55 y A2-T1). ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», edición 2026: SGBD y bases de datos relacionales (A1-63/64 y A2-T5). Servicio de base de datos relacional gestionado en nube: computación en nube y sistemas de gestión de bases de datos. El temario clasifica el concepto de SGBD; la marca AWS se estudia solo como ejemplo de producto. Documentos Drive: https://drive.google.com/file/d/16Er3cneQ-Vik3zSjYq6zQUOfSKK4vxVu/view?usp=drivesdk; https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro."
+        }
+      }
+    },
+    {
+      "id": 2363,
+      "original": {
+        "id": 2363,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Dentro de las tecnologías asociadas a los servicios web encontramos el WSDL (Web Services Description Language) que es un lenguaje basado en XML, estandarizado por el W3C y que permite describir el servicio web. Los principales elementos que se emplean en WSDL para la descripción del servicio son:",
+        "opciones": [
+          "Types, message, portType, binding, port y services",
+          "Types, message, portType, linking, port y services",
+          "Types, message, portType, binding, linking y services"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2363,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la enumeración de seis elementos principales de WSDL 1.1, ¿cuál es la lista correcta?",
+        "opciones": [
+          "types, message, portType, binding, port y service.",
+          "types, message, portType, linking, port y service.",
+          "types, message, portType, binding, linking y service."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "En WSDL 1.1, los seis elementos principales que enumera la especificación son types, message, portType, binding, port y service. «Operation» existe como elemento subordinado de portType, pero no sustituye a binding ni a port en esa lista; «linking» no es elemento WSDL. Se explicita la versión 1.1 para que la pregunta reproduzca exactamente el alcance de la fuente citada. Cotejo curricular: ITIC Academy, bloque 28 «Arquitectura SOA y requisitos no funcionales», edición 2026: arquitectura de servicios web, cliente-servidor y multicapas (A1-58 y A2-T6). ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1: XML, estándares web, servicios y tecnologías web (A1-65/77 y A2-T3/T9/D10-D12). WSDL como vocabulario XML para describir servicios web: arquitectura SOA/servicios web y estándares XML. Se comprueba la correspondencia con los epígrafes oficiales, no se presenta WSDL como texto literal del programa. Documentos Drive: https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro.",
+        "clasificacion": {
+          "A1": [
+            "A1-58",
+            "A1-65",
+            "A1-77"
+          ],
+          "A2": [
+            "A2-II-6",
+            "A2-III-12"
+          ],
+          "bloque_academia": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk — ITIC Academy, bloque 28 «Arquitectura SOA y requisitos no funcionales», edición 2026: arquitectura de servicios web, cliente-servidor y multicapas (A1-58 y A2-T6). ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1: XML, estándares web, servicios y tecnologías web (A1-65/77 y A2-T3/T9/D10-D12). WSDL como vocabulario XML para describir servicios web: arquitectura SOA/servicios web y estándares XML. Se comprueba la correspondencia con los epígrafes oficiales, no se presenta WSDL como texto literal del programa.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 28 «Arquitectura SOA y requisitos no funcionales», edición 2026: arquitectura de servicios web, cliente-servidor y multicapas (A1-58 y A2-T6). ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1: XML, estándares web, servicios y tecnologías web (A1-65/77 y A2-T3/T9/D10-D12). WSDL como vocabulario XML para describir servicios web: arquitectura SOA/servicios web y estándares XML. Se comprueba la correspondencia con los epígrafes oficiales, no se presenta WSDL como texto literal del programa. Documentos Drive: https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro."
+        },
+        "etiquetas": [
+          "WSDL",
+          "servicios web",
+          "XML",
+          "types",
+          "message",
+          "portType",
+          "binding",
+          "port",
+          "service"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.w3.org/TR/wsdl.html",
+              "referencia": "W3C Note, Web Service Definition Language (WSDL) 1.1, §1 y §2: enumera como seis elementos principales types, message, portType, binding, port y service; operation se define dentro de portType, pero la lista de los seis elementos de nivel superior no la incluye."
+            }
+          ],
+          "observaciones": "En WSDL 1.1, los seis elementos principales que enumera la especificación son types, message, portType, binding, port y service. «Operation» existe como elemento subordinado de portType, pero no sustituye a binding ni a port en esa lista; «linking» no es elemento WSDL. Se explicita la versión 1.1 para que la pregunta reproduzca exactamente el alcance de la fuente citada. Cotejo curricular: ITIC Academy, bloque 28 «Arquitectura SOA y requisitos no funcionales», edición 2026: arquitectura de servicios web, cliente-servidor y multicapas (A1-58 y A2-T6). ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1: XML, estándares web, servicios y tecnologías web (A1-65/77 y A2-T3/T9/D10-D12). WSDL como vocabulario XML para describir servicios web: arquitectura SOA/servicios web y estándares XML. Se comprueba la correspondencia con los epígrafes oficiales, no se presenta WSDL como texto literal del programa. Documentos Drive: https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro."
+        }
+      }
+    },
+    {
+      "id": 2364,
+      "original": {
+        "id": 2364,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el marco de la computación en nube, a la funcionalidad de variación automática de la asignación de recursos en función de la carga se la denomina:",
+        "opciones": [
+          "Tiering",
+          "Autoescalado",
+          "Servicio medido",
+          "Serverless computing"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2364,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En computación en nube, ¿cómo se denomina habitualmente el ajuste automático de recursos aprovisionados en función de la carga?",
+        "opciones": [
+          "Tiering.",
+          "Autoescalado (autoscaling), una forma de implementar elasticidad rápida.",
+          "Servicio medido (measured service).",
+          "Serverless computing."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La descripción apunta al autoescalado, mecanismo que ajusta recursos automáticamente según la carga. En el vocabulario de NIST se relaciona con la elasticidad rápida: capacidad de aprovisionar/liberar recursos con rapidez y, en algunos casos, automáticamente. Servicio medido es medición/control del uso; serverless es un modelo de ejecución y tiering organiza niveles de almacenamiento. Cotejo curricular: ITIC Academy, bloque 25 «Cloud Computing», edición 2026: elasticidad, aprovisionamiento y modelos de nube (A1-55 y A2-T1). Ajuste de recursos y elasticidad rápida dentro de computación en nube; NIST sustenta la definición y autoescalado es el mecanismo de automatización aplicado. Documentos Drive: https://drive.google.com/file/d/16Er3cneQ-Vik3zSjYq6zQUOfSKK4vxVu/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro.",
+        "clasificacion": {
+          "A1": [
+            "A1-55"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "https://drive.google.com/file/d/16Er3cneQ-Vik3zSjYq6zQUOfSKK4vxVu/view?usp=drivesdk — ITIC Academy, bloque 25 «Cloud Computing», edición 2026: elasticidad, aprovisionamiento y modelos de nube (A1-55 y A2-T1). Ajuste de recursos y elasticidad rápida dentro de computación en nube; NIST sustenta la definición y autoescalado es el mecanismo de automatización aplicado.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 25 «Cloud Computing», edición 2026: elasticidad, aprovisionamiento y modelos de nube (A1-55 y A2-T1). Ajuste de recursos y elasticidad rápida dentro de computación en nube; NIST sustenta la definición y autoescalado es el mecanismo de automatización aplicado. Documentos Drive: https://drive.google.com/file/d/16Er3cneQ-Vik3zSjYq6zQUOfSKK4vxVu/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro."
+        },
+        "etiquetas": [
+          "computación en nube",
+          "elasticidad rápida",
+          "autoescalado",
+          "escalado automático",
+          "aprovisionamiento de recursos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+              "referencia": "NIST SP 800-145, §3.4 Rapid Elasticity: los recursos pueden aprovisionarse y liberarse elásticamente, en algunos casos automáticamente, para escalar con la demanda. El autoscaling es una implementación habitual de esa elasticidad; no debe confundirse con servicio medido, serverless o tiering."
+            }
+          ],
+          "observaciones": "La descripción apunta al autoescalado, mecanismo que ajusta recursos automáticamente según la carga. En el vocabulario de NIST se relaciona con la elasticidad rápida: capacidad de aprovisionar/liberar recursos con rapidez y, en algunos casos, automáticamente. Servicio medido es medición/control del uso; serverless es un modelo de ejecución y tiering organiza niveles de almacenamiento. Cotejo curricular: ITIC Academy, bloque 25 «Cloud Computing», edición 2026: elasticidad, aprovisionamiento y modelos de nube (A1-55 y A2-T1). Ajuste de recursos y elasticidad rápida dentro de computación en nube; NIST sustenta la definición y autoescalado es el mecanismo de automatización aplicado. Documentos Drive: https://drive.google.com/file/d/16Er3cneQ-Vik3zSjYq6zQUOfSKK4vxVu/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro."
+        }
+      }
+    },
+    {
+      "id": 2365,
+      "original": {
+        "id": 2365,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la respuesta INCORRECTA relativa a la sindicación y redifusión de contenidos:",
+        "opciones": [
+          "GeoRSS es un conjunto de estándares que representan la información geográfica dentro de la familia de estándares RSS",
+          "Las siglas RSS de la versión 2.0 se corresponden con Realiy Simple Syndication (Sindicación Realmente Simple)",
+          "El formato de sindicación basado en Atom no se considera un estándar",
+          "RSS utiliza ficheros XML"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2365,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la afirmación incorrecta sobre RSS, Atom y GeoRSS:",
+        "opciones": [
+          "GeoRSS extiende feeds RSS con información geográfica interoperable.",
+          "RSS 2.0 significa Really Simple Syndication y es un dialecto de XML.",
+          "Atom no es un formato de sindicación XML normalizado en una especificación de Internet.",
+          "RSS 2.0 utiliza documentos XML."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se repara la ambigüedad del original: contenía dos afirmaciones falsas (una errata en la expansión de RSS y la negación de que Atom esté normalizado). Se corrige la expansión de RSS a Really Simple Syndication y se reformula el distractor único como si Atom no fuera un formato XML normalizado; esta última es la respuesta incorrecta, pues RFC 4287 es una especificación IETF standards-track. GeoRSS sí extiende feeds con información geográfica, y RSS 2.0 es un dialecto XML. Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1: XML, estándares web, servicios y tecnologías web (A1-65/77 y A2-T3/T9/D10-D12). Sindicación y formatos XML: se encuadra en XML y lenguajes de marcado. Los detalles de GeoRSS, RSS 2.0 y Atom se contrastan con OGC, RSS Advisory Board e IETF, no se atribuyen como autoridad técnica a Academy. Documentos Drive: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro.",
+        "clasificacion": {
+          "A1": [
+            "A1-77"
+          ],
+          "A2": [
+            "A2-II-9"
+          ],
+          "bloque_academia": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk — ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1: XML, estándares web, servicios y tecnologías web (A1-65/77 y A2-T3/T9/D10-D12). Sindicación y formatos XML: se encuadra en XML y lenguajes de marcado. Los detalles de GeoRSS, RSS 2.0 y Atom se contrastan con OGC, RSS Advisory Board e IETF, no se atribuyen como autoridad técnica a Academy.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1: XML, estándares web, servicios y tecnologías web (A1-65/77 y A2-T3/T9/D10-D12). Sindicación y formatos XML: se encuadra en XML y lenguajes de marcado. Los detalles de GeoRSS, RSS 2.0 y Atom se contrastan con OGC, RSS Advisory Board e IETF, no se atribuyen como autoridad técnica a Academy. Documentos Drive: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro."
+        },
+        "etiquetas": [
+          "RSS",
+          "Atom",
+          "GeoRSS",
+          "sindicación",
+          "redifusión",
+          "XML",
+          "OGC",
+          "IETF"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.ogc.org/standards/georss/",
+              "referencia": "Open Geospatial Consortium, GeoRSS Encoding Standard: extensión ligera de feeds RSS para codificar información geográfica interoperable."
+            },
+            {
+              "url": "https://www.rssboard.org/rss-2-0-11",
+              "referencia": "RSS Advisory Board, RSS 2.0 Specification (versión 2.0.11): desarrolla Really Simple Syndication y define RSS como dialecto de XML."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4287.html",
+              "referencia": "IETF RFC 4287, The Atom Syndication Format: especificación XML de Atom publicada en el standards track; por tanto es incorrecto afirmar que Atom no es un estándar."
+            }
+          ],
+          "observaciones": "Se repara la ambigüedad del original: contenía dos afirmaciones falsas (una errata en la expansión de RSS y la negación de que Atom esté normalizado). Se corrige la expansión de RSS a Really Simple Syndication y se reformula el distractor único como si Atom no fuera un formato XML normalizado; esta última es la respuesta incorrecta, pues RFC 4287 es una especificación IETF standards-track. GeoRSS sí extiende feeds con información geográfica, y RSS 2.0 es un dialecto XML. Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1: XML, estándares web, servicios y tecnologías web (A1-65/77 y A2-T3/T9/D10-D12). Sindicación y formatos XML: se encuadra en XML y lenguajes de marcado. Los detalles de GeoRSS, RSS 2.0 y Atom se contrastan con OGC, RSS Advisory Board e IETF, no se atribuyen como autoridad técnica a Academy. Documentos Drive: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y los anexos de las convocatorias A1/A2 GSI BOE-A-2025-25938 y BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre de temario; la respuesta se apoya en las especificaciones técnicas primarias citadas en el registro."
+        }
+      }
+    }
+  ]
+}
