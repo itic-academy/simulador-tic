@@ -100634,21 +100634,66 @@
       "id": 2136,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si los datos contienen valores 'NULL' (valores desconocidos) antes de realizar una consulta de data mining:",
+      "texto": "Al preparar datos para minería o modelado se detectan valores ausentes. ¿Qué afirmación describe correctamente cómo deben tratarse?",
       "opciones": [
-        "Debo eliminarlos.",
-        "Sólo se eliminan si son pocos. Si son muchos se utiliza alguna técnica para predecir el valor de esos nulos y trabajar con las aproximaciones obtenidas.",
-        "En la fase de preproceso se les asignará un valor por defecto.",
-        "Se asigna el valor de la media multiplicado por 2."
+        "Deben eliminarse siempre todos los registros que tengan algún valor ausente.",
+        "Deben sustituirse siempre por la media de la variable, incluso si es categórica.",
+        "El tratamiento debe elegirse según el significado de la ausencia, los datos y el modelo; la imputación es una opción, no una regla universal.",
+        "Deben reemplazarse siempre por un mismo valor por defecto, sin analizar el contexto."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "El original imponía reglas arbitrarias (eliminar solo cuando son pocos o imputar si son muchos) y presentaba «NULL» como si tuviera un tratamiento universal. Se reemplaza por el principio correcto: interpretar el significado y contexto de la ausencia, el tipo de variable y las necesidades del modelo; imputar es una posibilidad entre varias, no una regla automática. Se evita prescribir una estrategia concreta sin conocer el conjunto de datos. Cotejo curricular: A1-71 incluye el preprocesado en el ciclo de vida de ciencia de datos y A2-III-15 incluye minería de datos y algoritmos. El bloque de BI/Big Data encuadra la explotación y preparación analítica de datos; no se usa como autoridad para imponer una técnica de imputación. Correspondencia A1-71, A2-III-15 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-71"
+        ],
+        "A2": [
+          "A2-III-15"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1; A1-71 incluye el preprocesado en el ciclo de vida de ciencia de datos y A2-III-15 incluye minería de datos y algoritmos. El bloque de BI/Big Data encuadra la explotación y preparación analítica de datos; no se usa como autoridad para imponer una técnica de imputación.",
+        "estado": "revisada",
+        "nota": "A1-71 incluye el preprocesado en el ciclo de vida de ciencia de datos y A2-III-15 incluye minería de datos y algoritmos. El bloque de BI/Big Data encuadra la explotación y preparación analítica de datos; no se usa como autoridad para imponer una técnica de imputación. Correspondencia A1-71, A2-III-15 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión."
+      },
+      "etiquetas": [
+        "valores ausentes",
+        "NULL",
+        "preprocesado",
+        "imputación",
+        "minería de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html",
+            "referencia": "Documentación oficial de scikit-learn, SimpleImputer: la imputación es una estrategia configurable (media, mediana, valor más frecuente, constante o callable), no una regla única aplicable a todo dato ausente."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/analysis-services/data-mining/missing-values-analysis-services-data-mining?view=asallproducts-allversions",
+            "referencia": "Microsoft Learn, Missing Values (Analysis Services—Data Mining): explica que el significado y tratamiento de los valores ausentes dependen de los datos y del algoritmo. Documentación de una funcionalidad heredada de Analysis Services; se cita para la observación de contexto, no como recomendación vigente de producto."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-71."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) A2-III-15."
+          }
+        ],
+        "observaciones": "El original imponía reglas arbitrarias (eliminar solo cuando son pocos o imputar si son muchos) y presentaba «NULL» como si tuviera un tratamiento universal. Se reemplaza por el principio correcto: interpretar el significado y contexto de la ausencia, el tipo de variable y las necesidades del modelo; imputar es una posibilidad entre varias, no una regla automática. Se evita prescribir una estrategia concreta sin conocer el conjunto de datos. Cotejo curricular: A1-71 incluye el preprocesado en el ciclo de vida de ciencia de datos y A2-III-15 incluye minería de datos y algoritmos. El bloque de BI/Big Data encuadra la explotación y preparación analítica de datos; no se usa como autoridad para imponer una técnica de imputación. Correspondencia A1-71, A2-III-15 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión."
+      }
     },
     {
       "id": 2137,
       "bloque": 0,
       "tema": 0,
-      "texto": "Considere un sistema con un espacio lógico de memoria de 128k páginas, cada una con 8k palabras de 16 bits y una memoria física de 64 Mb. ¿Cuántos bits hay en la dirección lógica?",
+      "texto": "En un sistema direccionado por palabra, la memoria lógica tiene 128k páginas de 8k palabras cada una (k = 1024). ¿Cuántos bits requiere la dirección lógica?",
       "opciones": [
         "32",
         "30",
@@ -100656,41 +100701,163 @@
         "25"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se especifica direccionamiento por palabra y k=1024 para resolver la ambigüedad entre dirección por palabra y por byte. Hay 128×2^10 = 2^17 páginas y 8×2^10 = 2^13 palabras por página; el espacio lógico contiene 2^30 palabras y requiere 30 bits. El tamaño de memoria física es irrelevante para el ancho de la dirección lógica en este cálculo, por lo que se elimina del enunciado junto con el ancho de palabra que podía sugerir direccionamiento por byte. Cotejo curricular: A1-59 recoge fundamentos de sistemas operativos y A2-II-2 sus conceptos y fundamentos. El bloque académico de sistemas operativos cubre administración de memoria; la respuesta se deriva del cálculo explícito del espacio direccionable. Correspondencia A1-59, A2-II-2 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-59"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 Sistemas operativos, versión 2026.1; A1-59 recoge fundamentos de sistemas operativos y A2-II-2 sus conceptos y fundamentos. El bloque académico de sistemas operativos cubre administración de memoria; la respuesta se deriva del cálculo explícito del espacio direccionable.",
+        "estado": "revisada",
+        "nota": "A1-59 recoge fundamentos de sistemas operativos y A2-II-2 sus conceptos y fundamentos. El bloque académico de sistemas operativos cubre administración de memoria; la respuesta se deriva del cálculo explícito del espacio direccionable. Correspondencia A1-59, A2-II-2 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión."
+      },
+      "etiquetas": [
+        "sistemas operativos",
+        "memoria virtual",
+        "paginación",
+        "dirección lógica",
+        "direccionamiento por palabra"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf",
+            "referencia": "OSTEP, capítulo 18, Introduction to Paging: una dirección virtual se divide en número de página y desplazamiento; el espacio direccionable se obtiene del número de páginas y palabras por página."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 Sistemas operativos, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-59."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) A2-II-2."
+          }
+        ],
+        "observaciones": "Se especifica direccionamiento por palabra y k=1024 para resolver la ambigüedad entre dirección por palabra y por byte. Hay 128×2^10 = 2^17 páginas y 8×2^10 = 2^13 palabras por página; el espacio lógico contiene 2^30 palabras y requiere 30 bits. El tamaño de memoria física es irrelevante para el ancho de la dirección lógica en este cálculo, por lo que se elimina del enunciado junto con el ancho de palabra que podía sugerir direccionamiento por byte. Cotejo curricular: A1-59 recoge fundamentos de sistemas operativos y A2-II-2 sus conceptos y fundamentos. El bloque académico de sistemas operativos cubre administración de memoria; la respuesta se deriva del cálculo explícito del espacio direccionable. Correspondencia A1-59, A2-II-2 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión."
+      }
     },
     {
       "id": 2138,
       "bloque": 0,
       "tema": 0,
-      "texto": "Comparando la criptografía de clave secreta frente a la criptografía asimétrica. ¿Cuál de los dos tipos de criptografía es más segura, suponiendo igual longitud de clave?",
+      "texto": "Según las equivalencias aproximadas de fortaleza de NIST SP 800-57, al comparar AES y RSA para proporcionar alrededor de 128 bits de fortaleza, ¿qué familia requiere una clave nominal de mayor longitud?",
       "opciones": [
-        "La de clave secreta",
-        "La asimétrica",
-        "Son igual de seguras",
-        "Depende del lenguaje de programación empleado"
+        "La criptografía simétrica, por ejemplo AES-128.",
+        "La criptografía asimétrica basada en RSA, por ejemplo RSA-3072.",
+        "Ambas requieren claves nominales de 128 bits.",
+        "La comparación depende del lenguaje de programación, no del algoritmo."
       ],
-      "respuesta_correcta": 0,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "La afirmación original de que una familia es «más segura suponiendo igual longitud de clave» no es válida como comparación general: bits nominales de clave de algoritmos simétricos y asimétricos no representan la misma fortaleza. Se reformula usando la equivalencia aproximada de NIST para 128 bits de fortaleza: entre AES y RSA, la clave asimétrica nominal requiere mayor longitud (p. ej., AES-128 frente a RSA-3072). No se extrapola esta pareja a todo algoritmo ni a todos los parámetros. Cotejo curricular: A1-79 comprende cifrado simétrico y asimétrico; A2-IV-12 incluye técnicas criptográficas. El bloque académico de seguridad y criptografía aporta el encuadre del temario, mientras que las equivalencias concretas proceden de NIST. Correspondencia A1-79, A2-IV-12 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad y criptografía, versión 2026.1; A1-79 comprende cifrado simétrico y asimétrico; A2-IV-12 incluye técnicas criptográficas. El bloque académico de seguridad y criptografía aporta el encuadre del temario, mientras que las equivalencias concretas proceden de NIST.",
+        "estado": "revisada",
+        "nota": "A1-79 comprende cifrado simétrico y asimétrico; A2-IV-12 incluye técnicas criptográficas. El bloque académico de seguridad y criptografía aporta el encuadre del temario, mientras que las equivalencias concretas proceden de NIST. Correspondencia A1-79, A2-IV-12 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión."
+      },
+      "etiquetas": [
+        "criptografía",
+        "cifrado simétrico",
+        "cifrado asimétrico",
+        "fortaleza criptográfica",
+        "NIST SP 800-57"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+            "referencia": "NIST SP 800-57 Part 1 Rev. 5, tabla 2 y §5: correspondencias aproximadas de fortaleza; 128 bits de fortaleza se asocian, entre otros, a AES-128 y RSA de 3072 bits."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 Seguridad y criptografía, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-79."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) A2-IV-12."
+          }
+        ],
+        "observaciones": "La afirmación original de que una familia es «más segura suponiendo igual longitud de clave» no es válida como comparación general: bits nominales de clave de algoritmos simétricos y asimétricos no representan la misma fortaleza. Se reformula usando la equivalencia aproximada de NIST para 128 bits de fortaleza: entre AES y RSA, la clave asimétrica nominal requiere mayor longitud (p. ej., AES-128 frente a RSA-3072). No se extrapola esta pareja a todo algoritmo ni a todos los parámetros. Cotejo curricular: A1-79 comprende cifrado simétrico y asimétrico; A2-IV-12 incluye técnicas criptográficas. El bloque académico de seguridad y criptografía aporta el encuadre del temario, mientras que las equivalencias concretas proceden de NIST. Correspondencia A1-79, A2-IV-12 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión."
+      }
     },
     {
       "id": 2139,
       "bloque": 0,
       "tema": 0,
-      "texto": "El patrón MVC:",
+      "texto": "En el patrón Modelo-Vista-Controlador (MVC), ¿qué responsabilidad corresponde al modelo?",
       "opciones": [
-        "Hace referencia al Modelo Vista Componente",
-        "Minimiza el acoplamiento entre los componentes de distintas capas",
-        "El Modelo se encarga de la presentación al usuario",
-        "Todas son incorrectas"
+        "Representar los datos o el estado de la aplicación.",
+        "Renderizar por sí solo toda la presentación visible al usuario.",
+        "Recibir las entradas y coordinar el flujo entre la vista y el modelo.",
+        "Definir el acrónimo como «Modelo-Vista-Componente»."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "El original mezcla una expansión incorrecta del acrónimo MVC, una afirmación genérica sobre acoplamiento entre capas y una responsabilidad atribuida erróneamente al modelo. Se pregunta por una responsabilidad definida en la especificación Jakarta MVC: el modelo representa los datos o estado de la aplicación. La vista se ocupa de presentación y el controlador procesa entradas y coordina el flujo. Cotejo curricular: A1-93 incluye patrones de diseño y A2-III-9 análisis/diseño orientado a objetos y patrones. El bloque académico de análisis y diseño permite encuadrar MVC, sin sustituir la definición de responsabilidades de la especificación. Correspondencia A1-93, A2-III-9 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 38 Análisis, diseño y construcción de sistemas, versión 2026.1; A1-93 incluye patrones de diseño y A2-III-9 análisis/diseño orientado a objetos y patrones. El bloque académico de análisis y diseño permite encuadrar MVC, sin sustituir la definición de responsabilidades de la especificación.",
+        "estado": "revisada",
+        "nota": "A1-93 incluye patrones de diseño y A2-III-9 análisis/diseño orientado a objetos y patrones. El bloque académico de análisis y diseño permite encuadrar MVC, sin sustituir la definición de responsabilidades de la especificación. Correspondencia A1-93, A2-III-9 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión."
+      },
+      "etiquetas": [
+        "MVC",
+        "modelo-vista-controlador",
+        "patrones de diseño",
+        "separación de responsabilidades"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/specifications/mvc/3.0/jakarta-mvc-spec-3.0",
+            "referencia": "Jakarta MVC 3.0, introducción y modelo de procesamiento: el modelo representa datos/estado de la aplicación, la vista presenta contenido y el controlador procesa entradas y coordina el flujo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 38 Análisis, diseño y construcción de sistemas, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-93."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) A2-III-9."
+          }
+        ],
+        "observaciones": "El original mezcla una expansión incorrecta del acrónimo MVC, una afirmación genérica sobre acoplamiento entre capas y una responsabilidad atribuida erróneamente al modelo. Se pregunta por una responsabilidad definida en la especificación Jakarta MVC: el modelo representa los datos o estado de la aplicación. La vista se ocupa de presentación y el controlador procesa entradas y coordina el flujo. Cotejo curricular: A1-93 incluye patrones de diseño y A2-III-9 análisis/diseño orientado a objetos y patrones. El bloque académico de análisis y diseño permite encuadrar MVC, sin sustituir la definición de responsabilidades de la especificación. Correspondencia A1-93, A2-III-9 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión."
+      }
     },
     {
       "id": 2140,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes APIs NO está disponible en el EJB container de un servidor JEE?",
+      "texto": "Según la figura 1-8 del tutorial Oracle Java EE 7, ¿qué API de esta lista no aparece disponible en el contenedor EJB?",
       "opciones": [
         "JavaMail.",
         "EL.",
@@ -100698,7 +100865,57 @@
         "JAX-WS."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La pregunta original no indicaba versión de Java EE y no es fiable como afirmación sobre una plataforma actual. Se ancla explícitamente a la figura 1-8 del tutorial Oracle Java EE 7: en esa figura aparecen JavaMail, JTA y JAX-WS en el contenedor EJB, pero no Expression Language. La referencia contemporánea a Jakarta EE 11 confirma que el catálogo de APIs cambió; por ello esta pregunta se conserva como histórica y no se extrapola al presente. Cotejo curricular: A1-65 incluye desarrollo web en servidor e interconexión con sistemas y servicios; A2-III-10 trata Java EE/Jakarta EE y A2-III-12 aplicaciones web. El bloque de tecnologías de sistemas de información aporta contexto curricular. La respuesta se limita deliberadamente a la figura de Java EE 7 citada. Correspondencia A1-65, A2-III-10, A2-III-12 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-III-10",
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; A1-65 incluye desarrollo web en servidor e interconexión con sistemas y servicios; A2-III-10 trata Java EE/Jakarta EE y A2-III-12 aplicaciones web. El bloque de tecnologías de sistemas de información aporta contexto curricular. La respuesta se limita deliberadamente a la figura de Java EE 7 citada.",
+        "estado": "revisada",
+        "nota": "A1-65 incluye desarrollo web en servidor e interconexión con sistemas y servicios; A2-III-10 trata Java EE/Jakarta EE y A2-III-12 aplicaciones web. El bloque de tecnologías de sistemas de información aporta contexto curricular. La respuesta se limita deliberadamente a la figura de Java EE 7 citada. Correspondencia A1-65, A2-III-10, A2-III-12 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión."
+      },
+      "etiquetas": [
+        "Java EE 7",
+        "EJB",
+        "contenedor EJB",
+        "Expression Language",
+        "APIs empresariales"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javaee/7/tutorial/overview007.htm",
+            "referencia": "Oracle Java EE 7 Tutorial, §1.7: identifica la figura 1-8 como la disponibilidad de APIs Java EE 7 en el contenedor EJB."
+          },
+          {
+            "url": "https://docs.oracle.com/javaee/7/JEETT.pdf",
+            "referencia": "Oracle Java EE 7 Tutorial, figura 1-8 «Java EE APIs in the EJB Container»: incluye JavaMail, JTA y JAX-WS entre las APIs disponibles; Expression Language no aparece."
+          },
+          {
+            "url": "https://jakarta.ee/specifications/platform/11/jakarta-platform-spec-11.0",
+            "referencia": "Jakarta EE Platform 11, tabla de APIs y contenedores: fuente de contraste que muestra por qué no debe generalizarse hoy la antigua pregunta Java EE 7; la plataforma actual ha cambiado y JAX-WS ya no forma parte de ella."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; correspondencia curricular del tema. Material de academia utilizado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 vigente consultada; anexo de programa, tema(s) A1-65."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI vigente consultada; anexo de programa, tema(s) A2-III-10, A2-III-12."
+          }
+        ],
+        "observaciones": "La pregunta original no indicaba versión de Java EE y no es fiable como afirmación sobre una plataforma actual. Se ancla explícitamente a la figura 1-8 del tutorial Oracle Java EE 7: en esa figura aparecen JavaMail, JTA y JAX-WS en el contenedor EJB, pero no Expression Language. La referencia contemporánea a Jakarta EE 11 confirma que el catálogo de APIs cambió; por ello esta pregunta se conserva como histórica y no se extrapola al presente. Cotejo curricular: A1-65 incluye desarrollo web en servidor e interconexión con sistemas y servicios; A2-III-10 trata Java EE/Jakarta EE y A2-III-12 aplicaciones web. El bloque de tecnologías de sistemas de información aporta contexto curricular. La respuesta se limita deliberadamente a la figura de Java EE 7 citada. Correspondencia A1-65, A2-III-10, A2-III-12 cotejada con el material académico indicado y con los programas oficiales de las convocatorias Programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. El material de academia se utiliza para encuadre curricular; la verificación técnica se sustenta en la documentación primaria citada en la revisión."
+      }
     },
     {
       "id": 2141,
