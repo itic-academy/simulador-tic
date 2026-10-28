@@ -1,6 +1,16 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 346 (IDs 2046–2050). Acumulado: 2.050 preguntas examinadas, 1.994 verificadas (457 vigentes, 1.388 corregidas y 149 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.073 sin revisar individualmente. Hay 1.573 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 347 (IDs 2051–2055). Acumulado: 2.055 preguntas examinadas, 1.999 verificadas (457 vigentes, 1.392 corregidas y 150 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.068 sin revisar individualmente. Hay 1.578 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 347 — 28 de octubre
+
+IDs 2051–2055 revisados individualmente y cotejados con el temario ITIC Academy de los bloques 27, 30, 36 y 38, con los epígrafes oficiales y con las convocatorias A1/A2 de 2025. Se corrigieron cuatro preguntas y una quedó marcada como histórica; las cinco tienen fuentes identificadas. Se conserva la versión original completa de cada registro en `cambios-lote-347.json`. Acumulado: 2.055 examinadas, 1.999 verificadas (457 vigentes, 1.392 corregidas, 150 históricas), 56 pendientes (27 de fuente, 29 de ambigüedad), 1.578 cambios de contenido y 10.068 aún sin revisión individual.
+
+- La 2051 tenía dos respuestas defendibles: tanto documentar el trabajo como evaluar riesgos son actuaciones exigidas al auditor interno por estándares distintos. Se reescribió para preguntar específicamente por evaluar la gestión de riesgos, sin transferir al auditor la responsabilidad de la dirección. A1-38/A2-II-11.
+- La 2052 fija el plazo de **al menos dos meses** del artículo 9.3.c) de la Ley 6/2020 para un **prestador cualificado** de servicios electrónicos de confianza que cesa. Se sustituye la denominación genérica antigua y se corrige «AI». A1-80/A2-I-6.
+- La 2053 precisa que un fallo menor o suave se resuelve sin cargar la página desde disco; puede bastar con instalar o actualizar la traducción en la tabla de páginas. El fallo mayor sí requiere cargar desde almacenamiento. A1-59/A2-II-2.
+- La 2054 era ambigua: Yii también incluye una capa DAO, por lo que no podía excluirse por completo de las abstracciones de datos. Se pregunta ahora cuál es el framework web generalista que incorpora DAO; la clave es Yii. A1-65/A1-68/A2-III-12.
+- La 2055 conserva la respuesta «supervisión y coordinación del registro de convenios» como correcta **en la relación histórica del artículo 9.2 del RD 403/2020**, que no la incluía. El enunciado identifica ese marco: la SGAD se suprimió al constituirse la AEAD el 21-2-2025 y no debe presentarse como órgano vigente. A1-30/A2-I-10.
 
 ## Lote 346 — 28 de octubre
 
