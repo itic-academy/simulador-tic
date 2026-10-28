@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 377 (IDs 2201–2205). Acumulado: 2.205 preguntas examinadas, 2.144 verificadas (489 vigentes, 1.492 corregidas y 163 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.918 sin revisar individualmente. Hay 1.696 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 378 (IDs 2206–2210). Acumulado: 2.210 preguntas examinadas, 2.149 verificadas (492 vigentes, 1.494 corregidas y 163 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.913 sin revisar individualmente. Hay 1.698 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 378 — 28 de octubre
+
+IDs 2206–2210 revisados individualmente. Tres respuestas se confirman y dos preguntas se corrigen para subsanar una clave errónea y actualizar el nombre vigente de una herramienta. Los originales de las cinco preguntas se conservan en `cambios-lote-378.json`. Acumulado: 2.210 examinadas, 2.149 verificadas (492 vigentes, 1.494 corregidas y 163 históricas), 61 pendientes y 9.913 aún sin revisión individual.
+
+- La 2206 confirma Versant como gestor orientado a objetos, frente a los SGBD relacionales indicados. A1-63/A2-II-5.
+- La 2207 confirma la opción 4 conforme al artículo 27.4 de la Ley 39/2015; se cotejan las reglas de las letras 27.3.a-d para descartar distractores que confunden el soporte de origen y el de la copia. A1-8/A1-80, A2-I-8/I-9.
+- La 2208 corrige la clave «directorios» y reformula el enunciado: los permisos UNIX tradicionales distinguen propietario, grupo y otros, con permisos aplicables tanto a archivos como a directorios. A1-60/A2-II-2.
+- La 2209 confirma MPL 2.0: aparece expresamente en el apéndice de licencias compatibles de EUPL 1.2. A1-43/A1-69/A2-II-14.
+- La 2210 actualiza la opción a «Evalúa-Riesgo RGPD v2» y confirma que la herramienta de la AEPD ayuda a analizar si es necesaria una EIPD. La herramienta no sustituye la responsabilidad de evaluar cada tratamiento. A1-27/A1-82/A2-I-7.
+
+Cotejo con Drive: bloques 29 (SGBD), 27 (UNIX y sistemas operativos), 18 (licencias) y 36 (seguridad y protección de datos); para la 2207 no se encontró una unidad específica de copias auténticas en el material académico cruzado. Correspondencias oficiales y programas vigentes cotejados con `temario-oficial.json` y las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Las respuestas se fundamentan en Actian, BOE, Oracle/GNU, EUPL y AEPD; los materiales de academia solo encuadran temas.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.210 registros de revisión, 61 pendientes y 9.913 preguntas todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 377 — 28 de octubre
 
