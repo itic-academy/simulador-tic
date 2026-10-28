@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 376 (IDs 2196–2200). Acumulado: 2.200 preguntas examinadas, 2.140 verificadas (486 vigentes, 1.491 corregidas y 163 históricas) y 60 pendientes (30 de fuente y 30 de ambigüedad); quedan 9.923 sin revisar individualmente. Hay 1.694 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 377 (IDs 2201–2205). Acumulado: 2.205 preguntas examinadas, 2.144 verificadas (489 vigentes, 1.492 corregidas y 163 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.918 sin revisar individualmente. Hay 1.696 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 377 — 28 de octubre
+
+IDs 2201–2205 revisados individualmente. Dos se confirman, dos se corrigen y una permanece pendiente porque el reactivo JCL incluye más de una afirmación cuestionable. Se conservan los registros originales completos en `cambios-lote-377.json`. Acumulado: 2.205 examinadas, 2.144 verificadas (489 vigentes, 1.492 corregidas y 163 históricas), 61 pendientes y 9.918 aún sin revisión individual.
+
+- La 2201 se acota a motor local relacional compatible con Android. SQLite es la respuesta, con la precisión de que Android recomienda Room como capa de persistencia para nuevas aplicaciones. A1-62/A1-64, A2-II-2/II-5.
+- La 2202 mantiene Java RMI como respuesta: la API permite invocar objetos Java remotos. CORBA permite interoperabilidad entre lenguajes; RMI-IIOP fue una integración específica, por lo que no se generaliza a todo RMI. A1-58/A1-65/A1-67, A2-II-6/III-10.
+- La 2203 confirma Phonon como interfaz/biblioteca multimedia Qt documentada por KDE. A1-60/A1-69, A2-II-2.
+- La 2204 queda `pendiente_ambiguedad`: el comentario no empieza por una columna 52 como regla general, y «todas las sentencias en mayúsculas» parece confundir palabras clave con valores/datos. IBM confirma comentarios al final de campos y convenciones de sintaxis; la clave original no se presenta como verificada. A1-57/A2-II-1.
+- La 2205 precisa que tiempo compartido puede ser una política de reparto, pero no define por sí mismo el alto rendimiento; se confirma esa opción. A1-57/A2-II-1.
+
+Cotejo con academia Drive: bloques 29 (bases de datos y SQL) y 30 (sistemas, plataformas y aplicaciones), usados únicamente para encuadre; la recomendación SQLite/Room se valida con Android Developers, RMI con Oracle, CORBA con OMG, Phonon con KDE y HPC con TOP500/HPC Advisory Council. Correspondencias A1/A2 contrastadas con `temario-oficial.json`, la convocatoria [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y la convocatoria [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). El bloque académico orienta el encuadre, no sustituye fuentes técnicas.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.205 registros de revisión, 61 pendientes y 9.918 preguntas aún sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 376 — 28 de octubre
 
