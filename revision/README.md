@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 439 (IDs 2506–2510). Acumulado: 2.510 preguntas examinadas, 2.448 verificadas (527 vigentes, 1.747 corregidas y 174 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.613 sin revisar individualmente. Hay 1.973 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 440 (IDs 2511–2515). Acumulado: 2.515 preguntas examinadas, 2.453 verificadas (527 vigentes, 1.752 corregidas y 174 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.608 sin revisar individualmente. Hay 1.978 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 440 — 28 de octubre
+
+IDs 2511–2515 revisados individualmente y trazados en `cambios-lote-440.json`. Se distingue una copia «shadow» de los niveles de virtualización de almacenamiento; se precisa CAMEL para servicios del abonado en roaming; se confirma Naive Bayes como clasificación; se corrige una clave errónea sobre token bus IEEE 802.4, y se normaliza IoT.
+
+- **2511 — niveles de virtualización de almacenamiento:** la abstracción se implementa habitualmente en el host, en la cabina/subsistema o en la red. «Shadow copy» es una copia puntual/técnica, no un nivel de ubicación de la virtualización. A1-56/A2-IV-5.
+- **2512 — CAMEL y roaming:** CAMEL de 3GPP permite al operador de origen ofrecer servicios específicos a sus abonados cuando están en roaming fuera de su red. VHE es el concepto más amplio de continuidad/personalización de servicio, no el nombre del mecanismo CAMEL. A1-112/A2-IV-15.
+- **2513 — Naive Bayes:** se emplea habitualmente para clasificación supervisada mediante probabilidades por clase y la hipótesis de independencia condicional. A1-70/A1-71/A2-III-15.
+- **2514 — IEEE 802.4:** el estándar histórico 802.4 definió paso de testigo en bus y la capa física, además de servicios de la interfaz MAC–LLC. Se corrige la clave original «no existe» por 802.4; se advierte que IEEE lo cataloga actualmente como retirado. A1-118/A2-IV-8.
+- **2515 — Internet de las cosas:** UIT-T Y.4000 define IoT como infraestructura que interconecta cosas físicas y virtuales mediante TIC interoperables. Se corrige «loT» por «IoT». A1-117/A2-IV-13.
+
+Fuentes primarias/técnicas: [SNIA, Storage Virtualization: What, Why, Where and How?](https://www.snia.org/sites/default/files/sniavirt.pdf); [3GPP, CAMEL como capacidad de servicios de red para abonados en roaming](https://www.3gpp.org/ftp/tsg_sa/TSG_SA/TSGS_13/Docs/PDF/SP-010528.pdf); [documentación oficial scikit-learn, Naive Bayes y clasificación](https://scikit-learn.org/stable/modules/naive_bayes.html); [IEEE SA, especificación 802.4-1990 y estado retirado](https://standards.ieee.org/ieee/802.4/1091/); [UIT-T, recomendación Y.4000/Y.2060, en vigor](https://www.itu.int/rec/T-REC-Y.4000).
+
+Cotejo curricular Drive: [bloque 26, Hardware](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), virtualización del almacenamiento; [bloque 42, Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), redes móviles, LAN e IoT; [bloque 32, Inteligencia Artificial y Ciencia de Datos](https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk), machine learning, clasificación y métodos bayesianos. El bloque 42 no presenta una sección específica de CAMEL; para esa funcionalidad se contrasta directamente 3GPP. Correspondencias oficiales revisadas en `temario-oficial.json` y convocatorias A1 [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y A2 GSI [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); los materiales de academia encuadran el contenido, no sustituyen las especificaciones citadas.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.515 revisadas individualmente, 62 pendientes y 9.608 todavía sin revisión de contenido.
 
 ## Lote 439 — 28 de octubre
 
