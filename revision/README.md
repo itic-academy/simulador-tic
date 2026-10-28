@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 411 (IDs 2366–2370). Acumulado: 2.370 preguntas examinadas, 2.308 verificadas (521 vigentes, 1.619 corregidas y 168 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.753 sin revisar individualmente. Hay 1.831 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 412 (IDs 2371–2375). Acumulado: 2.375 preguntas examinadas, 2.313 verificadas (521 vigentes, 1.624 corregidas y 168 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.748 sin revisar individualmente. Hay 1.836 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 412 — 28 de octubre
+
+IDs 2371–2375 revisados individualmente; los originales completos se preservan en `cambios-lote-412.json`. Se corrigieron los cinco reactivos para fijar las referencias constitucionales/legales y evitar redacciones temporales ambiguas.
+
+- **2371 — Tribunal Constitucional:** el art. 159.1 CE establece doce miembros. A1-2/A2-I-2.
+- **2372 — Directores Insulares:** el art. 70 de la Ley 40/2015 establece nombramiento por libre designación, no concurso-oposición; se confirman las otras características del precepto. A1-6/A2-I-8.
+- **2373 — notificación electrónica:** el art. 43.2 de la Ley 39/2015 fija diez días naturales para entender rechazada la notificación obligatoria o expresamente elegida si no se accede. A1-8/A2-I-8/I-9.
+- **2374 — eficacia de registros electrónicos:** la DF 9.ª de la Ley 10/2021 dio la redacción vigente a la DF 7.ª de la Ley 39/2015, que fija el 2 de abril de 2021 para los efectos de las previsiones enumeradas. Se distingue de la modificación previa por RDL 28/2020. A1-8/22 y A2-I-8/I-9.
+- **2375 — motivación:** art. 35.1.b Ley 39/2015 incluye revisión de oficio, recursos, arbitraje e inadmisión. Se corrigen distractores: motivar el rechazo (no la admisión) de prueba, separarse (no compartir) criterio precedente y desistimiento administrativo en procedimiento iniciado de oficio. A1-8/A2-I-8.
+
+Fuentes normativas: [Constitución Española consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520), art. 159; [Ley 40/2015 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566), art. 70; [Ley 39/2015 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565&p=20261001), arts. 35.1.b y 43.2 y DF 7.ª; [Ley 10/2021](https://www.boe.es/buscar/act.php?id=BOE-A-2021-11472), DF 9.ª.
+
+Cotejo de temario Drive: [bloque 01 Constitución, Estado y AGE 2026](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk) para Tribunal Constitucional y organización territorial; [bloque 03 Actuación administrativa y Administración digital 2026](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk) y [material desarrollado de actuación administrativa](https://drive.google.com/file/d/1dW2ffNhCduFHJ1hI2nT6fqs_G8DeNpo3/view?usp=drivesdk) para Leyes 39/2015 y 40/2015. La correspondencia se contrastó con `temario-oficial.json` y las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta el encuadre, no sustituye al texto legal.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.375 registros de revisión, 62 pendientes y 9.748 aún sin revisión individual; 12 grupos repetidos y 60 candidatos de inspección. La comprobación estructural no es una revisión de contenido.
 
 ## Lote 411 — 28 de octubre
 
