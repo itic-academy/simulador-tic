@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 459 (IDs 2606–2610). Acumulado: 2.610 preguntas examinadas, 2.544 verificadas (532 vigentes, 1.823 corregidas y 189 históricas) y 66 pendientes (30 de fuente y 36 de ambigüedad); quedan 9.513 sin revisar individualmente. Hay 2.065 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 460 (IDs 2611–2615). Acumulado: 2.615 preguntas examinadas, 2.548 verificadas (532 vigentes, 1.825 corregidas y 191 históricas) y 67 pendientes (31 de fuente y 36 de ambigüedad); quedan 9.508 sin revisar individualmente. Hay 2.069 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 460 — 28 de octubre
+
+IDs 2611–2615 revisados individualmente y conservados en `cambios-lote-460.json`. Cuatro entradas aclaran o reformulan el reactivo; la quinta queda pendiente de fuente sin validar su clave.
+
+- **2611 — niveles GQM:** se especifica el paradigma de medición de software: nivel conceptual (objetivos), operacional (preguntas) y cuantitativo (métricas), en ese orden. A1-98/A2-III-13.
+- **2612 — agrupamiento en grafos:** se distingue el coeficiente local de agrupamiento (nodo) del coeficiente global (red); se pregunta ahora por la fracción de pares de vecinos conectados. A1-71/A2-III-5.
+- **2613 — principios de calidad ISO:** se pregunta por la edición ISO 9000:2015, que incluía siete principios y no «gestión de resultados». Se marca histórica porque ISO informa que ISO 9000:2015 fue sustituida por la edición 2026. A1-103/A2-III-13.
+- **2614 — Integrity de McCall:** se concreta el modelo de 1977 y el control del acceso no autorizado a software/datos; se conserva como definición histórica y se advierte que no equivale sin matices a la integridad moderna de la información. A1-98/A2-III-13.
+- **2615 — «Modelo Compuesto» atribuido a Lawler:** queda `pendiente_fuente`. Se conserva intacta la clave y no se valida el contenido, ya que no se encontró fuente primaria identificable que sostenga esa atribución/curva. Academy solo confirma el encuadre genérico en calidad, no la autoría ni los tramos. A1-98/A1-103/A2-III-13 provisionales.
+
+Fuentes primarias: [Basili, Caldiera y Rombach, The Goal Question Metric Approach](https://csis.pace.edu/~ogotel/teaching/CS777gqm.pdf); [Newman, The Structure and Function of Complex Networks, SIAM Review](https://epubs.siam.org/doi/10.1137/S003614450342480); [principios de gestión de calidad de ISO](https://www.iso.org/quality-management/principles) y ficha de la [quinta edición de ISO 9000:2026](https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso%3A9000%3Aed-5%3Av1%3Aen), que declara sustituida la edición 2015; [McCall, Richards y Walters, Factors in Software Quality, RADC-TR-77-369 (1977)](https://apps.dtic.mil/sti/pdfs/ADA049014.pdf). Para 2615 la búsqueda no permitió documentar la fuente primaria; por eso el resultado permanece pendiente, no verificado.
+
+Cotejo curricular: ITIC Academy [bloque 39 Calidad y Mantenimiento, edición 2026.1](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk) para GQM, calidad de software, ISO/McCall y encuadre del pendiente Lawler; [bloque 32 Inteligencia Artificial y Ciencia de Datos, edición 2026.1](https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk) para fundamentos de datos/algoritmos de la medida en grafos. Correspondencias contrastadas con `temario-oficial.json` y programas [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). A2 D5/D13 son etiquetas de Academy; las referencias oficiales aplicadas son A2-III-5/A2-III-13. Academy aporta encuadre curricular, no sustituye las fuentes primarias.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.615 registros revisados individualmente, 2.548 verificadas, 67 pendientes documentados y 9.508 todavía sin revisión de contenido. El inventario estructural no acredita revisión individual.
 
 ## Lote 459 — 28 de octubre
 
