@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 352 (IDs 2076–2080). Acumulado: 2.080 preguntas examinadas, 2.024 verificadas (462 vigentes, 1.408 corregidas y 154 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.043 sin revisar individualmente. Hay 1.599 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 353 (IDs 2081–2085). Acumulado: 2.085 preguntas examinadas, 2.029 verificadas (463 vigentes, 1.412 corregidas y 154 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.038 sin revisar individualmente. Hay 1.603 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 353 — 28 de octubre
+
+IDs 2081–2085 revisados individualmente con Ley 25/2013, Orden HAP/1074/2014, BOE y portal oficial Facturae; se cotejaron con ITIC Academy, bloque 35/Tema 78, temarios oficiales y convocatorias A1/A2 de 2025. Cuatro preguntas se corrigieron y una se confirma vigente. Se conserva cada versión inicial completa en `cambios-lote-353.json`. Acumulado: 2.085 examinadas, 2.029 verificadas (463 vigentes, 1.412 corregidas, 154 históricas), 56 pendientes, 1.603 con cambios de contenido y 10.038 aún sin revisar individualmente.
+
+- La 2081 precisa que la Ley 25/2013 permite a las Administraciones excluir reglamentariamente del uso obligatorio las facturas de hasta 5.000 euros; la exclusión no es automática y el límite incluye 5.000. A1-78/A2-I-9.
+- La 2082 acota «formato oficial» al régimen B2G de la Ley 25/2013: Facturae; se diferencia de los formatos estructurados del sistema B2B implantado en 2026. A1-78/A2-I-9.
+- La 2083 recupera la opción que faltaba en el banco original (el cuestionario INAP identificaba que Facturae permite extensiones de línea, factura o lote) y sustituye distractores obsoletos. Se distingue la posibilidad del esquema de la aprobación necesaria para admitir extensiones en puntos generales de entrada. A1-78/A2-I-9.
+- La 2084 separa la publicación (25-08-2017) de la entrada en uso posterior de Facturae 3.2.2 por FACe (25-02-2018). El portal oficial sigue identificando 3.2.2 como la versión más reciente, junto con 3.2 y 3.2.1 aceptadas. A1-78/A2-I-9.
+- La 2085 confirma la opción de adhesión voluntaria a FACe para CCAA y entidades locales, con obligación de justificar la no adhesión en términos de eficiencia antes de invertir en un punto propio. A1-78/A2-I-9.
+
+Cotejo académico: [ITIC Academy, bloque 35/Tema 78 Comercio electrónico y factura electrónica](https://drive.google.com/file/d/1FPkzhljZaHbxADbo36QNm9U9gwGy7lIt/view?usp=drivesdk); programas oficiales y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) / [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La academia sirve para el encaje curricular, no como fuente jurídica.
+
+Fuentes: [Ley 25/2013, arts. 4 y 6 y DA 5.ª](https://www.boe.es/eli/es/l/2013/12/27/25/con); [Orden HAP/1074/2014, texto consolidado, arts. 3 y 5 bis](https://www.boe.es/eli/es/o/2014/06/24/hap1074/con); [Facturae: formato oficial](https://www.facturae.gob.es/formato), [extensiones](https://www.facturae.gob.es/formato/extensiones-formato) y [últimas versiones](https://www.facturae.gob.es/formato/ultima-version); [Resolución BOE-A-2017-9982](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2017-9982); [PAe/CTT, plataforma FACe y vías de presentación](https://administracionelectronica.gob.es/ctt/face); [INAP, examen con la opción omitida en el banco](https://bci.inap.es/alfresco_file/c019bac9-940a-48b0-a100-aa7bd6dab719).
 
 ## Lote 352 — 28 de octubre
 
