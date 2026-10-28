@@ -1,0 +1,349 @@
+{
+  "fecha": "2026-10-28",
+  "alcance": "IDs 2571–2575; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 2571,
+      "original": {
+        "id": 2571,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con el protocolo MPLS (Multiprotocol Label Switching), indique cuál de las siguientes afirmaciones es FALSA:",
+        "opciones": [
+          "En MPLS el camino que el tráfico sigue por los nodos está prefijado desde el origen.",
+          "En MPLS se puede ofrecer un conjunto mayor y más flexible de servicios sobre las redes de operador, si bien, el mecanismo de conmutación de etiquetas es algo más lento que el mecanismo de encaminamiento IP.",
+          "Sobre MPLS se pueden establecer Redes Privadas Virtuales de nivel 3 con protocolo IP.",
+          "Sobre MPLS se pueden establecer Redes Privadas Virtuales de nivel 2 con VPLS."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2571,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre MPLS, sus LSP y servicios VPN, indique la afirmación FALSA:",
+        "opciones": [
+          "Un LSP puede seguir una ruta encaminada salto a salto o una ruta explícita.",
+          "En cada salto MPLS, el encaminador de etiquetas usa la etiqueta recibida para seleccionar una acción de reenvío.",
+          "MPLS puede transportar VPN IP de nivel 3 y servicios VPLS de nivel 2.",
+          "Todo LSP MPLS debe ser una ruta explícita estática configurada íntegramente antes de enviar tráfico."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El original mezclaba afirmaciones absolutas y una comparación de velocidad dependiente del hardware. Se reemplaza por una proposición inequívocamente falsa: MPLS no exige que todo LSP sea una ruta explícita estática. RFC 3031 distingue LSP hop-by-hop y explícitamente encaminados; RFC 4364 y RFC 4761 sustentan los ejemplos de VPN de nivel 3 y VPLS de nivel 2. A1-115/A2-IV-10. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026: temario A1 108 y 113 incluye redes de transporte/MPLS y Carrier Ethernet-VPLS.. El material incluye MPLS y VPLS en redes de transporte; RFC/IETF se usa para precisar encaminamiento hop-by-hop/expreso y los servicios VPN. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes, actualización 2026: temario A1 108 y 113 incluye redes de transporte/MPLS y Carrier Ethernet-VPLS.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026: temario A1 108 y 113 incluye redes de transporte/MPLS y Carrier Ethernet-VPLS.. El material incluye MPLS y VPLS en redes de transporte; RFC/IETF se usa para precisar encaminamiento hop-by-hop/expreso y los servicios VPN. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "MPLS",
+          "LSP",
+          "explicit route",
+          "hop-by-hop",
+          "VPN",
+          "VPLS"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3031.html",
+              "referencia": "IETF RFC 3031, MPLS Architecture, §§3.27, 4.1 and 4.2: LSPs can use hop-by-hop routing or explicit routing; label switching is the forwarding operation. A claim that every LSP must be statically configured as an explicit path is false."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4364.html",
+              "referencia": "IETF RFC 4364, BGP/MPLS IP Virtual Private Networks: defines a service-provider architecture using an IP backbone and MPLS labels to provide IP VPNs."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4761.html",
+              "referencia": "IETF RFC 4761, Virtual Private LAN Service (VPLS) Using BGP for Auto-Discovery and Signaling: specifies a Layer 2 VPN service over a packet-switched network using MPLS pseudowires."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 Redes, actualización 2026: temario A1 108 y 113 incluye redes de transporte/MPLS y Carrier Ethernet-VPLS. El material incluye MPLS y VPLS en redes de transporte; RFC/IETF se usa para precisar encaminamiento hop-by-hop/expreso y los servicios VPN."
+            }
+          ],
+          "observaciones": "El original mezclaba afirmaciones absolutas y una comparación de velocidad dependiente del hardware. Se reemplaza por una proposición inequívocamente falsa: MPLS no exige que todo LSP sea una ruta explícita estática. RFC 3031 distingue LSP hop-by-hop y explícitamente encaminados; RFC 4364 y RFC 4761 sustentan los ejemplos de VPN de nivel 3 y VPLS de nivel 2. A1-115/A2-IV-10. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026: temario A1 108 y 113 incluye redes de transporte/MPLS y Carrier Ethernet-VPLS.. El material incluye MPLS y VPLS en redes de transporte; RFC/IETF se usa para precisar encaminamiento hop-by-hop/expreso y los servicios VPN. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 2572,
+      "original": {
+        "id": 2572,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la respuesta falsa sobre las redes neuronales:",
+        "opciones": [
+          "Las redes de neuronas son un modelo de representación del conocimiento de forma simbólica",
+          "Las neuronas se unen entre sí para formar una red. La fuerza de la unión se valora mediante un peso",
+          "Para un funcionamiento correcto de la red es necesaria una fase previa de entrenamiento",
+          "Un algoritmo muy utilizado para entrenar las redes es la retropropagación"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2572,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En las redes neuronales conexionistas clásicas, señale la afirmación FALSA:",
+        "opciones": [
+          "El conocimiento se representa exclusivamente mediante símbolos y reglas explícitos, independientes de las conexiones ponderadas de la red.",
+          "Las unidades de procesamiento se interconectan y los pesos influyen en la propagación de señales.",
+          "Un algoritmo de aprendizaje puede ajustar los pesos para reducir el error entre salidas obtenidas y deseadas.",
+          "La retropropagación es un procedimiento conocido para entrenar redes neuronales."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se acota a redes conexionistas clásicas: no codifican el conocimiento exclusivamente como reglas/símbolos explícitos independientes de la red; los patrones distribuidos en las unidades y conexiones ponderadas representan lo aprendido. Se evitan generalizaciones sobre modelos híbridos. El trabajo original de retropropagación confirma el ajuste de pesos. A1-70/A2-III-5. Cotejo curricular: ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, edición 2026.1, actualizada el 19-10-2026: IA, aprendizaje automático, deep learning y redes neuronales.. El bloque actual cubre fundamentos de IA y deep learning; los trabajos fundacionales de PDP y retropropagación respaldan la distinción simbólico/conexionista y el ajuste de pesos. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, edición 2026.1, actualizada el 19-10-2026: IA, aprendizaje automático, deep learning y redes neuronales.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, edición 2026.1, actualizada el 19-10-2026: IA, aprendizaje automático, deep learning y redes neuronales.. El bloque actual cubre fundamentos de IA y deep learning; los trabajos fundacionales de PDP y retropropagación respaldan la distinción simbólico/conexionista y el ajuste de pesos. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "redes neuronales",
+          "conexionismo",
+          "representación simbólica",
+          "pesos",
+          "retropropagación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://mitpress.mit.edu/9780262680530/parallel-distributed-processing-volume-1/",
+              "referencia": "Rumelhart, McClelland and PDP Research Group, Parallel Distributed Processing, MIT Press: the connectionist account represents knowledge in distributed patterns/weights across interconnected units, contrasting with explicit symbolic structures."
+            },
+            {
+              "url": "https://doi.org/10.1038/323533a0",
+              "referencia": "Rumelhart, Hinton and Williams, “Learning representations by back-propagating errors”, Nature 323 (1986): describes backpropagation adjusting connection weights in networks of neuron-like units to reduce output error."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, edición 2026.1, actualizada el 19-10-2026: IA, aprendizaje automático, deep learning y redes neuronales. El bloque actual cubre fundamentos de IA y deep learning; los trabajos fundacionales de PDP y retropropagación respaldan la distinción simbólico/conexionista y el ajuste de pesos."
+            }
+          ],
+          "observaciones": "Se acota a redes conexionistas clásicas: no codifican el conocimiento exclusivamente como reglas/símbolos explícitos independientes de la red; los patrones distribuidos en las unidades y conexiones ponderadas representan lo aprendido. Se evitan generalizaciones sobre modelos híbridos. El trabajo original de retropropagación confirma el ajuste de pesos. A1-70/A2-III-5. Cotejo curricular: ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, edición 2026.1, actualizada el 19-10-2026: IA, aprendizaje automático, deep learning y redes neuronales.. El bloque actual cubre fundamentos de IA y deep learning; los trabajos fundacionales de PDP y retropropagación respaldan la distinción simbólico/conexionista y el ajuste de pesos. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 2573,
+      "original": {
+        "id": 2573,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo COCOMO, los CDA (Cost Driven Attributes) se utilizan en el modelo:",
+        "opciones": [
+          "Básico",
+          "Intermedio",
+          "Avanzado",
+          "b) y c) son correctos"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2573,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo clásico COCOMO 81, ¿qué variantes incorporan atributos de coste (cost drivers) para ajustar la estimación de esfuerzo?",
+        "opciones": [
+          "Solo el modelo Básico.",
+          "Solo el modelo Intermedio.",
+          "Solo el modelo Detallado (también llamado avanzado).",
+          "Los modelos Intermedio y Detallado."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se nombra COCOMO 81 y se sustituye la sigla no estándar «CDA (Cost Driven Attributes)» por el término cost drivers. El básico estima principalmente desde tamaño y modo; el intermedio introduce cost drivers y el detallado incorpora su efecto por fases. “Avanzado” puede usarse como otra denominación de Detailed, pero se elimina esa ambigüedad. A1-99/A2-II-15. Cotejo curricular: ITIC Academy/Asociación Profesional, Tema 089 sobre estimación de recursos y esfuerzo, archivo histórico fechado en 2009: incluye COCOMO clásico y cita Software Engineering Economics (Boehm, 1981). Se registra como material histórico, no como versión curricular 2026.; ITIC Academy, bloque 17 Adquisición de Sistemas, Alternativas y Rentabilidad de las Inversiones, actualización octubre de 2026: viabilidad, inversión, presupuestación y control de costes; encuadre actual del área de costes, no fuente definitoria de COCOMO.. El archivo del tema 089 cubre COCOMO 81 en el epígrafe A1 de estimación de esfuerzo. El bloque actual 17 aporta contexto de viabilidad y control de costes; la regla de qué variantes incluyen drivers se funda en Boehm/BCSSE. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-99"
+          ],
+          "A2": [
+            "A2-II-15"
+          ],
+          "bloque_academia": "ITIC Academy/Asociación Profesional, Tema 089 sobre estimación de recursos y esfuerzo, archivo histórico fechado en 2009: incluye COCOMO clásico y cita Software Engineering Economics (Boehm, 1981). Se registra como material histórico, no como versión curricular 2026.; ITIC Academy, bloque 17 Adquisición de Sistemas, Alternativas y Rentabilidad de las Inversiones, actualización octubre de 2026: viabilidad, inversión, presupuestación y control de costes; encuadre actual del área de costes, no fuente definitoria de COCOMO.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy/Asociación Profesional, Tema 089 sobre estimación de recursos y esfuerzo, archivo histórico fechado en 2009: incluye COCOMO clásico y cita Software Engineering Economics (Boehm, 1981). Se registra como material histórico, no como versión curricular 2026.; ITIC Academy, bloque 17 Adquisición de Sistemas, Alternativas y Rentabilidad de las Inversiones, actualización octubre de 2026: viabilidad, inversión, presupuestación y control de costes; encuadre actual del área de costes, no fuente definitoria de COCOMO.. El archivo del tema 089 cubre COCOMO 81 en el epígrafe A1 de estimación de esfuerzo. El bloque actual 17 aporta contexto de viabilidad y control de costes; la regla de qué variantes incluyen drivers se funda en Boehm/BCSSE. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "COCOMO 81",
+          "cost drivers",
+          "cost driver attributes",
+          "intermediate",
+          "detailed",
+          "estimación de esfuerzo"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://boehmcsse.org/tools/cocomo81/",
+              "referencia": "Boehm Center for Systems and Software Engineering, COCOMO 81: identifies the original Basic, Intermediate and Detailed forms and refers to Barry Boehm, Software Engineering Economics (1981) as the full primary reference. In COCOMO 81 the intermediate model adds cost drivers and detailed COCOMO applies them by lifecycle phase; “cost driver” is the conventional term, not “Cost Driven Attribute”."
+            },
+            {
+              "url": "https://books.google.com/books?id=VphQAAAAMAAJ",
+              "referencia": "Barry W. Boehm, Software Engineering Economics, Prentice Hall (1981), original COCOMO reference; its contents include the intermediate model and separate detailed-model cost-driver chapters."
+            },
+            {
+              "url": "https://drive.google.com/file/d/0Bw-rS_kOHzMKcVNuN0N5ZHF0SVk/view?usp=drivesdk&resourcekey=0-UwaQ-BEEvdoG9bNtUAyDIw",
+              "referencia": "ITIC Academy/Asociación Profesional, Tema 089 sobre estimación de recursos y esfuerzo, archivo histórico fechado en 2009: incluye COCOMO clásico y cita Software Engineering Economics (Boehm, 1981). Se registra como material histórico, no como versión curricular 2026. El archivo del tema 089 cubre COCOMO 81 en el epígrafe A1 de estimación de esfuerzo. El bloque actual 17 aporta contexto de viabilidad y control de costes; la regla de qué variantes incluyen drivers se funda en Boehm/BCSSE."
+            },
+            {
+              "url": "https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 17 Adquisición de Sistemas, Alternativas y Rentabilidad de las Inversiones, actualización octubre de 2026: viabilidad, inversión, presupuestación y control de costes; encuadre actual del área de costes, no fuente definitoria de COCOMO. El archivo del tema 089 cubre COCOMO 81 en el epígrafe A1 de estimación de esfuerzo. El bloque actual 17 aporta contexto de viabilidad y control de costes; la regla de qué variantes incluyen drivers se funda en Boehm/BCSSE."
+            }
+          ],
+          "observaciones": "Se nombra COCOMO 81 y se sustituye la sigla no estándar «CDA (Cost Driven Attributes)» por el término cost drivers. El básico estima principalmente desde tamaño y modo; el intermedio introduce cost drivers y el detallado incorpora su efecto por fases. “Avanzado” puede usarse como otra denominación de Detailed, pero se elimina esa ambigüedad. A1-99/A2-II-15. Cotejo curricular: ITIC Academy/Asociación Profesional, Tema 089 sobre estimación de recursos y esfuerzo, archivo histórico fechado en 2009: incluye COCOMO clásico y cita Software Engineering Economics (Boehm, 1981). Se registra como material histórico, no como versión curricular 2026.; ITIC Academy, bloque 17 Adquisición de Sistemas, Alternativas y Rentabilidad de las Inversiones, actualización octubre de 2026: viabilidad, inversión, presupuestación y control de costes; encuadre actual del área de costes, no fuente definitoria de COCOMO.. El archivo del tema 089 cubre COCOMO 81 en el epígrafe A1 de estimación de esfuerzo. El bloque actual 17 aporta contexto de viabilidad y control de costes; la regla de qué variantes incluyen drivers se funda en Boehm/BCSSE. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 2574,
+      "original": {
+        "id": 2574,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La técnica Halstead usa:",
+        "opciones": [
+          "El número de operandos distintos de un programa",
+          "La longitud de un programa",
+          "El tiempo de ejecución óptimo",
+          "No existe"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2574,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué recuentos fundamentales sirven de base a las métricas de Halstead?",
+        "opciones": [
+          "Operadores distintos, operandos distintos y número total de apariciones de cada uno.",
+          "Solo el número total de operandos.",
+          "Tiempo de ejecución y consumo máximo de memoria.",
+          "Número de usuarios, transacciones y defectos detectados en producción."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "El número de operandos distintos es solo una de las cuatro primitivas; el enunciado original no delimitaba qué aspecto de la técnica preguntaba. Ahora se pregunta por los recuentos base: operadores y operandos distintos y sus ocurrencias totales. NIST SP 500-234 documenta los cuatro y deriva longitud N = N1 + N2 y vocabulario n = n1 + n2. A1-98/A2-III-13. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026: incluye complejidad Halstead/McCabe y modelos actuales CMMI, ISO/IEC 330xx y TMMi. Se distingue expresamente el CMM histórico del CMMI.. El bloque 39 actual sitúa explícitamente Halstead y McCabe en complejidad y métricas de calidad; NIST documenta los recuentos base de Halstead. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-98"
+          ],
+          "A2": [
+            "A2-III-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026: incluye complejidad Halstead/McCabe y modelos actuales CMMI, ISO/IEC 330xx y TMMi. Se distingue expresamente el CMM histórico del CMMI.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026: incluye complejidad Halstead/McCabe y modelos actuales CMMI, ISO/IEC 330xx y TMMi. Se distingue expresamente el CMM histórico del CMMI.. El bloque 39 actual sitúa explícitamente Halstead y McCabe en complejidad y métricas de calidad; NIST documenta los recuentos base de Halstead. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "Halstead",
+          "métricas de software",
+          "operadores",
+          "operandos",
+          "vocabulario",
+          "longitud"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication500-234.pdf",
+              "referencia": "NIST SP 500-234 (1996), appendix A.1.4 Code Metrics: Halstead software-science measures use four primitive counts—distinct operators, distinct operands, total operator occurrences and total operand occurrences—and derive length and other measures from them."
+            },
+            {
+              "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026: incluye complejidad Halstead/McCabe y modelos actuales CMMI, ISO/IEC 330xx y TMMi. Se distingue expresamente el CMM histórico del CMMI. El bloque 39 actual sitúa explícitamente Halstead y McCabe en complejidad y métricas de calidad; NIST documenta los recuentos base de Halstead."
+            }
+          ],
+          "observaciones": "El número de operandos distintos es solo una de las cuatro primitivas; el enunciado original no delimitaba qué aspecto de la técnica preguntaba. Ahora se pregunta por los recuentos base: operadores y operandos distintos y sus ocurrencias totales. NIST SP 500-234 documenta los cuatro y deriva longitud N = N1 + N2 y vocabulario n = n1 + n2. A1-98/A2-III-13. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026: incluye complejidad Halstead/McCabe y modelos actuales CMMI, ISO/IEC 330xx y TMMi. Se distingue expresamente el CMM histórico del CMMI.. El bloque 39 actual sitúa explícitamente Halstead y McCabe en complejidad y métricas de calidad; NIST documenta los recuentos base de Halstead. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias."
+        }
+      }
+    },
+    {
+      "id": 2575,
+      "original": {
+        "id": 2575,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes no es un nivel del modelo de calidad CMM (Capacity Mature Model)?",
+        "opciones": [
+          "Inicial",
+          "Administrado",
+          "Definido",
+          "Ideal"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2575,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el Capability Maturity Model for Software (SEI CMM) versión 1.1, ¿cuál de estos NO es uno de sus cinco niveles de madurez?",
+        "opciones": [
+          "Initial.",
+          "Repeatable.",
+          "Defined.",
+          "Ideal."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se corrige la expansión errónea «Capacity Mature Model» y se restringe la pregunta al SEI CMM for Software v1.1, para distinguirlo de CMMI. Sus cinco niveles son Initial, Repeatable, Defined, Managed y Optimizing; “Ideal” no es uno de ellos. A1-96/A2-III-13. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026: incluye complejidad Halstead/McCabe y modelos actuales CMMI, ISO/IEC 330xx y TMMi. Se distingue expresamente el CMM histórico del CMMI.. El bloque 39 cubre procesos y modelos de madurez de calidad modernos; la pregunta se limita al CMM for Software v1.1 del SEI y se verifica directamente en el informe SEI, sin atribuir sus niveles al CMMI actual. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-96"
+          ],
+          "A2": [
+            "A2-III-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026: incluye complejidad Halstead/McCabe y modelos actuales CMMI, ISO/IEC 330xx y TMMi. Se distingue expresamente el CMM histórico del CMMI.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026: incluye complejidad Halstead/McCabe y modelos actuales CMMI, ISO/IEC 330xx y TMMi. Se distingue expresamente el CMM histórico del CMMI.. El bloque 39 cubre procesos y modelos de madurez de calidad modernos; la pregunta se limita al CMM for Software v1.1 del SEI y se verifica directamente en el informe SEI, sin atribuir sus niveles al CMMI actual. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias."
+        },
+        "etiquetas": [
+          "Capability Maturity Model",
+          "CMM for Software",
+          "niveles de madurez",
+          "SEI",
+          "Repeatable"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-28",
+          "fuentes": [
+            {
+              "url": "https://insights.sei.cmu.edu/documents/1093/1993_005_001_16214.pdf",
+              "referencia": "Software Engineering Institute, CMU/SEI-93-TR-25, Capability Maturity Model Version 1.1: the five maturity levels are Initial, Repeatable, Defined, Managed and Optimizing. This is the historical software CMM; it should not be conflated with later CMMI level terminology."
+            },
+            {
+              "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026: incluye complejidad Halstead/McCabe y modelos actuales CMMI, ISO/IEC 330xx y TMMi. Se distingue expresamente el CMM histórico del CMMI. El bloque 39 cubre procesos y modelos de madurez de calidad modernos; la pregunta se limita al CMM for Software v1.1 del SEI y se verifica directamente en el informe SEI, sin atribuir sus niveles al CMMI actual."
+            }
+          ],
+          "observaciones": "Se corrige la expansión errónea «Capacity Mature Model» y se restringe la pregunta al SEI CMM for Software v1.1, para distinguirlo de CMMI. Sus cinco niveles son Initial, Repeatable, Defined, Managed y Optimizing; “Ideal” no es uno de ellos. A1-96/A2-III-13. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026: incluye complejidad Halstead/McCabe y modelos actuales CMMI, ISO/IEC 330xx y TMMi. Se distingue expresamente el CMM histórico del CMMI.. El bloque 39 cubre procesos y modelos de madurez de calidad modernos; la pregunta se limita al CMM for Software v1.1 del SEI y se verifica directamente en el informe SEI, sin atribuir sus niveles al CMMI actual. Correspondencia contrastada con revision/temario-oficial.json y convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; ITIC Academy aporta contexto curricular, no sustituye fuentes técnicas primarias."
+        }
+      }
+    }
+  ]
+}
