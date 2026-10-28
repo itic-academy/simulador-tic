@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 386 (IDs 2246–2250). Acumulado: 2.250 preguntas examinadas, 2.189 verificadas (511 vigentes, 1.513 corregidas y 165 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.873 sin revisar individualmente. Hay 1.719 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 387 (IDs 2251–2255). Acumulado: 2.255 preguntas examinadas, 2.193 verificadas (513 vigentes, 1.514 corregidas y 166 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.868 sin revisar individualmente. Hay 1.722 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 387 — 28 de octubre
+
+IDs 2251–2255 revisados individualmente con fuentes técnicas y normativas; cuatro se verifican o actualizan y una queda explícitamente pendiente de ambigüedad. Se conservan los cinco originales íntegros en `cambios-lote-387.json`. Acumulado: 2.255 examinadas, 2.193 verificadas (513 vigentes, 1.514 corregidas y 166 históricas), 62 pendientes y 9.868 todavía sin revisión individual.
+
+- La 2251 pregunta por el alcance histórico de CWA 14890-1:2004 (interfaz de aplicación de smart cards para dispositivos seguros de creación de firma); se documenta que EN 14890-1:2008 la sustituyó. A1-80/A2-I-6.
+- La 2252 confirma que el perfil X.509 v3 de RFC 5280 incluye número de serie, emisor y firma. A1-80/A2-I-6/IV-12.
+- La 2253 se corrige para preguntar de forma inequívoca la función básica de OCSP: consulta en línea del estado de certificado sin requerir CRL. A1-80/A2-I-6/IV-12.
+- La 2254 queda pendiente de ambigüedad: no identifica qué metodología justifica exactamente los tres hitos de estimación. La secuencia original es plausible, pero no se marca como universal ni verificada. Se conserva enunciado y clave originales. A1-35/99, A2-II-15/III-2.
+- La 2255 confirma «seudonimización» conforme al artículo 4.5 RGPD y la distingue de anonimización: la información adicional permite atribución y los datos siguen siendo personales. A1-27/A2-I-7.
+
+Cotejo curricular con Drive: bloque 36 (firma electrónica, tarjetas y PKI), bloque 17 (planificación, estimación y costes) y bloque 8 (RGPD y protección de datos). Correspondencias contrastadas con `temario-oficial.json` y programas de las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). El cotejo de academia da contexto curricular, no sustituye las fuentes técnicas ni legislativas.
+
+Fuentes primarias: CWA 14890-1:2004 y EN 14890-1:2008; IETF RFC 5280 y RFC 6960; Reglamento (UE) 2016/679, art. 4.5. Para la 2254, NASA SWE-015 y el bloque 17 de academia no fundamentan una secuencia universal de tres hitos; por ello queda sin verificar. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.255 registros de revisión, 62 pendientes y 9.868 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 386 — 28 de octubre
 
