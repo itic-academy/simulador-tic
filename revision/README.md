@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 356 (IDs 2096–2100). Acumulado: 2.100 preguntas examinadas, 2.044 verificadas (466 vigentes, 1.423 corregidas y 155 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.023 sin revisar individualmente. Hay 1.615 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 357 (IDs 2101–2105). Acumulado: 2.105 preguntas examinadas, 2.049 verificadas (468 vigentes, 1.426 corregidas y 155 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.018 sin revisar individualmente. Hay 1.618 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 357 — 28 de octubre
+
+IDs 2101–2105 revisados individualmente con el portal oficial Facturae, normativa BOE, ficha actual PAe/CTT de la pasarela de pagos, especificación XMT de MPEG-4 y fuentes de estándares comerciales. Tres preguntas se reformularon para eliminar absolutos o conceptos vagos y dos se confirman vigentes en su alcance. Se conservan los registros completos anteriores en `cambios-lote-357.json`. Acumulado: 2.105 examinadas, 2.049 verificadas (468 vigentes, 1.426 corregidas y 155 históricas), 56 pendientes (27 de fuente, 29 de ambigüedad), 1.618 con cambios de contenido y 10.018 aún sin revisión individual.
+
+- La 2101 convierte una negativa basada en «FacturaDTD» no acreditado en pregunta positiva por la denominación anterior AEAT-CCI de Facturae, respaldada por el servicio de factura-e de la CARM y la Orden PRE/2971/2007. A1-78/A2-I-10.
+- La 2102 mantiene XMT como clave, pero precisa que XMT es la sintaxis textual de descripción de escenas MPEG-4 (ISO/IEC 14496-11), mientras UBL y EDIFACT se usan para documentos/intercambio empresarial y ebXML corresponde al comercio electrónico. A1-78.
+- La 2103 confirma NRC como «Número de Referencia Completo», definido por la AEAT; la ficha actual de ePago permite consulta y verificación del identificador. A1-78/A2-I-10.
+- La 2104 confirma que ePago exige al organismo un certificado de servidor de persona física, jurídica o componente homologado por AEAT. La ficha vigente aclara que no es certificado de sede y que el servicio centralizado no exige implantar software/hardware propio. A1-78/A2-I-10.
+- La 2105 mantiene Facturae 3.2, 3.2.1 y 3.2.2 como versiones que pueden utilizarse. Se distingue el formato 3.2 de referencia de la Ley 25/2013 de la actualización 3.2.2 aprobada por resolución conjunta de 25-07-2017 y aceptada plenamente. A1-78/A2-I-10.
+
+Cotejo curricular con [ITIC Academy, bloque 35 Comercio electrónico y factura electrónica, versión 2026.2, §§3–4 y 7–8](https://drive.google.com/file/d/1FPkzhljZaHbxADbo36QNm9U9gwGy7lIt/view?usp=drivesdk). El apunte cubre factura-e y mecanismos de pago; la correspondencia de convocatoria es A1 Tema 78 y A2-I-10, cotejada con los anexos oficiales [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La academia solo sirve para el alcance curricular.
+
+Fuentes: [Facturae, últimas versiones](https://www.facturae.gob.es/formato/ultima-version); [Ley 25/2013, DA 2.ª](https://www.boe.es/eli/es/l/2013/12/27/25/con); [BOE-A-2017-9982, resolución sobre Facturae 3.2.2](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2017-9982); [PAe/CTT, pasarela de pagos en producción y requisitos de ePago](https://administracionelectronica.gob.es/ctt/pagos); [CARM, facturae (denominación previa AEAT-CCI)](https://sms.carm.es/sms/facturae/info.xhtml); [Library of Congress, MPEG-4 XMT / ISO 14496-11](https://www.loc.gov/preservation/digital/formats/fdd/fdd000156.shtml); [OASIS, UBL 2.3](https://docs.oasis-open.org/ubl/UBL-2.3.html); [UN/CEFACT, UN/EDIFACT](https://unece.org/trade/uncefact/unedifact).
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.105 registros de revisión, 56 pendientes y 10.018 preguntas pendientes de revisión individual. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 356 — 28 de octubre
 
@@ -16,7 +32,7 @@ Cotejo curricular con [ITIC Academy, bloque 35 Comercio electrónico y factura e
 
 Fuentes: [Bitcoin white paper](https://bitcoin.org/bitcoin.pdf) y [FAQ oficial](https://bitcoin.org/en/faq); [Ley 25/2013, arts. 5–6 y DA 2.ª/5.ª](https://www.boe.es/eli/es/l/2013/12/27/25/con); [formato oficial Facturae](https://www.facturae.gob.es/formato); [PAe/CTT, FACe](https://administracionelectronica.gob.es/ctt/face) y [portal histórico con aviso de migración](https://arta.face.gob.es/), [FACe Proveedores](https://proveedores.face.gob.es/inicio); [Orden EHA/2027/2007, art. 4 y anexo VII bis, texto consolidado](https://www.boe.es/eli/es/o/2007/06/28/eha2027/con); [AEAT, qué es el NRC](https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/pago-impuestos-deudas-tasas-ayuda-tecnica/que-nrc.html); [PAe/CTT, servicio de pasarela de pagos y operaciones NRC](https://administracionelectronica.gob.es/ctt/pagos/infoadicional).
 
-`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.100 registros de revisión y 10.023 preguntas pendientes de revisión individual. El inventario estructural no acredita revisión de contenido.
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.105 registros de revisión y 10.018 preguntas pendientes de revisión individual. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 355 — 28 de octubre
 
