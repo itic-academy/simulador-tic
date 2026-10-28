@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 351 (IDs 2071–2075). Acumulado: 2.075 preguntas examinadas, 2.019 verificadas (460 vigentes, 1.405 corregidas y 154 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.048 sin revisar individualmente. Hay 1.596 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 352 (IDs 2076–2080). Acumulado: 2.080 preguntas examinadas, 2.024 verificadas (462 vigentes, 1.408 corregidas y 154 históricas) y 56 pendientes (27 de fuente y 29 de ambigüedad); quedan 10.043 sin revisar individualmente. Hay 1.599 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 352 — 28 de octubre
+
+IDs 2076–2080 revisados individualmente con BOE/EUR-Lex y documentación legal vigente; cotejados con ITIC Academy, bloque 35/Tema 78 (factura electrónica y comercio electrónico) y bloque 03 (legislación de sociedad de la información y Administración digital), además de programas y convocatorias A1/A2 de 2025. Tres preguntas se corrigieron y dos se confirman vigentes, con nota de actualización para la Directiva 2000/31/CE. Los originales completos se conservan en `cambios-lote-352.json`. Acumulado: 2.080 examinadas, 2.024 verificadas (462 vigentes, 1.408 corregidas, 154 históricas), 56 pendientes, 1.599 preguntas con cambios de contenido y 10.043 por revisar individualmente.
+
+- La 2076 limita la fecha de inicio de la obligación del artículo 4 de la Ley 25/2013 a los proveedores incluidos en su ámbito: 15 de enero de 2015. No todas las empresas quedaron obligadas en idénticas condiciones. A1-78/A2-I-9.
+- La 2077 confirma el Real Decreto 1619/2012 como Reglamento de obligaciones de facturación, aún vigente y modificado, incluida su actualización de 2026. A1-78/A2-I-9.
+- La 2078 sustituye el resumen obsoleto sobre firma/certificados reconocidos por la regla vigente: autenticidad e integridad se acreditan por medios admisibles, con pista fiable de auditoría cuando se usan controles habituales; distingue las reglas específicas de factura B2B obligatoria añadidas en 2026. A1-78/A2-I-9.
+- La 2079 reescribe un ítem con varias respuestas verdaderas para preguntar por el plazo único del artículo 3 de la Ley 25/2013: treinta días desde la entrega efectiva o la prestación del servicio. A1-78/A2-I-9.
+- La 2080 confirma la Directiva 2000/31/CE y aclara que sigue vigente con modificaciones: el Reglamento de Servicios Digitales suprimió sus artículos 12–15. A1-22.
+
+Material académico cotejado: [bloque 35, Tema 78 Comercio electrónico y factura electrónica](https://drive.google.com/file/d/1FPkzhljZaHbxADbo36QNm9U9gwGy7lIt/view?usp=drivesdk) y [bloque 03 Actuación administrativa y Administración digital](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk). Correspondencia con temarios oficiales y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) / [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). El material académico se usa como cotejo curricular, no como autoridad de respuesta.
+
+Fuentes primarias: [Ley 25/2013, arts. 3–4 y DF 8.ª](https://www.boe.es/eli/es/l/2013/12/27/25/con); [Real Decreto 1619/2012, texto vigente consolidado, arts. 8–10](https://www.boe.es/eli/es/rd/2012/11/30/1619/con); [Directiva 2000/31/CE, versión consolidada de 17-02-2024](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02000L0031-20240217); [Reglamento (UE) 2022/2065, art. 89](https://eur-lex.europa.eu/eli/reg/2022/2065/oj?locale=es).
 
 ## Lote 351 — 28 de octubre
 
