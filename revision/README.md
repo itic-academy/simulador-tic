@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 366 (IDs 2146–2150). Acumulado: 2.150 preguntas examinadas, 2.093 verificadas (480 vigentes, 1.454 corregidas y 159 históricas) y 57 pendientes (28 de fuente y 29 de ambigüedad); quedan 9.973 sin revisar individualmente. Hay 1.652 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 367 (IDs 2151–2155). Acumulado: 2.155 preguntas examinadas, 2.098 verificadas (481 vigentes, 1.458 corregidas y 159 históricas) y 57 pendientes (28 de fuente y 29 de ambigüedad); quedan 9.968 sin revisar individualmente. Hay 1.656 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 367 — 28 de octubre
+
+IDs 2151–2155 revisados individualmente con el manual de Vim, GNU GPLv3/FSF, cálculo explícito de direccionamiento y documentación IEEE sobre microprogramación. Los cinco originales se conservan en `cambios-lote-367.json`. Acumulado: 2.155 examinadas, 2.098 verificadas (481 vigentes, 1.458 corregidas y 159 históricas), 57 pendientes (28 de fuente y 29 de ambigüedad), 1.656 cambios de contenido y 9.968 todavía sin revisión individual.
+
+- La 2151 se acota a Vim en modo Ex y confirma `:x`: escribe solo si el búfer cambió y termina la edición. A1-60/A2-II-2.
+- La 2152 se vincula a GPLv3: se puede cobrar cualquier precio o no cobrar por cada copia; la licencia protege libertades, no el precio. Se corrige la imprecisión de citar GPL sin versión. A1-69/A2-II-14.
+- La 2153 elimina los datos irrelevantes (tiempo de acceso y ECC) y hace explícito direccionamiento por palabra: 2^24 direcciones × 2 bytes por palabra = 2^25 bytes = 32 MiB. Con direccionamiento por byte la capacidad sería distinta. A1-54/A2-II-1.
+- La 2154 reemplaza la afirmación circular por la definición: microinstrucción como palabra de control que especifica señales u operaciones elementales para una etapa del microprograma. A1-41/A2-II-1.
+- La 2155 se confirma sin cambios: libre no equivale a gratuito; ejecutar con cualquier propósito, modificar y distribuir versiones son libertades definitorias. Se explicita que vender copias no las elimina. A1-69/A2-II-14.
+
+Cotejo con academia Drive: [bloque 27 Sistemas operativos](https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk), [bloque 18 Protección jurídica, licencias y control del software](https://drive.google.com/file/d/1Og6yI-YaZ48UA3pBT-HQhTh7TfvdPW_C/view?usp=drivesdk) y [bloque 26 Hardware, servidores y virtualización](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-FA/view?usp=drivesdk). Temas oficiales verificados en [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y `temario-oficial.json`: A1-60/A2-II-2 (2151); A1-69/A2-II-14 (2152 y 2155); A1-54/A2-II-1 (2153); A1-41/A2-II-1 (2154). La academia se utiliza para cobertura curricular, no como autoridad técnica.
+
+Fuentes primarias: [Vim Reference Manual, Writing and quitting](https://vimhelp.org/editing.txt.html#write-quit); [GNU GPLv3, preámbulo y §4](https://www.gnu.org/licenses/gpl-3.0.en.html); [FSF, What is Free Software?](https://www.gnu.org/philosophy/free-sw.en.html); [IEEE Technology Navigator, Microprogramming](https://technav.ieee.org/topic/microprogramming/). El problema de memoria queda sustentado por la derivación de 24 bits de direccionamiento por palabra y palabras de 16 bits, con el supuesto ahora declarado en el enunciado.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.155 registros de revisión, 57 pendientes y 9.968 preguntas todavía sin revisión individual. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 366 — 28 de octubre
 
