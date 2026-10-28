@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 410 (IDs 2361–2365). Acumulado: 2.365 preguntas examinadas, 2.303 verificadas (521 vigentes, 1.614 corregidas y 168 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.758 sin revisar individualmente. Hay 1.826 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 411 (IDs 2366–2370). Acumulado: 2.370 preguntas examinadas, 2.308 verificadas (521 vigentes, 1.619 corregidas y 168 históricas) y 62 pendientes (30 de fuente y 32 de ambigüedad); quedan 9.753 sin revisar individualmente. Hay 1.831 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 411 — 28 de octubre
+
+IDs 2366–2370 revisados individualmente. Los originales completos de los cinco reactivos se conservaron en `cambios-lote-411.json`; se corrigieron los cinco y se cotejaron con fuentes primarias, temario Academy y programas A1/A2.
+
+- **2366 — componentes del documento electrónico:** la NTI enumera contenido, firma electrónica en su caso y metadatos; «encabezado» no es componente y la estructura/formato se regula por separado. A1-45/A2-I-9; Academy, Interoperabilidad de Sistemas y bloque 03 de Administración digital.
+- **2367 — ISO/IEC 20000-1:** se elimina la afirmación atemporal «uno de los principales países». El reactivo especifica ISO Survey 2022: España aparece quinta por certificados con 172. El puesto es histórico y no se extrapola a otros años. A1-50/106; Academy, bloque 41 ITIL y COBIT (encuadre de gestión, sin atribuirle el ranking).
+- **2368 — artículo 2 CE:** se restaura la expresión constitucional exacta «nacionalidades y regiones», no «naciones» o «provincias». A1-3/A2-I-1; Academy, bloque 01 Constitución.
+- **2369 — lenguas oficiales:** el artículo 3 está en el Título Preliminar. A1-1/A2-I-1; Academy, bloque 01 Constitución.
+- **2370 — estados excepcionales:** conforme al art. 116.4 CE, el estado de sitio lo declara el Congreso por mayoría absoluta a propuesta exclusiva del Gobierno. Se diferencian las competencias de alarma y excepción y se conserva la regla de no alteración de responsabilidad del art. 116.6. A1-1/A2-I-1; Academy, bloque 01 Constitución.
+
+Fuentes primarias: [NTI de Documento Electrónico, BOE-A-2011-13169](https://www.boe.es/buscar/act.php?id=BOE-A-2011-13169); [ISO Survey 2022, análisis ISO/IEC 20000-1](https://committee.iso.org/files/live/sites/jtc1sc40/files/ISO%20Survey%202022%20with%2020000-1%20analysis.pdf), tabla de puestos; [Constitución Española, texto consolidado BOE-A-1978-31229](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520), arts. 2, 3 y 116.
+
+Cotejo curricular Drive: [Interoperabilidad de Sistemas, versión 2026.2](https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view?usp=drivesdk), [bloque 03 Administración digital](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), [bloque 41 ITIL y COBIT 2026.1](https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk) y [bloque 01 Constitución 2026](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk). Correspondencias verificadas contra `temario-oficial.json` y los anexos de las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy es encuadre curricular, no fuente legal ni estadística.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.370 revisiones registradas, 62 pendientes y 9.753 todavía sin revisión individual; 12 grupos repetidos y 60 candidatos de inspección. Inventario estructural no equivale a revisión de contenido.
 
 ## Lote 410 — 28 de octubre
 
