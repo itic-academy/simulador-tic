@@ -102972,7 +102972,7 @@
       "id": 2176,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo se denominan los elementos que permiten insertar código Java arbitrario en una página JSP?",
+      "texto": "En Jakarta Server Pages (JSP), ¿cómo se denomina el elemento `<% ... %>` que inserta código Java ejecutado al procesar la petición?",
       "opciones": [
         "Applets",
         "Codelets",
@@ -102980,13 +102980,60 @@
         "Ninguna de las anteriores"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se conserva el concepto histórico y aún definido en la especificación: el elemento scriptlet `<% ... %>` permite incluir fragmentos de código Java en una página JSP. La especificación actual advierte que no es una buena práctica mezclar la lógica de negocio y la vista; la pregunta evalúa terminología, no una recomendación de diseño. Cotejo curricular: A1-65/A1-67 y A2-III-10/III-12 encuadran Java empresarial, Jakarta Server Pages y aplicaciones web. El bloque 30 contiene tecnologías Java/servidor; la definición del scriptlet se verifica en la especificación Jakarta, no en el temario de academia. Correspondencia A1-65, A1-67, A2-III-10, A2-III-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10",
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; A1-65/A1-67 y A2-III-10/III-12 encuadran Java empresarial, Jakarta Server Pages y aplicaciones web. El bloque 30 contiene tecnologías Java/servidor; la definición del scriptlet se verifica en la especificación Jakarta, no en el temario de academia.",
+        "estado": "revisada",
+        "nota": "A1-65/A1-67 y A2-III-10/III-12 encuadran Java empresarial, Jakarta Server Pages y aplicaciones web. El bloque 30 contiene tecnologías Java/servidor; la definición del scriptlet se verifica en la especificación Jakarta, no en el temario de academia. Correspondencia A1-65, A1-67, A2-III-10, A2-III-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "JSP",
+        "Jakarta Server Pages",
+        "scriptlets",
+        "scripting elements",
+        "Java en servidor"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/specifications/pages/4.0/jakarta-server-pages-spec-4.0.pdf",
+            "referencia": "Jakarta Server Pages 4.0 Specification, sección 1.12.2: los scriptlets contienen fragmentos de código válidos en el lenguaje de scripting y se ejecutan al procesar la petición; la especificación recomienda separar lógica de presentación, sin eliminar la categoría."
+          },
+          {
+            "url": "https://jakarta.ee/learn/specification-guides/servlet-faces-and-server-pages-explained/",
+            "referencia": "Eclipse Foundation/Jakarta EE, guía de Servlet, Faces y Server Pages: identifica `<% code %>` como scriptlet que incorpora código Java en una JSP y recomienda mantener la lógica de negocio en clases."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, versión 2026.1; cotejo del contenido curricular. Material de academia usado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 consultada; programa del anexo, tema(s) A1-65, A1-67."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI consultada; programa del anexo, tema(s) A2-III-10, A2-III-12."
+          }
+        ],
+        "observaciones": "Se conserva el concepto histórico y aún definido en la especificación: el elemento scriptlet `<% ... %>` permite incluir fragmentos de código Java en una página JSP. La especificación actual advierte que no es una buena práctica mezclar la lógica de negocio y la vista; la pregunta evalúa terminología, no una recomendación de diseño. Cotejo curricular: A1-65/A1-67 y A2-III-10/III-12 encuadran Java empresarial, Jakarta Server Pages y aplicaciones web. El bloque 30 contiene tecnologías Java/servidor; la definición del scriptlet se verifica en la especificación Jakarta, no en el temario de academia. Correspondencia A1-65, A1-67, A2-III-10, A2-III-12 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2177,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes herramientas software para backup NO es de código abierto?",
+      "texto": "¿Cuál de estas soluciones de backup no es de código abierto? Considere Bacula Community Edition, no la edición comercial Bacula Enterprise.",
       "opciones": [
         "Bacula",
         "BackupPC",
@@ -102994,27 +103041,125 @@
         "NetBackup"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La opción que no es de código abierto es NetBackup: su editor actual, Cohesity, lo distribuye bajo licencias comerciales perpetuas o de suscripción y términos de uso. Bacula Community, BackupPC y Amanda publican software fuente y licencias libres/abiertas. Se precisa Bacula Community para no confundirla con Bacula Enterprise, que es una edición comercial distinta. Cotejo curricular: A1-69/A2-II-14 encuadran software, licencias y propiedad intelectual. Las búsquedas del material accesible de ITIC Academy no localizaron una sección que compare las licencias de estos productos de backup; se deja constancia del límite del cotejo y el encaje se hace con el programa oficial. Las licencias y el estado comercial se verifican directamente con los proyectos y el titular de NetBackup. Correspondencia A1-69, A2-II-14 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-69"
+        ],
+        "A2": [
+          "A2-II-14"
+        ],
+        "bloque_academia": "Sin apartado específico localizado en los materiales consultables; A1-69/A2-II-14 encuadran software, licencias y propiedad intelectual. Las búsquedas del material accesible de ITIC Academy no localizaron una sección que compare las licencias de estos productos de backup; se deja constancia del límite del cotejo y el encaje se hace con el programa oficial. Las licencias y el estado comercial se verifican directamente con los proyectos y el titular de NetBackup.",
+        "estado": "revisada",
+        "nota": "A1-69/A2-II-14 encuadran software, licencias y propiedad intelectual. Las búsquedas del material accesible de ITIC Academy no localizaron una sección que compare las licencias de estos productos de backup; se deja constancia del límite del cotejo y el encaje se hace con el programa oficial. Las licencias y el estado comercial se verifican directamente con los proyectos y el titular de NetBackup. Correspondencia A1-69, A2-II-14 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "software libre",
+        "software propietario",
+        "backup",
+        "NetBackup",
+        "licenciamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.bacula.org/",
+            "referencia": "Bacula.org, edición Community: se presenta como software de copia abierto; distingue la edición comercial Bacula Enterprise."
+          },
+          {
+            "url": "https://backuppc.github.io/backuppc/",
+            "referencia": "BackupPC, sitio del proyecto: software de backup de código abierto distribuido bajo licencia GPL."
+          },
+          {
+            "url": "https://www.amanda.org/download.php",
+            "referencia": "Amanda, sitio del proyecto: se define como software libre y de código abierto, con licencias BSD/GPL."
+          },
+          {
+            "url": "https://www.cohesity.com/content/dam/cohesity/resource-assets/agreements-archive/netbackup-april-2026.pdf",
+            "referencia": "Cohesity, Product Specific Terms for NetBackup: licencia NetBackup mediante licencias perpetuas o por suscripción, capacidades o métricas de uso; software propietario y sujeto a contrato."
+          },
+          {
+            "url": "https://www.cohesity.com/agreements/product-specific-terms/",
+            "referencia": "Cohesity, Product-Specific Terms: mantiene NetBackup como software sujeto a condiciones de uso/licencia, no como proyecto de código abierto."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 consultada; programa del anexo, tema(s) A1-69."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI consultada; programa del anexo, tema(s) A2-II-14."
+          }
+        ],
+        "observaciones": "La opción que no es de código abierto es NetBackup: su editor actual, Cohesity, lo distribuye bajo licencias comerciales perpetuas o de suscripción y términos de uso. Bacula Community, BackupPC y Amanda publican software fuente y licencias libres/abiertas. Se precisa Bacula Community para no confundirla con Bacula Enterprise, que es una edición comercial distinta. Cotejo curricular: A1-69/A2-II-14 encuadran software, licencias y propiedad intelectual. Las búsquedas del material accesible de ITIC Academy no localizaron una sección que compare las licencias de estos productos de backup; se deja constancia del límite del cotejo y el encaje se hace con el programa oficial. Las licencias y el estado comercial se verifican directamente con los proyectos y el titular de NetBackup. Correspondencia A1-69, A2-II-14 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2178,
       "bloque": 0,
       "tema": 0,
-      "texto": "Sobre la representación del conocimiento:",
+      "texto": "En un algoritmo genético real-coded aplicado a un problema con parámetros continuos, ¿qué puede codificar cada cromosoma?",
       "opciones": [
-        "Los algoritmos genéticos usan representación paramétrica",
-        "Las redes neuronales usan representación simbólica",
-        "Las dos respuestas anteriores son correctas",
-        "Ninguna de las respuestas anteriores es correcta"
+        "Un vector de valores reales que representa una solución candidata o sus parámetros.",
+        "Necesariamente una fórmula lógica simbólica independiente del problema.",
+        "Exclusivamente pesos de una red neuronal, aunque el problema no tenga relación con ella.",
+        "La misma representación única obligatoria para todos los algoritmos genéticos."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El enunciado heredado generalizaba una codificación como si todo algoritmo genético la usara y trataba de forma imprecisa las redes neuronales como representación «simbólica». Se reformula la opción correcta para especificar un algoritmo genético real-coded aplicado a parámetros continuos: el cromosoma puede codificar un vector de valores reales. No se afirma que esa codificación sea universal; puede elegirse entre esquemas binarios, reales, permutaciones u otros según el problema. Cotejo curricular: A1-70/A2-III-5 incluyen inteligencia artificial y representación del conocimiento. El bloque 32 sirve de encuadre curricular; la codificación real de cromosomas se contrasta con la literatura académica citada en la revisión. Correspondencia A1-70, A2-III-5 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 32 Inteligencia artificial, versión 2026.1; A1-70/A2-III-5 incluyen inteligencia artificial y representación del conocimiento. El bloque 32 sirve de encuadre curricular; la codificación real de cromosomas se contrasta con la literatura académica citada en la revisión.",
+        "estado": "revisada",
+        "nota": "A1-70/A2-III-5 incluyen inteligencia artificial y representación del conocimiento. El bloque 32 sirve de encuadre curricular; la codificación real de cromosomas se contrasta con la literatura académica citada en la revisión. Correspondencia A1-70, A2-III-5 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "algoritmos genéticos",
+        "codificación real",
+        "cromosomas",
+        "parámetros",
+        "representación de conocimiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://digital.library.adelaide.edu.au/items/a5021119-9b7e-4959-8799-d9413fccc44b",
+            "referencia": "University of Adelaide repository, Real coded genetic algorithms for solving flexible job-shop scheduling problem: propone cromosomas representados por arrays de números reales como codificación específica de un algoritmo genético."
+          },
+          {
+            "url": "https://doi.org/10.21914/anziamj.v51i0.2776",
+            "referencia": "Gaffney, Pearce y Green, Binary versus real coding for genetic algorithms: muestra que la codificación binaria o real es una decisión de diseño dependiente del problema, no una propiedad universal de todo algoritmo genético."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 Inteligencia artificial, versión 2026.1; cotejo del contenido curricular. Material de academia usado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 consultada; programa del anexo, tema(s) A1-70."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI consultada; programa del anexo, tema(s) A2-III-5."
+          }
+        ],
+        "observaciones": "El enunciado heredado generalizaba una codificación como si todo algoritmo genético la usara y trataba de forma imprecisa las redes neuronales como representación «simbólica». Se reformula la opción correcta para especificar un algoritmo genético real-coded aplicado a parámetros continuos: el cromosoma puede codificar un vector de valores reales. No se afirma que esa codificación sea universal; puede elegirse entre esquemas binarios, reales, permutaciones u otros según el problema. Cotejo curricular: A1-70/A2-III-5 incluyen inteligencia artificial y representación del conocimiento. El bloque 32 sirve de encuadre curricular; la codificación real de cromosomas se contrasta con la literatura académica citada en la revisión. Correspondencia A1-70, A2-III-5 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2179,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes características del DNI electrónico se introdujo a partir del DNIe 3.0?",
+      "texto": "Frente al DNIe anterior, ¿qué nueva característica de comunicación incorporó el DNI 3.0?",
       "opciones": [
         "Cumple la norma ISO 7816 para tarjetas inteligentes.",
         "Emplea la tecnología inalámbrica NFC.",
@@ -103022,7 +103167,55 @@
         "Sus certificados cumplen la norma X509 v3."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La característica introducida en la generación DNI 3.0 fue la interfaz inalámbrica NFC mediante una antena de radiofrecuencia. ISO 7816, los certificados del chip y los perfiles X.509 no son la distinción que identifica esa generación frente al DNIe anterior. El enunciado queda anclado a la comparación de versiones descrita en el portal oficial. Cotejo curricular: A1-81/A2-I-6 encuadran identificación electrónica, DNIe y servicios de confianza. El bloque 36 cubre identificación y firma; la incorporación de NFC en DNI 3.0 se verifica con el portal oficial del DNI electrónico. Correspondencia A1-81, A2-I-6 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad, criptografía, identificación y firma, versión 2026.1; A1-81/A2-I-6 encuadran identificación electrónica, DNIe y servicios de confianza. El bloque 36 cubre identificación y firma; la incorporación de NFC en DNI 3.0 se verifica con el portal oficial del DNI electrónico.",
+        "estado": "revisada",
+        "nota": "A1-81/A2-I-6 encuadran identificación electrónica, DNIe y servicios de confianza. El bloque 36 cubre identificación y firma; la incorporación de NFC en DNI 3.0 se verifica con el portal oficial del DNI electrónico. Correspondencia A1-81, A2-I-6 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "DNIe 3.0",
+        "NFC",
+        "identificación electrónica",
+        "smart cards"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_033",
+            "referencia": "Portal oficial DNI electrónico, Qué son las Apps para móviles: el DNI 3.0 incorpora antena radiofrecuencia y NFC, que permite leer el chip aproximando un dispositivo compatible."
+          },
+          {
+            "url": "https://www.dnie.es/PortalDNIe/PRF1_Cons02.action?pag=REF_300",
+            "referencia": "Portal oficial DNI electrónico, requisitos de uso: compara el DNIe de contacto con el chip de interfaz dual del DNI 3.0, que añade comunicación inalámbrica NFC; los lectores de contacto siguen estándares ISO 7816."
+          },
+          {
+            "url": "https://www.dnie.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1001",
+            "referencia": "Portal oficial DNI electrónico, conceptos básicos: confirma la coexistencia de DNIe y DNI 3.0 y los certificados de autenticación, firma y componente presentes en el chip."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 Seguridad, criptografía, identificación y firma, versión 2026.1; cotejo del contenido curricular. Material de academia usado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 consultada; programa del anexo, tema(s) A1-81."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI consultada; programa del anexo, tema(s) A2-I-6."
+          }
+        ],
+        "observaciones": "La característica introducida en la generación DNI 3.0 fue la interfaz inalámbrica NFC mediante una antena de radiofrecuencia. ISO 7816, los certificados del chip y los perfiles X.509 no son la distinción que identifica esa generación frente al DNIe anterior. El enunciado queda anclado a la comparación de versiones descrita en el portal oficial. Cotejo curricular: A1-81/A2-I-6 encuadran identificación electrónica, DNIe y servicios de confianza. El bloque 36 cubre identificación y firma; la incorporación de NFC en DNI 3.0 se verifica con el portal oficial del DNI electrónico. Correspondencia A1-81, A2-I-6 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2180,
@@ -103036,7 +103229,47 @@
         "Captura de datos a partir de las operaciones diarias de una organización."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "OLTP (Online Transaction Processing) se utiliza para registrar y procesar transacciones operativas cotidianas. Las consultas complejas agregadas e informes ejecutivos corresponden normalmente a cargas analíticas/OLAP; esa diferencia hace inequívoca la opción sobre captura de operaciones diarias. Cotejo curricular: A1-63/A2-II-4 encuadran bases de datos y sistemas de información; el bloque 34 introduce BI/analítica y sirve de contraste curricular entre cargas operativas y analíticas. La definición OLTP se comprueba en documentación técnica oficial. Correspondencia A1-63, A2-II-4 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34 Business Intelligence & Big Data, versión 2026.1; A1-63/A2-II-4 encuadran bases de datos y sistemas de información; el bloque 34 introduce BI/analítica y sirve de contraste curricular entre cargas operativas y analíticas. La definición OLTP se comprueba en documentación técnica oficial.",
+        "estado": "revisada",
+        "nota": "A1-63/A2-II-4 encuadran bases de datos y sistemas de información; el bloque 34 introduce BI/analítica y sirve de contraste curricular entre cargas operativas y analíticas. La definición OLTP se comprueba en documentación técnica oficial. Correspondencia A1-63, A2-II-4 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "OLTP",
+        "procesamiento transaccional",
+        "operaciones diarias",
+        "bases de datos"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/optimize-data-performance",
+            "referencia": "Microsoft Learn, optimize data performance: OLTP gestiona transacciones individuales y tareas operativas del día a día, como pedidos, inventario y datos de clientes; OLAP se orienta a consultas analíticas, agregaciones e informes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34 Business Intelligence & Big Data, versión 2026.1; cotejo del contenido curricular. Material de academia usado para encuadre, no como autoridad normativa ni técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 consultada; programa del anexo, tema(s) A1-63."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI consultada; programa del anexo, tema(s) A2-II-4."
+          }
+        ],
+        "observaciones": "OLTP (Online Transaction Processing) se utiliza para registrar y procesar transacciones operativas cotidianas. Las consultas complejas agregadas e informes ejecutivos corresponden normalmente a cargas analíticas/OLAP; esa diferencia hace inequívoca la opción sobre captura de operaciones diarias. Cotejo curricular: A1-63/A2-II-4 encuadran bases de datos y sistemas de información; el bloque 34 introduce BI/analítica y sirve de contraste curricular entre cargas operativas y analíticas. La definición OLTP se comprueba en documentación técnica oficial. Correspondencia A1-63, A2-II-4 cotejada con los materiales de academia indicados y con los programas oficiales de las convocatorias programas oficiales A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262, cotejados con revision/temario-oficial.json. La academia se utiliza para encuadre curricular; la respuesta se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 2181,

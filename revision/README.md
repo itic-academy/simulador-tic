@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 371 (IDs 2171–2175). Acumulado: 2.175 preguntas examinadas, 2.117 verificadas (481 vigentes, 1.474 corregidas y 162 históricas) y 58 pendientes (29 de fuente y 29 de ambigüedad); quedan 9.948 sin revisar individualmente. Hay 1.675 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 372 (IDs 2176–2180). Acumulado: 2.180 preguntas examinadas, 2.122 verificadas (482 vigentes, 1.478 corregidas y 162 históricas) y 58 pendientes (29 de fuente y 29 de ambigüedad); quedan 9.943 sin revisar individualmente. Hay 1.680 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 372 — 28 de octubre
+
+IDs 2176–2180 revisados individualmente. Cuatro preguntas corregidas para hacer explícitas las condiciones que determinan una respuesta única y una se confirma como vigente. Se conserva el texto original íntegro de cada registro en `cambios-lote-372.json`. Acumulado: 2.180 examinadas, 2.122 verificadas (482 vigentes, 1.478 corregidas y 162 históricas), 58 pendientes y 9.943 todavía sin revisión individual.
+
+- La 2176 precisa el elemento JSP `<% ... %>`: es un scriptlet, que ejecuta código de servidor al procesar la petición. Se advierte que la especificación recomienda separar lógica y presentación. A1-65/A1-67/A2-III-10/III-12.
+- La 2177 distingue Bacula Community de Bacula Enterprise. NetBackup, actualmente de Cohesity, se distribuye con licencia comercial; Bacula Community, BackupPC y Amanda son proyectos abiertos. A1-69/A2-II-14.
+- La 2178 retira la generalización de que todos los algoritmos genéticos empleen una representación paramétrica. Se pregunta por un GA real-coded aplicado a parámetros continuos, donde un cromosoma puede codificarse como vector de valores reales. A1-70/A2-III-5.
+- La 2179 define la diferencia de comunicación del DNI 3.0 frente a la generación anterior: incorpora NFC mediante una interfaz inalámbrica, además del contacto. A1-81/A2-I-6.
+- La 2180 se confirma: OLTP registra transacciones y operaciones cotidianas; consultas agregadas e informes corresponden a cargas analíticas/OLAP. A1-63/A2-II-4.
+
+Cotejo con academia Drive: [bloque 30 Tecnologías de sistemas de información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk) (JSP); [bloque 32 Inteligencia artificial](https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk) (representación en IA); [bloque 36 Seguridad, criptografía, identificación y firma](https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk) (DNIe); y [bloque 34 Business Intelligence & Big Data](https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk) (operacional frente a analítica). La búsqueda de los materiales consultables no localizó un apartado específico que compare las licencias de los productos de backup de 2177; se documenta esta limitación y se encuadra mediante el temario oficial. Temas contrastados con `temario-oficial.json`, [convocatoria A1](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). El material de academia solo contextualiza el currículo; las afirmaciones técnicas se apoyan en las fuentes primarias citadas en los registros individuales.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.180 registros de revisión, 58 pendientes y 9.943 preguntas todavía sin revisión individual. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 371 — 28 de octubre
 
