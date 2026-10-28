@@ -1,0 +1,29 @@
+const apply=require('./aplicar-lote.cjs');
+const records=[
+ [2036,[123],["IV-15"],['GPRS','GSM','conmutación de paquetes','compartición de timeslots','tarificación','ambigüedad'],[
+  {url:'https://www.etsi.org/deliver/etsi_ts/132200_132299/132251/08.06.00_60/ts_132251v080600p.pdf',referencia:'3GPP TS 32.251 / ETSI TS 132 251, charging management del dominio packet-switched: especifica información de volumen y duración y contempla facturación por volumen, tiempo o eventos según el servicio.'},
+  {url:'https://www.3gpp.org/ftp/tsg_sa/wg3_security/TSGS3_12_Stockholm/Docs/PDF/S3-000260.pdf',referencia:'Documento técnico del grupo 3GPP: los canales PDCH GPRS se comparten en downlink y pueden compartirse también en uplink entre estaciones; distingue la asignación dinámica de timeslots.'}
+ ],null,'Pendiente por ambigüedad de la afirmación tarifaria. GPRS usa paquetes, puede interconectar con redes de datos y comparte dinámicamente canales; la respuesta prevista es «tarificación por tiempo». Sin embargo, 3GPP/ETSI define medición de volumen y duración y contempla facturación por volumen o por tiempo según el servicio/plan. Sin especificar la modalidad comercial, la frase categórica no es universalmente falsa; se preservan enunciado y clave sin certificarlos. A1-123/A2-IV-15.','pendiente_ambiguedad'],
+ [2037,[114],["IV-11"],['WPS','Wi-Fi Simple Configuration','PBC','NFC','USB','RADIUS'],[
+  {url:'https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_wps_configuration_method',referencia:'Microsoft Learn, enumeración de métodos WPS: incluye pantalla/PIN, NFC, botón físico o virtual y teclado; RADIUS no figura como método de configuración WPS.'},
+  {url:'https://www.scribd.com/document/768847493/Wi-Fi-Protected-Setup-Specification-v2-0-8',referencia:'Wi-Fi Alliance, Wi-Fi Protected Setup Specification v2.0.8 (2020), copia del documento primario del fabricante: enumera PIN, PBC, NFC y USB Flash Drive Configuration.'},
+  {url:'https://learn.microsoft.com/en-us/windows/win32/wcn/about-windows-connect-now',referencia:'Microsoft Learn: Windows Connect Now es la implementación de Microsoft de WPS/Wi-Fi Simple Configuration creada por Wi-Fi Alliance.'}
+ ],null,'Se precisa que se pregunta por métodos de configuración WPS, no por autenticación empresarial. PBC, NFC y USB son métodos WPS/WSC; RADIUS es un protocolo/servicio AAA y no uno de esos métodos. Respuesta 0. A1-114/A2-IV-11.','corregida'],
+ [2038,[94],["III-3"],['prototipos','requisitos','usabilidad','diseño','esfuerzo de desarrollo'],[
+  {url:'https://www.mlsu.ac.in/econtents/16_EBOOK-7th_ed_software_engineering_a_practitioners_approach_by_roger_s._pressman_.pdf',referencia:'Pressman, Software Engineering: A Practitioner’s Approach, 7.ª ed., capítulo sobre prototipado: el prototipo permite obtener feedback, aclarar requisitos y revisar la interfaz con usuarios.'},
+ ],null,'El aumento del esfuerzo/coste directo de desarrollo no es un beneficio del prototipado. La técnica permite obtener feedback temprano, aclarar requisitos y mejorar la adecuación/usabilidad del diseño; puede exigir trabajo adicional, aunque reduzca cambios tardíos. Respuesta 1. A1-94/A2-III-3.','vigente'],
+ [2039,[96],["III-13"],['SW-CMM','Capability Maturity Model','nivel 2','Repeatable','gestión de proyectos','histórica'],[
+  {url:'https://sei.cmu.edu/documents/1093/1993_005_001_16214.pdf',referencia:'SEI/Carnegie Mellon, Overview of the Capability Maturity Model: en SW-CMM nivel 2 Repeatable se establecen áreas básicas de gestión de proyectos, incluida planificación y seguimiento de coste/calendario.'},
+  {url:'https://insights.sei.cmu.edu/documents/2023/2003_004_001_14156.pdf',referencia:'SEI/Carnegie Mellon CMU/SEI-2003-TN-015: resume los cinco niveles y las áreas clave de proceso de SW-CMM; nivel 2 es Repeatable y se centra en gestión de proyectos.'}
+ ],null,'Se mantiene como pregunta histórica sobre el SW-CMM clásico (no se confunde con los modelos CMMI posteriores). En su nivel 2, Repeatable, se instauran procesos básicos de gestión de proyecto, como planificación y seguimiento, para estimar/controlar coste, calendario y funcionalidad. Respuesta 2. A1-96/A2-III-13.','historica'],
+ [2040,[111],["II-8"],['ITU-T X.200','ISO/IEC 7498-1','modelo OSI','norma conjunta'],[
+  {url:'https://www.itu.int/ITU-T/recommendations/rec.aspx?id=2820',referencia:'ITU-T X.200 (07/1994), estado In force: la ficha declara que es idéntica a ISO/IEC 7498-1:1994 y que el texto se desarrolló conjuntamente con ISO/IEC.'},
+  {url:'https://www.iso.org/standard/20269.html',referencia:'ISO, ficha vigente de ISO/IEC 7498-1:1994, Basic Reference Model, confirmada en 2000 y actualmente publicada.'}
+ ],null,'ITU-T X.200 (07/1994) es el texto idéntico de ISO/IEC 7498-1:1994, publicado conjuntamente. Se actualiza la opción para dar la referencia ISO/IEC exacta, en lugar de la abreviatura imprecisa ISO 7498. Respuesta 1. A1-111/A2-II-8.','corregida']
+];
+const edits={
+ 2037:{texto:'WPS/Wi-Fi Simple Configuration define métodos para configurar una estación inalámbrica. ¿Cuál de las siguientes opciones NO es un método de configuración WPS?',opciones:['RADIUS','PBC (Push Button Configuration)','NFC','USB Flash Drive Configuration'],respuesta_correcta:0},
+ 2039:{texto:'En el modelo histórico SW-CMM de SEI, ¿qué describe el nivel 2, denominado Repeatable?',opciones:['El proceso es ad hoc o depende de esfuerzos individuales y heroicos.','Los procesos de ingeniería están documentados y estandarizados en toda la organización.','Se implantan procesos básicos de gestión de proyectos para planificar y seguir coste, calendario y funcionalidad.','Los procesos y la calidad del producto se controlan cuantitativamente.'],respuesta_correcta:2},
+ 2040:{opciones:['ISO 9945','ISO/IEC 7498-1','ISO 9126','ISO/IEC 15408']}
+};
+apply({numero:'344',fecha:'2026-10-28',records,edits});
