@@ -1,0 +1,41 @@
+const apply=require('./aplicar-lote.cjs');
+
+const sources={
+ dss:[
+  {url:'https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk',referencia:'ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1, sección 1.2: distingue MIS (informes periódicos), DSS (datos y modelos para decisiones semiestructuradas; análisis ad hoc, escenarios y simulaciones) y EIS/ESS (información agregada para alta dirección). Se usa como contraste curricular y para formular una distinción concreta, no como lista universal de componentes.'},
+  {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria A2 GSI BOE-A-2025-26262, anexo de programa, tema II-4: sistemas de soporte a las decisiones, sistemas de información ejecutiva, BI, almacenes de datos y OLTP/OLAP.'}
+ ],
+ manager:[
+  {url:'https://boe.es/buscar/act.php?id=BOE-A-2015-10566&p=20260929&tn=1',referencia:'Ley 40/2015, de Régimen Jurídico del Sector Público, art. 60.1, texto consolidado consultado el 28/10/2026: los Ministros son superiores jerárquicos directos de Secretarios de Estado y Subsecretarios.'}
+ ],
+ integration:[
+  {url:'https://www.incose.org/docs/default-source/professional-development-portal/isecf.pdf?sfvrsn=dad06bc7_4',referencia:'INCOSE Systems Engineering Competency Framework, competencia técnica Integration: integrar elementos y agregados para obtener el sistema realizado, verificando interfaces, flujos de datos y mecanismos de control; la integración debe planificarse de manera incremental.'},
+  {url:'https://www.nasa.gov/reference/system-engineering-handbook-appendix/',referencia:'NASA Systems Engineering Handbook, apéndice H: el plan de integración reúne componentes y subsistemas, identifica participantes, responsabilidades, secuencia, recursos y resolución de problemas.'},
+  {url:'https://ops.fhwa.dot.gov/seits/sections/section6/6_2.html',referencia:'Federal Highway Administration, Systems Engineering for ITS, §6.2: el plan de integración de componentes de software cobra especial importancia cuando hay numerosos subsistemas desarrollados por equipos distintos.'}
+ ],
+ director:[
+  {url:'https://www.boe.es/buscar/act.php?id=BOE-A-2015-8147',referencia:'Ley 22/2015, de Auditoría de Cuentas, art. 5.3: el informe de auditoría se emite bajo responsabilidad de quien realiza la auditoría y debe ser firmado por esa persona auditora o sociedad de auditoría. El análisis económico de inversiones TIC no se descarta como función directiva; se sustituye esa opción ambigua por la firma legal del informe independiente.'}
+ ],
+ audit:[
+  {url:'https://www.isaca.org/resources/white-papers/information-systems-auditing-tools-techniques',referencia:'ISACA, Information Systems Auditing Tools & Techniques: Creating Audit Programs: antes de elaborar el plan hay que comprender claramente el alcance y los objetivos del encargo; el plan parte de ese propósito y organiza procedimientos y evidencias.'},
+  {url:'https://www.isaca.org/resources/isaca-journal/issues/2019/volume-3/developing-the-it-audit-plan-using-cobit-2019',referencia:'ISACA Journal, IS Audit Basics: Developing the IT Audit Plan Using COBIT 2019: la planificación de auditoría TI adopta un enfoque basado en riesgos para priorizar y asignar recursos.'}
+ ]
+};
+
+const records=[
+ [2396,[],['II-4'],['DSS','sistemas de soporte a decisiones','BI','análisis ad hoc','modelos'],sources.dss,'','La lista original mezclaba formatos de salida de reporting y MIS con una supuesta lista cerrada de instrumentos de DSS; no hay una taxonomía universal de cuatro herramientas. Se sustituye por una distinción comprobable: un DSS combina datos y modelos para explorar alternativas y apoyar decisiones semiestructuradas mediante análisis ad hoc, escenarios y simulación.','corregida'],
+ [2397,[4],['I-8'],['AGE','Ministerio','Subsecretario','superior jerárquico','Ley 40/2015'],sources.manager,'','El artículo 60.1 de la Ley 40/2015 establece expresamente que el Ministro es superior jerárquico directo del Subsecretario. Se acota la pregunta a esa regla legal, en lugar del impreciso «normalmente reporta».','corregida'],
+ [2398,[86],['III-6'],['integración de sistemas','subsistemas','interfaces','equipos de desarrollo'],sources.integration,'','No todo escenario con máquinas virtuales o una puesta en producción requiere un equipo dedicado; la integración es un proceso de ingeniería y su organización depende del proyecto. Se pregunta ahora por el caso que justifica planificar una integración coordinada: varios subsistemas desarrollados por equipos distintos que han de ensamblarse y probarse en el sistema superior.','corregida'],
+ [2399,[30,35],[],['dirección TIC','planificación estratégica','inversiones TIC','auditoría de cuentas','Ley 22/2015'],sources.director,'','El análisis financiero no puede descartarse como función directiva TIC: la evaluación de costes, beneficios y viabilidad de inversiones puede formar parte de la gestión. Se sustituye esa opción ambigua por emitir y firmar el informe legal de auditoría de cuentas, función atribuida por la Ley 22/2015 a quien realiza la auditoría independiente.','corregida'],
+ [2400,[38],['II-11'],['auditoría de sistemas','contexto','alcance','objetivos','riesgo','planificación'],sources.audit,'','«Primer paso» depende de la metodología y del tipo de auditoría. Se acota a la planificación inicial: antes de valorar riesgos y elaborar el plan, debe comprenderse el contexto del encargo y acordarse con claridad su propósito, alcance y objetivos.','corregida']
+];
+
+const edits={
+ 2396:{texto:'¿Qué caracteriza a un sistema de soporte a las decisiones (DSS), frente a un sistema de información para la gestión que produce informes rutinarios?',opciones:['Generar exclusivamente informes periódicos predefinidos para controlar operaciones estructuradas.','Registrar y procesar únicamente transacciones operativas.','Presentar solo indicadores agregados y alertas destinados a la alta dirección.','Combinar datos y modelos para explorar alternativas y apoyar decisiones semiestructuradas mediante análisis ad hoc, escenarios o simulaciones.'],respuesta_correcta:3},
+ 2397:{texto:'Según el artículo 60.1 de la Ley 40/2015, ¿quién es superior jerárquico directo de un Subsecretario de un Ministerio?',opciones:['El Secretario de Estado del departamento, en todo caso.','El Secretario General del departamento.','El Ministro titular del departamento.','El Secretario General Técnico.'],respuesta_correcta:2},
+ 2398:{texto:'En un proyecto con varios subsistemas desarrollados por equipos distintos que deben ensamblarse y verificarse como un sistema de nivel superior, ¿qué actuación está justificada?',opciones:['Limitarse a administrar los equipos microinformáticos de usuario.','Crear máquinas virtuales independientes sin definir interfaces ni pruebas de integración.','Planificar una integración coordinada, con participantes, responsabilidades, secuencia y comprobación de interfaces.','Posponer toda integración hasta después de la puesta en producción, aunque los subsistemas deban interoperar.'],respuesta_correcta:2},
+ 2399:{texto:'¿Cuál de estas actuaciones no corresponde a la dirección TIC y, conforme a la Ley 22/2015, debe realizarla y firmarla quien efectúa la auditoría independiente de las cuentas anuales?',opciones:['Definir la planificación estratégica de los servicios y sistemas TIC.','Planificar la operación y mejora de los servicios TIC.','Emitir bajo su responsabilidad y firmar el informe legal de auditoría de las cuentas anuales.','Analizar costes, beneficios y viabilidad de inversiones tecnológicas.'],respuesta_correcta:2},
+ 2400:{texto:'En la planificación inicial de una auditoría de sistemas, antes de priorizar riesgos y preparar el plan de pruebas, ¿qué debe comprenderse y delimitarse primero?',opciones:['Dibujar un diagrama de flujo de las ramas de decisión, con independencia del objeto auditado.','El contexto del encargo y su propósito, alcance y objetivos.','Asignar riesgos sin conocer los procesos, sistemas ni objetivos de control.','Desarrollar el programa detallado de pruebas antes de acordar el alcance.'],respuesta_correcta:1}
+};
+
+apply({numero:'417',fecha:'2026-10-28',records,edits});
