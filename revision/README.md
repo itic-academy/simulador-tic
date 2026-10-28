@@ -1,6 +1,24 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 461 (IDs 2616–2620). Acumulado: 2.620 preguntas examinadas, 2.553 verificadas (532 vigentes, 1.830 corregidas y 191 históricas) y 67 pendientes (31 de fuente y 36 de ambigüedad); quedan 9.503 sin revisar individualmente. Hay 2.074 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 462 (IDs 2621–2625). Acumulado: 2.625 preguntas examinadas, 2.558 verificadas (532 vigentes, 1.831 corregidas y 195 históricas) y 67 pendientes (31 de fuente y 36 de ambigüedad); quedan 9.498 sin revisar individualmente. Hay 2.079 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 462 — 28 de octubre
+
+IDs 2621–2625 revisados individualmente y trazados en `cambios-lote-462.json`; se corrigieron cuatro reactivos o sus claves y se delimitó uno como métrica histórica. No se añadieron pendientes nuevos.
+
+- **2621 — transición en McCall:** se explicita el modelo histórico. Transition comprende portabilidad, reusabilidad e interoperabilidad; Flexibility pertenece a revisión. Se conserva la clave Flexibilidad. A1-98/A2-III-13.
+- **2622 — flexibilidad frente a mantenibilidad:** se corrige la clave a Flexibility, definida por McCall como esfuerzo necesario para modificar un programa operativo; Maintainability trata de localizar y corregir errores. A1-98/A2-III-13.
+- **2623 — complejidad:** se pide identificar la pareja McCabe/Halstead; puntos de función son una medida de tamaño funcional y McCall un modelo de calidad, no una métrica de complejidad. A1-98/A2-III-13.
+- **2624 — jerarquía de McCall:** se concreta que los niveles son factores de calidad, criterios y métricas. Se conserva la clave. A1-98/A2-III-13.
+- **2625 — MÉTRICA v3 y normas ISO:** se sustituye la respuesta heredada por UNE-EN-ISO 9001:2000 (requisitos) y UNE-EN-ISO 9000:2000 (fundamentos/vocabulario), recomendadas por el manual de aseguramiento de calidad de MÉTRICA v3 cuando no existe sistema propio. Se marca histórica; las ediciones 2000 están retiradas y las fichas ISO consultadas señalan las ediciones 2026 actuales. A1-96/A1-98/A2-III-13.
+
+Fuentes técnicas: [McCall, Richards y Walters, RADC-TR-77-369 (1977)](https://apps.dtic.mil/sti/pdfs/ADA049014.pdf), taxonomía y definiciones históricas; [SEI, Software Metrics, CMU/SEI-88-CM-012](https://www.sei.cmu.edu/library/software-metrics/), métricas de software y distinción de Bang como medida de tamaño; [McCabe, “A Complexity Measure” (1976)](https://doi.org/10.1109/tse.1976.233837); [MÉTRICA v3, Aseguramiento de la Calidad](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A6838aec9-835a-4562-bdc3-87a96fd9c743/METRICA_V3_Aseguramiento_de_la_Calidad.pdf); [ISO 9000](https://www.iso.org/es/norma/9000) y [ISO 9001](https://www.iso.org/es/norma/9001), estado actual de las ediciones.
+
+Cotejo curricular: [ITIC Academy, bloque 39 Calidad y Mantenimiento, edición 2026.1](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk), que cubre modelos de calidad, McCall, métricas McCabe/Halstead y aseguramiento; contextualiza el temario, pero la pareja normativa de MÉTRICA se acredita con el manual oficial. Correspondencias contrastadas con `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). A2-D13 es el código interno de Academy; el tema oficial aplicado es A2-III-13.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.625 revisadas individualmente, 2.558 verificadas, 67 pendientes documentados y 9.498 todavía sin revisión de contenido. El inventario estructural no acredita revisión individual.
+
+## Lote 461 — 28 de octubre
 
 ## Lote 461 — 28 de octubre
 
