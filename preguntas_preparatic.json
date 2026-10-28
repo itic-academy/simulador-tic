@@ -94261,27 +94261,104 @@
       "id": 2011,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la afirmación FALSA con respecto a PerlScript:",
+      "texto": "En el contexto histórico de PerlScript como motor de Active Scripting para páginas ASP en IIS, señale la afirmación FALSA:",
       "opciones": [
-        "No se permite su uso en el servidor",
-        "Es un lenguaje orientado al entorno Microsoft",
-        "Es un lenguaje de scripting",
-        "Permite el uso de PERL en los scripts web del cliente"
+        "PerlScript no podía instalarse ni utilizarse en el servidor para procesar páginas ASP.",
+        "ASP permitía integrar motores de scripting de terceros como PerlScript.",
+        "El servidor procesaba el script ASP y enviaba al navegador el HTML resultante.",
+        "Para ejecutar PerlScript en ASP era necesario disponer del motor compatible en el servidor."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Se conserva como pregunta histórica y se reformula para fijar el contexto ASP/Active Scripting de IIS. La afirmación falsa es que PerlScript no podía usarse en el servidor: Microsoft documenta ASP con PerlScript y la instalación de motores de terceros en el servidor. No se presenta PerlScript como tecnología actual ni como estándar universal de scripts del navegador. A1-65/A2-II-9.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información, edición 2026.1 (31-08-2026); incluye scripts de cliente y servidor, ASP y lenguajes de scripting; PerlScript se trata únicamente como antecedente histórico.",
+        "estado": "revisada",
+        "nota": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Se conserva como pregunta histórica y se reformula para fijar el contexto ASP/Active Scripting de IIS. La afirmación falsa es que PerlScript no podía usarse en el servidor: Microsoft documenta ASP con PerlScript y la instalación de motores de terceros en el servidor. No se presenta PerlScript como tecnología actual ni como estándar universal de scripts del navegador. A1-65/A2-II-9."
+      },
+      "etiquetas": [
+        "PerlScript",
+        "Active Scripting",
+        "ASP",
+        "motor de scripting",
+        "tecnología histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/previous-versions/iis/6.0-sdk/ms526064%28v%3Dvs.90%29",
+            "referencia": "Microsoft Learn, documentación archivada de ASP/IIS: identifica PerlScript como lenguaje de scripting de páginas ASP que generan HTML en el servidor."
+          },
+          {
+            "url": "https://learn.microsoft.com/is-is/windows/win32/com/scripting-com-objects-in-custom-applications",
+            "referencia": "Microsoft Learn, Active Scripting: un motor compatible como PerlScript podía instalarse en un servidor ASP para procesar scripts Perl."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/previous-versions/iis/6.0-sdk/ms525153%28v%3Dvs.90%29",
+            "referencia": "Microsoft Learn, documentación archivada de IIS 6: motores disponibles para ASP, incluidos Perl y PerlScript mediante instalación/configuración."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información, edición 2026.1 (31-08-2026); cotejo del contenido del tema y su relación curricular."
+          }
+        ],
+        "observaciones": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Se conserva como pregunta histórica y se reformula para fijar el contexto ASP/Active Scripting de IIS. La afirmación falsa es que PerlScript no podía usarse en el servidor: Microsoft documenta ASP con PerlScript y la instalación de motores de terceros en el servidor. No se presenta PerlScript como tecnología actual ni como estándar universal de scripts del navegador. A1-65/A2-II-9."
+      }
     },
     {
       "id": 2012,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué símbolo es utilizado para direccionar el resultado de la ejecución de un comando del sistema operativo Unix sustituyendo el contenido de un fichero?",
+      "texto": "En una shell Unix/POSIX, ¿qué operador redirige la salida estándar de un comando a un fichero sobrescribiendo su contenido (o creándolo si no existe)?",
       "opciones": [
+        ">",
+        ">>",
         "<<",
-        ">>"
+        "<"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Se corrige: ninguna opción original era válida para sobrescribir el contenido (<< es un here-document de entrada y >> añade). En una shell POSIX, > redirige stdout y crea o trunca el archivo; >> conserva el contenido y añade al final. A1-59/A2-II-2.",
+      "clasificacion": {
+        "A1": [
+          "A1-59"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 27 Sistemas Operativos, edición 2026.1 (14-08-2026); cubre fundamentos y administración de UNIX/Linux; la semántica exacta de redirección se verifica en la documentación de la shell.",
+        "estado": "revisada",
+        "nota": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Se corrige: ninguna opción original era válida para sobrescribir el contenido (<< es un here-document de entrada y >> añade). En una shell POSIX, > redirige stdout y crea o trunca el archivo; >> conserva el contenido y añade al final. A1-59/A2-II-2."
+      },
+      "etiquetas": [
+        "Unix",
+        "POSIX shell",
+        "redirección estándar",
+        ">",
+        ">>",
+        "here-document"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/s/bash/manual/html_node/Redirections.html",
+            "referencia": "GNU Bash Reference Manual, §3.6: > redirige la salida estándar y trunca/crea el archivo; >> añade al final; << inicia un here-document como entrada."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 27 Sistemas Operativos, edición 2026.1 (14-08-2026); cotejo del contenido del tema y su relación curricular."
+          }
+        ],
+        "observaciones": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Se corrige: ninguna opción original era válida para sobrescribir el contenido (<< es un here-document de entrada y >> añade). En una shell POSIX, > redirige stdout y crea o trunca el archivo; >> conserva el contenido y añade al final. A1-59/A2-II-2."
+      }
     },
     {
       "id": 2013,
@@ -94295,7 +94372,43 @@
         "Diagrama de objetos, diagrama de secuencia y diagrama de configuración"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. La opción de clases, secuencia y tiempos se ajusta a la taxonomía de diagramas UML 2.5.1: clases en estructura y secuencia/tiempos en interacciones. Arquitectura, datos y configuración no son los tipos nominales que enumera la especificación. La versión 2.5.1 continúa publicada como versión formal por OMG. A1-88/A2-III-9.",
+      "clasificacion": {
+        "A1": [
+          "A1-88"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026.1 (18-09-2026); incluye análisis y diseño orientado a objetos, proceso unificado y UML; la taxonomía de diagramas se comprueba en OMG.",
+        "estado": "revisada",
+        "nota": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. La opción de clases, secuencia y tiempos se ajusta a la taxonomía de diagramas UML 2.5.1: clases en estructura y secuencia/tiempos en interacciones. Arquitectura, datos y configuración no son los tipos nominales que enumera la especificación. La versión 2.5.1 continúa publicada como versión formal por OMG. A1-88/A2-III-9."
+      },
+      "etiquetas": [
+        "UML 2.5.1",
+        "diagrama de clases",
+        "diagrama de secuencia",
+        "diagrama de tiempos"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+            "referencia": "OMG UML 2.5.1, especificación formal: reconoce diagramas de clases (estructura), secuencia y tiempos (interacciones); el catálogo OMG mantiene la 2.5.1 como versión formal."
+          },
+          {
+            "url": "https://www.omg.org/spec/UML",
+            "referencia": "Página oficial del estándar UML de OMG: versión formal 2.5.1 y documentación normativa."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026.1 (18-09-2026); cotejo del contenido del tema y su relación curricular."
+          }
+        ],
+        "observaciones": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. La opción de clases, secuencia y tiempos se ajusta a la taxonomía de diagramas UML 2.5.1: clases en estructura y secuencia/tiempos en interacciones. Arquitectura, datos y configuración no son los tipos nominales que enumera la especificación. La versión 2.5.1 continúa publicada como versión formal por OMG. A1-88/A2-III-9."
+      }
     },
     {
       "id": 2014,
@@ -94309,7 +94422,52 @@
         "ONS (Open Network Standard) del ITU-T (International Telecommunications Union - Telecommunications)"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Pendiente de fuente primaria. ISO, IBM y documentación de DEC respaldan las atribuciones OSI, SNA y DNA. La búsqueda en el catálogo ITU-T no permite confirmar «Open Network Standard (ONS)» como arquitectura del organismo ni demostrar de forma exhaustiva que la denominación no exista en otro contexto. Como el ítem depende de una afirmación negativa y atribuye una expansión no localizada, se conserva la clave original sin certificarla hasta disponer de referencia primaria inequívoca. A1-108/A2-II-8.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 43 Protocolos, edición 2026.1 (29-09-2026); cubre arquitecturas y protocolos de red, incluido OSI; se deja sin validar la denominación «ONS» por falta de fuente primaria inequívoca.",
+        "estado": "revisada",
+        "nota": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Pendiente de fuente primaria. ISO, IBM y documentación de DEC respaldan las atribuciones OSI, SNA y DNA. La búsqueda en el catálogo ITU-T no permite confirmar «Open Network Standard (ONS)» como arquitectura del organismo ni demostrar de forma exhaustiva que la denominación no exista en otro contexto. Como el ítem depende de una afirmación negativa y atribuye una expansión no localizada, se conserva la clave original sin certificarla hasta disponer de referencia primaria inequívoca. A1-108/A2-II-8."
+      },
+      "etiquetas": [
+        "OSI",
+        "DNA",
+        "SNA",
+        "ONS",
+        "arquitectura de redes"
+      ],
+      "revision": {
+        "estado": "pendiente_fuente",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/es/contents/data/standard/02/02/20269.html",
+            "referencia": "ISO/IEC 7498-1:1994, ficha oficial: modelo de referencia OSI, norma internacional publicada y confirmada."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/zos-basic-skills?topic=mainframe-systems-network-architecture-basics-implementation",
+            "referencia": "IBM Documentation: define SNA como arquitectura de comunicación de datos establecida por IBM."
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-a919c30cdefcc0465d19df74c9e2d050/pdf/GOVPUB-C13-a919c30cdefcc0465d19df74c9e2d050.pdf",
+            "referencia": "Publicación técnica de Digital Equipment Corporation conservada por NIST/GovInfo: identifica Digital Network Architecture como arquitectura de comunicaciones para la familia DECnet."
+          },
+          {
+            "url": "https://www.itu.int/ITU-T/recommendations/index.aspx",
+            "referencia": "Catálogo oficial de recomendaciones ITU-T consultado; no se ha podido confirmar con fuente primaria el nombre «Open Network Standard (ONS)» atribuido en el distractor."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 43 Protocolos, edición 2026.1 (29-09-2026); cotejo del contenido del tema y su relación curricular."
+          }
+        ],
+        "observaciones": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Pendiente de fuente primaria. ISO, IBM y documentación de DEC respaldan las atribuciones OSI, SNA y DNA. La búsqueda en el catálogo ITU-T no permite confirmar «Open Network Standard (ONS)» como arquitectura del organismo ni demostrar de forma exhaustiva que la denominación no exista en otro contexto. Como el ítem depende de una afirmación negativa y atribuye una expansión no localizada, se conserva la clave original sin certificarla hasta disponer de referencia primaria inequívoca. A1-108/A2-II-8."
+      }
     },
     {
       "id": 2015,
@@ -94323,7 +94481,45 @@
         "Ninguna de las anteriores"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Pendiente por ambigüedad del enunciado «gestor documental típico»: no hay una arquitectura única. La documentación de SharePoint muestra un producto que almacena BLOB y metadatos juntos por defecto y permite externalizar BLOB mediante RBS; otros diseños separan metadatos y contenido. Se preserva la respuesta original sin certificar una generalización universal. A1-104/A2-II-16.",
+      "clasificacion": {
+        "A1": [
+          "A1-104"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 40 Gestión Documental, edición 2026.1 (23-09-2026); cubre sistemas de gestión documental y de contenidos; no establece una arquitectura universal de almacenamiento.",
+        "estado": "revisada",
+        "nota": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Pendiente por ambigüedad del enunciado «gestor documental típico»: no hay una arquitectura única. La documentación de SharePoint muestra un producto que almacena BLOB y metadatos juntos por defecto y permite externalizar BLOB mediante RBS; otros diseños separan metadatos y contenido. Se preserva la respuesta original sin certificar una generalización universal. A1-104/A2-II-16."
+      },
+      "etiquetas": [
+        "gestor documental",
+        "DMS",
+        "ECM",
+        "metadatos",
+        "repositorio de contenido",
+        "arquitectura de almacenamiento"
+      ],
+      "revision": {
+        "estado": "pendiente_ambiguedad",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/sharepoint/administration/rbs-overview",
+            "referencia": "Microsoft Learn, Remote BLOB Storage: SharePoint puede mantener metadatos en SQL y contenido en un repositorio externo mediante RBS; por defecto también puede guardar documentos BLOB dentro de la base de contenido."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/openspecs/sharepoint_protocols/ms-spo/2f890f4c-07d9-4256-b016-61e8e9040d6b",
+            "referencia": "Microsoft Open Specifications, almacenamiento físico de SharePoint: el almacenamiento del producto puede residir en bases de datos relacionales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17UpEFvYfjQ4iUrx8UNNTJIFcj5xO4vlz/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 40 Gestión Documental, edición 2026.1 (23-09-2026); cotejo del contenido del tema y su relación curricular."
+          }
+        ],
+        "observaciones": "Correspondencia contrastada con revision/temario-oficial.json y las convocatorias vigentes: A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262. El temario académico contextualiza los epígrafes, no sustituye la fuente primaria. Pendiente por ambigüedad del enunciado «gestor documental típico»: no hay una arquitectura única. La documentación de SharePoint muestra un producto que almacena BLOB y metadatos juntos por defecto y permite externalizar BLOB mediante RBS; otros diseños separan metadatos y contenido. Se preserva la respuesta original sin certificar una generalización universal. A1-104/A2-II-16."
+      }
     },
     {
       "id": 2016,
