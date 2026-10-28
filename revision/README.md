@@ -1,6 +1,34 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 378 (IDs 2206–2210). Acumulado: 2.210 preguntas examinadas, 2.149 verificadas (492 vigentes, 1.494 corregidas y 163 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.913 sin revisar individualmente. Hay 1.698 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 379 (IDs 2211–2215). Acumulado: 2.215 preguntas examinadas, 2.154 verificadas (494 vigentes, 1.497 corregidas y 163 históricas) y 61 pendientes (30 de fuente y 31 de ambigüedad); quedan 9.908 sin revisar individualmente. Hay 1.701 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 379 — 28 de octubre
+
+IDs 2211–2215 revisados individualmente. Dos respuestas se confirman y tres preguntas se corrigen para describir con exactitud la BCL, el cálculo de bloques y las CRL delta; se conservan los cinco originales completos en `cambios-lote-379.json`. Acumulado: 2.215 examinadas, 2.154 verificadas (494 vigentes, 1.497 corregidas y 163 históricas), 61 pendientes y 9.908 aún sin revisión individual.
+
+- La 2211 confirma `Page_PreRender` como el momento para los cambios finales antes del renderizado de ASP.NET Web Forms. A1-65/A1-66, A2-III-11/III-12.
+- La 2212 corrige la definición de BCL: conjunto de bibliotecas de propósito general con tipos y funcionalidad fundacional de .NET; no es el CLR, CIL ni el compilador. A1-66/A2-III-11.
+- La 2213 explicita 2 MiB: 1.024 bloques de datos de 2 KiB, de los cuales 12 son directos y 512 usan indirección simple; los 500 restantes requieren una raíz doble y un bloque de segundo nivel. Se conserva la opción correcta (un bloque simple y dos de doble indirección). A1-60/A2-II-2.
+- La 2214 confirma el mínimo de 200 píxeles por pulgada del apartado IV.2 de la NTI de Digitalización. A1-80/A2-I-9.
+- La 2215 precisa que una CRL delta registra actualizaciones del estado de revocación respecto de una CRL base y se combina con ella; puede incluir la retirada de una suspensión. A1-79/A1-80, A2-I-6/IV-12.
+
+Cotejo con Drive: bloque 30 (.NET/ASP.NET), bloque 27 (UNIX y sistemas de ficheros) y bloque 36 (certificados/PKI); para la NTI de digitalización no se localizó una unidad académica específica en el cruce disponible. Correspondencias oficiales contrastadas con `temario-oficial.json` y las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Fuentes técnicas y normativas: Microsoft Learn, BOE/NTI e IETF RFC 5280.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.215 registros de revisión, 61 pendientes y 9.908 preguntas todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
+
+## Lote 379 — 28 de octubre
+
+IDs 2211–2215 revisados individualmente. Dos respuestas se confirman y tres preguntas se corrigen para describir con exactitud la BCL, el cálculo de bloques y las CRL delta; se conservan los cinco originales completos en `cambios-lote-379.json`. Acumulado: 2.215 examinadas, 2.154 verificadas (494 vigentes, 1.497 corregidas y 163 históricas), 61 pendientes y 9.908 aún sin revisión individual.
+
+- La 2211 confirma `Page_PreRender` como el momento para los cambios finales antes del renderizado de ASP.NET Web Forms. A1-65/A1-66, A2-III-11/III-12.
+- La 2212 corrige la definición de BCL: conjunto de bibliotecas de propósito general con tipos y funcionalidad fundacional de .NET; no es el CLR, CIL ni el compilador. A1-66/A2-III-11.
+- La 2213 explicita 2 MiB: 1.024 bloques de datos de 2 KiB, de los cuales 12 son directos y 512 usan indirección simple; los 500 restantes requieren una raíz doble y un bloque de segundo nivel. Se conserva la opción correcta (un bloque simple y dos de doble indirección). A1-60/A2-II-2.
+- La 2214 confirma el mínimo de 200 píxeles por pulgada del apartado IV.2 de la NTI de Digitalización. A1-80/A2-I-9.
+- La 2215 conserva el concepto de CRL delta y precisa que registra actualizaciones respecto de una CRL base, incluidas retiradas de suspensión; no equivale simplemente a enumerar revocaciones nuevas. A1-79/A1-80, A2-I-6/IV-12.
+
+Cotejo con Drive: bloque 30 (.NET/ASP.NET), bloque 27 (UNIX y sistemas de ficheros) y bloque 36 (certificados/PKI); para la NTI de digitalización no se localizó una unidad académica específica en el cruce disponible. Correspondencias oficiales contrastadas con `temario-oficial.json` y las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Fuentes técnicas y normativas: Microsoft Learn, BOE/NTI e IETF RFC 5280.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.215 registros de revisión, 61 pendientes y 9.908 preguntas todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 378 — 28 de octubre
 
