@@ -92104,21 +92104,90 @@
         "Sólo en casos excepcionales"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Verificada como vigente: para el trabajo a distancia regular regulado por la Ley 10/2021 se necesita acuerdo escrito y voluntario; puede añadirse al contrato inicial o suscribirse posteriormente, siempre antes de comenzar esa modalidad. Se mantiene la clave “Sí, por escrito”. A1-24/A2-I-8. Cotejo curricular; la exigencia legal concreta se apoya en el BOE, no en el resumen académico. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-24"
+        ],
+        "A2": [
+          "A2-I-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 03 Actuación Administrativa, actualización 2026; el Bloque 03 trata el teletrabajo del personal público (TREBEP art. 47 bis) y menciona la aplicación de la Ley 10/2021 al personal laboral; la obligación formal se verifica en los arts. 5–6 de dicha ley.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular; la exigencia legal concreta se apoya en el BOE, no en el resumen académico. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias."
+      },
+      "etiquetas": [
+        "trabajo a distancia",
+        "teletrabajo",
+        "Ley 10/2021",
+        "acuerdo escrito"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11472",
+            "referencia": "Ley 10/2021, arts. 5 y 6: el trabajo a distancia es voluntario para ambas partes, requiere acuerdo firmado y debe formalizarse por escrito antes de iniciarse; puede incorporarse al contrato inicial o pactarse después."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 03 Actuación Administrativa, actualización 2026; cotejo de cobertura académica y alcance."
+          }
+        ],
+        "observaciones": "Verificada como vigente: para el trabajo a distancia regular regulado por la Ley 10/2021 se necesita acuerdo escrito y voluntario; puede añadirse al contrato inicial o suscribirse posteriormente, siempre antes de comenzar esa modalidad. Se mantiene la clave “Sí, por escrito”. A1-24/A2-I-8. Cotejo curricular; la exigencia legal concreta se apoya en el BOE, no en el resumen académico. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias."
+      }
     },
     {
       "id": 1967,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un contenedor Docker permite:",
+      "texto": "En Docker, ¿qué describe correctamente un contenedor?",
       "opciones": [
-        "Desplegar aplicaciones empaquetadas con todos los elementos que necesita para su ejecución de manera controlada, para que en su ejecución no interfieran entre sí, aunque accedan a los recursos del mismo sistema operativo.",
-        "Desplegar únicamente aplicaciones Java con todos los elementos que necesita para su ejecución de manera controlada, para que en su ejecución no interfieran entre sí, aunque compartan los recursos del mismo sistema operativo.",
-        "Desplegar aplicaciones de manera controlada para que en su ejecución no interfieran entre sí, aunque para cada despliegue se necesita una instancia dedicada del sistema operativo.",
-        "Un contenedor Docker es un tipo de servidor de aplicaciones que utiliza componentes java denominados 'contenedores'."
+        "Ejecuta procesos aislados a partir de una imagen que puede incluir la aplicación y sus dependencias, compartiendo el kernel del sistema anfitrión.",
+        "Solo permite ejecutar aplicaciones Java y siempre aísla un sistema operativo completo.",
+        "Cada contenedor necesita una instancia propia y completa del sistema operativo anfitrión.",
+        "Es un servidor de aplicaciones Java, no una tecnología de empaquetado y aislamiento de procesos."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se corrige la explicación absoluta. Una imagen Docker empaqueta la aplicación y las dependencias que se hayan incorporado en ella; el contenedor ejecuta procesos aislados compartiendo el kernel del host. No es exclusivo de Java ni exige una instancia de sistema operativo invitado por contenedor. A1-132/A2-IV-6. Cotejo temático de contenedores y virtualización; la semántica del empaquetado se contrasta con documentación oficial de Docker. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-132"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 26 Hardware, virtualización y centros de datos, actualización 2026; el Bloque 26 incluye contenedores, Kubernetes y comparación contenedor/VM; describe que el contenedor comparte kernel y no incorpora necesariamente un sistema operativo invitado completo, en línea con Docker Docs.",
+        "estado": "revisada",
+        "nota": "Cotejo temático de contenedores y virtualización; la semántica del empaquetado se contrasta con documentación oficial de Docker. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias."
+      },
+      "etiquetas": [
+        "Docker",
+        "contenedor",
+        "imagen",
+        "kernel compartido",
+        "aislamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+            "referencia": "Docker Docs, What is a container?: un contenedor es un proceso aislado que se ejecuta en el host y comparte el kernel; una imagen empaqueta el sistema de archivos, aplicación y dependencias que se incluyan, no un kernel/sistema operativo invitado completo."
+          },
+          {
+            "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-an-image/",
+            "referencia": "Docker Docs, What is an image?: una imagen incluye código, bibliotecas, herramientas, dependencias y otros archivos necesarios definidos por su construcción; el contenido concreto depende de la imagen."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 26 Hardware, virtualización y centros de datos, actualización 2026; cotejo de cobertura académica y alcance."
+          }
+        ],
+        "observaciones": "Se corrige la explicación absoluta. Una imagen Docker empaqueta la aplicación y las dependencias que se hayan incorporado en ella; el contenedor ejecuta procesos aislados compartiendo el kernel del host. No es exclusivo de Java ni exige una instancia de sistema operativo invitado por contenedor. A1-132/A2-IV-6. Cotejo temático de contenedores y virtualización; la semántica del empaquetado se contrasta con documentación oficial de Docker. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias."
+      }
     },
     {
       "id": 1968,
@@ -92131,35 +92200,138 @@
         "Las infracciones muy graves prescribirán a los tres años, las graves a los dos años y las leves al año. Las sanciones impuestas por faltas muy graves prescribirán a los tres años, las impuestas por faltas graves a los dos años y las impuestas por faltas leves al año."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se confirma vigente y se separan los dos plazos que a menudo se intercambian: faltas leves, seis meses; sanciones por faltas leves, un año. Muy graves: tres años en ambos casos; graves: dos años en ambos. La opción correcta es la segunda. A1-24/A2-I-8. Cotejo temático de EBEP; los plazos exactos se toman de la legislación consolidada. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-24"
+        ],
+        "A2": [
+          "A2-I-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 03 Actuación Administrativa, actualización 2026; el Bloque 03 incluye el TREBEP y el régimen disciplinario del empleo público; la tabla de prescripción se comprobó directamente en el texto consolidado del art. 97.1.",
+        "estado": "revisada",
+        "nota": "Cotejo temático de EBEP; los plazos exactos se toman de la legislación consolidada. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias."
+      },
+      "etiquetas": [
+        "TREBEP",
+        "RDL 5/2015",
+        "artículo 97",
+        "prescripción de faltas",
+        "prescripción de sanciones"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719",
+            "referencia": "Real Decreto Legislativo 5/2015, texto consolidado, art. 97.1: las faltas prescriben a los 3 años (muy graves), 2 años (graves) y 6 meses (leves); las sanciones, a los 3 años, 2 años y 1 año respectivamente."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 03 Actuación Administrativa, actualización 2026; cotejo de cobertura académica y alcance."
+          }
+        ],
+        "observaciones": "Se confirma vigente y se separan los dos plazos que a menudo se intercambian: faltas leves, seis meses; sanciones por faltas leves, un año. Muy graves: tres años en ambos casos; graves: dos años en ambos. La opción correcta es la segunda. A1-24/A2-I-8. Cotejo temático de EBEP; los plazos exactos se toman de la legislación consolidada. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias."
+      }
     },
     {
       "id": 1969,
       "bloque": 0,
       "tema": 0,
-      "texto": "La Población Activa incluye a:",
+      "texto": "Según la Encuesta de Población Activa del INE, la población activa está formada por:",
       "opciones": [
-        "Sólo a aquellas personas que son empleados por cuenta ajena",
-        "Sólo a aquellas personas que son empleadas por cuenta propia o ajena",
-        "Aquellas personas que tienen empleo y a los desempleados que buscan un empleo de forma activa",
-        "Todo aquel que desea trabajar"
+        "Solo las personas asalariadas con empleo.",
+        "Todas las personas por cuenta propia o ajena, aunque no estén ocupadas ni busquen trabajo.",
+        "Las personas ocupadas y las paradas; estas últimas, con carácter general, están sin empleo, disponibles y buscan activamente trabajo.",
+        "Cualquier persona que manifieste que desea trabajar, aunque no esté disponible ni busque empleo."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se corrige para incorporar el criterio omitido de disponibilidad y precisar que población activa no equivale a toda persona que simplemente desea trabajar: es la suma de ocupados y parados según la EPA; estos últimos deben cumplir criterios de búsqueda y disponibilidad (con excepciones metodológicas). A1-17. Cotejo curricular; la definición operativa de población activa y parada se verifica en INE. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-17"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, Bloque 06 Economía, Sociedad, Empleo y Transformación Digital, actualización 2026; el Bloque 06 cubre mercado de trabajo, población ocupada/parada y principales magnitudes; la clasificación estadística exacta se contrasta con la metodología de la EPA del INE.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular; la definición operativa de población activa y parada se verifica en INE. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias."
+      },
+      "etiquetas": [
+        "población activa",
+        "ocupados",
+        "parados",
+        "EPA",
+        "disponibilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&idp=1254735976595&menu=metodologia",
+            "referencia": "INE, metodología de la EPA: población activa = ocupados + parados. Para ser parado, con carácter general, se debe estar sin empleo, disponible para trabajar y buscando activamente; hay una regla para quienes ya han encontrado empleo y se incorporarán pronto."
+          },
+          {
+            "url": "https://www.ine.es/htdocs/prensa/epa_prensa.htm",
+            "referencia": "INE, definiciones EPA: las personas paradas están sin trabajo, disponibles y buscando activamente empleo; los ocupados incluyen cuenta propia y ajena."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 06 Economía, Sociedad, Empleo y Transformación Digital, actualización 2026; cotejo de cobertura académica y alcance."
+          }
+        ],
+        "observaciones": "Se corrige para incorporar el criterio omitido de disponibilidad y precisar que población activa no equivale a toda persona que simplemente desea trabajar: es la suma de ocupados y parados según la EPA; estos últimos deben cumplir criterios de búsqueda y disponibilidad (con excepciones metodológicas). A1-17. Cotejo curricular; la definición operativa de población activa y parada se verifica en INE. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias."
+      }
     },
     {
       "id": 1970,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuáles son los complementos salariales de carácter pesonal que se adicionan al salario base?",
+      "texto": "Según el artículo 94 del Convenio Colectivo para el Personal Laboral de la Administración General de Castilla y León y sus organismos autónomos (2023), ¿qué conceptos enumera como complementos personales?",
       "opciones": [
-        "Antigüedad y complemento personal transitorio",
-        "Antigüedad, complemento de puesto singular y complemento específico",
-        "Nocturnidad, complemento específico y complemento de vialidad",
-        "Antigüedad, otras retribuciones de carácter personal, complemento personal transitorio y complemento personal derivado de traslados por causa de salud"
+        "Antigüedad, complemento específico y complemento de puesto singular.",
+        "Plus de categoría profesional, antigüedad y nocturnidad.",
+        "Antigüedad, complemento de atención continuada, turnicidad y disponibilidad.",
+        "Antigüedad, otras retribuciones de carácter personal, complemento personal transitorio y complemento personal derivado de movilidades para la protección de la salud."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se actualiza el marco y la terminología: el ítem se refiere al convenio laboral de Castilla y León, no a una regla general de retribuciones de todas las AAPP. El convenio publicado en 2023, art. 94, conserva las categorías personales —antigüedad, otras retribuciones personales, complemento personal transitorio y el derivado de movilidad para protección de la salud— con nomenclatura actualizada frente al antiguo “traslado por causa de salud”. Se mantiene la opción que enumera esos conceptos, ajustándola al texto vigente. A1-24 como afinidad con empleo público; no se fuerza equivalencia A2 específica. Cotejo de encaje general en empleo público. El convenio regional específico no se atribuye a ITIC Academy ni se fuerza equivalencia A2; la respuesta se actualiza desde la fuente oficial autonómica. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-24"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, Bloque 03 Actuación Administrativa, actualización 2026; el Bloque 03 aborda empleo público y conceptos retributivos generales; en los materiales de academia consultados no se localizó el convenio específico de Castilla y León. Por ello se identifica expresamente el ámbito territorial y se da primacía al convenio oficial BOCYL de 2023.",
+        "estado": "revisada",
+        "nota": "Cotejo de encaje general en empleo público. El convenio regional específico no se atribuye a ITIC Academy ni se fuerza equivalencia A2; la respuesta se actualiza desde la fuente oficial autonómica. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias."
+      },
+      "etiquetas": [
+        "complementos salariales personales",
+        "Convenio Castilla y León",
+        "Artículo 94",
+        "antigüedad",
+        "movilidad por salud"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://bocyl.jcyl.es/boletines/2023/06/21/pdf/BOCYL-D-21062023-26.pdf",
+            "referencia": "BOCYL 21-06-2023, Resolución de 19 de junio que publica el Convenio Colectivo para el Personal Laboral de la Administración General de Castilla y León y sus organismos autónomos, código 78000262012003. El art. 94 vigente enumera como personales antigüedad, otras retribuciones personales, complemento personal transitorio y complemento derivado de movilidades para la protección de la salud."
+          },
+          {
+            "url": "https://bocyl.jcyl.es/boletin.do?fechaBoletin=21%2F06%2F2023",
+            "referencia": "Sumario oficial BOCYL núm. 118/2023, confirma la publicación del nuevo convenio colectivo del personal laboral de Castilla y León."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 03 Actuación Administrativa, actualización 2026; cotejo de cobertura académica y alcance."
+          }
+        ],
+        "observaciones": "Se actualiza el marco y la terminología: el ítem se refiere al convenio laboral de Castilla y León, no a una regla general de retribuciones de todas las AAPP. El convenio publicado en 2023, art. 94, conserva las categorías personales —antigüedad, otras retribuciones personales, complemento personal transitorio y el derivado de movilidad para protección de la salud— con nomenclatura actualizada frente al antiguo “traslado por causa de salud”. Se mantiene la opción que enumera esos conceptos, ajustándola al texto vigente. A1-24 como afinidad con empleo público; no se fuerza equivalencia A2 específica. Cotejo de encaje general en empleo público. El convenio regional específico no se atribuye a ITIC Academy ni se fuerza equivalencia A2; la respuesta se actualiza desde la fuente oficial autonómica. Correspondencia contrastada con revision/temario-oficial.json y convocatorias BOE-A-2025-25938 (A1) y BOE-A-2025-26262 (A2); los documentos académicos orientan, no sustituyen las fuentes primarias."
+      }
     },
     {
       "id": 1971,
