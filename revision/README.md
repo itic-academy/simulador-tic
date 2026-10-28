@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 361 (IDs 2121–2125). Acumulado: 2.125 preguntas examinadas, 2.068 verificadas (474 vigentes, 1.438 corregidas y 156 históricas) y 57 pendientes (28 de fuente y 29 de ambigüedad); quedan 9.998 sin revisar individualmente. Hay 1.633 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 362 (IDs 2126–2130). Acumulado: 2.130 preguntas examinadas, 2.073 verificadas (478 vigentes, 1.439 corregidas y 156 históricas) y 57 pendientes (28 de fuente y 29 de ambigüedad); quedan 9.993 sin revisar individualmente. Hay 1.634 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 362 — 28 de octubre
+
+IDs 2126–2130 revisados individualmente con el portal Facturae, Ley 25/2013 consolidada y Reglamento eIDAS, y la Ley 34/2002 consolidada. Cuatro preguntas se confirman en el alcance indicado y una se corrige para distinguir la exclusión de servicios notariales del tratamiento territorial de servicios UE/EEE. Se preservan los originales íntegros en `cambios-lote-362.json`. Acumulado: 2.130 examinadas, 2.073 verificadas (478 vigentes, 1.439 corregidas y 156 históricas), 57 pendientes (28 de fuente y 29 de ambigüedad), 1.634 cambios de contenido y 9.993 todavía sin revisión individual.
+
+- La 2126 confirma XAdES para el XML del formato Facturae 3.2.x; no se generaliza a todos los formatos de factura electrónica. A1-78/A2-I-10.
+- La 2127 confirma que la auditoría anual de sistemas en la AGE corresponde a la IGAE (art. 12.3 de Ley 25/2013). El precepto encomienda la auditoría a Intervenciones Generales u órganos equivalentes en cada Administración. A1-78/A2-I-10.
+- La 2128 confirma «todas las anteriores» por los arts. 5 y 6 de Ley 25/2013. Se conserva literalmente la expresión legal histórica «certificado reconocido» y se advierte que su aplicación debe coordinarse con la terminología actual del Reglamento eIDAS (certificados cualificados); la respuesta no significa que cualquier formato/firma sea admisible. A1-78/A2-I-10.
+- La 2129 reescribe «excluidos del ámbito» como pregunta fiel al art. 5.1.a LSSI: los servicios notariales y registrales en ejercicio de funciones públicas se rigen por su normativa específica. No se extiende esa regla a cualquier actividad profesional ni se confunde con el art. 3, que sí aplica la ley a determinadas materias de prestadores UE/EEE, entre ellas propiedad intelectual. A1-78.
+- La 2130 confirma la solicitud o autorización expresa cuando no existe relación contractual previa (art. 21.1); el art. 21.2 regula aparte una excepción limitada para clientes previos. A1-78/A2-I-9.
+
+Cotejo curricular con [ITIC Academy, bloque 35 Comercio electrónico y factura electrónica, versión 2026.2](https://drive.google.com/file/d/1FPkzhljZaHbxADbo36QNm9U9gwGy7lIt/view?usp=drivesdk), §§3–4 y 7–8. Correspondencia A1 Tema 78 y A2-I-10 para Facturae/registro y A2-I-9 para comunicación comercial y protección de datos, contrastada con [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y `temario-oficial.json`. La academia orienta el alcance curricular; las conclusiones se apoyan en las fuentes oficiales.
+
+Fuentes: [Facturae, formato](https://www.facturae.gob.es/formato), [políticas de firma](https://www.facturae.gob.es/formato/politicas-firma-electronica) y [política de firma v3.1](https://www.facturae.gob.es/content/dam/facturae/formato/polticasfirma/a%29-versi%C3%B3n-3-1/Politica_Firma_formato_facturae_v3_1.pdf); [Ley 25/2013, arts. 5–6 y 12.3](https://www.boe.es/eli/es/l/2013/12/27/25/con); [Reglamento (UE) 910/2014 eIDAS](https://eur-lex.europa.eu/eli/reg/2014/910/oj); [Ley 34/2002, arts. 2–5 y 21](https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758).
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 2.130 registros de revisión, 57 pendientes y 9.993 preguntas aún sin revisión individual. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 361 — 28 de octubre
 
