@@ -116959,71 +116959,236 @@
       "id": 2436,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes es una métrica que define el número de caminos independientes dentro de un fragmento de código?",
+      "texto": "En la métrica de McCabe, ¿qué representa la complejidad ciclomática V(G) de un grafo de flujo de control de un programa?",
       "opciones": [
-        "Puntos de función",
-        "Complejidad Ciclomática",
-        "Longitud de programa de Halstead",
-        "Recorrido de árbol"
+        "El número de caminos linealmente independientes del grafo. No equivale al total de recorridos posibles si hay bucles.",
+        "El tamaño funcional del software medido a partir de entradas, salidas y datos lógicos.",
+        "La longitud del programa calculada a partir de operadores y operandos de Halstead.",
+        "El número de nodos del grafo, con independencia de las aristas y componentes."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La definición se comprueba en NIST IR 8289 y en el artículo original de McCabe. Se precisa que el conteo se refiere a caminos linealmente independientes de un grafo de flujo de control, no al número de todos los recorridos posibles, que pueden ser ilimitados por la presencia de bucles. La métrica también se relaciona con pruebas de caminos básicos, sin afirmar que enumera todas las rutas ejecutables. Cotejo curricular: ITIC Academy, bloque 39 «Calidad y mantenimiento», actualización 2026; encuadra las pruebas y métricas de calidad de software en A1-96 y los contenidos específicos de testing del programa A2. Métrica de complejidad estructural, grafo de flujo de control y caminos básicos de prueba. Drive: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-96"
+        ],
+        "A2": [
+          "A2-III-7"
+        ],
+        "bloque_academia": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 39 «Calidad y mantenimiento», actualización 2026; encuadra las pruebas y métricas de calidad de software en A1-96 y los contenidos específicos de testing del programa A2. Métrica de complejidad estructural, grafo de flujo de control y caminos básicos de prueba. Drive: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes."
+      },
+      "etiquetas": [
+        "complejidad ciclomática",
+        "McCabe",
+        "caminos linealmente independientes",
+        "grafo de flujo de control"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8289.pdf",
+            "referencia": "NIST IR 8289, tabla de medidas de producto software: define complejidad ciclomática V(G) como número de caminos linealmente independientes del grafo de flujo de control; incluye las formas e−n+2p y d+1."
+          },
+          {
+            "url": "https://doi.org/10.1109/TSE.1976.233837",
+            "referencia": "T. J. McCabe, “A Complexity Measure”, IEEE Transactions on Software Engineering, 1976, DOI 10.1109/TSE.1976.233837; introduce la métrica basada en el grafo de flujo y su número ciclomático."
+          }
+        ],
+        "observaciones": "La definición se comprueba en NIST IR 8289 y en el artículo original de McCabe. Se precisa que el conteo se refiere a caminos linealmente independientes de un grafo de flujo de control, no al número de todos los recorridos posibles, que pueden ser ilimitados por la presencia de bucles. La métrica también se relaciona con pruebas de caminos básicos, sin afirmar que enumera todas las rutas ejecutables. Cotejo curricular: ITIC Academy, bloque 39 «Calidad y mantenimiento», actualización 2026; encuadra las pruebas y métricas de calidad de software en A1-96 y los contenidos específicos de testing del programa A2. Métrica de complejidad estructural, grafo de flujo de control y caminos básicos de prueba. Drive: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes."
+      }
     },
     {
       "id": 2437,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuán de las siguientes herramientas soporta el Desarrollo Dirigido por Comportamiento (Behaviour Driven Development) y permite generar pruebas?",
+      "texto": "¿Qué herramienta BDD puede ejecutar especificaciones de comportamiento escritas con sintaxis Gherkin cuando sus pasos están asociados a step definitions?",
       "opciones": [
-        "Herkin",
-        "Cucumber",
-        "RabbitMQ",
-        "Trocla"
+        "Gherkin, que es el lenguaje de especificación pero no el ejecutor de los pasos.",
+        "Cucumber.",
+        "RabbitMQ, que es un sistema de mensajería.",
+        "Trocla, que no es el ejecutor de especificaciones BDD descrito."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se corrige el error tipográfico «Herkin» por Gherkin y se separan los papeles: Gherkin es la sintaxis de las especificaciones; Cucumber las interpreta y ejecuta/valida escenarios al asociar los pasos con step definitions. La herramienta soporta BDD, pero no inventa automáticamente pruebas a partir de lenguaje natural sin escenarios e implementaciones de pasos. Cotejo curricular: ITIC Academy, bloque 39 «Calidad y mantenimiento», actualización 2026; encuadra las pruebas y métricas de calidad de software en A1-96 y los contenidos específicos de testing del programa A2. BDD y herramienta de automatización de pruebas con especificaciones ejecutables Gherkin. Drive: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-96"
+        ],
+        "A2": [
+          "A2-III-7"
+        ],
+        "bloque_academia": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 39 «Calidad y mantenimiento», actualización 2026; encuadra las pruebas y métricas de calidad de software en A1-96 y los contenidos específicos de testing del programa A2. BDD y herramienta de automatización de pruebas con especificaciones ejecutables Gherkin. Drive: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes."
+      },
+      "etiquetas": [
+        "BDD",
+        "Cucumber",
+        "Gherkin",
+        "especificaciones ejecutables",
+        "pruebas de aceptación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://cucumber.io/docs/",
+            "referencia": "Documentación oficial de Cucumber, Introduction: Cucumber es una herramienta que soporta BDD, lee especificaciones ejecutables en texto y valida el software; estas deben seguir la sintaxis Gherkin y conectarse a la implementación mediante step definitions."
+          },
+          {
+            "url": "https://cucumber.io/docs/gherkin/reference/",
+            "referencia": "Referencia oficial de Gherkin: sintaxis estructurada de las especificaciones ejecutables (Feature, Scenario y pasos como Given/When/Then)."
+          }
+        ],
+        "observaciones": "Se corrige el error tipográfico «Herkin» por Gherkin y se separan los papeles: Gherkin es la sintaxis de las especificaciones; Cucumber las interpreta y ejecuta/valida escenarios al asociar los pasos con step definitions. La herramienta soporta BDD, pero no inventa automáticamente pruebas a partir de lenguaje natural sin escenarios e implementaciones de pasos. Cotejo curricular: ITIC Academy, bloque 39 «Calidad y mantenimiento», actualización 2026; encuadra las pruebas y métricas de calidad de software en A1-96 y los contenidos específicos de testing del programa A2. BDD y herramienta de automatización de pruebas con especificaciones ejecutables Gherkin. Drive: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes."
+      }
     },
     {
       "id": 2438,
       "bloque": 0,
       "tema": 0,
-      "texto": "Álvaro está iniciando las tareas de planificación de un nuevo proyecto software, y ha efectuado unos cálculos previos de “puntos de función”. La técnica de Puntos de Función es una técnica indirecta para determinar:",
+      "texto": "En el método IFPUG, ¿qué mide directamente un conteo de puntos de función?",
       "opciones": [
-        "La calidad de una aplicación software y la tasa de errores prevista.",
-        "La dimensión de un proyecto informático y su probable coste.",
-        "La usabilidad de un interfaz y la previsión de errores de usuario.",
-        "La seguridad de una aplicación y su riesgo de intrusión."
+        "El esfuerzo de desarrollo en personas-mes, con independencia de la productividad.",
+        "El tamaño funcional lógico del software a partir de la funcionalidad que solicita y recibe el usuario.",
+        "El número de defectos y la calidad esperada del producto.",
+        "El coste monetario total, incluidos formación, instalación y operación."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene la idea de tamaño/coste probable, pero se corrige la imprecisión de presentar los puntos de función como una medida indirecta del coste. IFPUG e ISO/IEC 20926 los definen como una unidad de tamaño funcional basada en requisitos funcionales; por sí solos no miden esfuerzo, coste, calidad ni errores. El tamaño puede alimentar modelos de estimación si se combina con productividad histórica y otros supuestos. Cotejo curricular: ITIC Academy, bloque 15 «Metodologías ágiles, Lean y modelos de ciclo de vida», versión 2026.2; contexto de planificación, gestión y estimación de proyectos. Medición de tamaño funcional y uso de métricas para apoyar estimación de esfuerzo/coste. Drive: https://drive.google.com/file/d/1D62OE6Sw-ZB46S_2tvGophVTKgS3ip22/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-95"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": "https://drive.google.com/file/d/1D62OE6Sw-ZB46S_2tvGophVTKgS3ip22/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 15 «Metodologías ágiles, Lean y modelos de ciclo de vida», versión 2026.2; contexto de planificación, gestión y estimación de proyectos. Medición de tamaño funcional y uso de métricas para apoyar estimación de esfuerzo/coste. Drive: https://drive.google.com/file/d/1D62OE6Sw-ZB46S_2tvGophVTKgS3ip22/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes."
+      },
+      "etiquetas": [
+        "puntos de función",
+        "IFPUG",
+        "tamaño funcional",
+        "estimación de esfuerzo",
+        "coste"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/51717.html",
+            "referencia": "ISO/IEC 20926:2009, ficha vigente confirmada en 2024: especifica definiciones y reglas para el método IFPUG de medida del tamaño funcional."
+          },
+          {
+            "url": "https://ifpug.org/ifpug-standards/fpa",
+            "referencia": "IFPUG, Function Point Analysis: los puntos función miden tamaño lógico según la funcionalidad solicitada y proporcionada al usuario; constituyen una base para estimar costes y calendario."
+          }
+        ],
+        "observaciones": "Se mantiene la idea de tamaño/coste probable, pero se corrige la imprecisión de presentar los puntos de función como una medida indirecta del coste. IFPUG e ISO/IEC 20926 los definen como una unidad de tamaño funcional basada en requisitos funcionales; por sí solos no miden esfuerzo, coste, calidad ni errores. El tamaño puede alimentar modelos de estimación si se combina con productividad histórica y otros supuestos. Cotejo curricular: ITIC Academy, bloque 15 «Metodologías ágiles, Lean y modelos de ciclo de vida», versión 2026.2; contexto de planificación, gestión y estimación de proyectos. Medición de tamaño funcional y uso de métricas para apoyar estimación de esfuerzo/coste. Drive: https://drive.google.com/file/d/1D62OE6Sw-ZB46S_2tvGophVTKgS3ip22/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes."
+      }
     },
     {
       "id": 2439,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la capa de procesos de gestión del modelo de procesos de ISO/IEC/IEEE 29119 señalar el proceso NO contemplado:",
+      "texto": "En ISO/IEC/IEEE 29119, ¿cuál de estas actividades no es un proceso de gestión de pruebas, sino una actividad del proceso dinámico de prueba?",
       "opciones": [
-        "Planificación.",
-        "Control y Seguimiento.",
-        "Ejecución.",
-        "Finalización."
+        "Estrategia y planificación de pruebas.",
+        "Seguimiento y control de pruebas.",
+        "Finalización de pruebas.",
+        "Ejecución de pruebas."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 3,
+      "comentarios": "Se conserva «Ejecución» como respuesta ajena a los procesos de gestión, delimitando la terminología según la edición publicada vigente. La parte 1 define la gestión y sus procesos (estrategia/planificación, seguimiento y control, finalización); la parte 2:2021 especifica procesos de gestión y procesos dinámicos de prueba. Se corrige la redacción del original y se cita la edición 2021 actual, no la retirada de 2013. Cotejo curricular: ITIC Academy, bloque 39 «Calidad y mantenimiento», actualización 2026; encuadra las pruebas y métricas de calidad de software en A1-96 y los contenidos específicos de testing del programa A2. Estándares y procesos de prueba de software; niveles de gestión frente a ejecución dinámica. Drive: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-96"
+        ],
+        "A2": [
+          "A2-III-7"
+        ],
+        "bloque_academia": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 39 «Calidad y mantenimiento», actualización 2026; encuadra las pruebas y métricas de calidad de software en A1-96 y los contenidos específicos de testing del programa A2. Estándares y procesos de prueba de software; niveles de gestión frente a ejecución dinámica. Drive: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes."
+      },
+      "etiquetas": [
+        "ISO/IEC/IEEE 29119",
+        "gestión de pruebas",
+        "planificación",
+        "seguimiento y control",
+        "finalización",
+        "ejecución"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/79428.html",
+            "referencia": "ISO/IEC/IEEE 29119-2:2021, ficha oficial ISO: especifica procesos de prueba en niveles organizativo, gestión de pruebas y pruebas dinámicas."
+          },
+          {
+            "url": "https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso-iec-ieee%3A29119%3A-1%3Aed-2%3Av1%3Aen",
+            "referencia": "ISO/IEC/IEEE 29119-1:2022, conceptos generales, definiciones 3.109–3.113: gestión incluye planificación, programación, estimación, seguimiento, informes, control y finalización; enumera procesos de estrategia/planificación, seguimiento/control y finalización. La ejecución corresponde al proceso dinámico de prueba."
+          }
+        ],
+        "observaciones": "Se conserva «Ejecución» como respuesta ajena a los procesos de gestión, delimitando la terminología según la edición publicada vigente. La parte 1 define la gestión y sus procesos (estrategia/planificación, seguimiento y control, finalización); la parte 2:2021 especifica procesos de gestión y procesos dinámicos de prueba. Se corrige la redacción del original y se cita la edición 2021 actual, no la retirada de 2013. Cotejo curricular: ITIC Academy, bloque 39 «Calidad y mantenimiento», actualización 2026; encuadra las pruebas y métricas de calidad de software en A1-96 y los contenidos específicos de testing del programa A2. Estándares y procesos de prueba de software; niveles de gestión frente a ejecución dinámica. Drive: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes."
+      }
     },
     {
       "id": 2440,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a la evaluación realizada por COCOMO, ¿cuál es la afirmación falsa?",
+      "texto": "Según la descripción del modelo COCOMO 81 por el centro responsable de mantener su legado, ¿qué estima para planificar un nuevo desarrollo de software?",
       "opciones": [
-        "Se incluye solamente la parte de construcción del sistema y de integración y pruebas",
-        "No incluye la parte de formación de los usuarios",
-        "No incluye las conversiones",
-        "No incluye los esfuerzos de planificación de la instalación"
+        "Coste, esfuerzo y calendario de desarrollo; el coste se obtiene aplicando una tarifa al esfuerzo estimado.",
+        "Únicamente el número de defectos que se encontrarán después de la entrega.",
+        "Solo el tamaño funcional medido en puntos de función, sin estimar esfuerzo ni calendario.",
+        "La probabilidad de que una organización supere una auditoría de calidad."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El reactivo original mezclaba afirmaciones sobre exclusiones de alcance (formación, conversiones y planificación de instalación) sin precisar la variante de COCOMO ni el contexto de estimación, lo que hacía discutible juzgarlas como reglas universales. Se conserva la trazabilidad y se reemplaza por una pregunta sobre COCOMO 81, cuya ficha de los autores del modelo identifica expresamente sus salidas: coste, esfuerzo y calendario de desarrollo; el coste depende de aplicar una tarifa laboral al esfuerzo. Cotejo curricular: ITIC Academy, bloque 15 «Metodologías ágiles, Lean y modelos de ciclo de vida», versión 2026.2; contexto de planificación, gestión y estimación de proyectos. Modelos de estimación paramétrica de esfuerzo, calendario y coste en planificación de proyectos software. Drive: https://drive.google.com/file/d/1D62OE6Sw-ZB46S_2tvGophVTKgS3ip22/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-95"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": "https://drive.google.com/file/d/1D62OE6Sw-ZB46S_2tvGophVTKgS3ip22/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 15 «Metodologías ágiles, Lean y modelos de ciclo de vida», versión 2026.2; contexto de planificación, gestión y estimación de proyectos. Modelos de estimación paramétrica de esfuerzo, calendario y coste en planificación de proyectos software. Drive: https://drive.google.com/file/d/1D62OE6Sw-ZB46S_2tvGophVTKgS3ip22/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes."
+      },
+      "etiquetas": [
+        "COCOMO 81",
+        "estimación paramétrica",
+        "esfuerzo",
+        "calendario",
+        "coste de desarrollo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-28",
+        "fuentes": [
+          {
+            "url": "https://boehmcsse.org/tools/cocomo81/",
+            "referencia": "Boehm Center for Systems and Software Engineering, COCOMO 81: el modelo Basic, Intermediate y Detailed estima coste, esfuerzo y calendario para planificar una actividad de desarrollo de software; referencia el libro original de Barry Boehm, Software Engineering Economics (1981)."
+          },
+          {
+            "url": "https://swehb.nasa.gov/download/attachments/16450436/Handbook_for_Software_Cost_Estimation.pdf?api=v2",
+            "referencia": "NASA, Handbook for Software Cost Estimation: presenta distribuciones de esfuerzo/calendario por fases y remite a Boehm (1981), mostrando que no se reduce a construcción e integración/pruebas."
+          }
+        ],
+        "observaciones": "El reactivo original mezclaba afirmaciones sobre exclusiones de alcance (formación, conversiones y planificación de instalación) sin precisar la variante de COCOMO ni el contexto de estimación, lo que hacía discutible juzgarlas como reglas universales. Se conserva la trazabilidad y se reemplaza por una pregunta sobre COCOMO 81, cuya ficha de los autores del modelo identifica expresamente sus salidas: coste, esfuerzo y calendario de desarrollo; el coste depende de aplicar una tarifa laboral al esfuerzo. Cotejo curricular: ITIC Academy, bloque 15 «Metodologías ágiles, Lean y modelos de ciclo de vida», versión 2026.2; contexto de planificación, gestión y estimación de proyectos. Modelos de estimación paramétrica de esfuerzo, calendario y coste en planificación de proyectos software. Drive: https://drive.google.com/file/d/1D62OE6Sw-ZB46S_2tvGophVTKgS3ip22/view?usp=drivesdk. Correspondencia contrastada con revision/temario-oficial.json y anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938; https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy aporta encuadre curricular; cada afirmación técnica se apoya en la fuente primaria enumerada en revision.fuentes."
+      }
     },
     {
       "id": 2441,
