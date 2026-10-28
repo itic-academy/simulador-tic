@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 28 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 457 (IDs 2596–2600). Acumulado: 2.600 preguntas examinadas, 2.534 verificadas (532 vigentes, 1.819 corregidas y 183 históricas) y 66 pendientes (30 de fuente y 36 de ambigüedad); quedan 9.523 sin revisar individualmente. Hay 2.055 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 458 (IDs 2601–2605). Acumulado: 2.605 preguntas examinadas, 2.539 verificadas (532 vigentes, 1.823 corregidas y 184 históricas) y 66 pendientes (30 de fuente y 36 de ambigüedad); quedan 9.518 sin revisar individualmente. Hay 2.060 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+
+## Lote 458 — 28 de octubre
+
+IDs 2601–2605 revisados individualmente y registrados en `cambios-lote-458.json`. Se precisa que Jelinski–Moranda es un modelo de crecimiento de fiabilidad, se corrige la medida de tamaño de Application Composition de COCOMO II, se delimita Jenkins como servidor de automatización, se explicita el cálculo por regiones de McCabe y se contextualiza Correctness como factor histórico de McCall.
+
+- **2601 — Jelinski–Moranda:** modelo de crecimiento de fiabilidad del software basado en fallos y tiempos entre fallos, no una métrica de productividad, complejidad o un modelo de factores. A1-98/A2-III-13.
+- **2602 — COCOMO II:** se identifican sus modelos Application Composition, Early Design y Post-Architecture. El primero usa Object Points, no líneas de código; se evita atribuir el inicio del proyecto a 1997, pues el esfuerzo de investigación comenzó en 1994 y 1997 identifica una calibración. A1-99/A2-II-15.
+- **2603 — integración continua:** Jenkins es un servidor de automatización extensible que puede automatizar construcción, pruebas y entrega. A1-96/A1-102/A2-IV-4.
+- **2604 — complejidad ciclomática de McCabe:** en un grafo de flujo de control se calcula como E−N+2P y equivale al número de regiones del grafo. A1-98/A2-III-13.
+- **2605 — Correctness en McCall:** grado en que el programa satisface sus especificaciones y objetivos de misión del usuario; se marca como modelo histórico. A1-98/A2-III-13.
+
+Fuentes técnicas: [Jelinski y Moranda, “Software Reliability Research” (1972), DOI](https://doi.org/10.1016/B978-0-12-266950-7.50028-1); [Boehm Center/USC, COCOMO II](https://boehmcsse.org/tools/cocomo-ii/) y [manual original USC COCOMO II v2.1 (1995–2000)](https://info.usherbrooke.ca/llavoie/enseignement/References/CocomoII_Model_Manual.pdf), Application Composition y Object Points; [Jenkins User Documentation](https://www.jenkins.io/doc/); [NIST IR 5459, calidad y métricas para software reutilizable](https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5459.pdf), cálculo de complejidad ciclomática; [McCabe, Richards y Walters, Factors in Software Quality, informe original RADC-TR-77-369, vol. I (1977)](https://apps.dtic.mil/sti/pdfs/ADA049014.pdf).
+
+Cotejo curricular ITIC Academy: [bloque 39 Calidad y Mantenimiento, edición 2026.1](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk), para fiabilidad, métricas/McCabe, McCall, calidad y estimación; [bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026.1](https://docs.google.com/document/d/1za_7e_LlvUEpja7VJyYelIgRIPu_AbE3/edit?usp=drivesdk&ouid=107088454749630873035&rtpof=true&sd=true), para integración continua y pruebas. Correspondencias verificadas en `temario-oficial.json` y convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). El contenido de academia informa la cobertura del temario, no sustituye las fuentes técnicas.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.605 revisadas individualmente, 2.539 verificadas, cero errores, 66 pendientes documentados y 9.518 todavía sin revisión de contenido.
 
 ## Lote 457 — 28 de octubre
 
