@@ -1,10 +1,25 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 475 (IDs 2686–2690). Acumulado: 2.690 preguntas examinadas individualmente, 2.622 verificadas (544 vigentes, 1.861 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.433 sin revisar individualmente. Hay 2.135 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 475 (IDs 2686–2690). Acumulado: 2.695 preguntas examinadas individualmente, 2.627 verificadas (549 vigentes, 1.861 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.428 sin revisar individualmente. Hay 2.138 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 
 
 
+## Lote 476 — 29 de octubre
+
+IDs 2691–2695 revisados individualmente contra la Constitución consolidada por el BOE (actualización de 20-05-2026). Se conservan las versiones originales y trazabilidad en `cambios-lote-476.json`; tres enunciados/opciones se precisan para eliminar errata o ambigüedad.
+
+- **2691 — funciones del Gobierno:** art. 97 CE: corresponde al Gobierno dirigir la política interior y exterior, la Administración civil y militar y la defensa del Estado, además de ejercer función ejecutiva y potestad reglamentaria. Clave confirmada. A1-1/A2-I.3.
+- **2692 — secreto de las comunicaciones:** se corrige la errata del enunciado y se identifica el art. 18.3 CE. Se garantiza el secreto, en especial de las comunicaciones postales, telegráficas y telefónicas, salvo resolución judicial; no se limita solo a esos medios ni es absoluto ante resolución judicial. Clave confirmada. A1-1/A2-I.1.
+- **2693 — atribuciones del Rey:** se precisa el art. 62 CE y se corrige el distractor compuesto que mezclaba una función verdadera con otra incorrecta. El art. 62.b atribuye convocar/disolver Cortes y convocar elecciones en los términos constitucionales; el 62.a trata de sancionar y promulgar leyes, no de ordenar publicar órdenes ministeriales. Los arts. 62.h e i se refieren al mando supremo de las Fuerzas Armadas y al derecho de gracia con arreglo a la ley. Clave confirmada. A1-1/A2-I.1.
+- **2694 — Senado:** art. 69.2 CE: cada provincia elige cuatro Senadores. Se concreta que se pregunta por las provincias peninsulares para no mezclar el régimen electoral insular del art. 69.3. Clave confirmada. A1-1/A2-I.2.
+- **2695 — deberes en catástrofes:** art. 30.4 CE permite regular mediante ley los deberes ciudadanos en casos de grave riesgo, catástrofe o calamidad pública. No exige ley orgánica. Clave confirmada. A1-1/A2-I.1.
+
+Fuente normativa primaria: [Constitución Española, texto consolidado por BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 18.3, 30.4, 62, 69.2 y 97 (última actualización publicada el 20-05-2026). El texto consolidado es informativo; las respuestas se vinculan a los preceptos de la Constitución publicada oficialmente.
+
+Cotejo curricular: ITIC Academy, [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), consultado directamente en Drive, cubre el Título I, Corona, Cortes/Senado y Gobierno. Correspondencia oficial cotejada con la [convocatoria A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 1, y la [convocatoria A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, I.1 (Constitución, derechos y deberes, Corona), I.2 (Cortes y Senado) e I.3 (Gobierno y relaciones con las Cortes). La respuesta jurídica deriva de la Constitución y el material de academia se usa solo como mapa didáctico.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.695 revisadas individualmente, 2.627 verificadas, 68 pendientes documentadas y 9.428 aún sin revisar contenido. El inventario estructural no acredita revisión individual.
 ## Lote 475 — 29 de octubre
 
 IDs 2686–2690 se verificaron individualmente contra la Constitución Española vigente, consolidada por BOE, y, para el mandato de desarrollo policial, la LO 2/1986. Se conservaron originales y trazabilidad en `cambios-lote-475.json`; las cinco claves se confirmaron sin cambios de contenido.
@@ -5195,3 +5210,4 @@ IDs 2331–2335 revisados individualmente con documentación oficial de PMI, GOV
 
 Fuentes principales: [PMI Lexicon](https://www.pmi.org/-/media/pmi/documents/registered/pdf/pmbok-standards/pmi-lexicon-pm-terms.pdf?rev=447328d841c249af985d14177ddd5f95), [PMI Scheduling Professional Exam Content Outline](https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/scheduling-professional-exam-outline.pdf), [GOV.UK, Writing user stories](https://www.gov.uk/service-manual/agile-delivery/writing-user-stories), [Microsoft Learn, DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-10.0), [AXELOS/PeopleCert, ITIL Guiding Principles](https://assets.ctfassets.net/82ripq7fjls2/7AMoolQNwmqpxisIdPiXIX/3a836bde1c9e5aa29b61143b3dd4f327/ITIL-guiding-principles-for-continual-improvement_FINAL.pdf) y [MÉTRICA v3 — Participantes, Ministerio de Administraciones Públicas](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ad601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf). ITIC Academy se registra como cotejo curricular en cada pregunta; la clave se decide a partir de la documentación principal y los programas de convocatoria.
 \n
+
