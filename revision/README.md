@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 569 (IDs 3161–3165). Acumulado: 3165 preguntas examinadas individualmente, 3093 verificadas (642 vigentes, 2212 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 8958 sin revisar individualmente. Hay 2524 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 570 (IDs 3166–3170). Acumulado: 3170 preguntas examinadas individualmente, 3098 verificadas (642 vigentes, 2217 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 8953 sin revisar individualmente. Hay 2529 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 570 — 29 de octubre
+
+IDs 3166–3170 revisados individualmente. Se precisaron las diferencias entre diagramas UML de secuencia/comunicación y la fidelidad de wireframes/mockups; se distinguió automatización de pruebas de gestión de incidencias; se definieron Jenkins como servidor de automatización para CI y DevSecOps como integración explícita de seguridad en el ciclo de vida. Los originales y respuestas anteriores se preservan en [cambios-lote-570.json](cambios-lote-570.json).
+
+- **3166 — UML:** diagrama de secuencia para ordenar mensajes en el eje temporal; el de comunicación enfatiza enlaces entre participantes. A1-90/A2-III-9; Academy 38 §6.4.
+- **3167 — mockup:** representación estática visual de alta fidelidad; se separa del wireframe de estructura/baja fidelidad y del nombre de una herramienta. A1-94/A2-III-12/III-14; Academy 38, prototipado e interfaces.
+- **3168 — pruebas:** Selenium automatiza navegadores; Cucumber ejecuta especificaciones BDD; MantisBT gestiona incidencias, no automatiza principalmente la ejecución de pruebas. A1-96/A2-III-7; Academy 39.
+- **3169 — integración continua:** Jenkins automatiza construcción, pruebas y entrega/despliegue; CI es una práctica, no una herramienta específica. A1-97/A2-III-6; Academy 38 §12.
+- **3170 — DevSecOps:** se explicita la integración de seguridad con desarrollo y operaciones en el ciclo de vida. Se evita el distractor ambiguo SecDevOps. A1-47/97; A2-II-13/III-6; Academy 48 §13.2.
+
+Fuentes técnicas primarias: [OMG UML 2.5.1, especificación](https://www.omg.org/spec/UML/2.5.1/PDF); [Figma, wireframe vs. mockup](https://www.figma.com/resource-library/wireframe-vs-mockup/); [Selenium docs](https://www.selenium.dev/documentation/), [Cucumber docs](https://cucumber.io/docs/) y [MantisBT Admin Guide](https://mantisbt.org/docs/master/en-US/Admin_Guide/Admin_Guide.pdf); [Jenkins User Documentation](https://www.jenkins.io/doc/); [NIST SSDF SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final), [NIST DevSecOps Practices (borrador preliminar)](https://csrc.nist.gov/pubs/other/2026/03/24/devsecops-practices/iprd) y [NIST SP 800-204D](https://csrc.nist.gov/News/2024/nist-publishes-sp-800204d). Programas oficiales cotejados: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), incluidos en temario-oficial.json.
+
+Cotejo curricular ITIC Academy (edición 2026): [Bloque 38 Análisis, Diseño y Construcción de Sistemas](https://drive.google.com/file/d/1za_7e_LlvUEpja7VJyYElIgRIPu_AbE3/edit), §6.4 para UML y §12 para CI/DevOps; [Bloque 39 Calidad y Mantenimiento](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view), §5.9 para automatización de pruebas y gestión de pruebas; [Bloque 48 Seguridad de Redes y Aplicación](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view), §13.2 para S-SDLC y DevSecOps. Se cotejaron los apartados pertinentes. La academia apoya el encaje curricular, no sustituye las fuentes de producto, estándar ni NIST.
+
+Después del lote se ejecutaron inventario.cjs, verificar.cjs y git diff --check. Inventario estructural no equivale a revisión de contenido.
 
 ## Lote 569 — 29 de octubre
 
