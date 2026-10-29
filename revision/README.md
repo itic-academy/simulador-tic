@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 490 (IDs 2766–2770). Acumulado: 2770 preguntas examinadas individualmente, 2701 verificadas (596 vigentes, 1886 corregidas y 219 históricas) y 69 pendientes documentadas (32 de fuente y 37 de ambigüedad); quedan 9353 sin revisar individualmente. Hay 2162 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando esos campos en los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 491 (IDs 2771–2775). Acumulado: 2775 preguntas examinadas individualmente, 2706 verificadas (596 vigentes, 1890 corregidas y 220 históricas) y 69 pendientes documentadas (32 de fuente y 37 de ambigüedad); quedan 9348 sin revisar individualmente. Hay 2167 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando esos campos en los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 491 — 29 de octubre
+
+IDs 2771–2775 revisados individualmente con las fuentes primarias de KDE, W3C, SAX, IETF y RFC Editor. Se cotejó el contenido Academy disponible en Drive, además de los epígrafes oficiales de A1/A2. Los originales íntegros y cambios se conservan en `cambios-lote-491.json`. El lote contiene cuatro correcciones y un reactivo histórico; no deja pendientes.
+
+- **2771 — Karbon:** se confirma como aplicación de dibujo vectorial de Calligra/KDE y se aclara el contexto de suite; la ficha oficial de KDE confirma que continúa publicada. No se encontró material Academy específico sobre Karbon. A1-60/69 y A2-II.2/II.14, como encaje general en Linux/KDE y software libre.
+- **2772 — parser XML:** se reemplaza la descripción abstracta de “representación interna” por la definición W3C: leer XML y entregar a una aplicación acceso al contenido y estructura. A1-77/A2-II.9; Academy, bloque de tecnologías de sistemas de información 2026.1.
+- **2773 — SAX:** se concreta el modelo secuencial por eventos/manejadores y se diferencia de DOM, esquemas XML y RPC. A1-67/77, A2-II.9; Academy, apartado XML/SAX/StAX.
+- **2774 — DTD y XML Schema:** se elimina la afirmación de que sean los únicos metalenguajes disponibles; el reactivo ahora pregunta por dos mecanismos ampliamente usados. A1-77/A2-II.9; Academy, apartado DTD/XML Schema/Schematron.
+- **2775 — PKCS #7:** se marca histórica y se acota a RFC 2315: EnvelopedData contiene contenido cifrado e información de clave/destinatarios que forma sobres digitales. Se indica la continuidad del concepto en CMS (RFC 5652). A1-80/81/125, A2-I.6/IV.12; Academy, bloque de seguridad y criptografía 2026.1.
+
+Fuentes primarias: KDE Applications, [Karbon](https://apps.kde.org/en-gb/calligra.karbon/) y [Calligra](https://apps.kde.org/calligra/); W3C, [XML 1.0](https://www.w3.org/TR/xml/) y [XML Schema 1.1, Part 1](https://www.w3.org/TR/xmlschema11-1/); proyecto SAX, [sitio oficial SAX 2.0.1](https://sax.sourceforge.net/); IETF, [RFC 2315 PKCS #7](https://datatracker.ietf.org/doc/html/rfc2315); RFC Editor, [RFC 5652 CMS](https://www.rfc-editor.org/rfc/rfc5652.html).
+
+Cotejo curricular en Drive: [Tecnologías de sistemas de información, ITIC Academy 2026.1](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk), que incluye XML/SAX/DTD/XSD; [Seguridad, Criptografía, Identificación y Firma 2026.1](https://drive.google.com/file/d/1Rix8RBBUSoXJBOAt8iWyU9j5tPiqlXzk/view?usp=drivesdk), para el encaje de PKCS #7; y [Sistemas Operativos 2026](https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk), como contexto KDE/Linux. Convocatorias: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); epígrafes comprobados contra `temario-oficial.json`.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` se ejecutan tras completar el lote. El inventario no acredita revisión individual.
 
 ## Lote 490 — 29 de octubre
 
