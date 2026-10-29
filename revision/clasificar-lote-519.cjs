@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),file=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-519.json');
+const bank=JSON.parse(fs.readFileSync(file,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 2911:{A1:['A1-4'],A2:['A2-I-8'],academy:'ITIC Academy, Bloque 01 Constitución, organización del Estado y AGE, versión 2026.2: https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk. El epígrafe constitucional encaja en A1-4 y el régimen jurídico administrativo en A2-I-8; la competencia concreta se contrasta con el art. 149.1.18.ª CE.'},
+ 2912:{A1:['A1-4'],A2:['A2-I-8'],academy:'ITIC Academy, Bloque 01 Constitución, organización del Estado y AGE, versión 2026.2: https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk. Incluye órganos centrales y organización ministerial; la atribución se verifica con la Ley 40/2015.'},
+ 2913:{A1:['A1-4','A1-6'],A2:['A2-I-8'],academy:'ITIC Academy, Bloque 01 Constitución, organización del Estado y AGE, versión 2026.2: https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk. Cotejo de organización central y exterior de la AGE; definición legal en el art. 55.5 de la Ley 40/2015.'},
+ 2914:{A1:['A1-8'],A2:['A2-I-8'],academy:'ITIC Academy, Bloque 03 Procedimiento Administrativo Común, versión 2026: https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk. Correspondencia directa con la Ley 39/2015; nulidad y anulabilidad se verifican en sus arts. 47 y 48.'},
+ 2915:{A1:['A1-8'],A2:['A2-I-8'],academy:'ITIC Academy, Bloque 03 Procedimiento Administrativo Común, versión 2026: https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk. El bloque incluye ámbito subjetivo de la Ley 39/2015; el régimen de corporaciones de derecho público se verifica en el art. 2.4.'}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&q.revision&&m);for(const t of [...m.A1,...m.A2])assert.ok(topics.has(t),t);q.revision.observaciones+=` Cotejo curricular: ${m.academy} La academia se usa como mapa de estudio, no como autoridad técnica o normativa.`;q.clasificacion={...q.clasificacion,A1:m.A1,A2:m.A2,bloque_academia:m.academy,estado:'revisada',nota:`${q.revision.estado}. ${m.academy}`};q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q);}
+fs.writeFileSync(file,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Clasificación oficial y cotejo curricular validados para lote 519.');
