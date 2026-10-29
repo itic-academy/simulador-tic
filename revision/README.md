@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 567 (IDs 3151–3155). Acumulado: 3155 preguntas examinadas individualmente, 3083 verificadas (642 vigentes, 2202 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 8968 sin revisar individualmente. Hay 2514 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 568 (IDs 3156–3160). Acumulado: 3160 preguntas examinadas individualmente, 3088 verificadas (642 vigentes, 2207 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 8963 sin revisar individualmente. Hay 2519 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 568 — 29 de octubre
+
+IDs 3156–3160 revisados individualmente con fuentes de UC Berkeley/Carnegie Mellon, Apache Hive, Salesforce, ADL e IETF RFC 2849. Se delimitó minimax frente a la poda alfa-beta; se verificó Hive frente a Mahout/ZooKeeper; se precisó CRM; se aclaró el alcance de SCORM y se corrigió la errata y la sinonimia moddn/modrdn en LDIF. Los originales íntegros se conservan en [cambios-lote-568.json](cambios-lote-568.json).
+
+- **3156 — minimax:** búsqueda adversarial para elegir movimientos; alfa-beta poda ramas de una búsqueda minimax. A1-70/A2-III-5; Academy Bloque 32, §5.10.
+- **3157 — Apache Hive:** data warehouse sobre Hadoop para gestionar y consultar grandes conjuntos mediante SQL. A1-75/A2-II-4/III-15; Academy Bloque 34.
+- **3158 — CRM:** Customer Relationship Management integra estrategia, procesos y tecnología para gestionar interacciones con clientes. A1-72/A2-II-12; Academy Bloque 30.
+- **3159 — SCORM:** especificaciones de empaquetado, ejecución e interoperabilidad de contenidos con LMS. A1-73; sin equivalencia A2 directa. Academy Bloque 33.
+- **3160 — LDIF:** RFC 2849 contempla add/delete/modify/moddn; modrdn es alias. Se corrige “chagetype” por changetype. A1-80; sin equivalencia A2 directa. Academy Bloque 45.
+
+Fuentes primarias: [UC Berkeley, Multi-Agent Search](https://ai.berkeley.edu/multiagent.html) y [CMU, Adversarial Search](https://www.cs.cmu.edu/~15281-f24/lectures/15281_F24_Lec4_Adversarial_Search.pdf); [Apache Hive Introduction](https://hive.apache.org/docs/latest/introduction-to-apache-hive/) y [Tutorial](https://hive.apache.org/docs/latest/user/tutorial/); [Salesforce, What is CRM?](https://www.salesforce.com/crm/what-is-crm/); [ADL SCORM Guide for Designers](https://adlnet.gov/assets/uploads/SCORM_Users_Guide_for_ISDs.pdf) y [Programmers](https://adlnet.gov/assets/uploads/SCORM_Users_Guide_for_Programmers.pdf); [IETF RFC 2849](https://www.rfc-editor.org/rfc/rfc2849.html). Programas oficiales cotejados: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), además de temario-oficial.json.
+
+Cotejo ITIC Academy Drive (ediciones 2026): [Bloque 32 IA y Ciencia de Datos](https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view), §5.10; [Bloque 34 Business Intelligence y Big Data](https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view); [Bloque 30 Tecnologías de Sistemas de Información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view), §11; [Bloque 33 E-learning y GIS](https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view), §1.8; [Bloque 45 Correo, Mensajería y Servicios de Directorio](https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view). Academy se usa como encaje curricular; las fuentes técnicas primarias determinan la respuesta.
+
+Tras el lote se ejecutaron inventario.cjs, verificar.cjs y git diff --check. El recuento del inventario no acredita por sí solo revisión de contenido.
 
 ## Lote 567 — 29 de octubre
 
