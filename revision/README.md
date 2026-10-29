@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 557 (IDs 3101–3105). Acumulado: 3105 preguntas examinadas individualmente, 3033 verificadas (632 vigentes, 2162 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9018 sin revisar individualmente. Hay 2475 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 558 (IDs 3101–3110). Acumulado: 3110 preguntas examinadas individualmente, 3038 verificadas (632 vigentes, 2167 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9013 sin revisar individualmente. Hay 2480 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 558 — 29 de octubre
+
+IDs 3106–3110 revisados individualmente contra ISO 22301, especificaciones IETF, normas ISO/CENELEC y fuentes oficiales de la UE y NIST. Se precisó el requisito de estructura de respuesta de continuidad; se distinguió OSPF/ASBR del vector distancia; se aclaró el alcance ISO/IEC 11801 frente a EN 50173; se delimitó el impacto de escucha pasiva; y se corrigió la descripción de Galileo, que no es simplemente una versión europea de GPS. El registro [cambios-lote-558.json](cambios-lote-558.json) conserva originales y revisiones completas.
+
+- **3106 — ISO 22301:** la cláusula 8.4.2 requiere implementar y mantener equipos/estructura responsables de responder a interrupciones; el enunciado original “documento mínimo” era impreciso. A1-128; A2-IV-6; Academy Bloques 48 y 26.
+- **3107 — Galileo:** sistema europeo global de navegación por satélite bajo control civil. A1-108; A2-IV-7; Academy Bloque 42, cotejo transversal sobre redes/medios no guiados.
+- **3108 — OSPF:** usa estado de enlace y SPF/Dijkstra; un ASBR puede redistribuir rutas externas en el dominio OSPF. OSPF no es vector distancia. A1-108/118; A2-II-8/IV-10; Academy Bloques 42/43.
+- **3109 — cableado genérico:** ISO/IEC 11801 es familia internacional; EN 50173 es familia europea relacionada, por lo que se reformuló el alcance. A1-110; A2-IV-7; Academy Bloque 42.
+- **3110 — pinchado pasivo:** observa/registrar comunicaciones sin alterarlas y compromete confidencialidad; no implica por sí mismo uso excesivo de CPU. A1-125; A2-II-13/IV-12; Academy Bloque 48.
+
+Fuentes primarias: [ISO 22301:2019](https://www.iso.org/standard/75106.html), ficha oficial y cláusula 8.4.2 en [ISO OBP](https://www.iso.org/obp/ui/en/#iso:std:iso:22301:ed-2:v1:en); Comisión Europea [Galileo](https://eur-lex.europa.eu/EN/legal-content/glossary/galileo.html), [EUSPA](https://www.euspa.europa.eu/european-space/galileo); IETF [RFC 2328](https://www.rfc-editor.org/rfc/rfc2328.html) §§2, 2.3, 12.4.4 y 16; [ISO/IEC 11801-1](https://www.iso.org/standard/66182.html); NBN, [EN 50173-1](https://app.nbn.be/data/r/platform/frontend/detail?p40_id=296193&p_lang=en); [NIST CSRC passive wiretapping](https://csrc.nist.gov/glossary/term/passive_wiretapping) y [NIST SP 800-177 Rev. 1](https://csrc.nist.gov/pubs/sp/800/177/r1/final) §3.2.
+
+Cotejo Drive: ITIC Academy [Bloque 42, Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), edición 2026, confirma los temas de medios/cableado y encaminamiento OSPF/BGP; [Bloque 43, Protocolos](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view), edición 2026.1, OSI/encaminamiento; [Bloque 48, Seguridad](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk), versión 2026.1, ciberseguridad; [Bloque 26, Hardware/CPD](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), edición 2026, recuperación ante desastres. Los temas oficiales se comprobaron en los programas y anexos I y IX de [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), respectivamente, representados en revision/temario-oficial.json. La academia se usa como cotejo curricular, no como sustituto de esas fuentes oficiales.
+
+Tras el lote se ejecutaron inventario.cjs, verificar.cjs y git diff --check. El inventario estructural no equivale a revisión individual del contenido.
 
 ## Lote 557 — 29 de octubre
 
