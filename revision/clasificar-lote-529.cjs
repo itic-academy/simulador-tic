@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-529.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 2961:{A1:['A1-85'],A2:[],academy:'ITIC Academy, Bloque 30 «Tecnologías de Sistemas de la Información» (2026.1), epígrafe A1-85 sobre blockchain; recoge consorcios, tipos de redes y ecosistemas blockchain. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk'},
+ 2962:{A1:['A1-88'],A2:['A2-III-9'],academy:'ITIC Academy, Bloque 38 «Análisis, Diseño y Construcción de Sistemas de Información» (2026), casos de uso y UML; A2 D9 sobre proceso unificado y UML. https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk'},
+ 2963:{A1:['A1-88','A1-95'],A2:['A2-III-9'],academy:'ITIC Academy, Bloque 38 (2026), casos de uso en análisis funcional y modelado UML/MÉTRICA. https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk'},
+ 2964:{A1:['A1-64','A1-95'],A2:['A2-III-4'],academy:'ITIC Academy, Bloque 29 «Bases de Datos» (2026), modelo E/R extendido; y Bloque 38, análisis y diseño de SI/MÉTRICA. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk ; https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk'},
+ 2965:{A1:['A1-88','A1-93'],A2:['A2-III-9'],academy:'ITIC Academy, Bloque 38 (2026), análisis orientado a objetos: herencia, encapsulación y polimorfismo; A2 D9 sobre análisis y diseño OO. https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk'}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&q.revision&&m);for(const t of [...m.A1,...m.A2])assert.ok(topics.has(t),t);q.revision.observaciones+=` Cotejo curricular: ${m.academy} La clasificación se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; Academy orienta el encuadre, no reemplaza las fuentes primarias.`;q.clasificacion={...q.clasificacion,A1:m.A1,A2:m.A2,bloque_academia:m.academy,estado:'revisada',nota:`${q.revision.estado}. ${m.academy}`};q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q);}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Clasificación A1/A2 y cotejo de Academy validados para lote 529.');
