@@ -147040,71 +147040,236 @@
       "id": 3031,
       "bloque": 0,
       "tema": 0,
-      "texto": "El protocolo TCP (Protocolo de Control de Transmisión) es un protocolo a nivel de transporte orientado a conexión:",
+      "texto": "¿Cuál describe correctamente TCP frente a IP?",
       "opciones": [
-        "Que fue desarrollado expresamente para Internet",
-        "Que, al igual que el protocolo IP (Protocolo Interredes), son protocolos OSI (Interconexión de Sistemas Abiertos)",
-        "Que no puede interoperar con protocolos de transporte OSI",
-        "Que fue diseñado para garantizar la fiabilidad que no ofrece el protocolo IP para establecer comunicaciones fiables entre subredes de datos"
+        "TCP es el protocolo de encaminamiento entre subredes y determina la ruta de cada datagrama.",
+        "TCP es un protocolo de transporte de Internet, orientado a conexión, que proporciona a las aplicaciones un flujo fiable y ordenado de octetos; IP ofrece el servicio de datagramas entre redes.",
+        "TCP es un protocolo de enlace que entrega tramas solo dentro de una LAN.",
+        "TCP cifra y autentica por sí mismo todos los datos que transporta."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Se reemplaza la formulación que atribuía a TCP garantizar la fiabilidad de las comunicaciones entre subredes. TCP presta comunicación fiable extremo a extremo entre procesos/hosts; el encaminamiento entre redes corresponde a IP. TCP no es un protocolo de la suite OSI, aunque puede ubicarse en la capa de transporte al compararlo con ese modelo. Cotejo curricular: ITIC Academy, Bloque 43 «Protocolos» (2026), TCP/IP, transporte, encaminamiento; Bloque 42 «Redes» para interconexión. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias verificadas en revision/temario-oficial.json y anexos I (A1) y IX (A2 GSI) de BOE-A-2025-25938 y BOE-A-2025-26262; la academia es material auxiliar, no fuente normativa.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-109",
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 43 «Protocolos» (2026), TCP/IP, transporte, encaminamiento; Bloque 42 «Redes» para interconexión. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 43 «Protocolos» (2026), TCP/IP, transporte, encaminamiento; Bloque 42 «Redes» para interconexión. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk"
+      },
+      "etiquetas": [
+        "TCP",
+        "IP",
+        "capa de transporte",
+        "servicio fiable",
+        "flujo de octetos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+            "referencia": "IETF RFC 9293 (STD 7), §§2.2 y 2.6: TCP es un protocolo de transporte de Internet, orientado a conexión, que ofrece a las aplicaciones un flujo de octetos fiable y ordenado; IP transporta los segmentos en datagramas."
+          }
+        ],
+        "observaciones": "Se reemplaza la formulación que atribuía a TCP garantizar la fiabilidad de las comunicaciones entre subredes. TCP presta comunicación fiable extremo a extremo entre procesos/hosts; el encaminamiento entre redes corresponde a IP. TCP no es un protocolo de la suite OSI, aunque puede ubicarse en la capa de transporte al compararlo con ese modelo. Cotejo curricular: ITIC Academy, Bloque 43 «Protocolos» (2026), TCP/IP, transporte, encaminamiento; Bloque 42 «Redes» para interconexión. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias verificadas en revision/temario-oficial.json y anexos I (A1) y IX (A2 GSI) de BOE-A-2025-25938 y BOE-A-2025-26262; la academia es material auxiliar, no fuente normativa."
+      }
     },
     {
       "id": 3032,
       "bloque": 0,
       "tema": 0,
-      "texto": "La codificación Manchester-Diferencial se utiliza en:",
+      "texto": "¿En qué consiste principalmente la codificación de línea Manchester diferencial, empleada históricamente en Token Ring IEEE 802.5?",
       "opciones": [
-        "Firma digital",
-        "Modulación de señales",
-        "Técnicas criptográficas",
-        "Seguridad Wi-Fi"
+        "En firmar digitalmente cada trama.",
+        "En codificar los bits mediante transiciones relativas de la señal dentro de cada intervalo de bit.",
+        "En cifrar la trama con una clave compartida.",
+        "En modular una portadora de radio por desplazamiento de frecuencia."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se corrige la categoría: Manchester diferencial es una codificación de línea/baseband para representar bits y recuperar temporización, utilizada en Token Ring IEEE 802.5; no es una técnica criptográfica ni una modulación de radio. La opción genérica «modulación de señales» era demasiado amplia y podía confundirse con modulación de portadora. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), cableado y LAN; Token Ring/Manchester diferencial se conserva como tecnología histórica de capa física. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias verificadas en revision/temario-oficial.json y anexos I (A1) y IX (A2 GSI) de BOE-A-2025-25938 y BOE-A-2025-26262; la academia es material auxiliar, no fuente normativa.",
+      "clasificacion": {
+        "A1": [
+          "A1-110",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes» (2026.1), cableado y LAN; Token Ring/Manchester diferencial se conserva como tecnología histórica de capa física. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 42 «Redes» (2026.1), cableado y LAN; Token Ring/Manchester diferencial se conserva como tecnología histórica de capa física. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk"
+      },
+      "etiquetas": [
+        "codificación de línea",
+        "Manchester diferencial",
+        "Token Ring",
+        "IEEE 802.5",
+        "capa física"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://pure.tue.nl/ws/portalfiles/portal/46711707/283998-1.pdf",
+            "referencia": "ANSI/IEEE 802.5-1985, §6.1, especificación de la capa física: codifica símbolos de Token Ring con señalización de tipo differential Manchester, dos elementos de señal por símbolo."
+          }
+        ],
+        "observaciones": "Se corrige la categoría: Manchester diferencial es una codificación de línea/baseband para representar bits y recuperar temporización, utilizada en Token Ring IEEE 802.5; no es una técnica criptográfica ni una modulación de radio. La opción genérica «modulación de señales» era demasiado amplia y podía confundirse con modulación de portadora. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), cableado y LAN; Token Ring/Manchester diferencial se conserva como tecnología histórica de capa física. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias verificadas en revision/temario-oficial.json y anexos I (A1) y IX (A2 GSI) de BOE-A-2025-25938 y BOE-A-2025-26262; la academia es material auxiliar, no fuente normativa."
+      }
     },
     {
       "id": 3033,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué tasa de transferencia tiene la codificación de voz CS-ACELP (Conjugate-Structure Algebraic Code Excited Linear-Prediction) de la Recomendación ITU G.729 (anexo A)?",
+      "texto": "¿Cuál es la tasa de bits del códec CS-ACELP de complejidad reducida definido en ITU-T G.729 Annex A?",
       "opciones": [
-        "8 Kbit/s.",
-        "16 Kbit/s.",
-        "32 Kbit/s.",
-        "64 Kbit/s."
+        "8 kbit/s.",
+        "16 kbit/s.",
+        "32 kbit/s.",
+        "64 kbit/s."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva 8 kbit/s como tasa de G.729 Annex A (CS-ACELP de complejidad reducida). Se diferencia de G.711 (64 kbit/s) y G.726 (tasa variable de 16–40 kbit/s). La cifra es tasa del códec, no el ancho de banda total de la llamada IP/RTP. Cotejo curricular: ITIC Academy, Bloque 43 «Protocolos» (2026), protocolos de tiempo real y codificación de voz; Bloque 50 «Videoconferencia, SSO y colaboración», calidad de voz y códecs. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk Correspondencias verificadas en revision/temario-oficial.json y anexos I (A1) y IX (A2 GSI) de BOE-A-2025-25938 y BOE-A-2025-26262; la academia es material auxiliar, no fuente normativa.",
+      "clasificacion": {
+        "A1": [
+          "A1-116"
+        ],
+        "A2": [
+          "A2-IV-14"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 43 «Protocolos» (2026), protocolos de tiempo real y codificación de voz; Bloque 50 «Videoconferencia, SSO y colaboración», calidad de voz y códecs. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 43 «Protocolos» (2026), protocolos de tiempo real y codificación de voz; Bloque 50 «Videoconferencia, SSO y colaboración», calidad de voz y códecs. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk"
+      },
+      "etiquetas": [
+        "G.729",
+        "CS-ACELP",
+        "8 kbit/s",
+        "voz",
+        "anexo A"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.729-201206-I/en",
+            "referencia": "ITU-T G.729 (06/2012), actualmente In force: la propia recomendación se titula codificación de voz a 8 kbit/s mediante CS-ACELP; el anexo A define la versión de complejidad reducida, también a 8 kbit/s."
+          }
+        ],
+        "observaciones": "Se conserva 8 kbit/s como tasa de G.729 Annex A (CS-ACELP de complejidad reducida). Se diferencia de G.711 (64 kbit/s) y G.726 (tasa variable de 16–40 kbit/s). La cifra es tasa del códec, no el ancho de banda total de la llamada IP/RTP. Cotejo curricular: ITIC Academy, Bloque 43 «Protocolos» (2026), protocolos de tiempo real y codificación de voz; Bloque 50 «Videoconferencia, SSO y colaboración», calidad de voz y códecs. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk Correspondencias verificadas en revision/temario-oficial.json y anexos I (A1) y IX (A2 GSI) de BOE-A-2025-25938 y BOE-A-2025-26262; la academia es material auxiliar, no fuente normativa."
+      }
     },
     {
       "id": 3034,
       "bloque": 0,
       "tema": 0,
-      "texto": "La velocidad de transmisión del cable de pares trenzados CAT6 empleado en el cableado de redes locales, es de:",
+      "texto": "¿Qué tasa puede alcanzar 10GBASE-T sobre cableado Cat 6 instalado en un canal corto y correctamente cualificado?",
       "opciones": [
-        "Hasta 56 Mbps.",
-        "Hasta 100 Mbps.",
-        "Hasta 1,2 Gbps.",
-        "Hasta 10 Gbps."
+        "56 Mbit/s.",
+        "100 Mbit/s.",
+        "1,2 Gbit/s.",
+        "10 Gbit/s, con alcance limitado frente a Cat 6A y condicionado por diafonía y longitud."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 3,
+      "comentarios": "Se corrige la unidad errónea de 1,2 Gbit/s: 10GBASE-T puede alcanzar 10 Gbit/s sobre Cat 6 instalado en longitudes reducidas, en general hasta 55 m según longitud y diafonía exógena; no debe prometerse 10 Gb/s sobre 100 m de Cat 6. Para 100 m, la especificación de cableado nueva apropiada es Cat 6A. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), cableado estructurado, categoría 6/6A y Ethernet; se matiza alcance/distancia según IEEE 802.3an y TIA TSB-155-A. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias verificadas en revision/temario-oficial.json y anexos I (A1) y IX (A2 GSI) de BOE-A-2025-25938 y BOE-A-2025-26262; la academia es material auxiliar, no fuente normativa.",
+      "clasificacion": {
+        "A1": [
+          "A1-110",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes» (2026.1), cableado estructurado, categoría 6/6A y Ethernet; se matiza alcance/distancia según IEEE 802.3an y TIA TSB-155-A. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 42 «Redes» (2026.1), cableado estructurado, categoría 6/6A y Ethernet; se matiza alcance/distancia según IEEE 802.3an y TIA TSB-155-A. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk"
+      },
+      "etiquetas": [
+        "Cat 6",
+        "10GBASE-T",
+        "cableado estructurado",
+        "10 Gbit/s",
+        "diafonía exógena"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.3an/3560/",
+            "referencia": "IEEE 802.3an-2006, 10GBASE-T: define Ethernet a 10 Gb/s sobre cableado balanceado de par trenzado; la norma 10GBASE-T admite hasta 100 m en sistemas de cableado adecuados."
+          },
+          {
+            "url": "https://www.ieee802.org/3/an/public/channel_models/",
+            "referencia": "IEEE 802.3an Task Force, modelos de canal: publica modelos y datos de canales Cat 6 de 55 m para evaluar 10GBASE-T."
+          },
+          {
+            "url": "https://www.tiafotc.org/tia-standards-update/",
+            "referencia": "TIA TSB-155-A, citado por TIA: guía para evaluar y mitigar cableado Cat 6 instalado para 10GBASE-T; la prestación depende de longitud y diafonía exógena. Para 100 m en nuevas instalaciones se usa Cat 6A."
+          }
+        ],
+        "observaciones": "Se corrige la unidad errónea de 1,2 Gbit/s: 10GBASE-T puede alcanzar 10 Gbit/s sobre Cat 6 instalado en longitudes reducidas, en general hasta 55 m según longitud y diafonía exógena; no debe prometerse 10 Gb/s sobre 100 m de Cat 6. Para 100 m, la especificación de cableado nueva apropiada es Cat 6A. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), cableado estructurado, categoría 6/6A y Ethernet; se matiza alcance/distancia según IEEE 802.3an y TIA TSB-155-A. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias verificadas en revision/temario-oficial.json y anexos I (A1) y IX (A2 GSI) de BOE-A-2025-25938 y BOE-A-2025-26262; la academia es material auxiliar, no fuente normativa."
+      }
     },
     {
       "id": 3035,
       "bloque": 0,
       "tema": 0,
-      "texto": "Bajo el protocolo PEM:",
+      "texto": "Según IETF RFC 1421, ¿qué tres valores de Proc-Type representan los modos de procesamiento de contenido de un mensaje PEM normal?",
       "opciones": [
-        "Se distinguen 3 tipos de mensajes",
-        "Un mensaje MIC-CLEAR soporta confidencialidad",
-        "Un mensaje MIC-Only solo envia la cabecera",
-        "Ninguna de las anteriores respuestas es correcta"
+        "MIC-CLEAR, MIC-ONLY y ENCRYPTED.",
+        "MIC-CLEAR, MIC-ONLY y CERTIFICATE-ONLY.",
+        "MIC-ONLY, CERTIFICATE y CRL.",
+        "ENCRYPTED, CRL y CERTIFICATE."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva «tres tipos» únicamente delimitándolo a los tres valores Proc-Type de mensajes PEM normales: MIC-CLEAR, MIC-ONLY y ENCRYPTED. Un mensaje MIC-CLEAR no cifra ni aporta confidencialidad; MIC-ONLY tampoco cifra, pero sí transporta el texto encapsulado codificado junto a los campos de control. Las CRL/certificados tienen estructuras propias y no deben confundirse con esos tres modos de procesamiento de contenido. Cotejo curricular: ITIC Academy, Bloque 45 «Correo electrónico, mensajería y servicios de directorio» (2026), protección criptográfica del correo; Bloque 36 «Seguridad, criptografía, identificación y firma» (2026.1), integridad/confidencialidad. https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view?usp=drivesdk https://drive.google.com/file/d/1e63zmnn7AdxZtHG6iIfiqbGqH7l7fjP6/view?usp=drivesdk Correspondencias verificadas en revision/temario-oficial.json y anexos I (A1) y IX (A2 GSI) de BOE-A-2025-25938 y BOE-A-2025-26262; la academia es material auxiliar, no fuente normativa.",
+      "clasificacion": {
+        "A1": [
+          "A1-122",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-II-13",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 45 «Correo electrónico, mensajería y servicios de directorio» (2026), protección criptográfica del correo; Bloque 36 «Seguridad, criptografía, identificación y firma» (2026.1), integridad/confidencialidad. https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view?usp=drivesdk https://drive.google.com/file/d/1e63zmnn7AdxZtHG6iIfiqbGqH7l7fjP6/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 45 «Correo electrónico, mensajería y servicios de directorio» (2026), protección criptográfica del correo; Bloque 36 «Seguridad, criptografía, identificación y firma» (2026.1), integridad/confidencialidad. https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view?usp=drivesdk https://drive.google.com/file/d/1e63zmnn7AdxZtHG6iIfiqbGqH7l7fjP6/view?usp=drivesdk"
+      },
+      "etiquetas": [
+        "PEM",
+        "RFC 1421",
+        "MIC-CLEAR",
+        "MIC-ONLY",
+        "ENCRYPTED",
+        "confidencialidad",
+        "correo electrónico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1421.html",
+            "referencia": "IETF RFC 1421, §4.6.1.1.1–4.6.1.1.3: define ENCRYPTED, MIC-ONLY y MIC-CLEAR como los tres valores de Proc-Type para mensajes PEM normales; MIC-ONLY y MIC-CLEAR aportan servicios de integridad/autenticación pero no confidencialidad."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1421.html#section-4.6.1.1.2",
+            "referencia": "RFC 1421, §4.6.1.1.2 y sintaxis de §4.6: un mensaje MIC-ONLY incluye texto encapsulado codificado; lo que falta es cifrado/confidencialidad, no el cuerpo del mensaje."
+          }
+        ],
+        "observaciones": "Se conserva «tres tipos» únicamente delimitándolo a los tres valores Proc-Type de mensajes PEM normales: MIC-CLEAR, MIC-ONLY y ENCRYPTED. Un mensaje MIC-CLEAR no cifra ni aporta confidencialidad; MIC-ONLY tampoco cifra, pero sí transporta el texto encapsulado codificado junto a los campos de control. Las CRL/certificados tienen estructuras propias y no deben confundirse con esos tres modos de procesamiento de contenido. Cotejo curricular: ITIC Academy, Bloque 45 «Correo electrónico, mensajería y servicios de directorio» (2026), protección criptográfica del correo; Bloque 36 «Seguridad, criptografía, identificación y firma» (2026.1), integridad/confidencialidad. https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view?usp=drivesdk https://drive.google.com/file/d/1e63zmnn7AdxZtHG6iIfiqbGqH7l7fjP6/view?usp=drivesdk Correspondencias verificadas en revision/temario-oficial.json y anexos I (A1) y IX (A2 GSI) de BOE-A-2025-25938 y BOE-A-2025-26262; la academia es material auxiliar, no fuente normativa."
+      }
     },
     {
       "id": 3036,

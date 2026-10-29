@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 542 (IDs 3026–3030). Acumulado: 3030 preguntas examinadas individualmente, 2958 verificadas (630 vigentes, 2090 corregidas y 238 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9093 sin revisar individualmente. Hay 2402 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 543 (IDs 3031–3035). Acumulado: 3035 preguntas examinadas individualmente, 2963 verificadas (630 vigentes, 2095 corregidas y 238 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9088 sin revisar individualmente. Hay 2407 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 543 — 29 de octubre
+
+IDs 3031–3035 revisados individualmente y contrastados con estándares IETF, IEEE/TIA e ITU-T. Se consultaron además los bloques de academia sobre protocolos, redes, VoIP y correo seguro y se cotejaron los programas oficiales A1/A2. Se conservaron íntegros enunciados y claves originales, junto con las fuentes, en [cambios-lote-543.json](cambios-lote-543.json).
+
+- **3031 — TCP frente a IP:** TCP proporciona un flujo fiable, ordenado y orientado a conexión entre extremos; el encaminamiento entre redes es de IP. A1-108/109/115; A2-II-8; Academy Bloques 42/43.
+- **3032 — Manchester diferencial:** se identifica como codificación de línea/baseband, históricamente usada en la capa física de Token Ring IEEE 802.5; no como cifrado ni modulación RF. A1-110/118; A2-IV-7; Academy Bloque 42.
+- **3033 — G.729 Annex A:** CS-ACELP de complejidad reducida opera a 8 kbit/s. Se distingue tasa del códec de ancho de banda de la llamada. A1-116; A2-IV-14; Academy Bloques 43/50.
+- **3034 — Cat 6:** se corrige la clave 1,2 Gbit/s por 10GBASE-T, pero se añade la condición de canal corto/cualificado: la longitud y diafonía condicionan Cat 6; para 100 m se emplea Cat 6A. A1-110/118; A2-IV-7; Academy Bloque 42.
+- **3035 — PEM/RFC 1421:** los tres valores Proc-Type para procesamiento de contenido son MIC-CLEAR, MIC-ONLY y ENCRYPTED. MIC-CLEAR/MIC-ONLY no ofrecen confidencialidad y MIC-ONLY sí incluye el texto protegido frente a modificaciones. A1-122/125; A2-II-13/IV-12; Academy Bloques 45/36.
+
+Fuentes: IETF [RFC 9293](https://www.rfc-editor.org/rfc/rfc9293.html), TCP vigente, §2.2; ANSI/IEEE 802.5-1985, §6.1, [copia del estándar reimpreso](https://pure.tue.nl/ws/portalfiles/portal/46711707/283998-1.pdf), codificación diferencial Manchester en Token Ring; ITU-T [G.729 (06/2012)](https://www.itu.int/rec/T-REC-G.729-201206-I/en), vigente, y [G.729 Annex A](https://www.itu.int/ITU-T/recommendations/rec.aspx?lang=sp&rec=3819), variante de 8 kbit/s; IEEE [802.3an-2006](https://standards.ieee.org/ieee/802.3an/3560/) y modelos de canal del [grupo 10GBASE-T](https://www.ieee802.org/3/an/public/channel_models/); TIA [TSB-155-A](https://www.tiafotc.org/tia-standards-update/), evaluación de Cat 6 instalado para 10GBASE-T; IETF [RFC 1421](https://www.rfc-editor.org/rfc/rfc1421.html), §4.6.1.1.
+
+Cotejo en Drive: [Bloque 42, Redes 2026.1](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), cableado y Ethernet; [Bloque 43, Protocolos 2026](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk), TCP/IP y VoIP; [Bloque 50, Videoconferencia, SSO y colaboración](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk), calidad de voz; [Bloque 45, Correo, mensajería y directorios](https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view?usp=drivesdk), correo; [Bloque 36, Seguridad, criptografía, identificación y firma](https://drive.google.com/file/d/1e63zmnn7AdxZtHG6iIfiqbGqH7l7fjP6/view?usp=drivesdk), servicios de seguridad. Correspondencias cotejadas con revision/temario-oficial.json, anexo I de [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y anexo IX de [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); los apuntes son auxiliares y no sustituyen estándares ni temario oficial.
+
+Tras el lote se ejecutaron inventario.cjs, verificar.cjs y git diff --check. El inventario de estructura no sustituye la revisión individual de contenido.
 
 ## Lote 542 — 29 de octubre
 
