@@ -146331,70 +146331,239 @@
       "id": 3016,
       "bloque": 0,
       "tema": 0,
-      "texto": "Acerca de los puertos del Transmission Control Protocol (TCP), señale la respuesta CORRECTA:",
+      "texto": "Según el registro de puertos de IANA, ¿qué asociación servicio/puerto de destino TCP es correcta?",
       "opciones": [
-        "SSH utiliza el puerto TCP 18.",
-        "Telnet utiliza el puerto TCP 19.",
-        "HTTP utiliza el puerto TCP 88.",
-        "BGP utiliza el puerto TCP 179."
+        "SSH: TCP 18.",
+        "Telnet: TCP 19.",
+        "HTTP: TCP 88.",
+        "BGP: TCP 179."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se contrasta la asociación servicio/puerto con el registro oficial IANA: SSH/TCP 22, Telnet/TCP 23, HTTP/TCP 80 y BGP/TCP 179. Por ello, entre las cuatro afirmaciones, solo la de BGP en TCP 179 es correcta. Los puertos son valores registrados/asignados; no impiden que una implementación configure otro puerto. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), §9.3 TCP/UDP, servicios y puertos; programa oficial A1-109 y A2-IV-13. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia son apoyo, no sustituyen el programa oficial ni las fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-109"
+        ],
+        "A2": [
+          "A2-IV-13"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes» (2026.1), §9.3 TCP/UDP, servicios y puertos; programa oficial A1-109 y A2-IV-13. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 42 «Redes» (2026.1), §9.3 TCP/UDP, servicios y puertos; programa oficial A1-109 y A2-IV-13. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk"
+      },
+      "etiquetas": [
+        "TCP",
+        "puertos",
+        "SSH",
+        "Telnet",
+        "HTTP",
+        "BGP"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.iana.org/assignments/service-names-port-numbers?search=BGP",
+            "referencia": "IANA Service Name and Transport Protocol Port Number Registry, columna TCP: BGP usa el puerto 179; SSH, 22; Telnet, 23; HTTP, 80. Los puertos 18/19/88 de los distractores no corresponden a esos servicios."
+          }
+        ],
+        "observaciones": "Se contrasta la asociación servicio/puerto con el registro oficial IANA: SSH/TCP 22, Telnet/TCP 23, HTTP/TCP 80 y BGP/TCP 179. Por ello, entre las cuatro afirmaciones, solo la de BGP en TCP 179 es correcta. Los puertos son valores registrados/asignados; no impiden que una implementación configure otro puerto. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), §9.3 TCP/UDP, servicios y puertos; programa oficial A1-109 y A2-IV-13. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia son apoyo, no sustituyen el programa oficial ni las fuentes primarias."
+      }
     },
     {
       "id": 3017,
       "bloque": 0,
       "tema": 0,
-      "texto": "Con respecto a la conexión de la fibra monomodo que conecta con la red del operador, señale cuál de las siguientes opciones es CORRECTA:",
+      "texto": "Para conectar una fibra monomodo a un puerto Ethernet de 10 Gb/s de un router, ¿qué combinación es adecuada, suponiendo que el equipo y el alcance sean compatibles?",
       "opciones": [
-        "Para conectarla en el router a 10Gbps debería contar con transceptores ópticos SFP+ 10GBase con conectores LC-Duplex.",
-        "Para conectarla en el router a 40Gbps debería contar con transceptores ópticos SFP 40GBase con conectores FC.",
-        "Para conectarla en el router a 40Gbps debería contar con transceptores ópticos SFP+ 40GBase con conectores ST."
+        "Transceptor SFP+ 10GBASE-LR para fibra monomodo, con conector LC dúplex.",
+        "Transceptor SFP 40GBASE-LR4 con conectores FC.",
+        "Transceptor SFP+ 40GBASE-LR4 con conectores ST."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva la opción 10 Gb/s, pero se precisa como 10GBASE-LR en un transceptor SFP+ compatible con el puerto del router, con conector LC dúplex para fibra monomodo. La selección real depende también de alcance, presupuesto óptico y compatibilidad del equipo. Las opciones de 40 Gb/s son incorrectas: los módulos LR4 de esta familia son QSFP+ y no usan los conectores FC o ST indicados. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), §§2–3 sobre fibra monomodo, medios y cableado estructurado; programa oficial de cableado y medios guiados A1-110/A2-IV-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia son apoyo, no sustituyen el programa oficial ni las fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-110"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes» (2026.1), §§2–3 sobre fibra monomodo, medios y cableado estructurado; programa oficial de cableado y medios guiados A1-110/A2-IV-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 42 «Redes» (2026.1), §§2–3 sobre fibra monomodo, medios y cableado estructurado; programa oficial de cableado y medios guiados A1-110/A2-IV-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk"
+      },
+      "etiquetas": [
+        "fibra monomodo",
+        "SFP+",
+        "10GBASE-LR",
+        "40GBASE-LR4",
+        "LC dúplex"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+            "referencia": "Cisco 10GBASE SFP+ Modules Data Sheet, tabla de cableado y módulos: SFP-10G-LR es un transceptor SFP+ 10GBASE-LR para fibra monomodo (SMF), con conector Dual LC/PC."
+          },
+          {
+            "url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+            "referencia": "Cisco 40GBASE QSFP Modules Data Sheet: 40GBASE-LR4 para SMF es un módulo QSFP+ con interfaz LC dúplex; no es un SFP/SFP+ 40G."
+          }
+        ],
+        "observaciones": "Se conserva la opción 10 Gb/s, pero se precisa como 10GBASE-LR en un transceptor SFP+ compatible con el puerto del router, con conector LC dúplex para fibra monomodo. La selección real depende también de alcance, presupuesto óptico y compatibilidad del equipo. Las opciones de 40 Gb/s son incorrectas: los módulos LR4 de esta familia son QSFP+ y no usan los conectores FC o ST indicados. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), §§2–3 sobre fibra monomodo, medios y cableado estructurado; programa oficial de cableado y medios guiados A1-110/A2-IV-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia son apoyo, no sustituyen el programa oficial ni las fuentes primarias."
+      }
     },
     {
       "id": 3018,
       "bloque": 0,
       "tema": 0,
-      "texto": "La virtualización parcial o paravirtualización usa la técnica de:",
+      "texto": "En la paravirtualización x86 clásica, como la descrita para Xen, ¿qué técnica permite que el hipervisor conserve el nivel de privilegio superior al kernel invitado?",
       "opciones": [
-        "Ring out",
-        "Ring deprivileging",
-        "Virtualización por software",
-        "Emulación"
+        "Ring out: el hipervisor se ejecuta con menos privilegios que el invitado.",
+        "Deprivilegiación del kernel invitado (ring deprivileging): por ejemplo, hipervisor en ring 0 e invitado modificado en ring 1.",
+        "Emulación completa: reproduce cada instrucción y exige que el invitado conserve ring 0.",
+        "Virtualización por software: ejecuta todas las instrucciones del invitado sin cambiar sus privilegios."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se hace explícito que la opción se refiere al mecanismo clásico de paravirtualización x86 ejemplificado por Xen: la deprivilegiación del kernel invitado (ring deprivileging), que ejecuta con menor privilegio que el hipervisor y solicita mediante hipercalls las operaciones privilegiadas. No es una definición universal de toda virtualización parcial ni la única técnica de paravirtualización. Cotejo curricular: ITIC Academy, Bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización» (2026), §§13 y 34–37: arquitectura de hipervisores, máquinas virtuales y virtualización de servidores; programa oficial A1-57/132 y consolidación/virtualización de servidores A2-IV-6. https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia son apoyo, no sustituyen el programa oficial ni las fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-132",
+          "A1-57"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización» (2026), §§13 y 34–37: arquitectura de hipervisores, máquinas virtuales y virtualización de servidores; programa oficial A1-57/132 y consolidación/virtualización de servidores A2-IV-6. https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización» (2026), §§13 y 34–37: arquitectura de hipervisores, máquinas virtuales y virtualización de servidores; programa oficial A1-57/132 y consolidación/virtualización de servidores A2-IV-6. https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk"
+      },
+      "etiquetas": [
+        "paravirtualización",
+        "hipervisor",
+        "anillos de privilegio",
+        "Xen",
+        "deprivilegiación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2003/10/2003-sosp.pdf",
+            "referencia": "Barham et al., Xen and the Art of Virtualization (SOSP 2003), §§2–2.1.2 y tabla 1: paravirtualización presenta una interfaz no idéntica al hardware; el SO invitado se modifica para ejecutarse con menos privilegios que Xen (en x86, invitado en ring 1 e hipervisor en ring 0), mediando las operaciones privilegiadas."
+          }
+        ],
+        "observaciones": "Se hace explícito que la opción se refiere al mecanismo clásico de paravirtualización x86 ejemplificado por Xen: la deprivilegiación del kernel invitado (ring deprivileging), que ejecuta con menor privilegio que el hipervisor y solicita mediante hipercalls las operaciones privilegiadas. No es una definición universal de toda virtualización parcial ni la única técnica de paravirtualización. Cotejo curricular: ITIC Academy, Bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización» (2026), §§13 y 34–37: arquitectura de hipervisores, máquinas virtuales y virtualización de servidores; programa oficial A1-57/132 y consolidación/virtualización de servidores A2-IV-6. https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia son apoyo, no sustituyen el programa oficial ni las fuentes primarias."
+      }
     },
     {
       "id": 3019,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación a los cables de par trenzado UTP y STP, indique cuál de las siguientes afirmaciones es cierta:",
+      "texto": "En el contexto histórico del cableado UTP anterior a las categorías actuales de TIA-568, ¿qué afirmación sobre la categoría 4 es correcta?",
       "opciones": [
-        "Las categorías 1 y 2 de UTP se emplean para transmisión de datos X.25.",
-        "La categoría 4 de UTP especifica cables hasta 20 MHz, se utilizan para voz y datos hasta 16 Mbps.",
-        "El tipo 6 de cable STP emplea 4 pares trenzados de mayor calibre que los de tipo 1.",
-        "Los cables STP, a pesar de su menor inmunidad a las interferencias, son los de mayor implantación en los cableados estructurados."
+        "Las categorías UTP 1 y 2 normalizadas por TIA-568 se empleaban específicamente para transmitir X.25.",
+        "La categoría 4 se caracterizaba hasta 20 MHz y se utilizó históricamente para voz y redes Token Ring de 16 Mb/s.",
+        "El cable STP IBM tipo 6 consta de cuatro pares de calibre mayor que el tipo 1.",
+        "El cable STP tiene por definición menor inmunidad a interferencias que UTP y domina el cableado estructurado moderno."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La opción correcta es cierta en su contexto histórico: la categoría 4 se caracterizó hasta 20 MHz y se utilizó para redes Token Ring de 16 Mb/s. Se añade «históricamente» porque no es una categoría reconocida en las ediciones actuales del conjunto TIA-568. Cat. 1/2 no eran las categorías UTP normalizadas para X.25; STP apantallado no tiene menor inmunidad por definición que UTP, y el tipo IBM 6 no se describe como cable de cuatro pares de mayor calibre que el tipo 1. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), §§2–3 de par trenzado y cableado estructurado. La categoría 4 se identifica solo como antecedente histórico (20 MHz/Token Ring), no como categoría vigente; programa oficial de cableado A1-110/A2-IV-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia son apoyo, no sustituyen el programa oficial ni las fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-110"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes» (2026.1), §§2–3 de par trenzado y cableado estructurado. La categoría 4 se identifica solo como antecedente histórico (20 MHz/Token Ring), no como categoría vigente; programa oficial de cableado A1-110/A2-IV-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 42 «Redes» (2026.1), §§2–3 de par trenzado y cableado estructurado. La categoría 4 se identifica solo como antecedente histórico (20 MHz/Token Ring), no como categoría vigente; programa oficial de cableado A1-110/A2-IV-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk"
+      },
+      "etiquetas": [
+        "cableado estructurado",
+        "UTP",
+        "categoría 4",
+        "Token Ring",
+        "normativa histórica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.ieee802.org/3/z/public/presentations/sep1996/BHgutp_a.pdf",
+            "referencia": "Presentación técnica de PMC-Sierra ante IEEE 802.3z (septiembre de 1996), «EIA/TIA-568 Specs for UTP»: presenta para Category 4 el rango caracterizado de 0,3 a 20 MHz; evidencia técnica histórica de la especificación."
+          },
+          {
+            "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg247883.pdf",
+            "referencia": "IBM Redbooks, Implementation of IBM j-type Ethernet Appliances, tabla 1-1: recoge Category 4 para Token Ring de 16 Mb/s. El manual de instalación de adaptadores Token-Ring archivado bajo el catálogo IBM confirma EIA/TIA-568 Category 4 para anillos de 16 Mb/s: https://ps-2.kev009.com/eprmhtml/eprm0/2055.htm."
+          },
+          {
+            "url": "https://tiaonline.org/standard/tia-568/",
+            "referencia": "TIA-568 Set, página del organismo de normalización: contexto actual del conjunto TIA-568 para cableado estructurado. La categoría 4 es histórica y no debe presentarse como categoría vigente de nuevas instalaciones."
+          }
+        ],
+        "observaciones": "La opción correcta es cierta en su contexto histórico: la categoría 4 se caracterizó hasta 20 MHz y se utilizó para redes Token Ring de 16 Mb/s. Se añade «históricamente» porque no es una categoría reconocida en las ediciones actuales del conjunto TIA-568. Cat. 1/2 no eran las categorías UTP normalizadas para X.25; STP apantallado no tiene menor inmunidad por definición que UTP, y el tipo IBM 6 no se describe como cable de cuatro pares de mayor calibre que el tipo 1. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), §§2–3 de par trenzado y cableado estructurado. La categoría 4 se identifica solo como antecedente histórico (20 MHz/Token Ring), no como categoría vigente; programa oficial de cableado A1-110/A2-IV-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia son apoyo, no sustituyen el programa oficial ni las fuentes primarias."
+      }
     },
     {
       "id": 3020,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes no es un área funcional en el ámbito de la gestión de redes OSI mediante CMIP?",
+      "texto": "¿Cuál de las siguientes no es una de las cinco áreas funcionales de gestión de sistemas OSI definidas en ITU-T X.700?",
       "opciones": [
-        "Fallos",
-        "Seguridad",
-        "Rendimiento",
-        "Control remoto"
+        "Gestión de fallos.",
+        "Gestión de seguridad.",
+        "Gestión del rendimiento.",
+        "Control remoto."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se explicita que «control remoto» no forma parte de las cinco áreas funcionales OSI (FCAPS): fault/fallos, configuration/configuración, accounting/contabilidad, performance/rendimiento y security/seguridad. CMIP es el protocolo de información de gestión común que transporta operaciones de gestión; no constituye la lista de áreas funcionales. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), §§1.2 y 5.4: modelo OSI y áreas funcionales FCAPS; diferencia entre el marco de gestión X.700 y CMIP. Programa oficial OSI y gestión de redes A1-111/118 y A2-II-8/IV-9. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia son apoyo, no sustituyen el programa oficial ni las fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-111",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-II-8",
+          "A2-IV-9"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes» (2026.1), §§1.2 y 5.4: modelo OSI y áreas funcionales FCAPS; diferencia entre el marco de gestión X.700 y CMIP. Programa oficial OSI y gestión de redes A1-111/118 y A2-II-8/IV-9. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 42 «Redes» (2026.1), §§1.2 y 5.4: modelo OSI y áreas funcionales FCAPS; diferencia entre el marco de gestión X.700 y CMIP. Programa oficial OSI y gestión de redes A1-111/118 y A2-II-8/IV-9. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk"
+      },
+      "etiquetas": [
+        "OSI",
+        "CMIP",
+        "X.700",
+        "FCAPS",
+        "gestión de redes"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.700-199209-I%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T X.700 / ISO/IEC 7498-4, §§5.5.2–5.5.6: define las cinco áreas funcionales de gestión OSI: fallos, contabilidad, configuración, rendimiento y seguridad."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.701-199201-S%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T X.701 / ISO/IEC 10040, terminología y marco de gestión de sistemas OSI; identifica CMIP (Common Management Information Protocol) como protocolo de aplicación para intercambiar información de gestión."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-M.3010-199210-S%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T M.3010 (edición histórica), §1.5, confirma las cinco áreas funcionales de gestión definidas por X.700 para TMN."
+          }
+        ],
+        "observaciones": "Se explicita que «control remoto» no forma parte de las cinco áreas funcionales OSI (FCAPS): fault/fallos, configuration/configuración, accounting/contabilidad, performance/rendimiento y security/seguridad. CMIP es el protocolo de información de gestión común que transporta operaciones de gestión; no constituye la lista de áreas funcionales. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), §§1.2 y 5.4: modelo OSI y áreas funcionales FCAPS; diferencia entre el marco de gestión X.700 y CMIP. Programa oficial OSI y gestión de redes A1-111/118 y A2-II-8/IV-9. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia son apoyo, no sustituyen el programa oficial ni las fuentes primarias."
+      }
     },
     {
       "id": 3021,
