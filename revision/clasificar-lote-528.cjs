@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-528.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 2956:{A1:['A1-70'],A2:['A2-III-5'],academy:'ITIC Academy, Bloque 32 «Inteligencia Artificial y Ciencia de Datos» (2026.1), búsqueda y heurísticas de A2 III.5 y fundamentos de IA A1-70. https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk'},
+ 2957:{A1:['A1-70','A1-71'],A2:['A2-III-5'],academy:'ITIC Academy, Bloque 32 (2026.1), IA y ciencia de datos: aprendizaje no supervisado, agrupamiento y modelado de datos. https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk'},
+ 2958:{A1:['A1-70'],A2:['A2-III-5'],academy:'ITIC Academy, Bloque 32 (2026.1), IA simbólica, representación del conocimiento y sistemas expertos. https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk'},
+ 2959:{A1:['A1-65'],A2:['A2-II-12'],academy:'ITIC Academy, Bloque 30 «Tecnologías de Sistemas de la Información» (2026.1), aplicaciones web, plataformas y arquitectura de desarrollo. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk'},
+ 2960:{A1:['A1-27','A1-48','A1-82'],A2:['A2-I-7','A2-I-9','A2-II-13'],academy:'ITIC Academy, Bloque 08 «Protección de Datos» (versión 2026.3, 01/10/2026), LO 3/2018/RGPD/medidas de seguridad, y Bloque 48 «Seguridad en redes y nivel de aplicación» (2026). https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk ; https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk'}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&q.revision&&m);for(const t of [...m.A1,...m.A2])assert.ok(topics.has(t),t);q.revision.observaciones+=` Cotejo curricular: ${m.academy} La clasificación se contrastó con revision/temario-oficial.json y los anexos de las convocatorias A1 BOE-A-2025-25938 y A2 GSI BOE-A-2025-26262; Academy orienta el encuadre, no reemplaza las fuentes oficiales.`;q.clasificacion={...q.clasificacion,A1:m.A1,A2:m.A2,bloque_academia:m.academy,estado:'revisada',nota:`${q.revision.estado}. ${m.academy}`};q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q);}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Clasificación A1/A2 y cotejo de Academy validados para lote 528.');
