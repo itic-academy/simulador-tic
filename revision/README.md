@@ -1,14 +1,28 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 480 (IDs 2711–2715). Acumulado: 2.715 preguntas examinadas individualmente, 2.647 verificadas (561 vigentes, 1.869 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.408 sin revisar individualmente. Hay 2.145 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 481 (IDs 2716–2720). Acumulado: 2.720 preguntas examinadas individualmente, 2.652 verificadas (566 vigentes, 1.869 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.403 sin revisar individualmente. Hay 2.145 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 ## Rectificación de estado de lotes 476–477 — 29 de octubre
 
 Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se habían editado seguían etiquetados como `vigente`: 2692, 2693 y 2694 del lote 476; 2696 y 2699 del lote 477. La causa fue pasar `vigente` de forma explícita al helper, evitando su inferencia automática de `corregida`. Se rectificó únicamente el estado y se dejó el motivo/campos editados en `rectificaciones` de ambos registros. No cambian respuestas ni se suman nuevas preguntas a la revisión. Los contadores se recalcularon con el inventario.
 
-**Estado de publicación:** lote 480, commit `753933bd` en `main`, publicado por GitHub Actions run [40796380104](https://github.com/itic-academy/simulador-tic/actions/runs/40796380104), resultado `success` (29-10-2026 00:48:34 UTC). GitHub Pages responde HTTP 200 y `Last-Modified: Thu, 29 Oct 2026 00:48:27 GMT`, posterior al push. Se deja verificado ese despliegue.
+**Estado de publicación:** lote 481 y esta actualización están aplicados en el checkout; se verificarán el push, la acción de Pages y la versión servida antes de registrar la publicación.
 
 
 
+
+## Lote 481 — 29 de octubre
+
+IDs 2716–2720 revisados individualmente frente al texto consolidado vigente de la Constitución Española, BOE (actualización publicada el 20-05-2026). Se conserva la clave de las cinco preguntas. Se añadieron explicación, fuentes oficiales, clasificación A1/A2 y cotejo de Academy. Registro completo: `cambios-lote-481.json`.
+
+- **2716 — nombramiento del Gobierno:** art. 62.e CE: corresponde al Rey nombrar y separar a sus miembros a propuesta del Presidente del Gobierno. Clave 3 confirmada. A1-1/A2-I.2.
+- **2717 — composición del Gobierno:** art. 98.1 CE: Presidente, Vicepresidentes en su caso, Ministros y demás miembros que establezca la ley. El Rey no lo integra. Clave 3 confirmada. A1-1/A2-I.5.
+- **2718 — iniciativa legislativa:** art. 87.1 CE: corresponde al Gobierno, Congreso y Senado, según Constitución y reglamentos parlamentarios. Es la opción 2. El apartado 2 nombra a las Asambleas autonómicas, no a los plenos municipales; el apartado 3 establece ley orgánica y al menos 500.000 firmas para iniciativa popular, no ley ordinaria.
+- **2719 — propiedad y herencia:** art. 33 CE, capítulo II del título I, sección 2.ª («De los derechos y deberes de los ciudadanos»). Clave 1 confirmada. A1-1/A2-I.1.
+- **2720 — nombramiento y cese de Ministros:** art. 100 CE: nombramiento y separación por el Rey a propuesta del Presidente del Gobierno. Clave 3 confirmada. A1-1/A2-I.5.
+
+Fuentes: [Constitución Española consolidada por el BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 33, 62.e, 87, 98 y 100; [convocatoria oficial A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, tema 1; [convocatoria oficial A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, I.1, I.2, I.3 e I.5. Cotejo curricular individual con ITIC Academy, [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), consultada directamente en Drive.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` se ejecutaron: 12.123 preguntas estructuralmente válidas, 2.720 revisadas individualmente (2.652 verificadas, 68 pendientes), 9.403 aún sin revisión individual. El estado corresponde al banco, no al recuento automático de duplicados.
 
 ## Lote 480 — 29 de octubre
 
