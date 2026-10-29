@@ -1,0 +1,16 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-542.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const radio='https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk',security='https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk',redes='https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk',protocolos='https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk';
+const academy={
+ 3026:{A1:['A1-123'],A2:['A2-IV-15'],note:`ITIC Academy, Bloque 46 «Redes inalámbricas y comunicaciones móviles» (2026.1), §12.2 GPRS: servicio de datos móvil de paquetes, interworking IP y evolución GSM. ${radio}`},
+ 3027:{A1:['A1-128'],A2:[],note:`ITIC Academy, Bloque 22 «Seguridad, ENS y ciberseguridad» (2026.2), §6.8 continuidad y copias de seguridad; el BIA se coteja con NIST SP 800-34. El temario A1 recoge expresamente continuidad en A1-128; no se asigna A2 porque el anexo A2 vigente no contiene un epígrafe específico de continuidad/BIA. https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk`},
+ 3028:{A1:['A1-111'],A2:['A2-II-8'],note:`ITIC Academy, Bloque 43 «Protocolos» (2026), modelo OSI, capas y encaminamiento; se coteja con ITU-T X.200. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk`},
+ 3029:{A1:['A1-108','A1-111','A1-120'],A2:['A2-II-8','A2-IV-10'],note:`ITIC Academy, Bloque 42 «Redes» y Bloque 43 «Protocolos» (2026), redes públicas de transmisión de datos y modelo OSI; referencia técnica confirmada directamente con ITU-T X.25. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk ; https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk`},
+ 3030:{A1:['A1-113'],A2:['A2-IV-10'],note:`ITIC Academy, Bloque 42 «Redes» (2026.1), apartado 113: MPLS, Carrier Ethernet-VPLS y H-VPLS; se precisan U-PE/N-PE con IETF RFC 4664/4762. ${redes}`}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&q.revision&&m);for(const t of [...m.A1,...m.A2])assert.ok(topics.has(t),t);q.revision.observaciones+=` Cotejo curricular: ${m.note} Correspondencias verificadas en revision/temario-oficial.json y anexos I (A1) y IX (A2 GSI) de BOE-A-2025-25938 y BOE-A-2025-26262; el temario académico orienta y no reemplaza la fuente primaria.`;q.clasificacion={...q.clasificacion,A1:m.A1,A2:m.A2,bloque_academia:m.note,estado:'revisada',nota:`${q.revision.estado}. ${m.note}`};q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q);}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');
+console.log('Clasificación A1/A2 y cotejo de materiales de academia registrados para lote 542.');
