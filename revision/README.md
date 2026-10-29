@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 553 (IDs 3081–3085). Acumulado: 3085 preguntas examinadas individualmente, 3013 verificadas (631 vigentes, 2143 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9038 sin revisar individualmente. Hay 2456 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 554 (IDs 3086–3090). Acumulado: 3090 preguntas examinadas individualmente, 3018 verificadas (631 vigentes, 2148 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9033 sin revisar individualmente. Hay 2461 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 554 — 29 de octubre
+
+IDs 3086–3090 revisados individualmente con recomendaciones UIT-T, RFC del IETF, registro IANA, normas IEEE, NIST y ETSI. Se cotejaron las preguntas con los temas oficiales A1/A2 y materiales ITIC Academy disponibles en Drive. El registro [cambios-lote-554.json](cambios-lote-554.json) conserva originales y revisiones completas.
+
+- **3086 — fibras ópticas:** en la comparación general, monomodo suele dar mayor capacidad-distancia por carecer de dispersión modal; no se presenta como un máximo absoluto independiente del equipo y diseño. A1-108; A2-IV-7; Academy Bloque 42.
+- **3087 — autenticación:** identificador/nombre y evidencia de identidad no equivalen al proceso de autenticación digital; se verifica el control de un autenticador ligado a la cuenta. A1-127; A2-IV-12; Academy Bloque 48.
+- **3088 — router y switch:** se distingue la función conceptual: encaminamiento IP entre redes (L3) y puenteado Ethernet/LAN por MAC (L2); los switches multicapa pueden cumplir también funciones L3. A1-110/118; A2-IV-8; Academy Bloque 42.
+- **3089 — ESP:** IANA asigna número de protocolo IP 50 a ESP y 51 a AH; no son puertos TCP/UDP. A1-127/115; A2-IV-12/II-8; Academy Bloques 48/43.
+- **3090 — edge computing:** ejecutar cómputo cerca del usuario o del origen de datos puede reducir latencia y tráfico hacia recursos remotos; se matiza que depende de la arquitectura. A1-55/117; A2-IV-13; Academy Bloque 26 §18.6.
+
+Fuentes primarias: UIT-T [G.652 (08/2024)](https://www.itu.int/epublications/publication/itu-t-g-652-2024-08-characteristics-of-a-single-mode-optical-fibre-and-cable), fibra monomodo, y [G.651.1](https://www.itu.int/rec/T-REC-G.651.1-201811-I/en), multimodo; NIST [SP 800-63B-4](https://csrc.nist.gov/pubs/sp/800/63/B/4/final) y [SP 800-63-4](https://pages.nist.gov/800-63-4/sp800-63.html), autenticación mediante control de autenticadores vinculados a cuenta; IETF [RFC 1812](https://www.rfc-editor.org/rfc/rfc1812.html), reenvío/rutas IP, e IEEE [802.1Q-2022](https://standards.ieee.org/ieee/802.3/802.1Q/10323/), puentes MAC/VLAN; [registro IANA de números de protocolo](https://www.iana.org/assignments/protocol-numbers) (ESP 50, AH 51) e IETF [RFC 4303](https://www.rfc-editor.org/rfc/rfc4303.html); ETSI [Multi-access Edge Computing](https://www.etsi.org/technical-groups/mec/?id=1865) (servicios en el borde, ultra-baja latencia) y [GS MEC 002](https://www.etsi.org/deliver/etsi_gs/MEC/001_099/002/01.01.01_60/gs_MEC002v010101p.pdf); NIST [SP 500-325](https://csrc.nist.gov/pubs/sp/500/325/final), descentralización del cómputo ante escala/latencia.
+
+Cotejo en Drive: [Bloque 42, Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view), fibras, routers/switches, acceso y edge/5G; [Bloque 48, Seguridad en redes](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view), identificación/autenticación, factores, IPsec; [Bloque 43, Protocolos](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view), IPv4/IPv6 e IPsec; [Bloque 26, Hardware/CPD/virtualización](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view), §18.6 edge computing. Clasificación oficial contrastada con [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y revision/temario-oficial.json.
+
+Tras el lote se ejecutaron inventario.cjs, verificar.cjs y git diff --check. El inventario estructural no sustituye a la revisión individual del contenido.
 
 ## Lote 553 — 29 de octubre
 
