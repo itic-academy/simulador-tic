@@ -1,0 +1,43 @@
+const apply=require('./aplicar-lote.cjs');
+const metricGuide='https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html';
+const metricProject='https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A0f07660d-1044-489e-a3be-3a94b80fbb16/METRICA_V3_Gestion_de_Proyectos.pdf';
+const metricSecurity='https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A55f92649-18e3-41cb-9102-0ae424631831/METRICA_V3_Seguridad.pdf';
+const metricQa='https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A6838aec9-835a-4562-bdc3-87a96fd9c743/METRICA_V3_Aseguramiento_de_la_Calidad.pdf';
+const metricConfig='https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A1f321d6d-fb6a-46ed-a369-617c0080c51d/METRICA_V3_Gestion_de_Configuracion.pdf';
+const iso25010='https://www.iso.org/standard/78176.html';
+const estimation='https://biblio.ingenieria.usac.edu.gt/tesis/T10227.pdf';
+const efqm2013='https://www.clubexcelencia.org/system/files/migrated/knowledge/documents/files/guia_de_interpretacion_modelo_efqm_aapp.pdf';
+const efqmCurrent='https://efqm.org/the-efqm-model/';
+const drupal='https://www.drupal.org/about';
+const drupalGuide='https://www.drupal.org/docs/user_guide/en/understanding-drupal.html';
+const records=[
+ [2971,[95],[],['MÉTRICA v3','interfaces','Gestión de Proyectos','Seguridad','Aseguramiento de la Calidad','Gestión de Configuración'],[
+  {url:metricGuide,referencia:'PAe, portal oficial de MÉTRICA v3: describe procesos e interfaces de apoyo de la metodología.'},
+  {url:metricProject,referencia:'PAe, interfaz oficial de Gestión de Proyectos de MÉTRICA v3.'},
+  {url:metricSecurity,referencia:'PAe, interfaz oficial de Seguridad de MÉTRICA v3.'},
+  {url:metricQa,referencia:'PAe, interfaz oficial de Aseguramiento de la Calidad de MÉTRICA v3: el plan y las revisiones de calidad se aplican durante el ciclo de desarrollo y mantenimiento.'},
+  {url:metricConfig,referencia:'PAe, interfaz oficial de Gestión de Configuración (GC) de MÉTRICA v3.'}
+ ],'','Se corrige la lista incompleta: MÉTRICA v3 contempla las interfaces de Gestión de Proyectos, Seguridad, Aseguramiento de la Calidad y Gestión de Configuración. La opción correcta se completa con Gestión de Configuración; las otras opciones omiten interfaces o incorporan «Gestión de Perfiles/Procesos», que no son interfaces de apoyo de MÉTRICA v3.','corregida'],
+ [2972,[96],['III-13'],['garantía de calidad','calidad del software','ISO/IEC 25010:2023','seguridad','confidencialidad','integridad'],[
+  {url:metricQa,referencia:'PAe, MÉTRICA v3, Aseguramiento de la Calidad: el plan proporciona confianza en que el producto satisface los requisitos del sistema y establece revisiones y criterios a lo largo del ciclo de vida.'},
+  {url:iso25010,referencia:'ISO/IEC 25010:2023, ficha oficial: modelo de calidad de producto con nueve características; el alcance incluye especificación/evaluación durante el ciclo de vida y su uso por personal de QA. Security es una característica del modelo.'}
+ ],'','Se convierte en una pregunta comprobable con el modelo vigente ISO/IEC 25010:2023. La afirmación falsa es que la calidad no abarca seguridad: Security es una característica explícita del modelo de calidad del producto, con subcaracterísticas como confidencialidad, integridad, no repudio, trazabilidad de responsabilidad y autenticidad. MÉTRICA v3 también define QA como un plan que da confianza en el cumplimiento de los requisitos del sistema; seguridad no queda excluida por ser tratada además mediante una interfaz específica.','corregida'],
+ [2973,[99],['II-15'],['estimación de software','coste y esfuerzo','modelos históricos','modelos estadísticos','modelos teóricos','modelos compuestos','modelos basados en estándares'],[
+  {url:estimation,referencia:'Ramírez Morales, Edwin G. (2011), Evaluación de modelos de estimación para realizar cotizaciones de desarrollo de software, Universidad de San Carlos de Guatemala, §1.2.2, pp. 4–5: recoge la clasificación en cinco grupos —históricos, estadísticos, teóricos, compuestos y basados en estándares— citando a Pérez (2011).'}
+ ],'','Se elimina la ambigüedad de «una clasificación típica»: hay otras taxonomías válidas (por ejemplo, las que separan modelos estáticos de una o varias variables y modelos dinámicos). El enunciado se limita expresamente a la clasificación en cinco grupos recogida por Ramírez Morales (2011); en esa taxonomía la opción correcta es modelos con base histórica, estadística, teórica, compuestos y basados en estándares. Puntos de función es una técnica de dimensionamiento y no convierte la clasificación en universal.','corregida'],
+ [2974,[103],[],['EFQM','EFQM 2013','agentes facilitadores','liderazgo','estrategia','personas','alianzas y recursos','procesos productos y servicios'],[
+  {url:efqm2013,referencia:'Club Excelencia en Gestión, Documento de Interpretación del Modelo EFQM 2013 para las Administraciones Públicas: enumera los cinco criterios agentes/facilitadores y los cuatro resultados.'},
+  {url:efqmCurrent,referencia:'EFQM, página oficial del modelo vigente: estructura actual en Dirección, Ejecución y Resultados; evita confundir la estructura moderna con el esquema histórico de 2013.'}
+ ],'','Se acota la pregunta a la versión EFQM 2013, porque el modelo actual ya no se organiza con los cinco antiguos criterios agentes. En la versión 2013 eran Liderazgo, Estrategia, Personas, Alianzas y Recursos, y Procesos, Productos y Servicios. El modelo actual consultado en EFQM usa los bloques Dirección, Ejecución y Resultados; por eso no se presenta la lista histórica como vigente.','corregida'],
+ [2975,[104],['II-16'],['CMS','gestor de contenidos','Drupal','Drupal CMS','PHP','Ruby','cPanel'],[
+  {url:drupal,referencia:'Drupal.org, sitio oficial del proyecto: define Drupal como software/plataforma de gestión de contenidos de código abierto.'},
+  {url:drupalGuide,referencia:'Drupal User Guide, documentación oficial: describe qué es un CMS y caracteriza Drupal como CMS flexible y modular.'}
+ ],'','Se confirma Drupal. La documentación oficial del proyecto lo define como software/plataforma CMS de código abierto; PHP y Ruby son lenguajes de programación y cPanel es un panel de administración de hosting. Se mantiene «Drupal» como opción general: Drupal Core y Drupal CMS son productos del mismo ecosistema, ambos relacionados con la gestión de contenidos.','corregida']
+];
+apply({numero:'531',fecha:'2026-10-29',records,edits:{
+ 2971:{texto:'¿Qué conjunto enumera las cuatro interfaces de apoyo de MÉTRICA v3?',opciones:['Gestión de Procesos, Gestión de Perfiles y Aseguramiento de la Calidad.','Gestión de Perfiles, Gestión de Proyectos, Seguridad y Gestión de Configuración.','Gestión de Proyectos, Seguridad, Aseguramiento de la Calidad y Gestión de Configuración.','Gestión de Procesos, Gestión de Configuración, Seguridad y Aseguramiento de la Calidad.'],respuesta_correcta:2},
+ 2972:{texto:'Según el modelo de calidad de producto ISO/IEC 25010:2023, ¿qué afirmación es falsa?',opciones:['La seguridad es una de las características de calidad del producto.','El modelo sirve de referencia para especificar, medir y evaluar propiedades de calidad del producto.','El modelo puede utilizarse durante el ciclo de vida por personal responsable de aseguramiento y control de calidad.','La seguridad queda excluida de la calidad del producto y no puede ser un objetivo de aseguramiento de calidad.'],respuesta_correcta:3},
+ 2973:{texto:'En la clasificación de cinco grupos de modelos de estimación de costes y esfuerzo software recogida por Ramírez Morales (2011), ¿qué grupos se enumeran?',opciones:['Modelos basados en puntos de función, modelos estáticos multivariables y modelos dinámicos multivariables.','Modelos con base histórica, con base estadística, teóricos, compuestos y basados en estándares.','Técnicas Delphi, modelos exponenciales, modelo de Putnam y modelos COCOMO.','Ninguno de los anteriores.'],respuesta_correcta:1},
+ 2974:{texto:'En el modelo EFQM 2013, ¿cuáles eran los cinco criterios agentes o facilitadores?',opciones:['Gestión del personal, recursos, procesos, satisfacción del cliente e impacto en la sociedad.','Liderazgo, Estrategia, Personas, Alianzas y Recursos, y Procesos, Productos y Servicios.','Gestión del personal, recursos, procesos, impacto en la sociedad y resultados empresariales.','Gestión del personal, impacto en la empresa, recursos, alianzas y resultados en el cliente.'],respuesta_correcta:1},
+ 2975:{texto:'¿Cuál de las siguientes opciones es un sistema de gestión de contenidos (CMS) de código abierto?',opciones:['cPanel.','Drupal.','PHP.','Ruby.'],respuesta_correcta:1}
+}});
