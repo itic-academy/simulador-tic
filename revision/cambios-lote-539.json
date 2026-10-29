@@ -1,0 +1,322 @@
+{
+  "fecha": "2026-10-29",
+  "alcance": "IDs 3011–3015; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3011,
+      "original": {
+        "id": 3011,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale cuál de los siguientes mecanismos de encaminamiento adaptativo es distribuido y permite conocer la topología de toda la red:",
+        "opciones": [
+          "Algoritmo por vector de distancias",
+          "Algoritmo de aprendizaje hacia atrás (Backward Learning)",
+          "Algoritmo de inundación y aleatorio",
+          "Algoritmo de estado de enlace"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3011,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En los protocolos distribuidos de encaminamiento dinámico, ¿qué familia permite a los routers de un mismo dominio o área construir una base común que representa su topología?",
+        "opciones": [
+          "Vector de distancias: se intercambian métricas/rutas con routers vecinos, sin una base completa de enlaces.",
+          "Aprendizaje hacia atrás: se infiere por observación de tráfico y no construye una base de estado de enlaces de toda el área.",
+          "Inundación: difunde paquetes sin seleccionar rutas a partir de un mapa de enlaces conocido.",
+          "Estado de enlace: se difunden anuncios de enlaces y cada router calcula rutas sobre la base de topología del dominio o área."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se conserva estado de enlace como respuesta, acotando «toda la topología» al dominio o área de encaminamiento: en OSPF todos los routers de una misma área tienen la misma base de estado de enlace, mientras que la topología de otras áreas no necesariamente es visible con detalle. Los protocolos de vector de distancias intercambian distancias/rutas con vecinos; inundación y aprendizaje hacia atrás no proporcionan el mapa topológico descrito. Cotejo curricular: ITIC Academy, Bloques 42 «Redes» y 43 «Protocolos» (2026.1), sección de OSPF/estado de enlace; programa oficial de encaminamiento A1-108/115 y A2-II-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia sirven de apoyo y no sustituyen el programa oficial ni las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, Bloques 42 «Redes» y 43 «Protocolos» (2026.1), sección de OSPF/estado de enlace; programa oficial de encaminamiento A1-108/115 y A2-II-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloques 42 «Redes» y 43 «Protocolos» (2026.1), sección de OSPF/estado de enlace; programa oficial de encaminamiento A1-108/115 y A2-II-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk"
+        },
+        "etiquetas": [
+          "encaminamiento",
+          "estado de enlace",
+          "OSPF",
+          "LSDB",
+          "topología",
+          "enrutamiento distribuido"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc2328.html",
+              "referencia": "IETF RFC 2328, OSPFv2, §§1.1–2: en un protocolo de estado de enlace cada router del dominio/área mantiene una base que representa la topología conocida, construida con anuncios de estado de enlace; OSPF difunde esos anuncios y calcula rutas localmente."
+            }
+          ],
+          "observaciones": "Se conserva estado de enlace como respuesta, acotando «toda la topología» al dominio o área de encaminamiento: en OSPF todos los routers de una misma área tienen la misma base de estado de enlace, mientras que la topología de otras áreas no necesariamente es visible con detalle. Los protocolos de vector de distancias intercambian distancias/rutas con vecinos; inundación y aprendizaje hacia atrás no proporcionan el mapa topológico descrito. Cotejo curricular: ITIC Academy, Bloques 42 «Redes» y 43 «Protocolos» (2026.1), sección de OSPF/estado de enlace; programa oficial de encaminamiento A1-108/115 y A2-II-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia sirven de apoyo y no sustituyen el programa oficial ni las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 3012,
+      "original": {
+        "id": 3012,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El “Plan” cuyo objetivo es conseguir la continuidad en las funciones estratégicas de una organización desempeñadas en sus instalaciones corporativas se denomina:",
+        "opciones": [
+          "Plan de continuidad de operaciones.",
+          "Plan de continuidad de negocio.",
+          "Plan de contingencia.",
+          "Plan de emergencia."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3012,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué plan busca sostener las funciones esenciales o estratégicas de una organización durante una interrupción grave de sus operaciones?",
+        "opciones": [
+          "Plan de continuidad de operaciones (COOP).",
+          "Plan de continuidad del negocio (BCP), que aborda la continuidad más amplia de procesos de negocio.",
+          "Plan de contingencia o recuperación de TI, centrado en sistemas y recursos tecnológicos.",
+          "Plan de emergencia, centrado en la respuesta inmediata al incidente."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se reformula el enunciado para distinguir los planes por objetivo, no por ubicación física ambigua. Un COOP (Plan de Continuidad de Operaciones) sostiene las funciones esenciales/estratégicas durante una interrupción —con procedimientos para operar temporalmente desde una ubicación alternativa cuando proceda—. El BCP cubre la continuidad de procesos de negocio en sentido más amplio; el plan de contingencia/recuperación de TI se centra en sistemas y recursos TIC, y el de emergencia en la respuesta inmediata. Cotejo curricular: ITIC Academy, «Tema 038 - Auditoría 2025 v2», apartado que distingue BCP, Plan de Continuidad de Operaciones (COOP) y contingencia de TI; programa oficial A1-128 y recuperación ante desastres A2-IV-6. El concepto legal/técnico se contrasta con NIST. https://drive.google.com/file/d/1ZhZq0-ZuXcGkrz_YGxr8RTYvjeU4V2o_/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia sirven de apoyo y no sustituyen el programa oficial ni las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-128"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": "ITIC Academy, «Tema 038 - Auditoría 2025 v2», apartado que distingue BCP, Plan de Continuidad de Operaciones (COOP) y contingencia de TI; programa oficial A1-128 y recuperación ante desastres A2-IV-6. El concepto legal/técnico se contrasta con NIST. https://drive.google.com/file/d/1ZhZq0-ZuXcGkrz_YGxr8RTYvjeU4V2o_/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, «Tema 038 - Auditoría 2025 v2», apartado que distingue BCP, Plan de Continuidad de Operaciones (COOP) y contingencia de TI; programa oficial A1-128 y recuperación ante desastres A2-IV-6. El concepto legal/técnico se contrasta con NIST. https://drive.google.com/file/d/1ZhZq0-ZuXcGkrz_YGxr8RTYvjeU4V2o_/view?usp=drivesdk"
+        },
+        "etiquetas": [
+          "continuidad de operaciones",
+          "COOP",
+          "funciones esenciales",
+          "continuidad del negocio",
+          "continuidad operativa"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/glossary/term/continuity_of_operations_plan",
+              "referencia": "NIST CSRC Glossary, Continuity of Operations Plan: procedimiento predeterminado para sostener las funciones esenciales de misión de una organización ante un desastre, con continuidad temporal y retorno posterior a la operación normal."
+            },
+            {
+              "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+              "referencia": "NIST SP 800-34 Rev. 1, §2 y tabla de planes: COOP sostiene funciones esenciales (mission essential functions), normalmente desde un emplazamiento alternativo; BCP mantiene procesos de negocio más amplios durante la recuperación."
+            }
+          ],
+          "observaciones": "Se reformula el enunciado para distinguir los planes por objetivo, no por ubicación física ambigua. Un COOP (Plan de Continuidad de Operaciones) sostiene las funciones esenciales/estratégicas durante una interrupción —con procedimientos para operar temporalmente desde una ubicación alternativa cuando proceda—. El BCP cubre la continuidad de procesos de negocio en sentido más amplio; el plan de contingencia/recuperación de TI se centra en sistemas y recursos TIC, y el de emergencia en la respuesta inmediata. Cotejo curricular: ITIC Academy, «Tema 038 - Auditoría 2025 v2», apartado que distingue BCP, Plan de Continuidad de Operaciones (COOP) y contingencia de TI; programa oficial A1-128 y recuperación ante desastres A2-IV-6. El concepto legal/técnico se contrasta con NIST. https://drive.google.com/file/d/1ZhZq0-ZuXcGkrz_YGxr8RTYvjeU4V2o_/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia sirven de apoyo y no sustituyen el programa oficial ni las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 3013,
+      "original": {
+        "id": 3013,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El servicio de DNS (Domain Name System) es utilizado para la resolución de nombres en Internet y está formado por un conjunto de servidores DNS estructurados jerárquicamente, ¿cómo se denominan los servidores que resuelven zonas raíz?",
+        "opciones": [
+          "Principal Name Servers",
+          "Root servers",
+          "Authorizative Name Servers",
+          "Delegated Name Servers"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3013,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denominan los servidores autoritativos que sirven la zona raíz del DNS?",
+        "opciones": [
+          "Servidores de nombres primarios: expresión que puede designar el maestro de una zona concreta, no específicamente la raíz.",
+          "Servidores raíz (root servers).",
+          "Servidores autoritativos: categoría general aplicable a servidores de cualquier zona.",
+          "Servidores delegados: servidores de zonas delegadas, no el conjunto que sirve la zona raíz."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se precisa que los root servers son servidores autoritativos que sirven la zona raíz y devuelven respuestas o referencias para continuar la resolución; no son un nivel genérico de servidores autoritativos de cualquier zona. Se corrige además la errata inglesa «Authorizative» en el distractor, sin alterar el concepto. La cifra 13 se refiere a identidades lógicas nombradas A–M, no al número de máquinas físicas: cada identidad se despliega en múltiples instancias anycast. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), apartado DNS: zona raíz, autoridades nombradas A–M y anycast; correspondencia oficial A1-109/A2-IV-13. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia sirven de apoyo y no sustituyen el programa oficial ni las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-109"
+          ],
+          "A2": [
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 42 «Redes» (2026.1), apartado DNS: zona raíz, autoridades nombradas A–M y anycast; correspondencia oficial A1-109/A2-IV-13. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 42 «Redes» (2026.1), apartado DNS: zona raíz, autoridades nombradas A–M y anycast; correspondencia oficial A1-109/A2-IV-13. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk"
+        },
+        "etiquetas": [
+          "DNS",
+          "zona raíz",
+          "root servers",
+          "servidores raíz",
+          "IANA"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://www.iana.org/domains/root/servers",
+              "referencia": "IANA Root Name Servers: los servidores raíz son los servidores autoritativos que sirven la zona raíz DNS; el modelo presenta 13 autoridades nombradas (A–M) con numerosas instancias anycast."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1034.html",
+              "referencia": "IETF RFC 1034, §§4 y 5.3: explica las zonas, los servidores de nombres autoritativos y el uso de referencias por los resolutores; la raíz es el origen jerárquico del árbol DNS."
+            }
+          ],
+          "observaciones": "Se precisa que los root servers son servidores autoritativos que sirven la zona raíz y devuelven respuestas o referencias para continuar la resolución; no son un nivel genérico de servidores autoritativos de cualquier zona. Se corrige además la errata inglesa «Authorizative» en el distractor, sin alterar el concepto. La cifra 13 se refiere a identidades lógicas nombradas A–M, no al número de máquinas físicas: cada identidad se despliega en múltiples instancias anycast. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), apartado DNS: zona raíz, autoridades nombradas A–M y anycast; correspondencia oficial A1-109/A2-IV-13. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia sirven de apoyo y no sustituyen el programa oficial ni las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 3014,
+      "original": {
+        "id": 3014,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La capa de adaptación de ATM (AAL o ATM Adaptation Layer) comúnmente utilizada para la transmisión de datagramas IP sobre redes ATM es:",
+        "opciones": [
+          "AAL 5.",
+          "AAL 1.",
+          "AAL 3/4.",
+          "AAL 2."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3014,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo clásico de transmisión de datagramas IP sobre redes ATM, definido por RFC 2225, ¿qué capa de adaptación ATM se utiliza?",
+        "opciones": [
+          "AAL5.",
+          "AAL1.",
+          "AAL3/4.",
+          "AAL2."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se limita la pregunta al modelo clásico de IP sobre ATM descrito por RFC 2225. En ese caso los datagramas IP y ATMARP se transportan sobre AAL5. Las demás capas de adaptación ATM tienen usos distintos; no se presenta AAL5 como única adaptación posible para cualquier servicio ATM. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), apartado de redes de transporte/agregación ATM y AAL5 para IP sobre ATM, cotejado con RFC 2225; A1-113/A2-IV-10. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia sirven de apoyo y no sustituyen el programa oficial ni las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-113"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 42 «Redes» (2026.1), apartado de redes de transporte/agregación ATM y AAL5 para IP sobre ATM, cotejado con RFC 2225; A1-113/A2-IV-10. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 42 «Redes» (2026.1), apartado de redes de transporte/agregación ATM y AAL5 para IP sobre ATM, cotejado con RFC 2225; A1-113/A2-IV-10. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk"
+        },
+        "etiquetas": [
+          "ATM",
+          "AAL5",
+          "IP sobre ATM",
+          "datagramas IP",
+          "RFC 2225"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc2225.html",
+              "referencia": "IETF RFC 2225, Classical IP and ARP over ATM, §4: especifica transmitir datagramas IP y peticiones/respuestas ATMARP sobre AAL5."
+            }
+          ],
+          "observaciones": "Se limita la pregunta al modelo clásico de IP sobre ATM descrito por RFC 2225. En ese caso los datagramas IP y ATMARP se transportan sobre AAL5. Las demás capas de adaptación ATM tienen usos distintos; no se presenta AAL5 como única adaptación posible para cualquier servicio ATM. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), apartado de redes de transporte/agregación ATM y AAL5 para IP sobre ATM, cotejado con RFC 2225; A1-113/A2-IV-10. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia sirven de apoyo y no sustituyen el programa oficial ni las fuentes primarias."
+        }
+      }
+    },
+    {
+      "id": 3015,
+      "original": {
+        "id": 3015,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿A qué estándar se refiere WirelessMan-Advanced?",
+        "opciones": [
+          "802.16m",
+          "802.16e",
+          "802.16k",
+          "802.16-2009"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3015,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué especificación IEEE se conoce como la interfaz radio WirelessMAN-Advanced, asociada a la familia WiMAX e incorporada al marco IMT-Advanced?",
+        "opciones": [
+          "IEEE 802.16m (publicada como 802.16m-2011).",
+          "IEEE 802.16e.",
+          "IEEE 802.16k.",
+          "La edición base IEEE 802.16-2009, sin la enmienda Advanced."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se identifica WirelessMAN-Advanced con la interfaz IEEE 802.16m (publicada como IEEE Std 802.16m-2011), y no con 802.16e (WiMAX móvil previo), 802.16k (puenteo de redes) ni la edición base 802.16-2009. Se conserva la referencia histórica del examen y se aclara la designación. Cotejo curricular: ITIC Academy, Bloque 46 «Redes inalámbricas» (2026.1), apartado WiMAX/IEEE 802.16 y WirelessMAN-Advanced; encuadre oficial en infraestructura de acceso y comunicaciones móviles A1-108/123 y A2-IV-10/15. https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia sirven de apoyo y no sustituyen el programa oficial ni las fuentes primarias.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-123"
+          ],
+          "A2": [
+            "A2-IV-10",
+            "A2-IV-15"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 46 «Redes inalámbricas» (2026.1), apartado WiMAX/IEEE 802.16 y WirelessMAN-Advanced; encuadre oficial en infraestructura de acceso y comunicaciones móviles A1-108/123 y A2-IV-10/15. https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 46 «Redes inalámbricas» (2026.1), apartado WiMAX/IEEE 802.16 y WirelessMAN-Advanced; encuadre oficial en infraestructura de acceso y comunicaciones móviles A1-108/123 y A2-IV-10/15. https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk"
+        },
+        "etiquetas": [
+          "WirelessMAN-Advanced",
+          "IEEE 802.16m",
+          "WiMAX",
+          "IMT-Advanced",
+          "acceso inalámbrico de banda ancha"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://ieee802.org/16/pubs/IEEE80216m.html",
+              "referencia": "IEEE 802.16 Working Group, IEEE Std 802.16m publication record: identifica IEEE 802.16m-2011 como Advanced Air Interface (WirelessMAN-Advanced), enmienda de IEEE 802.16-2009."
+            },
+            {
+              "url": "https://www.itu.int/rec/R-REC-M.2012/en",
+              "referencia": "ITU-R Recommendation M.2012, Annex 2: contiene la especificación de la interfaz radio WirelessMAN-Advanced como una de las tecnologías IMT-Advanced."
+            }
+          ],
+          "observaciones": "Se identifica WirelessMAN-Advanced con la interfaz IEEE 802.16m (publicada como IEEE Std 802.16m-2011), y no con 802.16e (WiMAX móvil previo), 802.16k (puenteo de redes) ni la edición base 802.16-2009. Se conserva la referencia histórica del examen y se aclara la designación. Cotejo curricular: ITIC Academy, Bloque 46 «Redes inalámbricas» (2026.1), apartado WiMAX/IEEE 802.16 y WirelessMAN-Advanced; encuadre oficial en infraestructura de acceso y comunicaciones móviles A1-108/123 y A2-IV-10/15. https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y los anexos I (A1) y IX (A2 GSI) de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262; los apuntes de academia sirven de apoyo y no sustituyen el programa oficial ni las fuentes primarias."
+        }
+      }
+    }
+  ]
+}
