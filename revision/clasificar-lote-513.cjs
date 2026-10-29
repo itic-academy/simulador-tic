@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-513.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+  2881:{A1:['A1-11'],A2:[],academy:'ITIC Academy, Bloque 5 Contratación, Presupuestos y Compra TIC 2026.2: https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk. El índice incluye tramitación ordinaria, urgente y de emergencia; mapa curricular, no fuente legal.'},
+  2882:{A1:['A1-118'],A2:['A2-IV-8'],academy:'ITIC Academy, Bloque 42 Redes 2026.1: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk. Incluye redes LAN y métodos de acceso; CSMA/CD half-duplex queda señalado como contexto histórico, no como modo usual en Ethernet conmutado actual.'},
+  2883:{A1:['A1-67'],A2:['A2-II-3'],academy:'ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información 2026.1: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. El programa incluye entorno de desarrollo Java y lenguajes/paradigmas; la regla formal se verifica en JLS.'},
+  2884:{A1:['A1-108'],A2:['A2-IV-15'],academy:'ITIC Academy, Bloque 43 Protocolos 2026: https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk. El material incluye LTE/5G y comunicaciones móviles; se usa como mapa de estudio y la interfaz se comprueba en 3GPP/ETSI.'},
+  2885:{A1:['A1-47','A1-53'],A2:['A2-II-10','A2-IV-3'],academy:'ITIC Academy, Bloque 22 Seguridad, ENS y Ciberseguridad 2026: https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk (apartado 1.5 Gestión de riesgos y MAGERIT); y Bloque 26 Hardware, almacenamiento y virtualización 2026: https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk. Ambos se cotejan como mapa curricular, no como fuente primaria.'}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&q.revision&&m);for(const id of [...m.A1,...m.A2])assert.ok(topics.has(id),`Tema no oficial ${id}`);q.revision.observaciones+=` Cotejo curricular: ${m.academy} La academia se usa como mapa de estudio, no como autoridad legal o técnica.`;q.clasificacion={...q.clasificacion,A1:m.A1,A2:m.A2,bloque_academia:m.academy,estado:'revisada',nota:`${q.revision.estado}. ${m.academy}`};q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');
+console.log('Clasificación A1/A2 cotejada en temario-oficial.json y programas Academy para los cinco registros.');
