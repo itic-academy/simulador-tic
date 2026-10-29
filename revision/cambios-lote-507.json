@@ -1,0 +1,315 @@
+{
+  "fecha": "2026-10-29",
+  "alcance": "IDs 2851–2855; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 2851,
+      "original": {
+        "id": 2851,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la opción correcta respecto al protocolo Transport Layer Security (TLS):",
+        "opciones": [
+          "Está en proceso de sustitución por el protocolo Secure Sockets Layer (SSL)",
+          "Emplea criptografía simétrica para autenticar a las partes, y criptografía asimétrica para el flujo de datos entre ellas",
+          "Utiliza el protocolo IPSec para el intercambio de información en el nivel de red",
+          "Se emplea sobre la capa de transporte para cifrar los datos de protocolos del nivel de aplicación"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2851,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En TLS 1.3 sobre TCP, ¿qué afirmación describe correctamente la protección de los datos de aplicación?",
+        "opciones": [
+          "SSL está sustituyendo a TLS como protocolo seguro actual.",
+          "TLS emplea siempre criptografía simétrica para autenticar y criptografía asimétrica para cifrar los datos de aplicación.",
+          "TLS utiliza IPsec para intercambiar información en la capa de red.",
+          "El handshake negocia parámetros, autentica a las partes y establece claves de tráfico; el protocolo de registros protege con ellas los datos de aplicación."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se precisa el alcance como TLS 1.3 sobre TCP: SSL no sustituye TLS; TLS no usa IPsec para protección de red; y no cabe afirmar que siempre se use criptografía asimétrica para autenticar porque existen modos PSK. El handshake negocia y deriva claves de tráfico, y el record protocol protege los datos de aplicación con ellas. Cotejo curricular: ITIC Academy, Bloque 48 Seguridad en Redes y Aplicación 2026.1, §8.2 TLS/HTTPS; se utiliza como mapa curricular, no como autoridad normativa. Cotejo curricular: ITIC Academy, Bloque 48 Seguridad en Redes y Aplicación 2026.1, §8.2 TLS/HTTPS. La academia se usa como mapa de estudio, no como autoridad para establecer la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-79",
+            "A1-125"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 48 Seguridad en Redes y Aplicación 2026.1, §8.2 TLS/HTTPS.",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 48 Seguridad en Redes y Aplicación 2026.1, §8.2 TLS/HTTPS."
+        },
+        "etiquetas": [
+          "TLS",
+          "TLS 1.3",
+          "criptografía",
+          "seguridad de redes",
+          "protocolos seguros"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+              "referencia": "RFC 8446, §§1, 4, 5 y 6: TLS 1.3 opera sobre un transporte fiable y ordenado; el handshake negocia parámetros, autentica (certificado o PSK) y establece claves; el record protocol protege los datos de aplicación con claves de tráfico y AEAD."
+            }
+          ],
+          "observaciones": "Se precisa el alcance como TLS 1.3 sobre TCP: SSL no sustituye TLS; TLS no usa IPsec para protección de red; y no cabe afirmar que siempre se use criptografía asimétrica para autenticar porque existen modos PSK. El handshake negocia y deriva claves de tráfico, y el record protocol protege los datos de aplicación con ellas. Cotejo curricular: ITIC Academy, Bloque 48 Seguridad en Redes y Aplicación 2026.1, §8.2 TLS/HTTPS; se utiliza como mapa curricular, no como autoridad normativa. Cotejo curricular: ITIC Academy, Bloque 48 Seguridad en Redes y Aplicación 2026.1, §8.2 TLS/HTTPS. La academia se usa como mapa de estudio, no como autoridad para establecer la respuesta."
+        }
+      }
+    },
+    {
+      "id": 2852,
+      "original": {
+        "id": 2852,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En referencia al direccionamiento IPv6 definido en el RFC 4291, indique cuál de los apartados siguientes no se corresponde con un tipo de direcciones en IPv6:",
+        "opciones": [
+          "Unicast.",
+          "Multicast.",
+          "Anycast.",
+          "Broadcast."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2852,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el RFC 4291, ¿cuál de las siguientes opciones no es un tipo de dirección IPv6?",
+        "opciones": [
+          "Unicast.",
+          "Multicast.",
+          "Anycast.",
+          "Broadcast."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se mantiene la respuesta broadcast, pero se formula como afirmación explícita del RFC 4291: las clases son unicast, anycast y multicast, y no existe broadcast en IPv6; las funciones equivalentes se resuelven con multicast. Cotejo curricular: ITIC Academy, Bloque 43 Protocolos 2026.1, IPv4/IPv6; mapa curricular, no fuente de autoridad. Cotejo curricular: ITIC Academy, Bloque 43 Protocolos 2026.1, IPv4/IPv6. La academia se usa como mapa de estudio, no como autoridad para establecer la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 43 Protocolos 2026.1, IPv4/IPv6.",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 43 Protocolos 2026.1, IPv4/IPv6."
+        },
+        "etiquetas": [
+          "IPv6",
+          "direccionamiento",
+          "unicast",
+          "multicast",
+          "anycast"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+              "referencia": "RFC 4291, §2: IPv6 define direcciones unicast, anycast y multicast; no define broadcast, cuya funcionalidad se realiza mediante multicast."
+            }
+          ],
+          "observaciones": "Se mantiene la respuesta broadcast, pero se formula como afirmación explícita del RFC 4291: las clases son unicast, anycast y multicast, y no existe broadcast en IPv6; las funciones equivalentes se resuelven con multicast. Cotejo curricular: ITIC Academy, Bloque 43 Protocolos 2026.1, IPv4/IPv6; mapa curricular, no fuente de autoridad. Cotejo curricular: ITIC Academy, Bloque 43 Protocolos 2026.1, IPv4/IPv6. La academia se usa como mapa de estudio, no como autoridad para establecer la respuesta."
+        }
+      }
+    },
+    {
+      "id": 2853,
+      "original": {
+        "id": 2853,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la metodología ITIL, ¿cuál es la definición de cambio?",
+        "opciones": [
+          "Hacer que servicios y funciones nuevos y modificados estén disponibles para su uso",
+          "Asegurar la disponibilidad de información precisa y fiable sobre la configuración de los servicios",
+          "Mover hardware, software o cualquier otro componente nuevo o modificado a entornos en vivo",
+          "Añadir, modificar o eliminar cualquier cosa que pueda tener un efecto directo o indirecto en los serv"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2853,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el glosario de ITIL 4, ¿qué se entiende por cambio (change)?",
+        "opciones": [
+          "La puesta a disposición para uso de un servicio o función nuevo o modificado.",
+          "La garantía de que la información de configuración sea fiable y exacta.",
+          "El traslado de componentes a entornos que permiten su uso.",
+          "La adición, modificación o retirada de cualquier elemento que pueda afectar directa o indirectamente a los servicios."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La pregunta original no indicaba versión y la definición de cambio corresponde al glosario de ITIL 4. Se explicita “según ITIL 4” y se completa la definición oficial: adición, modificación o retirada de cualquier elemento que pueda afectar directa o indirectamente a los servicios. Los distractores se distinguen de release, gestión de configuración y deployment. PeopleCert ha iniciado la transición a ITIL Version 5 y mantiene ITIL 4 disponible en paralelo; por ello el concepto se conserva con versión identificada, sin presentarlo como definición atemporal o universal. Cotejo curricular: ITIC Academy, Bloque 41 ITIL y COBIT 2026.1, conceptos ITIL 4/V5 y control del cambio; mapa curricular, no autoridad para la definición. Cotejo curricular: ITIC Academy, Bloque 41 ITIL y COBIT 2026.1, ITIL 4/Version 5 y gestión del cambio. La academia se usa como mapa de estudio, no como autoridad para establecer la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-106"
+          ],
+          "A2": [
+            "A2-IV-4"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 41 ITIL y COBIT 2026.1, ITIL 4/Version 5 y gestión del cambio.",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 41 ITIL y COBIT 2026.1, ITIL 4/Version 5 y gestión del cambio."
+        },
+        "etiquetas": [
+          "ITIL",
+          "ITIL 4",
+          "gestión de cambios",
+          "gestión de servicios"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://www.peoplecert.org/help-and-support/faq-itil",
+              "referencia": "PeopleCert, FAQ oficial de ITIL: documenta la transición a ITIL (Version 5) y la disponibilidad paralela de ITIL 4; el concepto preguntado se identifica expresamente como la definición de ITIL 4 Foundation."
+            },
+            {
+              "url": "https://www.peoplecert.org/Partners/support/Articles/learning-resources-updates/_Local/official-training-material-updates",
+              "referencia": "PeopleCert, actualizaciones oficiales de materiales formativos ITIL: fuente primaria para las versiones y materiales publicados por el titular del esquema."
+            }
+          ],
+          "observaciones": "La pregunta original no indicaba versión y la definición de cambio corresponde al glosario de ITIL 4. Se explicita “según ITIL 4” y se completa la definición oficial: adición, modificación o retirada de cualquier elemento que pueda afectar directa o indirectamente a los servicios. Los distractores se distinguen de release, gestión de configuración y deployment. PeopleCert ha iniciado la transición a ITIL Version 5 y mantiene ITIL 4 disponible en paralelo; por ello el concepto se conserva con versión identificada, sin presentarlo como definición atemporal o universal. Cotejo curricular: ITIC Academy, Bloque 41 ITIL y COBIT 2026.1, conceptos ITIL 4/V5 y control del cambio; mapa curricular, no autoridad para la definición. Cotejo curricular: ITIC Academy, Bloque 41 ITIL y COBIT 2026.1, ITIL 4/Version 5 y gestión del cambio. La academia se usa como mapa de estudio, no como autoridad para establecer la respuesta."
+        }
+      }
+    },
+    {
+      "id": 2854,
+      "original": {
+        "id": 2854,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El lenguaje de programación JavaScript:",
+        "opciones": [
+          "Es un dialecto del lenguaje de programación Java.",
+          "Es un dialecto del lenguaje Python.",
+          "Es un dialecto del lenguaje ECMAScript.",
+          "Es un dialecto del lenguaje C++."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2854,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación describe correctamente la relación entre JavaScript y ECMAScript?",
+        "opciones": [
+          "ECMA-262 especifica ECMAScript, el lenguaje estandarizado que implementan los motores de JavaScript.",
+          "JavaScript es un dialecto del lenguaje Java.",
+          "ECMAScript es un dialecto de Python.",
+          "ECMAScript es una biblioteca de C++ para crear páginas web."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La frase “JavaScript es un dialecto de ECMAScript” era imprecisa y simplificaba la relación entre el nombre histórico y el estándar. Se sustituye por una proposición inequívoca: ECMA-262 especifica ECMAScript, estándar implementado por los motores de JavaScript. Cotejo curricular: ITIC Academy, Bloque 30 Tecnologías de los Sistemas de Información 2026.1, §2.4 JavaScript y ECMAScript 2026; mapa curricular, no fuente normativa. Cotejo curricular: ITIC Academy, Bloque 30 Tecnologías de los Sistemas de Información 2026.1, §2.4 JavaScript y ECMAScript 2026. La academia se usa como mapa de estudio, no como autoridad para establecer la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-65"
+          ],
+          "A2": [
+            "A2-II-3",
+            "A2-II-9"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 30 Tecnologías de los Sistemas de Información 2026.1, §2.4 JavaScript y ECMAScript 2026.",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 30 Tecnologías de los Sistemas de Información 2026.1, §2.4 JavaScript y ECMAScript 2026."
+        },
+        "etiquetas": [
+          "JavaScript",
+          "ECMAScript",
+          "ECMA-262",
+          "lenguajes de programación",
+          "lenguajes de script"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://ecma-international.org/publications-and-standards/standards/ecma-262/",
+              "referencia": "Ecma International, página oficial ECMA-262: identifica ECMAScript 2026, 17.ª edición, publicada en junio de 2026, como estándar del lenguaje."
+            },
+            {
+              "url": "https://262.ecma-international.org/2026/",
+              "referencia": "ECMA-262 edición 17 (2026), texto normativo: especifica ECMAScript; describe JavaScript (Netscape) y JScript como tecnologías originarias relacionadas con el lenguaje estandarizado."
+            }
+          ],
+          "observaciones": "La frase “JavaScript es un dialecto de ECMAScript” era imprecisa y simplificaba la relación entre el nombre histórico y el estándar. Se sustituye por una proposición inequívoca: ECMA-262 especifica ECMAScript, estándar implementado por los motores de JavaScript. Cotejo curricular: ITIC Academy, Bloque 30 Tecnologías de los Sistemas de Información 2026.1, §2.4 JavaScript y ECMAScript 2026; mapa curricular, no fuente normativa. Cotejo curricular: ITIC Academy, Bloque 30 Tecnologías de los Sistemas de Información 2026.1, §2.4 JavaScript y ECMAScript 2026. La academia se usa como mapa de estudio, no como autoridad para establecer la respuesta."
+        }
+      }
+    },
+    {
+      "id": 2855,
+      "original": {
+        "id": 2855,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el diseño estructurado de sistemas ¿Cuáles son los elementos principales de un diagrama de estructura?",
+        "opciones": [
+          "Atributos, entidades, relaciones y flujos de caja.",
+          "Módulos, entidades y cajas operacionales.",
+          "Entidades, conexiones entre entidades y flujos de módulos.",
+          "Módulos, conexiones entre los módulos y comunicaciones entre los módulos."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 2855,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En diseño estructurado, ¿qué representa un diagrama de estructura (structure chart)?",
+        "opciones": [
+          "Entidades, relaciones y flujos de caja de un sistema de información.",
+          "Entidades externas, procesos y flujos de datos, sin representar la descomposición modular.",
+          "La jerarquía de módulos, sus relaciones de invocación y los datos o señales de control intercambiados entre ellos.",
+          "La secuencia temporal de instrucciones y decisiones de un algoritmo."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se precisa qué representa un diagrama de estructura: jerarquía de módulos, relaciones de invocación y datos/señales de control intercambiados por interfaces. Se separa de diagramas entidad-relación, de flujo de datos y de flujo de control, evitando la opción original vaga sobre “comunicación”. Cotejo curricular: ITIC Academy, Bloque 38 Análisis, Diseño y Construcción de SI 2026.1, §5.3 diagramas de estructura de Constantine; se usa como mapa curricular, no como fuente técnica primaria. Cotejo curricular: ITIC Academy, Bloque 38 Análisis, Diseño y Construcción de SI 2026.1, §5.3 diagramas de estructura de Constantine. La academia se usa como mapa de estudio, no como autoridad para establecer la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-93"
+          ],
+          "A2": [
+            "A2-III-2"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 38 Análisis, Diseño y Construcción de SI 2026.1, §5.3 diagramas de estructura de Constantine.",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 38 Análisis, Diseño y Construcción de SI 2026.1, §5.3 diagramas de estructura de Constantine."
+        },
+        "etiquetas": [
+          "diseño estructurado",
+          "diagrama de estructura",
+          "módulos",
+          "invocaciones",
+          "acoplamiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://vtda.org/books/Computing/Programming/StructuredDesign_EdwardYourdonLarryConstantine.pdf",
+              "referencia": "Yourdon y Constantine, Structured Design: los structure charts representan módulos como nodos y las referencias/llamadas entre módulos mediante arcos; la notación permite expresar datos y control intercambiados entre módulos."
+            }
+          ],
+          "observaciones": "Se precisa qué representa un diagrama de estructura: jerarquía de módulos, relaciones de invocación y datos/señales de control intercambiados por interfaces. Se separa de diagramas entidad-relación, de flujo de datos y de flujo de control, evitando la opción original vaga sobre “comunicación”. Cotejo curricular: ITIC Academy, Bloque 38 Análisis, Diseño y Construcción de SI 2026.1, §5.3 diagramas de estructura de Constantine; se usa como mapa curricular, no como fuente técnica primaria. Cotejo curricular: ITIC Academy, Bloque 38 Análisis, Diseño y Construcción de SI 2026.1, §5.3 diagramas de estructura de Constantine. La academia se usa como mapa de estudio, no como autoridad para establecer la respuesta."
+        }
+      }
+    }
+  ]
+}
