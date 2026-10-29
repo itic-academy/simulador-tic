@@ -8,11 +8,24 @@ Al cotejar las etiquetas con los epígrafes oficiales del anexo IX A2 GSI se det
 
 Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se habían editado seguían etiquetados como `vigente`: 2692, 2693 y 2694 del lote 476; 2696 y 2699 del lote 477. La causa fue pasar `vigente` de forma explícita al helper, evitando su inferencia automática de `corregida`. Se rectificó únicamente el estado y se dejó el motivo/campos editados en `rectificaciones` de ambos registros. No cambian respuestas ni se suman nuevas preguntas a la revisión. Los contadores se recalcularon con el inventario.
 
-**Estado de publicación:** el último despliegue verificado es el commit `c091ebd` en `main`; GitHub Actions run [40797639368](https://github.com/itic-academy/simulador-tic/actions/runs/40797639368) completó todos los jobs con `success` el 29-10-2026 a las 01:00:39 UTC y Pages respondió HTTP 200 con `Last-Modified: Thu, 29 Oct 2026 01:00:33 GMT`. El lote 483 y las rectificaciones de prosa/etiquetas que se describen a continuación aún se comprobarán tras publicarse.
+**Estado de publicación:** el último despliegue verificado es el commit `c091ebd` en `main`; GitHub Actions run [40797639368](https://github.com/itic-academy/simulador-tic/actions/runs/40797639368) completó todos los jobs con `success` el 29-10-2026 a las 01:00:39 UTC y Pages respondió HTTP 200 con `Last-Modified: Thu, 29 Oct 2026 01:00:33 GMT`. Los lotes 483–484 y las rectificaciones de prosa/etiquetas que se describen a continuación aún se comprobarán tras publicarse.
 
 
 
 
+## Lote 484 — 29 de octubre
+
+IDs 2736–2740 revisados individualmente contra el texto consolidado de la Constitución en el BOE y, para el artículo 116, la Ley Orgánica 4/1981. Cotejo de contenidos y epígrafes de ITIC Academy en Drive y de los programas oficiales A1/A2 de las convocatorias; referencias y explicación completas conservadas en `cambios-lote-484.json`. Acumulado: 2.740 examinadas, 2.671 verificadas (585 vigentes, 1.869 corregidas y 217 históricas), 69 pendientes documentadas (32 de fuente y 37 de ambigüedad), y 9.383 aún sin revisión individual.
+
+- **2736 — declaración del estado de alarma:** el art. 116.2 CE encomienda la declaración al Gobierno, por decreto acordado en Consejo de Ministros, hasta quince días; se da cuenta al Congreso y la prórroga necesita su autorización. Se confirma la primera opción. A1-1/A2-I.1; Academy, Constitución y estados excepcionales.
+- **2737 — regulación de estados excepcionales:** el art. 116.1 reserva a ley orgánica la regulación de alarma, excepción y sitio, así como sus competencias y limitaciones; la LO 4/1981 desarrolla el mandato. Se confirma la tercera opción. A1-1/A2-I.1; Academy, organización constitucional.
+- **2738 — Regencia por nombramiento de las Cortes:** conforme al art. 59.3 CE, la Regencia será de una, tres o cinco personas. Se confirma la cuarta opción. A1-1/A2-I.1; Academy, Corona.
+- **2739 — proposiciones de ley:** el art. 89.1 remite la tramitación a los Reglamentos de las Cámaras; la prioridad de los proyectos de ley no impide la iniciativa legislativa del art. 87. Se confirma la tercera opción. A1-1/A2-I.2; Academy, Cortes y procedimiento legislativo.
+- **2740 — iniciativa legislativa:** art. 87.1 CE, Gobierno, Congreso y Senado; sus apartados 2 y 3 regulan además la iniciativa autonómica y popular. Se confirma la cuarta opción. A1-1/A2-I.2/I.3; Academy, Gobierno y Cortes.
+
+Fuentes normativas: [Constitución Española, texto consolidado del BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 59.3, 87.1, 89.1 y 116; [Ley Orgánica 4/1981, estados de alarma, excepción y sitio](https://www.boe.es/buscar/act.php?id=BOE-A-1981-12774). Correspondencias curriculares cotejadas con el [programa oficial A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, y [programa oficial A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, además de ITIC Academy, «Constitución, Organización del Estado y AGE 2026.2» (Drive, 01-10-2026). El cotejo de academia se usa como encaje curricular y no sustituye la comprobación normativa.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados correctamente: 12.123 preguntas válidas, 2.740 registros de revisión, cero errores y 9.383 todavía sin revisar individualmente.
 ## Lote 483 — 29 de octubre
 
 IDs 2726–2735 revisados frente a la Constitución consolidada por el BOE (última actualización publicada 20-05-2026), la Ley Orgánica 3/1981 y la Ley 39/2015. Trazabilidad íntegra y correcciones de la primera pasada en `cambios-lote-483.json`.
