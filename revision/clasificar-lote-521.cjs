@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-521.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 2921:{A1:['A1-21'],A2:[],academy:'ITIC Academy, bloque de Dirección Pública y Empleo Público (A1 temas 20–26, versión 2026): liderazgo y competencias de gestión de personas. https://drive.google.com/file/d/1TCiFKKRdum7eVCEog-AOw6KgwzGp1ZP4/view?usp=drivesdk'},
+ 2922:{A1:['A1-30'],A2:['A2-I-10'],academy:'ITIC Academy, Bloque 10, Gobernanza TIC y Administración Digital, actualización 2026: gobernanza, Estrategia TIC, CETIC y órganos de cooperación electrónica. https://drive.google.com/file/d/1alTzv7f2Katg4EdxJ72SYkLm6UScCCho/view?usp=drivesdk'},
+ 2923:{A1:['A1-22'],A2:['A2-I-8','A2-I-9'],academy:'ITIC Academy, Bloque 03, Actuación Administrativa y Administración Digital, versión 2026.1: Leyes 39/2015 y 40/2015, notificación y servicios electrónicos; la convocatoria A2 incluye el procedimiento y la gestión electrónica. https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk'},
+ 2924:{A1:['A1-20','A1-23'],A2:[],academy:'ITIC Academy, bloque de Dirección Pública y Empleo Público (A1 temas 20–26, versión 2026): gestión pública, gobernanza y evaluación de políticas; no se asigna tema A2 al no aparecer la institucionalización de la evaluación en el programa GSI. https://drive.google.com/file/d/1TCiFKKRdum7eVCEog-AOw6KgwzGp1ZP4/view?usp=drivesdk'},
+ 2925:{A1:['A1-22'],A2:['A2-I-6'],academy:'ITIC Academy, Bloque 03, Actuación Administrativa y Administración Digital, versión 2026.1: Ley 34/2002 y sociedad de la información; corresponde a A1-22 y al marco de sociedad de la información A2-I-6. https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk'}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&q.revision&&m);for(const t of [...m.A1,...m.A2])assert.ok(topics.has(t),t);q.revision.observaciones+=` Cotejo curricular: ${m.academy} Academy orienta la clasificación temática, no sustituye la norma ni la fuente técnica aplicable.`;q.clasificacion={...q.clasificacion,A1:m.A1,A2:m.A2,bloque_academia:m.academy,estado:'revisada',nota:`${q.revision.estado}. ${m.academy}`};q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q);}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Clasificación oficial y cotejo curricular validados para lote 521.');
