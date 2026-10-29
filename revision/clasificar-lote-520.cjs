@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-520.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 2916:{A1:['A1-8'],A2:['A2-I-8'],academy:'ITIC Academy, Bloque 03, Actuación Administrativa y Administración Digital: apartado de competencia, delegación y avocación conforme a la Ley 40/2015. https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk'},
+ 2917:{A1:['A1-11'],A2:[],academy:'ITIC Academy, Bloque 05, Contratación, Presupuestos y Compra TIC, actualización 2026: Ley 9/2017, procedimientos y subasta electrónica; el propio mapa curricular indica que no hay equivalente en el temario A2 GSI. https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk'},
+ 2918:{A1:['A1-14','A1-15'],A2:[],academy:'ITIC Academy, Bloque 06, Economía, Sociedad, Empleo y Transformación Digital, versión 2026.2: §4 sectores productivos y sector primario; el bloque relaciona estos contenidos con A1-14 y A1-15. https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk'},
+ 2919:{A1:['A1-17'],A2:[],academy:'ITIC Academy, Bloque 06, Economía, Sociedad, Empleo y Transformación Digital, versión 2026.2: §7.1 identifica la EPA del INE como fuente de ocupación y paro basada en criterios OIT/Eurostat y la distingue de registros administrativos; el temario la encuadra en A1-17. https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk'},
+ 2920:{A1:['A1-24'],A2:['A2-I-8'],academy:'ITIC Academy, bloque de Dirección Pública y Empleo Público, versión 2026.1: recoge la definición del art. 20 TREBEP, sus principios y efectos; mapeado a A1-24 y A2-I-8. https://drive.google.com/file/d/1TCiFKKRdum7eVCEog-AOw6KgwzGp1ZP4/view?usp=drivesdk'}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&q.revision&&m);for(const t of [...m.A1,...m.A2])assert.ok(topics.has(t),t);q.revision.observaciones+=` Cotejo curricular: ${m.academy} La academia es guía de estudio, no fuente normativa ni estadística.`;q.clasificacion={...q.clasificacion,A1:m.A1,A2:m.A2,bloque_academia:m.academy,estado:'revisada',nota:`${q.revision.estado}. ${m.academy}`};q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q);}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Clasificación oficial y cotejo curricular validados para lote 520.');
