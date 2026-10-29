@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 571 (IDs 3171–3175). Acumulado: 3175 preguntas examinadas individualmente, 3103 verificadas (642 vigentes, 2221 corregidas y 240 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 8948 sin revisar individualmente. Hay 2534 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 572 (IDs 3176–3180). Acumulado: 3180 preguntas examinadas individualmente, 3108 verificadas (642 vigentes, 2226 corregidas y 240 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 8943 sin revisar individualmente. Hay 2539 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 572 — 29 de octubre
+
+IDs 3176–3180 revisados individualmente con ISO/CCSDS, ITU-T, RFC Editor e IEEE Standards Association. Se delimitó SIP al ingreso OAIS, se acotó la denominación de segmento a TCP, se precisó la equivalencia Wi-Fi 6/802.11ax, se verificó la conversión IPv4-mapped a hexadecimal y se separaron SMIv2, puertos SNMP y seguridad SNMPv3. Originales y estados anteriores preservados en [cambios-lote-572.json](cambios-lote-572.json).
+
+- **3176 — OAIS:** el productor entrega un SIP al archivo para su ingesta; el archivo conserva AIP y distribuye DIP. Se cita la edición vigente ISO 14721:2025. A1-104/A2-II-16; Academy 50 §6.
+- **3177 — transporte TCP:** TCP segmenta el flujo de bytes; «segmento» se atribuye aquí a TCP, no como nombre universal de PDU OSI (TPDU es la denominación formal del modelo). A1-111/A2-II-8; Academy 43 §§1 y 4.
+- **3178 — Wi-Fi 6:** IEEE 802.11ax es la base de la generación comercial Wi-Fi 6. A1-114/A2-IV-11; Academy 42, WLAN/IEEE 802.11.
+- **3179 — IPv4-mapped IPv6:** 193.147.254.51 = c1:93:fe:33; la dirección es ::ffff:c193:fe33. A1-115/A2-II-8; Academy 43 §§8–9.
+- **3180 — SNMP:** SMIv2 describe la sintaxis y semántica de objetos MIB; UDP 161/162 son los puertos típicos de consulta y notificación; autenticación/privacidad criptográfica corresponden a SNMPv3 USM. A1-118/A2-IV-9; Academy 42, gestión de redes.
+
+Fuentes técnicas primarias: [ISO 14721:2025, ficha oficial](https://www.iso.org/standard/87471.html) y [CCSDS 650.0-M-3 OAIS](https://ccsds.org/Pubs/650x0m3.pdf); [ISO/IEC 7498-1](https://www.iso.org/standard/20269.html), [ITU-T X.200](https://www.itu.int/rec/T-REC-X.200/en) y [RFC 9293 TCP](https://www.rfc-editor.org/rfc/rfc9293.html); [IEEE SA, cronología Wi-Fi](https://standards.ieee.org/wp-content/uploads/interactive/web/wi-fi-timeline/index.html) y [evolución oficial](https://standards.ieee.org/beyond-standards/the-evolution-of-wi-fi-technology-and-standards/); [RFC 4291, IPv6](https://www.rfc-editor.org/rfc/rfc4291.html); [RFC 2578 SMIv2](https://www.rfc-editor.org/rfc/rfc2578.html), [RFC 3417 transporte SNMP](https://www.rfc-editor.org/rfc/rfc3417.html) y [RFC 3414 USM](https://www.rfc-editor.org/rfc/rfc3414.html). Temarios oficiales: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), cotejados con `temario-oficial.json`.
+
+Cotejo ITIC Academy, edición 2026: [bloque 50, videoconferencia, SSO, colaboración y gestión documental](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk), §6 (A2 T16/OAIS); [bloque 43, protocolos](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk), §§1, 4, 8–9 (OSI/TCP, IPv6); y [bloque 42, redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), WLAN, LAN y monitorización SNMP. La academia apoya el encaje curricular, no sustituye los estándares y especificaciones primarios.
+
+Después del lote se ejecutaron `inventario.cjs`, `verificar.cjs` y `git diff --check`. El inventario estructural no equivale a revisión de contenido.
 
 ## Lote 571 — 29 de octubre
 
