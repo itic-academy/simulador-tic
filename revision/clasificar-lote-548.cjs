@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-548.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+const red='https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk',protocolos='https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk',movil='https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk',colab='https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk';
+const academy={
+ 3056:{A1:['A1-108','A1-125'],A2:['A2-II-8','A2-IV-12'],note:`ITIC Academy, Bloques 43 «Protocolos» (PPP) y 48 «Seguridad en redes y nivel de aplicación» (autenticación/protocolos seguros). ${protocolos} https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk`},
+ 3057:{A1:['A1-131'],A2:['A2-I-9'],note:`ITIC Academy, Bloques 36 «Seguridad, criptografía, identificación y firma» y 50 «Videoconferencia, SSO y colaboración» (gestión de identidades); A2-I-9 es una relación indirecta por identificación/autenticación en acceso electrónico, no un epígrafe específico de IAM corporativo. ${colab} https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view`},
+ 3058:{A1:['A1-117'],A2:['A2-IV-13'],note:`ITIC Academy, Bloque 42 «Redes» 2026.1, IoT e infraestructuras conectadas; Bloque 46 para dispositivos y conectividad móvil. ${red} ${movil}`},
+ 3059:{A1:['A1-116'],A2:['A2-IV-14'],note:`ITIC Academy, Bloque 43 «Protocolos» 2026.1, NGN/IMS y VoIP; Bloque 50 para sistemas de videoconferencia y comunicaciones en tiempo real. ${protocolos} ${colab}`},
+ 3060:{A1:['A1-114'],A2:['A2-IV-11'],note:`ITIC Academy, Bloque 46 «Redes inalámbricas y comunicaciones móviles» 2026.1, Bluetooth y espectro. ${movil}`}
+};
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&q.revision&&m,`Falta pregunta o clasificación ${c.id}`);for(const t of [...m.A1,...m.A2])assert.ok(topics.has(t),`Tema oficial inexistente ${t}`);const note=`${m.note} Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); ITIC Academy orienta el encaje curricular, no valida la respuesta.`;q.revision.observaciones+=` Cotejo curricular: ${note}`;q.clasificacion={A1:m.A1,A2:m.A2,bloque_academia:note,estado:'revisada',nota:`${q.revision.estado}. ${note}`};q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q);}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Clasificación oficial A1/A2 y cotejo de academia añadidos al lote 548.');
