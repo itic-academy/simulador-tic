@@ -134411,48 +134411,161 @@
       "id": 2766,
       "bloque": 0,
       "tema": 0,
-      "texto": "Sobre la implementación .NET de la seguridad basada en roles, escoja la afirmación correcta:",
+      "texto": "En ASP.NET Core, ¿qué afirmación describe correctamente la autorización basada en roles?",
       "opciones": [
-        "Se basa en cuentas/seguridad de Windows para identificar a los usuarios.",
-        "El motor de ejecución dispone de funciones para que los administradores puedan crear y gestionar la asignación de cuentas de usuario de Windows a roles de aplicación.",
-        "Es necesario que los usuarios estén asociados a cuentas de usuario de Windows.",
-        "La seguridad basada en roles de la estructura .NET es incompatible con la de COM+ 1.0."
+        "Exige que toda identidad se autentique mediante una cuenta de Windows.",
+        "La identidad autenticada puede pertenecer a roles y la aplicación puede restringir recursos según esa pertenencia.",
+        "La asignación de un rol concede automáticamente acceso a todos los recursos de la aplicación.",
+        "La autorización por roles es incompatible con identidades basadas en claims."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La pregunta histórica mezclaba la seguridad de roles de .NET Framework con cuentas Windows y afirmaba capacidades propias del runtime que no son una regla general. Se sustituye por el modelo vigente de autorización por roles de ASP.NET Core: los roles pertenecen a la identidad/principal autenticado y el origen de esa pertenencia depende del sistema de identidad configurado. La autenticación Windows es un caso posible, no una condición necesaria. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 tema 66 (.NET) y A2 III.11 (.NET). Se cotejó la parte de autorización e identidad.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 tema 66 (.NET) y A2 III.11 (.NET). Se cotejó la parte de autorización e identidad.",
+        "estado": "revisada",
+        "nota": "La pregunta histórica mezclaba la seguridad de roles de .NET Framework con cuentas Windows y afirmaba capacidades propias del runtime que no son una regla general. Se sustituye por el modelo vigente de autorización por roles de ASP.NET Core: los roles pertenecen a la identidad/principal autenticado y el origen de esa pertenencia depende del sistema de identidad configurado. La autenticación Windows es un caso posible, no una condición necesaria. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 tema 66 (.NET) y A2 III.11 (.NET). Se cotejó la parte de autorización e identidad."
+      },
+      "etiquetas": [
+        ".NET",
+        "ASP.NET Core",
+        "autorización por roles",
+        "identidades y claims"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/aspnet/core/security/authorization/roles",
+            "referencia": "Microsoft Learn, autorización por roles en ASP.NET Core: una identidad autenticada puede pertenecer a roles, expuestos mediante ClaimsPrincipal.IsInRole; la forma de crearlos/administrarlos depende del proveedor de identidades. Windows Authentication es una opción, no un requisito general."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/security/authorization/roles",
+            "referencia": "Microsoft Learn, MVC role-based authorization: muestra [Authorize(Roles=\"Administrator\")], pertenencia a roles y el caso particular de grupos Windows como roles."
+          },
+          {
+            "url": "https://drive.google.com/file/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 tema 66 (.NET) y A2 III.11 (.NET). Se cotejó la parte de autorización e identidad."
+          }
+        ],
+        "observaciones": "La pregunta histórica mezclaba la seguridad de roles de .NET Framework con cuentas Windows y afirmaba capacidades propias del runtime que no son una regla general. Se sustituye por el modelo vigente de autorización por roles de ASP.NET Core: los roles pertenecen a la identidad/principal autenticado y el origen de esa pertenencia depende del sistema de identidad configurado. La autenticación Windows es un caso posible, no una condición necesaria. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 tema 66 (.NET) y A2 III.11 (.NET). Se cotejó la parte de autorización e identidad."
+      }
     },
     {
       "id": 2767,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones es falsa sobre el formato JAR?",
+      "texto": "¿Qué afirmación sobre las firmas digitales de un archivo JAR es correcta?",
       "opciones": [
-        "Es compatible con los sistemas de distribución automática.",
-        "Los ficheros con este formato son independientes de la plataforma.",
-        "Un fichero con este formato debe incluir obligatoriamente las firmas digitales de los ficheros que contiene."
+        "Todo archivo JAR debe contener obligatoriamente una firma digital.",
+        "Un JAR puede firmarse para permitir verificar la procedencia e integridad; la firma no es obligatoria para que el archivo sea JAR.",
+        "La firma digital cifra automáticamente todos los archivos del JAR.",
+        "Para que un JAR sea válido, su manifiesto debe incluir la clave privada del autor."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "El original pedía identificar la afirmación falsa, pero afirmaba como obligatoria una firma digital que solo es necesaria cuando se pretende autenticar procedencia/integridad mediante firma. Se formula en positivo: la firma es opcional y un JAR no firmado sigue siendo un archivo JAR válido. También se elimina la afirmación absoluta de independencia de plataforma, ya que empaquetar en JAR no vuelve portable por sí solo cualquier contenido. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 tema 67 (Java), incluido su ecosistema y empaquetado de aplicaciones.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 tema 67 (Java), incluido su ecosistema y empaquetado de aplicaciones.",
+        "estado": "revisada",
+        "nota": "El original pedía identificar la afirmación falsa, pero afirmaba como obligatoria una firma digital que solo es necesaria cuando se pretende autenticar procedencia/integridad mediante firma. Se formula en positivo: la firma es opcional y un JAR no firmado sigue siendo un archivo JAR válido. También se elimina la afirmación absoluta de independencia de plataforma, ya que empaquetar en JAR no vuelve portable por sí solo cualquier contenido. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 tema 67 (Java), incluido su ecosistema y empaquetado de aplicaciones."
+      },
+      "etiquetas": [
+        "Java",
+        "JAR",
+        "firma digital",
+        "distribución de artefactos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/java/javase/17/docs/specs/jar/jar.html",
+            "referencia": "Oracle JAR File Specification: describe el firmado como capacidad opcional; solo se incorporan archivos y atributos de firma cuando se firma el archivo."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/jar.html",
+            "referencia": "Oracle JDK 25 jar command: JAR es un archivo de distribución basado en ZIP/ZLIB y permite firmar entradas; no exige que cualquier JAR esté firmado."
+          },
+          {
+            "url": "https://drive.google.com/file/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 tema 67 (Java), incluidos ecosistema y empaquetado de aplicaciones."
+          }
+        ],
+        "observaciones": "El original pedía identificar la afirmación falsa, pero afirmaba como obligatoria una firma digital que solo es necesaria cuando se pretende autenticar procedencia/integridad mediante firma. Se formula en positivo: la firma es opcional y un JAR no firmado sigue siendo un archivo JAR válido. También se elimina la afirmación absoluta de independencia de plataforma, ya que empaquetar en JAR no vuelve portable por sí solo cualquier contenido. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 tema 67 (Java), incluido su ecosistema y empaquetado de aplicaciones."
+      }
     },
     {
       "id": 2768,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la arquitectura de desarrollo Web bajo Java es cierto que:",
+      "texto": "En Jakarta Servlet, ¿qué afirmación sobre el procesamiento de solicitudes HTTP mediante HttpServlet es correcta?",
       "opciones": [
-        "JavaMicro Edition es el entorno de ejecución estándar para Java.",
-        "Los Java Enterprise Edition blueprints son los que permiten verificar la compatibilidad de una plataforma Java.",
-        "Los servlets son usados para pasar contenido dinámico al cliente a través de http.",
-        "Los servlets http no heredan los métodos doGet() y doPost() de la clase httpServlet."
+        "Java ME es el entorno de ejecución estándar de las aplicaciones de servidor Jakarta EE.",
+        "Los BluePrints de Java EE son un mecanismo actual de certificación de compatibilidad de cualquier servidor.",
+        "HttpServlet despacha solicitudes HTTP a métodos como doGet y doPost, que la aplicación puede implementar para producir la respuesta.",
+        "HttpServlet no define ni hereda métodos para atender GET y POST."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se actualiza la terminología Java EE a Jakarta EE/Servlet y se precisa el papel de HttpServlet: el contenedor llama a service y la clase despacha según el método HTTP a doGet, doPost u otros. La aplicación implementa los métodos que necesite para generar la respuesta; no se afirma que solo exista contenido dinámico ni que esos métodos no se hereden. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 temas 65/67 y A2 III.10/III.12, con apartados de servlets y desarrollo Java web.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10",
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 temas 65/67 y A2 III.10/III.12, con apartados de servlets y desarrollo Java web.",
+        "estado": "revisada",
+        "nota": "Se actualiza la terminología Java EE a Jakarta EE/Servlet y se precisa el papel de HttpServlet: el contenedor llama a service y la clase despacha según el método HTTP a doGet, doPost u otros. La aplicación implementa los métodos que necesite para generar la respuesta; no se afirma que solo exista contenido dinámico ni que esos métodos no se hereden. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 temas 65/67 y A2 III.10/III.12, con apartados de servlets y desarrollo Java web."
+      },
+      "etiquetas": [
+        "Java",
+        "Jakarta Servlet",
+        "HttpServlet",
+        "doGet",
+        "doPost",
+        "aplicaciones web"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/specifications/servlet/6.1/",
+            "referencia": "Eclipse Foundation, Jakarta Servlet 6.1, especificación vigente para Jakarta EE 11: API de servidor para gestionar solicitudes y respuestas HTTP."
+          },
+          {
+            "url": "https://jakarta.ee/specifications/servlet/6.1/apidocs/jakarta.servlet/jakarta/servlet/http/HttpServlet.html",
+            "referencia": "Jakarta Servlet 6.1 API: HttpServlet implementa el despacho de solicitudes HTTP hacia métodos como doGet y doPost, que pueden ser sobrescritos por la aplicación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 temas 65/67 y A2 III.10/III.12, con apartado de servlets y desarrollo Java web."
+          }
+        ],
+        "observaciones": "Se actualiza la terminología Java EE a Jakarta EE/Servlet y se precisa el papel de HttpServlet: el contenedor llama a service y la clase despacha según el método HTTP a doGet, doPost u otros. La aplicación implementa los métodos que necesite para generar la respuesta; no se afirma que solo exista contenido dinámico ni que esos métodos no se hereden. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 temas 65/67 y A2 III.10/III.12, con apartados de servlets y desarrollo Java web."
+      }
     },
     {
       "id": 2769,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación al lenguaje Java, la clase THROWABLE tiene dos subclases:",
+      "texto": "En Java SE, ¿cuáles son las dos subclases directas de java.lang.Throwable?",
       "opciones": [
         "Error y Exception.",
         "Error y Catch.",
@@ -134460,21 +134573,95 @@
         "Error y Throw."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La respuesta original es correcta: las dos subclases directas de java.lang.Throwable son Error y Exception. Se corrige la grafía/capitalización de la clase y se hace explícito “directas”, para distinguirlas de RuntimeException, que hereda de Exception. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; encaje en A1 tema 67 (Java) y A2 II.3 (lenguajes y paradigmas).",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; encaje en A1 tema 67 (Java) y A2 II.3 (lenguajes y paradigmas).",
+        "estado": "revisada",
+        "nota": "La respuesta original es correcta: las dos subclases directas de java.lang.Throwable son Error y Exception. Se corrige la grafía/capitalización de la clase y se hace explícito “directas”, para distinguirlas de RuntimeException, que hereda de Exception. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; encaje en A1 tema 67 (Java) y A2 II.3 (lenguajes y paradigmas)."
+      },
+      "etiquetas": [
+        "Java",
+        "Throwable",
+        "Error",
+        "Exception",
+        "jerarquía de excepciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Throwable.html",
+            "referencia": "Oracle Java SE 25 API: enumera Error y Exception como las dos subclases directas conocidas de Throwable."
+          },
+          {
+            "url": "https://docs.oracle.com/javase/specs/jls/se25/jls25.pdf",
+            "referencia": "Java Language Specification, SE 25, §11.1.1: establece que Exception y Error son subclases directas de Throwable."
+          },
+          {
+            "url": "https://drive.google.com/file/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre A1 tema 67 Java y A2 II.3 lenguajes y paradigmas."
+          }
+        ],
+        "observaciones": "La respuesta original es correcta: las dos subclases directas de java.lang.Throwable son Error y Exception. Se corrige la grafía/capitalización de la clase y se hace explícito “directas”, para distinguirlas de RuntimeException, que hereda de Exception. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; encaje en A1 tema 67 (Java) y A2 II.3 (lenguajes y paradigmas)."
+      }
     },
     {
       "id": 2770,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale cuál de las siguientes afirmaciones sobre el paquete javax.microedition.lcdui de JME es cierta:",
+      "texto": "En Java ME con MIDP 1.0, ¿qué función proporciona el paquete javax.microedition.lcdui?",
       "opciones": [
-        "Es un subconjunto del paquete Swing de J2E.",
-        "Define las aplicaciones MIDP y su comportamiento con respecto al entorno de ejecución.",
-        "Proporciona clases asociadas a la gestión del ciclo de vida de las MIDLETS.",
-        "Proporciona clases para el desarrollo de elementos gráficos."
+        "Una extensión del paquete Swing de Java SE.",
+        "La definición de las aplicaciones MIDlet y su ciclo de vida.",
+        "La persistencia de datos de las aplicaciones móviles.",
+        "La API de interfaz de usuario, con componentes de pantalla y gráficos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se conserva el conocimiento como histórico y se identifica expresamente el perfil MIDP 1.0, evitando presentarlo como plataforma Java actual. lcdui es la API de interfaz de usuario; la definición e interacción del ciclo de vida MIDlet corresponden a javax.microedition.midlet, y el almacenamiento persistente a javax.microedition.rms. El contenido se clasifica en el marco general de Java, con nota de que no figura como epígrafe específico vigente. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre Java en A1 tema 67, pero no incluye específicamente Java ME/MIDP 1.0 como epígrafe actual. Se mantiene como conocimiento histórico.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre Java en A1 tema 67, pero no incluye específicamente Java ME/MIDP 1.0 como epígrafe actual. Se mantiene como conocimiento histórico.",
+        "estado": "revisada",
+        "nota": "Se conserva el conocimiento como histórico y se identifica expresamente el perfil MIDP 1.0, evitando presentarlo como plataforma Java actual. lcdui es la API de interfaz de usuario; la definición e interacción del ciclo de vida MIDlet corresponden a javax.microedition.midlet, y el almacenamiento persistente a javax.microedition.rms. El contenido se clasifica en el marco general de Java, con nota de que no figura como epígrafe específico vigente. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre Java en A1 tema 67, pero no incluye específicamente Java ME/MIDP 1.0 como epígrafe actual. Se mantiene como conocimiento histórico."
+      },
+      "etiquetas": [
+        "Java ME",
+        "MIDP 1.0",
+        "javax.microedition.lcdui",
+        "interfaz de usuario",
+        "histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javame/config/cldc/ref-impl/midp1.0/jsr037/javax/microedition/lcdui/package-summary.html",
+            "referencia": "Oracle MID Profile / MIDP 1.0 API: javax.microedition.lcdui proporciona las funciones de interfaz de usuario para aplicaciones MIDP; incluye Screen, Form, Canvas y Graphics."
+          },
+          {
+            "url": "https://docs.oracle.com/javame/config/cldc/ref-impl/midp1.0/jsr037/overview-summary.html",
+            "referencia": "Oracle MIDP 1.0 overview: distingue lcdui (interfaz), midlet (definición/ciclo de vida de aplicaciones) y rms (persistencia)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; sitúa Java en A1 tema 67, pero no cubre específicamente Java ME/MIDP 1.0 en el temario actual. Se clasifica como contenido histórico."
+          }
+        ],
+        "observaciones": "Se conserva el conocimiento como histórico y se identifica expresamente el perfil MIDP 1.0, evitando presentarlo como plataforma Java actual. lcdui es la API de interfaz de usuario; la definición e interacción del ciclo de vida MIDlet corresponden a javax.microedition.midlet, y el almacenamiento persistente a javax.microedition.rms. El contenido se clasifica en el marco general de Java, con nota de que no figura como epígrafe específico vigente. Correspondencias cotejadas con revision/temario-oficial.json y con los anexos de las convocatorias A1 (BOE-A-2025-25938) y A2 GSI (BOE-A-2025-26262). ITIC Academy se usa para cotejo curricular; la respuesta se fundamenta en las fuentes técnicas primarias citadas. Cotejo curricular en Drive: ITIC Academy, bloque Tecnologías de sistemas de información, versión 2026.1; cubre Java en A1 tema 67, pero no incluye específicamente Java ME/MIDP 1.0 como epígrafe actual. Se mantiene como conocimiento histórico."
+      }
     },
     {
       "id": 2771,
