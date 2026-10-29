@@ -1,0 +1,33 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const file=path.join(__dirname,'README.md');
+let s=fs.readFileSync(file,'utf8');
+const old='Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 510 (IDs 2866–2870). Acumulado: 2870 preguntas examinadas individualmente, 2798 verificadas (609 vigentes, 1957 corregidas y 232 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9253 sin revisar individualmente. Hay 2253 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando esos campos en los registros completos. Inventario estructural no equivale a revisión de contenido.';
+const next='Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 511 (IDs 2871–2875). Acumulado: 2875 preguntas examinadas individualmente, 2803 verificadas (609 vigentes, 1961 corregidas y 233 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9248 sin revisar individualmente. Hay 2258 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando esos campos en los registros completos. Inventario estructural no equivale a revisión de contenido.';
+if(!s.includes(old))throw Error('No se encontró el estado previo exacto del README; no se modificó.');
+s=s.replace(old,next);
+const prior='inventario.cjs, verificar.cjs y git diff --check ejecutados tras el lote: 12.123 preguntas, cero errores; 2.870 revisadas individualmente, 2.798 verificadas, 72 pendientes documentadas y 9.253 sin revisión de contenido. El inventario estructural no acredita revisión individual.';
+if(!s.includes(prior))throw Error('No se encontró el resumen de validación del lote 510.');
+const validation='inventario.cjs, verificar.cjs y git diff --check ejecutados tras el lote: 12.123 preguntas, cero errores; 2.875 revisadas individualmente, 2.803 verificadas, 72 pendientes documentadas y 9.248 sin revisión de contenido. El inventario estructural no acredita revisión individual.';
+const section=[
+'## Lote 511 — 29 de octubre',
+'',
+'IDs 2871–2875 revisados individualmente con fuentes primarias técnicas y normativas. El original íntegro de cada reactivo queda preservado en [cambios-lote-511.json](cambios-lote-511.json).',
+'',
+'- **2871 — clases IPv4:** se limita el enunciado al direccionamiento classful histórico. Las máscaras predeterminadas A/B/C dejan 24/16/8 bits de host; por ello, disminuye la capacidad de hosts por red de A a C. CIDR reemplazó la inferencia de máscara por clase en las asignaciones y el encaminamiento actuales. Se conserva la clave 0, pero la pregunta queda clasificada como histórica. A1-115/A2-II-8; Academy, Bloque 42 Redes 2026.1.',
+'- **2872 — RoHS, RAEE, ENERGY STAR e ISO:** se distingue la restricción de sustancias peligrosas RoHS de la recogida y tratamiento de residuos RAEE. ENERGY STAR es un programa de eficiencia energética. ISO 9001 corresponde a gestión de calidad e ISO 14001 a gestión ambiental. Se conserva la clave 1 y se corrige el distractor ISO para que la diferencia sea inequívoca. A1-14/A1-53/A2-IV-3; Academy, Bloque 26 Hardware 2026.1.',
+'- **2873 — MAGERIT v3:** se ajusta el enunciado a la definición de impacto como consecuencia sobre un activo de la materialización de una amenaza, diferenciándolo de riesgo, que incorpora probabilidad/frecuencia. Se mantiene la clave 0. A1-47/A2-II-10; Academy, Bloque 22 Seguridad, ENS y Ciberseguridad 2026.2 como contexto general; la definición se comprueba en MAGERIT y CCN.',
+'- **2874 — EIA/TIA-232-C y OSI:** se aclara que RS-232-C define propiedades eléctricas, mecánicas y funcionales de una interfaz serie DTE-DCE y se asocia convencionalmente con la capa física (1). No es una especificación del modelo OSI ni debe confundirse con la capa de enlace. Se mantiene la clave 0. A1-110/A2-II-8/A2-IV-7; Academy, Bloque 42 Redes 2026.1.',
+'- **2875 — USB 3.0 frente a USB 2.0:** se explicita la comparación de tasas nominales: SuperSpeed original 5 Gbit/s y Hi-Speed 480 Mbit/s. El cociente es aproximadamente 10,4; «10 veces» es una aproximación, no igualdad exacta ni rendimiento útil garantizado. Se mantiene la clave 2 y se indica la posterior consolidación de las generaciones 3.x bajo USB 3.2. A1-54/A2-IV-7; Academy, Bloques 26 Hardware y 42 Redes 2026.1.',
+'',
+'Fuentes primarias: IETF, [RFC 791 IPv4](https://www.rfc-editor.org/rfc/rfc791.html) y [RFC 4632 CIDR](https://www.rfc-editor.org/rfc/rfc4632.html); EUR-Lex, [Directiva RoHS 2011/65/UE](https://eur-lex.europa.eu/eli/dir/2011/65/oj?locale=es) y [Directiva RAEE 2012/19/UE](https://eur-lex.europa.eu/eli/dir/2012/19/oj?locale=es); U.S. EPA, [About ENERGY STAR](https://www.energystar.gov/about); ISO, [ISO 9001 explained](https://www.iso.org/insights/iso-9001-explained) e [ISO 14001:2026](https://www.iso.org/standard/14001); Ministerio de Hacienda/CCN, [MAGERIT v3 Libro I](https://pilar.ccn-cert.cni.es/docman/documentos/1-magerit-v3-libro-i-metodo/file) y [CCN-STIC 401, glosario «Impacto»](https://www.ccn-cert.cni.es/publico/seriesCCN-STIC/series/400-Guias_Generales/401-glosario_abreviaturas/topics/525.html); U.S. Department of Commerce, [guía técnica de interfaces RS-232-C](https://www.govinfo.gov/content/pkg/GOVPUB-C13-78a707a7feaa8fcc11d1eaaaa9583c72/pdf/GOVPUB-C13-78a707a7feaa8fcc11d1eaaaa9583c72.pdf), §2.1, e ITU-T, [X.200, modelo OSI en vigor](https://www.itu.int/ITU-T/recommendations/rec.aspx?id=2820); USB-IF, [especificación USB 3.2 con tasas de 5/10/20 Gbit/s](https://www.usb.org/usb-32-0) y [FAQ USB Hi-Speed 480 Mbit/s](https://www.usb.org/node/214).',
+'',
+'Cotejo curricular en Drive: ITIC Academy, [Bloque 42 Redes 2026.1](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), [Bloque 26 Hardware 2026.1](https://docs.google.com/document/d/1i7gM8fFljlK2jLDlCxr_h0titV5bPo5U/edit?usp=drivesdk) y [Bloque 22 Seguridad, ENS y Ciberseguridad 2026.2](https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk). Se usan como mapa de estudio, no como prueba jurídica o técnica. La clasificación se contrastó con el inventario de temas oficiales en temario-oficial.json y con los anexos de las convocatorias A1 [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y A2 GSI [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).',
+'',
+validation,
+'',
+'## Lote 510 — 29 de octubre'
+].join('\n');
+s=s.replace(prior,section);
+fs.writeFileSync(file,s);
+console.log('README actualizado con lote 511 y progreso recalculado.');
