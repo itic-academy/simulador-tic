@@ -1,11 +1,29 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 477 (IDs 2696–2700). Acumulado: 2.700 preguntas examinadas individualmente, 2.632 verificadas (554 vigentes, 1.861 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.423 sin revisar individualmente. Hay 2.140 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 478 (IDs 2701–2705). Acumulado: 2.705 preguntas examinadas individualmente, 2.637 verificadas (552 vigentes, 1.868 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.418 sin revisar individualmente. Hay 2.142 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+## Rectificación de estado de lotes 476–477 — 29 de octubre
+
+Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se habían editado seguían etiquetados como `vigente`: 2692, 2693 y 2694 del lote 476; 2696 y 2699 del lote 477. La causa fue pasar `vigente` de forma explícita al helper, evitando su inferencia automática de `corregida`. Se rectificó únicamente el estado y se dejó el motivo/campos editados en `rectificaciones` de ambos registros. No cambian respuestas ni se suman nuevas preguntas a la revisión. Los contadores se recalcularon con el inventario.
+
+**Estado de publicación:** el último `main` confirmado en GitHub continúa siendo el lote 475 (`88480dde`). Lotes 476–478 y la rectificación constan en commits locales, pero `git push origin main` sigue fallando con `getaddrinfo() thread failed to start`; no se consideran publicados ni se da por verificado su despliegue. Se reintentará en el siguiente ciclo. El HTTP 200 visto antes de estos commits no prueba que la página los incluya.
 **Estado de publicación:** el último `main` confirmado en GitHub es el lote 475 (`88480dde`). Los lotes 476 y 477 tienen commits locales, pero los intentos de `git push origin main` fallaron con `getaddrinfo() thread failed to start`; no se consideran publicados ni se da por verificado su despliegue. La siguiente ejecución reintentará la conexión. El HTTP 200 observado anteriormente en GitHub Pages corresponde a una versión previa y no prueba que incluya esos commits.
 
 
 
 
+## Lote 478 — 29 de octubre
+
+IDs 2701–2705 revisados individualmente contra la Constitución consolidada por el BOE (última actualización publicada 20-05-2026). Se conservan originales y trazabilidad en `cambios-lote-478.json`.
+
+- **2701 — órdenes jurisdiccionales:** el original preguntaba qué opción no es una jurisdicción «especial» y mezclaba dos sentidos posibles: penal es orden ordinario, mientras que el Tribunal Constitucional tampoco integra la jurisdicción ordinaria. Se reformula para preguntar cuál de las opciones es un orden ordinario y no especial; la respuesta es Penal. Art. 117.5 CE regula unidad y jurisdicción militar; el TC es un órgano constitucional diferente de los órdenes jurisdiccionales. A1-2; para A2-I.1 se anota solo encaje constitucional general, sin subtema específico de jurisdicción.
+- **2702 — composición de las Cortes:** art. 66.1 CE: Congreso de los Diputados y Senado. Se retira del acierto la etiqueta informal «Cámara Baja/Alta», innecesaria para la regla constitucional. Clave confirmada. A1-1/A2-I.2.
+- **2703 — libertad sindical:** art. 28.1 CE permite limitar/excluir su ejercicio para Fuerzas o Institutos armados y otros cuerpos sometidos a disciplina militar; para funcionarios se regulan peculiaridades, no una exclusión general. Clave confirmada. A1-1/A2-I.1.
+- **2704 — unidad jurisdiccional:** art. 117.5 CE la establece como base de organización y funcionamiento de los tribunales. Clave confirmada. A1-2; A2-I.1 solo como marco constitucional general, porque el programa A2 GSI no incluye un epígrafe específico de Poder Judicial.
+- **2705 — Título VII:** la Constitución denomina el Título VII «Economía y Hacienda». Clave confirmada. A1-12 se relaciona con la parte presupuestaria del título; A2-I.1 se cita como estructura constitucional general, no como programa económico específico.
+
+Fuentes primarias: [Constitución Española, texto consolidado del BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 28.1, 66.1, 70.1, 117.5 y Título VII. Cotejo de academia: ITIC Academy, [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), leída directamente en Drive; su índice cubre derechos, Cortes y Poder Judicial/CGPJ. Correspondencia oficial contrastada con [programa A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, temas 1, 2 y 12, y [programa A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, I.1–I.2. El mapeo genérico no significa mención textual de cada supuesto.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.705 revisadas individualmente, 2.637 verificadas, 68 pendientes documentadas y 9.418 sin revisar contenido. El inventario no acredita por sí solo revisión individual.
 ## Lote 477 — 29 de octubre
 
 IDs 2696–2700 revisados individualmente contra la Constitución Española consolidada por el BOE (actualización publicada el 20-05-2026). Se guardan originales y trazabilidad en `cambios-lote-477.json`; se corrigen dos formulaciones para hacer explícito el alcance.
