@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 544 (IDs 3036–3040). Acumulado: 3040 preguntas examinadas individualmente, 2968 verificadas (631 vigentes, 2099 corregidas y 238 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9083 sin revisar individualmente. Hay 2411 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 545 (IDs 3041–3045). Acumulado: 3045 preguntas examinadas individualmente, 2973 verificadas (631 vigentes, 2104 corregidas y 238 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9078 sin revisar individualmente. Hay 2416 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 545 — 29 de octubre
+
+IDs 3041–3045 revisados individualmente con fuentes IEEE, ITU-T, IETF y documentación oficial del servicio Pinterest. Se cotejaron los bloques académicos de redes y colaboración con el temario oficial A1/A2. Originales, cambios, fuentes y notas curriculares se conservan en [cambios-lote-545.json](cambios-lote-545.json).
+
+- **3041 — estados STP:** «Broadcasting» no es un estado del STP clásico IEEE 802.1D, cuyos estados son disabled, blocking, listening, learning y forwarding. Se distingue el STP legado de RSTP, que usa discarding/learning/forwarding. A1-118; A2-IV-8; Academy Bloque 42.
+- **3042 — pérdidas en fibra óptica:** absorción, dispersión Rayleigh y macrocurvatura/radiación son contribuciones conocidas; «difracción de Maxwell» no es una categoría normalizada de atenuación de fibra. A1-110; A2-IV-7; Academy Bloque 42.
+- **3043 — Pinterest:** definición vigente como plataforma de descubrimiento visual cuyos Pins se guardan y organizan en tableros; se retiran cifras antiguas y descripciones de otras redes. A1-133; A2-II-16; Academy Bloque 50.
+- **3044 — sintaxis IPv6:** se identifica la doble compresión «::» como inválida. Un prefijo escrito con /64 sí es válido como notación de prefijo, aunque no sea una dirección de interfaz aislada. A1-115; A2-II-8; Academy Bloques 42/43.
+- **3045 — Trap SNMP:** notificación no confirmada de un evento, generada desde el rol agent para un receptor/manager; se diferencia de InformRequest, que tiene respuesta. A1-118; A2-IV-9; Academy Bloque 42.
+
+Fuentes primarias: IEEE [ficha de 802.1D-2004](https://standards.ieee.org/ieee/802.1D/3387/) y [suplemento 802.1w](https://www.ieee802.org/1/pages/802.1w.html) (RSTP; se contrasta la máquina clásica 802.1D con la documentación técnica de [Cisco](https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html)); ITU-T [G Supplement 47 (03/2025)](https://www.itu.int/epublications/en/publication/itu-t-g-suppl-47-2025-03-general-aspects-of-optical-fibres-and-cables), §8.1/apéndice I, e [ITU-T G.652 (08/2024)](https://www.itu.int/rec/T-REC-G.652-202408-I/en), vigente; Pinterest [Help: All about Pinterest](https://help.pinterest.com/en/guide/all-about-pinterest); IETF [RFC 4291](https://www.rfc-editor.org/rfc/rfc4291.html), §2.2, [RFC 5952](https://www.rfc-editor.org/rfc/rfc5952.html), §2.2, [RFC 3416](https://www.rfc-editor.org/rfc/rfc3416.html), §4.2.6, y [RFC 1905](https://www.rfc-editor.org/rfc/rfc1905.html), §2.1.
+
+Cotejo en Drive: [Bloque 42, Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), LAN, puentes, medios guiados, gestión SNMP y direccionamiento; [Bloque 43, Protocolos](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk), TCP/IP e IPv6; [Bloque 50, colaboración y redes sociales](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk). Las correspondencias oficiales se contrastaron con revision/temario-oficial.json, anexos I de [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y IX de [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Los materiales de academia no sustituyen las fuentes primarias.
+
+Tras el lote se ejecutaron inventario.cjs, verificar.cjs y git diff --check. El inventario estructural no se presenta como revisión de contenido.
 
 ## Lote 544 — 29 de octubre
 
