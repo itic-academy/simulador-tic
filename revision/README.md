@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 555 (IDs 3091–3095). Acumulado: 3095 preguntas examinadas individualmente, 3023 verificadas (631 vigentes, 2153 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9028 sin revisar individualmente. Hay 2466 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 556 (IDs 3096–3100). Acumulado: 3100 preguntas examinadas individualmente, 3028 verificadas (632 vigentes, 2157 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9023 sin revisar individualmente. Hay 2470 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 556 — 29 de octubre
+
+IDs 3096–3100 revisados individualmente con estándares OASIS, UIT-T, IEEE, recomendaciones ITU-T DSL y ETSI/3GPP, además de ITIC Academy consultada en Drive. Se corrigió una clave múltiple en AMQP, se precisó el mapeo OSI, la función del repetidor, los hechos comprobables de ADSL2 y la banda GSM especificada. El registro [cambios-lote-556.json](cambios-lote-556.json) conserva originales y revisiones completas.
+
+- **3096 — AMQP:** es OASIS Standard y define transporte sobre TCP, no UDP obligatorio; el original marcaba erróneamente “todas verdaderas” pese a tener opciones verdaderas y falsas. A1-109/111; A2-II-8; Academy Bloque 43.
+- **3097 — conexión OSI sesión/transporte:** en cada instante hay relación uno a uno; varias conexiones de transporte consecutivas pueden soportar una conexión de sesión. A1-111; A2-II-8; Academy Bloque 43.
+- **3098 — repetidor Ethernet:** regenera señales en capa física; aprender direcciones MAC y filtrar tramas es función de puente/switch, no del repetidor. A1-118; A2-IV-8; Academy Bloque 42.
+- **3099 — ADSL2:** G.992.3 usa DMT y contempla modos totalmente digitales; se corrige “STTH” como falsa y se delimita bonding DSL por recomendaciones asociadas. A1-108; A2-IV-7; Academy Bloque 42.
+- **3100 — uplink GSM:** se especifica banda primaria P-GSM 900 (móvil transmite 890–915 MHz); E-GSM/R-GSM amplían el rango, por eso se acota el enunciado. A1-123; A2-IV-15; Academy Bloque 46.
+
+Fuentes primarias: [OASIS AMQP 1.0, Part 0](https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html) (OASIS Standard y requisitos del transporte TCP) y [archivo de estándares OASIS](https://www.oasis-open.org/standards/); [ITU-T X.200](https://www.itu.int/rec/T-REC-X.200/en), §7.3.4.1 (relación entre conexión de sesión y transporte); [IEEE 802.3-2022](https://standards.ieee.org/ieee/802.3/10422/) y [IEEE 802.1Q-2022](https://standards.ieee.org/ieee/802.1Q/10323/) (Ethernet/repetición física frente a puenteo MAC); [ITU-T G.992.3](https://www.itu.int/rec/T-REC-G.992.3/en) (ADSL2, DMT y modos) y [G.998.2](https://www.itu.int/rec/T-REC-G.998.2) (bonding DSL, en vigor); [ETSI TS 145 005 V19.0.0 / 3GPP TS 45.005 Release 19](https://www.etsi.org/deliver/etsi_ts/145000_145099/145005/19.00.00_60/ts_145005v190000p.pdf) §2 (rangos P-GSM/E-GSM/R-GSM, octubre de 2025).
+
+Cotejo en Drive: [Bloque 43, Protocolos](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view), edición 2026.1, AMQP y OSI/conexiones; [Bloque 42, Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view), edición 2026.1, repetidores/puentes (sección 4.4) y acceso xDSL; [Bloque 46, Redes inalámbricas](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view), edición 2026, GSM y su plan de frecuencias. Clasificación oficial verificada en [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y revision/temario-oficial.json.
+
+Tras el lote se ejecutaron inventario.cjs, verificar.cjs y git diff --check. El inventario estructural no equivale a revisión individual del contenido.
 
 ## Lote 555 — 29 de octubre
 
