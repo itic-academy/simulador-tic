@@ -8,7 +8,7 @@ Al cotejar las etiquetas con los epígrafes oficiales del anexo IX A2 GSI se det
 
 Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se habían editado seguían etiquetados como `vigente`: 2692, 2693 y 2694 del lote 476; 2696 y 2699 del lote 477. La causa fue pasar `vigente` de forma explícita al helper, evitando su inferencia automática de `corregida`. Se rectificó únicamente el estado y se dejó el motivo/campos editados en `rectificaciones` de ambos registros. No cambian respuestas ni se suman nuevas preguntas a la revisión. Los contadores se recalcularon con el inventario.
 
-**Estado de publicación:** el lote 482, la rectificación temática de 481 y esta actualización están en el checkout. El último despliegue verificado es el lote 481 (commit `46e1bbf`, run [40796626076](https://github.com/itic-academy/simulador-tic/actions/runs/40796626076)); tras el push se comprobarán el siguiente workflow y la fecha del sitio antes de registrar el nuevo estado.
+**Estado de publicación:** el lote 482 y la rectificación temática de 481 están en el commit `d34cdbd` de `main`; GitHub Actions run [40797288042](https://github.com/itic-academy/simulador-tic/actions/runs/40797288042) completó `build`, `report-build-status` y `deploy` con `success` el 29-10-2026 a las 00:57:12 UTC. GitHub Pages devuelve HTTP 200 con `Last-Modified: Thu, 29 Oct 2026 00:57:06 GMT`. Despliegue verificado.
 
 
 
