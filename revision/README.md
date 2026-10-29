@@ -15,13 +15,13 @@ Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se ha
 
 ## Lote 482 — 29 de octubre
 
-IDs 2721–2725 contrastados individualmente con el texto consolidado vigente de la Constitución Española (BOE, actualización publicada 20-05-2026). Las cinco claves se conservan; se desarrollan las precisiones constitucionales y su contexto. Registro íntegro: `cambios-lote-482.json`.
+IDs 2721–2725 contrastados individualmente con el texto consolidado vigente de la Constitución Española (BOE, actualización publicada 20-05-2026). Las cinco claves se conservan; se desarrollan las precisiones constitucionales y su contexto. La explicación identifica explícitamente ordinales visibles e índices almacenados desde cero para evitar desfases. Registro íntegro: `cambios-lote-482.json`.
 
 - **2721 — delegación de facultades a las CCAA:** art. 150.2 CE permite transferencia/delegación por ley orgánica si las facultades son susceptibles por su naturaleza; exige prever medios financieros y controles estatales reservados. Clave 3. A1-3; A2-I.1 solo como marco de Constitución general, sin tema A2 específico de CCAA.
 - **2722 — Cortes Generales:** art. 66.2 CE les atribuye potestad legislativa estatal, aprobación de Presupuestos y control del Gobierno. Clave 0. A1-1/A2-I.2.
 - **2723 — atribuciones del Rey:** arts. 62.g y 62.h CE: información sobre asuntos de Estado y mando supremo de las Fuerzas Armadas; dirigir Administración Militar/defensa es atribución del Gobierno (art. 97). Clave 3. A1-1/A2-I.1.
-- **2724 — privación de bienes:** art. 33.3 CE exige causa justificada de utilidad pública o interés social, indemnización y sujeción a la ley. Para la causa que pregunta el reactivo, clave 2.
-- **2725 — moción de censura:** arts. 113.1–3 CE: propuesta de al menos una décima parte de Diputados, candidato alternativo, espera mínima de cinco días y aprobación por mayoría absoluta del Congreso. Clave 2; la espera no sustituye la mayoría absoluta. A1-1/A2-I.3.
+- **2724 — privación de bienes:** art. 33.3 CE exige causa justificada de utilidad pública o interés social, indemnización y sujeción a la ley. Para la causa que pregunta el reactivo, la tercera opción (clave 2, índice cero-based).
+- **2725 — moción de censura:** arts. 113.1–3 CE: propuesta de al menos una décima parte de Diputados, candidato alternativo, espera mínima de cinco días y aprobación por mayoría absoluta del Congreso. Clave 2 (tercera opción, índice cero-based); la espera no sustituye la mayoría absoluta. A1-1/A2-I.3.
 
 Fuentes: [Constitución Española, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 33.3, 62, 66.2, 87, 97, 113 y 150.2; [programa A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I; [programa A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX. Cotejo curricular con ITIC Academy, [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), consultada directamente en Drive. Correspondencia por tema oficial, sin atribuir al A2 epígrafes separados que no figuran en su programa.
 
@@ -30,11 +30,11 @@ Fuentes: [Constitución Española, texto consolidado BOE](https://www.boe.es/bus
 
 IDs 2716–2720 revisados individualmente frente al texto consolidado vigente de la Constitución Española, BOE (actualización publicada el 20-05-2026). Se conserva la clave de las cinco preguntas. Se añadieron explicación, fuentes oficiales, clasificación A1/A2 y cotejo de Academy. Registro completo: `cambios-lote-481.json`.
 
-- **2716 — nombramiento del Gobierno:** art. 62.e CE: corresponde al Rey nombrar y separar a sus miembros a propuesta del Presidente del Gobierno. Clave 3 confirmada. A1-1/A2-I.2.
-- **2717 — composición del Gobierno:** art. 98.1 CE: Presidente, Vicepresidentes en su caso, Ministros y demás miembros que establezca la ley. El Rey no lo integra. Clave 3 confirmada. A1-1/A2-I.5.
-- **2718 — iniciativa legislativa:** art. 87.1 CE: corresponde al Gobierno, Congreso y Senado, según Constitución y reglamentos parlamentarios. Es la opción 2. El apartado 2 nombra a las Asambleas autonómicas, no a los plenos municipales; el apartado 3 establece ley orgánica y al menos 500.000 firmas para iniciativa popular, no ley ordinaria.
+- **2716 — nombramiento del Gobierno:** art. 62.e CE: corresponde al Rey nombrar y separar a sus miembros a propuesta del Presidente del Gobierno. Clave 3 confirmada. A1-1/A2-I.1.
+- **2717 — composición del Gobierno:** art. 98.1 CE: Presidente, Vicepresidentes en su caso, Ministros y demás miembros que establezca la ley. El Rey no lo integra. Clave 3 confirmada. A1-1/A2-I.3.
+- **2718 — iniciativa legislativa:** art. 87.1 CE: corresponde al Gobierno, Congreso y Senado, según Constitución y reglamentos parlamentarios. Es la tercera opción (clave 2, índice cero-based). El apartado 2 nombra a las Asambleas autonómicas, no a los plenos municipales; el apartado 3 establece ley orgánica y al menos 500.000 firmas para iniciativa popular, no ley ordinaria.
 - **2719 — propiedad y herencia:** art. 33 CE, capítulo II del título I, sección 2.ª («De los derechos y deberes de los ciudadanos»). Clave 1 confirmada. A1-1/A2-I.1.
-- **2720 — nombramiento y cese de Ministros:** art. 100 CE: nombramiento y separación por el Rey a propuesta del Presidente del Gobierno. Clave 3 confirmada. A1-1/A2-I.5.
+- **2720 — nombramiento y cese de Ministros:** art. 100 CE: nombramiento y separación por el Rey a propuesta del Presidente del Gobierno. Clave 3 confirmada. A1-1/A2-I.3.
 
 Fuentes: [Constitución Española consolidada por el BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 33, 62.e, 87, 98 y 100; [convocatoria oficial A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, tema 1; [convocatoria oficial A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, I.1, I.2, I.3 e I.5. Cotejo curricular individual con ITIC Academy, [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), consultada directamente en Drive.
 
