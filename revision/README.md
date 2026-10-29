@@ -1,10 +1,26 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 475 (IDs 2686–2690). Acumulado: 2.695 preguntas examinadas individualmente, 2.627 verificadas (549 vigentes, 1.861 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.428 sin revisar individualmente. Hay 2.138 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 477 (IDs 2696–2700). Acumulado: 2.700 preguntas examinadas individualmente, 2.632 verificadas (554 vigentes, 1.861 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.423 sin revisar individualmente. Hay 2.140 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+**Estado de publicación:** el último `main` confirmado en GitHub es el lote 475 (`88480dde`). Los lotes 476 y 477 tienen commits locales, pero los intentos de `git push origin main` fallaron con `getaddrinfo() thread failed to start`; no se consideran publicados ni se da por verificado su despliegue. La siguiente ejecución reintentará la conexión. El HTTP 200 observado anteriormente en GitHub Pages corresponde a una versión previa y no prueba que incluya esos commits.
 
 
 
 
+## Lote 477 — 29 de octubre
+
+IDs 2696–2700 revisados individualmente contra la Constitución Española consolidada por el BOE (actualización publicada el 20-05-2026). Se guardan originales y trazabilidad en `cambios-lote-477.json`; se corrigen dos formulaciones para hacer explícito el alcance.
+
+- **2696 — vocales del CGPJ:** art. 122.3 CE: el Consejo se integra por su Presidente y veinte miembros nombrados por el Rey por cinco años; doce proceden de la carrera judicial y ocho son juristas propuestos por Congreso y Senado. Se corrige la denominación del CGPJ en un distractor. A1-2. Para A2 GSI I.1 se indica solo encaje constitucional general, pues no tiene epígrafe específico del CGPJ.
+- **2697 — forma de Estado:** art. 1.1 CE: España se constituye en un Estado social y democrático de Derecho. Clave confirmada. A1-1/A2-I.1.
+- **2698 — potestades del Rey:** art. 62 CE enumera funciones regias; dictar normas con rango de ley no es una de ellas. Se distingue la sanción/promulgación de leyes de su elaboración y de las normas con rango de ley del Gobierno en los casos constitucionales. Clave confirmada. A1-1/A2-I.1.
+- **2699 — inelegibilidad/incompatibilidad:** art. 70.1.b CE exceptúa a los miembros del Gobierno de la categoría de altos cargos de la Administración que deben quedar comprendidos en las causas legales; se precisa el enunciado a esa excepción. Clave confirmada. A1-1/A2-I.2.
+- **2700 — delegación legislativa:** art. 82 CE: ley de bases para textos articulados; ley ordinaria para refundir. La delegación ha de ser expresa, sobre materia concreta y con plazo, no comprende materias reservadas a ley orgánica y no admite subdelegación a autoridades distintas del Gobierno. Clave confirmada. A1-1/A2-I.3.
+
+Fuentes: [Constitución Española, texto consolidado por BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 1.1, 62, 70, 82 y 122.3; [LOPJ, BOE](https://www.boe.es/eli/es/lo/1985/07/01/6), para el desarrollo de la composición y elección del CGPJ. El texto consolidado es informativo; las afirmaciones se fundan en la norma publicada oficialmente.
+
+Cotejo curricular: ITIC Academy, [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), consultada directamente en Drive: incluye Constitución, Corona, Cortes, Gobierno y Poder Judicial/CGPJ. Encaje oficial cotejado con [A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, temas 1–2, y [A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX: I.1 para Constitución, I.2 para Cortes y I.3 para Gobierno. La convocatoria no contiene apartado específico del CGPJ en A2 GSI; por ello no se presenta I.1 como correspondencia literal.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.700 revisadas individualmente, 2.632 verificadas, 68 pendientes documentadas y 9.423 sin revisar contenido. El inventario estructural no acredita revisión individual.
 ## Lote 476 — 29 de octubre
 
 IDs 2691–2695 revisados individualmente contra la Constitución consolidada por el BOE (actualización de 20-05-2026). Se conservan las versiones originales y trazabilidad en `cambios-lote-476.json`; tres enunciados/opciones se precisan para eliminar errata o ambigüedad.
