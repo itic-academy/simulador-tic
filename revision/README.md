@@ -1,8 +1,25 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 474 (IDs 2681–2685). Acumulado: 2.685 preguntas examinadas individualmente, 2.617 verificadas (539 vigentes, 1.861 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.438 sin revisar individualmente. Hay 2.135 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 475 (IDs 2686–2690). Acumulado: 2.690 preguntas examinadas individualmente, 2.622 verificadas (544 vigentes, 1.861 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.433 sin revisar individualmente. Hay 2.135 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
 
+
+
+## Lote 475 — 29 de octubre
+
+IDs 2686–2690 se verificaron individualmente contra la Constitución Española vigente, consolidada por BOE, y, para el mandato de desarrollo policial, la LO 2/1986. Se conservaron originales y trazabilidad en `cambios-lote-475.json`; las cinco claves se confirmaron sin cambios de contenido.
+
+- **2686 — moción de censura:** art. 113.2 CE: propuesta de al menos una décima parte de los Diputados e inclusión de candidato. No sustituir el umbral proporcional por una cifra fija. A1-1/A2-I.3.
+- **2687 — atribución del Rey:** art. 62.e CE: nombrar y separar miembros del Gobierno a propuesta de su Presidente. Las otras opciones corresponden al Presidente del Gobierno/Gobierno o exceden la legitimación constitucional del Rey. A1-1/A2-I.1.
+- **2688 — Tribunal Constitucional:** art. 159.1 CE establece doce miembros. A1-2/A2-I.2.
+- **2689 — indultos generales:** art. 62.i permite el ejercicio del derecho de gracia conforme a la ley, pero prohíbe autorizar indultos generales. A1-1/A2-I.1.
+- **2690 — Fuerzas y Cuerpos de Seguridad:** art. 104.2 CE reserva a ley orgánica la determinación de funciones, principios básicos de actuación y estatutos; LO 2/1986 desarrolla el mandato. El programa A2 no incluye un epígrafe policial específico, por lo que I.3 se registra solo como relación general con las funciones del Gobierno. A1-1/4; A2-I.3.
+
+Fuentes normativas: [Constitución Española consolidada por BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 62, 104, 113 y 159; [Ley Orgánica 2/1986 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-1986-6859).
+
+Cotejo curricular en Drive: ITIC Academy, [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), consultado directamente: incluye los artículos 62 y 104, moción de censura, Corona, Tribunal Constitucional y Gobierno. Correspondencia contrastada con [convocatoria oficial A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) (temas 1, 2 y 4) y [A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) (I.1, I.2 e I.3). Academy orienta el temario; la respuesta legal proviene del BOE.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.690 revisadas individualmente, 2.622 verificadas, 68 pendientes documentadas y 9.433 aún sin revisar contenido. El inventario estructural no acredita revisión individual.
 
 ## Lote 474 — 29 de octubre
 
