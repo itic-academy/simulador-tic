@@ -1,7 +1,24 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 473 (IDs 2676–2680). Acumulado: 2.680 preguntas examinadas individualmente, 2.612 verificadas (536 vigentes, 1.859 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.443 sin revisar individualmente. Hay 2.133 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 474 (IDs 2681–2685). Acumulado: 2.685 preguntas examinadas individualmente, 2.617 verificadas (539 vigentes, 1.861 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.438 sin revisar individualmente. Hay 2.135 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 
+
+
+## Lote 474 — 29 de octubre
+
+IDs 2681–2685 revisados individualmente; se guardan los originales y las diferencias en `cambios-lote-474.json`. Dos reactivos de testing/calidad se precisan; tres preguntas constitucionales se comprueban en el texto vigente del BOE.
+
+- **2681 — integración de componentes:** “pruebas modulares” confundía pruebas de componente (unitarias) con integración de componentes. Se reformula para el nivel correcto: la estrategia de integración puede ser top-down o bottom-up; se corrige la clave. ISTQB CTFL 4.0.1 distingue ambos niveles. A1-96/A2-III.7.
+- **2682 — coste de calidad:** se abandona la regla vaga de “equilibrar” calidad y no-calidad. La pregunta trata ahora el enfoque COQ: contabilizar prevención, evaluación y fallos internos/externos para identificar oportunidades de mejora. También se descarta como criterio actual prometer “software cero-defectos” garantizado. A1-98/A2-III.13.
+- **2683 — legitimación constitucional:** art. 162.1.a CE; de las opciones solo el Presidente del Gobierno. La legitimación de 50 Diputados no equivale a 40, y Ministerio Fiscal aparece para el amparo, no para el recurso de inconstitucionalidad. A1-1/2; A2-I.2.
+- **2684 — límites provinciales:** se confirma art. 141.1 CE: aprobación por las Cortes Generales mediante ley orgánica. A1-3; A2-I.1 como tema constitucional general, sin atribuirle un subtema local específico.
+- **2685 — estado de excepción:** se confirma art. 116.3 CE: declara el Gobierno por decreto del Consejo de Ministros, previa autorización del Congreso. Se diferencia de alarma y sitio. A1-1; A2-I.1/I.3.
+
+Fuentes técnicas y normativas: ISTQB, [CTFL Syllabus v4.0.1](https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf), §§1.3 y 2.2.1 (principio de prueba, niveles y estrategia de integración); American Society for Quality, [Cost of Quality](https://asq.org/quality-resources/cost-of-quality); BOE, [Constitución Española consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 116.3, 141.1 y 162.1.a.
+
+Cotejo curricular en Drive: ITIC Academy, [Calidad y Mantenimiento 2026.1](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk), que incluye estrategia y niveles de prueba y medición/calidad; [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), cuyo índice cubre artículos 53–55, Tribunal Constitucional, Gobierno, organización territorial y Administración local. Correspondencia cotejada con [convocatoria oficial A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) (temas 1–3, 96, 98) y [A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) (I.1–I.3, II.7 y III.13). La academia aporta el mapa didáctico; ISTQB, ASQ y la Constitución son las fuentes de las afirmaciones concretas.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.685 revisadas individualmente, 2.617 verificadas, 68 pendientes de resolución explícita y 9.438 sin revisión de contenido. El inventario estructural no acredita revisión individual.
 
 ## Lote 473 — 29 de octubre
 
