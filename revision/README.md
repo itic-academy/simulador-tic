@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 533 (IDs 2981–2985). Acumulado: 2985 preguntas examinadas individualmente, 2913 verificadas (630 vigentes, 2045 corregidas y 238 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9138 sin revisar individualmente. Hay 2357 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 534 (IDs 2986–2990). Acumulado: 2990 preguntas examinadas individualmente, 2918 verificadas (630 vigentes, 2050 corregidas y 238 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9133 sin revisar individualmente. Hay 2362 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 534 — 29 de octubre
+
+IDs 2986–2990 revisados individualmente con el estándar IEEE 802.11 y RFC del IETF. Se cotejaron los Bloques 42/43 y el bloque de Redes inalámbricas de ITIC Academy (2026), además de la clasificación A1/A2 publicada en las convocatorias vigentes. En particular se separaron referencias históricas de las especificaciones actualmente vigentes. Los originales y cambios se conservan en [cambios-lote-534.json](cambios-lote-534.json).
+
+- **2986 — IEEE 802.11 y OSI:** se corrige el error tipográfico y se precisa la correspondencia MAC/enlace de datos y PHY/física (OSI 2/1), sin decir que IEEE define el modelo OSI. A1-114; A2-IV-11; Academy redes inalámbricas 2026.
+- **2987 — RFC de TCP:** RFC 793 fue la especificación original, pero está obsoleta; la especificación normativa actual es RFC 9293. El enunciado ahora pregunta expresamente por el documento original. A1-115; A2-II-8; Academy Bloque 43.
+- **2988 — gestión de dispositivos:** SNMP permite intercambiar información de gestión entre entidades para monitorizar y controlar equipos. A1-118; A2-IV-9; Academy Bloque 42.
+- **2989 — OSPFv2:** se identifica como IGP de estado de enlace con rutas de coste igual y autenticación. Se reemplaza «balanceo interno» por ECMP y se aclara que autenticación no equivale a cifrado/confidencialidad. A1-108/115; A2-IV-10; Academy Bloques 42/43.
+- **2990 — extensión IPv6:** RFC 2460 se reemplaza por la especificación vigente RFC 8200. Fragment es una cabecera de extensión; Next Header es un campo, y Hop Limit/Payload Length pertenecen a la cabecera base. A1-115; A2-II-8; Academy Bloque 43.
+
+Fuentes: IEEE Standards Association, [IEEE 802.11-2024, MAC y PHY](https://standards.ieee.org/ieee/802.11/10548/); IETF, [RFC 793, TCP original](https://www.rfc-editor.org/rfc/rfc793.html), [RFC 9293, especificación vigente de TCP](https://www.rfc-editor.org/rfc/rfc9293.html), [RFC 3411, arquitectura de gestión SNMP](https://www.rfc-editor.org/rfc/rfc3411.html), [RFC 2328, OSPFv2](https://www.rfc-editor.org/rfc/rfc2328.html), [RFC 5709, autenticación HMAC-SHA para OSPFv2](https://www.rfc-editor.org/rfc/rfc5709.html) y [RFC 8200, especificación IPv6 vigente](https://www.rfc-editor.org/rfc/rfc8200.html).
+
+Cotejo curricular en Drive: [Bloque 42, Redes 2026.1](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), gestión de red y SNMP; [Bloque 43, Protocolos 2026.1](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk), TCP/IP, OSPF e IPv6; [Redes inalámbricas y comunicaciones móviles 2026](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk), IEEE 802.11. Clasificación comprobada con `revision/temario-oficial.json`, [convocatoria A1 BOE-A-2025-25938, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI BOE-A-2025-26262, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La academia orienta, pero no sustituye el programa oficial ni las fuentes primarias.
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras el lote; el inventario estructural no acredita revisión de contenido.
 
 ## Lote 533 — 29 de octubre
 
