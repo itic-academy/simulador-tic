@@ -140260,63 +140260,218 @@
       "id": 2886,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de los siguientes términos NO corresponde al nombre de una solución de infraestructura hiperconvergente (HCI):",
+      "texto": "¿Cuál de los siguientes nombres no coincide con la denominación de una solución de infraestructura hiperconvergente (HCI) identificada por el fabricante?",
       "opciones": [
-        "Cisco HyperFlex",
-        "Nutanix",
-        "IBM HyperSeed",
-        "VMWare vSAN"
+        "Cisco HyperFlex.",
+        "Nutanix Cloud Infrastructure.",
+        "IBM HyperSeed.",
+        "VMware vSAN."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se confirma IBM HyperSeed como el nombre que no coincide con las denominaciones de producto documentadas: IBM identifica su oferta HCI como IBM Fusion HCI. Cisco HyperFlex, Nutanix y VMware vSAN sí aparecen documentados como soluciones HCI. El nombre de IBM se formula con precisión y se evita confundirlo con IBM Fusion HCI. Cotejo curricular: ITIC Academy, Bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización 2026: https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk. El material trata servidores, almacenamiento y virtualización/HCI como mapa curricular; no prueba los nombres comerciales. La academia se usa como mapa de estudio, no como autoridad técnica o normativa.",
+      "clasificacion": {
+        "A1": [
+          "A1-53",
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización 2026: https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk. El material trata servidores, almacenamiento y virtualización/HCI como mapa curricular; no prueba los nombres comerciales.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización 2026: https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk. El material trata servidores, almacenamiento y virtualización/HCI como mapa curricular; no prueba los nombres comerciales."
+      },
+      "etiquetas": [
+        "HCI",
+        "infraestructura hiperconvergente",
+        "Cisco HyperFlex",
+        "Nutanix",
+        "IBM Fusion HCI",
+        "VMware vSAN"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.cisco.com/site/us/en/products/computing/hyperconverged-infrastructure/hyperflex-hx-series/index.html",
+            "referencia": "Cisco, HyperFlex HX-Series: identifica Cisco HyperFlex como plataforma/solución HCI; se cita para confirmar que el nombre sí corresponde a la oferta de Cisco, no como recomendación de vigencia comercial."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/fusion-hci-systems/2.11.x?topic=product-overview",
+            "referencia": "IBM Docs, Product overview: identifica el nombre oficial del sistema de infraestructura hiperconvergente como IBM Fusion HCI. La fuente no respalda el nombre «IBM HyperSeed»."
+          },
+          {
+            "url": "https://www.nutanix.com/products/nutanix-cloud-infrastructure",
+            "referencia": "Nutanix, producto oficial Nutanix Cloud Infrastructure (NCI): solución actual de infraestructura hiperconvergente."
+          },
+          {
+            "url": "https://www.ibm.com/think/topics/hyperconverged-infrastructure",
+            "referencia": "IBM Think, What is hyperconverged infrastructure, actualizado 2025: enumera ejemplos de soluciones HCI, entre ellos Nutanix, VMware vSAN e IBM Fusion HCI."
+          }
+        ],
+        "observaciones": "Se confirma IBM HyperSeed como el nombre que no coincide con las denominaciones de producto documentadas: IBM identifica su oferta HCI como IBM Fusion HCI. Cisco HyperFlex, Nutanix y VMware vSAN sí aparecen documentados como soluciones HCI. El nombre de IBM se formula con precisión y se evita confundirlo con IBM Fusion HCI. Cotejo curricular: ITIC Academy, Bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización 2026: https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk. El material trata servidores, almacenamiento y virtualización/HCI como mapa curricular; no prueba los nombres comerciales. La academia se usa como mapa de estudio, no como autoridad técnica o normativa."
+      }
     },
     {
       "id": 2887,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si se desea codificar un componente embebido de software, con especificaciones críticas de tiempo real, ¿qué tipo de lenguaje suele resultar más adecuado?",
+      "texto": "Si un componente de software embebido tiene un requisito concreto de control muy próximo a las instrucciones del procesador y ajuste fino del tiempo de ejecución, ¿qué categoría de lenguaje ofrece el acceso más directo, aunque no sea la elección general para todo software de tiempo real?",
       "opciones": [
-        "Ensamblador o de bajo nivel.",
-        "Uno de la tercera generación.",
-        "LISP.",
-        "Uno de tipado fuerte."
+        "Ensamblador o lenguaje de bajo nivel.",
+        "Un lenguaje de tercera generación, sin posibilidad de código de bajo nivel.",
+        "LISP, por ser un lenguaje funcional.",
+        "Cualquier lenguaje fuertemente tipado, con independencia de su compilador y runtime."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se elimina la regla excesiva de que todo componente embebido o de tiempo real deba escribirse en ensamblador. La pregunta se acota al caso en que el requisito concreto sea controlar directamente instrucciones/recursos del procesador o ajustar con granularidad el tiempo de ejecución; de las opciones dadas, el ensamblador o lenguaje de bajo nivel es el más próximo al hardware. En aplicaciones reales se usan también C, C++ y Ada, y el ensamblador suele limitarse a secciones críticas. Cotejo curricular: ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información 2026.1: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. Incluye lenguajes/paradigmas y el entorno Java; la elección entre ensamblador y lenguajes de más alto nivel se limita al requisito indicado y se contrasta con documentación de procesador. La academia se usa como mapa de estudio, no como autoridad técnica o normativa.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información 2026.1: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. Incluye lenguajes/paradigmas y el entorno Java; la elección entre ensamblador y lenguajes de más alto nivel se limita al requisito indicado y se contrasta con documentación de procesador.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información 2026.1: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. Incluye lenguajes/paradigmas y el entorno Java; la elección entre ensamblador y lenguajes de más alto nivel se limita al requisito indicado y se contrasta con documentación de procesador."
+      },
+      "etiquetas": [
+        "software embebido",
+        "tiempo real",
+        "ensamblador",
+        "lenguaje de bajo nivel",
+        "control del procesador"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://documentation-service.arm.com/static/5f2d494760a93e65927be3ba?token=",
+            "referencia": "Arm, RealView Compilation Tools Developer Guide, §5.1: el ensamblador integrado proporciona acceso de bajo nivel al procesador y a instrucciones no accesibles directamente desde C/C++; justifica la respuesta solo cuando se pide control próximo a instrucciones/hardware, no como regla universal para todo software de tiempo real."
+          },
+          {
+            "url": "https://www.adaic.org/ada-resources/pro-tools-services",
+            "referencia": "Ada Resource Association, herramientas y servicios profesionales: documenta el uso de Ada, C y C++ en sistemas embebidos y críticos de tiempo real. Sirve para descartar la generalización «tiempo real implica ensamblador»."
+          }
+        ],
+        "observaciones": "Se elimina la regla excesiva de que todo componente embebido o de tiempo real deba escribirse en ensamblador. La pregunta se acota al caso en que el requisito concreto sea controlar directamente instrucciones/recursos del procesador o ajustar con granularidad el tiempo de ejecución; de las opciones dadas, el ensamblador o lenguaje de bajo nivel es el más próximo al hardware. En aplicaciones reales se usan también C, C++ y Ada, y el ensamblador suele limitarse a secciones críticas. Cotejo curricular: ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información 2026.1: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk. Incluye lenguajes/paradigmas y el entorno Java; la elección entre ensamblador y lenguajes de más alto nivel se limita al requisito indicado y se contrasta con documentación de procesador. La academia se usa como mapa de estudio, no como autoridad técnica o normativa."
+      }
     },
     {
       "id": 2888,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes estándares NO ha sido elaborado por W3C (World Wide Web Consortium)?",
+      "texto": "¿Cuál de los siguientes elementos no es una especificación o iniciativa del World Wide Web Consortium (W3C)?",
       "opciones": [
-        "XML (Extensible Markup Language).",
-        "SOAP (Simple Object Access Protocol).",
-        "WAI (Web Accessibility Initiative).",
-        "SSL (Secure Sockets Layer)."
+        "XML 1.0, especificación publicada como W3C Recommendation.",
+        "SOAP 1.2, especificación publicada como W3C Recommendation.",
+        "WAI, iniciativa del W3C que desarrolla directrices y estándares de accesibilidad web.",
+        "SSL, protocolo histórico de seguridad ajeno al W3C; TLS es su sucesor estandarizado en IETF."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se cambia el criterio de «estándar elaborado por W3C» por «elemento que no procede del ámbito W3C»: XML y SOAP 1.2 son Recommendations W3C, y WAI es una iniciativa del W3C que desarrolla directrices y estándares. SSL es un protocolo histórico ajeno al W3C; el estándar actual de su sucesor TLS se publica en IETF. Cotejo curricular: ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información 2026.1: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk (XML/estándares web); y Bloque 39 Calidad y Mantenimiento 2026: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk (accesibilidad/criterios). Se coteja el currículo; la autoría W3C/IETF se verifica en sus fuentes primarias. La academia se usa como mapa de estudio, no como autoridad técnica o normativa.",
+      "clasificacion": {
+        "A1": [
+          "A1-44",
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9",
+          "A2-III-14"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información 2026.1: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk (XML/estándares web); y Bloque 39 Calidad y Mantenimiento 2026: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk (accesibilidad/criterios). Se coteja el currículo; la autoría W3C/IETF se verifica en sus fuentes primarias.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información 2026.1: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk (XML/estándares web); y Bloque 39 Calidad y Mantenimiento 2026: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk (accesibilidad/criterios). Se coteja el currículo; la autoría W3C/IETF se verifica en sus fuentes primarias."
+      },
+      "etiquetas": [
+        "W3C",
+        "XML",
+        "SOAP",
+        "WAI",
+        "SSL",
+        "TLS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/xml/",
+            "referencia": "W3C Recommendation, Extensible Markup Language (XML) 1.0, Fifth Edition: especificación XML producida por el XML Core Working Group y publicada como W3C Recommendation."
+          },
+          {
+            "url": "https://www.w3.org/TR/soap12-part1/",
+            "referencia": "W3C Recommendation, SOAP Version 1.2 Part 1, Second Edition: documento normativo W3C para SOAP 1.2."
+          },
+          {
+            "url": "https://www.w3.org/WAI/about/",
+            "referencia": "W3C Web Accessibility Initiative: WAI es una iniciativa/programa del W3C que desarrolla estrategias, estándares y recursos de accesibilidad; no es en sí un estándar concreto."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+            "referencia": "IETF RFC 8446, TLS 1.3: estándar IETF de seguridad de la capa de transporte. Se diferencia de SSL, protocolo histórico anterior; SSL no es una especificación elaborada por W3C."
+          }
+        ],
+        "observaciones": "Se cambia el criterio de «estándar elaborado por W3C» por «elemento que no procede del ámbito W3C»: XML y SOAP 1.2 son Recommendations W3C, y WAI es una iniciativa del W3C que desarrolla directrices y estándares. SSL es un protocolo histórico ajeno al W3C; el estándar actual de su sucesor TLS se publica en IETF. Cotejo curricular: ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información 2026.1: https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk (XML/estándares web); y Bloque 39 Calidad y Mantenimiento 2026: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk (accesibilidad/criterios). Se coteja el currículo; la autoría W3C/IETF se verifica en sus fuentes primarias. La academia se usa como mapa de estudio, no como autoridad técnica o normativa."
+      }
     },
     {
       "id": 2889,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señalar cuál de las siguientes NO es una ventaja del uso de directorios LDAP para la autenticación de usuarios:",
+      "texto": "Una organización usa un directorio LDAP para centralizar identidades. ¿Qué afirmación no es una capacidad que LDAP proporcione por sí solo?",
       "opciones": [
-        "La mayoría de aplicaciones comerciales permiten su integración fácilmente.",
-        "Están optimizados para las búsquedas, que es la operación más repetida a la hora de gestionar los usuarios.",
-        "Permiten implantar sin ningún mecanismo adicional Single Sign On, ya que todas las aplicaciones pueden tener la autenticación a través del LDAP.",
-        "La replicación con los directorios /etc/passwd está automatizada, y por tanto la integración con las aplicaciones comerciales."
+        "Una aplicación cliente puede autenticar una conexión con el servidor mediante una operación Bind.",
+        "Las aplicaciones compatibles pueden buscar entradas y atributos del directorio con operaciones LDAP.",
+        "El mero hecho de disponer del directorio instala Single Sign-On automáticamente en cualquier aplicación, sin configurar mecanismos ni integrar cada cliente.",
+        "Un directorio común puede ayudar a evitar que cada aplicación mantenga un almacén aislado de identidades, si las aplicaciones se integran con él."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "Se corrige el defecto de doble respuesta del original: tanto «LDAP proporciona SSO sin mecanismo adicional» como la supuesta replicación automática con /etc/passwd eran afirmaciones falsas. El reactivo se reformula con una única afirmación no atribuible al protocolo LDAP: que el directorio por sí solo instala SSO para todas las aplicaciones. Bind autentica ante el servidor LDAP; SSO exige mecanismos y soporte de aplicación adicionales. Cotejo curricular: ITIC Academy, Bloque 36 Seguridad, Criptografía, Identificación y Firma 2026: https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk (incluye directorios LDAP/X.500); y Bloque 50 Videoconferencia, SSO y Trabajo Colaborativo 2026: https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk. Los materiales sirven de mapa curricular; el alcance del protocolo se basa en RFC. La academia se usa como mapa de estudio, no como autoridad técnica o normativa.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-122"
+        ],
+        "A2": [
+          "A2-I-9"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 36 Seguridad, Criptografía, Identificación y Firma 2026: https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk (incluye directorios LDAP/X.500); y Bloque 50 Videoconferencia, SSO y Trabajo Colaborativo 2026: https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk. Los materiales sirven de mapa curricular; el alcance del protocolo se basa en RFC.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 36 Seguridad, Criptografía, Identificación y Firma 2026: https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk (incluye directorios LDAP/X.500); y Bloque 50 Videoconferencia, SSO y Trabajo Colaborativo 2026: https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk. Los materiales sirven de mapa curricular; el alcance del protocolo se basa en RFC."
+      },
+      "etiquetas": [
+        "LDAP",
+        "autenticación",
+        "Bind",
+        "Single Sign-On",
+        "SSO",
+        "directorios"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4511.html",
+            "referencia": "IETF RFC 4511, LDAP: especifica operaciones de acceso a servicios de directorio; §4.2 define Bind como intercambio de información de autenticación. El protocolo no define por sí solo el inicio de sesión único de las aplicaciones."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4513.html",
+            "referencia": "IETF RFC 4513, LDAP Authentication Methods and Security Mechanisms: define métodos de autenticación y seguridad LDAP; no prescribe una solución SSO automática para aplicaciones cliente."
+          }
+        ],
+        "observaciones": "Se corrige el defecto de doble respuesta del original: tanto «LDAP proporciona SSO sin mecanismo adicional» como la supuesta replicación automática con /etc/passwd eran afirmaciones falsas. El reactivo se reformula con una única afirmación no atribuible al protocolo LDAP: que el directorio por sí solo instala SSO para todas las aplicaciones. Bind autentica ante el servidor LDAP; SSO exige mecanismos y soporte de aplicación adicionales. Cotejo curricular: ITIC Academy, Bloque 36 Seguridad, Criptografía, Identificación y Firma 2026: https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk (incluye directorios LDAP/X.500); y Bloque 50 Videoconferencia, SSO y Trabajo Colaborativo 2026: https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk. Los materiales sirven de mapa curricular; el alcance del protocolo se basa en RFC. La academia se usa como mapa de estudio, no como autoridad técnica o normativa."
+      }
     },
     {
       "id": 2890,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el Proceso de Implantación y Aceptación del Sistema (IAS) de Métrica v3, ¿cuál de los siguientes participantes NO interviene en la actividad IAS 8 “Establecimiento del Acuerdo de Nivel de Servicio”?",
+      "texto": "Según MÉTRICA v3, en la tarea IAS 8.3 «Determinación del Acuerdo de Nivel de Servicio», ¿cuál de los siguientes perfiles no figura entre sus participantes?",
       "opciones": [
         "Comité de Dirección.",
         "Jefe de Proyecto.",
@@ -140324,7 +140479,37 @@
         "Responsable de Sistemas."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se precisa que se pregunta por la tarea IAS 8.3 de MÉTRICA v3, no por una actividad genérica. La relación oficial de participantes es Comité de Dirección, Jefe de Proyecto y Responsable de Implantación; por tanto, Responsable de Sistemas es la opción que no participa en esa tarea. Cotejo curricular: ITIC Academy, Bloque 17 Adquisición de Sistemas y Rentabilidad de Inversiones 2026: https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk (MÉTRICA v3); Bloque 39 Calidad y Mantenimiento 2026: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk (implantación/aceptación y criterios); Bloque 41 ITIL y COBIT 2026: https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk (acuerdos de nivel de servicio). La academia se usa como mapa de estudio, no como autoridad técnica o normativa.",
+      "clasificacion": {
+        "A1": [
+          "A1-95",
+          "A1-106"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 17 Adquisición de Sistemas y Rentabilidad de Inversiones 2026: https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk (MÉTRICA v3); Bloque 39 Calidad y Mantenimiento 2026: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk (implantación/aceptación y criterios); Bloque 41 ITIL y COBIT 2026: https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk (acuerdos de nivel de servicio).",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 17 Adquisición de Sistemas y Rentabilidad de Inversiones 2026: https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk (MÉTRICA v3); Bloque 39 Calidad y Mantenimiento 2026: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk (implantación/aceptación y criterios); Bloque 41 ITIL y COBIT 2026: https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk (acuerdos de nivel de servicio)."
+      },
+      "etiquetas": [
+        "MÉTRICA v3",
+        "IAS",
+        "IAS 8.3",
+        "acuerdo de nivel de servicio",
+        "participantes"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:507af1ff-0457-464d-b276-be26a8826b1c/METRICA_V3_Implantacion_y_Aceptacion_del_Sistema.pdf",
+            "referencia": "Administración electrónica, MÉTRICA v3, Implantación y Aceptación del Sistema, Tarea IAS 8.3 «Determinación del Acuerdo de Nivel de Servicio»: enumera como participantes Comité de Dirección, Jefe de Proyecto y Responsable de Implantación; no incluye Responsable de Sistemas."
+          }
+        ],
+        "observaciones": "Se precisa que se pregunta por la tarea IAS 8.3 de MÉTRICA v3, no por una actividad genérica. La relación oficial de participantes es Comité de Dirección, Jefe de Proyecto y Responsable de Implantación; por tanto, Responsable de Sistemas es la opción que no participa en esa tarea. Cotejo curricular: ITIC Academy, Bloque 17 Adquisición de Sistemas y Rentabilidad de Inversiones 2026: https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk (MÉTRICA v3); Bloque 39 Calidad y Mantenimiento 2026: https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk (implantación/aceptación y criterios); Bloque 41 ITIL y COBIT 2026: https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk (acuerdos de nivel de servicio). La academia se usa como mapa de estudio, no como autoridad técnica o normativa."
+      }
     },
     {
       "id": 2891,
