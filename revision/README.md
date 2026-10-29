@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 478 (IDs 2701–2705). Acumulado: 2.705 preguntas examinadas individualmente, 2.637 verificadas (552 vigentes, 1.868 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.418 sin revisar individualmente. Hay 2.142 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 479 (IDs 2706–2710). Acumulado: 2.710 preguntas examinadas individualmente, 2.642 verificadas (556 vigentes, 1.869 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.413 sin revisar individualmente. Hay 2.145 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 ## Rectificación de estado de lotes 476–477 — 29 de octubre
 
 Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se habían editado seguían etiquetados como `vigente`: 2692, 2693 y 2694 del lote 476; 2696 y 2699 del lote 477. La causa fue pasar `vigente` de forma explícita al helper, evitando su inferencia automática de `corregida`. Se rectificó únicamente el estado y se dejó el motivo/campos editados en `rectificaciones` de ambos registros. No cambian respuestas ni se suman nuevas preguntas a la revisión. Los contadores se recalcularon con el inventario.
@@ -11,6 +11,21 @@ Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se ha
 
 
 
+## Lote 479 — 29 de octubre
+
+IDs 2706–2710 revisados individualmente frente a la Constitución consolidada por el BOE (actualización publicada el 20-05-2026) y, para el Consejo de Estado, la LO 3/1980 vigente. Originales y trazabilidad en `cambios-lote-479.json`.
+
+- **2706 — cese del Gobierno:** art. 101.1 CE incluye cese tras elecciones generales, pérdida de confianza parlamentaria prevista constitucionalmente y dimisión/fallecimiento del Presidente. La opción conservada recoge correctamente una causa de la lista, no todas. A1-1/A2-I.3.
+- **2707 — principios tributarios:** art. 31.1 CE establece capacidad económica y un sistema tributario justo inspirado en igualdad y progresividad, sin alcance confiscatorio. La progresividad es principio del sistema, no obligación de que cada impuesto individual sea progresivo. A1-1/A2-I.1 como encaje constitucional general.
+- **2708 — Consejo de Estado:** art. 107 CE lo define como supremo órgano consultivo del Gobierno. La LO 3/1980 (arts. 1 y 23) reconoce su autonomía y establece que las CCAA pueden solicitar dictamen; será preceptivo en los mismos casos previstos para el Estado cuando hayan asumido las competencias correspondientes. Se corrige la opción, que condicionaba erróneamente la preceptividad a carecer de órgano autonómico propio. Clave 2 confirmada. A1-1; A2-I.3 como encaje gubernamental general, no mención textual del Consejo en ese epígrafe.
+- **2709 — Regencia:** art. 59.3 CE: si no hay persona a quien corresponda, la Regencia nombrada por las Cortes se compone de una, tres o cinco personas. Entre opciones, cinco es la única válida. A1-1/A2-I.1.
+- **2710 — sucesión a la Corona:** art. 57.3 CE: extinguidas todas las líneas llamadas en Derecho, las Cortes proveen la sucesión en la forma más conveniente a los intereses de España. A1-1/A2-I.1.
+
+Fuentes primarias: [Constitución Española consolidada por BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 31.1, 57.3, 59.3, 101 y 107; [Ley Orgánica 3/1980 del Consejo de Estado](https://www.boe.es/eli/es/lo/1980/04/22/3), arts. 1 y 23. El texto consolidado facilita la consulta; la base jurídica es la Constitución y la Ley Orgánica publicadas oficialmente.
+
+Cotejo curricular: ITIC Academy, [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), consultada directamente en Drive: incluye Corona, Gobierno y función consultiva del Consejo de Estado. Correspondencia oficial contrastada con [A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, tema 1, y [A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, I.1/I.3. El código I.3 se registra como encaje general, no como mención expresa del Consejo de Estado.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas; 2.710 revisadas individualmente, 2.642 verificadas, 68 pendientes documentadas y 9.413 sin revisar contenido. El inventario estructural no acredita revisión individual.
 ## Lote 478 — 29 de octubre
 
 IDs 2701–2705 revisados individualmente contra la Constitución consolidada por el BOE (última actualización publicada 20-05-2026). Se conservan originales y trazabilidad en `cambios-lote-478.json`.
