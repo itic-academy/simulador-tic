@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 552 (IDs 3076–3080). Acumulado: 3080 preguntas examinadas individualmente, 3008 verificadas (631 vigentes, 2138 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9043 sin revisar individualmente. Hay 2451 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 553 (IDs 3081–3085). Acumulado: 3085 preguntas examinadas individualmente, 3013 verificadas (631 vigentes, 2143 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9038 sin revisar individualmente. Hay 2456 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 553 — 29 de octubre
+
+IDs 3081–3085 revisados individualmente con RFC del IETF, normas de IEEE y UIT-T, y materiales de ITIC Academy consultados en Drive. Se corrigieron enunciados con alcance impreciso y se cotejaron las clasificaciones A1/A2. El registro [cambios-lote-553.json](cambios-lote-553.json) conserva originales íntegros y revisiones.
+
+- **3081 — conmutación de paquetes:** se delimita a datagramas IP, pues las redes de paquetes también pueden usar circuitos virtuales; los flujos IP comparten enlaces, los datagramas se encaminan independientemente y no reservan circuito físico exclusivo. A1-108; A2-IV-8/II-8; Academy Bloque 42/43.
+- **3082 — CSMA:** se sitúa en la subcapa MAC de enlace (nivel 2); CSMA/CD corresponde a Ethernet compartido y CSMA/CA a Wi-Fi. A1-118; A2-IV-8; Academy Bloque 42/46.
+- **3083 — LLC:** en el modelo IEEE 802, LLC proporciona LSAP a protocolos de capa 3, sobre la subcapa MAC. Se aclara que Ethernet II puede usar EtherType sin cabecera LLC. A1-111/118; A2-II-8/IV-8; Academy Bloque 42/43.
+- **3084 — SDH/JDS:** se corrige la afirmación falsa: IP sí puede transportarse por SDH, por ejemplo como IP sobre PPP/SONET-SDH. SDH mapea tributarios y usa punteros para alineación; los overhead incluyen operación/supervisión. A1-113/108; A2-IV-10/IV-7; Academy Bloque 42 §7.3.
+- **3085 — MPLS shim:** en la encapsulación genérica shim sobre Ethernet/IP, las etiquetas van después del encabezado de enlace y antes del encabezado de red. Se advierte que RFC 3031 admite otras codificaciones. A1-113/115; A2-IV-10/II-8; Academy Bloque 42/43.
+
+Fuentes primarias: IETF [RFC 791](https://www.rfc-editor.org/rfc/rfc791.html) (datagramas IP) y [RFC 1812](https://www.rfc-editor.org/rfc/rfc1812.html) (reenvío/encaminamiento IP); [IEEE 802.3-2022](https://standards.ieee.org/ieee/7003/10422/) (Ethernet y CSMA/CD MAC) e [IEEE 802-2024](https://standards.ieee.org/ieee/802/10894/) (arquitectura IEEE 802), junto con [IEEE 802 Functional Requirements §5.4.2](https://www.ieee802.org/802_archive/fureq6-8.html), que especifica los LSAP de LLC hacia capa 3; ITU-T [G.707](https://www.itu.int/rec/T-REC-G.707) (interfaz SDH, tributarios y punteros); IETF [RFC 2615](https://www.rfc-editor.org/rfc/rfc2615.html) (PPP sobre SONET/SDH y transporte multiprotocolo/IP); [RFC 3031](https://www.rfc-editor.org/rfc/rfc3031.html) §§3.3/3.25.1 (arquitectura MPLS y variedad de codificaciones) y [RFC 3032](https://www.rfc-editor.org/rfc/rfc3032.html) §2 (posición de la pila shim).
+
+Cotejo en Drive: [Bloque 42, Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view), edición vigente, con conmutación/datagramas/circuitos virtuales, CSMA/CD, jerarquías PDH/SDH, WDM y MPLS; [Bloque 43, Protocolos](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view), con OSI, LLC/MAC, IP y MPLS; [Bloque 46, Redes inalámbricas](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view), con CSMA/CA y WLAN. Correspondencias oficiales contrastadas con [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) (A1) y [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) (A2 GSI) y revision/temario-oficial.json.
+
+Tras el lote se ejecutaron inventario.cjs, verificar.cjs y git diff --check. El inventario estructural no se presenta como revisión individual del contenido.
 
 ## Lote 552 — 29 de octubre
 

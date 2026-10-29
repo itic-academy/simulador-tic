@@ -149445,70 +149445,246 @@
       "id": 3081,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de estas afirmaciones es cierta para una red de conmutación de paquetes?",
+      "texto": "En una red de datagramas conmutada por paquetes, como IP, ¿qué afirmación describe correctamente el uso de los enlaces?",
       "opciones": [
-        "Una vez establecida una conexión, entre dos equipos conectados a la red de conmutación de paquetes, es posible establecer otra conexión",
-        "Una vez establecida una conexión, entre dos equipos conectados a la red de conmutación de paquetes, no es posible establecer otra conexión",
-        "No existe ningún tipo de encaminamiento",
-        "Todos los paquetes siguen el mismo camino por la red"
+        "Varios flujos pueden coexistir y compartir los enlaces; no se reserva un circuito físico exclusivo para cada uno.",
+        "Cada flujo reserva un circuito físico exclusivo durante toda la comunicación.",
+        "No se realiza encaminamiento: los paquetes se difunden a todos los equipos.",
+        "Todos los datagramas de cualquier flujo deben recorrer exactamente la misma ruta."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La pregunta se delimita a una red de datagramas IP, porque la conmutación por paquetes también puede ofrecer circuitos virtuales (por ejemplo, X.25 o Frame Relay). En IP, varios flujos pueden compartir los enlaces y recursos; cada datagrama se encamina independientemente y no se reserva un circuito físico exclusivo. Por ello pueden coexistir conexiones y sus paquetes no tienen por qué seguir todos la misma ruta. Cotejo curricular: ITIC Academy, Bloque 42 «Redes», apartados de conmutación y modos datagrama/circuito virtual; Bloque 43 trata IP y encaminamiento. Correspondencia directa A1-108 y temática A2-IV-8/II-8. Cotejo curricular: ITIC Academy, Bloque 42 «Redes», secciones de conmutación de paquetes, datagramas y circuitos virtuales; Bloque 43, IP y encaminamiento. Correspondencia directa A1-108 y temática A2-IV-8/II-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-8",
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes», secciones de conmutación de paquetes, datagramas y circuitos virtuales; Bloque 43, IP y encaminamiento. Correspondencia directa A1-108 y temática A2-IV-8/II-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 42 «Redes», secciones de conmutación de paquetes, datagramas y circuitos virtuales; Bloque 43, IP y encaminamiento. Correspondencia directa A1-108 y temática A2-IV-8/II-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas."
+      },
+      "etiquetas": [
+        "conmutación de paquetes",
+        "datagrama IP",
+        "flujos concurrentes",
+        "multiplexación estadística",
+        "encaminamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+            "referencia": "IETF RFC 791, §§1–2: IP ofrece un servicio de datagramas; cada datagrama se encamina de manera independiente y no requiere establecer un circuito exclusivo."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1812.html",
+            "referencia": "IETF RFC 1812: los routers IP reenvían datagramas entre redes; su encaminamiento se basa en las direcciones y tablas, no en un circuito físico dedicado por comunicación."
+          }
+        ],
+        "observaciones": "La pregunta se delimita a una red de datagramas IP, porque la conmutación por paquetes también puede ofrecer circuitos virtuales (por ejemplo, X.25 o Frame Relay). En IP, varios flujos pueden compartir los enlaces y recursos; cada datagrama se encamina independientemente y no se reserva un circuito físico exclusivo. Por ello pueden coexistir conexiones y sus paquetes no tienen por qué seguir todos la misma ruta. Cotejo curricular: ITIC Academy, Bloque 42 «Redes», apartados de conmutación y modos datagrama/circuito virtual; Bloque 43 trata IP y encaminamiento. Correspondencia directa A1-108 y temática A2-IV-8/II-8. Cotejo curricular: ITIC Academy, Bloque 42 «Redes», secciones de conmutación de paquetes, datagramas y circuitos virtuales; Bloque 43, IP y encaminamiento. Correspondencia directa A1-108 y temática A2-IV-8/II-8. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas."
+      }
     },
     {
       "id": 3082,
       "bloque": 0,
       "tema": 0,
-      "texto": "La familia de protocolos CSMA operan en el nivel OSI:",
+      "texto": "En el modelo OSI, ¿en qué capa se encuadra CSMA como método de acceso al medio de la subcapa MAC?",
       "opciones": [
-        "Físico",
-        "Enlace de datos",
-        "Red",
-        "Transporte"
+        "Física (nivel 1).",
+        "Enlace de datos (nivel 2).",
+        "Red (nivel 3).",
+        "Transporte (nivel 4)."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Los mecanismos CSMA son métodos de control de acceso al medio de la subcapa MAC, que forma parte de la capa de enlace de datos (nivel 2 OSI). La variante CSMA/CD se especifica para Ethernet de medio compartido semidúplex; CSMA/CA se usa en WLAN IEEE 802.11. La pregunta ya no confunde la detección física de portadora con la capa OSI del protocolo MAC. Cotejo curricular: ITIC Academy, Bloque 42, sección de métodos de acceso y CSMA/CD; Bloque 46, sección 7, DCF/CSMA/CA. Correspondencia directa A1-118/A2-IV-8. Cotejo curricular: ITIC Academy, Bloque 42 «Redes», apartado de métodos de acceso CSMA/CD; Bloque 46, sección 7, CSMA/CA de WLAN. La pregunta se refiere a capa MAC, por lo que se clasifica directamente en redes LAN. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes», apartado de métodos de acceso CSMA/CD; Bloque 46, sección 7, CSMA/CA de WLAN. La pregunta se refiere a capa MAC, por lo que se clasifica directamente en redes LAN. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 42 «Redes», apartado de métodos de acceso CSMA/CD; Bloque 46, sección 7, CSMA/CA de WLAN. La pregunta se refiere a capa MAC, por lo que se clasifica directamente en redes LAN. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas."
+      },
+      "etiquetas": [
+        "CSMA",
+        "MAC",
+        "subcapa de enlace",
+        "acceso al medio",
+        "IEEE 802"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/7003/10422/",
+            "referencia": "IEEE Std 802.3-2022, activo, especifica Ethernet y el protocolo CSMA/CD MAC para medio compartido semidúplex."
+          },
+          {
+            "url": "https://standards.ieee.org/ieee/802/10894/",
+            "referencia": "IEEE Std 802-2024, activo: arquitectura y modelos de referencia IEEE 802 y relación con capas superiores."
+          }
+        ],
+        "observaciones": "Los mecanismos CSMA son métodos de control de acceso al medio de la subcapa MAC, que forma parte de la capa de enlace de datos (nivel 2 OSI). La variante CSMA/CD se especifica para Ethernet de medio compartido semidúplex; CSMA/CA se usa en WLAN IEEE 802.11. La pregunta ya no confunde la detección física de portadora con la capa OSI del protocolo MAC. Cotejo curricular: ITIC Academy, Bloque 42, sección de métodos de acceso y CSMA/CD; Bloque 46, sección 7, DCF/CSMA/CA. Correspondencia directa A1-118/A2-IV-8. Cotejo curricular: ITIC Academy, Bloque 42 «Redes», apartado de métodos de acceso CSMA/CD; Bloque 46, sección 7, CSMA/CA de WLAN. La pregunta se refiere a capa MAC, por lo que se clasifica directamente en redes LAN. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas."
+      }
     },
     {
       "id": 3083,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el estándar Ethernet ¿qué subcapa del nivel 2 OSI se encarga de ofrecer servicios al nivel 3 (red)?",
+      "texto": "En la arquitectura de referencia IEEE 802 con subcapas LLC y MAC, ¿qué subcapa ofrece puntos de acceso de enlace (LSAP) a los protocolos de la capa de red?",
       "opciones": [
-        "MAC",
-        "LLC",
-        "TLC"
+        "MAC.",
+        "LLC.",
+        "TLC."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "En el modelo de referencia IEEE 802 con subcapas LLC/MAC, LLC proporciona los puntos LSAP mediante los que acceden los protocolos de capa 3; MAC controla el acceso al medio y ofrece sus servicios a LLC. Se formula la pregunta sobre esa arquitectura: no debe inferirse que toda trama Ethernet II use un encabezado IEEE 802.2 LLC, pues Ethernet II identifica el protocolo superior mediante EtherType. Cotejo curricular: ITIC Academy, Bloque 43, OSI/IEEE 802 y protocolos de enlace, y Bloque 42, LAN y conmutación. Correspondencia A1-111/118 y A2-II-8/IV-8. Cotejo curricular: ITIC Academy, Bloque 43, arquitectura OSI y protocolos de enlace/IEEE 802; Bloque 42, arquitectura LAN. Se pregunta por el modelo IEEE 802 con LLC/MAC, no se afirma que todo Ethernet II lleve una cabecera LLC. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas.",
+      "clasificacion": {
+        "A1": [
+          "A1-111",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-II-8",
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 43, arquitectura OSI y protocolos de enlace/IEEE 802; Bloque 42, arquitectura LAN. Se pregunta por el modelo IEEE 802 con LLC/MAC, no se afirma que todo Ethernet II lleve una cabecera LLC. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 43, arquitectura OSI y protocolos de enlace/IEEE 802; Bloque 42, arquitectura LAN. Se pregunta por el modelo IEEE 802 con LLC/MAC, no se afirma que todo Ethernet II lleve una cabecera LLC. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas."
+      },
+      "etiquetas": [
+        "IEEE 802",
+        "LLC",
+        "MAC",
+        "LSAP",
+        "EtherType",
+        "Ethernet II"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802/10894/",
+            "referencia": "IEEE Std 802-2024, activo, define el modelo de referencia IEEE 802 y su relación con protocolos de capas superiores."
+          },
+          {
+            "url": "https://www.ieee802.org/802_archive/fureq6-8.html",
+            "referencia": "IEEE 802 Functional Requirements, versión 6.8, §5.4.2: la subcapa LLC proporciona puntos LSAP a protocolos de capa 3."
+          }
+        ],
+        "observaciones": "En el modelo de referencia IEEE 802 con subcapas LLC/MAC, LLC proporciona los puntos LSAP mediante los que acceden los protocolos de capa 3; MAC controla el acceso al medio y ofrece sus servicios a LLC. Se formula la pregunta sobre esa arquitectura: no debe inferirse que toda trama Ethernet II use un encabezado IEEE 802.2 LLC, pues Ethernet II identifica el protocolo superior mediante EtherType. Cotejo curricular: ITIC Academy, Bloque 43, OSI/IEEE 802 y protocolos de enlace, y Bloque 42, LAN y conmutación. Correspondencia A1-111/118 y A2-II-8/IV-8. Cotejo curricular: ITIC Academy, Bloque 43, arquitectura OSI y protocolos de enlace/IEEE 802; Bloque 42, arquitectura LAN. Se pregunta por el modelo IEEE 802 con LLC/MAC, no se afirma que todo Ethernet II lleve una cabecera LLC. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas."
+      }
     },
     {
       "id": 3084,
       "bloque": 0,
       "tema": 0,
-      "texto": "Con respecto a la tecnología de Jerarquía Digital Síncrona (SDH/JDS) ¿cuál de las expresiones siguientes es INCORRECTA?",
+      "texto": "Sobre SDH/JDS, ¿qué afirmación es INCORRECTA?",
       "opciones": [
-        "Las tramas tributarias de las señales de Iínea pueden ser subdivididas para acomodar cargas plesiócronas, trafico ATM o unidades de menor orden. Esto supone mezclar trance de distinto tipo dando lugar a redes flexibles",
-        "EI procesamiento de la serial se lleva a cabo a nivel de STM-1, con lo que las señales de velocidades superiores son síncronas entre sí, y están en fase per ser generadas localmente por cada nodo la red",
-        "La inclusión de canales de control dentro de una trama SDH posibilita un control software total de la red",
-        "No sirven para transportar tramas de tipo IP"
+        "SDH permite mapear y multiplexar señales tributarias en contenedores virtuales.",
+        "Los punteros permiten ajustar la alineación de tributarios respecto de la trama SDH, sin exigir que todos tengan idéntica fase local.",
+        "La trama SDH incorpora bytes de overhead para funciones de operación y supervisión.",
+        "SDH no puede transportar tráfico IP, ni siquiera encapsulado en PPP."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La afirmación de que SDH no sirve para transportar tramas IP es falsa: RFC 2615 especifica PPP sobre SONET/SDH y muestra la encapsulación IP → PPP → trama SDH. SDH sí permite mapear y multiplexar señales tributarias en contenedores y usa punteros para ajustar diferencias de fase/frecuencia de tributarios plesiócronos, por lo que no es correcto afirmar que todos los STM-N se generan en fase por relojes locales. El overhead de sección/trayecto aporta funciones de operación y supervisión. Se reescriben los distractores que contenían errores múltiples y se conserva la clave D. Cotejo curricular: ITIC Academy, Bloque 42, §7.3 sobre PDH/SDH (JDS), §7.4 WDM y redes de transporte; A1-113/A1-108 y A2-IV-10/IV-7. Cotejo curricular: ITIC Academy, Bloque 42 «Redes», §7.3 PDH/SDH (JDS), §7.4 WDM y redes de transporte. Encaje directo A1-113/A2-IV-10; A1-108/A2-IV-7 por transmisión y medios. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas.",
+      "clasificacion": {
+        "A1": [
+          "A1-113",
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-10",
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes», §7.3 PDH/SDH (JDS), §7.4 WDM y redes de transporte. Encaje directo A1-113/A2-IV-10; A1-108/A2-IV-7 por transmisión y medios. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 42 «Redes», §7.3 PDH/SDH (JDS), §7.4 WDM y redes de transporte. Encaje directo A1-113/A2-IV-10; A1-108/A2-IV-7 por transmisión y medios. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas."
+      },
+      "etiquetas": [
+        "SDH",
+        "JDS",
+        "STM-1",
+        "contenedores virtuales",
+        "punteros",
+        "OAM",
+        "IP sobre SDH"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.707",
+            "referencia": "ITU-T G.707/Y.1322, interfaz de nodo de red SDH, componentes en vigor: estructura STM-N, mapeo/multiplexación de señales tributarias y mecanismos de alineación mediante punteros."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc2615.html",
+            "referencia": "IETF RFC 2615, PPP over SONET/SDH: especifica transportar datagramas multiprotocolo, incluido IP, sobre circuitos SONET/SDH; el orden indicado incluye IP sobre PPP y después el entramado SDH."
+          }
+        ],
+        "observaciones": "La afirmación de que SDH no sirve para transportar tramas IP es falsa: RFC 2615 especifica PPP sobre SONET/SDH y muestra la encapsulación IP → PPP → trama SDH. SDH sí permite mapear y multiplexar señales tributarias en contenedores y usa punteros para ajustar diferencias de fase/frecuencia de tributarios plesiócronos, por lo que no es correcto afirmar que todos los STM-N se generan en fase por relojes locales. El overhead de sección/trayecto aporta funciones de operación y supervisión. Se reescriben los distractores que contenían errores múltiples y se conserva la clave D. Cotejo curricular: ITIC Academy, Bloque 42, §7.3 sobre PDH/SDH (JDS), §7.4 WDM y redes de transporte; A1-113/A1-108 y A2-IV-10/IV-7. Cotejo curricular: ITIC Academy, Bloque 42 «Redes», §7.3 PDH/SDH (JDS), §7.4 WDM y redes de transporte. Encaje directo A1-113/A2-IV-10; A1-108/A2-IV-7 por transmisión y medios. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas."
+      }
     },
     {
       "id": 3085,
       "bloque": 0,
       "tema": 0,
-      "texto": "MPLS se encapsula en la torre de protocolos:",
+      "texto": "En la encapsulación MPLS mediante el encabezado genérico shim sobre Ethernet/IP, ¿dónde se insertan las entradas de etiqueta?",
       "opciones": [
-        "por encima del protocolo IP y por debajo del protocolo TCP",
-        "por encima del protocolo TCP y por debajo de otros protocolos de transporte",
-        "por encima de los protocolos del nivel de enlace y por debajo de IP",
-        "por encima de los protocolos del nivel de transporte"
+        "Entre el encabezado IP y TCP.",
+        "Entre los encabezados TCP y de aplicación.",
+        "Después de la cabecera de enlace de datos y antes de la cabecera de red IP.",
+        "Después de los protocolos de transporte y aplicación."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "En el caso concreto del encabezado genérico MPLS shim sobre Ethernet/IP, la etiqueta se inserta después de la cabecera de enlace y antes de la cabecera IP; de ahí la descripción didáctica de “capa 2,5”. MPLS es multiprotocolo y su arquitectura también admite etiquetas codificadas en campos de tecnologías de enlace existentes, por lo que se evita presentar la posición shim como la única encapsulación posible. Cotejo curricular: ITIC Academy, Bloque 43, §7 MPLS y Segment Routing; Bloque 42, redes WAN y §7.5 MPLS. Correspondencia directa A1-113/A1-115 y A2-IV-10/II-8. Cotejo curricular: ITIC Academy, Bloque 43 «Protocolos», §7 MPLS y Segment Routing; Bloque 42, §7.5 MPLS/WAN. Correspondencia directa A1-113/A2-IV-10 y relacionada A1-115/A2-II-8 por encaminamiento IP. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas.",
+      "clasificacion": {
+        "A1": [
+          "A1-113",
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-10",
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 43 «Protocolos», §7 MPLS y Segment Routing; Bloque 42, §7.5 MPLS/WAN. Correspondencia directa A1-113/A2-IV-10 y relacionada A1-115/A2-II-8 por encaminamiento IP. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Bloque 43 «Protocolos», §7 MPLS y Segment Routing; Bloque 42, §7.5 MPLS/WAN. Correspondencia directa A1-113/A2-IV-10 y relacionada A1-115/A2-II-8 por encaminamiento IP. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas."
+      },
+      "etiquetas": [
+        "MPLS",
+        "shim",
+        "capa de enlace",
+        "capa de red",
+        "RFC 3031",
+        "RFC 3032"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3032.html",
+            "referencia": "IETF RFC 3032, §2: en la codificación shim, las entradas de la pila MPLS aparecen después de las cabeceras de enlace de datos y antes de las cabeceras de capa de red."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3031.html",
+            "referencia": "IETF RFC 3031, §§3.3 y 3.25.1: MPLS admite distintas codificaciones; el encabezado shim es una técnica genérica entre el enlace y la red, mientras otras tecnologías pueden reutilizar campos de cabeceras existentes."
+          }
+        ],
+        "observaciones": "En el caso concreto del encabezado genérico MPLS shim sobre Ethernet/IP, la etiqueta se inserta después de la cabecera de enlace y antes de la cabecera IP; de ahí la descripción didáctica de “capa 2,5”. MPLS es multiprotocolo y su arquitectura también admite etiquetas codificadas en campos de tecnologías de enlace existentes, por lo que se evita presentar la posición shim como la única encapsulación posible. Cotejo curricular: ITIC Academy, Bloque 43, §7 MPLS y Segment Routing; Bloque 42, redes WAN y §7.5 MPLS. Correspondencia directa A1-113/A1-115 y A2-IV-10/II-8. Cotejo curricular: ITIC Academy, Bloque 43 «Protocolos», §7 MPLS y Segment Routing; Bloque 42, §7.5 MPLS/WAN. Correspondencia directa A1-113/A2-IV-10 y relacionada A1-115/A2-II-8 por encaminamiento IP. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); las correspondencias temáticas se distinguen de las menciones expresas."
+      }
     },
     {
       "id": 3086,
