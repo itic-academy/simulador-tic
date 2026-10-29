@@ -1,15 +1,31 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 481 (IDs 2716–2720). Acumulado: 2.720 preguntas examinadas individualmente, 2.652 verificadas (566 vigentes, 1.869 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.403 sin revisar individualmente. Hay 2.145 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 482 (IDs 2721–2725). Acumulado: 2.725 preguntas examinadas individualmente, 2.657 verificadas (571 vigentes, 1.869 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.398 sin revisar individualmente. Hay 2.145 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+## Rectificación de clasificación de lote 481 — 29 de octubre
+
+Al cotejar las etiquetas con los epígrafes oficiales del anexo IX A2 GSI se detectó que cuatro referencias de tema habían quedado desplazadas por una lectura incorrecta de la numeración. Se corrigieron A2 en las preguntas 2716, 2717, 2718 y 2720 (Corona→I.1, Gobierno→I.3, Cortes→I.2). La 2719 ya tenía I.1 correcto. No cambian respuestas, texto legal citado ni estados de revisión. Se registró la rectificación en `rectificaciones` de `cambios-lote-481.json`; no suma preguntas al progreso.
 ## Rectificación de estado de lotes 476–477 — 29 de octubre
 
 Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se habían editado seguían etiquetados como `vigente`: 2692, 2693 y 2694 del lote 476; 2696 y 2699 del lote 477. La causa fue pasar `vigente` de forma explícita al helper, evitando su inferencia automática de `corregida`. Se rectificó únicamente el estado y se dejó el motivo/campos editados en `rectificaciones` de ambos registros. No cambian respuestas ni se suman nuevas preguntas a la revisión. Los contadores se recalcularon con el inventario.
 
-**Estado de publicación:** el commit `46e1bbf` de `main` (lote 481) fue desplegado por GitHub Actions run [40796626076](https://github.com/itic-academy/simulador-tic/actions/runs/40796626076); jobs `build`, `report-build-status` y `deploy` completados con `success` el 29-10-2026 a las 00:50:58 UTC. GitHub Pages responde HTTP 200 y `Last-Modified: Thu, 29 Oct 2026 00:50:53 GMT`, posterior al push. Despliegue verificado.
+**Estado de publicación:** el lote 482, la rectificación temática de 481 y esta actualización están en el checkout. El último despliegue verificado es el lote 481 (commit `46e1bbf`, run [40796626076](https://github.com/itic-academy/simulador-tic/actions/runs/40796626076)); tras el push se comprobarán el siguiente workflow y la fecha del sitio antes de registrar el nuevo estado.
 
 
 
 
+## Lote 482 — 29 de octubre
+
+IDs 2721–2725 contrastados individualmente con el texto consolidado vigente de la Constitución Española (BOE, actualización publicada 20-05-2026). Las cinco claves se conservan; se desarrollan las precisiones constitucionales y su contexto. Registro íntegro: `cambios-lote-482.json`.
+
+- **2721 — delegación de facultades a las CCAA:** art. 150.2 CE permite transferencia/delegación por ley orgánica si las facultades son susceptibles por su naturaleza; exige prever medios financieros y controles estatales reservados. Clave 3. A1-3; A2-I.1 solo como marco de Constitución general, sin tema A2 específico de CCAA.
+- **2722 — Cortes Generales:** art. 66.2 CE les atribuye potestad legislativa estatal, aprobación de Presupuestos y control del Gobierno. Clave 0. A1-1/A2-I.2.
+- **2723 — atribuciones del Rey:** arts. 62.g y 62.h CE: información sobre asuntos de Estado y mando supremo de las Fuerzas Armadas; dirigir Administración Militar/defensa es atribución del Gobierno (art. 97). Clave 3. A1-1/A2-I.1.
+- **2724 — privación de bienes:** art. 33.3 CE exige causa justificada de utilidad pública o interés social, indemnización y sujeción a la ley. Para la causa que pregunta el reactivo, clave 2.
+- **2725 — moción de censura:** arts. 113.1–3 CE: propuesta de al menos una décima parte de Diputados, candidato alternativo, espera mínima de cinco días y aprobación por mayoría absoluta del Congreso. Clave 2; la espera no sustituye la mayoría absoluta. A1-1/A2-I.3.
+
+Fuentes: [Constitución Española, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 33.3, 62, 66.2, 87, 97, 113 y 150.2; [programa A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I; [programa A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX. Cotejo curricular con ITIC Academy, [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), consultada directamente en Drive. Correspondencia por tema oficial, sin atribuir al A2 epígrafes separados que no figuran en su programa.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check`: 12.123 preguntas estructuralmente válidas; 2.725 revisadas individualmente, 2.657 verificadas, 68 pendientes y 9.398 aún sin revisión individual.
 ## Lote 481 — 29 de octubre
 
 IDs 2716–2720 revisados individualmente frente al texto consolidado vigente de la Constitución Española, BOE (actualización publicada el 20-05-2026). Se conserva la clave de las cinco preguntas. Se añadieron explicación, fuentes oficiales, clasificación A1/A2 y cotejo de Academy. Registro completo: `cambios-lote-481.json`.
