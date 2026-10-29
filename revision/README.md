@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 482 (IDs 2721–2725). Acumulado: 2.725 preguntas examinadas individualmente, 2.657 verificadas (571 vigentes, 1.869 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.398 sin revisar individualmente. Hay 2.145 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 483 (IDs 2726–2735). Acumulado: 2.735 preguntas examinadas individualmente, 2.666 verificadas (580 vigentes, 1.869 corregidas y 217 históricas) y 69 pendientes documentadas (32 de fuente y 37 de ambigüedad); quedan 9.388 sin revisar individualmente. Hay 2.145 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 ## Rectificación de clasificación de lote 481 — 29 de octubre
 
 Al cotejar las etiquetas con los epígrafes oficiales del anexo IX A2 GSI se detectó que cuatro referencias de tema habían quedado desplazadas por una lectura incorrecta de la numeración. Se corrigieron A2 en las preguntas 2716, 2717, 2718 y 2720 (Corona→I.1, Gobierno→I.3, Cortes→I.2). La 2719 ya tenía I.1 correcto. No cambian respuestas, texto legal citado ni estados de revisión. Se registró la rectificación en `rectificaciones` de `cambios-lote-481.json`; no suma preguntas al progreso.
@@ -8,11 +8,29 @@ Al cotejar las etiquetas con los epígrafes oficiales del anexo IX A2 GSI se det
 
 Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se habían editado seguían etiquetados como `vigente`: 2692, 2693 y 2694 del lote 476; 2696 y 2699 del lote 477. La causa fue pasar `vigente` de forma explícita al helper, evitando su inferencia automática de `corregida`. Se rectificó únicamente el estado y se dejó el motivo/campos editados en `rectificaciones` de ambos registros. No cambian respuestas ni se suman nuevas preguntas a la revisión. Los contadores se recalcularon con el inventario.
 
-**Estado de publicación:** el lote 482 y la rectificación temática de 481 están en el commit `d34cdbd` de `main`; GitHub Actions run [40797288042](https://github.com/itic-academy/simulador-tic/actions/runs/40797288042) completó `build`, `report-build-status` y `deploy` con `success` el 29-10-2026 a las 00:57:12 UTC. GitHub Pages devuelve HTTP 200 con `Last-Modified: Thu, 29 Oct 2026 00:57:06 GMT`. Despliegue verificado.
+**Estado de publicación:** el último despliegue verificado es el commit `c091ebd` en `main`; GitHub Actions run [40797639368](https://github.com/itic-academy/simulador-tic/actions/runs/40797639368) completó todos los jobs con `success` el 29-10-2026 a las 01:00:39 UTC y Pages respondió HTTP 200 con `Last-Modified: Thu, 29 Oct 2026 01:00:33 GMT`. El lote 483 y las rectificaciones de prosa/etiquetas que se describen a continuación aún se comprobarán tras publicarse.
 
 
 
 
+## Lote 483 — 29 de octubre
+
+IDs 2726–2735 revisados frente a la Constitución consolidada por el BOE (última actualización publicada 20-05-2026), la Ley Orgánica 3/1981 y la Ley 39/2015. Trazabilidad íntegra y correcciones de la primera pasada en `cambios-lote-483.json`.
+
+- **2726 — disposiciones adicionales:** la Constitución contiene cuatro, numeradas primera a cuarta. Clave 0 (primera opción). Se corrigió una explicación inicial que trataba por error del Título II, sin tocar la clave.
+- **2727 — participación política:** art. 23.1 CE reconoce participación directa o por representantes libremente elegidos en elecciones periódicas por sufragio universal. Clave 1.
+- **2728 — Presidencia del Tribunal Constitucional:** art. 160 CE: nombramiento por el Rey, a propuesta del Tribunal en pleno, entre sus miembros, por tres años. Clave 3. A1-2/A2-I.2.
+- **2729 — organización autonómica:** art. 152.1 CE, para los Estatutos aprobados por el procedimiento del art. 151, prevé Asamblea Legislativa, Consejo de Gobierno, Presidente y Tribunal Superior de Justicia. Clave 2 (tercera opción); A1-3. A2-I.1 se usa solo como marco constitucional general.
+- **2730 — reforma de la regla sucesoria:** la preferencia del varón del art. 57.1 está en el Título II; su reforma requiere procedimiento agravado del art. 168. La opción correcta señala dos tercios de cada Cámara (clave 2); deben seguir disolución, ratificación por las nuevas Cámaras y referéndum.
+- **2731 — Título II:** comprende arts. 56–65, diez artículos. Clave 0.
+- **2732 — uso de la informática:** art. 18.4 CE encarga a la ley limitar su uso para proteger honor, intimidad y pleno ejercicio de derechos. Clave 0; los fragmentos sobre archivos administrativos corresponden al art. 105.b.
+- **2733 — potestad reglamentaria (pendiente):** art. 128.2 Ley 39/2015 impide que un reglamento establezca tributos; los arts. 122 y 124 fijan por ley los plazos de los recursos de alzada y reposición que un reglamento tampoco puede modificar contra la ley. Como al menos dos alternativas resultan inviables y el reactivo no concreta el ámbito, se conserva íntegro, se retiene su clave original sin validarla y queda `pendiente_ambiguedad`.
+- **2734 — mandato del Defensor del Pueblo:** el art. 2.1 LO 3/1981 fija cinco años, elegidos por las Cortes Generales. Clave 1.
+- **2735 — soberanía:** art. 1.2 CE: reside en el pueblo español. Clave 2.
+
+Fuentes primarias: [Constitución Española, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 1.2, 18.4, 23, 57.1, 152, 160 y 168 y disposiciones adicionales; [Ley Orgánica 3/1981, del Defensor del Pueblo](https://www.boe.es/buscar/act.php?id=BOE-A-1981-10325), art. 2.1; [Ley 39/2015](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565), arts. 122, 124 y 128.2. Cotejo curricular con ITIC Academy, [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), consultada directamente en Drive; y programas [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX. Las correspondencias generales no se presentan como epígrafes literales.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas, 2.735 revisadas individualmente, 2.666 verificadas, 69 pendientes y 9.388 aún sin revisar. La ambigüedad de 2733 no se cuenta como verificada.
 ## Lote 482 — 29 de octubre
 
 IDs 2721–2725 contrastados individualmente con el texto consolidado vigente de la Constitución Española (BOE, actualización publicada 20-05-2026). Las cinco claves se conservan; se desarrollan las precisiones constitucionales y su contexto. La explicación identifica explícitamente ordinales visibles e índices almacenados desde cero para evitar desfases. Registro íntegro: `cambios-lote-482.json`.
