@@ -1,0 +1,33 @@
+const apply=require('./aplicar-lote.cjs');
+const unity='https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/12_5_1/systemConfig/cucm_b_system-configuration-guide-1251/cucm_b_system-configuration-guide-1251_chapter_0110011.html';
+const ieeeR='https://standards.ieee.org/ieee/802.11r/3954/';
+const ciscoVlan='https://www.cisco.com/c/en/us/td/docs/switches/lan/csbms/350xseries/2_5_7/Administration/tesla-350-550/vlan-management.html';
+const ieee8021v='https://grouper.ieee.org/groups/802/1/pages/802.1v.html';
+const ituCdma='https://www.itu.int/dms_pub/itu-r/opb/hdb/R-HDB-42-2002-PDF-E.pdf';
+const ituCwdm='https://www.itu.int/rec/T-REC-G.694.2-200312-I/en';
+const records=[
+ [2991,[116],['IV-14'],['telefonía IP','Cisco Unity Connection','buzón de voz','mensajería unificada','Unified CM'],[
+  {url:unity,referencia:'Cisco Unified Communications Manager System Configuration Guide, capítulo de integración con Cisco Unity Connection: identifica Unity Connection como sistema de buzón de voz/mensajería que almacena y permite recuperar mensajes; distingue su función de call processing de Unified CM.'}
+ ],'','Se actualiza el nombre del producto a Cisco Unity Connection, sistema de buzón de voz/mensajería que almacena y permite recuperar los mensajes. Unified CM (antes CallManager) controla el establecimiento y encaminamiento de llamadas; CiscoWorks es gestión de red, no el buzón. Se evita usar “Cisco Unity” como nombre vigente impreciso.','corregida'],
+ [2992,[114],['IV-11'],['IEEE 802.11r','Fast BSS Transition','FT','roaming','redes inalámbricas'],[
+  {url:ieeeR,referencia:'IEEE Standards Association, ficha oficial de IEEE 802.11r-2008: enmienda que especifica mecanismos de Fast Basic Service Set (BSS) Transition en WLAN.'}
+ ],'','Se identifica la enmienda IEEE 802.11r, cuyo título oficial es Fast Basic Service Set (BSS) Transition. Facilita transiciones rápidas entre puntos de acceso para clientes en movimiento; no garantiza por sí sola cobertura ni ausencia total de interrupciones. La enmienda se integró posteriormente en ediciones consolidadas de IEEE 802.11.','corregida'],
+ [2993,[118],['IV-8'],['VLAN','clasificación de VLAN','MAC','subred IP','protocolo','puerto'],[
+  {url:ciscoVlan,referencia:'Cisco 350/550 Administration Guide, VLAN Management: documenta clasificación por MAC de origen, subred/IP de origen, protocolo Ethernet y VLAN predeterminada del puerto.'},
+  {url:ieee8021v,referencia:'IEEE 802.1v, suplemento de clasificación VLAN por protocolo y puerto: confirma que puede clasificarse tráfico por protocolo además del puerto de origen.'}
+ ],'','Se corrige “IP de puerto” por criterios técnicos reconocibles: dirección MAC, subred/dirección IP, protocolo y puerto de acceso. La velocidad física del enlace no es un criterio de asignación de VLAN en esta clasificación. La pregunta se refiere a criterios de pertenencia/asignación, no a funciones de QoS que puedan considerar velocidad o capacidad.','corregida'],
+ [2994,[123],['IV-15'],['CDMA','TDMA','espectro ensanchado','códigos','acceso múltiple','transmisión concurrente'],[
+  {url:ituCdma,referencia:'UIT-R, Handbook on Satellite Communications (edición 3): define CDMA como acceso múltiple en que usuarios comparten simultáneamente la misma banda y se distinguen por códigos; contrasta con TDMA, donde el acceso se comparte temporalmente.'}
+ ],'','Se elimina la comparación absoluta de anchos de banda con TDMA, pues depende de la tecnología y la configuración. La opción incorrecta ahora atribuye a CDMA intervalos temporales exclusivos y ausencia de transmisión simultánea: en CDMA los usuarios comparten la banda al mismo tiempo y se separan mediante códigos de espectro ensanchado. No se afirma que la reutilización de frecuencia en cada célula sea ilimitada ni libre de interferencia.','corregida'],
+ [2995,[113],['IV-10'],['CWDM','WDM','rejilla de longitudes de onda','20 nm','UIT-T G.694.2','canales ópticos'],[
+  {url:ituCwdm,referencia:'UIT-T G.694.2 (12/2003), recomendación en vigor: especifica la rejilla CWDM con espaciamiento de 20 nm y longitudes de onda centrales nominales de 1271 a 1611 nm (18 posiciones).'},
+  {url:'https://www.itu.int/dms_pubrec/itu-r/rec/bt/R-REC-BT.1367-2-201510-I%21%21PDF-E.pdf',referencia:'UIT-R BT.1367-2, apéndice sobre CWDM: contabiliza 18 longitudes de onda y advierte que dos próximas al pico de absorción de agua pueden no utilizarse con fibras heredadas, mientras que fibra de bajo pico de agua permite las 18.'}
+ ],'','Se sustituye la afirmación ambigua “18 definidas, pero solo 16 útiles”: la rejilla normalizada UIT-T G.694.2 define 18 longitudes de onda, separadas 20 nm entre 1271 y 1611 nm. En ciertas fibras antiguas las bandas próximas al pico de absorción de agua no se usan, pero con fibra de bajo pico de agua pueden aprovecharse las 18. CWDM puede transportar servicios/protocolos distintos y no es incompatible de forma inherente con Gigabit Ethernet.','corregida']
+];
+apply({numero:'535',fecha:'2026-10-29',records,edits:{
+ 2991:{texto:'En una solución Cisco de telefonía IP, ¿qué componente proporciona el sistema de buzón de voz y mensajería donde se almacenan los mensajes?',opciones:['Cisco Unified Communications Manager (Unified CM, antes CallManager).','Cisco Unity Connection.','Cisco VoiceCom.','CiscoWorks.'],respuesta_correcta:1},
+ 2992:{texto:'¿Qué enmienda IEEE 802.11 especifica Fast Basic Service Set (BSS) Transition, mecanismo que facilita el roaming rápido entre puntos de acceso?',opciones:['IEEE 802.11p.','IEEE 802.11r.','IEEE 802.11v.','IEEE 802.11w.'],respuesta_correcta:1},
+ 2993:{texto:'En la asignación de VLAN por criterios de clasificación de tráfico, ¿cuál de estos no es un criterio habitual?',opciones:['La dirección MAC de origen.','La dirección IP o subred IP de origen.','El protocolo Ethernet.','La velocidad física del enlace.'],respuesta_correcta:3},
+ 2994:{texto:'En CDMA de espectro ensanchado, señale la afirmación que NO describe el acceso múltiple por código:',opciones:['Los usuarios pueden transmitir simultáneamente en la misma banda y se separan mediante códigos.','El receptor utiliza los códigos para distinguir las señales de los usuarios.','El acceso asigna a cada usuario un intervalo temporal exclusivo e impide que transmita simultáneamente con los demás.','Los sistemas celulares CDMA pueden reutilizar frecuencias entre células, sujeto a la gestión de interferencias.'],respuesta_correcta:2},
+ 2995:{texto:'Según la rejilla CWDM de la recomendación UIT-T G.694.2, ¿cuántas longitudes de onda centrales nominales están definidas entre 1271 nm y 1611 nm, con separación de 20 nm?',opciones:['18.','16.','8.','4.'],respuesta_correcta:0}
+}});
