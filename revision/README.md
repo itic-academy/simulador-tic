@@ -85,7 +85,7 @@ Al cotejar las etiquetas con los epígrafes oficiales del anexo IX A2 GSI se det
 
 Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se habían editado seguían etiquetados como `vigente`: 2692, 2693 y 2694 del lote 476; 2696 y 2699 del lote 477. La causa fue pasar `vigente` de forma explícita al helper, evitando su inferencia automática de `corregida`. Se rectificó únicamente el estado y se dejó el motivo/campos editados en `rectificaciones` de ambos registros. No cambian respuestas ni se suman nuevas preguntas a la revisión. Los contadores se recalcularon con el inventario.
 
-**Estado de publicación:** lote 492 publicado: commit `e3c426b` en `main`; GitHub Actions run [40803460587](https://github.com/itic-academy/simulador-tic/actions/runs/40803460587) terminó correctamente y GitHub Pages respondió HTTP 200 con `Last-Modified: Thu, 29 Oct 2026 01:57:46 GMT`.
+**Estado de publicación:** lote 493 publicado: commit `2930d7a` en `main`; GitHub Actions run [40804267582](https://github.com/itic-academy/simulador-tic/actions/runs/40804267582) terminó correctamente y GitHub Pages respondió HTTP 200 con `Last-Modified: Thu, 29 Oct 2026 02:05:57 GMT`.
 ## Lote 488 — 29 de octubre
 
 IDs 2756–2760 revisados individualmente; se conservan en `cambios-lote-488.json` el original completo, los campos modificados y la versión resultante. Se hicieron cinco cambios de contenido, cuatro de ellos con estado `corregida`; 2760 queda `historica` por tratar un perfil XPG4 retirado.
