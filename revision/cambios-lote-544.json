@@ -1,0 +1,331 @@
+{
+  "fecha": "2026-10-29",
+  "alcance": "IDs 3036–3040; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3036,
+      "original": {
+        "id": 3036,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un firewall de paquetes IP, los paquetes entrantes:",
+        "opciones": [
+          "Primero se filtran, luego se hace el NAT",
+          "Primero se hace NAT y luego se filtran",
+          "Es igual que para los paquetes salientes",
+          "Depende de la interfaz"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3036,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un equipo Linux que reenvía tráfico IPv4 usando nftables, ¿qué orden sigue normalmente un paquete sujeto a DNAT y a filtrado de tráfico reenviado?",
+        "opciones": [
+          "La cadena filter/forward se ejecuta antes de la traducción de destino en prerouting.",
+          "DNAT en prerouting se procesa antes de la cadena filter/forward, según las prioridades habituales de Netfilter.",
+          "NAT y filtrado no pueden aplicarse al mismo paquete.",
+          "Todos los cortafuegos y sistemas operativos aplican siempre un orden universal idéntico."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La pregunta original generalizaba el orden de NAT y filtrado a cualquier cortafuegos, algo dependiente de la plataforma, las cadenas y sus prioridades. Se delimita a Linux nftables y al tráfico IP reenviado: en el flujo habitual, DNAT se aplica en prerouting antes de la cadena filter/forward. El enunciado no debe extrapolarse a paquetes destinados al propio host ni a cualquier fabricante/configuración. Cotejo curricular: ITIC Academy, Bloque 48 «Seguridad en redes y en el nivel de aplicación» (2026.1), tema A1-125 y A2-C10, cortafuegos y seguridad perimetral. Cotejo curricular: ITIC Academy, Bloque 48 «Seguridad en redes y en el nivel de aplicación» (2026.1), cortafuegos y seguridad perimetral. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); el temario de academia es material auxiliar, no fuente normativa.",
+        "clasificacion": {
+          "A1": [
+            "A1-125"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 48 «Seguridad en redes y en el nivel de aplicación» (2026.1), cortafuegos y seguridad perimetral. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 48 «Seguridad en redes y en el nivel de aplicación» (2026.1), cortafuegos y seguridad perimetral. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk"
+        },
+        "etiquetas": [
+          "firewall",
+          "cortafuegos",
+          "NAT",
+          "DNAT",
+          "filtrado",
+          "nftables",
+          "Netfilter"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://wiki.nftables.org/wiki-nftables/index.php/Netfilter_hooks",
+              "referencia": "Proyecto Netfilter/nftables, matriz de hooks y prioridades de IPv4/IPv6: en el camino habitual de paquetes reenviados, la cadena dstnat de prerouting se ejecuta antes que filter en forward; el orden de hooks y prioridades está definido por la configuración."
+            },
+            {
+              "url": "https://www.netfilter.org/projects/nftables/manpage.html",
+              "referencia": "Manual nftables, hooks prerouting y forward y tipos de cadena nat/filter: prerouting procesa paquetes entrantes antes del encaminamiento; forward procesa los que se encaminan a otro host."
+            }
+          ],
+          "observaciones": "La pregunta original generalizaba el orden de NAT y filtrado a cualquier cortafuegos, algo dependiente de la plataforma, las cadenas y sus prioridades. Se delimita a Linux nftables y al tráfico IP reenviado: en el flujo habitual, DNAT se aplica en prerouting antes de la cadena filter/forward. El enunciado no debe extrapolarse a paquetes destinados al propio host ni a cualquier fabricante/configuración. Cotejo curricular: ITIC Academy, Bloque 48 «Seguridad en redes y en el nivel de aplicación» (2026.1), tema A1-125 y A2-C10, cortafuegos y seguridad perimetral. Cotejo curricular: ITIC Academy, Bloque 48 «Seguridad en redes y en el nivel de aplicación» (2026.1), cortafuegos y seguridad perimetral. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); el temario de academia es material auxiliar, no fuente normativa."
+        }
+      }
+    },
+    {
+      "id": 3037,
+      "original": {
+        "id": 3037,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué recomendación de la ITU-R define la adaptación de los terminales videotelefónicos de banda estrecha a entornos de la red digital de servicios integrados de banda ancha (RDSI-B?",
+        "opciones": [
+          "H.322",
+          "H.264",
+          "H.323",
+          "H.321"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3037,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué recomendación ITU-T adapta terminales visuales H.320 de banda estrecha a entornos de RDSI de banda ancha (B-ISDN)?",
+        "opciones": [
+          "H.322",
+          "H.264",
+          "H.323",
+          "H.321"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La recomendación correcta es ITU-T H.321 (no ITU-R). Adapta terminales audiovisuales H.320 de banda estrecha a entornos B-ISDN/RDSI de banda ancha. Se corrigen además la sigla y el paréntesis truncados del enunciado original. Cotejo curricular: ITIC Academy, Bloque 50 «Videoconferencia, SSO y trabajo colaborativo» (2026.1), sistemas y protocolos de videoconferencia; la recomendación de adaptación H.321 es un antecedente técnico concreto. Cotejo curricular: ITIC Academy, Bloque 50 «Videoconferencia, SSO y trabajo colaborativo» (2026.1), sistemas/protocolos de videoconferencia; H.321 se incorpora como especificación histórica concreta del ámbito. https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); el temario de academia es material auxiliar, no fuente normativa.",
+        "clasificacion": {
+          "A1": [
+            "A1-130"
+          ],
+          "A2": [
+            "A2-IV-16"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 50 «Videoconferencia, SSO y trabajo colaborativo» (2026.1), sistemas/protocolos de videoconferencia; H.321 se incorpora como especificación histórica concreta del ámbito. https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 50 «Videoconferencia, SSO y trabajo colaborativo» (2026.1), sistemas/protocolos de videoconferencia; H.321 se incorpora como especificación histórica concreta del ámbito. https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk"
+        },
+        "etiquetas": [
+          "ITU-T H.321",
+          "H.320",
+          "B-ISDN",
+          "RDSI de banda ancha",
+          "videoconferencia"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/itu-t/recommendations/rec.aspx?rec=h.321",
+              "referencia": "Base oficial de recomendaciones ITU-T, H.321 (02/1998), título y resumen: adaptación de terminales audiovisuales de banda estrecha H.320 a entornos B-ISDN; la recomendación figura en vigor."
+            },
+            {
+              "url": "https://www.itu.int/rec/T-REC-H.321",
+              "referencia": "ITU-T H.321, ficha oficial: «Adaptation of H.320 visual telephone terminals to B-ISDN environments», H.321 (02/98) en vigor."
+            }
+          ],
+          "observaciones": "La recomendación correcta es ITU-T H.321 (no ITU-R). Adapta terminales audiovisuales H.320 de banda estrecha a entornos B-ISDN/RDSI de banda ancha. Se corrigen además la sigla y el paréntesis truncados del enunciado original. Cotejo curricular: ITIC Academy, Bloque 50 «Videoconferencia, SSO y trabajo colaborativo» (2026.1), sistemas y protocolos de videoconferencia; la recomendación de adaptación H.321 es un antecedente técnico concreto. Cotejo curricular: ITIC Academy, Bloque 50 «Videoconferencia, SSO y trabajo colaborativo» (2026.1), sistemas/protocolos de videoconferencia; H.321 se incorpora como especificación histórica concreta del ámbito. https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); el temario de academia es material auxiliar, no fuente normativa."
+        }
+      }
+    },
+    {
+      "id": 3038,
+      "original": {
+        "id": 3038,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Control de temperatura, ahorro de gasto de energía según la hora del día, gestión de alarmas a distancia…, son disciplinas englobadas en la:",
+        "opciones": [
+          "Teleinformática.",
+          "Automatización de procesos y robótica.",
+          "Domótica.",
+          "Telemática industrial."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3038,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El control integrado de funciones de una vivienda o edificio —por ejemplo, temperatura, iluminación, consumo energético y alarmas— se denomina:",
+        "opciones": [
+          "Teleinformática.",
+          "Automatización de procesos y robótica industrial.",
+          "Domótica (automatización del hogar y edificios).",
+          "Telemática industrial."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Domótica es la automatización y control integrado de funciones de una vivienda o edificio, como temperatura, iluminación, energía y alarmas; «teleinformática» o robótica no describen ese ámbito específico. Se conserva como aplicación de sistemas electrónicos de hogar/edificio (HBES/BACS), sin afirmar que toda domótica sea necesariamente IoT. Cotejo académico: el Bloque 42 de ITIC Academy (2026.1) cubre redes e IoT, relacionado con dispositivos conectados; no se encontró en los materiales localizados un epígrafe específico de domótica, por lo que se explicita que la correspondencia es indirecta. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), apartado IoT y redes conectadas, relacionado con los sistemas HBES/BACS; no se localizó epígrafe específico de domótica, por lo que esta correspondencia es indirecta. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); el temario de academia es material auxiliar, no fuente normativa.",
+        "clasificacion": {
+          "A1": [
+            "A1-117"
+          ],
+          "A2": [
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 42 «Redes» (2026.1), apartado IoT y redes conectadas, relacionado con los sistemas HBES/BACS; no se localizó epígrafe específico de domótica, por lo que esta correspondencia es indirecta. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "vigente. ITIC Academy, Bloque 42 «Redes» (2026.1), apartado IoT y redes conectadas, relacionado con los sistemas HBES/BACS; no se localizó epígrafe específico de domótica, por lo que esta correspondencia es indirecta. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk"
+        },
+        "etiquetas": [
+          "domótica",
+          "automatización del hogar",
+          "HBES",
+          "BACS",
+          "gestión energética",
+          "control de edificios"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://www.etsi.org/images/files/Report_CENCLCETSI_Standards_Smart_Grids.pdf",
+              "referencia": "Informe conjunto CEN/CENELEC/ETSI sobre normas para redes eléctricas inteligentes, anexo 14: identifica EN 50090 (HBES) y EN 50491 (HBES/BACS) como series de normas para automatización del hogar y edificios."
+            },
+            {
+              "url": "https://standards.iteh.ai/catalog/standards/clc/e3aa7519-33a1-4341-b2bf-e703850b74e5/en-50090-1-2011",
+              "referencia": "CENELEC EN 50090-1, vista de catálogo de la norma: HBES abarca control automático de dispositivos y aplicaciones domésticas/edificios como iluminación, calefacción y gestión de energía."
+            }
+          ],
+          "observaciones": "Domótica es la automatización y control integrado de funciones de una vivienda o edificio, como temperatura, iluminación, energía y alarmas; «teleinformática» o robótica no describen ese ámbito específico. Se conserva como aplicación de sistemas electrónicos de hogar/edificio (HBES/BACS), sin afirmar que toda domótica sea necesariamente IoT. Cotejo académico: el Bloque 42 de ITIC Academy (2026.1) cubre redes e IoT, relacionado con dispositivos conectados; no se encontró en los materiales localizados un epígrafe específico de domótica, por lo que se explicita que la correspondencia es indirecta. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), apartado IoT y redes conectadas, relacionado con los sistemas HBES/BACS; no se localizó epígrafe específico de domótica, por lo que esta correspondencia es indirecta. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); el temario de academia es material auxiliar, no fuente normativa."
+        }
+      }
+    },
+    {
+      "id": 3039,
+      "original": {
+        "id": 3039,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La tecnología dominante hoy en día en el campo de las redes locales es:",
+        "opciones": [
+          "Ethernet.",
+          "Arcnet.",
+          "Arpanet.",
+          "Sarenet."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3039,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué familia de estándares del IEEE especifica Ethernet, tecnología ampliamente utilizada en redes LAN cableadas?",
+        "opciones": [
+          "IEEE 802.3.",
+          "ARCNET.",
+          "ARPANET.",
+          "Sarenet."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se evita la afirmación mutable y sin fecha «la tecnología dominante hoy» y se convierte en pregunta definicional verificable: IEEE 802.3 es la familia que especifica Ethernet en redes LAN cableadas. ARCNET es tecnología distinta y ARPANET fue una red histórica; «Sarenet» no es la respuesta normativa. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), LAN, Ethernet y cableado; Bloque 43 «Protocolos» (2026.1), acceso y protocolos de LAN. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), LAN/Ethernet y cableado; Bloque 43 «Protocolos» (2026.1), redes locales y protocolos. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); el temario de academia es material auxiliar, no fuente normativa.",
+        "clasificacion": {
+          "A1": [
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 42 «Redes» (2026.1), LAN/Ethernet y cableado; Bloque 43 «Protocolos» (2026.1), redes locales y protocolos. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 42 «Redes» (2026.1), LAN/Ethernet y cableado; Bloque 43 «Protocolos» (2026.1), redes locales y protocolos. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk"
+        },
+        "etiquetas": [
+          "Ethernet",
+          "IEEE 802.3",
+          "LAN",
+          "redes de área local",
+          "IEEE"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://standards.ieee.org/ieee/802.3/5084/",
+              "referencia": "IEEE Standards Association, IEEE Std 802.3-2022: la familia 802.3 define Ethernet para redes de área local, acceso y metropolitanas; IEEE mantiene activo el grupo de trabajo Ethernet."
+            },
+            {
+              "url": "https://www.ieee802.org/3/",
+              "referencia": "IEEE 802.3 Ethernet Working Group: desarrolla estándares para redes Ethernet; la página registra proyectos y trabajos activos."
+            }
+          ],
+          "observaciones": "Se evita la afirmación mutable y sin fecha «la tecnología dominante hoy» y se convierte en pregunta definicional verificable: IEEE 802.3 es la familia que especifica Ethernet en redes LAN cableadas. ARCNET es tecnología distinta y ARPANET fue una red histórica; «Sarenet» no es la respuesta normativa. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), LAN, Ethernet y cableado; Bloque 43 «Protocolos» (2026.1), acceso y protocolos de LAN. Cotejo curricular: ITIC Academy, Bloque 42 «Redes» (2026.1), LAN/Ethernet y cableado; Bloque 43 «Protocolos» (2026.1), redes locales y protocolos. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); el temario de academia es material auxiliar, no fuente normativa."
+        }
+      }
+    },
+    {
+      "id": 3040,
+      "original": {
+        "id": 3040,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denomina el tamaño máximo de un segmento TCP que un dispositivo de comunicaciones puede recibir en un único trozo sin fragmentar?",
+        "opciones": [
+          "MTU (Maximum Transmission Unit)",
+          "MSS (Maximum Segment Size)",
+          "MTS (Maximum TCP Segment)",
+          "TSS (TCP Segment Size)"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3040,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En TCP, ¿qué anuncia el valor MSS de la opción TCP durante el establecimiento de conexión?",
+        "opciones": [
+          "La MTU máxima de cualquier enlace de la ruta, incluidas las cabeceras de todos los protocolos.",
+          "El máximo de datos TCP que el extremo que envía la opción está dispuesto a recibir en un segmento, sin incluir cabeceras IP y TCP.",
+          "La longitud máxima total de la trama Ethernet.",
+          "El número máximo de segmentos que pueden quedar sin confirmar."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La clave MSS era correcta, pero el enunciado podía confundir el tamaño de datos TCP con el paquete IP completo y con la MTU. Se precisa que MSS es el máximo tamaño de datos TCP que el receptor anuncia que acepta en cada segmento (sin contar cabeceras TCP/IP); MTU es el máximo tamaño de paquete de capa IP admitido por un enlace. Evítese definir MSS como «sin fragmentar», pues la fragmentación es una cuestión de IP/MTU y depende también de la ruta y configuración. Cotejo curricular: ITIC Academy, Bloque 43 «Protocolos» (2026.1), TCP/IP, transporte y segmentación; Bloque 42 «Redes» (2026.1), MTU y redes. Cotejo curricular: ITIC Academy, Bloque 43 «Protocolos» (2026.1), TCP/IP, transporte y segmentación; Bloque 42 «Redes» (2026.1), MTU y redes. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); el temario de academia es material auxiliar, no fuente normativa.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 43 «Protocolos» (2026.1), TCP/IP, transporte y segmentación; Bloque 42 «Redes» (2026.1), MTU y redes. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 43 «Protocolos» (2026.1), TCP/IP, transporte y segmentación; Bloque 42 «Redes» (2026.1), MTU y redes. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk"
+        },
+        "etiquetas": [
+          "TCP",
+          "MSS",
+          "Maximum Segment Size",
+          "MTU",
+          "segmentación",
+          "TCP/IP"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+              "referencia": "IETF RFC 9293 (STD 7), §§3.2 y 3.7.1: la opción MSS anuncia el tamaño máximo del segmento que el extremo receptor está dispuesto a aceptar; el valor limita los datos TCP, no incluye cabeceras TCP/IP. Distingue el límite IP/MTU del enlace."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc5681.html#section-2",
+              "referencia": "IETF RFC 5681, §2: define RMSS y SMSS como tamaños de segmento TCP sin cabeceras TCP/IP; los relaciona con la MTU y la capacidad de recepción."
+            }
+          ],
+          "observaciones": "La clave MSS era correcta, pero el enunciado podía confundir el tamaño de datos TCP con el paquete IP completo y con la MTU. Se precisa que MSS es el máximo tamaño de datos TCP que el receptor anuncia que acepta en cada segmento (sin contar cabeceras TCP/IP); MTU es el máximo tamaño de paquete de capa IP admitido por un enlace. Evítese definir MSS como «sin fragmentar», pues la fragmentación es una cuestión de IP/MTU y depende también de la ruta y configuración. Cotejo curricular: ITIC Academy, Bloque 43 «Protocolos» (2026.1), TCP/IP, transporte y segmentación; Bloque 42 «Redes» (2026.1), MTU y redes. Cotejo curricular: ITIC Academy, Bloque 43 «Protocolos» (2026.1), TCP/IP, transporte y segmentación; Bloque 42 «Redes» (2026.1), MTU y redes. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Correspondencias contrastadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); el temario de academia es material auxiliar, no fuente normativa."
+        }
+      }
+    }
+  ]
+}
