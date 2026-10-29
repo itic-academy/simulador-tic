@@ -1,0 +1,36 @@
+const apply=require('./aplicar-lote.cjs');
+const tetra='https://www.etsi.org/technical-groups/tcce/';
+const tetraVd='https://www.etsi.org/deliver/etsi_etr/001_099/08601/01_60/etr_08601e01p.pdf';
+const rfc4120='https://www.rfc-editor.org/rfc/rfc4120.html';
+const rfc4556='https://www.rfc-editor.org/rfc/rfc4556.html';
+const rfc4301='https://www.rfc-editor.org/rfc/rfc4301.html';
+const owaspCsrf='https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html';
+const fetchSpec='https://fetch.spec.whatwg.org/#http-cors-protocol';
+const rfc3261='https://www.rfc-editor.org/rfc/rfc3261.html';
+const records=[
+ [3001,[123],['IV-15'],['TETRA','ETSI','radiocomunicación digital','PMR','grupo de llamada','voz y datos'],[
+  {url:tetra,referencia:'ETSI TC TCCE, responsable de desarrollar y mantener el estándar TETRA: lo describe como radio móvil troncalizada digital para usuarios PMR y destaca las comunicaciones de grupo.'},
+  {url:tetraVd,referencia:'ETSI ETR 086-1, requisitos técnicos de TETRA V+D: documenta group call y servicios portadores de datos por conmutación de paquetes y de circuitos.'}
+ ],'','Se reemplaza la pregunta con varias opciones simultáneamente falsas por una afirmación positiva y única: TETRA es un estándar digital de radio móvil troncalizada profesional (PMR), con comunicación de grupo y servicios de voz y datos. El número de usuarios por celda o su comparación con GSM depende de configuración, carga y criterios, por lo que no se presenta como una propiedad absoluta.','corregida'],
+ [3002,[125],['II-13','IV-12'],['Kerberos','KDC','tercero de confianza','tickets','claves simétricas','PKINIT'],[
+  {url:rfc4120,referencia:'IETF RFC 4120, Kerberos V5: define la arquitectura AS/TGS, tickets, autenticadores y claves secretas compartidas bajo confianza en el KDC.'},
+  {url:rfc4556,referencia:'IETF RFC 4556, extensión PKINIT: incorpora criptografía de clave pública al intercambio de autenticación inicial de Kerberos; confirma que es una extensión, no la base de Kerberos.'}
+ ],'','Se precisa el alcance: el mecanismo Kerberos V5 básico se apoya en un KDC de confianza, tickets y claves secretas/simétricas; no se basa exclusivamente en criptografía asimétrica. Hay extensiones como PKINIT que sí incorporan clave pública al intercambio inicial, por lo que se evita una generalización sobre todas las implementaciones.','corregida'],
+ [3003,[125],['IV-12'],['IPsec','capa IP','capa de red','TLS','HTTPS','seguridad de paquetes'],[
+  {url:rfc4301,referencia:'IETF RFC 4301, arquitectura IPsec: proporciona servicios de seguridad para tráfico en la capa IP y define procesamiento de paquetes IP en modo transporte y túnel.'}
+ ],'','Se sustituye la expresión confusa «capa de procesamiento de paquetes» por la capa IP. IPsec protege tráfico IPv4/IPv6 mediante AH y ESP; TLS/SSL se emplea por encima del transporte para proteger protocolos de aplicación y HTTPS combina HTTP con TLS. La pregunta se refiere a IPsec como arquitectura, no al mecanismo de cifrado particular.','corregida'],
+ [3004,[126],['III-12'],['CSRF','same-origin policy','solicitudes cross-origin','cookies','token antifalsificación','seguridad web'],[
+  {url:owaspCsrf,referencia:'OWASP CSRF Prevention Cheat Sheet: explica condiciones del ataque, defensas con token, validación de Origin/Referer y por qué las cookies SameSite y las cabeceras Fetch Metadata son capas de mitigación, no un bloqueo universal del envío cross-site.'},
+  {url:fetchSpec,referencia:'WHATWG Fetch Standard, CORS protocol: diferencia el envío de solicitudes cross-origin del acceso del script a la respuesta, sujeto al control CORS; la política de mismo origen no impide universalmente todo envío.'}
+ ],'','Se reemplaza el distractor ambiguo «fácilmente identificable» por una afirmación técnica inequívocamente falsa. La política de mismo origen no bloquea todos los envíos cross-origin: ciertos formularios y recursos pueden iniciar solicitudes; CORS regula principalmente cuándo un script puede leer la respuesta. Una aplicación debe validar las peticiones autenticadas y aplicar defensas CSRF, sin confiar solo en el navegador. CSRF y XSS son vulnerabilidades distintas, aunque XSS puede permitir acciones privilegiadas y anular defensas CSRF del lado cliente.','corregida'],
+ [3005,[116],['IV-14','IV-16'],['SIP','RFC 3261','INVITE','OPTIONS','REGISTER','método de extensión'],[
+  {url:rfc3261,referencia:'IETF RFC 3261, §7.1: define seis métodos SIP básicos (REGISTER, INVITE, ACK, CANCEL, BYE y OPTIONS); extensiones documentadas pueden añadir otros métodos.'}
+ ],'','Se limita expresamente la pregunta a los seis métodos definidos por RFC 3261, evitando que «método válido» se interprete como cualquier extensión posterior. PUSH no forma parte de esos seis; INVITE, OPTIONS y REGISTER sí. La especificación admite métodos de extensión, pero ello no convierte PUSH en un método del RFC 3261.','corregida']
+];
+apply({numero:'537',fecha:'2026-10-29',records,edits:{
+ 3001:{texto:'¿Qué afirmación describe correctamente TETRA (Terrestrial Trunked Radio)?',opciones:['Es un estándar digital de radio móvil troncalizada profesional (PMR) que contempla voz, datos y comunicaciones de grupo.','Es un sistema exclusivamente analógico y solo permite llamadas individuales.','Es un protocolo de telefonía móvil GSM que no admite servicios de datos.','Es una tecnología de difusión de televisión digital terrestre.'],respuesta_correcta:0},
+ 3002:{texto:'Sobre Kerberos V5, señale la afirmación falsa acerca de su mecanismo básico:',opciones:['En el mecanismo básico, el cliente obtiene del centro de distribución de claves (KDC) credenciales/tickets protegidos con claves secretas compartidas.','El KDC actúa como tercero de confianza dentro de un reino Kerberos.','El acceso a un servicio se demuestra presentando un ticket y un autenticador.','El mecanismo básico se basa exclusivamente en claves públicas y no utiliza un KDC de confianza.'],respuesta_correcta:3},
+ 3003:{texto:'¿Qué arquitectura de seguridad proporciona protección al tráfico en la capa IP, procesando paquetes IPv4/IPv6?',opciones:['SSL, nombre histórico de una familia sustituida por TLS.','HTTPS, protocolo de aplicación HTTP protegido mediante TLS.','FTP pasivo, modalidad de conexión de datos de FTP.','IPsec, arquitectura de seguridad para el tráfico de la capa IP.'],respuesta_correcta:3},
+ 3004:{texto:'Sobre los ataques de falsificación de petición en sitios cruzados (CSRF), señale la afirmación falsa:',opciones:['Una página puede iniciar ciertas solicitudes cross-origin mediante un formulario o un recurso como una imagen.','El ataque puede aprovechar credenciales que el navegador adjunta automáticamente a una solicitud, según el tipo de credencial y sus políticas.','CORS y la política de mismo origen distinguen el envío de una solicitud cross-origin del permiso del script para leer su respuesta.','La política de mismo origen impide siempre que el navegador envíe cualquier solicitud cross-origin, con independencia del mecanismo usado.'],respuesta_correcta:3},
+ 3005:{texto:'¿Cuál NO está entre los seis métodos básicos definidos por RFC 3261 para SIP?',opciones:['PUSH.','OPTIONS.','INVITE.','REGISTER.'],respuesta_correcta:0}
+}});

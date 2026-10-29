@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 536 (IDs 2996–3000). Acumulado: 3000 preguntas examinadas individualmente, 2928 verificadas (630 vigentes, 2060 corregidas y 238 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9123 sin revisar individualmente. Hay 2372 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 537 (IDs 3001–3005). Acumulado: 3005 preguntas examinadas individualmente, 2933 verificadas (630 vigentes, 2065 corregidas y 238 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9118 sin revisar individualmente. Hay 2377 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 537 — 29 de octubre
+
+IDs 3001–3005 revisados individualmente con estándares ETSI, RFC del IETF, estándar Fetch de WHATWG y guía de seguridad OWASP. Se buscaron en Drive los materiales académicos de radio profesional, Kerberos/SSO, IPsec/seguridad web y SIP; las correspondencias se cotejaron con el programa oficial A1/A2 de las convocatorias vigentes. Se corrigieron y desambiguaron las cinco preguntas. Registro completo y originales en [cambios-lote-537.json](cambios-lote-537.json).
+
+- **3001 — TETRA:** es radio móvil troncalizada digital profesional (PMR) para voz, datos y llamadas de grupo; se evita una comparación absoluta de densidad de usuarios con GSM. A1-123; A2-IV-15; Academy Bloque 46.
+- **3002 — Kerberos:** el mecanismo básico usa un KDC de confianza, tickets y claves compartidas; PKINIT es una extensión que integra claves públicas en la autenticación inicial. A1-125; A2-II-13/IV-12; Academy Bloque 50.
+- **3003 — IPsec:** se define con precisión en la capa IP y se distingue de TLS/HTTPS, que se sitúan por encima para proteger protocolos de aplicación. A1-125; A2-IV-12; Academy Bloque 48.
+- **3004 — CSRF:** se elimina el distractor subjetivo «fácilmente identificable». La política de mismo origen no impide el envío de toda solicitud cross-origin; protege, entre otras cosas, el acceso de scripts a respuestas, y el servidor debe aplicar mitigaciones CSRF. A1-126; A2-II-13/III-12; Academy Bloque 48.
+- **3005 — métodos SIP:** PUSH no está entre los seis métodos básicos definidos en RFC 3261; se aclara que las extensiones posteriores sí pueden añadir métodos. A1-116; A2-IV-14/IV-16; Academy Bloques 43/50.
+
+Fuentes primarias y técnicas: ETSI, [grupo TETRA/TCCE](https://www.etsi.org/technical-groups/tcce/) y [ETR 086-1, voz, datos, llamadas de grupo y servicios de datos](https://www.etsi.org/deliver/etsi_etr/001_099/08601/01_60/etr_08601e01p.pdf); IETF, [RFC 4120/Kerberos V5](https://www.rfc-editor.org/rfc/rfc4120.html), [RFC 4556/PKINIT](https://www.rfc-editor.org/rfc/rfc4556.html), [RFC 4301/IPsec](https://www.rfc-editor.org/rfc/rfc4301.html) y [RFC 3261/SIP, §7.1](https://www.rfc-editor.org/rfc/rfc3261.html); WHATWG, [Fetch Standard, CORS](https://fetch.spec.whatwg.org/#http-cors-protocol); OWASP, [CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html).
+
+Cotejo en Drive: [Bloque 46 Redes inalámbricas y comunicaciones móviles, versión 2026.1](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk), radio profesional y TETRA; [Bloque 50 Videoconferencia, SSO y colaboración 2026](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk), Kerberos, SIP/SDP y videoconferencia; [Bloque 48 Seguridad en redes y aplicaciones 2026](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk), IPsec y CSRF; [Bloque 43 Protocolos 2026](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk), SIP. Clasificaciones contrastadas con revision/temario-oficial.json y anexos I y IX de las convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La academia orienta y no sustituye el programa oficial ni las fuentes primarias.
+
+Tras el lote se ejecutaron inventario.cjs, verificar.cjs y git diff --check. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 536 — 29 de octubre
 
