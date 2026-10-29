@@ -152635,14 +152635,43 @@
       "id": 3151,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a la arquitectura de sistemas de información, señale cuál de las afirmaciones es INCORRECTA:",
+      "texto": "Respecto a las arquitecturas de sistemas de información de dos y n capas, señale cuál de las afirmaciones es INCORRECTA:",
       "opciones": [
-        "En la arquitectura de 2 capas los servidores procesan la información para los clientes.",
-        "La arquitectura de n capas favorece más la escalabilidad que la de dos capas.",
-        "La arquitectura de n capas minimiza el tráfico de red frente a la de dos capas."
+        "En una arquitectura cliente-servidor de dos capas, el cliente intercambia solicitudes y datos directamente con el servidor; la distribución de lógica depende del diseño.",
+        "Una arquitectura n-tier puede facilitar el escalado independiente de tiers cuando sus componentes tienen requisitos de carga distintos.",
+        "Una arquitectura n-tier minimiza necesariamente el tráfico y la latencia de red frente a una arquitectura de dos capas."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La ventaja de escalabilidad de n-tier es potencial: separar tiers con requisitos distintos puede permitir desplegarlos y escalarlos de forma independiente, pero no la garantiza por sí sola. Más saltos y llamadas entre tiers pueden aumentar tráfico, latencia y sobrecarga; por ello la afirmación universal de que n-tier minimiza el tráfico frente a dos capas es la incorrecta. Se reformula la opción B como posibilidad condicionada y la C como afirmación absoluta falsa. A1 A1-58 y A2 A2-II-6. Cotejo curricular: ITIC Academy Bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026 (actualizado 26/09/2026), describe arquitecturas de dos, tres y n capas y que separar responsabilidades puede facilitar escalabilidad/mantenimiento. El contenido técnico advierte también que las llamadas entre tiers añadidos pueden elevar tráfico o latencia; se valida con Azure Architecture Center. https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-58"
+        ],
+        "A2": [
+          "A2-II-6"
+        ],
+        "bloque_academia": "La ventaja de escalabilidad de n-tier es potencial: separar tiers con requisitos distintos puede permitir desplegarlos y escalarlos de forma independiente, pero no la garantiza por sí sola. Más saltos y llamadas entre tiers pueden aumentar tráfico, latencia y sobrecarga; por ello la afirmación universal de que n-tier minimiza el tráfico frente a dos capas es la incorrecta. Se reformula la opción B como posibilidad condicionada y la C como afirmación absoluta falsa. A1 A1-58 y A2 A2-II-6. Cotejo curricular: ITIC Academy Bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026 (actualizado 26/09/2026), describe arquitecturas de dos, tres y n capas y que separar responsabilidades puede facilitar escalabilidad/mantenimiento. El contenido técnico advierte también que las llamadas entre tiers añadidos pueden elevar tráfico o latencia; se valida con Azure Architecture Center. https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias.",
+        "estado": "revisada",
+        "nota": "corregida. La ventaja de escalabilidad de n-tier es potencial: separar tiers con requisitos distintos puede permitir desplegarlos y escalarlos de forma independiente, pero no la garantiza por sí sola. Más saltos y llamadas entre tiers pueden aumentar tráfico, latencia y sobrecarga; por ello la afirmación universal de que n-tier minimiza el tráfico frente a dos capas es la incorrecta. Se reformula la opción B como posibilidad condicionada y la C como afirmación absoluta falsa. A1 A1-58 y A2 A2-II-6. Cotejo curricular: ITIC Academy Bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026 (actualizado 26/09/2026), describe arquitecturas de dos, tres y n capas y que separar responsabilidades puede facilitar escalabilidad/mantenimiento. El contenido técnico advierte también que las llamadas entre tiers añadidos pueden elevar tráfico o latencia; se valida con Azure Architecture Center. https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias."
+      },
+      "etiquetas": [
+        "arquitectura cliente-servidor",
+        "dos capas",
+        "n capas",
+        "escalabilidad",
+        "tráfico de red"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/azure/architecture/guide/architecture-styles/n-tier",
+            "referencia": "Microsoft Azure Architecture Center, N-tier Architecture Style: separar tiers puede permitir escalado independiente, pero la separación física añade comunicaciones de red/latencia; una capa cerrada puede generar tráfico innecesario."
+          }
+        ],
+        "observaciones": "La ventaja de escalabilidad de n-tier es potencial: separar tiers con requisitos distintos puede permitir desplegarlos y escalarlos de forma independiente, pero no la garantiza por sí sola. Más saltos y llamadas entre tiers pueden aumentar tráfico, latencia y sobrecarga; por ello la afirmación universal de que n-tier minimiza el tráfico frente a dos capas es la incorrecta. Se reformula la opción B como posibilidad condicionada y la C como afirmación absoluta falsa. A1 A1-58 y A2 A2-II-6. Cotejo curricular: ITIC Academy Bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026 (actualizado 26/09/2026), describe arquitecturas de dos, tres y n capas y que separar responsabilidades puede facilitar escalabilidad/mantenimiento. El contenido técnico advierte también que las llamadas entre tiers añadidos pueden elevar tráfico o latencia; se valida con Azure Architecture Center. https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias."
+      }
     },
     {
       "id": 3152,
@@ -152650,51 +152679,199 @@
       "tema": 0,
       "texto": "En relación con los sistemas operativos, señale cuál de las siguientes afirmaciones es CORRECTA:",
       "opciones": [
-        "WSL permite ejecutar un sistema de archivos Linux, junto con herramientas de línea de comandos y aplicaciones de GUI de Linux, directamente en Windows.",
-        "El sistema operativo macOS fue sustituido por OS X en el año 2020.",
-        "El sistema operativo Rocky Linux ha sido diseñado para ser totalmente compatible con el sistema operativo Ubuntu Server a partir de su versión 19.0.4."
+        "WSL permite ejecutar distribuciones o entornos Linux en Windows y utilizar sus herramientas de línea de comandos; con WSL 2 y WSLg, en plataformas compatibles, también se integran aplicaciones gráficas Linux.",
+        "macOS sustituyó a OS X en el año 2020.",
+        "Rocky Linux está diseñado para ser totalmente compatible con Ubuntu Server a partir de su versión 19.0.4."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se corrige la opción WSL: no se “ejecuta un sistema de archivos”; WSL ejecuta distribuciones/entornos Linux y permite usar sus herramientas de línea de comandos. Las aplicaciones GUI integradas requieren WSL 2 con WSLg y una versión de Windows compatible. La opción sobre OS X/macOS es falsa: macOS Sierra se anunció en 2016. Rocky Linux se orienta a compatibilidad con Red Hat Enterprise Linux, no Ubuntu; la versión “19.0.4” tampoco identifica una versión de Rocky. A1 A1-59/A1-60/A1-61/A1-62 y A2 A2-II-2. Cotejo curricular: ITIC Academy Bloque 27 Sistemas Operativos, edición 2026 actualizada (archivo actualizado 01/09/2026), cubre conceptos generales y los sistemas Linux, Microsoft y otros, lo que permite situar WSL en el programa oficial de sistemas operativos. No se encontró en el extracto revisado una cobertura específica de WSL; esa afirmación se valida exclusivamente con Microsoft Learn. También se usa el programa oficial A1-62 para ubicar la historia de macOS. https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-59",
+          "A1-60",
+          "A1-61",
+          "A1-62"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "Se corrige la opción WSL: no se “ejecuta un sistema de archivos”; WSL ejecuta distribuciones/entornos Linux y permite usar sus herramientas de línea de comandos. Las aplicaciones GUI integradas requieren WSL 2 con WSLg y una versión de Windows compatible. La opción sobre OS X/macOS es falsa: macOS Sierra se anunció en 2016. Rocky Linux se orienta a compatibilidad con Red Hat Enterprise Linux, no Ubuntu; la versión “19.0.4” tampoco identifica una versión de Rocky. A1 A1-59/A1-60/A1-61/A1-62 y A2 A2-II-2. Cotejo curricular: ITIC Academy Bloque 27 Sistemas Operativos, edición 2026 actualizada (archivo actualizado 01/09/2026), cubre conceptos generales y los sistemas Linux, Microsoft y otros, lo que permite situar WSL en el programa oficial de sistemas operativos. No se encontró en el extracto revisado una cobertura específica de WSL; esa afirmación se valida exclusivamente con Microsoft Learn. También se usa el programa oficial A1-62 para ubicar la historia de macOS. https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias.",
+        "estado": "revisada",
+        "nota": "corregida. Se corrige la opción WSL: no se “ejecuta un sistema de archivos”; WSL ejecuta distribuciones/entornos Linux y permite usar sus herramientas de línea de comandos. Las aplicaciones GUI integradas requieren WSL 2 con WSLg y una versión de Windows compatible. La opción sobre OS X/macOS es falsa: macOS Sierra se anunció en 2016. Rocky Linux se orienta a compatibilidad con Red Hat Enterprise Linux, no Ubuntu; la versión “19.0.4” tampoco identifica una versión de Rocky. A1 A1-59/A1-60/A1-61/A1-62 y A2 A2-II-2. Cotejo curricular: ITIC Academy Bloque 27 Sistemas Operativos, edición 2026 actualizada (archivo actualizado 01/09/2026), cubre conceptos generales y los sistemas Linux, Microsoft y otros, lo que permite situar WSL en el programa oficial de sistemas operativos. No se encontró en el extracto revisado una cobertura específica de WSL; esa afirmación se valida exclusivamente con Microsoft Learn. También se usa el programa oficial A1-62 para ubicar la historia de macOS. https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias."
+      },
+      "etiquetas": [
+        "WSL",
+        "WSL 2",
+        "WSLg",
+        "sistemas operativos",
+        "Linux",
+        "macOS",
+        "Rocky Linux"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/wsl/about",
+            "referencia": "Microsoft Learn, What is WSL?: WSL ejecuta entornos/distribuciones Linux dentro de Windows, ofrece herramientas CLI y acceso a un sistema de archivos Linux; WSL 2 usa un kernel Linux en una VM ligera."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps",
+            "referencia": "Microsoft Learn, Run Linux GUI apps on WSL: las aplicaciones gráficas Linux integradas requieren WSL 2 y WSLg, y Windows 10 build 19044+ o Windows 11."
+          },
+          {
+            "url": "https://www.apple.com/ca/newsroom/2016/09/macos-sierra-now-available-as-a-free-update/",
+            "referencia": "Apple Newsroom, 20/09/2016: anuncia macOS Sierra; el cambio de nomenclatura de OS X a macOS no se produjo en 2020."
+          },
+          {
+            "url": "https://rockylinux.org/",
+            "referencia": "Rocky Linux, sitio oficial: define Rocky como sistema empresarial compatible bug-for-bug con Red Hat Enterprise Linux, no con Ubuntu Server."
+          }
+        ],
+        "observaciones": "Se corrige la opción WSL: no se “ejecuta un sistema de archivos”; WSL ejecuta distribuciones/entornos Linux y permite usar sus herramientas de línea de comandos. Las aplicaciones GUI integradas requieren WSL 2 con WSLg y una versión de Windows compatible. La opción sobre OS X/macOS es falsa: macOS Sierra se anunció en 2016. Rocky Linux se orienta a compatibilidad con Red Hat Enterprise Linux, no Ubuntu; la versión “19.0.4” tampoco identifica una versión de Rocky. A1 A1-59/A1-60/A1-61/A1-62 y A2 A2-II-2. Cotejo curricular: ITIC Academy Bloque 27 Sistemas Operativos, edición 2026 actualizada (archivo actualizado 01/09/2026), cubre conceptos generales y los sistemas Linux, Microsoft y otros, lo que permite situar WSL en el programa oficial de sistemas operativos. No se encontró en el extracto revisado una cobertura específica de WSL; esa afirmación se valida exclusivamente con Microsoft Learn. También se usa el programa oficial A1-62 para ubicar la historia de macOS. https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias."
+      }
     },
     {
       "id": 3153,
       "bloque": 0,
       "tema": 0,
-      "texto": "El equivalente de una tabla en el modelo relacional en una base de datos NoSQL de Apache Cassandra es:",
+      "texto": "En Apache Cassandra, ¿qué término histórico designa una estructura similar a una tabla relacional y cómo se denomina en CQL 3?",
       "opciones": [
-        "Familia de columnas.",
-        "Colección.",
-        "HyperTable."
+        "Familia de columnas (column family); en CQL 3 se denomina tabla (table).",
+        "Colección, como en MongoDB; en CQL 3 se denomina documento.",
+        "HyperTable; en CQL 3 se denomina esquema relacional."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La clave original apuntaba a la terminología histórica column family (familia de columnas), que Cassandra define como similar a una tabla relacional. En CQL 3, la denominación vigente de esa estructura es table. Se explicita esta diferencia para que una pregunta actual no induzca a pensar que el esquema moderno requiere usar “familia de columnas”. Cassandra es NoSQL y su modelado no equivale a una relación normalizada con claves foráneas. A1 A1-63/A1-64 y A2 A2-II-5/A2-III-15. Cotejo curricular: ITIC Academy Bloque 29 Bases de Datos (2026, actualizado 26/09/2026), cubre SGBD, modelo relacional y NoSQL e incluye Cassandra en los ejemplos/preguntas incorporados. Cotejo con A1-63/64 y A2-II-5; A2-III-15 del programa oficial concreta las bases de datos NoSQL. La terminología histórica column family frente a table en CQL 3 se valida en Apache Cassandra Documentation. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-15"
+        ],
+        "bloque_academia": "La clave original apuntaba a la terminología histórica column family (familia de columnas), que Cassandra define como similar a una tabla relacional. En CQL 3, la denominación vigente de esa estructura es table. Se explicita esta diferencia para que una pregunta actual no induzca a pensar que el esquema moderno requiere usar “familia de columnas”. Cassandra es NoSQL y su modelado no equivale a una relación normalizada con claves foráneas. A1 A1-63/A1-64 y A2 A2-II-5/A2-III-15. Cotejo curricular: ITIC Academy Bloque 29 Bases de Datos (2026, actualizado 26/09/2026), cubre SGBD, modelo relacional y NoSQL e incluye Cassandra en los ejemplos/preguntas incorporados. Cotejo con A1-63/64 y A2-II-5; A2-III-15 del programa oficial concreta las bases de datos NoSQL. La terminología histórica column family frente a table en CQL 3 se valida en Apache Cassandra Documentation. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias.",
+        "estado": "revisada",
+        "nota": "corregida. La clave original apuntaba a la terminología histórica column family (familia de columnas), que Cassandra define como similar a una tabla relacional. En CQL 3, la denominación vigente de esa estructura es table. Se explicita esta diferencia para que una pregunta actual no induzca a pensar que el esquema moderno requiere usar “familia de columnas”. Cassandra es NoSQL y su modelado no equivale a una relación normalizada con claves foráneas. A1 A1-63/A1-64 y A2 A2-II-5/A2-III-15. Cotejo curricular: ITIC Academy Bloque 29 Bases de Datos (2026, actualizado 26/09/2026), cubre SGBD, modelo relacional y NoSQL e incluye Cassandra en los ejemplos/preguntas incorporados. Cotejo con A1-63/64 y A2-II-5; A2-III-15 del programa oficial concreta las bases de datos NoSQL. La terminología histórica column family frente a table en CQL 3 se valida en Apache Cassandra Documentation. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias."
+      },
+      "etiquetas": [
+        "Apache Cassandra",
+        "CQL",
+        "column family",
+        "familia de columnas",
+        "tabla",
+        "NoSQL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://cassandra.apache.org/_/glossary.html",
+            "referencia": "Apache Cassandra Glossary: column family es un contenedor de filas similar a una tabla relacional y se denomina table en CQL 3."
+          },
+          {
+            "url": "https://cassandra.apache.org/doc/stable/cassandra/developing/cql/cql_singlefile.html",
+            "referencia": "Apache Cassandra CQL v3 documentation: CQL v3 usa tablas, filas y columnas con significado similar a SQL, distinguiéndolas de las estructuras internas y de la terminología de Thrift/CQL v2."
+          }
+        ],
+        "observaciones": "La clave original apuntaba a la terminología histórica column family (familia de columnas), que Cassandra define como similar a una tabla relacional. En CQL 3, la denominación vigente de esa estructura es table. Se explicita esta diferencia para que una pregunta actual no induzca a pensar que el esquema moderno requiere usar “familia de columnas”. Cassandra es NoSQL y su modelado no equivale a una relación normalizada con claves foráneas. A1 A1-63/A1-64 y A2 A2-II-5/A2-III-15. Cotejo curricular: ITIC Academy Bloque 29 Bases de Datos (2026, actualizado 26/09/2026), cubre SGBD, modelo relacional y NoSQL e incluye Cassandra en los ejemplos/preguntas incorporados. Cotejo con A1-63/64 y A2-II-5; A2-III-15 del programa oficial concreta las bases de datos NoSQL. La terminología histórica column family frente a table en CQL 3 se valida en Apache Cassandra Documentation. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias."
+      }
     },
     {
       "id": 3154,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la respuesta CORRECTA respecto a las claves en el modelo relacional:",
+      "texto": "Indique la respuesta CORRECTA respecto a las superclaves y claves candidatas en el modelo relacional:",
       "opciones": [
-        "Una relación puede tener varias superclaves o no tener ninguna.",
-        "El conjunto de todos los atributos de una relación es una clave candidata.",
-        "Al eliminar un atributo de una clave candidata ésta deja de ser una superclave."
+        "Una relación puede carecer de superclaves aunque se considere el conjunto de todos sus atributos.",
+        "El conjunto de todos los atributos de una relación es siempre una clave candidata, aunque alguno pueda eliminarse sin perder unicidad.",
+        "Una clave candidata es una superclave mínima; al retirar cualquiera de sus atributos, el conjunto restante deja de ser superclave."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Una clave candidata se define como una superclave mínima. Por esa minimalidad, al retirar cualquiera de sus atributos el subconjunto deja de ser superclave. El conjunto total de atributos de una relación es una superclave, pero solo sería clave candidata cuando fuera mínimo; una relación bajo el modelo de conjuntos no puede carecer de superclaves, pues el conjunto de todos sus atributos identifica cada tupla. Se conserva como correcta la opción C y se precisan los distractores. A1 A1-64 y A2 A2-II-5/A2-III-4. Cotejo curricular: ITIC Academy Bloque 29 Bases de Datos (2026, actualizado 26/09/2026), aborda el modelo relacional, claves candidatas/superclaves y normalización, y contiene ejemplos de claves. Correspondencia con A1-64, A2-II-5 y A2-III-4. La definición formal de clave candidata como superclave mínima se contrasta con el texto académico de teoría de bases de datos citado en la pregunta. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-4"
+        ],
+        "bloque_academia": "Una clave candidata se define como una superclave mínima. Por esa minimalidad, al retirar cualquiera de sus atributos el subconjunto deja de ser superclave. El conjunto total de atributos de una relación es una superclave, pero solo sería clave candidata cuando fuera mínimo; una relación bajo el modelo de conjuntos no puede carecer de superclaves, pues el conjunto de todos sus atributos identifica cada tupla. Se conserva como correcta la opción C y se precisan los distractores. A1 A1-64 y A2 A2-II-5/A2-III-4. Cotejo curricular: ITIC Academy Bloque 29 Bases de Datos (2026, actualizado 26/09/2026), aborda el modelo relacional, claves candidatas/superclaves y normalización, y contiene ejemplos de claves. Correspondencia con A1-64, A2-II-5 y A2-III-4. La definición formal de clave candidata como superclave mínima se contrasta con el texto académico de teoría de bases de datos citado en la pregunta. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias.",
+        "estado": "revisada",
+        "nota": "corregida. Una clave candidata se define como una superclave mínima. Por esa minimalidad, al retirar cualquiera de sus atributos el subconjunto deja de ser superclave. El conjunto total de atributos de una relación es una superclave, pero solo sería clave candidata cuando fuera mínimo; una relación bajo el modelo de conjuntos no puede carecer de superclaves, pues el conjunto de todos sus atributos identifica cada tupla. Se conserva como correcta la opción C y se precisan los distractores. A1 A1-64 y A2 A2-II-5/A2-III-4. Cotejo curricular: ITIC Academy Bloque 29 Bases de Datos (2026, actualizado 26/09/2026), aborda el modelo relacional, claves candidatas/superclaves y normalización, y contiene ejemplos de claves. Correspondencia con A1-64, A2-II-5 y A2-III-4. La definición formal de clave candidata como superclave mínima se contrasta con el texto académico de teoría de bases de datos citado en la pregunta. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "superclave",
+        "clave candidata",
+        "minimalidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://catalogimages.wiley.com/images/db/pdf/9781119580645.excerpt.pdf",
+            "referencia": "Wiley, Database Management Systems, extracto sobre modelo relacional: superclave identifica unívocamente las tuplas; una superclave mínima (ningún subconjunto es superclave) es clave candidata."
+          }
+        ],
+        "observaciones": "Una clave candidata se define como una superclave mínima. Por esa minimalidad, al retirar cualquiera de sus atributos el subconjunto deja de ser superclave. El conjunto total de atributos de una relación es una superclave, pero solo sería clave candidata cuando fuera mínimo; una relación bajo el modelo de conjuntos no puede carecer de superclaves, pues el conjunto de todos sus atributos identifica cada tupla. Se conserva como correcta la opción C y se precisan los distractores. A1 A1-64 y A2 A2-II-5/A2-III-4. Cotejo curricular: ITIC Academy Bloque 29 Bases de Datos (2026, actualizado 26/09/2026), aborda el modelo relacional, claves candidatas/superclaves y normalización, y contiene ejemplos de claves. Correspondencia con A1-64, A2-II-5 y A2-III-4. La definición formal de clave candidata como superclave mínima se contrasta con el texto académico de teoría de bases de datos citado en la pregunta. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias."
+      }
     },
     {
       "id": 3155,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la respuesta INCORRECTA en relación con el lenguaje de programación Hypertext Preprocessor (PHP):",
+      "texto": "Indique la respuesta INCORRECTA en relación con el lenguaje PHP:",
       "opciones": [
-        "Cuenta con funciones HTTP que permiten manipular la salida que se envía al navegador cliente a nivel de protocolo HTTP.",
-        "Las variables van precedidas por un signo almohadilla (#).",
-        "Los nombres válidos de variables empiezan por una letra o guion bajo."
+        "La función header() puede enviar una cabecera HTTP sin procesar al cliente y, normalmente, debe ejecutarse antes de emitir contenido.",
+        "Las variables PHP van precedidas por el signo almohadilla (#).",
+        "Después del signo $, un nombre de variable válido comienza por una letra o un guion bajo."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "En PHP, las variables se escriben con el prefijo $, no con #. Tras el signo dólar, el nombre comienza por una letra o guion bajo (también admite bytes no ASCII según las reglas documentadas). La función header() envía cabeceras HTTP sin procesar; debe llamarse antes de emitir salida salvo que se controle con buffering. La opción C es válida y la B es la afirmación incorrecta. A1 A1-65/A1-68 y A2 A2-II-3/A2-II-9/A2-III-12. Cotejo curricular: ITIC Academy Bloque 30 Tecnologías de Sistemas de Información (2026, actualizado 26/09/2026), incluye desarrollo web en servidor, lenguajes y PHP; se coteja con A1-65/68 y A2-II-3/II-9/III-12. La sintaxis de variables y la función header() se verifican en el manual oficial de PHP. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-68"
+        ],
+        "A2": [
+          "A2-II-3",
+          "A2-II-9",
+          "A2-III-12"
+        ],
+        "bloque_academia": "En PHP, las variables se escriben con el prefijo $, no con #. Tras el signo dólar, el nombre comienza por una letra o guion bajo (también admite bytes no ASCII según las reglas documentadas). La función header() envía cabeceras HTTP sin procesar; debe llamarse antes de emitir salida salvo que se controle con buffering. La opción C es válida y la B es la afirmación incorrecta. A1 A1-65/A1-68 y A2 A2-II-3/A2-II-9/A2-III-12. Cotejo curricular: ITIC Academy Bloque 30 Tecnologías de Sistemas de Información (2026, actualizado 26/09/2026), incluye desarrollo web en servidor, lenguajes y PHP; se coteja con A1-65/68 y A2-II-3/II-9/III-12. La sintaxis de variables y la función header() se verifican en el manual oficial de PHP. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias.",
+        "estado": "revisada",
+        "nota": "corregida. En PHP, las variables se escriben con el prefijo $, no con #. Tras el signo dólar, el nombre comienza por una letra o guion bajo (también admite bytes no ASCII según las reglas documentadas). La función header() envía cabeceras HTTP sin procesar; debe llamarse antes de emitir salida salvo que se controle con buffering. La opción C es válida y la B es la afirmación incorrecta. A1 A1-65/A1-68 y A2 A2-II-3/A2-II-9/A2-III-12. Cotejo curricular: ITIC Academy Bloque 30 Tecnologías de Sistemas de Información (2026, actualizado 26/09/2026), incluye desarrollo web en servidor, lenguajes y PHP; se coteja con A1-65/68 y A2-II-3/II-9/III-12. La sintaxis de variables y la función header() se verifican en el manual oficial de PHP. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias."
+      },
+      "etiquetas": [
+        "PHP",
+        "variables",
+        "signo dólar",
+        "header()",
+        "cabeceras HTTP",
+        "desarrollo web servidor"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.php.net/manual/en/language.variables.basics.php",
+            "referencia": "PHP Manual, Basics: las variables se representan con $ seguido del nombre; el identificador empieza por letra o guion bajo (y admite bytes no ASCII dentro del rango documentado)."
+          },
+          {
+            "url": "https://www.php.net/manual/en/function.header.php",
+            "referencia": "PHP Manual, header: la función envía una cabecera HTTP sin procesar; normalmente debe invocarse antes de producir salida, salvo que se use buffering."
+          }
+        ],
+        "observaciones": "En PHP, las variables se escriben con el prefijo $, no con #. Tras el signo dólar, el nombre comienza por una letra o guion bajo (también admite bytes no ASCII según las reglas documentadas). La función header() envía cabeceras HTTP sin procesar; debe llamarse antes de emitir salida salvo que se controle con buffering. La opción C es válida y la B es la afirmación incorrecta. A1 A1-65/A1-68 y A2 A2-II-3/A2-II-9/A2-III-12. Cotejo curricular: ITIC Academy Bloque 30 Tecnologías de Sistemas de Información (2026, actualizado 26/09/2026), incluye desarrollo web en servidor, lenguajes y PHP; se coteja con A1-65/68 y A2-II-3/II-9/III-12. La sintaxis de variables y la función header() se verifican en el manual oficial de PHP. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view Correspondencias contrastadas con revision/temario-oficial.json y los anexos oficiales de las convocatorias GSI A1/A2 2025 (BOE-A-2025-25938 y BOE-A-2025-26262). ITIC Academy es referencia curricular; las afirmaciones técnicas se validan en fuentes primarias."
+      }
     },
     {
       "id": 3156,
