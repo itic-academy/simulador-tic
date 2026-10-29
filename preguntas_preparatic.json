@@ -136592,43 +136592,144 @@
       "id": 2806,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los fabricantes e investigadores hacen referencia a diversos factores determinantes en la calidad de la trasmisión de la voz, de entre los siguientes, determine el «crítico» para aplicaciones de tiempo real como la voz y el vídeo sobre IP:",
+      "texto": "En la transmisión de voz y vídeo por IP, ¿qué métrica expresa específicamente la variación estadística del tiempo entre llegadas de paquetes RTP?",
       "opciones": [
-        "Jitter.",
-        "Throughput.",
-        "Delay.",
-        "Packet Loss."
+        "Jitter (variación del tiempo entre llegadas).",
+        "Throughput (caudal útil).",
+        "Delay (retardo unidireccional o extremo a extremo).",
+        "Packet loss (pérdida de paquetes)."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva la clave y se elimina el ambiguo superlativo «el crítico», ya que retardo, variación del retardo y pérdida de paquetes son parámetros relevantes para tiempo real. El enunciado ahora pregunta qué métrica expresa específicamente la variación estadística del tiempo entre llegadas: jitter. Cotejo curricular: ITIC Academy, Redes 2026.1: QoS en IP y transmisión multimedia; correspondencia oficial A1-108/A1-115/A2-II-8. El material de Academy se usa como mapa temático, no como autoridad técnica o legal.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, Redes 2026.1: QoS en IP y transmisión multimedia; correspondencia oficial A1-108/A1-115/A2-II-8.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Redes 2026.1: QoS en IP y transmisión multimedia; correspondencia oficial A1-108/A1-115/A2-II-8."
+      },
+      "etiquetas": [
+        "QoS",
+        "RTP",
+        "jitter",
+        "voz sobre IP"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3550.html",
+            "referencia": "RFC 3550, §6.4.1: define el jitter interarrival RTP como variación estadística de los tiempos de llegada de paquetes."
+          }
+        ],
+        "observaciones": "Se conserva la clave y se elimina el ambiguo superlativo «el crítico», ya que retardo, variación del retardo y pérdida de paquetes son parámetros relevantes para tiempo real. El enunciado ahora pregunta qué métrica expresa específicamente la variación estadística del tiempo entre llegadas: jitter. Cotejo curricular: ITIC Academy, Redes 2026.1: QoS en IP y transmisión multimedia; correspondencia oficial A1-108/A1-115/A2-II-8. El material de Academy se usa como mapa temático, no como autoridad técnica o legal."
+      }
     },
     {
       "id": 2807,
       "bloque": 0,
       "tema": 0,
-      "texto": "Identifique el rango de frecuencias que se utiliza en el canal ascendente o de retorno en una red HFC (Hybrid Fiber Coaxial):",
+      "texto": "En un perfil DOCSIS clásico de red HFC con canalización downstream norteamericana de 6 MHz, ¿qué rango se reserva para el canal ascendente o de retorno?",
       "opciones": [
-        "De 50 a 550 MHz.",
-        "De 5 a 50 MHz.",
-        "De 550 a 860 MHz.",
-        "De 5 a 860 MHz."
+        "50–550 MHz.",
+        "5–42 MHz.",
+        "550–860 MHz.",
+        "5–860 MHz."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El original generalizaba «HFC» sin delimitar región, canalización ni generación y daba 5–50 MHz, valor que no coincide con los perfiles DOCSIS citados. Se delimita al perfil clásico norteamericano DOCSIS con canales downstream de 6 MHz: retorno 5–42 MHz. Los perfiles europeos y plantas modernizadas pueden tener otros límites; no se presenta 5–42 como universal. Cotejo curricular: ITIC Academy, Redes 2026.1: redes CATV/HFC y medios/coaxial; correspondencia A1-108/A1-121/A2-IV-7/IV-10. El material de Academy se usa como mapa temático, no como autoridad técnica o legal.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-121"
+        ],
+        "A2": [
+          "A2-IV-7",
+          "A2-IV-10"
+        ],
+        "bloque_academia": "ITIC Academy, Redes 2026.1: redes CATV/HFC y medios/coaxial; correspondencia A1-108/A1-121/A2-IV-7/IV-10.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, Redes 2026.1: redes CATV/HFC y medios/coaxial; correspondencia A1-108/A1-121/A2-IV-7/IV-10."
+      },
+      "etiquetas": [
+        "HFC",
+        "DOCSIS",
+        "canal de retorno",
+        "CATV"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://account.cablelabs.com/server/alfresco/e3fd2614-2d4c-4902-a7e3-e721f729be0f",
+            "referencia": "CableLabs DOCSIS 1.0 RFI: en la opción norteamericana de canalización downstream de 6 MHz, retorno upstream 5–42 MHz; Europa 5–65 MHz."
+          },
+          {
+            "url": "https://account.cablelabs.com/server/alfresco/52c04a05-d1c2-4384-a642-a7891aaabf7f",
+            "referencia": "CableLabs DOCSIS 3.0 PHY: rangos upstream estándar 5–42 MHz (6 MHz) y 5–65 MHz (8 MHz)."
+          },
+          {
+            "url": "https://account.cablelabs.com/server/alfresco/4eb470eb-aca3-4e64-af88-773b8c594fbd",
+            "referencia": "CableLabs DOCSIS 3.1, rangos configurables de retorno 5–42, 5–65 y 5–85 MHz."
+          }
+        ],
+        "observaciones": "El original generalizaba «HFC» sin delimitar región, canalización ni generación y daba 5–50 MHz, valor que no coincide con los perfiles DOCSIS citados. Se delimita al perfil clásico norteamericano DOCSIS con canales downstream de 6 MHz: retorno 5–42 MHz. Los perfiles europeos y plantas modernizadas pueden tener otros límites; no se presenta 5–42 como universal. Cotejo curricular: ITIC Academy, Redes 2026.1: redes CATV/HFC y medios/coaxial; correspondencia A1-108/A1-121/A2-IV-7/IV-10. El material de Academy se usa como mapa temático, no como autoridad técnica o legal."
+      }
     },
     {
       "id": 2808,
       "bloque": 0,
       "tema": 0,
-      "texto": "El protocolo SSL v.3:",
+      "texto": "En el protocolo histórico SSL 3.0, ¿qué mecanismo podía emplearse durante el handshake para establecer el secreto pre-maestro (pre-master secret)?",
       "opciones": [
-        "Trabaja tanto sobre TCP como sobre UDP.",
-        "Hasta hace pocos años los navegadores que incorporaban SSL tenían su exportación desde EE UU limitada a claves de 128 bits.",
-        "Es idéntico al protocolo TLS, aunque este último está normalizado por el IETF mediante un RFC.",
-        "Intercambia las claves secretas mediante el ensobrado digital (digital envelopment) o mediante Diffie-Hellman."
+        "Transportarlo en claro tanto sobre TCP como sobre UDP.",
+        "Cifrarlo siempre con claves de 128 bits, pues ese era el límite de exportación estadounidense.",
+        "Usar exclusivamente Diffie-Hellman, sin intercambio RSA.",
+        "Emplear transporte de clave RSA o un intercambio Diffie-Hellman, según la suite negociada."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Reactivo histórico. SSLv3 puede realizar intercambio RSA (transporte cifrado del pre-master secret) o Diffie-Hellman, según la suite. No es idéntico a TLS y no debe usarse: RFC 7568 lo prohíbe normativamente. Se elimina la expresión no técnica «ensobrado digital». Cotejo curricular: ITIC Academy, Protocolos 2026.1: TLS/SSL y protocolos seguros; correspondencia A1-125/A1-126/A2-III-12/A2-IV-12. La evaluación se limita al protocolo SSLv3 histórico. El material de Academy se usa como mapa temático, no como autoridad técnica o legal.",
+      "clasificacion": {
+        "A1": [
+          "A1-125",
+          "A1-126"
+        ],
+        "A2": [
+          "A2-III-12",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, Protocolos 2026.1: TLS/SSL y protocolos seguros; correspondencia A1-125/A1-126/A2-III-12/A2-IV-12. La evaluación se limita al protocolo SSLv3 histórico.",
+        "estado": "revisada",
+        "nota": "historica. ITIC Academy, Protocolos 2026.1: TLS/SSL y protocolos seguros; correspondencia A1-125/A1-126/A2-III-12/A2-IV-12. La evaluación se limita al protocolo SSLv3 histórico."
+      },
+      "etiquetas": [
+        "SSLv3",
+        "TLS",
+        "criptografía",
+        "protocolos seguros"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc6101.html",
+            "referencia": "RFC 6101, §5.6.3 y §6.1: SSLv3 contempla intercambio de claves RSA y Diffie-Hellman."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc7568.html",
+            "referencia": "RFC 7568, §3: SSLv3 está obsoleto y MUST NOT ser utilizado."
+          }
+        ],
+        "observaciones": "Reactivo histórico. SSLv3 puede realizar intercambio RSA (transporte cifrado del pre-master secret) o Diffie-Hellman, según la suite. No es idéntico a TLS y no debe usarse: RFC 7568 lo prohíbe normativamente. Se elimina la expresión no técnica «ensobrado digital». Cotejo curricular: ITIC Academy, Protocolos 2026.1: TLS/SSL y protocolos seguros; correspondencia A1-125/A1-126/A2-III-12/A2-IV-12. La evaluación se limita al protocolo SSLv3 histórico. El material de Academy se usa como mapa temático, no como autoridad técnica o legal."
+      }
     },
     {
       "id": 2809,
@@ -136642,21 +136743,80 @@
         "Una circular"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se confirma la opción «una norma con rango de Ley», conforme al artículo 25.1. No debe confundirse con el apartado 2: la atribución del ejercicio a órganos administrativos puede hacerse por disposición de rango legal o reglamentario. Cotejo curricular: ITIC Academy, bloque de actuación administrativa: procedimiento y régimen jurídico del sector público; correspondencia A1-8/A2-I-8. La respuesta se contrasta directamente con BOE. El material de Academy se usa como mapa temático, no como autoridad técnica o legal.",
+      "clasificacion": {
+        "A1": [
+          "A1-8"
+        ],
+        "A2": [
+          "A2-I-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque de actuación administrativa: procedimiento y régimen jurídico del sector público; correspondencia A1-8/A2-I-8. La respuesta se contrasta directamente con BOE.",
+        "estado": "revisada",
+        "nota": "vigente. ITIC Academy, bloque de actuación administrativa: procedimiento y régimen jurídico del sector público; correspondencia A1-8/A2-I-8. La respuesta se contrasta directamente con BOE."
+      },
+      "etiquetas": [
+        "Ley 40/2015",
+        "potestad sancionadora",
+        "principio de legalidad"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566&p=20260929&tn=0",
+            "referencia": "Ley 40/2015, artículo 25.1, texto consolidado consultado: reconocimiento expreso de la potestad sancionadora por norma con rango de Ley."
+          }
+        ],
+        "observaciones": "Se confirma la opción «una norma con rango de Ley», conforme al artículo 25.1. No debe confundirse con el apartado 2: la atribución del ejercicio a órganos administrativos puede hacerse por disposición de rango legal o reglamentario. Cotejo curricular: ITIC Academy, bloque de actuación administrativa: procedimiento y régimen jurídico del sector público; correspondencia A1-8/A2-I-8. La respuesta se contrasta directamente con BOE. El material de Academy se usa como mapa temático, no como autoridad técnica o legal."
+      }
     },
     {
       "id": 2810,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿A cuál de los siguientes entes no les es de aplicación la Ley 9/2017 de Contratos del Sector Público?",
+      "texto": "Según el ámbito subjetivo de la Ley 9/2017 (LCSP), ¿a cuál de estas entidades no resulta aplicable la Ley como entidad del sector público? Considérese la sujeción de los contratos a sus reglas y exclusiones específicas.",
       "opciones": [
-        "Al Ministerio de Defensa",
-        "Al INEM",
-        "A la Seguridad Social",
-        "Se aplica a todos los anteriores"
+        "A la Administración General del Estado, incluido un ministerio.",
+        "Al Servicio Público de Empleo Estatal (SEPE), organismo autónomo sucesor del INEM.",
+        "A las entidades gestoras y los servicios comunes de la Seguridad Social.",
+        "Se aplica subjetivamente a todas las anteriores."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se actualiza «INEM» a su sucesor institucional, el SEPE, y se precisa que se pregunta por inclusión subjetiva: AGE (Ministerio), organismo autónomo SEPE y entidades gestoras/servicios comunes de Seguridad Social aparecen en el artículo 3. Las exclusiones de defensa/seguridad del artículo 5 afectan a ciertos contratos, no hacen que el Ministerio deje de estar incluido como entidad. Por tanto, la respuesta correcta sigue siendo «se aplica a todos los anteriores». Cotejo curricular: ITIC Academy, bloque de contratación pública/actuación administrativa: ámbito subjetivo de la LCSP; correspondencia A1-11/A2-I-8. El material de Academy se usa como mapa temático, no como autoridad técnica o legal.",
+      "clasificacion": {
+        "A1": [
+          "A1-11"
+        ],
+        "A2": [
+          "A2-I-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque de contratación pública/actuación administrativa: ámbito subjetivo de la LCSP; correspondencia A1-11/A2-I-8.",
+        "estado": "revisada",
+        "nota": "corregida. ITIC Academy, bloque de contratación pública/actuación administrativa: ámbito subjetivo de la LCSP; correspondencia A1-11/A2-I-8."
+      },
+      "etiquetas": [
+        "Ley 9/2017",
+        "LCSP",
+        "ámbito subjetivo",
+        "SEPE"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-29",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902",
+            "referencia": "Ley 9/2017, artículos 2 y 3: contratos de AGE, entidades gestoras de Seguridad Social y organismos autónomos quedan en el ámbito subjetivo, sujeto a exclusiones de contratos concretos."
+          },
+          {
+            "url": "https://www.sepe.es/HomeSepe/que-es-el-sepe/comunicacion-institucional/publicaciones/publicaciones-oficiales/listado-pub-sepe/carta-de-servicios-sepe-2025",
+            "referencia": "SEPE, Carta de Servicios 2025–2026: el SEPE asumió desde 2003 las funciones del antiguo INEM."
+          }
+        ],
+        "observaciones": "Se actualiza «INEM» a su sucesor institucional, el SEPE, y se precisa que se pregunta por inclusión subjetiva: AGE (Ministerio), organismo autónomo SEPE y entidades gestoras/servicios comunes de Seguridad Social aparecen en el artículo 3. Las exclusiones de defensa/seguridad del artículo 5 afectan a ciertos contratos, no hacen que el Ministerio deje de estar incluido como entidad. Por tanto, la respuesta correcta sigue siendo «se aplica a todos los anteriores». Cotejo curricular: ITIC Academy, bloque de contratación pública/actuación administrativa: ámbito subjetivo de la LCSP; correspondencia A1-11/A2-I-8. El material de Academy se usa como mapa temático, no como autoridad técnica o legal."
+      }
     },
     {
       "id": 2811,
