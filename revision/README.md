@@ -1,15 +1,28 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 479 (IDs 2706–2710). Acumulado: 2.710 preguntas examinadas individualmente, 2.642 verificadas (556 vigentes, 1.869 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.413 sin revisar individualmente. Hay 2.145 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado localmente: 480 (IDs 2711–2715). Acumulado: 2.715 preguntas examinadas individualmente, 2.647 verificadas (561 vigentes, 1.869 corregidas y 217 históricas) y 68 pendientes documentadas (32 de fuente y 36 de ambigüedad); quedan 9.408 sin revisar individualmente. Hay 2.145 preguntas con cambios en enunciado, opciones o clave respecto del original, recalculado comparando esos campos en los registros completos. Los contadores se recalcularon sobre el estado del banco y los registros; inventario estructural no equivale a revisión de contenido.
 ## Rectificación de estado de lotes 476–477 — 29 de octubre
 
 Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se habían editado seguían etiquetados como `vigente`: 2692, 2693 y 2694 del lote 476; 2696 y 2699 del lote 477. La causa fue pasar `vigente` de forma explícita al helper, evitando su inferencia automática de `corregida`. Se rectificó únicamente el estado y se dejó el motivo/campos editados en `rectificaciones` de ambos registros. No cambian respuestas ni se suman nuevas preguntas a la revisión. Los contadores se recalcularon con el inventario.
 
-**Estado de publicación:** el último `main` confirmado en GitHub continúa siendo el lote 475 (`88480dde`). Lotes 476–478 y la rectificación constan en commits locales, pero `git push origin main` sigue fallando con `getaddrinfo() thread failed to start`; no se consideran publicados ni se da por verificado su despliegue. Se reintentará en el siguiente ciclo. El HTTP 200 visto antes de estos commits no prueba que la página los incluya.
-**Estado de publicación:** el último `main` confirmado en GitHub es el lote 475 (`88480dde`). Los lotes 476 y 477 tienen commits locales, pero los intentos de `git push origin main` fallaron con `getaddrinfo() thread failed to start`; no se consideran publicados ni se da por verificado su despliegue. La siguiente ejecución reintentará la conexión. El HTTP 200 observado anteriormente en GitHub Pages corresponde a una versión previa y no prueba que incluya esos commits.
+**Estado de publicación:** lote 480 y esta actualización de progreso están aplicados en el checkout; aún se comprobarán el push de `main`, la acción de Pages y la versión servida antes de marcar la publicación como verificada.
 
 
 
+
+## Lote 480 — 29 de octubre
+
+IDs 2711–2715 revisados individualmente. El texto y las claves se conservan donde eran correctos; se añadieron aclaraciones, referencias primarias, cotejo de Academy y clasificación A1/A2. Trazabilidad completa en `cambios-lote-480.json`.
+
+- **2711 — reunión y manifestación:** art. 21 CE: no se requiere autorización previa para reuniones pacíficas y sin armas; sí comunicación previa para reuniones en lugares de tránsito público y manifestaciones, y solo cabe prohibición por razones fundadas de alteración del orden público con peligro para personas o bienes. La opción se refiere al derecho general y es correcta. A1-1/A2 GSI I.1.
+- **2712 — Gobierno:** art. 97 CE atribuye dirección de política interior/exterior, Administración civil y militar y defensa del Estado, además de función ejecutiva y potestad reglamentaria. Clave 2 confirmada. A1-1/A2 GSI I.3.
+- **2713 — Congreso:** art. 68.1 CE fija entre 300 y 400 Diputados; es un rango constitucional y no el tamaño de una legislatura concreta. Clave 0 confirmada. A1-1/A2 GSI I.2.
+- **2714 — Justicia:** art. 117.1 CE distingue que la justicia emana del pueblo y se administra en nombre del Rey por Jueces y Magistrados. Clave 3 confirmada. A1-2; A2 GSI I.1 se deja como marco general, sin atribuirle un epígrafe judicial específico.
+- **2715 — tutela judicial:** art. 24.1 CE garantiza tutela judicial efectiva a todas las personas en defensa de derechos e intereses legítimos, sin indefensión; no limita el titular a españoles o ciudadanos de la UE. Clave 3 confirmada. A1-1/A2 GSI I.1.
+
+Fuentes primarias: [Constitución Española consolidada por BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 21, 24.1, 68.1, 97 y 117.1. Cotejo curricular individual con ITIC Academy, [Constitución, Organización del Estado y AGE 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), consultada directamente en Drive, y con [programa A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, y [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX. Las correspondencias son a epígrafes oficiales; el encaje general se marca como tal y no como mención literal de cada materia.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados correctamente: 12.123 preguntas estructuralmente válidas; 2.715 revisadas individualmente, 2.647 verificadas, 68 pendientes de resolución y 9.408 aún sin revisión individual. No se ha contado el inventario automático como revisión de contenido.
 
 ## Lote 479 — 29 de octubre
 
