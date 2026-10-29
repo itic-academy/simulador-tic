@@ -5,7 +5,7 @@ Estado parcial, no revisión completa del banco. Publicación desde la rama `mai
 
 Auditoría del contador detectó que cinco reactivos cuyo texto u opciones se habían editado seguían etiquetados como `vigente`: 2692, 2693 y 2694 del lote 476; 2696 y 2699 del lote 477. La causa fue pasar `vigente` de forma explícita al helper, evitando su inferencia automática de `corregida`. Se rectificó únicamente el estado y se dejó el motivo/campos editados en `rectificaciones` de ambos registros. No cambian respuestas ni se suman nuevas preguntas a la revisión. Los contadores se recalcularon con el inventario.
 
-**Estado de publicación:** lote 481 y esta actualización están aplicados en el checkout; se verificarán el push, la acción de Pages y la versión servida antes de registrar la publicación.
+**Estado de publicación:** el commit `46e1bbf` de `main` (lote 481) fue desplegado por GitHub Actions run [40796626076](https://github.com/itic-academy/simulador-tic/actions/runs/40796626076); jobs `build`, `report-build-status` y `deploy` completados con `success` el 29-10-2026 a las 00:50:58 UTC. GitHub Pages responde HTTP 200 y `Last-Modified: Thu, 29 Oct 2026 00:50:53 GMT`, posterior al push. Despliegue verificado.
 
 
 
