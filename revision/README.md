@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 562 (IDs 3126–3130). Acumulado: 3130 preguntas examinadas individualmente, 3058 verificadas (638 vigentes, 2181 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 8993 sin revisar individualmente. Hay 2492 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 563 (IDs 3131–3135). Acumulado: 3135 preguntas examinadas individualmente, 3063 verificadas (641 vigentes, 2183 corregidas y 239 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 8988 sin revisar individualmente. Hay 2495 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 563 — 29 de octubre
+
+IDs 3131–3135 revisados individualmente contra el TREBEP, ISO/IEC 38500:2024, la documentación del proyecto CKAN y fuentes originales sobre sistemas ejecutivos y Balanced Scorecard. Se precisó la diferencia entre gobernanza y gestión TIC, se acotaron los ESS/EIS al apoyo a dirección estratégica y se normalizó la descripción del cuadro de mando integral. Registro íntegro: [cambios-lote-563.json](cambios-lote-563.json).
+
+- **3131 — rehabilitación tras inhabilitación:** el art. 68.2 TREBEP permite solicitarla; la concesión es excepcional y potestativa, atendiendo a circunstancias y entidad del delito. A1-24; A2-I-8; Academy Bloques 03 y 07.
+- **3132 — gobernanza TIC:** ISO/IEC 38500:2024 orienta a órganos de gobierno, a quienes corresponde gobernar el uso actual y futuro de TI; la gestión ejecutiva/operativa es distinta. A1-30; A2-I-9 solo contextual; Academy Bloque 10 §1 (2026.4).
+- **3133 — CKAN:** sistema open source de gestión de datos para catálogos/portales de datos abiertos; el cotejo Academy del Bloque 10 se limita al currículo de datos abiertos y no atribuye al temario el nombre del producto. A1-31; A2-I-9.
+- **3134 — ESS/EIS:** apoyo a alta dirección con información seleccionada/agregada y herramientas accesibles para seguimiento y decisiones estratégicas; no se confunde con TPS ni con la mera elaboración de informes. A1-28; A2-II-4; Academy Bloque 12 (2026.2).
+- **3135 — Balanced Scorecard:** cuatro perspectivas clásicas: financiera, cliente, procesos internos, aprendizaje y crecimiento. A1-33; A2-II-4; Academy Bloque 12 §3.1.
+
+Fuentes primarias y originales: [TREBEP, RDL 5/2015](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719), art. 68.2; [ISO/IEC 38500:2024](https://www.iso.org/standard/81684.html), norma publicada y dirigida a órganos de gobierno; [CKAN, sistema de gestión de datos open source](https://ckan.org/) y [FAQ técnica del proyecto](https://ckan.org/faq/technical); Rockart y Treacy, [The CEO Goes On-Line](https://hbr.org/1982/01/the-ceo-goes-on-line), HBR (1982); Kaplan y Norton, [The Balanced Scorecard—Measures that Drive Performance](https://hbr.org/1992/01/the-balanced-scorecard-measures-that-drive-performance), HBR (1992). Programas oficiales: anexos I/IX de [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), en temario-oficial.json. Cotejo de academia Drive: [Bloque 03 actuación administrativa](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view) (2026.2), [Bloque 07 empleo](https://drive.google.com/file/d/1TCiFKKRdum7eVCEog-AOw6KgwzGp1ZP4/view) (2026.1), [Bloque 10 gobernanza TIC/datos abiertos](https://drive.google.com/file/d/1alTzv7f2Katg4EdxJ72SYkLm6UScCCho/view) (2026.4) y [Bloque 12 dirección TIC/BI](https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view) (2026.2). La academia sirve de cotejo curricular, no de autoridad normativa.
+
+Tras el lote se ejecutaron inventario.cjs, verificar.cjs y git diff --check. El inventario estructural no equivale a revisión individual del contenido.
 
 ## Lote 562 — 29 de octubre
 
