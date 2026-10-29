@@ -1,7 +1,7 @@
 const apply = require('./aplicar-lote.cjs');
 
 const records = [
-  [2821, ['11'], ['I-8'], ['LCSP', 'procedimiento abierto simplificado abreviado', 'PRTR'], [
+  [2821, ['11'], [], ['LCSP', 'procedimiento abierto simplificado abreviado', 'PRTR'], [
     { url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2020-17340', referencia: 'RDL 36/2020, art. 51: umbral de valor estimado inferior a 100.000 euros para suministros y servicios financiados con fondos PRTR; se excluyen prestaciones de carácter intelectual.' },
     { url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902', referencia: 'Ley 9/2017, art. 159.6: regula la tramitación específica del procedimiento abierto simplificado abreviado.' }
   ], '', 'Se conserva la clave del umbral PRTR, pero se delimitan sus condiciones. El artículo 51 RDL 36/2020 permite aplicar la tramitación del art. 159.6 LCSP a suministros/servicios financiados con PRTR con valor estimado inferior a 100.000 euros, excluidas prestaciones de carácter intelectual. No se confunde con el umbral ordinario del art. 159.6.', 'corregida'],

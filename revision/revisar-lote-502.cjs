@@ -1,0 +1,67 @@
+const apply = require('./aplicar-lote.cjs');
+
+const records = [
+  [2826, ['80'], ['I-6'], ['Ley 39/2015', 'Reglamento eIDAS', 'identificación electrónica', 'firma electrónica'], [
+    { url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565', referencia: 'Ley 39/2015, exposición de motivos y arts. 9 y 10: coherencia de los sistemas de identificación y firma con el Reglamento (UE) 910/2014.' },
+    { url: 'https://eur-lex.europa.eu/eli/reg/2014/910/oj?locale=es', referencia: 'Reglamento (UE) 910/2014, relativo a identificación electrónica y servicios de confianza; versión consolidada vigente desde 18-10-2024 tras Reglamento (UE) 2024/1183.' }
+  ], '', 'Se confirma la opción del Reglamento (UE) 910/2014. La Ley 39/2015 lo menciona expresamente en su exposición de motivos al señalar la coherencia de sus sistemas de identificación y firma. La respuesta sigue siendo correcta tras la modificación eIDAS 2 por el Reglamento (UE) 2024/1183: el acto de base conserva el número 910/2014.', 'vigente'],
+  [2827, ['22'], ['I-6'], ['LSSI-CE', 'comunicaciones comerciales', 'correo electrónico', 'consentimiento'], [
+    { url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758', referencia: 'Ley 34/2002, art. 21: regla sobre comunicaciones no solicitadas o no autorizadas por sus destinatarios y excepción limitada por relación contractual previa.' }
+  ], '', 'Se confirma la opción que identifica a los destinatarios como quienes deben haber solicitado o autorizado expresamente las comunicaciones. La regla tiene la excepción del art. 21.2 LSSI-CE: relación contractual previa, datos obtenidos lícitamente y publicidad de productos o servicios propios similares; debe ofrecerse oposición sencilla y gratuita.', 'vigente'],
+  [2828, ['7'], [], ['Derecho administrativo', 'potestad reglamentaria', 'clasificación de reglamentos'], [
+    { url: 'https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229', referencia: 'Constitución, arts. 97 y 137: reconoce potestad reglamentaria del Gobierno y la organización territorial; no establece una clasificación doctrinal completa de los reglamentos.' },
+    { url: 'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938', referencia: 'Programa A1, tema 7: incluye concepto, clases y límites del reglamento. Es referencia de temario, no autoridad jurídica para resolver la taxonomía.' }
+  ], '', 'La clave indicada (reglamentos independientes) es la que no corresponde a una clasificación por la Administración u órgano de procedencia: independiente/ejecutivo/de necesidad clasifica por relación con la ley, mientras estatal, autonómico e institucional aluden a procedencia. Se deja pendiente de fuente porque la distinción es doctrinal: las normas primarias consultadas delimitan potestades y niveles territoriales, pero no codifican esta taxonomía exacta. No se marca como verificada hasta localizar una fuente doctrinal o institucional suficientemente precisa.', 'pendiente_fuente'],
+  [2829, ['3'], ['I-1'], ['Constitución Española', 'autonomía local', 'autonomía provincial'], [
+    { url: 'https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229', referencia: 'Constitución, art. 137: municipios, provincias y comunidades autónomas gozan de autonomía para la gestión de sus respectivos intereses; arts. 140 y 141 completan la regulación local.' }
+  ], '', 'Se confirma la afirmación sobre la autonomía provincial como falsa: el art. 137 reconoce autonomía a municipios y provincias para gestionar sus intereses. El art. 140 garantiza expresamente la autonomía municipal y el art. 141 define la provincia como entidad local con personalidad jurídica propia.', 'vigente'],
+  [2830, ['11'], [], ['LCSP', 'división en lotes', 'PYMES', 'expediente de contratación'], [
+    { url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902', referencia: 'Ley 9/2017, arts. 99.3 y 116.4.g: división en lotes cuando naturaleza u objeto lo permitan; decisión de no dividir justificada en el expediente conforme al régimen legal.' },
+    { url: 'https://eur-lex.europa.eu/eli/dir/2014/24/oj?locale=es', referencia: 'Directiva 2014/24/UE, art. 46 y considerando 78: división en lotes y fomento del acceso de las PYMES a la contratación pública.' }
+  ], '', 'La respuesta combinada se mantiene tras reformular la alternativa jurídica: en contratos de servicios, cuando naturaleza u objeto lo permitan, debe preverse la ejecución independiente de las partes en lotes; si se decide no dividir, la decisión se justifica en el expediente conforme a los arts. 99.3 y 116.4.g LCSP. La división también facilita la participación de PYMES, objetivo recogido en el preámbulo de la LCSP y en el considerando 78 de la Directiva 2014/24/UE. Se precisa que la obligación no es absoluta: depende de lo que permitan naturaleza y objeto y de los límites del art. 99.3.', 'corregida']
+];
+
+const edits = {
+  2826: { texto: 'Según la exposición de motivos de la Ley 39/2015, ¿con qué Reglamento de la Unión Europea son coherentes los sistemas de identificación y firma previstos en esa Ley?', opciones: ['Reglamento (UE) n.º 910/2014.', 'Reglamento (UE) n.º 810/2013.', 'Reglamento (UE) n.º 527/2013.', 'Reglamento (UE) n.º 810/2014.'], respuesta_correcta: 0 },
+  2827: { texto: 'Conforme al artículo 21 de la Ley 34/2002 (LSSI-CE), señale la regla general sobre comunicaciones publicitarias o promocionales por correo electrónico u otro medio de comunicación electrónica equivalente:', opciones: ['Se prohíben incluso cuando las haya solicitado el destinatario.', 'Solo se prohíben si se envían por correo electrónico, no por medios equivalentes.', 'Pueden enviarse sin autorización previa si el remitente se identifica.', 'Se prohíben si no fueron solicitadas o expresamente autorizadas previamente por sus destinatarios.'], respuesta_correcta: 3 },
+  2828: { texto: 'Atendiendo a la Administración u órgano del que proceden, ¿cuál de las siguientes NO es una categoría de reglamentos por razón de su procedencia?', opciones: ['Reglamentos independientes.', 'Reglamentos de las comunidades autónomas.', 'Reglamentos institucionales.', 'Reglamentos estatales.'], respuesta_correcta: 0 },
+  2829: { texto: 'De acuerdo con la Constitución Española de 1978, señale la afirmación falsa:', opciones: ['La Constitución reconoce y garantiza el derecho a la autonomía de las nacionalidades y regiones que integran la Nación española.', 'La Constitución reconoce y garantiza la solidaridad entre las nacionalidades y regiones que integran la Nación española.', 'La Constitución no reconoce autonomía a las provincias para gestionar sus respectivos intereses.', 'La Constitución garantiza la autonomía de los municipios.'], respuesta_correcta: 2 },
+  2830: { texto: 'En un contrato de servicios no sujeto a concesión de obras, conforme a la Ley 9/2017, señale la respuesta correcta sobre la división en lotes:', opciones: ['La no división por lotes solo debe motivarse si el contrato está sujeto a regulación armonizada.', 'Cuando la naturaleza u objeto lo permitan, debe preverse la ejecución independiente de las partes en lotes; la decisión de no dividir se justifica en el expediente.', 'La división en lotes puede facilitar el acceso de las pequeñas y medianas empresas a la contratación pública.', 'Las respuestas b y c son correctas.'], respuesta_correcta: 3 }
+};
+
+apply({ numero: '502', fecha: '2026-10-29', records, edits });
+
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const root = path.join(__dirname, '..');
+const bankPath = path.join(root, 'preguntas_preparatic.json');
+const logPath = path.join(__dirname, 'cambios-lote-502.json');
+const bank = JSON.parse(fs.readFileSync(bankPath, 'utf8'));
+const log = JSON.parse(fs.readFileSync(logPath, 'utf8'));
+const mapping = {
+  2826: { A1: ['A1-80'], A2: ['A2-I-6'], academy: 'ITIC Academy, Bloque 03 Actuación Administrativa y Administración Digital 2026, §6.1, eIDAS e identificación/firma electrónica; correspondencia A1-80/A2-I-6.' },
+  2827: { A1: ['A1-22'], A2: ['A2-I-6'], academy: 'ITIC Academy, Bloque 03 Actuación Administrativa y Administración Digital 2026, §6.2 LSSI-CE y comunicaciones comerciales; correspondencia A1-22/A2-I-6.' },
+  2828: { A1: ['A1-7'], A2: [], academy: 'ITIC Academy, Bloque 03 Actuación Administrativa y Administración Digital 2026, §1.7, clases y límites del reglamento; el programa A2 GSI no incluye epígrafe específico de fuentes o potestad reglamentaria.' },
+  2829: { A1: ['A1-3'], A2: ['A2-I-1'], academy: 'ITIC Academy, Bloque 01 Constitución, Estado y AGE 2026, organización territorial y autonomía local; correspondencia A1-3/A2-I-1.' },
+  2830: { A1: ['A1-11'], A2: [], academy: 'ITIC Academy, Bloque 05 Contratación, Presupuestos y Compra TIC 2026, división en lotes y LCSP; correspondencia directa A1-11, sin epígrafe específico A2 GSI.' }
+};
+const topics = new Set(JSON.parse(fs.readFileSync(path.join(__dirname, 'temario-oficial.json'), 'utf8')).programas.flatMap(p => p.temas.map(t => t.id)));
+assert.equal(log.cambios.length, 5);
+for (const c of log.cambios) {
+  const q = bank.preguntas.find(x => x.id === c.id);
+  const m = mapping[c.id];
+  assert.ok(q && m, `Pregunta ${c.id} o mapeo ausente`);
+  for (const id of [...m.A1, ...m.A2]) assert.ok(topics.has(id), `Tema no oficial: ${id}`);
+  q.clasificacion.A1 = m.A1;
+  q.clasificacion.A2 = m.A2;
+  q.clasificacion.bloque_academia = m.academy;
+  q.clasificacion.estado = 'revisada';
+  q.clasificacion.nota = `${q.revision.estado}. ${m.academy}`;
+  q.revision.observaciones = `${c.actualizada.revision.observaciones} Cotejo curricular: ${m.academy} El material de Academy se utiliza como mapa de estudio, no como fuente jurídica primaria.`;
+  q.comentarios = q.revision.observaciones;
+  c.actualizada = structuredClone(q);
+}
+fs.writeFileSync(logPath, JSON.stringify(log, null, 2) + '\n');
+fs.writeFileSync(bankPath, JSON.stringify(bank, null, 2) + '\n');
+console.log('Lote 502 aplicado: cuatro verificadas y una pendiente de fuente.' );
