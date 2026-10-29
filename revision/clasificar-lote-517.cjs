@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),file=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-517.json');
+const bank=JSON.parse(fs.readFileSync(file,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 2901:{A1:['A1-62'],A2:['A2-II-2'],academy:'ITIC Academy, Sistemas Operativos, versión 2026.1: https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view. El material cubre sistemas operativos móviles; la clasificación de MVP como patrón se contrasta con Microsoft Learn.'},
+ 2902:{A1:['A1-60','A1-61'],A2:['A2-II-2'],academy:'ITIC Academy, Sistemas Operativos, versión 2026.1: https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view. El epígrafe incluye fundamentos y administración de Linux/Unix y Microsoft; los detalles de DIR/ls se verifican con Microsoft y GNU.'},
+ 2903:{A1:['A1-115'],A2:['A2-IV-13'],academy:'ITIC Academy, Bloques 42 Redes y 43 Protocolos, versiones 2026: https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view y https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view. Clasificación en Internet/DNS; el cometido actual del registro .es se verifica con Red.es.'},
+ 2904:{A1:['A1-47','A1-48'],A2:['A2-II-13'],academy:'ITIC Academy, Seguridad en Redes y en el Nivel de Aplicación, versión 2026: https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view. El encaje curricular es seguridad de redes y gestión de incidentes; el nombre y alcance del servicio se verifican con CCN-CERT.'},
+ 2905:{A1:['A1-1'],A2:['A2-I-2'],academy:'ITIC Academy, Bloque 01 Constitución, organización del Estado y AGE, versión 2026.2 (01-10-2026): https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk. El bloque cubre Cortes Generales; los períodos y las mayorías se verifican directamente en el artículo 73 de la Constitución.'}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&q.revision&&m);for(const t of [...m.A1,...m.A2])assert.ok(topics.has(t),t);q.revision.observaciones+=` Cotejo curricular: ${m.academy} La academia se usa como mapa de estudio, no como autoridad técnica o normativa.`;q.clasificacion={...q.clasificacion,A1:m.A1,A2:m.A2,bloque_academia:m.academy,estado:'revisada',nota:`${q.revision.estado}. ${m.academy}`};q.comentarios=q.revision.observaciones;c.actualizada=structuredClone(q);}
+fs.writeFileSync(file,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Clasificación oficial y cotejo curricular validados para lote 517.');
