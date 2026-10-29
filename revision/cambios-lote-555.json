@@ -1,0 +1,319 @@
+{
+  "fecha": "2026-10-29",
+  "alcance": "IDs 3091–3095; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3091,
+      "original": {
+        "id": 3091,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Las estaciones conectadas a una red de área local por medio de tarjetas de red de tipo Ethernet:",
+        "opciones": [
+          "Acceden al medio de transmisión de forma aleatoria, por lo que pueden producirse colisiones.",
+          "Acceden al medio de transmisión en períodos de tiempo predeterminados, por lo que nunca se producen colisiones.",
+          "Acceden al medio de transmisión en diferentes frecuencias de trabajo, por lo que pueden acceder varias simultáneamente sin que se produzcan colisiones.",
+          "Nunca acceden si tras un primer intento se detectó una colisión."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3091,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un segmento Ethernet compartido que opera en half-duplex, ¿qué mecanismo de acceso al medio se aplica y qué puede ocurrir?",
+        "opciones": [
+          "CSMA/CD: las estaciones compiten por el medio compartido y puede producirse una colisión.",
+          "Acceso por turnos temporales predeterminados, que impide siempre las colisiones.",
+          "Acceso por frecuencias separadas para cada estación, como mecanismo Ethernet general.",
+          "Tras una colisión, las estaciones quedan permanentemente impedidas para transmitir."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La redacción inicial generalizaba el acceso aleatorio y las colisiones a toda Ethernet. IEEE 802.3-2022 delimita CSMA/CD al medio compartido half-duplex; un enlace conmutado full-duplex no comparte el medio de esa forma ni presenta las colisiones clásicas. Se restringe expresamente el enunciado a un segmento compartido half-duplex. Cotejo curricular: ITIC Academy, Bloque 42, §§4, LAN Ethernet y métodos de acceso; correspondencia directa A1-118/A2-IV-8. Cotejo curricular: ITIC Academy, Bloque 42 “Redes”, §§4 y 4.2: Ethernet y CSMA/CD; se contrasta half-duplex compartido frente a Ethernet full-duplex. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático.",
+        "clasificacion": {
+          "A1": [
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 42 “Redes”, §§4 y 4.2: Ethernet y CSMA/CD; se contrasta half-duplex compartido frente a Ethernet full-duplex. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático.",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 42 “Redes”, §§4 y 4.2: Ethernet y CSMA/CD; se contrasta half-duplex compartido frente a Ethernet full-duplex. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático."
+        },
+        "etiquetas": [
+          "Ethernet",
+          "CSMA/CD",
+          "half-duplex",
+          "colisiones",
+          "medio compartido"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://standards.ieee.org/ieee/802.3/10422/",
+              "referencia": "IEEE 802.3-2022, estándar Ethernet activo: CSMA/CD especifica operación de medio compartido half-duplex; enlaces Ethernet full-duplex no operan con las colisiones clásicas."
+            }
+          ],
+          "observaciones": "La redacción inicial generalizaba el acceso aleatorio y las colisiones a toda Ethernet. IEEE 802.3-2022 delimita CSMA/CD al medio compartido half-duplex; un enlace conmutado full-duplex no comparte el medio de esa forma ni presenta las colisiones clásicas. Se restringe expresamente el enunciado a un segmento compartido half-duplex. Cotejo curricular: ITIC Academy, Bloque 42, §§4, LAN Ethernet y métodos de acceso; correspondencia directa A1-118/A2-IV-8. Cotejo curricular: ITIC Academy, Bloque 42 “Redes”, §§4 y 4.2: Ethernet y CSMA/CD; se contrasta half-duplex compartido frente a Ethernet full-duplex. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático."
+        }
+      }
+    },
+    {
+      "id": 3092,
+      "original": {
+        "id": 3092,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes respuestas sobre Emulacion de LAN en ATM es cierta?",
+        "opciones": [
+          "Proporciona a las estaciones enganchadas via ATM las mismas capacidades que obtienen de una LAN tipo Ethernet o Token-Ring",
+          "Requiere modificaciones de los protocolos de mayor nivel (de la capa de red) para permitir operaciones via una red ATM",
+          "Intenta emular el Media Access Control (MAC) real de la LAN específica",
+          "Define un esquema de encapsulado para Ethernet, Token-Ring y FDDI"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3092,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué describe correctamente LAN Emulation (LANE) sobre una red ATM?",
+        "opciones": [
+          "Proporciona a las estaciones un servicio de LAN emulada para que aplicaciones y protocolos heredados puedan operar sin conocer ATM.",
+          "Obliga a modificar los protocolos de red de las estaciones para usar ATM.",
+          "Reproduce literalmente en ATM la contienda física y el protocolo MAC original de cada LAN.",
+          "La especificación LANE define una encapsulación única para Ethernet, Token Ring y FDDI."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "LAN Emulation (LANE) presenta servicio LAN tradicional sobre ATM para que estaciones y aplicaciones heredadas operen sin modificar protocolos de nivel superior. No emula literalmente el protocolo MAC de acceso al medio: proporciona un servicio puenteado y resolución entre direcciones MAC y ATM. La opción de encapsulación original mezclaba LANE con la encapsulación multiprotocolo RFC 2684 y añadía FDDI como si LANE lo definiera; se sustituyen distractores para evitar esa confusión. Cotejo curricular: ITIC Academy, Bloque 42, redes LAN, ATM y redes de agregación; correspondencia temática A1-113/118 y A2-IV-8. Cotejo curricular: ITIC Academy, Bloque 42 “Redes”, ATM como red de agregación y servicios LAN/infraestructura; encaje directo con ATM y LAN. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático.",
+        "clasificacion": {
+          "A1": [
+            "A1-113",
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 42 “Redes”, ATM como red de agregación y servicios LAN/infraestructura; encaje directo con ATM y LAN. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático.",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 42 “Redes”, ATM como red de agregación y servicios LAN/infraestructura; encaje directo con ATM y LAN. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático."
+        },
+        "etiquetas": [
+          "ATM",
+          "LAN Emulation",
+          "LANE",
+          "Ethernet",
+          "Token Ring",
+          "encapsulación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1946.html",
+              "referencia": "IETF RFC 1946, §1: LAN emulation hace que la interfaz ATM parezca una LAN y extiende características LAN a ATM para soportar aplicaciones heredadas."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc2684.html",
+              "referencia": "IETF RFC 2684, §3: describe LANE como entorno en que ATM se comporta como LAN puenteada; distingue encapsulación bridged Ethernet/802.3 y 802.5."
+            }
+          ],
+          "observaciones": "LAN Emulation (LANE) presenta servicio LAN tradicional sobre ATM para que estaciones y aplicaciones heredadas operen sin modificar protocolos de nivel superior. No emula literalmente el protocolo MAC de acceso al medio: proporciona un servicio puenteado y resolución entre direcciones MAC y ATM. La opción de encapsulación original mezclaba LANE con la encapsulación multiprotocolo RFC 2684 y añadía FDDI como si LANE lo definiera; se sustituyen distractores para evitar esa confusión. Cotejo curricular: ITIC Academy, Bloque 42, redes LAN, ATM y redes de agregación; correspondencia temática A1-113/118 y A2-IV-8. Cotejo curricular: ITIC Academy, Bloque 42 “Redes”, ATM como red de agregación y servicios LAN/infraestructura; encaje directo con ATM y LAN. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático."
+        }
+      }
+    },
+    {
+      "id": 3093,
+      "original": {
+        "id": 3093,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El servicio de directorio definido por la ITU-T:",
+        "opciones": [
+          "Se incluye en casi todos los sistemas de correo electrónico para consultar las direcciones de los usuarios existentes en la red",
+          "Se especifica en el estándar X.600 del ITU",
+          "Es soportado por un sistema de ficheros en red",
+          "Se ha definido como un conjunto de modelos, servicios y protocolos accesibles a nivel mundial en forma independiente de la aplicación"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3093,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación describe correctamente la recomendación ITU-T X.500 vigente sobre directorios?",
+        "opciones": [
+          "X.500 forma parte de la serie X.600 y trata únicamente de correo electrónico.",
+          "X.500 es el sistema de ficheros que almacena todo directorio en red.",
+          "X.500 define exclusivamente una lista de direcciones de correo accesible desde cualquier aplicación.",
+          "X.500 introduce los conceptos y modelos del directorio y ofrece una visión general de sus servicios y capacidades."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se identifica la familia ITU-T X.500, vigente; X.600 no es la norma del directorio. La pregunta original atribuye a un servicio singular una definición amplia (“accesible a nivel mundial”) y mezcla alcance conceptual con despliegue real. Se precisa que X.500 es la recomendación marco que introduce conceptos/modelos del directorio y resume servicios/capacidades; las recomendaciones relacionadas especifican servicio, distribución y protocolos. El directorio no es necesariamente una única base mundial universal en operación. Cotejo curricular: ITIC Academy, Bloque 43, modelo OSI y servicios de aplicación/directorio (X.500, LDAP); correspondencia A1-122/A2-II-8. Cotejo curricular: ITIC Academy, Bloque 43 “Protocolos”, modelo OSI y servicios de aplicación/directorio: X.500 y LDAP. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático.",
+        "clasificacion": {
+          "A1": [
+            "A1-122"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 43 “Protocolos”, modelo OSI y servicios de aplicación/directorio: X.500 y LDAP. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático.",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 43 “Protocolos”, modelo OSI y servicios de aplicación/directorio: X.500 y LDAP. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático."
+        },
+        "etiquetas": [
+          "ITU-T",
+          "X.500",
+          "servicio de directorio",
+          "OSI",
+          "servicios de directorio"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/itu-t/recommendations/rec.aspx?rec=X.500",
+              "referencia": "ITU-T X.500 (10/2019), en vigor, con enmienda 1 (10/2024) en vigor: presenta conceptos, modelos, servicios y capacidades del directorio; X.600 no es la recomendación del directorio."
+            },
+            {
+              "url": "https://www.itu.int/epublications/publication/itu-t-sec-manual-2024-09-security-in-telecommunications-and-information-technology-8th-edition",
+              "referencia": "ITU-T Security Manual, 8.ª edición (09/2024), §6: la serie X.500 especifica el directorio; X.500 describe conceptos/modelos, X.511 el servicio, X.518 la operación distribuida y X.519 los protocolos."
+            }
+          ],
+          "observaciones": "Se identifica la familia ITU-T X.500, vigente; X.600 no es la norma del directorio. La pregunta original atribuye a un servicio singular una definición amplia (“accesible a nivel mundial”) y mezcla alcance conceptual con despliegue real. Se precisa que X.500 es la recomendación marco que introduce conceptos/modelos del directorio y resume servicios/capacidades; las recomendaciones relacionadas especifican servicio, distribución y protocolos. El directorio no es necesariamente una única base mundial universal en operación. Cotejo curricular: ITIC Academy, Bloque 43, modelo OSI y servicios de aplicación/directorio (X.500, LDAP); correspondencia A1-122/A2-II-8. Cotejo curricular: ITIC Academy, Bloque 43 “Protocolos”, modelo OSI y servicios de aplicación/directorio: X.500 y LDAP. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático."
+        }
+      }
+    },
+    {
+      "id": 3094,
+      "original": {
+        "id": 3094,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto a un plan de contingencia:",
+        "opciones": [
+          "suponen una visión global para garantizar la continuidad del negocio, e incluye la formación del equipo",
+          "suponen una visión global para garantizar la continuidad del negocio, y se basa en la norma ISO 27.001 y 27.002",
+          "suponen una visión detallada para garantizar la continuidad del negocio, e incluye la formación del equipo",
+          "suponen una visión detallada para garantizar la continuidad del negocio, e incluye análisis de activos criticos"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3094,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la guía NIST SP 800-34 Rev. 1, ¿qué caracteriza la planificación de contingencia de un sistema de información?",
+        "opciones": [
+          "Es exclusivamente un plan empresarial global y no incluye medidas técnicas ni recuperación de sistemas.",
+          "Es una estrategia coordinada de planes, procedimientos y medidas técnicas para recuperar sistemas, operaciones y datos tras una interrupción.",
+          "Consiste solo en formar al equipo; no requiere procedimientos documentados ni prioridades de recuperación.",
+          "Es únicamente el análisis de activos críticos y garantiza por sí mismo la continuidad de toda la organización."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "“Plan de contingencia” se usa en marcos distintos y las opciones originales no eran inequívocas: combinaban alcance global/detallado, continuidad, análisis de activos y formación sin fijar norma ni tipo de plan. Se reescribe indicando NIST SP 800-34 Rev. 1 y la planificación de contingencia de sistemas de información. Según NIST, es una estrategia coordinada de planes, procedimientos y medidas técnicas para recuperar sistemas, operaciones y datos tras una interrupción. No se afirma que garantice por sí sola la continuidad de toda la organización. Cotejo curricular: ITIC Academy, Bloque 48, §10.4 continuidad/recuperación; Bloque 26, CPD y recuperación ante desastres; correspondencia A1-127 y temática A2-IV-6. Cotejo curricular: ITIC Academy, Bloque 48 “Seguridad en redes”, §10.4 continuidad/recuperación; Bloque 26, CPD y recuperación ante desastres. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático.",
+        "clasificacion": {
+          "A1": [
+            "A1-127"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 48 “Seguridad en redes”, §10.4 continuidad/recuperación; Bloque 26, CPD y recuperación ante desastres. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático.",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 48 “Seguridad en redes”, §10.4 continuidad/recuperación; Bloque 26, CPD y recuperación ante desastres. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático."
+        },
+        "etiquetas": [
+          "plan de contingencia",
+          "continuidad de negocio",
+          "recuperación",
+          "NIST SP 800-34",
+          "formación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+              "referencia": "NIST SP 800-34 Rev. 1 (2010), guía de desarrollo, proceso y formato del plan de contingencia de sistemas de información; diferencia estos planes de otros planes de continuidad y emergencia."
+            },
+            {
+              "url": "https://csrc.nist.gov/topics/security-and-privacy/security-programs-and-operations/contingency-planning",
+              "referencia": "NIST CSRC, Contingency Planning: estrategia coordinada de planes, procedimientos y medidas técnicas para recuperar sistemas, operaciones y datos tras una interrupción."
+            }
+          ],
+          "observaciones": "“Plan de contingencia” se usa en marcos distintos y las opciones originales no eran inequívocas: combinaban alcance global/detallado, continuidad, análisis de activos y formación sin fijar norma ni tipo de plan. Se reescribe indicando NIST SP 800-34 Rev. 1 y la planificación de contingencia de sistemas de información. Según NIST, es una estrategia coordinada de planes, procedimientos y medidas técnicas para recuperar sistemas, operaciones y datos tras una interrupción. No se afirma que garantice por sí sola la continuidad de toda la organización. Cotejo curricular: ITIC Academy, Bloque 48, §10.4 continuidad/recuperación; Bloque 26, CPD y recuperación ante desastres; correspondencia A1-127 y temática A2-IV-6. Cotejo curricular: ITIC Academy, Bloque 48 “Seguridad en redes”, §10.4 continuidad/recuperación; Bloque 26, CPD y recuperación ante desastres. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático."
+        }
+      }
+    },
+    {
+      "id": 3095,
+      "original": {
+        "id": 3095,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿A qué hace referencia las siglas SOC?",
+        "opciones": [
+          "Security Operations Center",
+          "System Operations Center",
+          "System Operations Chief",
+          "System Operations Certificate"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3095,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En operaciones de ciberseguridad, ¿qué expansión tiene el acrónimo SOC?",
+        "opciones": [
+          "Security Operations Center.",
+          "System Operations Chief.",
+          "System Operations Certificate.",
+          "Service Organization Control, como nombre del centro que monitoriza y responde a ciberincidentes."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "SOC significa Security Operations Center en el contexto de operaciones de ciberseguridad. El acrónimo es polisémico: NIST también registra “Service Organization Control” y “System on a Chip”, por lo que la pregunta original sin contexto era ambigua. Se delimita al equipo/centro de operaciones de seguridad y se conserva esa expansión como respuesta. Cotejo curricular: ITIC Academy, Bloque 48, §7.2 “SIEM, SOAR, EDR/XDR y SOC”; correspondencia directa A1-127 y temática A2-II-13. Cotejo curricular: ITIC Academy, Bloque 48 “Seguridad en redes”, §7.2 SIEM/SOAR/EDR/XDR/SOC, detección y respuesta a incidentes. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático.",
+        "clasificacion": {
+          "A1": [
+            "A1-127"
+          ],
+          "A2": [
+            "A2-II-13"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 48 “Seguridad en redes”, §7.2 SIEM/SOAR/EDR/XDR/SOC, detección y respuesta a incidentes. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático.",
+          "estado": "revisada",
+          "nota": "corregida. ITIC Academy, Bloque 48 “Seguridad en redes”, §7.2 SIEM/SOAR/EDR/XDR/SOC, detección y respuesta a incidentes. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático."
+        },
+        "etiquetas": [
+          "SOC",
+          "Security Operations Center",
+          "ciberseguridad",
+          "detección y respuesta"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-29",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/glossary/term/SOC",
+              "referencia": "NIST CSRC Glossary, entrada SOC: Security Operations Center, citado en NIST SP 800-53 Rev. 5, SP 800-61 Rev. 3 y otras publicaciones; la misma entrada muestra otros significados en otros contextos."
+            }
+          ],
+          "observaciones": "SOC significa Security Operations Center en el contexto de operaciones de ciberseguridad. El acrónimo es polisémico: NIST también registra “Service Organization Control” y “System on a Chip”, por lo que la pregunta original sin contexto era ambigua. Se delimita al equipo/centro de operaciones de seguridad y se conserva esa expansión como respuesta. Cotejo curricular: ITIC Academy, Bloque 48, §7.2 “SIEM, SOAR, EDR/XDR y SOC”; correspondencia directa A1-127 y temática A2-II-13. Cotejo curricular: ITIC Academy, Bloque 48 “Seguridad en redes”, §7.2 SIEM/SOAR/EDR/XDR/SOC, detección y respuesta a incidentes. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view Correspondencias cotejadas con revision/temario-oficial.json y anexos I de BOE-A-2025-25938 (A1) y IX de BOE-A-2025-26262 (A2 GSI); se separa mención directa y encaje temático."
+        }
+      }
+    }
+  ]
+}
