@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 29 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 526 (IDs 2946–2950). Acumulado: 2950 preguntas examinadas individualmente, 2878 verificadas (627 vigentes, 2013 corregidas y 238 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9173 sin revisar individualmente. Hay 2322 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando esos campos en los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 527 (IDs 2951–2955). Acumulado: 2955 preguntas examinadas individualmente, 2883 verificadas (629 vigentes, 2016 corregidas y 238 históricas) y 72 pendientes documentadas (34 de fuente y 38 de ambigüedad); quedan 9168 sin revisar individualmente. Hay 2327 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando esos campos en los registros completos. Inventario estructural no equivale a revisión de contenido.
+
+## Lote 527 — 29 de octubre
+
+IDs 2951–2955 revisados individualmente con Microsoft Learn (ADO Recordset), documentación oficial de Angular, MDN (contextos de JavaScript), especificación Oracle JVM 26 y referencia oficial de Spring Framework. Se cotejó el Bloque 30 de ITIC Academy en Drive y el temario A1/A2. Los enunciados originales íntegros están preservados en [cambios-lote-527.json](cambios-lote-527.json).
+
+- **2951 — Recordset:** se precisa que en ADO es el objeto que representa el conjunto de registros de una tabla o resultado de comando, con filas/campos y un registro actual. A1-64/A2-II-5; Academy, Bloque 30.
+- **2952 — Angular:** se confirma la clave: la documentación oficial señala que el framework está mantenido por un equipo dedicado de Google. A1-65/A2-II-12; Academy, Bloque 30, §2.5.
+- **2953 — JavaScript:** se corrige la premisa demasiado amplia. JavaScript puede ejecutarse tanto en navegador como en servidor (por ejemplo, Node.js); se ajustan las opciones a un contexto web y se descarta que sólo se ejecute en servidor. A1-65/A2-II-9/II-12; Academy, Bloque 30, §§2.2–2.5.
+- **2954 — bytecode:** se confirma el código intermedio como instrucciones de la JVM representadas en los archivos class; «class» es el formato, no el nombre del código. A1-67/A2-II-3/III-10; Academy, Bloque 30.
+- **2955 — Spring:** se confirma falsa la supuesta dependencia de Struts. Spring MVC es un framework web propio de Spring basado en Servlet API; AOP e integración con Hibernate/JPA sí están documentadas. A1-65/A1-67/A2-II-12/III-10; Academy, Bloque 30, §§6.3–6.4.
+
+Fuentes: Microsoft Learn, [Recordset object (ADO)](https://learn.microsoft.com/en-us/office/client-developer/access/desktop-database-reference/recordset-object-ado); Angular, [What is Angular?](https://angular.dev/docs); MDN, [Introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction) y [Introduction to the server side](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/First_steps/Introduction); Oracle, [Java Virtual Machine Specification 26](https://docs.oracle.com/en/java/javase/26/docs/specs/jvms26.pdf); Spring, [AOP](https://docs.spring.io/spring/reference/core/aop.html), [ORM integration](https://docs.spring.io/spring-framework/reference/data-access/orm/introduction.html) y [Spring MVC](https://docs.spring.io/spring-framework/reference/web/webmvc.html).
+
+Cotejo curricular: [ITIC Academy, Bloque 30 «Tecnologías de Sistemas de la Información» (2026.1)](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk): desarrollo web y frameworks front-end (Angular/JavaScript), JDBC/ADO.NET y bases de datos, JVM/bytecode y Spring MVC/persistencia. Clasificación contrastada con `temario-oficial.json`, [convocatoria A1 BOE-A-2025-25938, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI BOE-A-2025-26262, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy orienta el encuadre, no sustituye fuentes técnicas.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados después del lote: 12.123 preguntas estructuralmente válidas, 2955 revisadas individualmente, 2883 verificadas, 72 pendientes explícitas y 9168 sin revisar de contenido. El inventario no acredita revisión individual.
 
 ## Lote 526 — 29 de octubre
 
