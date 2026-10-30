@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 599 (IDs 3311–3315). Acumulado: 3315 preguntas examinadas individualmente, 3239 verificadas (667 vigentes, 2328 corregidas y 244 históricas) y 76 pendientes documentadas (36 de fuente y 40 de ambigüedad); quedan 8808 sin revisar individualmente. Hay 2659 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 600 (IDs 3316–3320). Acumulado: 3320 preguntas examinadas individualmente, 3244 verificadas (668 vigentes, 2332 corregidas y 244 históricas) y 76 pendientes documentadas (36 de fuente y 40 de ambigüedad); quedan 8803 sin revisar individualmente. Hay 2664 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
+
+## Lote 600 — 30 de octubre
+
+IDs 3316–3320 examinados individualmente, con originales íntegros en [cambios-lote-600.json](cambios-lote-600.json). Se alinearon términos UML con OMG; se aclaró que el nivel 0 de DFD se refiere a la convención MÉTRICA v3; se separaron las capacidades de gestión de configuración de trazabilidad de requisitos; y se confirmaron técnicas ASI 7 y actividades GPI en sus guías oficiales.
+- **3316 — relaciones en UML:** se retiró la mezcla imprecisa «tipo de asociación» y se preguntó qué término no pertenece al vocabulario UML de relaciones de clases: «sometimiento». **Corregida.** A1-88; A2-III-2.
+- **3317 — nivel 0 DFD:** se acotó expresamente a MÉTRICA v3, donde el nivel 0 es el diagrama de contexto. En otras convenciones pueden nombrarse los niveles de otro modo. **Corregida.** A1-88/A1-95; A2-III-2.
+- **3318 — herramientas CASE/configuración:** versiones, trazabilidad de requisitos y análisis de impacto podían corresponder a categorías distintas; se redujo el reactivo a control de versiones y cambios de elementos de configuración. **Corregida.** A1-88/A1-102; A2-III-2/IV-4.
+- **3319 — técnicas de ASI 7:** la tabla de MÉTRICA v3 asigna Diagrama de Flujo de Datos y técnica Matricial a Elaboración del Modelo de Procesos. **Vigente como contenido explícito del método.** A1-95; A2-III-2.
+- **3320 — grupo GPI:** las actividades de inicio comprenden GPI 1 Estimación de Esfuerzo y GPI 2 Planificación; asignación de tareas y seguimiento pertenecen a GPS. **Corregida.** A1-35/A1-95; A2-III-2.
+
+Fuentes primarias: [OMG UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/PDF); [MÉTRICA v3, Análisis del Sistema de Información](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Aad870327-56b7-4dfa-af15-e62222f45b90/METRICA_V3_Analisis_del_Sistema_de_Informacion.pdf); [MÉTRICA v3, Gestión de Proyectos](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A0f07660d-1044-489e-a3be-3a94b80fbb16/METRICA_V3_Gestion_de_Proyectos.pdf); [MÉTRICA v3, Gestión de la Configuración](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A1f321d6d-fb6a-46ed-a369-617c0080c51d/METRICA_V3_Gestion_de_Configuracion.pdf); [ISO/IEC 14102:2008](https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso-iec%3A14102%3Aed-2%3Av1%3Aen). Clasificación comparada con [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y revision/temario-oficial.json.
+
+Cotejo ITIC Academy: [bloque 38, Análisis, diseño y construcción de sistemas de información, 2026.1](https://docs.google.com/document/d/1za_7e_LlvUEpja7VJyYElIgRIPu_AbE3/edit?usp=drivesdk&ouid=107088454749630873035&rtpof=true&sd=true) incluye UML/clases y análisis estructurado/DFD; [tema 15, Metodologías ágiles y ciclo de vida, 2026.1](https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk) incorpora MÉTRICA v3 y los epígrafes A1 86/88 y A2 D1/D2; [bloque 39, Calidad y mantenimiento, 2026](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk) incluye gestión de configuración, versiones y cambios. La academia orienta el encaje del temario; las definiciones y respuestas se contrastaron con OMG, ISO y documentación oficial de MÉTRICA.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check; el inventario estructural no sustituye la revisión individual.
 
 ## Lote 599 — 30 de octubre
 
