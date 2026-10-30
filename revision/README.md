@@ -1,7 +1,26 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 582 (IDs 3226–3230). Acumulado: 3230 preguntas examinadas individualmente, 3157 verificadas (651 vigentes, 2264 corregidas y 242 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8893 sin revisar individualmente. Hay 2587 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 583 (IDs 3231–3235). Acumulado: 3235 preguntas examinadas individualmente, 3162 verificadas (654 vigentes, 2266 corregidas y 242 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8888 sin revisar individualmente. Hay 2589 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
 
+## Lote 583 — 30 de octubre
+
+IDs 3231–3235 revisados individualmente. Se verificaron la finalidad de ENAC y el límite de la topología FC-AL; se corrigió una pregunta que presentaba un porcentaje estimado antiguo como disponibilidad Tier II garantizada y otra que tenía dos respuestas correctas sobre RAID 10/RAID 6. Se conservaron las formulaciones de caché que siguen siendo correctas y se añadieron explicaciones y fuentes. Los originales completos están en [cambios-lote-583.json](cambios-lote-583.json).
+
+- **3231 — acreditación:** ENAC acredita la competencia técnica de organismos de evaluación de la conformidad; no acredita normas ni certifica directamente sistemas de gestión empresariales. A1-50; Academy, bloque 24.
+
+- **3232 — disponibilidad de CPD:** Uptime Institute ya no asigna porcentajes de disponibilidad a cada Tier. Tier II fija resultados de infraestructura y componentes redundantes, no una garantía de uptime de 99,741 %. A1-53/A2-IV-6; Academy, bloque 26.
+
+- **3233 — memoria caché:** su ventaja fundamental es reducir la latencia de acceso del procesador respecto a memoria principal para datos reutilizados. A1-53; Academy, bloque 26.
+
+- **3234 — Fibre Channel:** FC-AL admite hasta 126 NL_Ports participantes con AL_PA válida; se mantiene la clave original y se documenta el alcance preciso del límite. A1-56/A2-IV-5; Academy, bloque 26.
+
+- **3235 — RAID:** dos alternativas originales eran correctas. Se concreta la pregunta en RAID 6: emplea doble paridad independiente por franja y puede tolerar el fallo de dos discos. A1-56/A2-IV-5; Academy, bloque 26.
+
+Fuentes primarias: [ENAC, servicios de acreditación](https://www.enac.es/que-hacemos/servicios-de-acreditacion); [Uptime Institute, Tier Classification](https://journal.uptimeinstitute.com/explaining-uptime-institutes-tier-classification-system/); [Intel, Memory Performance in a Nutshell](https://www.intel.com/content/www/us/en/developer/articles/technical/memory-performance-in-a-nutshell.html); [Seagate, Fibre Channel Interface Manual, §§8.4–8.4.1](https://www.seagate.com/support/disc/manuals/fc/67496a.pdf); [IBM, RAID 10 overview](https://www.ibm.com/docs/en/ds8000/10.0.0?topic=implementation-raid-10-overview). Temario y clasificación contrastados con `temario-oficial.json` y anexos I/IX de convocatorias GSI 2025: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
+
+Cotejo ITIC Academy: [bloque 24 Organismos de Normalización](https://drive.google.com/file/d/1HKwUIuFhm-wVG0e8kZfFm1R8qI1rGS2G/view?usp=drivesdk) y [bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk). Academy orienta el encaje curricular; las respuestas se fundan en fuentes primarias consignadas en los registros.
+
+Tras el lote se ejecutaron `inventario.cjs`, `verificar.cjs` y `git diff --check`; los inventarios estructurales no se contabilizan como verificación individual de contenido.
 ## Lote 582 — 30 de octubre
 
 IDs 3226–3230 revisados individualmente. Se cotejaron la Ley 39/2015, el ENS vigente, el CPSTIC/CCN-STIC 105 y la guía de empleo seguro de OLVIDO Windows, el portal actual de Cl@ve y la información institucional de ETSI. Se completó la garantía omitida de consulta temporal en la respuesta del art. 17.2; se confirmó la pertenencia de detección de intrusión al marco operacional y de OLVIDO Windows al CPSTIC; se actualizó Cl@ve ocasional a Cl@ve Móvil y se precisó que certificado/DNIe son alternativas que la pasarela permite según servicio. Se conserva el texto íntegro de origen en [cambios-lote-582.json](cambios-lote-582.json).
