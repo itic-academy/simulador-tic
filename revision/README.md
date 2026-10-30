@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 607 (IDs 3351–3355). Acumulado: 3355 preguntas examinadas individualmente, 3278 verificadas (680 vigentes, 2350 corregidas y 248 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8768 sin revisar individualmente. Hay 2694 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 608 (IDs 3356–3360). Acumulado: 3360 preguntas examinadas individualmente, 3283 verificadas (682 vigentes, 2353 corregidas y 248 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8763 sin revisar individualmente. Hay 2697 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
+
+## Lote 608 — 30 de octubre
+
+IDs 3356–3360 examinados individualmente; originales íntegros en [cambios-lote-608.json](cambios-lote-608.json). Se confirmó el ámbito de la Ley 53/1984; se verificó la composición vigente de la Comisión del CTBG; se separaron las competencias de las autoridades de control del papel del CEPD; y se corrigieron los modelos didácticos de niveles de información y soporte CAU con ITIC Academy 2026.
+- **3356 — incompatibilidades:** la Ley 53/1984 incluye expresamente personal civil/militar del Estado y personal del Banco de España; ello no elimina los límites/autorizaciones de compatibilidad. **Vigente.** A1-8; A2-I-8 como marco jurídico general del empleo público.
+- **3357 — Comisión del CTBG:** el artículo 36.2.h incluye representante de la AIReF. **Vigente.** A1-25; A2-I-4.
+- **3358 — protección de datos UE:** se precisa que las autoridades nacionales supervisan; el CEPD promueve aplicación coherente y cooperación en la Unión. **Corregida.** A1-27; A2-I-7.
+- **3359 — niveles de sistemas de información:** se concreta el modelo: transacciones cotidianas en nivel operativo, MIS en táctica y DSS/EIS apoyan análisis/decisiones estratégicas. **Corregida.** A1-28; A2-II-4.
+- **3360 — soporte CAU:** se formula como un esquema habitual de tres tiers, no universal; L1 primera línea, L2 especialistas, L3 desarrollo/fabricante, con proveedores separados a nivel 4 en algunos esquemas. **Corregida.** A1-106; A2-IV-3.
+
+Fuentes primarias: [Ley 53/1984, art. 2.1](https://www.boe.es/buscar/act.php?id=BOE-A-1985-151); [Ley 19/2013, art. 36.2](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887); [Reglamento (UE) 2016/679, arts. 51, 68 y 70, EUR-Lex](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32016R0679). La clasificación se validó contra [programa A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [programa A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y revision/temario-oficial.json.
+
+Cotejo ITIC Academy: [bloque 01 «Constitución, organización del Estado y AGE», 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk) recoge Ley 53/1984 en el marco de incompatibilidades del empleo público y trata transparencia/CTBG; la composición exacta del art. 36 se verificó en BOE. [Bloque 08 «Protección de Datos», 2026](https://drive.google.com/file/d/11T-TKuGJGXeEKwwODM-FlF8pML3QMh_t/view?usp=drivesdk) distingue autoridades de control, CEPD y SEPD y advierte que no debe denominarse al CEPD supervisor único de la Unión. [Bloque 09 «Organización y gestión de los Sistemas de Información», 2026](https://drive.google.com/file/d/1QwPcKo3PWRI0s0KyM6SXWCe6CoK4Md-s/view?usp=drivesdk) respalda los niveles TPS/MIS/DSS/EIS y describe soporte CAU/escalado, señalando que la estructura de tiers es convencional y variable.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check; el inventario estructural no sustituye la revisión individual.
 
 ## Lote 607 — 30 de octubre
 
