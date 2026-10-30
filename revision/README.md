@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 605 (IDs 3341–3345). Acumulado: 3345 preguntas examinadas individualmente, 3268 verificadas (673 vigentes, 2348 corregidas y 247 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8778 sin revisar individualmente. Hay 2687 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 606 (IDs 3346–3350). Acumulado: 3350 preguntas examinadas individualmente, 3273 verificadas (678 vigentes, 2348 corregidas y 247 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8773 sin revisar individualmente. Hay 2690 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
+
+## Lote 606 — 30 de octubre
+
+IDs 3346–3350 examinados individualmente; originales íntegros en [cambios-lote-606.json](cambios-lote-606.json). Se cotejaron la organización territorial de la AGE en la Ley 40/2015; las garantías del CSV en el RD 203/2021; la vigencia máxima de poderes inscritos en la Ley 39/2015; y el PCAP y los sistemas dinámicos de adquisición en la Ley 9/2017.
+- **3346 — organización territorial de la AGE:** se confirma el capítulo III del título I de la Ley 40/2015 (arts. 69–79). **Vigente.** A1-6; A2-I-8.
+- **3347 — CSV:** el RD 203/2021 contempla la vinculación del código con el documento y, en su caso, con quien lo firma; la verificación tiene plazo determinado y no constituye garantía de confidencialidad. **Vigente.** A1-22; A2-I-9.
+- **3348 — apoderamientos:** el art. 6.6 de la Ley 39/2015 fija en cinco años el máximo desde la inscripción, sin exigir que todos los poderes duren exactamente ese plazo. **Vigente.** A1-8; A2-I-8.
+- **3349 — criterios de adjudicación:** el art. 122.2 de la Ley 9/2017 dispone su inclusión en el PCAP; el art. 145.1 contempla también el documento descriptivo cuando se use. **Vigente.** A1-11; sin tema A2 equivalente.
+- **3350 — sistema dinámico de adquisición:** es totalmente electrónico; su duración limitada se fija en los pliegos, no existe un máximo general de dos años en el art. 223 y la participación es gratuita. **Vigente.** A1-11; sin tema A2 equivalente.
+
+Fuentes primarias: [Ley 40/2015, título I, capítulo III](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566); [RD 203/2021, anexo y art. 21](https://www.boe.es/buscar/act.php?id=BOE-A-2021-5032); [Ley 39/2015, art. 6.6](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565); [Ley 9/2017, arts. 122, 145 y 223](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902). La clasificación se validó contra [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y revision/temario-oficial.json.
+
+Cotejo ITIC Academy: [bloque 01 «Constitución, organización del Estado y AGE», 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk) desarrolla la organización territorial de AGE y el contenido de A1-6; [bloque 03 «Actuación Administrativa», 2026](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk) trata administración electrónica, CSV y apoderamientos; el [material A2 O8 de actuación administrativa, 2026](https://drive.google.com/file/d/1dW2ffNhCduFHJ1hI2nT6fqs_G8DeNpo3/view?usp=drivesdk) se cotejó para el encaje de Leyes 39/2015 y 40/2015; [bloque 05 «Contratación, Presupuestos y Compra TIC», 2026.2](https://drive.google.com/file/d/14iahY0cgkiV8RESN81b8pHdD4K3UbSOj/view?usp=drivesdk) incluye PCAP y SDA, identifica A1 temas 11/39 y declara que no hay equivalencia de contratación en A2. El material académico sirve de guía curricular, no reemplaza a la fuente normativa primaria.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check; el inventario estructural no sustituye la revisión individual.
 
 ## Lote 605 — 30 de octubre
 
