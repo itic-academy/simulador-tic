@@ -168473,71 +168473,293 @@
       "id": 3461,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes sentencias es cierta respecto a las bases de datos relacionales?",
+      "texto": "¿Cuál afirmación describe correctamente el modelo de datos de una base de datos relacional?",
       "opciones": [
-        "Soportan las interrelaciones lógicas entre los datos.",
+        "Permite representar relaciones lógicas entre datos mediante relaciones, claves y consultas, sin exigir que el usuario conozca su disposición física.",
         "No soportan el acceso directo a un registro específico.",
         "Es complicado el acceso a varios registros relacionados con un registro simple.",
         "El acceso a los datos es lógico, dependiente de las técnicas de instrumentación física."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se reescribe la opción correcta para evitar la falsa dicotomía entre relaciones lógicas y mecanismos físicos. Se sustituyen distractores absolutos: los índices pueden permitir acceso directo y las uniones no exigen que filas relacionadas estén físicamente contiguas.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; El bloque 29 cubre el modelo relacional, sus conceptos y SQL. La independencia entre modelo lógico y almacenamiento físico se contrasta con el artículo fundacional de Codd y documentación de PostgreSQL sobre JOIN.; https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json; se declaran las correspondencias contextuales o no localizadas."
+      },
+      "etiquetas": [
+        "bases de datos relacionales",
+        "relaciones",
+        "claves",
+        "consultas",
+        "independencia lógica y física"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://web.eecs.umich.edu/~michjc/eecs584/Papers/codd_1970.pdf",
+            "referencia": "Codd, E. F., “A Relational Model of Data for Large Shared Data Banks”, Communications of the ACM 13(6), 1970: el modelo relacional expresa las relaciones entre datos lógicamente y separa el modelo de usuario de las representaciones almacenadas."
+          },
+          {
+            "url": "https://www.postgresql.org/docs/current/queries-table-expressions.html",
+            "referencia": "PostgreSQL 18 Documentation, Table Expressions/JOIN: las consultas pueden formar tablas derivadas combinando relaciones mediante condiciones de unión."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1. El bloque 29 cubre el modelo relacional, sus conceptos y SQL. La independencia entre modelo lógico y almacenamiento físico se contrasta con el artículo fundacional de Codd y documentación de PostgreSQL sobre JOIN."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; cotejo realizado el 30-10-2026 contra revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; cotejo realizado el 30-10-2026 contra revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se reescribe la opción correcta para evitar la falsa dicotomía entre relaciones lógicas y mecanismos físicos. Se sustituyen distractores absolutos: los índices pueden permitir acceso directo y las uniones no exigen que filas relacionadas estén físicamente contiguas. Cotejo ITIC Academy: El bloque 29 cubre el modelo relacional, sus conceptos y SQL. La independencia entre modelo lógico y almacenamiento físico se contrasta con el artículo fundacional de Codd y documentación de PostgreSQL sobre JOIN. Correspondencia oficial: A1-64, A2-II-5, A2-III-4."
+      }
     },
     {
       "id": 3462,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de los siguientes no es uno de los requisitos que debe cumplir una firma electrónica avanzada según el Reglamento (UE) 910/2014:",
+      "texto": "Según el artículo 26 del Reglamento eIDAS vigente, ¿cuál de los siguientes elementos NO es un requisito de una firma electrónica avanzada?",
       "opciones": [
         "Estar vinculada al firmante de manera única",
-        "Haber sido creada utilizando un dispositivo avanzado de creación de firmas electrónicas",
+        "Haber sido creada utilizando un dispositivo cualificado de creación de firma electrónica.",
         "Haber sido creada utilizando datos de creación de firma que el firmante puede utilizar, con un alto nivel de confianza, bajo su exclusivo control",
         "Estar vinculada con los datos firmados, de modo tal que cualquier modificación ulterior de los mismos sea detectable"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene como respuesta la opción del dispositivo avanzado/cualificado de creación: no figura entre los cuatro criterios del artículo 26. Se especifica el artículo y se distingue la firma avanzada de la cualificada para evitar confundir sus requisitos.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026; El bloque 36 desarrolla firma electrónica simple, avanzada y cualificada, junto con identificación y criptografía. La lista exacta de condiciones y la distinción frente al dispositivo cualificado se verifican en el artículo 26 eIDAS vigente.; https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json; se declaran las correspondencias contextuales o no localizadas."
+      },
+      "etiquetas": [
+        "eIDAS",
+        "firma electrónica avanzada",
+        "artículo 26",
+        "QSCD",
+        "firma cualificada"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18",
+            "referencia": "Reglamento (UE) 910/2014 consolidado a 18-10-2024, art. 26: cuatro requisitos de firma avanzada; el uso de dispositivo cualificado de creación de firma no es uno de ellos."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18",
+            "referencia": "Reglamento (UE) 910/2014 consolidado, arts. 3.12, 29 y anexo II: la firma cualificada es una firma avanzada creada mediante dispositivo cualificado y basada en certificado cualificado; esos elementos adicionales no se exigen a toda firma avanzada."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026. El bloque 36 desarrolla firma electrónica simple, avanzada y cualificada, junto con identificación y criptografía. La lista exacta de condiciones y la distinción frente al dispositivo cualificado se verifican en el artículo 26 eIDAS vigente."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; cotejo realizado el 30-10-2026 contra revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; cotejo realizado el 30-10-2026 contra revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se mantiene como respuesta la opción del dispositivo avanzado/cualificado de creación: no figura entre los cuatro criterios del artículo 26. Se especifica el artículo y se distingue la firma avanzada de la cualificada para evitar confundir sus requisitos. Cotejo ITIC Academy: El bloque 36 desarrolla firma electrónica simple, avanzada y cualificada, junto con identificación y criptografía. La lista exacta de condiciones y la distinción frente al dispositivo cualificado se verifican en el artículo 26 eIDAS vigente. Correspondencia oficial: A1-80, A2-I-6."
+      }
     },
     {
       "id": 3463,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo se pueden clasificar los periféricos según su función?",
+      "texto": "En una clasificación funcional básica de los periféricos, ¿qué categorías generales se incluyen?",
       "opciones": [
-        "de entrada",
-        "de salida",
-        "Que realizan funciones de almacenamiento auxiliar",
-        "Todas las anteriores"
+        "De entrada.",
+        "De salida.",
+        "De almacenamiento auxiliar.",
+        "Todas las anteriores."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se acota el alcance como clasificación funcional básica. Se conserva “todas las anteriores” como clave, pero se evita presentarla como clasificación exhaustiva de cualquier periférico.",
+      "clasificacion": {
+        "A1": [
+          "A1-54"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026; El bloque 26 trata hardware y dispositivos periféricos en el contexto de equipos personales y conectividad; no localicé una exposición literal de la taxonomía entrada/salida/almacenamiento. Esta clasificación básica se contrasta con un texto educativo del Ministerio de Educación de Sri Lanka; se indica que es simplificada y no exhaustiva.; https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json; se declaran las correspondencias contextuales o no localizadas."
+      },
+      "etiquetas": [
+        "periféricos",
+        "entrada",
+        "salida",
+        "almacenamiento auxiliar",
+        "hardware"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.e-thaksalawa.moe.gov.lk/moodle/pluginfile.php/179403/mod_resource/content/1/Text%20Book.pdf",
+            "referencia": "Ministerio de Educación de Sri Lanka, Information and Communication, apartado de dispositivos periféricos: clasificación introductoria en entrada, salida y almacenamiento; una pantalla táctil puede cumplir funciones de entrada y salida."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. El bloque 26 trata hardware y dispositivos periféricos en el contexto de equipos personales y conectividad; no localicé una exposición literal de la taxonomía entrada/salida/almacenamiento. Esta clasificación básica se contrasta con un texto educativo del Ministerio de Educación de Sri Lanka; se indica que es simplificada y no exhaustiva."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; cotejo realizado el 30-10-2026 contra revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; cotejo realizado el 30-10-2026 contra revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se acota el alcance como clasificación funcional básica. Se conserva “todas las anteriores” como clave, pero se evita presentarla como clasificación exhaustiva de cualquier periférico. Cotejo ITIC Academy: El bloque 26 trata hardware y dispositivos periféricos en el contexto de equipos personales y conectividad; no localicé una exposición literal de la taxonomía entrada/salida/almacenamiento. Esta clasificación básica se contrasta con un texto educativo del Ministerio de Educación de Sri Lanka; se indica que es simplificada y no exhaustiva. Correspondencia oficial: A1-54, A2-II-1."
+      }
     },
     {
       "id": 3464,
       "bloque": 0,
       "tema": 0,
-      "texto": "Qué es $_COOKIE en PHP:",
+      "texto": "Según el manual de PHP, ¿qué contiene la variable superglobal $_COOKIE?",
       "opciones": [
-        "Es una variable donde se almacena el valor de una cookie.",
-        "Es una variable de tipo array asociativo de variables pasadas a un script a través de Cookies http.",
-        "Es una variable donde se recoge el valor de un formulario.",
-        "Es una plabra reservada para definir una cookie en PHP."
+        "Una variable escalar que contiene exclusivamente el valor de una única cookie.",
+        "Un array asociativo de variables recibidas por el script actual mediante cookies HTTP.",
+        "Una variable donde se recoge el valor enviado por un formulario.",
+        "Es una palabra reservada para definir o enviar una cookie en PHP."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se precisa que $_COOKIE representa valores recibidos en la petición actual y no es una instrucción para crear cookies. Se corrige “palabra” y se modifica el distractor escalar para que no resulte parcialmente verdadero frente a la definición de array.",
+      "clasificacion": {
+        "A1": [
+          "A1-68"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 30 Tecnologías de Sistemas de Información, versión 2026.1; El bloque 30 incluye el tema A1-68 de PHP y el desarrollo web en servidor. No localicé una mención literal a $_COOKIE; la definición vigente de la superglobal se comprueba directamente en el manual de PHP.; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json; se declaran las correspondencias contextuales o no localizadas."
+      },
+      "etiquetas": [
+        "PHP",
+        "$_COOKIE",
+        "superglobal",
+        "cookies HTTP",
+        "array asociativo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.php.net/manual/en/reserved.variables.cookies.php",
+            "referencia": "PHP Manual, $_COOKIE: superglobal que contiene un array asociativo de variables pasadas al script actual mediante cookies HTTP."
+          },
+          {
+            "url": "https://www.php.net/manual/en/reserved.variables.php",
+            "referencia": "PHP Manual, Predefined Variables: $_COOKIE es una de las variables superglobales predefinidas de PHP; la documentación diferencia $_COOKIE de $_GET y $_POST."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 30 Tecnologías de Sistemas de Información, versión 2026.1. El bloque 30 incluye el tema A1-68 de PHP y el desarrollo web en servidor. No localicé una mención literal a $_COOKIE; la definición vigente de la superglobal se comprueba directamente en el manual de PHP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; cotejo realizado el 30-10-2026 contra revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; cotejo realizado el 30-10-2026 contra revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se precisa que $_COOKIE representa valores recibidos en la petición actual y no es una instrucción para crear cookies. Se corrige “palabra” y se modifica el distractor escalar para que no resulte parcialmente verdadero frente a la definición de array. Cotejo ITIC Academy: El bloque 30 incluye el tema A1-68 de PHP y el desarrollo web en servidor. No localicé una mención literal a $_COOKIE; la definición vigente de la superglobal se comprueba directamente en el manual de PHP. Correspondencia oficial: A1-68, A2-III-12."
+      }
     },
     {
       "id": 3465,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el sistema relacional de datos, los conceptos básicos son relación, tupla, clave primaria y dominio. En este ámbito, señale qué es un dominio:",
+      "texto": "En el modelo relacional, ¿qué es el dominio de un atributo?",
       "opciones": [
         "El identificador único para la tabla",
-        "Una colección de valores, de los cuales uno o más atributos (columnas) obtienen sus valores reales",
+        "El conjunto de valores permitidos —en el modelo clásico, atómicos— que puede tomar ese atributo.",
         "Una colección de valores, de los cuales una o más tuplas obtienen sus relaciones",
         "El número de tuplas que contiene una relación. También es conocido por cardinalidad"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se conserva la opción que define el dominio como conjunto de valores de atributos, pero se afina para hablar de valores permitidos/atómicos y se elimina la formulación ambigua de “valores reales”. Se aclara la diferencia entre modelo relacional y tipos definidos por SQL.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; El bloque 29 trata el modelo relacional y declara que el dominio de un atributo define los valores admisibles. La definición se contrasta además con Codd y se diferencia de los tipos definidos por un SGBD concreto.; https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json; se declaran las correspondencias contextuales o no localizadas."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "dominio",
+        "atributo",
+        "conjunto de valores atómicos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://web.eecs.umich.edu/~michjc/eecs584/Papers/codd_1970.pdf",
+            "referencia": "Codd, E. F., “A Relational Model of Data for Large Shared Data Banks”, Communications of the ACM 13(6), 1970: cada atributo se define sobre dominios; los valores de una tupla pertenecen al dominio correspondiente."
+          },
+          {
+            "url": "https://www.postgresql.org/docs/current/ddl-basics.html",
+            "referencia": "PostgreSQL 18 Documentation, Table Basics: el tipo de datos de cada columna restringe el conjunto de valores que se le pueden asignar; se cita como analogía práctica y no como identidad completa entre tipos SQL y dominios del modelo relacional."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1. El bloque 29 trata el modelo relacional y declara que el dominio de un atributo define los valores admisibles. La definición se contrasta además con Codd y se diferencia de los tipos definidos por un SGBD concreto."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; cotejo realizado el 30-10-2026 contra revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; cotejo realizado el 30-10-2026 contra revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se conserva la opción que define el dominio como conjunto de valores de atributos, pero se afina para hablar de valores permitidos/atómicos y se elimina la formulación ambigua de “valores reales”. Se aclara la diferencia entre modelo relacional y tipos definidos por SQL. Cotejo ITIC Academy: El bloque 29 trata el modelo relacional y declara que el dominio de un atributo define los valores admisibles. La definición se contrasta además con Codd y se diferencia de los tipos definidos por un SGBD concreto. Correspondencia oficial: A1-64, A2-II-5, A2-III-4."
+      }
     },
     {
       "id": 3466,
