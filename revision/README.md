@@ -1,7 +1,26 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 586 (IDs 3246–3250). Acumulado: 3250 preguntas examinadas individualmente, 3177 verificadas (658 vigentes, 2276 corregidas y 243 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8873 sin revisar individualmente. Hay 2600 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 587 (IDs 3251–3255). Acumulado: 3255 preguntas examinadas individualmente, 3182 verificadas (659 vigentes, 2280 corregidas y 243 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8868 sin revisar individualmente. Hay 2604 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
 
+## Lote 587 — 30 de octubre
+
+IDs 3251–3255 revisados individualmente. Se corrigió la explicación del efecto avalancha para distinguir cambio de patrón de bits de longitud del resumen; se precisó integridad como protección frente a alteración no autorizada; se reformuló la pregunta sobre firma digital para no atribuirle confidencialidad; se verificó la derogación de la Directiva 1999/93/CE por eIDAS; y se sustituyó la afirmación absoluta de «tiempo real» de OCSP por su diferencia real frente a CRL periódicas. Originales conservados en [cambios-lote-587.json](cambios-lote-587.json).
+
+- **3251 — efecto avalancha:** una variación pequeña de entrada debe dispersarse en un cambio extenso del patrón de salida; no altera el tamaño fijo del digest. Se corrige la opción que confundía longitud y contenido. A1-80/A1-125; A2-IV-12.
+
+- **3252 — integridad:** servicio que protege los datos frente a modificación o destrucción no autorizada. Se sustituye «mutilada» por terminología precisa. A1-47/A1-48/A1-80/A1-81/A1-125; A2-II-13/A2-IV-12.
+
+- **3253 — firma digital:** la firma permite comprobar la vinculación criptográfica e integridad de los datos, pero no cifra el contenido. Se sustituye el distractor confuso sobre descarga por confidencialidad, y se matiza que la identidad y los efectos jurídicos dependen de validación/certificación y marco aplicable. A1-80/A1-81; A2-I-6/A2-IV-12.
+
+- **3254 — eIDAS:** el artículo 50 del Reglamento (UE) 910/2014 deroga la Directiva 1999/93/CE con efectos desde el 1-7-2016; el precepto sigue en el texto consolidado. A1-80; A2-I-6.
+
+- **3255 — OCSP/CRL:** OCSP consulta a un respondedor el estado de un certificado identificado y puede aportar información más oportuna que una CRL periódica; no se garantiza actualidad absoluta, pues las respuestas tienen intervalo de validez. A1-80/A1-81; A2-I-6/A2-IV-12.
+
+Fuentes primarias: [NIST, hash function glossary](https://csrc.nist.gov/glossary/term/hash_function), [FIPS 180-4](https://csrc.nist.gov/pubs/fips/180-4/upd1/final) y [Webster y Tavares, On the Design of S-Boxes](https://doi.org/10.1007/3-540-39799-X_41); [NIST, assurance of integrity](https://csrc.nist.gov/glossary/term/assurance_of_integrity); [Reglamento eIDAS 910/2014 consolidado](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?qid=1788568669756&uri=CELEX%3A02014R0910-20241018), arts. 25, 26 y 50; [NIST FIPS 186-5, Digital Signature Standard](https://csrc.nist.gov/pubs/fips/186-5/final); [IETF RFC 6960, OCSP](https://www.rfc-editor.org/rfc/rfc6960.html) y [RFC 5280, PKIX Certificate and CRL Profile](https://www.rfc-editor.org/rfc/rfc5280.html). Programas: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), cotejados con `temario-oficial.json`.
+
+Cotejo de ITIC Academy en Drive: [bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 de 30-09-2026](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL). Se leyó el material: sus contenidos se alinean con A1-125/126 y A2-II-13/C10; la academia orienta el encaje, y las normas NIST, IETF y eIDAS sustentan las respuestas.
+
+Tras el lote se ejecutaron `inventario.cjs`, `verificar.cjs` y `git diff --check`. El inventario automático no sustituye la revisión individual del contenido.
 ## Lote 586 — 30 de octubre
 
 IDs 3246–3250 revisados individualmente. En WMS se corrige la clave: GetCapabilities y GetMap son obligatorias, mientras que GetFeatureInfo es opcional; se identifica POLL como término ajeno a las operaciones OLAP, se confirma UNE 66175:2003 en vigor, se precisa el esquema estrella y se verifica SPARQL como lenguaje de consulta RDF. Los originales están en [cambios-lote-586.json](cambios-lote-586.json).

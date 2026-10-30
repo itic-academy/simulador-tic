@@ -157447,16 +157447,57 @@
         "Una pequeña variación en la longitud del mensaje debe producir una gran variación en la longitud del resumen",
         "Una pequeña variación del contenido del mensaje debe producir una gran variación en la longitud del resumen",
         "Una pequeña variación en el contenido del mensaje debe producir una pequeña variación en la longitud del resumen",
-        "Una pequeña variación en el contenido del mensaje debe producir una gran variación en el contenido del resumen"
+        "Una pequeña variación en el contenido del mensaje debe producir una variación extensa del patrón de bits del resumen, cuya longitud permanece fija."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "El efecto avalancha describe que una modificación pequeña de la entrada —por ejemplo, invertir un bit— debe producir una variación extensa del patrón de bits del resumen. No cambia la longitud del resumen: para una función hash dada, esta es fija. Se corrige la formulación imprecisa de la opción correcta y se conserva la clave (índice 3). A1-80/A1-125; A2-IV-12.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el bloque incluye hash, difusión, algoritmos de resumen y criptografía; la longitud fija del digest se coteja además con NIST FIPS 180-4. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación contrastada con revision/temario-oficial.json y los programas de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas o jurídicas primarias."
+      },
+      "etiquetas": [
+        "función hash",
+        "hash criptográfico",
+        "efecto avalancha",
+        "difusión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/hash_function",
+            "referencia": "NIST CSRC Glossary, hash function: para una función hash, la longitud del resultado está fijada."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/fips/180-4/upd1/final",
+            "referencia": "NIST FIPS 180-4, Secure Hash Standard: define algoritmos de resumen de longitud fija para detectar modificaciones del mensaje."
+          },
+          {
+            "url": "https://doi.org/10.1007/3-540-39799-X_41",
+            "referencia": "A. F. Webster y S. E. Tavares, On the Design of S-Boxes, CRYPTO 1985, LNCS 218 (1986), criterio de avalancha estricta: cambiar un bit de entrada debe cambiar cada bit de salida con probabilidad 1/2."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el bloque incluye hash, difusión, algoritmos de resumen y criptografía; la longitud fija del digest se coteja además con NIST FIPS 180-4."
+          }
+        ],
+        "observaciones": "El efecto avalancha describe que una modificación pequeña de la entrada —por ejemplo, invertir un bit— debe producir una variación extensa del patrón de bits del resumen. No cambia la longitud del resumen: para una función hash dada, esta es fija. Se corrige la formulación imprecisa de la opción correcta y se conserva la clave (índice 3). A1-80/A1-125; A2-IV-12. Cotejo académico: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el bloque incluye hash, difusión, algoritmos de resumen y criptografía; la longitud fija del digest se coteja además con NIST FIPS 180-4. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Clasificación contrastada con revision/temario-oficial.json y los programas de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas o jurídicas primarias."
+      }
     },
     {
       "id": 3252,
       "bloque": 0,
       "tema": 0,
-      "texto": "El servicio de seguridad que garantiza que la información no ha sido mutilada o alterada de manera no autorizada se denomina:",
+      "texto": "El servicio de seguridad que protege la información frente a modificaciones o destrucción no autorizadas se denomina:",
       "opciones": [
         "Autentificación",
         "Confidencialidad",
@@ -157464,21 +157505,97 @@
         "No repudio"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El servicio de seguridad que protege frente a modificaciones o destrucción no autorizadas es la integridad. Se corrige «mutilada» por el término preciso «modificada o destruida»; se mantiene la clave original (índice 2). A1-47/A1-48/A1-80/A1-81/A1-125; A2-II-13/A2-IV-12.",
+      "clasificacion": {
+        "A1": [
+          "A1-47",
+          "A1-48",
+          "A1-80",
+          "A1-81",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-II-13",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el temario trata las dimensiones de seguridad, la criptografía y la integridad como servicio de seguridad. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación contrastada con revision/temario-oficial.json y los programas de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas o jurídicas primarias."
+      },
+      "etiquetas": [
+        "seguridad",
+        "servicio de integridad",
+        "integridad de datos",
+        "alteración no autorizada"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/assurance_of_integrity",
+            "referencia": "NIST CSRC Glossary: integridad es la propiedad de que los datos no han sido alterados o destruidos de manera no autorizada."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el temario trata las dimensiones de seguridad, la criptografía y la integridad como servicio de seguridad."
+          }
+        ],
+        "observaciones": "El servicio de seguridad que protege frente a modificaciones o destrucción no autorizadas es la integridad. Se corrige «mutilada» por el término preciso «modificada o destruida»; se mantiene la clave original (índice 2). A1-47/A1-48/A1-80/A1-81/A1-125; A2-II-13/A2-IV-12. Cotejo académico: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el temario trata las dimensiones de seguridad, la criptografía y la integridad como servicio de seguridad. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Clasificación contrastada con revision/temario-oficial.json y los programas de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas o jurídicas primarias."
+      }
     },
     {
       "id": 3253,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes garantías NO corresponde a una firma digital?",
+      "texto": "¿Cuál de las siguientes propiedades NO proporciona por sí sola una firma digital sobre los datos firmados?",
       "opciones": [
-        "El emisor de la firma es real y existe",
-        "El emisor no puede negar que firmó el documento",
-        "Se puede descargar una copia del documento a través de un identificador",
-        "El documento no ha sido alterado desde su firma"
+        "La integridad de los datos firmados.",
+        "La verificación criptográfica de la correspondencia entre la firma y la clave pública asociada.",
+        "La confidencialidad del contenido firmado.",
+        "La detección de modificaciones posteriores en los datos firmados."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "corregida",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el material contrasta firma e identificación, integridad de datos y firma electrónica; eIDAS arts. 25–26 y NIST FIPS 186-5 sustentan el alcance y los límites. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación contrastada con revision/temario-oficial.json y los programas de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas o jurídicas primarias."
+      },
+      "etiquetas": [
+        "firma digital",
+        "firma electrónica",
+        "integridad",
+        "autenticidad",
+        "confidencialidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?qid=1788568669756&uri=CELEX%3A02014R0910-20241018",
+            "referencia": "Reglamento eIDAS consolidado a 18-10-2024, arts. 25 y 26: efectos jurídicos y requisitos de las firmas; la firma avanzada permite detectar cambios posteriores, no cifra los datos."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/fips/186-5/final",
+            "referencia": "NIST FIPS 186-5, Digital Signature Standard: estándar para generación y verificación de firmas digitales, no para cifrado/confidencialidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el material contrasta firma e identificación, integridad de datos y firma electrónica; eIDAS arts. 25–26 y NIST FIPS 186-5 sustentan el alcance y los límites."
+          }
+        ],
+        "observaciones": "Una firma digital sirve para verificar criptográficamente la vinculación entre los datos y la clave de firma, y puede detectar modificaciones; por sí sola no cifra el documento ni proporciona confidencialidad. Se sustituye la referencia ambigua a descargar una copia mediante identificador por la propiedad de seguridad que realmente no ofrece la firma. La clave continúa en el índice 2. La identificación de una persona y los efectos probatorios dependen también del certificado, la validación y el marco jurídico aplicable. A1-80/A1-81; A2-I-6/A2-IV-12. Cotejo académico: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el material contrasta firma e identificación, integridad de datos y firma electrónica; eIDAS arts. 25–26 y NIST FIPS 186-5 sustentan el alcance y los límites. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Clasificación contrastada con revision/temario-oficial.json y los programas de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas o jurídicas primarias."
+      }
     },
     {
       "id": 3254,
@@ -157492,13 +157609,45 @@
         "Directiva 2003/98/CE"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El artículo 50 del Reglamento eIDAS deroga expresamente la Directiva 1999/93/CE, con efectos desde el 1 de julio de 2016. Aunque se trata de una derogación histórica, el precepto sigue apareciendo en el texto consolidado del Reglamento. Se mantiene la clave original (índice 1). A1-80; A2-I-6.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el apartado sobre marco jurídico de firma electrónica y eIDAS aborda el Reglamento 910/2014; la derogación concreta se coteja con su artículo 50 consolidado en EUR-Lex. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "vigente. Clasificación contrastada con revision/temario-oficial.json y los programas de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas o jurídicas primarias."
+      },
+      "etiquetas": [
+        "eIDAS",
+        "Reglamento (UE) 910/2014",
+        "Directiva 1999/93/CE",
+        "derogación"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?qid=1788568669756&uri=CELEX%3A02014R0910-20241018",
+            "referencia": "EUR-Lex, versión consolidada vigente del Reglamento (UE) 910/2014, art. 50: deroga la Directiva 1999/93/CE con efectos desde el 1 de julio de 2016."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el apartado sobre marco jurídico de firma electrónica y eIDAS aborda el Reglamento 910/2014; la derogación concreta se coteja con su artículo 50 consolidado en EUR-Lex."
+          }
+        ],
+        "observaciones": "El artículo 50 del Reglamento eIDAS deroga expresamente la Directiva 1999/93/CE, con efectos desde el 1 de julio de 2016. Aunque se trata de una derogación histórica, el precepto sigue apareciendo en el texto consolidado del Reglamento. Se mantiene la clave original (índice 1). A1-80; A2-I-6. Cotejo académico: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el apartado sobre marco jurídico de firma electrónica y eIDAS aborda el Reglamento 910/2014; la derogación concreta se coteja con su artículo 50 consolidado en EUR-Lex. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Clasificación contrastada con revision/temario-oficial.json y los programas de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas o jurídicas primarias."
+      }
     },
     {
       "id": 3255,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes protocolos permite conocer en tiempo real si un certificado ha sido o no revocado?",
+      "texto": "¿Qué protocolo permite consultar en línea a un respondedor el estado de revocación de un certificado identificado, con información potencialmente más oportuna que una CRL periódica?",
       "opciones": [
         "OCSP",
         "CRL",
@@ -157506,7 +157655,46 @@
         "HTTPS"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "OCSP permite consultar a un respondedor el estado de revocación de un certificado identificado, con respuestas good, revoked o unknown y potencialmente más oportunas que la consulta de una CRL periódica. No debe prometerse «tiempo real» absoluto: la respuesta tiene un intervalo de validez y depende del servicio. Se precisa el enunciado y se mantiene la clave original (índice 0). A1-80/A1-81; A2-I-6/A2-IV-12.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el bloque explica PKI/certificados y OCSP frente a CRL; RFC 6960 y RFC 5280 sustentan la diferencia técnica. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación contrastada con revision/temario-oficial.json y los programas de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas o jurídicas primarias."
+      },
+      "etiquetas": [
+        "PKI",
+        "certificados X.509",
+        "revocación",
+        "OCSP",
+        "CRL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc6960.html",
+            "referencia": "IETF RFC 6960, Online Certificate Status Protocol, §2: permite determinar el estado de revocación de certificados identificados mediante una consulta a un respondedor, ofreciendo información potencialmente más oportuna que la CRL periódica."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5280.html",
+            "referencia": "IETF RFC 5280, PKIX Certificate and CRL Profile: especifica las listas de revocación y sus campos thisUpdate/nextUpdate."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el bloque explica PKI/certificados y OCSP frente a CRL; RFC 6960 y RFC 5280 sustentan la diferencia técnica."
+          }
+        ],
+        "observaciones": "OCSP permite consultar a un respondedor el estado de revocación de un certificado identificado, con respuestas good, revoked o unknown y potencialmente más oportunas que la consulta de una CRL periódica. No debe prometerse «tiempo real» absoluto: la respuesta tiene un intervalo de validez y depende del servicio. Se precisa el enunciado y se mantiene la clave original (índice 0). A1-80/A1-81; A2-I-6/A2-IV-12. Cotejo académico: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30-09-2026), apartados 3.4 (hash/MAC), 3.5 (firma digital), 4.1 (PKI/certificados) y pregunta 22 (OCSP frente a CRL); el bloque explica PKI/certificados y OCSP frente a CRL; RFC 6960 y RFC 5280 sustentan la diferencia técnica. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Clasificación contrastada con revision/temario-oficial.json y los programas de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia orienta el encaje, no sustituye las fuentes técnicas o jurídicas primarias."
+      }
     },
     {
       "id": 3256,
