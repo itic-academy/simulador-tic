@@ -1,0 +1,388 @@
+{
+  "fecha": "2026-10-30",
+  "alcance": "IDs 3441–3445; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3441,
+      "original": {
+        "id": 3441,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los semáforos son una técnica de comunicación entre procesos para:",
+        "opciones": [
+          "Evitar los bloqueos",
+          "Ejecutar threads",
+          "Permitir la exclusión mutua",
+          "Comunicar procesos en sistemas distribuidos"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3441,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es un uso habitual de un semáforo binario en programación concurrente?",
+        "opciones": [
+          "Evitar los bloqueos",
+          "Ejecutar threads",
+          "Proteger una sección crítica y permitir la exclusión mutua entre procesos o hilos.",
+          "Comunicar procesos en sistemas distribuidos"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se reformula el enunciado para preguntar por un uso habitual del semáforo binario, no por comunicación de datos IPC. La opción correcta es la exclusión mutua; el uso inadecuado de semáforos puede incluso causar interbloqueos, por lo que no se afirma que los eviten.",
+        "clasificacion": {
+          "A1": [
+            "A1-59"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 27 Sistemas Operativos, versión 2026.1; El bloque 27 cubre fundamentos de sistemas operativos, concurrencia, procesos e hilos, como contexto del uso de semáforos. La semántica de espera/señalización y sincronización se verifica en las páginas de manual POSIX/Linux.; https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+        },
+        "etiquetas": [
+          "semáforo",
+          "sincronización",
+          "exclusión mutua",
+          "sección crítica",
+          "concurrencia"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://man7.org/linux/man-pages/man7/sem_overview.7.html",
+              "referencia": "Linux man-pages, sem_overview(7): semáforos POSIX coordinan procesos e hilos mediante operaciones de espera y señalización; con valor binario pueden utilizarse para proteger secciones críticas y exclusión mutua."
+            },
+            {
+              "url": "https://man7.org/linux/man-pages/man3/sem_wait.3.html",
+              "referencia": "Linux man-pages, sem_wait(3): decrementa/espera sobre el semáforo, bloqueando si su valor no permite continuar; sem_post lo incrementa y puede despertar a quien espera."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+              "referencia": "ITIC Academy, Bloque 27 Sistemas Operativos, versión 2026.1. El bloque 27 cubre fundamentos de sistemas operativos, concurrencia, procesos e hilos, como contexto del uso de semáforos. La semántica de espera/señalización y sincronización se verifica en las páginas de manual POSIX/Linux."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I, consultada el 30-10-2026; el tema asignado se cotejó con revision/temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX, consultada el 30-10-2026; el tema asignado se cotejó con revision/temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se reformula el enunciado para preguntar por un uso habitual del semáforo binario, no por comunicación de datos IPC. La opción correcta es la exclusión mutua; el uso inadecuado de semáforos puede incluso causar interbloqueos, por lo que no se afirma que los eviten. Cotejo ITIC Academy: El bloque 27 cubre fundamentos de sistemas operativos, concurrencia, procesos e hilos, como contexto del uso de semáforos. La semántica de espera/señalización y sincronización se verifica en las páginas de manual POSIX/Linux. Correspondencia oficial: A1-59, A2-II-2. El material académico es contexto; la afirmación se acredita con normas/documentos técnicos citados."
+        }
+      }
+    },
+    {
+      "id": 3442,
+      "original": {
+        "id": 3442,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los certificados digitales(digital IDs) están definidos en:",
+        "opciones": [
+          "RSA Public Key Structure",
+          "X.509v3 de ITU",
+          "RFC 1661 de IAB",
+          "Verisign doc 1992/21"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3442,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué recomendación de UIT-T define el marco de certificados de clave pública y certificados de atributos, del que procede el formato X.509 versión 3?",
+        "opciones": [
+          "RSA Public Key Structure",
+          "La recomendación UIT-T X.509; la versión 3 del certificado incorpora extensiones y su perfil de Internet se especifica en RFC 5280.",
+          "RFC 1661 de IAB",
+          "Verisign doc 1992/21"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se corrige el enunciado para identificar la recomendación X.509, no presentar “X.509v3” como un organismo o documento autónomo. Se conserva la respuesta de la opción 2, precisando la relación entre la recomendación UIT-T y el perfil Internet de RFC 5280.",
+        "clasificacion": {
+          "A1": [
+            "A1-80",
+            "A1-81"
+          ],
+          "A2": [
+            "A2-I-6"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026.1; El bloque 36 cubre certificados, infraestructura de clave pública e identidad/firma. UIT-T X.509 y RFC 5280 son las fuentes directas para distinguir el marco internacional del perfil de Internet.; https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+        },
+        "etiquetas": [
+          "X.509",
+          "X.509v3",
+          "certificado de clave pública",
+          "certificado de atributos",
+          "ITU-T",
+          "RFC 5280",
+          "PKI"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/t-rec-x.509",
+              "referencia": "UIT-T Recommendation X.509 (10/2019), en vigor, con correcciones/modificación posteriores: marco de certificados de clave pública y certificados de atributos; la v3 es una versión del formato de certificado."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc5280.html",
+              "referencia": "IETF RFC 5280: perfil de Internet PKI para certificados X.509 versión 3 y listas de revocación (CRL); distingue el estándar base X.509 del perfil de uso en Internet."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, Bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El bloque 36 cubre certificados, infraestructura de clave pública e identidad/firma. UIT-T X.509 y RFC 5280 son las fuentes directas para distinguir el marco internacional del perfil de Internet."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I, consultada el 30-10-2026; el tema asignado se cotejó con revision/temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX, consultada el 30-10-2026; el tema asignado se cotejó con revision/temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se corrige el enunciado para identificar la recomendación X.509, no presentar “X.509v3” como un organismo o documento autónomo. Se conserva la respuesta de la opción 2, precisando la relación entre la recomendación UIT-T y el perfil Internet de RFC 5280. Cotejo ITIC Academy: El bloque 36 cubre certificados, infraestructura de clave pública e identidad/firma. UIT-T X.509 y RFC 5280 son las fuentes directas para distinguir el marco internacional del perfil de Internet. Correspondencia oficial: A1-80, A1-81, A2-I-6. El material académico es contexto; la afirmación se acredita con normas/documentos técnicos citados."
+        }
+      }
+    },
+    {
+      "id": 3443,
+      "original": {
+        "id": 3443,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿En qué consiste el podcasting?",
+        "opciones": [
+          "Se trata de un formato XML para sindicar o compartir contenido en la web. Se utiliza para difundir información actualizada frecuentemente a usuarios que se han suscrito a la fuente de contenidos.",
+          "Creación de sitios web cuyas páginas pueden ser editadas por múltiples voluntarios a través del navegador web. Los usuarios pueden crear, modificar o borrar un mismo texto que comparten.",
+          "Comunidad cuyos vínculos, interacciones y relaciones tienen lugar no en un espacio físico sino en un espacio virtual como Internet.",
+          "Distribución de archivos multimedia (normalmente audio o vídeo, que puede incluir texto como subtítulos y notas) mediante un sistema de redifusión que permita suscribirse y usar un programa que lo descarga para que el usuario lo escuche en el momento que quiera."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3443,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿En qué consiste el podcasting?",
+        "opciones": [
+          "Se trata de un formato XML para sindicar o compartir contenido en la web. Se utiliza para difundir información actualizada frecuentemente a usuarios que se han suscrito a la fuente de contenidos.",
+          "Creación de sitios web cuyas páginas pueden ser editadas por múltiples voluntarios a través del navegador web. Los usuarios pueden crear, modificar o borrar un mismo texto que comparten.",
+          "Comunidad cuyos vínculos, interacciones y relaciones tienen lugar no en un espacio físico sino en un espacio virtual como Internet.",
+          "Publicar y distribuir episodios multimedia suscribibles, normalmente mediante un feed como RSS, para descargarlos o escucharlos en streaming cuando el usuario quiera."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se reemplaza el requisito absoluto de descargar los archivos por descarga o escucha en streaming bajo demanda. Se distingue el podcast de RSS como formato de sindicación en general, de wikis y de comunidades virtuales.",
+        "clasificacion": {
+          "A1": [
+            "A1-109"
+          ],
+          "A2": [
+            "A2-II-16"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 50 Videoconferencia, SSO y trabajo colaborativo, versión 2026.1; El bloque 50 cubre streaming, trabajo colaborativo y gestión de contenidos; la búsqueda no encontró un apartado específico sobre podcasting. La correspondencia oficial directa está en A1-109 (servicios de Internet) y A2-II-16 (sindicación de contenidos).; https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+        },
+        "etiquetas": [
+          "podcasting",
+          "RSS",
+          "sindicación de contenidos",
+          "episodios multimedia",
+          "descarga",
+          "streaming"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://podcasters.apple.com/support/5108-how-apple-podcasts-distributes-your-shows-to-listeners",
+              "referencia": "Apple Podcasts for Creators, distribución de programas: los podcasts se distribuyen mediante feeds RSS; usuarios pueden seguirlos directamente para recibir episodios nuevos y reproducirlos."
+            },
+            {
+              "url": "https://podcasters.apple.com/support/823-podcast-requirements",
+              "referencia": "Apple Podcasts for Creators, requisitos de RSS: programas basados en feed incluyen episodios y elementos multimedia identificados por enclosure; RSS 2.0 es requisito técnico de su plataforma."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+              "referencia": "ITIC Academy, Bloque 50 Videoconferencia, SSO y trabajo colaborativo, versión 2026.1. El bloque 50 cubre streaming, trabajo colaborativo y gestión de contenidos; la búsqueda no encontró un apartado específico sobre podcasting. La correspondencia oficial directa está en A1-109 (servicios de Internet) y A2-II-16 (sindicación de contenidos)."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I, consultada el 30-10-2026; el tema asignado se cotejó con revision/temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX, consultada el 30-10-2026; el tema asignado se cotejó con revision/temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se reemplaza el requisito absoluto de descargar los archivos por descarga o escucha en streaming bajo demanda. Se distingue el podcast de RSS como formato de sindicación en general, de wikis y de comunidades virtuales. Cotejo ITIC Academy: El bloque 50 cubre streaming, trabajo colaborativo y gestión de contenidos; la búsqueda no encontró un apartado específico sobre podcasting. La correspondencia oficial directa está en A1-109 (servicios de Internet) y A2-II-16 (sindicación de contenidos). Correspondencia oficial: A1-109, A2-II-16. El material académico es contexto; la afirmación se acredita con normas/documentos técnicos citados."
+        }
+      }
+    },
+    {
+      "id": 3444,
+      "original": {
+        "id": 3444,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes afirmaciones es CIERTA acerca de los distintos formatos de empaquetado de aplicaciones en Java?:",
+        "opciones": [
+          "El formato JAR se utiliza únicamente para empaquetar bibliotecas y dependencias.",
+          "El formato WAR se utiliza principalmente para empaquetar aplicaciones web en Java.",
+          "El formato EAR se utiliza exclusivamente para empaquetar aplicaciones Java para dispositivos móviles.",
+          "El formato JRE es un formato de empaquetado especializado para ejecutables de Java."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3444,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En los formatos de despliegue de aplicaciones Java EE/Jakarta EE, ¿cuál se utiliza principalmente para empaquetar un módulo web?",
+        "opciones": [
+          "El formato JAR se utiliza únicamente para empaquetar bibliotecas y dependencias.",
+          "El formato WAR se utiliza principalmente para empaquetar aplicaciones web en Java.",
+          "El formato EAR se utiliza exclusivamente para empaquetar aplicaciones Java para dispositivos móviles.",
+          "El formato JRE es un formato de empaquetado especializado para ejecutables de Java."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se delimita la cuestión a archivos de despliegue Jakarta EE y se corrigen distractores para que la única afirmación cierta sea la del WAR web. El JAR puede ser ejecutable, biblioteca o módulo; EAR es de aplicaciones enterprise y JRE no es archivo de empaquetado.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-III-10"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1; El bloque 30 cubre el entorno Java y la arquitectura Java EE/Jakarta EE. La función de JAR/WAR/EAR se verifica en las especificaciones y tutoriales oficiales Jakarta EE.; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+        },
+        "etiquetas": [
+          "Java",
+          "Jakarta EE",
+          "JAR",
+          "WAR",
+          "EAR",
+          "JRE",
+          "archivo de despliegue"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/platform/packaging/packaging.html",
+              "referencia": "Jakarta EE Tutorial, Packaging: las aplicaciones se entregan como archivos JAR, WAR o EAR; WAR es el archivo web, EAR agrupa módulos de una aplicación empresarial y JAR también se usa para módulos y bibliotecas."
+            },
+            {
+              "url": "https://jakarta.ee/specifications/platform/9/jakarta-platform-spec-9.html",
+              "referencia": "Jakarta EE Platform Specification, §8.1.2: una aplicación Jakarta EE se empaqueta como EAR, que puede contener módulos JAR, WAR y RAR; los WAR son módulos web."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1. El bloque 30 cubre el entorno Java y la arquitectura Java EE/Jakarta EE. La función de JAR/WAR/EAR se verifica en las especificaciones y tutoriales oficiales Jakarta EE."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I, consultada el 30-10-2026; el tema asignado se cotejó con revision/temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX, consultada el 30-10-2026; el tema asignado se cotejó con revision/temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se delimita la cuestión a archivos de despliegue Jakarta EE y se corrigen distractores para que la única afirmación cierta sea la del WAR web. El JAR puede ser ejecutable, biblioteca o módulo; EAR es de aplicaciones enterprise y JRE no es archivo de empaquetado. Cotejo ITIC Academy: El bloque 30 cubre el entorno Java y la arquitectura Java EE/Jakarta EE. La función de JAR/WAR/EAR se verifica en las especificaciones y tutoriales oficiales Jakarta EE. Correspondencia oficial: A1-67, A2-III-10. El material académico es contexto; la afirmación se acredita con normas/documentos técnicos citados."
+        }
+      }
+    },
+    {
+      "id": 3445,
+      "original": {
+        "id": 3445,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique que significan las siglas POJO:",
+        "opciones": [
+          "Plain Over Java Objects",
+          "Plain Old JavaBean Objects",
+          "Plain Old Java Objects",
+          "Ninguna de las anteriores"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3445,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique que significan las siglas POJO:",
+        "opciones": [
+          "Plain Over Java Objects",
+          "Plain Old JavaBean Objects",
+          "Plain Old Java Object",
+          "Ninguna de las anteriores"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se corrige la opción correcta del plural Objects al singular Object, que es la expansión exacta del acrónimo según Martin Fowler, quien relata la acuñación del término.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-III-10"
+          ],
+          "bloque_academia": "ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1; El bloque 30 cubre el entorno Java y el modelo de objetos usado en Java EE/Jakarta EE. La expansión histórica exacta del término se contrasta con la nota de Martin Fowler, coacuñador de POJO.; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+        },
+        "etiquetas": [
+          "POJO",
+          "Plain Old Java Object",
+          "Java",
+          "JavaBean",
+          "objeto simple"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.martinfowler.com/bliki/POJO.html",
+              "referencia": "Martin Fowler, “POJO” (8-12-2003): define expresamente el acrónimo como Plain Old Java Object y relata su acuñación con Rebecca Parsons y Josh MacKenzie en 2000."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, Bloque 30 Tecnologías de Sistemas de la Información, versión 2026.1. El bloque 30 cubre el entorno Java y el modelo de objetos usado en Java EE/Jakarta EE. La expansión histórica exacta del término se contrasta con la nota de Martin Fowler, coacuñador de POJO."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I, consultada el 30-10-2026; el tema asignado se cotejó con revision/temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX, consultada el 30-10-2026; el tema asignado se cotejó con revision/temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se corrige la opción correcta del plural Objects al singular Object, que es la expansión exacta del acrónimo según Martin Fowler, quien relata la acuñación del término. Cotejo ITIC Academy: El bloque 30 cubre el entorno Java y el modelo de objetos usado en Java EE/Jakarta EE. La expansión histórica exacta del término se contrasta con la nota de Martin Fowler, coacuñador de POJO. Correspondencia oficial: A1-67, A2-III-10. El material académico es contexto; la afirmación se acredita con normas/documentos técnicos citados."
+        }
+      }
+    }
+  ]
+}
