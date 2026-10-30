@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 602 (IDs 3321–3330). Acumulado: 3330 preguntas examinadas individualmente, 3253 verificadas (670 vigentes, 2338 corregidas y 245 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8793 sin revisar individualmente. Hay 2672 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 603 (IDs 3321–3335). Acumulado: 3335 preguntas examinadas individualmente, 3258 verificadas (671 vigentes, 2342 corregidas y 245 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8788 sin revisar individualmente. Hay 2677 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
+
+## Lote 603 — 30 de octubre
+
+IDs 3331–3335 examinados individualmente; originales íntegros en [cambios-lote-603.json](cambios-lote-603.json). Se acotó Ethernet a IEEE 802.3, se fijó la definición de servicio web en el marco W3C, se confirmó que DVB-T admite SFN y MFN con sincronismo necesario para SFN, y se corrigió la identificación de SA unicast y la descripción general del túnel IP.
+- **3331 — Ethernet:** IEEE 802.3 especifica la familia de redes Ethernet y sus MAC/PHY; el estándar activo recibe enmiendas, no es una única velocidad/medio. **Corregida.** A1-110/A1-118; A2-IV-8.
+- **3332 — servicios web:** según W3C WSA, sistema software para interacción interoperable máquina a máquina en red; se acota al documento W3C y no se generaliza SOAP/WSDL a toda API REST. **Corregida.** A1-65; A2-II-6/III-12.
+- **3333 — TDT DVB-T:** se admiten redes MFN con frecuencias por transmisor y SFN usando la misma; las SFN requieren sincronización adecuada. No se halló correspondencia específica de TDT/SFN/MFN en la búsqueda de Drive. **Vigente como capacidad de DVB-T.** A1-108/A1-112; A2-IV-7.
+- **3334 — SA IPsec:** RFC 4301 dice que para tráfico unicast el SPI por sí solo basta para especificar una SA (o puede combinarse localmente con el tipo de protocolo); la dirección IP se añade a la búsqueda multicast. Se corrige la clave anterior. **Corregida.** A1-115/A1-125; A2-IV-8.
+- **3335 — túnel IP:** en IP-in-IP el datagrama original se lleva como carga de otro datagrama con cabecera exterior; se acota a esta forma de tunelización usada también por algunas VPN, sin afirmar que toda VPN funcione igual o que todo túnel resuelva incompatibilidad de protocolos. **Corregida.** A1-115/A1-125; A2-IV-8.
+
+Fuentes primarias: [IEEE SA, IEEE Std 802.3-2022](https://standards.ieee.org/ieee/7003/10422/); [W3C Web Services Architecture, §1.4](https://www.w3.org/TR/ws-arch/); [ETSI TR 101 190, guía DVB terrestre, §5](https://www.etsi.org/deliver/etsi_tr/101100_101199/101190/01.01.01_60/tr_101190v010101p.pdf) y [ETSI EN 300 744](https://www.etsi.org/deliver/etsi_en/300700_300799/300744/01.05.01_40/en_300744v010501o.pdf); [IETF RFC 4301, §§4.1 y 4.4.2.1](https://www.rfc-editor.org/rfc/rfc4301.html); [IETF RFC 2003, §1](https://www.rfc-editor.org/rfc/rfc2003.html). Clasificación comparada con [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y revision/temario-oficial.json.
+
+Cotejo ITIC Academy: [bloque 43 «Protocolos», 2026](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk) incluye Ethernet, capas y protocolos de red, y una sección sobre túneles; para TDT no se localizó cobertura directa específica. [Bloque 30 «Tecnologías de sistemas de información», 2026](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk) aborda servicios web y estándares de interoperabilidad. [Bloque 48 «Seguridad en redes y aplicaciones», 2026.1](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk) trata IPsec, VPN y aplicaciones/servicios web. La academia se usa como cotejo curricular y no como fuente de respuesta técnica.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check; el inventario estructural no sustituye la revisión individual.
 
 ## Lote 602 — 30 de octubre
 
