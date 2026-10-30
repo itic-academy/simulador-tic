@@ -168765,71 +168765,304 @@
       "id": 3466,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones sobre data-warehouse es verdadera?",
+      "texto": "¿Qué conjunto de características describe clásicamente un almacén de datos (data warehouse)?",
       "opciones": [
-        "Los datos se agregan en conjuntos.",
-        "La actualización de los datos se hace principalmente en tiempo real.",
-        "Están orientados a procesos.",
-        "Únicamente se puede realizar data-mining sobre un sistema data-warehouse."
+        "Orientado a temas, integrado, variante en el tiempo y no volátil.",
+        "Orientado a transacciones, integrado, exclusivamente en tiempo real y volátil.",
+        "Orientado a procesos operativos, sin conservación de datos históricos.",
+        "Exclusivo para ejecutar algoritmos de minería de datos."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se reemplaza el enunciado impreciso y la opción sobre agregación, que no define el concepto. La opción correcta ahora recoge las cuatro características clásicas; se evitan absolutos sobre latencia de carga y exclusividad de minería.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34 BI y Big Data, actualización 2026; El bloque 34 cubre Business Intelligence, Big Data y almacenes de datos (A2-D15 en el material académico); el encuadre de almacenes de datos y OLTP/OLAP se coteja además con A2-II-4. Las características clásicas se acreditan con Oracle Database Concepts.; https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se usa como encuadre, no como sustituto de la evidencia técnica primaria."
+      },
+      "etiquetas": [
+        "data warehouse",
+        "almacén de datos",
+        "orientado a temas",
+        "integrado",
+        "histórico",
+        "no volátil"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/cd/E18283_01/server.112/e16579/concept.htm",
+            "referencia": "Oracle Database Concepts, Data Warehousing Concepts: recoge las cuatro características clásicas de Inmon: orientado a temas, integrado, no volátil y variante en el tiempo. La actualización no se define como principalmente en tiempo real."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34 BI y Big Data, actualización 2026. El bloque 34 cubre Business Intelligence, Big Data y almacenes de datos (A2-D15 en el material académico); el encuadre de almacenes de datos y OLTP/OLAP se coteja además con A2-II-4. Las características clásicas se acreditan con Oracle Database Concepts."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se reemplaza el enunciado impreciso y la opción sobre agregación, que no define el concepto. La opción correcta ahora recoge las cuatro características clásicas; se evitan absolutos sobre latencia de carga y exclusividad de minería. Cotejo ITIC Academy: El bloque 34 cubre Business Intelligence, Big Data y almacenes de datos (A2-D15 en el material académico); el encuadre de almacenes de datos y OLTP/OLAP se coteja además con A2-II-4. Las características clásicas se acreditan con Oracle Database Concepts. Correspondencia oficial: A1-75, A2-II-4."
+      }
     },
     {
       "id": 3467,
       "bloque": 0,
       "tema": 0,
-      "texto": "A la hora de aplicar métodos de data mining:",
+      "texto": "Antes de aplicar un método de minería de datos a un conjunto real, ¿qué conviene hacer cuando la calidad de los datos o la tarea lo requieran?",
       "opciones": [
-        "Lo único importante es que se disponga de muchos datos.",
-        "Debe disponerse de muchos datos residentes en una base de datos relacional.",
-        "Lo más importante es disponer de una buena herramienta comercial.",
-        "Los datos deben haber sido preprocesados."
+        "Aumentar el volumen de datos aunque no sean pertinentes ni fiables.",
+        "Convertir necesariamente todos los datos en tablas de una base de datos relacional.",
+        "Elegir primero una herramienta comercial, independientemente del problema.",
+        "Preparar los datos para la tarea, tratando problemas de calidad y aplicando las transformaciones que resulten pertinentes."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se acota la afirmación absoluta “los datos deben haber sido preprocesados”: se pregunta por la preparación apropiada cuando la calidad o el método lo requieren. La clave sigue siendo la opción 3, con explicación de que las operaciones concretas dependen del caso.",
+      "clasificacion": {
+        "A1": [
+          "A1-71"
+        ],
+        "A2": [
+          "A2-III-15"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos; El bloque 32 sitúa la preparación de datos en el ciclo de ciencia de datos; el bloque 34 desarrolla minería de datos y sus algoritmos. La pertinencia de cada operación se contrasta con los capítulos de preprocesamiento del texto de Han, Pei y Tong.; https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk | ITIC Academy, bloque 34 BI y Big Data, actualización 2026; El bloque 32 sitúa la preparación de datos en el ciclo de ciencia de datos; el bloque 34 desarrolla minería de datos y sus algoritmos. La pertinencia de cada operación se contrasta con los capítulos de preprocesamiento del texto de Han, Pei y Tong.; https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se usa como encuadre, no como sustituto de la evidencia técnica primaria."
+      },
+      "etiquetas": [
+        "data mining",
+        "preprocesamiento",
+        "preparación de datos",
+        "calidad de datos",
+        "modelado"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://hanj.cs.illinois.edu/bk4/bk4_slidesindex.htm",
+            "referencia": "Han, Pei y Tong, Data Mining: Concepts and Techniques, 4.ª ed. (2023), material oficial de autores: capítulo 2 sobre datos, mediciones y preprocesamiento; el libro distingue preparación de datos de la etapa de minería."
+          },
+          {
+            "url": "https://hanj.cs.illinois.edu/cs412/bk3/01.pdf",
+            "referencia": "Han, Kamber y Pei, Data Mining: Concepts and Techniques, 3.ª ed., cap. 1: selección, limpieza, integración y transformación son formas de preprocesamiento anteriores a la minería dentro del proceso de descubrimiento de conocimiento; el flujo concreto depende del problema."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos. El bloque 32 sitúa la preparación de datos en el ciclo de ciencia de datos; el bloque 34 desarrolla minería de datos y sus algoritmos. La pertinencia de cada operación se contrasta con los capítulos de preprocesamiento del texto de Han, Pei y Tong."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34 BI y Big Data, actualización 2026. El bloque 32 sitúa la preparación de datos en el ciclo de ciencia de datos; el bloque 34 desarrolla minería de datos y sus algoritmos. La pertinencia de cada operación se contrasta con los capítulos de preprocesamiento del texto de Han, Pei y Tong."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se acota la afirmación absoluta “los datos deben haber sido preprocesados”: se pregunta por la preparación apropiada cuando la calidad o el método lo requieren. La clave sigue siendo la opción 3, con explicación de que las operaciones concretas dependen del caso. Cotejo ITIC Academy: El bloque 32 sitúa la preparación de datos en el ciclo de ciencia de datos; el bloque 34 desarrolla minería de datos y sus algoritmos. La pertinencia de cada operación se contrasta con los capítulos de preprocesamiento del texto de Han, Pei y Tong. Correspondencia oficial: A1-71, A2-III-15."
+      }
     },
     {
       "id": 3468,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿A qué hace referencia las siglas WAPI?",
+      "texto": "En las especificaciones de la Workflow Management Coalition (WfMC), ¿qué significa WAPI en el contexto de la gestión de flujos de trabajo?",
       "opciones": [
-        "Wireless Advanced Privacy Infrastructure",
-        "Workflow Application Programming Interface",
-        "Wired Advanced Professional Institute",
-        "Wireless Application Programming Interface"
+        "Wireless Advanced Privacy Infrastructure.",
+        "Workflow Application Programming Interface(s).",
+        "Wired Advanced Professional Institute.",
+        "Wireless Application Programming Interface."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se añade el contexto WfMC/workflow al enunciado para eliminar la ambigüedad de WAPI, que también se usa en terminología inalámbrica. Se conserva la opción de Workflow Application Programming Interface como expansión pretendida.",
+      "clasificacion": {
+        "A1": [
+          "A1-103"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": "ITIC Academy, Temas 103 y 104: Gestión Documental, versión 2026; El material de los temas 103/104 desarrolla gestión documental y de contenidos y el tema A2-T16 de sistemas de gestión de flujos de trabajo. No localicé una expansión literal de WAPI en el material académico: la expansión de la WfMC se acredita con la especificación primaria de esta organización.; https://docs.google.com/document/d/1GdG6vnpLbrJqXyh7oO0HMHO0JzX5nlU9/edit?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se usa como encuadre, no como sustituto de la evidencia técnica primaria."
+      },
+      "etiquetas": [
+        "WAPI",
+        "WfMC",
+        "workflow",
+        "gestión de flujos de trabajo",
+        "API"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://wfmc.org/wp-content/uploads/2022/09/if2v20.pdf",
+            "referencia": "Workflow Management Coalition, Workflow Management Application Programming Interface (Interface 2&3), 1-07-1998: denomina WAPI al conjunto de Workflow Application Programming Interfaces para acceder a funciones de motores de workflow."
+          },
+          {
+            "url": "https://wfmc.org/wp-content/uploads/2022/09/if21009v11.pdf",
+            "referencia": "Workflow Management Coalition, Workflow Management Application Programming Interface (Interface 2), 15-05-1996: especificación de interfaz de gestión de workflows."
+          },
+          {
+            "url": "https://docs.google.com/document/d/1GdG6vnpLbrJqXyh7oO0HMHO0JzX5nlU9/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, Temas 103 y 104: Gestión Documental, versión 2026. El material de los temas 103/104 desarrolla gestión documental y de contenidos y el tema A2-T16 de sistemas de gestión de flujos de trabajo. No localicé una expansión literal de WAPI en el material académico: la expansión de la WfMC se acredita con la especificación primaria de esta organización."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se añade el contexto WfMC/workflow al enunciado para eliminar la ambigüedad de WAPI, que también se usa en terminología inalámbrica. Se conserva la opción de Workflow Application Programming Interface como expansión pretendida. Cotejo ITIC Academy: El material de los temas 103/104 desarrolla gestión documental y de contenidos y el tema A2-T16 de sistemas de gestión de flujos de trabajo. No localicé una expansión literal de WAPI en el material académico: la expansión de la WfMC se acredita con la especificación primaria de esta organización. Correspondencia oficial: A1-103, A2-II-16."
+      }
     },
     {
       "id": 3469,
       "bloque": 0,
       "tema": 0,
-      "texto": "El permiso de Unix 500 permite:",
+      "texto": "En los permisos POSIX de un archivo regular, ¿qué permisos expresa el modo octal 0500?",
       "opciones": [
-        "Lectura y escritura para el propietario del archivo",
-        "Lectura y ejecución para el propietario del archivo",
-        "Lectura y escritura para todos los usuarios",
-        "Lectura y ejecución para todos los usuarios del mismo grupo que lo ha creado"
+        "Lectura y escritura para el propietario; ninguno para grupo y otros.",
+        "Lectura y ejecución para el propietario; ninguno para grupo y otros.",
+        "Lectura y escritura para todos los usuarios.",
+        "Lectura y ejecución para el propietario y su grupo."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se precisa “archivo regular” y se expresa el modo como 0500 para identificar con claridad las tres cifras de propietario, grupo y otros. Se mantiene la clave 1.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 Sistemas Operativos; El bloque 27 aborda sistemas operativos y el temario A1/A2 incluye UNIX/Linux y administración de permisos. La interpretación exacta de los bits octales 0500 se verifica en documentación de chmod, no se atribuye literalmente al material de academia.; https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se usa como encuadre, no como sustituto de la evidencia técnica primaria."
+      },
+      "etiquetas": [
+        "Unix",
+        "Linux",
+        "permisos POSIX",
+        "chmod",
+        "octal 500",
+        "lectura",
+        "ejecución"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man1/chmod.1.html",
+            "referencia": "Linux man-pages, chmod(1): el modo numérico usa cifras octales para permisos del propietario, grupo y otros; read=4, write=2, execute=1."
+          },
+          {
+            "url": "https://www.gnu.org/s/coreutils/manual/html_node/Operator-Numeric-Modes.html",
+            "referencia": "GNU Coreutils Manual, Operator Numeric Modes: los dígitos octales especifican separadamente permisos del propietario, grupo y otros."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 Sistemas Operativos. El bloque 27 aborda sistemas operativos y el temario A1/A2 incluye UNIX/Linux y administración de permisos. La interpretación exacta de los bits octales 0500 se verifica en documentación de chmod, no se atribuye literalmente al material de academia."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se precisa “archivo regular” y se expresa el modo como 0500 para identificar con claridad las tres cifras de propietario, grupo y otros. Se mantiene la clave 1. Cotejo ITIC Academy: El bloque 27 aborda sistemas operativos y el temario A1/A2 incluye UNIX/Linux y administración de permisos. La interpretación exacta de los bits octales 0500 se verifica en documentación de chmod, no se atribuye literalmente al material de academia. Correspondencia oficial: A1-60, A2-II-2."
+      }
     },
     {
       "id": 3470,
       "bloque": 0,
       "tema": 0,
-      "texto": "SHA-1 es un algoritmo empleado por la criptografía simétrica de:",
+      "texto": "¿Qué tipo de primitiva criptográfica es SHA-1?",
       "opciones": [
-        "Resúmen",
-        "Bloques",
-        "Flujos",
-        "Las respuestas ‘b’ y ‘c’ son correctas"
+        "Una función hash que produce un resumen criptográfico.",
+        "Un cifrador simétrico por bloques.",
+        "Un cifrador simétrico de flujo.",
+        "Un algoritmo de cifrado asimétrico."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El enunciado original presupone erróneamente que SHA-1 es cifrado simétrico. Se sustituye por una pregunta de clasificación criptográfica y se explicita su obsolescencia para protección nueva, sin confundir hash con cifrado.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad y Criptografía; El bloque 36 aborda criptografía y algoritmos hash. La clasificación de SHA-1 como función hash y su estado para protección criptográfica nueva se acreditan con FIPS 180-4 y la política/transición de NIST.; https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se usa como encuadre, no como sustituto de la evidencia técnica primaria."
+      },
+      "etiquetas": [
+        "SHA-1",
+        "función hash",
+        "resumen criptográfico",
+        "cifrado simétrico",
+        "cifrado por bloques",
+        "cifrado de flujo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+            "referencia": "NIST FIPS PUB 180-4, Secure Hash Standard: define SHA-1 entre los algoritmos hash seguros; SHA-1 produce un resumen de 160 bits y no es un algoritmo de cifrado simétrico."
+          },
+          {
+            "url": "https://csrc.nist.gov/News/2022/nist-transitioning-away-from-sha-1-for-all-apps",
+            "referencia": "NIST, Transitioning Away from SHA-1 for All Applications: explica los problemas de resistencia a colisiones y el plan de transición para dejar de usar SHA-1 en protección criptográfica nueva antes del 31-12-2030."
+          },
+          {
+            "url": "https://csrc.nist.gov/Projects/Hash-Functions/NIST-Policy-on-Hash-Functions",
+            "referencia": "NIST Policy on Hash Functions: recomienda abandonar SHA-1 y usar SHA-2 o SHA-3; contempla usos limitados heredados según política."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 Seguridad y Criptografía. El bloque 36 aborda criptografía y algoritmos hash. La clasificación de SHA-1 como función hash y su estado para protección criptográfica nueva se acreditan con FIPS 180-4 y la política/transición de NIST."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "El enunciado original presupone erróneamente que SHA-1 es cifrado simétrico. Se sustituye por una pregunta de clasificación criptográfica y se explicita su obsolescencia para protección nueva, sin confundir hash con cifrado. Cotejo ITIC Academy: El bloque 36 aborda criptografía y algoritmos hash. La clasificación de SHA-1 como función hash y su estado para protección criptográfica nueva se acreditan con FIPS 180-4 y la política/transición de NIST. Correspondencia oficial: A1-79, A2-IV-12."
+      }
     },
     {
       "id": 3471,
