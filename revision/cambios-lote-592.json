@@ -1,0 +1,355 @@
+{
+  "fecha": "2026-10-30",
+  "alcance": "IDs 3276–3280; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3276,
+      "original": {
+        "id": 3276,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El protocolo ARP:",
+        "opciones": [
+          "Proporciona la traducción entre dirección IP y dirección MAC",
+          "Proporciona una conversión entre dirección LAN y dirección IP",
+          "Se utiliza en routers y bridges",
+          "A y B son correctas"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3276,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una red Ethernet con IPv4, ¿qué función realiza ARP para enviar un paquete a través del enlace local?",
+        "opciones": [
+          "Resuelve la dirección IPv4 del siguiente salto en la dirección hardware (MAC) Ethernet necesaria para construir la trama.",
+          "Convierte el identificador de una red LAN en una dirección IP.",
+          "Traduce las direcciones MAC en nombres DNS.",
+          "Determina las rutas entre redes IP remotas."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "ARP resuelve una dirección de protocolo, habitualmente IPv4, a la dirección hardware Ethernet necesaria para entregar la trama en el enlace local. No es una conversión entre una supuesta «dirección LAN» e IP, ni una función de bridge. Se acota el enunciado a ARP para IPv4 sobre Ethernet y se mantiene como correcta la opción de correspondencia IP–MAC (índice 0). A1-110/A1-115; A2-II-8/A2-IV-8.",
+        "clasificacion": {
+          "A1": [
+            "A1-110",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1, 29-09-2026; el índice del bloque 43 incluye ARP (apartado 3.6), TCP/IP, direccionamiento, protocolos de enlace y redes locales. La respuesta concreta se acredita con RFC 826, no con el apunte académico. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación comprobada contra revision/temario-oficial.json y los programas GSI publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        },
+        "etiquetas": [
+          "ARP",
+          "IPv4",
+          "resolución de direcciones",
+          "Ethernet",
+          "capa de enlace"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc826.html",
+              "referencia": "IETF RFC 826, Address Resolution Protocol: convierte direcciones de protocolo en direcciones hardware Ethernet de 48 bits para transmisión en Ethernet; la resolución se realiza en el enlace local."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+              "referencia": "IETF RFC 1122, Requirements for Internet Hosts — Communication Layers: requisitos de hosts IPv4, enlace y ARP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1, 29-09-2026; cotejo curricular: el índice del bloque 43 incluye ARP (apartado 3.6), TCP/IP, direccionamiento, protocolos de enlace y redes locales. La respuesta concreta se acredita con RFC 826, no con el apunte académico. Este material orienta la clasificación y no sustituye la fuente primaria de la respuesta."
+            }
+          ],
+          "observaciones": "ARP resuelve una dirección de protocolo, habitualmente IPv4, a la dirección hardware Ethernet necesaria para entregar la trama en el enlace local. No es una conversión entre una supuesta «dirección LAN» e IP, ni una función de bridge. Se acota el enunciado a ARP para IPv4 sobre Ethernet y se mantiene como correcta la opción de correspondencia IP–MAC (índice 0). A1-110/A1-115; A2-II-8/A2-IV-8. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 43 «Protocolos», versión 2026.1, 29-09-2026; el índice del bloque 43 incluye ARP (apartado 3.6), TCP/IP, direccionamiento, protocolos de enlace y redes locales. La respuesta concreta se acredita con RFC 826, no con el apunte académico. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk Clasificación comprobada contra revision/temario-oficial.json y los programas GSI publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        }
+      }
+    },
+    {
+      "id": 3277,
+      "original": {
+        "id": 3277,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Se ha establecido una conexión TCP sobre una red móvil celular. La red móvil sufre pérdidas frecuentes por errores de transmisión debidos a las características del acceso radio. El emisor TCP:",
+        "opciones": [
+          "Distingue entre pérdidas por errores de transmisión y pérdidas por congestión, aplicando procedimientos de recuperación diferentes.",
+          "Sólo retransmite paquetes que se pierdan debido a congestión en la red.",
+          "Indica al nivel de enlace que disminuya su tasa de envío.",
+          "Interpreta las pérdidas debidas a errores de transmisión como congestión en la red, disminuyendo su tasa de envío."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3277,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una conexión TCP clásica basada en pérdidas, sin ECN ni un mecanismo auxiliar que identifique pérdidas no debidas a congestión, una pérdida de segmento causada por errores del acceso radio llega al emisor. ¿Cómo la trata normalmente el control de congestión TCP?",
+        "opciones": [
+          "La identifica automáticamente como error radio y no modifica la ventana de congestión.",
+          "Solo retransmite si un router informa expresamente de que el descarte fue por congestión.",
+          "Ordena al nivel de enlace que reduzca su tasa de transmisión.",
+          "La toma como señal de congestión: recupera el segmento perdido y reduce la ventana de congestión según el mecanismo de pérdida detectado."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La respuesta original generalizaba sin delimitar las variantes modernas. En TCP clásico basado en pérdidas, cuando una pérdida llega a transporte y no hay ECN, señal de congestión explícita ni mecanismo especializado de discriminación, TCP la trata como indicación de congestión y activa retransmisión/ajuste de ventana; no sabe por sí solo que el descarte ocurrió por error radio. Se añade esa condición al enunciado y se conserva la opción 3 (índice 3). A1-108/A1-115; A2-II-8.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1, 29-09-2026; el bloque 43 desarrolla TCP, retransmisión, pérdidas, control de congestión y arquitecturas de protocolos. El estándar vigente IETF es la fuente de la conducta de TCP. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación comprobada contra revision/temario-oficial.json y los programas GSI publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        },
+        "etiquetas": [
+          "TCP",
+          "control de congestión",
+          "pérdida no debida a congestión",
+          "red móvil",
+          "RFC 5681"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc5681.html",
+              "referencia": "IETF RFC 5681, TCP Congestion Control, §§ 2–3: los mecanismos TCP descritos usan la pérdida como señal de congestión y reducen la ventana al detectar pérdida por timeout/ACK duplicados."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3168.html",
+              "referencia": "IETF RFC 3168, Explicit Congestion Notification: ECN aporta señal explícita de congestión y puede evitar depender exclusivamente de pérdidas; por eso el stem delimita el caso de TCP clásico sin ECN ni mecanismo auxiliar."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+              "referencia": "IETF RFC 9293, Transmission Control Protocol: especificación base actual de TCP, que remite a RFC 5681 para los algoritmos de control de congestión."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1, 29-09-2026; cotejo curricular: el bloque 43 desarrolla TCP, retransmisión, pérdidas, control de congestión y arquitecturas de protocolos. El estándar vigente IETF es la fuente de la conducta de TCP. Este material orienta la clasificación y no sustituye la fuente primaria de la respuesta."
+            }
+          ],
+          "observaciones": "La respuesta original generalizaba sin delimitar las variantes modernas. En TCP clásico basado en pérdidas, cuando una pérdida llega a transporte y no hay ECN, señal de congestión explícita ni mecanismo especializado de discriminación, TCP la trata como indicación de congestión y activa retransmisión/ajuste de ventana; no sabe por sí solo que el descarte ocurrió por error radio. Se añade esa condición al enunciado y se conserva la opción 3 (índice 3). A1-108/A1-115; A2-II-8. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 43 «Protocolos», versión 2026.1, 29-09-2026; el bloque 43 desarrolla TCP, retransmisión, pérdidas, control de congestión y arquitecturas de protocolos. El estándar vigente IETF es la fuente de la conducta de TCP. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk Clasificación comprobada contra revision/temario-oficial.json y los programas GSI publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        }
+      }
+    },
+    {
+      "id": 3278,
+      "original": {
+        "id": 3278,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La jerarquía digital MDH:",
+        "opciones": [
+          "Responde por Multimedia Digital Hierarchy",
+          "Responde por Multiplexed Digital Hierarchy",
+          "No existe",
+          "Ninguna de las respuestas anteriores es correcta"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3278,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la Recomendación ITU-T G.707, ¿cómo se denomina la jerarquía digital síncrona de transporte?",
+        "opciones": [
+          "Synchronous Digital Hierarchy (SDH).",
+          "Multiplexed Digital Hierarchy (MDH).",
+          "Multimedia Digital Hierarchy (MDH).",
+          "Plesiochronous Digital Hierarchy (PDH)."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "ITU-T normaliza las jerarquías de transporte plesiócrona (PDH) y síncrona (SDH); G.707 define la interfaz de la SDH. «MDH» no es la denominación de jerarquía de G.707; la pregunta original decía «no existe» de forma absoluta y sus opciones incluían expansiones no respaldadas por ITU-T. Se sustituye por una pregunta precisa sobre el nombre de la jerarquía síncrona de G.707, cuya respuesta es Synchronous Digital Hierarchy (SDH), índice 0. No se afirma que ninguna expansión MDH pueda aparecer en contextos ajenos a esa normalización. A1-108/A1-113; A2-IV-10.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-113"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026.1, 29-09-2026; el bloque 42, apartado 7.3 «Jerarquías digitales: PDH, SDH (JDS) y OTN», explica las denominaciones normalizadas. ITU-T G.707/G.703 resuelven la terminología del enunciado. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación comprobada contra revision/temario-oficial.json y los programas GSI publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        },
+        "etiquetas": [
+          "jerarquía digital",
+          "SDH",
+          "PDH",
+          "ITU-T G.707",
+          "multiplexación digital"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/T-REC-G.707/en",
+              "referencia": "ITU-T G.707/Y.1322 (01/2007 y enmiendas vigentes), Network node interface for the synchronous digital hierarchy (SDH). La recomendación identifica expresamente SDH como Synchronous Digital Hierarchy."
+            },
+            {
+              "url": "https://www.itu.int/rec/T-REC-G.703-201604-I/en",
+              "referencia": "ITU-T G.703 (04/2016), interfaces jerárquicas; distingue G.702 (PDH) y G.707 (SDH). La nomenclatura normalizada de transporte es PDH/SDH, no una categoría ITU-T llamada MDH."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026.1, 29-09-2026; cotejo curricular: el bloque 42, apartado 7.3 «Jerarquías digitales: PDH, SDH (JDS) y OTN», explica las denominaciones normalizadas. ITU-T G.707/G.703 resuelven la terminología del enunciado. Este material orienta la clasificación y no sustituye la fuente primaria de la respuesta."
+            }
+          ],
+          "observaciones": "ITU-T normaliza las jerarquías de transporte plesiócrona (PDH) y síncrona (SDH); G.707 define la interfaz de la SDH. «MDH» no es la denominación de jerarquía de G.707; la pregunta original decía «no existe» de forma absoluta y sus opciones incluían expansiones no respaldadas por ITU-T. Se sustituye por una pregunta precisa sobre el nombre de la jerarquía síncrona de G.707, cuya respuesta es Synchronous Digital Hierarchy (SDH), índice 0. No se afirma que ninguna expansión MDH pueda aparecer en contextos ajenos a esa normalización. A1-108/A1-113; A2-IV-10. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 42 «Redes», versión 2026.1, 29-09-2026; el bloque 42, apartado 7.3 «Jerarquías digitales: PDH, SDH (JDS) y OTN», explica las denominaciones normalizadas. ITU-T G.707/G.703 resuelven la terminología del enunciado. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Clasificación comprobada contra revision/temario-oficial.json y los programas GSI publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        }
+      }
+    },
+    {
+      "id": 3279,
+      "original": {
+        "id": 3279,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El estandar de IEEE 802.9 se corresponde con...",
+        "opciones": [
+          "fibra optica",
+          "voz y datos",
+          "seguridad LAN",
+          "ninguna de las anteriores"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3279,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el contexto histórico de IEEE Std 802.9-1994, ¿qué definía esta norma (retirada por IEEE en 2000)?",
+        "opciones": [
+          "Una interfaz de LAN de servicios integrados (ISLAN) en las capas MAC y física.",
+          "Un estándar de transmisión exclusivamente por fibra óptica.",
+          "Un protocolo de seguridad de redes LAN.",
+          "Una norma actual para redes inalámbricas IEEE 802.11."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "IEEE 802.9-1994 definió una interfaz LAN de servicios integrados en MAC/PHY; no era un estándar de fibra ni de seguridad LAN. IEEE registra el estándar como Inactive-Withdrawn, retirado en 2000, por lo que la pregunta se mantiene en contexto histórico y se cambia la opción correcta a la denominación precisa «Integrated Services LAN Interface (ISLAN)» (índice 0), evitando reducir el propósito normativo únicamente a voz y datos. A1-110/A1-118; A2-IV-8.",
+        "clasificacion": {
+          "A1": [
+            "A1-110",
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026.1, 29-09-2026; el bloque 42 cubre arquitectura LAN e IEEE 802 en el apartado 4.1, pero no desarrolla específicamente la antigua IEEE 802.9. Se registra esa limitación y se contrasta el alcance y retirada únicamente en la ficha primaria IEEE SA. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "historica. Clasificación comprobada contra revision/temario-oficial.json y los programas GSI publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        },
+        "etiquetas": [
+          "IEEE 802.9",
+          "ISLAN",
+          "LAN de servicios integrados",
+          "voz y datos",
+          "estándar retirado"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://standards.ieee.org/ieee/802.9/1145/",
+              "referencia": "IEEE SA, IEEE 802.9-1994, Integrated Services (IS) LAN Interface at MAC and PHY layers: define una interfaz LAN de servicios integrados; estado Inactive-Withdrawn, retirada el 06-03-2000."
+            },
+            {
+              "url": "https://standards.ieee.org/ieee/802.9a/1147/",
+              "referencia": "IEEE SA, IEEE 802.9a-1995: especificación ISLAN16-T como suplemento de IEEE 802.9; también figura como estándar retirado."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026.1, 29-09-2026; cotejo curricular: el bloque 42 cubre arquitectura LAN e IEEE 802 en el apartado 4.1, pero no desarrolla específicamente la antigua IEEE 802.9. Se registra esa limitación y se contrasta el alcance y retirada únicamente en la ficha primaria IEEE SA. Este material orienta la clasificación y no sustituye la fuente primaria de la respuesta."
+            }
+          ],
+          "observaciones": "IEEE 802.9-1994 definió una interfaz LAN de servicios integrados en MAC/PHY; no era un estándar de fibra ni de seguridad LAN. IEEE registra el estándar como Inactive-Withdrawn, retirado en 2000, por lo que la pregunta se mantiene en contexto histórico y se cambia la opción correcta a la denominación precisa «Integrated Services LAN Interface (ISLAN)» (índice 0), evitando reducir el propósito normativo únicamente a voz y datos. A1-110/A1-118; A2-IV-8. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 42 «Redes», versión 2026.1, 29-09-2026; el bloque 42 cubre arquitectura LAN e IEEE 802 en el apartado 4.1, pero no desarrolla específicamente la antigua IEEE 802.9. Se registra esa limitación y se contrasta el alcance y retirada únicamente en la ficha primaria IEEE SA. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Clasificación comprobada contra revision/temario-oficial.json y los programas GSI publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        }
+      }
+    },
+    {
+      "id": 3280,
+      "original": {
+        "id": 3280,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿En cuál de los siguientes países se usa el mismo sistema de Televisión Digital Terrestre que usamos en Europa?",
+        "opciones": [
+          "Australia.",
+          "EEUU.",
+          "Chile.",
+          "Japón."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3280,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué país basó la planificación de su televisión digital terrestre en un estándar nacional derivado de DVB-T europeo, aunque con variaciones propias?",
+        "opciones": [
+          "Australia.",
+          "Estados Unidos.",
+          "Chile.",
+          "Japón."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "«El sistema usado en Europa» era una generalización geográfica y temporal. Se concreta la comparación: Australia emplea para su planificación de televisión digital terrestre AS 4599, basada en el sistema europeo DVB-T aunque con variaciones nacionales. La opción Australia (índice 0) queda verificada en la fuente del regulador australiano y se define DVB-T en ETSI EN 300 744. A1-108; A2-IV-7.",
+        "clasificacion": {
+          "A1": [
+            "A1-108"
+          ],
+          "A2": [
+            "A2-IV-7"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026.1, 29-09-2026; el bloque 42 presenta medios de transmisión y telecomunicaciones; su índice no identifica DVB-T/TDT como contenido específico. Se marca como encaje curricular general —no cobertura explícita— y se resuelve con ACMA y ETSI. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación comprobada contra revision/temario-oficial.json y los programas GSI publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        },
+        "etiquetas": [
+          "TDT",
+          "DVB-T",
+          "Australia",
+          "estándar ETSI EN 300 744",
+          "radiodifusión digital terrestre"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.acma.gov.au/sites/default/files/2026-02/Stations_book_electronic_edition.pdf",
+              "referencia": "Australian Communications and Media Authority, Radio and Television Broadcasting Stations, edición febrero de 2026: la planificación DTTB australiana se basa en AS 4599, basada a su vez en DVB-T europeo con variaciones nacionales."
+            },
+            {
+              "url": "https://www.etsi.org/deliver/etsi_en/300700_300799/300744/01.06.02_60/en_300744v010602p.pdf",
+              "referencia": "ETSI EN 300 744 V1.6.2 (2015-10), framing, channel coding and modulation for DVB-T digital terrestrial television; especificación europea del sistema referido."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026.1, 29-09-2026; cotejo curricular: el bloque 42 presenta medios de transmisión y telecomunicaciones; su índice no identifica DVB-T/TDT como contenido específico. Se marca como encaje curricular general —no cobertura explícita— y se resuelve con ACMA y ETSI. Este material orienta la clasificación y no sustituye la fuente primaria de la respuesta."
+            }
+          ],
+          "observaciones": "«El sistema usado en Europa» era una generalización geográfica y temporal. Se concreta la comparación: Australia emplea para su planificación de televisión digital terrestre AS 4599, basada en el sistema europeo DVB-T aunque con variaciones nacionales. La opción Australia (índice 0) queda verificada en la fuente del regulador australiano y se define DVB-T en ETSI EN 300 744. A1-108; A2-IV-7. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 42 «Redes», versión 2026.1, 29-09-2026; el bloque 42 presenta medios de transmisión y telecomunicaciones; su índice no identifica DVB-T/TDT como contenido específico. Se marca como encaje curricular general —no cobertura explícita— y se resuelve con ACMA y ETSI. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Clasificación comprobada contra revision/temario-oficial.json y los programas GSI publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        }
+      }
+    }
+  ]
+}
