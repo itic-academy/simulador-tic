@@ -157197,29 +157197,100 @@
       "id": 3246,
       "bloque": 0,
       "tema": 0,
-      "texto": "La especificación WMS del OGC define tres operaciones, ¿cuáles dos son obligatorias?",
+      "texto": "En la especificación OGC Web Map Service (WMS) 1.3.0, ¿qué dos operaciones debe implementar obligatoriamente todo servidor WMS?",
       "opciones": [
         "getTopography, getMap",
         "getCoberture, getMap",
         "getMap, getCapabilities",
         "getMap, getFeatureInfo"
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "La especificación OGC WMS 1.3.0 requiere que el servicio implemente GetCapabilities y GetMap. GetFeatureInfo solo es necesario cuando se ofrece información consultable y no es una operación obligatoria para todo servidor WMS. Se corrige la clave original (índice 3) a GetMap y GetCapabilities (índice 2), y se normalizan los nombres y distractores. A1-74; A2-III-12.",
+      "clasificacion": {
+        "A1": [
+          "A1-74"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 33 Temas 73–74, E-Learning y GIS, versión 2026.1 (25-08-2026); el material incluye un apartado de servicios OGC WMS y su operación GetCapabilities/GetMap; la obligatoriedad exacta se verifica con OGC 06-042. https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación cotejada con revision/temario-oficial.json y anexos I/IX de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia sirve de referencia curricular, no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "OGC",
+        "WMS",
+        "GetCapabilities",
+        "GetMap",
+        "GetFeatureInfo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://docs.ogc.org/is/06-042/06-042.pdf",
+            "referencia": "OGC 06-042, Web Map Service Implementation Specification 1.3.0: GetCapabilities y GetMap son operaciones requeridas para un WMS; GetFeatureInfo es opcional (cláusula 7.4)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 33 Temas 73–74, E-Learning y GIS, versión 2026.1 (25-08-2026); relación curricular descrita en bloque_academia."
+          }
+        ],
+        "observaciones": "La especificación OGC WMS 1.3.0 requiere que el servicio implemente GetCapabilities y GetMap. GetFeatureInfo solo es necesario cuando se ofrece información consultable y no es una operación obligatoria para todo servidor WMS. Se corrige la clave original (índice 3) a GetMap y GetCapabilities (índice 2), y se normalizan los nombres y distractores. A1-74; A2-III-12. Cotejo académico y oficial: ITIC Academy, bloque 33 Temas 73–74, E-Learning y GIS, versión 2026.1 (25-08-2026); el material incluye un apartado de servicios OGC WMS y su operación GetCapabilities/GetMap; la obligatoriedad exacta se verifica con OGC 06-042. Clasificación cotejada con revision/temario-oficial.json y anexos I/IX de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia sirve de referencia curricular, no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 3247,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes opciones NO es un operador específico de un sistema o herramienta OLAP?",
+      "texto": "¿Cuál de los siguientes términos NO identifica una operación habitual de análisis OLAP?",
       "opciones": [
-        "DRILL",
+        "DRILL-DOWN",
         "POLL",
         "PIVOT",
         "SLICE & DICE"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "DRILL-DOWN, PIVOT y SLICE & DICE son operaciones habituales de análisis OLAP; POLL no es una operación OLAP reconocida en la documentación de Microsoft Analysis Services ni en la descripción de IBM. Se reemplaza DRILL por el término preciso DRILL-DOWN y se conserva la clave original (índice 1). A1-75; A2-II-4/A2-III-15.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4",
+          "A2-III-15"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1; el bloque aborda OLAP y análisis multidimensional; las operaciones concretas se contrastan con documentación de Microsoft e IBM. https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación cotejada con revision/temario-oficial.json y anexos I/IX de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia sirve de referencia curricular, no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "OLAP",
+        "drill-down",
+        "pivot",
+        "slice",
+        "dice"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/sql/machine-learning/r/ref-r-olapr?view=sql-server-ver17",
+            "referencia": "Microsoft Learn, olapR: enumera operaciones comunes de cubos OLAP: slice, dice, drilldown, rollup y pivot; POLL no figura como operación."
+          },
+          {
+            "url": "https://www.ibm.com/think/topics/olap",
+            "referencia": "IBM, What is OLAP?: describe drill-down, roll-up, slice and dice como operaciones de análisis multidimensional."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1; relación curricular descrita en bloque_academia."
+          }
+        ],
+        "observaciones": "DRILL-DOWN, PIVOT y SLICE & DICE son operaciones habituales de análisis OLAP; POLL no es una operación OLAP reconocida en la documentación de Microsoft Analysis Services ni en la descripción de IBM. Se reemplaza DRILL por el término preciso DRILL-DOWN y se conserva la clave original (índice 1). A1-75; A2-II-4/A2-III-15. Cotejo académico y oficial: ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1; el bloque aborda OLAP y análisis multidimensional; las operaciones concretas se contrastan con documentación de Microsoft e IBM. Clasificación cotejada con revision/temario-oficial.json y anexos I/IX de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia sirve de referencia curricular, no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 3248,
@@ -157233,21 +157304,92 @@
         "Ninguna de las anteriores"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "AENOR identifica UNE 66175:2003 como la guía para implantar sistemas de indicadores y mantiene la norma en vigor. Se conserva la clave original (índice 2). La ficha acredita título y estado, no se atribuyen a la norma requisitos específicos que no estén publicados en la ficha. A1-33/A1-103.",
+      "clasificacion": {
+        "A1": [
+          "A1-33",
+          "A1-103"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 12 Directivo TIC y planificación estratégica, versión 2026.2 (02-10-2026); el bloque trata planificación/control de gestión, cuadros de mando e indicadores; AENOR es la fuente primaria para el título y estado de la UNE 66175. https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "vigente. Clasificación cotejada con revision/temario-oficial.json y anexos I/IX de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia sirve de referencia curricular, no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "UNE 66175",
+        "indicadores",
+        "calidad",
+        "normalización"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://tienda.aenor.com/p/norma-une-66175-2003-n0030150",
+            "referencia": "Catálogo oficial de AENOR: UNE 66175:2003, Sistemas de gestión de la calidad. Guía para la implantación de sistemas de indicadores; figura En Vigor."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 12 Directivo TIC y planificación estratégica, versión 2026.2 (02-10-2026); relación curricular descrita en bloque_academia."
+          }
+        ],
+        "observaciones": "AENOR identifica UNE 66175:2003 como la guía para implantar sistemas de indicadores y mantiene la norma en vigor. Se conserva la clave original (índice 2). La ficha acredita título y estado, no se atribuyen a la norma requisitos específicos que no estén publicados en la ficha. A1-33/A1-103. Cotejo académico y oficial: ITIC Academy, bloque 12 Directivo TIC y planificación estratégica, versión 2026.2 (02-10-2026); el bloque trata planificación/control de gestión, cuadros de mando e indicadores; AENOR es la fuente primaria para el título y estado de la UNE 66175. Clasificación cotejada con revision/temario-oficial.json y anexos I/IX de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia sirve de referencia curricular, no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 3249,
       "bloque": 0,
       "tema": 0,
-      "texto": "En minería de datos, un Esquema Estrella:",
+      "texto": "En el modelado dimensional de un almacén de datos relacional, ¿qué describe un esquema estrella?",
       "opciones": [
         "No tiene en cuenta elementos temporales tales como la fecha asociada a la información.",
         "Es una forma de representar la arquitectura física del sistema OLAP.",
-        "Es una técnica de diseño de bases de datos relacionales que sirve para simular el funcionamiento de bases de datos multidimensionales.",
+        "Un diseño con una tabla de hechos relacionada directamente con tablas de dimensiones.",
         "Representa la centralización de la información en un solo SGBD para posibilitar su explotación ndimensional."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Un esquema estrella es un diseño dimensional empleado en almacenes de datos relacionales: una tabla de hechos queda relacionada directamente con tablas de dimensión. La clave original (índice 2) se mantiene, pero se corrigen el enunciado —que lo situaba imprecisamente en minería de datos— y la opción, que sugería que el esquema simula otra clase de base de datos. A1-63/A1-75; A2-II-4/A2-III-4/A2-III-15.",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4",
+          "A2-III-4",
+          "A2-III-15"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1; el bloque desarrolla almacenes de datos, modelado dimensional y OLAP; se complementa con ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1 (https://docs.google.com/document/d/16itbf_Mo8uQ4MKEEX2V-VFMEwyeL7n3F/edit?usp=drivesdk). La definición de tablas de hechos y dimensiones se fundamenta en Microsoft Learn. https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación cotejada con revision/temario-oficial.json y anexos I/IX de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia sirve de referencia curricular, no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "esquema estrella",
+        "modelado dimensional",
+        "data warehouse",
+        "tabla de hechos",
+        "dimensiones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-overview",
+            "referencia": "Microsoft Learn, Dimensional modeling: un esquema estrella es una técnica de modelado dimensional adoptada por almacenes relacionales, con tabla(s) de hechos y dimensiones."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+            "referencia": "Microsoft Learn, Understand star schema: las dimensiones describen entidades y filtran/agrupan; las tablas de hechos contienen medidas y se relacionan con las dimensiones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1; relación curricular descrita en bloque_academia."
+          }
+        ],
+        "observaciones": "Un esquema estrella es un diseño dimensional empleado en almacenes de datos relacionales: una tabla de hechos queda relacionada directamente con tablas de dimensión. La clave original (índice 2) se mantiene, pero se corrigen el enunciado —que lo situaba imprecisamente en minería de datos— y la opción, que sugería que el esquema simula otra clase de base de datos. A1-63/A1-75; A2-II-4/A2-III-4/A2-III-15. Cotejo académico y oficial: ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1; el bloque desarrolla almacenes de datos, modelado dimensional y OLAP; se complementa con ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1 (https://docs.google.com/document/d/16itbf_Mo8uQ4MKEEX2V-VFMEwyeL7n3F/edit?usp=drivesdk). La definición de tablas de hechos y dimensiones se fundamenta en Microsoft Learn. Clasificación cotejada con revision/temario-oficial.json y anexos I/IX de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia sirve de referencia curricular, no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 3250,
@@ -157261,7 +157403,40 @@
         "RQL"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "SPARQL es el lenguaje de consulta definido por W3C para consultar grafos RDF; no debe confundirse con XQuery, que consulta estructuras XML, ni con RDF, que es el modelo/formato de datos. La clave original (índice 0) es correcta. A1-76; A2-III-4.",
+      "clasificacion": {
+        "A1": [
+          "A1-76"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1; el bloque de tecnologías web/semánticas ofrece el encaje de RDF/SPARQL; la definición normativa del lenguaje se basa en la recomendación W3C. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "vigente. Clasificación cotejada con revision/temario-oficial.json y anexos I/IX de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia sirve de referencia curricular, no sustituye la fuente técnica primaria."
+      },
+      "etiquetas": [
+        "W3C",
+        "SPARQL",
+        "RDF",
+        "Web Semántica",
+        "consultas de grafos"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/sparql11-query/",
+            "referencia": "W3C Recommendation, SPARQL 1.1 Query Language: especifica la sintaxis y semántica del lenguaje de consulta para RDF."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1; relación curricular descrita en bloque_academia."
+          }
+        ],
+        "observaciones": "SPARQL es el lenguaje de consulta definido por W3C para consultar grafos RDF; no debe confundirse con XQuery, que consulta estructuras XML, ni con RDF, que es el modelo/formato de datos. La clave original (índice 0) es correcta. A1-76; A2-III-4. Cotejo académico y oficial: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1; el bloque de tecnologías web/semánticas ofrece el encaje de RDF/SPARQL; la definición normativa del lenguaje se basa en la recomendación W3C. Clasificación cotejada con revision/temario-oficial.json y anexos I/IX de las convocatorias GSI de acceso libre más recientes identificadas en BOE: A1, BOE-A-2025-25938; A2, BOE-A-2025-26262. La academia sirve de referencia curricular, no sustituye la fuente técnica primaria."
+      }
     },
     {
       "id": 3251,

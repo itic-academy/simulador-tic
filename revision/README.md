@@ -1,7 +1,26 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 585 (IDs 3241–3245). Acumulado: 3245 preguntas examinadas individualmente, 3172 verificadas (656 vigentes, 2273 corregidas y 243 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8878 sin revisar individualmente. Hay 2597 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 586 (IDs 3246–3250). Acumulado: 3250 preguntas examinadas individualmente, 3177 verificadas (658 vigentes, 2276 corregidas y 243 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8873 sin revisar individualmente. Hay 2600 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
 
+## Lote 586 — 30 de octubre
+
+IDs 3246–3250 revisados individualmente. En WMS se corrige la clave: GetCapabilities y GetMap son obligatorias, mientras que GetFeatureInfo es opcional; se identifica POLL como término ajeno a las operaciones OLAP, se confirma UNE 66175:2003 en vigor, se precisa el esquema estrella y se verifica SPARQL como lenguaje de consulta RDF. Los originales están en [cambios-lote-586.json](cambios-lote-586.json).
+
+- **3246 — OGC WMS:** GetCapabilities y GetMap son las dos operaciones requeridas para un servidor WMS 1.3.0; GetFeatureInfo es opcional. Se corrige una clave original errónea. A1-74; A2-III-12.
+
+- **3247 — OLAP:** drill-down, pivot y slice/dice son operaciones de análisis; POLL no lo es. Se precisa DRILL como DRILL-DOWN. A1-75; A2-II-4/A2-III-15.
+
+- **3248 — UNE 66175:** AENOR lista la UNE 66175:2003 como guía para implantar sistemas de indicadores y la señala En Vigor. A1-33/A1-103.
+
+- **3249 — esquema estrella:** modelo dimensional relacional con una tabla de hechos enlazada directamente a dimensiones; se corrige la redacción que lo situaba vagamente en minería de datos. A1-63/A1-75; A2-II-4/A2-III-4/A2-III-15.
+
+- **3250 — SPARQL:** lenguaje W3C para consultar grafos RDF, distinto del formato/modelo RDF y de XQuery. A1-76; A2-III-4.
+
+Fuentes primarias: [OGC 06-042, WMS 1.3.0](https://docs.ogc.org/is/06-042/06-042.pdf); [Microsoft Learn, operaciones OLAP en Analysis Services](https://learn.microsoft.com/en-us/sql/machine-learning/r/ref-r-olapr?view=sql-server-ver17) e [IBM, OLAP](https://www.ibm.com/think/topics/olap); [AENOR, UNE 66175:2003](https://tienda.aenor.com/p/norma-une-66175-2003-n0030150); [Microsoft Learn, modelado dimensional](https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-overview) y [esquema estrella](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema); [W3C, SPARQL 1.1 Query Language](https://www.w3.org/TR/sparql11-query/). Clasificación cotejada con `temario-oficial.json` y las últimas convocatorias GSI identificadas: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
+
+Cotejo ITIC Academy en Drive: [bloque 33, temas 73–74 E-Learning y GIS](https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk), para WMS/SIG; [bloque 34 Business Intelligence y Big Data](https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk) y [bloque 29 Bases de datos y modelado](https://docs.google.com/document/d/16itbf_Mo8uQ4MKEEX2V-VFMEwyeL7n3F/edit?usp=drivesdk), para OLAP y esquema dimensional; [bloque 12 Directivo TIC](https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view?usp=drivesdk), para indicadores y cuadros de mando; y [bloque 30 Tecnologías de Sistemas de Información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk), para estándares de datos/web. Los materiales de academia orientan el encaje, no sustituyen las fuentes técnicas primarias.
+
+Tras el lote se ejecutaron `inventario.cjs`, `verificar.cjs` y `git diff --check`. El inventario automático no sustituye la revisión individual del contenido.
 ## Lote 585 — 30 de octubre
 
 IDs 3241–3245 revisados individualmente. Se confirmó que Data Cleaning no es un componente ADO.NET, se definió la vista materializada Oracle, se verificó el papel de npm, se precisó la descripción actual de GNOME y se acotó la pregunta de Pentaho a su edición Developer/Community, diferenciándola de sus niveles comerciales. Los originales están en [cambios-lote-585.json](cambios-lote-585.json).
