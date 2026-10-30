@@ -169361,7 +169361,7 @@
       "id": 3476,
       "bloque": 0,
       "tema": 0,
-      "texto": "La arquitectura GRID está compuesta por capas. La capa más baja y donde se encuentran los recursos computacionales y de almacenamiento que serán compartidos por los protocolos grid se denomina:",
+      "texto": "En el modelo de arquitectura Grid de cinco capas de Globus, ¿cuál es la capa inferior que agrupa los recursos locales compartibles?",
       "opciones": [
         "Fabric.",
         "Connectivity.",
@@ -169369,63 +169369,276 @@
         "Collective."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se sustituye “protocolos grid” por el contexto de la arquitectura de cinco capas de Globus, pues otros modelos de Grid pueden usar terminología distinta. Se mantiene Fabric como clave y se explica el contenido real de esa capa.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026; El bloque 26 incluye Grid Computing dentro del tema A1-52 y arquitecturas de alto rendimiento. No localicé en el documento una exposición literal de las cinco capas de Globus; el nombre Fabric se comprueba en la fuente primaria de Foster, Kesselman y Tuecke.; https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk | El bloque 26 incluye Grid Computing dentro del tema A1-52 y arquitecturas de alto rendimiento. No localicé en el documento una exposición literal de las cinco capas de Globus; el nombre Fabric se comprueba en la fuente primaria de Foster, Kesselman y Tuecke.",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el grado de cobertura académica se expresa sin atribuir al material afirmaciones no localizadas."
+      },
+      "etiquetas": [
+        "grid computing",
+        "Globus",
+        "arquitectura por capas",
+        "fabric",
+        "recursos de cómputo y almacenamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.mcs.anl.gov/papers/P870.pdf",
+            "referencia": "Foster, Kesselman y Tuecke, The Anatomy of the Grid: An Integrated View of Grid Architecture: la capa Fabric es la base que contiene recursos compartibles como cómputo, almacenamiento, catálogos y recursos de red."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. El bloque 26 incluye Grid Computing dentro del tema A1-52 y arquitecturas de alto rendimiento. No localicé en el documento una exposición literal de las cinco capas de Globus; el nombre Fabric se comprueba en la fuente primaria de Foster, Kesselman y Tuecke."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se sustituye “protocolos grid” por el contexto de la arquitectura de cinco capas de Globus, pues otros modelos de Grid pueden usar terminología distinta. Se mantiene Fabric como clave y se explica el contenido real de esa capa. Cotejo ITIC Academy: El bloque 26 incluye Grid Computing dentro del tema A1-52 y arquitecturas de alto rendimiento. No localicé en el documento una exposición literal de las cinco capas de Globus; el nombre Fabric se comprueba en la fuente primaria de Foster, Kesselman y Tuecke. Correspondencia oficial: A1-52, A2-II-1."
+      }
     },
     {
       "id": 3477,
       "bloque": 0,
       "tema": 0,
-      "texto": "La Unidad de Control (UC) puede construirse con diferentes métodos:",
+      "texto": "En la comparación clásica entre unidades de control cableadas y microprogramadas, ¿qué afirmación describe habitualmente a la lógica cableada?",
       "opciones": [
-        "Lógica cableada, se construye mediante puertas lógicas y es más rápida que la lógica programada",
-        "La UC microprogramada se suele utilizar en ordenadores de tamaño medio, en los grandes es demasiado lenta",
-        "La microprogramación permite introducir instrucciones complejas, pero las modificaciones y correcciones son difíciles de implementar",
-        "El diseño en microprogramación es más laborioso y costoso"
+        "Genera señales mediante lógica fija y suele ser rápida, aunque resulta menos flexible de modificar.",
+        "Almacena las microinstrucciones en una memoria de control y siempre es la alternativa más rápida.",
+        "Permite modificar las secuencias cambiando el microprograma, por lo que esos cambios suelen ser más difíciles que rediseñar lógica cableada.",
+        "Es una técnica que solo puede utilizarse en ordenadores de tamaño medio."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se corrige la generalización falsa por tamaño de ordenador y se eliminan afirmaciones invertidas sobre la dificultad de modificar microprogramas. La respuesta se acota al compromiso clásico rapidez/flexibilidad.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026; El bloque 26 encuadra hardware y arquitectura de computadores. No localicé una comparación literal de unidades de control cableadas y microprogramadas en el material académico; esa distinción se contrasta con material docente universitario de arquitectura.; https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk | El bloque 26 encuadra hardware y arquitectura de computadores. No localicé una comparación literal de unidades de control cableadas y microprogramadas en el material académico; esa distinción se contrasta con material docente universitario de arquitectura.",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el grado de cobertura académica se expresa sin atribuir al material afirmaciones no localizadas."
+      },
+      "etiquetas": [
+        "unidad de control",
+        "lógica cableada",
+        "microprogramada",
+        "microinstrucciones",
+        "arquitectura de computadores"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.uobabylon.edu.iq/eprints/publication_1_11548_1724.pdf",
+            "referencia": "University of Babylon, Computer Architecture, Lecture 8: la unidad cableada genera señales mediante lógica fija, suele ser más rápida, pero es más difícil de cambiar; la microprogramada facilita modificación y soporte de instrucciones complejas."
+          },
+          {
+            "url": "https://learning-space.uoa.edu.iq/sites/default/files/2024-10/Lecture_6.pdf",
+            "referencia": "University of Baghdad, Computer Architecture Lecture 6: compara lógica cableada basada en puertas con microinstrucciones en memoria de control; describe el compromiso habitual entre velocidad y flexibilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. El bloque 26 encuadra hardware y arquitectura de computadores. No localicé una comparación literal de unidades de control cableadas y microprogramadas en el material académico; esa distinción se contrasta con material docente universitario de arquitectura."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se corrige la generalización falsa por tamaño de ordenador y se eliminan afirmaciones invertidas sobre la dificultad de modificar microprogramas. La respuesta se acota al compromiso clásico rapidez/flexibilidad. Cotejo ITIC Academy: El bloque 26 encuadra hardware y arquitectura de computadores. No localicé una comparación literal de unidades de control cableadas y microprogramadas en el material académico; esa distinción se contrasta con material docente universitario de arquitectura. Correspondencia oficial: A1-52, A2-II-1."
+      }
     },
     {
       "id": 3478,
       "bloque": 0,
       "tema": 0,
-      "texto": "ASCII es el acrónimo de:",
+      "texto": "¿Qué significa el acrónimo ASCII?",
       "opciones": [
-        "American Standard Code for Information Integration",
-        "Alliance Standard Code Interchange Integration",
-        "American Standard Code for Information Interchange",
-        "All sugar can injure igloos"
+        "American Standard Code for Information Integration.",
+        "Alliance Standard Code for Interchange of Information.",
+        "American Standard Code for Information Interchange.",
+        "American Systems Character Interchange Index."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene la expansión correcta y se aclara que RFC 20 documenta el código histórico de 7 bits. Se sustituyen distractores inventados para que la pregunta mida el nombre y no dependa de opciones humorísticas.",
+      "clasificacion": {
+        "A1": [
+          "A1-50"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": "No localicé en el material de ITIC Academy consultado una exposición específica del acrónimo ASCII. Se clasifica por proximidad en A1-50 (estándares) y A2-II-9 (lenguajes de marca y estándares de texto), sin afirmar que esos epígrafes citen expresamente ASCII.",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el grado de cobertura académica se expresa sin atribuir al material afirmaciones no localizadas."
+      },
+      "etiquetas": [
+        "ASCII",
+        "codificación de caracteres",
+        "estándar",
+        "RFC 20",
+        "intercambio de información"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://datatracker.ietf.org/doc/rfc20/",
+            "referencia": "IETF RFC 20, ASCII format for network interchange: reproduce USA Standard Code for Information Interchange (USAS X3.4-1968) como juego de caracteres codificados de 7 bits para intercambio de información."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se mantiene la expansión correcta y se aclara que RFC 20 documenta el código histórico de 7 bits. Se sustituyen distractores inventados para que la pregunta mida el nombre y no dependa de opciones humorísticas. Cotejo ITIC Academy: No localicé en el material de ITIC Academy consultado una exposición específica del acrónimo ASCII. Se clasifica por proximidad en A1-50 (estándares) y A2-II-9 (lenguajes de marca y estándares de texto), sin afirmar que esos epígrafes citen expresamente ASCII. Correspondencia oficial: A1-50, A2-II-9."
+      }
     },
     {
       "id": 3479,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es uno de los principales desafíos al implementar la virtualización del almacenamiento en un entorno empresarial?:",
+      "texto": "Al incorporar virtualización del almacenamiento a un entorno empresarial heterogéneo ya existente, ¿qué riesgo técnico de integración debe evaluarse?",
       "opciones": [
-        "Falta de compatibilidad con sistemas heredados.",
-        "Mayor costo de adquisición de hardware.",
-        "Reducción de la capacidad de almacenamiento disponible.",
-        "Simplificación de la gestión de recursos."
+        "La compatibilidad e interoperabilidad con las matrices, hosts y versiones de firmware existentes.",
+        "Que toda solución de virtualización aumente necesariamente el coste de adquisición de hardware.",
+        "Que la virtualización reduzca de forma inevitable la capacidad física disponible.",
+        "Que desaparezca cualquier posibilidad de simplificar la gestión de recursos."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se acota el reto al contexto empresarial heterogéneo y a la integración con infraestructura existente. La compatibilidad es un riesgo de implantación que debe evaluarse, no una desventaja inevitable de toda virtualización.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026; El bloque 26 trata sistemas de almacenamiento y virtualización del almacenamiento. No se atribuye al material académico la afirmación de que toda virtualización tenga un defecto inevitable; la compatibilidad con sistemas de terceros se plantea como riesgo dependiente del entorno y se contrasta con SNIA y las matrices de compatibilidad de IBM.; https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk | El bloque 26 trata sistemas de almacenamiento y virtualización del almacenamiento. No se atribuye al material académico la afirmación de que toda virtualización tenga un defecto inevitable; la compatibilidad con sistemas de terceros se plantea como riesgo dependiente del entorno y se contrasta con SNIA y las matrices de compatibilidad de IBM.",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el grado de cobertura académica se expresa sin atribuir al material afirmaciones no localizadas."
+      },
+      "etiquetas": [
+        "virtualización del almacenamiento",
+        "interoperabilidad",
+        "compatibilidad",
+        "sistemas heredados",
+        "matrices de soporte"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.snia.org/sites/default/files/sniavirt.pdf",
+            "referencia": "Storage Networking Industry Association, Storage Virtualization and the SNIA Storage Management Initiative: describe la virtualización como capa de abstracción e integración entre recursos y destaca la interoperabilidad de los sistemas de almacenamiento."
+          },
+          {
+            "url": "https://www.ibm.com/support/pages/concurrent-compatibility-and-code-cross-reference-ibm-storage-virtualize",
+            "referencia": "IBM Support, Compatibility and Code Cross Reference: la conexión de sistemas de almacenamiento virtualizado depende de combinaciones de modelos y niveles de código soportados; ilustra el trabajo de compatibilidad en entornos heterogéneos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. El bloque 26 trata sistemas de almacenamiento y virtualización del almacenamiento. No se atribuye al material académico la afirmación de que toda virtualización tenga un defecto inevitable; la compatibilidad con sistemas de terceros se plantea como riesgo dependiente del entorno y se contrasta con SNIA y las matrices de compatibilidad de IBM."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se acota el reto al contexto empresarial heterogéneo y a la integración con infraestructura existente. La compatibilidad es un riesgo de implantación que debe evaluarse, no una desventaja inevitable de toda virtualización. Cotejo ITIC Academy: El bloque 26 trata sistemas de almacenamiento y virtualización del almacenamiento. No se atribuye al material académico la afirmación de que toda virtualización tenga un defecto inevitable; la compatibilidad con sistemas de terceros se plantea como riesgo dependiente del entorno y se contrasta con SNIA y las matrices de compatibilidad de IBM. Correspondencia oficial: A1-56, A2-IV-5."
+      }
     },
     {
       "id": 3480,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los scriptlets se definen como:",
+      "texto": "En una página JSP, ¿qué se denomina scriptlet?",
       "opciones": [
-        "Expresiones entre las etiquetas <%= y %> que se evalúan y el resultado se convierte a una cadena embebida en JSP",
-        "Fragmentos de código Java entre las etiquetas <% y %> y embebido en JSP",
-        "Atributos generales entre etiquetas <%@ y %> asociados a un fragmento JavaScript",
-        "Declaraciones de métodos y variables entre etiquetas <%! y %> en una página JSP"
+        "Una expresión delimitada por <%= y %> cuyo valor se inserta en la respuesta.",
+        "Un fragmento de código del lenguaje de scripting de la página, delimitado por <% y %>.",
+        "Una directiva de página o biblioteca, delimitada por <%@ y %>.",
+        "Una declaración de variables o métodos delimitada por <%! y %>."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene la definición y se distinguen con precisión scriptlet, expresión y declaración. Se añade contexto de práctica actual: el elemento existe en la especificación, pero no es recomendable incrustar lógica de negocio en la vista.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1; El bloque 30 cubre tecnologías web y Java/Jakarta EE. No localicé una definición literal de scriptlet en el extracto consultado; la sintaxis y distinción frente a expresión/declaración se verifica con la especificación Jakarta Server Pages.; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk | El bloque 30 cubre tecnologías web y Java/Jakarta EE. No localicé una definición literal de scriptlet en el extracto consultado; la sintaxis y distinción frente a expresión/declaración se verifica con la especificación Jakarta Server Pages.",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el grado de cobertura académica se expresa sin atribuir al material afirmaciones no localizadas."
+      },
+      "etiquetas": [
+        "JSP",
+        "Jakarta Server Pages",
+        "scriptlet",
+        "Java embebido",
+        "etiquetas de scripting"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/specifications/pages/3.0/jakarta-server-pages-spec-3.0.pdf",
+            "referencia": "Jakarta Server Pages 3.0 Specification, apartados 1.12 y 9.4: un scriptlet contiene un fragmento válido del lenguaje de scripting (Java en la especificación) y usa <% ... %>; expresiones usan <%= ... %> y declaraciones <%! ... %>."
+          },
+          {
+            "url": "https://jakarta.ee/learn/specification-guides/servlet-faces-and-server-pages-explained/",
+            "referencia": "Eclipse Foundation/Jakarta EE, Server Pages explained: distingue scriptlets, expresiones y declaraciones y recomienda mantener separada la lógica de negocio en clases Java en vez de embeberla en la vista."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1. El bloque 30 cubre tecnologías web y Java/Jakarta EE. No localicé una definición literal de scriptlet en el extracto consultado; la sintaxis y distinción frente a expresión/declaración se verifica con la especificación Jakarta Server Pages."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se mantiene la definición y se distinguen con precisión scriptlet, expresión y declaración. Se añade contexto de práctica actual: el elemento existe en la especificación, pero no es recomendable incrustar lógica de negocio en la vista. Cotejo ITIC Academy: El bloque 30 cubre tecnologías web y Java/Jakarta EE. No localicé una definición literal de scriptlet en el extracto consultado; la sintaxis y distinción frente a expresión/declaración se verifica con la especificación Jakarta Server Pages. Correspondencia oficial: A1-65, A2-III-12."
+      }
     },
     {
       "id": 3481,
