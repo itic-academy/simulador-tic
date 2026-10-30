@@ -164762,68 +164762,234 @@
       "texto": "Señale cuál de los siguientes datos se encuentra en la zona pública del chip criptográfico del DNI electrónico:",
       "opciones": [
         "Certificado de autenticación",
-        "Certificados de la autoridad de certificación",
+        "Certificado de la CA intermedia emisora.",
         "Datos biométricos",
         "Claves privadas del ciudadano"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La clave es la opción de la autoridad de certificación. Se precisa a «certificado de la CA intermedia emisora», singular y conforme a la descripción oficial vigente; los certificados de autenticación y firma requieren acceso privado con PIN, los datos biométricos no están en la zona pública y las claves privadas no se exponen. Corregida. A1-80/A1-81; A2-I-6/I-9.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-I-9"
+        ],
+        "bloque_academia": "ITIC Academy, Temas 079, 080 y 081 «Seguridad», material de estudio; la portada del bloque recoge A1-79/80/81 y A2-O8/O11, donde se incluye expresamente el DNIe e identidad electrónica; el dato de zona pública se confirmó aparte con la Policía Nacional. https://drive.google.com/file/d/1Sol49a2N19LsbVxip95u9OzDYfk0BiAD/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. El encaje A2 corresponde al ciclo de vida y a la gestión del desarrollo. Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "DNI electrónico",
+        "chip criptográfico",
+        "zona pública",
+        "certificado CA intermedia",
+        "PIN"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_083",
+            "referencia": "Dirección General de la Policía, «Características electrónicas de la tarjeta»: zona pública de lectura sin restricciones incluye el certificado de la CA intermedia emisora, claves Diffie-Hellman y certificado X.509 de componente; certificados de autenticación y firma están en la zona privada protegida por PIN."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Sol49a2N19LsbVxip95u9OzDYfk0BiAD/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Temas 079, 080 y 081 «Seguridad», material de estudio; cotejo curricular: la portada del bloque recoge A1-79/80/81 y A2-O8/O11, donde se incluye expresamente el DNIe e identidad electrónica; el dato de zona pública se confirmó aparte con la Policía Nacional. El material de academia orienta el encaje en temario, no sustituye las fuentes técnicas primarias."
+          }
+        ],
+        "observaciones": "La clave es la opción de la autoridad de certificación. Se precisa a «certificado de la CA intermedia emisora», singular y conforme a la descripción oficial vigente; los certificados de autenticación y firma requieren acceso privado con PIN, los datos biométricos no están en la zona pública y las claves privadas no se exponen. Corregida. A1-80/A1-81; A2-I-6/I-9. Cotejo ITIC Academy: ITIC Academy, Temas 079, 080 y 081 «Seguridad», material de estudio; la portada del bloque recoge A1-79/80/81 y A2-O8/O11, donde se incluye expresamente el DNIe e identidad electrónica; el dato de zona pública se confirmó aparte con la Policía Nacional. https://drive.google.com/file/d/1Sol49a2N19LsbVxip95u9OzDYfk0BiAD/view?usp=drivesdk Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      }
     },
     {
       "id": 3397,
       "bloque": 0,
       "tema": 0,
-      "texto": "La especificación del estándar DICOM no incluye:",
+      "texto": "Según el alcance de DICOM PS3.2 vigente, ¿cuál de los siguientes elementos no especifica el estándar?",
       "opciones": [
         "El conjunto de protocolos de comunicaciones.",
         "La sintaxis y la semántica de los comandos e información asociada que se pueden intercambiar.",
         "Un formato de archivo y una estructura de directorio para facilitar el acceso a las imágenes y la información asociada.",
-        "Un procedimiento de prueba/validación para evaluar la conformidad de una implementación con la Norma."
+        "Un procedimiento de prueba o validación para evaluar la conformidad de una implementación."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La respuesta correcta es el procedimiento de prueba/validación: DICOM especifica requisitos y declaraciones de conformidad, pero su estándar no fija procedimientos para probarlas. Se reformula la pregunta para que “no incluye” se refiera a los elementos enumerados y no sugiera que DICOM carece de requisitos de conformidad. Corregida. A1-83; sin epígrafe A2 directo.",
+      "clasificacion": {
+        "A1": [
+          "A1-83"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque temático de E-learning y Sistemas de Información Geográfica, versión 2026.1; el material sitúa sistemas de imagen/digitalización en el bloque curricular de A1-83; DICOM se cotejó como estándar de imagen médica con NEMA PS3.2 vigente. Sin epígrafe A2 directo identificado. https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. No se fuerza un epígrafe A2 sin relación directa identificable en el programa. Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "DICOM",
+        "PS3.2",
+        "conformidad",
+        "prueba de validación",
+        "imágenes médicas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://dicom.nema.org/medical/dicom/current/output/html/part02.html",
+            "referencia": "DICOM PS3.2 2026d, §1 (Scope): el estándar declara que no especifica procedimientos de prueba o validación para evaluar la conformidad de implementaciones ni su correspondencia con la declaración de conformidad. Sí define requisitos de conformidad, comunicación, servicios y almacenamiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque temático de E-learning y Sistemas de Información Geográfica, versión 2026.1; cotejo curricular: el material sitúa sistemas de imagen/digitalización en el bloque curricular de A1-83; DICOM se cotejó como estándar de imagen médica con NEMA PS3.2 vigente. Sin epígrafe A2 directo identificado. El material de academia orienta el encaje en temario, no sustituye las fuentes técnicas primarias."
+          }
+        ],
+        "observaciones": "La respuesta correcta es el procedimiento de prueba/validación: DICOM especifica requisitos y declaraciones de conformidad, pero su estándar no fija procedimientos para probarlas. Se reformula la pregunta para que “no incluye” se refiera a los elementos enumerados y no sugiera que DICOM carece de requisitos de conformidad. Corregida. A1-83; sin epígrafe A2 directo. Cotejo ITIC Academy: ITIC Academy, bloque temático de E-learning y Sistemas de Información Geográfica, versión 2026.1; el material sitúa sistemas de imagen/digitalización en el bloque curricular de A1-83; DICOM se cotejó como estándar de imagen médica con NEMA PS3.2 vigente. Sin epígrafe A2 directo identificado. https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      }
     },
     {
       "id": 3398,
       "bloque": 0,
       "tema": 0,
-      "texto": "La medida del número de bits utilizados para definir cada píxel es:",
+      "texto": "¿Cómo se denomina el número de bits empleados para representar cada píxel de una imagen digital?",
       "opciones": [
         "Resolución",
         "Área de imagen",
-        "Profundidad de bit o de color",
+        "Profundidad de bits o de color.",
         "Ninguna es verdadera"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La magnitud es la profundidad de bits (o de color), número de bits usados para representar cada píxel; no es la resolución espacial ni el área de la imagen. Se ajusta ligeramente el enunciado para expresar la definición con precisión. Corregida. A1-83; sin epígrafe A2 directo.",
+      "clasificacion": {
+        "A1": [
+          "A1-83"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque temático de E-learning y Sistemas de Información Geográfica, versión 2026.1; el material de la academia aborda tecnologías de imagen y digitalización vinculadas al A1-83; la definición de bits por píxel se contrastó en la especificación Microsoft MS-WMF. https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. No se fuerza un epígrafe A2 sin relación directa identificable en el programa. Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "imagen digital",
+        "píxel",
+        "profundidad de bits",
+        "profundidad de color"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-wmf/792153f4-1e99-4ec8-93cf-d171a5f33903",
+            "referencia": "Microsoft Open Specifications, [MS-WMF] §2.1.1.3: BitCount se define como el número de bits que definen cada píxel y determina el máximo número de colores de una imagen DIB."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque temático de E-learning y Sistemas de Información Geográfica, versión 2026.1; cotejo curricular: el material de la academia aborda tecnologías de imagen y digitalización vinculadas al A1-83; la definición de bits por píxel se contrastó en la especificación Microsoft MS-WMF. El material de academia orienta el encaje en temario, no sustituye las fuentes técnicas primarias."
+          }
+        ],
+        "observaciones": "La magnitud es la profundidad de bits (o de color), número de bits usados para representar cada píxel; no es la resolución espacial ni el área de la imagen. Se ajusta ligeramente el enunciado para expresar la definición con precisión. Corregida. A1-83; sin epígrafe A2 directo. Cotejo ITIC Academy: ITIC Academy, bloque temático de E-learning y Sistemas de Información Geográfica, versión 2026.1; el material de la academia aborda tecnologías de imagen y digitalización vinculadas al A1-83; la definición de bits por píxel se contrastó en la especificación Microsoft MS-WMF. https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      }
     },
     {
       "id": 3399,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes modelos se puede considerar como una nueva versión, utilizando lenguajes de más alto nivel, del modelo Code & Fix?",
+      "texto": "Según la descripción de Boehm, ¿qué modelo desarrolla el producto en incrementos operacionales guiados por la experiencia de uso y resulta especialmente adecuado para aplicaciones en lenguajes de cuarta generación?",
       "opciones": [
         "Modelo de transformación",
         "Modelo por etapas",
         "Modelo en espiral",
-        "Modelo de desarrollo evolutivo o prototipado evolutivo"
+        "Modelo de desarrollo evolutivo o prototipado evolutivo."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La formulación antigua “nueva versión, usando lenguajes de más alto nivel, del modelo Code & Fix” es imprecisa: Boehm caracteriza el modelo evolutivo como code-driven y apropiado para aplicaciones 4GL, pero advierte que puede confundirse con Code-and-Fix. Se formula ahora con esos rasgos verificables; la respuesta es desarrollo evolutivo/prototipado evolutivo. Corregida. A1-86; A2-III-1/III-2.",
+      "clasificacion": {
+        "A1": [
+          "A1-86"
+        ],
+        "A2": [
+          "A2-III-1",
+          "A2-III-2"
+        ],
+        "bloque_academia": "ITIC Academy, temas 037, 086 y 088 «Metodologías y modelos de ciclo de vida», edición 2025; el propio material asigna el bloque a A1-86 (modelos del ciclo de vida) y A2-D1/D2; incluye prototipado evolutivo y modelos de ciclo de vida. La relación concreta entre Code-and-Fix, 4GL y evolución se verificó en el artículo de Boehm. https://drive.google.com/file/d/1I1EOjKrsJ8R528HRFdU57-3tz3MXMF6P/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. El encaje A2 corresponde al ciclo de vida y a la gestión del desarrollo. Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "ciclo de vida",
+        "modelo evolutivo",
+        "lenguajes de cuarta generación",
+        "Boehm"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.cse.msu.edu/~cse435/Homework/HW3/boehm.pdf",
+            "referencia": "B. W. Boehm, «A Spiral Model of Software Development and Enhancement», IEEE Computer 21(5), 1988, sección «Evolution of process models»: define el Code-and-Fix como escribir código y corregirlo; el modelo evolutivo avanza mediante incrementos operacionales y se adapta especialmente a aplicaciones en lenguajes de cuarta generación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1I1EOjKrsJ8R528HRFdU57-3tz3MXMF6P/view?usp=drivesdk",
+            "referencia": "ITIC Academy, temas 037, 086 y 088 «Metodologías y modelos de ciclo de vida», edición 2025; cotejo curricular: el propio material asigna el bloque a A1-86 (modelos del ciclo de vida) y A2-D1/D2; incluye prototipado evolutivo y modelos de ciclo de vida. La relación concreta entre Code-and-Fix, 4GL y evolución se verificó en el artículo de Boehm. El material de academia orienta el encaje en temario, no sustituye las fuentes técnicas primarias."
+          }
+        ],
+        "observaciones": "La formulación antigua “nueva versión, usando lenguajes de más alto nivel, del modelo Code & Fix” es imprecisa: Boehm caracteriza el modelo evolutivo como code-driven y apropiado para aplicaciones 4GL, pero advierte que puede confundirse con Code-and-Fix. Se formula ahora con esos rasgos verificables; la respuesta es desarrollo evolutivo/prototipado evolutivo. Corregida. A1-86; A2-III-1/III-2. Cotejo ITIC Academy: ITIC Academy, temas 037, 086 y 088 «Metodologías y modelos de ciclo de vida», edición 2025; el propio material asigna el bloque a A1-86 (modelos del ciclo de vida) y A2-D1/D2; incluye prototipado evolutivo y modelos de ciclo de vida. La relación concreta entre Code-and-Fix, 4GL y evolución se verificó en el artículo de Boehm. https://drive.google.com/file/d/1I1EOjKrsJ8R528HRFdU57-3tz3MXMF6P/view?usp=drivesdk Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      }
     },
     {
       "id": 3400,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dentro del Plan de Sistemas se encuentra el diseño del sistema de información en el que se encuadran una serie de actividades. Indicar qué actividad de las que a continuación se relacionan debe excluirse de este contexto:",
+      "texto": "Al diseñar un sistema de información concreto, ¿qué actividad se refiere a definir la estructura global de la unidad de informática y, por tanto, queda fuera del diseño propio de ese sistema?",
       "opciones": [
-        "Determinación de la estructura de la organización informática",
+        "Determinación de la estructura de la organización informática.",
         "Determinación de la carga de procesos batch",
         "Determinación de la metodología a emplear en el desarrollo de las aplicaciones",
         "Determinación de los propietarios de los diferentes conjuntos de datos"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se acota la pregunta al diseño de un sistema de información concreto para distinguirlo de la organización global de la función informática. La estructura de la organización informática es la actividad ajena al diseño técnico/funcional de ese sistema; se conserva la clave 0. Corregida. A1-87/A1-95; A2-III-2.",
+      "clasificacion": {
+        "A1": [
+          "A1-87",
+          "A1-95"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": "ITIC Academy, Tema 077 «Planificación estratégica de sistemas de información y de comunicaciones», 2007; el tema de planificación cubre el Plan de Sistemas y MÉTRICA v3; el tema de organización trata la estructura y funciones del centro/unidad de sistemas. Este contraste curricular sitúa la estructura orgánica TIC fuera del diseño de un sistema concreto; la separación PSI-2/PSI-6 se comprobó en MÉTRICA v3 oficial. https://drive.google.com/file/d/0Bw-rS_kOHzMKQlZsckp0a3dwTk0/view?usp=drivesdk&resourcekey=0-IiQLfXpf8gEvEp9omHU5Ug | ITIC Academy, temas 028, 029 y 034 «Organización y gestión de sistemas de información», material subrayado; el tema de planificación cubre el Plan de Sistemas y MÉTRICA v3; el tema de organización trata la estructura y funciones del centro/unidad de sistemas. Este contraste curricular sitúa la estructura orgánica TIC fuera del diseño de un sistema concreto; la separación PSI-2/PSI-6 se comprobó en MÉTRICA v3 oficial. https://drive.google.com/file/d/1ANdenllxXF4E7Sl4vJdJ_XPUPkx7Mqp_/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. El encaje A2 corresponde al ciclo de vida y a la gestión del desarrollo. Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "plan de sistemas de información",
+        "MÉTRICA v3",
+        "PSI",
+        "organización informática"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:8d2cfee5-5617-4dea-8cf8-7b7a0131de84/METRICA_V3_Panificacion_de_Sistemas_de_Informacion.pdf",
+            "referencia": "Ministerio de Administraciones Públicas, MÉTRICA v3, Planificación de Sistemas de Información: el proceso PSI separa PSI-2 «Definición y organización del PSI» de PSI-6 «Diseño del Modelo de Sistemas de Información». El DSI define arquitectura del sistema y entorno tecnológico; determinar la estructura orgánica de la unidad TIC corresponde al plano organizativo, no al diseño de un sistema concreto."
+          },
+          {
+            "url": "https://drive.google.com/file/d/0Bw-rS_kOHzMKQlZsckp0a3dwTk0/view?usp=drivesdk&resourcekey=0-IiQLfXpf8gEvEp9omHU5Ug",
+            "referencia": "ITIC Academy, Tema 077 «Planificación estratégica de sistemas de información y de comunicaciones», 2007; cotejo curricular: el tema de planificación cubre el Plan de Sistemas y MÉTRICA v3; el tema de organización trata la estructura y funciones del centro/unidad de sistemas. Este contraste curricular sitúa la estructura orgánica TIC fuera del diseño de un sistema concreto; la separación PSI-2/PSI-6 se comprobó en MÉTRICA v3 oficial. El material de academia orienta el encaje en temario, no sustituye las fuentes técnicas primarias."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ANdenllxXF4E7Sl4vJdJ_XPUPkx7Mqp_/view?usp=drivesdk",
+            "referencia": "ITIC Academy, temas 028, 029 y 034 «Organización y gestión de sistemas de información», material subrayado; cotejo curricular: el tema de planificación cubre el Plan de Sistemas y MÉTRICA v3; el tema de organización trata la estructura y funciones del centro/unidad de sistemas. Este contraste curricular sitúa la estructura orgánica TIC fuera del diseño de un sistema concreto; la separación PSI-2/PSI-6 se comprobó en MÉTRICA v3 oficial. El material de academia orienta el encaje en temario, no sustituye las fuentes técnicas primarias."
+          }
+        ],
+        "observaciones": "Se acota la pregunta al diseño de un sistema de información concreto para distinguirlo de la organización global de la función informática. La estructura de la organización informática es la actividad ajena al diseño técnico/funcional de ese sistema; se conserva la clave 0. Corregida. A1-87/A1-95; A2-III-2. Cotejo ITIC Academy: ITIC Academy, Tema 077 «Planificación estratégica de sistemas de información y de comunicaciones», 2007; el tema de planificación cubre el Plan de Sistemas y MÉTRICA v3; el tema de organización trata la estructura y funciones del centro/unidad de sistemas. Este contraste curricular sitúa la estructura orgánica TIC fuera del diseño de un sistema concreto; la separación PSI-2/PSI-6 se comprobó en MÉTRICA v3 oficial. https://drive.google.com/file/d/0Bw-rS_kOHzMKQlZsckp0a3dwTk0/view?usp=drivesdk&resourcekey=0-IiQLfXpf8gEvEp9omHU5Ug | ITIC Academy, temas 028, 029 y 034 «Organización y gestión de sistemas de información», material subrayado; el tema de planificación cubre el Plan de Sistemas y MÉTRICA v3; el tema de organización trata la estructura y funciones del centro/unidad de sistemas. Este contraste curricular sitúa la estructura orgánica TIC fuera del diseño de un sistema concreto; la separación PSI-2/PSI-6 se comprobó en MÉTRICA v3 oficial. https://drive.google.com/file/d/1ANdenllxXF4E7Sl4vJdJ_XPUPkx7Mqp_/view?usp=drivesdk Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      }
     },
     {
       "id": 3401,
