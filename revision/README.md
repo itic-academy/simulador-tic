@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 618 (IDs 3406–3410). Acumulado: 3410 preguntas examinadas individualmente, 3333 verificadas (685 vigentes, 2395 corregidas y 253 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8713 sin revisar individualmente. Hay 2744 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 619 (IDs 3411–3415). Acumulado: 3415 preguntas examinadas individualmente, 3338 verificadas (685 vigentes, 2400 corregidas y 253 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8708 sin revisar individualmente. Hay 2749 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 619 — 30 de octubre
+
+IDs 3411–3415 revisados individualmente; originales y evidencias en [cambios-lote-619.json](cambios-lote-619.json). Se acotó Ethernet a MAC/trama OSI para no ignorar la capa física; se precisó la independencia de los datagramas; se reformuló la comparación de xDSL en torno a la simetría; se limitó netstat a implementaciones que admiten -r; y se restringió ARP a resolución IPv4 de vecinos de enlace, distinguiéndolo de NDP/IPv6.
+- **3411 — Ethernet y OSI:** la MAC de Ethernet procesa tramas en la capa de enlace; el estándar IEEE 802.3 también define PHY, por lo que no se equipara toda la tecnología a una sola capa. **Corregida.** A1-111; A2-IV-8.
+- **3412 — datagrama:** en IP sin conexión cada paquete es independiente y puede seguir una ruta distinta; IP no garantiza entrega ni orden. **Corregida.** A1-108/115; A2-IV-8.
+- **3413 — xDSL:** una dimensión comparativa es la simetría de subida/bajada: ADSL es asimétrica y SHDSL soporta tasas simétricas. **Corregida.** A1-108; A2-IV-7/10.
+- **3414 — rutas:** la opción «netstat -r» muestra la tabla de rutas en las implementaciones compatibles; en Linux actual suele preferirse «ip route». **Corregida.** A1-108/115; A2-IV-9.
+- **3415 — ARP:** resuelve dirección IPv4 a dirección de enlace en el ámbito local; IPv6 usa Neighbor Discovery. **Corregida.** A1-115; A2-IV-8.
+
+Fuentes técnicas: [IEEE 802.3, Ethernet MAC y PHY](https://standards.ieee.org/ieee/7003/10422/); [RFC 1122, datagramas IP sin conexión](https://www.rfc-editor.org/info/rfc1122/) y [RFC 1392, rutas independientes de paquetes](https://www.rfc-editor.org/rfc/pdfrfc/rfc1392.txt.pdf); [UIT-T G.992.1, ADSL asimétrica](https://www.itu.int/ITU-T/recommendations/rec.aspx?lang=en&rec=4718) y [G.991.2, SHDSL](https://www.itu.int/rec/t-rec-g.991.2); [Linux man-pages, netstat(8)](https://man7.org/linux/man-pages/man8/netstat.8.html); [RFC 826, ARP](https://datatracker.ietf.org/doc/html/rfc826) y [RFC 4861, Neighbor Discovery en IPv6](https://www.rfc-editor.org/rfc/rfc4861.html).
+
+Cotejo curricular: ITIC Academy [Bloque 42, Redes, 2026](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) (A1-108/109/118); [Bloque 43, Protocolos, 2026](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk) (OSI A1-111, IP A1-115 y protocolos); [Temas Redes, versión 2025](https://drive.google.com/file/d/1AJFovfbL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), cotejo de red de acceso y xDSL. Clasificación cotejada con [programa A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [programa A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y revision/temario-oficial.json.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check; los controles estructurales no sustituyen la revisión de contenido.
 
 ## Lote 618 — 30 de octubre
 

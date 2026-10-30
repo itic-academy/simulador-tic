@@ -165462,71 +165462,244 @@
       "id": 3411,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es la capa del modelo OSI equivalente a Ethernet?",
+      "texto": "En el modelo OSI, ¿a qué capa corresponde la subcapa MAC de Ethernet que procesa las tramas en una LAN?",
       "opciones": [
         "Capa Física de Datos",
         "Capa de Red",
-        "Capa de Enlace de Datos",
+        "Capa de Enlace de Datos.",
         "Capa de Transporte"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Ethernet abarca funciones de enlace y capa física; para evitar equivalencia imprecisa entre todo Ethernet y una única capa se pregunta por la MAC y el formato de trama, que corresponden a la capa de enlace (capa 2).",
+      "clasificacion": {
+        "A1": [
+          "A1-111"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 43 «Protocolos», 2026; el bloque actual trata el modelo OSI (A1-111); la precisión de MAC como subcapa de enlace se verificó con la definición IEEE 802.3 de MAC y PHY. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "Ethernet",
+        "IEEE 802.3",
+        "capa de enlace",
+        "trama",
+        "OSI"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/7003/10422/",
+            "referencia": "IEEE 802.3 especifica Ethernet mediante una MAC común y múltiples especificaciones PHY; la pregunta se limita expresamente al protocolo MAC/formato de trama, situado en la capa de enlace del modelo OSI."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 43 «Protocolos», 2026; cotejo curricular: el bloque actual trata el modelo OSI (A1-111); la precisión de MAC como subcapa de enlace se verificó con la definición IEEE 802.3 de MAC y PHY. El material de academia encuadra el programa, no sustituye las fuentes técnicas primarias."
+          }
+        ],
+        "observaciones": "Ethernet abarca funciones de enlace y capa física; para evitar equivalencia imprecisa entre todo Ethernet y una única capa se pregunta por la MAC y el formato de trama, que corresponden a la capa de enlace (capa 2). Cotejo ITIC Academy: ITIC Academy, Bloque 43 «Protocolos», 2026; el bloque actual trata el modelo OSI (A1-111); la precisión de MAC como subcapa de enlace se verificó con la definición IEEE 802.3 de MAC y PHY. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      }
     },
     {
       "id": 3412,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el modo de operación denominado datagrama:",
+      "texto": "En una red IP con servicio no orientado a conexión denominado datagrama:",
       "opciones": [
         "Trabaja en modo 'conexión'",
         "Requiere el establecimiento previo de un circuito físico o virtual",
-        "Los paquetes pueden viajar por rutas diferentes",
+        "Los paquetes se tratan de forma independiente y pueden viajar por rutas diferentes.",
         "Requiere equipos terminales y software más sencillo"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "En el modo datagrama no se establece antes un circuito o conexión de red: cada paquete se trata de forma independiente y puede seguir rutas diferentes. La ausencia de estado de conexión es una propiedad de red y no implica que las aplicaciones o los terminales sean siempre más sencillos.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 43 «Protocolos», 2026; el material trata redes IP y los servicios/protocolos (A1-115); la naturaleza datagrama/sin conexión y la posible variación de rutas se comprobaron con RFC 1122 y RFC 1392. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "datagrama",
+        "conmutación de paquetes",
+        "servicio sin conexión",
+        "encaminamiento IP"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1122/",
+            "referencia": "RFC 1122 §§1.1.3 y 3.2: IP ofrece un servicio de datagramas sin conexión y sin garantías de entrega u orden. RFC 1392 define que, al ser independientes, paquetes entre dos equipos pueden tomar rutas diferentes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 43 «Protocolos», 2026; cotejo curricular: el material trata redes IP y los servicios/protocolos (A1-115); la naturaleza datagrama/sin conexión y la posible variación de rutas se comprobaron con RFC 1122 y RFC 1392. El material de academia encuadra el programa, no sustituye las fuentes técnicas primarias."
+          }
+        ],
+        "observaciones": "En el modo datagrama no se establece antes un circuito o conexión de red: cada paquete se trata de forma independiente y puede seguir rutas diferentes. La ausencia de estado de conexión es una propiedad de red y no implica que las aplicaciones o los terminales sean siempre más sencillos. Cotejo ITIC Academy: ITIC Academy, Bloque 43 «Protocolos», 2026; el material trata redes IP y los servicios/protocolos (A1-115); la naturaleza datagrama/sin conexión y la posible variación de rutas se comprobaron con RFC 1122 y RFC 1392. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      }
     },
     {
       "id": 3413,
       "bloque": 0,
       "tema": 0,
-      "texto": "Existe una variedad de tecnologías xDSL que se caracterizan por:",
+      "texto": "Además de las velocidades y del medio empleado, ¿qué característica distingue perfiles de distintas tecnologías xDSL, como ADSL y SHDSL?",
       "opciones": [
         "La infraestructura física que soporta el servicio: par de cobre, fibra óptica u otros medios de transmisión.",
         "El número de canales de alta velocidad disponibles.",
         "Por la compatibilidad, o no, con la transmisión de voz, y la calidad de la misma.",
-        "Su simetría/asimetría en los canales de subida y bajada de datos."
+        "La simetría o asimetría de las velocidades de subida y bajada."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Hay distintos ejes de clasificación xDSL, por lo que se pregunta por una característica diferenciadora, no por la única: la simetría/asimetría de las tasas ascendente y descendente. ADSL y SHDSL ilustran perfiles asimétrico y simétrico.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7",
+          "A2-IV-10"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes», 2026; los bloques de redes sitúan acceso, medio de cobre y tecnologías WAN en A1-108/A2-IV-7/IV-10; las diferencias concretas entre ADSL y SHDSL se contrastaron en las recomendaciones UIT-T. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk | ITIC Academy, Temas 108/109/113/118/119/120/121 Redes, versión 2025; los bloques de redes sitúan acceso, medio de cobre y tecnologías WAN en A1-108/A2-IV-7/IV-10; las diferencias concretas entre ADSL y SHDSL se contrastaron en las recomendaciones UIT-T. https://drive.google.com/file/d/1AJFovfbL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "xDSL",
+        "ADSL",
+        "SHDSL",
+        "simetría",
+        "asimetría",
+        "caudal ascendente y descendente"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          "https://www.itu.int/ITU-T/recommendations/rec.aspx?lang=en&rec=4718",
+          "https://www.itu.int/ITU-T/recommendations/rec.aspx?lang=en&rec=7073",
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 42 «Redes», 2026; cotejo curricular: los bloques de redes sitúan acceso, medio de cobre y tecnologías WAN en A1-108/A2-IV-7/IV-10; las diferencias concretas entre ADSL y SHDSL se contrastaron en las recomendaciones UIT-T. El material de academia encuadra el programa, no sustituye las fuentes técnicas primarias."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1AJFovfbL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Temas 108/109/113/118/119/120/121 Redes, versión 2025; cotejo curricular: los bloques de redes sitúan acceso, medio de cobre y tecnologías WAN en A1-108/A2-IV-7/IV-10; las diferencias concretas entre ADSL y SHDSL se contrastaron en las recomendaciones UIT-T. El material de academia encuadra el programa, no sustituye las fuentes técnicas primarias."
+          }
+        ],
+        "observaciones": "Hay distintos ejes de clasificación xDSL, por lo que se pregunta por una característica diferenciadora, no por la única: la simetría/asimetría de las tasas ascendente y descendente. ADSL y SHDSL ilustran perfiles asimétrico y simétrico. Cotejo ITIC Academy: ITIC Academy, Bloque 42 «Redes», 2026; los bloques de redes sitúan acceso, medio de cobre y tecnologías WAN en A1-108/A2-IV-7/IV-10; las diferencias concretas entre ADSL y SHDSL se contrastaron en las recomendaciones UIT-T. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk | ITIC Academy, Temas 108/109/113/118/119/120/121 Redes, versión 2025; los bloques de redes sitúan acceso, medio de cobre y tecnologías WAN en A1-108/A2-IV-7/IV-10; las diferencias concretas entre ADSL y SHDSL se contrastaron en las recomendaciones UIT-T. https://drive.google.com/file/d/1AJFovfbL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      }
     },
     {
       "id": 3414,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué comando me permite visualizar las tablas de enrutamiento de mi equipo?",
+      "texto": "En una implementación de netstat compatible con la opción indicada, ¿qué opción muestra la tabla de enrutamiento?",
       "opciones": [
-        "netstat -ar",
+        "netstat -r.",
         "traceroute",
         "arp -p",
         "/etc/services -p"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La sintaxis de netstat depende de la plataforma: en sistemas compatibles, `netstat -r` muestra la tabla de enrutamiento; `-a` no es necesario y puede no estar admitido en ese modo en todas las implementaciones. Se acota el enunciado y se incluye el reemplazo moderno habitual `ip route` en la explicación.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 43 «Protocolos», 2026; la administración IP y el diagnóstico de rutas encajan en A1-115/A2-IV-9; se especifica que la opción de netstat depende de la implementación y se advierte del uso moderno de ip route. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "tabla de enrutamiento",
+        "netstat",
+        "ip route",
+        "sistemas Unix/Linux"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man8/netstat.8.html",
+            "referencia": "Linux man-pages, netstat(8): la opción `-r` muestra la tabla de rutas; para la tabla de rutas el uso recomendado es a menudo añadir `-n` para evitar resolución de nombres. En Linux moderno suele preferirse `ip route`."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 43 «Protocolos», 2026; cotejo curricular: la administración IP y el diagnóstico de rutas encajan en A1-115/A2-IV-9; se especifica que la opción de netstat depende de la implementación y se advierte del uso moderno de ip route. El material de academia encuadra el programa, no sustituye las fuentes técnicas primarias."
+          }
+        ],
+        "observaciones": "La sintaxis de netstat depende de la plataforma: en sistemas compatibles, `netstat -r` muestra la tabla de enrutamiento; `-a` no es necesario y puede no estar admitido en ese modo en todas las implementaciones. Se acota el enunciado y se incluye el reemplazo moderno habitual `ip route` en la explicación. Cotejo ITIC Academy: ITIC Academy, Bloque 43 «Protocolos», 2026; la administración IP y el diagnóstico de rutas encajan en A1-115/A2-IV-9; se especifica que la opción de netstat depende de la implementación y se advierte del uso moderno de ip route. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      }
     },
     {
       "id": 3415,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué protocolo de red permite obtener la dirección de capa 2 (MAC address) a partir de la dirección de capa 3 (IP address)?",
+      "texto": "En una LAN IPv4, ¿qué protocolo permite resolver la dirección MAC del vecino de la misma subred a partir de su dirección IP?",
       "opciones": [
-        "ARP",
+        "ARP.",
         "NTP",
         "ICMP",
         "DHCP"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se concreta la pregunta a IPv4 y un vecino de la misma subred/enlace: ARP resuelve la dirección de capa de enlace asociada a la IP del vecino o del siguiente salto. En IPv6 la función equivalente corresponde a Neighbor Discovery, no a ARP.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 43 «Protocolos», 2026; el material cubre IPv4/IPv6 y redes locales en A1-115/118 y A2-IV-8; se diferencia la resolución IPv4 con ARP de Neighbor Discovery para IPv6 mediante RFC 826 y RFC 4861. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk | ITIC Academy, Bloque 42 «Redes», 2026; el material cubre IPv4/IPv6 y redes locales en A1-115/118 y A2-IV-8; se diferencia la resolución IPv4 con ARP de Neighbor Discovery para IPv6 mediante RFC 826 y RFC 4861. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "ARP",
+        "IPv4",
+        "resolución de direcciones",
+        "capa de enlace",
+        "NDP"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://datatracker.ietf.org/doc/html/rfc826",
+            "referencia": "RFC 826 describe ARP para mapear direcciones de protocolo (por ejemplo IP) a direcciones locales Ethernet; RFC 4861 §7 especifica que en IPv6 la resolución del siguiente salto se efectúa mediante Neighbor Discovery."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 43 «Protocolos», 2026; cotejo curricular: el material cubre IPv4/IPv6 y redes locales en A1-115/118 y A2-IV-8; se diferencia la resolución IPv4 con ARP de Neighbor Discovery para IPv6 mediante RFC 826 y RFC 4861. El material de academia encuadra el programa, no sustituye las fuentes técnicas primarias."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 42 «Redes», 2026; cotejo curricular: el material cubre IPv4/IPv6 y redes locales en A1-115/118 y A2-IV-8; se diferencia la resolución IPv4 con ARP de Neighbor Discovery para IPv6 mediante RFC 826 y RFC 4861. El material de academia encuadra el programa, no sustituye las fuentes técnicas primarias."
+          }
+        ],
+        "observaciones": "Se concreta la pregunta a IPv4 y un vecino de la misma subred/enlace: ARP resuelve la dirección de capa de enlace asociada a la IP del vecino o del siguiente salto. En IPv6 la función equivalente corresponde a Neighbor Discovery, no a ARP. Cotejo ITIC Academy: ITIC Academy, Bloque 43 «Protocolos», 2026; el material cubre IPv4/IPv6 y redes locales en A1-115/118 y A2-IV-8; se diferencia la resolución IPv4 con ARP de Neighbor Discovery para IPv6 mediante RFC 826 y RFC 4861. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk | ITIC Academy, Bloque 42 «Redes», 2026; el material cubre IPv4/IPv6 y redes locales en A1-115/118 y A2-IV-8; se diferencia la resolución IPv4 con ARP de Neighbor Discovery para IPv6 mediante RFC 826 y RFC 4861. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk Clasificación cotejada con programa A1 BOE-A-2025-25938 (anexo I), programa A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+      }
     },
     {
       "id": 3416,
