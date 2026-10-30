@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 601 (IDs 3321–3325). Acumulado: 3325 preguntas examinadas individualmente, 3248 verificadas (670 vigentes, 2333 corregidas y 245 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8798 sin revisar individualmente. Hay 2667 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 602 (IDs 3321–3330). Acumulado: 3330 preguntas examinadas individualmente, 3253 verificadas (670 vigentes, 2338 corregidas y 245 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8793 sin revisar individualmente. Hay 2672 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
+
+## Lote 602 — 30 de octubre
+
+IDs 3326–3330 examinados individualmente; originales íntegros en [cambios-lote-602.json](cambios-lote-602.json). Se actualizaron dos reactivos sobre CMMI para reflejar el nivel cuantitativo 4 y el alcance actual del modelo; se acotó la antena isotrópica a su definición ideal UIT; se explicitó el modelo TCP/IP de cuatro capas frente a OSI; y se sustituyó la pregunta SIP ambigua por una definición precisa del registrar según RFC 3261.
+- **3326 — nivel CMMI:** «Quantitatively Managed» es el nivel de madurez 4; el nivel 3 es «Defined». **Corregida.** A1-96/A1-98; A2-III-13.
+- **3327 — alcance de CMMI:** modelo de prácticas para mejorar capacidad y desempeño organizativos y apoyar la evaluación de procesos, no una metodología concreta de desarrollo ni un estimador automático de complejidad. **Corregida.** A1-96/A1-98; A2-III-13.
+- **3328 — antena isotrópica:** UIT-T la define como hipotética, sin pérdidas y con intensidad de radiación igual en todas las direcciones; se evita presentarla como antena física realizable. **Corregida.** A1-108/A1-112; A2-IV-7.
+- **3329 — TCP/IP y OSI:** en la comparación didáctica de cuatro capas, sesión y presentación no aparecen como capas separadas; la capa de aplicación Internet reúne funciones de presentación y aplicación. **Corregida.** A1-111/A1-115; A2-II-8.
+- **3330 — entidad SIP:** se elimina la opción terminológicamente ambigua y se pregunta qué entidad atiende REGISTER y mantiene bindings: el registrar. **Corregida.** A1-116; A2-IV-14.
+
+Fuentes primarias: [CMMI Institute, niveles de madurez y capacidad](https://cmmiinstitute.com/learning/appraisals/levels), [método de evaluación](https://cmmiinstitute.com/learning/appraisals/method) e [informe técnico CMMI 2025](https://cmmiinstitute.com/getattachment/738104c0-a6f0-4e1c-8bbe-35076b75f36e/CMMI-Technical-Report-Performance-Results_May-2025.pdf); [UIT-T K.100 (08/2024), definición 3.2.4](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-K.100-202408-I%21%21PDF-E&lang=e&type=items); [IETF RFC 1122, §1.1](https://www.rfc-editor.org/rfc/rfc1122.html) y [RFC 1123](https://www.rfc-editor.org/rfc/rfc1123.html); [IETF RFC 3261, §§6 y 10.3](https://www.rfc-editor.org/rfc/rfc3261.html). Clasificación comparada con [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y revision/temario-oficial.json.
+
+Cotejo ITIC Academy: [bloque 39 «Calidad y mantenimiento», 2026.1](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk) incluye el epígrafe 3.4 de CMMI, ISO/IEC 330xx y TMMi y distingue los modelos de evaluación de calidad; [bloque 43 «Protocolos», 2026](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk) abarca OSI/TCP-IP, medios y acceso inalámbrico, NGN/IMS y SIP/VoIP. Los materiales orientan el encaje curricular; las respuestas se verificaron contra CMMI Institute, UIT y RFC.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check; el inventario estructural no sustituye la revisión individual.
 
 ## Lote 601 — 30 de octubre
 
