@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 595 (IDs 3291–3295). Acumulado: 3295 preguntas examinadas individualmente, 3220 verificadas (663 vigentes, 2313 corregidas y 244 históricas) y 75 pendientes documentadas (36 de fuente y 39 de ambigüedad); quedan 8828 sin revisar individualmente. Hay 2640 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 596 (IDs 3296–3300). Acumulado: 3300 preguntas examinadas individualmente, 3225 verificadas (663 vigentes, 2318 corregidas y 244 históricas) y 75 pendientes documentadas (36 de fuente y 39 de ambigüedad); quedan 8823 sin revisar individualmente. Hay 2645 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
+
+## Lote 596 — 30 de octubre
+
+IDs 3296–3300 revisados individualmente; originales íntegros en [cambios-lote-596.json](cambios-lote-596.json). Se precisó el efecto jurídico de licencias Creative Commons; se actualizó el nombre de la norma española certificable del SGSI; se definieron conforme a MAGERIT v3 el mapa de riesgos y sus cinco dimensiones; y se corrigió la atribución conjunta de las normas ISO/IEC.
+- **3296 — Creative Commons:** concede permisos públicos no exclusivos bajo términos de la licencia seleccionada; no elimina los derechos de autor ni transfiere automáticamente la titularidad. **Corregida.** A1-43; A2-II-14.
+- **3297 — SGSI:** se fija UNE-EN ISO/IEC 27001:2023 como adopción española de ISO/IEC 27001:2022, con enmienda A1:2024 aplicable; se distingue de ISO/IEC 27002, guía de controles. **Corregida.** A1-48/A1-50; A2-II-11.
+- **3298 — MAGERIT:** el mapa de riesgos presenta riesgos identificados —pares activo-amenaza— caracterizados por probabilidad/frecuencia y degradación/impacto. **Corregida.** A1-47; A2-II-10.
+- **3299 — dimensiones MAGERIT:** disponibilidad, integridad, confidencialidad, autenticidad y trazabilidad; se acotó expresamente a MAGERIT v3. **Corregida.** A1-47/A1-48; A2-II-10/A2-II-13.
+- **3300 — normalización internacional:** la familia ISO/IEC 27000 se desarrolla conjuntamente por ISO e IEC, mediante el comité ISO/IEC JTC 1/SC 27 en seguridad de información. **Corregida.** A1-50; A2-II-11.
+
+Fuentes primarias: [Creative Commons, FAQ](https://creativecommons.org/faq/) y [texto legal CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode); [BOE, UNE-EN ISO/IEC 27001:2023](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-20736); [ISO/IEC 27001](https://www.iso.org/standard/27001) y [ISO/IEC JTC 1/SC 27](https://www.iso.org/committee/45306.html); [MAGERIT v3, Libro I](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Afb373672-f804-4d05-8567-2d44b3020387/2012_Magerit_v3_libro1_metodo_es_NIPO_630-12-171-8.pdf); [Hacienda, catálogo SEFP, MAGERIT v3](https://www.hacienda.gob.es/sgt/catalogo_sefp/046_magerit_v3_libro1_metodo.pdf); [CCN-CERT, metodología MAGERIT/PILAR](https://pilar.ccn-cert.cni.es/metodologia/implementacion). Clasificación comparada con [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y revision/temario-oficial.json.
+
+Cotejo ITIC Academy en Drive: [tema 43 «Protección jurídica, licencias y control del software», 2026](https://drive.google.com/file/d/1Og6yI-YaZ48UA3pBT-HQhTh7TfvdPW_C/view?usp=drivesdk), para copyright/licencias; [bloque 48 «Seguridad en redes y aplicaciones», 2026](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk), incluye MAGERIT/PILAR, dimensiones, análisis de riesgos e ISO/IEC 27001; [tema 24 «Normalización», A1-50/A2-C8/C11, 2026](https://drive.google.com/file/d/1HKwUIuFhm-wVG0e8kZfFm1R8qI1rGS2G/view?usp=drivesdk), para organismos de normalización/certificación. El material académico comprueba cobertura curricular; las claves se sustentan en fuentes primarias.
+
+Inventario.cjs, verificar.cjs y git diff --check se ejecutaron tras aplicar el lote; el inventario automático no sustituye la revisión individual.
 
 ## Lote 595 — 30 de octubre
 
