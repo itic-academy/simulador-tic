@@ -160061,71 +160061,252 @@
       "id": 3301,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a los organismos y procesos de normalización podemos afirmar:",
+      "texto": "Según las reglas de adopción de CEN/CENELEC, ¿qué obligación contraen sus miembros respecto a una Norma Europea (EN) aprobada y publicada?",
       "opciones": [
-        "La adopción de las normas internacionales elaboradas en ISO e EIC es obligatoria para los países miembros de la UE.",
-        "Los organismos europeos de normalización obligan a sus miembros a adoptar las normas europeas que ellos elaboren.",
-        "AENOR es una entidad pública empresarial dependiente del Ministerio de Energía, Turismo y Agenda Digital.",
-        "Las normas publicadas por AENOR se conocen como normas IEC."
+        "Adoptar toda norma internacional de ISO o IEC como ley de aplicación obligatoria en la Unión Europea.",
+        "Dar a la EN el estatus de norma nacional idéntica y retirar las normas nacionales incompatibles; esto no convierte por sí solo su uso en obligatorio por ley.",
+        "AENOR, como entidad pública empresarial, debe publicar las EN con la denominación IEC.",
+        "Las normas elaboradas por CEN/CENELEC solo se adoptan si cada empresa decide individualmente transponerlas."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La generalización «todos los organismos europeos» se concreta en CEN/CENELEC: sus miembros deben dar a los EN aprobados estatus de norma nacional idéntica y retirar normas nacionales incompatibles. Esto no equivale a que el uso de la norma sea legalmente obligatorio en todos los casos; el uso general de normas es voluntario salvo que una norma jurídica/contrato lo imponga o la legislación establezca efectos específicos. **Corregida.** A1-50; A2-II-11.",
+      "clasificacion": {
+        "A1": [
+          "A1-50"
+        ],
+        "A2": [
+          "A2-II-11"
+        ],
+        "bloque_academia": "ITIC Academy, tema 24 «Normalización, conformidad, certificación y normativa LAN/WLAN», A1-50, 2026; el temario se corresponde con los organismos de normalización y con las obligaciones de adopción de una EN; se distingue adopción nacional de obligatoriedad legal de uso. https://drive.google.com/file/d/1HKwUIuFhm-wVG0e8kZfFm1R8qI1rGS2G/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación cotejada con revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+      },
+      "etiquetas": [
+        "normalización europea",
+        "CEN",
+        "CENELEC",
+        "adopción de normas",
+        "voluntariedad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.cencenelec.eu/european-standardization/european-standards/",
+            "referencia": "CEN-CENELEC, European Standards: un EN publicado recibe estatus de norma nacional en todos los países miembros y deben retirarse las normas nacionales conflictivas."
+          },
+          {
+            "url": "https://www.cencenelec.eu/bottom-navigation-pages/faqs/",
+            "referencia": "CEN-CENELEC FAQs, § 18: en general, aplicar una norma europea es voluntario; una norma armonizada puede dar presunción de conformidad, pero no hace obligatorio su uso si otra solución cumple los requisitos legales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1HKwUIuFhm-wVG0e8kZfFm1R8qI1rGS2G/view?usp=drivesdk",
+            "referencia": "ITIC Academy, tema 24 «Normalización, conformidad, certificación y normativa LAN/WLAN», A1-50, 2026; cotejo curricular: el temario se corresponde con los organismos de normalización y con las obligaciones de adopción de una EN; se distingue adopción nacional de obligatoriedad legal de uso. El material académico se usa para situar y contrastar cobertura, no como fuente normativa/técnica de la respuesta."
+          }
+        ],
+        "observaciones": "La generalización «todos los organismos europeos» se concreta en CEN/CENELEC: sus miembros deben dar a los EN aprobados estatus de norma nacional idéntica y retirar normas nacionales incompatibles. Esto no equivale a que el uso de la norma sea legalmente obligatorio en todos los casos; el uso general de normas es voluntario salvo que una norma jurídica/contrato lo imponga o la legislación establezca efectos específicos. **Corregida.** A1-50; A2-II-11. Cotejo ITIC Academy en Drive: ITIC Academy, tema 24 «Normalización, conformidad, certificación y normativa LAN/WLAN», A1-50, 2026; el temario se corresponde con los organismos de normalización y con las obligaciones de adopción de una EN; se distingue adopción nacional de obligatoriedad legal de uso. https://drive.google.com/file/d/1HKwUIuFhm-wVG0e8kZfFm1R8qI1rGS2G/view?usp=drivesdk Clasificación cotejada con revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+      }
     },
     {
       "id": 3302,
       "bloque": 0,
       "tema": 0,
-      "texto": "Con un tamaño de bloque de 1 KB, ¿cuál es el tamaño máximo de un fichero con el sistema de archivos ext3?",
+      "texto": "En la tabla clásica de límites de Linux para la estructura ext2/ext3 basada en bloques indirectos, ¿qué límite nominal de tamaño de archivo corresponde a bloques de 1 KiB?",
       "opciones": [
-        "64GB",
-        "32GB",
-        "16GB",
-        "8GB"
+        "64 GB",
+        "32 GB",
+        "16 GB",
+        "8 GB"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La respuesta esperada es 16 GB en la tabla clásica de límites para la estructura ext2/ext3 con bloques de 1 KiB. No se presenta como límite universal de toda instalación: el tamaño de bloque, el formato/límites de compatibilidad, el kernel y la arquitectura alteran los máximos. El stem se acotó a la tabla clásica para preservar el dato histórico sin confundirlo con límites actuales de otros sistemas/extensiones. **Corregida.** A1-56; A2-IV-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, sistemas de almacenamiento y virtualización», A1-56, 2026; el bloque oficial y académico trata sistemas de almacenamiento; en la búsqueda de Drive no se encontró una ficha que establezca específicamente el límite de ext3, por lo que el apunte sirve solo para encaje curricular y no como validación del valor histórico. https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación cotejada con revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+      },
+      "etiquetas": [
+        "ext3",
+        "sistema de ficheros",
+        "bloques indirectos",
+        "tamaño de bloque",
+        "límite histórico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://github.com/torvalds/linux/blob/master/Documentation/filesystems/ext2.rst",
+            "referencia": "Documentación de Linux upstream, ext2.rst, tabla de límites clásicos por tamaño de bloque: para bloque de 1 kB el límite de archivo de la estructura heredada por ext2/ext3 es 16 GB; las otras columnas cambian según tamaño de bloque."
+          },
+          {
+            "url": "https://www.novell.com/documentation/nlsbs9/sles_admin/data/sec-filesystems-lfs.html",
+            "referencia": "Novell/SUSE Linux Large File Support: tabla histórica explícita «Ext2 or Ext3 (1 kB block size)» con límite 16 GB; documenta además que son límites de formato/implementación histórica, no un valor universal independiente del entorno."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, sistemas de almacenamiento y virtualización», A1-56, 2026; cotejo curricular: el bloque oficial y académico trata sistemas de almacenamiento; en la búsqueda de Drive no se encontró una ficha que establezca específicamente el límite de ext3, por lo que el apunte sirve solo para encaje curricular y no como validación del valor histórico. El material académico se usa para situar y contrastar cobertura, no como fuente normativa/técnica de la respuesta."
+          }
+        ],
+        "observaciones": "La respuesta esperada es 16 GB en la tabla clásica de límites para la estructura ext2/ext3 con bloques de 1 KiB. No se presenta como límite universal de toda instalación: el tamaño de bloque, el formato/límites de compatibilidad, el kernel y la arquitectura alteran los máximos. El stem se acotó a la tabla clásica para preservar el dato histórico sin confundirlo con límites actuales de otros sistemas/extensiones. **Corregida.** A1-56; A2-IV-5. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 26 «Hardware, sistemas de almacenamiento y virtualización», A1-56, 2026; el bloque oficial y académico trata sistemas de almacenamiento; en la búsqueda de Drive no se encontró una ficha que establezca específicamente el límite de ext3, por lo que el apunte sirve solo para encaje curricular y no como validación del valor histórico. https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk Clasificación cotejada con revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+      }
     },
     {
       "id": 3303,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si examinamos el modelo relacional dentro del marco de la arquitectura ANSI, podemos afirmar que:",
+      "texto": "En la arquitectura de tres niveles ANSI/SPARC, ¿qué afirmación describe correctamente la relación entre el modelo relacional y el nivel interno?",
       "opciones": [
-        "El modelo relacional no especifica nada respecto al esquema interno.",
-        "En el nivel externo se encuentran las relaciones base, también denominadas tablas reales.",
-        "En el nivel conceptual se encuentran las vistas.",
-        "El modelo relacional define los tres niveles de la arquitectura ANSI."
+        "El modelo relacional describe estructuras lógicas de datos, pero no prescribe su organización física ni los métodos de acceso del esquema interno.",
+        "El nivel externo está formado exclusivamente por las relaciones base almacenadas en disco.",
+        "Las vistas de usuario pertenecen al nivel interno, junto con índices y rutas de acceso.",
+        "El modelo relacional define por sí mismo y de forma completa los tres niveles ANSI/SPARC."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se acotó a la arquitectura de tres niveles ANSI/SPARC: el modelo relacional describe estructuras lógicas/relaciones, pero no prescribe cómo deben organizarse físicamente los datos ni las rutas de acceso del esquema interno. Las vistas corresponden al nivel externo; las relaciones base no son las vistas externas. **Corregida.** A1-63; A2-II-5.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado», A1-63/A2-T5, 2026; el documento incluye expresamente el modelo de referencia ANSI y la arquitectura ANSI/SPARC de tres esquemas. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "corregida. Clasificación cotejada con revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+      },
+      "etiquetas": [
+        "ANSI/SPARC",
+        "modelo relacional",
+        "esquema conceptual",
+        "esquema interno",
+        "independencia física"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-f55f11d78745e6c51f75a39a44913f22/pdf/GOVPUB-C13-f55f11d78745e6c51f75a39a44913f22.pdf",
+            "referencia": "NBS Special Publication 500-71, Reference Model for DBMS Standardization: ANSI/X3/SPARC Database System Study Group, figura 4.2 y exposición de arquitectura de tres esquemas; diferencia esquemas externos, conceptual e interno y el almacenamiento físico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado», A1-63/A2-T5, 2026; cotejo curricular: el documento incluye expresamente el modelo de referencia ANSI y la arquitectura ANSI/SPARC de tres esquemas. El material académico se usa para situar y contrastar cobertura, no como fuente normativa/técnica de la respuesta."
+          }
+        ],
+        "observaciones": "Se acotó a la arquitectura de tres niveles ANSI/SPARC: el modelo relacional describe estructuras lógicas/relaciones, pero no prescribe cómo deben organizarse físicamente los datos ni las rutas de acceso del esquema interno. Las vistas corresponden al nivel externo; las relaciones base no son las vistas externas. **Corregida.** A1-63; A2-II-5. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 29 «Bases de datos, SQL y modelado», A1-63/A2-T5, 2026; el documento incluye expresamente el modelo de referencia ANSI y la arquitectura ANSI/SPARC de tres esquemas. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk Clasificación cotejada con revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+      }
     },
     {
       "id": 3304,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuáles son los componentes primordiales de .NET Framework?",
+      "texto": "¿Cuáles son los dos componentes fundamentales de .NET Framework?",
       "opciones": [
-        "ASP.net y ADO.net",
-        "Common Language Runtime (CLR) y Clases Framework",
-        "Common Language Specification (CLS) y Polimorfismo",
-        "Hypertext Markup Language (HTML) y Unified Modeling Language (UML)"
+        "ASP.NET y ADO.NET.",
+        "Common Language Runtime (CLR) y .NET Framework Class Library.",
+        "Common Language Specification (CLS) y polimorfismo.",
+        "HTML y Unified Modeling Language (UML)."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se confirmó la clave: los dos componentes fundamentales son CLR y Framework Class Library. ASP.NET/ADO.NET son tecnologías o componentes de aplicación/datos del ecosistema, no los dos elementos constitutivos que pregunta el stem. Se mantiene explícito «.NET Framework» para no confundirlo con la plataforma .NET actual. **Vigente.** A1-66; A2-III-11.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», A1-65–68/A2-T3, 2026; el bloque cubre el entorno Microsoft .NET; se revisó el stem para distinguir .NET Framework, cuya arquitectura documentada incluye CLR y class library, de la plataforma .NET actual. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "vigente. Clasificación cotejada con revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+      },
+      "etiquetas": [
+        "Microsoft .NET Framework",
+        "CLR",
+        "Framework Class Library",
+        "runtime",
+        "biblioteca de clases"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/framework/get-started/overview",
+            "referencia": "Microsoft Learn, Overview of .NET Framework: el .NET Framework consiste en Common Language Runtime (CLR) y .NET Framework Class Library; ASP.NET se aloja sobre el runtime y no sustituye a esos dos componentes base."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», A1-65–68/A2-T3, 2026; cotejo curricular: el bloque cubre el entorno Microsoft .NET; se revisó el stem para distinguir .NET Framework, cuya arquitectura documentada incluye CLR y class library, de la plataforma .NET actual. El material académico se usa para situar y contrastar cobertura, no como fuente normativa/técnica de la respuesta."
+          }
+        ],
+        "observaciones": "Se confirmó la clave: los dos componentes fundamentales son CLR y Framework Class Library. ASP.NET/ADO.NET son tecnologías o componentes de aplicación/datos del ecosistema, no los dos elementos constitutivos que pregunta el stem. Se mantiene explícito «.NET Framework» para no confundirlo con la plataforma .NET actual. **Vigente.** A1-66; A2-III-11. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», A1-65–68/A2-T3, 2026; el bloque cubre el entorno Microsoft .NET; se revisó el stem para distinguir .NET Framework, cuya arquitectura documentada incluye CLR y class library, de la plataforma .NET actual. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk Clasificación cotejada con revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+      }
     },
     {
       "id": 3305,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué tipo de driver JDBC es aquel que convierte las llamadas JDBC a llamadas nativas de la API de la base de datos?",
+      "texto": "En la clasificación clásica de drivers JDBC, ¿qué tipo convierte las llamadas JDBC a llamadas de la API nativa de una base de datos?",
       "opciones": [
-        "Tipo 1",
-        "Tipo 2",
-        "Tipo 3",
-        "Tipo 4"
+        "Tipo 1: puente JDBC-ODBC.",
+        "Tipo 2: Native API, normalmente con una parte Java y bibliotecas nativas del proveedor.",
+        "Tipo 3: protocolo de red independiente del gestor y middleware.",
+        "Tipo 4: protocolo nativo de red implementado directamente en Java."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se confirmó la clave Tipo 2: el driver traduce las llamadas JDBC a la API nativa del fabricante y suele requerir sus bibliotecas cliente. Tipo 3 traduce a protocolo de red independiente del DBMS y tipo 4 a protocolo nativo de red en Java puro. La taxonomía se conserva como clasificación conceptual, sin implicar que sea la arquitectura recomendada para nuevos desarrollos. **Vigente.** A1-67; A2-III-10.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», A1-65–68/A2-T3, 2026; el temario de Java cubre APIs Java; el bloque de bases de datos menciona drivers JDBC históricos, coherente con la taxonomía Tipo 1–4 examinada. Para la semántica exacta se usa Oracle. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk; también https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "vigente. Clasificación cotejada con revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+      },
+      "etiquetas": [
+        "JDBC",
+        "driver tipo 2",
+        "Native API",
+        "API nativa del gestor",
+        "Java"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/jjdbc/introducing-JDBC.html",
+            "referencia": "Oracle Database JDBC Developer’s Guide 26, Introducing JDBC: el driver OCI es un driver JDBC Type II; convierte invocaciones JDBC a llamadas OCI nativas mediante métodos nativos y requiere bibliotecas cliente específicas."
+          },
+          {
+            "url": "https://docs.oracle.com/cd/B10468_13/migrate.904/b10426/jdbc.htm",
+            "referencia": "Oracle, Migrating JDBC Applications, clasificación de drivers: Type 2 Native API traduce JDBC a llamadas de la API nativa de la base de datos y depende del proveedor."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», A1-65–68/A2-T3, 2026; cotejo curricular: el temario de Java cubre APIs Java; el bloque de bases de datos menciona drivers JDBC históricos, coherente con la taxonomía Tipo 1–4 examinada. Para la semántica exacta se usa Oracle. El material académico se usa para situar y contrastar cobertura, no como fuente normativa/técnica de la respuesta."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado», A1-63/A2-T5, 2026; su apartado de JDBC trata explícitamente drivers JDBC históricos."
+          }
+        ],
+        "observaciones": "Se confirmó la clave Tipo 2: el driver traduce las llamadas JDBC a la API nativa del fabricante y suele requerir sus bibliotecas cliente. Tipo 3 traduce a protocolo de red independiente del DBMS y tipo 4 a protocolo nativo de red en Java puro. La taxonomía se conserva como clasificación conceptual, sin implicar que sea la arquitectura recomendada para nuevos desarrollos. **Vigente.** A1-67; A2-III-10. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», A1-65–68/A2-T3, 2026; el temario de Java cubre APIs Java; el bloque de bases de datos menciona drivers JDBC históricos, coherente con la taxonomía Tipo 1–4 examinada. Para la semántica exacta se usa Oracle. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk; también https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk Clasificación cotejada con revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+      }
     },
     {
       "id": 3306,
