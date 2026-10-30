@@ -169955,71 +169955,299 @@
       "id": 3486,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale de entre los siguientes cuál NO es un framework de pruebas unitarias para Microsoft .NET:",
+      "texto": "¿Cuál de estas opciones identifica un framework de pruebas unitarias para .NET?",
       "opciones": [
-        "xUnit",
+        "PHPUnit.",
+        "xUnit.net.",
+        "pytest.",
+        "JUnit."
+      ],
+      "respuesta_correcta": 1,
+      "comentarios": "Se sustituye el falso contraste entre “xUnit” y “xUnit.net” por opciones de frameworks de distintos ecosistemas; se mantiene una única respuesta inequívoca.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1; El bloque 30 cubre el entorno .NET dentro del A1-66 y la plataforma .NET en A2-D11, normalizado como A2-III-11. La identificación de xUnit.net como framework se comprueba con la documentación oficial del proyecto.; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se describe según lo localizado."
+      },
+      "etiquetas": [
+        ".NET",
+        "pruebas unitarias",
         "xUnit.net",
         "NUnit",
-        "csUnit"
+        "MSTest"
       ],
-      "respuesta_correcta": 0,
-      "comentarios": ""
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://xunit.net/",
+            "referencia": "Proyecto xUnit.net, sitio oficial: framework de pruebas unitarias de código abierto para C#, F# y Visual Basic; el nombre oficial es xUnit.net, aunque a menudo se acorte informalmente a xUnit."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest",
+            "referencia": "Microsoft Learn, Unit testing C# with MSTest: MSTest es otra alternativa de pruebas unitarias para .NET, usada aquí para confirmar que las opciones del ítem sean inequívocas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1. El bloque 30 cubre el entorno .NET dentro del A1-66 y la plataforma .NET en A2-D11, normalizado como A2-III-11. La identificación de xUnit.net como framework se comprueba con la documentación oficial del proyecto."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se sustituye el falso contraste entre “xUnit” y “xUnit.net” por opciones de frameworks de distintos ecosistemas; se mantiene una única respuesta inequívoca. Cotejo ITIC Academy: El bloque 30 cubre el entorno .NET dentro del A1-66 y la plataforma .NET en A2-D11, normalizado como A2-III-11. La identificación de xUnit.net como framework se comprueba con la documentación oficial del proyecto. Correspondencia oficial: A1-66, A2-III-11."
+      }
     },
     {
       "id": 3487,
       "bloque": 0,
       "tema": 0,
-      "texto": "Mayte ha tecleado desde la línea de comandos del shell de su sistema operativo “nslookup www.map.es [enter]”. Este comando le dará como respuesta en su pantalla:",
+      "texto": "Al ejecutar `nslookup www.boe.es` sin especificar otro servidor DNS, ¿qué información consulta principalmente la herramienta?",
       "opciones": [
-        "La dirección Ethernet del ordenador de Mayte.",
-        "El tiempo que tarda un paquete de datos desde la máquina de Mayte hasta el servidor del MAP.",
-        "La dirección IP del MAP.",
-        "La lista de directorios y archivos del directorio raíz del MAP."
+        "Los registros DNS disponibles para el nombre consultado; según la respuesta pueden incluir direcciones IP.",
+        "La dirección MAC de la tarjeta de red del servidor web.",
+        "El tiempo de ida y vuelta de un paquete ICMP hasta el servidor web.",
+        "La lista de directorios y archivos del sistema remoto."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Se elimina el dominio histórico www.map.es y se pregunta por la función del comando, no por una dirección IP cambiante ni por la vigencia de un hostname concreto. Se precisa que DNS puede devolver distintos tipos de registro.",
+      "clasificacion": {
+        "A1": [
+          "A1-109"
+        ],
+        "A2": [
+          "A2-IV-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes, versión 2026.1; El bloque 42 cubre Internet, servicios básicos y redes; el apartado de resolución DNS se trata como herramienta/servicio de Internet. La correspondencia es A1-109 y A2-C11, normalizado como A2-IV-13.; https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se describe según lo localizado."
+      },
+      "etiquetas": [
+        "DNS",
+        "nslookup",
+        "resolución de nombres",
+        "registros A y AAAA",
+        "servicios de Internet"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup",
+            "referencia": "Microsoft Learn, nslookup: en modo no interactivo el primer parámetro es el nombre o dirección que se consulta; los ejemplos muestran consulta DNS de direcciones IP para un nombre de dominio. La respuesta concreta puede variar según los registros publicados y el resolvedor."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+            "referencia": "IETF RFC 1035, Domain Names — Implementation and Specification: define los registros de recursos DNS, incluidos A (dirección IPv4) y los procedimientos de consulta/respuesta."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 Redes, versión 2026.1. El bloque 42 cubre Internet, servicios básicos y redes; el apartado de resolución DNS se trata como herramienta/servicio de Internet. La correspondencia es A1-109 y A2-C11, normalizado como A2-IV-13."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se elimina el dominio histórico www.map.es y se pregunta por la función del comando, no por una dirección IP cambiante ni por la vigencia de un hostname concreto. Se precisa que DNS puede devolver distintos tipos de registro. Cotejo ITIC Academy: El bloque 42 cubre Internet, servicios básicos y redes; el apartado de resolución DNS se trata como herramienta/servicio de Internet. La correspondencia es A1-109 y A2-C11, normalizado como A2-IV-13. Correspondencia oficial: A1-109, A2-IV-13."
+      }
     },
     {
       "id": 3488,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según se establece en la política de certificación de la DGP para el DNI electrónico (DNIe) en lo relativo a las autoridades de certificación (AC) raíz y subordinadas, ¿cuál es el tamaño de esas claves?",
+      "texto": "Según la Declaración de Prácticas de Certificación del DNIe de la DGP, versión 3.4, ¿qué tamaños de clave RSA se especifican para las AC raíz y subordinadas?",
       "opciones": [
-        "El tamaño de las claves de la AC Raíz es de 2048 bits y el de claves de las AC subordinadas será de 4096 bits.",
-        "Las claves de la AC Raíz y de las AC subordinadas serán de 2048 bits.",
-        "El tamaño de las claves es: 4096 bits para la AC Raíz y 2048 bits para las AC Subordinadas.",
-        "El tamaño de las claves de la AC Raíz es 8192 bits para la raíz y 4096 bits para las AC subordinadas."
+        "Todas las AC raíz usan 2048 bits y todas las subordinadas 4096 bits.",
+        "Las AC raíz y subordinadas usan 2048 bits.",
+        "Las AC Raíz y Raíz 2 usan 4096 bits; las subordinadas emitidas por AC Raíz usan 2048 y las emitidas por AC Raíz 2, 4096.",
+        "Las AC raíz usan 8192 bits y todas las subordinadas 4096 bits."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se actualiza la referencia al texto vigente de la DPC v3.4 y se corrige la generalización de que todas las AC subordinadas usan 2048 bits: depende de la raíz emisora.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026.1; El bloque 36 cubre certificados digitales, criptografía, PKI e infraestructura del DNI electrónico. La academia contextualiza el contenido, mientras que los tamaños de clave y la diferencia entre jerarquías se verifican en la DPC vigente de la DGP.; https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se describe según lo localizado."
+      },
+      "etiquetas": [
+        "DNIe",
+        "PKI",
+        "Dirección General de la Policía",
+        "certificados",
+        "RSA",
+        "longitud de clave"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.dnielectronico.es/PDFs/Politicas_de_certificacion_v3.4.pdf",
+            "referencia": "DGP, Declaración de Prácticas y Políticas de Certificación DNIe v3.4, junio de 2026, apartado 6.1.5, p. 110: raíces 4096 bits; subordinadas emitidas por AC Raíz 2048 bits y subordinadas emitidas por AC Raíz 2, 4096 bits."
+          },
+          {
+            "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_501",
+            "referencia": "Portal oficial DNI electrónico, catálogo de Políticas de Certificación: identifica las versiones de DPC publicadas por la DGP y permite cotejar la versión vigente consultada."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El bloque 36 cubre certificados digitales, criptografía, PKI e infraestructura del DNI electrónico. La academia contextualiza el contenido, mientras que los tamaños de clave y la diferencia entre jerarquías se verifican en la DPC vigente de la DGP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se actualiza la referencia al texto vigente de la DPC v3.4 y se corrige la generalización de que todas las AC subordinadas usan 2048 bits: depende de la raíz emisora. Cotejo ITIC Academy: El bloque 36 cubre certificados digitales, criptografía, PKI e infraestructura del DNI electrónico. La academia contextualiza el contenido, mientras que los tamaños de clave y la diferencia entre jerarquías se verifican en la DPC vigente de la DGP. Correspondencia oficial: A1-80, A1-81, A2-I-6."
+      }
     },
     {
       "id": 3489,
       "bloque": 0,
       "tema": 0,
-      "texto": "El conjunto de clases que exponen servicios de acceso a datos para programadores de .NET Framework es:",
+      "texto": "¿Qué tecnología de .NET Framework proporciona acceso a diversas fuentes de datos mediante proveedores y componentes como DataSet?",
       "opciones": [
-        "DataAccess.Net",
-        "ADO.Net",
-        "DataSet.Net",
-        "DataAdapter.Net"
+        "DataAccess.Net.",
+        "ADO.NET.",
+        "DataSet.Net.",
+        "DataAdapter.Net."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se normaliza la grafía ADO.NET y se precisa que la pregunta se refiere al conjunto de acceso a datos, distinto de clases u objetos concretos como DataSet o DataAdapter.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1; El bloque 30 incluye A1-66 (entorno Microsoft .NET) y A2-D11 (plataforma .NET; código oficial A2-III-11). La definición de ADO.NET se contrasta con documentación de Microsoft Learn.; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se describe según lo localizado."
+      },
+      "etiquetas": [
+        "ADO.NET",
+        ".NET Framework",
+        "acceso a datos",
+        "DataSet",
+        "proveedores de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview",
+            "referencia": "Microsoft Learn, ADO.NET Overview: ADO.NET ofrece acceso a fuentes de datos y separa acceso y manipulación; incluye proveedores de datos y DataSet."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers",
+            "referencia": "Microsoft Learn, .NET Framework Data Providers: describe proveedores para conectarse a bases de datos, ejecutar comandos y recuperar resultados, junto con los objetos Connection, Command, DataReader y DataAdapter."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1. El bloque 30 incluye A1-66 (entorno Microsoft .NET) y A2-D11 (plataforma .NET; código oficial A2-III-11). La definición de ADO.NET se contrasta con documentación de Microsoft Learn."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se normaliza la grafía ADO.NET y se precisa que la pregunta se refiere al conjunto de acceso a datos, distinto de clases u objetos concretos como DataSet o DataAdapter. Cotejo ITIC Academy: El bloque 30 incluye A1-66 (entorno Microsoft .NET) y A2-D11 (plataforma .NET; código oficial A2-III-11). La definición de ADO.NET se contrasta con documentación de Microsoft Learn. Correspondencia oficial: A1-66, A2-III-11."
+      }
     },
     {
       "id": 3490,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un sistema OLAP se basa en tres conceptos. ¿Cuál de los siguientes NO es un concepto básico de un sistema OLAP?",
+      "texto": "En el modelo dimensional de un sistema de análisis OLAP, ¿cuál de los siguientes NO es un elemento básico del cubo?",
       "opciones": [
         "Medidas.",
         "Dimensiones.",
         "Hechos.",
-        "Transacciones."
+        "OLTP (procesamiento de transacciones en línea)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se reescribe para distinguir componentes del modelo dimensional de OLTP como procesamiento transaccional; así se evita la ambigüedad de “transacciones”, que también puede referirse a filas de hechos.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1; El bloque 34 desarrolla almacenes de datos, OLAP y el modelo dimensional con hechos, dimensiones y medidas; los epígrafes oficiales corresponden a A1-75 y A2-T4, normalizado como A2-II-4.; https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se describe según lo localizado."
+      },
+      "etiquetas": [
+        "OLAP",
+        "modelo dimensional",
+        "dimensiones",
+        "medidas",
+        "hechos",
+        "OLTP"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/measures-and-measure-groups?view=sql-analysis-services-2025",
+            "referencia": "Microsoft Learn, Measures and Measure Groups: un cubo incluye medidas agrupadas, lógica de negocio y dimensiones que aportan contexto a los valores numéricos."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-fact-tables",
+            "referencia": "Microsoft Learn, Modeling Fact Tables in Warehouse: una tabla de hechos almacena mediciones asociadas a eventos/observaciones y su granularidad se define en relación con las dimensiones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1. El bloque 34 desarrolla almacenes de datos, OLAP y el modelo dimensional con hechos, dimensiones y medidas; los epígrafes oficiales corresponden a A1-75 y A2-T4, normalizado como A2-II-4."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se reescribe para distinguir componentes del modelo dimensional de OLTP como procesamiento transaccional; así se evita la ambigüedad de “transacciones”, que también puede referirse a filas de hechos. Cotejo ITIC Academy: El bloque 34 desarrolla almacenes de datos, OLAP y el modelo dimensional con hechos, dimensiones y medidas; los epígrafes oficiales corresponden a A1-75 y A2-T4, normalizado como A2-II-4. Correspondencia oficial: A1-75, A2-II-4."
+      }
     },
     {
       "id": 3491,
