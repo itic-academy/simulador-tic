@@ -8,7 +8,7 @@ for(const f of files)for(const c of JSON.parse(fs.readFileSync(path.join('revisi
 const examined=Object.values(totals).reduce((a,b)=>a+b,0),verified=totals.vigente+totals.corregida+totals.historica,unreviewed=12123-examined;
 const readme=path.join('revision','README.md');let s=fs.readFileSync(readme,'utf8');
 const summary=`Último lote secuencial aplicado: 581 (IDs 3221–3225). Acumulado: ${examined} preguntas examinadas individualmente, ${verified} verificadas (${totals.vigente} vigentes, ${totals.corregida} corregidas y ${totals.historica} históricas) y ${totals.pendiente_fuente+totals.pendiente_ambiguedad} pendientes documentadas (${totals.pendiente_fuente} de fuente y ${totals.pendiente_ambiguedad} de ambigüedad); quedan ${unreviewed} sin revisar individualmente. Hay ${changed} preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.`;
-s=s.replace(/^Último lote secuencial aplicado:.*$/m,summary);
+s=s.replace(/Último lote secuencial aplicado:.*?registro completos\./,summary);
 const section=[
 '## Lote 581 — 30 de octubre','',
 'IDs 3221–3225 revisados individualmente con los textos vigentes del BOE, el estándar WCAG 2.2 y la referencia de gestión de proyectos de PMI. Se sustituye un distractor de protección de datos que conservaba el plazo anual de la antigua LOPD; se actualiza una pregunta de gobernanza TIC afectada por la derogación del RD 806/2014; se precisan los conceptos de estructura funcional y heurísticas de usabilidad; y se corrige el nombre oficial del organismo de hora legal. Los textos y claves originales quedan conservados en [cambios-lote-581.json](cambios-lote-581.json).','',

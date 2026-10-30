@@ -1,7 +1,26 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 580 (IDs 3216–3220). Acumulado: 3220 preguntas examinadas individualmente, 3147 verificadas (647 vigentes, 2258 corregidas y 242 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8903 sin revisar individualmente. Hay 2579 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 582 (IDs 3226–3230). Acumulado: 3230 preguntas examinadas individualmente, 3157 verificadas (651 vigentes, 2264 corregidas y 242 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8893 sin revisar individualmente. Hay 2587 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
 
+## Lote 582 — 30 de octubre
+
+IDs 3226–3230 revisados individualmente. Se cotejaron la Ley 39/2015, el ENS vigente, el CPSTIC/CCN-STIC 105 y la guía de empleo seguro de OLVIDO Windows, el portal actual de Cl@ve y la información institucional de ETSI. Se completó la garantía omitida de consulta temporal en la respuesta del art. 17.2; se confirmó la pertenencia de detección de intrusión al marco operacional y de OLVIDO Windows al CPSTIC; se actualizó Cl@ve ocasional a Cl@ve Móvil y se precisó que certificado/DNIe son alternativas que la pasarela permite según servicio. Se conserva el texto íntegro de origen en [cambios-lote-582.json](cambios-lote-582.json).
+
+- **3226 — archivo electrónico:** autenticidad, integridad, conservación y consulta con independencia del tiempo transcurrido son requisitos acumulativos del art. 17.2 de la Ley 39/2015. A1-22/A2-I-8 e I-9; Academy, bloque 03.
+
+- **3227 — medidas ENS:** detección de intrusión es op.mon.1 (marco operacional), no una medida de protección [mp]. A1-48/A2-I-9; Academy, bloque 48.
+
+- **3228 — borrado seguro:** OLVIDO Windows figura en la familia de herramientas de borrado seguro del CPSTIC; el procedimiento CCN-STIC 1508 acredita que está cualificado y aprobado. El catálogo se actualiza, por lo que el enunciado se limita a la inclusión acreditada. A1-48/A2-I-9; Academy, bloque 48.
+
+- **3229 — Cl@ve:** se sustituye la terminología «Cl@ve ocasional» por Cl@ve Móvil y se separan las credenciales concertadas de la identificación con certificado/DNIe, disponibles según el servicio. A1-49/A2-I-6 e I-9; Academy, bloque 23.
+
+- **3230 — normalización:** ETSI es el organismo europeo especializado en normalización de telecomunicaciones; CEN y CENELEC son las otras dos organizaciones europeas de normalización. A1-50; Academy, bloque 24.
+
+Fuentes primarias: [Ley 39/2015, art. 17](https://www.boe.es/eli/es/l/2015/10/01/39/con); [RD 311/2022, anexo II](https://www.boe.es/eli/es/rd/2022/05/03/311/con); [Catálogo CCN-STIC 105](https://www.ccn-cert.cni.es/es/series-ccn-stic/guias-de-acceso-publico-ccn-stic/2536-ccn-stic-105-catalogo-de-productos-de-seguridad-de-las-tecnologias-de-la-informacion-y-la-comunicacion?format=html); [PES CCN-STIC 1508 OLVIDO Windows](https://www.ccn-cert.cni.es/es/pdf/guias/series-ccn-stic/1000-procedimientos-de-empleo-seguro/6720-ccn-stic-1508-procedimiento-de-empleo-seguro-olvido-windows/file.html); [Cl@ve: funcionalidad](https://clave.gob.es/clave/funcionalidad); [ETSI: About us](https://www.etsi.org/about/). Temario cotejado con `temario-oficial.json` y anexos I/IX de las convocatorias GSI 2025: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
+
+Cotejo ITIC Academy: [bloque 03 Administración Digital](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), [bloque 48 Seguridad](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk), [bloque 23 Servicios Comunes](https://drive.google.com/file/d/1NWEg_hd3iDIC0kIitK-u8BpmJ20Jecmw/view?usp=drivesdk) y [bloque 24 Normalización](https://drive.google.com/file/d/1HKwUIuFhm-wVG0e8kZfFm1R8qI1rGS2G/view?usp=drivesdk). Academy sirve para cotejar currículo y vocabulario; las respuestas se sustentan en fuentes oficiales primarias anotadas en cada registro.
+
+Tras el lote se ejecutaron `inventario.cjs`, `verificar.cjs` y `git diff --check`. Inventario estructural no equivale a verificación de contenido.
 ## Lote 581 — 30 de octubre
 
 IDs 3221–3225 revisados individualmente con los textos vigentes del BOE, el estándar WCAG 2.2 y la referencia de gestión de proyectos de PMI. Se sustituye un distractor de protección de datos que conservaba el plazo anual de la antigua LOPD; se actualiza una pregunta de gobernanza TIC afectada por la derogación del RD 806/2014; se precisan los conceptos de estructura funcional y heurísticas de usabilidad; y se corrige el nombre oficial del organismo de hora legal. Los textos y claves originales quedan conservados en [cambios-lote-581.json](cambios-lote-581.json).
