@@ -1,7 +1,26 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 587 (IDs 3251–3255). Acumulado: 3255 preguntas examinadas individualmente, 3182 verificadas (659 vigentes, 2280 corregidas y 243 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8868 sin revisar individualmente. Hay 2604 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 588 (IDs 3256–3260). Acumulado: 3260 preguntas examinadas individualmente, 3187 verificadas (662 vigentes, 2282 corregidas y 243 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8863 sin revisar individualmente. Hay 2606 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
 
+## Lote 588 — 30 de octubre
+
+IDs 3256–3260 revisados individualmente. Se actualizó la pregunta W3C para separar especificaciones de reconocimiento, síntesis, interpretación semántica y anotación multimodal; se corrigió una clave tipográfica y se sustituyó la descripción errónea de EMMA por la de VoiceXML; se contrastó ISO/IEC 30107-3 con su edición vigente de 2023; se actualizó la norma de información para usuarios a ISO/IEC/IEEE 26514:2022, retirando la referencia obsoleta a 2008; y se confirmaron los conceptos UML de despliegue y orientación a objetos. Originales preservados en [cambios-lote-588.json](cambios-lote-588.json).
+
+- **3256 — estándares W3C de voz y multimodalidad:** SRGS describe gramáticas de reconocimiento; SSML controla la síntesis; SISR calcula resultados semánticos; EMMA anota interpretaciones multimodales. Los diálogos hablados corresponden a VoiceXML, por eso la opción que atribuye esa función a EMMA es la errónea. Se quitó «Actualmente trabaja», anacrónico para recomendaciones publicadas en 2003–2009, y se corrigió «corno». A1-44; A2-III-14.
+
+- **3257 — PAD biométrico:** ISO/IEC 30107-3:2023, edición 2 publicada y vigente, establece evaluación e informes de pruebas PAD y clasificación de ataques; la clave no cambia. A1-81; A2-II-13.
+
+- **3258 — documentación para usuarios:** la referencia actual es ISO/IEC/IEEE 26514:2022; ISO marca ISO/IEC 26514:2008 como retirada y sustituida. Se actualizó la opción correcta, conservando su posición. A1-34; A2-III-6/A2-III-14.
+
+- **3259 — UML:** el diagrama de despliegue está en la familia estructural y representa nodos/artefactos de ejecución. Se mantiene «Estructura». A1-92; A2-III-9.
+
+- **3260 — POO:** herencia, polimorfismo y encapsulación son conceptos fundamentales de programación orientada a objetos. Se mantiene POO. A1-89; A2-III-9.
+
+Fuentes primarias: W3C [SRGS 1.0](https://www.w3.org/TR/speech-grammar/), [SSML 1.1](https://www.w3.org/TR/speech-synthesis/), [SISR 1.0](https://www.w3.org/TR/semantic-interpretation/), [EMMA](https://www.w3.org/TR/emma/) y [VoiceXML 2.0](https://www.w3.org/TR/voicexml20/); ISO [30107-3:2023](https://www.iso.org/standard/79520.html) e [ISO/IEC/IEEE 26514:2022](https://www.iso.org/standard/77451.html); OMG [UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/PDF); [Oracle Java OOP concepts](https://docs.oracle.com/javase/tutorial/java/concepts/) y [Microsoft Learn, object-oriented programming](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/). Temario y programas oficiales: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y `temario-oficial.json`.
+
+Cotejo de ITIC Academy en Drive: [bloque 38 «Análisis, diseño y construcción de sistemas», versión 2026.1](https://docs.google.com/document/d/1za_7e_LlvUEpja7VJyYElIgRIPu_AbE3/edit?usp=drivesdk), para el encaje curricular de interfaces, manuales de usuario, documentación, UML y orientación a objetos; [bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1, 30-09-2026](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk), para seguridad/biometría. Las afirmaciones técnicas se respaldan con W3C, ISO, OMG, Oracle y Microsoft, no se atribuyen a la academia. El temario se cotejó con los códigos de los programas vigentes de las convocatorias GSI citadas; Academy sirve como apoyo didáctico y no sustituye la fuente primaria.
+
+Tras el lote se ejecutaron `inventario.cjs`, `verificar.cjs` y `git diff --check`. El inventario automático no sustituye la revisión individual del contenido.
 ## Lote 587 — 30 de octubre
 
 IDs 3251–3255 revisados individualmente. Se corrigió la explicación del efecto avalancha para distinguir cambio de patrón de bits de longitud del resumen; se precisó integridad como protección frente a alteración no autorizada; se reformuló la pregunta sobre firma digital para no atribuirle confidencialidad; se verificó la derogación de la Directiva 1999/93/CE por eIDAS; y se sustituyó la afirmación absoluta de «tiempo real» de OCSP por su diferencia real frente a CRL periódicas. Originales conservados en [cambios-lote-587.json](cambios-lote-587.json).
