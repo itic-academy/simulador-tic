@@ -1,0 +1,37 @@
+const apply = require('./aplicar-lote.cjs');
+
+const lopdgdd = 'https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673';
+const orgTic = 'https://www.boe.es/buscar/act.php?id=BOE-A-2024-22935';
+const eni = 'https://www.boe.es/buscar/act.php?id=BOE-A-2010-1331';
+const heuristics = 'https://www.nngroup.com/articles/ten-usability-heuristics/';
+const wcag = 'https://www.w3.org/TR/wcag/';
+const pmi = 'https://www.pmi.org/learning/library/alternatives-project-management-techniques-strategies-5690';
+
+const rows = [
+ [3221,['27'],['I-7'],['LOPDGDD','derecho de acceso','artículo 13','solicitudes repetitivas'],[
+  {url:lopdgdd,referencia:'Ley Orgánica 3/2018, texto consolidado BOE, art. 13.2 y 13.3: acceso remoto, directo, seguro y permanente como forma de atender el derecho; repetición más de una vez en seis meses, salvo causa legítima.'}
+ ],'', 'La opción del sistema remoto permanente reproduce el art. 13.2 vigente. Se actualiza el distractor que aún hablaba del intervalo anual de la derogada LO 15/1999: el art. 13.3 LOPDGDD permite considerar repetitivo el ejercicio en más de una ocasión durante seis meses, salvo causa legítima. El art. 13.4 también trata como excesivo el medio elegido que genere un coste desproporcionado. A1-27/A2-I-7.','corregida'],
+ [3222,['34'],[],['RD 1125/2024','Comité de Dirección de las TIC','CDTIC','gobernanza TIC'],[
+  {url:orgTic,referencia:'Real Decreto 1125/2024, texto consolidado BOE, art. 6.1–3: regula el Comité de Dirección de las TIC, su presidencia, integración y función de coordinación; su disposición derogatoria única deroga el RD 806/2014.'}
+ ],'', 'El RD 806/2014 citado en el original quedó derogado por el RD 1125/2024. Se reemplaza la pregunta histórica por el régimen vigente: el Comité de Dirección de las TIC lo preside la persona titular de la Dirección de la AEAD y lo integran las personas responsables de las unidades TIC ministeriales, otras responsables designadas y una representación de la Dirección General del Dato. La opción correcta ya no es un intervalo de cinco a diez miembros. A1-34.','corregida'],
+ [3223,['34'],['III-2'],['organización funcional','centro de sistemas de información','asignación de recursos','proyectos TIC'],[
+  {url:pmi,referencia:'Project Management Institute, «Alternatives for project management—techniques and strategies»: diferencia la estructura funcional de la organización por proyectos; en la funcional los recursos permanecen en las unidades funcionales y no se separan en equipos de proyecto autónomos.'}
+ ],'', 'En una estructura funcional, las personas se agrupan por especialidad y permanecen adscritas a su unidad; esto permite compartir capacidades entre proyectos y aprovechar especialistas sin reservarlos permanentemente a uno solo. La estructura matricial combina autoridad funcional y de proyecto, por lo que no es equivalente. Se acota el enunciado a la organización del área de desarrollo para que la opción A sea inequívoca. A1-34/A2-III-2.','corregida'],
+ [3224,['44'],['III-14'],['usabilidad','Jakob Nielsen','heurísticas','accesibilidad web'],[
+  {url:heuristics,referencia:'Nielsen Norman Group, «10 Usability Heuristics for User Interface Design», Jakob Nielsen: la primera heurística es visibilidad del estado del sistema.'},
+  {url:wcag,referencia:'W3C, Web Content Accessibility Guidelines 2.2: 1.1.1 regula alternativas textuales para contenido no textual; 2.3.1 limita destellos para prevenir convulsiones. Son criterios WCAG, no heurísticas de Nielsen.'}
+ ],'', 'La visibilidad del estado del sistema es la primera de las diez heurísticas de Nielsen. Las otras tres opciones describen criterios de accesibilidad de WCAG 2.2: alternativas textuales (1.1.1), contenido adaptable para facilitar la percepción (1.4) y prevención de ataques por destellos (2.3.1). Se corrige además la errata de «usabilldad». A1-44/A2-III-14.','corregida'],
+ [3225,['45'],['I-9'],['Esquema Nacional de Interoperabilidad','hora oficial','sincronización','ROA'],[
+  {url:eni,referencia:'Real Decreto 4/2010, texto consolidado BOE, art. 15.1–2: los sistemas electrónicos de servicios públicos se sincronizan con la hora oficial y sincronizan fecha y hora con el Real Instituto y Observatorio de la Armada.'}
+ ],'', 'El art. 15.2 del ENI dispone que la sincronización de fecha y hora se realice con el Real Instituto y Observatorio de la Armada, de acuerdo con el régimen de hora legal, y, cuando sea posible, con la hora oficial europea. Se corrige la errata ortográfica del nombre oficial. A1-45/A2-I-9.','vigente']
+];
+
+const edits = {
+ 3221:{texto:'Según el artículo 13 de la Ley Orgánica 3/2018, ¿cuándo se entiende otorgado el derecho de acceso a los datos personales mediante un sistema remoto?',opciones:['Cuando el interesado pague previamente los gastos ordinarios de consulta.','Cuando el responsable facilite un sistema de acceso remoto, directo, seguro y permanente a la totalidad de los datos personales.','Cuando el derecho se ejerza como máximo una vez cada doce meses, incluso si existe causa legítima.','Únicamente cuando lo autorice la Agencia Española de Protección de Datos.'],respuesta_correcta:1},
+ 3222:{texto:'Según el artículo 6 del Real Decreto 1125/2024, ¿quién integra el Comité de Dirección de las Tecnologías de la Información y las Comunicaciones?',opciones:['Las personas titulares de las Secretarías de Estado que componían el Pleno de la Comisión de Estrategia TIC del derogado Real Decreto 806/2014.','Las personas responsables de las unidades TIC de cada ministerio, otras responsables designadas por la Dirección de la Agencia y una representación de la Dirección General del Dato.','Un mínimo de cinco y un máximo de diez miembros designados conforme al derogado artículo 6 del Real Decreto 806/2014.','Exclusivamente la persona titular de la Dirección de la AEAD y las personas titulares de las Subsecretarías.'],respuesta_correcta:1},
+ 3223:{texto:'En la organización de un área de desarrollo de sistemas de información, ¿qué ventaja caracteriza a una estructura funcional?',opciones:['Agrupa especialistas por función y facilita compartirlos entre proyectos, sin adscribirlos permanentemente a uno solo.','Elimina la necesidad de coordinación entre departamentos y garantiza que cada proyecto disponga de un equipo autónomo.','Es equivalente a una estructura matricial, pues combina necesariamente la autoridad funcional y la de proyecto.','Separa todos los recursos de sus unidades funcionales y los asigna en exclusiva a proyectos temporales.'],respuesta_correcta:0},
+ 3224:{texto:'Jakob Nielsen formuló diez heurísticas generales de usabilidad para interfaces. ¿Cuál de las siguientes es una de ellas?',opciones:['Visibilidad del estado del sistema.','Proporcionar alternativas textuales para el contenido no textual (criterio WCAG 1.1.1).','Permitir que las personas usuarias adapten la presentación de texto (criterio WCAG 1.4.12).','Evitar contenido con destellos que pueda causar convulsiones (criterio WCAG 2.3.1).'],respuesta_correcta:0},
+ 3225:{texto:'De acuerdo con el artículo 15.2 del Real Decreto 4/2010, del Esquema Nacional de Interoperabilidad, ¿con qué organismo se sincronizan la fecha y la hora de los sistemas electrónicos que prestan servicios públicos?',opciones:['El Observatorio Real de Greenwich.','El Instituto Real de Ciencias Naturales de Bruselas.','El Centro Nacional de Inteligencia.','El Real Instituto y Observatorio de la Armada.'],respuesta_correcta:3}
+};
+
+apply({numero:'581',fecha:'2026-10-30',records:rows,edits});

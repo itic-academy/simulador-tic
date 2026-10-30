@@ -2,6 +2,25 @@
 
 Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 580 (IDs 3216–3220). Acumulado: 3220 preguntas examinadas individualmente, 3147 verificadas (647 vigentes, 2258 corregidas y 242 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8903 sin revisar individualmente. Hay 2579 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos. Inventario estructural no equivale a revisión de contenido.
 
+## Lote 581 — 30 de octubre
+
+IDs 3221–3225 revisados individualmente con los textos vigentes del BOE, el estándar WCAG 2.2 y la referencia de gestión de proyectos de PMI. Se sustituye un distractor de protección de datos que conservaba el plazo anual de la antigua LOPD; se actualiza una pregunta de gobernanza TIC afectada por la derogación del RD 806/2014; se precisan los conceptos de estructura funcional y heurísticas de usabilidad; y se corrige el nombre oficial del organismo de hora legal. Los textos y claves originales quedan conservados en [cambios-lote-581.json](cambios-lote-581.json).
+
+- **3221 — derecho de acceso a datos:** el art. 13.2 LOPDGDD permite atenderlo mediante un sistema remoto, directo, seguro y permanente a todos los datos. El art. 13.3 considera repetitivo el ejercicio más de una vez en seis meses, salvo causa legítima; no rige el viejo intervalo anual de la LO 15/1999. A1-27/A2-I-7; Academy, bloque 08.
+
+- **3222 — gobernanza TIC:** se actualiza la composición del Comité de Dirección de las TIC al art. 6 del RD 1125/2024. El RD 806/2014, citado en el original, fue derogado; el antiguo límite de cinco a diez miembros no describe el comité vigente. A1-34; Academy, bloque 09.
+
+- **3223 — estructura funcional:** se precisa su ventaja: especialistas agrupados por función pueden compartirse entre proyectos y no quedan adscritos permanentemente a uno solo. No equivale a la estructura matricial. A1-34/A2-III-2; Academy, bloque 09 y contraste con PMI.
+
+- **3224 — heurísticas y accesibilidad:** «visibilidad del estado del sistema» es la primera heurística de Nielsen. Alternativas textuales, presentación adaptable y prevención de destellos son criterios de WCAG, no heurísticas de Nielsen. A1-44/A2-III-14; Academy, bloque 30, con distinción comprobada en NN/G y W3C.
+
+- **3225 — sincronización horaria:** el art. 15 del ENI dispone la sincronización con el Real Instituto y Observatorio de la Armada (ROA); se corrige la errata en su denominación. A1-45/A2-I-9; Academy, bloque 20.
+
+Fuentes primarias y técnicas: [LO 3/2018, art. 13](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673); [RD 1125/2024, arts. 3, 6 y disposición derogatoria](https://www.boe.es/buscar/act.php?id=BOE-A-2024-22935); [RD 4/2010, art. 15](https://www.boe.es/buscar/act.php?id=BOE-A-2010-1331); [heurísticas de Nielsen Norman Group](https://www.nngroup.com/articles/ten-usability-heuristics/); [WCAG 2.2 del W3C](https://www.w3.org/TR/wcag/); [Project Management Institute, estructuras de organización para proyectos](https://www.pmi.org/learning/library/alternatives-project-management-techniques-strategies-5690). Temas oficiales contrastados con `temario-oficial.json` y anexos I/IX de las convocatorias GSI 2025: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
+
+Cotejo ITIC Academy: [bloque 08 Protección de Datos](https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk), que aborda el art. 13 LOPDGDD y las solicitudes repetitivas; [bloque 09 Organización y Gestión de los Sistemas de Información, versión 2026.3](https://drive.google.com/file/d/1-xmHgvxArWY8GroFD1eSdyPrAQjkBpzo/view?usp=drivesdk), que actualiza la gobernanza TIC al RD 1125/2024 y explica la estructura funcional; [bloque 30 Tecnologías de Sistemas de Información](https://drive.google.com/file/d/10jhzJC3svXY3hhwSulHADXLHzhYGOn-R/view?usp=drivesdk), que trata UX y usabilidad; y [bloque 20 Interoperabilidad de Sistemas, versión 2026.2](https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view?usp=drivesdk), que desarrolla el ENI y la hora oficial. Academy se emplea para contrastar cobertura y currículo; la formulación de la respuesta se fundamenta en la disposición, estándar o fuente técnica anotada en cada registro.
+
+Después del lote se ejecutaron `inventario.cjs`, `verificar.cjs` y `git diff --check`. El inventario estructural no acredita por sí mismo revisión de contenido.
 ## Lote 580 — 30 de octubre
 
 IDs 3216–3220 revisados individualmente con los textos consolidados y páginas oficiales vigentes sobre transparencia, Portal de la Transparencia, unidad de mercado y Estatuto de la AEPD. Se separan el plazo de resolución y el de formalización del acceso; se actualizan competencias que habían cambiado; y se sustituye una pregunta de la Ley 20/2013 basada en su redacción derogada. Los originales y claves anteriores se conservan en [cambios-lote-580.json](cambios-lote-580.json).
