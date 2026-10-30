@@ -166993,7 +166993,7 @@
       "id": 3436,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el sistema operativo Unix, el parámetro de tiempo de caducidad de la contraseña para un usuario, ¿en qué fichero está?",
+      "texto": "En Linux con el sistema de contraseñas shadow, ¿en qué archivo se almacenan los parámetros de envejecimiento y caducidad de la contraseña de una cuenta?",
       "opciones": [
         "/etc/passwd",
         "/etc/shadow",
@@ -167001,7 +167001,49 @@
         ".profile del directorio raíz (/)"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se acota el enunciado a Linux con la suite shadow para evitar presentar /etc/shadow como requisito universal de cualquier sistema Unix. El archivo /etc/passwd normalmente conserva la información de cuenta visible y un marcador de contraseña; la edad/caducidad se consulta en shadow(5).",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 27 Sistemas Operativos, versión 2026.1; El bloque 27 cubre administración UNIX/Linux, permisos y gestión de cuentas, como contexto del sistema operativo. La distinción exacta entre /etc/passwd y los campos de envejecimiento de /etc/shadow se verifica en la página de manual Linux shadow(5).; https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json; una correspondencia no directa se declara expresamente."
+      },
+      "etiquetas": [
+        "Linux",
+        "Unix",
+        "shadow",
+        "/etc/shadow",
+        "password aging",
+        "caducidad de contraseña"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man5/shadow.5.html",
+            "referencia": "Linux man-pages, shadow(5): /etc/shadow contiene información de contraseñas y envejecimiento; los campos de edad máxima, aviso, inactividad y expiración de cuenta están definidos en ese archivo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 27 Sistemas Operativos, versión 2026.1. El bloque 27 cubre administración UNIX/Linux, permisos y gestión de cuentas, como contexto del sistema operativo. La distinción exacta entre /etc/passwd y los campos de envejecimiento de /etc/shadow se verifica en la página de manual Linux shadow(5)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I, consultada el 30-10-2026; el tema citado se cotejó con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX, consultada el 30-10-2026; para este ítem se registra la correspondencia directa solo si existe, sin asignar un tema A2 por analogía."
+          }
+        ],
+        "observaciones": "Se acota el enunciado a Linux con la suite shadow para evitar presentar /etc/shadow como requisito universal de cualquier sistema Unix. El archivo /etc/passwd normalmente conserva la información de cuenta visible y un marcador de contraseña; la edad/caducidad se consulta en shadow(5). Cotejo ITIC Academy: El bloque 27 cubre administración UNIX/Linux, permisos y gestión de cuentas, como contexto del sistema operativo. La distinción exacta entre /etc/passwd y los campos de envejecimiento de /etc/shadow se verifica en la página de manual Linux shadow(5). Correspondencia oficial: A1-60, A2-II-2. El material académico sirve de encuadre, no sustituye la fuente técnica."
+      }
     },
     {
       "id": 3437,
@@ -167015,21 +167057,109 @@
         "Volátil: los datos no son permanentes en el sistema."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La clave original (volátil) sigue siendo correcta como afirmación NO característica. Se verifica que “histórico” expresa que el almacén mantiene valores referidos a distintos momentos; “no volátil” significa que los datos cargados no se modifican en la operativa normal del almacén.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 34 Business Intelligence y Big Data, versión 2026.1; El bloque 34 aborda data warehouse y business intelligence y alinea su contenido con A1-75 y A2-II-4. La atribución y las cuatro propiedades de Inmon se comprueban además en documentación Oracle que cita su obra.; https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json; una correspondencia no directa se declara expresamente."
+      },
+      "etiquetas": [
+        "Data Warehouse",
+        "William Inmon",
+        "temático",
+        "integrado",
+        "histórico",
+        "no volátil"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/database-concepts.pdf",
+            "referencia": "Oracle Database Concepts 12.2, capítulo Data Warehousing and OLTP: identifica como características descritas por William Inmon que el almacén sea subject-oriented, integrated, nonvolatile y time-variant; los datos no deberían cambiar tras su carga."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 34 Business Intelligence y Big Data, versión 2026.1. El bloque 34 aborda data warehouse y business intelligence y alinea su contenido con A1-75 y A2-II-4. La atribución y las cuatro propiedades de Inmon se comprueban además en documentación Oracle que cita su obra."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I, consultada el 30-10-2026; el tema citado se cotejó con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX, consultada el 30-10-2026; para este ítem se registra la correspondencia directa solo si existe, sin asignar un tema A2 por analogía."
+          }
+        ],
+        "observaciones": "La clave original (volátil) sigue siendo correcta como afirmación NO característica. Se verifica que “histórico” expresa que el almacén mantiene valores referidos a distintos momentos; “no volátil” significa que los datos cargados no se modifican en la operativa normal del almacén. Cotejo ITIC Academy: El bloque 34 aborda data warehouse y business intelligence y alinea su contenido con A1-75 y A2-II-4. La atribución y las cuatro propiedades de Inmon se comprueban además en documentación Oracle que cita su obra. Correspondencia oficial: A1-75, A2-II-4. El material académico sirve de encuadre, no sustituye la fuente técnica."
+      }
     },
     {
       "id": 3438,
       "bloque": 0,
       "tema": 0,
-      "texto": "Pilar quiere enviar un mensaje confidencial a Antonio, en un sistema de clave pública, por lo tanto existen las claves Pilar-privada / Pilar pública y Antonio privada / Antonio pública. Pilar genera su mensaje, ¿con qué clave de las cuatro lo cifrará?",
+      "texto": "Para enviar a Antonio un mensaje protegido frente a la lectura por terceros mediante criptografía asimétrica, ¿con cuál de las cuatro claves lo cifra Pilar?",
       "opciones": [
         "Pilar-privada",
         "Pilar-pública",
         "Antonio-privada",
-        "Antonio-pública"
+        "La clave pública de Antonio; Antonio podrá descifrar el secreto asociado con su clave privada."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se explicita el objetivo de confidencialidad para diferenciarlo de la firma, que emplea la clave privada del emisor. La respuesta es la clave pública de Antonio; la clave privada de Antonio permite descifrar. En implementaciones prácticas se cifra normalmente una clave de sesión y no todo el mensaje con RSA.",
+      "clasificacion": {
+        "A1": [
+          "A1-79",
+          "A1-80"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026.1; El bloque 36 cubre cifrado asimétrico y claves públicas/privadas; el bloque 48 contextualiza técnicas criptográficas en seguridad de redes. La regla de confidencialidad se verifica con NIST, no con el material académico.; https://drive.google.com/file/d/1e63zmnn7AdxZtHG6iIfiqbGqH7l7fjP6/view?usp=drivesdk | ITIC Academy, Bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1; El bloque 36 cubre cifrado asimétrico y claves públicas/privadas; el bloque 48 contextualiza técnicas criptográficas en seguridad de redes. La regla de confidencialidad se verifica con NIST, no con el material académico.; https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json; una correspondencia no directa se declara expresamente."
+      },
+      "etiquetas": [
+        "criptografía asimétrica",
+        "clave pública",
+        "confidencialidad",
+        "clave privada",
+        "cifrado híbrido"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/Public_and_Private_Key",
+            "referencia": "NIST CSRC Glossary, Public and Private Key (fuente NISTIR 7966): una clave pública puede ser usada por una parte para enviar un mensaje confidencial al titular de la clave privada correspondiente."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1e63zmnn7AdxZtHG6iIfiqbGqH7l7fjP6/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El bloque 36 cubre cifrado asimétrico y claves públicas/privadas; el bloque 48 contextualiza técnicas criptográficas en seguridad de redes. La regla de confidencialidad se verifica con NIST, no con el material académico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1. El bloque 36 cubre cifrado asimétrico y claves públicas/privadas; el bloque 48 contextualiza técnicas criptográficas en seguridad de redes. La regla de confidencialidad se verifica con NIST, no con el material académico."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I, consultada el 30-10-2026; el tema citado se cotejó con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX, consultada el 30-10-2026; para este ítem se registra la correspondencia directa solo si existe, sin asignar un tema A2 por analogía."
+          }
+        ],
+        "observaciones": "Se explicita el objetivo de confidencialidad para diferenciarlo de la firma, que emplea la clave privada del emisor. La respuesta es la clave pública de Antonio; la clave privada de Antonio permite descifrar. En implementaciones prácticas se cifra normalmente una clave de sesión y no todo el mensaje con RSA. Cotejo ITIC Academy: El bloque 36 cubre cifrado asimétrico y claves públicas/privadas; el bloque 48 contextualiza técnicas criptográficas en seguridad de redes. La regla de confidencialidad se verifica con NIST, no con el material académico. Correspondencia oficial: A1-79, A1-80, A2-IV-12. El material académico sirve de encuadre, no sustituye la fuente técnica."
+      }
     },
     {
       "id": 3439,
@@ -167043,21 +167173,117 @@
         "Encontrar archivos en un determinado directorio a partir de diversas reglas de búsqueda."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La clave original sobre estado de procesos es vigente. Se añade la cautela de portabilidad: el significado general es estable, pero las opciones y columnas no son idénticas en todos los Unix.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 27 Sistemas Operativos, versión 2026.1; El bloque 27 trata Unix/Linux, procesos y administración de sistemas. La utilidad ps se verifica con su descripción de estado de procesos en la interfaz POSIX documentada por Linux man-pages.; https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json; una correspondencia no directa se declara expresamente."
+      },
+      "etiquetas": [
+        "Unix",
+        "Linux",
+        "ps",
+        "procesos",
+        "estado del proceso"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man1/ps.1p.html",
+            "referencia": "Linux man-pages, ps(1p), interfaz POSIX: “ps — report process status”; la utilidad escribe información de los procesos seleccionados. Los campos y opciones concretos varían por sistema e implementación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 27 Sistemas Operativos, versión 2026.1. El bloque 27 trata Unix/Linux, procesos y administración de sistemas. La utilidad ps se verifica con su descripción de estado de procesos en la interfaz POSIX documentada por Linux man-pages."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I, consultada el 30-10-2026; el tema citado se cotejó con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX, consultada el 30-10-2026; para este ítem se registra la correspondencia directa solo si existe, sin asignar un tema A2 por analogía."
+          }
+        ],
+        "observaciones": "La clave original sobre estado de procesos es vigente. Se añade la cautela de portabilidad: el significado general es estable, pero las opciones y columnas no son idénticas en todos los Unix. Cotejo ITIC Academy: El bloque 27 trata Unix/Linux, procesos y administración de sistemas. La utilidad ps se verifica con su descripción de estado de procesos en la interfaz POSIX documentada por Linux man-pages. Correspondencia oficial: A1-60, A2-II-2. El material académico sirve de encuadre, no sustituye la fuente técnica."
+      }
     },
     {
       "id": 3440,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la respuesta incorrecta en relación con el modelo vectorial de representación de datos espaciales",
+      "texto": "Sobre los modelos vectorial y ráster de un SIG, señale la afirmación incorrecta acerca del modelo vectorial.",
       "opciones": [
-        "La información tiene una estructura más eficiente al ocupar menos espacio de almacenamiento que el modelo Raster.",
-        "La elevada variabilidad en los valores a representar puede dificultar su representación y hacerla más ineficiente.",
-        "Permite la importación de archivos otros programas de dibujo vectorial.",
-        "Las relaciones topológicas entre elementos no se gestionan de forma eficiente, especialmente en el caso de redes (p.e. cálculo de rutas)."
+        "Para entidades discretas y dispersas, representar puntos, líneas y polígonos puede ocupar menos espacio que una cuadrícula ráster de alta resolución.",
+        "En una superficie continua con mucha variación espacial, el modelo ráster suele representarla de forma más natural que crear numerosas entidades vectoriales.",
+        "Las geometrías vectoriales pueden intercambiarse entre SIG mediante formatos comunes como GeoPackage, GeoJSON o Shapefile.",
+        "El modelo vectorial no puede gestionar relaciones topológicas ni servir para análisis de conectividad en redes."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se reescriben el enunciado y las opciones para eliminar la generalización de que el vector siempre ocupa menos espacio y la afirmación poco precisa sobre importación desde programas de dibujo. La opción falsa única es que el modelo vectorial no pueda gestionar topología ni soportar redes; QGIS y ArcGIS documentan esas funciones.",
+      "clasificacion": {
+        "A1": [
+          "A1-74"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, Tema 074 — Sistemas de Información Geográfica; El Tema 074 de ITIC Academy trata SIG y el modelo vectorial. El cotejo del programa GSI A2 no halló un epígrafe directo sobre SIG; se mantiene únicamente el tema A1-74 en lugar de forzar una clasificación A2.; https://docs.google.com/document/d/13sxQ3m8eNgg-dLxtbUHY9AzXaEnJtyyN/edit?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json; una correspondencia no directa se declara expresamente."
+      },
+      "etiquetas": [
+        "SIG",
+        "GIS",
+        "modelo vectorial",
+        "puntos",
+        "líneas",
+        "polígonos",
+        "topología",
+        "redes",
+        "raster"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://docs.qgis.org/4.2/en/docs/user_manual/grass_integration/grass_integration.html",
+            "referencia": "Documentación QGIS 4.2, GRASS vector data model: explica datos vectoriales topológicos, límites compartidos, áreas, puntos y líneas."
+          },
+          {
+            "url": "https://docs.qgis.org/3.44/en/docs/gentle_gis_introduction/vector_data.html",
+            "referencia": "QGIS 3.44 Gentle GIS Introduction, Vector Data: las entidades vectoriales se representan mediante geometrías formadas por vértices conectados."
+          },
+          {
+            "url": "https://docs.qgis.org/3.44/en/docs/gentle_gis_introduction/raster_data.html",
+            "referencia": "QGIS 3.44 Gentle GIS Introduction, Raster Data: los ráster son matrices de celdas y son apropiados para fenómenos continuos con variación espacial."
+          },
+          {
+            "url": "https://pro.arcgis.com/en/pro-app/3.4/help/data/topologies/an-overview-of-topology-in-arcgis.htm",
+            "referencia": "ArcGIS Pro 3.4, What is topology?: relaciones topológicas de puntos, líneas y polígonos soportan análisis como adyacencia y navegación por entidades conectadas."
+          },
+          {
+            "url": "https://docs.google.com/document/d/13sxQ3m8eNgg-dLxtbUHY9AzXaEnJtyyN/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, Tema 074 — Sistemas de Información Geográfica. El Tema 074 de ITIC Academy trata SIG y el modelo vectorial. El cotejo del programa GSI A2 no halló un epígrafe directo sobre SIG; se mantiene únicamente el tema A1-74 en lugar de forzar una clasificación A2."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I, consultada el 30-10-2026; el tema citado se cotejó con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX, consultada el 30-10-2026; para este ítem se registra la correspondencia directa solo si existe, sin asignar un tema A2 por analogía."
+          }
+        ],
+        "observaciones": "Se reescriben el enunciado y las opciones para eliminar la generalización de que el vector siempre ocupa menos espacio y la afirmación poco precisa sobre importación desde programas de dibujo. La opción falsa única es que el modelo vectorial no pueda gestionar topología ni soportar redes; QGIS y ArcGIS documentan esas funciones. Cotejo ITIC Academy: El Tema 074 de ITIC Academy trata SIG y el modelo vectorial. El cotejo del programa GSI A2 no halló un epígrafe directo sobre SIG; se mantiene únicamente el tema A1-74 en lugar de forzar una clasificación A2. Correspondencia oficial: A1-74. El material académico sirve de encuadre, no sustituye la fuente técnica."
+      }
     },
     {
       "id": 3441,
