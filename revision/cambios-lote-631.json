@@ -1,0 +1,384 @@
+{
+  "fecha": "2026-10-30",
+  "alcance": "IDs 3471–3475; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3471,
+      "original": {
+        "id": 3471,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El subconjunto de datos de un Almacén de Datos se denomina:",
+        "opciones": [
+          "Data Warehouse.",
+          "OLAP.",
+          "Data Mart.",
+          "Data Mining."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3471,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En inteligencia de negocio, ¿qué describe mejor un data mart?",
+        "opciones": [
+          "Un repositorio transaccional que conserva todos los datos operativos sin atender a un área concreta.",
+          "Un subconjunto físico que necesariamente se obtiene de un único almacén de datos corporativo.",
+          "Un almacén analítico de alcance limitado, enfocado en un departamento o línea de negocio, que puede ser dependiente o independiente.",
+          "Un algoritmo de minería que descubre patrones en datos históricos."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se conserva Data Mart como respuesta, pero el enunciado deja de describirlo como necesariamente un subconjunto de un almacén central y explicita los tipos dependiente e independiente.",
+        "clasificacion": {
+          "A1": [
+            "A1-75"
+          ],
+          "A2": [
+            "A2-II-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026; El bloque 34 cubre almacenes de datos, BI y el programa A2 de OLTP/OLAP. La distinción entre data marts dependientes e independientes se comprueba en Oracle Database Data Warehousing Guide.; https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se usa como encuadre, no como sustituto de la evidencia técnica primaria."
+        },
+        "etiquetas": [
+          "data mart",
+          "almacén de datos departamental",
+          "inteligencia de negocio",
+          "dependent data mart",
+          "independent data mart"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/18/dwhsg/introduction-data-warehouse-concepts.html",
+              "referencia": "Oracle Database Data Warehousing Guide: un data mart limita intencionadamente su alcance a un departamento o línea de negocio; puede alimentarse de un warehouse existente (dependiente) o directamente de las fuentes (independiente)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026. El bloque 34 cubre almacenes de datos, BI y el programa A2 de OLTP/OLAP. La distinción entre data marts dependientes e independientes se comprueba en Oracle Database Data Warehousing Guide."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se conserva Data Mart como respuesta, pero el enunciado deja de describirlo como necesariamente un subconjunto de un almacén central y explicita los tipos dependiente e independiente. Cotejo ITIC Academy: El bloque 34 cubre almacenes de datos, BI y el programa A2 de OLTP/OLAP. La distinción entre data marts dependientes e independientes se comprueba en Oracle Database Data Warehousing Guide. Correspondencia oficial: A1-75, A2-II-4."
+        }
+      }
+    },
+    {
+      "id": 3472,
+      "original": {
+        "id": 3472,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si exportamos un certificado incluyendo su clave privada desde el navegador MS Edge, ¿qué extensión tendrá el fichero resultante?",
+        "opciones": [
+          ".p12",
+          ".cer",
+          ".jks",
+          ".pfx"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3472,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el Asistente para exportación de certificados de Windows, ¿qué formato se selecciona para exportar un certificado junto con su clave privada?",
+        "opciones": [
+          "PKCS #12 (.PFX).",
+          "Certificado X.509 codificado como .CER, sin la clave privada.",
+          "Java KeyStore (.JKS).",
+          "Privacy-Enhanced Mail (.PEM), formato textual que el asistente no presenta como la opción de exportación PKCS #12."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se elimina la referencia imprecisa a exportar desde Edge y se especifica el asistente de Windows. Se cambia el distractor .p12, que también es una extensión válida de PKCS #12, por .pem para que haya una sola opción que corresponda al formato/extension shown by wizard.",
+        "clasificacion": {
+          "A1": [
+            "A1-80"
+          ],
+          "A2": [
+            "A2-I-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026; El bloque 36 aborda certificados, claves y formatos de intercambio. El formato exacto ofrecido por el asistente de exportación de Windows se confirma en Microsoft Learn; el temario académico no se utiliza como evidencia de la extensión.; https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se usa como encuadre, no como sustituto de la evidencia técnica primaria."
+        },
+        "etiquetas": [
+          "certificados digitales",
+          "exportación de clave privada",
+          "PKCS#12",
+          "PFX",
+          "Windows"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/export-certificate-private-key",
+              "referencia": "Microsoft Learn, Export a certificate with its private key: el Certificate Export Wizard ofrece Personal Information Exchange - PKCS #12 (.PFX) cuando se exporta la clave privada."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.x509certificates.x509contenttype?view=net-10.0",
+              "referencia": "Microsoft Learn, X509ContentType: Pfx y Pkcs12 representan el mismo tipo de contenido; por ello .p12 y .pfx pueden nombrar contenedores PKCS #12 y no deben presentarse como formatos incompatibles."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026. El bloque 36 aborda certificados, claves y formatos de intercambio. El formato exacto ofrecido por el asistente de exportación de Windows se confirma en Microsoft Learn; el temario académico no se utiliza como evidencia de la extensión."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se elimina la referencia imprecisa a exportar desde Edge y se especifica el asistente de Windows. Se cambia el distractor .p12, que también es una extensión válida de PKCS #12, por .pem para que haya una sola opción que corresponda al formato/extension shown by wizard. Cotejo ITIC Academy: El bloque 36 aborda certificados, claves y formatos de intercambio. El formato exacto ofrecido por el asistente de exportación de Windows se confirma en Microsoft Learn; el temario académico no se utiliza como evidencia de la extensión. Correspondencia oficial: A1-80, A2-I-6."
+        }
+      }
+    },
+    {
+      "id": 3473,
+      "original": {
+        "id": 3473,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La operación de JOIN:",
+        "opciones": [
+          "Hace únicamente el producto cartesiano.",
+          "Realiza el producto cartesiano y elimina aquellas tuplas que tienen el mismo valor en los atributos comunes.",
+          "Realiza el producto cartesiano y elimina aquellas tuplas que no tienen el mismo valor en los atributos comunes.",
+          "Elimina los atributos que no están repetidos."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3473,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En SQL, ¿cómo se comporta un INNER JOIN con una condición de unión?",
+        "opciones": [
+          "Devuelve siempre todas las combinaciones del producto cartesiano, aunque la condición sea falsa.",
+          "Compara automáticamente todas las columnas que tengan el mismo nombre, como hace NATURAL JOIN.",
+          "Combina las filas de ambas entradas y conserva las combinaciones que satisfacen la condición de unión.",
+          "Elimina del resultado las columnas que no estén repetidas en ambas tablas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se reemplaza la definición genérica y falsa de JOIN por una pregunta sobre INNER JOIN con condición. Se distinguen USING/NATURAL y las uniones externas para evitar atribuir a todo JOIN la comparación automática de columnas comunes.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-III-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026; El bloque 29 desarrolla el modelo relacional y SQL; la semántica de INNER JOIN, condiciones, USING/NATURAL y outer joins se coteja con la documentación actual de PostgreSQL.; https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se usa como encuadre, no como sustituto de la evidencia técnica primaria."
+        },
+        "etiquetas": [
+          "SQL",
+          "JOIN",
+          "producto cartesiano",
+          "condición de unión",
+          "INNER JOIN",
+          "outer join"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.postgresql.org/docs/current/sql-select.html",
+              "referencia": "PostgreSQL 18, SELECT: un INNER JOIN produce un producto cartesiano restringido por la condición; USING equivale a igualdades entre columnas nombradas y NATURAL usa columnas comunes. Los outer joins pueden añadir filas no emparejadas."
+            },
+            {
+              "url": "https://www.postgresql.org/docs/current/queries-table-expressions.html",
+              "referencia": "PostgreSQL 18, Table Expressions: define JOIN como una tabla derivada de dos entradas según el tipo de unión y la condición especificada; un CROSS JOIN conserva todas las combinaciones."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026. El bloque 29 desarrolla el modelo relacional y SQL; la semántica de INNER JOIN, condiciones, USING/NATURAL y outer joins se coteja con la documentación actual de PostgreSQL."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se reemplaza la definición genérica y falsa de JOIN por una pregunta sobre INNER JOIN con condición. Se distinguen USING/NATURAL y las uniones externas para evitar atribuir a todo JOIN la comparación automática de columnas comunes. Cotejo ITIC Academy: El bloque 29 desarrolla el modelo relacional y SQL; la semántica de INNER JOIN, condiciones, USING/NATURAL y outer joins se coteja con la documentación actual de PostgreSQL. Correspondencia oficial: A1-64, A2-III-4."
+        }
+      }
+    },
+    {
+      "id": 3474,
+      "original": {
+        "id": 3474,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El protocolo SSL v3:",
+        "opciones": [
+          "Trabaja tanto sobre TCP como sobre UDP",
+          "Hasta hace pocos años los navegadores que incorporaban TLS/SSL tenían su exportación desde EEUU limitada a claves de 128 bits",
+          "Es idéntico al protocolo TLS, aunque este último está normalizado por el IETF mediante un RFC",
+          "Intercambia las claves secretas mediante el ensobrado digital (digital envelopment) o mediante Diffie-Hellman"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3474,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la especificación histórica de SSL 3.0, ¿qué mecanismos de establecimiento del secreto previo podían emplearse según el conjunto de cifrado?",
+        "opciones": [
+          "Únicamente Diffie-Hellman anónimo, sin posibilidad de autenticación.",
+          "Transporte del secreto previo cifrado con RSA o acuerdo Diffie-Hellman, según el conjunto negociado.",
+          "Cifrado del secreto previo mediante el algoritmo hash SHA-1.",
+          "Transporte por UDP como condición para acordar claves."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se reemplazan las afirmaciones históricas de exportación criptográfica y el distractor ambiguo de “digital envelopment” por una formulación precisa de intercambio de claves. Se añade la advertencia de obsolescencia y prohibición normativa de uso de SSLv3.",
+        "clasificacion": {
+          "A1": [
+            "A1-125"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, actualización 2026; El bloque 48 desarrolla seguridad en redes, protocolos seguros y criptografía. La descripción de SSLv3 se toma de RFC 6101, y la prohibición de uso de SSLv3 de RFC 7568.; https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5Z2N-W5oh82/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se usa como encuadre, no como sustituto de la evidencia técnica primaria."
+        },
+        "etiquetas": [
+          "SSL 3.0",
+          "SSLv3",
+          "TLS",
+          "RSA",
+          "Diffie-Hellman",
+          "protocolo obsoleto"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc6101.html",
+              "referencia": "IETF RFC 6101, The SSL Protocol Version 3.0: describe el transporte RSA cifrado de un premaster secret y el acuerdo Diffie-Hellman, según el algoritmo de intercambio de claves del conjunto negociado."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc7568.html",
+              "referencia": "IETF RFC 7568, Deprecating Secure Sockets Layer Version 3.0: establece que SSLv3 MUST NOT be used y prohíbe negociar esta versión."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, actualización 2026. El bloque 48 desarrolla seguridad en redes, protocolos seguros y criptografía. La descripción de SSLv3 se toma de RFC 6101, y la prohibición de uso de SSLv3 de RFC 7568."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se reemplazan las afirmaciones históricas de exportación criptográfica y el distractor ambiguo de “digital envelopment” por una formulación precisa de intercambio de claves. Se añade la advertencia de obsolescencia y prohibición normativa de uso de SSLv3. Cotejo ITIC Academy: El bloque 48 desarrolla seguridad en redes, protocolos seguros y criptografía. La descripción de SSLv3 se toma de RFC 6101, y la prohibición de uso de SSLv3 de RFC 7568. Correspondencia oficial: A1-125, A2-IV-12."
+        }
+      }
+    },
+    {
+      "id": 3475,
+      "original": {
+        "id": 3475,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El software MongoDB:",
+        "opciones": [
+          "Almacena información mediante documentos.",
+          "Almacena información mediante grafos.",
+          "Almacena información como pares clave-valor",
+          "Almacena información en tablas usando filas y columnas."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3475,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es el modelo básico de almacenamiento de MongoDB?",
+        "opciones": [
+          "Documentos BSON agrupados en colecciones.",
+          "Grafos de propiedades como modelo de almacenamiento único.",
+          "Pares clave-valor sin estructura documental.",
+          "Tablas relacionales con filas y columnas como modelo nativo."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se conserva documentos como respuesta correcta y se precisa que MongoDB almacena documentos BSON en colecciones. Los distractores se concretan para no confundir el modelo documental con otros modelos NoSQL ni con tablas relacionales.",
+        "clasificacion": {
+          "A1": [
+            "A1-63"
+          ],
+          "A2": [
+            "A2-III-15"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026; El bloque 29 incluye familias de bases de datos NoSQL y caracteriza MongoDB como documental; el bloque A2-D15 de Big Data abarca expresamente bases NoSQL. La definición del formato BSON y del almacenamiento en colecciones se verifica en el manual oficial de MongoDB.; https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json; el material académico se usa como encuadre, no como sustituto de la evidencia técnica primaria."
+        },
+        "etiquetas": [
+          "MongoDB",
+          "NoSQL",
+          "base de datos documental",
+          "BSON",
+          "colecciones"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.mongodb.com/docs/manual/core/document/",
+              "referencia": "MongoDB Manual, Documents: los registros se almacenan como documentos BSON compuestos por pares campo-valor; un documento es la unidad básica de datos y se guarda en una colección."
+            },
+            {
+              "url": "https://www.mongodb.com/docs/manual/faq/fundamentals/",
+              "referencia": "MongoDB Manual, FAQ Fundamentals: las colecciones contienen documentos BSON, que pueden incluir datos embebidos y arrays."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026. El bloque 29 incluye familias de bases de datos NoSQL y caracteriza MongoDB como documental; el bloque A2-D15 de Big Data abarca expresamente bases NoSQL. La definición del formato BSON y del almacenamiento en colecciones se verifica en el manual oficial de MongoDB."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; correspondencia contrastada con revision/temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; correspondencia contrastada con revision/temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se conserva documentos como respuesta correcta y se precisa que MongoDB almacena documentos BSON en colecciones. Los distractores se concretan para no confundir el modelo documental con otros modelos NoSQL ni con tablas relacionales. Cotejo ITIC Academy: El bloque 29 incluye familias de bases de datos NoSQL y caracteriza MongoDB como documental; el bloque A2-D15 de Big Data abarca expresamente bases NoSQL. La definición del formato BSON y del almacenamiento en colecciones se verifica en el manual oficial de MongoDB. Correspondencia oficial: A1-63, A2-III-15."
+        }
+      }
+    }
+  ]
+}

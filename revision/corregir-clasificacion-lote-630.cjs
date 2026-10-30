@@ -1,0 +1,17 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const root = path.join(__dirname, '..');
+const bankPath = path.join(root, 'preguntas_preparatic.json');
+const logPath = path.join(__dirname, 'cambios-lote-630.json');
+const bank = JSON.parse(fs.readFileSync(bankPath, 'utf8'));
+const log = JSON.parse(fs.readFileSync(logPath, 'utf8'));
+const q = bank.preguntas.find(x => x.id === 3468);
+const change = log.cambios.find(x => x.id === 3468);
+if (!q || !change || q.clasificacion.A1.includes('A1-104')) throw new Error('Estado de 3468 inesperado; no se aplica corrección');
+q.clasificacion.A1 = ['A1-104'];
+q.clasificacion.nota = 'Correspondencia cotejada con los programas A1/A2 publicados en BOE y revision/temario-oficial.json. La WAPI se vincula al tema A1-104 por su relación con gestión documental/de contenidos y al A2-II-16, que menciona expresamente flujos de trabajo; el material académico solo aporta contexto.';
+q.revision.observaciones = q.revision.observaciones.replace('A1-103, A2-II-16', 'A1-104, A2-II-16');
+change.actualizada = structuredClone(q);
+fs.writeFileSync(bankPath, JSON.stringify(bank, null, 2) + '\n');
+fs.writeFileSync(logPath, JSON.stringify(log, null, 2) + '\n');
+console.log('Corregido cotejo oficial de 3468: A1-104 es Gestión documental; A1-103 es Calidad de servicios.');
