@@ -166288,71 +166288,323 @@
       "id": 3426,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los denominados cortafuegos o firewalls de filtrado de paquetes, se caracterizan porque:",
+      "texto": "En un cortafuegos básico de filtrado de paquetes (sin inspección profunda de aplicación), ¿en qué se basan principalmente sus reglas?",
       "opciones": [
-        "Analizan únicamente la información incluida en la cabecera TCP/IP de cada paquete.",
+        "En campos de cabecera como direcciones IP, protocolo y, cuando procede, puertos de transporte; no en el contenido de aplicación.",
         "Analizan la carga útil de datos de cada paquete.",
         "Autentifican los usuarios que acceden a la red.",
         "No permiten filtrar paquetes en función del puerto destino de la comunicación saliente."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se delimita a filtrado básico de paquetes, no inspección profunda/aplicativa: las reglas pueden usar direcciones IP, protocolo y puertos TCP/UDP. No inspecciona el contenido de aplicación ni autentica por sí mismo a cada usuario.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1; El bloque 48 trata seguridad perimetral y cortafuegos. Su clasificación incluye el epígrafe de redes de los programas oficiales; el criterio de cabecera frente a carga útil se verificó con NIST.; https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "cortafuegos",
+        "firewall",
+        "filtrado de paquetes",
+        "cabecera IP",
+        "puertos",
+        "carga útil"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-41r1.pdf",
+            "referencia": "NIST SP 800-41 Rev. 1, §2.1.1: el filtrado básico decide con información de cabeceras de red/transporte (direcciones, protocolo y puertos); no inspecciona el contenido como los filtros de aplicación. NIST también distingue funciones de autenticación de usuario en firewalls de capas superiores."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1. El bloque 48 trata seguridad perimetral y cortafuegos. Su clasificación incluye el epígrafe de redes de los programas oficiales; el criterio de cabecera frente a carga útil se verificó con NIST."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatorias vigentes consultadas en BOE el 30-10-2026: programa A1 del anexo I (BOE-A-2025-25938) y programa A2 GSI del anexo IX (BOE-A-2025-26262); el epígrafe se coteja con revision/temario-oficial.json. La página consolidada no mostraba una rectificación posterior de estos programas en la fecha de consulta."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatorias vigentes consultadas en BOE el 30-10-2026: programa A1 del anexo I (BOE-A-2025-25938) y programa A2 GSI del anexo IX (BOE-A-2025-26262); el epígrafe se coteja con revision/temario-oficial.json. La página consolidada no mostraba una rectificación posterior de estos programas en la fecha de consulta."
+          }
+        ],
+        "observaciones": "Se delimita a filtrado básico de paquetes, no inspección profunda/aplicativa: las reglas pueden usar direcciones IP, protocolo y puertos TCP/UDP. No inspecciona el contenido de aplicación ni autentica por sí mismo a cada usuario. Cotejo curricular ITIC Academy: El bloque 48 trata seguridad perimetral y cortafuegos. Su clasificación incluye el epígrafe de redes de los programas oficiales; el criterio de cabecera frente a carga útil se verificó con NIST. Correspondencia: A1-125; A2-IV-12. La academia sirve de encuadre curricular, no sustituye la evidencia normativa/técnica."
+      }
     },
     {
       "id": 3427,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si queremos configurar un servidor web Apache para permitir únicamente tráfico TLSv1.2, indique la directiva donde se realiza dicha configuración:",
+      "texto": "En Apache HTTP Server 2.4 con mod_ssl, ¿qué directiva controla las versiones TLS aceptadas por el servidor?",
       "opciones": [
         "SSLCipherSuite",
-        "SSLProtocol",
+        "SSLProtocol (por ejemplo, SSLProtocol TLSv1.2 para permitir solo esa versión).",
         "TLSRequire",
         "TLSProtocol"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "En Apache HTTP Server 2.4 con mod_ssl, la directiva SSLProtocol gobierna las versiones de protocolo aceptadas. Para admitir exclusivamente TLS 1.2 se configura, en el contexto adecuado, SSLProtocol TLSv1.2; SSLCipherSuite selecciona suites, no versiones TLS.",
+      "clasificacion": {
+        "A1": [
+          "A1-126"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1; El bloque 48 actualiza TLS y protección de servicios web. La búsqueda en Drive no localizó una explicación específica de la directiva Apache SSLProtocol; el dato de sintaxis se verificó en la documentación oficial de Apache.; https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "Apache HTTP Server",
+        "mod_ssl",
+        "TLS",
+        "SSLProtocol",
+        "TLSv1.2",
+        "configuración segura"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://httpd.apache.org/docs/2.4/mod/mod_ssl.html",
+            "referencia": "Apache HTTP Server 2.4, documentación oficial de mod_ssl: SSLProtocol configura las versiones TLS/SSL aceptadas; SSLCipherSuite selecciona suites criptográficas y no las versiones de protocolo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1. El bloque 48 actualiza TLS y protección de servicios web. La búsqueda en Drive no localizó una explicación específica de la directiva Apache SSLProtocol; el dato de sintaxis se verificó en la documentación oficial de Apache."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatorias vigentes consultadas en BOE el 30-10-2026: programa A1 del anexo I (BOE-A-2025-25938) y programa A2 GSI del anexo IX (BOE-A-2025-26262); el epígrafe se coteja con revision/temario-oficial.json. La página consolidada no mostraba una rectificación posterior de estos programas en la fecha de consulta."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatorias vigentes consultadas en BOE el 30-10-2026: programa A1 del anexo I (BOE-A-2025-25938) y programa A2 GSI del anexo IX (BOE-A-2025-26262); el epígrafe se coteja con revision/temario-oficial.json. La página consolidada no mostraba una rectificación posterior de estos programas en la fecha de consulta."
+          }
+        ],
+        "observaciones": "En Apache HTTP Server 2.4 con mod_ssl, la directiva SSLProtocol gobierna las versiones de protocolo aceptadas. Para admitir exclusivamente TLS 1.2 se configura, en el contexto adecuado, SSLProtocol TLSv1.2; SSLCipherSuite selecciona suites, no versiones TLS. Cotejo curricular ITIC Academy: El bloque 48 actualiza TLS y protección de servicios web. La búsqueda en Drive no localizó una explicación específica de la directiva Apache SSLProtocol; el dato de sintaxis se verificó en la documentación oficial de Apache. Correspondencia: A1-126; A2-III-12. La academia sirve de encuadre curricular, no sustituye la evidencia normativa/técnica."
+      }
     },
     {
       "id": 3428,
       "bloque": 0,
       "tema": 0,
-      "texto": "De IPSec, una de las siguientes afirmaciones no es cierta. Indicar cuál:",
+      "texto": "¿Qué afirmación NO es correcta sobre los protocolos y modos de IPsec?",
       "opciones": [
-        "Para transmitir IPSec, tanto en modo transporte como en modo túnel se ha de incluir una cabecera justo delante de la cabecera IP original y una cola detrás de los datos",
+        "En cualquier modo IPsec se añaden siempre conjuntamente una cabecera AH y un tráiler ESP.",
         "En modo transporte, IPSec se tiene entre los sistemas finales, mientras en modo túnel se tiene IPSec entre routers pero IP en los tramos routers-sistemas finales",
         "El protocolo por defecto para la gestión de claves en IPSec se denomina IKE (Internet Key Exchange)",
         "Entre otros, IPSec proporciona mecanismos anti-replay, autenticación, control de acceso y confidencialidad de datos"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se sustituye la descripción defectuosa de “cabecera y cola” por la distinción de protocolos: IPsec puede usar AH, ESP o combinaciones permitidas por política; ambos tienen formatos distintos y pueden aplicarse en modo transporte o túnel. AH no incluye el tráiler ESP. IKEv2 gestiona asociaciones de seguridad y claves.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1; El bloque 48 incluye un apartado explícito de IPsec y túneles. Los formatos AH/ESP y sus modos se contrastaron directamente con RFC 4301, 4302 y 4303.; https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "IPsec",
+        "AH",
+        "ESP",
+        "modo transporte",
+        "modo túnel",
+        "IKE",
+        "anti-replay"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4301.html",
+            "referencia": "IETF RFC 4301, arquitectura IPsec: AH y ESP son protocolos alternativos o combinables; cada uno puede operar en transporte o túnel."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4302.html",
+            "referencia": "IETF RFC 4302: formato y colocación de Authentication Header (AH), sin tráiler ESP."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4303.html",
+            "referencia": "IETF RFC 4303: Encapsulating Security Payload (ESP) y su tráiler; no se añade como cola universal a todo uso de IPsec."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc7296.html",
+            "referencia": "IETF RFC 7296: IKEv2 para establecimiento y gestión de asociaciones de seguridad y claves IPsec."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 48 Seguridad en redes y nivel de aplicación, versión 2026.1. El bloque 48 incluye un apartado explícito de IPsec y túneles. Los formatos AH/ESP y sus modos se contrastaron directamente con RFC 4301, 4302 y 4303."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatorias vigentes consultadas en BOE el 30-10-2026: programa A1 del anexo I (BOE-A-2025-25938) y programa A2 GSI del anexo IX (BOE-A-2025-26262); el epígrafe se coteja con revision/temario-oficial.json. La página consolidada no mostraba una rectificación posterior de estos programas en la fecha de consulta."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatorias vigentes consultadas en BOE el 30-10-2026: programa A1 del anexo I (BOE-A-2025-25938) y programa A2 GSI del anexo IX (BOE-A-2025-26262); el epígrafe se coteja con revision/temario-oficial.json. La página consolidada no mostraba una rectificación posterior de estos programas en la fecha de consulta."
+          }
+        ],
+        "observaciones": "Se sustituye la descripción defectuosa de “cabecera y cola” por la distinción de protocolos: IPsec puede usar AH, ESP o combinaciones permitidas por política; ambos tienen formatos distintos y pueden aplicarse en modo transporte o túnel. AH no incluye el tráiler ESP. IKEv2 gestiona asociaciones de seguridad y claves. Cotejo curricular ITIC Academy: El bloque 48 incluye un apartado explícito de IPsec y túneles. Los formatos AH/ESP y sus modos se contrastaron directamente con RFC 4301, 4302 y 4303. Correspondencia: A1-125; A2-IV-12. La academia sirve de encuadre curricular, no sustituye la evidencia normativa/técnica."
+      }
     },
     {
       "id": 3429,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes métodos SIP se emplea para establecer una sesión entre UAs y contiene las informaciones sobre el que genera la llamada y el destinatario así como sobre el tipo de flujos que serán intercambiados (voz, video,...)?",
+      "texto": "¿Qué método SIP inicia la invitación a establecer una sesión y puede transportar en su cuerpo una oferta SDP con los flujos multimedia propuestos?",
       "opciones": [
         "UPDATE",
         "REGISTER",
-        "INVITE",
+        "INVITE.",
         "CONNECT"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se pregunta por el método SIP que inicia la invitación a una sesión y puede transportar una oferta SDP con los medios propuestos. INVITE es la respuesta. Se evita afirmar que todo INVITE contiene obligatoriamente la descripción SDP: las reglas de oferta/respuesta permiten otros intercambios.",
+      "clasificacion": {
+        "A1": [
+          "A1-116"
+        ],
+        "A2": [
+          "A2-IV-14"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 43 Protocolos, versión 2026.1; Los bloques 43 y 50 incluyen señalización, VoIP y protocolos de videoconferencia/comunicaciones unificadas; el intercambio INVITE y la oferta SDP se verificaron con RFC 3261, 3264 y 8866.; https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk | ITIC Academy, Bloque 50 Videoconferencia, SSO y trabajo colaborativo, versión 2026.1; Los bloques 43 y 50 incluyen señalización, VoIP y protocolos de videoconferencia/comunicaciones unificadas; el intercambio INVITE y la oferta SDP se verificaron con RFC 3261, 3264 y 8866.; https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "SIP",
+        "INVITE",
+        "UA",
+        "SDP",
+        "sesión multimedia",
+        "señalización VoIP"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3261.html",
+            "referencia": "IETF RFC 3261, §§8.1.1.1 y 13: INVITE inicia una sesión/invitación; el intercambio de oferta-respuesta puede llevar SDP en el cuerpo."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3264.html",
+            "referencia": "IETF RFC 3264, modelo oferta/respuesta SDP para negociar flujos multimedia."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8866.html",
+            "referencia": "IETF RFC 8866, formato vigente de SDP, utilizado para describir sesiones multimedia."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 43 Protocolos, versión 2026.1. Los bloques 43 y 50 incluyen señalización, VoIP y protocolos de videoconferencia/comunicaciones unificadas; el intercambio INVITE y la oferta SDP se verificaron con RFC 3261, 3264 y 8866."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 50 Videoconferencia, SSO y trabajo colaborativo, versión 2026.1. Los bloques 43 y 50 incluyen señalización, VoIP y protocolos de videoconferencia/comunicaciones unificadas; el intercambio INVITE y la oferta SDP se verificaron con RFC 3261, 3264 y 8866."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatorias vigentes consultadas en BOE el 30-10-2026: programa A1 del anexo I (BOE-A-2025-25938) y programa A2 GSI del anexo IX (BOE-A-2025-26262); el epígrafe se coteja con revision/temario-oficial.json. La página consolidada no mostraba una rectificación posterior de estos programas en la fecha de consulta."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatorias vigentes consultadas en BOE el 30-10-2026: programa A1 del anexo I (BOE-A-2025-25938) y programa A2 GSI del anexo IX (BOE-A-2025-26262); el epígrafe se coteja con revision/temario-oficial.json. La página consolidada no mostraba una rectificación posterior de estos programas en la fecha de consulta."
+          }
+        ],
+        "observaciones": "Se pregunta por el método SIP que inicia la invitación a una sesión y puede transportar una oferta SDP con los medios propuestos. INVITE es la respuesta. Se evita afirmar que todo INVITE contiene obligatoriamente la descripción SDP: las reglas de oferta/respuesta permiten otros intercambios. Cotejo curricular ITIC Academy: Los bloques 43 y 50 incluyen señalización, VoIP y protocolos de videoconferencia/comunicaciones unificadas; el intercambio INVITE y la oferta SDP se verificaron con RFC 3261, 3264 y 8866. Correspondencia: A1-116; A2-IV-14. La academia sirve de encuadre curricular, no sustituye la evidencia normativa/técnica."
+      }
     },
     {
       "id": 3430,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué factor afecta a la calidad de servicio en internet?",
+      "texto": "En una comunicación de voz sobre IP, ¿qué factores pueden degradar la calidad percibida por los usuarios?",
       "opciones": [
         "Ancho de banda",
         "Jitter o variación de retardo",
         "Eco",
-        "Todas las respuestas anteriores son correctas"
+        "Todas las respuestas anteriores: ancho de banda insuficiente, jitter y eco."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se conserva “todas las anteriores” pero el enunciado delimita la calidad percibida de voz sobre IP. El ancho de banda disponible puede limitar códecs/flujo; el jitter altera la llegada de paquetes y el eco degrada la conversación. Son factores de calidad del servicio de voz, aunque no todos sean métricas de rendimiento de red en sentido estricto.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-130"
+        ],
+        "A2": [
+          "A2-IV-16"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 Redes, versión 2026.1; Los bloques 42 y 50 cubren QoS en redes y comunicaciones de voz/videoconferencia. La pregunta se circunscribe a calidad percibida de voz IP; latencia/jitter y eco se comprobaron con recomendaciones UIT-T vigentes.; https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk | ITIC Academy, Bloque 50 Videoconferencia, SSO y trabajo colaborativo, versión 2026.1; Los bloques 42 y 50 cubren QoS en redes y comunicaciones de voz/videoconferencia. La pregunta se circunscribe a calidad percibida de voz IP; latencia/jitter y eco se comprobaron con recomendaciones UIT-T vigentes.; https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "calidad de servicio",
+        "VoIP",
+        "ancho de banda",
+        "jitter",
+        "variación del retardo",
+        "eco"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/itu-t/recommendations/rec.aspx?rec=6254",
+            "referencia": "UIT-T G.114 (05/2003), vigente: efecto del retardo extremo a extremo en la calidad de la conversación de voz."
+          },
+          {
+            "url": "https://www.itu.int/dms_pubrec/itu-t/rec/g/T-REC-G.1020-200311-S%21%21SUM-HTM-E.htm",
+            "referencia": "UIT-T G.1020: parámetros de rendimiento y degradaciones de calidad de voz en redes IP, incluida variación del retardo y pérdida de paquetes."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.131-200311-I/en",
+            "referencia": "UIT-T G.131, vigente: efecto y control del eco del hablante en la calidad global de la transmisión de voz."
+          },
+          {
+            "url": "https://www.itu.int/epublications/publication/itu-t-p-940-2025-03-computational-model-used-for-the-monitoring-and-quality-assessment-of-videotelephony-services",
+            "referencia": "UIT-T P.940 (03/2025): evaluación de videotelefonía IP e impacto de variación de retardo/jitter y tratamiento en terminales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 42 Redes, versión 2026.1. Los bloques 42 y 50 cubren QoS en redes y comunicaciones de voz/videoconferencia. La pregunta se circunscribe a calidad percibida de voz IP; latencia/jitter y eco se comprobaron con recomendaciones UIT-T vigentes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 50 Videoconferencia, SSO y trabajo colaborativo, versión 2026.1. Los bloques 42 y 50 cubren QoS en redes y comunicaciones de voz/videoconferencia. La pregunta se circunscribe a calidad percibida de voz IP; latencia/jitter y eco se comprobaron con recomendaciones UIT-T vigentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatorias vigentes consultadas en BOE el 30-10-2026: programa A1 del anexo I (BOE-A-2025-25938) y programa A2 GSI del anexo IX (BOE-A-2025-26262); el epígrafe se coteja con revision/temario-oficial.json. La página consolidada no mostraba una rectificación posterior de estos programas en la fecha de consulta."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatorias vigentes consultadas en BOE el 30-10-2026: programa A1 del anexo I (BOE-A-2025-25938) y programa A2 GSI del anexo IX (BOE-A-2025-26262); el epígrafe se coteja con revision/temario-oficial.json. La página consolidada no mostraba una rectificación posterior de estos programas en la fecha de consulta."
+          }
+        ],
+        "observaciones": "Se conserva “todas las anteriores” pero el enunciado delimita la calidad percibida de voz sobre IP. El ancho de banda disponible puede limitar códecs/flujo; el jitter altera la llegada de paquetes y el eco degrada la conversación. Son factores de calidad del servicio de voz, aunque no todos sean métricas de rendimiento de red en sentido estricto. Cotejo curricular ITIC Academy: Los bloques 42 y 50 cubren QoS en redes y comunicaciones de voz/videoconferencia. La pregunta se circunscribe a calidad percibida de voz IP; latencia/jitter y eco se comprobaron con recomendaciones UIT-T vigentes. Correspondencia: A1-108, A1-130; A2-IV-16. La academia sirve de encuadre curricular, no sustituye la evidencia normativa/técnica."
+      }
     },
     {
       "id": 3431,
