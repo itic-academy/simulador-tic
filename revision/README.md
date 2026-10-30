@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 612 (IDs 3376–3380). Acumulado: 3380 preguntas examinadas individualmente, 3303 verificadas (684 vigentes, 2368 corregidas y 251 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8743 sin revisar individualmente. Hay 2715 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 613 (IDs 3381–3385). Acumulado: 3385 preguntas examinadas individualmente, 3308 verificadas (684 vigentes, 2373 corregidas y 251 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8738 sin revisar individualmente. Hay 2720 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 613 — 30 de octubre
+
+IDs 3381–3385 revisados individualmente; se conservan los originales en [cambios-lote-613.json](cambios-lote-613.json). Se sustituyó el supuesto comando REMOVE por REVOKE; se evitó clasificar iBATIS como ORM pleno al preguntar por Codd; se verificó la sintaxis JSP vigente; se corrigió la cronología de KDE Plasma y se precisó la compatibilidad condicional de MPL 2.0.
+- **3381 — privilegios SQL:** REVOKE retira privilegios concedidos; REMOVE no es el comando SQL correspondiente. **Corregida.** A1-64; A2-II-5.
+- **3382 — ORM y Codd:** iBATIS/MyBatis se describe con mayor precisión como framework de persistencia/data mapper; Hibernate y EclipseLink son ORM; Edgar F. Codd es una persona, no una herramienta. **Corregida.** A1-64/A1-65; A2-II-5/A2-III-10.
+- **3383 — JSP scriptlet:** la especificación Jakarta Pages 3.1 conserva los delimitadores <% y %> para fragmentos de Java. **Vigente.** A1-65; A2-III-10/A2-III-12.
+- **3384 — KDE Plasma:** los Plasmoids debutaron con Plasma en KDE 4.0; las opciones originales 5.3 y 5.5 eran ambas incorrectas. **Corregida.** A1-59; A2-II-2.
+- **3385 — MPL 2.0 y GPL:** la sección 3.3 contempla combinación con una obra mayor bajo una licencia GNU secundaria si el software no se marca como incompatible; no es compatibilidad incondicional. **Corregida.** A1-69; A2-II-14.
+
+Fuentes primarias: [PostgreSQL, REVOKE](https://www.postgresql.org/docs/current/sql-revoke.html); [Jakarta Server Pages 3.1, secciones 1.12.2 y 9](https://jakarta.ee/specifications/pages/3.1/jakarta-server-pages-spec-3.1.pdf); [KDE Community, anuncio KDE 4.0](https://blogs.kde.org/2008/01/12/kde-4-100-release/) y [retrospectiva KDE 4](https://kde.org/anniversaries/30/); [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/) y [FAQ MPL](https://www.mozilla.org/en-US/MPL/2.0/FAQ/); [FSF, licencias compatibles y excepciones](https://www.gnu.org/licenses/license-list.html); [Hibernate ORM](https://hibernate.org/orm/), [MyBatis](https://mybatis.org/mybatis-3/index.html) e [IBM, Edgar F. Codd](https://www.ibm.com/history/edgar-codd).
+
+Cotejo curricular: ITIC Academy [bloque 29 de bases de datos y SQL, versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk); [bloque 30 de tecnologías de sistemas de información/Jakarta EE, versión 2026.1](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk); [bloque 47 de sistemas operativos, versión 2026.1](https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk); [bloque 18 de protección jurídica, licencias y control del software, versión 2026.1](https://drive.google.com/file/d/1Og6yI-YaZ48UA3pBT-HQhTh7TfvdPW_C/view?usp=drivesdk). Los documentos de academia respaldan el encaje curricular; la respuesta y las excepciones legales se basan en fuentes técnicas primarias. Clasificación cotejada con [programa A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [programa A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y revision/temario-oficial.json.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check; la verificación estructural no sustituye la revisión de contenido.
 
 ## Lote 612 — 30 de octubre
 

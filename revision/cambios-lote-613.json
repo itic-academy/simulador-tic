@@ -1,0 +1,332 @@
+{
+  "fecha": "2026-10-30",
+  "alcance": "IDs 3381–3385; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3381,
+      "original": {
+        "id": 3381,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el contexto del DCL (Lenguaje de control de datos), indique cuál de las siguientes afirmaciones NO es correcta:",
+        "opciones": [
+          "La sentencia para controlar el nivel de aislamiento es SET TRANSACTION ISOLATION LEVEL.",
+          "La sentencia GRANT se utiliza para conceder privilegios de seguridad sobre objetos de la base de datos a usuarios específicos.",
+          "Los privilegios que se han concedido con la sentencia GRANT pueden ser retirados con la sentencia REMOVE."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3381,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué sentencia SQL se utiliza para retirar a un usuario privilegios concedidos previamente sobre objetos de la base de datos?",
+        "opciones": [
+          "REMOVE.",
+          "REVOKE.",
+          "DELETE PRIVILEGE."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se separa la cuestión de la clasificación de sentencias del estándar de la pregunta concreta: el comando para retirar privilegios concedidos es REVOKE. Se elimina REMOVE como falsa alternativa y se evita mezclar SET TRANSACTION ISOLATION LEVEL, que tiene otro propósito. Corregida. A1-64; A2-II-5.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; el bloque 29 cubre SQL y administración de bases de datos; la instrucción concreta REVOKE se contrastó con la documentación oficial del SGBD. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación A2 respaldada por el epígrafe oficial correspondiente. Clasificación cotejada con A1 BOE-A-2025-25938 (anexo I), A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+        },
+        "etiquetas": [
+          "DCL",
+          "GRANT",
+          "REVOKE",
+          "REMOVE",
+          "privilegios"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.postgresql.org/docs/current/sql-revoke.html",
+              "referencia": "PostgreSQL, documentación oficial de REVOKE: el comando revoca privilegios concedidos; la instrucción SQL de retirada es REVOKE, no REMOVE."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; cotejo curricular: el bloque 29 cubre SQL y administración de bases de datos; la instrucción concreta REVOKE se contrastó con la documentación oficial del SGBD. La academia contextualiza el tema; las conclusiones se apoyan en las fuentes técnicas primarias citadas."
+            }
+          ],
+          "observaciones": "Se separa la cuestión de la clasificación de sentencias del estándar de la pregunta concreta: el comando para retirar privilegios concedidos es REVOKE. Se elimina REMOVE como falsa alternativa y se evita mezclar SET TRANSACTION ISOLATION LEVEL, que tiene otro propósito. Corregida. A1-64; A2-II-5. Cotejo ITIC Academy: ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; el bloque 29 cubre SQL y administración de bases de datos; la instrucción concreta REVOKE se contrastó con la documentación oficial del SGBD. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk Clasificación cotejada con A1 BOE-A-2025-25938 (anexo I), A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+        }
+      }
+    },
+    {
+      "id": 3382,
+      "original": {
+        "id": 3382,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Marque la herramienta que no es una solución ORM (Object-Relational Mapping):",
+        "opciones": [
+          "IBATIS",
+          "Hibernate",
+          "CODD",
+          "Todas lo son"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3382,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes nombres identifica a la persona asociada al modelo relacional, y no una tecnología ORM?",
+        "opciones": [
+          "MyBatis (continuador del proyecto iBATIS).",
+          "Hibernate ORM.",
+          "Edgar F. Codd.",
+          "EclipseLink JPA."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se evita la ambigüedad de clasificar iBATIS como ORM pleno o como data mapper: se pregunta por la persona, no por una herramienta. Hibernate, EclipseLink y Entity Framework son tecnologías ORM; Edgar F. Codd es el científico del modelo relacional. Corregida. A1-64/A1-65; A2-II-5/A2-III-10.",
+        "clasificacion": {
+          "A1": [
+            "A1-64",
+            "A1-65"
+          ],
+          "A2": [
+            "A2-II-5",
+            "A2-III-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; los bloques 29 y 30 cubren modelo relacional, persistencia y entornos Java; el contraste curricular no equipara sin matices un data mapper a un ORM completo. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk | ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1; los bloques 29 y 30 cubren modelo relacional, persistencia y entornos Java; el contraste curricular no equipara sin matices un data mapper a un ORM completo. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación A2 respaldada por el epígrafe oficial correspondiente. Clasificación cotejada con A1 BOE-A-2025-25938 (anexo I), A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+        },
+        "etiquetas": [
+          "ORM",
+          "Object-Relational Mapping",
+          "iBATIS",
+          "MyBatis",
+          "Hibernate",
+          "Codd",
+          "EclipseLink"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://hibernate.org/orm/",
+              "referencia": "Hibernate es una solución ORM oficial; MyBatis documenta su modelo como framework de persistencia con SQL personalizado y mapeos; IBM identifica a Edgar F. Codd como científico asociado al modelo relacional, no como herramienta."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; cotejo curricular: los bloques 29 y 30 cubren modelo relacional, persistencia y entornos Java; el contraste curricular no equipara sin matices un data mapper a un ORM completo. La academia contextualiza el tema; las conclusiones se apoyan en las fuentes técnicas primarias citadas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1; cotejo curricular: los bloques 29 y 30 cubren modelo relacional, persistencia y entornos Java; el contraste curricular no equipara sin matices un data mapper a un ORM completo. La academia contextualiza el tema; las conclusiones se apoyan en las fuentes técnicas primarias citadas."
+            }
+          ],
+          "observaciones": "Se evita la ambigüedad de clasificar iBATIS como ORM pleno o como data mapper: se pregunta por la persona, no por una herramienta. Hibernate, EclipseLink y Entity Framework son tecnologías ORM; Edgar F. Codd es el científico del modelo relacional. Corregida. A1-64/A1-65; A2-II-5/A2-III-10. Cotejo ITIC Academy: ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; los bloques 29 y 30 cubren modelo relacional, persistencia y entornos Java; el contraste curricular no equipara sin matices un data mapper a un ORM completo. https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk | ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1; los bloques 29 y 30 cubren modelo relacional, persistencia y entornos Java; el contraste curricular no equipara sin matices un data mapper a un ORM completo. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk Clasificación cotejada con A1 BOE-A-2025-25938 (anexo I), A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+        }
+      }
+    },
+    {
+      "id": 3383,
+      "original": {
+        "id": 3383,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué es un Scriptlet JSP?",
+        "opciones": [
+          "Cualquier bloque de código Java válido que se encuentre entre los delimitadores <-- y -->",
+          "Cualquier bloque de código Java válido que se encuentre entre los delimitadores <* y *>",
+          "Cualquier bloque de código Java válido que se encuentre entre los delimitadores <+ y +>",
+          "Cualquier bloque de código Java válido que se encuentre entre los delimitadores <% y %>"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3383,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Jakarta Server Pages (JSP), ¿qué delimitadores encierran un scriptlet Java?",
+        "opciones": [
+          "<!-- y -->",
+          "<* y *>",
+          "<+ y +>",
+          "<% y %>"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se mantiene la respuesta histórica: el scriptlet JSP usa delimitadores <% y %>. La especificación vigente Jakarta Server Pages 3.1 confirma la sintaxis y el requisito de soporte de Java. Vigente. A1-65; A2-III-10/A2-III-12.",
+        "clasificacion": {
+          "A1": [
+            "A1-65"
+          ],
+          "A2": [
+            "A2-III-10",
+            "A2-III-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1; el bloque 30 incluye desarrollo web en servidor y entorno Java/Jakarta EE, contexto curricular para JSP; la sintaxis exacta se cotejó con Jakarta Pages 3.1. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación A2 respaldada por el epígrafe oficial correspondiente. Clasificación cotejada con A1 BOE-A-2025-25938 (anexo I), A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+        },
+        "etiquetas": [
+          "JSP",
+          "Jakarta Server Pages",
+          "scriptlet",
+          "Java",
+          "<%",
+          "%>"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://jakarta.ee/specifications/pages/3.1/jakarta-server-pages-spec-3.1.pdf",
+              "referencia": "Jakarta Server Pages 3.1, §1.12.2 y §9: un scriptlet es un fragmento de código del lenguaje de scripting entre <% y %>; los contenedores JSP deben admitir Java."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1; cotejo curricular: el bloque 30 incluye desarrollo web en servidor y entorno Java/Jakarta EE, contexto curricular para JSP; la sintaxis exacta se cotejó con Jakarta Pages 3.1. La academia contextualiza el tema; las conclusiones se apoyan en las fuentes técnicas primarias citadas."
+            }
+          ],
+          "observaciones": "Se mantiene la respuesta histórica: el scriptlet JSP usa delimitadores <% y %>. La especificación vigente Jakarta Server Pages 3.1 confirma la sintaxis y el requisito de soporte de Java. Vigente. A1-65; A2-III-10/A2-III-12. Cotejo ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1; el bloque 30 incluye desarrollo web en servidor y entorno Java/Jakarta EE, contexto curricular para JSP; la sintaxis exacta se cotejó con Jakarta Pages 3.1. https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk Clasificación cotejada con A1 BOE-A-2025-25938 (anexo I), A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+        }
+      }
+    },
+    {
+      "id": 3384,
+      "original": {
+        "id": 3384,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué versión de KDE introdujo los plasmoides?",
+        "opciones": [
+          "5.3",
+          "5.5"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3384,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Con qué generación de KDE debutó Plasma y sus «Plasmoids»?",
+        "opciones": [
+          "KDE 3.5.",
+          "KDE 4.0 (Plasma 4).",
+          "KDE Plasma 5.3.",
+          "KDE Plasma 5.5."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Las dos alternativas originales (5.3 y 5.5) eran posteriores y ninguna correcta. Se corrige la cronología: los Plasmoids aparecieron con Plasma en KDE 4.0; se añaden distractores versionados con una sola clave. Corregida. A1-59; A2-II-2.",
+        "clasificacion": {
+          "A1": [
+            "A1-59"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 47 «Aplicaciones móviles y sistemas operativos», versión 2026.1; el bloque 47 cubre fundamentos y evolución de sistemas operativos; el detalle cronológico de Plasma se contrastó por separado con el archivo de anuncios de KDE. https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación A2 respaldada por el epígrafe oficial correspondiente. Clasificación cotejada con A1 BOE-A-2025-25938 (anexo I), A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+        },
+        "etiquetas": [
+          "KDE",
+          "Plasma",
+          "plasmoid",
+          "KDE 4",
+          "Plasma 4.0"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://blogs.kde.org/2008/01/12/kde-4-100-release/",
+              "referencia": "KDE Community, anuncio de KDE 4.0.0 (enero de 2008): Plasma formó parte del nuevo escritorio KDE 4 y se describen sus Plasmoids; KDE Community identifica KDE 4 como la introducción de Plasma antes de Plasma 5."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 47 «Aplicaciones móviles y sistemas operativos», versión 2026.1; cotejo curricular: el bloque 47 cubre fundamentos y evolución de sistemas operativos; el detalle cronológico de Plasma se contrastó por separado con el archivo de anuncios de KDE. La academia contextualiza el tema; las conclusiones se apoyan en las fuentes técnicas primarias citadas."
+            }
+          ],
+          "observaciones": "Las dos alternativas originales (5.3 y 5.5) eran posteriores y ninguna correcta. Se corrige la cronología: los Plasmoids aparecieron con Plasma en KDE 4.0; se añaden distractores versionados con una sola clave. Corregida. A1-59; A2-II-2. Cotejo ITIC Academy: ITIC Academy, bloque 47 «Aplicaciones móviles y sistemas operativos», versión 2026.1; el bloque 47 cubre fundamentos y evolución de sistemas operativos; el detalle cronológico de Plasma se contrastó por separado con el archivo de anuncios de KDE. https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk Clasificación cotejada con A1 BOE-A-2025-25938 (anexo I), A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+        }
+      }
+    },
+    {
+      "id": 3385,
+      "original": {
+        "id": 3385,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Es una licencia compatible con GPL:",
+        "opciones": [
+          "NPL",
+          "MPL 2.0",
+          "BSD Original",
+          "Ninguna de las anteriores"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3385,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Salvo que el titular marque expresamente el código como «Incompatible With Secondary Licenses», ¿qué licencia permite combinar código cubierto con una obra mayor distribuida también bajo la GPL conforme a su cláusula de licencias secundarias?",
+        "opciones": [
+          "Netscape Public License (NPL) 1.1.",
+          "Mozilla Public License (MPL) 2.0.",
+          "BSD original de cuatro cláusulas.",
+          "Ninguna de las anteriores."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La afirmación “compatible con GPL” se acota al mecanismo de combinación de MPL 2.0 §3.3 y a su valor predeterminado, salvo aviso de incompatibilidad con licencias secundarias. No se presenta como compatibilidad incondicional para cualquier código bajo MPL. Corregida. A1-69; A2-II-14.",
+        "clasificacion": {
+          "A1": [
+            "A1-69"
+          ],
+          "A2": [
+            "A2-II-14"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 18 «Protección jurídica, licencias y control del software», versión 2026.1; el bloque 18 trata software libre/propietario y tipos de licencia bajo A2 T14; la excepción y compatibilidad concreta se verificaron en el texto de MPL 2.0 y la lista de licencias de la FSF. https://drive.google.com/file/d/1Og6yI-YaZ48UA3pBT-HQhTh7TfvdPW_C/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación A2 respaldada por el epígrafe oficial correspondiente. Clasificación cotejada con A1 BOE-A-2025-25938 (anexo I), A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+        },
+        "etiquetas": [
+          "GPL",
+          "NPL",
+          "MPL 2.0",
+          "BSD original",
+          "licencia compatible"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.mozilla.org/en-US/MPL/2.0/",
+              "referencia": "MPL 2.0, §1.5 y §3.3: por defecto no es “Incompatible With Secondary Licenses” y permite distribuir el código MPL en un Larger Work bajo licencias GNU secundarias definidas; el titular puede optar por excluir esa compatibilidad. La FSF confirma la compatibilidad indirecta y que la BSD original de cuatro cláusulas y la NPL no son compatibles con GPL."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Og6yI-YaZ48UA3pBT-HQhTh7TfvdPW_C/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 18 «Protección jurídica, licencias y control del software», versión 2026.1; cotejo curricular: el bloque 18 trata software libre/propietario y tipos de licencia bajo A2 T14; la excepción y compatibilidad concreta se verificaron en el texto de MPL 2.0 y la lista de licencias de la FSF. La academia contextualiza el tema; las conclusiones se apoyan en las fuentes técnicas primarias citadas."
+            }
+          ],
+          "observaciones": "La afirmación “compatible con GPL” se acota al mecanismo de combinación de MPL 2.0 §3.3 y a su valor predeterminado, salvo aviso de incompatibilidad con licencias secundarias. No se presenta como compatibilidad incondicional para cualquier código bajo MPL. Corregida. A1-69; A2-II-14. Cotejo ITIC Academy: ITIC Academy, bloque 18 «Protección jurídica, licencias y control del software», versión 2026.1; el bloque 18 trata software libre/propietario y tipos de licencia bajo A2 T14; la excepción y compatibilidad concreta se verificaron en el texto de MPL 2.0 y la lista de licencias de la FSF. https://drive.google.com/file/d/1Og6yI-YaZ48UA3pBT-HQhTh7TfvdPW_C/view?usp=drivesdk Clasificación cotejada con A1 BOE-A-2025-25938 (anexo I), A2 BOE-A-2025-26262 (anexo IX) y revision/temario-oficial.json."
+        }
+      }
+    }
+  ]
+}
