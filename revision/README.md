@@ -1,7 +1,26 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 584 (IDs 3236–3240). Acumulado: 3240 preguntas examinadas individualmente, 3167 verificadas (655 vigentes, 2269 corregidas y 243 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8883 sin revisar individualmente. Hay 2592 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 585 (IDs 3241–3245). Acumulado: 3245 preguntas examinadas individualmente, 3172 verificadas (656 vigentes, 2273 corregidas y 243 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8878 sin revisar individualmente. Hay 2597 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
 
+## Lote 585 — 30 de octubre
+
+IDs 3241–3245 revisados individualmente. Se confirmó que Data Cleaning no es un componente ADO.NET, se definió la vista materializada Oracle, se verificó el papel de npm, se precisó la descripción actual de GNOME y se acotó la pregunta de Pentaho a su edición Developer/Community, diferenciándola de sus niveles comerciales. Los originales están en [cambios-lote-585.json](cambios-lote-585.json).
+
+- **3241 — ADO.NET:** Data Provider, DataAdapter y DataReader son elementos de acceso a datos; Data Cleaning no es un componente de la arquitectura. A1-66; A2-III-11/A2-II-5.
+
+- **3242 — Oracle:** una vista materializada almacena datos del resultado y puede refrescarse; no es una vista lógica recalculada siempre al consultarse. A1-63; A2-II-5/A2-IV-2.
+
+- **3243 — npm:** gestor de paquetes asociado a Node.js/JavaScript; se arregla la errata del distractor. A1-65; A2-II-3.
+
+- **3244 — GNOME:** proyecto de software libre que desarrolla un entorno de escritorio gráfico y aplicaciones, muy extendido en distribuciones GNU/Linux. A1-60; A2-II-2.
+
+- **3245 — ETL:** se mantiene Pentaho Data Integration como respuesta y se precisa PDI Developer/Community, separándolo de las ediciones comerciales. A1-71/A1-75; A2-II-4/A2-III-15.
+
+Fuentes primarias: [Microsoft Learn, ADO.NET Overview](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview) y [DataAdapters/DataReaders](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/dataadapters-and-datareaders); [Oracle Database 26, materialized views](https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/read-only-materialized-view-architecture.html) y [CREATE MATERIALIZED VIEW](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CREATE-MATERIALIZED-VIEW.html); [npm CLI reference](https://docs.npmjs.com/cli/v8/commands/npm/); [GNOME About](https://www.gnome.org/about/); [Pentaho Developer Edition vs Enterprise Edition](https://pentaho.com/wp-content/uploads/2025/04/DE-vs-EE-Comparison-2025.pdf), [Statement of Direction](https://pentaho.com/statement-of-direction/) y [repositorio Pentaho Data Integration](https://github.com/pentaho/pentaho-kettle/blob/master/pom.xml). Temario y clasificación contrastados con `temario-oficial.json` y las convocatorias GSI más recientes identificadas en BOE: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). La OEP 2026 no reemplaza las bases y programas de un proceso selectivo.
+
+Cotejo ITIC Academy: [bloque 30 Tecnologías de Sistemas de Información](https://docs.google.com/document/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/edit?usp=drivesdk), [bloque 29 Bases de datos y SQL](https://docs.google.com/document/d/16itbf_Mo8uQ4MKEEX2V-VFMEwyeL7n3F/edit?usp=drivesdk), [bloque 27 Sistemas Operativos](https://docs.google.com/document/d/14SdBw2Ulrivnnp4sfwDa0bUsJVgqbAkt/edit?usp=drivesdk) y [bloque 34 Business Intelligence y Big Data](https://docs.google.com/document/d/10DHrDJ7834oPAD2JR8S0dh0Yext_0Gwp/edit?usp=drivesdk). Los materiales orientan el encaje curricular; las respuestas se verifican con las fuentes primarias citadas.
+
+Tras el lote se ejecutaron `inventario.cjs`, `verificar.cjs` y `git diff --check`. El inventario automático no sustituye la revisión individual del contenido.
 ## Lote 584 — 30 de octubre
 
 IDs 3236–3240 revisados individualmente. Se confirmaron las definiciones de WSDL y la cláusula HAVING; se delimitó el principio de reutilización SOA para evitar ambigüedad; se conservó como conocimiento histórico la referencia a Kugar en KOffice; y se actualizó Android para distinguir manifiesto y configuración Gradle. Los originales están en [cambios-lote-584.json](cambios-lote-584.json).
