@@ -1,0 +1,372 @@
+{
+  "fecha": "2026-10-30",
+  "alcance": "IDs 3281–3285; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3281,
+      "original": {
+        "id": 3281,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la afirmación correcta respecto de las aplicaciones web progresivas:",
+        "opciones": [
+          "No se pueden instalar desde tiendas de aplicaciones tales como Google Play o Apple App Store",
+          "Requieren necesariamente conectividad para funcionar correctamente",
+          "Requieren, como mínimo, un service worker y un manifiesto",
+          "No tienen acceso al hardware del dispositivo"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3281,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué componente web estandarizado permite interceptar solicitudes de red y responder, por ejemplo, desde una caché para ofrecer funciones sin conexión?",
+        "opciones": [
+          "El manifiesto web, que por sí solo intercepta todas las solicitudes HTTP.",
+          "Una hoja de estilos CSS, que almacena respuestas de red para uso sin conexión.",
+          "Un service worker, que puede gestionar eventos fetch y devolver recursos almacenados en caché.",
+          "La API DOM, que reemplaza automáticamente la conectividad de red."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La afirmación «como mínimo un service worker y un manifiesto» no es un requisito universal definitorio de PWA en todas las plataformas. Se reescribe como una pregunta comprobable sobre la API que intercepta peticiones y puede devolver respuestas cacheadas; la respuesta es Service Worker (índice 2). A1-65/A1-124; A2-III-12.",
+        "clasificacion": {
+          "A1": [
+            "A1-65",
+            "A1-124"
+          ],
+          "A2": [
+            "A2-III-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 47 «Aplicaciones móviles», versión 2026 (actualización de octubre de 2026); el bloque 47 § 2.2 describe HTTPS, service worker y manifiesto como piezas de una PWA; la pregunta original convertía esa explicación pedagógica en un «mínimo» universal discutible. Se reformuló sobre el evento fetch del service worker y se verifica la API en W3C. https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        },
+        "etiquetas": [
+          "PWA",
+          "aplicación web progresiva",
+          "service worker",
+          "interceptación fetch",
+          "caché sin conexión"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.w3.org/TR/service-workers/",
+              "referencia": "W3C Service Workers, especificación vigente: define el evento fetch y la posibilidad de responder a solicitudes mediante caché, lo que permite aplicaciones web utilizables sin conexión."
+            },
+            {
+              "url": "https://www.w3.org/TR/appmanifest/",
+              "referencia": "W3C Web Application Manifest: formato de metadatos de aplicaciones web; el manifiesto no convierte por sí solo un conjunto de requisitos en una condición universal de toda PWA."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 47 «Aplicaciones móviles», versión 2026 (actualización de octubre de 2026); cotejo curricular: el índice desarrolla aplicaciones web progresivas (PWA), tecnologías web, distribución y tendencias. El ejercicio se ha reescrito sobre la función técnica de Service Workers; el apunte no se usa como autoridad de la API. El material de Academy orienta el temario, no sustituye las fuentes normativas/técnicas primarias citadas en la revisión."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 47 «Aplicaciones móviles», versión 2026 (actualización de octubre de 2026); cotejo curricular: el bloque 47 § 2.2 describe HTTPS, service worker y manifiesto como piezas de una PWA; la pregunta original convertía esa explicación pedagógica en un «mínimo» universal discutible. Se reformuló sobre el evento fetch del service worker y se verifica la API en W3C. El material de Academy orienta el temario, no sustituye las fuentes normativas/técnicas primarias citadas en la revisión."
+            }
+          ],
+          "observaciones": "La afirmación «como mínimo un service worker y un manifiesto» no es un requisito universal definitorio de PWA en todas las plataformas. Se reescribe como una pregunta comprobable sobre la API que intercepta peticiones y puede devolver respuestas cacheadas; la respuesta es Service Worker (índice 2). A1-65/A1-124; A2-III-12. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 47 «Aplicaciones móviles», versión 2026 (actualización de octubre de 2026); el índice desarrolla aplicaciones web progresivas (PWA), tecnologías web, distribución y tendencias. El ejercicio se ha reescrito sobre la función técnica de Service Workers; el apunte no se usa como autoridad de la API. https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX). Cotejo ITIC Academy en Drive: ITIC Academy, bloque 47 «Aplicaciones móviles», versión 2026 (actualización de octubre de 2026); el bloque 47 § 2.2 describe HTTPS, service worker y manifiesto como piezas de una PWA; la pregunta original convertía esa explicación pedagógica en un «mínimo» universal discutible. Se reformuló sobre el evento fetch del service worker y se verifica la API en W3C. https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        }
+      }
+    },
+    {
+      "id": 3282,
+      "original": {
+        "id": 3282,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La transmisión de datos a través de la red pública de forma que los nodos de enrutado no sean conscientes de que la transmisión es parte de una red privada se llama:",
+        "opciones": [
+          "Tunel",
+          "Red Privada Virtual (VPN)",
+          "IPSec",
+          "SSL"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3282,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denomina la técnica de encapsular un paquete IP privado dentro de otro paquete exterior para transportarlo por una red pública, donde los routers intermedios encaminan el exterior?",
+        "opciones": [
+          "Túnel (tunneling).",
+          "Red privada virtual (VPN), nombre de la arquitectura/servicio completo.",
+          "IPsec, que solo tiene modo transporte y no permite túneles.",
+          "SSL/TLS, que es sinónimo de encapsulación de cualquier paquete IP."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "«Túnel» es la técnica de encapsular un paquete interior dentro de otro paquete que la red pública encamina por su cabecera exterior. Una VPN es la arquitectura/servicio privado que puede usar túneles y seguridad; IPsec es una arquitectura/protocolo que admite modos túnel y transporte, y TLS/SSL no equivale genéricamente a la técnica. Se precisa el concepto y se conserva «Túnel» como opción 0. A1-115/A1-125; A2-II-8/A2-IV-12.",
+        "clasificacion": {
+          "A1": [
+            "A1-115",
+            "A1-125"
+          ],
+          "A2": [
+            "A2-II-8",
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1, 29-09-2026; el bloque 43 desarrolla IP, IPv6 y túneles en § 9.2; el bloque 48 cubre VPN/IPsec. Las distinciones entre tunneling, VPN e IPsec se verifican con las RFC. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        },
+        "etiquetas": [
+          "túnel IP",
+          "encapsulación",
+          "VPN",
+          "IPsec",
+          "red pública"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4301.html",
+              "referencia": "IETF RFC 4301, Security Architecture for the Internet Protocol, § 5: distingue modo túnel, que encapsula el paquete IP interior en un paquete exterior, del modo transporte."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4023.html",
+              "referencia": "IETF RFC 4023, Encapsulating MPLS in IP or GRE: ejemplo normativo de encapsulación y túneles IP entre extremos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1, 29-09-2026; cotejo curricular: el bloque 43 desarrolla IP, IPv6 y túneles en § 9.2; el bloque 48 cubre VPN/IPsec. Las distinciones entre tunneling, VPN e IPsec se verifican con las RFC. El material de Academy orienta el temario, no sustituye las fuentes normativas/técnicas primarias citadas en la revisión."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1, 29-09-2026; cotejo curricular: el bloque 43 desarrolla IP, IPv6 y túneles en § 9.2; el bloque 48 cubre VPN/IPsec. Las distinciones entre tunneling, VPN e IPsec se verifican con las RFC. El material de Academy orienta el temario, no sustituye las fuentes normativas/técnicas primarias citadas en la revisión."
+            }
+          ],
+          "observaciones": "«Túnel» es la técnica de encapsular un paquete interior dentro de otro paquete que la red pública encamina por su cabecera exterior. Una VPN es la arquitectura/servicio privado que puede usar túneles y seguridad; IPsec es una arquitectura/protocolo que admite modos túnel y transporte, y TLS/SSL no equivale genéricamente a la técnica. Se precisa el concepto y se conserva «Túnel» como opción 0. A1-115/A1-125; A2-II-8/A2-IV-12. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 43 «Protocolos», versión 2026.1, 29-09-2026; el bloque 43 desarrolla IP, IPv6 y túneles en § 9.2; el bloque 48 cubre VPN/IPsec. Las distinciones entre tunneling, VPN e IPsec se verifican con las RFC. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX). Cotejo ITIC Academy en Drive: ITIC Academy, bloque 43 «Protocolos», versión 2026.1, 29-09-2026; el bloque 43 desarrolla IP, IPv6 y túneles en § 9.2; el bloque 48 cubre VPN/IPsec. Las distinciones entre tunneling, VPN e IPsec se verifican con las RFC. https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        }
+      }
+    },
+    {
+      "id": 3283,
+      "original": {
+        "id": 3283,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿A quién corresponde el soporte y coordinación para el tratamiento de vulnerabilidades y la resolución de incidentes de seguridad que tengan las Administraciones de las Comunidades Autónomas?",
+        "opciones": [
+          "Al CCN-CERT",
+          "Al INCIBE-CERT",
+          "Al ESPDEF-CERT del Ministerio de Defensa",
+          "A la Agencia de la Unión Europea para la Ciberseguridad (ENISA)"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3283,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según los artículos 2 y 34 del Esquema Nacional de Seguridad (Real Decreto 311/2022), ¿qué equipo presta soporte y coordinación para tratar vulnerabilidades y resolver incidentes de las entidades del sector público incluidas en su ámbito, también las Administraciones autonómicas?",
+        "opciones": [
+          "CCN-CERT.",
+          "INCIBE-CERT, como único equipo de referencia para todas las Administraciones públicas.",
+          "ESPDEF-CERT del Ministerio de Defensa, para cualquier entidad autonómica.",
+          "ENISA, como equipo operativo nacional de respuesta a incidentes."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La respuesta es CCN-CERT conforme al art. 34.1.a del ENS (RD 311/2022) para entidades públicas dentro del ámbito del real decreto, que comprende las Administraciones autonómicas según su art. 2. Se explicita el marco jurídico para no extender la atribución a entidades fuera del ámbito subjetivo ni confundir los equipos de referencia para otros sectores. Se conserva índice 0. A1-48/A1-125; A2-I-9/A2-II-13.",
+        "clasificacion": {
+          "A1": [
+            "A1-48",
+            "A1-125"
+          ],
+          "A2": [
+            "A2-I-9",
+            "A2-II-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; el bloque 48 trata ENS, CCN-CERT y respuesta a incidentes en el sector público. La atribución se fija exclusivamente con los arts. 2 y 34 del RD 311/2022. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        },
+        "etiquetas": [
+          "CCN-CERT",
+          "ENS",
+          "comunidades autónomas",
+          "incidentes de seguridad",
+          "vulnerabilidades"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-7191",
+              "referencia": "Real Decreto 311/2022, de 3 de mayo, ENS: arts. 2 y 34. El art. 34.1.a atribuye al CCN-CERT soporte y coordinación en tratamiento de vulnerabilidades y resolución de incidentes para entidades incluidas en el ámbito de aplicación; el art. 2 incluye Administraciones autonómicas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; cotejo curricular: el bloque 48 trata ENS, CCN-CERT y respuesta a incidentes en el sector público. La atribución se fija exclusivamente con los arts. 2 y 34 del RD 311/2022. El material de Academy orienta el temario, no sustituye las fuentes normativas/técnicas primarias citadas en la revisión."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; cotejo curricular: el bloque 48 trata ENS, CCN-CERT y respuesta a incidentes en el sector público. La atribución se fija exclusivamente con los arts. 2 y 34 del RD 311/2022. El material de Academy orienta el temario, no sustituye las fuentes normativas/técnicas primarias citadas en la revisión."
+            }
+          ],
+          "observaciones": "La respuesta es CCN-CERT conforme al art. 34.1.a del ENS (RD 311/2022) para entidades públicas dentro del ámbito del real decreto, que comprende las Administraciones autonómicas según su art. 2. Se explicita el marco jurídico para no extender la atribución a entidades fuera del ámbito subjetivo ni confundir los equipos de referencia para otros sectores. Se conserva índice 0. A1-48/A1-125; A2-I-9/A2-II-13. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; el bloque 48 trata ENS, CCN-CERT y respuesta a incidentes en el sector público. La atribución se fija exclusivamente con los arts. 2 y 34 del RD 311/2022. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX). Cotejo ITIC Academy en Drive: ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; el bloque 48 trata ENS, CCN-CERT y respuesta a incidentes en el sector público. La atribución se fija exclusivamente con los arts. 2 y 34 del RD 311/2022. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        }
+      }
+    },
+    {
+      "id": 3284,
+      "original": {
+        "id": 3284,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El alcance de un Sistemas de Gestión de la Continuidad del Negocio:",
+        "opciones": [
+          "debe dotar de recursos al SGCN",
+          "debe fomentar la mejora continua",
+          "debe asignar responsables del SGCN",
+          "debe identificar las necesidades de los stakeholders"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3284,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Al determinar el alcance de un sistema de gestión de continuidad del negocio conforme a ISO 22301, ¿qué debe considerar la organización?",
+        "opciones": [
+          "Únicamente la asignación de recursos presupuestarios al sistema.",
+          "Exclusivamente la asignación de responsables y autoridades.",
+          "Solo el compromiso de mejora continua del sistema.",
+          "Las cuestiones internas y externas pertinentes y los requisitos de las partes interesadas relevantes identificados por la organización."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El enunciado original podía confundirse con requisitos generales del sistema (recursos, responsables, mejora continua). Se limita a determinar el alcance conforme a la cláusula 4.3: deben considerarse las cuestiones de 4.1 y los requisitos de partes interesadas pertinentes determinados en 4.2. Se conserva como correcta la opción 3 y se descartan como respuestas al alcance las obligaciones organizativas de otras cláusulas. A1-128; A2-IV-6.",
+        "clasificacion": {
+          "A1": [
+            "A1-128"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; el bloque 48 cubre continuidad de negocio y recuperación ante desastres (§ 10.4), así como procesos de seguridad y resiliencia. La respuesta se contrasta con ISO 22301/22313. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        },
+        "etiquetas": [
+          "SGCN",
+          "ISO 22301",
+          "alcance",
+          "partes interesadas",
+          "continuidad del negocio"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://www.iso.org/standard/75106.html",
+              "referencia": "ISO 22301:2019, Security and resilience — Business continuity management systems — Requirements; ficha oficial confirma edición publicada vigente y enmienda 1:2024."
+            },
+            {
+              "url": "https://www.iso.org/standard/88412.html",
+              "referencia": "ISO 22301:2019/Amd 1:2024, enmienda de acción climática aplicable a la edición 2019."
+            },
+            {
+              "url": "https://www.iso.org/standard/75107.html",
+              "referencia": "ISO 22313:2020, Guidance on the use of ISO 22301, guía asociada para aplicar los requisitos de continuidad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; cotejo curricular: el bloque 48 cubre continuidad de negocio y recuperación ante desastres (§ 10.4), así como procesos de seguridad y resiliencia. La respuesta se contrasta con ISO 22301/22313. El material de Academy orienta el temario, no sustituye las fuentes normativas/técnicas primarias citadas en la revisión."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; cotejo curricular: el bloque 48 cubre continuidad de negocio y recuperación ante desastres (§ 10.4), así como procesos de seguridad y resiliencia. La respuesta se contrasta con ISO 22301/22313. El material de Academy orienta el temario, no sustituye las fuentes normativas/técnicas primarias citadas en la revisión."
+            }
+          ],
+          "observaciones": "El enunciado original podía confundirse con requisitos generales del sistema (recursos, responsables, mejora continua). Se limita a determinar el alcance conforme a la cláusula 4.3: deben considerarse las cuestiones de 4.1 y los requisitos de partes interesadas pertinentes determinados en 4.2. Se conserva como correcta la opción 3 y se descartan como respuestas al alcance las obligaciones organizativas de otras cláusulas. A1-128; A2-IV-6. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; el bloque 48 cubre continuidad de negocio y recuperación ante desastres (§ 10.4), así como procesos de seguridad y resiliencia. La respuesta se contrasta con ISO 22301/22313. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX). Cotejo ITIC Academy en Drive: ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; el bloque 48 cubre continuidad de negocio y recuperación ante desastres (§ 10.4), así como procesos de seguridad y resiliencia. La respuesta se contrasta con ISO 22301/22313. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        }
+      }
+    },
+    {
+      "id": 3285,
+      "original": {
+        "id": 3285,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el contexto de los planes de contingencia y continuidad del negocio, el parámetro RTO nos determina:",
+        "opciones": [
+          "El tiempo que un proceso puede permanecer caído antes de que se produzcan consecuencias desastrosas para nuestra empresa",
+          "El nivel mínimo de recuperación que debe tener una actividad para que la consideremos como recuperada, aunque el nivel de servicio no sea el óptimo",
+          "El tiempo que un proceso permanecerá detenido antes de que su funcionamiento sea restaurado",
+          "El tiempo que hemos estado sin fallos en el sistema"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3285,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En continuidad de negocio, ¿qué expresa el objetivo de tiempo de recuperación (RTO) definido para un proceso o recurso tras una interrupción?",
+        "opciones": [
+          "El período máximo tolerable de interrupción antes de consecuencias inaceptables (MTD/MTPD), que delimita el tiempo de recuperación.",
+          "El punto temporal al que deben recuperarse los datos, medido desde la última copia válida (RPO).",
+          "El tiempo objetivo máximo fijado para restablecer el proceso o recurso tras la interrupción, antes de rebasar el límite tolerable.",
+          "El tiempo medio de operación entre dos fallos consecutivos (MTBF)."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La opción original 0 describía de forma cercana el MTD/MTPD (tiempo máximo tolerable antes de impacto inaceptable), mientras que la 2 describía RTO de forma demasiado factual. Se define RTO como el objetivo máximo fijado para restablecer un proceso/recurso tras la interrupción, dentro del límite tolerable, y se distingue explícitamente MTD/MTPD (límite de impacto), RPO (pérdida de datos admisible) y MTBF (tiempo entre fallos). Se conserva índice 2. A1-128; A2-IV-6.",
+        "clasificacion": {
+          "A1": [
+            "A1-128"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; el bloque 48 incluye continuidad de negocio y recuperación ante desastres (§ 10.4); se revisa la diferencia entre objetivos temporales de recuperación y tolerancia a la interrupción con NIST/ISO. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+          "estado": "revisada",
+          "nota": "corregida. Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        },
+        "etiquetas": [
+          "RTO",
+          "Recovery Time Objective",
+          "MTD",
+          "MTPD",
+          "RPO",
+          "continuidad del negocio"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-30",
+          "fuentes": [
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-34r1.pdf",
+              "referencia": "NIST SP 800-34 Rev. 1, § 2.2: define RTO como el máximo tiempo que un recurso del sistema puede permanecer indisponible antes de un impacto inaceptable; distingue MTD y RPO."
+            },
+            {
+              "url": "https://www.iso.org/standard/75106.html",
+              "referencia": "ISO 22301:2019, requisitos del sistema de gestión de continuidad del negocio; edición publicada con enmienda 1:2024."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; cotejo curricular: el bloque 48 incluye continuidad de negocio y recuperación ante desastres (§ 10.4); se revisa la diferencia entre objetivos temporales de recuperación y tolerancia a la interrupción con NIST/ISO. El material de Academy orienta el temario, no sustituye las fuentes normativas/técnicas primarias citadas en la revisión."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; cotejo curricular: el bloque 48 incluye continuidad de negocio y recuperación ante desastres (§ 10.4); se revisa la diferencia entre objetivos temporales de recuperación y tolerancia a la interrupción con NIST/ISO. El material de Academy orienta el temario, no sustituye las fuentes normativas/técnicas primarias citadas en la revisión."
+            }
+          ],
+          "observaciones": "La opción original 0 describía de forma cercana el MTD/MTPD (tiempo máximo tolerable antes de impacto inaceptable), mientras que la 2 describía RTO de forma demasiado factual. Se define RTO como el objetivo máximo fijado para restablecer un proceso/recurso tras la interrupción, dentro del límite tolerable, y se distingue explícitamente MTD/MTPD (límite de impacto), RPO (pérdida de datos admisible) y MTBF (tiempo entre fallos). Se conserva índice 2. A1-128; A2-IV-6. Cotejo ITIC Academy en Drive: ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; el bloque 48 incluye continuidad de negocio y recuperación ante desastres (§ 10.4); se revisa la diferencia entre objetivos temporales de recuperación y tolerancia a la interrupción con NIST/ISO. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX). Cotejo ITIC Academy en Drive: ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», versión 2026, 04-10-2026; el bloque 48 incluye continuidad de negocio y recuperación ante desastres (§ 10.4); se revisa la diferencia entre objetivos temporales de recuperación y tolerancia a la interrupción con NIST/ISO. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Clasificación cotejada contra revision/temario-oficial.json y los programas GSI vigentes publicados en BOE: A1 BOE-A-2025-25938 (anexo I) y A2 BOE-A-2025-26262 (anexo IX)."
+        }
+      }
+    }
+  ]
+}
