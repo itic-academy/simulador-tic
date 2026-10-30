@@ -165705,7 +165705,7 @@
       "id": 3416,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo se denomina en telefonía IP el elemento encargado de registrar los dispositivos que realizan llamadas usando la red IP?",
+      "texto": "En una zona H.323, ¿qué elemento recibe el registro de los terminales y asocia sus alias con sus direcciones de señalización?",
       "opciones": [
         "Gateway.",
         "Terminal.",
@@ -165713,63 +165713,282 @@
         "Gatekeeper."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se limita expresamente a H.323: el gatekeeper conoce los endpoints registrados en su zona y asocia sus alias con direcciones de señalización; además interviene en admisión y control de llamadas. No se generaliza esta entidad a cualquier arquitectura VoIP (por ejemplo, SIP tiene otros roles).",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-116"
+        ],
+        "A2": [
+          "A2-IV-8",
+          "A2-IV-14"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 43 «Protocolos», versión 2026.1; Los bloques actuales de Protocolos y Videoconferencia tratan H.323 y sus componentes; el bloque 43 identifica RAS y registro de terminales con el gatekeeper. La edición legacy de H.323 se cotejó técnicamente con la recomendación UIT-T vigente.; https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk | ITIC Academy, Bloque 50 «Videoconferencia, SSO y trabajo colaborativo», versión 2026; Los bloques actuales de Protocolos y Videoconferencia tratan H.323 y sus componentes; el bloque 43 identifica RAS y registro de terminales con el gatekeeper. La edición legacy de H.323 se cotejó técnicamente con la recomendación UIT-T vigente.; https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "H.323",
+        "gatekeeper",
+        "RAS",
+        "registro de terminales",
+        "admisión de llamada"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-H.323-202203-I%21%21PDF-E&lang=e&type=items",
+            "referencia": "UIT-T H.323 (03/2022), §§7.2.2 y 8: el endpoint se registra con el gatekeeper mediante RRQ; el registro asocia alias con direcciones de transporte/señalización, y el gatekeeper participa en control RAS de admisión."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 43 «Protocolos», versión 2026.1. Los bloques actuales de Protocolos y Videoconferencia tratan H.323 y sus componentes; el bloque 43 identifica RAS y registro de terminales con el gatekeeper. La edición legacy de H.323 se cotejó técnicamente con la recomendación UIT-T vigente."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 50 «Videoconferencia, SSO y trabajo colaborativo», versión 2026. Los bloques actuales de Protocolos y Videoconferencia tratan H.323 y sus componentes; el bloque 43 identifica RAS y registro de terminales con el gatekeeper. La edición legacy de H.323 se cotejó técnicamente con la recomendación UIT-T vigente."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Programa oficial A1/A2 de la convocatoria de 2025; epígrafe clasificado según el mapeo incluido en revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Programa oficial A1/A2 de la convocatoria de 2025; epígrafe clasificado según el mapeo incluido en revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se limita expresamente a H.323: el gatekeeper conoce los endpoints registrados en su zona y asocia sus alias con direcciones de señalización; además interviene en admisión y control de llamadas. No se generaliza esta entidad a cualquier arquitectura VoIP (por ejemplo, SIP tiene otros roles). Cotejo curricular ITIC Academy: Los bloques actuales de Protocolos y Videoconferencia tratan H.323 y sus componentes; el bloque 43 identifica RAS y registro de terminales con el gatekeeper. La edición legacy de H.323 se cotejó técnicamente con la recomendación UIT-T vigente. Correspondencia: A1-108, A1-116; A2-IV-8, A2-IV-14. La academia sirve de encuadre curricular, no sustituye la evidencia normativa/técnica."
+      }
     },
     {
       "id": 3417,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿A qué se dedica el grupo de trabajo 802.21 del IEEE?",
+      "texto": "¿Cuál fue el objetivo principal del grupo de trabajo IEEE 802.21, conocido como Media Independent Handover (MIH)?",
       "opciones": [
         "Grupo asesor en regulación radioeléctrica",
         "Grupo asesor en coexistencia de estándares 802",
         "Resilient Packet Ring",
-        "Traspaso entre redes"
+        "Facilitar el traspaso entre redes de acceso heterogéneas."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "IEEE 802.21 se creó para facilitar servicios de traspaso entre tecnologías de acceso heterogéneas (Media Independent Handover, MIH). La pregunta se formula en pasado: el grupo de trabajo figura en hibernación desde 2019; la finalidad histórica de la norma no cambia.",
+      "clasificacion": {
+        "A1": [
+          "A1-114",
+          "A1-123"
+        ],
+        "A2": [
+          "A2-IV-11",
+          "A2-IV-15"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026; El bloque 46 incluye redes inalámbricas, movilidad y handover, y señala de forma expresa que 802.21 es el traspaso entre redes heterogéneas.; https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "IEEE 802.21",
+        "MIH",
+        "handover",
+        "redes heterogéneas",
+        "movilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://www.ieee802.org/21/",
+            "referencia": "La página oficial IEEE 802.21 describe los servicios Media Independent Handover y su uso para optimizar servicios de capa superior y handover entre redes IEEE heterogéneas y redes celulares; también informa que el grupo pasó a hibernación en 2019."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026. El bloque 46 incluye redes inalámbricas, movilidad y handover, y señala de forma expresa que 802.21 es el traspaso entre redes heterogéneas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Programa oficial A1/A2 de la convocatoria de 2025; epígrafe clasificado según el mapeo incluido en revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Programa oficial A1/A2 de la convocatoria de 2025; epígrafe clasificado según el mapeo incluido en revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "IEEE 802.21 se creó para facilitar servicios de traspaso entre tecnologías de acceso heterogéneas (Media Independent Handover, MIH). La pregunta se formula en pasado: el grupo de trabajo figura en hibernación desde 2019; la finalidad histórica de la norma no cambia. Cotejo curricular ITIC Academy: El bloque 46 incluye redes inalámbricas, movilidad y handover, y señala de forma expresa que 802.21 es el traspaso entre redes heterogéneas. Correspondencia: A1-114, A1-123; A2-IV-11, A2-IV-15. La academia sirve de encuadre curricular, no sustituye la evidencia normativa/técnica."
+      }
     },
     {
       "id": 3418,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el tipo de conmutación de paquetes conocido como datagrama:",
+      "texto": "En el servicio de datagramas IP, ¿qué propiedad se aplica al orden de entrega de los paquetes?",
       "opciones": [
-        "Los paquetes no han de llegar ordenados",
+        "IP no garantiza que lleguen en el mismo orden en que se enviaron.",
         "Se establece un enlace lógico entre emisor y receptor",
         "Los mensajes no se trocean",
         "Los paquetes han de llegar ordenados"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se pregunta por el servicio IP en modo datagrama: la red no garantiza que los paquetes se entreguen en el orden de envío. Protocolos de capas superiores pueden reordenarlos o exigir orden, por lo que no se confunde la propiedad de IP con las de TCP.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes», versión 2026.1; Los bloques de Redes y Protocolos cubren conmutación de paquetes y los servicios de red IP; el alcance y las garantías de entrega se verificaron con RFC 1812.; https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk | ITIC Academy, Bloque 43 «Protocolos», versión 2026.1; Los bloques de Redes y Protocolos cubren conmutación de paquetes y los servicios de red IP; el alcance y las garantías de entrega se verificaron con RFC 1812.; https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "conmutación de paquetes",
+        "datagrama",
+        "IP",
+        "entrega fuera de orden"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          {
+            "url": "https://datatracker.ietf.org/doc/html/rfc1812#section-2.2.2",
+            "referencia": "RFC 1812 §2.2.2: según el servicio IP, los datagramas pueden entregarse fuera de orden, perderse o duplicarse; IP no proporciona garantía de secuenciación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 42 «Redes», versión 2026.1. Los bloques de Redes y Protocolos cubren conmutación de paquetes y los servicios de red IP; el alcance y las garantías de entrega se verificaron con RFC 1812."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 43 «Protocolos», versión 2026.1. Los bloques de Redes y Protocolos cubren conmutación de paquetes y los servicios de red IP; el alcance y las garantías de entrega se verificaron con RFC 1812."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Programa oficial A1/A2 de la convocatoria de 2025; epígrafe clasificado según el mapeo incluido en revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Programa oficial A1/A2 de la convocatoria de 2025; epígrafe clasificado según el mapeo incluido en revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se pregunta por el servicio IP en modo datagrama: la red no garantiza que los paquetes se entreguen en el orden de envío. Protocolos de capas superiores pueden reordenarlos o exigir orden, por lo que no se confunde la propiedad de IP con las de TCP. Cotejo curricular ITIC Academy: Los bloques de Redes y Protocolos cubren conmutación de paquetes y los servicios de red IP; el alcance y las garantías de entrega se verificaron con RFC 1812. Correspondencia: A1-108; A2-IV-8. La academia sirve de encuadre curricular, no sustituye la evidencia normativa/técnica."
+      }
     },
     {
       "id": 3419,
       "bloque": 0,
       "tema": 0,
-      "texto": "Sobre FDDI:",
+      "texto": "¿Cómo se denomina la variante de FDDI que emplea cableado de pares trenzados de cobre?",
       "opciones": [
         "Su estándar no está recogido por la IEEE ni aceptado por ANSI",
         "Se conoce como X3T9.3",
-        "Su equivalente en cobre es CDDI",
+        "CDDI (también denominada CuDDI); su capa física sobre par trenzado se especificó como TP-PMD.",
         "Todas son verdaderas"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La variante de FDDI sobre pares trenzados de cobre se conoce como CDDI/CuDDI y usa una especificación física TP-PMD distinta. FDDI es el estándar ANSI X3T9.5; X3T9.3 no es FDDI y, por tanto, «todas» no es correcto. Se conserva como tecnología LAN histórica.",
+      "clasificacion": {
+        "A1": [
+          "A1-110",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes», versión 2026.1; El bloque 42 enumera FDDI como topología de anillo LAN histórica; el test de redes de ITIC contiene la pregunta heredada sobre FDDI/CDDI. La denominación física TP-PMD se contrastó además con el catálogo ANSI.; https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk | ITIC Academy, test de Redes, preguntas históricas sobre FDDI y CDDI; El bloque 42 enumera FDDI como topología de anillo LAN histórica; el test de redes de ITIC contiene la pregunta heredada sobre FDDI/CDDI. La denominación física TP-PMD se contrastó además con el catálogo ANSI.; https://drive.google.com/file/d/0Bw-rS_kOHzMKRmpNZXgyRkpqSzQ/view?usp=drivesdk&resourcekey=0-KrkxJiH6ADkelFzUMtDHtw",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "FDDI",
+        "CDDI",
+        "CuDDI",
+        "TP-PMD",
+        "ANSI X3T9.5",
+        "red local histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          "https://www.cisco.com/c/en/us/tech/lan-switching/fiber-distributed-copper-distributed-data-interface-fddi-cddi/index.html",
+          "https://webstore.ansi.org/standards/incits/ANSIINCITS2631995R2005",
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 42 «Redes», versión 2026.1. El bloque 42 enumera FDDI como topología de anillo LAN histórica; el test de redes de ITIC contiene la pregunta heredada sobre FDDI/CDDI. La denominación física TP-PMD se contrastó además con el catálogo ANSI."
+          },
+          {
+            "url": "https://drive.google.com/file/d/0Bw-rS_kOHzMKRmpNZXgyRkpqSzQ/view?usp=drivesdk&resourcekey=0-KrkxJiH6ADkelFzUMtDHtw",
+            "referencia": "ITIC Academy, test de Redes, preguntas históricas sobre FDDI y CDDI. El bloque 42 enumera FDDI como topología de anillo LAN histórica; el test de redes de ITIC contiene la pregunta heredada sobre FDDI/CDDI. La denominación física TP-PMD se contrastó además con el catálogo ANSI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Programa oficial A1/A2 de la convocatoria de 2025; epígrafe clasificado según el mapeo incluido en revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Programa oficial A1/A2 de la convocatoria de 2025; epígrafe clasificado según el mapeo incluido en revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "La variante de FDDI sobre pares trenzados de cobre se conoce como CDDI/CuDDI y usa una especificación física TP-PMD distinta. FDDI es el estándar ANSI X3T9.5; X3T9.3 no es FDDI y, por tanto, «todas» no es correcto. Se conserva como tecnología LAN histórica. Cotejo curricular ITIC Academy: El bloque 42 enumera FDDI como topología de anillo LAN histórica; el test de redes de ITIC contiene la pregunta heredada sobre FDDI/CDDI. La denominación física TP-PMD se contrastó además con el catálogo ANSI. Correspondencia: A1-110, A1-118; A2-IV-8. La academia sirve de encuadre curricular, no sustituye la evidencia normativa/técnica."
+      }
     },
     {
       "id": 3420,
       "bloque": 0,
       "tema": 0,
-      "texto": "Sobre el modelo de gestión TMN (Telecommunication Management Network):",
+      "texto": "¿Qué recomendación de la UIT-T describe los principios y la arquitectura de la Telecommunications Management Network (TMN)?",
       "opciones": [
-        "Es un modelo de gestión de red orientado a grandes operadores de telecomunicaciones",
-        "Sus principios están recogidos en la recomendación M.3010 de la UIT-T",
-        "Es especialmente apropiado para redes de conmutación de circuitos",
-        "Todas las respuestas anteriores son correctas"
+        "UIT-T M.3010.",
+        "UIT-T H.323.",
+        "UIT-T G.984.",
+        "UIT-T X.200."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "M.3010 describe los principios y la arquitectura de TMN. No es un protocolo de señalización ni un protocolo de encaminamiento IP, y el modelo no queda limitado a redes de conmutación de circuitos. El catálogo UIT-T consultado en 2026 mantiene M.3010 (02/2000) en vigor.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 42 «Redes», versión 2026.1; El bloque 42 incluye gestión, FCAPS y la arquitectura de gestión TMN de la UIT-T; el número y alcance concretos de M.3010 se comprobaron directamente en el catálogo oficial UIT-T.; https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas A1/A2 publicados en BOE y revision/temario-oficial.json."
+      },
+      "etiquetas": [
+        "TMN",
+        "UIT-T M.3010",
+        "arquitectura funcional",
+        "arquitectura de información",
+        "gestión de redes de telecomunicaciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-30",
+        "fuentes": [
+          "https://www.itu.int/itu-t/recommendations/rec.aspx?id=4869&lang=en-US",
+          "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-M.3010-200002-I%21%21PDF-E&lang=e&type=items",
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 42 «Redes», versión 2026.1. El bloque 42 incluye gestión, FCAPS y la arquitectura de gestión TMN de la UIT-T; el número y alcance concretos de M.3010 se comprobaron directamente en el catálogo oficial UIT-T."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Programa oficial A1/A2 de la convocatoria de 2025; epígrafe clasificado según el mapeo incluido en revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Programa oficial A1/A2 de la convocatoria de 2025; epígrafe clasificado según el mapeo incluido en revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "M.3010 describe los principios y la arquitectura de TMN. No es un protocolo de señalización ni un protocolo de encaminamiento IP, y el modelo no queda limitado a redes de conmutación de circuitos. El catálogo UIT-T consultado en 2026 mantiene M.3010 (02/2000) en vigor. Cotejo curricular ITIC Academy: El bloque 42 incluye gestión, FCAPS y la arquitectura de gestión TMN de la UIT-T; el número y alcance concretos de M.3010 se comprobaron directamente en el catálogo oficial UIT-T. Correspondencia: A1-108, A1-118; A2-IV-9. La academia sirve de encuadre curricular, no sustituye la evidencia normativa/técnica."
+      }
     },
     {
       "id": 3421,
