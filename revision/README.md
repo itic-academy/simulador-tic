@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 609 (IDs 3361–3365). Acumulado: 3365 preguntas examinadas individualmente, 3288 verificadas (682 vigentes, 2358 corregidas y 248 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8758 sin revisar individualmente. Hay 2702 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 609 (IDs 3361–3365). Acumulado: 3365 preguntas examinadas individualmente, 3288 verificadas (682 vigentes, 2357 corregidas y 249 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8758 sin revisar individualmente. Hay 2702 preguntas con cambios en enunciado, opciones o clave frente al original, calculado comparando los registros completos.
 
 ## Lote 609 — 30 de octubre
 

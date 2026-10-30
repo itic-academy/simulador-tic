@@ -8,7 +8,7 @@ const records = [
     {url:'https://www.boe.es/buscar/act.php?id=BOE-A-2008-979',referencia:'Real Decreto 1720/2007, art. 96: auditoría al menos bienal en el régimen anterior para ficheros con medidas de seguridad de nivel alto.'},
     {url:'https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32016R0679',referencia:'RGPD, art. 32: seguridad adecuada al riesgo; no establece un plazo general bienal de auditoría.'},
     {url:'https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673',referencia:'LO 3/2018, disposición derogatoria única: derogación de disposiciones incompatibles con el RGPD y la ley orgánica.'}
-  ], '', 'Se acota la pregunta al marco histórico del art. 96 del RD 1720/2007 y a los tratamientos que entonces requerían medidas de nivel alto; no era una auditoría bienal universal para toda aplicación con datos personales. Hoy RGPD art. 32 exige medidas de seguridad adecuadas al riesgo, sin una periodicidad general de dos años para auditoría. Una prueba técnica autorizada puede aportar evidencia, no sustituir la evaluación organizativa y jurídica. Histórica. A1-27/A1-38/A1-82; A2-I-7/A2-II-11.'],
+  ], '', 'Se acota la pregunta al marco histórico del art. 96 del RD 1720/2007 y a los tratamientos que entonces requerían medidas de nivel alto; no era una auditoría bienal universal para toda aplicación con datos personales. Hoy RGPD art. 32 exige medidas de seguridad adecuadas al riesgo, sin una periodicidad general de dos años para auditoría. Una prueba técnica autorizada puede aportar evidencia, no sustituir la evaluación organizativa y jurídica. Histórica. A1-27/A1-38/A1-82; A2-I-7/A2-II-11.', 'historica'],
 ];
 const edits = {
   3361: {texto:'Según la definición clásica de PMI/PMBOK, un proyecto es:'},
