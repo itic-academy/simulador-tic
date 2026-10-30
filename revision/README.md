@@ -1,7 +1,26 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 583 (IDs 3231–3235). Acumulado: 3235 preguntas examinadas individualmente, 3162 verificadas (654 vigentes, 2266 corregidas y 242 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8888 sin revisar individualmente. Hay 2589 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 584 (IDs 3236–3240). Acumulado: 3240 preguntas examinadas individualmente, 3167 verificadas (655 vigentes, 2269 corregidas y 243 históricas) y 73 pendientes documentadas (34 de fuente y 39 de ambigüedad); quedan 8883 sin revisar individualmente. Hay 2592 preguntas con cambios en enunciado, opciones o clave respecto del original, calculado comparando los registros completos.
 
+## Lote 584 — 30 de octubre
+
+IDs 3236–3240 revisados individualmente. Se confirmaron las definiciones de WSDL y la cláusula HAVING; se delimitó el principio de reutilización SOA para evitar ambigüedad; se conservó como conocimiento histórico la referencia a Kugar en KOffice; y se actualizó Android para distinguir manifiesto y configuración Gradle. Los originales están en [cambios-lote-584.json](cambios-lote-584.json).
+
+- **3236 — WSDL:** lenguaje XML que describe la interfaz, los mensajes y los endpoints de servicios web; no es UDDI ni SOAP. A1-65; A2-III-12/A2-II-9.
+
+- **3237 — SOA:** se concretó el enunciado en el principio de reutilización de servicios. El original no permitía decidir de modo universal qué opción no era un «principio guía». A1-58; A2-II-6/A2-III-12.
+
+- **3238 — Kugar:** la clave es válida en el contexto histórico de KOffice; KOffice ya no se mantiene, así que no se presenta como software actual. A1-72; A2-II-5.
+
+- **3239 — Android:** el nivel API mínimo se expresa mediante minSdkVersion en el manifiesto o la configuración equivalente de Gradle; el manifiesto también declara permisos. A1-124; A2-II-2.
+
+- **3240 — SQL:** GROUP BY define los grupos y, en la consulta agrupada habitual, precede a HAVING, que filtra esos grupos. Se acotó el stem porque HAVING puede aparecer también sin GROUP BY. A1-64; A2-II-5.
+
+Fuentes primarias: [W3C WSDL 2.0](https://www.w3.org/TR/wsdl20/); [Oracle SOA Suite Developer’s Guide](https://docs.oracle.com/cd/B31017_01/core.1013/b28764/designing001.htm); [Manifiesto SOA](https://soa-manifesto.org/default_spanish.html); [KDE, anuncio de KOffice 1.1.1](https://kde.org/announcements/koffice-1.1.1/); [KDE UserBase, KOffice](https://userbase.kde.org/KOffice); [Android Developers, manifest](https://developer.android.com/guide/topics/manifest/manifest-intro.html) y [uses-sdk](https://developer.android.com/guide/topics/manifest/uses-sdk-element); [PostgreSQL 18, SELECT](https://www.postgresql.org/docs/current/sql-select.html). Clasificación comprobada contra `temario-oficial.json` y convocatorias GSI identificadas en BOE: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Se consultó asimismo la OEP 2026; es una oferta y no sustituye el programa/bases específicos de cada proceso.
+
+Cotejo ITIC Academy: [bloque 30 Tecnologías de Sistemas de Información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk), [bloque 28 SOA y requisitos no funcionales](https://docs.google.com/document/d/1ZwZ2asNDNfv6NhMeoJa_gCuy5i681jLR/edit?usp=drivesdk), [bloque 29 Bases de datos y SQL](https://docs.google.com/document/d/16itbf_Mo8uQ4MKEEX2V-VFMEwyeL7n3F/edit?usp=drivesdk), [bloque 47 Aplicaciones móviles y sistemas operativos](https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk) y [material de 2025 de los temas 65–77, incluida generación de informes](https://drive.google.com/file/d/1zk8UbyZCGo2GZrgnrA4aiwQxa8zi6S7U/view?usp=drivesdk). El material de Academy orienta el encaje curricular; la clave se sustenta en las fuentes primarias indicadas.
+
+Tras el lote se ejecutaron `inventario.cjs`, `verificar.cjs` y `git diff --check`. El recuento de inventario no se confunde con comprobación individual del contenido.
 ## Lote 583 — 30 de octubre
 
 IDs 3231–3235 revisados individualmente. Se verificaron la finalidad de ENAC y el límite de la topología FC-AL; se corrigió una pregunta que presentaba un porcentaje estimado antiguo como disponibilidad Tier II garantizada y otra que tenía dos respuestas correctas sobre RAID 10/RAID 6. Se conservaron las formulaciones de caché que siguen siendo correctas y se añadieron explicaciones y fuentes. Los originales completos están en [cambios-lote-583.json](cambios-lote-583.json).
