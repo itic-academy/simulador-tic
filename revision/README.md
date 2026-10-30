@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 30 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 614 (IDs 3386–3390). Acumulado: 3390 preguntas examinadas individualmente, 3313 verificadas (685 vigentes, 2377 corregidas y 251 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8733 sin revisar individualmente. Hay 2724 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 615 (IDs 3391–3395). Acumulado: 3395 preguntas examinadas individualmente, 3318 verificadas (685 vigentes, 2382 corregidas y 251 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8728 sin revisar individualmente. Hay 2729 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 615 — 30 de octubre
+
+IDs 3391–3395 revisados individualmente; originales y evidencias se conservan en [cambios-lote-615.json](cambios-lote-615.json). Se precisó el flujo ETL frente a ELT; se acotó la minería por verificación a su distinción conceptual clásica; se corrigió el hito histórico de Mosaic; se hizo explícita la hipótesis de claves simétricas por pareja y se advirtió que DES está obsoleto; y se precisó el rol de ITU-T para X.500/ISO/IEC 9594.
+- **3391 — ETL:** el flujo clásico extrae, transforma y carga datos al almacén; ELT es una alternativa distinta. **Corregida.** A1-75; A2-II-4.
+- **3392 — minería por verificación:** contrasta hipótesis previas del usuario; no debe confundirse con el descubrimiento de patrones no especificados. **Corregida.** A1-75; A2-III-15.
+- **3393 — Mosaic:** desarrollado por NCSA y publicado en 1993; fue el primer navegador gráfico de amplia difusión, no el primer navegador web absoluto. **Corregida.** A1-109; A2-IV-13.
+- **3394 — claves simétricas:** en red completa con clave separada por pareja, cada nodo mantiene n−1 claves y la red n(n−1)/2; DES se conserva solo como ejemplo histórico, pues NIST lo retiró en 2005. **Corregida.** A1-79/A1-125; A2-II-13/A2-IV-12.
+- **3395 — X.500:** las recomendaciones las mantiene ITU-T SG17 y se publican como normas comunes/idénticas ISO/IEC 9594; se amplió la descripción del servicio de directorio. **Corregida.** A1-80/A1-122; sin epígrafe A2 directo.
+
+Fuentes primarias: [Microsoft Learn, ETL](https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/etl); [Fayyad, Piatetsky-Shapiro y Smyth, «From Data Mining to Knowledge Discovery in Databases», KDD-96](https://doi.org/10.1609/aimag.v17i3.1230); [NCSA, historia institucional](https://www.ncsa.illinois.edu/about/history/); [Open University, sistemas de clave simétrica](https://www.open.edu/openlearn/mod/oucontent/view.php?id=2907&section=4.2); [NIST, retirada de DES/FIPS 46-3](https://www.nist.gov/news-events/news/2005/06/nist-withdraws-outdated-data-encryption-standard); [ITU-T X.500 (10/2019), estado en vigor y mantenimiento SG17](https://www.itu.int/ITU-T/recommendations/rec.aspx?id=14031).
+
+Cotejo curricular: ITIC Academy [bloque 34, Business Intelligence y Big Data, versión 2026.1](https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk) (A1-71/75 y A2 T4/D15); [bloque 42, Redes, versión 2026](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) (A1-109); [bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026](https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk) (A1-79/80 y materias A2 conexas); [bloque 48, Seguridad en redes, versión 2026](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk); y [bloque 45, Correo, mensajería y servicios de directorio, versión 2026.1](https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view?usp=drivesdk). La academia documenta el temario; las respuestas técnicas se apoyan en las fuentes primarias citadas. Clasificación cotejada con [programa A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [programa A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y revision/temario-oficial.json.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check; la comprobación de estructura no sustituye la revisión individual del contenido.
 
 ## Lote 614 — 30 de octubre
 
