@@ -1,0 +1,19 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),dir=__dirname,bankPath=path.join(dir,'..','preguntas_preparatic.json'),logPath=path.join(dir,'cambios-lote-653.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ multicriteria:{url:'https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk',title:'ITIC Academy 2026, bloque 17 de adquisición, viabilidad y evaluación de alternativas'},
+ security:{url:'https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk',title:'ITIC Academy 2026, bloque 48 Seguridad en Redes y Aplicaciones'},
+ signature:{url:'https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk',title:'ITIC Academy 2026, bloque 36 Identificación, Firma y Seguridad'},
+ interoperability:{url:'https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view',title:'ITIC Academy 2026, bloque 20 Interoperabilidad de Sistemas'},
+ networking:{url:'https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view',title:'ITIC Academy 2026, bloques 42 Redes y 43 Protocolos'}
+};
+const m={
+ 3581:{a1:[40],a2:['II-15'],use:[docs.multicriteria],detail:'El bloque aborda evaluación multicriterio/alternativas y rentabilidad; encaje A1-40/A2-II-15.'},
+ 3582:{a1:[125],a2:['IV-12'],use:[docs.security],detail:'El bloque trata TLS/SSL, criptografía y protocolos seguros; encaje A1-125/A2-IV-12. La pregunta se etiqueta histórica por referirse a SSLv3.'},
+ 3583:{a1:[46,80],a2:['I-6','I-9'],use:[docs.signature,docs.interoperability],detail:'Los bloques 36 y 20 cubren identificación/firma, plataformas de validación y servicios comunes; encaje A1-46/A1-80/A2-I-6/I-9.'},
+ 3584:{a1:[46,49],a2:['I-10'],use:[docs.interoperability],detail:'El bloque 20 cubre intercambio de información e interoperabilidad entre sistemas; encaje A1-46/A1-49/A2-I-10. El alcance clínico concreto se verifica en el Ministerio de Sanidad.'},
+ 3585:{a1:[115],a2:['IV-8'],use:[docs.networking],detail:'Los bloques 42–43 cubren redes TCP/IP y protocolos; encaje A1-115/A2-IV-8. El dato concreto se contrasta con RFC 1006 y RFC 2126.'}
+};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(dir,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),x=m[c.id];assert.ok(q?.revision&&x);for(const id of [...x.a1.map(n=>`A1-${n}`),...x.a2.map(n=>`A2-${n}`)])assert.ok(official.has(id),`Tema no oficial: ${id}`);q.clasificacion={...q.clasificacion,A1:x.a1.map(n=>`A1-${n}`),A2:x.a2.map(n=>`A2-${n}`),bloque_academia:`${x.use.map(d=>`${d.title}: ${x.detail} ${d.url}`).join(' | ')} Correspondencia revisada frente a revision/temario-oficial.json y los anexos de las convocatorias oficiales.`,estado:'revisada',nota:'Cotejo curricular registrado; las respuestas se contrastan con fuentes oficiales/técnicas primarias.'};q.revision.observaciones+=` Cotejo Academy: ${x.detail}`;for(const d of x.use)q.revision.fuentes.push({url:d.url,referencia:`${d.title}. ${x.detail}`});q.revision.fuentes.push({url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:`Convocatoria A1 BOE-A-2025-25938, anexo I; temas: ${x.a1.map(n=>`A1-${n}`).join(', ')}.`},{url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:`Convocatoria A2 GSI BOE-A-2025-26262, anexo IX; temas: ${x.a2.map(n=>`A2-${n}`).join(', ')}.`});c.actualizada=structuredClone(q);}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo ITIC Academy, convocatorias y temario oficial completado para IDs 3581–3585.');

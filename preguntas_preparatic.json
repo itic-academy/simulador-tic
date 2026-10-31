@@ -175539,71 +175539,387 @@
       "id": 3581,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique qué concepto NO interviene en el método de ponderación lineal:",
+      "texto": "En el método multicriterio de suma lineal ponderada, aplicado a puntuaciones transformadas de alternativas, ¿qué concepto NO forma parte del cálculo aditivo?",
       "opciones": [
-        "Puntuaciones normalizadas.",
-        "Factor de ponderación de los criterios.",
-        "Coeficiente de concordancia.",
-        "Función de valor o de evaluación."
+        "Valores o puntuaciones de las alternativas en cada criterio, transformados a una escala comparable.",
+        "Coeficientes de ponderación de los criterios.",
+        "Coeficiente de concordancia de ELECTRE como condición de sobreclasificación.",
+        "Agregación mediante una función de valor aditiva/lineal."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "En la suma ponderada se agregan linealmente valores de criterios con pesos. El índice de concordancia se asocia a métodos ELECTRE de sobreclasificación, no al cálculo aditivo elemental. El reactivo se limita a suma ponderada aplicada a valores transformados para fijar respuesta única.",
+      "clasificacion": {
+        "A1": [
+          "A1-40"
+        ],
+        "A2": [
+          "A2-II-15"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 17 de adquisición, viabilidad y evaluación de alternativas: El bloque aborda evaluación multicriterio/alternativas y rentabilidad; encaje A1-40/A2-II-15. https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk Correspondencia revisada frente a revision/temario-oficial.json y los anexos de las convocatorias oficiales.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular registrado; las respuestas se contrastan con fuentes oficiales/técnicas primarias."
+      },
+      "etiquetas": [
+        "ponderación lineal",
+        "suma ponderada",
+        "función de valor",
+        "concordancia",
+        "ELECTRE"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://user.iiasa.ac.at/~marek/mca_doc/pdf_needs/mc.pdf",
+            "referencia": "Granat y Makowski, metodología multicriterio NEEDS, sección 4.4.1 Weighted Sum: agregación aditiva de valores transformados vi(qi) mediante coeficientes de ponderación wi."
+          },
+          {
+            "url": "https://www.numdam.org/item/RO_1968__2_1_57_0.pdf",
+            "referencia": "B. Roy, “Classement et choix en présence de points de vue multiples”, 1968: origen del enfoque ELECTRE de sobreclasificación, distinto de la suma lineal ponderada."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 17, adquisición, viabilidad y decisión multicriterio; cotejo temático. La definición se apoya en literatura técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I; evaluación de alternativas y rentabilidad, tema A1-40."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX; técnicas de evaluación multicriterio, planificación y viabilidad, A2-II-15."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 17 de adquisición, viabilidad y evaluación de alternativas. El bloque aborda evaluación multicriterio/alternativas y rentabilidad; encaje A1-40/A2-II-15."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I; temas: A1-40."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX; temas: A2-II-15."
+          }
+        ],
+        "observaciones": "En la suma ponderada se agregan linealmente valores de criterios con pesos. El índice de concordancia se asocia a métodos ELECTRE de sobreclasificación, no al cálculo aditivo elemental. El reactivo se limita a suma ponderada aplicada a valores transformados para fijar respuesta única."
+      }
     },
     {
       "id": 3582,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale cuál de entre los protocolos que componen SSL reside al nivel más bajo y proporciona el encapsulado a los protocolos del nivel superior:",
+      "texto": "Según la arquitectura histórica de SSL 3.0 descrita en RFC 6101, ¿qué protocolo reside en la capa inferior de SSL y encapsula los protocolos de nivel superior?",
       "opciones": [
-        "Record.",
-        "Handshake.",
-        "Alert.",
-        "Change Cipher Spec."
+        "SSL Record Protocol.",
+        "SSL Handshake Protocol.",
+        "SSL Alert Protocol.",
+        "Change Cipher Spec Protocol."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "RFC 6101 sitúa SSL Record en la capa baja de SSL 3.0 y describe que encapsula protocolos superiores, incluido Handshake. Se precisa la versión y se marca como histórico: SSLv3 está obsoleto conforme a RFC 7568 y no debe utilizarse.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 48 Seguridad en Redes y Aplicaciones: El bloque trata TLS/SSL, criptografía y protocolos seguros; encaje A1-125/A2-IV-12. La pregunta se etiqueta histórica por referirse a SSLv3. https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk Correspondencia revisada frente a revision/temario-oficial.json y los anexos de las convocatorias oficiales.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular registrado; las respuestas se contrastan con fuentes oficiales/técnicas primarias."
+      },
+      "etiquetas": [
+        "SSL 3.0",
+        "Record Protocol",
+        "encapsulado",
+        "Handshake",
+        "protocolo histórico",
+        "TLS"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://datatracker.ietf.org/doc/html/rfc6101",
+            "referencia": "IETF RFC 6101 §1: en SSL 3.0, el SSL Record Protocol es la capa más baja sobre un transporte fiable y encapsula protocolos de nivel superior, incluido Handshake."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc7568.html",
+            "referencia": "IETF RFC 7568: declara obsoleto SSLv3 y prohíbe negociar su uso; la respuesta describe una arquitectura histórica y no una recomendación de seguridad actual."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 48 Seguridad en Redes y Aplicaciones, protocolos TLS/seguridad de comunicaciones; cotejo temático."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I; seguridad en redes A1-125."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX; técnicas criptográficas y protocolos seguros A2-IV-12."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 48 Seguridad en Redes y Aplicaciones. El bloque trata TLS/SSL, criptografía y protocolos seguros; encaje A1-125/A2-IV-12. La pregunta se etiqueta histórica por referirse a SSLv3."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I; temas: A1-125."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX; temas: A2-IV-12."
+          }
+        ],
+        "observaciones": "RFC 6101 sitúa SSL Record en la capa baja de SSL 3.0 y describe que encapsula protocolos superiores, incluido Handshake. Se precisa la versión y se marca como histórico: SSLv3 está obsoleto conforme a RFC 7568 y no debe utilizarse."
+      }
     },
     {
       "id": 3583,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale qué servicio NO es ofrecido por el portal VALIDe:",
+      "texto": "Según la ficha de servicios de VALIDe publicada en PAe-CTT, ¿cuál de estas funciones NO se enumera entre las ofrecidas?",
       "opciones": [
-        "Validación de sede electrónica.",
-        "Realización de firma electrónica.",
-        "Visualización de firma electrónica.",
-        "Renovación de certificado electrónico."
+        "Validar el certificado de una sede electrónica.",
+        "Realizar una firma electrónica de un documento.",
+        "Visualizar una firma y descargar el justificante correspondiente.",
+        "Renovar un certificado electrónico."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La ficha oficial PAe-CTT (estado indicado: Producción) enumera validación de certificado y certificado de sede, validación/generación de firma y visualización de firma. No ofrece renovación del certificado; esta depende del prestador/autoridad correspondiente. Se pregunta por las funciones catalogadas, pues la ficha conserva detalles de interfaz antigua.",
+      "clasificacion": {
+        "A1": [
+          "A1-46",
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-I-9"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 36 Identificación, Firma y Seguridad: Los bloques 36 y 20 cubren identificación/firma, plataformas de validación y servicios comunes; encaje A1-46/A1-80/A2-I-6/I-9. https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk | ITIC Academy 2026, bloque 20 Interoperabilidad de Sistemas: Los bloques 36 y 20 cubren identificación/firma, plataformas de validación y servicios comunes; encaje A1-46/A1-80/A2-I-6/I-9. https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view Correspondencia revisada frente a revision/temario-oficial.json y los anexos de las convocatorias oficiales.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular registrado; las respuestas se contrastan con fuentes oficiales/técnicas primarias."
+      },
+      "etiquetas": [
+        "VALIDe",
+        "validación de certificados",
+        "certificado de sede",
+        "firma electrónica",
+        "visualización de firma",
+        "renovación de certificado"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/ctt/valide",
+            "referencia": "PAe-CTT, ficha oficial VALIDe: servicio en producción; enumera Validar Certificado, Validar Certificado de Sede, Validar Firma, Realizar Firma y Visualizar firma. No enumera renovación de certificados."
+          },
+          {
+            "url": "https://administracionelectronica.gob.es/ctt/afirma",
+            "referencia": "PAe-CTT, plataforma @firma, servicios de validación y firma electrónica relacionados con VALIDe."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 36 Identificación, Firma y Seguridad; cotejo curricular de certificados y firma."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view",
+            "referencia": "ITIC Academy 2026, bloque 20 Interoperabilidad de Sistemas; servicios comunes y validación electrónica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I; interoperabilidad/identificación, A1-46/A1-80."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX; identidad y firma electrónica, A2-I-6/I-9."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 36 Identificación, Firma y Seguridad. Los bloques 36 y 20 cubren identificación/firma, plataformas de validación y servicios comunes; encaje A1-46/A1-80/A2-I-6/I-9."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view",
+            "referencia": "ITIC Academy 2026, bloque 20 Interoperabilidad de Sistemas. Los bloques 36 y 20 cubren identificación/firma, plataformas de validación y servicios comunes; encaje A1-46/A1-80/A2-I-6/I-9."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I; temas: A1-46, A1-80."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX; temas: A2-I-6, A2-I-9."
+          }
+        ],
+        "observaciones": "La ficha oficial PAe-CTT (estado indicado: Producción) enumera validación de certificado y certificado de sede, validación/generación de firma y visualización de firma. No ofrece renovación del certificado; esta depende del prestador/autoridad correspondiente. Se pregunta por las funciones catalogadas, pues la ficha conserva detalles de interfaz antigua."
+      }
     },
     {
       "id": 3584,
       "bloque": 0,
       "tema": 0,
-      "texto": "En cuanto a la Historia Clínica Digital del Sistema Nacional de Salud, señale cuál de las siguientes afirmaciones es Incorrecta:",
+      "texto": "Sobre la Historia Clínica Digital del Sistema Nacional de Salud (HCDSNS), señale la afirmación INCORRECTA sobre su alcance funcional:",
       "opciones": [
-        "Se ha implementado por mandato legal, tanto por la Ley 16/2003 de cohesión y calidad del Sistema Nacional de Salud, como por la Ley 41/2002 de Autonomía del Paciente.",
-        "Permite que los profesionales sanitarios puedan acceder a los datos de salud del paciente, cuando este se encuentre desplazado fuera de su Comunidad Autónoma de origen y requiera asistencia sanitaria.",
-        "De acuerdo a su diseño funcional, permite acceder a la totalidad de los contenidos existentes en la Historia Clínica Electrónica de las Comunidades Autónomas.",
-        "Gracias a ella, de acuerdo al informe CORA de Febrero de 2016, ya son 25,5 millones de ciudadanos los que disponen de informes clínicos en el Sistema Nacional de Salud."
+        "Se enmarca en la cooperación e intercambio de información clínica previstos por la legislación sanitaria y de autonomía del paciente.",
+        "Cuando lo solicita el ciudadano, profesionales autorizados pueden consultar información clínica relevante necesaria si recibe asistencia en otra comunidad autónoma.",
+        "Da acceso indiscriminado a la totalidad de contenidos existentes en las historias clínicas electrónicas de las comunidades autónomas.",
+        "El balance CORA presentado en febrero de 2016 informó que 25,5 millones de ciudadanos disponían de informes clínicos en el SNS."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se conserva como dato histórico la cifra CORA: el balance publicado el 12-02-2016 informó de 25,5 millones de ciudadanos con informes clínicos disponibles. La afirmación incorrecta es el acceso indiscriminado a todas las historias autonómicas: Sanidad describe conjuntos clínicos relevantes/resumen y acceso sujeto a controles. Se cambia “mandato legal” por “marco legal” para no atribuir a las leyes una orden literal del proyecto concreto.",
+      "clasificacion": {
+        "A1": [
+          "A1-46",
+          "A1-49"
+        ],
+        "A2": [
+          "A2-I-10"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 20 Interoperabilidad de Sistemas: El bloque 20 cubre intercambio de información e interoperabilidad entre sistemas; encaje A1-46/A1-49/A2-I-10. El alcance clínico concreto se verifica en el Ministerio de Sanidad. https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view Correspondencia revisada frente a revision/temario-oficial.json y los anexos de las convocatorias oficiales.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular registrado; las respuestas se contrastan con fuentes oficiales/técnicas primarias."
+      },
+      "etiquetas": [
+        "HCDSNS",
+        "Historia Clínica Digital del SNS",
+        "interoperabilidad sanitaria",
+        "resumen clínico",
+        "CORA 2016",
+        "acceso transfronterizo"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.sanidad.gob.es/profesionales/hcdsns/contenidoDoc/Antec_e_historial.htm",
+            "referencia": "Ministerio de Sanidad, antecedentes HCDSNS: finalidad de atender a pacientes fuera de su comunidad y compartir conjuntos de datos clínicamente relevantes que resumen lo esencial; no acceso indiscriminado a toda la historia autonómica."
+          },
+          {
+            "url": "https://www.sanidad.gob.es/areas/saludDigital/historiaClinicaSNS/",
+            "referencia": "Ministerio de Sanidad, página vigente de HCDSNS: las CCAA comparten información clínica relevante; acceso condicionado a solicitud del ciudadano y a profesionales autorizados."
+          },
+          {
+            "url": "https://www.boe.es/eli/es/l/2003/05/28/16/con",
+            "referencia": "Ley 16/2003, de cohesión y calidad del SNS, texto consolidado; marco de coordinación, cooperación e interoperabilidad sanitaria."
+          },
+          {
+            "url": "https://www.boe.es/eli/es/l/2002/11/14/41/con",
+            "referencia": "Ley 41/2002, de autonomía del paciente; derechos y documentación/información clínica."
+          },
+          {
+            "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2016/120216-consejo.aspx",
+            "referencia": "La Moncloa, referencia contemporánea de 12-02-2016: 25,5 millones de ciudadanos disponían de informes clínicos compartidos en el SNS gracias a HCD interoperable; dato histórico fechado."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view",
+            "referencia": "ITIC Academy 2026, bloque 20 Interoperabilidad de Sistemas; intercambio de información, interoperabilidad y documentos electrónicos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I; servicios comunes/interoperabilidad, A1-46/A1-49."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX; cooperación e infraestructuras comunes, A2-I-10."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view",
+            "referencia": "ITIC Academy 2026, bloque 20 Interoperabilidad de Sistemas. El bloque 20 cubre intercambio de información e interoperabilidad entre sistemas; encaje A1-46/A1-49/A2-I-10. El alcance clínico concreto se verifica en el Ministerio de Sanidad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I; temas: A1-46, A1-49."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX; temas: A2-I-10."
+          }
+        ],
+        "observaciones": "Se conserva como dato histórico la cifra CORA: el balance publicado el 12-02-2016 informó de 25,5 millones de ciudadanos con informes clínicos disponibles. La afirmación incorrecta es el acceso indiscriminado a todas las historias autonómicas: Sanidad describe conjuntos clínicos relevantes/resumen y acceso sujeto a controles. Se cambia “mandato legal” por “marco legal” para no atribuir a las leyes una orden literal del proyecto concreto."
+      }
     },
     {
       "id": 3585,
       "bloque": 0,
       "tema": 0,
-      "texto": "La recomendación RFC-1006 define:",
+      "texto": "¿Qué especifica RFC 1006, “ISO Transport Service on top of the TCP”?",
       "opciones": [
-        "Funciones de un protocolo de red",
-        "El protocolo de transporte TCP",
-        "El protocolo de transporte UDP",
-        "Protocolo de convergencia de TCP a TP0"
+        "Un conjunto de funciones de un protocolo de red sin relación con transporte ISO.",
+        "El propio protocolo de transporte TCP.",
+        "El protocolo de transporte UDP.",
+        "Cómo ofrecer el servicio de transporte ISO mediante TP0 sobre TCP/IP."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "RFC 1006 ofrece servicio de transporte ISO mediante TP0 sobre TCP/IP; no es el propio TCP ni UDP. Se formula con precisión y se fecha como memo de 1987, actualizado posteriormente por RFC 2126 (ITOT).",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloques 42 Redes y 43 Protocolos: Los bloques 42–43 cubren redes TCP/IP y protocolos; encaje A1-115/A2-IV-8. El dato concreto se contrasta con RFC 1006 y RFC 2126. https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view Correspondencia revisada frente a revision/temario-oficial.json y los anexos de las convocatorias oficiales.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular registrado; las respuestas se contrastan con fuentes oficiales/técnicas primarias."
+      },
+      "etiquetas": [
+        "RFC 1006",
+        "ISO TP0",
+        "TCP/IP",
+        "servicio de transporte",
+        "RFC 2126",
+        "estándar histórico"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://datatracker.ietf.org/doc/html/rfc1006",
+            "referencia": "IETF RFC 1006, título “ISO Transport Service on top of the TCP”; §1 y §3 especifican ISO TP0 sobre TCP/IP para ofrecer el servicio de transporte ISO."
+          },
+          {
+            "url": "https://www.rfc-editor.org/info/rfc1006/",
+            "referencia": "RFC Editor, estado y relaciones de RFC 1006: documento de 1987, obsoleta RFC 983 y actualizado por RFC 2126."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc2126.html",
+            "referencia": "IETF RFC 2126, especificación posterior ISO Transport Service on top of TCP (ITOT), que actualiza RFC 1006."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view",
+            "referencia": "ITIC Academy 2026, bloques 42 Redes y 43 Protocolos; redes TCP/IP y protocolos de transporte."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I; redes/protocolos, A1-115."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX; redes locales, tipología y protocolos, A2-IV-8."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view",
+            "referencia": "ITIC Academy 2026, bloques 42 Redes y 43 Protocolos. Los bloques 42–43 cubren redes TCP/IP y protocolos; encaje A1-115/A2-IV-8. El dato concreto se contrasta con RFC 1006 y RFC 2126."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I; temas: A1-115."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX; temas: A2-IV-8."
+          }
+        ],
+        "observaciones": "RFC 1006 ofrece servicio de transporte ISO mediante TP0 sobre TCP/IP; no es el propio TCP ni UDP. Se formula con precisión y se fecha como memo de 1987, actualizado posteriormente por RFC 2126 (ITOT)."
+      }
     },
     {
       "id": 3586,
