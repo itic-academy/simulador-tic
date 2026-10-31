@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 666 (IDs 3646–3650). Acumulado: 3650 preguntas examinadas individualmente, 3572 verificadas (708 vigentes, 2597 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8473 sin revisar individualmente. Hay 2980 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 667 (IDs 3651–3655). Acumulado: 3655 preguntas examinadas individualmente, 3577 verificadas (708 vigentes, 2602 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8468 sin revisar individualmente. Hay 2985 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 667 — 31 de octubre de 2026
+
+IDs 3651–3655 revisados individualmente; el estado original completo de cada pregunta se conserva en [cambios-lote-667.json](cambios-lote-667.json). Los cinco reactivos quedan corregidos:
+- **3651 — ventajas de Grid:** el original tenía más de una opción falsa (obsolescencia y compatibilidad universal de aplicaciones). Se pregunta por la garantía que Grid no ofrece: eliminar la obsolescencia del hardware. Se matiza que ahorro y rendimiento dependen de la carga, la red, las licencias y la operación. **Corregida.** A1-52/A2-II-1.
+- **3652 — niveles SSI:** se acota a la taxonomía de ejemplos citada para Sun Cluster 2.2 (hardware, sistema operativo y aplicación). En ese listado concreto, red no figura como nivel; se advierte que existen taxonomías SSI diferentes. **Corregida.** A1-52/A2-II-1.
+- **3653 — NUMA frente a SMP:** se reemplaza la generalización de “más de un bus” por el rasgo arquitectónico sustentado: CPU y memoria local organizadas en nodos, unidos por una interconexión, con latencias no uniformes y posible coherencia ccNUMA. **Corregida.** A1-52/A2-II-1.
+- **3654 — descubrimiento de recursos Grid:** se sustituye “escalabilidad parametrizable” por el descubrimiento y selección de recursos según requisitos, permisos y políticas. **Corregida.** A1-52/A2-II-1.
+- **3655 — MOSIX:** se describe MOSIX según la guía versionada 2.28.0.0 (2010): sistema de gestión HPC para clústeres Linux x86 de 32/64 bits, multiclústeres y nubes; la fecha se incluye para no atribuirlo sin evidencia a una versión actual. **Corregida.** A1-52/A2-II-1.
+
+Fuentes técnicas: Foster, Kesselman y Tuecke, [“The Anatomy of the Grid”](https://doi.org/10.1177/109434200101500302) y [registro académico APICe](https://apice.unibo.it/bin/view/Publication/FosterGrid01), sobre compartición flexible y descubrimiento de recursos; Vargas, Bianco y Deeths, [Sun Cluster Environment: Sun Cluster 2.2, SSI](https://www.oreilly.com/library/view/suntm-cluster-environment/0130418706/0130418706_ch02lev1sec2.html), para los niveles de su taxonomía; Microsoft, [NUMA Support](https://learn.microsoft.com/en-us/windows/win32/procthread/numa-support), y Linux Kernel, [What is NUMA?](https://docs.kernel.org/mm/numa.html), para nodos, latencia y coherencia; Barak y Shiloh, [MOSIX 2.28 User’s and Administrator’s Guide](https://sci.hkbu.edu.hk/itservice/mosix/docs/Guide.pdf), prefacio, enero de 2010.
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), usado como orientación curricular y no como prueba de las claves. Correspondencia oficial A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), cotejados con [temario-oficial.json](temario-oficial.json) el 31-10-2026. Las convocatorias verifican el encaje; las fuentes técnicas sustentan las respuestas.
+
+Comprobaciones ejecutadas: inventario de 12.123 preguntas (cero errores; 12 grupos repetidos y 65 candidatos automáticos para evaluar), verificador de 3.655 registros (cero errores; 8.468 preguntas restantes idénticas al original) y git diff --check limpio. El inventario automático no se cuenta como revisión de contenido.
 
 ## Lote 666 — 31 de octubre de 2026
 
