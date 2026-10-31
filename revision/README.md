@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 672 (IDs 3676–3680). Acumulado: 3680 preguntas examinadas individualmente, 3602 verificadas (710 vigentes, 2625 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8443 sin revisar individualmente. Hay 3008 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 673 (IDs 3681–3685). Acumulado: 3685 preguntas examinadas individualmente, 3607 verificadas (710 vigentes, 2630 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8438 sin revisar individualmente. Hay 3013 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 673 — 31 de octubre de 2026
+
+IDs 3681–3685 revisados individualmente; originales completos en [cambios-lote-673.json](cambios-lote-673.json). Se corrigen las cinco:
+- **3681 — UMA/SMP:** se concreta la relación de procesadores estrechamente acoplados con memoria compartida de acceso uniforme; se evita sugerir que un procesador dependa de la ejecución del otro. **Corregida.** A1-52/A2-II-1.
+- **3682 — SSI:** se identifica Single System Image como vista/gestión unificada de varios nodos y recursos, sin afirmar que toda implementación oculte toda heterogeneidad. **Corregida.** A1-52/A2-II-1.
+- **3683 — RISC:** se reemplaza un enunciado con varias afirmaciones absolutas por una propiedad respaldada: instrucciones simples y regulares que el compilador organiza/combina; RISC no impide optimizadores. **Corregida.** A1-52/A2-II-1.
+- **3684 — SMP frente a clúster:** se distingue memoria compartida en SMP de memoria propia por nodo y comunicación por red/paso de mensajes en clústeres; ambos ofrecen paralelismo. **Corregida.** A1-52/A2-II-1.
+- **3685 — CISC frente a RISC:** se puntualiza que microcódigo es común en implementaciones CISC, pero la ISA no exige una unidad de control concreta; se corrige el absoluto del original. **Corregida.** A1-52/A2-II-1.
+
+Fuentes técnicas: Oracle, [Parallel Hardware Architecture](https://docs.oracle.com/cd/A87862_01/NT817CLI/paraserv.817/a76968/pshwarch.htm), e IBM, [Shared memory MP](https://www.ibm.com/docs/en/aix/7.1.0?topic=multiprocessing-shared-memory-mp), para UMA/acoplamiento; IBM, [Overview of a single system image cluster](https://www.ibm.com/docs/en/zvm/7.2.0?topic=zvm-overview-single-system-image-cluster) y Healy et al., [SSI survey](https://doi.org/10.1016/j.jpdc.2016.01.004); IBM Redbooks, [IBM System Storage SAN Volume Controller](https://www.redbooks.ibm.com/redbooks/pdfs/sg247071.pdf) e IBM Research, [RISC primitives and compiler](https://research.ibm.com/publications/designing-a-programmable-wire-speed-regular-expression-matching-accelerator); IBM, [Parallel processing environments](https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments), y LLNL, [Introduction to Parallel Computing](https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial), para SMP/clúster; Intel, [XuCode: complex instruction flows](https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/secure-coding/xucode-implementing-complex-instruction-flows.html), para x86/CISC, micro-ops y microcode.
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), como contexto de organización curricular y no como evidencia técnica. Correspondencia con A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); cotejados con [temario-oficial.json](temario-oficial.json) el 31-10-2026.
+
+Comprobaciones de este lote: inventario 12.123 preguntas, cero errores (12 grupos repetidos y 65 candidatos automáticos, que no cuentan como revisiones); verificador de 3685 registros sin errores y 8438 preguntas aún idénticas al original; git diff --check limpio.
 
 ## Lote 672 — 31 de octubre de 2026
 

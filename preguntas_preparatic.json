@@ -181366,71 +181366,296 @@
       "id": 3681,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo son los multiprocesadores en los sistemas de gestión UMA?",
+      "texto": "En la organización convencional de multiprocesadores UMA/SMP, ¿cómo se relacionan los procesadores con la memoria y entre sí?",
       "opciones": [
-        "Fuertemente acoplados",
-        "Muy desacoplados",
-        "Un procesador no depende de lo que hace otro",
-        "Todas las respuestas con correctas"
+        "Comparten una memoria principal con acceso uniforme y están estrechamente acoplados.",
+        "Cada procesador tiene exclusivamente su propia memoria y se comunica solo por una red WAN.",
+        "Los procesadores no pueden ejecutar tareas concurrentes.",
+        "UMA significa que cada procesador accede a una región de memoria con una latencia distinta."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "UMA describe acceso uniforme a memoria, no por sí solo todas las propiedades del sistema; en la comparación convencional de multiprocesadores UMA/SMP, los procesadores comparten memoria y están estrechamente acoplados. Se aclara el término para no sugerir dependencia lógica entre CPU. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitecturas de sistemas, multiprocesamiento y clústeres. No se usa para probar definiciones de arquitectura.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+      },
+      "etiquetas": [
+        "UMA",
+        "uniform memory access",
+        "SMP",
+        "memoria compartida",
+        "acoplamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/cd/A87862_01/NT817CLI/paraserv.817/a76968/pshwarch.htm",
+            "referencia": "Oracle Parallel Server Concepts and Administration, Parallel Hardware Architecture: define UMA como memoria compartida accesible por todos los procesadores a igual coste y la clasifica entre sistemas fuertemente acoplados."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/aix/7.1.0?topic=multiprocessing-shared-memory-mp",
+            "referencia": "IBM AIX Documentation, Shared memory MP: procesadores estrechamente acoplados en el mismo sistema que comparten memoria global y se comunican por ella, sin necesitar paso de mensajes entre ellos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitecturas de sistemas, multiprocesamiento y clústeres. No se usa para probar definiciones de arquitectura."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), contrastada con revision/temario-oficial.json el 31-10-2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), contrastada con revision/temario-oficial.json el 31-10-2026."
+          }
+        ],
+        "observaciones": "UMA describe acceso uniforme a memoria, no por sí solo todas las propiedades del sistema; en la comparación convencional de multiprocesadores UMA/SMP, los procesadores comparten memoria y están estrechamente acoplados. Se aclara el término para no sugerir dependencia lógica entre CPU. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+      }
     },
     {
       "id": 3682,
       "bloque": 0,
       "tema": 0,
-      "texto": "En las tecnologías de clustering, la propiedad de un sistema que oculta la naturaleza heterogénea y distribuida de los recursos, y los presenta a los usuarios y a las aplicaciones como un recurso computacional unificado y sencillo se denomina:",
+      "texto": "En un clúster, ¿cómo se denomina el enfoque que presenta varios nodos y recursos distribuidos como un sistema o una imagen unificada?",
       "opciones": [
-        "VCS (Virtual Cluster Software)",
-        "SSI (Single System Image)",
-        "SA (System Availability)",
-        "AVS (Automatic Virtual System)"
+        "Virtual Cluster Software (VCS), como nombre genérico obligatorio.",
+        "Single System Image (SSI).",
+        "System Availability (SA).",
+        "Automatic Virtual System (AVS)."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "SSI (Single System Image) es el concepto que presenta un conjunto de nodos/recursos distribuidos como un sistema o recurso integrado para administración o uso. El software concreto puede ofrecer solo ciertas transparencias; no se afirma que toda heterogeneidad quede siempre completamente oculta. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitecturas de sistemas, multiprocesamiento y clústeres. No se usa para probar definiciones de arquitectura.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+      },
+      "etiquetas": [
+        "clúster",
+        "SSI",
+        "Single System Image",
+        "transparencia",
+        "recursos distribuidos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/zvm/7.2.0?topic=zvm-overview-single-system-image-cluster",
+            "referencia": "IBM z/VM Documentation, Overview of a single system image cluster: define un entorno multisistema cuyos miembros se gestionan como un único pool de recursos y permiten mover invitados entre sistemas."
+          },
+          {
+            "url": "https://doi.org/10.1016/j.jpdc.2016.01.004",
+            "referencia": "Healy, Lynn, Barrett y Morrison, “Single system image: A survey”, Journal of Parallel and Distributed Computing 90–91 (2016): revisa el concepto SSI y las formas de presentar sistemas distribuidos como una imagen unificada."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitecturas de sistemas, multiprocesamiento y clústeres. No se usa para probar definiciones de arquitectura."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), contrastada con revision/temario-oficial.json el 31-10-2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), contrastada con revision/temario-oficial.json el 31-10-2026."
+          }
+        ],
+        "observaciones": "SSI (Single System Image) es el concepto que presenta un conjunto de nodos/recursos distribuidos como un sistema o recurso integrado para administración o uso. El software concreto puede ofrecer solo ciertas transparencias; no se afirma que toda heterogeneidad quede siempre completamente oculta. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+      }
     },
     {
       "id": 3683,
       "bloque": 0,
       "tema": 0,
-      "texto": "La arquitectura RISC:",
+      "texto": "¿Cuál de las siguientes afirmaciones es característica de la filosofía RISC?",
       "opciones": [
-        "Se emplea sobre todo en estaciones de trabajo debido a sus altas prestaciones para el cálculo en coma flotante",
-        "Permite que con un juego sencillo de instrucciones se pueda disponer de todas las que se necesiten mediante el uso de la microprogramación",
-        "No es adaptable al sector de los microordenadores",
-        "Dificulta el diseño de compiladores optimizados"
+        "Emplea instrucciones relativamente simples y regulares que el compilador combina y planifica para generar operaciones complejas.",
+        "Exige una ISA con cientos de instrucciones complejas y microprogramadas.",
+        "No puede utilizarse en microordenadores ni en sistemas embebidos.",
+        "Impide crear compiladores optimizadores para la arquitectura."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "RISC no dificulta por definición la optimización de compiladores: la filosofía emplea operaciones simples y regulares que el compilador puede combinar y planificar. La opción anterior mezclaba generalizaciones históricas y más de una respuesta cuestionable, por lo que se reemplaza por una pregunta con una única propiedad bien sustentada. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitecturas de sistemas, multiprocesamiento y clústeres. No se usa para probar definiciones de arquitectura.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+      },
+      "etiquetas": [
+        "RISC",
+        "ISA",
+        "load/store",
+        "conjunto de instrucciones",
+        "compiladores"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg247071.pdf",
+            "referencia": "IBM Redbooks, IBM System Storage SAN Volume Controller: explica las características RISC como arquitectura sencilla e instrucciones optimizadas, uso load/store y dependencia de compilación optimizada para explotar el procesador."
+          },
+          {
+            "url": "https://research.ibm.com/publications/designing-a-programmable-wire-speed-regular-expression-matching-accelerator",
+            "referencia": "IBM Research, Designing a programmable wire-speed regular-expression matching accelerator: resume la filosofía RISC como primitivas sencillas que el compilador combina para implementar operaciones de nivel superior."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitecturas de sistemas, multiprocesamiento y clústeres. No se usa para probar definiciones de arquitectura."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), contrastada con revision/temario-oficial.json el 31-10-2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), contrastada con revision/temario-oficial.json el 31-10-2026."
+          }
+        ],
+        "observaciones": "RISC no dificulta por definición la optimización de compiladores: la filosofía emplea operaciones simples y regulares que el compilador puede combinar y planificar. La opción anterior mezclaba generalizaciones históricas y más de una respuesta cuestionable, por lo que se reemplaza por una pregunta con una única propiedad bien sustentada. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+      }
     },
     {
       "id": 3684,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la diferencia entre SMP y clustering:",
+      "texto": "En el modelo clásico, ¿qué diferencia de organización de memoria y comunicación suele distinguir un SMP de un clúster?",
       "opciones": [
-        "SMP utiliza memoria compartida y el clustering paso de mensaje",
-        "SMP utiliza paralelismo puro y el clustering memoria compartida",
-        "SMP utiliza memoria compartida y el clustering paralelismo puro",
-        "SMP utiliza memoria compartida y el clustering paralelismo de datos"
+        "SMP comparte memoria entre procesadores; los nodos de un clúster suelen tener memoria propia y comunicarse mediante una red, por ejemplo con paso de mensajes.",
+        "SMP no puede ejecutar tareas en paralelo, mientras que los clústeres sí.",
+        "SMP requiere memoria distribuida y los clústeres memoria compartida global.",
+        "Ambos modelos exigen que todos los procesadores accedan a una única memoria física con latencia idéntica."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "En el modelo habitual, SMP usa memoria compartida dentro de una máquina; un clúster se compone de nodos con memoria propia que se coordinan por una red, habitualmente con paso de mensajes. El paso de mensajes es un modelo de programación/comunicación, no una ausencia de paralelismo. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitecturas de sistemas, multiprocesamiento y clústeres. No se usa para probar definiciones de arquitectura.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+      },
+      "etiquetas": [
+        "SMP",
+        "clúster",
+        "memoria compartida",
+        "memoria distribuida",
+        "paso de mensajes"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments",
+            "referencia": "IBM Documentation, Parallel processing environments: distingue SMP con comunicación por memoria compartida y sistema operativo único, de clúster/MPP shared-nothing con memoria local por nodo y red de alta velocidad."
+          },
+          {
+            "url": "https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial",
+            "referencia": "Lawrence Livermore National Laboratory, Introduction to Parallel Computing Tutorial: distingue multiprocesadores de memoria compartida y máquinas distribuidas que se comunican mediante paso de mensajes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitecturas de sistemas, multiprocesamiento y clústeres. No se usa para probar definiciones de arquitectura."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), contrastada con revision/temario-oficial.json el 31-10-2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), contrastada con revision/temario-oficial.json el 31-10-2026."
+          }
+        ],
+        "observaciones": "En el modelo habitual, SMP usa memoria compartida dentro de una máquina; un clúster se compone de nodos con memoria propia que se coordinan por una red, habitualmente con paso de mensajes. El paso de mensajes es un modelo de programación/comunicación, no una ausencia de paralelismo. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+      }
     },
     {
       "id": 3685,
       "bloque": 0,
       "tema": 0,
-      "texto": "Una solución CISC no se caracteriza por:",
+      "texto": "En la comparación didáctica clásica de CISC y RISC, ¿qué rasgo no es un requisito definitorio de una ISA CISC?",
       "opciones": [
-        "Muchos modos de direccionamiento",
-        "Unidad de control cableada",
-        "Número de instrucciones muy elevado",
-        "Varios formatos de instrucción (longitud variable)"
+        "Puede incluir instrucciones complejas y varios modos de direccionamiento.",
+        "La unidad de control debe ser necesariamente cableada; una implementación CISC no puede usar microcódigo.",
+        "El conjunto de instrucciones puede incluir instrucciones de distinta complejidad y longitud.",
+        "Algunas instrucciones complejas pueden decodificarse en microoperaciones internas."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "En comparaciones didácticas, CISC suele asociarse a instrucciones más complejas/variadas y a microprogramación, mientras que una unidad de control cableada es una asociación clásica de RISC. Sin embargo, la ISA no obliga universalmente a microcódigo ni prohíbe control cableado; se pregunta por un rasgo que no es requisito definitorio de CISC, evitando el absoluto del original. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitecturas de sistemas, multiprocesamiento y clústeres. No se usa para probar definiciones de arquitectura.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+      },
+      "etiquetas": [
+        "CISC",
+        "RISC",
+        "microcódigo",
+        "unidad de control",
+        "ISA"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/secure-coding/xucode-implementing-complex-instruction-flows.html",
+            "referencia": "Intel, XuCode: An Innovative Technology for Implementing Complex Instruction Flows: describe x86 como máquina CISC y su decodificación de instrucciones en micro-ops/microcode."
+          },
+          {
+            "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg247071.pdf",
+            "referencia": "IBM Redbooks, IBM System Storage SAN Volume Controller, sección de hardware: resume las distinciones didácticas CISC/RISC, incluyendo conjunto complejo y microprogramación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitecturas de sistemas, multiprocesamiento y clústeres. No se usa para probar definiciones de arquitectura."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), contrastada con revision/temario-oficial.json el 31-10-2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), contrastada con revision/temario-oficial.json el 31-10-2026."
+          }
+        ],
+        "observaciones": "En comparaciones didácticas, CISC suele asociarse a instrucciones más complejas/variadas y a microprogramación, mientras que una unidad de control cableada es una asociación clásica de RISC. Sin embargo, la ISA no obliga universalmente a microcódigo ni prohíbe control cableado; se pregunta por un rasgo que no es requisito definitorio de CISC, evitando el absoluto del original. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+      }
     },
     {
       "id": 3686,
