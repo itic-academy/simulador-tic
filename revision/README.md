@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 671 (IDs 3671–3675). Acumulado: 3675 preguntas examinadas individualmente, 3597 verificadas (710 vigentes, 2620 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8448 sin revisar individualmente. Hay 3003 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 672 (IDs 3676–3680). Acumulado: 3680 preguntas examinadas individualmente, 3602 verificadas (710 vigentes, 2625 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8443 sin revisar individualmente. Hay 3008 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 672 — 31 de octubre de 2026
+
+IDs 3676–3680 revisados individualmente; originales completos en [cambios-lote-672.json](cambios-lote-672.json). Se corrigen las cinco:
+- **3676 — IBM Z/zSeries:** se concreta que Linux puede ejecutarse en una LPAR o como invitado de z/VM; se elimina la falsa generalización de que OS/400 y Windows 2000 son opciones compatibles. **Corregida.** A1-52/A2-II-1.
+- **3677 — superescalaridad:** se distingue la técnica microarquitectónica de la ISA; hay ejemplos RISC (IBM POWER) y x86/IA-32 (Intel Pentium Pro). **Corregida.** A1-52/A2-II-1.
+- **3678 — mainframe:** se caracteriza por transacciones y cargas concurrentes de gran volumen, throughput, fiabilidad y disponibilidad, no por máximo rendimiento de unos pocos programas ni por ser monousuario. **Corregida.** A1-52/A2-II-1.
+- **3679 — SIMD:** se sustituyen expresiones vagas por los dos tipos clásicos en la fuente consultada: procesadores vectoriales/pipeline y procesadores array con elementos de procesamiento replicados bajo control común. **Corregida.** A1-52/A2-II-1.
+- **3680 — ley de Amdahl:** se explicitan las hipótesis; al acelerar 10× el 40 % de cómputo y dejar invariable el 60 % de E/S, el tiempo relativo es 0,64 y el speedup global 1/0,64=1,5625. **Corregida.** A1-52/A2-II-1.
+
+Fuentes técnicas: IBM, [Linux on IBM Z: LPAR y z/VM](https://www.ibm.com/docs/en/ds8900/9.3.3?topic=attachment-running-linux-z-hosts); IBM Redbooks, [POWER8 HPC](https://www.redbooks.ibm.com/redbooks/pdfs/sg248263.pdf), e Intel, [IA-32 Software Developer’s Manual](https://www.intel.com/content/dam/support/us/en/documents/processors/pentium4/sb/25366521.pdf), para ejemplos de superescalaridad RISC y x86; IBM, [What is a mainframe?](https://www.ibm.com/think/topics/mainframe); NASA TM 4662, [Flynn y formas SIMD vectorial/array](https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf), sección “Parallelism in Computer Architecture”; Amdahl, [“Validity of the single processor approach”](https://doi.org/10.1145/1465482.1465560), LLNL, [Introduction to Parallel Computing](https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial) y Princeton, [Amdahl’s Law](https://researchcomputing.princeton.edu/document/4601).
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), usado como contexto de organización curricular, no como evidencia técnica. Correspondencia con A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); cotejados con [temario-oficial.json](temario-oficial.json) el 31-10-2026.
+
+Comprobaciones de este lote: inventario 12.123 preguntas, cero errores (12 grupos repetidos y 65 candidatos automáticos, que no son revisiones); verificador de 3680 registros sin errores y 8443 preguntas aún idénticas al original; git diff --check limpio.
 
 ## Lote 671 — 31 de octubre de 2026
 

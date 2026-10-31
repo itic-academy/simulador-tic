@@ -1,0 +1,393 @@
+{
+  "fecha": "2026-10-31",
+  "alcance": "IDs 3676–3680; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3676,
+      "original": {
+        "id": 3676,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un sistema IBM z/Series:",
+        "opciones": [
+          "Puede ejecutar Linux",
+          "Puede ejecutar OS/400",
+          "Puede ejecutar Windows 2000",
+          "Todas son ciertas"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3676,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según IBM, ¿qué sistema operativo puede ejecutarse en IBM Z (familia anteriormente denominada zSeries), en una LPAR o como invitado de z/VM?",
+        "opciones": [
+          "Linux.",
+          "OS/400 (IBM i) en la arquitectura IBM Z.",
+          "Windows 2000 como sistema operativo nativo de IBM Z.",
+          "Ninguna de las anteriores."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La opción Linux es correcta: IBM Z (antes zSeries) admite Linux en LPAR y como invitado de z/VM. Se precisa el contexto porque OS/400/IBM i corresponde a otra plataforma IBM y “todas las anteriores” no es correcto. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las afirmaciones técnicas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+        },
+        "etiquetas": [
+          "IBM Z",
+          "zSeries",
+          "Linux",
+          "LPAR",
+          "z/VM"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/ds8900/9.4.0?topic=attachment-running-linux-z-hosts",
+              "referencia": "IBM Documentation, Running Linux on IBM Z hosts: documenta Linux en IBM Z mediante particiones lógicas (LPAR) y como invitado de z/VM."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/linux-on-systems?topic=overview-linux-ibm-z",
+              "referencia": "IBM Documentation, Linux on IBM Z: información del sistema Linux para la arquitectura IBM Z."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las afirmaciones técnicas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), contrastada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), contrastada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "La opción Linux es correcta: IBM Z (antes zSeries) admite Linux en LPAR y como invitado de z/VM. Se precisa el contexto porque OS/400/IBM i corresponde a otra plataforma IBM y “todas las anteriores” no es correcto. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3677,
+      "original": {
+        "id": 3677,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los procesadores superescalares:",
+        "opciones": [
+          "Son siempre procesadores RISC",
+          "Han de ser necesariamente CISC",
+          "Suelen ser RISC, pero pueden ser CISC",
+          "Todas son falsas"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3677,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál afirmación describe correctamente la relación entre superescalaridad y tipo de ISA?",
+        "opciones": [
+          "La superescalaridad solo puede implementarse en procesadores RISC.",
+          "La superescalaridad exige una ISA CISC.",
+          "La superescalaridad es una técnica microarquitectónica que puede aplicarse a ISA RISC y CISC.",
+          "Un procesador superescalar ejecuta como máximo una instrucción por ciclo."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La superescalaridad permite emitir/ejecutar varias instrucciones en paralelo cuando hay independencia; no impone que la ISA sea RISC o CISC. IBM POWER8 es un ejemplo RISC superescalar e Intel Pentium Pro uno IA-32/x86 superescalar. Se elimina “suelen” como generalización que depende de periodo y familia. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las afirmaciones técnicas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+        },
+        "etiquetas": [
+          "procesador superescalar",
+          "RISC",
+          "CISC",
+          "emisión múltiple",
+          "microarquitectura"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg248263.pdf",
+              "referencia": "IBM Redbooks, Implementing an IBM High Performance Computing Solution on IBM POWER8: identifica POWER8 como basado en la ISA RISC Power y describe su núcleo como superescalar."
+            },
+            {
+              "url": "https://www.intel.com/content/dam/support/us/en/documents/processors/pentium4/sb/25366521.pdf",
+              "referencia": "Intel, Intel 64 and IA-32 Architectures Software Developer’s Manual: describe el procesador Pentium Pro como three-way superscalar; implementa la arquitectura IA-32/x86."
+            },
+            {
+              "url": "https://research.ibm.com/publications/ibm-second-generation-risc-machine-organization--1",
+              "referencia": "IBM Research, IBM second-generation RISC machine organization: documenta diseño RISC superescalar con despacho múltiple y ejecución simultánea."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las afirmaciones técnicas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), contrastada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), contrastada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "La superescalaridad permite emitir/ejecutar varias instrucciones en paralelo cuando hay independencia; no impone que la ISA sea RISC o CISC. IBM POWER8 es un ejemplo RISC superescalar e Intel Pentium Pro uno IA-32/x86 superescalar. Se elimina “suelen” como generalización que depende de periodo y familia. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3678,
+      "original": {
+        "id": 3678,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un mainframe:",
+        "opciones": [
+          "Es equivalente a una supercomputadora cara",
+          "Utiliza toda su potencia en ejecutar unos pocos programas lo más rápidamente posible",
+          "Es multitarea y multiproceso, pero monousuario",
+          "Utiliza su potencia para ejecutar muchos programas concurrentemente"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3678,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué caracteriza mejor a un mainframe en su uso empresarial habitual?",
+        "opciones": [
+          "Es simplemente una supercomputadora de precio elevado.",
+          "Se diseña principalmente para ejecutar unos pocos programas lo más rápido posible.",
+          "Es necesariamente monousuario, aunque multitarea y multiproceso.",
+          "Puede atender muchas transacciones y cargas concurrentes con alto throughput y elevada disponibilidad."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La descripción apropiada se centra en alto throughput y numerosas transacciones/cargas concurrentes con disponibilidad y fiabilidad. Un mainframe no es una supercomputadora definida por precio, no es monousuario y no se especializa necesariamente en ejecutar pocos programas lo más rápido posible. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las afirmaciones técnicas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+        },
+        "etiquetas": [
+          "mainframe",
+          "procesamiento transaccional",
+          "throughput",
+          "concurrencia",
+          "supercomputador"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/think/topics/mainframe",
+              "referencia": "IBM Think, What is a mainframe?: describe sistemas diseñados para procesar grandes volúmenes de transacciones, atender numerosas cargas concurrentes y operar con alta disponibilidad."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/zos-basic-skills?topic=zos-what-is-mainframe",
+              "referencia": "IBM Documentation, What is a mainframe?: presenta la plataforma y sus usos empresariales, incluido procesamiento de transacciones de alto volumen."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las afirmaciones técnicas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), contrastada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), contrastada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "La descripción apropiada se centra en alto throughput y numerosas transacciones/cargas concurrentes con disponibilidad y fiabilidad. Un mainframe no es una supercomputadora definida por precio, no es monousuario y no se especializa necesariamente en ejecutar pocos programas lo más rápido posible. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3679,
+      "original": {
+        "id": 3679,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se pueden clasificar los sistemas SIMD?",
+        "opciones": [
+          "Con CPU particionada",
+          "Con múltiples ALUS",
+          "Como A) y como B)",
+          "Ninguna respuesta es correcta"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3679,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la clasificación de Flynn, ¿qué formas clásicas de implementación SIMD se reconocen?",
+        "opciones": [
+          "Procesadores vectoriales o pipeline que aplican una instrucción a elementos de datos sucesivos.",
+          "Procesadores array con varios elementos de procesamiento que ejecutan la misma instrucción sobre datos distintos.",
+          "Tanto procesadores vectoriales como procesadores array.",
+          "Ninguna de las anteriores."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "SIMD se refiere a un flujo de instrucciones que opera simultáneamente sobre varios datos. Entre sus formas clásicas están los procesadores vectoriales y los array processors con múltiples elementos de procesamiento bajo control común. “CPU particionada” era impreciso, por lo que se reemplaza por estas estructuras identificables. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las afirmaciones técnicas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+        },
+        "etiquetas": [
+          "SIMD",
+          "Flynn",
+          "procesador vectorial",
+          "procesador matricial",
+          "array processor",
+          "ALU"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf",
+              "referencia": "NASA Technical Memorandum, SIMD architectures: describe procesadores vectoriales/pipeline y procesadores array como formas de aplicar un flujo de instrucciones a múltiples datos."
+            },
+            {
+              "url": "https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial",
+              "referencia": "Lawrence Livermore National Laboratory, Introduction to Parallel Computing Tutorial: presenta SIMD y arquitecturas paralelas con múltiples elementos de procesamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las afirmaciones técnicas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), contrastada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), contrastada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "SIMD se refiere a un flujo de instrucciones que opera simultáneamente sobre varios datos. Entre sus formas clásicas están los procesadores vectoriales y los array processors con múltiples elementos de procesamiento bajo control común. “CPU particionada” era impreciso, por lo que se reemplaza por estas estructuras identificables. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3680,
+      "original": {
+        "id": 3680,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Supongamos que sustituimos un procesador utilizado como servidor web por otro 10 veces más rápido. Si el procesador inicial está ocupado con cálculos el 40% del tiempo y esperando por E/S el 60%, ¿qué incremento global de velocidad se obtiene con la mejora?",
+        "opciones": [
+          "1.56",
+          "10"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3680,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un servidor dedica inicialmente el 40 % del tiempo a cálculos de CPU y el 60 % a espera de E/S. Se sustituye únicamente la CPU por otra 10 veces más rápida; supóngase que el tiempo de E/S no cambia y que el resto del sistema permanece igual. ¿Cuál es el speedup global según la ley de Amdahl?",
+        "opciones": [
+          "1,5625 (aproximadamente 1,56).",
+          "2,5.",
+          "10.",
+          "1 (ninguna mejora global)."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se asume tiempo total inicial normalizado a 1, CPU ocupada 0,40 y E/S 0,60 sin mejora; solo el cálculo se acelera 10×. El nuevo tiempo relativo es 0,60+0,40/10=0,64 y el speedup total 1/0,64=1,5625 (≈1,56). Se explicitan las hipótesis de Amdahl. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las afirmaciones técnicas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+        },
+        "etiquetas": [
+          "ley de Amdahl",
+          "speedup",
+          "cuello de botella de E/S",
+          "fracción de CPU",
+          "rendimiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial",
+              "referencia": "Lawrence Livermore National Laboratory, Introduction to Parallel Computing Tutorial: expone la ley de Amdahl y el límite que impone la porción que no se acelera."
+            },
+            {
+              "url": "https://researchcomputing.princeton.edu/document/4601",
+              "referencia": "Princeton Research Computing, Amdahl’s Law: presenta el speedup 1/((1-p)+p/s) cuando una fracción p de la carga mejora por un factor s."
+            },
+            {
+              "url": "https://doi.org/10.1145/1465482.1465560",
+              "referencia": "Gene M. Amdahl, “Validity of the single processor approach to achieving large scale computing capabilities”, AFIPS Spring Joint Computer Conference, 1967, pp. 483–485."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las afirmaciones técnicas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), contrastada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), contrastada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "Se asume tiempo total inicial normalizado a 1, CPU ocupada 0,40 y E/S 0,60 sin mejora; solo el cálculo se acelera 10×. El nuevo tiempo relativo es 0,60+0,40/10=0,64 y el speedup total 1/0,64=1,5625 (≈1,56). Se explicitan las hipótesis de Amdahl. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de la convocatoria 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas de revision.fuentes."
+        }
+      }
+    }
+  ]
+}
