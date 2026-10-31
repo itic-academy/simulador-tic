@@ -1,6 +1,23 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 640 (IDs 3516–3520). Acumulado: 3520 preguntas examinadas individualmente, 3443 verificadas (687 vigentes, 2499 corregidas y 257 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8603 sin revisar individualmente. Hay 2852 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 641 (IDs 3521–3525). Acumulado: 3525 preguntas examinadas individualmente, 3448 verificadas (687 vigentes, 2503 corregidas y 258 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8598 sin revisar individualmente. Hay 2857 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 641 — 31 de octubre de 2026
+
+IDs 3521–3525 revisados individualmente y conservados en [cambios-lote-641.json](cambios-lote-641.json).
+- **3521 — estándares de mapas web:** se desambigua TMS: Tile Map Service 1.0.0 de OSGeo no es lo mismo que el estándar OGC Two Dimensional Tile Matrix Set, aunque ambos usen la sigla TMS. La opción se refiere explícitamente a la especificación OSGeo; WMS, CSW y WFS son estándares OGC. **Corregida.** A1-74; Academy indica A2 no aplica.
+- **3522 — modelo vectorial GIS:** se confirma la representación mediante geometrías de puntos, líneas y polígonos. Se quitan absolutos falsos sobre coste de almacenamiento y superioridad universal en superposiciones. **Corregida.** A1-74; Academy indica A2 no aplica.
+- **3523 — eliminación de cookies:** se convierte el fragmento incompleto en una asignación ejecutable con Max-Age=0, mismo nombre y Path=/; se aclara que una cookie HttpOnly no es accesible desde JavaScript. **Corregida.** A1-65; A2-III-12.
+- **3524 — controlador Struts:** se limita la afirmación a Apache Struts 1.x, donde ActionServlet es el controlador frontal que recibe y enruta solicitudes. Struts 1 terminó soporte en 2013, así que la pregunta queda marcada histórica y no se generaliza a Struts 2. **Histórica.** A1-65; A2-III-10/III-12.
+- **3525 — blockchain:** se confirma como falsa la afirmación de que blockchain solo sirve para criptomonedas; existen aplicaciones de registros, identidad y cadenas de suministro. Se evita imponer una arquitectura única a todas las redes. **Corregida.** A1-85; sin correspondencia A2 directa localizada.
+
+Fuentes técnicas: [catálogo de estándares OGC](https://www.ogc.org/standards/), [OGC Two Dimensional Tile Matrix Set](https://www.ogc.org/standards/tms/) y [especificación OSGeo Tile Map Service](https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification); [OGC Simple Feature Access](https://www.ogc.org/standards/sfa/) y [Features and Geometries JSON](https://docs.ogc.org/is/21-045r1/21-045r1.html); MDN Document.cookie (https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie) y [guía de cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies); [Apache Struts 1 Controller Guide](https://struts.apache.org/struts1/userGuide/building_controller.html) y [versiones EOL](https://struts.apache.org/eol-versions.html); NIST [Blockchain](https://www.nist.gov/blockchain) y [NISTIR 8202](https://doi.org/10.6028/NIST.IR.8202).
+
+Cotejo con ITIC Academy en Drive: [bloque 33 Sistemas de Información Geográfica](https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk) para las dos preguntas GIS (el material declara A2 no aplicable); [bloque 30 Tecnologías de Sistemas de Información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk) para programación web, Java y tecnologías relacionadas; el mismo bloque contiene A1-85 para blockchain. Struts 1 se conserva únicamente como contenido histórico y se advierte su fin de soporte.
+
+Correspondencia con [convocatoria A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [convocatoria A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json): SIG A1-74; scripts del cliente A1-65 y cookies/web A2-III-12; tecnologías Java/web A1-65 y A2-III-10/III-12; blockchain A1-85. No se fuerza un tema A2 para GIS ni blockchain.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check. Son comprobaciones automáticas de estructura e integridad de trazabilidad; no sustituyen la revisión individual del contenido.
 
 ## Lote 640 — 31 de octubre de 2026
 
