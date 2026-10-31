@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 658 (IDs 3606–3610). Acumulado: 3610 preguntas examinadas individualmente, 3532 verificadas (708 vigentes, 2557 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8513 sin revisar individualmente. Hay 2940 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 659 (IDs 3611–3615). Acumulado: 3615 preguntas examinadas individualmente, 3537 verificadas (708 vigentes, 2562 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8508 sin revisar individualmente. Hay 2945 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 659 — 31 de octubre de 2026
+
+IDs 3611–3615 revisados individualmente; originales completos preservados en [cambios-lote-659.json](cambios-lote-659.json).
+- **3611 — IEEE 802.1Q:** VID ocupa 12 bits; 0 y 4095 están reservados y quedan los 4094 identificadores 1–4094, sin afirmar que cada equipo soporte todos. **Corregida.** A1-118; A2-IV-8.
+- **3612 — organización basada en información:** se acota a la tendencia descrita por Drucker: menos niveles de gestión y más responsabilidad de especialistas. **Corregida.** A1-29.
+- **3613 — dirección TIC pública:** se sustituye una afirmación prescriptiva vaga por un caso delimitado a la AGE; RD 1125/2024 exige alinear la transformación digital con la estrategia del Gobierno y servicios a ciudadanía/empresas. **Corregida.** A1-30/32/49.
+- **3614 — ciclo de vida de información:** el supuesto orden universal se reemplaza por la secuencia típica que NIST enumera expresamente. **Corregida.** A1-29/34.
+- **3615 — especialistas en organización informacional:** se corrige la clave. Drucker atribuye a especialistas la dirección y disciplina de su propio desempeño con feedback de colegas, clientes y sede; la opción de equipos temporales describía otro concepto. **Corregida.** A1-29.
+
+Fuentes primarias/técnicas: IEEE SA [ficha 802.1Q-2022](https://standards.ieee.org/ieee/802.1Q/10323/) y Cisco [intervalo de VID 1–4094, reservados 0/4095](https://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r6-1/interfaces/configuration/guide/b-interfaces-cg-crs-61x/b-interfaces-cg-crs-61x_chapter_010001.pdf); Peter F. Drucker, Harvard Business Review [“The Coming of the New Organization”](https://hbr.org/1988/01/the-coming-of-the-new-organization); BOE [Real Decreto 1125/2024, arts. 1 y 3](https://www.boe.es/buscar/act.php?id=BOE-A-2024-22935) y OCDE [Recommendation on Digital Government Strategies, OECD/LEGAL/0406](https://legalinstruments.oecd.org/en/instruments/306); NIST [CSRC Glossary: Information Life Cycle](https://csrc.nist.gov/glossary/term/information_life_cycle).
+
+Cotejo ITIC Academy: [bloque 42–43, Redes y Protocolos](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view) para VLAN; [bloque «Organización y gestión de los sistemas de información», tema A1-29](https://drive.google.com/file/d/1ANdenllxXF4E7Sl4vJdJ_XPUPkx7Mqp_/view?usp=drivesdk) para organizaciones basadas en información y Administración; [bloque 2026 de Estrategias y herramientas del directivo público](https://drive.google.com/file/d/1fO2vDNoE1lwm4bKFAuggBwbQfuvN2NIq/view?usp=drivesdk) para gobernanza/función directiva. La academia orienta el encaje curricular, no sustituye las fuentes primarias.
+
+Correspondencia cotejada con convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json). Las pruebas automáticas verifican integridad y trazabilidad; no sustituyen la revisión individual.
 
 ## Lote 658 — 31 de octubre de 2026
 
