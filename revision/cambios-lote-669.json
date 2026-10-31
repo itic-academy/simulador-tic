@@ -1,0 +1,395 @@
+{
+  "fecha": "2026-10-31",
+  "alcance": "IDs 3661–3665; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3661,
+      "original": {
+        "id": 3661,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo es el procesamiento en un sistema SIMD?",
+        "opciones": [
+          "Asíncrono",
+          "Desacoplado",
+          "Síncrono",
+          "Ninguna respuesta es correcta"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3661,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo clásico de procesador array SIMD con ejecución lockstep, ¿cómo avanzan los elementos de procesamiento?",
+        "opciones": [
+          "De forma asíncrona, cada uno con un flujo de control independiente.",
+          "De forma desacoplada, sin compartir un flujo de instrucciones.",
+          "De forma coordinada/síncrona, aplicando la instrucción común a sus datos.",
+          "No existe coordinación entre los elementos de procesamiento."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La opción “síncrono” solo es inequívoca si se refiere al modelo clásico de procesadores array SIMD que ejecuta en lockstep. Se precisa ese alcance; no se afirma que toda unidad vectorial moderna procese cada elemento de manera sincronizada ni se confunde SIMD con sincronización de memoria. Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para paralelismo, memoria y altas prestaciones. El bloque no sustituye las fuentes técnicas para definir SIMD, MPP, scheduler ni S-OGSA.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes."
+        },
+        "etiquetas": [
+          "SIMD",
+          "lockstep",
+          "sincronización",
+          "procesador array"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf",
+              "referencia": "NASA Technical Memorandum 4662, Parallelism in Computer Architecture: describe el modelo clásico de procesador array SIMD en el que varios elementos de procesamiento operan coordinadamente bajo un flujo de control/instrucciones común."
+            },
+            {
+              "url": "https://doi.org/10.1109/PROC.1966.5273",
+              "referencia": "Michael J. Flynn, “Very High-Speed Computing Systems”, Proceedings of the IEEE 54(12), 1966, pp. 1901–1909: define SIMD como un flujo de instrucciones y múltiples flujos de datos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para paralelismo, memoria y altas prestaciones. El bloque no sustituye las fuentes técnicas para definir SIMD, MPP, scheduler ni S-OGSA."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "La opción “síncrono” solo es inequívoca si se refiere al modelo clásico de procesadores array SIMD que ejecuta en lockstep. Se precisa ese alcance; no se afirma que toda unidad vectorial moderna procese cada elemento de manera sincronizada ni se confunde SIMD con sincronización de memoria. Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3662,
+      "original": {
+        "id": 3662,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la respuesta correcta respecto a las arquitecturas UMA (Uniform Memory Access) y NUMA (Non-Uniform Memory Access):",
+        "opciones": [
+          "En NUMA un procesador accede más deprisa a su memoria local que a la memoria compartida",
+          "En UMA los procesadores acceden a la memoria compartida mediante un bus o conmutador",
+          "A y B son incorrectas",
+          "A y B son correctas"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3662,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmaciones describen correctamente la latencia de acceso a memoria en UMA y NUMA?",
+        "opciones": [
+          "En NUMA, la memoria local de un nodo suele tener menor latencia que la memoria remota.",
+          "En UMA, los procesadores se diseñan para tener una latencia de acceso a memoria aproximadamente uniforme.",
+          "A y B son correctas.",
+          "A y B son incorrectas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "El original llama “memoria compartida” tanto a la memoria direccionable de NUMA como a la de UMA, ocultando que la diferencia principal es la uniformidad de latencia. Se reescribe por acceso: UMA intenta mantener latencia semejante desde los procesadores; NUMA da acceso local más rápido que a memoria remota. No se usa el bus como criterio exclusivo. Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para paralelismo, memoria y altas prestaciones. El bloque no sustituye las fuentes técnicas para definir SIMD, MPP, scheduler ni S-OGSA.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes."
+        },
+        "etiquetas": [
+          "UMA",
+          "NUMA",
+          "latencia uniforme",
+          "memoria local",
+          "memoria remota"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/numa-support",
+              "referencia": "Microsoft Learn, NUMA Support: SMP/UMA presenta acceso uniforme; NUMA agrupa procesadores y memoria por nodos, de modo que la memoria local puede ser más rápida que la remota."
+            },
+            {
+              "url": "https://docs.kernel.org/mm/numa.html",
+              "referencia": "Documentación oficial del kernel Linux, What is NUMA?: en NUMA varían latencia y ancho de banda según distancia entre CPU y celda de memoria; en ccNUMA toda la memoria puede seguir siendo visible y coherente."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para paralelismo, memoria y altas prestaciones. El bloque no sustituye las fuentes técnicas para definir SIMD, MPP, scheduler ni S-OGSA."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "El original llama “memoria compartida” tanto a la memoria direccionable de NUMA como a la de UMA, ocultando que la diferencia principal es la uniformidad de latencia. Se reescribe por acceso: UMA intenta mantener latencia semejante desde los procesadores; NUMA da acceso local más rápido que a memoria remota. No se usa el bus como criterio exclusivo. Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3663,
+      "original": {
+        "id": 3663,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Acerca de los sistemas MPP puede afirmarse:",
+        "opciones": [
+          "Constituyen una categoría de los sistemas MISD donde se incluyen los arrays sistólicos.",
+          "Constituyen una categoría de los sistemas MIMD con una única memoria compartida.",
+          "A su vez se dividen en sistemas de gestión UMA y sistemas de gestión NUMA.",
+          "Categoría de los sistemas MIMD con memoria distribuida."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3663,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo clásico de procesamiento MPP de memoria distribuida, ¿qué afirmación es correcta?",
+        "opciones": [
+          "Es una clase MISD porque varias instrucciones deben procesar el mismo dato.",
+          "Es MIMD con una única memoria principal compartida por todos los nodos.",
+          "Se divide en configuraciones de gestión UMA y NUMA según una clasificación universal.",
+          "Es una organización MIMD shared-nothing: los nodos usan memoria local y cooperan mediante una interconexión."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "En el modelo MPP clásico, los nodos tienen memoria y recursos locales y cooperan mediante interconexión; es una forma de MIMD de memoria distribuida/shared-nothing. Se quita la falsa equivalencia entre “MPP” y una subclase MISD o memoria compartida UMA/NUMA. Los productos pueden incluir almacenamiento compartido u otros componentes, por lo que se pregunta por el modelo de cómputo. Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para paralelismo, memoria y altas prestaciones. El bloque no sustituye las fuentes técnicas para definir SIMD, MPP, scheduler ni S-OGSA.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes."
+        },
+        "etiquetas": [
+          "MPP",
+          "MIMD",
+          "memoria distribuida",
+          "shared-nothing",
+          "nodos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/iis/11.7.0?topic=topologies-parallel-processing",
+              "referencia": "IBM, Parallel processing topologies: describe MPP con numerosos equipos/nodos y recursos de memoria y disco dedicados, que escalan añadiendo equipos."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments",
+              "referencia": "IBM, Parallel processing environments: clasifica MPP/clúster como shared-nothing; cada procesador dispone de recursos propios y los procesadores se comunican por red."
+            },
+            {
+              "url": "https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf",
+              "referencia": "NASA TM 4662: en MIMD cada procesador puede ejecutar su propio flujo de instrucciones sobre su flujo de datos; admite organizaciones de memoria compartida o distribuida."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para paralelismo, memoria y altas prestaciones. El bloque no sustituye las fuentes técnicas para definir SIMD, MPP, scheduler ni S-OGSA."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "En el modelo MPP clásico, los nodos tienen memoria y recursos locales y cooperan mediante interconexión; es una forma de MIMD de memoria distribuida/shared-nothing. Se quita la falsa equivalencia entre “MPP” y una subclase MISD o memoria compartida UMA/NUMA. Los productos pueden incluir almacenamiento compartido u otros componentes, por lo que se pregunta por el modelo de cómputo. Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3664,
+      "original": {
+        "id": 3664,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La función de un planificador en sistemas de altas prestaciones es:",
+        "opciones": [
+          "Contabilizar el tiempo consumido por cada proceso.",
+          "Seleccionar trabajos en función de su prioridad.",
+          "Realizar cambios de contexto de los procesos.",
+          "Asignar la cuota de tiempo de cálculo (walltime)."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3664,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un scheduler de trabajos de HPC como Slurm, ¿qué función realiza al decidir qué trabajo pendiente iniciar?",
+        "opciones": [
+          "Contabilizar por sí solo todo el tiempo de CPU ya consumido por cada proceso.",
+          "Evaluar el orden de trabajos según prioridad, requisitos y disponibilidad de recursos, y asignar recursos a los que pueden ejecutarse.",
+          "Realizar los cambios de contexto entre procesos en cada núcleo.",
+          "Asignar de forma universal el walltime de cada trabajo sin considerar la solicitud del usuario ni la política del centro."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "“Planificador” puede referirse al planificador de CPU, al scheduler de trabajos HPC o a contabilidad. Se identifica expresamente el scheduler de trabajos y la decisión que toma: seleccionar/ordenar trabajos pendientes según prioridad, requisitos y recursos disponibles y lanzar los que puedan ejecutarse. No realiza cambios de contexto del SO ni fija de forma universal el walltime. Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para paralelismo, memoria y altas prestaciones. El bloque no sustituye las fuentes técnicas para definir SIMD, MPP, scheduler ni S-OGSA.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes."
+        },
+        "etiquetas": [
+          "planificador",
+          "HPC",
+          "Slurm",
+          "prioridad",
+          "asignación de recursos",
+          "walltime"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://slurm.schedmd.com/sched_config.html",
+              "referencia": "Slurm Workload Manager, Scheduling Configuration Guide: evalúa trabajos pendientes en orden de prioridad y considera recursos requeridos/disponibles; el backfill considera también tiempo estimado y recursos."
+            },
+            {
+              "url": "https://slurm.schedmd.com/priority_multifactor.html",
+              "referencia": "Slurm Workload Manager, Multifactor Priority Plugin: documenta factores usados para determinar la prioridad de trabajos y el orden en que se evalúan para programarlos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para paralelismo, memoria y altas prestaciones. El bloque no sustituye las fuentes técnicas para definir SIMD, MPP, scheduler ni S-OGSA."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "“Planificador” puede referirse al planificador de CPU, al scheduler de trabajos HPC o a contabilidad. Se identifica expresamente el scheduler de trabajos y la decisión que toma: seleccionar/ordenar trabajos pendientes según prioridad, requisitos y recursos disponibles y lanzar los que puedan ejecutarse. No realiza cambios de contexto del SO ni fija de forma universal el walltime. Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3665,
+      "original": {
+        "id": 3665,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con la computación GRID, señale la opción FALSA:",
+        "opciones": [
+          "S-OGSA extiende la especificación OGSA para profundizar en aspectos de la seguridad en la computación GRID",
+          "Globus Toolkit es el estándar de facto para grid computing basado en software de código abierto",
+          "Una implementación de OGSA (Open Grid Service Arquitecture) es el Globus Toolkit",
+          "seti@home es un proyecto de computación distribuida que funciona en la plataforma BOINC (Barkeley Open Infraestructure for Network Computing)"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3665,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué describe correctamente S-OGSA (Semantic Open Grid Services Architecture)?",
+        "opciones": [
+          "Una extensión semántica de OGSA que facilita el uso explícito de metadatos y conocimiento en servicios Grid.",
+          "Una extensión de OGSA dedicada exclusivamente a profundizar en seguridad criptográfica.",
+          "El nombre de la infraestructura BOINC usada por SETI@home.",
+          "Una implementación de OGSA cuyo nombre histórico es Globus Toolkit."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "El original atribuye a S-OGSA un propósito de seguridad que no corresponde al nombre ni a la publicación primaria: Semantic-OGSA amplía OGSA para gestionar semántica y metadatos explícitos. Se rehace como pregunta de identificación, eliminando una clave de “opción falsa” basada en afirmaciones de distintas épocas sobre Globus y SETI@home. Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para paralelismo, memoria y altas prestaciones. El bloque no sustituye las fuentes técnicas para definir SIMD, MPP, scheduler ni S-OGSA.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes."
+        },
+        "etiquetas": [
+          "S-OGSA",
+          "Semantic Grid",
+          "OGSA",
+          "metadatos explícitos",
+          "Globus Toolkit",
+          "BOINC"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://research.manchester.ac.uk/en/publications/an-overview-of-s-ogsa-a-reference-semantic-grid-architecture/",
+              "referencia": "Universidad de Manchester, An overview of S-OGSA: A Reference Semantic Grid Architecture; la arquitectura Semantic-OGSA extiende OGSA para admitir manejo explícito de semántica en servicios y aplicaciones Grid."
+            },
+            {
+              "url": "https://doi.org/10.1016/j.websem.2006.03.001",
+              "referencia": "Alper et al., “An overview of S-OGSA: A Reference Semantic Grid Architecture”, Web Semantics 4(2), 2006: S-OGSA amplía OGSA para exponer y manejar explícitamente metadatos semánticos y aportar interoperabilidad/flexibilidad."
+            },
+            {
+              "url": "https://seti.berkeley.edu/participate/index.html",
+              "referencia": "Berkeley SETI, Participate: identifica SETI@home como proyecto que usó BOINC para que voluntarios analizaran señales mediante tiempo de cómputo ocioso."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para paralelismo, memoria y altas prestaciones. El bloque no sustituye las fuentes técnicas para definir SIMD, MPP, scheduler ni S-OGSA."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "El original atribuye a S-OGSA un propósito de seguridad que no corresponde al nombre ni a la publicación primaria: Semantic-OGSA amplía OGSA para gestionar semántica y metadatos explícitos. Se rehace como pregunta de identificación, eliminando una clave de “opción falsa” basada en afirmaciones de distintas épocas sobre Globus y SETI@home. Cotejo curricular: Academy bloque 26 como orientación y correspondencia A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, cotejados el 31-10-2026. La clave se fundamenta en las fuentes técnicas incluidas en revision.fuentes."
+        }
+      }
+    }
+  ]
+}
