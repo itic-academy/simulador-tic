@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 655 (IDs 3591–3595). Acumulado: 3595 preguntas examinadas individualmente, 3517 verificadas (705 vigentes, 2545 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8528 sin revisar individualmente. Hay 2925 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 656 (IDs 3596–3600). Acumulado: 3600 preguntas examinadas individualmente, 3522 verificadas (706 vigentes, 2549 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8523 sin revisar individualmente. Hay 2930 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 656 — 31 de octubre de 2026
+
+IDs 3596–3600 revisados individualmente; originales completos preservados en [cambios-lote-656.json](cambios-lote-656.json).
+- **3596 — IEEE 802.11g:** su tasa PHY nominal máxima es 54 Mbit/s; se distingue expresamente del caudal útil de aplicación. **Corregida.** A1-114; A2-IV-11.
+- **3597 — establecimiento TCP:** RFC 9293, §3.5, describe SYN → SYN+ACK → ACK como three-way handshake. **Vigente.** A1-108/115; A2-IV-8.
+- **3598 — métodos abstractos Java:** una subclase debe implementarlos para ser concreta; si sigue sin implementación, debe ser abstracta. Se concreta el caso y se corrige la sintaxis. **Corregida.** A1-67; A2-II-3.
+- **3599 — normalización relacional:** ausencia de dependencias parciales sitúa la relación en 2FN; la dependencia transitiva excluye 3FN. Se expresan las condiciones sobre claves candidatas y atributos no primos. **Corregida.** A1-64; A2-II-5.
+- **3600 — CSMA/CD y OSI:** se concreta que se pregunta por el protocolo MAC de Ethernet compartida, capa de enlace (capa 2); distinguirlo de la detección física del nivel eléctrico elimina la ambigüedad. **Corregida.** A1-111/118; A2-IV-8.
+
+Fuentes primarias/técnicas: IEEE [Wi-Fi Timeline](https://standards.ieee.org/wp-content/uploads/interactive/web/wi-fi-timeline/index.html) y [actualización del grupo 802.11g](https://www.ieee802.org/11/Reports/tgg_update.htm); IETF [RFC 9293, §3.5](https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5); Oracle [Java Language Specification, Java SE 26, §8.1.1.1](https://docs.oracle.com/javase/specs/jls/se26/html/jls-8.html#jls-8.1.1.1); University of Iowa [Fundamentals of Database Management, capítulo 4](https://pressbooks.uiowa.edu/fundamentalsofdatabasemanagement/chapter/chapter-4/) y Cornell [Third Normal Form](https://cvw.cac.cornell.edu/RelationalDBs/design-create/third_normal_form); IEEE SA [IEEE 802.3-2022](https://standards.ieee.org/ieee/7003/10422/) y [descripción de la subcapa MAC](https://technav.ieee.org/topic/medium-access-control-mac/).
+
+Cotejo ITIC Academy: [bloque 46, Redes Inalámbricas](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk) para 802.11g; [bloques 42–43, Redes y Protocolos](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view) para TCP, Ethernet y acceso al medio; [bloque 38, Análisis, Diseño y Construcción](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk) para Java/POO; [bloque 29, Bases de Datos y Modelado](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk) para normalización relacional. La academia orienta el encaje curricular, no sustituye las fuentes primarias.
+
+Correspondencia cotejada con convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json). Las pruebas automáticas verifican integridad y trazabilidad; no sustituyen la revisión individual.
 
 ## Lote 655 — 31 de octubre de 2026
 

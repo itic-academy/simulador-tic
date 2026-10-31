@@ -176519,71 +176519,293 @@
       "id": 3596,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué velocidad de transmisión establece la norma 802.11g de comunicaciones inalámbricas?",
+      "texto": "En IEEE 802.11g, ¿cuál es la tasa PHY nominal máxima especificada (no el caudal útil de aplicación)?",
       "opciones": [
-        "100 Mbps",
-        "54 Mbps",
-        "22 Mbps",
-        "36 Mbps"
+        "100 Mbit/s.",
+        "54 Mbit/s.",
+        "22 Mbit/s.",
+        "36 Mbit/s."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La tasa PHY nominal máxima de IEEE 802.11g es 54 Mbit/s. No equivale al caudal útil que observa la aplicación, que es inferior por las sobrecargas del protocolo y las condiciones radioeléctricas. Se precisa el enunciado para distinguir tasa nominal de rendimiento efectivo.",
+      "clasificacion": {
+        "A1": [
+          "A1-114"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "IEEE 802.11g",
+        "Wi-Fi",
+        "OFDM",
+        "54 Mbit/s",
+        "velocidad nominal"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/wp-content/uploads/interactive/web/wi-fi-timeline/index.html",
+            "referencia": "IEEE SA, Wi-Fi Timeline: 802.11g permitió velocidades de datos de hasta 54 Mbit/s en la banda de 2,4 GHz mediante OFDM."
+          },
+          {
+            "url": "https://www.ieee802.org/11/Reports/tgg_update.htm",
+            "referencia": "IEEE 802.11 Working Group, actualización del grupo 802.11g: enmienda con velocidades de datos de hasta 54 Mbps en la banda de 2,4 GHz."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 46 Redes Inalámbricas: cotejo curricular del estándar IEEE 802.11."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I, tema A1-114: redes inalámbricas IEEE 802.11."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX, tema A2-IV-11: redes inalámbricas."
+          }
+        ],
+        "observaciones": "La tasa PHY nominal máxima de IEEE 802.11g es 54 Mbit/s. No equivale al caudal útil que observa la aplicación, que es inferior por las sobrecargas del protocolo y las condiciones radioeléctricas. Se precisa el enunciado para distinguir tasa nominal de rendimiento efectivo."
+      }
     },
     {
       "id": 3597,
       "bloque": 0,
       "tema": 0,
-      "texto": "El establecimiento de una conexión mediante el protocolo TCP básicamente se realiza de la siguiente manera:",
+      "texto": "Según el procedimiento normal de establecimiento de una conexión TCP descrito en RFC 9293, ¿qué intercambio realizan los extremos?",
       "opciones": [
-        "Emisor: envía SYN. Receptor: envía SYN+ACK. Emisor: envía ACK.",
-        "Emisor: envía ACK. Receptor: envía ACK+SYN. Emisor: envía SYN.",
-        "Emisor: envía SYN. Receptor: envía ACK.",
-        "Emisor: envía ACK. Receptor: en vía SYN."
+        "Iniciador: SYN; receptor: SYN+ACK; iniciador: ACK.",
+        "Iniciador: ACK; receptor: ACK+SYN; iniciador: SYN.",
+        "Iniciador: SYN; receptor: ACK, sin respuesta posterior.",
+        "Iniciador: ACK; receptor: SYN, sin respuesta posterior."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El establecimiento normal de una conexión TCP usa el intercambio SYN → SYN+ACK → ACK, descrito en RFC 9293, §3.5.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "TCP",
+        "RFC 9293",
+        "three-way handshake",
+        "SYN",
+        "SYN-ACK",
+        "ACK"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5",
+            "referencia": "IETF RFC 9293, §3.5 Establishing a Connection: el three-way handshake combina SYN, SYN-ACK y ACK para establecer la conexión TCP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view",
+            "referencia": "ITIC Academy, bloque 43 Protocolos: cotejo curricular de TCP/IP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I, temas A1-108/115: redes de telecomunicaciones y redes IP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX, tema A2-IV-8: redes locales, protocolos y técnicas de transmisión."
+          }
+        ],
+        "observaciones": "El establecimiento normal de una conexión TCP usa el intercambio SYN → SYN+ACK → ACK, descrito en RFC 9293, §3.5."
+      }
     },
     {
       "id": 3598,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la respuesta correcta. En la programación orientada a objetos en Java, sí una clase hereda de otra clase un método abstracto:",
+      "texto": "En Java, una clase concreta hereda un método abstracto y no proporciona una implementación que lo sobrescriba. ¿Qué debe cumplirse?",
       "opciones": [
-        "Tiene que implementar ese método, si no es así, la clase que hereda deberá ser definida abstracta.",
-        "Puede usar el método de la clase de la que ha heredado.",
-        "Puede usar el método de la clase de la que ha heredado siempre que esté declarado como public.",
-        "No se puede heredar de una clase que tenga algún método abstracto."
+        "La clase debe declararse abstracta; para ser concreta tendría que implementar el método.",
+        "La clase puede invocar el método abstracto heredado como si tuviera implementación.",
+        "Solo debe implementarlo si el método es public.",
+        "Una clase no puede heredar de una clase con métodos abstractos."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Una clase concreta no puede dejar sin implementar un método abstracto heredado: debe proporcionar la implementación; si no lo hace, también debe ser abstracta. Una clase abstracta intermedia puede aplazar la implementación.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Java",
+        "método abstracto",
+        "clase abstracta",
+        "JLS",
+        "implementación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/specs/jls/se26/html/jls-8.html#jls-8.1.1.1",
+            "referencia": "Java Language Specification, Java SE 26, §8.1.1.1: una subclase que hereda métodos abstractos debe implementarlos para ser concreta; si sigue incompleta debe declararse abstracta."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 38 Análisis, Diseño y Construcción: cotejo curricular de programación y diseño orientado a objetos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I, tema A1-67: entorno de desarrollo Java."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX, tema A2-II-3: lenguajes y paradigmas actuales de programación."
+          }
+        ],
+        "observaciones": "Una clase concreta no puede dejar sin implementar un método abstracto heredado: debe proporcionar la implementación; si no lo hace, también debe ser abstracta. Una clase abstracta intermedia puede aplazar la implementación."
+      }
     },
     {
       "id": 3599,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿En qué forma normal está una tabla que no tiene grupos repetitivos, en la que los atributos no principales dependan completamente de la clave principal, y dependan de otros atributos además de la clave principal?",
+      "texto": "Una relación está en 1FN, no presenta dependencias parciales de atributos no primos respecto de ninguna clave candidata, pero sí una dependencia transitiva de un atributo no primo respecto de una clave candidata. ¿Cuál es la forma normal más alta que se puede afirmar?",
       "opciones": [
-        "1FN",
-        "2FN",
-        "3FN",
-        "Boyce-Cood"
+        "Primera forma normal (1FN).",
+        "Segunda forma normal (2FN).",
+        "Tercera forma normal (3FN).",
+        "Forma normal de Boyce-Codd (FNBC)."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La pregunta original combina condiciones de 1FN y 2FN con una dependencia transitiva. Se precisa que la relación está en 1FN, no tiene dependencias parciales respecto de ninguna clave candidata y sí tiene una dependencia transitiva de un atributo no primo respecto de una clave candidata. Está en 2FN, pero no en 3FN.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "normalización",
+        "2FN",
+        "3FN",
+        "dependencia parcial",
+        "dependencia transitiva",
+        "clave candidata"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://pressbooks.uiowa.edu/fundamentalsofdatabasemanagement/chapter/chapter-4/",
+            "referencia": "University of Iowa, Fundamentals of Database Management, capítulo 4: 2FN exige eliminar dependencias parciales y 3FN trata las dependencias transitivas de atributos no clave."
+          },
+          {
+            "url": "https://cvw.cac.cornell.edu/RelationalDBs/design-create/third_normal_form",
+            "referencia": "Cornell Virtual Workshop, Third Normal Form: una relación en 2FN todavía puede tener dependencia transitiva, que 3FN elimina bajo su definición usual."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 Bases de Datos y Modelado: cotejo curricular de modelo relacional y normalización."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I, tema A1-64: modelo relacional y bases de datos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX, tema A2-II-5: sistemas gestores de bases de datos."
+          }
+        ],
+        "observaciones": "La pregunta original combina condiciones de 1FN y 2FN con una dependencia transitiva. Se precisa que la relación está en 1FN, no tiene dependencias parciales respecto de ninguna clave candidata y sí tiene una dependencia transitiva de un atributo no primo respecto de una clave candidata. Está en 2FN, pero no en 3FN."
+      }
     },
     {
       "id": 3600,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿A qué nivel del modelo OSI corresponde la función de detección de colisiones en los sistemas CSMA/CD?",
+      "texto": "En Ethernet compartida, ¿a qué capa OSI pertenece el protocolo MAC CSMA/CD que arbitra el acceso al medio y gestiona la detección de colisiones?",
       "opciones": [
-        "Nivel 1 Físico",
-        "Nivel 2 Enlace",
-        "Nivel 3 Red",
-        "Nivel 4 Transporte"
+        "Capa 1, Física.",
+        "Capa 2, Enlace de datos.",
+        "Capa 3, Red.",
+        "Capa 4, Transporte."
       ],
-      "respuesta_correcta": 0,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "CSMA/CD es el protocolo MAC de Ethernet definido para acceso al medio compartido; MAC pertenece a la subcapa de enlace (capa 2 del modelo OSI). La detección eléctrica de la señal se apoya en la capa física, pero la función de arbitraje/protocolo MAC preguntada corresponde a capa 2. Se especifica este sentido para eliminar la ambigüedad original.",
+      "clasificacion": {
+        "A1": [
+          "A1-111",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "OSI",
+        "CSMA/CD",
+        "Ethernet",
+        "MAC",
+        "detección de colisiones",
+        "IEEE 802.3"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/7003/10422/",
+            "referencia": "IEEE SA, ficha IEEE 802.3-2022: define el protocolo CSMA/CD MAC para operación sobre medio compartido y diferencia interfaces hacia los dispositivos de capa física (PHY)."
+          },
+          {
+            "url": "https://technav.ieee.org/topic/medium-access-control-mac/",
+            "referencia": "IEEE Technology Navigator, Medium Access Control: MAC es una subcapa de la capa de enlace que arbitra acceso al medio compartido."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view",
+            "referencia": "ITIC Academy, bloques 42–43 Redes y Protocolos: cotejo curricular de Ethernet y acceso al medio."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 BOE-A-2025-25938, anexo I, temas A1-111/118: modelo OSI y redes de área local."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI BOE-A-2025-26262, anexo IX, tema A2-IV-8: redes locales, protocolos y métodos de acceso."
+          }
+        ],
+        "observaciones": "CSMA/CD es el protocolo MAC de Ethernet definido para acceso al medio compartido; MAC pertenece a la subcapa de enlace (capa 2 del modelo OSI). La detección eléctrica de la señal se apoya en la capa física, pero la función de arbitraje/protocolo MAC preguntada corresponde a capa 2. Se especifica este sentido para eliminar la ambigüedad original."
+      }
     },
     {
       "id": 3601,
