@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 670 (IDs 3666–3670). Acumulado: 3670 preguntas examinadas individualmente, 3592 verificadas (709 vigentes, 2616 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8453 sin revisar individualmente. Hay 2999 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 671 (IDs 3671–3675). Acumulado: 3675 preguntas examinadas individualmente, 3597 verificadas (710 vigentes, 2620 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8448 sin revisar individualmente. Hay 3003 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 671 — 31 de octubre de 2026
+
+IDs 3671–3675 examinados individualmente; sus originales completos están en [cambios-lote-671.json](cambios-lote-671.json). Cuatro preguntas se corrigen y una se confirma:
+- **3671 — ley de Amdahl:** se define el límite de speedup por la fracción serial no paralelizable; se incluye la formulación para carga fija. **Corregida.** A1-52/A2-II-1.
+- **3672 — elección de plataforma HPC:** se delimita a trabajo MPI estrechamente acoplado con comunicación frecuente/sensible a latencia, para el que suele ser apropiado un clúster HPC con interconexión rápida. **Corregida.** A1-52/A2-II-1.
+- **3673 — niveles SSI:** se conserva la posibilidad de implementar SSI en varias capas, pero se corrige la afirmación universal de que kernel SSI siempre da menor tiempo de ejecución; depende de técnica, carga y configuración. **Corregida.** A1-52/A2-II-1.
+- **3674 — FLOP/s:** se elimina la premisa de que FLOPS mide genéricamente la “potencia” del microprocesador. Se define como operaciones de coma flotante por segundo y se distingue de frecuencia de reloj e instrucciones/s. **Corregida.** A1-52/A2-II-1.
+- **3675 — memoria MIMD:** se confirma que puede organizarse con memoria compartida o distribuida; MIMD clasifica flujos, no una topología única de memoria. **Vigente.** A1-52/A2-II-1.
+
+Fuentes técnicas: Amdahl, [“Validity of the single processor approach”](https://doi.org/10.1145/1465482.1465560), junto con [LLNL, Introduction to Parallel Computing](https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial) y [Princeton, Amdahl’s Law](https://researchcomputing.princeton.edu/document/4601); NVIDIA, [Using MPI](https://docs.nvidia.com/base-command-manager/product-manuals/10/user/mpi) e IBM Redbooks, [Platform Computing Solutions](https://www.redbooks.ibm.com/redbooks/pdfs/sg248169.pdf), para comunicación HPC; Healy et al., [SSI survey](https://doi.org/10.1016/j.jpdc.2016.01.004) y Vargas et al., [Sun Cluster 2.2 SSI](https://www.oreilly.com/library/view/suntm-cluster-environment/0130418706/0130418706_ch02lev1sec2.html); NVIDIA, [Grace Performance Tuning Guide](https://docs.nvidia.com/dccpu/grace-perf-tuning-guide/measuring-performance.html), para FLOP/s; LLNL e IBM, [Parallel processing environments](https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments), para variantes MIMD compartidas/distribuidas.
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), como contexto curricular y no como prueba técnica. Correspondencia A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), contrastada con [temario-oficial.json](temario-oficial.json) el 31-10-2026.
+
+Comprobaciones ejecutadas: inventario de 12.123 preguntas (cero errores; 12 grupos repetidos y 65 candidatos automáticos para evaluar), verificador de 3.675 registros (cero errores; 8.448 preguntas restantes idénticas al original) y git diff --check limpio. El inventario automático no se cuenta como revisión individual.
 
 ## Lote 670 — 31 de octubre de 2026
 

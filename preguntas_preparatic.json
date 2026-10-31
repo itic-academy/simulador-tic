@@ -180749,57 +180749,251 @@
       "id": 3671,
       "bloque": 0,
       "tema": 0,
-      "texto": "La ley de Amdahl demuestra que:",
+      "texto": "Según la ley de Amdahl, ¿de qué depende el límite de speedup al aumentar el número de procesadores?",
       "opciones": [
-        "Cuantas más CPUs, más productividad.",
-        "La productividad depende de la parte que sea paralelizable.",
-        "Cuanto más código, más CPUs hacen falta.",
-        "El número de procesadores es igual al número de ALUs."
+        "De que añadir CPU siempre aumente la productividad en la misma proporción.",
+        "De la fracción paralelizable y, en particular, de la parte serial que no se beneficia del paralelismo.",
+        "Del tamaño total del código, con independencia de qué partes puedan ejecutarse en paralelo.",
+        "De que cada procesador tenga exactamente una unidad aritmético-lógica."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La ley no garantiza mayor productividad por el mero aumento de CPU: la ganancia depende de cuánto trabajo pueda paralelizarse, y el tramo serial limita el speedup. Se reescribe con fracciones y fórmula para evitar que “productividad” se interprete como una métrica no definida. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las fórmulas, definiciones de SSI ni métricas de rendimiento.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes."
+      },
+      "etiquetas": [
+        "ley de Amdahl",
+        "fracción paralelizable",
+        "fracción serial",
+        "speedup",
+        "escalabilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1145/1465482.1465560",
+            "referencia": "Gene M. Amdahl, “Validity of the single processor approach to achieving large scale computing capabilities”, AFIPS Spring Joint Computer Conference, 1967, pp. 483–485: argumenta que la parte no paralelizable limita el beneficio de añadir procesadores."
+          },
+          {
+            "url": "https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial",
+            "referencia": "Lawrence Livermore National Laboratory, Introduction to Parallel Computing Tutorial: formula la ley de Amdahl en términos de fracción paralelizable, procesadores y límite de speedup por trabajo serial."
+          },
+          {
+            "url": "https://researchcomputing.princeton.edu/document/4601",
+            "referencia": "Princeton Research Computing, Amdahl’s Law: presenta el modelo de tiempo serial más paralelizable dividido entre P y el límite asintótico fijado por la fracción serial."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las fórmulas, definiciones de SSI ni métricas de rendimiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+          }
+        ],
+        "observaciones": "La ley no garantiza mayor productividad por el mero aumento de CPU: la ganancia depende de cuánto trabajo pueda paralelizarse, y el tramo serial limita el speedup. Se reescribe con fracciones y fórmula para evitar que “productividad” se interprete como una métrica no definida. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes."
+      }
     },
     {
       "id": 3672,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué sistema informático distribuido es el más apropiado para procesamiento paralelo a gran escala con gran uso de la comunicación entre procesos?",
+      "texto": "Para un trabajo HPC estrechamente acoplado, con intercambio frecuente de mensajes MPI entre procesos, ¿qué sistema suele ser más apropiado?",
       "opciones": [
-        "Cluster",
-        "Peer-to-peer",
-        "Grid",
-        "Client/Server"
+        "Un clúster de cómputo con interconexión de alta velocidad y baja latencia.",
+        "Una red peer-to-peer de equipos de usuario con disponibilidad y conectividad cambiantes.",
+        "Una Grid que agrega recursos autónomos distribuidos geográficamente sin garantías de latencia.",
+        "Una arquitectura cliente/servidor general que centraliza todo el procesamiento en el servidor."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La pregunta original no distingue trabajos fuertemente acoplados de cómputo distribuido poco acoplado: Grid también permite paralelismo, pero no suele ser la opción preferida para intercambios muy frecuentes y sensibles a latencia. Se delimita a trabajos HPC MPI estrechamente acoplados; un clúster con interconexión de alta velocidad/baja latencia es el ajuste habitual, no una regla absoluta para cualquier problema paralelo. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las fórmulas, definiciones de SSI ni métricas de rendimiento.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes."
+      },
+      "etiquetas": [
+        "clúster HPC",
+        "MPI",
+        "comunicación entre procesos",
+        "baja latencia",
+        "alto ancho de banda"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://docs.nvidia.com/base-command-manager/product-manuals/10/user/mpi",
+            "referencia": "NVIDIA Base Command Manager, Using MPI: documenta interconexiones Ethernet e InfiniBand para comunicación entre nodos y señala que InfiniBand ofrece menor latencia y alto rendimiento en aplicaciones HPC."
+          },
+          {
+            "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg248169.pdf",
+            "referencia": "IBM Redbooks, Platform Computing Solutions Reference Architectures and Best Practices, capítulo 2: para clústeres HPC, los trabajos MPI intercambian datos entre tareas en nodos distintos mediante redes/interconexiones de alta velocidad y baja latencia."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments",
+            "referencia": "IBM, Parallel processing environments: describe clúster/MPP como nodos independientes que se comunican a través de red de alta velocidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las fórmulas, definiciones de SSI ni métricas de rendimiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+          }
+        ],
+        "observaciones": "La pregunta original no distingue trabajos fuertemente acoplados de cómputo distribuido poco acoplado: Grid también permite paralelismo, pero no suele ser la opción preferida para intercambios muy frecuentes y sensibles a latencia. Se delimita a trabajos HPC MPI estrechamente acoplados; un clúster con interconexión de alta velocidad/baja latencia es el ajuste habitual, no una regla absoluta para cualquier problema paralelo. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes."
+      }
     },
     {
       "id": 3673,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto de la SSI (Single System Image) de un cluster, es falso que:",
+      "texto": "Respecto a la Single System Image (SSI) de un clúster, ¿qué afirmación es falsa por ser una generalización no sustentada?",
       "opciones": [
-        "Es generada por un middleware que se sitúa entre el entorno de usuario y el sistema operativo.",
-        "Podemos encontrar SSIs hardware, a nivel de kernel de sistema operativo y de aplicación.",
-        "La solución de SSI más eficiente en cuanto a tiempos de ejecución es la implementada en el kernel del sistema operativo.",
-        "Genera una apariencia de recurso unificado a partir de un grupo de computadores interconectados."
+        "Puede ocultar parte de la distribución física y presentar recursos como una vista unificada.",
+        "Puede implementarse a distintos niveles, como hardware, sistema operativo o aplicación.",
+        "Una SSI implementada en el kernel siempre ofrece el menor tiempo de ejecución, con independencia de la carga y de la implementación.",
+        "Las técnicas SSI tienen distintos límites de transparencia, coste y rendimiento."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "No existe un orden universal en que el SSI de kernel sea siempre el más eficiente en tiempo de ejecución. Los límites de transparencia, sobrecarga, compatibilidad y rendimiento dependen de la técnica y de la carga. Se acota la falsedad a la afirmación absoluta y se conservan por separado las ideas de imagen unificada y de varias capas de implementación. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las fórmulas, definiciones de SSI ni métricas de rendimiento.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes."
+      },
+      "etiquetas": [
+        "SSI",
+        "Single System Image",
+        "middleware",
+        "kernel",
+        "hardware",
+        "aplicación",
+        "rendimiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0743731516000058",
+            "referencia": "Healy, Lynn, Barrett y Morrison, “Single system image: A survey”, Journal of Parallel and Distributed Computing 90–91, 2016: revisa SSI en distintos niveles y concluye que la adopción/performance dependen de técnica y contexto; el SSI a nivel de kernel no se convirtió en solución predominante."
+          },
+          {
+            "url": "https://www.oreilly.com/library/view/suntm-cluster-environment/0130418706/0130418706_ch02lev1sec2.html",
+            "referencia": "Vargas, Bianco y Deeths, Sun Cluster Environment 2.2, sección SSI: explica que SSI puede implementarse a nivel de hardware, sistema operativo o aplicación, con fronteras y efectos distintos."
+          },
+          {
+            "url": "https://www.gridcomputing.com/papers/ssiabs.html",
+            "referencia": "“Single System Image: Need, Approaches, and Supporting HPC Systems” (PDPTA 1997): enumera niveles Hardware, Operating System, Message Passing Interfaces, Language/Compiler y Tools."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las fórmulas, definiciones de SSI ni métricas de rendimiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+          }
+        ],
+        "observaciones": "No existe un orden universal en que el SSI de kernel sea siempre el más eficiente en tiempo de ejecución. Los límites de transparencia, sobrecarga, compatibilidad y rendimiento dependen de la técnica y de la carga. Se acota la falsedad a la afirmación absoluta y se conservan por separado las ideas de imagen unificada y de varias capas de implementación. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes."
+      }
     },
     {
       "id": 3674,
       "bloque": 0,
       "tema": 0,
-      "texto": "La potencia de un microprocesador se mide en FLOPS, unidad que indica:",
+      "texto": "¿Qué tasa expresa FLOP/s (también denominada FLOPS)?",
       "opciones": [
-        "El número de accesos a memoria que es capaz de realizar en un segundo.",
-        "La frecuencia de la señal de reloj del microprocesador.",
-        "El número de operaciones de coma flotante por segundo que puede realizar.",
-        "El número de millones de instrucciones por segundo que puede procesar."
+        "Accesos a memoria por segundo.",
+        "Ciclos de reloj del procesador por segundo.",
+        "Operaciones de coma flotante realizadas por segundo.",
+        "Millones de instrucciones enteras ejecutadas por segundo."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "FLOP/s (también escrito FLOPS) expresa operaciones de coma flotante por segundo: es una tasa de rendimiento computacional, no frecuencia de reloj ni instrucciones enteras por segundo. No es por sí sola una medida completa de “potencia” o del rendimiento de cualquier carga; por eso se elimina esa premisa. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las fórmulas, definiciones de SSI ni métricas de rendimiento.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes."
+      },
+      "etiquetas": [
+        "FLOP/s",
+        "FLOPS",
+        "operaciones de coma flotante",
+        "rendimiento",
+        "throughput"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://docs.nvidia.com/dccpu/grace-perf-tuning-guide/measuring-performance.html",
+            "referencia": "NVIDIA Grace Performance Tuning Guide, Measuring Workload Performance: define FLOPS como floating-point operations per second y explica el cómputo de operaciones realizadas por instrucciones vectoriales/escalares."
+          },
+          {
+            "url": "https://www.top500.org/project/linpack/",
+            "referencia": "TOP500, HPL/benchmark Linpack: usa operaciones de coma flotante por segundo para reportar rendimiento de los sistemas en el benchmark; el valor medido depende del benchmark y la precisión."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las fórmulas, definiciones de SSI ni métricas de rendimiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+          }
+        ],
+        "observaciones": "FLOP/s (también escrito FLOPS) expresa operaciones de coma flotante por segundo: es una tasa de rendimiento computacional, no frecuencia de reloj ni instrucciones enteras por segundo. No es por sí sola una medida completa de “potencia” o del rendimiento de cualquier carga; por eso se elimina esa premisa. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes."
+      }
     },
     {
       "id": 3675,
@@ -180813,7 +181007,56 @@
         "Pueden trabajar con memoria compartida o con memoria distribuida."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "MIMD clasifica flujos de instrucciones y datos, no obliga a una organización concreta de memoria: existen multiprocesadores MIMD de memoria compartida y multicomputadores MIMD de memoria distribuida. Se conserva la respuesta y se documenta esa distinción para evitar universalizar la topología. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes.",
+      "clasificacion": {
+        "A1": [
+          "A1-52"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las fórmulas, definiciones de SSI ni métricas de rendimiento.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes."
+      },
+      "etiquetas": [
+        "MIMD",
+        "memoria compartida",
+        "memoria distribuida",
+        "MIMD-SM",
+        "MIMD-DM"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial",
+            "referencia": "Lawrence Livermore National Laboratory, Introduction to Parallel Computing Tutorial: incluye sistemas SMP, clústeres y supercomputadores en la categoría MIMD; MIMD describe flujos, no una topología de memoria única."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments",
+            "referencia": "IBM, Parallel processing environments: distingue SMP con memoria y SO compartidos de clúster/MPP shared-nothing con recursos locales por nodo y comunicación de red."
+          },
+          {
+            "url": "https://cds.cern.ch/record/828479/files/sis-2005-003.pdf",
+            "referencia": "CERN, SIS-2005-003, Parallel and Distributed Processing: describe las variantes MIMD con memoria compartida y distribuida, así como los modelos híbridos habituales en clústeres de SMP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto curricular para arquitectura, paralelismo y sistemas de altas prestaciones. No se usa para sostener las fórmulas, definiciones de SSI ni métricas de rendimiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+          }
+        ],
+        "observaciones": "MIMD clasifica flujos de instrucciones y datos, no obliga a una organización concreta de memoria: existen multiprocesadores MIMD de memoria compartida y multicomputadores MIMD de memoria distribuida. Se conserva la respuesta y se documenta esa distinción para evitar universalizar la topología. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas oficiales de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. La clave se sustenta en las fuentes técnicas incluidas en revision.fuentes."
+      }
     },
     {
       "id": 3676,
