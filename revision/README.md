@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 664 (IDs 3636–3640). Acumulado: 3640 preguntas examinadas individualmente, 3562 verificadas (708 vigentes, 2587 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8483 sin revisar individualmente. Hay 2970 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 665 (IDs 3641–3645). Acumulado: 3645 preguntas examinadas individualmente, 3567 verificadas (708 vigentes, 2592 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8478 sin revisar individualmente. Hay 2975 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 665 — 31 de octubre de 2026
+
+IDs 3641–3645 revisados individualmente; originales completos preservados en [cambios-lote-665.json](cambios-lote-665.json). Los cinco registros quedan corregidos:
+- **3641 — SMP:** se conserva memoria común como rasgo del modelo SMP y se delimita la comparación frente a MPP shared-nothing, sin universalizar configuraciones híbridas. **Corregida.** A1-52/A2-II-1.
+- **3642 — Flynn/SISD:** el original duplicaba dos opciones equivalentes (MISD y SISD), haciendo inválida la pregunta. Se sustituyen por las cuatro clases y se pregunta de forma precisa por el modelo escalar de un único flujo de instrucciones y datos. **Corregida.** A1-52/A2-II-1.
+- **3643 — Flynn/MIMD:** se corrige la descripción imprecisa basada en unidades funcionales y se pregunta por varios flujos de instrucciones y de datos. **Corregida.** A1-52/A2-II-1.
+- **3644 — SMP y MPP:** se precisa MPP en el modelo shared-nothing; SMP usa memoria principal común y MPP memoria local por nodo, sin afirmar que no puedan compartirse otros recursos. **Corregida.** A1-52/A2-II-1.
+- **3645 — HPC y tiempo compartido:** el original permitía más de una respuesta no esencial (tiempo compartido y coste elevado). Se reescribe para preguntar por la definición de tiempo compartido como reparto temporal de CPU, separándolo de capacidades/arquitecturas HPC. **Corregida.** A1-52/A2-II-1.
+
+Fuentes técnicas: Michael J. Flynn, [“Very High-Speed Computing Systems”](https://doi.org/10.1109/PROC.1966.5273), Proceedings of the IEEE 54(12), 1966, sobre las cuatro clases por flujos de instrucciones/datos; IBM, [Parallel processing environments](https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments), [Shared memory MP](https://www.ibm.com/docs/en/aix/7.1.0?topic=multiprocessing-shared-memory-mp) y [Database partition and processor environments](https://www.ibm.com/docs/en/db2/11.5.x?topic=environments-database-partition-processor), para SMP y MPP/shared-nothing; Intel, [What is High Performance Computing?](https://www.intel.com/content/www/us/en/learn/what-is-hpc.html), University of Sheffield, [What is HPC?](https://docs.hpc.shef.ac.uk/en/latest/hpc/what-is-hpc.html), e IEEE Technology Navigator, [Time-sharing computer systems](https://technav.ieee.org/topic/time-sharing-computer-systems/).
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), como cobertura de arquitecturas, paralelismo y altas prestaciones; correspondencia oficial cotejada con el anexo I, tema A1-52, de [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y anexo IX, tema A2-II-1, de [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), y [temario-oficial.json](temario-oficial.json), consultados el 31-10-2026. La academia y las convocatorias verifican el encaje, no sustituyen las fuentes técnicas.
+
+Comprobaciones ejecutadas: inventario de 12.123 preguntas (cero errores; 12 grupos repetidos y 65 candidatos automáticos para evaluar), verificador de 3.645 registros (cero errores; 8.478 preguntas restantes idénticas al original) y git diff --check limpio. Los contadores estructurales y candidatos no se consideran revisión de contenido.
 
 ## Lote 664 — 31 de octubre de 2026
 

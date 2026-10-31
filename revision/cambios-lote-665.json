@@ -1,0 +1,378 @@
+{
+  "fecha": "2026-10-31",
+  "alcance": "IDs 3641–3645; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3641,
+      "original": {
+        "id": 3641,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un sistema multiprocesador en el que todas las CPU comparten la memoria corresponde a un modelo del tipo:",
+        "opciones": [
+          "SMP.",
+          "MPP o SMP.",
+          "Ninguno, puesto que en un sistema multiprocesador las CPU nunca comparten memoria.",
+          "MPP."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3641,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la comparación convencional entre multiprocesamiento simétrico (SMP) y procesamiento masivamente paralelo (MPP, modelo shared-nothing), ¿qué arquitectura permite a sus CPU acceder a una memoria principal común?",
+        "opciones": [
+          "SMP.",
+          "MPP, porque todos los nodos comparten la memoria principal.",
+          "Ninguno: en un multiprocesador las CPU nunca comparten memoria.",
+          "MPP, porque una memoria local por nodo equivale a memoria común."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se conserva SMP como respuesta, pero se limita a la taxonomía convencional de multiprocesamiento simétrico frente a MPP shared-nothing. Las topologías reales pueden ser jerárquicas o híbridas, compartir almacenamiento o reunir varios procesadores por nodo; la comparación se refiere a memoria principal común entre los procesadores del sistema. Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); epígrafes de arquitectura de computadores, paralelismo, sistemas de altas prestaciones y mainframe. Se coteja como cobertura curricular, no como fuente de las definiciones técnicas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas."
+        },
+        "etiquetas": [
+          "SMP",
+          "MPP",
+          "memoria compartida",
+          "arquitecturas paralelas"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments",
+              "referencia": "IBM InfoSphere, Parallel processing environments: SMP comunica procesadores mediante memoria compartida; MPP/cluster sigue un modelo shared-nothing con recursos locales por procesador o nodo y comunicación por red."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/aix/7.1.0?topic=multiprocessing-shared-memory-mp",
+              "referencia": "IBM AIX, Shared memory MP: en SMP los procesadores comparten memoria global y direccionable."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); epígrafes de arquitectura de computadores, paralelismo, sistemas de altas prestaciones y mainframe. Se coteja como cobertura curricular, no como fuente de las definiciones técnicas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "Se conserva SMP como respuesta, pero se limita a la taxonomía convencional de multiprocesamiento simétrico frente a MPP shared-nothing. Las topologías reales pueden ser jerárquicas o híbridas, compartir almacenamiento o reunir varios procesadores por nodo; la comparación se refiere a memoria principal común entre los procesadores del sistema. Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas."
+        }
+      }
+    },
+    {
+      "id": 3642,
+      "original": {
+        "id": 3642,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes categorías de la taxonomía de Flynn se corresponden con una arquitectura monoprocesador?",
+        "opciones": [
+          "MISD y SISD",
+          "SIMD y SISD",
+          "MIMD y MISD",
+          "SISD y MISD"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3642,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la taxonomía de Flynn, ¿qué categoría representa el modelo escalar convencional de uniprocesador, con un único flujo de instrucciones y uno de datos?",
+        "opciones": [
+          "SISD (Single Instruction, Single Data).",
+          "SIMD (Single Instruction, Multiple Data).",
+          "MISD (Multiple Instruction, Single Data).",
+          "MIMD (Multiple Instruction, Multiple Data)."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se eliminan las opciones duplicadas del original y se pregunta por SISD bajo una definición explícita: flujo de instrucciones único y flujo de datos único, modelo escalar convencional de uniprocesador. La taxonomía de Flynn clasifica flujos, no es una medida universal del número físico de chips o núcleos. Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); epígrafes de arquitectura de computadores, paralelismo, sistemas de altas prestaciones y mainframe. Se coteja como cobertura curricular, no como fuente de las definiciones técnicas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas."
+        },
+        "etiquetas": [
+          "Flynn",
+          "SISD",
+          "SIMD",
+          "arquitectura monoprocesador"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1109/PROC.1966.5273",
+              "referencia": "Michael J. Flynn, “Very High-Speed Computing Systems,” Proceedings of the IEEE 54(12), 1966, DOI 10.1109/PROC.1966.5273: clasifica organizaciones por número de flujos de instrucciones y datos, e identifica SISD como single instruction stream/single data stream."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); epígrafes de arquitectura de computadores, paralelismo, sistemas de altas prestaciones y mainframe. Se coteja como cobertura curricular, no como fuente de las definiciones técnicas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "Se eliminan las opciones duplicadas del original y se pregunta por SISD bajo una definición explícita: flujo de instrucciones único y flujo de datos único, modelo escalar convencional de uniprocesador. La taxonomía de Flynn clasifica flujos, no es una medida universal del número físico de chips o núcleos. Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas."
+        }
+      }
+    },
+    {
+      "id": 3643,
+      "original": {
+        "id": 3643,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En los sistemas multiprocesador, los sistemas MIMD se caracterizan por:",
+        "opciones": [
+          "Varias unidades funcionales realizan diferentes operaciones sobre diferentes datos.",
+          "Una única unidad funcional realiza varias operaciones sobre diferentes datos.",
+          "Varias unidades funcionales realizan operaciones similares sobre datos diferentes.",
+          "Una única unidad funcional realiza una única operación sobre diferentes datos."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3643,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la taxonomía de Flynn, ¿qué combinación de flujos define MIMD?",
+        "opciones": [
+          "Varios flujos de instrucciones ejecutan instrucciones potencialmente distintas sobre varios flujos de datos.",
+          "Un flujo de instrucciones aplica la misma operación a varios flujos de datos.",
+          "Varios flujos de instrucciones operan sobre un único flujo de datos.",
+          "Un único flujo de instrucciones opera sobre un único flujo de datos."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se sustituye «unidades funcionales» por los conceptos de la taxonomía: en MIMD coexisten varios flujos de instrucciones y varios flujos de datos; los elementos de procesamiento pueden ejecutar instrucciones distintas sobre datos distintos. No se confunde con SIMD, que mantiene un flujo de instrucciones aplicado a múltiples datos. Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); epígrafes de arquitectura de computadores, paralelismo, sistemas de altas prestaciones y mainframe. Se coteja como cobertura curricular, no como fuente de las definiciones técnicas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas."
+        },
+        "etiquetas": [
+          "Flynn",
+          "MIMD",
+          "flujos de instrucciones",
+          "flujos de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1109/PROC.1966.5273",
+              "referencia": "Michael J. Flynn, “Very High-Speed Computing Systems,” Proceedings of the IEEE 54(12), 1966, DOI 10.1109/PROC.1966.5273: MIMD significa multiple instruction streams–multiple data streams."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); epígrafes de arquitectura de computadores, paralelismo, sistemas de altas prestaciones y mainframe. Se coteja como cobertura curricular, no como fuente de las definiciones técnicas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "Se sustituye «unidades funcionales» por los conceptos de la taxonomía: en MIMD coexisten varios flujos de instrucciones y varios flujos de datos; los elementos de procesamiento pueden ejecutar instrucciones distintas sobre datos distintos. No se confunde con SIMD, que mantiene un flujo de instrucciones aplicado a múltiples datos. Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas."
+        }
+      }
+    },
+    {
+      "id": 3644,
+      "original": {
+        "id": 3644,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es la diferencia entre MPP y SMP?",
+        "opciones": [
+          "En SMP todas las CPU comparten la misma memoria mientras en MPP cada CPU tiene su propia memoria.",
+          "En MPP todas las CPU comparten la misma memoria mientras en SMP cada CPU tiene su propia memoria.",
+          "No hay ninguna diferencia ambas arquitecturas son iguales.",
+          "SMP se utiliza en mainframes mientras que MPP se utiliza en supercomputadores."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3644,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la comparación convencional entre SMP y MPP shared-nothing, ¿cuál es la diferencia respecto a la memoria principal?",
+        "opciones": [
+          "En SMP los procesadores acceden a memoria principal compartida; en MPP cada nodo mantiene memoria local y se comunica por interconexión.",
+          "En MPP todos los nodos acceden necesariamente a una única memoria principal; en SMP cada CPU posee una memoria aislada.",
+          "SMP y MPP son nombres equivalentes para la misma topología de memoria.",
+          "SMP se reserva a mainframes y MPP exclusivamente a superordenadores."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se define MPP en el sentido convencional shared-nothing de la documentación IBM consultada. SMP ofrece memoria principal común; en MPP cada nodo/partición tiene memoria local y se comunica por interconexión. No se afirma que MPP prohíba almacenamiento compartido ni que cada CPU individual de un nodo multinúcleo tenga memoria exclusiva. Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); epígrafes de arquitectura de computadores, paralelismo, sistemas de altas prestaciones y mainframe. Se coteja como cobertura curricular, no como fuente de las definiciones técnicas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas."
+        },
+        "etiquetas": [
+          "SMP",
+          "MPP",
+          "memoria compartida",
+          "memoria local",
+          "shared-nothing"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments",
+              "referencia": "IBM InfoSphere, Parallel processing environments: compara SMP, con memoria compartida y un sistema operativo, con MPP/cluster shared-nothing, con memoria dedicada por nodo/processor y comunicación mediante red."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/db2/11.5.x?topic=environments-database-partition-processor",
+              "referencia": "IBM Db2, Database partition and processor environments: describe MPP/shared-nothing con memoria y discos locales y lo contrasta con SMP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); epígrafes de arquitectura de computadores, paralelismo, sistemas de altas prestaciones y mainframe. Se coteja como cobertura curricular, no como fuente de las definiciones técnicas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "Se define MPP en el sentido convencional shared-nothing de la documentación IBM consultada. SMP ofrece memoria principal común; en MPP cada nodo/partición tiene memoria local y se comunica por interconexión. No se afirma que MPP prohíba almacenamiento compartido ni que cada CPU individual de un nodo multinúcleo tenga memoria exclusiva. Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas."
+        }
+      }
+    },
+    {
+      "id": 3645,
+      "original": {
+        "id": 3645,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuáles de las siguientes NO es una característica esencial de los sistemas de altas prestaciones?",
+        "opciones": [
+          "Arquitectura altamente paralela.",
+          "Gran capacidad de compute.",
+          "Tiempo compartido.",
+          "Elevado coste."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3645,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué concepto de sistema operativo consiste en repartir el tiempo de CPU entre distintos usuarios o procesos para que parezca que todos ejecutan concurrentemente?",
+        "opciones": [
+          "Procesamiento de altas prestaciones (HPC).",
+          "Ejecución paralela en múltiples nodos.",
+          "Tiempo compartido.",
+          "Alta capacidad de cálculo."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se reformula porque «elevado coste» tampoco es una propiedad necesaria y «tiempo compartido» puede coexistir con HPC como modalidad de acceso. El nuevo enunciado pide identificar el concepto de sistema operativo que reparte tiempo de CPU entre usuarios/procesos, no una capacidad o arquitectura que defina HPC. Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); epígrafes de arquitectura de computadores, paralelismo, sistemas de altas prestaciones y mainframe. Se coteja como cobertura curricular, no como fuente de las definiciones técnicas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas."
+        },
+        "etiquetas": [
+          "HPC",
+          "computación de altas prestaciones",
+          "tiempo compartido",
+          "multiprogramación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://www.intel.com/content/www/us/en/learn/what-is-hpc.html",
+              "referencia": "Intel, What is High Performance Computing?: caracteriza HPC por el procesamiento paralelo y la resolución de cargas computacionalmente intensivas; no lo define por un sistema operativo de tiempo compartido."
+            },
+            {
+              "url": "https://docs.hpc.shef.ac.uk/en/latest/hpc/what-is-hpc.html",
+              "referencia": "University of Sheffield HPC Documentation, What is HPC?: describe el uso de clústeres y plataformas para cargas de altas prestaciones; señala que también pueden usarse otras plataformas."
+            },
+            {
+              "url": "https://technav.ieee.org/topic/time-sharing-computer-systems/",
+              "referencia": "IEEE Technology Navigator, Time sharing computer systems: define tiempo compartido como servicio concurrente a múltiples usuarios/procesos mediante reparto temporal de CPU, concepto de utilización/acceso y no requisito de arquitectura HPC."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); epígrafes de arquitectura de computadores, paralelismo, sistemas de altas prestaciones y mainframe. Se coteja como cobertura curricular, no como fuente de las definiciones técnicas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "Se reformula porque «elevado coste» tampoco es una propiedad necesaria y «tiempo compartido» puede coexistir con HPC como modalidad de acceso. El nuevo enunciado pide identificar el concepto de sistema operativo que reparte tiempo de CPU entre usuarios/procesos, no una capacidad o arquitectura que defina HPC. Cotejo curricular: ITIC Academy, bloque 26; correspondencia oficial A1-52 y A2-II-1 verificada en los anexos vigentes consultados el 31-10-2026. Academia/convocatorias delimitan cobertura, no reemplazan las fuentes técnicas."
+        }
+      }
+    }
+  ]
+}
