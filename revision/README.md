@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 667 (IDs 3651–3655). Acumulado: 3655 preguntas examinadas individualmente, 3577 verificadas (708 vigentes, 2602 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8468 sin revisar individualmente. Hay 2985 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 668 (IDs 3656–3660). Acumulado: 3660 preguntas examinadas individualmente, 3582 verificadas (708 vigentes, 2607 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8463 sin revisar individualmente. Hay 2990 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 668 — 31 de octubre de 2026
+
+IDs 3656–3660 revisados individualmente; el original completo se conserva en [cambios-lote-668.json](cambios-lote-668.json). Los cinco reactivos quedan corregidos:
+- **3656 — taxonomía de Flynn:** se confirma que clasifica sistemas por flujos de instrucciones y datos (SISD, SIMD, MISD y MIMD); se eliminan distractores anacrónicos sobre Big Data, IBM PC y Bloom. **Corregida.** A1-52/A2-II-1.
+- **3657 — SMP y Flynn:** se precisa que un SMP con procesadores que ejecutan instrucciones independientes sobre datos distintos se clasifica como MIMD; memoria compartida no implica SIMD. **Corregida.** A1-52/A2-II-1.
+- **3658 — vectorización:** se limita a procesador vectorial clásico, donde una instrucción opera sobre varios elementos de datos, SIMD; se advierte que sistemas modernos pueden combinar modelos. **Corregida.** A1-52/A2-II-1.
+- **3659 — definición de SIMD:** se explicita un flujo de instrucciones aplicado a múltiples datos y se separa de ejecución de instrucciones distintas o de la mera memoria compartida. **Corregida.** A1-52/A2-II-1.
+- **3660 — longitud de instrucciones:** el original confundía longitud de palabra con longitud de instrucción y generalizaba RISC/CISC. Se sustituye por una comparación comprobable: RV32I base usa instrucciones de 32 bits; IA-32 tiene codificación variable de hasta 15 bytes. La extensión comprimida RISC-V queda fuera del alcance explícito. **Corregida.** A1-52/A2-II-1.
+
+Fuentes técnicas: Michael J. Flynn, [“Very High-Speed Computing Systems”](https://doi.org/10.1109/PROC.1966.5273); NASA, [TM 4662 — Parallelism in Computer Architecture](https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf), sobre MIMD, SIMD y procesadores vectoriales clásicos; RISC-V International, [RV32I Base Integer Instruction Set](https://docs.riscv.org/reference/isa/unpriv/rv32.html), e Intel, [Software Developer’s Manual](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html), para los formatos de instrucción. Se delimita expresamente RV32I sin la extensión comprimida C.
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), usado como contexto y no como fuente de claves. Correspondencia oficial A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), cotejados con [temario-oficial.json](temario-oficial.json) el 31-10-2026. Las convocatorias acreditan encaje curricular, las fuentes técnicas justifican las respuestas.
+
+Comprobaciones ejecutadas: inventario de 12.123 preguntas (cero errores; 12 grupos repetidos y 65 candidatos automáticos para evaluar), verificador de 3.660 registros (cero errores; 8.463 preguntas restantes idénticas al original) y git diff --check limpio. El inventario automático no se cuenta como revisión de contenido.
 
 ## Lote 667 — 31 de octubre de 2026
 
