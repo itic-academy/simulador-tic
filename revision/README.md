@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 650 (IDs 3566–3570). Acumulado: 3570 preguntas examinadas individualmente, 3493 verificadas (701 vigentes, 2530 corregidas y 262 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8553 sin revisar individualmente. Hay 2902 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 651 (IDs 3571–3575). Acumulado: 3575 preguntas examinadas individualmente, 3498 verificadas (702 vigentes, 2534 corregidas y 262 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8548 sin revisar individualmente. Hay 2906 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 651 — 31 de octubre de 2026
+
+IDs 3571–3575 revisados individualmente y preservados en [cambios-lote-651.json](cambios-lote-651.json).
+- **3571 — eVisor:** la aplicación de la suite @firma genera copias en papel de documentos firmados y justificantes; se elimina la atribución anacrónica a la SGAD y se mantiene eVisor. **Corregida.** A1-46/A1-80; A2-I-6/I-9.
+- **3572 — modelo relacional:** table/relation, row/tuple y column/attribute; B es la equivalencia didáctica correcta. Se advierte que esto no convierte a toda tabla SQL en una relación matemática estricta. **Vigente.** A1-64; A2-II-5.
+- **3573 — conceptos OSI:** se precisa interfaz/SAP, primitivas como interacciones abstractas usuario-proveedor y protocolo entre entidades pares. La afirmación falsa D invierte el sentido: cada capa usa servicios de la inferior y los presta a la superior. **Corregida.** A1-111; A2-II-8.
+- **3574 — digitalización:** la optimización automática de imagen (umbralización, reorientación, eliminación de bordes) es procesado posterior a la adquisición según NTI V.1.b. **Corregida.** A1-46; A2-I-9.
+- **3575 — ventana deslizante:** el ejercicio original confunde TCP, que numera octetos y expresa la ventana en bytes, con un protocolo didáctico de paquetes. Se reformula como ventana fija con ACK acumulativo: el reconocimiento del paquete 1 desplaza la ventana inicial 1–4 y permite enviar 5. **Corregida.** A1-115; A2-II-8.
+
+Fuentes primarias/técnicas: PAe-CTT, [ficha oficial eVisor](https://administracionelectronica.gob.es/ctt/evisor/mas) y [Suite @firma](https://administracionelectronica.gob.es/dam/jcr%3A00df46e5-7b1f-48cd-9cb2-d71b197ca383/Suite%40Firma.pdf); E. F. Codd, [modelo relacional original](https://research.ibm.com/publications/a-relational-model-of-data-for-large-shared-data-banks) y manual IBM [Database Fundamentals for DB2](https://public.dhe.ibm.com/software/dw/db2/express-c/wiki/Database_fundamentals.pdf); UIT-T [X.200](https://www.itu.int/rec/T-REC-X.200/en) y [X.210](https://www.itu.int/rec/T-REC-X.210/en); BOE, [NTI de Digitalización](https://www.boe.es/buscar/act.php?id=BOE-A-2011-13168); IETF [RFC 793](https://www.rfc-editor.org/rfc/rfc793.html) y [RFC 9293 (TCP vigente)](https://www.rfc-editor.org/rfc/rfc9293.html).
+
+Cotejo ITIC Academy en Drive: [bloque 36, Identificación y Firma](https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk) y [bloque 20, Interoperabilidad](https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view), eVisor/firmas y documentos; [bloque 29, Bases de Datos y Modelado](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), modelo relacional/SQL; [bloques 42 Redes y 43 Protocolos](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view), OSI/TCP; bloque 20, expediente digital. La academia se emplea como mapa temático; la respuesta se fundamenta en las normas, recomendaciones o documentación técnica primaria citadas.
+
+Correspondencia cotejada con convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y los temas de [temario-oficial.json](temario-oficial.json). Las pruebas automáticas verifican integridad/trazabilidad y no sustituyen la verificación individual.
 
 ## Lote 650 — 31 de octubre de 2026
 
