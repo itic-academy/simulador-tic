@@ -1,6 +1,19 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 660 (IDs 3616–3620). Acumulado: 3620 preguntas examinadas individualmente, 3542 verificadas (708 vigentes, 2567 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8503 sin revisar individualmente. Hay 2950 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 661 (IDs 3621–3625). Acumulado: 3625 preguntas examinadas individualmente, 3547 verificadas (708 vigentes, 2572 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8498 sin revisar individualmente. Hay 2955 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 661 — 31 de octubre de 2026
+
+IDs 3621–3625 revisados individualmente; originales completos preservados en [cambios-lote-661.json](cambios-lote-661.json).
+- **3621 — información operativa:** el Banco Mundial identifica su uso como frecuente y principalmente interno; el enunciado ahora pregunta por frecuencia, no por «grado» indeterminado. **Corregida.** A1-28/29.
+- **3622 — conocimiento explícito:** se separa lo explícito (articulado/registrado) de lo tácito (personal, experiencial y difícil de formalizar); se corrige el alcance impreciso del original. **Corregida.** A1-29.
+- **3623 — agregación en operaciones:** el nivel operativo conserva bajo nivel de agregación y detalle de transacciones concretas. **Corregida.** A1-28/29.
+- **3624 — conocimiento tácito:** se define en relación con experiencia, contexto y dificultad de articulación; se contrasta con el conocimiento explícito registrado. **Corregida.** A1-29.
+- **3625 — organización de Drucker:** se corrige la afirmación falsa de comunicación reservada exclusivamente a directivos; las reducciones de niveles y mandos se identifican como proyecciones del artículo de 1988. **Corregida.** A1-29.
+
+Fuentes primarias/académicas: Banco Mundial, [Information and Communications for Development 2006, cap. 3, recuadro 3.2](https://documents1.worldbank.org/curated/en/656741468139794425/pdf/342510ENGLISH01GAP0TechnicalTool101.pdf), características de información por nivel (fuente, cobertura, agregación, precisión y frecuencia); Ikujiro Nonaka, [“A Dynamic Theory of Organizational Knowledge Creation”](https://pubsonline.informs.org/doi/epdf/10.1287/orsc.5.1.14), Organization Science 5(1), 1994, distinción entre conocimiento tácito y explícito; Peter F. Drucker, Harvard Business Review [“The Coming of the New Organization”](https://hbr.org/1988/01/the-coming-of-the-new-organization), proyección histórica y responsabilidad de información.
+
+Cotejo ITIC Academy: [bloque «Organización y gestión de los sistemas de información», tema A1-29](https://drive.google.com/file/d/1ANdenllxXF4E7Sl4vJdJ_XPUPkx7Mqp_/view?usp=drivesdk), e inclusión de estructura de SI del tema A1-28. El material orienta la correspondencia, no sustituye las fuentes. Convocatorias: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario oficial registrado](temario-oficial.json). Las comprobaciones automáticas verifican integridad y trazabilidad; no reemplazan la revisión individual.
 
 ## Lote 660 — 31 de octubre de 2026
 
