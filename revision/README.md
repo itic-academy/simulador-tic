@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 654 (IDs 3586–3590). Acumulado: 3590 preguntas examinadas individualmente, 3512 verificadas (703 vigentes, 2543 corregidas y 266 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8533 sin revisar individualmente. Hay 2920 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 655 (IDs 3591–3595). Acumulado: 3595 preguntas examinadas individualmente, 3517 verificadas (705 vigentes, 2545 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8528 sin revisar individualmente. Hay 2925 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 655 — 31 de octubre de 2026
+
+IDs 3591–3595 revisados individualmente; originales completos preservados en [cambios-lote-655.json](cambios-lote-655.json).
+- **3591 — ENS:** la pregunta anterior mezclaba medidas de continuidad, identificación y cifrado y sobregeneralizaba el cifrado de datos en reposo y tránsito. Se pregunta ahora por op.cont.4 del RD 311/2022, aplicable a nivel ALTO de disponibilidad: disponer de medios alternativos para mantener el servicio. **Corregida.** A1-48; A2-I-9.
+- **3592 — modelo E/R:** la asociación entre ocurrencias del mismo tipo de entidad en roles distintos es recursiva o unaria. **Vigente.** A1-63/64; A2-II-5.
+- **3593 — RUP:** sus fases son Inicio, Elaboración, Construcción y Transición; «Finalización» no forma parte de ellas. Se desarrolla la sigla y se pregunta específicamente por RUP. **Corregida.** A1-86/88; A2-III-2/III-9.
+- **3594 — firma digital:** conforme a NIST, respalda autenticación de origen, integridad y no repudio; no garantiza disponibilidad del documento o del servicio. **Vigente.** A1-80/81; A2-I-6.
+- **3595 — IEEE 802.11F:** describió históricamente IAPP para interoperabilidad multiproveedor entre puntos de acceso; IEEE la registra como retirada en 2006. Se conserva solo con esa fecha y alcance explícitos. **Histórica.** A1-118; A2-IV-8.
+
+Fuentes primarias/técnicas: BOE [Real Decreto 311/2022, ENS, anexo II, op.cont y op.acc](https://www.boe.es/eli/es/rd/2022/05/03/311/con); Oracle [Recursive Relationship](https://docs.oracle.com/cd/F26413_52/books/DMR/c-Recursive-Relationship-afs1022724.html) y [modelo E/R, UC Davis](https://www.cs.ucdavis.edu/~ludaesch/ECS-165A-FQ13/handouts/2-er.pdf); IBM, [Rational Unified Process](https://www.redbooks.ibm.com/redpapers/pdfs/redp3877.pdf) y [documentación RUP](https://www.ibm.com/docs/en/rational-clearquest/10.0.8?topic=settings-project-planning); NIST [FIPS 186-5](https://csrc.nist.gov/pubs/fips/186-5/final) y [glosario de firma digital](https://csrc.nist.gov/glossary/term/digital_signature); IEEE [ficha 802.11F-2003](https://standards.ieee.org/ieee/802.11F/1171/) y [descripción del grupo 802.11 y retirada](https://grouper.ieee.org/groups/802/11/overview.html).
+
+Cotejo ITIC Academy: [bloque 48, Seguridad de Redes y Aplicaciones](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk) para ENS; [bloque 29, Bases de Datos y Modelado](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk) para E/R; [bloque 38, Análisis, Diseño y Construcción](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk) y [bloque 15, Metodologías y Ciclo de Vida](https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk) para RUP; [bloque 36, Identificación y Firma](https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk) para firma digital; [bloque 46, Redes Inalámbricas](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk) para IEEE 802.11. La academia orienta el encaje curricular, no sustituye las fuentes primarias.
+
+Correspondencia cotejada con convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json). Las pruebas automáticas verifican integridad y trazabilidad; no sustituyen la revisión individual.
 
 ## Lote 654 — 31 de octubre de 2026
 
