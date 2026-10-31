@@ -170869,35 +170869,129 @@
       "id": 3501,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los Enterprise Java Beans (EJB) con funcionamiento asíncrono son:",
+      "texto": "En Jakarta Enterprise Beans, ¿qué tipo de componente se invoca asincrónicamente cuando llega un mensaje a su destino?",
       "opciones": [
-        "Message driven beans",
-        "Session beans",
-        "Entity beans",
-        "Todos los anteriores tienen funcionamiento asíncrono"
+        "Message-driven bean (MDB).",
+        "Session bean; sus invocaciones son siempre asíncronas por defecto.",
+        "Entity bean; representa la recepción asíncrona de mensajes.",
+        "Todos los enterprise beans usan siempre invocación asíncrona."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se acota la pregunta a consumo asíncrono de mensajes, distinguiéndolo de métodos asíncronos que también pueden ofrecer session beans.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1; El bloque 30 incluye Java y la arquitectura Jakarta EE (A2-D10, normalizado A2-III-10); la diferencia precisa entre MDB y session beans asíncronos procede de la especificación Enterprise Beans.; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas oficiales BOE y revision/temario-oficial.json; se explicitan los límites de la cobertura académica localizada."
+      },
+      "etiquetas": [
+        "Java",
+        "Jakarta EE",
+        "Enterprise Beans",
+        "message-driven bean",
+        "asíncrono"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/specifications/enterprise-beans/4.0/jakarta-enterprise-beans-spec-core-4.0.html",
+            "referencia": "Eclipse Foundation, Jakarta Enterprise Beans 4.0 Core Specification, §2.4 y capítulo 5: message-driven beans son invocados asincrónicamente al llegar un mensaje; los session beans son síncronos por defecto, pero también pueden exponer métodos asíncronos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, actualización 2026.1: incluye Java y arquitectura Java EE/Jakarta EE (A2-D10, código normalizado A2-III-10); se consulta la especificación para la semántica exacta."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1. El bloque 30 incluye Java y la arquitectura Jakarta EE (A2-D10, normalizado A2-III-10); la diferencia precisa entre MDB y session beans asíncronos procede de la especificación Enterprise Beans."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; epígrafes cotejados con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; epígrafes cotejados con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se acota la pregunta a consumo asíncrono de mensajes, distinguiéndolo de métodos asíncronos que también pueden ofrecer session beans. Cotejo ITIC Academy: El bloque 30 incluye Java y la arquitectura Jakarta EE (A2-D10, normalizado A2-III-10); la diferencia precisa entre MDB y session beans asíncronos procede de la especificación Enterprise Beans. Correspondencia oficial: A1-67, A2-III-10."
+      }
     },
     {
       "id": 3502,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la respuesta falsa relativa a la monitorización del sistema operativo:",
+      "texto": "¿Cuál de las siguientes tareas no corresponde a la monitorización del rendimiento del sistema operativo?",
       "opciones": [
-        "Se puede hacer en tiempo real utilizando monitores del sistema",
-        "Incluye herramientas de seguridad para asignar o denegar permisos de usuario en el sistema",
-        "Se puede hacer a posteriori, utilizando herramientas que realicen análisis estadísticos de los logs del sistema",
-        "Permite detectar los cuellos de botella del sistema"
+        "Observar contadores de rendimiento en tiempo real.",
+        "Asignar o denegar permisos a las cuentas de usuario.",
+        "Analizar registros de contadores para estudiar tendencias después de una captura.",
+        "Detectar posibles cuellos de botella de CPU, memoria, disco o red."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se precisa que se evalúa monitorización de rendimiento del SO y se distingue de la administración de permisos, que puede tener auditoría de seguridad independiente.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1; El bloque 27 cubre administración de Unix/Linux y fundamentos de SO (A1-60/A2-T2, normalizado A2-II-2); las tareas de monitorización de rendimiento se contrastan con documentación Microsoft.; https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas oficiales BOE y revision/temario-oficial.json; se explicitan los límites de la cobertura académica localizada."
+      },
+      "etiquetas": [
+        "monitorización",
+        "rendimiento",
+        "permisos",
+        "logs",
+        "cuellos de botella"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/support-tools/troubleshoot-issues-performance-monitor",
+            "referencia": "Microsoft Learn, Troubleshoot issues using Performance Monitor: la herramienta registra y analiza contadores de CPU, memoria, disco, red y procesos en tiempo real o a posteriori para investigar degradaciones y cuellos de botella."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights",
+            "referencia": "Microsoft Learn, Basic audit policy recommendations: la auditoría de seguridad registra eventos y accesos para investigación; la asignación/denegación de permisos es una función de administración de acceso, no una actividad de monitorización de rendimiento del SO."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 Sistemas Operativos, actualización 2026: A1-60 y A2-T2 cubren administración de Unix/Linux y sistemas operativos; los ejemplos de rendimiento se comprueban en Microsoft Learn."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1. El bloque 27 cubre administración de Unix/Linux y fundamentos de SO (A1-60/A2-T2, normalizado A2-II-2); las tareas de monitorización de rendimiento se contrastan con documentación Microsoft."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; epígrafes cotejados con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; epígrafes cotejados con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se precisa que se evalúa monitorización de rendimiento del SO y se distingue de la administración de permisos, que puede tener auditoría de seguridad independiente. Cotejo ITIC Academy: El bloque 27 cubre administración de Unix/Linux y fundamentos de SO (A1-60/A2-T2, normalizado A2-II-2); las tareas de monitorización de rendimiento se contrastan con documentación Microsoft. Correspondencia oficial: A1-60, A2-II-2."
+      }
     },
     {
       "id": 3503,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique el producto de Microsoft que permite la administración de Ia configuración del cumplimiento y la administración integral de activos de servidores, equipos de escritorio, portátiles y dispositivos móviles:",
+      "texto": "¿Qué producto, conocido históricamente como System Center Configuration Manager (SCCM), permite administrar políticas de configuración, inventario y cumplimiento de clientes Windows?",
       "opciones": [
         "System Center Data Protection Manager.",
         "System Center App Controller.",
@@ -170905,35 +170999,188 @@
         "System Center Orchestrator."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene la respuesta del producto históricamente conocido como SCCM, pero se pregunta por sus funciones documentadas de clientes, inventario y cumplimiento y se aclara el cambio de nombre y el estado de la gestión MDM móvil.",
+      "clasificacion": {
+        "A1": [
+          "A1-61"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1; El bloque 27 incluye sistemas operativos Microsoft y su administración (A1-61/A2-T2, normalizado A2-II-2); el ciclo del producto, inventario y cumplimiento se verifican con Microsoft Learn.; https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas oficiales BOE y revision/temario-oficial.json; se explicitan los límites de la cobertura académica localizada."
+      },
+      "etiquetas": [
+        "Microsoft",
+        "System Center",
+        "Configuration Manager",
+        "inventario",
+        "cumplimiento",
+        "histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/lifecycle/products/microsoft-configuration-manager",
+            "referencia": "Microsoft Lifecycle, Microsoft Configuration Manager: registra que desde la versión 2303 Microsoft Endpoint Configuration Manager adoptó el nombre Microsoft Configuration Manager; el nombre System Center Configuration Manager (SCCM) es histórico."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/inventory/configure-hardware-inventory",
+            "referencia": "Microsoft Learn, Configure hardware inventory: Configuration Manager actual recoge inventario de hardware de sus clientes mediante configuración y políticas de cliente."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/intune/configmgr/compliance/get-started/get-started-with-compliance-settings",
+            "referencia": "Microsoft Learn, Get started with compliance settings: ConfigMgr evalúa líneas base y reglas de cumplimiento en dispositivos administrados y reporta resultados."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 Sistemas Operativos, actualización 2026, para el encuadre de administración de sistemas Microsoft; el producto y su alcance se contrastan con documentación vigente del fabricante."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1. El bloque 27 incluye sistemas operativos Microsoft y su administración (A1-61/A2-T2, normalizado A2-II-2); el ciclo del producto, inventario y cumplimiento se verifican con Microsoft Learn."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; epígrafes cotejados con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; epígrafes cotejados con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se mantiene la respuesta del producto históricamente conocido como SCCM, pero se pregunta por sus funciones documentadas de clientes, inventario y cumplimiento y se aclara el cambio de nombre y el estado de la gestión MDM móvil. Cotejo ITIC Academy: El bloque 27 incluye sistemas operativos Microsoft y su administración (A1-61/A2-T2, normalizado A2-II-2); el ciclo del producto, inventario y cumplimiento se verifican con Microsoft Learn. Correspondencia oficial: A1-61, A2-II-2."
+      }
     },
     {
       "id": 3504,
       "bloque": 0,
       "tema": 0,
-      "texto": "Herramienta de preprocesamiento de datos en proyectos de ciencia de datos.",
+      "texto": "¿Qué herramientas pueden apoyar tareas de preprocesamiento de datos en un proyecto de ciencia de datos?",
       "opciones": [
-        "Weka.",
-        "Pandas.",
-        "RapidMiner.",
-        "Todas las respuestas anteriores son ciertas."
+        "Weka, mediante filtros y transformaciones.",
+        "pandas, mediante limpieza y manipulación de tablas.",
+        "RapidMiner AI Studio, mediante flujos de preparación visual.",
+        "Todas las anteriores, aunque son herramientas de tipos distintos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se especifica que se trata de herramientas que pueden apoyar el preprocesamiento, se describe el papel distinto de biblioteca y plataformas, y se actualiza el nombre RapidMiner AI Studio.",
+      "clasificacion": {
+        "A1": [
+          "A1-71"
+        ],
+        "A2": [
+          "A2-III-15"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1; El bloque 34 encuadra análisis/transformación y explotación de datos dentro de ciencia de datos/Big Data; el programa oficial A2-III-15 comprende minería de datos. La función concreta de las herramientas se contrasta en su documentación oficial.; https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas oficiales BOE y revision/temario-oficial.json; se explicitan los límites de la cobertura académica localizada."
+      },
+      "etiquetas": [
+        "ciencia de datos",
+        "preprocesamiento",
+        "Weka",
+        "pandas",
+        "RapidMiner",
+        "preparación de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://ml.cms.waikato.ac.nz/weka/gui_explorer.html",
+            "referencia": "University of Waikato, Weka Knowledge Explorer: el panel Preprocess carga conjuntos de datos, explora atributos y aplica filtros no supervisados."
+          },
+          {
+            "url": "https://pandas.pydata.org/docs/user_guide/",
+            "referencia": "pandas User Guide, documentación oficial: operaciones de limpieza, tratamiento de valores ausentes, conversión, transformación, combinación y reshaping para preparación de datos."
+          },
+          {
+            "url": "https://docs.rapidminer.com/latest/studio/guided/index.html",
+            "referencia": "RapidMiner AI Studio documentation, Turbo Prep: ofrece preparación interactiva de datos, transformaciones visibles paso a paso y funciones para preparar datos antes del modelado."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, actualización 2026: encuadre de preparación y explotación de datos; la funcionalidad de cada herramienta se contrasta con sus documentos oficiales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1. El bloque 34 encuadra análisis/transformación y explotación de datos dentro de ciencia de datos/Big Data; el programa oficial A2-III-15 comprende minería de datos. La función concreta de las herramientas se contrasta en su documentación oficial."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; epígrafes cotejados con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; epígrafes cotejados con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se especifica que se trata de herramientas que pueden apoyar el preprocesamiento, se describe el papel distinto de biblioteca y plataformas, y se actualiza el nombre RapidMiner AI Studio. Cotejo ITIC Academy: El bloque 34 encuadra análisis/transformación y explotación de datos dentro de ciencia de datos/Big Data; el programa oficial A2-III-15 comprende minería de datos. La función concreta de las herramientas se contrasta en su documentación oficial. Correspondencia oficial: A1-71, A2-III-15."
+      }
     },
     {
       "id": 3505,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el sistema de gestión de base de datos de una universidad, y de acuerdo con la arquitectura ANSI/SPARC, ¿qué afirmación sería cierta?",
+      "texto": "En la arquitectura ANSI/SPARC, ¿qué nivel permite definir vistas específicas para usuarios o aplicaciones, como una vista estudiantil que solo exponga los datos requeridos y oculte los financieros?",
       "opciones": [
-        "El esquema de nivel externo para los alumnos no incluye información sobre la gestión económica de la universidad.",
-        "El esquema de nivel interno para los alumnos no incluye información académica.",
-        "En el nivel conceptual se respetan estrictamente las necesidades de implementación.",
-        "En el nivel conceptual trabajan tanto los usuarios como el administrador."
+        "El nivel externo.",
+        "El nivel interno, que define vistas de usuario y sus privilegios.",
+        "El nivel conceptual, que contiene necesariamente los detalles físicos de almacenamiento.",
+        "Todos los usuarios trabajan directamente sobre el esquema conceptual."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se convierte la afirmación contingente sobre la universidad en una pregunta sobre qué nivel permite vistas de usuario limitadas; se especifica que ocultar información económica depende de requisitos y diseño.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; El bloque 29 incluye el modelo ANSI/SPARC en A1-63 y A2-T5, normalizado A2-II-5; el informe NBS/ANSI-SPARC acredita la separación de vistas externas, esquema conceptual e interno.; https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+        "estado": "revisada",
+        "nota": "Correspondencia cotejada con programas oficiales BOE y revision/temario-oficial.json; se explicitan los límites de la cobertura académica localizada."
+      },
+      "etiquetas": [
+        "ANSI/SPARC",
+        "esquema externo",
+        "esquema conceptual",
+        "esquema interno",
+        "vistas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-f55f11d78745e6c51f75a39a44913f22/pdf/GOVPUB-C13-f55f11d78745e6c51f75a39a44913f22.pdf",
+            "referencia": "National Bureau of Standards, Reference Model for DBMS Standardization: informe del grupo de trabajo ANSI/X3/SPARC; §4 y figura 4.2 describen esquemas externos, esquema conceptual e interno y sus mappings. El nivel externo permite vistas específicas de usuarios/aplicaciones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, actualización 2026.1: cubre el modelo ANSI/SPARC en A1-63 y A2-T5, normalizado como A2-II-5."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1. El bloque 29 incluye el modelo ANSI/SPARC en A1-63 y A2-T5, normalizado A2-II-5; el informe NBS/ANSI-SPARC acredita la separación de vistas externas, esquema conceptual e interno."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938, programa A1 del anexo I; epígrafes cotejados con revision/temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262, programa A2 GSI del anexo IX; epígrafes cotejados con revision/temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se convierte la afirmación contingente sobre la universidad en una pregunta sobre qué nivel permite vistas de usuario limitadas; se especifica que ocultar información económica depende de requisitos y diseño. Cotejo ITIC Academy: El bloque 29 incluye el modelo ANSI/SPARC en A1-63 y A2-T5, normalizado A2-II-5; el informe NBS/ANSI-SPARC acredita la separación de vistas externas, esquema conceptual e interno. Correspondencia oficial: A1-63, A2-II-5."
+      }
     },
     {
       "id": 3506,
