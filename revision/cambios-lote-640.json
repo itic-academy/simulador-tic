@@ -1,0 +1,376 @@
+{
+  "fecha": "2026-10-31",
+  "alcance": "IDs 3516–3520; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3516,
+      "original": {
+        "id": 3516,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto de Java y JavaScript se puede decir:",
+        "opciones": [
+          "Los dos son lenguajes interpretados",
+          "Java es compilado en tiempo de ejecución y JavaScript interpretado",
+          "JavaScript es compilado en tiempo de ejecución y Java interpretado",
+          "Ambos son compilados"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3516,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación describe correctamente la ejecución de Java y JavaScript en implementaciones modernas?",
+        "opciones": [
+          "javac compila el código Java a bytecode para la JVM; la JVM puede interpretarlo y aplicar JIT. Los motores JavaScript pueden combinar interpretación y JIT.",
+          "JavaScript solo puede ejecutarse mediante interpretación y nunca se compila.",
+          "El código fuente Java siempre se compila directamente a código máquina antes de ejecutarse y no existe bytecode.",
+          "Java y JavaScript se ejecutan con idéntico proceso de compilación y el mismo bytecode."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se elimina la dicotomía obsoleta «Java compilado en tiempo de ejecución / JavaScript solo interpretado». javac produce bytecode antes de ejecución; la JVM puede interpretarlo y compilar puntos calientes mediante JIT. Los motores JavaScript modernos combinan interpretación y JIT.",
+        "clasificacion": {
+          "A1": [
+            "A1-65",
+            "A1-67"
+          ],
+          "A2": [
+            "A2-II-3",
+            "A2-III-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1; El bloque 30 incluye A1-65 (scripts de cliente) y A1-67 (entorno Java); la ejecución de JavaScript y su interoperabilidad en web se sitúan también en A2-III-12 y los paradigmas/características de lenguajes en A2-II-3.; https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk; correspondencia enlazada al programa oficial indicada arriba.",
+          "estado": "revisada",
+          "nota": "Cotejo con unidad ITIC Academy de Drive localizada y temarios oficiales BOE; se explicitan los límites de la relación temática y la autoridad técnica de cada referencia."
+        },
+        "etiquetas": [
+          "Java",
+          "JavaScript",
+          "JIT",
+          "compilación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/javase/8/docs/technotes/guides/javac/",
+              "referencia": "Oracle javac: compila el código fuente Java a archivos de clase con bytecode JVM."
+            },
+            {
+              "url": "https://docs.oracle.com/en/java/javase/24/vm/java-virtual-machine-guide.pdf",
+              "referencia": "Oracle Java Virtual Machine Guide: compilación JIT de bytecode a código máquina durante la ejecución."
+            },
+            {
+              "url": "https://developer.mozilla.org/en-US/docs/Glossary/Engine/JavaScript",
+              "referencia": "MDN JavaScript Engine: motores actuales interpretan y también utilizan JIT para compilar código JavaScript."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1. El bloque 30 incluye A1-65 (scripts de cliente) y A1-67 (entorno Java); la ejecución de JavaScript y su interoperabilidad en web se sitúan también en A2-III-12 y los paradigmas/características de lenguajes en A2-II-3."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I; epígrafes oficiales A1 cotejados con temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX (A2 GSI); epígrafes oficiales cotejados con temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se elimina la dicotomía obsoleta «Java compilado en tiempo de ejecución / JavaScript solo interpretado». javac produce bytecode antes de ejecución; la JVM puede interpretarlo y compilar puntos calientes mediante JIT. Los motores JavaScript modernos combinan interpretación y JIT. Cotejo Academy: El bloque 30 incluye A1-65 (scripts de cliente) y A1-67 (entorno Java); la ejecución de JavaScript y su interoperabilidad en web se sitúan también en A2-III-12 y los paradigmas/características de lenguajes en A2-II-3. Correspondencia oficial: A1-65, A1-67, A2-II-3, A2-III-12."
+        }
+      }
+    },
+    {
+      "id": 3517,
+      "original": {
+        "id": 3517,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una tabla hash, si la función hash utilizada da el mismo índice para dos valores que se están insertando:",
+        "opciones": [
+          "La premisa es falsa; por definición, una función hash nunca puede dar el mismo resultado para dos valores distintos.",
+          "El segundo elemento tendría que sobreescribir al primero.",
+          "El segundo elemento podría almacenarse en alguna otra posición libre de la tabla hash.",
+          "En una tabla hash no se puede utilizar una función hash que pueda dar el mismo resultado para dos valores distintos."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3517,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una tabla hash de direccionamiento abierto que usa sondeo lineal y aún tiene posiciones libres, ¿qué ocurre si dos claves distintas producen el mismo índice hash?",
+        "opciones": [
+          "La situación es imposible: las funciones hash son necesariamente inyectivas.",
+          "La segunda clave reemplaza necesariamente a la primera.",
+          "Se produce una colisión y el sondeo lineal puede colocar la segunda clave en la siguiente posición disponible.",
+          "La tabla deja de poder realizar búsquedas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La colisión no invalida la función hash: distintas claves pueden producir el mismo índice. Se explicita direccionamiento abierto con sondeo lineal y capacidad libre, para que la ubicación en otra posición sea respuesta inequívoca.",
+        "clasificacion": {
+          "A1": [],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, versión 2026; El programa oficial A2-III-5 cubre estructuras de datos y algoritmos; el bloque Academy 32 es el material accesible más próximo por su apartado de fundamentos algorítmicos, sin fingir que existe un epígrafe A1 equivalente específico para tablas hash.; https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk; correspondencia enlazada al programa oficial indicada arriba.",
+          "estado": "revisada",
+          "nota": "Cotejo con unidad ITIC Academy de Drive localizada y temarios oficiales BOE; se explicitan los límites de la relación temática y la autoridad técnica de cada referencia."
+        },
+        "etiquetas": [
+          "tabla-hash",
+          "colisiones",
+          "sondeo-lineal"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://algs4.cs.princeton.edu/34hash/",
+              "referencia": "Princeton Algorithms, Hash Tables: define colisión y explica resolución por linear probing buscando sucesivas posiciones libres."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32 Inteligencia Artificial y Ciencia de Datos, versión 2026. El programa oficial A2-III-5 cubre estructuras de datos y algoritmos; el bloque Academy 32 es el material accesible más próximo por su apartado de fundamentos algorítmicos, sin fingir que existe un epígrafe A1 equivalente específico para tablas hash."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I; epígrafes oficiales A1 cotejados con temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX (A2 GSI); epígrafes oficiales cotejados con temario-oficial.json."
+            }
+          ],
+          "observaciones": "La colisión no invalida la función hash: distintas claves pueden producir el mismo índice. Se explicita direccionamiento abierto con sondeo lineal y capacidad libre, para que la ubicación en otra posición sea respuesta inequívoca. Cotejo Academy: El programa oficial A2-III-5 cubre estructuras de datos y algoritmos; el bloque Academy 32 es el material accesible más próximo por su apartado de fundamentos algorítmicos, sin fingir que existe un epígrafe A1 equivalente específico para tablas hash. Correspondencia oficial: A2-III-5."
+        }
+      }
+    },
+    {
+      "id": 3518,
+      "original": {
+        "id": 3518,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale cuál es una herramienta de cifrado:",
+        "opciones": [
+          "TCE, Transparent Content Encryption",
+          "TDE, Transparent Data Encryption",
+          "TKE, Transparent Key Encryption",
+          "TSE, Transparent Server Encryption"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3518,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Oracle Database, ¿qué opción identifica la función de cifrado transparente de datos almacenados (data at rest)?",
+        "opciones": [
+          "TCE (Transparent Content Encryption).",
+          "TDE (Transparent Data Encryption).",
+          "TKE (Transparent Key Encryption).",
+          "TSE (Transparent Server Encryption)."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La pregunta genérica podía interpretarse como herramienta de cifrado cualquiera. Se concreta Oracle Database: TDE (Transparent Data Encryption) es la función que cifra datos almacenados, especialmente tablespaces/columnas, y protege datos en reposo.",
+        "clasificacion": {
+          "A1": [
+            "A1-63",
+            "A1-79"
+          ],
+          "A2": [
+            "A2-II-5",
+            "A2-II-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1; La función TDE combina cifrado de datos almacenados (A1-79/A2-II-13) y seguridad del SGBD (A1-63/A2-II-5); Academy 29 aporta el encaje de bases de datos y Academy 48 el marco de seguridad de aplicación.; https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk | ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, versión 2026; La función TDE combina cifrado de datos almacenados (A1-79/A2-II-13) y seguridad del SGBD (A1-63/A2-II-5); Academy 29 aporta el encaje de bases de datos y Academy 48 el marco de seguridad de aplicación.; https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk; correspondencia enlazada al programa oficial indicada arriba.",
+          "estado": "revisada",
+          "nota": "Cotejo con unidad ITIC Academy de Drive localizada y temarios oficiales BOE; se explicitan los límites de la relación temática y la autoridad técnica de cada referencia."
+        },
+        "etiquetas": [
+          "cifrado",
+          "TDE",
+          "base-de-datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/asoag/introduction-to-transparent-data-encryption.html",
+              "referencia": "Oracle Database Security Guide, Transparent Data Encryption: cifra datos sensibles almacenados en columnas y protege datos en reposo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1. La función TDE combina cifrado de datos almacenados (A1-79/A2-II-13) y seguridad del SGBD (A1-63/A2-II-5); Academy 29 aporta el encaje de bases de datos y Academy 48 el marco de seguridad de aplicación."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, versión 2026. La función TDE combina cifrado de datos almacenados (A1-79/A2-II-13) y seguridad del SGBD (A1-63/A2-II-5); Academy 29 aporta el encaje de bases de datos y Academy 48 el marco de seguridad de aplicación."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I; epígrafes oficiales A1 cotejados con temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX (A2 GSI); epígrafes oficiales cotejados con temario-oficial.json."
+            }
+          ],
+          "observaciones": "La pregunta genérica podía interpretarse como herramienta de cifrado cualquiera. Se concreta Oracle Database: TDE (Transparent Data Encryption) es la función que cifra datos almacenados, especialmente tablespaces/columnas, y protege datos en reposo. Cotejo Academy: La función TDE combina cifrado de datos almacenados (A1-79/A2-II-13) y seguridad del SGBD (A1-63/A2-II-5); Academy 29 aporta el encaje de bases de datos y Academy 48 el marco de seguridad de aplicación. Correspondencia oficial: A1-63, A1-79, A2-II-5, A2-II-13."
+        }
+      }
+    },
+    {
+      "id": 3519,
+      "original": {
+        "id": 3519,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una unidad de disco magnético, el tiempo de acceso a la información viene dado por:",
+        "opciones": [
+          "El tiempo de latencia",
+          "El tiempo de búsqueda más el tiempo de latencia",
+          "El tiempo de búsqueda más el tiempo de transferencia",
+          "La longitud de la pista partido por la velocidad de rotación más el tiempo de posicionamiento de la cabeza"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3519,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo básico de una unidad de disco magnético, ¿qué componentes forman el tiempo medio de acceso a un bloque?",
+        "opciones": [
+          "Tiempo medio de búsqueda + latencia rotacional media + tiempo de transferencia de los datos.",
+          "Solo latencia rotacional media.",
+          "Tiempo medio de búsqueda + tiempo de transferencia, sin latencia rotacional.",
+          "Longitud de la pista dividida por la velocidad de rotación, sin posicionamiento de la cabeza."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se corrige la fórmula incompleta del original. Para un disco magnético, el tiempo medio de acceso de una lectura incluye búsqueda/posicionamiento, latencia rotacional y transferencia; colas/controlador pueden añadir demora según el modelo.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; El bloque 26 trata almacenamiento, discos y diseño de infraestructura; el tiempo mecánico de acceso se encuadra en A1-56/A2-IV-5.; https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk; correspondencia enlazada al programa oficial indicada arriba.",
+          "estado": "revisada",
+          "nota": "Cotejo con unidad ITIC Academy de Drive localizada y temarios oficiales BOE; se explicitan los límites de la relación temática y la autoridad técnica de cada referencia."
+        },
+        "etiquetas": [
+          "discos",
+          "almacenamiento",
+          "latencia",
+          "tiempo-de-acceso"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg246478.pdf",
+              "referencia": "IBM Redbooks, AIX 5L Practical Performance Tools and Tuning Guide, componentes del acceso de disco: búsqueda, latencia rotacional y transferencia."
+            },
+            {
+              "url": "https://www.ibm.com/docs/ssw_aix_71/performance/assess_disk_perf_sar.html",
+              "referencia": "IBM AIX, métricas de servicio de E/S que incluyen seek, latencia rotacional y transferencia."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1. El bloque 26 trata almacenamiento, discos y diseño de infraestructura; el tiempo mecánico de acceso se encuadra en A1-56/A2-IV-5."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I; epígrafes oficiales A1 cotejados con temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX (A2 GSI); epígrafes oficiales cotejados con temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se corrige la fórmula incompleta del original. Para un disco magnético, el tiempo medio de acceso de una lectura incluye búsqueda/posicionamiento, latencia rotacional y transferencia; colas/controlador pueden añadir demora según el modelo. Cotejo Academy: El bloque 26 trata almacenamiento, discos y diseño de infraestructura; el tiempo mecánico de acceso se encuadra en A1-56/A2-IV-5. Correspondencia oficial: A1-56, A2-IV-5."
+        }
+      }
+    },
+    {
+      "id": 3520,
+      "original": {
+        "id": 3520,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la taxonomía de Flynn, un procesador vectorial sería considerado como:",
+        "opciones": [
+          "SISD",
+          "SIMD",
+          "MISD",
+          "MIMD"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3520,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según Flynn, ¿cómo se clasifica una arquitectura vectorial que aplica una misma instrucción a varios elementos de datos en paralelo?",
+        "opciones": [
+          "SISD (una instrucción, un flujo de datos).",
+          "SIMD (una instrucción, varios flujos de datos).",
+          "MISD (varias instrucciones, un flujo de datos).",
+          "MIMD (varias instrucciones, varios flujos de datos)."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se hace explícito el supuesto: un procesador vectorial que aplica una misma instrucción a varios elementos de datos se clasifica como SIMD en la taxonomía de Flynn. Se evita afirmar que toda arquitectura vectorial moderna tenga una única organización interna.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1; El bloque 26 incluye sistemas de altas prestaciones, arquitecturas escalables y procesamiento vectorial; correspondencia oficial A1-52/A2-II-1.; https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk; correspondencia enlazada al programa oficial indicada arriba.",
+          "estado": "revisada",
+          "nota": "Cotejo con unidad ITIC Academy de Drive localizada y temarios oficiales BOE; se explicitan los límites de la relación temática y la autoridad técnica de cada referencia."
+        },
+        "etiquetas": [
+          "Flynn",
+          "SIMD",
+          "procesamiento-vectorial"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1109/PROC.1966.5273",
+              "referencia": "Michael J. Flynn, “Very High-Speed Computing Systems”, Proceedings of the IEEE 54(12), 1966, clasificación de flujos de instrucciones y datos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026.1. El bloque 26 incluye sistemas de altas prestaciones, arquitecturas escalables y procesamiento vectorial; correspondencia oficial A1-52/A2-II-1."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I; epígrafes oficiales A1 cotejados con temario-oficial.json."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX (A2 GSI); epígrafes oficiales cotejados con temario-oficial.json."
+            }
+          ],
+          "observaciones": "Se hace explícito el supuesto: un procesador vectorial que aplica una misma instrucción a varios elementos de datos se clasifica como SIMD en la taxonomía de Flynn. Se evita afirmar que toda arquitectura vectorial moderna tenga una única organización interna. Cotejo Academy: El bloque 26 incluye sistemas de altas prestaciones, arquitecturas escalables y procesamiento vectorial; correspondencia oficial A1-52/A2-II-1. Correspondencia oficial: A1-52, A2-II-1."
+        }
+      }
+    }
+  ]
+}
