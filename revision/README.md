@@ -1,6 +1,23 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 644 (IDs 3536–3540). Acumulado: 3540 preguntas examinadas individualmente, 3463 verificadas (693 vigentes, 2512 corregidas y 258 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8583 sin revisar individualmente. Hay 2872 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 645 (IDs 3541–3545). Acumulado: 3545 preguntas examinadas individualmente, 3468 verificadas (695 vigentes, 2515 corregidas y 258 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8578 sin revisar individualmente. Hay 2877 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 645 — 31 de octubre de 2026
+
+IDs 3541–3545 revisados individualmente y conservados en [cambios-lote-645.json](cambios-lote-645.json).
+- **3541 — poderes en registros electrónicos:** se cotejan las tres tipologías del art. 6.4 de la Ley 39/2015; las tres opciones son válidas. **Vigente.** A1-8; A2-I-8/I-9.
+- **3542 — procedimiento de contratación con negociación:** se elimina un umbral monetario genérico y la afirmación de invitar siempre a cinco empresas. La característica es negociar condiciones antes de adjudicar; publicidad y reglas de invitación dependen de la modalidad y supuestos legales. **Corregida.** A1-11; no se localizó epígrafe A2 GSI directamente equivalente.
+- **3543 — mandato del Parlamento Europeo:** el art. 14.3 TUE establece cinco años. **Vigente.** A1-5; no se localizó epígrafe A2 equivalente.
+- **3544 — instrumento de recuperación:** se sustituye “el más moderno”, expresión temporal imprecisa, por la descripción de NextGenerationEU, instrumento temporal de recuperación de la crisis de COVID-19 establecido en 2020. Se distingue del Mecanismo de Recuperación y Resiliencia, que es su componente principal. **Corregida.** A1-14.
+- **3545 — leyes orgánicas y ordinarias:** se precisa que no existe una superioridad jerárquica general de la ley orgánica por su forma; se reserva a materias del art. 81 CE y su relación con la ley ordinaria también sigue el criterio material de competencia. Se concreta la referencia a leyes autonómicas dentro de sus competencias. **Corregida.** A1-1; A2-I-1.
+
+Fuentes primarias: [Ley 39/2015, art. 6](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565); [Ley 9/2017, arts. 166 y 169–170](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902); [Tratado de la Unión Europea, art. 14.3](https://eur-lex.europa.eu/eli/treaty/teu_2016/art_14/oj/spa); [Comisión Europea, NextGenerationEU](https://commission.europa.eu/strategy-and-policy/eu-budget/eu-borrower-investor-relations/nextgenerationeu_en) y [Reglamento (UE) 2020/2094](https://eur-lex.europa.eu/eli/reg/2020/2094/oj/eng); [Constitución Española](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 81, 82 y 150; [Tribunal Constitucional, STC 136/2011](https://hj.tribunalconstitucional.es/es/Resolucion/Show/6918) y [STC 102/2016](https://hj.tribunalconstitucional.es/es/Resolucion/Show/24983).
+
+Cotejo temático con ITIC Academy en Drive: [bloque 3 Actuación Administrativa y Administración Digital](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), para apoderamientos y procedimiento; [bloque 5 Contratación, Presupuestos, Convenios, Subvenciones y Compra TIC](https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk), contratación pública; [bloque 6 Economía, Sociedad y Empleo](https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk), recuperación y sostenibilidad; y [bloque 1 Constitución, Organización del Estado y AGE](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), instituciones europeas y fundamentos constitucionales.
+
+Correspondencia contrastada con los programas [A1, convocatoria BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 GSI, convocatoria BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json): A1-8/A2-I-8/I-9 (administración); A1-11 (contratos, sin equivalente A2 señalado); A1-5 (instituciones UE); A1-14 (economía y recuperación sostenible); A1-1/A2-I-1 (Constitución). La respuesta normativa se fundamenta en las fuentes primarias citadas, no en el material de academia.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check. Son controles automáticos de estructura e integridad de trazabilidad, no sustituyen la revisión individual del contenido.
 
 ## Lote 644 — 31 de octubre de 2026
 
