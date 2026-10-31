@@ -1,6 +1,23 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 643 (IDs 3531–3535). Acumulado: 3535 preguntas examinadas individualmente, 3458 verificadas (691 vigentes, 2509 corregidas y 258 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8588 sin revisar individualmente. Hay 2867 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 644 (IDs 3536–3540). Acumulado: 3540 preguntas examinadas individualmente, 3463 verificadas (693 vigentes, 2512 corregidas y 258 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8583 sin revisar individualmente. Hay 2872 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 644 — 31 de octubre de 2026
+
+IDs 3536–3540 revisados individualmente y conservados en [cambios-lote-644.json](cambios-lote-644.json).
+- **3536 — empleo verde:** se identifica expresamente el informe UNEP/ILO de 2008, cuya definición abarca agricultura, fabricación, I+D, administración y servicios que contribuyen sustancialmente a preservar o restaurar la calidad ambiental. Se advierte que no es una definición universal y que la OIT también enfatiza el trabajo decente. **Corregida.** A1-14 y A1-17; no se localizó equivalente A2.
+- **3537 — unidades administrativas:** el artículo 56 de la Ley 40/2015 confirma la responsabilidad de sus jefaturas, permite agrupar unidades menores y dispone su integración en un órgano. **Vigente.** A1-8; A2-I-8.
+- **3538 — documentos en papel digitalizados:** el artículo 53.1 del Real Decreto 203/2021 establece seis meses, salvo plazo reglamentario mayor. **Vigente.** A1-8; A2-I-9.
+- **3539 — sesión del Parlamento Europeo:** el artículo 229 TFUE prescribe un período de sesiones anual, reunión automática el segundo martes de marzo y posibilidad de períodos extraordinarios. **Corregida** para distinguir la regla del Tratado del calendario de trabajo parlamentario. A1-5; no se localizó equivalente A2.
+- **3540 — protección de datos personales:** se precisa la pregunta y se identifica el RGPD (Reglamento (UE) 2016/679) como marco general; eIDAS no cumple esa función. **Corregida.** A1-27; A2-I-7.
+
+Fuentes primarias: [informe UNEP/ILO Green Jobs (2008)](https://wedocs.unep.org/bitstream/handle/20.500.11822/8825/UNEPGreenJobs_report08.pdf) y [ficha del informe en OIT](https://www.ilo.org/publications/green-jobs-towards-decent-work-sustainable-low-carbon-world-full-report); [Ley 40/2015, art. 56](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566); [Real Decreto 203/2021, art. 53](https://www.boe.es/buscar/act.php?id=BOE-A-2021-5032); [TFUE, art. 229](https://eur-lex.europa.eu/eli/treaty/tfeu_2016/art_229/oj/spa); [Reglamento (UE) 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj) y [LO 3/2018](https://www.boe.es/eli/es/lo/2018/12/05/3/con).
+
+Cotejo temático con ITIC Academy en Drive: [bloque 6 Economía, Sociedad y Empleo](https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk), para economía sostenible, políticas ambientales y mercado de trabajo; [bloque 3 Actuación Administrativa y Administración Digital](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), para Ley 40/2015 y procedimiento electrónico; [bloque 1 Constitución, Organización del Estado y AGE](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), como material institucional relacionado; y [bloque 8 Protección de Datos](https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk), para RGPD/LOPDGDD.
+
+La correspondencia se cotejó con los programas oficiales [A1, convocatoria BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 GSI, convocatoria BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json): A1-14/17 para empleo y sostenibilidad, A1-8/A2-I-8/I-9 para organización/procedimiento administrativo, A1-5 para instituciones de la UE y A1-27/A2-I-7 para protección de datos. La academia aporta contexto de estudio; las respuestas normativas se basan en las fuentes primarias citadas.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check. Estas validaciones comprueban estructura e integridad de trazabilidad y no sustituyen la revisión individual del contenido.
 
 ## Lote 643 — 31 de octubre de 2026
 
