@@ -1,6 +1,23 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 642 (IDs 3526–3530). Acumulado: 3530 preguntas examinadas individualmente, 3453 verificadas (688 vigentes, 2507 corregidas y 258 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8593 sin revisar individualmente. Hay 2862 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 643 (IDs 3531–3535). Acumulado: 3535 preguntas examinadas individualmente, 3458 verificadas (691 vigentes, 2509 corregidas y 258 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8588 sin revisar individualmente. Hay 2867 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 643 — 31 de octubre de 2026
+
+IDs 3531–3535 revisados individualmente y conservados en [cambios-lote-643.json](cambios-lote-643.json).
+- **3531 — contratación centralizada:** se actualiza Conecta-Centralización a AUNA: desde el 14/11/2025 AUNA tramita en exclusiva los contratos basados y específicos del sistema estatal; Conecta queda para consultas históricas. **Corregida.** A1-11; Academy señala que no hay equivalente A2.
+- **3532 — plazo para responder a derechos de datos:** se reemplaza la antigua “cancelación” por derecho de supresión y se corrige el plazo general a un mes para informar de las medidas, con posible extensión motivada de hasta dos meses. **Corregida.** A1-27; A2-I-7.
+- **3533 — asiento de apoderamiento:** el art. 6.3 de la Ley 39/2015 no exige indicar las causas de anulación; sí identidad de partes, fecha de inscripción, período y tipo de poder. **Vigente.** A1-8; A2-I-8/I-9.
+- **3534 — autonomía territorial:** el art. 137 CE reconoce autonomía para la gestión de los respectivos intereses; el enunciado se restringe expresamente a su contenido literal. **Vigente.** A1-3; A2-I-1.
+- **3535 — fin de la vía administrativa:** las tres categorías legales de las primeras opciones aparecen en el art. 114.1 de la Ley 39/2015; la opción “todas” es correcta. **Vigente.** A1-8; A2-I-8.
+
+Fuentes primarias: DGRCC [Adquisiciones en línea y traspaso a AUNA](https://catalogocentralizado.hacienda.gob.es/pctw/Publica/Adquisiciones.aspx) y [Sede del Ministerio de Hacienda, procedimiento de contratos centralizados](https://sede.hacienda.gob.es/es-es/procedimientos/paginas/default?procAdminId=264); [RGPD, Reglamento (UE) 2016/679](https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-80807), art. 12.3, y [LO 3/2018](https://www.boe.es/eli/es/lo/2018/12/05/3/con), art. 12; [Ley 39/2015](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565), arts. 6.3 y 114.1; [Constitución Española](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), art. 137.
+
+Cotejo con ITIC Academy en Drive: [bloque 5 Contratación, Presupuestos, Convenios, Subvenciones y Compra TIC](https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk), tema A1-11 y sin equivalente A2; [bloque 8 Protección de Datos](https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk), RGPD/LOPDGDD; [bloque 3 Actuación Administrativa y Administración Digital](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), Leyes 39/40 y procedimiento; [bloque 1 Constitución, Organización del Estado y AGE](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), organización territorial.
+
+Correspondencia con [convocatoria A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [convocatoria A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json): A1-11 (contratación; sin A2 equivalente señalado por Academy); A1-27/A2-I-7 (datos personales); A1-8/A2-I-8/I-9 (procedimiento y administración electrónica); A1-3/A2-I-1 (Constitución y organización territorial).
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check. Son validaciones automáticas de estructura e integridad de trazabilidad, no sustituyen la revisión individual del contenido.
 
 ## Lote 642 — 31 de octubre de 2026
 
