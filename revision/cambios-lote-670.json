@@ -1,0 +1,384 @@
+{
+  "fecha": "2026-10-31",
+  "alcance": "IDs 3666–3670; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 3666,
+      "original": {
+        "id": 3666,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El paralelismo explícito MIMD está constituido por:",
+        "opciones": [
+          "Un sólo flujo de instrucciones y varios de datos",
+          "Varios flujos de Instrucciones y uno de datos",
+          "Varios flujos de instrucciones y varios de datos",
+          "Ninguna de las anteriores respuestas es cierta"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3666,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué caracteriza al paralelismo explícito MIMD?",
+        "opciones": [
+          "Un único flujo de instrucciones opera sobre varios flujos de datos.",
+          "Varios flujos de instrucciones operan sobre un único flujo de datos.",
+          "Varios flujos de instrucciones operan sobre varios flujos de datos.",
+          "Un único flujo de instrucciones opera sobre un único flujo de datos."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se confirma la definición de MIMD por dos o más flujos de instrucciones y de datos. Se normaliza la ortografía y se aclara que los flujos son independientes, frente al modelo SIMD. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto de arquitectura, memoria, paralelismo y altas prestaciones. No reemplaza la documentación técnica para las respuestas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes."
+        },
+        "etiquetas": [
+          "MIMD",
+          "Multiple Instruction Multiple Data",
+          "flujos de instrucciones",
+          "flujos de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1109/PROC.1966.5273",
+              "referencia": "Michael J. Flynn, “Very High-Speed Computing Systems”, Proceedings of the IEEE 54(12), 1966, pp. 1901–1909: define MIMD como múltiples flujos de instrucciones y múltiples flujos de datos."
+            },
+            {
+              "url": "https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf",
+              "referencia": "NASA TM 4662, Parallelism in Computer Architecture: describe sistemas MIMD como varios procesadores que ejecutan instrucciones propias sobre distintos flujos de datos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto de arquitectura, memoria, paralelismo y altas prestaciones. No reemplaza la documentación técnica para las respuestas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "Se confirma la definición de MIMD por dos o más flujos de instrucciones y de datos. Se normaliza la ortografía y se aclara que los flujos son independientes, frente al modelo SIMD. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3667,
+      "original": {
+        "id": 3667,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La arquitectura de proceso paralelo en la cual cada procesador tiene su propia memoria local y, además, puede acceder a las memorias de otros procesadores se conoce como:",
+        "opciones": [
+          "SMP",
+          "Grid",
+          "NUMA",
+          "Cluster"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3667,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denomina la arquitectura en la que cada nodo tiene memoria local y los procesadores también pueden acceder a memoria de otros nodos, con latencias no uniformes?",
+        "opciones": [
+          "SMP UMA, con latencia de acceso uniforme a toda la memoria.",
+          "Grid Computing, que no proporciona un espacio de memoria compartida NUMA.",
+          "NUMA, normalmente con memoria local más rápida que la memoria remota.",
+          "Un clúster shared-nothing en el que una CPU no puede direccionar memoria remota."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La descripción corresponde a NUMA, en particular a sistemas ccNUMA: cada nodo tiene memoria local, pero las CPU pueden acceder a memoria de otros nodos con una latencia que depende de la distancia. Se distingue de un clúster de nodos aislados y de SMP UMA. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto de arquitectura, memoria, paralelismo y altas prestaciones. No reemplaza la documentación técnica para las respuestas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes."
+        },
+        "etiquetas": [
+          "NUMA",
+          "memoria local",
+          "memoria remota",
+          "acceso no uniforme"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/numa-support",
+              "referencia": "Microsoft Learn, NUMA Support: cada nodo NUMA agrupa procesadores y memoria local; los procesadores pueden acceder a memoria de otros nodos, con latencias distintas."
+            },
+            {
+              "url": "https://docs.kernel.org/mm/numa.html",
+              "referencia": "Documentación oficial del kernel Linux, What is NUMA?: los procesadores de celdas NUMA pueden acceder a memoria remota y la latencia/ancho de banda depende de la distancia; ccNUMA mantiene una visión accesible de la memoria."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto de arquitectura, memoria, paralelismo y altas prestaciones. No reemplaza la documentación técnica para las respuestas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "La descripción corresponde a NUMA, en particular a sistemas ccNUMA: cada nodo tiene memoria local, pero las CPU pueden acceder a memoria de otros nodos con una latencia que depende de la distancia. Se distingue de un clúster de nodos aislados y de SMP UMA. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3668,
+      "original": {
+        "id": 3668,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Grid Computing:",
+        "opciones": [
+          "Podemos conseguir cerca del 100% de uso de CPU.",
+          "Los nodos no tienen que estar dedicados, puesto que su característica más importante es que la escalabilidad es parametrizable.",
+          "Son sistemas heterogéneos.",
+          "Todas las anteriores."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3668,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación describe un rasgo de Grid Computing sin atribuirle una garantía de rendimiento universal?",
+        "opciones": [
+          "Una Grid asegura que cada CPU alcance una ocupación del 100%, con independencia de la carga o la red.",
+          "Todos los nodos deben estar dedicados en exclusiva y tener idéntico hardware.",
+          "Una Grid puede coordinar la compartición de recursos distribuidos y heterogéneos conforme a políticas.",
+          "Los recursos de una Grid no pueden descubrirse dinámicamente."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "No puede prometerse utilización de CPU cercana al 100%: la ocupación depende de demanda, disponibilidad, comunicación, fallos y políticas. “Escalabilidad parametrizable” no es una definición precisa. Se pregunta por un rasgo defendible: una Grid coordina recursos distribuidos y autónomos que pueden ser heterogéneos; su compartición se sujeta a políticas y no exige dedicación exclusiva. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto de arquitectura, memoria, paralelismo y altas prestaciones. No reemplaza la documentación técnica para las respuestas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes."
+        },
+        "etiquetas": [
+          "Grid Computing",
+          "heterogeneidad",
+          "recursos distribuidos",
+          "compartición dinámica",
+          "100% CPU"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1177/109434200101500302",
+              "referencia": "Foster, Kesselman y Tuecke, “The Anatomy of the Grid: Enabling Scalable Virtual Organizations”, International Journal of High Performance Computing Applications 15(3), 2001: Grid como compartición flexible, segura y coordinada de recursos dinámicos en organizaciones virtuales."
+            },
+            {
+              "url": "https://apice.unibo.it/bin/view/Publication/FosterGrid01",
+              "referencia": "Registro académico institucional del artículo: identifica descubrimiento, autorización y acceso a recursos de instituciones y colecciones dinámicas como retos de Grid."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto de arquitectura, memoria, paralelismo y altas prestaciones. No reemplaza la documentación técnica para las respuestas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "No puede prometerse utilización de CPU cercana al 100%: la ocupación depende de demanda, disponibilidad, comunicación, fallos y políticas. “Escalabilidad parametrizable” no es una definición precisa. Se pregunta por un rasgo defendible: una Grid coordina recursos distribuidos y autónomos que pueden ser heterogéneos; su compartición se sujeta a políticas y no exige dedicación exclusiva. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3669,
+      "original": {
+        "id": 3669,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la taxonomía de Flynn, indique cuál de las siguientes categorías es INCORRECTA:",
+        "opciones": [
+          "SISD",
+          "MISD - Matricial",
+          "SIMD - Vectorial",
+          "MIMD - Multicomputadora"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3669,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según las definiciones formales de Flynn, ¿qué emparejamiento de categoría y flujos es INCORRECTO?",
+        "opciones": [
+          "SISD: un flujo de instrucciones y un flujo de datos.",
+          "MISD: múltiples flujos de instrucciones y un único flujo de datos.",
+          "SIMD: un flujo de instrucciones y múltiples flujos de datos.",
+          "MIMD: un flujo de instrucciones y múltiples flujos de datos."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El original empleaba equivalencias históricas no uniformes (“matricial”, “vectorial”, “multicomputadora”) y no daba definiciones formales de las categorías, por lo que podía inducir a error. Se sustituye por la definición por flujos: la opción incorrecta es la que atribuye un flujo de datos a SISD en vez de a MISD. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto de arquitectura, memoria, paralelismo y altas prestaciones. No reemplaza la documentación técnica para las respuestas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes."
+        },
+        "etiquetas": [
+          "Flynn",
+          "SISD",
+          "SIMD",
+          "MISD",
+          "MIMD",
+          "flujos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1109/PROC.1966.5273",
+              "referencia": "Flynn, “Very High-Speed Computing Systems” (1966): establece las cuatro clases por número de flujos de instrucciones y datos."
+            },
+            {
+              "url": "https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf",
+              "referencia": "NASA TM 4662, Parallelism in Computer Architecture: presenta las definiciones SISD, SIMD, MISD y MIMD y ejemplos vectoriales/array para SIMD."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto de arquitectura, memoria, paralelismo y altas prestaciones. No reemplaza la documentación técnica para las respuestas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "El original empleaba equivalencias históricas no uniformes (“matricial”, “vectorial”, “multicomputadora”) y no daba definiciones formales de las categorías, por lo que podía inducir a error. Se sustituye por la definición por flujos: la opción incorrecta es la que atribuye un flujo de datos a SISD en vez de a MISD. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes."
+        }
+      }
+    },
+    {
+      "id": 3670,
+      "original": {
+        "id": 3670,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la afirmación correcta respecto de la Taxonomía de Flynn:",
+        "opciones": [
+          "Se trata de una clasificación de arquitecturas de computadores en función del tipo de acceso a memoria.",
+          "Se trata de una clasificación de arquitecturas de computadores en función de la tipología de flujos de datos e instrucciones.",
+          "Se trata de una clasificación de arquitecturas de computadores en función de la capacidad de procesamiento.",
+          "Se trata de una clasificación de arquitecturas de computadores en función del acoplamiento entre los distintos procesadores."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 3670,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la afirmación correcta respecto de la Taxonomía de Flynn:",
+        "opciones": [
+          "Se trata de una clasificación de arquitecturas de computadores en función del tipo de acceso a memoria.",
+          "Se trata de una clasificación de arquitecturas de computadores en función de la tipología de flujos de datos e instrucciones.",
+          "Se trata de una clasificación de arquitecturas de computadores en función de la capacidad de procesamiento.",
+          "Se trata de una clasificación de arquitecturas de computadores en función del acoplamiento entre los distintos procesadores."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La clave original es correcta: Flynn organiza las categorías según haya uno o varios flujos de instrucciones y de datos. No las clasifica por acceso a memoria, capacidad de proceso ni acoplamiento entre procesadores; esas son dimensiones arquitectónicas distintas. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto de arquitectura, memoria, paralelismo y altas prestaciones. No reemplaza la documentación técnica para las respuestas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes."
+        },
+        "etiquetas": [
+          "Flynn",
+          "flujos de instrucciones",
+          "flujos de datos",
+          "clasificación"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-10-31",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1109/PROC.1966.5273",
+              "referencia": "Michael J. Flynn, “Very High-Speed Computing Systems”, Proceedings of the IEEE 54(12), 1966, pp. 1901–1909. “Stream” designa la secuencia de datos o instrucciones vista por la máquina durante la ejecución."
+            },
+            {
+              "url": "https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf",
+              "referencia": "NASA TM 4662, Parallelism in Computer Architecture: expone que la clasificación de Flynn distingue sistemas según número de flujos de instrucciones y datos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31-08-2026); cotejado como contexto de arquitectura, memoria, paralelismo y altas prestaciones. No reemplaza la documentación técnica para las respuestas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria BOE-A-2025-25938, anexo I, tema A1-52 (sistemas de altas prestaciones, Grid Computing y mainframe), cotejada con revision/temario-oficial.json el 31-10-2026."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria BOE-A-2025-26262, anexo IX, tema A2-II-1 (tecnologías actuales de ordenadores, superordenadores y arquitecturas escalables y de altas prestaciones), cotejada con revision/temario-oficial.json el 31-10-2026."
+            }
+          ],
+          "observaciones": "La clave original es correcta: Flynn organiza las categorías según haya uno o varios flujos de instrucciones y de datos. No las clasifica por acceso a memoria, capacidad de proceso ni acoplamiento entre procesadores; esas son dimensiones arquitectónicas distintas. Cotejo curricular: Academy bloque 26 y correspondencia oficial A1-52/A2-II-1 con los programas de 2025 y revision/temario-oficial.json, comprobados el 31-10-2026. Las claves se sustentan en las referencias técnicas de revision.fuentes."
+        }
+      }
+    }
+  ]
+}

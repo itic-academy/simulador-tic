@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 669 (IDs 3661–3665). Acumulado: 3665 preguntas examinadas individualmente, 3587 verificadas (708 vigentes, 2612 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8458 sin revisar individualmente. Hay 2995 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 670 (IDs 3666–3670). Acumulado: 3670 preguntas examinadas individualmente, 3592 verificadas (709 vigentes, 2616 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8453 sin revisar individualmente. Hay 2999 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 670 — 31 de octubre de 2026
+
+IDs 3666–3670 revisados individualmente; los originales completos se conservan en [cambios-lote-670.json](cambios-lote-670.json). Cuatro se corrigen y la quinta se confirma:
+- **3666 — MIMD:** se normaliza el enunciado y se explicita que hay múltiples flujos de instrucciones y de datos. **Corregida.** A1-52/A2-II-1.
+- **3667 — NUMA:** se precisa acceso a memoria local y remota con latencias diferentes; se distingue ccNUMA de SMP UMA y de clústeres sin espacio de memoria accesible común. **Corregida.** A1-52/A2-II-1.
+- **3668 — Grid Computing:** el original aseguraba uso de CPU cercano al 100% y escalabilidad “parametrizable”, garantías imprecisas. Se cambia por una característica documentada: coordinación y compartición de recursos distribuidos y heterogéneos bajo políticas. **Corregida.** A1-52/A2-II-1.
+- **3669 — clases de Flynn:** se eliminan asociaciones informales y potencialmente variables (matricial/vectorial/multicomputadora) y se evalúa la definición formal por número de flujos. MIMD requiere múltiples instrucciones y múltiples datos. **Corregida.** A1-52/A2-II-1.
+- **3670 — alcance de Flynn:** se confirma como criterio el tipo/número de flujos de instrucciones y datos, no memoria, capacidad de procesamiento o acoplamiento. **Vigente.** A1-52/A2-II-1.
+
+Fuentes técnicas: Flynn, [“Very High-Speed Computing Systems”](https://doi.org/10.1109/PROC.1966.5273), y [NASA TM 4662](https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf), sobre MIMD/SIMD y flujos; Microsoft, [NUMA Support](https://learn.microsoft.com/en-us/windows/win32/procthread/numa-support), y Linux Kernel, [What is NUMA?](https://docs.kernel.org/mm/numa.html), sobre acceso local/remoto y latencias; IBM, [Parallel processing topologies](https://www.ibm.com/docs/en/iis/11.7.0?topic=topologies-parallel-processing) y [Parallel processing environments](https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments), sobre MPP/shared-nothing; Foster, Kesselman y Tuecke, [“The Anatomy of the Grid”](https://doi.org/10.1177/109434200101500302), para compartición de recursos Grid.
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), como contexto, no fuente de claves. Correspondencia oficial A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), cotejados con [temario-oficial.json](temario-oficial.json) el 31-10-2026.
+
+Comprobaciones ejecutadas: inventario de 12.123 preguntas (cero errores; 12 grupos repetidos y 65 candidatos automáticos para evaluar), verificador de 3.670 registros (cero errores; 8.453 preguntas restantes idénticas al original) y git diff --check limpio. El inventario estructural no se cuenta como revisión de contenido.
 
 ## Lote 669 — 31 de octubre de 2026
 
