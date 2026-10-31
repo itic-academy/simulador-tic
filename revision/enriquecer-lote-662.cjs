@@ -1,0 +1,11 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.join(__dirname,'..'), bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-662.json'), log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const url='https://www.madrid.es/UnidadWeb/Contenidos/Oposiciones/IngSupInformatica2016/Ficheros/9plExamen.pdf';
+const ref='Ayuntamiento de Madrid, cuestionario oficial de pruebas selectivas de Ingenieros Superiores de Informática 2016, pregunta 44: mismo enunciado, respuesta b) Madurez.';
+const c=log.cambios.find(x=>x.id===3627), q=bank.preguntas.find(x=>x.id===3627);if(!c||!q)throw new Error('No se encuentra ID 3627');
+for(const obj of [c.actualizada,q]){const i=obj.revision.fuentes.findIndex(f=>f.url.includes('baquedano.es'));if(i>=0)obj.revision.fuentes.splice(i,1);if(!obj.revision.fuentes.some(f=>f.url===url))obj.revision.fuentes.push({url,referencia:ref});obj.revision.observaciones='El modelo inicial se apoya en una curva de gasto EDP cuyo nivel máximo llega a la etapa final de Madurez. Se limita a la curva histórica del modelo, no a una regla universal actual ni a la tasa de crecimiento. La respuesta también coincide con la pregunta 44 del cuestionario oficial del Ayuntamiento de Madrid de 2016.';obj.comentarios=obj.revision.observaciones;}
+c.actualizada=structuredClone(q);
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');
+const scriptPath=path.join(__dirname,'revisar-lote-662.cjs');let script=fs.readFileSync(scriptPath,'utf8').replace("https://www.baquedano.es/TIC_1_ejer_sol_libre_promo_AGE_2019.pdf","https://www.madrid.es/UnidadWeb/Contenidos/Oposiciones/IngSupInformatica2016/Ficheros/9plExamen.pdf").replace("Examen oficial A1 TIC de 15 de junio de 2019, pregunta 1: reproduce la pregunta y opciones; la clave se contrastó además con la plantilla/solución de examen disponible.","Ayuntamiento de Madrid, cuestionario oficial de pruebas selectivas de Ingenieros Superiores de Informática 2016, pregunta 44: mismo enunciado, respuesta b) Madurez.");fs.writeFileSync(scriptPath,script);
+console.log('La clave de la pregunta 3627 queda respaldada por cuestionario oficial municipal con misma pregunta y opción B.');

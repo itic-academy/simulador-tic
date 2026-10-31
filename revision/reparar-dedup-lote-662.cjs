@@ -1,0 +1,3 @@
+const fs=require('node:fs'),path=require('node:path'); const root=path.join(__dirname,'..'), bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8')), p=path.join(__dirname,'cambios-lote-662.json'),log=JSON.parse(fs.readFileSync(p,'utf8'));
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id);const seen=new Set();q.revision.fuentes=q.revision.fuentes.filter(f=>{if(seen.has(f.url))return false;seen.add(f.url);return true;});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(p,JSON.stringify(log,null,2)+'\n');console.log('Fuentes deduplicadas correctamente de forma independiente en banco y registro.');
