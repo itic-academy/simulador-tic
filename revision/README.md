@@ -1,6 +1,23 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 638 (IDs 3506–3510). Acumulado: 3510 preguntas examinadas individualmente, 3433 verificadas (687 vigentes, 2489 corregidas y 257 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8613 sin revisar individualmente. Hay 2842 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 639 (IDs 3511–3515). Acumulado: 3515 preguntas examinadas individualmente, 3438 verificadas (687 vigentes, 2494 corregidas y 257 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8608 sin revisar individualmente. Hay 2847 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 639 — 31 de octubre de 2026
+
+IDs 3511–3515 revisados individualmente y conservados en [cambios-lote-639.json](cambios-lote-639.json).
+- **3511 — definición de Inmon:** se confirma que volatilidad no es atributo del almacén: las propiedades son orientado a temas, integrado, no volátil y variante en el tiempo. Se normaliza la opción «histórico» a «no volátil». **Corregida.** A1-75; A2-II-4.
+- **3512 — modelo jerárquico:** relación padre-hijo dirigida y asimétrica, estructura arbórea; se distingue del modelo de red, que admite relaciones muchos-a-muchos. Se quitan referencias no universales a implementación y cascadas de actualización. **Corregida.** A1-63; A2-II-5.
+- **3513 — XML Signature:** la canonicalización se especifica en SignedInfo y puede también usarse como Transform de una Reference; XMLDSig cubre contenido XML y no XML, y XAdES añade propiedades/perfiles. **Corregida.** A1-77/80; A2-II-9/IV-12.
+- **3514 — shareware:** se sustituye «uso libre» por el criterio de licencia: se pueden redistribuir copias, pero quien continúa usando una copia paga la licencia; no equivale a software libre. **Corregida.** A1-43/69; A2-II-14.
+- **3515 — CPD y TIA-942:** se corrige el uso de TIER, propio del Uptime Institute. ANSI/TIA-942 emplea Rated-1 a Rated-4. **Corregida.** A1-53; A2-IV-6.
+
+Fuentes primarias: Oracle [Data Warehousing Guide](https://docs.oracle.com/en/database/oracle/oracle-database/18/dwhsg/introduction-data-warehouse-concepts.html), rasgos de Inmon; Oracle [Database Concepts](https://docs.oracle.com/en/database/oracle/oracle-database/18/cncpt/introduction-to-oracle-database.html), modelos jerárquico y de red; W3C [XML Signature Syntax and Processing 1.1](https://www.w3.org/TR/xmldsig-core/) y ETSI [EN 319 132-1 XAdES](https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.00_20/en_31913201v010300a.pdf); GNU [Categorías de software libre y no libre](https://www.gnu.org/philosophy/categories.es.html); TIA [certificaciones y niveles Rated de ANSI/TIA-942](https://tiaonline.org/our-work/certifications/tia-942-certification/certifications-and-ratings/) y [folleto oficial](https://www.tiaonline.org/wp-content/uploads/2024/05/Data-Centers-Brochure_040124.pdf).
+
+Cotejo con ITIC Academy en Drive: [bloque 34 Business Intelligence y Big Data](https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk), A1-75 y Data Warehouse; [bloque 29 Bases de datos, SQL y modelado](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), modelo ANSI y jerarquías/modelado; [bloque 36 Seguridad, criptografía, identificación y firma](https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk) para XMLDSig/XAdES; [bloque 18 Protección jurídica, licencias y control del software](https://drive.google.com/file/d/1Og6yI-YaZ48UA3pBT-HQhTh7TfvdPW_C/view?usp=drivesdk); [bloque 26 Hardware, CPD, almacenamiento y virtualización](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), redundancia y diseño de CPD.
+
+Correspondencia con [convocatoria A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [convocatoria A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json): A1-75/A2-II-4 (Data Warehouse), A1-63/A2-II-5 (bases de datos), A1-77/80 y A2-II-9/IV-12 (XML y firma), A1-43/69 y A2-II-14 (licencias) y A1-53/A2-IV-6 (CPD).
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check. Estos validadores automáticos comprueban estructura e integridad de la trazabilidad, no sustituyen la revisión individual del contenido.
 
 ## Lote 638 — 31 de octubre de 2026
 
