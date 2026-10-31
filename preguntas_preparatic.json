@@ -173995,71 +173995,282 @@
       "id": 3556,
       "bloque": 0,
       "tema": 0,
-      "texto": "La tasa de transferencia máxima que soporta el Serial Advanced Technology Attachment Express (SATA Express) es de hasta:",
+      "texto": "Según las especificaciones de SATA Express, ¿cuál es la tasa de transferencia teórica máxima indicada para la interfaz cuando utiliza dos líneas PCI Express?",
       "opciones": [
-        "6 Gbps.",
-        "16 Gbps.",
-        "8 Gbps.",
-        "3 Gbps."
+        "6 Gbit/s.",
+        "16 Gbit/s.",
+        "8 Gbit/s.",
+        "3 Gbit/s."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Intel indica que SATA Express emplea dos líneas PCIe y alcanza hasta 16 Gbit/s. Se pregunta por la tasa teórica máxima de la interfaz, no por una garantía de caudal útil de un dispositivo concreto; la clave de 16 Gbit/s se confirma.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque Hardware, almacenamiento y virtualización; El bloque de hardware desarrolla SATA/PCIe y sistemas de almacenamiento (A1-56; en su programa interno, almacenamiento C5). Se contrasta la velocidad indicada con Intel; la correspondencia oficial A2 es IV-5.; https://drive.google.com/file/d/12heek9CTZHiGHjtWvLjdjOE7vIQdlYFm/view?usp=drivesdk; correspondencia oficial en temario-oficial.json.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy en Drive y programa oficial de las convocatorias; la corrección sustantiva se apoya en la fuente primaria técnica indicada."
+      },
+      "etiquetas": [
+        "SATA-Express",
+        "SATAe",
+        "PCIe",
+        "almacenamiento"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.intel.com/content/www/us/en/gaming/resources/how-to-choose-a-motherboard.html",
+            "referencia": "Intel, Gaming Motherboard Buying Guide, apartado SATA: SATA Express utiliza dos lanes PCIe y alcanza tasas de hasta 16 Gbit/s."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12heek9CTZHiGHjtWvLjdjOE7vIQdlYFm/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque Hardware, almacenamiento y virtualización. El bloque de hardware desarrolla SATA/PCIe y sistemas de almacenamiento (A1-56; en su programa interno, almacenamiento C5). Se contrasta la velocidad indicada con Intel; la correspondencia oficial A2 es IV-5."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938; temario A1 cotejado con temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262; temario A2 GSI cotejado con temario-oficial.json."
+          }
+        ],
+        "observaciones": "Intel indica que SATA Express emplea dos líneas PCIe y alcanza hasta 16 Gbit/s. Se pregunta por la tasa teórica máxima de la interfaz, no por una garantía de caudal útil de un dispositivo concreto; la clave de 16 Gbit/s se confirma. Cotejo Academy: El bloque de hardware desarrolla SATA/PCIe y sistemas de almacenamiento (A1-56; en su programa interno, almacenamiento C5). Se contrasta la velocidad indicada con Intel; la correspondencia oficial A2 es IV-5. Correspondencia oficial: A1-56, A2-IV-5."
+      }
     },
     {
       "id": 3557,
       "bloque": 0,
       "tema": 0,
-      "texto": "El objetivo principal de la minería de datos es:",
+      "texto": "¿Cuál es el objetivo de la minería de datos dentro del proceso de descubrimiento de conocimiento (KDD)?",
       "opciones": [
-        "Descubrir el conocimiento oculto en grandes volúmenes de datos y expresarlo de forma inteligible.",
-        "Reorganizar adecuadamente los grandes volúmenes de datos.",
-        "Tener copias de seguridad fiables y rápidas de todos y cada uno de los datos de que se dispone.",
-        "Ninguna de las anteriores respuestas es correcta."
+        "Extraer patrones potencialmente válidos, útiles y comprensibles de los datos para apoyar el descubrimiento de conocimiento.",
+        "Reorganizar físicamente todos los datos sin analizarlos ni extraer patrones.",
+        "Mantener copias de seguridad fiables de los datos y restaurarlas ante fallos.",
+        "Sustituir la evaluación e interpretación de los patrones por la mera ejecución de consultas predefinidas."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La minería de datos aplica algoritmos para extraer patrones; dentro del proceso KDD estos patrones se evalúan para identificar conocimiento útil, novedoso y comprensible. Se reformula la respuesta para distinguir esa finalidad del simple reordenamiento de datos, las copias de seguridad y la gestión de almacenamiento.",
+      "clasificacion": {
+        "A1": [
+          "A1-71"
+        ],
+        "A2": [
+          "A2-III-15"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 32 Inteligencia Artificial y Ciencia de Datos; El bloque 32 actualiza ciencia de datos (A1-71); el material de BI/Big Data aborda expresamente minería de datos. La convocatoria A2 incluye minería de datos en III-15.; https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk | ITIC Academy, temas 75–76 Business Intelligence y Big Data; El bloque 32 actualiza ciencia de datos (A1-71); el material de BI/Big Data aborda expresamente minería de datos. La convocatoria A2 incluye minería de datos en III-15.; https://drive.google.com/file/d/1emUBcpJoPsMHydEdcF1xsPWGItUkYZGA/view?usp=drivesdk; correspondencia oficial en temario-oficial.json.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy en Drive y programa oficial de las convocatorias; la corrección sustantiva se apoya en la fuente primaria técnica indicada."
+      },
+      "etiquetas": [
+        "minería-de-datos",
+        "KDD",
+        "descubrimiento-de-conocimiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.aaai.org/Papers/KDD/1996/KDD96-014.pdf",
+            "referencia": "Fayyad, Piatetsky-Shapiro y Smyth, KDD-96, “Knowledge Discovery and Data Mining: Towards a Unifying Framework”: minería de datos extrae patrones mediante algoritmos; el objetivo global KDD es descubrir conocimiento útil, válido, novedoso y comprensible en conjuntos de datos grandes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 32 Inteligencia Artificial y Ciencia de Datos. El bloque 32 actualiza ciencia de datos (A1-71); el material de BI/Big Data aborda expresamente minería de datos. La convocatoria A2 incluye minería de datos en III-15."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1emUBcpJoPsMHydEdcF1xsPWGItUkYZGA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, temas 75–76 Business Intelligence y Big Data. El bloque 32 actualiza ciencia de datos (A1-71); el material de BI/Big Data aborda expresamente minería de datos. La convocatoria A2 incluye minería de datos en III-15."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938; temario A1 cotejado con temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262; temario A2 GSI cotejado con temario-oficial.json."
+          }
+        ],
+        "observaciones": "La minería de datos aplica algoritmos para extraer patrones; dentro del proceso KDD estos patrones se evalúan para identificar conocimiento útil, novedoso y comprensible. Se reformula la respuesta para distinguir esa finalidad del simple reordenamiento de datos, las copias de seguridad y la gestión de almacenamiento. Cotejo Academy: El bloque 32 actualiza ciencia de datos (A1-71); el material de BI/Big Data aborda expresamente minería de datos. La convocatoria A2 incluye minería de datos en III-15. Correspondencia oficial: A1-71, A2-III-15."
+      }
     },
     {
       "id": 3558,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el modelo de clases, las relaciones de agregación son un tipo particular de relaciones de:",
+      "texto": "En UML, ¿qué tipo de relación representa la agregación entre clases?",
       "opciones": [
-        "Composición.",
-        "Generalización.",
-        "Dependencia.",
-        "Asociación."
+        "Una composición necesariamente inseparable, sin independencia de ciclo de vida.",
+        "Una generalización, que define una relación “es-un”.",
+        "Una dependencia de uso entre elementos del modelo.",
+        "Una asociación cuyo extremo tiene semántica de agregación."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "En UML la agregación se expresa con aggregation kind en un extremo Property; cuando dicho extremo pertenece a una Association, la agregación es una forma de asociación. La opción “asociación” es correcta. Se aclara que la agregación compartida no tiene una semántica universal más precisa en UML 2.5.1.",
+      "clasificacion": {
+        "A1": [
+          "A1-89"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 29 Bases de Datos, SQL y Modelado de Datos; Los bloques de modelado de datos y análisis/diseño de sistemas cubren modelos de clases, UML y agregación; la correspondencia oficial es A1-89/A2-III-9.; https://drive.google.com/file/d/16itbf_Mo8uQ4MKEEX2V-VFMEwyeL7n3F/edit?usp=drivesdk | ITIC Academy 2026, bloque 38 Análisis, Diseño y Construcción de Sistemas; Los bloques de modelado de datos y análisis/diseño de sistemas cubren modelos de clases, UML y agregación; la correspondencia oficial es A1-89/A2-III-9.; https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk; correspondencia oficial en temario-oficial.json.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy en Drive y programa oficial de las convocatorias; la corrección sustantiva se apoya en la fuente primaria técnica indicada."
+      },
+      "etiquetas": [
+        "UML",
+        "agregación",
+        "asociación",
+        "diagrama-de-clases"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+            "referencia": "OMG UML 2.5.1, apartados 9.5.3 y 9.9.1: la agregación se expresa mediante la propiedad aggregation de un Property; si este es un extremo miembro de Association, se trata de una asociación con semántica de agregación. La especificación advierte que la semántica precisa de la agregación compartida depende del área de aplicación/modelador."
+          },
+          {
+            "url": "https://drive.google.com/file/d/16itbf_Mo8uQ4MKEEX2V-VFMEwyeL7n3F/edit?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 29 Bases de Datos, SQL y Modelado de Datos. Los bloques de modelado de datos y análisis/diseño de sistemas cubren modelos de clases, UML y agregación; la correspondencia oficial es A1-89/A2-III-9."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 38 Análisis, Diseño y Construcción de Sistemas. Los bloques de modelado de datos y análisis/diseño de sistemas cubren modelos de clases, UML y agregación; la correspondencia oficial es A1-89/A2-III-9."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938; temario A1 cotejado con temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262; temario A2 GSI cotejado con temario-oficial.json."
+          }
+        ],
+        "observaciones": "En UML la agregación se expresa con aggregation kind en un extremo Property; cuando dicho extremo pertenece a una Association, la agregación es una forma de asociación. La opción “asociación” es correcta. Se aclara que la agregación compartida no tiene una semántica universal más precisa en UML 2.5.1. Cotejo Academy: Los bloques de modelado de datos y análisis/diseño de sistemas cubren modelos de clases, UML y agregación; la correspondencia oficial es A1-89/A2-III-9. Correspondencia oficial: A1-89, A2-III-9."
+      }
     },
     {
       "id": 3559,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dado un diagrama de clases, seleccione la definición correcta sobre una relación de dependencia según Métrica v3:",
+      "texto": "Según UML 2.5.1, ¿qué expresa una dependencia (Dependency) entre elementos de un modelo?",
       "opciones": [
-        "Es un mecanismo que permite a una clase de objetos incorporar atributos y métodos de otra clase, añadiéndolos a los que ya posee.",
-        "Es un tipo de relación jerárquica entre un objeto que representa la totalidad de ese objeto y las partes que lo componen.",
-        "Se utiliza entre dos clases o entre una clase y una interfaz, e indica que una clase requiere de otra para proporcionar alguno de sus servicios.",
-        "Es un mecanismo que permite especificar un conjunto de operaciones de una clase o paquete que son visibles desde otras clases o paquetes."
+        "Que una clase incorpora los atributos y operaciones de otra, como en la generalización.",
+        "Que existe una relación jerárquica de totalidad y partes con ciclo de vida compartido.",
+        "Que un elemento cliente requiere otro elemento proveedor para su especificación o implementación y su semántica depende de este.",
+        "Que una clase publica un conjunto de operaciones visibles, como en una interfaz realizada."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La definición normativa de UML es una relación en la que el elemento cliente requiere del proveedor para su especificación o implementación y su semántica depende de la definición del proveedor. Se sustituye la simplificación de “necesita servicios” por la definición del estándar; la clave C se mantiene.",
+      "clasificacion": {
+        "A1": [
+          "A1-89"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 29 Bases de Datos, SQL y Modelado de Datos; Los bloques de modelos de clases y diseño orientado a objetos tratan UML y sus relaciones; la definición normativa de Dependency se comprueba en OMG UML 2.5.1.; https://drive.google.com/file/d/16itbf_Mo8uQ4MKEEX2V-VFMEwyeL7n3F/edit?usp=drivesdk | ITIC Academy 2026, bloque 38 Análisis, Diseño y Construcción de Sistemas; Los bloques de modelos de clases y diseño orientado a objetos tratan UML y sus relaciones; la definición normativa de Dependency se comprueba en OMG UML 2.5.1.; https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk; correspondencia oficial en temario-oficial.json.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy en Drive y programa oficial de las convocatorias; la corrección sustantiva se apoya en la fuente primaria técnica indicada."
+      },
+      "etiquetas": [
+        "UML",
+        "dependencia",
+        "clases",
+        "interfaces"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+            "referencia": "OMG UML 2.5.1, apartado 7.8.4: Dependency significa que un elemento modelo requiere otro para su especificación o implementación; la semántica del cliente depende de la definición del proveedor."
+          },
+          {
+            "url": "https://drive.google.com/file/d/16itbf_Mo8uQ4MKEEX2V-VFMEwyeL7n3F/edit?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 29 Bases de Datos, SQL y Modelado de Datos. Los bloques de modelos de clases y diseño orientado a objetos tratan UML y sus relaciones; la definición normativa de Dependency se comprueba en OMG UML 2.5.1."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 38 Análisis, Diseño y Construcción de Sistemas. Los bloques de modelos de clases y diseño orientado a objetos tratan UML y sus relaciones; la definición normativa de Dependency se comprueba en OMG UML 2.5.1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938; temario A1 cotejado con temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262; temario A2 GSI cotejado con temario-oficial.json."
+          }
+        ],
+        "observaciones": "La definición normativa de UML es una relación en la que el elemento cliente requiere del proveedor para su especificación o implementación y su semántica depende de la definición del proveedor. Se sustituye la simplificación de “necesita servicios” por la definición del estándar; la clave C se mantiene. Cotejo Academy: Los bloques de modelos de clases y diseño orientado a objetos tratan UML y sus relaciones; la definición normativa de Dependency se comprueba en OMG UML 2.5.1. Correspondencia oficial: A1-89, A2-III-9."
+      }
     },
     {
       "id": 3560,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué método de ordenación de alternativas de la Decisión Multicriterio Discreta es más adecuado cuando se trata de obtener un subconjunto de alternativas aceptables?",
+      "texto": "En decisión multicriterio discreta, ¿qué familia de métodos —como ELECTRE I— construye relaciones de sobreclasificación mediante concordancia y discordancia y puede seleccionar un núcleo o subconjunto de alternativas para la elección?",
       "opciones": [
-        "El método de la Utilidad Multiatributo",
-        "Los métodos de concordancia",
-        "Los métodos basados en permutaciones",
-        "El método de la Programación compromiso"
+        "La utilidad multiatributo, que agrega criterios en una función global de utilidad.",
+        "Los métodos de concordancia de la familia ELECTRE.",
+        "Los métodos basados en permutaciones, que ordenan las alternativas según los órdenes posibles.",
+        "La programación compromiso, que busca una solución de compromiso respecto de un punto ideal."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La clave corresponde a los métodos de concordancia/sobreclasificación, concretamente ELECTRE I: combina concordancia y discordancia para formar una relación de sobreclasificación y un núcleo, es decir, un subconjunto reducido de alternativas para la elección. Se reformula la pregunta nombrando ELECTRE I para evitar presentar “concordancia” como una receta única o incompleta.",
+      "clasificacion": {
+        "A1": [
+          "A1-40"
+        ],
+        "A2": [
+          "A2-II-15"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 17 Adquisición, alternativas y rentabilidad; El bloque 17 trabaja evaluación de alternativas, métodos de decisión multicriterio y concordancia/ELECTRE; corresponde a A1-40/A2-II-15.; https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk; correspondencia oficial en temario-oficial.json.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy en Drive y programa oficial de las convocatorias; la corrección sustantiva se apoya en la fuente primaria técnica indicada."
+      },
+      "etiquetas": [
+        "decisión-multicriterio",
+        "ELECTRE",
+        "concordancia",
+        "alternativas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.numdam.org/item/RO_1968__2_1_57_0.pdf",
+            "referencia": "B. Roy (1968), artículo original sobre ELECTRE: usa indicadores de concordancia y discordancia para construir una relación y un núcleo de grafo que permite restringir la elección a un subconjunto de alternativas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 17 Adquisición, alternativas y rentabilidad. El bloque 17 trabaja evaluación de alternativas, métodos de decisión multicriterio y concordancia/ELECTRE; corresponde a A1-40/A2-II-15."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938; temario A1 cotejado con temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262; temario A2 GSI cotejado con temario-oficial.json."
+          }
+        ],
+        "observaciones": "La clave corresponde a los métodos de concordancia/sobreclasificación, concretamente ELECTRE I: combina concordancia y discordancia para formar una relación de sobreclasificación y un núcleo, es decir, un subconjunto reducido de alternativas para la elección. Se reformula la pregunta nombrando ELECTRE I para evitar presentar “concordancia” como una receta única o incompleta. Cotejo Academy: El bloque 17 trabaja evaluación de alternativas, métodos de decisión multicriterio y concordancia/ELECTRE; corresponde a A1-40/A2-II-15. Correspondencia oficial: A1-40, A2-II-15."
+      }
     },
     {
       "id": 3561,

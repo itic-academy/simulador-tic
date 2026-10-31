@@ -1,6 +1,23 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 647 (IDs 3551–3555). Acumulado: 3555 preguntas examinadas individualmente, 3478 verificadas (700 vigentes, 2520 corregidas y 258 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8568 sin revisar individualmente. Hay 2887 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 648 (IDs 3556–3560). Acumulado: 3560 preguntas examinadas individualmente, 3483 verificadas (701 vigentes, 2524 corregidas y 258 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8563 sin revisar individualmente. Hay 2892 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 648 — 31 de octubre de 2026
+
+IDs 3556–3560 revisados individualmente y preservados en [cambios-lote-648.json](cambios-lote-648.json).
+- **3556 — SATA Express:** el máximo teórico referido por Intel para SATA Express con dos líneas PCIe es 16 Gbit/s; se mantiene la clave y se precisa que no es garantía de caudal efectivo. **Vigente.** A1-56; A2-IV-5.
+- **3557 — minería de datos:** se distingue la extracción algorítmica de patrones de las fases globales KDD; su utilidad es contribuir a descubrir patrones válidos, potencialmente útiles y comprensibles. Se acota la pregunta para eliminar la confusión entre minería y almacenamiento/backup. **Corregida.** A1-71; A2-III-15.
+- **3558 — agregación UML:** se especifica como asociación cuyo extremo tiene semántica de agregación; OMG advierte que la semántica precisa de agregación compartida puede depender del dominio/modelador. **Corregida.** A1-89; A2-III-9.
+- **3559 — dependencia UML:** definición ajustada a UML 2.5.1: el cliente requiere el proveedor para su especificación o implementación, y su semántica depende de la definición del proveedor. **Corregida.** A1-89; A2-III-9.
+- **3560 — decisión multicriterio:** se precisa el ejemplo ELECTRE I: relación construida mediante concordancia y discordancia y núcleo/subconjunto de alternativas para acotar la elección. **Corregida.** A1-40; A2-II-15.
+
+Fuentes primarias: Intel, [SATA Express y velocidad máxima](https://www.intel.com/content/www/us/en/gaming/resources/how-to-choose-a-motherboard.html); Fayyad, Piatetsky-Shapiro y Smyth, [KDD-96, “Knowledge Discovery and Data Mining”](https://www.aaai.org/Papers/KDD/1996/KDD96-014.pdf); OMG, [UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/PDF), §§ 7.8.4, 9.5.3 y 9.9.1; B. Roy, [artículo original de ELECTRE (1968)](https://www.numdam.org/item/RO_1968__2_1_57_0.pdf).
+
+Cotejo ITIC Academy en Drive: [bloque Hardware 2026](https://drive.google.com/file/d/12heek9CTZHiGHjtWvLjdjOE7vIQdlYFm/view?usp=drivesdk), almacenamiento/PCIe; [bloque 32 IA y Ciencia de Datos](https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk) y [material de BI/Big Data](https://drive.google.com/file/d/1emUBcpJoPsMHydEdcF1xsPWGItUkYZGA/view?usp=drivesdk), minería de datos; [bloque 29 Bases de Datos y Modelado](https://drive.google.com/file/d/16itbf_Mo8uQ4MKEEX2V-VFMEwyeL7n3F/edit?usp=drivesdk) y [bloque 38 Análisis y Diseño](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), UML/modelos de clases; [bloque 17 Adquisición y Decisión Multicriterio](https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk), alternativas y concordancia/ELECTRE. Las referencias de academia se utilizan para cotejo temático; las respuestas técnicas se contrastan con Intel, AAAI, OMG y el artículo original de Roy.
+
+Correspondencia comprobada contra [convocatoria A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [convocatoria A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json): A1-56/A2-IV-5 almacenamiento; A1-71/A2-III-15 ciencia de datos/minería; A1-89/A2-III-9 modelado de clases/UML; A1-40/A2-II-15 evaluación de alternativas.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check. Las comprobaciones automáticas dan integridad y trazabilidad; no reemplazan la revisión individual.
 
 ## Lote 647 — 31 de octubre de 2026
 
