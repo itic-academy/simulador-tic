@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 657 (IDs 3601–3605). Acumulado: 3605 preguntas examinadas individualmente, 3527 verificadas (707 vigentes, 2553 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8518 sin revisar individualmente. Hay 2935 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 658 (IDs 3606–3610). Acumulado: 3610 preguntas examinadas individualmente, 3532 verificadas (708 vigentes, 2557 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8513 sin revisar individualmente. Hay 2940 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 658 — 31 de octubre de 2026
+
+IDs 3606–3610 revisados individualmente; originales completos preservados en [cambios-lote-658.json](cambios-lote-658.json).
+- **3606 — DHCP:** se pregunta por el mensaje inicial de adquisición DHCPv4 en la subred; RFC 2131, §3.1, identifica DHCPDISCOVER difundido por el cliente. **Corregida.** A1-115; A2-II-8.
+- **3607 — disponibilidad:** se acota el correo basura a volumen suficiente para consumir recursos; NIST confirma que DoS/DDoS y spam masivo pueden afectar disponibilidad. «Todas» queda respaldada en esas condiciones. **Corregida.** A1-125; A2-IV-12.
+- **3608 — IPv6:** RFC 4291 y RFC 8200 establecen direcciones de 128 bits. **Vigente.** A1-115; A2-II-8.
+- **3609 — ingeniería social:** es el término general para engañar o influir en personas a fin de obtener información o acciones que comprometan seguridad. **Corregida.** A1-125; A2-IV-12.
+- **3610 — planificación:** se sustituye una comparación negativa genérica por una pregunta concreta sobre el detalle de acciones y aplicación de recursos en planes operativos/tácticos frente a objetivos estratégicos. **Corregida.** A1-35/87; A2-II-15/III-2.
+
+Fuentes primarias/técnicas: IETF [RFC 2131, §3.1](https://www.rfc-editor.org/rfc/rfc2131.html#section-3.1); NIST [SP 800-177 Rev. 1, §§3.3.1–3.3.2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-177r1.pdf) sobre email bombing/spam y disponibilidad y [SP 800-61 Rev. 1, §4.1](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-61r1.pdf) sobre DoS/DDoS; IETF [RFC 8200](https://www.rfc-editor.org/rfc/rfc8200.html) y [RFC 4291, §2](https://www.rfc-editor.org/rfc/rfc4291.html#section-2); NIST [glosario social engineering](https://csrc.nist.gov/glossary/term/social_engineering) y [SP 800-12 Rev. 1](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-12r1.pdf); U.S. GAO [GAO-07-549, figura 4 y texto asociado](https://www.gao.gov/assets/gao-07-549.pdf), sobre la diferencia entre planes estratégicos de alto nivel y detalle operativo/táctico.
+
+Cotejo ITIC Academy: [bloques 42–43, Redes y Protocolos](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view) para DHCP e IPv6; [bloque 48, Seguridad de Redes y Aplicaciones](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk) para disponibilidad e ingeniería social; [bloque de Estrategias y herramientas del directivo público, versión 2026, temas A1-32/33/87](https://drive.google.com/file/d/1fO2vDNoE1lwm4bKFAuggBwbQfuvN2NIq/view?usp=drivesdk) para planificación estratégica. La academia orienta el encaje curricular, no sustituye las fuentes primarias.
+
+Correspondencia cotejada con convocatorias [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json). Las pruebas automáticas verifican integridad y trazabilidad; no sustituyen la revisión individual.
 
 ## Lote 657 — 31 de octubre de 2026
 
