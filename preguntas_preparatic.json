@@ -174587,71 +174587,287 @@
       "id": 3566,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la métrica de productividad COCOMO, el modelo básico:",
+      "texto": "En COCOMO 81, ¿qué distingue al modelo básico de los modelos intermedio y detallado?",
       "opciones": [
-        "Calcula el esfuerzo y el coste de un desarrollo software en función únicamente de las líneas fuentes estimadas de los programas",
-        "Añade una evaluación subjetiva del producto y de los atributos del proyecto y del personal",
-        "Considera el impacto de los factores de influencia de las fases de desarrollo (análisis funcional y diseño técnico)",
-        "Nada de lo anterior es correcto"
+        "Estima esfuerzo y duración a partir del tamaño estimado en KLOC y del modo del proyecto, sin añadir los multiplicadores de factores de coste del modelo intermedio.",
+        "Incorpora al cálculo una calificación de factores de coste del producto, proyecto y personal, como el modelo intermedio.",
+        "Distribuye explícitamente el esfuerzo entre fases usando factores de coste por fase, como el modelo detallado.",
+        "Ninguna de las anteriores."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se acota la pregunta a COCOMO 81 y se corrige la simplificación de que el básico calcula “coste únicamente según líneas fuente”: el básico estima esfuerzo y duración a partir de KLOC y del modo orgánico/semidetached/embedded, sin multiplicadores de cost drivers; el intermedio incorpora esos factores y el detallado los distribuye por fases. COCOMO 81 es histórico frente a COCOMO II.",
+      "clasificacion": {
+        "A1": [
+          "A1-99"
+        ],
+        "A2": [
+          "A2-II-15"
+        ],
+        "bloque_academia": "ITIC Academy, Bloque 17 Adquisición de Sistemas y Rentabilidad; El bloque 17 cubre adquisición, viabilidad y estimación de recursos/costes; encaja con la estimación de esfuerzo (A1-99) y control de coste de proyectos (A2-II-15).; https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk; programa y convocatoria contrastados con temario-oficial.json.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy en Drive y el temario oficial A1/A2; los contenidos de cada respuesta se verifican con las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "COCOMO-81",
+        "estimación-de-esfuerzo",
+        "KLOC",
+        "cost-drivers",
+        "modelo-histórico"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://boehmcsse.org/tools/cocomo81/",
+            "referencia": "Boehm Center for Systems and Software Engineering, COCOMO 81: clasifica el modelo básico, intermedio y detallado; cita el libro de Barry Boehm Software Engineering Economics (1981). El básico estima esfuerzo y calendario a partir del tamaño (KLOC) y el modo de proyecto; el intermedio añade cost drivers."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Bloque 17 Adquisición de Sistemas y Rentabilidad. El bloque 17 cubre adquisición, viabilidad y estimación de recursos/costes; encaja con la estimación de esfuerzo (A1-99) y control de coste de proyectos (A2-II-15)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938; correspondencia A1 cotejada con temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262; correspondencia A2 GSI cotejada con temario-oficial.json."
+          }
+        ],
+        "observaciones": "Se acota la pregunta a COCOMO 81 y se corrige la simplificación de que el básico calcula “coste únicamente según líneas fuente”: el básico estima esfuerzo y duración a partir de KLOC y del modo orgánico/semidetached/embedded, sin multiplicadores de cost drivers; el intermedio incorpora esos factores y el detallado los distribuye por fases. COCOMO 81 es histórico frente a COCOMO II. Cotejo Academy: El bloque 17 cubre adquisición, viabilidad y estimación de recursos/costes; encaja con la estimación de esfuerzo (A1-99) y control de coste de proyectos (A2-II-15). Correspondencia oficial: A1-99, A2-II-15."
+      }
     },
     {
       "id": 3567,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes modelos de ciclo de vida tiene en cuenta el análisis de riesgos?",
+      "texto": "¿Qué modelo clásico de ciclo de vida de Boehm se caracteriza por guiar las actividades de cada iteración mediante la identificación, evaluación y resolución explícitas de riesgos?",
       "opciones": [
-        "Extreme Programming",
-        "Modelo de ciclo de vida en cascada",
-        "El modelo de ciclo de vida en V",
-        "Modelo de ciclo de vida en espiral"
+        "Extreme Programming (XP).",
+        "El modelo en cascada.",
+        "El modelo en V.",
+        "El modelo en espiral."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La respuesta es el modelo en espiral de Boehm. Se precisa que “tener en cuenta riesgos” significa que la selección y ejecución de actividades de cada ciclo se guían explícitamente por análisis de riesgos; XP también gestiona riesgos en sentido amplio, pero no es el modelo clásico que se define por ese principio.",
+      "clasificacion": {
+        "A1": [
+          "A1-86"
+        ],
+        "A2": [
+          "A2-III-1"
+        ],
+        "bloque_academia": "ITIC Academy 2026, Bloque 15 Metodologías Ágiles y Ciclo de Vida; El bloque 15 aborda modelos de ciclo de vida, incluido espiral; correspondencia A1-86/A2-III-1.; https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk; programa y convocatoria contrastados con temario-oficial.json.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy en Drive y el temario oficial A1/A2; los contenidos de cada respuesta se verifican con las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "ciclo-de-vida",
+        "modelo-en-espiral",
+        "gestión-de-riesgos",
+        "Boehm"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1109/2.59",
+            "referencia": "Barry W. Boehm, “A Spiral Model of Software Development and Enhancement”, IEEE Computer 21(5), 1988, pp. 61–72, DOI 10.1109/2.59: caracteriza el modelo como risk-driven, con evaluación y resolución de riesgos en los ciclos."
+          },
+          {
+            "url": "https://www.cse.msu.edu/~cse435/Homework/HW3/boehm.pdf",
+            "referencia": "Copia universitaria del artículo original de Boehm (1986), “A Spiral Model of Software Development and Enhancement”: el rasgo distintivo es el enfoque risk-driven, frente a modelos document-driven o code-driven."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, Bloque 15 Metodologías Ágiles y Ciclo de Vida. El bloque 15 aborda modelos de ciclo de vida, incluido espiral; correspondencia A1-86/A2-III-1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938; correspondencia A1 cotejada con temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262; correspondencia A2 GSI cotejada con temario-oficial.json."
+          }
+        ],
+        "observaciones": "La respuesta es el modelo en espiral de Boehm. Se precisa que “tener en cuenta riesgos” significa que la selección y ejecución de actividades de cada ciclo se guían explícitamente por análisis de riesgos; XP también gestiona riesgos en sentido amplio, pero no es el modelo clásico que se define por ese principio. Cotejo Academy: El bloque 15 aborda modelos de ciclo de vida, incluido espiral; correspondencia A1-86/A2-III-1. Correspondencia oficial: A1-86, A2-III-1."
+      }
     },
     {
       "id": 3568,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es el ámbito de referencia de aplicación señalado en el RD 806/2014?",
+      "texto": "Durante la vigencia del Real Decreto 806/2014, ¿a qué ámbito extendía su artículo 2 la aplicación de la norma? (Norma derogada desde el 7 de noviembre de 2024.)",
       "opciones": [
-        "Administración General del Estado.",
-        "Administración General del Estado y sus Organismos Públicos.",
-        "Administración General del Estado, Comunidades Autónomas y Entidades Locales.",
-        "Conjunto del Sector Público."
+        "Solo a los órganos centrales de la Administración General del Estado.",
+        "A la Administración General del Estado y sus organismos públicos previstos en el artículo 43 de la LOFAGE.",
+        "A la AGE, las comunidades autónomas y las entidades locales.",
+        "A la totalidad del sector público estatal, autonómico y local."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La opción B es la respuesta histórica que daba el art. 2 del RD 806/2014: AGE y sus organismos públicos del art. 43 LOFAGE. La norma está derogada desde el 7 de noviembre de 2024; el RD 1125/2024 es el marco sucesor y su ámbito incluye también entidades de Derecho público vinculadas o dependientes. Se fecha la pregunta para no sugerir vigencia.",
+      "clasificacion": {
+        "A1": [
+          "A1-30"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy 2026, Bloque 10 Gobernanza TIC y Administración Digital; El bloque 10 desarrolla gobernanza TIC y organización de la AGE, que incluye el ámbito de los RR. DD. 806/2014 y 1125/2024. Se asigna A1-30; no se fuerza un epígrafe A2 equivalente porque el ámbito de gobernanza TIC estatal no aparece como tema directo del programa A2.; https://drive.google.com/file/d/1alTzv7f2Katg4EdxJ72SYkLm6UScCCho/view?usp=drivesdk; programa y convocatoria contrastados con temario-oficial.json.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy en Drive y el temario oficial A1/A2; los contenidos de cada respuesta se verifican con las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "RD-806-2014",
+        "RD-1125-2024",
+        "gobernanza-TIC",
+        "ámbito-AGE",
+        "norma-derogada"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/pdf/2014/BOE-A-2014-9741-consolidado.pdf",
+            "referencia": "Real Decreto 806/2014, art. 2: durante su vigencia su ámbito alcanzaba a la AGE y los organismos públicos previstos en el art. 43 LOFAGE. El BOE indica que fue derogado con efectos 7-11-2024 por RD 1125/2024."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-22935",
+            "referencia": "Real Decreto 1125/2024, arts. 1–2 y disposición derogatoria única: norma vigente sucesora; ámbito de Administración del Estado, AGE y organismos públicos y entidades de Derecho público vinculadas o dependientes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1alTzv7f2Katg4EdxJ72SYkLm6UScCCho/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, Bloque 10 Gobernanza TIC y Administración Digital. El bloque 10 desarrolla gobernanza TIC y organización de la AGE, que incluye el ámbito de los RR. DD. 806/2014 y 1125/2024. Se asigna A1-30; no se fuerza un epígrafe A2 equivalente porque el ámbito de gobernanza TIC estatal no aparece como tema directo del programa A2."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938; correspondencia A1 cotejada con temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262; correspondencia A2 GSI cotejada con temario-oficial.json."
+          }
+        ],
+        "observaciones": "La opción B es la respuesta histórica que daba el art. 2 del RD 806/2014: AGE y sus organismos públicos del art. 43 LOFAGE. La norma está derogada desde el 7 de noviembre de 2024; el RD 1125/2024 es el marco sucesor y su ámbito incluye también entidades de Derecho público vinculadas o dependientes. Se fecha la pregunta para no sugerir vigencia. Cotejo Academy: El bloque 10 desarrolla gobernanza TIC y organización de la AGE, que incluye el ámbito de los RR. DD. 806/2014 y 1125/2024. Se asigna A1-30; no se fuerza un epígrafe A2 equivalente porque el ámbito de gobernanza TIC estatal no aparece como tema directo del programa A2. Correspondencia oficial: A1-30."
+      }
     },
     {
       "id": 3569,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la correcta en lo relativo a discos RAID:",
+      "texto": "En la taxonomía clásica de niveles RAID, ¿qué afirmación es correcta?",
       "opciones": [
-        "Un RAID 2 divide los datos a nivel de bloques y usa un código de Hamming para la corrección de errores.",
-        "Un RAID 4 usa división a nivel de byte con un disco de paridad dedicado.",
-        "Un RAID 3 usa división a nivel de bytes con un disco de paridad dedicado.",
-        "Un RAID 5 requiere al menos 4 unidades de disco para ser implementado."
+        "RAID 2 usa striping por bloques y un código Hamming.",
+        "RAID 4 divide los datos por bytes y emplea una unidad dedicada de paridad.",
+        "RAID 3 divide los datos por bytes y emplea una unidad dedicada de paridad.",
+        "RAID 5 necesita al menos cuatro unidades; su paridad se guarda en un disco dedicado."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La afirmación C define correctamente el RAID 3 clásico: striping a nivel de byte y una unidad dedicada a paridad. RAID 2 distribuye a nivel de bit, RAID 4 por bloques con paridad dedicada y RAID 5 requiere al menos tres discos con paridad distribuida. Se identifica como taxonomía histórica; IBM señala que RAID 3/4 han sido reemplazados en muchos usos por RAID 5.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy 2026, Bloque 26 Hardware, almacenamiento y virtualización; El bloque 26 trata dispositivos, arquitecturas y almacenamiento; correspondencia oficial A1-56/A2-IV-5. El RAID clásico se coteja con la documentación técnica de IBM.; https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk; programa y convocatoria contrastados con temario-oficial.json.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy en Drive y el temario oficial A1/A2; los contenidos de cada respuesta se verifican con las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "RAID-2",
+        "RAID-3",
+        "RAID-4",
+        "RAID-5",
+        "striping",
+        "paridad",
+        "almacenamiento-histórico"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.redbooks.ibm.com/redpapers/pdfs/redp5234.pdf",
+            "referencia": "IBM Redbooks, IBM Power Systems RAID Solutions Introduction and Technical Overview, cap. 1: RAID 3 stripe de bytes y disco de paridad dedicado; RAID 4 bloques y paridad dedicada; RAID 5 bloques con paridad distribuida y mínimo tres discos."
+          },
+          {
+            "url": "https://www.ibm.com/support/pages/raid-level-descriptions-servers",
+            "referencia": "IBM Support, RAID level descriptions: RAID 3 distribuye bytes y guarda paridad en disco dedicado; RAID 4 trabaja por bloques con paridad dedicada; RAID 5 distribuye bloques y paridad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, Bloque 26 Hardware, almacenamiento y virtualización. El bloque 26 trata dispositivos, arquitecturas y almacenamiento; correspondencia oficial A1-56/A2-IV-5. El RAID clásico se coteja con la documentación técnica de IBM."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938; correspondencia A1 cotejada con temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262; correspondencia A2 GSI cotejada con temario-oficial.json."
+          }
+        ],
+        "observaciones": "La afirmación C define correctamente el RAID 3 clásico: striping a nivel de byte y una unidad dedicada a paridad. RAID 2 distribuye a nivel de bit, RAID 4 por bloques con paridad dedicada y RAID 5 requiere al menos tres discos con paridad distribuida. Se identifica como taxonomía histórica; IBM señala que RAID 3/4 han sido reemplazados en muchos usos por RAID 5. Cotejo Academy: El bloque 26 trata dispositivos, arquitecturas y almacenamiento; correspondencia oficial A1-56/A2-IV-5. El RAID clásico se coteja con la documentación técnica de IBM. Correspondencia oficial: A1-56, A2-IV-5."
+      }
     },
     {
       "id": 3570,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué dato/s sobre los documentos electrónicos no se incluyen en el índice electrónico?",
+      "texto": "Según el apartado V.4 de la NTI de Expediente Electrónico para expedientes objeto de intercambio, ¿qué elemento no es un dato del índice electrónico?",
       "opciones": [
-        "Identificador del documento.",
-        "El propio documento electrónico.",
-        "La huella digital del documento.",
-        "La función resumen utilizada para la obtención de la huella digital."
+        "El identificador de cada documento.",
+        "El contenido íntegro de los documentos electrónicos.",
+        "La huella digital de cada documento.",
+        "La función resumen utilizada para obtener la huella digital."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Conforme al apartado V.4 de la NTI de Expediente Electrónico, para los expedientes objeto de intercambio se relacionan en el índice los metadatos prescritos, incluida la huella y su función resumen; el documento electrónico íntegro no se incrusta como dato del índice, sino que forma parte del expediente y se remite por separado. Se ajusta el enunciado a ese supuesto normativo y se mantiene la clave B.",
+      "clasificacion": {
+        "A1": [
+          "A1-46"
+        ],
+        "A2": [
+          "A2-I-9"
+        ],
+        "bloque_academia": "ITIC Academy 2026, Bloque 20 Interoperabilidad de sistemas; El bloque 20 aborda interoperabilidad de documentos/expedientes y normas de intercambio; correspondencia directa A1-46/A2-I-9 y NTI del expediente electrónico.; https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view; programa y convocatoria contrastados con temario-oficial.json.",
+        "estado": "revisada",
+        "nota": "Cotejo temático con ITIC Academy en Drive y el temario oficial A1/A2; los contenidos de cada respuesta se verifican con las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "índice-electrónico",
+        "expediente-electrónico",
+        "NTI",
+        "huella-digital",
+        "función-resumen"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-10-31",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-13170",
+            "referencia": "Resolución de 19-7-2011 que aprueba la NTI de Expediente Electrónico, apartado V.4: el índice de los expedientes objeto de intercambio incluye fecha de generación y, por cada documento, identificador, huella digital y función resumen; el contenido de los documentos se intercambia como documentos separados."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view",
+            "referencia": "ITIC Academy 2026, Bloque 20 Interoperabilidad de sistemas. El bloque 20 aborda interoperabilidad de documentos/expedientes y normas de intercambio; correspondencia directa A1-46/A2-I-9 y NTI del expediente electrónico."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria BOE-A-2025-25938; correspondencia A1 cotejada con temario-oficial.json."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria BOE-A-2025-26262; correspondencia A2 GSI cotejada con temario-oficial.json."
+          }
+        ],
+        "observaciones": "Conforme al apartado V.4 de la NTI de Expediente Electrónico, para los expedientes objeto de intercambio se relacionan en el índice los metadatos prescritos, incluida la huella y su función resumen; el documento electrónico íntegro no se incrusta como dato del índice, sino que forma parte del expediente y se remite por separado. Se ajusta el enunciado a ese supuesto normativo y se mantiene la clave B. Cotejo Academy: El bloque 20 aborda interoperabilidad de documentos/expedientes y normas de intercambio; correspondencia directa A1-46/A2-I-9 y NTI del expediente electrónico. Correspondencia oficial: A1-46, A2-I-9."
+      }
     },
     {
       "id": 3571,
