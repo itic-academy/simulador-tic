@@ -1,6 +1,23 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 637 (IDs 3501–3505). Acumulado: 3505 preguntas examinadas individualmente, 3428 verificadas (687 vigentes, 2484 corregidas y 257 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8618 sin revisar individualmente. Hay 2837 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 638 (IDs 3506–3510). Acumulado: 3510 preguntas examinadas individualmente, 3433 verificadas (687 vigentes, 2489 corregidas y 257 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8613 sin revisar individualmente. Hay 2842 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 638 — 31 de octubre de 2026
+
+IDs 3506–3510 revisados individualmente y conservados en [cambios-lote-638.json](cambios-lote-638.json).
+- **3506 — SOAP:** se precisa que SOAP 1.2 define mensajería XML y bindings sobre protocolos subyacentes; no requiere un sistema operativo o procesador determinado, y atravesar firewalls depende del binding y la configuración. **Corregida.** A1-58; A2-II-6/III-12.
+- **3507 — libertades del software libre:** se corrige la opción falsa: GNU no exige conservar el propósito original al modificar el programa; la libertad 1 permite adaptarlo a lo que el usuario quiera. **Corregida.** A1-69; A2-II-14.
+- **3508 — bus de datos:** se elimina la falsa equivalencia entre anchura, reloj del procesador y tasa de transferencia. 32 bits expresan el ancho de la transferencia paralela considerada, sin fijar por sí solos frecuencia/ciclos. **Corregida.** A1-52; A2-II-1.
+- **3509 — SMP/MPP:** se confirma memoria compartida en SMP y memoria distribuida por nodos en MPP shared-nothing. Se elimina la afirmación absoluta de que MPP carece de cualquier cuello de botella; se explicita que la programación paralela puede requerir coordinación. **Corregida.** A1-52; A2-II-1.
+- **3510 — .NET:** el enunciado histórico mezclaba .NET Framework, limitado a Windows, con el .NET moderno multiplataforma. Se reformula para precisar las familias y evitar afirmaciones sobre SOAP/PE dependientes de versión. **Corregida.** A1-66; A2-III-11.
+
+Fuentes primarias: [W3C SOAP 1.2, Part 1](https://www.w3.org/TR/soap12/); GNU/FSF [What is Free Software?](https://www.gnu.org/philosophy/free-sw.html); Intel [Quark SoC X1000 Core Developer’s Manual](https://www.intel.com/content/dam/support/us/en/documents/processors/quark/sb/intelquarkcore_devman_001.pdf), transferencias y ciclos de bus; IBM [Parallel processing environments](https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments) y [Shared memory MP](https://www.ibm.com/docs/en/aix/7.1.0?topic=multiprocessing-shared-memory-mp); Microsoft Learn [modernización de .NET Framework](https://learn.microsoft.com/en-us/dotnet/core/porting/modernize) e [implementaciones .NET](https://learn.microsoft.com/en-us/dotnet/fundamentals/implementations).
+
+Cotejo con ITIC Academy en Drive: [bloque 28 SOA y requisitos no funcionales, versión 2026.1](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk) para SOAP; [bloque 26 hardware y arquitecturas escalables](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk) para anchura de bus y SMP/MPP; [bloque 30 Tecnologías de Sistemas de Información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk), que incluye A1-66 y plataforma .NET. La búsqueda en Drive no encontró un tema académico específico de las cuatro libertades GNU; se declara esa falta de cobertura directa sin inferir que el temario la excluya.
+
+Correspondencia oficial cotejada con [convocatoria A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [convocatoria A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json): A1-58/A2-II-6 y III-12 (SOAP); A1-69/A2-II-14 (software libre); A1-52/A2-II-1 (bus, SMP/MPP); A1-66/A2-III-11 (.NET).
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check. Los validadores automáticos comprueban integridad/estructura y trazabilidad; no sustituyen la revisión individual del contenido.
 
 ## Lote 637 — 31 de octubre de 2026
 
