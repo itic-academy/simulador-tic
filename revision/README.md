@@ -1,6 +1,23 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 645 (IDs 3541–3545). Acumulado: 3545 preguntas examinadas individualmente, 3468 verificadas (695 vigentes, 2515 corregidas y 258 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8578 sin revisar individualmente. Hay 2877 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 646 (IDs 3546–3550). Acumulado: 3550 preguntas examinadas individualmente, 3473 verificadas (699 vigentes, 2516 corregidas y 258 históricas) y 77 pendientes documentadas (36 de fuente y 41 de ambigüedad); quedan 8573 sin revisar individualmente. Hay 2882 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 646 — 31 de octubre de 2026
+
+IDs 3546–3550 revisados individualmente y conservados en [cambios-lote-646.json](cambios-lote-646.json).
+- **3546 — rango de las normas con fuerza de ley:** decretos-leyes y decretos legislativos tienen fuerza de ley, no rango reglamentario; ley orgánica y ordinaria son leyes, con materias y procedimientos diferenciados y relación también regida por competencia. **Corregida.** A1-7; no se fuerza equivalencia A2.
+- **3547 — título preliminar de Ley 39/2015:** incluye dos artículos, 1 y 2; el título I comienza en el artículo 3. **Vigente.** A1-8; A2-I-8.
+- **3548 — sanciones LSSI:** se distinguen los supuestos de moderación del art. 39 bis y los criterios de graduación del art. 40. Las tres proposiciones se ajustan a la ley; “todas” es correcta. **Vigente.** A1-22; A2-I-6.
+- **3549 — campos de cabecera IPv6:** Version 4 bits, Traffic Class 8 bits, Flow Label 20 bits, según IETF RFC 8200. **Vigente.** A1-115; A2-II-8.
+- **3550 — acceso VDI:** RDP proporciona pantalla remota y entrada para un escritorio Windows; se limita la afirmación a las opciones ofrecidas y no se presenta RDP como protocolo VDI único. **Vigente.** A1-57; A2-II-1 como marco de arquitecturas actuales, sin afirmar equivalencia literal.
+
+Fuentes primarias: [Constitución Española](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 81, 82, 85 y 86, y [Tribunal Constitucional, STC 136/2011](https://hj.tribunalconstitucional.es/es/Resolucion/Show/6918); [Ley 39/2015](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565), arts. 1–2; [Ley 34/2002](https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758), arts. 39 bis y 40; IETF [RFC 8200, sección 3](https://datatracker.ietf.org/doc/html/rfc8200#section-3); Microsoft Learn [Remote Desktop Protocol](https://learn.microsoft.com/en-us/windows/win32/termserv/remote-desktop-protocol) y [arquitectura de Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/service-architecture-resilience).
+
+Cotejo con ITIC Academy en Drive: [bloque 3 Actuación Administrativa y Administración Digital](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk) incluye fuentes administrativas (A1-7), Leyes 39/40 (A1-8/A2-I-8) y legislación sobre sociedad de la información (A1-22); [bloque 42 Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) cubre redes IP e Internet; [bloque 26 Hardware, servidores y virtualización](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk) incluye virtualización de puestos y servidores. La cifra de bits y la función protocolaria se verifican en IETF/Microsoft, no se atribuyen a la academia.
+
+Correspondencia cotejada con [convocatoria A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [convocatoria A2 GSI BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y [temario-oficial.json](temario-oficial.json): A1-7 fuentes y rango normativo; A1-8/A2-I-8 procedimiento; A1-22/A2-I-6 sociedad de la información; A1-115/A2-II-8 redes IP; A1-57/A2-II-1 sistemas y virtualización.
+
+Se ejecutaron inventario.cjs, verificar.cjs y git diff --check. Estas pruebas automáticas comprueban estructura y trazabilidad, pero no sustituyen la comprobación individual del contenido.
 
 ## Lote 645 — 31 de octubre de 2026
 
