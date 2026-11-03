@@ -190010,71 +190010,311 @@
       "id": 3831,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Desde qué versión del sistema operativo Android se ofrece la posibilidad de utilización de ART (Android Runtime)?",
+      "texto": "¿En qué versión de Android se introdujo ART por primera vez como runtime experimental seleccionable por el usuario, aunque Dalvik siguiera siendo el predeterminado?",
       "opciones": [
-        "Desde la versión 6.0 - Marshmallow",
-        "Desde la versión 5.0 - Lollipop",
-        "Desde la versión 4.4 - Kit Kat",
-        "Desde la versión 4.1 - Jelly Bean"
+        "Android 6.0 Marshmallow.",
+        "Android 5.0 Lollipop.",
+        "Android 4.4 KitKat.",
+        "Android 4.1 Jelly Bean."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Android 4.4 KitKat incluyó ART como runtime experimental que podía seleccionarse desde las opciones de desarrollador; Dalvik continuaba como opción predeterminada. ART pasó a ser el runtime predeterminado en Android 5.0. Se precisa “posibilidad de uso experimental” para distinguir ambos hitos. Correspondencia A1-62/A2-II-2. El bloque 47 de Academy trata Android y los runtimes Dalvik/ART; el primer hito de ART como runtime experimental seleccionable en Android 4.4 se verifica con la especificación primaria de Android.",
+      "clasificacion": {
+        "A1": [
+          "A1-62"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 47 «Aplicaciones y sistemas operativos», versión 2026.1 (30-09-2026): trata la evolución de Android y la transición Dalvik/ART; cotejo curricular directo.",
+        "estado": "revisada",
+        "nota": "Correspondencia A1-62/A2-II-2. El bloque 47 de Academy trata Android y los runtimes Dalvik/ART; el primer hito de ART como runtime experimental seleccionable en Android 4.4 se verifica con la especificación primaria de Android."
+      },
+      "etiquetas": [
+        "Android",
+        "ART",
+        "Dalvik",
+        "Android 4.4 KitKat",
+        "runtime"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-03",
+        "fuentes": [
+          {
+            "url": "https://source.android.com/docs/compatibility/4.4/android-4.4-cdd",
+            "referencia": "Android 4.4 Compatibility Definition Document, §6.2.1: ART se introduce como runtime experimental seleccionable en Developer Options; Dalvik sigue siendo el runtime predeterminado. La pregunta se limita a su primera disponibilidad de prueba, no a su adopción como runtime por defecto."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 47, versión 2026.1, 30-09-2026: Android, runtimes Dalvik y ART; el documento apoya el encaje temático, mientras la versión exacta 4.4 se verifica con Android CDD."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, anexo I, tema 62: OS X, iOS, Android, z/OS y sistemas operativos móviles."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX, tema II-2: fundamentos de sistemas operativos y sistemas para dispositivos móviles."
+          }
+        ],
+        "observaciones": "Android 4.4 KitKat incluyó ART como runtime experimental que podía seleccionarse desde las opciones de desarrollador; Dalvik continuaba como opción predeterminada. ART pasó a ser el runtime predeterminado en Android 5.0. Se precisa “posibilidad de uso experimental” para distinguir ambos hitos. Correspondencia A1-62/A2-II-2. El bloque 47 de Academy trata Android y los runtimes Dalvik/ART; el primer hito de ART como runtime experimental seleccionable en Android 4.4 se verifica con la especificación primaria de Android."
+      }
     },
     {
       "id": 3832,
       "bloque": 0,
       "tema": 0,
-      "texto": "De las siguientes opciones, señale cuál es la correcta para la transformación de una relación 1:1:",
+      "texto": "En el paso del modelo entidad-relación al modelo relacional, para una relación binaria 1:1 sin atributos propios, ¿qué implementación habitual permite representar la relación con una restricción adicional de unicidad?",
       "opciones": [
-        "Se crea una clave foránea en una de ellas que referencia a la clave de la otra",
-        "La relación se convierte en tabla con cada una de las claves más las propiedades de la relación",
-        "Podría elegirse entre las opciones anteriores",
-        "Ninguna de las anteriores"
+        "Incluir en una de las tablas una clave foránea a la clave primaria o candidata de la otra y declarar UNIQUE esa clave foránea; la elección del lado depende de la participación.",
+        "Crear obligatoriamente una tabla intermedia para toda relación 1:1, aunque no tenga atributos propios.",
+        "Añadir siempre claves foráneas recíprocas en las dos tablas, sin restricciones de unicidad.",
+        "Convertirla en una relación muchos-a-muchos mediante una tabla de asociación."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se acota a una relación binaria 1:1 ordinaria, sin atributos propios: el patrón habitual es guardar en una de las tablas una FK a la clave primaria/única de la otra y declarar UNIQUE para imponer el máximo de una coincidencia; NOT NULL puede expresar participación obligatoria. La tabla intermedia puede usarse en determinados diseños, pero no es una transformación obligatoria ni constituye siempre la única opción. Correspondencia A1-64/A2-II-5/A2-III-4. Academy, bloque 29, cubre ER, cardinalidades y su transformación al modelo relacional. Se distingue la pauta de diseño de la regla SQL concreta: FK y UNIQUE implementan una 1:1 bajo las restricciones indicadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos», versión 2026.1: modelo entidad-relación, cardinalidades y transformación al modelo relacional; cotejo curricular directo.",
+        "estado": "revisada",
+        "nota": "Correspondencia A1-64/A2-II-5/A2-III-4. Academy, bloque 29, cubre ER, cardinalidades y su transformación al modelo relacional. Se distingue la pauta de diseño de la regla SQL concreta: FK y UNIQUE implementan una 1:1 bajo las restricciones indicadas."
+      },
+      "etiquetas": [
+        "bases de datos",
+        "modelo relacional",
+        "relación 1:1",
+        "clave foránea",
+        "restricción UNIQUE",
+        "participación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-03",
+        "fuentes": [
+          {
+            "url": "https://ebooks.karbust.me/Technology/Database%20Systems%20-%20Design%2C%20Implementation%2C%20and%20Management%20%289th%20Edition%29.pdf",
+            "referencia": "Texto universitario de diseño de bases de datos, capítulo de transformación ER-relacional: una relación binaria 1:1 puede implementarse colocando una FK en uno de los lados; la elección depende de participación y restricciones."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints",
+            "referencia": "Microsoft Learn explica que las FK mantienen integridad referencial; el patrón necesita además una restricción UNIQUE sobre la FK para que no haya más de una fila relacionada al mismo registro."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/unique-constraints-and-check-constraints?view=sql-server-ver17",
+            "referencia": "Microsoft Learn: una restricción UNIQUE garantiza que no haya valores duplicados en la columna o conjunto de columnas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29, versión 2026.1: modelo ER, cardinalidades y modelo relacional; aporta contexto curricular. El detalle FK/UNIQUE se comprueba con la bibliografía y documentación técnica citadas en la revisión."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, anexo I, tema 64: modelo relacional, SQL e interoperabilidad entre SGBD relacionales."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX, tema II-5 (SGBD relacionales) y tema III-4 (modelado, diseño de bases de datos y modelo lógico relacional)."
+          }
+        ],
+        "observaciones": "Se acota a una relación binaria 1:1 ordinaria, sin atributos propios: el patrón habitual es guardar en una de las tablas una FK a la clave primaria/única de la otra y declarar UNIQUE para imponer el máximo de una coincidencia; NOT NULL puede expresar participación obligatoria. La tabla intermedia puede usarse en determinados diseños, pero no es una transformación obligatoria ni constituye siempre la única opción. Correspondencia A1-64/A2-II-5/A2-III-4. Academy, bloque 29, cubre ER, cardinalidades y su transformación al modelo relacional. Se distingue la pauta de diseño de la regla SQL concreta: FK y UNIQUE implementan una 1:1 bajo las restricciones indicadas."
+      }
     },
     {
       "id": 3833,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuál de las siguientes afirmaciones sobre Visual Studio .NET no es cierta:",
+      "texto": "Sobre Visual Studio como familia de entornos integrados de desarrollo de Microsoft —incluidas versiones posteriores a Visual Studio .NET—, ¿cuál afirmación NO es correcta?",
       "opciones": [
-        "Es un IDE (Entorno Integrado de Desarrollo) desarrollado por Microsoft",
-        "Permite la programación WYSIWYG (What You See Is What You Get)",
-        "Los programas desarrollados con Visual Studio .NET únicamente pueden usar SQL Server para el almacenamiento de datos",
-        "Las versiones Express Editions se ofrecen gratuitamente"
+        "Es un IDE desarrollado por Microsoft.",
+        "Puede incluir herramientas visuales de diseño (WYSIWYG), según el tipo de proyecto.",
+        "Los proyectos solo pueden conectarse a Microsoft SQL Server y no admiten otros motores ni proveedores de datos.",
+        "Microsoft publicó gratuitamente las ediciones Visual Studio 2005 Express."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Visual Studio, entendido como familia de IDEs de Microsoft y no solo la versión histórica .NET de 2002, puede trabajar con motores distintos de SQL Server mediante proveedores y herramientas adecuados. Las ediciones Express de Visual Studio 2005 fueron gratuitas según el anuncio de Microsoft de 2006; el nombre antiguo y esta referencia comercial se presentan como contexto histórico, no como afirmación de que cada edición o versión sea gratuita hoy. Correspondencia A1-66/A2-III-11. Academy, bloque 30, sitúa el entorno .NET y las herramientas de desarrollo; Microsoft Learn verifica el soporte de proveedores ajenos a SQL Server y la gratuidad histórica de Express 2005 se limita a esa edición.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías y sistemas de información», versión 2026.1: entorno Microsoft .NET y herramientas de desarrollo; el contexto de herramientas no sustituye a la documentación de Microsoft sobre proveedores de datos.",
+        "estado": "revisada",
+        "nota": "Correspondencia A1-66/A2-III-11. Academy, bloque 30, sitúa el entorno .NET y las herramientas de desarrollo; Microsoft Learn verifica el soporte de proveedores ajenos a SQL Server y la gratuidad histórica de Express 2005 se limita a esa edición."
+      },
+      "etiquetas": [
+        "Microsoft Visual Studio",
+        "IDE",
+        "proveedores ADO.NET",
+        "Express Editions",
+        "WYSIWYG"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-03",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/visualstudio/data-tools/installing-database-systems-tools-and-samples?view=visualstudio",
+            "referencia": "Microsoft Learn presenta sistemas de bases de datos distintos de SQL Server accesibles desde proyectos y herramientas de Visual Studio mediante proveedores ADO.NET; enumera Oracle y MySQL entre otros."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/visualstudio/data-tools/add-new-connections?view=vs-2022",
+            "referencia": "Microsoft Learn: Server Explorer admite bases de datos que tengan instalado un proveedor ADO.NET, además de SQL Server y servicios Azure; Visual Studio puede conectarse mediante proveedores instalados."
+          },
+          {
+            "url": "https://news.microsoft.com/source/2006/04/19/microsoft-brings-programming-to-the-masses-with-visual-studio-express/",
+            "referencia": "Microsoft Source, 19-04-2006: anuncio de Visual Studio Express Editions como línea gratuita para estudiantes/hobbistas; se usa para el hecho histórico y se evita extrapolarlo como precio universal de toda versión o edición actual."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, versión 2026.1: .NET y tecnologías/herramientas de desarrollo; cotejo curricular, no evidencia primaria de la compatibilidad concreta de Visual Studio."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, anexo I, tema 66: entorno de desarrollo Microsoft .NET."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX, tema III-11: plataforma .NET, modelo de programación, servicios y herramientas."
+          }
+        ],
+        "observaciones": "Visual Studio, entendido como familia de IDEs de Microsoft y no solo la versión histórica .NET de 2002, puede trabajar con motores distintos de SQL Server mediante proveedores y herramientas adecuados. Las ediciones Express de Visual Studio 2005 fueron gratuitas según el anuncio de Microsoft de 2006; el nombre antiguo y esta referencia comercial se presentan como contexto histórico, no como afirmación de que cada edición o versión sea gratuita hoy. Correspondencia A1-66/A2-III-11. Academy, bloque 30, sitúa el entorno .NET y las herramientas de desarrollo; Microsoft Learn verifica el soporte de proveedores ajenos a SQL Server y la gratuidad histórica de Express 2005 se limita a esa edición."
+      }
     },
     {
       "id": 3834,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes no es un tipo de componente Java?",
+      "texto": "¿Cuál de estas opciones designa la plataforma empresarial Java (J2EE/Java EE, hoy Jakarta EE), y no un tipo concreto de componente de aplicación?",
       "opciones": [
-        "Enterprise Java Beans (EJB).",
+        "Enterprise JavaBeans (EJB).",
         "Servlets.",
-        "Java Platform Enterprise Edition (J2EE).",
+        "Java Platform, Enterprise Edition (J2EE).",
         "JavaServer Pages (JSP)."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "J2EE (posteriormente Java EE y hoy Jakarta EE) designa la plataforma empresarial y no un tipo individual de componente como un servlet, una página JSP/Jakarta Server Page o un Enterprise JavaBean. Se moderniza la nomenclatura y se conserva el sentido taxonómico de la pregunta. Correspondencia A1-67/A2-III-10. Academy, bloque 30, cubre el entorno Java empresarial; se actualiza el nombre J2EE→Java EE→Jakarta EE y se contrasta la diferencia entre plataforma y componentes con la especificación oficial.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías y sistemas de información», versión 2026.1: plataforma Java empresarial y tecnologías web Java/Jakarta; cotejo curricular directo.",
+        "estado": "revisada",
+        "nota": "Correspondencia A1-67/A2-III-10. Academy, bloque 30, cubre el entorno Java empresarial; se actualiza el nombre J2EE→Java EE→Jakarta EE y se contrasta la diferencia entre plataforma y componentes con la especificación oficial."
+      },
+      "etiquetas": [
+        "Java",
+        "Jakarta EE",
+        "Java EE",
+        "J2EE",
+        "EJB",
+        "servlets",
+        "JSP",
+        "componentes empresariales"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-03",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/specifications/platform/9/jakarta-platform-spec-9.html",
+            "referencia": "Especificación oficial Jakarta EE 9, §2.3: distingue los tipos de componentes de aplicación (clientes, componentes web como servlets/server pages y Enterprise Beans) de la plataforma que proporciona runtime y contenedores."
+          },
+          {
+            "url": "https://jakarta.ee/specifications/",
+            "referencia": "Eclipse Foundation/Jakarta EE: la plataforma Jakarta EE y los perfiles son especificaciones paraguas que agrupan especificaciones individuales para aplicaciones empresariales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, versión 2026.1: entorno Java y plataforma empresarial; el material sirve para clasificar y la especificación Jakarta EE establece la taxonomía de plataforma/componentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, anexo I, tema 67: entorno de desarrollo Java."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX, tema III-10: arquitectura Java EE/Jakarta EE, elementos constitutivos, productos y herramientas."
+          }
+        ],
+        "observaciones": "J2EE (posteriormente Java EE y hoy Jakarta EE) designa la plataforma empresarial y no un tipo individual de componente como un servlet, una página JSP/Jakarta Server Page o un Enterprise JavaBean. Se moderniza la nomenclatura y se conserva el sentido taxonómico de la pregunta. Correspondencia A1-67/A2-III-10. Academy, bloque 30, cubre el entorno Java empresarial; se actualiza el nombre J2EE→Java EE→Jakarta EE y se contrasta la diferencia entre plataforma y componentes con la especificación oficial."
+      }
     },
     {
       "id": 3835,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál NO está considerada como una licencia de software libre?",
+      "texto": "Según el criterio de la Free Software Foundation (FSF), que se refiere a libertades y permite cobrar por distribuir copias, ¿cuál de estas licencias NO es una licencia de software libre?",
       "opciones": [
-        "Berkeley Database License.",
+        "Berkeley Database License (también denominada Sleepycat Software Product License).",
         "Intel Open Source License.",
         "Licencia de Ruby.",
-        "Aladdin Free Public License."
+        "Aladdin Free Public License (AFPL)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se aclara que «libre» se evalúa conforme a las libertades de la FSF, no como sinónimo de gratuito: la FSF reconoce Berkeley Database/Sleepycat, Intel Open Source y Ruby como licencias libres. La AFPL restringe la distribución vinculada a pagos y por eso no es libre bajo ese criterio. Correspondencia A1-43/A2-II-14. Academy, bloque 43, cubre licencias y software libre/propietario. Se precisa el criterio de libertad según FSF y se diferencia libertad de precio; el programa oficial respalda la clasificación temática, no sustituye la fuente de cada licencia.",
+      "clasificacion": {
+        "A1": [
+          "A1-43"
+        ],
+        "A2": [
+          "A2-II-14"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 43 «Protección jurídica y licencias», versión 2026.1 (26-08-2026): licencias de software libre/propietario y límites de distribución; cotejo curricular directo.",
+        "estado": "revisada",
+        "nota": "Correspondencia A1-43/A2-II-14. Academy, bloque 43, cubre licencias y software libre/propietario. Se precisa el criterio de libertad según FSF y se diferencia libertad de precio; el programa oficial respalda la clasificación temática, no sustituye la fuente de cada licencia."
+      },
+      "etiquetas": [
+        "software libre",
+        "licencias",
+        "AFPL",
+        "Berkeley DB",
+        "Sleepycat",
+        "Intel Open Source License",
+        "Ruby License"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-03",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/licenses/license-list.html",
+            "referencia": "FSF, lista comentada de licencias: Berkeley Database/Sleepycat, Intel Open Source License y Ruby aparecen como licencias de software libre; la Aladdin Free Public License aparece en la sección de licencias no libres."
+          },
+          {
+            "url": "https://www.gnu.org/philosophy/free-sw.en.html",
+            "referencia": "FSF define libertad de redistribución como permitir redistribuir copias gratis o cobrando por ello; la libertad se refiere a uso, modificación y distribución, no a que el software tenga precio cero."
+          },
+          {
+            "url": "https://ctan.math.illinois.edu/fonts/psfonts/urw/classico/doc/AFPL.htm",
+            "referencia": "Texto de AFPL, cláusula 2(a): restringe a organizaciones comerciales la distribución del programa o derivados cuando se realice un pago relacionado, incluida la venta o inclusión en productos/servicios comerciales. Esta restricción es incompatible con la definición de software libre de FSF."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Og6yI-YaZ48UA3pBT-HQhTh7TfvdPW_C/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43, versión 2026.1, 26-08-2026: protección jurídica y licencias de software; cotejo curricular."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, anexo I, tema 43: protección jurídica de programas de ordenador y comprobación/control del software."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX, tema II-14: software libre y propietario, tipos de licencias y protección jurídica."
+          }
+        ],
+        "observaciones": "Se aclara que «libre» se evalúa conforme a las libertades de la FSF, no como sinónimo de gratuito: la FSF reconoce Berkeley Database/Sleepycat, Intel Open Source y Ruby como licencias libres. La AFPL restringe la distribución vinculada a pagos y por eso no es libre bajo ese criterio. Correspondencia A1-43/A2-II-14. Academy, bloque 43, cubre licencias y software libre/propietario. Se precisa el criterio de libertad según FSF y se diferencia libertad de precio; el programa oficial respalda la clasificación temática, no sustituye la fuente de cada licencia."
+      }
     },
     {
       "id": 3836,
