@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 3 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 694 (IDs 3786–3790). Acumulado: 3790 preguntas examinadas individualmente, 3712 verificadas (735 vigentes, 2697 corregidas y 280 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8333 sin revisar individualmente. Hay 3096 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 695 (IDs 3791–3795). Acumulado: 3795 preguntas examinadas individualmente, 3717 verificadas (735 vigentes, 2702 corregidas y 280 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8328 sin revisar individualmente. Hay 3101 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 695 — 3 de noviembre de 2026
+
+IDs 3791–3795 revisados individualmente; originales conservados en [cambios-lote-695.json](cambios-lote-695.json). Se corrigen las cinco formulaciones para distinguir la literalidad legal vigente de atribuciones orgánicas que cambiaron:
+- **3791 — principios de buen gobierno:** se contrasta cada alternativa con el artículo 26.2; trato igual, comunicar irregularidades y no usar el cargo para obtener ventajas sí están enumerados. El desempeño «coordinadamente» no aparece en esa lista. **Corregida.**
+- **3792 — alcance y gestión del Portal:** se acota a la información específica que publica el Portal de la AGE; no cubre órganos constitucionales ni entidades locales. Se actualiza la gestión a la Dirección General de Gobernanza Pública y se mantiene la exigencia de identificación en solicitudes. **Corregida.**
+- **3793 — funciones de Gobernanza Pública:** se actualiza la competencia de análisis y evaluación de estructuras organizativas al artículo 11 del RD 210/2024. La cultura evaluadora, metodologías y propuesta del Plan estratégico corresponden a la Agencia Estatal de Evaluación según la Ley 27/2022. **Corregida.**
+- **3794 — protección de datos en el acceso:** se distingue el consentimiento expreso y escrito para ideología, afiliación sindical, religión o creencias de las reglas para otras categorías de datos sensibles. **Corregida.**
+- **3795 — recursos frente a resoluciones de acceso:** se corrige la falsa afirmación de que es obligatorio un recurso de alzada ante la Secretaría de Estado; cabe vía contenciosa directa o reclamación potestativa del artículo 24. **Corregida.**
+
+Fuentes primarias: BOE, [Ley 19/2013 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887), arts. 15, 20, 23, 24 y 26; [RD 210/2024 consolidado](https://boe.es/buscar/act.php?id=BOE-A-2024-3796&p=20260612&tn=1), art. 11; [Ley 27/2022](https://www.boe.es/eli/es/l/2022/12/20/27), art. 29; Portal de Transparencia, [alcance y gestión del Portal](https://transparencia.gob.es/derechos/Derecho_Entender/conocer/que-es-el-portal-de-transparencia).
+
+Cotejo curricular: ITIC Academy, [bloque 7 «Dirección pública, empleo, transparencia y unidad de mercado»](https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk); correspondencia cotejada con [temario A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, tema 25, y [temario A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, tema I-4. Clasificación: A1-25/A2-I-4. Academy orienta cobertura, no es fuente normativa.
+
+Comprobaciones: inventario de 12.123 preguntas sin errores; el inventario automático de duplicados no equivale a revisión individual. Verificador de 3795 cambios sin errores y 8328 preguntas pendientes de revisión individual; git diff --check limpio.
 
 ## Lote 694 — 3 de noviembre de 2026
 
