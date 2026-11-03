@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 679 (IDs 3711–3715). Acumulado: 3715 preguntas examinadas individualmente, 3637 verificadas (711 vigentes, 2654 corregidas y 272 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8408 sin revisar individualmente. Hay 3041 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 680 (IDs 3716–3720). Acumulado: 3720 preguntas examinadas individualmente, 3642 verificadas (712 vigentes, 2658 corregidas y 272 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8403 sin revisar individualmente. Hay 3045 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 680 — 3 de noviembre de 2026
+
+IDs 3716–3720 revisados individualmente; se conservan los originales en [cambios-lote-680.json](cambios-lote-680.json). Cuatro se corrigen y Flynn se confirma:
+- **3716 — sentencias JCL:** se acota la pregunta a las tres sentencias básicas JOB, EXEC y DD; se aclara que los comentarios JCL sí existen como líneas //* y que COMMENT no es una palabra clave de sentencia. **Corregida.** A1-52/A2-II-1.
+- **3717 — Flynn:** se verifica la atribución de SISD/SIMD/MISD/MIMD a Flynn y su criterio de flujos de instrucciones y datos. **Vigente.** A1-52/A2-II-1.
+- **3718 — HTTL:** se especifica la nomenclatura Motorola 54H/74H, para la que HTTL se usa como High-Speed TTL; se evita generalizar una sigla cuyo uso histórico varía entre fuentes. **Corregida.** A1-52/A2-II-1.
+- **3719 — NUMA:** se corrige “Not Uniform” por Non-Uniform Memory Access y se define por diferencias de latencia entre memoria local y remota accesible. **Corregida.** A1-52/A2-II-1.
+- **3720 — aplicaciones Grid:** se sustituye “todas” (incluía una categoría de tiempo real demasiado amplia) por una pregunta concreta sobre supercomputación distribuida; se documentan también las clases de alto throughput, bajo demanda, intensivas en datos y colaborativas. **Corregida.** A1-52/A2-II-1.
+
+Fuentes técnicas: IBM, [sentencias JCL](https://www.ibm.com/docs/en/zos/3.1.0?topic=statements-jcl), sobre JOB, EXEC, DD y comentarios //*; IBM, [JCL básico](https://www.ibm.com/docs/zosbasics/com.ibm.zos.zjcl/zjcl_book.pdf), que llama a JOB/EXEC/DD los tres tipos básicos; NASA, [taxonomía de Flynn](https://ntrs.nasa.gov/api/citations/19820021146/downloads/19820021146.pdf); Motorola, [Schottky TTL Devices databook](https://www.bitsavers.org/components/motorola/_dataBooks/1983_Motorola_Schottky_TTL_Data.pdf) y [Semiconductor Data Library](https://www.bitsavers.org/components/motorola/_dataBooks/1977_Motorola_Semiconductor_Data_Library_Volume_9_Series_B_LS_TTL.pdf), tablas 54H/74H; Linux, [man-pages numa(7)](https://www.kernel.org/pub/linux/docs/man-pages/book/man-pages-6.13.pdf), e IBM, [Power Systems Performance Guide](https://www.redbooks.ibm.com/redbooks/pdfs/sg248080.pdf), sobre acceso local/remoto; Foster y Kesselman, [Computational Grids](https://cds.cern.ch/record/383364/files/p87.pdf), sobre clases de aplicaciones Grid.
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), como contexto curricular, no fuente técnica. Correspondencia con A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); cotejados con [temario-oficial.json](temario-oficial.json) el 03-11-2026.
+
+Comprobaciones: inventario de 12.123 preguntas, cero errores (13 grupos duplicados y 65 candidatos automáticos no equivalen a revisión individual); verificador de 3720 registros sin errores y 8403 preguntas aún por revisar; git diff --check limpio.
 
 ## Lote 679 — 3 de noviembre de 2026
 
