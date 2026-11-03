@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 3 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 708 (IDs 3856–3860). Acumulado: 3860 preguntas examinadas individualmente, 3782 verificadas (752 vigentes, 2743 corregidas y 287 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8263 sin revisar individualmente. Hay 3165 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 709 (IDs 3861–3865). Acumulado: 3865 preguntas examinadas individualmente, 3787 verificadas (752 vigentes, 2748 corregidas y 287 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8258 sin revisar individualmente. Hay 3170 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 709 — 3 de noviembre de 2026
+
+IDs 3861–3865 revisados individualmente frente a recomendaciones ITU-T, el estándar IEEE/WiMAX Forum, los RFC del IETF y fuentes técnicas primarias. Se cotejó el bloque Redes 2026.1 de ITIC Academy y los temas oficiales A1/A2; los originales se conservan en [cambios-lote-709.json](cambios-lote-709.json).
+
+- **3861 — fibra para larga distancia:** se confirma la preferencia habitual por monomodo, con baja atenuación y gran alcance en ventanas de telecomunicaciones; se retiran explicaciones incorrectas sobre robustez o múltiples haces. **Corregida.**
+- **3862 — WiMAX:** se confirma IEEE 802.16 como familia de estándares de interfaz aérea de banda ancha asociada a WiMAX. **Corregida.**
+- **3863 — trama SDH:** la estructura básica STM-N se repite cada 125 µs (8.000 tramas/s) según ITU-T G.707. **Corregida.**
+- **3864 — LSR en MPLS:** un Label Switching Router reenvía mediante etiquetas; puede hacer swap en tránsito y push/pop en extremos. Se eliminan distractores que confundían nodo de conmutación con circuito o túnel. **Corregida.**
+- **3865 — direcciones IPv4 en IPv6:** se actualiza la respuesta a IPv4-mapped `::ffff:IPv4`; `::IPv4` es el formato IPv4-compatible obsoleto. El enunciado viejo confundía ambos. **Corregida.**
+
+Fuentes primarias: [ITU-T G.652 (08/2024), fibra monomodo vigente](https://www.itu.int/rec/T-REC-G.652-202408-I/en) y [ITU-T G.654 (08/2024), fibra monomodo para sistemas de larga distancia](https://www.itu.int/epublications/publication/itu-t-g-654-2024-08-characteristics-of-a-cut-off-shifted-single-mode-optical-fibre-and-cable); [WiMAX Forum, especificaciones](https://wimaxforum.org/TechSpec) e [IEEE 802.16-2017](https://standards.ieee.org/ieee/485/6996/); [ITU-T G.707, interfaz SDH](https://www.itu.int/rec/T-REC-G.707) y [texto de la recomendación con el período de 125 µs](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.707-200312-S%21%21PDF-E&lang=e&type=items); [RFC 3031, arquitectura MPLS](https://www.rfc-editor.org/rfc/rfc3031.html); [RFC 4291, formatos IPv4-embedded y obsolescencia de IPv4-compatible](https://www.rfc-editor.org/rfc/rfc4291.html) y [RFC 6724, selección de direcciones y deprecación](https://www.rfc-editor.org/rfc/rfc6724.html).
+
+Cotejo de ITIC Academy: [bloque 42, Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), versión 2026.1 (29-09-2026): cubre medios/fibra (3861), acceso inalámbrico (3862), JDS/SDH y transporte WAN (3863), MPLS (3864) y transición IPv4/IPv6 (3865). Correspondencia con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3861 A1-108/A2-IV-7; 3862 A1-108/A2-IV-11; 3863–3864 A1-113/A2-IV-10; 3865 A1-115/A2-II-8. El cotejo académico sirve de mapa curricular; las respuestas se fundamentan en las especificaciones/RFC citados.
+
+Comprobaciones: inventario y verificador ejecutados tras registrar este lote; cifras actualizadas en el resumen superior.
 
 ## Lote 708 — 3 de noviembre de 2026
 
