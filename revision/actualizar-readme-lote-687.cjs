@@ -27,6 +27,6 @@ Comprobaciones: inventario de 12.123 preguntas sin errores; sus posibles duplica
 
 `;
 const file = path.join(dir, 'README.md'); let s = fs.readFileSync(file, 'utf8');
-s = s.replace(/Último lote secuencial aplicado:[^\\r\\n]*/, summary);
+s = s.replace(/Último lote secuencial aplicado:[^\r\n]*/, summary);
 if (!s.includes('## Lote 687 —')) s = s.replace('## Lote 686 —', section + '## Lote 686 —');
 fs.writeFileSync(file, s); console.log(`README actualizado: ${n} revisadas; ${left} por revisar individualmente; ${changed} con cambios sustantivos.`);
