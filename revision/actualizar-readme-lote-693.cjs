@@ -1,0 +1,21 @@
+const fs=require('node:fs'),path=require('node:path'),dir=__dirname,totals={vigente:0,corregida:0,historica:0,pendiente_fuente:0,pendiente_ambiguedad:0};let changed=0;
+for(const f of fs.readdirSync(dir).filter(x=>/^cambios-lote-\d+\.json$/.test(x)))for(const c of JSON.parse(fs.readFileSync(path.join(dir,f),'utf8')).cambios){totals[c.actualizada.revision.estado]++;if(['texto','opciones','respuesta_correcta'].some(k=>JSON.stringify(c.original[k])!==JSON.stringify(c.actualizada[k])))changed++}
+const n=Object.values(totals).reduce((a,b)=>a+b,0),verified=totals.vigente+totals.corregida+totals.historica,pending=totals.pendiente_fuente+totals.pendiente_ambiguedad,left=12123-n;
+const summary=`Último lote secuencial aplicado: 693 (IDs 3781–3785). Acumulado: ${n} preguntas examinadas individualmente, ${verified} verificadas (${totals.vigente} vigentes, ${totals.corregida} corregidas y ${totals.historica} históricas) y ${pending} pendientes documentadas (${totals.pendiente_fuente} de fuente y ${totals.pendiente_ambiguedad} de ambigüedad); quedan ${left} sin revisar individualmente. Hay ${changed} preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.`;
+const section=`## Lote 693 — 3 de noviembre de 2026
+
+IDs 3781–3785 revisados individualmente; originales conservados en [cambios-lote-693.json](cambios-lote-693.json). Se confirman dos respuestas vigentes y se marcan tres reactivos sobre el IV Plan o el Estatuto derogado como históricos:
+- **3781 — audiencia de terceros:** se confirma el plazo de quince días para alegaciones y la suspensión del plazo de resolución durante el trámite (art. 19.3). **Vigente.**
+- **3782 — reclamación ante el CTBG:** se confirma su carácter potestativo y previo a la vía contencioso-administrativa; se documentan el plazo de un mes para reclamar y el silencio desestimatorio tras tres meses. **Vigente.**
+- **3783 — IV Plan:** se confirma la cifra de diez compromisos distribuidos en cinco ejes; se distingue de los cuatro grandes objetivos. El IV Plan correspondió a 2020–2024. **Histórica.**
+- **3784 — objetivos del IV Plan:** participación, integridad y sensibilización/formación sí eran objetivos; lealtad institucional no. El V Plan se aprobó en 2025. **Histórica.**
+- **3785 — régimen patrimonial del CTBG:** se acota la pregunta al RD 919/2014, hoy derogado, y se corrige la afirmación falsa: el régimen supletorio de las adquisiciones patrimoniales era Derecho privado, no público. **Histórica.**
+
+Fuentes primarias: BOE, [Ley 19/2013 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887), arts. 19 y 24; [RD 919/2014](https://www.boe.es/buscar/act.php?id=BOE-A-2014-11410), art. 1.2 (derogado); [RD 615/2024](https://www.boe.es/eli/es/rd/2024/07/02/615), Estatuto vigente; Portal de Transparencia, [IV Plan 2020–2024](https://transparencia.gob.es/content/dam/transparencia_home/gobierno-abierto/ivpga/documentos/IVPlanGobiernoAbierto_ES_vdef.pdf) y [V Plan aprobado en 2025](https://transparencia.gob.es/transparencia/dam/jcr%3A012047b9-80fb-43c7-8d6b-d1d00c44f7bf/V%20PLAN%20Gobierno%20Abierto.pdf).
+
+Cotejo curricular: ITIC Academy, [bloque 7 «Dirección pública, empleo, transparencia y unidad de mercado»](https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk); correspondencia cotejada con [temario A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, tema 25, y [temario A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, tema I-4. Clasificación: A1-25/A2-I-4. El material de Academy sirve para cobertura curricular, no como fuente de derecho.
+
+Comprobaciones: inventario de 12.123 preguntas sin errores; los candidatos a duplicado no equivalen a revisión individual. Verificador de ${n} cambios sin errores y ${left} preguntas pendientes de revisión individual; git diff --check limpio.
+
+`;
+const file=path.join(dir,'README.md');let s=fs.readFileSync(file,'utf8');s=s.replace(/Último lote secuencial aplicado:[^\r\n]*/,summary);if(!s.includes('## Lote 693 —'))s=s.replace('## Lote 692 —',section+'## Lote 692 —');fs.writeFileSync(file,s);console.log(`README actualizado: ${n} revisadas; ${left} pendientes; ${changed} con cambios sustantivos.`);

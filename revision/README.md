@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 3 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 692 (IDs 3776–3780). Acumulado: 3780 preguntas examinadas individualmente, 3702 verificadas (731 vigentes, 2694 corregidas y 277 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8343 sin revisar individualmente. Hay 3089 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 693 (IDs 3781–3785). Acumulado: 3785 preguntas examinadas individualmente, 3707 verificadas (733 vigentes, 2694 corregidas y 280 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8338 sin revisar individualmente. Hay 3092 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 693 — 3 de noviembre de 2026
+
+IDs 3781–3785 revisados individualmente; originales conservados en [cambios-lote-693.json](cambios-lote-693.json). Se confirman dos respuestas vigentes y se marcan tres reactivos sobre el IV Plan o el Estatuto derogado como históricos:
+- **3781 — audiencia de terceros:** se confirma el plazo de quince días para alegaciones y la suspensión del plazo de resolución durante el trámite (art. 19.3). **Vigente.**
+- **3782 — reclamación ante el CTBG:** se confirma su carácter potestativo y previo a la vía contencioso-administrativa; se documentan el plazo de un mes para reclamar y el silencio desestimatorio tras tres meses. **Vigente.**
+- **3783 — IV Plan:** se confirma la cifra de diez compromisos distribuidos en cinco ejes; se distingue de los cuatro grandes objetivos. El IV Plan correspondió a 2020–2024. **Histórica.**
+- **3784 — objetivos del IV Plan:** participación, integridad y sensibilización/formación sí eran objetivos; lealtad institucional no. El V Plan se aprobó en 2025. **Histórica.**
+- **3785 — régimen patrimonial del CTBG:** se acota la pregunta al RD 919/2014, hoy derogado, y se corrige la afirmación falsa: el régimen supletorio de las adquisiciones patrimoniales era Derecho privado, no público. **Histórica.**
+
+Fuentes primarias: BOE, [Ley 19/2013 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887), arts. 19 y 24; [RD 919/2014](https://www.boe.es/buscar/act.php?id=BOE-A-2014-11410), art. 1.2 (derogado); [RD 615/2024](https://www.boe.es/eli/es/rd/2024/07/02/615), Estatuto vigente; Portal de Transparencia, [IV Plan 2020–2024](https://transparencia.gob.es/content/dam/transparencia_home/gobierno-abierto/ivpga/documentos/IVPlanGobiernoAbierto_ES_vdef.pdf) y [V Plan aprobado en 2025](https://transparencia.gob.es/transparencia/dam/jcr%3A012047b9-80fb-43c7-8d6b-d1d00c44f7bf/V%20PLAN%20Gobierno%20Abierto.pdf).
+
+Cotejo curricular: ITIC Academy, [bloque 7 «Dirección pública, empleo, transparencia y unidad de mercado»](https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk); correspondencia cotejada con [temario A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, tema 25, y [temario A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, tema I-4. Clasificación: A1-25/A2-I-4. El material de Academy sirve para cobertura curricular, no como fuente de derecho.
+
+Comprobaciones: inventario de 12.123 preguntas sin errores; los candidatos a duplicado no equivalen a revisión individual. Verificador de 3785 cambios sin errores y 8338 preguntas pendientes de revisión individual; git diff --check limpio.
 
 ## Lote 692 — 3 de noviembre de 2026
 
