@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 3 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 685 (IDs 3741–3745). Acumulado: 3745 preguntas examinadas individualmente, 3667 verificadas (714 vigentes, 2679 corregidas y 274 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8378 sin revisar individualmente. Hay 3070 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 686 (IDs 3746–3750). Acumulado: 3750 preguntas examinadas individualmente, 3672 verificadas (715 vigentes, 2683 corregidas y 274 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8373 sin revisar individualmente. Hay 3075 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 686 — 3 de noviembre de 2026
+
+IDs 3746–3750 revisados individualmente; originales conservados en [cambios-lote-686.json](cambios-lote-686.json). Cuatro se corrigen y una se confirma:
+- **3746 — acceso a categorías especiales de datos:** se añade la excepción de datos manifiestamente públicos; la regla es consentimiento expreso y por escrito para ideología, afiliación sindical, religión o creencias (art. 15.1). **Corregida.** A1-25/A2-I-4.
+- **3747 — naturaleza/adscripción del CTBG:** se actualiza a autoridad administrativa independiente vinculada mediante el Ministerio para la Transformación Digital y de la Función Pública. La denominación de organismo público adscrito a Hacienda es obsoleta. **Corregida.** A1-25/A2-I-4.
+- **3748 — ámbito del título II:** se concreta que un jefe de área no queda incluido por el mero nombre del puesto, salvo que tenga la condición legal de alto cargo. **Corregida.** A1-25/A2-I-4.
+- **3749 — cobertura del Portal:** se verifica que el Portal estatal no contiene información específica de órganos constitucionales ni de entidades locales; estas publican en portales propios. También se confirma que la solicitud debe identificar al solicitante. **Corregida.** A1-25/A2-I-4.
+- **3750 — composición de la Comisión:** se confirma que la AEAT no aparece entre sus miembros; Tribunal de Cuentas, AEPD y AIReF sí. **Vigente.** A1-25/A2-I-4.
+
+Fuentes primarias: BOE, [Ley 19/2013 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887), arts. 15, 17, 25 y 36; [RD 615/2024](https://www.boe.es/buscar/doc.php?id=BOE-A-2024-15944), estatuto vigente del CTBG; Portal de Transparencia, [alcance y gestión actuales](https://transparencia.gob.es/derechos/Derecho_Entender/conocer/que-es-el-portal-de-transparencia).
+
+Cotejo curricular: ITIC Academy, [bloque 7 «Dirección pública, empleo, transparencia y unidad de mercado»](https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk), cobertura directa A1-25. Correspondencia oficial: A1, anexo I, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 25; A2, anexo IX, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), tema I-4; cotejados con [temario-oficial.json](temario-oficial.json) el 03-11-2026. El programa A1-2025 aún cita RD 919/2014, derogado por RD 615/2024; el bloque Academy se usa como guía curricular, no como fuente normativa.
+
+Comprobaciones: inventario de 12.123 preguntas, cero errores (duplicados/candidatos automáticos no equivalen a revisión individual); verificador de 3750 registros sin errores y 8373 preguntas restantes; git diff --check limpio.
 
 ## Lote 685 — 3 de noviembre de 2026
 
