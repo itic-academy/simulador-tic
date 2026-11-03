@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 3 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 690 (IDs 3766–3770). Acumulado: 3770 preguntas examinadas individualmente, 3692 verificadas (725 vigentes, 2692 corregidas y 275 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8353 sin revisar individualmente. Hay 3087 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 691 (IDs 3771–3775). Acumulado: 3775 preguntas examinadas individualmente, 3697 verificadas (729 vigentes, 2693 corregidas y 275 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8348 sin revisar individualmente. Hay 3088 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 691 — 3 de noviembre de 2026
+
+IDs 3771–3775 revisados individualmente; originales conservados en [cambios-lote-691.json](cambios-lote-691.json). Se confirma la clave de cuatro preguntas y se actualiza una pregunta desfasada:
+- **3771 — límites al acceso:** se confirma que la política económica y monetaria figura en el artículo 14.1.i. **Vigente.**
+- **3772 — inadmisión:** se confirma la reelaboración previa como causa de inadmisión del artículo 18.1.c y se distingue de los límites materiales del artículo 14. **Vigente.**
+- **3773 — Estatuto del CTBG:** se evita presentar como vigente el RD 919/2014, derogado en 2024; se formula la cuestión como dato histórico: su Estatuto tenía cuatro capítulos. **Corregida.**
+- **3774 — límites al acceso:** la política presupuestaria y fiscal no aparece como categoría autónoma del artículo 14. **Vigente.**
+- **3775 — protección ambiental:** se confirma que aparece expresamente en el artículo 14.1.i. **Vigente.**
+
+Fuentes primarias: BOE, [Ley 19/2013 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887), arts. 14 y 18; [RD 919/2014](https://www.boe.es/buscar/act.php?id=BOE-A-2014-11410) (Estatuto histórico) y [RD 615/2024](https://www.boe.es/eli/es/rd/2024/07/02/615) (Estatuto vigente y derogación del anterior).
+
+Cotejo curricular: ITIC Academy, [bloque 7 «Dirección pública, empleo, transparencia y unidad de mercado»](https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk); correspondencia cotejada con [temario A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, tema 25, y [temario A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, tema I-4. Clasificación: A1-25/A2-I-4. Academy guía cobertura; fuentes oficiales sustentan las respuestas.
+
+Comprobaciones: inventario de 12.123 preguntas sin errores; candidatos a duplicado automáticos no cuentan como revisión individual. Verificador de 3775 cambios sin errores y 8348 preguntas pendientes de revisión individual; git diff --check limpio.
 
 ## Lote 690 — 3 de noviembre de 2026
 
