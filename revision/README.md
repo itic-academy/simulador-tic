@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 678 (IDs 3706–3710). Acumulado: 3710 preguntas examinadas individualmente, 3632 verificadas (711 vigentes, 2649 corregidas y 272 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8413 sin revisar individualmente. Hay 3036 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 679 (IDs 3711–3715). Acumulado: 3715 preguntas examinadas individualmente, 3637 verificadas (711 vigentes, 2654 corregidas y 272 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8408 sin revisar individualmente. Hay 3041 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 679 — 3 de noviembre de 2026
+
+IDs 3711–3715 revisados individualmente; originales preservados en [cambios-lote-679.json](cambios-lote-679.json). Se corrigen las cinco:
+- **3711 — Grid y políticas de compartición:** se reemplazan afirmaciones absolutas sobre nodos dedicados/homogéneos y cuota fija por el principio de acceso controlado según políticas y condiciones de los proveedores. **Corregida.** A1-52/A2-II-1.
+- **3712 — Flynn:** se concreta que clasifica por multiplicidad de flujos de instrucciones y datos, no por velocidad ni geografía. **Corregida.** A1-52/A2-II-1.
+- **3713 — contador de programa:** se confirma PC/program counter como registro que guía la búsqueda de instrucciones; se distingue del MAR/MDR y se acota la semántica actual/próxima a la fase y a la ISA. **Corregida.** A1-52/A2-II-1.
+- **3714 — multicomputador MIMD:** se corrige la clave; los multicomputadores distribuidos de procesadores autónomos con memoria privada corresponden a MIMD, no a las cuatro clases como subcategorías de multicomputadores. **Corregida.** A1-52/A2-II-1.
+- **3715 — gang scheduling:** se precisa que es una posible planificación coordinada de procesos/Pods de un trabajo paralelo, no el nombre genérico de todo algoritmo de distribución de carga de un cluster. **Corregida.** A1-52/A2-II-1.
+
+Fuentes técnicas: Foster, Kesselman y Tuecke, [The Anatomy of the Grid](https://citeseerx.ist.psu.edu/document?doi=1fa61b9805b3ff273ca8e9dfbe498492962fd8d0&repid=rep1&type=pdf), sobre compartición controlada/políticas; NASA, [taxonomía de multiprocesadores y Flynn](https://ntrs.nasa.gov/api/citations/19820021146/downloads/19820021146.pdf), sobre los cuatro pares de streams; [RISC-V Instruction Set Manual](https://riscv.github.io/riscv-isa-manual/snapshot/spec/), Programmer’s Model, sobre el registro pc; Andrew S. Tanenbaum, [Distributed Operating Systems, §1.3](https://ndl.ethernet.edu.et/bitstream/123456789/90322/6/-PDF_Distributed_Operating_Systems_-_Tanenbaum%20%282%29.pdf), para multicomputadores MIMD con memoria privada; [Kubernetes Gang Scheduling](https://kubernetes.io/docs/concepts/scheduling-eviction/gang-scheduling/), [Slurm Gang Scheduling](https://slurm.schedmd.com/gang_scheduling.html) y [AWS Batch multi-node parallel jobs](https://docs.aws.amazon.com/batch/latest/userguide/multi-node-parallel-jobs.html), que muestran usos y semánticas concretas, distintas según el planificador.
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), como contexto curricular y no evidencia técnica. Correspondencia con A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); cotejo con [temario-oficial.json](temario-oficial.json) a 03-11-2026.
+
+Comprobaciones: inventario de 12.123 preguntas, cero errores (12 grupos duplicados y 65 candidatos automáticos no equivalen a revisión individual); verificador de 3715 registros sin errores y 8408 preguntas aún por revisar; git diff --check limpio.
 
 ## Lote 678 — 3 de noviembre de 2026
 
