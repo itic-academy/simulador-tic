@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 673 (IDs 3681–3685). Acumulado: 3685 preguntas examinadas individualmente, 3607 verificadas (710 vigentes, 2630 corregidas y 267 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8438 sin revisar individualmente. Hay 3013 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 674 (IDs 3686–3690). Acumulado: 3690 preguntas examinadas individualmente, 3612 verificadas (710 vigentes, 2634 corregidas y 268 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8433 sin revisar individualmente. Hay 3018 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 674 — 3 de noviembre de 2026
+
+IDs 3686–3690 revisados individualmente; originales completos en [cambios-lote-674.json](cambios-lote-674.json). Cuatro se corrigen y una queda documentada como contenido histórico:
+- **3686 — RISC:** se presenta como combinación clásica, no universal, de formatos regulares y arquitectura load/store; se sustituyen los distractores ambiguos. **Corregida.** A1-52/A2-II-1.
+- **3687 — Flynn/von Neumann:** se corrige errata y se explicita la máquina serie convencional como SISD (un flujo de instrucciones y uno de datos). **Corregida.** A1-52/A2-II-1.
+- **3688 — ley de Grosch:** se conserva la relación histórica potencia ≈ coste², equivalente a coste ≈ raíz de potencia, pero se aclara que fue una hipótesis empírica de su época y no una ley universal vigente. **Histórica.** A1-52/A2-II-1.
+- **3689 — Grid y clúster:** se evita afirmar que Grid nunca usa middleware, que clúster implica un SO único o que solo uno paraleliza; se distingue coordinación entre dominios autónomos de la integración típica de un clúster. **Corregida.** A1-52/A2-II-1.
+- **3690 — multinúcleo/Flynn:** se acota la clasificación a varios núcleos generales que ejecutan simultáneamente flujos independientes; la mera etiqueta “multinúcleo” no determina todos los aspectos de la microarquitectura. **Corregida.** A1-52/A2-II-1.
+
+Fuentes técnicas: IBM Redbooks, [hardware/RISC](https://www.redbooks.ibm.com/redbooks/pdfs/sg247071.pdf), e IBM Research, [RISC System/6000](https://research.ibm.com/publications/ibm-risc-system6000-architecture-and-performance); NASA TM 4662, [taxonomía de Flynn](https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf), y NASA report, [streams and Flynn classes](https://ntrs.nasa.gov/api/citations/19820021146/downloads/19820021146.pdf); Grosch, [artículo original de 1953](https://doi.org/10.1364/JOSA.43.000306), y Ein-Dor, [revisión empírica de la ley](https://doi.org/10.1145/2786.2787); Foster, Kesselman y Tuecke, [The Anatomy of the Grid](https://www.mcs.anl.gov/papers/P870.pdf); LLNL, [Introduction to Parallel Computing](https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial), e IBM, [Parallel processing environments](https://www.ibm.com/docs/en/iis/11.7.0?topic=jobs-parallel-processing-environments), para sistemas SMP y clúster.
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), como contexto curricular, no como evidencia de las definiciones. Correspondencia con A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), cotejados con [temario-oficial.json](temario-oficial.json) el 03-11-2026.
+
+Comprobaciones de este lote: inventario de 12.123 preguntas, cero errores (12 grupos repetidos y 65 candidatos automáticos, que no cuentan como revisión individual); verificador de 3690 registros sin errores y 8433 preguntas aún idénticas al original; git diff --check limpio.
 
 ## Lote 673 — 31 de octubre de 2026
 
