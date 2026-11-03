@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 674 (IDs 3686–3690). Acumulado: 3690 preguntas examinadas individualmente, 3612 verificadas (710 vigentes, 2634 corregidas y 268 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8433 sin revisar individualmente. Hay 3018 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 675 (IDs 3691–3695). Acumulado: 3695 preguntas examinadas individualmente, 3617 verificadas (710 vigentes, 2638 corregidas y 269 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8428 sin revisar individualmente. Hay 3023 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 675 — 3 de noviembre de 2026
+
+IDs 3691–3695 revisados individualmente; originales completos en [cambios-lote-675.json](cambios-lote-675.json). Cuatro se corrigen y una se conserva como clasificación histórica:
+- **3691 — taxonomía de Flynn:** se define por el número de flujos de instrucciones y datos, no por memoria/almacenamiento ni por el recorrido físico de datos. **Corregida.** A1-52/A2-II-1.
+- **3692 — arquitectura Grid por capas:** la respuesta coincide con el modelo simplificado de IBM de cuatro capas (red/conectividad, middleware, recursos, aplicaciones). Se aclara que otra referencia de Foster–Kesselman–Tuecke propone cinco capas. **Corregida.** A1-52/A2-II-1.
+- **3693 — uso de Grid:** se acota a tareas independientes y de alto throughput; Grid puede atender otras aplicaciones, pero la selección no debe confundirse con un trabajo MPI estrechamente acoplado que busque rendimiento de pico. **Corregida.** A1-52/A2-II-1.
+- **3694 — clasificación de equipos:** se mantiene PC → workstation → minicomputador → mainframe como jerarquía pedagógica histórica y aproximada; no como ley ni orden universal de productos modernos. **Histórica.** A1-52/A2-II-1.
+- **3695 — SISD:** se precisa que no ofrece múltiples streams arquitectónicos simultáneos según Flynn; no se infiere que un SISD carezca de toda concurrencia de SO o solapamiento de E/S. **Corregida.** A1-52/A2-II-1.
+
+Fuentes técnicas: NASA TM 4662, [Flynn’s Classification Scheme](https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf), y NASA report, [computer architecture taxonomies](https://ntrs.nasa.gov/api/citations/19820021146/downloads/19820021146.pdf); IBM, [Grid computing architecture](https://www.ibm.com/think/topics/grid-computing), y Foster, Kesselman y Tuecke, [The Anatomy of the Grid](https://www.mcs.anl.gov/papers/P870.pdf), que formalizan modelos de cuatro y cinco capas, respectivamente; UK Government, [Large-scale computing coordination](https://www.gov.uk/government/publications/large-scale-computing-the-case-for-greater-uk-coordination/large-scale-computing-the-case-for-greater-uk-coordination-html-version), sobre grid/scavenger y cargas de alto throughput poco acopladas; University of Wisconsin–Madison, [High Throughput Computing](https://chtc.cs.wisc.edu/htc/); NCES, [Technology at Your Fingertips, ch. 3](https://nces.ed.gov/pubs98/tech/3_2.asp), IBM, [What is a mainframe?](https://www.ibm.com/think/topics/mainframe), y Carnegie Mellon, [Types of Computers](https://www.cs.cmu.edu/~fgandon/lecture/uk1999/computers_types/), para la taxonomía tradicional documentada como histórica.
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), usado como contexto, no como evidencia técnica. Correspondencia con A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); cotejados con [temario-oficial.json](temario-oficial.json) el 03-11-2026.
+
+Comprobaciones: inventario de 12.123 preguntas, cero errores (12 grupos repetidos y 65 candidatos automáticos, no equivalentes a revisión); verificador de 3695 registros sin errores y 8428 preguntas aún idénticas al original; git diff --check limpio.
 
 ## Lote 674 — 3 de noviembre de 2026
 
