@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 676 (IDs 3696–3700). Acumulado: 3700 preguntas examinadas individualmente, 3622 verificadas (710 vigentes, 2642 corregidas y 270 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8423 sin revisar individualmente. Hay 3028 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 677 (IDs 3701–3705). Acumulado: 3705 preguntas examinadas individualmente, 3627 verificadas (711 vigentes, 2645 corregidas y 271 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8418 sin revisar individualmente. Hay 3032 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 677 — 3 de noviembre de 2026
+
+IDs 3701–3705 revisados individualmente; sus originales se conservan en [cambios-lote-677.json](cambios-lote-677.json). Tres preguntas se corrigen, una se verifica sin cambios y una se conserva como referencia histórica:
+- **3701 — Virtual Organization:** se confirma que una VO reúne dinámicamente a participantes/instituciones y recursos sujetos a reglas de compartición para colaborar en un objetivo. **Vigente.** A1-52/A2-II-1.
+- **3702 — disponibilidad y Tier de CPD:** se conserva Tier III solo dentro de las tablas históricas de disponibilidad (Tier II≈99,741 %, Tier III≈99,982 %); Uptime Institute aclara que el estándar actual no asigna predicciones porcentuales de disponibilidad. **Histórica.** A1-52/A2-II-1.
+- **3703 — SIMD:** se define por un flujo de instrucciones que actúa sobre múltiples flujos de datos. La taxonomía no exige clasificarlo por el número físico de procesadores. **Corregida.** A1-52/A2-II-1.
+- **3704 — nombre de job JCL:** se corrige el máximo a ocho caracteres (1–8), según la documentación IBM z/OS. **Corregida.** A1-52/A2-II-1.
+- **3705 — cluster HPC:** se elimina la ambigüedad de dos opciones casi sinónimas y se define el cluster clásico como computadores/nodos interconectados y coordinados como sistema, sin afirmar que cualquier cluster tenga que ser estrictamente local. **Corregida.** A1-52/A2-II-1.
+
+Fuentes técnicas: Foster, Kesselman y Tuecke, [The Anatomy of the Grid](https://arxiv.org/abs/cs/0103025) y [artículo completo](https://citeseerx.ist.psu.edu/document?doi=1fa61b9805b3ff273ca8e9dfbe498492962fd8d0&repid=rep1&type=pdf), para virtual organizations; Uptime Institute, [Tier Classification System (actualización 2021)](https://journal.uptimeinstitute.com/explaining-uptime-institutes-tier-classification-system/) y [tabla histórica de clasificaciones](https://uptimetechnology.ru/docs/Uptime%20-%20Industry%20Standard%20Tier%20Classifications.pdf); NASA TM 4662, [taxonomía de Flynn: SIMD y procesadores vectoriales](https://ntrs.nasa.gov/api/citations/19950017632/downloads/19950017632.pdf), y NASA, [taxonomía de multiprocesadores](https://ntrs.nasa.gov/api/citations/19820021146/downloads/19820021146.pdf); IBM, [reglas de sintaxis JCL para campo de nombre](https://www.ibm.com/docs/en/zos-basic-skills?topic=jcl-coding-syntax-rules-name-field) y [sentencia JOB de z/OS 3.1](https://www.ibm.com/docs/en/zos/3.1.0?topic=jobs-job-statement); IBM, [Computer cluster](https://www.ibm.com/docs/en/zos-basic-skills?topic=sysplex-computer-cluster) y [cluster computing](https://www.ibm.com/think/topics/cluster-computing).
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), como contexto curricular, no como prueba técnica. Correspondencia con A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); cotejados con [temario-oficial.json](temario-oficial.json) el 03-11-2026.
+
+Comprobaciones del lote: inventario de 12.123 preguntas, cero errores (12 grupos duplicados y 65 candidatos automáticos no equivalen a verificación individual); verificador de 3705 preguntas revisadas sin errores y 8418 restantes sin revisión; git diff --check limpio.
 
 ## Lote 676 — 3 de noviembre de 2026
 
