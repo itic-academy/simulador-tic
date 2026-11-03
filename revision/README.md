@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 3 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 704 (IDs 3836–3840). Acumulado: 3840 preguntas examinadas individualmente, 3762 verificadas (748 vigentes, 2728 corregidas y 286 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8283 sin revisar individualmente. Hay 3146 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 705 (IDs 3841–3845). Acumulado: 3845 preguntas examinadas individualmente, 3767 verificadas (750 vigentes, 2731 corregidas y 286 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8278 sin revisar individualmente. Hay 3151 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 705 — 3 de noviembre de 2026
+
+IDs 3841–3845 revisados individualmente con literatura/documentación técnica primaria; se cotejaron los materiales de ITIC Academy en Drive y los epígrafes de las convocatorias oficiales A1/A2. Los cinco originales completos se conservan en [cambios-lote-705.json](cambios-lote-705.json).
+
+- **3841 — DTW y reconocimiento del habla:** se precisa que Dynamic Time Warping alinea secuencias de rasgos acústicos con duraciones o ritmos distintos mediante programación dinámica; no elimina la alineación ni promete un vocabulario o precisión determinados. **Corregida.**
+- **3842 — forks de Bitcoin:** se acota la taxonomía a bifurcaciones de consenso de Bitcoin. BIP 99 distingue software fork y consensus fork, y trata soft/hard forks; “blended fork” no es una categoría estándar de esa taxonomía. **Corregida.**
+- **3843 — instancia:** se confirma que un objeto creado conforme a una clase es instancia de ella, según la JLS. **Vigente.**
+- **3844 — Proceso Unificado:** se actualiza la clave a inicio, elaboración, construcción y transición; análisis, diseño, implementación y pruebas son disciplinas/actividades iterativas, no las cuatro fases. **Corregida.**
+- **3845 — dominio ER:** se confirma que dominio es el conjunto de valores admisibles de un atributo; se distingue del atributo como propiedad. **Vigente.**
+
+Fuentes: Sakoe y Chiba, [artículo sobre DTW para reconocimiento de voz](https://doi.org/10.1109/TASSP.1978.1163055) y [trabajo sobre reconocimiento de habla continua](https://www.jstage.jst.go.jp/article/jasj/27/9/27_KJ00001452683/_article/-char/en); [Bitcoin Improvement Proposal 99](https://bitcoin.org/en/bip-99) y [Bitcoin Developer Guide, block chain](https://developer.bitcoin.org/devguide/block_chain.html); [Java Language Specification, §4](https://docs.oracle.com/javase/specs/jls/se15/html/jls-4.html); [IBM Rational Unified Process](https://www.ibm.com/docs/en/rational-clearquest/10.0.8?topic=settings-project-planning) y [Open University, Unified Process](https://www.open.edu/openlearn/science-maths-technology/approaches-software-development/content-section-3.3); Silberschatz, Korth y Sudarshan, *Database System Concepts*, cap. 7 ([material docente UNC Wilmington](https://people.uncw.edu/narayans/courses/csc455/sixthEdition/ch7.pdf)) y [University of Twente, atributo y dominio](https://ltb.itc.utwente.nl/498/concept/81788).
+
+Cotejo curricular: ITIC Academy [bloque 32, Inteligencia Artificial y Ciencia de Datos](https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk) (3841); [bloque 30, Tecnologías de Sistemas de Información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk) (3842); [bloque 38, análisis/diseño/construcción](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk) (3843–3844); [bloque 29, bases de datos](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk) (3845). Correspondencias contrastadas con [programa A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [programa A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3841 A1-70/A2-III-5; 3842 A1-85, sin tema A2 directo; 3843 A1-89/A2-III-9; 3844 A1-86/A1-88/A2-III-1/A2-III-2; 3845 A1-89/A2-III-4. Academy orienta el cotejo curricular, no sustituye las fuentes técnicas que sustentan las respuestas.
+
+
 
 ## Lote 704 — 3 de noviembre de 2026
 
