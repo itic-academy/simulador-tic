@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 3 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 691 (IDs 3771–3775). Acumulado: 3775 preguntas examinadas individualmente, 3697 verificadas (729 vigentes, 2693 corregidas y 275 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8348 sin revisar individualmente. Hay 3088 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 692 (IDs 3776–3780). Acumulado: 3780 preguntas examinadas individualmente, 3702 verificadas (731 vigentes, 2694 corregidas y 277 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8343 sin revisar individualmente. Hay 3089 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 692 — 3 de noviembre de 2026
+
+IDs 3776–3780 revisados individualmente; originales conservados en [cambios-lote-692.json](cambios-lote-692.json). Se actualiza una pregunta al marco vigente, se confirman dos y se conservan dos preguntas de planes ya concluidos como históricas:
+- **3776 — solicitudes abusivas:** se confirma como causa de inadmisión del artículo 18.1.e el carácter abusivo no justificado por la finalidad de transparencia. **Vigente.**
+- **3777 — eje Participación del IV Plan:** se confirma la pareja «Plan de mejora de la participación» y «Huella normativa» (compromisos 3 y 4). El plan abarcó 2020–2024. **Histórica.**
+- **3778 — publicación de resoluciones y memoria:** el Estatuto vigente del RD 615/2024 confirma publicación de resoluciones en la web institucional y el Portal; en el BOE se publica un resumen de la memoria anual, y su texto íntegro va a la web del Consejo. **Vigente.**
+- **3779 — Observatorio de Gobierno Abierto:** se confirma como compromiso 9 del eje Sensibilización y Formación del IV Plan 2020–2024. **Histórica.**
+- **3780 — naturaleza del CTBG:** se actualiza la respuesta a la definición del Estatuto vigente de 2024: autoridad administrativa independiente estatal, vinculada al Ministerio para la Transformación Digital y de la Función Pública. Se aclara que puede instar procedimientos sancionadores, pero no sanciona directamente a los empleados. **Corregida.**
+
+Fuentes primarias: BOE, [Ley 19/2013 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887), arts. 18 y 33–38; [RD 615/2024, Estatuto vigente del CTBG](https://www.boe.es/eli/es/rd/2024/07/02/615), arts. 1, 2 y 10, y [IV Plan de Gobierno Abierto de España 2020–2024](https://transparencia.gob.es/content/dam/transparencia_home/gobierno-abierto/ivpga/documentos/IVPlanGobiernoAbierto_ES_vdef.pdf).
+
+Cotejo curricular: ITIC Academy, [bloque 7 «Dirección pública, empleo, transparencia y unidad de mercado»](https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk); correspondencia cotejada con [temario A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, tema 25, y [temario A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, tema I-4. Clasificación: A1-25/A2-I-4. Academy se utiliza para cobertura y no como fuente de derecho.
+
+Comprobaciones: inventario de 12.123 preguntas sin errores; los candidatos automáticos a duplicado no equivalen a revisión individual. Verificador de 3780 cambios sin errores y 8343 preguntas pendientes de revisión individual; git diff --check limpio.
 
 ## Lote 691 — 3 de noviembre de 2026
 
