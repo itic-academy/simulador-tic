@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 3 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 695 (IDs 3791–3795). Acumulado: 3795 preguntas examinadas individualmente, 3717 verificadas (735 vigentes, 2702 corregidas y 280 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8328 sin revisar individualmente. Hay 3101 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 696 (IDs 3796–3800). Acumulado: 3800 preguntas examinadas individualmente, 3722 verificadas (738 vigentes, 2703 corregidas y 281 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8323 sin revisar individualmente. Hay 3106 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 696 — 3 de noviembre de 2026
+
+IDs 3796–3800 revisados individualmente; originales conservados en [cambios-lote-696.json](cambios-lote-696.json). Se corrige una pregunta, se marca una histórica y se confirman tres respuestas vigentes:
+- **3796 — estructura del CTBG:** la respuesta 0 reproduce el artículo 7 del RD 919/2014, pero ese estatuto quedó derogado por el RD 615/2024. El enunciado ahora identifica expresamente el marco histórico; se explica la estructura vigente del artículo 11. **Histórica.**
+- **3797 — Alto Patronazgo de las Reales Academias:** se acota la pregunta al inciso 62.j), porque la alternativa original sobre sanción/publicación de las leyes podía leerse como otra función regia (arts. 62.a y 91). Se conserva como única correcta la literalidad del inciso j). **Corregida.**
+- **3798 — moción de censura al Gobierno:** corresponde al Congreso de los Diputados, por mayoría absoluta y con candidato alternativo (art. 113). **Vigente.**
+- **3799 — atribuciones del Pleno de la Diputación:** el planteamiento de conflictos competenciales corresponde al Pleno (Ley 7/1985, art. 33.2.i). **Vigente.**
+- **3800 — Secretaría General del Consejo de la UE:** el TFUE establece una Secretaría General asistida por Secretario General nombrado por el Consejo (art. 240.2). **Vigente.**
+
+Fuentes primarias: [RD 919/2014, art. 7 (derogado)](https://www.boe.es/buscar/act.php?id=BOE-A-2014-11410) y [RD 615/2024 consolidado al 18-09-2026, art. 11](https://www.boe.es/buscar/act.php?id=BOE-A-2024-15944&p=20260918&tn=0); [Constitución Española consolidada al 20-05-2026](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520&tn=1), arts. 62, 63, 91 y 113; [Ley 7/1985 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392), art. 33.2.i; [TFUE, art. 240.2](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A12016E240).
+
+Cotejo con ITIC Academy: [bloque 01 «Constitución, organización del Estado y AGE», versión 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), que incluye Corona, Cortes, Gobierno y Administración local; [bloque 02 «La Unión Europea», versión 2026.2](https://drive.google.com/file/d/1KTz7CNz88u_4zyVLC2oYQBnmJRHIG7J7/view?usp=drivesdk), que desarrolla el tema A1-5 y declara que no aplica a A2; y [bloque 7, transparencia y buen gobierno](https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk). Clasificación cotejada con los programas de las convocatorias [A1 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3796 A1-25/A2-I-4; 3797 A1-1/A2-I-1; 3798 A1-1/A2-I-2/A2-I-3; 3799 A1-3 (sin epígrafe A2 equivalente); 3800 A1-5 (sin epígrafe A2 equivalente). El material Academy sirve para cotejo curricular, no como fuente normativa.
+
+Comprobaciones: inventario de 12.123 preguntas sin errores; los candidatos automáticos a duplicados no equivalen a revisión individual. Verificador de 3800 cambios sin errores y 8323 preguntas pendientes de revisión individual; `git diff --check` limpio.
 
 ## Lote 695 — 3 de noviembre de 2026
 
