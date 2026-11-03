@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 3 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 693 (IDs 3781–3785). Acumulado: 3785 preguntas examinadas individualmente, 3707 verificadas (733 vigentes, 2694 corregidas y 280 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8338 sin revisar individualmente. Hay 3092 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 694 (IDs 3786–3790). Acumulado: 3790 preguntas examinadas individualmente, 3712 verificadas (735 vigentes, 2697 corregidas y 280 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8333 sin revisar individualmente. Hay 3096 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 694 — 3 de noviembre de 2026
+
+IDs 3786–3790 revisados individualmente; originales conservados en [cambios-lote-694.json](cambios-lote-694.json). Se corrigen tres formulaciones y se confirman dos respuestas:
+- **3786 — límites del derecho de acceso:** se evita una premisa histórica ambigua y se confirma la opción que enumera perjuicios del artículo 14: defensa, seguridad nacional y funciones administrativas de inspección, entre otros límites. **Corregida.**
+- **3787 — principios técnicos del Portal:** accesibilidad, interoperabilidad y reutilización sí aparecen en el artículo 11; compatibilidad no. **Vigente.**
+- **3788 — plazo de resolución:** se corrige el plazo afirmado en la opción falsa: la regla general es un mes, ampliable por otro mes en los casos legales. **Corregida.**
+- **3789 — publicidad activa y acceso:** se precisa que el derecho de acceso no se limita a contenido ya publicado; también permite solicitar información pública aún no difundida. **Corregida.**
+- **3790 — motivación de la solicitud:** se confirma que no es obligatorio motivarla; sí se identifican solicitante, información y contacto en los términos del artículo 17. **Vigente.**
+
+Fuentes primarias: BOE, [Ley 19/2013 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887), arts. 11, 14, 17 y 20; Portal de Transparencia, [Derecho a Saber](https://transparencia.gob.es/derechos/Derecho_Saber), que distingue publicidad activa de solicitudes de información específica.
+
+Cotejo curricular: ITIC Academy, [bloque 7 «Dirección pública, empleo, transparencia y unidad de mercado»](https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk); correspondencia cotejada con [temario A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, tema 25, y [temario A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, tema I-4. Clasificación: A1-25/A2-I-4. Academy orienta cobertura, no es fuente normativa.
+
+Comprobaciones: inventario de 12.123 preguntas sin errores; los candidatos a duplicado automáticos no equivalen a revisión individual. Verificador de 3790 cambios sin errores y 8333 preguntas pendientes de revisión individual; git diff --check limpio.
 
 ## Lote 693 — 3 de noviembre de 2026
 
