@@ -1,0 +1,22 @@
+const fs=require('node:fs'),path=require('node:path'),dir=__dirname;
+const totals={vigente:0,corregida:0,historica:0,pendiente_fuente:0,pendiente_ambiguedad:0};let changed=0;
+for(const f of fs.readdirSync(dir).filter(f=>/^cambios-lote-\d+\.json$/.test(f)))for(const c of JSON.parse(fs.readFileSync(path.join(dir,f),'utf8')).cambios){totals[c.actualizada.revision.estado]++;if(['texto','opciones','respuesta_correcta'].some(k=>JSON.stringify(c.original[k])!==JSON.stringify(c.actualizada[k])))changed++;}
+const n=Object.values(totals).reduce((a,b)=>a+b,0),verified=totals.vigente+totals.corregida+totals.historica,pending=totals.pendiente_fuente+totals.pendiente_ambiguedad,left=12123-n;
+const summary=`Último lote secuencial aplicado: 683 (IDs 3731–3735). Acumulado: ${n} preguntas examinadas individualmente, ${verified} verificadas (${totals.vigente} vigentes, ${totals.corregida} corregidas y ${totals.historica} históricas) y ${pending} pendientes documentadas (${totals.pendiente_fuente} de fuente y ${totals.pendiente_ambiguedad} de ambigüedad); quedan ${left} sin revisar individualmente. Hay ${changed} preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.`;
+const section=`## Lote 683 — 3 de noviembre de 2026
+
+IDs 3731–3735 revisados individualmente; originales conservados en [cambios-lote-683.json](cambios-lote-683.json). Se corrigen las cinco preguntas:
+- **3731 — principios de datos abiertos:** se precisa que “gratuito” no figura como principio independiente de la lista de ocho de 2007 y se evita inferir que toda reutilización tenga que ser siempre sin tarifa: la referencia habla de coste cero o como máximo marginal. **Corregida.** A1-25/A2-I-4.
+- **3732 — entidades privadas y transparencia:** se acota el artículo 3.b: obligaciones de publicidad activa si reciben más de 100.000 euros de ayudas en un año, o si al menos el 40 % de sus ingresos son ayudas públicas y llegan a un mínimo de 5.000 euros. **Corregida.** A1-25/A2-I-4.
+- **3733 — infracciones de buen gobierno:** se nombran las tres materias de los arts. 27–29: conflicto de intereses, gestión económico-presupuestaria y disciplina; gestión de personal no es categoría autónoma. **Corregida.** A1-25/A2-I-4.
+- **3734 — Comisión de Transparencia:** se confirma la convocatoria autonómica al menos una vez al año y se corrige la denominación de la Autoridad Independiente de Responsabilidad Fiscal. **Corregida.** A1-25/A2-I-4.
+- **3735 — concreción de la solicitud:** el art. 19.2 concede diez días para concretarla; al no decir “naturales”, se computan hábiles conforme al art. 30.2 de la Ley 39/2015, con advertencia de desistimiento y suspensión. **Corregida.** A1-25/A2-I-4.
+
+Fuentes primarias: [principios de datos gubernamentales abiertos de 2007](https://opengovdata.org/); BOE, [texto consolidado de la Ley 19/2013](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887), arts. 3.b, 19.2, 27–29 y 36.2–36.4; BOE, [texto consolidado de la Ley 39/2015](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565), art. 30.2.
+
+Cotejo curricular: ITIC Academy, [bloque 7 «Dirección pública, empleo, transparencia y unidad de mercado»](https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk), cobertura directa A1-25; [bloque 11 «RISP, datos abiertos y transparencia»](https://drive.google.com/file/d/17B9a1yxMFgHCHEyVVBi0PG-cdCYABVvd/view?usp=drivesdk) solo como apoyo temático para datos abiertos (la academia lo etiqueta A1-31/A2-O9, no A2-I-4). Correspondencia oficial: A1, anexo I, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 25; A2, anexo IX, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), tema I-4; contrastado con [temario-oficial.json](temario-oficial.json) el 03-11-2026. La academia sirve como guía de cobertura, no como evidencia jurídica.
+
+Comprobaciones: inventario de 12.123 preguntas, cero errores (los grupos repetidos/candidatos automáticos no equivalen a revisión individual); verificador de ${n} registros sin errores y ${left} aún por revisar individualmente; git diff --check limpio.
+
+`;
+const file=path.join(dir,'README.md');let s=fs.readFileSync(file,'utf8');s=s.replace(/Último lote secuencial aplicado:[^\r\n]*/,summary);if(!s.includes('## Lote 683 —'))s=s.replace('## Lote 682 —',section+'## Lote 682 —');fs.writeFileSync(file,s);console.log(`README actualizado: ${n} revisadas; ${left} pendientes; ${changed} cambios sustantivos.`);
