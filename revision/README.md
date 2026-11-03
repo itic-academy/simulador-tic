@@ -1,6 +1,21 @@
 # Revisión del banco TIC — estado al 31 de octubre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 680 (IDs 3716–3720). Acumulado: 3720 preguntas examinadas individualmente, 3642 verificadas (712 vigentes, 2658 corregidas y 272 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8403 sin revisar individualmente. Hay 3045 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 681 (IDs 3721–3725). Acumulado: 3725 preguntas examinadas individualmente, 3647 verificadas (712 vigentes, 2662 corregidas y 273 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8398 sin revisar individualmente. Hay 3050 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 681 — 3 de noviembre de 2026
+
+IDs 3721–3725 revisados individualmente; sus originales se conservan en [cambios-lote-681.json](cambios-lote-681.json). Cuatro se corrigen y SETI@home se conserva como referencia histórica:
+- **3721 — clúster activo-activo:** se precisa que varios nodos procesan carga simultáneamente; el reparto depende del servicio y de la configuración. **Corregida.** A1-52/A2-II-1.
+- **3722 — MIPS y MFLOP/s:** se elimina la afirmación de que el pico MFLOP/s siempre supera MIPS. Miden cantidades distintas y no existe orden numérico universal; una instrucción vectorial puede producir múltiples operaciones. **Corregida.** A1-52/A2-II-1.
+- **3723 — mainframes actuales:** se separa mainframe de multiprocesador y se corrige que estén en desuso: se usan actualmente para cargas críticas, tanto batch como transacciones online. **Corregida.** A1-52/A2-II-1.
+- **3724 — SETI@home:** se identifica con precisión como computación distribuida voluntaria basada en BOINC, históricamente descrita como desktop grid; dejó de distribuir trabajo en 2020. **Histórica.** A1-52/A2-II-1.
+- **3725 — memoria distribuida:** se normaliza el enunciado sin la sigla ambigua DMMP; un clúster de nodos con memoria local y paso de mensajes es una implementación MIMD distribuida. **Corregida.** A1-52/A2-II-1.
+
+Fuentes técnicas: IBM, [tipos de clúster](https://www.ibm.com/docs/en/solution-assurance?topic=introduction-cluster-types) y [clústeres activo-activo en IBM MQ](https://www.ibm.com/docs/en/ibm-mq/9.4.x?topic=configurations-ha-clusters-aix-linux); Clark y Wilson, [IBM Systems Journal sobre sistemas vectoriales](https://bitsavers.trailing-edge.com/pdf/ibm/IBM_Systems_Journal/251/ibmsj2501G.pdf), y NERSC, [Roofline Performance Model](https://docs.nersc.gov/tools/performance/roofline/), para MIPS, MFLOP/s y medida del rendimiento; IBM, [batch y OLTP en mainframes](https://www.ibm.com/docs/en/zos-basic-skills?topic=today-mainframe-workloads-batch-online-transaction-processing) y [mainframes](https://www.ibm.com/think/topics/mainframe); SETI@home, [transición a BOINC](https://setiathome.berkeley.edu/transition.php), [informe de SETI@home](https://setiathome.berkeley.edu/SETI_Home_instrument_rev2_final.pdf) y [archivo de noticias](https://setiathome.berkeley.edu/old_news.php), para su carácter voluntario y cese del reparto en 2020; LLNL, [Introduction to Parallel Computing](https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial), y [MPI Forum](https://www.mpi-forum.org/docs/), para memoria distribuida y paso de mensajes.
+
+Cotejo curricular: ITIC Academy, [bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización»](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk), como contexto, no evidencia técnica. Correspondencia con A1, anexo I, tema A1-52, [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), y A2, anexo IX, tema A2-II-1, [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); cotejados con [temario-oficial.json](temario-oficial.json) el 03-11-2026.
+
+Comprobaciones: inventario de 12.123 preguntas, cero errores (13 grupos duplicados y 65 candidatos automáticos no equivalen a revisión individual); verificador de 3725 registros sin errores y 8398 preguntas aún por revisar; git diff --check limpio.
 
 ## Lote 680 — 3 de noviembre de 2026
 
