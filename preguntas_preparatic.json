@@ -192119,71 +192119,321 @@
       "id": 3866,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un edificio se desea implantar una red WiFi (IEEE 802.11) segura, de forma que el acceso a la misma NO esté basado en una clave compartida entre todos los usuarios. ¿Qué protocolos y estándares se utilizarán para proporcionar la autenticación y cifrado en dicha red WiFi?",
+      "texto": "Una WLAN debe autenticar a cada usuario de forma individual, sin una PSK común, y cifrar el tráfico. ¿Qué configuración de infraestructura ofrece esa autenticación?",
       "opciones": [
-        "WEP-TKIP",
-        "WPA-TKIP",
-        "WPA2-AES",
-        "WPS-AES"
+        "WPA2-Personal con una clave compartida AES-CCMP.",
+        "WPA2-Enterprise con IEEE 802.1X/EAP y cifrado AES-CCMP.",
+        "WPA-Personal con TKIP y una contraseña común.",
+        "WPS-PIN con AES, que sustituye el servidor de autenticación."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Una red que debe autenticar individualmente y no depender de una PSK común utiliza un modo Enterprise basado en IEEE 802.1X/EAP y un servicio de autenticación. Se especifica WPA2-Enterprise con AES-CCMP como combinación inequívoca; WPA3-Enterprise es la generación más reciente. WPS no sustituye autenticación empresarial y TKIP/WEP son opciones heredadas débiles. Cotejo curricular: el bloque 42 trata la familia Wi-Fi/802.11 (incluida la actualización Wi-Fi 7) y redes inalámbricas; A1-114 y A2-IV-11. La autenticación y protección de tráfico conectan con A1-125/A2-IV-12. La fuente técnica determina los requisitos 802.1X/EAP y AES.",
+      "clasificacion": {
+        "A1": [
+          "A1-114",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-11",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026): Wi-Fi 7/IEEE 802.11; la cuestión de autenticación empresarial se vincula además a seguridad de redes A1-125/A2-IV-12.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: el bloque 42 trata la familia Wi-Fi/802.11 (incluida la actualización Wi-Fi 7) y redes inalámbricas; A1-114 y A2-IV-11. La autenticación y protección de tráfico conectan con A1-125/A2-IV-12. La fuente técnica determina los requisitos 802.1X/EAP y AES."
+      },
+      "etiquetas": [
+        "Wi-Fi",
+        "WPA2-Enterprise",
+        "WPA3-Enterprise",
+        "IEEE 802.1X",
+        "EAP",
+        "AES",
+        "autenticación individual"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-04",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/wireless/a-deploy-8021X-wireless-access",
+            "referencia": "Microsoft Learn, despliegue de acceso inalámbrico autenticado 802.1X: WPA2-Enterprise usa 802.1X/EAP y servidor de autenticación; CCMP emplea AES; desaconseja WEP."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/extensible-authentication-protocol/configure-eap-profiles",
+            "referencia": "Microsoft Learn: configura EAP para perfiles WPA3-Enterprise; confirma que la autenticación empresarial usa EAP/802.1X."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/extensible-authentication-protocol/network-access",
+            "referencia": "Microsoft Learn: soporte de WPA3-Enterprise y modos empresariales, incluidas suites AES y los requisitos EAP de modo 192-bit."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026): Wi-Fi 7/IEEE 802.11; la cuestión de autenticación empresarial se vincula además a seguridad de redes A1-125/A2-IV-12. Documento curricular consultado para comprobar cobertura y contexto, no para sustituir las fuentes técnicas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, anexo I; tema(s) 114, 125."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX; tema(s) IV-11, IV-12."
+          }
+        ],
+        "observaciones": "Una red que debe autenticar individualmente y no depender de una PSK común utiliza un modo Enterprise basado en IEEE 802.1X/EAP y un servicio de autenticación. Se especifica WPA2-Enterprise con AES-CCMP como combinación inequívoca; WPA3-Enterprise es la generación más reciente. WPS no sustituye autenticación empresarial y TKIP/WEP son opciones heredadas débiles. Cotejo curricular: el bloque 42 trata la familia Wi-Fi/802.11 (incluida la actualización Wi-Fi 7) y redes inalámbricas; A1-114 y A2-IV-11. La autenticación y protección de tráfico conectan con A1-125/A2-IV-12. La fuente técnica determina los requisitos 802.1X/EAP y AES."
+      }
     },
     {
       "id": 3867,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál es el nombre del protocolo que permite obtener la dirección MAC que corresponde a una determinada dirección IP:",
+      "texto": "En una red IPv4 Ethernet local, ¿qué protocolo resuelve una dirección IPv4 de siguiente salto en su dirección MAC de enlace?",
       "opciones": [
-        "ICNMP",
-        "ARP",
-        "RHCP",
-        "PP2TP"
+        "ICMP.",
+        "ARP.",
+        "DHCP.",
+        "PPTP."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "ARP resuelve direcciones IPv4 a direcciones hardware de capa de enlace en un enlace local; no sirve para encontrar una dirección MAC global a través de redes enrutadas. Se corrigen erratas de los distractores y se acota el ámbito. Cotejo curricular: resolución ARP en IPv4/Ethernet cubre direccionamiento/protocolos A1-111/A2-II-8 y operación LAN A1-118/A2-IV-8. El contenido y alcance local se verifican con RFC 826.",
+      "clasificacion": {
+        "A1": [
+          "A1-111",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-II-8",
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026): direccionamiento y protocolos de LAN/IPv4; A1-111/A1-118 y A2-II-8/A2-IV-8.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: resolución ARP en IPv4/Ethernet cubre direccionamiento/protocolos A1-111/A2-II-8 y operación LAN A1-118/A2-IV-8. El contenido y alcance local se verifican con RFC 826."
+      },
+      "etiquetas": [
+        "ARP",
+        "IPv4",
+        "resolución de direcciones",
+        "dirección MAC",
+        "capa de enlace",
+        "RFC 826"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-04",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc826.html",
+            "referencia": "RFC 826, Address Resolution Protocol: protocolo para convertir una dirección de protocolo como IP en una dirección local/Ethernet de 48 bits para transmitir por la red local."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1009.html",
+            "referencia": "RFC 1009, §2.4: ARP realiza traducción dinámica entre direcciones hardware de la LAN y direcciones de Internet; los ARP requests usan broadcast local."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026): direccionamiento y protocolos de LAN/IPv4; A1-111/A1-118 y A2-II-8/A2-IV-8. Documento curricular consultado para comprobar cobertura y contexto, no para sustituir las fuentes técnicas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, anexo I; tema(s) 111, 118."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX; tema(s) II-8, IV-8."
+          }
+        ],
+        "observaciones": "ARP resuelve direcciones IPv4 a direcciones hardware de capa de enlace en un enlace local; no sirve para encontrar una dirección MAC global a través de redes enrutadas. Se corrigen erratas de los distractores y se acota el ámbito. Cotejo curricular: resolución ARP en IPv4/Ethernet cubre direccionamiento/protocolos A1-111/A2-II-8 y operación LAN A1-118/A2-IV-8. El contenido y alcance local se verifican con RFC 826."
+      }
     },
     {
       "id": 3868,
       "bloque": 0,
       "tema": 0,
-      "texto": "Por B.E.R. entendemos:",
+      "texto": "En el contexto de valores codificados con ASN.1, ¿qué significa BER?",
       "opciones": [
-        "Basic Encoding Rules, reglas de codificación básicas usadas en la definición de datos mediante ASN.1",
-        "Binary Error Rate, tasa de error binaria que define la adecuación de los canales de transmisión",
-        "Las 2 respuestas anteriores son correctas",
-        "Ninguna de las respuestas anteriores es correcta"
+        "Basic Encoding Rules, reglas básicas de codificación definidas para valores ASN.1.",
+        "Bit Error Rate, medida de errores de bits en una transmisión.",
+        "Las dos respuestas anteriores son correctas en este contexto ASN.1.",
+        "Ninguna de las anteriores."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "El acrónimo BER tiene más de un significado técnico: en ASN.1 son Basic Encoding Rules; en comunicaciones también se emplea para bit error rate/ratio. Como el original consideraba válidas ambas acepciones a la vez y no daba contexto, se delimita al contexto ASN.1 y a ITU-T X.690. Cotejo curricular: las reglas ASN.1 BER se encuadran en normalización/especificación de protocolos (A1-50/A1-111, A2-II-8). Se acota al ASN.1 porque BER también tiene otro significado en medición de errores.",
+      "clasificacion": {
+        "A1": [
+          "A1-50",
+          "A1-111"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026): estándares de protocolos/codificación relacionados con las redes; A1-50/A1-111 y A2-II-8.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: las reglas ASN.1 BER se encuadran en normalización/especificación de protocolos (A1-50/A1-111, A2-II-8). Se acota al ASN.1 porque BER también tiene otro significado en medición de errores."
+      },
+      "etiquetas": [
+        "ASN.1",
+        "BER",
+        "Basic Encoding Rules",
+        "ITU-T X.690",
+        "codificación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-04",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-X.690-202102-I/en",
+            "referencia": "ITU-T X.690 (02/2021), norma ASN.1: especifica Basic Encoding Rules (BER), Canonical Encoding Rules (CER) y Distinguished Encoding Rules (DER)."
+          },
+          {
+            "url": "https://www.itu.int/en/ITU-T/asn1/Pages/asn1_project.aspx",
+            "referencia": "Proyecto ASN.1 de ITU-T: identifica BER como Basic Encoding Rules iniciales para codificar valores definidos mediante ASN.1."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026): estándares de protocolos/codificación relacionados con las redes; A1-50/A1-111 y A2-II-8. Documento curricular consultado para comprobar cobertura y contexto, no para sustituir las fuentes técnicas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, anexo I; tema(s) 50, 111."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX; tema(s) II-8."
+          }
+        ],
+        "observaciones": "El acrónimo BER tiene más de un significado técnico: en ASN.1 son Basic Encoding Rules; en comunicaciones también se emplea para bit error rate/ratio. Como el original consideraba válidas ambas acepciones a la vez y no daba contexto, se delimita al contexto ASN.1 y a ITU-T X.690. Cotejo curricular: las reglas ASN.1 BER se encuadran en normalización/especificación de protocolos (A1-50/A1-111, A2-II-8). Se acota al ASN.1 porque BER también tiene otro significado en medición de errores."
+      }
     },
     {
       "id": 3869,
       "bloque": 0,
       "tema": 0,
-      "texto": "DVB/DAVIC y DOCSIS son estándares de:",
+      "texto": "¿Qué familia de especificaciones define la interfaz de datos de los cable módems que operan sobre redes híbridas de fibra y coaxial (HFC) o redes coaxiales?",
       "opciones": [
-        "Tecnología inalámbrica",
-        "Módems de cable",
-        "Tecnología xDSL",
-        "Grabación cd CDROMs"
+        "IEEE 802.11 (WLAN).",
+        "DOCSIS (Data Over Cable Service Interface Specification).",
+        "xDSL, normalizado para el bucle local telefónico de par de cobre.",
+        "IEEE 802.3, Ethernet sobre cableado LAN."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "DOCSIS es la familia de especificaciones de datos por cable/módem sobre redes HFC o coaxiales. El enunciado original agrupaba DOCSIS con DVB/DAVIC como si todos fueran estándares idénticos de módem: DVB cubre difusión de televisión digital y DAVIC interactividad, así que se pregunta de forma precisa por DOCSIS. Cotejo curricular: el bloque de Redes estudia CATV/HFC y DOCSIS, con observación de la transición de HFC a FTTH en España. Correspondencia A1-121 (telecomunicaciones por cable), A1-108 y A2-IV-7 (medios de transmisión). El estándar DOCSIS sigue existiendo aunque su despliegue regional evolucione.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-121"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026): CATV/HFC y DOCSIS 4.0, medios de cable; A1-108/A1-121 y A2-IV-7.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: el bloque de Redes estudia CATV/HFC y DOCSIS, con observación de la transición de HFC a FTTH en España. Correspondencia A1-121 (telecomunicaciones por cable), A1-108 y A2-IV-7 (medios de transmisión). El estándar DOCSIS sigue existiendo aunque su despliegue regional evolucione."
+      },
+      "etiquetas": [
+        "DOCSIS",
+        "cable módem",
+        "HFC",
+        "CATV",
+        "DVB",
+        "DAVIC",
+        "datos sobre cable"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-04",
+        "fuentes": [
+          {
+            "url": "https://www.cablelabs.com/technologies/docsis-4-0-technology",
+            "referencia": "CableLabs: DOCSIS 4.0 habilita servicios de banda ancha de nueva generación sobre redes HFC (Hybrid Fiber Coax)."
+          },
+          {
+            "url": "https://account.cablelabs.com/server/alfresco/8e252054-2595-48f2-b216-bd9566c24d93",
+            "referencia": "CableLabs, CM-CPE Interface Specification DOCSIS: define la interfaz de un cable módem y se aplica a sistemas DOCSIS sobre HFC y arquitecturas coaxiales."
+          },
+          {
+            "url": "https://dvb.org/specifications/",
+            "referencia": "DVB Project, biblioteca de especificaciones: DVB mantiene estándares de TV digital por cable y DAVIC 1.5 figura como especificación de interactividad; estos nombres no deben tratarse como sinónimos exactos de DOCSIS."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026): CATV/HFC y DOCSIS 4.0, medios de cable; A1-108/A1-121 y A2-IV-7. Documento curricular consultado para comprobar cobertura y contexto, no para sustituir las fuentes técnicas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, anexo I; tema(s) 108, 121."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX; tema(s) IV-7."
+          }
+        ],
+        "observaciones": "DOCSIS es la familia de especificaciones de datos por cable/módem sobre redes HFC o coaxiales. El enunciado original agrupaba DOCSIS con DVB/DAVIC como si todos fueran estándares idénticos de módem: DVB cubre difusión de televisión digital y DAVIC interactividad, así que se pregunta de forma precisa por DOCSIS. Cotejo curricular: el bloque de Redes estudia CATV/HFC y DOCSIS, con observación de la transición de HFC a FTTH en España. Correspondencia A1-121 (telecomunicaciones por cable), A1-108 y A2-IV-7 (medios de transmisión). El estándar DOCSIS sigue existiendo aunque su despliegue regional evolucione."
+      }
     },
     {
       "id": 3870,
       "bloque": 0,
       "tema": 0,
-      "texto": "La mayoría de las redes HFC actuales, trabajan en 3ª ventana debido a:",
+      "texto": "En una red HFC/CATV que distribuye señal óptica en torno a 1550 nm (tercera ventana), ¿qué capacidad técnica favorece el uso de esa ventana en enlaces con varios nodos?",
       "opciones": [
-        "La fibra es mucho más barata.",
-        "Permite utilizar amplificación óptica tipo EDFA.",
-        "Los amplificadores ópticos son más baratos.",
-        "Todas son ciertas."
+        "La fibra óptica resulta siempre más barata a 1550 nm.",
+        "La señal puede amplificarse ópticamente con equipos EDFA para distribuirla y ampliar el alcance.",
+        "Los amplificadores ópticos de 1550 nm son siempre más baratos que los de otras ventanas.",
+        "Todas las respuestas anteriores."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La tercera ventana se refiere al entorno de 1550 nm. En una parte de las arquitecturas HFC/CATV se utiliza porque admite amplificación óptica EDFA para distribuir una señal óptica a varios nodos y ampliar alcance; no porque la fibra sea más barata ni porque los amplificadores EDFA sean necesariamente más baratos. Se sustituye «la mayoría» por una pregunta de diseño concreta. Cotejo curricular: el bloque explica explícitamente la banda de 1550 nm (tercera ventana), su baja atenuación y el uso de amplificadores EDFA, además de CATV/HFC. Correspondencia A1-108/A1-121 y A2-IV-7. La pregunta queda formulada como criterio de diseño, sin generalizar que la mayoría de despliegues actuales sean HFC.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-121"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026): HFC, fibra, tercera ventana 1550 nm y EDFA en redes CATV; A1-108/A1-121 y A2-IV-7.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: el bloque explica explícitamente la banda de 1550 nm (tercera ventana), su baja atenuación y el uso de amplificadores EDFA, además de CATV/HFC. Correspondencia A1-108/A1-121 y A2-IV-7. La pregunta queda formulada como criterio de diseño, sin generalizar que la mayoría de despliegues actuales sean HFC."
+      },
+      "etiquetas": [
+        "HFC",
+        "CATV",
+        "1550 nm",
+        "tercera ventana",
+        "EDFA",
+        "amplificador óptico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-04",
+        "fuentes": [
+          {
+            "url": "https://www.astro-kom.de/en/products/126/details/759/ohpa-16200-ac-en",
+            "referencia": "Fabricante ASTRO, amplificador EDFA de alta potencia para redes HFC/FTTH: especifica longitud de onda óptica 1550 nm y tecnología dopada."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.652-202408-I/en",
+            "referencia": "ITU-T G.652 (08/2024): fibra monomodo apta para las regiones 1310 y 1550 nm y especificaciones de atenuación."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.681-199610-S%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T G.681: características funcionales de sistemas de línea con amplificadores ópticos, con región de 1550 nm para amplificación dopada con erbio."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026.1 (29-09-2026): HFC, fibra, tercera ventana 1550 nm y EDFA en redes CATV; A1-108/A1-121 y A2-IV-7. Documento curricular consultado para comprobar cobertura y contexto, no para sustituir las fuentes técnicas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, anexo I; tema(s) 108, 121."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX; tema(s) IV-7."
+          }
+        ],
+        "observaciones": "La tercera ventana se refiere al entorno de 1550 nm. En una parte de las arquitecturas HFC/CATV se utiliza porque admite amplificación óptica EDFA para distribuir una señal óptica a varios nodos y ampliar alcance; no porque la fibra sea más barata ni porque los amplificadores EDFA sean necesariamente más baratos. Se sustituye «la mayoría» por una pregunta de diseño concreta. Cotejo curricular: el bloque explica explícitamente la banda de 1550 nm (tercera ventana), su baja atenuación y el uso de amplificadores EDFA, además de CATV/HFC. Correspondencia A1-108/A1-121 y A2-IV-7. La pregunta queda formulada como criterio de diseño, sin generalizar que la mayoría de despliegues actuales sean HFC."
+      }
     },
     {
       "id": 3871,
