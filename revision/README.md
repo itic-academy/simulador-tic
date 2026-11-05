@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 714 (IDs 3886–3890). Acumulado: 3890 preguntas examinadas individualmente, 3812 verificadas (759 vigentes, 2766 corregidas y 287 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8233 sin revisar individualmente. Hay 3188 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 715 (IDs 3891–3895). Acumulado: 3895 preguntas examinadas individualmente, 3817 verificadas (763 vigentes, 2767 corregidas y 287 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8228 sin revisar individualmente. Hay 3189 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 715 — 5 de noviembre de 2026
+
+IDs 3891–3895 contrastados con textos consolidados BOE, RGPD en EUR-Lex y fuentes institucionales de protección de datos; se cotejaron los bloques 03, 06, 08 y 49 de ITIC Academy en Drive y los programas oficiales A1/A2. Se preservan los originales en [cambios-lote-715.json](cambios-lote-715.json).
+
+- **3891 — aviso de puesta a disposición:** el aviso puede enviarse al dispositivo, al correo o a ambos; su omisión no invalida la notificación. El interesado responde de mantener acceso y de notificar la pérdida de operatividad; si no lo hace, la Administración no responde por avisos enviados a esos datos. **Vigente.**
+- **3892 — conservación de datos de comunicaciones:** el art. 10.1.a de la Ley 25/2007 clasifica como muy grave la ausencia total de conservación; la falta reiterada/sistemática, la retención por menos tiempo y el incumplimiento deliberado de seguridad se clasifican como graves. **Vigente.**
+- **3893 — título de Ley 11/2013:** se confirma que es la norma de apoyo al emprendedor y estímulo del crecimiento y la creación de empleo. **Vigente.**
+- **3894 — garantías RGPD para transferencias:** se especifica «cláusulas ad hoc» sujetas a autorización en el art. 46.3.a y se las distingue de las cláusulas tipo del art. 46.2, que pueden ofrecer garantías sin autorización individual. **Corregida.**
+- **3895 — dato personal:** el art. 4.1 RGPD comprende información sobre una persona física identificada o identificable, directa o indirectamente. **Vigente.**
+
+Fuentes primarias: [RD 203/2021, art. 43, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2021-5032); [Ley 25/2007, art. 10, BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2007-18243); [Ley 11/2013, BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2013-8187); [Reglamento (UE) 2016/679, arts. 4.1 y 46, EUR-Lex](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32016R0679); [Comité Europeo de Protección de Datos, procedimiento de aprobación de cláusulas ad hoc/tipo (2026)](https://www.edpb.europa.eu/system/files/2026-01/edpb_document_procedure_approvaladhocccandscc_transfers_en.pdf).
+
+Cotejo académico: [bloque 03, Actuación Administrativa, ITIC Academy 2026](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk): notificación electrónica/RD 203 y la diferencia entre aviso y notificación (3891). [Bloque 49, Normas reguladoras de las telecomunicaciones, 2026](https://drive.google.com/file/d/1yNoGRQ6orxdHGYBQ-RW4lFzaexftWnIm/view?usp=drivesdk): Ley 25/2007 y conservación de datos (3892). [Bloque 06, Economía, Sociedad, Empleo y Transformación Digital, versión 2026.2](https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk): emprendimiento/empleo, sin referencia literal a Ley 11/2013 (3893). [Bloque 08, Protección de Datos, 2026](https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk): definición de dato personal y transferencias internacionales, cláusulas tipo/ad hoc (3894–3895). Cobertura académica cotejada, no usada como autoridad legal. Correspondencia con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3891 A1-8/A1-22/A2-I-9; 3892 A1-27/A2-I-7; 3893 A1-26 (sin equivalente A2); 3894–3895 A1-27/A2-I-7.
+
+Comprobaciones: inventario y verificador ejecutados tras registrar el lote; resumen superior actualizado con sus resultados.
 
 ## Lote 714 — 5 de noviembre de 2026
 
