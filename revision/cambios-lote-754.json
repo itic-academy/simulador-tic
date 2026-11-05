@@ -1,0 +1,371 @@
+{
+  "fecha": "2026-11-05",
+  "alcance": "IDs 4091–4095; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 4091,
+      "original": {
+        "id": 4091,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El operador de agregación AVG (nombre_atributo) sirve para:",
+        "opciones": [
+          "Calcular la media de cualquier atributo.",
+          "Calcular la media de un atributo numérico.",
+          "Calcular la suma de los valores de un atributo.",
+          "Contar el número de ocurrencias de un atributo."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4091,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En SQL relacional, cuando expr es una expresión numérica, ¿qué calcula AVG(expr) sobre las filas del grupo?",
+        "opciones": [
+          "La media aritmética de los valores no nulos de expr.",
+          "La media aritmética de cualquier tipo de atributo, aunque no sea convertible a número.",
+          "La suma de los valores de expr.",
+          "El número de filas del grupo, incluidas las que tienen expr nulo."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se acota a una expresión numérica para evitar el absoluto del original: AVG calcula la media aritmética de sus valores no nulos; no suma ni cuenta. Algunos SGBD permiten conversión implícita o intervalos, por lo que “cualquier atributo” no es correcto.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 SQL y funciones de agregación; AVG sobre expresiones numéricas. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+          "estado": "revisada",
+          "nota": "Cotejo temático curricular; la fuente de autoridad para las reglas y definiciones técnicas es el estándar o documentación primaria citada en la revisión."
+        },
+        "etiquetas": [
+          "SQL",
+          "AVG",
+          "funciones de agregación",
+          "expresión numérica"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/AVG.html",
+              "referencia": "Oracle AI Database 26 SQL Language Reference, AVG: devuelve la media de la expresión; en SQL portable del tema relacional, la expresión de entrada es numérica (Oracle también convierte implícitamente ciertos tipos e implementa intervalos)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del bloque/epígrafe curricular pertinente."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+            }
+          ],
+          "observaciones": "Se acota a una expresión numérica para evitar el absoluto del original: AVG calcula la media aritmética de sus valores no nulos; no suma ni cuenta. Algunos SGBD permiten conversión implícita o intervalos, por lo que “cualquier atributo” no es correcto. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 SQL y funciones de agregación; AVG sobre expresiones numéricas. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+        }
+      }
+    },
+    {
+      "id": 4092,
+      "original": {
+        "id": 4092,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale cuál de los siguientes controles es el más crítico sobre las actividades de administración de bases de datos:",
+        "opciones": [
+          "Aprobación de las actividades de Administrador de bases de datos",
+          "Segregación de tareas",
+          "Revisión de logs de acceso y actividades",
+          "Revisión del uso de las herramientas del Sistema Gestor de Base de Datos (SGBD)"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4092,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según NIST SP 800-53 Rev. 5, control AC-5, ¿qué control divide las funciones y asigna autorizaciones para reducir el riesgo de abuso de privilegios por una sola persona?",
+        "opciones": [
+          "Aprobación de cada actividad administrativa, como control único suficiente.",
+          "Segregación de funciones entre personas o roles.",
+          "Revisión de los registros de acceso y actividad.",
+          "Revisión del uso de herramientas del SGBD."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se elimina la afirmación subjetiva “el más crítico” y se vincula a un marco comprobable: cuando se quiere prevenir que una sola persona pueda concentrar funciones incompatibles de administración, el control AC-5 es segregación de funciones. No se presenta como sustituto de revisar registros, aprobar cambios o supervisar privilegios: esos controles también son necesarios según riesgo.",
+        "clasificacion": {
+          "A1": [
+            "A1-34",
+            "A1-38"
+          ],
+          "A2": [
+            "A2-II-11"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30/09/2026); Bloque 48, §6 (control de accesos, autorización y trazabilidad) da contexto de seguridad; la convocatoria lo encaja específicamente en organización/auditoría informática. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 34, 38), y A2 GSI 2025, anexo IX (tema(s) II-11).",
+          "estado": "revisada",
+          "nota": "Cotejo temático curricular; la fuente de autoridad para las reglas y definiciones técnicas es el estándar o documentación primaria citada en la revisión."
+        },
+        "etiquetas": [
+          "auditoría informática",
+          "segregación de funciones",
+          "control de acceso",
+          "administración SGBD",
+          "NIST AC-5"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/CSRC/media/Projects/risk-management/800-53%20Downloads/800-53r5/SP_800-53_v5_1-derived-OSCAL.pdf",
+              "referencia": "NIST SP 800-53 Rev. 5.1, control AC-5 Separation of Duties: identificar/documentar funciones que requieren separación y definir autorizaciones de acceso que la soporten; reduce el riesgo de abuso de privilegios sin colusión."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30/09/2026); cotejo directo del bloque/epígrafe curricular pertinente."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 34, 38."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-11."
+            }
+          ],
+          "observaciones": "Se elimina la afirmación subjetiva “el más crítico” y se vincula a un marco comprobable: cuando se quiere prevenir que una sola persona pueda concentrar funciones incompatibles de administración, el control AC-5 es segregación de funciones. No se presenta como sustituto de revisar registros, aprobar cambios o supervisar privilegios: esos controles también son necesarios según riesgo. ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1 (30/09/2026); Bloque 48, §6 (control de accesos, autorización y trazabilidad) da contexto de seguridad; la convocatoria lo encaja específicamente en organización/auditoría informática. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 34, 38), y A2 GSI 2025, anexo IX (tema(s) II-11)."
+        }
+      }
+    },
+    {
+      "id": 4093,
+      "original": {
+        "id": 4093,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Refiriéndonos al concepto de claves foráneas en un modelo relacional, indique cuál de las siguientes opciones NO es correcta:",
+        "opciones": [
+          "La clave foránea puede hacer referencia a la clave primaria de la misma tabla.",
+          "La clave foránea puede tener valores nulos.",
+          "La clave foránea puede tener valores duplicados.",
+          "La clave foránea puede estar formada por una parte de la clave primaria a la que hace referencia."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4093,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto de las claves foráneas SQL, señale la afirmación que no es correcta:",
+        "opciones": [
+          "Una clave foránea puede referenciar una clave de la misma tabla (autorreferencia).",
+          "Una clave foránea puede admitir NULL si las columnas no están declaradas NOT NULL y la regla referencial lo permite.",
+          "Los valores de una clave foránea pueden repetirse en varias filas.",
+          "Una clave foránea puede referenciar cualquier subconjunto de una clave primaria compuesta, aunque las columnas referenciadas no sean únicas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se acota la opción falsa: una FK puede ser autorreferente, nullable si no hay NOT NULL aplicable y contener duplicados. No puede referenciar una parte no única de una PK compuesta; las columnas referenciadas deben constituir una PK o clave UNIQUE/candidata por sí mismas.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.3 integridad referencial y §5.13 restricciones y acciones referenciales SQL. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+          "estado": "revisada",
+          "nota": "Cotejo temático curricular; la fuente de autoridad para las reglas y definiciones técnicas es el estándar o documentación primaria citada en la revisión."
+        },
+        "etiquetas": [
+          "modelo relacional",
+          "clave foránea",
+          "clave candidata",
+          "integridad referencial",
+          "clave compuesta"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://courses.cms.caltech.edu/cs123/sql99std/ansi-iso-9075-2-1999.pdf",
+              "referencia": "ISO/IEC 9075-2:1999 SQL/Foundation, §4.17.2: las columnas referenciadas de una restricción referencial deben corresponder a las columnas únicas de una restricción UNIQUE o PRIMARY KEY de la tabla referenciada."
+            },
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/adfns/data-integrity.html",
+              "referencia": "Oracle AI Database 26, Maintaining Data Integrity: una FK debe referenciar una clave primaria o única habilitada; el motor comprueba que la lista de columnas referencia esa clave."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del bloque/epígrafe curricular pertinente."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+            }
+          ],
+          "observaciones": "Se acota la opción falsa: una FK puede ser autorreferente, nullable si no hay NOT NULL aplicable y contener duplicados. No puede referenciar una parte no única de una PK compuesta; las columnas referenciadas deben constituir una PK o clave UNIQUE/candidata por sí mismas. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.3 integridad referencial y §5.13 restricciones y acciones referenciales SQL. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+        }
+      }
+    },
+    {
+      "id": 4094,
+      "original": {
+        "id": 4094,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con la teoría de la normalización, que nos permite asegurar que un esquema relacional cumple unas ciertas propiedades, indicar cuál de las siguientes corresponde a la definición de segunda forma normal:",
+        "opciones": [
+          "Si y sólo si todo determinante es una clave candidata",
+          "Si no existe ningún atributo no principal que dependa transitivamente de alguna de las claves de relación",
+          "Cada atributo no principal tiene dependencia funcional completa respecto de cada una de las claves",
+          "Si no existen grupos repetitivos"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4094,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es la definición de segunda forma normal (2FN) de una relación?",
+        "opciones": [
+          "Todo determinante es una clave candidata; esta es la condición de BCNF.",
+          "Ningún atributo no primo depende transitivamente de una clave candidata; esta es una condición de 3FN.",
+          "La relación está en 1FN y cada atributo no primo depende funcionalmente de cada clave candidata completa, no de una parte propia.",
+          "No existen grupos repetitivos; esta es la condición de 1FN."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se expresa 2FN de forma formal y se distingue de 1FN (grupos repetitivos) y 3FN (dependencia no transitiva): la relación debe estar en 1FN y cada atributo no primo depender funcionalmente de cada clave candidata completa, no de un subconjunto propio.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-III-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.2 cubren dependencias funcionales y formas normales. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4).",
+          "estado": "revisada",
+          "nota": "Cotejo temático curricular; la fuente de autoridad para las reglas y definiciones técnicas es el estándar o documentación primaria citada en la revisión."
+        },
+        "etiquetas": [
+          "modelo relacional",
+          "normalización",
+          "2FN",
+          "dependencia funcional completa",
+          "atributo no primo",
+          "clave candidata"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf",
+              "referencia": "E. F. Codd, Further Normalization of the Data Base Relational Model (1971), §2.5: 2FN requiere 1FN y dependencia funcional completa de todo atributo no primo respecto de cada clave candidata."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del bloque/epígrafe curricular pertinente."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+            }
+          ],
+          "observaciones": "Se expresa 2FN de forma formal y se distingue de 1FN (grupos repetitivos) y 3FN (dependencia no transitiva): la relación debe estar en 1FN y cada atributo no primo depender funcionalmente de cada clave candidata completa, no de un subconjunto propio. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.2 cubren dependencias funcionales y formas normales. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4)."
+        }
+      }
+    },
+    {
+      "id": 4095,
+      "original": {
+        "id": 4095,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo relacional, se dice que un atributo A tiene una dependencia funcional completa de los atributos B y C si A depende funcionalmente:",
+        "opciones": [
+          "de B y también de C.",
+          "de B o de C.",
+          "de B o de C pero no de ambos.",
+          "del conjunto de ambos pero de ninguno de ellos por separado."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4095,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un atributo A depende funcionalmente de forma completa del conjunto de atributos {B,C} cuando:",
+        "opciones": [
+          "A depende de B por separado y también de C por separado.",
+          "A depende de B o de C, indistintamente.",
+          "A depende de B o de C, pero no del conjunto de ambos.",
+          "A depende del conjunto {B,C}, pero no depende funcionalmente de ningún subconjunto propio (ni de B ni de C por separado)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se mantiene la opción del conjunto {B,C} pero se precisa la definición: A depende funcionalmente de B y C conjuntamente, y de ningún subconjunto propio (en este caso, ni B por separado ni C por separado). No basta con que A dependa de ambos individualmente.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-III-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §3.1 cubre dependencias funcionales y dependencia completa; §3.2 las relaciona con 2FN. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4).",
+          "estado": "revisada",
+          "nota": "Cotejo temático curricular; la fuente de autoridad para las reglas y definiciones técnicas es el estándar o documentación primaria citada en la revisión."
+        },
+        "etiquetas": [
+          "modelo relacional",
+          "dependencia funcional",
+          "dependencia completa",
+          "clave compuesta",
+          "normalización"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf",
+              "referencia": "E. F. Codd, Further Normalization (1971), §1.4: dependencia funcional plena significa que el atributo depende del conjunto completo y no depende de ningún subconjunto propio de ese determinante."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del bloque/epígrafe curricular pertinente."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+            }
+          ],
+          "observaciones": "Se mantiene la opción del conjunto {B,C} pero se precisa la definición: A depende funcionalmente de B y C conjuntamente, y de ningún subconjunto propio (en este caso, ni B por separado ni C por separado). No basta con que A dependa de ambos individualmente. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §3.1 cubre dependencias funcionales y dependencia completa; §3.2 las relaciona con 2FN. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4)."
+        }
+      }
+    }
+  ]
+}

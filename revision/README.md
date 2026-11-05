@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 753 (IDs 4086–4090). Acumulado: 4085 preguntas examinadas individualmente, 4005 verificadas (774 vigentes, 2914 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8038 sin revisar individualmente. Hay 3373 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 754 (IDs 4091–4095). Acumulado: 4090 preguntas examinadas individualmente, 4010 verificadas (774 vigentes, 2919 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8033 sin revisar individualmente. Hay 3378 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 754 — 5 de noviembre de 2026
+
+IDs 4091–4095 revisados individualmente; se preservan las preguntas de origen en [cambios-lote-754.json](cambios-lote-754.json).
+
+- **4091 — AVG:** se limita el supuesto a una expresión numérica; AVG calcula la media y omite nulos. Se evita afirmar que admita cualquier tipo sin conversión. **Corregida.**
+- **4092 — control administrativo:** se elimina el absoluto “más crítico” y se pregunta por NIST SP 800-53 AC-5: segregación de funciones, que reduce el abuso de privilegios sin colusión. Se reconoce que aprobación, revisión de logs y control de herramientas complementan la segregación según el riesgo. **Corregida.**
+- **4093 — clave foránea:** se precisa que las columnas referenciadas deben formar una clave primaria o UNIQUE; no cabe apuntar a un subconjunto no único de una PK compuesta. Se conserva que las FKs pueden ser autorreferentes, nulas o duplicadas según restricciones. **Corregida.**
+- **4094 — 2FN:** se formula la condición sobre 1FN, todos los atributos no primos y cada clave candidata; se separa de 1FN, 3FN y BCNF. **Corregida.**
+- **4095 — dependencia completa:** A depende de {B,C} conjuntamente y de ningún subconjunto propio; se evita confundir dependencia conjunta con dependencia independiente de B y C. **Corregida.**
+
+Fuentes: [Oracle AI Database 26, AVG](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/AVG.html); [NIST SP 800-53 Rev. 5.1, AC-5](https://csrc.nist.gov/CSRC/media/Projects/risk-management/800-53%20Downloads/800-53r5/SP_800-53_v5_1-derived-OSCAL.pdf); [ISO/IEC 9075-2:1999, §4.17.2](https://courses.cms.caltech.edu/cs123/sql99std/ansi-iso-9075-2-1999.pdf) y [Oracle AI Database 26, integridad referencial](https://docs.oracle.com/en/database/oracle/oracle-database/26/adfns/data-integrity.html); E. F. Codd, [Further Normalization of the Data Base Relational Model (1971)](https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf).
+
+Cotejo curricular directo: [bloque 29 «Bases de datos, SQL y modelado de datos», ITIC Academy, versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), consultado en Drive: §5 (SQL/funciones), §§2.3 y 5.13 (integridad y FKs), §§3.1–3.2 (dependencias/2FN). Para 4092 se cotejó [bloque 48 «Seguridad en redes y en el nivel de aplicación», ITIC Academy](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk), §6 control de accesos/autorización. Correspondencia oficial contrastada con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938): 4091 y 4093–4095 tema 64; 4092 temas 34 y 38. En [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4091/4093 II-5, 4092 II-11, 4094/4095 III-4. Academy se emplea para encaje temático; NIST/ISO/Codd y la documentación Oracle fundamentan las respuestas.
+
+Comprobaciones registradas: Drive consultado directamente para los bloques 29 y 48 y correspondencia A1/A2 cotejada con los anexos oficiales. No se registra como verificación automática el conteo de inventario: cada una de estas cinco preguntas se contrastó individualmente con sus fuentes. Se ejecutaron inventario, verificador y `git diff --check`.
 
 ## Lote 753 — 5 de noviembre de 2026
 
