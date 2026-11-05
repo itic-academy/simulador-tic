@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 728 (IDs 3961–3965). Acumulado: 3960 preguntas examinadas individualmente, 3882 verificadas (767 vigentes, 2817 corregidas y 298 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8163 sin revisar individualmente. Hay 3253 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 729 (IDs 3966–3970). Acumulado: 3965 preguntas examinadas individualmente, 3886 verificadas (767 vigentes, 2819 corregidas y 300 históricas) y 79 pendientes documentadas (36 de fuente y 43 de ambigüedad); quedan 8158 sin revisar individualmente. Hay 3257 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 729 — 5 de noviembre de 2026
+
+IDs 3966–3970 revisados individualmente; originales preservados en [cambios-lote-729.json](cambios-lote-729.json).
+
+- **3966 — ordenación de costes:** las fuentes consultadas no respaldan un ranking universal y el enunciado no identifica el modelo/muestra; se conserva sin marcarla verificada hasta localizar la referencia. **Pendiente de ambigüedad/fuente.**
+- **3967 — sistemas legacy:** se corrige la definición: sistema antiguo/heredado que sigue en uso; no significa que esté abandonado. **Corregida.**
+- **3968 — reingeniería:** lenguaje/plataforma obsoletos, documentación/experiencia perdidas o falta de especificaciones pueden motivar evaluar reingeniería, pero no la hacen automáticamente obligatoria. **Corregida.**
+- **3969 — proceso MSI:** se precisa el orden de las cuatro actividades de MÉTRICA v3. **Histórica.**
+- **3970 — regresión MSI:** el plan se prepara en MSI 3, tarea MSI 3.3; MSI 4 lo ejecuta y evalúa. **Histórica.**
+
+Fuentes primarias: [Basili et al., estudio de esfuerzo de mantenimiento](https://www.cs.umd.edu/users/basili/publications/proceedings/P70.pdf); [Kochhar et al., estudio de campo de comprensión de programas, IEEE TSE](https://researchportalplus.anu.edu.au/en/publications/measuring-program-comprehension-a-large-scale-field-study-with-pr/); [GAO FISCAM, definición de legacy system](https://www.gao.gov/assets/gao-09-232g.pdf); [SEI, Why Reengineering](https://www.sei.cmu.edu/documents/1204/1999_005_001_16751.pdf) y [SEI, Experiences in Migrations of Legacy Systems](https://www.sei.cmu.edu/library/experiences-in-migrations-of-legacy-systems/); [MÉTRICA v3, MSI](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ae15c0c5b-dd9c-4e48-82e3-9e36ba18e839/METRICA_V3_Mantenimiento_de_Sistemas_de_Informacion.pdf).
+
+Cotejo académico en Drive: [bloque 39, Calidad y mantenimiento](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk) para el lote, y [bloque 38, Análisis, diseño y construcción](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk) para reingeniería. Temas contrastados con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3966 A1-101/A2-III-8; 3967 A1-86/101 y A2-III-8; 3968 A1-86/101 y A2-III-2/III-8; 3969–3970 A1-101/A2-III-8.
+
+Comprobaciones: inventario y verificador ejecutados; no se ha computado el ítem pendiente como verificado.
 
 ## Lote 728 — 5 de noviembre de 2026
 
