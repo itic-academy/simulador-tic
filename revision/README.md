@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 752 (IDs 4081–4085). Acumulado: 4080 preguntas examinadas individualmente, 4000 verificadas (774 vigentes, 2909 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8043 sin revisar individualmente. Hay 3368 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 753 (IDs 4086–4090). Acumulado: 4085 preguntas examinadas individualmente, 4005 verificadas (774 vigentes, 2914 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8038 sin revisar individualmente. Hay 3373 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 753 — 5 de noviembre de 2026
+
+IDs 4086–4090 revisados individualmente; el contenido original completo queda en [cambios-lote-753.json](cambios-lote-753.json).
+
+- **4086 — sentencia SQL incorrecta:** se acota a Oracle SQL; `ERASE` no es instrucción de borrado, que se expresa con `DELETE FROM`. Se controlan las condiciones de configuración regional de la fecha. **Corregida.**
+- **4087 — HAVING:** se diferencia el filtro de grupos del filtro de filas que realiza WHERE. **Corregida.**
+- **4088 — diccionarios de búsqueda textual:** se desambigua “SGBDD” acotándolo al módulo PostgreSQL: stop words, sinónimos y tesauro son diccionarios documentados; un corrector gramatical no es una categoría de diccionario. **Corregida.**
+- **4089 — cursor PL/SQL:** se distingue el cursor, puntero al área privada SQL, del área de contexto/resultado y se precisa que permite recuperar filas. **Corregida.**
+- **4090 — organización hash:** se explica que la función transforma la clave de agrupación en un bucket/valor hash y bloque; no se exige que sea siempre clave primaria ni se requieren índices en cascada. **Corregida.**
+
+Fuentes: [Oracle AI Database 26, DELETE](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DELETE.html), [SELECT/HAVING](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SELECT.html), [PL/SQL Cursors Overview](https://docs.oracle.com/en/database/oracle/oracle-database/26/lnpls/cursors-overview.html) y [Database Concepts, hash clusters](https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/database-concepts.pdf); [PostgreSQL 18, Text Search Dictionaries](https://www.postgresql.org/docs/18/textsearch-dictionaries.html).
+
+Cotejo curricular directo: [bloque 29 «Bases de datos, SQL y modelado de datos», ITIC Academy, versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), revisado en Drive: epígrafes SQL e integridad, búsqueda textual, PL/SQL/JDBC, almacenamiento e índices. Clasificación verificada con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 64, y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), tema II-5; organización hash también se vincula a IV-2 (administración de SGBD). Academy contextualiza; las respuestas se contrastan con la documentación de Oracle/PostgreSQL.
+
+Comprobaciones registradas: el bloque 29 fue consultado directamente en Drive; las definiciones específicas de Oracle/PostgreSQL se cotejaron con su documentación oficial. Se preservaron los originales y se ejecutaron inventario, verificador y `git diff --check` al terminar.
 
 ## Lote 752 — 5 de noviembre de 2026
 

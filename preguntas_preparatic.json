@@ -204513,71 +204513,278 @@
       "id": 4086,
       "bloque": 0,
       "tema": 0,
-      "texto": "De las siguientes sentencias SQL, señale la que es INCORRECTA:",
+      "texto": "En Oracle Database, suponiendo que el formato de fecha de la sesión permite evaluar la expresión indicada, señale la sentencia incorrecta:",
       "opciones": [
         "SELECT NOMBRE, APELLIDO FROM EMPLEADOS ORDER BY APELLIDO;",
         "ERASE FROM EMPLEADOS WHERE FECHA = TO_DATE('01-JAN-07', 'dd-mon-yy');",
         "UPDATE EMPLEADOS SET SUELDO = 8500 WHERE APELLIDO = 'López';",
-        "CREATE TABLE PUNTOS (EVAL NUMBER(8,0), ID VARCHAR2(2),PUNTUACION NUMBER(1,0));"
+        "CREATE TABLE PUNTOS (EVAL NUMBER(8,0), ID VARCHAR2(2), PUNTUACION NUMBER(1,0));"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se especifica Oracle SQL y se confirma que ERASE no es una instrucción SQL de borrado. Para eliminar filas se usa DELETE FROM; la alternativa SELECT es consulta, UPDATE modifica valores y CREATE TABLE es DDL. Se conserva el ejemplo temporal acotando el idioma NLS de JAN para evitar que la presentación de la fecha sea la fuente de error.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 SQL cubre DML/DDL y sintaxis de borrado; Oracle define las formas válidas de DELETE y CREATE. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático; se acota la pregunta de búsqueda documental a una implementación identificada para que la conclusión sea verificable."
+      },
+      "etiquetas": [
+        "Oracle",
+        "SQL",
+        "DELETE",
+        "ERASE",
+        "DML"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DELETE.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, DELETE: la instrucción elimina filas de una tabla/vista; su forma es DELETE FROM ... WHERE, no ERASE FROM."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y apartados 5/6/7/9 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se especifica Oracle SQL y se confirma que ERASE no es una instrucción SQL de borrado. Para eliminar filas se usa DELETE FROM; la alternativa SELECT es consulta, UPDATE modifica valores y CREATE TABLE es DDL. Se conserva el ejemplo temporal acotando el idioma NLS de JAN para evitar que la presentación de la fecha sea la fuente de error. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 SQL cubre DML/DDL y sintaxis de borrado; Oracle define las formas válidas de DELETE y CREATE. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4087,
       "bloque": 0,
       "tema": 0,
-      "texto": "La cláusula HAVING de SQL:",
+      "texto": "En Oracle SQL, cuando una consulta agrupa filas, ¿qué función cumple HAVING?",
       "opciones": [
-        "Establece un filtro para seleccionar las filas que se usarán en la consulta.",
-        "Precisa de la presencia de la cláusula WHERE en la sentencia.",
-        "Establece un filtro que se aplica a las tablas agrupadas.",
-        "Establece una condición que deben cumplir las filas."
+        "Filtra las filas de origen antes de agruparlas; esa es la función de WHERE.",
+        "Solo puede usarse si también existe una cláusula WHERE.",
+        "Restringe los grupos devueltos según una condición, que puede incluir expresiones agregadas.",
+        "Define una condición que debe cumplirse en cada fila individual antes de formar los grupos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se corrige la definición: HAVING aplica una condición a los grupos del resultado (frecuentemente con agregados); WHERE filtra filas antes de formar grupos. No se afirma que HAVING requiera WHERE ni que se aplique a tablas en sentido físico.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5.13 trata filtros e integridad en SQL; SELECT/HAVING distingue predicados de filas y grupos. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático; se acota la pregunta de búsqueda documental a una implementación identificada para que la conclusión sea verificable."
+      },
+      "etiquetas": [
+        "SQL",
+        "HAVING",
+        "GROUP BY",
+        "agregación",
+        "filtrado de grupos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SELECT.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, SELECT/HAVING: restringe los grupos devueltos según la condición; se distingue del WHERE que filtra filas antes de agrupar."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y apartados 5/6/7/9 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se corrige la definición: HAVING aplica una condición a los grupos del resultado (frecuentemente con agregados); WHERE filtra filas antes de formar grupos. No se afirma que HAVING requiera WHERE ni que se aplique a tablas en sentido físico. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5.13 trata filtros e integridad en SQL; SELECT/HAVING distingue predicados de filas y grupos. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4088,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes no es una herramienta característica de un SGBDD?",
+      "texto": "En los diccionarios de búsqueda textual de PostgreSQL, ¿cuál de los siguientes no es un tipo de diccionario/normalización de tokens documentado?",
       "opciones": [
-        "Diccionario de palabras vacías",
-        "Diccionario de sinónimos, acrónimos, abreviaturas, etc",
-        "Tesauro",
-        "Corrector semántico y gramatical"
+        "Lista de palabras vacías (stop words).",
+        "Diccionario de sinónimos.",
+        "Diccionario de tesauro.",
+        "Corrector semántico y gramatical de textos completos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se resuelve la etiqueta imprecisa “SGBDD” y la expresión abierta “herramienta característica”: se acota el reactivo al módulo de diccionarios de búsqueda textual de PostgreSQL. Stop words, sinónimos y tesauro son tipos documentados; un corrector semántico/gramatical no es un diccionario de normalización de tokens. No se generaliza la lista a todos los productos documentales.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §9.1 búsqueda textual e indexación y el bloque de diccionarios cubren stop words, sinónimos y tesauro; el reactivo se acota a diccionarios PostgreSQL. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático; se acota la pregunta de búsqueda documental a una implementación identificada para que la conclusión sea verificable."
+      },
+      "etiquetas": [
+        "SGBD",
+        "búsqueda textual",
+        "diccionario de stop words",
+        "sinónimos",
+        "tesauro"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.postgresql.org/docs/18/textsearch-dictionaries.html",
+            "referencia": "PostgreSQL 18, Full Text Search Dictionaries: documenta las categorías stop words, synonym, thesaurus e ispell/snowball; un corrector gramatical no es una de esas categorías de diccionario de búsqueda."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y apartados 5/6/7/9 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se resuelve la etiqueta imprecisa “SGBDD” y la expresión abierta “herramienta característica”: se acota el reactivo al módulo de diccionarios de búsqueda textual de PostgreSQL. Stop words, sinónimos y tesauro son tipos documentados; un corrector semántico/gramatical no es un diccionario de normalización de tokens. No se generaliza la lista a todos los productos documentales. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §9.1 búsqueda textual e indexación y el bloque de diccionarios cubren stop words, sinónimos y tesauro; el reactivo se acota a diccionarios PostgreSQL. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4089,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el contexto del PL-SQL, ¿cuál es el nombre que se da a los segmentos de memoria utilizados para realizar operaciones con los registros devueltos tras ejecutar una sentencia SELECT?",
+      "texto": "En PL/SQL de Oracle, ¿qué objeto es un puntero al área privada SQL asociada a una consulta y permite recuperar las filas de su resultado?",
       "opciones": [
-        "Row Trigger",
-        "Statement Trigger",
-        "Cursor",
-        "Puntero"
+        "Row trigger.",
+        "Statement trigger.",
+        "Cursor.",
+        "Puntero de tabla de índices."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se corrige la descripción: el área privada SQL/contexto contiene información de procesamiento y resultado; el cursor es la referencia/puntero que permite recuperar filas (por ejemplo con FETCH). No se describe el cursor mismo como un segmento de memoria.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 SQL/PL-SQL y §§9.2–9.3 acceso a datos; cursor/recuperación de resultados se coteja con Oracle PL/SQL. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático; se acota la pregunta de búsqueda documental a una implementación identificada para que la conclusión sea verificable."
+      },
+      "etiquetas": [
+        "Oracle",
+        "PL/SQL",
+        "cursor",
+        "área privada SQL",
+        "FETCH",
+        "resultado SELECT"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/lnpls/cursors-overview.html",
+            "referencia": "Oracle AI Database 26 PL/SQL Language Reference, Cursors Overview: el cursor es un puntero al área privada SQL asociada a SELECT/DML; permite procesar o recuperar filas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y apartados 5/6/7/9 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se corrige la descripción: el área privada SQL/contexto contiene información de procesamiento y resultado; el cursor es la referencia/puntero que permite recuperar filas (por ejemplo con FETCH). No se describe el cursor mismo como un segmento de memoria. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 SQL/PL-SQL y §§9.2–9.3 acceso a datos; cursor/recuperación de resultados se coteja con Oracle PL/SQL. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4090,
       "bloque": 0,
       "tema": 0,
-      "texto": "Una de las formas de almacenar las Bases de Datos es la organización Hash. ¿En qué consiste?",
+      "texto": "En un clúster hash de Oracle, ¿cómo se localizan las filas a partir de un valor de la clave de agrupación?",
       "opciones": [
-        "En la organización Hash se accede al registro deseado directamente a través del índice o clave.",
-        "Consiste en ir indexando tablas de índices hasta tener un solo bloque mediante sucesivas iteraciones.",
-        "Consiste en tener una serie de grupos numerados de modo que cuando se va a acceder a un registro conociendo la clave primaria se aplica sobre ella una función algorítmica obteniéndose el grupo en el que ha de estar el registro deseado.",
-        "En la organización Hash los registros se almacenan utilizando dos índices, uno primario que señala los registros de acceso más frecuentes y otro secundario definido con algún criterio."
+        "La consulta recorre siempre un índice B-tree primario y después uno secundario.",
+        "Se buscan sucesivas tablas de índices hasta llegar a un único bloque.",
+        "Una función hash transforma el valor de la clave en un valor/bucket hash que identifica el bloque donde se almacenan las filas correspondientes.",
+        "La función elige el bloque atendiendo únicamente a la frecuencia reciente de acceso, sin usar la clave de agrupación."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se define la organización hash por la función que transforma un valor de clave en un bucket/valor hash y ubicación de bloque. No es simplemente una tabla de índices en cascada ni requiere dos índices; se evita decir que el valor de entrada tenga que ser siempre una clave primaria: en Oracle hash cluster es la cluster key.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-IV-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§6–7 administración, almacenamiento e índices del SGBD; la función/bucket hash se confirma en Oracle Database Concepts. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5, IV-2).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático; se acota la pregunta de búsqueda documental a una implementación identificada para que la conclusión sea verificable."
+      },
+      "etiquetas": [
+        "SGBD",
+        "organización hash",
+        "función hash",
+        "bucket",
+        "clave de agrupación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/database-concepts.pdf",
+            "referencia": "Oracle AI Database 26 Concepts, Hash Cluster Creation: una función hash transforma valores de la clave de agrupación en un número finito de buckets/hash values que se mapean a bloques con las filas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y apartados 5/6/7/9 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5, IV-2."
+          }
+        ],
+        "observaciones": "Se define la organización hash por la función que transforma un valor de clave en un bucket/valor hash y ubicación de bloque. No es simplemente una tabla de índices en cascada ni requiere dos índices; se evita decir que el valor de entrada tenga que ser siempre una clave primaria: en Oracle hash cluster es la cluster key. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§6–7 administración, almacenamiento e índices del SGBD; la función/bucket hash se confirma en Oracle Database Concepts. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5, IV-2)."
+      }
     },
     {
       "id": 4091,
