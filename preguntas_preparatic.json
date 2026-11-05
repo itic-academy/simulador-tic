@@ -203123,70 +203123,278 @@
       "id": 4061,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el universo de las bases de datos relacionales, se define el concepto de superclave como:",
+      "texto": "En el modelo relacional, ¿qué es una superclave de una relación?",
       "opciones": [
-        "Una clave primaria robusta.",
-        "Un conjunto de atributos que permite identificar unívocamente a cada registro.",
-        "La más segura de entre las claves candidatas."
+        "Una clave primaria elegida por ser más segura que las demás.",
+        "Cualquier conjunto de atributos que identifica unívocamente cada tupla; puede incluir atributos redundantes.",
+        "La clave candidata de menor tamaño posible, necesariamente elegida como primaria."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se precisa la definición: una superclave es cualquier conjunto de atributos que identifica unívocamente las tuplas; no tiene por qué ser mínimo. Si se elimina todo atributo redundante y sigue la unicidad, se obtiene una clave candidata. La clave primaria es una candidata elegida, no una superclave “robusta” o “más segura”.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.2 distingue superclave (puede contener redundancia), candidata (mínima) y primaria (candidata elegida). Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; se diferencia la teoría relacional de las funciones y privilegios específicos de Oracle."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "superclave",
+        "clave candidata",
+        "identificación unívoca"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1145/362384.362685",
+            "referencia": "E. F. Codd, A Relational Model of Data for Large Shared Data Banks (1970), artículo fundacional del modelo relacional y de la identificación de tuplas mediante conjuntos de atributos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se precisa la definición: una superclave es cualquier conjunto de atributos que identifica unívocamente las tuplas; no tiene por qué ser mínimo. Si se elimina todo atributo redundante y sigue la unicidad, se obtiene una clave candidata. La clave primaria es una candidata elegida, no una superclave “robusta” o “más segura”. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.2 distingue superclave (puede contener redundancia), candidata (mínima) y primaria (candidata elegida). Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4062,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Puede el administrador de la Base de Datos Relacional autorizar a un usuario para que pueda añadir columnas en una tabla permitiendo que este usuario pueda autorizar a otros este mismo privilegio?",
+      "texto": "En Oracle Database, ¿puede un administrador conceder ALTER ANY TABLE a un usuario para alterar tablas de otros esquemas y permitir que ese usuario lo conceda a su vez?",
       "opciones": [
-        "Añadir columnas en una tabla es tarea exclusiva del administrador de la Base de Datos y no puede delegarla",
-        "Añadir columnas en una tabla no requiere la autorización del administrador de la Base de Datos",
-        "Sí, puede autorizar a que un usuario añada columnas en una tabla, pero no puede autorizar para que un usuario pueda a su vez conceder este privilegio",
-        "Sí puede autorizar ambas cosas"
+        "No; solo SYS puede alterar tablas y los privilegios de sistema no se delegan.",
+        "No; ALTER ANY TABLE solo puede concederse a roles, nunca a usuarios.",
+        "Puede conceder el privilegio, pero WITH ADMIN OPTION no existe para privilegios de sistema.",
+        "Sí: puede conceder el privilegio WITH ADMIN OPTION, que habilita al usuario para concederlo a otros usuarios o roles."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se acota a Oracle Database: ALTER ANY TABLE permite alterar una tabla de otro esquema (por ejemplo, añadir una columna); un administrador autorizado puede concederlo WITH ADMIN OPTION, que permite al receptor volver a concederlo. Para privilegios de sistema Oracle emplea ADMIN OPTION; GRANT OPTION corresponde a privilegios de objeto.",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-IV-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); El bloque 29 cubre SGBD y administración de privilegios; Oracle GRANT define ALTER ANY TABLE y ADMIN OPTION. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5, IV-2).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; se diferencia la teoría relacional de las funciones y privilegios específicos de Oracle."
+      },
+      "etiquetas": [
+        "Oracle",
+        "ALTER ANY TABLE",
+        "privilegios de sistema",
+        "WITH ADMIN OPTION",
+        "delegación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/GRANT.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, GRANT: ALTER ANY TABLE permite alterar tablas/vistas de otros esquemas; WITH ADMIN OPTION permite al usuario conceder el privilegio de sistema a otros usuarios o roles."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 63, 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5, IV-2."
+          }
+        ],
+        "observaciones": "Se acota a Oracle Database: ALTER ANY TABLE permite alterar una tabla de otro esquema (por ejemplo, añadir una columna); un administrador autorizado puede concederlo WITH ADMIN OPTION, que permite al receptor volver a concederlo. Para privilegios de sistema Oracle emplea ADMIN OPTION; GRANT OPTION corresponde a privilegios de objeto. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); El bloque 29 cubre SGBD y administración de privilegios; Oracle GRANT define ALTER ANY TABLE y ADMIN OPTION. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5, IV-2)."
+      }
     },
     {
       "id": 4063,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un modelo relacional existen restricciones inherentes (propias del modelo) y restricciones semánticas (de usuario). Indique cuál de las siguientes opciones NO es una restricción semántica:",
+      "texto": "En el modelo relacional matemático, ¿cuál de las siguientes es una propiedad inherente de una relación y no una restricción adicional definida por el usuario?",
       "opciones": [
-        "Unicidad de valor en un atributo",
-        "Obligatoriedad de que un atributo no admita nulos",
-        "Integridad referencial",
-        "Obligatoriedad de existencia de clave primaria"
+        "Que un atributo concreto sea único en todas las tuplas.",
+        "Que un atributo concreto no admita valores NULL en una implementación SQL.",
+        "Que una clave foránea remita a una clave existente de otra relación.",
+        "Que no existan dos tuplas idénticas, pues la relación es un conjunto."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se corrige la opción sobre clave primaria: el modelo matemático implica que una relación no contiene dos tuplas idénticas, por lo que el conjunto completo de atributos identifica cada tupla; elegir y declarar una clave primaria nominal en un SGBD es otra decisión. Se sustituye esa opción por la propiedad de no duplicación, inherente al carácter de conjunto. Unicidad de un atributo concreto, NOT NULL y FOREIGN KEY son restricciones adicionales semánticas/de esquema.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§2.1–2.3 tratan relación como conjunto, claves e integridad; se separa la propiedad matemática de no duplicación de las restricciones SQL declaradas. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; se diferencia la teoría relacional de las funciones y privilegios específicos de Oracle."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "restricciones inherentes",
+        "restricciones semánticas",
+        "tuplas",
+        "clave"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1145/362384.362685",
+            "referencia": "Codd, artículo original de 1970: el modelo describe relaciones como conjuntos; al no admitir tuplas duplicadas, la unicidad de la tupla es una propiedad inherente."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se corrige la opción sobre clave primaria: el modelo matemático implica que una relación no contiene dos tuplas idénticas, por lo que el conjunto completo de atributos identifica cada tupla; elegir y declarar una clave primaria nominal en un SGBD es otra decisión. Se sustituye esa opción por la propiedad de no duplicación, inherente al carácter de conjunto. Unicidad de un atributo concreto, NOT NULL y FOREIGN KEY son restricciones adicionales semánticas/de esquema. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§2.1–2.3 tratan relación como conjunto, claves e integridad; se separa la propiedad matemática de no duplicación de las restricciones SQL declaradas. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4064,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale el enunciado falso:",
+      "texto": "Respecto de las propiedades ACID de una transacción, señale el enunciado falso:",
       "opciones": [
-        "Los sistemas transaccionales deben bloquear los registros que vayan a modificar",
-        "Cuando la aplicación indica que la transacción ha terminado es cuando se actualizan las bases de datos y se suelen liberar los registros intervinientes",
-        "Todos los aspectos de una transacción deben completarse o el sistema debe actuar como si ninguna se hubiera completado",
-        "Los efectos de una transacción deben ser visibles por las demás transacciones antes que la transacción se complete"
+        "Atomicidad: la transacción se aplica íntegramente o se deshace como unidad.",
+        "Consistencia: una transacción válida lleva la base de un estado consistente a otro, respetando las restricciones aplicables.",
+        "Aislamiento: otras transacciones no deben observar como confirmados los efectos intermedios no confirmados de esta transacción.",
+        "Durabilidad: los cambios no confirmados deben hacerse visibles a otras transacciones antes de finalizar la transacción."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se reescribe el ítem como una afirmación ACID con una sola falsa. Atomicidad exige aplicar todo o nada; consistencia conserva reglas de integridad; aislamiento evita exponer efectos intermedios no confirmados conforme al nivel descrito; durabilidad se refiere a cambios confirmados. La opción falsa hace visibles cambios sin commit, contradiciendo aislamiento y mezclando durabilidad con visibilidad previa.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§7.2–7.6 cubren COMMIT/ROLLBACK, anomalías de concurrencia, niveles de aislamiento, bloqueos y MVCC; Oracle Concepts se usa para ACID exacto. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; se diferencia la teoría relacional de las funciones y privilegios específicos de Oracle."
+      },
+      "etiquetas": [
+        "transacciones",
+        "ACID",
+        "aislamiento",
+        "COMMIT",
+        "rollback",
+        "dirty reads"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/transactions.html",
+            "referencia": "Oracle AI Database 26 Concepts, Transactions: ACID; atomicidad evita transacciones parciales y, con aislamiento, los efectos no son visibles a otras transacciones hasta el commit."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se reescribe el ítem como una afirmación ACID con una sola falsa. Atomicidad exige aplicar todo o nada; consistencia conserva reglas de integridad; aislamiento evita exponer efectos intermedios no confirmados conforme al nivel descrito; durabilidad se refiere a cambios confirmados. La opción falsa hace visibles cambios sin commit, contradiciendo aislamiento y mezclando durabilidad con visibilidad previa. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§7.2–7.6 cubren COMMIT/ROLLBACK, anomalías de concurrencia, niveles de aislamiento, bloqueos y MVCC; Oracle Concepts se usa para ACID exacto. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4065,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si una relación no posee grupos repetitivos y cada atributo que no pertenezca a la clave es identificado únicamente y de forma total por la clave se dice que está en:",
+      "texto": "Una relación está en segunda forma normal (2FN) cuando, además de estar en 1FN, cada atributo no primo depende funcionalmente de la clave candidata completa y no de un subconjunto propio de ella. ¿A qué forma normal se refiere?",
       "opciones": [
-        "Primera forma normal",
-        "Segunda forma normal",
-        "Tercera forma normal",
-        "Forma normal de Boyce-Codd"
+        "Primera forma normal.",
+        "Segunda forma normal.",
+        "Tercera forma normal.",
+        "Forma normal de Boyce-Codd."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se formula la condición completa: una relación está en 2FN si está en 1FN y cada atributo no primo depende funcionalmente de la clave candidata completa, no de una parte propia de una clave compuesta. La definición vale respecto de todas las claves candidatas; la 3FN añade condiciones para dependencias transitivas/atributos primos.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.2 cubren dependencias funcionales, claves y 1FN/2FN/3FN/BCNF; se formula respecto de todas las claves candidatas. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; se diferencia la teoría relacional de las funciones y privilegios específicos de Oracle."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "normalización",
+        "1FN",
+        "2FN",
+        "dependencia funcional completa",
+        "clave candidata"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf",
+            "referencia": "Codd, Further Normalization of the Data Base Relational Model (1971): segunda forma normal requiere 1FN y que los atributos no primos dependan funcionalmente de la clave candidata completa, no de un subconjunto propio."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+          }
+        ],
+        "observaciones": "Se formula la condición completa: una relación está en 2FN si está en 1FN y cada atributo no primo depende funcionalmente de la clave candidata completa, no de una parte propia de una clave compuesta. La definición vale respecto de todas las claves candidatas; la 3FN añade condiciones para dependencias transitivas/atributos primos. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.2 cubren dependencias funcionales, claves y 1FN/2FN/3FN/BCNF; se formula respecto de todas las claves candidatas. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4)."
+      }
     },
     {
       "id": 4066,

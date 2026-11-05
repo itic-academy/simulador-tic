@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 747 (IDs 4056–4060). Acumulado: 4055 preguntas examinadas individualmente, 3975 verificadas (774 vigentes, 2884 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8068 sin revisar individualmente. Hay 3343 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 748 (IDs 4061–4065). Acumulado: 4060 preguntas examinadas individualmente, 3980 verificadas (774 vigentes, 2889 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8063 sin revisar individualmente. Hay 3348 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 748 — 5 de noviembre de 2026
+
+IDs 4061–4065 revisados individualmente; originales preservados en [cambios-lote-748.json](cambios-lote-748.json).
+
+- **4061 — superclave:** se define como cualquier conjunto de atributos que identifica unívocamente una tupla; puede contener atributos redundantes, a diferencia de una candidata mínima. **Corregida.**
+- **4062 — delegación de ALTER ANY TABLE:** se confirma en Oracle con WITH ADMIN OPTION, que permite al receptor conceder el privilegio a otros usuarios o roles. **Corregida.**
+- **4063 — propiedad inherente:** se distingue la relación matemática como conjunto sin tuplas duplicadas de declarar una PRIMARY KEY en SQL; se reemplaza la alternativa confusa por la propiedad inherente. **Corregida.**
+- **4064 — ACID:** se concreta un único enunciado falso: durabilidad no expone cambios sin commit; atomicidad, consistencia y aislamiento se definen con alcance preciso. **Corregida.**
+- **4065 — segunda forma normal:** se expresa mediante dependencia funcional completa de cada atributo no primo respecto de todas las claves candidatas. **Corregida.**
+
+Fuentes: [Codd, modelo relacional (1970)](https://doi.org/10.1145/362384.362685); [Oracle AI Database 26, GRANT](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/GRANT.html); [Codd, Further Normalization (1971)](https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf); [Oracle AI Database 26, Transactions y ACID](https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/transactions.html).
+
+Cotejo académico directo: [bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), consultado en Drive. §2.2 diferencia superclave, candidata y primaria; §§2.1–2.3, relación e integridad; §§3.1–3.2, claves funcionales y formas normales; §§7.2–7.6 cubren control de transacciones, aislamiento, bloqueos y MVCC. Clasificación contrastada con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4061 A1-64/A2-II-5; 4062 A1-63/64-A2-II-5/IV-2; 4063–4064 A1-64/A2-II-5; 4065 A1-64/A2-III-4. El temario de academia se usa para encaje, no como autoridad técnica sobre Oracle ni como sustituto de Codd/BOE.
+
+Comprobaciones: se consultó directamente en Drive el bloque 29, incluidas claves, integridad, normalización y transacciones; Oracle Database 26 confirma ALTER ANY TABLE + ADMIN OPTION y la semántica ACID; los trabajos originales de Codd fundamentan la teoría relacional y 2FN. No quedan dudas registradas. Inventario y verificador ejecutados tras el lote.
 
 ## Lote 747 — 5 de noviembre de 2026
 
