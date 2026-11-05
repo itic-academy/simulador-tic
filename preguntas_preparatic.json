@@ -207628,21 +207628,66 @@
       "id": 4141,
       "bloque": 0,
       "tema": 0,
-      "texto": "C-Shell es:",
+      "texto": "¿Qué es el C shell (csh) en sistemas UNIX?",
       "opciones": [
-        "Una parte del sistema operativo MVS",
-        "Un intérprete de comandos del sistema operativo Unix",
-        "Un compilador de C",
-        "Nada de lo anterior"
+        "Un componente del sistema operativo MVS.",
+        "Un intérprete de comandos de la familia UNIX.",
+        "Un compilador del lenguaje de programación C.",
+        "Una extensión del lenguaje Java."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se sustituye la definición incompleta por una pregunta inequívoca sobre csh y su función; la fuente de Berkeley identifica que es un command language interpreter para UNIX.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-IV-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque «Sistemas operativos», versión 2026.1; §§6.9 y 7.8 cubren shell UNIX/Linux y herramientas de administración; encaje con el tema A1 de UNIX/Linux y administración A2. Correspondencia contrastada con la convocatoria oficial A1 GSI 2025, anexo I (tema 60), y A2 GSI 2025, anexo IX (tema IV-1).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo del temario académico disponible y clasificación según los anexos oficiales A1/A2; los materiales de Academy aportan contexto, no sustituyen las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "Unix",
+        "Linux",
+        "csh",
+        "C Shell",
+        "intérprete de comandos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs-archive.freebsd.org/44doc/usd/04.csh/paper.pdf",
+            "referencia": "FreeBSD Documentation Archive, «An Introduction to the C shell»: csh se describe expresamente como un intérprete de comandos para sistemas UNIX."
+          },
+          {
+            "url": "https://inst.eecs.berkeley.edu/share/b/pub/non-help-files/html/Users_Guide/cshell/",
+            "referencia": "UC Berkeley, User’s Guide: define el shell como programa que lee e interpreta órdenes y sitúa C shell entre los shells de UNIX."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque «Sistemas operativos», versión 2026.1, §§6.9, 7.8: shell UNIX/Linux e intérpretes de órdenes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 60."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema IV-1."
+          }
+        ],
+        "observaciones": "Se sustituye la definición incompleta por una pregunta inequívoca sobre csh y su función; la fuente de Berkeley identifica que es un command language interpreter para UNIX. ITIC Academy, bloque «Sistemas operativos», versión 2026.1; §§6.9 y 7.8 cubren shell UNIX/Linux y herramientas de administración; encaje con el tema A1 de UNIX/Linux y administración A2. Correspondencia contrastada con la convocatoria oficial A1 GSI 2025, anexo I (tema 60), y A2 GSI 2025, anexo IX (tema IV-1)."
+      }
     },
     {
       "id": 4142,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si queremos conocer las librerías vinculadas a un determinado programa en un sistema Linux usaremos el comando:",
+      "texto": "En Linux, para consultar las dependencias de bibliotecas compartidas de un ejecutable ELF dinámico de confianza, ¿qué comando estándar se utiliza habitualmente?",
       "opciones": [
         "ldd",
         "linkedl",
@@ -207650,49 +207695,226 @@
         "lk"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se acota el caso a ejecutables ELF dinámicos y se conserva la respuesta ldd, añadiendo su límite de seguridad documentado oficialmente. «linkedl», «linklib» y «lk» no son el comando estándar de Linux para ello.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-IV-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque «Sistemas operativos», versión 2026.1; Apartados de administración Linux/UNIX y herramientas de sistema; se contrasta el comando concreto con la página man de ldd, incluida la advertencia de seguridad. Correspondencia contrastada con la convocatoria oficial A1 GSI 2025, anexo I (tema 60), y A2 GSI 2025, anexo IX (tema IV-1).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo del temario académico disponible y clasificación según los anexos oficiales A1/A2; los materiales de Academy aportan contexto, no sustituyen las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "Linux",
+        "ldd",
+        "bibliotecas compartidas",
+        "dependencias ELF"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man1/ldd.1.html",
+            "referencia": "Linux man-pages, ldd(1): imprime los objetos compartidos requeridos por un programa/objeto compartido y, normalmente, las rutas resueltas; advierte de no ejecutarlo sobre binarios no confiables."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque «Sistemas operativos», versión 2026.1, apartados de administración y herramientas Linux/UNIX; cotejo de comandos de inspección del sistema."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 60."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema IV-1."
+          }
+        ],
+        "observaciones": "Se acota el caso a ejecutables ELF dinámicos y se conserva la respuesta ldd, añadiendo su límite de seguridad documentado oficialmente. «linkedl», «linklib» y «lk» no son el comando estándar de Linux para ello. ITIC Academy, bloque «Sistemas operativos», versión 2026.1; Apartados de administración Linux/UNIX y herramientas de sistema; se contrasta el comando concreto con la página man de ldd, incluida la advertencia de seguridad. Correspondencia contrastada con la convocatoria oficial A1 GSI 2025, anexo I (tema 60), y A2 GSI 2025, anexo IX (tema IV-1)."
+      }
     },
     {
       "id": 4143,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la afirmación FALSA con respecto a Javascript:",
+      "texto": "Señale la afirmación FALSA sobre JavaScript:",
       "opciones": [
-        "Es un extensión de Java",
-        "Es un extensión de HTML",
-        "Es un lenguaje interpretado",
-        "El intérprete de JavaScript se basa en el estándar ECMAScript"
+        "JavaScript es una extensión del lenguaje de programación Java.",
+        "El núcleo del lenguaje JavaScript se estandariza mediante ECMAScript (ECMA-262).",
+        "En un navegador, JavaScript puede utilizar APIs del entorno para interactuar con la página.",
+        "HTML define la estructura y el contenido de una página; JavaScript puede añadir comportamiento interactivo."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El original contenía dos opciones falsas (extensión de Java y extensión de HTML), por lo que no admitía clave única. Se reemplazan las opciones por afirmaciones comprobables y se mantiene una única falsa: que JavaScript sea una extensión de Java.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-77"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1; §§2.1 y 2.4 tratan HTML, JavaScript y ECMAScript; la Academy distingue marcado, núcleo del lenguaje y APIs del navegador. Correspondencia contrastada con la convocatoria oficial A1 GSI 2025, anexo I (tema 65, tema 77), y A2 GSI 2025, anexo IX (tema III-12).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo del temario académico disponible y clasificación según los anexos oficiales A1/A2; los materiales de Academy aportan contexto, no sustituyen las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "JavaScript",
+        "ECMAScript",
+        "HTML",
+        "lenguajes web"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview",
+            "referencia": "MDN, JavaScript technologies overview: distingue el núcleo del lenguaje (ECMAScript), HTML como estructura/contenido y las Web APIs del entorno."
+          },
+          {
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction",
+            "referencia": "MDN, Introduction to JavaScript: advierte que JavaScript y Java son lenguajes distintos; JavaScript está estandarizado mediante ECMA-262."
+          },
+          {
+            "url": "https://ecma-international.org/publications-and-standards/standards/ecma-262/",
+            "referencia": "Ecma International, ECMA-262: especificación del lenguaje general ECMAScript; edición 17, ECMAScript 2026."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, §§2.1 y 2.4: relación entre HTML y JavaScript y estandarización ECMAScript."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 65, tema 77."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema III-12."
+          }
+        ],
+        "observaciones": "El original contenía dos opciones falsas (extensión de Java y extensión de HTML), por lo que no admitía clave única. Se reemplazan las opciones por afirmaciones comprobables y se mantiene una única falsa: que JavaScript sea una extensión de Java. ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1; §§2.1 y 2.4 tratan HTML, JavaScript y ECMAScript; la Academy distingue marcado, núcleo del lenguaje y APIs del navegador. Correspondencia contrastada con la convocatoria oficial A1 GSI 2025, anexo I (tema 65, tema 77), y A2 GSI 2025, anexo IX (tema III-12)."
+      }
     },
     {
       "id": 4144,
       "bloque": 0,
       "tema": 0,
-      "texto": "El código intermedio en una compilación .NET actualmente se llama:",
+      "texto": "¿Cómo denomina actualmente Microsoft al lenguaje intermedio común y portable al que se traduce el código fuente gestionado de .NET?",
       "opciones": [
-        "MSIL",
-        "CIL",
-        "CLS",
-        "Bytecode"
+        "MSIL, como única denominación vigente.",
+        "CIL (Common Intermediate Language).",
+        "CLS (Common Language Specification).",
+        "Bytecode de la JVM."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se pregunta por la denominación actual documentada por Microsoft y se distingue del término histórico MSIL, de CLS y del término genérico bytecode.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1; §7.2 explica CLR, CIL, CTS y CLS, diferenciando el código intermedio de las especificaciones y del entorno de ejecución. Correspondencia contrastada con la convocatoria oficial A1 GSI 2025, anexo I (tema 66), y A2 GSI 2025, anexo IX (tema III-11).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo del temario académico disponible y clasificación según los anexos oficiales A1/A2; los materiales de Academy aportan contexto, no sustituyen las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        ".NET",
+        "CIL",
+        "MSIL",
+        "código intermedio"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process",
+            "referencia": "Microsoft Learn, Managed execution process: los compiladores gestionados traducen el código fuente a Common Intermediate Language (CIL), que luego se compila a código nativo."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/standard/managed-code",
+            "referencia": "Microsoft Learn, What is managed code?: IL también se denomina CIL (Common Intermediate Language)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, §7.2: CLR, CIL, CTS y CLS."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 66."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema III-11."
+          }
+        ],
+        "observaciones": "Se pregunta por la denominación actual documentada por Microsoft y se distingue del término histórico MSIL, de CLS y del término genérico bytecode. ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1; §7.2 explica CLR, CIL, CTS y CLS, diferenciando el código intermedio de las especificaciones y del entorno de ejecución. Correspondencia contrastada con la convocatoria oficial A1 GSI 2025, anexo I (tema 66), y A2 GSI 2025, anexo IX (tema III-11)."
+      }
     },
     {
       "id": 4145,
       "bloque": 0,
       "tema": 0,
-      "texto": "En que capa del patrón MVC es común el uso del patrón DAO:",
+      "texto": "En una arquitectura MVC convencional con persistencia separada, ¿dónde se sitúa habitualmente el acceso a datos encapsulado por un DAO?",
       "opciones": [
-        "En el modelo.",
-        "En el vista.",
-        "En el controlador.",
-        "No se usan simultáneamente."
+        "En el modelo o en la capa de persistencia asociada a él.",
+        "En la vista, que consulta directamente la base de datos.",
+        "En el controlador, que concentra las consultas y el mapeo persistente.",
+        "Fuera de la arquitectura: DAO y MVC no pueden utilizarse juntos."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Se precisa el supuesto «MVC convencional con persistencia separada» para evitar presentar la ubicación como una regla universal; entre las capas MVC, la respuesta habitual es el modelo, con la implementación de acceso delegada a la capa DAO/persistencia.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1; §§1 y 6.4 cubren arquitectura por capas, Spring MVC y persistencia; cotejo de la separación entre modelo/controlador y acceso a datos. Correspondencia contrastada con la convocatoria oficial A1 GSI 2025, anexo I (tema 93), y A2 GSI 2025, anexo IX (tema III-9).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo del temario académico disponible y clasificación según los anexos oficiales A1/A2; los materiales de Academy aportan contexto, no sustituyen las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "MVC",
+        "DAO",
+        "acceso a datos",
+        "patrones de diseño"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.oracle.com/java/technologies/data-access-object.html",
+            "referencia": "Oracle, Data Access Object pattern: DAO separa la interfaz de cliente de los mecanismos de acceso a datos y desacopla el acceso a persistencia de la lógica de negocio."
+          },
+          {
+            "url": "https://www.oracle.com/java/technologies/dataaccessobject.html",
+            "referencia": "Oracle, Core J2EE Patterns—Data Access Object: centraliza el acceso a datos en una capa separada; los objetos de negocio delegan las operaciones de carga y almacenamiento al DAO."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, §§1 y 6.4: arquitectura por capas, Spring MVC, persistencia y separación de responsabilidades."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 93."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema III-9."
+          }
+        ],
+        "observaciones": "Se precisa el supuesto «MVC convencional con persistencia separada» para evitar presentar la ubicación como una regla universal; entre las capas MVC, la respuesta habitual es el modelo, con la implementación de acceso delegada a la capa DAO/persistencia. ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1; §§1 y 6.4 cubren arquitectura por capas, Spring MVC y persistencia; cotejo de la separación entre modelo/controlador y acceso a datos. Correspondencia contrastada con la convocatoria oficial A1 GSI 2025, anexo I (tema 93), y A2 GSI 2025, anexo IX (tema III-9)."
+      }
     },
     {
       "id": 4146,

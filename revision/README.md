@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 763 (IDs 4136–4140). Acumulado: 4135 preguntas examinadas individualmente, 4055 verificadas (774 vigentes, 2960 corregidas y 321 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7988 sin revisar individualmente. Hay 3423 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 764 (IDs 4141–4145). Acumulado: 4140 preguntas examinadas individualmente, 4060 verificadas (774 vigentes, 2965 corregidas y 321 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7983 sin revisar individualmente. Hay 3428 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 764 — 5 de noviembre de 2026
+
+IDs 4141–4145 revisados individualmente; las formulaciones y claves originales se conservan en [cambios-lote-764.json](cambios-lote-764.json).
+
+- **4141 — C shell:** se precisa que `csh` es un intérprete de comandos de UNIX, no un componente de MVS ni un compilador de C. **Corregida.**
+- **4142 — dependencias Linux:** se conserva `ldd` para consultar bibliotecas compartidas de ejecutables ELF de confianza y se añade la advertencia de seguridad de su página man sobre binarios no confiables. **Corregida.**
+- **4143 — JavaScript:** el original contenía dos opciones falsas. Se reformula para que haya una única clave: JavaScript no es una extensión de Java; se distingue JavaScript/ECMAScript de HTML y las APIs web. **Corregida.**
+- **4144 — código intermedio .NET:** se pregunta por el término moderno CIL y se diferencia de MSIL (nombre histórico), CLS y el bytecode de JVM. **Corregida.**
+- **4145 — DAO/MVC:** se acota a una organización MVC convencional con persistencia separada; el DAO suele estar en el modelo o en la capa de persistencia asociada, no en vista/controlador como regla. **Corregida.**
+
+Fuentes técnicas primarias: [FreeBSD Documentation Archive, introducción al C shell](https://docs-archive.freebsd.org/44doc/usd/04.csh/paper.pdf); [Linux man-pages, `ldd(1)`](https://man7.org/linux/man-pages/man1/ldd.1.html); [MDN, tecnologías JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview) e [introducción](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction); [Ecma International, ECMA-262](https://ecma-international.org/publications-and-standards/standards/ecma-262/); [Microsoft Learn, proceso de ejecución administrada](https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process) y [código administrado](https://learn.microsoft.com/en-us/dotnet/standard/managed-code); [Oracle, patrón Data Access Object](https://www.oracle.com/java/technologies/data-access-object.html) y [Core J2EE DAO](https://www.oracle.com/java/technologies/dataaccessobject.html).
+
+Cotejo curricular en Drive: [bloque Sistemas Operativos, 2026.1](https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk), §§6.9 y 7.8; [bloque 30 Tecnologías de sistemas de información, 2026.1](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk), §§2.1, 2.4, 7.2 y 6.4. Correspondencia con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4141–4142 A1-60/A2-IV-1; 4143 A1-65/77, A2-III-12; 4144 A1-66/A2-III-11; 4145 A1-93/A2-III-9. Se utilizó el temario académico para encaje didáctico, y las referencias técnicas primarias para comprobar las respuestas.
+
+Verificaciones: cotejadas las dos unidades de Academy directamente en Drive y los temas oficiales A1/A2. Respuestas contrastadas con manuales oficiales de FreeBSD/Linux, documentación de MDN/Ecma, Microsoft Learn y Oracle. Después del lote se ejecutan `inventario.cjs`, `verificar.cjs` y `git diff --check`.
 
 ## Lote 763 — 5 de noviembre de 2026
 
