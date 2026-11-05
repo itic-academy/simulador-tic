@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 729 (IDs 3966–3970). Acumulado: 3970 preguntas examinadas individualmente, 3891 verificadas (767 vigentes, 2821 corregidas y 303 históricas) y 79 pendientes documentadas (36 de fuente y 43 de ambigüedad); quedan 8153 sin revisar individualmente. Hay 3262 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 732 (IDs 3981–3985). Acumulado: 3980 preguntas examinadas individualmente, 3901 verificadas (767 vigentes, 2826 corregidas y 308 históricas) y 79 pendientes documentadas (36 de fuente y 43 de ambigüedad); quedan 8143 sin revisar individualmente. Hay 3272 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 732 — 5 de noviembre de 2026
+
+IDs 3981–3985 revisados individualmente; el registro [cambios-lote-732.json](cambios-lote-732.json) preserva texto, opciones y clave originales.
+
+- **3981 — VIA/CENTER:** se confirma como plataforma CASE histórica de Viasoft para mantenimiento y reingeniería COBOL mediante fuentes contemporáneas; se acota el enunciado a ese catálogo. **Histórica.**
+- **3982 — code smell:** se pregunta por la definición precisa de Fowler y se elimina la combinación ambigua con “fragilidad” y “software rot”. **Corregida.**
+- **3983 — proceso de mantenimiento:** se limita la secuencia de análisis, implementación y revisión/aceptación a la edición histórica ISO/IEC 14764:2006; se aclara que no es la lista completa de actividades y que la norma fue sustituida por la edición 2022. **Histórica.**
+- **3984 — TCA/ACT:** se define como fracción de instrucciones fuente modificadas o añadidas al año en el modelo de Boehm; se separa la medida de la fórmula histórica de esfuerzo. **Histórica.**
+- **3985 — mantenimiento predictivo:** se reemplaza la afirmación universal sobre “los modelos más habituales” por tareas que pueden emplearse según objetivo y datos: clasificación, regresión y clustering. **Corregida.**
+
+Fuentes técnicas: [VIA/CENTER, ISECON 1992](https://iscap.us/proceedings/isecon/historyPDF/1992.v9.pdf) y [anuncio contemporáneo, Mainframe Journal, abril de 1989](https://www.bitsavers.org/magazines/Mainframe_Journal/Mainframe_Journal_V04_N04_198904.pdf); [Fowler, Code Smell](https://martinfowler.com/bliki/CodeSmell.html); [ISO/IEC 14764:2006, vista de la norma](https://cdn.standards.iteh.ai/samples/39064/a132a6efa20e47d69ede63804b88a170/ISO-IEC-14764-2006.pdf) y [catálogo oficial ISO, edición 2022 y retirada de 2006](https://www.iso.org/standard/80710.html); [Ahn et al., modelo histórico ACT/TCA de Boehm](https://doi.org/10.1002/smr.269); [Esteban et al., taxonomía sistemática de minería de datos en mantenimiento predictivo](https://doi.org/10.1002/widm.1471).
+
+Cotejo académico directo en Drive: [bloque «Análisis, diseño y construcción», versión 2026.1](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), apartado CASE e ingeniería inversa; y [bloque 39 «Calidad y mantenimiento», versión 2026.1](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk), mantenimiento de software/predictivo. Correspondencia con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3981 A1-88/A2-III-6; 3982–3983 A1-101/A2-III-8; 3984 A1-99/101-A2-III-8; 3985 A1-101/A2-III-8.
+
+Comprobaciones: los dos documentos académicos se consultaron directamente en Drive; las claves se justifican con las referencias enlazadas; el inventario y el verificador se ejecutan tras el lote.
 
 ## Lote 731 — 5 de noviembre de 2026
 
