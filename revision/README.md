@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 720 (IDs 3921–3925). Acumulado: 3920 preguntas examinadas individualmente, 3842 verificadas (766 vigentes, 2785 corregidas y 291 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8203 sin revisar individualmente. Hay 3213 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 721 (IDs 3926–3930). Acumulado: 3925 preguntas examinadas individualmente, 3847 verificadas (766 vigentes, 2790 corregidas y 291 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8198 sin revisar individualmente. Hay 3218 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 721 — 5 de noviembre de 2026
+
+IDs 3926–3930 revisados individualmente. Las versiones originales, las opciones y las claves anteriores se preservan en [cambios-lote-721.json](cambios-lote-721.json).
+
+- **3926 — síntesis de voz:** el original afirmaba que existían dos métodos y usaba «por patrones» sin definirlo. Se pregunta ahora por la técnica que selecciona y concatena unidades de habla grabadas: síntesis concatenativa. La taxonomía no se presenta como limitada a dos métodos. **Corregida.**
+- **3927 — brainstorming:** la secuencia preparación, generación y consolidación se atribuye expresamente al ejercicio de elicitación de requisitos del SEI; evita tratarla como única secuencia universal. **Corregida.**
+- **3928 — modelo E-R:** se precisa que «tipo de correspondencia» significa razón de cardinalidad máxima (1:1, 1:N o N:M), y se distingue del grado de la relación y de la participación mínima. **Corregida.**
+- **3929 — UML:** se sustituye «relaciones físicas entre componentes» por la semántica de despliegue UML: asignar artefactos a nodos de hardware/ejecución y mostrar sus conexiones de comunicación. **Corregida.**
+- **3930 — orientación a objetos:** se mantiene como falsa la identificación de objeto con método, pero se precisan clase, instancia, método y biblioteca reutilizable para que haya una sola respuesta. **Corregida.**
+
+Fuentes técnicas primarias: [Aalto University, síntesis concatenativa](https://speechprocessingbook.aalto.fi/synthesis/concatenative-speech-synthesis/); [W3C SSML 1.1](https://www.w3.org/TR/speech-synthesis/); [SEI, ejercicio de brainstorming para elicitación](https://www.sei.cmu.edu/documents/1564/1994_011_001_16238.pdf); [IBM, diagramas E-R y cardinalidad](https://www.ibm.com/think/topics/entity-relationship-diagram) y [IBM DataAtlas Modeler](https://public.dhe.ibm.com/ps/products/dataatlas/books/CDMU7250.PDF); [OMG/ISO UML 2, §10 Despliegues](https://www.omg.org/spec/UML/ISO/19505-2/PDF); [Oracle Java, clases y objetos](https://docs.oracle.com/javase/tutorial/java/concepts/class.html) y [glosario de instancia/método](https://docs.oracle.com/javase/tutorial/information/glossary.html); [Microsoft Learn, biblioteca de clases .NET](https://learn.microsoft.com/en-us/dotnet/framework/get-started/overview).
+
+Cotejo académico en Drive: [bloque 38, Análisis, diseño y construcción de sistemas de información, 2026](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), para prototipado/diseño de interfaces y accesibilidad asociada (3926), análisis y requisitos (3927), despliegue UML (3929) y orientación a objetos (3930); [bloque 29, Bases de datos, 2026](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), para modelado entidad-relación (3928). Se coteja la correspondencia curricular, mientras que las afirmaciones técnicas se apoyan en Aalto, SEI, IBM, OMG, Oracle y Microsoft. Correspondencia con [convocatoria oficial A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3926 A1-94/A2-III-14; 3927 A1-88/A2-III-3; 3928 A1-89/A2-III-4; 3929 A1-92/A2-III-9; 3930 A1-89/93/A2-III-9.
+
+Comprobaciones: inventario y verificador ejecutados tras registrar el lote; resumen superior actualizado con sus resultados.
 
 ## Lote 720 — 5 de noviembre de 2026
 
