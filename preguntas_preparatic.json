@@ -204236,7 +204236,7 @@
       "id": 4081,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a los cuatro tipos de drivers de JDBC, ¿Cuál de ellos requiere la existencia de un servidor intermedio o middleware?",
+      "texto": "En la clasificación arquitectónica tradicional de drivers JDBC, ¿qué tipo utiliza un cliente Java que se comunica con el SGBD a través de un servidor intermedio o middleware?",
       "opciones": [
         "Driver de tipo I",
         "Driver de tipo II",
@@ -204244,63 +204244,270 @@
         "Driver de tipo IV"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se conserva la respuesta tipo 3, pero se precisa que la clasificación 1–4 es una taxonomía arquitectónica de implementaciones JDBC: el tipo 3 emplea un servidor middleware intermedio. No se presenta como garantía normativa de la API ni se recomienda como arquitectura actual frente a drivers directos disponibles.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §9.2 ODBC/JDBC: conectividad, arquitectura del driver y middleware. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular. Para la norma de restricciones y SQL:99 se cita ISO/IEC; la tipología JDBC queda identificada como clasificación arquitectónica."
+      },
+      "etiquetas": [
+        "JDBC",
+        "controlador",
+        "tipo 3",
+        "middleware",
+        "interoperabilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/gettingstarted.html",
+            "referencia": "The Java Tutorials, JDBC Basics: clasificación de implementaciones; el tipo 3 usa cliente Java y habla con un servidor middleware mediante protocolo independiente del gestor, y este accede al origen."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y los apartados 2.3/3.4/5.13/9.2 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se conserva la respuesta tipo 3, pero se precisa que la clasificación 1–4 es una taxonomía arquitectónica de implementaciones JDBC: el tipo 3 emplea un servidor middleware intermedio. No se presenta como garantía normativa de la API ni se recomienda como arquitectura actual frente a drivers directos disponibles. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §9.2 ODBC/JDBC: conectividad, arquitectura del driver y middleware. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4082,
       "bloque": 0,
       "tema": 0,
-      "texto": "El standard SQL99 permite la definición de restricciones de integridad. Indique la respuesta correcta:",
+      "texto": "Según ISO/IEC 9075-2:1999, ¿qué opción enumera únicamente restricciones de integridad admitidas por SQL?",
       "opciones": [
-        "Son tipos válidos de restricciones de integridad los siguientes: UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK",
-        "Son tipos válidos de restricciones de integridad los siguientes: UNIQUE, PRIMARY KEY, FOREIGN KEY, RESTRICT y NOT NULL",
-        "Las restricciones UNIQUE y PRIMARY KEY obligan a que las columnas afectadas sean no nulas.",
-        "En una tabla sólo puede definirse una restricción FOREIGN KEY."
+        "UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK y NOT NULL.",
+        "UNIQUE, PRIMARY KEY, FOREIGN KEY, RESTRICT como tipo de restricción y NOT NULL.",
+        "UNIQUE y PRIMARY KEY permiten siempre NULL en todas sus columnas.",
+        "Una tabla solo puede definir una restricción FOREIGN KEY."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se actualiza la alternativa correcta para enumerar restricciones estándar válidas: UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK y NOT NULL. Se eliminan distractores falsos: RESTRICT es una acción referencial, no una categoría de constraint; UNIQUE no prohíbe por sí solo valores NULL; una tabla puede declarar varias claves foráneas.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.3 y §5.13 cubren restricciones, integridad y acciones SQL. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular. Para la norma de restricciones y SQL:99 se cita ISO/IEC; la tipología JDBC queda identificada como clasificación arquitectónica."
+      },
+      "etiquetas": [
+        "SQL-99",
+        "integridad",
+        "UNIQUE",
+        "PRIMARY KEY",
+        "FOREIGN KEY",
+        "CHECK",
+        "NOT NULL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://courses.cms.caltech.edu/cs123/sql99std/ansi-iso-9075-2-1999.pdf",
+            "referencia": "ISO/IEC 9075-2:1999, §4.17 Integrity: define restricciones UNIQUE, PRIMARY KEY, referential/FOREIGN KEY y CHECK; las cláusulas de columna incluyen NOT NULL. UNIQUE permite nulos salvo que una regla adicional los prohíba, mientras PRIMARY KEY no los permite."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y los apartados 2.3/3.4/5.13/9.2 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se actualiza la alternativa correcta para enumerar restricciones estándar válidas: UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK y NOT NULL. Se eliminan distractores falsos: RESTRICT es una acción referencial, no una categoría de constraint; UNIQUE no prohíbe por sí solo valores NULL; una tabla puede declarar varias claves foráneas. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.3 y §5.13 cubren restricciones, integridad y acciones SQL. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4083,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un driver JDBC de tipo 4 es aquel que cumple:",
+      "texto": "En la clasificación arquitectónica tradicional de JDBC, ¿qué caracteriza a un driver de tipo 4?",
       "opciones": [
-        "Es un driver escrito en java que habla con un middleware en el lado del servidor.",
-        "Es un driver escrito en java que emplea el protocolo nativo de la base de datos.",
-        "Es un driver que habla con la librería nativa de base de datos en el cliente y esta comunica por red con la base de datos.",
-        "JDBC solamente tiene drivers de hasta tipo 3 inclusive."
+        "Cliente Java que se comunica con un middleware mediante un protocolo independiente del SGBD.",
+        "Driver escrito en Java que implementa el protocolo de red propio del SGBD y conecta directamente con él.",
+        "Driver que usa una biblioteca nativa del cliente para comunicarse con el SGBD.",
+        "JDBC solo define drivers de tipo 1 a tipo 3."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se conserva la definición del tipo 4 y se distingue de tipo 3 (middleware) y tipo 2 (biblioteca cliente nativa). La clasificación describe el diseño del driver, no una condición universal para todo driver JDBC moderno.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §9.2 ODBC/JDBC: drivers y protocolos de conectividad. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular. Para la norma de restricciones y SQL:99 se cita ISO/IEC; la tipología JDBC queda identificada como clasificación arquitectónica."
+      },
+      "etiquetas": [
+        "JDBC",
+        "controlador",
+        "tipo 4",
+        "Java puro",
+        "protocolo nativo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/gettingstarted.html",
+            "referencia": "The Java Tutorials, JDBC Basics: los drivers tipo 4 son Java puro e implementan el protocolo de red específico del origen de datos; el cliente conecta directamente."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y los apartados 2.3/3.4/5.13/9.2 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se conserva la definición del tipo 4 y se distingue de tipo 3 (middleware) y tipo 2 (biblioteca cliente nativa). La clasificación describe el diseño del driver, no una condición universal para todo driver JDBC moderno. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §9.2 ODBC/JDBC: drivers y protocolos de conectividad. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4084,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué son las restricciones de integridad?",
+      "texto": "En una base de datos relacional, ¿qué es una restricción de integridad?",
       "opciones": [
-        "Son condiciones sobre el almacenamiento físico de los datos de la base de datos.",
-        "Son condiciones que deben cumplir los datos almacenados en la base de datos relacional.",
-        "Son las restricciones que el sistema de gestión de base de datos impone a los ficheros de la base de datos.",
-        "Son una serie de características que deben cumplir las transacciones."
+        "Una condición sobre la organización o el almacenamiento físico de los archivos.",
+        "Una condición que los datos deben satisfacer y que el SGBD comprueba conforme a la restricción declarada.",
+        "Una limitación que el sistema operativo impone a los ficheros de base de datos.",
+        "Una propiedad que deben cumplir todas las transacciones, sin relación con los valores almacenados."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se precisa que las restricciones de integridad son predicados/condiciones sobre los datos de una base que el SGBD verifica para las operaciones pertinentes; no son restricciones de almacenamiento físico ni propiedades de transacciones.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.3 y §5.13 cubren integridad referencial y restricciones declarativas. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular. Para la norma de restricciones y SQL:99 se cita ISO/IEC; la tipología JDBC queda identificada como clasificación arquitectónica."
+      },
+      "etiquetas": [
+        "SGBD",
+        "integridad",
+        "restricciones declarativas",
+        "datos relacionales"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://courses.cms.caltech.edu/cs123/sql99std/ansi-iso-9075-2-1999.pdf",
+            "referencia": "ISO/IEC 9075-2:1999, §4.17: las restricciones de integridad especifican condiciones que deben satisfacer las filas/datos, incluidas unicidad, referencia y CHECK."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y los apartados 2.3/3.4/5.13/9.2 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se precisa que las restricciones de integridad son predicados/condiciones sobre los datos de una base que el SGBD verifica para las operaciones pertinentes; no son restricciones de almacenamiento físico ni propiedades de transacciones. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.3 y §5.13 cubren integridad referencial y restricciones declarativas. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4085,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las alternativas siguientes no corresponde a un operador fundamental del álgebra relacional?",
+      "texto": "En la base habitual del álgebra relacional formada por selección, proyección, unión, diferencia, producto cartesiano y renombrado, ¿qué operador se deriva combinando producto cartesiano y selección?",
       "opciones": [
-        "Join",
-        "Selección",
-        "Diferencia",
-        "Proyección"
+        "Join (reunión).",
+        "Selección.",
+        "Diferencia.",
+        "Proyección."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se acota el término “fundamental”, que depende de la base algebraica elegida. En la base habitual de selección, proyección, unión, diferencia, producto cartesiano y renombrado, el join se deriva del producto cartesiano seguido de selección; por eso Join es la respuesta. No se afirma que toda formulación del álgebra lo excluya de su conjunto de operadores.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §3.4 aborda álgebra relacional; los temas oficiales incluyen modelo lógico relacional e interoperabilidad/modelo relacional. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5, III-4).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular. Para la norma de restricciones y SQL:99 se cita ISO/IEC; la tipología JDBC queda identificada como clasificación arquitectónica."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "álgebra relacional",
+        "operadores primitivos",
+        "join",
+        "producto cartesiano"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1145/362384.362685",
+            "referencia": "E. F. Codd, A Relational Model of Data for Large Shared Data Banks (1970), §2, operaciones sobre relaciones; fundamento del álgebra relacional."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y los apartados 2.3/3.4/5.13/9.2 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5, III-4."
+          }
+        ],
+        "observaciones": "Se acota el término “fundamental”, que depende de la base algebraica elegida. En la base habitual de selección, proyección, unión, diferencia, producto cartesiano y renombrado, el join se deriva del producto cartesiano seguido de selección; por eso Join es la respuesta. No se afirma que toda formulación del álgebra lo excluya de su conjunto de operadores. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §3.4 aborda álgebra relacional; los temas oficiales incluyen modelo lógico relacional e interoperabilidad/modelo relacional. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5, III-4)."
+      }
     },
     {
       "id": 4086,

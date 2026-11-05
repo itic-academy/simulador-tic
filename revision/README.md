@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 751 (IDs 4076–4080). Acumulado: 4075 preguntas examinadas individualmente, 3995 verificadas (774 vigentes, 2904 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8048 sin revisar individualmente. Hay 3363 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 752 (IDs 4081–4085). Acumulado: 4080 preguntas examinadas individualmente, 4000 verificadas (774 vigentes, 2909 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8043 sin revisar individualmente. Hay 3368 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 752 — 5 de noviembre de 2026
+
+IDs 4081–4085 revisados individualmente; sus versiones originales están preservadas en [cambios-lote-752.json](cambios-lote-752.json).
+
+- **4081 — driver JDBC tipo 3:** se mantiene la respuesta: cliente Java, protocolo independiente del gestor y servidor intermedio/middleware. Se identifica como clasificación arquitectónica tradicional, no como norma que recomiende middleware en todo caso. **Corregida.**
+- **4082 — constraints SQL-99:** se incluye NOT NULL en la enumeración correcta y se corrigen distractores sobre RESTRICT, NULL en UNIQUE y el número de claves foráneas. **Corregida.**
+- **4083 — driver JDBC tipo 4:** se precisa Java puro, protocolo de red del SGBD y conexión directa; se diferencia de los tipos 2 y 3. **Corregida.**
+- **4084 — integridad:** se define como condición sobre los datos que verifica el SGBD, no sobre el almacenamiento físico o las transacciones. **Corregida.**
+- **4085 — álgebra relacional:** se acota la base de operadores; Join es derivado como producto cartesiano seguido de selección dentro de la base declarada. Se evita afirmar que Join no pueda ser primitivo en otras bases. **Corregida.**
+
+Fuentes: [Java Tutorials, tipos de drivers JDBC](https://docs.oracle.com/javase/tutorial/jdbc/basics/gettingstarted.html); [ISO/IEC 9075-2:1999, SQL/Foundation](https://courses.cms.caltech.edu/cs123/sql99std/ansi-iso-9075-2-1999.pdf), §§4.17 y 4.20; [E. F. Codd, modelo relacional (1970)](https://doi.org/10.1145/362384.362685).
+
+Cotejo curricular directo: [bloque 29 «Bases de datos, SQL y modelado de datos», ITIC Academy, versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), consultado en Drive: §9.2 ODBC/JDBC, §§2.3 y 5.13 integridad, §3.4 álgebra relacional. Correspondencia contrastada con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 64, y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4081–4084 A1-64/A2-II-5; 4085 A1-64/A2-II-5/III-4. El texto de ISO fundamenta la regla SQL; Academy documenta encaje curricular y no sustituye al estándar.
+
+Comprobaciones registradas: consulta directa en Drive del índice del bloque 29 y epígrafes aplicables; lectura de ISO/IEC 9075-2:1999 para restricciones y jerarquía; verificación de la arquitectura JDBC con Oracle Java Tutorials y de la base del álgebra con el artículo original de Codd. Inventario, verificador y `git diff --check` se ejecutaron al completar el lote.
 
 ## Lote 751 — 5 de noviembre de 2026
 
