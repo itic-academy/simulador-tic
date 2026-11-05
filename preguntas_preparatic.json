@@ -205070,71 +205070,276 @@
       "id": 4096,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un diagrama Entidad Relación existe una relación n:m entre dos entidades: Alumno y Profesor. Un profesor puede dar clases a muchos alumnos, y un alumno puede tener muchos profesores, ¿Cuántas tablas son necesarias como mínimo para implementar en el modelo físico esa relación en primera forma normal si se hace utilizando una base de datos relacional?",
+      "texto": "Al transformar a tablas un modelo entidad-relación relacional en el que Alumno y Profesor tienen una relación N:M, y manteniendo cada entidad en su propia tabla y la relación en 1FN, ¿cuál es el mínimo habitual de tablas?",
       "opciones": [
-        "Dos.",
-        "Tres.",
-        "Cuatro.",
-        "Cinco."
+        "Dos: basta con añadir columnas repetidas a una de las tablas.",
+        "Tres: una tabla por entidad y una tabla asociativa para las parejas Alumno–Profesor.",
+        "Cuatro: se requiere una tabla por cada cardinalidad de cada extremo.",
+        "Cinco: se requiere una tabla por cada combinación posible de las dos entidades."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se acota el mínimo a un esquema relacional normalizado que conserva separadas las tablas de Alumno y Profesor: una relación M:N necesita una tabla asociativa con las claves de ambas entidades, por tanto tres tablas. Una sola tabla no representa ambas entidades separadas; dos tablas no almacenan las múltiples asociaciones sin repetir grupos/romper 1FN.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §4.7 trata el paso conceptual-lógico; §§2.2–2.3 y diseño relacional sustentan la relación M:N y su tabla asociativa. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5, III-4).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; los detalles de producto y semántica se fundamentan en Oracle, ISO y Microsoft Learn."
+      },
+      "etiquetas": [
+        "modelo entidad-relación",
+        "cardinalidad n:m",
+        "tabla asociativa",
+        "primera forma normal"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/ssms/visual-db-tools/map-many-to-many-relationships-visual-database-tools",
+            "referencia": "Microsoft Learn, Map Many-to-Many Relationships: las relaciones M:N se representan con una tabla de unión adicional, relacionada 1:N con cada tabla principal."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); consulta directa del índice y resumen del bloque y secciones SQL, integridad, diseño, agregación y acceso a datos pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5, III-4."
+          }
+        ],
+        "observaciones": "Se acota el mínimo a un esquema relacional normalizado que conserva separadas las tablas de Alumno y Profesor: una relación M:N necesita una tabla asociativa con las claves de ambas entidades, por tanto tres tablas. Una sola tabla no representa ambas entidades separadas; dos tablas no almacenan las múltiples asociaciones sin repetir grupos/romper 1FN. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §4.7 trata el paso conceptual-lógico; §§2.2–2.3 y diseño relacional sustentan la relación M:N y su tabla asociativa. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5, III-4). ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §4.7 trata el paso conceptual-lógico; §§2.2–2.3 y diseño relacional sustentan la relación M:N y su tabla asociativa. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5, III-4)."
+      }
     },
     {
       "id": 4097,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los cursores de referencia de Pl/SQL:",
+      "texto": "En Oracle PL/SQL, ¿qué afirmación sobre una variable de cursor REF CURSOR es correcta?",
       "opciones": [
-        "son más rápidos que los cursores estándar (o normales)",
-        "pueden aceptar la asociación de variables",
-        "pueden usarse como cursores implícitos en bucles",
-        "pueden aceptar parámetros"
+        "Siempre es más rápida que un cursor explícito estático.",
+        "Puede abrirse para distintas consultas, que pueden incluir variables/bind variables; la variable de cursor en sí no admite parámetros formales.",
+        "Puede utilizarse indistintamente como cursor implícito en un cursor FOR LOOP.",
+        "La variable de cursor acepta parámetros formales igual que una declaración de cursor explícito parametrizado."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se desambigua la frase “asociación de variables”: una variable REF CURSOR puede abrirse para una consulta con variables/bind variables. No se confunde con cursor explícito parametrizado (un cursor variable no acepta parámetros) ni con el subprograma al que puede pasarse como parámetro. Tampoco es necesariamente más rápido.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §9.2 ODBC/JDBC y §5.11 objetos programables cubren capas de acceso y cursores. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; los detalles de producto y semántica se fundamentan en Oracle, ISO y Microsoft Learn."
+      },
+      "etiquetas": [
+        "Oracle",
+        "PL/SQL",
+        "REF CURSOR",
+        "cursor variable",
+        "variables bind",
+        "parámetros"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/lnpls/cursor-variables.html",
+            "referencia": "Oracle AI Database 26 PL/SQL Language Reference, Cursor Variables: un REF CURSOR puede asociarse a consultas distintas y las consultas pueden contener variables; el cursor variable en sí no acepta parámetros y no se puede referenciar en un cursor FOR LOOP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); consulta directa del índice y resumen del bloque y secciones SQL, integridad, diseño, agregación y acceso a datos pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se desambigua la frase “asociación de variables”: una variable REF CURSOR puede abrirse para una consulta con variables/bind variables. No se confunde con cursor explícito parametrizado (un cursor variable no acepta parámetros) ni con el subprograma al que puede pasarse como parámetro. Tampoco es necesariamente más rápido. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §9.2 ODBC/JDBC y §5.11 objetos programables cubren capas de acceso y cursores. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5). ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §9.2 ODBC/JDBC y §5.11 objetos programables cubren capas de acceso y cursores. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4098,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un sistema de base de datos relacional, la regla de integridad de las entidades consiste en que:",
+      "texto": "Según la integridad de entidad en SQL, ¿qué condición debe cumplir una clave primaria declarada?",
       "opciones": [
-        "Una relación debe tener al menos una clave primaria.",
-        "Ningún componente de la clave primaria de una relación puede aceptar nulos.",
-        "La clave primaria de una relación es la única forma de identificar unívocamente a una tupla.",
-        "Si existen varias claves candidatas, la clave primaria es la que tiene menos campos."
+        "La tabla debe tener una sola clave candidata posible.",
+        "Ninguna columna que forme parte de la clave primaria puede contener NULL.",
+        "La clave primaria es la única combinación capaz de identificar una fila.",
+        "Si hay varias claves candidatas, la primaria debe ser la que tenga menos columnas."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se limita la pregunta a la regla de integridad de entidad aplicada a una clave primaria declarada: ninguno de sus componentes puede ser NULL. No se afirma que la clave primaria sea la única identificación lógica posible; puede haber otras claves candidatas/UNIQUE.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.3 integridad (entidad/referencial) y §5.13 constraints SQL. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; los detalles de producto y semántica se fundamentan en Oracle, ISO y Microsoft Learn."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "integridad de entidad",
+        "PRIMARY KEY",
+        "NULL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://courses.cms.caltech.edu/cs123/sql99std/ansi-iso-9075-2-1999.pdf",
+            "referencia": "ISO/IEC 9075-2:1999 SQL/Foundation, §4.17: si una restricción UNIQUE se define como PRIMARY KEY, ninguna columna especificada puede contener NULL."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); consulta directa del índice y resumen del bloque y secciones SQL, integridad, diseño, agregación y acceso a datos pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se limita la pregunta a la regla de integridad de entidad aplicada a una clave primaria declarada: ninguno de sus componentes puede ser NULL. No se afirma que la clave primaria sea la única identificación lógica posible; puede haber otras claves candidatas/UNIQUE. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.3 integridad (entidad/referencial) y §5.13 constraints SQL. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5). ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.3 integridad (entidad/referencial) y §5.13 constraints SQL. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4099,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dada la tabla 'vacunas' con la siguiente estructura de columnas: nasi (número de identificación de ciudadano), cod_punto_vacunacion (identificador del centro de vacunación), fecha_vacunacion y dosis ¿qué resultado devuelve la siguiente consulta SQL? select cod_punto_vacunacion, count(distinct nasi) from vacunas group by cod_punto_vacunacion",
+      "texto": "En la tabla VACUNAS, ¿qué calcula esta consulta para cada punto de vacunación? SELECT cod_punto_vacunacion, COUNT(DISTINCT nasi) FROM vacunas GROUP BY cod_punto_vacunacion",
       "opciones": [
-        "Error de sintaxis.",
-        "Devuelve el número de nasis distintos vacunados en cada punto de vacunación.",
-        "Todas las respuestas son incorrectas.",
-        "Devuelve el número total de vacunas distintas administradas a cada ciudadano (NASI)."
+        "Produce un error porque COUNT no se puede combinar con GROUP BY.",
+        "Devuelve por cada cod_punto_vacunacion el número de valores distintos y no nulos de nasi del grupo.",
+        "Devuelve un único total de dosis distintas administradas a cada ciudadano.",
+        "Devuelve todas las personas distintas vacunadas en toda la tabla, sin separar por centro."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se precisa el resultado: una fila por cada valor de cod_punto_vacunacion y, en cada grupo, el recuento de valores distintos y no nulos de nasi. No cuenta vacunas/dosis ni cuenta ciudadanos por toda la tabla en un único total.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 lenguaje SQL: agregaciones, GROUP BY y NULL. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; los detalles de producto y semántica se fundamentan en Oracle, ISO y Microsoft Learn."
+      },
+      "etiquetas": [
+        "SQL",
+        "GROUP BY",
+        "COUNT DISTINCT",
+        "agregación",
+        "función agregada"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COUNT.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, COUNT: COUNT(DISTINCT expr) cuenta valores distintos no nulos; combinada con GROUP BY se evalúa por cada grupo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); consulta directa del índice y resumen del bloque y secciones SQL, integridad, diseño, agregación y acceso a datos pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se precisa el resultado: una fila por cada valor de cod_punto_vacunacion y, en cada grupo, el recuento de valores distintos y no nulos de nasi. No cuenta vacunas/dosis ni cuenta ciudadanos por toda la tabla en un único total. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 lenguaje SQL: agregaciones, GROUP BY y NULL. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5). ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 lenguaje SQL: agregaciones, GROUP BY y NULL. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4100,
       "bloque": 0,
       "tema": 0,
-      "texto": "En terminología de bases de datos, el lenguaje de definición de datos (LDD) es empleado para:",
+      "texto": "En Oracle SQL, ¿para qué se emplea principalmente el lenguaje de definición de datos (DDL)?",
       "opciones": [
-        "Capacitar a los usuarios a acceder o manipular los datos según estén organizados por su modelo de datos.",
-        "Conceder o suprimir privilegios a los usuarios, es decir, el control del acceso a los datos.",
-        "Determinar la organización interna del modelo lógico de los datos en una base de datos.",
-        "Representar el flujo de datos entre procesos y almacenes de datos lógicos."
+        "Para consultar o manipular las filas según un modelo de datos.",
+        "Para conceder o revocar privilegios; esa función es exclusiva y agota la finalidad del DDL.",
+        "Para definir, modificar y eliminar objetos del esquema, como tablas, vistas y restricciones.",
+        "Para representar el flujo de datos entre procesos y almacenes de un diagrama."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se sustituye la expresión equívoca “organización interna del modelo lógico” por la finalidad comprobable: definir la estructura/esquema de objetos de base de datos (tablas, vistas y restricciones). DDL no es el lenguaje de consultas/manipulación de filas, aunque Oracle también clasifica varias sentencias de privilegios como DDL.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 lenguaje SQL: categorías DDL/DML/DCL/TCL y creación/alteración de objetos. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; los detalles de producto y semántica se fundamentan en Oracle, ISO y Microsoft Learn."
+      },
+      "etiquetas": [
+        "SQL",
+        "DDL",
+        "definición de esquema",
+        "CREATE TABLE",
+        "objetos de base de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Types-of-SQL-Statements.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, Types of SQL Statements: DDL permite crear, alterar y eliminar objetos de esquema."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); consulta directa del índice y resumen del bloque y secciones SQL, integridad, diseño, agregación y acceso a datos pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se sustituye la expresión equívoca “organización interna del modelo lógico” por la finalidad comprobable: definir la estructura/esquema de objetos de base de datos (tablas, vistas y restricciones). DDL no es el lenguaje de consultas/manipulación de filas, aunque Oracle también clasifica varias sentencias de privilegios como DDL. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 lenguaje SQL: categorías DDL/DML/DCL/TCL y creación/alteración de objetos. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5). ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 lenguaje SQL: categorías DDL/DML/DCL/TCL y creación/alteración de objetos. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4101,

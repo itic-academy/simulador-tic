@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 754 (IDs 4091–4095). Acumulado: 4090 preguntas examinadas individualmente, 4010 verificadas (774 vigentes, 2919 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8033 sin revisar individualmente. Hay 3378 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 755 (IDs 4096–4100). Acumulado: 4095 preguntas examinadas individualmente, 4015 verificadas (774 vigentes, 2924 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8028 sin revisar individualmente. Hay 3383 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 755 — 5 de noviembre de 2026
+
+IDs 4096–4100 revisados individualmente; el texto y las claves originales quedan en [cambios-lote-755.json](cambios-lote-755.json).
+
+- **4096 — relación N:M:** se precisa el supuesto de entidades en tablas separadas y una tabla asociativa; tres tablas permiten representar las parejas sin grupos repetidos. **Corregida.**
+- **4097 — REF CURSOR:** se desambigua “asociación de variables”: la consulta abierta por una variable de cursor puede incluir variables/bind; el objeto no acepta parámetros formales y no funciona como cursor implícito de cursor-FOR. **Corregida.**
+- **4098 — integridad de entidad:** se acota a la regla SQL de clave primaria declarada: ninguno de sus componentes admite NULL; otras claves candidatas también pueden identificar tuplas. **Corregida.**
+- **4099 — COUNT(DISTINCT) con GROUP BY:** cuenta, por grupo de centro, NASI distintos no nulos; no cuenta dosis ni produce un único total global. **Corregida.**
+- **4100 — DDL:** se precisa que define/crea, modifica y elimina objetos de esquema; no se limita a describir la organización interna ni a manipular filas. **Corregida.**
+
+Fuentes: [Microsoft Learn, Map Many-to-Many Relationships](https://learn.microsoft.com/en-us/ssms/visual-db-tools/map-many-to-many-relationships-visual-database-tools); [Oracle AI Database 26, Cursor Variables](https://docs.oracle.com/en/database/oracle/oracle-database/26/lnpls/cursor-variables.html); [ISO/IEC 9075-2:1999, SQL/Foundation, §4.17](https://courses.cms.caltech.edu/cs123/sql99std/ansi-iso-9075-2-1999.pdf); [Oracle AI Database 26, COUNT](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COUNT.html) y [tipos de sentencias SQL](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Types-of-SQL-Statements.html).
+
+Cotejo curricular directo: [bloque 29 «Bases de datos, SQL y modelado de datos», ITIC Academy, versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), consultado en Drive: §4.7 paso conceptual-lógico, §§2.2–2.3 claves e integridad, §§5.11/5.13 vistas y restricciones, y §5 SQL/agrupación/DDL; el índice/resumen también recoge cursores y ODBC/JDBC como capas de acceso. Correspondencia contrastada con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 64, y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4096 A1-64/A2-II-5/III-4; 4097–4100 A1-64/A2-II-5. Academy sustenta el encaje curricular, no sustituye los estándares ni la documentación Oracle/Microsoft.
+
+Comprobaciones registradas: se consultó directamente el material de Academy en Drive y los anexos oficiales A1/A2; semántica de REF CURSOR y DDL revisada en documentación Oracle, integridad en ISO/IEC y asociación N:M en Microsoft Learn. `inventario.cjs`, `verificar.cjs` y `git diff --check` se ejecutaron tras el lote.
 
 ## Lote 754 — 5 de noviembre de 2026
 
