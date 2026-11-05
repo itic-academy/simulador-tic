@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 724 (IDs 3941–3945). Acumulado: 3940 preguntas examinadas individualmente, 3862 verificadas (767 vigentes, 2802 corregidas y 293 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8183 sin revisar individualmente. Hay 3233 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 725 (IDs 3946–3950). Acumulado: 3945 preguntas examinadas individualmente, 3867 verificadas (767 vigentes, 2807 corregidas y 293 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8178 sin revisar individualmente. Hay 3238 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 725 — 5 de noviembre de 2026
+
+IDs 3946–3950 revisados individualmente. Enunciados, opciones y claves originales preservados en [cambios-lote-725.json](cambios-lote-725.json).
+
+- **3946 — entrelazado:** distribuye errores en ráfaga entre palabras de código; la corrección la aporta FEC y puede haber latencia. **Corregida.**
+- **3947 — ARP:** resuelve IPv4 a MAC para el enlace local; para un destino remoto se obtiene la MAC del siguiente salto. IPv6 utiliza Neighbor Discovery. **Corregida.**
+- **3948 — RIP:** significa Routing Information Protocol y sirve para intercambiar rutas IP. **Corregida.**
+- **3949 — balanceo:** puede realizarse con appliance dedicado o mediante software; se evita exigir coordinación de cada nodo de la granja. **Corregida.**
+- **3950 — SNMP:** protocolo de gestión para monitorizar y administrar elementos de red. **Corregida.**
+
+Fuentes primarias: [ITU-T G.993.1, §8.4, interleaving frente a ráfagas y latencia](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.993.1-200406-I%21%21PDF-E&lang=e&type=items); [RFC 826, ARP](https://www.rfc-editor.org/rfc/rfc826.html); [RFC 2453, RIP v2](https://www.rfc-editor.org/rfc/rfc2453.html); [F5, balanceadores hardware/software/cloud](https://www.f5.com/products/load-balancing) y [NGINX, balanceo software de aplicaciones](https://nginx.org/en/docs/http/load_balancing.html); [RFC 3411, arquitectura de gestión SNMP](https://www.rfc-editor.org/rfc/rfc3411.html) y [RFC 3416, operaciones](https://www.rfc-editor.org/rfc/rfc3416.html).
+
+Cotejo académico en Drive: [bloque 42, Redes, edición 2026](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) para las cinco preguntas. Correspondencia contrastada con [convocatoria oficial A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3946 A1-108/A2-IV-7; 3947 A1-115/A2-II-8 y IV-8; 3948 A1-108/A2-IV-10; 3949 A1-119/A2-IV-6; 3950 A1-118/A2-IV-9.
+
+Comprobaciones: inventario y verificador ejecutados tras registrar el lote; resumen superior actualizado con resultados.
 
 ## Lote 724 — 5 de noviembre de 2026
 

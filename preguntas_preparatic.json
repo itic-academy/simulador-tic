@@ -196546,71 +196546,281 @@
       "id": 3946,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Para qué se utiliza el entrelazado de bits en la transmisión de información?",
+      "texto": "¿Para qué se utiliza el entrelazado de bits/símbolos cuando se combina con un código de corrección de errores (FEC)?",
       "opciones": [
-        "para proporcionar una sencilla manera de cifrado y conseguir la confidencialidad",
-        "para evitar que fallos de transmisión afecten a bits consecutivos y se pierda información",
-        "para obtener un código de redundancia cíclica que prevenga de errores en recepción",
-        "Además de evitar los fallos de transmisión (los llamados errores de ráfaga) evita que se introduzca una mayor latencia en el sistema agilizando la comunicación"
+        "Para cifrar los datos y proporcionar confidencialidad.",
+        "Para repartir una ráfaga de errores entre varias palabras de código y facilitar que el FEC la corrija, dentro de su capacidad.",
+        "Para calcular por sí mismo un CRC y detectar cualquier error.",
+        "Para eliminar errores sin redundancia y reducir siempre la latencia."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El entrelazado reordena los símbolos/bits antes de transmitir para repartir una ráfaga de errores entre varias palabras de código. No elimina los errores por sí solo: la corrección depende del código FEC asociado y de su capacidad. Puede añadir latencia, por lo que la profundidad se ajusta al equilibrio entre protección y demora. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de medios de transmisión y robustez frente a errores (A1 108/A2 IV-7). La acción exacta del entrelazador y su relación con FEC se contrasta con la recomendación técnica de ITU-T citada.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de medios de transmisión y robustez frente a errores (A1 108/A2 IV-7). La acción exacta del entrelazador y su relación con FEC se contrasta con la recomendación técnica de ITU-T citada.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "entrelazado",
+        "errores en ráfaga",
+        "Reed-Solomon",
+        "FEC",
+        "latencia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.993.1-200406-I%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T G.993.1, §8.4.1: interleaving protects against bursts by spreading errors over several Reed–Solomon codewords; the depth can be adjusted to meet latency requirements. It redistributes errors; error correction requires the associated code."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de medios de transmisión y robustez frente a errores (A1 108/A2 IV-7). La acción exacta del entrelazador y su relación con FEC se contrasta con la recomendación técnica de ITU-T citada."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) IV-7."
+          }
+        ],
+        "observaciones": "El entrelazado reordena los símbolos/bits antes de transmitir para repartir una ráfaga de errores entre varias palabras de código. No elimina los errores por sí solo: la corrección depende del código FEC asociado y de su capacidad. Puede añadir latencia, por lo que la profundidad se ajusta al equilibrio entre protección y demora. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de medios de transmisión y robustez frente a errores (A1 108/A2 IV-7). La acción exacta del entrelazador y su relación con FEC se contrasta con la recomendación técnica de ITU-T citada."
+      }
     },
     {
       "id": 3947,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué protocolo puede encontrar la dirección MAC de un computador, dada su dirección IP?",
+      "texto": "En una red Ethernet IPv4, ¿qué protocolo permite resolver la dirección MAC del siguiente salto a partir de su dirección IPv4?",
       "opciones": [
-        "RARP",
-        "DHCP",
-        "ARP",
-        "Proxy RARP"
+        "RARP.",
+        "DHCP.",
+        "ARP.",
+        "Proxy RARP."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "ARP resuelve una dirección IPv4 en la dirección de enlace Ethernet necesaria para enviar en la red local. Si el destino está fuera de la subred, el equipo resuelve la MAC del siguiente salto (normalmente el router), no la MAC remota. Para IPv6 se usa Neighbor Discovery, no ARP. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de direccionamiento IP y LAN (A1 115/A2 II-8 y IV-8). La resolución de direcciones y su alcance local se comprueban con RFC 826.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8",
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de direccionamiento IP y LAN (A1 115/A2 II-8 y IV-8). La resolución de direcciones y su alcance local se comprueban con RFC 826.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "ARP",
+        "IPv4",
+        "dirección MAC",
+        "resolución de direcciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc826.html",
+            "referencia": "RFC 826, Address Resolution Protocol: maps protocol addresses (including IPv4) to local-network hardware/Ethernet addresses for transmission on the directly connected link; routing first selects the next hop."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de direccionamiento IP y LAN (A1 115/A2 II-8 y IV-8). La resolución de direcciones y su alcance local se comprueban con RFC 826."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 115."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-8, IV-8."
+          }
+        ],
+        "observaciones": "ARP resuelve una dirección IPv4 en la dirección de enlace Ethernet necesaria para enviar en la red local. Si el destino está fuera de la subred, el equipo resuelve la MAC del siguiente salto (normalmente el router), no la MAC remota. Para IPv6 se usa Neighbor Discovery, no ARP. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de direccionamiento IP y LAN (A1 115/A2 II-8 y IV-8). La resolución de direcciones y su alcance local se comprueban con RFC 826."
+      }
     },
     {
       "id": 3948,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuál es el significado de las sigla RIP:",
+      "texto": "¿Qué significa la sigla RIP en el contexto de los protocolos de encaminamiento IP?",
       "opciones": [
-        "Routing Improved Protocol",
-        "Routing Inner Protocol",
-        "Routing Information Protocol",
-        "Ninguna de las anteriores"
+        "Routing Improved Protocol.",
+        "Routing Inner Protocol.",
+        "Routing Information Protocol.",
+        "Remote Internet Procedure."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "RIP significa Routing Information Protocol. Es un protocolo de encaminamiento interior de vector-distancia; el nombre de la opción correcta se conserva y se elimina el error de número en «sigla». ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de protocolos de encaminamiento (A1 108/A2 IV-10). El nombre y el comportamiento protocolario se verifican con RFC 2453.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de protocolos de encaminamiento (A1 108/A2 IV-10). El nombre y el comportamiento protocolario se verifican con RFC 2453.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "RIP",
+        "encaminamiento",
+        "protocolo vector-distancia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc2453.html",
+            "referencia": "RFC 2453 (RIP Version 2): specifies RIP as an IP routing protocol through which routers exchange routing information and compute routes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de protocolos de encaminamiento (A1 108/A2 IV-10). El nombre y el comportamiento protocolario se verifican con RFC 2453."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) IV-10."
+          }
+        ],
+        "observaciones": "RIP significa Routing Information Protocol. Es un protocolo de encaminamiento interior de vector-distancia; el nombre de la opción correcta se conserva y se elimina el error de número en «sigla». ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de protocolos de encaminamiento (A1 108/A2 IV-10). El nombre y el comportamiento protocolario se verifican con RFC 2453."
+      }
     },
     {
       "id": 3949,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿De qué manera se puede balancear una granja de servidores?",
+      "texto": "¿Qué afirmación describe correctamente formas habituales de distribuir tráfico entre los servidores de una granja?",
       "opciones": [
-        "Se puede utilizar un balanceador hardware si hay comunicación entre los nodos de la granja",
-        "Se puede utilizar un software cargado en cada nodo para repartir la carga entre los mismos",
-        "Se puede hacer el balanceo con un balanceador hardware como con un balanceador software",
-        "Ninguna de las respuestas es cierta"
+        "Sólo puede hacerse mediante una tarjeta de red especial instalada en cada servidor.",
+        "Sólo puede hacerse con un proceso de software que se ejecute en todos los nodos y reparta entre ellos.",
+        "Puede hacerse con un appliance dedicado o con una solución de balanceo software; también hay servicios cloud.",
+        "No es posible balancear tráfico entre varios servidores."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Una granja puede recibir tráfico mediante un appliance dedicado de balanceo o mediante una solución software, por ejemplo un proxy inverso como NGINX; también existen servicios cloud. No es necesario que todos los nodos ejecuten el algoritmo de reparto ni que se imponga una topología interna concreta. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de granjas de servidores y reparto de tráfico; correspondencia directa con A1 119 (granjas) y A2 IV-6 (alta disponibilidad y balanceo de carga). Se contrastan implementaciones appliance y software.",
+      "clasificacion": {
+        "A1": [
+          "A1-119"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de granjas de servidores y reparto de tráfico; correspondencia directa con A1 119 (granjas) y A2 IV-6 (alta disponibilidad y balanceo de carga). Se contrastan implementaciones appliance y software.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "balanceo de carga",
+        "granja de servidores",
+        "hardware",
+        "software",
+        "alta disponibilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.f5.com/products/load-balancing",
+            "referencia": "F5 describes load-balancing solutions in hardware, software, SaaS and cloud-native deployments; BIG-IP LTM distributes traffic among application/server instances."
+          },
+          {
+            "url": "https://nginx.org/en/docs/http/load_balancing.html",
+            "referencia": "NGINX official documentation: NGINX software can distribute requests across several application-server instances using round-robin, least-connected, IP-hash and other methods."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de granjas de servidores y reparto de tráfico; correspondencia directa con A1 119 (granjas) y A2 IV-6 (alta disponibilidad y balanceo de carga). Se contrastan implementaciones appliance y software."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 119."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) IV-6."
+          }
+        ],
+        "observaciones": "Una granja puede recibir tráfico mediante un appliance dedicado de balanceo o mediante una solución software, por ejemplo un proxy inverso como NGINX; también existen servicios cloud. No es necesario que todos los nodos ejecuten el algoritmo de reparto ni que se imponga una topología interna concreta. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de granjas de servidores y reparto de tráfico; correspondencia directa con A1 119 (granjas) y A2 IV-6 (alta disponibilidad y balanceo de carga). Se contrastan implementaciones appliance y software."
+      }
     },
     {
       "id": 3950,
       "bloque": 0,
       "tema": 0,
-      "texto": "El protocolo SNMP:",
+      "texto": "¿Cuál es la función principal del protocolo SNMP (Simple Network Management Protocol)?",
       "opciones": [
-        "Es un protocolo de gestión de redes",
-        "Es un protocolo de mensajería electrónica",
-        "Es un protocolo de gestión de protocolos",
-        "Es un protocolo de mensajería simple"
+        "Intercambiar información y operaciones para monitorizar y administrar dispositivos de red.",
+        "Enviar y recibir correo electrónico entre usuarios.",
+        "Negociar qué protocolos de aplicación pueden usar los equipos.",
+        "Transmitir mensajes de texto breves entre teléfonos móviles."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "SNMP (Simple Network Management Protocol) es un protocolo de gestión de redes: permite intercambiar operaciones y notificaciones de gestión entre gestores/agentes para supervisar y administrar elementos de red. No es mensajería de correo ni un protocolo que gestione otros protocolos. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de gestión y monitorización de redes; correspondencia expresa con A1 118 (SNMP) y A2 IV-9 (administración y monitorización LAN).",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de gestión y monitorización de redes; correspondencia expresa con A1 118 (SNMP) y A2 IV-9 (administración y monitorización LAN).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "SNMP",
+        "gestión de redes",
+        "monitorización",
+        "MIB"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3411.html",
+            "referencia": "RFC 3411 (STD 62), §1.2: an SNMP management system includes a management protocol used to convey management information between SNMP entities; managers monitor/control managed elements."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3416.html",
+            "referencia": "RFC 3416: defines SNMP protocol operations (Get, Set, Response, notifications, etc.) for conveying management information."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de gestión y monitorización de redes; correspondencia expresa con A1 118 (SNMP) y A2 IV-9 (administración y monitorización LAN)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 118."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) IV-9."
+          }
+        ],
+        "observaciones": "SNMP (Simple Network Management Protocol) es un protocolo de gestión de redes: permite intercambiar operaciones y notificaciones de gestión entre gestores/agentes para supervisar y administrar elementos de red. No es mensajería de correo ni un protocolo que gestione otros protocolos. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de gestión y monitorización de redes; correspondencia expresa con A1 118 (SNMP) y A2 IV-9 (administración y monitorización LAN)."
+      }
     },
     {
       "id": 3951,
