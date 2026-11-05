@@ -1,6 +1,22 @@
-# Revisión del banco TIC — estado al 3 de noviembre de 2026
+# Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 711 (IDs 3871–3875). Acumulado: 3875 preguntas examinadas individualmente, 3797 verificadas (752 vigentes, 2758 corregidas y 287 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8248 sin revisar individualmente. Hay 3180 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 712 (IDs 3876–3880). Acumulado: 3880 preguntas examinadas individualmente, 3802 verificadas (752 vigentes, 2763 corregidas y 287 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8243 sin revisar individualmente. Hay 3185 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 712 — 5 de noviembre de 2026
+
+IDs 3876–3880 revisados individualmente frente a la recomendación ITU-R BT.601-7 y textos consolidados del BOE; se contrastó la cobertura curricular con los bloques de ITIC Academy accesibles en Drive y los programas oficiales A1/A2. Los registros originales íntegros se conservan en [cambios-lote-712.json](cambios-lote-712.json).
+
+- **3876 — vídeo digital 4:2:2:** la luminancia Y se muestrea a 13,5 MHz y cada diferencia de color a 6,75 MHz según BT.601-7. La clave se mantiene; se precisa el enunciado. **Corregida.**
+- **3877 — decreto-ley:** el art. 86.3 permite que las Cortes tramiten el decreto-ley como proyecto de ley por el procedimiento de urgencia durante el plazo de treinta días. Se aclara que no es una facultad exclusiva del Congreso. **Corregida.**
+- **3878 — plazos judiciales electrónicos:** para los plazos que deben cumplir las oficinas judiciales, el art. 32.4 de la Ley 18/2011 toma la fecha y hora de presentación en el propio registro. Se diferencia del apartado 3, referido a la presentación de los interesados en día inhábil procesal. **Corregida.**
+- **3879 — control de las CCAA:** el art. 153.c CE atribuye a la jurisdicción contencioso-administrativa el control de la Administración autónoma y sus normas reglamentarias. Se mantiene la clave. **Corregida.**
+- **3880 — organización territorial:** el capítulo II del Título VIII CE es «De la Administración Local», arts. 140–142. Se formula la pregunta sobre el título exacto del capítulo. **Corregida.**
+
+Fuentes primarias: [ITU-R BT.601-7, norma y publicaciones](https://www.itu.int/rec/R-REC-BT.601/en) y [texto de BT.601-7 con frecuencias/tablas de muestreo](https://www.itu.int/dms_pubrec/itu-r/rec/bt/r-rec-bt.601-7-201103-i%21%21pdf-e.pdf); [Constitución Española, texto consolidado BOE, arts. 86, 153 y Título VIII](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229); [Ley 18/2011, texto consolidado BOE, art. 32](https://www.boe.es/eli/es/l/2011/07/05/18/con/20200429).
+
+Cotejo académico: [bloque 42, Redes, ITIC Academy 2026.1](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk): cubre telecomunicaciones y vídeo en sentido general, sin mención literal de BT.601 o muestreo 4:2:2 (3876). [Bloque 01, Constitución, Estado y AGE, 2026](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk): trata el art. 86.3 y su tramitación urgente, la organización territorial y Administración Local; también recoge la pregunta A1 de 2025 del art. 153 (3877, 3879, 3880). [Bloque 03, Actuación Administrativa, 2026](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk): aborda registro y cómputo general LPAC, pero no se halló la regla específica judicial de la Ley 18/2011; por ello se cita directamente su art. 32.4 (3878). Cobertura académica cotejada, no utilizada como autoridad de la respuesta. Correspondencia con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3876 A1-108/A2-IV-16; 3877 A1-1/A2-I-2; 3878 A1-22/A2-I-9; 3879–3880 A1-3/A2-I-1.
+
+Comprobaciones: inventario y verificador ejecutados tras registrar el lote; resumen superior actualizado con sus resultados.
 
 ## Lote 711 — 5 de noviembre de 2026
 
