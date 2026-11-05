@@ -18,6 +18,8 @@ Cotejo académico directo en Drive: [ITIC Academy, bloque 03](https://drive.goog
 
 Verificaciones: las cinco preguntas se cotejaron individualmente con el texto consolidado BOE, los dos bloques de Academy y `temario-oficial.json`; la ausencia de correspondencia A2 específica se conserva como tal. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
+Despliegue de esta versión: GitHub Actions `pages build and deployment` [run 42103792272](https://github.com/itic-academy/simulador-tic/actions/runs/42103792272) terminó correctamente para el commit `40e3698d28a601fa6e14ea46974766f28999effb`; el estado de deployment fue `success` y la URL de Pages respondió HTTP 200.
+
 ## Lote 757 — 5 de noviembre de 2026
 
 IDs 4106–4110 revisados individualmente; se preservan enunciados, opciones y claves originales en [cambios-lote-757.json](cambios-lote-757.json).
