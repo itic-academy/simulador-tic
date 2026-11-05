@@ -1,0 +1,367 @@
+{
+  "fecha": "2026-11-05",
+  "alcance": "IDs 4066–4070; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 4066,
+      "original": {
+        "id": 4066,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una base de datos relacional en la que se tiene información guardada en una tabla de provincias y además se dispone de una tabla de municipios donde parte de la clave es la provincia, ¿se puede borrar un elemento de la tabla de provincias manteniendo la integridad del sistema?",
+        "opciones": [
+          "Si, una vez que los municipios ya existen no hay ningún problema.",
+          "Si, aunque no podría dar de alta nuevos municipios de esa provincia.",
+          "Sólo si no hay ninguna población perteneciente a esa provincia.",
+          "No, la tabla de provincias no puede cambiar ya que son un elemento estable."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4066,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Oracle Database, una tabla MUNICIPIO contiene una clave foránea a PROVINCIA y la acción referencial es la predeterminada (sin ON DELETE CASCADE ni SET NULL). ¿Cuándo se puede borrar una fila de PROVINCIA sin violar la integridad referencial?",
+        "opciones": [
+          "Siempre: las filas MUNICIPIO existentes no afectan a la clave foránea.",
+          "Siempre que se impida crear nuevos municipios después del borrado, aunque existan municipios que la referencien.",
+          "Solo si ninguna fila de MUNICIPIO referencia la clave de esa provincia.",
+          "Nunca: una tabla padre no puede tener filas borradas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se fija la condición omitida en el original: bajo una FK que usa la acción predeterminada (sin CASCADE, SET NULL ni reasignación), solo se borra la provincia si ningún municipio la referencia. De lo contrario, eliminarla viola integridad referencial y se rechaza. No se prohíbe borrar provincias en general ni se debe confundir municipio con población.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.3 cubre integridad referencial y relaciones padre/hija; Oracle documenta la acción predeterminada y las opciones ON DELETE. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+          "estado": "revisada",
+          "nota": "Cotejo curricular temático documentado; se mantienen separados el alcance SQL y el modelo relacional formal."
+        },
+        "etiquetas": [
+          "modelo relacional",
+          "integridad referencial",
+          "FOREIGN KEY",
+          "ON DELETE",
+          "tabla padre e hija"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/adfns/data-integrity.html",
+              "referencia": "Oracle AI Database 26, Maintaining Data Integrity: por defecto se impide borrar/actualizar una clave padre referenciada; ON DELETE CASCADE/SET NULL son acciones alternativas explícitas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+            }
+          ],
+          "observaciones": "Se fija la condición omitida en el original: bajo una FK que usa la acción predeterminada (sin CASCADE, SET NULL ni reasignación), solo se borra la provincia si ningún municipio la referencia. De lo contrario, eliminarla viola integridad referencial y se rechaza. No se prohíbe borrar provincias en general ni se debe confundir municipio con población. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.3 cubre integridad referencial y relaciones padre/hija; Oracle documenta la acción predeterminada y las opciones ON DELETE. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+        }
+      }
+    },
+    {
+      "id": 4067,
+      "original": {
+        "id": 4067,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Las vistas de una base de datos:",
+        "opciones": [
+          "Son tablas virtuales que se definen sobre una o más tablas reales y de las que sólo se almacena su definición",
+          "Son las distintas formas de representación del modelo conceptual de datos",
+          "Son las formas en las que se puede almacenar físicamente la información, dependiendo de las características del sistema informático",
+          "No se corresponden con nada de lo anterior"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4067,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En SQL, ¿qué describe una vista relacional ordinaria (no materializada)?",
+        "opciones": [
+          "Una tabla lógica definida mediante una consulta sobre una o más tablas/vistas; almacena su definición, pero no persiste por sí sola el resultado de esa consulta.",
+          "Una forma de representar el modelo conceptual, sin relación con consultas sobre tablas.",
+          "Una estructura que determina el almacenamiento físico según las características del equipo.",
+          "Una copia persistida de resultados que se refresca como una vista materializada."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se restringe la definición a una vista relacional ordinaria/no materializada. Su definición es una consulta lógica y no almacena por sí misma un conjunto de resultados; una vista materializada sí persiste resultados. La opción correcta es la que describe la vista ordinaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-63",
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5.11 distingue vistas ordinarias y materializadas; el comportamiento exacto se coteja con Oracle SQL Reference. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+          "estado": "revisada",
+          "nota": "Cotejo curricular temático documentado; se mantienen separados el alcance SQL y el modelo relacional formal."
+        },
+        "etiquetas": [
+          "SGBD",
+          "vista SQL",
+          "vista lógica",
+          "vista materializada"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CREATE-VIEW.html",
+              "referencia": "Oracle AI Database 26 SQL Language Reference, CREATE VIEW: una vista es una tabla lógica definida sobre tablas/vistas base y no contiene datos; se distingue de la vista materializada."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 63, 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+            }
+          ],
+          "observaciones": "Se restringe la definición a una vista relacional ordinaria/no materializada. Su definición es una consulta lógica y no almacena por sí misma un conjunto de resultados; una vista materializada sí persiste resultados. La opción correcta es la que describe la vista ordinaria. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5.11 distingue vistas ordinarias y materializadas; el comportamiento exacto se coteja con Oracle SQL Reference. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+        }
+      }
+    },
+    {
+      "id": 4068,
+      "original": {
+        "id": 4068,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un procedimiento almacenado:",
+        "opciones": [
+          "Es una tabla SQL especial que permite ejecutar procesos batch",
+          "Sólo puede ser usado por el DBA",
+          "Se define mediante la palabra clave CREATE TRIGGER",
+          "Es un conjunto de comandos SQL que pueden almacenarse en el servidor"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4068,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Oracle Database, ¿qué es un procedimiento almacenado?",
+        "opciones": [
+          "Una tabla SQL especial que ejecuta procesos batch.",
+          "Una unidad ejecutable que solo puede invocar el DBA.",
+          "Un trigger que se define mediante CREATE TRIGGER y se dispara por un evento.",
+          "Una unidad de programa almacenada en la base de datos y ejecutada en el servidor; puede incluir sentencias SQL y lógica PL/SQL."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se precisa que un procedimiento almacenado no es solo una lista de sentencias SQL: es una unidad de programa almacenada en la base y ejecutada por el servidor; en Oracle puede ser un subprograma PL/SQL standalone o de paquete e incluir SQL y lógica procedural. Su uso depende de permisos, no exclusivamente del DBA.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5.11 cubre objetos programables de base de datos; Oracle PL/SQL especifica el almacenamiento y la ejecución de procedimientos. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+          "estado": "revisada",
+          "nota": "Cotejo curricular temático documentado; se mantienen separados el alcance SQL y el modelo relacional formal."
+        },
+        "etiquetas": [
+          "SGBD",
+          "procedimiento almacenado",
+          "PL/SQL",
+          "SQL",
+          "subprograma"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/lnpls/nested-package-and-standalone-subprograms.html",
+              "referencia": "Oracle AI Database 26 PL/SQL Language Reference, Nested, Package, and Standalone Subprograms: los subprogramas standalone y de paquete pueden almacenarse en la base de datos y crearse con CREATE PROCEDURE."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+            }
+          ],
+          "observaciones": "Se precisa que un procedimiento almacenado no es solo una lista de sentencias SQL: es una unidad de programa almacenada en la base y ejecutada por el servidor; en Oracle puede ser un subprograma PL/SQL standalone o de paquete e incluir SQL y lógica procedural. Su uso depende de permisos, no exclusivamente del DBA. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5.11 cubre objetos programables de base de datos; Oracle PL/SQL especifica el almacenamiento y la ejecución de procedimientos. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+        }
+      }
+    },
+    {
+      "id": 4069,
+      "original": {
+        "id": 4069,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuándo decimos que una entidad está en 3FN?",
+        "opciones": [
+          "Si está en 2FN y cada atributo que no pertenezca a la clave tiene una dependencia funcional completa de la clave.",
+          "Si está en 2FN y no contiene grupos repetitivos.",
+          "Si está en 2FN y no contiene atributos multivaluados.",
+          "Si está en 2FN y cada atributo que no pertenezca a la clave no depende transitivamente de dicha clave."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4069,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una relación, ¿cuál es la condición formal de tercera forma normal (3FN)?",
+        "opciones": [
+          "Estar en 2FN y no tener grupos repetitivos.",
+          "Estar en 2FN y no tener atributos multivaluados.",
+          "Para toda dependencia funcional no trivial X → A, X es superclave o A es un atributo primo.",
+          "Que todo atributo no primo dependa transitivamente de la clave primaria elegida."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se reemplaza la regla escolar ambigua “sin dependencias transitivas de la clave” por la condición formal: para toda dependencia funcional no trivial X→A, X debe ser superclave o A debe ser atributo primo. Así se manejan correctamente todas las claves candidatas y no solo la primaria elegida.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-III-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.2 cubren dependencias funcionales y formas normales; se usa la definición formal de 3FN, válida respecto de todos los determinantes. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4).",
+          "estado": "revisada",
+          "nota": "Cotejo curricular temático documentado; se mantienen separados el alcance SQL y el modelo relacional formal."
+        },
+        "etiquetas": [
+          "modelo relacional",
+          "normalización",
+          "3FN",
+          "dependencia funcional",
+          "clave candidata",
+          "atributo primo"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf",
+              "referencia": "Codd, Further Normalization of the Data Base Relational Model (1971), §3.3: definición de tercera forma normal respecto de claves candidatas y atributos no primos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+            }
+          ],
+          "observaciones": "Se reemplaza la regla escolar ambigua “sin dependencias transitivas de la clave” por la condición formal: para toda dependencia funcional no trivial X→A, X debe ser superclave o A debe ser atributo primo. Así se manejan correctamente todas las claves candidatas y no solo la primaria elegida. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.2 cubren dependencias funcionales y formas normales; se usa la definición formal de 3FN, válida respecto de todos los determinantes. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4)."
+        }
+      }
+    },
+    {
+      "id": 4070,
+      "original": {
+        "id": 4070,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una relación está en segunda forma normal si:",
+        "opciones": [
+          "Está en 1FN y todos son atributos toman un sólo valor",
+          "Está en 1FN y todos sus atributos no pertenecientes a claves candidatas dependen de forma completa de la clave",
+          "Está en 1FN y sus atributos pertenecen al dominio de la información",
+          "Está en 1FN y ningún atributo depende funcionalmente de la clave"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4070,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es la condición formal de segunda forma normal (2FN) para una relación?",
+        "opciones": [
+          "Estar en 1FN; no se requiere ninguna condición sobre dependencias parciales.",
+          "Estar en 1FN y que cada atributo no primo dependa funcionalmente de la clave candidata completa en cada clave candidata, no de un subconjunto propio.",
+          "Estar en 1FN y que todos los atributos pertenezcan a los dominios declarados.",
+          "Estar en 1FN y que ningún atributo dependa funcionalmente de ninguna clave."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se formaliza la 2FN: relación en 1FN y todo atributo no primo depende funcionalmente de la clave candidata completa, no de un subconjunto propio de cualquiera de sus claves candidatas. La dependencia completa solo plantea un riesgo nuevo cuando una clave es compuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-III-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§2.2 y 3.1–3.2 cubren claves candidatas, dependencias funcionales y 2FN; la condición se formula para toda clave candidata. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4).",
+          "estado": "revisada",
+          "nota": "Cotejo curricular temático documentado; se mantienen separados el alcance SQL y el modelo relacional formal."
+        },
+        "etiquetas": [
+          "modelo relacional",
+          "normalización",
+          "2FN",
+          "dependencia funcional completa",
+          "clave candidata"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf",
+              "referencia": "Codd, Further Normalization (1971): 2FN requiere 1FN y ausencia de dependencias parciales de atributos no primos respecto de una clave candidata."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+            }
+          ],
+          "observaciones": "Se formaliza la 2FN: relación en 1FN y todo atributo no primo depende funcionalmente de la clave candidata completa, no de un subconjunto propio de cualquiera de sus claves candidatas. La dependencia completa solo plantea un riesgo nuevo cuando una clave es compuesta. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§2.2 y 3.1–3.2 cubren claves candidatas, dependencias funcionales y 2FN; la condición se formula para toda clave candidata. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4)."
+        }
+      }
+    }
+  ]
+}

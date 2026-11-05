@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-749.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+const boeA1='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',boeA2='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262';
+const academy={url:'https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk',name:'ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026)'};
+const map={
+ 4066:{a1:['64'],a2:['II-5'],a:'§2.3 cubre integridad referencial y relaciones padre/hija; Oracle documenta la acción predeterminada y las opciones ON DELETE.'},
+ 4067:{a1:['63','64'],a2:['II-5'],a:'§5.11 distingue vistas ordinarias y materializadas; el comportamiento exacto se coteja con Oracle SQL Reference.'},
+ 4068:{a1:['64'],a2:['II-5'],a:'§5.11 cubre objetos programables de base de datos; Oracle PL/SQL especifica el almacenamiento y la ejecución de procedimientos.'},
+ 4069:{a1:['64'],a2:['III-4'],a:'§§3.1–3.2 cubren dependencias funcionales y formas normales; se usa la definición formal de 3FN, válida respecto de todos los determinantes.'},
+ 4070:{a1:['64'],a2:['III-4'],a:'§§2.2 y 3.1–3.2 cubren claves candidatas, dependencias funcionales y 2FN; la condición se formula para toda clave candidata.'}
+};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=map[c.id];assert.ok(q?.revision&&q.clasificacion&&m,'Falta revisión/cotejo '+c.id);for(const id of [...m.a1.map(n=>'A1-'+n),...m.a2.map(n=>'A2-'+n)])assert.ok(official.has(id),'Tema desconocido '+id);q.clasificacion.A1=m.a1.map(n=>'A1-'+n);q.clasificacion.A2=m.a2.map(n=>'A2-'+n);q.clasificacion.bloque_academia=academy.name+'; '+m.a+' Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) '+m.a1.join(', ')+'), y A2 GSI 2025, anexo IX (tema(s) '+m.a2.join(', ')+').';q.clasificacion.nota='Cotejo curricular temático documentado; se mantienen separados el alcance SQL y el modelo relacional formal.';q.revision.observaciones+=' '+q.clasificacion.bloque_academia;c.actualizada=structuredClone(q);for(const f of [{url:academy.url,referencia:academy.name+'; cotejo directo de las secciones pertinentes.'},{url:boeA1,referencia:'Convocatoria oficial A1 GSI 2025, anexo I: tema(s) '+m.a1.join(', ')+'.'},{url:boeA2,referencia:'Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) '+m.a2.join(', ')+'.'}])if(!q.revision.fuentes.some(x=>x.url===f.url))q.revision.fuentes.push(f);c.actualizada=structuredClone(q)}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo directo de ITIC Academy bloque 29 y clasificación A1/A2 aplicados a 4066–4070.');

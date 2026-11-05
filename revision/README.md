@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 748 (IDs 4061–4065). Acumulado: 4060 preguntas examinadas individualmente, 3980 verificadas (774 vigentes, 2889 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8063 sin revisar individualmente. Hay 3348 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 749 (IDs 4066–4070). Acumulado: 4065 preguntas examinadas individualmente, 3985 verificadas (774 vigentes, 2894 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8058 sin revisar individualmente. Hay 3353 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 749 — 5 de noviembre de 2026
+
+IDs 4066–4070 revisados individualmente; originales preservados en [cambios-lote-749.json](cambios-lote-749.json).
+
+- **4066 — borrado de provincia y FOREIGN KEY:** se precisa la acción predeterminada: no se borra la fila padre mientras algún municipio la referencie; CASCADE/SET NULL cambian la condición. **Corregida.**
+- **4067 — vista SQL:** se acota a una vista relacional ordinaria, que contiene la definición lógica y no persiste resultados como una vista materializada. **Corregida.**
+- **4068 — procedimiento almacenado:** se corrige que no es solo una lista de SQL: es una unidad de programa del servidor que puede combinar SQL y lógica procedural; se limita a Oracle. **Corregida.**
+- **4069 — tercera forma normal:** se usa la condición formal para cada dependencia funcional no trivial: determinante superclave o atributo dependiente primo. **Corregida.**
+- **4070 — segunda forma normal:** se exige dependencia completa de cada atributo no primo respecto de cada clave candidata, no de un subconjunto propio. **Corregida.**
+
+Fuentes: [Oracle AI Database 26, integridad referencial](https://docs.oracle.com/en/database/oracle/oracle-database/26/adfns/data-integrity.html); [Oracle AI Database 26, CREATE VIEW](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CREATE-VIEW.html); [Oracle AI Database 26, stored subprograms](https://docs.oracle.com/en/database/oracle/oracle-database/26/lnpls/nested-package-and-standalone-subprograms.html); [Codd, Further Normalization of the Data Base Relational Model (1971)](https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf).
+
+Cotejo académico directo: [bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), consultado en Drive. §2.3 integridad referencial; §5.11 vistas y objetos programables; §§2.2 y 3.1–3.2 claves, dependencias y formas normales. Correspondencia con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4066 A1-64/A2-II-5; 4067 A1-63/64-A2-II-5; 4068 A1-64/A2-II-5; 4069–4070 A1-64/A2-III-4. El cotejo de Academy fija el encaje temático; Oracle/Codd fundamentan definiciones y semántica.
+
+Comprobaciones: se leyó directamente en Drive el bloque 29, incluidas integridad, vistas/objetos programables, claves y normalización; se contrastaron las acciones FOREIGN KEY y el comportamiento de vistas/procedimientos con Oracle Database 26 y las formas normales con Codd. No quedan dudas registradas. Inventario y verificador ejecutados tras el lote.
 
 ## Lote 748 — 5 de noviembre de 2026
 
