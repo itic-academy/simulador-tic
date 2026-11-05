@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 749 (IDs 4066–4070). Acumulado: 4065 preguntas examinadas individualmente, 3985 verificadas (774 vigentes, 2894 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8058 sin revisar individualmente. Hay 3353 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 750 (IDs 4071–4075). Acumulado: 4070 preguntas examinadas individualmente, 3990 verificadas (774 vigentes, 2899 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8053 sin revisar individualmente. Hay 3358 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 750 — 5 de noviembre de 2026
+
+IDs 4071–4075 revisados individualmente; los originales íntegros se conservan en [cambios-lote-750.json](cambios-lote-750.json).
+
+- **4071 — DDL:** se precisa Oracle SQL; `CREATE` define objetos, mientras que `SELECT`, `INSERT` y `UPDATE` se clasifican aquí como DML. **Corregida.**
+- **4072 — 2FN:** se elimina la expresión vaga “todos los atributos” y se formula el requisito sobre atributos no primos y todas las claves candidatas. **Corregida.**
+- **4073 — ODBC:** se confirma la expansión oficial *Open Database Connectivity* con Microsoft Learn. **Corregida.**
+- **4074 — TRUNCATE:** se acota a la operación de vaciado en bloque y se advierte que `DELETE FROM` también puede conservar la tabla; las restricciones y transacciones dependen del motor. **Corregida.**
+- **4075 — regla 10 de Codd:** se elimina la falsa relación con borrar una PK para importar ficheros y se pregunta por independencia de integridad: restricciones declaradas en el sublenguaje relacional y guardadas en el catálogo. **Corregida.**
+
+Fuentes primarias: [Oracle AI Database 26, tipos de instrucciones SQL](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Types-of-SQL-Statements.html); [Microsoft Learn, ODBC](https://learn.microsoft.com/en-us/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-ver17); [Microsoft Learn, TRUNCATE TABLE (Transact-SQL)](https://learn.microsoft.com/en-us/sql/t-sql/statements/truncate-table-transact-sql?view=sql-server-ver15) y [Oracle Database, TRUNCATE TABLE](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sqlrf/TRUNCATE-TABLE.html); E. F. Codd, [Further Normalization of the Data Base Relational Model (1971)](https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf); E. F. Codd, *Is Your DBMS Really Relational?* (Computerworld, octubre de 1985), [transcripción de las reglas 10 y texto de origen](https://reldb.org/c/index.php/twelve-rules/) y [ejemplar archivado](https://archive.org/details/sim_computerworld_1985-10-14_19_41).
+
+Cotejo curricular directo: [bloque 29 «Bases de datos, SQL y modelado de datos», ITIC Academy, versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), consultado en Drive: §5 SQL/DDL y conectividad; §§3.1–3.2 dependencias funcionales y normalización; §§2.3 y 2.5 integridad y reglas de Codd; §6 administración. Correspondencia con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 64, y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4071/4073 A1-64/A2-II-5; 4072 A1-64/A2-III-4; 4074 A1-64/A2-II-5/IV-2; 4075 A1-64/A2-II-5. Academy se utiliza como cotejo curricular, no como autoridad de semántica SQL.
+
+Comprobaciones registradas: se consultó directamente el bloque 29 de ITIC Academy y las secciones pertinentes; la clasificación se validó contra los anexos oficiales de las convocatorias. Oracle y Microsoft fundamentan las operaciones SQL/ODBC; Codd sustenta 2FN y la regla 10. Inventario, verificador y `git diff --check` se ejecutaron tras completar el lote.
 
 ## Lote 749 — 5 de noviembre de 2026
 

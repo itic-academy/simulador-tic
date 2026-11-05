@@ -203676,7 +203676,7 @@
       "id": 4071,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes comandos SQL pertenece al DDL (Lenguaje de definición de datos)?",
+      "texto": "¿Cuál de las siguientes instrucciones SQL se clasifica como DDL (lenguaje de definición de datos) en Oracle Database?",
       "opciones": [
         "SELECT",
         "CREATE",
@@ -203684,27 +203684,109 @@
         "UPDATE"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se corrige el giro gramatical y se concreta la pregunta sobre las instrucciones DDL. CREATE define/crea objetos de esquema; SELECT pertenece en Oracle a la categoría DML y INSERT/UPDATE modifican datos. La clasificación se refiere a Oracle SQL, sin afirmar que todas las familias de SGBD clasifiquen cada instrucción exactamente igual.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 trata SQL y objetos de esquema; DDL pertenece a definición/administración de objetos. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; las definiciones técnicas se fundamentan en documentación del producto o publicación original de Codd."
+      },
+      "etiquetas": [
+        "SGBD",
+        "SQL",
+        "DDL",
+        "CREATE"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Types-of-SQL-Statements.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, Types of SQL Statements: CREATE inicia las sentencias DDL; DDL crea, altera y elimina objetos de esquema."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y de los apartados 2.3/2.5/3.2/5 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se corrige el giro gramatical y se concreta la pregunta sobre las instrucciones DDL. CREATE define/crea objetos de esquema; SELECT pertenece en Oracle a la categoría DML y INSERT/UPDATE modifican datos. La clasificación se refiere a Oracle SQL, sin afirmar que todas las familias de SGBD clasifiquen cada instrucción exactamente igual. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 trata SQL y objetos de esquema; DDL pertenece a definición/administración de objetos. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4072,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según Codd, una entidad en la que todos los atributos tienen dependencia funcional completa de la clave está, al menos, en:",
+      "texto": "En una relación que ya está en 1FN, los atributos no primos dependen funcionalmente de cada clave candidata completa, y no de un subconjunto propio de una clave compuesta. ¿Qué forma normal impone este requisito?",
       "opciones": [
-        "Primera Forma Normal.",
-        "Segunda Forma Normal.",
-        "Tercera Forma Normal.",
-        "Forma Normal de Boyce-Codd."
+        "Primera forma normal.",
+        "Segunda forma normal.",
+        "Tercera forma normal.",
+        "Forma normal de Boyce-Codd."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se reemplaza “entidad” y “todos los atributos” por una formulación relacional inequívoca: una vez en 1FN, los atributos no primos dependen de cada clave candidata completa y no de un subconjunto propio. Ese requisito identifica 2FN como el primer nivel que lo impone; 3FN y BCNF son más restrictivas.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.2 abordan dependencias funcionales y formas normales, incluida 2FN. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) III-4).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; las definiciones técnicas se fundamentan en documentación del producto o publicación original de Codd."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "normalización",
+        "2FN",
+        "dependencia funcional completa",
+        "atributo no primo",
+        "clave candidata"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf",
+            "referencia": "E. F. Codd, Further Normalization of the Data Base Relational Model (1971): formula 2FN sobre la dependencia completa de los atributos no clave respecto de claves candidatas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y de los apartados 2.3/2.5/3.2/5 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+          }
+        ],
+        "observaciones": "Se reemplaza “entidad” y “todos los atributos” por una formulación relacional inequívoca: una vez en 1FN, los atributos no primos dependen de cada clave candidata completa y no de un subconjunto propio. Ese requisito identifica 2FN como el primer nivel que lo impone; 3FN y BCNF son más restrictivas. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.2 abordan dependencias funcionales y formas normales, incluida 2FN. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) III-4)."
+      }
     },
     {
       "id": 4073,
       "bloque": 0,
       "tema": 0,
-      "texto": "ODBC son las siglas de:",
+      "texto": "¿Qué significan las siglas ODBC, nombre de la interfaz estándar de conectividad de bases de datos?",
       "opciones": [
         "Open DataBase Consortium",
         "Open Data Business Connectivity",
@@ -203712,13 +203794,53 @@
         "Object DataBase Consortium"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se conserva la clave y se corrige la caja tipográfica engañosa de “DataBase”; la expansión oficial es Open Database Connectivity. No es “Consortium” ni “Business Connectivity”.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 y el apartado de interoperabilidad de SGBD relacionales incluyen conectividad mediante interfaces y estándares. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; las definiciones técnicas se fundamentan en documentación del producto o publicación original de Codd."
+      },
+      "etiquetas": [
+        "SGBD",
+        "interoperabilidad",
+        "ODBC",
+        "conectividad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-ver17",
+            "referencia": "Microsoft Learn, Microsoft Open Database Connectivity (ODBC): nombre oficial de la interfaz de acceso a diversos SGBD mediante una interfaz común."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y de los apartados 2.3/2.5/3.2/5 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se conserva la clave y se corrige la caja tipográfica engañosa de “DataBase”; la expansión oficial es Open Database Connectivity. No es “Consortium” ni “Business Connectivity”. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 y el apartado de interoperabilidad de SGBD relacionales incluyen conectividad mediante interfaces y estándares. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4074,
       "bloque": 0,
       "tema": 0,
-      "texto": "En SQL, para borrar los datos de una tabla pero seguir conservándola se emplea:",
+      "texto": "En los SGBD que admiten TRUNCATE TABLE, ¿qué instrucción permite eliminar en bloque todas las filas de una tabla sin eliminar su definición?",
       "opciones": [
         "DROP TABLE",
         "TRUNCATE TABLE",
@@ -203726,21 +203848,112 @@
         "MODIFY TABLE"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se limita el supuesto a vaciar en bloque una tabla usando TRUNCATE TABLE; no se afirma que sea el único modo de borrar filas. DELETE FROM tabla, también ausente de las opciones originales, puede eliminar todas las filas y conservar la tabla, aunque su semántica, restricciones, registro y posibilidad de rollback dependen del SGBD. DROP elimina el objeto.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-IV-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 cubre SQL y §6 administración de SGBD; se coteja el alcance del comando con documentación del motor. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5, IV-2).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; las definiciones técnicas se fundamentan en documentación del producto o publicación original de Codd."
+      },
+      "etiquetas": [
+        "SGBD",
+        "SQL",
+        "TRUNCATE TABLE",
+        "DDL",
+        "administración de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/sql/t-sql/statements/truncate-table-transact-sql?view=sql-server-ver15",
+            "referencia": "Microsoft Learn, TRUNCATE TABLE (Transact-SQL): elimina filas y conserva estructura, columnas y restricciones; su uso tiene limitaciones propias del motor."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sqlrf/TRUNCATE-TABLE.html",
+            "referencia": "Oracle Database SQL Language Reference, TRUNCATE TABLE: elimina todas las filas; no elimina la definición de la tabla."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y de los apartados 2.3/2.5/3.2/5 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5, IV-2."
+          }
+        ],
+        "observaciones": "Se limita el supuesto a vaciar en bloque una tabla usando TRUNCATE TABLE; no se afirma que sea el único modo de borrar filas. DELETE FROM tabla, también ausente de las opciones originales, puede eliminar todas las filas y conservar la tabla, aunque su semántica, restricciones, registro y posibilidad de rollback dependen del SGBD. DROP elimina el objeto. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 cubre SQL y §6 administración de SGBD; se coteja el alcance del comando con documentación del motor. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5, IV-2)."
+      }
     },
     {
       "id": 4075,
       "bloque": 0,
       "tema": 0,
-      "texto": "Para importar un fichero en una tabla de una base de datos (BD) relacional, el administrador de BD decide eliminar la clave primaria existente. De entre las siguientes reglas de Codd que definen el modelo relacional, ¿cuál es la que posibilita esta acción?",
+      "texto": "Según la regla 10 de Codd (independencia de integridad), ¿cómo deben gestionarse las restricciones de integridad específicas de una base de datos relacional?",
       "opciones": [
-        "Regla 2: Regla de Acceso Garantizado.",
-        "Regla 8: Independencia Física de los Datos.",
-        "Regla 10: Independencia de la Integridad.",
-        "Regla 11: Independencia de la Distribución."
+        "Regla 2: solo mediante una ruta de acceso garantizada para cada dato.",
+        "Regla 8: mediante independencia respecto de la ubicación física.",
+        "Regla 10: definidas en el sublenguaje de datos relacional y almacenadas en el catálogo, no codificadas en los programas de aplicación.",
+        "Regla 11: mediante independencia de la distribución física entre nodos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se corrige la premisa causal falsa: la regla 10 no habilita a eliminar una clave primaria para importar un fichero. Se reformula para preguntar su contenido: independencia de integridad significa que las restricciones específicas de la base se definen mediante el sublenguaje de datos y se almacenan en el catálogo, no incrustadas en los programas de aplicación.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§2.3 y 2.5 cubren integridad y reglas de Codd; se confirma la formulación histórica en el texto de Codd de 1985. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; las definiciones técnicas se fundamentan en documentación del producto o publicación original de Codd."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "reglas de Codd",
+        "regla 10",
+        "independencia de integridad",
+        "restricciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://reldb.org/c/index.php/twelve-rules/",
+            "referencia": "E. F. Codd, Is Your DBMS Really Relational? (Computerworld, octubre de 1985), texto de las doce reglas reproducido con referencia al ejemplar de origen: la regla 10 exige definir las restricciones de integridad específicas en el sublenguaje relacional y almacenarlas en el catálogo, no en aplicaciones."
+          },
+          {
+            "url": "https://archive.org/details/sim_computerworld_1985-10-14_19_41",
+            "referencia": "Ejemplar archivado de Computerworld, 14-10-1985, fuente original de la exposición de las reglas de Codd."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y de los apartados 2.3/2.5/3.2/5 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se corrige la premisa causal falsa: la regla 10 no habilita a eliminar una clave primaria para importar un fichero. Se reformula para preguntar su contenido: independencia de integridad significa que las restricciones específicas de la base se definen mediante el sublenguaje de datos y se almacenan en el catálogo, no incrustadas en los programas de aplicación. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§2.3 y 2.5 cubren integridad y reglas de Codd; se confirma la formulación histórica en el texto de Codd de 1985. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4076,
