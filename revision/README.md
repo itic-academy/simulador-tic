@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 712 (IDs 3876–3880). Acumulado: 3880 preguntas examinadas individualmente, 3802 verificadas (752 vigentes, 2763 corregidas y 287 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8243 sin revisar individualmente. Hay 3185 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 713 (IDs 3881–3885). Acumulado: 3885 preguntas examinadas individualmente, 3807 verificadas (756 vigentes, 2764 corregidas y 287 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8238 sin revisar individualmente. Hay 3186 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 713 — 5 de noviembre de 2026
+
+IDs 3881–3885 revisados individualmente frente a los textos consolidados de las Leyes 39/2015 y 40/2015 en BOE; se cotejaron los bloques constitucional y de actuación administrativa de ITIC Academy en Drive y los programas oficiales A1/A2. Se conserva la trazabilidad íntegra en [cambios-lote-713.json](cambios-lote-713.json).
+
+- **3881 — dirección de los Secretarios de Estado:** el art. 62.1 LRJSP dispone que actúan bajo el titular del departamento y, si se adscriben a Presidencia, bajo el Presidente del Gobierno. **Vigente.**
+- **3882 — organismos públicos estatales:** el art. 84.1.a LRJSP los clasifica en organismos autónomos, entidades públicas empresariales y agencias estatales. Las autoridades administrativas independientes son categoría aparte. **Vigente.**
+- **3883 — iniciación del procedimiento:** art. 54 LPAC: de oficio o a solicitud del interesado. **Vigente.**
+- **3884 — personalidad jurídica de las Administraciones:** art. 3.4 LRJSP: cada Administración actúa con personalidad jurídica única. **Vigente.**
+- **3885 — plazo señalado por días:** se incorpora la excepción del Derecho de la Unión Europea que faltaba en el original; por defecto son días hábiles y se excluyen sábados, domingos y festivos. **Corregida.**
+
+Fuentes primarias: [Ley 40/2015, texto consolidado BOE, arts. 3.4, 62.1 y 84.1.a](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566); [Ley 39/2015, texto consolidado BOE, arts. 30.2 y 54](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565).
+
+Cotejo académico: [bloque 01, Constitución, Estado y AGE, ITIC Academy 2026](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk): Secretarios de Estado, AGE, sector público institucional y art. 84 LRJSP (3881–3882). [Bloque 03, Actuación Administrativa, ITIC Academy 2026](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk): Ley 39/2015, Ley 40/2015, iniciación y cómputo de plazos (3883–3885). Correspondencia con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3881 A1-4/A2-I-3; 3882 A1-6/A2-I-3; 3883–3885 A1-8/A2-I-8.
+
+Comprobaciones: inventario y verificador ejecutados tras registrar el lote; resumen superior actualizado con sus resultados.
 
 ## Lote 712 — 5 de noviembre de 2026
 
