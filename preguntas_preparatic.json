@@ -195988,71 +195988,278 @@
       "id": 3936,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un contexto de desarrollo de software en el que se están haciendo modificaciones a productos que están en producción ¿cuál de las siguientes afirmaciones es cierta?",
+      "texto": "Tras modificar software que ya está en producción para corregir un defecto, ¿qué pruebas permiten comprobar, respectivamente, que el defecto se ha corregido y que el cambio no ha introducido efectos adversos?",
       "opciones": [
-        "Deben ejecutarse pruebas unitarias exclusivamente, porque el producto ya se probó en su primera entrega.",
-        "Deben ejecutarse únicamente pruebas unitarias y pruebas de integración, que ofrecen garantía de que el software no tiene errores.",
-        "Se considera suficiente la ejecución de pruebas de aceptación para agilizar el paso a producción de los cambios.",
-        "Deben ejecutarse pruebas de confirmación y pruebas de regresión, que son específicas para la situación descrita."
+        "Pruebas de aceptación y pruebas de carga.",
+        "Solo pruebas unitarias; garantizan que no queda ningún error.",
+        "Pruebas de regresión y pruebas de aceptación.",
+        "Pruebas de confirmación y pruebas de regresión, con alcance de regresión proporcional al riesgo."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Tras corregir un defecto, las pruebas de confirmación comprueban que el fallo original ya no se reproduce; las de regresión comprueban que el cambio no haya causado efectos adversos. No existe un conjunto de pruebas que garantice ausencia absoluta de errores, y el alcance de regresión se determina según riesgo. ITIC Academy, bloque 39 «Calidad y mantenimiento del software», edición 2026: cotejo de cobertura de pruebas/garantía de calidad (A1 96 y A2 III-7). Las definiciones de confirmación y regresión se verifican de forma independiente en el syllabus de ISTQB.",
+      "clasificacion": {
+        "A1": [
+          "A1-96"
+        ],
+        "A2": [
+          "A2-III-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 39 «Calidad y mantenimiento del software», edición 2026: cotejo de cobertura de pruebas/garantía de calidad (A1 96 y A2 III-7). Las definiciones de confirmación y regresión se verifican de forma independiente en el syllabus de ISTQB.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "pruebas de software",
+        "pruebas de confirmación",
+        "pruebas de regresión",
+        "ISTQB"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+            "referencia": "ISTQB Certified Tester Foundation Level Syllabus v4.0.1 (2024), §2.2.3: confirmation testing verifies that a corrected defect no longer recurs; regression testing checks that changes have not caused adverse consequences in the same or other parts of the system."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 39 «Calidad y mantenimiento del software», edición 2026: cotejo de cobertura de pruebas/garantía de calidad (A1 96 y A2 III-7). Las definiciones de confirmación y regresión se verifican de forma independiente en el syllabus de ISTQB."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 96."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-7."
+          }
+        ],
+        "observaciones": "Tras corregir un defecto, las pruebas de confirmación comprueban que el fallo original ya no se reproduce; las de regresión comprueban que el cambio no haya causado efectos adversos. No existe un conjunto de pruebas que garantice ausencia absoluta de errores, y el alcance de regresión se determina según riesgo. ITIC Academy, bloque 39 «Calidad y mantenimiento del software», edición 2026: cotejo de cobertura de pruebas/garantía de calidad (A1 96 y A2 III-7). Las definiciones de confirmación y regresión se verifican de forma independiente en el syllabus de ISTQB."
+      }
     },
     {
       "id": 3937,
       "bloque": 0,
       "tema": 0,
-      "texto": "La diferencia que Cobit 5 supone sobre Cobit 4 se basa en que:",
+      "texto": "¿Qué enuncia el quinto principio de COBIT 5?",
       "opciones": [
-        "Se usa ITIL v.3 para la Gestión de las TI",
-        "En COBIT 5 se habla con propiedad de Gobierno de las TI, en tanto en cuanto existe un alineamiento claro de la TI con los objetivos de Negocio",
-        "Hay un dominio más a evaluar, que es la Gestión de Proyectos",
-        "Ahora el Negocio debe tener en cuenta las necesidades del departamento de TI e invertir más dinero en dicho departamento"
+        "Aplicar un marco integrado único.",
+        "Separar gobierno y gestión, con responsabilidades y actividades diferenciadas.",
+        "Cubrir la empresa de extremo a extremo.",
+        "Adoptar un enfoque holístico mediante habilitadores."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se pregunta por el quinto principio de COBIT 5, que separa expresamente gobierno y gestión (EDM frente a actividades de gestión). Se evita la comparación imprecisa con COBIT 4: COBIT 2019 es el marco vigente de ISACA y COBIT 5 se conserva aquí como contenido histórico de examen. ITIC Academy, bloque 41 «ITIL/COBIT», edición 2026: cotejo del ámbito de gobierno y gestión TIC (A1 30/106). El programa oficial A2 no incluye un tema específico de COBIT para esta pregunta; no se fuerza una correspondencia A2.",
+      "clasificacion": {
+        "A1": [
+          "A1-30",
+          "A1-106"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 41 «ITIL/COBIT», edición 2026: cotejo del ámbito de gobierno y gestión TIC (A1 30/106). El programa oficial A2 no incluye un tema específico de COBIT para esta pregunta; no se fuerza una correspondencia A2.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "COBIT 5",
+        "gobierno TIC",
+        "gestión TIC",
+        "gobernanza"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.isaca.org/resources/news-and-trends/industry-news/2014/creating-value-with-cobit-5-at-a-tokio-marine-group-company",
+            "referencia": "ISACA, COBIT 5 principle 5: Separating Governance from Management; distinguishes governance EDM activities from management activities."
+          },
+          {
+            "url": "https://www.isaca.org/resources/cobit",
+            "referencia": "ISACA identifies COBIT 2019 as the current published COBIT framework and describes it as the evolution of COBIT 5."
+          },
+          {
+            "url": "https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 41 «ITIL/COBIT», edición 2026: cotejo del ámbito de gobierno y gestión TIC (A1 30/106). El programa oficial A2 no incluye un tema específico de COBIT para esta pregunta; no se fuerza una correspondencia A2."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 30, 106."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Se consultó el anexo IX; no se asigna tema A2 específico para esta pregunta."
+          }
+        ],
+        "observaciones": "Se pregunta por el quinto principio de COBIT 5, que separa expresamente gobierno y gestión (EDM frente a actividades de gestión). Se evita la comparación imprecisa con COBIT 4: COBIT 2019 es el marco vigente de ISACA y COBIT 5 se conserva aquí como contenido histórico de examen. ITIC Academy, bloque 41 «ITIL/COBIT», edición 2026: cotejo del ámbito de gobierno y gestión TIC (A1 30/106). El programa oficial A2 no incluye un tema específico de COBIT para esta pregunta; no se fuerza una correspondencia A2."
+      }
     },
     {
       "id": 3938,
       "bloque": 0,
       "tema": 0,
-      "texto": "Seleccione la opción INCORRECTA en relación con el Sistema de Valor de Servicio de ITILv4",
+      "texto": "Según ITIL 4, ¿cuál de estas afirmaciones es INCORRECTA sobre el Sistema de Valor del Servicio (SVS)?",
       "opciones": [
-        "Uno de sus componentes es el modelo de las 4 Dimensiones.",
-        "Su propósito es asegurar que la organización y las partes interesadas crean valor de forma conjunta y continua, según los objetivos de la organización.",
-        "El trigger o elemento que activa el sistema está compuesto por las demandas y las oportunidades.",
-        "La salida del SVS siempre debe ser el Valor."
+        "El modelo de las cuatro dimensiones es uno de los cinco componentes del SVS.",
+        "Su propósito es facilitar que organización y partes interesadas creen valor conjuntamente mediante productos y servicios.",
+        "Sus entradas son oportunidad y demanda.",
+        "El SVS facilita la creación de valor como resultado."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "En ITIL 4, las cuatro dimensiones son perspectivas aplicables al sistema de valor del servicio, pero no figuran como componente del SVS. Sus cinco componentes son principios guía, gobernanza, cadena de valor del servicio, prácticas y mejora continua. El SVS recibe demanda y oportunidades y facilita la creación conjunta de valor. La pregunta está deliberadamente acotada a ITIL 4; PeopleCert ha iniciado la transición a ITIL Version 5, mientras ITIL 4 sigue disponible. ITIC Academy, bloque 41 «ITIL/COBIT», edición 2026: cotejo del ámbito de gestión de servicios (A1 106). No hay correspondencia A2 suficientemente específica en el programa oficial; no se fuerza una clasificación.",
+      "clasificacion": {
+        "A1": [
+          "A1-106"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 41 «ITIL/COBIT», edición 2026: cotejo del ámbito de gestión de servicios (A1 106). No hay correspondencia A2 suficientemente específica en el programa oficial; no se fuerza una clasificación.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "ITIL 4",
+        "SVS",
+        "cuatro dimensiones",
+        "gestión de servicios"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565",
+            "referencia": "PeopleCert, ITIL 4 Foundation: the four dimensions are perspectives for service management; the Service Value System (SVS) components are guiding principles, governance, service value chain, practices and continual improvement."
+          },
+          {
+            "url": "https://www.peoplecert.org/news-and-announcements/itil-version-5-explained",
+            "referencia": "PeopleCert, current information on ITIL Version 5: phased introduction; ITIL 4 remains available during the transition. The questions here are explicitly version-scoped to ITIL 4."
+          },
+          {
+            "url": "https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 41 «ITIL/COBIT», edición 2026: cotejo del ámbito de gestión de servicios (A1 106). No hay correspondencia A2 suficientemente específica en el programa oficial; no se fuerza una clasificación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 106."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Se consultó el anexo IX; no se asigna tema A2 específico para esta pregunta."
+          }
+        ],
+        "observaciones": "En ITIL 4, las cuatro dimensiones son perspectivas aplicables al sistema de valor del servicio, pero no figuran como componente del SVS. Sus cinco componentes son principios guía, gobernanza, cadena de valor del servicio, prácticas y mejora continua. El SVS recibe demanda y oportunidades y facilita la creación conjunta de valor. La pregunta está deliberadamente acotada a ITIL 4; PeopleCert ha iniciado la transición a ITIL Version 5, mientras ITIL 4 sigue disponible. ITIC Academy, bloque 41 «ITIL/COBIT», edición 2026: cotejo del ámbito de gestión de servicios (A1 106). No hay correspondencia A2 suficientemente específica en el programa oficial; no se fuerza una clasificación."
+      }
     },
     {
       "id": 3939,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes elementos es utilizado en las listas de acceso IP estándar como base para permitir o denegar paquetes?",
+      "texto": "En una ACL estándar IPv4 de Cisco IOS, ¿qué campo de dirección se compara para permitir o denegar paquetes?",
       "opciones": [
-        "Dirección destino IP",
-        "Dirección origen IP",
-        "Protocolo",
-        "Puerto"
+        "Dirección IPv4 de destino.",
+        "Dirección IPv4 de origen.",
+        "Protocolo de transporte.",
+        "Puerto TCP/UDP."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "En el contexto explícito de listas de acceso IPv4 de Cisco IOS, una ACL estándar compara la dirección de origen (con su máscara wildcard). Las ACL extendidas pueden evaluar también destino, protocolo y puertos; por eso las opciones no se deben generalizar a cualquier firewall o ACL. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de ACL y redes IP (A1 115/A2 II-8 y IV-8). Cisco define por separado qué campos comparan ACL estándar y extendidas.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8",
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de ACL y redes IP (A1 115/A2 II-8 y IV-8). Cisco define por separado qué campos comparan ACL estándar y extendidas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "ACL IPv4",
+        "ACL estándar",
+        "dirección IP de origen",
+        "Cisco IOS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.cisco.com/c/en/us/support/docs/ip/access-lists/26448-ACLsamples.html",
+            "referencia": "Cisco IOS IPv4 ACL documentation: standard access lists compare packet source addresses; extended lists can inspect additional fields such as destination, protocol and ports."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de ACL y redes IP (A1 115/A2 II-8 y IV-8). Cisco define por separado qué campos comparan ACL estándar y extendidas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 115."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-8, IV-8."
+          }
+        ],
+        "observaciones": "En el contexto explícito de listas de acceso IPv4 de Cisco IOS, una ACL estándar compara la dirección de origen (con su máscara wildcard). Las ACL extendidas pueden evaluar también destino, protocolo y puertos; por eso las opciones no se deben generalizar a cualquier firewall o ACL. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de ACL y redes IP (A1 115/A2 II-8 y IV-8). Cisco define por separado qué campos comparan ACL estándar y extendidas."
+      }
     },
     {
       "id": 3940,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué es un puente (bridge) en el mundo de las comunicaciones?",
+      "texto": "En el modelo OSI, ¿en qué capa opera un puente de red (bridge) que reenvía tramas entre segmentos LAN?",
       "opciones": [
-        "Un equipo que enlaza varias redes a nivel 3 de OSI",
-        "Un equipo que enlaza varias redes a nivel 4 de OSI",
-        "Un equipo que enlaza varias redes a nivel 5 de OSI",
-        "Nada de lo anterior"
+        "Capa 2, enlace de datos.",
+        "Capa 3, red.",
+        "Capa 4, transporte.",
+        "Capa 5, sesión."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Un puente de red reenvía tramas entre segmentos de LAN en la capa de enlace de datos (capa 2 OSI), normalmente basándose en direcciones MAC. Un router opera en la capa 3. Se sustituye el distractor “nada de lo anterior” por la capa correcta. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de modelos de capas y dispositivos de interconexión (A1 108/A2 II-8 y IV-8). La capa operativa del puente se valida con documentación técnica de Cisco.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-II-8",
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de modelos de capas y dispositivos de interconexión (A1 108/A2 II-8 y IV-8). La capa operativa del puente se valida con documentación técnica de Cisco.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "OSI",
+        "capa de enlace",
+        "puente",
+        "bridge"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.cisco.com/c/en/us/docs/internetworking/troubleshooting/guide/tr1923.html",
+            "referencia": "Cisco, Troubleshooting LAN Switching Environments: transparent bridges and basic switches operate at Layer 2 and forward frames."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de modelos de capas y dispositivos de interconexión (A1 108/A2 II-8 y IV-8). La capa operativa del puente se valida con documentación técnica de Cisco."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-8, IV-8."
+          }
+        ],
+        "observaciones": "Un puente de red reenvía tramas entre segmentos de LAN en la capa de enlace de datos (capa 2 OSI), normalmente basándose en direcciones MAC. Un router opera en la capa 3. Se sustituye el distractor “nada de lo anterior” por la capa correcta. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de modelos de capas y dispositivos de interconexión (A1 108/A2 II-8 y IV-8). La capa operativa del puente se valida con documentación técnica de Cisco."
+      }
     },
     {
       "id": 3941,

@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 722 (IDs 3931–3935). Acumulado: 3930 preguntas examinadas individualmente, 3852 verificadas (767 vigentes, 2794 corregidas y 291 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8193 sin revisar individualmente. Hay 3223 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 723 (IDs 3936–3940). Acumulado: 3935 preguntas examinadas individualmente, 3857 verificadas (767 vigentes, 2797 corregidas y 293 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8188 sin revisar individualmente. Hay 3228 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 723 — 5 de noviembre de 2026
+
+IDs 3936–3940 revisados individualmente. Enunciados, opciones y claves originales preservados en [cambios-lote-723.json](cambios-lote-723.json).
+
+- **3936 — pruebas tras cambios:** confirmación verifica la corrección del defecto y regresión busca efectos adversos; su alcance se decide según riesgo. **Corregida.**
+- **3937 — COBIT 5:** se pregunta directamente por el principio 5: separar gobierno y gestión. Se conserva como contenido histórico; COBIT 2019 es la versión actual de ISACA. **Histórica.**
+- **3938 — ITIL 4 SVS:** las cuatro dimensiones son perspectivas, no uno de los cinco componentes del SVS. Se acota a ITIL 4, con ITIL Version 5 en transición. **Histórica.**
+- **3939 — ACL estándar IPv4:** en Cisco IOS compara dirección de origen; destino, protocolo y puerto son campos propios de ACL extendidas. **Corregida.**
+- **3940 — puentes:** un bridge reenvía tramas en la capa 2 (enlace de datos) del modelo OSI. **Corregida.**
+
+Fuentes primarias: [ISTQB CTFL v4.0.1, §2.2.3](https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf); [ISACA sobre COBIT 5, principio 5](https://www.isaca.org/resources/news-and-trends/industry-news/2014/creating-value-with-cobit-5-at-a-tokio-marine-group-company) y [marco COBIT vigente, edición 2019](https://www.isaca.org/resources/cobit); [PeopleCert ITIL 4 Foundation](https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565) y [evolución a ITIL Version 5](https://www.peoplecert.org/news-and-announcements/itil-version-5-explained); [Cisco ACL IPv4](https://www.cisco.com/c/en/us/support/docs/ip/access-lists/26448-ACLsamples.html); [Cisco sobre puentes transparentes](https://www.cisco.com/c/en/us/docs/internetworking/troubleshooting/guide/tr1923.html).
+
+Cotejo académico en Drive: [bloque 39, Calidad y mantenimiento del software, 2026](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk) (3936); [bloque 41, ITIL/COBIT, 2026](https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk) (3937–3938); [bloque 42, Redes, 2026](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) (3939–3940). Correspondencia contrastada con [convocatoria oficial A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3936 A1-96/A2-III-7; 3937 A1-30/106 (sin tema A2 específico); 3938 A1-106 (sin tema A2 específico); 3939 A1-115/A2-II-8 y IV-8; 3940 A1-108/A2-II-8 y IV-8.
+
+Comprobaciones: inventario y verificador ejecutados tras registrar el lote; resumen superior actualizado con resultados.
 
 ## Lote 722 — 5 de noviembre de 2026
 
