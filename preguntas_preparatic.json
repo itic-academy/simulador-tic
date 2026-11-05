@@ -196265,71 +196265,282 @@
       "id": 3941,
       "bloque": 0,
       "tema": 0,
-      "texto": "En Ethernet, se usa un transceptor (transceiver) para:",
+      "texto": "En Ethernet coaxial clásico 10BASE5, ¿qué función cumple el transceptor o MAU?",
       "opciones": [
-        "Para hacer una conexión de red de un dispositivo a un servidor",
-        "Establecer conexiones entre tarjetas de interfaz de red",
-        "Convertir señales recibidas por una puerta para transmitirlas por otra",
-        "Unir un cable desde una estación al medio físico que constituye la red"
+        "Conectar una red IP con otra en la capa 3.",
+        "Enlazar directamente entre sí las tarjetas de red de dos equipos.",
+        "Convertir la señal recibida por un puerto para retransmitirla por otro, como un repetidor.",
+        "Conectar la estación (DTE) al medio coaxial de la red mediante la interfaz AUI."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La descripción genérica de transceptor se acota a la MAU/transceptor del Ethernet clásico 10BASE5: permite conectar la estación (DTE) con el cable coaxial de la red mediante la interfaz AUI. No se extrapola esta arquitectura histórica a todos los PHY Ethernet modernos. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de Ethernet y dispositivos LAN (A1 108/A2 IV-8). Se delimita a la MAU del 10BASE5 histórico, cuya función se sustenta en IEEE 802.3.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de Ethernet y dispositivos LAN (A1 108/A2 IV-8). Se delimita a la MAU del 10BASE5 histórico, cuya función se sustenta en IEEE 802.3.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "Ethernet",
+        "10BASE5",
+        "MAU",
+        "transceptor",
+        "AUI"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.3/6003/",
+            "referencia": "IEEE Std 802.3: especifica la interfaz AUI y la MAU para 10BASE5; la Medium Attachment Unit proporciona el medio para conectar equipos al medio físico de la LAN. Se limita el concepto al Ethernet coaxial clásico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de Ethernet y dispositivos LAN (A1 108/A2 IV-8). Se delimita a la MAU del 10BASE5 histórico, cuya función se sustenta en IEEE 802.3."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) IV-8."
+          }
+        ],
+        "observaciones": "La descripción genérica de transceptor se acota a la MAU/transceptor del Ethernet clásico 10BASE5: permite conectar la estación (DTE) con el cable coaxial de la red mediante la interfaz AUI. No se extrapola esta arquitectura histórica a todos los PHY Ethernet modernos. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de Ethernet y dispositivos LAN (A1 108/A2 IV-8). Se delimita a la MAU del 10BASE5 histórico, cuya función se sustenta en IEEE 802.3."
+      }
     },
     {
       "id": 3942,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la afirmación incorrecta:",
+      "texto": "En una arquitectura P2P pura y descentralizada, señale la afirmación INCORRECTA.",
       "opciones": [
-        "En las redes P2P no existen clientes ni servidores fijos.",
-        "Se necesitan servidores intermedios que mantienen la relación de direcciones IP de los usuarios de la red.",
-        "La información no puede ser intercambiada sin la intervención de los servidores.",
-        "Todas las respuestas son correctas."
+        "Cada peer puede solicitar y proporcionar servicios a otros peers.",
+        "Es obligatorio que un servidor central mantenga el índice de recursos de todos los peers.",
+        "Los peers pueden intercambiar datos directamente una vez localizados.",
+        "No se requiere que un nodo central intervenga en cada intercambio de datos."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "La pregunta se acota a una arquitectura P2P pura/descentralizada. Los peers pueden solicitar y proporcionar servicios y comunicarse sin que un servidor central intervenga en cada intercambio; una arquitectura híbrida sí puede mantener un índice o servicio central. Se evita atribuir estos rasgos a cualquier sistema que se denomine P2P. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de arquitecturas y servicios de red/Internet (A1 109/A2 IV-13). La distinción entre P2P puro e híbrido se contrasta con la taxonomía del RFC 5694.",
+      "clasificacion": {
+        "A1": [
+          "A1-109"
+        ],
+        "A2": [
+          "A2-IV-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de arquitecturas y servicios de red/Internet (A1 109/A2 IV-13). La distinción entre P2P puro e híbrido se contrasta con la taxonomía del RFC 5694.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "redes P2P",
+        "peer-to-peer",
+        "arquitectura distribuida",
+        "RFC 5694"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://datatracker.ietf.org/doc/html/rfc5694.html",
+            "referencia": "IETF RFC 5694, Peer-to-Peer Architecture, §§2 y 4: los peers solicitan y proporcionan servicios; distingue sistemas híbridos con entidad central e índices centralizados de sistemas puros con índices locales/distribuidos, y describe comunicación directa entre peers."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de arquitecturas y servicios de red/Internet (A1 109/A2 IV-13). La distinción entre P2P puro e híbrido se contrasta con la taxonomía del RFC 5694."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 109."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) IV-13."
+          }
+        ],
+        "observaciones": "La pregunta se acota a una arquitectura P2P pura/descentralizada. Los peers pueden solicitar y proporcionar servicios y comunicarse sin que un servidor central intervenga en cada intercambio; una arquitectura híbrida sí puede mantener un índice o servicio central. Se evita atribuir estos rasgos a cualquier sistema que se denomine P2P. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de arquitecturas y servicios de red/Internet (A1 109/A2 IV-13). La distinción entre P2P puro e híbrido se contrasta con la taxonomía del RFC 5694."
+      }
     },
     {
       "id": 3943,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones, relacionadas con el modelo OSI, es falsa?",
+      "texto": "Según el modelo de referencia OSI de ITU-T X.200, ¿cuál de estas afirmaciones sobre los puntos de acceso al servicio (SAP) es falsa?",
       "opciones": [
-        "Un SAP es un recurso a través del cual una entidad de nivel N+1 accede a los servicios de nivel N",
-        "Una entidad N+1 sólo puede estar conectada a un SAP",
-        "Las entidades conectadas a través de un SAP deben residir en el mismo subsistema",
-        "Una dirección de SAP identifica a un único SAP"
+        "Una entidad (N+1) solicita el servicio de la capa N a través de un SAP de esa capa.",
+        "Una entidad (N+1) sólo puede estar conectada a un SAP de la capa N.",
+        "La dirección de un SAP identifica ese punto de acceso dentro del ámbito definido para la capa.",
+        "El SAP es la frontera de interacción entre una entidad de la capa N y una entidad usuaria de la capa N+1."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "ITU-T X.200 permite que una entidad (N+1) tenga dos o más puntos de acceso a servicios de capa N; por ello es falsa la afirmación de que sólo puede estar conectada a un SAP. El resto se formula directamente conforme a la relación entre entidad y servicio definida por el modelo. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo del modelo OSI y la arquitectura por capas (A1 108/A2 II-8). Los cardinales exactos de SAP se verifican en ITU-T X.200 vigente.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo del modelo OSI y la arquitectura por capas (A1 108/A2 II-8). Los cardinales exactos de SAP se verifican en ITU-T X.200 vigente.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "modelo OSI",
+        "SAP",
+        "entidad de capa",
+        "direccionamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-X.200-199411-I/en",
+            "referencia": "ITU-T X.200 (1994), idéntica a ISO/IEC 7498-1:1994, vigente; §5.4.2.5 contempla que una entidad (N+1) tenga dos o más SAP y §5.5.1 establece que solicita el servicio N a través de un SAP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo del modelo OSI y la arquitectura por capas (A1 108/A2 II-8). Los cardinales exactos de SAP se verifican en ITU-T X.200 vigente."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-8."
+          }
+        ],
+        "observaciones": "ITU-T X.200 permite que una entidad (N+1) tenga dos o más puntos de acceso a servicios de capa N; por ello es falsa la afirmación de que sólo puede estar conectada a un SAP. El resto se formula directamente conforme a la relación entre entidad y servicio definida por el modelo. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo del modelo OSI y la arquitectura por capas (A1 108/A2 II-8). Los cardinales exactos de SAP se verifican en ITU-T X.200 vigente."
+      }
     },
     {
       "id": 3944,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dentro de la arquitectura FTTH basada en la tecnología G.984, ¿qué equipo es el que introduce la señal de video RF en la central de conmutación para ser posteriormente suministrada a los usuarios finales?:",
+      "texto": "En una arquitectura FTTH GPON con overlay de vídeo RF a 1550 nm, una vez convertida la señal a formato óptico, ¿qué equipo amplifica su potencia antes de combinarla mediante WDM y distribuirla?",
       "opciones": [
-        "STB.",
-        "EDFA.",
-        "ODF.",
-        "Todas las anteriores son incorrectas."
+        "STB (decodificador del usuario).",
+        "EDFA (amplificador de fibra dopada con erbio).",
+        "ODF (distribuidor óptico).",
+        "Ninguno de los anteriores."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se distingue la conversión eléctrica/óptica, que corresponde al transmisor óptico de 1550 nm, de la amplificación de la portadora óptica de vídeo RF, función del EDFA; WDM la combina con las longitudes de onda PON. El EDFA no convierte por sí solo RF eléctrico a óptico. Se conserva la respuesta EDFA al precisar que se pregunta por amplificación antes de distribuir la señal. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de redes de acceso y medios de transmisión ópticos (A1 108/A2 IV-7). Se separan las funciones de transmisor, EDFA y WDM mediante las fuentes técnicas citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de redes de acceso y medios de transmisión ópticos (A1 108/A2 IV-7). Se separan las funciones de transmisor, EDFA y WDM mediante las fuentes técnicas citadas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "FTTH",
+        "GPON",
+        "ITU-T G.984",
+        "RF video overlay",
+        "EDFA",
+        "WDM"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.984.5-202202-I/en",
+            "referencia": "ITU-T G.984.5 (2022), edición vigente: reserva la banda 1550–1560 nm para vídeo RF en coexistencia/overlay mediante WDM en redes G-PON."
+          },
+          {
+            "url": "https://www.ascentcomtec.com/index.php/Solution/product/id/15.html",
+            "referencia": "Ascent Communication Technology, solución de video overlay FTTx: identifica transmisores láser de 1550 nm, amplificadores EDFA multipuerto, WDM pasivo y splitters como elementos distintos de la distribución."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de redes de acceso y medios de transmisión ópticos (A1 108/A2 IV-7). Se separan las funciones de transmisor, EDFA y WDM mediante las fuentes técnicas citadas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) IV-7."
+          }
+        ],
+        "observaciones": "Se distingue la conversión eléctrica/óptica, que corresponde al transmisor óptico de 1550 nm, de la amplificación de la portadora óptica de vídeo RF, función del EDFA; WDM la combina con las longitudes de onda PON. El EDFA no convierte por sí solo RF eléctrico a óptico. Se conserva la respuesta EDFA al precisar que se pregunta por amplificación antes de distribuir la señal. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de redes de acceso y medios de transmisión ópticos (A1 108/A2 IV-7). Se separan las funciones de transmisor, EDFA y WDM mediante las fuentes técnicas citadas."
+      }
     },
     {
       "id": 3945,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la Jerarquía Digital Síncrona, el régimen binario de una trama STM-4 es de:",
+      "texto": "Según la jerarquía digital síncrona (SDH) de ITU-T G.707, ¿cuál es la tasa binaria nominal de una trama STM-4?",
       "opciones": [
-        "155 Mbit/s",
-        "622 Mbit/s",
-        "2.5 Gbit/s",
-        "10 Gbit/s"
+        "155,520 Mbit/s.",
+        "622,080 Mbit/s.",
+        "2 488,320 Mbit/s.",
+        "9 953,280 Mbit/s."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La tasa de línea de STM-1 es 155.520 Mbit/s; STM-4 transporta cuatro veces esa tasa: 622.080 Mbit/s (aproximadamente 622 Mbit/s). Se explicita la unidad decimal de transmisión y la referencia G.707 vigente. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de redes de transporte de área extensa (A1 108/A2 IV-10). La tasa exacta se comprueba con las recomendaciones ITU-T G.707 y G.957.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de redes de transporte de área extensa (A1 108/A2 IV-10). La tasa exacta se comprueba con las recomendaciones ITU-T G.707 y G.957.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular basado en material ITIC Academy consultado en Drive; las afirmaciones técnicas se apoyan en fuentes primarias."
+      },
+      "etiquetas": [
+        "SDH",
+        "STM-4",
+        "ITU-T G.707",
+        "622.08 Mbit/s"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.707-200701-I/en",
+            "referencia": "ITU-T G.707/Y.1322 (2007) y enmiendas en vigor: define la interfaz SDH; el STM-4 es 4 × STM-1 = 622.080 Mbit/s. ITU-T G.957 confirma la tasa nominal de 622 080 kbit/s para STM-4."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.957-200603-I%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T G.957, tabla 3: tasa nominal de STM-4 conforme a G.707/Y.1322 = 622 080 kbit/s."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de redes de transporte de área extensa (A1 108/A2 IV-10). La tasa exacta se comprueba con las recomendaciones ITU-T G.707 y G.957."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) IV-10."
+          }
+        ],
+        "observaciones": "La tasa de línea de STM-1 es 155.520 Mbit/s; STM-4 transporta cuatro veces esa tasa: 622.080 Mbit/s (aproximadamente 622 Mbit/s). Se explicita la unidad decimal de transmisión y la referencia G.707 vigente. ITIC Academy, bloque 42 «Redes», edición 2026: cotejo de redes de transporte de área extensa (A1 108/A2 IV-10). La tasa exacta se comprueba con las recomendaciones ITU-T G.707 y G.957."
+      }
     },
     {
       "id": 3946,

@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 723 (IDs 3936–3940). Acumulado: 3935 preguntas examinadas individualmente, 3857 verificadas (767 vigentes, 2797 corregidas y 293 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8188 sin revisar individualmente. Hay 3228 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 724 (IDs 3941–3945). Acumulado: 3940 preguntas examinadas individualmente, 3862 verificadas (767 vigentes, 2802 corregidas y 293 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8183 sin revisar individualmente. Hay 3233 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 724 — 5 de noviembre de 2026
+
+IDs 3941–3945 revisados individualmente. Enunciados, opciones y claves originales preservados en [cambios-lote-724.json](cambios-lote-724.json).
+
+- **3941 — Ethernet 10BASE5:** se acota el transceptor a la MAU histórica que conecta el DTE al medio coaxial mediante AUI. **Corregida.**
+- **3942 — P2P:** se distingue una arquitectura pura/descentralizada de una híbrida con índice central; no se afirma que todo P2P carezca de servidores auxiliares. **Corregida.**
+- **3943 — modelo OSI:** ITU-T X.200 permite varios SAP de capa N para una entidad N+1; la afirmación de que sólo puede haber uno es falsa. **Corregida.**
+- **3944 — FTTH/GPON:** el transmisor convierte RF a óptica; el EDFA amplifica la portadora RF ya óptica y WDM la combina. Se conserva la clave B con enunciado preciso. **Corregida.**
+- **3945 — SDH:** STM-4 equivale a cuatro STM-1: 622,080 Mbit/s (622 080 kbit/s). **Corregida.**
+
+Fuentes primarias: [IEEE 802.3, AUI y MAU de 10BASE5](https://standards.ieee.org/ieee/802.3/6003/); [IETF RFC 5694, arquitectura y taxonomía P2P](https://datatracker.ietf.org/doc/html/rfc5694.html); [ITU-T X.200, modelo OSI vigente e idéntico a ISO/IEC 7498-1](https://www.itu.int/rec/T-REC-X.200-199411-I/en); [ITU-T G.984.5, banda de vídeo RF](https://www.itu.int/rec/T-REC-G.984.5-202202-I/en) y [Ascent, equipos de overlay óptico, EDFA y WDM](https://www.ascentcomtec.com/index.php/Solution/product/id/15.html); [ITU-T G.707/Y.1322, SDH](https://www.itu.int/rec/T-REC-G.707-200701-I/en) y [G.957, tasa STM-4](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.957-200603-I%21%21PDF-E&lang=e&type=items).
+
+Cotejo académico en Drive: [bloque 42, Redes, edición 2026](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) para las cinco preguntas. Correspondencia contrastada con [convocatoria oficial A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3941 A1-108/A2-IV-8; 3942 A1-109/A2-IV-13; 3943 A1-108/A2-II-8; 3944 A1-108/A2-IV-7; 3945 A1-108/A2-IV-10.
+
+Comprobaciones: inventario y verificador ejecutados tras registrar el lote; resumen superior actualizado con resultados.
 
 ## Lote 723 — 5 de noviembre de 2026
 
