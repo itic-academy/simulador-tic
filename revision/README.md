@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 758 (IDs 4111–4115). Acumulado: 4110 preguntas examinadas individualmente, 4030 verificadas (774 vigentes, 2939 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8013 sin revisar individualmente. Hay 3398 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 759 (IDs 4116–4120). Acumulado: 4115 preguntas examinadas individualmente, 4035 verificadas (774 vigentes, 2942 corregidas y 319 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8008 sin revisar individualmente. Hay 3403 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 759 — 5 de noviembre de 2026
+
+IDs 4116–4120 revisados individualmente; se conservan enunciados, opciones y claves originales en [cambios-lote-759.json](cambios-lote-759.json).
+
+- **4116 — ocupación industrial EPA:** el 13,8 % se fecha como media anual de 2016, según la tabla del INE; se deja de presentarlo como estadística actual. **Histórica.**
+- **4117 — reindustrialización europea:** se sustituye una mezcla de afirmaciones temporales por el objetivo histórico verificable COM(2012) 582: alcanzar un peso industrial del 20 % del PIB de la UE en 2020. El plazo ya venció. **Histórica.**
+- **4118 — criterios de igualdad:** maternidad, corresponsabilidad y lenguaje no sexista pertenecen al artículo 14 LO 3/2007; la presencia equilibrada en nombramientos se regula en los artículos 16 y 52. **Corregida.**
+- **4119 — prescripción:** el artículo 82 del RDL 1/2013 fija tres años para infracciones graves; se elimina la duplicación tipográfica «de de». **Corregida.**
+- **4120 — edad en la EPA:** se formula con precisión el límite inferior de población activa (16 años o más), conforme a la metodología del INE. **Corregida.**
+
+Fuentes primarias: [INE, España en cifras 2017](https://www.ine.es/prodyser/espa_cifras/ant/espcif17.pdf), «Ocupados por sector económico. 2016»; [Comisión Europea, COM(2012) 582 final](https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:52012DC0582); [LO 3/2007 consolidada, BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115&p=20240802), arts. 14, 16 y 52; [RDL 1/2013 consolidado, BOE, consulta a 03-10-2026](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12632&p=20261003&tn=0), art. 82; [INE, metodología EPA 2021](https://www.ine.es/inebaseDYN/epa30308/docs/resumetepa21.pdf), §10.1.
+
+Cotejo curricular directo en Drive: [ITIC Academy, bloque 06](https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk), versión 2026.2 (01-10-2026): sectores/industria §§4.1–4.3, igualdad §6.1, discapacidad §6.3 y definiciones/fuentes de empleo §7.1; [Tema 015, Sectores económicos](https://drive.google.com/file/d/1qccyw2sPksxo95BZoGhmhZi_D3lTvNUG/view?usp=drivesdk), §1.3.1, aporta distribución EPA 2021T4 (no la cifra histórica de 2016); [Tema 017, Mercado de trabajo](https://drive.google.com/file/d/1MbkgLI-OZL3UYzcA-xJ5rahtwIIS7jU-/view?usp=drivesdk), §2.2.1, explica población activa. Correspondencia con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4116–4117 A1-15, sin epígrafe A2 específico equivalente; 4118–4119 A1-16/A2-I-5; 4120 A1-17, sin epígrafe A2 específico equivalente.
+
+Verificaciones: INE/BOE/EUR-Lex se usaron para establecer respuestas y periodos; los materiales de Academy se inspeccionaron directamente en Drive para encaje curricular y control de vigencia de las cifras; los temas se comprobaron en `temario-oficial.json` y las convocatorias. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 758 — 5 de noviembre de 2026
 
