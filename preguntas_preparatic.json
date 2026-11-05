@@ -205628,71 +205628,269 @@
       "id": 4106,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es el resultado de aplicar la operación “Unión Natural” (Natural Join) entre dos relaciones?",
+      "texto": "En el álgebra relacional, ¿qué filas combina un join natural entre dos relaciones?",
       "opciones": [
-        "Las tuplas que están en ambas relaciones.",
-        "Las tuplas que están en dos relaciones, eliminando las tuplas duplicadas.",
-        "Las tuplas que están en una relación pero no en otra.",
-        "Las tuplas que, en el producto cartesiano de ambas, cumplen una determinada condición."
+        "Solo las filas que están presentes sin cambios en ambas relaciones.",
+        "Las filas que tienen el mismo número físico de posición en ambas relaciones.",
+        "Las filas que aparecen únicamente en una de las relaciones.",
+        "Las parejas de filas cuyos valores coinciden en todas las columnas homónimas de ambas relaciones; las columnas comunes aparecen una sola vez."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Un NATURAL JOIN combina filas cuando coinciden por igualdad los valores de todas las columnas comunes a ambas relaciones (mismo nombre y tipos compatibles); cada columna común aparece una sola vez en la relación resultante. La descripción original (producto cartesiano más una condición cualquiera) define un join theta/equijoin general, no específicamente un join natural.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; §3.4 álgebra relacional y join; SQL/estándares relacionales. Correspondencia oficial cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo de encaje curricular, incluidas las ausencias de equivalencia específica; la academia no sustituye la fuente primaria de la respuesta."
+      },
+      "etiquetas": [
+        "álgebra relacional",
+        "join natural",
+        "columnas comunes",
+        "igualdad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SELECT.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, SELECT/NATURAL: se comparan por igualdad todas las columnas homónimas y compatibles; las columnas comunes aparecen una vez en el resultado."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; consulta directa del temario/índice y apartado pertinente: §3.4 álgebra relacional y join; SQL/estándares relacionales."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Un NATURAL JOIN combina filas cuando coinciden por igualdad los valores de todas las columnas comunes a ambas relaciones (mismo nombre y tipos compatibles); cada columna común aparece una sola vez en la relación resultante. La descripción original (producto cartesiano más una condición cualquiera) define un join theta/equijoin general, no específicamente un join natural. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1; §3.4 álgebra relacional y join; SQL/estándares relacionales. Correspondencia oficial cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4107,
       "bloque": 0,
       "tema": 0,
-      "texto": "La autorización para la constitución de una Comunidad Autónoma uniprovincial, se otorgará por:",
+      "texto": "Conforme al artículo 144.a de la Constitución, cuando el ámbito territorial no supera una provincia y no se reúnen las condiciones del artículo 143.1, ¿quién puede autorizar por motivos de interés nacional la constitución de una comunidad autónoma?",
       "opciones": [
-        "el Rey",
-        "el Gobierno, mediante Real Decreto",
-        "Las Cortes Generales, mediante ley orgánica",
-        "la Diputación provincial y 2 tercios de los municipios"
+        "El Rey, mediante real decreto.",
+        "El Gobierno, mediante real decreto.",
+        "Las Cortes Generales, mediante ley orgánica.",
+        "La Diputación provincial y dos tercios de los municipios, mediante acuerdo."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se ajusta el supuesto al artículo 144.a CE: una provincia que no reúna las condiciones del artículo 143.1 puede constituirse en comunidad autónoma, por motivos de interés nacional, con autorización de las Cortes Generales mediante ley orgánica. No se afirma que toda comunidad uniprovincial deba seguir necesariamente este cauce.",
+      "clasificacion": {
+        "A1": [
+          "A1-3"
+        ],
+        "A2": [
+          "A2-I-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 01 «Constitución, organización del Estado y AGE», versión 2026.2; Bloque constitucional y organización territorial; correspondencia A2-I-1 general/contextual, sin epígrafe específico sobre el cauce del art. 144. Correspondencia oficial cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 3), y A2 GSI 2025, anexo IX (tema(s) I-1).",
+        "estado": "revisada",
+        "nota": "Cotejo de encaje curricular, incluidas las ausencias de equivalencia específica; la academia no sustituye la fuente primaria de la respuesta."
+      },
+      "etiquetas": [
+        "Constitución Española",
+        "comunidades autónomas",
+        "artículo 144",
+        "ley orgánica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520",
+            "referencia": "Constitución Española consolidada por el BOE a 20-05-2026, art. 144.a: las Cortes Generales, por ley orgánica y por interés nacional, pueden autorizar la constitución si el ámbito no supera una provincia y no concurren las condiciones del art. 143.1."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 01 «Constitución, organización del Estado y AGE», versión 2026.2; consulta directa del temario/índice y apartado pertinente: Bloque constitucional y organización territorial; correspondencia A2-I-1 general/contextual, sin epígrafe específico sobre el cauce del art. 144."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 3."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) I-1."
+          }
+        ],
+        "observaciones": "Se ajusta el supuesto al artículo 144.a CE: una provincia que no reúna las condiciones del artículo 143.1 puede constituirse en comunidad autónoma, por motivos de interés nacional, con autorización de las Cortes Generales mediante ley orgánica. No se afirma que toda comunidad uniprovincial deba seguir necesariamente este cauce. ITIC Academy, bloque 01 «Constitución, organización del Estado y AGE», versión 2026.2; Bloque constitucional y organización territorial; correspondencia A2-I-1 general/contextual, sin epígrafe específico sobre el cauce del art. 144. Correspondencia oficial cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 3), y A2 GSI 2025, anexo IX (tema(s) I-1)."
+      }
     },
     {
       "id": 4108,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué institución encarna por excelencia los intereses comunitarios?",
+      "texto": "Según el artículo 17.1 del Tratado de la Unión Europea, ¿qué institución promueve el interés general de la Unión y toma las iniciativas adecuadas?",
       "opciones": [
         "El Consejo Europeo.",
         "El Parlamento Europeo.",
         "El Consejo.",
-        "La Comisión."
+        "La Comisión Europea."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La expresión «encarna por excelencia» se reemplaza por la función literal y verificable del artículo 17.1 TUE: promover el interés general de la Unión y tomar iniciativas adecuadas. Corresponde a la Comisión Europea. El programa A2 GSI 2025 no tiene tema específico sobre instituciones de la UE.",
+      "clasificacion": {
+        "A1": [
+          "A1-5"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 02 «La Unión Europea», versión 2026.2; El bloque desarrolla el tema oficial A1-5 y el art. 17 TUE; el propio documento indica «A2: no aplica». Correspondencia oficial cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 5), y A2 GSI 2025, anexo IX (sin tema equivalente específico).",
+        "estado": "revisada",
+        "nota": "Cotejo de encaje curricular, incluidas las ausencias de equivalencia específica; la academia no sustituye la fuente primaria de la respuesta."
+      },
+      "etiquetas": [
+        "Unión Europea",
+        "Comisión Europea",
+        "interés general",
+        "TUE artículo 17"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/treaty/teu_2016/oj?locale=es",
+            "referencia": "Tratado de la Unión Europea, versión consolidada publicada en el DOUE, art. 17.1: la Comisión promueve el interés general de la Unión y toma las iniciativas adecuadas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1KTz7CNz88u_4zyVLC2oYQBnmJRHIG7J7/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 02 «La Unión Europea», versión 2026.2; consulta directa del temario/índice y apartado pertinente: El bloque desarrolla el tema oficial A1-5 y el art. 17 TUE; el propio documento indica «A2: no aplica»."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 5."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: sin tema equivalente específico."
+          }
+        ],
+        "observaciones": "La expresión «encarna por excelencia» se reemplaza por la función literal y verificable del artículo 17.1 TUE: promover el interés general de la Unión y tomar iniciativas adecuadas. Corresponde a la Comisión Europea. El programa A2 GSI 2025 no tiene tema específico sobre instituciones de la UE. ITIC Academy, bloque 02 «La Unión Europea», versión 2026.2; El bloque desarrolla el tema oficial A1-5 y el art. 17 TUE; el propio documento indica «A2: no aplica». Correspondencia oficial cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 5), y A2 GSI 2025, anexo IX (sin tema equivalente específico)."
+      }
     },
     {
       "id": 4109,
       "bloque": 0,
       "tema": 0,
-      "texto": "De acuerdo con lo establecido en el artículo 20 de la Ley 7/1985, de 2 de abril, reguladora de las Bases del Régimen Local, la organización municipal responde a las siguientes reglas:",
+      "texto": "Según el artículo 20.1 de la Ley 7/1985, ¿qué órganos existen en todos los ayuntamientos?",
       "opciones": [
-        "El Alcalde, la Junta de Gobierno Local y el Pleno existen en todos los ayuntamientos",
-        "El Alcalde, los Tenientes de Alcalde y la Junta de Gobierno Local existen en todos los ayuntamientos",
-        "El Alcalde, los Tenientes de Alcalde y el Pleno existen en todos los ayuntamientos",
-        "El Alcalde, la Comisión Especial de Sugerencias y Reclamaciones y el Pleno existen en todos los ayuntamientos"
+        "El Alcalde, la Junta de Gobierno Local y el Pleno.",
+        "El Alcalde, los Tenientes de Alcalde y la Junta de Gobierno Local.",
+        "El Alcalde, los Tenientes de Alcalde y el Pleno.",
+        "El Alcalde, la Comisión Especial de Sugerencias y Reclamaciones y el Pleno."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El artículo 20.1.a LRBRL declara existentes en todos los ayuntamientos al Alcalde, los Tenientes de Alcalde y el Pleno. La Junta de Gobierno Local solo es obligatoria en municipios de más de 5.000 habitantes, y en los demás depende del reglamento orgánico o acuerdo plenario; la comisión de sugerencias tiene ámbito limitado. Se mantiene como clave C.",
+      "clasificacion": {
+        "A1": [
+          "A1-3"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 01 «Constitución, organización del Estado y AGE», versión 2026.2; El bloque explica la organización municipal conforme a la LRBRL; el programa A2 GSI no contiene epígrafe específico de régimen local. Correspondencia oficial cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 3), y A2 GSI 2025, anexo IX (sin tema equivalente específico).",
+        "estado": "revisada",
+        "nota": "Cotejo de encaje curricular, incluidas las ausencias de equivalencia específica; la academia no sustituye la fuente primaria de la respuesta."
+      },
+      "etiquetas": [
+        "régimen local",
+        "municipio",
+        "Ley 7/1985",
+        "artículo 20",
+        "organización municipal"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392&p=20261003",
+            "referencia": "Ley 7/1985 consolidada en el BOE, última actualización publicada 03-10-2026, art. 20.1.a-b: Alcaldía, Tenientes de Alcalde y Pleno en todos los ayuntamientos; Junta de Gobierno Local obligatoria en municipios de más de 5.000 habitantes y potestativa bajo condiciones en los demás."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 01 «Constitución, organización del Estado y AGE», versión 2026.2; consulta directa del temario/índice y apartado pertinente: El bloque explica la organización municipal conforme a la LRBRL; el programa A2 GSI no contiene epígrafe específico de régimen local."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 3."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: sin tema equivalente específico."
+          }
+        ],
+        "observaciones": "El artículo 20.1.a LRBRL declara existentes en todos los ayuntamientos al Alcalde, los Tenientes de Alcalde y el Pleno. La Junta de Gobierno Local solo es obligatoria en municipios de más de 5.000 habitantes, y en los demás depende del reglamento orgánico o acuerdo plenario; la comisión de sugerencias tiene ámbito limitado. Se mantiene como clave C. ITIC Academy, bloque 01 «Constitución, organización del Estado y AGE», versión 2026.2; El bloque explica la organización municipal conforme a la LRBRL; el programa A2 GSI no contiene epígrafe específico de régimen local. Correspondencia oficial cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 3), y A2 GSI 2025, anexo IX (sin tema equivalente específico)."
+      }
     },
     {
       "id": 4110,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale qué forma toman las disposiciones legislativas provisionales que puede dictar el Gobierno, en caso de extraordinaria y urgente necesidad, y que no pueden afectar al ordenamiento de las instituciones básicas del Estado, a los derechos, deberes y libertades de los ciudadanos regulados en el Título I, al régimen de las Comunidades Autónomas ni al Derecho electoral general, conforme al artículo 86 de la Constitución Española:",
+      "texto": "Según el artículo 86.1 de la Constitución Española, ¿qué forma tienen las disposiciones legislativas provisionales que el Gobierno puede dictar en caso de extraordinaria y urgente necesidad, con los límites materiales previstos en ese artículo?",
       "opciones": [
-        "Decreto-Ley.",
-        "Decreto Legislativo.",
-        "Ley Ordinaria.",
+        "Decreto-ley.",
+        "Decreto legislativo.",
+        "Ley ordinaria.",
         "Reglamento."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La figura es el decreto-ley (denominación constitucional, en la redacción del art. 86 «Decretos-leyes»). El artículo 86.1 requiere extraordinaria y urgente necesidad y establece los límites materiales enumerados en el enunciado; se mantiene como respuesta la opción A.",
+      "clasificacion": {
+        "A1": [
+          "A1-1",
+          "A1-7"
+        ],
+        "A2": [
+          "A2-I-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 01 «Constitución, organización del Estado y AGE», versión 2026.2; Bloque constitucional, fuentes y disposiciones con fuerza de ley; correspondencia A2-I-3 con funciones del Gobierno. Correspondencia oficial cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 1, 7), y A2 GSI 2025, anexo IX (tema(s) I-3).",
+        "estado": "revisada",
+        "nota": "Cotejo de encaje curricular, incluidas las ausencias de equivalencia específica; la academia no sustituye la fuente primaria de la respuesta."
+      },
+      "etiquetas": [
+        "Constitución Española",
+        "artículo 86",
+        "decreto-ley",
+        "extraordinaria y urgente necesidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520",
+            "referencia": "Constitución Española consolidada por el BOE a 20-05-2026, art. 86.1: disposiciones legislativas provisionales del Gobierno en caso de extraordinaria y urgente necesidad, con forma de decretos-leyes y límites materiales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 01 «Constitución, organización del Estado y AGE», versión 2026.2; consulta directa del temario/índice y apartado pertinente: Bloque constitucional, fuentes y disposiciones con fuerza de ley; correspondencia A2-I-3 con funciones del Gobierno."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 1, 7."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) I-3."
+          }
+        ],
+        "observaciones": "La figura es el decreto-ley (denominación constitucional, en la redacción del art. 86 «Decretos-leyes»). El artículo 86.1 requiere extraordinaria y urgente necesidad y establece los límites materiales enumerados en el enunciado; se mantiene como respuesta la opción A. ITIC Academy, bloque 01 «Constitución, organización del Estado y AGE», versión 2026.2; Bloque constitucional, fuentes y disposiciones con fuerza de ley; correspondencia A2-I-3 con funciones del Gobierno. Correspondencia oficial cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 1, 7), y A2 GSI 2025, anexo IX (tema(s) I-3)."
+      }
     },
     {
       "id": 4111,
