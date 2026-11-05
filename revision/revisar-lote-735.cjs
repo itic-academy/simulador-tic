@@ -21,7 +21,7 @@ apply({
     },
     3997: { texto: 'Según la clasificación de MÉTRICA v3, ¿qué describe el mantenimiento perfectivo?', respuesta_correcta: 1 },
     3998: {
-      texto: 'En el estudio empírico de Gholami et al. sobre factores del coste de mantenimiento, ¿cuáles de los siguientes aparecen en la lista de factores considerada?',
+      texto: 'En el estudio empírico de Hejazi Dehaghani y Hajrahimi sobre factores del coste de mantenimiento, ¿cuáles de los siguientes aparecen en la lista de factores considerada?',
       opciones: ['Experiencia con el lenguaje de programación.', 'Calidad de la documentación.', 'Independencia estructural del software.', 'Todos los anteriores.'],
       respuesta_correcta: 3
     },
