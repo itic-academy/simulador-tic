@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 744 (IDs 4041–4045). Acumulado: 4040 preguntas examinadas individualmente, 3960 verificadas (772 vigentes, 2872 corregidas y 316 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8083 sin revisar individualmente. Hay 3329 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 745 (IDs 4046–4050). Acumulado: 4045 preguntas examinadas individualmente, 3965 verificadas (773 vigentes, 2875 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8078 sin revisar individualmente. Hay 3334 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 745 — 5 de noviembre de 2026
+
+IDs 4046–4050 revisados individualmente; originales preservados en [cambios-lote-745.json](cambios-lote-745.json).
+
+- **4046 — SQL-87:** se conserva la clave de consulta/definición/manipulación, pero se acota a la edición histórica ISO 9075:1987, retirada en 1989; no se presenta como estándar vigente. **Histórica.**
+- **4047 — integridad referencial:** se corrige la premisa falsa: una FOREIGN KEY puede autorreferenciar una clave de la misma tabla. **Corregida.**
+- **4048 — anomalías y normalización:** se sustituye “anomalía estructural” por interbloqueo entre transacciones, que es un problema de concurrencia y no de normalización. **Corregida.**
+- **4049 — álgebra relacional:** se precisa la formulación clásica de cinco operadores primitivos; se advierte que algunas presentaciones tratan el renombrado como primitivo adicional. **Corregida.**
+- **4050 — JDBC:** se conserva la respuesta y se actualiza la explicación: API Java para conectarse a fuentes de datos y ejecutar/procesar SQL mediante drivers. **Vigente.**
+
+Fuentes: [NIST/FIPS 127, Database Language SQL](https://www.govinfo.gov/content/pkg/GOVPUB-C13-34d692548be2e76a4af31ba0cf22c936/pdf/GOVPUB-C13-34d692548be2e76a4af31ba0cf22c936.pdf) y [catálogo ISO 9075:1987, retirada](https://committee.iso.org/standard/16661.html?browse=ics); [Oracle AI Database 26, Concepts: self-referential integrity](https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/database-concepts.pdf); [Codd, modelo relacional (1970), artículo original](https://doi.org/10.1145/362384.362685) y [Oracle AI Database 26, deadlocks](https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/monitoring-the-database.html); [Imperial College London, Relational Algebra](https://www.doc.ic.ac.uk/~pjm/db/lectures/relational-algebra-lecture.pdf); [Oracle Java SE 25 API, java.sql](https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/module-summary.html).
+
+Cotejo académico directo: [bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), consultado en Drive. §§5.2–5.3, SQL/SELECT; §2.3, integridad; §§3.1–3.4, normalización, anomalías y álgebra; §9.2, JDBC. Clasificación contrastada con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4046–4047 A1-64/A2-II-5; 4048 A1-64/A2-III-4; 4049–4050 A1-64/A2-II-5. El cotejo académico identifica el encaje temático, no reemplaza la comprobación técnica.
+
+Comprobaciones: se consultó directamente en Drive el bloque 29, incluidas las secciones de SQL/SELECT, integridad, normalización/álgebra y acceso JDBC; la edición ISO 9075:1987 se verificó como retirada, y las afirmaciones técnicas se contrastaron con las fuentes citadas. No quedan dudas registradas. Inventario y verificador ejecutados tras el lote.
 
 ## Lote 744 — 5 de noviembre de 2026
 
