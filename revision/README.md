@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 766 (IDs 4151–4155). Acumulado: 4150 preguntas examinadas individualmente, 4070 verificadas (774 vigentes, 2974 corregidas y 322 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7973 sin revisar individualmente. Hay 3438 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 767 (IDs 4156–4160). Acumulado: 4155 preguntas examinadas individualmente, 4075 verificadas (775 vigentes, 2978 corregidas y 322 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7968 sin revisar individualmente. Hay 3443 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 767 — 5 de noviembre de 2026
+
+IDs 4156–4160 revisados individualmente; se preservan las preguntas originales y las decisiones en [cambios-lote-767.json](cambios-lote-767.json).
+
+- **4156 — trazabilidad de requisitos:** se confirma la matriz de trazabilidad como herramienta para relacionar requisito, origen y artefactos de desarrollo/pruebas y mantener cobertura a lo largo del ciclo de vida. **Corregida.**
+- **4157 — Scrum:** se actualiza la terminología: Sprint de duración fija, de un mes o menos, y al menos un Incremento usable conforme a la Definition of Done; no se exige diseñar todo el sistema antes de desarrollar. **Corregida.**
+- **4158 — ingeniería inversa:** se corrige la errata «Chifofsky» a Chikofsky y Cross y se precisa que se analiza un sistema existente para identificar componentes/relaciones y generar representaciones a mayor abstracción. **Corregida.**
+- **4159 — historias de usuario y casos de uso:** se elimina la comparación universal de extensión y estimabilidad; se distingue una historia centrada en necesidad/valor del usuario de un caso de uso que especifica comportamiento e interacciones actor-sistema. **Corregida.**
+- **4160 — OMG:** se confirma Object Management Group, consorcio que desarrolla estándares como UML. **Vigente.**
+
+Fuentes técnicas: [NASA, gestión y trazabilidad de requisitos](https://www.nasa.gov/reference/6-2-requirements-management/); [Scrum Guide 2020](https://scrumguides.org/scrum-guide.html); Chikofsky y Cross, [Reverse Engineering and Design Recovery: A Taxonomy](https://doi.org/10.1109/52.43044), IEEE Software 7(1), 1990; [GOV.UK, Writing user stories](https://www.gov.uk/service-manual/agile-delivery/writing-user-stories); [OMG UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/PDF), cláusula 18, y [OMG, misión e identidad institucional](https://www.omg.org/about/).
+
+Cotejo en Drive con [ITIC Academy, bloque 15 «Metodologías ágiles y ciclo de vida», versión 2026.1](https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk) y [bloque 38 «Análisis, diseño y construcción de sistemas de información», versión 2026.1](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk). Encaje oficial contrastado con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4156 A1-88/A2-III-3; 4157 A1-37/88 y A2-III-2; 4158 A1-86/93 y A2-III-9; 4159 A1-88/A2-III-3; 4160 A1-93/A2-III-9. Academy contextualiza los epígrafes, no es fuente técnica de autoridad.
+
+Verificaciones: consultadas directamente NASA, Scrum Guide, artículo original Chikofsky–Cross, GOV.UK y OMG; cotejados los bloques académicos y anexos oficiales. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 766 — 5 de noviembre de 2026
 
