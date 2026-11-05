@@ -202551,43 +202551,180 @@
       "id": 4051,
       "bloque": 0,
       "tema": 0,
-      "texto": "De entre las siguientes maneras de manipular una base de datos SQL, indique la que no es correcta:",
+      "texto": "Según los modos de procesamiento descritos en la especificación histórica de SQL (ANSI X3.135-1986 / ISO 9075:1987), ¿cuál NO es una modalidad de interacción con SQL?",
       "opciones": [
-        "Interactivamente, convocando directamente las sentencias SQL.",
-        "Relacionalmente, invocando paralelamente sentencias SQL.",
-        "Por módulos, agrupando sentencias SQL en módulos.",
-        "Por medio de SQL embebido."
+        "SQL interactivo o directo.",
+        "SQL embebido en un programa escrito en un lenguaje anfitrión.",
+        "Lenguaje de módulos SQL.",
+        "Ejecución “relacional” mediante invocación paralela de sentencias SQL."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 3,
+      "comentarios": "Se corrige la traducción impropia «relacionalmente/paralelamente». Las formas históricas de interacción documentadas incluyen SQL directo/interactivo, SQL embebido en un lenguaje anfitrión y módulos SQL; ejecutar sentencias “relacionalmente” o en paralelo no es una modalidad de interfaz. El enunciado se refiere explícitamente a la taxonomía histórica y no la presenta como descripción exhaustiva de todas las interfaces actuales.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§5.2 y 9.2 cubren SQL, modalidades de lenguaje e interfaces de acceso; el rótulo «paralelamente» se contrasta con la especificación histórica. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático directo documentado; las fuentes normativas/técnicas fijan el alcance de cada afirmación."
+      },
+      "etiquetas": [
+        "SQL",
+        "SQL interactivo",
+        "SQL embebido",
+        "lenguaje de módulos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-34d692548be2e76a4af31ba0cf22c936/pdf/GOVPUB-C13-34d692548be2e76a4af31ba0cf22c936.pdf",
+            "referencia": "NIST/FIPS 127, basado en ANSI X3.135-1986: especifica DDL/DML y capacidades de procesamiento directo, lenguaje de módulos y facilidades de SQL embebido en lenguajes anfitriones."
+          },
+          {
+            "url": "https://committee.iso.org/standard/16661.html?browse=ics",
+            "referencia": "ISO, ISO 9075:1987, edición histórica de SQL; catálogo registra su retirada en 1989."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se corrige la traducción impropia «relacionalmente/paralelamente». Las formas históricas de interacción documentadas incluyen SQL directo/interactivo, SQL embebido en un lenguaje anfitrión y módulos SQL; ejecutar sentencias “relacionalmente” o en paralelo no es una modalidad de interfaz. El enunciado se refiere explícitamente a la taxonomía histórica y no la presenta como descripción exhaustiva de todas las interfaces actuales. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§5.2 y 9.2 cubren SQL, modalidades de lenguaje e interfaces de acceso; el rótulo «paralelamente» se contrasta con la especificación histórica. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4052,
       "bloque": 0,
       "tema": 0,
-      "texto": "El comando COUNT:",
+      "texto": "En Oracle SQL, ¿qué cuenta COUNT(expresión)?",
       "opciones": [
-        "Siempre va acompañado de *",
-        "Sirve para contar las ocurrencias del atributo al que acompañe",
-        "Sólo aparece después del WHERE",
-        "Obliga a que aparezca la cláusula GROUP BY"
+        "Siempre cuenta todas las filas, incluso aquellas en que expresión vale NULL.",
+        "Cuenta las filas en las que expresión no es NULL; con DISTINCT cuenta solo los valores no nulos distintos.",
+        "Cuenta únicamente después de WHERE y no puede aparecer en SELECT.",
+        "Solo puede usarse si la consulta contiene GROUP BY."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "COUNT no exige el asterisco ni GROUP BY. Se distingue COUNT(*) —todas las filas— de COUNT(expr) —filas donde expr no es NULL— y COUNT(DISTINCT expr) —valores no nulos distintos—. La cláusula GROUP BY solo es necesaria para calcular resultados por grupos; sin ella, un agregado opera sobre el conjunto consultado.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§5.3–5.4 tratan SELECT, agregados y GROUP BY; las reglas exactas de COUNT y NULL se verifican en Oracle Database 26. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático directo documentado; las fuentes normativas/técnicas fijan el alcance de cada afirmación."
+      },
+      "etiquetas": [
+        "SQL",
+        "COUNT",
+        "función agregada",
+        "NULL",
+        "GROUP BY"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COUNT.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, COUNT: COUNT(expr) cuenta filas en las que la expresión no es NULL; COUNT(*) cuenta todas las filas, incluidos duplicados y valores NULL."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Aggregate-Functions.html",
+            "referencia": "Oracle AI Database 26, Aggregate Functions: se pueden aplicar agregados sobre todas las filas sin GROUP BY; GROUP BY forma grupos cuando se desea."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "COUNT no exige el asterisco ni GROUP BY. Se distingue COUNT(*) —todas las filas— de COUNT(expr) —filas donde expr no es NULL— y COUNT(DISTINCT expr) —valores no nulos distintos—. La cláusula GROUP BY solo es necesaria para calcular resultados por grupos; sin ella, un agregado opera sobre el conjunto consultado. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§5.3–5.4 tratan SELECT, agregados y GROUP BY; las reglas exactas de COUNT y NULL se verifican en Oracle Database 26. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4053,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué es un ‘trigger’?",
+      "texto": "En Oracle Database, ¿qué es un trigger (disparador)?",
       "opciones": [
-        "Es un procedimiento asociado a una acción (inserción, borrado o modificación) y a una tabla que se ejecuta cada vez que se intenta realizar una determinada operación sobre dicha tabla.",
-        "Es un puntero interno al SGBD que apunta a las filas de las tablas sobre la que está definido y sirve para acelerar el acceso a los datos de la base.",
-        "Es un archivo privado del SGBD en el que se apuntan todas las operaciones que se realizan sobre la base de datos.",
-        "Es un tipo de distribución de las filas de una tabla que permite hacer accesos en paralelo a los datos de dicha tabla."
+        "Una unidad almacenada que, si está habilitada, se ejecuta automáticamente al producirse un evento especificado, como DML, DDL o un evento de base de datos.",
+        "Un puntero interno a las filas que acelera el acceso a una tabla.",
+        "Un archivo de auditoría que registra toda operación realizada sobre la base.",
+        "Un método de distribución física de filas que paraleliza su acceso."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La definición original solo contemplaba operaciones DML sobre tablas y el intento de realizarlas. Se generaliza con alcance Oracle: un trigger habilitado se dispara automáticamente ante un evento especificado, que puede ser DML, DDL o de base de datos; los disparadores DML pueden asociarse también a vistas y tener distintos puntos de ejecución. No es un puntero, log ni organización física de filas.",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-IV-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); El bloque 29 cubre SGBD, SQL y objetos programables/administración; triggers y sus eventos/timing se verifican en Oracle Database 26. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5, IV-2).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático directo documentado; las fuentes normativas/técnicas fijan el alcance de cada afirmación."
+      },
+      "etiquetas": [
+        "SGBD",
+        "trigger",
+        "disparador",
+        "evento",
+        "DML",
+        "DDL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/tdddg/triggers.html",
+            "referencia": "Oracle AI Database 26, About Triggers: unidad PL/SQL almacenada que se ejecuta automáticamente al producirse un evento especificado; este puede asociarse a tabla, vista, esquema o base de datos e incluir DML, DDL y eventos de base de datos."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/lnpls/dml-triggers.html",
+            "referencia": "Oracle AI Database 26, DML Triggers: eventos INSERT, UPDATE y DELETE, y puntos BEFORE/AFTER de sentencia o fila; también INSTEAD OF sobre vistas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 63, 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5, IV-2."
+          }
+        ],
+        "observaciones": "La definición original solo contemplaba operaciones DML sobre tablas y el intento de realizarlas. Se generaliza con alcance Oracle: un trigger habilitado se dispara automáticamente ante un evento especificado, que puede ser DML, DDL o de base de datos; los disparadores DML pueden asociarse también a vistas y tener distintos puntos de ejecución. No es un puntero, log ni organización física de filas. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); El bloque 29 cubre SGBD, SQL y objetos programables/administración; triggers y sus eventos/timing se verifican en Oracle Database 26. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5, IV-2)."
+      }
     },
     {
       "id": 4054,
@@ -202601,21 +202738,107 @@
         "No permite incorporar aspectos semánticos mediante el establecimiento de reglas de integridad"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se confirma la opción basada en teoría de conjuntos y lógica de predicados. El modelo relacional fue propuesto por Edgar F. Codd, no por Peter Chen (cuyo trabajo clásico es el modelo entidad-relación); el esquema relacional admite restricciones de integridad que expresan propiedades semánticas.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§2.1 y 3 presentan el modelo relacional y sus bases formales; la autoría y formulación se comprueban en el artículo original de Codd. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático directo documentado; las fuentes normativas/técnicas fijan el alcance de cada afirmación."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "Codd",
+        "teoría de conjuntos",
+        "lógica de predicados",
+        "integridad"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1145/362384.362685",
+            "referencia": "E. F. Codd, A Relational Model of Data for Large Shared Data Banks (1970), artículo fundacional del modelo relacional; emplea relaciones y fundamenta operaciones y derivabilidad relacional."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+          }
+        ],
+        "observaciones": "Se confirma la opción basada en teoría de conjuntos y lógica de predicados. El modelo relacional fue propuesto por Edgar F. Codd, no por Peter Chen (cuyo trabajo clásico es el modelo entidad-relación); el esquema relacional admite restricciones de integridad que expresan propiedades semánticas. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§2.1 y 3 presentan el modelo relacional y sus bases formales; la autoría y formulación se comprueban en el artículo original de Codd. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4)."
+      }
     },
     {
       "id": 4055,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale cuál de las siguientes sentencias se cataloga dentro del lenguaje SQL como sentencia de DCL:",
+      "texto": "En Oracle Database, ¿qué sentencia retira privilegios o roles que se habían concedido a usuarios, roles o unidades de programa?",
       "opciones": [
-        "REVOKE",
-        "CREATE",
-        "DELETE",
-        "SELECT"
+        "REVOKE.",
+        "CREATE.",
+        "DELETE.",
+        "SELECT."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene REVOKE como respuesta funcional, pero se elimina la clasificación universal del comando como DCL: las taxonomías SQL varían; por ejemplo, la documentación Oracle agrupa GRANT y REVOKE bajo sus tipos de sentencias DDL. El nuevo enunciado pregunta por el efecto inequívoco y acotado a Oracle: retirar privilegios o roles concedidos.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§5.2–5.3 cubren SQL y sus instrucciones; se evita imponer la etiqueta DCL universal, y se pregunta por la función concreta de REVOKE según Oracle. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático directo documentado; las fuentes normativas/técnicas fijan el alcance de cada afirmación."
+      },
+      "etiquetas": [
+        "SQL",
+        "REVOKE",
+        "privilegios",
+        "control de acceso",
+        "seguridad de base de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/REVOKE.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, REVOKE: elimina privilegios de sistema, de objeto o roles concedidos a usuarios/roles/program units."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/GRANT.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, GRANT: concede privilegios o roles; se consulta junto con REVOKE para expresar de modo inequívoco la operación inversa."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se mantiene REVOKE como respuesta funcional, pero se elimina la clasificación universal del comando como DCL: las taxonomías SQL varían; por ejemplo, la documentación Oracle agrupa GRANT y REVOKE bajo sus tipos de sentencias DDL. El nuevo enunciado pregunta por el efecto inequívoco y acotado a Oracle: retirar privilegios o roles concedidos. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§5.2–5.3 cubren SQL y sus instrucciones; se evita imponer la etiqueta DCL universal, y se pregunta por la función concreta de REVOKE según Oracle. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4056,
