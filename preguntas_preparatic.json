@@ -203959,21 +203959,61 @@
       "id": 4076,
       "bloque": 0,
       "tema": 0,
-      "texto": "En las bases de datos, ¿qué tipo de redundancia debe tolerarse?",
+      "texto": "En el diseño de una base de datos relacional, ¿qué redundancia puede introducirse deliberadamente, por ejemplo, tras normalizar, si existe una justificación operativa y se mantiene la consistencia?",
       "opciones": [
-        "Lógica",
-        "Múltiple",
-        "Controlada",
-        "Ninguna"
+        "Redundancia lógica no documentada.",
+        "Redundancia múltiple sin control.",
+        "Redundancia controlada y justificada.",
+        "Ninguna redundancia en cualquier circunstancia, incluso si se decide una desnormalización consciente."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se concreta que la redundancia normalmente se reduce mediante normalización, pero puede introducirse de forma deliberada y limitada por motivos medidos de rendimiento u operación, con reglas para mantener consistencia. “Controlada” no significa redundancia arbitraria ni que todas las copias sean aceptables.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §3.6 trata desnormalización consciente: la redundancia se introduce selectivamente tras valorar coste, rendimiento y consistencia. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) III-4).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; las definiciones de SQL y normalización se contrastan con fuentes técnicas primarias y el texto del estándar donde procede."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "normalización",
+        "redundancia",
+        "desnormalización controlada"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/tgdba/designing-and-developing-for-performance.html",
+            "referencia": "Oracle Database 19c, Designing and Developing for Performance: normalizar como base y aplicar desnormalización selectiva en transacciones centrales cuando se justifica por rendimiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y los apartados 3.6/5.11/6 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+          }
+        ],
+        "observaciones": "Se concreta que la redundancia normalmente se reduce mediante normalización, pero puede introducirse de forma deliberada y limitada por motivos medidos de rendimiento u operación, con reglas para mantener consistencia. “Controlada” no significa redundancia arbitraria ni que todas las copias sean aceptables. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §3.6 trata desnormalización consciente: la redundancia se introduce selectivamente tras valorar coste, rendimiento y consistencia. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) III-4)."
+      }
     },
     {
       "id": 4077,
       "bloque": 0,
       "tema": 0,
-      "texto": "Para trabajar con una vista que contenga tuplas de varias tablas se utilizará la sentencia SQL:",
+      "texto": "En SQL, ¿qué instrucción permite definir una vista cuya consulta obtiene filas combinando varias tablas?",
       "opciones": [
         "CREATE TABLE",
         "CREATE VIEW",
@@ -203981,49 +204021,216 @@
         "ALTER VIEW"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se explicita que una vista con columnas procedentes de varias tablas se define con CREATE VIEW AS SELECT y la consulta puede incluir JOIN. CREATE TABLE no crea una vista y ALTER TABLE modifica una tabla existente.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5.11 cubre vistas/vistas materializadas y los objetos SQL que las definen. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; las definiciones de SQL y normalización se contrastan con fuentes técnicas primarias y el texto del estándar donde procede."
+      },
+      "etiquetas": [
+        "SGBD",
+        "SQL",
+        "CREATE VIEW",
+        "vista de reunión",
+        "JOIN"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CREATE-VIEW.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, CREATE VIEW: una vista se define mediante una subconsulta; se documenta expresamente el caso de join view sobre varias tablas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y los apartados 3.6/5.11/6 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se explicita que una vista con columnas procedentes de varias tablas se define con CREATE VIEW AS SELECT y la consulta puede incluir JOIN. CREATE TABLE no crea una vista y ALTER TABLE modifica una tabla existente. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5.11 cubre vistas/vistas materializadas y los objetos SQL que las definen. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4078,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es la definición correcta de 3FN?",
+      "texto": "¿Cuál es la condición formal de tercera forma normal (3FN) para una relación?",
       "opciones": [
-        "Una entidad está en 3FN si está en 2FN y todos los atributos que forman parte de las claves candidatas (atributos principales) tienen dependencia funcional completa respecto de éstas es decir, no hay dependencias funcionales de atributos no principales respecto de una parte de las claves.",
-        "Una entidad está en 3FN si está en 2FN y lodos los atributos que no forman parte de las claves candidatas (atributos no principales) tienen dependencia funcional completa respecto de éstas, es decir, no hay dependencias funcionales de atributos no principales respecto de una parte de las claves Cada uno de los atributos de una entidad depende de toda la clave.",
-        "Una entidad está en 3FN si está en 2FN y todos sus atributos principales dependen directamente de la clave primaria, es decir, no hay dependencias funcionales transitivas de atributos no principales respecto de las claves.",
-        "Una entidad está en 3FN si está en 2FN y todos sus atributos no principales dependen directamente de la clave primaria, es decir, no hay dependencias funcionales transitivas de atributos no principales respecto de las claves."
+        "Estar en 1FN y no contener grupos repetitivos.",
+        "Que toda dependencia funcional no trivial X → A tenga X como superclave o A como atributo primo.",
+        "Que toda dependencia funcional no trivial X → A tenga X como superclave, sin excepción.",
+        "Que los atributos primos dependan de una sola clave primaria y que se elimine toda transitividad, aunque existan otras claves candidatas."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Se sustituye el texto original, con errores y formulaciones mezcladas de 2FN/3FN, por la condición formal habitual: para toda dependencia funcional no trivial X→A, X es superclave o A es atributo primo. Es equivalente a la formulación clásica de Codd bajo la definición de dependencias funcionales; evita restringirse a una clave primaria elegida o identificar toda dependencia transitiva con una violación sin matices.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.2 cubren dependencias funcionales y normalización 1FN–BCNF; se usa Codd para la definición histórica. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) III-4).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; las definiciones de SQL y normalización se contrastan con fuentes técnicas primarias y el texto del estándar donde procede."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "normalización",
+        "3FN",
+        "dependencia funcional",
+        "atributo no primo",
+        "clave candidata"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf",
+            "referencia": "E. F. Codd, Further Normalization of the Data Base Relational Model (1971), §3.3: 3FN requiere 2FN y que cada atributo no primo no dependa transitivamente de cada clave candidata; proposición P5 resume dependencia plena y no transitiva."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y los apartados 3.6/5.11/6 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+          }
+        ],
+        "observaciones": "Se sustituye el texto original, con errores y formulaciones mezcladas de 2FN/3FN, por la condición formal habitual: para toda dependencia funcional no trivial X→A, X es superclave o A es atributo primo. Es equivalente a la formulación clásica de Codd bajo la definición de dependencias funcionales; evita restringirse a una clave primaria elegida o identificar toda dependencia transitiva con una violación sin matices. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.2 cubren dependencias funcionales y normalización 1FN–BCNF; se usa Codd para la definición histórica. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) III-4)."
+      }
     },
     {
       "id": 4079,
       "bloque": 0,
       "tema": 0,
-      "texto": "Para borrar una tabla en SQL utilizaré:",
+      "texto": "En SQL, ¿qué instrucción elimina una tabla como objeto de esquema, no solo las filas que contiene?",
       "opciones": [
-        "DELETE + Nombre de la tabla",
-        "DROP + Nombre de la tabla",
-        "REVOKE + Nombre de la tabla",
+        "DELETE FROM nombre_tabla",
+        "DROP TABLE nombre_tabla",
+        "REVOKE nombre_tabla",
         "B y C son ciertas"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se precisa la diferencia entre eliminar la tabla (DROP TABLE nombre) y borrar filas (DELETE FROM nombre). REVOKE revoca privilegios, no elimina tablas; se corrige la sintaxis incompleta “DROP + nombre”.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-IV-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 trata SQL/DDL y §6 administración del SGBD; se diferencia eliminar filas de eliminar el objeto tabla. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5, IV-2).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; las definiciones de SQL y normalización se contrastan con fuentes técnicas primarias y el texto del estándar donde procede."
+      },
+      "etiquetas": [
+        "SQL",
+        "DDL",
+        "DROP TABLE",
+        "objeto de esquema",
+        "DELETE FROM"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DROP-TABLE.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, DROP TABLE: elimina una tabla y su definición del diccionario, junto con los objetos dependientes conforme a las reglas aplicables."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y los apartados 3.6/5.11/6 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5, IV-2."
+          }
+        ],
+        "observaciones": "Se precisa la diferencia entre eliminar la tabla (DROP TABLE nombre) y borrar filas (DELETE FROM nombre). REVOKE revoca privilegios, no elimina tablas; se corrige la sintaxis incompleta “DROP + nombre”. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §5 trata SQL/DDL y §6 administración del SGBD; se diferencia eliminar filas de eliminar el objeto tabla. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5, IV-2)."
+      }
     },
     {
       "id": 4080,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el standard SQL99 indique la afirmación correcta:",
+      "texto": "Según ISO/IEC 9075-2:1999 (SQL/Foundation), señale la afirmación correcta sobre catálogos y esquemas:",
       "opciones": [
         "Un dominio contiene uno o más esquemas.",
         "Un esquema contiene uno o más catálogos.",
-        "Un esquema contiene tablas y otros objetos de esquema.",
+        "Un esquema puede contener tablas y otros objetos de esquema; su nombre es único dentro de un catálogo.",
         "Esquema y catálogo son dos conceptos equivalentes."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene la opción de que un esquema contiene tablas y otros objetos de esquema. SQL-99 establece que los esquemas tienen nombre único dentro de un catálogo y que los nombres de tabla/view identifican el esquema; no son conceptos equivalentes ni un esquema contiene catálogos.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); El apartado de SQL/interoperabilidad cubre catálogos, esquemas y objetos según el estándar; el estándar ISO/IEC 9075-2:1999 es fuente normativa. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; las definiciones de SQL y normalización se contrastan con fuentes técnicas primarias y el texto del estándar donde procede."
+      },
+      "etiquetas": [
+        "SQL-99",
+        "catálogo",
+        "esquema",
+        "tabla",
+        "objetos de esquema",
+        "estándares"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://courses.cms.caltech.edu/cs123/sql99std/ansi-iso-9075-2-1999.pdf",
+            "referencia": "ISO/IEC 9075-2:1999 (SQL/Foundation), §§4.20 y 5.4: los nombres de esquema son únicos dentro de un catálogo; tabla/vista se identifica con un nombre que contiene el esquema, y el esquema comprende descriptores de objetos persistentes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo del índice y los apartados 3.6/5.11/6 pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se mantiene la opción de que un esquema contiene tablas y otros objetos de esquema. SQL-99 establece que los esquemas tienen nombre único dentro de un catálogo y que los nombres de tabla/view identifican el esquema; no son conceptos equivalentes ni un esquema contiene catálogos. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); El apartado de SQL/interoperabilidad cubre catálogos, esquemas y objetos según el estándar; el estándar ISO/IEC 9075-2:1999 es fuente normativa. Correspondencia curricular contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y convocatoria A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4081,

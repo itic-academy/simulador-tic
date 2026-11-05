@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 750 (IDs 4071–4075). Acumulado: 4070 preguntas examinadas individualmente, 3990 verificadas (774 vigentes, 2899 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8053 sin revisar individualmente. Hay 3358 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 751 (IDs 4076–4080). Acumulado: 4075 preguntas examinadas individualmente, 3995 verificadas (774 vigentes, 2904 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8048 sin revisar individualmente. Hay 3363 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 751 — 5 de noviembre de 2026
+
+IDs 4076–4080 revisados individualmente; se conserva el estado previo completo en [cambios-lote-751.json](cambios-lote-751.json).
+
+- **4076 — redundancia:** se acota la respuesta “controlada” a desnormalización selectiva y justificada por coste/rendimiento, manteniendo consistencia; no se avala duplicación indiscriminada. **Corregida.**
+- **4077 — vista sobre varias tablas:** se confirma `CREATE VIEW` con consulta que puede contener un JOIN; se distingue de vistas materializadas y de crear/modificar tablas base. **Corregida.**
+- **4078 — 3FN:** se corrigen las alternativas que mezclaban 2FN, claves primarias/candidatas y transitividad. Se formula la condición no trivial X→A: X superclave o A primo. **Corregida.**
+- **4079 — eliminar una tabla:** se distingue `DROP TABLE` (objeto y definición) de `DELETE FROM` (filas) y de revocar privilegios; se corrige la sintaxis. **Corregida.**
+- **4080 — catálogo y esquema en SQL-99:** se conserva que el esquema contiene tablas y otros objetos y se añade la precisión del estándar: los nombres de esquemas son únicos dentro de un catálogo. **Corregida.**
+
+Fuentes: [Oracle AI Database 19c, diseño y desnormalización selectiva](https://docs.oracle.com/en/database/oracle/oracle-database/19/tgdba/designing-and-developing-for-performance.html); [Oracle AI Database 26, CREATE VIEW](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CREATE-VIEW.html); Codd, [Further Normalization of the Data Base Relational Model (1971)](https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf); [Oracle AI Database 26, DROP TABLE](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DROP-TABLE.html); [ISO/IEC 9075-2:1999 SQL/Foundation, §§4.20 y 5.4](https://courses.cms.caltech.edu/cs123/sql99std/ansi-iso-9075-2-1999.pdf).
+
+Cotejo curricular directo: [bloque 29 «Bases de datos, SQL y modelado de datos», ITIC Academy, versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), consultado en Drive: §3.6 desnormalización consciente, §§3.1–3.2 dependencias y formas normales, §5.11 vistas y objetos programables, §6 administración de SGBD. Correspondencia contrastada con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 64, y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4076/4078 A1-64/A2-III-4; 4077 A1-64/A2-II-5; 4079 A1-64/A2-II-5/IV-2; 4080 A1-64/A2-II-5. Academy se emplea para el encaje curricular y no sustituye al estándar ISO ni a la documentación técnica.
+
+Comprobaciones registradas: lectura directa en Drive del bloque 29 y revisión de los apartados pertinentes; Oracle fundamenta la desnormalización selectiva, vistas y DDL; Codd sustenta las formas normales; ISO/IEC 9075-2:1999 fundamenta la jerarquía catálogo/esquema/tabla. Inventario, verificador y `git diff --check` ejecutados después del lote.
 
 ## Lote 750 — 5 de noviembre de 2026
 
