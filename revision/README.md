@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 765 (IDs 4146–4150). Acumulado: 4145 preguntas examinadas individualmente, 4065 verificadas (774 vigentes, 2969 corregidas y 322 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7978 sin revisar individualmente. Hay 3433 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 766 (IDs 4151–4155). Acumulado: 4150 preguntas examinadas individualmente, 4070 verificadas (774 vigentes, 2974 corregidas y 322 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7973 sin revisar individualmente. Hay 3438 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 766 — 5 de noviembre de 2026
+
+IDs 4151–4155 revisados individualmente; originales y nuevas formulaciones se conservan en [cambios-lote-766.json](cambios-lote-766.json).
+
+- **4151 — autenticidad:** se precisa autenticidad como propiedad de que los datos procedan de la fuente que declaran, diferenciándola de integridad y confidencialidad. **Corregida.**
+- **4152 — lector del DNIe:** se acota el reactivo a la lectura por contacto en PC; se requiere lector de tarjetas inteligentes ISO/IEC 7816. Se documenta que DNI 3.0 ofrece además NFC, sin atribuir lectores exclusivos a la Policía. **Corregida.**
+- **4153 — OCSP:** RFC 6960 exige que se firmen las respuestas definitivas, pero permite petición sin firma; RFC 2560 fue la especificación original sustituida. Se conserva la opción falsa correcta y se actualiza el marco vigente. **Corregida.**
+- **4154 — impresión 3D:** se conserva SLS, pero se delimita la diferencia entre sinterización de polvo y fusión completa del lecho, evitando generalizar el comportamiento térmico de todo material/equipo. **Corregida.**
+- **4155 — OCR/tipografía:** el original tenía más de una opción defendible (ascender y pica). Se reformula como pregunta de unidad: una pica equivale a 12 puntos. **Corregida.**
+
+Fuentes técnicas primarias: [NIST CSRC, autenticidad](https://csrc.nist.gov/glossary/term/authenticity); [Portal oficial DNIe, requisitos de uso](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_300) y [versiones DNIe/DNI 3.0](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1001); [IETF RFC 6960, OCSP](https://www.rfc-editor.org/rfc/rfc6960.html) y [RFC 2560, especificación inicial](https://www.rfc-editor.org/rfc/rfc2560.html); [NIST, procesos de fabricación aditiva](https://www.nist.gov/document/3dprinting-thenewshapeofmfgpdf) y [tecnologías de fabricación aditiva](https://www.nist.gov/additive-manufacturing/research-areas/technologies); [Adobe, Typographic Terms](https://www.adobe.com/studio/print/pdf/typographic_terms.pdf) y [Adobe Fonts FAQ](https://helpx.adobe.com/ee/fonts/web/using/adobe-type-resources-faq.html).
+
+Cotejo curricular con [ITIC Academy, bloque 36, seguridad, criptografía, identificación y firma, versión 2026.1](https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk) y [bloque 37, imágenes, OCR, biometría y gestión de contenidos, versión 2026.1](https://drive.google.com/file/d/1xTMCpPmwNi8hpb0nZ3sMqpgvrhLXT-yf/view?usp=drivesdk). Encaje oficial contrastado con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4151 A1-80/A2-IV-12; 4152 A1-81/A2-I-6; 4153 A1-80/A2-IV-12; 4154 A1-83; 4155 A1-84. No se asigna A2 a 4154–4155 por falta de correspondencia temática directa. Academy sirve de cotejo curricular, no sustituye la comprobación primaria.
+
+Verificaciones: se consultaron directamente NIST, Policía Nacional/DNIe, IETF, NIST fabricación aditiva y Adobe; se cotejaron los dos bloques de Academy en Drive y los programas oficiales A1/A2. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 765 — 5 de noviembre de 2026
 
