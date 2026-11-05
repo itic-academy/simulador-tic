@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 721 (IDs 3926–3930). Acumulado: 3925 preguntas examinadas individualmente, 3847 verificadas (766 vigentes, 2790 corregidas y 291 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8198 sin revisar individualmente. Hay 3218 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 722 (IDs 3931–3935). Acumulado: 3930 preguntas examinadas individualmente, 3852 verificadas (767 vigentes, 2794 corregidas y 291 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8193 sin revisar individualmente. Hay 3223 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 722 — 5 de noviembre de 2026
+
+IDs 3931–3935 revisados individualmente. Los enunciados, opciones y claves originales quedan preservados en [cambios-lote-722.json](cambios-lote-722.json).
+
+- **3931 — fiabilidad:** se aclara la edición ISO/IEC 25010:2023; la disponibilidad es subcaracterística de fiabilidad, mientras integridad pertenece a seguridad. La edición 2011 está retirada. **Corregida.**
+- **3932 — UML:** mensaje, línea de vida y especificación de ejecución/barra de activación son elementos de las interacciones representadas por un diagrama de secuencia. **Corregida.**
+- **3933 — MÉTRICA v3:** en ASI 7.1 el DFD es la técnica propuesta para obtener y descomponer el modelo de procesos, describiendo procesos y flujos de datos. **Corregida.**
+- **3934 — análisis coste/beneficio:** se pregunta por la lista expresa de tres usos de MÉTRICA v3. El punto de amortización se define aparte en la técnica y no es uno de esos tres enunciados; se evita sugerir que sea ajeno a la evaluación económica. **Corregida.**
+- **3935 — calidad en la AGE:** el marco general queda establecido por el Real Decreto 951/2005, de 29 de julio, confirmado en el texto consolidado del BOE. **Vigente.**
+
+Fuentes primarias: [ISO/IEC 25010:2023, edición vigente](https://www.iso.org/standard/78176.html) y [vista pública de la edición retirada 2011](https://www.iso.org/obp/ui/?_escaped_fragment_=iso%3Astd%3Aiso-iec%3A25010%3Aed-1%3Av1%3Aen); [OMG UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/PDF); [MÉTRICA v3, Análisis del Sistema de Información, ASI 7.1](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Aad870327-56b7-4dfa-af15-e62222f45b90/METRICA_V3_Analisis_del_Sistema_de_Informacion.pdf) y [Guía de Técnicas](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ada7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf); [examen oficial INAP 2008, pregunta sobre las tres utilidades](https://www.inap.es/documents/10136/1680866/GsiLprimerejercicio2008.pdf/e70c343d-41b4-da54-7bb3-21038d8d5d8a); [definición separada del punto de amortización en MÉTRICA v3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/analisis-coste-beneficio/); [Real Decreto 951/2005 consolidado, BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2005-14836).
+
+Cotejo académico en Drive: [bloque 39, Calidad y mantenimiento del software, 2026](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk) para calidad y modelos de software (3931); [bloque 38, Análisis, diseño y construcción de sistemas de información, 2026](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk) para UML y análisis/MÉTRICA (3932–3933); [bloque 17, Adquisición de sistemas y rentabilidad, 2026](https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk) para viabilidad y coste/beneficio (3934); [bloque 03, Actuación administrativa, 2026](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk) para marco administrativo y calidad AGE (3935). Correspondencia con [convocatoria oficial A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3931 A1-96/98, A2-III-13; 3932 A1-95, A2-III-9; 3933 A1-95, A2-III-3; 3934 A1-95, A2-II-15; 3935 A1-22, A2-I-8.
+
+Comprobaciones: inventario y verificador ejecutados tras registrar el lote; resumen superior actualizado con sus resultados.
 
 ## Lote 721 — 5 de noviembre de 2026
 
