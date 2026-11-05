@@ -205345,71 +205345,284 @@
       "id": 4101,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según las reglas de Codd respecto a los sistemas relacionales, y atendiendo a la regla 2 (del acceso garantizado), ¿cuál de los siguientes requisitos NO se incluye en dicha regla como necesaria para acceder de manera unívoca a la información?",
+      "texto": "Según la regla 2 de Codd (acceso garantizado), ¿qué elemento NO forma parte de la combinación que permite identificar sin ambigüedad un dato almacenado?",
       "opciones": [
-        "Nombre de tabla",
-        "Valor de clave primaria",
-        "Número de fila",
-        "Nombre de columna"
+        "Nombre de tabla.",
+        "Valor de la clave primaria de la fila.",
+        "Número o posición física de la fila.",
+        "Nombre de columna."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La regla 2 de Codd exige identificar un dato mediante nombre de tabla, valor de clave primaria y nombre de columna. El número/posición de fila no forma parte del acceso garantizado; además, el orden físico de filas no es identidad relacional. Se conserva como respuesta la opción «Número de fila».",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.5 reproduce las reglas de Codd: la regla de acceso garantizado identifica el dato por tabla, clave y atributo. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; cuando el encaje es amplio se identifica expresamente. La academia contextualiza y no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "Codd",
+        "regla 2",
+        "acceso garantizado",
+        "clave primaria"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.computerworld.com/article/1381158/codd-s-12-rules.html",
+            "referencia": "E. F. Codd, «Is Your DBMS Really Relational?» (1985), regla 2: identifica un dato sin ambigüedad mediante nombre de tabla, valor de clave primaria y nombre de columna; la posición/número de fila no es el identificador lógico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); consulta directa del temario, índice y apartados relevantes: §2.5 reproduce las reglas de Codd: la regla de acceso garantizado identifica el dato por tabla, clave y atributo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "La regla 2 de Codd exige identificar un dato mediante nombre de tabla, valor de clave primaria y nombre de columna. El número/posición de fila no forma parte del acceso garantizado; además, el orden físico de filas no es identidad relacional. Se conserva como respuesta la opción «Número de fila». ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §2.5 reproduce las reglas de Codd: la regla de acceso garantizado identifica el dato por tabla, clave y atributo. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4102,
       "bloque": 0,
       "tema": 0,
-      "texto": "En electrónica digital, un conjunto de funciones es completo en un álgebra de Boole:",
+      "texto": "En electrónica digital, ¿cuándo es funcionalmente completo un conjunto de funciones booleanas?",
       "opciones": [
-        "Si y sólo si cualquier forma booleana puede realizarse con dichas funciones.",
-        "Si un conjunto mínimo puede realizarse con dichas funciones.",
-        "Si y sólo si contiene a todas las funciones lógicas siguientes AND, OR, NOT, NAND, XOR.",
-        "Ninguna de las anteriores es válida."
+        "Cuando permite expresar cualquier función booleana de un número finito de variables.",
+        "Cuando permite realizar al menos una forma booleana mínima.",
+        "Solo cuando contiene simultáneamente AND, OR, NOT, NAND y XOR.",
+        "Cuando sus funciones no pueden componerse entre sí."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Un conjunto de funciones es funcionalmente completo si permite expresar cualquier función booleana de un número finito de variables. Por ejemplo, NAND por sí sola es una base funcionalmente completa; no hace falta que el conjunto contenga simultáneamente AND, OR, NOT, NAND y XOR. El bloque de academia de hardware se usa solo como encuadre amplio: no se localizó en él cobertura explícita de álgebra de Boole, por lo que el encaje A1-54/A2-II-1 se marca como próximo/contextual, no como subtema expreso.",
+      "clasificacion": {
+        "A1": [
+          "A1-54"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31/08/2026); El bloque 26 ofrece solo encuadre general de hardware; no se localizó desarrollo explícito del álgebra de Boole. La correspondencia oficial A1-54/A2-II-1 es amplia/contextual, no un epígrafe específico de lógica digital. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 54), y A2 GSI 2025, anexo IX (tema(s) II-1).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; cuando el encaje es amplio se identifica expresamente. La academia contextualiza y no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "electrónica digital",
+        "álgebra de Boole",
+        "completitud funcional",
+        "función booleana"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.cs.virginia.edu/~evans/greatworks/shannon38.pdf",
+            "referencia": "Claude E. Shannon, «A Symbolic Analysis of Relay and Switching Circuits» (1938): formaliza funciones booleanas/síntesis de circuitos y muestra la realización de funciones de conmutación mediante circuitos. La respuesta aplica la definición de completitud funcional: expresar cualquier función booleana de un número finito de variables."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31/08/2026); consulta directa del temario, índice y apartados relevantes: El bloque 26 ofrece solo encuadre general de hardware; no se localizó desarrollo explícito del álgebra de Boole. La correspondencia oficial A1-54/A2-II-1 es amplia/contextual, no un epígrafe específico de lógica digital."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 54."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-1."
+          }
+        ],
+        "observaciones": "Un conjunto de funciones es funcionalmente completo si permite expresar cualquier función booleana de un número finito de variables. Por ejemplo, NAND por sí sola es una base funcionalmente completa; no hace falta que el conjunto contenga simultáneamente AND, OR, NOT, NAND y XOR. El bloque de academia de hardware se usa solo como encuadre amplio: no se localizó en él cobertura explícita de álgebra de Boole, por lo que el encaje A1-54/A2-II-1 se marca como próximo/contextual, no como subtema expreso. ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31/08/2026); El bloque 26 ofrece solo encuadre general de hardware; no se localizó desarrollo explícito del álgebra de Boole. La correspondencia oficial A1-54/A2-II-1 es amplia/contextual, no un epígrafe específico de lógica digital. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 54), y A2 GSI 2025, anexo IX (tema(s) II-1)."
+      }
     },
     {
       "id": 4103,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué norma de las que se relacionan a continuación afecta a SQL?",
+      "texto": "¿Qué serie de normas internacionales especifica el lenguaje SQL?",
       "opciones": [
-        "ISO 9075",
-        "ISO 9003",
-        "ANSI 9003",
-        "IEEE 9003"
+        "ISO/IEC 9075.",
+        "ISO 9003.",
+        "ANSI 9003.",
+        "IEEE 9003."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "SQL está normalizado en la serie ISO/IEC 9075; la parte 2 se titula SQL/Foundation. Se conserva la opción ISO 9075 como denominación abreviada histórica del estándar; las opciones ISO 9003, ANSI 9003 e IEEE 9003 no identifican la norma de SQL. La edición de referencia actual es 2023 y cuenta con corrigendum de 2026.",
+      "clasificacion": {
+        "A1": [
+          "A1-50",
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); La sección de normalización/SQL y estándares contextualiza ISO/IEC 9075; tema oficial A1-50 de normalización y A1-64/A2-II-5 de SQL e interoperabilidad. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 50, 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; cuando el encaje es amplio se identifica expresamente. La academia contextualiza y no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "SQL",
+        "ISO/IEC 9075",
+        "estandarización",
+        "normas ISO"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/76584.html",
+            "referencia": "ISO, ISO/IEC 9075-2:2023, SQL/Foundation, edición publicada vigente de la parte 2; la serie 9075 especifica el lenguaje SQL."
+          },
+          {
+            "url": "https://www.iso.org/standard/93691.html",
+            "referencia": "ISO, ISO/IEC 9075-2:2023/Cor 1:2026, corrigendum técnico publicado en agosto de 2026 y aplicable a la edición 2023."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); consulta directa del temario, índice y apartados relevantes: La sección de normalización/SQL y estándares contextualiza ISO/IEC 9075; tema oficial A1-50 de normalización y A1-64/A2-II-5 de SQL e interoperabilidad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 50, 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "SQL está normalizado en la serie ISO/IEC 9075; la parte 2 se titula SQL/Foundation. Se conserva la opción ISO 9075 como denominación abreviada histórica del estándar; las opciones ISO 9003, ANSI 9003 e IEEE 9003 no identifican la norma de SQL. La edición de referencia actual es 2023 y cuenta con corrigendum de 2026. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); La sección de normalización/SQL y estándares contextualiza ISO/IEC 9075; tema oficial A1-50 de normalización y A1-64/A2-II-5 de SQL e interoperabilidad. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 50, 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4104,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la afirmación incorrecta:",
+      "texto": "Indique la afirmación incorrecta sobre las formas normales relacionales:",
       "opciones": [
-        "Una relación está en segunda forma normal (2FN) solamente si todos los atributos son dependientes en forma completa de la clave.",
-        "Cualquier relación en primera forma normal que tiene una clave compuesta, está automáticamente en segunda forma normal.",
-        "Una relación se encuentra en tercera forma normal (EFN) si no existen transitividades entre sus atributos y si ya se encuentra en 2 FN.",
-        "Para poner una relación en la cuarta forma normal debe estar en 3FN y deben existir una o más multidependencias."
+        "En 2FN, cada atributo no primo depende funcionalmente de forma completa de cada clave candidata.",
+        "Toda relación en 1FN que tenga una clave compuesta está automáticamente en 2FN.",
+        "Una relación está en 3FN si, para toda dependencia funcional no trivial X → A, X es superclave o A es un atributo primo.",
+        "Una relación está en 4FN si, para toda dependencia multivaluada no trivial X ↠ Y, X es superclave; no es necesario que exista una dependencia multivaluada que viole esa condición."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene B como la afirmación incorrecta: estar en 1FN y tener clave compuesta no garantiza 2FN, pues puede existir una dependencia parcial. Se reescriben A, C y D con definiciones formales: 2FN afecta a atributos no primos y claves candidatas; 3FN exige, para cada dependencia funcional no trivial, determinante superclave o atributo primo; 4FN impone que todo determinante de una dependencia multivaluada no trivial sea superclave, incluso cuando no exista ninguna dependencia de ese tipo.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.3 cubren dependencias funcionales, 1FN–4FN y diseño relacional. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5, III-4).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; cuando el encaje es amplio se identifica expresamente. La academia contextualiza y no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "normalización",
+        "2FN",
+        "3FN",
+        "4FN",
+        "dependencia funcional",
+        "dependencia multivaluada"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1145/1734714.1734716",
+            "referencia": "E. F. Codd, «Further Normalization of the Data Base Relational Model» (1971): definición de formas normales 2FN/3FN y dependencias funcionales."
+          },
+          {
+            "url": "https://d3ccyth396mz21.cloudfront.net/publications/multivalued-dependencies-and-a-new-normal-form-for-relational-databases",
+            "referencia": "Ronald Fagin, «Multivalued Dependencies and a New Normal Form for Relational Databases» (1977): define 4NF mediante dependencias multivaluadas no triviales cuyo determinante debe ser superclave."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); consulta directa del temario, índice y apartados relevantes: §§3.1–3.3 cubren dependencias funcionales, 1FN–4FN y diseño relacional."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5, III-4."
+          }
+        ],
+        "observaciones": "Se mantiene B como la afirmación incorrecta: estar en 1FN y tener clave compuesta no garantiza 2FN, pues puede existir una dependencia parcial. Se reescriben A, C y D con definiciones formales: 2FN afecta a atributos no primos y claves candidatas; 3FN exige, para cada dependencia funcional no trivial, determinante superclave o atributo primo; 4FN impone que todo determinante de una dependencia multivaluada no trivial sea superclave, incluso cuando no exista ninguna dependencia de ese tipo. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§3.1–3.3 cubren dependencias funcionales, 1FN–4FN y diseño relacional. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5, III-4)."
+      }
     },
     {
       "id": 4105,
       "bloque": 0,
       "tema": 0,
-      "texto": "El uso de mecanismos como JDBC u ODBC:",
+      "texto": "¿Qué aportan normalmente interfaces estándar de acceso a datos como JDBC u ODBC?",
       "opciones": [
-        "Proporciona independencia respecto al SGBD utilizado.",
-        "Proporcionan generalmente un mayor rendimiento y funcionalidad que las APIs nativas de los SGBD.",
-        "Tienen poca importancia en sistemas donde se acceden a SGBD heterogéneos.",
-        "Se utilizan únicamente en arquitecturas cliente-servidor, no en entornos de aplicaciones WEB."
+        "Drivers intercambiables que reducen el acoplamiento con un SGBD y facilitan la portabilidad, sin garantizar independencia total de dialectos y extensiones.",
+        "Mayor rendimiento y más funciones que las API nativas en todos los gestores y cargas.",
+        "Poca utilidad cuando una aplicación accede a gestores de bases de datos heterogéneos.",
+        "Uso exclusivo en cliente-servidor; no se emplean en aplicaciones web."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "JDBC y ODBC proporcionan interfaces estándar y drivers que reducen el acoplamiento con un SGBD concreto y facilitan la portabilidad. No garantizan independencia completa: el SQL, funciones y extensiones pueden variar entre gestores. Se conserva como correcta la opción que atribuye independencia, entendida como portabilidad facilitada por una capa de acceso.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §9.2 trata SQL/CLI, ODBC y JDBC y la independencia de la interfaz respecto del SGBD mediante drivers. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo temático curricular; cuando el encaje es amplio se identifica expresamente. La academia contextualiza y no sustituye las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "JDBC",
+        "ODBC",
+        "interoperabilidad",
+        "drivers",
+        "independencia del SGBD"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/database-concepts.pdf",
+            "referencia": "Oracle AI Database 26 Concepts, «Database Drivers»: JDBC es una API independiente del fabricante; un driver traduce las llamadas de la API al protocolo/comandos que entiende el SGBD. Esa abstracción no elimina diferencias de dialecto, funciones o extensiones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); consulta directa del temario, índice y apartados relevantes: §9.2 trata SQL/CLI, ODBC y JDBC y la independencia de la interfaz respecto del SGBD mediante drivers."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "JDBC y ODBC proporcionan interfaces estándar y drivers que reducen el acoplamiento con un SGBD concreto y facilitan la portabilidad. No garantizan independencia completa: el SQL, funciones y extensiones pueden variar entre gestores. Se conserva como correcta la opción que atribuye independencia, entendida como portabilidad facilitada por una capa de acceso. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §9.2 trata SQL/CLI, ODBC y JDBC y la independencia de la interfaz respecto del SGBD mediante drivers. Correspondencia curricular cotejada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4106,

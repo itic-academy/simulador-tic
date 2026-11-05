@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 755 (IDs 4096–4100). Acumulado: 4095 preguntas examinadas individualmente, 4015 verificadas (774 vigentes, 2924 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8028 sin revisar individualmente. Hay 3383 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 756 (IDs 4101–4105). Acumulado: 4100 preguntas examinadas individualmente, 4020 verificadas (774 vigentes, 2929 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8023 sin revisar individualmente. Hay 3388 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 756 — 5 de noviembre de 2026
+
+IDs 4101–4105 revisados individualmente; se preservan enunciados, opciones y claves originales en [cambios-lote-756.json](cambios-lote-756.json).
+
+- **4101 — regla 2 de Codd:** acceso inequívoco por tabla, valor de clave primaria y columna; el número de fila no identifica el dato. **Corregida.**
+- **4102 — completitud funcional:** se define por la capacidad de expresar cualquier función booleana finita; NAND es un ejemplo de conjunto completo unitario. El encaje curricular es general, pues la academia no desarrolla explícitamente álgebra de Boole. **Corregida.**
+- **4103 — normalización de SQL:** se identifica ISO/IEC 9075; la parte SQL/Foundation tiene edición 2023 y corrigendum de 2026. **Corregida.**
+- **4104 — normalización relacional:** B es la única afirmación incorrecta; una relación 1FN con clave compuesta puede tener dependencias parciales. A, C y D se redactan con condiciones formales de 2FN, 3FN y 4FN. **Corregida.**
+- **4105 — JDBC/ODBC:** las API y drivers reducen acoplamiento y facilitan portabilidad, sin eliminar todas las diferencias de dialectos/extensiones. **Corregida.**
+
+Fuentes primarias/técnicas: [Codd, reglas relacionales (1985), regla 2](https://www.computerworld.com/article/1381158/codd-s-12-rules.html); [Shannon, “A Symbolic Analysis of Relay and Switching Circuits” (1938)](https://www.cs.virginia.edu/~evans/greatworks/shannon38.pdf); ISO, [ISO/IEC 9075-2:2023](https://www.iso.org/standard/76584.html) y [Corrigendum 1:2026](https://www.iso.org/standard/93691.html); [Codd, “Further Normalization of the Data Base Relational Model” (1971)](https://doi.org/10.1145/1734714.1734716); [Fagin, “Multivalued Dependencies and a New Normal Form for Relational Databases” (1977)](https://d3ccyth396mz21.cloudfront.net/publications/multivalued-dependencies-and-a-new-normal-form-for-relational-databases); [Oracle Database Concepts 26, drivers JDBC](https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/database-concepts.pdf).
+
+Cotejo curricular directo en Drive: [ITIC Academy, bloque 29](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), versión 2026.1: §2.5 reglas de Codd (4101), §§3.1–3.3 normalización (4104), SQL/estándares (4103) y §9.2 ODBC/JDBC (4105). [Bloque 26](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk): encuadre general de hardware para 4102, sin mención localizada de álgebra de Boole. Correspondencia contrastada con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4101 A1-64/A2-II-5; 4102 A1-54/A2-II-1 (encaje amplio/contextual); 4103 A1-50/A1-64/A2-II-5; 4104 A1-64/A2-II-5/III-4; 4105 A1-64/A2-II-5.
+
+Verificaciones: consulta directa de los dos bloques de Academy, correspondencias cotejadas contra `temario-oficial.json` y anexos oficiales; semántica contrastada con Codd, Shannon, ISO, Fagin y documentación Oracle. `inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados tras aplicar el lote.
 
 ## Lote 755 — 5 de noviembre de 2026
 
