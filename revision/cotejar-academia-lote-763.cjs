@@ -1,0 +1,21 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-763.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+const convA1='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',convA2='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262';
+const academy={
+  interop:{url:'https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view?usp=drivesdk',name:'ITIC Academy, bloque 20 «Interoperabilidad», versión 2026 v2 ampliada'},
+  ens:{url:'https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk',name:'ITIC Academy, bloque 22 «Seguridad, ENS y ciberseguridad», edición 2026'},
+  mdm:{url:'https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk',name:'ITIC Academy, bloque «Redes inalámbricas y comunicaciones móviles», versión 2026.1'},
+  storage:{url:'https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk',name:'ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026'},
+  soa:{url:'https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk',name:'ITIC Academy, bloque 28 «Arquitectura SOA y requisitos no funcionales», versión 2026 V2'}
+};
+const map={
+  4136:{a1:['46'],a2:['I-9'],sources:[['interop','§§11.2–11.3 y 12 cubren documentos y expedientes electrónicos, metadatos y NTI de digitalización; el cotejo diferencia el documento de su expediente.']]},
+  4137:{a1:['47'],a2:['II-10'],sources:[['ens','Bloque ENS/ciberseguridad 2026, análisis de riesgos y tratamiento por categorías; la descripción del análisis informal BÁSICO se contrasta con CCN/PILAR.']]},
+  4138:{a1:['54'],a2:['IV-15'],sources:[['mdm','§16 trata MDM/EMM/UEM, inventario, configuración, protección y supervisión del dispositivo en el ciclo de vida.']]},
+  4139:{a1:['56'],a2:['IV-5'],sources:[['storage','§15.4 distingue replicación síncrona (acuse de réplicas y mayor latencia) y asíncrona (confirmación local con posible desfase).']]},
+  4140:{a1:['58','65'],a2:['II-6'],sources:[['soa','§2.7 presenta ESB como middleware para integrar servicios y aplicaciones, con mediación, enrutamiento y transformación. El encaje principal es A1-58/A2-II-6; A1-65 también se relaciona con la integración.']]}
+};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=map[c.id];assert.ok(q?.revision&&q.clasificacion&&m,'Falta revisión/cotejo '+c.id);for(const id of [...m.a1.map(n=>'A1-'+n),...m.a2.map(n=>'A2-'+n)])assert.ok(official.has(id),'Tema desconocido '+id);q.clasificacion.A1=m.a1.map(n=>'A1-'+n);q.clasificacion.A2=m.a2.map(n=>'A2-'+n);q.clasificacion.bloque_academia=m.sources.map(([key,note])=>academy[key].name+'; '+note).join(' ')+` Correspondencia contrastada con convocatoria oficial A1 GSI 2025, anexo I (${m.a1.map(n=>'tema '+n).join(', ')}), y A2 GSI 2025, anexo IX (${m.a2.map(n=>'tema '+n).join(', ')}).`;q.clasificacion.nota='Cotejo curricular directo de las fuentes académicas citadas y clasificación según los anexos oficiales A1/A2; la Academy aporta contexto didáctico, no sustituye la fuente primaria de la respuesta.';q.revision.observaciones+=' '+q.clasificacion.bloque_academia;const refs=[...m.sources.map(([key,referencia])=>({url:academy[key].url,referencia:academy[key].name+'; '+referencia})),{url:convA1,referencia:'Convocatoria oficial A1 GSI 2025, anexo I: '+m.a1.map(n=>'tema '+n).join(', ')+'.'},{url:convA2,referencia:'Convocatoria oficial A2 GSI 2025, anexo IX: '+m.a2.map(n=>'tema '+n).join(', ')+'.'}];for(const f of refs)if(!q.revision.fuentes.some(x=>x.url===f.url))q.revision.fuentes.push(f);c.actualizada=structuredClone(q)}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo Academy y convocatorias aplicado a 4136–4140.');
