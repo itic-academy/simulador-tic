@@ -1,0 +1,38 @@
+const apply = require('./aplicar-lote.cjs');
+const embedded = 'https://docs.oracle.com/cd/A97630_01/appdev.920/a42525/ch02.htm';
+const select = 'https://www.postgresql.org/docs/current/sql-select.html';
+const oracleSelect = 'https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SELECT.html';
+const optimizer = 'https://docs.oracle.com/en/database/oracle/oracle-database/26/tgsql/query-optimizer-concepts.html';
+const mv = 'https://docs.oracle.com/en/database/oracle/oracle-database/26/dwhsg/basic-materialized-views.html';
+const mvDdl = 'https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CREATE-MATERIALIZED-VIEW.html';
+const codd = 'https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf';
+const academy = 'https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk';
+apply({
+  numero: '744', fecha: '2026-11-05',
+  records: [
+    [4041, ['64'], ['II-5'], ['SQL', 'SQL embebido', 'lenguaje anfitrión', 'precompilador'], [
+      { url: embedded, referencia: 'Oracle Pro*C/C++ Programmer’s Guide, Learning the Basics: embedded SQL son sentencias SQL incorporadas a un programa de aplicación; este se denomina host program y el lenguaje anfitrión host language.' }
+    ], '', 'Se sustituye “SQL anfitrión” por el término inequívoco SQL embebido (embedded SQL): sentencias SQL incluidas en un programa escrito en otro lenguaje anfitrión y procesadas por el mecanismo/precompilador correspondiente. PL/SQL es un lenguaje procedural de Oracle y no el nombre genérico de esta técnica.', 'corregida'],
+    [4042, ['64'], ['II-5'], ['SQL', 'SELECT', 'proyección', 'álgebra relacional'], [
+      { url: select, referencia: 'PostgreSQL 18, SELECT List: las expresiones entre SELECT y FROM forman las columnas de salida; SELECT sin DISTINCT conserva duplicados, diferencia relevante frente a la proyección del álgebra relacional clásica.' },
+      { url: oracleSelect, referencia: 'Oracle AI Database 26 SQL Language Reference, SELECT: sintaxis de la consulta y lista de expresiones que determinan las columnas seleccionadas.' }
+    ], '', 'Se delimita la pregunta a la lista de expresiones situada entre SELECT y FROM: conceptualmente corresponde a la proyección, que elige atributos/expresiones de salida. No se equipara toda la sentencia SELECT (que incluye FROM, filtros, joins, agrupación y otras cláusulas) con una sola operación del álgebra; además SQL conserva duplicados por defecto, a diferencia de la relación matemática clásica.', 'corregida'],
+    [4043, ['63', '64'], ['II-5'], ['SQL', 'optimizador', 'plan de ejecución', 'coste'], [
+      { url: optimizer, referencia: 'Oracle AI Database 26, Query Optimizer Concepts: el optimizador compara planes y costes estimados usando estadísticas y factores como E/S, CPU y comunicación; examina accesos, joins y transformaciones.' }
+    ], '', 'El enunciado original preguntaba vagamente por una “cuestión importante” y la clave aludía a la calidad de las optimizaciones, sin identificar qué se evalúa. Se reformula para preguntar por el componente y criterio: el optimizador del SGBD estima y compara planes alternativos usando estadísticas y costes de ejecución; la elección concreta depende de datos, consulta, configuración y versión, por lo que no se promete que un plan sea siempre óptimo.', 'corregida'],
+    [4044, ['63', '64'], ['II-5', 'IV-2'], ['Oracle', 'vista materializada', 'replicación', 'bases de datos distribuidas', 'datos móviles'], [
+      { url: mv, referencia: 'Oracle AI Database 26, Basic Materialized Views: réplica de datos en sedes distribuidas con acceso local, descarga de subconjuntos a clientes móviles y refrescos periódicos; también resumen/precomputación para reducir trabajo de consultas.' },
+      { url: mvDdl, referencia: 'Oracle AI Database 26 SQL Language Reference, CREATE MATERIALIZED VIEW: las vistas materializadas de replicación mantienen copias locales de datos remotos consultables como tablas o vistas.' }
+    ], '', 'La respuesta “todas” se conserva pero se convierte de una lista de supuestas ventajas universales en usos posibles y condicionados. Una réplica materializada puede ofrecer acceso local a datos que de otro modo se consultarían en remoto, distribuir subconjuntos de interés —por ejemplo por sede o para clientes móviles— y reducir consultas repetidas/tráfico y trabajo del servidor central. La disponibilidad sin conexión solo cubre el acceso a la copia local y depende de que la aplicación pueda operar con esos datos y tolere su posible antigüedad; la coherencia depende del diseño y la política de refresco.', 'corregida'],
+    [4045, ['64'], ['III-4'], ['modelo relacional', 'normalización', 'dependencias funcionales', '1FN', '2FN', '3FN'], [
+      { url: codd, referencia: 'E. F. Codd, Further Normalization of the Data Base Relational Model (1971), §3.3: 3FN requiere 2FN y ausencia de dependencia transitiva de atributos no primos respecto de cada clave candidata.' }
+    ], '', 'Se explicitan las dependencias que faltaban en el original: CODIGO es clave candidata de una relación en 1FN; CODIGO determina DNI_SOLICITANTE y, por este, NOM_SOLICITANTE y TEL_SOLICITANTE; DNI_SOLICITANTE no es clave. Al ser la clave CODIGO de un solo atributo, no hay dependencia parcial y se cumple 2FN. La dependencia transitiva del identificador a los atributos del solicitante impide 3FN; se selecciona la forma normal más alta garantizada: 2FN.', 'corregida']
+  ],
+  edits: {
+    4041: { texto: '¿Cómo se denomina la técnica de incorporar sentencias SQL en un programa escrito en otro lenguaje de programación (lenguaje anfitrión)?', opciones: ['PL/SQL.', 'JSQL.', 'SQL embebido (embedded SQL).', 'SQL anfitrión.'], respuesta_correcta: 2 },
+    4042: { texto: 'En una consulta SQL, ¿a qué operación del álgebra relacional corresponde conceptualmente la lista de expresiones entre SELECT y FROM, que determina las columnas de salida?', opciones: ['A la proyección.', 'A la unión.', 'A la selección de filas mediante predicados.', 'A la agregación de grupos.'], respuesta_correcta: 0 },
+    4043: { texto: '¿Qué componente de un SGBD relacional elige un plan de ejecución para una sentencia SQL, comparando alternativas mediante estadísticas y estimaciones de coste?', opciones: ['El gestor de buffer, que elige páginas sin evaluar planes de consulta.', 'El catálogo, que ejecuta por sí mismo las sentencias.', 'El planificador del sistema operativo, que selecciona el orden lógico SQL.', 'El optimizador de consultas, que estima costes de accesos, joins y otras operaciones.'], respuesta_correcta: 3 },
+    4044: { texto: 'En Oracle Database, ¿qué usos pueden tener las vistas materializadas en entornos distribuidos o móviles, según su diseño y política de refresco?', opciones: ['Mantener una copia local consultable, incluso si no se alcanza temporalmente el servidor maestro, aceptando que puede estar desactualizada.', 'Replicar en una sede o cliente móvil un subconjunto pertinente de datos y refrescarlo periódicamente.', 'Reducir algunas consultas remotas y trabajo repetitivo del servidor central mediante acceso local o datos precalculados.', 'Todos los anteriores son usos posibles; ninguno garantiza por sí solo operación desconectada completa ni datos siempre actuales.'], respuesta_correcta: 3 },
+    4045: { texto: 'Considérese SOLICITUD(CODIGO, FECHA, DNI_SOLICITANTE, NOM_SOLICITANTE, TEL_SOLICITANTE), en 1FN, con CODIGO como única clave candidata y las dependencias CODIGO → FECHA, DNI_SOLICITANTE y DNI_SOLICITANTE → NOM_SOLICITANTE, TEL_SOLICITANTE. DNI_SOLICITANTE no es clave. ¿Cuál es la forma normal más alta que se deduce?', opciones: ['No alcanza 1FN.', '1FN.', '2FN.', '3FN.'], respuesta_correcta: 2 }
+  }
+});

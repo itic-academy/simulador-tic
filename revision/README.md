@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 743 (IDs 4036–4040). Acumulado: 4035 preguntas examinadas individualmente, 3955 verificadas (772 vigentes, 2867 corregidas y 316 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8088 sin revisar individualmente. Hay 3324 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 744 (IDs 4041–4045). Acumulado: 4040 preguntas examinadas individualmente, 3960 verificadas (772 vigentes, 2872 corregidas y 316 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8083 sin revisar individualmente. Hay 3329 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 744 — 5 de noviembre de 2026
+
+IDs 4041–4045 revisados individualmente; originales preservados en [cambios-lote-744.json](cambios-lote-744.json).
+
+- **4041 — SQL embebido:** se precisa el término: sentencias SQL incluidas en un programa escrito en un lenguaje anfitrión; PL/SQL no es el nombre genérico de la técnica. **Corregida.**
+- **4042 — SELECT y proyección:** se limita la correspondencia a la lista de salida entre SELECT y FROM; la sentencia completa y el tratamiento de duplicados no son idénticos al álgebra relacional clásica. **Corregida.**
+- **4043 — optimizador SQL:** se reemplaza el enunciado vago por la función concreta del optimizador, que estima y compara planes con estadísticas y costes dependientes del entorno. **Corregida.**
+- **4044 — vistas materializadas:** se conservan los usos distribuidos/móviles y se explicita que el acceso sin conexión depende de la aplicación y puede exponer una copia desactualizada; los refrescos condicionan la coherencia. **Corregida.**
+- **4045 — 2FN:** se hacen explícitas las dependencias; la clave de un atributo garantiza 2FN, pero la dependencia transitiva DNI_SOLICITANTE → nombre/teléfono impide 3FN. **Corregida.**
+
+Fuentes: [Oracle Pro*C/C++ Programmer’s Guide, embedded SQL y host language](https://docs.oracle.com/cd/A97630_01/appdev.920/a42525/ch02.htm); [PostgreSQL 18, SELECT List](https://www.postgresql.org/docs/current/sql-select.html) y [Oracle AI Database 26, SELECT](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SELECT.html); [Oracle AI Database 26, Query Optimizer Concepts](https://docs.oracle.com/en/database/oracle/oracle-database/26/tgsql/query-optimizer-concepts.html); [Oracle AI Database 26, Basic Materialized Views](https://docs.oracle.com/en/database/oracle/oracle-database/26/dwhsg/basic-materialized-views.html) y [CREATE MATERIALIZED VIEW](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CREATE-MATERIALIZED-VIEW.html); [Codd, Further Normalization of the Data Base Relational Model (1971), §3.3](https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf).
+
+Cotejo académico directo: [bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), consultado en Drive. §§5.2 y 9.2 cubren SQL e interfaces de acceso; §5.3 y §3.4 cubren SELECT y álgebra relacional; §§8.6 y 5.14, optimizador y planes; §§1.4, 5.11 y 8.9, distribución, vistas materializadas y replicación; §§2.2 y 3.1–3.2, claves, dependencias y normalización. Correspondencia con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4041–4042 A1-64/A2-II-5; 4043 A1-63/64-A2-II-5; 4044 A1-63/64-A2-II-5/IV-2; 4045 A1-64/A2-III-4. Academy orienta el encaje curricular, no sustituye las fuentes técnicas.
+
+Comprobaciones: se consultó directamente el bloque 29 en Drive, incluidas las secciones de SQL/CLI, álgebra relacional, optimizador/planes, vistas materializadas/replicación y normalización; las respuestas se contrastaron con Oracle Database 26, documentación SQL y el trabajo de Codd. No quedan dudas registradas. Inventario y verificador ejecutados tras el lote.
 
 ## Lote 743 — 5 de noviembre de 2026
 

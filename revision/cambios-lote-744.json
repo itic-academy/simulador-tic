@@ -1,0 +1,375 @@
+{
+  "fecha": "2026-11-05",
+  "alcance": "IDs 4041–4045; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 4041,
+      "original": {
+        "id": 4041,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La ejecución desde otro lenguaje de programación, de un procedimiento escrito en SQL, se denomina:",
+        "opciones": [
+          "PL/SQL.",
+          "JSQL.",
+          "SQL embebido.",
+          "SQL anfitrión."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4041,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denomina la técnica de incorporar sentencias SQL en un programa escrito en otro lenguaje de programación (lenguaje anfitrión)?",
+        "opciones": [
+          "PL/SQL.",
+          "JSQL.",
+          "SQL embebido (embedded SQL).",
+          "SQL anfitrión."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se sustituye “SQL anfitrión” por el término inequívoco SQL embebido (embedded SQL): sentencias SQL incluidas en un programa escrito en otro lenguaje anfitrión y procesadas por el mecanismo/precompilador correspondiente. PL/SQL es un lenguaje procedural de Oracle y no el nombre genérico de esta técnica.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§5.2 y 9.2 cubren el lenguaje SQL y sus interfaces/capas de acceso; la denominación concreta embedded SQL se decide con la guía de Oracle, no se atribuye literalmente al temario. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+          "estado": "revisada",
+          "nota": "Cotejo curricular temático documentado; prevalecen las fuentes técnicas primarias para definir la respuesta."
+        },
+        "etiquetas": [
+          "SQL",
+          "SQL embebido",
+          "lenguaje anfitrión",
+          "precompilador"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/cd/A97630_01/appdev.920/a42525/ch02.htm",
+              "referencia": "Oracle Pro*C/C++ Programmer’s Guide, Learning the Basics: embedded SQL son sentencias SQL incorporadas a un programa de aplicación; este se denomina host program y el lenguaje anfitrión host language."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+            }
+          ],
+          "observaciones": "Se sustituye “SQL anfitrión” por el término inequívoco SQL embebido (embedded SQL): sentencias SQL incluidas en un programa escrito en otro lenguaje anfitrión y procesadas por el mecanismo/precompilador correspondiente. PL/SQL es un lenguaje procedural de Oracle y no el nombre genérico de esta técnica. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§5.2 y 9.2 cubren el lenguaje SQL y sus interfaces/capas de acceso; la denominación concreta embedded SQL se decide con la guía de Oracle, no se atribuye literalmente al temario. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+        }
+      }
+    },
+    {
+      "id": 4042,
+      "original": {
+        "id": 4042,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La cláusula select en SQL se corresponde a:",
+        "opciones": [
+          "La operación de proyección en el álgebra relacional.",
+          "La operación de unión en el álgebra relacional.",
+          "La operación de evaluación en el álgebra relacional.",
+          "La operación de agregación en el álgebra relacional."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4042,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una consulta SQL, ¿a qué operación del álgebra relacional corresponde conceptualmente la lista de expresiones entre SELECT y FROM, que determina las columnas de salida?",
+        "opciones": [
+          "A la proyección.",
+          "A la unión.",
+          "A la selección de filas mediante predicados.",
+          "A la agregación de grupos."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se delimita la pregunta a la lista de expresiones situada entre SELECT y FROM: conceptualmente corresponde a la proyección, que elige atributos/expresiones de salida. No se equipara toda la sentencia SELECT (que incluye FROM, filtros, joins, agrupación y otras cláusulas) con una sola operación del álgebra; además SQL conserva duplicados por defecto, a diferencia de la relación matemática clásica.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§5.3 y 3.4 tratan SELECT y álgebra relacional; se distingue la lista de salida del resto de la sentencia y de la semántica de duplicados SQL. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+          "estado": "revisada",
+          "nota": "Cotejo curricular temático documentado; prevalecen las fuentes técnicas primarias para definir la respuesta."
+        },
+        "etiquetas": [
+          "SQL",
+          "SELECT",
+          "proyección",
+          "álgebra relacional"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://www.postgresql.org/docs/current/sql-select.html",
+              "referencia": "PostgreSQL 18, SELECT List: las expresiones entre SELECT y FROM forman las columnas de salida; SELECT sin DISTINCT conserva duplicados, diferencia relevante frente a la proyección del álgebra relacional clásica."
+            },
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SELECT.html",
+              "referencia": "Oracle AI Database 26 SQL Language Reference, SELECT: sintaxis de la consulta y lista de expresiones que determinan las columnas seleccionadas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+            }
+          ],
+          "observaciones": "Se delimita la pregunta a la lista de expresiones situada entre SELECT y FROM: conceptualmente corresponde a la proyección, que elige atributos/expresiones de salida. No se equipara toda la sentencia SELECT (que incluye FROM, filtros, joins, agrupación y otras cláusulas) con una sola operación del álgebra; además SQL conserva duplicados por defecto, a diferencia de la relación matemática clásica. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§5.3 y 3.4 tratan SELECT y álgebra relacional; se distingue la lista de salida del resto de la sentencia y de la semántica de duplicados SQL. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+        }
+      }
+    },
+    {
+      "id": 4043,
+      "original": {
+        "id": 4043,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una Importante cuestión a considerar en la elección de una sentencia SQL es:",
+        "opciones": [
+          "Número de CPUs en el servidor",
+          "Grado de paralelismo de las tablas",
+          "Uso de índices de mapas de bits",
+          "Calidad de las optimizaciones de las sentencias SQL"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4043,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué componente de un SGBD relacional elige un plan de ejecución para una sentencia SQL, comparando alternativas mediante estadísticas y estimaciones de coste?",
+        "opciones": [
+          "El gestor de buffer, que elige páginas sin evaluar planes de consulta.",
+          "El catálogo, que ejecuta por sí mismo las sentencias.",
+          "El planificador del sistema operativo, que selecciona el orden lógico SQL.",
+          "El optimizador de consultas, que estima costes de accesos, joins y otras operaciones."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "El enunciado original preguntaba vagamente por una “cuestión importante” y la clave aludía a la calidad de las optimizaciones, sin identificar qué se evalúa. Se reformula para preguntar por el componente y criterio: el optimizador del SGBD estima y compara planes alternativos usando estadísticas y costes de ejecución; la elección concreta depende de datos, consulta, configuración y versión, por lo que no se promete que un plan sea siempre óptimo.",
+        "clasificacion": {
+          "A1": [
+            "A1-63",
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§8.6 y 5.14 incluyen estadísticas, optimizador y planes de ejecución; la determinación exacta del coste se contrasta con Oracle Database 26. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+          "estado": "revisada",
+          "nota": "Cotejo curricular temático documentado; prevalecen las fuentes técnicas primarias para definir la respuesta."
+        },
+        "etiquetas": [
+          "SQL",
+          "optimizador",
+          "plan de ejecución",
+          "coste"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/tgsql/query-optimizer-concepts.html",
+              "referencia": "Oracle AI Database 26, Query Optimizer Concepts: el optimizador compara planes y costes estimados usando estadísticas y factores como E/S, CPU y comunicación; examina accesos, joins y transformaciones."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 63, 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+            }
+          ],
+          "observaciones": "El enunciado original preguntaba vagamente por una “cuestión importante” y la clave aludía a la calidad de las optimizaciones, sin identificar qué se evalúa. Se reformula para preguntar por el componente y criterio: el optimizador del SGBD estima y compara planes alternativos usando estadísticas y costes de ejecución; la elección concreta depende de datos, consulta, configuración y versión, por lo que no se promete que un plan sea siempre óptimo. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§8.6 y 5.14 incluyen estadísticas, optimizador y planes de ejecución; la determinación exacta del coste se contrasta con Oracle Database 26. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+        }
+      }
+    },
+    {
+      "id": 4044,
+      "original": {
+        "id": 4044,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿En qué escenarios puede ser útil una vista materializada de Oracle?",
+        "opciones": [
+          "Funcionamiento de aplicaciones sin conexión",
+          "Reducir tráfico de red y desplazar carga soportada por un servidor de base de datos corporativo hacia servidores de bases de datos en delegaciones",
+          "Replicar información restringiéndola al área geográfica de interés",
+          "Todas las anteriores"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4044,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Oracle Database, ¿qué usos pueden tener las vistas materializadas en entornos distribuidos o móviles, según su diseño y política de refresco?",
+        "opciones": [
+          "Mantener una copia local consultable, incluso si no se alcanza temporalmente el servidor maestro, aceptando que puede estar desactualizada.",
+          "Replicar en una sede o cliente móvil un subconjunto pertinente de datos y refrescarlo periódicamente.",
+          "Reducir algunas consultas remotas y trabajo repetitivo del servidor central mediante acceso local o datos precalculados.",
+          "Todos los anteriores son usos posibles; ninguno garantiza por sí solo operación desconectada completa ni datos siempre actuales."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La respuesta “todas” se conserva pero se convierte de una lista de supuestas ventajas universales en usos posibles y condicionados. Una réplica materializada puede ofrecer acceso local a datos que de otro modo se consultarían en remoto, distribuir subconjuntos de interés —por ejemplo por sede o para clientes móviles— y reducir consultas repetidas/tráfico y trabajo del servidor central. La disponibilidad sin conexión solo cubre el acceso a la copia local y depende de que la aplicación pueda operar con esos datos y tolere su posible antigüedad; la coherencia depende del diseño y la política de refresco.",
+        "clasificacion": {
+          "A1": [
+            "A1-63",
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5",
+            "A2-IV-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§1.4, 5.11 y 8.9 cubren distribución/replicación, vistas materializadas y administración/alta disponibilidad; los casos móvil y de réplica se verifican en Oracle Database 26. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5, IV-2).",
+          "estado": "revisada",
+          "nota": "Cotejo curricular temático documentado; prevalecen las fuentes técnicas primarias para definir la respuesta."
+        },
+        "etiquetas": [
+          "Oracle",
+          "vista materializada",
+          "replicación",
+          "bases de datos distribuidas",
+          "datos móviles"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/dwhsg/basic-materialized-views.html",
+              "referencia": "Oracle AI Database 26, Basic Materialized Views: réplica de datos en sedes distribuidas con acceso local, descarga de subconjuntos a clientes móviles y refrescos periódicos; también resumen/precomputación para reducir trabajo de consultas."
+            },
+            {
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CREATE-MATERIALIZED-VIEW.html",
+              "referencia": "Oracle AI Database 26 SQL Language Reference, CREATE MATERIALIZED VIEW: las vistas materializadas de replicación mantienen copias locales de datos remotos consultables como tablas o vistas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 63, 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5, IV-2."
+            }
+          ],
+          "observaciones": "La respuesta “todas” se conserva pero se convierte de una lista de supuestas ventajas universales en usos posibles y condicionados. Una réplica materializada puede ofrecer acceso local a datos que de otro modo se consultarían en remoto, distribuir subconjuntos de interés —por ejemplo por sede o para clientes móviles— y reducir consultas repetidas/tráfico y trabajo del servidor central. La disponibilidad sin conexión solo cubre el acceso a la copia local y depende de que la aplicación pueda operar con esos datos y tolere su posible antigüedad; la coherencia depende del diseño y la política de refresco. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§1.4, 5.11 y 8.9 cubren distribución/replicación, vistas materializadas y administración/alta disponibilidad; los casos móvil y de réplica se verifican en Oracle Database 26. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5, IV-2)."
+        }
+      }
+    },
+    {
+      "id": 4045,
+      "original": {
+        "id": 4045,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sea la relación SOLICITUD (CODIGO, FECHA, DNI_SOLICITANTE, NOM_SOLICITANTE, TEL_SOLICITANTE) y el atributo CODIGO su clave primaria, ¿en qué forma normal se encuentra?",
+        "opciones": [
+          "Sin normalizar",
+          "1ª Forma Normal",
+          "2ª Forma Normal",
+          "3ª Forma Normal"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4045,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Considérese SOLICITUD(CODIGO, FECHA, DNI_SOLICITANTE, NOM_SOLICITANTE, TEL_SOLICITANTE), en 1FN, con CODIGO como única clave candidata y las dependencias CODIGO → FECHA, DNI_SOLICITANTE y DNI_SOLICITANTE → NOM_SOLICITANTE, TEL_SOLICITANTE. DNI_SOLICITANTE no es clave. ¿Cuál es la forma normal más alta que se deduce?",
+        "opciones": [
+          "No alcanza 1FN.",
+          "1FN.",
+          "2FN.",
+          "3FN."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se explicitan las dependencias que faltaban en el original: CODIGO es clave candidata de una relación en 1FN; CODIGO determina DNI_SOLICITANTE y, por este, NOM_SOLICITANTE y TEL_SOLICITANTE; DNI_SOLICITANTE no es clave. Al ser la clave CODIGO de un solo atributo, no hay dependencia parcial y se cumple 2FN. La dependencia transitiva del identificador a los atributos del solicitante impide 3FN; se selecciona la forma normal más alta garantizada: 2FN.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-III-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§2.2 y 3.1–3.2 cubren claves, dependencias funcionales y formas normales; las dependencias explícitas del enunciado determinan 2FN y excluyen 3FN. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4).",
+          "estado": "revisada",
+          "nota": "Cotejo curricular temático documentado; prevalecen las fuentes técnicas primarias para definir la respuesta."
+        },
+        "etiquetas": [
+          "modelo relacional",
+          "normalización",
+          "dependencias funcionales",
+          "1FN",
+          "2FN",
+          "3FN"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-05",
+          "fuentes": [
+            {
+              "url": "https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf",
+              "referencia": "E. F. Codd, Further Normalization of the Data Base Relational Model (1971), §3.3: 3FN requiere 2FN y ausencia de dependencia transitiva de atributos no primos respecto de cada clave candidata."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo directo de las secciones pertinentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+            }
+          ],
+          "observaciones": "Se explicitan las dependencias que faltaban en el original: CODIGO es clave candidata de una relación en 1FN; CODIGO determina DNI_SOLICITANTE y, por este, NOM_SOLICITANTE y TEL_SOLICITANTE; DNI_SOLICITANTE no es clave. Al ser la clave CODIGO de un solo atributo, no hay dependencia parcial y se cumple 2FN. La dependencia transitiva del identificador a los atributos del solicitante impide 3FN; se selecciona la forma normal más alta garantizada: 2FN. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); §§2.2 y 3.1–3.2 cubren claves, dependencias funcionales y formas normales; las dependencias explícitas del enunciado determinan 2FN y excluyen 3FN. Correspondencia curricular comprobada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4)."
+        }
+      }
+    }
+  ]
+}
