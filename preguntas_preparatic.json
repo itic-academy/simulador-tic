@@ -201395,71 +201395,298 @@
       "id": 4031,
       "bloque": 0,
       "tema": 0,
-      "texto": "La vulneración de una restricción de integridad referencial es detectada por el servidor de base de datos de acuerdo a la declaración de la:",
+      "texto": "En una relación entre tabla hija y tabla padre, ¿qué restricción declarada en la tabla hija hace cumplir la integridad referencial?",
       "opciones": [
-        "PRIMARY KEY",
-        "FOREIGN KEY",
-        "CANDIDATE KEY",
-        "SUPERKEY"
+        "PRIMARY KEY.",
+        "FOREIGN KEY.",
+        "CANDIDATE KEY.",
+        "SUPERKEY."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se pregunta por la restricción declarada en la tabla hija. FOREIGN KEY referencia una clave PRIMARY KEY o UNIQUE de la tabla padre y el SGBD comprueba la integridad referencial al ejecutar las operaciones afectadas. La clave primaria identifica filas de una relación; no es la declaración que expresa la referencia desde la tabla hija. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29 cubre claves e integridad del modelo relacional (§§2.2–2.3) y sentencias SQL; el cotejo identifica la FOREIGN KEY como constraint referencial. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29 cubre claves e integridad del modelo relacional (§§2.2–2.3) y sentencias SQL; el cotejo identifica la FOREIGN KEY como constraint referencial. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; la respuesta se fundamenta en las fuentes técnicas primarias y oficiales enlazadas en cada pregunta."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "integridad referencial",
+        "FOREIGN KEY",
+        "restricciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/adfns/data-integrity.html",
+            "referencia": "Oracle AI Database 26 Database Development Guide, Enforcing Referential Integrity with FOREIGN KEY Constraints: la FOREIGN KEY impone la correspondencia entre las claves de las tablas hija y padre."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/constraint.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, Foreign Key Constraints: identifica expresamente la restricción FOREIGN KEY como restricción de integridad referencial."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo curricular directo de modelo relacional, integridad, álgebra, SQL, DDL/DML y vistas materializadas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se pregunta por la restricción declarada en la tabla hija. FOREIGN KEY referencia una clave PRIMARY KEY o UNIQUE de la tabla padre y el SGBD comprueba la integridad referencial al ejecutar las operaciones afectadas. La clave primaria identifica filas de una relación; no es la declaración que expresa la referencia desde la tabla hija. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29 cubre claves e integridad del modelo relacional (§§2.2–2.3) y sentencias SQL; el cotejo identifica la FOREIGN KEY como constraint referencial. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4032,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué significan las siglas inglesas DDL?:",
+      "texto": "¿Qué significan las siglas inglesas DDL en el contexto de SQL?",
       "opciones": [
-        "Lenguaje de dimensión de datos.",
-        "Lenguaje de definición de datos.",
-        "Longitud de dimensión de datos.",
-        "Longitud de datos definidos."
+        "Data Dimension Language.",
+        "Data Definition Language.",
+        "Data Dimension Length.",
+        "Defined Data Length."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "DDL significa Data Definition Language (lenguaje de definición de datos). CREATE, ALTER y DROP son ejemplos habituales de sentencias que crean, modifican o eliminan objetos del esquema. El término inglés se traduce por definición, no dimensión ni longitud. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§5.1–5.2, presenta SQL y distingue DDL, DML, DCL y TCL. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§5.1–5.2, presenta SQL y distingue DDL, DML, DCL y TCL. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; la respuesta se fundamenta en las fuentes técnicas primarias y oficiales enlazadas en cada pregunta."
+      },
+      "etiquetas": [
+        "SQL",
+        "DDL",
+        "definición de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/tdddg/data-definition-language-ddl-statements.html",
+            "referencia": "Oracle AI Database 26 Get Started with Database Development, About DDL Statements: DDL significa Data Definition Language y crea, cambia y elimina objetos del esquema."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Types-of-SQL-Statements.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, Types of SQL Statements: clasifica las sentencias SQL de definición de datos (DDL)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo curricular directo de modelo relacional, integridad, álgebra, SQL, DDL/DML y vistas materializadas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "DDL significa Data Definition Language (lenguaje de definición de datos). CREATE, ALTER y DROP son ejemplos habituales de sentencias que crean, modifican o eliminan objetos del esquema. El término inglés se traduce por definición, no dimensión ni longitud. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§5.1–5.2, presenta SQL y distingue DDL, DML, DCL y TCL. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4033,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes es un operador derivado de algebra relacional?",
+      "texto": "En el álgebra relacional clásica, suponiendo relaciones unión-compatibles, ¿cuál de estos operadores se deriva de otros operadores básicos?",
       "opciones": [
-        "Intersección",
-        "Unión",
-        "Proyección",
-        "Selección"
+        "Intersección, expresable mediante diferencia.",
+        "Unión.",
+        "Proyección.",
+        "Selección."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "En el álgebra relacional clásica, intersección no es un operador primitivo necesario: para relaciones unión-compatibles se deriva mediante R ∩ S = R − (R − S). Unión, proyección y selección pertenecen al conjunto usual de operadores primitivos del modelo relacional clásico. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §3.4, identifica los cinco operadores primitivos y deriva la intersección mediante diferencia. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §3.4, identifica los cinco operadores primitivos y deriva la intersección mediante diferencia. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; la respuesta se fundamenta en las fuentes técnicas primarias y oficiales enlazadas en cada pregunta."
+      },
+      "etiquetas": [
+        "álgebra relacional",
+        "operadores derivados",
+        "intersección"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://courses.cs.duke.edu/spring17/compsci316/lectures/02-relational.pdf",
+            "referencia": "Duke University, Relational Algebra, diapositiva “Derived operator: intersection”: la intersección se deriva de diferencia como R − (R − S), para esquemas compatibles."
+          },
+          {
+            "url": "https://doi.org/10.1145/362384.362685",
+            "referencia": "E. F. Codd, A Relational Model of Data for Large Shared Data Banks, Communications of the ACM 13(6), 1970, DOI 10.1145/362384.362685; fundamento del modelo y álgebra relacional."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo curricular directo de modelo relacional, integridad, álgebra, SQL, DDL/DML y vistas materializadas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "En el álgebra relacional clásica, intersección no es un operador primitivo necesario: para relaciones unión-compatibles se deriva mediante R ∩ S = R − (R − S). Unión, proyección y selección pertenecen al conjunto usual de operadores primitivos del modelo relacional clásico. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §3.4, identifica los cinco operadores primitivos y deriva la intersección mediante diferencia. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4034,
       "bloque": 0,
       "tema": 0,
-      "texto": "En los sistemas gestores de bases de datos (SGBD), ¿qué diferencia hay entre el DDL y el DML?",
+      "texto": "En SQL, ¿cuál es la diferencia general entre DDL y DML?",
       "opciones": [
-        "El DDL se utiliza embebido mediante un precompilador mientras que el DML solamente se puede utilizar con un compilador extendido.",
-        "El DDL sirve para definir el esquema conceptual y los diferentes esquemas externos de la base de datos mientras que el DML sirve para gestionar la información incluida en dicha base.",
-        "El DDL se utiliza para definir y mantener las estructuras de la base de datos en el nivel conceptual mientras que el DML sirve para la definición y mantenimiento de las vistas en el nivel externo (usuario).",
-        "El DDL es el lenguaje de base de datos de los sistemas MVS y el DML es el lenguaje de base de datos para los entornos DOS/VSE."
+        "DDL solo se ejecuta con precompilador y DML solo con compilador extendido.",
+        "DDL define o modifica objetos del esquema; DML consulta o modifica los datos almacenados.",
+        "DDL se limita siempre al esquema conceptual y DML define exclusivamente vistas externas.",
+        "DDL y DML son nombres de productos ligados a sistemas operativos concretos."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La pregunta original mezclaba una diferencia válida con los esquemas conceptual/externo de ANSI/SPARC, que no describen con precisión la división general moderna entre DDL y DML. Se reformula según el uso SQL: DDL define o modifica objetos/estructura del esquema; DML consulta o cambia los datos almacenados. Se evita atribuir de forma exclusiva toda vista externa al DDL o al DML. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§5.1–5.2, diferencia la definición de objetos del esquema de las operaciones sobre los datos, sin trasladar indebidamente la distinción a niveles ANSI/SPARC. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§5.1–5.2, diferencia la definición de objetos del esquema de las operaciones sobre los datos, sin trasladar indebidamente la distinción a niveles ANSI/SPARC. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; la respuesta se fundamenta en las fuentes técnicas primarias y oficiales enlazadas en cada pregunta."
+      },
+      "etiquetas": [
+        "SGBD",
+        "SQL",
+        "DDL",
+        "DML",
+        "esquema"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/tdddg/data-definition-language-ddl-statements.html",
+            "referencia": "Oracle AI Database 26 Get Started with Database Development, About DDL Statements: DDL crea, cambia y elimina objetos de esquema."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Types-of-SQL-Statements.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, Types of SQL Statements: clasifica DDL y DML como grupos de sentencias SQL."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo curricular directo de modelo relacional, integridad, álgebra, SQL, DDL/DML y vistas materializadas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 63, 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "La pregunta original mezclaba una diferencia válida con los esquemas conceptual/externo de ANSI/SPARC, que no describen con precisión la división general moderna entre DDL y DML. Se reformula según el uso SQL: DDL define o modifica objetos/estructura del esquema; DML consulta o cambia los datos almacenados. Se evita atribuir de forma exclusiva toda vista externa al DDL o al DML. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§5.1–5.2, diferencia la definición de objetos del esquema de las operaciones sobre los datos, sin trasladar indebidamente la distinción a niveles ANSI/SPARC. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4035,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué es una vista materializada?",
+      "texto": "¿Qué caracteriza a una vista materializada en un SGBD?",
       "opciones": [
-        "El resultado de una consulta de la base de datos almacenado en el disco duro",
-        "El resultado de una consulta de la base de datos almacenado en una tabla caché",
-        "El resultado de una consulta de la base de datos realizada mediante procedimientos almacenados",
-        "El resultado de una operación de “triggers”"
+        "Almacena físicamente el resultado precalculado de una consulta y requiere una política de actualización o refresco.",
+        "Guarda solo la definición de la consulta y vuelve a ejecutarla siempre al consultarse, como una vista ordinaria.",
+        "Es el resultado de ejecutar un procedimiento almacenado, con independencia de que se guarde.",
+        "Es un conjunto de acciones que se dispara mediante un trigger."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Una vista materializada conserva en el SGBD el resultado precalculado de una consulta, en forma de objeto con datos almacenados; no es solo la definición de una vista ordinaria. El contenido puede quedar desactualizado y requiere una política de refresco, cuya estrategia depende del gestor. Se elimina “tabla caché”, expresión no uniforme que confundía almacenamiento persistente con caché temporal. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §5.11 y §10.1, cubre objetos programables/materializados y almacenes analíticos; la diferencia entre almacenar resultados y solo guardar una consulta se verifica con Oracle y PostgreSQL. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64, 75), y A2 GSI 2025, anexo IX (tema(s) II-4, II-5).",
+      "clasificacion": {
+        "A1": [
+          "A1-64",
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4",
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §5.11 y §10.1, cubre objetos programables/materializados y almacenes analíticos; la diferencia entre almacenar resultados y solo guardar una consulta se verifica con Oracle y PostgreSQL. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64, 75), y A2 GSI 2025, anexo IX (tema(s) II-4, II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; la respuesta se fundamenta en las fuentes técnicas primarias y oficiales enlazadas en cada pregunta."
+      },
+      "etiquetas": [
+        "SGBD",
+        "SQL",
+        "vista materializada",
+        "almacén de datos",
+        "refresco"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CREATE-MATERIALIZED-VIEW.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, CREATE MATERIALIZED VIEW: al crear la vista se ejecuta la subconsulta y se almacenan sus resultados."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/read-only-materialized-view-concepts.html",
+            "referencia": "Oracle AI Database 26 Data Warehousing Guide, materialized view refresh: describe refresco completo, rápido y forzado para mantener la vista coherente con sus tablas maestras."
+          },
+          {
+            "url": "https://www.postgresql.org/docs/current/rules-materializedviews.html",
+            "referencia": "PostgreSQL documentation, Materialized Views: almacena físicamente el resultado de una consulta y se actualiza con REFRESH MATERIALIZED VIEW."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo curricular directo de modelo relacional, integridad, álgebra, SQL, DDL/DML y vistas materializadas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64, 75."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-4, II-5."
+          }
+        ],
+        "observaciones": "Una vista materializada conserva en el SGBD el resultado precalculado de una consulta, en forma de objeto con datos almacenados; no es solo la definición de una vista ordinaria. El contenido puede quedar desactualizado y requiere una política de refresco, cuya estrategia depende del gestor. Se elimina “tabla caché”, expresión no uniforme que confundía almacenamiento persistente con caché temporal. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §5.11 y §10.1, cubre objetos programables/materializados y almacenes analíticos; la diferencia entre almacenar resultados y solo guardar una consulta se verifica con Oracle y PostgreSQL. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64, 75), y A2 GSI 2025, anexo IX (tema(s) II-4, II-5)."
+      }
     },
     {
       "id": 4036,
