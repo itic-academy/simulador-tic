@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 746 (IDs 4051–4055). Acumulado: 4050 preguntas examinadas individualmente, 3970 verificadas (774 vigentes, 2879 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8073 sin revisar individualmente. Hay 3338 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 747 (IDs 4056–4060). Acumulado: 4055 preguntas examinadas individualmente, 3975 verificadas (774 vigentes, 2884 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8068 sin revisar individualmente. Hay 3343 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 747 — 5 de noviembre de 2026
+
+IDs 4056–4060 revisados individualmente; originales preservados en [cambios-lote-747.json](cambios-lote-747.json).
+
+- **4056 — outer join y álgebra:** se distingue FULL OUTER JOIN, que preserva coincidencias y no coincidencias de ambos lados, de unión, natural join e intersección. **Corregida.**
+- **4057 — SQL/XML:** se rectifica la respuesta de SQL:2006 a SQL:2003, primera edición ISO/IEC 9075-14; se aclara que la edición 2003 está retirada y la publicada actual es 2023. **Corregida.**
+- **4058 — vistas indexadas:** se limita al producto SQL Server; indexed views materializa el resultado mediante un índice clustered y no es equivalencia universal con las vistas materializadas de Oracle. **Corregida.**
+- **4059 — dependencia funcional:** se formaliza X→Y para todas las instancias legales del esquema; una muestra accidental de valores no basta. **Corregida.**
+- **4060 — COMMIT:** se precisa que confirma y hace permanentes los cambios; se diferencia de ROLLBACK, que termina deshaciendo lo no confirmado. **Corregida.**
+
+Fuentes: [Oracle AI Database 26, SELECT/outer joins](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SELECT.html) y [Imperial College London, álgebra relacional](https://www.doc.ic.ac.uk/~pjm/db/lectures/relational-algebra-lecture.pdf); [ISO/IEC 9075-14:2003, primera edición SQL/XML](https://www.iso.org/standard/35341.html) y [edición ISO/IEC 9075-14:2023](https://www.iso.org/standard/76587.html); [Microsoft Learn, Create Indexed Views](https://learn.microsoft.com/en-us/sql/relational-databases/views/create-indexed-views?view=sql-server-ver16); [Codd, Further Normalization (1971), dependencias funcionales](https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf); [Oracle AI Database 26, Transactions](https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/transactions.html).
+
+Cotejo académico directo: [bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), consultado en Drive. §3.4 álgebra; §§5.1 y 5.10 evolución SQL/XML; §5.11 vistas; §§3.1–3.2 dependencias y normalización; §5.2 control de transacciones. Clasificación contrastada con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4056–4058 y 4060 A1-64/A2-II-5; 4059 A1-64/A2-III-4. Academia encuadra el temario; estándares y documentación oficial fundamentan las respuestas.
+
+Comprobaciones: se leyó el bloque 29 en Drive y sus apartados sobre álgebra, XML/SQL, vistas, dependencias y transacciones; se consultaron el catálogo ISO, Oracle Database 26, Microsoft Learn y el trabajo de Codd. No quedan dudas registradas. Inventario y verificador ejecutados tras el lote.
 
 ## Lote 746 — 5 de noviembre de 2026
 
