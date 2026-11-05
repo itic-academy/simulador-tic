@@ -1,0 +1,36 @@
+const apply = require('./aplicar-lote.cjs');
+
+const sources = {
+  metric: [
+    { url: 'https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ae15c0c5b-dd9c-4e48-82e3-9e36ba18e839/METRICA_V3_Mantenimiento_de_Sistemas_de_Informacion.pdf', referencia: 'Ministerio de Administraciones Públicas, MÉTRICA v3, Mantenimiento de Sistemas de Información, pp. 2–3: adaptativo modifica el entorno operativo (incluye cambios de hardware/software de base); evolutivo responde a expansión/cambio de necesidades; perfectivo mejora calidad interna, rendimiento o eficiencia; MSI registra, evalúa y puede aceptar o rechazar peticiones.' }
+  ],
+  effort: [
+    { url: 'https://doi.org/10.1016/S0950-5849(01)00156-2', referencia: 'Conte et al., «Maintenance and testing effort modeled by linear and nonlinear dynamic systems», Information and Software Technology 43(8) (2001), DOI 10.1016/S0950-5849(01)00156-2: resume estudios con costes de mantenimiento entre 50 % y 80 % del coste de vida total, mostrando que puede representar una parte muy alta, no una proporción fija universal.' },
+    { url: 'https://doi.org/10.1016/S0164-1212(02)00021-3', referencia: 'Jørgensen, «An empirical study of maintenance and development estimation accuracy», Journal of Systems and Software 68 (2003): análisis empírico de 145 proyectos con estimaciones y resultados reales; justifica tratar la precisión de las estimaciones como dependiente de los datos y contexto del proyecto, no como un valor fácil/fijo.' }
+  ],
+  caseComponents: [
+    { url: 'https://gulf.edu.sa/assets/lib/cs/database-systems-design-implementation-and-management.pdf', referencia: 'Coronel y Morris, Database Systems: Design, Implementation, and Management, 9.ª ed., cap. 15, §15.7.2: enumera cinco componentes típicos de CASE: gráficos de diagramas, screen painters/generadores de informes, repositorio con diccionario, segmento de análisis y generador de documentación de programas. El ítem se limita expresamente a esa lista.' }
+  ],
+  iso: [
+    { url: 'https://www.iso.org/standard/80710.html', referencia: 'ISO/IEC/IEEE 14764:2022, ficha oficial vigente: define el proceso y tipos de mantenimiento de software y confirma la retirada de ISO/IEC 14764:2006.' },
+    { url: 'https://preview.sist.si/sist-preview/80710/9a26fc3a1a464fa286fb85d6c1eeed31/ISO-IEC-IEEE-14764-2022.pdf', referencia: 'Vista de ISO/IEC/IEEE 14764:2022 alojada por SIST, cláusulas 3.1.9 y 3.1.10 y nota de la figura 1: perfectivo incluye mejoras de interfaz de usuario para prevenir errores humanos; preventivo corrige fallos latentes antes de producción.' }
+  ]
+};
+
+const records = [
+  [3991, ['101'], ['III-8'], ['MÉTRICA v3', 'mantenimiento adaptativo', 'antivirus', 'software de base'], sources.metric, '', 'MÉTRICA v3 clasifica como adaptativo el cambio que modifica el entorno en que opera el sistema, incluidos cambios de configuración de software de base. El enunciado original no decía por qué se subía la versión del antivirus; se acota el caso a adaptar el producto a una nueva versión del entorno, no a mejorar su rendimiento o corregir un defecto.', 'corregida'],
+  [3992, ['99', '101'], ['III-8'], ['coste de mantenimiento', 'estimación de esfuerzo', 'estudios empíricos', 'dependencia del contexto'], sources.effort, '', 'El mantenimiento puede absorber una parte muy elevada del coste total de vida (los estudios citados encuentran rangos amplios, no una constante), y su esfuerzo se estima con datos y modelos que dependen del contexto. Se eliminan afirmaciones absolutas del enunciado original sobre ser siempre “el más costoso” o “fácil/difícil” de estimar.', 'corregida'],
+  [3993, ['88'], ['III-6'], ['CASE', 'componentes', 'Coronel y Morris', 'clasificación acotada'], sources.caseComponents, '', 'La pregunta no admite una respuesta universal sin fijar una taxonomía: un editor de texto puede integrarse en algunos entornos CASE. Se reescribe para preguntar por los cinco componentes que enumera una fuente identificada; en esa lista aparecen gráficos, pantallas/informes, repositorio-diccionario, análisis y generador de documentación, pero no un editor de textos.', 'corregida'],
+  [3994, ['101'], ['III-8'], ['MÉTRICA v3', 'peticiones de mantenimiento', 'aceptación', 'histórica'], sources.metric, '', 'Se acota a MÉTRICA v3 MSI: la petición se registra, se comprueba su viabilidad/cobertura, puede aceptarse o rechazarse y se notifica; antes de la aceptación del usuario se prevén pruebas de regresión. No se presenta la afirmación como regla universal sobre “toda aplicación”, dado que alcance, aprobaciones y ciclo de vida dependen del proceso aplicable.', 'historica'],
+  [3995, ['101'], ['III-8'], ['ISO/IEC/IEEE 14764:2022', 'mantenimiento perfectivo', 'usabilidad', 'interfaz de usuario'], sources.iso, '', 'La mejora de la interfaz destinada a que los usuarios cometan menos errores se ajusta al mantenimiento perfectivo en ISO/IEC/IEEE 14764:2022; la norma da expresamente ese ejemplo. Se precisa que no se trata de adaptar el software a un entorno cambiante ni de corregir un defecto ya ocurrido.', 'corregida']
+];
+
+const edits = {
+  3991: { texto: 'En MÉTRICA v3, si se actualiza la versión del antivirus para mantener la compatibilidad del sistema con una nueva versión de su entorno operativo, ¿qué tipo de mantenimiento es?', opciones: ['Correctivo.', 'Perfectivo.', 'Adaptativo.', 'Evolutivo.'], respuesta_correcta: 2 },
+  3992: { texto: '¿Qué afirmación describe de forma prudente los costes de mantenimiento del software a lo largo de su vida útil?', opciones: ['Siempre son los menores y se estiman con exactitud sin datos del sistema.', 'Pueden representar una parte muy elevada del coste total de vida, y su estimación depende de datos y contexto.', 'Son siempre exactamente el 80 % del coste total y se calculan con una constante universal.', 'No forman parte del coste del ciclo de vida una vez entregado el sistema.'], respuesta_correcta: 1 },
+  3993: { texto: 'Según la lista de cinco componentes típicos de CASE de Coronel y Morris, ¿cuál no figura en esa lista?', opciones: ['Gráficos para elaborar diagramas estructurados.', 'Repositorio integrado con diccionario de datos.', 'Segmento de análisis de consistencia.', 'Editor de textos de propósito general.'], respuesta_correcta: 3 },
+  3994: { texto: 'Según el proceso MSI de MÉTRICA v3, ¿qué afirmación sobre la gestión de peticiones de mantenimiento es falsa?', opciones: ['La petición se registra y se identifica su tipo y los sistemas afectados.', 'Se comprueba la viabilidad y cobertura del servicio, y la petición puede aceptarse o rechazarse.', 'Una petición de mejora se considera aprobada automáticamente y no requiere el flujo de aceptación definido por la organización.', 'Antes de la aceptación del usuario se establece un plan de pruebas de regresión para proteger la integridad del sistema afectado.'], respuesta_correcta: 2 },
+  3995: { texto: 'Según ISO/IEC/IEEE 14764:2022, una modificación de la interfaz de usuario para hacerla más clara y reducir errores humanos, sin responder a un cambio del entorno, es mantenimiento:', opciones: ['Perfectivo.', 'Adaptativo.', 'Correctivo.', 'Preventivo.'], respuesta_correcta: 0 }
+};
+
+apply({ numero: '734', fecha: '2026-11-05', records, edits });
