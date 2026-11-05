@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 757 (IDs 4106–4110). Acumulado: 4105 preguntas examinadas individualmente, 4025 verificadas (774 vigentes, 2934 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8018 sin revisar individualmente. Hay 3393 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 758 (IDs 4111–4115). Acumulado: 4110 preguntas examinadas individualmente, 4030 verificadas (774 vigentes, 2939 corregidas y 317 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 8013 sin revisar individualmente. Hay 3398 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 758 — 5 de noviembre de 2026
+
+IDs 4111–4115 revisados individualmente; se preservan enunciados, opciones y claves originales en [cambios-lote-758.json](cambios-lote-758.json).
+
+- **4111 — sujetos obligados a relacionarse electrónicamente:** se limita la obligación de profesionales colegiados a trámites de su actividad profesional y la representación electrónica a quien representa a un interesado obligado. **Corregida.**
+- **4112 — lugares de presentación:** se recogen Correos conforme a reglamento y las representaciones diplomáticas u oficinas consulares de España en el extranjero, además del registro electrónico. **Corregida.**
+- **4113 — recurso de alzada:** se aclara que puede presentarse ante el órgano autor del acto o ante el competente para resolver; si se usa el primero, lo remite en diez días. **Corregida.**
+- **4114 — garantía provisional:** se corrige la premisa para indicar que no se exige como regla y solo excepcionalmente, con justificación de interés público; si se acuerda, el máximo ordinario es el 3 % del presupuesto base sin IVA. **Corregida.**
+- **4115 — destino del superávit:** se concreta la reducción de endeudamiento neto y su límite por volumen de endeudamiento, conforme al artículo 32 LO 2/2012. **Corregida.**
+
+Fuentes primarias: [Ley 39/2015 consolidada, BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565), arts. 14.2, 16.4 y 121.2; [Ley 9/2017 consolidada, BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902), art. 106.1–2; [Ley Orgánica 2/2012 consolidada, BOE, actualización 03-12-2025](https://www.boe.es/eli/es/lo/2012/04/27/2/con/20251203), art. 32.
+
+Cotejo académico directo en Drive: [ITIC Academy, bloque 03](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), versión 2026.2, materias de actuación administrativa, sujetos obligados, registro y recursos (4111–4113); [bloque 05](https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk), versión 2026.2, §5.1 sobre garantías y bloque de presupuestos/estabilidad (4114–4115). Correspondencia con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4111–4113 A1-8/A2-I-8; 4114 A1-11 sin tema A2 específico equivalente; 4115 A1-12 sin tema A2 específico equivalente.
+
+Verificaciones: las cinco preguntas se cotejaron individualmente con el texto consolidado BOE, los dos bloques de Academy y `temario-oficial.json`; la ausencia de correspondencia A2 específica se conserva como tal. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 757 — 5 de noviembre de 2026
 
