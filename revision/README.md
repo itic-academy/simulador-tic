@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 713 (IDs 3881–3885). Acumulado: 3885 preguntas examinadas individualmente, 3807 verificadas (756 vigentes, 2764 corregidas y 287 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8238 sin revisar individualmente. Hay 3186 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 714 (IDs 3886–3890). Acumulado: 3890 preguntas examinadas individualmente, 3812 verificadas (759 vigentes, 2766 corregidas y 287 históricas) y 78 pendientes documentadas (36 de fuente y 42 de ambigüedad); quedan 8233 sin revisar individualmente. Hay 3188 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 714 — 5 de noviembre de 2026
+
+IDs 3886–3890 contrastados individualmente con las versiones consolidadas vigentes de LCSP, LGS, Ley de Dependencia y Constitución Española en BOE; se cotejó ITIC Academy 2026.2 en Drive y los temarios oficiales A1/A2. Los originales están preservados íntegramente en [cambios-lote-714.json](cambios-lote-714.json).
+
+- **3886 — recurso especial de contratación:** el original carecía de una afirmación falsa única: los suministros no SARA sí pueden ser recurribles cuando exceden 100.000 €; en cambio, la emergencia está excluida y el recurso es potestativo. Se reescriben las opciones usando el umbral y se marca como falsa la afirmación de que cualquier suministro, sin umbral, es recurrible. **Corregida.**
+- **3887 — modificaciones previstas:** el art. 204.1 LCSP permite como máximo el 20 % del precio inicial si los pliegos lo previeron expresamente. **Vigente.**
+- **3888 — BDNS/publicidad:** la IGAE publica en su web los contenidos de las letras a), b) y c) del art. 20.8 LGS (convocatorias, concesiones y determinada información de entidades sin ánimo de lucro), con las excepciones legales de privacidad. **Vigente.**
+- **3889 — grados de dependencia:** se acota al art. 26, que recoge grados I, II y III sin niveles internos. Se advierte la disposición adicional 17.ª vigente que añade el III+ para casos específicos, sin subdividir los grados ordinarios en niveles. **Corregida.**
+- **3890 — igualdad real y efectiva:** el mandato a los poderes públicos está en el art. 9.2 CE. **Vigente.**
+
+Fuentes primarias: [Ley 9/2017, de Contratos del Sector Público, arts. 44 y 204](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902); [Ley 38/2003, General de Subvenciones, art. 20.8](https://www.boe.es/buscar/act.php?id=BOE-A-2003-20977); [Ley 39/2006, art. 26](https://www.boe.es/buscar/act.php?id=BOE-A-2006-21990) y [Real Decreto-ley 11/2025, DA 17.ª añadida a aquella ley](https://www.boe.es/eli/es/rdl/2025/10/21/11); [Constitución Española, arts. 9.2](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229).
+
+Cotejo académico: [bloque 05, Contratación, Presupuestos, Convenios, Subvenciones y Compra TIC, ITIC Academy 2026.2 (01-10-2026)](https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk): recurso especial y umbrales, modificación del contrato, BDNS/subvenciones (3886–3888); el propio material declara que el bloque A1-11/A1-13 no tiene equivalente específico en A2. [Bloque 06, Economía, Sociedad, Empleo y Transformación Digital, 2026.2](https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk): dependencia, grados/niveles y III+ (3889). [Bloque 01, Constitución, Estado y AGE, 2026](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk): art. 9.2 y principios constitucionales (3890). Correspondencia con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 3886–3887 A1-11; 3888 A1-13; 3889 A1-16/A2-I-5; 3890 A1-1/A2-I-1.
+
+Comprobaciones: inventario y verificador ejecutados tras registrar el lote; resumen superior actualizado con sus resultados.
 
 ## Lote 713 — 5 de noviembre de 2026
 
