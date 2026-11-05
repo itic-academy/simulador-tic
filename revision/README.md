@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 5 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 767 (IDs 4156–4160). Acumulado: 4155 preguntas examinadas individualmente, 4075 verificadas (775 vigentes, 2978 corregidas y 322 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7968 sin revisar individualmente. Hay 3443 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 768 (IDs 4161–4165). Acumulado: 4160 preguntas examinadas individualmente, 4080 verificadas (775 vigentes, 2983 corregidas y 322 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7963 sin revisar individualmente. Hay 3448 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 768 — 5 de noviembre de 2026
+
+IDs 4161–4165 revisados individualmente; se conservan los originales y cada decisión en [cambios-lote-768.json](cambios-lote-768.json).
+
+- **4161 — participación en relación 1:N:** se conservan las cotas explícitas 0..N para A y 1..1 para B; la participación de A es opcional y la de B obligatoria. **Corregida.**
+- **4162 — aseguramiento de calidad en MÉTRICA v3:** DSI-CAL 3 revisa requisitos de documentación de usuario (3.1) y de implantación (3.2: instalación, formación e infraestructura). **Corregida.**
+- **4163 — participantes de CSI:** se distingue a usuarios finales como destinatarios de la formación de CSI 7 de los perfiles que figuran como participantes en sus tareas; se limita el reactivo a las tablas de roles del proceso. **Corregida.**
+- **4164 — COCOMO clásico:** los modos son orgánico, semidesacoplado y empotrado; «acoplado» no es un modo. Se acota a COCOMO 81 para no mezclar versiones. **Corregida.**
+- **4165 — validación antes de producción:** se acota la respuesta al flujo que separa preproducción/staging; se advierte que UAT puede ser un entorno independiente y que no hay nomenclatura universal. **Corregida.**
+
+Fuentes primarias/técnicas: [OMG UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/PDF), §11.5 (multiplicidades de asociaciones); [MÉTRICA v3, Aseguramiento de la Calidad](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A6838aec9-835a-4562-bdc3-87a96fd9c743/METRICA_V3_Aseguramiento_de_la_Calidad.pdf), DSI-CAL 3; [MÉTRICA v3, Participantes](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ad601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf) y [Construcción del Sistema de Información](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf); [NASA Glenn, modos COCOMO](https://strs.grc.nasa.gov/repository/forms/cocomo-calculation/); [AWS, entornos DevOps](https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/understanding-the-dev-ops-environments.html) y [Microsoft Learn, entornos UAT/staging](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/environments).
+
+Cotejo en Drive con [ITIC Academy, bloque de bases de datos/modelado, versión 2026.1](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk), [bloque 38 de análisis, diseño y construcción, versión 2026.1](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), [bloque 15 de metodologías ágiles, versión 2026.1](https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk) y el material de estimación COCOMO consultado en Drive. Correspondencia con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4161 A1-89/A2-III-4; 4162–4163 A1-95/A2-III-6; 4164 A1-99/A2-III-2; 4165 A1-96/A2-III-7 y III-8. El temario académico contextualiza; no reemplaza la comprobación con fuente técnica primaria.
+
+Verificaciones: se cotejaron directamente las secciones correspondientes de los PDF oficiales de MÉTRICA v3, NASA, OMG, AWS, Microsoft Learn, materiales académicos de Drive y anexos de convocatoria BOE A1/A2. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 767 — 5 de noviembre de 2026
 

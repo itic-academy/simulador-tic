@@ -208792,35 +208792,115 @@
       "id": 4161,
       "bloque": 0,
       "tema": 0,
-      "texto": "Sea una interrelación 1:N entre dos entidades A y B. Si para toda ocurrencia de A pueden existir, o no, una o varias ocurrencias de B asociadas, y para una ocurrencia de B existe una ocurrencia de A asociada, se dice que esta interrelación es:",
+      "texto": "En un modelo entidad-relación hay una relación 1:N entre A y B: cada A puede asociarse con cero o varias B (0..N), mientras que cada B debe asociarse con exactamente una A (1..1). ¿Cómo se describe la participación mínima en cada extremo?",
       "opciones": [
-        "Obligatoria en A y opcional en B",
-        "Obligatoria en B y opcional en A",
-        "Obligatoria en ambos extremos",
-        "Opcional en ambos extremos"
+        "Obligatoria en A y opcional en B.",
+        "Obligatoria en B y opcional en A.",
+        "Obligatoria en ambos extremos.",
+        "Opcional en ambos extremos."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se conserva la opción 1, pero se reescribe el enunciado y se incorporan las cotas 0..N / 1..1 que sustentan la lectura de la participación en una relación 1:N.",
+      "clasificacion": {
+        "A1": [
+          "A1-89"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque «Bases de datos, SQL y modelado de datos», versión 2026.1; §§4.2–4.3 y 4.6: relaciones entidad-relación, cardinalidad, participación y lectura de multiplicidades. Correspondencia comprobada en convocatoria A1 GSI 2025, anexo I (tema 89), y convocatoria A2 GSI 2025, anexo IX (tema III-4).",
+        "estado": "revisada",
+        "nota": "La academia se usa para situar el contenido en el temario, no como prueba de corrección técnica; las fuentes oficiales/técnicas citadas en revision.fuentes fundamentan la respuesta."
+      },
+      "etiquetas": [
+        "modelo entidad-relación",
+        "cardinalidad",
+        "participación",
+        "multiplicidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+            "referencia": "OMG, UML 2.5.1, §11.5 (Association): la multiplicidad de cada extremo expresa límites inferior y superior; 0..* en A significa cero o muchos B y 1 en el extremo opuesto exige exactamente un A por cada B."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque «Bases de datos, SQL y modelado de datos», versión 2026.1, §§4.2–4.3 y 4.6: relaciones E/R, cardinalidad, participación y lectura de multiplicidades."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 89."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema III-4."
+          }
+        ],
+        "observaciones": "Se conserva la opción 1, pero se reescribe el enunciado y se incorporan las cotas 0..N / 1..1 que sustentan la lectura de la participación en una relación 1:N. ITIC Academy, bloque «Bases de datos, SQL y modelado de datos», versión 2026.1; §§4.2–4.3 y 4.6: relaciones entidad-relación, cardinalidad, participación y lectura de multiplicidades. Correspondencia comprobada en convocatoria A1 GSI 2025, anexo I (tema 89), y convocatoria A2 GSI 2025, anexo IX (tema III-4)."
+      }
     },
     {
       "id": 4162,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la fase de Diseño del Sistema de Información en la metodología MÉTRICA v3, las actividades de Aseguramiento de la Calidad se centran en:",
+      "texto": "En MÉTRICA v3, durante el Diseño del Sistema de Información (DSI), ¿qué revisa la actividad DSI-CAL 3 de Aseguramiento de la Calidad?",
       "opciones": [
-        "Los Requisitos de Documentación de Usuario e Implantación.",
-        "En el Plan de Mantenimiento del Sistema.",
-        "En el Código de Componentes y Procedimientos.",
-        "En el Catálogo de requisitos."
+        "Los requisitos de documentación de usuario y de implantación.",
+        "El plan de mantenimiento del sistema.",
+        "El código de componentes y procedimientos.",
+        "Únicamente el catálogo de requisitos funcionales."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene la opción 0 y se precisa el nombre de la actividad DSI-CAL 3; el reactivo original agrupaba dos tareas distintas bajo una formulación poco concreta.",
+      "clasificacion": {
+        "A1": [
+          "A1-95"
+        ],
+        "A2": [
+          "A2-III-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 38 «Análisis, diseño y construcción de sistemas de información», versión 2026.1; apartados de MÉTRICA v3 y requisitos/documentación de usuario e implantación, construcción y formación. Correspondencia comprobada en convocatoria A1 GSI 2025, anexo I (tema 95), y convocatoria A2 GSI 2025, anexo IX (tema III-6).",
+        "estado": "revisada",
+        "nota": "La academia se usa para situar el contenido en el temario, no como prueba de corrección técnica; las fuentes oficiales/técnicas citadas en revision.fuentes fundamentan la respuesta."
+      },
+      "etiquetas": [
+        "MÉTRICA v3",
+        "aseguramiento de calidad",
+        "DSI-CAL 3",
+        "requisitos de implantación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A6838aec9-835a-4562-bdc3-87a96fd9c743/METRICA_V3_Aseguramiento_de_la_Calidad.pdf",
+            "referencia": "MÉTRICA v3, Aseguramiento de la Calidad, actividad DSI-CAL 3 y tareas 3.1–3.2: se revisan los requisitos de documentación de usuario y de implantación; estos últimos comprenden instalación, formación e infraestructura."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 38, versión 2026.1, temario MÉTRICA y documentación/formación durante la construcción e implantación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 95."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema III-6."
+          }
+        ],
+        "observaciones": "Se mantiene la opción 0 y se precisa el nombre de la actividad DSI-CAL 3; el reactivo original agrupaba dos tareas distintas bajo una formulación poco concreta. ITIC Academy, bloque 38 «Análisis, diseño y construcción de sistemas de información», versión 2026.1; apartados de MÉTRICA v3 y requisitos/documentación de usuario e implantación, construcción y formación. Correspondencia comprobada en convocatoria A1 GSI 2025, anexo I (tema 95), y convocatoria A2 GSI 2025, anexo IX (tema III-6)."
+      }
     },
     {
       "id": 4163,
       "bloque": 0,
       "tema": 0,
-      "texto": "Durante la fase de construcción del sistema de información contemplada en METRICA v3, ¿cuál de los siguientes NO es un participante?",
+      "texto": "En MÉTRICA v3, atendiendo a los perfiles que figuran como participantes de las tareas del proceso Construcción del Sistema de Información (CSI), ¿cuál es destinatario de la formación de CSI 7, pero no aparece como participante de esas tareas?",
       "opciones": [
         "Usuarios finales.",
         "Programadores.",
@@ -208828,35 +208908,167 @@
         "Equipo de formación."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La formulación se hace específica al cuadro de participantes de CSI y a CSI 7 para que «participante» no se confunda con usuario afectado o destinatario de formación. Se conserva «Usuarios finales» como respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-95"
+        ],
+        "A2": [
+          "A2-III-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 38 «Análisis, diseño y construcción de sistemas de información», versión 2026.1; CSI 7 y roles de formación/usuarios finales en construcción de sistemas de información. Correspondencia comprobada en convocatoria A1 GSI 2025, anexo I (tema 95), y convocatoria A2 GSI 2025, anexo IX (tema III-6).",
+        "estado": "revisada",
+        "nota": "La academia se usa para situar el contenido en el temario, no como prueba de corrección técnica; las fuentes oficiales/técnicas citadas en revision.fuentes fundamentan la respuesta."
+      },
+      "etiquetas": [
+        "MÉTRICA v3",
+        "CSI",
+        "participantes",
+        "usuarios finales",
+        "formación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ad601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf",
+            "referencia": "MÉTRICA v3, Participantes, perfiles Analista y Programador: identifica al DBA dentro del perfil Analista, al Equipo de Formación y a Programadores; describe a los usuarios finales como destinatarios de necesidades/formación, no como perfil de participante del proceso CSI."
+          },
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
+            "referencia": "MÉTRICA v3, Construcción del Sistema de Información, actividad CSI 7: definición de la formación de usuarios finales; los participantes de las tareas son Analistas y, en CSI 7.2, también el Equipo de Formación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 38, versión 2026.1, apartado de construcción de sistemas, actividad CSI 7 y roles de MÉTRICA."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 95."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema III-6."
+          }
+        ],
+        "observaciones": "La formulación se hace específica al cuadro de participantes de CSI y a CSI 7 para que «participante» no se confunda con usuario afectado o destinatario de formación. Se conserva «Usuarios finales» como respuesta. ITIC Academy, bloque 38 «Análisis, diseño y construcción de sistemas de información», versión 2026.1; CSI 7 y roles de formación/usuarios finales en construcción de sistemas de información. Correspondencia comprobada en convocatoria A1 GSI 2025, anexo I (tema 95), y convocatoria A2 GSI 2025, anexo IX (tema III-6)."
+      }
     },
     {
       "id": 4164,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes no es un modelo de COCOMO?",
+      "texto": "En el COCOMO clásico (COCOMO 81), ¿cuál de los siguientes NO es uno de sus tres modos de desarrollo?",
       "opciones": [
-        "Semiacoplado",
-        "Empotrado",
-        "Acoplado",
-        "Orgánico"
+        "Semidesacoplado (semi-detached).",
+        "Empotrado (embedded).",
+        "Acoplado.",
+        "Orgánico (organic)."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se sustituye «modelo» por modo del COCOMO básico/clásico y se corrige «semiacoplado» por el término de referencia «semidesacoplado», para diferenciarlo de las versiones posteriores.",
+      "clasificacion": {
+        "A1": [
+          "A1-99"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": "ITIC Academy, «Tema 036, 094, 098 - Gantt, Pert, Estimación», material anterior consultado en Drive; §6.4, COCOMO: documenta los tres modos clásicos orgánico, semidesacoplado y empotrado; el material es anterior y se utiliza solo para contextualizar el epígrafe, no como autoridad técnica. Correspondencia comprobada en convocatoria A1 GSI 2025, anexo I (tema 99), y convocatoria A2 GSI 2025, anexo IX (tema III-2).",
+        "estado": "revisada",
+        "nota": "La academia se usa para situar el contenido en el temario, no como prueba de corrección técnica; las fuentes oficiales/técnicas citadas en revision.fuentes fundamentan la respuesta."
+      },
+      "etiquetas": [
+        "COCOMO",
+        "estimación de esfuerzo",
+        "modo orgánico",
+        "semidetached",
+        "embedded"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://strs.grc.nasa.gov/repository/forms/cocomo-calculation/",
+            "referencia": "NASA Glenn Research Center, STRS COCOMO Calculation: enumera los tres modos del modelo clásico: Organic, Semi-detached y Embedded, y describe el ámbito de cada uno."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DMz3yKo5YBTwNecdydOqWB9CxkyrQZ10/view?usp=drivesdk",
+            "referencia": "ITIC Academy, «Tema 036, 094, 098 - Gantt, Pert, Estimación», sección 6.4, copia de materiales de estimación: distingue los tres modos de complejidad del COCOMO clásico y separa COCOMO 2000."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 99."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema III-2."
+          }
+        ],
+        "observaciones": "Se sustituye «modelo» por modo del COCOMO básico/clásico y se corrige «semiacoplado» por el término de referencia «semidesacoplado», para diferenciarlo de las versiones posteriores. ITIC Academy, «Tema 036, 094, 098 - Gantt, Pert, Estimación», material anterior consultado en Drive; §6.4, COCOMO: documenta los tres modos clásicos orgánico, semidesacoplado y empotrado; el material es anterior y se utiliza solo para contextualizar el epígrafe, no como autoridad técnica. Correspondencia comprobada en convocatoria A1 GSI 2025, anexo I (tema 99), y convocatoria A2 GSI 2025, anexo IX (tema III-2)."
+      }
     },
     {
       "id": 4165,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es el entorno donde los usuario validan las funcionalidades establecidas?",
+      "texto": "En una canalización de entrega que dispone de un entorno separado de preproducción (staging), ¿dónde pueden validar usuarios las funcionalidades antes de autorizar su paso al entorno real?",
       "opciones": [
-        "preproducción",
-        "producción",
-        "integración",
-        "migración"
+        "En preproducción (staging).",
+        "En producción.",
+        "En integración, necesariamente.",
+        "En el entorno de migración, necesariamente."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se acota «preproducción» a un flujo con entorno de staging diferenciado y se reconoce que UAT/aceptación puede ser un entorno separado. El original presentaba como universal una convención que depende de la arquitectura de entornos.",
+      "clasificacion": {
+        "A1": [
+          "A1-96"
+        ],
+        "A2": [
+          "A2-III-7",
+          "A2-III-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 38 «Análisis, diseño y construcción de sistemas de información», versión 2026.1; apartados de pruebas y ciclo construcción-despliegue/implantación; contexto curricular de validación antes de puesta en producción. Correspondencia comprobada en convocatoria A1 GSI 2025, anexo I (tema 96), y convocatoria A2 GSI 2025, anexo IX (tema III-7, tema III-8).",
+        "estado": "revisada",
+        "nota": "La academia se usa para situar el contenido en el temario, no como prueba de corrección técnica; las fuentes oficiales/técnicas citadas en revision.fuentes fundamentan la respuesta."
+      },
+      "etiquetas": [
+        "pruebas de aceptación",
+        "UAT",
+        "preproducción",
+        "staging",
+        "validación de usuario"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/understanding-the-dev-ops-environments.html",
+            "referencia": "AWS Prescriptive Guidance, Understanding the DevOps environments: describe testing para pruebas/aceptación y staging como entorno de preproducción equivalente a producción, con validación y aprobaciones de negocio antes de pasar a producción."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/environments",
+            "referencia": "Microsoft Learn, Cloud Adoption Framework, Environments: UAT permite a usuarios finales/clientes validar y aceptar la solución antes de producción; staging es el entorno para pruebas finales previas a producción."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 38, versión 2026.1, construcción, pruebas, despliegue e integración continua; encuadre del ciclo hasta la puesta en producción."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 96."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema III-7, tema III-8."
+          }
+        ],
+        "observaciones": "Se acota «preproducción» a un flujo con entorno de staging diferenciado y se reconoce que UAT/aceptación puede ser un entorno separado. El original presentaba como universal una convención que depende de la arquitectura de entornos. ITIC Academy, bloque 38 «Análisis, diseño y construcción de sistemas de información», versión 2026.1; apartados de pruebas y ciclo construcción-despliegue/implantación; contexto curricular de validación antes de puesta en producción. Correspondencia comprobada en convocatoria A1 GSI 2025, anexo I (tema 96), y convocatoria A2 GSI 2025, anexo IX (tema III-7, tema III-8)."
+      }
     },
     {
       "id": 4166,
