@@ -201692,71 +201692,288 @@
       "id": 4036,
       "bloque": 0,
       "tema": 0,
-      "texto": "ODBC (Open Database Connectivity) es:",
+      "texto": "¿Qué describe correctamente ODBC (Open Database Connectivity)?",
       "opciones": [
-        "Una interfaz de acceso universal a datos: BBDD, ficheros, Exchange, Directorios...",
-        "Una arquitectura de objetos para simplificar el uso de OleDB.",
-        "Una interfaz para lenguajes tipo C++ de alto nivel.",
-        "Una interfaz común de acceso a múltiples Bases de Datos (BBDD) usando SQL."
+        "Una API basada en CLI que permite a aplicaciones acceder a distintos SGBD mediante drivers y utilizar SQL.",
+        "Una capa de objetos construida exclusivamente sobre OLE DB.",
+        "Una interfaz exclusiva para programas C++ que no usa drivers.",
+        "Un mecanismo universal para consultar cualquier tipo de dato, aunque no exista un driver."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Se delimita ODBC como API CLI común para que una aplicación acceda a distintos SGBD por medio de drivers y use SQL. No se presenta como “acceso universal” a cualquier clase de datos —esa descripción se asocia a Universal Data Access/OLE DB— ni como una interfaz exclusiva de C++. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §9.2, expone SQL/CLI, ODBC y JDBC como capas/API de acceso a datos con drivers. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §9.2, expone SQL/CLI, ODBC y JDBC como capas/API de acceso a datos con drivers. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; se omite la asignación A1 en 4038 al no identificarse un tema A1 específico para grafos en el anexo oficial."
+      },
+      "etiquetas": [
+        "ODBC",
+        "interoperabilidad",
+        "API",
+        "drivers"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/sql/odbc/reference/",
+            "referencia": "Microsoft Learn ODBC API Reference, ODBC Overview: ODBC es una API ampliamente aceptada para acceso a bases de datos, basada en CLI, con SQL como lenguaje de acceso y drivers específicos por gestor."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/sql/odbc/microsoft-open-database-connectivity-odbc",
+            "referencia": "Microsoft Open Database Connectivity: interfaz C para que aplicaciones accedan a datos en distintos DBMS."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo temático directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5."
+          }
+        ],
+        "observaciones": "Se delimita ODBC como API CLI común para que una aplicación acceda a distintos SGBD por medio de drivers y use SQL. No se presenta como “acceso universal” a cualquier clase de datos —esa descripción se asocia a Universal Data Access/OLE DB— ni como una interfaz exclusiva de C++. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §9.2, expone SQL/CLI, ODBC y JDBC como capas/API de acceso a datos con drivers. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) II-5)."
+      }
     },
     {
       "id": 4037,
       "bloque": 0,
       "tema": 0,
-      "texto": "Una base de datos relacional está en tercera forma normal, si además de estar en segunda forma normal:",
+      "texto": "Una relación está en tercera forma normal (3FN) cuando, además de cumplir 2FN:",
       "opciones": [
-        "Todos sus atributos no primos dependen no transitivamente de la llave primaria",
-        "Los atributos no primos dependen funcionalmente de la llave primaria",
-        "Por cada renglón columna contiene valores atómicos",
-        "No contiene ningún grupo repetitivo"
+        "Cada atributo no primo depende no transitivamente de cada clave candidata.",
+        "Todos los atributos no primos dependen de la clave primaria, sin considerar las restantes claves candidatas.",
+        "Cada intersección de fila y columna contiene un único valor.",
+        "No hay grupos repetitivos, aunque puedan existir dependencias transitivas entre atributos no primos."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El criterio del original de 3FN es esencialmente el correcto, pero restringía la definición a la clave primaria. Codd formula la condición respecto de cada clave candidata; además, la definición completa exige que la relación ya esté en 2FN. Se corrige de forma concordante con la revisión individual del ítem 4028. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§3.1–3.2, explica dependencias funcionales y normalización; se confirma la definición de 3FN de Codd, no solo respecto a la clave primaria. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4).",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§3.1–3.2, explica dependencias funcionales y normalización; se confirma la definición de 3FN de Codd, no solo respecto a la clave primaria. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; se omite la asignación A1 en 4038 al no identificarse un tema A1 específico para grafos en el anexo oficial."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "normalización",
+        "3FN",
+        "dependencias funcionales"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf",
+            "referencia": "E. F. Codd, Further Normalization of the Data Base Relational Model (IBM RJ909, 1971), §3.3: 3FN exige 2FN y dependencia no transitiva de atributos no primos respecto de cada clave candidata."
+          },
+          {
+            "url": "https://doi.org/10.1145/1734714.1734716",
+            "referencia": "E. F. Codd, Normalized Data Base Structure: A Brief Tutorial, SIGFIDET 1971, DOI 10.1145/1734714.1734716."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo temático directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+          }
+        ],
+        "observaciones": "El criterio del original de 3FN es esencialmente el correcto, pero restringía la definición a la clave primaria. Codd formula la condición respecto de cada clave candidata; además, la definición completa exige que la relación ya esté en 2FN. Se corrige de forma concordante con la revisión individual del ítem 4028. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§3.1–3.2, explica dependencias funcionales y normalización; se confirma la definición de 3FN de Codd, no solo respecto a la clave primaria. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4)."
+      }
     },
     {
       "id": 4038,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los grafos se representan por medio de dos conjuntos, G = (V,A), de tal modo que V son los vértices y A las aristas. Indique cuál de los siguientes conjuntos representa un grafo regular de grado 3, G = (V,A), dónde:",
+      "texto": "Considérese un grafo simple no dirigido G=(V,A), donde cada arista es un par no ordenado de vértices distintos. ¿Qué conjunto describe un grafo regular de grado 3?",
       "opciones": [
-        "V= {1,2,3} y A = {{1,2},{2,3}}",
-        "V= {1,2,3} y A = {{1,2},{2,3},{3,1}}",
-        "V= {1,2,3,4} y A = {{1,2},{2,4},{3,1},{1,4},{2,3}}",
-        "V= {1,2,3,4} y A = {{1,2},{3,4},{3,1},{2,3},{1,4},{2,4}}"
+        "V={1,2,3}, A={{1,2},{2,3}}.",
+        "V={1,2,3}, A={{1,2},{2,3},{3,1}}.",
+        "V={1,2,3,4}, A={{1,2},{2,4},{3,1},{1,4},{2,3}}.",
+        "V={1,2,3,4}, A={{1,2},{3,4},{3,1},{2,3},{1,4},{2,4}}."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se asume explícitamente un grafo simple no dirigido: cada arista es un par no ordenado, sin lazos ni aristas repetidas. En la última opción, el conjunto de seis pares contiene todas las aristas posibles de K4; cada uno de sus cuatro vértices incide en tres aristas, por lo que es 3-regular. En la tercera opción los grados son 3, 3, 2 y 2. En el programa oficial revisado no hay epígrafe A1 específico de estructuras/grafos; la clasificación directa corresponde al A2-III-5. ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1 (31/08/2026); el bloque 32 incluye explícitamente A2-D5 y §2.10 «Grafos», con vértices, aristas y representaciones; el programa A1 consultado no contiene un epígrafe específico de teoría de grafos, por lo que no se asigna una etiqueta A1 forzada. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) ), y A2 GSI 2025, anexo IX (tema(s) III-5).",
+      "clasificacion": {
+        "A1": [],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1 (31/08/2026); el bloque 32 incluye explícitamente A2-D5 y §2.10 «Grafos», con vértices, aristas y representaciones; el programa A1 consultado no contiene un epígrafe específico de teoría de grafos, por lo que no se asigna una etiqueta A1 forzada. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) ), y A2 GSI 2025, anexo IX (tema(s) III-5).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; se omite la asignación A1 en 4038 al no identificarse un tema A1 específico para grafos en el anexo oficial."
+      },
+      "etiquetas": [
+        "grafos",
+        "grado de vértice",
+        "grafo regular",
+        "K4"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://www.math.uni-hamburg.de/home/diestel/books/graph.theory/preview/Ch1.pdf",
+            "referencia": "Reinhard Diestel, Graph Theory, §1.2, Degree and Neighbourhood: un grafo es k-regular si todos sus vértices tienen grado k; grado 3 se denomina cúbico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1, apartados A2-D5 y §2.10: grafos, vértices y aristas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) sin epígrafe específico A1 aplicable."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-5."
+          }
+        ],
+        "observaciones": "Se asume explícitamente un grafo simple no dirigido: cada arista es un par no ordenado, sin lazos ni aristas repetidas. En la última opción, el conjunto de seis pares contiene todas las aristas posibles de K4; cada uno de sus cuatro vértices incide en tres aristas, por lo que es 3-regular. En la tercera opción los grados son 3, 3, 2 y 2. En el programa oficial revisado no hay epígrafe A1 específico de estructuras/grafos; la clasificación directa corresponde al A2-III-5. ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos», versión 2026.1 (31/08/2026); el bloque 32 incluye explícitamente A2-D5 y §2.10 «Grafos», con vértices, aristas y representaciones; el programa A1 consultado no contiene un epígrafe específico de teoría de grafos, por lo que no se asigna una etiqueta A1 forzada. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) ), y A2 GSI 2025, anexo IX (tema(s) III-5)."
+      }
     },
     {
       "id": 4039,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el SGBDR Oracle, la funcionalidad de DATABASE LINK",
+      "texto": "En Oracle Database, ¿para qué sirve principalmente un DATABASE LINK?",
       "opciones": [
-        "Sirve para enlazar objetos Java en la base de datos para ser invocados desde PL/SQL.",
-        "Permite integrar enlaces web en los campos de la base de datos.",
-        "Permite acceder a datos disponibles en otras bases de datos.",
-        "Ninguna de las anteriores."
+        "Para enlazar clases Java locales que invoca PL/SQL.",
+        "Para integrar hipervínculos web dentro de columnas.",
+        "Para referenciar y acceder a objetos de una base de datos remota desde la base local.",
+        "Para sustituir la definición de claves foráneas."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La opción correcta es el acceso a objetos/datos de una base de datos remota. Un database link de Oracle es un objeto de esquema que se utiliza en sentencias SQL para referir objetos remotos, por ejemplo tabla@dblink; no es un enlace web ni un mecanismo específico para invocar objetos Java locales. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29 cubre SGBD, SQL y administración/distribución de bases de datos; el comportamiento exacto de DATABASE LINK se contrasta con Oracle Database 26. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5, IV-2).",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-IV-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29 cubre SGBD, SQL y administración/distribución de bases de datos; el comportamiento exacto de DATABASE LINK se contrasta con Oracle Database 26. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5, IV-2).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; se omite la asignación A1 en 4038 al no identificarse un tema A1 específico para grafos en el anexo oficial."
+      },
+      "etiquetas": [
+        "Oracle",
+        "database link",
+        "base de datos distribuida",
+        "acceso remoto"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CREATE-DATABASE-LINK.html",
+            "referencia": "Oracle AI Database 26 SQL Language Reference, CREATE DATABASE LINK: objeto de esquema que permite acceder a objetos de otra base de datos."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/managing-a-distributed-database.html",
+            "referencia": "Oracle AI Database 26 Database Administrator’s Guide, Managing a Distributed Database: el enlace permite acceder a una base remota mediante una sesión en la base remota."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo temático directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 63, 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) II-5, IV-2."
+          }
+        ],
+        "observaciones": "La opción correcta es el acceso a objetos/datos de una base de datos remota. Un database link de Oracle es un objeto de esquema que se utiliza en sentencias SQL para referir objetos remotos, por ejemplo tabla@dblink; no es un enlace web ni un mecanismo específico para invocar objetos Java locales. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29 cubre SGBD, SQL y administración/distribución de bases de datos; el comportamiento exacto de DATABASE LINK se contrasta con Oracle Database 26. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 63, 64), y A2 GSI 2025, anexo IX (tema(s) II-5, IV-2)."
+      }
     },
     {
       "id": 4040,
       "bloque": 0,
       "tema": 0,
-      "texto": "Con referencia al modelo relacional, indique cuál de las siguientes afirmaciones es cierta:",
+      "texto": "En el modelo relacional, ¿qué determina el grado de una relación?",
       "opciones": [
-        "El número de dominios de una relación define su grado",
-        "La extensión u ocurrencia de una relación es una tabla donde las filas corresponden a los atributos",
-        "Cada atributo, o propiedad con interés informacional de una relación, está asociado a un dominio del que toma sus valores",
-        "El orden de las filas dentro de una tabla es determinante"
+        "El número de dominios, expresados como atributos, sobre los que se define.",
+        "El número de tuplas que contiene en un instante.",
+        "El orden en que se muestran las filas.",
+        "El número total de valores actualmente almacenados en sus tuplas."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "El original tenía dos alternativas verdaderas: el grado de la relación es n para una relación sobre n dominios, y cada atributo corresponde a un dominio. Se convierte en una pregunta unívoca sobre el grado: lo determina el número de dominios/atributos del encabezado, no la cardinalidad de tuplas, su orden ni los valores actualmente almacenados. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§2.1–2.2, define relación, tupla, atributo, dominio y grado; el artículo original de Codd aclara el grado n como número de dominios. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4).",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§2.1–2.2, define relación, tupla, atributo, dominio y grado; el artículo original de Codd aclara el grado n como número de dominios. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular temático documentado; se omite la asignación A1 en 4038 al no identificarse un tema A1 específico para grafos en el anexo oficial."
+      },
+      "etiquetas": [
+        "modelo relacional",
+        "relación",
+        "grado",
+        "dominio",
+        "atributo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-05",
+        "fuentes": [
+          {
+            "url": "https://web.eecs.umich.edu/~michjc/eecs584/Papers/codd_1970.pdf",
+            "referencia": "E. F. Codd, A Relational Model of Data for Large Shared Data Banks, Communications of the ACM 13(6), 1970, §1.3: una relación sobre n dominios tiene grado n; tuplas son filas y su orden es inmaterial."
+          },
+          {
+            "url": "https://apollo.inf.upol.cz/~urbanec/teaching/2021/data2/files/codd2.pdf",
+            "referencia": "Codd, Further Normalization (1971), apéndice A1: relación como subconjunto de un producto cartesiano de dominios y atributo no primo como colección con nombre/rol."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); cotejo temático directo de las secciones pertinentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema(s) 64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema(s) III-4."
+          }
+        ],
+        "observaciones": "El original tenía dos alternativas verdaderas: el grado de la relación es n para una relación sobre n dominios, y cada atributo corresponde a un dominio. Se convierte en una pregunta unívoca sobre el grado: lo determina el número de dominios/atributos del encabezado, no la cardinalidad de tuplas, su orden ni los valores actualmente almacenados. ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1 (31/08/2026); el bloque 29, §§2.1–2.2, define relación, tupla, atributo, dominio y grado; el artículo original de Codd aclara el grado n como número de dominios. Correspondencia contrastada con convocatoria A1 GSI 2025, anexo I (tema(s) 64), y A2 GSI 2025, anexo IX (tema(s) III-4)."
+      }
     },
     {
       "id": 4041,
