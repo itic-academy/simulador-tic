@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado y visible en Pages: 791 (IDs 4276–4280). Acumulado: 4275 preguntas examinadas individualmente, 4193 verificadas (797 vigentes, 3057 corregidas y 339 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7848 sin revisar individualmente. Hay 3539 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 792 (IDs 4281–4285); pendiente verificar la publicación de este lote. Acumulado: 4280 preguntas examinadas individualmente, 4198 verificadas (798 vigentes, 3060 corregidas y 340 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7843 sin revisar individualmente. Hay 3543 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -9,6 +9,20 @@ El lote 788 (`54af8ad`) está en `main` y visible en GitHub Pages. El `build` fu
 Tras el lote 789, el run de GitHub Actions [42653837616](https://github.com/itic-academy/simulador-tic/actions/runs/42653837616) terminó con `success`; la consulta sin caché de Pages devolvió HTTP 200 y mostró el acumulado del lote 789. Tras el lote 790, el run [42656000580](https://github.com/itic-academy/simulador-tic/actions/runs/42656000580) también terminó con `success`; comprobación sin caché: HTTP 200, IDs y acumulado del lote 790 visibles.
 
 Tras el lote 791, el run [42657722686](https://github.com/itic-academy/simulador-tic/actions/runs/42657722686) terminó con `success`; la comprobación sin caché de Pages devolvió HTTP 200 y confirmó los IDs 4276–4280 y sus conteos.
+
+## Lote 792 — 9 de noviembre de 2026
+
+IDs 4281–4285 revisados individualmente; los originales y decisiones completas se conservan en [cambios-lote-792.json](cambios-lote-792.json).
+
+- **4281 — tipos de CRM:** se confirma que la opción correcta es CRM operacional: apoya procesos cotidianos de atención y su integración con back-office. Se diferencia del análisis para decisiones y del CRM colaborativo para canales e intercambio. **Vigente.**
+- **4282 — CRM ciudadano:** se reescribe el enunciado para retirar “anotar todas las relaciones” y “personalidad administrativa digital”, afirmaciones imprecisas que sugerían un registro indiscriminado. CRM organiza contactos e interacciones necesarias para prestar servicios, sujeto a finalidad y minimización de datos. **Corregida.**
+- **4283 — ERP horizontal y modularidad:** se acota la respuesta correcta: una solución horizontal puede cubrir procesos comunes en sectores distintos, mientras necesidades sectoriales pueden exigir configuración o extensiones. No se presupone que una misma configuración sirva para cualquier sector. **Corregida.**
+- **4284 — Compiere:** Community Edition fue un ERP de código abierto distribuido bajo GPLv2, pero la ficha del proyecto no registra actualizaciones desde 2016. Se convierte explícitamente en pregunta histórica y no se presenta como recomendación actual. El material Academy 2026 sí ofrece ejemplos modernos, entre ellos Odoo Community. **Histórica.**
+- **4285 — CRM analítico:** se formula directamente la distinción; el CRM analítico explota información para generar informes e indicadores de apoyo a decisiones. La solución queda confirmada también por el test equivalente de Academy 2026. **Corregida.**
+
+Fuentes: ITIC Academy, [Tema 072 de 2026](https://drive.google.com/file/d/1lkbdZvGxPTwyjhiOf6VsglMWYe4RI6sL/view?usp=drivesdk), que cubre CRM operativo/analítico/colaborativo, ERP, tipos horizontal/vertical y aporta la solución del test analítico; Microsoft Learn, [analítica de relaciones e indicadores de CRM](https://learn.microsoft.com/en-us/dynamics365/sales/relationship-analytics-overview); SAP, [ERP y sus módulos integrados/extensiones sectoriales](https://www.sap.com/products/erp/what-is-erp.html); Compiere, [Community Edition como ERP de código abierto](https://www.compiere.com/products/download/download-thanks.php) y [licencia GPLv2](https://www.compiere.com/services/support-programs.php), más la [ficha de SourceForge con última actualización 2016](https://sourceforge.net/projects/compiere/); Reglamento (UE) 2016/679, [artículo 5](https://eur-lex.europa.eu/eli/reg/2016/679/oj/spa). Cotejo de convocatoria: A1 [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 72 (CRM y ERP); A2 [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), tema II-12 (atención a usuarios y CRM). Los temas ERP se adscriben a A1-72; no se fuerza un tema A2 específico.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.280 revisadas individualmente, 7.843 aún sin revisar individualmente y cero errores estructurales. La estructura del inventario no acredita revisión de contenido.
 
 ## Lote 791 — 9 de noviembre de 2026
 
