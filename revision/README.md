@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 771 (IDs 4176–4180). Acumulado: 4175 preguntas examinadas individualmente, 4095 verificadas (778 vigentes, 2990 corregidas y 327 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7948 sin revisar individualmente. Hay 3456 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 772 (IDs 4181–4185). Acumulado: 4180 preguntas examinadas individualmente, 4100 verificadas (780 vigentes, 2993 corregidas y 327 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7943 sin revisar individualmente. Hay 3459 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 772 — 9 de noviembre de 2026
+
+IDs 4181–4185 revisados individualmente; originales y decisiones guardados en [cambios-lote-772.json](cambios-lote-772.json).
+
+- **4181 — cliente FTP:** se limita el enunciado al cliente interactivo de Windows; `verbose` muestra las respuestas recibidas del servidor. Se distingue de `dir`, `pwd` y `lcd`. **Corregida.**
+- **4182 — LAPB/X.25:** LAPB trabaja en capa de enlace y utiliza procedimientos/tramas de la familia HDLC; no implica que use todas las opciones y comandos de HDLC. X.25 (1996) e ISO/IEC 7776 siguen en vigor. **Vigente.**
+- **4183 — encaminamiento OSPF:** se reemplaza la afirmación errónea de que OSPF difunde tablas completas por una pregunta inequívoca sobre la difusión de LSA, la base de estado de enlace y el cálculo SPF. **Corregida.**
+- **4184 — RMON:** se aclara que la sonda aloja el agente RMON y que SNMP comunica la estación/aplicación de gestión con ese agente. **Corregida.**
+- **4185 — áreas de gestión ISO/ITU-T:** se confirma X.700: fallos, contabilidad, configuración, calidad de funcionamiento/rendimiento y seguridad; ITU-T la mantiene en vigor. **Vigente.**
+
+Fuentes técnicas: [Microsoft Learn, comando `ftp verbose`](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ftp-verbose_1); [ITU-T X.25 (10/1996), vigente](https://www.itu.int/rec/T-REC-X.25/en) e [ISO/IEC 7776:1995, vigente](https://www.iso.org/standard/22172.html); [IETF RFC 2328 (OSPFv2), §§3.4, 13 y 16](https://www.rfc-editor.org/rfc/rfc2328.html); [IETF RFC 2819, RMON MIB](https://www.rfc-editor.org/rfc/rfc2819.html) y [RFC 3411, marco SNMP](https://www.rfc-editor.org/rfc/rfc3411.html); [ITU-T X.700, §5.5](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.700-199209-I%21%21PDF-E&lang=e) y [catálogo ITU-T, estado en vigor](https://www.itu.int/itu-t/recommendations/rec.aspx?rec=X.700).
+
+Cotejo de Drive con [bloque 42 Redes, versión 2026.1](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), leído en los apartados sobre servicios de Internet/FTP (§9.6), modelos y protocolos (§1.2, §7.1), encaminamiento (§6.2) y gestión SNMP/monitorización (§5). Correspondencia oficial según [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4181 A1-109/A2-IV-13; 4182 A1-108/111 y A2-II-8/IV-10; 4183 A1-108/A2-IV-10; 4184–4185 A1-118/A2-IV-9.
+
+Verificaciones: consultada documentación vigente del cliente Windows FTP, UIT-T X.25, ISO/IEC 7776, RFC 2328/2819/3411 y X.700; cotejadas las secciones del bloque académico 42 y los epígrafes BOE A1/A2. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 771 — 9 de noviembre de 2026
 
