@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 793 (IDs 4286–4290); despliegue pendiente. Acumulado: 4285 preguntas examinadas individualmente, 4203 verificadas (799 vigentes, 3064 corregidas y 340 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7838 sin revisar individualmente. Hay 3547 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado y visible en Pages: 793 (IDs 4286–4290). Acumulado: 4285 preguntas examinadas individualmente, 4203 verificadas (799 vigentes, 3064 corregidas y 340 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7838 sin revisar individualmente. Hay 3547 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -11,6 +11,7 @@ Tras el lote 789, el run de GitHub Actions [42653837616](https://github.com/itic
 Tras el lote 791, el run [42657722686](https://github.com/itic-academy/simulador-tic/actions/runs/42657722686) terminó con `success`; la comprobación sin caché de Pages devolvió HTTP 200 y confirmó los IDs 4276–4280 y sus conteos.
 
 Tras el lote 792, el workflow de Pages [42660545532](https://github.com/itic-academy/simulador-tic/actions/runs/42660545532) terminó con `success`; una petición sin caché a la página de revisión devolvió HTTP 200 y confirmó el lote y acumulado 792.
+Tras el lote 793, el workflow de Pages [42662191523](https://github.com/itic-academy/simulador-tic/actions/runs/42662191523) terminó con `success`; la respuesta sin caché HTTP 200 confirmó los IDs 4286–4290, los conteos y el rango siguiente.
 Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-academy/simulador-tic/actions/runs/42661019112), correspondiente al commit de verificación del README, terminó con `success`; la respuesta sin caché HTTP 200 mostró el nuevo estado y el lote 792.
 
 ## Lote 793 — 9 de noviembre de 2026
