@@ -1,10 +1,26 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 783 (IDs 4236–4240). Acumulado: 4235 preguntas examinadas individualmente, 4155 verificadas (793 vigentes, 3027 corregidas y 335 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7888 sin revisar individualmente. Hay 3504 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 784 (IDs 4241–4245). Acumulado: 4240 preguntas examinadas individualmente, 4159 verificadas (794 vigentes, 3030 corregidas y 335 históricas) y 81 pendientes documentadas (36 de fuente y 45 de ambigüedad); quedan 7883 sin revisar individualmente. Hay 3507 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
 El commit `a6c2a0d` del lote 782 está en `main`, pero el despliegue no se ha podido verificar como publicado: la ejecución `pages build and deployment` de ese SHA completó la compilación y falló en el job `deploy`; también falló el despliegue del lote 781. La última lectura pública de `revision/README.md` aún muestra el lote 780 (`Last-Modified: 2026-11-09 13:48:38 UTC`). La API pública de configuración de Pages respondió 404, por lo que no queda determinado aquí si la causa es la configuración del sitio o sus permisos. Se necesita que una persona administradora revise la configuración/fuente de GitHub Pages y los permisos del despliegue; hasta entonces, los commits sí quedan guardados en `main`, pero la web pública puede seguir desactualizada.
+
+## Lote 784 — 9 de noviembre de 2026
+
+IDs 4241–4245 revisados individualmente; originales y decisiones en [cambios-lote-784.json](cambios-lote-784.json).
+
+- **4241 — perfil del analista:** se contrastaron las opciones, pero la referencia a «rasgos de carácter» carece de estándar o perfil citado; varias capacidades son plausibles y no hay una lista oficial que permita validar «todas las anteriores». Se conserva **pendiente de ambigüedad**, sin marcarla como verificada; para cerrar hace falta una fuente/perfil explícito o reformular en términos de tareas de análisis.
+- **4242 — conceptos de orientación a objetos:** abstracción, encapsulación y herencia son conceptos OO reconocidos; «redundancia controlada» no pertenece al conjunto. Se acota el contexto a conceptos fundamentales y se contrasta con Oracle y Academy. **Corregida.**
+- **4243 — polimorfismo:** se confirma que una misma operación puede tener comportamiento distinto según el tipo concreto del objeto receptor; se distingue de herencia y sobrecarga. **Vigente.**
+- **4244 — documentación y operación:** se reforma el enunciado para preguntar por MÉTRICA v3 DSI 1.7; incluye procedimientos de copia de seguridad, recuperación de datos y recuperación ante catástrofes. **Corregida.**
+- **4245 — clase y objeto:** se precisa que una clase define estado/comportamiento comunes y sirve de plano para crear objetos; cada objeto es una instancia concreta. **Corregida.**
+
+Fuentes primarias: [Oracle Java Tutorials, conceptos OO](https://docs.oracle.com/javase/tutorial/java/concepts/index.html), [polimorfismo](https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html), [clase](https://docs.oracle.com/javase/tutorial/java/concepts/class.html) y [objeto](https://docs.oracle.com/javase/tutorial/java/concepts/object.html); [MÉTRICA v3, Diseño del Sistema, DSI 1.7](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A7f366cd1-6759-42d9-9e0b-31edce0256d9/METRICA_V3_Diseno_del_Sistema_de_Informacion.pdf), [Construcción del Sistema](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf) y [NIST SP 800-34 Rev. 1, contingencia TI](https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final).
+
+Cotejo curricular con ITIC Academy en Drive: [bloque 38, Análisis/Diseño/Construcción de SI](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), consultado en PDF: §6 define conceptos de OO y clase/objeto; §11 trata documentación técnica y de explotación. El bloque no establece una lista normativa de atributos personales del analista, por lo que 4241 permanece pendiente. Correspondencia con [programa A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 86, 88 y 95; y [programa A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), temas II-3, III-2 y III-6. Los programas oficiales se usan como mapeo de temas, no como fuente de definiciones técnicas.
+
+Verificaciones: se cotejaron los conceptos OO y el polimorfismo con Oracle; la distinción entre documentación de construcción y procedimientos de operación/seguridad con MÉTRICA v3 y recuperación con NIST; el bloque Academy y el programa A1/A2. El reactivo 4241 se dejó sin verificar porque sus opciones expresan capacidades subjetivas sin criterio que seleccione una respuesta única. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 783 — 9 de noviembre de 2026
 
