@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado y visible en Pages: 794 (IDs 4291–4295). Acumulado: 4290 preguntas examinadas individualmente, 4209 verificadas (800 vigentes, 3068 corregidas y 341 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7833 sin revisar individualmente. Hay 3552 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 795 (IDs 4296–4300); despliegue en verificación. Acumulado: 4295 preguntas examinadas individualmente, 4213 verificadas (799 vigentes, 3073 corregidas y 341 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7828 sin revisar individualmente. Hay 3557 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -14,6 +14,20 @@ Tras el lote 792, el workflow de Pages [42660545532](https://github.com/itic-aca
 Tras el lote 793, el workflow de Pages [42662191523](https://github.com/itic-academy/simulador-tic/actions/runs/42662191523) terminó con `success`; la respuesta sin caché HTTP 200 confirmó los IDs 4286–4290, los conteos y el rango siguiente.
 Tras el lote 794, el workflow de Pages [42663568219](https://github.com/itic-academy/simulador-tic/actions/runs/42663568219) terminó con `success`; la comprobación sin caché devolvió HTTP 200 y confirmó los IDs 4291–4295 y los conteos.
 Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-academy/simulador-tic/actions/runs/42661019112), correspondiente al commit de verificación del README, terminó con `success`; la respuesta sin caché HTTP 200 mostró el nuevo estado y el lote 792.
+
+## Lote 795 — 9 de noviembre de 2026
+
+IDs 4296–4300 revisados individualmente; originales y decisiones preservados en [cambios-lote-795.json](cambios-lote-795.json).
+
+- **4296 — relación ERP/CRM:** se acota el enunciado a sus funciones habituales. Son sistemas distintos y complementarios que pueden integrarse; “dependientes” no es una relación necesaria y “lo mismo” es incorrecto. **Corregida** por precisión del enunciado; clave C.
+- **4297 — ERP frente a CRM:** la opción C describe gestionar información e interacciones con clientes para apoyar ventas, marketing y servicio; eso corresponde a CRM. Las opciones restantes describen integración de procesos empresariales ERP. Se conserva C y se reescribe para identificar claramente el concepto. **Corregida.**
+- **4298 — producto que no es ERP:** se reemplaza la etiqueta amplia “Microsoft Dynamics” por Dynamics 365 Finance y Supply Chain Management y se actualiza la marca histórica HP LoadRunner a OpenText Professional Performance Engineering (LoadRunner Professional). LoadRunner es ingeniería/pruebas de rendimiento, no ERP; clave B. **Corregida.**
+- **4299 — funciones de CRM/ERP:** se corrige la errata “Enterprise Relationship Planning” por “Enterprise Resource Planning” y se sustituye la afirmación confusa de que CRM es back-office por una afirmación inequívocamente falsa: atribuirle contabilidad, finanzas y nóminas como función principal. CRM gestiona relaciones e interacciones de clientes; ERP integra procesos como finanzas, RR. HH. y operaciones. **Corregida; clave B.**
+- **4300 — CRM analítico:** se precisa la pregunta para no sugerir que el almacén de datos sea exclusivo de CRM. Un data warehouse integra datos de diversas fuentes, incluso CRM, para consulta y análisis; no es una herramienta exclusiva ni un canal operativo de contacto. **Corregida por precisión; clave C.**
+
+Fuentes: SAP, [definición y módulos ERP](https://www.sap.com/products/erp/what-is-erp.html); Microsoft Learn, [gestión de relaciones con clientes](https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/prospect-to-quote-manage-customer-relationships), [glosario CRM](https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/glossary) y [distinción de aplicaciones CRM/ERP Dynamics 365](https://learn.microsoft.com/en-us/azure/sentinel/business-applications/solution-overview); OpenText, [Professional Performance Engineering (LoadRunner Professional)](https://www.opentext.com/products/professional-performance-engineering?r=qal-pts); IBM, [data warehouse](https://www.ibm.com/think/topics/data-warehouse); Oracle, [Data Warehousing Guide](https://docs.oracle.com/en/database/oracle/oracle-database/18/dwhsg/introduction-data-warehouse-concepts.html). Cotejo curricular: [ITIC Academy, Tema 072 de 2026](https://drive.google.com/file/d/1lkbdZvGxPTwyjhiOf6VsglMWYe4RI6sL/view?usp=drivesdk), incluido test 4.1 sobre complementariedad ERP/CRM. Se clasifican en A1-72; 4296 y 4299 también en A2-II-12; 4300, además, en A2-II-4 (almacenes de datos/BI). Cotejo de programa: A1 [BOE-A-2025-25938, tema 72](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), A2 [BOE-A-2025-26262, temas II-4 y II-12](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas, 4.295 examinadas individualmente, 7.828 aún sin revisión individual y cero errores estructurales. Inventariar estructura no equivale a verificar el contenido.
 
 ## Lote 794 — 9 de noviembre de 2026
 
