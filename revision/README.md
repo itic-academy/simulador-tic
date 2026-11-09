@@ -4,7 +4,7 @@ Estado parcial, no revisión completa del banco. Publicación desde la rama `mai
 
 ## Estado de publicación
 
-El lote 785 (`a6e0779`) está en `main` y publicado en GitHub Pages. La ejecución `pages build and deployment` del SHA `a6e07791eec9f3bb14212c27395e61f6e5e66442` terminó con `success` (run [42639108157](https://github.com/itic-academy/simulador-tic/actions/runs/42639108157)); se solicitó el README público y se confirmó el lote 785 (4246–4250). También tuvo éxito la publicación del lote 784, run [42636449333](https://github.com/itic-academy/simulador-tic/actions/runs/42636449333). Los fallos transitorios de despliegue de los lotes 781–782 no se reproducen en estas ejecuciones exitosas.
+El lote 786 (`c1234bd`) está en `main` y publicado en GitHub Pages. La ejecución `pages build and deployment` del SHA `c1234bd4442f8b6ccb05ff0c1528ae44c1dedd22` terminó con `success` (run [42642992873](https://github.com/itic-academy/simulador-tic/actions/runs/42642992873)); el README público devolvió HTTP 200 y refleja lote 786, los conteos acumulados y el siguiente rango sin revisar. También tuvo éxito la publicación del lote 785, run [42639931033](https://github.com/itic-academy/simulador-tic/actions/runs/42639931033), y del lote 784, run [42636449333](https://github.com/itic-academy/simulador-tic/actions/runs/42636449333). Los fallos transitorios de despliegue de los lotes 781–782 no se reproducen en estas ejecuciones exitosas.
 
 
 ## Lote 786 — 9 de noviembre de 2026
