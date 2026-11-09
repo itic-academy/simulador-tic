@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado y visible en Pages: 795 (IDs 4296–4300). Acumulado: 4295 preguntas examinadas individualmente, 4213 verificadas (799 vigentes, 3073 corregidas y 341 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7828 sin revisar individualmente. Hay 3557 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 796 (IDs 4301–4305); despliegue en verificación. Acumulado: 4300 preguntas examinadas individualmente, 4218 verificadas (800 vigentes, 3077 corregidas y 341 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7823 sin revisar individualmente. Hay 3562 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -14,6 +14,7 @@ Tras el lote 792, el workflow de Pages [42660545532](https://github.com/itic-aca
 Tras el lote 793, el workflow de Pages [42662191523](https://github.com/itic-academy/simulador-tic/actions/runs/42662191523) terminó con `success`; la respuesta sin caché HTTP 200 confirmó los IDs 4286–4290, los conteos y el rango siguiente.
 Tras el lote 794, el workflow de Pages [42663568219](https://github.com/itic-academy/simulador-tic/actions/runs/42663568219) terminó con `success`; la comprobación sin caché devolvió HTTP 200 y confirmó los IDs 4291–4295 y los conteos.
 Tras el lote 795, el workflow de Pages [42665731022](https://github.com/itic-academy/simulador-tic/actions/runs/42665731022) terminó con `success`; una consulta sin caché devolvió HTTP 200 y confirmó “Lote 795”, los IDs 4296–4300 y el acumulado 4.295.
+Tras la actualización del registro de publicación, el run de Pages [42665946261](https://github.com/itic-academy/simulador-tic/actions/runs/42665946261) completó los jobs de build y deploy con `success`; HTTP 200 sin caché confirmó el encabezado del lote 795 y sus conteos.
 Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-academy/simulador-tic/actions/runs/42661019112), correspondiente al commit de verificación del README, terminó con `success`; la respuesta sin caché HTTP 200 mostró el nuevo estado y el lote 792.
 
 ## Lote 795 — 9 de noviembre de 2026
@@ -30,7 +31,21 @@ Fuentes: SAP, [definición y módulos ERP](https://www.sap.com/products/erp/what
 
 `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas, 4.295 examinadas individualmente, 7.828 aún sin revisión individual y cero errores estructurales. Inventariar estructura no equivale a verificar el contenido.
 
-## Lote 794 — 9 de noviembre de 2026
+## Lote 796 — 9 de noviembre de 2026
+
+IDs 4301–4305 revisados individualmente; originales y decisiones preservados en [cambios-lote-796.json](cambios-lote-796.json).
+
+- **4301 — módulos ERP y CRM:** se evita afirmar que la gestión de clientes no pueda aparecer dentro de una suite ERP. Se pregunta qué área se asocia principalmente a CRM aunque se integre con ERP; relaciones e interacciones de clientes es la opción D. Nómina, RR. HH. y contabilidad son áreas ERP habituales. **Corregida.**
+- **4302 — identificar software no ERP:** el enunciado original señalaba Twister como si no fuera ERP, pero su proveedor actual lo comercializa expresamente como Twister ERP. Se sustituye ese distractor por OpenText LoadRunner Professional, herramienta de pruebas de carga/rendimiento. Las otras opciones se precisan como SAP S/4HANA, ADempiere ERP y Openbravo ERP histórico; Openbravo dejó de ofrecer módulos core ERP nuevos y declaró su EOL en 2024. La clave queda D. **Corregida.**
+- **4303 — CRM e integración:** no se presentan como requisitos universales un canal web ni la integración literal de todas las comunicaciones posibles. Para una visión contextual útil, la opción correcta es integrar los datos del cliente pertinentes con los datos de negocio. Se conserva C. **Corregida.**
+- **4304 — expansión de ERP:** Enterprise Resource Planning; se conserva C. **Vigente.**
+- **4305 — ERP propietario:** se especifican ediciones/licencias: Odoo Community (LGPLv3), ADempiere (GNU/GPL v2) y ERPNext (GPL v3) son opciones comunitarias de código abierto; Oracle PeopleSoft FSCM es el producto ERP con licencia comercial. La etiqueta genérica “Odoo” no bastaba, pues tiene ediciones Community y Enterprise. Se conserva B. **Corregida.**
+
+Fuentes: SAP, [módulos y relación ERP/CRM](https://www.sap.com/products/erp/what-is-erp.html) y [SAP S/4HANA ERP](https://www.sap.com/products/erp/s4hana-erp.html); Microsoft Learn, [glosario CRM](https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/glossary) e [integración CRM/ERP](https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/prospect-to-quote-manage-customer-relationships); YET, [Twister ERP](https://yet.es/sistema-erp/); OpenText, [LoadRunner Professional](https://www.opentext.com/products/professional-performance-engineering?r=qal-pts); Orisha/Openbravo, [fin del ciclo de vida de módulos ERP](https://www.orisha.com/es/blog/eos-eol-core-erp-clientes-minoristas); ADempiere, [historia/licencia GPL](https://www.adempiere.io/about/); Odoo, [licencias Community/Enterprise](https://www.odoo.com/documentation/17.0/legal/licenses.html); Oracle, [PeopleSoft Enterprise license codes](https://www.oracle.com/support/license-codes/peoplesoft.html) y [licencias FSCM](https://docs.oracle.com/en/applications/peoplesoft/financials-and-supply-chain-management/licensing-information-user-manual-for-peoplesoft-financials-and-supply-chain-management-9-2/prerequisites-entitled-products-restricted-use-licenses.html); Frappe, [ERPNext](https://github.com/frappe/erpnext). Cotejo curricular: [ITIC Academy, Tema 072 de 2026](https://drive.google.com/file/d/1lkbdZvGxPTwyjhiOf6VsglMWYe4RI6sL/view?usp=drivesdk), ERP/CRM, módulos y productos. Clasificación A1-72; 4301 y 4303 además en A2-II-12. Cotejo de programas: A1 [BOE-A-2025-25938, tema 72](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938); A2 [BOE-A-2025-26262, tema II-12](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas, 4.300 examinadas individualmente, 7.823 aún sin revisión individual y cero errores estructurales. Inventariar estructura no equivale a verificar el contenido.
+
+## Lote 795 — 9 de noviembre de 2026
 
 IDs 4291–4295 revisados individualmente; los originales y decisiones quedan preservados en [cambios-lote-794.json](cambios-lote-794.json).
 
