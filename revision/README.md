@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado y visible en Pages: 793 (IDs 4286–4290). Acumulado: 4285 preguntas examinadas individualmente, 4203 verificadas (799 vigentes, 3064 corregidas y 340 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7838 sin revisar individualmente. Hay 3547 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 794 (IDs 4291–4295); despliegue pendiente. Acumulado: 4290 preguntas examinadas individualmente, 4209 verificadas (800 vigentes, 3068 corregidas y 341 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7833 sin revisar individualmente. Hay 3552 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -13,6 +13,20 @@ Tras el lote 791, el run [42657722686](https://github.com/itic-academy/simulador
 Tras el lote 792, el workflow de Pages [42660545532](https://github.com/itic-academy/simulador-tic/actions/runs/42660545532) terminó con `success`; una petición sin caché a la página de revisión devolvió HTTP 200 y confirmó el lote y acumulado 792.
 Tras el lote 793, el workflow de Pages [42662191523](https://github.com/itic-academy/simulador-tic/actions/runs/42662191523) terminó con `success`; la respuesta sin caché HTTP 200 confirmó los IDs 4286–4290, los conteos y el rango siguiente.
 Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-academy/simulador-tic/actions/runs/42661019112), correspondiente al commit de verificación del README, terminó con `success`; la respuesta sin caché HTTP 200 mostró el nuevo estado y el lote 792.
+
+## Lote 794 — 9 de noviembre de 2026
+
+IDs 4291–4295 revisados individualmente; los originales y decisiones quedan preservados en [cambios-lote-794.json](cambios-lote-794.json).
+
+- **4291 — software CRM y DCOM:** Siebel, Sage CRM y Zoho CRM son productos/plataformas CRM; DCOM es la tecnología/protocolo de componentes distribuidos de Microsoft, no CRM. Se reemplaza el distractor híbrido por la expansión técnica de DCOM. **Corregida.**
+- **4292 — funciones CRM frente a RR. HH.:** “componente típico” era demasiado categórico y varias opciones se solapaban. Se reformula como una distinción funcional: RR. HH. pertenece normalmente a ERP/HCM, no a gestión CRM de contactos/atención. **Corregida.**
+- **4293 — reingeniería de procesos:** se redefine como replanteamiento/rediseño fundamental de procesos para mejorar resultados; no es personalizar un módulo ERP. En implantación se pueden alinear procesos al estándar ERP. **Corregida.**
+- **4294 — SAP R/3 y ABAP/4:** se confirma la clave y se fecha el contexto como histórico. Las aplicaciones del R/3 clásico se escribieron en ABAP/4; ABAP sigue siendo lenguaje SAP, pero R/3 no se presenta como línea de producto vigente. **Histórica.**
+- **4295 — social CRM:** se formula como extensión participativa del CRM que incorpora interacción social y contenido de usuarios con influencia sobre pares y organización. No se afirma que el CRM tradicional no pueda ser colaborativo. **Corregida.**
+
+Fuentes: Microsoft Open Specifications, [DCOM](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-dcom/86b9cf84-df2e-4f0b-ac22-1b957627e1ca); Oracle, [Siebel CRM](https://docs.oracle.com/cd/G15000_01/SiebelInfoPortal/faq.html) y [Siebel Bookshelf](https://docs.oracle.com/en/applications/siebel/); Sage, [Sage CRM Developer Portal](https://developer.sage.com/crm); Zoho, [documentación CRM](https://help.zoho.com/portal/en/kb/crm/getting-started/articles/welcome-to-zoho-crm); Michael Hammer, [Reengineering Work: Don’t Automate, Obliterate](https://hbr.org/1990/07/reengineering-work-dont-automate-obliterate); SAP, [buenas prácticas de implantación ERP](https://www.sap.com/resources/erp-implementation-best-practices), [documentación histórica R/3–ABAP/4](https://help.sap.com/docs/SUPPORT_CONTENT/abapfaq/3353525298.html) y [ABAP actual](https://help.sap.com/docs/r/7bfe8cdcfbb040dcb6702dada8c3e2f0/LATEST/en-US/2ff82a005ddd4f369b74bfda71f297c0.html); Malthouse et al., [Social CRM en la era de medios sociales](https://www.sciencedirect.com/science/article/pii/S1094996813000431). Cotejo Academy: [Tema 072 de 2026](https://drive.google.com/file/d/1lkbdZvGxPTwyjhiOf6VsglMWYe4RI6sL/view?usp=drivesdk), que cubre ERP/CRM, centros de contacto, casos de producto y test de social CRM. Cotejo de convocatoria: A1 [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 72; A2 [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), tema II-12. Se clasifica BPR y SAP R/3 dentro del epígrafe A1-72, sin forzar un tema A2 distinto de CRM/atención.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas, 4.290 examinadas individualmente, 7.833 sin revisar y cero errores estructurales. El inventario estructural no equivale a verificar contenido.
 
 ## Lote 793 — 9 de noviembre de 2026
 
