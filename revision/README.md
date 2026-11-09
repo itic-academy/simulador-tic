@@ -1,12 +1,14 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 791 (IDs 4276–4280); el lote 790 continúa visible y verificado en Pages, y se comprobará la publicación del 791 tras el envío. Acumulado: 4275 preguntas examinadas individualmente, 4193 verificadas (797 vigentes, 3057 corregidas y 339 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7848 sin revisar individualmente. Hay 3539 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado y visible en Pages: 791 (IDs 4276–4280). Acumulado: 4275 preguntas examinadas individualmente, 4193 verificadas (797 vigentes, 3057 corregidas y 339 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7848 sin revisar individualmente. Hay 3539 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
 El lote 788 (`54af8ad`) está en `main` y visible en GitHub Pages. El `build` fue correcto, pero el `deploy` del run [42647199295](https://github.com/itic-academy/simulador-tic/actions/runs/42647199295) acabó con `Timeout reached, aborting!` tras 10 minutos. Pages tardó en propagarlo: en una comprobación inicial sin caché aún mostraba el lote 787; a las 15:58 UTC, HTTP 200 ya devolvía el lote 788, sus conteos y el rango siguiente. Los runs de seguimiento [42649703055](https://github.com/itic-academy/simulador-tic/actions/runs/42649703055), [42650273025](https://github.com/itic-academy/simulador-tic/actions/runs/42650273025) y [42651123773](https://github.com/itic-academy/simulador-tic/actions/runs/42651123773) terminaron con `success`. La última comprobación sin caché devolvió HTTP 200 y confirma el lote 788. La publicación del lote 787 se verificó en [42645693129](https://github.com/itic-academy/simulador-tic/actions/runs/42645693129) y la del 786 en [42643515598](https://github.com/itic-academy/simulador-tic/actions/runs/42643515598).
 
 Tras el lote 789, el run de GitHub Actions [42653837616](https://github.com/itic-academy/simulador-tic/actions/runs/42653837616) terminó con `success`; la consulta sin caché de Pages devolvió HTTP 200 y mostró el acumulado del lote 789. Tras el lote 790, el run [42656000580](https://github.com/itic-academy/simulador-tic/actions/runs/42656000580) también terminó con `success`; comprobación sin caché: HTTP 200, IDs y acumulado del lote 790 visibles.
+
+Tras el lote 791, el run [42657722686](https://github.com/itic-academy/simulador-tic/actions/runs/42657722686) terminó con `success`; la comprobación sin caché de Pages devolvió HTTP 200 y confirmó los IDs 4276–4280 y sus conteos.
 
 ## Lote 791 — 9 de noviembre de 2026
 
