@@ -1,11 +1,27 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 784 (IDs 4241–4245). Acumulado: 4240 preguntas examinadas individualmente, 4159 verificadas (794 vigentes, 3030 corregidas y 335 históricas) y 81 pendientes documentadas (36 de fuente y 45 de ambigüedad); quedan 7883 sin revisar individualmente. Hay 3507 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 785 (IDs 4246–4250). Acumulado: 4245 preguntas examinadas individualmente, 4164 verificadas (794 vigentes, 3035 corregidas y 335 históricas) y 81 pendientes documentadas (36 de fuente y 45 de ambigüedad); quedan 7878 sin revisar individualmente. Hay 3512 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
 El lote 784 (`7bc9189`) está en `main` y publicado en GitHub Pages. La ejecución `pages build and deployment` del SHA `7bc918940ab80af7599d7c55bfc4336a99ebe573` terminó con `success` (run [42636449333](https://github.com/itic-academy/simulador-tic/actions/runs/42636449333)); también tuvo éxito la publicación del lote 783, run [42635364225](https://github.com/itic-academy/simulador-tic/actions/runs/42635364225). Se descargó el README público y se confirmó el lote 784 (4241–4245). Los fallos transitorios de despliegue de los lotes 781–782 no se reproducen en estas ejecuciones exitosas.
 
+
+## Lote 785 — 9 de noviembre de 2026
+
+IDs 4246–4250 revisados individualmente; originales y decisiones en [cambios-lote-785.json](cambios-lote-785.json).
+
+- **4246 — acoplamiento de marca (stamp):** se hace explícito que se pasa una estructura compuesta como parámetro. Se distingue del acoplamiento de control, en el que el dato transferido determina la lógica del módulo receptor. **Corregida.**
+- **4247 — puntos de vista de GUI:** se delimita la respuesta al esquema de tres modelos presentado por Academy (usuario, diseñador y programador); «cliente» no es uno de sus términos. No se generaliza como taxonomía universal. **Corregida.**
+- **4248 — modelo en espiral:** se reemplaza la lista ambigua por las cuatro actividades de cada vuelta de Boehm y se separa la revisión de participantes de los sectores/actividades. **Corregida.**
+- **4249 — arquitectura de información de MÉTRICA PSI:** se precisa que sus componentes son el modelo de información, modelo de sistemas y arquitectura tecnológica. El plan de acción/proyectos sí es un producto PSI, pero no componente de esa arquitectura; se corrige el enunciado para que pregunte por esta distinción. **Corregida.**
+- **4250 — pruebas del sistema:** se conserva «pruebas de verificación» como respuesta ausente de la lista de tipos; se aclara que verificación describe el propósito general de las comprobaciones, mientras que facilidad de uso y volumen sí aparecen como tipos. **Corregida.**
+
+Fuentes: [IRS, Design Techniques and Deliverables](https://www.irs.gov/irm/part2/irm_02-005-012), tabla de acoplamiento por marca; [Boehm, A Spiral Model of Software Development and Enhancement (1988)](https://www.cs.hmc.edu/~markk/SWE_copies/boehmspiral.pdf); [MÉTRICA v3, PSI](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A8d2cfee5-5617-4dea-8cf8-7b7a0131de84/METRICA_V3_Panificacion_de_Sistemas_de_Informacion.pdf), actividades PSI 4/6/7/8; [MÉTRICA v3, Construcción del Sistema, CSI 5](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf); [MÉTRICA v3, Guía de Técnicas y Prácticas, Pruebas del Sistema](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ada7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf).
+
+Cotejo curricular con ITIC Academy: [Tema 90, interfaces de aplicaciones](https://drive.google.com/file/d/1TrMnaWvyVMcsQ2DyFQi1G3ic9RBadYbI/view?usp=drivesdk), apartado de modelos GUI; [bloque 38, Análisis/Diseño/Construcción de SI](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), MÉTRICA v3 y pruebas, usado para cobertura curricular. Correspondencia con [programa A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938): 4246 tema 93, 4247 tema 94, 4248 temas 86/88, 4249 temas 87/95 y 4250 tema 95; [programa A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4246/4248/4249 tema III-2 y 4250 tema III-6. Estos programas se usan para clasificar, no como fuente de definiciones.
+
+Verificaciones: se contrastaron los tipos de acoplamiento y la separación entre datos compuestos y datos de control; las cuatro actividades de Boehm; los productos/actividades de PSI y los niveles/pruebas de MÉTRICA; se leyó el apartado de GUI del Tema 90 y se cotejaron las referencias A1/A2. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 784 — 9 de noviembre de 2026
 
