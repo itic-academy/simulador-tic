@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 776 (IDs 4201–4205). Acumulado: 4200 preguntas examinadas individualmente, 4120 verificadas (785 vigentes, 3005 corregidas y 330 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7923 sin revisar individualmente. Hay 3474 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 777 (IDs 4206–4210). Acumulado: 4205 preguntas examinadas individualmente, 4125 verificadas (788 vigentes, 3007 corregidas y 330 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7918 sin revisar individualmente. Hay 3476 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 777 — 9 de noviembre de 2026
+
+IDs 4206–4210 revisados individualmente; se conservan originales y decisiones en [cambios-lote-777.json](cambios-lote-777.json).
+
+- **4206 — modelo orientado a tratamientos:** se confirma que identifica las funciones/procesos que transforman datos, no la evolución de entidades o del ciclo de vida. Se aclara la diferencia entre sistema de información y sistema informático. **Vigente.**
+- **4207 — estrategias RISP:** la guía oficial enumera selección, preparación, condiciones, espacio web, publicación y evaluación; las auditorías periódicas no son un paso de esa lista. **Vigente.**
+- **4208 — Gantt:** se precisa el enunciado para distinguir el gráfico temporal de las funciones adicionales de una aplicación de gestión, como agrupar tareas y asignar recursos. **Corregida.**
+- **4209 — PERT/ADM:** PERT trata duraciones como inciertas y suele usar tres estimaciones; el distractor de actividades en rectángulos describe PDM, no ADM. **Vigente.**
+- **4210 — MAUT/UMA:** se acota a preferencias bajo incertidumbre y actitud ante el riesgo mediante utilidad esperada; no todo análisis multicriterio ponderado mide por sí mismo el riesgo. **Corregida.**
+
+Fuentes institucionales: [Guía oficial de aplicación NTI-RISP, §4.1, pasos 20–21](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Af73fde29-734e-43bf-b6c6-bf51eaa2e42a/Guia_NTI_PDF_Reutilizacion_recursos_informacion_2ed.pdf); [NTI-RISP, Resolución de 19/02/2013](https://www.boe.es/eli/es/res/2013/02/19/(4)); [PMI, Practice Standard for Scheduling, ADM/PDM](https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/practice-standard-scheduling.pdf?rev=eed9ee4249bf49df8b40fc2c54bb8000&v=c7ca2721-8c26-4e07-ba47-069d0987bc0c); [PMI, PERT/CPM](https://www.pmi.org/learning/library/gert-graphical-evaluation-review-technique-5716); [Government Analysis Function, guía MCDA, Expected Utility y MAUT](https://analysisfunction.civilservice.gov.uk/policy-store/an-introductory-guide-to-mcda/); [Microsoft Project, asignar recursos a tareas desde Gantt](https://support.microsoft.com/es-es/project/assign-people-to-work-on-tasks).
+
+Cotejo académico: test del bloque B1 sobre tratamientos; [ITIC Academy, RISP 2026](https://drive.google.com/file/d/1IWbbWLAMbUPNy8PPecKUIWLpvUtawNQs/view?usp=drivesdk); [Planificación Estratégica TIC, bloque 12](https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view?usp=drivesdk); [Gantt/PERT, temas 36/94/98](https://drive.google.com/file/d/1DMz3yKo5YBTwNecdydOqWB9CxkyrQZ10/view?usp=drivesdk); [evaluación de alternativas, temas 40–42](https://drive.google.com/file/d/1eUycEwRk8zA8IIrGWS-tJqNXpajQQR8S/view?usp=drivesdk). Programas oficiales: [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 31 (4207), 36 (4208–4209), 35 (4210) y 86 (4206); [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), temas I-9, III-2 e II-15 respectivamente.
+
+Verificaciones: se cotejó la guía oficial RISP §4.1 y su lista de pasos, el estándar de planificación del PMI para ADM/PDM, material PMI sobre incertidumbre PERT frente a CPM, guía institucional británica de MCDA/Expected Utility y la asignación de recursos en Microsoft Project. Se contrastaron los materiales académicos 2026 enlazados y los anexos A1/A2 de la convocatoria de 2025. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 776 — 9 de noviembre de 2026
 
