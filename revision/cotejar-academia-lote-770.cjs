@@ -1,0 +1,19 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-770.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+const boeA1='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',boeA2='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262';
+const academy={
+ itil:{url:'https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk',name:'ITIC Academy, bloque 41 «ITIL y COBIT», versión 2026.1'},
+ networks:{url:'https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk',name:'ITIC Academy, bloque 42 «Redes», versión 2026'},
+ noNano:{url:'https://drive.google.com/drive/my-drive',name:'búsqueda realizada en Drive de materiales de nanotecnología/nanomedicina; no se localizó un bloque específico'}
+};
+const map={
+ 4171:{a1:['106'],a2:[],sources:[['itil','§§1–2, 2.2 y el desarrollo de la cadena de valor: el bloque actual estudia ITIL 4 e ITIL (Version 5), cubre actividades y prácticas y sirve para contextualizar la pregunta ITIL 4.']]},
+ 4172:{a1:['107'],a2:[],sources:[]},
+ 4173:{a1:['108'],a2:['IV-7'],sources:[['networks','temas A1-108 y A2-IV-7: medios de transmisión, canal, ancho de banda y parámetros significativos; correspondencia curricular con capacidad y SNR.']]},
+ 4174:{a1:['110','118'],a2:['IV-7','IV-8'],sources:[['networks','temas A1-110/118 y A2-IV-7/8: cableado, medios, Fast Ethernet, LAN y transmisión; la nota de categoría/medio se contrasta de forma independiente con IEEE 802.3u.']]},
+ 4175:{a1:['111'],a2:['II-8'],sources:[['networks','arquitectura de redes y modelos por capas; encaje con OSI A1-111/A2-II-8. La definición funcional se comprueba contra ITU-T X.200 e ISO/IEC 8822.']]}
+};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=map[c.id];assert.ok(q?.revision&&q.clasificacion&&m,'Falta revisión/cotejo '+c.id);for(const id of [...m.a1.map(n=>'A1-'+n),...m.a2.map(n=>'A2-'+n)])assert.ok(official.has(id),'Tema oficial inexistente: '+id);q.clasificacion.A1=m.a1.map(n=>'A1-'+n);q.clasificacion.A2=m.a2.map(n=>'A2-'+n);q.clasificacion.bloque_academia=m.sources.length?m.sources.map(([key,note])=>academy[key].name+'; '+note).join(' '):`${academy.noNano.name}; el único punto del temario oficial directamente aplicable es A1-107 (tecnologías emergentes), contrastado con NIST; no se inventa una correspondencia académica ni A2.`;q.clasificacion.bloque_academia+=` Correspondencia de programa oficial: A1 GSI 2025, anexo I (${m.a1.map(n=>'tema '+n).join(', ')||'sin correspondencia directa'}); A2 GSI 2025, anexo IX (${m.a2.map(n=>'tema '+n).join(', ')||'sin correspondencia directa'}).`;q.clasificacion.nota='La academia se usa para cotejar cobertura y terminología del temario, no como sustituto de la especificación técnica citada.';q.revision.observaciones+=' '+q.clasificacion.bloque_academia;const refs=[...m.sources.map(([key,referencia])=>({url:academy[key].url,referencia:academy[key].name+'; '+referencia})),{url:boeA1,referencia:'Convocatoria oficial A1 GSI 2025, anexo I: '+m.a1.map(n=>'tema '+n).join(', ')||'sin correspondencia directa'},{url:boeA2,referencia:'Convocatoria oficial A2 GSI 2025, anexo IX: '+m.a2.map(n=>'tema '+n).join(', ')||'sin correspondencia directa'}];for(const f of refs)if(!q.revision.fuentes.some(x=>x.url===f.url))q.revision.fuentes.push(f);c.actualizada=structuredClone(q)}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo Academy Drive y programas BOE aplicado a 4171–4175; sin asignación artificial a nanotecnología.');

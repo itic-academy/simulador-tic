@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 769 (IDs 4166–4170). Acumulado: 4165 preguntas examinadas individualmente, 4085 verificadas (776 vigentes, 2985 corregidas y 324 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7958 sin revisar individualmente. Hay 3450 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 770 (IDs 4171–4175). Acumulado: 4170 preguntas examinadas individualmente, 4090 verificadas (777 vigentes, 2988 corregidas y 325 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7953 sin revisar individualmente. Hay 3453 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 770 — 9 de noviembre de 2026
+
+IDs 4171–4175 revisados individualmente; originales y decisiones se conservan en [cambios-lote-770.json](cambios-lote-770.json).
+
+- **4171 — cadena de valor ITIL 4:** cada actividad convierte entradas en salidas recurriendo a distintas combinaciones de prácticas; se confirma esa opción. **Vigente.**
+- **4172 — nanotecnología:** se reemplaza la descripción especulativa de dispositivos que imitan células por la escala de control de materia de aproximadamente 1–100 nm. Se alinea con A1-107; la búsqueda de material de academia no encontró un bloque específico y no se fuerza una asignación A2. **Corregida.**
+- **4173 — Shannon–Hartley:** se precisa el límite para canal AWGN como C=B·log₂(1+S/N), con B en Hz, capacidad en bit/s y S/N lineal. **Corregida.**
+- **4174 — Fast Ethernet:** TX corresponde a Cat 5, FX a fibra y T4 admite Cat 3 como mínimo; se especifican pares/fibra multimodo y se identifica la familia como heredada. **Histórica.**
+- **4175 — capa de presentación OSI:** su función es proveer representación/sintaxis común y preservar el contenido; se separa de la interfaz de usuario y de los puntos de sincronización de sesión. **Corregida.**
+
+Fuentes técnicas: [AXELOS, ITIL Foundation: ITIL 4 Edition, §4.5 (copia de la publicación del titular)](https://www.abim.go.ug/sites/files/%28ITIL%29%20Axelos%20-%20ITIL%20Foundation%204%20edition-Axelos%20%282019%29%5B1%5D_0.pdf) y [PeopleCert, página oficial ITIL](https://www.peoplecert.org/ITIL-4); [NIST, definición de nanotechnology](https://www.nist.gov/speech-testimony/hearing-nanotechnology-laboratories-commercial-products); [ITU-T L.75, §6.1, teorema de Shannon](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-L.75-200805-I%21%21PDF-E&lang=s&type=items); [IEEE 802.3u-1995](https://standards.ieee.org/ieee/802.3u/1079/); [ITU-T X.200, §7.2](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.200-199407-I%21%21PDF-E&lang=s&type=items) e [ISO/IEC 8822:1994](https://www.iso.org/standard/24365.html).
+
+Cotejo en Drive con [bloque 41 ITIL y COBIT, versión 2026.1](https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk), actualizado a ITIL 4/ITIL (Version 5), y [bloque 42 Redes, versión 2026](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk). La búsqueda de Drive no encontró material específico de nanomedicina/nanotecnología; 4172 se clasifica por A1-107 y fuente NIST. Encaje con [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4171 A1-106; 4172 A1-107; 4173 A1-108/A2-IV-7; 4174 A1-110/118, A2-IV-7/8; 4175 A1-111/A2-II-8.
+
+Verificaciones: consultadas directamente las fuentes de AXELOS/PeopleCert, NIST, ITU-T, IEEE e ISO; leídos los bloques Academy 41 y 42 y revisada la ausencia de un bloque específico de nanomedicina en las búsquedas de Drive; cotejados los anexos BOE. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 769 — 9 de noviembre de 2026
 
