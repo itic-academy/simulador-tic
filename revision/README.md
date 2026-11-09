@@ -1,11 +1,25 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 787 (IDs 4256–4260). Acumulado: 4255 preguntas examinadas individualmente, 4174 verificadas (794 vigentes, 3041 corregidas y 339 históricas) y 81 pendientes documentadas (36 de fuente y 45 de ambigüedad); quedan 7868 sin revisar individualmente. Hay 3522 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 788 (IDs 4261–4265); su publicación se verifica más abajo. Acumulado: 4260 preguntas examinadas individualmente, 4179 verificadas (794 vigentes, 3046 corregidas y 339 históricas) y 81 pendientes documentadas (36 de fuente y 45 de ambigüedad); quedan 7863 sin revisar individualmente. Hay 3527 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
 El lote 787 (`1c54b48`) está en `main` y publicado en GitHub Pages. La ejecución `pages build and deployment` del SHA `1c54b48c2f668ab7cb31e2bd84ac976c5bc74073` terminó con `success` (run [42645082993](https://github.com/itic-academy/simulador-tic/actions/runs/42645082993)); el README público devolvió HTTP 200 y refleja lote 787, los conteos acumulados y el siguiente rango sin revisar. También tuvo éxito la publicación del lote 786, run [42643515598](https://github.com/itic-academy/simulador-tic/actions/runs/42643515598), y del lote 785, run [42642992873](https://github.com/itic-academy/simulador-tic/actions/runs/42642992873). Los fallos transitorios de despliegue de los lotes 781–782 no se reproducen en estas ejecuciones exitosas.
 
+
+## Lote 788 — 9 de noviembre de 2026
+
+IDs 4261–4265 revisados individualmente; los originales y las decisiones están en [cambios-lote-788.json](cambios-lote-788.json).
+
+- **4261 — DHCPDISCOVER:** se delimita a la fase inicial de descubrimiento; el cliente difunde DHCPDISCOVER y el servidor responde DHCPOFFER. **Corregida.**
+- **4262 — registros y transportes DNS:** se identifica NS como servidor de nombres autoritativo y MX como servidor de correo; se limita la afirmación de puerto 53 a DNS clásico sobre UDP/TCP y se distingue DoT/DoH. **Corregida.**
+- **4263 — TFTP y FTP:** según RFC 1350, TFTP usa UDP; según RFC 959, FTP usa TCP. Se citan expresamente las especificaciones de cada protocolo. **Corregida.**
+- **4264 — origen de «ping»:** se corrige la falsa premisa de que sea un acrónimo original. Mike Muuss dice que tomó el nombre del pulso de sonar; «Packet Internet Groper/Grouper» se difundió después como backronym. **Corregida.**
+- **4265 — cableado estructurado:** se precisa la designación ISO/IEC 11801; se distingue de EN 50173, la familia europea alineada, y se actualiza la referencia a la enmienda 1:2025 de ISO/IEC 11801-1. **Corregida.**
+
+Fuentes primarias: IETF [RFC 2131 DHCP](https://www.rfc-editor.org/info/rfc2131/), [RFC 1034 DNS: conceptos y autoridad](https://www.rfc-editor.org/rfc/rfc1034.html), [RFC 1035 DNS: NS, MX y transporte por puerto 53](https://www.rfc-editor.org/rfc/rfc1035.html), [RFC 7766 DNS sobre TCP](https://www.rfc-editor.org/rfc/rfc7766.html), [RFC 1350 TFTP](https://www.rfc-editor.org/info/rfc1350/), [RFC 959 FTP](https://www.rfc-editor.org/rfc/rfc959.html) y [RFC 792 ICMP](https://www.rfc-editor.org/rfc/rfc792.html); Mike Muuss, autor de ping, [The Story of the PING Program](https://ftp.arl.army.mil/mike/ping.html); ISO, [ISO/IEC 11801-1:2017](https://www.iso.org/standard/66182.html) y [enmienda 1:2025](https://www.iso.org/standard/93480.html). Cotejo curricular: ITIC Academy, [bloque Protocolos 2026](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk), con DHCPDISCOVER, DNS, FTP/TFTP, ICMP y ping; [bloque Redes 2026](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), con cableado estructurado e ISO/IEC 11801 frente a EN 50173. Clasificación cotejada con [programa A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938): 4261–4264 A1-108/A1-115 y 4265 A1-110/A1-118; y [programa A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4261–4262 A2-IV-8; 4264 A2-IV-8; 4265 A2-IV-8. No se fuerza A2-III-12 para TFTP/FTP al no ser específicamente servicios web.
+
+Se cotejaron las etapas DHCP, tipos NS/MX y transporte DNS, especificaciones de transporte TFTP/FTP, autoría del nombre ping y denominación/edición de la serie ISO/IEC; también las opciones para dejar una sola clave, los materiales de Academy y los epígrafes del programa A1/A2. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check`; el registro preserva los originales completos.
 
 ## Lote 787 — 9 de noviembre de 2026
 
