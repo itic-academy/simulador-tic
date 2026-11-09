@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 770 (IDs 4171–4175). Acumulado: 4170 preguntas examinadas individualmente, 4090 verificadas (777 vigentes, 2988 corregidas y 325 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7953 sin revisar individualmente. Hay 3453 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 771 (IDs 4176–4180). Acumulado: 4175 preguntas examinadas individualmente, 4095 verificadas (778 vigentes, 2990 corregidas y 327 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7948 sin revisar individualmente. Hay 3456 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 771 — 9 de noviembre de 2026
+
+IDs 4176–4180 revisados individualmente; se conservan originales y decisiones en [cambios-lote-771.json](cambios-lote-771.json).
+
+- **4176 — capa de adaptación ATM:** la AAL proporciona la adaptación entre ATM y la capa superior y contempla subcapas de convergencia (CS) y segmentación/reensamblado (SAR). Se conserva la clave AAL y se marca como tecnología heredada. **Histórica.**
+- **4177 — modulación LMDS:** se reescribe la comparación en condiciones iguales y se sustituye 4-QAM, equivalente a QPSK, por BPSK para eliminar distractores duplicados. Entre las opciones diferenciadas, 64-QAM porta más bits por símbolo y ofrece mayor eficiencia teórica; requiere mayor calidad de señal para mantener una tasa de error comparable. **Corregida.**
+- **4178 — IEEE 802.11b:** se corrige que HR/DS y HR/DSSS eran dos denominaciones equivalentes; se fija HR/DSSS como la PHY de alta velocidad de 802.11b. **Histórica.**
+- **4179 — Wi-Fi 6:** se mantiene 802.11ax, eliminando la descripción inexacta de Wi-Fi Alliance como organismo que regula IEEE. Se distingue la especificación de IEEE de la nomenclatura/certificación de Wi-Fi Alliance. **Corregida.**
+- **4180 — cabecera IPv6:** se confirma el tamaño de 40 octetos de la cabecera fija y se aclara que las cabeceras de extensión se contabilizan separadamente. **Vigente.**
+
+Fuentes primarias/técnicas: [ITU-T I.363 (03/1993), §2.3](https://www.itu.int/dms_pubrec/itu-t/rec/i/T-REC-I.363-199303-S%21%21PDF-S&lang=s&type=items), [estado de I.363 en ITU-T](https://www.itu.int/rec/T-REC-I.363-199303-W/en) y [I.363.5 en vigor](https://www.itu.int/rec/T-REC-I.363.5/en); [ITU-R Handbook on Digital Radio-Relay Systems, §3.1.4](https://www.itu.int/dms_pub/itu-r/opb/hdb/R-HDB-24-1996-PDF-E.pdf) y [ITU-R Report BT.2140-4, QAM](https://www.itu.int/dms_pub/itu-r/opb/rep/R-REP-BT.2140-4-2011-PDF-E.pdf); [ITU-T J.150, enmienda sobre LMDS](https://www.itu.int/rec/T-REC-J.150-199909-I%21Amd1/en); [IEEE 802.11b draft archivado, HR/DSSS](https://grouper.ieee.org/groups/802/11/Documents/DocumentArchives/1999_docs/90845b_p80211b-draft3.1.pdf); [IEEE Standards Association, evolución Wi-Fi](https://standards.ieee.org/beyond-standards/the-evolution-of-wi-fi-technology-and-standards/) y [registro de IEEE 802.11](https://standards.ieee.org/ieee/802.11/10548/); [IETF RFC 8200, §3](https://datatracker.ietf.org/doc/rfc8200/).
+
+Cotejo en Drive con [bloque 42 Redes, versión 2026.1](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) y [bloque 46 Redes inalámbricas y comunicaciones móviles, versión 2026.1](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk). Se comprobó el índice/temario de ambos bloques, sus secciones ATM, radio/QAM, 802.11 y IPv6. Correspondencia con [convocatoria A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4176 A1-113/A2-IV-10; 4177 A1-114/A2-IV-7 e IV-11; 4178–4179 A1-114/A2-IV-11; 4180 A1-115/A2-II-8 e IV-13.
+
+Verificaciones: leídos en Drive los bloques completos 42 y 46 (portadas, temarios oficiales e índice); contrastados los epígrafes A1/A2 con los anexos de convocatoria; revisados ITU-T/ITU-R, el archivo IEEE y RFC 8200. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 770 — 9 de noviembre de 2026
 
