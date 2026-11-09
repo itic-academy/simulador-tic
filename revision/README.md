@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 796 (IDs 4301–4305); despliegue en verificación. Acumulado: 4300 preguntas examinadas individualmente, 4218 verificadas (800 vigentes, 3077 corregidas y 341 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7823 sin revisar individualmente. Hay 3562 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado y visible en Pages: 796 (IDs 4301–4305). Acumulado: 4300 preguntas examinadas individualmente, 4218 verificadas (800 vigentes, 3077 corregidas y 341 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7823 sin revisar individualmente. Hay 3562 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -15,6 +15,7 @@ Tras el lote 793, el workflow de Pages [42662191523](https://github.com/itic-aca
 Tras el lote 794, el workflow de Pages [42663568219](https://github.com/itic-academy/simulador-tic/actions/runs/42663568219) terminó con `success`; la comprobación sin caché devolvió HTTP 200 y confirmó los IDs 4291–4295 y los conteos.
 Tras el lote 795, el workflow de Pages [42665731022](https://github.com/itic-academy/simulador-tic/actions/runs/42665731022) terminó con `success`; una consulta sin caché devolvió HTTP 200 y confirmó “Lote 795”, los IDs 4296–4300 y el acumulado 4.295.
 Tras la actualización del registro de publicación, el run de Pages [42665946261](https://github.com/itic-academy/simulador-tic/actions/runs/42665946261) completó los jobs de build y deploy con `success`; HTTP 200 sin caché confirmó el encabezado del lote 795 y sus conteos.
+Tras el lote 796, una petición sin caché a GitHub Pages devolvió HTTP 200 y mostró los IDs 4301–4305, su sección de decisiones y el acumulado de 4.300 revisadas.
 Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-academy/simulador-tic/actions/runs/42661019112), correspondiente al commit de verificación del README, terminó con `success`; la respuesta sin caché HTTP 200 mostró el nuevo estado y el lote 792.
 
 ## Lote 795 — 9 de noviembre de 2026
