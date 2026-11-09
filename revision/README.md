@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 777 (IDs 4206–4210). Acumulado: 4205 preguntas examinadas individualmente, 4125 verificadas (788 vigentes, 3007 corregidas y 330 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7918 sin revisar individualmente. Hay 3476 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 778 (IDs 4211–4215). Acumulado: 4210 preguntas examinadas individualmente, 4130 verificadas (792 vigentes, 3008 corregidas y 330 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7913 sin revisar individualmente. Hay 3480 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 778 — 9 de noviembre de 2026
+
+IDs 4211–4215 revisados individualmente; se conservan originales y decisiones en [cambios-lote-778.json](cambios-lote-778.json).
+
+- **4211 — métricas de rendimiento:** tiempo de respuesta, throughput y utilización son medidas; el tipo de procesador es un factor de hardware que influye, no una métrica directa. **Vigente.**
+- **4212 — derechos de explotación del software:** el artículo 99 TRLPI recoge reproducción, transformación y distribución pública. Se reescribe el enunciado en positivo. **Corregida.**
+- **4213 — interoperabilidad semántica:** se confirma la definición del glosario ENI y se distingue de las dimensiones organizativa, técnica y temporal. **Vigente.**
+- **4214 — principios del ENI:** cualidad integral, carácter multidimensional y enfoque de soluciones multilaterales son los tres principios específicos del artículo 4. **Vigente.**
+- **4215 — plan de continuidad ENS:** según RD 311/2022, op.cont.2 se aplica a disponibilidad y solo a nivel ALTO; se precisa el enunciado para no arrastrar tablas de versiones anteriores. **Vigente.**
+
+Fuentes primarias/institucionales: [Azure Well-Architected, objetivos y métricas de rendimiento](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/performance-targets); [TRLPI, artículo 99](https://boe.es/buscar/act.php?id=BOE-A-1996-8930&p=20200506&tn=0); [RD 4/2010 consolidado, artículos 4–7 y glosario](https://www.boe.es/buscar/act.php?id=BOE-A-2010-1331&p=20241106&tn=0); [RD 311/2022 consolidado, anexo II, op.cont.2](https://boe.es/buscar/act.php?id=BOE-A-2022-7191).
+
+Cotejo académico: [bloque de requisitos no funcionales, rendimiento A1-91/A2-IV-4](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk); [protección jurídica del software 2026](https://drive.google.com/file/d/1Og6yI-YaZ48UA3pBT-HQhTh7TfvdPW_C/view?usp=drivesdk); [bloque de interoperabilidad 2026.2](https://drive.google.com/file/d/1yCTWUEye96mUcx_SwiEJshldD-sV2hXS/view?usp=drivesdk); [bloque ENS 2026.2](https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk). Programas oficiales: [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 91, 43, 45 y 48; [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), temas IV-4, II-14 e I-9.
+
+Verificaciones: se contrastaron métricas de rendimiento de servicio, derechos específicos del software del artículo 99, definiciones y principios ENI, y tabla de aplicación de op.cont.2 del ENS vigente. Cotejados los bloques académicos 2026 y los anexos oficiales A1/A2. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 777 — 9 de noviembre de 2026
 
