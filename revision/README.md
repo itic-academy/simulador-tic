@@ -4,7 +4,8 @@ Estado parcial, no revisión completa del banco. Publicación desde la rama `mai
 
 ## Estado de publicación
 
-El commit `a6c2a0d` del lote 782 está en `main`, pero el despliegue no se ha podido verificar como publicado: la ejecución `pages build and deployment` de ese SHA completó la compilación y falló en el job `deploy`; también falló el despliegue del lote 781. La última lectura pública de `revision/README.md` aún muestra el lote 780 (`Last-Modified: 2026-11-09 13:48:38 UTC`). La API pública de configuración de Pages respondió 404, por lo que no queda determinado aquí si la causa es la configuración del sitio o sus permisos. Se necesita que una persona administradora revise la configuración/fuente de GitHub Pages y los permisos del despliegue; hasta entonces, los commits sí quedan guardados en `main`, pero la web pública puede seguir desactualizada.
+El lote 784 (`7bc9189`) está en `main` y publicado en GitHub Pages. La ejecución `pages build and deployment` del SHA `7bc918940ab80af7599d7c55bfc4336a99ebe573` terminó con `success` (run [42636449333](https://github.com/itic-academy/simulador-tic/actions/runs/42636449333)); también tuvo éxito la publicación del lote 783, run [42635364225](https://github.com/itic-academy/simulador-tic/actions/runs/42635364225). Se descargó el README público y se confirmó el lote 784 (4241–4245). Los fallos transitorios de despliegue de los lotes 781–782 no se reproducen en estas ejecuciones exitosas.
+
 
 ## Lote 784 — 9 de noviembre de 2026
 

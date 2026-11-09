@@ -3,6 +3,7 @@ const dir=__dirname,totals={vigente:0,corregida:0,historica:0,pendiente_fuente:0
 for(const file of fs.readdirSync(dir).filter(x=>/^cambios-lote-\d+\.json$/.test(x)))for(const c of JSON.parse(fs.readFileSync(path.join(dir,file),'utf8')).cambios){totals[c.actualizada.revision.estado]++;if(['texto','opciones','respuesta_correcta'].some(k=>JSON.stringify(c.original[k])!==JSON.stringify(c.actualizada[k])))changed++}
 const examined=Object.values(totals).reduce((a,b)=>a+b,0),verified=totals.vigente+totals.corregida+totals.historica,pending=totals.pendiente_fuente+totals.pendiente_ambiguedad,remaining=12123-examined;
 const summary=`Último lote secuencial aplicado: 784 (IDs 4241–4245). Acumulado: ${examined} preguntas examinadas individualmente, ${verified} verificadas (${totals.vigente} vigentes, ${totals.corregida} corregidas y ${totals.historica} históricas) y ${pending} pendientes documentadas (${totals.pendiente_fuente} de fuente y ${totals.pendiente_ambiguedad} de ambigüedad); quedan ${remaining} sin revisar individualmente. Hay ${changed} preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.`;
+const publication='## Estado de publicación\n\nEl lote 784 (`7bc9189`) está en `main` y publicado en GitHub Pages. La ejecución `pages build and deployment` del SHA `7bc918940ab80af7599d7c55bfc4336a99ebe573` terminó con `success` (run [42636449333](https://github.com/itic-academy/simulador-tic/actions/runs/42636449333)); también tuvo éxito la publicación del lote 783, run [42635364225](https://github.com/itic-academy/simulador-tic/actions/runs/42635364225). Se descargó el README público y se confirmó el lote 784 (4241–4245). Los fallos transitorios de despliegue de los lotes 781–782 no se reproducen en estas ejecuciones exitosas.';
 const section=[
 '## Lote 784 — 9 de noviembre de 2026','',
 'IDs 4241–4245 revisados individualmente; originales y decisiones en [cambios-lote-784.json](cambios-lote-784.json).','',
@@ -20,5 +21,6 @@ const section=[
 const file=path.join(dir,'README.md');let content=fs.readFileSync(file,'utf8');
 content=content.replace(/^# Revisión del banco TIC — estado al .*$/m,'# Revisión del banco TIC — estado al 9 de noviembre de 2026');
 content=content.replace(/Último lote secuencial aplicado:[^\r\n]*/,summary);
+content=content.replace(/## Estado de publicación\r?\n\r?\n[\s\S]*?(?=\r?\n## Lote 784 —)/,publication+'\n\n');
 if(!content.includes('## Lote 784 —'))content=content.replace('## Lote 783 —',section+'\n## Lote 783 —');
 fs.writeFileSync(file,content);console.log(`README: ${examined} examinadas, ${verified} verificadas, ${pending} pendientes, ${remaining} sin revisar, ${changed} cambios de contenido.`);
