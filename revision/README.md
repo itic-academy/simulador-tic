@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 792 (IDs 4281–4285); pendiente verificar la publicación de este lote. Acumulado: 4280 preguntas examinadas individualmente, 4198 verificadas (798 vigentes, 3060 corregidas y 340 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7843 sin revisar individualmente. Hay 3543 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado y visible en Pages: 792 (IDs 4281–4285). Acumulado: 4280 preguntas examinadas individualmente, 4198 verificadas (798 vigentes, 3060 corregidas y 340 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7843 sin revisar individualmente. Hay 3543 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -9,6 +9,8 @@ El lote 788 (`54af8ad`) está en `main` y visible en GitHub Pages. El `build` fu
 Tras el lote 789, el run de GitHub Actions [42653837616](https://github.com/itic-academy/simulador-tic/actions/runs/42653837616) terminó con `success`; la consulta sin caché de Pages devolvió HTTP 200 y mostró el acumulado del lote 789. Tras el lote 790, el run [42656000580](https://github.com/itic-academy/simulador-tic/actions/runs/42656000580) también terminó con `success`; comprobación sin caché: HTTP 200, IDs y acumulado del lote 790 visibles.
 
 Tras el lote 791, el run [42657722686](https://github.com/itic-academy/simulador-tic/actions/runs/42657722686) terminó con `success`; la comprobación sin caché de Pages devolvió HTTP 200 y confirmó los IDs 4276–4280 y sus conteos.
+
+Tras el lote 792, el workflow de Pages [42660545532](https://github.com/itic-academy/simulador-tic/actions/runs/42660545532) terminó con `success`; una petición sin caché a la página de revisión devolvió HTTP 200 y confirmó el lote y acumulado 792.
 
 ## Lote 792 — 9 de noviembre de 2026
 
