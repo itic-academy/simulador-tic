@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado y visible en Pages: 792 (IDs 4281–4285). Acumulado: 4280 preguntas examinadas individualmente, 4198 verificadas (798 vigentes, 3060 corregidas y 340 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7843 sin revisar individualmente. Hay 3543 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 793 (IDs 4286–4290); despliegue pendiente. Acumulado: 4285 preguntas examinadas individualmente, 4203 verificadas (799 vigentes, 3064 corregidas y 340 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7838 sin revisar individualmente. Hay 3547 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -11,6 +11,21 @@ Tras el lote 789, el run de GitHub Actions [42653837616](https://github.com/itic
 Tras el lote 791, el run [42657722686](https://github.com/itic-academy/simulador-tic/actions/runs/42657722686) terminó con `success`; la comprobación sin caché de Pages devolvió HTTP 200 y confirmó los IDs 4276–4280 y sus conteos.
 
 Tras el lote 792, el workflow de Pages [42660545532](https://github.com/itic-academy/simulador-tic/actions/runs/42660545532) terminó con `success`; una petición sin caché a la página de revisión devolvió HTTP 200 y confirmó el lote y acumulado 792.
+Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-academy/simulador-tic/actions/runs/42661019112), correspondiente al commit de verificación del README, terminó con `success`; la respuesta sin caché HTTP 200 mostró el nuevo estado y el lote 792.
+
+## Lote 793 — 9 de noviembre de 2026
+
+IDs 4286–4290 revisados individualmente; se conservan los originales y las decisiones en [cambios-lote-793.json](cambios-lote-793.json).
+
+- **4286 — cuadro de mando integral:** se acota la elección a KPI ligados a los objetivos estratégicos. RPO/RTO y SLA pueden ser métricas pertinentes en objetivos concretos, pero no son el contenido preferente universal de un CMI. **Corregida.**
+- **4287 — módulos ERP:** se concreta que la pregunta trata el núcleo transversal habitual. Finanzas, fabricación y RR. HH. son áreas ERP corrientes; marketing/CX puede integrarse en una suite, pero no es un módulo nuclear universal. **Corregida.**
+- **4288 — arquitectura por capas:** se reemplaza la afirmación absoluta sobre el sistema completo por una pregunta del modelo lógico de tres capas. La lógica de los procesos empresariales se ubica principalmente en la capa de negocio; el ERP también usa presentación y persistencia. **Corregida.**
+- **4289 — CRM y ERP:** se retira la generalización de que CRM no puede estar en un ERP. Se pregunta por el papel funcional de CRM como sistema complementario centrado en clientes, que puede integrarse con ERP. **Corregida.**
+- **4290 — función de CRM:** se confirma que gestiona relaciones e interacciones con clientes; planificación de recursos es ERP y cartera de proyectos corresponde a gestión de proyectos. **Vigente.**
+
+Fuentes: Kaplan y Norton, [The Balanced Scorecard—Measures that Drive Performance](https://hbr.org/1992/01/the-balanced-scorecard-measures-that-drive-performance-2); Balanced Scorecard Institute, [KPIs vinculados a objetivos](https://balancedscorecard.org/staging/bsc-basics-overview/); Microsoft Learn, [arquitectura lógica de tres capas](https://learn.microsoft.com/en-us/windows/win32/cossdk/using-a-three-tier-architecture-model) y [gestión de relaciones con clientes](https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/prospect-to-quote-manage-customer-relationships); Oracle, [ERP](https://www.oracle.com/erp/); SAP, [módulos y extensión sectorial de ERP](https://www.sap.com/products/erp/what-is-erp.html). Cotejo Academy: [Bloque 12, planificación estratégica/dirección TIC (2026)](https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view?usp=drivesdk), [Tema 072, CRM/ERP e informes a dirección (2026)](https://drive.google.com/file/d/1lkbdZvGxPTwyjhiOf6VsglMWYe4RI6sL/view?usp=drivesdk) y [Bloque 38, análisis/diseño/construcción (2026)](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk). Cotejo de convocatoria: A1 [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 33 y 72 (el tema 33 nombra el cuadro de mando); A2 [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), II-4 (inteligencia de negocios y cuadros de mando), II-6 (arquitectura multicapa) y II-12 (CRM). La correspondencia ERP del lote es A1-72; el CRM público/atención se clasifica también en A2-II-12.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas en el banco, 4.285 examinadas individualmente, 7.838 sin revisión individual y cero errores estructurales. El inventario no acredita revisión de contenido.
 
 ## Lote 792 — 9 de noviembre de 2026
 
