@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 773 (IDs 4186–4190). Acumulado: 4185 preguntas examinadas individualmente, 4105 verificadas (781 vigentes, 2996 corregidas y 328 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7938 sin revisar individualmente. Hay 3463 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 774 (IDs 4191–4195). Acumulado: 4190 preguntas examinadas individualmente, 4110 verificadas (782 vigentes, 2999 corregidas y 329 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7933 sin revisar individualmente. Hay 3467 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 774 — 9 de noviembre de 2026
+
+IDs 4191–4195 revisados individualmente; originales y decisiones se conservan en [cambios-lote-774.json](cambios-lote-774.json).
+
+- **4191 — competencia estatal sobre las AAPP:** se delimita al artículo 149.1.18.ª CE: el Estado fija las bases del régimen jurídico garantizando tratamiento común; no se atribuye regulación íntegra exclusiva de toda organización autonómica. **Corregida.**
+- **4192 — tratados de reforma de la UE:** se acota la comparación a los tratados enumerados; Lisboa es posterior a Roma, Maastricht y Ámsterdam. No se generaliza a cualquier tratado de adhesión posterior. **Corregida.**
+- **4193 — Tratado constitucional europeo:** firmado en 2004, nunca entró en vigor por falta de ratificación unánime tras los referendos negativos de Francia y Países Bajos; España votó a favor en 2005. **Histórica.**
+- **4194 — sede de la Comisión Europea:** se precisa la sede oficial de Bruselas conforme al Protocolo n.º 6; algunos departamentos se sitúan en Luxemburgo. **Corregida.**
+- **4195 — servicios territoriales:** se confirma que los no integrados dependen del órgano central sectorial, mientras que los integrados dependen del Delegado/Subdelegado vía Secretaría General y siguen instrucciones técnicas ministeriales. **Vigente.**
+
+Fuentes primarias: [Constitución Española, art. 149.1.18.ª, texto consolidado actualizado a 20/05/2026](https://www.boe.es/eli/es/c/1978/12/27/%281%29/con/20260520); [Ley 40/2015, art. 71.3–4](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566); [EUR-Lex, cronología oficial de los Tratados de la UE](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=legissum%3Atreaties) y [texto del Tratado de Lisboa](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12007L%2FTXT); [Tratado por el que se establece una Constitución para Europa, DO C 310/2004](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=oj%3AJOC_2004_310_R_0001_01), [resultados oficiales del referéndum español, BOE-A-2005-5738](https://www.boe.es/buscar/doc.php?id=BOE-A-2005-5738&lang=es) y [LO 1/2005, autorización de ratificación](https://www.boe.es/buscar/act.php?id=BOE-A-2005-8384); [Protocolo n.º 6 del TUE/TFUE, art. único c)](https://eur-lex.europa.eu/eli/treaty/tfeu_2012/pro_6/oj/eng).
+
+Cotejo curricular: [bloque 01 Constitución, organización del Estado y AGE, actualización 2026](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), §§ sobre art. 149.1.18 y 14.3 de servicios periféricos; [bloque 02 Unión Europea, versión 2026.2 (01/10/2026)](https://drive.google.com/file/d/1KTz7CNz88u_4zyVLC2oYQBnmJRHIG7J7/view?usp=drivesdk), cronología de tratados, Tratado constitucional e instituciones; [material A2 de actuación administrativa, temas 7/8/22](https://drive.google.com/file/d/1dW2ffNhCduFHJ1hI2nT6fqs_G8DeNpo3/view?usp=drivesdk), Ley 40/2015. Correspondencia oficial: [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938): 4191 tema 8, 4192–4194 tema 5, 4195 tema 6; [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4191 y 4195 tema I-8. No se atribuye un epígrafe A2 específico a los tratados/instituciones de la UE.
+
+Verificaciones: cotejados Constitución y Ley 40/2015 vigentes, cronología y tratados en EUR-Lex, resultados BOE del referéndum de 2005 y Protocolo n.º 6; leídos los apartados de Drive indicados y cotejados los programas A1/A2 de las convocatorias. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 773 — 9 de noviembre de 2026
 
