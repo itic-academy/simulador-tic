@@ -1,0 +1,18 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-775.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+const boeA1='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',boeA2='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262';
+const academy={
+ contracts:{url:'https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk',name:'ITIC Academy, bloque 05 «Contratación, presupuestos y compra TIC», versión 2026'},
+ management:{url:'https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk',name:'ITIC Academy, bloque 07 «Dirección pública, empleo, transparencia y unidad de mercado», versión 2026'}
+};
+const map={
+ 4196:{a1:['11'],a2:[],sources:[['contracts','§5.1, garantías: provisional excepcional y motivada, con máximo del 3 % del presupuesto base sin IVA.']]},
+ 4197:{a1:['11'],a2:[],sources:[['contracts','§5.1, garantías: regla general de garantía definitiva del 5 % del precio final ofertado sin IVA; se cotejan las excepciones y la complementaria con el art. 107.']]},
+ 4198:{a1:['11'],a2:[],sources:[['contracts','Secciones de procedimientos de adjudicación y contratos menores: se contrasta con el tenor completo de los apartados 3 y 4 del art. 131 LCSP.']]},
+ 4199:{a1:['11'],a2:[],sources:[['contracts','Sección de umbrales SARA y recuadro 2026–2027: 216.000 € para suministros/servicios de las restantes entidades; distingue este valor estimado de los 221.000 € del periodo anterior.']]},
+ 4200:{a1:['23'],a2:[],sources:[['management','§2.2, motivación: sitúa la jerarquía de necesidades de Maslow junto con otras teorías motivacionales y evita confundirla con factores higiénicos/motivadores de Herzberg.']]}
+};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=map[c.id];assert.ok(q?.revision&&q.clasificacion&&m,'Falta revisión/cotejo '+c.id);for(const id of [...m.a1.map(n=>'A1-'+n),...m.a2.map(n=>'A2-'+n)])assert.ok(official.has(id),'Tema oficial inexistente: '+id);q.clasificacion.A1=m.a1.map(n=>'A1-'+n);q.clasificacion.A2=m.a2.map(n=>'A2-'+n);q.clasificacion.bloque_academia=m.sources.map(([key,note])=>academy[key].name+'; '+note).join(' ')+` Correspondencia de programa oficial: ${m.a1.map(n=>'A1 tema '+n).join(', ')}; sin epígrafe A2 específico de contratos públicos/teoría general de motivación.`;q.clasificacion.nota='La academia se coteja como guía de cobertura y terminología; la respuesta legal y los umbrales vigentes se verifican en BOE, y la teoría de Maslow en la publicación original.';q.revision.observaciones+=' Cotejo académico: '+q.clasificacion.bloque_academia;const refs=[...m.sources.map(([key,referencia])=>({url:academy[key].url,referencia:academy[key].name+'; '+referencia})),{url:boeA1,referencia:'Convocatoria oficial A1 GSI 2025, anexo I, '+m.a1.map(n=>'tema '+n).join(', ')},{url:boeA2,referencia:'Convocatoria oficial A2 GSI 2025, anexo IX cotejada; no hay epígrafe específico para este contenido'}];for(const f of refs)if(!q.revision.fuentes.some(x=>x.url===f.url))q.revision.fuentes.push(f);c.actualizada=structuredClone(q)}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo del bloque académico 05/07 y temas oficiales A1/A2 aplicado a 4196–4200.');
