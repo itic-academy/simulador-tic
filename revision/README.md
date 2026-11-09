@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 778 (IDs 4211–4215). Acumulado: 4210 preguntas examinadas individualmente, 4130 verificadas (792 vigentes, 3008 corregidas y 330 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7913 sin revisar individualmente. Hay 3480 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 779 (IDs 4216–4220). Acumulado: 4215 preguntas examinadas individualmente, 4135 verificadas (792 vigentes, 3012 corregidas y 331 históricas) y 80 pendientes documentadas (36 de fuente y 44 de ambigüedad); quedan 7908 sin revisar individualmente. Hay 3485 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 779 — 9 de noviembre de 2026
+
+IDs 4216–4220 revisados individualmente; se conservan originales y decisiones en [cambios-lote-779.json](cambios-lote-779.json).
+
+- **4216 — Agenda Digital para España:** seis objetivos estratégicos; la creación de una agencia ejecutora no figura entre ellos. El reactivo se fecha como contenido histórico 2013–2020. **Histórica.**
+- **4217 — agente FE-13:** se identifica HFC-23 por ficha técnica, corrigiendo gramática y NOAEL; el dato no constituye recomendación de diseño ni límite seguro universal. **Corregida.**
+- **4218 — workflow:** se corrige una clave ambigua: WfMC contempla formularios como interfaz de ayuda a tareas. La administración física del hardware es ajena a la gestión del flujo. **Corregida.**
+- **4219 — cliente-servidor asíncrono:** el cliente no bloquea esperando la respuesta final; esta llega o se consulta después. Se reformulan opciones para distinguir un acuse de recibo del resultado. **Corregida.**
+- **4220 — microservicios:** se elimina la afirmación absoluta de que los servicios trabajan «totalmente independientes»; son débilmente acoplados y desplegables por separado, pero colaboran mediante interfaces. **Corregida.**
+
+Fuentes institucionales: [Agenda Digital para España, Ministerio](https://digital.gob.es/ministerio/programas/programas-avance-digital/agenda-digtal-espanya) y [documento original 2013](https://www.lamoncloa.gob.es/documents/agendadigital150213.pdf); [Chemours, ficha FE-13](https://www.chemours.com/es/-/media/files/fire-extinguishants/fe-13-push-bulletin.pdf?rev=2fb536496c2646dbb1cb2b1e83b73cfb) y [guía técnica ONU sobre límites de exposición a agentes de extinción](https://digitallibrary.un.org/record/777850/files/3019-e-selfhelpguide.pdf); [WfMC, funciones de workflow](https://wfmc.org/wp-content/uploads/2022/09/Workflow_Internet_catalysts_for_change.pdf) y [Workflow Reference Model](https://wfmc.org/wp-content/uploads/2022/09/tc003v11.pdf); [Microsoft Learn, mensajería síncrona/asíncrona](https://learn.microsoft.com/th-th/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture); [Microsoft Azure Architecture Center, estilo microservicios](https://learn.microsoft.com/ga-ie/azure/architecture/guide/architecture-styles/microservices).
+
+Cotejo académico: [bloque 06 Economía, Sociedad y Transformación Digital](https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk); [hardware, servidores y CPD](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk); [flujos de trabajo, bloque 50](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk); [arquitectura SOA/cliente-servidor/microservicios](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk) y [tecnologías de sistemas de información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk). Programas oficiales: [A1 GSI 2025, anexo I](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 51, 53, 88, 58 y 65; [A2 GSI 2025, anexo IX](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), temas I-6, IV-6, II-16, II-6 y II-7.
+
+Verificaciones: se cotejaron los seis objetivos oficiales de la Agenda española, las propiedades técnicas de HFC-23 con ficha del fabricante y fuente ONU, el alcance del modelo WfMC para formularios y asignación, la no espera en mensajería asíncrona y la independencia de despliegue frente al bajo acoplamiento en microservicios. Se compararon los bloques académicos 2026 y los anexos A1/A2. Ejecutados `inventario.cjs`, `verificar.cjs` y `git diff --check` tras el lote.
 
 ## Lote 778 — 9 de noviembre de 2026
 
