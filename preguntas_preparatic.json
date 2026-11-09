@@ -210221,35 +210221,140 @@
       "id": 4186,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la opción verdadera:",
+      "texto": "¿Qué pareja de tecnología y velocidad nominal es correcta?",
       "opciones": [
-        "En la jerarquía digital plesiócrona un E1 proporciona 4 Mbps.",
-        "En la jerarquía digital plesiócrona un E3 proporciona 32 Mbps.",
-        "En la jerarquía digital síncrona un STM1 proporciona 140 Mbps.",
-        "En la jerarquía digital síncrona un STM1 proporciona 155 Mbps."
+        "En la jerarquía PDH, E1 funciona a 2,048 Mbit/s.",
+        "En la jerarquía PDH, E3 funciona a 32 Mbit/s.",
+        "En la jerarquía SDH/JDS, STM-1 funciona a 155,520 Mbit/s.",
+        "En la jerarquía SDH/JDS, STM-1 funciona a 140 Mbit/s."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "Se corrigen las velocidades erróneas de E1, E3 y STM-1 y se expresa en la pregunta que se busca la opción correcta con tasas nominales exactas en Mbit/s.",
+      "clasificacion": {
+        "A1": [
+          "A1-113"
+        ],
+        "A2": [
+          "A2-IV-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026; §7.3, jerarquías digitales PDH/SDH: tasa STM-1 de 155,52 Mbit/s; se cotejan las tasas nominales exactas con ITU-T. Correspondencia de programa oficial: A1 GSI 2025, anexo I (tema 113); A2 GSI 2025, anexo IX (tema IV-10).",
+        "estado": "revisada",
+        "nota": "La academia se utiliza para cotejar cobertura y terminología; las afirmaciones técnicas y normativas se comprueban en las fuentes primarias registradas. La ausencia de asignación A2 es deliberada cuando el programa oficial no contiene un epígrafe directo."
+      },
+      "etiquetas": [
+        "PDH",
+        "SDH",
+        "JDS",
+        "E1",
+        "E3",
+        "STM-1",
+        "G.702",
+        "G.707"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-09",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.702/en",
+            "referencia": "ITU-T G.702, ficha oficial: recomendación sobre velocidades binarias de las jerarquías digitales; la edición 11/1988 figura en vigor."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-M.1400-201303-S%21%21PDF-E&lang=s&type=items",
+            "referencia": "ITU-T M.1400 (03/2013), §17.1: enumera los bloques G.702 de 2 048 y 34 368 kbit/s; permite descartar las opciones de 4 y 32 Mbit/s."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.703-201604-I%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T G.703 (04/2016), §17.1: interfaz STM-1 con velocidad nominal de 155 520 kbit/s."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.707/en",
+            "referencia": "ITU-T G.707, recomendación sobre velocidades y estructura de la JDS/SDH; se cita para identificar STM-1 como nivel de transporte síncrono."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», actualización 2026, §7.3: PDH/SDH; indica que STM-1 transmite 155,52 Mbit/s."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I, tema 113: redes de transporte JDS/WDM y redes de agregación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX, tema IV-10: redes de área extensa y tecnologías de transporte/encaminamiento."
+          }
+        ],
+        "observaciones": "Se corrigen las velocidades erróneas de E1, E3 y STM-1 y se expresa en la pregunta que se busca la opción correcta con tasas nominales exactas en Mbit/s. Cotejo académico: ITIC Academy, bloque 42 «Redes», actualización 2026; §7.3, jerarquías digitales PDH/SDH: tasa STM-1 de 155,52 Mbit/s; se cotejan las tasas nominales exactas con ITU-T. Correspondencia de programa oficial: A1 GSI 2025, anexo I (tema 113); A2 GSI 2025, anexo IX (tema IV-10)."
+      }
     },
     {
       "id": 4187,
       "bloque": 0,
       "tema": 0,
-      "texto": "El TS (Transport Stream) en MPEG-2:",
+      "texto": "¿Qué descripción de un paquete MPEG-2 Transport Stream (TS) es correcta?",
       "opciones": [
-        "Su carga útil está formada por paquetes de flujos elementales (Packetized elementary Streams, PES)",
-        "Su tamaño es de 188 bytes",
-        "Su cabecera es de 4 bytes",
-        "Todas las anteriores son ciertas"
+        "Tiene 188 bytes en total, con una cabecera de 4 bytes; el resto puede incluir un campo de adaptación, payload o ambos, y el payload no tiene por qué ser exclusivamente PES.",
+        "Tiene 188 bytes de payload además de una cabecera de 4 bytes.",
+        "Su cabecera mide 184 bytes y el payload siempre contiene exactamente un paquete PES completo.",
+        "Cada paquete TS debe contener exclusivamente bytes de un único flujo elemental y no admite campos de adaptación."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La clave anterior «todas son ciertas» no era válida: generalizaba el contenido de payload y omitía el campo de adaptación opcional. Se reformula para comprobar tamaño, cabecera y estructura sin exigir una interpretación ambigua de carga útil.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-121"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026; §8.3, CATV/HFC: contexto de distribución de televisión por cable. No se afirma que este bloque detalle la sintaxis MPEG; tamaño y estructura TS se contrastan con ITU-T H.222.0. Correspondencia de programa oficial: A1 GSI 2025, anexo I (tema 108, tema 121); no se asigna epígrafe A2 específico.",
+        "estado": "revisada",
+        "nota": "La academia se utiliza para cotejar cobertura y terminología; las afirmaciones técnicas y normativas se comprueban en las fuentes primarias registradas. La ausencia de asignación A2 es deliberada cuando el programa oficial no contiene un epígrafe directo."
+      },
+      "etiquetas": [
+        "MPEG-2",
+        "Transport Stream",
+        "TS",
+        "188 bytes",
+        "adaptation field",
+        "CATV"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-09",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-H.222.0-202504-I",
+            "referencia": "ITU-T H.222.0 (04/2025) | ISO/IEC 13818-1:2023, ficha vigente; norma actual del sistema MPEG-2."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-H.222.0-202308-S%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T H.222.0 v9 (08/2023), §§2.4.3.2–2.4.3.4: el paquete TS tiene 188 bytes; su cabecera tiene 4 bytes; adaptation_field_control permite adaptación sola, payload solo o ambos; payload data_bytes puede ser PES, secciones TS, stuffing o datos privados."
+          },
+          {
+            "url": "https://www.itu.int/epublications/publication/itu-t-j-1-2024-01-terms-definitions-and-acronyms-for-television-and-sound-transmission-and-integrated-broadband-cable-networks",
+            "referencia": "ITU-T J.1 (01/2024), glosario de televisión/cable: define el paquete MPEG-2 TS como 188 bytes en total, incluidos 4 bytes de cabecera."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», actualización 2026, §8.3: CATV/HFC y servicios de televisión por cable; aporta contexto de aplicación del transporte digital, no sustituye H.222.0."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 108, tema 121"
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: revisión de encaje; no se atribuye epígrafe específico"
+          }
+        ],
+        "observaciones": "La clave anterior «todas son ciertas» no era válida: generalizaba el contenido de payload y omitía el campo de adaptación opcional. Se reformula para comprobar tamaño, cabecera y estructura sin exigir una interpretación ambigua de carga útil. Cotejo académico: ITIC Academy, bloque 42 «Redes», actualización 2026; §8.3, CATV/HFC: contexto de distribución de televisión por cable. No se afirma que este bloque detalle la sintaxis MPEG; tamaño y estructura TS se contrastan con ITU-T H.222.0. Correspondencia de programa oficial: A1 GSI 2025, anexo I (tema 108, tema 121); no se asigna epígrafe A2 específico."
+      }
     },
     {
       "id": 4188,
       "bloque": 0,
       "tema": 0,
-      "texto": "El Sistema de Comunicaciones Moviles Europeo de Tercera Generacion recibe el nombre de:",
+      "texto": "¿Qué nombre recibió el sistema europeo de comunicaciones móviles de tercera generación, normalizado en el marco de ETSI/3GPP e integrado en la familia IMT-2000?",
       "opciones": [
         "UMTS",
         "EDGE",
@@ -210257,21 +210362,114 @@
         "PHS"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se explicita que el reactivo pregunta por la denominación histórica del sistema europeo 3G y que el estado histórico se refiere a su ciclo comercial en España, no a que el término técnico UMTS sea incorrecto.",
+      "clasificacion": {
+        "A1": [
+          "A1-123"
+        ],
+        "A2": [
+          "A2-IV-15"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 46 «Redes inalámbricas», versión 2026.1, 30/09/2026; §12.3, tercera generación (3G): UMTS; el resumen ejecutivo actualizado también incluye el apagado comercial del 3G en España. Correspondencia de programa oficial: A1 GSI 2025, anexo I (tema 123); A2 GSI 2025, anexo IX (tema IV-15).",
+        "estado": "revisada",
+        "nota": "La academia se utiliza para cotejar cobertura y terminología; las afirmaciones técnicas y normativas se comprueban en las fuentes primarias registradas. La ausencia de asignación A2 es deliberada cuando el programa oficial no contiene un epígrafe directo."
+      },
+      "etiquetas": [
+        "UMTS",
+        "3G",
+        "IMT-2000",
+        "telefonía móvil",
+        "ETSI",
+        "3GPP"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-09",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/ITU-D/ict/statistics/at_glance/UMTS2001.html",
+            "referencia": "ITU-D: UMTS pertenece a la familia IMT-2000 de sistemas móviles de tercera generación (3G) y su desarrollo europeo."
+          },
+          {
+            "url": "https://www.itu.int/ITU-D/tech/FORMER_PAGE_IMT2000/index.html",
+            "referencia": "ITU, IMT-2000: denominación marco de sistemas de tercera generación; aporta contexto global de 3G."
+          },
+          {
+            "url": "https://www.etsi.org/deliver/etsi_ts/125300_125399/125301/18.00.00_60/ts_125301v180000p.pdf",
+            "referencia": "ETSI TS 125 301 V18.0.0 (2024-05), 3GPP TS 25.301 Release 18: título completo «Universal Mobile Telecommunications System (UMTS)»."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 46 «Redes inalámbricas», versión 2026.1 (30/09/2026), §12.3: tercera generación (3G), UMTS; la revisión también incorpora el apagado del 3G en España, por lo que se presenta como sistema heredado."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I: tema 123"
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX: tema IV-15"
+          }
+        ],
+        "observaciones": "Se explicita que el reactivo pregunta por la denominación histórica del sistema europeo 3G y que el estado histórico se refiere a su ciclo comercial en España, no a que el término técnico UMTS sea incorrecto. Cotejo académico: ITIC Academy, bloque 46 «Redes inalámbricas», versión 2026.1, 30/09/2026; §12.3, tercera generación (3G): UMTS; el resumen ejecutivo actualizado también incluye el apagado comercial del 3G en España. Correspondencia de programa oficial: A1 GSI 2025, anexo I (tema 123); A2 GSI 2025, anexo IX (tema IV-15)."
+      }
     },
     {
       "id": 4189,
       "bloque": 0,
       "tema": 0,
-      "texto": "En los sistemas de radiocomunicación, el concepto de PIRE es:",
+      "texto": "En radiocomunicaciones, ¿qué magnitud expresa la PIRE (potencia isótropa radiada equivalente)?",
       "opciones": [
-        "La ganancia de la antena",
-        "La potencla interna del elemento radiante",
-        "el producto de la potencla suministrada por la antena por la ganancla isotópica de esta",
-        "la probabilidad de interferencla debida a la reflexión de la señal emitida"
+        "La ganancia de la antena, sin considerar la potencia que la alimenta.",
+        "La potencia interna del elemento radiante, con independencia de la antena.",
+        "El producto de la potencia suministrada a la antena por la ganancia de esta, referida a una antena isotrópica y en una dirección determinada.",
+        "La probabilidad de interferencia debida a la reflexión de la señal emitida."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se corrigen las erratas y se sustituye «ganancia isotópica» por «ganancia respecto a una antena isotrópica», con precisión de que la ganancia se considera en una dirección.",
+      "clasificacion": {
+        "A1": [
+          "A1-114"
+        ],
+        "A2": [
+          "A2-IV-7",
+          "A2-IV-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 46 «Redes inalámbricas», versión 2026.1, 30/09/2026; §§1.2–1.3, propagación, balance de enlace, antenas, PIRE/PRA; el propio repaso ITIC plantea la definición de PIRE. Correspondencia de programa oficial: A1 GSI 2025, anexo I (tema 114); A2 GSI 2025, anexo IX (tema IV-7, tema IV-11).",
+        "estado": "revisada",
+        "nota": "La academia se utiliza para cotejar cobertura y terminología; las afirmaciones técnicas y normativas se comprueban en las fuentes primarias registradas. La ausencia de asignación A2 es deliberada cuando el programa oficial no contiene un epígrafe directo."
+      },
+      "etiquetas": [
+        "PIRE",
+        "EIRP",
+        "PRA",
+        "ganancia isotrópica",
+        "antenas",
+        "radiocomunicación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-09",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/epublications/publication/itu-t-k-100-2024-08-measurement-of-radio-frequency-electromagnetic-fields-to-determine-compliance-with-human-exposure-limits-when-a-base-station-is-put-into-operation",
+            "referencia": "ITU-T K.100 (08/2024), §3.1.15: define EIRP como producto de la potencia de entrada a la antena por su ganancia, en una dirección, referida a antena isotrópica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 46 «Redes inalámbricas», versión 2026.1, §§1.2–1.3 y pregunta de repaso: explica PIRE = potencia entregada a la antena × ganancia isotrópica (en dB se suma la ganancia y se restan pérdidas de feeder)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I, tema 114: redes inalámbricas y sus parámetros/características técnicas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX, temas IV-7 (medios inalámbricos y parámetros) y IV-11 (redes inalámbricas)."
+          }
+        ],
+        "observaciones": "Se corrigen las erratas y se sustituye «ganancia isotópica» por «ganancia respecto a una antena isotrópica», con precisión de que la ganancia se considera en una dirección. Cotejo académico: ITIC Academy, bloque 46 «Redes inalámbricas», versión 2026.1, 30/09/2026; §§1.2–1.3, propagación, balance de enlace, antenas, PIRE/PRA; el propio repaso ITIC plantea la definición de PIRE. Correspondencia de programa oficial: A1 GSI 2025, anexo I (tema 114); A2 GSI 2025, anexo IX (tema IV-7, tema IV-11)."
+      }
     },
     {
       "id": 4190,
@@ -210285,7 +210483,50 @@
         "3 años"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene la clave de cinco años; el comentario diferencia duración estatutaria del mandato y continuidad excepcional en funciones, y registra el encaje oficial sin extender artificialmente el tema A2.",
+      "clasificacion": {
+        "A1": [
+          "A1-2"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, Tema 002 - Resumen_v2.docx; §1.2, composición del CGPJ: transcribe el art. 122.3 CE y especifica que los veinte miembros se nombran por cinco años; el índice oficial A1 incluye CGPJ en el tema 2. No hay un epígrafe A2 específico de Poder Judicial/CGPJ: no se fuerza una asignación por la mera presencia de un tema general de Constitución. Correspondencia de programa oficial: A1 GSI 2025, anexo I (tema 2); no se asigna epígrafe A2 específico.",
+        "estado": "revisada",
+        "nota": "La academia se utiliza para cotejar cobertura y terminología; las afirmaciones técnicas y normativas se comprueban en las fuentes primarias registradas. La ausencia de asignación A2 es deliberada cuando el programa oficial no contiene un epígrafe directo."
+      },
+      "etiquetas": [
+        "Constitución Española",
+        "Poder Judicial",
+        "CGPJ",
+        "mandato",
+        "cinco años"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-09",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/eli/es/c/1978/12/27/(1)/con/20260520",
+            "referencia": "Constitución Española, artículo 122.3: los veinte miembros del CGPJ son nombrados por cinco años."
+          },
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666",
+            "referencia": "Ley Orgánica 6/1985 del Poder Judicial, artículo 568.1: renovación íntegra del CGPJ cada cinco años; artículos 570 y siguientes regulan la continuidad excepcional en funciones si no se renueva a tiempo."
+          },
+          {
+            "url": "https://docs.google.com/document/d/1mmhJ_LcwTpTxtPBN25s26iU-TXwyctII/edit?usp=drivesdk&ouid=107088454749630873035&rtpof=true&sd=true",
+            "referencia": "ITIC Academy, «Tema 002 - Resumen_v2.docx», apartado 1.2, Composición: reproduce el art. 122.3 CE y señala período de cinco años; A1 tema 2 incluye expresamente CGPJ. El epígrafe A2-I-1 solo enumera derechos y deberes y Corona, no el Poder Judicial."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 GSI 2025, anexo I, tema 2: Constitución Española (II), Poder Judicial y Consejo General del Poder Judicial."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 GSI 2025, anexo IX, epígrafes de organización del Estado; no se asigna un tema A2 específico sobre CGPJ, que no aparece en su epígrafe constitucional I-1."
+          }
+        ],
+        "observaciones": "Se mantiene la clave de cinco años; el comentario diferencia duración estatutaria del mandato y continuidad excepcional en funciones, y registra el encaje oficial sin extender artificialmente el tema A2. Cotejo académico: ITIC Academy, Tema 002 - Resumen_v2.docx; §1.2, composición del CGPJ: transcribe el art. 122.3 CE y especifica que los veinte miembros se nombran por cinco años; el índice oficial A1 incluye CGPJ en el tema 2. No hay un epígrafe A2 específico de Poder Judicial/CGPJ: no se fuerza una asignación por la mera presencia de un tema general de Constitución. Correspondencia de programa oficial: A1 GSI 2025, anexo I (tema 2); no se asigna epígrafe A2 específico."
+      }
     },
     {
       "id": 4191,
