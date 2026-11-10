@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 806 (IDs 4351–4355). Acumulado: 4350 preguntas examinadas individualmente, 4268 verificadas (803 vigentes, 3122 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7773 sin revisar individualmente. Hay 3612 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 807 (IDs 4356–4360). Acumulado: 4355 preguntas examinadas individualmente, 4273 verificadas (803 vigentes, 3127 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7768 sin revisar individualmente. Hay 3617 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -74,6 +74,22 @@ Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-aca
 Tras el lote 805, el workflow de Pages [42810171592](https://github.com/itic-academy/simulador-tic/actions/runs/42810171592) terminó con `success`; la consulta sin caché devolvió HTTP 200 y confirmó el lote, los IDs 4346–4350 y el acumulado 4.345.
 
 Tras el lote 806, el workflow de Pages [42811447674](https://github.com/itic-academy/simulador-tic/actions/runs/42811447674) terminó con `success`; la consulta sin caché devolvió HTTP 200 y confirmó los IDs 4351–4355 y el acumulado 4.350.
+
+Tras el lote 807, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: 12.123 preguntas totales, 4.355 revisadas individualmente, 7.768 sin revisar y cero errores estructurales. Pendiente la publicación y comprobación de Pages.
+
+## Lote 807 — 10 de noviembre de 2026
+
+IDs 4356–4360 revisados individualmente; enunciados originales y decisiones conservados en [cambios-lote-807.json](cambios-lote-807.json).
+
+- **4356 — modelo en cascada:** se formula como una opción adecuada cuando los requisitos están bien comprendidos y son razonablemente estables. Se evita declararlo universalmente recomendable; requisitos desconocidos o cambiantes favorecen enfoques evolutivos. **Corregida; clave A.**
+- **4357 — DFD:** se diferencia del diccionario de datos: un diagrama de flujo de datos representa procesos, transformaciones y flujos entre procesos, almacenes y entidades externas. **Corregida; clave C.**
+- **4358 — herencia en POO:** se conserva la reutilización como ventaja posible, no como propósito único ni como regla que deba anteponerse siempre a composición; una subclase también puede definir sus propios miembros. **Corregida; clave A.**
+- **4359 — EFQM:** la pregunta sin versión confundía la agrupación de modelos anteriores con el vigente. Se especifica el modelo actual, cuyas tres dimensiones son Direction, Execution y Results. **Corregida; clave A.**
+- **4360 — gestión de incidencias ITIL:** se limita a su finalidad inmediata: restaurar la operación normal del servicio cuanto antes y minimizar impacto. Se distingue del análisis de causa raíz propio principalmente de la gestión de problemas. **Corregida; clave B.**
+
+Fuentes técnicas principales: NASA Software Engineering Handbook, [SWE-019 — Software Life Cycle](https://swehb.nasa.gov/spaces/7150/pages/16449735/SWE-019%2B-%2BSoftware%2BLife%2BCycle); IBM, [What Is a Data Flow Diagram?](https://www.ibm.com/think/topics/data-flow-diagram); Oracle, [Java Tutorials — Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html); EFQM, [The EFQM Model](https://efqm.org/the-efqm-model/); PeopleCert, [When Video Games Become Services: Applying ITIL to Modern Gaming](https://community.peoplecert.org/public/clubs/itil/blogs/when-video-games-become-services-applying-itil-to-modern-gaming-2026-11-03) y [ITIL 4 Practitioner: Incident Management](https://badges.peoplecert.org/Badge/en/2/B1F4A3EC-9804-45BA-AB0F-623F411C2810). ITIC Academy: [tema 15, ciclo de vida, edición 2026](https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk); [Análisis y Diseño, versión revisada 2026](https://drive.google.com/file/d/1w_ZhQ3f2MMvQDg3oAp45DRkZUJzdCmxB/view?usp=drivesdk); [bloque 39, Calidad y Mantenimiento, 2026](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk); [bloque 41, ITIL y COBIT, 2026](https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk). El contenido de academia solo contextualiza el temario; las respuestas se contrastan con documentación primaria. Correspondencia cotejada con los programas oficiales de las convocatorias [A1 TIC AGE 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4356 A1-86/A2-III-1; 4357 A1-90 y asociación temática A2-III-3; 4358 A1-89/A1-93 y A2-III-9; 4359 A1-103 (sin epígrafe A2 equivalente); 4360 A1-106/A2-IV-3.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: 12.123 preguntas en inventario, 4.355 revisadas individualmente, 7.768 aún sin revisión individual y cero errores estructurales. El inventario no acredita revisión de contenido.
 
 ## Lote 806 — 10 de noviembre de 2026
 
