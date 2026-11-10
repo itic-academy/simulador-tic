@@ -1,8 +1,22 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 830 (IDs 4471–4475). Acumulado: 4.470 preguntas examinadas individualmente, 4.388 verificadas (816 vigentes, 3.225 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.653 sin revisar individualmente. Hay 3.701 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 831 (IDs 4476–4480). Acumulado: 4.475 preguntas examinadas individualmente, 4.393 verificadas (816 vigentes, 3.230 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.648 sin revisar individualmente. Hay 3.706 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 
+
+## Lote 831 — 10 de noviembre de 2026
+
+IDs 4476–4480 revisados individualmente; originales y decisiones conservados en [cambios-lote-831.json](cambios-lote-831.json). Acumulado: 4.475 preguntas examinadas, 4.393 verificadas (816 vigentes, 3.230 corregidas y 347 históricas), 82 pendientes documentadas y 7.648 todavía sin revisar individualmente. Se ajustan las afirmaciones sobre controles compensatorios, emisión de informes, pruebas de controles y separación entre auditoría independiente y responsabilidades de gestión.
+
+- **4476 — controles compensatorios:** se usa el criterio NIST de protección equivalente o comparable frente a los controles del baseline sustituidos; no basta con una ausencia, ineficacia o coste alto considerados aisladamente. A1-38; A2-II-11; Academy, bloque 16.
+- **4477 — informe de auditoría de cumplimiento:** se corrige la estructura inventada de tres apartados por perfiles. ISSAI 4000 define los elementos del informe, permite resumen y respuesta del auditado cuando proceda y da al auditado oportunidad de comentar. A1-38; A2-II-11; Academy, bloque 16.
+- **4478 — contenido del informe:** se concreta la pregunta a la lista de ISSAI 4000: título, normas aplicadas y criterios figuran en ella; las respuestas del auditado se incorporan cuando sea apropiado. A1-38; A2-II-11; Academy, bloque 16.
+- **4479 — pruebas de controles:** se separan de las pruebas sustantivas y se pregunta por evidencia de diseño, implantación y operación eficaz; el original presentaba dos opciones simultáneamente verdaderas sobre comprobar procedimientos y observarlos. A1-38; A2-II-11; Academy, bloque 16.
+- **4480 — responsabilidades del auditor:** se limita a un encargo independiente de aseguramiento. Evaluar riesgos, planes y controles es parte del encargo; diseñar una solución y producir su especificación funcional para que la organización la implante es función de gestión/consultoría, no del aseguramiento independiente. A1-38; A2-II-11; Academy, bloque 16.
+
+Fuentes primarias: NIST CSRC, [glosario de controles compensatorios](https://csrc.nist.gov/glossary/term/compensating_controls); INTOSAI, [ISSAI 4000](https://www.issai.org/wp-content/uploads/2019/08/ISSAI-4000.pdf), requisitos 129, 210 y 214, y [ISSAI 3000](https://www.issai.org/wp-content/uploads/2019/08/ISSAI-3000-Performance-Audit-Standard.pdf), requisitos 116–121; GAO/CIGIE, [FISCAM vigente de junio de 2026](https://www.gao.gov/assets/gao-26-108633.pdf), §§110.15, 250, 330.01–330.05 y 430.01–430.04; ISACA, [ITAF](https://www.isaca.org/about-us/-/media/5b55da6fe8564436bce63aaa5acb49da.ashx). Cotejo curricular con ITIC Academy, [bloque 16, Auditoría informática, versión 2026.2](https://drive.google.com/file/d/1D93MNUzOWGwD6IyuWdxIMnHaL7aXvYhp/view?usp=drivesdk), y `temario-oficial.json`: A1-38 y A2-II-11. Academy se usa como referencia temática, no como autoridad para la clave.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: banco de 12.123 preguntas, 4.475 registros de revisión, 82 pendientes documentadas y 7.648 preguntas todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 ## Lote 830 — 10 de noviembre de 2026
 
 IDs 4471–4475 revisados individualmente; originales y decisiones conservados en [cambios-lote-830.json](cambios-lote-830.json). Acumulado: 4.470 preguntas examinadas, 4.388 verificadas (816 vigentes, 3.225 corregidas y 347 históricas), 82 pendientes documentadas y 7.653 todavía sin revisar individualmente. Se delimita la auditoría de controles, se diferencian responsabilidades de auditor y gestión, y se eliminan dos clasificaciones ambiguas de controles de salida/entrada.
