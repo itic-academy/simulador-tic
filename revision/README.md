@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 832 (IDs 4481–4485). Acumulado: 4.480 preguntas examinadas individualmente, 4.398 verificadas (816 vigentes, 3.235 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.643 sin revisar individualmente. Hay 3.711 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 832 (IDs 4481–4485). Acumulado: 4.480 preguntas examinadas individualmente, 4.398 verificadas (816 vigentes, 3.235 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.643 sin revisar individualmente. Hay 3.711 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. Publicación del contenido del lote 832 verificada en GitHub Pages (workflow 42855970816, commit d931b736).
 
 
 
@@ -16,7 +16,7 @@ IDs 4481–4485 revisados individualmente; originales y decisiones conservados e
 
 Fuentes primarias: GAO/CIGIE, [FISCAM vigente, edición junio de 2026](https://www.gao.gov/assets/gao-26-108633.pdf), §§250, 330, 430.16 y 520 (incluidos controles de interfaces y recomendaciones derivadas de hallazgos); GAO, [auditorías forenses y equipo FAIS](https://www.gao.gov/blog/2014/04/24/introduction-to-gaos-forensic-audits-and-investigative-service-team) y [FAIS actual](https://www.gao.gov/about/careers/our-teams/FAIS); INTOSAI, [ISSAI 4000](https://www.issai.org/wp-content/uploads/2019/08/ISSAI-4000.pdf), §226; PCAOB, [AS 2315 Audit Sampling](https://pcaobus.org/oversight/standards/auditing-standards/details/AS2315); NIST, [SP 800-37 Rev. 1](https://csrc.nist.gov/pubs/sp/800/37/r1/final) y [SP 800-218 SSDF](https://csrc.nist.gov/pubs/sp/800/218/final). Cotejo curricular con ITIC Academy, [bloque 16, Auditoría informática, versión 2026.2](https://drive.google.com/file/d/1D93MNUzOWGwD6IyuWdxIMnHaL7aXvYhp/view?usp=drivesdk), y temario-oficial.json: A1-38 y A2-II-11. Academy verifica correspondencia curricular, no sustituye las fuentes técnicas.
 
-inventario.cjs, verificar.cjs y git diff --check ejecutados: banco de 12.123 preguntas, 4.480 registros de revisión, 82 pendientes documentadas y 7.643 preguntas todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
+inventario.cjs, verificar.cjs y git diff --check ejecutados: banco de 12.123 preguntas, 4.480 registros de revisión, 82 pendientes documentadas y 7.643 preguntas todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido. Publicación comprobada en GitHub Pages el 10 de noviembre de 2026: README, registro de cambios del lote 832 e inventario devuelven HTTP 200 y muestran el recuento esperado. Workflow de Pages 42855970816, commit d931b736.
 
 ## Lote 831 — 10 de noviembre de 2026
 
