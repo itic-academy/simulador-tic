@@ -1,10 +1,24 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 839 (IDs 4516–4520). Acumulado: 4.515 preguntas examinadas individualmente, 4.432 verificadas (816 vigentes, 3.269 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.608 sin revisar individualmente. Hay 3.745 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. La publicación del lote 839 quedó verificada en GitHub Pages: README, cambios-lote-839.json e inventario responden HTTP 200 y muestran cinco IDs (4516–4520) y 7.608 pendientes (workflow 42866442836, commit 748cd80).
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 840 (IDs 4521–4525). Acumulado: 4.520 preguntas examinadas individualmente, 4.437 verificadas (816 vigentes, 3.274 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.603 sin revisar individualmente. Hay 3.750 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. Publicación del lote 839 verificada; la del lote 840 está pendiente.
 
 
 
 
+
+## Lote 840 — 10 de noviembre de 2026
+
+IDs 4521–4525 revisados individualmente; originales y decisiones conservados en [cambios-lote-840.json](cambios-lote-840.json). Acumulado: 4.520 examinadas, 4.437 verificadas (816 vigentes, 3.274 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.603 todavía sin revisar individualmente. Se actualiza la definición de hallazgo conforme a IIA 14.3, la función compartida entre auditor y dirección sobre recomendaciones, y se acota a instrucciones IGAE la fase de alegaciones; además se corrige una función mal atribuida a controles de proceso y se precisa el escalado de un riesgo significativo de fraude.
+
+- **4521 — hallazgos:** se definen como diferencias significativas entre criterio y condición observada, analizadas para valorar causa, efecto y relevancia. IIA 14.3 exige documentar y comunicar como hallazgo el riesgo significativo; no son tareas, entrevistas ni técnicas.
+- **4522 — recomendaciones:** el auditor puede proponer recomendaciones, pedir planes de acción o colaborar para acordarlos con la dirección. La dirección autorizada conserva la decisión y ejecución de cambios; se explica el alcance de IIA 14.4.
+- **4523 — alegaciones en auditoría pública estatal:** se mantiene la respuesta de remitir el informe provisional al órgano gestor para alegaciones, pero se restringe expresamente al procedimiento de auditoría pública sujeto a instrucciones IGAE. No es una regla universal para cualquier informe de auditoría.
+- **4524 — controles de desarrollo/proceso/configuración/continuidad:** se cambia la clave de configuración a proceso: controlar versiones y cambios es gestión de configuración. Desarrollo evalúa el producto frente a requisitos, y copias/restauración se relacionan con contingencia. Se declara que las categorías son funcionales y pueden variar entre marcos.
+- **4525 — deficiencia grave con riesgo de fraude:** documentar y comunicar el riesgo significativo por los canales de escalado del encargo, con oportunidad y confidencialidad; si la dirección ordinaria está implicada, escalar al nivel previsto. No alertar a posibles implicados ni diferir automáticamente al informe final.
+
+Fuentes primarias: The IIA, [Global Internal Audit Standards 2024](https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/) y [texto completo, §§13.1, 14.3, 14.4 y 15.1](https://www.theiia.org/globalassets/site/standards/globalinternalauditstandards_2024january9.pdf), vigentes desde el 9 de enero de 2025; IGAE, [Resolución de 30 de julio de 2015, instrucciones de auditoría pública](https://boe.es/buscar/doc.php?id=BOE-A-2015-8939), modificada por [Resolución de 6 de junio de 2022](https://boe.es/buscar/doc.php?id=BOE-A-2022-9434), trámite de informe provisional y alegaciones; NIST, [SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/Final), controles SA-11 (evaluación de desarrollo), CM-3/CM-8 (gestión de configuración) y CP-9 (copias de seguridad). Clasificación cotejada con el programa oficial [BOE-A-2025-25938, anexo I, A1-38/A2-II-11](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y bloque 16 de ITIC Academy; la academia orienta la clasificación y las respuestas se sustentan en las fuentes primarias citadas.
+
+inventario.cjs, verificar.cjs y git diff --check ejecutados: 12.123 preguntas; 4.520 registros individuales; 83 pendientes documentadas y 7.603 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido. Publicación del lote 840 pendiente de verificación directa en GitHub Pages.
 
 ## Lote 839 — 10 de noviembre de 2026
 
