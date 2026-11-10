@@ -1,6 +1,18 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 861 (IDs 4626–4630). Acumulado: 4.625 preguntas examinadas individualmente; 4.542 verificadas (817 vigentes, 3.378 corregidas y 347 históricas); 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); 7.498 sin revisar individualmente. Hay 3.854 preguntas con cambios frente al original. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 862 (IDs 4631–4635). Acumulado: 4.630 preguntas examinadas individualmente; 4.547 verificadas (819 vigentes, 3.381 corregidas y 347 históricas); 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); 7.493 sin revisar individualmente. Hay 3.857 preguntas con cambios frente al original. Los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 862 — 10 de noviembre de 2026
+
+IDs 4631–4635 revisados individualmente; originales y decisiones guardados en [cambios-lote-862.json](cambios-lote-862.json). Se corrige una pregunta de normalización que contenía dos afirmaciones falsas y se conserva una única respuesta inequívoca; se distinguen certificación y homologación, y se precisa que la evaluación de conformidad no exige siempre laboratorio independiente. Se comprueban las respuestas sobre artículos 108, 137, 148, 149 y 152 de la Constitución; se añade la salvedad del artículo 150.2 al ítem de competencias y se distingue la representación ordinaria del Estado de la representación del Gobierno de la Nación.
+
+- **4631 — normalización y evaluación de la conformidad:** se corrige la opción marcada: la equivalencia universal entre certificación y homologación es falsa; además, las evaluaciones de conformidad pueden ser de primera, segunda o tercera parte. A1-50/A2-III-13; Academy, bloque 39.
+- **4632 — responsabilidad política del Gobierno:** el artículo 108 señala al Congreso de los Diputados. A1-1/A2-I-3; Academy, bloque 01.
+- **4633 — distribución constitucional de competencias:** la autorización de referéndums corresponde en exclusiva al Estado conforme al artículo 149.1.32.ª; se pregunta por el reparto constitucional originario y se advierte el mecanismo de delegación del artículo 150.2. A1-3; A2-I-1 como encaje constitucional general; Academy, bloque 01.
+- **4634 — representación estatal en una comunidad autónoma:** se pregunta expresamente por la representación ordinaria, que ejerce el Presidente autonómico; el Delegado representa al Gobierno de la Nación. A1-3/A1-6; A2-I-1 como encaje constitucional general; Academy, bloque 01.
+- **4635 — organización territorial del Estado:** el artículo 137 enumera municipios, provincias y comunidades autónomas que se constituyan, con autonomía de todas para sus intereses. A1-3/A2-I-1; Academy, bloque 01.
+
+Fuentes normativas y técnicas: [Reglamento (UE) 1025/2012, art. 2](https://eur-lex.europa.eu/eli/reg/2012/1025/oj/spa), [ISO, glosario de evaluación de conformidad](https://www.iso.org/glossary.html), [ISO, conformity assessment](https://www.iso.org/conformity-assessment.html), [Reglamento (UE) 2018/858, art. 3](https://eur-lex.europa.eu/eli/reg/2018/858/oj/spa), [Constitución Española, texto consolidado](https://www.boe.es/eli/es/c/1978/12/27/(1)/con/20260520) y [Ley 40/2015](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566). Programas oficiales consultados: [A1, convocatoria BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), epígrafe 50 y temas constitucionales 1 y 3, además del tema 6 para Delegados/Subdelegados; [A2 GSI, convocatoria BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), epígrafes I.1, I.3 y III.13. Cotejo curricular: [Academy, bloque 39 de calidad y mantenimiento](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk) para normas/conformidad/calidad; [Academy, bloque 01 de Constitución, organización del Estado y AGE](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk) para el contenido constitucional. La academia se usa como mapa curricular, no como autoridad jurídica o técnica.
 
 ## Lote 861 — 10 de noviembre de 2026
 
@@ -11152,4 +11164,6 @@ Fuentes principales: [PMI Lexicon](https://www.pmi.org/-/media/pmi/documents/reg
 
 ## Estado de publicación
 
-El lote 861 está registrado en main y pendiente de verificación de GitHub Actions y GitHub Pages. Acumulado: 4.625 preguntas revisadas individualmente; 7.498 aún sin revisar.
+El lote 861 se publicó desde el commit 639862a en main; GitHub Actions run 42908487504 terminó correctamente. GitHub Pages respondió HTTP 200 para README, cambios-lote-861.json e inventario.json; el inventario servido confirma 4.625 revisiones individuales y 7.498 preguntas sin revisar.
+
+El lote 862 está preparado localmente; pendiente de commit, GitHub Actions y verificación de GitHub Pages. Acumulado tras el lote: 4.630 preguntas revisadas individualmente; 7.493 aún sin revisar.
