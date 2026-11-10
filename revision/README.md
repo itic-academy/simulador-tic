@@ -1,6 +1,6 @@
-# Revisión del banco TIC — estado al 9 de noviembre de 2026
+# Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 799 (IDs 4316–4320). Acumulado: 4315 preguntas examinadas individualmente, 4233 verificadas (800 vigentes, 3091 corregidas y 342 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7808 sin revisar individualmente. Hay 3577 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 800 (IDs 4321–4325). Acumulado: 4320 preguntas examinadas individualmente, 4238 verificadas (800 vigentes, 3096 corregidas y 342 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7803 sin revisar individualmente. Hay 3582 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -19,7 +19,22 @@ Tras el lote 796, una petición sin caché a GitHub Pages devolvió HTTP 200 y m
 Tras el lote 797, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, revisadas individualmente 4.305, sin revisar 7.818, cero errores estructurales. El workflow de Pages [42669073214](https://github.com/itic-academy/simulador-tic/actions/runs/42669073214) terminó con `success`; una petición sin caché devolvió HTTP 200 y confirmó el lote 797, el rango 4306–4310 y el acumulado 4.305.
 Tras el lote 798, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, revisadas individualmente 4.310, sin revisar 7.813, cero errores estructurales. El workflow de Pages [42785482002](https://github.com/itic-academy/simulador-tic/actions/runs/42785482002) terminó con `success`; una petición sin caché devolvió HTTP 200 y confirmó el lote 798, los IDs 4311–4315 y el acumulado 4.310.
 Tras el lote 799, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, revisadas individualmente 4.315, sin revisar 7.808, cero errores estructurales. El workflow de Pages [42786273256](https://github.com/itic-academy/simulador-tic/actions/runs/42786273256) terminó con `success`; una petición sin caché devolvió HTTP 200 y confirmó el lote 799, los IDs 4316–4320 y el acumulado 4.315.
+Tras el lote 800, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, revisadas individualmente 4.320, sin revisar 7.803, cero errores estructurales. Pendientes publicación y comprobación sin caché del lote 800.
 Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-academy/simulador-tic/actions/runs/42661019112), correspondiente al commit de verificación del README, terminó con `success`; la respuesta sin caché HTTP 200 mostró el nuevo estado y el lote 792.
+
+## Lote 800 — 10 de noviembre de 2026
+
+IDs 4321–4325 revisados individualmente; los originales y decisiones se conservan en [cambios-lote-800.json](cambios-lote-800.json).
+
+- **4321 — investidura del Presidente del Gobierno:** el artículo 99.3 exige mayoría absoluta en primera votación; si no se alcanza, se repite 48 horas después y basta mayoría simple. **Corregida por precisión; clave D.**
+- **4322 — repetición de moción de censura:** los signatarios de una moción no aprobada no pueden presentar otra durante el mismo período de sesiones, conforme al artículo 113.4. **Corregida por precisión; clave D.**
+- **4323 — lengua oficial del Estado:** el artículo 3.1 establece el deber de conocer el castellano y el derecho a usarlo. **Corregida por precisión; clave B.**
+- **4324 — publicidad de las actuaciones judiciales:** el artículo 120.1 fija publicidad como regla, con las excepciones previstas en las leyes de procedimiento. **Corregida por precisión; clave C.**
+- **4325 — recursos de las CCAA:** el artículo 157.1 incluye impuestos estatales cedidos, tributos propios, transferencias/participaciones con cargo a ingresos del Estado, rendimientos patrimoniales y crédito. Se sustituye la opción falsa por una que atribuye a los ayuntamientos una cesión directa de impuestos municipales a las CCAA. **Corregida para aislar la respuesta incorrecta; clave A.**
+
+Fuente normativa primaria: [Constitución Española, texto consolidado del BOE (actualización publicada el 20-05-2026)](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520), artículos 3.1, 99.3, 113.4, 120.1 y 157.1. Cotejo Academy: [Tema A1 001, Constitución I](https://drive.google.com/file/d/1RJ01j6Kq6vWspSbDykXJOt04FnnRKB07/view?usp=drivesdk), [bloque A1 02, Constitución II](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk) y [temario A2 2026, temas I-1 a I-3](https://drive.google.com/file/d/11wa3Kb-raEHyXAwPtbhT45UIfDFPR4Y-/view?usp=drivesdk). Cotejo de convocatorias: A1 [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 1–3; A2 [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), tema I-1 (Constitución y derechos/deberes), I-3 (Gobierno y Cortes). Se clasifican 4321–4322 en A1-1/A2-I-3; 4323 en A1-1/A2-I-1; 4324 en A1-2; 4325 en A1-3.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas, 4.320 examinadas individualmente, 7.803 todavía sin revisión individual y cero errores estructurales. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 799 — 10 de noviembre de 2026
 
