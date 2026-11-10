@@ -10708,4 +10708,4 @@ Fuentes principales: [PMI Lexicon](https://www.pmi.org/-/media/pmi/documents/reg
 
 ## Estado de publicación
 
-El lote 825 está publicado en GitHub Pages: flujo Actions #881 (`42845521425`), `success`; `revision/README.md`, `revision/cambios-lote-825.json` y `revision/inventario.json` respondieron HTTP 200 sin caché y el inventario público refleja 4.445 revisiones. El lote 826 ya está validado localmente; su publicación/verificación está pendiente.
+Los lotes 825–829 están publicados en GitHub Pages: flujos Actions #881 (`42845521425`), #882 (`42847308454`), #883 (`42848297812`), #884 (`42848988287`) y #885 (`42849538962`), todos `success`. En el lote 829, `revision/README.md`, `revision/cambios-lote-829.json` y `revision/inventario.json` respondieron HTTP 200 sin caché; el inventario público refleja 4.465 revisiones.
