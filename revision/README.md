@@ -71,6 +71,8 @@ Fuentes primarias: [RGPD, Reglamento (UE) 2016/679](https://eur-lex.europa.eu/el
 `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados tras el lote 803: total 12.123, 4.335 preguntas examinadas individualmente, 7.788 todavía sin revisión individual y cero errores estructurales. El inventario estructural no acredita revisión de contenido.
 Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-academy/simulador-tic/actions/runs/42661019112), correspondiente al commit de verificación del README, terminó con `success`; la respuesta sin caché HTTP 200 mostró el nuevo estado y el lote 792.
 
+Tras el lote 805, el workflow de Pages [42810171592](https://github.com/itic-academy/simulador-tic/actions/runs/42810171592) terminó con `success`; la consulta sin caché devolvió HTTP 200 y confirmó el lote, los IDs 4346–4350 y el acumulado 4.345.
+
 ## Lote 805 — 10 de noviembre de 2026
 
 IDs 4346–4350 revisados individualmente; los enunciados originales y cada decisión se conservan en [cambios-lote-805.json](cambios-lote-805.json).
