@@ -1,8 +1,10 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 807 (IDs 4356–4360). Acumulado: 4355 preguntas examinadas individualmente, 4273 verificadas (803 vigentes, 3127 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7768 sin revisar individualmente. Hay 3617 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 808 (IDs 4361–4365). Acumulado: 4360 preguntas examinadas individualmente, 4278 verificadas (804 vigentes, 3131 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7763 sin revisar individualmente. Hay 3621 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
+
+Tras el lote 808, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, 4.360 preguntas examinadas individualmente, 7.763 sin revisar y cero errores estructurales. La publicación del lote y la consulta HTTP sin caché quedan pendientes.
 
 Tras el lote 807, el workflow de GitHub Pages [42812981122](https://github.com/itic-academy/simulador-tic/actions/runs/42812981122), asociado al commit `dd7b546d81a4b73678fbe93c2b8f765598a1705b`, terminó con `success`. La consulta sin caché a la página de revisión devolvió HTTP 200 y confirmó el lote 807, el rango 4356–4360 y el acumulado de 4.355 preguntas examinadas.
 
@@ -78,6 +80,20 @@ Tras el lote 805, el workflow de Pages [42810171592](https://github.com/itic-aca
 Tras el lote 806, el workflow de Pages [42811447674](https://github.com/itic-academy/simulador-tic/actions/runs/42811447674) terminó con `success`; la consulta sin caché devolvió HTTP 200 y confirmó los IDs 4351–4355 y el acumulado 4.350.
 
 Tras el lote 807, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: 12.123 preguntas totales, 4.355 revisadas individualmente, 7.768 sin revisar y cero errores estructurales. Pendiente la publicación y comprobación de Pages.
+
+## Lote 808 — 10 de noviembre de 2026
+
+IDs 4361–4365 revisados individualmente; enunciados originales y decisiones conservados en [cambios-lote-808.json](cambios-lote-808.json).
+
+- **4361 — IEEE 802.1X:** se distingue el control de acceso a red basado en puertos de una norma de velocidad, un RFC de la IETF o un algoritmo de cifrado. Se precisa su uso con EAP en redes WPA2-Enterprise. **Corregida; clave C.**
+- **4362 — modelo de referencia OSI:** se verifica el orden descendente Aplicación, Presentación, Sesión, Transporte, Red, Enlace de datos y Física contra ISO/IEC 7498-1, cuya edición 1994 sigue confirmada como vigente. **Vigente; clave A.**
+- **4363 — IMAP:** se reemplaza el distractor impreciso por el alcance de IMAP4rev2: permite acceder, manipular y buscar mensajes en buzones, pero no define el envío/presentación de correo. **Corregida; clave A.**
+- **4364 — LDAP:** se distingue una especificación de protocolo (RFC 4511) de los productos/servicios que lo implementan; se precisa Active Directory Domain Services. **Corregida; clave D.**
+- **4365 — Dalvik y ART:** se corrigen las erratas y la fecha de sustitución; ART sustituyó a Dalvik como runtime predeterminado desde Android 5.0, y ambos ejecutan DEX. Se separa el bytecode de Android del formato `.class` de Java. **Corregida; clave D.**
+
+Fuentes principales: IEEE, [802.1X-2020 — Port-Based Network Access Control](https://1.ieee802.org/security/802-1x/) y Microsoft Learn, [Configure EAP profiles](https://learn.microsoft.com/en-us/windows-server/networking/technologies/extensible-authentication-protocol/configure-eap-profiles); ISO, [ISO/IEC 7498-1:1994 — estado vigente](https://www.iso.org/standard/20269.html), y texto de la norma [reproducido por Ecma International](https://www.ecma-international.org/wp-content/uploads/s020269e.pdf); IETF, [RFC 9051 (IMAP4rev2)](https://www.rfc-editor.org/rfc/rfc9051.html) y [RFC 6409 (Message Submission)](https://www.rfc-editor.org/rfc/rfc6409.html); IETF, [RFC 4511 LDAPv3](https://www.rfc-editor.org/rfc/rfc4511.html), Microsoft Learn, [AD DS overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview), [ApacheDS](https://directory.apache.org/apacheds/) y [Red Hat Directory Server](https://access.redhat.com/products/red-hat-directory-server/); Android Developers, [Platform architecture](https://developer.android.com/guide/platform) y Android Open Source Project, [Android runtime and Dalvik](https://source.android.com/docs/core/runtime). ITIC Academy: [bloque 46, redes inalámbricas, 2026](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk), [bloque 42, redes, 2026](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), [bloque 43, protocolos, 2026](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk), [tema 122, correo, mensajería y directorios, 2026](https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view?usp=drivesdk), [bloque 47, aplicaciones móviles, 2026](https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk) y [temas 59/62, sistemas operativos, edición 2026](https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk). La clasificación cotejada con [convocatoria A1 TIC AGE 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4361 A1-118/A2-IV-8; 4362 A1-111/A2-II-8; 4363 A1-122/A2-II-8 (correspondencia general de protocolos; el programa A2 no tiene tema específico de correo); 4364 A1-80 (sin epígrafe A2 equivalente); 4365 A1-62/A2-II-2.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: 12.123 preguntas en inventario, 4.360 revisadas individualmente, 7.763 aún sin revisión individual y cero errores estructurales. El inventario no acredita revisión de contenido.
 
 ## Lote 807 — 10 de noviembre de 2026
 
