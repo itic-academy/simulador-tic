@@ -11164,6 +11164,4 @@ Fuentes principales: [PMI Lexicon](https://www.pmi.org/-/media/pmi/documents/reg
 
 ## Estado de publicación
 
-El lote 861 se publicó desde el commit 639862a en main; GitHub Actions run 42908487504 terminó correctamente. GitHub Pages respondió HTTP 200 para README, cambios-lote-861.json e inventario.json; el inventario servido confirma 4.625 revisiones individuales y 7.498 preguntas sin revisar.
-
-El lote 862 está preparado localmente; pendiente de commit, GitHub Actions y verificación de GitHub Pages. Acumulado tras el lote: 4.630 preguntas revisadas individualmente; 7.493 aún sin revisar.
+El lote 862 se publicó desde el commit 99dd865 en main; GitHub Actions run 42910177212 terminó correctamente. GitHub Pages respondió HTTP 200 para revision/README.md, revision/cambios-lote-862.json y revision/inventario.json. Los recursos servidos contienen los IDs 4631–4635 y el inventario publicado confirma 4.547 verificadas (819 vigentes, 3.381 corregidas, 347 históricas), 83 pendientes y 7.493 sin revisar individualmente.
