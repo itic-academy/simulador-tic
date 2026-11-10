@@ -227395,71 +227395,226 @@
       "id": 4506,
       "bloque": 0,
       "tema": 0,
-      "texto": "Desde el punto de vista de un auditor de seguridad indique cuál de las siguientes premisas, sobre control interno de acceso lógico, es inadecuada:",
+      "texto": "Según la recomendación vigente de NIST SP 800-63B-4, ¿qué práctica no debe imponerse como política general de contraseñas?",
       "opciones": [
-        "El sistema debe obligar al usuario a cambiar de contraseña cada cierto tiempo",
-        "El registro o log de acceso al sistema puede desactivarse a petición del responsable de seguridad",
-        "Es conveniente que la autenticación de entrada al sistema se haga una única vez",
-        "El sistema debe rechazar el acceso a los usuarios después de una serie de intentos fallidos"
+        "Exigir que las contraseñas se cambien periódicamente aunque no existan indicios de compromiso.",
+        "Forzar el cambio cuando haya indicios de que el autenticador se ha comprometido.",
+        "Limitar eficazmente los intentos fallidos de autenticación.",
+        "Proteger los registros de auditoría frente a acceso, modificación o borrado no autorizados."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "NIST SP 800-63B-4 prohíbe exigir cambios periódicos de contraseña; sí exige el cambio si hay indicios de compromiso y limita los intentos fallidos. La protección de los registros de auditoría forma parte de NIST SP 800-53 AU-9. La versión heredada tenía más de una opción cuestionable: desactivar logs “a petición” sin autorización ni controles no es una práctica aceptable. El enunciado se ha acotado a la recomendación de contraseña para que exista una única respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-38"
+        ],
+        "A2": [
+          "A2-II-11"
+        ],
+        "bloque_academia": 16,
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 16, Auditoría informática; correspondencia con programa oficial A1-38/A2-II-11."
+      },
+      "etiquetas": [
+        "autenticación",
+        "contraseñas",
+        "registro de auditoría",
+        "NIST SP 800-63B-4",
+        "NIST SP 800-53 AU-9"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+            "referencia": "NIST SP 800-63B-4, §3.1.1: no se deben exigir cambios periódicos de contraseña; sí debe forzarse un cambio si hay indicios de compromiso. La guía vigente se publicó en julio de 2025 y sustituyó SP 800-63B de 2020."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+            "referencia": "NIST SP 800-53 Rev. 5, actualización 5.2.0, familia AU; control AU-9 exige proteger información y herramientas de registro frente a acceso, modificación y borrado no autorizados. AU-9(4) reserva la gestión del logging a un subconjunto de roles privilegiados autorizados."
+          },
+          {
+            "url": "https://csrc.nist.gov/CSRC/media/Projects/risk-management/800-53%20Downloads/800-53r5/SP_800-53_v5_1-derived-OSCAL.pdf",
+            "referencia": "Texto de control AU-9 en la distribución oficial NIST SP 800-53 Rev. 5.1 OSCAL; consultar junto con el portal NIST para conocer la actualización menor 5.2.0."
+          }
+        ],
+        "observaciones": "NIST SP 800-63B-4 prohíbe exigir cambios periódicos de contraseña; sí exige el cambio si hay indicios de compromiso y limita los intentos fallidos. La protección de los registros de auditoría forma parte de NIST SP 800-53 AU-9. La versión heredada tenía más de una opción cuestionable: desactivar logs “a petición” sin autorización ni controles no es una práctica aceptable. El enunciado se ha acotado a la recomendación de contraseña para que exista una única respuesta."
+      }
     },
     {
       "id": 4507,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué se entiende por control concomitante?",
+      "texto": "En el glosario del Manual de Control Interno del Gobierno de la Ciudad Autónoma de Buenos Aires, ¿cuándo se realiza el control concomitante?",
       "opciones": [
-        "Un control a priori.",
-        "Un control en paralelo con el proceso.",
-        "Un control a posteriori.",
-        "Ninguna de las anteriores."
+        "Antes de cada fase de la organización o de la operación.",
+        "Juntamente con cada fase de la organización o de la operación.",
+        "Después de cada fase de la organización o de la operación.",
+        "Sin relación temporal con las fases de la organización o de la operación."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "En la clasificación temporal recogida por el manual porteño, el control concomitante se ejerce mientras se desarrollan las fases organizativas y operativas; se diferencia del previo y del posterior. “Concomitante” puede tener significado jurídico específico según el ordenamiento: la pregunta se limita expresamente a la definición de esa fuente y no la presenta como modalidad universal de auditoría.",
+      "clasificacion": {
+        "A1": [
+          "A1-38"
+        ],
+        "A2": [
+          "A2-II-11"
+        ],
+        "bloque_academia": 16,
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 16, Auditoría informática; correspondencia con programa oficial A1-38/A2-II-11."
+      },
+      "etiquetas": [
+        "control concomitante",
+        "control interno",
+        "auditoría gubernamental",
+        "control previo y posterior"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://boletinoficial.buenosaires.gob.ar/normativaba/norma/20663",
+            "referencia": "Boletín Oficial del Gobierno de la Ciudad de Buenos Aires, Resolución 31/SGCABA/2002, Manual de Control Interno, glosario: control concomitante se realiza juntamente con cada fase de la organización y de las operaciones. La definición es propia de ese marco institucional."
+          }
+        ],
+        "observaciones": "En la clasificación temporal recogida por el manual porteño, el control concomitante se ejerce mientras se desarrollan las fases organizativas y operativas; se diferencia del previo y del posterior. “Concomitante” puede tener significado jurídico específico según el ordenamiento: la pregunta se limita expresamente a la definición de esa fuente y no la presenta como modalidad universal de auditoría."
+      }
     },
     {
       "id": 4508,
       "bloque": 0,
       "tema": 0,
-      "texto": "La declaración de intenciones de alto nivel que refleja los objetivos de la organización es la definición de:",
+      "texto": "En una jerarquía de documentación de seguridad, ¿qué documento expresa a alto nivel la intención, los objetivos y la dirección de la organización?",
       "opciones": [
-        "Normativa",
-        "Política",
-        "Instrucción",
-        "Procedimiento"
+        "Un procedimiento, que enumera los pasos concretos de una tarea.",
+        "Una política, que fija objetivos y dirección general.",
+        "Una instrucción técnica, que prescribe una implementación particular.",
+        "Una norma técnica, que establece requisitos uniformes para aplicar la política."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La política expresa dirección y objetivos a alto nivel. Los estándares o normas y los procedimientos concretan la implementación; en particular, NIST SP 800-12 Rev. 1 define los procedimientos como pasos detallados para realizar tareas. El término “normativa” de la versión anterior era demasiado amplio para ser un distractor preciso.",
+      "clasificacion": {
+        "A1": [
+          "A1-38"
+        ],
+        "A2": [
+          "A2-II-11"
+        ],
+        "bloque_academia": 16,
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 16, Auditoría informática; correspondencia con programa oficial A1-38/A2-II-11."
+      },
+      "etiquetas": [
+        "política de seguridad",
+        "jerarquía documental",
+        "normas",
+        "procedimientos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf",
+            "referencia": "NIST SP 800-12 Rev. 1, §§5.1–5.2: la política establece dirección estratégica a alto nivel, objetivos y propósito; normas y procedimientos desarrollan su aplicación. Los procedimientos describen pasos detallados."
+          }
+        ],
+        "observaciones": "La política expresa dirección y objetivos a alto nivel. Los estándares o normas y los procedimientos concretan la implementación; en particular, NIST SP 800-12 Rev. 1 define los procedimientos como pasos detallados para realizar tareas. El término “normativa” de la versión anterior era demasiado amplio para ser un distractor preciso."
+      }
     },
     {
       "id": 4509,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según la ISACA, una “auditoría de sistemas” se puede definir como:",
+      "texto": "Al definir el alcance de una auditoría de sistemas de información, ¿qué conjunto puede quedar comprendido en una revisión integral?",
       "opciones": [
-        "Auditoría que abarca la revisión y evaluación de todos los aspectos de los sistemas automáticos de procesamiento de la información (o una parte de ellos), incluidos los procedimientos no automáticos relacionados con ellos y las interfaces correspondientes.",
-        "Conjunto de actividades, técnicas, procedimientos y herramientas que nos permiten el control y mejora de los procesos de la organización en el campo de los sistemas de información.",
-        "ISACA no ha dado una definición de Auditoría porque es una organización sin ánimo de lucro que centra su actividad en la seguridad de los sistemas de información.",
-        "La auditoría que centra su actividad sobre los sistemas de una organización, incluyendo los sistemas eléctricos, electrónicos e informáticos, aplicando en los controles la normativa europea dictada por los organismos: CEN, CENELEC, EIS y ETSI."
+        "Los sistemas automatizados de procesamiento de información, los procesos manuales relacionados y las interfaces entre ellos.",
+        "Solo el hardware eléctrico y electrónico, conforme a normas europeas de producto.",
+        "Únicamente las actividades de mejora de procesos, sin revisar controles ni tecnología.",
+        "Ninguna revisión de sistemas de información puede definirse como auditoría si la entidad no tiene ánimo de lucro."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Una auditoría de SI puede delimitarse a una parte del sistema o abarcar en conjunto tecnología, procesos relacionados e interfaces. ISACA reconoce como auditables los sistemas de información manuales y computerizados y diferencia SI de TI porque interactúan componentes de proceso; su material profesional describe la evaluación de políticas, prácticas y controles. Se elimina la atribución de la formulación literal a ISACA, no localizada en el glosario vigente, y se pregunta por el alcance posible, que depende de los objetivos y límites del encargo.",
+      "clasificacion": {
+        "A1": [
+          "A1-38"
+        ],
+        "A2": [
+          "A2-II-11"
+        ],
+        "bloque_academia": 16,
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 16, Auditoría informática; correspondencia con programa oficial A1-38/A2-II-11."
+      },
+      "etiquetas": [
+        "auditoría de sistemas de información",
+        "alcance",
+        "procesos",
+        "interfaces",
+        "ISACA"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.isaca.org/resources/glossary",
+            "referencia": "ISACA Interactive Glossary vigente: define audit, auditable unit e information systems (IS); incluye sistemas de información manuales y computerizados como unidades auditables y diferencia IS de IT por sus componentes de proceso."
+          },
+          {
+            "url": "https://www.isaca.org/resources/isaca-journal/issues/2020/volume-1/helpsource-q-a",
+            "referencia": "ISACA Journal, HelpSource Q&A, vol. 1 (2020): describe IS audit como evaluación de la combinación de políticas, procedimientos, estándares y prácticas y la revisión de diseño, implantación y eficacia de controles. Se utiliza como orientación de alcance, no como cita literal del enunciado histórico."
+          }
+        ],
+        "observaciones": "Una auditoría de SI puede delimitarse a una parte del sistema o abarcar en conjunto tecnología, procesos relacionados e interfaces. ISACA reconoce como auditables los sistemas de información manuales y computerizados y diferencia SI de TI porque interactúan componentes de proceso; su material profesional describe la evaluación de políticas, prácticas y controles. Se elimina la atribución de la formulación literal a ISACA, no localizada en el glosario vigente, y se pregunta por el alcance posible, que depende de los objetivos y límites del encargo."
+      }
     },
     {
       "id": 4510,
       "bloque": 0,
       "tema": 0,
-      "texto": "La auditoría de sistemas de información se puede considerar como:",
+      "texto": "Según la definición de ISACA, ¿cómo se denomina una auditoría cuyo objetivo es evaluar los controles internos, la economía y la eficiencia de una función o departamento?",
       "opciones": [
-        "Una auditoría de eficiencia",
-        "Una auditoría de eficacia",
-        "Una auditoría operativa",
-        "Una auditoría de legalidad"
+        "Auditoría financiera.",
+        "Auditoría de eficacia de un programa.",
+        "Auditoría operativa.",
+        "Auditoría de cumplimiento legal."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "ISACA define operational audit como la auditoría diseñada para evaluar los controles internos, la economía y la eficiencia de una función o departamento. Una auditoría de sistemas de información no es siempre operativa: su clasificación depende del objetivo y alcance. La nueva formulación pregunta por ese objetivo concreto y evita la generalización de la pregunta heredada.",
+      "clasificacion": {
+        "A1": [
+          "A1-38"
+        ],
+        "A2": [
+          "A2-II-11"
+        ],
+        "bloque_academia": 16,
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 16, Auditoría informática; correspondencia con programa oficial A1-38/A2-II-11."
+      },
+      "etiquetas": [
+        "auditoría operativa",
+        "controles internos",
+        "economía",
+        "eficiencia",
+        "ISACA"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.isaca.org/resources/glossary",
+            "referencia": "ISACA Interactive Glossary, voz “Operational audit”: auditoría diseñada para evaluar controles internos, economía y eficiencia de una función o departamento."
+          }
+        ],
+        "observaciones": "ISACA define operational audit como la auditoría diseñada para evaluar los controles internos, la economía y la eficiencia de una función o departamento. Una auditoría de sistemas de información no es siempre operativa: su clasificación depende del objetivo y alcance. La nueva formulación pregunta por ese objetivo concreto y evita la generalización de la pregunta heredada."
+      }
     },
     {
       "id": 4511,
