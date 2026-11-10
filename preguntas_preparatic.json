@@ -232182,71 +232182,277 @@
       "id": 4606,
       "bloque": 0,
       "tema": 0,
-      "texto": "El conjunto de especificaciones orientadas al intercambio de datos entre Administraciones Públicas con el objetivo de eliminar los certificados administrativos en papel se denomina:",
+      "texto": "El conjunto de especificaciones para el intercambio electrónico de datos entre Administraciones Públicas que permite sustituir certificados administrativos en soporte papel se denomina:",
       "opciones": [
-        "SCCD",
-        "SCSP",
-        "Plataforma de intermedicación",
-        "Ninguno de los anteriores"
+        "SCCD.",
+        "SCSP (Sustitución de Certificados en Soporte Papel).",
+        "Plataforma de Intermediación de Datos.",
+        "Ninguno de los anteriores."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "SCSP es el conjunto de especificaciones/protocolo que normaliza el intercambio de datos para evitar pedir al interesado certificados que ya obran en poder de una Administración. La Plataforma de Intermediación de Datos es el servicio/plataforma que facilita consultas; no es la denominación del conjunto de especificaciones. La documentación PAe mantiene SCSP v3.3 con especificaciones actualizadas en 2026.",
+      "clasificacion": {
+        "A1": [
+          "A1-49"
+        ],
+        "A2": [
+          "A2-I-10"
+        ],
+        "bloque_academia": 23,
+        "estado": "revisada",
+        "nota": "Revisión individual contrastada con fuente primaria y programa oficial; cotejo ITIC Academy bloque 23 actualizado 2026."
+      },
+      "etiquetas": [
+        "revisión individual 4606"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/ctt/scsp",
+            "reference": "PAe, solución SCSP: nombre, objeto y descripción oficial; actualización de especificaciones SCSPv3.3 en la zona de descargas."
+          },
+          {
+            "url": "https://administracionelectronica.gob.es/ctt/scsp/descargas",
+            "reference": "PAe, documentación de integradores SCSPv3.3, especificaciones funcionales/técnicas y NTI de Protocolos de Intermediación de Datos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1NWEg_hd3iDIC0kIitK-u8BpmJ20Jecmw/view?usp=drivesdk",
+            "reference": "ITIC Academy, bloque 23 Servicios comunes, sección PID/SCSP y servicios de interoperabilidad (2026)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "reference": "Convocatoria A1 2025, anexo I; tema(s) relacionado(s): A1-49."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "reference": "Convocatoria A2 2025, anexo IX; tema(s) relacionado(s): A2-I-10."
+          }
+        ],
+        "observaciones": "SCSP es el conjunto de especificaciones/protocolo que normaliza el intercambio de datos para evitar pedir al interesado certificados que ya obran en poder de una Administración. La Plataforma de Intermediación de Datos es el servicio/plataforma que facilita consultas; no es la denominación del conjunto de especificaciones. La documentación PAe mantiene SCSP v3.3 con especificaciones actualizadas en 2026."
+      }
     },
     {
       "id": 4607,
       "bloque": 0,
       "tema": 0,
-      "texto": "Una LAN virtual privada (PVLAN):",
+      "texto": "En una VLAN privada (PVLAN), ¿con qué puertos de la PVLAN puede comunicarse un puerto aislado (isolated)?",
       "opciones": [
-        "Contiene un subconjunto de puertos que únicamente pueden comunicarse entre si.",
-        "Se trata de una VLAN con restricciones de acceso según el origen del tráfico.",
-        "Contiene múltiples puertos que únicamente pueden comunicarse con un único puerto predeterminado.",
-        "Ninguna de las anteriores."
+        "Con cualquier otro puerto aislado y con los puertos promiscuos.",
+        "Con todos los puertos de su VLAN de comunidad.",
+        "Solo con los puertos promiscuos asociados; no con otros puertos aislados ni con los de comunidad.",
+        "Con ningún puerto, incluidos los puertos promiscuos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "En una PVLAN, un puerto aislado tiene separación de capa 2 respecto de otros puertos del dominio y solo intercambia tráfico con puertos promiscuos asociados. Los puertos de comunidad sí se comunican entre sí y con los promiscuos. Se explicita el tipo de puerto para evitar atribuir el comportamiento a todos los puertos de la PVLAN.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": 42,
+        "estado": "revisada",
+        "nota": "Revisión individual contrastada con fuente primaria y programa oficial; cotejo ITIC Academy bloque 42 actualizado 2026."
+      },
+      "etiquetas": [
+        "revisión individual 4607"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/private-vlans-pvlans-promiscuous-isolated-community/40781-194.html",
+            "reference": "Cisco, documentación técnica de PVLAN: puertos isolated solo se comunican con promiscuous; community se comunica dentro de su comunidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "reference": "ITIC Academy, bloque 42 Redes (2026), sección VLAN privadas: aislados, promiscuos y de comunidad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "reference": "Convocatoria A1 2025, anexo I; tema(s) relacionado(s): A1-118."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "reference": "Convocatoria A2 2025, anexo IX; tema(s) relacionado(s): A2-IV-8."
+          }
+        ],
+        "observaciones": "En una PVLAN, un puerto aislado tiene separación de capa 2 respecto de otros puertos del dominio y solo intercambia tráfico con puertos promiscuos asociados. Los puertos de comunidad sí se comunican entre sí y con los promiscuos. Se explicita el tipo de puerto para evitar atribuir el comportamiento a todos los puertos de la PVLAN."
+      }
     },
     {
       "id": 4608,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es el ámbito del Registro Electrónico Común?",
+      "texto": "Según el artículo 16 de la Ley 39/2015, ¿qué regla se aplica al Registro Electrónico General y a los registros electrónicos de las Administraciones Públicas?",
       "opciones": [
-        "Todas las Administraciones Públicas.",
-        "La Administración General del Estado y la Administración Autonómica.",
-        "La Ley 39/2015 habla de un Registro Electrónico General para cada Administración, con el que deberán ser interoperables el resto de registros dependientes.",
-        "La Secretaria de Estado de Administraciones Públicas, como responsable de su gestión."
+        "Existe un único registro estatal obligatorio para todas las Administraciones Públicas.",
+        "La ley establece dos registros comunes, uno estatal y otro autonómico.",
+        "Cada Administración dispone de un Registro Electrónico General; los registros de los organismos dependientes pueden existir si son interoperables e interconectados con él.",
+        "El Registro Electrónico General de cada Administración está gestionado necesariamente por la Secretaría de Estado de Administraciones Públicas."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La Ley 39/2015, art. 16, dispone que cada Administración tenga un Registro Electrónico General. Los organismos vinculados o dependientes pueden tener registros propios interoperables e interconectados; el registro general funciona como portal de acceso. El enunciado original hablaba de «Registro Electrónico Común», término que no define adecuadamente el alcance legal general.",
+      "clasificacion": {
+        "A1": [
+          "A1-49"
+        ],
+        "A2": [
+          "A2-I-9",
+          "A2-I-10"
+        ],
+        "bloque_academia": 3,
+        "estado": "revisada",
+        "nota": "Revisión individual contrastada con fuente primaria y programa oficial; cotejo ITIC Academy bloque 03 actualizado 2026."
+      },
+      "etiquetas": [
+        "revisión individual 4608"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/eli/es/l/2015/10/01/39/con",
+            "reference": "Ley 39/2015, texto consolidado, art. 16: Registro Electrónico General de cada Administración, registros de organismos dependientes e interoperabilidad."
+          },
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-5032",
+            "reference": "RD 203/2021, arts. 37 y 60, registros electrónicos e interconexión/interoperabilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk",
+            "reference": "ITIC Academy, bloque 03 Actuación administrativa (2026), art. 16 y registros electrónicos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "reference": "Convocatoria A1 2025, anexo I; tema(s) relacionado(s): A1-49."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "reference": "Convocatoria A2 2025, anexo IX; tema(s) relacionado(s): A2-I-9, A2-I-10."
+          }
+        ],
+        "observaciones": "La Ley 39/2015, art. 16, dispone que cada Administración tenga un Registro Electrónico General. Los organismos vinculados o dependientes pueden tener registros propios interoperables e interconectados; el registro general funciona como portal de acceso. El enunciado original hablaba de «Registro Electrónico Común», término que no define adecuadamente el alcance legal general."
+      }
     },
     {
       "id": 4609,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el ámbito de la tecnología WDM (Wavelength Division Multiplexing o Multiplexación por división de la longitud de onda), señale cuál de las siguientes afirmaciones es INCORRECTA:",
+      "texto": "Señale la afirmación INCORRECTA sobre las tecnologías CWDM y DWDM:",
       "opciones": [
-        "DWDM proporciona un mayor número de canales ópticos que CWDM con una mayor dispersión cromática de los mismos.",
-        "CWDM permite menores distancias de transmisión, con la contrapartida de un mayor espectro óptico y costes menores de los equipos.",
-        "El uso de amplificadores de fibra dopada con erbio (EDFA) permite aumentar la distancia de transmisión de los sistemas DWDM.",
-        "DWDM opera habitualmente en las bandas C y L, con espaciados entre canales desde los 50GHz."
+        "DWDM utiliza una rejilla de frecuencias más densa que CWDM y puede transportar más canales ópticos.",
+        "CWDM usa una rejilla de longitudes de onda con separaciones mucho mayores que la rejilla DWDM.",
+        "Los amplificadores ópticos EDFA pueden emplearse en sistemas multicanal de larga distancia.",
+        "La menor separación entre canales DWDM implica por sí sola que la dispersión cromática de la fibra sea necesariamente mayor que en CWDM."
       ],
-      "respuesta_correcta": 0,
-      "comentarios": ""
+      "respuesta_correcta": 3,
+      "comentarios": "La opción D es incorrecta: la dispersión cromática es una característica de la fibra y del diseño/sistema óptico, y no se deduce simplemente de que los canales DWDM estén más próximos. UIT-T G.694.1 define rejillas DWDM fijas/flexibles; G.694.2 define CWDM, incluida su rejilla de 20 nm, más amplia. UIT-T G.663 trata aplicaciones de amplificadores ópticos. La opción original atribuía a DWDM «mayor dispersión» sin acotar la causa y presentaba datos de rejilla como si fueran universales.",
+      "clasificacion": {
+        "A1": [
+          "A1-113"
+        ],
+        "A2": [
+          "A2-IV-10"
+        ],
+        "bloque_academia": 42,
+        "estado": "revisada",
+        "nota": "Revisión individual contrastada con fuente primaria y programa oficial; cotejo ITIC Academy bloque 42 actualizado 2026."
+      },
+      "etiquetas": [
+        "revisión individual 4609"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.694.1-202010-I",
+            "reference": "UIT-T G.694.1 (10/2020), rejilla de frecuencias DWDM fija y flexible."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.694.2",
+            "reference": "UIT-T G.694.2, rejilla de longitudes de onda CWDM; separación de 20 nm en la rejilla convencional."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.663",
+            "reference": "UIT-T G.663, aspectos de aplicación de amplificadores ópticos en sistemas multicanal y de larga distancia."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "reference": "ITIC Academy, bloque 42 Redes (2026), DWDM/CWDM, fibra y amplificadores EDFA."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "reference": "Convocatoria A1 2025, anexo I; tema(s) relacionado(s): A1-113."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "reference": "Convocatoria A2 2025, anexo IX; tema(s) relacionado(s): A2-IV-10."
+          }
+        ],
+        "observaciones": "La opción D es incorrecta: la dispersión cromática es una característica de la fibra y del diseño/sistema óptico, y no se deduce simplemente de que los canales DWDM estén más próximos. UIT-T G.694.1 define rejillas DWDM fijas/flexibles; G.694.2 define CWDM, incluida su rejilla de 20 nm, más amplia. UIT-T G.663 trata aplicaciones de amplificadores ópticos. La opción original atribuía a DWDM «mayor dispersión» sin acotar la causa y presentaba datos de rejilla como si fueran universales."
+      }
     },
     {
       "id": 4610,
       "bloque": 0,
       "tema": 0,
-      "texto": "La seguridad en red en las organizaciones se basa en la implementación de múltiples barreras de seguridad. Los cortafuegos son una de las principales barreras utilizadas, ¿cuál de las siguientes características NO le aplica a los cortafuegos?",
+      "texto": "Un cortafuegos puede ofrecer funciones como filtrado de paquetes, NAT y pasarela VPN. ¿Cuál de las siguientes es un control de acceso a la red que no constituye por sí mismo una función básica inherente a todo cortafuegos, aunque algunos productos lo integren?",
       "opciones": [
-        "Filtrado de paquete.",
-        "NAT - Network Address Traslation.",
-        "VPN - Virtual Private Network.",
-        "NAC - Network Access Control."
+        "Filtrado de paquetes.",
+        "NAT (Network Address Translation).",
+        "VPN (Virtual Private Network).",
+        "NAC (Network Access Control)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "El filtrado es función esencial del cortafuegos y muchos productos integran NAT o terminación VPN. NAC es una disciplina/funcionalidad separable para decidir el acceso de usuarios o dispositivos según identidad/estado; NIST incluso señala que algunos cortafuegos ofrecen NAC, por lo que el enunciado ahora limita la respuesta a una función básica inherente a todos y reconoce integraciones de producto.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": 48,
+        "estado": "revisada",
+        "nota": "Revisión individual contrastada con fuente primaria y programa oficial; cotejo ITIC Academy bloque 48 actualizado 2026."
+      },
+      "etiquetas": [
+        "revisión individual 4610"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/firewall",
+            "reference": "NIST CSRC, definición de cortafuegos como puerta de enlace que controla/restringe tráfico entre redes."
+          },
+          {
+            "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=901083",
+            "reference": "NIST SP 800-41 Rev. 1, funciones de filtrado y NAT; glosario indica que algunos cortafuegos sí proporcionan NAC, de ahí la precisión del nuevo enunciado."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "reference": "ITIC Academy, bloque 48 Seguridad en redes (2026), cortafuegos y control de accesos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "reference": "Convocatoria A1 2025, anexo I; tema(s) relacionado(s): A1-125."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "reference": "Convocatoria A2 2025, anexo IX; tema(s) relacionado(s): A2-IV-12."
+          }
+        ],
+        "observaciones": "El filtrado es función esencial del cortafuegos y muchos productos integran NAT o terminación VPN. NAC es una disciplina/funcionalidad separable para decidir el acceso de usuarios o dispositivos según identidad/estado; NIST incluso señala que algunos cortafuegos ofrecen NAC, por lo que el enunciado ahora limita la respuesta a una función básica inherente a todos y reconoce integraciones de producto."
+      }
     },
     {
       "id": 4611,
