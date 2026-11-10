@@ -232458,7 +232458,7 @@
       "id": 4611,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuál de las siguientes herramientas automáticas para la evaluación manual de la accesibilidad permite realizar análisis de páginas en local, dentro de intranets, en desarrollo o de acceso restringido.",
+      "texto": "¿Qué herramienta de evaluación de accesibilidad permite indicar una URL, subir un archivo HTML o pegar el código fuente HTML para obtener un informe?",
       "opciones": [
         "TAW Online.",
         "eXaminator.",
@@ -232466,55 +232466,223 @@
         "SortSite."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "AChecker documenta expresamente las tres entradas: dirección de una página, archivo HTML y código fuente pegado. La pregunta se limita a esa función concreta: la carga/pegado permite evaluar código disponible localmente aunque el servidor de comprobación no pueda acceder a una intranet. No debe confundirse con afirmar que cualquier servicio web puede rastrear una URL privada: SortSite Desktop también puede navegar sitios con contraseña, por lo que el enunciado original, que hablaba genéricamente de intranets y desarrollo, admitía más de una herramienta.",
+      "clasificacion": {
+        "A1": [
+          "A1-44"
+        ],
+        "A2": [
+          "A2-III-14"
+        ],
+        "bloque_academia": 30,
+        "estado": "revisada",
+        "nota": "Revisión individual contrastada con documentación primaria de AChecker y SortSite, programas oficiales y temario ITIC Academy 2026 en accesibilidad web."
+      },
+      "etiquetas": [
+        "revisión individual 4611"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://achecks.org/documentation/frame_content.php?p=checker%2Findex.php",
+            "reference": "Documentación oficial AChecker: evaluación introduciendo URL, cargando un archivo HTML o pegando su código fuente."
+          },
+          {
+            "url": "https://www.powermapper.com/products/sortsite/man/win/",
+            "reference": "Manual oficial SortSite Desktop: navegación por sitios protegidos con contraseña; confirma que el enunciado original sobre intranets podía solaparse con SortSite."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "reference": "Convocatoria A1 2025, anexo I, tema A1-44 sobre accesibilidad y usabilidad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "reference": "Convocatoria A2 2025, anexo IX, tema A2-III-14 sobre accesibilidad, diseño universal y usabilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "reference": "ITIC Academy, bloque 30 Tecnología de sistemas de información, edición 2026; contraste curricular de estándares/herramientas web y accesibilidad del temario."
+          }
+        ],
+        "observaciones": "AChecker permite URL, archivo HTML o código HTML pegado. Se acota el enunciado a esta función inequívoca; SortSite Desktop también admite navegar webs con contraseña, de modo que la formulación original sobre intranet/acceso restringido no discriminaba una única respuesta."
+      }
     },
     {
       "id": 4612,
       "bloque": 0,
       "tema": 0,
-      "texto": "El lenguaje Java es un lenguaje:",
+      "texto": "Respecto de la herencia en Java, señale la afirmación correcta:",
       "opciones": [
-        "De herencia simple",
-        "De herencia múltiple",
-        "Que no permite la herencia",
-        "Todas las anteriores son falsas"
+        "Cada clase (salvo Object) tiene una única superclase directa; las interfaces pueden extender varias interfaces.",
+        "Una clase puede extender directamente varias clases.",
+        "Java no permite la herencia.",
+        "Tanto las clases como las interfaces solo admiten herencia simple."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La especificación del lenguaje establece herencia simple de clases: toda clase salvo java.lang.Object tiene una sola superclase directa. Las interfaces pueden tener varias superinterfaces; por ello no es correcto generalizar que Java sea simplemente un lenguaje de herencia simple sin matizar clases e interfaces.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": 30,
+        "estado": "revisada",
+        "nota": "Revisión individual contrastada con la especificación vigente del lenguaje Java, programas oficiales y temario ITIC Academy 2026 de Java/Jakarta EE."
+      },
+      "etiquetas": [
+        "revisión individual 4612"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/java/javase/26/docs/specs/jls/index.html",
+            "reference": "Java Language Specification, edición Java SE 26, capítulos 8 y 9: superclase directa única para clases; interfaces con superinterfaces."
+          },
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html",
+            "reference": "Oracle Java Tutorials: cada clase excepto Object tiene exactamente una superclase directa."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "reference": "Convocatoria A1 2025, anexo I, tema A1-67: entorno de desarrollo Java."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "reference": "Convocatoria A2 2025, anexo IX, tema A2-III-10: arquitectura Java EE/Jakarta EE."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "reference": "ITIC Academy, bloque 30 Tecnologías de sistemas de información, edición 2026; apartado A1-67 Java y Java/Jakarta EE."
+          }
+        ],
+        "observaciones": "Se distingue herencia de implementación de clases de la herencia múltiple de interfaces. La frase original «Java es un lenguaje de herencia simple» era demasiado amplia."
+      }
     },
     {
       "id": 4613,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale el criterio falso en la migración de aplicaciones en el marco de un ajuste dimensional:",
+      "texto": "En un ajuste dimensional que migra aplicaciones de un mainframe a un entorno distribuido, señale la afirmación incorrecta:",
       "opciones": [
-        "Interconectividad: las aplicaciones que requieren un alto grado de conectividad entre los usuarios son las que mejor se adaptan a ser implementadas en un entorno descentralizado sobre una red de área local.",
-        "Requisitos de tiempo de respuesta: a veces conviene descentralizar la información para asegurar un tiempo de respuesta rápido, evitando esperas en el acceso a las bases de datos residentes en el mainframe.",
-        "Seguridad: las aplicaciones con unos requisitos estrictos de seguridad tanto en lo referente a la protección de información sensible, como en lo que respecta a los daños accidentales son candidatas ideales para el ajuste dimensional.",
-        "Control: al migrar aplicaciones desde un entorno centralizado a uno distribuido se pierde control sobre las mismas. No obstante, están surgiendo herramientas que permiten controlar eficaz y centralizadamente la distribución e instalación."
+        "El downsizing redistribuye carga del mainframe hacia equipos de menor coste, con frecuencia más próximos a los usuarios.",
+        "El tiempo de respuesta puede ser un criterio; acercar ciertos procesos o datos puede reducir esperas, según la arquitectura y las dependencias.",
+        "El mero hecho de que una aplicación tenga requisitos estrictos de seguridad la convierte, por sí solo, en candidata ideal al downsizing, sin evaluar riesgos ni controles.",
+        "La pérdida de control centralizado puede ser un reto de la distribución; herramientas de gestión de configuración y despliegue pueden mitigarlo."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El ajuste dimensional no convierte automáticamente una carga sensible en candidata idónea. La decisión debe evaluar requisitos, riesgos, dependencias, controles y trade-offs del destino. IBM describe las ventajas de seguridad, resiliencia y concentración de datos del mainframe y los compromisos de mover cargas; las guías de NIST para arquitecturas distribuidas muestran que estas pueden securizarse, pero requieren arquitectura y controles explícitos. Por tanto, ni la sensibilidad excluye siempre una migración ni la hace ideal por sí sola. Se reescribe la alternativa como afirmación categórica inequívocamente falsa y se conservan los criterios de conectividad, rendimiento, seguridad y control del tema de Academy.",
+      "clasificacion": {
+        "A1": [
+          "A1-100"
+        ],
+        "A2": [
+          "A2-II-6"
+        ],
+        "bloque_academia": 39,
+        "estado": "revisada",
+        "nota": "Revisión individual contrastada con documentación técnica primaria de IBM/NIST, programa oficial de migración y temario ITIC Academy 2026 de migración/arquitectura."
+      },
+      "etiquetas": [
+        "revisión individual 4613"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/think/topics/mainframe-modernization",
+            "reference": "IBM, modernización de mainframe: elección del destino según la carga; mantener algunas cargas en mainframe por seguridad o SLA y ponderar compromisos de migrarlas."
+          },
+          {
+            "url": "https://www.ibm.com/think/insights/application-modernization-a-rapid-assessment-approach",
+            "reference": "IBM, evaluación de cartera de aplicaciones para asignar un destino de modernización/migración; respalda una selección basada en evaluación, no una regla automática."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/1800/35/final",
+            "reference": "NIST SP 1800-35 (2025): arquitecturas zero trust que protegen recursos distribuidos entre entornos locales y cloud mediante diseño/controles; la distribución no es por sí misma una garantía de seguridad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "reference": "Convocatoria A1 2025, anexo I, tema A1-100: migración de aplicaciones, ajuste dimensional y obsolescencia técnica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "reference": "Convocatoria A2 2025, anexo IX, tema A2-II-6: arquitecturas cliente-servidor, multicapas y multidispositivo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "reference": "ITIC Academy, bloque 39 Calidad y mantenimiento, actualización 2026; incluye A1-100 y la migración por ajuste dimensional."
+          }
+        ],
+        "observaciones": "La seguridad estricta exige evaluar idoneidad y diseñar controles; no basta para afirmar que una aplicación sea candidata ideal. IBM detalla ventajas/trade-offs de mainframe y migración y NIST documenta controles para recursos distribuidos. El temario Academy 2017 (tema 95, localizado en Drive) se cotejó como antecedente didáctico, no como autoridad técnica vigente; la clasificación se toma del programa oficial actual."
+      }
     },
     {
       "id": 4614,
       "bloque": 0,
       "tema": 0,
-      "texto": "El nivel de enlace del modelo de referencia OSI:",
+      "texto": "¿Cuál es una función propia del nivel de enlace de datos (capa 2) del modelo OSI?",
       "opciones": [
-        "Determina cuántos y por donde son enviados los paquetes desde la fuente al destino",
-        "Resuelve los problemas planteados por la falta de fiabilidad de los circuitos",
-        "Se mantiene a la escucha por si el emisor envía algún mensaje. Posteriormente determina cuál es el destinatario del mismo",
-        "Se asegura de que todos los caminos posibles entre el emisor y el receptor están operativos"
+        "Seleccionar rutas entre redes y encaminar paquetes hasta la red de destino.",
+        "Detectar y, según el protocolo y el modo de servicio, posiblemente corregir o recuperar errores que se producen en el nivel físico.",
+        "Transmitir directamente flujos de bits mediante señales eléctricas, ópticas o de radio.",
+        "Proporcionar fiabilidad y recuperación extremo a extremo entre procesos de aplicación."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "ITU-T X.200, §7.6.2.2, asigna a la capa de enlace detectar y posiblemente corregir errores del nivel físico; §7.6.4 describe recuperación de error en el servicio orientado a conexión. No todos los protocolos de enlace implementan las mismas funciones de recuperación. El encaminamiento entre redes corresponde principalmente a la capa de red, los bits al nivel físico y la fiabilidad extremo a extremo puede proporcionarla transporte. Se sustituyen distractores vagos del original por funciones distinguibles.",
+      "clasificacion": {
+        "A1": [
+          "A1-111"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": 43,
+        "estado": "revisada",
+        "nota": "Revisión individual contrastada con ITU-T X.200, RFC 1122, programas oficiales y temario ITIC Academy 2026 de protocolos/OSI."
+      },
+      "etiquetas": [
+        "revisión individual 4614"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+            "reference": "ITU-T X.200/ISO 7498-1, §§7.6.2.2 y 7.6.4: enlace detecta y puede corregir errores físicos; recuperación de errores en conexión-mode."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+            "reference": "RFC 1122, §§1 y 2: diferencia la trama de enlace, su interfaz con la red local y la función de encaminamiento del nivel IP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "reference": "Convocatoria A1 2025, anexo I, tema A1-111: modelo de referencia OSI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "reference": "Convocatoria A2 2025, anexo IX, tema A2-II-8: modelo OSI y TCP/IP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "reference": "ITIC Academy, bloque 43 Protocolos, actualización 2026, mapa oficial A1-111 y contenido de capas OSI."
+          }
+        ],
+        "observaciones": "Se limita la respuesta a la detección y posible corrección/recuperación de errores de la capa física; estos servicios dependen del protocolo. La definición anterior «resuelve los problemas de falta de fiabilidad» era demasiado general y otras alternativas podían describir MAC/enlace o funciones de capa 2."
+      }
     },
     {
       "id": 4615,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué Guía CCN-STIC de seguridad versa acerca de la Gestión y uso de dispositivos móviles?",
+      "texto": "¿Qué guía CCN-STIC lleva por título «Gestión y uso de dispositivos móviles»?",
       "opciones": [
         "CCN-STIC 820.",
         "CCN-STIC 822.",
@@ -232522,7 +232690,50 @@
         "CCN-STIC 827."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La guía CCN-STIC 827 del Esquema Nacional de Seguridad se titula «Gestión y Uso de Dispositivos Móviles». El portal oficial del CCN conserva la ficha y el PDF de esa guía. Se pregunta por el número y el título de una publicación identificable, sin presentar el documento de 2014 como si fuera por sí solo la normativa vigente completa sobre móviles.",
+      "clasificacion": {
+        "A1": [
+          "A1-54",
+          "A1-48"
+        ],
+        "A2": [
+          "A2-I-9",
+          "A2-IV-15"
+        ],
+        "bloque_academia": 47,
+        "estado": "revisada",
+        "nota": "Revisión individual contrastada con catálogo/documento primario del CCN, programas oficiales vigentes y temario ITIC Academy 2026 sobre móviles y seguridad."
+      },
+      "etiquetas": [
+        "revisión individual 4615"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.ccn-cert.cni.es/gl/pdf/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad?format=html&limit=25&limitstart=50",
+            "reference": "Catálogo oficial CCN-STIC serie 800: ficha CCN-STIC-827, título Gestión y uso de dispositivos móviles y descarga del PDF."
+          },
+          {
+            "url": "https://www.ccn-cert.cni.es/es/comunicacion-eventos/comunicados-ccn-cert/1842-guia-de-gestion-y-uso-de-dispositivos-movilesdel-ccn?format=html",
+            "reference": "CCN-CERT, anuncio oficial de la Guía CCN-STIC 827 y su objeto."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "reference": "Convocatoria A1 2025, anexo I, temas A1-48 (CCN-STIC/ENS) y A1-54 (dispositivos móviles y sus medidas de seguridad/gestión)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "reference": "Convocatoria A2 2025, anexo IX, tema A2-I-9 (ENS y guías CCN-STIC) y A2-IV-15 (sistemas móviles y MDM/EMM/UEM)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+            "reference": "ITIC Academy, bloque 47 Aplicaciones móviles y sistemas operativos, actualización 2026; cotejo curricular de dispositivos y gestión móvil."
+          }
+        ],
+        "observaciones": "La respuesta identificadora es CCN-STIC 827. La guía se publicó en 2014 y se usa aquí para identificar su título; no se infiere que sustituya a la normativa o guías actuales."
+      }
     },
     {
       "id": 4616,
