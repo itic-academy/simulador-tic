@@ -1,12 +1,40 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Lote local preparado: 855 (IDs 4596–4600), pendiente de publicar y verificar. Acumulado local: 4.595 preguntas examinadas individualmente, 4.512 verificadas (817 vigentes, 3.348 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.528 sin revisar individualmente. Hay 3.824 preguntas con cambios en enunciado, opciones o clave frente al original.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Lote local preparado: 856 (IDs 4601–4605), pendiente de publicar y verificar. Acumulado local: 4.600 preguntas examinadas individualmente, 4.517 verificadas (817 vigentes, 3.353 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.523 sin revisar individualmente. Hay 3.829 preguntas con cambios en enunciado, opciones o clave frente al original.
 
 
 
 
+
+## Lote 856 — 10 de noviembre de 2026
+
+IDs 4601–4605 revisados individualmente; originales y decisiones conservados en [cambios-lote-856.json](cambios-lote-856.json). Acumulado local: 4.600 examinadas, 4.517 verificadas (817 vigentes, 3.353 corregidas y 347 históricas), 83 pendientes documentadas y 7.523 todavía sin revisar individualmente. Se actualiza la referencia sobre firma tras la adopción del Reglamento de Ejecución (UE) 2026/248, que deroga la Decisión 2015/1506 pero aplica sus disposiciones principales sobre formatos desde 2027; además, se precisan encapsulación OO, Registro de Funcionarios Habilitados, OFDMA descendente LTE y diagramas UML de actividad.
+
+- **4601 — formatos de firma electrónica avanzada:** se reemplaza la combinación obsoleta/ambigua de NTI 2011, Catálogo de estándares y Decisión 2015/1506 por una pregunta fechada sobre la entrada en vigor de los artículos 1.1 y 3.1 del Reglamento (UE) 2026/248: 23 de febrero de 2027. La Decisión 2015/1506 queda derogada; hay una transición para formatos anteriores creados antes del 23 de febrero de 2028. A1-80/A1-81/A2-I-6; Academy, bloque 48.
+- **4602 — encapsulación:** se define como ocultación del estado y control del acceso mediante interfaz/métodos, evitando una taxonomía discutible de «propiedades» OO. A1-89/A2-III-9; Academy, bloque 38.
+- **4603 — Orden PCM/1383/2021:** se conserva el Registro de Funcionarios Habilitados y se explicita su ámbito. A1-49/A2-I-9/A2-I-10; Academy, bloque 23, actualizado 2026.
+- **4604 — acceso radio LTE:** se pregunta específicamente por enlace descendente, con OFDMA. Se añade que LTE usa SC-FDMA (DFT-s-OFDM) en el ascendente. A1-112/A2-IV-11; Academy, bloque 46.
+- **4605 — UML:** se define el diagrama de actividad como representación de flujos de control/objetos entre acciones y actividades, distinto de diagramas de interacción y máquinas de estados. A1-90/A2-III-9; Academy, bloque 38.
+
+Fuentes primarias: [Reglamento de Ejecución (UE) 2026/248](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32026R0248), [NTI de Política de Firma (BOE-A-2016-10146)](https://www.boe.es/buscar/act.php?id=BOE-A-2016-10146), [Oracle Java Tutorials, objetos/encapsulación](https://docs.oracle.com/javase/tutorial/java/concepts/object.html), [Orden PCM/1383/2021 (BOE-A-2021-20478)](https://www.boe.es/buscar/act.php?id=BOE-A-2021-20478), [3GPP TS 36.211](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=2425), [3GPP, LTE-Advanced](https://www.3gpp.org/images/PDF/lte_advanced_SAI_paper.pdf) y [OMG UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/PDF). Correspondencia contrastada con [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) (temas 49, 80, 81, 89, 90, 112) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) (I-6, I-9, I-10, III-9, IV-11). Academy cotejada: [bloque 23, servicios comunes](https://drive.google.com/file/d/1NWEg_hd3iDIC0kIitK-u8BpmJ20Jecmw/view?usp=drivesdk), [bloque 38, análisis/diseño](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), [bloque 46, redes inalámbricas](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk) y [bloque 48, seguridad/firma](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk). Academy se usa como cotejo curricular, no como autoridad normativa.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas válidas, 4.600 registros individuales, 83 pendientes y 7.523 sin revisar individualmente. El lote queda pendiente de publicación y verificación.
 
 ## Lote 855 — 10 de noviembre de 2026
+
+IDs 4596–4600 revisados individualmente; originales y decisiones conservados en [cambios-lote-855.json](cambios-lote-855.json). Acumulado: 4.595 examinadas, 4.512 verificadas (817 vigentes, 3.348 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.528 sin revisar individualmente. Se acotan GPON/ONT, MÉTRICA, criptografía asimétrica, capa OSI y campo VID de IEEE 802.1Q. GitHub Pages devolvió HTTP 200 para README, registro 855 e inventario (12.123 preguntas, 3.348 corregidas, 83 pendientes y 7.528 sin revisar); workflow 42899290050 completado correctamente para el commit 21564dc.
+
+- **4596 — GPON/ONT:** se acota ONT al equipo de terminación del abonado en FTTH. UIT-T distingue ONU como término genérico y recoge el uso de ONT para la terminación/ONU individual del cliente. A1-112; sin correspondencia A2 específica equivalente. Academy, bloque 43.
+- **4597 — MÉTRICA v3:** la pregunta original tenía dos opciones defendibles fuera de desarrollo: EVS y PSI. Se pregunta específicamente por el proceso de planificación previo al desarrollo, PSI. A1-95/A2-III-2; Academy, bloque 17.
+- **4598 — criptografía asimétrica:** se aclara que las claves pública y privada están relacionadas; la pública puede distribuirse y la privada se protege. Para confidencialidad se cifra con la pública del destinatario; la firma digital emplea la privada del firmante y se verifica con su pública. A1-125/A2-IV-12; Academy, bloque 48.
+- **4599 — capa OSI:** se limita a la asociación didáctica de N6 con representación/conversión, compresión y tradicionalmente cifrado. UIT-T X.800 distribuye servicios y mecanismos de seguridad entre capas; no hay una única capa de seguridad. A1-111/A1-125/A2-II-8/A2-IV-12; Academy, bloques 43 y 48.
+- **4600 — IEEE 802.1Q:** se pregunta por el VID de 12 bits de la etiqueta VLAN. En el original, prioridad/registro multicast también podían ser compatibles con 802.1Q; se distingue de control de acceso basado en puerto 802.1X. A1-118/A2-IV-8; Academy, bloque 42.
+
+Fuentes técnicas: [UIT-T G.984.1](https://www.itu.int/rec/T-REC-G.984.1/en), [MÉTRICA v.3 en PAe](https://administracionelectronica.gob.es/documentacion/metodologias-guias), [NIST, criptografía de clave pública](https://csrc.nist.gov/glossary/term/public_key_cryptography), [UIT-T X.800](https://www.itu.int/rec/T-REC-X.800/), [IEEE 802.1Q-2022](https://standards.ieee.org/ieee/802.1Q/10323/) e [IANA, números IEEE 802](https://www.iana.org/assignments/ieee-802-numbers). Correspondencia oficial: [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Academy: [bloque 17](https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk), [bloque 42](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), [bloque 43](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk) y [bloque 48](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk). Se cotejaron los apartados pertinentes; Academy es referencia curricular y no sustituye fuentes primarias.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` dieron resultado correcto: 12.123 preguntas, 4.595 revisiones, 83 pendientes y 7.528 aún sin revisar individualmente.
+
+## Lote 854 — 10 de noviembre de 2026
 
 IDs 4596–4600 revisados individualmente; originales y decisiones conservados en [cambios-lote-855.json](cambios-lote-855.json). Acumulado local: 4.595 examinadas, 4.512 verificadas (817 vigentes, 3.348 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.528 aún sin revisar individualmente. Las cinco preguntas se reformulan para que cada clave sea inequívoca.
 
@@ -11063,4 +11091,4 @@ Fuentes principales: [PMI Lexicon](https://www.pmi.org/-/media/pmi/documents/reg
 
 ## Estado de publicación
 
-La revisión del lote 855 está preparada localmente. Tras la publicación se consignarán aquí el identificador de la ejecución de GitHub Actions, el commit desplegado y las comprobaciones HTTP del README, registro e inventario. El resultado del inventario estructural no acredita por sí mismo que todas las preguntas se hayan revisado en contenido.
+El lote 856 está preparado localmente. Tras su publicación se consignarán el ID de GitHub Actions, el commit desplegado y las comprobaciones HTTP de README, registro 856 e inventario.
