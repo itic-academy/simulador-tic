@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 834 (IDs 4491–4495). Acumulado: 4.490 preguntas examinadas individualmente, 4.407 verificadas (816 vigentes, 3.244 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.633 sin revisar individualmente. Hay 3.720 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. Publicación del contenido del lote 833 verificada directamente en GitHub Pages el 10 de noviembre de 2026: README, cambios-lote-833.json e inventario devuelven HTTP 200 con el progreso esperado (commit 5fd3ed2).
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 835 (IDs 4496–4500). Acumulado: 4.495 preguntas examinadas individualmente, 4.412 verificadas (816 vigentes, 3.249 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.628 sin revisar individualmente. Hay 3.725 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. El lote 835 (commit f8529af) ya sirve en GitHub Pages el registro de cambios y el inventario con el progreso esperado; se completa la comprobación del resumen público.
 
 
 
