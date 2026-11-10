@@ -26,6 +26,8 @@ Tras el lote 802, el workflow [42806170625](https://github.com/itic-academy/simu
 El commit de confirmación del lote 802 también se desplegó correctamente en el workflow [42806538594](https://github.com/itic-academy/simulador-tic/actions/runs/42806538594), con los tres jobs en `success`.
 Tras el lote 803, el workflow [42807497236](https://github.com/itic-academy/simulador-tic/actions/runs/42807497236) terminó con `success`; la comprobación sin caché devolvió HTTP 200 y confirmó el lote, el rango 4336–4340 y el acumulado 4.335.
 
+Tras el lote 804, el workflow de Pages [42808585069](https://github.com/itic-academy/simulador-tic/actions/runs/42808585069) terminó con `success`; una consulta HTTP 200 sin caché confirmó el lote, los IDs 4341–4345 y el acumulado 4.340.
+
 ## Lote 801 — 10 de noviembre de 2026
 
 IDs 4326–4330 revisados individualmente; originales y decisiones preservados en [cambios-lote-801.json](cambios-lote-801.json).
