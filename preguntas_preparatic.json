@@ -235353,29 +235353,118 @@
       "id": 4671,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cronológicamente, la aparición de CGI, applets y servlets ocurrió en el siguiente orden:",
+      "texto": "En una cronología introductoria de estas tecnologías web, ¿qué secuencia corresponde a CGI (en uso en la Web desde 1993), los applets de Java/HotJava (1995) y el Java Servlet Development Kit (1997)?",
       "opciones": [
-        "CGI->servlets->applets",
-        "Applets->servlets->CGI",
-        "CGI->applets->servlets",
-        "Servlets->CGI->applets"
+        "Servlets → CGI → applets.",
+        "Applets → servlets → CGI.",
+        "CGI → applets → servlets.",
+        "CGI → servlets → applets."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Respuesta C. Se acota como cronología introductoria: CGI ya se utilizaba en la Web desde 1993 (RFC 3875), los applets de Java aparecen con Java/HotJava en 1995 y el primer Java Web Servlet Development Kit se publicó en 1997. Son tecnologías de distintas generaciones, no una secuencia normativa de estándares; los applets son una tecnología histórica que dejó de ser compatible con los navegadores modernos. Se conserva como pregunta histórica. Academy bloque 30 cubre desarrollo web y Java; su temario no se usa para justificar las fechas.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "CGI",
+        "Java applets",
+        "servlets",
+        "historia de la web"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3875.html",
+            "referencia": "IETF RFC 3875, resumen: CGI se usa en la Web desde 1993 y especifica la interfaz CGI/1.1 desarrollada/documentada por NCSA."
+          },
+          {
+            "url": "https://www.java.com/en/download/help/whatis_java.html",
+            "referencia": "Java.com, What is Java?: Java fue publicado por primera vez por Sun en 1995; la documentación histórica de HotJava sitúa allí el uso público de applets."
+          },
+          {
+            "url": "https://www.eclipse.org/community/eclipse_newsletter/2020/february/3.php",
+            "referencia": "Eclipse Foundation, historia de Servlets/Tomcat: primer Java Web Servlet Development Kit lanzado en junio de 1997."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 30: temario de arquitecturas y tecnologías web y entorno Java; cotejo curricular general, sin usarlo como fuente de las fechas históricas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 65: arquitectura de desarrollo web y tecnologías de cliente/servidor."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III.12: aplicaciones web y desarrollo front-end y de servidor."
+          }
+        ],
+        "observaciones": "Respuesta C. Se acota como cronología introductoria: CGI ya se utilizaba en la Web desde 1993 (RFC 3875), los applets de Java aparecen con Java/HotJava en 1995 y el primer Java Web Servlet Development Kit se publicó en 1997. Son tecnologías de distintas generaciones, no una secuencia normativa de estándares; los applets son una tecnología histórica que dejó de ser compatible con los navegadores modernos. Se conserva como pregunta histórica. Academy bloque 30 cubre desarrollo web y Java; su temario no se usa para justificar las fechas."
+      }
     },
     {
       "id": 4672,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale que afirmación es FALSA en relación a los archivos jar en java:",
+      "texto": "¿En qué formato de archivo está basado un JAR?",
       "opciones": [
-        "El algoritmo de compresión que utilizan es LZW.",
-        "Son independientes de la plataforma y cualquier JVM los interpreta.",
-        "Todos los ficheros que contienen, tienen la extensión class.",
-        "Pueden incluir un subdirectorio de metainformación llamado META-INF."
+        "ZIP, con un directorio META-INF opcional.",
+        "TAR sin compresión, y todas las entradas son ficheros .class.",
+        "LZW autónomo, que solo puede incluir bytecode Java.",
+        "ISO 9660, con un manifiesto obligatorio en la raíz."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La premisa original pedía identificar una sola afirmación falsa, pero tanto “JAR usa LZW” como “todos sus ficheros son .class” son falsas. Se reemplaza por una pregunta de respuesta única sobre el formato: JAR está basado en ZIP y puede contener clases y recursos; META-INF es opcional.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3",
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Java",
+        "JAR",
+        "ZIP",
+        "archivos de aplicación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/java/javase/26/docs/specs/jar/jar.html",
+            "referencia": "Oracle, Java SE 26 JAR File Specification: JAR está basado en ZIP y puede incluir directorio META-INF opcional; no exige que todas sus entradas sean .class."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 30, epígrafes de entorno Java y herramientas; encaje curricular general, no una fuente para definir el formato JAR."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 67: entorno de desarrollo Java."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.3 (lenguajes/paradigmas) y tema III.10 (Java EE/Jakarta EE y herramientas); clasificación curricular relacionada."
+          }
+        ],
+        "observaciones": "La premisa original pedía identificar una sola afirmación falsa, pero tanto “JAR usa LZW” como “todos sus ficheros son .class” son falsas. Se reemplaza por una pregunta de respuesta única sobre el formato: JAR está basado en ZIP y puede contener clases y recursos; META-INF es opcional."
+      }
     },
     {
       "id": 4673,
@@ -235389,35 +235478,147 @@
         "El gestor de archivos oficial de GNOME."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Respuesta B: Agnubis fue un proyecto de programa de presentaciones integrado con GNOME/GNOME Office. Se etiqueta histórica: el archivo de GNOME registra el proyecto en 2002 y su abandono/no publicación en 2003; no es una aplicación GNOME vigente ni el gestor de archivos. A1-69 es una relación temática con software de código abierto, no una inclusión de este programa concreto en el temario.",
+      "clasificacion": {
+        "A1": [
+          "A1-69"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "GNOME",
+        "Agnubis",
+        "presentaciones",
+        "software histórico"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://mail.gnome.org/archives/gnome-list/2002-June/msg00166.html",
+            "referencia": "Archivo oficial de la lista GNOME, resumen de junio de 2002: Agnubis fue iniciado para crear un programa de presentaciones integrado con GNOME/GNOME Office."
+          },
+          {
+            "url": "https://mail.gnome.org/archives/gnome-list/2003-June/msg00020.html",
+            "referencia": "Archivo oficial de GNOME de junio de 2003: documenta el estado de proyecto no publicado/abandonado, por lo que el ítem se conserva como histórico y no se presenta como software vigente."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 69: software de código abierto y aplicaciones; encaje temático de GNOME, sin afirmar que Agnubis forme parte del temario."
+          }
+        ],
+        "observaciones": "Respuesta B: Agnubis fue un proyecto de programa de presentaciones integrado con GNOME/GNOME Office. Se etiqueta histórica: el archivo de GNOME registra el proyecto en 2002 y su abandono/no publicación en 2003; no es una aplicación GNOME vigente ni el gestor de archivos. A1-69 es una relación temática con software de código abierto, no una inclusión de este programa concreto en el temario."
+      }
     },
     {
       "id": 4674,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es un formato estándar para el almacenamiento de información geográfica?",
+      "texto": "¿Qué estándar OGC basado en XML codifica representaciones de información geográfica para su visualización en un earth browser?",
       "opciones": [
-        "MDT",
-        "KML",
-        "WCS",
-        "UTM"
+        "MDT (modelo digital del terreno).",
+        "KML (Keyhole Markup Language).",
+        "WCS (Web Coverage Service).",
+        "UTM (Universal Transverse Mercator)."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Respuesta B: KML es un estándar OGC basado en XML, orientado a codificar y transportar representaciones geográficas para su visualización en un earth browser. El enunciado se concreta porque MDT y UTM también son términos válidos del ámbito geoespacial, pero no son equivalentes a un formato de codificación; WCS es un servicio web de coberturas. La clasificación oficial directa es A1-74; no se fuerza una correspondencia A2 que no figure como epígrafe específico.",
+      "clasificacion": {
+        "A1": [
+          "A1-74"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "KML",
+        "XML",
+        "SIG",
+        "datos geográficos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://www.ogc.org/standards/kml/",
+            "referencia": "Open Geospatial Consortium, KML 2.3: lenguaje XML para visualizar información geográfica y codificar/transportar representaciones geográficas destinadas a earth browsers."
+          },
+          {
+            "url": "https://docs.ogc.org/is/12-007r2/12-007r2.html",
+            "referencia": "Especificación OGC KML 2.3, estándar internacional 12-007r2."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 74: sistemas de información geográfica, conceptos y funcionalidad básicos."
+          }
+        ],
+        "observaciones": "Respuesta B: KML es un estándar OGC basado en XML, orientado a codificar y transportar representaciones geográficas para su visualización en un earth browser. El enunciado se concreta porque MDT y UTM también son términos válidos del ámbito geoespacial, pero no son equivalentes a un formato de codificación; WCS es un servicio web de coberturas. La clasificación oficial directa es A1-74; no se fuerza una correspondencia A2 que no figure como epígrafe específico."
+      }
     },
     {
       "id": 4675,
       "bloque": 0,
       "tema": 0,
-      "texto": "La minería de datos es un campo de la estadística y las ciencias de la computación que se refiere a:",
+      "texto": "¿Qué describe mejor la minería de datos dentro del proceso de descubrimiento de conocimiento en bases de datos (KDD)?",
       "opciones": [
-        "El acceso a datos concretos específicos de gran valor y dificil localización.",
-        "El uso de la Inteligencia Artificial para el tratamiento de de grandes volúmenes de datos",
-        "El proceso que intenta descubrir patrones en grandes volúmenes de conjuntos de datos",
-        "La aplicación del aprendizaje automático a partir de pequños volúmenes de datos."
+        "Recuperar registros concretos que se conocen de antemano pero son difíciles de localizar.",
+        "Aplicar exclusivamente técnicas de inteligencia artificial a conjuntos necesariamente masivos.",
+        "Aplicar algoritmos de análisis y descubrimiento para identificar patrones o modelos en los datos.",
+        "Aplicar aprendizaje automático solo a conjuntos pequeños de datos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Respuesta C. La minería de datos aplica algoritmos de análisis y descubrimiento para obtener patrones o modelos a partir de datos, como etapa del proceso más amplio de KDD. No se define por recuperar registros concretos, por usar exclusivamente IA ni por requerir un tamaño de conjunto específico.",
+      "clasificacion": {
+        "A1": [
+          "A1-71"
+        ],
+        "A2": [
+          "A2-III-15"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "minería de datos",
+        "descubrimiento de patrones",
+        "KDD",
+        "ciencia de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://www.microsoft.com/en-us/research/publication/knowledge-discovery-and-data-mining-towards-a-unifying-framework/",
+            "referencia": "Fayyad, Piatetsky-Shapiro y Smyth (1996), marco de KDD y algoritmos de data mining; el mining aplica métodos de análisis/descubrimiento para extraer patrones o modelos de los datos."
+          },
+          {
+            "url": "https://www.ai.rug.nl/ki2/literature/kdd-fayyad-shapiro-smyth.pdf",
+            "referencia": "Fayyad et al., From Data Mining to Knowledge Discovery in Databases (1996): en el núcleo de KDD, métodos de minería para descubrir y extraer patrones; el artículo distingue minería de datos del proceso KDD."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 34 Business Intelligence y Big Data: incluye expresamente A2 tema D.15 sobre minería de datos y A1 tema 71 sobre ciencia de datos; cotejo de cobertura curricular."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 71: ciencia de datos, ciclo de vida y modelado; correspondencia relacionada, no definición exhaustiva de data mining."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III.15: minería de datos, algoritmos, OLAP, Big Data y NoSQL."
+          }
+        ],
+        "observaciones": "Respuesta C. La minería de datos aplica algoritmos de análisis y descubrimiento para obtener patrones o modelos a partir de datos, como etapa del proceso más amplio de KDD. No se define por recuperar registros concretos, por usar exclusivamente IA ni por requerir un tamaño de conjunto específico."
+      }
     },
     {
       "id": 4676,
