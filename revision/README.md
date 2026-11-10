@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 828 (IDs 4461–4465). Acumulado: 4.460 preguntas examinadas individualmente, 4.378 verificadas (816 vigentes, 3.215 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.663 sin revisar individualmente. Hay 3.691 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 829 (IDs 4466–4470). Acumulado: 4.465 preguntas examinadas individualmente, 4.383 verificadas (816 vigentes, 3.220 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.658 sin revisar individualmente. Hay 3.696 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 829 — 10 de noviembre de 2026
+
+IDs 4466–4470 revisados individualmente; originales y decisiones conservados en [cambios-lote-829.json](cambios-lote-829.json). Acumulado: 4.465 examinadas, 4.383 verificadas (816 vigentes, 3.220 corregidas y 347 históricas), 82 pendientes documentadas y 7.658 todavía sin revisar individualmente. Se fija la edición vigente de Common Criteria y de ISO/IEC 25010, y se delimitan responsabilidades y propiedades de la evidencia con estándares explícitos.
+
+- **4466 — niveles EAL de Common Criteria:** son siete (EAL1–EAL7), distintos de los seis niveles históricos ITSEC. A1-50; A2-II-11; Academy, bloque 16.
+- **4467 — control de acceso físico:** el teclado/controlador de puerta del CPD controla la entrada; etiquetas de soportes y contraseñas de aplicación son controles distintos. A1-53; A2-II-13; Academy, bloque 22.
+- **4468 — calidad de producto software:** se sustituye la valoración ambigua de «relevancia» por la característica de fiabilidad definida en ISO/IEC 25010:2023. A1-98; A2-III-13; Academy, bloque 39.
+- **4469 — responsabilidades de auditoría:** el auditor evalúa evidencia, documenta hallazgos y comunica recomendaciones; la Dirección gestiona la aceptación del riesgo y ejecuta las correcciones. A1-38; A2-II-11; Academy, bloque 16.
+- **4470 — evidencia:** se distingue suficiencia (cantidad) de adecuación/apropiación (calidad: relevancia, validez y fiabilidad); eficiencia no es una cualidad de la evidencia en ISSAI 100. A1-38; A2-II-11; Academy, bloque 16.
+
+Fuentes principales: Common Criteria [portal oficial](https://www.commoncriteriaportal.org/cc/) y [CC 2022, Part 5](https://www.ipa.go.jp/en/security/jisec/uqdbg800000098pu-att/CC2022PART5R1.pdf); NIST [SP 800-53 Rev. 5, PE-3](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final); ISO/IEC [25010:2023](https://www.iso.org/standard/78176.html); ISACA [ITAF](https://www.isaca.org/about-us/-/media/5b55da6fe8564436bce63aaa5acb49da.ashx); INTOSAI [ISSAI 100](https://www.issai.org/pronouncements/issai-100-fundamental-principles-of-public-sector-auditing/) y [texto](https://www.psc-intosai.org/wp-content/uploads/2022/05/2_1_ISSAI-100-Endorsement-version-1.pdf).
+
+Cotejo ITIC Academy: [bloque 16, auditoría informática](https://drive.google.com/file/d/1D93MNUzOWGwD6IyuWdxIMnHaL7aXvYhp/view?usp=drivesdk); [bloque 22, seguridad/ENS](https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk); [bloque 39, calidad y mantenimiento](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk). La alineación se contrasta con los temas oficiales A1/A2; la academia no sustituye estándares/normas de la respuesta.
 
 ## Lote 828 — 10 de noviembre de 2026
 
