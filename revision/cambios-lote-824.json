@@ -1,0 +1,315 @@
+{
+  "fecha": "2026-11-10",
+  "alcance": "Revisión individual y contraste de fuente primaria de las preguntas 4441–4445.",
+  "cambios": [
+    {
+      "id": 4441,
+      "original": {
+        "id": 4441,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con las licencias de software libre, ¿cuál de las siguientes afirmaciones es cierta?",
+        "opciones": [
+          "La licencia GPL (General Public License) de software libre obliga a publicar las modificaciones realizadas sobre el software.",
+          "En un producto distribuido bajo licencia GPL es obligatorio incluir un fichero que contenga únicamente los términos concretos de la licencia y un aviso de que los derechos de copia son establecidos por el autor del producto.",
+          "La licencia LGPL (Lesser General Public License) permite la inclusión del software que ampara en programas distribuidos bajo licencia no GPL.",
+          "La licencia LGPL no es compatible con la definición del software distribuido bajo el tipo licencia «Copyleft»."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4441,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según las versiones 3 de GNU GPL y GNU LGPL, ¿cuál de las siguientes afirmaciones es correcta?",
+        "opciones": [
+          "La GPL obliga a publicar en Internet cualquier modificación, incluso si solo se usa en privado.",
+          "Al distribuir un programa GPL basta con incluir un fichero que contenga únicamente el texto de la licencia y un aviso de copyright.",
+          "La LGPL permite que una aplicación que usa la biblioteca se distribuya bajo términos distintos, siempre que se cumplan las condiciones de la LGPL para la biblioteca.",
+          "La LGPL no es una licencia copyleft."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La clave es C. La GPL no exige divulgar modificaciones privadas: sus obligaciones de entrega de código fuente se activan al transmitir/convey una copia a terceros. La LGPL permite que una obra que usa la biblioteca se distribuya bajo términos distintos, pero impone condiciones sobre la biblioteca y, en los casos previstos, sobre la posibilidad de sustituir o volver a enlazar una versión modificada. Por eso no equivale a ausencia de copyleft. La pregunta se fija en las versiones 3 para no mezclar condiciones entre versiones.",
+        "clasificacion": {
+          "A1": [
+            "A1-69"
+          ],
+          "A2": [
+            "A2-II-14"
+          ],
+          "bloque_academia": 30,
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 30, tecnologías de sistemas de información y licencias de software; la clasificación oficial corresponde a software libre/licencias. El fundamento de la clave son los textos GNU GPLv3/LGPLv3."
+        },
+        "etiquetas": [
+          "software libre",
+          "GPLv3",
+          "LGPLv3",
+          "copyleft",
+          "licencias"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.gnu.org/licenses/gpl-3.0.html",
+              "referencia": "GNU General Public License v3.0, términos de transmisión de obras y código fuente correspondiente."
+            },
+            {
+              "url": "https://www.gnu.org/licenses/lgpl-3.0.html",
+              "referencia": "GNU Lesser General Public License v3.0, permiso para obras que usan la biblioteca y condiciones para transmitir obras combinadas."
+            },
+            {
+              "url": "https://www.gnu.org/licenses/gpl-faq.html#GPLRequireSourcePostedPublic",
+              "referencia": "GNU GPL FAQ: no existe obligación de publicar en Internet el código fuente de una copia modificada que se mantiene para uso privado."
+            }
+          ],
+          "observaciones": "La clave es C. La GPL no exige divulgar modificaciones privadas: sus obligaciones de entrega de código fuente se activan al transmitir/convey una copia a terceros. La LGPL permite que una obra que usa la biblioteca se distribuya bajo términos distintos, pero impone condiciones sobre la biblioteca y, en los casos previstos, sobre la posibilidad de sustituir o volver a enlazar una versión modificada. Por eso no equivale a ausencia de copyleft. La pregunta se fija en las versiones 3 para no mezclar condiciones entre versiones."
+        }
+      }
+    },
+    {
+      "id": 4442,
+      "original": {
+        "id": 4442,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación a las bases de datos NoSQL, señale la respuesta INCORRECTA:",
+        "opciones": [
+          "Generalmente están diseñadas para escalar verticalmente utilizando sistemas mainframes en lugar de clústeres distribuidos",
+          "Las siglas NoSQL significan “Not only SQL” y en general cada sistema tiene su propio lenguaje de consulta en lugar de utilizar SQL",
+          "Se suele decir que cumplen las propiedades BASE en contraposición a las propiedades ACID",
+          "Los tipos principales de bases de datos NoSQL son: de clave valor, orientadas a columnas, orientadas a documentos y de grafos"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4442,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En muchas bases de datos NoSQL distribuidas, ¿cuál es una tendencia de diseño frecuente, sin que sea un requisito universal de todos los productos?",
+        "opciones": [
+          "Escalar horizontalmente añadiendo nodos y distribuyendo los datos, en lugar de depender solo de ampliar un único servidor.",
+          "Rechazar cualquier lenguaje o interfaz de consulta compatible con SQL.",
+          "Renunciar siempre a las transacciones ACID y usar exclusivamente consistencia eventual.",
+          "Usar un único modelo de datos común a todos los productos NoSQL."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La clave es A como tendencia frecuente, no como definición universal. Muchas soluciones NoSQL distribuidas incorporan particionado/sharding y escalado horizontal. NoSQL no constituye un único modelo de datos: hay familias como clave-valor, documentos, columnas y grafos. Tampoco puede afirmarse que todo producto carezca de interfaces SQL-like o que todos rechacen transacciones ACID; esas propiedades dependen del sistema y su configuración. Se elimina la falsa dicotomía universal BASE frente a ACID.",
+        "clasificacion": {
+          "A1": [
+            "A1-63"
+          ],
+          "A2": [
+            "A2-III-15"
+          ],
+          "bloque_academia": 29,
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 29 de bases de datos; también el bloque 34 de Business Intelligence y Big Data recoge NoSQL (A2-III-15). La clasificación se contrasta con el programa oficial; la descripción técnica se apoya en documentación de IBM."
+        },
+        "etiquetas": [
+          "bases de datos",
+          "NoSQL",
+          "escalabilidad horizontal",
+          "sharding",
+          "modelos de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/think/topics/sql-vs-nosql",
+              "referencia": "IBM, comparación SQL/NoSQL: modelos de datos, escalabilidad horizontal y diversidad de sintaxis."
+            },
+            {
+              "url": "https://www.ibm.com/think/topics/nosql-databases",
+              "referencia": "IBM, visión de bases NoSQL y familias de modelos de datos."
+            }
+          ],
+          "observaciones": "La clave es A como tendencia frecuente, no como definición universal. Muchas soluciones NoSQL distribuidas incorporan particionado/sharding y escalado horizontal. NoSQL no constituye un único modelo de datos: hay familias como clave-valor, documentos, columnas y grafos. Tampoco puede afirmarse que todo producto carezca de interfaces SQL-like o que todos rechacen transacciones ACID; esas propiedades dependen del sistema y su configuración. Se elimina la falsa dicotomía universal BASE frente a ACID."
+        }
+      }
+    },
+    {
+      "id": 4443,
+      "original": {
+        "id": 4443,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El proceso de MÉTRICA v3 “Planificación de los Sistemas de Información” (PSI) tiene como objetivo:",
+        "opciones": [
+          "Obtener una especificación detallada del sistema de información.",
+          "Proponer una arquitectura de la información a alto nivel.",
+          "Analizar las necesidades del sistema y proponer una solución a corto plazo.",
+          "Obtener una nueva versión de un sistema de información preexistente."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4443,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En MÉTRICA v3, ¿qué caracteriza a la Planificación de Sistemas de Información (PSI)?",
+        "opciones": [
+          "Producir la especificación detallada de un sistema concreto lista para su construcción.",
+          "Establecer un marco estratégico de referencia y elaborar, a alto nivel, la arquitectura de información y un plan de acción de sistemas.",
+          "Analizar una incidencia operativa y proponer únicamente una solución inmediata a corto plazo.",
+          "Obtener una nueva versión de un sistema ya implantado mediante mantenimiento evolutivo."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La clave es B. PSI es el proceso de planificación estratégica: proporciona un marco de referencia para los sistemas de información de un ámbito organizativo y define requisitos, arquitectura de información y plan de acción. La especificación detallada de un sistema pertenece al análisis/diseño de un sistema concreto; la obtención de una nueva versión corresponde al mantenimiento.",
+        "clasificacion": {
+          "A1": [
+            "A1-95"
+          ],
+          "A2": [
+            "A2-III-2"
+          ],
+          "bloque_academia": 15,
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 15 de metodologías ágiles y ciclo de vida; se confirma que MÉTRICA está en los programas A1-95 y A2-III-2. La definición se toma del manual oficial de MÉTRICA v3."
+        },
+        "etiquetas": [
+          "MÉTRICA v3",
+          "PSI",
+          "planificación",
+          "arquitectura de información"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A8d2cfee5-5617-4dea-8cf8-7b7a0131de84/METRICA_V3_Panificacion_de_Sistemas_de_Informacion.pdf",
+              "referencia": "Ministerio de Administraciones Públicas, MÉTRICA v3, Planificación de Sistemas de Información: objetivo, arquitectura de información y plan de acción."
+            }
+          ],
+          "observaciones": "La clave es B. PSI es el proceso de planificación estratégica: proporciona un marco de referencia para los sistemas de información de un ámbito organizativo y define requisitos, arquitectura de información y plan de acción. La especificación detallada de un sistema pertenece al análisis/diseño de un sistema concreto; la obtención de una nueva versión corresponde al mantenimiento."
+        }
+      }
+    },
+    {
+      "id": 4444,
+      "original": {
+        "id": 4444,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes aseveraciones es falsa?:",
+        "opciones": [
+          "En las Cartas de Servicio que se elaboren, se deben establecer los dispositivos de seguimiento y evaluación.",
+          "La Calidad Total implica un enfoque que comprende tanto el concepto producto como el concepto servicio, no como elementos independientes.",
+          "Las Cartas de Servicios expresan un compromiso con los ciudadanos para mejorar la calidad de los servicios.",
+          "Las Cartas de Servicios no tienen la consideración de documentos oficiales."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4444,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Conforme al Real Decreto 951/2005, ¿cuál de las siguientes afirmaciones sobre las Cartas de Servicios es falsa?",
+        "opciones": [
+          "Informan sobre los servicios encomendados, los derechos de los usuarios y los compromisos de calidad.",
+          "Incluyen indicadores para evaluar la calidad y seguir los compromisos de calidad declarados.",
+          "Su aprobación se formaliza mediante resolución, cuya publicación en el BOE informa de su aprobación y disponibilidad pública.",
+          "El incumplimiento de un compromiso de calidad genera automáticamente responsabilidad patrimonial e indemnización a favor del usuario."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La opción falsa es D. El artículo 9.c del RD 951/2005 prevé medidas de subsanación por incumplimiento, pero establece que no generan por sí mismas responsabilidad patrimonial de la Administración. A se apoya en el artículo 8, B en el artículo 9.b.4.º y C en el artículo 11. La pregunta se limita al marco de Cartas de Servicios de la Administración General del Estado regulado por ese real decreto.",
+        "clasificacion": {
+          "A1": [
+            "A1-22"
+          ],
+          "A2": [],
+          "bloque_academia": 3,
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 03 de actuación administrativa y administración digital, que incluye calidad y TIC en los servicios públicos. No se asigna tema A2 al no existir correspondencia específica más directa en el programa A2 GSI."
+        },
+        "etiquetas": [
+          "Cartas de Servicios",
+          "calidad en servicios públicos",
+          "RD 951/2005",
+          "Administración General del Estado"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2005-14836",
+              "referencia": "Real Decreto 951/2005, arts. 8, 9.b.4.º, 9.c y 11: contenido, indicadores, medidas de subsanación, ausencia de responsabilidad patrimonial automática y aprobación/publicación."
+            }
+          ],
+          "observaciones": "La opción falsa es D. El artículo 9.c del RD 951/2005 prevé medidas de subsanación por incumplimiento, pero establece que no generan por sí mismas responsabilidad patrimonial de la Administración. A se apoya en el artículo 8, B en el artículo 9.b.4.º y C en el artículo 11. La pregunta se limita al marco de Cartas de Servicios de la Administración General del Estado regulado por ese real decreto."
+        }
+      }
+    },
+    {
+      "id": 4445,
+      "original": {
+        "id": 4445,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes puertos utiliza el protocolo TCP WhoIS?",
+        "opciones": [
+          "43",
+          "21",
+          "23",
+          "69"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4445,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la especificación del protocolo WHOIS, ¿en qué puerto TCP escucha un servidor WHOIS?",
+        "opciones": [
+          "TCP 43",
+          "TCP 21",
+          "TCP 23",
+          "TCP 69"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La clave es A. RFC 3912, especificación del protocolo WHOIS, establece TCP/43 para las peticiones de cliente a servidor. WHOIS se documenta aquí en el contexto del protocolo especificado por ese RFC; el dato no debe confundirse con el puerto de FTP, Telnet o TFTP.",
+        "clasificacion": {
+          "A1": [
+            "A1-111",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": 42,
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 42 de redes, que incluye Internet, transporte y protocolos; se corresponde con los temas oficiales de protocolos TCP/IP y OSI. La asignación de puerto se verifica en RFC 3912."
+        },
+        "etiquetas": [
+          "WHOIS",
+          "TCP",
+          "puertos",
+          "RFC 3912",
+          "protocolos de Internet"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3912.html",
+              "referencia": "RFC 3912, sección 2: un servidor WHOIS escucha las solicitudes en TCP port 43."
+            }
+          ],
+          "observaciones": "La clave es A. RFC 3912, especificación del protocolo WHOIS, establece TCP/43 para las peticiones de cliente a servidor. WHOIS se documenta aquí en el contexto del protocolo especificado por ese RFC; el dato no debe confundirse con el puerto de FTP, Telnet o TFTP."
+        }
+      }
+    }
+  ]
+}
