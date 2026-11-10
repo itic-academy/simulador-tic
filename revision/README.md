@@ -18,6 +18,8 @@ Fuentes primarias: BOE, [LO 10/2022, texto consolidado](https://www.boe.es/eli/e
 
 ## Estado de publicación
 
+El commit del lote 811 (`e73cfea32a41fd75100039c700e5664664d12dc7`) se publicó con éxito en el workflow de Pages [42819068723](https://github.com/itic-academy/simulador-tic/actions/runs/42819068723). Las consultas directas sin caché a `revision/inventario.json`, `revision/cambios-lote-811.json` y `preguntas_preparatic.json` devolvieron HTTP 200 y confirmaron el lote 811 y los IDs 4376–4380. Para evitar que navegadores reutilicen el JavaScript de la versión anterior, se incrementó el identificador de caché de `20261030-580` a `20261110-811` en la aplicación y la vista de revisión; queda por desplegar y comprobar ese ajuste.
+
 Tras el lote 810, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, 4.370 preguntas examinadas individualmente, 7.753 sin revisar y cero errores estructurales. El workflow [42817060548](https://github.com/itic-academy/simulador-tic/actions/runs/42817060548), asociado al commit `51fb5dfe2f87026944f4d7282c2fce1cafb02939`, terminó con `success`; la consulta sin caché a Pages devolvió HTTP 200 y confirmó el lote 810 y los IDs 4371–4375.
 
 Tras el lote 809, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, 4.365 preguntas examinadas individualmente, 7.758 sin revisar y cero errores estructurales. El workflow [42815551566](https://github.com/itic-academy/simulador-tic/actions/runs/42815551566), asociado al commit `2812ee5c1d554655f7b064aee5af80fc1e3047be`, terminó con `success`; la consulta sin caché a Pages devolvió HTTP 200 y confirmó el lote 809 y los IDs 4366–4370.
