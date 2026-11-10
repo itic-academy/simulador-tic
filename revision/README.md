@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 798 (IDs 4311–4315). Acumulado: 4310 preguntas examinadas individualmente, 4228 verificadas (800 vigentes, 3086 corregidas y 342 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7813 sin revisar individualmente. Hay 3572 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 799 (IDs 4316–4320). Acumulado: 4315 preguntas examinadas individualmente, 4233 verificadas (800 vigentes, 3091 corregidas y 342 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7808 sin revisar individualmente. Hay 3577 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -18,7 +18,22 @@ Tras la actualización del registro de publicación, el run de Pages [4266594626
 Tras el lote 796, una petición sin caché a GitHub Pages devolvió HTTP 200 y mostró los IDs 4301–4305, su sección de decisiones y el acumulado de 4.300 revisadas.
 Tras el lote 797, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, revisadas individualmente 4.305, sin revisar 7.818, cero errores estructurales. El workflow de Pages [42669073214](https://github.com/itic-academy/simulador-tic/actions/runs/42669073214) terminó con `success`; una petición sin caché devolvió HTTP 200 y confirmó el lote 797, el rango 4306–4310 y el acumulado 4.305.
 Tras el lote 798, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, revisadas individualmente 4.310, sin revisar 7.813, cero errores estructurales. El workflow de Pages [42785482002](https://github.com/itic-academy/simulador-tic/actions/runs/42785482002) terminó con `success`; una petición sin caché devolvió HTTP 200 y confirmó el lote 798, los IDs 4311–4315 y el acumulado 4.310.
+Tras el lote 799, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, revisadas individualmente 4.315, sin revisar 7.808, cero errores estructurales. Pendientes publicación y comprobación sin caché del lote 799.
 Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-academy/simulador-tic/actions/runs/42661019112), correspondiente al commit de verificación del README, terminó con `success`; la respuesta sin caché HTTP 200 mostró el nuevo estado y el lote 792.
+
+## Lote 799 — 10 de noviembre de 2026
+
+IDs 4316–4320 revisados individualmente; originales y decisiones preservados en [cambios-lote-799.json](cambios-lote-799.json).
+
+- **4316 — producto que no es CRM:** se reemplaza el rótulo defectuoso “IBM RightNow Sugar CRM” y se aclaran las opciones: Oracle Siebel, Dynamics 365 Sales y Salesforce Sales Cloud son CRM; Jive es una plataforma de colaboración/comunidad empresarial, no un producto CRM. **Corregida; clave D.**
+- **4317 — CRM en comercio electrónico:** se confirma el uso para gestionar relaciones, interacciones e historial de clientes y apoyar segmentación/campañas. Se añade que el tratamiento de perfiles debe respetar la normativa de datos personales. **Corregida; clave A.**
+- **4318 — CRM propietario:** se explicitan productos/ediciones para desambiguar. Salesforce CRM es comercial propietario; Nagios Core es monitorización abierta, Compiere Community ERP es un ERP abierto histórico y SugarCRM Community Edition es un CRM abierto histórico ya discontinuado. **Corregida; clave D.**
+- **4319 — sistemas orientados a clientes:** CRM significa Customer Relationship Management; se añade “principalmente” porque funciones CRM también pueden estar integradas en suites ERP. **Corregida; clave B.**
+- **4320 — infotipos SAP:** SAP define infotypes como unidades estructuradas de información para datos maestros de RR. HH., con campos relacionados y validez temporal. **Corregida por precisión; clave C.**
+
+Fuentes: Oracle, [Siebel CRM](https://docs.oracle.com/en/applications/siebel/); Microsoft, [Dynamics 365 Sales](https://www.microsoft.com/en-us/dynamics-365/products/sales); Salesforce, [Sales Cloud](https://www.salesforce.com/sales/) y [CRM](https://www.salesforce.com/crm/); Jive, [documentación de colaboración empresarial](https://docs.jivesoftware.com/); Microsoft Learn, [CRM](https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/glossary) y [relación con clientes](https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/prospect-to-quote-manage-customer-relationships); Reglamento (UE) 2016/679, [texto consolidado](https://eur-lex.europa.eu/eli/reg/2016/679/oj/spa); Nagios, [Nagios Core](https://www.nagios.com/products/nagios-core/); SugarCRM, [archivo de Community Edition](https://github.com/sugarai-archive/sugarcrm_dev); Compiere, [Community Edition](https://www.compiere.com/products/download/download-thanks.php); SAP Help, [infotipos](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/c6c3ffd90792427a9fee1a19df5b0925/dd72dd538636424de10000000a174cb4.html). Cotejo Academy: [Tema 072 de 2026](https://drive.google.com/file/d/1lkbdZvGxPTwyjhiOf6VsglMWYe4RI6sL/view?usp=drivesdk), apartados de fabricantes CRM, CRM en comercio electrónico, CRM analítico/operativo y ERP con módulo de RR. HH. Cotejo de convocatoria: A1 [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 72; A2 [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), tema II-12 para gestión de atención y CRM. Se clasifican las cinco en A1-72; 4316–4319 también en A2-II-12.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas, 4.315 examinadas individualmente, 7.808 aún sin revisar individualmente y cero errores estructurales. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 798 — 10 de noviembre de 2026
 
