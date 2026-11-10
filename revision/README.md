@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 813 (IDs 4386–4390). Acumulado: 4385 preguntas examinadas individualmente, 4303 verificadas (809 vigentes, 3151 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7738 sin revisar individualmente. Hay 3641 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 814 (IDs 4391–4395). Acumulado: 4390 preguntas examinadas individualmente, 4308 verificadas (810 vigentes, 3155 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7733 sin revisar individualmente. Hay 3645 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 814 — 10 de noviembre de 2026
+
+IDs 4391–4395 revisados individualmente; originales y decisiones preservados en [cambios-lote-814.json](cambios-lote-814.json).
+
+- **4391 — celdas ATM:** se precisa que las celdas son de 53 octetos y se limita la ventaja a reducir el bloqueo/espera que causan unidades largas; no se afirma que eviten toda congestión. **Corregida; clave B.**
+- **4392 — FIRe:** se verifica que es la solución integral de firma electrónica del PAe, que puede firmar con certificados locales o en la nube. Se mantiene el enunciado y la clave C. **Vigente; clave C.**
+- **4393 — cortafuegos:** se reemplaza la definición imprecisa por la de un sistema/pasarela que controla el tráfico y limita accesos según política de seguridad; se distingue de antivirus, caché y detección pasiva. **Corregida; clave A.**
+- **4394 — codificación Ethernet:** se acota el supuesto al PHY 10BASE-T (10 Mb/s), que usa Manchester, y se recuerda que la codificación varía entre PHY Ethernet. **Corregida; clave A.**
+- **4395 — esteganografía:** se formula la definición como ocultar la existencia de la comunicación dentro de un archivo/medio portador y se distingue de la criptografía. **Corregida; clave A.**
+
+Fuentes primarias: UIT-T [I.361, estructura ATM de 53 octetos](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-I.361-199902-I%21%21PDF-E&lang=e&type=items) y [I.356, desempeño de transferencia de celdas](https://www.itu.int/rec/T-REC-I.356/en); PAe, [FIRe, Solución Integral de Firma Electrónica](https://administracionelectronica.gob.es/ctt/fire) y [arquitectura servidor/API](https://administracionelectronica.gob.es/ctt/fire/infoadicional); NIST, [glosario de firewall](https://csrc.nist.gov/glossary/term/firewall), [SP 800-41 Rev. 1](https://csrc.nist.gov/pubs/sp/800/41/r1/final) y [glosario de steganography](https://csrc.nist.gov/glossary/term/steganography); IEEE 802.3, [comparación de PHY Ethernet y Manchester en 10BASE-T](https://grouper.ieee.org/groups/802/3/1TPCESG/public/tazebay_01_0512.pdf) y [presentación del grupo 802.3cg](https://grouper.ieee.org/groups/802/3/cg/public/adhoc/cordaro_3cg_05_0418.pdf). Cotejo de academia Drive: [bloque 42, Redes, edición 2026](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk); [bloque 03, Actuación administrativa y Administración digital, versión 2026.2](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk); [bloque 48, Seguridad en redes y aplicaciones, edición 2026](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk). Clasificación contrastada con [convocatorias A1](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) de 2025: 4391 A1-113/A2-IV-10; 4392 A1-22/A2-I-6; 4393 y 4395 A1-125/A2-IV-12; 4394 A1-118/A2-IV-8.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron tras el lote 814: total 12.123, 4.390 preguntas examinadas individualmente, 7.733 sin revisar individualmente y cero errores estructurales. Los conteos de estado son 810 vigentes, 3.155 corregidas, 343 históricas, 36 pendientes de fuente y 46 pendientes por ambigüedad. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 813 — 10 de noviembre de 2026
 
