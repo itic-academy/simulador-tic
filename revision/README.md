@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 805 (IDs 4346–4350). Acumulado: 4345 preguntas examinadas individualmente, 4263 verificadas (803 vigentes, 3117 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7778 sin revisar individualmente. Hay 3607 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 806 (IDs 4351–4355). Acumulado: 4350 preguntas examinadas individualmente, 4268 verificadas (803 vigentes, 3122 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7773 sin revisar individualmente. Hay 3612 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -73,6 +73,19 @@ Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-aca
 
 Tras el lote 805, el workflow de Pages [42810171592](https://github.com/itic-academy/simulador-tic/actions/runs/42810171592) terminó con `success`; la consulta sin caché devolvió HTTP 200 y confirmó el lote, los IDs 4346–4350 y el acumulado 4.345.
 
+## Lote 806 — 10 de noviembre de 2026
+
+IDs 4351–4355 revisados individualmente; enunciados originales y decisiones conservados en [cambios-lote-806.json](cambios-lote-806.json).
+
+- **4351 — copyleft:** se precisa el alcance de una licencia copyleft fuerte como GNU GPL: al distribuir obras derivadas cubiertas se mantienen las libertades y condiciones aplicables; no se abandona el copyright ni se imponen obligaciones idénticas en toda licencia copyleft. **Corregida; clave D.**
+- **4352 — SCORM y agregación de contenidos e-learning:** se identifica el CAM de SCORM 2004 como modelo para estructurar y empaquetar objetos de aprendizaje interoperables con LMS; se evita llamarlo estándar genérico para agregar cualquier contenido web. **Corregida; clave A.**
+- **4353 — criptografía de clave pública:** se corrige la errata Rijndael y se distingue RSA (asimétrico) de AES/Rijndael, 3DES y Blowfish (cifrados simétricos). **Corregida; clave B.**
+- **4354 — política de certificados X.509:** se concreta `certificatePolicies` como extensión que lleva OID de políticas evaluables durante la validación de ruta; no se afirma que ese dato autentique por sí mismo a la persona titular. **Corregida; clave D.**
+- **4355 — OCSP:** se limita a los estados de revocación de RFC 6960 (`good`, `revoked`, `unknown`) y se distingue esa consulta de la comprobación de fecha, firma, identidad y validez completa de la ruta. **Corregida; clave D.**
+
+Fuentes primarias/técnicas: GNU/FSF, [definición de copyleft](https://www.gnu.org/licenses/copyleft.html) y [GNU GPL v3, sección 5](https://www.gnu.org/licenses/gpl-3.0.html#section5); ADL, [SCORM Users Guide for Programmers / SCORM 2004 4th Edition](https://adlnet.gov/assets/uploads/SCORM_Users_Guide_for_Programmers.pdf); NIST, [SP 800-56B Rev. 2, reafirmada vigente en enero de 2026](https://csrc.nist.gov/pubs/sp/800/56/b/r2/final), [glosario RSA](https://csrc.nist.gov/glossary/term/RSA) y [FIPS 197 AES](https://csrc.nist.gov/pubs/fips/197/final); IETF, [RFC 5280](https://www.rfc-editor.org/rfc/rfc5280.html), secciones 4.2.1.4/6.1, [RFC 3647](https://www.rfc-editor.org/rfc/rfc3647.html) y [RFC 6960](https://www.rfc-editor.org/rfc/rfc6960.html). Cotejo Academy: [tema 43, protección jurídica del software](https://drive.google.com/file/d/1Og6yI-YaZ48UA3pBT-HQhTh7TfvdPW_C/view?usp=drivesdk); [bloque 33, e-learning y GIS, edición 2026.1](https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk), que indica que no hay epígrafe A2 específico equivalente; [bloque 36, seguridad, criptografía, identificación y firma, edición 2026.1](https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk). Correspondencia con las convocatorias oficiales [A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4351 A1-69/A2-II-14; 4352 A1-73 (sin epígrafe A2 directo); 4353 A1-79/A1-80/A2-I-6/A2-IV-12; 4354–4355 A1-80/A1-81/A2-I-6.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: 12.123 preguntas en inventario, 4.350 revisadas individualmente, 7.773 aún sin revisión y cero errores estructurales. El inventario no acredita revisión de contenido.
 ## Lote 805 — 10 de noviembre de 2026
 
 IDs 4346–4350 revisados individualmente; los enunciados originales y cada decisión se conservan en [cambios-lote-805.json](cambios-lote-805.json).
