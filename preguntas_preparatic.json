@@ -224145,15 +224145,47 @@
       "id": 4436,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la arquitectura Java, ¿qué se entiende por JSR?",
+      "texto": "En el proceso Java Community Process (JCP), ¿qué significa JSR (Java Specification Request)?",
       "opciones": [
-        "Un applet.",
-        "Es una especificación en la que se describe una tecnología, sus partes, las relaciones entre las mismas y los roles de las personas que usarán dicha tecnología.",
-        "Es una especificación que describe la manera en que la parte servidora atenderá las peticiones hechas por un applet o un javascript. Es el acrónimo de Java Server Request.",
-        "Un JavaBean."
+        "Un tipo de applet Java.",
+        "Una propuesta formal presentada al JCP para desarrollar una nueva especificación Java o revisar significativamente una existente.",
+        "Un protocolo de servidor para atender peticiones de applets o JavaScript.",
+        "Un tipo de JavaBean."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "JSR significa Java Specification Request: es la solicitud/documento formal que propone al JCP desarrollar una especificación Java nueva o una revisión significativa de una existente. No es un componente ejecutable ni un protocolo. La versión de procedimiento consultada en el sitio del JCP incluye ambas posibilidades. Clave B.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": 30,
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 30 «Tecnologías de los sistemas de información», edición 2026: plataformas y entorno Java. Correspondencia A1-67/A2-III-10; la definición se verifica en el JCP."
+      },
+      "etiquetas": [
+        "Java",
+        "Java Community Process",
+        "JSR",
+        "especificaciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://jcp.org/en/procedures/jcp2_7",
+            "referencia": "Java Community Process, procedimiento JCP 2.7: define JSR como documento presentado al PMO para proponer una nueva especificación o una revisión significativa."
+          },
+          {
+            "url": "https://www.jcp.org/en/introduction/glossary",
+            "referencia": "Glosario oficial JCP: entrada Java Specification Request (JSR)."
+          }
+        ],
+        "observaciones": "JSR significa Java Specification Request: es la solicitud/documento formal que propone al JCP desarrollar una especificación Java nueva o una revisión significativa de una existente. No es un componente ejecutable ni un protocolo. La versión de procedimiento consultada en el sitio del JCP incluye ambas posibilidades. Clave B."
+      }
     },
     {
       "id": 4437,
@@ -224161,55 +224193,190 @@
       "tema": 0,
       "texto": "¿Qué es YAML?",
       "opciones": [
-        "YAML es un formato de serialización de datos similar a JSON y XML, pero se caracteriza por ser más legible para los humanos y más fácil de escribir y entender",
-        "YAML es un framework de despliegue de aplicaciones en la nube basado en infraestructura como código",
-        "YAML es una herramienta de Docker para configurar contenedores",
-        "YAML es una herramienta de integración y despliegue continuo"
+        "Un lenguaje legible por personas para serializar e intercambiar datos, independiente del lenguaje de programación.",
+        "Un framework de despliegue en la nube basado en infraestructura como código.",
+        "Una herramienta de Docker para configurar contenedores.",
+        "Una herramienta de integración y despliegue continuos."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "YAML es un lenguaje de serialización de datos legible por personas y diseñado para el intercambio de estructuras de datos entre lenguajes. Puede utilizarse en archivos de configuración, pero no es por sí mismo un framework de nube, una herramienta de Docker ni una plataforma CI/CD. Clave A.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-76"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": 30,
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 30 «Tecnologías de los sistemas de información», edición 2026: tecnologías y formatos de intercambio usados en desarrollo web/SI. Correspondencia A1-65/A1-76/A2-III-12."
+      },
+      "etiquetas": [
+        "YAML",
+        "serialización de datos",
+        "intercambio de datos",
+        "formatos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://yaml.org/spec/",
+            "referencia": "Especificación oficial YAML: lenguaje de serialización de datos Unicode, legible por personas e independiente del lenguaje."
+          },
+          {
+            "url": "https://yaml.org/about/",
+            "referencia": "Proyecto oficial YAML: formato legible por humanos para intercambio de datos entre lenguajes con estructuras diferentes."
+          }
+        ],
+        "observaciones": "YAML es un lenguaje de serialización de datos legible por personas y diseñado para el intercambio de estructuras de datos entre lenguajes. Puede utilizarse en archivos de configuración, pero no es por sí mismo un framework de nube, una herramienta de Docker ni una plataforma CI/CD. Clave A."
+      }
     },
     {
       "id": 4438,
       "bloque": 0,
       "tema": 0,
-      "texto": "En Java, señale la afirmación correcta con respecto a los Enterprise JavaBeans (EJB):",
+      "texto": "En Jakarta Enterprise Beans (antes Enterprise JavaBeans), ¿cuál de las siguientes afirmaciones describe correctamente sus componentes?",
       "opciones": [
-        "Son componentes de servidor que encapsulan la lógica de negocio de una aplicación.",
-        "Existen dos tipos de Enterprise Beans: Session y entity.",
-        "Están escritos en XML para permitir su interoperabilidad.",
-        "En un contenedor EJBs solo puede residir un bean."
+        "Son componentes del lado servidor que encapsulan lógica de negocio para ejecutarse en un entorno Jakarta EE.",
+        "La plataforma Jakarta EE actual solo define Entity Beans como tipo obligatorio.",
+        "Los enterprise beans se escriben en XML y no contienen código Java.",
+        "Un contenedor Jakarta EE solo puede albergar una instancia de bean."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Un enterprise bean es un componente server-side de Jakarta EE que encapsula lógica de negocio. La guía actual presenta session beans y message-driven beans; las entity beans son una característica histórica que se hizo opcional y no es requisito de la plataforma Jakarta EE 10/11. Los beans se implementan como clases Java y el contenedor gestiona su ciclo de vida y concurrencia. Clave A.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": 30,
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 30 «Tecnologías de los sistemas de información», edición 2026: arquitectura Java/Jakarta EE y componentes empresariales. Correspondencia A1-67/A2-III-10."
+      },
+      "etiquetas": [
+        "Jakarta EE",
+        "Enterprise Beans",
+        "EJB",
+        "lógica de negocio",
+        "componentes servidor"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/entbeans/ejb-intro/ejb-intro.html",
+            "referencia": "Tutorial oficial Jakarta EE: los enterprise beans son componentes escritos en Java y del lado servidor que encapsulan lógica de negocio; describe session y message-driven beans."
+          },
+          {
+            "url": "https://jakarta.ee/committees/specification/versioning/",
+            "referencia": "Jakarta EE, proceso de versiones: Entity Beans fueron hechos opcionales y eliminados del conjunto requerido de la plataforma EE 10."
+          },
+          {
+            "url": "https://jakarta.ee/specifications/enterprise-beans/4.0/jakarta-enterprise-beans-spec-core-4.0.html",
+            "referencia": "Especificación Jakarta Enterprise Beans 4.0: características actuales y soporte opcional para entity beans."
+          }
+        ],
+        "observaciones": "Un enterprise bean es un componente server-side de Jakarta EE que encapsula lógica de negocio. La guía actual presenta session beans y message-driven beans; las entity beans son una característica histórica que se hizo opcional y no es requisito de la plataforma Jakarta EE 10/11. Los beans se implementan como clases Java y el contenedor gestiona su ciclo de vida y concurrencia. Clave A."
+      }
     },
     {
       "id": 4439,
       "bloque": 0,
       "tema": 0,
-      "texto": "La gestión de recursos, de acuerdo a ISO 9004, se apoya en:",
+      "texto": "En ISO 9004:2018, ¿cuál de los siguientes elementos se incluye expresamente entre los aspectos de la gestión de recursos?",
       "opciones": [
-        "El ciclo de vida",
-        "Gestión de la seguridad",
-        "Análisis de la viabilidad",
-        "Infraestructura"
+        "El ciclo de vida del servicio como única categoría.",
+        "La gestión de seguridad, exclusivamente.",
+        "El análisis de viabilidad de inversiones, como único componente.",
+        "La infraestructura y el entorno de trabajo."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "ISO 9004:2018 organiza la gestión de recursos e incluye un apartado dedicado a infraestructura y entorno de trabajo (9.5). La infraestructura es, por tanto, uno de los aspectos previstos, junto con otros recursos; no es el único elemento de la gestión. Se explicita la edición vigente del estándar y se reformula para evitar la afirmación vaga «se apoya en». Clave D.",
+      "clasificacion": {
+        "A1": [
+          "A1-103"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": 39,
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 39 «Calidad y mantenimiento», edición 2026: gestión de calidad y referencia ISO 9004. Correspondencia A1-103/A2-III-13."
+      },
+      "etiquetas": [
+        "ISO 9004",
+        "gestión de recursos",
+        "infraestructura",
+        "calidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/70397.html",
+            "referencia": "ISO, ficha oficial ISO 9004:2018, edición vigente para la pregunta, orientación de gestión para el éxito sostenido de las organizaciones."
+          },
+          {
+            "url": "https://cdn.standards.iteh.ai/samples/70397/c27f5430f51545fd80215e5dec84c257/ISO-9004-2018.pdf",
+            "referencia": "Extracto de ISO 9004:2018, estructura de cláusulas: gestión de recursos incluye el apartado 9.5 «Infrastructure and work environment»."
+          }
+        ],
+        "observaciones": "ISO 9004:2018 organiza la gestión de recursos e incluye un apartado dedicado a infraestructura y entorno de trabajo (9.5). La infraestructura es, por tanto, uno de los aspectos previstos, junto con otros recursos; no es el único elemento de la gestión. Se explicita la edición vigente del estándar y se reformula para evitar la afirmación vaga «se apoya en». Clave D."
+      }
     },
     {
       "id": 4440,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la respuesta correcta para en cuanto a los diagramas DFD:",
+      "texto": "En un diagrama de flujo de datos (DFD) convencional, ¿qué regla de conexión es correcta?",
       "opciones": [
-        "El diagrama de nivel 1 se llama de contexto",
-        "Un proceso es un ente ajeno al sistema",
-        "No puede haber flujo de información entre una entidad externa y un almacén",
-        "La funciones primitivas se pueden descomponer"
+        "El diagrama de nivel 1 siempre se denomina diagrama de contexto.",
+        "Un proceso representa un elemento ajeno al sistema que intercambia datos.",
+        "Una entidad externa no intercambia datos directamente con un almacén; el flujo debe pasar por un proceso.",
+        "Un proceso primitivo se descompone necesariamente en otros subprocesos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "En un DFD, los flujos de información conectan con procesos: una entidad externa no se conecta directamente a un almacén de datos. El proceso primitivo es, por definición, un proceso que ya no se descompone; y el diagrama de contexto representa el sistema completo como un único proceso, no el nivel 1. La redacción mantiene una única afirmación correcta. Clave C.",
+      "clasificacion": {
+        "A1": [
+          "A1-90"
+        ],
+        "A2": [
+          "A2-III-3"
+        ],
+        "bloque_academia": 38,
+        "estado": "revisada",
+        "nota": "ITIC Academy, bloque 38 «Análisis, diseño y construcción de sistemas», edición 2026: análisis de procesos y técnicas de modelado/DFD. Correspondencia A1-90/A2-III-3."
+      },
+      "etiquetas": [
+        "DFD",
+        "diagramas de flujo de datos",
+        "procesos",
+        "almacenes de datos",
+        "entidades externas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.irs.gov/irm/part2/irm_02-005-011",
+            "referencia": "IRS, guía oficial de análisis: define entidad externa, almacén y proceso en DFD; el proceso primitivo no se puede descomponer más."
+          },
+          {
+            "url": "https://www.ibm.com/think/topics/data-flow-diagram",
+            "referencia": "IBM, guía de DFD: la entidad externa puede intercambiar datos con un proceso, pero no directamente con un almacén."
+          }
+        ],
+        "observaciones": "En un DFD, los flujos de información conectan con procesos: una entidad externa no se conecta directamente a un almacén de datos. El proceso primitivo es, por definición, un proceso que ya no se descompone; y el diagrama de contexto representa el sistema completo como un único proceso, no el nivel 1. La redacción mantiene una única afirmación correcta. Clave C."
+      }
     },
     {
       "id": 4441,
