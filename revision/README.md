@@ -6,6 +6,20 @@ Estado parcial, no revisión completa del banco. Publicación desde la rama `mai
 
 
 
+## Lote 846 — 10 de noviembre de 2026
+
+IDs 4551–4555 revisados individualmente; originales y decisiones conservados en [cambios-lote-846.json](cambios-lote-846.json). Acumulado: 4.550 examinadas, 4.467 verificadas (816 vigentes, 3.304 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.573 todavía sin revisar individualmente. Se acota la responsabilidad de vicios ocultos a los supuestos del artículo 244 LCSP; se ancla la respuesta de Maslow en su modelo clásico y se evita tratar la jerarquía como rígida; se precisa el plazo de la tramitación simplificada; se distingue la etiqueta de las cinco P de la prioridad de erradicar la pobreza; y se actualiza la aplicación de contratación centralizada de CONECTA a AUNA.
+
+- **4551 — obras y vicios ocultos:** el plazo de quince años se limita a los daños debidos a vicios ocultos de construcción en los términos del artículo 244 LCSP. Se distingue ese periodo de la prescripción de dos años desde la manifestación del daño material.
+- **4552 — Maslow:** autorrealización es el desarrollo del propio potencial en el modelo clásico de cinco conjuntos; el artículo original advierte que el orden de prepotencia admite excepciones.
+- **4553 — tramitación simplificada:** el artículo 96.6 de la Ley 39/2015 establece treinta días desde el día siguiente a la notificación del acuerdo, salvo que reste menos plazo en la tramitación ordinaria.
+- **4554 — Agenda 2030:** las cinco P son People, Planet, Prosperity, Peace y Partnership. La pobreza no es el nombre de una P, aunque su erradicación sea central en la Agenda.
+- **4555 — contratación centralizada:** el portal ministerial comunicó en noviembre de 2025 que la tramitación de contratos basados y específicos se gestiona exclusivamente en AUNA; CONECTA queda para consulta histórica.
+
+Fuentes: [LCSP, art. 244](https://www.boe.es/eli/es/l/2017/11/08/9/con); Maslow, [artículo de 1943](https://doi.org/10.1037/h0054346) y [reproducción académica del texto](https://psychclassics.yorku.ca/Maslow/motivation.htm); [Ley 39/2015, art. 96](https://www.boe.es/eli/es/l/2015/10/01/39/con); [Agenda 2030 de Naciones Unidas](https://sdgs.un.org/2030agenda); [DGRCC, catálogo y aviso de migración a AUNA](https://catalogocentralizado.hacienda.gob.es/pctw/Publica/Adquisiciones.aspx) y [aplicación oficial AUNA](https://serviciostelematicos.hacienda.gob.es/AUNAEMPRESAS/Defaultemp.aspx). Clasificación contrastada con el programa oficial [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938): A1-11 (4551, 4555), A1-21 (4552), A1-8/A2-I-8 (4553) y A1-14/A2-I-4 (4554). No se asigna bloque de academia sin correspondencia específica documentada.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados correctamente: 12.123 preguntas; 4.550 registros individuales; 83 pendientes documentadas y 7.573 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido. Publicación del lote 846 pendiente de despliegue y verificación.
+
 ## Lote 845 — 10 de noviembre de 2026
 
 IDs 4546–4550 revisados individualmente; originales y decisiones conservados en [cambios-lote-845.json](cambios-lote-845.json). Acumulado: 4.545 examinadas, 4.462 verificadas (816 vigentes, 3.299 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.578 todavía sin revisar individualmente. Se confirman el significado de EAL4 y la definición CCN de pentesting, se separa auditoría de soporte/gestión y se sustituyen reglas universales no justificadas por requisitos concretos de IIA y fuentes vigentes.
