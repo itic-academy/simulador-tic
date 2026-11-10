@@ -1,8 +1,22 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 831 (IDs 4476–4480). Acumulado: 4.475 preguntas examinadas individualmente, 4.393 verificadas (816 vigentes, 3.230 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.648 sin revisar individualmente. Hay 3.706 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 832 (IDs 4481–4485). Acumulado: 4.480 preguntas examinadas individualmente, 4.398 verificadas (816 vigentes, 3.235 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.643 sin revisar individualmente. Hay 3.711 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 
+
+## Lote 832 — 10 de noviembre de 2026
+
+IDs 4481–4485 revisados individualmente; originales y decisiones conservados en [cambios-lote-832.json](cambios-lote-832.json). Acumulado: 4.480 examinadas, 4.398 verificadas (816 vigentes, 3.235 corregidas y 347 históricas), 82 pendientes documentadas y 7.643 todavía sin revisar individualmente. Se precisa el alcance de controles EDI y auditoría forense; se corrige la clave del riesgo de muestreo y se acotan requisitos tempranos y recomendaciones del auditor.
+
+- **4481 — auditoría de interfaz EDI:** se sustituyó la taxonomía excesivamente amplia por un conjunto definido de evaluación: proceso y riesgos, controles generales/de aplicación y operación, y pruebas de controles/datos intercambiados. Se mantiene la opción B. A1-38; A2-II-11; Academy, bloque 16.
+- **4482 — auditoría forense:** se concreta el trabajo que combina evaluación de controles y técnicas de investigación ante indicios de fraude; se distingue de auditoría policial y del objetivo general de las auditorías de cumplimiento. A1-38; A2-II-11; Academy, bloque 16.
+- **4483 — riesgo de muestreo:** se corrige la clave de riesgo de detección a riesgo de muestreo. Para un diseño determinado, su probabilidad disminuye al aumentar el tamaño de muestra; esto no elimina el riesgo ni modifica por sí solo el riesgo inherente o de control. A1-38; A2-II-11; Academy, bloque 16.
+- **4484 — controles de aplicación en el ciclo de vida:** se define «por primera vez» como identificar y documentar requisitos durante análisis, antes del diseño; se aclara que el desarrollo seguro debe integrarse en todas las fases y que los nombres varían entre modelos. A1-38; A2-II-11; Academy, bloque 16.
+- **4485 — recomendaciones de auditoría:** se delimita a quién elabora y comunica recomendaciones sustentadas en hallazgos (equipo auditor), frente a la respuesta e implantación correctiva a cargo de la dirección. A1-38; A2-II-11; Academy, bloque 16.
+
+Fuentes primarias: GAO/CIGIE, [FISCAM vigente, edición junio de 2026](https://www.gao.gov/assets/gao-26-108633.pdf), §§250, 330, 430.16 y 520 (incluidos controles de interfaces y recomendaciones derivadas de hallazgos); GAO, [auditorías forenses y equipo FAIS](https://www.gao.gov/blog/2014/04/24/introduction-to-gaos-forensic-audits-and-investigative-service-team) y [FAIS actual](https://www.gao.gov/about/careers/our-teams/FAIS); INTOSAI, [ISSAI 4000](https://www.issai.org/wp-content/uploads/2019/08/ISSAI-4000.pdf), §226; PCAOB, [AS 2315 Audit Sampling](https://pcaobus.org/oversight/standards/auditing-standards/details/AS2315); NIST, [SP 800-37 Rev. 1](https://csrc.nist.gov/pubs/sp/800/37/r1/final) y [SP 800-218 SSDF](https://csrc.nist.gov/pubs/sp/800/218/final). Cotejo curricular con ITIC Academy, [bloque 16, Auditoría informática, versión 2026.2](https://drive.google.com/file/d/1D93MNUzOWGwD6IyuWdxIMnHaL7aXvYhp/view?usp=drivesdk), y temario-oficial.json: A1-38 y A2-II-11. Academy verifica correspondencia curricular, no sustituye las fuentes técnicas.
+
+inventario.cjs, verificar.cjs y git diff --check ejecutados: banco de 12.123 preguntas, 4.480 registros de revisión, 82 pendientes documentadas y 7.643 preguntas todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 831 — 10 de noviembre de 2026
 
