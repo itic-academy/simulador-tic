@@ -1,10 +1,24 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial aplicado: 846 (IDs 4551–4555). Acumulado: 4.550 preguntas examinadas individualmente, 4.467 verificadas (816 vigentes, 3.304 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.573 sin revisar individualmente. Hay 3.780 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. Los lotes 842–846 están publicados y verificados en GitHub Pages; el workflow 42878203370 del commit 7aef709 concluyó correctamente y los recursos del lote 846 sirven los IDs y contadores esperados.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial aplicado: 847 (IDs 4556–4560). Acumulado: 4.555 preguntas examinadas individualmente, 4.472 verificadas (816 vigentes, 3.309 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.568 sin revisar individualmente. Hay 3.785 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. Lotes 842–846 publicados y verificados; el lote 847 se publicará tras el commit y su despliegue.
 
 
 
 
+
+## Lote 847 — 10 de noviembre de 2026
+
+IDs 4556–4560 revisados individualmente; originales y decisiones conservados en [cambios-lote-847.json](cambios-lote-847.json). Acumulado: 4.555 examinadas, 4.472 verificadas (816 vigentes, 3.309 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.568 todavía sin revisar individualmente. Se confirma la composición municipal con el artículo 140 CE; se matiza que la Ley 40/2015 fue la primera en regular legalmente la Conferencia de Presidentes (el órgano ya existía); se actualizan las iniciativas de economía circular; se corrige la mezcla de cifras de informes WEF 2018/2020 y se mantiene vigente la explicación del trío de presidencias semestrales de la UE.
+
+- **4556 — Ayuntamiento:** lo integran Alcalde y Concejales (art. 140 CE), distinguidos de los vecinos que eligen a los Concejales.
+- **4557 — Conferencia de Presidentes:** la Ley 40/2015 la regula por primera vez por ley; art. 146 define composición y objeto. No se presenta como creada entonces.
+- **4558 — economía circular:** se incluyen el plan de acción de 2015, el de 2020 y el Pacto Verde Europeo; Natura 2000 es una red de conservación de hábitats y especies.
+- **4559 — empleo y automatización:** el informe WEF 2020 preveía, para 2025, 85 millones de empleos desplazados y 97 millones de nuevos roles. Se presenta como previsión histórica, no como resultado observado.
+- **4560 — trío del Consejo:** tres Estados miembros preparan una agenda conjunta de 18 meses; cada presidencia nacional dura seis meses.
+
+Fuentes primarias: [Constitución Española, art. 140, texto consolidado al 20-05-2026](https://www.boe.es/eli/es/c/1978/12/27/(1)/con/20260520); [Ley 40/2015, preámbulo VI y arts. 146–147](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566); Comisión Europea, [economía circular](https://environment.ec.europa.eu/strategy/circular-economy_en) y [red Natura 2000](https://environment.ec.europa.eu/topics/nature-and-biodiversity/natura-2000/managing-and-protecting-natura-2000-sites_en); [WEF, Future of Jobs Report 2020](https://www.weforum.org/publications/the-future-of-jobs-report-2020/in-full/executive-summary/); [Consejo de la UE, Presidencia y tríos](https://www.consilium.europa.eu/en/council-eu/presidency-council-eu/). Temario de academia cotejado: [bloque 01](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), [bloque 03](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), [bloque 06](https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk) y [bloque 02 UE](https://drive.google.com/file/d/1KTz7CNz88u_4zyVLC2oYQBnmJRHIG7J7/view?usp=drivesdk). Clasificación por convocatoria [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): A1-3 (4556), A1-8/A2-I-8 (4557), A1-14 (4558), A1-19 (4559), A1-5 (4560).
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados correctamente: 12.123 preguntas; 4.555 registros individuales; 83 pendientes documentadas y 7.568 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido. Publicación del lote 847 pendiente de despliegue y verificación.
 
 ## Lote 846 — 10 de noviembre de 2026
 
