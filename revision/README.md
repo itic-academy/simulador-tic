@@ -11128,4 +11128,4 @@ Fuentes principales: [PMI Lexicon](https://www.pmi.org/-/media/pmi/documents/reg
 
 ## Estado de publicación
 
-El lote 859 queda preparado en main; la ejecución de GitHub Actions y la comprobación de la versión pública se registrarán aquí cuando concluya el despliegue. El registro conserva una instantánea original por cada ID, y la verificación de contenido sigue separada del inventario automático.
+GitHub Actions completó correctamente el lote 859 en [ejecución 42905858709](https://github.com/itic-academy/simulador-tic/actions/runs/42905858709), para el commit `441e3a98dc98da1c9c3a499c293473a919205e44`. GitHub Pages respondió HTTP 200 para [README](https://itic-academy.github.io/simulador-tic/revision/README.md), [registro 859](https://itic-academy.github.io/simulador-tic/revision/cambios-lote-859.json) e [inventario](https://itic-academy.github.io/simulador-tic/revision/inventario.json). El registro público contiene exactamente los IDs 4616–4620; el inventario refleja 12.123 preguntas, 3.368 corregidas, 83 pendientes y 7.508 sin revisar individualmente. El inventario estructural no acredita por sí mismo revisión de contenido.
