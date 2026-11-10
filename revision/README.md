@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 9 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 797 (IDs 4306–4310). Acumulado: 4305 preguntas examinadas individualmente, 4223 verificadas (800 vigentes, 3082 corregidas y 341 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7818 sin revisar individualmente. Hay 3567 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 798 (IDs 4311–4315). Acumulado: 4310 preguntas examinadas individualmente, 4228 verificadas (800 vigentes, 3086 corregidas y 342 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7813 sin revisar individualmente. Hay 3572 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -17,7 +17,22 @@ Tras el lote 795, el workflow de Pages [42665731022](https://github.com/itic-aca
 Tras la actualización del registro de publicación, el run de Pages [42665946261](https://github.com/itic-academy/simulador-tic/actions/runs/42665946261) completó los jobs de build y deploy con `success`; HTTP 200 sin caché confirmó el encabezado del lote 795 y sus conteos.
 Tras el lote 796, una petición sin caché a GitHub Pages devolvió HTTP 200 y mostró los IDs 4301–4305, su sección de decisiones y el acumulado de 4.300 revisadas.
 Tras el lote 797, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, revisadas individualmente 4.305, sin revisar 7.818, cero errores estructurales. El workflow de Pages [42669073214](https://github.com/itic-academy/simulador-tic/actions/runs/42669073214) terminó con `success`; una petición sin caché devolvió HTTP 200 y confirmó el lote 797, el rango 4306–4310 y el acumulado 4.305.
+Tras el lote 798, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, revisadas individualmente 4.310, sin revisar 7.813, cero errores estructurales. Pendientes la publicación y comprobación sin caché del lote 798.
 Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-academy/simulador-tic/actions/runs/42661019112), correspondiente al commit de verificación del README, terminó con `success`; la respuesta sin caché HTTP 200 mostró el nuevo estado y el lote 792.
+
+## Lote 798 — 10 de noviembre de 2026
+
+IDs 4311–4315 revisados individualmente; originales y decisiones preservados en [cambios-lote-798.json](cambios-lote-798.json).
+
+- **4311 — centro de coste SAP:** la definición correcta es una unidad organizativa dentro de un área de controlling donde se producen y registran costes. Se corrige “sociedad CO” por el término SAP correcto “área de controlling”. **Corregida; clave A.**
+- **4312 — características ERP:** se corrige la errata conceptual “integridad” por “integración”; modularidad y adaptabilidad/configuración también son características. Así “todas son correctas” conserva una única respuesta defendible. **Corregida; clave C.**
+- **4313 — CRM de código abierto:** SugarCRM Community Edition fue una edición CRM abierta, pero su desarrollo y mantenimiento por el proveedor finalizaron. Se explicita que la pregunta es histórica y no se presenta como oferta actual. **Histórica; clave B.**
+- **4314 — CRM frente a ERP:** se confirma como distinción funcional principal: CRM trata relaciones con clientes y ERP integra procesos y recursos organizativos. Ambos pueden integrarse; no se afirma que ERP se limite a procesos internos. **Corregida por precisión; clave D.**
+- **4315 — CRM analítico:** las opciones originales no incluían una afirmación correcta: minería de datos para identificar tendencias corresponde al CRM analítico, mientras las otras opciones eran generalizaciones falsas. Se corrige la opción B y se conserva su clave. **Corregida; clave B.**
+
+Fuentes: SAP Help, [centros de coste](https://help.sap.com/docs/SAP_ERP/b42281c1645049a4b07c0ab25ec8b899/a30ad553088f4308e10000000a174cb4.html); SAP, [ERP y sus módulos](https://www.sap.com/products/erp/what-is-erp.html) y Learning, [configuración empresarial](https://learning.sap.com/courses/extending-cloud-solutions-with-sap-cloud-applications-studio/understanding-the-business-configuration-concept_a0463369-3db5-47ab-84a0-dd08039bd715); SugarCRM, [referencia archivada a Community Edition](https://github.com/sugarai-archive/sugarcrm_dev) y contrato que la identifica como edición de código abierto distinta de los productos actuales [PDF](https://www.sugarcrm.com/wp-content/uploads/legal/sugar-outfitters-isv-agreement.pdf); Microsoft Learn, [analítica de relaciones](https://learn.microsoft.com/en-us/dynamics365/sales/relationship-analytics-overview) y [glosario CRM](https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/glossary). Cotejo Academy: [Tema 072 de 2026](https://drive.google.com/file/d/1lkbdZvGxPTwyjhiOf6VsglMWYe4RI6sL/view?usp=drivesdk), apartados de ERP, módulos, parametrización y CRM analítico/operacional. Cotejo de convocatoria: A1 [BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 72; A2 [BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), tema II-12 para CRM/atención. Se clasifican las cinco en A1-72; 4314 y 4315 también en A2-II-12.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas, 4.310 examinadas individualmente, 7.813 aún sin revisar individualmente y cero errores estructurales. El inventario estructural no acredita revisión de contenido.
 
 ## Lote 797 — 9 de noviembre de 2026
 
