@@ -1,11 +1,24 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial aplicado: 844 (IDs 4541–4545). Acumulado: 4.540 preguntas examinadas individualmente, 4.457 verificadas (816 vigentes, 3.294 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.583 sin revisar individualmente. Hay 3.770 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. Los lotes 842–844 están publicados y verificados en GitHub Pages; el workflow 42874450656 del commit 3e7690d concluyó correctamente y los recursos del lote 844 sirven los IDs 4541–4545 y contadores coincidentes.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial aplicado: 845 (IDs 4546–4550). Acumulado: 4.545 preguntas examinadas individualmente, 4.462 verificadas (816 vigentes, 3.299 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.578 sin revisar individualmente. Hay 3.775 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. Los lotes 842–844 están publicados y verificados en GitHub Pages; el lote 845 está pendiente de publicación.
 
 
 
 
 
+## Lote 845 — 10 de noviembre de 2026
+
+IDs 4546–4550 revisados individualmente; originales y decisiones conservados en [cambios-lote-845.json](cambios-lote-845.json). Acumulado: 4.545 examinadas, 4.462 verificadas (816 vigentes, 3.299 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.578 todavía sin revisar individualmente. Se confirman el significado de EAL4 y la definición CCN de pentesting, se separa auditoría de soporte/gestión y se sustituyen reglas universales no justificadas por requisitos concretos de IIA y fuentes vigentes.
+
+- **4546 — Common Criteria:** EAL4 corresponde a «diseñado, probado y revisado metódicamente»; no implica invulnerabilidad ni seguridad fuera del alcance certificado.
+- **4547 — tipos de controles:** el enunciado especifica la tríada funcional habitual preventivo, detectivo y correctivo; se evita presentar “reactivo/concurrente” como categorías universales.
+- **4548 — entrevistas y evidencia:** no hay límite universal IIA de 2,5 horas ni obligación de entrevistar a todos los usuarios. La información relevante y fiable se corrobora y documenta para sostener resultados.
+- **4549 — recomendaciones:** el auditor puede comunicar hallazgos y recomendar acciones; la dirección decide y conserva la implantación operativa.
+- **4550 — pentesting CCN:** CCN-STIC-408 v1.2 define expresamente las pruebas de penetración para comprobar aplicación/configuración de contramedidas frente a la política y alertar desviaciones.
+
+Fuentes primarias: Common Criteria, [CC Part 3, §8.6, EAL4](https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R4.pdf) y [portal oficial CC](https://www.commoncriteriaportal.org/cc/index.cfm); CISA, [Cyber Resilience Review, Control Management](https://www.cisa.gov/sites/default/files/c3vp/crr_resources_guides/CRR_Resource_Guide-CM.pdf); The IIA, [Global Internal Audit Standards 2024, §§14.1, 14.4 y 14.6](https://www.theiia.org/globalassets/site/standards/globalinternalauditstandards_2024january9.pdf); ISACA, [IT Audit Framework](https://www.isaca.org/resources/it-audit) y [auditoría de desarrollo/proyectos](https://www.isaca.org/resources/insights-and-expertise/audit-programs-and-tools); CCN-CERT, [CCN-STIC-408 v1.2](https://www.ccn-cert.cni.es/es/pdf/guias/series-ccn-stic/guias-de-acceso-publico-ccn-stic/74-ccn-stic-408-seguridad-perimetral-cortafuegos/file.html), glosario pp. 65–66. Clasificación cotejada con [programa oficial BOE-A-2025-25938, anexo I, A1-38/A2-II-11](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y bloque 16 de ITIC Academy; la clasificación orienta el temario, no sustituye las fuentes técnicas.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados correctamente: 12.123 preguntas, 4.545 registros individuales, 83 pendientes documentadas y 7.578 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido. Publicación pendiente de confirmación.
 ## Lote 844 — 10 de noviembre de 2026
 
 IDs 4541–4545 revisados individualmente; originales y decisiones conservados en [cambios-lote-844.json](cambios-lote-844.json). Acumulado: 4.540 examinadas, 4.457 verificadas (816 vigentes, 3.294 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.583 todavía sin revisar individualmente. Se sustituye una referencia de privacidad derogada por el Código de ISACA actual, se reemplaza la idea rígida de «staff» por el criterio IIA vigente de independencia, y se distinguen auditoría de proyecto y soporte operativo. También se amplían la definición de auditoría TI y los requisitos actuales de CISA.
