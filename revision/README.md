@@ -1,7 +1,21 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 829 (IDs 4466–4470). Acumulado: 4.465 preguntas examinadas individualmente, 4.383 verificadas (816 vigentes, 3.220 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.658 sin revisar individualmente. Hay 3.696 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 830 (IDs 4471–4475). Acumulado: 4.470 preguntas examinadas individualmente, 4.388 verificadas (816 vigentes, 3.225 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.653 sin revisar individualmente. Hay 3.701 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
+
+## Lote 830 — 10 de noviembre de 2026
+
+IDs 4471–4475 revisados individualmente; originales y decisiones conservados en [cambios-lote-830.json](cambios-lote-830.json). Acumulado: 4.470 preguntas examinadas, 4.388 verificadas (816 vigentes, 3.225 corregidas y 347 históricas), 82 pendientes documentadas y 7.653 todavía sin revisar individualmente. Se delimita la auditoría de controles, se diferencian responsabilidades de auditor y gestión, y se eliminan dos clasificaciones ambiguas de controles de salida/entrada.
+
+- **4471 — controles de salida:** se formula como restricción de acceso a informes generados a usuarios y fines autorizados; se diferencia de control de totales y de validación/autorización de entradas. A1-38; A2-II-11; Academy, bloque 16.
+- **4472 — objetivo de auditoría de sistemas:** se precisa que el auditor evalúa el diseño, implantación y eficacia operativa de los controles con relación a objetivos y criterios del encargo. La aceptación del riesgo, definición de políticas y ejecución de acciones correctoras corresponden a gestión. A1-38; A2-II-11; Academy, bloque 16.
+- **4473 — auditoría de cumplimiento:** se reformula para preguntar por un encargo delimitado a criterios identificados y alcance: determinar si la evidencia demuestra cumplimiento. El original tenía varias afirmaciones potencialmente ciertas según el tipo de auditoría. A1-38; A2-II-11; Academy, bloque 16.
+- **4474 — control detectivo:** se confirma que detecta y comunica errores, omisiones o usos/entradas no autorizados; se distingue de prevención y corrección. A1-38; A2-II-11; Academy, bloque 16.
+- **4475 — control de entrada:** se pregunta positivamente por validación/edición en captura. Se elimina el enunciado negativo y la ambigüedad de «balanceo y conciliación», que puede concernir varios puntos del flujo de datos. A1-38; A2-II-11; Academy, bloque 16.
+
+Fuentes primarias: GAO/CIGIE, [FISCAM vigente, edición de junio de 2026](https://www.gao.gov/assets/gao-26-108633.pdf), §520 (controles de entrada BP.01, datos de salida BP.03, restricción de informes BP.04.06.04 y conciliación de interfaces BP.05.04.04); ISACA, [ITAF y recursos de auditoría de TI](https://www.isaca.org/resources/it-audit) y [glosario oficial](https://www.isaca.org/resources/glossary), entradas «Input control», «Detective control» y «Direct reporting engagement». Cotejo con ITIC Academy, [bloque 16, Auditoría informática, versión 2026.2](https://drive.google.com/file/d/1D93MNUzOWGwD6IyuWdxIMnHaL7aXvYhp/view?usp=drivesdk), y `temario-oficial.json`: A1-38 y A2-II-11. El material académico verifica correspondencia curricular, no sustituye los estándares de auditoría.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados: el banco conserva 12.123 preguntas; 4.470 registros de revisión, 82 pendientes justificadas y 7.653 preguntas todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido.
 ## Lote 829 — 10 de noviembre de 2026
 
 IDs 4466–4470 revisados individualmente; originales y decisiones conservados en [cambios-lote-829.json](cambios-lote-829.json). Acumulado: 4.465 examinadas, 4.383 verificadas (816 vigentes, 3.220 corregidas y 347 históricas), 82 pendientes documentadas y 7.658 todavía sin revisar individualmente. Se fija la edición vigente de Common Criteria y de ISO/IEC 25010, y se delimitan responsabilidades y propiedades de la evidencia con estándares explícitos.
