@@ -1,10 +1,24 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial aplicado: 847 (IDs 4556–4560). Acumulado: 4.555 preguntas examinadas individualmente, 4.472 verificadas (816 vigentes, 3.309 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.568 sin revisar individualmente. Hay 3.785 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. Lotes 842–847 publicados y verificados en GitHub Pages; el workflow 42882220958 del commit 61d962f concluyó correctamente y los recursos del lote 847 sirven los IDs y contadores esperados.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial aplicado: 848 (IDs 4561–4565). Acumulado: 4.560 preguntas examinadas individualmente, 4.477 verificadas (816 vigentes, 3.314 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.563 sin revisar individualmente. Hay 3.790 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. Lotes 842–847 publicados y verificados; el lote 848 se publicará tras el commit y su despliegue.
 
 
 
 
+
+## Lote 848 — 10 de noviembre de 2026
+
+IDs 4561–4565 revisados individualmente; originales y decisiones conservados en [cambios-lote-848.json](cambios-lote-848.json). Acumulado: 4.560 examinadas, 4.477 verificadas (816 vigentes, 3.314 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.563 todavía sin revisar individualmente. Se distingue autorización del Congreso y declaración del Gobierno para el estado de excepción; se ajustan los derechos digitales al Título X LOPDGDD; se aplican los arts. 29 LCSP sobre prórrogas; se matiza la regla constitucional-estatutaria de elección de presidentes autonómicos; y se añade consentimiento expreso documentado a la asistencia de identificación o firma electrónica.
+
+- **4561 — estado de excepción:** el Congreso autoriza antes de que el Gobierno lo declare por decreto del Consejo de Ministros (CE 116.3; LO 4/1981, arts. 13–14).
+- **4562 — derechos digitales:** los derechos constitucionales se aplican plenamente en Internet (art. 79 LOPDGDD). Neutralidad, seguridad de comunicaciones y formación digital se precisan en los arts. 80, 82 y 83.
+- **4563 — contratos:** se mantiene como incorrecto que la prórroga pueda ser tácita; el art. 29.2 LCSP la prohíbe expresamente. Contratos menores: máximo de un año y sin prórroga (29.8).
+- **4564 — Presidencia autonómica:** los Estatutos generalizan la elección por la Asamblea de entre sus miembros y el nombramiento por el Rey; se distingue la regla estatutaria general del tenor del art. 152.1 CE.
+- **4565 — asistencia electrónica:** el funcionario solo realiza identificación o firma si la persona no obligada carece de medios, se identifica ante aquel y consiente expresamente, con constancia (art. 12.2 LPAC).
+
+Fuentes primarias: [Constitución Española, texto consolidado al 20-05-2026](https://www.boe.es/eli/es/c/1978/12/27/(1)/con/20260520); [LO 4/1981, arts. 13–14](https://www.boe.es/eli/es/lo/1981/06/01/4/con); [LOPDGDD, arts. 79–83](https://www.boe.es/eli/es/lo/2018/12/05/3/con); [LCSP, art. 29](https://www.boe.es/eli/es/l/2017/11/08/9/con); [LPAC, arts. 12 y 14](https://www.boe.es/eli/es/l/2015/10/01/39/con); [RD 203/2021, art. 30](https://www.boe.es/eli/es/rd/2021/03/30/203/con); [Dictamen del Consejo de Estado CE-D-2018-85](https://www.boe.es/buscar/doc.php?id=CE-D-2018-85). Temario de academia cotejado: [bloque 01](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), [bloque 03](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), [bloque 05](https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk) y [bloque 08](https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk). Clasificación contrastada con convocatorias oficiales [A1, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): A1-1/A2-I-1 (4561), A1-27/A2-I-7 (4562), A1-11 (4563), A1-3 (4564) y A1-8/A2-I-8 (4565).
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados correctamente: 12.123 preguntas; 4.560 registros individuales; 83 pendientes documentadas y 7.563 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido. Publicación del lote 848 pendiente de despliegue y verificación.
 
 ## Lote 847 — 10 de noviembre de 2026
 
