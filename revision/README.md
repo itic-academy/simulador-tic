@@ -73,6 +73,8 @@ Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-aca
 
 Tras el lote 805, el workflow de Pages [42810171592](https://github.com/itic-academy/simulador-tic/actions/runs/42810171592) terminó con `success`; la consulta sin caché devolvió HTTP 200 y confirmó el lote, los IDs 4346–4350 y el acumulado 4.345.
 
+Tras el lote 806, el workflow de Pages [42811447674](https://github.com/itic-academy/simulador-tic/actions/runs/42811447674) terminó con `success`; la consulta sin caché devolvió HTTP 200 y confirmó los IDs 4351–4355 y el acumulado 4.350.
+
 ## Lote 806 — 10 de noviembre de 2026
 
 IDs 4351–4355 revisados individualmente; enunciados originales y decisiones conservados en [cambios-lote-806.json](cambios-lote-806.json).
