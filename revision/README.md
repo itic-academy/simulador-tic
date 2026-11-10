@@ -4,7 +4,7 @@ Estado parcial, no revisión completa del banco. Publicación desde la rama `mai
 
 ## Estado de publicación
 
-Tras el lote 808, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, 4.360 preguntas examinadas individualmente, 7.763 sin revisar y cero errores estructurales. La publicación del lote y la consulta HTTP sin caché quedan pendientes.
+Tras el lote 808, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, 4.360 preguntas examinadas individualmente, 7.763 sin revisar y cero errores estructurales. El workflow [42814107457](https://github.com/itic-academy/simulador-tic/actions/runs/42814107457), asociado al commit `a5643e39c056b21823dde26e10b0d783784c7d88`, terminó con `success`; la consulta sin caché a Pages devolvió HTTP 200 y confirmó el lote 808 y los IDs 4361–4365.
 
 Tras el lote 807, el workflow de GitHub Pages [42812981122](https://github.com/itic-academy/simulador-tic/actions/runs/42812981122), asociado al commit `dd7b546d81a4b73678fbe93c2b8f765598a1705b`, terminó con `success`. La consulta sin caché a la página de revisión devolvió HTTP 200 y confirmó el lote 807, el rango 4356–4360 y el acumulado de 4.355 preguntas examinadas.
 
