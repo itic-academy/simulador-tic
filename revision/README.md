@@ -1,10 +1,24 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 840 (IDs 4521–4525). Acumulado: 4.520 preguntas examinadas individualmente, 4.437 verificadas (816 vigentes, 3.274 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.603 sin revisar individualmente. Hay 3.750 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. Publicación del lote 840 verificada en GitHub Pages: raíz y archivos de revisión responden HTTP 200; el registro contiene los IDs 4521–4525 y el inventario coincide. Workflow de contenido 42868997456 (commit 3e67d97); verificación final de publicación 42869322848 (commit 24ee7f1).
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial aplicado: 841 (IDs 4526–4530). Acumulado: 4.525 preguntas examinadas individualmente, 4.442 verificadas (816 vigentes, 3.279 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.598 sin revisar individualmente. Hay 3.755 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. La publicación del lote 840 y del workflow reparado quedó verificada en GitHub Pages; el despliegue del lote 841 está pendiente.
 
 
 
 
+
+## Lote 841 — 10 de noviembre de 2026
+
+IDs 4526–4530 revisados individualmente; originales y decisiones conservados en [cambios-lote-841.json](cambios-lote-841.json). Acumulado: 4.525 examinadas, 4.442 verificadas (816 vigentes, 3.279 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.598 todavía sin revisar individualmente. Se matizan principios de auditoría; se diferencia la función asesora del auditor de la gestión; se precisa la fase descrita por CCN-STIC-802, el alcance de flujos externos y el criterio vigente para un dictamen desfavorable ENS.
+
+- **4526 — fundamentos del trabajo auditor:** planificación/supervisión, estudio de controles y evidencia adecuada son componentes complementarios, no respuestas excluyentes; “todas” queda como clave.
+- **4527 — responsabilidad del auditor:** puede evaluar y recomendar, no desarrollar e implantar por cuenta de la dirección los cambios que luego puedan someterse a auditoría.
+- **4528 — fases en CCN-STIC-802:** se pregunta contra §6.3. Las pruebas sustantivas pueden ser procedimientos durante el trabajo material, pero no son una fase autónoma de la lista de fases relevantes del §65.
+- **4529 — alcance de seguridad:** se concreta el supuesto al flujo entre sistemas propios y externos. Redes, inventarios y prácticas también pueden auditarse; por ello el enunciado anterior no garantizaba una única respuesta.
+- **4530 — dictamen desfavorable ENS:** se corrige la omisión de No Conformidades menores en la opción clave: CCN-STIC-802 §108 requiere número significativo de mayores y menores, no evidenciables con un PAC y con necesidad de verificación in situ por auditoría extraordinaria.
+
+Fuentes primarias: The IIA, [Global Internal Audit Standards 2024](https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/) y [texto completo](https://www.theiia.org/globalassets/site/standards/globalinternalauditstandards_2024january9.pdf), normas 13.1–13.6, 14.1, 14.4 y 2.2, vigentes desde 9-1-2025; CCN-CERT, [CCN-STIC-802, auditoría de cumplimiento ENS](https://www.ccn-cert.cni.es/es/pdf/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/502-ccn-stic-802-auditoria-del-ens/file.html), §§4, 5, 6.3 y 6.8 (incluido §108); IGAE, [Normas de Auditoría del Sector Público](https://www.boe.es/eli/es/res/1998/09/01/%283%29). Clasificación cotejada con el programa oficial [BOE-A-2025-25938, anexo I, A1-38/A2-II-11](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y bloque 16 de ITIC Academy; las fuentes primarias sustentan las claves y explicaciones.
+
+inventario.cjs, verificar.cjs y git diff --check ejecutados: 12.123 preguntas; 4.525 registros individuales; 83 pendientes documentadas y 7.598 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido. Publicación del lote 841 pendiente de verificación directa en GitHub Pages.
 
 ## Lote 840 — 10 de noviembre de 2026
 
