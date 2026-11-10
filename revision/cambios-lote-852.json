@@ -1,0 +1,321 @@
+{
+  "fecha": "2026-11-10",
+  "alcance": "Revisión individual de las preguntas 4581–4585: protocolos IGP y encaminamiento, proceso EVS de MÉTRICA v3, estimación Planning Poker en el contexto ágil, tipos de PdP de Red SARA y especificaciones SCSP de interoperabilidad.",
+  "cambios": [
+    {
+      "id": 4581,
+      "original": {
+        "id": 4581,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes protocolos podría ser usado en un sistema autónomo para enrutamiento?",
+        "opciones": [
+          "BGP (Border Gateway Protocol)",
+          "EGP (Exterior Gateway Protocol)",
+          "AGP (Autonomous Gateway Protocol)",
+          "RIP (Routing Information Protocol)"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4581,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué protocolo de encaminamiento es un IGP diseñado para operar dentro de un único sistema autónomo?",
+        "opciones": [
+          "BGP (Border Gateway Protocol).",
+          "EGP (Exterior Gateway Protocol).",
+          "AGP (Autonomous Gateway Protocol).",
+          "RIP (Routing Information Protocol)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "RIP fue diseñado como un protocolo de pasarela interior (IGP) para redes de tamaño moderado dentro de un sistema autónomo. BGP intercambia información de encaminamiento entre sistemas autónomos; EGP es además la denominación genérica de los protocolos exteriores y el nombre de un protocolo histórico distinto. Se precisa «dentro de un único AS» para que la opción RIP sea inequívoca.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": 42,
+          "estado": "revisada",
+          "nota": "Cotejada con RFC 2453 y bloque 42 de redes de ITIC Academy; correspondencia con protocolos de encaminamiento en los programas oficiales."
+        },
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc2453.html",
+              "reference": "RFC 2453, §3.1: RIP está diseñado como IGP para AS de tamaño moderado; distingue IGP intra-AS de EGP inter-AS."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4271.html",
+              "reference": "RFC 4271, BGP-4: protocolo exterior para intercambio de información de encaminamiento entre sistemas autónomos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "reference": "ITIC Academy, bloque 42 Redes, versión 2026.1: encaminamiento, protocolos de red y correspondencia con A1-108/A2-IV-10."
+            }
+          ],
+          "observaciones": "La respuesta es RIP: la pregunta original era ambigua porque no distinguía encaminamiento interior de exterior. Se añade la condición de operar dentro de un único AS y se contrasta la terminología con RFC 2453 y RFC 4271."
+        }
+      }
+    },
+    {
+      "id": 4582,
+      "original": {
+        "id": 4582,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El estudio de Viabilidad del Sistema:",
+        "opciones": [
+          "Es una parte del ciclo de vida, y como tal está contemplado en la metodología MÉTRICA v3",
+          "No está contemplado en MÉTRICA, pues esta es solo una metodología de desarrollo",
+          "No es necesaria si se emplean técnicas orientadas a objetos",
+          "No es necesaria si el desarrollo del sistema viene motivado por una orden superior"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4582,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En MÉTRICA versión 3, el Estudio de Viabilidad del Sistema (EVS):",
+        "opciones": [
+          "Es un proceso principal de la metodología, previo al Análisis del Sistema de Información (ASI); su profundidad se adapta al caso.",
+          "No está contemplado en MÉTRICA, que solo describe el desarrollo técnico.",
+          "Deja de ser necesario cuando se emplea orientación a objetos.",
+          "Se omite necesariamente si el desarrollo del sistema viene motivado por una orden superior."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "El EVS es un proceso principal de MÉTRICA v3 que analiza necesidades concretas y alternativas de solución antes del proceso ASI. La metodología contempla sus actividades y resultados; la profundidad con que se realiza se ajusta a las características del caso, pero no desaparece por usar orientación a objetos o por el origen jerárquico de la petición.",
+        "clasificacion": {
+          "A1": [
+            "A1-95"
+          ],
+          "A2": [
+            "A2-III-2"
+          ],
+          "bloque_academia": 17,
+          "estado": "revisada",
+          "nota": "Cotejada con metodología oficial MÉTRICA v3, proceso EVS, y bloque 17 de ITIC Academy (viabilidad y MÉTRICA)."
+        },
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://administracionelectronica.gob.es/content/dam/pae/pae-home/documentos/documentacion/metodologias-y-guias/metricav3/METRICA_V3_Estudio_de_Viabilidad_del_Sistema.pdf",
+              "reference": "MÉTRICA v3, proceso EVS: propósito, actividades y productos; precede al análisis del sistema."
+            },
+            {
+              "url": "https://administracionelectronica.gob.es/documentacion/metodologias-guias/pae-metrica-v3",
+              "reference": "Portal oficial PAe/AEAD: estructura documental de MÉTRICA v3, con EVS como proceso principal."
+            },
+            {
+              "url": "https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk",
+              "reference": "ITIC Academy, bloque 17, versión 2026.2: estudio de viabilidad y MÉTRICA v3; incluye A1-40 y A2-T15."
+            }
+          ],
+          "observaciones": "El material oficial de MÉTRICA define un proceso EVS previo al ASI y sus actividades. Se aclara que su profundidad puede variar; no se convierte en optativo por el tipo de desarrollo ni por la motivación de la solicitud."
+        }
+      }
+    },
+    {
+      "id": 4583,
+      "original": {
+        "id": 4583,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "De entre las siguientes, ¿qué técnica se utiliza en SCRUM para realizar estimaciones de los recursos laborales por consenso?",
+        "opciones": [
+          "Planning Poker.",
+          "Sprint Planning.",
+          "Agreement Planning.",
+          "Bucket Planning."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4583,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué técnica de estimación colaborativa suele emplearse en equipos ágiles para consensuar el esfuerzo relativo de elementos del Product Backlog?",
+        "opciones": [
+          "Planning Poker.",
+          "Sprint Planning.",
+          "Agreement Planning.",
+          "Bucket Planning."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Planning Poker es una técnica de estimación colaborativa: se realizan estimaciones individuales simultáneas, se discuten las diferencias y se repite la ronda hasta alcanzar una estimación consensuada. No es una práctica obligatoria prescrita por el marco Scrum; la Guía Scrum deja la estimación y su técnica a los Developers. «Recursos laborales» se sustituye por esfuerzo relativo de elementos del Product Backlog.",
+        "clasificacion": {
+          "A1": [
+            "A1-37",
+            "A1-88",
+            "A1-99"
+          ],
+          "A2": [
+            "A2-III-2"
+          ],
+          "bloque_academia": 15,
+          "estado": "revisada",
+          "nota": "Cotejada con la fuente del creador de Planning Poker y con los temas de metodologías ágiles y estimación de ITIC Academy."
+        },
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.mountaingoatsoftware.com/agile/story-points/planning-poker",
+              "reference": "Mike Cohn / Mountain Goat Software, introductor de Planning Poker: estimaciones privadas, discusión y nueva ronda hacia consenso."
+            },
+            {
+              "url": "https://scrumguides.org/scrum-guide.html",
+              "reference": "Scrum Guide oficial (Schwaber y Sutherland, noviembre de 2020): Developers estiman los elementos del Product Backlog; no prescribe Planning Poker."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk",
+              "reference": "ITIC Academy, bloque 15 Metodologías ágiles y ciclo de vida, versión 2026.1: Scrum, metodologías ágiles y estimación de proyectos."
+            }
+          ],
+          "observaciones": "La clave Planning Poker se conserva, pero se evita presentarla como técnica obligatoria de Scrum. Se precisa que se trata de estimar esfuerzo relativo y consensuar la estimación de elementos del backlog."
+        }
+      }
+    },
+    {
+      "id": 4584,
+      "original": {
+        "id": 4584,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la NTI de requisitos de conexión a la red de comunicaciones de las Administraciones Públicas españolas ¿cuál de los siguientes no es un tipo de Punto de Presencia (PdP) de la Red SARA?",
+        "opciones": [
+          "Proveedores de Acceso a la Red SARA (PAS).",
+          "Centros de Proceso de Datos (CPD) de SARA.",
+          "Red sTESTA (secure Trans-European Services for Telematics between Administrations).",
+          "Todos los anteriores son tipos de PdP."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4584,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el apartado II.1.2 de la NTI de requisitos de conexión a la Red SARA, ¿qué afirmación sobre los PdP es correcta?",
+        "opciones": [
+          "Solo los Proveedores de Acceso a la Red SARA (PAS) son tipos de PdP.",
+          "Solo los Centros de Proceso de Datos (CPD) de SARA son tipos de PdP.",
+          "La Red sTESTA es el único tipo de PdP de los enumerados.",
+          "PAS, CPD de SARA y Red sTESTA figuran entre los tipos de PdP enumerados."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La NTI aprobada por Resolución de 19 de julio de 2011 enumera como tipos de PdP los PAS, los CPD de SARA, Red sTESTA, centros externos de monitorización, prestadores de servicios de certificación y otros. Por tanto, PAS, CPD y sTESTA son tipos. La resolución de 2017 establece condiciones para tener la consideración de PdP, sin cambiar la lectura de esa enumeración. Se reemplaza la negación confusa del enunciado original.",
+        "clasificacion": {
+          "A1": [
+            "A1-46",
+            "A1-120"
+          ],
+          "A2": [
+            "A2-I-10"
+          ],
+          "bloque_academia": 10,
+          "estado": "revisada",
+          "nota": "Cotejada con NTI y BOE, bloques 10 (cooperación/servicios comunes) y 42 (Red SARA/sTESTA) de ITIC Academy."
+        },
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2011-13173",
+              "reference": "NTI, apartado II.1.2, BOE-A-2011-13173: enumera PAS, CPD de SARA, Red sTESTA, centros externos, prestadores de certificación y otros tipos de PdP."
+            },
+            {
+              "url": "https://www.boe.es/buscar/pdf/2017/BOE-A-2017-8018-consolidado.pdf",
+              "reference": "Resolución BOE-A-2017-8018 consolidada: establece condiciones para tener la consideración de PdP y resume los tipos definidos por la NTI."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1alTzv7f2Katg4EdxJ72SYkLm6UScCCho/view?usp=drivesdk",
+              "reference": "ITIC Academy, bloque 10 Gobernanza TIC y Administración Digital, versión 2026.4: Red SARA, servicios comunes, cooperación e infraestructura."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "reference": "ITIC Academy, bloque 42 Redes, versión 2026.1: Red SARA y red sTESTA."
+            }
+          ],
+          "observaciones": "La fuente normativa muestra que las tres alternativas mencionadas son tipos de PdP. Se reformula el negativo «cuál no es» y su opción «todos», que producían una estructura lógica confusa, para preguntar directamente cuáles figuran en la NTI."
+        }
+      }
+    },
+    {
+      "id": 4585,
+      "original": {
+        "id": 4585,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El proyecto SCSP, del Ministerio de Política Territorial y Función Pública:",
+        "opciones": [
+          "Es un conjunto de especificaciones orientadas al intercambio de datos entre Administraciones Públicas con el objetivo de eliminar los certificados administrativos en papel.",
+          "Es un catálogo de interfaces de interoperabilidad para el consumo de datos del Directorio Común de Organismos y Oficinas.",
+          "Permite la conexión en tiempo real de múltiples salas de videconferencia.",
+          "Es un diagramador de procedimientos administrativos, para su integración en las sedes electrónicas."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4585,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué es SCSP (Sustitución de Certificados en Soporte Papel) en la Administración pública?",
+        "opciones": [
+          "Un conjunto de especificaciones y servicios de intercambio electrónico de datos entre Administraciones para evitar que se aporten certificados administrativos en papel.",
+          "Un catálogo de interfaces para consultar el Directorio Común de Organismos y Oficinas.",
+          "Una plataforma para conectar salas de videoconferencia en tiempo real.",
+          "Una herramienta para diagramar procedimientos administrativos e integrarlos en las sedes electrónicas."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "El Centro de Transferencia de Tecnología define SCSP como un conjunto de especificaciones para intercambiar electrónicamente datos entre Administraciones y evitar pedir al ciudadano documentos/certificados que ya obran en poder público. La Plataforma de Intermediación de Datos facilita este tipo de consultas y utiliza protocolos SCSP; SCSP no es un catálogo DIR3, una plataforma de videoconferencia ni un modelador de procedimientos. Se actualiza la referencia institucional histórica del enunciado.",
+        "clasificacion": {
+          "A1": [
+            "A1-46",
+            "A1-49"
+          ],
+          "A2": [
+            "A2-I-9",
+            "A2-I-10"
+          ],
+          "bloque_academia": 10,
+          "estado": "revisada",
+          "nota": "Cotejada con ficha oficial CTT/PAe de SCSP y bloque 10 de ITIC Academy sobre interoperabilidad, cooperación y servicios comunes."
+        },
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://administracionelectronica.gob.es/ctt/scsp",
+              "reference": "Ficha oficial CTT: SCSP es un conjunto de especificaciones de intercambio electrónico de datos entre AAPP para eliminar certificados administrativos en papel."
+            },
+            {
+              "url": "https://administracionelectronica.gob.es/ctt/scsp/descargas",
+              "reference": "Portal oficial SCSP: especificaciones funcionales y técnicas vigentes SCSPv3.3, actualizadas en 2026."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1alTzv7f2Katg4EdxJ72SYkLm6UScCCho/view?usp=drivesdk",
+              "reference": "ITIC Academy, bloque 10 Gobernanza TIC y Administración Digital, versión 2026.4: Red SARA, interoperabilidad, servicios comunes y Plataforma de Intermediación."
+            }
+          ],
+          "observaciones": "La respuesta se conserva, pero se corrige la referencia ministerial desactualizada y se distingue SCSP de otros servicios de administración digital. La ficha oficial CTT mantiene la definición y sus especificaciones técnicas están en revisión a v3.3 (enero de 2026)."
+        }
+      }
+    }
+  ]
+}
