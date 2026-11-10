@@ -1,11 +1,24 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial aplicado: 841 (IDs 4526–4530). Acumulado: 4.525 preguntas examinadas individualmente, 4.442 verificadas (816 vigentes, 3.279 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.598 sin revisar individualmente. Hay 3.755 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. La publicación del lote 840 y del workflow reparado quedó verificada en GitHub Pages; la publicación del lote 841 quedó verificada: raíz, README, cambios-lote-841.json e inventario responden HTTP 200 y coinciden en IDs/progreso (workflow 42870185105, commit 039b717).
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial aplicado: 842 (IDs 4531–4535). Acumulado: 4.530 preguntas examinadas individualmente, 4.447 verificadas (816 vigentes, 3.284 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.593 sin revisar individualmente. Hay 3.760 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. La publicación del lote 841 quedó verificada en GitHub Pages; la publicación del lote 842 está pendiente de publicar y comprobar.
 
 
 
 
 
+## Lote 842 — 10 de noviembre de 2026
+
+IDs 4531–4535 revisados individualmente; originales y decisiones conservados en [cambios-lote-842.json](cambios-lote-842.json). Acumulado: 4.530 examinadas, 4.447 verificadas (816 vigentes, 3.284 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.593 todavía sin revisar individualmente. Se precisa qué debe sustentarse con evidencia, los controles de seguridad lógica, el dominio COBIT de APO02, la entidad emisora de CISSP y el documento de planificación de auditoría según CCN-STIC-802.
+
+- **4531 — evidencia y conclusiones:** conclusiones y hallazgos se apoyan en evidencia relevante, fiable y suficiente. Se elimina la pretensión imprecisa de que toda auditoría deba informar directamente a autoridades judiciales.
+- **4532 — seguridad lógica:** se revisan autorización y privilegios sobre recursos lógicos; copias, criticidad física y tolerancia a fallos son objetivos distintos.
+- **4533 — COBIT 2019:** APO02 Managed Strategy pertenece al dominio APO, Align, Plan and Organize.
+- **4534 — certificaciones:** CISSP es una certificación de ISC2; CISA, CRISC y CISM forman parte del catálogo de ISACA.
+- **4535 — planificación ENS:** CCN-STIC-802 §6.1 identifica el Plan de Auditoría detallado como el documento con actividades previstas y participantes.
+
+Fuentes primarias: The IIA, [Global Internal Audit Standards 2024, texto completo](https://www.theiia.org/globalassets/site/standards/globalinternalauditstandards_2024january9_printable.pdf), normas 13.3, 13.6, 14.1 y 14.5 (vigentes desde 9-1-2025); [Real Decreto 311/2022, anexo II op.acc](https://www.boe.es/eli/es/rd/2022/05/03/311); ISACA, [dominios COBIT 2019](https://www.isaca.org/resources/news-and-trends/industry-news/2019/employing-cobit-2019-for-enterprise-governance-strategy) y [objetivo APO02](https://www.isaca.org/resources/news-and-trends/industry-news/2020/using-cobit-2019-to-plan-and-execute-an-organization-transformation-strategy); [catálogo de certificaciones ISACA](https://www.isaca.org/credentialing/certifications) y [ficha oficial CISSP de ISC2](https://www.isc2.org/en/Certifications/CISSP); CCN-CERT, [CCN-STIC-802](https://www.ccn-cert.cni.es/es/pdf/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/502-ccn-stic-802-auditoria-del-ens/file.html), §6.1, punto 56. Clasificación contrastada con el programa oficial [BOE-A-2025-25938, anexo I, A1-38/A2-II-11](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y bloque 16 de ITIC Academy; la clasificación organiza el temario y no sustituye las fuentes de respuesta.
+
+`inventario.cjs`, `verificar.cjs` y `git diff --check` ejecutados correctamente: 12.123 preguntas, 4.530 registros individuales, 83 pendientes documentadas y 7.593 todavía sin revisar individualmente. El inventario estructural no acredita revisión de contenido. Publicación pendiente de confirmación.
 ## Lote 841 — 10 de noviembre de 2026
 
 IDs 4526–4530 revisados individualmente; originales y decisiones conservados en [cambios-lote-841.json](cambios-lote-841.json). Acumulado: 4.525 examinadas, 4.442 verificadas (816 vigentes, 3.279 corregidas y 347 históricas), 83 pendientes documentadas (36 de fuente y 47 de ambigüedad) y 7.598 todavía sin revisar individualmente. Se matizan principios de auditoría; se diferencia la función asesora del auditor de la gestión; se precisa la fase descrita por CCN-STIC-802, el alcance de flujos externos y el criterio vigente para un dictamen desfavorable ENS.
