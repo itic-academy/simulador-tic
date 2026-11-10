@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 826 (IDs 4451–4455). Acumulado: 4.450 preguntas examinadas individualmente, 4.368 verificadas (816 vigentes, 3.205 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.673 sin revisar individualmente. Hay 3.681 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 827 (IDs 4456–4460). Acumulado: 4.455 preguntas examinadas individualmente, 4.373 verificadas (816 vigentes, 3.210 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.668 sin revisar individualmente. Hay 3.686 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 827 — 10 de noviembre de 2026
+
+IDs 4456–4460 revisados individualmente; originales y decisiones conservados en [cambios-lote-827.json](cambios-lote-827.json). Acumulado: 4.455 examinadas, 4.373 verificadas (816 vigentes, 3.210 corregidas y 347 históricas), 82 pendientes documentadas y 7.668 aún sin revisar individualmente. Se sustituyen taxonomías sin fuente explícita, sinonimias que admitían respuestas solapadas y definiciones imprecisas por criterios de auditoría documentados en normativa/estándares.
+
+- **4456 — auditoría de cumplimiento:** se distingue de regularidad contable y operativa conforme al artículo 164 de la Ley General Presupuestaria. A1-38; A2-II-11; Academy, bloque 16.
+- **4457 — pista de auditoría:** se formula como registro cronológico que permite reconstruir eventos y se distingue del concepto más amplio de evidencia. A1-38; A2-II-11; Academy, bloque 16.
+- **4458 — auditoría de calidad del software:** se actualiza la afirmación sin sustento que la calificaba de procedimiento extraordinario limitado a proyectos grandes; se pregunta por su planificación en el ciclo de vida. A1-38/A1-96; A2-II-11/A2-III-7; Academy, bloque 16.
+- **4459 — observaciones de auditoría de seguridad:** se elimina la escala universal «baja/media» de materialidad, no sustentada; se pregunta por el criterio verificable de documentación basado en evidencias de la ITS española. A1-38/A1-48; A2-II-11/II-13; Academy, bloque 16.
+- **4460 — eficiencia en auditoría de desempeño:** se conserva la clave y se precisa como relación óptima recursos/productos o servicios, distinguiéndola de eficacia y economía. A1-38; A2-II-11; Academy, bloque 16.
+
+Fuentes principales: Ley 47/2003, [artículo 164](https://www.boe.es/buscar/act.php?id=BOE-A-2003-21614); INTOSAI [ISSAI 400](https://www.issai.org/pronouncements/issai-400-compliance-audit-principles/) y [ISSAI 300](https://www.issai.org/pronouncements/issai-300-performance-audit-principles/), además de [GUID 3910](https://www.issai.org/wp-content/uploads/2019/08/Guid-3910.pdf); NIST, [audit trail](https://csrc.nist.gov/glossary/term/audit_trail), e ISACA, [glosario](https://www.isaca.org/resources/glossary); BOE, [Instrucción Técnica de Seguridad de Auditoría de la Seguridad de los Sistemas de Información](https://www.boe.es/buscar/doc.php?id=BOE-A-2018-4573); NASA, [Software Engineering Handbook: Basics of Software Auditing](https://swehb.nasa.gov/pages/viewpage.action?pageId=129990671), [NASA-STD-8739.8B](https://standards.nasa.gov/standard/nasa/nasa-std-87398) e IEEE [Std 730](https://standards.ieee.org/ieee/730/10854/).
+
+Cotejo ITIC Academy: [bloque 16, Auditoría Informática, A1-38/A2-T11](https://drive.google.com/file/d/1D93MNUzOWGwD6IyuWdxIMnHaL7aXvYhp/view?usp=drivesdk). Se cotejan asimismo los bloques [22, seguridad/ENS](https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk) y [39, calidad/mantenimiento](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk) donde procede. La correspondencia se contrasta con los programas oficiales; los materiales académicos orientan el cotejo y no sustituyen las fuentes primarias.
 
 ## Lote 826 — 10 de noviembre de 2026
 
@@ -10666,4 +10680,4 @@ Fuentes principales: [PMI Lexicon](https://www.pmi.org/-/media/pmi/documents/reg
 
 ## Estado de publicación
 
-El lote 825 está publicado en GitHub Pages: flujo Actions #881 (`42845521425`), `success`; `revision/README.md`, `revision/cambios-lote-825.json` y `revision/inventario.json` respondieron HTTP 200 sin caché y el inventario público refleja 4.445 revisiones. El lote 826 está validado localmente y pendiente de publicación/verificación.
+El lote 825 está publicado en GitHub Pages: flujo Actions #881 (`42845521425`), `success`; `revision/README.md`, `revision/cambios-lote-825.json` y `revision/inventario.json` respondieron HTTP 200 sin caché y el inventario público refleja 4.445 revisiones. El lote 826 ya está validado localmente; su publicación/verificación está pendiente.
