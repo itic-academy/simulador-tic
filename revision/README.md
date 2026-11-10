@@ -1,8 +1,10 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 809 (IDs 4366–4370). Acumulado: 4365 preguntas examinadas individualmente, 4283 verificadas (804 vigentes, 3136 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7758 sin revisar individualmente. Hay 3626 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 810 (IDs 4371–4375). Acumulado: 4370 preguntas examinadas individualmente, 4288 verificadas (805 vigentes, 3140 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7753 sin revisar individualmente. Hay 3630 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
+
+Tras el lote 810, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, 4.370 preguntas examinadas individualmente, 7.753 sin revisar y cero errores estructurales. La publicación del lote y su comprobación HTTP sin caché quedan pendientes.
 
 Tras el lote 809, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, 4.365 preguntas examinadas individualmente, 7.758 sin revisar y cero errores estructurales. El workflow [42815551566](https://github.com/itic-academy/simulador-tic/actions/runs/42815551566), asociado al commit `2812ee5c1d554655f7b064aee5af80fc1e3047be`, terminó con `success`; la consulta sin caché a Pages devolvió HTTP 200 y confirmó el lote 809 y los IDs 4366–4370.
 
@@ -82,6 +84,20 @@ Tras el lote 805, el workflow de Pages [42810171592](https://github.com/itic-aca
 Tras el lote 806, el workflow de Pages [42811447674](https://github.com/itic-academy/simulador-tic/actions/runs/42811447674) terminó con `success`; la consulta sin caché devolvió HTTP 200 y confirmó los IDs 4351–4355 y el acumulado 4.350.
 
 Tras el lote 807, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: 12.123 preguntas totales, 4.355 revisadas individualmente, 7.768 sin revisar y cero errores estructurales. Pendiente la publicación y comprobación de Pages.
+
+## Lote 810 — 10 de noviembre de 2026
+
+IDs 4371–4375 revisados individualmente; originales y decisiones conservados en [cambios-lote-810.json](cambios-lote-810.json).
+
+- **4371 — taxonomía CSCW:** se atribuye explícitamente a la taxonomía de Shani (2004) la clasificación en dimensiones de tarea común y ambiente compartido; el aula electrónica se ubica en nivel alto, no bajo, de ambiente compartido. **Corregida; clave D.**
+- **4372 — intereses generales:** se sustituye la pregunta indeterminada sobre cuándo “podrá” prestarse cualquier servicio por el contenido verificable del artículo 103.1 CE: la Administración sirve con objetividad los intereses generales. **Corregida; clave A.**
+- **4373 — reforma constitucional:** el reactivo original tenía tres afirmaciones incorrectas. Se corrigen iniciativa, mayorías y referéndum para dejar una única afirmación falsa: el artículo 167 no exige referéndum obligatorio ni mayoría de dos tercios. Se distinguen los procedimientos de los artículos 167 y 168 y la prohibición temporal del 169. **Corregida; clave D.**
+- **4374 — garantía provisional:** se actualiza al artículo 106 LCSP: puede exigirse excepcionalmente y con justificación por interés público; responde del mantenimiento de ofertas hasta la perfección del contrato. **Corregida; clave C.**
+- **4375 — Administración consultiva:** el artículo 7 de la Ley 40/2015 contempla tanto órganos específicos con autonomía orgánica y funcional como los servicios de la Administración activa que prestan asistencia jurídica. Se conserva el reactivo. **Vigente; clave C.**
+
+Fuentes principales: Uri Shani, IBM Research, [Towards a Comprehensive Taxonomy for Computer-Assisted Collaboration, reporte H-0220](https://dominoweb.draco.res.ibm.com/reports/h-0220.pdf); BOE, [Constitución Española consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520&tn=1), arts. 103 y 166–169; [Ley 9/2017 de Contratos del Sector Público](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902), art. 106; [Ley 40/2015 de Régimen Jurídico del Sector Público](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566), art. 7. ITIC Academy: [bloque 50, videoconferencia y herramientas colaborativas, 2026](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk); [bloque 01, Constitución, Estado y AGE, 2026](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk); [bloque 03, actuación administrativa, 2026](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk); [bloque 05, contratación y presupuestos, 2026](https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk). Correspondencia cotejada con [convocatoria A1 TIC AGE 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4371 A1-133/A2-II-16; 4372 A1-4 (sin epígrafe A2 específico de intereses generales); 4373 A1-1/A2-I-1; 4374 A1-11 (sin epígrafe A2 específico de contratación); 4375 A1-1/A2-I-8.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: 12.123 preguntas en inventario, 4.370 revisadas individualmente, 7.753 aún sin revisión individual y cero errores estructurales. El inventario no acredita revisión de contenido.
 
 ## Lote 809 — 10 de noviembre de 2026
 
