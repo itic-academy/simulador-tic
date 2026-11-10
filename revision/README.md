@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 827 (IDs 4456–4460). Acumulado: 4.455 preguntas examinadas individualmente, 4.373 verificadas (816 vigentes, 3.210 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.668 sin revisar individualmente. Hay 3.686 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 828 (IDs 4461–4465). Acumulado: 4.460 preguntas examinadas individualmente, 4.378 verificadas (816 vigentes, 3.215 corregidas y 347 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7.663 sin revisar individualmente. Hay 3.691 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+
+## Lote 828 — 10 de noviembre de 2026
+
+IDs 4461–4465 revisados individualmente; originales y decisiones conservados en [cambios-lote-828.json](cambios-lote-828.json). Acumulado: 4.460 examinadas, 4.378 verificadas (816 vigentes, 3.215 corregidas y 347 históricas), 82 pendientes documentadas y 7.663 todavía sin revisar individualmente. Se actualizan las referencias ENS y se corrigen una clave obsoleta y varios enunciados que confundían conceptos.
+
+- **4461 — vulnerabilidades y pentest:** se distingue la evaluación de vulnerabilidades de la emulación de ataques controlados; un pentest puede incluir enumeración y escaneo, pero intenta demostrar explotabilidad/impacto. A1-125; A2-II-13/IV-12; Academy, bloque 48.
+- **4462 — conformidad ENS básica:** se corrige la clave a autoevaluación al menos bienal como alternativa a certificación, conforme a la CCN-STIC-802 vigente; auditoría interna anual recomendada para básica y necesaria en media/alta. A1-48; A2-II-11; Academy, bloque 22.
+- **4463 — adquisición forense:** se precisa imagen bit a bit, verificación hash y conservación del original protegido; análisis en copia de trabajo. A1-48; A2-II-13; Academy, bloque 48.
+- **4464 — objetivos de auditoría:** se elimina la expresión incorrecta «sustanciar los riesgos» y se acota a evaluación basada en evidencia y comunicación de hallazgos/recomendaciones; la auditoría no ejecuta las acciones por la Dirección. A1-38; A2-II-11; Academy, bloque 16.
+- **4465 — mandato formal:** se distingue el mandato del plan, informe y política de seguridad; el documento que fija propósito, autoridad y responsabilidad de la función es la carta/estatuto de auditoría. A1-38; A2-II-11; Academy, bloque 16.
+
+Fuentes principales: NIST [SP 800-115](https://csrc.nist.gov/pubs/sp/800/115/final) y [glosario de penetration testing](https://csrc.nist.gov/glossary/term/penetration_testing); CCN-CERT [CCN-STIC-802 vigente](https://www.ccn-cert.cni.es/es/pdf/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/502-ccn-stic-802-auditoria-del-ens/file.html) y BOE [Real Decreto 311/2022](https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191); NIST [SP 800-86](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-86.pdf) y [glosario disk imaging](https://csrc.nist.gov/glossary/term/disk_imaging); ISACA [ITAF](https://www.isaca.org/about-us/-/media/5b55da6fe8564436bce63aaa5acb49da.ashx) y [glosario](https://www.isaca.org/resources/glossary).
+
+Cotejo ITIC Academy: [bloque 16, auditoría informática A1-38/A2-T11](https://drive.google.com/file/d/1D93MNUzOWGwD6IyuWdxIMnHaL7aXvYhp/view?usp=drivesdk); [bloque 22, seguridad/ENS](https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk) y [bloque 48, seguridad en redes, auditoría y forense](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk). Se coteja la alineación con los programas oficiales A1/A2; prevalecen la guía CCN vigente y las fuentes técnicas primarias.
 
 ## Lote 827 — 10 de noviembre de 2026
 

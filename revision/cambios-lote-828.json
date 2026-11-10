@@ -1,0 +1,326 @@
+{
+  "fecha": "2026-11-10",
+  "alcance": "Revisión individual y contraste con documentación primaria vigente de las preguntas 4461–4465.",
+  "cambios": [
+    {
+      "id": 4461,
+      "original": {
+        "id": 4461,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es la diferencia entre una auditoría de vulnerabilidades y un test de penetración?",
+        "opciones": [
+          "Un test de penetración identifica los servicios en ejecución. Una auditoría de vulnerabilidades proporciona una mayor información sobre las vulnerabilidades.",
+          "Un test de penetración enumera los recursos, una auditoría de vulnerabilidades enumera las vulnerabilidades.",
+          "Un test de penetración aprovecha las vulnerabilidades, una auditoría de vulnerabilidades encuentra las vulnerabilidades.",
+          "Los dos son lo mismo."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4461,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué diferencia, en términos generales, una prueba de penetración de una evaluación de vulnerabilidades?",
+        "opciones": [
+          "La prueba de penetración solo identifica servicios; la evaluación de vulnerabilidades los explota.",
+          "La evaluación de vulnerabilidades puede identificar y analizar debilidades; la prueba de penetración intenta explotarlas de forma controlada para demostrar posibles vías de ataque e impacto.",
+          "La prueba de penetración y la evaluación de vulnerabilidades son exactamente lo mismo.",
+          "La prueba de penetración se limita a revisar documentación, mientras que la evaluación requiere acceso físico."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Una evaluación de vulnerabilidades busca y analiza debilidades. Una prueba de penetración, dentro del alcance autorizado, emula ataques e intenta explotar vulnerabilidades o encadenarlas para determinar si los controles pueden eludirse y qué impacto práctico habría. En la práctica puede incluir inventario y escaneo, por lo que no se consideran actividades mutuamente excluyentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-125"
+          ],
+          "A2": [
+            "A2-II-13",
+            "A2-IV-12"
+          ],
+          "bloque_academia": 48,
+          "estado": "revisada",
+          "nota": "ITIC Academy, bloque 48 «Seguridad en redes y nivel de aplicación», cotejado con el temario oficial; la fuente primaria citada fundamenta la respuesta."
+        },
+        "etiquetas": [
+          "evaluación de vulnerabilidades",
+          "prueba de penetración",
+          "pentest",
+          "ciberseguridad"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/pubs/sp/800/115/final",
+              "referencia": "NIST SP 800-115, guía de pruebas y evaluación de seguridad: distingue escaneo de vulnerabilidades de pruebas de penetración; estas últimas incluyen intentar ejecutar ataques controlados y pueden combinar identificación de servicios y escaneo."
+            },
+            {
+              "url": "https://csrc.nist.gov/glossary/term/penetration_testing",
+              "referencia": "NIST CSRC Glossary: en una prueba de penetración se emulan ataques reales para hallar formas de eludir controles de seguridad."
+            }
+          ],
+          "observaciones": "Clave B. Se reemplaza la dicotomía absoluta «una encuentra y la otra explota»: NIST explica que el pentest puede integrar identificación de hosts/servicios y escaneo, y que su rasgo distintivo es intentar ataques controlados."
+        }
+      }
+    },
+    {
+      "id": 4462,
+      "original": {
+        "id": 4462,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "De acuerdo con la guía CCN-STIC-802, de auditoría del ENS, señale cuál es la respuesta correcta:",
+        "opciones": [
+          "Los sistemas de categoría básica y media requerirán de una autoevaluación para su declaración de la conformidad que deberá realizarse al menos cada dos años, o cuando se produzcan modificaciones sustanciales en el sistema.",
+          "Los sistemas de categoría básica requerirán de una autoevaluación para su declaración de la conformidad que deberá realizarse al menos cada año, o cuando se produzcan modificaciones sustanciales en el sistema.",
+          "Los sistemas de categoría básica requerirán de una autoevaluación para su declaración de la conformidad, que deberá ser desarrollada por personal diferente al que administra el sistema.",
+          "Los sistemas de categoría básica se pueden someter a una auditoría formal de certificación de la conformidad, siendo esta posibilidad siempre la deseable."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4462,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la versión vigente de la guía CCN-STIC-802, ¿qué procedimiento mínimo permite determinar la conformidad con el ENS de un sistema de categoría BÁSICA como alternativa a la certificación?",
+        "opciones": [
+          "Una autoevaluación al menos cada dos años.",
+          "Una auditoría externa de certificación anual obligatoria.",
+          "Una autoevaluación anual realizada necesariamente por personal distinto de quien administra el sistema.",
+          "No se requiere evaluación, autoevaluación ni auditoría."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La CCN-STIC-802 vigente señala que, para categoría BÁSICA, la certificación de conformidad puede sustituirse por autoevaluación al menos cada dos años. Una auditoría interna anual es conveniente/recomendable para básica, pero la guía la califica de necesaria para sistemas de categoría MEDIA o ALTA; no impone que la autoevaluación la realice siempre personal distinto del administrador.",
+        "clasificacion": {
+          "A1": [
+            "A1-48"
+          ],
+          "A2": [
+            "A2-II-11"
+          ],
+          "bloque_academia": 22,
+          "estado": "revisada",
+          "nota": "ITIC Academy, bloque 22 «Seguridad, ENS y ciberseguridad», cotejado con el temario oficial; la fuente primaria citada fundamenta la respuesta."
+        },
+        "etiquetas": [
+          "ENS",
+          "CCN-STIC-802",
+          "autoevaluación",
+          "categoría básica",
+          "auditoría"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.ccn-cert.cni.es/es/pdf/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/502-ccn-stic-802-auditoria-del-ens/file.html",
+              "referencia": "CCN-STIC-802 vigente, apartados 2.1–2.2: para sistemas de categoría básica basta como alternativa a la certificación un procedimiento de autoevaluación al menos cada dos años; las auditorías internas anuales son convenientes en básica y necesarias en media/alta."
+            },
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191",
+              "referencia": "Real Decreto 311/2022, ENS, artículos 31 y 38 y anexo III: revisión/auditoría de conformidad y efectos de modificaciones sustanciales."
+            }
+          ],
+          "observaciones": "Clave A; se corrige la clave D y se actualiza a la guía CCN-STIC-802 vigente. La autoevaluación bienal basta como alternativa de certificación para categoría básica; se distingue de auditorías internas anuales y de cambios sustanciales que requieren nueva evaluación."
+        }
+      }
+    },
+    {
+      "id": 4463,
+      "original": {
+        "id": 4463,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el contexto de una investigación forense:",
+        "opciones": [
+          "Se debe trabajar con el disco duro original para dejar constancia del trabajo realizado",
+          "Se debe trabajar con una copia de los ficheros del disco duro realizada desde el sistema operativo y configurando el acceso a disco en modo de sólo lectura",
+          "Se debe trabajar con un clonado o copia bit a bit del disco duro",
+          "Se debe trabajar con el disco duro original pero realizando previamente una imagen forense y dejando constancia mediante el cálculo del hash"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4463,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Para preservar la integridad de la evidencia durante una investigación forense de un soporte de almacenamiento, ¿qué práctica describe NIST?",
+        "opciones": [
+          "Analizar directamente el disco original y modificarlo para registrar el trabajo.",
+          "Copiar archivos desde el sistema operativo en modo de solo lectura, sin obtener una imagen del soporte.",
+          "Obtener una imagen forense bit a bit, verificarla mediante valores hash y conservar el soporte original protegido, analizando una copia de trabajo.",
+          "Crear una imagen forense y luego desechar el original una vez calculado el hash."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La adquisición forense debe preservar el soporte fuente. NIST describe la imagen bit a bit e indica conservar/etiquetar y proteger el original cuando la evidencia pueda necesitarse en un proceso disciplinario o judicial; los hashes ayudan a comprobar la integridad de la imagen. El análisis se efectúa sobre una copia de trabajo, manteniendo la cadena de custodia.",
+        "clasificacion": {
+          "A1": [
+            "A1-48"
+          ],
+          "A2": [
+            "A2-II-13"
+          ],
+          "bloque_academia": 48,
+          "estado": "revisada",
+          "nota": "ITIC Academy, bloque 48 «Seguridad en redes y nivel de aplicación», cotejado con el temario oficial; la fuente primaria citada fundamenta la respuesta."
+        },
+        "etiquetas": [
+          "informática forense",
+          "imagen bit a bit",
+          "hash",
+          "cadena de custodia",
+          "evidencia digital"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-86.pdf",
+              "referencia": "NIST SP 800-86, Guide to Integrating Forensic Techniques into Incident Response: bit-stream imaging crea copia bit a bit, preserva el original y recomienda proteger/guardar el soporte original como evidencia; describe hashes para verificar copias."
+            },
+            {
+              "url": "https://csrc.nist.gov/glossary/term/disk_imaging",
+              "referencia": "NIST CSRC Glossary: disk imaging es una copia bit a bit del medio original, incluidos espacio libre y slack space."
+            }
+          ],
+          "observaciones": "Clave C. Se precisa adquisición bit a bit, comprobación de integridad y preservación del original; el reactivo previo mezclaba trabajo sobre original, copia y cálculo del hash sin detallar preservación/cadena de custodia."
+        }
+      }
+    },
+    {
+      "id": 4464,
+      "original": {
+        "id": 4464,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los objetivos de alto nivel de la auditoria informática son, con carácter general: I) Dar a la Dirección garantía suficiente del cumplimiento de los objetivos de control. II) Sustanciar los riesgos resultantes, si se detectan debilidades de control significativas. III) Aconsejar a la Dirección sobre el curso de acciones correctivas.",
+        "opciones": [
+          "Sólo I",
+          "Sólo II",
+          "I y II",
+          "I, II y III"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4464,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según los estándares de auditoría de sistemas de información, ¿qué conjunto describe mejor los objetivos generales de alto nivel de una auditoría?",
+        "opciones": [
+          "Dar aseguramiento sobre riesgos, controles o gobernanza y comunicar hallazgos y conclusiones sustentados en evidencia.",
+          "Garantizar que todos los riesgos desaparezcan y que no exista riesgo residual.",
+          "Ejecutar directamente todas las acciones correctivas en nombre de la Dirección.",
+          "Sustituir la responsabilidad de la Dirección por los controles internos del auditor."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La auditoría proporciona una evaluación independiente y basada en evidencias sobre riesgos, controles o gobernanza; documenta y comunica hallazgos y conclusiones, pudiendo recomendar acciones correctivas. No elimina todos los riesgos ni asume la responsabilidad de gestión o la ejecución de las medidas por la Dirección.",
+        "clasificacion": {
+          "A1": [
+            "A1-38"
+          ],
+          "A2": [
+            "A2-II-11"
+          ],
+          "bloque_academia": 16,
+          "estado": "revisada",
+          "nota": "ITIC Academy, bloque 16 «Auditoría informática», cotejado con el temario oficial; la fuente primaria citada fundamenta la respuesta."
+        },
+        "etiquetas": [
+          "objetivos de auditoría",
+          "aseguramiento",
+          "riesgo",
+          "control",
+          "gobernanza"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.isaca.org/about-us/-/media/5b55da6fe8564436bce63aaa5acb49da.ashx",
+              "referencia": "ISACA, ITAF: marco de prácticas de auditoría/aseguramiento TI; define objetivos de auditoría sobre riesgos, control o gobernanza y requisitos de documentar evidencias, hallazgos, conclusiones y recomendaciones."
+            },
+            {
+              "url": "https://www.isaca.org/resources/glossary",
+              "referencia": "ISACA Interactive Glossary: el examen objetivo de evidencia valora procesos de gestión de riesgos, control o gobernanza; sus estándares incluyen documentación e informes de hallazgos y recomendaciones."
+            }
+          ],
+          "observaciones": "Clave A. Se sustituye la enumeración original, cuyo punto II («sustanciar los riesgos») no es un objetivo formulado con precisión, por objetivos y límites compatibles con el marco ITAF: evaluar, sustentar hallazgos y recomendar, sin garantizar riesgo cero ni asumir la gestión."
+        }
+      }
+    },
+    {
+      "id": 4465,
+      "original": {
+        "id": 4465,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es la norma que regula el proceso de auditoría?",
+        "opciones": [
+          "Aquella que se haya aprobado en el ámbito organizativo en el que se desarrolla la auditoría",
+          "COBIT",
+          "El mandato para la auditoría",
+          "La política de seguridad de la organización"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4465,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué documento formal define el propósito, la autoridad y la responsabilidad de la función de auditoría interna de sistemas de información?",
+        "opciones": [
+          "El plan de auditoría anual, que enumera trabajos previstos.",
+          "El informe de auditoría, que comunica resultados de un encargo ya realizado.",
+          "La carta o estatuto de auditoría (audit charter), que documenta el mandato de la función.",
+          "La política de seguridad, que fija reglas de protección de los sistemas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "El mandato autoriza la función de auditoría, pero la documentación formal que establece propósito, autoridad y responsabilidad es la carta/estatuto de auditoría (audit charter). No debe confundirse con el plan anual de trabajos, el informe de un encargo ni la política de seguridad.",
+        "clasificacion": {
+          "A1": [
+            "A1-38"
+          ],
+          "A2": [
+            "A2-II-11"
+          ],
+          "bloque_academia": 16,
+          "estado": "revisada",
+          "nota": "ITIC Academy, bloque 16 «Auditoría informática», cotejado con el temario oficial; la fuente primaria citada fundamenta la respuesta."
+        },
+        "etiquetas": [
+          "mandato de auditoría",
+          "audit charter",
+          "autoridad",
+          "responsabilidad",
+          "ISACA ITAF"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.isaca.org/about-us/-/media/5b55da6fe8564436bce63aaa5acb49da.ashx",
+              "referencia": "ISACA ITAF, estándar 1001: la función de auditoría debe documentarse en una carta/estatuto de auditoría (audit charter) que establece propósito, responsabilidad y autoridad."
+            },
+            {
+              "url": "https://www.isaca.org/resources/glossary",
+              "referencia": "ISACA Interactive Glossary: audit charter es un documento aprobado por gobierno que define propósito, autoridad y responsabilidad de la actividad de auditoría interna."
+            }
+          ],
+          "observaciones": "Clave C. Se corrige la pregunta original sobre «la norma» (que no permitía diferenciar claramente norma, mandato y política): se pregunta por el documento que formaliza el mandato según ITAF 1001."
+        }
+      }
+    }
+  ]
+}
