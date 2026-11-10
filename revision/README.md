@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Lote local preparado: 856 (IDs 4601–4605), pendiente de publicar y verificar. Acumulado local: 4.600 preguntas examinadas individualmente, 4.517 verificadas (817 vigentes, 3.353 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.523 sin revisar individualmente. Hay 3.829 preguntas con cambios en enunciado, opciones o clave frente al original.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial publicado: 856 (IDs 4601–4605). Acumulado: 4.600 preguntas examinadas individualmente, 4.517 verificadas (817 vigentes, 3.353 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.523 sin revisar individualmente. Hay 3.829 preguntas con cambios en enunciado, opciones o clave frente al original. GitHub Pages respondió HTTP 200 para el README del lote 856, su registro y el inventario con 12.123 preguntas, 3.353 corregidas y 7.523 sin revisar; workflow 42901436731 correcto.
 
 
 
@@ -11091,4 +11091,4 @@ Fuentes principales: [PMI Lexicon](https://www.pmi.org/-/media/pmi/documents/reg
 
 ## Estado de publicación
 
-El lote 856 está preparado localmente. Tras su publicación se consignarán el ID de GitHub Actions, el commit desplegado y las comprobaciones HTTP de README, registro 856 e inventario.
+GitHub Actions completó correctamente el despliegue del lote 856 en la ejecución [Deploy GitHub Pages, 42901436731](https://github.com/itic-academy/simulador-tic/actions/runs/42901436731), para el commit `a254e83883b9205a88ddc93bb9e0ac8d5b1f48ce`. GitHub Pages respondió HTTP 200 para [README](https://itic-academy.github.io/simulador-tic/revision/README.md), [registro 856](https://itic-academy.github.io/simulador-tic/revision/cambios-lote-856.json) e [inventario](https://itic-academy.github.io/simulador-tic/revision/inventario.json). El registro contiene exactamente los IDs 4601–4605 y el inventario refleja 12.123 preguntas, 817 vigentes, 3.353 corregidas, 83 pendientes y 7.523 sin revisar individualmente. El inventario estructural no acredita por sí mismo revisión de contenido.
