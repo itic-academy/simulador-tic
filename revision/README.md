@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 803 (IDs 4336–4340). Acumulado: 4335 preguntas examinadas individualmente, 4253 verificadas (802 vigentes, 3109 corregidas y 342 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7788 sin revisar individualmente. Hay 3597 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 804 (IDs 4341–4345). Acumulado: 4340 preguntas examinadas individualmente, 4258 verificadas (803 vigentes, 3112 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7783 sin revisar individualmente. Hay 3602 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
 
@@ -69,6 +69,19 @@ Fuentes primarias: [RGPD, Reglamento (UE) 2016/679](https://eur-lex.europa.eu/el
 `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados tras el lote 803: total 12.123, 4.335 preguntas examinadas individualmente, 7.788 todavía sin revisión individual y cero errores estructurales. El inventario estructural no acredita revisión de contenido.
 Tras el lote 792, el workflow de Pages [42661019112](https://github.com/itic-academy/simulador-tic/actions/runs/42661019112), correspondiente al commit de verificación del README, terminó con `success`; la respuesta sin caché HTTP 200 mostró el nuevo estado y el lote 792.
 
+## Lote 804 — 10 de noviembre de 2026
+
+IDs 4341–4345 revisados individualmente; originales y decisiones preservados en [cambios-lote-804.json](cambios-lote-804.json).
+
+- **4341 — interoperabilidad semántica del ENI:** se vincula el artículo 10 del RD 4/2010 (modelos de datos de intercambio) con la dimensión semántica. **Corregida; clave D.**
+- **4342 — recuperación y conservación documental:** se delimita la pregunta a las condiciones específicas de recuperación/conservación de los artículos 21–22 del ENI, distinguiéndolas de la obligación general de archivo electrónico único del artículo 17 de la Ley 39/2015. **Corregida; clave C.**
+- **4343 — riesgo residual en MAGERIT:** se define como riesgo remanente tras considerar las salvaguardas aplicadas; no se confunde con el riesgo aceptado. **Vigente; clave D.**
+- **4344 — Primer Dividendo Digital:** se precisa el dato histórico español: la banda de 800 MHz liberada se destinó a banda ancha móvil 4G. **Histórica; clave C.**
+- **4345 — clasificación Uptime Tier:** se pregunta por el número de niveles de Tier I a Tier IV, evitando atribuir porcentajes universales de disponibilidad. **Corregida; clave C.**
+
+Fuentes principales: [RD 4/2010, texto consolidado](https://www.boe.es/buscar/act.php?id=BOE-A-2010-1331), arts. 10 y 21–22; [Ley 39/2015](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565), art. 17; CCN, [MAGERIT v3, libro I](https://pilar.ccn-cert.cni.es/docman/documentos/1-magerit-v3-libro-i-metodo/file), [implementación del análisis](https://pilar.ccn-cert.cni.es/metodologia/implementacion) y [glosario de riesgo residual](https://www.ccn-cert.cni.es/publico/seriesCCN-STIC/series/400-Guias_Generales/401-glosario_abreviaturas/topics/797.html); Ministerio para la Transformación Digital, [Primer Dividendo Digital](https://television.digital.gob.es/DividendoDigital) y [despliegue móvil en 800 MHz](https://television.digital.gob.es/DividendoDigital/desgliegue4G); Uptime Institute, [Tier Certification](https://uptimeinstitute.com/tier-certification). Cotejo curricular con ITIC Academy: [bloque 20, Interoperabilidad de Sistemas, edición 2026.2](https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view?usp=drivesdk); [bloque 22, Seguridad/ENS, actualización 2026.2](https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk); [bloque 46, redes móviles, edición 2026](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk); [bloque 26, hardware y CPD, edición 2026.1](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk). Clasificación cotejada con las convocatorias [A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4341 A1-45/A2-I-9; 4342 A1-46/A2-I-9; 4343 A1-47/A2-II-10; 4344 A1-123/A2-IV-15; 4345 A1-53/A2-IV-6.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: 12.123 preguntas en inventario, 4.340 revisadas individualmente, 7.783 aún sin revisión y cero errores estructurales. El inventario estructural no acredita revisión de contenido.
 ## Lote 800 — 10 de noviembre de 2026
 
 IDs 4321–4325 revisados individualmente; los originales y decisiones se conservan en [cambios-lote-800.json](cambios-lote-800.json).
