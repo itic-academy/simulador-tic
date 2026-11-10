@@ -24,6 +24,7 @@ La publicación del lote 800 se intentó en el workflow [42787539894](https://gi
 El workflow del registro posterior del lote 801 [42805503552](https://github.com/itic-academy/simulador-tic/actions/runs/42805503552) también terminó con `success`; su ejecución desplegó el mismo contenido verificado en Pages.
 Tras el lote 802, el workflow [42806170625](https://github.com/itic-academy/simulador-tic/actions/runs/42806170625) completó con `success` en `build`, `report-build-status` y `deploy`; la comprobación sin caché del 10 de noviembre devolvió HTTP 200 y confirmó el encabezado actualizado, los IDs 4331–4335 y el acumulado 4.330.
 El commit de confirmación del lote 802 también se desplegó correctamente en el workflow [42806538594](https://github.com/itic-academy/simulador-tic/actions/runs/42806538594), con los tres jobs en `success`.
+Tras el lote 803, el workflow [42807497236](https://github.com/itic-academy/simulador-tic/actions/runs/42807497236) terminó con `success`; la comprobación sin caché devolvió HTTP 200 y confirmó el lote, el rango 4336–4340 y el acumulado 4.335.
 
 ## Lote 801 — 10 de noviembre de 2026
 
