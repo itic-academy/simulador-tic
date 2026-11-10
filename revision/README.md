@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial aplicado: 853 (IDs 4586–4590); su publicación está pendiente de confirmación. Acumulado: 4.585 preguntas examinadas individualmente, 4.502 verificadas (817 vigentes, 3.338 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.538 sin revisar individualmente. Hay 3.814 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. El lote 853 está preparado tras superar inventario, verificación del banco y `git diff --check`; se comprobará GitHub Pages tras el push.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main` mediante workflow explícito de GitHub Actions con permisos mínimos de Pages. Último lote secuencial publicado: 853 (IDs 4586–4590). Acumulado: 4.585 preguntas examinadas individualmente, 4.502 verificadas (817 vigentes, 3.338 corregidas y 347 históricas) y 83 pendientes documentadas (36 de fuente y 47 de ambigüedad); quedan 7.538 sin revisar individualmente. Hay 3.814 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos. GitHub Pages respondió HTTP 200 para el README actualizado, el registro 853 y el inventario actualizado; el workflow de publicación terminó correctamente.
 
 
 
@@ -11036,4 +11036,4 @@ Fuentes principales: [PMI Lexicon](https://www.pmi.org/-/media/pmi/documents/reg
 
 ## Estado de publicación
 
-Lote 853 validado localmente; push y verificación de GitHub Pages pendientes. En esta tanda se comprobarán el README, [registro 853](cambios-lote-853.json) e inventario publicado. El inventario estructural no acredita por sí mismo revisión de contenido.
+GitHub Actions completó correctamente el despliegue de `main` en el workflow [Deploy GitHub Pages, ejecución 42894279259](https://github.com/itic-academy/simulador-tic/actions/runs/42894279259), para el commit `c968452fa65421147589125248a16ce7735374fd`. Tras completarse, GitHub Pages respondió HTTP 200 para [README](https://itic-academy.github.io/simulador-tic/revision/README.md), [registro 853](https://itic-academy.github.io/simulador-tic/revision/cambios-lote-853.json) e [inventario](https://itic-academy.github.io/simulador-tic/revision/inventario.json). El registro publicado contiene exactamente los IDs 4586–4590 y el inventario publicado refleja 12.123 preguntas, 817 vigentes, 3.338 corregidas, 83 pendientes y 7.538 sin revisar individualmente. El inventario estructural no acredita por sí mismo revisión de contenido.
