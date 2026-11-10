@@ -224850,7 +224850,7 @@
       "id": 4451,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué solución desarrollada por el CCN-CERT es un sistema de auditoría continua que tiene por objetivo incrementar la capacidad de vigilancia, reducir los tiempos en la gestión de la seguridad, mediante una gestión eficiente de la detección de vulnerabilidades y de la notificación de alertas, así como ofrecer recomendaciones para un tratamiento oportuno de las mismas?",
+      "texto": "¿Qué solución del CCN-CERT, cuyo nombre desarrolla «Automatización y Normalización de Auditorías», gestiona de forma centralizada y continua vulnerabilidades, alertas y recomendaciones?",
       "opciones": [
         "MARIA",
         "ANA",
@@ -224858,13 +224858,48 @@
         "CARMEN"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La solución es ANA. El CCN-CERT describe ANA como herramienta de gestión centralizada y continua de vulnerabilidades, detección y notificación de alertas y emisión de recomendaciones. El acrónimo significa Automatización y Normalización de Auditorías.",
+      "clasificacion": {
+        "A1": [
+          "A1-48",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-II-13",
+          "A2-IV-12"
+        ],
+        "bloque_academia": 48,
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 48 «Ciberseguridad y seguridad en redes». La alineación se realiza con las materias oficiales vigentes; el manual primario citado fundamenta la respuesta."
+      },
+      "etiquetas": [
+        "CCN-CERT",
+        "ANA",
+        "auditoría continua",
+        "vulnerabilidades",
+        "alertas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad/ana.html",
+            "referencia": "CCN-CERT, solución ANA: Automatización y Normalización de Auditorías; gestión centralizada y continua de vulnerabilidades, alertas y recomendaciones."
+          },
+          {
+            "url": "https://www.ccn-cert.cni.es/ca/seguretat-al-dia/actualitat-ccn/13166-el-ccn-actualiza-su-herramienta-ana-con-una-nueva-arquitectura-centrada-en-los-activos-y-sus-vulnerabilidades.html",
+            "referencia": "CCN-CERT, actualización de ANA: confirma su objeto y evolución de la solución."
+          }
+        ],
+        "observaciones": "Clave B. Se hace explícito el desarrollo oficial del acrónimo y se actualiza el alcance: ANA centraliza resultados de auditoría y vulnerabilidades, con alertas y recomendaciones; no se confunde con MARIA ni con otras soluciones del CCN."
+      }
     },
     {
       "id": 4452,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes tipos de ataque vulnera la integridad de la información?",
+      "texto": "En la clasificación clásica de ataques contra la seguridad de la información, ¿qué ataque consiste en alterar sin autorización datos o mensajes legítimos y, por tanto, compromete su integridad?",
       "opciones": [
         "Interrupción.",
         "Modificación.",
@@ -224872,49 +224907,183 @@
         "Intercepción."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La modificación cambia o destruye información legítima sin autorización y vulnera su integridad. En la taxonomía clásica, interrupción se asocia principalmente con disponibilidad; intercepción con confidencialidad; y fabricación con inserción o suplantación de objetos/autenticidad.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-II-13",
+          "A2-IV-12"
+        ],
+        "bloque_academia": 48,
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 48 «Ciberseguridad y seguridad en redes». La alineación se realiza con las materias oficiales vigentes; el manual primario citado fundamenta la respuesta."
+      },
+      "etiquetas": [
+        "seguridad",
+        "ataques",
+        "integridad",
+        "modificación",
+        "taxonomía clásica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4949.html",
+            "referencia": "RFC 4949, entradas «data integrity» y «data integrity service», con definición de integridad y referencia explícita a ISO 7498-2; la modificación no autorizada afecta a la integridad."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-X.800/en",
+            "referencia": "ITU-T X.800 (alineada con ISO 7498-2), arquitectura de seguridad de sistemas abiertos; se usa para fijar el alcance de la taxonomía clásica de ataques."
+          }
+        ],
+        "observaciones": "Clave B. Se acota al ataque de modificación de datos/mensajes legítimos; la formulación evita que «fabricación» pueda interpretarse genéricamente como una alteración de integridad. La definición de integridad y la referencia de RFC 4949 a ISO 7498-2 respaldan la distinción."
+      }
     },
     {
       "id": 4453,
       "bloque": 0,
       "tema": 0,
-      "texto": "Las herramientas CVS y RCS son:",
+      "texto": "¿A qué categoría de herramientas pertenecen CVS (Concurrent Versions System) y RCS (Revision Control System)?",
       "opciones": [
-        "herramientas de gestión de contenidos.",
-        "herramientas ofimáticas de diseños gráficos.",
-        "herramientas de control de versiones.",
-        "herramientas de control de configuración."
+        "Gestión de contenidos.",
+        "Diseño gráfico ofimático.",
+        "Control de versiones o revisiones de archivos.",
+        "Control de configuración de hardware."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "CVS es un sistema de control de versiones y RCS administra múltiples revisiones de ficheros. Son herramientas de versionado, que pueden integrarse en una gestión más amplia de configuración, pero no son sistemas de gestión de contenidos ni de diseño gráfico.",
+      "clasificacion": {
+        "A1": [
+          "A1-102"
+        ],
+        "A2": [
+          "A2-IV-4"
+        ],
+        "bloque_academia": 39,
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 39 «Calidad y mantenimiento». La alineación se realiza con las materias oficiales vigentes; el manual primario citado fundamenta la respuesta."
+      },
+      "etiquetas": [
+        "CVS",
+        "RCS",
+        "control de versiones",
+        "gestión de configuración"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/software/trans-coord/manual/cvs/html_node/What-is-CVS_003f.html",
+            "referencia": "Manual oficial GNU CVS 1.11.23: define CVS como sistema de control de versiones."
+          },
+          {
+            "url": "https://www.gnu.org/software/rcs/manual/html_node/Overview.html",
+            "referencia": "Manual oficial GNU RCS 5.10.1: RCS gestiona múltiples revisiones de ficheros."
+          }
+        ],
+        "observaciones": "Clave C. Se sustituye «control de configuración» por una opción que discrimina la función propia de ambos sistemas: CVS/RCS controlan revisiones/versiones; la gestión de configuración abarca un proceso más amplio."
+      }
     },
     {
       "id": 4454,
       "bloque": 0,
       "tema": 0,
-      "texto": "El estándar 802.3 del IEEE:",
+      "texto": "¿Qué describe correctamente IEEE 802.3?",
       "opciones": [
-        "Es prácticamente equivalente al Sistema Ethernet",
-        "Utiliza el método de paso de testigo en anillo",
-        "Opera entre 10 y 100 Mb/s",
-        "Emplea métodos de no contención"
+        "La familia de normas IEEE que define Ethernet para redes LAN y sus capas MAC y física.",
+        "El estándar de redes Token Ring con paso de testigo.",
+        "Un estándar limitado exclusivamente a velocidades de 10 a 100 Mb/s.",
+        "Un protocolo que emplea exclusivamente paso de testigo sin contención."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "IEEE 802.3 es la familia de normas Ethernet. No equivale al estándar 802.5 Token Ring ni queda limitada a 10–100 Mb/s: define Ethernet en diversas velocidades y medios; el acceso depende del modo de operación (por ejemplo, CSMA/CD en medio compartido half-duplex y full-duplex).",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": 42,
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 42 «Redes». La alineación se realiza con las materias oficiales vigentes; el manual primario citado fundamenta la respuesta."
+      },
+      "etiquetas": [
+        "IEEE 802.3",
+        "Ethernet",
+        "LAN",
+        "MAC",
+        "capa física"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.ieee802.org/3/",
+            "referencia": "IEEE 802.3 Ethernet Working Group: desarrolla estándares para redes LAN basadas en Ethernet."
+          },
+          {
+            "url": "https://www.ieee802.org/3/maint/email/msg00511.html",
+            "referencia": "IEEE 802.3 Working Group, alcance del estándar: define redes Ethernet LAN, acceso y metropolitanas, en velocidades seleccionadas y con MAC común."
+          }
+        ],
+        "observaciones": "Clave A. La frase imprecisa «prácticamente equivalente al Sistema Ethernet» se sustituye por la relación exacta: IEEE 802.3 es la familia de estándares Ethernet. Se elimina la limitación obsoleta de 10–100 Mb/s y se distingue de Token Ring/802.5."
+      }
     },
     {
       "id": 4455,
       "bloque": 0,
       "tema": 0,
-      "texto": "Elija la respuesta correcta con respecto a los grafos:",
+      "texto": "En un grafo dirigido, ¿qué representa el grado de entrada (in-degree) de un vértice?",
       "opciones": [
-        "Un árbol es un grafo dirigido y acíclico.",
-        "Un grafo está completamente conectado si existe como mínimo un camino entre cualquier par de vértices distintos.",
-        "En un grafo el grado interior de un vértice es el número de aristas que llegan a él.",
-        "La lista de adyacencia es una lista donde las filas y las columnas hacen referencia a los vértices para almacenar en cada casilla la longitud entre cada par de vértices del grafo."
+        "El número de aristas dirigidas que llegan al vértice.",
+        "El número de aristas dirigidas que salen del vértice.",
+        "El número de aristas incidentes en un vértice de un grafo no dirigido.",
+        "Una matriz cuadrada que registra las relaciones entre cada par de vértices."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "En un grafo dirigido, el grado de entrada cuenta las aristas (arcos) cuyo extremo de llegada es el vértice. El grado de salida cuenta las que parten de él; en un grafo no dirigido se habla del grado como número de aristas incidentes. La matriz es una representación distinta de una lista de adyacencia.",
+      "clasificacion": {
+        "A1": [],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": 32,
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 32 «Inteligencia artificial y ciencia de datos». La alineación se realiza con las materias oficiales vigentes; el manual primario citado fundamenta la respuesta."
+      },
+      "etiquetas": [
+        "grafos",
+        "grado de entrada",
+        "in-degree",
+        "estructuras de datos",
+        "algoritmos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://xlinux.nist.gov/dads/HTML/graph.html",
+            "referencia": "NIST Dictionary of Algorithms and Data Structures, entrada graph: vértices, aristas, caminos y representaciones por lista de adyacencia y matriz."
+          },
+          {
+            "url": "https://www.boost.org/doc/libs/latest/libs/graph/doc/html/graph/graph_classes/adjacency_list.html",
+            "referencia": "Boost Graph Library, referencia de adjacency_list: expone in_degree como número de aristas que entran al vértice."
+          },
+          {
+            "url": "https://www.boost.org/doc/libs/latest/libs/graph/doc/html/graph/graph_classes/overview.html",
+            "referencia": "Boost Graph Library, descripción de representaciones de grafos y diferencias entre lista de adyacencia y matriz."
+          }
+        ],
+        "observaciones": "Clave A. El reactivo original no tenía respuesta única: además del grado de entrada, la afirmación sobre conectividad podía ser correcta según la convención de camino y las afirmaciones de árbol variaban con la definición adoptada. Se reemplaza por una pregunta específica y no ambigua sobre in-degree. No se asigna tema A1 porque el programa oficial A1 no contiene un epígrafe directo sobre grafos; sí se encuadra en A2-III-5."
+      }
     },
     {
       "id": 4456,
