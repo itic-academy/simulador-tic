@@ -1,8 +1,10 @@
 # Revisión del banco TIC — estado al 10 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 808 (IDs 4361–4365). Acumulado: 4360 preguntas examinadas individualmente, 4278 verificadas (804 vigentes, 3131 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7763 sin revisar individualmente. Hay 3621 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
+Estado parcial, no revisión completa del banco. Publicación desde la rama `main`. Último lote secuencial aplicado: 809 (IDs 4366–4370). Acumulado: 4365 preguntas examinadas individualmente, 4283 verificadas (804 vigentes, 3136 corregidas y 343 históricas) y 82 pendientes documentadas (36 de fuente y 46 de ambigüedad); quedan 7758 sin revisar individualmente. Hay 3626 preguntas con cambios en enunciado, opciones o clave frente al original, comparando registros completos.
 
 ## Estado de publicación
+
+Tras el lote 809, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, 4.365 preguntas examinadas individualmente, 7.758 sin revisar y cero errores estructurales. La publicación del lote y su comprobación HTTP sin caché quedan pendientes.
 
 Tras el lote 808, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: total 12.123, 4.360 preguntas examinadas individualmente, 7.763 sin revisar y cero errores estructurales. El workflow [42814107457](https://github.com/itic-academy/simulador-tic/actions/runs/42814107457), asociado al commit `a5643e39c056b21823dde26e10b0d783784c7d88`, terminó con `success`; la consulta sin caché a Pages devolvió HTTP 200 y confirmó el lote 808 y los IDs 4361–4365.
 
@@ -80,6 +82,20 @@ Tras el lote 805, el workflow de Pages [42810171592](https://github.com/itic-aca
 Tras el lote 806, el workflow de Pages [42811447674](https://github.com/itic-academy/simulador-tic/actions/runs/42811447674) terminó con `success`; la consulta sin caché devolvió HTTP 200 y confirmó los IDs 4351–4355 y el acumulado 4.350.
 
 Tras el lote 807, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: 12.123 preguntas totales, 4.355 revisadas individualmente, 7.768 sin revisar y cero errores estructurales. Pendiente la publicación y comprobación de Pages.
+
+## Lote 809 — 10 de noviembre de 2026
+
+IDs 4366–4370 revisados individualmente; originales y decisiones conservados en [cambios-lote-809.json](cambios-lote-809.json).
+
+- **4366 — inyección SQL en JDBC:** se conserva la parametrización como defensa principal y se corrige la falsa idea de que procedimientos almacenados o filtros cliente garanticen seguridad; el SQL dinámico interno también puede ser vulnerable. **Corregida; clave C.**
+- **4367 — exposición de un portal web:** se sustituye el argumento erróneo de que una granja evita la propagación del compromiso por una arquitectura explícita de segmentación: servicio público en DMZ y flujos internos restringidos. La redundancia apoya disponibilidad, no es control suficiente contra intrusiones. **Corregida; clave A.**
+- **4368 — participación en webinar:** se elimina la generalización sobre un modo universal de “presentación” y se precisa el contexto de Zoom Webinar: asistentes, panelistas y anfitrión tienen roles/permisos distintos. **Corregida; clave D.**
+- **4369 — IAM frente a VPN:** se precisa que IAM administra identidades y autorizaciones; la creación del túnel VPN es conectividad de red, aunque pueda apoyarse en IAM para autenticar al usuario. **Corregida; clave C.**
+- **4370 — SSO Kerberos:** se sustituye la taxonomía confusa de cachés cliente/servidor por hechos comprobables del protocolo: el cliente usa y almacena el TGT y tickets de servicio; no se reenvía la contraseña en claro a cada servicio. **Corregida; clave D.**
+
+Fuentes técnicas principales: OWASP, [SQL Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html); Oracle, [JDBC Prepared Statements](https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html); NIST, [definición de DMZ](https://csrc.nist.gov/glossary/term/demilitarized_zone) y [SP 800-44 Rev. 2, securing public web servers](https://csrc.nist.gov/pubs/sp/800/44/ver2/final); Zoom, [roles de webinar](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058175) y [gestión de asistentes/panelistas](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0063276); NIST, [IAM glossary](https://csrc.nist.gov/glossary/term/identity_and_access_management), [remote access glossary](https://csrc.nist.gov/glossary/term/remote_access) y UK NCSC, [Introduction to IAM](https://www.ncsc.gov.uk/guidance/introduction-identity-and-access-management); IETF, [RFC 4120 Kerberos V5](https://www.rfc-editor.org/rfc/rfc4120.html), MIT Kerberos, [credential cache](https://web.mit.edu/Kerberos/www/krb5-current/doc/basic/ccache_def.html) y Microsoft Learn, [Ticket-Granting Tickets](https://learn.microsoft.com/en-us/windows/win32/secauthn/ticket-granting-tickets). ITIC Academy: [bloque 30, tecnologías de sistemas de información, 2026](https://drive.google.com/file/d/1LuUHoQr8oDmptteHIQ72VdCvJFsnu3LF/view?usp=drivesdk), [bloque 48, seguridad de redes y aplicaciones, 2026](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk), [bloque 50, videoconferencia y SSO, 2026](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk) y [tema 36, seguridad, criptografía e identidad, 2026](https://docs.google.com/document/d/1Rix8RBBUSoXJBOAt8iWyU9j5tPiqlXzk/edit?usp=drivesdk&ouid=107088454749630873035&rtpof=true&sd=true). Correspondencia curricular cotejada con [convocatoria A1 TIC AGE 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): 4366 A1-64/A2-II-5 y III-10; 4367 A1-125/A2-IV-12; 4368 A1-130/A2-IV-16; 4369 A1-125/A2-IV-12; 4370 A1-80/A1-125/A2-IV-12.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` pasaron: 12.123 preguntas en inventario, 4.365 revisadas individualmente, 7.758 aún sin revisión individual y cero errores estructurales. El inventario no acredita revisión de contenido.
 
 ## Lote 808 — 10 de noviembre de 2026
 

@@ -220595,7 +220595,52 @@
         "Si la consulta se realiza con Javascript, el filtrado debe realizarse en la parte del cliente mientras que si se realiza con PHP, el filtrado lo hará el servidor web."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La parametrización separa la sintaxis SQL de los datos y es la defensa primaria frente a la inyección en valores. La validación de cliente no sustituye controles en el servidor; tampoco basta con llamar a un procedimiento almacenado si dentro se concatena SQL dinámico inseguro. Clave C.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "JDBC",
+        "inyección SQL",
+        "PreparedStatement",
+        "parámetros"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+            "referencia": "OWASP, SQL Injection Prevention Cheat Sheet: separar estructura SQL de los valores y ligarlos mediante consultas parametrizadas; ejemplo Java JDBC con PreparedStatement. Los procedimientos almacenados no evitan automáticamente la inyección si construyen SQL dinámico inseguro."
+          },
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html",
+            "referencia": "Oracle Java Tutorials, Using Prepared Statements: JDBC PreparedStatement representa una sentencia precompilada con parámetros que se establecen mediante métodos de binding."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1LuUHoQr8oDmptteHIQ72VdCvJFsnu3LF/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», edición 2026: cotejo curricular de bases de datos, SQL y programación de acceso a datos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 TIC AGE 2025, anexo I, tema 64: modelo relacional y lenguaje SQL."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX, tema II-5 (SGBD relacionales y SQL) y tema III-10 (Java EE/Jakarta EE, persistencia y seguridad)."
+          }
+        ],
+        "observaciones": "La parametrización separa la sintaxis SQL de los datos y es la defensa primaria frente a la inyección en valores. La validación de cliente no sustituye controles en el servidor; tampoco basta con llamar a un procedimiento almacenado si dentro se concatena SQL dinámico inseguro. Clave C."
+      }
     },
     {
       "id": 4367,
@@ -220608,7 +220653,52 @@
         "Bastionar el servidor Web interno de la organización y abrir su puerto 80 a Internet de modo que los accesos queden securizados."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Una DMZ separa lógicamente los servicios expuestos de la red más confiable y permite aplicar controles a los flujos entre ambas. La redundancia de una granja puede mejorar disponibilidad, pero no evita que el compromiso de un nodo se propague si comparte confianza o conectividad. Clave A.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "DMZ",
+        "segmentación de red",
+        "servidor web público",
+        "cortafuegos",
+        "seguridad perimetral"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/demilitarized_zone",
+            "referencia": "NIST CSRC Glossary, demilitarized zone: segmento neutral entre red privada e Internet, destinado a permitir intercambio externo restringido y proteger la red interna de ataques externos."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/44/ver2/final",
+            "referencia": "NIST SP 800-44 Rev. 2, Guidelines on Securing Public Web Servers: recomienda proteger el sistema anfitrión y desplegar mecanismos de protección de red para servidores públicos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 «Seguridad de redes y aplicaciones», edición 2026: cotejo curricular de seguridad perimetral, segmentación y exposición de servicios."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 TIC AGE 2025, anexo I, tema 125: seguridad en redes, cortafuegos y control de accesos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX, tema IV-12: seguridad en redes, seguridad perimetral y control de accesos."
+          }
+        ],
+        "observaciones": "Una DMZ separa lógicamente los servicios expuestos de la red más confiable y permite aplicar controles a los flujos entre ambas. La redundancia de una granja puede mejorar disponibilidad, pero no evita que el compromiso de un nodo se propague si comparte confianza o conectividad. Clave A."
+      }
     },
     {
       "id": 4368,
@@ -220622,7 +220712,52 @@
         "En las videoconferencias de tipo presentación todos los sitios intervienen al mismo nivel y pueden intercalarse intervenciones de unos o de otros de forma espontánea."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Las reglas de participación dependen de los roles y permisos definidos por el anfitrión. Zoom describe asistentes en modo de solo visualización y permite que el anfitrión habilite que hablen o los convierta en panelistas; no participan todos automáticamente con idénticos permisos. La pregunta se limita a Zoom Webinar para no universalizar una taxonomía de modos que depende de cada plataforma. Clave D.",
+      "clasificacion": {
+        "A1": [
+          "A1-130"
+        ],
+        "A2": [
+          "A2-IV-16"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "videoconferencia",
+        "webinar",
+        "roles de participante",
+        "presentador",
+        "asistente"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058175",
+            "referencia": "Zoom Support, Understanding Zoom Webinars Plus roles: en un webinar, los asistentes son participantes de solo visualización; presentadores/panelistas tienen permisos de audio, vídeo y pantalla y el anfitrión controla los roles."
+          },
+          {
+            "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0063276",
+            "referencia": "Zoom Support, Managing webinar attendees and panelists: el anfitrión puede permitir a un asistente hablar o promoverlo a panelista; no todos intervienen espontáneamente al mismo nivel."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 50 «Videoconferencia, Single Sign-On y herramientas colaborativas», edición 2026: cotejo curricular de conferencias y modalidades de participación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 TIC AGE 2025, anexo I, tema 130: sistemas de videoconferencia y herramientas de trabajo en grupo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX, tema IV-16: sistemas de videoconferencia y protocolos."
+          }
+        ],
+        "observaciones": "Las reglas de participación dependen de los roles y permisos definidos por el anfitrión. Zoom describe asistentes en modo de solo visualización y permite que el anfitrión habilite que hablen o los convierta en panelistas; no participan todos automáticamente con idénticos permisos. La pregunta se limita a Zoom Webinar para no universalizar una taxonomía de modos que depende de cada plataforma. Clave D."
+      }
     },
     {
       "id": 4369,
@@ -220636,7 +220771,57 @@
         "Esquema de autorizaciones, que concentra en un solo punto las autorizaciones de acceso."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "IAM administra identidades y sus permisos. Una VPN establece conectividad de red cifrada para acceso remoto o entre sedes; puede apoyarse en IAM para autenticar usuarios, pero el establecimiento del túnel es una función de red, no una función nuclear de gestión de identidades. Clave C.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "gestión de identidades y accesos",
+        "IAM",
+        "permisos",
+        "LDAP",
+        "VPN",
+        "acceso remoto"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/identity_and_access_management",
+            "referencia": "NIST CSRC Glossary, Identity and Access Management: gestión de identidades, roles y privilegios de acceso de usuarios de red."
+          },
+          {
+            "url": "https://www.ncsc.gov.uk/guidance/introduction-identity-and-access-management",
+            "referencia": "NCSC, Introduction to identity and access management: IAM relaciona identidades con permisos y funciones, autenticación, autorización y ciclo de vida de accesos."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/remote_access",
+            "referencia": "NIST CSRC Glossary, remote access: acceso por usuarios que se comunican con un sistema desde fuera de su perímetro de seguridad, distinto de administrar identidades y autorizaciones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Rix8RBBUSoXJBOAt8iWyU9j5tPiqlXzk/view?usp=drivesdk",
+            "referencia": "ITIC Academy, tema 36 «Seguridad, criptografía, identificación y firma», edición 2026: cotejo curricular de identidad, autenticación y control de acceso."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 TIC AGE 2025, anexo I, temas 80 y 125: identificación/control de acceso y seguridad de redes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX, tema IV-12: control de accesos, redes privadas virtuales y seguridad en redes."
+          }
+        ],
+        "observaciones": "IAM administra identidades y sus permisos. Una VPN establece conectividad de red cifrada para acceso remoto o entre sedes; puede apoyarse en IAM para autenticar usuarios, pero el establecimiento del túnel es una función de red, no una función nuclear de gestión de identidades. Clave C."
+      }
     },
     {
       "id": 4370,
@@ -220650,7 +220835,62 @@
         "Autenticación múltiple mediante cacheo en servidor, utilizada por ejemplo en Kerberos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Kerberos se basa en tickets emitidos por el KDC; el cliente almacena el TGT y puede solicitar tickets específicos de servicios sin enviar la contraseña a cada servicio. RFC 4120 describe el protocolo y la documentación MIT/Microsoft confirma la caché del cliente. La opción D es falsa. Clave D.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SSO",
+        "Kerberos",
+        "KDC",
+        "ticket-granting ticket",
+        "caché de credenciales",
+        "criptografía simétrica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-10",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4120.html",
+            "referencia": "IETF RFC 4120, Kerberos V5: define el intercambio cliente-KDC, ticket-granting tickets, tickets de servicio y su uso para autenticación; el cliente puede almacenar tickets para reutilizarlos."
+          },
+          {
+            "url": "https://web.mit.edu/Kerberos/www/krb5-current/doc/basic/ccache_def.html",
+            "referencia": "MIT Kerberos Documentation, Credential cache: una caché local mantiene credenciales Kerberos válidas (incluido un ticket inicial) para evitar contactar con el KDC en cada acceso."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/ticket-granting-tickets",
+            "referencia": "Microsoft Learn, Ticket-Granting Tickets: el cliente almacena en su caché el TGT y la clave de sesión; presenta después el TGT para solicitar al KDC un ticket de servicio."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 50 «Videoconferencia, Single Sign-On y herramientas colaborativas», edición 2026: cotejo curricular del SSO."
+          },
+          {
+            "url": "https://docs.google.com/document/d/1Rix8RBBUSoXJBOAt8iWyU9j5tPiqlXzk/edit?usp=drivesdk&ouid=107088454749630873035&rtpof=true&sd=true",
+            "referencia": "ITIC Academy, tema 36 «Seguridad, criptografía, identificación y firma», edición 2026: cotejo curricular de Kerberos, autenticación y criptografía."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 TIC AGE 2025, anexo I, temas 80 y 125: autenticación, protocolos de confianza y control de acceso."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, anexo IX, tema IV-12: autenticación y protocolos seguros en redes."
+          }
+        ],
+        "observaciones": "Kerberos se basa en tickets emitidos por el KDC; el cliente almacena el TGT y puede solicitar tickets específicos de servicios sin enviar la contraseña a cada servicio. RFC 4120 describe el protocolo y la documentación MIT/Microsoft confirma la caché del cliente. La opción D es falsa. Clave D."
+      }
     },
     {
       "id": 4371,
