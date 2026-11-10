@@ -1,0 +1,329 @@
+{
+  "fecha": "2026-11-10",
+  "alcance": "Revisión individual de las preguntas 4576–4580: sintaxis PostgreSQL de agrupación y ordenación, representaciones CMMI, operaciones LDAPv3, licencias de plataformas LMS y origen/licencia/uso de Subversion.",
+  "cambios": [
+    {
+      "id": 4576,
+      "original": {
+        "id": 4576,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cual de las siguientes consultas SQL es la CORRECTA?:",
+        "opciones": [
+          "select cod_punto_vacunacion, dosis, count(*) from vacunas where cod_laboratorio='75' group by 1, 2 order by 1",
+          "select cod_punto_vacunacion, dosis, count(*) from vacunas where cod_laboratorio='75' order by 1 group by 1",
+          "select cod_punto_vacunacion, count(*), dosis from vacunas where cod_laboratorio='75' order 1 group by 1",
+          "select count(cod_punto_vacunacion, dosis) from vacunas where cod_laboratorio='75' group by 1 order by 1"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4576,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En PostgreSQL, ¿cuál de las siguientes consultas agrupa correctamente por las dos columnas no agregadas y ordena por la primera?",
+        "opciones": [
+          "SELECT cod_punto_vacunacion, dosis, COUNT(*) FROM vacunas WHERE cod_laboratorio = '75' GROUP BY 1, 2 ORDER BY 1",
+          "SELECT cod_punto_vacunacion, dosis, COUNT(*) FROM vacunas WHERE cod_laboratorio = '75' ORDER BY 1 GROUP BY 1",
+          "SELECT cod_punto_vacunacion, COUNT(*), dosis FROM vacunas WHERE cod_laboratorio = '75' ORDER 1 GROUP BY 1",
+          "SELECT COUNT(cod_punto_vacunacion, dosis) FROM vacunas WHERE cod_laboratorio = '75' GROUP BY 1 ORDER BY 1"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se especifica PostgreSQL porque el uso de ordinales en GROUP BY depende del dialecto. En PostgreSQL, GROUP BY 1, 2 se refiere a las dos primeras expresiones de la lista SELECT; COUNT(*) agrega las filas de cada grupo y ORDER BY 1 ordena por la primera columna. Las otras alternativas tienen orden sintáctico incorrecto, cláusula ORDER BY mal formada o una llamada COUNT con dos argumentos no admitida.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": 30,
+          "estado": "revisada",
+          "nota": "Contrastada con fuente técnica primaria y temario de ITIC Academy; clasificación oficial y Academy bloque 30."
+        },
+        "etiquetas": [
+          "revisión individual 4576"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.postgresql.org/docs/current/sql-select.html",
+              "reference": "PostgreSQL current SELECT documentation: GROUP BY expressions may use an output-column ordinal; ORDER BY may use ordinal positions as well."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1LuUHoQr8oDmptteHIQ72VdCvJFsnu3LF/view?usp=drivesdk",
+              "reference": "ITIC Academy, bloque 30 (2026), tecnologías de sistemas de información; cotejo del modelo relacional y SQL."
+            }
+          ],
+          "observaciones": "Se especifica PostgreSQL porque el uso de ordinales en GROUP BY depende del dialecto. En PostgreSQL, GROUP BY 1, 2 se refiere a las dos primeras expresiones de la lista SELECT; COUNT(*) agrega las filas de cada grupo y ORDER BY 1 ordena por la primera columna. Las otras alternativas tienen orden sintáctico incorrecto, cláusula ORDER BY mal formada o una llamada COUNT con dos argumentos no admitida."
+        }
+      }
+    },
+    {
+      "id": 4577,
+      "original": {
+        "id": 4577,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El modelo CMM de Ingeniería de Software ofrece dos representaciones que se denominan:",
+        "opciones": [
+          "Continua y Discontinua",
+          "Continua y Por Etápas",
+          "Por Áreas Clave y Características",
+          "Continua y Por Áreas Clave"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4577,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En CMMI-DEV v1.2, las dos representaciones del modelo de mejora de procesos son:",
+        "opciones": [
+          "Predictiva y adaptativa.",
+          "Continua y por etapas (staged).",
+          "Por áreas clave y por características.",
+          "Incremental y en cascada."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "El nombre se precisa como CMMI-DEV, no el antecedente genérico CMM. La versión 1.2 ofrece representación continua y representación por etapas (staged). Son dos formas de organizar la mejora del proceso; no deben confundirse con los niveles de capacidad de áreas de proceso ni con los niveles de madurez organizativa.",
+        "clasificacion": {
+          "A1": [
+            "A1-96"
+          ],
+          "A2": [
+            "A2-III-13"
+          ],
+          "bloque_academia": 39,
+          "estado": "revisada",
+          "nota": "Contrastada con fuente técnica primaria y temario de ITIC Academy; clasificación oficial y Academy bloque 39."
+        },
+        "etiquetas": [
+          "revisión individual 4577"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.sei.cmu.edu/documents/1862/2009_003_001_15011.pdf",
+              "reference": "Software Engineering Institute, CMU, comparative analysis: CMMI-DEV v1.2 provides continuous and staged representations."
+            },
+            {
+              "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+              "reference": "ITIC Academy, bloque 39 (2026), calidad y mantenimiento de sistemas; correspondencia de CMMI con modelos de mejora/calidad de procesos de software."
+            }
+          ],
+          "observaciones": "El nombre se precisa como CMMI-DEV, no el antecedente genérico CMM. La versión 1.2 ofrece representación continua y representación por etapas (staged). Son dos formas de organizar la mejora del proceso; no deben confundirse con los niveles de capacidad de áreas de proceso ni con los niveles de madurez organizativa."
+        }
+      }
+    },
+    {
+      "id": 4578,
+      "original": {
+        "id": 4578,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué grupos de operaciones están definidas en el modelo funcional de LDAP?",
+        "opciones": [
+          "De consulta, de actualización y de búsqueda",
+          "De búsqueda, de actualización y de control",
+          "De consulta, de actualización y de autenticación y control",
+          "De comparación, de consulta y de búsqueda"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4578,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué agrupación describe correctamente las operaciones principales de LDAPv3?",
+        "opciones": [
+          "Consulta (Search/Compare), actualización (Add/Delete/Modify/ModifyDN) y autenticación/control (Bind/Unbind/Abandon).",
+          "Búsqueda, actualización y una operación de control que sustituye a Bind.",
+          "Consulta, actualización y autenticación/control, pero Compare es una operación de actualización.",
+          "Search, Compare y Bind son todas operaciones de consulta."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "RFC 4511 define las operaciones del protocolo LDAP: Search y Compare consultan; Add, Delete, Modify y Modify DN modifican entradas; Bind autentica y Unbind/Abandon gestionan la sesión o las peticiones. Las extensiones pueden añadir operaciones extendidas, por lo que la agrupación se limita a las principales del protocolo base.",
+        "clasificacion": {
+          "A1": [
+            "A1-80",
+            "A1-122"
+          ],
+          "A2": [],
+          "bloque_academia": 43,
+          "estado": "revisada",
+          "nota": "Contrastada con fuente técnica primaria y temario de ITIC Academy; clasificación oficial y Academy bloque 43."
+        },
+        "etiquetas": [
+          "revisión individual 4578"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4511.html",
+              "reference": "RFC 4511, LDAPv3, §§4.2–4.11: Bind, Unbind, Search, Modify, Add, Delete, Modify DN, Compare y Abandon protocol operations."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "reference": "ITIC Academy, bloque 43, protocolos 2026; incluye LDAP, X.500 y servicios de directorio."
+            }
+          ],
+          "observaciones": "RFC 4511 define las operaciones del protocolo LDAP: Search y Compare consultan; Add, Delete, Modify y Modify DN modifican entradas; Bind autentica y Unbind/Abandon gestionan la sesión o las peticiones. Las extensiones pueden añadir operaciones extendidas, por lo que la agrupación se limita a las principales del protocolo base."
+        }
+      }
+    },
+    {
+      "id": 4579,
+      "original": {
+        "id": 4579,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes plataformas de e-learning NO es libre?",
+        "opciones": [
+          "Atutor",
+          "ILIAS",
+          "LON-CAPA",
+          "Blackboard"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4579,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de estas plataformas LMS es propietaria y se distribuye bajo licencia comercial institucional, no como software libre de código abierto?",
+        "opciones": [
+          "ATutor.",
+          "ILIAS.",
+          "LON-CAPA.",
+          "Blackboard Learn."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "ATutor se distribuye bajo GPL, ILIAS bajo GPL y LON-CAPA bajo GNU GPL; Blackboard Learn se licencia mediante acuerdos comerciales y no publica el producto como software libre/open source. «Libre» se usa aquí en el sentido de libertad de uso, modificación y redistribución, no como sinónimo ambiguo de gratuito.",
+        "clasificacion": {
+          "A1": [
+            "A1-73"
+          ],
+          "A2": [],
+          "bloque_academia": 33,
+          "estado": "revisada",
+          "nota": "Contrastada con fuente técnica primaria y temario de ITIC Academy; clasificación oficial y Academy bloque 33."
+        },
+        "etiquetas": [
+          "revisión individual 4579"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://atutor.github.io/atutor/docs/installation.html",
+              "reference": "ATutor official installation: use and distribution regulated by GNU GPL."
+            },
+            {
+              "url": "https://www.ilias.de/en/",
+              "reference": "ILIAS official site: free open-source software published under GPL."
+            },
+            {
+              "url": "https://install.lon-capa.org/",
+              "reference": "LON-CAPA official installation/licensing site: GPL license and open-source system."
+            },
+            {
+              "url": "https://agreements.blackboard.com/media/3079/blackboard_new_master_agreement_all_products.pdf",
+              "reference": "Blackboard Learn master agreement, §15: product use is licensed through a customer order and specified configurations; proprietary commercial licensing."
+            },
+            {
+              "url": "https://docs.google.com/document/d/1Z5T1vJByypxxdxOt1oBv-An43NcV1Pr6/edit?usp=drivesdk",
+              "reference": "ITIC Academy, tema 73, e-learning (documento de temas 73–74, versión 2026); Blackboard y otras plataformas."
+            }
+          ],
+          "observaciones": "ATutor se distribuye bajo GPL, ILIAS bajo GPL y LON-CAPA bajo GNU GPL; Blackboard Learn se licencia mediante acuerdos comerciales y no publica el producto como software libre/open source. «Libre» se usa aquí en el sentido de libertad de uso, modificación y redistribución, no como sinónimo ambiguo de gratuito."
+        }
+      }
+    },
+    {
+      "id": 4580,
+      "original": {
+        "id": 4580,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación es falsa respecto a Subversion?",
+        "opciones": [
+          "Licencia de software libre",
+          "Usado para el desarrollo del kernel de Linux",
+          "Arquitectura cliente-servidor",
+          "Desarrollado por Apache en el año 2000"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4580,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación es falsa sobre Apache Subversion (SVN)?",
+        "opciones": [
+          "Es software libre distribuido bajo Apache License 2.0.",
+          "Fue el sistema de control de versiones que sustituyó a BitKeeper en el desarrollo del kernel de Linux y sigue siendo su herramienta principal.",
+          "Usa una arquitectura cliente-servidor.",
+          "El proyecto comenzó en CollabNet en 2000 y pasó a ser Apache Subversion tras graduarse del incubador de la Apache Software Foundation en 2010."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La afirmación falsa es la relativa al kernel de Linux: la documentación del kernel explica que primero utilizó BitKeeper y después adoptó Git. Subversion, por su parte, es software open source con licencia Apache 2.0, emplea un modelo cliente-servidor y comenzó como proyecto de CollabNet en 2000 antes de convertirse en Apache Subversion en 2010.",
+        "clasificacion": {
+          "A1": [
+            "A1-69",
+            "A1-102"
+          ],
+          "A2": [
+            "A2-II-14",
+            "A2-IV-4"
+          ],
+          "bloque_academia": 38,
+          "estado": "revisada",
+          "nota": "Contrastada con fuente técnica primaria y temario de ITIC Academy; clasificación oficial y Academy bloque 38."
+        },
+        "etiquetas": [
+          "revisión individual 4580"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-10",
+          "fuentes": [
+            {
+              "url": "https://subversion.apache.org/",
+              "reference": "Apache Subversion official site: open source system; project founded in 2000 by CollabNet and now developed under ASF."
+            },
+            {
+              "url": "https://subversion.apache.org/news",
+              "reference": "Apache Subversion official news archive: project graduated from ASF Incubator and became Apache Subversion on 17 February 2010."
+            },
+            {
+              "url": "https://subversion.apache.org/faq",
+              "reference": "Apache Subversion FAQ: open-source software under Apache License 2.0 and development since 2000."
+            },
+            {
+              "url": "https://www.kernel.org/doc/html/next/process/7.AdvancedTopics.html",
+              "reference": "Linux kernel official documentation: kernel version-control history used BitKeeper and adopted Git, not Subversion."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+              "reference": "ITIC Academy, bloque 38 (2026), análisis, diseño y construcción; versionado Git y SVN/Subversion como herramienta de control de versiones de referencia histórica."
+            }
+          ],
+          "observaciones": "La afirmación falsa es la relativa al kernel de Linux: la documentación del kernel explica que primero utilizó BitKeeper y después adoptó Git. Subversion, por su parte, es software open source con licencia Apache 2.0, emplea un modelo cliente-servidor y comenzó como proyecto de CollabNet en 2000 antes de convertirse en Apache Subversion en 2010."
+        }
+      }
+    }
+  ]
+}
