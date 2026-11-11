@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 880 (IDs 4721–4725). Acumulado: 4.720 preguntas examinadas individualmente; 4.634 verificadas (836 vigentes, 3.445 corregidas y 353 históricas); 86 pendientes documentadas (38 de fuente y 48 de ambigüedad); 7.403 sin revisar individualmente. Hay 4.689 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 881 (IDs 4726–4730). Acumulado: 4.725 preguntas examinadas individualmente; 4.639 verificadas (838 vigentes, 3.447 corregidas y 354 históricas); 86 pendientes documentadas (38 de fuente y 48 de ambigüedad); 7.398 sin revisar individualmente. Hay 4.694 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 881 — 11 de noviembre de 2026
+
+IDs 4726–4730 revisados individualmente; el registro [cambios-lote-881.json](cambios-lote-881.json) conserva el original y el reactivo resultante. Se fija a ITIL 4 la definición de sponsor; se cotejan los cinco componentes de IFPUG; se reemplaza una pregunta ISO ambigua por la identificación inequívoca del título de ISO 9000:2000 y se conserva como histórica porque esa edición fue retirada; se precisa el acoplamiento por estampado frente a datos globales; y se confirma el propósito temporal del diagrama de secuencia UML.
+
+- **4726 — sponsor en ITIL:** se identifica como sponsor a quien autoriza el presupuesto del consumo del servicio; customer define requisitos y asume la responsabilidad por los resultados y user usa el servicio. Se cita ITIL 4 explícitamente.
+- **4727 — puntos función:** IFPUG considera EI, EO, EQ, ILF y EIF: entradas, salidas, consultas, ficheros lógicos internos e interfaces externas. La opción correcta combina las cinco categorías y no depende del lenguaje de programación.
+- **4728 — ISO 9000:2000:** el enunciado de origen admitía dos respuestas no pertenecientes a la familia/serie por describir mal ISO 9002 y citar ISO 19011. Se reescribe para preguntar por el título de ISO 9000:2000, “Fundamentos y vocabulario”. ISO confirma que la edición está retirada; en la fecha de revisión está publicada ISO 9000:2026.
+- **4729 — acoplamiento por estampado:** se precisa el paso de una estructura heterogénea no global como parámetro entre módulos. Esto lo distingue del acoplamiento común, que comparte datos globales.
+- **4730 — UML/orden temporal:** se confirma el diagrama de secuencia, que representa lifelines y mensajes con orden temporal. Se contrasta con la especificación OMG UML 2.5.1.
+
+Correspondencia con los programas oficiales: A1, temas 93, 98, 99 y 106; A2, III.2, III.9 y III.13. Cotejo con ITIC Academy 2026: bloque 38 (análisis, desarrollo y UML), bloque 39 (calidad y normas) y bloque 41 (ITIL/COBIT). Para ISO 9000 se mantiene la versión histórica en el enunciado y la clasificación se usa solo para ubicar materia; el catálogo oficial determina el estado de la norma.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.725 registros individuales, cero errores y 7.398 preguntas que aún coinciden con el original sin revisión individual.
 
 ## Lote 880 — 11 de noviembre de 2026
 
