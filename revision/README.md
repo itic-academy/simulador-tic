@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 884 (IDs 4741–4745). Acumulado: 4.740 preguntas examinadas individualmente; 4.654 verificadas (840 vigentes, 3.457 corregidas y 357 históricas); 86 pendientes documentadas (38 de fuente y 48 de ambigüedad); 7.383 sin revisar individualmente. Hay 4.709 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 885 (IDs 4746–4750). Acumulado: 4.745 preguntas examinadas individualmente; 4.659 verificadas (840 vigentes, 3.460 corregidas y 359 históricas); 86 pendientes documentadas (38 de fuente y 48 de ambigüedad); 7.378 sin revisar individualmente. Hay 4.714 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 885 — 11 de noviembre de 2026
+
+IDs 4746–4750 revisados individualmente y trazados en [cambios-lote-885.json](cambios-lote-885.json). Se distingue un lenguaje de herramientas históricas de tiempo real; se fija la definición de prestación de servicio en ITIL 4; se aclara qué representa un DFD de contexto; se separan tres enfoques clásicos de evaluación de calidad/procesos; y se distingue un diagrama ER de los marcos ágiles.
+
+- **4746 — diseño de sistemas de tiempo real:** Ada es un lenguaje de programación; Rational Rose RealTime, PERTS y TimeWiz son productos/herramientas históricos de modelado, prototipado o análisis. Se acotan los nombres concretos y se conserva como histórica, sin sugerir vigencia comercial actual.
+- **4747 — ITIL 4, prestación de servicio:** incluye gestionar los recursos del proveedor configurados para entregar el servicio. Los recursos del consumidor corresponden al consumo; una agrupación formal es una oferta; y las actividades conjuntas pertenecen a la gestión de relaciones.
+- **4748 — DFD de contexto:** se reformula en positivo: el sistema se representa como un único proceso y se muestran sus interacciones con entidades externas. Se evita atribuir sincronía temporal a los flujos de datos.
+- **4749 — BOOTSTRAP, TRILLIUM y MOSCA:** los tres se relacionan con evaluación o mejora de procesos/calidad del software, pero persiguen objetivos y utilizan modelos distintos. Se conserva la referencia como histórica y se explica el alcance de cada uno.
+- **4750 — ágil frente a modelado de datos:** ERD es un diagrama entidad-relación; Scrum, DSDM y Crystal son marcos o familias de métodos ágiles. Se cambia el reactivo para distinguir categorías sin ambigüedad.
+
+Correspondencia curricular cotejada: A1, temas 88, 93, 98 y 106; A2, III.2, III.3, III.9 y III.13. ITIC Academy 2026.1: bloques 38 (análisis, diseño y metodologías), 39 (calidad) y 41 (ITIL). Los materiales de Academia se usan para ubicar el contenido, no como autoridad técnica. Fuentes técnicas y citas concretas constan por pregunta en el registro: NASA NTRS, IBM, AdaCore, PeopleCert/AXELOS, MÉTRICA v3/PAe, BOOTSTRAP, TRILLIUM, MOSCA, ISO, Scrum Guide y Agile Business Consortium.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.745 revisiones individuales, cero errores y 7.378 preguntas que todavía coinciden con el original sin revisión individual.
 
 ## Lote 884 — 11 de noviembre de 2026
 
