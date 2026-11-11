@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 881 (IDs 4726–4730). Acumulado: 4.725 preguntas examinadas individualmente; 4.639 verificadas (838 vigentes, 3.447 corregidas y 354 históricas); 86 pendientes documentadas (38 de fuente y 48 de ambigüedad); 7.398 sin revisar individualmente. Hay 4.694 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 882 (IDs 4731–4735). Acumulado: 4.730 preguntas examinadas individualmente; 4.644 verificadas (838 vigentes, 3.451 corregidas y 355 históricas); 86 pendientes documentadas (38 de fuente y 48 de ambigüedad); 7.393 sin revisar individualmente. Hay 4.699 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 882 — 11 de noviembre de 2026
+
+IDs 4731–4735 revisados individualmente; los enunciados originales completos, respuestas y versiones editadas se conservan en [cambios-lote-882.json](cambios-lote-882.json). Se actualiza la terminología de diagramas UML a UML 2.5.1; se contrasta la taxonomía de mantenimiento con ISO/IEC/IEEE 14764:2022; se precisa volatilidad de requisitos como cambios a lo largo del tiempo; y se separa el estándar IEEE 828-2012, hoy inactivo-reservado, de la guía IEEE 1042-1987, retirada.
+
+- **4731 — diagramas de interacción UML:** se cambia “colaboración” por el nombre vigente “comunicación” y se fija UML 2.5.1. Los diagramas de secuencia y comunicación son diagramas de interacción.
+- **4732 — tipos de mantenimiento:** ISO/IEC/IEEE 14764:2022 enumera mantenimiento correctivo, preventivo, adaptativo, aditivo y perfectivo. “Continuo” no es una categoría de esa taxonomía.
+- **4733 — tipos de diagramas UML:** se conservan como válidos los diagramas de casos de uso, secuencia y comunicación; “diagrama de estructura dinámica” no es un tipo definido por UML 2.5.1.
+- **4734 — volatilidad de requisitos:** se elimina “todas las anteriores” porque mezcla el concepto con causas potenciales. Volatilidad describe requisitos añadidos, eliminados o modificados en el tiempo; las fuentes diversas o intereses contrapuestos pueden ser causas de cambios, no la definición.
+- **4735 — IEEE 828/1042:** se acota a IEEE 828-2012, que establecía requisitos mínimos de gestión de configuración y aparece inactivo-reservado desde 2023. IEEE 1042-1987 era una guía, retirada en 2000. El original combinaba documentos y estados distintos.
+
+Correspondencia con los programas oficiales: A1, temas 88, 93, 98, 100, 101 y 102; A2, III.2, III.9, III.13 y IV.4. Cotejo de ITIC Academy 2026.1 en Drive: bloque 38 (análisis, requisitos y UML) y bloque 39 (calidad, mantenimiento y gestión de configuración). Academy y convocatorias ubican curricularmente las materias; OMG, ISO, IEEE y NASA respaldan las respuestas técnicas.
+
+Fuentes primarias: [OMG UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/PDF) y [catálogo UML de OMG](https://www.omg.org/spec/UML/About-UML/); [ISO/IEC/IEEE 14764:2022](https://www.iso.org/standard/80710.html); [NASA Software Engineering Handbook, métrica de volatilidad SWE-200](https://swehb.nasa.gov/spaces/SWEHBVD/pages/102695533/SWE-200+-+Software+Requirements+Volatility+Metrics); [ISO/IEC/IEEE 29148:2018](https://www.iso.org/standard/72089.html); [IEEE 828-2012](https://standards.ieee.org/ieee/828/5367/) y [IEEE 1042-1987](https://standards.ieee.org/ieee/1042/1523/). Temarios: [convocatoria A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [convocatoria A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), [Academy bloque 38](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk) y [Academy bloque 39](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk).
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.730 revisiones individuales, cero errores y 7.393 preguntas que aún coinciden con el original sin revisión individual.
 
 ## Lote 881 — 11 de noviembre de 2026
 
