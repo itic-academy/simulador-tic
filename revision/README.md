@@ -18,6 +18,8 @@ Fuentes primarias y técnicas: [PAe, MÉTRICA v3 — Técnicas](https://administ
 
 `node revision/revisar-lote-896.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.800 revisiones individuales, cero errores y 7.323 preguntas aún idénticas al original y sin revisión individual.
 
+Publicación del lote 896 verificada en GitHub Pages tras el workflow 43018310544 (commit `f87774c38b0e570dff736b7ed11bf070d211a5b5`): los jobs `build` y `deploy` finalizaron correctamente. README, cambios-lote-896.json, revisar-lote-896.cjs e inventario.json responden HTTP 200; el registro público contiene los IDs 4801–4805 y el inventario publicado indica 12.123 preguntas, 4.800 revisiones y 7.323 sin revisión individual.
+
 ## Lote 895 — 11 de noviembre de 2026
 
 IDs 4796–4800 se revisaron individualmente y quedaron trazados, con los originales íntegros, en [cambios-lote-895.json](cambios-lote-895.json). Se corrige la definición de error conocido conforme a ITIL 4; se concreta la descomposición jerárquica de procesos en DFD; se elimina una atribución incompleta de las características de RUP; se sustituye una afirmación caducada sobre Horizon 2020 por la convocatoria vigente de EIC Pathfinder; y se distingue la medición funcional de la elicitación de requisitos.
