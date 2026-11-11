@@ -260588,49 +260588,190 @@
       "id": 5106,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de estas afirmaciones sobre el lenguaje de definición de datos (DML) es INCORRECTA?",
+      "texto": "En Oracle Database 26, ¿cuál de estas afirmaciones sobre las sentencias DML y las transacciones es incorrecta?",
       "opciones": [
-        "La instrucción SELECT forma parte de DML",
-        "Una instrucción DML inicia una transacción si no hay una ya en curso",
-        "La instrucción MERGE forma parte de DML.",
-        "Una instrucción DML finaliza implícitamente una transacción en curso"
+        "`SELECT` y `MERGE` se incluyen entre las sentencias DML de Oracle.",
+        "Las sentencias DML no confirman implícitamente la transacción actual.",
+        "Si no hay una transacción activa, la ejecución de una sentencia SQL puede iniciar una nueva transacción.",
+        "Toda sentencia DML confirma implícitamente la transacción actual."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Las afirmaciones sobre inicio/confirmación de transacciones dependen del SGBD y también del modo autocommit del cliente. Se acota expresamente a Oracle Database 26: Oracle clasifica SELECT y MERGE como DML; las DML no confirman implícitamente la transacción, mientras que una DDL sí provoca confirmación implícita. Por tanto, D es la incorrecta.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "Cotejo de ITIC Academy en Drive: se buscaron materiales sobre SQL y modelo relacional; el resultado accesible identificado (documento de hardware) no es pertinente. Sin bloque Academy directo asignado.",
+        "estado": "revisada",
+        "nota": "No se fuerza correspondencia curricular Academy al no localizar material pertinente; clasificada por programa oficial A1-64/A2-II.5."
+      },
+      "etiquetas": [
+        "Oracle Database",
+        "SQL",
+        "DML",
+        "transacciones",
+        "MERGE",
+        "SELECT"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Types-of-SQL-Statements.html",
+            "referencia": "Oracle Database 26 SQL Language Reference, Types of SQL Statements: incluye SELECT y MERGE entre DML y declara que las sentencias DML no confirman implícitamente la transacción actual."
+          },
+          {
+            "url": "https://docs.oracle.com/html/E25789_01/transact.htm",
+            "referencia": "Oracle Database Concepts, Transactions: una transacción comienza al ejecutarse la primera sentencia SQL; DDL, a diferencia de DML, provoca COMMIT implícito antes y después."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 64: modelo relacional, lenguaje SQL e interoperabilidad entre gestores."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.5: SGBD relacionales, SQL y estándares de interoperabilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "Se buscaron en Drive materiales Academy centrados en SQL/modelo relacional; la coincidencia devuelta fue un tema de hardware, por lo que no se atribuye un bloque de academia a este reactivo."
+          }
+        ],
+        "observaciones": "Las afirmaciones sobre inicio/confirmación de transacciones dependen del SGBD y también del modo autocommit del cliente. Se acota expresamente a Oracle Database 26: Oracle clasifica SELECT y MERGE como DML; las DML no confirman implícitamente la transacción, mientras que una DDL sí provoca confirmación implícita. Por tanto, D es la incorrecta."
+      }
     },
     {
       "id": 5107,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes estándares de información geográfica NO corresponde a un servicio de visualización?",
+      "texto": "¿Qué estándar OGC proporciona acceso directo a entidades geográficas vectoriales y a sus propiedades, en lugar de devolver imágenes de mapas o mosaicos?",
       "opciones": [
+        "WFS (Web Feature Service).",
+        "WMS (Web Map Service).",
+        "WMTS (Web Map Tile Service).",
+        "WCS (Web Coverage Service)."
+      ],
+      "respuesta_correcta": 0,
+      "comentarios": "El enunciado original preguntaba cuál no era un servicio de visualización y ofrecía tanto WFS como TJS, ambos distintos de los servicios que devuelven mapas/imágenes; había más de una respuesta. Se cambia a una propiedad positiva y se sustituye TJS por WCS: WFS permite consultar entidades y atributos, WMS entrega imágenes de mapa y WMTS mosaicos predefinidos. Respuesta A.",
+      "clasificacion": {
+        "A1": [
+          "A1-74"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, documento 33, temas 73–74 (e-learning y SIG), cotejo curricular directo de SIG. Las definiciones WFS/WMS/WMTS/WCS se sustentan en OGC.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular Academy: documento 33 incluye SIG (tema 74); especificaciones verificadas con OGC."
+      },
+      "etiquetas": [
+        "SIG",
+        "OGC",
         "WFS",
         "WMS",
         "WMTS",
-        "TJS"
+        "WCS",
+        "servicios geográficos"
       ],
-      "respuesta_correcta": 0,
-      "comentarios": ""
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.ogc.org/standards/wfs/",
+            "referencia": "Open Geospatial Consortium, WFS Standard: proporciona acceso geográfico directo y detallado a entidades (*features*) y sus propiedades; incluye consulta y operaciones de gestión."
+          },
+          {
+            "url": "https://www.ogc.org/standards/wms/",
+            "referencia": "Open Geospatial Consortium, WMS: interfaz HTTP para solicitar imágenes de mapas georreferenciadas."
+          },
+          {
+            "url": "https://www.ogc.org/standards/wmts/",
+            "referencia": "Open Geospatial Consortium, WMTS: sirve mapas digitales como mosaicos de imágenes predefinidos."
+          },
+          {
+            "url": "https://www.ogc.org/standards/wcs/",
+            "referencia": "Open Geospatial Consortium, WCS: acceso a datos de coberturas geoespaciales, no al servicio vectorial de entidades del enunciado."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 74: sistemas de información geográfica, conceptos y funcionalidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "ITIC Academy, documento 33, temas 73–74 E-learning y GIS, versión 2026: cotejo directo del tema SIG/servicios geográficos; las definiciones se toman de OGC."
+          }
+        ],
+        "observaciones": "El enunciado original preguntaba cuál no era un servicio de visualización y ofrecía tanto WFS como TJS, ambos distintos de los servicios que devuelven mapas/imágenes; había más de una respuesta. Se cambia a una propiedad positiva y se sustituye TJS por WCS: WFS permite consultar entidades y atributos, WMS entrega imágenes de mapa y WMTS mosaicos predefinidos. Respuesta A."
+      }
     },
     {
       "id": 5108,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si nos estamos refiriendo al modelo MVC aplicado a tecnologías java, ¿cuál de las siguientes combinaciones sería la más adecuada?",
+      "texto": "En una implementación web Java clásica del patrón Model 2, ¿qué asignación de componentes es representativa?",
       "opciones": [
-        "Modelo - iSP, Vista - java Bean, Controlador - Servlet.",
-        "Modelo - lava Bean, Vista - jSP, Controlador - Servlet.",
-        "Modelo - Servlet, Vista - java Bean, Controlador - JSP.",
-        "Modelo - Servlet, Vista - jSP, Controlador - SVG."
+        "Modelo: JSP; Vista: JavaBean; Controlador: Servlet.",
+        "Modelo: JavaBean; Vista: JSP; Controlador: Servlet.",
+        "Modelo: Servlet; Vista: JavaBean; Controlador: JSP.",
+        "Modelo: Servlet; Vista: JSP; Controlador: SVG."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se corrigen errores de transcripción (`JSP`, no «iSP»; `JavaBean`, no «lava Bean») y se precisa que es la implementación web clásica Model 2: JavaBean/modelo, JSP/vista y Servlet/controlador. Es una forma representativa de MVC, no la única arquitectura Java posible. Respuesta B.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30, tecnologías de sistemas de información; contexto curricular Java/web, sin atribuirle carácter de especificación para Model 2.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular Academy: bloque 30, contexto Java/web; el patrón clásico Model 2 se verifica con documentación Oracle."
+      },
+      "etiquetas": [
+        "Java",
+        "MVC",
+        "Model 2",
+        "JavaBeans",
+        "JSP",
+        "Servlet"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javaee/5/tutorial/doc/bnahb.html",
+            "referencia": "Oracle Java EE 5 Tutorial, Duke’s Bookstore Model 2: el servlet Dispatcher hace de controlador; los JavaBeans contienen estado/modelo y las páginas JSP presentan las vistas."
+          },
+          {
+            "url": "https://www.oracle.com/technical-resources/articles/java/servlets-jsp.html",
+            "referencia": "Oracle, Servlets and JSP Pages Best Practices: en el patrón Model 2, el servlet actúa como controlador y prepara los beans que utiliza la JSP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 65: arquitectura de desarrollo web y tecnologías de servidor."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III.12: aplicaciones web y componentes de tecnologías de programación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, tecnologías de sistemas de información; cotejo curricular de aplicaciones Java/web, sin tratarse como especificación del patrón Model 2."
+          }
+        ],
+        "observaciones": "Se corrigen errores de transcripción (`JSP`, no «iSP»; `JavaBean`, no «lava Bean») y se precisa que es la implementación web clásica Model 2: JavaBean/modelo, JSP/vista y Servlet/controlador. Es una forma representativa de MVC, no la única arquitectura Java posible. Respuesta B."
+      }
     },
     {
       "id": 5109,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes NO es una de las llamadas doce reglas de Codd?",
+      "texto": "En las reglas de Codd para evaluar un sistema de gestión de bases de datos relacionales, ¿cuál de estas denominaciones no corresponde a una regla?",
       "opciones": [
         "Independencia física de los datos.",
         "Independencia de distribución.",
@@ -260638,21 +260779,113 @@
         "Independencia de integridad."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Las denominaciones históricas se precisan para evitar la paráfrasis ambigua de la opción. Codd incluye independencia física (regla 8), de integridad (regla 10) y de distribución (regla 11); el tratamiento de inserción, actualización y borrado aparece en la regla 7 como operación de alto nivel, no como «independencia de actualización». La opción C no es un nombre de regla.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "Cotejo de ITIC Academy en Drive: búsqueda de reglas de Codd y modelo relacional sin coincidencia directa pertinente. Sin bloque Academy específico asignado.",
+        "estado": "revisada",
+        "nota": "No se fuerza correspondencia curricular Academy porque no se localizó material directo sobre reglas de Codd; clasificación según programas oficiales A1-64/A2-II.5."
+      },
+      "etiquetas": [
+        "Codd",
+        "modelo relacional",
+        "independencia física",
+        "independencia de distribución",
+        "independencia de integridad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://reldb.org/c/index.php/twelve-rules/",
+            "referencia": "Rel, reproducción de los artículos de E. F. Codd de Computerworld (1985), «Is Your DBMS Really Relational?» y «Does Your DBMS Run By the Rules?»: nombra las reglas 8, 10 y 11 como independencia física, de integridad y de distribución; no presenta una regla denominada «independencia de actualización»."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 64: modelo relacional y lenguaje SQL."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.5: bases de datos relacionales y modelo ANSI/SPARC."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "Se buscó en Drive material Academy sobre reglas de Codd/modelo relacional; no se encontró una coincidencia directa, así que no se asigna bloque curricular específico."
+          }
+        ],
+        "observaciones": "Las denominaciones históricas se precisan para evitar la paráfrasis ambigua de la opción. Codd incluye independencia física (regla 8), de integridad (regla 10) y de distribución (regla 11); el tratamiento de inserción, actualización y borrado aparece en la regla 7 como operación de alto nivel, no como «independencia de actualización». La opción C no es un nombre de regla."
+      }
     },
     {
       "id": 5110,
       "bloque": 0,
       "tema": 0,
-      "texto": "El cifrado TDES - 2EDE (Encrypt-Decrypt-Encrypt) es:",
+      "texto": "¿Cuál describe correctamente la variante histórica de dos claves de Triple DES (2TDEA/2TDEA EDE)?",
       "opciones": [
-        "Un cifrado doble con 2 claves que aumentan el tamaño de la clave DES a 112 bits",
-        "Un cifrado triple con 2 claves que aumenta el tamaño de la clave DES a 112 bits",
-        "Un cifrado triple con una clave de 56 bits",
-        "No existe"
+        "Aplica DES solo dos veces con una única clave de 56 bits.",
+        "Aplica DES tres veces en esquema EDE con dos claves independientes (K1, K2, K1): 112 bits nominales de clave, pero como máximo 80 bits de fuerza según la evaluación histórica de NIST; ya no se aprueba para cifrado nuevo.",
+        "Aplica DES tres veces con tres claves de 56 bits y por ello se denomina variante de dos claves.",
+        "No existió una variante de TDEA con dos claves."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La variante histórica 2TDEA aplica DES tres veces en esquema EDE (K1, K2, K1) usando dos claves independientes. Tiene 112 bits de clave nominales, pero NIST le atribuye como máximo 80 bits de fuerza bajo condiciones determinadas; esas cifras no deben confundirse. NIST retiró TDEA como cifrador aprobado y ya no permite usarlo para protección nueva desde 2024; solo quedan usos legados concretos. Se corrige B con esas salvedades.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36, seguridad, criptografía, identificación y firma; cotejo curricular contextual. El estado de TDEA y la fuerza estimada se fundamentan en NIST.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular Academy: bloque 36, criptografía; revisión de vigencia según NIST: TDEA no se aprueba para aplicar protección nueva desde 2024."
+      },
+      "etiquetas": [
+        "TDEA",
+        "TDES",
+        "2TDEA",
+        "2-key Triple DES",
+        "EDE",
+        "obsoleto",
+        "NIST"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+            "referencia": "NIST SP 800-57 Part 1 Rev. 3, tabla de fuerza de seguridad: 2TDEA ofrece como máximo 80 bits de seguridad bajo las hipótesis allí indicadas; 112 bits es la longitud nominal de sus dos claves DES, no la fuerza efectiva."
+          },
+          {
+            "url": "https://csrc.nist.gov/News/2023/nist-to-withdraw-sp-800-67-rev-2",
+            "referencia": "NIST, retirada de SP 800-67 Rev. 2: TDEA dejó de ser un cifrador aprobado el 1-1-2024; la protección nueva mediante TDEA quedó disallowed después de 2023, con excepciones de uso legado para descifrado/verificación."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/131/a/r2/final",
+            "referencia": "NIST SP 800-131A Rev. 2: transición y estado de aprobación de algoritmos y longitudes de clave; la página identifica SP 800-67 como retirado."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 79: cifrado y algoritmos simétricos y asimétricos."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: técnicas criptográficas y protocolos seguros."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36, seguridad, criptografía, identificación y firma, versión 2026: cotejo curricular general; las advertencias de vigencia se sustentan en NIST."
+          }
+        ],
+        "observaciones": "La variante histórica 2TDEA aplica DES tres veces en esquema EDE (K1, K2, K1) usando dos claves independientes. Tiene 112 bits de clave nominales, pero NIST le atribuye como máximo 80 bits de fuerza bajo condiciones determinadas; esas cifras no deben confundirse. NIST retiró TDEA como cifrador aprobado y ya no permite usarlo para protección nueva desde 2024; solo quedan usos legados concretos. Se corrige B con esas salvedades."
+      }
     },
     {
       "id": 5111,
