@@ -20,6 +20,8 @@ Fuentes primarias: [LO 3/2018, texto consolidado BOE](https://www.boe.es/buscar/
 
 `node revision/revisar-lote-929.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas; 4.965 examinadas individualmente (858 vigentes, 3.650 corregidas, 369 históricas y 88 pendientes); 7.158 aún sin revisar individualmente; cero errores estructurales.
 
+**Despliegue del lote 929 verificado:** [workflow Deploy GitHub Pages 43077950692](https://github.com/itic-academy/simulador-tic/actions/runs/43077950692) finalizó con `success` para el commit [`53977ad`](https://github.com/itic-academy/simulador-tic/commit/53977ad08c76f76819a5c9af48fd45d0762c4c95). El README, el banco y el inventario publicados respondieron HTTP 200. El banco y el inventario contienen 12.123 preguntas; el banco servido registra los IDs 4966–4970 con claves 0, 1, 1, 3 y 2 en estados vigente, corregida, vigente, corregida y vigente. El inventario publicado refleja 4.965 preguntas examinadas y 7.158 todavía sin revisión individual.
+
 ## Lote 928 — 11 de noviembre de 2026
 
 IDs 4961–4965 revisados individualmente con los textos vigentes de la Ley 40/2015, la Ley de Contratos del Sector Público y las Leyes Orgánicas 3/2007 y 1/2004 en el BOE. Se cotejaron las convocatorias A1/A2 y los bloques 03, 05 y 06 de ITIC Academy (versión 2026.2, 1 de octubre de 2026). El registro [cambios-lote-928.json](cambios-lote-928.json) conserva textos, claves, explicaciones, fuentes y clasificación oficial; se corrigieron dos enunciados y se verificaron las otras tres preguntas sin alterar su contenido.
