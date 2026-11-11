@@ -1,6 +1,24 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 947 (IDs 5056–5060). Acumulado: 5.055 preguntas examinadas individualmente; 4.961 verificadas (897 vigentes, 3.689 corregidas y 375 históricas); 94 pendientes documentadas (41 de fuente y 53 de ambigüedad); 7.068 sin revisar individualmente. Hay 5.029 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, calculadas comparando los campos textuales en los registros de lote. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 948 (IDs 5061–5065). Acumulado: 5.060 preguntas examinadas individualmente; 4.966 verificadas (899 vigentes, 3.691 corregidas y 376 históricas); 94 pendientes documentadas (41 de fuente y 53 de ambigüedad); 7.063 sin revisar individualmente. Hay 5.034 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, calculadas comparando los campos textuales en los registros de lote. Los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 948 — 11 de noviembre de 2026
+
+IDs 5061–5065 revisados individualmente mediante el Reglamento MiCA, eIDAS consolidado, especificación JAX-RS, RFC RTSP y documentación de productos BI. Se cotejaron las convocatorias A1/A2 de 2025 y los bloques 30, 34, 36 y 50 de ITIC Academy en Drive como correspondencia curricular. El [registro del lote 948](cambios-lote-948.json) conserva originales, cambios, fuentes, explicaciones y clasificación temática.
+
+- **5061 — tokenización en blockchain:** respuesta D, corregida para limitar la afirmación al contexto de tokenización. Un token puede representar digitalmente valor o derechos vinculados a activos físicos o lógicos, según el sistema; no todos los tokens representan un objeto subyacente. A1-85.
+- **5062 — implementación de JAX-RS:** respuesta B, Jersey, implementación de referencia de JAX-RS 2.1 (JSR 370). Se actualiza el contexto a Jakarta REST y se conserva como histórica por el nombre de la API usado originalmente. A1-67/A2-III.10/III.12.
+- **5063 — listas de confianza eIDAS:** respuesta B, cada Estado miembro establece, mantiene y publica su lista nacional firmada o sellada y legible por máquina; la Comisión recibe la notificación correspondiente, pero no publica en sustitución de los Estados. A1-80/A2-I.6.
+- **5064 — capa de RTSP:** respuesta D, capa de aplicación. Se corrige la errata del nombre y se actualiza la referencia a RTSP 2.0 (RFC 7826), que reemplaza a RFC 2326. A1-130/A2-IV.16.
+- **5065 — herramientas de visualización:** respuesta D, todas las anteriores: Power BI, Qlik y Tableau tienen capacidades de visualización de datos. A1-71/A2-II.4.
+
+Convocatorias cotejadas: [A1 GSI 2025, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 67, 71, 80, 85 y 130; [A2 GSI AGE 2025, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), I.6, II.4, III.10, III.12 y IV.16.
+
+ITIC Academy cotejada en Drive, solo como mapa curricular: [bloque 30, Tecnologías de sistemas de información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk), Java/REST y blockchain; [bloque 34, Business Intelligence y Big Data](https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk), visualización; [bloque 36, Seguridad, criptografía, identificación y firma](https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk), eIDAS; [bloque 50, Videoconferencia, SSO y colaboración](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk), streaming. Los temarios de academia orientan la clasificación, no sustituyen las fuentes normativas o técnicas.
+
+Fuentes primarias y técnicas: [Reglamento MiCA (UE) 2023/1114, art. 3.1.5](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ%3AL%3A2023%3A150%3AFULL); [Comisión Europea, criptoactivos](https://finance.ec.europa.eu/digital-finance/crypto-assets_en); [JCP, JSR 370](https://jcp.org/aboutJava/communityprocess/final/jsr370/index.html); [Reglamento eIDAS consolidado, art. 22](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A02014R0910-20241018); [IETF RFC 7826, RTSP 2.0](https://www.rfc-editor.org/rfc/rfc7826.html); documentación de [Power BI](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualizations-overview), [Qlik](https://www.qlik.com/us/data-visualization) y [Tableau](https://www.tableau.com/visualization).
+
+Ejecutados `node revision/revisar-lote-948.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas; 5.060 examinadas individualmente (899 vigentes, 3.691 corregidas, 376 históricas y 94 pendientes); 7.063 sin revisar individualmente; cero errores estructurales.
 
 
 ## Lote 947 — 11 de noviembre de 2026
