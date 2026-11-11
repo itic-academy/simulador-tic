@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 878 (IDs 4711–4715). Acumulado: 4.710 preguntas examinadas individualmente; 4.625 verificadas (836 vigentes, 3.436 corregidas y 353 históricas); 85 pendientes documentadas (37 de fuente y 48 de ambigüedad); 7.413 sin revisar individualmente. Hay 4.683 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 879 (IDs 4716–4720). Acumulado: 4.715 preguntas examinadas individualmente; 4.630 verificadas (836 vigentes, 3.441 corregidas y 353 históricas); 85 pendientes documentadas (37 de fuente y 48 de ambigüedad); 7.408 sin revisar individualmente. Hay 4.688 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 879 — 11 de noviembre de 2026
+
+IDs 4716–4720 revisados individualmente; el registro y las versiones originales completas están en [cambios-lote-879.json](cambios-lote-879.json). Se actualiza el vocabulario de ITIL v3 y su ECAB con alcance histórico explícito; se corrige la tecnología de implementación de varios CMS; se precisa el grado de una relación E-R; se distingue proceso de interfaz en MÉTRICA v3; y se reformula la pregunta UML como consulta de la edición que figura en el catálogo formal vigente de OMG.
+
+- **4716 — ITIL v3/ECAB:** se verifica que el Emergency Change Advisory Board es el subgrupo del CAB que decide sobre cambios de emergencia de alto impacto. La respuesta se limita expresamente a ITIL v3 y no se extrapola a marcos posteriores. El glosario histórico AXELOS solo está accesible en espejos archivados, identificados como tales en las fuentes del registro.
+- **4717 — CMS Java frente a PHP:** se corrige la clave a Drupal, cuyo núcleo está escrito en PHP. Liferay Portal, Alfresco Content Services y OpenCms documentan sus implementaciones basadas en Java; no se infiere el lenguaje de todas las extensiones o integraciones.
+- **4718 — grado de relación E-R:** se aclara que el grado cuenta los tipos de entidades participantes en la relación, no las instancias concretas ni la cardinalidad.
+- **4719 — MÉTRICA v3:** se formula para distinguir procesos de interfaces; Planificación de Sistemas de Información (PSI) es un proceso de MÉTRICA, mientras que calidad, seguridad y gestión de configuración aparecen en el conjunto de interfaces.
+- **4720 — UML:** se elimina la afirmación atemporal de versión única y se pregunta qué versión figura como especificación formal en el catálogo OMG consultado: UML 2.5.1. La redacción registra que se trata del estado del catálogo a la fecha de revisión.
+
+Clasificación cotejada con la convocatoria oficial A1: temas 89, 93, 95, 104 y 106; A2: II.16, III.2, III.4 y III.9. ITIC Academy se cotejó en sus bloques 41 (ITIL), 40 (CMS), 29 (E-R), tema 093 (MÉTRICA) y 38 (UML). Los materiales de academia sirven para ubicación curricular, no para decidir la clave. Fuentes, citas concretas y enlaces de Academy constan por pregunta en el registro de cambios.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.715 registros individuales, cero errores y 7.408 preguntas que todavía coinciden con el original sin revisión individual.
 
 ## Lote 878 — 11 de noviembre de 2026
 
