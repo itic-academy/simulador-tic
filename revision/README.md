@@ -18,6 +18,8 @@ Fuentes: [PAe, MÉTRICA v3 — Análisis del Sistema de Información](https://ad
 
 `node revision/revisar-lote-902.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.830 revisiones individuales, cero errores y 7.293 preguntas todavía sin revisión individual.
 
+Publicación del lote 902 verificada tras el workflow [43027897346](https://github.com/itic-academy/simulador-tic/actions/runs/43027897346), completado con éxito para el commit `1a5b7e7aff1a438f0f9c4f56d55e3ce733757f7c`. En GitHub Pages, cambios-lote-902.json e inventario.json responden HTTP 200; el registro publicado contiene exactamente los IDs 4831–4835 y el inventario confirma 12.123 preguntas, 4.830 revisadas y 7.293 todavía sin revisión individual.
+
 ## Lote 901 — 11 de noviembre de 2026
 
 IDs 4826–4830 se revisaron individualmente y quedaron trazados, con sus originales íntegros, en [cambios-lote-901.json](cambios-lote-901.json). Se desambigua la familia ISO 265xx, se sustituye una clasificación indefinida de técnicas de requisitos por una comprobación concreta de MÉTRICA v3, se acota la gobernanza a ITIL 4/SVS, se separa `volatile` de los conceptos de POO y se distingue certificación de acreditación.
