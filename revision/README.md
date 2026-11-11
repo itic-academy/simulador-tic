@@ -16,7 +16,9 @@ Correspondencia curricular cotejada con convocatoria A1 GSI [BOE-A-2025-25938](h
 
 Fuentes: [Manifiesto Ágil — principios](https://agilemanifesto.org/principles), [GOV.UK — métodos ágiles](https://www.gov.uk/service-manual/agile-delivery/agile-methodologies), [Agile Alliance — XP](https://agilealliance.org/glossary/xp/), [Kanban Guide](https://kanbanguides.org/the-kanban-guide/), [Scrum Guide](https://scrumguides.org/scrum-guide.html), [PMI — ciclos predictivos/adaptativos](https://www.pmi.org/learning/library/matching-software-development-life-cycles-project-environment-7961), [MÉTRICA v3 — diseño del sistema de información](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A7f366cd1-6759-42d9-9e0b-31edce0256d9/METRICA_V3_Diseno_del_Sistema_de_Informacion.pdf), [ISO/IEC 14143-1:2007](https://www.iso.org/standard/38931.html) —confirmada vigente en 2024— e [IFPUG Function Point Analysis](https://ifpug.org/ifpug-standards/fpa).
 
-`node revision/revisar-lote-906.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados. Inventario: 12.123 preguntas válidas, 4.850 revisiones individuales, cero errores y 7.273 preguntas todavía sin revisar individualmente. La publicación se verificará tras el workflow.
+`node revision/revisar-lote-906.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados. Inventario: 12.123 preguntas válidas, 4.850 revisiones individuales, cero errores y 7.273 preguntas todavía sin revisar individualmente.
+
+Publicación del lote 906 verificada tras el workflow [43034280302](https://github.com/itic-academy/simulador-tic/actions/runs/43034280302), completado correctamente para `a120306`. GitHub Pages devuelve HTTP 200 para README, inventario y `cambios-lote-906.json`; el registro publicado contiene exactamente los IDs 4851–4855 y el inventario publicado confirma 4.850 revisadas y 7.273 todavía sin revisión individual.
 
 ## Lote 905 — 11 de noviembre de 2026
 
