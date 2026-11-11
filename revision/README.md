@@ -20,6 +20,8 @@ Fuentes primarias: [W3C, Web Standards](https://www.w3.org/standards/), estánda
 
 `node revision/revisar-lote-930.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas; 4.970 examinadas individualmente (861 vigentes, 3.652 corregidas, 369 históricas y 88 pendientes); 7.153 aún sin revisar individualmente; cero errores estructurales.
 
+**Despliegue del lote 930 verificado:** [workflow Deploy GitHub Pages 43079113867](https://github.com/itic-academy/simulador-tic/actions/runs/43079113867) finalizó con `success` para el commit [`30d9fb5`](https://github.com/itic-academy/simulador-tic/commit/30d9fb53b99a2b03f160bd5686c4217b873364c5). README, banco e inventario respondieron HTTP 200; el banco y el inventario publicados contienen 12.123 preguntas. En el banco servido constan los IDs 4971–4975 con claves 2, 0, 2, 2 y 1 y estados corregida, corregida, vigente, vigente y vigente. El inventario publicado refleja 4.970 preguntas examinadas y 7.153 aún sin revisión individual.
+
 ## Lote 929 — 11 de noviembre de 2026
 
 IDs 4966–4970 revisados individualmente con la LO 3/2018 consolidada, el RGPD, orientación vigente de la AEPD, materiales profesionales primarios de PMI e ISO 31000. Se cotejaron las convocatorias oficiales A1/A2 y los bloques 08 y 17 de ITIC Academy. El registro [cambios-lote-929.json](cambios-lote-929.json) conserva versiones originales, cambios, claves, explicaciones, fuentes y temas oficiales. Se actualizaron dos enunciados/opciones para eliminar terminología imprecisa o histórica; las otras tres preguntas y sus claves se verificaron sin alterar su contenido.
