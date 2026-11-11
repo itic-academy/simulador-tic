@@ -18,6 +18,8 @@ Fuentes: [MÉTRICA v3 — Análisis del Sistema de Información](https://adminis
 
 `node revision/revisar-lote-907.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados. Inventario: 12.123 preguntas válidas, 4.855 revisiones individuales, cero errores y 7.268 preguntas todavía sin revisar individualmente. La publicación se verificará tras el workflow.
 
+Publicación del lote 907 verificada tras el workflow [43035698298](https://github.com/itic-academy/simulador-tic/actions/runs/43035698298), completado correctamente para `6dcc677`. GitHub Pages devuelve HTTP 200 para README, inventario y `cambios-lote-907.json`; el registro publicado contiene exactamente los IDs 4856–4860 y el inventario publicado confirma 4.855 revisadas y 7.268 todavía sin revisión individual.
+
 ## Lote 906 — 11 de noviembre de 2026
 
 IDs 4851–4855 se revisaron individualmente; originales y versiones revisadas quedan en [cambios-lote-906.json](cambios-lote-906.json). Se separa una metodología ágil de un Sprint; se contrasta el principio de autoorganización con jerarquía top-down; se reemplaza una afirmación imprecisa sobre estimaciones en ciclos predictivos; se precisa el criterio de cohesión/acoplamiento y se diferencia tamaño funcional de coste.
