@@ -18,6 +18,8 @@ Fuentes primarias: [Haskell 98 Report](https://www.haskell.org/onlinereport/intr
 
 `node revision/revisar-lote-908.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados. Inventario: 12.123 preguntas válidas, 4.860 revisiones individuales, cero errores y 7.263 preguntas todavía sin revisar individualmente. La publicación se verificará tras el workflow.
 
+Publicación del lote 908 verificada tras el workflow [43037672312](https://github.com/itic-academy/simulador-tic/actions/runs/43037672312), completado correctamente para `a06a9aa`. GitHub Pages devuelve HTTP 200 para README, inventario y `cambios-lote-908.json`; el registro publicado contiene exactamente los IDs 4861–4865 y el inventario publicado confirma 4.860 revisadas y 7.263 todavía sin revisión individual.
+
 ## Lote 907 — 11 de noviembre de 2026
 
 IDs 4856–4860 se revisaron individualmente; se conservan originales y cambios en [cambios-lote-907.json](cambios-lote-907.json). Se identifica una tarea concreta de MÉTRICA; se acota el enfoque incremental a alcance priorizable y entregas sucesivas, sin presentarlo como solución mágica a una restricción inviable; se define fan-out por sus llamadas directas; se verifica la función de TestLink; y se usa la definición vigente de eficacia en ISO 9241-11.
