@@ -261780,71 +261780,294 @@
       "id": 5126,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si un programa se distribuye con licencia GPL, la empresa que lo modifica puede:",
+      "texto": "Una empresa modifica un programa distribuido bajo la GNU GPL y distribuye a terceros una obra derivada cubierta por esa licencia. ¿Qué puede hacer?",
       "opciones": [
-        "No puede venderlo",
-        "Integrarlo en otro SW y venderlo como propietario",
-        "Venderlo a otra empresa como software libre",
-        "Venderlo a otra empresa como software propietario"
+        "Distribuirla, pero nunca cobrar por las copias.",
+        "Integrarla y redistribuir la obra derivada como propietaria, sin aplicar las condiciones de la GPL.",
+        "Vender copias de la obra derivada cumpliendo la GPL, incluidos los derechos de redistribución y las obligaciones de código fuente aplicables.",
+        "Redistribuirla como software propietario si entrega el binario sin el código fuente."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La pregunta se delimita a redistribuir una modificación. La GPL permite comercializarla, pero no relicenciar como propietaria la obra derivada cubierta: al distribuirla se aplican las condiciones de copyleft y de entrega del código fuente correspondiente. Si solo se modifica/usa internamente, la obligación de publicar cambios no se activa por ese mero hecho.",
+      "clasificacion": {
+        "A1": [
+          "A1-69"
+        ],
+        "A2": [
+          "A2-II-14"
+        ],
+        "bloque_academia": "No se ha confirmado en la búsqueda accesible de Drive un bloque Academy con un tratamiento específico de GNU GPL/GPLv3.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular sin correspondencia Academy directa confirmada; clasificación contrastada con A1-69 y A2-II.14."
+      },
+      "etiquetas": [
+        "software libre",
+        "GNU GPL",
+        "copyleft",
+        "redistribución",
+        "licencias"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/licenses/gpl-faq.en.html",
+            "referencia": "GNU/FSF, GPL FAQ: permite vender comercialmente copias modificadas; si se redistribuye una obra derivada bajo GPL, se deben cumplir sus condiciones y ofrecer el código fuente correspondiente a los destinatarios."
+          },
+          {
+            "url": "https://www.gnu.org/licenses/gpl-3.0.html",
+            "referencia": "GNU General Public License v3.0, §§4–6: permite propagar copias bajo las condiciones de la licencia y define obligaciones para distribuir versiones modificadas."
+          },
+          {
+            "url": "https://www.gnu.org/philosophy/free-sw.en.html",
+            "referencia": "GNU/FSF, Free Software Definition: software libre puede usarse, estudiarse, modificarse y redistribuirse; libre no significa necesariamente gratuito."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 69: software de código abierto, software libre y conceptos base."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.14: software libre/propietario y tipos de licencias."
+          }
+        ],
+        "observaciones": "La pregunta se delimita a redistribuir una modificación. La GPL permite comercializarla, pero no relicenciar como propietaria la obra derivada cubierta: al distribuirla se aplican las condiciones de copyleft y de entrega del código fuente correspondiente. Si solo se modifica/usa internamente, la obligación de publicar cambios no se activa por ese mero hecho."
+      }
     },
     {
       "id": 5127,
       "bloque": 0,
       "tema": 0,
-      "texto": "La API JDBC se utiliza:",
+      "texto": "¿Qué afirmación describe correctamente la API JDBC de Java?",
       "opciones": [
-        "Para efectuar consultas, actualizaciones de la base de datos que tengan los drivers adecuados. También se pueden utilizar procedimientos almacenados y control de transacciones, prácticamente todas las funciones que soporta un SGBD relacional.",
-        "La API JDBC sólo incorpora unos drivers que soportan las funciones de un SGBD relacional.",
-        "Para efectuar consultas y actualizaciones del SGBD relacional. El control de transacciones y las llamadas a procedimientos almacenados no están soportados.",
-        "Para efectuar consultas, actualizaciones de la base de datos que tengan los drivers adecuados y algunas de las funciones que soporta un SGBD relacional."
+        "Define interfaces para acceder a fuentes de datos, ejecutar SQL y gestionar transacciones; también permite invocar procedimientos almacenados cuando el SGBD y su driver lo soportan.",
+        "Se limita a cargar drivers y no permite enviar consultas o actualizaciones SQL.",
+        "Permite consultas y actualizaciones, pero la API no incluye mecanismos para confirmar o deshacer transacciones.",
+        "Garantiza que todos los drivers implementen todas las funciones específicas de cualquier SGBD relacional."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "JDBC no se reduce a proporcionar controladores: define una API Java común para conexión y ejecución de SQL, incluye commit/rollback mediante Connection y llamadas de procedimientos mediante CallableStatement. Que una función SQL concreta esté disponible depende del gestor y del driver, por lo que se evita afirmar que expone todas las funciones de cualquier SGBD.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1, cubre SQL, interoperabilidad y mecanismos de acceso a bases; bloque 30 trata Java/Jakarta EE.",
+        "estado": "revisada",
+        "nota": "Cotejo contextual de JDBC con los bloques 29 y 30; las capacidades de la API se verifican en documentación Java SE oficial."
+      },
+      "etiquetas": [
+        "Java",
+        "JDBC",
+        "API",
+        "consultas SQL",
+        "transacciones",
+        "procedimientos almacenados"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/module-summary.html",
+            "referencia": "Java SE 25, módulo java.sql: define JDBC como API Java para acceder y procesar datos almacenados en fuentes de datos, normalmente bases relacionales."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html",
+            "referencia": "Java SE 25, java.sql.Connection: documenta la conexión, auto-commit, commit, rollback, capacidades de base de datos y prepareCall."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/CallableStatement.html",
+            "referencia": "Java SE 25, java.sql.CallableStatement: define la interfaz para invocar procedimientos almacenados; el soporte concreto depende del gestor y del driver."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 64: modelo relacional, SQL e interoperabilidad entre gestores."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.5: SGBD relacionales, SQL e interoperabilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 (2026.1): bases de datos y acceso/interoperabilidad desde JDBC, ADO.NET y ORM; cotejo curricular del área."
+          }
+        ],
+        "observaciones": "JDBC no se reduce a proporcionar controladores: define una API Java común para conexión y ejecución de SQL, incluye commit/rollback mediante Connection y llamadas de procedimientos mediante CallableStatement. Que una función SQL concreta esté disponible depende del gestor y del driver, por lo que se evita afirmar que expone todas las funciones de cualquier SGBD."
+      }
     },
     {
       "id": 5128,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale cuál de los siguientes NO es un tipo de servicio de red de obligado establecimiento por la Directiva 2007/2/CE por la que se establece una infraestructura de información espacial en la Comunidad Europea (INSPIRE):",
+      "texto": "Según el artículo 11 de la Directiva 2007/2/CE (INSPIRE), ¿cuál de estos NO es uno de los cinco tipos de servicios de red enumerados?",
       "opciones": [
         "Servicios de visualización.",
         "Servicios de actualización.",
         "Servicios de descarga.",
-        "Servicios de localización."
+        "Servicios de localización o descubrimiento."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La Directiva enumera cinco servicios de red: localización/descubrimiento, visualización, descarga, transformación e invocación de servicios de datos espaciales. «Actualización» no es un tipo de servicio del artículo 11; la obligación de mantener datos actualizados es una cuestión distinta.",
+      "clasificacion": {
+        "A1": [
+          "A1-74"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, Tema 074 «SIG», accesible en Drive, cubre conceptos y funcionalidad de sistemas de información geográfica.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo del ámbito geoespacial; la lista normativa exacta de servicios se toma de la Directiva INSPIRE, no de Academy."
+      },
+      "etiquetas": [
+        "INSPIRE",
+        "Directiva 2007/2/CE",
+        "servicios de red",
+        "datos espaciales",
+        "descubrimiento",
+        "visualización",
+        "descarga",
+        "transformación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX%3A32007L0002",
+            "referencia": "EUR-Lex, Directiva 2007/2/CE, art. 11: establece servicios de localización (discovery), visualización, descarga, transformación e invocación de servicios de datos espaciales."
+          },
+          {
+            "url": "https://knowledge-base.inspire.ec.europa.eu/inspire-network-services-update_en",
+            "referencia": "Comisión Europea, INSPIRE Network Services: resume los cinco tipos del art. 11: descubrimiento, visualización, descarga, transformación e invocación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 74: sistemas de información geográfica y funcionalidad básica."
+          },
+          {
+            "url": "https://docs.google.com/document/d/13sxQ3m8eNgg-dLxtbUHY9AzXaEnJtyyN/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, Tema 074 «SIG», materiales accesibles en Drive; cotejo directo del ámbito geoespacial. El tipo jurídico de servicio se contrasta con la Directiva INSPIRE."
+          }
+        ],
+        "observaciones": "La Directiva enumera cinco servicios de red: localización/descubrimiento, visualización, descarga, transformación e invocación de servicios de datos espaciales. «Actualización» no es un tipo de servicio del artículo 11; la obligación de mantener datos actualizados es una cuestión distinta."
+      }
     },
     {
       "id": 5129,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique una característica del software libre:",
+      "texto": "¿Qué conjunto de afirmaciones recoge las libertades esenciales del software libre?",
       "opciones": [
-        "Los usuarios pueden usar el software como deseen, para lo que deseen y en tantos ordenadores como deseen",
-        "Los usuarios pueden redistribuir el software a otros usuarios",
-        "Los usuarios deben tener acceso al código fuente, escrito generalmente en un lenguaje de alto nivel",
-        "Todas las respuestas son correctas"
+        "Ejecutar el programa para cualquier fin.",
+        "Redistribuir copias y distribuir versiones modificadas.",
+        "Estudiar cómo funciona y modificarlo, para lo que es condición previa el acceso al código fuente.",
+        "Todas las respuestas anteriores."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La opción múltiple queda verdadera sin usar como requisito que todo código fuente esté escrito en un lenguaje de alto nivel. El software libre garantiza las libertades de uso, estudio/modificación y redistribución, incluida la versión modificada; no exige gratuidad.",
+      "clasificacion": {
+        "A1": [
+          "A1-69"
+        ],
+        "A2": [
+          "A2-II-14"
+        ],
+        "bloque_academia": "No se ha confirmado un material Academy accesible que desarrolle las cuatro libertades de GNU/FSF; se coteja con el temario oficial de software libre.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular del área A1-69/A2-II.14, sin atribuir a Academy el contenido de la definición GNU."
+      },
+      "etiquetas": [
+        "software libre",
+        "libertades del usuario",
+        "código fuente",
+        "redistribución",
+        "licencias"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/philosophy/free-sw.en.html",
+            "referencia": "GNU/FSF, Free Software Definition: enumera las libertades de ejecutar el programa para cualquier fin, estudiar/modificar con acceso al código fuente y redistribuir copias exactas o modificadas."
+          },
+          {
+            "url": "https://www.gnu.org/philosophy/selling.en.html",
+            "referencia": "GNU/FSF, Selling Free Software: vender software libre es compatible con las libertades; «free» se refiere a libertad y no a precio cero."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 69: software libre y software de código abierto."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.14: software libre, propietario y licencias."
+          }
+        ],
+        "observaciones": "La opción múltiple queda verdadera sin usar como requisito que todo código fuente esté escrito en un lenguaje de alto nivel. El software libre garantiza las libertades de uso, estudio/modificación y redistribución, incluida la versión modificada; no exige gratuidad."
+      }
     },
     {
       "id": 5130,
       "bloque": 0,
       "tema": 0,
-      "texto": "La cláusula INSERT para inserción de datos:",
+      "texto": "¿Cuál de estas afirmaciones sobre la sentencia SQL INSERT es correcta?",
       "opciones": [
-        "Tan sólo permite la inserción de una tupla cada vez.",
-        "Puede permitir la inserción de más de una tupla al mismo tiempo.",
-        "No permite insertar valores nulos.",
-        "Obliga a que la inserción de los valores sea en el orden en que se creó la tabla."
+        "Una sentencia INSERT solo puede añadir una fila.",
+        "Una sentencia INSERT puede añadir varias filas mediante una forma multirow VALUES o insertando el resultado de una consulta, si el SGBD admite esa sintaxis.",
+        "INSERT no puede asignar NULL aunque la columna lo permita.",
+        "Los valores deben darse siempre en el orden físico de creación de las columnas, aunque se indique una lista de nombres de columnas."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Una sentencia INSERT puede introducir varias filas, por ejemplo mediante VALUES con varias tuplas o INSERT ... SELECT, según la forma admitida por el SGBD. No se exige siempre incluir todas las columnas ni respetar el orden físico si se declara explícitamente la lista de columnas; la nulabilidad depende del esquema y de los valores por defecto.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1: lenguaje SQL, DML y modelo relacional.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo de SQL/DML; los ejemplos de sintaxis se verifican en documentación de los SGBD."
+      },
+      "etiquetas": [
+        "SQL",
+        "INSERT",
+        "multirow VALUES",
+        "INSERT SELECT",
+        "DML"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.postgresql.org/docs/18/dml-insert.html",
+            "referencia": "PostgreSQL 18, §6.1: una sentencia INSERT puede insertar múltiples filas con una lista multirow VALUES o con el resultado de una consulta SELECT."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/INSERT.html",
+            "referencia": "Oracle Database 26 SQL Reference, INSERT: documenta inserciones con subconsulta y las formas de inserción de una o varias filas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 64: lenguaje SQL y modelo relacional."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.5: lenguaje SQL para SGBD relacionales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 (2026.1): SQL, sentencias DML y bases de datos relacionales; cotejo curricular directo."
+          }
+        ],
+        "observaciones": "Una sentencia INSERT puede introducir varias filas, por ejemplo mediante VALUES con varias tuplas o INSERT ... SELECT, según la forma admitida por el SGBD. No se exige siempre incluir todas las columnas ni respetar el orden físico si se declara explícitamente la lista de columnas; la nulabilidad depende del esquema y de los valores por defecto."
+      }
     },
     {
       "id": 5131,
