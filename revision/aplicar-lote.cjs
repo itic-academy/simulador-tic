@@ -7,7 +7,7 @@ module.exports=function({numero,fecha,records,edits={}}){
  const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
  for(const [id,a1,a2,etiquetas,url,referencia,note,state] of records){
   const q=data.preguntas.find(q=>q.id===id);assert.ok(q&&!q.revision,`Pregunta ${id} ausente o ya revisada`);
-  const original=structuredClone(q),{opcion,...edit}=edits[id]||{};Object.assign(q,edit);if(opcion)q.opciones[opcion[0]]=opcion[1];
+  const original=structuredClone(q),{opcion,opciones,...edit}=edits[id]||{};Object.assign(q,edit);if(opciones)q.opciones=opciones;if(opcion)q.opciones[opcion[0]]=opcion[1];
   q.clasificacion={A1:a1.map(n=>`A1-${n}`),A2:a2.map(n=>`A2-${n}`),bloque_academia:null,estado:'revisada',nota:'Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa.'};
   for(const t of [...q.clasificacion.A1,...q.clasificacion.A2])assert.ok(topics.has(t),t);
   q.etiquetas=etiquetas;const fuentes=!url?[]:(Array.isArray(url)?url:[{url,referencia}]);q.revision={estado:state||(edits[id]?'corregida':'vigente'),fecha,fuentes,observaciones:note};if(url)q.comentarios=note;
