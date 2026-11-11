@@ -20,6 +20,8 @@ Fuentes primarias: Oracle, [J2EE 1.4 Tutorial](https://docs.oracle.com/javaee/1.
 
 `node revision/revisar-lote-923.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas, 4.935 revisadas individualmente (848 vigentes, 3.633 corregidas y 367 históricas), 87 pendientes documentadas y 7.188 sin revisión individual; cero errores estructurales. Publicación pendiente de verificación.
 
+**Despliegue del lote 923 verificado:** commit de contenido [`7cef167`](https://github.com/itic-academy/simulador-tic/commit/7cef167db31b7ae42ffaf1ac98b8d2edd0d52302), workflow [Deploy GitHub Pages, run 43067187687](https://github.com/itic-academy/simulador-tic/actions/runs/43067187687), finalizado con `success`. El README y el inventario publicados responden HTTP 200; se descargó `preguntas_preparatic.json` desde Pages (12.123 preguntas) y se confirmó que los IDs 4936–4940 están en estado `corregida` con las claves 1, 0, 1, 2 y 2; el inventario servido suma 4.935 revisadas.
+
 ## Lote 922 — 11 de noviembre de 2026
 
 IDs 4931–4935 revisados individualmente con legislación BOE vigente, documentación oficial de Hibernate, GNU/FSF, UIT-T y NIST; se cotejaron las convocatorias A1/A2 y materiales de ITIC Academy en Drive. Se conservan en [cambios-lote-922.json](cambios-lote-922.json) los textos y claves originales y la versión actualizada, con referencias y explicaciones. Se corrigieron los cinco reactivos; se limitó explícitamente el supuesto jurídico de contratación centralizada y se retiraron generalizaciones obsoletas sobre Hibernate e IDS.
