@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 879 (IDs 4716–4720). Acumulado: 4.715 preguntas examinadas individualmente; 4.630 verificadas (836 vigentes, 3.441 corregidas y 353 históricas); 85 pendientes documentadas (37 de fuente y 48 de ambigüedad); 7.408 sin revisar individualmente. Hay 4.688 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 880 (IDs 4721–4725). Acumulado: 4.720 preguntas examinadas individualmente; 4.634 verificadas (836 vigentes, 3.445 corregidas y 353 históricas); 86 pendientes documentadas (38 de fuente y 48 de ambigüedad); 7.403 sin revisar individualmente. Hay 4.689 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 880 — 11 de noviembre de 2026
+
+IDs 4721–4725 revisados individualmente; se conservan el texto original y los cambios en [cambios-lote-880.json](cambios-lote-880.json). Se distingue Redis de los CMS; se deja expresamente pendiente el porcentaje de clases clave atribuido a Lorenz y Kidd, al no haberse cotejado su fuente primaria; se acota BMC Remedy como suite histórica ITSM; se corrige la regla general sobre flujos en DFD; y se reforma la pregunta de prototipado para ajustarla a la descripción oficial de MÉTRICA v3.
+
+- **4721 — CMS frente a Redis:** se mantiene Redis como respuesta: es un almacén de datos en memoria que también puede persistir y servir de base de datos, caché o broker, pero no es un CMS. Drupal core usa PHP; Liferay, Alfresco Content Services y OpenCms se basan en Java. Las fuentes no se usan para hacer afirmaciones sobre el lenguaje de extensiones de cada plataforma.
+- **4722 — métricas OO/Staffing Size:** pendiente de fuente primaria. Una fuente secundaria reproduce la estimación de Lorenz y Kidd de que las clases clave serían el 20–40% de las clases de un sistema OO típico, pero no se localizó el trabajo original. Se conserva el enunciado y la clave histórica sin certificarlos; el porcentaje no se presenta como regla de calidad.
+- **4723 — BMC Remedy:** se precisa como producto histórico de gestión de servicios ITSM con módulos de incidentes, cambios y activos e integración con CMDB. La opción de gestión de configuración es la más próxima del original, pero se reescribe para no reducir la suite a un propósito exclusivo. BMC documenta el cambio de denominación posterior a BMC Helix ITSM.
+- **4724 — DFD:** se identifica como falsa la afirmación de que un flujo puede unir directamente cualquier pareja de elementos. Bajo la convención DFD delimitada, los flujos se conectan a procesos y no enlazan directamente entidades externas entre sí, almacenes entre sí ni entidades con almacenes.
+- **4725 — prototipado MÉTRICA v3:** se pregunta por el uso del prototipo de interfaz en el análisis, evitando atribuir a la metodología una taxonomía rígida entre «maqueta» y «prototipo funcional». El manual oficial describe representaciones de interfaz para comprender y validar la interacción prevista.
+
+Correspondencia con los programas oficiales: A1, temas 88, 90, 94, 95, 104 y 106; A2, II.16, III.2, III.3 y IV.4. Cotejo con ITIC Academy 2026: bloque 40 (gestión documental y CMS), bloque 38 (análisis/diseño y modelado), bloque 41 (ITIL/COBIT) y tema 093 (MÉTRICA v3). Academy y convocatorias ubican curricularmente los contenidos; la fuente técnica primaria determina la clave.
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.720 revisiones individuales, cero errores y 7.403 preguntas que aún coinciden con el banco original sin revisión individual.
 
 ## Lote 879 — 11 de noviembre de 2026
 
