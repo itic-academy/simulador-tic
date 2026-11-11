@@ -18,6 +18,8 @@ Fuentes técnicas: [Boehm, “A Spiral Model of Software Development and Enhance
 
 `node revision/revisar-lote-898.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.810 revisiones individuales, cero errores y 7.313 preguntas todavía sin revisión individual.
 
+Publicación del lote 898 verificada tras el workflow [43022175128](https://github.com/itic-academy/simulador-tic/actions/runs/43022175128), completado con éxito para el commit `67893511a4a46823fa89b1bba38576368fb7e4ed`. En GitHub Pages, README, cambios-lote-898.json e inventario.json responden HTTP 200; el registro público contiene exactamente los IDs 4811–4815 y el inventario publicado indica 12.123 preguntas, 4.810 revisiones y 7.313 sin revisión individual.
+
 ## Lote 897 — 11 de noviembre de 2026
 
 IDs 4806–4810 se revisaron individualmente y quedaron trazados, con sus originales íntegros, en [cambios-lote-897.json](cambios-lote-897.json). Se fecha la taxonomía de recursos TIC en COBIT 3.ª edición; se reemplaza la definición reductiva de DevOps; se formula de forma unívoca una regla de consistencia de DFD; se acota la asignación de áreas de proceso a CMMI-DEV v1.3; y se actualiza el vocabulario de organización a ISO 9000:2026.
