@@ -18,6 +18,8 @@ Fuentes: [WHATWG, HTML Living Standard](https://html.spec.whatwg.org/), procesam
 
 `node revision/revisar-lote-900.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.820 revisiones individuales, cero errores y 7.303 preguntas todavía sin revisión individual.
 
+Publicación del lote 900 verificada tras el workflow [43024968974](https://github.com/itic-academy/simulador-tic/actions/runs/43024968974), completado con éxito para el commit `1711fb60de53bc25b48f50fccc53af95444abb98`. En GitHub Pages, README, cambios-lote-900.json e inventario.json responden HTTP 200; el registro público contiene exactamente los IDs 4821–4825 y el inventario indica 12.123 preguntas, 4.820 revisiones y 7.303 sin revisión individual.
+
 ## Lote 899 — 11 de noviembre de 2026
 
 IDs 4816–4820 se revisaron individualmente y quedaron trazados, con sus originales íntegros, en [cambios-lote-899.json](cambios-lote-899.json). Se precisa el papel de analista y usuarios expertos en MÉTRICA v3; se separan los diagramas UML por finalidad; se define actor como rol; se reescribe la pregunta de IxD como una definición contrastable; y se verifica la clasificación GoF de Composite.
