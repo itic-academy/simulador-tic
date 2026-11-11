@@ -244627,71 +244627,274 @@
       "id": 4831,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dada una empresa en la que se quiere almacenar información de sus empleados, departamentos y proyectos en los que colaboran sus empleados, las entidades que resultan son:",
+      "texto": "En el modelo conceptual de datos de una aplicación para una única empresa, se deben registrar empleados, departamentos y proyectos en los que colaboran los empleados. ¿Qué conjuntos de entidades son necesarios para representar esos datos?",
       "opciones": [
-        "Empleados, departamentos y empresa.",
-        "Empresa, proyectos, empleados y departamentos.",
-        "Empleados, proyectos y departamentos.",
-        "Empleados y departamentos."
+        "Empleados, departamentos y empresa; los proyectos se guardan como atributo del empleado.",
+        "Empresa, proyectos, empleados y departamentos; la empresa se registra como entidad aunque sea el ámbito fijo del sistema.",
+        "Empleados, proyectos y departamentos; las colaboraciones se representan mediante relaciones entre entidades.",
+        "Solo empleados y departamentos; un proyecto no puede modelarse como entidad."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Respuesta C. Interpretando una sola empresa como ámbito fijo del sistema, las entidades que el enunciado pide mantener como conjuntos de registros son Empleados, Departamentos y Proyectos. “Empresa” es el contexto común, no una entidad variable que el caso solicite distinguir; las colaboraciones se representan como relaciones entre empleados y proyectos. Se explicita este supuesto porque un sistema multicompañía sí podría modelar Empresa como entidad. Cotejo curricular: bloque 38 — análisis, diseño y construcción; apartado de modelo de datos/MÉTRICA, entidades y relaciones. La academia se emplea como mapa curricular, no como autoridad técnica.",
+      "clasificacion": {
+        "A1": [
+          "A1-89"
+        ],
+        "A2": [
+          "A2-III-4"
+        ],
+        "bloque_academia": "ITIC Academy 2026.1, bloque 38 — análisis, diseño y construcción; apartado de modelo de datos/MÉTRICA, entidades y relaciones. El cotejo ubica el contenido, no sustituye fuentes técnicas.",
+        "estado": "revisada",
+        "nota": "corregida. Cotejo curricular: bloque 38 — análisis, diseño y construcción; apartado de modelo de datos/MÉTRICA, entidades y relaciones. La academia se emplea como mapa curricular, no como autoridad técnica."
+      },
+      "etiquetas": [
+        "modelo entidad-relación",
+        "entidades",
+        "departamentos",
+        "empleados",
+        "proyectos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Aad870327-56b7-4dfa-af15-e62222f45b90/METRICA_V3_Analisis_del_Sistema_de_Informacion.pdf",
+            "referencia": "MÉTRICA v3, ASI 1.1: obtiene un modelo conceptual de datos identificando entidades y relaciones del sistema de información; se limita el caso a una sola empresa como contexto fijo."
+          },
+          {
+            "url": "https://www.irs.gov/irm/part2/irm_02-005-013",
+            "referencia": "IRS, técnicas de diseño de bases de datos: el modelo entidad-relación describe datos como entidades, atributos y relaciones y evita representar dos veces la misma información."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 89: modelado de dominio y modelo entidad-relación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema III.4: modelado de datos y diseño de bases de datos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026.1, bloque 38 — análisis, diseño y construcción; apartado de modelo de datos/MÉTRICA, entidades y relaciones. Cotejo de cobertura curricular; no se usa para validar la respuesta."
+          }
+        ],
+        "observaciones": "Respuesta C. Interpretando una sola empresa como ámbito fijo del sistema, las entidades que el enunciado pide mantener como conjuntos de registros son Empleados, Departamentos y Proyectos. “Empresa” es el contexto común, no una entidad variable que el caso solicite distinguir; las colaboraciones se representan como relaciones entre empleados y proyectos. Se explicita este supuesto porque un sistema multicompañía sí podría modelar Empresa como entidad. Cotejo curricular: bloque 38 — análisis, diseño y construcción; apartado de modelo de datos/MÉTRICA, entidades y relaciones. La academia se emplea como mapa curricular, no como autoridad técnica."
+      }
     },
     {
       "id": 4832,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es la definición de un incidente según ITIL?",
+      "texto": "Según ITIL 4, ¿qué se entiende por incidente?",
       "opciones": [
-        "Un problema que se ha analizado, pero no se ha resuelto",
-        "Una interrupción no planificada de un servicio o una reducción en la calidad de un servicio",
-        "Una causa, o causa potencial, de uno o más incidentes",
-        "La adición, modificación o eliminación de cualquier cosa que pueda tener un efecto directo o indirecto en los servicios"
+        "Un problema analizado, pero todavía no resuelto.",
+        "Una interrupción no planificada de un servicio o una reducción de la calidad de un servicio.",
+        "Una causa, o causa potencial, de uno o más incidentes.",
+        "La adición, modificación o eliminación de algo que puede afectar directa o indirectamente a los servicios."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Respuesta B. En ITIL 4, un incidente es una interrupción no planificada de un servicio o una reducción de su calidad. Un problema es una causa —o causa potencial— de uno o más incidentes; cambio es la adición, modificación o eliminación que puede afectar a servicios. Se incluye versión para fijar el vocabulario de referencia. Cotejo curricular: bloque 41 — ITIL y COBIT; gestión de servicios e incidencias. La academia se emplea como mapa curricular, no como autoridad técnica.",
+      "clasificacion": {
+        "A1": [
+          "A1-106"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy 2026.1, bloque 41 — ITIL y COBIT; gestión de servicios e incidencias. El cotejo ubica el contenido, no sustituye fuentes técnicas.",
+        "estado": "revisada",
+        "nota": "corregida. Cotejo curricular: bloque 41 — ITIL y COBIT; gestión de servicios e incidencias. La academia se emplea como mapa curricular, no como autoridad técnica."
+      },
+      "etiquetas": [
+        "ITIL 4",
+        "incidente",
+        "interrupción no planificada",
+        "calidad del servicio"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://www.peoplecert.org/-/media/peoplecert/images/landing-pages/devops-launch-indian/peoplecert-devops-leadership.pdf",
+            "referencia": "PeopleCert, glosario ITIL: define incidente como interrupción no planificada del servicio o reducción de su calidad; se acota expresamente la pregunta a ITIL 4."
+          },
+          {
+            "url": "https://www.axelos.com/certifications/itil-service-management/itil-practices-manager/itil-4-specialist-monitor-support-and-fulfil/itil-4-practitioner-incident-management/",
+            "referencia": "PeopleCert/AXELOS, práctica de gestión de incidentes ITIL 4: objetivo de minimizar impacto negativo restaurando la operación normal del servicio con rapidez."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 106: gestión de servicios e incidencias, bases conceptuales de ITIL."
+          },
+          {
+            "url": "https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026.1, bloque 41 — ITIL y COBIT; gestión de servicios e incidencias. Cotejo de cobertura curricular; no se usa para validar la respuesta."
+          }
+        ],
+        "observaciones": "Respuesta B. En ITIL 4, un incidente es una interrupción no planificada de un servicio o una reducción de su calidad. Un problema es una causa —o causa potencial— de uno o más incidentes; cambio es la adición, modificación o eliminación que puede afectar a servicios. Se incluye versión para fijar el vocabulario de referencia. Cotejo curricular: bloque 41 — ITIL y COBIT; gestión de servicios e incidencias. La academia se emplea como mapa curricular, no como autoridad técnica."
+      }
     },
     {
       "id": 4833,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿A qué perfil pertenece el Responsable de Calidad según MÉTRICA v3?",
+      "texto": "¿En qué perfil de participantes de MÉTRICA v3 se incluye al Responsable de Calidad?",
       "opciones": [
         "Perfil Jefe de Proyecto.",
         "Perfil Consultor.",
         "Perfil Analista.",
-        "Perfil Programador."
+        "Perfil Programador/Desarrollador."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Respuesta A. MÉTRICA v3 agrupa al Responsable de Calidad en el perfil Jefe de Proyecto, junto al propio jefe y a los responsables de implantación, mantenimiento, operación, sistemas y seguridad. El perfil clasifica participantes; no significa que el Responsable de Calidad sustituya al jefe de proyecto. Cotejo curricular: bloque 39 — calidad y mantenimiento; MÉTRICA v3 y perfiles para aseguramiento de calidad. La academia se emplea como mapa curricular, no como autoridad técnica.",
+      "clasificacion": {
+        "A1": [
+          "A1-95"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy 2026.1, bloque 39 — calidad y mantenimiento; MÉTRICA v3 y perfiles para aseguramiento de calidad. El cotejo ubica el contenido, no sustituye fuentes técnicas.",
+        "estado": "revisada",
+        "nota": "corregida. Cotejo curricular: bloque 39 — calidad y mantenimiento; MÉTRICA v3 y perfiles para aseguramiento de calidad. La academia se emplea como mapa curricular, no como autoridad técnica."
+      },
+      "etiquetas": [
+        "MÉTRICA v3",
+        "perfil jefe de proyecto",
+        "responsable de calidad",
+        "aseguramiento de calidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ad601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf",
+            "referencia": "MÉTRICA v3, Participantes, “Perfil Jefe de Proyecto”: enumera Jefe de Proyecto, responsables de Implantación, Mantenimiento, Operación, Sistemas, Seguridad y Calidad."
+          },
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A6838aec9-835a-4562-bdc3-87a96fd9c743/METRICA_V3_Aseguramiento_de_la_Calidad.pdf",
+            "referencia": "MÉTRICA v3, Aseguramiento de la Calidad: describe la participación del Grupo de Aseguramiento de la Calidad y el apoyo del Responsable de Calidad dentro de la interfaz CAL."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 95: metodología MÉTRICA y sus perfiles/participantes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026.1, bloque 39 — calidad y mantenimiento; MÉTRICA v3 y perfiles para aseguramiento de calidad. Cotejo de cobertura curricular; no se usa para validar la respuesta."
+          }
+        ],
+        "observaciones": "Respuesta A. MÉTRICA v3 agrupa al Responsable de Calidad en el perfil Jefe de Proyecto, junto al propio jefe y a los responsables de implantación, mantenimiento, operación, sistemas y seguridad. El perfil clasifica participantes; no significa que el Responsable de Calidad sustituya al jefe de proyecto. Cotejo curricular: bloque 39 — calidad y mantenimiento; MÉTRICA v3 y perfiles para aseguramiento de calidad. La academia se emplea como mapa curricular, no como autoridad técnica."
+      }
     },
     {
       "id": 4834,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuándo debe aplicarse un plan de garantía de calidad?",
+      "texto": "Según MÉTRICA v3, ¿cómo se determina durante el Estudio de Viabilidad la necesidad de un plan específico de aseguramiento de calidad?",
       "opciones": [
-        "En casos de proyectos de gran envergadura",
-        "Cuando sea rentable económicamente",
-        "Cuando el cliente así lo solicite",
-        "Cuando el coste de no aplicarlo sea mayor que el de aplicarlo"
+        "Se exige únicamente en proyectos de gran envergadura.",
+        "Se establece solo cuando el cliente lo solicita expresamente.",
+        "Se implanta siempre con la misma intensidad, sin atender a riesgos ni alternativas.",
+        "Se estudian las alternativas y sus propiedades de calidad, riesgos y plan de trabajo; la intensidad se decide en función de ese análisis y el coste del plan se incorpora a la valoración de viabilidad."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Respuesta D. No existe una regla universal basada solo en tamaño, petición del cliente o comparación simplificada entre dos costes. En MÉTRICA v3, durante EVS-CAL se valora para cada alternativa la necesidad e intensidad del aseguramiento atendiendo al estudio, las propiedades de calidad, los riesgos y el enfoque del plan de trabajo; después se estima el coste del plan y se incorpora al análisis de viabilidad coste/beneficio. Cotejo curricular: bloque 39 — calidad y mantenimiento; aseguramiento de calidad, análisis de riesgos y planes de calidad. La academia se emplea como mapa curricular, no como autoridad técnica.",
+      "clasificacion": {
+        "A1": [
+          "A1-95",
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy 2026.1, bloque 39 — calidad y mantenimiento; aseguramiento de calidad, análisis de riesgos y planes de calidad. El cotejo ubica el contenido, no sustituye fuentes técnicas.",
+        "estado": "revisada",
+        "nota": "corregida. Cotejo curricular: bloque 39 — calidad y mantenimiento; aseguramiento de calidad, análisis de riesgos y planes de calidad. La academia se emplea como mapa curricular, no como autoridad técnica."
+      },
+      "etiquetas": [
+        "MÉTRICA v3",
+        "plan de aseguramiento de calidad",
+        "análisis de riesgos",
+        "coste-beneficio"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A6838aec9-835a-4562-bdc3-87a96fd9c743/METRICA_V3_Aseguramiento_de_la_Calidad.pdf",
+            "referencia": "MÉTRICA v3, Aseguramiento de la Calidad, EVS-CAL 2.1: la necesidad del plan se determina para cada alternativa teniendo en cuenta el análisis de riesgos, el enfoque del plan de trabajo y las propiedades de calidad. EVS-CAL 2.3 valora su coste mediante análisis coste/beneficio para determinar viabilidad económica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, temas 95 (MÉTRICA) y 98 (calidad/modelos de proceso, según el programa publicado)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema III.13: calidad del software y modelos, métricas, normas y estándares."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026.1, bloque 39 — calidad y mantenimiento; aseguramiento de calidad, análisis de riesgos y planes de calidad. Cotejo de cobertura curricular; no se usa para validar la respuesta."
+          }
+        ],
+        "observaciones": "Respuesta D. No existe una regla universal basada solo en tamaño, petición del cliente o comparación simplificada entre dos costes. En MÉTRICA v3, durante EVS-CAL se valora para cada alternativa la necesidad e intensidad del aseguramiento atendiendo al estudio, las propiedades de calidad, los riesgos y el enfoque del plan de trabajo; después se estima el coste del plan y se incorpora al análisis de viabilidad coste/beneficio. Cotejo curricular: bloque 39 — calidad y mantenimiento; aseguramiento de calidad, análisis de riesgos y planes de calidad. La academia se emplea como mapa curricular, no como autoridad técnica."
+      }
     },
     {
       "id": 4835,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la afirmación cierta sobre los prototipos...",
+      "texto": "Según MÉTRICA v3, ¿para qué se emplean técnicas interactivas como los prototipos durante el análisis del sistema?",
       "opciones": [
-        "Son un modelo a escala o facsímil de lo real que lleva a cabo la totalidad de las funciones necesarias del sistema final.",
-        "En la fase de diseño se utiliza para definir los requerimientos del usuario.",
-        "Se debe definir su objetivo a medida que se desarrolla.",
-        "Los prototipos de pantalla permiten evaluar la posición de información sobre la pantalla."
+        "Para entregar desde el inicio una réplica completa y funcional del sistema final.",
+        "Para sustituir la participación de los usuarios en la especificación de requisitos.",
+        "Para decidir el propósito del prototipo una vez finalizada su construcción.",
+        "Para que los usuarios se familiaricen con el sistema y colaboren en la definición y el perfeccionamiento de sus interfaces."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Respuesta D. En el análisis, MÉTRICA v3 utiliza técnicas interactivas como prototipos para que los usuarios se familiaricen con el sistema y colaboren en su construcción y perfeccionamiento. ASI 8 contempla prototipado para especificar formatos de pantalla y comportamiento interactivo. Un prototipo no tiene por qué implementar todas las funciones del sistema final ni definir su objetivo después de empezar a construirlo. Cotejo curricular: bloque 38 — análisis, diseño y construcción; MÉTRICA, requisitos, prototipado e interfaces. La academia se emplea como mapa curricular, no como autoridad técnica.",
+      "clasificacion": {
+        "A1": [
+          "A1-95"
+        ],
+        "A2": [
+          "A2-III-3"
+        ],
+        "bloque_academia": "ITIC Academy 2026.1, bloque 38 — análisis, diseño y construcción; MÉTRICA, requisitos, prototipado e interfaces. El cotejo ubica el contenido, no sustituye fuentes técnicas.",
+        "estado": "revisada",
+        "nota": "corregida. Cotejo curricular: bloque 38 — análisis, diseño y construcción; MÉTRICA, requisitos, prototipado e interfaces. La academia se emplea como mapa curricular, no como autoridad técnica."
+      },
+      "etiquetas": [
+        "MÉTRICA v3",
+        "prototipos",
+        "interfaz de usuario",
+        "elicitación de requisitos",
+        "usuarios"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Aad870327-56b7-4dfa-af15-e62222f45b90/METRICA_V3_Analisis_del_Sistema_de_Informacion.pdf",
+            "referencia": "MÉTRICA v3, Análisis del Sistema de Información: en ASI 8.3 el prototipado apoya la especificación de formatos de pantalla; ASI 8.4 contempla prototipo de interfaz interactiva. La introducción señala que estas técnicas facilitan que el usuario se familiarice y colabore en el perfeccionamiento del sistema."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 95: metodología MÉTRICA v3."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema III.3: estrategias de determinación de requisitos, incluidos los prototipos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026.1, bloque 38 — análisis, diseño y construcción; MÉTRICA, requisitos, prototipado e interfaces. Cotejo de cobertura curricular; no se usa para validar la respuesta."
+          }
+        ],
+        "observaciones": "Respuesta D. En el análisis, MÉTRICA v3 utiliza técnicas interactivas como prototipos para que los usuarios se familiaricen con el sistema y colaboren en su construcción y perfeccionamiento. ASI 8 contempla prototipado para especificar formatos de pantalla y comportamiento interactivo. Un prototipo no tiene por qué implementar todas las funciones del sistema final ni definir su objetivo después de empezar a construirlo. Cotejo curricular: bloque 38 — análisis, diseño y construcción; MÉTRICA, requisitos, prototipado e interfaces. La academia se emplea como mapa curricular, no como autoridad técnica."
+      }
     },
     {
       "id": 4836,
