@@ -1,6 +1,26 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 925 (IDs 4946–4950). Acumulado: 4.945 preguntas examinadas individualmente; 4.857 verificadas (848 vigentes, 3.640 corregidas y 369 históricas); 88 pendientes documentadas (38 de fuente y 50 de ambigüedad); 7.178 sin revisar individualmente. Hay 4.917 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Este recuento se recalculó sobre los registros históricos completos; los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 926 (IDs 4951–4955). Acumulado: 4.950 preguntas examinadas individualmente; 4.862 verificadas (849 vigentes, 3.644 corregidas y 369 históricas); 88 pendientes documentadas (38 de fuente y 50 de ambigüedad); 7.173 sin revisar individualmente. Hay 4.921 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Este recuento se recalculó sobre los registros históricos completos; los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 926 — 11 de noviembre de 2026
+
+IDs 4951–4955 revisados individualmente con el texto consolidado de la Constitución publicado por BOE y los Tratados UE publicados en EUR-Lex. Se cotejaron las convocatorias A1/A2 y los materiales de ITIC Academy en Drive. El registro [cambios-lote-926.json](cambios-lote-926.json) conserva los textos y claves originales, las versiones revisadas, explicaciones, fuentes y clasificación oficial; se precisaron cuatro enunciados y uno ya correcto se verificó sin cambiar su contenido.
+
+- **4951 — personalidad jurídica municipal:** el art. 140 CE dice que los municipios tienen personalidad jurídica plena; se distingue de la personalidad jurídica propia de la provincia en el art. 141. Respuesta C; A1-3. El programa A2 no tiene epígrafe específico de Administración local.
+- **4952 — principios de la Administración pública:** el art. 103.1 CE enumera eficacia, jerarquía, descentralización, desconcentración y coordinación. Respuesta D; A1-4 y A2-I.8.
+- **4953 — instituciones UE:** el art. 13 TUE enumera siete instituciones; el Consejo y el Consejo Europeo son distintos y el Banco Europeo de Inversiones no figura en esa lista. Respuesta B; A1-5; el bloque académico confirma que no aplica al programa A2.
+- **4954 — actos del TFUE:** el art. 288 atribuye al reglamento alcance general, obligatoriedad en todos sus elementos y aplicabilidad directa; se separa de la regla de destinatarios de una decisión y del efecto de una directiva. Respuesta C; A1-5/7; sin epígrafe A2 específico.
+- **4955 — decreto-ley:** se pregunta por el presupuesto habilitante del art. 86.1 CE, extraordinaria y urgente necesidad, sin confundirlo con los límites materiales del mismo apartado. Respuesta D; A1-1/7; sin epígrafe A2 específico.
+
+Convocatorias cotejadas: [A1 GSI 2025, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 1, 3, 4, 5 y 7; [A2 GSI AGE 2025, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), temas I.8 (régimen jurídico de las Administraciones Públicas) y sin correspondencia específica para municipios, instituciones UE, actos jurídicos UE o decreto-ley.
+
+ITIC Academy cotejada en Drive: [bloque 01, Constitución, organización del Estado y AGE](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), principios, municipio y organización local; [bloque 02, Unión Europea](https://drive.google.com/file/d/1KTz7CNz88u_4zyVLC2oYQBnmJRHIG7J7/view?usp=drivesdk), instituciones del art. 13 TUE y actos jurídicos del TFUE, e indica que el contenido no aplica al A2; [bloque 03, Actuación administrativa y Administración digital](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), principios administrativos, fuentes y disposiciones del Gobierno con fuerza de ley. Cotejo curricular separado de las fuentes jurídicas primarias.
+
+Fuentes primarias: [Constitución Española, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520), arts. 86, 103, 140 y 141; [Tratado de la Unión Europea, art. 13, EUR-Lex](https://eur-lex.europa.eu/eli/treaty/teu_2012/art_13/oj?locale=es); [Tratado de Funcionamiento de la UE, art. 288, EUR-Lex](https://eur-lex.europa.eu/eli/treaty/tfeu_2012/art_288/oj?locale=es).
+
+`node revision/revisar-lote-926.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas; 4.950 revisadas individualmente (849 vigentes, 3.644 corregidas, 369 históricas y 88 pendientes); 7.173 sin revisar individualmente; cero errores estructurales.
+
+**Despliegue del lote 926 verificado:** commit de contenido [`2114db9`](https://github.com/itic-academy/simulador-tic/commit/2114db9a6a4551f2ccbd94f1d463c5b755039029), workflow [Deploy GitHub Pages, run 43072839129](https://github.com/itic-academy/simulador-tic/actions/runs/43072839129), finalizado con `success`. GitHub Pages respondió HTTP 200 para el banco y el inventario publicados; ambos contienen 12.123 preguntas. El banco servido incluye los IDs 4951–4955 con las claves 2, 3, 1, 2 y 3; el inventario servido muestra 4.950 preguntas revisadas individualmente y 7.173 aún sin revisar.
 
 ## Lote 925 — 11 de noviembre de 2026
 
