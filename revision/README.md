@@ -20,6 +20,8 @@ Fuentes jurídicas primarias: [Ley 40/2015, texto consolidado BOE](https://www.b
 
 `node revision/revisar-lote-927.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas; 4.955 examinadas individualmente (852 vigentes, 3.646 corregidas, 369 históricas y 88 pendientes); 7.168 aún sin revisar individualmente; cero errores estructurales.
 
+**Publicación del lote 927 verificada:** Deploy GitHub Pages, [workflow 43074621045](https://github.com/itic-academy/simulador-tic/actions/runs/43074621045), finalizado con `success` para el commit `ff556783e3d7c6f39b3483af34ae715f7843b9e3`. El README y el banco/inventario servidos respondieron HTTP 200; banco e inventario contienen 12.123 preguntas. En el banco publicado constan los IDs 4956–4960 con claves 1, 2, 2, 2 y 1, y el inventario refleja 4.955 revisadas y 7.168 sin revisión individual.
+
 ## Lote 926 — 11 de noviembre de 2026
 
 IDs 4951–4955 revisados individualmente con el texto consolidado de la Constitución publicado por BOE y los Tratados UE publicados en EUR-Lex. Se cotejaron las convocatorias A1/A2 y los materiales de ITIC Academy en Drive. El registro [cambios-lote-926.json](cambios-lote-926.json) conserva los textos y claves originales, las versiones revisadas, explicaciones, fuentes y clasificación oficial; se precisaron cuatro enunciados y uno ya correcto se verificó sin cambiar su contenido.
