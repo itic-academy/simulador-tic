@@ -1,6 +1,24 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 950 (IDs 5071–5075). Acumulado: 5.070 preguntas examinadas individualmente; 4.976 verificadas (902 vigentes, 3.695 corregidas y 379 históricas); 94 pendientes documentadas (41 de fuente y 53 de ambigüedad); 7.053 sin revisar individualmente. Hay 5.044 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, calculadas comparando los campos textuales en los registros de lote. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 951 (IDs 5076–5080). Acumulado: 5.075 preguntas examinadas individualmente; 4.981 verificadas (903 vigentes, 3.699 corregidas y 379 históricas); 94 pendientes documentadas (41 de fuente y 53 de ambigüedad); 7.048 sin revisar individualmente. Hay 5.049 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, calculadas comparando los campos textuales en los registros de lote. Los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 951 — 11 de noviembre de 2026
+
+IDs 5076–5080 revisados individualmente con RFC 3411 (SNMP), la definición de software libre de GNU/FSF, la recomendación UIT-T X.509, la guía del IRS sobre diagramas de flujo de datos y el RD 311/2022 consolidado. Se cotejaron las convocatorias oficiales A1/A2 de 2025 y los bloques 22, 30, 36, 38 y 42 de ITIC Academy en Drive como correspondencia curricular. El [registro del lote 951](cambios-lote-951.json) conserva originales, cambios, fuentes, explicaciones y clasificación temática.
+
+- **5076 — agente SNMP:** **corregida**, respuesta A. En el modelo clásico el agente que instrumenta los objetos de gestión está en el nodo gestionado; el gestor consulta o controla esos agentes. Se especifica “agente SNMP” para distinguirlo del papel gestor.
+- **5077 — libertades del software libre:** **corregida**, respuesta A. La libertad 0 permite usar el programa para cualquier propósito; exigir declaración y aprobación previa sería una restricción incompatible. Se asigna A1-69, que recoge expresamente software libre, y se deja A2 sin epígrafe directo.
+- **5078 — marco PKI:** respuesta B, **vigente**. UIT-T X.509 / ISO/IEC 9594-8 define el marco de certificados de clave pública; X.500 pertenece a directorios, y CRL/OCSP son mecanismos de revocación o consulta de estado.
+- **5079 — almacenes de datos en DFD:** **corregida**, respuesta C. En la notación clásica, un almacén intercambia flujos con procesos y no directamente con una entidad externa. Se concreta “flujo directo” para no confundir la notación con controles de acceso de una base de datos.
+- **5080 — ENS, op.exp.8:** **corregida**, respuesta C. La tabla del anexo II aplica el registro de actividad a la dimensión T (trazabilidad): requisito base en nivel BAJO, con refuerzos en MEDIO y ALTO. Se reemplaza “categoría” por el término correcto “nivel”.
+
+Convocatorias cotejadas: [A1 GSI 2025, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 48, 69, 81, 90 y 118; [A2 GSI AGE 2025, BOE-A-2025-26262](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262), I.6, I.9, III.3 e IV.9. El programa A2 no contiene un epígrafe específico para las libertades del software libre.
+
+ITIC Academy cotejada en Drive como mapa curricular, no como fuente normativa/técnica: [bloque 22, Seguridad, ENS y ciberseguridad](https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk), medidas del ENS; [bloque 30, Tecnologías de sistemas de información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk), software libre; [bloque 36, Seguridad, criptografía, identificación y firma](https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk), PKI y certificados; [bloque 38, Análisis, diseño y construcción de sistemas](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), DFD y análisis estructurado; [bloque 42, Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), administración de LAN y SNMP.
+
+Fuentes primarias/técnicas: [IETF RFC 3411](https://www.rfc-editor.org/rfc/rfc3411.html); [GNU/FSF, definición de software libre](https://www.gnu.org/philosophy/free-sw.html); [UIT-T X.509 / ISO/IEC 9594-8](https://www.itu.int/rec/t-rec-x.509/en); [IRS Internal Revenue Manual 2.5.11, análisis y DFD](https://www.irs.gov/irm/part2/irm_02-005-011); [RD 311/2022, anexo II, op.exp.8 — BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191).
+
+Ejecutados `node revision/revisar-lote-951.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas; 5.075 examinadas individualmente (903 vigentes, 3.699 corregidas, 379 históricas y 94 pendientes); 7.048 aún sin revisar individualmente; cero errores estructurales.
 
 ## Lote 950 — 11 de noviembre de 2026
 
