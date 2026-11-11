@@ -26,7 +26,7 @@ const records = [
     [a2, 'Convocatoria A2 GSI AGE 2025, tema II.15: técnicas de evaluación de alternativas y análisis de viabilidad.'],
     [academyDecision, 'ITIC Academy 2026, bloque 17 «Adquisición de sistemas y rentabilidad de inversiones», sección 3: decisión multicriterio y métodos de ordenación; incluye Saaty/AHP. Cotejo curricular.']
   ]), null,
-  'Respuesta B. El proceso analítico jerárquico (AHP), desarrollado por Thomas L. Saaty, estructura criterios y alternativas en una jerarquía y permite derivar prioridades mediante comparaciones por pares; es un método de decisión multicriterio.', 'vigente'],
+  'Respuesta B. El proceso analítico jerárquico (AHP), desarrollado por Thomas L. Saaty, estructura criterios y alternativas en una jerarquía y permite derivar prioridades mediante comparaciones por pares; es un método de decisión multicriterio.', 'corregida'],
   [4947, ['128'], ['IV-6'], ['continuidad de negocio', 'BCMS', 'ISO 22301', 'fase organización', 'ambigüedad'], refs([
     [iso22301, 'ISO 22301:2019, Security and resilience — Business continuity management systems — Requirements: define requisitos para establecer, operar, mantener y mejorar un BCMS; no presenta una fase normativa denominada “organización” con ese listado cerrado.'],
     [iso22313, 'ISO 22313:2020, guidance for applying ISO 22301, confirmada como vigente en 2025: proporciona recomendaciones de aplicación del BCMS; las secuencias de implantación de guías no son una fase única prescrita por el título de la pregunta.'],
