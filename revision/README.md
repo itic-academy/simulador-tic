@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 883 (IDs 4736–4740). Acumulado: 4.735 preguntas examinadas individualmente; 4.649 verificadas (840 vigentes, 3.453 corregidas y 356 históricas); 86 pendientes documentadas (38 de fuente y 48 de ambigüedad); 7.388 sin revisar individualmente. Hay 4.704 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 884 (IDs 4741–4745). Acumulado: 4.740 preguntas examinadas individualmente; 4.654 verificadas (840 vigentes, 3.457 corregidas y 357 históricas); 86 pendientes documentadas (38 de fuente y 48 de ambigüedad); 7.383 sin revisar individualmente. Hay 4.709 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 884 — 11 de noviembre de 2026
+
+IDs 4741–4745 revisados individualmente y guardados con trazabilidad en [cambios-lote-884.json](cambios-lote-884.json). Se precisa la limitación del waterfall sin atribuirle la imposibilidad de revisiones; se corrige la posición del compartimento UML de atributos; se fija un uso inequívoco de @AfterClass en JUnit 4; se elimina una promesa incondicional sobre las ventajas de arquitecturas multicapa; y se documenta que no hay un modelo de ciclo de vida apropiado para todos los proyectos.
+
+- **4741 — modelo en cascada:** su secuencialidad y reticencia a reabrir fases cerradas dificultan acomodar cambios tardíos; sí existen revisiones y control formal de cambios. Se apoya en el handbook NASA, que describe ventajas, desventajas y condiciones adecuadas de waterfall.
+- **4742 — compartimentos UML:** UML 2.5.1 sitúa el compartimento de atributos después del nombre y antes de operaciones/otros compartimentos, cuando se representa. La norma permite suprimirlo, por lo que se evita afirmar que siempre esté visible.
+- **4743 — JUnit 4:** se cambia la pregunta negativa sobre una anotación supuestamente inexistente por el uso de @AfterClass, anotación de JUnit 4 que ejecuta una vez después de los tests de la clase. Se limita a JUnit 4.13.1, rama en mantenimiento.
+- **4744 — arquitectura multicapa:** se retira la generalización de que reduce complejidad frente a 2-tier. Los tiers añaden fronteras y pueden introducir latencia y complejidad; sus propiedades de rendimiento/fiabilidad dependen del diseño concreto.
+- **4745 — ciclo de vida:** la afirmación de que un modelo basado en transformaciones es apropiado para cualquier proyecto se sustituye por una regla verificable: ningún modelo vale mejor para todos; se selecciona según las necesidades y restricciones del proyecto.
+
+Correspondencia con el programa oficial: A1, temas 88, 89, 90, 92, 93 y 96; A2, III.1, III.2, III.7 y III.9. Cotejo en Drive con ITIC Academy 2026.1: bloque 38 (ciclo de vida, análisis, UML y arquitectura) y bloque 39 (pruebas). Los temas oficiales y Academy fijan el encaje curricular; NASA, OMG, JUnit y Microsoft respaldan las afirmaciones técnicas.
+
+Fuentes: [NASA-GB-001-96, modelo en cascada](https://ntrs.nasa.gov/api/citations/19980227761/downloads/19980227761.pdf) y [NASA SWE-019, ciclo de vida](https://swehb.nasa.gov/spaces/7150/pages/16449735/SWE-019+Software+Life+Cycle); [OMG UML 2.5.1, notación de clase](https://www.omg.org/spec/UML/2.5.1/PDF); [JUnit 4.13.1 @AfterClass](https://junit.org/junit4/javadoc/4.13.1/org/junit/AfterClass.html), [FAQ JUnit 4](https://junit.org/junit4/faq.html) y [estado de JUnit 4](https://junit.org/junit4/); [Microsoft Azure Architecture Center, N-tier](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier); [NASA NPR 7150.2B](https://swehb.nasa.gov/download/attachments/16450360/N_PR_7150_002B_.pdf?api=v2). Temarios: [convocatoria A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [convocatoria A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), [Academy bloque 38](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk) y [Academy bloque 39](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk).
+
+`node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.740 revisiones individuales, cero errores y 7.383 preguntas que aún coinciden con el original sin revisión individual.
 
 ## Lote 883 — 11 de noviembre de 2026
 
