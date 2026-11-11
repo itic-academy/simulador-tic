@@ -1,0 +1,117 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const aplicar = require('./aplicar-lote.cjs');
+
+const a1 = 'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938';
+const a2 = 'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262';
+const academy38 = 'https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk';
+const academy41 = 'https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk';
+
+const sources = {
+  4841: [
+    { url: 'https://www.iso.org/standard/90219.html', referencia: 'ISO/IEC/IEEE 12207:2026, edición publicada en abril de 2026: marco común de procesos software que cubre desde concepción y desarrollo hasta operación, soporte y retirada; no prescribe un único modelo de ciclo de vida.' },
+    { url: a1, referencia: 'Convocatoria A1 GSI 2025, tema 86: ciclo y modelos de vida de sistemas de información.' },
+    { url: a2, referencia: 'Convocatoria A2 GSI 2025, tema III.1: concepto, fases y modelos del ciclo de vida.' }
+  ],
+  4842: [
+    { url: 'https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html', referencia: 'Oracle Java Tutorials, Polymorphism: una referencia de supertipo puede referirse a objetos de subtipos y la implementación sobrescrita se selecciona según el objeto concreto.' },
+    { url: 'https://docs.oracle.com/javase/tutorial/java/IandI/override.html', referencia: 'Oracle Java Tutorials, Overriding and Hiding Methods: al sobrescribir un método de instancia, se ejecuta la versión del subtipo; se distingue de sobrecarga y ocultación estática.' },
+    { url: a1, referencia: 'Convocatoria A1 GSI 2025, tema 93: técnicas de diseño de software y patrones.' },
+    { url: a2, referencia: 'Convocatoria A2 GSI 2025, tema III.9: análisis y diseño orientado a objetos.' }
+  ],
+  4843: [
+    { url: 'https://www.axelos.com/Corporate/media/Files/Glossaries/ITIL_2011_Glossary_GB-v1-0.pdf', referencia: 'Glosario ITIL 2011 (v3), término Service Management: conjunto de capacidades organizativas especializadas para proporcionar valor a los clientes mediante servicios; se identifica la edición histórica en el enunciado.' },
+    { url: 'https://www.peoplecert.org/-/media/peoplecert/images/landing-pages/devops-launch-indian/pcdof---syllabus.pdf', referencia: 'PeopleCert, glosario ITIL 4: conserva la noción de capacidades organizativas especializadas, con formulación actualizada a “habilitar” valor; no se confunden versiones.' },
+    { url: a1, referencia: 'Convocatoria A1 GSI 2025, tema 106: planificación y control TIC, ITIL y gestión de servicios.' },
+    { url: a2, referencia: 'Convocatoria A2 GSI 2025, tema II.13: seguridad, gestión de incidentes y operación de sistemas.' }
+  ],
+  4844: [
+    { url: 'https://data.energizer.com/pdfs/e146x.pdf', referencia: 'Energizer, ficha técnica E146X: identifica explícitamente el sistema químico de óxido mercúrico-zinc (Zn/HgO), una química de batería, no una tecnología digital.' },
+    { url: 'https://eur-lex.europa.eu/eli/reg/2023/1542/2025-07-31/eng/pdf', referencia: 'Reglamento (UE) 2023/1542, anexo I: limita el mercurio en baterías; referencia normativa actual sobre esta química peligrosa.' },
+    { url: 'https://pubs.acs.org/doi/10.1021/acs.chemrev.4c00070', referencia: 'Chemical Reviews (2025), revisión de impresión 4D como tecnología de fabricación aditiva con materiales que cambian de forma/función bajo estímulos.' },
+    { url: 'https://csrc.nist.gov/pubs/journal/2021/08/from-neuron-coverage-to-steering-angle/final', referencia: 'NIST/IEEE, aplicación de redes neuronales profundas como sistema de inteligencia artificial.' },
+    { url: 'https://portal.3gpp.org/Specifications.aspx?WiUid=60073&q=1', referencia: 'Portal de especificaciones 3GPP: normas y especificaciones de sistemas de comunicaciones móviles, incluido 5G.' },
+    { url: a1, referencia: 'Convocatoria A1 GSI 2025, tema 107: tecnologías emergentes, clasificación y aplicaciones.' },
+    { url: a2, referencia: 'Convocatoria A2 GSI 2025, temas III.5 (IA) y IV.15 (generaciones móviles).' }
+  ],
+  4845: [
+    { url: 'https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/2595db843b206fcaa30fc563a3c1db94_cnotes7.pdf', referencia: 'MIT OpenCourseWare, Software Design Metrics: fan-in es el número de módulos que llaman a uno dado; fan-out es el número de módulos a los que llama.' },
+    { url: 'https://swef1.pages.fhnw.ch/docs/swef-website/26HS/scripts/script-code-quality.html', referencia: 'FHNW Software Engineering Fundamentals: define fan-in como número de módulos/métodos que llaman al componente; un fan-in alto indica uso extendido y dependencia, pero el contador mide llamadores.' },
+    { url: a1, referencia: 'Convocatoria A1 GSI 2025, temas 93 y 98: diseño de software y métricas/evaluación de calidad.' },
+    { url: a2, referencia: 'Convocatoria A2 GSI 2025, temas III.9 y III.13: diseño orientado a objetos y métricas de calidad.' }
+  ]
+};
+
+const records = [
+  [4841, ['86'], ['III-1'], ['ciclo de vida', 'ISO 12207', 'concepción', 'operación', 'retirada'], sources[4841], null,
+    'Respuesta B. El ciclo de vida comprende el conjunto de procesos que puede recorrer el software desde su concepción y adquisición/desarrollo hasta operación, soporte y retirada. No equivale a un único modelo concreto ni se limita a la construcción. ISO/IEC/IEEE 12207:2026 establece un marco de procesos sin imponer una metodología o modelo específico.', 'corregida'],
+  [4842, ['93'], ['III-9'], ['orientación a objetos', 'polimorfismo', 'sobrescritura', 'tipos'], sources[4842], null,
+    'Respuesta B. En el sentido de polimorfismo dinámico que evalúa esta pregunta, una misma operación invocada a través de una referencia común puede ejecutar implementaciones distintas según la clase concreta del objeto. No es herencia, abstracción ni encapsulación; tampoco se confunde con la sobrecarga, que selecciona entre firmas distintas.', 'corregida'],
+  [4843, ['106'], ['II-13'], ['ITIL v3', 'gestión de servicios', 'capacidades organizativas', 'valor'], sources[4843], null,
+    'Respuesta D. En el glosario de ITIL v3/2011, la gestión de servicios se define como un conjunto de capacidades organizativas especializadas para proporcionar valor a los clientes mediante servicios. Se conserva la versión explícita: ITIL 4 mantiene la idea, pero formula el propósito como habilitar valor y no debe retroproyectarse esa redacción a v3.', 'corregida'],
+  [4844, ['107'], ['III-5', 'IV-15'], ['clasificación tecnológica', 'batería de óxido mercúrico', 'tecnología digital', '5G', 'impresión 4D', 'red neuronal profunda'], sources[4844], null,
+    'Respuesta C. Una batería de óxido mercúrico-zinc es una química electroquímica de batería; las otras opciones son tecnologías digitales/de fabricación (red neuronal profunda, impresión 4D y comunicaciones móviles 5G). Se elimina “emergente”, etiqueta que depende de la fecha y del sector: en 2026 5G ya está ampliamente desplegado, por lo que el enunciado original no permitía una clasificación temporal universal.', 'corregida'],
+  [4845, ['93', '98'], ['III-9', 'III-13'], ['fan-in', 'métricas estructurales', 'llamadores de módulo', 'reutilización'], sources[4845], null,
+    'Respuesta A. Fan-in cuenta cuántos módulos llaman directamente al módulo analizado; fan-out cuenta cuántos módulos son llamados por este. Un fan-in elevado puede indicar uso compartido o reutilización, pero la métrica mide dependencias entrantes y por sí sola no demuestra calidad, reutilización efectiva ni mantenibilidad. Se sustituye la clasificación genérica por la definición operacional.', 'corregida']
+];
+
+const edits = {
+  4841: { texto: 'En ingeniería de software, ¿qué describe el ciclo de vida de un sistema software?', opciones: [
+    'Un patrón de comportamiento de quienes diseñan el sistema.',
+    'El marco de procesos y actividades que puede abarcar desde la concepción y el desarrollo hasta la operación, el soporte y la retirada.',
+    'Un modelo de especificación de requisitos que fija exclusivamente el analista.',
+    'Un esquema dedicado solo a integrar el sistema completo.'
+  ], respuesta_correcta: 1 },
+  4842: { texto: 'En programación orientada a objetos, ¿qué concepto permite que una misma operación invocada mediante una referencia común produzca un comportamiento distinto según el tipo concreto del objeto?', opciones: [
+    'Herencia.',
+    'Polimorfismo.',
+    'Abstracción.',
+    'Encapsulación.'
+  ], respuesta_correcta: 1 },
+  4843: { texto: 'Según el glosario de ITIL v3 (edición 2011), ¿qué se define como el conjunto de capacidades organizativas especializadas para proporcionar valor a los clientes en forma de servicios?', opciones: [
+    'Una buena práctica aislada.',
+    'Un servicio individual.',
+    'Un proceso de soporte técnico.',
+    'La gestión de servicios.'
+  ], respuesta_correcta: 3 },
+  4844: { texto: '¿Cuál de las siguientes opciones identifica una química de batería, y no una tecnología digital o de fabricación?', opciones: [
+    'Redes neuronales profundas.',
+    'Impresión 4D.',
+    'Batería de óxido mercúrico-zinc (Zn/HgO).',
+    'Comunicaciones móviles 5G.'
+  ], respuesta_correcta: 2 },
+  4845: { texto: 'En el diseño modular de software, ¿qué cuenta la métrica fan-in de un módulo?', opciones: [
+    'El número de módulos que llaman directamente a ese módulo.',
+    'El número de módulos a los que llama directamente ese módulo.',
+    'El tamaño del código fuente del módulo, medido en líneas.',
+    'El número de parámetros de entrada y salida que tiene.'
+  ], respuesta_correcta: 0 }
+};
+
+aplicar({ numero: '904', fecha: '2026-11-11', records, edits });
+
+const repo = path.join(__dirname, '..');
+const bankPath = path.join(repo, 'preguntas_preparatic.json');
+const logPath = path.join(__dirname, 'cambios-lote-904.json');
+const bank = JSON.parse(fs.readFileSync(bankPath, 'utf8'));
+const log = JSON.parse(fs.readFileSync(logPath, 'utf8'));
+const academy = {
+  4841: ['bloque 38 — análisis, diseño y construcción; apartado 1, ciclo de vida, procesos y transición del modelo lineal al iterativo.', academy38],
+  4842: ['bloque 38 — análisis, diseño y construcción; apartado de orientación a objetos: polimorfismo, herencia y encapsulación.', academy38],
+  4843: ['bloque 41 — ITIL y COBIT; distingue preguntas históricas ITIL v3 (ciclo de vida) del marco ITIL 4 (SVS). Se mantiene v3 únicamente porque el enunciado cita esa edición.', academy41],
+  4844: ['bloque 38 — análisis, diseño y construcción; el material cotejado no sustenta la antigua etiqueta temporal “emergente”; se registra únicamente el encuadre curricular amplio de TIC y sistemas.', academy38],
+  4845: ['bloque 38 — análisis, diseño y construcción; diagramas de estructura de Constantine y métricas fan-in/fan-out; el material los presenta como contadores estructurales y relaciona fan-in razonable con reutilización potencial.', academy38]
+};
+for (const change of log.cambios) {
+  const q = bank.preguntas.find(item => item.id === change.id);
+  const [detail, url] = academy[change.id];
+  q.clasificacion.bloque_academia = `ITIC Academy 2026.1, ${detail} Cotejo temático, no autoridad técnica.`;
+  q.clasificacion.nota = `${q.revision.estado}. Cotejo curricular: ${detail} El material de academia no sustituye a fuentes primarias.`;
+  q.revision.observaciones += ` Cotejo curricular: ${detail} El material de academia se emplea como mapa curricular, no como autoridad técnica.`;
+  q.comentarios = q.revision.observaciones;
+  q.revision.fuentes.push({ url, referencia: `ITIC Academy 2026.1, ${detail} Cotejo de cobertura curricular.` });
+  change.actualizada = structuredClone(q);
+}
+fs.writeFileSync(bankPath, JSON.stringify(bank, null, 2) + '\n');
+fs.writeFileSync(logPath, JSON.stringify(log, null, 2) + '\n');
+console.log('Cotejo curricular ITIC Academy agregado al lote 904.');
