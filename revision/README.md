@@ -18,7 +18,9 @@ ITIC Academy cotejada mediante Drive: [bloque 22, Seguridad, ENS y cibersegurida
 
 Fuentes primarias: [INCIBE-CERT, Respuesta a incidentes](https://www.incibe.es/incibe-cert/incidentes/respuesta-incidentes), funciones, públicos y ámbito de referencia; [CCN-CERT, CCN-STIC 817, Gestión de ciberincidentes](https://www.ccn-cert.cni.es/es/pdf/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/988-ccn-stic-817-gestion-de-ciberincidentes/file.html), edición abril de 2020, §4, p. 6; [RD 311/2022, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191), arts. 2, 5 y 31.
 
-`node revision/revisar-lote-931.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas; 4.975 examinadas individualmente (863 vigentes, 3.655 corregidas, 369 históricas y 88 pendientes); 7.148 aún sin revisar individualmente; cero errores estructurales. Despliegue pendiente de verificación.
+`node revision/revisar-lote-931.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas; 4.975 examinadas individualmente (863 vigentes, 3.655 corregidas, 369 históricas y 88 pendientes); 7.148 aún sin revisar individualmente; cero errores estructurales.
+
+**Despliegue del lote 931 verificado:** el commit de contenido [`d30d142`](https://github.com/itic-academy/simulador-tic/commit/d30d1428d8f584a3382a980526db5e3758afeaf9) se publicó mediante [Deploy GitHub Pages, ejecución 43080947258](https://github.com/itic-academy/simulador-tic/actions/runs/43080947258), con resultado `success`. En `https://itic-academy.github.io/simulador-tic/`, el README, banco e inventario respondieron HTTP 200; README incluye el lote 931 y los recursos publicados contienen 12.123 preguntas. El inventario servido refleja 4.975 examinadas y 7.148 todavía sin revisión individual. Se comprobaron en el banco live los IDs 4976–4980 con claves 2, 2, 3, 0 y 1 y temas A1/A2 coincidentes con el registro.
 
 ## Lote 930 — 11 de noviembre de 2026
 
