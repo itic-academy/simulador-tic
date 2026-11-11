@@ -1,0 +1,394 @@
+{
+  "fecha": "2026-11-11",
+  "alcance": "IDs 4921–4925; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 4921,
+      "original": {
+        "id": 4921,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Para listar las conexiones TCP/UDP abiertas en un servidor utilizo el comando:",
+        "opciones": [
+          "ping",
+          "netstat",
+          "tracert o traceroute",
+          "ipconfig / ifconfig"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4921,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Windows, ¿qué comando muestra las conexiones TCP activas y los puertos TCP/UDP en los que el equipo está escuchando?",
+        "opciones": [
+          "ping",
+          "netstat -a",
+          "tracert",
+          "ipconfig"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Respuesta B (netstat -a). Se concreta el sistema operativo: en Windows, Microsoft documenta que -a muestra todas las conexiones TCP activas y los puertos TCP y UDP en los que el equipo escucha. UDP no establece conexiones en el sentido de TCP, por lo que se corrige la expresión imprecisa “conexiones TCP/UDP abiertas” por “conexiones TCP activas y endpoints/puertos en escucha”. En otros sistemas y para inventarios más detallados pueden utilizarse herramientas o sintaxis distintas. ITIC Academy 2026, bloque 42 «Redes»: coteja la cobertura curricular de redes, IP, TCP/UDP, ICMP y diagnóstico. El PDF no prescribe netstat; la sintaxis concreta se comprueba en Microsoft Learn.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy 2026, bloque 42 «Redes»: coteja la cobertura curricular de redes, IP, TCP/UDP, ICMP y diagnóstico. El PDF no prescribe netstat; la sintaxis concreta se comprueba en Microsoft Learn. El material se cita como cotejo curricular, no como fuente primaria de la respuesta.",
+          "estado": "revisada",
+          "nota": "corregida. Cotejo ITIC Academy: ITIC Academy 2026, bloque 42 «Redes»: coteja la cobertura curricular de redes, IP, TCP/UDP, ICMP y diagnóstico. El PDF no prescribe netstat; la sintaxis concreta se comprueba en Microsoft Learn. Fuentes técnicas primarias y alcance están documentados en el registro del lote."
+        },
+        "etiquetas": [
+          "redes",
+          "TCP",
+          "UDP",
+          "netstat",
+          "puertos en escucha"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-11",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/netstat",
+              "referencia": "Microsoft Learn, comando netstat de Windows: la opción -a presenta las conexiones TCP activas y los puertos TCP/UDP en escucha. El enunciado se limita expresamente a Windows y habla de endpoints/puertos, no de “conexiones UDP” como si UDP orientado a datagramas mantuviera sesiones."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, temas 108 y 115: redes, protocolos de encaminamiento y redes IP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI AGE 2025, tema II.8: modelo TCP/IP, protocolos, direccionamiento y encaminamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy 2026, bloque 42 «Redes»: coteja la cobertura curricular de redes, IP, TCP/UDP, ICMP y diagnóstico. El PDF no prescribe netstat; la sintaxis concreta se comprueba en Microsoft Learn."
+            }
+          ],
+          "observaciones": "Respuesta B (netstat -a). Se concreta el sistema operativo: en Windows, Microsoft documenta que -a muestra todas las conexiones TCP activas y los puertos TCP y UDP en los que el equipo escucha. UDP no establece conexiones en el sentido de TCP, por lo que se corrige la expresión imprecisa “conexiones TCP/UDP abiertas” por “conexiones TCP activas y endpoints/puertos en escucha”. En otros sistemas y para inventarios más detallados pueden utilizarse herramientas o sintaxis distintas. ITIC Academy 2026, bloque 42 «Redes»: coteja la cobertura curricular de redes, IP, TCP/UDP, ICMP y diagnóstico. El PDF no prescribe netstat; la sintaxis concreta se comprueba en Microsoft Learn."
+        }
+      }
+    },
+    {
+      "id": 4922,
+      "original": {
+        "id": 4922,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "No forma parte de las reglas de CODD para la definición de un sistema de bases de datos relacional:",
+        "opciones": [
+          "Independencia física de datos.",
+          "Independencia lógica de datos.",
+          "Tratamiento sistemático de nulos.",
+          "Tratamiento sistemático de booleanos."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4922,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de estas opciones NO es una de las reglas formuladas por E. F. Codd para los SGBD relacionales?",
+        "opciones": [
+          "Independencia física de los datos.",
+          "Independencia lógica de los datos.",
+          "Tratamiento sistemático de valores nulos.",
+          "Tratamiento sistemático de valores booleanos."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Respuesta D. El artículo original de Codd enumera la independencia física (regla 8), la independencia lógica (regla 9) y el tratamiento sistemático de valores nulos (regla 3). No incluye una regla denominada “tratamiento sistemático de booleanos”. La formulación conserva la distinción entre las reglas de Codd y las capacidades generales que los SGBD puedan ofrecer. ITIC Academy 2026, bloque 29 «Bases de Datos», temas A1-63/64 y A2-T5: incluye expresamente el modelo relacional y las reglas de Codd; su resumen recoge las reglas 3, 8 y 9.",
+        "clasificacion": {
+          "A1": [
+            "A1-63",
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy 2026, bloque 29 «Bases de Datos», temas A1-63/64 y A2-T5: incluye expresamente el modelo relacional y las reglas de Codd; su resumen recoge las reglas 3, 8 y 9. El material se cita como cotejo curricular, no como fuente primaria de la respuesta.",
+          "estado": "revisada",
+          "nota": "corregida. Cotejo ITIC Academy: ITIC Academy 2026, bloque 29 «Bases de Datos», temas A1-63/64 y A2-T5: incluye expresamente el modelo relacional y las reglas de Codd; su resumen recoge las reglas 3, 8 y 9. Fuentes técnicas primarias y alcance están documentados en el registro del lote."
+        },
+        "etiquetas": [
+          "bases de datos",
+          "modelo relacional",
+          "Codd",
+          "reglas de Codd",
+          "nulos",
+          "independencia de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-11",
+          "fuentes": [
+            {
+              "url": "https://thaumatorium.com/articles/the-papers-of-ef-the-coddfather-codd/1985b-does-your-dmbs-run-by-the-rules/",
+              "referencia": "Edgar F. Codd, “Does Your DBMS Run By the Rules?”, Computerworld, 21-10-1985 (reproducción del artículo original): enumera el tratamiento sistemático de valores nulos como regla 3, y las independencias física y lógica como reglas 8 y 9. No figura una regla autónoma de tratamiento sistemático de booleanos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, temas 63–64: SGBD, modelo relacional y SQL."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI AGE 2025, tema II.5: SGBD relacionales, ANSI/SPARC y SQL."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy 2026, bloque 29 «Bases de Datos», temas A1-63/64 y A2-T5: incluye expresamente el modelo relacional y las reglas de Codd; su resumen recoge las reglas 3, 8 y 9."
+            }
+          ],
+          "observaciones": "Respuesta D. El artículo original de Codd enumera la independencia física (regla 8), la independencia lógica (regla 9) y el tratamiento sistemático de valores nulos (regla 3). No incluye una regla denominada “tratamiento sistemático de booleanos”. La formulación conserva la distinción entre las reglas de Codd y las capacidades generales que los SGBD puedan ofrecer. ITIC Academy 2026, bloque 29 «Bases de Datos», temas A1-63/64 y A2-T5: incluye expresamente el modelo relacional y las reglas de Codd; su resumen recoge las reglas 3, 8 y 9."
+        }
+      }
+    },
+    {
+      "id": 4923,
+      "original": {
+        "id": 4923,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La aplicación 'traceroute' basada en ICMP:",
+        "opciones": [
+          "permite conocer si un sistema está accesible",
+          "permite establecer la ruta a seguir por un conjunto de datagramas IP",
+          "permite conocer la ruta seguida por un datagrama IP",
+          "permite obtener un mapa de la red utilizada"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4923,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Al ejecutar traceroute con sondas de TTL creciente hacia un destino, ¿qué información permite obtener de los routers que responden?",
+        "opciones": [
+          "Si el sistema de destino está accesible, como única información de la herramienta.",
+          "La ruta que necesariamente seguirá cualquier datagrama IP hacia ese destino.",
+          "Los saltos observados en la ruta de las sondas de diagnóstico hacia el destino.",
+          "Un mapa completo de todos los equipos de la red utilizada."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Respuesta C. Traceroute permite observar los saltos que responden a las sondas de diagnóstico dirigidas al destino. No determina qué ruta seguirá cualquier datagrama IP ni garantiza observar todos los routers: incrementa el TTL de sondas sucesivas y suele recibir mensajes ICMP Time Exceeded en los saltos intermedios; el formato de la sonda depende de la implementación y algunos equipos no responden. ITIC Academy 2026, bloque 42 «Redes»: sitúa ICMP y traceroute entre las herramientas/protocolos de diagnóstico de redes. Los límites sobre sondas y saltos observables se contrastan con RFC 5388 y RFC 2925.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy 2026, bloque 42 «Redes»: sitúa ICMP y traceroute entre las herramientas/protocolos de diagnóstico de redes. Los límites sobre sondas y saltos observables se contrastan con RFC 5388 y RFC 2925. El material se cita como cotejo curricular, no como fuente primaria de la respuesta.",
+          "estado": "revisada",
+          "nota": "corregida. Cotejo ITIC Academy: ITIC Academy 2026, bloque 42 «Redes»: sitúa ICMP y traceroute entre las herramientas/protocolos de diagnóstico de redes. Los límites sobre sondas y saltos observables se contrastan con RFC 5388 y RFC 2925. Fuentes técnicas primarias y alcance están documentados en el registro del lote."
+        },
+        "etiquetas": [
+          "redes",
+          "IP",
+          "ICMP",
+          "traceroute",
+          "TTL",
+          "sondas",
+          "saltos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-11",
+          "fuentes": [
+            {
+              "url": "https://datatracker.ietf.org/doc/html/rfc5388",
+              "referencia": "IETF RFC 5388, apartados 2.1 y 2.2: traceroute descubre saltos incrementando en cada paso el TTL de las sondas; normalmente los routers intermedios devuelven ICMP Time Exceeded. El documento advierte que varían las implementaciones y el tipo de sonda (UDP o ICMP Echo), y que puede haber saltos no observables."
+            },
+            {
+              "url": "https://datatracker.ietf.org/doc/html/rfc2925",
+              "referencia": "IETF RFC 2925, sección 3: las sondas UDP o ICMP encapsuladas en IP pueden emplear el TTL para descubrir los saltos; los routers pueden no responder y dejar saltos invisibles."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, temas 108 y 115: redes IP y encaminamiento."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI AGE 2025, tema II.8: modelos, protocolos, direccionamiento y encaminamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy 2026, bloque 42 «Redes»: sitúa ICMP y traceroute entre las herramientas/protocolos de diagnóstico de redes. Los límites sobre sondas y saltos observables se contrastan con RFC 5388 y RFC 2925."
+            }
+          ],
+          "observaciones": "Respuesta C. Traceroute permite observar los saltos que responden a las sondas de diagnóstico dirigidas al destino. No determina qué ruta seguirá cualquier datagrama IP ni garantiza observar todos los routers: incrementa el TTL de sondas sucesivas y suele recibir mensajes ICMP Time Exceeded en los saltos intermedios; el formato de la sonda depende de la implementación y algunos equipos no responden. ITIC Academy 2026, bloque 42 «Redes»: sitúa ICMP y traceroute entre las herramientas/protocolos de diagnóstico de redes. Los límites sobre sondas y saltos observables se contrastan con RFC 5388 y RFC 2925."
+        }
+      }
+    },
+    {
+      "id": 4924,
+      "original": {
+        "id": 4924,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En los modelos de Calidad de E-Learning, ¿Cuál de las siguiestes NO es una dimensión?",
+        "opciones": [
+          "Calidad de Conexión.",
+          "Calidad de la Institución.",
+          "Calidad del Docente.",
+          "Calidad del Sistema de Aprendizaje."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4924,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo de evaluación de calidad del e-learning en educación superior propuesto por Ortiz-López, Olmos-Migueláñez y Sánchez-Prieto (2021), ¿cuál NO es una de sus cuatro dimensiones?",
+        "opciones": [
+          "Calidad de la conexión.",
+          "Calidad de la institución.",
+          "Calidad docente.",
+          "Calidad del sistema de aprendizaje o plataforma."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Respuesta A. Se precisa el modelo que el enunciado original dejaba sin identificar: el propuesto y validado por Ortiz-López, Olmos-Migueláñez y Sánchez-Prieto (2021) para educación superior. Sus cuatro dimensiones son calidad de la institución, calidad docente, calidad del sistema de aprendizaje/plataforma y calidad de la evaluación del programa; “calidad de conexión” no figura como dimensión general. La conexión puede ser un atributo técnico evaluable dentro de una plataforma, pero eso no la convierte en una de las cuatro dimensiones del modelo. El temario ITIC Academy bloque 33 cubre A1-73 y declara A2 no aplicable; no se fuerza una equivalencia A2. ITIC Academy 2026.1, bloque 33 «E-learning y Sistemas de Información Geográfica», §§ 1.1–1.10: coteja conceptos, modelos, plataformas y normalización; el programa declara A2 «NO APLICA». El modelo concreto de cuatro dimensiones se identifica en el enunciado y se verifica en el artículo revisado por pares, no se atribuye al temario de academia.",
+        "clasificacion": {
+          "A1": [
+            "A1-73"
+          ],
+          "A2": [],
+          "bloque_academia": "ITIC Academy 2026.1, bloque 33 «E-learning y Sistemas de Información Geográfica», §§ 1.1–1.10: coteja conceptos, modelos, plataformas y normalización; el programa declara A2 «NO APLICA». El modelo concreto de cuatro dimensiones se identifica en el enunciado y se verifica en el artículo revisado por pares, no se atribuye al temario de academia. El material se cita como cotejo curricular, no como fuente primaria de la respuesta.",
+          "estado": "revisada",
+          "nota": "corregida. Cotejo ITIC Academy: ITIC Academy 2026.1, bloque 33 «E-learning y Sistemas de Información Geográfica», §§ 1.1–1.10: coteja conceptos, modelos, plataformas y normalización; el programa declara A2 «NO APLICA». El modelo concreto de cuatro dimensiones se identifica en el enunciado y se verifica en el artículo revisado por pares, no se atribuye al temario de academia. Fuentes técnicas primarias y alcance están documentados en el registro del lote."
+        },
+        "etiquetas": [
+          "e-learning",
+          "calidad",
+          "evaluación de programas",
+          "calidad institucional",
+          "calidad docente",
+          "plataforma"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-11",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.5944/ried.24.2.29073",
+              "referencia": "Ortiz-López, Olmos-Migueláñez y Sánchez-Prieto (2021), “Calidad en e-Learning: identificación de sus dimensiones, propuesta y validación de un modelo para su evaluación en Educación Superior”, RIED 24(2), DOI 10.5944/ried.24.2.29073. El artículo define explícitamente cuatro dimensiones: calidad de la institución, calidad docente, calidad del sistema de aprendizaje/plataforma y calidad de la evaluación del programa. Por ello la “calidad de conexión” no es una de las cuatro dimensiones generales de ese modelo."
+            },
+            {
+              "url": "https://aiesad.org/wp-content/uploads/2021/05/1467-486-PB.pdf",
+              "referencia": "Texto completo del artículo académico (RIED, 2021), tablas 4–5 y descripción del modelo final; fuente de la identificación explícita del modelo que faltaba en el enunciado original."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 73: e-learning, conceptos, herramientas, sistemas de implantación y normalización."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy 2026.1, bloque 33 «E-learning y Sistemas de Información Geográfica», §§ 1.1–1.10: coteja conceptos, modelos, plataformas y normalización; el programa declara A2 «NO APLICA». El modelo concreto de cuatro dimensiones se identifica en el enunciado y se verifica en el artículo revisado por pares, no se atribuye al temario de academia."
+            }
+          ],
+          "observaciones": "Respuesta A. Se precisa el modelo que el enunciado original dejaba sin identificar: el propuesto y validado por Ortiz-López, Olmos-Migueláñez y Sánchez-Prieto (2021) para educación superior. Sus cuatro dimensiones son calidad de la institución, calidad docente, calidad del sistema de aprendizaje/plataforma y calidad de la evaluación del programa; “calidad de conexión” no figura como dimensión general. La conexión puede ser un atributo técnico evaluable dentro de una plataforma, pero eso no la convierte en una de las cuatro dimensiones del modelo. El temario ITIC Academy bloque 33 cubre A1-73 y declara A2 no aplicable; no se fuerza una equivalencia A2. ITIC Academy 2026.1, bloque 33 «E-learning y Sistemas de Información Geográfica», §§ 1.1–1.10: coteja conceptos, modelos, plataformas y normalización; el programa declara A2 «NO APLICA». El modelo concreto de cuatro dimensiones se identifica en el enunciado y se verifica en el artículo revisado por pares, no se atribuye al temario de academia."
+        }
+      }
+    },
+    {
+      "id": 4925,
+      "original": {
+        "id": 4925,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los procesos de la estructura principal de MÉTRICA v3 son:",
+        "opciones": [
+          "Planificación, Análisis, Construcción y Mantenimiento de sistemas de información.",
+          "Análisis, Desarrollo y Mantenimiento de sistemas de información.",
+          "Análisis, Desarrollo, Pruebas y Mantenimiento de sistemas de información.",
+          "Planificación, Desarrollo y Mantenimiento de sistemas de información."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 4925,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué tres grupos reúnen los procesos principales de ciclo de vida de MÉTRICA v3?",
+        "opciones": [
+          "Planificación, análisis, construcción y mantenimiento.",
+          "Análisis, desarrollo y mantenimiento.",
+          "Análisis, desarrollo, pruebas y mantenimiento.",
+          "Planificación, desarrollo y mantenimiento."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Respuesta D. La estructura principal de ciclo de vida de MÉTRICA v3 se agrupa en Planificación (PSI), Desarrollo (EVS, ASI, DSI, CSI e IAS) y Mantenimiento (MSI). Por tanto, la opción que recoge los tres grupos es “Planificación, Desarrollo y Mantenimiento de sistemas de información”. ITIC Academy 2026.1, bloque 15 «Metodologías Ágiles y Ciclo de Vida», sección MÉTRICA v3: enumera PSI, EVS, ASI, DSI, CSI, IAS y MSI y permite cotejar su agrupación en Planificación, Desarrollo y Mantenimiento; la estructura se comprueba en los documentos oficiales de PAe.",
+        "clasificacion": {
+          "A1": [
+            "A1-95"
+          ],
+          "A2": [
+            "A2-III-2"
+          ],
+          "bloque_academia": "ITIC Academy 2026.1, bloque 15 «Metodologías Ágiles y Ciclo de Vida», sección MÉTRICA v3: enumera PSI, EVS, ASI, DSI, CSI, IAS y MSI y permite cotejar su agrupación en Planificación, Desarrollo y Mantenimiento; la estructura se comprueba en los documentos oficiales de PAe. El material se cita como cotejo curricular, no como fuente primaria de la respuesta.",
+          "estado": "revisada",
+          "nota": "corregida. Cotejo ITIC Academy: ITIC Academy 2026.1, bloque 15 «Metodologías Ágiles y Ciclo de Vida», sección MÉTRICA v3: enumera PSI, EVS, ASI, DSI, CSI, IAS y MSI y permite cotejar su agrupación en Planificación, Desarrollo y Mantenimiento; la estructura se comprueba en los documentos oficiales de PAe. Fuentes técnicas primarias y alcance están documentados en el registro del lote."
+        },
+        "etiquetas": [
+          "MÉTRICA v3",
+          "PSI",
+          "DSI",
+          "CSI",
+          "MSI",
+          "planificación",
+          "desarrollo",
+          "mantenimiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-11",
+          "fuentes": [
+            {
+              "url": "https://administracionelectronica.gob.es/documentacion/metodologias-guias/pae-metrica-v3",
+              "referencia": "PAe, portal oficial de MÉTRICA v3: metodología de planificación, desarrollo y mantenimiento de sistemas de información; identifica PSI, DSI, CSI y MSI como procesos de la estructura de ciclo de vida."
+            },
+            {
+              "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A8d2cfee5-5617-4dea-8cf8-7b7a0131de84/METRICA_V3_Panificacion_de_Sistemas_de_Informacion.pdf",
+              "referencia": "MÉTRICA v3, proceso PSI, Planificación de Sistemas de Información."
+            },
+            {
+              "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A7f366cd1-6759-42d9-9e0b-31edce0256d9/METRICA_V3_Diseno_del_Sistema_de_Informacion.pdf",
+              "referencia": "MÉTRICA v3, proceso DSI, Diseño del Sistema de Información."
+            },
+            {
+              "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
+              "referencia": "MÉTRICA v3, proceso CSI, Construcción del Sistema de Información."
+            },
+            {
+              "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ae15c0c5b-dd9c-4e48-82e3-9e36ba18e839/METRICA_V3_Mantenimiento_de_Sistemas_de_Informacion.pdf",
+              "referencia": "MÉTRICA v3, proceso MSI, Mantenimiento del Sistema de Información."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 95: metodología de planificación y desarrollo de sistemas de información MÉTRICA."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI AGE 2025, tema III.2: gestión y planificación del proceso y metodologías de desarrollo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy 2026.1, bloque 15 «Metodologías Ágiles y Ciclo de Vida», sección MÉTRICA v3: enumera PSI, EVS, ASI, DSI, CSI, IAS y MSI y permite cotejar su agrupación en Planificación, Desarrollo y Mantenimiento; la estructura se comprueba en los documentos oficiales de PAe."
+            }
+          ],
+          "observaciones": "Respuesta D. La estructura principal de ciclo de vida de MÉTRICA v3 se agrupa en Planificación (PSI), Desarrollo (EVS, ASI, DSI, CSI e IAS) y Mantenimiento (MSI). Por tanto, la opción que recoge los tres grupos es “Planificación, Desarrollo y Mantenimiento de sistemas de información”. ITIC Academy 2026.1, bloque 15 «Metodologías Ágiles y Ciclo de Vida», sección MÉTRICA v3: enumera PSI, EVS, ASI, DSI, CSI, IAS y MSI y permite cotejar su agrupación en Planificación, Desarrollo y Mantenimiento; la estructura se comprueba en los documentos oficiales de PAe."
+        }
+      }
+    }
+  ]
+}
