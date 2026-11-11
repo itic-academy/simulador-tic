@@ -1,0 +1,456 @@
+{
+  "fecha": "2026-11-12",
+  "alcance": "IDs 5116–5120; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 5116,
+      "original": {
+        "id": 5116,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En CORBA la invocación de un objeto para su ejecución sigue el siguiente camino:",
+        "opciones": [
+          "Cliente - IDL Stub - ORB (Object Request Broker) - IDL Skeleton -Servidor.",
+          "Cliente - ORB (Object Request Broker) - Servidor.",
+          "Cliente - IDL Stub - Servidor.",
+          "Cliente - IDL Skeleton - ORB (Object Request Broker) - IDL Stub - Servidor."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5116,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una invocación estática CORBA basada en IDL, ¿qué secuencia resume correctamente la llamada desde el cliente hasta la implementación del objeto en el servidor?",
+        "opciones": [
+          "Cliente → stub IDL → ORB, que enruta la petición al skeleton/adaptador del servidor → objeto.",
+          "Cliente → skeleton del servidor → stub IDL → objeto.",
+          "Cliente → servidor, sin intermediación del ORB ni de un stub.",
+          "Cliente → adaptador de objetos del servidor → stub del cliente → objeto."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "En una invocación CORBA estática, el cliente llama al stub generado desde IDL; este entrega la petición al ORB, que la enruta al adaptador/skeleton del servidor para despacharla al objeto. La opción resume el flujo: en una implementación real intervienen el ORB de cliente y servidor y el adaptador de objetos; el skeleton no es un salto de red autónomo.",
+        "clasificacion": {
+          "A1": [
+            "A1-58"
+          ],
+          "A2": [
+            "A2-II-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 28, «Arquitectura SOA y requisitos no funcionales», versión 2026.2: incluye A1-58/A2-T6 y componentes/interoperabilidad de arquitecturas cliente-servidor.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular directo del área de procesamiento cooperativo y arquitectura distribuida; la secuencia CORBA se valida con la especificación OMG."
+        },
+        "etiquetas": [
+          "CORBA",
+          "ORB",
+          "stub IDL",
+          "skeleton",
+          "middleware",
+          "arquitectura distribuida"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.omg.org/spec/CORBA/3.4/",
+              "referencia": "OMG, CORBA 3.4: separa la interfaz de stub del cliente, el ORB, los adaptadores de objetos y skeletons de implementación en el lado servidor."
+            },
+            {
+              "url": "https://www.omg.org/gettingstarted/orb_basics.htm",
+              "referencia": "OMG, ORB Basics: el ORB enruta las peticiones del cliente hacia el objeto destino; las invocaciones estáticas usan stubs."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 58: procesamiento cooperativo, arquitectura cliente-servidor y SOA."
+            },
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.6: arquitecturas cliente-servidor, componentes e interoperabilidad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 28 (versión 2026.2): A1-58/A2-T6, arquitectura cliente-servidor, middleware y componentes distribuidos; cotejo curricular, no fuente normativa."
+            }
+          ],
+          "observaciones": "En una invocación CORBA estática, el cliente llama al stub generado desde IDL; este entrega la petición al ORB, que la enruta al adaptador/skeleton del servidor para despacharla al objeto. La opción resume el flujo: en una implementación real intervienen el ORB de cliente y servidor y el adaptador de objetos; el skeleton no es un salto de red autónomo."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo expreso de temario ITIC Academy accesible en Drive y actualización de correspondencia curricular.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 28, «Arquitectura SOA y requisitos no funcionales», versión 2026.2: incluye A1-58/A2-T6 y componentes/interoperabilidad de arquitecturas cliente-servidor.",
+            "nota": "Cotejo curricular directo del área de procesamiento cooperativo y arquitectura distribuida; la secuencia CORBA se valida con la especificación OMG."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5117,
+      "original": {
+        "id": 5117,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la arquitectura SOA (Arquitectura Orientada a Servicios):",
+        "opciones": [
+          "Se hace incompatible el uso de servicios web.",
+          "Los servicios encapsulan sus funcionalidades.",
+          "Los servicios mantienen un fuerte acoplamiento.",
+          "Los servicios dependen fuertemente de la plataforma subyacente."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5117,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de estas afirmaciones describe correctamente una característica de los servicios en una arquitectura orientada a servicios (SOA)?",
+        "opciones": [
+          "SOA excluye el uso de servicios web.",
+          "Un servicio ofrece acceso a una o más capacidades mediante una interfaz y normalmente oculta al consumidor los detalles de implementación.",
+          "Los servicios deben mantener un fuerte acoplamiento entre proveedor y consumidor.",
+          "Toda implementación de SOA debe depender de una plataforma de ejecución única."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La respuesta correcta es la encapsulación: el servicio expone capacidades mediante una interfaz y oculta normalmente sus detalles internos. SOA puede implementarse con servicios web; acoplamiento y dependencia de plataforma son decisiones de diseño, no las características absolutas propuestas por los distractores.",
+        "clasificacion": {
+          "A1": [
+            "A1-58"
+          ],
+          "A2": [
+            "A2-II-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 28, «Arquitectura SOA y requisitos no funcionales», versión 2026.2: cubre SOA, servicios web y A1-58/A2-T6.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular directo con el bloque SOA; la definición del servicio se comprueba en OASIS."
+        },
+        "etiquetas": [
+          "SOA",
+          "servicios",
+          "encapsulación",
+          "interfaz",
+          "acoplamiento débil",
+          "interoperabilidad"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://docs.oasis-open.org/soa-rm/v1.0/soa-rm.html",
+              "referencia": "OASIS, Reference Model for SOA 1.0, §3.1: un servicio permite acceder a capacidades por una interfaz prescrita; su implementación suele quedar opaca al consumidor."
+            },
+            {
+              "url": "https://docs.oasis-open.org/soa-rm/v1.0/soa-rm.pdf",
+              "referencia": "OASIS, Reference Model for SOA 1.0: SOA organiza soluciones para promover reutilización, evolución e interoperabilidad; no es incompatible con servicios web."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 58: arquitectura SOA."
+            },
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.6: arquitectura de servicios web e interoperabilidad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 28 (versión 2026.2), dedicado a SOA, requisitos no funcionales y servicios web; cotejo curricular."
+            }
+          ],
+          "observaciones": "La respuesta correcta es la encapsulación: el servicio expone capacidades mediante una interfaz y oculta normalmente sus detalles internos. SOA puede implementarse con servicios web; acoplamiento y dependencia de plataforma son decisiones de diseño, no las características absolutas propuestas por los distractores."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo expreso de temario ITIC Academy accesible en Drive y actualización de correspondencia curricular.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 28, «Arquitectura SOA y requisitos no funcionales», versión 2026.2: cubre SOA, servicios web y A1-58/A2-T6.",
+            "nota": "Cotejo curricular directo con el bloque SOA; la definición del servicio se comprueba en OASIS."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5118,
+      "original": {
+        "id": 5118,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las funciones NO realiza el sistema operativo desde el punto de vista del usuario?:",
+        "opciones": [
+          "Resolver los conflictos que se generan por el uso concurrente de los recursos únicos del sistema entre los diferentes programas y usuarios.",
+          "Presentar una máquina virtual o máquina ampliada más fácil de programar y manejar que el hardware asociado.",
+          "Permitir la creación de programas (edición, compilación, enlazado de librerías).",
+          "Permitir la ejecución de ficheros (carga, inicialización de dispositivos de E/S, inicialización de ficheros)."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5118,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Desde las perspectivas clásicas del sistema operativo como gestor de recursos y como máquina ampliada, ¿cuál de estas tareas NO es propiamente una función del sistema operativo?",
+        "opciones": [
+          "Coordinar el acceso concurrente de programas y usuarios a recursos compartidos.",
+          "Proporcionar abstracciones de más alto nivel que facilitan el uso del hardware.",
+          "Editar, compilar y enlazar el código fuente para crear un programa.",
+          "Cargar e iniciar la ejecución de un programa."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La alternativa que no describe una función propia del sistema operativo es la creación del programa mediante edición, compilación y enlazado: son tareas de herramientas de desarrollo. El SO sí gestiona recursos concurrentes, ofrece abstracciones de más alto nivel y carga/ejecuta programas. Un entorno puede incluir herramientas junto al SO, pero no por ello son funciones del núcleo/servicio del SO.",
+        "clasificacion": {
+          "A1": [
+            "A1-59"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 27, «Sistemas operativos», actualización 2026: cubre fundamentos funcionales de sistemas operativos y A1-59/A2-II.2.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular directo del tema de sistema operativo; la separación respecto de compiladores/enlazadores se verifica en material universitario de sistemas operativos."
+        },
+        "etiquetas": [
+          "sistema operativo",
+          "máquina ampliada",
+          "gestión de recursos",
+          "compilador",
+          "enlazador"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://uodiyala.edu.iq/uploads/PDF%20ELIBRARY%20UODIYALA/EL48/Operating%5B1%5D.Systems.Design.and.Implementation.3rd.Edition.pdf",
+              "referencia": "Tanenbaum y Woodhull, Operating Systems: Design and Implementation, 3.ª ed., §1.7: presenta las dos perspectivas clásicas del SO como gestor de recursos y máquina ampliada/virtual."
+            },
+            {
+              "url": "https://cs.nyu.edu/~gottlieb/courses/2000s/2002-03-spring/os/lectures/lecture-01.html",
+              "referencia": "NYU, apuntes de sistemas operativos: distingue el sistema operativo de compiladores y enlazadores, herramientas de construcción de programas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 59: conceptos y fundamentos de sistemas operativos."
+            },
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.2: conceptos, características funcionales y administración de sistemas operativos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 27 (actualización 2026), fundamentos y funciones de sistemas operativos; cotejo curricular."
+            }
+          ],
+          "observaciones": "La alternativa que no describe una función propia del sistema operativo es la creación del programa mediante edición, compilación y enlazado: son tareas de herramientas de desarrollo. El SO sí gestiona recursos concurrentes, ofrece abstracciones de más alto nivel y carga/ejecuta programas. Un entorno puede incluir herramientas junto al SO, pero no por ello son funciones del núcleo/servicio del SO."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo expreso de temario ITIC Academy accesible en Drive y actualización de correspondencia curricular.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 27, «Sistemas operativos», actualización 2026: cubre fundamentos funcionales de sistemas operativos y A1-59/A2-II.2.",
+            "nota": "Cotejo curricular directo del tema de sistema operativo; la separación respecto de compiladores/enlazadores se verifica en material universitario de sistemas operativos."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5119,
+      "original": {
+        "id": 5119,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "AI problema en un SGBD en que dos transacciones paralelas intentan modificar el mismo objeto de la base de datos, leyendo ambas el valor antes de que la otra transacción lo actualice, se conoce como:",
+        "opciones": [
+          "Lectura sucia.",
+          "Lectura fantasma.",
+          "Lectura no repetible.",
+          "Lectura comprometida."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5119,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una transacción, una operación vuelve a leer la misma fila y obtiene un valor diferente porque otra transacción confirmó una actualización entre ambas lecturas. ¿Cómo se denomina esta anomalía?",
+        "opciones": [
+          "Lectura sucia: leer cambios todavía no confirmados por otra transacción.",
+          "Lectura fantasma: cambia el conjunto de filas que satisface una consulta de rango.",
+          "Lectura no repetible: una nueva lectura del mismo dato observa un cambio confirmado desde la lectura anterior.",
+          "Actualización confirmada: nombre estándar de cualquier escritura que termina correctamente."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se corrige el enunciado: dos transacciones que leen una vez el mismo valor y luego lo actualizan describen mejor una actualización perdida, anomalía que no aparece entre las respuestas. La lectura no repetible se define por dos lecturas del mismo dato en una transacción, con una actualización confirmada por otra transacción entre ambas; en READ COMMITTED la segunda lectura puede devolver el nuevo valor.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5",
+            "A2-III-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29, «Bases de datos, SQL y modelado de datos», versión 2026.1: cubre transacciones, concurrencia y niveles de aislamiento dentro de A1-64/A2-T5/D4.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular directo de anomalías de concurrencia; definición terminológica contrastada con PostgreSQL 18."
+        },
+        "etiquetas": [
+          "transacciones",
+          "concurrencia",
+          "aislamiento",
+          "lectura no repetible",
+          "READ COMMITTED"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.postgresql.org/docs/18/transaction-iso.html",
+              "referencia": "PostgreSQL 18, §13.2: lectura no repetible ocurre cuando una transacción vuelve a leer un dato y ve un cambio confirmado desde la lectura inicial; distingue lecturas sucias y fantasma."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 64: modelo relacional y SQL; el programa general incluye fundamentos de transacciones en bases de datos."
+            },
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, temas II.5 (SGBD relacionales/SQL) y III.4 (problemas de concurrencia y resolución de conflictos)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 (versión 2026.1): transacciones, concurrencia y niveles de aislamiento; cotejo curricular directo."
+            }
+          ],
+          "observaciones": "Se corrige el enunciado: dos transacciones que leen una vez el mismo valor y luego lo actualizan describen mejor una actualización perdida, anomalía que no aparece entre las respuestas. La lectura no repetible se define por dos lecturas del mismo dato en una transacción, con una actualización confirmada por otra transacción entre ambas; en READ COMMITTED la segunda lectura puede devolver el nuevo valor."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo expreso de temario ITIC Academy accesible en Drive y actualización de correspondencia curricular.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 29, «Bases de datos, SQL y modelado de datos», versión 2026.1: cubre transacciones, concurrencia y niveles de aislamiento dentro de A1-64/A2-T5/D4.",
+            "nota": "Cotejo curricular directo de anomalías de concurrencia; definición terminológica contrastada con PostgreSQL 18."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5120,
+      "original": {
+        "id": 5120,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En las interfaces orientadas a objetos (OOUI) es falso que:",
+        "opciones": [
+          "los iconos representan objetos que se pueden manipular directamente",
+          "los objetos son de 3 tipos: datos, contenedores y dispositivos",
+          "un ejemplo de interfaz orientada a objeto lo representan los accesos directos de Windows, donde cada objeto tiene su propia tarea asociada",
+          "el estilo de interacción es el de acción-objeto y no el de objeto-acción"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5120,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una interfaz de interacción orientada a objetos con secuencia objeto-acción, ¿qué patrón de interacción es característico?",
+        "opciones": [
+          "Seleccionar primero un objeto y después elegir una de las acciones aplicables que ofrece la interfaz.",
+          "Elegir siempre una acción global antes de seleccionar el objeto sobre el que se aplicará.",
+          "La interfaz debe mostrar exactamente tres clases universales de objetos: datos, contenedores y dispositivos.",
+          "Cada objeto de la interfaz debe ser una instancia de una clase del código de la aplicación."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se sustituye la lista ambigua que afirmaba como universal una clasificación exacta de tres tipos de objetos. En el patrón objeto-acción se selecciona primero el objeto y después se elige una acción aplicable; no es correcto definirlo por una secuencia acción-objeto. Un acceso directo puede ser un objeto interactivo en ciertos sistemas, pero no basta por sí solo para clasificar una interfaz completa.",
+        "clasificacion": {
+          "A1": [
+            "A1-94"
+          ],
+          "A2": [
+            "A2-III-14"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 38, «Análisis, diseño y construcción de sistemas de información», versión 2026.1: incluye A1-94, prototipos y diseño de interfaces; no fija una taxonomía universal de OOUI.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular directo del ámbito de interfaces/usabilidad; la secuencia objeto-acción se comprueba en las guías CUA/EPA e IBM."
+        },
+        "etiquetas": [
+          "OOUI",
+          "interfaz orientada a objetos",
+          "objeto-acción",
+          "acción-objeto",
+          "usabilidad",
+          "diseño de interfaces"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=90090H00.txt",
+              "referencia": "U.S. EPA, Common User Interface Guidelines, §1.2.2.1: en la secuencia orientada a objetos se selecciona primero el objeto y después se ofrecen acciones aplicables."
+            },
+            {
+              "url": "https://bitsavers.computerhistory.org/pdf/ibm/pc/os2/OS2_2.x/redbooks/GG24-3774-00_OS2_V2.0_Vol_4_Writing_Applications_199301.pdf",
+              "referencia": "IBM, OS/2 Version 2, Writing Applications, §1–3: describe interfaces object-action, donde el objeto es el foco y las acciones pertinentes se ofrecen para manipularlo."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 94: prototipos y diseño de interfaces de aplicaciones."
+            },
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema III.14: usabilidad y experiencia de usuario."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 38 (versión 2026), tema A1-94 sobre prototipos y diseño de interfaces; el material cubre el área curricular, no establece una taxonomía universal de objetos OOUI."
+            }
+          ],
+          "observaciones": "Se sustituye la lista ambigua que afirmaba como universal una clasificación exacta de tres tipos de objetos. En el patrón objeto-acción se selecciona primero el objeto y después se elige una acción aplicable; no es correcto definirlo por una secuencia acción-objeto. Un acceso directo puede ser un objeto interactivo en ciertos sistemas, pero no basta por sí solo para clasificar una interfaz completa."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo expreso de temario ITIC Academy accesible en Drive y actualización de correspondencia curricular.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 38, «Análisis, diseño y construcción de sistemas de información», versión 2026.1: incluye A1-94, prototipos y diseño de interfaces; no fija una taxonomía universal de OOUI.",
+            "nota": "Cotejo curricular directo del ámbito de interfaces/usabilidad; la secuencia objeto-acción se comprueba en las guías CUA/EPA e IBM."
+          }
+        }
+      ]
+    }
+  ]
+}
