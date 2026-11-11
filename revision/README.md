@@ -18,6 +18,8 @@ Fuentes: [PAe, MÉTRICA v3 — Análisis del Sistema de Información](https://ad
 
 `node revision/revisar-lote-891.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.775 revisiones individuales, cero errores y 7.348 preguntas que aún coinciden con el original sin revisión individual.
 
+Publicación del lote 891 comprobada directamente en GitHub Pages tras el despliegue del commit `cd405e6bdda9eb1bf5e9d2262b9946c8a33a2c4f`: raíz, README, registro de cambios, script del lote e inventario responden HTTP 200. El registro servido contiene los IDs 4776–4780 y el inventario público informa 12.123 preguntas, 4.775 revisiones y 7.348 sin revisión individual; los jobs `build` y `deploy` del workflow 42949302409 finalizaron con éxito.
+
 ## Lote 890 — 11 de noviembre de 2026
 
 IDs 4771–4775 se revisaron individualmente y quedaron trazados, con versiones originales, en [cambios-lote-890.json](cambios-lote-890.json). Se comprueba la definición GoF de Bridge; se limita TRL 9 a la escala NASA de nueve niveles; se reemplaza una pregunta ambigua sobre la gratuidad general de MoReq por el encargo del modelo original por IDA; se fija el objetivo fundamental del análisis coste/beneficio de MÉTRICA v3; y se precisa la motivación de rendimiento de la desnormalización selectiva.
