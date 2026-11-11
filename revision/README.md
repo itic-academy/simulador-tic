@@ -1,6 +1,25 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 944 (IDs 5041–5045). Acumulado: 5.040 preguntas examinadas individualmente; 4.947 verificadas (891 vigentes, 3.684 corregidas y 372 históricas); 93 pendientes documentadas (40 de fuente y 53 de ambigüedad); 7.083 sin revisar individualmente. Hay 4.969 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 945 (IDs 5046–5050). Acumulado: 5.045 preguntas examinadas individualmente; 4.951 verificadas (893 vigentes, 3.686 corregidas y 372 históricas); 94 pendientes documentadas (41 de fuente y 53 de ambigüedad); 7.078 sin revisar individualmente. Hay 4.973 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+
+
+## Lote 945 — 11 de noviembre de 2026
+
+IDs 5046–5050 revisados individualmente con documentación W3C, ISTQB, RFC del IETF y Microsoft Learn. Se cotejaron los programas oficiales A1/A2 de 2025 y los bloques 15, 28, 30, 38 y 42 de ITIC Academy en Drive. El [registro del lote 945](cambios-lote-945.json) conserva los originales, las modificaciones, la justificación, las fuentes y la clasificación temática. Se precisaron los enunciados de 5047–5049 y la opción de 5050. La clave de 5046 permanece pendiente de fuente y no se considera verificada.
+
+- **5046 — derivación de sistemas existentes:** **pendiente de fuente**. Se conserva la clave original B (alta rotación de usuarios), sin validarla. La convocatoria A2 y el bloque 38 de la academia confirman que la derivación de sistemas existentes es una estrategia de determinación de requisitos, pero no justifican la condición específica sobre rotación de usuarios. Se requiere localizar la referencia técnica que respalde esa asociación. A2-III.3.
+- **5047 — pautas WAI para agentes de usuario:** respuesta B, UAAG (User Agent Accessibility Guidelines). W3C distingue UAAG de WCAG (contenido) y ATAG (herramientas de autoría); UAAG 2.0 sigue disponible como guía, aunque W3C aclara que no alcanzó el estado de Recommendation. A1-44/A2-III.14.
+- **5048 — pruebas tras cambiar otro módulo:** respuesta D, pruebas de regresión. Se vuelve a probar una zona no modificada para detectar efectos adversos del cambio. A1-96/A2-III.7.
+- **5049 — ATM en el modelo clásico de IP sobre ATM:** **corregida** para acotar el contexto; respuesta C, red no broadcast multiacceso (NBMA), como la caracteriza el IETF en RFC 1932 y RFC 2336. A1-113/A2-IV.10.
+- **5050 — Common Type System de .NET:** **corregida** la opción A: define reglas comunes para declarar, usar y administrar tipos en el CLR y facilita la interoperabilidad entre lenguajes que lo implementan. No significa interoperabilidad entre plataformas no relacionadas. A1-66/A2-III.11.
+
+Convocatorias cotejadas: [A1 GSI 2025, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 44, 66, 96 y 113; [A2 GSI AGE 2025, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), temas III.3, III.7, III.11, III.14 e IV.10.
+
+ITIC Academy cotejada en Drive como correspondencia curricular, no como autoridad técnica: [bloque 38, Análisis, diseño y construcción de sistemas](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), versión 2026.1, enumera la derivación de sistemas existentes dentro de A2 D3 y pruebas; no aporta el fundamento de la relación con rotación de usuarios de 5046; [bloque 30, Tecnologías de sistemas de la información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk), tecnologías web; [bloque 15, Metodologías ágiles y modelos de ciclo de vida](https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk), ciclo de desarrollo y pruebas; [bloque 42, Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), WAN y transmisión; [bloque 28, Arquitectura SOA y requisitos no funcionales](https://drive.google.com/file/d/11qGK4GbJ0QV81HEyboRAy5AZorijJmhs/view?usp=drivesdk), arquitectura e interoperabilidad.
+
+Fuentes técnicas: [W3C WAI, UAAG Overview](https://www.w3.org/WAI/standards-guidelines/uaag/) y [UAAG 2.0](https://www.w3.org/TR/UAAG20/); [glosario ISTQB, Regression testing](https://glossary.istqb.org/en_US/term/regression-testing); IETF [RFC 1932](https://www.rfc-editor.org/rfc/rfc1932) y [RFC 2336](https://www.rfc-editor.org/rfc/rfc2336.html), IP sobre ATM y NBMA; [Microsoft Learn, Common Type System](https://learn.microsoft.com/dotnet/standard/base-types/common-type-system).
+
+Ejecutados `node revision/revisar-lote-945.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas; 5.045 examinadas individualmente (893 vigentes, 3.686 corregidas, 372 históricas y 94 pendientes); 7.078 aún sin revisar individualmente; cero errores estructurales.
 
 
 ## Lote 944 — 11 de noviembre de 2026
