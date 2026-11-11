@@ -20,6 +20,8 @@ Fuentes jurídicas primarias: [Ley 40/2015, texto consolidado BOE](https://www.b
 
 `node revision/revisar-lote-928.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas; 4.960 examinadas individualmente (855 vigentes, 3.648 corregidas, 369 históricas y 88 pendientes); 7.163 aún sin revisar individualmente; cero errores estructurales.
 
+**Publicación del lote 928 verificada:** Deploy GitHub Pages, [workflow 43076473705](https://github.com/itic-academy/simulador-tic/actions/runs/43076473705), con los jobs `build` y `deploy` finalizados en `success` para el commit [`b62dd52`](https://github.com/itic-academy/simulador-tic/commit/b62dd5232a27f00d909ce6803447d02fea3a1e6e). GitHub Pages respondió HTTP 200 para el README, el banco y el inventario. Banco e inventario contienen 12.123 preguntas; el banco servido incluye los IDs 4961–4965 con claves 1, 2, 0, 1 y 3 en estados vigente, vigente, corregida, corregida y vigente. El inventario publicado registra 4.960 preguntas examinadas y 7.163 aún sin revisión individual.
+
 ## Lote 927 — 11 de noviembre de 2026
 
 IDs 4956–4960 revisados individualmente con los textos consolidados vigentes de las Leyes 39/2015 y 40/2015 en el BOE. Se cotejaron el temario A1/A2 de las convocatorias y el bloque 03 de ITIC Academy (versión 2026.2, 1 de octubre de 2026). El registro [cambios-lote-927.json](cambios-lote-927.json) conserva las versiones original y revisada, claves, explicaciones, fuentes oficiales, clasificación y cotejo académico. Se delimitaron dos enunciados; las otras tres claves y formulaciones eran correctas.
