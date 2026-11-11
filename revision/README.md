@@ -18,6 +18,8 @@ Fuentes técnicas: [Apache Lucene](https://lucene.apache.org/core/index.html), [
 
 `node revision/revisar-lote-903.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.835 revisiones individuales, cero errores y 7.288 preguntas todavía sin revisión individual.
 
+Publicación del lote 903 verificada tras el workflow [43029816761](https://github.com/itic-academy/simulador-tic/actions/runs/43029816761), completado correctamente para `0f3160d`. GitHub Pages devuelve HTTP 200 para README, inventario y cambios-lote-903.json; el registro publicado contiene exactamente los IDs 4836–4840 y el inventario público confirma 4.835 revisadas y 7.288 aún sin revisión individual.
+
 ## Lote 902 — 11 de noviembre de 2026
 
 IDs 4831–4835 se revisaron individualmente y quedaron trazados, con originales íntegros, en [cambios-lote-902.json](cambios-lote-902.json). Se explicita el ámbito de un modelo entidad-relación; se versiona la definición de incidente a ITIL 4; se comprueba el perfil MÉTRICA v3 del Responsable de Calidad; se reemplaza una regla económica demasiado simplificada para planes de calidad; y se formula el uso de prototipos conforme al proceso oficial de análisis.
