@@ -1,6 +1,25 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 946 (IDs 5051–5055). Acumulado: 5.050 preguntas examinadas individualmente; 4.956 verificadas (895 vigentes, 3.689 corregidas y 372 históricas); 94 pendientes documentadas (41 de fuente y 53 de ambigüedad); 7.073 sin revisar individualmente. Hay 4.977 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 947 (IDs 5056–5060). Acumulado: 5.055 preguntas examinadas individualmente; 4.961 verificadas (897 vigentes, 3.689 corregidas y 375 históricas); 94 pendientes documentadas (41 de fuente y 53 de ambigüedad); 7.068 sin revisar individualmente. Hay 5.029 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, calculadas comparando los campos textuales en los registros de lote. Los inventarios estructurales no acreditan revisión de contenido.
+
+
+## Lote 947 — 11 de noviembre de 2026
+
+IDs 5056–5060 revisados individualmente con especificaciones de JCP, RFC del IETF, estándares W3C/WHATWG, documentación de Selenium y material histórico de AXELOS para ITIL v3. Se cotejaron las convocatorias oficiales A1/A2 de 2025 y los bloques 15, 30, 39 y 41 de ITIC Academy en Drive como correspondencia curricular. El [registro del lote 947](cambios-lote-947.json) conserva originales, modificaciones, fuentes, explicaciones y clasificación temática. Se precisaron los cinco enunciados/opciones para fijar versión, alcance o época; tres conceptos históricos quedan marcados como tales.
+
+- **5056 — evolución de JAX-RPC según JSR 224:** **histórica**, respuesta B, JAX-WS. La JCP describe JAX-WS 2.0 como siguiente generación de la API de servicios web XML y dice que reemplaza JAX-RPC 1.0. A1-67/A2-III.10.
+- **5057 — posición conceptual de SSL en TCP/IP:** **histórica**, respuesta C, entre aplicación y TCP en el modelo clásico. SSL está obsoleto y fue sucedido por TLS; los RFC 6347 y 8446 documentan TLS/DTLS sobre transportes y protocolos de aplicación. No se presenta como capa autónoma del modelo TCP/IP. A1-115/A2-II.8.
+- **5058 — propiedad común entre XML y HTML5:** respuesta C, ambos son lenguajes de marcado. Compartir esta categoría no significa compartir sintaxis o reglas de análisis: HTML tiene sintaxis propia. A1-77/A2-II.9.
+- **5059 — utilidades para automatizar pruebas web:** respuesta D, Selenium. WebDriver automatiza navegadores y soporta suites de pruebas de aplicaciones web. A1-96/A2-III.7.
+- **5060 — proceso fuera de Service Strategy en ITIL v3/2011:** **histórica**, respuesta D, gestión del catálogo de servicios, que correspondía a Service Design. Finanzas, portfolio y demanda se encuadraban en Service Strategy. No proyectar esta taxonomía de procesos de v3 sobre ITIL 4. A1-106.
+
+Convocatorias cotejadas: [A1 GSI 2025, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 67, 77, 96, 106 y 115; [A2 GSI AGE 2025, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), temas II.8, II.9, III.7 e III.10.
+
+ITIC Academy cotejada en Drive, solo como mapa de temario: [bloque 30, Tecnologías de sistemas de información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk), Java y tecnologías web; [bloque 39, Calidad y mantenimiento](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk), pruebas y calidad; [bloque 41, ITIL y COBIT](https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk), gestión de servicios; [bloque 42, Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), redes y protocolos. Estos documentos no sustituyen la especificación original ni los textos oficiales.
+
+Fuentes técnicas: [JCP, JSR 224 — JAX-WS](https://jcp.org/en/jsr/detail?id=224); IETF [RFC 6347](https://www.rfc-editor.org/rfc/rfc6347) (DTLS y transporte) y [RFC 8446](https://www.rfc-editor.org/rfc/rfc8446) (TLS 1.3); [WHATWG HTML Living Standard](https://html.spec.whatwg.org/multipage/parsing.html) y [W3C XML 1.0](https://www.w3.org/TR/xml/); [Selenium](https://www.selenium.dev/index.html); [AXELOS/PeopleCert, Service Design Certificate Syllabus](https://eu-assets.contentstack.com/v3/assets/blt637b065823946b12/blt7f52cf53a523bd19/61782af27ce9a21030aa3f3d/ITIL_Intermediate_Qualification_Service_Design_Certificate_Syllabus.pdf) y [glosario ITIL 2011](https://www.itil.co.il/wp-content/uploads/2015/04/ITIL_2011_Glossary_GB-v1-0.pdf), que asignan Service Catalogue Management a Service Design.
+
+Ejecutados `node revision/revisar-lote-947.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas; 5.055 examinadas individualmente (897 vigentes, 3.689 corregidas, 375 históricas y 94 pendientes); 7.068 aún sin revisar individualmente; cero errores estructurales.
 
 
 ## Lote 946 — 11 de noviembre de 2026
