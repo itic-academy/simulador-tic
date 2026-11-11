@@ -21,6 +21,8 @@ Fuentes primarias: BOE [Ley 39/2015, arts. 30 y 126](https://www.boe.es/buscar/a
 
 `node revision/revisar-lote-937.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas; 5.005 examinadas individualmente (876 vigentes, 3.668 corregidas, 372 históricas y 89 pendientes); 7.118 aún sin revisar individualmente; cero errores estructurales.
 
+Despliegue del commit [cc7a78e](https://github.com/itic-academy/simulador-tic/commit/cc7a78e5870d8cdade24f3dc51c74fb5d8badf2d) comprobado en GitHub Pages: workflow [43091185194](https://github.com/itic-academy/simulador-tic/actions/runs/43091185194) completado con éxito; README, inventario, registro del lote y banco responden HTTP 200. El inventario servido refleja 5.005 examinadas, 7.118 pendientes de revisión individual y cero errores estructurales; las cinco entradas publicadas contienen estados y claves cotejados con el registro.
+
 
 ## Lote 936 — 11 de noviembre de 2026
 
