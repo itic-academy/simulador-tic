@@ -18,6 +18,8 @@ Fuentes técnicas primarias: [ISO/IEC/IEEE 26511:2018](https://www.iso.org/stand
 
 `node revision/revisar-lote-901.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.825 revisiones individuales, cero errores y 7.298 preguntas todavía sin revisión individual.
 
+Publicación del lote 901 verificada tras el workflow [43026471960](https://github.com/itic-academy/simulador-tic/actions/runs/43026471960), completado con éxito para el commit `ae75916318ea67b8155c01fb0e4955b65e452c9f`. En GitHub Pages, README, cambios-lote-901.json e inventario.json responden HTTP 200; el registro publicado contiene exactamente los IDs 4826–4830 y el inventario confirma 12.123 preguntas, 4.825 revisadas y 7.298 sin revisión individual.
+
 ## Lote 900 — 11 de noviembre de 2026
 
 IDs 4821–4825 se revisaron individualmente y quedaron trazados, con originales preservados, en [cambios-lote-900.json](cambios-lote-900.json). Se reemplaza una generalización imprecisa sobre el “formato más utilizado” por el caso verificable de páginas HTML servidas por CMS; se cotejan los elementos del diagrama de estructura y el diagrama de contexto con MÉTRICA v3; se distingue JMeter de herramientas de control de versiones; y se actualizan las reglas del brainstorming.
