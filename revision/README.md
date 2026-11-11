@@ -16,7 +16,9 @@ Correspondencia contrastada con [A1 GSI 2025](https://www.boe.es/diario_boe/txt.
 
 Fuentes: [ISO/IEC/IEEE 29148:2018](https://www.iso.org/standard/72089.html), ingeniería de requisitos y estado actual confirmado por ISO; [PAe, MÉTRICA v3 — Mantenimiento de Sistemas de Información](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ae15c0c5b-dd9c-4e48-82e3-9e36ba18e839/METRICA_V3_Mantenimiento_de_Sistemas_de_Informacion.pdf), clasificación del mantenimiento; [Oracle MySQL Workbench User Guide, modelado EER](https://docs.oracle.com/cd/E19078-01/mysql/mysql-workbench/wb-data-modeling.html), relación identificadora de la entidad hija con su propietaria; [OMG UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/PDF) y [introducción UML de OMG](https://www.omg.org/gettingstarted/what_is_uml.htm), elementos de interacción y mensajes; [CMU Software Engineering Institute, prototipos desechables y evolutivos](https://www.sei.cmu.edu/blog/prototyping-for-developing-big-data-systems/).
 
-`node revision/revisar-lote-894.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.790 revisiones individuales, cero errores y 7.333 preguntas que aún coinciden con el original sin revisión individual. La publicación de este lote se documentará tras verificar el despliegue.
+`node revision/revisar-lote-894.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.790 revisiones individuales, cero errores y 7.333 preguntas que aún coinciden con el original sin revisión individual.
+
+Publicación del lote 894 verificada directamente en GitHub Pages tras el workflow 43015282904 (commit `574abd347e031f6d7f2962eb08d3fbb5075e9607`): jobs `build` y `deploy` completados correctamente. README, cambios-lote-894.json, revisar-lote-894.cjs e inventario.json responden HTTP 200; el registro publicado contiene los IDs 4791–4795 y el inventario público muestra 12.123 preguntas, 4.790 revisiones y 7.333 pendientes de revisión individual.
 
 ## Lote 893 — 11 de noviembre de 2026
 
