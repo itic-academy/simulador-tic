@@ -18,6 +18,8 @@ Fuentes primarias y técnicas: [PeopleCert, ITIL 4 Problem Management](https://w
 
 `node revision/revisar-lote-895.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.795 revisiones individuales, cero errores y 7.328 preguntas aún idénticas al original y sin revisión individual.
 
+Publicación del lote 895 verificada en GitHub Pages tras el workflow 43016968121 (commit `6a37a8cd7f8ac7d614b0c18fe8bc071f77f88615`): los jobs `build` y `deploy` finalizaron correctamente. README, cambios-lote-895.json, revisar-lote-895.cjs e inventario.json responden HTTP 200; el registro público contiene los IDs 4796–4800 y el inventario publicado indica 12.123 preguntas, 4.795 revisiones y 7.328 sin revisión individual.
+
 ## Lote 894 — 11 de noviembre de 2026
 
 IDs 4791–4795 se revisaron individualmente y quedaron trazados, con los originales íntegros, en [cambios-lote-894.json](cambios-lote-894.json). Se acota qué es un requisito funcional; se confirma la definición MÉTRICA de mantenimiento perfectivo; se corrige la identificación de entidad débil; se precisa la familia UML de diagramas que modela mensajes entre objetos; y se reemplaza una pregunta de prototipado con varias respuestas defendibles por la distinción desechable/evolutivo.
