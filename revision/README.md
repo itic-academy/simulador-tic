@@ -1,6 +1,24 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 926 (IDs 4951–4955). Acumulado: 4.950 preguntas examinadas individualmente; 4.862 verificadas (849 vigentes, 3.644 corregidas y 369 históricas); 88 pendientes documentadas (38 de fuente y 50 de ambigüedad); 7.173 sin revisar individualmente. Hay 4.921 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Este recuento se recalculó sobre los registros históricos completos; los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 927 (IDs 4956–4960). Acumulado: 4.955 preguntas examinadas individualmente; 4.867 verificadas (852 vigentes, 3.646 corregidas y 369 históricas); 88 pendientes documentadas (38 de fuente y 50 de ambigüedad); 7.168 sin revisar individualmente. Hay 4.923 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Este recuento se recalculó sobre los registros históricos completos; los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 927 — 11 de noviembre de 2026
+
+IDs 4956–4960 revisados individualmente con los textos consolidados vigentes de las Leyes 39/2015 y 40/2015 en el BOE. Se cotejaron el temario A1/A2 de las convocatorias y el bloque 03 de ITIC Academy (versión 2026.2, 1 de octubre de 2026). El registro [cambios-lote-927.json](cambios-lote-927.json) conserva las versiones original y revisada, claves, explicaciones, fuentes oficiales, clasificación y cotejo académico. Se delimitaron dos enunciados; las otras tres claves y formulaciones eran correctas.
+
+- **4956 — principios de la potestad sancionadora:** la lista de los arts. 25–31 de la Ley 40/2015 comprende legalidad, irretroactividad, tipicidad, responsabilidad, proporcionalidad, prescripción y concurrencia de sanciones. Respuesta B; A1-8 y A2-I.8.
+- **4957 — constitución de órganos colegiados:** el art. 17.2 exige Presidente y Secretario (o suplentes) y al menos la mitad de los miembros; las sesiones pueden ser a distancia. Respuesta C; A1-8 y A2-I.8.
+- **4958 — alegaciones y aportación de documentos:** se delimita al art. 76.1, que fija como límite anterior al trámite de audiencia, distinguiéndolo de las alegaciones sobre defectos de tramitación del apartado 2. Respuesta C; A1-8 y A2-I.8.
+- **4959 — eficacia de los actos administrativos:** la regla del art. 39.1 es que producen efectos desde la fecha en que se dictan, salvo disposición en contrario, con posibles demoras conforme al apartado 2. Respuesta C; A1-8 y A2-I.8.
+- **4960 — reposición contra acto expreso:** el art. 124.1 establece un mes; para los actos presuntos regula separadamente la interposición en cualquier momento desde el día siguiente a producirse. Se precisa enunciado y se separan ambos supuestos. Respuesta B; A1-9 y A2-I.8.
+
+Convocatorias cotejadas: [A1 GSI 2025, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 8 (régimen jurídico/procedimiento) y 9 (recursos); [A2 GSI AGE 2025, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), tema I.8 (Ley 39/2015, Ley 40/2015 y TREBEP).
+
+ITIC Academy cotejada mediante Drive: [bloque 03, Actuación administrativa y Administración digital](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), versión 2026.2, actualizada el 01/10/2026. Sus secciones 2.4, 2.5, 3.6, 3.8 y 3.11 cubren órganos colegiados, potestad sancionadora, eficacia del acto, alegaciones y recursos. Se usa como contraste curricular, no como autoridad normativa.
+
+Fuentes jurídicas primarias: [Ley 40/2015, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566&p=20260929&tn=1), arts. 17 y 25–31; [Ley 39/2015, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565&p=20261001&tn=1), arts. 39, 76 y 124.
+
+`node revision/revisar-lote-927.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas; 4.955 examinadas individualmente (852 vigentes, 3.646 corregidas, 369 históricas y 88 pendientes); 7.168 aún sin revisar individualmente; cero errores estructurales.
 
 ## Lote 926 — 11 de noviembre de 2026
 
