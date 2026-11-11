@@ -1,6 +1,24 @@
 # Revisión del banco TIC — estado al 11 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 927 (IDs 4956–4960). Acumulado: 4.955 preguntas examinadas individualmente; 4.867 verificadas (852 vigentes, 3.646 corregidas y 369 históricas); 88 pendientes documentadas (38 de fuente y 50 de ambigüedad); 7.168 sin revisar individualmente. Hay 4.923 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Este recuento se recalculó sobre los registros históricos completos; los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial preparado: 928 (IDs 4961–4965). Acumulado: 4.960 preguntas examinadas individualmente; 4.872 verificadas (855 vigentes, 3.648 corregidas y 369 históricas); 88 pendientes documentadas (38 de fuente y 50 de ambigüedad); 7.163 sin revisar individualmente. Hay 4.925 preguntas cuyo enunciado, opciones, clave o explicación difiere del original. Este recuento se recalculó sobre los registros históricos completos; los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 928 — 11 de noviembre de 2026
+
+IDs 4961–4965 revisados individualmente con los textos vigentes de la Ley 40/2015, la Ley de Contratos del Sector Público y las Leyes Orgánicas 3/2007 y 1/2004 en el BOE. Se cotejaron las convocatorias A1/A2 y los bloques 03, 05 y 06 de ITIC Academy (versión 2026.2, 1 de octubre de 2026). El registro [cambios-lote-928.json](cambios-lote-928.json) conserva textos, claves, explicaciones, fuentes y clasificación oficial; se corrigieron dos enunciados y se verificaron las otras tres preguntas sin alterar su contenido.
+
+- **4961 — responsabilidad patrimonial:** el daño debe ser efectivo, evaluable económicamente e individualizado; fuerza mayor y daños imprevisibles o inevitables no son indemnizables en los términos de la ley. La cuantía se refiere al día de la lesión. Respuesta B; A1-10 y A2-I.8.
+- **4962 — contratos menores:** los umbrales del art. 118 son inferiores a 40.000 euros (obras) y 15.000 euros (suministros/servicios), y hay publicación conforme al art. 63.4. Respuesta C; A1-11; sin equivalente específico A2.
+- **4963 — tipos de contratos públicos:** se corrige la fecha de la Ley 9/2017 a 8 de noviembre; el software TIC a medida se considera servicio, los servicios sucesivos por precio unitario siguen siendo servicios y la concesión transfiere el riesgo operacional al concesionario. Respuesta A; A1-11; sin equivalente específico A2.
+- **4964 — actos discriminatorios en negocios jurídicos:** el art. 10 de la LO 3/2007 los declara nulos y sin efecto; se corrige también la errata «22. de marzo» del enunciado. Respuesta B; A1-16 y A2-I.5.
+- **4965 — ámbito personal de la LO 1/2004:** comprende relaciones actuales o pasadas de matrimonio o afectividad análoga, aun sin convivencia. Respuesta D; A1-16 y A2-I.5.
+
+Convocatorias cotejadas: [A1 GSI 2025, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 10, 11 y 16; [A2 GSI AGE 2025, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), temas I.5 (igualdad/violencia) e I.8 (Ley 40/2015); la contratación pública no tiene epígrafe equivalente específico.
+
+ITIC Academy cotejada mediante Drive: [bloque 03, Actuación administrativa](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), sección 2.6, responsabilidad patrimonial; [bloque 05, Contratación, presupuestos y compra TIC](https://drive.google.com/file/d/14iahY0cgkiV8RESN81b8pHdD4K3UbSOj/view?usp=drivesdk), tema A1-11, sin equivalente en A2; [bloque 06, Economía, sociedad, empleo y transformación digital](https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk), epígrafe académico O5, cotejado con los temas oficiales A1-16 y A2-I.5 de igualdad y violencia de género. Son cotejos curriculares, no fuentes normativas.
+
+Fuentes jurídicas primarias: [Ley 40/2015, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566&p=20260929&tn=1), arts. 32 y 34; [Ley 9/2017, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902&p=20240802&tn=1), arts. 14, 16, 17, 63 y 118; [LO 3/2007, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115&p=20240802&tn=1), art. 10; [LO 1/2004, texto consolidado BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2004-21760), art. 1.1.
+
+`node revision/revisar-lote-928.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas; 4.960 examinadas individualmente (855 vigentes, 3.648 corregidas, 369 históricas y 88 pendientes); 7.163 aún sin revisar individualmente; cero errores estructurales.
 
 ## Lote 927 — 11 de noviembre de 2026
 
