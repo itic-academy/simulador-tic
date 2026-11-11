@@ -18,7 +18,7 @@ Fuentes: [IIBA ECBA Competencies](https://www.iiba.org/business-analysis-certifi
 
 `node revision/revisar-lote-905.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados. Inventario: 12.123 preguntas válidas, 4.845 revisiones individuales, cero errores; 7.278 preguntas todavía sin revisar individualmente. El verificador confirma también las etiquetas de interfaz.
 
-Publicación del lote 905 pendiente de workflow de GitHub Actions y verificación de Pages.
+Publicación del lote 905 verificada tras el workflow [43032511262](https://github.com/itic-academy/simulador-tic/actions/runs/43032511262), completado correctamente para `ac9ec18`. GitHub Pages devuelve HTTP 200 para README, inventario y `cambios-lote-905.json`; el registro publicado contiene exactamente los IDs 4846–4850 y el inventario publicado confirma 4.845 revisadas y 7.278 todavía sin revisión individual.
 
 ## Lote 904 — 11 de noviembre de 2026
 
