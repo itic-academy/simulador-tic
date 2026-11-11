@@ -18,6 +18,8 @@ Fuentes primarias y técnicas: [ISO/IEC/IEEE 12207:2026](https://www.iso.org/sta
 
 `node revision/revisar-lote-904.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.840 revisiones individuales, cero errores y 7.283 preguntas todavía sin revisión individual.
 
+Publicación del lote 904 verificada tras el workflow [43031001210](https://github.com/itic-academy/simulador-tic/actions/runs/43031001210), completado correctamente para `c6e7fd2`. GitHub Pages devuelve HTTP 200 para README, inventario y cambios-lote-904.json; el registro publicado contiene exactamente los IDs 4841–4845 y el inventario público confirma 4.840 revisadas y 7.283 todavía sin revisión individual.
+
 ## Lote 903 — 11 de noviembre de 2026
 
 IDs 4836–4840 se revisaron individualmente, conservando el original y el resultado en [cambios-lote-903.json](cambios-lote-903.json). Se desambigua la identificación de herramientas de recuperación de texto; se evita tratar “función” como categoría DFD normalizada; se separan métodos de estimación del esfuerzo de medidas de tamaño; se identifica la modalidad Embedded por sus restricciones y se corrige la clave de la representación de flujos DFD.
