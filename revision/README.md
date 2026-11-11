@@ -18,6 +18,8 @@ Fuentes primarias y técnicas: [ISACA, COBIT](https://www.isaca.org/resources/co
 
 `node revision/revisar-lote-897.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.805 revisiones individuales y 7.318 preguntas que aún no han recibido revisión individual.
 
+Publicación del lote 897 verificada tras el workflow [43020194840](https://github.com/itic-academy/simulador-tic/actions/runs/43020194840), cuyo estado público indica éxito para el commit `e9e47c94dcfbf980514e0bfcf74108137ec95354`. En GitHub Pages, README, cambios-lote-897.json, revisar-lote-897.cjs e inventario.json responden HTTP 200; el registro servido contiene exactamente los IDs 4806–4810 y el inventario publicado indica 12.123 preguntas, 4.805 revisadas y 7.318 sin revisión individual.
+
 ## Lote 896 — 11 de noviembre de 2026
 
 IDs 4801–4805 se revisaron individualmente y quedaron trazados, con los originales íntegros, en [cambios-lote-896.json](cambios-lote-896.json). Se confirma y corrige una errata en la finalidad de los factores críticos de éxito de MÉTRICA; se actualiza la norma de documentación de usuario a ISO/IEC/IEEE 26514:2022; se resuelve la multiplicidad de lecturas sobre la transformación de relaciones 1:N; se precisa el análisis como fase de requisitos en cascada; y se hace inequívoca la identificación de RUP mediante sus cuatro fases.
