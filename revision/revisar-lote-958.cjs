@@ -1,0 +1,85 @@
+const fs=require('node:fs'),path=require('node:path');
+const aplicar=require('./aplicar-lote.cjs');
+const ref=(url,referencia)=>({url,referencia});
+const a1='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938';
+const a2='https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262';
+const records=[
+ [5111,['58'],['II-6'],['cliente-servidor','arquitectura distribuida','recursos compartidos','almacenamiento'],[
+  ref('https://learn.microsoft.com/en-us/windows/win32/rpc/the-model-for-distributed-systems','Microsoft Learn, The Model for Distributed Systems: en el modelo tradicional se separan los componentes cliente y servidor; el servidor puede proporcionar procesos de back-end, como acceso a bases de datos.'),
+  ref('https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/approaches/storage-data','Microsoft Azure Architecture Center, Architectural Approaches for Storage and Data in Multitenant Solutions: documenta alternativas con bases de datos dedicadas por inquilino, entre otros patrones de almacenamiento; un sistema cliente-servidor no requiere universalmente un único repositorio de datos.'),
+  ref(a1,'Convocatoria A1 GSI 2025, tema 58: procesamiento cooperativo y arquitectura cliente-servidor.'),
+  ref(a2,'Convocatoria A2 GSI 2025, tema II.6: arquitectura cliente-servidor y multicapa, componentes, ventajas e inconvenientes.'),
+  ref('https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk','ITIC Academy, bloque 28, Arquitectura SOA y requisitos no funcionales, versión 2026.2: incluye explícitamente A1-58 y A2-T6 cliente-servidor; cotejo curricular.')
+ ],null,'Se transforma la pregunta negativa original en una afirmación universal comprobable. Los papeles de cliente y servidor y la prestación de servicios son definitorios; centralizar todos los datos en un solo almacén puede ser una opción de diseño, pero no una condición necesaria. Se evita afirmar que toda implementación debe servir varios clientes de forma concurrente.', 'corregida'],
+ [5112,['79'],['IV-12'],['cifrado de flujo','WAKE','RC4','SEAL','MD5','función hash','algoritmos históricos'],[
+  ref('https://www.cix.co.uk/~klockstone/wake.htm','David J. Wheeler, A Bulk Data Encryption Algorithm (WAKE), informe técnico de la Universidad de Cambridge: algoritmo de cifrado de flujo basado en una clave/estado de ejecución.'),
+  ref('https://datatracker.ietf.org/doc/html/rfc6229','IETF RFC 6229, Test Vectors for the Stream Cipher RC4: identifica expresamente RC4 como cifrador de flujo; RFC 7465 desaconseja RC4 en TLS.'),
+  ref('https://web.cs.ucdavis.edu/~rogaway/papers/seal-abstract.html','Phillip Rogaway y Don Coppersmith, A Software-Optimized Encryption Algorithm (SEAL): la salida de la familia seudoaleatoria puede utilizarse como keystream de un cifrado Vernam.'),
+  ref('https://datatracker.ietf.org/doc/html/rfc1321','IETF RFC 1321, The MD5 Message-Digest Algorithm: define MD5 como algoritmo de resumen de mensaje, no como cifrador.'),
+  ref('https://datatracker.ietf.org/doc/html/rfc6151','IETF RFC 6151, Updated Security Considerations for MD5: actualiza las advertencias de seguridad del algoritmo MD5; la clasificación conceptual como hash se distingue de su seguridad actual.'),
+  ref(a1,'Convocatoria A1 GSI 2025, tema 79: algoritmos de cifrado simétricos y asimétricos y función hash.'),
+  ref(a2,'Convocatoria A2 GSI 2025, tema IV.12: técnicas criptográficas y protocolos seguros.'),
+  ref('https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk','ITIC Academy, bloque 48, Seguridad en redes y en el nivel de aplicación, versión 2026.1: incluye criptografía simétrica y funciones hash; cotejo curricular general, no atribuye actualidad ni seguridad a WAKE, RC4, SEAL o MD5.')
+ ],null,'Se precisa que MD5 es una función hash (message digest), mientras WAKE, RC4 y SEAL son algoritmos de cifrado de flujo de carácter histórico. La pregunta evalúa clasificación, no recomienda su empleo: RC4 y MD5 presentan problemas de seguridad conocidos y no deben inferirse como opciones criptográficas actuales.', 'corregida'],
+ [5113,['64'],['II-5'],['modelo relacional','relación','grado','atributos','tuplas'],[
+  ref('https://db.dobo.sk/wp-content/uploads/2015/11/Codd_1970_A_relational_model.pdf','E. F. Codd, A Relational Model of Data for Large Shared Data Banks (CACM, 1970), §1.3: define una relación de grado n sobre n dominios y n-tuplas; en la representación tabular el grado corresponde al número de atributos/columnas.'),
+  ref(a1,'Convocatoria A1 GSI 2025, tema 64: modelo relacional y lenguaje SQL.'),
+  ref(a2,'Convocatoria A2 GSI 2025, tema II.5: SGBD relacionales y lenguaje SQL.'),
+  ref('https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk','ITIC Academy, bloque 29, Bases de datos, versión 2026: modelo relacional, A1-64 y A2-T5; el grado/encabezado se coteja con el modelo relacional, sin reemplazar la definición de Codd.')
+ ],null,'Se conserva la respuesta D: el grado de una relación es el número de atributos (columnas/domínios de la relación), no el número de tuplas o filas. Se sustituyen distractores redundantes para que cada alternativa mida un concepto diferente.', 'corregida'],
+ [5114,['77'],['III-12'],['CSS','CSS Grid Layout','diseño web','filas','columnas','estándares W3C'],[
+  ref('https://www.w3.org/TR/css-grid-1/','W3C CSS Grid Layout Module Level 1: define un sistema bidimensional de cuadrícula que organiza el espacio mediante filas, columnas y áreas de grid.'),
+  ref('https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938','Convocatoria A1 GSI 2025, tema 77: HTML, CSS, XML y compatibilidad con estándares.'),
+  ref(a2,'Convocatoria A2 GSI 2025, tema III.12: aplicaciones web y desarrollo front-end y en servidor.'),
+  ref('https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk','ITIC Academy, bloque 30, Tecnologías de sistemas de información, actualización 2026: sección de CSS incluye módulos, Flexbox y Grid y distingue el layout bidimensional; cotejo curricular.')
+ ],null,'Se reemplaza la denominación imprecisa «CSS3» como versión monolítica por «CSS Grid Layout». Grid está diseñado para disposición bidimensional de filas y columnas; Bootstrap es un framework, el flujo de bloques es otro modelo y Matrix no es un módulo de layout CSS.', 'corregida'],
+ [5115,['64'],['II-5'],['ORM','mapeo objeto-relacional','objetos','tablas relacionales','persistencia'],[
+  ref('https://jakarta.ee/specifications/persistence/3.2/jakarta-persistence-spec-3.2.html','Jakarta Persistence 3.2, especificación final: define un estándar de persistencia y mapeo objeto/relacional para administrar datos relacionales mediante un modelo de dominio Java.'),
+  ref('https://learn.microsoft.com/en-us/ef/ef6/','Microsoft Learn, Entity Framework 6: describe un O/RM como tecnología para usar datos relacionales mediante objetos de dominio .NET y reducir código de acceso a datos.'),
+  ref(a1,'Convocatoria A1 GSI 2025, tema 64: modelo relacional y lenguaje SQL.'),
+  ref(a2,'Convocatoria A2 GSI 2025, tema II.5: arquitectura ANSI/SPARC y SGBD relacionales.'),
+  ref('https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk','ITIC Academy, bloque 29, Bases de datos, versión 2026: persistencia y modelos relacionales/objeto-relacionales; cotejo curricular.'),
+  ref('https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk','ITIC Academy, bloque 30, Tecnologías de sistemas de información, actualización 2026: explica JPA/Jakarta Persistence como persistencia y mapeo objeto-relacional; cotejo curricular directo.')
+ ],null,'Se precisa la función de un ORM: facilita mapear clases/objetos del dominio a tablas y filas relacionales y gestionar la persistencia, reduciendo parte del código de acceso manual. No se define como conversión a documentos NoSQL ni como traducción entre interfaces de drivers.', 'corregida']
+];
+const edits={
+ 5111:{texto:'En una arquitectura cliente-servidor, ¿cuál de estas afirmaciones NO es necesariamente cierta para todas las implementaciones?',opciones:['El cliente solicita operaciones o recursos ofrecidos por un servidor.','El servidor proporciona servicios o recursos a los clientes que los solicitan.','Los papeles de cliente y servidor pueden estar separados aunque se ejecuten en un mismo equipo físico.','Toda la información importante debe residir en un único sistema de almacenamiento compartido.'],respuesta_correcta:3,comentarios:'La separación cliente/servidor describe papeles de interacción, no obliga a centralizar todos los datos en un único almacén: una solución distribuida puede usar servicios y almacenes distintos. La centralización sí puede ser una decisión de una implementación concreta.'},
+ 5112:{texto:'¿Cuál de estos algoritmos NO es un cifrador simétrico de flujo, sino una función hash?',opciones:['WAKE.','RC4.','SEAL.','MD5.'],respuesta_correcta:3,comentarios:'WAKE, RC4 y SEAL son cifradores de flujo históricos; MD5 produce un resumen de mensaje y no cifra. Esta clasificación no recomienda el uso actual de los algoritmos: RC4 y MD5 tienen debilidades conocidas y no deben elegirse para nuevos diseños.'},
+ 5113:{texto:'En el modelo relacional, el grado de una relación (representada como tabla) es el número de:',opciones:['Tuplas o filas que la forman.','Claves candidatas que contiene.','Valores distintos presentes en sus filas.','Atributos o columnas que la forman.'],respuesta_correcta:3,comentarios:'El grado es la aridad de la relación: el número de atributos (columnas). El número de tuplas/filas es la cardinalidad de la relación.'},
+ 5114:{texto:'¿Qué modelo de disposición de CSS organiza explícitamente los elementos en una cuadrícula bidimensional de filas y columnas?',opciones:['Bootstrap.','Flujo de bloques.','CSS Grid Layout.','Matrix.'],respuesta_correcta:2,comentarios:'CSS Grid Layout es el modelo de cuadrícula bidimensional con filas, columnas y áreas. «CSS3» no constituye una versión monolítica: CSS se desarrolla en módulos con niveles propios.'},
+ 5115:{texto:'¿Qué facilita principalmente un mapeador objeto-relacional (ORM) al usar una base de datos relacional?',opciones:['Mapear objetos/clases del modelo de dominio a tablas/filas y gestionar su persistencia.','Convertir automáticamente objetos en documentos de una base de datos documental.','Convertir tipos de datos de un controlador JDBC.','Traducir una aplicación ADO.NET a OLE DB.'],respuesta_correcta:0,comentarios:'Un ORM relaciona el modelo orientado a objetos con el modelo relacional y ayuda a persistir y consultar entidades usando objetos; reduce parte del código de acceso, pero no elimina las decisiones de diseño ni las consultas especializadas.'}
+};
+const batchPath=path.join(__dirname,'cambios-lote-958.json');
+if(!fs.existsSync(batchPath))aplicar({numero:'958',fecha:'2026-11-12',records,edits});
+else {
+ const existing=JSON.parse(fs.readFileSync(batchPath,'utf8'));
+ if(JSON.stringify(existing.cambios.map(x=>x.id))!==JSON.stringify(records.map(x=>x[0])))throw new Error('Existe un registro 958 con IDs diferentes; no se sobrescribe.');
+}
+
+// Segundo paso del mismo lote: dejar constancia del cotejo del temario de Academy,
+// sin atribuirle autoridad normativa ni contenidos que no aparecen en sus documentos.
+const root=path.join(__dirname,'..'),qfile=path.join(root,'preguntas_preparatic.json'),logfile=path.join(__dirname,'cambios-lote-958.json');
+let raw=fs.readFileSync(qfile,'utf8');const data=JSON.parse(raw),log=JSON.parse(fs.readFileSync(logfile,'utf8'));
+const academy={
+ 5111:['ITIC Academy, bloque 28 «Arquitectura SOA y requisitos no funcionales», versión 2026.2, epígrafe A1 58/A2 T6 sobre arquitectura cliente-servidor.','Cotejo curricular directo con el bloque 28 y los epígrafes oficiales A1-58/A2-II.6.'],
+ 5112:['ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1, sección de criptografía simétrica y funciones hash; el material no convierte los algoritmos citados en recomendaciones vigentes.','Cotejo curricular general de criptografía con bloque 48; la clasificación de los algoritmos se verifica en sus fuentes técnicas primarias.'],
+ 5113:['ITIC Academy, bloque 29 «Bases de datos», versión 2026, modelo relacional y atributos/tuplas.','Cotejo curricular directo con el modelo relacional del bloque 29 y A1-64/A2-II.5.'],
+ 5114:['ITIC Academy, bloque 30 «Tecnologías de sistemas de información», actualización 2026, sección CSS sobre módulos, Flexbox y Grid.','Cotejo curricular directo: el documento distingue Grid bidimensional de Flexbox; especificación técnica primaria W3C.'],
+ 5115:['ITIC Academy, bloques 29 «Bases de datos» y 30 «Tecnologías de sistemas de información», versión 2026; el bloque 30 identifica JPA/Jakarta Persistence con persistencia y mapeo objeto-relacional.','Cotejo curricular directo de ORM/JPA en bloque 30 y contextual de bases de datos en bloque 29; el alcance se contrasta con la especificación de Jakarta Persistence.']
+};
+const byId=new Map();
+for(const [key,values] of Object.entries(academy)){
+ const [block,note]=values;
+ const id=Number(key),q=data.preguntas.find(x=>x.id===id),entry=log.cambios.find(x=>x.id===id);
+ if(!q||!entry||entry.actualizada.revision.estado!=='corregida')throw new Error('No coincide el lote 958 en ID '+id);
+ if(q.clasificacion.bloque_academia===block&&q.clasificacion.nota===note)continue;
+ const prev={bloque_academia:q.clasificacion.bloque_academia,nota:q.clasificacion.nota};
+ q.clasificacion.bloque_academia=block;q.clasificacion.nota=note;
+ entry.correcciones_posteriores=[...(entry.correcciones_posteriores||[]),{fecha:'2026-11-12',motivo:'Cotejo expreso del programa accesible de ITIC Academy en Drive; se reemplaza la nota genérica pendiente por una correspondencia respaldada o una declaración acotada.',clasificacion_anterior:prev,clasificacion_actualizada:{bloque_academia:block,nota:note}}];
+ entry.actualizada=structuredClone(q);byId.set(id,entry.actualizada);
+}
+let count=0;
+raw=raw.replace(/^    \{[\s\S]*?^    \}/gm,block=>{const old=JSON.parse(block),next=byId.get(old.id);if(!next)return block;count++;return JSON.stringify(next,null,2).split('\n').map(line=>'    '+line).join('\n');});
+if(count!==5||JSON.stringify(JSON.parse(raw))!==JSON.stringify(data))throw new Error(`Reescritura segura falló: ${count}`);
+fs.writeFileSync(qfile,raw);fs.writeFileSync(logfile,JSON.stringify(log,null,2)+'\n');
+console.log(`Lote 958: ${count} preguntas revisadas; se cotejó Academy y quedó trazado en el registro.`);
