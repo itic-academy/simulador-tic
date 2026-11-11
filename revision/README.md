@@ -18,6 +18,8 @@ Fuentes técnicas: [PAe, MÉTRICA v3 — Análisis del Sistema de Información](
 
 `node revision/revisar-lote-899.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.815 revisiones individuales, cero errores y 7.308 preguntas todavía sin revisión individual.
 
+Publicación del lote 899 verificada tras el workflow [43023481265](https://github.com/itic-academy/simulador-tic/actions/runs/43023481265), completado con éxito para el commit `e1286c655945a434adbbbb0b5e58bbe8de642262`. En GitHub Pages, README, cambios-lote-899.json e inventario.json responden HTTP 200; el registro publicado contiene exactamente los IDs 4816–4820 y el inventario indica 12.123 preguntas, 4.815 revisiones y 7.308 sin revisión individual.
+
 ## Lote 898 — 11 de noviembre de 2026
 
 IDs 4811–4815 se revisaron individualmente y quedaron trazados, con sus versiones originales íntegras, en [cambios-lote-898.json](cambios-lote-898.json). Se precisa la relación histórica entre cascada y modelo por etapas; se define JAD como taller conjunto y facilitado; se ancla la formulación de las vueltas espirales a NASA; se corrige el rol del analista en MÉTRICA v3; y se distingue el propósito funcional principal de los casos de uso de las restricciones no funcionales complementarias.
