@@ -260012,71 +260012,287 @@
       "id": 5096,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿En qué consisten los segmentos de memoria virtual en el Sistema Operativo Windows?",
+      "texto": "En Windows, ¿qué describe mejor una región de memoria virtual reservada mediante VirtualAlloc?",
       "opciones": [
-        "Bloques de memoria virtual de longitud variable que pertenecen al mismo proceso",
-        "Bloques de memoria virtual de longitud fija que pertenecen al mismo proceso",
-        "Bloques memoria virtual de longitud fija que no tienen relación entre ellos",
-        "Ninguno de los anteriores"
+        "Un intervalo de direcciones virtuales del proceso que abarca páginas contiguas; su tamaño puede variar y se ajusta a la granularidad de página.",
+        "Un conjunto de direcciones físicas contiguas al que acceden directamente todos los procesos.",
+        "Una única página de tamaño variable definido por cada aplicación.",
+        "Un segmento de longitud fija que el sistema comparte automáticamente entre procesos."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La expresión original «segmentos de memoria virtual» no es una descripción precisa del modelo de memoria virtual de Windows. Microsoft documenta espacios privados por proceso, asignaciones de regiones de páginas y tamaño redondeado a páginas, no segmentos uniformes de longitud fija. Se reescribe el reactivo sobre regiones reservadas por VirtualAlloc; las páginas tienen granularidad fija para el sistema, pero una región puede abarcar una cantidad variable de páginas. Respuesta A.",
+      "clasificacion": {
+        "A1": [
+          "A1-61"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Windows",
+        "memoria virtual",
+        "VirtualAlloc",
+        "regiones",
+        "páginas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc",
+            "referencia": "Microsoft Learn, VirtualAlloc: reserva, confirma o cambia el estado de una región de páginas del espacio virtual del proceso; el tamaño se redondea a límites de página y puede especificarse en bytes."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/win32/memory/working-with-pages",
+            "referencia": "Microsoft Learn, Working with Pages: VirtualQuery describe regiones de páginas contiguas con el mismo estado, asignación y protección; la granularidad de página depende del sistema."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 61: sistemas operativos Microsoft, fundamentos, administración, instalación y gestión."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.2: características técnicas y administración de sistemas operativos, incluidos Windows."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 47, sistemas operativos y Windows: cotejo curricular general; no se atribuye al material la terminología específica de VirtualAlloc."
+          }
+        ],
+        "observaciones": "La expresión original «segmentos de memoria virtual» no es una descripción precisa del modelo de memoria virtual de Windows. Microsoft documenta espacios privados por proceso, asignaciones de regiones de páginas y tamaño redondeado a páginas, no segmentos uniformes de longitud fija. Se reescribe el reactivo sobre regiones reservadas por VirtualAlloc; las páginas tienen granularidad fija para el sistema, pero una región puede abarcar una cantidad variable de páginas. Respuesta A."
+      }
     },
     {
       "id": 5097,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dado el siguiente fragmento de WSDL 1.1, indique cuál es el modelo abstracto de transmisión que soporta la operación nmtoken: <wsdl:operation name=\"nmtoken\" parameterOrder=\"nmtokens\"> <wsdl:output name=\"nmtoken\"? message=\"qname\"/> <wsdl:input name=\"nnmtoken\"? message=\"qname\"/> <wsdl:fault name=\"nnmtoken\" message=\"qname\"/>* </wsdl:operation>",
+      "texto": "En WSDL 1.1, ¿qué patrón de operación abstracta se define por un mensaje de salida seguido de uno de entrada y cero o más mensajes de fallo?",
       "opciones": [
-        "One-way.",
-        "Request-response.",
-        "Solicit-response.",
-        "Notification."
+        "One-way",
+        "Request-response",
+        "Solicit-response",
+        "Notification"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El orden output→input, junto con faults opcionales, identifica en WSDL 1.1 el patrón solicit-response: el servicio inicia la comunicación enviando un mensaje y recibe una respuesta correlacionada. Se conserva la opción C. Se normaliza el fragmento y se explicita el patrón para que el ejercicio mida la gramática, sin errores tipográficos distractores.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-II-6",
+          "A2-III-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "WSDL",
+        "WSDL 1.1",
+        "servicios web",
+        "solicit-response",
+        "operaciones abstractas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/wsdl.html#_porttypes",
+            "referencia": "W3C Note WSDL 1.1, §2.4.3: la operación solicit-response contiene primero output y luego input, con cero o más fault; el endpoint envía un mensaje y recibe la respuesta correlacionada."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 65: desarrollo web e interconexión con sistemas y servicios."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.6: arquitectura de servicios web; tema III.12: estándares, protocolos e interoperabilidad de servicios web."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, tecnologías de sistemas de información: referencia curricular general a aplicaciones y servicios; no se localizó un tratamiento directo del patrón WSDL solicit-response."
+          }
+        ],
+        "observaciones": "El orden output→input, junto con faults opcionales, identifica en WSDL 1.1 el patrón solicit-response: el servicio inicia la comunicación enviando un mensaje y recibe una respuesta correlacionada. Se conserva la opción C. Se normaliza el fragmento y se explicita el patrón para que el ejercicio mida la gramática, sin errores tipográficos distractores."
+      }
     },
     {
       "id": 5098,
       "bloque": 0,
       "tema": 0,
-      "texto": "Que característica de Java no es completamente cierta:",
+      "texto": "¿Cuál de estas expresiones sobre Java debe entenderse como un lema de portabilidad, no como una garantía incondicional para cualquier programa y plataforma?",
       "opciones": [
-        "Es independiente del SO",
-        "Es independiente de la plataforma",
-        "Es independiente del HW",
-        "Write once run everywhere"
+        "Una JVM compatible puede ejecutar bytecode Java conforme a la plataforma Java.",
+        "La JVM y las bibliotecas de la plataforma abstraen parte de las diferencias de hardware y sistema operativo.",
+        "El uso de interfaces nativas puede introducir dependencias específicas de una plataforma.",
+        "«Write once, run anywhere»."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "«Write once, run anywhere» es un lema que resume la portabilidad buscada por Java cuando se ejecuta sobre una plataforma Java compatible; no constituye una garantía absoluta para cualquier programa y entorno. Por ejemplo, JNI puede introducir funciones o bibliotecas dependientes de la plataforma. El resto de opciones se acota para distinguir el diseño portable del carácter no universal del lema. Respuesta D.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Java",
+        "portabilidad",
+        "JVM",
+        "JNI",
+        "independencia de plataforma"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html",
+            "referencia": "Oracle Java Tutorials, The Java Technology: el entorno Java y la JVM aíslan la aplicación de la plataforma subyacente y permiten ejecutar la misma aplicación en distintas plataformas compatibles."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/26/docs/specs/jni/intro.html",
+            "referencia": "Oracle, JNI Specification, §1: el código nativo permite utilizar funciones dependientes de la plataforma; aplicaciones que usan JNI pueden requerir código o bibliotecas específicos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 67: entorno de desarrollo Java."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III.10: arquitectura Java EE/Jakarta EE y características de funcionamiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, tecnologías de sistemas de información: encaje general de plataformas de desarrollo; no se cita como fuente de la especificación JNI."
+          }
+        ],
+        "observaciones": "«Write once, run anywhere» es un lema que resume la portabilidad buscada por Java cuando se ejecuta sobre una plataforma Java compatible; no constituye una garantía absoluta para cualquier programa y entorno. Por ejemplo, JNI puede introducir funciones o bibliotecas dependientes de la plataforma. El resto de opciones se acota para distinguir el diseño portable del carácter no universal del lema. Respuesta D."
+      }
     },
     {
       "id": 5099,
       "bloque": 0,
       "tema": 0,
-      "texto": "Sobre la órbita a 36.000km de distancia de la superficie de la tierra, señale la respuesta correcta:",
+      "texto": "Un satélite describe una órbita circular ecuatorial de unos 35.786 km de altitud, con período igual a la rotación terrestre. ¿Qué tipo de órbita le permite permanecer sobre el mismo punto de la superficie?",
       "opciones": [
-        "Se llama GEO o geoestacionaria",
-        "Se llama MEO o terrestre media",
-        "Traza una circunferencia elíptica",
-        "Se realiza en sentido antihorario"
+        "GEO geoestacionaria.",
+        "MEO (órbita terrestre media).",
+        "Una órbita elíptica polar.",
+        "Una órbita ecuatorial que avanza en sentido contrario a la rotación terrestre."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La altitud por sí sola no determina que una órbita sea geoestacionaria: también se requieren órbita circular, plano ecuatorial y período igual a la rotación terrestre. Se incorpora ese contexto y se usa la altitud nominal de 35.786 km (aprox. 36.000 km); así, la opción correcta es GEO/geoestacionaria. GEO no es sinónimo de cualquier órbita geosíncrona.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "satélites",
+        "GEO",
+        "órbita geoestacionaria",
+        "telecomunicaciones",
+        "medios no guiados"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://science.nasa.gov/earth/earth-observatory/catalog-of-earth-satellite-orbits/",
+            "referencia": "NASA Earth Observatory, Catalog of Earth Satellite Orbits: a unos 35.786 km sobre la superficie, el período orbital coincide con la rotación terrestre; para permanecer sobre un punto se requiere la órbita geostationary."
+          },
+          {
+            "url": "https://www.nasa.gov/missions/tdrs/tracking-and-data-relay-satellite-tdrs-generations-of-spacecraft/",
+            "referencia": "NASA, Tracking and Data Relay Satellite: caracteriza GEO por su altitud aproximada de 35.786 km; la órbita geoestacionaria es geosíncrona y mantiene la posición relativa respecto al suelo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 108: redes de telecomunicaciones, medios de transmisión e infraestructuras de acceso."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.7: medios de transmisión, incluidos los no guiados o inalámbricos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026: contexto curricular de redes y transmisión; no se atribuye una cifra orbital concreta al material sin localizarla."
+          }
+        ],
+        "observaciones": "La altitud por sí sola no determina que una órbita sea geoestacionaria: también se requieren órbita circular, plano ecuatorial y período igual a la rotación terrestre. Se incorpora ese contexto y se usa la altitud nominal de 35.786 km (aprox. 36.000 km); así, la opción correcta es GEO/geoestacionaria. GEO no es sinónimo de cualquier órbita geosíncrona."
+      }
     },
     {
       "id": 5100,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el marco del e-learning, SCORM designa:",
+      "texto": "En e-learning, ¿qué significa SCORM y cuál es su finalidad principal?",
       "opciones": [
-        "Al programa de partida de la iniciativa ISO JTC1 SC36.",
-        "A una versión de la guía AGR010.",
-        "Al organismo norteamericano federal de normalización técnica para el e-learning.",
-        "Al conjunto de estándares y especificaciones de ADL."
+        "Un comité de ISO que acredita individualmente a los tutores virtuales.",
+        "Una versión de la guía administrativa AGR010 para impartir cursos a distancia.",
+        "El organismo federal estadounidense que aprueba toda norma técnica de formación en línea.",
+        "Sharable Content Object Reference Model: un modelo de referencia promovido por ADL para facilitar la interoperabilidad de contenidos de aprendizaje con LMS conformes."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "SCORM significa Sharable Content Object Reference Model. Es un modelo de referencia de ADL que especifica convenciones técnicas para la interoperabilidad de contenidos formativos con sistemas de gestión del aprendizaje; ADL lo promueve, pero no es un organismo general de normalización. La opción D queda corregida para incluir nombre y alcance con precisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-73"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SCORM",
+        "ADL",
+        "e-learning",
+        "interoperabilidad",
+        "LMS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-11",
+        "fuentes": [
+          {
+            "url": "https://www.adlnet.gov/assets/uploads/ChoosingAnLMS.pdf",
+            "referencia": "Advanced Distributed Learning (ADL), Choosing an LMS: SCORM significa Sharable Content Object Reference Model y define la relación entre componentes, modelos de datos y protocolos para compartir contenidos entre sistemas conformes."
+          },
+          {
+            "url": "https://www.adlnet.gov/assets/uploads/SCORM2004-3rd_ImpactSummary.pdf",
+            "referencia": "ADL, SCORM 2004 3rd Edition Impact Summary: desarrolla el nombre completo Sharable Content Object Reference Model y su naturaleza de modelo de referencia."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 73: e-learning, conceptos, herramientas, sistemas de implantación y normalización."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "ITIC Academy, documento 33, temas 73–74 «E-Learning y GIS», versión 2026: cotejo curricular directo del tema e-learning; no sustituye la documentación de ADL."
+          }
+        ],
+        "observaciones": "SCORM significa Sharable Content Object Reference Model. Es un modelo de referencia de ADL que especifica convenciones técnicas para la interoperabilidad de contenidos formativos con sistemas de gestión del aprendizaje; ADL lo promueve, pero no es un organismo general de normalización. La opción D queda corregida para incluir nombre y alcance con precisión."
+      }
     },
     {
       "id": 5101,
