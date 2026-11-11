@@ -1,0 +1,464 @@
+{
+  "fecha": "2026-11-12",
+  "alcance": "IDs 5136–5140; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 5136,
+      "original": {
+        "id": 5136,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué se necesita para poder aprovechar la tecnología HyperThreading?",
+        "opciones": [
+          "Procesador Intel Pentium 4 y Windows 2003",
+          "Procesador Sun SPARC y Solaris",
+          "Procesador Intel Core 2 Duo y Linux",
+          "Procesador Sun SPARC y Windows 2000"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5136,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué condiciones permiten habilitar Intel Hyper-Threading en un procesador Pentium 4?",
+        "opciones": [
+          "Procesador Pentium 4 que admita HT, chipset y BIOS compatibles con la función y un sistema operativo que la soporte.",
+          "Procesador Sun SPARC con Solaris.",
+          "Procesador Intel Core 2 Duo con cualquier distribución de Linux.",
+          "Procesador Sun SPARC con Windows 2000."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La opción histórica «Pentium 4 y Windows 2003» era incompleta y dependía de modelo y plataforma. Intel especifica que hace falta un Pentium 4 compatible con HT, chipset y BIOS que habiliten la función y un sistema operativo compatible; se expresa el conjunto sin atarlo a una versión concreta de Windows.",
+        "clasificacion": {
+          "A1": [
+            "A1-54"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "Material de hardware accesible en Drive, «Tema 52, 53, 54, 56, 57 y 131 - Hardware v2_2026», aborda procesadores, chipset y menciona HyperThreading; la lista de requisitos se verifica exclusivamente con documentación de Intel.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular A1-54/A2-II-1, sin trasladar una simplificación histórica del material a la respuesta técnica."
+        },
+        "etiquetas": [
+          "Intel",
+          "Hyper-Threading",
+          "Pentium 4",
+          "chipset",
+          "BIOS",
+          "sistema operativo"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.intel.com/content/dam/support/us/en/documents/processors/24919969.pdf",
+              "referencia": "Intel, Pentium 4 Processor Specification Update: Hyper-Threading requiere un procesador Pentium 4 que lo soporte, chipset habilitado, BIOS habilitada y sistema operativo compatible."
+            },
+            {
+              "url": "https://www.intel.com/content/dam/support/us/en/documents/processors/pentium4/sb/30235002.pdf",
+              "referencia": "Intel, Pentium 4 Extreme Edition specifications: recomienda activar Hyper-Threading con chipset, BIOS y sistema operativo compatibles; documenta la limitación de versiones antiguas de Windows."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 54: equipos personales y conectividad de PC/dispositivos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.1: informática básica, arquitectura de ordenadores y componentes."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12heek9CTZHiGHjtWvLjdjOE7vIQdlYFm/view?usp=drivesdk",
+              "referencia": "Material de hardware en Drive, «Tema 52, 53, 54, 56, 57 y 131 - Hardware v2_2026»: incluye microprocesadores, chipset y una referencia a HyperThreading. Se usa como cotejo de temario, no para los requisitos de plataforma que se verifican con Intel."
+            }
+          ],
+          "observaciones": "La opción histórica «Pentium 4 y Windows 2003» era incompleta y dependía de modelo y plataforma. Intel especifica que hace falta un Pentium 4 compatible con HT, chipset y BIOS que habiliten la función y un sistema operativo compatible; se expresa el conjunto sin atarlo a una versión concreta de Windows."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo de materiales de preparación accesibles en Drive; se separa correspondencia curricular de respaldo técnico específico.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "Material de hardware accesible en Drive, «Tema 52, 53, 54, 56, 57 y 131 - Hardware v2_2026», aborda procesadores, chipset y menciona HyperThreading; la lista de requisitos se verifica exclusivamente con documentación de Intel.",
+            "nota": "Cotejo curricular A1-54/A2-II-1, sin trasladar una simplificación histórica del material a la respuesta técnica."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5137,
+      "original": {
+        "id": 5137,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Tenemos dos discos sobre los que está instalada una base de datos, y además en el disco 2 se ubica el fichero de log backup. Sabiendo que la copia de la base de datos es posterior a la del fichero de log cual sería la forma de proceder si el disco 2 cae:",
+        "opciones": [
+          "Restaurar la base completa con su última copia y rehacer las transacciones manualmente a partir de esa fecha",
+          "Restaurar la base y recuperar automáticamente del fichero de log",
+          "Restaurar la parte de las tablas y ficheros del disco dos y luego manualmente rehacer las transacciones",
+          "Ninguna de las respuestas anteriores es correcta"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5137,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En SQL Server con modelo de recuperación completa se dispone de una copia de seguridad completa de la base de datos tomada después del único backup del registro de transacciones. Si se pierde el disco que contenía ese backup antiguo del log, ¿cómo se recupera la base al menos hasta el momento de la copia completa?",
+        "opciones": [
+          "Restaurar la copia completa; el backup de log anterior no se aplica sobre ella. Para avanzar más allá hacen falta backups de log posteriores a la copia completa y una cadena íntegra.",
+          "Restaurar primero el log antiguo sobre la base ya restaurada y después aplicar la copia completa como si fuera un log.",
+          "Restaurar solo las tablas del disco afectado; la secuencia de backups no importa.",
+          "Aplicar cualquier backup de log disponible sin comprobar el orden ni el punto de partida."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "El original no identifica el SGBD, el modelo de recuperación ni el objetivo temporal, por lo que no determina una secuencia universal de restauración. Se acota a SQL Server en modelo completo: al ser el único backup de log anterior al backup completo, no se aplica sobre este; se restaura el backup completo al punto que contiene. Para avanzar después hacen falta los backups de log posteriores al completo y sin huecos. La caída del disco que solo contiene el log antiguo no impide recuperar hasta el backup completo disponible.",
+        "clasificacion": {
+          "A1": [
+            "A1-56",
+            "A1-63"
+          ],
+          "A2": [
+            "A2-II-5",
+            "A2-IV-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1, cubre administración y transacciones de SGBD; no se localizó en el material accesible una secuencia de restauración específica de SQL Server.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular del área A1-56/A1-63 y A2-II-5/IV-2; recuperación acotada y verificada con Microsoft Learn."
+        },
+        "etiquetas": [
+          "SQL Server",
+          "copias de seguridad",
+          "restauración",
+          "backup completo",
+          "registro de transacciones",
+          "cadena de log"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/plan-and-perform-restore-sequences-full-recovery-model?view=sql-server-ver17",
+              "referencia": "Microsoft Learn, SQL Server, restore sequences in full recovery model: restaurar el backup completo más reciente, diferencial aplicable y luego todos los log backups posteriores al backup de datos en orden."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/apply-transaction-log-backups-sql-server?view=sql-server-ver15",
+              "referencia": "Microsoft Learn, Apply Transaction Log Backups: solo se aplican logs posteriores a la copia completa/diferencial restaurada y deben seguir una cadena íntegra en orden cronológico."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, temas 56 (copias de seguridad) y 63 (SGBD)."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, II.5 (SGBD) y IV.2 (administración de SGBD)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1: cubre SGBD, SQL, transacciones y administración. Se coteja el ámbito, no una secuencia particular de restauración SQL Server."
+            }
+          ],
+          "observaciones": "El original no identifica el SGBD, el modelo de recuperación ni el objetivo temporal, por lo que no determina una secuencia universal de restauración. Se acota a SQL Server en modelo completo: al ser el único backup de log anterior al backup completo, no se aplica sobre este; se restaura el backup completo al punto que contiene. Para avanzar después hacen falta los backups de log posteriores al completo y sin huecos. La caída del disco que solo contiene el log antiguo no impide recuperar hasta el backup completo disponible."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo de materiales de preparación accesibles en Drive; se separa correspondencia curricular de respaldo técnico específico.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1, cubre administración y transacciones de SGBD; no se localizó en el material accesible una secuencia de restauración específica de SQL Server.",
+            "nota": "Cotejo curricular del área A1-56/A1-63 y A2-II-5/IV-2; recuperación acotada y verificada con Microsoft Learn."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5138,
+      "original": {
+        "id": 5138,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo divide el software Ubuntu?",
+        "opciones": [
+          "En secciones llamadas componentes.",
+          "Los componentes principales son main, restricted, universe, commercial y multiverse.",
+          "El componente multiverse contiene los paquetes sin soporte debido a que no cumple los requisitos de Software Libre.",
+          "Todas son correctas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5138,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la documentación actual de Ubuntu, ¿qué afirmación sobre el componente multiverse de sus repositorios es correcta?",
+        "opciones": [
+          "Es el componente principal, con software libre mantenido y con soporte oficial de Canonical.",
+          "Contiene paquetes con restricciones de licencia, mantenidos por la comunidad y sin soporte oficial de Canonical.",
+          "Es el componente en el que Canonical ofrece soporte oficial a todos los paquetes comunitarios.",
+          "Commercial es uno de los cuatro componentes actuales del archivo estándar de Ubuntu."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La distribución Ubuntu separa el archivo en main, restricted, universe y multiverse; «commercial» no es un componente actual. Multiverse contiene paquetes con restricciones de licencia que no reciben soporte oficial de Canonical. Se rehacen las opciones para que solo una sea correcta según la documentación actual, sin usar la antigua división.",
+        "clasificacion": {
+          "A1": [
+            "A1-60",
+            "A1-69"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "Se encontró en Drive material antiguo ASTIC sobre software libre que menciona Ubuntu, pero no un bloque accesible de ITIC Academy que confirme la clasificación actual main/restricted/universe/multiverse.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular A1-60/69 y A2-II-2; la taxonomía de repositorios se contrasta con documentación vigente de Ubuntu."
+        },
+        "etiquetas": [
+          "Ubuntu",
+          "Linux",
+          "repositorios",
+          "componentes",
+          "main",
+          "restricted",
+          "universe",
+          "multiverse"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://ubuntu.com/server/docs/how-to/software/package-management/",
+              "referencia": "Ubuntu Server documentation, APT repositories: los componentes del archivo son main, restricted, universe y multiverse; explica soporte y mantenimiento de cada componente."
+            },
+            {
+              "url": "https://ubuntu.com/server/docs/tutorial/managing-software/",
+              "referencia": "Ubuntu Server documentation, Managing your software: main y restricted cuentan con soporte oficial; universe y multiverse tienen mantenimiento comunitario; multiverse contiene software con restricciones de licencia."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, temas 60 (sistemas UNIX-LINUX) y 69 (software libre y de código abierto)."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.2: sistemas operativos, incluidos Linux."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 47 «Aplicaciones móviles y sistemas operativos», versión 2026: cotejo curricular del área Linux/Ubuntu; no se atribuye al temario una enumeración vigente de componentes de APT."
+            }
+          ],
+          "observaciones": "La distribución Ubuntu separa el archivo en main, restricted, universe y multiverse; «commercial» no es un componente actual. Multiverse contiene paquetes con restricciones de licencia que no reciben soporte oficial de Canonical. Se rehacen las opciones para que solo una sea correcta según la documentación actual, sin usar la antigua división."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo de materiales de preparación accesibles en Drive; se separa correspondencia curricular de respaldo técnico específico.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "Se encontró en Drive material antiguo ASTIC sobre software libre que menciona Ubuntu, pero no un bloque accesible de ITIC Academy que confirme la clasificación actual main/restricted/universe/multiverse.",
+            "nota": "Cotejo curricular A1-60/69 y A2-II-2; la taxonomía de repositorios se contrasta con documentación vigente de Ubuntu."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5139,
+      "original": {
+        "id": 5139,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué son los hives en Windows?",
+        "opciones": [
+          "Grupos de claves y valores de registro.",
+          "La organización del registro organizado en un único volumen.",
+          "Cada grupo masivo de archivos se mantiene en varios archivos separados.",
+          "Todas son correctas."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5139,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el Registro de Windows, ¿qué es un hive (colmena)?",
+        "opciones": [
+          "Un grupo lógico de claves, subclaves y valores del Registro, respaldado por ficheros y cargado en memoria.",
+          "Una única pareja formada por el nombre de una clave y un valor de datos.",
+          "El volumen físico único donde se guarda toda la base del Registro.",
+          "Un tipo de archivo ejecutable que instala una aplicación de Microsoft Store."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Un hive no es una sola pareja clave/valor ni un volumen único: es un grupo lógico de claves, subclaves y valores respaldado por uno o varios ficheros y cargado en memoria. Se reemplazan las opciones confusas por definiciones incompatibles con la documentación de Windows.",
+        "clasificacion": {
+          "A1": [
+            "A1-61"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 47 «Aplicaciones móviles y sistemas operativos», versión 2026, cubre el ámbito de Windows; no se confirmó cobertura específica de la estructura de hives del Registro.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular contextual A1-61/A2-II-2, sin atribuir al material Academy el detalle del Registro."
+        },
+        "etiquetas": [
+          "Windows",
+          "Registro de Windows",
+          "hives",
+          "colmenas",
+          "claves",
+          "subclaves",
+          "valores"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/registry-hives",
+              "referencia": "Microsoft Learn, Registry Hives: un hive es un grupo lógico de claves, subclaves y valores con ficheros de soporte que se carga en memoria al iniciar el sistema o iniciar sesión."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry/",
+              "referencia": "Microsoft Learn, Structure of the Registry: describe el registro como base jerárquica de claves, subclaves y valores."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 61: sistemas operativos Microsoft."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.2: fundamentos y administración de sistemas operativos Windows."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 47 «Aplicaciones móviles y sistemas operativos», versión 2026: incluye sistemas Windows; no se encontró cobertura accesible específica de hives del Registro."
+            }
+          ],
+          "observaciones": "Un hive no es una sola pareja clave/valor ni un volumen único: es un grupo lógico de claves, subclaves y valores respaldado por uno o varios ficheros y cargado en memoria. Se reemplazan las opciones confusas por definiciones incompatibles con la documentación de Windows."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo de materiales de preparación accesibles en Drive; se separa correspondencia curricular de respaldo técnico específico.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 47 «Aplicaciones móviles y sistemas operativos», versión 2026, cubre el ámbito de Windows; no se confirmó cobertura específica de la estructura de hives del Registro.",
+            "nota": "Cotejo curricular contextual A1-61/A2-II-2, sin atribuir al material Academy el detalle del Registro."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5140,
+      "original": {
+        "id": 5140,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Recuerda los nombres de los inventores del lenguaje C?",
+        "opciones": [
+          "Hewlett y Packard",
+          "Ritchie y Kernighan",
+          "Stalling y Black",
+          "Bell Laboratories"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5140,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Quién desarrolló el lenguaje de programación C en Bell Labs a comienzos de los años setenta?",
+        "opciones": [
+          "Hewlett y Packard.",
+          "Dennis Ritchie.",
+          "Bell Laboratories como entidad, sin una persona diseñadora identificada.",
+          "Ken Thompson y Brian Kernighan conjuntamente."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Dennis Ritchie desarrolló el lenguaje C en Bell Labs a comienzos de los años setenta. Brian Kernighan fue coautor con Ritchie del libro The C Programming Language, pero no suele identificarse como creador del lenguaje. La pregunta deja de pedir “nombres de inventores” en plural. No se asigna tema A1 porque el programa A1 consultado no contiene un epígrafe específico sobre C; A2-II.3 sí trata lenguajes de programación.",
+        "clasificacion": {
+          "A1": [],
+          "A2": [
+            "A2-II-3"
+          ],
+          "bloque_academia": "La búsqueda en los materiales Academy accesibles no encontró una unidad dedicada al origen o autoría del lenguaje C; el cotejo se limita a que el epígrafe A2-II.3 incluye características de lenguajes y paradigmas.",
+          "estado": "revisada",
+          "nota": "Sin correspondencia Academy directa confirmada; la atribución histórica se contrasta con el artículo de Dennis Ritchie y su biografía de Bell Labs."
+        },
+        "etiquetas": [
+          "lenguaje C",
+          "Dennis Ritchie",
+          "Bell Labs",
+          "historia de la programación",
+          "Brian Kernighan"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.bell-labs.com/usr/dmr/www/chist.pdf",
+              "referencia": "Dennis M. Ritchie, «The Development of the C Language», Bell Labs: relato del propio diseñador sobre el desarrollo de C en Bell Labs a comienzos de los años setenta."
+            },
+            {
+              "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/bigbio1st.html",
+              "referencia": "Dennis M. Ritchie, biografía archivada de Bell Labs: explica que añadió tipos y sintaxis al lenguaje B de Ken Thompson, dando lugar a C."
+            },
+            {
+              "url": "https://www.computerhistory.org/profile/dennis-ritchie/",
+              "referencia": "Computer History Museum, perfil de Dennis Ritchie: atribuye a Ritchie la creación de C y a Ritchie/Thompson la creación conjunta de UNIX."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.3: características técnicas de lenguajes y paradigmas de programación."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30 sobre tecnologías de sistemas de información; incluye Java y lenguajes web, pero no se encontró cobertura específica sobre el origen de C. Se anota solo como cotejo curricular general."
+            }
+          ],
+          "observaciones": "Dennis Ritchie desarrolló el lenguaje C en Bell Labs a comienzos de los años setenta. Brian Kernighan fue coautor con Ritchie del libro The C Programming Language, pero no suele identificarse como creador del lenguaje. La pregunta deja de pedir “nombres de inventores” en plural. No se asigna tema A1 porque el programa A1 consultado no contiene un epígrafe específico sobre C; A2-II.3 sí trata lenguajes de programación."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo de materiales de preparación accesibles en Drive; se separa correspondencia curricular de respaldo técnico específico.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "La búsqueda en los materiales Academy accesibles no encontró una unidad dedicada al origen o autoría del lenguaje C; el cotejo se limita a que el epígrafe A2-II.3 incluye características de lenguajes y paradigmas.",
+            "nota": "Sin correspondencia Academy directa confirmada; la atribución histórica se contrasta con el artículo de Dennis Ritchie y su biografía de Bell Labs."
+          }
+        }
+      ]
+    }
+  ]
+}
