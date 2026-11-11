@@ -21,6 +21,8 @@ Fuentes primarias: OWASP [Testing Guide 4.0, marco de cinco fases](https://www.o
 
 `node revision/revisar-lote-936.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas; 5.000 examinadas individualmente (874 vigentes, 3.666 corregidas, 371 históricas y 89 pendientes); 7.123 aún sin revisar individualmente; cero errores estructurales.
 
+Despliegue del commit [2e4bd46](https://github.com/itic-academy/simulador-tic/commit/2e4bd4634a6a7c557e2b7a0e08d1b1aa5684c8b0) comprobado en GitHub Pages: workflow [43089855457](https://github.com/itic-academy/simulador-tic/actions/runs/43089855457) completado con éxito; README, inventario, registro del lote y banco responden HTTP 200. El inventario servido refleja 5.000 examinadas, 7.123 sin revisar y cero errores estructurales; el registro conserva exactamente los IDs 5001–5005 y el banco publicado muestra sus cinco claves, estados y clasificaciones.
+
 
 ## Lote 935 — 11 de noviembre de 2026
 
