@@ -18,7 +18,7 @@ ITIC Academy cotejada: [bloque de Protección de Datos A1-27/A2-I.7](https://dri
 
 Fuentes primarias: [LOPDGDD consolidada — BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673), título X, arts. 80–82 y art. 35; [Constitución Española consolidada — BOE](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229), arts. 87.2 y 166; [Reglamento (UE) 2016/679 — EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj/spa), art. 37.5; [Ley 9/2017 consolidada a 9 de abril de 2026 — BOE](https://www.boe.es/eli/es/l/2017/11/08/9/con/20260409), arts. 29.2 y 44.
 
-`node revision/revisar-lote-910.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados. Inventario: 12.123 preguntas válidas, 4.870 revisiones individuales, cero errores y 7.253 preguntas todavía sin revisar individualmente. Publicación pendiente de verificar tras el workflow.
+`node revision/revisar-lote-910.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados. Inventario: 12.123 preguntas válidas, 4.870 revisiones individuales, cero errores y 7.253 preguntas todavía sin revisar individualmente. Publicación del lote 910 verificada tras el workflow [43041509236](https://github.com/itic-academy/simulador-tic/actions/runs/43041509236), completado correctamente para `acd9b86`: GitHub Pages devuelve HTTP 200 para README, inventario y `cambios-lote-910.json`; el registro publicado contiene exactamente los IDs 4871–4875 y el inventario desplegado confirma 4.870 revisadas (848 vigentes, 3.571 corregidas, 365 históricas y 86 pendientes) y 7.253 todavía sin revisar individualmente.
 
 ## Lote 909 — 11 de noviembre de 2026
 
