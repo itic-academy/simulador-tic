@@ -18,6 +18,8 @@ Fuentes: [NASA Software Engineering Handbook, SWE-019 — modelos incremental y 
 
 `node revision/revisar-lote-892.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check` ejecutados: 12.123 preguntas estructuralmente válidas, 4.780 revisiones individuales, cero errores y 7.343 preguntas que aún coinciden con el original sin revisión individual.
 
+Publicación del lote 892 verificada directamente en GitHub Pages tras el workflow 43012690452 (commit `4743a5823b011c6b7b3f9dfbaa14cf88e8972bfe`), con los jobs `build` y `deploy` completados correctamente. Raíz, README, registro del lote, script e inventario responden HTTP 200; el registro servido contiene los IDs 4781–4785 y el inventario público refleja 12.123 preguntas, 4.780 revisiones y 7.343 sin revisión individual.
+
 ## Lote 891 — 11 de noviembre de 2026
 
 IDs 4776–4780 se revisaron individualmente y quedaron trazados, con el original íntegro, en [cambios-lote-891.json](cambios-lote-891.json). Se precisa la secuencia de actividades ASI de MÉTRICA v3; se distingue el nivel de integración del nivel de pruebas del sistema; se acota la definición de herencia al modelo de clases; se corrige la definición insuficiente del ciclo en cascada; y se pregunta por el establecimiento de líneas base aprobadas en gestión de configuración.
