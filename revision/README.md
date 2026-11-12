@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 12 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1049 (IDs 5566–5570); también se resolvió el pendiente histórico ID 77. Acumulado: 5.565 preguntas examinadas individualmente; 5.466 verificadas (982 vigentes, 4.071 corregidas y 413 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.558 sin revisar individualmente. Hay 5.540 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1050 (IDs 5571–5575); también se resolvió el pendiente histórico ID 77. Acumulado: 5.570 preguntas examinadas individualmente; 5.471 verificadas (983 vigentes, 4.075 corregidas y 413 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.553 sin revisar individualmente. Hay 5.545 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
 
 ## Pendiente anterior resuelto — ID 77 (12 de noviembre de 2026)
 
@@ -9,6 +9,20 @@ La consulta de la publicación primaria de 15-09-2015 permite cerrar el pendient
 ## Lote 1046 — 12 de noviembre de 2026
 
 ## Lote 1047 — 12 de noviembre de 2026
+
+## Lote 1050 — 12 de noviembre de 2026
+
+IDs 5571–5575 revisados individualmente. Se verificó la referencia vigente del modelo OSI; se corrigió una pregunta que aceptaba a la vez los cuatro enunciados sobre ventana deslizante; se precisó qué constituye un láser; se restableció la lista formal de atributos MEF de Carrier Ethernet; y se contextualizó la distribución de etiquetas MPLS para evitar afirmar que una implementación concreta siempre requiere los mismos protocolos.
+
+- **5571 — norma del modelo OSI:** **vigente**, respuesta A. ISO confirma que ISO/IEC 7498-1:1994 continúa siendo la edición vigente confirmada del modelo de referencia básico; UIT-T X.200 es la recomendación equivalente, pero no es una de las opciones. A1-111/A2-IV.8.
+- **5572 — ventana deslizante TCP:** **corregida**, respuesta B. La ventana limita datos en tránsito y se actualiza con confirmaciones y la ventana anunciada; no cuenta necesariamente segmentos completos. Los ACK selectivos permiten informar bloques fuera de orden, pero no son requisito de la ventana deslizante. A1-108/A2-IV.8.
+- **5573 — principio del láser:** **corregida**, respuesta A. La amplificación por emisión estimulada ocurre en un medio activo excitado dentro de una cavidad óptica; se eliminó la definición reducida a una onda confinada. A1-108/A2-IV.7.
+- **5574 — atributos de Carrier Ethernet:** **corregida**, respuesta C. MEF enumera servicios estandarizados, escalabilidad, fiabilidad, QoS y gestión del servicio; “gestión de la calidad” no es un sexto atributo distinto. A1-108/113/A2-IV.8.
+- **5575 — arquitectura MPLS:** **corregida**, respuesta D. RFC 3031 define FEC, bindings de etiquetas y distintos procedimientos/mecanismos de distribución; no obliga a OSPF y LDP como únicos protocolos. Se reformuló porque “no necesita OSPF/BGP” depende de la configuración/plano de control y era demasiado absoluto. A1-108/113/A2-IV.8/IV.13.
+
+Fuentes primarias/técnicas: [ISO/IEC 7498-1:1994, estado actual](https://www.iso.org/standard/20269.html) y [UIT-T X.200](https://www.itu.int/rec/T-REC-X.200); [RFC 9293, TCP](https://www.rfc-editor.org/rfc/rfc9293.html) y [RFC 2018, confirmación selectiva TCP](https://www.rfc-editor.org/rfc/rfc2018.html); [NIST, funcionamiento del láser](https://www.nist.gov/history/nists-role-laser-measurements-and-applications/what-laser) y [OSHA, cavidad, bombeo y medio activo](https://www.osha.gov/otm/section-3-health-hazards/chapter-6); [MEF, atributos Carrier Ethernet](https://www.mef.net/wp-content/uploads/2010/10/MEF-Presentation-Overview-of-MEF-28.pdf); [RFC 3031, arquitectura MPLS](https://www.rfc-editor.org/rfc/rfc3031.html), [RFC 3032, pila de etiquetas](https://www.rfc-editor.org/rfc/rfc3032.html), [RFC 5036, LDP](https://www.rfc-editor.org/rfc/rfc5036.html) y [RFC 3209, RSVP-TE](https://www.rfc-editor.org/rfc/rfc3209.html). Programas: [A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo con [ITIC Academy 2026, bloque 42 Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk): apartados 1.2 OSI, TCP/ventana deslizante, fuentes ópticas, Carrier Ethernet y 7.5 MPLS; el temario orienta la clasificación y no sustituye las fuentes técnicas primarias.
+
+Ejecutados `node revision/revisar-lote-1050.cjs`, `node revision/academia-lote-1050.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 5.570 revisiones individuales, 99 pendientes explícitas y 6.553 preguntas por revisar individualmente; cero errores estructurales.
 
 ## Lote 1049 — 12 de noviembre de 2026
 
