@@ -275584,71 +275584,291 @@
       "id": 5366,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según la ITU-T una “red basada en paquetes que permite prestar servicios de telecomunicación y en la que se pueden utilizar múltiples tecnologías de transporte de banda ancha propiciadas por la QoS, y en la que las funciones relacionadas con los servicios son independientes de las tecnologías subyacentes relacionadas con el transporte. Permite a los usuarios el acceso sin trabas a redes y a proveedores de servicios y/o servicios de su elección. Se soporta movilidad generalizada que permitirá la prestación coherente y ubicua de servicios a los usuarios” es:",
+      "texto": "Según la definición de NGN de la Recomendación UIT-T Y.2001, ¿qué red basada en paquetes permite utilizar múltiples tecnologías de transporte de banda ancha con QoS, mantiene independientes las funciones de servicio y transporte, facilita el acceso abierto a redes y servicios y admite movilidad generalizada?",
       "opciones": [
         "RDSI (Red Digital de Servicios Integrados).",
         "RTPC (Red Telefónica Pública Conmutada).",
         "GSM (Sistema Global para comunicaciones móviles).",
-        "NGN ((Red de próxima generación)."
+        "NGN (red de próxima generación)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "ITU-T Y.2001 remains in force; the wording is substantially the recommendation’s NGN definition. Answer D. Minor punctuation and terminology normalization do not alter the proposition. Academy coverage confirmed in Protocols 2026.",
+      "clasificacion": {
+        "A1": [
+          "A1-116"
+        ],
+        "A2": [
+          "A2-IV-14"
+        ],
+        "bloque_academia": "ITIC Academy, bloque Protocolos 2026: redes NGN/IMS, VoIP y QoS; cotejo curricular directo.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo en el material académico de ITIC Academy indicado en revision/README.md; las conclusiones técnicas se apoyan en las fuentes primarias de la ficha."
+      },
+      "etiquetas": [
+        "NGN",
+        "ITU-T Y.2001",
+        "redes de nueva generación"
+      ],
+      "revision": {
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-Y.2001",
+            "referencia": "ITU-T Recommendation Y.2001, General overview of NGN (in force): defines NGN as a packet-based network, with service functions independent of transport, QoS-supported broadband transport, open access and generalized mobility."
+          },
+          {
+            "url": "https://www.itu.int/en/ITU-T/gsi/ngn/Pages/definition.aspx",
+            "referencia": "ITU-T overview reproduces the defining NGN characteristics and confirms the terminology in the question."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 116: NGN/IMS, VoIP/ToIP and convergent services."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.14: NGN/IMS and convergent services."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, block Protocols 2026: NGN/IMS, VoIP, QoS and convergent services; directly checked for curricular mapping."
+          }
+        ],
+        "observaciones": "ITU-T Y.2001 remains in force; the wording is substantially the recommendation’s NGN definition. Answer D. Minor punctuation and terminology normalization do not alter the proposition. Academy coverage confirmed in Protocols 2026.",
+        "estado": "vigente"
+      }
     },
     {
       "id": 5367,
       "bloque": 0,
       "tema": 0,
-      "texto": "TCP Wrappers es un sistema que permite controlar el acceso a:",
+      "texto": "Históricamente, ¿qué control proporcionaba TCP Wrappers (libwrap) en sistemas Unix que lo soportaban?",
       "opciones": [
-        "Los servidores de una máquina UNIX. En concreto, permite filtrar conexiones no deseadas y permitir conexiones legítimas. Las reglas que se configuran son muy sencillas haciendo uso de un par de ficheros.",
-        "los servidores de una máquina UNIX. En concreto, permite filtrar conexiones no deseadas y permitir conexiones legítimas a un nivel muy bajo de la capa OSI por lo que podemos prescindir del uso de cortafuegos.",
-        "cada servicio que está corriendo en una máquina UNIX. Para ello es necesario tener instalado el GUI o entorno gráfico que nos permite configurar cada una de las reglas.",
-        "cada servicio que está corriendo en una máquina UNIX de manera remota. Es utilizado por los auditores de seguridad cuando se pretende interceptar paquetes TCP en una red. Se acompaña del uso de algún lenguaje de alto nivel como JAVA para su configuración."
+        "Restringía el acceso de clientes a determinados demonios de red mediante reglas de hosts.allow y hosts.deny.",
+        "Filtraba paquetes en una capa inferior y hacía innecesario un cortafuegos.",
+        "Exigía un entorno gráfico para configurar cada servicio.",
+        "Interceptaba remotamente paquetes TCP y se configuraba mediante Java."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Reactivo histórico: TCP Wrappers/libwrap controls which clients may connect to supported network daemons, traditionally through hosts.allow and hosts.deny. It is not a low-layer firewall substitute; the technology is absent from RHEL 8 and should not be presented as a current deployment recommendation. Original answer A describes its historical purpose.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 Seguridad de redes y aplicación, 2026: controles de acceso a servicios y cortafuegos; cotejo curricular directo. Se mantiene como conocimiento histórico.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo en el material académico de ITIC Academy indicado en revision/README.md; las conclusiones técnicas se apoyan en las fuentes primarias de la ficha."
+      },
+      "etiquetas": [
+        "TCP Wrappers",
+        "control de acceso",
+        "histórica",
+        "Unix"
+      ],
+      "revision": {
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://manpages.ubuntu.com/manpages/jammy/man5/hosts.allow.5.html",
+            "referencia": "hosts_access(5), Ubuntu Jammy manpage: host access control for network daemons uses client/server patterns and hosts.allow/hosts.deny."
+          },
+          {
+            "url": "https://manpages.ubuntu.com/manpages/noble/man3/hosts_access.3.html",
+            "referencia": "hosts_access(3), Ubuntu Noble manpage: libwrap implements rules-based access controls for network services."
+          },
+          {
+            "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/8.0_release_notes/RHEL_8_0_release",
+            "referencia": "Red Hat Enterprise Linux 8 release notes: tcp_wrappers was removed; use firewall rules or application-level configuration instead. This marks the technology as legacy, not its historical purpose."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 125: network security, firewalls and access control."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: network security and access control."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, block 48 Security in Networks & Application, 2026: network access controls, firewalls and security mechanisms; curriculum mapping checked."
+          }
+        ],
+        "observaciones": "Reactivo histórico: TCP Wrappers/libwrap controls which clients may connect to supported network daemons, traditionally through hosts.allow and hosts.deny. It is not a low-layer firewall substitute; the technology is absent from RHEL 8 and should not be presented as a current deployment recommendation. Original answer A describes its historical purpose.",
+        "estado": "historica"
+      }
     },
     {
       "id": 5368,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el subsistema de Operación y Mantenimiento de GSM existe una Base de Datos denominada EIR (Equipment Identity Register). ¿Cuál es su función?",
+      "texto": "En la arquitectura GSM, ¿qué función cumple principalmente el Equipment Identity Register (EIR)?",
       "opciones": [
-        "Guardar la información de los móviles bajo su área de cobertura en ese momento.",
-        "Guardar la información de los móviles que están autorizado para usar a red.",
-        "Guardar la información de los móviles que tienen prohibido utilizar la red por algún motivo.",
-        "Base de datos con la facturación del móvil que está haciendo uso de la red."
+        "Registra qué móviles están bajo cobertura en cada momento.",
+        "Mantiene identidades de abonado autorizadas para usar la red.",
+        "Registra identidades de equipo (IMEI) y permite consultar listas, incluida la lista negra de equipos a los que se deniega el servicio.",
+        "Almacena la facturación de cada móvil."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "The original answer C captures the blacklist purpose but overstates the EIR as a database only of forbidden mobiles. Reframe the question around its role: it records equipment identities (IMEI) and supports checking whether equipment is barred. Keep C as the intended answer, explicitly limited to the blacklist.",
+      "clasificacion": {
+        "A1": [
+          "A1-123"
+        ],
+        "A2": [
+          "A2-IV-15"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 46 Comunicaciones inalámbricas y móviles, 2026: arquitectura GSM y redes móviles; cotejo curricular directo.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo en el material académico de ITIC Academy indicado en revision/README.md; las conclusiones técnicas se apoyan en las fuentes primarias de la ficha."
+      },
+      "etiquetas": [
+        "GSM",
+        "EIR",
+        "IMEI",
+        "comunicaciones móviles"
+      ],
+      "revision": {
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.etsi.org/deliver/etsi_ts/123000_123099/123002/11.04.00_60/ts_123002v110400p.pdf",
+            "referencia": "ETSI TS 123 002 / 3GPP TS 23.002, §4.1.1.3, EIR: equipment identities (IMEIs) may be classified into white, grey and black lists; the EIR supports identifying equipment barred from service. Primary 3GPP/ETSI specification."
+          },
+          {
+            "url": "https://www.etsi.org/deliver/etsi_ts/123000_123099/123016/18.00.00_60/ts_123016v180000p.pdf",
+            "referencia": "ETSI TS 123 016 / 3GPP TS 23.016, current Release 18 specification on international mobile equipment identities and EIR-related procedures; corroborates the equipment-identity function."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 123: mobile communications and generations of mobile telephony."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.15: mobile communication systems and generations."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy, block 46 Wireless/Mobile 2026: GSM and mobile network architecture; checked for curricular coverage."
+          }
+        ],
+        "observaciones": "The original answer C captures the blacklist purpose but overstates the EIR as a database only of forbidden mobiles. Reframe the question around its role: it records equipment identities (IMEI) and supports checking whether equipment is barred. Keep C as the intended answer, explicitly limited to the blacklist.",
+        "estado": "corregida"
+      }
     },
     {
       "id": 5369,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué método de control de acceso está dirigida al usuario?",
+      "texto": "¿Qué modelo de control de acceso permite al propietario de un recurso decidir qué sujetos pueden acceder y con qué permisos?",
       "opciones": [
-        "No discrecional",
-        "MAC",
-        "Basado en identidades",
-        "DAC"
+        "Control no discrecional administrado centralmente.",
+        "Control de acceso obligatorio (MAC), basado en política y etiquetas de seguridad.",
+        "Control basado exclusivamente en la identidad del sujeto; no especifica quién puede conceder permisos.",
+        "Control de acceso discrecional (DAC)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "The phrase «dirigido al usuario» did not uniquely distinguish identity-based access from DAC. Rewrite the criterion as control in which an object owner grants or revokes permissions: DAC (D). Identity-based mechanisms use subject identity but are not a synonym for the DAC policy model.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-II-13",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 Seguridad de redes y aplicación, 2026: control lógico de acceso; cotejo curricular directo.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo en el material académico de ITIC Academy indicado en revision/README.md; las conclusiones técnicas se apoyan en las fuentes primarias de la ficha."
+      },
+      "etiquetas": [
+        "DAC",
+        "control de acceso",
+        "seguridad lógica"
+      ],
+      "revision": {
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/discretionary_access_control",
+            "referencia": "NIST CSRC Glossary, Discretionary Access Control: the owner of an object, or an authorized subject, may decide who is permitted access."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/mandatory_access_control",
+            "referencia": "NIST CSRC Glossary, Mandatory Access Control: access is constrained by a central authority and security labels, distinguishing MAC from owner-discretionary control."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 125: network security and access control."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas II.13 (logical security) and IV.12 (network access control)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, block 48 Security in Networks & Application, 2026: logical and network access controls; curriculum mapping checked."
+          }
+        ],
+        "observaciones": "The phrase «dirigido al usuario» did not uniquely distinguish identity-based access from DAC. Rewrite the criterion as control in which an object owner grants or revokes permissions: DAC (D). Identity-based mechanisms use subject identity but are not a synonym for the DAC policy model.",
+        "estado": "corregida"
+      }
     },
     {
       "id": 5370,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué se entiende por Smishing?",
+      "texto": "¿Qué nombre recibe el phishing realizado mediante mensajes de texto SMS enviados a un teléfono móvil?",
       "opciones": [
         "Utilización de técnicas de phishing pero para servicios asociados con voz sobre IP (VoIP).",
-        "Utilización de técnicas de phishing en los mensajes de texto de teléfonos móviles.",
+        "Smishing (SMS phishing).",
         "Es un mensaje de correo electrónico con contenido falso o engañoso y normalmente distribuído en cadena.",
         "Es la capacidad de duplicar una página web para hacer creer al visitante que se encuentra en la página original en lugar de en la copiada."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Answer B. Smishing is phishing delivered through SMS/text messages; it may use links or requests to induce disclosure or action. It is distinct from voice phishing (vishing) and ordinary email phishing.",
+      "clasificacion": {
+        "A1": [
+          "A1-47",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-II-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 Seguridad de redes y aplicación, 2026: phishing e ingeniería social; cotejo curricular directo.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo en el material académico de ITIC Academy indicado en revision/README.md; las conclusiones técnicas se apoyan en las fuentes primarias de la ficha."
+      },
+      "etiquetas": [
+        "smishing",
+        "phishing",
+        "ingeniería social",
+        "SMS"
+      ],
+      "revision": {
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.cisa.gov/sites/default/files/publications/Phishing%2520General%2520Security%2520Postcard_6.24.2021_508cV2.pdf",
+            "referencia": "CISA phishing awareness material defines smishing as phishing via text messages."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 47 (security risks) and 125 (network security and attacks)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.13: information-system security and cybersecurity."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, block 48 Security in Networks & Application, 2026: phishing and social engineering; curriculum mapping checked."
+          }
+        ],
+        "observaciones": "Answer B. Smishing is phishing delivered through SMS/text messages; it may use links or requests to induce disclosure or action. It is distinct from voice phishing (vishing) and ordinary email phishing.",
+        "estado": "vigente"
+      }
     },
     {
       "id": 5371,
