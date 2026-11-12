@@ -271908,7 +271908,7 @@
       "id": 5301,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale cuál de las siguientes NO es una Protocol Data Unit (PDU) del protocolo SNMP v3:",
+      "texto": "¿Cuál de las siguientes NO es una PDU definida para las operaciones SNMPv3?",
       "opciones": [
         "SetRequest PDU",
         "InformRequest PDU",
@@ -271916,27 +271916,119 @@
         "GetBackRequest PDU"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La respuesta D es correcta: GetBackRequest-PDU no es un tipo de PDU SNMP. SetRequest e InformRequest están definidos en RFC 3416; Report-PDU también aparece en el conjunto de operaciones y se utiliza en el procesamiento SNMPv3 según RFC 3412. Se conserva la clave y se corrige la grafía del enunciado a «una PDU».",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026.1: gestión SNMP y operaciones de administración de redes.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular con A1-118/A2-IV.9; las operaciones PDU se verifican en RFC 3416/3412."
+      },
+      "etiquetas": [
+        "SNMPv3",
+        "PDU",
+        "SetRequest",
+        "InformRequest",
+        "Report",
+        "RFC 3416"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3416.html",
+            "referencia": "IETF RFC 3416, Protocol Operations for SNMP, §3: ASN.1 CHOICE enumera GetRequest, GetNext, GetBulk, Response, SetRequest, InformRequest, SNMPv2-Trap y Report; «GetBackRequest» no está definido."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3412.html",
+            "referencia": "IETF RFC 3412, Message Processing and Dispatching for SNMP: explica la generación y uso de Report-PDU en el modelo SNMPv3."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 118: redes LAN, monitorización y gestión SNMP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.9: administración de redes locales y gestión SNMP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, administración y gestión SNMP."
+          }
+        ],
+        "observaciones": "La respuesta D es correcta: GetBackRequest-PDU no es un tipo de PDU SNMP. SetRequest e InformRequest están definidos en RFC 3416; Report-PDU también aparece en el conjunto de operaciones y se utiliza en el procesamiento SNMPv3 según RFC 3412. Se conserva la clave y se corrige la grafía del enunciado a «una PDU»."
+      }
     },
     {
       "id": 5302,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes sistemas correspondería con un sistema de autenticación fuerte?",
+      "texto": "¿Cuál de estas opciones combina dos factores de categorías distintas para autenticación multifactor?",
       "opciones": [
-        "Un sistema que utilice usuario y contraseña.",
-        "Un sistema que utilice usuario, contraseña y token digital.",
-        "Un sistema que utilice identificación biométrica.",
-        "Un sistema que utilice usuario y código numérico."
+        "Un nombre de usuario y una contraseña.",
+        "Una contraseña y un token físico independiente que genera códigos de un solo uso.",
+        "Una contraseña y un PIN memorizado por la misma persona.",
+        "Una huella dactilar como único autenticador."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La respuesta B es correcta solo si el token es un autenticador físico independiente: la contraseña es un factor de conocimiento y el token, de posesión. «Usuario» identifica la cuenta, pero no constituye por sí solo un factor. La biometría aislada no basta como autenticación de un único factor bajo NIST SP 800-63-4; se combina con un autenticador físico.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», edición 2026.1, §6.3: factores de autenticación y MFA.",
+        "estado": "revisada",
+        "nota": "El documento distingue conocimiento, posesión y biometría; la definición se contrasta con NIST SP 800-63-4."
+      },
+      "etiquetas": [
+        "autenticación multifactor",
+        "factores de autenticación",
+        "contraseña",
+        "token hardware",
+        "conocimiento",
+        "posesión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://pages.nist.gov/800-63-4/sp800-63.html",
+            "referencia": "NIST SP 800-63-4: distingue factores «algo que se sabe», «algo que se tiene» y «algo que se es»; para MFA deben combinarse factores de categorías distintas."
+          },
+          {
+            "url": "https://pages.nist.gov/800-63-4/sp800-63b/aal/",
+            "referencia": "NIST SP 800-63B-4, Authentication Assurance Levels: AAL2 exige dos factores distintos y describe combinaciones de un autenticador físico con contraseña o biometría."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 125: seguridad, control de accesos y técnicas de autenticación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: control de accesos y seguridad en redes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», edición 2026.1, §6.3: factores y autenticación fuerte/MFA."
+          }
+        ],
+        "observaciones": "La respuesta B es correcta solo si el token es un autenticador físico independiente: la contraseña es un factor de conocimiento y el token, de posesión. «Usuario» identifica la cuenta, pero no constituye por sí solo un factor. La biometría aislada no basta como autenticación de un único factor bajo NIST SP 800-63-4; se combina con un autenticador físico."
+      }
     },
     {
       "id": 5303,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes opciones se considera una metodología aplicada a estrategias de Seguridad del Software?",
+      "texto": "¿Cuál de los siguientes modelos de OWASP se utiliza para evaluar y mejorar la madurez de las prácticas de seguridad del software de una organización?",
       "opciones": [
         "OWASP XP",
         "OWASP SCRUM",
@@ -271944,13 +272036,58 @@
         "OWASP SAMM"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La opción D es correcta. OWASP SAMM significa Software Assurance Maturity Model y es un modelo de madurez para evaluar y mejorar las prácticas de seguridad del software a lo largo de su ciclo de vida. Se reemplaza «metodología» por «modelo» para utilizar la denominación oficial y diferenciarlo de una metodología ágil como Scrum o RUP.",
+      "clasificacion": {
+        "A1": [
+          "A1-126"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», edición 2026.1: el resumen incluye OWASP SAMM, Top 10 y ASVS.",
+        "estado": "revisada",
+        "nota": "Cotejo con A1-126 y A2-III.13: SAMM es un modelo de madurez de aseguramiento/seguridad, no un marco de calidad software citado expresamente por la convocatoria A2."
+      },
+      "etiquetas": [
+        "OWASP",
+        "SAMM",
+        "Software Assurance Maturity Model",
+        "seguridad del software",
+        "madurez"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://owaspsamm.org/about/",
+            "referencia": "OWASP SAMM, What is OWASP SAMM?: define el nombre Software Assurance Maturity Model y su finalidad de analizar y mejorar la postura de seguridad del software de organizaciones."
+          },
+          {
+            "url": "https://owaspsamm.org/model/",
+            "referencia": "OWASP SAMM Model, versión 2: organiza 15 prácticas en cinco funciones de negocio y tres niveles de madurez."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 126: seguridad en el nivel de aplicación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III.13: calidad del software, modelos, métricas, normas y estándares; encaje de modelo de aseguramiento, no una referencia literal a SAMM."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», edición 2026.1, mención de OWASP SAMM junto a Top 10, ASVS y seguridad de aplicaciones."
+          }
+        ],
+        "observaciones": "La opción D es correcta. OWASP SAMM significa Software Assurance Maturity Model y es un modelo de madurez para evaluar y mejorar las prácticas de seguridad del software a lo largo de su ciclo de vida. Se reemplaza «metodología» por «modelo» para utilizar la denominación oficial y diferenciarlo de una metodología ágil como Scrum o RUP."
+      }
     },
     {
       "id": 5304,
       "bloque": 0,
       "tema": 0,
-      "texto": "El sistema más económico y sencillo para proporcionar autenticación y autorización es:",
+      "texto": "En un sistema básico que necesita verificar la identidad de una persona con baja complejidad de implantación, ¿qué mecanismo suele ser el más sencillo?",
       "opciones": [
         "Utilización de passwords (palabras de paso).",
         "Utilización de certificados digitales.",
@@ -271958,21 +272095,112 @@
         "Utilización de un cortafuego (firewall)."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El reactivo original confundía autenticación con autorización y afirmaba una comparación absoluta de costes. Se reformula como una pregunta acotada sobre el mecanismo de menor complejidad de implantación en un sistema básico: una contraseña memorizada. La contraseña permite autenticar; la autorización para acceder a recursos requiere una política o decisión de control de acceso y no se obtiene por usar una contraseña.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», edición 2026.1, §6.1: separación de identificación, autenticación y autorización.",
+        "estado": "revisada",
+        "nota": "El material cubre factores y control de accesos; se limita la pregunta a autenticación básica y se registra la separación conceptual de NIST."
+      },
+      "etiquetas": [
+        "autenticación",
+        "autorización",
+        "contraseñas",
+        "gestión de identidades",
+        "control de acceso"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/authentication",
+            "referencia": "NIST CSRC Glossary: autenticación verifica la identidad de un usuario/proceso/dispositivo, a menudo como requisito previo al acceso."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/authorization",
+            "referencia": "NIST CSRC Glossary: autorización concede o deniega derechos de acceso a un usuario, programa o proceso; es una decisión distinta de autenticar."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 125: seguridad y control de accesos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: control de accesos y seguridad en redes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», edición 2026.1, §6.1: diferencia identificación, autenticación, autorización y trazabilidad."
+          }
+        ],
+        "observaciones": "El reactivo original confundía autenticación con autorización y afirmaba una comparación absoluta de costes. Se reformula como una pregunta acotada sobre el mecanismo de menor complejidad de implantación en un sistema básico: una contraseña memorizada. La contraseña permite autenticar; la autorización para acceder a recursos requiere una política o decisión de control de acceso y no se obtiene por usar una contraseña."
+      }
     },
     {
       "id": 5305,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un plan de contingencia es una herramienta para emplear en la gestión de las Tecnologías de la Información y las Comunicaciones y aporta una serie de reglas o medidas que proporcionan una garantía de continuidad del negocio y de los procesos de una organización. ¿Cuáles de las siguientes medidas NO se contemplan en la definición de este tipo de planes?",
+      "texto": "En la clasificación de medidas de un plan de contingencia TIC, ¿cuál es un ejemplo de medida organizativa?",
       "opciones": [
-        "Técnicas: Extintores contra incendios, detectores de humo, salidas de emergencia, equipos informáticos de respaldo.",
-        "Humanas: Formación de actuación ante incendios, designación de responsables de las salas, asignación de roles y responsabilidades para la copia de respaldo.",
-        "Organizativas: Seguro de incendios, precontrato de alquiler de equipos informáticos y ubicación alternativa, procedimiento de copia de respaldo, procedimiento de actuación ante un incendio, contratación de servicios de auditorías de riesgos laborales.",
-        "Comunicativas. Se debe comunicar el plan a todos los actores implicados en su ejecución, y a todos los usuarios de los servicios de TI."
+        "Instalar extintores, detectores de humo y equipos redundantes.",
+        "Formar al personal y asignar responsables y roles de actuación.",
+        "Contratar una ubicación alternativa y establecer procedimientos de recuperación y actuación.",
+        "Comunicar los canales y avisos del plan a las personas implicadas."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "El original no tenía una opción «no contemplada» defendible: la comunicación del plan a responsables y usuarios es una parte normal de la preparación/respuesta, como muestran ENS y NIST. Se cambia el reactivo para preguntar por la categoría de una acción, con opciones técnicas, humanas, organizativas y comunicativas. La contratación/ubicación alternativa y los procedimientos son medidas organizativas; la respuesta anterior D no era válida como exclusión general.",
+      "clasificacion": {
+        "A1": [
+          "A1-128"
+        ],
+        "A2": [
+          "A2-IV-3",
+          "A2-IV-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», edición 2026.1, §10.4: continuidad de negocio y recuperación ante desastres.",
+        "estado": "revisada",
+        "nota": "Cotejo con A1-128/A2-IV.3/IV.6; el ENS vigente también incorpora continuidad, copias, procedimientos y planes."
+      },
+      "etiquetas": [
+        "continuidad del negocio",
+        "plan de contingencia",
+        "medidas organizativas",
+        "ENS",
+        "recuperación ante desastres"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191",
+            "referencia": "Real Decreto 311/2022, ENS, art. 26 y anexo II, medida op.cont: exige copias de seguridad, mecanismos de continuidad y planes de continuidad con procedimientos y ejercicios; las comunicaciones a partes implicadas forman parte de una respuesta coordinada."
+          },
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-34r1.pdf",
+            "referencia": "NIST SP 800-34 Rev. 1, Contingency Planning Guide, §§3–4 y apéndice D: planificación incluye estrategia, responsables, procedimientos, personal y coordinación/comunicaciones; el plan no excluye comunicación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 128: gestión de continuidad del negocio y planes de continuidad/contingencia."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas IV.3 (backup y recuperación) y IV.6 (recuperación ante desastres)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», edición 2026.1, §10.4: continuidad de negocio y recuperación ante desastres."
+          }
+        ],
+        "observaciones": "El original no tenía una opción «no contemplada» defendible: la comunicación del plan a responsables y usuarios es una parte normal de la preparación/respuesta, como muestran ENS y NIST. Se cambia el reactivo para preguntar por la categoría de una acción, con opciones técnicas, humanas, organizativas y comunicativas. La contratación/ubicación alternativa y los procedimientos son medidas organizativas; la respuesta anterior D no era válida como exclusión general."
+      }
     },
     {
       "id": 5306,
