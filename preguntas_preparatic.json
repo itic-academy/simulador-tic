@@ -291635,49 +291635,194 @@
       "id": 5636,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes es un tipo de algoritmo de control de la congestión en redes conmutadas?",
+      "texto": "En una red conmutada, ¿qué algoritmo conforma el tráfico limitando las ráfagas y emitiendo datos a una tasa controlada para ayudar a prevenir congestión?",
       "opciones": [
         "Estado del enlace.",
         "Vector distancia.",
         "Inundación de paquetes.",
-        "Cubeta con goteo."
+        "Cubeta con goteo (leaky bucket)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida, respuesta D. La cubeta con goteo regula/suaviza el tráfico transmitido a una tasa controlada y se usa como mecanismo de conformado y control del tráfico para ayudar a evitar congestión; no es un algoritmo de encaminamiento como estado del enlace o vector distancia, ni el mecanismo de inundación. Se precisa esa función para no confundir shaping con control de congestión extremo a extremo. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 «Redes» 2026.1: el apartado de tráfico distingue shaping/policing con leaky bucket/token bucket y separa evitación de congestión RED/WRED/ECN. Se alinea con los temas oficiales de redes y técnicas de transmisión; la función se cita y acota conforme a RFC 3290 y UIT-T I.371. Temas oficiales asociados: A1-108/A2-IV-8. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 «Redes» 2026.1: el apartado de tráfico distingue shaping/policing con leaky bucket/token bucket y separa evitación de congestión RED/WRED/ECN. Se alinea con los temas oficiales de redes y técnicas de transmisión; la función se cita y acota conforme a RFC 3290 y UIT-T I.371.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 «Redes» 2026.1: el apartado de tráfico distingue shaping/policing con leaky bucket/token bucket y separa evitación de congestión RED/WRED/ECN. Se alinea con los temas oficiales de redes y técnicas de transmisión; la función se cita y acota conforme a RFC 3290 y UIT-T I.371. Temas oficiales asociados: A1-108/A2-IV-8. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas."
+      },
+      "etiquetas": [
+        "conmutación de paquetes",
+        "congestión",
+        "control de tráfico",
+        "leaky bucket",
+        "traffic shaping"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3290.html",
+            "referencia": "RFC 3290, apéndice A.1: el leaky bucket se emplea principalmente como conformador (shaper) de tráfico de salida, suavizando ráfagas y limitando la tasa."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-I.371-200403-I%21%21PDF-E&lang=e&type=items",
+            "referencia": "UIT-T I.371, control del tráfico y de la congestión en B-ISDN, anexo A.2: algoritmo continuo de cubeta con goteo/GCRA para comprobar conformidad de flujos de celdas; la recomendación incluye su papel dentro del control del tráfico y la congestión."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 108 (conmutación de circuitos y paquetes, redes y calidad de servicio)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.8 (redes y técnicas de transmisión)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 Redes: ITIC Academy, bloque 42 «Redes» 2026.1: el apartado de tráfico distingue shaping/policing con leaky bucket/token bucket y separa evitación de congestión RED/WRED/ECN. Se alinea con los temas oficiales de redes y técnicas de transmisión; la función se cita y acota conforme a RFC 3290 y UIT-T I.371."
+          }
+        ],
+        "observaciones": "Corregida, respuesta D. La cubeta con goteo regula/suaviza el tráfico transmitido a una tasa controlada y se usa como mecanismo de conformado y control del tráfico para ayudar a evitar congestión; no es un algoritmo de encaminamiento como estado del enlace o vector distancia, ni el mecanismo de inundación. Se precisa esa función para no confundir shaping con control de congestión extremo a extremo. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 «Redes» 2026.1: el apartado de tráfico distingue shaping/policing con leaky bucket/token bucket y separa evitación de congestión RED/WRED/ECN. Se alinea con los temas oficiales de redes y técnicas de transmisión; la función se cita y acota conforme a RFC 3290 y UIT-T I.371. Temas oficiales asociados: A1-108/A2-IV-8. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas."
+      }
     },
     {
       "id": 5637,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones sobre los cables EIA/TIA/568B de categoría 6 es correcta?",
+      "texto": "¿Qué afirmación describe correctamente un enlace de cableado balanceado de categoría 6 conforme a TIA/ISO?",
       "opciones": [
-        "Tiene un ancho de banda de hasta 10 GHz en cada par.",
-        "Se suele usar para transmitir a velocidades de 1 Gbps.",
+        "La categoría especifica una frecuencia de hasta 10 GHz por par.",
+        "Puede soportar 1000BASE-T en un canal conforme y también transportar PoE con componentes e instalación adecuados.",
         "No permite implementar Power over Ethernet (PoE).",
-        "Sólo está disponible de forma experimental."
+        "La categoría 6 es una tecnología experimental."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida, respuesta B. Cat 6 se especifica hasta 250 MHz y admite 1000BASE-T en un canal conforme (habitualmente hasta 100 m); también puede transportar PoE si los componentes e instalación cumplen los requisitos. Cat 6 no es una categoría de 10 GHz ni experimental. El enunciado distingue el enlace Gigabit de las posibilidades condicionadas de 10GBASE-T. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1: su cuadro Cat 6/Clase E recoge 250 MHz, 1000BASE-T, 10GBASE-T con alcance reducido y distingue Cat 6A; el bloque también trata PoE. La ficha del fabricante y TIA confirman que la categoría admite alimentación remota según componentes/instalación. Temas oficiales asociados: A1-108/A1-110/A1-118/A2-IV-7/A2-IV-8. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-110",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-7",
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes 2026.1: su cuadro Cat 6/Clase E recoge 250 MHz, 1000BASE-T, 10GBASE-T con alcance reducido y distingue Cat 6A; el bloque también trata PoE. La ficha del fabricante y TIA confirman que la categoría admite alimentación remota según componentes/instalación.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1: su cuadro Cat 6/Clase E recoge 250 MHz, 1000BASE-T, 10GBASE-T con alcance reducido y distingue Cat 6A; el bloque también trata PoE. La ficha del fabricante y TIA confirman que la categoría admite alimentación remota según componentes/instalación. Temas oficiales asociados: A1-108/A1-110/A1-118/A2-IV-7/A2-IV-8. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas."
+      },
+      "etiquetas": [
+        "cableado estructurado",
+        "categoría 6",
+        "1000BASE-T",
+        "250 MHz",
+        "PoE"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.commscope.com/product-type/cables/twisted-pair-cables/category-6-cables/1073a/",
+            "referencia": "CommScope, ficha técnica de cable Category 6 conforme a ANSI/TIA-568.2-D e ISO/IEC 11801 Class E: frecuencia máxima de operación 250 MHz y conformidad de remote powering IEEE 802.3bt Type 4 en las condiciones de instalación indicadas."
+          },
+          {
+            "url": "https://doi.org/10.1109/IEEESTD.2022.9844436",
+            "referencia": "IEEE 802.3-2022, estándar activo de Ethernet: especifica PHY 1000BASE-T y provisión de alimentación sobre PHY balanceadas seleccionadas; el cumplimiento de cableado se determina con las normas TIA/ISO aplicables."
+          },
+          {
+            "url": "https://www.tiafotc.org/tia-standards-update/tsb-6000/",
+            "referencia": "TIA Fiber Optics Tech Consortium, TSB-6000: sus tablas de aplicaciones reconocidas por las normas TIA incluyen Ethernet y IEEE PoE sobre cableado de categoría 6."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, temas 108 (medios de transmisión) y 110 (sistemas de cableado)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, temas IV.7 (medios guiados y cableado estructurado) y IV.8 (redes locales)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 Redes: ITIC Academy, bloque 42 Redes 2026.1: su cuadro Cat 6/Clase E recoge 250 MHz, 1000BASE-T, 10GBASE-T con alcance reducido y distingue Cat 6A; el bloque también trata PoE. La ficha del fabricante y TIA confirman que la categoría admite alimentación remota según componentes/instalación."
+          }
+        ],
+        "observaciones": "Corregida, respuesta B. Cat 6 se especifica hasta 250 MHz y admite 1000BASE-T en un canal conforme (habitualmente hasta 100 m); también puede transportar PoE si los componentes e instalación cumplen los requisitos. Cat 6 no es una categoría de 10 GHz ni experimental. El enunciado distingue el enlace Gigabit de las posibilidades condicionadas de 10GBASE-T. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1: su cuadro Cat 6/Clase E recoge 250 MHz, 1000BASE-T, 10GBASE-T con alcance reducido y distingue Cat 6A; el bloque también trata PoE. La ficha del fabricante y TIA confirman que la categoría admite alimentación remota según componentes/instalación. Temas oficiales asociados: A1-108/A1-110/A1-118/A2-IV-7/A2-IV-8. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas."
+      }
     },
     {
       "id": 5638,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes problemas afecta a los medios de transmisión?",
+      "texto": "En un canal de comunicaciones, ¿cuál de los siguientes fenómenos es una perturbación aleatoria aditiva que puede degradar la señal transmitida?",
       "opciones": [
-        "Reverberación.",
+        "Reverberación acústica.",
         "Ruido blanco.",
-        "Afonía.",
-        "Todos son posibles problemas de los medios de transmisión."
+        "Afonía de la voz.",
+        "Todos son ruidos aditivos propios del canal eléctrico u óptico."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida, respuesta B. Se concreta que se pregunta por una perturbación aleatoria aditiva que puede degradar una señal en un canal de comunicaciones: el ruido blanco. Reverberación es un fenómeno acústico de reflexión, y afonía es una alteración de la voz/fuente, no un ruido del canal; por ello no se acepta «todos». Se conserva la clave B con un ámbito técnico inequívoco. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1: trata medios y parámetros de transmisión, incluido ruido y diafonía. El cotejo sitúa el concepto en A1 108/A2 IV.7; la delimitación a ruido aditivo del canal se contrasta con recomendaciones UIT-T y el examen histórico del INAP. Temas oficiales asociados: A1-108/A2-IV-7. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes 2026.1: trata medios y parámetros de transmisión, incluido ruido y diafonía. El cotejo sitúa el concepto en A1 108/A2 IV.7; la delimitación a ruido aditivo del canal se contrasta con recomendaciones UIT-T y el examen histórico del INAP.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1: trata medios y parámetros de transmisión, incluido ruido y diafonía. El cotejo sitúa el concepto en A1 108/A2 IV.7; la delimitación a ruido aditivo del canal se contrasta con recomendaciones UIT-T y el examen histórico del INAP. Temas oficiales asociados: A1-108/A2-IV-7. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas."
+      },
+      "etiquetas": [
+        "medios de transmisión",
+        "ruido blanco",
+        "interferencia",
+        "atenuación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.sede.inap.gob.es/documents/10136/1680866/GSI_2010_PI_GSIPI.pdf/c1e421e1-5039-b8b1-a773-e080b62dc109",
+            "referencia": "INAP, examen oficial GSI 2010, bloque de redes: recoge la pregunta de origen sobre fenómenos que afectan a medios de transmisión. Se usa como trazabilidad del ítem, no como fuente de la respuesta."
+          },
+          {
+            "url": "https://www.itu.int/epublications/en/publication/itu-t-k-93-2023-07-immunity-of-home-network-devices-to-electromagnetic-disturbances",
+            "referencia": "UIT-T K.93 (07/2023), método de inmunidad para dispositivos de redes domésticas: aplica ruido blanco en ráfagas como perturbación conducida de banda ancha a puertos xDSL, mostrando que el ruido puede afectar la transmisión/dispositivo de comunicaciones."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.116-199909-I/en",
+            "referencia": "UIT-T G.116, objetivos de transmisión extremo a extremo: clasifica la interferencia de ruido de banda ancha como ruido de canal."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 108 (medios de transmisión)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.7 (medios de transmisión guiados y no guiados y sus parámetros)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 Redes: ITIC Academy, bloque 42 Redes 2026.1: trata medios y parámetros de transmisión, incluido ruido y diafonía. El cotejo sitúa el concepto en A1 108/A2 IV.7; la delimitación a ruido aditivo del canal se contrasta con recomendaciones UIT-T y el examen histórico del INAP."
+          }
+        ],
+        "observaciones": "Corregida, respuesta B. Se concreta que se pregunta por una perturbación aleatoria aditiva que puede degradar una señal en un canal de comunicaciones: el ruido blanco. Reverberación es un fenómeno acústico de reflexión, y afonía es una alteración de la voz/fuente, no un ruido del canal; por ello no se acepta «todos». Se conserva la clave B con un ámbito técnico inequívoco. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1: trata medios y parámetros de transmisión, incluido ruido y diafonía. El cotejo sitúa el concepto en A1 108/A2 IV.7; la delimitación a ruido aditivo del canal se contrasta con recomendaciones UIT-T y el examen histórico del INAP. Temas oficiales asociados: A1-108/A2-IV-7. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas."
+      }
     },
     {
       "id": 5639,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes modos de propagación de la fibra óptica permite un mayor alcance y capacidad?",
+      "texto": "Al comparar la propagación en fibra óptica, ¿qué tipo evita la dispersión modal intermodal y suele permitir enlaces de mayor alcance y producto ancho de banda–distancia?",
       "opciones": [
         "Monomodo.",
         "Multimodo con salto de índice de refracción.",
@@ -291685,21 +291830,118 @@
         "Ultramodo de alta dispersión modal."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida, respuesta A. Para un enlace de mayor alcance y capacidad de transmisión, la fibra monomodo evita la dispersión intermodal que limita el producto ancho de banda–distancia de la multimodo. La capacidad efectiva también depende de la fibra concreta, longitud de onda, transceptores, dispersión cromática y diseño; el enunciado se limita a comparar los modos de propagación. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1, apartado 2.3 Fibra óptica: contrasta monomodo (sin dispersión modal, enlaces largos) y multimodo (alcances de LAN/CPD, limitados por producto ancho de banda×distancia); corresponde a acceso por fibra A1 112 y medios A2 IV.7. Temas oficiales asociados: A1-108/A1-112/A2-IV-7. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-112"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes 2026.1, apartado 2.3 Fibra óptica: contrasta monomodo (sin dispersión modal, enlaces largos) y multimodo (alcances de LAN/CPD, limitados por producto ancho de banda×distancia); corresponde a acceso por fibra A1 112 y medios A2 IV.7.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1, apartado 2.3 Fibra óptica: contrasta monomodo (sin dispersión modal, enlaces largos) y multimodo (alcances de LAN/CPD, limitados por producto ancho de banda×distancia); corresponde a acceso por fibra A1 112 y medios A2 IV.7. Temas oficiales asociados: A1-108/A1-112/A2-IV-7. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas."
+      },
+      "etiquetas": [
+        "fibra óptica",
+        "monomodo",
+        "multimodo",
+        "dispersión modal",
+        "alcance"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/epublications/publication/itu-t-g-652-2024-08-characteristics-of-a-single-mode-optical-fibre-and-cable",
+            "referencia": "UIT-T G.652 (08/2024), vigente: especifica fibra monomodo para transmisión digital/analógica y parámetros de dispersión, atenuación y diseño de enlaces."
+          },
+          {
+            "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13738",
+            "referencia": "UIT-T G.651.1 (11/2018), vigente: fibra multimodo de índice gradual para entornos de acceso; define, entre otros, su ancho de banda modal y aplicaciones de alcance limitado."
+          },
+          {
+            "url": "https://www.itu.int/dms_pub/itu-t/opb/hdb/t-hdb-out.10-2009-1-pdf-e.pdf",
+            "referencia": "Manual UIT-T Optical fibres, cables and systems: explica que la fibra monomodo elimina la dispersión modal intermodal propia de la multimodo, favoreciendo enlaces de mayor producto ancho de banda × distancia."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, temas 108 (medios) y 112 (acceso por fibra)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.7 (medios de transmisión)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 Redes: ITIC Academy, bloque 42 Redes 2026.1, apartado 2.3 Fibra óptica: contrasta monomodo (sin dispersión modal, enlaces largos) y multimodo (alcances de LAN/CPD, limitados por producto ancho de banda×distancia); corresponde a acceso por fibra A1 112 y medios A2 IV.7."
+          }
+        ],
+        "observaciones": "Corregida, respuesta A. Para un enlace de mayor alcance y capacidad de transmisión, la fibra monomodo evita la dispersión intermodal que limita el producto ancho de banda–distancia de la multimodo. La capacidad efectiva también depende de la fibra concreta, longitud de onda, transceptores, dispersión cromática y diseño; el enunciado se limita a comparar los modos de propagación. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1, apartado 2.3 Fibra óptica: contrasta monomodo (sin dispersión modal, enlaces largos) y multimodo (alcances de LAN/CPD, limitados por producto ancho de banda×distancia); corresponde a acceso por fibra A1 112 y medios A2 IV.7. Temas oficiales asociados: A1-108/A1-112/A2-IV-7. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas."
+      }
     },
     {
       "id": 5640,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un cable consistente en un núcleo de vidrio con un alto Indice refracción, rodeada de una capa o revestimiento de material similar, pero con índice de refracción ligeramente menor, y, todo ello, envuelto en una cubierta do protección totalmente opaca que le proporciona consistencia, es un cable:",
+      "texto": "¿Qué medio guiado utiliza un núcleo de vidrio y un revestimiento óptico cuyo índice de refracción es ligeramente menor para confinar la luz?",
       "opciones": [
-        "De par trenzado tipo BS/UTP (Braided ana screened unshielded twisteo pair)",
-        "Coaxial de tipo thick",
-        "De par trenzado tipo S/STP (Screened and shielded twisted pair)",
-        "De fibra óptica"
+        "Par trenzado U/UTP.",
+        "Cable coaxial de tipo thick.",
+        "Par trenzado S/STP.",
+        "Fibra óptica."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida, respuesta D. La descripción de núcleo de vidrio y revestimiento con menor índice de refracción identifica la fibra óptica. Se corrigen errores ortográficos y se elimina la opacidad total de la cubierta como requisito definitorio: el cable incorpora además recubrimientos y protección mecánica, cuya composición varía según instalación. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1, apartado 2.3 Fibra óptica y apartado de medios guiados: diferencia núcleo/revestimiento, propagación y cubierta/protección. Coteja la taxonomía de temario; la descripción material se verifica con el manual técnico UIT-T de fibras y cables. Temas oficiales asociados: A1-108/A1-110/A1-112/A2-IV-7. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-110",
+          "A1-112"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes 2026.1, apartado 2.3 Fibra óptica y apartado de medios guiados: diferencia núcleo/revestimiento, propagación y cubierta/protección. Coteja la taxonomía de temario; la descripción material se verifica con el manual técnico UIT-T de fibras y cables.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1, apartado 2.3 Fibra óptica y apartado de medios guiados: diferencia núcleo/revestimiento, propagación y cubierta/protección. Coteja la taxonomía de temario; la descripción material se verifica con el manual técnico UIT-T de fibras y cables. Temas oficiales asociados: A1-108/A1-110/A1-112/A2-IV-7. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas."
+      },
+      "etiquetas": [
+        "fibra óptica",
+        "núcleo",
+        "revestimiento",
+        "índice de refracción",
+        "cableado"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/epublications/publication/itu-t-g-652-2024-08-characteristics-of-a-single-mode-optical-fibre-and-cable",
+            "referencia": "UIT-T G.652 (08/2024), características geométricas, ópticas y mecánicas de la fibra monomodo, incluidos los parámetros de núcleo/campo modal y revestimiento."
+          },
+          {
+            "url": "https://www.itu.int/dms_pub/itu-t/opb/hdb/t-hdb-out.10-2009-1-pdf-e.pdf",
+            "referencia": "Manual UIT-T Optical fibres, cables and systems: describe núcleo de vidrio y revestimiento de vidrio con índice de refracción ligeramente inferior, que confina la propagación óptica; diferencia fibra desnuda de estructura/cubierta del cable."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, temas 108 (medios), 110 (cableado) y 112 (fibra de acceso)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.7 (medios guiados y cableado estructurado)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 Redes: ITIC Academy, bloque 42 Redes 2026.1, apartado 2.3 Fibra óptica y apartado de medios guiados: diferencia núcleo/revestimiento, propagación y cubierta/protección. Coteja la taxonomía de temario; la descripción material se verifica con el manual técnico UIT-T de fibras y cables."
+          }
+        ],
+        "observaciones": "Corregida, respuesta D. La descripción de núcleo de vidrio y revestimiento con menor índice de refracción identifica la fibra óptica. Se corrigen errores ortográficos y se elimina la opacidad total de la cubierta como requisito definitorio: el cable incorpora además recubrimientos y protección mecánica, cuya composición varía según instalación. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes 2026.1, apartado 2.3 Fibra óptica y apartado de medios guiados: diferencia núcleo/revestimiento, propagación y cubierta/protección. Coteja la taxonomía de temario; la descripción material se verifica con el manual técnico UIT-T de fibras y cables. Temas oficiales asociados: A1-108/A1-110/A1-112/A2-IV-7. La academia orienta cobertura/clasificación y no sustituye las fuentes técnicas documentadas."
+      }
     },
     {
       "id": 5641,
