@@ -279427,42 +279427,175 @@
       "id": 5431,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a REST, indique qué afirmación es falsa:",
+      "texto": "Respecto de las restricciones arquitectónicas de REST, indique la afirmación falsa:",
       "opciones": [
-        "Permite una generalización de las interfaces entre recursos.",
-        "Facilita el desarrollo de los clientes de los servicios.",
-        "Su uso está indicado para aplicaciones en las que la gestión del estado es compleja.",
-        "La funcionalidad de las aplicaciones se representa mediante recursos."
+        "REST define una interfaz uniforme para la interacción entre componentes.",
+        "Los clientes manipulan recursos mediante representaciones e identificadores de recurso.",
+        "REST está especialmente indicado cuando el servidor debe conservar estado de sesión complejo entre peticiones.",
+        "La restricción stateless exige que cada petición contenga la información necesaria para ser comprendida sin contexto almacenado de peticiones anteriores."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se corrige porque el enunciado original hacía parecer que REST resulta especialmente indicado cuando el servidor debe conservar estado de sesión complejo, cuando la restricción stateless exige que cada petición lleve la información necesaria y el servidor no reutilice contexto de peticiones anteriores. Se reformulan los distractores: una sola afirmación falsa, la C, atribuye a REST estado de sesión retenido por el servidor. La interfaz uniforme y la identificación/manipulación de recursos son restricciones REST; la separación y uniformidad pueden facilitar la interoperabilidad del cliente.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información 2026.2: arquitectura web y servicios; cobertura curricular contextual, sin apartado localizado que enumere las restricciones REST.",
+        "estado": "revisada",
+        "nota": "Clasificación cotejada con el programa oficial; ITIC Academy se usa como mapa curricular cuando se indica, no como autoridad técnica o normativa."
+      },
+      "etiquetas": [
+        "REST",
+        "arquitectura cliente-servidor",
+        "interfaz uniforme",
+        "recursos",
+        "stateless"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+            "referencia": "R. Fielding, Architectural Styles and the Design of Network-based Software Architectures, capítulo 5: restricciones REST, interfaz uniforme, identificación y manipulación de recursos y comunicación stateless."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 65: arquitectura de desarrollo web, conexión a sistemas y servicios."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III.12: aplicaciones web, servicios web, protocolos e interoperabilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1LuUHoQr8oDmptteHIQ72VdCvJFsnu3LF/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información 2026.2: arquitectura web y servicios; mapa curricular general, no se encontró un apartado literal de las restricciones REST."
+          }
+        ],
+        "observaciones": "Se corrige porque el enunciado original hacía parecer que REST resulta especialmente indicado cuando el servidor debe conservar estado de sesión complejo, cuando la restricción stateless exige que cada petición lleve la información necesaria y el servidor no reutilice contexto de peticiones anteriores. Se reformulan los distractores: una sola afirmación falsa, la C, atribuye a REST estado de sesión retenido por el servidor. La interfaz uniforme y la identificación/manipulación de recursos son restricciones REST; la separación y uniformidad pueden facilitar la interoperabilidad del cliente."
+      }
     },
     {
       "id": 5432,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes NO es cierta con relación a una función hash o resumen?",
+      "texto": "¿Cuál de las siguientes afirmaciones NO es cierta sobre las funciones hash criptográficas?",
       "opciones": [
-        "La función hash es unidireccional",
-        "La longitud del hash varía con el tamaño del mensaje",
-        "WHIRLPOOL es un algoritmo basado en función hash"
+        "Se diseñan para que, dados ciertos datos, resulte computacionalmente inviable recuperar una entrada que produzca un resumen prefijado.",
+        "Para una misma función hash, la longitud del resumen depende de la longitud del mensaje de entrada.",
+        "WHIRLPOOL es una función hash criptográfica que produce un resumen de longitud fija de 512 bits."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se conserva B como respuesta falsa, reformulando para evitar que “hash” se interprete como salida de cualquier función resumen sin especificar el algoritmo. En una función hash criptográfica dada, la longitud de salida es fija y no depende de la longitud de entrada; WHIRLPOOL es una función hash de 512 bits. “Unidireccional” expresa una propiedad de diseño en términos de dificultad computacional, no imposibilidad matemática absoluta.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma 2026.1: sección 4 dedicada a propiedades y algoritmos hash; cotejo directo.",
+        "estado": "revisada",
+        "nota": "Clasificación cotejada con el programa oficial; ITIC Academy se usa como mapa curricular cuando se indica, no como autoridad técnica o normativa."
+      },
+      "etiquetas": [
+        "función hash",
+        "resumen criptográfico",
+        "longitud fija",
+        "WHIRLPOOL",
+        "función unidireccional"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/hash_function",
+            "referencia": "NIST CSRC Glossary: función sobre cadenas de bits cuyo resultado tiene longitud fija; las funciones aprobadas se diseñan con propiedades de unidireccionalidad y resistencia a colisiones."
+          },
+          {
+            "url": "https://csrc.nist.gov/projects/hash-functions",
+            "referencia": "NIST CSRC, Hash Functions: los algoritmos hash transforman mensajes de longitud arbitraria en resúmenes de longitud fija."
+          },
+          {
+            "url": "https://docs.openssl.org/3.3/man3/EVP_whirlpool/",
+            "referencia": "OpenSSL EVP_whirlpool: WHIRLPOOL es una función hash criptográfica normalizada en ISO/IEC 10118-3 y produce un resumen de 512 bits."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 79: función hash y criptografía."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: técnicas criptográficas y protocolos seguros."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma 2026.1, sección 4: funciones hash y algoritmos; cotejo directo."
+          }
+        ],
+        "observaciones": "Se conserva B como respuesta falsa, reformulando para evitar que “hash” se interprete como salida de cualquier función resumen sin especificar el algoritmo. En una función hash criptográfica dada, la longitud de salida es fija y no depende de la longitud de entrada; WHIRLPOOL es una función hash de 512 bits. “Unidireccional” expresa una propiedad de diseño en términos de dificultad computacional, no imposibilidad matemática absoluta."
+      }
     },
     {
       "id": 5433,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuál de las siguientes afirmaciones es incorrecta:",
+      "texto": "Sobre los formatos PNG y GIF, señale la afirmación incorrecta:",
       "opciones": [
-        "PNG comprime mejor que el formato GIF las imágenes",
-        "W3C desaconseja el uso del formato GIF por el posible pago de patentes",
-        "PNG y GIF soportan animación de imágenes",
-        "PNG8 soporta un máximo de 256 colores"
+        "PNG está diseñado para almacenar imágenes con compresión sin pérdida.",
+        "GIF89a permite incluir varios bloques de imagen que los visores pueden presentar consecutivamente.",
+        "Un flujo PNG estático sin los chunks específicos de APNG define por sí mismo una animación de varios fotogramas.",
+        "La modalidad PNG indexada puede utilizar una paleta de hasta 256 entradas."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se corrige la respuesta a C y se acota la terminología. El PNG estático contiene una imagen; la animación requiere la extensión APNG y sus chunks específicos. GIF89a permite secuencias de bloques de imagen que los visores presentan como animación; PNG indexado admite hasta 256 índices de paleta (8 bits). Se elimina la comparación “comprime mejor que GIF”, que no es cierta para todas las imágenes/configuraciones, y la advertencia sobre patentes de GIF, obsoleta como afirmación general.",
+      "clasificacion": {
+        "A1": [
+          "A1-83"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 37 Imágenes, OCR, biometría y gestión de contenidos 2026.1: cobertura general de tratamiento/representación de imágenes; no se localizó comparación específica de formatos PNG/GIF/APNG.",
+        "estado": "revisada",
+        "nota": "Clasificación cotejada con el programa oficial; ITIC Academy se usa como mapa curricular cuando se indica, no como autoridad técnica o normativa."
+      },
+      "etiquetas": [
+        "PNG",
+        "GIF89a",
+        "APNG",
+        "PNG indexed color",
+        "imagen sin pérdida"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/png-3/",
+            "referencia": "W3C PNG Specification, Third Edition: PNG estático contiene una imagen; APNG añade chunks específicos de control y datos de animación; las imágenes indexadas usan profundidad de índice de hasta 8 bits."
+          },
+          {
+            "url": "https://giflib.sourceforge.net/gifstandard/GIF89a.html",
+            "referencia": "Especificación Graphics Interchange Format 89a: define bloques de imagen repetibles y extensiones gráficas; base del uso de múltiples imágenes en una secuencia GIF."
+          },
+          {
+            "url": "https://www.w3.org/Graphics/PNG/",
+            "referencia": "W3C PNG: información del formato PNG y sus características de imagen sin pérdida."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 83: tratamiento de imágenes y tecnologías de digitalización."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xTMCpPmwNi8hpb0nZ3sMqpgvrhLXT-yf/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 37 Imágenes, OCR, biometría y gestión de contenidos 2026.1: tratamiento/representación de imágenes; el índice no desarrolla específicamente PNG, GIF o APNG."
+          }
+        ],
+        "observaciones": "Se corrige la respuesta a C y se acota la terminología. El PNG estático contiene una imagen; la animación requiere la extensión APNG y sus chunks específicos. GIF89a permite secuencias de bloques de imagen que los visores presentan como animación; PNG indexado admite hasta 256 índices de paleta (8 bits). Se elimina la comparación “comprime mejor que GIF”, que no es cierta para todas las imágenes/configuraciones, y la advertencia sobre patentes de GIF, obsoleta como afirmación general."
+      }
     },
     {
       "id": 5434,
@@ -279476,21 +279609,112 @@
         "Thawte"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "PENDIENTE DE FUENTE PRIMARIA para validar la clave. Se conservan el enunciado, las opciones y la respuesta importada sin darla por correcta. Las fuentes primarias actuales confirman que FNMT/CERES presta servicios de certificación y que existen raíces/jerarquías GeoTrust y thawte, pero la búsqueda no identificó de forma fiable “WorldTrusted” como entidad ni permite concluir que nunca lo fuera: puede ser una denominación comercial histórica o una grafía inexacta. Hace falta la fuente del examen original o un certificado/documento de prácticas de certificación que identifique esa entidad. La referencia curricular es temática, no evidencia de la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma 2026.1: certificados X.509, autoridades de certificación y PKI; no menciona “WorldTrusted”, por lo que no resuelve la clave.",
+        "estado": "revisada",
+        "nota": "Clasificación cotejada con el programa oficial; ITIC Academy se usa como mapa curricular cuando se indica, no como autoridad técnica o normativa."
+      },
+      "etiquetas": [
+        "autoridad de certificación",
+        "CA",
+        "CERES",
+        "GeoTrust",
+        "Thawte",
+        "WorldTrusted"
+      ],
+      "revision": {
+        "estado": "pendiente_fuente",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://knowledge.digicert.com/general-information/digicert-trusted-root-authority-certificates",
+            "referencia": "DigiCert, listado de certificados raíz de confianza: aparecen jerarquías GeoTrust y thawte, lo que respalda la existencia de certificados CA bajo esas marcas; no permite determinar qué significa “WorldTrusted”."
+          },
+          {
+            "url": "https://www.cert.fnmt.es/que-es-ceres",
+            "referencia": "FNMT-RCM, Qué es CERES: iniciativa de entidad pública de certificación; confirma CERES/FNMT como prestador/autoridad de certificación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 80: certificados digitales, identificación y firma electrónica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema I.6: identidad y firma electrónica, eIDAS y DNI electrónico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma 2026.1, sección 9: certificados X.509, CA y PKI; no identifica “WorldTrusted”."
+          }
+        ],
+        "observaciones": "PENDIENTE DE FUENTE PRIMARIA para validar la clave. Se conservan el enunciado, las opciones y la respuesta importada sin darla por correcta. Las fuentes primarias actuales confirman que FNMT/CERES presta servicios de certificación y que existen raíces/jerarquías GeoTrust y thawte, pero la búsqueda no identificó de forma fiable “WorldTrusted” como entidad ni permite concluir que nunca lo fuera: puede ser una denominación comercial histórica o una grafía inexacta. Hace falta la fuente del examen original o un certificado/documento de prácticas de certificación que identifique esa entidad. La referencia curricular es temática, no evidencia de la respuesta."
+      }
     },
     {
       "id": 5435,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de estas acciones se permite ejecutar en Java a un applet no firmado descargado de Internet?",
+      "texto": "En el modelo histórico de sandbox de los applets Java descargados por el Java Plug-in, antes de que este se eliminara del JDK 11, ¿qué operación podía realizar por defecto un applet no firmado?",
       "opciones": [
-        "Leer ficheros locales",
-        "Cargar librerías nativas",
-        "Conectarse a la máquina desde la que se descargó",
-        "Llamar a métodos privados de otras applets de la misma página"
+        "Leer archivos del sistema local.",
+        "Cargar bibliotecas nativas.",
+        "Conectarse al mismo host y puerto de origen, con un protocolo compatible.",
+        "Invocar métodos privados de otros applets de la misma página."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La respuesta C es correcta en el modelo histórico de sandbox: el applet no firmado podía abrir conexiones al host/puerto de origen (con protocolo y nombre de host compatibles), pero no leer archivos locales, cargar bibliotecas nativas ni invocar métodos privados de otros applets. Se reescribe para precisar ese permiso y se etiqueta histórica: Oracle eliminó el Java Plug-in y la funcionalidad de applets de despliegue del JDK 11; no se presenta como tecnología disponible en navegadores actuales.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información 2026.2: Java y arquitectura web como contexto curricular; no aborda applets de navegador, retirados de los despliegues actuales.",
+        "estado": "revisada",
+        "nota": "Clasificación cotejada con el programa oficial; ITIC Academy se usa como mapa curricular cuando se indica, no como autoridad técnica o normativa."
+      },
+      "etiquetas": [
+        "applet Java",
+        "sandbox",
+        "código no firmado",
+        "histórica",
+        "Java Plug-in"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/deployment/applet/security.html",
+            "referencia": "Oracle Java Tutorials, What Applets Can and Cannot Do: un applet sandbox puede conectarse al host y puerto de origen; no puede acceder al sistema de ficheros local ni cargar bibliotecas nativas, y solo invoca métodos públicos de otros applets de la página."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/11/migrate/",
+            "referencia": "Oracle JDK 11 Migration Guide: Java Plug-in y tecnologías de despliegue de applets se eliminaron del JDK 11."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 67: entorno de desarrollo Java; clasificación temática de un concepto Java histórico."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III.10: arquitectura Java EE/Jakarta EE y seguridad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1LuUHoQr8oDmptteHIQ72VdCvJFsnu3LF/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información 2026.2: Java, arquitectura web y seguridad; no trata applets de navegador como tecnología vigente."
+          }
+        ],
+        "observaciones": "La respuesta C es correcta en el modelo histórico de sandbox: el applet no firmado podía abrir conexiones al host/puerto de origen (con protocolo y nombre de host compatibles), pero no leer archivos locales, cargar bibliotecas nativas ni invocar métodos privados de otros applets. Se reescribe para precisar ese permiso y se etiqueta histórica: Oracle eliminó el Java Plug-in y la funcionalidad de applets de despliegue del JDK 11; no se presenta como tecnología disponible en navegadores actuales."
+      }
     },
     {
       "id": 5436,
