@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 12 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1055 (IDs 5596–5600); también se resolvió el pendiente histórico ID 77. Acumulado: 5.595 preguntas examinadas individualmente; 5.496 verificadas (984 vigentes, 4.097 corregidas y 415 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.528 sin revisar individualmente. Hay 5.575 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1056 (IDs 5601–5605); también se resolvió el pendiente histórico ID 77. Acumulado: 5.600 preguntas examinadas individualmente; 5.501 verificadas (984 vigentes, 4.102 corregidas y 415 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.523 sin revisar individualmente. Hay 5.580 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
 
 ## Pendiente anterior resuelto — ID 77 (12 de noviembre de 2026)
 
@@ -43,6 +43,20 @@ Ejecutados `node revision/revisar-lote-1051.cjs`, `node revision/academia-lote-1
 ## Lote 1053 — 12 de noviembre de 2026
 
 ## Lote 1054 — 12 de noviembre de 2026
+
+## Lote 1056 — 12 de noviembre de 2026
+
+IDs 5601–5605 revisados individualmente. Se limitó WWN al ámbito de Fibre Channel y se matizó la longitud tradicional de 64 bits frente a la extensión de 128 bits descrita para futuro uso; se definió copia incremental sin depender del bit de archivo; se confirmó WSDL como lenguaje descriptivo y se separó de SOAP/UDDI/REST; se precisó que un diagrama topológico no es un campo mínimo de cada registro del inventario de componentes; y se explicitó la línea temporal y el coste de conmutación para el cálculo Round Robin.
+
+- **5601 — World Wide Name:** **corregida**, respuesta A. RFC 4044 describe WWN como identificador de entidad Fibre Channel; la definición inicial es de 64 bits (8 octetos), con tamaño de 128 bits documentado para futuro uso. Ya no se presenta como identificador general de cualquier red de almacenamiento. A1-56/A2-IV.5.
+- **5602 — copia incremental:** **corregida**, respuesta B. NIST SP 800-34 Rev. 1 define incremental como archivos creados o cambiados desde la copia inmediatamente anterior, sea full o incremental. El manejo del bit de archivo depende del producto; no es parte de la definición general. A1-56/A2-IV.3.
+- **5603 — descripción de servicios SOAP:** **corregida**, respuesta A (WSDL). WSDL describe interfaces, operaciones y bindings de servicios web; WSDL 1.1 especifica el binding SOAP 1.1 y WSDL 2.0 tiene un complemento de binding SOAP. SOAP es mensajería, UDDI un registro y REST un estilo arquitectónico. A1-65/A2-III.12.
+- **5604 — inventario del sistema:** **corregida**, respuesta C. NIST CM-8 incluye hardware/software y, en componentes conectados, nombres de máquina y direcciones de red; un esquema de topología puede mantenerse como documentación arquitectónica separada. Se pregunta por datos del registro del inventario, no por artefactos útiles en general. A1-34/A2-IV.1.
+- **5605 — retorno de P2 con Round Robin:** **corregida**, respuesta C (50 ms). Se fija llegada simultánea en t=0, P1 primero y una conmutación de 5 ms solo cuando cambia de proceso: P1 0–10, P2 15–25, P1 30–40 y P2 45–50. Turnaround es finalización menos llegada. A1-59/A2-IV.1.
+
+Fuentes técnicas primarias: [IETF RFC 4044](https://www.rfc-editor.org/rfc/rfc4044.html); [NIST SP 800-34 Rev. 1, § 5.1.2](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-34r1.pdf); [W3C WSDL 1.1](https://www.w3.org/TR/wsdl.html) y [WSDL 2.0](https://www.w3.org/TR/wsdl20/); [NIST SP 800-53 Rev. 5, CM-8](https://csrc.nist.gov/CSRC/media/Projects/risk-management/800-53%20Downloads/800-53r5/SP_800-53_v5_1-derived-OSCAL.pdf); [OSTEP, Scheduling](https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf). Programas oficiales: [A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo curricular directo con [ITIC Academy, bloque Hardware 2026](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk) (almacenamiento/backups), [Tecnologías de Sistemas de Información 2026](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk) (§ 3.4 SOAP/WSDL/UDDI), [Sistemas Operativos 2026](https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk) (algoritmos Round Robin/quantum) y [Arquitectura SOA 2026](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk) (servicios SOAP/WSDL frente a REST). El material de academia orienta la correspondencia curricular; las conclusiones técnicas proceden de RFC, NIST, W3C y OSTEP.
+
+Ejecutados `node revision/revisar-lote-1056.cjs`, `node revision/academia-lote-1056.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 5.600 revisiones individuales, 99 pendientes explícitas y 6.523 preguntas por revisar individualmente; cero errores estructurales.
 
 ## Lote 1055 — 12 de noviembre de 2026
 
