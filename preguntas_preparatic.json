@@ -270149,35 +270149,122 @@
       "id": 5271,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el ámbito de la criptografía asimétrica, ¿cuál de las siguientes afirmaciones es cierta?",
+      "texto": "En un esquema de firma digital basado en criptografía de clave pública, ¿qué clave utiliza el verificador para comprobar la firma del documento?",
       "opciones": [
-        "La clave pública sirve para firmar los documentos, antes de enviarlos.",
-        "La clave privada sirve para cifrar la clave pública antes de firmar con esta última un documento.",
-        "La clave privada se ha de generar aleatoriamente a partir de la clave pública cada vez que se firma un documento.",
-        "La clave pública sirve para comprobar la firma digital de un documento firmado."
+        "La clave privada del verificador.",
+        "La clave pública del verificador.",
+        "La clave privada correspondiente al par de claves del firmante.",
+        "La clave pública correspondiente a la clave privada del firmante."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Para verificar una firma digital se usa la clave pública correspondiente a la clave privada con la que se generó. La firma no consiste en cifrar el documento entero con la clave privada; los esquemas aprobados suelen firmar un resumen y se verifican conforme al algoritmo y formato concretos.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, temas 079–081 «Seguridad, criptografía, identificación y firma», edición 2026: generación y verificación de firma con claves asimétricas.",
+        "estado": "revisada",
+        "nota": "Cotejo A1-80/A1-81/A2-I.6/A2-IV.12; la clave pública del firmante verifica la firma."
+      },
+      "etiquetas": [
+        "firma digital",
+        "clave pública",
+        "clave privada",
+        "verificación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf",
+            "referencia": "NIST FIPS 186-5, Digital Signature Standard: la firma se genera con la clave privada y se verifica con la clave pública correspondiente del firmante."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 80 y 81: identificación y firma electrónica, certificados, claves públicas/privadas e infraestructura de clave pública."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema I.6 (identidad y firma electrónica) y IV.12 (técnicas criptográficas y firma digital)."
+          },
+          {
+            "url": "https://docs.google.com/document/d/1Rix8RBBUSoXJBOAt8iWyU9j5tPiqlXzk/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, temas 079–081 «Seguridad, criptografía, identificación y firma», edición 2026: claves y validación de firma."
+          }
+        ],
+        "observaciones": "Para verificar una firma digital se usa la clave pública correspondiente a la clave privada con la que se generó. La firma no consiste en cifrar el documento entero con la clave privada; los esquemas aprobados suelen firmar un resumen y se verifican conforme al algoritmo y formato concretos."
+      }
     },
     {
       "id": 5272,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la opción INCORRECTA sobre las funciones hash o resumen:",
+      "texto": "Indique la afirmación FALSA sobre las funciones hash criptográficas:",
       "opciones": [
-        "Su utilización en MDC (Modification Detection Codes) permite verificar la integridad de los mensajes.",
-        "La longitud del hash es siempre la misma, con independencia del tamaño del mensaje.",
-        "La función hash es reversible y bidireccional.",
-        "Entre los algoritmos utilizados se encuentran MD5 y SHA-2."
+        "Para un algoritmo concreto, el resumen tiene longitud fija aunque varíe la longitud del mensaje de entrada.",
+        "Se utilizan para detectar cambios en un mensaje comparando los resúmenes calculados.",
+        "Son reversibles: a partir del resumen se puede recuperar el mensaje original.",
+        "SHA-2 es una familia de funciones hash criptográficas normalizada."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La afirmación falsa es que una función hash criptográfica sea reversible: está diseñada para que no resulte factible recuperar el mensaje a partir del resumen. Para un algoritmo dado, el digest tiene longitud fija. Un hash sin clave, por sí solo, tampoco autentica al emisor; para ello se necesita un MAC, firma u otro mecanismo de confianza.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, temas 079–081 «Seguridad, criptografía, identificación y firma», edición 2026: hashes y resumen criptográfico.",
+        "estado": "revisada",
+        "nota": "Cotejo A1-80/A1-125/A2-IV.12; hash no es reversible ni autentica por sí solo."
+      },
+      "etiquetas": [
+        "funciones hash",
+        "resumen criptográfico",
+        "integridad",
+        "one-way"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/projects/hash-functions",
+            "referencia": "NIST CSRC, Hash Functions: un algoritmo hash transforma un mensaje de longitud arbitraria en un resumen de longitud fija; enumera SHA-2 y SHA-3 como familias aprobadas."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/hash_function",
+            "referencia": "NIST CSRC Glossary, hash function: define la salida de longitud fija y las propiedades de seguridad esperadas de las funciones aprobadas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 80 y 125: criptografía, certificados y técnicas criptográficas para seguridad en redes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: técnicas criptográficas y protocolos seguros."
+          },
+          {
+            "url": "https://docs.google.com/document/d/1Rix8RBBUSoXJBOAt8iWyU9j5tPiqlXzk/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, temas 079–081 «Seguridad, criptografía, identificación y firma», edición 2026: funciones hash y resumen."
+          }
+        ],
+        "observaciones": "La afirmación falsa es que una función hash criptográfica sea reversible: está diseñada para que no resulte factible recuperar el mensaje a partir del resumen. Para un algoritmo dado, el digest tiene longitud fija. Un hash sin clave, por sí solo, tampoco autentica al emisor; para ello se necesita un MAC, firma u otro mecanismo de confianza."
+      }
     },
     {
       "id": 5273,
       "bloque": 0,
       "tema": 0,
-      "texto": "El árbol formado por las entradas del directorio, en LDAP, se llama:",
+      "texto": "En el modelo de información de LDAP, ¿cómo se denomina la estructura jerárquica que organiza las entradas del directorio?",
       "opciones": [
         "Ltree",
         "LDS",
@@ -270185,35 +270272,157 @@
         "Todas son falsas"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La estructura jerárquica de entradas del directorio se denomina Directory Information Tree (DIT), como especifica RFC 4512. LDS puede ser nombre de producto/servicio en algunas plataformas, pero no es el nombre genérico de esta estructura.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-122"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, Tema 122 «Correo, mensajería y directorios», edición 2026: estructura jerárquica LDAP y árbol DIT.",
+        "estado": "revisada",
+        "nota": "Cotejo A1-80/A1-122; Directory Information Tree es el árbol de entradas del directorio LDAP."
+      },
+      "etiquetas": [
+        "LDAP",
+        "DIT",
+        "Directory Information Tree",
+        "directorios"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4512.html",
+            "referencia": "IETF RFC 4512, §2.1: las entradas del modelo de información del directorio se organizan jerárquicamente en un Directory Information Tree (DIT)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 80: protocolos de directorio basados en LDAP y X.500; tema 122: servicios de directorio."
+          },
+          {
+            "url": "https://docs.google.com/document/d/1TquAQ4a5u1wiDtMpLGimvmFONKEQa2Gv/edit?usp=drivesdk&ouid=107088454749630873035&rtpof=true&sd=true",
+            "referencia": "ITIC Academy, Tema 122 «Correo, mensajería y directorios», edición 2026: modelo jerárquico y terminología de directorio LDAP."
+          }
+        ],
+        "observaciones": "La estructura jerárquica de entradas del directorio se denomina Directory Information Tree (DIT), como especifica RFC 4512. LDS puede ser nombre de producto/servicio en algunas plataformas, pero no es el nombre genérico de esta estructura."
+      }
     },
     {
       "id": 5274,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué mecanismos de comprobación de identidad establece la ley 6/2020 y su desarrollo en la Orden ETD/465/2021 para la emisión de certificados electrónicos cualificados?:",
+      "texto": "Según la Ley 6/2020 y la Orden ETD/465/2021, ¿qué afirmación describe correctamente la identificación remota por vídeo para expedir un certificado cualificado?",
       "opciones": [
-        "Presencial, remota por vídeo o firma legitimada notarialmente.",
-        "Exclusivamente presencial ante una oficina de registro autorizada.",
-        "Presencial o mediante la firma del interesado, legitimada en presencia notarial.",
-        "Presencial, mediante llamada telefónica, video llamada, zoom o similar."
+        "Puede emplearse si el procedimiento cumple los requisitos legales y técnicos de seguridad y fiabilidad establecidos para la videoidentificación.",
+        "Basta con realizar una llamada telefónica en la que el solicitante declare su identidad.",
+        "Cualquier videollamada por Zoom u otra aplicación es válida aunque no se compruebe el documento ni se sigan controles técnicos.",
+        "La videoidentificación está prohibida y la personación física es siempre obligatoria, incluso en los supuestos regulados."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La respuesta A recoge las vías preguntadas: personación, firma de la solicitud legitimada notarialmente cuando se prescinde de la presencia, e identificación remota por vídeo bajo los requisitos de la Orden ETD/465/2021. No es válida cualquier llamada, Zoom u otra videollamada informal: el procedimiento debe cumplir las condiciones técnicas y de seguridad exigidas. El marco eIDAS puede reconocer además otros medios electrónicos, por lo que esta pregunta se limita expresamente a la Ley 6/2020 y su desarrollo por Orden.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-I-9"
+        ],
+        "bloque_academia": "ITIC Academy, temas 079–081 «Seguridad, criptografía, identificación y firma», edición 2026: certificados cualificados e identificación de solicitantes.",
+        "estado": "revisada",
+        "nota": "Cotejo A1-80/A1-81/A2-I.6/A2-I.9; videoidentificación solo bajo el procedimiento y requisitos de la Orden ETD/465/2021."
+      },
+      "etiquetas": [
+        "Ley 6/2020",
+        "ETD/465/2021",
+        "certificado cualificado",
+        "videoidentificación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046",
+            "referencia": "Ley 6/2020, art. 7.1–2: regula personación, excepción por firma legitimada notarialmente y habilitación reglamentaria de métodos remotos con seguridad equivalente."
+          },
+          {
+            "url": "https://boe.es/buscar/act.php?id=BOE-A-2021-7966",
+            "referencia": "Orden ETD/465/2021 consolidada, modificada por ETD/743/2022: establece requisitos y procedimientos para identificar por vídeo a solicitantes de certificados cualificados; no equivale a cualquier llamada o aplicación de videoconferencia."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 80 y 81: identificación y firma, certificados e infraestructura de clave pública."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas I.6 e I.9: eIDAS, identidad/firma electrónica e instrumentos de identificación y autenticación en la Administración."
+          },
+          {
+            "url": "https://docs.google.com/document/d/1Rix8RBBUSoXJBOAt8iWyU9j5tPiqlXzk/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, temas 079–081 «Seguridad, criptografía, identificación y firma», edición 2026: certificados y comprobación de identidad."
+          }
+        ],
+        "observaciones": "La respuesta A recoge las vías preguntadas: personación, firma de la solicitud legitimada notarialmente cuando se prescinde de la presencia, e identificación remota por vídeo bajo los requisitos de la Orden ETD/465/2021. No es válida cualquier llamada, Zoom u otra videollamada informal: el procedimiento debe cumplir las condiciones técnicas y de seguridad exigidas. El marco eIDAS puede reconocer además otros medios electrónicos, por lo que esta pregunta se limita expresamente a la Ley 6/2020 y su desarrollo por Orden."
+      }
     },
     {
       "id": 5275,
       "bloque": 0,
       "tema": 0,
-      "texto": "Una infraestructura de clave pública:",
+      "texto": "¿Cuál es la función principal de una infraestructura de clave pública (PKI)?",
       "opciones": [
-        "Consiste en el acceso a soluciones de teletrabajo de las Administraciones Públicas.",
-        "Es el conjunto de servidores que realizan operaciones de cifrado en una autoridad de certificación.",
-        "Es la infraestructura capaz de soportar la gestión de claves públicas para los servicios de autenticación, criptación, integridad, o no repudio.",
-        "Es el conjunto de aplicaciones instaladas en ordenadores personales que permiten realizar operaciones de cifrado o de firma electrónica."
+        "Proporcionar acceso remoto a las soluciones de teletrabajo de las Administraciones Públicas.",
+        "Ser únicamente el conjunto de servidores que ejecutan operaciones de cifrado para una autoridad de certificación.",
+        "Proporcionar el marco organizativo y técnico para emitir, mantener, validar y revocar certificados de clave pública.",
+        "Instalar en cada ordenador personal una aplicación que sustituye a las autoridades de certificación y gestiona localmente toda la confianza."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Una PKI es el marco organizativo y técnico para gestionar certificados de clave pública durante su ciclo de vida, incluida su emisión, mantenimiento y revocación. No es solo un conjunto de servidores de cifrado ni un programa cliente instalado en cada equipo.",
+      "clasificacion": {
+        "A1": [
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, temas 079–081 «Seguridad, criptografía, identificación y firma», edición 2026: autoridades, certificados y ciclo de vida PKI.",
+        "estado": "revisada",
+        "nota": "Cotejo A1-81/A2-I.6/A2-IV.12; PKI administra certificados a lo largo de su ciclo de vida."
+      },
+      "etiquetas": [
+        "PKI",
+        "infraestructura de clave pública",
+        "certificados",
+        "gestión de claves"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/public_key_infrastructure",
+            "referencia": "NIST CSRC Glossary, public key infrastructure: marco establecido para emitir, mantener y revocar certificados de clave pública."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 81: PKI, certificados y mecanismos de identificación y firma."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema I.6 (identidad/firma electrónica) y IV.12 (criptografía y firma digital)."
+          },
+          {
+            "url": "https://docs.google.com/document/d/1Rix8RBBUSoXJBOAt8iWyU9j5tPiqlXzk/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, temas 079–081 «Seguridad, criptografía, identificación y firma», edición 2026: certificados y ciclo de vida PKI."
+          }
+        ],
+        "observaciones": "Una PKI es el marco organizativo y técnico para gestionar certificados de clave pública durante su ciclo de vida, incluida su emisión, mantenimiento y revocación. No es solo un conjunto de servidores de cifrado ni un programa cliente instalado en cada equipo."
+      }
     },
     {
       "id": 5276,
