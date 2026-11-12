@@ -1,0 +1,484 @@
+{
+  "fecha": "2026-11-12",
+  "alcance": "IDs 5221–5225; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 5221,
+      "original": {
+        "id": 5221,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Cuantos bits tiene una cabecera MPLS",
+        "opciones": [
+          "64",
+          "16",
+          "32"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5221,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En MPLS, ¿cuántos bits ocupa cada entrada de la pila de etiquetas (label stack entry) definida por RFC 3032?",
+        "opciones": [
+          "64 bits.",
+          "16 bits.",
+          "32 bits."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se corrige «cabecera MPLS», que podía sugerir un campo único fijo de todo el paquete. La unidad codificada por RFC 3032 es cada entrada de la pila de etiquetas: ocupa 4 octetos (32 bits). Un paquete puede transportar una o varias entradas y su encapsulación total no tiene necesariamente 32 bits.",
+        "clasificacion": {
+          "A1": [
+            "A1-113"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026: describe MPLS en redes de transporte/agregación; el ancho de cada entrada de etiqueta se contrasta directamente con RFC 3032.",
+          "estado": "revisada",
+          "nota": "Cotejo directo A1-108/A2-IV.10, donde la convocatoria A2 menciona MPLS."
+        },
+        "etiquetas": [
+          "MPLS",
+          "etiqueta",
+          "label stack entry",
+          "32 bits"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3032.html",
+              "referencia": "IETF RFC 3032, §2.1 y figura 1: la pila MPLS se compone de entradas label stack de cuatro octetos; cada entrada incluye etiqueta de 20 bits, TC/EXP de 3, S de 1 y TTL de 8."
+            },
+            {
+              "url": "https://www.rfc-editor.org/info/rfc3443/",
+              "referencia": "IETF RFC 3443, procesamiento TTL en MPLS: confirma el campo TTL de 8 bits dentro de cada entrada de pila."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 108: redes de telecomunicaciones, conmutación e interconexión."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.10: redes de área extensa, tecnologías MPLS y protocolos de encaminamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026: MPLS en redes de transporte/agregación; se contrasta la longitud exacta con RFC 3032."
+            }
+          ],
+          "observaciones": "Se corrige «cabecera MPLS», que podía sugerir un campo único fijo de todo el paquete. La unidad codificada por RFC 3032 es cada entrada de la pila de etiquetas: ocupa 4 octetos (32 bits). Un paquete puede transportar una o varias entradas y su encapsulación total no tiene necesariamente 32 bits."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con el programa oficial A1/A2 2025 y materiales ITIC Academy accesibles en Drive.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026: describe MPLS en redes de transporte/agregación; el ancho de cada entrada de etiqueta se contrasta directamente con RFC 3032.",
+            "nota": "Cotejo directo A1-108/A2-IV.10, donde la convocatoria A2 menciona MPLS."
+          }
+        },
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Corrección de tema oficial: MPLS aparece expresamente en A1-113 (redes de transporte), no en A1-108.",
+          "A1_anterior": [
+            "A1-108"
+          ],
+          "A1_actualizada": [
+            "A1-113"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5222,
+      "original": {
+        "id": 5222,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una LAN inalámbrica, WPA2 (WiFi Protected Access 2) implementa la seguridad según lo definido en el estándar:",
+        "opciones": [
+          "IEEE 802.11a",
+          "IEEE 802.11g",
+          "IEEE 802.11h",
+          "IEEE 802.11i"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5222,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una LAN inalámbrica, WPA2 (WiFi Protected Access 2) implementa la seguridad según lo definido en el estándar:",
+        "opciones": [
+          "IEEE 802.11a",
+          "IEEE 802.11g",
+          "IEEE 802.11h",
+          "IEEE 802.11i"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La equivalencia es histórica y técnica: WPA2 fue el programa de interoperabilidad de Wi-Fi Alliance basado en los requisitos de seguridad de la enmienda IEEE 802.11i-2004. La enmienda se incorporó después a ediciones consolidadas de IEEE 802.11; no se afirma que 802.11i siga siendo una norma separada vigente. Se conserva la respuesta 802.11i y se contextualiza frente a WPA3.",
+        "clasificacion": {
+          "A1": [
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-11"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 46 «Redes inalámbricas», versión 2026: sección de seguridad identifica 802.11i (2004), RSN/AES-CCMP y su papel como base de WPA2; distingue WPA3 y el estándar IEEE consolidado.",
+          "estado": "revisada",
+          "nota": "Cotejo directo A1-118/A2-IV.11 sobre LAN inalámbrica y seguridad."
+        },
+        "etiquetas": [
+          "WPA2",
+          "IEEE 802.11i",
+          "seguridad Wi-Fi",
+          "RSN"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/glossary/term/wi_fi_protected_access_2",
+              "referencia": "NIST CSRC Glossary, Wi-Fi Protected Access 2: define WPA2 como implementación interoperable de Wi-Fi Alliance del estándar de seguridad IEEE 802.11i."
+            },
+            {
+              "url": "https://standards.ieee.org/ieee/802.11i/3127/",
+              "referencia": "IEEE Standards Association, IEEE 802.11i-2004 Amendment 6: identifica el objeto de la enmienda como mecanismos de seguridad MAC para IEEE 802.11; hoy incorporada a ediciones consolidadas de 802.11."
+            },
+            {
+              "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-bccd1f279aaf7e4caa863b34791bb565/pdf/GOVPUB-C13-bccd1f279aaf7e4caa863b34791bb565.pdf",
+              "referencia": "NIST SP 800-97, Establishing Wireless Robust Security Networks: explica que WPA2 es la implementación Wi-Fi Alliance de los requisitos IEEE 802.11i."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 118: redes LAN y seguridad."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.11: redes inalámbricas y seguridad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 46 «Redes inalámbricas», versión 2026: sección de seguridad WLAN identifica 802.11i (2004), RSN/AES-CCMP y su papel como base de WPA2; se distingue de WPA3 y del texto consolidado actual del estándar."
+            }
+          ],
+          "observaciones": "La equivalencia es histórica y técnica: WPA2 fue el programa de interoperabilidad de Wi-Fi Alliance basado en los requisitos de seguridad de la enmienda IEEE 802.11i-2004. La enmienda se incorporó después a ediciones consolidadas de IEEE 802.11; no se afirma que 802.11i siga siendo una norma separada vigente. Se conserva la respuesta 802.11i y se contextualiza frente a WPA3."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con el programa oficial A1/A2 2025 y materiales ITIC Academy accesibles en Drive.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 46 «Redes inalámbricas», versión 2026: sección de seguridad identifica 802.11i (2004), RSN/AES-CCMP y su papel como base de WPA2; distingue WPA3 y el estándar IEEE consolidado.",
+            "nota": "Cotejo directo A1-118/A2-IV.11 sobre LAN inalámbrica y seguridad."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5223,
+      "original": {
+        "id": 5223,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La modulación 16-QAM transmite:",
+        "opciones": [
+          "1 bit por símbolo.",
+          "4 bits por símbolo.",
+          "2 bits por símbolo.",
+          "Depende de las portadoras utilizadas."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5223,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una modulación 16-QAM sin contar codificación ni sobrecargas, ¿cuántos bits se asignan a cada símbolo de la constelación?",
+        "opciones": [
+          "1 bit por símbolo.",
+          "4 bits por símbolo.",
+          "2 bits por símbolo.",
+          "Depende del número de portadoras, no del tamaño de la constelación."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Para una constelación 16-QAM hay 16 símbolos posibles; una elección entre 16 estados representa log₂(16)=4 bits por símbolo antes de considerar codificación, pilotos u otras sobrecargas. No equivale por sí sola a una tasa de bits por segundo: esta depende además de la velocidad de símbolos y del sistema.",
+        "clasificacion": {
+          "A1": [
+            "A1-108"
+          ],
+          "A2": [
+            "A2-IV-7"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026: establece bit/s = baudios × log₂(M) para M niveles; para la modulación 16-QAM con M=16 resulta log₂16=4 bits por símbolo.",
+          "estado": "revisada",
+          "nota": "Cotejo directo A1-108/A2-IV.7 sobre transmisión y parámetros de modulación."
+        },
+        "etiquetas": [
+          "16-QAM",
+          "modulación",
+          "constelación",
+          "bits por símbolo"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/epublications/publication/itu-t-g-9903-2017-amd-2-2023-03",
+              "referencia": "ITU-T Recommendation G.9903 (2017), Amendment 2 (2023), sección de modulación 16-QAM: mapea cuatro bits a uno de los 16 puntos de constelación."
+            },
+            {
+              "url": "https://www.etsi.org/deliver/etsi_tr/136900_136999/136942/09.00.01_60/tr_136942v090001p.pdf",
+              "referencia": "ETSI TR 136 942, ejemplos de esquemas de modulación: 16-QAM transporta cuatro bits por símbolo de modulación."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 108: medios de transmisión y redes de telecomunicaciones."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.7: medios de transmisión guiados/no guiados y parámetros significativos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026: expresa bit/s = baudios × log₂(M) para M niveles; aplicado a M=16, son 4 bits/símbolo. La asignación concreta también se contrasta con ITU-T."
+            }
+          ],
+          "observaciones": "Para una constelación 16-QAM hay 16 símbolos posibles; una elección entre 16 estados representa log₂(16)=4 bits por símbolo antes de considerar codificación, pilotos u otras sobrecargas. No equivale por sí sola a una tasa de bits por segundo: esta depende además de la velocidad de símbolos y del sistema."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con el programa oficial A1/A2 2025 y materiales ITIC Academy accesibles en Drive.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026: establece bit/s = baudios × log₂(M) para M niveles; para la modulación 16-QAM con M=16 resulta log₂16=4 bits por símbolo.",
+            "nota": "Cotejo directo A1-108/A2-IV.7 sobre transmisión y parámetros de modulación."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5224,
+      "original": {
+        "id": 5224,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué es falso sobre IPv6?",
+        "opciones": [
+          "::1 es la dirección de loopback.",
+          "Las cabeceras de extensión no son examinadas ni procesadas por ningún nodo a lo largo de la ruta de entrega de un paquete, excepto la de Opciones de Salto a Salto.",
+          "Todas son verdaderas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5224,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación es falsa según la especificación actual de IPv6 (RFC 8200)?",
+        "opciones": [
+          "::1 es la dirección IPv6 de loopback.",
+          "Salvo Hop-by-Hop, las cabeceras de extensión no se procesan en cada nodo de tránsito a lo largo de la ruta hasta el destino indicado.",
+          "Todo router de tránsito debe examinar y procesar siempre la cabecera Hop-by-Hop, aunque no esté configurado para ello.",
+          "La cabecera Hop-by-Hop, cuando aparece, va inmediatamente después de la cabecera IPv6."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se evita la simplificación de que todo router debe procesar necesariamente la cabecera Hop-by-Hop. RFC 8200 dice que las cabeceras de extensión distintas de Hop-by-Hop no se procesan en cada nodo de tránsito; el examen de Hop-by-Hop está permitido, pero actualmente se espera solo si el nodo está configurado para ello. Se formula una única afirmación falsa: que todos los routers deben examinarla y procesarla siempre. ::1 sí es loopback.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026, sección IPv4/IPv6 y cabeceras: mapa temático; el matiz de procesamiento Hop-by-Hop según la configuración local se comprueba en RFC 8200/9673.",
+          "estado": "revisada",
+          "nota": "Cotejo directo A1-115/A2-II.8 sobre IPv6 y protocolos de red."
+        },
+        "etiquetas": [
+          "IPv6",
+          "cabeceras de extensión",
+          "Hop-by-Hop Options",
+          "RFC 8200",
+          "::1"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+              "referencia": "IETF RFC 8200, §§2, 4 y 4.3: ::1 se trata como loopback conforme a RFC 4291; los routers intermedios no procesan las demás cabeceras de extensión, y el procesamiento Hop-by-Hop puede limitarse por configuración local."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+              "referencia": "IETF RFC 4291, §2.5.3: define 0:0:0:0:0:0:0:1 (::1) como dirección loopback."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9673.html",
+              "referencia": "IETF RFC 9673, procedimientos de procesamiento IPv6 Hop-by-Hop: confirma que el procesamiento en routers está sujeto a su configuración local."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: arquitectura IP, encaminamiento y funcionalidades de IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.8: modelo TCP/IP/OSI, direccionamiento y encaminamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026, apartado de IPv4/IPv6: cotejo de direccionamiento y cabeceras; el matiz normativo de Hop-by-Hop se verifica con RFC 8200/9673."
+            }
+          ],
+          "observaciones": "Se evita la simplificación de que todo router debe procesar necesariamente la cabecera Hop-by-Hop. RFC 8200 dice que las cabeceras de extensión distintas de Hop-by-Hop no se procesan en cada nodo de tránsito; el examen de Hop-by-Hop está permitido, pero actualmente se espera solo si el nodo está configurado para ello. Se formula una única afirmación falsa: que todos los routers deben examinarla y procesarla siempre. ::1 sí es loopback."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con el programa oficial A1/A2 2025 y materiales ITIC Academy accesibles en Drive.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026, sección IPv4/IPv6 y cabeceras: mapa temático; el matiz de procesamiento Hop-by-Hop según la configuración local se comprueba en RFC 8200/9673.",
+            "nota": "Cotejo directo A1-115/A2-II.8 sobre IPv6 y protocolos de red."
+          }
+        },
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Ajuste de unicidad: se reemplaza la opción «Todas las afirmaciones anteriores son verdaderas», que también sería falsa dado el enunciado, por una propiedad verdadera de ubicación de Hop-by-Hop según RFC 8200 §4.3.",
+          "opciones_anteriores": [
+            "::1 es la dirección IPv6 de loopback.",
+            "Salvo Hop-by-Hop, las cabeceras de extensión no se procesan en cada nodo de tránsito a lo largo de la ruta hasta el destino indicado.",
+            "Todo router de tránsito debe examinar y procesar siempre la cabecera Hop-by-Hop, aunque no esté configurado para ello.",
+            "Todas las afirmaciones anteriores son verdaderas."
+          ],
+          "opciones_actualizadas": [
+            "::1 es la dirección IPv6 de loopback.",
+            "Salvo Hop-by-Hop, las cabeceras de extensión no se procesan en cada nodo de tránsito a lo largo de la ruta hasta el destino indicado.",
+            "Todo router de tránsito debe examinar y procesar siempre la cabecera Hop-by-Hop, aunque no esté configurado para ello.",
+            "La cabecera Hop-by-Hop, cuando aparece, va inmediatamente después de la cabecera IPv6."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5225,
+      "original": {
+        "id": 5225,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En IPv4 la cabecera IP tiene un campo denominado TTL (Time To Live) que indica el número máximo de encaminadores que un paquete puede atravesar, ¿Cuál es el rango de valores que puede tomar este campo?",
+        "opciones": [
+          "0-15",
+          "0-255",
+          "0-5",
+          "0-127"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5225,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué rango de valores puede representar el campo TTL de 8 bits de la cabecera IPv4?",
+        "opciones": [
+          "0–15.",
+          "0–255.",
+          "0–5.",
+          "0–127."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "El rango representable es 0–255 porque el campo TTL tiene 8 bits. La redacción anterior lo describía simplemente como un número máximo de routers, simplificación operativa habitual pero no definición normativa completa: RFC 791 lo define como tiempo de vida, y exige reducirlo al menos en uno al procesar/encaminar el datagrama. Si alcanza cero, el router no lo reenvía.",
+        "clasificacion": {
+          "A1": [
+            "A1-111",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026, sección IPv4/IPv6 y encaminamiento: cotejo de cobertura. No se atribuye al material una definición normativa de TTL; se usa RFC 791.",
+          "estado": "revisada",
+          "nota": "Cotejo directo A1-111/A1-115/A2-II.8 sobre cabecera IP y encaminamiento."
+        },
+        "etiquetas": [
+          "IPv4",
+          "TTL",
+          "8 bits",
+          "lifetime"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+              "referencia": "IETF RFC 791, §3.1: el campo Time to Live tiene 8 bits y expresa el tiempo máximo de vida del datagrama; un módulo de encaminamiento debe reducirlo al menos en una unidad aun cuando el tiempo transcurrido sea menor de un segundo."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1812.html",
+              "referencia": "IETF RFC 1812, §5.3.1: el router reduce el TTL al reenviar y descarta el datagrama si el valor llega a cero."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, temas 111 (direccionamiento/encaminamiento) y 115 (redes IP)."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.8: TCP/IP, direccionamiento y encaminamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», versión 2026: cubre IPv4, IPv6 y campos de red; el tamaño exacto y el sentido temporal original del TTL se verifican en RFC 791."
+            }
+          ],
+          "observaciones": "El rango representable es 0–255 porque el campo TTL tiene 8 bits. La redacción anterior lo describía simplemente como un número máximo de routers, simplificación operativa habitual pero no definición normativa completa: RFC 791 lo define como tiempo de vida, y exige reducirlo al menos en uno al procesar/encaminar el datagrama. Si alcanza cero, el router no lo reenvía."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con el programa oficial A1/A2 2025 y materiales ITIC Academy accesibles en Drive.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», versión 2026, sección IPv4/IPv6 y encaminamiento: cotejo de cobertura. No se atribuye al material una definición normativa de TTL; se usa RFC 791.",
+            "nota": "Cotejo directo A1-111/A1-115/A2-II.8 sobre cabecera IP y encaminamiento."
+          }
+        }
+      ]
+    }
+  ]
+}
