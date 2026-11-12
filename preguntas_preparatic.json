@@ -263272,71 +263272,298 @@
       "id": 5151,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación a lo anterior, señale la sentencia correcta.",
+      "texto": "En .NET, ¿qué afirmación describe correctamente cuándo se ejecuta la recolección de basura?",
       "opciones": [
-        "Para que el garbage collector comience a ejecutarse es necesario realizar una llamada al método GC.Collect.",
-        "Para que el garbage collector comience a ejecutarse es necesario realizar una llamada a la función VirtualAlloc de Windows.",
-        "Para que el garbage collector comience a ejecutarse es necesario realizar una llamada al método Object.Finalize.",
-        "En la mayoría de los casos no es necesario llamar a ningún método, dado que el garbage collector se ejecuta continuamente."
+        "Siempre es obligatorio llamar a GC.Collect para liberar objetos no utilizados.",
+        "VirtualAlloc inicia la recolección de basura del CLR.",
+        "Object.Finalize inicia el recolector antes de finalizar cada objeto.",
+        "El runtime inicia la recolección automáticamente cuando sus criterios de memoria indican que procede; normalmente no se llama manualmente a GC.Collect."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "En .NET, la recolección se inicia automáticamente cuando el GC determina que procede, por ejemplo por presión de memoria. GC.Collect solicita una recolección explícita y normalmente debe evitarse; VirtualAlloc se usa para reservar memoria y Finalize no inicia la recolección. Se elimina la palabra «continuamente», que sugería una ejecución permanente.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1, aborda .NET/CLR y gestión de memoria; se usa como cotejo curricular, con la mecánica del GC contrastada en Microsoft Learn.",
+        "estado": "revisada",
+        "nota": "Cotejo A1-66/A2-III.11; Microsoft Learn respalda las condiciones de recolección y las llamadas explícitas."
+      },
+      "etiquetas": [
+        ".NET",
+        "garbage collector",
+        "GC.Collect",
+        "VirtualAlloc",
+        "recolección automática"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals",
+            "referencia": "Microsoft Learn, Fundamentals of garbage collection: el GC decide cuándo recolectar según presión de memoria; salvo casos excepcionales y pruebas, no es necesario llamar a GC.Collect. VirtualAlloc reserva espacio de segmentos para el heap administrado, no inicia la recolección."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 66: entorno y plataforma Microsoft .NET."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III.11: plataforma .NET, modelo de programación y herramientas."
+          },
+          {
+            "url": "https://docs.google.com/document/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1: .NET, CLR y gestión de memoria; cotejo curricular general."
+          }
+        ],
+        "observaciones": "En .NET, la recolección se inicia automáticamente cuando el GC determina que procede, por ejemplo por presión de memoria. GC.Collect solicita una recolección explícita y normalmente debe evitarse; VirtualAlloc se usa para reservar memoria y Finalize no inicia la recolección. Se elimina la palabra «continuamente», que sugería una ejecución permanente."
+      }
     },
     {
       "id": 5152,
       "bloque": 0,
       "tema": 0,
-      "texto": "La especificación PKCS que define el formato de las claves privadas es:",
+      "texto": "En los estándares PKCS clásicos, ¿qué especificación define la sintaxis de información de clave privada (PrivateKeyInfo)?",
       "opciones": [
-        "PKCS 1",
-        "PKCS 5",
-        "PKCS 8",
-        "PKCS 6"
+        "PKCS #1",
+        "PKCS #5",
+        "PKCS #8",
+        "PKCS #6"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La respuesta del test clásico es PKCS #8, cuya versión 1.2 fue descrita por RFC 5208. Para precisión actual, RFC 5958 la sucede y define el formato OneAsymmetricKey, manteniendo compatibilidad con la estructura de versión 1. En el enunciado se explicita que pregunta por el estándar PKCS histórico.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 «Seguridad, criptografía, identificación y firma», versión 2026.1: claves privadas/públicas, firma y formatos criptográficos.",
+        "estado": "revisada",
+        "nota": "Cotejo directo A1-80/A2-IV.12; se diferencia el nombre PKCS histórico del estándar IETF sucesor RFC 5958."
+      },
+      "etiquetas": [
+        "PKCS",
+        "PKCS #8",
+        "claves privadas",
+        "RFC 5208",
+        "RFC 5958",
+        "ASN.1"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://datatracker.ietf.org/doc/rfc5208/",
+            "referencia": "IETF RFC 5208, PKCS #8: Private-Key Information Syntax Specification: describe PrivateKeyInfo y EncryptedPrivateKeyInfo para representar información de claves privadas."
+          },
+          {
+            "url": "https://datatracker.ietf.org/doc/rfc5958/",
+            "referencia": "IETF RFC 5958: define paquetes de claves asimétricas y sintaxis de información de clave privada; obsoleta PKCS #8 v1.2/RFC 5208 y renombra PrivateKeyInfo como OneAsymmetricKey."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 80: certificados, claves públicas/privadas y formatos de firma electrónica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: técnicas criptográficas y firma digital."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 «Seguridad, criptografía, identificación y firma», versión 2026.1: claves públicas/privadas, firma y formatos criptográficos."
+          }
+        ],
+        "observaciones": "La respuesta del test clásico es PKCS #8, cuya versión 1.2 fue descrita por RFC 5208. Para precisión actual, RFC 5958 la sucede y define el formato OneAsymmetricKey, manteniendo compatibilidad con la estructura de versión 1. En el enunciado se explicita que pregunta por el estándar PKCS histórico."
+      }
     },
     {
       "id": 5153,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si a un mensaje le aplicamos una función hash, ciframos el resultado con una clave privada y se lo enviamos a un tercero junto con el mensaje original conseguimos:",
+      "texto": "Una firma digital válida se genera con la clave privada del firmante sobre el resumen criptográfico del mensaje y se envía junto al mensaje sin cifrar. ¿Qué propiedades puede proporcionar?",
       "opciones": [
-        "Autenticación, Integridad y No repudio en origen.",
-        "Confidencialidad, Integridad y No repudio en origen.",
-        "Autenticación, Confidencialidad e Integridad.",
-        "Autenticación, Confidencialidad y No repudio en origen."
+        "Autenticidad del origen, integridad y apoyo al no repudio; no confidencialidad.",
+        "Confidencialidad, integridad y no repudio.",
+        "Solo confidencialidad y autenticación del destinatario.",
+        "Autenticación, confidencialidad e integridad, pero no autenticidad del origen."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se denomina firma digital, no cifrado de confidencialidad: se firma una representación hash con la clave privada y se verifica con la pública. Si la firma y su validación de identidad/certificado son correctas, aporta autenticidad de origen, integridad y apoyo a no repudio; el mensaje adjunto permanece legible y no queda confidencial.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 «Seguridad, criptografía, identificación y firma», versión 2026.1, apartados de firma digital y propiedades de seguridad.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo A1-80/A2-IV.12; NIST establece las propiedades y límites de una firma correctamente implementada."
+      },
+      "etiquetas": [
+        "firma digital",
+        "hash",
+        "clave privada",
+        "integridad",
+        "autenticación de origen",
+        "no repudio",
+        "confidencialidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/digital_signature",
+            "referencia": "NIST CSRC, Digital signature: una firma digital correctamente implementada permite verificar autenticidad del origen, integridad y apoyo a no repudio; no ofrece confidencialidad."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/fips/186-5/final",
+            "referencia": "NIST FIPS 186-5, Digital Signature Standard: las firmas detectan modificaciones y autentican a quien firma; pueden aportar evidencia de autoría a terceros."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 80: identificación, certificados, claves y formatos de firma."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: técnicas criptográficas y mecanismos de firma digital."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 «Seguridad, criptografía, identificación y firma», versión 2026.1: generación y verificación de firma digital, integridad, autenticación y límites de confidencialidad."
+          }
+        ],
+        "observaciones": "Se denomina firma digital, no cifrado de confidencialidad: se firma una representación hash con la clave privada y se verifica con la pública. Si la firma y su validación de identidad/certificado son correctas, aporta autenticidad de origen, integridad y apoyo a no repudio; el mensaje adjunto permanece legible y no queda confidencial."
+      }
     },
     {
       "id": 5154,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes elementos NO forma parte de HTML 5?",
+      "texto": "Según el HTML Living Standard vigente, ¿cuál de estos elementos está completamente obsoleto y no debe utilizarse?",
       "opciones": [
         "<canvas>",
+        "<dialog>",
         "<applet>",
-        "<keygen>",
         "<audio>"
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "En la versión vigente del HTML Living Standard, applet es un elemento obsoleto y no conforme. El test original incluía keygen como distractor, pero también está obsoleto en el estándar actual; se sustituye por dialog, elemento vigente, para dejar una única respuesta correcta.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1, cubre HTML y estándares web; su contraste con la versión vigente se complementa con WHATWG.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo A1-77/A2-II.9."
+      },
+      "etiquetas": [
+        "HTML",
+        "HTML Living Standard",
+        "applet",
+        "canvas",
+        "audio",
+        "dialog",
+        "elemento obsoleto"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
+            "referencia": "WHATWG HTML Living Standard, Non-conforming features: applet figura entre los elementos completamente obsoletos; recomienda embed u object."
+          },
+          {
+            "url": "https://www.w3.org/TR/html52/obsolete.html",
+            "referencia": "W3C HTML 5.2, elementos obsoletos: applet no conforme. El elemento keygen, presente entre los distractores originales, también cambió de estatus en ediciones posteriores, por lo que se retira para evitar dos respuestas defendibles."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 77: HTML, CSS, XML y estándares web."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.9: lenguajes de marca, HTML y funcionalidades."
+          },
+          {
+            "url": "https://docs.google.com/document/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1: estándares web y elementos HTML; contempla la obsolescencia de applet."
+          }
+        ],
+        "observaciones": "En la versión vigente del HTML Living Standard, applet es un elemento obsoleto y no conforme. El test original incluía keygen como distractor, pero también está obsoleto en el estándar actual; se sustituye por dialog, elemento vigente, para dejar una única respuesta correcta."
+      }
     },
     {
       "id": 5155,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la opción correcta respecto a Jakarta Enterprise Edition (Jakarta EE) y Java Platform Enterprise Edition (Java EE):",
+      "texto": "¿Qué afirmación describe correctamente la relación histórica entre Java EE y Jakarta EE?",
       "opciones": [
-        "Jakarta EE es la versión open source de Java EE, ofrecida por la empresa Oracle, con funcionalidad básica y sin soporte especializado.",
-        "Jakarta EE es una edición de Java EE enfocada en el desarrollo de aplicaciones altamente escalables ejecutadas en contenedores.",
-        "Jakarta EE es la denominación actual de la anterior Java EE, tras heredar su mantenimiento la Eclipse Foundation.",
-        "Jakarta EE es una versión open source de Java EE desarrollada por la comunidad, plenamente compatible con la versión 8 y siguientes."
+        "Jakarta EE es una oferta propietaria de Oracle con funcionalidad reducida.",
+        "Jakarta EE es una edición independiente sin continuidad técnica con Java EE.",
+        "Jakarta EE es la evolución comunitaria de Java EE transferida a Eclipse Foundation; Jakarta EE 8 conserva compatibilidad con Java EE 8 y Jakarta EE 9 cambia el namespace a jakarta.*.",
+        "Todas las versiones Jakarta EE mantienen necesariamente el namespace javax.* y compatibilidad binaria con cualquier Java EE."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Jakarta EE es la evolución comunitaria de Java EE bajo la gobernanza de Eclipse Foundation. Jakarta EE 8 conservó la compatibilidad de Java EE 8; Jakarta EE 9 cambió el espacio de nombres de javax.* a jakarta.*. Se evita afirmar compatibilidad binaria general entre todas las versiones posteriores.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1, §5.1: historia Java EE/Jakarta EE, transferencia a Eclipse y cambio de namespace.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo A1-67/A2-III.10; Eclipse Foundation confirma la compatibilidad de la versión 8 y los cambios de Jakarta 9."
+      },
+      "etiquetas": [
+        "Java EE",
+        "Jakarta EE",
+        "Eclipse Foundation",
+        "javax",
+        "jakarta",
+        "compatibilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/about/faq/",
+            "referencia": "Eclipse Foundation, Jakarta EE FAQ: Java EE 8 y sus especificaciones, implementaciones de referencia y TCK se transfirieron a Eclipse; Jakarta EE es el desarrollo comunitario sucesor."
+          },
+          {
+            "url": "https://jakarta.ee/blogs/javax-jakartaee-namespace-ecosystem-progress/",
+            "referencia": "Eclipse Foundation, Javax to Jakarta EE Namespace Ecosystem Progress: Jakarta EE 8 mantiene compatibilidad con Java EE 8; Jakarta EE 9 introduce el cambio de namespace javax.* a jakarta.*."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 67: entorno de desarrollo Java."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III.10: arquitectura Java EE/Jakarta EE."
+          },
+          {
+            "url": "https://docs.google.com/document/d/11CEe-2aKTukr0w6e752_y5y-wWuy1bPH/edit?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1, §5.1: transferencia a Eclipse, renombrado y cambio de namespace desde Jakarta EE 9."
+          }
+        ],
+        "observaciones": "Jakarta EE es la evolución comunitaria de Java EE bajo la gobernanza de Eclipse Foundation. Jakarta EE 8 conservó la compatibilidad de Java EE 8; Jakarta EE 9 cambió el espacio de nombres de javax.* a jakarta.*. Se evita afirmar compatibilidad binaria general entre todas las versiones posteriores."
+      }
     },
     {
       "id": 5156,
