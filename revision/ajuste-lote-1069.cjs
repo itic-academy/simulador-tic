@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-1069.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const q=bank.preguntas.find(x=>x.id===5666),c=log.cambios.find(x=>x.id===5666);assert.ok(q&&c);
+q.texto='¿Cuál de estas herramientas requiere adquirir del proveedor una licencia para su uso estándar después del período de prueba?';
+q.opciones=['Vinagre 3.22 (GNU GPL-2.0-or-later).','Dameware Mini Remote Control (SolarWinds).','TightVNC 2.8.90 (GNU GPL v2).','rdesktop 1.9.x (GNU GPL v3 o posterior).'];
+q.respuesta_correcta=1;
+const note='Corregida, respuesta B. El enunciado se acota a la herramienta cuyo uso estándar requiere adquirir licencia del proveedor: Dameware Mini Remote Control; SolarWinds ofrece trial y activación/licenciamiento comercial. Se versionan opciones libres: Vinagre 3.22 usa GPL-2.0-or-later, TightVNC 2.8.90 se ofrece bajo GPL v2 y rdesktop 1.9.x bajo GPL v3+. TightVNC 4.0 (octubre de 2026) es closed-source, pero su base gratuita permite uso comercial; solo las funciones Pro, incluido TLS 1.3, requieren suscripción. «Propietario» no equivale necesariamente a «de pago», y la versión debe indicarse. A1-69 por licencias de software; no se fuerza un epígrafe A2.';
+q.revision.observaciones=note;
+const f=q.revision.fuentes.find(x=>x.url==='https://www.tightvnc.com/licensing.php');assert.ok(f);f.referencia='TightVNC, condiciones de licencia por versión: TightVNC 2 se distribuye bajo GPL; TightVNC 4.0 actual es closed-source, pero su versión base es gratis incluso para uso comercial y solo el cifrado TLS 1.3 requiere Pro. «Propietario» y «de pago» no son sinónimos.';
+q.revision.fuentes.push({url:'https://www.tightvnc.com/whatsnew.php',referencia:'TightVNC, registro de versiones: TightVNC 4.0.0 se publicó el 25-10-2026; versión 4 vigente junto a 2.8.90 de la rama 2.'});
+q.comentarios=note;c.actualizada=structuredClone(q);
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');
+console.log('Enunciado, licencia por versión y snapshot del ID 5666 afinados.');
