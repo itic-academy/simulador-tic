@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 12 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1077 (IDs 5706–5710); también se resolvió el pendiente histórico ID 77. Acumulado: 5.705 preguntas examinadas individualmente; 5.606 verificadas (996 vigentes, 4.190 corregidas y 420 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.418 sin revisar individualmente. Hay 5.678 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1078 (IDs 5711–5715); también se resolvió el pendiente histórico ID 77. Acumulado: 5.710 preguntas examinadas individualmente; 5.611 verificadas (996 vigentes, 4.195 corregidas y 420 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.413 sin revisar individualmente. Hay 5.683 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
+
+## Lote 1078 — 12 de noviembre de 2026
+
+IDs 5711–5715 revisados individualmente. Se cotejaron conectores BNC con IEC 61169-8; las interfaces 10 Gigabit Ethernet con IEEE 802.3ae; los puentes MAC con IEEE 802.1Q; el modelo OSI con ISO/IEC 7498-1; y las familias de amplificadores ópticos con ITU-T G.661 y G Supplement 42. Se precisaron los enunciados para indicar el nivel o tipo de medio y hacer inequívoca la respuesta. El [registro cambios-lote-1078.json](cambios-lote-1078.json) conserva los originales, actualizaciones, fuentes y cotejo curricular.
+
+- **5711 — BNC:** corregida, respuesta B. La familia BNC corresponde a conectores RF coaxiales; no a par trenzado ni a fibra. A1-110/A2-IV-7.
+- **5712 — 10GBASE para fibra monomodo:** corregida, respuesta B. LR es la interfaz 10 Gb/s para monomodo (alcance nominal hasta 10 km, mínimo de enlace 2 m); SR es para multimodo y CX4 para twinaxial. Los 200 m indicados están dentro del rango LR. A1-110/A2-IV-7.
+- **5713 — puente de LAN:** corregida, respuesta C. IEEE 802.1Q especifica MAC Bridges para conectar LAN puenteadas; el bridge opera en capa de enlace. A1-110/A1-118/A2-IV-8.
+- **5714 — capa de presentación OSI:** corregida, respuesta B. La capa 6 representa y transforma la sintaxis de datos para el intercambio entre aplicaciones; la organización del diálogo es de sesión y el transporte extremo a extremo corresponde a transporte. A1-111/A2-II-8.
+- **5715 — EDFA:** corregida, respuesta D. Un EDFA utiliza fibra activa dopada con erbio; no es un SOA de semiconductor ni un amplificador Raman. A1-113/A2-IV-10.
+
+Fuentes primarias/técnicas: [IEC 61169-8](https://webstore.iec.ch/en/publication/4753); [documentación IEEE 802.3ae](https://www.ieee802.org/3/hssg/public/sep06/law_01_0906.pdf), interfaces SR/LR/CX4; [IEEE 802.1Q-2022](https://standards.ieee.org/ieee/802.3/802.1Q/10323/), bridges y bridged networks; [ISO/IEC 7498-1](https://www.iso.org/standard/20269.html), modelo OSI; [ITU-T G.661](https://www.itu.int/rec/T-REC-G.661/en) y [G Supplement 42](https://www.itu.int/epublications/es/publication/itu-t-g-suppl-42-2018-10-guide-on-the-use-of-the-itu-t-recommendations-related-to-optical-fibres-and-systems-technology), amplificadores de fibra, EDFA, Raman y SOA. Clasificación contrastada con [convocatoria GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 110, 111, 113 y 118, y [convocatoria GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), temas II.8, IV.7, IV.8 y IV.10.
+
+Cotejo curricular Drive: [bloque 42 Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) cubre cableado/interconexión, redes LAN y transporte JDSxWDM; su índice no nombra EDFA de forma literal, así que la definición se apoya en ITU-T. El [bloque 43 Protocolos](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk) incluye OSI, capas y protocolos. El cotejo delimita cobertura de academia y no sustituye los estándares IEC/IEEE/ISO/ITU-T.
+
+Ejecutados `node revision/revisar-lote-1078.cjs`, `node revision/academia-lote-1078.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: banco de 12.123 preguntas, 5.710 revisiones individuales, 99 pendientes explícitas, 6.413 preguntas aún sin revisión individual y cero errores estructurales.
 
 ## Lote 1077 — 12 de noviembre de 2026
 
