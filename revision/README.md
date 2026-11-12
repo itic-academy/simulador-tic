@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 12 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1054 (IDs 5591–5595); también se resolvió el pendiente histórico ID 77. Acumulado: 5.590 preguntas examinadas individualmente; 5.491 verificadas (983 vigentes, 4.094 corregidas y 414 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.533 sin revisar individualmente. Hay 5.570 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1055 (IDs 5596–5600); también se resolvió el pendiente histórico ID 77. Acumulado: 5.595 preguntas examinadas individualmente; 5.496 verificadas (984 vigentes, 4.097 corregidas y 415 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.528 sin revisar individualmente. Hay 5.575 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
 
 ## Pendiente anterior resuelto — ID 77 (12 de noviembre de 2026)
 
@@ -41,6 +41,22 @@ Ejecutados `node revision/revisar-lote-1051.cjs`, `node revision/academia-lote-1
 ## Lote 1052 — 12 de noviembre de 2026
 
 ## Lote 1053 — 12 de noviembre de 2026
+
+## Lote 1054 — 12 de noviembre de 2026
+
+## Lote 1055 — 12 de noviembre de 2026
+
+IDs 5596–5600 revisados individualmente. Se validó la convención de matriz PERT con una publicación del INAP; se evitó confundir los siete principios del Diseño Universal con el principio “Robusto” de WCAG; se actualizaron las referencias ISO de calidad/usabilidad; se concretó la recomendación de no divulgar la ubicación del CPD; y se contextualizó la arquitectura northbridge/southbridge como histórica.
+
+- **5596 — matriz de encadenamientos PERT:** **vigente**, respuesta B. Según la fuente del INAP, las columnas sin marcas representan actividades que no preceden a ninguna otra; su suceso final coincide con el fin del proyecto. La matriz es cuadrada por número de actividades y el cuadro de prelaciones descrito allí tiene dos columnas. A1-35; A2-III.2.
+- **5597 — principios del Diseño Universal:** **corregida**, respuesta D. “Robusto” no es uno de los siete principios del Center for Universal Design; sí es uno de los cuatro principios WCAG. Se especifica qué modelo de siete principios se pregunta. A1-44; A2-III.14.
+- **5598 — normas ISO y usabilidad:** **corregida**, respuesta A. Se actualiza ISO/IEC 25010:2011 (retirada) a la edición 2023 vigente del modelo de calidad de producto y se distingue de ISO/IEC 25019:2023 (calidad en uso) e ISO 9241-11:2018 (marco vigente de usabilidad). A1-44; A2-III.14.
+- **5599 — señalización del CPD:** **corregida**, respuesta B. La pregunta ahora especifica señalización pública que revela a visitantes no autorizados dónde está la sala crítica; una guía gubernamental de seguridad de CPD recomienda no señalizar su ubicación salvo obligación legal. El tamaño de puertas por sí solo no determina el nivel de seguridad. A1-53; A2-II.13/IV.6.
+- **5600 — northbridge/southbridge:** **histórica**, respuesta A. En el chipset dividido del Intel 815, el GMCH/northbridge gestiona memoria y AGP; el ICH/southbridge reúne IDE, USB y otras E/S. Se identifica como arquitectura clásica, no como diseño actual universal. A1-54; A2-IV.3.
+
+Fuentes primarias: [INAP, Documentación Administrativa 223, técnica PERT](https://revistasonline.inap.es/index.php/DA/article/download/5199/5253/5431); [RL Mace Universal Design Institute, siete principios](https://www.udinstitute.org/principles) y [W3C WCAG 2.2, principio “Robust”](https://www.w3.org/TR/WCAG22/); [ISO/IEC 25010:2023](https://www.iso.org/standard/78176.html), [ISO/IEC 25010:2011, edición anterior](https://www.iso.org/standard/35733.html), [ISO/IEC 25019:2023](https://www.iso.org/standard/78177.html) e [ISO 9241-11:2018](https://committee.iso.org/cms/live/live/en/sites/isoorg/contents/data/standard/06/35/63500.html); [Hong Kong Government, Practice Guide on Data Centre Security, § 6.5.9](https://www.digitalpolicy.gov.hk/en/our_work/data_governance/policies_standards/practice_guides/doc/Practice_Guide_on_Data_Centre_Security.pdf) y [NIST SP 800-12, seguridad física](https://csrc.nist.rip/publications/nistpubs/800-12/800-12-html/chapter15.html); [Intel 815 GMCH Datasheet](https://download.intel.com/design/chipsets/datashts/29068801.pdf) y [Intel, evolución de la arquitectura clásica](https://www.intel.com/content/www/us/en/gaming/resources/how-to-choose-a-motherboard.html). Programas oficiales: [A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo con [ITIC Academy, Gantt/PERT](https://drive.google.com/file/d/1DMz3yKo5YBTwNecdydOqWB9CxkyrQZ10/view?usp=drivesdk), [Análisis, diseño y construcción 2026](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), [tecnologías de sistemas y UX 2026](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk) y [Hardware v2 2026](https://drive.google.com/file/d/12heek9CTZHiGHjtWvLjdjOE7vIQdlYFm/view?usp=drivesdk). La academia se usa para encaje curricular; las afirmaciones se cotejan con documentos primarios.
+
+Ejecutados `node revision/revisar-lote-1055.cjs`, `node revision/academia-lote-1055.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 5.595 revisiones individuales, 99 pendientes explícitas y 6.528 preguntas por revisar individualmente; cero errores estructurales.
 
 ## Lote 1054 — 12 de noviembre de 2026
 
