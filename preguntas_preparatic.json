@@ -266404,7 +266404,7 @@
       "id": 5206,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique el puerto utilizado por el protocolo LDAP sobre SSL:",
+      "texto": "¿Qué puerto TCP está asignado habitualmente al servicio LDAPS (LDAP sobre TLS)?",
       "opciones": [
         "563",
         "443",
@@ -266412,21 +266412,104 @@
         "636"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La respuesta esperada es TCP 636, puerto registrado por IANA para `ldaps` (LDAP sobre TLS/SSL). Conviene llamar al servicio LDAPS y evitar sugerir que «LDAP sobre SSL» es la única forma segura: LDAP también puede negociar TLS con StartTLS en su puerto habitual 389. SSL está obsoleto; la protección actual se realiza con TLS. La asignación IANA identifica el servicio convencional, no impide configuraciones en otros puertos.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026.1 (17-09-2026): LDAP/directorios y protección de comunicaciones con TLS. El material no establece el puerto; este dato se valida en el registro IANA.",
+        "estado": "revisada",
+        "nota": "Cotejo directo A1-80/A2-IV.12. El bloque aporta contexto de directorios y protocolos seguros, pero el número 636 procede de IANA."
+      },
+      "etiquetas": [
+        "LDAP",
+        "LDAPS",
+        "TLS",
+        "puerto TCP 636"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=ldaps",
+            "referencia": "IANA Service Name and Transport Protocol Port Number Registry, entrada `ldaps`/TCP 636: asignación registrada para LDAP sobre TLS/SSL; es una asignación de servicio, no una garantía de que cualquier despliegue use ese puerto."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4513.html",
+            "referencia": "IETF RFC 4513, LDAP Authentication Methods and Security Mechanisms, §§ 3 y 4: especifica StartTLS para LDAP; distingue el mecanismo de elevación TLS de la asignación habitual del servicio LDAPS en 636."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 80: protocolos de directorio basados en LDAP y X.500."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: seguridad en redes, criptografía y protocolos seguros."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026.1: LDAP/directorios y protección mediante TLS; el número de puerto concreto se confirma en IANA."
+          }
+        ],
+        "observaciones": "La respuesta esperada es TCP 636, puerto registrado por IANA para `ldaps` (LDAP sobre TLS/SSL). Conviene llamar al servicio LDAPS y evitar sugerir que «LDAP sobre SSL» es la única forma segura: LDAP también puede negociar TLS con StartTLS en su puerto habitual 389. SSL está obsoleto; la protección actual se realiza con TLS. La asignación IANA identifica el servicio convencional, no impide configuraciones en otros puertos."
+      }
     },
     {
       "id": 5207,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes soportes de imagen realiza la transformada discreta del coseno (DCT) sobre bloques de 8x8 píxeles?",
+      "texto": "¿Qué norma de codificación de imágenes, conocida como JPEG-1, aplica la transformada discreta del coseno por bloques de 8 × 8 muestras en sus procesos DCT?",
       "opciones": [
         "GIF",
         "TIFF",
         "BMP",
-        "JPG"
+        "JPEG-1 (ITU-T T.81 / ISO/IEC 10918-1)"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se precisa el enunciado: la DCT por bloques de 8 × 8 es característica del proceso DCT de JPEG-1 (ITU-T T.81 / ISO/IEC 10918-1). La redacción «soporte de imagen» era imprecisa y una imagen TIFF puede encapsular datos comprimidos con JPEG; por eso se pregunta ahora por la norma/codificación JPEG-1, no por cualquier contenedor que pudiera almacenarla.",
+      "clasificacion": {
+        "A1": [
+          "A1-83"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 37 «Imágenes, OCR, biometría y gestión de contenidos», versión 2026.1 (18-09-2026), apartados 1.1 y 3: tratamiento de imagen y JPEG/DCT; el texto distingue JPEG de JPEG 2000.",
+        "estado": "revisada",
+        "nota": "Cotejo directo A1-83; no se fuerza A2 porque su temario no contiene un epígrafe directo sobre JPEG/DCT."
+      },
+      "etiquetas": [
+        "JPEG",
+        "JPEG-1",
+        "DCT",
+        "compresión de imágenes",
+        "bloques 8x8"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-T.81/en",
+            "referencia": "ITU-T Recommendation T.81 | ISO/IEC 10918-1, vigente: especificación de codificación JPEG-1; los procesos basados en DCT transforman bloques de 8 × 8 muestras."
+          },
+          {
+            "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?lang=en&rec=2633",
+            "referencia": "Ficha oficial ITU-T T.81, estado In force y equivalencia ISO/IEC 10918-1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 83: tratamiento de imágenes y tecnologías de digitalización e impresión."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026.1: el epígrafe oficial A1-83 y los apartados de dispositivos multimedia/imágenes aportan encaje curricular; la norma JPEG se contrasta con ITU-T."
+          }
+        ],
+        "observaciones": "Se precisa el enunciado: la DCT por bloques de 8 × 8 es característica del proceso DCT de JPEG-1 (ITU-T T.81 / ISO/IEC 10918-1). La redacción «soporte de imagen» era imprecisa y una imagen TIFF puede encapsular datos comprimidos con JPEG; por eso se pregunta ahora por la norma/codificación JPEG-1, no por cualquier contenedor que pudiera almacenarla."
+      }
     },
     {
       "id": 5208,
@@ -266440,35 +266523,166 @@
         "La que determina la profundidad del color."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La clave existente es correcta: la resolución interpolada es una ampliación algorítmica que inserta/calcula píxeles intermedios a partir de muestras captadas, a menudo usando vecinos próximos. Aumenta el número de píxeles del archivo, pero no la resolución óptica ni el detalle realmente capturado. Se distingue de la resolución óptica del sensor y de la resolución mecánica/hardware del movimiento del escáner.",
+      "clasificacion": {
+        "A1": [
+          "A1-83"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 37, versión 2026.1, apartado 1: define resolución interpolada como píxeles generados por software que aumentan dimensiones, no el detalle real, frente a resolución óptica.",
+        "estado": "revisada",
+        "nota": "Cotejo directo A1-83; el material de academia sí cubre el concepto."
+      },
+      "etiquetas": [
+        "escáner",
+        "resolución interpolada",
+        "interpolación",
+        "digitalización"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.canada.ca/en/heritage-information-network/services/digitization/scan-reflective-objects.html",
+            "referencia": "Canadian Conservation Institute / Canadian Heritage Information Network, guía de digitalización: la resolución interpolada o mejorada por software estima información entre los píxeles capturados por el sensor."
+          },
+          {
+            "url": "https://files.support.epson.com/pdf/exp16_/exp16_ts.pdf",
+            "referencia": "Epson, Technical Brief, Image Quality—Resolution: define la interpolación como creación algorítmica de píxeles a partir de los valores circundantes, por encima de la resolución hardware/óptica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 83: tratamiento de imágenes y tecnologías de digitalización."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26, edición 2026.1: dispositivos de tratamiento de información multimedia; encaje general en A1-83. No se atribuye al material de academia una definición literal de resolución interpolada."
+          }
+        ],
+        "observaciones": "La clave existente es correcta: la resolución interpolada es una ampliación algorítmica que inserta/calcula píxeles intermedios a partir de muestras captadas, a menudo usando vecinos próximos. Aumenta el número de píxeles del archivo, pero no la resolución óptica ni el detalle realmente capturado. Se distingue de la resolución óptica del sensor y de la resolución mecánica/hardware del movimiento del escáner."
+      }
     },
     {
       "id": 5209,
       "bloque": 0,
       "tema": 0,
-      "texto": "Es un material empleado en la impresión 3D:",
+      "texto": "¿Cuál de estos productos se comercializa como filamento flexible de poliuretano termoplástico (TPU), con elevada elasticidad, para impresión 3D FDM?",
       "opciones": [
-        "ABS (acrilonitrato butadieno estireno), polímero biodegradable creado desde material orgánico",
-        "PLA (poliácido láctico), plástico empleado en las figuras LEGO",
-        "Filaflex, filamento elástico a base de poliuretano y otros aditivos, con gran elasticidad",
-        "Laybrick, mezcla de varios materiales plásticos y arcilla"
+        "ABS, termoplástico de acrilonitrilo, butadieno y estireno, generalmente rígido y no biodegradable",
+        "PLA, termoplástico de ácido láctico usado en impresión 3D",
+        "Filaflex, filamento elástico de TPU desarrollado para impresión 3D",
+        "Laybrick, filamento compuesto de matriz polimérica y carga mineral para acabados de aspecto pétreo"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "El ítem original no tenía respuesta única: Filaflex es TPU elástico, pero Laybrick también es un filamento real de impresión 3D. Se reformula para preguntar específicamente por el producto comercial de TPU flexible y se corrigen los distractores: ABS es un termoplástico que no debe describirse como biodegradable; PLA es otro termoplástico; Laybrick es una mezcla polimérica con carga mineral. La respuesta única pasa a ser Filaflex (C).",
+      "clasificacion": {
+        "A1": [
+          "A1-83"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 37, versión 2026.1, apartado 6.2: FDM/FFF extruye filamento termoplástico y la impresión 3D queda dentro de A1-83. El documento no cita la marca Filaflex ni su composición TPU, verificadas con Recreus.",
+        "estado": "revisada",
+        "nota": "Cotejo A1-83. No se fuerza etiqueta A2; la convocatoria A2 no contiene un epígrafe directo de impresión 3D/materiales."
+      },
+      "etiquetas": [
+        "impresión 3D",
+        "Filaflex",
+        "TPU",
+        "ABS",
+        "PLA",
+        "Laybrick"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://recreus.com/en/pages/filaflex",
+            "referencia": "Recreus, fabricante de Filaflex: describe Filaflex como filamento de TPU (poliuretano termoplástico), altamente elástico y diseñado para impresión FDM."
+          },
+          {
+            "url": "https://recreus.com/en/pages/faq",
+            "referencia": "Recreus, FAQ oficial: identifica Filaflex como filamento flexible de TPU desarrollado para impresión 3D."
+          },
+          {
+            "url": "https://devel.lulzbot.com/filament/cc-products/SDS%27s/MSDS-ALL-LAYFILAMENTS-EN-2017_3Ro.pdf",
+            "referencia": "CC-Products, ficha de seguridad de Layfilaments: incluye Laybrick entre los filamentos para impresión 3D y lo describe como mezcla polimérica con rellenos minerales; confirma que la opción D original también era un material real."
+          },
+          {
+            "url": "https://help.prusa3d.com/materials",
+            "referencia": "Prusa Research, guía de materiales: ABS y PLA son termoplásticos usados en impresión 3D; la descripción del distractor original que llamaba biodegradable al ABS era falsa."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 83: tecnologías de impresión, incluida la impresión 3D."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26, edición 2026.1: impresión 3D y materiales como parte de A1-83. El bloque tiene cobertura curricular; el nombre comercial y composición de Filaflex se verifican en el fabricante."
+          }
+        ],
+        "observaciones": "El ítem original no tenía respuesta única: Filaflex es TPU elástico, pero Laybrick también es un filamento real de impresión 3D. Se reformula para preguntar específicamente por el producto comercial de TPU flexible y se corrigen los distractores: ABS es un termoplástico que no debe describirse como biodegradable; PLA es otro termoplástico; Laybrick es una mezcla polimérica con carga mineral. La respuesta única pasa a ser Filaflex (C)."
+      }
     },
     {
       "id": 5210,
       "bloque": 0,
       "tema": 0,
-      "texto": "El nivel léxico-sintáctico:",
+      "texto": "En procesamiento del lenguaje natural, el análisis léxico-morfológico y sintáctico:",
       "opciones": [
-        "Analiza las características físicas de la señal vocal, tales como la frecuencia fundamental, los formantes, las transiciones, etc.",
-        "Llega a la comprensión del significado del mensaje, eliminando las posibles interpretaciones absurdas y comprobando la coherencia del mensaje recibido con el conocimiento previo que se tiene de la realidad, así como del contexto en el que discurre el dial.",
-        "Determina la precisa pronunciación de las letras, sílabas y palabras.",
-        "Extrae los símbolos elementales, morfemas, y se analiza su sucesión para comprobar su adecuación a la gramática del lenguaje, la cual supone una determinada relación entre ellos."
+        "Analiza propiedades acústicas de la señal de voz, como la frecuencia fundamental y los formantes.",
+        "Interpreta el significado de la oración y su coherencia con el contexto y el conocimiento previo.",
+        "Determina la pronunciación de fonemas, sílabas y palabras.",
+        "Identifica unidades léxicas y morfemas y analiza cómo se combinan conforme a las reglas gramaticales."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se corrige y precisa el enunciado: el análisis léxico-morfológico identifica unidades léxicas/morfemas y sus rasgos; el sintáctico analiza cómo se combinan conforme a la gramática. No es el análisis acústico/fonético de la señal, ni la interpretación semántica del significado y el contexto. La opción D se mantiene como respuesta, con terminología y concordancia corregidas; «dial» era un truncamiento impropio de «diálogo».",
+      "clasificacion": {
+        "A1": [
+          "A1-70"
+        ],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 32 «Inteligencia Artificial y Ciencia de Datos», versión 2026.1 (31-08-2026), apartado 11 «NLP, transformers y modelos fundacionales»: incluye niveles y técnicas de análisis del lenguaje.",
+        "estado": "revisada",
+        "nota": "Cotejo directo A1-70/A2-III.5: NLP y fundamentos de inteligencia artificial."
+      },
+      "etiquetas": [
+        "procesamiento del lenguaje natural",
+        "análisis léxico",
+        "morfología",
+        "sintaxis",
+        "IA"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.cstr.ed.ac.uk/emasters/course/natural_lang.html",
+            "referencia": "Centre for Speech Technology Research, University of Edinburgh, programa de NLP: distingue nivel léxico, procesamiento morfológico, nivel sintáctico y análisis semántico como niveles/tareas relacionados."
+          },
+          {
+            "url": "https://www.cl.cam.ac.uk/teaching/1617/NLP/lectures.pdf",
+            "referencia": "University of Cambridge, Natural Language Processing: Part II: separa análisis morfológico, etiquetado, parsing/estructura sintáctica y procesamiento semántico/contextual."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 70: inteligencia artificial, que incluye expresamente NLP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III.5: fundamentos de inteligencia artificial, tecnologías asociadas y áreas de aplicación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 32 «Inteligencia Artificial y Ciencia de Datos», versión 2026.1, apartado 11: NLP, transformers y modelos fundacionales; incluye análisis del lenguaje como contenido de IA."
+          }
+        ],
+        "observaciones": "Se corrige y precisa el enunciado: el análisis léxico-morfológico identifica unidades léxicas/morfemas y sus rasgos; el sintáctico analiza cómo se combinan conforme a la gramática. No es el análisis acústico/fonético de la señal, ni la interpretación semántica del significado y el contexto. La opción D se mantiene como respuesta, con terminología y concordancia corregidas; «dial» era un truncamiento impropio de «diálogo»."
+      }
     },
     {
       "id": 5211,
