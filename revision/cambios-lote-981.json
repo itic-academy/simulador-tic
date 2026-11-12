@@ -1,0 +1,464 @@
+{
+  "fecha": "2026-11-12",
+  "alcance": "IDs 5226–5230; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 5226,
+      "original": {
+        "id": 5226,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una dirección IP en el protocolo IPv6 está formada por:",
+        "opciones": [
+          "32 bits",
+          "64 bits",
+          "128 bits",
+          "256 bits"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5226,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una dirección IP en el protocolo IPv6 está formada por:",
+        "opciones": [
+          "32 bits",
+          "64 bits",
+          "128 bits",
+          "256 bits"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La dirección IPv6 completa tiene 128 bits. La división habitual en prefijo de subred e identificador de interfaz depende del prefijo y no cambia la longitud total; tampoco debe confundirse la dirección con la cabecera IPv6 completa.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, apartado IPv6: dirección de 128 bits, ocho grupos de 16.",
+          "estado": "revisada",
+          "nota": "Cotejo directo A1-115/A2-II.8."
+        },
+        "etiquetas": [
+          "IPv6",
+          "direcciones IP",
+          "128 bits",
+          "RFC 4291"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+              "referencia": "IETF RFC 4291, §2: IPv6 addresses are 128-bit identifiers; define the address length, independent of prefix/interface-ID split."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+              "referencia": "IETF RFC 8200, §3 and Figure 1: the IPv6 base header has a 128-bit Source Address and a 128-bit Destination Address."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: arquitectura IP, transición IPv4/IPv6 y funcionalidades específicas de IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.8: modelos TCP/IP y OSI, direccionamiento y encaminamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, sección IPv6: expresa que la dirección tiene 128 bits y la escribe como ocho grupos de 16 bits."
+            }
+          ],
+          "observaciones": "La dirección IPv6 completa tiene 128 bits. La división habitual en prefijo de subred e identificador de interfaz depende del prefijo y no cambia la longitud total; tampoco debe confundirse la dirección con la cabecera IPv6 completa."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con los programas oficiales A1/A2 de 2025 y el material ITIC Academy accesible en Drive.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, apartado IPv6: dirección de 128 bits, ocho grupos de 16.",
+            "nota": "Cotejo directo A1-115/A2-II.8."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5227,
+      "original": {
+        "id": 5227,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es la funcionalidad de los multiplexores estadísticos?",
+        "opciones": [
+          "Que realizan un tipo de multiplexación por división en frecuencias (FDM)",
+          "Que realizan la transferencia de señales analógicas, y la estadística de errores",
+          "Que realizan un muestreo de líneas según el tráfico, no asignando intervalos fijos",
+          "Que dividen el ancho de banda, según parámetros definibles, proporcionando información estadística de uso para que el usuario ajuste sus asignaciones"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5227,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué caracteriza a un multiplexor estadístico TDM?",
+        "opciones": [
+          "Asigna dinámicamente ranuras a las entradas que tienen datos pendientes, en lugar de reservar una ranura fija por entrada en cada trama.",
+          "Asigna a cada entrada una ranura fija en todas las tramas, aunque no tenga datos.",
+          "Separa las señales exclusivamente mediante bandas de frecuencia (FDM).",
+          "Mide errores analógicos y reparte el ancho de banda según una tabla fija, sin considerar el tráfico."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La multiplexación estadística no es FDM ni consiste en reservar intervalos fijos aunque la fuente esté inactiva: en TDM estadística las ranuras se asignan dinámicamente a las entradas con datos pendientes. El multiplexor puede registrar estadísticas, pero la recogida de métricas para que un usuario ajuste parámetros no define su función fundamental. Se reemplazan opciones solapadas por distractores mutuamente distinguibles.",
+        "clasificacion": {
+          "A1": [
+            "A1-108"
+          ],
+          "A2": [
+            "A2-IV-7",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, §§1.3 y ATM: multiplexación estadística en redes de paquetes y canales con tasa asignada según demanda. No se atribuyen al tema formulaciones que no aparecen literalmente.",
+          "estado": "revisada",
+          "nota": "Cotejo A1-108/A2-IV.7-IV.8 sobre transmisión, multiplexación y técnicas de red."
+        },
+        "etiquetas": [
+          "multiplexación estadística",
+          "TDM",
+          "ranuras dinámicas",
+          "tráfico activo"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://technav.ieee.org/topic/time-division-multiplexing/",
+              "referencia": "IEEE Technology Navigator, «Time division multiplexing», sección Statistical TDM: el multiplexor estadístico asigna ranuras dinámicamente a fuentes que tienen datos pendientes, en lugar de reservar una ranura por fuente en cada trama."
+            },
+            {
+              "url": "https://www.itu.int/rec/T-REC-X.211/en",
+              "referencia": "ITU-T Recommendation X.211, Appendix A, §A.2.3: caracteriza la multiplexación estadística por asignación dinámica de capacidad/celdas a canales según la demanda."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 108: medios de transmisión, conmutación de circuitos/paquetes y redes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, temas IV.7 (medios de transmisión) y IV.8 (protocolos y técnicas de transmisión en redes locales)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, §1.3: los paquetes comparten enlaces por multiplexación estadística; trata también TDM/ATM. La regla precisa de asignación dinámica se verifica con IEEE/ITU-T."
+            }
+          ],
+          "observaciones": "La multiplexación estadística no es FDM ni consiste en reservar intervalos fijos aunque la fuente esté inactiva: en TDM estadística las ranuras se asignan dinámicamente a las entradas con datos pendientes. El multiplexor puede registrar estadísticas, pero la recogida de métricas para que un usuario ajuste parámetros no define su función fundamental. Se reemplazan opciones solapadas por distractores mutuamente distinguibles."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con los programas oficiales A1/A2 de 2025 y el material ITIC Academy accesible en Drive.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, §§1.3 y ATM: multiplexación estadística en redes de paquetes y canales con tasa asignada según demanda. No se atribuyen al tema formulaciones que no aparecen literalmente.",
+            "nota": "Cotejo A1-108/A2-IV.7-IV.8 sobre transmisión, multiplexación y técnicas de red."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5228,
+      "original": {
+        "id": 5228,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la tecnología de Resilient Packet Ring, sobre los métodos de protección ante fallos, se puede afirmar:",
+        "opciones": [
+          "En Steering, ante la existencia de un evento de protección, se comunica a todas las estaciones su situación, de manera que eligen el sentido en que tienen que enviar la información.",
+          "En Wrapping, ante la existencia de un evento de protección, se comunica a todas las estaciones su situación, de manera que eligen el sentido en que tienen que enviar la información.",
+          "Se basan principalmente en códigos de Hamming.",
+          "El principal método de corrección de fallos es FEC (Forward Error Correction)."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5228,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Resilient Packet Ring (IEEE 802.17), ¿qué describe correctamente el mecanismo de protección steering?",
+        "opciones": [
+          "Tras propagarse el cambio de topología, las estaciones de origen eligen el ringlet/ruta que evita el enlace o nodo fallido.",
+          "Las estaciones adyacentes al fallo puentean localmente el tráfico hacia el ringlet alternativo.",
+          "La recuperación se realiza principalmente mediante códigos de Hamming.",
+          "La recuperación se basa en FEC, que corrige los errores del enlace sin cambiar la ruta."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La opción correcta se precisa: tras conocer el cambio de topología, las estaciones de origen aplican steering y seleccionan el ringlet/ruta que evita el tramo fallido. En wrapping, las estaciones junto al fallo conectan el tráfico al ringlet alternativo en el punto afectado. RPR usa mecanismos de protección de tráfico, no códigos de Hamming ni FEC como método primario de recuperación. La tecnología se presenta como heredada/histórica, no como recomendación de despliegue actual.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1: contexto de redes y métodos de acceso; no contiene una explicación específica de RPR/steering en el texto cotejado.",
+          "estado": "revisada",
+          "nota": "Cotejo temático A1-108/A1-118 y A2-IV.8; mecanismo específico sustentado en documentos IEEE."
+        },
+        "etiquetas": [
+          "IEEE 802.17",
+          "Resilient Packet Ring",
+          "RPR",
+          "steering",
+          "wrapping"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://standards.ieee.org/ieee/802.17/4779/",
+              "referencia": "IEEE Standards Association, IEEE 802.17-2011: identifica la norma de acceso y capa física Resilient Packet Ring."
+            },
+            {
+              "url": "https://www.ieee802.org/17/documents/presentations/may2003/cls10_update_030519.pdf",
+              "referencia": "IEEE Draft P802.17/D2.2, cláusula 10.1: describe el protocolo de protección, la difusión de cambios de estado de enlace a las estaciones y los mecanismos steering (obligatorio) y wrapping (opcional). El documento se identifica expresamente como borrador no aprobado; se cita como documento de trabajo primario para aclarar el mecanismo, no como edición normativa vigente."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, temas 108 (redes y conmutación) y 118 (redes LAN, arquitectura, métodos de acceso e interconexión)."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.8: redes locales, tipologías, protocolos, técnicas de transmisión y métodos de acceso."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1: cotejo temático de arquitecturas LAN/MAN y mecanismos de resiliencia. No se encontró una explicación específica de RPR; la distinción se contrasta con documentación IEEE."
+            }
+          ],
+          "observaciones": "La opción correcta se precisa: tras conocer el cambio de topología, las estaciones de origen aplican steering y seleccionan el ringlet/ruta que evita el tramo fallido. En wrapping, las estaciones junto al fallo conectan el tráfico al ringlet alternativo en el punto afectado. RPR usa mecanismos de protección de tráfico, no códigos de Hamming ni FEC como método primario de recuperación. La tecnología se presenta como heredada/histórica, no como recomendación de despliegue actual."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con los programas oficiales A1/A2 de 2025 y el material ITIC Academy accesible en Drive.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1: contexto de redes y métodos de acceso; no contiene una explicación específica de RPR/steering en el texto cotejado.",
+            "nota": "Cotejo temático A1-108/A1-118 y A2-IV.8; mecanismo específico sustentado en documentos IEEE."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5229,
+      "original": {
+        "id": 5229,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "NO es un punto de intercambio de Internet en España:",
+        "opciones": [
+          "GALNIX.",
+          "CATNIX.",
+          "ESPANIX.",
+          "BASNIX."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5229,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la tabla por país del informe Euro-IX de 2015, ¿cuál de estas denominaciones NO aparece entre los IXP españoles allí enumerados?",
+        "opciones": [
+          "GALNIX.",
+          "CATNIX.",
+          "ESPANIX.",
+          "BASNIX."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La formulación original «no es un IXP en España» era abierta y temporal: GALNIX es actualmente un punto neutro gallego, aunque no aparezca en algunos directorios de miembros. Para obtener una única respuesta se acota el enunciado a la tabla de Euro-IX de 2015: CATNIX, ESpanix y GALNIX sí figuran allí; BASNIX no. No se afirma que esa tabla enumere todos los IXP actuales ni que la ausencia de un directorio demuestre por sí sola inexistencia.",
+        "clasificacion": {
+          "A1": [
+            "A1-109"
+          ],
+          "A2": [
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, §Internet/IXP: describe el propósito de los puntos de intercambio y ofrece ESpanix, DE-CIX Madrid y CATNIX como ejemplos. No se usa para afirmar que GALNIX no sea IXP.",
+          "estado": "revisada",
+          "nota": "Cotejo A1-109/A2-IV.13; GALNIX se confirma en Euro-IX histórico y en su web actual."
+        },
+        "etiquetas": [
+          "IXP",
+          "punto neutro",
+          "GALNIX",
+          "CATNIX",
+          "ESPANIX",
+          "BASNIX"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.euro-ix.net/media/filer_public/11/2c/112c450a-7f3c-4947-9c0b-6104b3a38659/euro-ix-ixp-report-2015-final.pdf",
+              "referencia": "Euro-IX, IXP Report 2015, tabla de IXPs por país: registra CATNIX, ESpanix y GALNIX como puntos de intercambio de España; se usa como referencia histórica fechada, no como directorio exhaustivo actual."
+            },
+            {
+              "url": "https://galnix.gal/",
+              "referencia": "GALNIX, web del propio operador, consultada el 12-11-2026: se identifica como punto neutro de conectividad en Galicia que conecta ISPs y facilita intercambio de tráfico; prueba de que GALNIX no debe marcarse como distractor falso actual."
+            },
+            {
+              "url": "https://www.peeringdb.com/api/ix?name__contains=BASNIX",
+              "referencia": "PeeringDB, API pública de IXPs, consulta por nombre exacto «BASNIX» el 12-11-2026: la respuesta contiene una lista vacía. Se combina con el informe Euro-IX fechado para limitar el alcance; la ausencia en un registro no se generaliza como prueba universal."
+            },
+            {
+              "url": "https://www.peeringdb.com/api/ix?name__contains=CATNIX",
+              "referencia": "PeeringDB, API pública consultada el 12-11-2026: devuelve CATNIX, Barcelona."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 109: arquitectura y servicios básicos de Internet."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.13: arquitectura, funcionamiento y evolución de Internet."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, §Internet/IXP: trata la función de los puntos de intercambio y ofrece ESpanix, DE-CIX Madrid y CATNIX como ejemplos; el registro Euro-IX se consulta para la referencia histórica GALNIX."
+            }
+          ],
+          "observaciones": "La formulación original «no es un IXP en España» era abierta y temporal: GALNIX es actualmente un punto neutro gallego, aunque no aparezca en algunos directorios de miembros. Para obtener una única respuesta se acota el enunciado a la tabla de Euro-IX de 2015: CATNIX, ESpanix y GALNIX sí figuran allí; BASNIX no. No se afirma que esa tabla enumere todos los IXP actuales ni que la ausencia de un directorio demuestre por sí sola inexistencia."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con los programas oficiales A1/A2 de 2025 y el material ITIC Academy accesible en Drive.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, §Internet/IXP: describe el propósito de los puntos de intercambio y ofrece ESpanix, DE-CIX Madrid y CATNIX como ejemplos. No se usa para afirmar que GALNIX no sea IXP.",
+            "nota": "Cotejo A1-109/A2-IV.13; GALNIX se confirma en Euro-IX histórico y en su web actual."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5230,
+      "original": {
+        "id": 5230,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes operaciones se incorpora en SNMP v2?",
+        "opciones": [
+          "SetRequest",
+          "GetBulkRequest",
+          "GetNextRequest",
+          "Trap"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5230,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué operación de SNMPv2 permite solicitar eficientemente varios valores de la MIB, por ejemplo durante el recorrido de una tabla?",
+        "opciones": [
+          "SetRequest.",
+          "GetBulkRequest.",
+          "GetNextRequest.",
+          "Trap."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "GetBulkRequest es la operación de SNMPv2 orientada a obtener de forma eficiente múltiples valores de la MIB, especialmente durante el recorrido de tablas. GetNextRequest, SetRequest y Trap ya existían en SNMPv1; no se interpreta que GetBulk sea una operación exclusiva del formato comunitario v2c, pues RFC 3416 especifica las operaciones v2 usadas en el marco SNMP actual.",
+        "clasificacion": {
+          "A1": [
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-9"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, tabla SNMPv1/v2c/v3: GetBulkRequest aparece como operación incorporada en v2 para recuperar tablas; contrástese con RFC 1905/3416.",
+          "estado": "revisada",
+          "nota": "Cotejo directo A1-118/A2-IV.9, que mencionan expresamente gestión SNMP."
+        },
+        "etiquetas": [
+          "SNMPv2",
+          "GetBulkRequest",
+          "gestión de redes",
+          "MIB"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1905.html",
+              "referencia": "IETF RFC 1905, §§3 y 4.2.3: incluye GetBulkRequest-PDU en las operaciones SNMPv2 y la define para recuperar eficientemente grandes cantidades de información/tablas."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3416.html",
+              "referencia": "IETF RFC 3416 (STD 62), §§3 y 4.2.3: mantiene GetBulkRequest como operación SNMP de versión 2, con non-repeaters y max-repetitions para recorrer datos de gestión eficientemente."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 118: monitorización y control de tráfico y gestión SNMP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.9: administración/monitorización de redes locales y gestión SNMP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, sección de gestión: compara SNMPv1/v2c/v3 y destaca GetBulkRequest como operación incorporada en v2 para recuperar tablas por bloques."
+            }
+          ],
+          "observaciones": "GetBulkRequest es la operación de SNMPv2 orientada a obtener de forma eficiente múltiples valores de la MIB, especialmente durante el recorrido de tablas. GetNextRequest, SetRequest y Trap ya existían en SNMPv1; no se interpreta que GetBulk sea una operación exclusiva del formato comunitario v2c, pues RFC 3416 especifica las operaciones v2 usadas en el marco SNMP actual."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con los programas oficiales A1/A2 de 2025 y el material ITIC Academy accesible en Drive.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», actualización 2026.1, tabla SNMPv1/v2c/v3: GetBulkRequest aparece como operación incorporada en v2 para recuperar tablas; contrástese con RFC 1905/3416.",
+            "nota": "Cotejo directo A1-118/A2-IV.9, que mencionan expresamente gestión SNMP."
+          }
+        }
+      ]
+    }
+  ]
+}
