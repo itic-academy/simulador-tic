@@ -1,0 +1,41 @@
+const aplicar=require('./aplicar-lote.cjs');
+const ref=(url,referencia)=>({url,referencia});
+const rd1330='https://www.boe.es/buscar/doc.php?id=BOE-A-1997-18548';
+const rd931='https://www.boe.es/buscar/act.php?id=BOE-A-2017-13065';
+const dsa='https://eur-lex.europa.eu/eli/reg/2022/2065/oj';
+const law40='https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566';
+const lcsp='https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902';
+const a1='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938';
+const a2='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262';
+const records=[
+ [5751,[6],[],['Administración periférica','servicios integrados','extranjería','Delegaciones del Gobierno'],[
+  ref(rd1330,'Real Decreto 1330/1997, art. 2: entre los servicios integrados se incluyen los órganos de Delegaciones/Subdelegaciones/Direcciones Insulares con competencias sobre derechos ciudadanos, autorizaciones, protección civil, extranjería y asilo. La AEAT es una agencia estatal con estructura propia; la oficina de empleo no es el servicio integrado al que alude el ítem.'),
+  ref(a1,'Convocatoria GSI A1 2025, anexo I, tema 6: organización territorial/periférica de la AGE y sector público institucional.'),
+ ],null,'Corregida, respuesta D (oficina de extranjería). El RD 1330/1997 integra en Delegaciones/Subdelegaciones órganos que ejercen, entre otras, competencias de extranjería y asilo. Se actualiza el enunciado para preguntar por los servicios integrados estatales, pues una oficina de empleo puede depender de estructuras autonómicas transferidas y la expresión genérica podía inducir a error. No se fuerza clasificación A2: el temario GSI A2 no contiene un epígrafe específico de Administración periférica. A1-6.','corregida'],
+ [5752,[13],[],['memoria de análisis de impacto normativo','MAIN','RD 931/2017','impacto económico','coste-beneficio'],[
+  ref(rd931,'Real Decreto 931/2017 consolidado, art. 2 y plantilla del anexo: impacto económico/presupuestario y adecuación al orden de competencias forman parte de la MAIN; el coste-beneficio puede incorporarse con carácter potestativo y es obligatorio cuando norma específica o sectorial lo exija.'),
+  ref(a1,'Convocatoria GSI A1 2025, anexo I, tema 13: subvenciones públicas; tema 7, fuentes del Derecho y potestad reglamentaria (relación temática con análisis normativo).'),
+ ],null,'Corregida, respuesta D con matiz. La MAIN recoge impacto económico y presupuestario, así como la adecuación al orden de distribución de competencias. El análisis coste-beneficio también se contempla, pero el RD 931/2017 lo hace potestativo salvo que lo exija una norma específica o sectorial; no debe presentarse como requisito universal en toda memoria. Se añade esa precisión al enunciado/explicación. A1-7/A1-13, por evaluación normativa y subvenciones; sin epígrafe A2 específico de MAIN.','corregida'],
+ [5753,[22,109],['I-6','IV-13'],['Ley de Servicios Digitales','DSA','Reglamento (UE) 2022/2065','moderación de contenidos','informes de transparencia'],[
+  ref(dsa,'Reglamento (UE) 2022/2065, art. 15.1: regla general de informes de transparencia de servicios intermediarios, como mínimo anuales; art. 15.2 exceptúa a micro y pequeñas empresas que no sean plataformas en línea de muy gran tamaño. Arts. 24 y 42 establecen periodicidad semestral para plataformas en línea y VLOP/VLOSE, según ámbito.'),
+  ref(a1,'Convocatoria GSI A1 2025, anexo I, tema 22 (legislación de sociedad de la información) y tema 109 (Internet y servicios básicos): encaje curricular general.'),
+  ref(a2,'Convocatoria GSI A2 2025, anexo IX, I.6 (sociedad de la información) y IV.13 (Internet y servicios): relación temática.'),
+ ],null,'Corregida, respuesta C como regla general del artículo 15.1 DSA. La pregunta original era demasiado amplia: el Reglamento establece informes al menos anuales para los prestadores comprendidos en el art. 15, con excepciones para micro/pequeñas empresas y periodicidades específicas más frecuentes para plataformas en línea (art. 24) y VLOP/VLOSE (art. 42). Se delimita el supuesto al art. 15.1 y se evita tratar la anualidad como regla para todo tipo de prestador sin excepciones. A1-22/A1-109/A2-I.6/A2-IV.13.','corregida'],
+ [5754,[8],['I-8'],['abstención','Ley 40/2015','parentesco','imparcialidad'],[
+  ref(law40,'Ley 40/2015, art. 23.2.b: causa de abstención por parentesco de consanguinidad hasta cuarto grado o afinidad hasta segundo con interesados y otras personas enumeradas. Ser vecino, sin otro vínculo o interés legalmente relevante, no figura como causa autónoma.'),
+  ref(a1,'Convocatoria GSI A1 2025, anexo I, tema 8: procedimiento administrativo y régimen jurídico de las Administraciones Públicas.'),
+  ref(a2,'Convocatoria GSI A2 2025, anexo IX, I.8: Ley 40/2015 y régimen jurídico del sector público.'),
+ ],null,'Vigente, respuesta B. El art. 23.2.b de la Ley 40/2015 incluye parentesco consanguíneo hasta cuarto grado y afinidad hasta segundo con las personas enumeradas, pero la mera vecindad no es causa autónoma de abstención. Se acota la pregunta a los vínculos descritos y se conserva la clave. A1-8/A2-I.8.','vigente'],
+ [5755,[11],[],['LCSP','pliegos','pliego de cláusulas administrativas particulares','derechos y obligaciones'],[
+  ref(lcsp,'Ley 9/2017, art. 122.2: los pliegos de cláusulas administrativas particulares incluyen los pactos y condiciones que definen los derechos y obligaciones de las partes; art. 124 regula los pliegos de prescripciones técnicas particulares.'),
+  ref(a1,'Convocatoria GSI A1 2025, anexo I, tema 11: contratación pública, LCSP y contenido de los contratos.'),
+ ],null,'Corregida, respuesta C. El nombre técnico es Pliego de Cláusulas Administrativas Particulares (PCAP), cuyo contenido incluye los pactos y condiciones definidores de los derechos y obligaciones de las partes (art. 122.2 LCSP). El Pliego de Prescripciones Técnicas define requisitos técnicos y calidades. Se amplía la opción C con la denominación legal precisa. A1-11; no se fuerza correspondencia A2 al no existir un epígrafe específico de contratación pública en ese programa.','corregida'],
+];
+const edits={
+ 5751:{texto:'De acuerdo con el Real Decreto 1330/1997, ¿cuál de las siguientes materias se integra expresamente entre los servicios de las Delegaciones y Subdelegaciones del Gobierno?',opciones:['Gestión tributaria de la Agencia Estatal de Administración Tributaria','Gestión de las oficinas autonómicas de empleo','Todas las oficinas de inspección sectorial, cualquiera que sea su adscripción','Extranjería y asilo'],respuesta_correcta:3},
+ 5752:{texto:'Según el Real Decreto 931/2017, ¿qué afirmación describe correctamente el contenido de la Memoria del Análisis de Impacto Normativo (MAIN)?',opciones:['Incluye la valoración del impacto económico y presupuestario','Analiza la adecuación del proyecto al orden de distribución de competencias','Puede incluir un análisis coste-beneficio, que es potestativo salvo exigencia de norma específica o sectorial','Todas las anteriores son correctas'],respuesta_correcta:3},
+ 5753:{texto:'Conforme al artículo 15.1 del Reglamento (UE) 2022/2065 (Ley de Servicios Digitales), ¿con qué frecuencia mínima general publican los prestadores comprendidos en ese artículo sus informes de transparencia sobre moderación de contenidos?',opciones:['Al menos una vez cada tres meses','Al menos una vez cada seis meses','Al menos una vez al año','Al menos una vez cada dos años'],respuesta_correcta:2},
+ 5754:{texto:'Según el artículo 23.2.b de la Ley 40/2015, entre los vínculos siguientes con una persona interesada, ¿cuál no constituye por sí solo un motivo legal de abstención?',opciones:['Ser sobrino de la persona interesada','Ser vecino de la persona interesada','Ser cuñado de la persona interesada','Ser nieto de la persona interesada'],respuesta_correcta:1},
+ 5755:{texto:'Según la Ley 9/2017, ¿qué documento incluye los pactos y condiciones que definen los derechos y obligaciones de cada parte del contrato?',opciones:['El Pliego de Prescripciones Técnicas Particulares','El pliego técnico de referencia','El Pliego de Cláusulas Administrativas Particulares','La memoria justificativa'],respuesta_correcta:2},
+};
+aplicar({numero:'1086',fecha:'2026-11-12',records,edits});
