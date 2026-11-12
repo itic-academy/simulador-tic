@@ -1,0 +1,395 @@
+{
+  "fecha": "2026-11-12",
+  "alcance": "IDs 5341–5345; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 5341,
+      "original": {
+        "id": 5341,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Cuál es la longitud de la clave utilizada por el sistema criptográfico simétrico DES:",
+        "opciones": [
+          "56 Bits",
+          "168 Bits",
+          "256 Bits",
+          "Puede ser cualquiera, pero la habitual es 1.024 Bits"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5341,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el DES clásico definido por FIPS 46-3, ¿cuántos bits de la clave se utilizan efectivamente en el algoritmo, sin contar los bits de paridad?",
+        "opciones": [
+          "56 bits",
+          "168 bits",
+          "256 bits",
+          "Puede ser cualquiera, pero la habitual es 1.024 bits"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La respuesta A (56 bits) expresa la longitud efectiva que utiliza DES. La clave se representa como 64 bits, incluidos 8 bits de paridad que no participan en el algoritmo. El reactivo se fecha: NIST retiró DES en 2005, por lo que su dato sirve para historia y no para recomendarlo en sistemas actuales.",
+        "clasificacion": {
+          "A1": [
+            "A1-79"
+          ],
+          "A2": [
+            "A2-II-13",
+            "A2-IV-12"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "DES",
+          "56 bits",
+          "FIPS 46-3",
+          "algoritmo histórico"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/files/pubs/fips/46-3/final/docs/fips46-3.pdf",
+              "referencia": "NIST FIPS 46-3 §3: la representación de clave DES ocupa 64 bits, de los que 56 se usan por el algoritmo y 8 son bits de paridad."
+            },
+            {
+              "url": "https://csrc.nist.gov/News/2005/Withdrawal-of-FIPS-46-3-FIPS-74-and-FIPS-81",
+              "referencia": "NIST retiró DES el 19/05/2005 porque ya no proporcionaba seguridad suficiente; se conserva como referencia histórica, no como algoritmo admisible para protección actual."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 79: algoritmos de cifrado simétricos y asimétricos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, II.13 seguridad física y lógica; IV.12 técnicas criptográficas y protocolos seguros."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 36 «Seguridad. Criptografía. Identificación y firma», versión 2026.1: sección 2.2 presenta DES de 56 bits como algoritmo obsoleto/histórico y lo contrasta con AES."
+            }
+          ],
+          "observaciones": "La respuesta A (56 bits) expresa la longitud efectiva que utiliza DES. La clave se representa como 64 bits, incluidos 8 bits de paridad que no participan en el algoritmo. El reactivo se fecha: NIST retiró DES en 2005, por lo que su dato sirve para historia y no para recomendarlo en sistemas actuales."
+        }
+      }
+    },
+    {
+      "id": 5342,
+      "original": {
+        "id": 5342,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación con la criptografía asimétrica, señale la respuesta CORRECTA:",
+        "opciones": [
+          "Las claves pueden ser más cortas en criptografía elíptica para una fortaleza similar a otros algoritmos asimétricos con mayor longitud de clave, por lo que se utilizan claves de 64 o 128 bits.",
+          "La vulnerabilidad del algoritmo RSA no depende del generador aleatorio de números primos.",
+          "La criptografía asimétrica de 1.024 bits se considera equivalente a la simétrica de 112 bits.",
+          "Para las aplicaciones más críticas, como la raíz de una infraestructura de clave pública (PKI), se suelen utilizan claves RSA de 4.096 bits."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5342,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre la fortaleza y el uso de claves asimétricas RSA y ECC, señale la afirmación correcta:",
+        "opciones": [
+          "Una clave ECC de 64 o 128 bits proporciona una fortaleza comparable a RSA con claves mucho mayores.",
+          "La seguridad de RSA no depende de que la generación de sus parámetros y claves use aleatoriedad criptográfica adecuada.",
+          "Según las equivalencias orientativas de NIST, RSA de 1.024 bits ofrece aproximadamente 112 bits de fortaleza simétrica.",
+          "El RFC 5750 documentó el uso de claves RSA de 4.096 bits en certificados raíz de algunas PKI; es una práctica de perfil, no un requisito universal actual."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La opción D se conserva solo en forma matizada: el RFC 5750 describe el uso de RSA-4096 en algunas raíces PKI, pero esto no es una regla universal actual. Se corrigen los distractores: ECC permite tamaños menores para una fortaleza comparable, pero no 64/128 bits con fortaleza útil; RSA-1024 representa como máximo ≤80 bits según la tabla NIST, no 112; una generación RSA débil o predecible puede comprometer la clave, y se requieren métodos de generación criptográfica adecuados. Las recomendaciones de tamaño deben seguir el perfil y periodo de protección del sistema.",
+        "clasificacion": {
+          "A1": [
+            "A1-79",
+            "A1-80",
+            "A1-81"
+          ],
+          "A2": [
+            "A2-II-13",
+            "A2-IV-12"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "RSA",
+          "ECC",
+          "tamaño de clave",
+          "fortaleza de seguridad",
+          "PKI"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+              "referencia": "NIST SP 800-57 Part 1 Rev. 5, tabla 2 de §5.6.1.1: RSA de 1024 bits se sitúa en ≤80 bits de fortaleza; RSA 2048 equivale aproximadamente a 112 y RSA 3072 a 128. Para ECC, 224–255 bits corresponden a 112 de fortaleza y 256–383 a 128."
+            },
+            {
+              "url": "https://csrc.nist.gov/pubs/sp/800/133/r2/final",
+              "referencia": "NIST SP 800-133 Rev. 2, §4: todas las claves criptográficas deben basarse directa o indirectamente en la salida de un generador de bits aleatorios aprobado; la guía aborda la generación de claves asimétricas."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc5750.html",
+              "referencia": "IETF RFC 5750 §4.4.2, de 2010: documenta que se usaban claves RSA de 4096 bits en certificados raíz y que normalmente no se empleaban en CA subordinadas para extender la validez de la raíz. Se cita como práctica descrita por ese RFC, no como requisito vigente universal."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, temas 79–81: cifrado, certificados, claves y PKI."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, II.13 y IV.12: ciberseguridad y técnicas criptográficas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 36, versión 2026.1, §§2–3 y 9: algoritmos simétricos/asimétricos, RSA, ECC, certificados y PKI."
+            }
+          ],
+          "observaciones": "La opción D se conserva solo en forma matizada: el RFC 5750 describe el uso de RSA-4096 en algunas raíces PKI, pero esto no es una regla universal actual. Se corrigen los distractores: ECC permite tamaños menores para una fortaleza comparable, pero no 64/128 bits con fortaleza útil; RSA-1024 representa como máximo ≤80 bits según la tabla NIST, no 112; una generación RSA débil o predecible puede comprometer la clave, y se requieren métodos de generación criptográfica adecuados. Las recomendaciones de tamaño deben seguir el perfil y periodo de protección del sistema."
+        }
+      }
+    },
+    {
+      "id": 5343,
+      "original": {
+        "id": 5343,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El protocolo de acceso al directorio en X.500 es:",
+        "opciones": [
+          "TCP/IP",
+          "LDAP",
+          "IMAP",
+          "DAP"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5343,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué protocolo define X.500 para el intercambio de peticiones y resultados entre un agente de usuario de directorio (DUA) y un agente de sistema de directorio (DSA)?",
+        "opciones": [
+          "TCP/IP",
+          "LDAP",
+          "IMAP",
+          "DAP"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La respuesta D (DAP, Directory Access Protocol) es correcta cuando se pregunta por el protocolo de acceso definido por X.500 entre DUA y DSA. LDAP es un protocolo ligero distinto que puede interoperar con directorios X.500; no debe confundirse con el DAP nativo.",
+        "clasificacion": {
+          "A1": [
+            "A1-80"
+          ],
+          "A2": [],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "X.500",
+          "DAP",
+          "LDAP",
+          "directorio"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.500-201910-I%21%21PDF-E&lang=e&type=items",
+              "referencia": "ITU-T X.500 (2019), capítulo 13: enumera los protocolos de directorio y define DAP como el intercambio de peticiones/resultados entre DUA y DSA."
+            },
+            {
+              "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?lang=en&rec=14036",
+              "referencia": "ITU-T X.519 (2019, vigente): especifica los protocolos DAP, DSP, DISP y DOP. Distingue estos protocolos X.500 de LDAP, que tiene su propio protocolo ligero y puede interfuncionar con directorios X.500."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 80: protocolos de directorio basados en LDAP y X.500."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 36, versión 2026.1, capítulo 12: X.500, directorio distribuido, DIT y LDAPv3; el material distingue los protocolos de acceso."
+            }
+          ],
+          "observaciones": "La respuesta D (DAP, Directory Access Protocol) es correcta cuando se pregunta por el protocolo de acceso definido por X.500 entre DUA y DSA. LDAP es un protocolo ligero distinto que puede interoperar con directorios X.500; no debe confundirse con el DAP nativo."
+        }
+      }
+    },
+    {
+      "id": 5344,
+      "original": {
+        "id": 5344,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué no se usa en la síntesis de voz?",
+        "opciones": [
+          "fonemas",
+          "difonemas",
+          "palabras",
+          "semisílabas"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5344,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un sistema concatenativo de síntesis de voz TTS de propósito general y vocabulario abierto, ¿qué unidad sería impracticable como inventario de segmentos por la cantidad de formas y contextos prosódicos que habría que grabar?",
+        "opciones": [
+          "Fonemas",
+          "Difonos",
+          "Palabras completas",
+          "Semisílabas (demisílabas)"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se mantiene C (palabras), pero se reformula para un sintetizador concatenativo de propósito general con vocabulario abierto: almacenar cada palabra como unidad exigiría un inventario enorme y no cubriría sus variantes prosódicas; difonos y demisílabas son unidades históricamente usadas. No es cierto que las palabras jamás se usen en síntesis de voz: sistemas de dominio cerrado o selección de unidades pueden usarlas. La clasificación curricular se vincula a NLP/IA y tecnologías de voz, sin reducir todo TTS a concatenación.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-II-12",
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "síntesis de voz",
+          "TTS",
+          "diphone",
+          "demisílaba",
+          "unidad de síntesis"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://jontalle.web.engr.illinois.edu/Public/HandbookSpeechProcessing.08.pdf",
+              "referencia": "Handbook of Speech Processing, capítulo «Basic Principles of Speech Synthesis», §19.1: en TTS concatenativa de vocabulario general, inventarios de palabras completas son impracticables por la enorme variación léxica y prosódica; se describen inventarios de difonos y demisílabas."
+            },
+            {
+              "url": "https://speechprocessingbook.aalto.fi/introduction/linguistic-structure-of-speech/",
+              "referencia": "Aalto University, Introduction to Speech Processing: diferencia unidades fonéticas/fonológicas y explica coarticulación, base relevante para seleccionar segmentos de síntesis."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 70: NLP y áreas de aplicación de inteligencia artificial."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, II.12 (IVR/VoiceXML) y III.5 (fundamentos y tecnologías de IA); relación curricular contextual, no especificación de un método TTS."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32 «Inteligencia Artificial y Ciencia de Datos», versión 2026: NLP, reconocimiento y síntesis de voz como aplicación; cotejo curricular."
+            },
+            {
+              "url": "https://drive.google.com/file/d/0Bw-rS_kOHzMKdHROVi1kRjRfaTg/view?usp=drivesdk&resourcekey=0-eWTrIx7CGXq5nRW0DU_0QA",
+              "referencia": "ITIC Academy/archivo de test, Test temas 29: conserva el reactivo legado «qué no se usa en síntesis de voz»; su clave se actualiza para evitar una afirmación absoluta."
+            }
+          ],
+          "observaciones": "Se mantiene C (palabras), pero se reformula para un sintetizador concatenativo de propósito general con vocabulario abierto: almacenar cada palabra como unidad exigiría un inventario enorme y no cubriría sus variantes prosódicas; difonos y demisílabas son unidades históricamente usadas. No es cierto que las palabras jamás se usen en síntesis de voz: sistemas de dominio cerrado o selección de unidades pueden usarlas. La clasificación curricular se vincula a NLP/IA y tecnologías de voz, sin reducir todo TTS a concatenación."
+        }
+      }
+    },
+    {
+      "id": 5345,
+      "original": {
+        "id": 5345,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Dentro de los niveles básicos de compresión y fuentes del conocimiento, el nivel fonológico es aquél que:",
+        "opciones": [
+          "Analiza las características de la señal vocal",
+          "Determina los objetos sonoros elementales",
+          "Determina el número preciso de sonidos con valor distinto",
+          "Determina la precisa pronunciación de las letras, sílabas y palabras"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5345,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el análisis del habla, ¿qué caracteriza al nivel fonológico de una lengua?",
+        "opciones": [
+          "Analiza las características físicas de la señal vocal.",
+          "Describe los objetos sonoros físicos elementales (teléfonos).",
+          "Determina los fonemas que distinguen significados en esa lengua.",
+          "Determina la pronunciación concreta de letras, sílabas y palabras."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C es la pretendida: el nivel fonológico determina el inventario de fonemas que distinguen significado en una lengua. Se reescribe el enunciado para separar fonología (categorías distintivas abstractas) de fonética/acústica (realización y propiedades físicas de la señal).",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-II-12",
+            "A2-III-5"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "fonología",
+          "fonemas",
+          "fonética",
+          "sonidos distintivos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.cambridge.org/highereducation/books/english-phonetics-and-phonology/70DA321F274B7A14D475C9856D23F490/phonemes-and-allophones/F5302284381310C2FA039D2B288CFC04",
+              "referencia": "Cambridge University Press, capítulo «Phonemes and Allophones»: phonology identifica las unidades sonoras distintivas que producen diferencias de significado (fonemas); fonética describe las propiedades físicas de los sonidos."
+            },
+            {
+              "url": "https://speechprocessingbook.aalto.fi/introduction/linguistic-structure-of-speech/",
+              "referencia": "Aalto University, Introduction to Speech Processing: los fonemas son categorías abstractas y los teléfonos sus realizaciones físicas; los rasgos acústicos pertenecen al análisis de la señal/realización."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 70: NLP y áreas de aplicación de IA."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, II.12 (sistemas de voz) y III.5 (fundamentos de IA); relación curricular contextual."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32 «Inteligencia Artificial y Ciencia de Datos», versión 2026: procesamiento del lenguaje y aplicaciones de voz."
+            },
+            {
+              "url": "https://drive.google.com/file/d/0Bw-rS_kOHzMKdHROVi1kRjRfaTg/view?usp=drivesdk&resourcekey=0-eWTrIx7CGXq5nRW0DU_0QA",
+              "referencia": "ITIC Academy/archivo de test, Test temas 29: contrasta el vocabulario del reactivo legado de reconocimiento y análisis de voz."
+            }
+          ],
+          "observaciones": "La respuesta C es la pretendida: el nivel fonológico determina el inventario de fonemas que distinguen significado en una lengua. Se reescribe el enunciado para separar fonología (categorías distintivas abstractas) de fonética/acústica (realización y propiedades físicas de la señal)."
+        }
+      }
+    }
+  ]
+}
