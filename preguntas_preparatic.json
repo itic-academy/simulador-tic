@@ -280013,35 +280013,124 @@
       "id": 5441,
       "bloque": 0,
       "tema": 0,
-      "texto": "Sal (salt) en criptografía…",
+      "texto": "En el almacenamiento de contraseñas, ¿qué afirmación sobre la sal (*salt*) es correcta?",
       "opciones": [
-        "Es un algoritmo de cifrado de bloques",
-        "Comprende bits aleatorios que se usan como una de las entradas en una función derivadora de claves",
-        "Las sales hacen mucho más lentos los ataques de diccionario y los ataques de fuerza bruta",
-        "B y C son correctas"
+        "Es un algoritmo de cifrado de bloques.",
+        "Es un valor no secreto, normalmente aleatorio y distinto por contraseña, que se combina con ella como entrada de la función hash o KDF.",
+        "Por sí sola, sin una función de derivación con coste adecuado, hace que cada intento de fuerza bruta sea mucho más lento.",
+        "Es una clave secreta que debe almacenarse separada del hash."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Se corrige la respuesta a B. Una sal se combina con la contraseña antes de calcular el hash/KDF, debe ser distinta por secreto y no necesita ser secreta. Su función principal es impedir que hashes iguales revelen contraseñas repetidas y neutralizar tablas precalculadas; no hace por sí sola más costoso cada intento. El coste de una función apropiada de derivación/hash de contraseñas (parámetros de memoria/iteraciones) es lo que ralentiza la adivinación.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma 2026.1, sección 4: propiedades de hash y KDF para contraseñas; cotejo directo.",
+        "estado": "revisada",
+        "nota": "Clasificación cotejada con el programa oficial; ITIC Academy se usa como mapa curricular cuando se indica, no como autoridad técnica o normativa."
+      },
+      "etiquetas": [
+        "contraseñas",
+        "salt",
+        "sal criptográfica",
+        "KDF",
+        "resistencia a ataques offline"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+            "referencia": "NIST SP 800-63B-4 final, §3.1.1.2: almacenar secretos memorizados con salt y función adecuada de derivación de claves; la función y su factor de coste encarecen cada intento de adivinación. La sal debe minimizar colisiones y almacenarse con el resumen."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/hash_function",
+            "referencia": "NIST CSRC Glossary: define la función hash criptográfica y su salida de longitud fija; no atribuye al salt la lentitud del algoritmo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 79: funciones hash y criptografía."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: técnicas criptográficas y protocolos seguros."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma 2026.1, sección 4: funciones hash y KDF de contraseñas; cobertura directa."
+          }
+        ],
+        "observaciones": "Se corrige la respuesta a B. Una sal se combina con la contraseña antes de calcular el hash/KDF, debe ser distinta por secreto y no necesita ser secreta. Su función principal es impedir que hashes iguales revelen contraseñas repetidas y neutralizar tablas precalculadas; no hace por sí sola más costoso cada intento. El coste de una función apropiada de derivación/hash de contraseñas (parámetros de memoria/iteraciones) es lo que ralentiza la adivinación."
+      }
     },
     {
       "id": 5442,
       "bloque": 0,
       "tema": 0,
-      "texto": "Entre las siguientes opciones, ¿cuál es un estándar para firma electrónica?",
+      "texto": "¿Cuál de estos perfiles ETSI define firmas electrónicas avanzadas basadas en XML?",
       "opciones": [
-        "WAdES.",
-        "PdES.",
+        "CAdES.",
+        "PAdES.",
         "XAdES.",
-        "CdES."
+        "ASiC."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La respuesta C, XAdES, es correcta para las firmas XML. Se reemplazan las grafías incorrectas de los distractores por familias reales para que la discriminación dependa del formato: CAdES se basa en CMS, PAdES se orienta a PDF, XAdES a XML y ASiC a contenedores asociados. ETSI y el acto europeo citado reconocen el perfil XAdES actual.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma 2026.1, sección 8: CAdES, XAdES, PAdES y ASiC; cotejo directo.",
+        "estado": "revisada",
+        "nota": "Clasificación cotejada con el programa oficial; ITIC Academy se usa como mapa curricular cuando se indica, no como autoridad técnica o normativa."
+      },
+      "etiquetas": [
+        "XAdES",
+        "firmas XML",
+        "ETSI EN 319 132-1",
+        "formatos de firma electrónica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.01_60/en_31913201v010301p.pdf",
+            "referencia": "ETSI EN 319 132-1 V1.3.1, Building blocks and XAdES baseline signatures: perfiles de firma electrónica avanzada basados en XML."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R0248",
+            "referencia": "Reglamento de Ejecución (UE) 2026/248: identifica el perfil XAdES Baseline como ETSI EN 319 132-1."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 80: formatos de firma electrónica y servicios de confianza."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema I.6: firma electrónica, eIDAS y marco nacional."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma 2026.1, apartado 8: formatos CAdES, XAdES, PAdES y ASiC; cotejo directo."
+          }
+        ],
+        "observaciones": "La respuesta C, XAdES, es correcta para las firmas XML. Se reemplazan las grafías incorrectas de los distractores por familias reales para que la discriminación dependa del formato: CAdES se basa en CMS, PAdES se orienta a PDF, XAdES a XML y ASiC a contenedores asociados. ETSI y el acto europeo citado reconocen el perfil XAdES actual."
+      }
     },
     {
       "id": 5443,
       "bloque": 0,
       "tema": 0,
-      "texto": "La prestación de los servicios de validación del DNI electrónico se realiza en base a:",
+      "texto": "¿Qué protocolo indica el portal oficial del DNIe que utilizan sus servicios para consultar el estado de los certificados?",
       "opciones": [
         "Online Certificate Status Protocol (OCSP).",
         "Online Services Protocol (OSP).",
@@ -280049,35 +280138,180 @@
         "Online Status Services Certificate (OSSC)."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La respuesta A es correcta: el portal del DNIe indica que sus servicios de validación consultan el estado del certificado mediante OCSP. OCSP obtiene el estado de un certificado concreto a través de una Autoridad de Validación; no es un protocolo genérico llamado “Online Services Protocol”.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma 2026.1, apartados 9 y 11: certificados, OCSP/CRL, DNIe y VALIDe; cobertura directa.",
+        "estado": "revisada",
+        "nota": "Clasificación cotejada con el programa oficial; ITIC Academy se usa como mapa curricular cuando se indica, no como autoridad técnica o normativa."
+      },
+      "etiquetas": [
+        "DNI electrónico",
+        "OCSP",
+        "Online Certificate Status Protocol",
+        "validación de certificados",
+        "Autoridad de Validación"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_290",
+            "referencia": "Portal oficial DNIe, Verificación: la prestación de validación de certificados DNIe se realiza mediante OCSP; describe la consulta de estado a la Autoridad de Validación."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc6960.html",
+            "referencia": "IETF RFC 6960: especificación del protocolo Online Certificate Status Protocol (OCSP) para obtener el estado de certificados X.509."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 80: certificados digitales, validación e identificación electrónica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema I.6: DNI electrónico, identidad y firma electrónica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma 2026.1, apartados 9 y 11: certificados, OCSP/CRL, DNIe y VALIDe."
+          }
+        ],
+        "observaciones": "La respuesta A es correcta: el portal del DNIe indica que sus servicios de validación consultan el estado del certificado mediante OCSP. OCSP obtiene el estado de un certificado concreto a través de una Autoridad de Validación; no es un protocolo genérico llamado “Online Services Protocol”."
+      }
     },
     {
       "id": 5444,
       "bloque": 0,
       "tema": 0,
-      "texto": "Queremos usar una política de grupo (GPO) en un entorno de directorio activo para crear un usuario administrador local en un conjunto de equipos del dominio. Indique cuál es la secuencia correcta:",
+      "texto": "En el Editor de administración de directivas de grupo, ¿qué ruta abre la preferencia para administrar usuarios y grupos locales de los equipos objetivo?",
       "opciones": [
-        "Objeto GPO -> Configuración del equipo -> Preferencias -> Configuración del panel de control -> usuarios y grupos locales",
-        "Objeto GPO -> Configuración de usuario -> Directivas -> Plantillas Administrativas -> Panel de control -> cuentas de usuario",
-        "Objeto GPO -> Configuración del equipo -> Directivas -> Plantillas Administrativas -> Panel de control -> cuentas de usuario",
-        "Objeto GPO -> Configuración de usuario -> Preferencias -> Configuración del pan el de control -> Sistema -> usuarios y grupos locales"
+        "Objeto GPO > Configuración del equipo > Preferencias > Configuración del panel de control > Usuarios y grupos locales.",
+        "Objeto GPO > Configuración de usuario > Directivas > Plantillas administrativas > Panel de control > Cuentas de usuario.",
+        "Objeto GPO > Configuración del equipo > Directivas > Plantillas administrativas > Panel de control > Cuentas de usuario.",
+        "Objeto GPO > Configuración de usuario > Preferencias > Configuración del panel de control > Sistema > Usuarios y grupos locales."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene A, y se concreta la ruta vigente del editor de administración de directivas de grupo: Configuración del equipo > Preferencias > Configuración del panel de control > Usuarios y grupos locales. Esta preferencia puede crear/modificar usuarios y grupos, pero no debe usarse para distribuir contraseñas: MS14-025 retiró esa capacidad por riesgo de exposición. Para gestionar credenciales de administrador local, Windows LAPS es la solución de Microsoft.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1",
+          "A2-IV-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 45 Correo, mensajería y servicios de directorio 2026.1, sección 11: Active Directory y Group Policy; cobertura de contexto, pero no la ruta de GPMC.",
+        "estado": "revisada",
+        "nota": "Clasificación cotejada con el programa oficial; ITIC Academy se usa como mapa curricular cuando se indica, no como autoridad técnica o normativa."
+      },
+      "etiquetas": [
+        "Active Directory",
+        "GPO",
+        "Preferencias de directiva de grupo",
+        "Usuarios y grupos locales",
+        "Windows LAPS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-policy/group-policy-preferences",
+            "referencia": "Microsoft Learn, Group Policy preferences: la extensión Local Users and Groups permite crear, modificar o eliminar cuentas y grupos locales; configuración de equipo aplica a los equipos objetivo."
+          },
+          {
+            "url": "https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/using-group-policy-preferences-to-manage-the-local-administrator-group/259223/",
+            "referencia": "Microsoft Core Infrastructure and Security Blog: ruta del editor GPO Computer Configuration > Preferences > Control Panel Settings para gestionar pertenencia al grupo local Administrators."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/security-updates/SecurityBulletins/2014/ms14-025",
+            "referencia": "Microsoft Security Bulletin MS14-025: la actualización eliminó la capacidad de configurar/distribuir contraseñas en preferencias afectadas, incluidas Local Users and Groups, por exposición de credenciales."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview",
+            "referencia": "Microsoft Learn, Windows LAPS: administra y respalda automáticamente contraseñas únicas de cuentas de administrador local en equipos unidos a AD DS o Entra."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 118: administración de redes LAN y gestión de usuarios en redes locales."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas II.2 (administración de Windows) y IV.9 (gestión de usuarios y dispositivos en redes locales)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 45 Correo, mensajería y servicios de directorio 2026.1, sección 11: AD DS y Group Policy; cotejo contextual, sin detalle de esta ruta de GPMC."
+          }
+        ],
+        "observaciones": "Se mantiene A, y se concreta la ruta vigente del editor de administración de directivas de grupo: Configuración del equipo > Preferencias > Configuración del panel de control > Usuarios y grupos locales. Esta preferencia puede crear/modificar usuarios y grupos, pero no debe usarse para distribuir contraseñas: MS14-025 retiró esa capacidad por riesgo de exposición. Para gestionar credenciales de administrador local, Windows LAPS es la solución de Microsoft."
+      }
     },
     {
       "id": 5445,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Quién designa al Delegado de Protección de Datos?",
+      "texto": "Según el artículo 37.1 del RGPD, ¿a quién corresponde designar un Delegado de Protección de Datos cuando concurra alguno de los supuestos que enumera?",
       "opciones": [
-        "El responsable del tratamiento",
-        "El encargado del tratamiento",
-        "Tanto el responsable como el encargado del tratamiento",
-        "Ninguna de las anteriores es correcta"
+        "Al responsable del tratamiento.",
+        "Al encargado del tratamiento.",
+        "Al responsable y al encargado del tratamiento, cada uno cuando le resulte aplicable.",
+        "A ninguna de las partes anteriores."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene C. El art. 37.1 RGPD asigna la obligación de designar DPD tanto al responsable como al encargado cuando se dé cualquiera de los supuestos allí enumerados; el apartado 4 contempla también designación cuando lo exijan el Derecho de la Unión o nacional y permite designación voluntaria. Se precisa que no implica que ambos deban nombrar conjuntamente un único delegado en cada tratamiento.",
+      "clasificacion": {
+        "A1": [
+          "A1-27"
+        ],
+        "A2": [
+          "A2-I-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 RGPD 2026: artículo 37 y designación del DPD por responsables y encargados; cotejo directo.",
+        "estado": "revisada",
+        "nota": "Clasificación cotejada con el programa oficial; ITIC Academy se usa como mapa curricular cuando se indica, no como autoridad técnica o normativa."
+      },
+      "etiquetas": [
+        "RGPD",
+        "Delegado de Protección de Datos",
+        "responsable del tratamiento",
+        "encargado del tratamiento",
+        "artículo 37"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32016R0679",
+            "referencia": "Reglamento (UE) 2016/679, art. 37.1: el responsable y el encargado designarán un DPD en los supuestos enumerados; el art. 37.4 permite/designa además según Derecho UE o nacional."
+          },
+          {
+            "url": "https://www.aepd.es/guias/guia-delegado-de-proteccion-de-datos.pdf",
+            "referencia": "AEPD, Guía del Delegado de Protección de Datos: explica designación por responsables y encargados y cuándo es obligatoria."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 27: RGPD, responsables, encargados y obligaciones de protección de datos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema I.7: régimen de protección de datos personales, responsables, encargados y delegado."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18DW7dfPPYpOM1G2Ds8BMMHy782Ce6oZ9/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 RGPD 2026: art. 37, designación del DPD por responsable o encargado y supuestos de obligación; cotejo directo."
+          }
+        ],
+        "observaciones": "Se mantiene C. El art. 37.1 RGPD asigna la obligación de designar DPD tanto al responsable como al encargado cuando se dé cualquiera de los supuestos allí enumerados; el apartado 4 contempla también designación cuando lo exijan el Derecho de la Unión o nacional y permite designación voluntaria. Se precisa que no implica que ambos deban nombrar conjuntamente un único delegado en cada tratamiento."
+      }
     },
     {
       "id": 5446,
