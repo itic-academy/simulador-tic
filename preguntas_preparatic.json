@@ -262658,35 +262658,120 @@
       "id": 5141,
       "bloque": 0,
       "tema": 0,
-      "texto": "En tratamiento digital de imágenes:",
+      "texto": "¿Cuál afirmación sobre filtros espaciales de imagen es correcta?",
       "opciones": [
-        "El filtro de mediana es un filtro paso alto",
-        "Un filtro paso bajo suaviza los contornos, provocando difusión en la imagen",
-        "Las respuestas 'a' y 'b' son correctas",
-        "Las respuestas 'a' y 'b' son falsas"
+        "El filtro de mediana es una convolución lineal de paso alto.",
+        "Un filtro promedio (box) de paso bajo reduce altas frecuencias y ruido, pero puede suavizar/difuminar los bordes.",
+        "El filtro de mediana realza necesariamente los contornos y no reduce ruido.",
+        "Un filtro de paso bajo detecta bordes porque conserva las altas frecuencias."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "El filtro de mediana es un filtro de rango no lineal, no un paso alto. Para evitar generalizar sobre todos los filtros de paso bajo, la opción verdadera se acota al filtro promedio/box: suaviza y puede difuminar bordes.",
+      "clasificacion": {
+        "A1": [
+          "A1-83"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 37 «Imágenes, OCR, biometría y gestión de contenidos», versión 2026.1, cubre imagen digital, resolución, color y tratamiento; no se localizó una sección dedicada a filtros lineales frente a filtros de rango.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular A1-83/A2-II-1; la clasificación matemática de los filtros se sustenta en documentación técnica independiente."
+      },
+      "etiquetas": [
+        "tratamiento digital de imágenes",
+        "filtro de mediana",
+        "filtro de paso bajo",
+        "suavizado",
+        "ruido"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://scikit-image.org/docs/stable/auto_examples/applications/plot_rank_filters.html",
+            "referencia": "scikit-image 0.26, Rank filters: los filtros de rango son no lineales; el filtro de mediana toma el valor central de las intensidades locales y se utiliza para suavizado y reducción de ruido impulsivo."
+          },
+          {
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK546156/",
+            "referencia": "Biomedical Image Processing, §3.4: el filtro de mediana es no lineal; un filtro promedio/box de paso bajo difumina la imagen y reduce ruido, pero también suaviza bordes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 83: tratamiento de imágenes y tecnologías de digitalización."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.1: informática básica y componentes/funcionalidades de sistemas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xTMCpPmwNi8hpb0nZ3sMqpgvrhLXT-yf/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 37 «Imágenes, OCR, biometría y gestión de contenidos», versión 2026.1: imagen digital, resolución, color y tratamiento; cotejo curricular, sin atribuirle la clasificación de filtros concreta."
+          }
+        ],
+        "observaciones": "El filtro de mediana es un filtro de rango no lineal, no un paso alto. Para evitar generalizar sobre todos los filtros de paso bajo, la opción verdadera se acota al filtro promedio/box: suaviza y puede difuminar bordes."
+      }
     },
     {
       "id": 5142,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto al modelo de datos ráster de los Sistemas de Información Geográfica:",
+      "texto": "¿Qué describe correctamente el modelo de datos ráster de un sistema de información geográfica?",
       "opciones": [
-        "Este modelo divide el terreno, superpone al mapa original una rejilla compuesta por celdas, asignando a cada una el atributo o propiedad a representar.",
-        "Representa la información topológica de forma explícita.",
-        "Almacena de forma explícita las coordenadas geográficas de las celdas.",
-        "Requiere un escaso volumen para almacenar la información, siendo óptima la relación entre el volumen de la información y la eficiencia en los accesos."
+        "Representa el espacio mediante una matriz regular de celdas, con uno o varios valores asociados a cada posición y georreferenciación de la cuadrícula.",
+        "Almacena explícitamente, para cada celda, sus relaciones topológicas con todas las celdas vecinas.",
+        "Guarda en cada píxel sus coordenadas geográficas independientes; la posición de la celda no depende de filas, columnas ni georreferenciación.",
+        "Siempre ocupa menos espacio que el modelo vectorial y permite accesos más eficientes, con independencia de la resolución y compresión."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El ráster representa el espacio como celdas en una matriz regular; cada posición contiene uno o varios valores y su ubicación se deriva de la georreferenciación de la cuadrícula. La topología no suele estar codificada explícitamente por celda y no se almacenan coordenadas independientes de cada píxel. El almacenamiento puede ser elevado según resolución, bandas y compresión.",
+      "clasificacion": {
+        "A1": [
+          "A1-74"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 33 «E-learning y Sistemas de Información Geográfica», versión 2026.1, §2.4 «Modelos de datos»: raster como matriz regular de celdas y comparación con vectorial.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo A1-74; el programa A2 GSI 2025 no contiene epígrafe SIG específico."
+      },
+      "etiquetas": [
+        "SIG",
+        "modelo ráster",
+        "celdas",
+        "píxeles",
+        "georreferenciación",
+        "topología"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://pro.arcgis.com/en/pro-app/3.0/help/analysis/spatial-analyst/basics/essential-spatial-analyst-terms.htm",
+            "referencia": "Esri ArcGIS Pro, Essential Spatial Analyst terms: un ráster representa el espacio como matriz de celdas de igual tamaño dispuestas en filas y columnas; la localización está implícita en el orden de la matriz, a diferencia de las coordenadas explícitas del modelo vectorial."
+          },
+          {
+            "url": "https://www.ign.es/web/es/ign/portal/cbg-area-cartografia",
+            "referencia": "Instituto Geográfico Nacional, portal de cartografía: contexto oficial de modelos y productos geográficos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 74: sistemas de información geográfica, conceptos y funcionalidad básicos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/15iokZokiVzk3qpTTQvMpDN0W27PL8tbv/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 33 «E-learning y Sistemas de Información Geográfica», versión 2026.1, §2.4: diferencia modelos ráster y vectorial; matriz de celdas/píxeles con valor por posición."
+          }
+        ],
+        "observaciones": "El ráster representa el espacio como celdas en una matriz regular; cada posición contiene uno o varios valores y su ubicación se deriva de la georreferenciación de la cuadrícula. La topología no suele estar codificada explícitamente por celda y no se almacenan coordenadas independientes de cada píxel. El almacenamiento puede ser elevado según resolución, bandas y compresión."
+      }
     },
     {
       "id": 5143,
       "bloque": 0,
       "tema": 0,
-      "texto": "Java dispone de diferentes APIs con el fin de dar soporte para web services. La API que no está relacionada con web services es:",
+      "texto": "En el conjunto histórico de APIs Java para XML y servicios web (JAXR, JAXB, JAXP y JTA), ¿cuál es la API de transacciones y no una API de XML/servicios web?",
       "opciones": [
         "JAXR",
         "JAXB",
@@ -262694,35 +262779,189 @@
         "JTA"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "JTA/Jakarta Transactions gestiona transacciones. JAXR se asocia a registros y publicación/descubrimiento de servicios; JAXB realiza binding XML/Java y JAXP procesa XML. El enunciado se hace explícito para preguntar por la API transaccional y no sugerir que JAXP, por ser de propósito general, sea un estándar exclusivo de servicios web. Las denominaciones JAX* reflejan APIs históricas Java EE; las tecnologías actuales tienen sucesoras Jakarta cuando corresponde.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-9",
+          "A2-III-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1, cubre Java/Jakarta EE, XML y servicios web; no se presenta JTA como API web y el detalle se coteja con especificaciones Java/Jakarta.",
+        "estado": "revisada",
+        "nota": "Cotejo de ámbito A1-67/A2-II.9/III.10; se explicita que los nombres JAX* del test pertenecen a una agrupación histórica."
+      },
+      "etiquetas": [
+        "Java",
+        "JAXR",
+        "JAXB",
+        "JAXP",
+        "JTA",
+        "servicios web",
+        "transacciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javaee/1.3/tutorial/doc/IntroWS3.html",
+            "referencia": "Oracle Java EE Tutorial, Overview of the Java APIs for XML: distingue APIs documentales (JAXP) y APIs orientadas a servicios/procedimientos, entre ellas JAXR."
+          },
+          {
+            "url": "https://docs.oracle.com/javaee/1.4/tutorial/doc/JAXR.html",
+            "referencia": "Oracle Java EE Tutorial, JAXR: acceso a registros XML para publicar y descubrir organizaciones y servicios web."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/22/docs/api/java.xml/module-summary.html",
+            "referencia": "Oracle Java SE 22, módulo java.xml: define JAXP para procesar, analizar, transformar y validar documentos XML."
+          },
+          {
+            "url": "https://jakarta.ee/specifications/transactions/2.0/",
+            "referencia": "Jakarta Transactions 2.0: API transaccional para coordinar recursos y transacciones; no es una API de XML ni de servicios web."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 67: entorno de desarrollo Java."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas II.9 (XML/lenguajes de marca) y III.10 (Java EE/Jakarta EE)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1: Jakarta EE, Java y tecnologías XML/web (incluye JAXB y Jakarta XML Web Services); no se atribuye al bloque que JTA sea una API web."
+          }
+        ],
+        "observaciones": "JTA/Jakarta Transactions gestiona transacciones. JAXR se asocia a registros y publicación/descubrimiento de servicios; JAXB realiza binding XML/Java y JAXP procesa XML. El enunciado se hace explícito para preguntar por la API transaccional y no sugerir que JAXP, por ser de propósito general, sea un estándar exclusivo de servicios web. Las denominaciones JAX* reflejan APIs históricas Java EE; las tecnologías actuales tienen sucesoras Jakarta cuando corresponde."
+      }
     },
     {
       "id": 5144,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el Modelo de Referencia ANSI de las Facilidades de usuario (MRFU), las FU se encargan de:",
+      "texto": "Según el modelo NIST de referencia para facilidades de usuario de un SGBD, ¿qué funciones realiza la facilidad de usuario?",
       "opciones": [
-        "Aislar al usuario de detalles concretos sobre las herramientas de gestión de datos (HGD)",
-        "Transformar una demanda de usuario en una petición funcional para las HGD",
-        "Trasformar la salida de las HGD en un formato de presentación para el usuario",
-        "Todas las anteriores"
+        "Abstrae al usuario de los detalles de las herramientas de gestión de datos.",
+        "Transforma la petición del usuario en solicitudes funcionales para las herramientas de gestión de datos.",
+        "Convierte la salida de esas herramientas en un formato de presentación para el usuario.",
+        "Todas las anteriores."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "El informe NISTIR 88-3709 del modelo de referencia para facilidades de usuario define expresamente las dos transformaciones: petición del usuario a solicitudes funcionales para herramientas de gestión de datos y salida de esas herramientas a un formato de presentación. Estas funciones median entre usuario y herramientas y las opciones A–C se describen como verdaderas; la respuesta es «Todas las anteriores».",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1, trata arquitectura ANSI/SPARC y referencia el modelo ANSI; no se confirmó una cobertura específica del User Facilities Task Group/UFRM.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular A1-63/A2-II.5, con respaldo funcional específico en el informe NISTIR 88-3709."
+      },
+      "etiquetas": [
+        "ANSI/SPARC",
+        "facilidades de usuario",
+        "UFRM",
+        "SGBD",
+        "petición funcional",
+        "presentación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir88-3709.pdf",
+            "referencia": "NISTIR 88-3709, Reference Model for DBMS User Facility, §3.2: la facilidad de usuario transforma peticiones en solicitudes funcionales a herramientas de gestión de datos y mapea la salida a un formato de presentación."
+          },
+          {
+            "url": "https://www.nist.gov/publications/reference-model-dbms-user-facility",
+            "referencia": "NIST, ficha de NISTIR 88-3709 (1988), autora Elizabeth N. Fong."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 63: sistemas de gestión de bases de datos y modelo de referencia ANSI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.5: arquitectura ANSI/SPARC y SGBD."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 29 «Bases de datos, SQL y modelado de datos», versión 2026.1: §6 y epígrafe de modelo de referencia ANSI de 1985; no se confirmó desarrollo específico de UFRM/UFTG."
+          }
+        ],
+        "observaciones": "El informe NISTIR 88-3709 del modelo de referencia para facilidades de usuario define expresamente las dos transformaciones: petición del usuario a solicitudes funcionales para herramientas de gestión de datos y salida de esas herramientas a un formato de presentación. Estas funciones median entre usuario y herramientas y las opciones A–C se describen como verdaderas; la respuesta es «Todas las anteriores»."
+      }
     },
     {
       "id": 5145,
       "bloque": 0,
       "tema": 0,
-      "texto": "Una de las partes fundamentales de ADO.NET son los DataSets, los cuales contienen una serie de objetos formando una jerarquía, ¿cuáles son válidos?",
+      "texto": "¿Qué conjunto contiene tipos/objetos válidos del modelo ADO.NET DataSet? No todos son objetos hijos directos de DataSet.",
       "opciones": [
-        "DataSet, DataTable, DataView, DataColumn, DataRow, DataRowView, DataRelation, Constraint",
-        "DataSet, DataTable, DataView, DataColumn, DataRow, pero no DataRowView, ni DataRelation, ni Constraint",
-        "ADOSet, ADOTable, ADOView, ADOColumn, ADORow, ADORowView, ADORelation, Constraint",
-        "ADOSet, ADOTable, ADOView, ADOColumn, ADORow, pero no ADORowView, ni ADORelation, ni Constraint"
+        "DataSet, DataTable, DataView, DataColumn, DataRow, DataRowView, DataRelation y Constraint.",
+        "DataSet, DataTable y DataColumn, pero no DataRow, DataRelation ni Constraint.",
+        "ADOSet, ADOTable, ADOView, ADOColumn, ADORow, ADORowView, ADORelation y Constraint.",
+        "ADOSet, ADOTable, ADOView, ADOColumn y ADORow, pero no DataRowView, DataRelation ni Constraint."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "DataSet, DataTable, DataView, DataColumn, DataRow, DataRowView, DataRelation y Constraint son tipos/objetos válidos en el ecosistema ADO.NET. No forman todos una única jerarquía de hijos directos de DataSet: DataView se vincula a DataTable y DataRowView presenta filas expuestas por DataView. El enunciado y la opción se reformulan como inventario de tipos del modelo, no como contención directa.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1, §7.5 desarrolla ADO.NET y distingue DataSet/DataTable en memoria de DataReader y proveedores.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular directo A1-66/A2-III.11; Microsoft Learn respalda la relación exacta entre tipos y colecciones."
+      },
+      "etiquetas": [
+        "ADO.NET",
+        ".NET",
+        "DataSet",
+        "DataTable",
+        "DataView",
+        "DataRowView",
+        "DataRelation",
+        "Constraint"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/index",
+            "referencia": "Microsoft Learn, DataSets, DataTables, and DataViews: el DataSet modela tablas, orden, restricciones y relaciones; puede crearse con DataTable, DataRelation y Constraint."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews",
+            "referencia": "Microsoft Learn, DataViews: un DataView ofrece vistas dinámicas de una DataTable y DataRowView expone las filas de esa vista."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations",
+            "referencia": "Microsoft Learn, Adding DataRelations: DataRelation conecta DataTables dentro de un DataSet y puede crear restricciones."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 66: entorno de desarrollo Microsoft .NET."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III.11: plataforma .NET, modelo de programación, servicios y herramientas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1: §7.5 ADO.NET y Entity Framework Core; distingue DataSet/DataTable en memoria y objetos de acceso a datos."
+          }
+        ],
+        "observaciones": "DataSet, DataTable, DataView, DataColumn, DataRow, DataRowView, DataRelation y Constraint son tipos/objetos válidos en el ecosistema ADO.NET. No forman todos una única jerarquía de hijos directos de DataSet: DataView se vincula a DataTable y DataRowView presenta filas expuestas por DataView. El enunciado y la opción se reformulan como inventario de tipos del modelo, no como contención directa."
+      }
     },
     {
       "id": 5146,
