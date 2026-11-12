@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 12 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1053 (IDs 5586–5590); también se resolvió el pendiente histórico ID 77. Acumulado: 5.585 preguntas examinadas individualmente; 5.486 verificadas (983 vigentes, 4.089 corregidas y 414 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.538 sin revisar individualmente. Hay 5.560 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1054 (IDs 5591–5595); también se resolvió el pendiente histórico ID 77. Acumulado: 5.590 preguntas examinadas individualmente; 5.491 verificadas (983 vigentes, 4.094 corregidas y 414 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.533 sin revisar individualmente. Hay 5.570 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
 
 ## Pendiente anterior resuelto — ID 77 (12 de noviembre de 2026)
 
@@ -39,6 +39,22 @@ Fuentes técnicas primarias: [UIT-T G.992.1, estado y alcance](https://www.itu.i
 Ejecutados `node revision/revisar-lote-1051.cjs`, `node revision/academia-lote-1051.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 5.575 revisiones individuales, 99 pendientes explícitas y 6.548 preguntas por revisar individualmente; cero errores estructurales.
 
 ## Lote 1052 — 12 de noviembre de 2026
+
+## Lote 1053 — 12 de noviembre de 2026
+
+## Lote 1054 — 12 de noviembre de 2026
+
+IDs 5591–5595 revisados individualmente. Se precisó la capacidad de obrar del artículo 3 de la Ley 39/2015; se concretó el tipo de firma avanzada admitido en su artículo 10; se actualizó el fundamento europeo del derecho a la protección de datos; se contextualizó la segregación de funciones DBA/desarrollo como control dependiente del riesgo; y se identificó el diagrama de extrapolación de MÉTRICA v3.
+
+- **5591 — capacidad de obrar:** **corregida**, respuesta D. El art. 3 incluye personas físicas/jurídicas con capacidad civil, determinados menores y, cuando una ley lo prevea expresamente, grupos, uniones, entidades sin personalidad y patrimonios independientes/autónomos. No toda agrupación sin personalidad tiene capacidad automáticamente. A1-8; A2-I.9.
+- **5592 — firma ante las AAPP:** **corregida**, respuesta C. El art. 10.2.a de la Ley 39/2015 contempla firma avanzada basada en certificado cualificado; no basta describirla solo como cualquier firma “avanzada”, y hay otros sistemas admitidos en las letras siguientes. A1-22; A2-I.9.
+- **5593 — derecho a protección de datos:** **corregida**, respuesta C. El art. 8 de la Carta de Derechos Fundamentales de la UE reconoce el derecho; LOPD 5/1992 y LOPD 15/1999 son referencias históricas y no la única base vigente. Se citan también RGPD y LO 3/2018. A1-22; A2-I.9.
+- **5594 — segregación DBA/desarrollo:** **corregida**, respuesta B. Se acota a un control de separación de funciones por riesgo: el desarrollo de aplicaciones que utilizan la base de datos se separa de la administración privilegiada cuando la organización identifica incompatibilidad. NIST AC-5 respalda el principio, pero no impone en todo entorno un reparto universal de roles. A1-34/125; A2-IV.12.
+- **5595 — diagrama de extrapolación:** **corregida**, respuesta A. MÉTRICA v3 GPS 11.2 extrapola la evolución futura a partir del seguimiento y genera el diagrama de extrapolación. PERT/CPM son otras técnicas de redes; no son el nombre del producto MÉTRICA preguntado. A1-99; A2-III.2.
+
+Fuentes primarias: [Ley 39/2015, arts. 3 y 10](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565); [Carta de Derechos Fundamentales de la UE, art. 8](https://eur-lex.europa.eu/eli/treaty/char_2016/art_8/oj), [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679/oj) y [LO 3/2018](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673); [NIST SP 800-53 Rev. 5, control AC-5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) y [glosario NIST sobre separación de funciones](https://csrc.nist.gov/glossary/term/separation_of_duty); [MÉTRICA v3, Gestión de Proyectos, GPS 11.2](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A0f07660d-1044-489e-a3be-3a94b80fbb16/METRICA_V3_Gestion_de_Proyectos.pdf). Programas oficiales: [A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo Drive: [ITIC Academy 2026, Actuación administrativa y Administración digital](https://drive.google.com/file/d/1dW2ffNhCduFHJ1hI2nT6fqs_G8DeNpo3/view?usp=drivesdk), [Organización y gestión de sistemas de información, tema A1 34](https://drive.google.com/file/d/1ANdenllxXF4E7Sl4vJdJ_XPUPkx7Mqp_/view?usp=drivesdk), [bloque Seguridad en redes y aplicación 2026](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk) y [material MÉTRICA v3, tema histórico 93](https://drive.google.com/file/d/1hPYYrCoVBKhiEgMaqVBi5mpdUEm4_vV5/view?usp=drivesdk). Se usa la academia para cobertura y ubicación curricular, no como autoridad jurídica/técnica.
+
+Ejecutados `node revision/revisar-lote-1054.cjs`, `node revision/academia-lote-1054.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 5.590 revisiones individuales, 99 pendientes explícitas y 6.533 preguntas por revisar individualmente; cero errores estructurales.
 
 ## Lote 1053 — 12 de noviembre de 2026
 
