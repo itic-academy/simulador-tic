@@ -298828,71 +298828,300 @@
       "id": 5761,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuáles de los siguientes protocolos no incluye la suite PPP?",
+      "texto": "¿Cuál de los siguientes protocolos forma parte del Point-to-Point Protocol (PPP) para establecer y configurar el enlace?",
       "opciones": [
         "LAPB",
         "HDLC",
         "LCP",
         "SDLC"
       ],
-      "respuesta_correcta": 0,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "Corregida, respuesta C (LCP). El original preguntaba qué protocolo no forma parte de PPP pero incluía varios protocolos que no son componentes de su suite: LAPB, HDLC y SDLC. Se reescribe para que exista una única respuesta correcta: LCP forma parte de PPP y negocia/establece el enlace; PPP usa NCP para protocolos de red y un entramado HDLC-like. A1-108/A2-II.8. Cotejo curricular ITIC Academy: ITIC Academy, bloques 42 (redes/protocolos) y 43 (protocolos de comunicaciones): PPP, control del enlace y protocolos de red. Se coteja el alcance curricular con RFC 1661, que distingue LCP, NCP y entramado HDLC-like. Temas oficiales asociados: A1-108/A2-II-8. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloques 42 (redes/protocolos) y 43 (protocolos de comunicaciones): PPP, control del enlace y protocolos de red. Se coteja el alcance curricular con RFC 1661, que distingue LCP, NCP y entramado HDLC-like.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloques 42 (redes/protocolos) y 43 (protocolos de comunicaciones): PPP, control del enlace y protocolos de red. Se coteja el alcance curricular con RFC 1661, que distingue LCP, NCP y entramado HDLC-like. Temas oficiales asociados: A1-108/A2-II-8. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido."
+      },
+      "etiquetas": [
+        "PPP",
+        "LCP",
+        "NCP",
+        "HDLC",
+        "LAPB",
+        "SDLC"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://datatracker.ietf.org/doc/html/rfc1661",
+            "referencia": "IETF RFC 1661, §§ 1, 2, 3.4 y 5: PPP usa LCP para establecer/configurar el enlace y NCP para configurar protocolos de capa de red; su entramado predeterminado se denomina HDLC-like, no incorpora HDLC como protocolo de control PPP. LAPB y SDLC son protocolos distintos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 108: redes, protocolos y conceptos de interconexión."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.8: modelos TCP/IP y OSI, protocolos y direccionamiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloques 42 (redes/protocolos) y 43 (protocolos de comunicaciones): PPP, control del enlace y protocolos de red. Se coteja el alcance curricular con RFC 1661, que distingue LCP, NCP y entramado HDLC-like."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloques 42 (redes/protocolos) y 43 (protocolos de comunicaciones): PPP, control del enlace y protocolos de red. Se coteja el alcance curricular con RFC 1661, que distingue LCP, NCP y entramado HDLC-like."
+          }
+        ],
+        "observaciones": "Corregida, respuesta C (LCP). El original preguntaba qué protocolo no forma parte de PPP pero incluía varios protocolos que no son componentes de su suite: LAPB, HDLC y SDLC. Se reescribe para que exista una única respuesta correcta: LCP forma parte de PPP y negocia/establece el enlace; PPP usa NCP para protocolos de red y un entramado HDLC-like. A1-108/A2-II.8. Cotejo curricular ITIC Academy: ITIC Academy, bloques 42 (redes/protocolos) y 43 (protocolos de comunicaciones): PPP, control del enlace y protocolos de red. Se coteja el alcance curricular con RFC 1661, que distingue LCP, NCP y entramado HDLC-like. Temas oficiales asociados: A1-108/A2-II-8. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido."
+      }
     },
     {
       "id": 5762,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de las siguientes afirmaciones no es correcta según lo establecido en el Reglamento (UE) 910/2014:",
+      "texto": "Indique cuál de las siguientes afirmaciones no es correcta según el Reglamento (UE) 910/2014 (eIDAS) vigente:",
       "opciones": [
-        "Las firmas electrónicas cualificadas tendrán un efecto jurídico equivalente al de una firma manuscrita.",
-        "Una firma electrónica cualificada basada en un certificado cualificado emitido en un Estado miembro será reconocida como firma electrónica cualificada en los demás Estados miembros.",
+        "No se denegarán efectos jurídicos ni admisibilidad como prueba a una firma electrónica por el mero hecho de ser electrónica o no ser cualificada.",
+        "Una firma electrónica cualificada es una firma avanzada creada mediante un dispositivo cualificado y basada en un certificado cualificado de firma electrónica.",
         "Las firmas electrónicas cualificadas tendrán una validez de 48 meses.",
-        "No se denegarán efectos jurídicos ni admisibilidad como prueba en procedimientos judiciales a una firma electrónica por el mero hecho de ser una firma electrónica."
+        "Una firma electrónica cualificada tendrá un efecto jurídico equivalente al de una firma manuscrita."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida, respuesta C (48 meses). El original incluía como opción B el antiguo art. 25.3, suprimido por el Reglamento (UE) 2024/1183, por lo que además de los 48 meses contenía otra afirmación desactualizada. Se actualiza B a la definición vigente del art. 3.12: una firma cualificada es una firma avanzada creada mediante un dispositivo cualificado y basada en un certificado cualificado. El texto vigente no fija 48 meses como duración universal. A1-80/A2-I.6. Cotejo curricular ITIC Academy: ITIC Academy, bloque 36 «Temas 79, 80 y 81: Seguridad, Criptografía, Identificación y Firma»: marco eIDAS. La pregunta se actualiza a la versión consolidada vigente tras el Reglamento (UE) 2024/1183, que suprimió el antiguo artículo 25.3. Temas oficiales asociados: A1-80/A2-I-6. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 «Temas 79, 80 y 81: Seguridad, Criptografía, Identificación y Firma»: marco eIDAS. La pregunta se actualiza a la versión consolidada vigente tras el Reglamento (UE) 2024/1183, que suprimió el antiguo artículo 25.3.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 36 «Temas 79, 80 y 81: Seguridad, Criptografía, Identificación y Firma»: marco eIDAS. La pregunta se actualiza a la versión consolidada vigente tras el Reglamento (UE) 2024/1183, que suprimió el antiguo artículo 25.3. Temas oficiales asociados: A1-80/A2-I-6. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido."
+      },
+      "etiquetas": [
+        "eIDAS",
+        "firma electrónica cualificada",
+        "artículo 25",
+        "Reglamento (UE) 910/2014"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18",
+            "referencia": "EUR-Lex, Reglamento eIDAS, texto consolidado vigente a 18-10-2024: arts. 3.12 y 25. El art. 25.1 impide negar efecto/admisibilidad por el solo formato electrónico o por no ser cualificada; el art. 25.2 equipara la cualificada a la manuscrita. El actual art. 25 ya no incluye el antiguo apartado 3."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX%3A32024R1183",
+            "referencia": "Reglamento (UE) 2024/1183, art. 1.23: suprime el art. 25.3 anterior; no debe mantenerse como regla vigente una cita literal de ese apartado."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 80: identidad/firma electrónica y marco europeo y nacional."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema I.6: régimen jurídico de identidad/firma electrónica y Reglamento eIDAS."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 36 «Temas 79, 80 y 81: Seguridad, Criptografía, Identificación y Firma»: marco eIDAS. La pregunta se actualiza a la versión consolidada vigente tras el Reglamento (UE) 2024/1183, que suprimió el antiguo artículo 25.3."
+          }
+        ],
+        "observaciones": "Corregida, respuesta C (48 meses). El original incluía como opción B el antiguo art. 25.3, suprimido por el Reglamento (UE) 2024/1183, por lo que además de los 48 meses contenía otra afirmación desactualizada. Se actualiza B a la definición vigente del art. 3.12: una firma cualificada es una firma avanzada creada mediante un dispositivo cualificado y basada en un certificado cualificado. El texto vigente no fija 48 meses como duración universal. A1-80/A2-I.6. Cotejo curricular ITIC Academy: ITIC Academy, bloque 36 «Temas 79, 80 y 81: Seguridad, Criptografía, Identificación y Firma»: marco eIDAS. La pregunta se actualiza a la versión consolidada vigente tras el Reglamento (UE) 2024/1183, que suprimió el antiguo artículo 25.3. Temas oficiales asociados: A1-80/A2-I-6. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido."
+      }
     },
     {
       "id": 5763,
       "bloque": 0,
       "tema": 0,
-      "texto": "El sistema de almacenamiento SAN:",
+      "texto": "¿Cuál es la descripción más precisa de una red de área de almacenamiento (SAN)?",
       "opciones": [
-        "Se corresponde con una red independiente de almacenamiento de altas prestaciones basada en tecnología de fibra óptica.",
-        "Se corresponde con el sistema de conexión directa (discos en RAID, cinta o disco óptico) a un servidor que procesa todas as peticiones de archivos.",
-        "Tiene una serie de limitaciones entre las que destaca su falta de escalabilidad, lo que hace que su use sea limitado.",
-        "Se corresponde con un dispositivo de almacenamiento que se conecta a una LAN en la que están conectados los demás equipos, normalmente una Ethernet, y que posee una ip propia."
+        "Red especializada que proporciona a los hosts acceso a dispositivos de almacenamiento compartido, normalmente como almacenamiento de bloques; puede utilizar, entre otras tecnologías, Fibre Channel o Ethernet/iSCSI.",
+        "Almacenamiento conectado directamente a un servidor que procesa las peticiones de archivos.",
+        "Sistema que por definición carece de escalabilidad y solo puede conectar un único servidor.",
+        "Dispositivo conectado a una LAN que ofrece almacenamiento de archivos mediante protocolos como SMB o NFS, propio de una NAS."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida, respuesta A. Una SAN es una red especializada que conecta hosts con almacenamiento compartido y suele proporcionar acceso a bloques; no exige exclusivamente fibra óptica. Fibre Channel es común, pero Ethernet/iSCSI también puede formar una SAN. La fibra es usual en Fibre Channel, aunque no exclusiva. La respuesta se actualiza para retirar la limitación tecnológica del original. A1-56/A2-IV.5. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 de hardware y almacenamiento, §§ 7.2 (DAS/NAS/SAN) y 8 (Fibre Channel/iSCSI). Se amplía la definición de SAN para no identificarla exclusivamente con fibra óptica. Temas oficiales asociados: A1-56/A2-IV-5. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 de hardware y almacenamiento, §§ 7.2 (DAS/NAS/SAN) y 8 (Fibre Channel/iSCSI). Se amplía la definición de SAN para no identificarla exclusivamente con fibra óptica.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 de hardware y almacenamiento, §§ 7.2 (DAS/NAS/SAN) y 8 (Fibre Channel/iSCSI). Se amplía la definición de SAN para no identificarla exclusivamente con fibra óptica. Temas oficiales asociados: A1-56/A2-IV-5. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido."
+      },
+      "etiquetas": [
+        "SAN",
+        "almacenamiento",
+        "Fibre Channel",
+        "iSCSI",
+        "NAS",
+        "DAS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.snia.org/education/storage_networking_primer/san/what_san",
+            "referencia": "SNIA, What Is a SAN?: red especializada de alta velocidad que proporciona acceso de red a almacenamiento; presenta los dispositivos al host como almacenamiento local y puede usar Fibre Channel, Ethernet o InfiniBand."
+          },
+          {
+            "url": "https://www.snia.org/education/what-is-fibre-channel",
+            "referencia": "SNIA, What Is Fibre Channel?: una SAN conecta hosts con almacenamiento compartido, normalmente con acceso a bloques; Fibre Channel suele usar fibra óptica, pero también puede usar cobre."
+          },
+          {
+            "url": "https://www.snia.org/education/what-is-iscsi",
+            "referencia": "SNIA, What Is iSCSI?: iSCSI transporta SCSI por TCP/IP y puede utilizarse para crear una SAN sobre una red compartida o dedicada."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 56: sistemas y arquitecturas de almacenamiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.5: almacenamiento, arquitectura, componentes y protocolos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 26 de hardware y almacenamiento, §§ 7.2 (DAS/NAS/SAN) y 8 (Fibre Channel/iSCSI). Se amplía la definición de SAN para no identificarla exclusivamente con fibra óptica."
+          }
+        ],
+        "observaciones": "Corregida, respuesta A. Una SAN es una red especializada que conecta hosts con almacenamiento compartido y suele proporcionar acceso a bloques; no exige exclusivamente fibra óptica. Fibre Channel es común, pero Ethernet/iSCSI también puede formar una SAN. La fibra es usual en Fibre Channel, aunque no exclusiva. La respuesta se actualiza para retirar la limitación tecnológica del original. A1-56/A2-IV.5. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 de hardware y almacenamiento, §§ 7.2 (DAS/NAS/SAN) y 8 (Fibre Channel/iSCSI). Se amplía la definición de SAN para no identificarla exclusivamente con fibra óptica. Temas oficiales asociados: A1-56/A2-IV-5. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido."
+      }
     },
     {
       "id": 5764,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los dos esquemas empleados en la recuperación de errores en el procesamiento de transacciones son:",
+      "texto": "En la recuperación de transacciones de un SGBD ante un fallo, ¿qué dos operaciones se combinan habitualmente?",
       "opciones": [
-        "Detección y recuperación.",
-        "La prevención y el ignorarlos.",
-        "Semáforos y monitores.",
-        "Hacia delante y hacia atrás."
+        "Detectar el fallo y detener definitivamente el sistema.",
+        "Prevenir el fallo e ignorar las transacciones incompletas.",
+        "Aplicar semáforos y monitores al registro de transacciones.",
+        "Reaplicar cambios confirmados mediante REDO (avance) y deshacer cambios no confirmados mediante UNDO (retroceso)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida, respuesta D. Se aclara que la recuperación del SGBD combina avance/reaplicación (forward recovery, REDO) con retroceso/deshacer (backward recovery, UNDO); durante la recuperación tras una caída se reaplican cambios registrados y se revierten los de transacciones no confirmadas. El original usaba «hacia delante y hacia atrás» sin explicar los conceptos. A1-63/A2-III.4 y IV.2. Cotejo curricular ITIC Academy: ITIC Academy, bloque 29 de bases de datos: transacciones, administración y recuperación en SGBD. Se enlaza el contenido con temas A1/A2 de SGBD y transacciones; las equivalencias REDO/UNDO se acreditan con documentación oficial de IBM/Oracle. Temas oficiales asociados: A1-63/A2-III-4/A2-IV-2. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido.",
+      "clasificacion": {
+        "A1": [
+          "A1-63"
+        ],
+        "A2": [
+          "A2-III-4",
+          "A2-IV-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 de bases de datos: transacciones, administración y recuperación en SGBD. Se enlaza el contenido con temas A1/A2 de SGBD y transacciones; las equivalencias REDO/UNDO se acreditan con documentación oficial de IBM/Oracle.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 29 de bases de datos: transacciones, administración y recuperación en SGBD. Se enlaza el contenido con temas A1/A2 de SGBD y transacciones; las equivalencias REDO/UNDO se acreditan con documentación oficial de IBM/Oracle. Temas oficiales asociados: A1-63/A2-III-4/A2-IV-2. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido."
+      },
+      "etiquetas": [
+        "recuperación de transacciones",
+        "UNDO",
+        "REDO",
+        "rollback",
+        "rollforward",
+        "SGBD"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/db2/11.5.x?topic=cr-database-accessibility-during-backward-phase-crash-recovery-hadr-takeover",
+            "referencia": "IBM Db2 11.5, recuperación ante caída: reproduce cambios de transacciones desde los logs (forward/redo) y revierte las transacciones no confirmadas (backward/undo)."
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/database-concepts.pdf",
+            "referencia": "Oracle Database Concepts 26, recuperación de instancia: aplica redo para avanzar/reaplicar cambios y undo para revertir cambios no confirmados."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 63: sistemas de gestión de bases de datos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, temas III.4 (concurrencia/transacciones y resolución de conflictos) y IV.2 (administración de SGBD); el epígrafe se usa como encaje, no como cita literal de UNDO/REDO."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 29 de bases de datos: transacciones, administración y recuperación en SGBD. Se enlaza el contenido con temas A1/A2 de SGBD y transacciones; las equivalencias REDO/UNDO se acreditan con documentación oficial de IBM/Oracle."
+          }
+        ],
+        "observaciones": "Corregida, respuesta D. Se aclara que la recuperación del SGBD combina avance/reaplicación (forward recovery, REDO) con retroceso/deshacer (backward recovery, UNDO); durante la recuperación tras una caída se reaplican cambios registrados y se revierten los de transacciones no confirmadas. El original usaba «hacia delante y hacia atrás» sin explicar los conceptos. A1-63/A2-III.4 y IV.2. Cotejo curricular ITIC Academy: ITIC Academy, bloque 29 de bases de datos: transacciones, administración y recuperación en SGBD. Se enlaza el contenido con temas A1/A2 de SGBD y transacciones; las equivalencias REDO/UNDO se acreditan con documentación oficial de IBM/Oracle. Temas oficiales asociados: A1-63/A2-III-4/A2-IV-2. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido."
+      }
     },
     {
       "id": 5765,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué es el spyware?",
+      "texto": "Según la definición de NIST/CNSSI, ¿qué caracteriza al spyware?",
       "opciones": [
-        "SW de alto secreto usado por los servicios de inteligencia de cada país",
-        "SW que diversas compañías introducen en tu ordenador cuando te descargas algo de internet, para ver tus programas y tus usos y sacar estudios de mercado",
-        "Es otro nombre de las conocidas cookies",
-        "La denominación es errónea, no se refiere a nada"
+        "Es software de alto secreto utilizado exclusivamente por servicios de inteligencia estatales.",
+        "Software instalado secreta o subrepticiamente para recopilar información sobre personas u organizaciones sin su conocimiento; se considera un tipo de código malicioso.",
+        "Es otro nombre para las cookies, que siempre constituyen software malicioso.",
+        "Es una denominación incorrecta que no se refiere a ningún tipo de software."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida, respuesta B. Se sustituye la definición estrecha y no generalizable del original (software de compañías añadido a descargas para estudios de mercado) por una definición precisa: el spyware se instala subrepticiamente para recopilar información sin conocimiento de las personas u organizaciones afectadas. No es sinónimo de cookie. A1-127/A2-II.13. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», §§ 2.2 (código dañino/malware) y 12 (seguridad en el puesto): encaje de spyware. La definición se contrasta con el glosario NIST/CNSSI. Temas oficiales asociados: A1-125/A1-127/A2-II-13. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido.",
+      "clasificacion": {
+        "A1": [
+          "A1-125",
+          "A1-127"
+        ],
+        "A2": [
+          "A2-II-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», §§ 2.2 (código dañino/malware) y 12 (seguridad en el puesto): encaje de spyware. La definición se contrasta con el glosario NIST/CNSSI.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», §§ 2.2 (código dañino/malware) y 12 (seguridad en el puesto): encaje de spyware. La definición se contrasta con el glosario NIST/CNSSI. Temas oficiales asociados: A1-125/A1-127/A2-II-13. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido."
+      },
+      "etiquetas": [
+        "spyware",
+        "software espía",
+        "malware",
+        "privacidad",
+        "NIST"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/spyware",
+            "referencia": "NIST CSRC Glossary, definición citada de CNSSI 4009-2022 y NIST SP 800-128: software instalado secreta o subrepticiamente para recopilar información sobre personas u organizaciones sin su conocimiento; tipo de código malicioso."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 127: ciberseguridad y amenazas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.13: seguridad física y lógica y herramientas de ciberseguridad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», §§ 2.2 (código dañino/malware) y 12 (seguridad en el puesto): encaje de spyware. La definición se contrasta con el glosario NIST/CNSSI."
+          }
+        ],
+        "observaciones": "Corregida, respuesta B. Se sustituye la definición estrecha y no generalizable del original (software de compañías añadido a descargas para estudios de mercado) por una definición precisa: el spyware se instala subrepticiamente para recopilar información sin conocimiento de las personas u organizaciones afectadas. No es sinónimo de cookie. A1-127/A2-II.13. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», §§ 2.2 (código dañino/malware) y 12 (seguridad en el puesto): encaje de spyware. La definición se contrasta con el glosario NIST/CNSSI. Temas oficiales asociados: A1-125/A1-127/A2-II-13. La academia orienta la cobertura; las fuentes normativas/técnicas citadas acreditan el contenido."
+      }
     },
     {
       "id": 5766,
