@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 12 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1057 (IDs 5606–5610); también se resolvió el pendiente histórico ID 77. Acumulado: 5.605 preguntas examinadas individualmente; 5.506 verificadas (984 vigentes, 4.107 corregidas y 415 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.518 sin revisar individualmente. Hay 5.585 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1058 (IDs 5611–5615); también se resolvió el pendiente histórico ID 77. Acumulado: 5.610 preguntas examinadas individualmente; 5.511 verificadas (984 vigentes, 4.112 corregidas y 415 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.513 sin revisar individualmente. Hay 5.590 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
 
 ## Pendiente anterior resuelto — ID 77 (12 de noviembre de 2026)
 
@@ -43,6 +43,20 @@ Ejecutados `node revision/revisar-lote-1051.cjs`, `node revision/academia-lote-1
 ## Lote 1053 — 12 de noviembre de 2026
 
 ## Lote 1054 — 12 de noviembre de 2026
+
+## Lote 1058 — 12 de noviembre de 2026
+
+IDs 5611–5615 revisados individualmente. Se corrigió la expansión/definición de LINQ; se restringió JSP al procesamiento de páginas en servidor para no confundirlo con JavaScript; se separaron Java y JavaScript; se acotó la pregunta sobre C a soporte OO nativo, evitando negar que se puedan emular patrones OO; y se corrigió la ubicación autonómica histórica de mEDUXa, con fuentes regionales oficiales.
+
+- **5611 — LINQ:** **corregida**, respuesta A. Significa Language Integrated Query; integra capacidades de consulta en C# y otros lenguajes .NET. A1-66/A2-III.11.
+- **5612 — páginas JSP:** **corregida**, respuesta C. JSP/Jakarta Server Pages se procesa en el servidor y se apoya en servlets; la pregunta ya no sugiere que JavaScript solo pueda ejecutarse en el cliente ni que Applets sean tecnología moderna de referencia. A1-67/A2-III.10/III.12.
+- **5613 — Java frente a JavaScript:** **corregida**, respuesta A. JavaScript es el lenguaje basado en el estándar ECMAScript; JavaBeans, Servlets y JSP son tecnologías de la plataforma Java/Jakarta EE. A1-67/A2-II.3/III.10.
+- **5614 — soporte OO nativo:** **corregida**, respuesta B (C). El enunciado pide soporte nativo de clases, herencia y despacho de métodos; no afirma que patrones orientados a objetos sean imposibles de implementar en C. Ada dispone de tipos etiquetados y Smalltalk es OO. A1-67/A2-II.3.
+- **5615 — distribuciones educativas autonómicas:** **corregida**, respuesta D. En la tabla histórica, mEDUXa corresponde a Canarias, no a Illes Balears; LliureX corresponde a la Comunitat Valenciana, MAX a Madrid y Linkat a Cataluña. La pregunta queda contextualizada como histórica y no como estado actual de versiones. A1-69/A2-II.14.
+
+Fuentes primarias/técnicas: [Microsoft Learn, LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/?view=net-7.0); [Jakarta Server Pages, guía de Jakarta EE](https://jakarta.ee/learn/specification-guides/servlet-faces-and-server-pages-explained/); [Ecma International, ECMA-262 2026](https://ecma-international.org/publications-and-standards/standards/ecma-262/); [borrador de comité ISO/IEC 9899:2011 (C11)](https://www.cs.hunter.cuny.edu/~sweiss/resources/c11standard.pdf) y [Ada 2022 / ISO/IEC 8652:2023](https://www.adaic.org/ada-resources/standards/ada22/); [Gobierno de Canarias, mEDUXa](https://www3.gobiernodecanarias.org/educacion/cau_ce/servicios/catalogo/distribucion-linux-meduxa), [INTEF/CEDEC, Linux y educación](https://descargas.intef.es/cedec/proyectoedia/guias/contenidos/guiasoftwarelibre/linux_y_educacin.html), [Linkat/XTEC](https://projectes.xtec.cat/linkat/el-projecte/) y [MAX/Comunidad de Madrid](https://www.comunidad.madrid/educacion/max). Programas oficiales: [A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo curricular con [ITIC Academy Tecnologías de Sistemas de Información 2026](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk) (Java/Jakarta EE, .NET y lenguajes) y [Adquisición de Sistemas 2026](https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk) (§ 5.2–5.3, software libre y licencias). El documento de academia se emplea para confirmar cobertura y clasificación; la atribución de distribuciones se comprueba con las administraciones territoriales e INTEF.
+
+Ejecutados `node revision/revisar-lote-1058.cjs`, `node revision/academia-lote-1058.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 5.610 revisiones individuales, 99 pendientes explícitas y 6.513 preguntas por revisar individualmente; cero errores estructurales.
 
 ## Lote 1057 — 12 de noviembre de 2026
 
