@@ -1,0 +1,456 @@
+{
+  "fecha": "2026-11-12",
+  "alcance": "IDs 5296–5300; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 5296,
+      "original": {
+        "id": 5296,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Comparando las cabeceras IPv4 e IPV6:",
+        "opciones": [
+          "En IPv6 se mantiene el campo de checksum",
+          "En IPv6 aparece nuevo el campo de versión",
+          "El campo 'tiempo de vida' de IPv4 se transforma en el campo 'límite de saltos' de IPv6",
+          "En IPv6 se sigue conservando como en IPv4 el campo de 'etiqueta de flujo'"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5296,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Comparando las cabeceras IPv4 e IPv6, ¿qué afirmación es correcta?",
+        "opciones": [
+          "En IPv6 se mantiene el campo de checksum",
+          "En IPv6 aparece nuevo el campo de versión",
+          "El campo TTL de IPv4 tiene como equivalente funcional el campo Hop Limit de IPv6, que se decrementa en cada nodo que reenvía el paquete.",
+          "En IPv6 se sigue conservando como en IPv4 el campo de 'etiqueta de flujo'"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C es la única correcta. En IPv6, Hop Limit ocupa el papel funcional del TTL de IPv4 y se decrementa en cada nodo que reenvía el paquete. IPv6 conserva un campo Version (valor 6), elimina el checksum de cabecera IPv4 y añade Flow Label, que no existía en la cabecera IPv4 básica. Se sustituye la expresión imprecisa «se transforma» por equivalencia funcional.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-IV-10",
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, redes IP/IPv6, actualización de IPv4 y nuevas funcionalidades.",
+          "estado": "revisada",
+          "nota": "Cotejo con A1-115 y temas A2-IV.10/IV.13. La equivalencia exacta entre TTL y Hop Limit se fija por RFC 8200."
+        },
+        "etiquetas": [
+          "IPv4",
+          "IPv6",
+          "cabecera IP",
+          "Hop Limit",
+          "TTL",
+          "Flow Label"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+              "referencia": "IETF RFC 8200, IPv6 Specification, §3: define la cabecera IPv6, el campo Hop Limit, el campo Flow Label y el comportamiento del límite de saltos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: redes IP, transición y convivencia IPv4/IPv6 y funcionalidades de IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, temas IV.10 (WAN/encaminamiento) e IV.13 (arquitectura y servicios de Internet)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, secciones de IPv6 y redes IP; cotejo curricular."
+            }
+          ],
+          "observaciones": "La respuesta C es la única correcta. En IPv6, Hop Limit ocupa el papel funcional del TTL de IPv4 y se decrementa en cada nodo que reenvía el paquete. IPv6 conserva un campo Version (valor 6), elimina el checksum de cabecera IPv4 y añade Flow Label, que no existía en la cabecera IPv4 básica. Se sustituye la expresión imprecisa «se transforma» por equivalencia funcional."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con ITIC Academy en Drive y los programas oficiales A1/A2 de 2025.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, redes IP/IPv6, actualización de IPv4 y nuevas funcionalidades.",
+            "nota": "Cotejo con A1-115 y temas A2-IV.10/IV.13. La equivalencia exacta entre TTL y Hop Limit se fija por RFC 8200."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5297,
+      "original": {
+        "id": 5297,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El sistema soportará redes y direcciones IPv4 e IPv6. Indique cuál de las siguientes direcciones IPv6 NO estaría permitida:",
+        "opciones": [
+          "1080::8:800:200C:741A",
+          "::FFFF:129.144.52.38",
+          "2055::1530::AB15",
+          "FA25:BA98:8888:1020:0123:45CD:AB55:001A"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5297,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la notación textual de IPv6 de RFC 4291, ¿cuál de estas direcciones no es válida?",
+        "opciones": [
+          "1080::8:800:200C:741A",
+          "::FFFF:129.144.52.38",
+          "2055::1530::AB15",
+          "FA25:BA98:8888:1020:0123:45CD:AB55:001A"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C es inválida porque una dirección IPv6 solo puede usar «::» una vez para comprimir una secuencia de grupos cero; dos apariciones impedirían determinar cuántos grupos comprime cada una. Las otras formas son válidas: abreviación de ceros iniciales, una dirección IPv4 incrustada en los 32 bits finales (IPv4-mapped) y ocho grupos hexadecimales completos.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, direccionamiento IPv6.",
+          "estado": "revisada",
+          "nota": "Se coteja el contenido de IPv6 del bloque; la validez de compresión :: y de direcciones IPv4-mapped se contrasta con RFC 4291."
+        },
+        "etiquetas": [
+          "IPv6",
+          "notación textual",
+          "compresión de ceros",
+          "dirección IPv4 mapeada"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+              "referencia": "IETF RFC 4291, IPv6 Addressing Architecture, §2.2: permite omitir ceros iniciales, admite notación IPv4 incrustada en los 32 bits finales y limita a una aparición el marcador «::»."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: direcciones y funcionalidades de IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.13: arquitectura y principios de funcionamiento de Internet."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, IPv6 y redes IP; cotejo curricular."
+            }
+          ],
+          "observaciones": "La respuesta C es inválida porque una dirección IPv6 solo puede usar «::» una vez para comprimir una secuencia de grupos cero; dos apariciones impedirían determinar cuántos grupos comprime cada una. Las otras formas son válidas: abreviación de ceros iniciales, una dirección IPv4 incrustada en los 32 bits finales (IPv4-mapped) y ocho grupos hexadecimales completos."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con ITIC Academy en Drive y los programas oficiales A1/A2 de 2025.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, direccionamiento IPv6.",
+            "nota": "Se coteja el contenido de IPv6 del bloque; la validez de compresión :: y de direcciones IPv4-mapped se contrasta con RFC 4291."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5298,
+      "original": {
+        "id": 5298,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un Gatekeeper es un elemento típicamente utilizado en:",
+        "opciones": [
+          "Virtualización",
+          "Sistemas de videoconferencia",
+          "Sistemas de control del malware",
+          "Sistemas de copia de seguridad"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5298,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la arquitectura de comunicaciones multimedia ITU-T H.323, ¿qué función cumple típicamente un gatekeeper?",
+        "opciones": [
+          "Virtualización",
+          "Sistemas de videoconferencia",
+          "Sistemas de control del malware",
+          "Sistemas de copia de seguridad"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La opción B es correcta, pero el reactivo se concreta a H.323: un gatekeeper es un componente lógico opcional de esa arquitectura de comunicaciones multimedia y presta, entre otros, servicios de traducción de direcciones, admisión y control de ancho de banda. No es un servidor de virtualización, antimalware ni copias de seguridad.",
+        "clasificacion": {
+          "A1": [
+            "A1-130"
+          ],
+          "A2": [
+            "A2-IV-16"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 50 «Videoconferencia, SSO y trabajo colaborativo», edición 2026.1, §1.3 H.32x/H.323.",
+          "estado": "revisada",
+          "nota": "Cotejo con A1-130/A2-IV.16; la función del gatekeeper se verifica con ITU-T H.323."
+        },
+        "etiquetas": [
+          "H.323",
+          "gatekeeper",
+          "videoconferencia",
+          "admisión de llamadas",
+          "direcciones de transporte"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/T-REC-H.323",
+              "referencia": "ITU-T Recommendation H.323, §8.1: el gatekeeper es un componente opcional del sistema H.323; entre sus servicios figuran traducción de alias a direcciones de transporte y control de admisión/ancho de banda."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 130: sistemas y protocolos de videoconferencia."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.16: sistemas de videoconferencia y protocolos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 50 «Videoconferencia, SSO y trabajo colaborativo», edición 2026.1, §1.3: familia H.32x/H.323 y componentes de su arquitectura."
+            }
+          ],
+          "observaciones": "La opción B es correcta, pero el reactivo se concreta a H.323: un gatekeeper es un componente lógico opcional de esa arquitectura de comunicaciones multimedia y presta, entre otros, servicios de traducción de direcciones, admisión y control de ancho de banda. No es un servidor de virtualización, antimalware ni copias de seguridad."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con ITIC Academy en Drive y los programas oficiales A1/A2 de 2025.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 50 «Videoconferencia, SSO y trabajo colaborativo», edición 2026.1, §1.3 H.32x/H.323.",
+            "nota": "Cotejo con A1-130/A2-IV.16; la función del gatekeeper se verifica con ITU-T H.323."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5299,
+      "original": {
+        "id": 5299,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué protocolo de comunicaciones de los siguientes NO está relacionado con el Internet de las cosas o “Internet of Things”?:",
+        "opciones": [
+          "MQTT.",
+          "HTTP.",
+          "CoAP.",
+          "FDDI."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5299,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de estas opciones identifica una tecnología histórica de LAN de fibra, y no un protocolo de aplicación utilizado para intercambiar datos con dispositivos IoT?",
+        "opciones": [
+          "MQTT, mensajería publish/subscribe ligera.",
+          "HTTP, protocolo de transferencia de la Web.",
+          "CoAP, protocolo web para nodos restringidos.",
+          "FDDI, tecnología de LAN por anillo de testigo y fibra óptica."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se reformula para evitar que «relacionado con IoT» sugiera que HTTP solo se utiliza —o fue diseñado— para IoT. MQTT y CoAP son protocolos de aplicación/mensajería utilizados en ese ámbito, y HTTP también puede ser utilizado por dispositivos conectados. FDDI es una tecnología histórica de LAN por anillo de testigo/fibra (ISO 9314), de otra capa y función; por tanto, es la única opción que no es protocolo de aplicación para intercambio IoT.",
+        "clasificacion": {
+          "A1": [
+            "A1-107",
+            "A1-117"
+          ],
+          "A2": [
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, Internet/IoT; el bloque distingue redes LAN y protocolos de aplicación.",
+          "estado": "revisada",
+          "nota": "Cotejo con A1-107/A1-117/A2-IV.13. La pregunta diferencia las capas y funciones de IoT y FDDI mediante OASIS, IETF e ISO."
+        },
+        "etiquetas": [
+          "IoT",
+          "MQTT",
+          "HTTP",
+          "CoAP",
+          "FDDI",
+          "protocolos de aplicación",
+          "red LAN histórica"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.oasis-open.org/standard/mqtt-v5-0/",
+              "referencia": "OASIS MQTT Version 5.0: protocolo ligero de mensajería publish/subscribe diseñado también para escenarios M2M e IoT con nodos restringidos."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc7252.html",
+              "referencia": "IETF RFC 7252, The Constrained Application Protocol: protocolo de transferencia web especializado para nodos y redes restringidos."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+              "referencia": "IETF RFC 9110, HTTP Semantics: especificación del protocolo web HTTP, utilizable por aplicaciones y dispositivos conectados; no se afirma que sea exclusivo de IoT."
+            },
+            {
+              "url": "https://www.iso.org/standard/16973.html",
+              "referencia": "ISO 9314-1:1989, FDDI: especifica el protocolo físico de una tecnología de red token-ring de fibra a 100 Mbit/s, no un protocolo de aplicación IoT."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, temas 107 (tecnologías emergentes) y 117 (IoT)."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.13: servicios de Internet e Internet de las Cosas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026.1: Internet de las Cosas y servicios de Internet."
+            }
+          ],
+          "observaciones": "Se reformula para evitar que «relacionado con IoT» sugiera que HTTP solo se utiliza —o fue diseñado— para IoT. MQTT y CoAP son protocolos de aplicación/mensajería utilizados en ese ámbito, y HTTP también puede ser utilizado por dispositivos conectados. FDDI es una tecnología histórica de LAN por anillo de testigo/fibra (ISO 9314), de otra capa y función; por tanto, es la única opción que no es protocolo de aplicación para intercambio IoT."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con ITIC Academy en Drive y los programas oficiales A1/A2 de 2025.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, Internet/IoT; el bloque distingue redes LAN y protocolos de aplicación.",
+            "nota": "Cotejo con A1-107/A1-117/A2-IV.13. La pregunta diferencia las capas y funciones de IoT y FDDI mediante OASIS, IETF e ISO."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5300,
+      "original": {
+        "id": 5300,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un sistema de gestión de red, la base de datos MIB (Management Information Base):",
+        "opciones": [
+          "Identifica el elemento de administración central de la red.",
+          "Especifica los elementos y la parte de los datos que un nodo debe conservar, así como las operaciones que se permiten sobre cada uno de ellos.",
+          "Establece la conexión entre el nodo administrado y la estación administradora central.",
+          "Es una Unidad de Datos del Protocolo (6 PDU) de gestión de red."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5300,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la arquitectura de gestión de red SNMP, ¿qué describe una Management Information Base (MIB)?",
+        "opciones": [
+          "El gestor o estación central que inicia consultas a los dispositivos administrados.",
+          "La colección virtual y estructurada de objetos gestionados y sus definiciones, accesibles mediante identificadores OID.",
+          "El agente SNMP que ejecuta en cada dispositivo y responde a las consultas del gestor.",
+          "Una PDU de SNMP que transporta una solicitud o respuesta entre entidades."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La respuesta B es la correcta una vez acotada. Una MIB es una colección virtual y estructurada de definiciones/instancias de objetos gestionados, identificados en SNMP mediante OID; no es el gestor central, el agente ni una PDU. La MIB no prescribe que cada nodo mantenga una copia física completa de todos los objetos ni define por sí sola las operaciones SNMP.",
+        "clasificacion": {
+          "A1": [
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-9"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, gestión de redes y SNMP.",
+          "estado": "revisada",
+          "nota": "Cotejo con A1-118/A2-IV.9; RFC 3411 define MIB como almacén virtual de objetos y separa gestores, entidades SNMP y PDUs."
+        },
+        "etiquetas": [
+          "SNMP",
+          "MIB",
+          "objetos gestionados",
+          "OID",
+          "gestión de redes"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3411.html",
+              "referencia": "IETF RFC 3411, SNMP Management Framework, §2.10: define la MIB como almacén virtual de información que contiene una colección de objetos gestionados; los módulos MIB describen colecciones relacionadas."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3418.html",
+              "referencia": "IETF RFC 3418, Management Information Base for SNMP: especifica objetos gestionados de SNMP y su acceso mediante el almacén virtual MIB."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 118: administración LAN, monitorización y gestión SNMP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.9: administración de redes locales y gestión SNMP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, gestión SNMP y monitorización de redes; cotejo curricular."
+            }
+          ],
+          "observaciones": "La respuesta B es la correcta una vez acotada. Una MIB es una colección virtual y estructurada de definiciones/instancias de objetos gestionados, identificados en SNMP mediante OID; no es el gestor central, el agente ni una PDU. La MIB no prescribe que cada nodo mantenga una copia física completa de todos los objetos ni define por sí sola las operaciones SNMP."
+        }
+      },
+      "correcciones_posteriores": [
+        {
+          "fecha": "2026-11-12",
+          "motivo": "Cotejo curricular individual con ITIC Academy en Drive y los programas oficiales A1/A2 de 2025.",
+          "clasificacion_anterior": {
+            "bloque_academia": null,
+            "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+          },
+          "clasificacion_actualizada": {
+            "bloque_academia": "ITIC Academy, bloque 42 «Redes», edición 2026.1, gestión de redes y SNMP.",
+            "nota": "Cotejo con A1-118/A2-IV.9; RFC 3411 define MIB como almacén virtual de objetos y separa gestores, entidades SNMP y PDUs."
+          }
+        }
+      ]
+    }
+  ]
+}
