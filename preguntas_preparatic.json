@@ -288070,21 +288070,67 @@
       "id": 5576,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Es compatible el servicio ADSL y el servicio RDSI sobre el mismo par de cobre?",
+      "texto": "Según UIT-T G.992.1, ¿puede coexistir ADSL en el mismo par de cobre con la RDSI definida en G.961, apéndices I o II?",
       "opciones": [
-        "Sí",
-        "No",
-        "Sólo si no se ofrece también el servicio RTC",
-        "Sólo si el cliente no tiene una centralita PBX"
+        "Sí, usando bandas separadas mediante filtrado.",
+        "No; ADSL y RDSI siempre requieren pares distintos.",
+        "Solo si se elimina cualquier servicio de voz, incluso cuando utiliza otra banda.",
+        "Solo si el abonado no dispone de centralita PBX."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva Sí con alcance normativo expreso: G.992.1 permite coexistencia en el mismo par de cobre con la RDSI definida en G.961, apéndices I o II, separando bandas mediante filtrado. No se generaliza a cualquier modalidad RDSI: el apéndice III corresponde a coexistencia de ADSL/voz con RDSI en un par adyacente. Se elimina así el sí/no sin condiciones del original. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, sección de tecnologías de acceso de abonado/DSL y ADSL; A1-108/A2-IV-7/IV-10. Temas oficiales asociados: A1-108/A2-IV-7/A2-IV-10. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7",
+          "A2-IV-10"
+        ],
+        "bloque_academia": "bloque 42 Redes, sección de tecnologías de acceso de abonado/DSL y ADSL; A1-108/A2-IV-7/IV-10.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, sección de tecnologías de acceso de abonado/DSL y ADSL; A1-108/A2-IV-7/IV-10. Temas oficiales asociados: A1-108/A2-IV-7/A2-IV-10. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión."
+      },
+      "etiquetas": [
+        "ADSL",
+        "RDSI",
+        "ISDN",
+        "par de cobre",
+        "DSL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.992.1/en",
+            "referencia": "UIT-T G.992.1 (ADSL), ficha oficial: contempla ADSL en el mismo par con servicio vocal y, alternativamente, con RDSI G.961 apéndices I o II; la recomendación figura en vigor."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.992.1-199907-I%21%21PDF-E&lang=e&type=items",
+            "referencia": "UIT-T G.992.1, § 1 (Scope): especifica que ADSL y RDSI G.961 apéndices I/II pueden coexistir en el mismo par, con bandas separadas por filtrado; el caso del apéndice III sitúa RDSI en un par adyacente."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 108: medios de transmisión e infraestructuras de acceso."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, temas IV.7 y IV.10: medios guiados y redes de área extensa/tecnologías de acceso."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 42 Redes, sección de tecnologías de acceso de abonado/DSL y ADSL; A1-108/A2-IV-7/IV-10."
+          }
+        ],
+        "observaciones": "Se conserva Sí con alcance normativo expreso: G.992.1 permite coexistencia en el mismo par de cobre con la RDSI definida en G.961, apéndices I o II, separando bandas mediante filtrado. No se generaliza a cualquier modalidad RDSI: el apéndice III corresponde a coexistencia de ADSL/voz con RDSI en un par adyacente. Se elimina así el sí/no sin condiciones del original. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, sección de tecnologías de acceso de abonado/DSL y ADSL; A1-108/A2-IV-7/IV-10. Temas oficiales asociados: A1-108/A2-IV-7/A2-IV-10. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión."
+      }
     },
     {
       "id": 5577,
       "bloque": 0,
       "tema": 0,
-      "texto": "Teniendo una red IP con máscara 255.255.240.0 ¿cuántos puestos se pueden direccionar?",
+      "texto": "En una subred IPv4 convencional con máscara 255.255.240.0 (/20), ¿cuántas direcciones de host unicast utilizables hay, excluyendo la dirección de red y la de broadcast?",
       "opciones": [
         "240",
         "512",
@@ -288092,48 +288138,253 @@
         "4094"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se especifica IPv4 y “direcciones de host unicast utilizables en una subred convencional”, para excluir interpretaciones de asignación de puestos que dependan de reservas o del uso especial de /31. La máscara equivale a /20: 12 bits de host, 4096 direcciones totales y 4094 utilizables al excluir identificador de red y broadcast. Se conserva D. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, direccionamiento IPv4, máscaras y prefijos; A1-108/A2-IV-8. Temas oficiales asociados: A1-108/A2-IV-8. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "bloque 42 Redes, direccionamiento IPv4, máscaras y prefijos; A1-108/A2-IV-8.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, direccionamiento IPv4, máscaras y prefijos; A1-108/A2-IV-8. Temas oficiales asociados: A1-108/A2-IV-8. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión."
+      },
+      "etiquetas": [
+        "IPv4",
+        "máscara de subred",
+        "/20",
+        "hosts utilizables"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1878.html",
+            "referencia": "RFC 1878, tabla 2-1: máscara 255.255.240.0 equivale a /20 y proporciona 4094 direcciones de host efectivas en una subred convencional."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+            "referencia": "RFC 4632, Classless Inter-domain Routing (CIDR): prefijos CIDR y división entre prefijo de red y bits restantes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 108: protocolos de red y direccionamiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.8: redes, protocolos y técnicas de transmisión."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 42 Redes, direccionamiento IPv4, máscaras y prefijos; A1-108/A2-IV-8."
+          }
+        ],
+        "observaciones": "Se especifica IPv4 y “direcciones de host unicast utilizables en una subred convencional”, para excluir interpretaciones de asignación de puestos que dependan de reservas o del uso especial de /31. La máscara equivale a /20: 12 bits de host, 4096 direcciones totales y 4094 utilizables al excluir identificador de red y broadcast. Se conserva D. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, direccionamiento IPv4, máscaras y prefijos; A1-108/A2-IV-8. Temas oficiales asociados: A1-108/A2-IV-8. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión."
+      }
     },
     {
       "id": 5578,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuál de los siguientes NO se considera un protocolo de VoIP:",
+      "texto": "¿Cuál es un sistema tradicional de señalización telefónica de la red conmutada y no un protocolo nativo de VoIP?",
       "opciones": [
-        "SIP",
-        "SS7",
-        "H.225 señalización de llamada",
-        "H.225 RAS"
+        "SIP.",
+        "SS7.",
+        "H.225.0, señalización de llamada de H.323.",
+        "H.225.0 RAS (registro, admisión y estado) de H.323."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene SS7 como respuesta, pero se precisa la categoría: SS7 es el sistema de señalización tradicional de redes telefónicas conmutadas y no un protocolo nativo de VoIP. H.225.0 sí forma parte de H.323: señalización de llamada y RAS (registro, admisión y estado). SS7 puede interfuncionar con VoIP mediante pasarelas, por lo que “no se considera un protocolo de VoIP” queda delimitado como función/protocolo nativo, no como incompatibilidad absoluta. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, protocolos y redes IP, complementado por el bloque 50 (Videoconferencia), § 1.3 familia H.32x/H.323 y señalización; A1-108/A1-109/A1-130/A2-IV-8/IV-13/IV-14/IV-16. Temas oficiales asociados: A1-108/A1-109/A1-130/A2-IV-8/A2-IV-13/A2-IV-14/A2-IV-16. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-109",
+          "A1-130"
+        ],
+        "A2": [
+          "A2-IV-8",
+          "A2-IV-13",
+          "A2-IV-14",
+          "A2-IV-16"
+        ],
+        "bloque_academia": "bloque 42 Redes, protocolos y redes IP, complementado por el bloque 50 (Videoconferencia), § 1.3 familia H.32x/H.323 y señalización; A1-108/A1-109/A1-130/A2-IV-8/IV-13/IV-14/IV-16.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, protocolos y redes IP, complementado por el bloque 50 (Videoconferencia), § 1.3 familia H.32x/H.323 y señalización; A1-108/A1-109/A1-130/A2-IV-8/IV-13/IV-14/IV-16. Temas oficiales asociados: A1-108/A1-109/A1-130/A2-IV-8/A2-IV-13/A2-IV-14/A2-IV-16. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión."
+      },
+      "etiquetas": [
+        "VoIP",
+        "H.323",
+        "H.225.0",
+        "RAS",
+        "SS7"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-H.225.0/en",
+            "referencia": "UIT-T H.225.0 (03/2022), en vigor: señalización de llamada y paquetización de medios en sistemas multimedia basados en paquetes; incluye el marco de señalización H.323."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-H.323/en",
+            "referencia": "UIT-T H.323, sistemas de comunicación multimedia basados en paquetes: arquitectura/protocolos de la familia H.323; H.225.0 define señalización de llamada y RAS (registro, admisión y estado)."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-Q.700",
+            "referencia": "UIT-T Q.700 (03/1993), en vigor: introduce el Sistema de Señalización n.º 7 (SS7) y sus partes funcionales para redes de señalización telefónica; no es un protocolo nativo de VoIP, aunque existan pasarelas de interfuncionamiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, temas 108–109: protocolos, interconexión y servicios de Internet."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, temas IV.8 y IV.13: protocolos de red y arquitectura/servicios de Internet."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 42 Redes, protocolos y redes IP, complementado por el bloque 50 (Videoconferencia), § 1.3 familia H.32x/H.323 y señalización; A1-108/A1-109/A1-130/A2-IV-8/IV-13/IV-14/IV-16."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 50 Videoconferencia, § 1.3 H.32x/H.323 y códecs vocales: bloque 42 Redes, protocolos y redes IP, complementado por el bloque 50 (Videoconferencia), § 1.3 familia H.32x/H.323 y señalización; A1-108/A1-109/A1-130/A2-IV-8/IV-13/IV-14/IV-16."
+          }
+        ],
+        "observaciones": "Se mantiene SS7 como respuesta, pero se precisa la categoría: SS7 es el sistema de señalización tradicional de redes telefónicas conmutadas y no un protocolo nativo de VoIP. H.225.0 sí forma parte de H.323: señalización de llamada y RAS (registro, admisión y estado). SS7 puede interfuncionar con VoIP mediante pasarelas, por lo que “no se considera un protocolo de VoIP” queda delimitado como función/protocolo nativo, no como incompatibilidad absoluta. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, protocolos y redes IP, complementado por el bloque 50 (Videoconferencia), § 1.3 familia H.32x/H.323 y señalización; A1-108/A1-109/A1-130/A2-IV-8/IV-13/IV-14/IV-16. Temas oficiales asociados: A1-108/A1-109/A1-130/A2-IV-8/A2-IV-13/A2-IV-14/A2-IV-16. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión."
+      }
     },
     {
       "id": 5579,
       "bloque": 0,
       "tema": 0,
-      "texto": "El teorema de Nyquist establece que:",
+      "texto": "Para un canal ideal limitado en banda, sin ruido ni interferencia entre símbolos, ¿qué establece el criterio de tasa de Nyquist para un ancho de banda B?",
       "opciones": [
-        "El número máximo de baudios que puede transmitirse por un canal no puede ser superior al doble de su ancho de banda.",
-        "La relación señal a ruido presente en el medio de transmisión no puede ser superior al doble de su ancho de banda.",
-        "La eficiencia espectral es la relación entre la velocidad de transmisión y el número máximo de baudios que pueden transmitirse.",
-        "Ninguna de las anteriores."
+        "La tasa máxima de símbolos es 2B baudios (símbolos por segundo).",
+        "La relación señal/ruido máxima es 2B.",
+        "La capacidad binaria es siempre 2B bit/s, con independencia de la modulación.",
+        "La tasa máxima de muestreo de una señal es siempre B muestras/s."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva A, pero se explicita la condición física que el original omitía: en un canal ideal limitado en banda, sin ruido ni interferencia entre símbolos, la tasa máxima de símbolos (baudios) es 2B por segundo para ancho de banda B en hercios. No es por sí sola una fórmula de capacidad binaria ni el teorema de muestreo; con M niveles el caudal depende de log₂(M), y con ruido se aplica el límite de Shannon. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, ancho de banda y parámetros de transmisión digital; A1-108/A2-IV-7. Temas oficiales asociados: A1-108/A2-IV-7. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "bloque 42 Redes, ancho de banda y parámetros de transmisión digital; A1-108/A2-IV-7.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, ancho de banda y parámetros de transmisión digital; A1-108/A2-IV-7. Temas oficiales asociados: A1-108/A2-IV-7. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión."
+      },
+      "etiquetas": [
+        "Nyquist",
+        "baudios",
+        "tasa de símbolos",
+        "ancho de banda",
+        "ISI"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1109/T-AIEE.1928.5055024",
+            "referencia": "Nyquist, H. (1928), “Certain Topics in Telegraph Transmission Theory”, Transactions of the AIEE 47(2), DOI 10.1109/T-AIEE.1928.5055024: fundamento histórico de la tasa límite de señalización en canales limitados en banda."
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/GOVPUB-C-PURL-gpo13207/pdf/GOVPUB-C-PURL-gpo13207.pdf",
+            "referencia": "U.S. Government technical handbook, § 2.3: para un filtro ideal de ancho B y sin interferencia entre símbolos, la tasa máxima de Nyquist es 2B símbolos/s; distingue baud de bit/s y de la capacidad de Shannon en presencia de ruido."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 108: medios de transmisión y redes de telecomunicaciones."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.7: medios de transmisión y parámetros significativos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 42 Redes, ancho de banda y parámetros de transmisión digital; A1-108/A2-IV-7."
+          }
+        ],
+        "observaciones": "Se conserva A, pero se explicita la condición física que el original omitía: en un canal ideal limitado en banda, sin ruido ni interferencia entre símbolos, la tasa máxima de símbolos (baudios) es 2B por segundo para ancho de banda B en hercios. No es por sí sola una fórmula de capacidad binaria ni el teorema de muestreo; con M niveles el caudal depende de log₂(M), y con ruido se aplica el límite de Shannon. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, ancho de banda y parámetros de transmisión digital; A1-108/A2-IV-7. Temas oficiales asociados: A1-108/A2-IV-7. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión."
+      }
     },
     {
       "id": 5580,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los codecs G.711, G.726 o G.729 están relacionados con:",
+      "texto": "¿Qué tipo de señal codifican las recomendaciones ITU-T G.711, G.726 y G.729?",
       "opciones": [
-        "La calidad de las imágenes JPG.",
-        "La transmisión de voz en telefonía IP.",
-        "La transmisión de streaming de vídeo."
+        "Imágenes fijas JPEG.",
+        "Señales vocales o de habla, usadas también en telefonía IP.",
+        "Vídeo comprimido para streaming."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se conserva B. G.711, G.726 y G.729 son recomendaciones ITU-T para codificar señales vocales/habla, utilizadas entre otras aplicaciones en telefonía IP; no son por sí mismos protocolos de transporte VoIP ni formatos de imagen o vídeo. Se precisa esta distinción porque la pregunta original preguntaba por su uso y podía confundirse codec con protocolo. Cotejo curricular de ITIC Academy 2026: bloque 50 (Videoconferencia), § 1.3 H.323 y códecs de audio (G.711 obligatorio en el perfil H.323 descrito) y tabla comparativa de códecs vocales G.726/G.729; A1-130/A2-IV-16. Contexto de red/VoIP en el bloque 42; A1-108/A1-109/A2-IV-8/IV-13/IV-14. Temas oficiales asociados: A1-108/A1-109/A1-130/A2-IV-8/A2-IV-13/A2-IV-14/A2-IV-16. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-109",
+          "A1-130"
+        ],
+        "A2": [
+          "A2-IV-8",
+          "A2-IV-13",
+          "A2-IV-14",
+          "A2-IV-16"
+        ],
+        "bloque_academia": "bloque 50 (Videoconferencia), § 1.3 H.323 y códecs de audio (G.711 obligatorio en el perfil H.323 descrito) y tabla comparativa de códecs vocales G.726/G.729; A1-130/A2-IV-16. Contexto de red/VoIP en el bloque 42; A1-108/A1-109/A2-IV-8/IV-13/IV-14.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy 2026: bloque 50 (Videoconferencia), § 1.3 H.323 y códecs de audio (G.711 obligatorio en el perfil H.323 descrito) y tabla comparativa de códecs vocales G.726/G.729; A1-130/A2-IV-16. Contexto de red/VoIP en el bloque 42; A1-108/A1-109/A2-IV-8/IV-13/IV-14. Temas oficiales asociados: A1-108/A1-109/A1-130/A2-IV-8/A2-IV-13/A2-IV-14/A2-IV-16. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión."
+      },
+      "etiquetas": [
+        "G.711",
+        "G.726",
+        "G.729",
+        "códecs de voz",
+        "telefonía IP"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.711/en",
+            "referencia": "UIT-T G.711, en vigor: modulación por impulsos codificados (PCM) de frecuencias vocales."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.726/en",
+            "referencia": "UIT-T G.726, en vigor: ADPCM a 40, 32, 24 y 16 kbit/s; codificación de voz."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.729/en",
+            "referencia": "UIT-T G.729 (06/2012), en vigor: codificación de habla a 8 kbit/s mediante CS-ACELP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, temas 108–109: redes de telecomunicaciones y servicios de voz sobre IP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, temas IV.8 y IV.13: protocolos de red y servicios de Internet."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 50 (Videoconferencia), § 1.3 H.323 y códecs de audio (G.711 obligatorio en el perfil H.323 descrito) y tabla comparativa de códecs vocales G.726/G.729; A1-130/A2-IV-16. Contexto de red/VoIP en el bloque 42; A1-108/A1-109/A2-IV-8/IV-13/IV-14."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 50 Videoconferencia, § 1.3 H.32x/H.323 y códecs vocales: bloque 50 (Videoconferencia), § 1.3 H.323 y códecs de audio (G.711 obligatorio en el perfil H.323 descrito) y tabla comparativa de códecs vocales G.726/G.729; A1-130/A2-IV-16. Contexto de red/VoIP en el bloque 42; A1-108/A1-109/A2-IV-8/IV-13/IV-14."
+          }
+        ],
+        "observaciones": "Se conserva B. G.711, G.726 y G.729 son recomendaciones ITU-T para codificar señales vocales/habla, utilizadas entre otras aplicaciones en telefonía IP; no son por sí mismos protocolos de transporte VoIP ni formatos de imagen o vídeo. Se precisa esta distinción porque la pregunta original preguntaba por su uso y podía confundirse codec con protocolo. Cotejo curricular de ITIC Academy 2026: bloque 50 (Videoconferencia), § 1.3 H.323 y códecs de audio (G.711 obligatorio en el perfil H.323 descrito) y tabla comparativa de códecs vocales G.726/G.729; A1-130/A2-IV-16. Contexto de red/VoIP en el bloque 42; A1-108/A1-109/A2-IV-8/IV-13/IV-14. Temas oficiales asociados: A1-108/A1-109/A1-130/A2-IV-8/A2-IV-13/A2-IV-14/A2-IV-16. La academia se emplea para ubicar cobertura y vocabulario del temario; la verificación de compatibilidad, direccionamiento, señalización y codificación se apoya en UIT-T, RFC y bibliografía técnica citada en esta revisión."
+      }
     },
     {
       "id": 5581,
