@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 12 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1048 (IDs 5561–5565); también se resolvió el pendiente histórico ID 77. Acumulado: 5.560 preguntas examinadas individualmente; 5.461 verificadas (982 vigentes, 4.066 corregidas y 413 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.563 sin revisar individualmente. Hay 5.535 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1049 (IDs 5566–5570); también se resolvió el pendiente histórico ID 77. Acumulado: 5.565 preguntas examinadas individualmente; 5.466 verificadas (982 vigentes, 4.071 corregidas y 413 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.558 sin revisar individualmente. Hay 5.540 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
 
 ## Pendiente anterior resuelto — ID 77 (12 de noviembre de 2026)
 
@@ -9,6 +9,20 @@ La consulta de la publicación primaria de 15-09-2015 permite cerrar el pendient
 ## Lote 1046 — 12 de noviembre de 2026
 
 ## Lote 1047 — 12 de noviembre de 2026
+
+## Lote 1049 — 12 de noviembre de 2026
+
+IDs 5566–5570 revisados individualmente. Se precisaron los cinco dominios de COBIT 2019; se eliminó una sigla indefinida y se distinguió análisis de riesgos de su gestión; se reformularon dos preguntas de BGP para especificar el encaminamiento entre sistemas autónomos y el papel del IXP; y se corrigió la afirmación invertida sobre los filtros CWDM.
+
+- **5566 — dominios de COBIT 2019:** **corregida**, respuesta A. Los dominios son EDM (gobierno) y APO, BAI, DSS y MEA (gestión); “Planificar, Implementar y Verificar” no pertenece al modelo central. A1-106; sin tema A2 directo.
+- **5567 — análisis de riesgos:** **corregida**, respuesta C, ahora denominada “análisis o evaluación de riesgos”. NIST SP 800-30 relaciona la evaluación con amenazas, vulnerabilidades, probabilidad e impacto; el análisis es parte de la gestión del riesgo. Se elimina “ADA”, que no estaba definido y no se pudo identificar con rigor. A1-106/A2-II.10.
+- **5568 — encaminamiento inter-AS:** **corregida por precisión**, respuesta C (BGP). RFC 4271 lo define como protocolo de encaminamiento entre sistemas autónomos. A1-108/A2-IV.13.
+- **5569 — IXP y peering:** **corregida por precisión**, respuesta D (BGP-4/eBGP). Un IXP facilita el intercambio de rutas entre AS, habitualmente mediante sesiones eBGP; el IXP no es el protocolo. A1-108/A2-IV.8/IV.13.
+- **5570 — CWDM y DWDM:** **corregida**, respuesta C. UIT-T G.694.2 define CWDM con espaciamiento nominal de 20 nm y filtros de banda ancha; por ello es falsa la afirmación de que necesita filtros muy estrechos por tener canales adyacentes próximos. A1-108/A2-IV.7.
+
+Fuentes técnicas primarias: [ISACA, COBIT 2019 y dominios de gobierno/gestión](https://www.isaca.org/resources/news-and-trends/industry-news/2019/employing-cobit-2019-for-enterprise-governance-strategy); [NIST SP 800-30 Rev. 1, evaluación de riesgos](https://csrc.nist.gov/pubs/sp/800/30/r1/final); [RFC 4271, BGP-4](https://www.rfc-editor.org/rfc/rfc4271.html); [UIT-T G.694.2, estado en vigor](https://www.itu.int/rec/T-REC-G.694.2), [texto G.694.2](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.694.2-200312-I%21%21PDF-E&lang=e&type=items), [UIT-T G.Suppl.42, justificación de rejilla CWDM de 20 nm](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.Sup42-201810-I%21%21PDF-E&lang=f&type=items) y [UIT-T G.694.1, rejillas DWDM](https://www.itu.int/rec/T-REC-G.694.1-202010-I). Programas: [A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo directo en Drive: [bloque 41, ITIL y COBIT 2026.1](https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk), apartados de riesgos y dominios COBIT; [bloque 42, Redes 2026](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), secciones 6.3 BGP/AS/peering/IXP y 7.4 WDM. Los materiales académicos orientan el cotejo curricular, no sustituyen las fuentes técnicas primarias.
+
+Ejecutados `node revision/revisar-lote-1049.cjs`, `node revision/academia-lote-1049.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 5.565 revisiones individuales, 99 pendientes explícitas y 6.558 preguntas por revisar individualmente; cero errores estructurales.
 
 ## Lote 1048 — 12 de noviembre de 2026
 
