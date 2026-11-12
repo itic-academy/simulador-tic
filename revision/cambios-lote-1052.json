@@ -1,0 +1,393 @@
+{
+  "fecha": "2026-11-12",
+  "alcance": "IDs 5581–5585; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 5581,
+      "original": {
+        "id": 5581,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique la respuesta correcta sobre conmutación de paquetes:",
+        "opciones": [
+          "la transmisión es por ráfagas",
+          "la ruta origen->destino puede ser variable",
+          "no hay ningún circuito físico dedicado en la comunicación",
+          "todas las anteriores son características de la conmutación de paquetes"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5581,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la conmutación de paquetes en modo datagrama IP, ¿qué afirmación es correcta?",
+        "opciones": [
+          "La red reserva para cada comunicación un circuito lógico y todos los paquetes siguen necesariamente la misma ruta.",
+          "Cada datagrama se encamina de forma independiente; las rutas pueden diferir y no se reserva un circuito físico extremo a extremo.",
+          "Los paquetes se entregan siempre en orden y sin posibilidad de pérdida.",
+          "Cada comunicación necesita un enlace físico exclusivo entre origen y destino."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se mantiene D únicamente al delimitar la pregunta al modo datagrama de IP. En él, los datos se envían en unidades separadas que comparten los enlaces; cada datagrama se encamina de forma independiente y no se reserva un circuito físico extremo a extremo, por lo que la ruta puede diferir. No se presenta como universal para toda red de paquetes: los circuitos virtuales pueden mantener una ruta lógica estable. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 1.3 y figura comparativa: distingue conmutación de circuitos y paquetes, el modo datagrama y el circuito virtual; A1-108/A2-IV-8. Temas oficiales asociados: A1-108/A2-IV-8. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta.",
+        "clasificacion": {
+          "A1": [
+            "A1-108"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "bloque 42 Redes, § 1.3 y figura comparativa: distingue conmutación de circuitos y paquetes, el modo datagrama y el circuito virtual; A1-108/A2-IV-8.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 1.3 y figura comparativa: distingue conmutación de circuitos y paquetes, el modo datagrama y el circuito virtual; A1-108/A2-IV-8. Temas oficiales asociados: A1-108/A2-IV-8. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta."
+        },
+        "etiquetas": [
+          "conmutación de paquetes",
+          "datagrama",
+          "IP",
+          "multiplexación estadística",
+          "circuito dedicado"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+              "referencia": "RFC 791, §§ 1.1, 2.3 y 2.4: IP se emplea sobre redes conmutadas por paquetes; los datagramas son entidades independientes, no conexiones/circuitos lógicos, y los gateways los encaminan entre redes."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+              "referencia": "RFC 1122, requisitos para hosts de Internet: documenta la naturaleza datagrama/no orientada a conexión de IP; se formula el enunciado en ese contexto, no como una afirmación sobre todo modo de conmutación de paquetes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 108: conmutación de circuitos y paquetes, encaminamiento e interconexión."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.8: redes locales, protocolos y técnicas de transmisión."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy 2026, bloque 42 Redes, § 1.3 y figura comparativa: distingue conmutación de circuitos y paquetes, el modo datagrama y el circuito virtual; A1-108/A2-IV-8."
+            }
+          ],
+          "observaciones": "Se mantiene D únicamente al delimitar la pregunta al modo datagrama de IP. En él, los datos se envían en unidades separadas que comparten los enlaces; cada datagrama se encamina de forma independiente y no se reserva un circuito físico extremo a extremo, por lo que la ruta puede diferir. No se presenta como universal para toda red de paquetes: los circuitos virtuales pueden mantener una ruta lógica estable. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 1.3 y figura comparativa: distingue conmutación de circuitos y paquetes, el modo datagrama y el circuito virtual; A1-108/A2-IV-8. Temas oficiales asociados: A1-108/A2-IV-8. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta."
+        }
+      }
+    },
+    {
+      "id": 5582,
+      "original": {
+        "id": 5582,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Tamaño destinado en una trama básica Ethernet (IEEE 802.3-2012) para el payload:",
+        "opciones": [
+          "Tiene un mínimo de 64 Bytes hasta un máximo de 1500 Bytes.",
+          "Tiene un mínimo de 16 Bytes hasta un máximo de 1000 Bytes.",
+          "Tiene un mínimo de 46 Bytes hasta un máximo de 1500 Bytes.",
+          "Tiene un mínimo de 32 Bytes hasta un máximo de 1000 Bytes."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5582,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una trama Ethernet estándar sin etiqueta VLAN, ¿qué tamaño puede tener el campo MAC de datos (incluido el relleno cuando sea necesario)?",
+        "opciones": [
+          "De 64 a 1500 octetos.",
+          "De 16 a 1000 octetos.",
+          "De 46 a 1500 octetos.",
+          "De 32 a 1000 octetos."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se conserva C y se elimina la referencia a la edición supersedida IEEE 802.3-2012. Se precisa que se pregunta por el campo de datos MAC de una trama Ethernet estándar sin etiqueta VLAN: mínimo 46 octetos (incluido el relleno cuando se necesita) y máximo 1500. No se confunde tamaño de la trama completa —mínimo habitual 64 octetos desde destino hasta FCS— con el payload. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 4.3 Ethernet (IEEE 802.3), dentro del temario de LAN y medios; A1-110/A1-118/A2-IV-8. Temas oficiales asociados: A1-110/A1-118/A2-IV-8. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta.",
+        "clasificacion": {
+          "A1": [
+            "A1-110",
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "bloque 42 Redes, § 4.3 Ethernet (IEEE 802.3), dentro del temario de LAN y medios; A1-110/A1-118/A2-IV-8.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 4.3 Ethernet (IEEE 802.3), dentro del temario de LAN y medios; A1-110/A1-118/A2-IV-8. Temas oficiales asociados: A1-110/A1-118/A2-IV-8. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta."
+        },
+        "etiquetas": [
+          "Ethernet",
+          "IEEE 802.3",
+          "campo de datos",
+          "payload",
+          "padding"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc894.html",
+              "referencia": "RFC 894, estándar de encapsulado IP sobre Ethernet, § Frame Format: campo de datos Ethernet mínimo de 46 octetos, con padding si hace falta, y máximo de 1500 octetos."
+            },
+            {
+              "url": "https://standards.ieee.org/ieee/802.3/5084/",
+              "referencia": "IEEE 802.3, estándar Ethernet y estado de la edición: se reemplaza la referencia caducada 802.3-2012 por la definición general de campo MAC de una trama Ethernet estándar sin etiqueta VLAN."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, temas 110 y 118: equipos de interconexión, LAN, medios y protocolos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.8: redes locales, protocolos y técnicas de transmisión."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy 2026, bloque 42 Redes, § 4.3 Ethernet (IEEE 802.3), dentro del temario de LAN y medios; A1-110/A1-118/A2-IV-8."
+            }
+          ],
+          "observaciones": "Se conserva C y se elimina la referencia a la edición supersedida IEEE 802.3-2012. Se precisa que se pregunta por el campo de datos MAC de una trama Ethernet estándar sin etiqueta VLAN: mínimo 46 octetos (incluido el relleno cuando se necesita) y máximo 1500. No se confunde tamaño de la trama completa —mínimo habitual 64 octetos desde destino hasta FCS— con el payload. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 4.3 Ethernet (IEEE 802.3), dentro del temario de LAN y medios; A1-110/A1-118/A2-IV-8. Temas oficiales asociados: A1-110/A1-118/A2-IV-8. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta."
+        }
+      }
+    },
+    {
+      "id": 5583,
+      "original": {
+        "id": 5583,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un agente SNMP envía traps a un sistema administrador de red a través del puerto:",
+        "opciones": [
+          "162",
+          "126",
+          "161",
+          "25"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5583,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el mapeo convencional de SNMP sobre UDP/IP, ¿a qué puerto UDP se envían las notificaciones trap para su recepción por el gestor?",
+        "opciones": [
+          "162",
+          "126",
+          "161",
+          "25"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se concreta el transporte al mapeo convencional SNMP sobre UDP/IP. Las notificaciones trap/inform se reciben por UDP 162; UDP 161 se utiliza habitualmente para las operaciones dirigidas al command responder/agente. SNMP admite otros mapeos, así que no se afirma que 162 sea universal en todos los transportes. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 5.3 SNMP, dentro de administración, monitorización y gestión de dispositivos; A1-118/A2-IV-8. Temas oficiales asociados: A1-118/A2-IV-8. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta.",
+        "clasificacion": {
+          "A1": [
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "bloque 42 Redes, § 5.3 SNMP, dentro de administración, monitorización y gestión de dispositivos; A1-118/A2-IV-8.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 5.3 SNMP, dentro de administración, monitorización y gestión de dispositivos; A1-118/A2-IV-8. Temas oficiales asociados: A1-118/A2-IV-8. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta."
+        },
+        "etiquetas": [
+          "SNMP",
+          "trap",
+          "notificación",
+          "UDP",
+          "puerto 162"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3417.html",
+              "referencia": "RFC 3417, STD 62, § 3.2 “Well-known Values”: para el mapeo SNMP sobre UDP/IP, recomienda que las entidades receptoras de notificaciones escuchen en UDP 162; command responders escuchan en UDP 161."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc5590.html",
+              "referencia": "RFC 5590, subsistema de transporte SNMP: confirma que SNMP admite subsistemas/mapeos de transporte; por ello se especifica UDP, sin presentar 162 como puerto universal para todo transporte."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 118: administración, monitorización y gestión SNMP de redes locales."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.8: protocolos, administración y seguridad de redes."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy 2026, bloque 42 Redes, § 5.3 SNMP, dentro de administración, monitorización y gestión de dispositivos; A1-118/A2-IV-8."
+            }
+          ],
+          "observaciones": "Se concreta el transporte al mapeo convencional SNMP sobre UDP/IP. Las notificaciones trap/inform se reciben por UDP 162; UDP 161 se utiliza habitualmente para las operaciones dirigidas al command responder/agente. SNMP admite otros mapeos, así que no se afirma que 162 sea universal en todos los transportes. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 5.3 SNMP, dentro de administración, monitorización y gestión de dispositivos; A1-118/A2-IV-8. Temas oficiales asociados: A1-118/A2-IV-8. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta."
+        }
+      }
+    },
+    {
+      "id": 5584,
+      "original": {
+        "id": 5584,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué número de lambdas es el más estándar para las tecnologías ópticas CWDM y DWDM respectivamente?",
+        "opciones": [
+          "18 y 40.",
+          "20 y 40.",
+          "18 y 45.",
+          "20 y 50."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5584,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación describe correctamente las rejillas ópticas CWDM y DWDM definidas por UIT-T G.694.2 y G.694.1?",
+        "opciones": [
+          "CWDM usa una rejilla de 18 longitudes nominales separadas 20 nm; DWDM usa rejillas de frecuencia con varios espaciados y no tiene un número universal fijo de canales.",
+          "CWDM está fijada en 20 longitudes y DWDM en exactamente 40 canales por la UIT-T.",
+          "CWDM usa 18 canales y DWDM está limitado normativamente a 45 canales.",
+          "CWDM usa 20 canales y DWDM está limitado normativamente a 50 canales."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se rehace la pregunta porque “número más estándar” no tiene respuesta normativa universal para DWDM. G.694.2 fija la rejilla CWDM de 20 nm (18 longitudes nominales de 1271 a 1611 nm). G.694.1 fija rejillas DWDM en frecuencia con varios espaciados/granularidades, de modo que el número instalable depende de banda, espaciado y equipo; 40 es una configuración común de ciertos sistemas, no un requisito fijo de la UIT-T. La opción correcta pasa a A. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 7.4 WDM: el texto caracteriza CWDM con 18 canales y contrasta la mayor densidad de DWDM; no afirma que la UIT-T fije 40 canales DWDM. Se contrasta con rejillas UIT-T G.694.1/G.694.2; A1-113/A2-IV-10. Temas oficiales asociados: A1-113/A2-IV-10. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta.",
+        "clasificacion": {
+          "A1": [
+            "A1-113"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "bloque 42 Redes, § 7.4 WDM: el texto caracteriza CWDM con 18 canales y contrasta la mayor densidad de DWDM; no afirma que la UIT-T fije 40 canales DWDM. Se contrasta con rejillas UIT-T G.694.1/G.694.2; A1-113/A2-IV-10.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 7.4 WDM: el texto caracteriza CWDM con 18 canales y contrasta la mayor densidad de DWDM; no afirma que la UIT-T fije 40 canales DWDM. Se contrasta con rejillas UIT-T G.694.1/G.694.2; A1-113/A2-IV-10. Temas oficiales asociados: A1-113/A2-IV-10. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta."
+        },
+        "etiquetas": [
+          "CWDM",
+          "DWDM",
+          "ITU-T G.694.1",
+          "ITU-T G.694.2",
+          "rejilla óptica",
+          "longitudes de onda"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/T-REC-G.694.2/en",
+              "referencia": "UIT-T G.694.2, recomendación vigente: rejilla CWDM con separación nominal de 20 nm; sus 18 valores van de 1271 a 1611 nm en pasos de 20 nm."
+            },
+            {
+              "url": "https://www.itu.int/rec/T-REC-G.694.1/en",
+              "referencia": "UIT-T G.694.1, recomendación vigente: rejillas DWDM fija y flexible definidas en frecuencia, con varios espaciados/granularidades; no prescribe un número universal de canales (por ejemplo, 40) para todo sistema."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 113: redes de transporte JDSxWDM y redes de agregación."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.10: redes WAN y tecnologías WDM/MPLS."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy 2026, bloque 42 Redes, § 7.4 WDM: el texto caracteriza CWDM con 18 canales y contrasta la mayor densidad de DWDM; no afirma que la UIT-T fije 40 canales DWDM. Se contrasta con rejillas UIT-T G.694.1/G.694.2; A1-113/A2-IV-10."
+            }
+          ],
+          "observaciones": "Se rehace la pregunta porque “número más estándar” no tiene respuesta normativa universal para DWDM. G.694.2 fija la rejilla CWDM de 20 nm (18 longitudes nominales de 1271 a 1611 nm). G.694.1 fija rejillas DWDM en frecuencia con varios espaciados/granularidades, de modo que el número instalable depende de banda, espaciado y equipo; 40 es una configuración común de ciertos sistemas, no un requisito fijo de la UIT-T. La opción correcta pasa a A. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 7.4 WDM: el texto caracteriza CWDM con 18 canales y contrasta la mayor densidad de DWDM; no afirma que la UIT-T fije 40 canales DWDM. Se contrasta con rejillas UIT-T G.694.1/G.694.2; A1-113/A2-IV-10. Temas oficiales asociados: A1-113/A2-IV-10. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta."
+        }
+      }
+    },
+    {
+      "id": 5585,
+      "original": {
+        "id": 5585,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La red de conexión rápida inaugurada por la Unión Europea en 2005 para atender la interconexión de investigadores europeos se denomina:",
+        "opciones": [
+          "TEIN2",
+          "GEANT2",
+          "ALICE",
+          "DANTE"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5585,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el informe anual de DANTE de 2005, ¿cómo se denominó la generación de la red paneuropea de investigación y educación cuyo lanzamiento se produjo ese año?",
+        "opciones": [
+          "TEIN2",
+          "GÉANT2",
+          "ALICE",
+          "DANTE"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se mantiene B, GÉANT2, y se reescribe como pregunta histórica verificable: DANTE registra el lanzamiento en 2005 de esa generación de la red paneuropea de investigación y educación. Se elimina la imprecisa atribución de la inauguración a la Unión Europea; hubo participación de la Comisión, pero DANTE construyó/gestionó la red con las NREN. Se etiqueta histórica para no confundir GÉANT2 con el proyecto/red actual GÉANT (iteración GN5-2). La academia cubre redes públicas, pero no cita explícitamente este nombre. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 8.1 redes públicas de transmisión de datos: encaje curricular general. El documento consultado no cita explícitamente GÉANT2; la identificación y fecha se verifican con el informe primario de DANTE y fuente pública contemporánea; A1-108/A1-120/A2-IV-10. Temas oficiales asociados: A1-108/A1-120/A2-IV-10. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-120"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "bloque 42 Redes, § 8.1 redes públicas de transmisión de datos: encaje curricular general. El documento consultado no cita explícitamente GÉANT2; la identificación y fecha se verifican con el informe primario de DANTE y fuente pública contemporánea; A1-108/A1-120/A2-IV-10.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 8.1 redes públicas de transmisión de datos: encaje curricular general. El documento consultado no cita explícitamente GÉANT2; la identificación y fecha se verifican con el informe primario de DANTE y fuente pública contemporánea; A1-108/A1-120/A2-IV-10. Temas oficiales asociados: A1-108/A1-120/A2-IV-10. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta."
+        },
+        "etiquetas": [
+          "GÉANT2",
+          "DANTE",
+          "red europea de investigación",
+          "redes académicas",
+          "historia de Internet"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.dante.archive.geant.org/Documents/an_06_low.pdf",
+              "referencia": "DANTE Annual Review 2005, “DANTE Highlights 2005” y sección GÉANT2: informa del lanzamiento de GÉANT2 en 2005 y su interconexión de redes europeas de investigación/educación."
+            },
+            {
+              "url": "https://news.belgium.be/fr/le-reseau-de-recherche-paneuropeen-un-et-plus-dun-demi-million-de-belges-lutilisent-deja",
+              "referencia": "Servicio público federal de Bélgica, 29-06-2006: confirma que GÉANT2 fue lanzado en junio de 2005 y conectaba redes nacionales europeas de investigación y enseñanza."
+            },
+            {
+              "url": "https://connect.geant.org/2024/12/10/geant-gn5-2-project-set-to-start-on-1-january-2025",
+              "referencia": "GÉANT, anuncio oficial del proyecto GN5-2 (2025): documenta la fase actual del proyecto GÉANT; distingue la red histórica GÉANT2 de la infraestructura/iteración presente."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, temas 108 y 120: interconexión de redes y redes públicas de transmisión de datos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.10: redes de área extensa."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy 2026, bloque 42 Redes, § 8.1 redes públicas de transmisión de datos: encaje curricular general. El documento consultado no cita explícitamente GÉANT2; la identificación y fecha se verifican con el informe primario de DANTE y fuente pública contemporánea; A1-108/A1-120/A2-IV-10."
+            }
+          ],
+          "observaciones": "Se mantiene B, GÉANT2, y se reescribe como pregunta histórica verificable: DANTE registra el lanzamiento en 2005 de esa generación de la red paneuropea de investigación y educación. Se elimina la imprecisa atribución de la inauguración a la Unión Europea; hubo participación de la Comisión, pero DANTE construyó/gestionó la red con las NREN. Se etiqueta histórica para no confundir GÉANT2 con el proyecto/red actual GÉANT (iteración GN5-2). La academia cubre redes públicas, pero no cita explícitamente este nombre. Cotejo curricular de ITIC Academy 2026: bloque 42 Redes, § 8.1 redes públicas de transmisión de datos: encaje curricular general. El documento consultado no cita explícitamente GÉANT2; la identificación y fecha se verifican con el informe primario de DANTE y fuente pública contemporánea; A1-108/A1-120/A2-IV-10. Temas oficiales asociados: A1-108/A1-120/A2-IV-10. Se usa el temario para cobertura y clasificación; la verificación de los datos procede de RFC/IETF, IEEE, UIT-T y registros oficiales/históricos citados en cada pregunta."
+        }
+      }
+    }
+  ]
+}
