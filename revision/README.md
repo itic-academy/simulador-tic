@@ -16,7 +16,7 @@ Fuentes primarias y técnicas: [Estrategia Nacional de Ciberseguridad 2019, BOE-
 
 Se corrigió la clasificación del lote 1035 conforme al Anexo IX del programa A2 de BOE-A-2025-26262: la pregunta 5497 se asigna a A2-III.1 (modelado de datos), la 5498 a A2-III.7 (aplicaciones web multiplataforma/multidispositivo) y la 5500 a A2-IV.8 (redes locales); se retiraron A2-III.4, A2-III.12 y A2-II.8 que no correspondían. Se conserva el detalle auditable de estas reclasificaciones en `revision/cambios-lote-1035.json`.
 
-Ejecutados `node revision/revisar-lote-1036.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 5.500 revisiones individuales, 99 pendientes explícitas y 6.623 preguntas aún sin revisar individualmente. Una vigente y cuatro corregidas en el lote; las cinco conservan original, evidencia, explicación y clasificación curricular. La validación estructural no acredita revisión del contenido restante.
+Ejecutados `node revision/revisar-lote-1036.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 5.500 revisiones individuales, 99 pendientes explícitas y 6.623 preguntas aún sin revisar individualmente. Las cinco quedaron corregidas; todas conservan original, evidencia, explicación y clasificación curricular. La validación estructural no acredita revisión del contenido restante.
 
 ## Lote 1035 — 12 de noviembre de 2026
 
