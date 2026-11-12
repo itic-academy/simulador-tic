@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 12 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1056 (IDs 5601–5605); también se resolvió el pendiente histórico ID 77. Acumulado: 5.600 preguntas examinadas individualmente; 5.501 verificadas (984 vigentes, 4.102 corregidas y 415 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.523 sin revisar individualmente. Hay 5.580 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1057 (IDs 5606–5610); también se resolvió el pendiente histórico ID 77. Acumulado: 5.605 preguntas examinadas individualmente; 5.506 verificadas (984 vigentes, 4.107 corregidas y 415 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.518 sin revisar individualmente. Hay 5.585 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
 
 ## Pendiente anterior resuelto — ID 77 (12 de noviembre de 2026)
 
@@ -43,6 +43,20 @@ Ejecutados `node revision/revisar-lote-1051.cjs`, `node revision/academia-lote-1
 ## Lote 1053 — 12 de noviembre de 2026
 
 ## Lote 1054 — 12 de noviembre de 2026
+
+## Lote 1057 — 12 de noviembre de 2026
+
+IDs 5606–5610 revisados individualmente. Se separaron funciones típicas del DBA de la arquitectura de balanceo de aplicaciones; se verificaron las cuatro propiedades ACID; se distinguió independencia física de lógica en ANSI/SPARC; se completó la descomposición a 2FN ante una dependencia parcial; y se eligió DataSet para varias tablas relacionadas en memoria ADO.NET.
+
+- **5606 — funciones de DBA:** **corregida**, respuesta A. La administración de la base puede incluir distribución y almacenamiento de sus datos, carga masiva, rendimiento y permisos. El balanceo de carga de una granja de aplicaciones es responsabilidad de arquitectura/operación de aplicaciones e infraestructura; un DBA colabora, pero no es la función propia preguntada. La división concreta del trabajo depende del tamaño de la organización. A1-34/A2-II.5.
+- **5607 — propiedades ACID:** **corregida**, respuesta C. Atomicidad, consistencia, aislamiento y durabilidad son las propiedades de transacción. Se evita confundirlas con autenticación/confidencialidad/integridad/disponibilidad, objetivos de seguridad. A1-63/A2-II.5.
+- **5608 — independencia en ANSI/SPARC:** **corregida**, respuesta A. Cambiar el esquema interno sin modificar conceptual ni externos es independencia física; independencia lógica se refiere a proteger los externos frente a cambios del conceptual. A1-63/A2-II.5.
+- **5609 — normalización a 2FN:** **corregida**, respuesta B. La dependencia parcial B→D respecto de la clave candidata compuesta (A,B) viola 2FN, por lo que se separa R2(B,D) y queda R1(A,B,C). La intersección B determina R2, garantizando unión sin pérdida bajo las dependencias indicadas. A1-64/A2-III.4.
+- **5610 — tablas relacionadas en memoria .NET:** **corregida**, respuesta D (DataSet). DataSet contiene una colección de DataTable y puede vincularlas con DataRelation; DataTable es una tabla individual y DataView una vista de una tabla. A1-66/A2-III.11.
+
+Fuentes técnicas: [Oracle Database Concepts, deberes de DBA](https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/concepts-for-database-administrators.html); [glosario ACID de PostgreSQL](https://www.postgresql.org/docs/current/glossary.html); [NIST/NBS, Database Architectures](https://www.govinfo.gov/content/pkg/GOVPUB-C13-3cac9cb7d048b38f397af01be9ccd220/pdf/GOVPUB-C13-3cac9cb7d048b38f397af01be9ccd220.pdf) y [Connolly y Begg, arquitectura ANSI/SPARC](https://lmsspada.kemdiktisaintek.go.id/pluginfile.php/79424/mod_folder/content/0/Database-System-A-Practical-Approach-to-Design-Implementation-and-Management-by-T-Connoly-C-Begg.pdf?forcedownload=1); [OpenTextBC, normalización](https://opentextbc.ca/dbdesign01/chapter/chapter-12-normalization/) y [Cornell, 2FN](https://cvw.cornell.edu/RelationalDBs/design-create/second_normal_form); [Microsoft Learn, DataSets y DataTables](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/index) y [clase DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-6.0). Programas oficiales: [A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo curricular con [ITIC Academy Bases de Datos 2026](https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk) (ANSI/SPARC, modelo relacional, dependencias, normalización, transacciones y administración) y [Tecnologías de Sistemas de Información 2026](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk) (.NET); la academia confirma cobertura y organización del temario, mientras la documentación oficial/técnica citada respalda las respuestas.
+
+Ejecutados `node revision/revisar-lote-1057.cjs`, `node revision/academia-lote-1057.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 5.605 revisiones individuales, 99 pendientes explícitas y 6.518 preguntas por revisar individualmente; cero errores estructurales.
 
 ## Lote 1056 — 12 de noviembre de 2026
 
