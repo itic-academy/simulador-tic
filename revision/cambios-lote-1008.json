@@ -1,0 +1,378 @@
+{
+  "fecha": "2026-11-12",
+  "alcance": "IDs 5361–5365; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 5361,
+      "original": {
+        "id": 5361,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El tipo de formato de clase C de dirección IP se emplea mayoritariamente para:",
+        "opciones": [
+          "Las redes de área local",
+          "Grandes organizaciones públicas y multinacionales que poseen gran número de subredes",
+          "Mensajes de difusión múltiple (multicast)",
+          "Fines experimentales"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5361,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el direccionamiento IPv4 histórico por clases, ¿para qué tamaño de red era más adecuada una dirección de clase C?",
+        "opciones": [
+          "Para una red pequeña, con 24 bits de red y 8 bits de host (prefijo por defecto /24).",
+          "Para grandes organizaciones que requieren un número muy alto de subredes con una única clase C.",
+          "Para direccionamiento multicast.",
+          "Para usos experimentales y futuros."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La respuesta A es correcta solo en la perspectiva histórica: en el direccionamiento classful, clase C asignaba 24 bits de red y 8 de host (red por defecto /24), adecuada para redes pequeñas. El enunciado queda fechado como histórico, porque el enrutamiento moderno usa CIDR y no asigna direcciones por clase.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Protocolos 2026: IPv4/IPv6, TCP/IP, direccionamiento, encaminamiento, NGN/IMS, VoIP y calidad del servicio; cotejo curricular directo.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular realizado: ITIC Academy, bloque Protocolos 2026: IPv4/IPv6, TCP/IP, direccionamiento, encaminamiento, NGN/IMS, VoIP y calidad del servicio; cotejo curricular directo."
+        },
+        "etiquetas": [
+          "IPv4",
+          "direccionamiento por clases",
+          "clase C",
+          "CIDR"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc791",
+              "referencia": "RFC 791 describe el formato histórico class C: 21 bits de número de red y 8 bits locales (prefijo por defecto /24)."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4632",
+              "referencia": "RFC 4632, BCP 122: CIDR reemplaza la asignación y el encaminamiento classful; denomina /24 «legacy Class C» y considera obsoleta la planificación original por clases."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: arquitectura IP, encaminamiento y convivencia de IPv4/IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.8: TCP/IP, OSI, direccionamiento y encaminamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Protocolos 2026: IPv4, IPv6, redes IP, direccionamiento y encaminamiento; cotejo curricular directo."
+            }
+          ],
+          "observaciones": "La respuesta A es correcta solo en la perspectiva histórica: en el direccionamiento classful, clase C asignaba 24 bits de red y 8 de host (red por defecto /24), adecuada para redes pequeñas. El enunciado queda fechado como histórico, porque el enrutamiento moderno usa CIDR y no asigna direcciones por clase."
+        }
+      }
+    },
+    {
+      "id": 5362,
+      "original": {
+        "id": 5362,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto al protocolo IPv6, señale la afirmación INCORRECTA:",
+        "opciones": [
+          "Gracias al formato de su cabecera, los paquetes IPv6 son más simples que los transmitidos mediante IPv4.",
+          "IPv6 ofrece mayor soporte para extensiones y opciones en la cabecera de los paquetes.",
+          "IPv6 implementa direcciones tipo Unicast, Multicast, Anycast y Broadcast.",
+          "El protocolo IPv6 permite el envío de jumbogramas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5362,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto de IPv6, señale la afirmación INCORRECTA:",
+        "opciones": [
+          "La cabecera base tiene longitud fija de 40 octetos y elimina varios campos de IPv4, dejando funciones opcionales a encabezados de extensión.",
+          "IPv6 admite encabezados de extensión para añadir información opcional al paquete.",
+          "IPv6 define direcciones unicast, multicast, anycast y también direcciones broadcast.",
+          "IPv6 permite jumbogramas mediante la opción Jumbo Payload."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C es la incorrecta: IPv6 dispone de unicast, multicast y anycast, pero no de broadcast. La multidifusión sustituye las funciones que en IPv4 se resolvían con broadcast. Las cabeceras de extensión y los jumbogramas sí están normalizados.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Protocolos 2026: IPv4/IPv6, TCP/IP, direccionamiento, encaminamiento, NGN/IMS, VoIP y calidad del servicio; cotejo curricular directo.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular realizado: ITIC Academy, bloque Protocolos 2026: IPv4/IPv6, TCP/IP, direccionamiento, encaminamiento, NGN/IMS, VoIP y calidad del servicio; cotejo curricular directo."
+        },
+        "etiquetas": [
+          "IPv6",
+          "unicast",
+          "multicast",
+          "anycast",
+          "jumbogramas"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8200",
+              "referencia": "RFC 8200 especifica la cabecera base IPv6 fija de 40 octetos y los encabezados de extensión; el diseño separa y simplifica funciones respecto de IPv4."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4291",
+              "referencia": "RFC 4291 define los tipos unicast, anycast y multicast, y dice expresamente que IPv6 no tiene direcciones broadcast: su función se cubre con multicast."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc2675",
+              "referencia": "RFC 2675 define la opción Jumbo Payload para cargas IPv6 mayores de 65.535 octetos (jumbograms)."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: transición IPv4/IPv6 y funcionalidades específicas de IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.8: TCP/IP, direccionamiento y encaminamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Protocolos 2026, IPv4/IPv6 y funcionalidades específicas de IPv6; cotejo curricular directo."
+            }
+          ],
+          "observaciones": "La respuesta C es la incorrecta: IPv6 dispone de unicast, multicast y anycast, pero no de broadcast. La multidifusión sustituye las funciones que en IPv4 se resolvían con broadcast. Las cabeceras de extensión y los jumbogramas sí están normalizados."
+        }
+      }
+    },
+    {
+      "id": 5363,
+      "original": {
+        "id": 5363,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale cuál de las siguientes direcciones IP puede ser asignada a un host en la siguiente subred 132.26.41.90/26:",
+        "opciones": [
+          "132.26.41.128",
+          "132.26.41.127",
+          "132.26.41.124",
+          "132.26.41.55"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5363,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La dirección 132.26.41.90 pertenece a la subred 132.26.41.90/26. ¿Cuál de estas direcciones puede asignarse a otro host de esa misma subred?",
+        "opciones": [
+          "132.26.41.128",
+          "132.26.41.127",
+          "132.26.41.124",
+          "132.26.41.55"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C (132.26.41.124) es asignable a un host. La dirección 132.26.41.90 pertenece a la subred /26 con máscara 255.255.255.192, cuyo rango es .64–.127; .64 es la dirección de subred y .127 el broadcast, por lo que las direcciones de host son .65–.126. .128 inicia la subred siguiente y .55 queda fuera.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Protocolos 2026: IPv4/IPv6, TCP/IP, direccionamiento, encaminamiento, NGN/IMS, VoIP y calidad del servicio; cotejo curricular directo.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular realizado: ITIC Academy, bloque Protocolos 2026: IPv4/IPv6, TCP/IP, direccionamiento, encaminamiento, NGN/IMS, VoIP y calidad del servicio; cotejo curricular directo."
+        },
+        "etiquetas": [
+          "IPv4",
+          "CIDR",
+          "subred /26",
+          "dirección de host"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4632",
+              "referencia": "RFC 4632 describe la notación CIDR por longitud de prefijo y da el tamaño de bloque para /26: 64 direcciones."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1812",
+              "referencia": "RFC 1812, requisitos para routers IPv4, distingue las direcciones de red/subred y de broadcast dirigidas frente a direcciones de host en el reenvío."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: arquitectura de redes IP y encaminamiento."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II.8: direccionamiento y encaminamiento TCP/IP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Protocolos 2026, direccionamiento IPv4/CIDR y encaminamiento; cotejo curricular directo."
+            }
+          ],
+          "observaciones": "La respuesta C (132.26.41.124) es asignable a un host. La dirección 132.26.41.90 pertenece a la subred /26 con máscara 255.255.255.192, cuyo rango es .64–.127; .64 es la dirección de subred y .127 el broadcast, por lo que las direcciones de host son .65–.126. .128 inicia la subred siguiente y .55 queda fuera."
+        }
+      }
+    },
+    {
+      "id": 5364,
+      "original": {
+        "id": 5364,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Cuál de las siguientes especificaciones se utiliza para codificar audio en VoIP:",
+        "opciones": [
+          "G.705",
+          "G.708",
+          "G.729",
+          "G.768"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5364,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Cuál de las siguientes especificaciones se utiliza para codificar audio en VoIP:",
+        "opciones": [
+          "G.705",
+          "G.708",
+          "G.729",
+          "G.768"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C (G.729) es correcta: la recomendación ITU-T especifica un codificador de voz CS-ACELP de 8 kbit/s. Es un códec, no el único empleado en VoIP; G.705, G.708 y G.768 no son alternativas equivalentes de codificación de voz.",
+        "clasificacion": {
+          "A1": [
+            "A1-116"
+          ],
+          "A2": [
+            "A2-IV-14"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Protocolos 2026: IPv4/IPv6, TCP/IP, direccionamiento, encaminamiento, NGN/IMS, VoIP y calidad del servicio; cotejo curricular directo.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular realizado: ITIC Academy, bloque Protocolos 2026: IPv4/IPv6, TCP/IP, direccionamiento, encaminamiento, NGN/IMS, VoIP y calidad del servicio; cotejo curricular directo."
+        },
+        "etiquetas": [
+          "VoIP",
+          "G.729",
+          "CS-ACELP",
+          "códec de voz"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/t-rec-g.729",
+              "referencia": "ITU-T G.729, en vigor: codificación de voz a 8 kbit/s mediante CS-ACELP; la recomendación forma parte de los códecs de voz utilizados en sistemas de telefonía IP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 116: NGN/IMS, VoIP, ToIP y comunicaciones unificadas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.14: redes convergentes y VoIP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Protocolos 2026, NGN/IMS, VoIP y comunicaciones convergentes; cotejo curricular directo."
+            }
+          ],
+          "observaciones": "La respuesta C (G.729) es correcta: la recomendación ITU-T especifica un codificador de voz CS-ACELP de 8 kbit/s. Es un códec, no el único empleado en VoIP; G.705, G.708 y G.768 no son alternativas equivalentes de codificación de voz."
+        }
+      }
+    },
+    {
+      "id": 5365,
+      "original": {
+        "id": 5365,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El algoritmo PLC (Packet Loss Concealment):",
+        "opciones": [
+          "Lo utiliza Frame Relay para el reenvío de tramas pérdidas por la congestión en el sentido de la transmisión.",
+          "Algoritmo de ocultamiento de pérdida de paquetes utilizado por VoIP.",
+          "Utilizado por TCP para la retransmisión de paquetes después de una trama NACK (negative acknowledgement).",
+          "Algoritmo de descarte de paquetes en situación de congestión en redes Frame Relay."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5365,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En telefonía IP con audio paquetizado, ¿qué describe el algoritmo PLC (Packet Loss Concealment)?",
+        "opciones": [
+          "Lo utiliza Frame Relay para el reenvío de tramas pérdidas por la congestión en el sentido de la transmisión.",
+          "Algoritmo de ocultamiento de pérdida de paquetes utilizado por VoIP.",
+          "Utilizado por TCP para la retransmisión de paquetes después de una trama NACK (negative acknowledgement).",
+          "Algoritmo de descarte de paquetes en situación de congestión en redes Frame Relay."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La respuesta B es correcta: en telefonía IP, Packet Loss Concealment (PLC) intenta disimular la pérdida de paquetes de voz en la reproducción del receptor. No retransmite paquetes ni es una política de descarte de Frame Relay o un mecanismo de TCP.",
+        "clasificacion": {
+          "A1": [
+            "A1-116"
+          ],
+          "A2": [
+            "A2-IV-14"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Protocolos 2026: IPv4/IPv6, TCP/IP, direccionamiento, encaminamiento, NGN/IMS, VoIP y calidad del servicio; cotejo curricular directo.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular realizado: ITIC Academy, bloque Protocolos 2026: IPv4/IPv6, TCP/IP, direccionamiento, encaminamiento, NGN/IMS, VoIP y calidad del servicio; cotejo curricular directo."
+        },
+        "etiquetas": [
+          "Packet Loss Concealment",
+          "PLC",
+          "VoIP",
+          "pérdida de paquetes"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-12",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/T-REC-G.711-199909-I%21AppI/en",
+              "referencia": "ITU-T G.711 Appendix I, en vigor, se titula «A high quality low-complexity algorithm for packet loss concealment with G.711»; describe PLC en una señal de audio codificada/paquetizada, transmitida por red y reconstruida en el receptor."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 116: VoIP y servicios convergentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV.14: VoIP, redes convergentes y comunicaciones unificadas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Protocolos 2026, VoIP y calidad de servicio sobre IP; cotejo curricular directo."
+            }
+          ],
+          "observaciones": "La respuesta B es correcta: en telefonía IP, Packet Loss Concealment (PLC) intenta disimular la pérdida de paquetes de voz en la reproducción del receptor. No retransmite paquetes ni es una política de descarte de Frame Relay o un mecanismo de TCP."
+        }
+      }
+    }
+  ]
+}
