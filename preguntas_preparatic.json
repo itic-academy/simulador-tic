@@ -282946,71 +282946,308 @@
       "id": 5491,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuáles serían algunos riesgos asociados a las blockchain públicas?",
+      "texto": "En una blockchain pública, ¿cuál de las siguientes afirmaciones es falsa?",
       "opciones": [
-        "No se pueden borrar bloques de transacciones antiguas sin realizar un fork.",
-        "Al no haber Autoridad de Certificación no habrá soporte en caso de pérdida de claves públicas ni se pueden verificar dichas claves.",
-        "No hay responsabilidad civil ni patrimonial en caso de que el funcionamiento sea deficiente.",
-        "Todas las anteriores son ciertas."
+        "Perder la clave privada o su frase de recuperación puede dejar irrecuperables los activos de una cartera autocustodiada.",
+        "Sin una Autoridad de Certificación no es posible verificar criptográficamente una firma usando una clave pública conocida.",
+        "La ausencia de un intermediario central puede implicar que no exista un mecanismo central de recuperación ante la pérdida de claves.",
+        "Las reglas de consenso de la red determinan cuándo una transacción se considera confirmada."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Se corrige el ítem: la opción falsa es B. Una CA puede acreditar el vínculo entre identidad y clave, pero no hace falta una CA para comprobar criptográficamente una firma si ya se conoce la clave pública; el riesgo por falta de recuperación se refiere a perder la clave privada o su respaldo. Se descartan como opciones ciertas las afirmaciones absolutas sobre borrado de bloques o ausencia universal de responsabilidad legal, que dependen del protocolo, gobernanza y jurisdicción.",
+      "clasificacion": {
+        "A1": [
+          "A1-79",
+          "A1-85"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque A1-85 sobre blockchain y bloque de seguridad/criptografía; el mapa curricular separa clave privada, firma y cadena de bloques.",
+        "estado": "revisada",
+        "nota": "Cotejado con los programas oficiales A1/A2 vigentes y el material de academia 2026 indicado como mapa temático; la respuesta se contrasta con las normas y fuentes técnicas citadas."
+      },
+      "etiquetas": [
+        "blockchain",
+        "clave privada",
+        "firma digital",
+        "claves públicas",
+        "riesgo de pérdida de claves"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/ir/8202/final",
+            "referencia": "NISTIR 8202, Blockchain Technology Overview: describe blockchain como libro distribuido usualmente sin autoridad central y explica forks y consenso; la inmutabilidad es resistente a manipulación, no absoluta."
+          },
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf",
+            "referencia": "NIST FIPS 186-5: las firmas se generan con la clave privada y pueden verificarse matemáticamente con la clave pública correspondiente, sin que una CA sea requisito criptográfico."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5280.html",
+            "referencia": "RFC 5280, PKIX: los certificados X.509 vinculan una clave pública con la identidad de un sujeto y las rutas de confianza se validan contra anclas de CA; eso es distinto de verificar una firma con una clave ya conocida."
+          },
+          {
+            "url": "https://bitcoin.org/en/you-need-to-know",
+            "referencia": "Bitcoin.org, guía de seguridad: en una cartera autocustodiada, perder permanentemente la clave/frase de recuperación puede hacer irrecuperables los fondos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 79 y 85: criptografía y blockchain."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema I.6: identidad y firma electrónica; clasificación parcial por el concepto de firma con claves asimétricas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque de tecnologías de sistemas de información que incluye A1-85: mapa curricular de blockchain."
+          }
+        ],
+        "observaciones": "Se corrige el ítem: la opción falsa es B. Una CA puede acreditar el vínculo entre identidad y clave, pero no hace falta una CA para comprobar criptográficamente una firma si ya se conoce la clave pública; el riesgo por falta de recuperación se refiere a perder la clave privada o su respaldo. Se descartan como opciones ciertas las afirmaciones absolutas sobre borrado de bloques o ausencia universal de responsabilidad legal, que dependen del protocolo, gobernanza y jurisdicción."
+      }
     },
     {
       "id": 5492,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes no es una herramienta de trabajo colaborativo?:",
+      "texto": "¿Cuál de las siguientes opciones NO es principalmente una herramienta de trabajo colaborativo?",
       "opciones": [
-        "Trello.",
-        "Basecamp.",
-        "Slack.",
-        "Hadoop."
+        "Trello, para organizar tableros, tareas y equipos.",
+        "Basecamp, para gestionar proyectos y comunicaciones de equipo.",
+        "Slack, para comunicación y colaboración mediante canales.",
+        "Apache Hadoop, para procesar de forma distribuida grandes conjuntos de datos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se conserva D. Trello, Basecamp y Slack ofrecen tableros/gestión de tareas, comunicación o colaboración de equipos; Hadoop es un framework de procesamiento distribuido de datos. La redacción precisa que se pregunta por la función principal de los productos, aunque Hadoop pueda integrarse en flujos de trabajo compartidos.",
+      "clasificacion": {
+        "A1": [
+          "A1-133"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 50 sobre herramientas de trabajo colaborativo; Hadoop se coteja con el ámbito de datos/tecnologías emergentes.",
+        "estado": "revisada",
+        "nota": "Cotejado con los programas oficiales A1/A2 vigentes y el material de academia 2026 indicado como mapa temático; la respuesta se contrasta con las normas y fuentes técnicas citadas."
+      },
+      "etiquetas": [
+        "herramientas colaborativas",
+        "Trello",
+        "Basecamp",
+        "Slack",
+        "Apache Hadoop",
+        "big data"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://trello.com/guide/enterprise/creating-projects-inviting-members",
+            "referencia": "Trello, guía de tableros y colaboración: describe proyectos, invitación de miembros, tareas y colaboración en tarjetas."
+          },
+          {
+            "url": "https://basecamp.com/learn",
+            "referencia": "Basecamp, tutoriales oficiales: message boards, listas de tareas, proyectos e invitación de miembros para colaborar."
+          },
+          {
+            "url": "https://slack.com/team-collaboration-tool",
+            "referencia": "Slack, página oficial de colaboración de equipos: comunicación, archivos y trabajo conjunto en canales."
+          },
+          {
+            "url": "https://hadoop.apache.org/description.html",
+            "referencia": "Apache Hadoop, descripción oficial: biblioteca/framework para procesamiento distribuido de grandes conjuntos de datos en clústeres, no una herramienta de colaboración de equipos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 133: herramientas de trabajo colaborativo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.16: herramientas de trabajo colaborativo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 50 sobre videoconferencia, SSO y herramientas de trabajo colaborativo."
+          }
+        ],
+        "observaciones": "Se conserva D. Trello, Basecamp y Slack ofrecen tableros/gestión de tareas, comunicación o colaboración de equipos; Hadoop es un framework de procesamiento distribuido de datos. La redacción precisa que se pregunta por la función principal de los productos, aunque Hadoop pueda integrarse en flujos de trabajo compartidos."
+      }
     },
     {
       "id": 5493,
       "bloque": 0,
       "tema": 0,
-      "texto": "Método seguro de autorización de acceso a un servicio en una red desarrollado en el proyecto Athena del MIT:",
+      "texto": "¿Qué protocolo de autenticación de red, diseñado originalmente en el proyecto Athena del MIT, utiliza tickets para autenticar usuarios y servicios?",
       "opciones": [
-        "Carnivore",
-        "Internet Key Exchange (IKE)",
-        "Kerberos",
-        "SSL"
+        "Carnivore.",
+        "Internet Key Exchange (IKE).",
+        "Kerberos.",
+        "SSL/TLS."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se conserva C pero se sustituye “autorización” por “autenticación”: Kerberos acredita identidades mediante tickets y claves de sesión; la autorización para usar una operación o recurso corresponde normalmente a la política del servicio que consume esa identidad. Su origen se vincula al proyecto Athena del MIT.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque de seguridad, criptografía, identificación y firma (temas 79–81); Kerberos se relaciona con autenticación.",
+        "estado": "revisada",
+        "nota": "Cotejado con los programas oficiales A1/A2 vigentes y el material de academia 2026 indicado como mapa temático; la respuesta se contrasta con las normas y fuentes técnicas citadas."
+      },
+      "etiquetas": [
+        "Kerberos",
+        "Project Athena",
+        "autenticación de red",
+        "tickets",
+        "MIT"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://datatracker.ietf.org/doc/html/rfc4120",
+            "referencia": "RFC 4120, Kerberos V5, introducción e historial: documenta el protocolo de autenticación de red de Kerberos y atribuye el diseño e implementación inicial a personal de Project Athena del MIT y colaboradores."
+          },
+          {
+            "url": "https://web.mit.edu/kerberos/",
+            "referencia": "MIT Kerberos Consortium: documentación y distribución de la implementación Kerberos mantenida en el entorno MIT."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 80–81: identificación, autenticación, claves y PKI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas I.6 y IV.12: identidad electrónica y mecanismos de autenticación/control de acceso."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, temas 79–81 de seguridad, criptografía, identificación y firma: cotejo temático."
+          }
+        ],
+        "observaciones": "Se conserva C pero se sustituye “autorización” por “autenticación”: Kerberos acredita identidades mediante tickets y claves de sesión; la autorización para usar una operación o recurso corresponde normalmente a la política del servicio que consume esa identidad. Su origen se vincula al proyecto Athena del MIT."
+      }
     },
     {
       "id": 5494,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación con el campo TTL, indique la falsa:",
+      "texto": "En IPv4, indique la afirmación falsa sobre el campo TTL (Time to Live):",
       "opciones": [
-        "Sirve para limitar la vida de un paquete.",
-        "Evita que los paquetes estén dando vueltas eternamente por la red.",
-        "Permite una vida máxima de 512 segundos.",
-        "En la práctica, cuenta saltos."
+        "Limita el tiempo o la propagación de un datagrama.",
+        "Evita que un datagrama que no puede llegar a destino circule indefinidamente.",
+        "Su valor inicial máximo es 512 segundos.",
+        "Como los routers lo reducen al menos en uno, en la práctica suele funcionar como contador de saltos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La afirmación C es falsa: el campo TTL IPv4 tiene 8 bits, por lo que su valor inicial máximo es 255, no 512 segundos. RFC 791 lo define en unidades de segundos; como los routers lo reducen al menos en uno por salto, RFC 1812 indica que en la práctica funciona como límite de saltos. Se especifica IPv4 para evitar confusión con IPv6 Hop Limit.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 43 Protocolos: IPv4, TTL y encaminamiento.",
+        "estado": "revisada",
+        "nota": "Cotejado con los programas oficiales A1/A2 vigentes y el material de academia 2026 indicado como mapa temático; la respuesta se contrasta con las normas y fuentes técnicas citadas."
+      },
+      "etiquetas": [
+        "IPv4",
+        "TTL",
+        "tiempo de vida",
+        "contador de saltos",
+        "RFC 791",
+        "RFC 1812"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+            "referencia": "RFC 791, §3.1: el campo IPv4 Time to Live ocupa 8 bits, tiene unidad nominal de segundos y se reduce al menos en una unidad en cada módulo que procesa el datagrama; 8 bits limitan el valor inicial a 255."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1812.html#section-5.3.1",
+            "referencia": "RFC 1812, §5.3.1: TTL es campo de 8 bits en segundos, pero cada router lo decrementa al menos en uno, por lo que en la práctica funciona como límite de saltos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 115: redes IP y arquitectura/encaminamiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II.8: modelos TCP/IP y OSI, protocolos y encaminamiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque 43 Protocolos: IPv4, campo TTL y encaminamiento; mapa temático."
+          }
+        ],
+        "observaciones": "La afirmación C es falsa: el campo TTL IPv4 tiene 8 bits, por lo que su valor inicial máximo es 255, no 512 segundos. RFC 791 lo define en unidades de segundos; como los routers lo reducen al menos en uno por salto, RFC 1812 indica que en la práctica funciona como límite de saltos. Se especifica IPv4 para evitar confusión con IPv6 Hop Limit."
+      }
     },
     {
       "id": 5495,
       "bloque": 0,
       "tema": 0,
-      "texto": "Las fases del ciclo de vida de una tecnología según el Hype cycle de la consultora Gartner:",
+      "texto": "¿Cuáles son, en orden, las cinco fases del Hype Cycle de Gartner?",
       "opciones": [
-        "Lanzamiento; expectativas sobredimensionadas; desilusión; consolidación y productividad.",
-        "Caótica; Reactiva; Proactiva; Servicio y Madurez.",
+        "Disparador de innovación; pico de expectativas sobredimensionadas; abismo de desilusión; pendiente de esclarecimiento; meseta de productividad.",
+        "Caótica; Reactiva; Proactiva; Servicio; Madurez.",
         "Dinosaurio; Gran hermano; Mano amiga; Perro vigilante; Red o Network.",
-        "Iniciación; Expansión; Formalización; Administración y Madurez."
+        "Iniciación; Expansión; Formalización; Administración; Madurez."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se corrige la lista: el Hype Cycle de Gartner consta de cinco fases, no cuatro. La respuesta correcta enumera Technology Trigger (disparador de innovación), Peak of Inflated Expectations, Trough of Disillusionment, Slope of Enlightenment y Plateau of Productivity. “Consolidación” no sustituye las dos últimas fases.",
+      "clasificacion": {
+        "A1": [
+          "A1-107"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy 2026, bloque A1-107 de tecnologías emergentes: Gartner Hype Cycle como herramienta de seguimiento de madurez.",
+        "estado": "revisada",
+        "nota": "Cotejado con los programas oficiales A1/A2 vigentes y el material de academia 2026 indicado como mapa temático; la respuesta se contrasta con las normas y fuentes técnicas citadas."
+      },
+      "etiquetas": [
+        "Gartner",
+        "Hype Cycle",
+        "tecnologías emergentes",
+        "ciclo de expectativas",
+        "Technology Trigger",
+        "Plateau of Productivity"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-12",
+        "fuentes": [
+          {
+            "url": "https://www.gartner.com/en/research/methodologies/gartner-hype-cycle",
+            "referencia": "Gartner, metodología Hype Cycle: define las cinco fases y explica sus nombres y orden: Innovation Trigger, Peak of Inflated Expectations, Trough of Disillusionment, Slope of Enlightenment y Plateau of Productivity."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 107: tecnologías emergentes, concepto, clasificación y aplicaciones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy 2026, bloque A1-107 de Tecnologías de Sistemas de Información: tecnologías emergentes; cotejo temático."
+          }
+        ],
+        "observaciones": "Se corrige la lista: el Hype Cycle de Gartner consta de cinco fases, no cuatro. La respuesta correcta enumera Technology Trigger (disparador de innovación), Peak of Inflated Expectations, Trough of Disillusionment, Slope of Enlightenment y Plateau of Productivity. “Consolidación” no sustituye las dos últimas fases."
+      }
     },
     {
       "id": 5496,
