@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 12 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1047 (IDs 5556–5560); también se resolvió el pendiente histórico ID 77. Acumulado: 5.555 preguntas examinadas individualmente; 5.456 verificadas (982 vigentes, 4.061 corregidas y 413 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.568 sin revisar individualmente. Hay 5.530 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1048 (IDs 5561–5565); también se resolvió el pendiente histórico ID 77. Acumulado: 5.560 preguntas examinadas individualmente; 5.461 verificadas (982 vigentes, 4.066 corregidas y 413 históricas); 99 pendientes documentadas (42 de fuente y 57 de ambigüedad); 6.563 sin revisar individualmente. Hay 5.535 preguntas cuyo enunciado, opciones, clave o explicación difiere del original, al comparar esos campos con el banco original de git. Los inventarios estructurales no acreditan revisión de contenido.
 
 ## Pendiente anterior resuelto — ID 77 (12 de noviembre de 2026)
 
@@ -9,6 +9,20 @@ La consulta de la publicación primaria de 15-09-2015 permite cerrar el pendient
 ## Lote 1046 — 12 de noviembre de 2026
 
 ## Lote 1047 — 12 de noviembre de 2026
+
+## Lote 1048 — 12 de noviembre de 2026
+
+IDs 5561–5565 revisados individualmente. Se precisó la frontera conceptual entre análisis y diseño OO; se fijó la clasificación de prototipos por destino; se reconstruyó una pregunta ambigua sobre paralelismo de actividades en MÉTRICA v3 a partir de su diagrama/definición oficial; se diferenció el dominio de los atributos de las relaciones del modelo E/R; y se separaron Subversion centralizado, Mercurial distribuido y Bitbucket como alojamiento Git.
+
+- **5561 — análisis y diseño OO:** **corregida**, respuesta D. El análisis modela el dominio del problema; el diseño concreta/refina la solución. Se descartan como definiciones de frontera el primer momento de “construcción” o conexión de clases. A1-89/93; A2-III.9; academia, bloque 38.
+- **5562 — clasificación de prototipos:** **corregida**, respuesta A (desechable o evolutivo). El prototipo desechable se abandona al resolver dudas; el evolutivo se itera hasta formar parte del sistema. A1-94; A2-III.3; academia, bloque 38.
+- **5563 — actividades paralelas en el análisis de MÉTRICA v3:** **corregida**, respuesta B. ASI 6 (modelo de datos, estructurado) se elabora en paralelo y con realimentación con ASI 2, ASI 3, ASI 7 y ASI 8. ASI 4 es exclusiva de la aproximación orientada a objetos, por lo que mezclar ASI 4 y ASI 6 como si fueran una misma aproximación era ambiguo. A1-95; A2-III.2; academia, bloque 38.
+- **5564 — dominios en el modelo E/R:** **corregida**, respuesta D. MÉTRICA v3 vincula los dominios a los atributos; las relaciones entre entidades llevan tipo y cardinalidades. A1-89/95; A2-II.5; academia, bloque 38.
+- **5565 — herramientas de control de versiones:** **corregida**, respuesta A tras acotar el enunciado. Subversion es centralizado; Mercurial es distribuido; Bitbucket ofrece alojamiento de repositorios Git y colaboración. La etiqueta amplia “gestión de configuración” no permitía distinguir un VCS del servicio de alojamiento. A1-100/102; A2-IV.4; academia, bloque 38.
+
+Fuentes primarias/técnicas: [MÉTRICA v3, Análisis del Sistema de Información, proceso ASI](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Aad870327-56b7-4dfa-af15-e62222f45b90/METRICA_V3_Analisis_del_Sistema_de_Informacion.pdf) — introducción, diagrama de actividades, ASI 4, ASI 6 y ASI 6.1; [OMG UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/About-UML/); [NASA Systems Engineering Handbook](https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf) y [guía de prototipado software de University of Houston–Clear Lake](https://sceweb.uhcl.edu/helm/REQ_ENG_WEB/My-Files/mod4/Software_Prototyping.pdf); [Apache Subversion FAQ](https://subversion.apache.org/faq.html), [Mercurial About](https://mercurial-scm.org/about) y [Atlassian Bitbucket Overview](https://www.atlassian.com/software/bitbucket/guides/getting-started/overview). Programas actuales: [A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo de Drive: [bloque 38 — Análisis, diseño y construcción](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), apartado de modelado/prototipos y herramientas de desarrollo. El temario académico se utiliza como mapa curricular, no como prueba de las respuestas.
+
+Ejecutados node revision/revisar-lote-1048.cjs, node revision/academia-lote-1048.cjs, node revision/inventario.cjs, node revision/verificar.cjs y git diff --check: 12.123 registros, 5.560 revisiones individuales, 99 pendientes explícitas y 6.563 preguntas por revisar individualmente. Se conservan los originales y el historial del lote.
 
 IDs 5556–5560 revisados individualmente. Se precisó que la DCT corresponde al proceso con pérdida habitual de JPEG-1 y que el mismo estándar también contempla un modo lossless predictivo; se contrastó la lista de diez riesgos de Boehm; se definió el método como operación de una clase; se acotó HVE al contexto histórico de MÉTRICA 2.1 y se dejó pendiente por no disponer de la definición en la fuente primaria; y se concretó el objetivo del DFD en MÉTRICA v3 como modelado lógico de procesos y flujos de datos.
 
