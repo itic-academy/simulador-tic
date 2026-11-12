@@ -1,0 +1,51 @@
+const aplicar=require('./aplicar-lote.cjs');
+const a1='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938';
+const a2='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262';
+const desi='https://digital-decade-desi.digital-strategy.ec.europa.eu/datasets/desi-2022/indicators';
+const desiActual='https://digital-strategy.ec.europa.eu/en/policies/desi';
+const incompatible='https://www.boe.es/buscar/act.php?id=BOE-A-1985-151';
+const gdpr='https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=es';
+const cisco='https://www.cisco.com/c/en/us/products/collateral/contact-center/webex-contact-center-enterprise/datasheet-c78-743365.html';
+const academiaSociedad='https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk';
+const academiaAdmin='https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk';
+const academiaDatos='https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk';
+const ref=(url,referencia)=>({url,referencia});
+const records=[
+ [5686,[18],['I-6'],['DESI','Índice de Economía y Sociedad Digital','dimensiones','capital humano','conectividad','integración de tecnología digital','servicios públicos digitales','marco histórico'],[
+  ref(desi,'Comisión Europea, herramienta oficial DESI 2022: conserva la estructura de cuatro dimensiones principales: capital humano, conectividad, integración de tecnología digital y servicios públicos digitales; cobertura temporal del índice 2017–2022.'),
+  ref(desiActual,'Comisión Europea, política DESI: el índice resumió la evolución entre 2014 y 2022; desde 2023 sus indicadores se integran en el informe State of the Digital Decade.'),
+  ref(a1,'Convocatoria GSI A1 2025, anexo I, tema 18: impacto de las TIC en la sociedad y nuevos hábitos de consumo de información.'),
+  ref(a2,'Convocatoria GSI A2 2025, anexo IX, tema I.6: sociedad de la información y Agenda Digital para España.'),
+  ref(academiaSociedad,'ITIC Academy, bloque 06 Economía, Sociedad, Empleo y Transformación Digital, versión 2026.2: cotejo del marco de transformación digital y sociedad de la información; no se localizó en el documento una explicación específica del DESI 2022. La estructura histórica se toma de la fuente oficial de la Comisión.')
+ ],null,'Histórica verificada, respuesta D. Se limita expresamente a la estructura archivada del DESI 2022. Sus cuatro dimensiones eran capital humano, conectividad, integración de la tecnología digital y servicios públicos digitales; comercio electrónico no era una dimensión principal. El índice DESI dejó de publicarse como clasificación independiente después de 2022: desde 2023 sus indicadores se integran en el seguimiento de la Década Digital. La respuesta queda fijada para el marco temporal indicado, no como una estructura actual independiente. A1-18/A2-I-6.','historica'],
+ [5687,[24],[],['Ley 53/1984','incompatibilidades','personal al servicio de las Administraciones Públicas','deberes','imparcialidad','independencia'],[
+  ref(incompatible,'BOE, Ley 53/1984, texto consolidado vigente, art. 1.3: es incompatible el cargo, profesión o actividad que pueda impedir o menoscabar el estricto cumplimiento de los deberes, o comprometer imparcialidad o independencia.'),
+  ref(a1,'Convocatoria GSI A1 2025, anexo I, tema 24: empleo público y Ley de Incompatibilidades del personal al servicio de las Administraciones Públicas.'),
+  ref(academiaAdmin,'ITIC Academy, bloque 03 Actuación Administrativa y Administración Digital 2026.2, § 7: Estatuto Básico del Empleado Público y referencia expresa a que las incompatibilidades del personal se rigen por la Ley 53/1984; cotejo temático A1-24. El programa A2 no contiene un epígrafe específico para esta ley.')
+ ],null,'Corregida, respuesta B. Se sustituye el enunciado defectuoso «siempre que» por una pregunta sobre el criterio literal del art. 1.3. La incompatibilidad opera si la actividad puede impedir o menoscabar el estricto cumplimiento de los deberes o comprometer imparcialidad o independencia; la objetividad genérica no reemplaza el texto legal. A1-24; sin epígrafe A2 específico.','corregida'],
+ [5688,[27],['I-7'],['RGPD','artículo 9','categorías especiales de datos','opiniones políticas','datos genéticos','datos de salud','datos patrimoniales'],[
+  ref(gdpr,'Diario Oficial de la Unión Europea, Reglamento (UE) 2016/679, art. 9.1: enumera los datos que revelan, entre otros, opiniones políticas, y los datos genéticos, biométricos identificativos y relativos a la salud; los datos patrimoniales no forman por sí mismos parte de esta categoría especial.'),
+  ref(a1,'Convocatoria GSI A1 2025, anexo I, tema 27: RGPD, principios, categorías y obligaciones de tratamiento.'),
+  ref(a2,'Convocatoria GSI A2 2025, anexo IX, tema I.7: régimen jurídico de protección de datos personales.'),
+  ref(academiaDatos,'ITIC Academy, bloque 08 Protección de Datos 2026, epígrafe RGPD y categorías especiales: cobertura A1-27/A1-82 y A2-O7 (oficial A2-I.7); el art. 9 se contrasta con el Reglamento publicado en el DOUE.')
+ ],null,'Vigente, respuesta D. El artículo 9.1 del RGPD considera categorías especiales, entre otras, los datos que revelan opiniones políticas y los datos genéticos y de salud. La información patrimonial puede ser dato personal cuando se vincula a una persona identificada o identificable, pero no aparece por esa sola naturaleza en la lista del artículo 9. Se precisa el artículo para no sugerir que los datos patrimoniales carecen de protección general. A1-27/A2-I-7.','vigente'],
+ [5689,[27],['I-7'],['RGPD','artículo 4.7','responsable del tratamiento','fines y medios','corresponsables','encargado del tratamiento'],[
+  ref(gdpr,'Diario Oficial de la Unión Europea, Reglamento (UE) 2016/679, art. 4.7: responsable es la persona, autoridad pública, servicio u otro organismo que, solo o junto con otros, determina los fines y medios del tratamiento; art. 4.8 define al encargado como quien trata datos por cuenta del responsable.'),
+  ref(a1,'Convocatoria GSI A1 2025, anexo I, tema 27: régimen jurídico de protección de datos personales, responsable, encargado y delegado.'),
+  ref(a2,'Convocatoria GSI A2 2025, anexo IX, tema I.7: responsable y encargado del tratamiento.'),
+  ref(academiaDatos,'ITIC Academy, bloque 08 Protección de Datos 2026, apartados RGPD sobre responsables, encargados y corresponsabilidad: cobertura A1-27/A2-O7 (oficial A2-I.7). La definición exacta se cita del art. 4.7 del RGPD.')
+ ],null,'Vigente, respuesta B. El responsable determina los fines y medios, individualmente o junto con otros responsables. El encargado trata datos por cuenta del responsable; el delegado asesora y supervisa, pero no asume por esa función la determinación de fines y medios (RGPD, arts. 4.7–4.8 y 37–39). A1-27/A2-I-7.','vigente'],
+ [5690,[34],['II-12'],['centro de contacto','contact center','ACD','CRM','IVR','CTI','distribución automática de llamadas','telefonía'],[
+  ref(cisco,'Cisco, Webex Contact Center Enterprise, ficha técnica: ACD, IVR y CTI son funciones/componentes nucleares de distribución de llamadas, respuesta de voz interactiva e integración telefonía-informática; los sistemas CRM se integran con el centro de contacto como aplicaciones de clientes, no son por sí mismos un componente de telefonía de enrutamiento.'),
+  ref(a1,'Convocatoria GSI A1 2025, anexo I, tema 34: organización y funcionamiento de centros de sistemas de información y atención a usuarios.'),
+  ref(a2,'Convocatoria GSI A2 2025, anexo IX, tema II.12: centros de contacto, CRM, arquitectura multicanal, IVR y Voice XML.')
+ ],null,'Corregida, respuesta B. El original decía que el CRM «no participa» en la gestión de llamadas, aunque puede integrarse con la plataforma CTI, mostrar datos al agente y registrar interacciones. Se concreta que se pregunta por un componente de telefonía para automatizar o enrutar llamadas: ACD distribuye llamadas, IVR gestiona autoservicio/menús de voz y CTI integra telefonía y aplicaciones; CRM administra relaciones y datos de clientes, y puede conectarse al centro sin ser por sí mismo el subsistema telefónico de enrutamiento. A1-34/A2-II-12. En la búsqueda del temario docente de Drive no se localizó un módulo específico A2-II.12/centros de contacto; el cotejo queda sustentado por el tema oficial A2 y documentación técnica Cisco, sin atribuir este contenido a una unidad de academia no hallada.','corregida']
+];
+const edits={
+ 5686:{texto:'Según la estructura histórica del DESI 2022 de la Comisión Europea, ¿cuál de estas opciones NO era una de sus cuatro dimensiones principales?',opciones:['Conectividad','Capital humano','Servicios públicos digitales','Comercio electrónico'],respuesta_correcta:3},
+ 5687:{texto:'Según el artículo 1.3 de la Ley 53/1984, ¿cuál es una circunstancia que hace incompatible el desempeño de otra actividad con un puesto público?',opciones:['Que la otra actividad sea remunerada, aunque no interfiera en el puesto.','Que pueda impedir o menoscabar el estricto cumplimiento de los deberes o comprometer la imparcialidad o independencia.','Que la actividad se desarrolle fuera del horario de trabajo, en todo caso.','Que pueda afectar exclusivamente a intereses particulares de terceros.'],respuesta_correcta:1},
+ 5688:{texto:'¿Cuál de estos datos no figura entre las categorías especiales enumeradas en el artículo 9.1 del RGPD?',opciones:['Datos que revelan opiniones políticas.','Datos genéticos.','Datos relativos a la salud.','Datos patrimoniales, por esa sola naturaleza.'],respuesta_correcta:3},
+ 5689:{texto:'Según el artículo 4.7 del RGPD, ¿quién determina los fines y medios del tratamiento de datos personales?',opciones:['El encargado del tratamiento, por cuenta propia.','El responsable del tratamiento, solo o junto con otros.','El delegado de protección de datos por su función de supervisión.','El responsable de seguridad, por definición.'],respuesta_correcta:1},
+ 5690:{texto:'En una arquitectura de telefonía de un centro de contacto, ¿cuál de estas siglas identifica una aplicación de gestión de relaciones con clientes, no un componente telefónico de distribución o automatización de llamadas (aunque puede integrarse con CTI)?',opciones:['ACD','CRM','IVR','CTI'],respuesta_correcta:1}
+};
+aplicar({numero:'1073',fecha:'2026-11-12',records,edits});
