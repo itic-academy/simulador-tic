@@ -1,6 +1,8 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 module.exports=function({numero,fecha,records,edits={}}){
- assert.match(numero,/^\d{3}$/);assert.match(fecha,/^\d{4}-\d{2}-\d{2}$/);
+ // El esquema histórico usaba tres dígitos; permitir cuatro y posteriores evita
+ // reiniciar o reciclar números al superar el lote 999.
+ assert.match(numero,/^\d{3,}$/);assert.match(fecha,/^\d{4}-\d{2}-\d{2}$/);
  const file=path.join(__dirname,'..','preguntas_preparatic.json'),log=path.join(__dirname,`cambios-lote-${numero}.json`);
  assert.ok(!fs.existsSync(log),'El lote ya existe');
  const raw=fs.readFileSync(file,'utf8'),data=JSON.parse(raw),changes=[];
