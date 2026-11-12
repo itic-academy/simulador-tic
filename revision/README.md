@@ -1,10 +1,10 @@
-# Revisión del banco TIC — estado al 12 de noviembre de 2026
+# Revisión del banco TIC — estado al 13 de noviembre de 2026
 
 Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1109 (IDs 5866–5870); también se resolvió el pendiente histórico ID 77. Acumulado: 5.865 preguntas examinadas individualmente; 5.764 verificadas (1.069 vigentes, 4.268 corregidas y 427 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.258 sin revisar individualmente.
 
 ## Lote 1109 — 13 de noviembre de 2026
 
-IDs 5866–5870 revisados uno a uno. Se verificaron RAID 5 y su capacidad utilizable, la diferencia de acceso NAS/SAN, las funciones de la API de sockets, la expansión de MTOM y la sintaxis Bash de redirección/pipeline. La clave de 5870 se confirma: la alternativa D comienza con un operador de tubería sin orden a la izquierda, por lo que Bash no ejecuta la redirección. El registro del lote 1109 preserva el original de cada pregunta, la respuesta, el razonamiento, los temas y las fuentes.
+IDs 5866–5870 revisados uno a uno. Se verificaron RAID 5 y su capacidad utilizable, la diferencia de acceso NAS/SAN, las funciones de la API de sockets, la expansión de MTOM y la sintaxis Bash de redirección/pipeline. La clave de 5870 se confirma: la alternativa D comienza con un operador de tubería sin orden a la izquierda, por lo que Bash no ejecuta la redirección. El [registro del lote 1109](cambios-lote-1109.json) preserva el original de cada pregunta, la respuesta, el razonamiento, los temas y las fuentes.
 
 - **5866 — RAID 5:** **vigente**, respuesta A (33 %). Se dedica el equivalente a un disco a paridad; con tres discos iguales la fracción máxima es 1/3 y disminuye al crecer el conjunto. A1-56/A2-IV-5.
 - **5867 — NAS frente a SAN:** **vigente**, respuesta A. NAS ofrece típicamente servicios a nivel de fichero; SAN presenta almacenamiento a nivel de bloque. A1-56/A2-IV-5.
