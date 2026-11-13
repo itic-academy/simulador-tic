@@ -2,6 +2,8 @@
 
 Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1173 (IDs 6186–6190). Acumulado: 6.185 preguntas examinadas individualmente; 6.075 verificadas (1.191 vigentes, 4.439 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.938 sin revisar individualmente.
 
+**Publicación verificada:** el commit de datos `f021444` (`f021444de38c2c8d169a7f6adbf3444b33998c25`) completó correctamente [Deploy GitHub Pages, workflow run 43411008329](https://github.com/itic-academy/simulador-tic/actions/runs/43411008329). El README, `cambios-lote-1173.json` e `inventario.json` respondieron HTTP 200; el contenido publicado confirma IDs 6186–6190, 6.185 examinadas, 6.075 verificadas y 5.938 aún sin revisar.
+
 **Publicación verificada:** el commit de datos `308cf86` (`308cf8699786fdeb8d5ce503657e39a55515cf53`) completó correctamente [Deploy GitHub Pages, workflow run 43409786383](https://github.com/itic-academy/simulador-tic/actions/runs/43409786383). El README, `cambios-lote-1172.json` e `inventario.json` respondieron HTTP 200; el contenido publicado confirma IDs 6181–6185, 6.180 examinadas, 6.070 verificadas y 5.943 aún sin revisar.
 
 **Publicación verificada:** el commit de datos `edcc86f` (`edcc86f4a5246ace8babacf3174cbf75f56b227c`) completó correctamente [Deploy GitHub Pages, workflow run 43408548992](https://github.com/itic-academy/simulador-tic/actions/runs/43408548992). El README, `cambios-lote-1171.json` e `inventario.json` respondieron HTTP 200; el contenido publicado confirma IDs 6176–6180, 6.175 examinadas, 6.065 verificadas y 5.948 aún sin revisar.
