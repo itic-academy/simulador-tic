@@ -1,0 +1,394 @@
+{
+  "fecha": "2026-11-13",
+  "alcance": "IDs 6196–6200; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 6196,
+      "original": {
+        "id": 6196,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Puede ejecutarse una aplicación Windows al mismo tiempo por muchos usuarios, en una misma máquina, pero con pantallas diferentes?",
+        "opciones": [
+          "No, dado que un sistema de este tipo solo puede tener una consola, esa prestación está accesible en sistemas empresariales tipo Unix",
+          "Si, dado que en un servidor windows empresarial pueden conectarse varias consolas diferentes",
+          "Si, utilizando X-Windows",
+          "Si, utilizando servicios de Remote Desktop"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6196,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué tecnología permite que varios usuarios ejecuten simultáneamente aplicaciones alojadas en un servidor Windows, cada uno en una sesión remota independiente?",
+        "opciones": [
+          "Una única consola local de Windows, que no admite sesiones de usuario concurrentes.",
+          "Varias sesiones de consola física de Windows, sin un servicio de sesiones remotas.",
+          "X Window System, que es el servidor gráfico propio de Windows.",
+          "Remote Desktop Services con un servidor RD Session Host configurado para sesiones multiusuario."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La clave D se conserva, pero el original permitía leer «Windows Server» genérico como suficiente y no distinguía sesiones de consola. Se acota a Remote Desktop Services con RD Session Host: ejecuta la aplicación en el servidor y presenta sesiones independientes a varios usuarios. En producción se requiere configurar el rol y las licencias aplicables; el cliente Windows ordinario no equivale a un host multisesión. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 26 Sistemas multiusuario y hardware, versión 2026, §14.1 VDI, RDS y virtualización de aplicaciones; encaje oficial A1-57/A1-61 y A2-II.2. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo.",
+        "clasificacion": {
+          "A1": [
+            "A1-57",
+            "A1-61"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Sistemas multiusuario y hardware, versión 2026, §14.1 VDI, RDS y virtualización de aplicaciones; encaje oficial A1-57/A1-61 y A2-II.2.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 26 Sistemas multiusuario y hardware, versión 2026, §14.1 VDI, RDS y virtualización de aplicaciones; encaje oficial A1-57/A1-61 y A2-II.2. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo."
+        },
+        "etiquetas": [
+          "Windows Server",
+          "Remote Desktop Services",
+          "RD Session Host",
+          "multiusuario"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/server/remote/remote-desktop-services/overview",
+              "referencia": "Microsoft Learn, Remote Desktop Services overview: el rol RD Session Host aloja escritorios y RemoteApp para uso multiusuario; las sesiones están aisladas."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/win32/termserv/about-terminal-services",
+              "referencia": "Microsoft Learn, About Remote Desktop Services: las aplicaciones se ejecutan en el servidor Session Host y múltiples usuarios pueden iniciar sesión simultáneamente en sesiones separadas."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/troubleshoot-remote-desktop-disconnected-errors",
+              "referencia": "Microsoft Learn: para múltiples conexiones de usuarios se instala el rol RD Session Host y se configuran las licencias RDS correspondientes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, temas 57 y 61: sistemas multiusuario/servidores y sistemas operativos Microsoft."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.2: administración y características de Windows y otros sistemas operativos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 26 Sistemas multiusuario y hardware, versión 2026, §14.1 VDI, RDS y virtualización de aplicaciones; encaje oficial A1-57/A1-61 y A2-II.2."
+            }
+          ],
+          "observaciones": "La clave D se conserva, pero el original permitía leer «Windows Server» genérico como suficiente y no distinguía sesiones de consola. Se acota a Remote Desktop Services con RD Session Host: ejecuta la aplicación en el servidor y presenta sesiones independientes a varios usuarios. En producción se requiere configurar el rol y las licencias aplicables; el cliente Windows ordinario no equivale a un host multisesión. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 26 Sistemas multiusuario y hardware, versión 2026, §14.1 VDI, RDS y virtualización de aplicaciones; encaje oficial A1-57/A1-61 y A2-II.2. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo."
+        }
+      }
+    },
+    {
+      "id": 6197,
+      "original": {
+        "id": 6197,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indica cuál de las siguientes es una infraestructura de integración para la construcción de arquitecturas SOA",
+        "opciones": [
+          "NAS (Network Access Service).",
+          "ORB (Object Request Broker).",
+          "ESB (Enterprise Service Bus).",
+          "UDDI (Universal Description, Discovery and Integration)."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6197,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indica cuál de las siguientes es una infraestructura de integración para la construcción de arquitecturas SOA",
+        "opciones": [
+          "NAS (Network Access Service).",
+          "ORB (Object Request Broker).",
+          "ESB (Enterprise Service Bus).",
+          "UDDI (Universal Description, Discovery and Integration)."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La opción C es correcta: un Enterprise Service Bus es una infraestructura de integración usada en soluciones SOA para mediar, enrutar y, cuando proceda, transformar mensajes/protocolos. ORB corresponde a middleware de objetos distribuidos; UDDI es un registro y NAS no es la infraestructura descrita. Se mantiene el reactivo. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, §2.7 Enterprise Service Bus; encaje oficial A1-58/A2-II.6. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo.",
+        "clasificacion": {
+          "A1": [
+            "A1-58"
+          ],
+          "A2": [
+            "A2-II-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, §2.7 Enterprise Service Bus; encaje oficial A1-58/A2-II.6.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, §2.7 Enterprise Service Bus; encaje oficial A1-58/A2-II.6. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo."
+        },
+        "etiquetas": [
+          "SOA",
+          "ESB",
+          "integración",
+          "mediación",
+          "enrutamiento"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/bpms/8.0.x?topic=manager-connecting-services-through-enterprise-service-bus",
+              "referencia": "IBM Documentation: un ESB media interacciones SOA, enruta mensajes, transforma formatos y adapta protocolos entre solicitantes y proveedores."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/enterprise-integration",
+              "referencia": "Microsoft Azure Architecture Center, patrones de integración empresarial: integración y mensajería entre componentes y servicios."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 58: procesamiento cooperativo, cliente-servidor y SOA."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.6: arquitectura cliente-servidor, interoperabilidad y servicios web."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, §2.7 Enterprise Service Bus; encaje oficial A1-58/A2-II.6."
+            }
+          ],
+          "observaciones": "La opción C es correcta: un Enterprise Service Bus es una infraestructura de integración usada en soluciones SOA para mediar, enrutar y, cuando proceda, transformar mensajes/protocolos. ORB corresponde a middleware de objetos distribuidos; UDDI es un registro y NAS no es la infraestructura descrita. Se mantiene el reactivo. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, §2.7 Enterprise Service Bus; encaje oficial A1-58/A2-II.6. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo."
+        }
+      }
+    },
+    {
+      "id": 6198,
+      "original": {
+        "id": 6198,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la primitiva send-receive, ¿qué características tienen send y receive?",
+        "opciones": [
+          "Send es bloqueante y Receive es no bloqueante.",
+          "Ambas son bloqueantes.",
+          "Ambas son no bloqueantes.",
+          "Send es no bloqueante y Receive es bloqueante."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6198,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En MPI, ¿qué afirmación distingue correctamente una llamada de envío MPI_Isend de una recepción bloqueante MPI_Recv?",
+        "opciones": [
+          "MPI_Isend espera a que el receptor complete el mensaje, mientras MPI_Recv retorna sin recibirlo.",
+          "Ambas llamadas esperan siempre a que la aplicación remota procese el mensaje.",
+          "MPI_Isend y MPI_Recv son operaciones no bloqueantes.",
+          "MPI_Isend inicia el envío y devuelve sin esperar a su finalización; MPI_Recv espera hasta que el mensaje correspondiente está disponible."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Las primitivas genéricas send/receive no tienen una semántica universal: hay variantes bloqueantes y no bloqueantes según API y modo. Se concreta el enunciado en MPI: MPI_Isend inicia un envío no bloqueante y devuelve una petición; MPI_Recv es bloqueante. Envío y recepción se completan conforme al modelo MPI; no se debe confundir la llamada de inicio con la finalización del envío. La respuesta D queda inequívoca. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, comunicación síncrona/asíncrona y mecanismos de mensajería; encaje oficial A1-58/A2-II.6. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo.",
+        "clasificacion": {
+          "A1": [
+            "A1-58"
+          ],
+          "A2": [
+            "A2-II-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, comunicación síncrona/asíncrona y mecanismos de mensajería; encaje oficial A1-58/A2-II.6.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, comunicación síncrona/asíncrona y mecanismos de mensajería; encaje oficial A1-58/A2-II.6. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo."
+        },
+        "etiquetas": [
+          "MPI",
+          "send",
+          "receive",
+          "bloqueante",
+          "no bloqueante",
+          "comunicación punto a punto"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://www.mpi-forum.org/docs/mpi-4.1/mpi41-report/node30.htm",
+              "referencia": "MPI Forum, MPI 4.1, tabla/categorías de procedimientos: MPI_Isend y MPI_Irecv son no bloqueantes; MPI_Send y MPI_Recv son bloqueantes."
+            },
+            {
+              "url": "https://www.mpi-forum.org/docs/mpi-4.1/mpi41-report.pdf",
+              "referencia": "MPI Forum, estándar oficial MPI 4.1: define por separado operaciones de comunicación bloqueantes y no bloqueantes; el modo de envío debe especificarse."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 58: procesamiento cooperativo y comunicación en sistemas distribuidos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.6: arquitecturas cliente-servidor y comunicación entre componentes."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, comunicación síncrona/asíncrona y mecanismos de mensajería; encaje oficial A1-58/A2-II.6."
+            }
+          ],
+          "observaciones": "Las primitivas genéricas send/receive no tienen una semántica universal: hay variantes bloqueantes y no bloqueantes según API y modo. Se concreta el enunciado en MPI: MPI_Isend inicia un envío no bloqueante y devuelve una petición; MPI_Recv es bloqueante. Envío y recepción se completan conforme al modelo MPI; no se debe confundir la llamada de inicio con la finalización del envío. La respuesta D queda inequívoca. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, comunicación síncrona/asíncrona y mecanismos de mensajería; encaje oficial A1-58/A2-II.6. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo."
+        }
+      }
+    },
+    {
+      "id": 6199,
+      "original": {
+        "id": 6199,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique la respuesta falsa en relación al WfMC (Workflow Management Coalition):",
+        "opciones": [
+          "Organización destinada a establecer estándares relativos a la terminología del software, su interoperabilidad y conectividad",
+          "Organización creada por las principales empresas del sector para el facilitar la compatibilidad de sus herramientas",
+          "Ha desarrollado el denominado Modelo de Referencia de Workflow",
+          "Está dividida en tres comités principales: el Comité Técnico, el Comité de Relaciones Externas y el Comité Directivo"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6199,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique la afirmación falsa sobre la Workflow Management Coalition (WfMC):",
+        "opciones": [
+          "Es una organización sectorial sin ánimo de lucro que promueve terminología y estándares comunes para workflow.",
+          "Es una agencia de Naciones Unidas con potestad legislativa para imponer normas obligatorias sobre procesos empresariales.",
+          "Desarrolló el Workflow Reference Model como marco para su programa de estándares.",
+          "Su estructura institucional incluye los comités Technical, External Relations y Steering."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La respuesta original B no se puede sostener como falsa con la documentación primaria consultada: WfMC fue fundada por participantes del sector y las otras afirmaciones también describen su finalidad, modelo y estructura. Se conserva la trazabilidad y se reconstruye el test con una afirmación inequívocamente falsa en B. La WfMC no es una agencia de Naciones Unidas ni un regulador con potestad legislativa; sí es una coalición sectorial, y sus tres comités y el Workflow Reference Model constan en sus documentos oficiales. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 50 Trabajo colaborativo y workflow, versión 2026, apartado del modelo de referencia WfMC; encaje oficial A1-58/A2-II.16. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo.",
+        "clasificacion": {
+          "A1": [
+            "A1-58"
+          ],
+          "A2": [
+            "A2-II-16"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 50 Trabajo colaborativo y workflow, versión 2026, apartado del modelo de referencia WfMC; encaje oficial A1-58/A2-II.16.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 50 Trabajo colaborativo y workflow, versión 2026, apartado del modelo de referencia WfMC; encaje oficial A1-58/A2-II.16. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo."
+        },
+        "etiquetas": [
+          "WfMC",
+          "Workflow Management Coalition",
+          "Workflow Reference Model",
+          "normalización de workflow"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://wfmc.org/wfmc-structure/",
+              "referencia": "WfMC, estructura institucional: confirma los comités Technical, External Relations y Steering y sitúa los grupos de trabajo en torno al Workflow Reference Model."
+            },
+            {
+              "url": "https://wfmc.org/about-us/",
+              "referencia": "WfMC, About Us: organización global fundada en 1993, centrada en workflow, BPM y gestión adaptativa de casos."
+            },
+            {
+              "url": "https://wfmc.org/wp-content/uploads/2022/09/TC-1011_term_glossary_v3.pdf",
+              "referencia": "WfMC Workflow Glossary: finalidad de desarrollar terminología común y estándares para interoperabilidad de productos workflow e integración con otros servicios TI."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 58: arquitectura SOA y procesamiento cooperativo."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.16: sistemas de gestión de flujos de trabajo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 50 Trabajo colaborativo y workflow, versión 2026, apartado del modelo de referencia WfMC; encaje oficial A1-58/A2-II.16."
+            }
+          ],
+          "observaciones": "La respuesta original B no se puede sostener como falsa con la documentación primaria consultada: WfMC fue fundada por participantes del sector y las otras afirmaciones también describen su finalidad, modelo y estructura. Se conserva la trazabilidad y se reconstruye el test con una afirmación inequívocamente falsa en B. La WfMC no es una agencia de Naciones Unidas ni un regulador con potestad legislativa; sí es una coalición sectorial, y sus tres comités y el Workflow Reference Model constan en sus documentos oficiales. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 50 Trabajo colaborativo y workflow, versión 2026, apartado del modelo de referencia WfMC; encaje oficial A1-58/A2-II.16. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo."
+        }
+      }
+    },
+    {
+      "id": 6200,
+      "original": {
+        "id": 6200,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿En cuál de los siguientes modelos de arquitectura cliente-servidor, el cliente asume mayor carga de proceso?",
+        "opciones": [
+          "Base de datos remota.",
+          "Proceso distribuido.",
+          "Presentación remota.",
+          "Presentación distribuida."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6200,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la taxonomía clásica de arquitecturas cliente-servidor, ¿en qué modelo recae normalmente en el cliente la mayor parte del procesamiento de la aplicación, mientras la base de datos reside en un servidor remoto?",
+        "opciones": [
+          "Base de datos remota.",
+          "Proceso distribuido entre cliente y servidor.",
+          "Presentación remota.",
+          "Presentación distribuida."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "En la taxonomía clásica se pregunta dónde recae el procesamiento de la aplicación: en «base de datos remota», el cliente mantiene la lógica de aplicación y presentación mientras el servidor remoto administra/consulta la base de datos; en presentación remota, el cliente realiza principalmente entrada/salida y la aplicación corre en el servidor. Se aclara ese supuesto para distinguir la respuesta A. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, arquitecturas cliente-servidor, multicapa y distinción cliente ligero/pesado; encaje oficial A1-58/A2-II.6. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo.",
+        "clasificacion": {
+          "A1": [
+            "A1-58"
+          ],
+          "A2": [
+            "A2-II-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, arquitecturas cliente-servidor, multicapa y distinción cliente ligero/pesado; encaje oficial A1-58/A2-II.6.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, arquitecturas cliente-servidor, multicapa y distinción cliente ligero/pesado; encaje oficial A1-58/A2-II.6. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo."
+        },
+        "etiquetas": [
+          "cliente-servidor",
+          "base de datos remota",
+          "cliente pesado",
+          "presentación remota",
+          "procesamiento de aplicación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/cd/A84055_01/EE806DOC/pdfdocs/database.806/a58227.pdf",
+              "referencia": "Oracle8 Concepts, arquitectura cliente/servidor: el cliente solicita, procesa y presenta datos administrados por el servidor; el servidor gestiona los datos."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier",
+              "referencia": "Microsoft Azure Architecture Center, arquitectura n-tier: separa presentación, lógica de aplicación y almacenamiento/datos, que pueden ubicarse en tiers distintos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 58: procesamiento cooperativo y arquitectura cliente-servidor."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.6: tipologías de sistemas cliente-servidor y multicapas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, arquitecturas cliente-servidor, multicapa y distinción cliente ligero/pesado; encaje oficial A1-58/A2-II.6."
+            }
+          ],
+          "observaciones": "En la taxonomía clásica se pregunta dónde recae el procesamiento de la aplicación: en «base de datos remota», el cliente mantiene la lógica de aplicación y presentación mientras el servidor remoto administra/consulta la base de datos; en presentación remota, el cliente realiza principalmente entrada/salida y la aplicación corre en el servidor. Se aclara ese supuesto para distinguir la respuesta A. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1, arquitecturas cliente-servidor, multicapa y distinción cliente ligero/pesado; encaje oficial A1-58/A2-II.6. La academia ubica el contenido; Microsoft, W3C/MPI Forum, IBM, Oracle y WfMC fundamentan las respuestas según cada reactivo."
+        }
+      }
+    }
+  ]
+}
