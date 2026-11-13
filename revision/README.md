@@ -1,10 +1,17 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1216 (IDs 6401–6405). Acumulado: 6.400 preguntas examinadas individualmente; 6.284 verificadas (1.244 vigentes, 4.584 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5.723 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1217 (IDs 6406–6410). Acumulado: 6405 preguntas examinadas individualmente; 6291 verificadas (1244 vigentes, 4589 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5718 sin revisar individualmente.
 
 
 
-**Publicación verificada:** el commit de datos `49b8110` (`49b81100737e0dbde210335839f7dbbbe1d0f355)` completó correctamente [Deploy GitHub Pages, workflow run 43480016952](https://github.com/itic-academy/simulador-tic/actions/runs/43480016952). GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1216.json` e `inventario.json`; el registro publicado contiene los IDs 6401–6405 con estados corregida, vigente, corregida, corregida y corregida. El inventario confirma 6.400 examinadas, 6.284 verificadas (1.244 vigentes, 4.584 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.723 sin revisar individualmente.
+## Lote 1217 — 13 de noviembre de 2026
+
+Revisión individual de las preguntas 6406–6410. Se sustituyó una pregunta ambigua sobre emulación/simulación por una afirmación acotada y comprobable sobre QEMU; la pregunta volátil de productos Kanban se reemplazó por una práctica descrita en la guía oficial; se corrigió «interés general» por «interés social» en el artículo 124.1 de la Constitución; se corrigió la clave y la redacción de la definición de cuadrículas geográficas INSPIRE; y se precisó el término «garantía (warranty)» dentro de ITIL 4, distinguiéndolo de utilidad y anotando la transición actual a ITIL (Version 5). Las cinco preguntas conservan texto/opciones originales en el registro de cambios. Se añadieron explicaciones, fuentes primarias y clasificación oficial A1/A2. Cotejo en Drive: bloques de ITIC Academy 26 (virtualización), 15 (ágiles/Kanban), 01 (Constitución), 33 (GIS; A2 no aplica) y 41 (ITIL/COBIT). Inventario local: 6405 examinadas, 6291 verificadas, 114 pendientes y 5718 aún sin revisar individualmente; inventario y verificador sin errores estructurales. Pendiente verificar la publicación de este lote.
+
+
+Nota de consistencia: al recalcular los estados del lote 1216, el inventario da 6.286 verificadas (1.244 vigentes + 4.584 corregidas + 458 históricas), no 6.284 como se consignó en la evidencia de publicación anterior; se corrige esa cifra en la línea precedente.
+
+**Publicación verificada:** el commit de datos `49b8110` (`49b81100737e0dbde210335839f7dbbbe1d0f355)` completó correctamente [Deploy GitHub Pages, workflow run 43480016952](https://github.com/itic-academy/simulador-tic/actions/runs/43480016952). GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1216.json` e `inventario.json`; el registro publicado contiene los IDs 6401–6405 con estados corregida, vigente, corregida, corregida y corregida. El inventario confirma 6.400 examinadas, 6.286 verificadas (1.244 vigentes, 4.584 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.723 sin revisar individualmente.
 
 ## Lote 1216 — 13 de noviembre de 2026
 
