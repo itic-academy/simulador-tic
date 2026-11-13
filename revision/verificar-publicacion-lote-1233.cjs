@@ -1,0 +1,27 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const cp = require('node:child_process');
+
+const inv = JSON.parse(fs.readFileSync(path.join(__dirname, 'inventario.json'), 'utf8'));
+const log = JSON.parse(fs.readFileSync(path.join(__dirname, 'cambios-lote-1233.json'), 'utf8'));
+const full = cp.execFileSync('git', ['rev-parse', '84c17b8'], { encoding: 'utf8' }).trim();
+const sha = full.slice(0, 7);
+const run = '43508781070';
+assert.deepEqual(log.cambios.map(c => c.id), [6486, 6487, 6488, 6489, 6490]);
+assert.equal(log.cambios.map(c => c.actualizada.revision.estado).join(','), 'vigente,corregida,corregida,vigente,corregida');
+const states = log.cambios.map(c => c.actualizada.revision.estado).join(', ');
+const verified = inv.estados.vigente + inv.estados.corregida + inv.estados.historica;
+const pending = inv.estados.pendiente_fuente + inv.estados.pendiente_ambiguedad;
+const fmt = n => n.toLocaleString('es-ES');
+const section = `**Publicación verificada:** commit de datos ${sha} (${full}); [workflow Deploy GitHub Pages ${run}](https://github.com/itic-academy/simulador-tic/actions/runs/${run}) completado con estado Success e incluye ese commit. README, cambios-lote-1233.json e inventario.json respondieron HTTP 200 sin caché; el registro público contiene IDs 6486–6490 con estados ${states}. El inventario público confirma ${fmt(inv.total - inv.estados.sin_revisar)} examinadas, ${fmt(verified)} verificadas (${fmt(inv.estados.vigente)} vigentes, ${fmt(inv.estados.corregida)} corregidas y ${fmt(inv.estados.historica)} históricas), ${fmt(pending)} pendientes (${fmt(inv.estados.pendiente_fuente)} de fuente y ${fmt(inv.estados.pendiente_ambiguedad)} de ambigüedad) y ${fmt(inv.estados.sin_revisar)} sin revisar individualmente.`;
+const file = path.join(__dirname, 'README.md');
+let text = fs.readFileSync(file, 'utf8');
+const start = text.indexOf('## Lote 1233 —');
+assert.ok(start >= 0, 'Falta el apartado del lote');
+const marker = 'Pendiente verificar la publicación de este lote.';
+const at = text.indexOf(marker, start);
+assert.ok(at > start, 'Falta el marcador pendiente');
+text = text.slice(0, at) + section + text.slice(at + marker.length);
+fs.writeFileSync(file, text);
+console.log(`Publicación de ${sha} verificada; estados: ${states}.`);
