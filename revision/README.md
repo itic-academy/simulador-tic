@@ -1,7 +1,12 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1215 (IDs 6396–6400). Acumulado: 6.395 preguntas examinadas individualmente; 6.280 verificadas (1.243 vigentes, 4.580 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5.728 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1216 (IDs 6401–6405). Acumulado: 6.400 preguntas examinadas individualmente; 6.284 verificadas (1.244 vigentes, 4.584 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5.723 sin revisar individualmente.
 
+
+
+## Lote 1216 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6401–6405. Se acotó la capacidad DOCSIS 3.1 al potencial publicado por CableLabs; se confirmó el modelo de replicación AD con sus excepciones FSMO; se corrigieron la modulación y formulaciones de LTE, la definición de phishing y una pregunta negativa no verificable sobre federación de identidades. Se preservan los originales y se añaden explicaciones, fuentes primarias y temas A1/A2; se cotejó además el encaje del material de ITIC Academy en Drive. Inventario local: 6.400 examinadas, 6.284 verificadas, 114 pendientes, 5.723 sin revisar individualmente y 0 errores estructurales. Pendiente verificar la publicación de este lote.
 
 **Publicación verificada:** el commit de datos `3e87a24` (`3e87a24067c5da45e8fc1615ddb62a16033f3642)` completó correctamente [Deploy GitHub Pages, workflow run 43478369895](https://github.com/itic-academy/simulador-tic/actions/runs/43478369895). GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1215.json` e `inventario.json`; el registro publicado contiene los IDs 6396–6400, todos corregidos. El inventario confirma 6.395 examinadas, 6.280 verificadas (1.243 vigentes, 4.580 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.728 sin revisar individualmente.
 
