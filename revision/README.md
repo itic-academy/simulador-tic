@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1204 (IDs 6341–6345). Acumulado: 6.340 preguntas examinadas individualmente; 6.229 verificadas (1.233 vigentes, 4.541 corregidas y 455 históricas); 111 pendientes documentadas (45 de fuente y 66 de ambigüedad); 5.783 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1205 (IDs 6346–6350). Acumulado: 6.345 preguntas examinadas individualmente; 6.234 verificadas (1.235 vigentes, 4.544 corregidas y 455 históricas); 111 pendientes documentadas (45 de fuente y 66 de ambigüedad); 5.778 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `429e264` (`429e264ed4b83cd4e7fcfa1a40eafab50c0e589a)` está servido por GitHub Pages. README, `cambios-lote-1204.json` e `inventario.json` respondieron HTTP 200 sin caché; el registro publicado contiene los IDs 6341–6345 y el inventario confirma 6.340 examinadas, 6.229 verificadas (1.233 vigentes, 4.541 corregidas y 455 históricas), 111 pendientes (45 de fuente, 66 de ambigüedad) y 5.783 sin revisar. En la última consulta pública, el workflow Deploy GitHub Pages `43458632278` seguía en curso; por ello se acredita la publicación por los artefactos servidos, sin afirmar conclusión del workflow.
 
@@ -117,6 +117,24 @@ Estado parcial, no revisión completa del banco. Publicación desde main mediant
 **Publicación verificada:** el commit `1f1da8aa2ca275c94634dc08013d7a4a1a5c0b22` de main ejecutó correctamente [Deploy GitHub Pages, run 43374867546](https://github.com/itic-academy/simulador-tic/actions/runs/43374867546). README, `cambios-lote-1145.json` e `inventario.json` respondieron HTTP 200; el registro publicado contiene 6046–6050 y el inventario confirma 6.045 examinadas y 6.078 aún sin revisar individualmente.
 
 **Publicación verificada:** el commit `88681c4a463e6363a427457e58eba4b7e81c0b71` de main ejecutó correctamente [Deploy GitHub Pages, run 43373957520](https://github.com/itic-academy/simulador-tic/actions/runs/43373957520). Tras desplegar, README, `cambios-lote-1144.json` e `inventario.json` respondieron HTTP 200; el README servido identifica el lote 1144, el registro contiene los IDs 6041–6045 y el inventario confirma 6.040 revisadas y 6.083 aún sin revisar individualmente.
+
+## Lote 1205 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6346–6350 sobre umbral SARA de contratos de servicios, encargos a medios propios, Agenda 2030, limitación de pagos PAC y FEADER. Se actualiza un umbral legal y se acotan dos formulaciones que podían inducir a error.
+
+- **6346 — umbral SARA de servicios AGE/organismos autónomos:** **corregida**, respuesta A: 140.000 euros desde 1-1-2026, valor estimado sin IVA. El anterior importe de 143.000 euros dejó de regir para el nuevo bienio. A1-11; ITIC Academy declara sin equivalente A2 específico de contratación.
+- **6347 — autorización para encargo a medio propio:** **corregida**, respuesta B: 12.000.000 euros inclusive. Art. 32.6.c LCSP; se precisa que la autorización del Consejo de Ministros es previa a la suscripción y se aplica a órganos del sector público estatal con condición de poder adjudicador. A1-11; sin equivalente A2 específico.
+- **6348 — Agenda 2030:** **vigente**, respuesta C: 17 ODS y 169 metas, según A/RES/70/1. A1-14/A2-I.4.
+- **6349 — capping de la PAC española:** **corregida**, respuesta B (100.000 euros como límite nominal de ABRS antes de deducciones de costes laborales). El enunciado original decía “ayuda máxima” sin matiz: el Plan Estratégico permite deducir costes salariales y aclara que, después de esos ajustes, una explotación puede recibir hasta 200.000 euros de ABRS. Se reformula para que 100.000 no se lea como techo absoluto de todos los pagos posibles. A1-14/15; no se fuerza tema A2 específico de PAC.
+- **6350 — FEADER:** **vigente**, respuesta A: Fondo Europeo Agrícola de Desarrollo Rural, instrumento del segundo pilar de la PAC. A1-15; no se fuerza equivalencia A2 específica.
+
+Fuentes primarias: [Orden HAC/1517/2025, umbrales aplicables desde 2026](https://boe.es/diario_boe/txt.php?id=BOE-A-2025-26605), [Ley 9/2017, arts. 22 y 32](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902), [Reglamento Delegado (UE) 2025/2152](https://eur-lex.europa.eu/eli/reg_del/2025/2152/oj); [Agenda 2030 de Naciones Unidas, A/RES/70/1](https://sdgs.un.org/2030agenda); [MAPA — Plan Estratégico PAC España 2023–2027, capping](https://www.mapa.gob.es/dam/mapa/contenido/reforma-de-la-pac/plan-estrategico-pac-post-2020/documentos/resumen-pac-es.pdf), [Reglamento (UE) 2021/2115](https://eur-lex.europa.eu/eli/reg/2021/2115/oj); [Comisión Europea — fondos de la PAC](https://agriculture.ec.europa.eu/common-agricultural-policy/financing-cap/cap-funds_en) y [MAPA — instrumentos financieros PEPAC/FEADER](https://www.mapa.gob.es/es/pac/instrumentos-financieros/).
+
+Convocatorias oficiales cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, tema 11 (contratación), tema 14 (modelo económico, sostenibilidad y ODS) y tema 15 (sector primario); [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, tema I.4 (Agenda 2030). El programa A2 cotejado no incluye un epígrafe específico de contratación pública, PAC o FEADER, así que no se asignan correspondencias artificiales.
+
+Cotejo curricular ITIC Academy/Drive: [bloque 5 Contratación, Presupuestos, Convenios y Compra TIC, edición 2026](https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk), LCSP, umbrales y encargos (6346–6347; material enfocado al A1); [bloque 6 Economía, Sociedad, Empleo y Transformación Digital](https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk), Agenda 2030/ODS (6348), y cobertura general del sector productivo/desarrollo rural para PAC/FEADER (6349–6350), sin afirmar que el documento respalde las cuantías o defina el acrónimo.
+
+Ejecutados revisar-lote-1205.cjs, academia-lote-1205.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas; 6.345 examinadas; 6.234 verificadas (1.235 vigentes, 4.544 corregidas y 455 históricas); 111 pendientes documentadas (45 de fuente, 66 de ambigüedad); 5.778 sin revisar individualmente; cero errores estructurales.
 
 ## Lote 1204 — 13 de noviembre de 2026
 
