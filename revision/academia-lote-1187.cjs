@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1187.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 6256:{url:'https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk',desc:'ITIC Academy, bloque 39 Calidad y Mantenimiento (2026.1), A1-96 y A2-D7: niveles/técnicas de pruebas, aceptación y pruebas de software.'},
+ 6257:{url:'https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk',desc:'ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información (2026.1): ciclo de vida, métodos y desarrollo, cobertura de A1-86/A1-88 y A2-D1/D2.'},
+ 6258:{url:'https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk',desc:'ITIC Academy, bloque 39 Calidad y Mantenimiento (2026.1), A1-102 y A2-C4: control de cambios/versiones y herramientas; el modelo concreto Gitflow se cotejó con su autor.'},
+ 6259:{url:'https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk',desc:'ITIC Academy, bloque 39 Calidad y Mantenimiento (2026.1), A1-100/A1-102 y A2-C4: gestión de configuración, versiones y entornos.'},
+ 6260:{url:'https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk',desc:'ITIC Academy, bloque 39 Calidad y Mantenimiento (2026.1), A1-102 y A2-C4: control de cambios y versiones y herramientas de operación.'}
+};
+const clean=s=>{s=(s||'').trim();const i=s.indexOf('Cotejo curricular de ITIC Academy:');return(i<0?s:s.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\.[^\n]*/,'').trim();};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&m,'Falta pregunta/mapeo '+c.id);q.clasificacion.bloque_academia=m.desc;const note='Cotejo curricular de ITIC Academy: '+m.desc+' El temario orienta cobertura, pero no es evidencia de la respuesta.';q.clasificacion.nota=(clean(q.clasificacion.nota)+' '+note).trim();q.comentarios=(clean(q.comentarios)+' '+note).trim();q.revision.observaciones=(clean(q.revision.observaciones)+' '+note).trim();if(!q.revision.fuentes.some(f=>f.url===m.url))q.revision.fuentes.push({url:m.url,referencia:'ITIC Academy: '+m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular ITIC Academy actualizado para IDs 6256–6260.');
