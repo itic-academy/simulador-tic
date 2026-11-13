@@ -3,6 +3,8 @@
 Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1215 (IDs 6396–6400). Acumulado: 6.395 preguntas examinadas individualmente; 6.280 verificadas (1.243 vigentes, 4.580 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5.728 sin revisar individualmente.
 
 
+**Publicación verificada:** el commit de datos `3e87a24` (`3e87a24067c5da45e8fc1615ddb62a16033f3642)` completó correctamente [Deploy GitHub Pages, workflow run 43478369895](https://github.com/itic-academy/simulador-tic/actions/runs/43478369895). GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1215.json` e `inventario.json`; el registro publicado contiene los IDs 6396–6400, todos corregidos. El inventario confirma 6.395 examinadas, 6.280 verificadas (1.243 vigentes, 4.580 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.728 sin revisar individualmente.
+
 ## Lote 1215 — 13 de noviembre de 2026
 
 Revisadas individualmente las preguntas 6396–6400. Se corrigieron las formulaciones de IPv6, seguridad IEEE 802.11, tipo de servicio de enlace para voz en tiempo real, garantías universales atribuidas a VoIP y definición de MIB-II. Cada registro conserva el original, la respuesta revisada, explicación, fuentes técnicas primarias y clasificación A1/A2; también se cotejó con el material de redes de ITIC Academy en Drive. Inventario local: 6.395 examinadas, 6.280 verificadas, 114 pendientes y 5.728 aún sin revisión individual; errores de estructura: 0. La verificación de publicación de este lote se documentará después de comprobar GitHub Pages.
