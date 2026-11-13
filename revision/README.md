@@ -2,6 +2,8 @@
 
 Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1165 (IDs 6146–6150). Acumulado: 6.145 preguntas examinadas individualmente; 6.036 verificadas (1.181 vigentes, 4.413 corregidas y 442 históricas); 109 pendientes documentadas (44 de fuente y 65 de ambigüedad); 5.978 sin revisar individualmente.
 
+**Publicación verificada:** el commit de datos `9e688fc` (documentado en `9e688fc4de7e571b03d52693da149015ab9d1ca3`) está servido por GitHub Pages: README, `cambios-lote-1165.json` e `inventario.json` respondieron HTTP 200. El registro contiene los IDs 6146–6150 y el inventario confirma 6.145 examinadas, 6.036 verificadas, 109 pendientes y 5.978 sin revisar. El workflow público de Deploy GitHub Pages para ese commit consta como completado correctamente.
+
 **Publicación verificada:** el commit de datos `ef038ae` (documentado en `ef038ae62d8cda9d1991954ddba8e1ccb8ada8a8`) está servido por GitHub Pages; README, `cambios-lote-1164.json` e `inventario.json` respondieron HTTP 200. El registro contiene los IDs 6141–6145 y el inventario confirma 6.140 examinadas, 6.033 verificadas, 107 pendientes y 5.983 sin revisar. La interfaz de Actions muestra que Deploy GitHub Pages run 427 terminó correctamente.
 
 **Publicación verificada:** el commit de datos `8e227f9` (documentado en `8e227f9a69d0e2003ad2aae29f6dc8e31b369d86`) ya está servido por GitHub Pages: README, `cambios-lote-1163.json` e `inventario.json` respondieron HTTP 200 con consultas sin caché. El registro contiene los IDs 6136–6140 y el inventario confirma 6.135 preguntas examinadas, 6.029 verificadas, 106 pendientes y 5.988 sin revisar.
