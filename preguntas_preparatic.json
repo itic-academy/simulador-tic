@@ -319607,71 +319607,312 @@
       "id": 6156,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según las convenciones de la arquitectura REST, ¿qué método de los siguientes no es necesariamente idempotente?",
+      "texto": "Según la semántica de los métodos HTTP utilizada por una API REST, ¿qué método no garantiza por sí mismo que repetir una petición tenga el mismo efecto que ejecutarla una sola vez?",
       "opciones": [
-        "DELETE.",
-        "PUT.",
-        "POST.",
-        "GET."
+        "DELETE",
+        "PUT",
+        "POST",
+        "GET"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La opción C, POST, es la respuesta: la idempotencia no está garantizada por el método. RFC 9110 califica PUT, DELETE y los métodos seguros (como GET) como idempotentes; POST procesa la representación según la semántica particular del recurso y puede crear efectos adicionales en cada solicitud. Se evita afirmar que todo POST sea siempre no idempotente: una aplicación puede diseñarlo idempotente, pero no es una propiedad garantizada por la convención. Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026.1 (25-09-2026), sección 2.5 sobre servicios web y métodos HTTP; encaja con A1-65/A2-III.12. La garantía de idempotencia se contrasta con RFC 9110. Temas oficiales asociados: A1-65/A2-III-12. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026.1 (25-09-2026), sección 2.5 sobre servicios web y métodos HTTP; encaja con A1-65/A2-III.12. La garantía de idempotencia se contrasta con RFC 9110.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026.1 (25-09-2026), sección 2.5 sobre servicios web y métodos HTTP; encaja con A1-65/A2-III.12. La garantía de idempotencia se contrasta con RFC 9110. Temas oficiales asociados: A1-65/A2-III-12. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices."
+      },
+      "etiquetas": [
+        "REST",
+        "HTTP",
+        "POST",
+        "idempotencia"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+            "referencia": "RFC 9110 §9.2.2: PUT, DELETE y métodos seguros son idempotentes; POST no figura como método necesariamente idempotente y su efecto depende de la semántica del recurso."
+          },
+          {
+            "url": "https://datatracker.ietf.org/doc/html/rfc9110/",
+            "referencia": "RFC 9110, registro del IETF: el servidor puede definir efectos de POST específicos del recurso y el cliente no debe tratarlo automáticamente como idempotente."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 65: arquitectura de desarrollo web."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema III.12: aplicaciones web, protocolos e interoperabilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy 2026, bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026.1 (25-09-2026), sección 2.5 sobre servicios web y métodos HTTP; encaja con A1-65/A2-III.12. La garantía de idempotencia se contrasta con RFC 9110."
+          }
+        ],
+        "observaciones": "La opción C, POST, es la respuesta: la idempotencia no está garantizada por el método. RFC 9110 califica PUT, DELETE y los métodos seguros (como GET) como idempotentes; POST procesa la representación según la semántica particular del recurso y puede crear efectos adicionales en cada solicitud. Se evita afirmar que todo POST sea siempre no idempotente: una aplicación puede diseñarlo idempotente, pero no es una propiedad garantizada por la convención. Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026.1 (25-09-2026), sección 2.5 sobre servicios web y métodos HTTP; encaja con A1-65/A2-III.12. La garantía de idempotencia se contrasta con RFC 9110. Temas oficiales asociados: A1-65/A2-III-12. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices."
+      }
     },
     {
       "id": 6157,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la arquitectura orientada a servicios, el estándar WSRP:",
+      "texto": "¿Qué especificación OASIS permite que un portal consumidor integre y presente portlets interactivos ofrecidos por un productor remoto?",
       "opciones": [
-        "Web Service for Remote Process, es utilizado para integrar servicios web con aplicaciones de las que necesiten datos para ejecutar su funcionalidad",
-        "Web Service for Remote Portlets, es utilizado para potenciar el uso de Servicios Web por la interfaz de aplicación",
-        "Web Service for Resource Planning, es utilizado para su integración con los ERP de la organización",
-        "Web Service for Redirect Processing, es utilizado para recoger cierta funcionalidad de otro Servicio Web necesaria para completar la suya"
+        "Web Services for Remote Process (WSRP)",
+        "Web Services for Remote Portlets (WSRP)",
+        "Web Services for Resource Planning (WSRP)",
+        "Web Services for Redirect Processing (WSRP)"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La expansión es Web Services for Remote Portlets. El estándar permite que un portal consumidor integre portlets ofrecidos por un productor remoto y agregue su marcado para presentarlo al usuario. Se sustituye la definición confusa heredada por el propósito recogido en OASIS; no se equipara WSRP con el nombre genérico “servicio web”. Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, §§2.5 y 2.10 sobre SOA, portlets/servicios web e interoperabilidad; encaja con A1-58/A1-65/A2-II.6/III.12. La función normativa se comprueba en el estándar OASIS WSRP. Temas oficiales asociados: A1-58/A1-65/A2-II-6/A2-III-12. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices.",
+      "clasificacion": {
+        "A1": [
+          "A1-58",
+          "A1-65"
+        ],
+        "A2": [
+          "A2-II-6",
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 28, §§2.5 y 2.10 sobre SOA, portlets/servicios web e interoperabilidad; encaja con A1-58/A1-65/A2-II.6/III.12. La función normativa se comprueba en el estándar OASIS WSRP.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, §§2.5 y 2.10 sobre SOA, portlets/servicios web e interoperabilidad; encaja con A1-58/A1-65/A2-II.6/III.12. La función normativa se comprueba en el estándar OASIS WSRP. Temas oficiales asociados: A1-58/A1-65/A2-II-6/A2-III-12. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices."
+      },
+      "etiquetas": [
+        "WSRP",
+        "Web Services for Remote Portlets",
+        "OASIS",
+        "portlets remotos",
+        "portal"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://docs.oasis-open.org/wsrp/v2/wsrp-2.0-spec-os-01.html",
+            "referencia": "OASIS Web Services for Remote Portlets Specification v2.0: define Producer y Consumer, interfaces y portlets remotos para integrar y presentar contenido interactivo en aplicaciones/portales."
+          },
+          {
+            "url": "https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wsrp",
+            "referencia": "Comité oficial OASIS WSRP: identifica WSRP 2.0 como especificación aprobada como estándar OASIS en abril de 2008."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 58: arquitecturas SOA y procesamiento cooperativo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, temas II.6 y III.12: arquitectura de servicios web, aplicaciones y protocolos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy 2026, bloque 28, §§2.5 y 2.10 sobre SOA, portlets/servicios web e interoperabilidad; encaja con A1-58/A1-65/A2-II.6/III.12. La función normativa se comprueba en el estándar OASIS WSRP."
+          }
+        ],
+        "observaciones": "La expansión es Web Services for Remote Portlets. El estándar permite que un portal consumidor integre portlets ofrecidos por un productor remoto y agregue su marcado para presentarlo al usuario. Se sustituye la definición confusa heredada por el propósito recogido en OASIS; no se equipara WSRP con el nombre genérico “servicio web”. Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, §§2.5 y 2.10 sobre SOA, portlets/servicios web e interoperabilidad; encaja con A1-58/A1-65/A2-II.6/III.12. La función normativa se comprueba en el estándar OASIS WSRP. Temas oficiales asociados: A1-58/A1-65/A2-II-6/A2-III-12. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices."
+      }
     },
     {
       "id": 6158,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de estos tipos NO es un tipo de middleware?",
+      "texto": "¿Cuál de las siguientes es una recomendación para servicios de directorio y no una tecnología de middleware distribuido para invocar o comunicar componentes?",
       "opciones": [
-        "RPC",
-        "X-500",
-        "ORB",
-        "Conversaciones o diálogos continuos entre dos o más sistemas sobre una conexión lógica"
+        "RPC (Remote Procedure Call)",
+        "ITU-T X.500",
+        "ORB (Object Request Broker)",
+        "Middleware orientado a mensajes"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se corrige el error tipográfico «X-500» a X.500 y se acota el criterio: X.500 es la serie de recomendaciones de directorio ITU-T/ISO, mientras RPC y ORB son mecanismos/arquitecturas de middleware distribuido; la opción descriptiva se sustituye por middleware orientado a mensajes. La respuesta continúa siendo B. Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, secciones de arquitectura distribuida y servicios; encaje A1-58/A1-80/A2-II.6. X.500 se identifica como estándar de directorio en ITU-T, frente a RPC/ORB como middleware distribuido. Temas oficiales asociados: A1-58/A1-80/A2-II-6. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices.",
+      "clasificacion": {
+        "A1": [
+          "A1-58",
+          "A1-80"
+        ],
+        "A2": [
+          "A2-II-6"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 28, secciones de arquitectura distribuida y servicios; encaje A1-58/A1-80/A2-II.6. X.500 se identifica como estándar de directorio en ITU-T, frente a RPC/ORB como middleware distribuido.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, secciones de arquitectura distribuida y servicios; encaje A1-58/A1-80/A2-II.6. X.500 se identifica como estándar de directorio en ITU-T, frente a RPC/ORB como middleware distribuido. Temas oficiales asociados: A1-58/A1-80/A2-II-6. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices."
+      },
+      "etiquetas": [
+        "middleware",
+        "X.500",
+        "RPC",
+        "ORB",
+        "servicio de directorio"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-X.500-201910-I",
+            "referencia": "Recomendación ITU-T X.500 (10/2019): el título y objeto de la recomendación son el Directorio, sus conceptos, modelos y servicios; no es una plataforma middleware de invocación/comunicación."
+          },
+          {
+            "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?id=14031",
+            "referencia": "Registro ITU-T: X.500/ISO/IEC 9594-1 introduce el Directory y la Directory Information Base (DIB), y resume sus servicios."
+          },
+          {
+            "url": "https://www.omg.org/spec/CORBA/3.4",
+            "referencia": "OMG CORBA 3.4: especificación de arquitectura de objetos distribuidos y Object Request Broker (ORB)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, temas 58 y 80: arquitectura distribuida/middleware y directorios X.500."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.6: sistemas distribuidos, interoperabilidad y arquitectura cliente-servidor."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy 2026, bloque 28, secciones de arquitectura distribuida y servicios; encaje A1-58/A1-80/A2-II.6. X.500 se identifica como estándar de directorio en ITU-T, frente a RPC/ORB como middleware distribuido."
+          }
+        ],
+        "observaciones": "Se corrige el error tipográfico «X-500» a X.500 y se acota el criterio: X.500 es la serie de recomendaciones de directorio ITU-T/ISO, mientras RPC y ORB son mecanismos/arquitecturas de middleware distribuido; la opción descriptiva se sustituye por middleware orientado a mensajes. La respuesta continúa siendo B. Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, secciones de arquitectura distribuida y servicios; encaje A1-58/A1-80/A2-II.6. X.500 se identifica como estándar de directorio en ITU-T, frente a RPC/ORB como middleware distribuido. Temas oficiales asociados: A1-58/A1-80/A2-II-6. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices."
+      }
     },
     {
       "id": 6159,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de estas afirmaciones al respecto de los servicios Web es correcta?",
+      "texto": "¿Cuál afirmación describe correctamente una especificación o estándar de servicios web?",
       "opciones": [
-        "El WSDL (Lenguaje Descripción de Servicios Web) es una especificación basada en el protocolo HTTP.",
-        "SOAP es un protocolo para el intercambio de información en entornos distribuidos.",
-        "WS-I es el protocolo que permite la interoperabilidad entre aplicaciones web.",
-        "UDDI es una especificación para el intercambio de información encriptada."
+        "WSDL solo puede describir servicios cuyo protocolo de comunicación sea HTTP.",
+        "SOAP define un marco XML de mensajería para intercambiar mensajes entre nodos de servicios web.",
+        "WS-I es un protocolo que transporta mensajes entre aplicaciones web.",
+        "UDDI cifra la información intercambiada entre servicios web."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La respuesta B es correcta: SOAP proporciona un marco de mensajería para intercambio de información en sistemas distribuidos. Se reescriben las opciones para distinguirlo de WSDL (descripción de interfaces y bindings), WS-I (organización y perfiles de interoperabilidad) y UDDI (registro/descubrimiento de servicios). La clave heredada se conserva. Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, §2.5 «Servicios web», con SOAP, WSDL y estándares de interoperabilidad; encaja con A1-58/A1-65/A2-II.6/III.12. Las funciones se contrastan separadamente en W3C, WS-I y OASIS. Temas oficiales asociados: A1-58/A1-65/A2-II-6/A2-III-12. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices.",
+      "clasificacion": {
+        "A1": [
+          "A1-58",
+          "A1-65"
+        ],
+        "A2": [
+          "A2-II-6",
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 28, §2.5 «Servicios web», con SOAP, WSDL y estándares de interoperabilidad; encaja con A1-58/A1-65/A2-II.6/III.12. Las funciones se contrastan separadamente en W3C, WS-I y OASIS.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, §2.5 «Servicios web», con SOAP, WSDL y estándares de interoperabilidad; encaja con A1-58/A1-65/A2-II.6/III.12. Las funciones se contrastan separadamente en W3C, WS-I y OASIS. Temas oficiales asociados: A1-58/A1-65/A2-II-6/A2-III-12. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices."
+      },
+      "etiquetas": [
+        "servicios web",
+        "SOAP",
+        "WSDL",
+        "WS-I",
+        "UDDI"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/soap12/",
+            "referencia": "W3C SOAP 1.2 Part 1: define un marco XML de mensajería para intercambiar mensajes entre nodos SOAP."
+          },
+          {
+            "url": "https://www.w3.org/TR/wsdl/",
+            "referencia": "W3C WSDL 2.0: describe interfaces, operaciones y mensajes de servicios; permite bindings a formatos/protocolos y no es una especificación basada exclusivamente en HTTP."
+          },
+          {
+            "url": "https://ws-i.org/",
+            "referencia": "WS-I se presenta como organización/misión de interoperabilidad y publica perfiles; no es en sí un protocolo de intercambio."
+          },
+          {
+            "url": "https://www.oasis-open.org/standards/",
+            "referencia": "Archivo OASIS: UDDI es un estándar de registro para descripción y descubrimiento de servicios web, no cifrado de información."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, temas 58 y 65: SOA y arquitectura web."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, temas II.6 y III.12: arquitectura de servicios web, protocolos e interoperabilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy 2026, bloque 28, §2.5 «Servicios web», con SOAP, WSDL y estándares de interoperabilidad; encaja con A1-58/A1-65/A2-II.6/III.12. Las funciones se contrastan separadamente en W3C, WS-I y OASIS."
+          }
+        ],
+        "observaciones": "La respuesta B es correcta: SOAP proporciona un marco de mensajería para intercambio de información en sistemas distribuidos. Se reescriben las opciones para distinguirlo de WSDL (descripción de interfaces y bindings), WS-I (organización y perfiles de interoperabilidad) y UDDI (registro/descubrimiento de servicios). La clave heredada se conserva. Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, §2.5 «Servicios web», con SOAP, WSDL y estándares de interoperabilidad; encaja con A1-58/A1-65/A2-II.6/III.12. Las funciones se contrastan separadamente en W3C, WS-I y OASIS. Temas oficiales asociados: A1-58/A1-65/A2-II-6/A2-III-12. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices."
+      }
     },
     {
       "id": 6160,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo es por lo general el paso de mensajes mediante la primitiva send-receive?",
+      "texto": "En un modelo de paso de mensajes por rendezvous, si el envío bloqueante solo termina cuando se inicia una recepción coincidente, ¿cómo se clasifica el intercambio?",
       "opciones": [
-        "Síncrona",
-        "Asíncrona",
-        "Se realiza una llamada desde un cliente a una función o procedimiento de un servidor",
-        "Se instancia un objeto del servidor"
+        "Síncrono",
+        "Asíncrono",
+        "Llamada remota a un procedimiento del servidor",
+        "Instanciación de un objeto del servidor"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se acota el reactivo a un modelo de paso de mensajes por rendezvous: si el envío bloqueante no finaliza hasta que se inicia la recepción coincidente, la comunicación es síncrona (A). Sin especificar el modo, send/receive no implica por sí solo sincronía: en bibliotecas como MPI existen modos estándar, síncrono, buffered y ready, además de operaciones no bloqueantes. La reformulación evita generalizar la semántica de una primitiva a todos los sistemas. Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, §1.2 sobre mecanismos de comunicación en arquitecturas distribuidas; encaja con A1-58/A2-II.6. La semántica específica del envío síncrono rendezvous se coteja con el estándar MPI, que distingue varios modos de envío. Temas oficiales asociados: A1-58/A2-II-6. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices.",
+      "clasificacion": {
+        "A1": [
+          "A1-58"
+        ],
+        "A2": [
+          "A2-II-6"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 28, §1.2 sobre mecanismos de comunicación en arquitecturas distribuidas; encaja con A1-58/A2-II.6. La semántica específica del envío síncrono rendezvous se coteja con el estándar MPI, que distingue varios modos de envío.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, §1.2 sobre mecanismos de comunicación en arquitecturas distribuidas; encaja con A1-58/A2-II.6. La semántica específica del envío síncrono rendezvous se coteja con el estándar MPI, que distingue varios modos de envío. Temas oficiales asociados: A1-58/A2-II-6. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices."
+      },
+      "etiquetas": [
+        "paso de mensajes",
+        "send-receive",
+        "rendezvous",
+        "comunicación síncrona",
+        "MPI"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.mpi-forum.org/docs/mpi-4.1/mpi41-report/node74.htm",
+            "referencia": "MPI 4.1 §4.7.3: la finalización de un envío en modo síncrono indica que se inició una recepción coincidente."
+          },
+          {
+            "url": "https://www.mpi-forum.org/docs/mpi-4.1/mpi41-report/node73.htm",
+            "referencia": "MPI 4.1 §4.7.2: define las operaciones de envío síncrono y sus semánticas de inicio/completado."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 58: procesamiento cooperativo y arquitectura distribuida."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.6: sistemas distribuidos, comunicación e interoperabilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy 2026, bloque 28, §1.2 sobre mecanismos de comunicación en arquitecturas distribuidas; encaja con A1-58/A2-II.6. La semántica específica del envío síncrono rendezvous se coteja con el estándar MPI, que distingue varios modos de envío."
+          }
+        ],
+        "observaciones": "Se acota el reactivo a un modelo de paso de mensajes por rendezvous: si el envío bloqueante no finaliza hasta que se inicia la recepción coincidente, la comunicación es síncrona (A). Sin especificar el modo, send/receive no implica por sí solo sincronía: en bibliotecas como MPI existen modos estándar, síncrono, buffered y ready, además de operaciones no bloqueantes. La reformulación evita generalizar la semántica de una primitiva a todos los sistemas. Cotejo curricular de ITIC Academy: ITIC Academy 2026, bloque 28, §1.2 sobre mecanismos de comunicación en arquitecturas distribuidas; encaja con A1-58/A2-II.6. La semántica específica del envío síncrono rendezvous se coteja con el estándar MPI, que distingue varios modos de envío. Temas oficiales asociados: A1-58/A2-II-6. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave y sus matices."
+      }
     },
     {
       "id": 6161,
