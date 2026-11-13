@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1126 (IDs 5951–5955); también se resolvió el pendiente histórico ID 77. Acumulado: 5.950 preguntas examinadas individualmente; 5.849 verificadas (1.115 vigentes, 4.303 corregidas y 431 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.173 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1127 (IDs 5956–5960); también se resolvió el pendiente histórico ID 77. Acumulado: 5.955 preguntas examinadas individualmente; 5.854 verificadas (1.116 vigentes, 4.307 corregidas y 431 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.168 sin revisar individualmente.
+
+## Lote 1127 — 13 de noviembre de 2026
+
+IDs 5956–5960 contrastados con los textos consolidados de las Leyes 39/2015 y 40/2015 y del RD 203/2021. Se corrigieron el alcance de ejecución material, una afirmación que atribuía erróneamente la excepción de metadatos a copias electrónicas sin cambio de formato, la clave de una pregunta de notificaciones y el alcance temporal de la atribución ministerial de DEHú. El [registro del lote 1127](cambios-lote-1127.json) mantiene el original íntegro, las correcciones, las claves y las fuentes.
+
+- **5956 — ejecución administrativa:** **corregida**, respuesta B (incorrecta). El art. 97.1 exige resolución previa para actuaciones materiales de ejecución que limiten derechos; una resolución también puede imponer multas y la ejecución forzosa puede afectar al patrimonio (arts. 98–100). A1-8/A2-I.8.
+- **5957 — copias electrónicas:** **corregida**, respuesta B (incorrecta). La ley exige metadatos visibles también para copias electrónicas de original/copia auténtica sin cambio de formato; se reparó la opción que lo negaba. A1-8/A2-I.8.
+- **5958 — eficacia de notificación incompleta:** **corregida**, respuesta A. El art. 40.3 hace que surta efecto si, con texto íntegro, la persona interesada conoce y actúa respecto al contenido/alcance o interpone recurso. La opción D se limita al cumplimiento del plazo máximo (art. 40.4), no a la validez general. A1-8/A2-I.8.
+- **5959 — firma automatizada:** **vigente**, respuesta D. El art. 20.1.a RD 203/2021 contempla sello electrónico con certificado cualificado; también admite CSV en la letra b. A1-80/A2-I.6/I.9.
+- **5960 — sistema de notificaciones:** **corregida**, respuesta A (DEHú). El enunciado se limita al nombre que emplea el art. 44 RD 203/2021 para no perpetuar la adscripción a ministerios cuyas denominaciones pueden cambiar. A1-49/A2-I.9.
+
+Fuentes primarias: [Ley 39/2015 consolidada al 29-09-2026](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565&p=20260929&tn=1), arts. 27.1–4, 40.2–4 y 97–100; [RD 203/2021 consolidado](https://www.boe.es/buscar/act.php?id=BOE-A-2021-5032&p=20250402&tn=1), arts. 20 y 44; [Ley 40/2015 consolidada](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566&p=20260929&tn=1), art. 42. Convocatorias oficiales cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 8/49/80; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas I.6/I.8/I.9. Cotejo curricular: [ITIC Academy, bloque 03, Actuación administrativa y Administración digital (actualización 2026)](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk). La clave legal se contrasta con BOE; el material académico ubica el tema en el programa.
+
+Ejecutados revisar-lote-1127.cjs, academia-lote-1127.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas, 5.955 examinadas individualmente, 101 pendientes explícitas, 6.168 sin revisar individualmente y cero errores estructurales. La validación estructural no sustituye revisión de contenido.
 
 ## Lote 1126 — 13 de noviembre de 2026
 
