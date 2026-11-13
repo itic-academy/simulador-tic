@@ -1,0 +1,41 @@
+require('./aplicar-lote.cjs')({
+ numero:'1142',fecha:'2026-11-13',
+ records:[
+  [6031,[112,123],['IV-15'],['LTE','4G','canal de 20 MHz','MIMO','velocidad teórica'],[
+   {url:'https://www.etsi.org/deliver/etsi_tr/125900_125999/125912/16.00.00_60/tr_125912v160000p.pdf',referencia:'ETSI TR 125 912 V16.0.0 (3GPP TR 25.912 Release 16), tabla 13.1: pico de bajada E-UTRA FDD/TDD con 64-QAM y R=1: 326,4 Mbit/s para 4x4 MIMO en 20 MHz; es un escenario teórico concreto, no una velocidad universal de LTE.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, temas 112 (LTE y tecnologías de acceso) y 123 (generaciones móviles).'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema IV.15: sistemas y generaciones de comunicaciones móviles.'}
+  ],null,'Se mantiene la opción A, pero se acota su afirmación: 326,4 Mbit/s es un pico teórico de bajada de E-UTRA en 20 MHz bajo el supuesto de 4x4 MIMO, 64-QAM y tasa de codificación R=1 que especifica ETSI/3GPP. No es una velocidad garantizada ni el máximo de toda variante LTE/LTE-Advanced. Se corrigen las erratas Mbps/MHz y se hace explícito el escenario técnico.','corregida'],
+  [6032,[44],['III-14'],['WCAG 2.1','accesibilidad','idioma de partes','criterio 3.1.2'],[
+   {url:'https://www.w3.org/TR/WCAG21/#language-of-parts',referencia:'W3C Recommendation, WCAG 2.1, criterio de éxito 3.1.2 Language of Parts: idioma de cada pasaje o frase determinable programáticamente; nivel AA.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 44: accesibilidad y usabilidad, W3C.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema III.14: accesibilidad, diseño universal y usabilidad.'}
+  ],null,'La respuesta B (AA) se mantiene. El requisito descrito corresponde al criterio 3.1.2 «Language of Parts» de WCAG 2.1. Se distingue de 3.1.1 «Language of Page», de nivel A, que pide determinar programáticamente el idioma predeterminado de la página.','vigente'],
+  [6033,[97],['III-6'],['integración continua','SonarQube','análisis estático','métricas de calidad','Jenkins','Maven','POM'],[
+   {url:'https://docs.sonarsource.com/sonarqube-server/user-guide/code-metrics/introduction',referencia:'SonarSource, documentación oficial de métricas: el análisis automatizado de código emplea métricas para evaluar la calidad.'},
+   {url:'https://docs.sonarsource.com/sonarqube-server/user-guide/code-metrics/metrics-definition',referencia:'SonarSource, definiciones de métricas: fiabilidad, seguridad, mantenibilidad, cobertura, duplicación, tamaño y complejidad.'},
+   {url:'https://www.jenkins.io/doc/book/managing/plugins/',referencia:'Jenkins, documentación oficial: los plugins son el medio principal para ampliar la funcionalidad de una instalación.'},
+   {url:'https://www.jenkins.io/project/governance/',referencia:'Jenkins, gobernanza y licencia del proyecto: MIT es la licencia primaria del código del proyecto, no una licencia de Oracle.'},
+   {url:'https://maven.apache.org/pom.html',referencia:'Apache Maven, referencia POM: el Project Object Model es una representación XML del proyecto.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 97: modelos y herramientas de integración continua.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema III.6: construcción, despliegue, integración continua y DevOps.'}
+  ],null,'La respuesta B es correcta. SonarQube analiza automáticamente código fuente y presenta métricas e incidencias relacionadas con fiabilidad, seguridad y mantenibilidad; las métricas ayudan a evaluar calidad, no la garantizan por sí solas. Las otras opciones se descartan con documentación primaria: Jenkins admite plugins y su código de proyecto usa MIT; Maven define POM como una representación XML.','corregida'],
+  [6034,[118],[],['IEEE 802.5','Token Ring','trama de datos','estación emisora','frame stripping','histórico'],[
+   {url:'https://pure.tue.nl/ws/portalfiles/portal/46711707/283998-1.pdf',referencia:'Reimpresión del estándar ANSI/IEEE 802.5-1985: la estación origen permanece en estado de transmisión hasta retirar del anillo las tramas que originó; apartados de token transmission y stripping.'},
+   {url:'https://www.cisco.com/en/US/docs/internetworking/troubleshooting/guide/tr1906.html',referencia:'Cisco, guía técnica de Token Ring: la estación destino copia la trama, que sigue circulando y finalmente es retirada al volver a la emisora; contempla también early token release.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 118: arquitecturas y métodos de acceso en redes de área local.'}
+  ],null,'Se marca como histórica y se reescribe para preguntar por IEEE 802.5 clásico sin liberación temprana del testigo. La estación destino reconoce y copia la trama, pudiendo señalarlo en los bits A/C del Frame Status; no la elimina. La trama regresa a la estación origen, que la retira del anillo. Algunas implementaciones permiten early token release, por lo que la condición se explicita.','historica'],
+  [6035,[56],[],['MIDI','multimedia','mensajes musicales','eventos de interpretación','no es audio'],[
+   {url:'https://midi.org/about-midi-part-1overview',referencia:'MIDI Association, introducción oficial: MIDI describe eventos de interpretación, notas, duración, tempo, instrumentos y volumen; MIDI no es audio.'},
+   {url:'https://midi.org/about-midi-part-3midi-messages',referencia:'MIDI Association, especificación de mensajes: el protocolo transporta eventos de interpretación y control, entre otros, no una señal de audio digital.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 56: dispositivos para el tratamiento de información multimedia.'}
+  ],null,'Se conserva la respuesta C con una definición más precisa: MIDI transmite mensajes de eventos de interpretación y control entre instrumentos, controladores y software musical (por ejemplo, activación de notas, parámetros o selección de sonidos); no codifica ni transporta el audio resultante.','corregida']
+ ],
+ edits:{
+ 6031:{texto:'Para LTE/E-UTRA con un canal de 20 MHz, ¿qué pico teórico de bajada especifica 3GPP para el supuesto de 4x4 MIMO, 64-QAM y tasa de codificación R=1?',opciones:['326,4 Mbit/s.','2 Mbit/s.','256 Mbit/s con un canal de 200 kHz.','1 Gbit/s como máximo de toda variante LTE.'],respuesta_correcta:0},
+ 6032:{texto:'En WCAG 2.1, ¿qué nivel de conformidad corresponde al criterio 3.1.2, que exige que el idioma de cada pasaje o frase pueda determinarse programáticamente?',opciones:['A.','AA.','AAA.','AAAA.'],respuesta_correcta:1},
+ 6033:{texto:'Sobre herramientas y artefactos usados en integración continua, indique la afirmación correcta:',opciones:['Jenkins no admite extensiones mediante plugins.','SonarQube analiza automáticamente el código y presenta métricas e incidencias útiles para evaluar su calidad.','El POM de Maven puede expresarse en un formato distinto de XML.','El código del proyecto Jenkins está bajo licencia Oracle.'],respuesta_correcta:1},
+ 6034:{texto:'En IEEE 802.5 clásico, sin liberación temprana del testigo, ¿qué ocurre después de que la estación destino reconoce y copia una trama de datos?',opciones:['La estación destino elimina la trama y envía un acuse de recibo independiente.','La trama continúa por el anillo hasta volver a la estación emisora, que la retira.','La trama convierte el testigo en una secuencia de cabecera.','La estación destino añade datos al testigo antes de reenviar la trama.'],respuesta_correcta:1},
+ 6035:{texto:'¿Qué describe correctamente MIDI?',opciones:['Un formato de codificación de imágenes digitales.','Un conjunto de normas para ensamblar la arquitectura de ordenadores.','Un protocolo de mensajes de eventos y control para instrumentos y software musical; no contiene el audio generado.','Un servicio para transferir automáticamente textos entre memorias de terminales.'],respuesta_correcta:2}
+ }
+});
