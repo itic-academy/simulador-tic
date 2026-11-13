@@ -1,7 +1,7 @@
 const fs=require('node:fs'),path=require('node:path');
 const f=path.join(__dirname,'README.md');let s=fs.readFileSync(f,'utf8');
 const old='Último lote secuencial: 1134 (IDs 5991–5995); también se resolvió el pendiente histórico ID 77. Acumulado: 5.990 preguntas examinadas individualmente; 5.889 verificadas (1.136 vigentes, 4.320 corregidas y 433 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.133 sin revisar individualmente.';
-const next='Último lote secuencial: 1135 (IDs 5996–6000); también se resolvió el pendiente histórico ID 77. Acumulado: 5.995 preguntas examinadas individualmente; 5.894 verificadas (1.139 vigentes, 4.323 corregidas y 433 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.128 sin revisar individualmente.';
+const next='Último lote secuencial: 1135 (IDs 5996–6000); también se resolvió el pendiente histórico ID 77. Acumulado: 5.995 preguntas examinadas individualmente; 5.894 verificadas (1.138 vigentes, 4.323 corregidas y 433 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.128 sin revisar individualmente.';
 if(!s.includes(old))throw Error('Resumen previo no coincide; no se sobrescribe.');s=s.replace(old,next);
 const section=`## Lote 1135 — 13 de noviembre de 2026
 
