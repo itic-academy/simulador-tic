@@ -1,10 +1,14 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1217 (IDs 6406–6410). Acumulado: 6405 preguntas examinadas individualmente; 6291 verificadas (1244 vigentes, 4589 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5718 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1218 (IDs 6411–6415). Acumulado: 6410 preguntas examinadas individualmente; 6296 verificadas (1245 vigentes, 4593 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5713 sin revisar individualmente.
 
 
 
 **Publicación verificada:** el commit de datos `a7489b2` (`a7489b2fba09dc5b126800dffe7f099d43ac9ae7)` completó correctamente [Deploy GitHub Pages, workflow run 43482543600](https://github.com/itic-academy/simulador-tic/actions/runs/43482543600). El workflow muestra estado `Success` y contiene el commit `a7489b2`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1217.json` e `inventario.json`; el registro servido contiene los IDs 6406–6410, todos corregidos. El inventario público confirma 6.405 examinadas, 6.291 verificadas (1.244 vigentes, 4.589 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.718 sin revisar individualmente.
+
+## Lote 1218 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6411–6415. Se confirmó la evaluación de impacto previa al tratamiento de alto riesgo del art. 35 RGPD; se sustituyó la cuestión confusa sobre CAU por la función de punto central de contacto del service desk; se precisó la naturaleza jurídica del RGPD según art. 288 TFUE; se afinó la definición de garantía (warranty) en ITIL 4 sin equipararla a todos los requisitos no funcionales; y se formuló con precisión la capa semántica del EIF, anotando la revisión en curso del marco. Se preservaron las cinco versiones originales y se añadieron explicaciones, fuentes primarias, temas oficiales A1/A2 y cotejo de bloques de ITIC Academy en Drive: 08 (protección de datos), 41 (ITIL/COBIT), 34 (gobierno y semántica de datos) y 11 (datos abiertos/ENI). Inventario local: 6410 examinadas, 6296 verificadas, 114 pendientes y 5713 sin revisar individualmente; inventario y verificador sin errores estructurales. Pendiente verificar la publicación de este lote.
 
 ## Lote 1217 — 13 de noviembre de 2026
 
