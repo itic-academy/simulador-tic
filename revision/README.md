@@ -2,6 +2,8 @@
 
 Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1144 (IDs 6041–6045); también se resolvió el pendiente histórico ID 77. Acumulado: 6.040 preguntas examinadas individualmente; 5.937 verificadas (1.151 vigentes, 4.349 corregidas y 437 históricas); 103 pendientes documentadas (42 de fuente y 61 de ambigüedad); 6.083 sin revisar individualmente.
 
+**Publicación verificada:** el commit `88681c4a463e6363a427457e58eba4b7e81c0b71` de main ejecutó correctamente [Deploy GitHub Pages, run 43373957520](https://github.com/itic-academy/simulador-tic/actions/runs/43373957520). Tras desplegar, README, `cambios-lote-1144.json` e `inventario.json` respondieron HTTP 200; el README servido identifica el lote 1144, el registro contiene los IDs 6041–6045 y el inventario confirma 6.040 revisadas y 6.083 aún sin revisar individualmente.
+
 ## Lote 1144 — 13 de noviembre de 2026
 
 IDs 6041–6045 revisados individualmente con la OMS, BOE, EUR-Lex y materiales de ITIC Academy en Drive. Se aclara la frontera entre planificación estratégica y operativa en 6041; se verifican los artículos 136 y 2 de la Constitución y las competencias de los Subsecretarios en la Ley 40/2015; y se confirma la fecha de entrada en vigor del Tratado de Amsterdam. Los originales completos se preservan en el [registro del lote 1144](cambios-lote-1144.json).
