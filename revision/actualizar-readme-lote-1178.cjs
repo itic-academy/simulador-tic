@@ -1,0 +1,22 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const file=path.join(__dirname,'README.md');let s=fs.readFileSync(file,'utf8');
+const old='Último lote secuencial: 1177 (IDs 6206–6210). Acumulado: 6.205 preguntas examinadas individualmente; 6.095 verificadas (1.196 vigentes, 4.454 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.918 sin revisar individualmente.';
+const neu='Último lote secuencial: 1178 (IDs 6211–6215). Acumulado: 6.210 preguntas examinadas individualmente; 6.100 verificadas (1.197 vigentes, 4.458 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.913 sin revisar individualmente.';
+const section=`## Lote 1178 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6211–6215 sobre C/C++, WSDL, tráfico multimedia bajo demanda, SOAP Encoding y marshalling en RPC. Se corrigen cuatro (6211, 6213–6215); 6212 se mantiene vigente.
+
+- **6211 — C y C++:** **corregida**, respuesta C. C++ se inspiró en C, pero tiene especificación propia y no es un superconjunto estricto: algunos programas C no son programas C++ válidos. Se elimina la afirmación imprecisa de que C++ es «un superconjunto de instrucciones» de C. A2-II.3.
+- **6212 — WSDL:** **vigente**, respuesta B. WSDL describe interfaces, operaciones y endpoints de servicios web; SOAP trata el intercambio de mensajes y UDDI el registro/descubrimiento. A1-65/77, A2-III.12.
+- **6213 — multimedia:** **corregida**, respuesta C. El original generalizaba sobre todo servicio multimedia interactivo. Se acota a consulta/streaming bajo demanda, donde habitualmente el contenido produce más tráfico servidor→cliente; videoconferencia y juegos pueden tener perfiles diferentes. A1-130, A2-IV.16.
+- **6214 — SOAP:** **corregida**, respuesta C. Se especifica SOAP 1.1: §5 define reglas de serialización para instancias de tipos de aplicación. Envelope, binding y RPC representation tienen funciones distintas; la opción no se generaliza a todas las versiones de SOAP. A1-65, A2-III.12.
+- **6215 — RPC:** **corregida**, respuesta C. Marshalling en el emisor codifica/serializa argumentos en una representación de transporte (p. ej., XDR); el receptor realiza unmarshalling. A1-58, A2-II.6.
+
+Fuentes primarias: [WG21/WG14 P2735R0, C xor C++](https://isocpp.org/files/papers/P2735R0.pdf) y [ISO/IEC 14882:2024](https://www.iso.org/standard/83627.html); [W3C WSDL 2.0](https://www.w3.org/TR/wsdl20/), [W3C Web Services Architecture](https://www.w3.org/TR/ws-arch/), [W3C SOAP 1.1](https://www.w3.org/TR/soap11/) y [SOAP 1.2](https://www.w3.org/TR/soap12-part1/); [ITU-T Y.2253](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-Y.2253-201401-I%21%21PDF-E&lang=e&type=items) y [UMTS Forum/3GPP 3G Offered Traffic Characteristics](https://www.3gpp.org/ftp/PCG/PCG_13/DOCS/PDF/PCG13_22.pdf); [IETF RFC 5532](https://www.rfc-editor.org/rfc/rfc5532.html) y [RFC 4506 XDR](https://www.rfc-editor.org/rfc/rfc4506.html).
+
+Convocatorias cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, temas 58, 65, 77 y 130; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas II.3, II.6, III.12 y IV.16. Cotejo curricular ITIC Academy: [bloque de Tecnologías de Sistemas de la Información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk), lenguajes, XML y servicios web; [bloque 28 de SOA](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk), middleware/comunicación distribuida; [bloque 50 de videoconferencia y trabajo colaborativo](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk), streaming y QoS. La academia se usa para delimitar cobertura, no como fuente de verdad técnica.
+
+Ejecutados revisar-lote-1178.cjs, academia-lote-1178.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario esperado: 12.123 preguntas; 6.210 examinadas; 6.100 verificadas; 110 pendientes documentadas; 5.913 aún sin revisar; cero errores estructurales.
+
+`;
+assert.ok(s.includes(old),'No coincide el resumen previo al lote 1178');assert.ok(s.includes('## Lote 1177 — 13 de noviembre de 2026'),'No se encontró el lote anterior');s=s.replace(old,neu).replace('## Lote 1177 — 13 de noviembre de 2026',section+'## Lote 1177 — 13 de noviembre de 2026');fs.writeFileSync(file,s);console.log('README actualizado para el lote 1178.');
