@@ -2,6 +2,8 @@
 
 Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1146 (IDs 6051–6055); también se resolvió el pendiente histórico ID 77. Acumulado: 6.050 preguntas examinadas individualmente; 5.947 verificadas (1.156 vigentes, 4.354 corregidas y 437 históricas); 103 pendientes documentadas (42 de fuente y 61 de ambigüedad); 6.073 sin revisar individualmente.
 
+**Publicación verificada:** el commit `2f66944bb411692a98c7b868597a7821277d6d30` de main ejecutó correctamente [Deploy GitHub Pages, run 43376499467](https://github.com/itic-academy/simulador-tic/actions/runs/43376499467). El README, `cambios-lote-1146.json` e `inventario.json` respondieron HTTP 200; el registro publicado contiene los IDs 6051–6055 y el inventario confirma 6.050 examinadas, 5.947 verificadas y 6.073 aún sin revisar individualmente.
+
 **Publicación verificada:** el commit `1f1da8aa2ca275c94634dc08013d7a4a1a5c0b22` de main ejecutó correctamente [Deploy GitHub Pages, run 43374867546](https://github.com/itic-academy/simulador-tic/actions/runs/43374867546). README, `cambios-lote-1145.json` e `inventario.json` respondieron HTTP 200; el registro publicado contiene 6046–6050 y el inventario confirma 6.045 examinadas y 6.078 aún sin revisar individualmente.
 
 **Publicación verificada:** el commit `88681c4a463e6363a427457e58eba4b7e81c0b71` de main ejecutó correctamente [Deploy GitHub Pages, run 43373957520](https://github.com/itic-academy/simulador-tic/actions/runs/43373957520). Tras desplegar, README, `cambios-lote-1144.json` e `inventario.json` respondieron HTTP 200; el README servido identifica el lote 1144, el registro contiene los IDs 6041–6045 y el inventario confirma 6.040 revisadas y 6.083 aún sin revisar individualmente.
