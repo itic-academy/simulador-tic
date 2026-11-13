@@ -326178,21 +326178,65 @@
       "id": 6266,
       "bloque": 0,
       "tema": 0,
-      "texto": "El interfaz socket:",
+      "texto": "Sobre la API de sockets, señale la afirmación correcta:",
       "opciones": [
-        "Sólo es aplicable a TCP/IP",
-        "Sólo es aplicable a UNIX",
-        "Es el único modelo en Unix para acceder a TCP/IP",
-        "Ninguna de las respuestas anteriores es correcta"
+        "Es exclusiva de TCP y no admite sockets de datagramas.",
+        "Solo puede usarse en sistemas UNIX.",
+        "En POSIX solo admite la familia de direcciones AF_INET.",
+        "Es una interfaz de programación que admite distintos dominios y tipos de socket, como AF_INET/SOCK_STREAM y AF_UNIX."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se reformula el enunciado porque las opciones originales mezclaban alcance del protocolo, familia de sistema y una afirmación histórica discutible. POSIX contempla tanto AF_INET como AF_UNIX y la API sockets se usa fuera de UNIX. La opción D expresa correctamente el carácter común de la interfaz y su soporte de distintos dominios y tipos. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 43 Protocolos (2026.1), modelos, interfaces y protocolos TCP/IP-OSI; cobertura A1-111/A2-II.8. El temario acredita cobertura curricular, no la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-111"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 43 Protocolos (2026.1), modelos, interfaces y protocolos TCP/IP-OSI; cobertura A1-111/A2-II.8.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 43 Protocolos (2026.1), modelos, interfaces y protocolos TCP/IP-OSI; cobertura A1-111/A2-II.8. El temario acredita cobertura curricular, no la respuesta."
+      },
+      "etiquetas": [
+        "API sockets",
+        "POSIX",
+        "AF_INET",
+        "AF_UNIX"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3493.html",
+            "referencia": "RFC 3493, resumen: la interfaz sockets es la API de facto para TCP/IP, originalmente desarrollada en UNIX y después implantada en otros sistemas."
+          },
+          {
+            "url": "https://posix.opengroup.org/docs/PX1.html",
+            "referencia": "The Open Group, declaración de conformidad POSIX: se requieren los dominios AF_INET (SOCK_STREAM y SOCK_DGRAM) y AF_UNIX (SOCK_STREAM), por lo que sockets no es exclusivo de TCP/IP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 111: arquitecturas, interfaces y protocolos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.8: modelos TCP/IP y OSI, capas, interfaces y protocolos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 43 Protocolos (2026.1), modelos, interfaces y protocolos TCP/IP-OSI; cobertura A1-111/A2-II.8."
+          }
+        ],
+        "observaciones": "Se reformula el enunciado porque las opciones originales mezclaban alcance del protocolo, familia de sistema y una afirmación histórica discutible. POSIX contempla tanto AF_INET como AF_UNIX y la API sockets se usa fuera de UNIX. La opción D expresa correctamente el carácter común de la interfaz y su soporte de distintos dominios y tipos. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 43 Protocolos (2026.1), modelos, interfaces y protocolos TCP/IP-OSI; cobertura A1-111/A2-II.8. El temario acredita cobertura curricular, no la respuesta."
+      }
     },
     {
       "id": 6267,
       "bloque": 0,
       "tema": 0,
-      "texto": "NO es un protocolo orientado a conexión:",
+      "texto": "¿Cuál de estas opciones identifica el protocolo cuyo mapeo de transporte preferido sobre IPv4 es UDP según RFC 3417?",
       "opciones": [
         "SNMP.",
         "XMPP.",
@@ -326200,48 +326244,228 @@
         "SMTP."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva SNMP como respuesta, pero se precisa que se pregunta por su mapeo preferido sobre IPv4 según RFC 3417: UDP. No se afirma que SNMP solo pueda transportarse por UDP, pues RFC 3430 define un mapeo opcional sobre TCP. XMPP en la vinculación definida por RFC 6120 usa TCP; SMTP también usa TCP, y ATM es orientado a conexión. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (2026.1), administración de redes y gestión SNMP; cobertura A1-118/A2-IV.9. El temario acredita cobertura curricular, no la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes (2026.1), administración de redes y gestión SNMP; cobertura A1-118/A2-IV.9.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (2026.1), administración de redes y gestión SNMP; cobertura A1-118/A2-IV.9. El temario acredita cobertura curricular, no la respuesta."
+      },
+      "etiquetas": [
+        "SNMP",
+        "UDP",
+        "TCP",
+        "RFC 3417"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3417.html",
+            "referencia": "RFC 3417, secciones 1 y 3: el mapeo sobre UDP/IPv4 es el preferido y obligatorio de implementar para sistemas IPv4."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3430.html",
+            "referencia": "RFC 3430: existe también un mapeo opcional de SNMP sobre TCP; por eso se acota la pregunta al mapeo preferido de RFC 3417."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc6120.html",
+            "referencia": "RFC 6120, sección 3: esta especificación vincula XMPP a TCP."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+            "referencia": "RFC 5321: SMTP transmite mediante conexiones TCP."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-I.150-199303-S%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T I.150: ATM se define como técnica orientada a conexión, con identificadores de conexión."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 118: administración de LAN y gestión SNMP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.9: gestión SNMP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 42 Redes (2026.1), administración de redes y gestión SNMP; cobertura A1-118/A2-IV.9."
+          }
+        ],
+        "observaciones": "Se conserva SNMP como respuesta, pero se precisa que se pregunta por su mapeo preferido sobre IPv4 según RFC 3417: UDP. No se afirma que SNMP solo pueda transportarse por UDP, pues RFC 3430 define un mapeo opcional sobre TCP. XMPP en la vinculación definida por RFC 6120 usa TCP; SMTP también usa TCP, y ATM es orientado a conexión. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (2026.1), administración de redes y gestión SNMP; cobertura A1-118/A2-IV.9. El temario acredita cobertura curricular, no la respuesta."
+      }
     },
     {
       "id": 6268,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dentro de las Tecnologías de nivel acceso usadas en ATM señalar la Falsa:",
+      "texto": "¿Cuál de estas opciones es una subcapa funcional de la adaptación ATM (AAL), y no una técnica o jerarquía de transmisión relacionada con ATM?",
       "opciones": [
-        "PDH",
-        "SDH",
-        "ATM",
-        "SAR"
+        "PDH.",
+        "SDH.",
+        "ATM.",
+        "SAR (segmentación y reensamblado)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La respuesta D se mantiene, pero se reescribe el enunciado: “nivel de acceso” no identifica una capa ATM suficientemente precisa. SAR pertenece a la subcapa de adaptación AAL, mientras PDH y SDH son jerarquías de transmisión capaces de transportar celdas ATM y ATM es la técnica de transferencia. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (2026.1), tecnologías de transporte/agregación y ATM; cobertura A1-113 y redes de área extensa A2-IV.10. El temario acredita cobertura curricular, no la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-113"
+        ],
+        "A2": [
+          "A2-IV-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes (2026.1), tecnologías de transporte/agregación y ATM; cobertura A1-113 y redes de área extensa A2-IV.10.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (2026.1), tecnologías de transporte/agregación y ATM; cobertura A1-113 y redes de área extensa A2-IV.10. El temario acredita cobertura curricular, no la respuesta."
+      },
+      "etiquetas": [
+        "ATM",
+        "AAL",
+        "SAR",
+        "PDH",
+        "SDH"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-I.363.1-199608-I%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T I.363.1, sección 2.4: SAR es una subcapa de la capa de adaptación ATM; segmenta las unidades de datos para su transporte y las reensambla al recibirlas."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.804-200406-I%21%21PDF-E&lang=s&type=items",
+            "referencia": "ITU-T G.804: especifica el transporte de celdas ATM sobre jerarquía PDH y señala SDH como base de transporte de celdas ATM."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 113: redes de agregación ATM."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.10: tecnologías de redes de área extensa."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 42 Redes (2026.1), tecnologías de transporte/agregación y ATM; cobertura A1-113 y redes de área extensa A2-IV.10."
+          }
+        ],
+        "observaciones": "La respuesta D se mantiene, pero se reescribe el enunciado: “nivel de acceso” no identifica una capa ATM suficientemente precisa. SAR pertenece a la subcapa de adaptación AAL, mientras PDH y SDH son jerarquías de transmisión capaces de transportar celdas ATM y ATM es la técnica de transferencia. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (2026.1), tecnologías de transporte/agregación y ATM; cobertura A1-113 y redes de área extensa A2-IV.10. El temario acredita cobertura curricular, no la respuesta."
+      }
     },
     {
       "id": 6269,
       "bloque": 0,
       "tema": 0,
-      "texto": "El estandar 802.11k se centra en:",
+      "texto": "La enmienda IEEE 802.11k introdujo principalmente mecanismos para:",
       "opciones": [
-        "Calidad de Servicio (QoS) sobre redes WLAN",
-        "Autenticación y cifrado para redes WLAN",
-        "Nueva generación de WLAN de redes de, al menos, 100 Mbps (en proceso de definición en 2006)",
-        "Intercambio de información de capacidad entre clientes y puntos de acceso en redes WLAN"
+        "Añadir calidad de servicio (QoS) a las WLAN.",
+        "Definir autenticación y cifrado para WLAN.",
+        "Aumentar el caudal máximo de las WLAN hasta al menos 100 Mbit/s.",
+        "Medir y comunicar parámetros de recursos radioeléctricos en WLAN."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se corrige la opción correcta y se actualiza la explicación: 802.11k trata de medición de recursos radioeléctricos (Radio Resource Measurement), no de cifrado/autenticación ni de la generación de mayor caudal asociada a 802.11n. El texto antiguo “intercambio de información de capacidad” era impreciso. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 46 Redes inalámbricas (2026.1), IEEE 802.11 y sus modos/funciones; cobertura A1-114/A2-IV.11. El temario acredita cobertura curricular, no la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-114"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 46 Redes inalámbricas (2026.1), IEEE 802.11 y sus modos/funciones; cobertura A1-114/A2-IV.11.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 46 Redes inalámbricas (2026.1), IEEE 802.11 y sus modos/funciones; cobertura A1-114/A2-IV.11. El temario acredita cobertura curricular, no la respuesta."
+      },
+      "etiquetas": [
+        "IEEE 802.11k",
+        "medición de recursos radioeléctricos",
+        "WLAN"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.11k/3951/",
+            "referencia": "IEEE SA, IEEE 802.11k-2008: la enmienda añade mecanismos de medición de recursos radioeléctricos (Radio Resource Measurement) para WLAN."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 114: estándar IEEE 802.11 y características funcionales."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.11: redes inalámbricas y protocolos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 46 Redes inalámbricas (2026.1), IEEE 802.11 y sus modos/funciones; cobertura A1-114/A2-IV.11."
+          }
+        ],
+        "observaciones": "Se corrige la opción correcta y se actualiza la explicación: 802.11k trata de medición de recursos radioeléctricos (Radio Resource Measurement), no de cifrado/autenticación ni de la generación de mayor caudal asociada a 802.11n. El texto antiguo “intercambio de información de capacidad” era impreciso. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 46 Redes inalámbricas (2026.1), IEEE 802.11 y sus modos/funciones; cobertura A1-114/A2-IV.11. El temario acredita cobertura curricular, no la respuesta."
+      }
     },
     {
       "id": 6270,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación con 802.11, ¿cuál de las siguientes afirmaciones se corresponden con el modo “Ad-Hoc”?",
+      "texto": "En IEEE 802.11, el modo independiente (IBSS o ad hoc) se caracteriza por:",
       "opciones": [
-        "Modo de comunicación entre dos puntos de acceso.",
-        "Un cliente se conecta a un punto de acceso.",
-        "Modo de comunicación entre dos clientes sin necesidad de un punto de acceso."
+        "La comunicación de estaciones a través de uno o varios puntos de acceso.",
+        "La asociación de cada cliente a un punto de acceso.",
+        "La comunicación directa entre estaciones, sin punto de acceso."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se especifica IBSS/ad hoc: las estaciones intercambian tramas directamente, sin punto de acceso ni sistema de distribución. No se limita el modo a exactamente dos dispositivos; dos son el mínimo para comunicación entre pares. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 46 Redes inalámbricas (2026.1), IEEE 802.11 y modos de operación; cobertura A1-114/A2-IV.11. El temario acredita cobertura curricular, no la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-114"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 46 Redes inalámbricas (2026.1), IEEE 802.11 y modos de operación; cobertura A1-114/A2-IV.11.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 46 Redes inalámbricas (2026.1), IEEE 802.11 y modos de operación; cobertura A1-114/A2-IV.11. El temario acredita cobertura curricular, no la respuesta."
+      },
+      "etiquetas": [
+        "IEEE 802.11",
+        "IBSS",
+        "modo ad hoc",
+        "comunicación entre pares"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://grouper.ieee.org/groups/802/11/main.html",
+            "referencia": "IEEE 802.11 WG, descripción de arquitectura: en configuración independiente las estaciones se comunican directamente y no se requiere infraestructura; es el modo ad hoc/IBSS."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 114: modos de operación IEEE 802.11."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.11: modos de operación de redes inalámbricas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 46 Redes inalámbricas (2026.1), IEEE 802.11 y modos de operación; cobertura A1-114/A2-IV.11."
+          }
+        ],
+        "observaciones": "Se especifica IBSS/ad hoc: las estaciones intercambian tramas directamente, sin punto de acceso ni sistema de distribución. No se limita el modo a exactamente dos dispositivos; dos son el mínimo para comunicación entre pares. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 46 Redes inalámbricas (2026.1), IEEE 802.11 y modos de operación; cobertura A1-114/A2-IV.11. El temario acredita cobertura curricular, no la respuesta."
+      }
     },
     {
       "id": 6271,
