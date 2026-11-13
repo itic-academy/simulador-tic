@@ -1,12 +1,16 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1227 (IDs 6456–6460). Acumulado: 6455 preguntas examinadas individualmente; 6341 verificadas (1252 vigentes, 4631 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5668 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1228 (IDs 6461–6465). Acumulado: 6460 preguntas examinadas individualmente; 6346 verificadas (1253 vigentes, 4635 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5663 sin revisar individualmente.
 
 
 
 **Publicación verificada:** el commit de datos `a7489b2` (`a7489b2fba09dc5b126800dffe7f099d43ac9ae7)` completó correctamente [Deploy GitHub Pages, workflow run 43482543600](https://github.com/itic-academy/simulador-tic/actions/runs/43482543600). El workflow muestra estado `Success` y contiene el commit `a7489b2`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1217.json` e `inventario.json`; el registro servido contiene los IDs 6406–6410, todos corregidos. El inventario público confirma 6.405 examinadas, 6.291 verificadas (1.244 vigentes, 4.589 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.718 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `b054652` (`b05465205648a5d2a74965e9cf96385db816fbd1)` completó correctamente [Deploy GitHub Pages, workflow run 43484247774](https://github.com/itic-academy/simulador-tic/actions/runs/43484247774). El workflow terminó con estado `Success` e incluyó el commit `b054652`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1218.json` e `inventario.json`; el registro publicado contiene los IDs 6411–6415 con estados vigente, corregida, corregida, corregida y corregida. El inventario público confirma 6.410 examinadas, 6.296 verificadas (1.245 vigentes, 4.593 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.713 sin revisar individualmente.
+
+## Lote 1228 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6461–6465. Se aclaró que el control de versiones admite modelos de bloqueo y copia-modificación-fusión; se confirmó en el artículo 15.2 del Real Decreto 4/2010 la sincronización con el Real Instituto y Observatorio de la Armada; se corrigió la pregunta Windows porque tres privilegios de las opciones podían asignarse por defecto a Administrators y las asignaciones son configurables, limitando el nuevo ítem a identificar el derecho de apagado remoto; se verificó que el ODS 10 es «Reducción de las desigualdades»; y se actualizó ISO/IEC 27001 a la edición 2022 con enmienda 1:2024, usando sus encabezados actuales de cláusulas. Se preservaron originales, se añadieron explicación/fuentes y clasificación A1/A2 y se cotejaron los bloques 38/39, 20, 27, 06 y 48 de ITIC Academy en Drive. La academia orienta el encaje curricular; la corrección se apoya en documentación normativa, Microsoft, Naciones Unidas, ISO y el manual de Subversion. Inventario local: 6460 examinadas, 6346 verificadas, 114 pendientes y 5663 sin revisar individualmente; verificador estructural sin errores. Pendiente verificar la publicación de este lote.
 
 ## Lote 1227 — 13 de noviembre de 2026
 
