@@ -1,12 +1,16 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1219 (IDs 6416–6420). Acumulado: 6415 preguntas examinadas individualmente; 6301 verificadas (1246 vigentes, 4597 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5708 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1220 (IDs 6421–6425). Acumulado: 6420 preguntas examinadas individualmente; 6306 verificadas (1246 vigentes, 4602 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5703 sin revisar individualmente.
 
 
 
 **Publicación verificada:** el commit de datos `a7489b2` (`a7489b2fba09dc5b126800dffe7f099d43ac9ae7)` completó correctamente [Deploy GitHub Pages, workflow run 43482543600](https://github.com/itic-academy/simulador-tic/actions/runs/43482543600). El workflow muestra estado `Success` y contiene el commit `a7489b2`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1217.json` e `inventario.json`; el registro servido contiene los IDs 6406–6410, todos corregidos. El inventario público confirma 6.405 examinadas, 6.291 verificadas (1.244 vigentes, 4.589 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.718 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `b054652` (`b05465205648a5d2a74965e9cf96385db816fbd1)` completó correctamente [Deploy GitHub Pages, workflow run 43484247774](https://github.com/itic-academy/simulador-tic/actions/runs/43484247774). El workflow terminó con estado `Success` e incluyó el commit `b054652`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1218.json` e `inventario.json`; el registro publicado contiene los IDs 6411–6415 con estados vigente, corregida, corregida, corregida y corregida. El inventario público confirma 6.410 examinadas, 6.296 verificadas (1.245 vigentes, 4.593 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.713 sin revisar individualmente.
+
+## Lote 1220 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6421–6425. Se precisó el nombre y promotor del proyecto Destinos Turísticos Inteligentes; se redondeó a 17% el 17,4% histórico del estudio Lientz–Swanson–Tompkins, advirtiendo que es estimación de encuesta y no una constante actual; se distinguió la EIP-SCC de FIWARE y se descartó la denominación inexistente «EIP-FIWARE»; se sustituyó la pregunta vaga sobre objetivos del ciclo de vida por una formulación verificable conforme a ISO/IEC/IEEE 12207:2026; y se completó la definición EPA de persona parada con búsqueda y disponibilidad según sus periodos de referencia. Se preservaron los originales y se añadieron explicaciones, fuentes primarias, clasificación A1/A2 y cotejo ITIC Academy/Drive: bloques 44 (ciudades inteligentes), 39 (mantenimiento), 38 (ciclo de vida), 06 (empleo). Inventario local: 6420 examinadas, 6306 verificadas, 114 pendientes y 5703 sin revisar individualmente; inventario y verificador sin errores estructurales. Pendiente verificar la publicación de este lote.
 
 ## Lote 1219 — 13 de noviembre de 2026
 
