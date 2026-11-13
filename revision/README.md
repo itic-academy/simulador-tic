@@ -1,12 +1,16 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1228 (IDs 6461–6465). Acumulado: 6460 preguntas examinadas individualmente; 6346 verificadas (1253 vigentes, 4635 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5663 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1229 (IDs 6466–6470). Acumulado: 6465 preguntas examinadas individualmente; 6351 verificadas (1254 vigentes, 4639 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5658 sin revisar individualmente.
 
 
 
 **Publicación verificada:** el commit de datos `a7489b2` (`a7489b2fba09dc5b126800dffe7f099d43ac9ae7)` completó correctamente [Deploy GitHub Pages, workflow run 43482543600](https://github.com/itic-academy/simulador-tic/actions/runs/43482543600). El workflow muestra estado `Success` y contiene el commit `a7489b2`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1217.json` e `inventario.json`; el registro servido contiene los IDs 6406–6410, todos corregidos. El inventario público confirma 6.405 examinadas, 6.291 verificadas (1.244 vigentes, 4.589 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.718 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `b054652` (`b05465205648a5d2a74965e9cf96385db816fbd1)` completó correctamente [Deploy GitHub Pages, workflow run 43484247774](https://github.com/itic-academy/simulador-tic/actions/runs/43484247774). El workflow terminó con estado `Success` e incluyó el commit `b054652`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1218.json` e `inventario.json`; el registro publicado contiene los IDs 6411–6415 con estados vigente, corregida, corregida, corregida y corregida. El inventario público confirma 6.410 examinadas, 6.296 verificadas (1.245 vigentes, 4.593 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.713 sin revisar individualmente.
+
+## Lote 1229 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6466–6470. Se comprobó contra la declaración oficial de 2015 la lista cerrada de los 14 servicios compartidos de CETIC y se acotó el distractor a esa lista histórica; se confirmó la nulidad de actos/cláusulas discriminatorios por sexo según el artículo 10 de la LO 3/2007; se reemplazó la pregunta de Bitcoin, que combinaba cifra de emisión, tiempo y categorías de nodos con varias opciones falsas, por una pregunta comprobable sobre la oferta máxima protocolaria de aproximadamente 21 millones; se precisó Industria Conectada 4.0 como estrategia de transformación digital industrial; y se corrigió la categoría ISO de «miembros natos» a «miembros plenos (member bodies)», única categoría con participación y voto plenos. Se conservaron los originales y se añadieron explicación, fuentes oficiales, clasificación A1/A2 y cotejo con ITIC Academy/Drive (bloques 49, 10, 06, 85 y 50). Para los temas de Bitcoin e Industria 4.0 no se inventó un epígrafe A2 específico donde el temario no lo contiene. Inventario local: 6465 examinadas, 6351 verificadas, 114 pendientes y 5658 sin revisar individualmente; verificador estructural sin errores. Pendiente verificar la publicación de este lote.
 
 ## Lote 1228 — 13 de noviembre de 2026
 
