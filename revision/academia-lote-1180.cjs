@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1180.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={eu:'https://drive.google.com/file/d/1KTz7CNz88u_4zyVLC2oYQBnmJRHIG7J7/view?usp=drivesdk',contratacion:'https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk'};
+const map={
+ 6221:{a1:[5],a2:[],doc:docs.eu,desc:'ITIC Academy, bloque 02 La Unión Europea, actualización octubre de 2026: tratados, instituciones y ámbitos de competencia; encaje oficial A1-5. No hay tema A2 específico de política comercial de la Unión en el programa cotejado.'},
+ 6222:{a1:[5],a2:[],doc:docs.eu,desc:'ITIC Academy, bloque 02 La Unión Europea, actualización octubre de 2026: instituciones y funcionamiento del Consejo; encaje oficial A1-5. No hay tema A2 específico de la Unión Europea en el programa cotejado.'},
+ 6223:{a1:[11],a2:[],doc:docs.contratacion,desc:'ITIC Academy, bloque 05 Contratación, Presupuestos y Compra TIC, actualización 2026.2: Ley 9/2017 y organización de la contratación; encaje oficial A1-11.'},
+ 6224:{a1:[12],a2:[],doc:docs.contratacion,desc:'ITIC Academy, bloque 05 Contratación, Presupuestos y Compra TIC, actualización 2026.2: programación presupuestaria y PGE; encaje oficial A1-12.'},
+ 6225:{a1:[12],a2:[],doc:docs.contratacion,desc:'ITIC Academy, bloque 05 Contratación, Presupuestos y Compra TIC, actualización 2026.2: estructura y control de los PGE; encaje oficial A1-12.'}
+};
+const clean=s=>{s=(s||'').trim();const i=s.indexOf('Cotejo curricular de ITIC Academy:');return(i<0?s:s.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\.[^\n]*/,'').trim();};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=map[c.id];if(!q||!m)throw Error('Falta pregunta/mapeo '+c.id);q.clasificacion.A1=m.a1.map(n=>`A1-${n}`);q.clasificacion.A2=m.a2.map(n=>`A2-${n}`);q.clasificacion.bloque_academia=m.desc;const note=`Cotejo curricular de ITIC Academy: ${m.desc} La academia permite comprobar el ámbito de examen; la respuesta se apoya en el Tratado, BOE y fuentes presupuestarias oficiales.`;q.clasificacion.nota=(clean(q.clasificacion.nota)+' '+note).trim();q.comentarios=(clean(q.comentarios)+' '+note).trim();q.revision.observaciones=(clean(q.revision.observaciones)+' '+note).trim();if(!q.revision.fuentes.some(f=>f.url===m.doc))q.revision.fuentes.push({url:m.doc,referencia:`ITIC Academy: ${m.desc}`});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular ITIC Academy actualizado para IDs 6221–6225.');

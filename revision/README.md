@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1179 (IDs 6216–6220). Acumulado: 6.215 preguntas examinadas individualmente; 6.105 verificadas (1.200 vigentes, 4.460 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.908 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1180 (IDs 6221–6225). Acumulado: 6.220 preguntas examinadas individualmente; 6.110 verificadas (1.202 vigentes, 4.463 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.903 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `7b0ba27` (`7b0ba2758a0e6b62aa1dd84902df8bbb3cf37ce3`) completó correctamente [Deploy GitHub Pages, workflow run 43418669565](https://github.com/itic-academy/simulador-tic/actions/runs/43418669565). El README, `cambios-lote-1179.json` e `inventario.json` respondieron HTTP 200; el contenido servido confirma IDs 6216–6220, 6.215 examinadas, 6.105 verificadas y 5.908 aún sin revisar.
 
@@ -67,6 +67,22 @@ Estado parcial, no revisión completa del banco. Publicación desde main mediant
 **Publicación verificada:** el commit `1f1da8aa2ca275c94634dc08013d7a4a1a5c0b22` de main ejecutó correctamente [Deploy GitHub Pages, run 43374867546](https://github.com/itic-academy/simulador-tic/actions/runs/43374867546). README, `cambios-lote-1145.json` e `inventario.json` respondieron HTTP 200; el registro publicado contiene 6046–6050 y el inventario confirma 6.045 examinadas y 6.078 aún sin revisar individualmente.
 
 **Publicación verificada:** el commit `88681c4a463e6363a427457e58eba4b7e81c0b71` de main ejecutó correctamente [Deploy GitHub Pages, run 43373957520](https://github.com/itic-academy/simulador-tic/actions/runs/43373957520). Tras desplegar, README, `cambios-lote-1144.json` e `inventario.json` respondieron HTTP 200; el README servido identifica el lote 1144, el registro contiene los IDs 6041–6045 y el inventario confirma 6.040 revisadas y 6.083 aún sin revisar individualmente.
+
+## Lote 1180 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6221–6225 sobre competencias de la UE, presidencia del Consejo, contratación pública estatal y principios/ingresos presupuestarios. Se corrigen 6222, 6223 y 6225; 6221 y 6224 se mantienen vigentes.
+
+- **6221 — política comercial común:** **vigente**, respuesta D. El artículo 3.1.e TFUE atribuye competencia exclusiva a la Unión. A1-5.
+- **6222 — presidencia rotatoria del Consejo:** **corregida**, respuesta D. Cada Estado preside por seis meses, pero la decisión sobre las condiciones de esa presidencia la adopta el Consejo Europeo por mayoría cualificada (art. 236(b) TFUE), no el Consejo por unanimidad. Se corrige la combinación de duración, órgano y regla de votación. A1-5.
+- **6223 — órganos de contratación estatales:** **corregida**, respuesta C. Se precisa la opción B conforme al artículo 323 LCSP: presidentes/directores de los organismos y entidades estatales y directores generales de las Entidades Gestoras/Servicios Comunes de la Seguridad Social, salvo previsión específica; A también es correcta para Ministros y Secretarios de Estado. A1-11.
+- **6224 — programación presupuestaria:** **vigente**, respuesta D. El artículo 26.1 LGP enumera estabilidad, sostenibilidad, plurianualidad, transparencia, eficiencia, responsabilidad y lealtad institucional. A1-12.
+- **6225 — previsiones de ingresos:** **corregida**, respuesta C. Se concreta que se pregunta por las previsiones del estado de ingresos de los PGE, de carácter estimativo; los créditos de gasto sí son limitativos (art. 46 LGP). A1-12.
+
+Fuentes primarias: [TFUE art. 3](https://eur-lex.europa.eu/eli/treaty/tfeu_2012/art_3/oj?locale=es), [TUE art. 16](https://eur-lex.europa.eu/eli/treaty/teu_2016/art_16/oj?locale=es), [TFUE art. 236](https://eur-lex.europa.eu/eli/treaty/tfeu_2016/art_236/oj?locale=es), [Decisión del Consejo Europeo 2009/881/UE](https://eur-lex.europa.eu/eli/dec/2009/881/oj?locale=es) y [Decisión del Consejo 2009/908/UE](https://eur-lex.europa.eu/eli/dec/2009/908/oj?locale=es); [Ley 9/2017 LCSP, art. 323](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902); [Ley 47/2003 LGP, arts. 26 y 46](https://www.boe.es/buscar/act.php?id=BOE-A-2003-21614); [Orden HAC/974/2025 de elaboración de los PGE 2026](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-17504) y [documentación oficial SEPG sobre estructura presupuestaria](https://www.sepg.pap.hacienda.gob.es/Presup/PGE2018Proyecto/MaestroTomos/PGE-ROM/doc/L_18_A_A3.PDF).
+
+Convocatoria cotejada: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, temas 5, 11 y 12; el programa A2 cotejado no contiene tema específico sobre instituciones/competencias de la Unión, contratación pública o principios presupuestarios. Cotejo curricular ITIC Academy: [bloque 02 de Unión Europea](https://drive.google.com/file/d/1KTz7CNz88u_4zyVLC2oYQBnmJRHIG7J7/view?usp=drivesdk), versión octubre 2026; [bloque 05 de Contratación, Presupuestos y Compra TIC](https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk), versión 2026.2. Estos materiales indican alcance curricular, no sustituyen a las normas oficiales.
+
+Ejecutados revisar-lote-1180.cjs, academia-lote-1180.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario esperado: 12.123 preguntas; 6.220 examinadas; 6.110 verificadas (1.202 vigentes, 4.463 corregidas y 445 históricas); 110 pendientes documentadas; 5.903 aún sin revisar; cero errores estructurales.
 
 ## Lote 1179 — 13 de noviembre de 2026
 
