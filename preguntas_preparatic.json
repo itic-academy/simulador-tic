@@ -314503,21 +314503,70 @@
       "id": 6071,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la frase ERRÓNEA acerca de los sistemas de tiempo compartido:",
+      "texto": "En la prevención de interbloqueos, señale la frase ERRÓNEA (el primer enunciado se refiere a planificación por turnos de tiempo compartido):",
       "opciones": [
         "El algoritmo de round robin se basa en asignar por turno períodos de tiempo limitados a cada uno de los procesos.",
-        "El algoritmo del banquero impide asignar a un proceso un recurso de un tipo del que ya no queden más recursos libres.",
-        "El aplazamiento indefinido se produce cuando un proceso solicita un recurso que otro proceso ha dejado de usar sin marcarlo como “desocupado”.",
-        "El mecanismo de no apropiación evita que puedan producirse “deadlocks” entre procesos."
+        "El algoritmo del banquero solo concede una solicitud si la asignación provisional mantiene el sistema en un estado seguro y hay recursos disponibles.",
+        "El aplazamiento indefinido puede producirse si un proceso espera sin límite por una política injusta de asignación de recursos.",
+        "Mantener la condición de no apropiación —que los recursos no puedan retirarse forzosamente— evita que se produzcan interbloqueos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La opción D es la errónea. «No apropiación» significa que un recurso no puede retirarse forzosamente a quien lo posee: es una de las cuatro condiciones necesarias para el interbloqueo. Para prevenirlo se rompe esa condición permitiendo apropiación cuando el tipo de recurso lo admite; mantener la no apropiación no evita el interbloqueo. Se precisa el marco de prevención para separar esta regla de la planificación round robin. Cotejo curricular ITIC Academy: Cotejo curricular con fundamentos de sistemas operativos y algoritmos de planificación/interbloqueo; el significado de no-apropiación se verifica con bibliografía universitaria y no se toma la academia como fuente decisoria. Temas oficiales asociados: A1-59/A2-II-2. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-59"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "Cotejo curricular con fundamentos de sistemas operativos y algoritmos de planificación/interbloqueo; el significado de no-apropiación se verifica con bibliografía universitaria y no se toma la academia como fuente decisoria.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: Cotejo curricular con fundamentos de sistemas operativos y algoritmos de planificación/interbloqueo; el significado de no-apropiación se verifica con bibliografía universitaria y no se toma la academia como fuente decisoria. Temas oficiales asociados: A1-59/A2-II-2. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias."
+      },
+      "etiquetas": [
+        "round robin",
+        "algoritmo del banquero",
+        "interbloqueo",
+        "condición de no apropiación",
+        "tiempo compartido"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://courses.mpi-sws.org/os-ws17/lectures/proc7.pdf",
+            "referencia": "MPI-SWS, curso de Sistemas Operativos, lecture proc7: round robin asigna turnos de tiempo; el banquero retrasa solicitudes que puedan llevar a un estado inseguro; la prevención elimina una de las cuatro condiciones necesarias y una estrategia es permitir apropiación (preemption)."
+          },
+          {
+            "url": "https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/7_Deadlocks.html",
+            "referencia": "University of Illinois Chicago, apuntes del capítulo de interbloqueos: define no-preemption como imposibilidad de retirar recursos hasta su liberación voluntaria; indica que permitir la apropiación de recursos puede prevenir esta condición."
+          },
+          {
+            "url": "https://web.stanford.edu/~ouster/cs111-spring24/lectures/scheduling/",
+            "referencia": "Stanford CS111, notas de planificación: round robin ejecuta cada hilo durante un quantum y lo devuelve al final de la cola de listos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 59: fundamentos de sistemas operativos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.2: fundamentos y administración de sistemas operativos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27, Sistemas Operativos, versión 2026.1: incluye A1-59 y A2-II.2, con fundamentos de planificación y gestión de procesos; cotejo curricular."
+          }
+        ],
+        "observaciones": "La opción D es la errónea. «No apropiación» significa que un recurso no puede retirarse forzosamente a quien lo posee: es una de las cuatro condiciones necesarias para el interbloqueo. Para prevenirlo se rompe esa condición permitiendo apropiación cuando el tipo de recurso lo admite; mantener la no apropiación no evita el interbloqueo. Se precisa el marco de prevención para separar esta regla de la planificación round robin. Cotejo curricular ITIC Academy: Cotejo curricular con fundamentos de sistemas operativos y algoritmos de planificación/interbloqueo; el significado de no-apropiación se verifica con bibliografía universitaria y no se toma la academia como fuente decisoria. Temas oficiales asociados: A1-59/A2-II-2. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias."
+      }
     },
     {
       "id": 6072,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de las siguientes opciones no se corresponde al modelo .NET de desarrollo:",
+      "texto": "En la arquitectura de .NET Framework, ¿cuál de los siguientes elementos no es un componente básico de la plataforma?",
       "opciones": [
         "Interface Definition Language",
         "Common Type System",
@@ -314525,7 +314574,60 @@
         "Common Language Runtime"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La opción A (Interface Definition Language) no es un componente básico del modelo de .NET Framework descrito por las demás respuestas. Microsoft identifica el CLR como entorno de ejecución, el CTS como sistema común de tipos y la biblioteca de clases como conjunto de APIs reutilizables; los ensamblados autodescriptivos contienen metadatos en vez de depender de IDL externo. Se acota el enunciado a .NET Framework para evitar confundir versiones y nomenclatura de runtimes posteriores. Cotejo curricular ITIC Academy: Cotejo curricular de la plataforma .NET del tema A1-66/A2-III.11; los componentes se comprueban con Microsoft Learn. Temas oficiales asociados: A1-66/A2-III-11. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-66"
+        ],
+        "A2": [
+          "A2-III-11"
+        ],
+        "bloque_academia": "Cotejo curricular de la plataforma .NET del tema A1-66/A2-III.11; los componentes se comprueban con Microsoft Learn.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: Cotejo curricular de la plataforma .NET del tema A1-66/A2-III.11; los componentes se comprueban con Microsoft Learn. Temas oficiales asociados: A1-66/A2-III-11. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias."
+      },
+      "etiquetas": [
+        ".NET Framework",
+        "CLR",
+        "CTS",
+        "BCL",
+        "IDL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/framework/get-started/",
+            "referencia": "Microsoft Learn, introducción a .NET Framework: identifica el CLR como motor de ejecución y la biblioteca de clases como componente principal de la plataforma."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/standard/base-types/common-type-system",
+            "referencia": "Microsoft Learn, Common Type System: explica cómo el CTS declara, utiliza y administra los tipos dentro del CLR y permite integración entre lenguajes."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/standard/framework-libraries",
+            "referencia": "Microsoft Learn, bibliotecas base de .NET: documenta la Base Class Library y los tipos y servicios reutilizables de la plataforma."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/dotnet/standard/metadata-and-self-describing-components",
+            "referencia": "Microsoft Learn, metadatos y componentes autodescriptivos: los ensamblados .NET incluyen metadatos y no requieren ficheros IDL externos para describir sus componentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 66: entorno de desarrollo Microsoft .NET."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema III.11: plataforma .NET, modelo de programación, servicios y herramientas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, actualización 2026: incluye A1-66 (.NET) y A2-III.11 (plataforma .NET); cotejo curricular del marco de desarrollo."
+          }
+        ],
+        "observaciones": "La opción A (Interface Definition Language) no es un componente básico del modelo de .NET Framework descrito por las demás respuestas. Microsoft identifica el CLR como entorno de ejecución, el CTS como sistema común de tipos y la biblioteca de clases como conjunto de APIs reutilizables; los ensamblados autodescriptivos contienen metadatos en vez de depender de IDL externo. Se acota el enunciado a .NET Framework para evitar confundir versiones y nomenclatura de runtimes posteriores. Cotejo curricular ITIC Academy: Cotejo curricular de la plataforma .NET del tema A1-66/A2-III.11; los componentes se comprueban con Microsoft Learn. Temas oficiales asociados: A1-66/A2-III-11. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias."
+      }
     },
     {
       "id": 6073,
@@ -314539,13 +314641,58 @@
         "La licencia no debe discriminar a ninguna persona o grupo de personas."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La opción C es la que NO forma parte de la definición de OSI. El criterio 9 impide que una licencia restrinja otro software que se distribuya junto con el programa abierto; esto no impide que una licencia copyleft imponga condiciones a la redistribución de una obra derivada que incorpore el código. A, B y D corresponden a criterios expresos de la definición. Cotejo curricular ITIC Academy: Cotejo curricular de software de código abierto y licencias; la definición aplicable se contrasta con la Open Source Initiative. Temas oficiales asociados: A1-69/A2-II-14. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-69"
+        ],
+        "A2": [
+          "A2-II-14"
+        ],
+        "bloque_academia": "Cotejo curricular de software de código abierto y licencias; la definición aplicable se contrasta con la Open Source Initiative.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: Cotejo curricular de software de código abierto y licencias; la definición aplicable se contrasta con la Open Source Initiative. Temas oficiales asociados: A1-69/A2-II-14. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias."
+      },
+      "etiquetas": [
+        "Open Source Definition",
+        "OSI",
+        "redistribución",
+        "no discriminación",
+        "licencias de código abierto"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://opensource.org/osd",
+            "referencia": "Open Source Initiative, Open Source Definition, criterios 1, 3, 5, 6 y 9: permite redistribución, exige acceso al código fuente, prohíbe discriminar a personas o ámbitos de actividad y prohíbe restricciones sobre otro software distribuido junto con el programa."
+          },
+          {
+            "url": "https://opensource.org/faq",
+            "referencia": "Open Source Initiative, preguntas frecuentes: una licencia copyleft puede exigir que las obras derivadas se distribuyan bajo los mismos términos, pero no que todos los programas distribuidos en el mismo soporte sean también abiertos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 69: software de código abierto, software libre y conceptos base."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.14: software libre y propietario, características, licencias y protección jurídica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18qm2iCLcxLReK_TkqQWIm26S38HXEDYr/view?usp=drivesdk",
+            "referencia": "ITIC Academy, Tema 069, Software de código abierto y software libre: conceptos, licencias, GPL y aplicaciones; encaje directo A1-69/A2-II.14. La respuesta de los criterios OSD se coteja con OSI."
+          }
+        ],
+        "observaciones": "La opción C es la que NO forma parte de la definición de OSI. El criterio 9 impide que una licencia restrinja otro software que se distribuya junto con el programa abierto; esto no impide que una licencia copyleft imponga condiciones a la redistribución de una obra derivada que incorpore el código. A, B y D corresponden a criterios expresos de la definición. Cotejo curricular ITIC Academy: Cotejo curricular de software de código abierto y licencias; la definición aplicable se contrasta con la Open Source Initiative. Temas oficiales asociados: A1-69/A2-II-14. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias."
+      }
     },
     {
       "id": 6074,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuáles son las primitivas geográficas?",
+      "texto": "En el esquema geométrico bidimensional de información geográfica, sin considerar sólidos tridimensionales, ¿cuáles son las primitivas geométricas básicas?",
       "opciones": [
         "Punto, curva, superficie",
         "Nodo, arco, cara",
@@ -314553,7 +314700,54 @@
         "Punto, arco, superficie"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La opción A solo es completa si se limita a un esquema geométrico bidimensional. ISO 19107 también incluye sólidos como primitivas 3D; por eso se explicita el alcance 2D en el enunciado en vez de presentar la terna como definición completa y universal de primitivas geométricas. Cotejo curricular ITIC Academy: Cotejo directo con A1-74 (SIG); el temario de convocatoria y la academia no asignan equivalente A2 directo. La definición geométrica se acota a 2D y se decide con ISO 19107. Temas oficiales asociados: A1-74. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-74"
+        ],
+        "A2": [],
+        "bloque_academia": "Cotejo directo con A1-74 (SIG); el temario de convocatoria y la academia no asignan equivalente A2 directo. La definición geométrica se acota a 2D y se decide con ISO 19107.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: Cotejo directo con A1-74 (SIG); el temario de convocatoria y la academia no asignan equivalente A2 directo. La definición geométrica se acota a 2D y se decide con ISO 19107. Temas oficiales asociados: A1-74. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias."
+      },
+      "etiquetas": [
+        "SIG",
+        "GIS",
+        "ISO 19107",
+        "primitivas geométricas",
+        "geometría bidimensional"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/66175.html",
+            "referencia": "ISO 19107:2019, Geographic information — Spatial schema: norma de esquemas espaciales que incluye primitivas geométricas para información geográfica."
+          },
+          {
+            "url": "https://www.geolexica.org/isotc211-staging/concepts/2164/",
+            "referencia": "ISO/TC 211 Geolexica, entrada «geometric primitive», basada en ISO 19107:2019: las primitivas geométricas incluyen puntos, curvas, superficies y sólidos."
+          },
+          {
+            "url": "https://docs.ogc.org/is/22-003r3/22-003r3.html",
+            "referencia": "Open Geospatial Consortium, OGC API — Moving Features: relaciona GM_Point, GM_Curve, GM_Surface y GM_Solid como subtipos geométricos del esquema ISO 19107."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 74: conceptos y funcionalidad básica de los sistemas de información geográfica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, versión 2026.1: incluye A1-74; el índice curricular declara «A2: no aplica»."
+          },
+          {
+            "url": "https://docs.google.com/document/d/13sxQ3m8eNgg-dLxtbUHY9AzXaEnJtyyN/edit?usp=drivesdk&ouid=107088454749630873035&rtpof=true&sd=true",
+            "referencia": "ITIC Academy, Tema 074 - SIG: desarrolla el modelo espacial y sus geometrías como apoyo didáctico. Para evitar generalizar una lista incompleta, la redacción se acota a primitivas geométricas 2D y se contrasta con ISO 19107."
+          }
+        ],
+        "observaciones": "La opción A solo es completa si se limita a un esquema geométrico bidimensional. ISO 19107 también incluye sólidos como primitivas 3D; por eso se explicita el alcance 2D en el enunciado en vez de presentar la terna como definición completa y universal de primitivas geométricas. Cotejo curricular ITIC Academy: Cotejo directo con A1-74 (SIG); el temario de convocatoria y la academia no asignan equivalente A2 directo. La definición geométrica se acota a 2D y se decide con ISO 19107. Temas oficiales asociados: A1-74. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias."
+      }
     },
     {
       "id": 6075,
@@ -314567,7 +314761,60 @@
         "Todas las anteriores son correctas."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La opción D es válida como conjunto de ejemplos de PET: privacidad diferencial y cifrado homomórfico son técnicas criptográficas/de análisis que limitan exposición, y la anonimización puede reducir o eliminar la identificabilidad. No toda transformación produce anonimización efectiva: si la reidentificación sigue siendo razonablemente posible, los datos continúan sujetos al RGPD. Cotejo curricular ITIC Academy: Cotejo curricular de PET en A1-75 y del marco de protección de datos/privacidad A2-I.7; la afirmación técnica se sustenta en Comisión Europea y EDPB. Temas oficiales asociados: A1-75/A2-I-7. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-I-7"
+        ],
+        "bloque_academia": "Cotejo curricular de PET en A1-75 y del marco de protección de datos/privacidad A2-I.7; la afirmación técnica se sustenta en Comisión Europea y EDPB.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: Cotejo curricular de PET en A1-75 y del marco de protección de datos/privacidad A2-I.7; la afirmación técnica se sustenta en Comisión Europea y EDPB. Temas oficiales asociados: A1-75/A2-I-7. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias."
+      },
+      "etiquetas": [
+        "PET",
+        "tecnologías de mejora de la privacidad",
+        "privacidad diferencial",
+        "cifrado homomórfico",
+        "anonimización"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://cordis.europa.eu/programme/id/HORIZON_HORIZON-CL3-2025-02-CS-ECCC-03/es",
+            "referencia": "Comisión Europea, convocatoria Horizon Europe sobre PET: cita privacidad diferencial, computación multiparte segura y cifrado homomórfico como ejemplos de tecnologías de mejora de la privacidad."
+          },
+          {
+            "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/recital-69",
+            "referencia": "AI Act Service Desk de la Comisión Europea, considerando 69 del Reglamento de IA: cita anonimización y cifrado entre las medidas tecnológicas que pueden proteger privacidad y datos personales."
+          },
+          {
+            "url": "https://www.edpb.europa.eu/topics/ai-and-technology/anonymisation-pseudonymisation_en",
+            "referencia": "Comité Europeo de Protección de Datos, anonimización y seudonimización: diferencia anonimización irreversible de seudonimización, que sigue siendo dato personal."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 75: tecnologías de protección de la confidencialidad (PET) en sistemas de explotación y compartición de datos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema I.7: protección de datos personales y su régimen jurídico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 34, Business Intelligence y Big Data, versión 2026.1: incluye A1-75 y trata PET y tecnologías para proteger confidencialidad en explotación/compartición de datos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 08, Protección de Datos, actualización 2026: encaje transversal con A2-I.7 (protección de datos y privacidad); la condición de anonimización se contrasta con EDPB."
+          }
+        ],
+        "observaciones": "La opción D es válida como conjunto de ejemplos de PET: privacidad diferencial y cifrado homomórfico son técnicas criptográficas/de análisis que limitan exposición, y la anonimización puede reducir o eliminar la identificabilidad. No toda transformación produce anonimización efectiva: si la reidentificación sigue siendo razonablemente posible, los datos continúan sujetos al RGPD. Cotejo curricular ITIC Academy: Cotejo curricular de PET en A1-75 y del marco de protección de datos/privacidad A2-I.7; la afirmación técnica se sustenta en Comisión Europea y EDPB. Temas oficiales asociados: A1-75/A2-I-7. La academia guía la adscripción curricular; las respuestas se fundamentan en fuentes primarias."
+      }
     },
     {
       "id": 6076,
