@@ -1,0 +1,331 @@
+{
+  "fecha": "2026-11-13",
+  "alcance": "IDs 5901–5905; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 5901,
+      "original": {
+        "id": 5901,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Con respecto al protocolo DNS. ¿Cuál de las siguientes opciones NO es una parte de un mensaje DNS?",
+        "opciones": [
+          "Cabecera.",
+          "Checksum.",
+          "Registros de recursos de Respuesta.",
+          "Registros de recursos de Autoridad."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5901,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Con respecto al protocolo DNS. ¿Cuál de las siguientes opciones NO es una parte de un mensaje DNS?",
+        "opciones": [
+          "Cabecera.",
+          "Checksum.",
+          "Registros de recursos de Respuesta.",
+          "Registros de recursos de Autoridad."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Vigente, respuesta B (Checksum). RFC 1035 describe las cinco secciones del mensaje DNS; incluye cabecera, pregunta y secciones de respuesta, autoridad y adicionales. La detección de errores/checksum que pudiera haber en protocolos de transporte o enlace no forma parte de esas secciones DNS. Cotejado con ITIC Academy, bloque 43, para DNS y servicios de Internet. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, DNS y servicios básicos de Internet; el formato de mensaje DNS se comprobó directamente en RFC 1035. Temas oficiales asociados: A1-109/A2-IV-13. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-109"
+          ],
+          "A2": [
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43, DNS y servicios básicos de Internet; el formato de mensaje DNS se comprobó directamente en RFC 1035.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, DNS y servicios básicos de Internet; el formato de mensaje DNS se comprobó directamente en RFC 1035. Temas oficiales asociados: A1-109/A2-IV-13. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria."
+        },
+        "etiquetas": [
+          "DNS",
+          "RFC 1035",
+          "formato de mensaje DNS",
+          "secciones DNS",
+          "checksum"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+              "referencia": "RFC 1035 §4.1: un mensaje DNS se divide en Header, Question, Answer, Authority y Additional; checksum no es una sección del protocolo DNS."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43, DNS y servicios básicos de Internet; el formato de mensaje DNS se comprobó directamente en RFC 1035."
+            }
+          ],
+          "observaciones": "Vigente, respuesta B (Checksum). RFC 1035 describe las cinco secciones del mensaje DNS; incluye cabecera, pregunta y secciones de respuesta, autoridad y adicionales. La detección de errores/checksum que pudiera haber en protocolos de transporte o enlace no forma parte de esas secciones DNS. Cotejado con ITIC Academy, bloque 43, para DNS y servicios de Internet. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, DNS y servicios básicos de Internet; el formato de mensaje DNS se comprobó directamente en RFC 1035. Temas oficiales asociados: A1-109/A2-IV-13. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria."
+        }
+      }
+    },
+    {
+      "id": 5902,
+      "original": {
+        "id": 5902,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los Puntos Neutros (Internet Exchange Points) en Internet:",
+        "opciones": [
+          "Permiten conectarse a Internet sin coste.",
+          "Eliminan los paquetes con un TLL mayor del fijado en el segmento de red (típicamente 30).",
+          "Son pasarelas para compatibilizar el tráfico IPv4 y el IPv6.",
+          "Permiten interconectar las redes de diferentes ISP, reduciendo y encaminando de forma eficiente el tráfico que circula entre ellas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5902,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los Puntos Neutros (Internet Exchange Points) en Internet:",
+        "opciones": [
+          "Permiten conectarse a Internet sin coste.",
+          "Eliminan los paquetes con un TLL mayor del fijado en el segmento de red (típicamente 30).",
+          "Son pasarelas para compatibilizar el tráfico IPv4 y el IPv6.",
+          "Permiten interconectar redes de distintos ISP para intercambiar directamente tráfico, reduciendo la dependencia del tránsito externo y el recorrido del tráfico entre esas redes."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida, respuesta D. Un IXP facilita que redes de distintos operadores/sistemas autónomos interconecten y se intercambien tráfico directamente; puede reducir dependencia de tránsito y recorridos. Se reescribió la opción para no atribuir al punto neutro el encaminamiento IP: este lo realizan los routers de las redes participantes mediante sus acuerdos de peering. No garantiza acceso gratuito ni traducción IPv4/IPv6. Cotejado con ITIC Academy, bloque 43, sección de Internet e interconexión. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, Internet e interconexión de redes; la definición neutral de IXP y el matiz de que no proporciona tránsito se comprobaron en Euro-IX/IX-F. Temas oficiales asociados: A1-108/A1-109/A2-IV-13. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-109"
+          ],
+          "A2": [
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43, Internet e interconexión de redes; la definición neutral de IXP y el matiz de que no proporciona tránsito se comprobaron en Euro-IX/IX-F.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, Internet e interconexión de redes; la definición neutral de IXP y el matiz de que no proporciona tránsito se comprobaron en Euro-IX/IX-F. Temas oficiales asociados: A1-108/A1-109/A2-IV-13. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria."
+        },
+        "etiquetas": [
+          "Internet Exchange Point",
+          "IXP",
+          "punto neutro",
+          "interconexión de sistemas autónomos",
+          "peering"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://www.euro-ix.net/en/forixps/",
+              "referencia": "Euro-IX/IX-F, definición de IXP: instalación de red que permite interconectar e intercambiar tráfico entre más de dos sistemas autónomos; no actúa como proveedor de acceso ni como proveedor de tránsito."
+            },
+            {
+              "url": "https://www.euro-ix.net/media/filer_public/28/51/2851eddf-870b-4b68-b1e2-e5f071bdb527/ix-f_response_to_itu_consultation_on_best_practices_for_ixps_-_2016-08-28-final.pdf",
+              "referencia": "Internet Exchange Federation, buenas prácticas para IXP: las redes conectadas intercambian tráfico en una infraestructura común y pueden acortar rutas y mejorar eficiencia; la plataforma no enruta ni altera por sí misma el tráfico."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43, Internet e interconexión de redes; la definición neutral de IXP y el matiz de que no proporciona tránsito se comprobaron en Euro-IX/IX-F."
+            }
+          ],
+          "observaciones": "Corregida, respuesta D. Un IXP facilita que redes de distintos operadores/sistemas autónomos interconecten y se intercambien tráfico directamente; puede reducir dependencia de tránsito y recorridos. Se reescribió la opción para no atribuir al punto neutro el encaminamiento IP: este lo realizan los routers de las redes participantes mediante sus acuerdos de peering. No garantiza acceso gratuito ni traducción IPv4/IPv6. Cotejado con ITIC Academy, bloque 43, sección de Internet e interconexión. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, Internet e interconexión de redes; la definición neutral de IXP y el matiz de que no proporciona tránsito se comprobaron en Euro-IX/IX-F. Temas oficiales asociados: A1-108/A1-109/A2-IV-13. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria."
+        }
+      }
+    },
+    {
+      "id": 5903,
+      "original": {
+        "id": 5903,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los conectores LC son:",
+        "opciones": [
+          "Conectores para PCI.",
+          "Conectores de par trenzado.",
+          "Conectores exclusivos para Mainframe.",
+          "Conectores de fibra óptica."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5903,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los conectores LC son:",
+        "opciones": [
+          "Conectores para PCI.",
+          "Conectores de par trenzado.",
+          "Conectores exclusivos para Mainframe.",
+          "Conectores de fibra óptica."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Vigente, respuesta D (conectores de fibra óptica). LC designa un conector óptico de pequeño formato; no es un conector PCI, de par trenzado ni exclusivo de mainframe. Cotejado con ITIC Academy, bloque de Hardware y almacenamiento, contenidos de cableado/conectividad; la identificación del tipo se confirmó en el fabricante. Cotejo curricular ITIC Academy: ITIC Academy, bloque de Hardware y almacenamiento, cableado/conectividad de redes; la identificación del LC como conector de fibra se verificó en documentación del fabricante. Temas oficiales asociados: A1-110/A2-IV-8. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-110"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque de Hardware y almacenamiento, cableado/conectividad de redes; la identificación del LC como conector de fibra se verificó en documentación del fabricante.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque de Hardware y almacenamiento, cableado/conectividad de redes; la identificación del LC como conector de fibra se verificó en documentación del fabricante. Temas oficiales asociados: A1-110/A2-IV-8. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria."
+        },
+        "etiquetas": [
+          "cableado",
+          "fibra óptica",
+          "conector LC",
+          "conector Lucent",
+          "IEC 61754-20"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://www.te.com/en/products/fiber-optics/fiber-optic-connectors/standard-fiber-connectors/lc-connectors.html",
+              "referencia": "TE Connectivity, LC Connectors: identifica LC como conector de fibra óptica de formato pequeño (Lucent Connector), con versiones monomodo y multimodo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque de Hardware y almacenamiento, cableado/conectividad de redes; la identificación del LC como conector de fibra se verificó en documentación del fabricante."
+            }
+          ],
+          "observaciones": "Vigente, respuesta D (conectores de fibra óptica). LC designa un conector óptico de pequeño formato; no es un conector PCI, de par trenzado ni exclusivo de mainframe. Cotejado con ITIC Academy, bloque de Hardware y almacenamiento, contenidos de cableado/conectividad; la identificación del tipo se confirmó en el fabricante. Cotejo curricular ITIC Academy: ITIC Academy, bloque de Hardware y almacenamiento, cableado/conectividad de redes; la identificación del LC como conector de fibra se verificó en documentación del fabricante. Temas oficiales asociados: A1-110/A2-IV-8. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria."
+        }
+      }
+    },
+    {
+      "id": 5904,
+      "original": {
+        "id": 5904,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "De entre los siguientes, ¿qué protocolo es utilizado para reservar recursos de red a una determinada aplicación?",
+        "opciones": [
+          "RSVP",
+          "ARP",
+          "802.1ar",
+          "H.264"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5904,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "De entre los siguientes, ¿qué protocolo es utilizado para reservar recursos de red a una determinada aplicación?",
+        "opciones": [
+          "RSVP",
+          "ARP",
+          "802.1ar",
+          "H.264"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Vigente, respuesta A (RSVP). El protocolo Resource ReSerVation Protocol permite a los receptores solicitar recursos/calidad de servicio para flujos y señaliza la reserva a lo largo del trayecto; ARP resuelve direcciones de enlace, IEEE 802.1AR trata identidad segura de dispositivos y H.264 es un estándar de codificación de vídeo. Cotejado con ITIC Academy, bloque 43, para protocolos y servicios de red. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, protocolos y calidad de servicio en redes; la función de RSVP se verificó en RFC 2205. Temas oficiales asociados: A1-108/A2-II-8. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-108"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43, protocolos y calidad de servicio en redes; la función de RSVP se verificó en RFC 2205.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, protocolos y calidad de servicio en redes; la función de RSVP se verificó en RFC 2205. Temas oficiales asociados: A1-108/A2-II-8. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria."
+        },
+        "etiquetas": [
+          "RSVP",
+          "reserva de recursos",
+          "calidad de servicio",
+          "QoS",
+          "flujos de aplicación"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc2205.html",
+              "referencia": "RFC 2205: RSVP es un protocolo de establecimiento de reservas de recursos que permite solicitar QoS para flujos de datos de aplicaciones y mantener el estado de reserva en los nodos del camino."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43, protocolos y calidad de servicio en redes; la función de RSVP se verificó en RFC 2205."
+            }
+          ],
+          "observaciones": "Vigente, respuesta A (RSVP). El protocolo Resource ReSerVation Protocol permite a los receptores solicitar recursos/calidad de servicio para flujos y señaliza la reserva a lo largo del trayecto; ARP resuelve direcciones de enlace, IEEE 802.1AR trata identidad segura de dispositivos y H.264 es un estándar de codificación de vídeo. Cotejado con ITIC Academy, bloque 43, para protocolos y servicios de red. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, protocolos y calidad de servicio en redes; la función de RSVP se verificó en RFC 2205. Temas oficiales asociados: A1-108/A2-II-8. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria."
+        }
+      }
+    },
+    {
+      "id": 5905,
+      "original": {
+        "id": 5905,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "MPLS (Multiprotocol Label Switching) utiliza algunos conceptos, entre ellos:",
+        "opciones": [
+          "FEC (Forwarding Equivalent Class).",
+          "LAPD (Link Access Protocol for D-channel).",
+          "CIR (Commited Information Rate).",
+          "MBS (Maximum Burst Size)."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 5905,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "MPLS (Multiprotocol Label Switching) utiliza algunos conceptos, entre ellos:",
+        "opciones": [
+          "FEC (Forwarding Equivalent Class).",
+          "LAPD (Link Access Protocol for D-channel).",
+          "CIR (Commited Information Rate).",
+          "MBS (Maximum Burst Size)."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Vigente, respuesta A (FEC, Forwarding Equivalence Class). Es un concepto básico de MPLS: una FEC agrupa paquetes que reciben el mismo tratamiento de reenvío y se representa mediante etiquetas. CIR y MBS son parámetros asociados a servicios de tráfico, y LAPD pertenece a la señalización de canal D. Cotejado con ITIC Academy, bloque 43, contenidos de redes de transporte/MPLS. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, redes de transporte/MPLS; la definición precisa de FEC se verificó en RFC 3031. Temas oficiales asociados: A1-113/A2-IV-10. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-113"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43, redes de transporte/MPLS; la definición precisa de FEC se verificó en RFC 3031.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, redes de transporte/MPLS; la definición precisa de FEC se verificó en RFC 3031. Temas oficiales asociados: A1-113/A2-IV-10. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria."
+        },
+        "etiquetas": [
+          "MPLS",
+          "FEC",
+          "Forwarding Equivalence Class",
+          "clases de equivalencia de reenvío",
+          "conmutación por etiquetas"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3031.html",
+              "referencia": "RFC 3031 §2 y §3.1: define Forwarding Equivalence Class (FEC), grupo de paquetes que recibe el mismo tratamiento de reenvío; la etiqueta MPLS identifica una FEC."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43, redes de transporte/MPLS; la definición precisa de FEC se verificó en RFC 3031."
+            }
+          ],
+          "observaciones": "Vigente, respuesta A (FEC, Forwarding Equivalence Class). Es un concepto básico de MPLS: una FEC agrupa paquetes que reciben el mismo tratamiento de reenvío y se representa mediante etiquetas. CIR y MBS son parámetros asociados a servicios de tráfico, y LAPD pertenece a la señalización de canal D. Cotejado con ITIC Academy, bloque 43, contenidos de redes de transporte/MPLS. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, redes de transporte/MPLS; la definición precisa de FEC se verificó en RFC 3031. Temas oficiales asociados: A1-113/A2-IV-10. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria."
+        }
+      }
+    }
+  ]
+}

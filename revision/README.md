@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1115 (IDs 5896–5900); también se resolvió el pendiente histórico ID 77. Acumulado: 5.895 preguntas examinadas individualmente; 5.794 verificadas (1.083 vigentes, 4.282 corregidas y 429 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.228 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1116 (IDs 5901–5905); también se resolvió el pendiente histórico ID 77. Acumulado: 5.900 preguntas examinadas individualmente; 5.799 verificadas (1.087 vigentes, 4.283 corregidas y 429 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.223 sin revisar individualmente.
+
+## Lote 1116 — 13 de noviembre de 2026
+
+IDs 5901–5905 revisados individualmente. Se comprobó el formato de mensajes DNS; se precisó técnicamente la función de los puntos neutros; se verificó el tipo de conector LC, el protocolo RSVP para reserva de recursos y el concepto FEC en MPLS. El [registro del lote 1116](cambios-lote-1116.json) conserva originales, modificaciones, motivos, fuentes y clasificación.
+
+- **5901 — mensaje DNS:** **vigente**, respuesta B (Checksum). RFC 1035 especifica las secciones Header, Question, Answer, Authority y Additional; checksum no es una sección DNS. A1-109/A2-IV-13.
+- **5902 — puntos neutros/IXP:** **corregida**, respuesta D. Un IXP facilita intercambio directo entre redes; no es un proveedor de tránsito ni efectúa por sí mismo el encaminamiento IP. Se ajustó la opción para expresar esa función con precisión. A1-108/109, A2-IV-13.
+- **5903 — conectores LC:** **vigente**, respuesta D (fibra óptica). LC es un conector óptico pequeño, disponible para fibra monomodo o multimodo. A1-110/A2-IV-8.
+- **5904 — reserva de recursos:** **vigente**, respuesta A (RSVP). RFC 2205 define RSVP para solicitar QoS y reservar recursos de red para flujos de aplicaciones. A1-108/A2-II-8.
+- **5905 — MPLS:** **vigente**, respuesta A (FEC). Una Forwarding Equivalence Class agrupa paquetes que reciben el mismo tratamiento de reenvío y se identifica mediante etiquetas MPLS. A1-113/A2-IV-10.
+
+Fuentes técnicas: [RFC 1035, formato DNS](https://www.rfc-editor.org/rfc/rfc1035.html), [Euro-IX/IX-F, definición de IXP](https://www.euro-ix.net/en/forixps/) y [guía de buenas prácticas IX-F](https://www.euro-ix.net/media/filer_public/28/51/2851eddf-870b-4b68-b1e2-e5f071bdb527/ix-f_response_to_itu_consultation_on_best_practices_for_ixps_-_2016-08-28-final.pdf), [TE Connectivity, conectores LC](https://www.te.com/en/products/fiber-optics/fiber-optic-connectors/standard-fiber-connectors/lc-connectors.html), [RFC 2205, RSVP](https://www.rfc-editor.org/rfc/rfc2205.html) y [RFC 3031, arquitectura MPLS](https://www.rfc-editor.org/rfc/rfc3031.html). Convocatorias oficiales cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 108–110/113; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexos IX II.8/IV.8/IV.10/IV.13. Cotejo con ITIC Academy: [bloque 43, protocolos e Internet](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk), y [bloque Hardware y almacenamiento, conectividad](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk). La academia se usa para el mapa curricular; las características normativas y técnicas se fundamentan en las referencias primarias.
+
+Ejecutados revisar-lote-1116.cjs, academia-lote-1116.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas, 5.900 examinadas individualmente, 101 pendientes explícitas, 6.223 sin revisar individualmente y cero errores estructurales. La validación automática no se presenta como revisión del contenido restante.
 
 ## Lote 1115 — 13 de noviembre de 2026
 

@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1116.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const network='https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk';
+const hardware='https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk';
+const map={
+ 5901:{a1:[109],a2:['IV-13'],doc:network,desc:'ITIC Academy, bloque 43, DNS y servicios básicos de Internet; el formato de mensaje DNS se comprobó directamente en RFC 1035.'},
+ 5902:{a1:[108,109],a2:['IV-13'],doc:network,desc:'ITIC Academy, bloque 43, Internet e interconexión de redes; la definición neutral de IXP y el matiz de que no proporciona tránsito se comprobaron en Euro-IX/IX-F.'},
+ 5903:{a1:[110],a2:['IV-8'],doc:hardware,desc:'ITIC Academy, bloque de Hardware y almacenamiento, cableado/conectividad de redes; la identificación del LC como conector de fibra se verificó en documentación del fabricante.'},
+ 5904:{a1:[108],a2:['II-8'],doc:network,desc:'ITIC Academy, bloque 43, protocolos y calidad de servicio en redes; la función de RSVP se verificó en RFC 2205.'},
+ 5905:{a1:[113],a2:['IV-10'],doc:network,desc:'ITIC Academy, bloque 43, redes de transporte/MPLS; la definición precisa de FEC se verificó en RFC 3031.'}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=map[c.id];assert.ok(q&&m,`Falta pregunta/mapeo ${c.id}`);for(const id of [...m.a1.map(x=>`A1-${x}`),...m.a2.map(x=>`A2-${x}`)])assert.ok(topics.has(id),id);q.clasificacion.A1=m.a1.map(n=>`A1-${n}`);q.clasificacion.A2=m.a2.map(n=>`A2-${n}`);const marker='Cotejo curricular ITIC Academy:';const trim=v=>{const raw=(v||'').trim(),i=raw.indexOf(marker);return (i<0?raw:raw.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\. Una lista vacía no implica exclusión del programa\.?\s*/,'').trim();};const note=`Cotejo curricular ITIC Academy: ${m.desc} Temas oficiales asociados: ${[...q.clasificacion.A1,...q.clasificacion.A2].join('/')}. La academia orienta la cobertura curricular y no sustituye la comprobación en estándares o documentación primaria.`;q.clasificacion.bloque_academia=m.desc;q.clasificacion.nota=`${trim(q.clasificacion.nota)} ${note}`.trim();q.comentarios=`${trim(q.comentarios)} ${note}`.trim();q.revision.observaciones=`${trim(q.revision.observaciones)} ${note}`.trim();if(!q.revision.fuentes.some(f=>f.url===m.doc))q.revision.fuentes.push({url:m.doc,referencia:m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular A1/A2 actualizado para IDs 5901–5905.');
