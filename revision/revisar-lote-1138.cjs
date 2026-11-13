@@ -1,0 +1,29 @@
+require('./aplicar-lote.cjs')({
+ numero:'1138',fecha:'2026-11-13',
+ records:[
+  [6011,[116],['IV-14'],['G.711','PCM','frecuencias vocales','telefonía digital','ITU-T'],[
+   {url:'https://www.itu.int/rec/T-REC-G.711/en',referencia:'ITU-T Recommendation G.711, vigente: su título oficial es «Pulse code modulation (PCM) of voice frequencies»; especifica la codificación PCM de señales de frecuencia vocal y su muestreo nominal de 8 kHz.'},
+   {url:'https://www.itu.int/rec/T-REC-G.722/en',referencia:'ITU-T Recommendation G.722: codificación de audio de 7 kHz dentro de 64 kbit/s; permite distinguir esta recomendación de la PCM telefónica G.711.'}
+  ],null,'Se reformula el enunciado para preguntar por el estándar de codificación PCM de señales telefónicas de frecuencia vocal. La expresión genérica «audio no comprimido» era imprecisa: G.711 es la recomendación PCM para frecuencias vocales, mientras G.722 trata audio de banda ancha. La opción correcta sigue siendo C (G.711).','corregida'],
+  [6012,[75],['II-4'],['data warehouse','data warehousing','no volatilidad','orientado a temas','soporte a decisiones'],[
+   {url:'https://docs.oracle.com/cd/E24693_01/server.11203/e16579/concept.htm',referencia:'Oracle Database Data Warehousing Guide, sección Data Warehousing Concepts: recoge las características clásicas de Inmon (orientación a temas, integración, no volatilidad y variación temporal) y el análisis para decisiones; los datos se cargan desde sistemas OLTP, típicamente por lotes periódicos.'}
+  ],null,'Se conserva la respuesta D porque la no volatilidad y el soporte al análisis/decisiones son características clásicas. Se corrige la opción B, demasiado absoluta («no son modificados»), y la A, que decía «orientado a objetos»: la propiedad es estar orientado a temas. La no volatilidad describe el uso analítico frente a la actualización transaccional de OLTP; no significa que una carga inicial, corrección controlada o proceso ETL jamás pueda alterar registros.','corregida'],
+  [6013,[75,76],[],['espacios de datos','soberanía de los datos','gobierno del dato','estrategia europea de datos'],[
+   {url:'https://digital-strategy.ec.europa.eu/en/policies/data-spaces',referencia:'Comisión Europea, European data spaces: espacios comunes para compartir y reutilizar datos en condiciones controladas; los titulares de datos conservan control sobre los datos que generan y pueden decidir su puesta a disposición y uso.'},
+   {url:'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2025%3A835%3AFIN',referencia:'Comisión Europea, COM(2025) 835 final, Data Union Strategy, apartado «Safeguarding the EU’s data sovereignty»: define soberanía como conservar el control sobre cómo se accede a los datos, cómo se usan y protegen, también en contextos internacionales.'}
+  ],null,'Se conserva A (soberanía de los datos) y se concreta el enunciado para relacionar el principio con el control que mantienen los titulares sobre el acceso, puesta a disposición y uso de los datos en espacios comunes europeos. La soberanía no equivale a impedir todo intercambio transfronterizo; la estrategia de 2025 contempla intercambios con condiciones y salvaguardas.','corregida'],
+  [6014,[47],['II-10'],['MAGERIT','catálogo de amenazas','riesgo intencional','huelga','disponibilidad del personal'],[
+   {url:'https://www.hacienda.gob.es/sgt/catalogo_sefp/047_magerit_v3_libro2_catalogo.pdf',referencia:'MAGERIT v3, Libro II, catálogo de elementos, apartado 5.3.18 E.28 «Indisponibilidad del personal»: define la ausencia accidental del puesto. En el apartado 5.4.28 A.28 «Indisponibilidad del personal» incluye la ausencia deliberada, como huelgas; el prefijo A distingue amenazas deliberadas de las accidentales E.'}
+  ],null,'Se conserva A. En el catálogo de amenazas de MAGERIT v3, la ausencia accidental del personal es E.28; la ausencia deliberada es A.28 y cita las huelgas como ejemplo. Las averías eléctricas y la interrupción del suministro son fallos accidentales de instalaciones/servicios. La clasificación de MAGERIT se refiere al origen intencional o accidental, no a la legalidad de la huelga.','vigente'],
+  [6015,[108,115],['II-8','IV-10'],['encaminamiento','IGP','OSPF','IS-IS','RIP','sistema autónomo'],[
+   {url:'https://www.rfc-editor.org/rfc/rfc2328.html',referencia:'IETF RFC 2328, §1: OSPF es un protocolo de encaminamiento de estado de enlace para usar dentro de un sistema autónomo (IGP).'},
+   {url:'https://www.rfc-editor.org/rfc/rfc1195.html',referencia:'IETF RFC 1195, resumen y §1: IS-IS integrado puede emplearse como IGP para el encaminamiento dentro de un dominio de encaminamiento/sistema autónomo.'},
+   {url:'https://www.rfc-editor.org/rfc/rfc2453.html',referencia:'IETF RFC 2453, §1: RIP es un protocolo de encaminamiento interior (IGP) basado en vector de distancias.'}
+  ],null,'La opción D («Todos los anteriores») es correcta. OSPF, IS-IS y RIP son protocolos de encaminamiento interior; cada RFC citado los sitúa en el ámbito de un sistema autónomo/dominio de encaminamiento, frente al encaminamiento entre sistemas autónomos.','vigente']
+ ],
+ edits:{
+ 6011:{texto:'¿Qué Recomendación ITU-T especifica la modulación por impulsos codificados (PCM) de señales de frecuencia vocal telefónica?',opciones:['Q.932','G.722','G.711','Q.931'],respuesta_correcta:2},
+ 6012:{opciones:['Estar orientado a objetos.','Ser no volátil: se carga para análisis y no se actualiza como dato operativo en cada transacción OLTP.','Estar destinado a ayudar a la toma de decisiones de gestión.','Son ciertas las respuestas B y C.'],respuesta_correcta:3},
+ 6013:{texto:'En los espacios europeos de datos, ¿qué principio se expresa en que los titulares conserven el control sobre el acceso, la puesta a disposición y el uso de los datos que generan?',opciones:['Soberanía de los datos.','Independencia de los datos.','Parcialidad de los datos.','Agilidad en los datos.'],respuesta_correcta:0}
+ }
+});
