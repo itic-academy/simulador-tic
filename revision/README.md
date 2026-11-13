@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1118 (IDs 5911–5915); también se resolvió el pendiente histórico ID 77. Acumulado: 5.910 preguntas examinadas individualmente; 5.809 verificadas (1.092 vigentes, 4.288 corregidas y 429 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.213 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1119 (IDs 5916–5920); también se resolvió el pendiente histórico ID 77. Acumulado: 5.915 preguntas examinadas individualmente; 5.814 verificadas (1.095 vigentes, 4.290 corregidas y 429 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.208 sin revisar individualmente.
+
+## Lote 1119 — 13 de noviembre de 2026
+
+IDs 5916–5920 revisados individualmente. Se comprobaron la capa de enlace RDSI Q.921, el término secráfono, los factores de calidad de VoIP, la definición correcta de ADPCM y el tamaño del FCS Ethernet. Se amplió la opción VoIP para mencionar pérdida de paquetes y se reparó una definición errónea de ADPCM que confundía la técnica con LZW. El [registro del lote 1119](cambios-lote-1119.json) mantiene la trazabilidad completa.
+
+- **5916 — señalización RDSI por canal D:** **vigente**, respuesta C (Q.921), recomendación ITU-T de capa de enlace; Q.931 corresponde a capa 3. A1-108/A2-II-8.
+- **5917 — secráfono:** **vigente**, respuesta D. Es el equipo empleado para el cifrado/alteración analógica de la voz, según glosario CCN-STIC. A1-80/A2-IV-12.
+- **5918 — calidad de VoIP:** **corregida**, respuesta A. Latencia, jitter y pérdida de paquetes afectan la conversación/calidad de voz; SIP/H.323 por sí solos son protocolos de señalización. A1-116/A2-IV-14.
+- **5919 — ADPCM:** **corregida**, respuesta C. Es Adaptive Differential Pulse Code Modulation, codificación/compresión de voz; no es LZW ni compresión fractal. A1-56/A2-IV-14.
+- **5920 — CRC de Ethernet:** **vigente**, respuesta A (4 bytes). El FCS contiene CRC-32 y ocupa cuatro octetos. A1-110/A2-IV-8.
+
+Fuentes primarias: [ITU-T Q.921, capa de enlace RDSI](https://www.itu.int/rec/T-REC-Q.921/en/), [CCN-CERT, glosario «secráfono»](https://www.ccn-cert.cni.es/publico/seriesCCN-STIC/series/400-Guias_Generales/401-glosario_abreviaturas/topics/822.html), [ITU-T G.114, retardo unidireccional](https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=6254), [ITU-T G.1020, voz sobre redes IP](https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=8858), [ITU-T G.726, ADPCM](https://www.itu.int/rec/T-REC-G.726/e) y [IEEE, FCS/CRC de Ethernet](https://technav.ieee.org/area/cyclic-redundancy-check/). Convocatorias oficiales cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 56/80/108/110/116; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexos IX II.8/IV.8/IV.12/IV.14. Cotejo curricular: [ITIC Academy, bloque 43, telecomunicaciones, voz IP, protocolos y Ethernet](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk). La academia orienta la clasificación y las respuestas se contrastan en las recomendaciones y el glosario normativo/técnico indicados.
+
+Ejecutados revisar-lote-1119.cjs, academia-lote-1119.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas, 5.915 examinadas individualmente, 101 pendientes explícitas, 6.208 sin revisar individualmente y cero errores estructurales. La validación automática no se presenta como revisión del contenido restante.
 
 ## Lote 1118 — 13 de noviembre de 2026
 

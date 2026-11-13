@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1119.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy='https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk';
+const map={
+ 5916:{a1:[108],a2:['II-8'],doc:academy,desc:'ITIC Academy, bloque 43, redes de telecomunicaciones y señalización; la capa y referencia normativa Q.921 se verificaron en ITU-T.'},
+ 5917:{a1:[80],a2:['IV-12'],doc:academy,desc:'ITIC Academy, bloque 43, seguridad de comunicaciones; el término histórico secráfono se cotejó en el glosario oficial CCN-STIC.'},
+ 5918:{a1:[116],a2:['IV-14'],doc:academy,desc:'ITIC Academy, bloque 43, VoIP/calidad de servicio; retardo y variación/pérdida se contrastaron con ITU-T G.114/G.1020.'},
+ 5919:{a1:[56],a2:['IV-14'],doc:academy,desc:'ITIC Academy, bloque 43, voz digital y códecs; ADPCM se verificó en ITU-T G.726 y se separó de LZW.'},
+ 5920:{a1:[110],a2:['IV-8'],doc:academy,desc:'ITIC Academy, bloque 43, Ethernet y redes LAN; la longitud del FCS se confirmó en IEEE 802.3/IEEE Technology Navigator.'}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=map[c.id];assert.ok(q&&m,`Falta pregunta/mapeo ${c.id}`);for(const id of [...m.a1.map(x=>`A1-${x}`),...m.a2.map(x=>`A2-${x}`)])assert.ok(topics.has(id),id);q.clasificacion.A1=m.a1.map(n=>`A1-${n}`);q.clasificacion.A2=m.a2.map(n=>`A2-${n}`);const marker='Cotejo curricular ITIC Academy:';const trim=v=>{const raw=(v||'').trim(),i=raw.indexOf(marker);return (i<0?raw:raw.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\. Una lista vacía no implica exclusión del programa\.?\s*/,'').trim();};const note=`Cotejo curricular ITIC Academy: ${m.desc} Temas oficiales asociados: ${[...q.clasificacion.A1,...q.clasificacion.A2].join('/')}. La academia sirve como mapa curricular, mientras la definición se respalda en la fuente técnica primaria.`;q.clasificacion.bloque_academia=m.desc;q.clasificacion.nota=`${trim(q.clasificacion.nota)} ${note}`.trim();q.comentarios=`${trim(q.comentarios)} ${note}`.trim();q.revision.observaciones=`${trim(q.revision.observaciones)} ${note}`.trim();if(!q.revision.fuentes.some(f=>f.url===m.doc))q.revision.fuentes.push({url:m.doc,referencia:m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular A1/A2 actualizado para IDs 5916–5920.');
