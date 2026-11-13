@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1198.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 6311:{url:'https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk',desc:'ITIC Academy, bloque 42 Redes, actualización 2026: redes de transporte y MPLS; cotejo A1-113/A2-IV-10.'},
+ 6312:{url:'https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk',desc:'ITIC Academy, bloque 50 Videoconferencia, SSO y trabajo colaborativo, actualización 2026: acceso remoto y teletrabajo; cotejo A1-131.'},
+ 6313:{url:null,desc:'Se buscó en los documentos accesibles de ITIC Academy/Drive por teoría de colas, RSS y disciplinas de servicio; no se localizó un bloque que trate directamente este concepto. No se fuerza una equivalencia curricular.'},
+ 6314:{url:'https://drive.google.com/file/d/16Er3cneQ-Vik3zSjYq6zQUOfSKK4vxVu/view?usp=drivesdk',desc:'ITIC Academy, bloque 25 Cloud Computing, versión 2026.1 (19/08/2026): modelos de servicio, nube híbrida y situación de NubeSARA; cotejo A1-49/A1-55/A2-I-10/II-1.'},
+ 6315:{url:'https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk',desc:'ITIC Academy, bloque 41 ITIL y COBIT, actualización 2026: estudia COBIT 2019; la pregunta se conserva con valor histórico para COBIT 5 y se coteja curricularmente con A1-106.'}
+};
+const clean=s=>{s=(s||'').trim();const i=s.indexOf('Cotejo curricular de ITIC Academy:');return(i<0?s:s.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\.[^\n]*/,'').trim();};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&m,'Falta pregunta/mapeo '+c.id);q.clasificacion.bloque_academia=m.desc;const note='Cotejo curricular de ITIC Academy: '+m.desc+' El cotejo acredita cobertura temática del material cuando se localiza; no verifica por sí mismo la respuesta.';q.clasificacion.nota=(clean(q.clasificacion.nota)+' '+note).trim();q.comentarios=(clean(q.comentarios)+' '+note).trim();q.revision.observaciones=(clean(q.revision.observaciones)+' '+note).trim();if(m.url&&!q.revision.fuentes.some(f=>f.url===m.url))q.revision.fuentes.push({url:m.url,referencia:'ITIC Academy/Drive: '+m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo Academy/Drive actualizado para IDs 6311–6315; se documenta la ausencia de recurso directo para teoría de colas.');
