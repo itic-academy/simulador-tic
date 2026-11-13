@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1210 (IDs 6371–6375). Acumulado: 6.370 preguntas examinadas individualmente; 6.256 verificadas (1.239 vigentes, 4.559 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5.753 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1211 (IDs 6376–6380). Acumulado: 6.375 preguntas examinadas individualmente; 6.261 verificadas (1.240 vigentes, 4.563 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5.748 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `245e7c9` (`245e7c96b157eb1941371bba3a335c95910d7de9)` completó correctamente [Deploy GitHub Pages, workflow run 43471388059](https://github.com/itic-academy/simulador-tic/actions/runs/43471388059). README, `cambios-lote-1210.json` e `inventario.json` respondieron HTTP 200 con consulta sin caché. El registro publicado contiene los IDs 6371–6375; el inventario confirma 6.370 examinadas, 6.256 verificadas (1.239 vigentes, 4.559 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.753 sin revisar.
 
@@ -129,6 +129,24 @@ Estado parcial, no revisión completa del banco. Publicación desde main mediant
 **Publicación verificada:** el commit `1f1da8aa2ca275c94634dc08013d7a4a1a5c0b22` de main ejecutó correctamente [Deploy GitHub Pages, run 43374867546](https://github.com/itic-academy/simulador-tic/actions/runs/43374867546). README, `cambios-lote-1145.json` e `inventario.json` respondieron HTTP 200; el registro publicado contiene 6046–6050 y el inventario confirma 6.045 examinadas y 6.078 aún sin revisar individualmente.
 
 **Publicación verificada:** el commit `88681c4a463e6363a427457e58eba4b7e81c0b71` de main ejecutó correctamente [Deploy GitHub Pages, run 43373957520](https://github.com/itic-academy/simulador-tic/actions/runs/43373957520). Tras desplegar, README, `cambios-lote-1144.json` e `inventario.json` respondieron HTTP 200; el README servido identifica el lote 1144, el registro contiene los IDs 6041–6045 y el inventario confirma 6.040 revisadas y 6.083 aún sin revisar individualmente.
+
+## Lote 1211 — 13 de noviembre de 2026
+
+Revisión individual de los IDs 6376–6380: cuatro preguntas corregidas y una vigente. Se conservan los originales completos en el registro del lote.
+
+- **6376 — diagramas de comportamiento UML:** **corregida**, respuesta B. La clasificación UML 2.5.1 incluye actividad, máquina de estados, casos de uso e interacción. Se corrige la afirmación de que comunicación nació en UML 2.0 y la descripción imprecisa del diagrama global de interacción; el nuevo enunciado deja una única opción correcta.
+- **6377 — GeneralizationSet:** **corregida**, respuesta D. El enunciado original confundía dos dimensiones ortogonales: cobertura (*complete/incomplete*) y disjunción (*disjoint/overlapping*). La versión corregida pregunta expresamente por los valores de la segunda propiedad.
+- **6378 — tipo de diagrama:** **corregida**, respuesta B. Se elimina la cifra desactualizada de «13 tipos en UML 2.0» y se pregunta con referencia a la clasificación de comportamiento de UML 2.5.1.
+- **6379 — eventos y vida de objetos:** **corregida**, respuesta D. Se conserva como distractor incorrecto el renombrado automático. La creación, los mensajes y el fin de vida se modelan en UML; no se afirma que la liberación física de memoria tenga idéntica mecánica en todos los lenguajes.
+- **6380 — MÉTRICA v3:** **vigente**, respuesta A. DSI 9 diseña migración/carga inicial, CSI 8 construye los procedimientos e IAS 4 carga datos en operación.
+
+Fuentes primarias/técnicas: [OMG UML 2.5.1, especificación normativa](https://www.omg.org/spec/UML/2.5.1/PDF), §§7.3, 9.7.4 (tabla 9.1), 12 y 17; [registro de la versión UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/About-UML/); [OMG, clasificación general de diagramas](https://www.omg.org/UML/what-is-uml.htm); manuales oficiales MÉTRICA v3: [DSI](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A7f366cd1-6759-42d9-9e0b-31edce0256d9/METRICA_V3_Diseno_del_Sistema_de_Informacion.pdf), [CSI](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf) e [IAS](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A507af1ff-0457-464d-b276-be26a8826b1c/METRICA_V3_Implantacion_y_Aceptacion_del_Sistema.pdf).
+
+Convocatorias contrastadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, temas 93 (UML/técnicas de diseño) y 95 (MÉTRICA); [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas III-9 (UML) y III-2 (gestión y proceso de desarrollo/metodologías).
+
+Cotejo curricular en Drive: el [bloque 38 de ITIC Academy, Análisis, Diseño y Construcción de Sistemas de Información, edición 2026.1](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk) contiene el mapa UML para A1-93/A2-D9; el [Tema 093 de MÉTRICA v3](https://drive.google.com/file/d/1hPYYrCoVBKhiEgMaqVBi5mpdUEm4_vV5/view?usp=drivesdk) separa los procesos DSI, CSI e IAS. Son materiales académicos de cotejo curricular; no reemplazan a OMG, los manuales oficiales de MÉTRICA ni las convocatorias BOE. El texto de la convocatoria ubica las materias; no se afirma que las etiquetas temáticas sean exhaustivas de toda normativa posterior.
+
+Se ejecutaron revisar-lote-1211.cjs, academia-lote-1211.cjs, inventario.cjs, verificar.cjs y git diff --check. Resultado del inventario: 12.123 preguntas, 6.375 examinadas individualmente; 6.261 verificadas (1.240 vigentes, 4.563 corregidas, 458 históricas), 114 pendientes documentadas (45 de fuente, 69 de ambigüedad), 5.748 todavía sin revisar individualmente; cero errores estructurales.
 
 ## Lote 1210 — 13 de noviembre de 2026
 
