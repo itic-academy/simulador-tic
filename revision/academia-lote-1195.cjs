@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1195.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 6296:{url:'https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk',desc:'ITIC Academy, bloque 41 ITIL y COBIT (2026): gestión de servicios e incidencias; cotejo A1-106/A2-IV-3.'},
+ 6297:{url:'https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk',desc:'ITIC Academy, bloque 01 Constitución, organización del Estado y AGE (2026): órganos de la AGE; cotejo temático A1-4. El temario A2 cotejado no incluye epígrafe específico de clasificación de órganos AGE.'},
+ 6298:{url:'https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk',desc:'ITIC Academy, bloque 39 Calidad y mantenimiento (2026): procesos, estrategia y técnicas de pruebas; cotejo A1-96/A2-III-7.'},
+ 6299:{url:'https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk',desc:'ITIC Academy, bloque 43 Protocolos (actualización 2026): redes IP, direccionamiento y encaminamiento; cotejo temático A1-115/A2-IV-13.'},
+ 6300:{url:'https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk',desc:'ITIC Academy, bloque Hardware, servidores, CPD, almacenamiento y virtualización (2026): hipervisores, máquinas virtuales y consolidación; cotejo A1-53/A1-57/A1-132/A2-II-1/A2-IV-6.'}
+};
+const clean=s=>{s=(s||'').trim();const i=s.indexOf('Cotejo curricular de ITIC Academy:');return(i<0?s:s.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\.[^\n]*/,'').trim();};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&m,'Falta pregunta/mapeo '+c.id);q.clasificacion.bloque_academia=m.desc;const note='Cotejo curricular de ITIC Academy: '+m.desc+' El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta.';q.clasificacion.nota=(clean(q.clasificacion.nota)+' '+note).trim();q.comentarios=(clean(q.comentarios)+' '+note).trim();q.revision.observaciones=(clean(q.revision.observaciones)+' '+note).trim();if(!q.revision.fuentes.some(f=>f.url===m.url))q.revision.fuentes.push({url:m.url,referencia:'ITIC Academy: '+m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular ITIC Academy actualizado para IDs 6296–6300.');
