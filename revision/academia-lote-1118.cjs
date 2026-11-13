@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1118.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy='https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk';
+const map={
+ 5911:{a1:[109],a2:['IV-13'],doc:academy,desc:'ITIC Academy, bloque 43, protocolos y servicios básicos de Internet; TFTP y su puerto se verificaron en RFC 1350/IANA.'},
+ 5912:{a1:[115],a2:['II-8'],doc:academy,desc:'ITIC Academy, bloque 43, IPv4/CIDR y direccionamiento; el resultado se calculó aplicando el prefijo /28 y la convención de red/broadcast.'},
+ 5913:{a1:[115],a2:['II-8'],doc:academy,desc:'ITIC Academy, bloque 43, IPv6; sintaxis y notación se comprobaron con RFC 4291 y RFC 5952, corrigiendo un distractor adicionalmente inválido.'},
+ 5914:{a1:[115],a2:['II-8'],doc:academy,desc:'ITIC Academy, bloque 43, direccionamiento/subnetting IPv4; broadcast calculado según el bloque CIDR /27.'},
+ 5915:{a1:[115],a2:['II-8'],doc:academy,desc:'ITIC Academy, bloque 43, direccionamiento/subnetting IPv4; máscara, red y broadcast calculados a partir del prefijo /27.'}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=map[c.id];assert.ok(q&&m,`Falta pregunta/mapeo ${c.id}`);for(const id of [...m.a1.map(x=>`A1-${x}`),...m.a2.map(x=>`A2-${x}`)])assert.ok(topics.has(id),id);q.clasificacion.A1=m.a1.map(n=>`A1-${n}`);q.clasificacion.A2=m.a2.map(n=>`A2-${n}`);const marker='Cotejo curricular ITIC Academy:';const trim=v=>{const raw=(v||'').trim(),i=raw.indexOf(marker);return (i<0?raw:raw.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\. Una lista vacía no implica exclusión del programa\.?\s*/,'').trim();};const note=`Cotejo curricular ITIC Academy: ${m.desc} Temas oficiales asociados: ${[...q.clasificacion.A1,...q.clasificacion.A2].join('/')}. La academia orienta el encaje curricular y la respuesta se fundamenta en la fuente técnica primaria.`;q.clasificacion.bloque_academia=m.desc;q.clasificacion.nota=`${trim(q.clasificacion.nota)} ${note}`.trim();q.comentarios=`${trim(q.comentarios)} ${note}`.trim();q.revision.observaciones=`${trim(q.revision.observaciones)} ${note}`.trim();if(!q.revision.fuentes.some(f=>f.url===m.doc))q.revision.fuentes.push({url:m.doc,referencia:m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular A1/A2 actualizado para IDs 5911–5915.');
