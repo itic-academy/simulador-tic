@@ -324356,57 +324356,239 @@
       "id": 6236,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes bloques básicos no forma parte de la Unidad de Control?",
+      "texto": "En una unidad de control implementada como una máquina de estados finitos, ¿cuál de los siguientes elementos no forma parte de la descomposición básica en registro de estado y lógica combinacional?",
       "opciones": [
-        "Registro de memorización del estado presente.",
-        "Bloque de cálculo del próximo estado.",
-        "Bloque de cálculo de la salida (microórdenes enviadas a la unidad de procesamiento).",
-        "Bloque temporizador."
+        "Registro que almacena el estado presente.",
+        "Lógica que calcula el próximo estado a partir del estado actual y las entradas.",
+        "Lógica que genera las señales de salida o microórdenes.",
+        "Bloque temporizador como componente independiente de esa descomposición básica."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se precisa que se pregunta por la descomposición didáctica de una unidad de control implementada como máquina finita: registro de estado, lógica de próximo estado y lógica de salida. Un temporizador no es un bloque de esa descomposición, aunque un diseño real pueda utilizar señales de reloj o contadores auxiliares. Respuesta D. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, almacenamiento y virtualización (2026), contextualiza los epígrafes A1-57 y A2-T1; se usa como cotejo curricular general de organización de computadores, no como fuente específica para la arquitectura FSM de la unidad de control. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-57"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, almacenamiento y virtualización (2026), contextualiza los epígrafes A1-57 y A2-T1; se usa como cotejo curricular general de organización de computadores, no como fuente específica para la arquitectura FSM de la unidad de control.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, almacenamiento y virtualización (2026), contextualiza los epígrafes A1-57 y A2-T1; se usa como cotejo curricular general de organización de computadores, no como fuente específica para la arquitectura FSM de la unidad de control. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria."
+      },
+      "etiquetas": [
+        "unidad de control",
+        "máquina de estados finitos",
+        "registro de estado",
+        "lógica de próximo estado",
+        "microórdenes"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://cseweb.ucsd.edu/classes/wi06/cse140/LN07.pdf",
+            "referencia": "University of California San Diego, Advanced Digital Design, tema 7.11: describe la unidad de control como máquina de estados finitos compuesta por registro de estado y lógica combinacional que implementa transición de estados y funciones de salida."
+          },
+          {
+            "url": "https://www-inst.cs.berkeley.edu/~cs61c/sp19/pdfs/lectures/lec10.pdf",
+            "referencia": "UC Berkeley EECS, CS61C, implementación de FSM: el registro almacena el estado presente y la lógica combinacional calcula próximo estado y salida."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 57: sistemas de información multiusuario, sistemas y servidores."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.1: tecnologías actuales de ordenadores y arquitecturas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, almacenamiento y virtualización (2026), contextualiza los epígrafes A1-57 y A2-T1; se usa como cotejo curricular general de organización de computadores, no como fuente específica para la arquitectura FSM de la unidad de control."
+          }
+        ],
+        "observaciones": "Se precisa que se pregunta por la descomposición didáctica de una unidad de control implementada como máquina finita: registro de estado, lógica de próximo estado y lógica de salida. Un temporizador no es un bloque de esa descomposición, aunque un diseño real pueda utilizar señales de reloj o contadores auxiliares. Respuesta D. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, almacenamiento y virtualización (2026), contextualiza los epígrafes A1-57 y A2-T1; se usa como cotejo curricular general de organización de computadores, no como fuente específica para la arquitectura FSM de la unidad de control. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria."
+      }
     },
     {
       "id": 6237,
       "bloque": 0,
       "tema": 0,
-      "texto": "La memoria caché:",
+      "texto": "¿Qué afirmación distingue correctamente la caché de CPU de la memoria virtual paginada?",
       "opciones": [
-        "Es una memoria auxiliar que se añade a la memoria principal",
-        "Es una parte de la memoria principal más rápida que el resto",
-        "No se encarga de realizar la traducción de los identificadores de bloques",
-        "No disminuye el fallo de páginas"
+        "La caché de CPU conserva copias de datos o instrucciones para reducir la latencia media de acceso; un fallo de página ocurre cuando una página virtual referenciada no está residente y lo gestiona el mecanismo de memoria virtual del sistema operativo.",
+        "La caché es una partición de la memoria principal que siempre funciona más rápido que el resto de la RAM.",
+        "La caché de CPU es el mecanismo general que traduce direcciones virtuales a físicas.",
+        "La presencia de una caché de CPU evita que se produzcan fallos de página."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se reformula porque el reactivo mezclaba memoria caché, memoria auxiliar, traducción de direcciones y fallos de página. La opción correcta nueva define la caché de CPU como almacenamiento de copias para reducir latencia y distingue el fallo de página de una falta de caché. Se conserva el enunciado y la clave originales en la trazabilidad. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), cubre fundamentos A1-59 y A2-T2, incluido el marco de memoria virtual y administración; la convocatoria actual numera el tema A2 correspondiente como II.2. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-59"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 Sistemas Operativos (2026.1), cubre fundamentos A1-59 y A2-T2, incluido el marco de memoria virtual y administración; la convocatoria actual numera el tema A2 correspondiente como II.2.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), cubre fundamentos A1-59 y A2-T2, incluido el marco de memoria virtual y administración; la convocatoria actual numera el tema A2 correspondiente como II.2. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria."
+      },
+      "etiquetas": [
+        "memoria caché",
+        "memoria virtual",
+        "fallo de página",
+        "TLB",
+        "jerarquía de memoria"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.cise.ufl.edu/~mssz/CompOrg/CDA-mem.html",
+            "referencia": "University of Florida, Organization of Computer Systems: Processor & Datapath, compara explícitamente la jerarquía de caché con la memoria virtual y distingue cache misses de page faults."
+          },
+          {
+            "url": "https://docs.kernel.org/6.10/mm/page_tables.html",
+            "referencia": "Documentación oficial del kernel Linux, MMU, TLB y page faults: el MMU traduce direcciones virtuales a físicas; TLB y page-walk caches aceleran traducciones; los fallos de página se producen en el mecanismo de memoria virtual."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 59: conceptos y fundamentos de sistemas operativos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.2: fundamentos y características de sistemas operativos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1G57S8eoBb-CBcQcBA-KS6o8sASPMTwfm/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), cubre fundamentos A1-59 y A2-T2, incluido el marco de memoria virtual y administración; la convocatoria actual numera el tema A2 correspondiente como II.2."
+          }
+        ],
+        "observaciones": "Se reformula porque el reactivo mezclaba memoria caché, memoria auxiliar, traducción de direcciones y fallos de página. La opción correcta nueva define la caché de CPU como almacenamiento de copias para reducir latencia y distingue el fallo de página de una falta de caché. Se conserva el enunciado y la clave originales en la trazabilidad. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), cubre fundamentos A1-59 y A2-T2, incluido el marco de memoria virtual y administración; la convocatoria actual numera el tema A2 correspondiente como II.2. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria."
+      }
     },
     {
       "id": 6238,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de éstos es un problema asociado al cloud computing:",
+      "texto": "¿Cuál es un riesgo que puede darse al contratar computación en la nube cuando la portabilidad o la interoperabilidad son insuficientes?",
       "opciones": [
-        "Necesita de una mayor inversión inicial que una infraestructura in-house.",
-        "Lock-in (cliente cautivo).",
-        "Generalmente la implantación es más lenta que con una infraestructura in-house.",
-        "Ninguno de los anteriores."
+        "Necesitar siempre una inversión inicial mayor que con infraestructura propia.",
+        "Dependencia del proveedor (vendor lock-in), si barreras técnicas o contractuales dificultan trasladar datos y servicios.",
+        "Implantación generalmente más lenta que con infraestructura propia.",
+        "Ningún riesgo de cambio de proveedor, porque todos los servicios cloud son interoperables."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se precisa que el bloqueo de proveedor no es inevitable ni exclusivo de cloud: es un riesgo cuando barreras contractuales/técnicas o falta de portabilidad dificultan el cambio. El Reglamento (UE) 2023/2854 establece obligaciones de switching, pero no permite afirmar que toda migración sea instantánea, gratuita o sin trabajo. Respuesta B. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 25 Cloud Computing (2026), cubre A1-55 y A2-T1, modelos de servicio/despliegue y riesgos de portabilidad y proveedor; la fuente normativa vigente para cambio de proveedor se añade por separado. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-55"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 25 Cloud Computing (2026), cubre A1-55 y A2-T1, modelos de servicio/despliegue y riesgos de portabilidad y proveedor; la fuente normativa vigente para cambio de proveedor se añade por separado.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 25 Cloud Computing (2026), cubre A1-55 y A2-T1, modelos de servicio/despliegue y riesgos de portabilidad y proveedor; la fuente normativa vigente para cambio de proveedor se añade por separado. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria."
+      },
+      "etiquetas": [
+        "computación en la nube",
+        "dependencia de proveedor",
+        "vendor lock-in",
+        "portabilidad",
+        "interoperabilidad",
+        "Reglamento de Datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://interoperable-europe.ec.europa.eu/collection/ict-standards-procurement/interoperability-and-portability",
+            "referencia": "Comisión Europea, Interoperability and portability: define vendor lock-in en TIC y explica su relación específica con la portabilidad e interoperabilidad cloud y con los costes/dificultad de cambio."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R2854",
+            "referencia": "Reglamento (UE) 2023/2854 (Data Act), capítulo VI, especialmente artículos 23–25: obliga a eliminar obstáculos al cambio entre servicios de tratamiento de datos y a estipular derechos y asistencia de switching. La existencia del marco no elimina todo riesgo operativo o contractual."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 55: cloud computing y modelos de despliegue."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.1: computación en la nube y su base tecnológica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/16Er3cneQ-Vik3zSjYq6zQUOfSKK4vxVu/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 25 Cloud Computing (2026), cubre A1-55 y A2-T1, modelos de servicio/despliegue y riesgos de portabilidad y proveedor; la fuente normativa vigente para cambio de proveedor se añade por separado."
+          }
+        ],
+        "observaciones": "Se precisa que el bloqueo de proveedor no es inevitable ni exclusivo de cloud: es un riesgo cuando barreras contractuales/técnicas o falta de portabilidad dificultan el cambio. El Reglamento (UE) 2023/2854 establece obligaciones de switching, pero no permite afirmar que toda migración sea instantánea, gratuita o sin trabajo. Respuesta B. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 25 Cloud Computing (2026), cubre A1-55 y A2-T1, modelos de servicio/despliegue y riesgos de portabilidad y proveedor; la fuente normativa vigente para cambio de proveedor se añade por separado. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria."
+      }
     },
     {
       "id": 6239,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación con los dispositivos de estado sólido, señale la respuesta CORRECTA:",
+      "texto": "Tras borrar datos de una unidad SSD, ¿qué factor puede hacer que su recuperación sea más difícil que en una unidad HDD?",
       "opciones": [
-        "En general, poseen mayor capacidad de almacenamiento que los discos duros mecánicos.",
-        "Poseen mayor vida útil que los discos duros mecánicos.",
-        "Poseen menor capacidad de recuperación que los discos duros mecánicos.",
-        "El tiempo de búsqueda es aleatorio."
+        "Que todas las SSD tengan siempre más capacidad y, por ello, sobrescriban inmediatamente los datos.",
+        "Que los discos HDD usen necesariamente TRIM para borrar sus sectores magnéticos.",
+        "Que, si TRIM y la recolección de basura del controlador han liberado o reutilizado las páginas, quede menos información recuperable; el resultado depende del dispositivo y del tiempo transcurrido.",
+        "Que las SSD almacenen los datos en platos magnéticos móviles."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se evita la generalización «las SSD siempre se recuperan peor». Se formula el mecanismo comprobable: cuando TRIM y la recolección de basura han liberado/reutilizado las páginas, la recuperación de datos borrados puede resultar más difícil que en un HDD; el resultado depende del dispositivo, firmware, sistema operativo y momento. Respuesta C. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, almacenamiento y virtualización (2026), cubre A1-56 y el tema A2-T1 relativo a dispositivos/almacenamiento; la respuesta sobre recuperación se fundamenta en estudios experimentales, no en el material académico. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 Hardware, servidores, almacenamiento y virtualización (2026), cubre A1-56 y el tema A2-T1 relativo a dispositivos/almacenamiento; la respuesta sobre recuperación se fundamenta en estudios experimentales, no en el material académico.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, almacenamiento y virtualización (2026), cubre A1-56 y el tema A2-T1 relativo a dispositivos/almacenamiento; la respuesta sobre recuperación se fundamenta en estudios experimentales, no en el material académico. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria."
+      },
+      "etiquetas": [
+        "SSD",
+        "HDD",
+        "TRIM",
+        "recolección de basura",
+        "recuperación forense",
+        "almacenamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://dfrws.org/sites/default/files/session-files/2011_USA_paper-empirical_analysis_of_solid_state_disk_data_retention_when_used_with_contemporary_operating_systems.pdf",
+            "referencia": "King y Vidas, DFRWS 2011, estudio empírico de 15 SSD y un HDD: con TRIM habilitado y un sistema compatible, la recuperación de bloques borrados se redujo notablemente; sin TRIM, los resultados variaban según fabricante y garbage collection."
+          },
+          {
+            "url": "https://napier-repository.worktribe.com/output/3205993/challenges-and-considerations-in-data-recovery-from-solid-state-media-a-comparative-analysis",
+            "referencia": "Spalding, Tan y Babaagba, IEEE TrustCom 2023 (registro del repositorio académico): estudio comparativo encuentra menor retención de datos eliminados en las SSD analizadas que en el HDD, con diferencias entre tecnologías y modelos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 56: sistemas de almacenamiento y dispositivos para tratamiento de información."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.1: tecnologías actuales de ordenadores y almacenamiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, almacenamiento y virtualización (2026), cubre A1-56 y el tema A2-T1 relativo a dispositivos/almacenamiento; la respuesta sobre recuperación se fundamenta en estudios experimentales, no en el material académico."
+          }
+        ],
+        "observaciones": "Se evita la generalización «las SSD siempre se recuperan peor». Se formula el mecanismo comprobable: cuando TRIM y la recolección de basura han liberado/reutilizado las páginas, la recuperación de datos borrados puede resultar más difícil que en un HDD; el resultado depende del dispositivo, firmware, sistema operativo y momento. Respuesta C. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, almacenamiento y virtualización (2026), cubre A1-56 y el tema A2-T1 relativo a dispositivos/almacenamiento; la respuesta sobre recuperación se fundamenta en estudios experimentales, no en el material académico. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria."
+      }
     },
     {
       "id": 6240,
@@ -324420,7 +324602,49 @@
         "Sus ficheros son de sólo escritura."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La opción C es correcta: /proc es un sistema de archivos virtual que expone información derivada de estructuras del kernel y de procesos. La documentación del kernel advierte también que partes como /proc/sys admiten cambios; por tanto, la opción que generaliza que todos los ficheros son de solo lectura es falsa. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), incluye UNIX/Linux, fundamentos y administración, con correspondencia A1-60/A2-II.2. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 Sistemas Operativos (2026.1), incluye UNIX/Linux, fundamentos y administración, con correspondencia A1-60/A2-II.2.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), incluye UNIX/Linux, fundamentos y administración, con correspondencia A1-60/A2-II.2. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria."
+      },
+      "etiquetas": [
+        "Linux",
+        "/proc",
+        "procfs",
+        "sistema de archivos virtual",
+        "kernel",
+        "parámetros sysctl"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://docs.kernel.org/filesystems/proc.html",
+            "referencia": "Documentación oficial del kernel Linux, The /proc Filesystem: procfs presenta una interfaz a estructuras internas del kernel; ofrece información de procesos y sistema y permite cambiar determinados parámetros (por ejemplo, mediante /proc/sys). Por ello, no todos sus ficheros son solo de lectura."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 60: sistemas operativos UNIX-LINUX, fundamentos y administración."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.2: características de Linux/Unix y administración del sistema operativo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1G57S8eoBb-CBcQcBA-KS6o8sASPMTwfm/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), incluye UNIX/Linux, fundamentos y administración, con correspondencia A1-60/A2-II.2."
+          }
+        ],
+        "observaciones": "La opción C es correcta: /proc es un sistema de archivos virtual que expone información derivada de estructuras del kernel y de procesos. La documentación del kernel advierte también que partes como /proc/sys admiten cambios; por tanto, la opción que generaliza que todos los ficheros son de solo lectura es falsa. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), incluye UNIX/Linux, fundamentos y administración, con correspondencia A1-60/A2-II.2. El material de academia sirve para ubicar cobertura y no sustituye evidencia técnica o normativa primaria."
+      }
     },
     {
       "id": 6241,
