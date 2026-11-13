@@ -1,0 +1,4 @@
+const fs=require('node:fs'),path=require('node:path');const f=path.join(__dirname,'README.md');let s=fs.readFileSync(f,'utf8');
+const before='**Publicación verificada:** el commit `4dec45bfabe94b9794a762c6feaf3e4a4b9e2dac` completó correctamente [Deploy GitHub Pages, run `43393105482`](https://github.com/itic-academy/simulador-tic/actions/runs/43393105482). El workflow finalizó con “completed successfully”; README, `cambios-lote-1159.json` e `inventario.json` respondieron HTTP 200. El registro contiene los IDs 6116–6120 y el inventario confirma 6.115 examinadas, 6.012 verificadas y 6.008 aún sin revisar individualmente.';
+const entry='**Publicación verificada:** pendiente de despliegue del lote 1160.';
+if(!s.includes(before))throw Error('No se encontró evidencia de publicación previa');s=s.replace(before,entry);fs.writeFileSync(f,s);console.log('Marcador de verificación preparado.');
