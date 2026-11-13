@@ -2,6 +2,8 @@
 
 Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1166 (IDs 6151–6155). Acumulado: 6.150 preguntas examinadas individualmente; 6.040 verificadas (1.183 vigentes, 4.415 corregidas y 442 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.973 sin revisar individualmente.
 
+**Publicación verificada:** el commit de datos `db478f1` (documentado en `db478f1ea18e6e862275f253fc1430967e85115c`) desplegó correctamente [GitHub Pages, workflow run 43402199068](https://github.com/itic-academy/simulador-tic/actions/runs/43402199068). README, `cambios-lote-1166.json` e `inventario.json` respondieron HTTP 200 y su contenido confirma los IDs 6151–6155, 6.150 examinadas, 6.040 verificadas, 110 pendientes y 5.973 sin revisar.
+
 **Publicación verificada:** el commit de datos `9e688fc` (documentado en `9e688fc4de7e571b03d52693da149015ab9d1ca3`) está servido por GitHub Pages: README, `cambios-lote-1165.json` e `inventario.json` respondieron HTTP 200. El registro contiene los IDs 6146–6150 y el inventario confirma 6.145 examinadas, 6.036 verificadas, 109 pendientes y 5.978 sin revisar. El workflow público de Deploy GitHub Pages para ese commit consta como completado correctamente.
 
 **Publicación verificada:** el commit de datos `ef038ae` (documentado en `ef038ae62d8cda9d1991954ddba8e1ccb8ada8a8`) está servido por GitHub Pages; README, `cambios-lote-1164.json` e `inventario.json` respondieron HTTP 200. El registro contiene los IDs 6141–6145 y el inventario confirma 6.140 examinadas, 6.033 verificadas, 107 pendientes y 5.983 sin revisar. La interfaz de Actions muestra que Deploy GitHub Pages run 427 terminó correctamente.
