@@ -1,0 +1,372 @@
+{
+  "fecha": "2026-11-13",
+  "alcance": "IDs 6306–6310; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 6306,
+      "original": {
+        "id": 6306,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué extensión emplea la versión v3 del protocolo LDAP para establecer una conexión segura?:",
+        "opciones": [
+          "RFC 6101.",
+          "TLS.",
+          "SSL.",
+          "Ipsec."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6306,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué operación extendida de LDAPv3 inicia la negociación de TLS sobre la conexión LDAP existente?",
+        "opciones": [
+          "RFC 6101",
+          "El protocolo/capa TLS",
+          "StartTLS",
+          "IPsec"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se corrige la imprecisión entre el protocolo TLS y la extensión del protocolo LDAP. RFC 4511 §4.14 define StartTLS como operación extendida LDAPv3 que negocia la instalación de la capa TLS. Se incorpora StartTLS como opción diferenciada; TLS por sí solo nombra la capa/protocolo, no la operación LDAP. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 45 Correo, mensajería y servicios de directorio, versión 2026.1 (17/08/2026): LDAP y servicios de directorio; cotejo temático A1-80. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-80"
+          ],
+          "A2": [],
+          "bloque_academia": "ITIC Academy, bloque 45 Correo, mensajería y servicios de directorio, versión 2026.1 (17/08/2026): LDAP y servicios de directorio; cotejo temático A1-80.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 45 Correo, mensajería y servicios de directorio, versión 2026.1 (17/08/2026): LDAP y servicios de directorio; cotejo temático A1-80. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta."
+        },
+        "etiquetas": [
+          "LDAPv3",
+          "StartTLS",
+          "TLS",
+          "servicios de directorio"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4511.html#section-4.14",
+              "referencia": "RFC 4511 (LDAPv3), §4.14: StartTLS es una operación extendida LDAP cuyo propósito es iniciar la instalación de una capa TLS en la sesión existente. TLS es la capa/protocolo de seguridad, no el nombre de la operación LDAP."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4513.html#section-3",
+              "referencia": "RFC 4513, §3: describe el procedimiento de establecimiento de TLS en LDAP y su negociación después de la respuesta StartTLS."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 45 Correo, mensajería y servicios de directorio, versión 2026.1 (17/08/2026): LDAP y servicios de directorio; cotejo curricular temático."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 80: protocolos de directorio basados en LDAP y X.500."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "El programa GSI A2 2025 cotejado no incluye un epígrafe específico sobre servicios LDAP/StartTLS; no se asigna un tema A2 por analogía."
+            }
+          ],
+          "observaciones": "Se corrige la imprecisión entre el protocolo TLS y la extensión del protocolo LDAP. RFC 4511 §4.14 define StartTLS como operación extendida LDAPv3 que negocia la instalación de la capa TLS. Se incorpora StartTLS como opción diferenciada; TLS por sí solo nombra la capa/protocolo, no la operación LDAP. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 45 Correo, mensajería y servicios de directorio, versión 2026.1 (17/08/2026): LDAP y servicios de directorio; cotejo temático A1-80. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta."
+        }
+      }
+    },
+    {
+      "id": 6307,
+      "original": {
+        "id": 6307,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Su ordenador tiene la dirección IP 10.2.40.16 y máscara de subred de 26 bits. Indique cuál de las siguientes direcciones IP puede corresponderso con su router por defecto:",
+        "opciones": [
+          "10.2.40.64",
+          "10.2.41.45",
+          "10.2.40.63",
+          "10.2.40.1"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6307,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La dirección IPv4 10.2.40.16 utiliza una máscara /26. ¿Cuál de las siguientes direcciones pertenece a su misma subred y puede asignarse a un router como puerta de enlace predeterminada?",
+        "opciones": [
+          "10.2.40.64",
+          "10.2.41.45",
+          "10.2.40.63",
+          "10.2.40.1"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Con máscara /26 (255.255.255.192), la IP 10.2.40.16 pertenece a 10.2.40.0/26: dirección de red .0, hosts utilizables .1–.62 y broadcast .63. La dirección 10.2.40.1 puede ser la puerta de enlace del mismo segmento; .64 es la dirección de red del siguiente bloque y .41.45 pertenece a otra red. Se corrige también la redacción gramatical del enunciado. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 43 Protocolos, actualización 2026: IPv4/IPv6, direccionamiento y encaminamiento; cotejo A1-115/A2-II.8. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 Protocolos, actualización 2026: IPv4/IPv6, direccionamiento y encaminamiento; cotejo A1-115/A2-II.8.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 43 Protocolos, actualización 2026: IPv4/IPv6, direccionamiento y encaminamiento; cotejo A1-115/A2-II.8. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta."
+        },
+        "etiquetas": [
+          "IPv4",
+          "CIDR",
+          "subred /26",
+          "puerta de enlace",
+          "máscara de subred"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1878.html",
+              "referencia": "RFC 1878, tabla 2-2: para una máscara /26 (255.255.255.192), los bloques de una red /24 avanzan en intervalos de 64; el bloque .0 contiene hosts .1–.62 y broadcast .63."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+              "referencia": "RFC 4632, CIDR, §3: prefijos de longitud variable identifican bloques de direcciones; se usa junto con la máscara /26 para determinar la pertenencia a la subred."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 Protocolos, actualización 2026: IPv4/IPv6, direccionamiento y encaminamiento; cotejo temático A1-115/A2-II.8."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 115: redes IP y arquitectura de redes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, temas II.8 (direccionamiento y encaminamiento) y IV.8 (redes locales)."
+            }
+          ],
+          "observaciones": "Con máscara /26 (255.255.255.192), la IP 10.2.40.16 pertenece a 10.2.40.0/26: dirección de red .0, hosts utilizables .1–.62 y broadcast .63. La dirección 10.2.40.1 puede ser la puerta de enlace del mismo segmento; .64 es la dirección de red del siguiente bloque y .41.45 pertenece a otra red. Se corrige también la redacción gramatical del enunciado. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 43 Protocolos, actualización 2026: IPv4/IPv6, direccionamiento y encaminamiento; cotejo A1-115/A2-II.8. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta."
+        }
+      }
+    },
+    {
+      "id": 6308,
+      "original": {
+        "id": 6308,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El ataque que suplanta la identidad de un servidor DNS entregando direcciones IP falsas se denomina:",
+        "opciones": [
+          "DoS.",
+          "Hijacking.",
+          "Spoofing.",
+          "Phishing."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6308,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denomina la falsificación de respuestas DNS para que un nombre de dominio resuelva a una dirección IP elegida por el atacante?",
+        "opciones": [
+          "DoS.",
+          "Hijacking.",
+          "Spoofing.",
+          "Phishing."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se precisa el ataque como falsificación de respuestas DNS para hacer que un nombre resuelva a una dirección elegida por el atacante. RFC 5452 denomina DNS spoofing a la falsificación de respuestas y explica que un resolvedor que acepta datos falsos puede hacer que sus clientes contacten con el servidor equivocado. La opción C queda inequívoca frente a DoS, hijacking genérico y phishing. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, versión 2026.1 (30/09/2026): tipos de ataques y prevención; cotejo A1-125/A2-II-13/IV-12. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-125"
+          ],
+          "A2": [
+            "A2-II-13",
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, versión 2026.1 (30/09/2026): tipos de ataques y prevención; cotejo A1-125/A2-II-13/IV-12.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, versión 2026.1 (30/09/2026): tipos de ataques y prevención; cotejo A1-125/A2-II-13/IV-12. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta."
+        },
+        "etiquetas": [
+          "seguridad DNS",
+          "DNS spoofing",
+          "falsificación de respuestas",
+          "ciberseguridad"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc5452.html#section-3",
+              "referencia": "RFC 5452, §3, «Description of DNS Spoofing»: describe la falsificación de respuestas DNS; tras aceptar datos falsos, un servidor caché puede dirigir a los clientes a servidores incorrectos o maliciosos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, versión 2026.1 (30/09/2026): tipos de ataques, seguridad de redes y herramientas preventivas; cotejo temático."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 125: seguridad en redes, tipos de ataques y prevención."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, temas II.13 (herramientas de ciberseguridad) y IV.12 (seguridad en redes)."
+            }
+          ],
+          "observaciones": "Se precisa el ataque como falsificación de respuestas DNS para hacer que un nombre resuelva a una dirección elegida por el atacante. RFC 5452 denomina DNS spoofing a la falsificación de respuestas y explica que un resolvedor que acepta datos falsos puede hacer que sus clientes contacten con el servidor equivocado. La opción C queda inequívoca frente a DoS, hijacking genérico y phishing. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, versión 2026.1 (30/09/2026): tipos de ataques y prevención; cotejo A1-125/A2-II-13/IV-12. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta."
+        }
+      }
+    },
+    {
+      "id": 6309,
+      "original": {
+        "id": 6309,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un data lake o lago de datos es un repositorio centralizado que permite almacenar, compartir, gobernar y descubrir todos los datos estructurados y no estructurados de una organización a cualquier escala. ¿Cuál de las siguientes opciones corresponden a componentes asociados a un Data Lake?:",
+        "opciones": [
+          "Extracción, almacenamiento y diseño de los datos.",
+          "Ingesta, almacenamiento y seguridad de los datos.",
+          "Transformación, almacenamiento y seguridad de los datos.",
+          "Carga, almacenamiento y distribución de los datos."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6309,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la arquitectura típica de data lake descrita por Azure Architecture Center, ¿qué etapas organizan el movimiento de los datos?",
+        "opciones": [
+          "Ingesta, almacenamiento y diseño de los datos.",
+          "Ingesta, transformación y consumo de los datos.",
+          "Transformación, almacenamiento y seguridad de los datos.",
+          "Carga, almacenamiento y distribución de los datos."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La pregunta original pedía una lista de componentes genéricos y admitía más de una respuesta plausible: transformación, seguridad y almacenamiento también son funciones asociadas a muchos data lakes. Se acota a las etapas que la arquitectura típica del Azure Architecture Center identifica para organizar el movimiento de datos: ingesta, transformación y consumo. Con ese marco explícito, la opción B es la única respuesta. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026: data lake y tecnologías de explotación; cotejo A1-75/A2-III-15. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-75"
+          ],
+          "A2": [
+            "A2-III-15"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026: data lake y tecnologías de explotación; cotejo A1-75/A2-III-15.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026: data lake y tecnologías de explotación; cotejo A1-75/A2-III-15. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta."
+        },
+        "etiquetas": [
+          "data lake",
+          "ingesta de datos",
+          "transformación",
+          "consumo de datos",
+          "arquitectura de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-lake",
+              "referencia": "Microsoft Azure Architecture Center, «What is a data lake?», sección Typical data lake architecture: describe las etapas de ingesta, transformación y consumo. Es una arquitectura de referencia concreta; otras arquitecturas de data lake pueden variar."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026: data lake, tecnologías de explotación y ciclo de datos; cotejo A1-75/A2-III-15."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 75: data lake, data warehouse, lakehouse y tecnologías de explotación de datos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema III.15: Big Data, tecnologías y algoritmos de procesamiento y explotación de datos."
+            }
+          ],
+          "observaciones": "La pregunta original pedía una lista de componentes genéricos y admitía más de una respuesta plausible: transformación, seguridad y almacenamiento también son funciones asociadas a muchos data lakes. Se acota a las etapas que la arquitectura típica del Azure Architecture Center identifica para organizar el movimiento de datos: ingesta, transformación y consumo. Con ese marco explícito, la opción B es la única respuesta. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026: data lake y tecnologías de explotación; cotejo A1-75/A2-III-15. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta."
+        }
+      }
+    },
+    {
+      "id": 6310,
+      "original": {
+        "id": 6310,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación a la protección jurídica de los programas de ordenador señalar la respuesta falsa:",
+        "opciones": [
+          "Está protegidos mediante los derechos de autor cualquier forma de expresión de un programa de ordenador, salvo aquellas creadas con el fin de ocasionar efectos nocivos a un sistema informático",
+          "Están protegidos mediante los derechos de autor las ideas y principios en los que se base un programa, incluidos los que sirven de fundamento a sus interfaces",
+          "La primera venta de una copia de un programa por el titular de los derechos o con su consentimiento, agotará el derecho de distribución de dicha copia",
+          "La duración de los derechos de explotación de un programa de ordenador será: para una persona natural toda la vida del autor y 70 años después de su muerte; para una persona jurídica 70 años"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6310,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el texto refundido de la Ley de Propiedad Intelectual, señale la afirmación falsa sobre la protección jurídica de los programas de ordenador.",
+        "opciones": [
+          "La protección alcanza cualquier forma de expresión del programa y se extiende a versiones sucesivas y programas derivados, salvo los creados con el fin de ocasionar efectos nocivos a un sistema informático.",
+          "Están protegidas por derechos de autor las ideas y principios en los que se basan los elementos del programa, incluidos los que sirven de fundamento a sus interfaces.",
+          "La primera venta en la Unión Europea de una copia por el titular de los derechos o con su consentimiento agota el derecho de distribución de esa copia, sin perjuicio del control del alquiler posterior.",
+          "Para una persona autora natural rigen los plazos generales de explotación (como regla, vida del autor y 70 años); si la titular es persona jurídica, son 70 años desde el 1 de enero siguiente a la divulgación lícita o, si no se divulga, a la creación."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La opción falsa es B. El art. 96.4 TRLPI excluye de protección por derecho de autor las ideas y principios subyacentes a los elementos del programa, incluidos los que sirven de fundamento a sus interfaces. Para evitar una segunda lectura errónea, A reproduce con precisión el art. 96.3: la protección alcanza cualquier forma de expresión y se extiende a versiones sucesivas y programas derivados, salvo los creados para causar efectos nocivos. C se ajusta al agotamiento en la UE del art. 99.c, manteniéndose el control del alquiler posterior. D resume el art. 98: para persona natural rigen los plazos generales (como regla, vida más 70 años); para persona jurídica, 70 años desde el 1 de enero siguiente a la divulgación lícita o a la creación si no hubo divulgación. Cotejo curricular de ITIC Academy: Material ITIC Academy disponible en Drive, Tema 043 «Ley de Propiedad Intelectual»: protección jurídica de programas; el archivo consultado no permite confirmar que sea la edición vigente de 2026. Cotejo temático A1-43/A2-II-14. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-43"
+          ],
+          "A2": [
+            "A2-II-14"
+          ],
+          "bloque_academia": "Material ITIC Academy disponible en Drive, Tema 043 «Ley de Propiedad Intelectual»: protección jurídica de programas; el archivo consultado no permite confirmar que sea la edición vigente de 2026. Cotejo temático A1-43/A2-II-14.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: Material ITIC Academy disponible en Drive, Tema 043 «Ley de Propiedad Intelectual»: protección jurídica de programas; el archivo consultado no permite confirmar que sea la edición vigente de 2026. Cotejo temático A1-43/A2-II-14. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta."
+        },
+        "etiquetas": [
+          "TRLPI",
+          "programas de ordenador",
+          "propiedad intelectual",
+          "derechos de autor",
+          "artículos 96 98 99"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930",
+              "referencia": "Real Decreto Legislativo 1/1996, texto consolidado consultado, arts. 96.3–96.4, 98 y 99.c: protección de la expresión y sus límites; ideas/principios no protegidos; duración y agotamiento del derecho de distribución, con excepción del alquiler."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1MjRX0kL8jEBZwHIpUag4NyJJnh_VGsVG/view?usp=drivesdk",
+              "referencia": "Material ITIC Academy/Drive, Tema 043 «Ley de Propiedad Intelectual», versión disponible: protección jurídica de programas, con referencias a A1-43 y A2-II.14; se registra como cotejo curricular y no como fuente legal vigente."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 43: protección jurídica de programas de ordenador y control de legalidad del software."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.14: licencias y protección jurídica de programas de ordenador."
+            }
+          ],
+          "observaciones": "La opción falsa es B. El art. 96.4 TRLPI excluye de protección por derecho de autor las ideas y principios subyacentes a los elementos del programa, incluidos los que sirven de fundamento a sus interfaces. Para evitar una segunda lectura errónea, A reproduce con precisión el art. 96.3: la protección alcanza cualquier forma de expresión y se extiende a versiones sucesivas y programas derivados, salvo los creados para causar efectos nocivos. C se ajusta al agotamiento en la UE del art. 99.c, manteniéndose el control del alquiler posterior. D resume el art. 98: para persona natural rigen los plazos generales (como regla, vida más 70 años); para persona jurídica, 70 años desde el 1 de enero siguiente a la divulgación lícita o a la creación si no hubo divulgación. Cotejo curricular de ITIC Academy: Material ITIC Academy disponible en Drive, Tema 043 «Ley de Propiedad Intelectual»: protección jurídica de programas; el archivo consultado no permite confirmar que sea la edición vigente de 2026. Cotejo temático A1-43/A2-II-14. El cotejo acredita cobertura temática del material, no verifica por sí mismo la respuesta."
+        }
+      }
+    }
+  ]
+}
