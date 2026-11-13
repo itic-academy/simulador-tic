@@ -1,0 +1,26 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const file=path.join(__dirname,'README.md');let s=fs.readFileSync(file,'utf8');
+const old='Último lote secuencial: 1212 (IDs 6381–6385). Acumulado: 6.380 preguntas examinadas individualmente; 6.266 verificadas (1.241 vigentes, 4.567 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5.743 sin revisar individualmente.';
+const neu='Último lote secuencial: 1213 (IDs 6386–6390). Acumulado: 6.385 preguntas examinadas individualmente; 6.271 verificadas (1.242 vigentes, 4.571 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5.738 sin revisar individualmente.';
+const section=`## Lote 1213 — 13 de noviembre de 2026
+
+Revisados individualmente los IDs 6386–6390: cuatro corregidos y uno vigente. Se conservan los registros originales completos junto a la versión editada.
+
+- **6386 — ramas de Git:** **corregida**, respuesta A. Una rama es un puntero móvil a un commit que da nombre a una línea de desarrollo; no es el acto de clonar un repositorio ni un método de almacenamiento solo por diferencias.
+- **6387 — lógica EFQM REDER:** **vigente**, respuesta A. Corresponde a Resultados, Enfoque, Despliegue y Evaluación y Revisión, traducción de RADAR (Results, Approach, Deployment, Assessment and Refinement).
+- **6388 — categorización de incidentes ITIL 4:** **corregida**, respuesta B. Se pregunta por una finalidad de encaminamiento/escalado funcional. La prioridad se basa separadamente en impacto y urgencia; la redacción evita presentarlas como alternativas excluyentes de todos los usos posibles de categorías.
+- **6389 — interconexión LAN:** **corregida**, respuesta C. Se elimina la categoría indefinida «hub de tercera generación» y se explicita que un trunk 802.1Q puede llevar varias VLAN; un hub Ethernet no segmenta dominios de broadcast.
+- **6390 — radiodifusión:** **corregida**, respuesta D. Se define el flujo emisor-oyentes como unidireccional. El término “simplex” en el modelo didáctico de transmisión de datos se conserva como sinónimo conocido, pero se diferencia del sentido reglamentario de simplex radio de ITU, que permite alternar el sentido de transmisión.
+
+Fuentes técnicas/institucionales: [Pro Git, Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell); [EFQM, lógica RADAR](https://efqm.org/case-studies/wheatley/); [Decisión (UE) 2024/1873, gestión de incidentes](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1791020800377&uri=CELEX%3A32024D1873) y [proceso de incidentes del Gobierno de Ontario](https://www.ontario.ca/page/go-its-37-enterprise-incident-management-process); [Cisco, switching, aprendizaje MAC y dominios LAN](https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html), y [trunks IEEE 802.1Q](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9200/software/release/17-12/configuration_guide/vlan/b_1712_vlan_9200_cg/configuring_vlan_trunks.html); [Reglamento de Radiocomunicaciones ITU 2024](https://search.itu.int/history/HistoryDigitalCollectionDocLibrary/1.49.48.en.101.pdf), definición de radiodifusión 1.38, y [ITU-R V.662-3](https://www.itu.int/dms_pubrec/itu-r/rec/v/R-REC-V.662-3-200005-W%21%21PDF-E.pdf), que advierte sobre el uso obsoleto de simplex como unidireccional.
+
+Convocatorias cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, temas 22 (calidad de servicios públicos), 102 (cambios/versiones), 106 (ITIL e incidencias), 118 (LAN/VLAN y dispositivos) y 120 (redes públicas de transmisión); [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas IV-4 (gestión de configuración), IV-3 (incidencias), IV-8 (redes locales y transmisión). EFQM organizativo no se fuerza como equivalencia A2 de calidad de software.
+
+Cotejo ITIC Academy/Drive: [Bloque 38 Análisis, Diseño y Construcción de Sistemas 2026.1](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), Git/control de versiones; [material de calidad (A1 95/97/99–102)](https://drive.google.com/file/d/1vRvn5ctFs9bXwuR5gfYXJiVUVhAfgG_7/view?usp=drivesdk), EFQM; [Bloque 41 ITIL y COBIT 2026](https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk), ITIL 4 e incidencias; [Bloque 42 Redes 2026](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), LAN, VLAN, switching y medios. La academia se usa para cotejo curricular, no sustituye fuentes institucionales/técnicas.
+
+Se ejecutaron revisar-lote-1213.cjs, academia-lote-1213.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas; 6.385 examinadas individualmente, 6.271 verificadas (1.242 vigentes, 4.571 corregidas, 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5.738 sin revisar individualmente; cero errores estructurales.
+
+`;
+assert.ok(s.includes(old),'Resumen anterior no coincide');assert.ok(s.includes('## Lote 1212 — 13 de noviembre de 2026'),'Sección 1212 ausente');
+s=s.replace(old,neu).replace('## Lote 1212 — 13 de noviembre de 2026',section+'## Lote 1212 — 13 de noviembre de 2026');
+fs.writeFileSync(file,s);console.log('README actualizado para lote 1213.');

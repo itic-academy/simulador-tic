@@ -1,0 +1,11 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1213.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ git:{url:'https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk',desc:'ITIC Academy, Bloque 38 Análisis, Diseño y Construcción de Sistemas de Información 2026.1: incluye Git/control de versiones como práctica del desarrollo; cotejo temático, no autoridad sobre el modelo interno de Git.'},
+ quality:{url:'https://drive.google.com/file/d/1vRvn5ctFs9bXwuR5gfYXJiVUVhAfgG_7/view?usp=drivesdk',desc:'ITIC Academy, material de calidad, temas A1 95/97/99–102, versión consultada 2021: incluye modelos de calidad y EFQM; cotejo curricular, no fuente primaria de la terminología RADAR.'},
+ itil:{url:'https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk',desc:'ITIC Academy, Bloque 41 ITIL y COBIT 2026: cubre gestión de servicios e incidencias en ITIL 4; cotejo curricular con el contenido institucional de apoyo.'},
+ network:{url:'https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk',desc:'ITIC Academy, Bloque 42 Redes, edición 2026: incluye medios de transmisión, LAN, switching, VLAN y dispositivos de interconexión; cotejo curricular, contrastado con fuentes técnicas/ITU.'}
+};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=c.id===6386?docs.git:c.id===6387?docs.quality:c.id===6388?docs.itil:docs.network;assert.ok(q);q.clasificacion.bloque_academia=m.desc;const note='Cotejo curricular ITIC Academy/Drive: '+m.desc+' Se utiliza para contraste del programa, no como fuente técnica normativa.';q.clasificacion.nota=(q.clasificacion.nota+' '+note).trim();q.comentarios=(q.comentarios+' '+note).trim();q.revision.observaciones=(q.revision.observaciones+' '+note).trim();q.revision.fuentes.push({url:m.url,referencia:m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo Academy/Drive actualizado para IDs 6386–6390.');
