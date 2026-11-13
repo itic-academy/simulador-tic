@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1125 (IDs 5946–5950); también se resolvió el pendiente histórico ID 77. Acumulado: 5.945 preguntas examinadas individualmente; 5.844 verificadas (1.112 vigentes, 4.301 corregidas y 431 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.178 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1126 (IDs 5951–5955); también se resolvió el pendiente histórico ID 77. Acumulado: 5.950 preguntas examinadas individualmente; 5.849 verificadas (1.115 vigentes, 4.303 corregidas y 431 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.173 sin revisar individualmente.
+
+## Lote 1126 — 13 de noviembre de 2026
+
+IDs 5951–5955 revisados individualmente con documentación de NIST y VMware y normativa consolidada del BOE. Se precisó la definición de hipervisor para abarcar tipos 1 y 2; se confirmaron ventajas condicionadas de la virtualización; y se comprobó la firma en actuaciones automatizadas y el principio de relación electrónica del artículo 3.2 de la Ley 40/2015. La pregunta 5954 se corrigió porque su versión anterior tenía dos respuestas válidas (sello electrónico y CSV). El [registro del lote 1126](cambios-lote-1126.json) conserva los originales y el razonamiento de cada cambio.
+
+- **5951 — definición de hipervisor:** **corregida**, respuesta A. Administra invitados y media acceso a hardware; puede operar directamente sobre el hardware (tipo 1) o sobre un sistema anfitrión (tipo 2). A1-132/A2-IV.6.
+- **5952 — hipervisor/VMM:** **vigente**, respuesta C. Componente de virtualización que gestiona máquinas virtuales, no una mera aplicación de monitorización. A1-132/A2-IV.6.
+- **5953 — beneficios de virtualización:** **vigente**, respuesta C. Puede mejorar la utilización de recursos y consolidar servidores, sujeto a carga y dimensionamiento. A1-132/A2-IV.6.
+- **5954 — firma automatizada:** **corregida**, respuesta A. La Ley 40/2015, art. 42, admite tanto sello electrónico como CSV; el original preguntaba cuál era un sistema y aceptaba ambas. Se pregunta ahora específicamente por el sistema basado en certificado del art. 42.a. A1-80/A2-I.6/I.9.
+- **5955 — relaciones entre Administraciones:** **vigente**, respuesta B. El art. 3.2 establece medios electrónicos, interoperabilidad y seguridad, protección de datos personales y prestación preferentemente conjunta. A1-8/A2-I.8.
+
+Fuentes primarias: [NIST CSRC, definición de hipervisor](https://csrc.nist.gov/glossary/term/hypervisor) y [NIST SP 800-125](https://csrc.nist.gov/pubs/sp/800/125/final), que diferencia las arquitecturas bare-metal y hosted; [VMware, virtual infrastructure](https://www.vmware.com/topics/virtual-infrastructure), sobre abstracción, asignación eficiente y consolidación de recursos; [Ley 40/2015, texto consolidado vigente al 29-09-2026](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566&p=20260929&tn=1), arts. 3.2, 42 y 43. Convocatorias oficiales cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 8, 80 y 132; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas I.6, I.8, I.9 y IV.6. Cotejo curricular: [ITIC Academy, bloque 26, Hardware, servidores y virtualización (versión 2026.1)](https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk) y [bloque 03, Actuación administrativa y Administración digital (actualización 2026)](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk). La revisión legal se basa en los artículos consolidados del BOE, no en materiales formativos.
+
+Ejecutados revisar-lote-1126.cjs, academia-lote-1126.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas, 5.950 examinadas individualmente, 101 pendientes explícitas, 6.173 sin revisar individualmente y cero errores estructurales. El inventario automático valida estructura, no contenido no revisado.
 
 ## Lote 1125 — 13 de noviembre de 2026
 
