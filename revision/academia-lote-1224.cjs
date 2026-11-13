@@ -1,0 +1,12 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1224.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const docs={
+ 6441:{url:'https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk',text:'ITIC Academy, bloque 50 «Videoconferencia, Single Sign-On y herramientas de trabajo colaborativo», edición 2026: cotejo con gestión de identidades y SSO; no se afirma que el temario tenga un epígrafe específico de SAML.'},
+ 6442:{url:'https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk',text:'ITIC Academy, bloque 42 «Redes», actualización 2026: protocolos de red y encaminamiento; cotejo curricular.'},
+ 6443:{url:'https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk',text:'ITIC Academy, bloque 39 «Calidad y mantenimiento», edición 2026: gestión de configuración, cambios y versiones; cotejo curricular.'},
+ 6444:{url:'https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk',text:'ITIC Academy, bloque 06 «Economía, sociedad, empleo y transformación digital», edición 2026: cotejo temático general con economía y sostenibilidad; no se usa como autoridad sobre la función de JESSICA, ELENA o LIFE.'},
+ 6445:{url:'https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk',text:'ITIC Academy, bloque 06 «Economía, sociedad, empleo y transformación digital», edición 2026: cotejo temático con el marco económico e internacionalización; la interpretación del artículo 52 se funda en el BOE.'}
+};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),d=docs[c.id];assert.ok(q&&d);const note=`Cotejo curricular ITIC Academy/Drive: ${d.text} El temario aporta contexto y encaje; la respuesta se acredita con las fuentes oficiales/técnicas primarias citadas.`;q.clasificacion.bloque_academia=note;q.clasificacion.nota=(q.clasificacion.nota+' '+note).trim();q.comentarios=(q.comentarios+' '+note).trim();q.revision.observaciones=(q.revision.observaciones+' '+note).trim();c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular completado para cinco preguntas; la evidencia principal permanece en fuentes normativas/técnicas.');
