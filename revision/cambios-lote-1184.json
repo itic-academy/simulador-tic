@@ -1,0 +1,406 @@
+{
+  "fecha": "2026-11-13",
+  "alcance": "IDs 6241–6245; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 6241,
+      "original": {
+        "id": 6241,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué mecanismo NO se utiliza para evitar condiciones de carrera en el sistema operativo UNIX?",
+        "opciones": [
+          "Semáforos",
+          "Mutexe",
+          "Monitores",
+          "Start-Stoping"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6241,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes opciones NO es un mecanismo o construcción de sincronización usado para coordinar tareas concurrentes?",
+        "opciones": [
+          "Semáforo.",
+          "Mutex (exclusión mutua).",
+          "Monitor.",
+          "Operación genérica de iniciar/detener (“start/stop”)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se elimina la atribución exclusiva a UNIX porque semáforos, mutexes y monitores son mecanismos/construcciones generales de sincronización y no todos son primitivas nativas de cada UNIX. Se corrige “Mutexe” y se sustituye “Start-Stoping”, que no es una denominación estándar de mecanismo de sincronización, por “operación de iniciar/detener”. Respuesta D. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), incluye concurrencia y sincronización dentro de los fundamentos UNIX/Linux; cotejo curricular con A1-60/A2-II.2. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 27 Sistemas Operativos (2026.1), incluye concurrencia y sincronización dentro de los fundamentos UNIX/Linux; cotejo curricular con A1-60/A2-II.2.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), incluye concurrencia y sincronización dentro de los fundamentos UNIX/Linux; cotejo curricular con A1-60/A2-II.2. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+        },
+        "etiquetas": [
+          "concurrencia",
+          "condiciones de carrera",
+          "semáforos",
+          "mutex",
+          "monitores",
+          "sincronización"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_lock.html",
+              "referencia": "The Open Group Base Specifications Issue 8 (POSIX.1-2024), pthread_mutex_lock: mutexes son primitivas de exclusión mutua para sincronizar hilos."
+            },
+            {
+              "url": "https://man7.org/linux/man-pages/man7/sem_overview.7.html",
+              "referencia": "Linux man-pages, sem_overview(7): los semáforos POSIX permiten sincronizar las acciones de procesos e hilos."
+            },
+            {
+              "url": "https://docs.oracle.com/javase/specs/jls/se26/jls26.pdf",
+              "referencia": "Java Language Specification, §17.1: define la sincronización mediante monitores y el acceso exclusivo de hilos a ellos; se cita para fundamentar el concepto de monitor como construcción de sincronización, no como API exclusiva de UNIX."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 60: sistemas operativos UNIX-LINUX."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.2: fundamentos y características de sistemas operativos, incluido UNIX/Linux."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1G57S8eoBb-CBcQcBA-KS6o8sASPMTwfm/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), incluye concurrencia y sincronización dentro de los fundamentos UNIX/Linux; cotejo curricular con A1-60/A2-II.2."
+            }
+          ],
+          "observaciones": "Se elimina la atribución exclusiva a UNIX porque semáforos, mutexes y monitores son mecanismos/construcciones generales de sincronización y no todos son primitivas nativas de cada UNIX. Se corrige “Mutexe” y se sustituye “Start-Stoping”, que no es una denominación estándar de mecanismo de sincronización, por “operación de iniciar/detener”. Respuesta D. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos (2026.1), incluye concurrencia y sincronización dentro de los fundamentos UNIX/Linux; cotejo curricular con A1-60/A2-II.2. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+        }
+      }
+    },
+    {
+      "id": 6242,
+      "original": {
+        "id": 6242,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Las denominadas doce reglas de Codd son reglas que:",
+        "opciones": [
+          "Permiten calificar el grado de seguridad de un sistema de gestión de bases de datos.",
+          "Articulan el diseño de los sistemas operativos más significativos de la actualidad.",
+          "Definen qué se requiere de un sistema de gestión de base de datos con el fin de que sea considerado relacional.",
+          "Mejoran significativamente el control de calidad en los proyectos de desarrollo de bases de datos."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6242,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué describen principalmente las reglas 1–12 de E. F. Codd, conocidas habitualmente como “las doce reglas” y acompañadas por la regla fundacional 0?",
+        "opciones": [
+          "Criterios para calificar la seguridad de un sistema gestor de bases de datos.",
+          "Principios de diseño de los sistemas operativos actuales.",
+          "Criterios para evaluar si un sistema gestor de bases de datos puede considerarse plenamente relacional.",
+          "Controles de calidad para cualquier proyecto de desarrollo de bases de datos."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Se aclara que las doce reglas numeradas 1–12 acompañan a la regla fundacional 0; el conjunto se conoce habitualmente como “las doce reglas de Codd”. Su propósito es exponer criterios para valorar la condición relacional de un SGBD, no calificar seguridad ni calidad de proyectos. Respuesta C. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 29 Bases de datos (versión 2026), cubre el modelo relacional y SQL, correspondiente a A1-64/A2-II.5; el propósito de las reglas se sustenta en la publicación original de Codd. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 Bases de datos (versión 2026), cubre el modelo relacional y SQL, correspondiente a A1-64/A2-II.5; el propósito de las reglas se sustenta en la publicación original de Codd.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 29 Bases de datos (versión 2026), cubre el modelo relacional y SQL, correspondiente a A1-64/A2-II.5; el propósito de las reglas se sustenta en la publicación original de Codd. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+        },
+        "etiquetas": [
+          "modelo relacional",
+          "E. F. Codd",
+          "regla 0",
+          "reglas de Codd",
+          "SGBD relacional"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://reldb.org/c/index.php/twelve-rules/",
+              "referencia": "Transcripción de los artículos de E. F. Codd publicados en Computerworld (14 y 21 de octubre de 1985), incluyendo la regla 0 y las reglas numeradas 1–12: criterios para valorar si un producto puede considerarse plenamente relacional."
+            },
+            {
+              "url": "https://www.softwaregems.com.au/Documents/Article/Database/Relational%20Model/Codd%20E%20F/Relational%20Database%20Practical%20Foundation%20Turing%20Award.pdf",
+              "referencia": "E. F. Codd, “Relational Database: A Practical Foundation for Productivity” (Turing Award lecture): recuerda que los artículos de 1985 presentaron doce reglas para evaluar productos DBMS."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 64: modelo relacional y SQL."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.5: arquitectura ANSI/SPARC, SGBD relacionales y SQL."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 29 Bases de datos (versión 2026), cubre el modelo relacional y SQL, correspondiente a A1-64/A2-II.5; el propósito de las reglas se sustenta en la publicación original de Codd."
+            }
+          ],
+          "observaciones": "Se aclara que las doce reglas numeradas 1–12 acompañan a la regla fundacional 0; el conjunto se conoce habitualmente como “las doce reglas de Codd”. Su propósito es exponer criterios para valorar la condición relacional de un SGBD, no calificar seguridad ni calidad de proyectos. Respuesta C. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 29 Bases de datos (versión 2026), cubre el modelo relacional y SQL, correspondiente a A1-64/A2-II.5; el propósito de las reglas se sustenta en la publicación original de Codd. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+        }
+      }
+    },
+    {
+      "id": 6243,
+      "original": {
+        "id": 6243,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el Framework .NET, ¿cómo se denomina al entorno de ejecución que controla la asignación y administración de memoria en la ejecución de programas?",
+        "opciones": [
+          "Common Intermediate Language o CIL",
+          "Common Language Runtime o CLR",
+          "Compilador Just-In-Time o JIT",
+          "Microsoft Intermediate Language o MSIL"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6243,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En .NET, ¿qué entorno de ejecución proporciona servicios como la ejecución de código y la administración automática de memoria mediante el recolector de basura?",
+        "opciones": [
+          "Common Intermediate Language (CIL).",
+          "Common Language Runtime (CLR).",
+          "Compilador Just-In-Time (JIT).",
+          "Microsoft Intermediate Language (MSIL)."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se precisa la relación entre componentes: el Common Language Runtime es el entorno de ejecución de .NET; la administración automática de memoria se realiza mediante su recolector de basura. CIL/MSIL son lenguaje intermedio y JIT es el compilador en tiempo de ejecución, no el runtime completo. Respuesta B. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartados 7.2–7.3 sobre .NET, CLR, CIL, JIT y GC; cotejo con A1-66 y A2-II.3. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-66"
+          ],
+          "A2": [
+            "A2-II-3"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartados 7.2–7.3 sobre .NET, CLR, CIL, JIT y GC; cotejo con A1-66 y A2-II.3.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartados 7.2–7.3 sobre .NET, CLR, CIL, JIT y GC; cotejo con A1-66 y A2-II.3. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+        },
+        "etiquetas": [
+          ".NET",
+          "CLR",
+          "Common Language Runtime",
+          "recolector de basura",
+          "gestión automática de memoria"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/dotnet/standard/glossary",
+              "referencia": "Microsoft Learn, glosario .NET, entradas CLR y GC: el CLR administra memoria y el recolector de basura implementa la gestión automática liberando objetos que ya no se usan."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals",
+              "referencia": "Microsoft Learn, fundamentos del recolector de basura: explica la asignación en el heap administrado y la recuperación automática de memoria por GC."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 66: entorno de desarrollo Microsoft .NET."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.3: características de lenguajes y paradigmas actuales de programación."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartados 7.2–7.3 sobre .NET, CLR, CIL, JIT y GC; cotejo con A1-66 y A2-II.3."
+            }
+          ],
+          "observaciones": "Se precisa la relación entre componentes: el Common Language Runtime es el entorno de ejecución de .NET; la administración automática de memoria se realiza mediante su recolector de basura. CIL/MSIL son lenguaje intermedio y JIT es el compilador en tiempo de ejecución, no el runtime completo. Respuesta B. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartados 7.2–7.3 sobre .NET, CLR, CIL, JIT y GC; cotejo con A1-66 y A2-II.3. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+        }
+      }
+    },
+    {
+      "id": 6244,
+      "original": {
+        "id": 6244,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes no es un API de la especificación J2EE?",
+        "opciones": [
+          "JNDI.",
+          "API Java IDL.",
+          "JTA (Java Transaction API).",
+          "JMS (Java Mobile Service)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6244,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué correspondencia entre una tecnología/API Java y su descripción o nombre es incorrecta?",
+        "opciones": [
+          "JNDI: Java Naming and Directory Interface, API de nombres y directorios usada por J2EE.",
+          "Java IDL: tecnología Java para interoperar con objetos CORBA usando OMG IDL e IIOP.",
+          "JTA: Java Transaction API, interfaz estándar para demarcar transacciones.",
+          "JMS: Java Mobile Service, API de mensajería de J2EE."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se cambia la pregunta de “qué API no pertenece a J2EE” a detectar una correspondencia falsa: JMS significa Java Message Service, no “Java Mobile Service”. JNDI, JMS y JTA se documentan en las APIs J2EE; Java IDL es la tecnología Java de interoperabilidad CORBA y no se afirma que sea una API específica de J2EE. Se conserva J2EE solo como referencia histórica; la familia empresarial actual se publica bajo Jakarta EE. Respuesta D. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartados 5.1–5.7 sobre evolución Java EE a Jakarta EE, APIs y seguridad; cotejo con A1-67 y A2-III.10. La cuestión mantiene contexto histórico J2EE 1.4. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-III-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartados 5.1–5.7 sobre evolución Java EE a Jakarta EE, APIs y seguridad; cotejo con A1-67 y A2-III.10. La cuestión mantiene contexto histórico J2EE 1.4.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartados 5.1–5.7 sobre evolución Java EE a Jakarta EE, APIs y seguridad; cotejo con A1-67 y A2-III.10. La cuestión mantiene contexto histórico J2EE 1.4. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+        },
+        "etiquetas": [
+          "Java EE",
+          "J2EE 1.4",
+          "JMS",
+          "Java Message Service",
+          "JNDI",
+          "JTA",
+          "Jakarta EE"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/javaee/1.4/api/overview-summary.html",
+              "referencia": "Especificación API oficial J2EE 1.4 de Oracle: incluye paquetes javax.jms (Java Message Service), javax.naming (JNDI) y javax.transaction (JTA)."
+            },
+            {
+              "url": "https://docs.oracle.com/javaee/1.4/tutorial/doc/Overview7.html",
+              "referencia": "Tutorial oficial J2EE 1.4 de Sun/Oracle: documenta JNDI, JMS y JTA como APIs/tecnologías de J2EE."
+            },
+            {
+              "url": "https://docs.oracle.com/javase/8/docs/technotes/guides/idl/corba.html",
+              "referencia": "Documentación oficial Java IDL/CORBA de Oracle: Java IDL proporciona interoperabilidad CORBA mediante OMG IDL e IIOP; IDL significa Interface Definition Language."
+            },
+            {
+              "url": "https://jakarta.ee/specifications/",
+              "referencia": "Catálogo oficial de especificaciones Jakarta EE: referencia vigente de las especificaciones empresariales que sucedieron al naming J2EE/Java EE."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 67: entorno de desarrollo Java."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema III.10: arquitectura Java EE/Jakarta EE, funcionamiento, elementos, persistencia y seguridad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartados 5.1–5.7 sobre evolución Java EE a Jakarta EE, APIs y seguridad; cotejo con A1-67 y A2-III.10. La cuestión mantiene contexto histórico J2EE 1.4."
+            }
+          ],
+          "observaciones": "Se cambia la pregunta de “qué API no pertenece a J2EE” a detectar una correspondencia falsa: JMS significa Java Message Service, no “Java Mobile Service”. JNDI, JMS y JTA se documentan en las APIs J2EE; Java IDL es la tecnología Java de interoperabilidad CORBA y no se afirma que sea una API específica de J2EE. Se conserva J2EE solo como referencia histórica; la familia empresarial actual se publica bajo Jakarta EE. Respuesta D. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartados 5.1–5.7 sobre evolución Java EE a Jakarta EE, APIs y seguridad; cotejo con A1-67 y A2-III.10. La cuestión mantiene contexto histórico J2EE 1.4. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+        }
+      }
+    },
+    {
+      "id": 6245,
+      "original": {
+        "id": 6245,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes opciones define una interfaz estándar de proveedor de servicios (SPI) con la que se puede desarrollar un agente de autenticación de nivel de mensaje para contenedores Java EE en el lado del cliente o del servidor?",
+        "opciones": [
+          "JSR 196",
+          "JSR 197",
+          "JSR 198",
+          "JSR 199"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6245,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la terminología histórica de Java EE, ¿qué JSR identificó JASPIC, la SPI estándar para integrar autenticación de mensajes en contenedores?",
+        "opciones": [
+          "JSR 196.",
+          "JSR 197.",
+          "JSR 198.",
+          "JSR 199."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se conserva como pregunta histórica, precisando que JSR 196 identificó JASPIC, el SPI de autenticación de mensajes para contenedores Java EE. La especificación se reeditó como Jakarta Authentication 1.1 y su versión actual 3.1 mantiene la finalidad general de integrar proveedores de autenticación de mensajes en runtimes cliente/servidor. No presentar JSR 196 ni el nombre Java EE como versión actual. Respuesta A. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 5.6 sobre seguridad Jakarta EE y transición desde Java EE; cotejo con A1-67/A2-III.10. La identificación histórica de JSR 196 se verifica separadamente en JCP/Eclipse. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-III-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 5.6 sobre seguridad Jakarta EE y transición desde Java EE; cotejo con A1-67/A2-III.10. La identificación histórica de JSR 196 se verifica separadamente en JCP/Eclipse.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 5.6 sobre seguridad Jakarta EE y transición desde Java EE; cotejo con A1-67/A2-III.10. La identificación histórica de JSR 196 se verifica separadamente en JCP/Eclipse. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+        },
+        "etiquetas": [
+          "Java EE",
+          "JASPIC",
+          "JSR 196",
+          "autenticación de mensajes",
+          "Jakarta Authentication",
+          "SPI"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-13",
+          "fuentes": [
+            {
+              "url": "https://jcp.org/aboutJava/communityprocess/final/jsr196/index.html",
+              "referencia": "Java Community Process, ficha final oficial JSR 196, Java Authentication Service Provider Interface for Containers (JASPIC)."
+            },
+            {
+              "url": "https://jakarta.ee/specifications/authentication/1.1/",
+              "referencia": "Eclipse Foundation, Jakarta Authentication 1.1: declara que esta especificación fue una reedición de JSR 196 bajo el proceso Jakarta."
+            },
+            {
+              "url": "https://jakarta.ee/specifications/authentication/3.1/jakarta-authentication-spec-3.1.pdf",
+              "referencia": "Especificación oficial Jakarta Authentication 3.1: SPI actual para integrar autenticación de mensajes en contenedores/runtimes cliente y servidor, incluidos Jakarta EE; reconoce al grupo JCP JSR-196 como autor original."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, anexo I, tema 67: entorno de desarrollo Java."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, anexo IX, tema III.10: arquitectura Java EE/Jakarta EE y seguridad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 5.6 sobre seguridad Jakarta EE y transición desde Java EE; cotejo con A1-67/A2-III.10. La identificación histórica de JSR 196 se verifica separadamente en JCP/Eclipse."
+            }
+          ],
+          "observaciones": "Se conserva como pregunta histórica, precisando que JSR 196 identificó JASPIC, el SPI de autenticación de mensajes para contenedores Java EE. La especificación se reeditó como Jakarta Authentication 1.1 y su versión actual 3.1 mantiene la finalidad general de integrar proveedores de autenticación de mensajes en runtimes cliente/servidor. No presentar JSR 196 ni el nombre Java EE como versión actual. Respuesta A. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 5.6 sobre seguridad Jakarta EE y transición desde Java EE; cotejo con A1-67/A2-III.10. La identificación histórica de JSR 196 se verifica separadamente en JCP/Eclipse. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+        }
+      }
+    }
+  ]
+}
