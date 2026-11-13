@@ -1,12 +1,16 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1230 (IDs 6471–6475). Acumulado: 6470 preguntas examinadas individualmente; 6356 verificadas (1254 vigentes, 4644 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5653 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1231 (IDs 6476–6480). Acumulado: 6475 preguntas examinadas individualmente; 6361 verificadas (1255 vigentes, 4648 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5648 sin revisar individualmente.
 
 
 
 **Publicación verificada:** el commit de datos `a7489b2` (`a7489b2fba09dc5b126800dffe7f099d43ac9ae7)` completó correctamente [Deploy GitHub Pages, workflow run 43482543600](https://github.com/itic-academy/simulador-tic/actions/runs/43482543600). El workflow muestra estado `Success` y contiene el commit `a7489b2`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1217.json` e `inventario.json`; el registro servido contiene los IDs 6406–6410, todos corregidos. El inventario público confirma 6.405 examinadas, 6.291 verificadas (1.244 vigentes, 4.589 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.718 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `b054652` (`b05465205648a5d2a74965e9cf96385db816fbd1)` completó correctamente [Deploy GitHub Pages, workflow run 43484247774](https://github.com/itic-academy/simulador-tic/actions/runs/43484247774). El workflow terminó con estado `Success` e incluyó el commit `b054652`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1218.json` e `inventario.json`; el registro publicado contiene los IDs 6411–6415 con estados vigente, corregida, corregida, corregida y corregida. El inventario público confirma 6.410 examinadas, 6.296 verificadas (1.245 vigentes, 4.593 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.713 sin revisar individualmente.
+
+## Lote 1231 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6476–6480. Se distinguieron COCOMO II y PROBE como modelo/técnica de estimación y Delphi como método de juicio experto frente a Box-Cox, que transforma datos estadísticos; se precisó el incremental como entrega sucesiva de software operativo; se conservó la respuesta de diseño orientado a objetos acotando modularidad/ocultación como principios no exclusivos y abstracción como concepto central; se corrigió CORBA a la terminología normativa object group y referencias de grupo de réplicas; y se cotejó que MÉTRICA v3 reserva ASI 4 al análisis de casos de uso en orientación a objetos. Se preservaron los originales y se añadieron fuentes oficiales/técnicas, clasificación A1/A2 y cotejo ITIC Academy/Drive. Se detectó que el bloque 15 etiqueta A2 D.1 donde la convocatoria oficial vigente usa III.1; para A1 99, el bloque académico accesible consultado trata costes/viabilidad pero no cubre directamente COCOMO/PROBE, por lo que no se atribuye esa cobertura. Inventario local: 6475 examinadas, 6361 verificadas, 114 pendientes y 5648 sin revisar individualmente; verificador estructural sin errores. Pendiente verificar la publicación de este lote.
 
 ## Lote 1230 — 13 de noviembre de 2026
 
