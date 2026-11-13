@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1170 (IDs 6171–6175). Acumulado: 6.170 preguntas examinadas individualmente; 6.060 verificadas (1.188 vigentes, 4.427 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.953 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1171 (IDs 6176–6180). Acumulado: 6.175 preguntas examinadas individualmente; 6.065 verificadas (1.188 vigentes, 4.432 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.948 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `2285598` (`228559807be5c3d41acf1c1bb19a45e2df34034f`) completó correctamente [Deploy GitHub Pages, workflow run 43407619340](https://github.com/itic-academy/simulador-tic/actions/runs/43407619340). El README, `cambios-lote-1170.json` e `inventario.json` respondieron HTTP 200; el contenido publicado confirma IDs 6171–6175, 6.170 examinadas, 6.060 verificadas y 5.953 aún sin revisar.
 
@@ -49,6 +49,22 @@ Estado parcial, no revisión completa del banco. Publicación desde main mediant
 **Publicación verificada:** el commit `1f1da8aa2ca275c94634dc08013d7a4a1a5c0b22` de main ejecutó correctamente [Deploy GitHub Pages, run 43374867546](https://github.com/itic-academy/simulador-tic/actions/runs/43374867546). README, `cambios-lote-1145.json` e `inventario.json` respondieron HTTP 200; el registro publicado contiene 6046–6050 y el inventario confirma 6.045 examinadas y 6.078 aún sin revisar individualmente.
 
 **Publicación verificada:** el commit `88681c4a463e6363a427457e58eba4b7e81c0b71` de main ejecutó correctamente [Deploy GitHub Pages, run 43373957520](https://github.com/itic-academy/simulador-tic/actions/runs/43373957520). Tras desplegar, README, `cambios-lote-1144.json` e `inventario.json` respondieron HTTP 200; el README servido identifica el lote 1144, el registro contiene los IDs 6041–6045 y el inventario confirma 6.040 revisadas y 6.083 aún sin revisar individualmente.
+
+## Lote 1171 — 13 de noviembre de 2026
+
+Revisión individual de las preguntas 6176–6180 sobre REST, procesamiento centralizado/cooperativo, seguridad SOAP, principios SOA y funciones de UDDI/SOAP/WSDL. Las cinco se marcaron corregidas porque se precisaron o reescribieron para quitar afirmaciones ambiguas, absolutas o técnicamente erróneas; se conservó la clave salvo en 6180.
+
+- **6176 — REST:** **corregida**, respuesta A (incorrecta). REST es un estilo arquitectónico definido por restricciones, no un estándar o protocolo único. Se ajustaron las otras opciones para describir URI, representaciones y comunicación stateless sin duplicar la respuesta falsa. A1-65/A2-III.12.
+- **6177 — procesamiento centralizado/cooperativo:** **corregida**, respuesta C (incorrecta). Se elimina el absoluto de que el nodo central ejecuta siempre el 100 % de la lógica; el distractor falso ahora indica que centralizar garantiza por sí solo mayor escalabilidad horizontal y distribución de carga. A1-58/A2-II.6.
+- **6178 — seguridad de SOAP:** **corregida**, respuesta B (incorrecta). El núcleo SOAP no cifra automáticamente. WS-Security/XML Encryption o una protección de transporte configurada pueden proporcionar confidencialidad. A1-65/A1-126/A2-III.12.
+- **6179 — diseño SOA:** **corregida**, respuesta D (polimorfismo). Se formula como principio de diseño habitualmente citado, no como taxonomía normativa cerrada. La composición, encapsulación y bajo acoplamiento se reconocen en el diseño de servicios; el polimorfismo es principalmente un concepto de orientación a objetos. A1-58/A2-II.6.
+- **6180 — UDDI/SOAP/WSDL:** **corregida**, respuesta D (ninguna de las anteriores). UDDI define registros para publicación/descubrimiento, SOAP intercambia mensajes y WSDL describe servicios, interfaces, operaciones y bindings. Se sustituye la afirmación histórica discutible sobre la derivación XML-RPC/SOAP por distractores funcionales inequívocamente falsos. A1-58/A1-65/A2-II.6/III.12.
+
+Fuentes primarias: [Fielding, capítulo 5 de la tesis sobre REST](https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) y [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986.html); [IBM, SOA](https://www.ibm.com/docs/en/was/9.0.5?topic=services-service-oriented-architecture); [W3C SOAP 1.2](https://www.w3.org/TR/soap12-part1/), [W3C Web Services Architecture](https://www.w3.org/TR/ws-arch/) y [NIST Web Services Security](https://csrc.nist.gov/glossary/term/Web_Services_Security); [OASIS SOA Reference Model](https://docs.oasis-open.org/soa-rm/v1.0/soa-rm.html) y [SOA Reference Architecture](https://docs.oasis-open.org/soa-rm/soa-ra/v1.0/soa-ra-v1.0.html); [WSDL 2.0](https://www.w3.org/TR/wsdl/), [UDDI 3.0.2](https://www.oasis-open.org/committees/uddi-spec/doc/spec/v3/uddi_v3.htm). Para el matiz histórico XML-RPC/SOAP se consultó la explicación contemporánea del coautor Don Box, [A Brief History of SOAP](https://www.xml.com/pub/a/ws/2001/04/04/soap.html); las respuestas no dependen de resolver esa relación genealógica.
+
+Convocatorias cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 58, 65 y 126; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas II.6 y III.12. Cotejo curricular: [ITIC Academy, bloque 28 Arquitectura SOA, versión 2026.1 (25-09-2026)](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk), apartados sobre REST, SOA, integración, servicios web y seguridad. Se usa para ubicar contenidos; no sustituye las fuentes técnicas.
+
+Ejecutados revisar-lote-1171.cjs, academia-lote-1171.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas; 6.175 examinadas; 6.065 verificadas; 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.948 aún sin revisar individualmente; cero errores estructurales.
 
 ## Lote 1170 — 13 de noviembre de 2026
 
