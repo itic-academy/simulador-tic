@@ -20,4 +20,4 @@ Los comandos node revision/inventario.cjs, node revision/verificar.cjs y git dif
 
 `;
 const at=text.indexOf('## Lote 1233 —');assert.ok(at>0,'Falta el lote 1233');assert.ok(!text.includes('## Lote 1234 —'),'El lote ya está documentado');
-text=text.slice(0,at)+section+'\n'+text.slice(at);fs.writeFileSync(file,text);console.log(`README actualizado: ${examined} examinadas; ${verified} verificadas; ${pending} pendientes; ${inv.estados.sin_revisar} sin revisar.`);
+text=text.slice(0,at)+section.replace('errores estructurales: undefined',`errores estructurales: ${inv.errores_estructurales.length}`)+'\n'+text.slice(at);fs.writeFileSync(file,text);console.log(`README actualizado: ${examined} examinadas; ${verified} verificadas; ${pending} pendientes; ${inv.estados.sin_revisar} sin revisar.`);
