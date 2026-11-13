@@ -4,6 +4,8 @@ Estado parcial, no revisión completa del banco. Publicación desde main mediant
 
 
 
+**Publicación verificada:** el commit de datos `49b8110` (`49b81100737e0dbde210335839f7dbbbe1d0f355)` completó correctamente [Deploy GitHub Pages, workflow run 43480016952](https://github.com/itic-academy/simulador-tic/actions/runs/43480016952). GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1216.json` e `inventario.json`; el registro publicado contiene los IDs 6401–6405 con estados corregida, vigente, corregida, corregida y corregida. El inventario confirma 6.400 examinadas, 6.284 verificadas (1.244 vigentes, 4.584 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.723 sin revisar individualmente.
+
 ## Lote 1216 — 13 de noviembre de 2026
 
 Revisadas individualmente las preguntas 6401–6405. Se acotó la capacidad DOCSIS 3.1 al potencial publicado por CableLabs; se confirmó el modelo de replicación AD con sus excepciones FSMO; se corrigieron la modulación y formulaciones de LTE, la definición de phishing y una pregunta negativa no verificable sobre federación de identidades. Se preservan los originales y se añaden explicaciones, fuentes primarias y temas A1/A2; se cotejó además el encaje del material de ITIC Academy en Drive. Inventario local: 6.400 examinadas, 6.284 verificadas, 114 pendientes, 5.723 sin revisar individualmente y 0 errores estructurales. Pendiente verificar la publicación de este lote.
