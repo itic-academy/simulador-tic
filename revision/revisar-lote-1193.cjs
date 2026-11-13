@@ -1,0 +1,38 @@
+const apply=require('./aplicar-lote.cjs');
+const a1='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938';
+const a2='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262';
+const src=(url,referencia)=>({url,referencia});
+apply({numero:'1193',fecha:'2026-11-13',records:[
+ [6286,['24'],['I-8'],['EBEP','vacaciones','permiso maternidad','embarazo','lactancia','dieciocho meses'],[
+  src('https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719&lang=es&p=20261003&tn=1','TREBEP, art. 50.2, texto consolidado consultado: las vacaciones aplazadas por permiso de maternidad, incapacidad temporal, riesgo durante lactancia o embarazo pueden disfrutarse tras el año natural, con el límite de 18 meses desde el final del año de origen.'),
+  src('https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115&lang=es&p=20240802&tn=1','Ley Orgánica 3/2007, disposición adicional decimonovena: reconoce disfrute de vacaciones en fecha distinta aunque haya acabado el año natural cuando coinciden con IT por embarazo, parto o lactancia, maternidad o lactancia acumulada.'),
+  src(a1,'Convocatoria GSI A1 2025, anexo I, tema 24: empleo público y Estatuto Básico del Empleado Público.'),
+  src(a2,'Convocatoria GSI A2 2025, anexo IX, tema I.8: Estatuto Básico del Empleado Público.')
+ ],null,'Se mantiene la respuesta C en cuanto a que el disfrute puede trasladarse más allá del año natural; se añade el límite vigente del art. 50.2 TREBEP: no más de 18 meses desde el final del año en que se originaron. La disposición adicional 19.ª de la LO 3/2007 reconoce expresamente el traslado para los supuestos de maternidad y lactancia.','corregida'],
+ [6287,['1'],['I-1'],['Constitución Española','Corona','referéndum','artículo 62'],[
+  src('https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&lang=es&p=20260520&tn=1#art62','Constitución Española, art. 62.c, texto consolidado consultado: corresponde al Rey convocar a referéndum en los casos previstos en la Constitución. El art. 92.2 concreta la propuesta del Presidente del Gobierno y autorización previa del Congreso para el referéndum consultivo.'),
+  src(a1,'Convocatoria GSI A1 2025, anexo I, tema 1: la Corona y sus funciones constitucionales.'),
+  src(a2,'Convocatoria GSI A2 2025, anexo IX, tema I.1: la Corona y las funciones constitucionales del Rey.')
+ ],null,'La opción C es correcta, de acuerdo con el art. 62.c CE. Se distingue la convocatoria formal por el Rey de la iniciativa del Presidente del Gobierno y autorización previa del Congreso previstas para el referéndum consultivo del art. 92.2.','vigente'],
+ [6288,['9'],['I-8'],['Ley 39/2015','recurso de alzada','plazo','acto expreso','silencio administrativo'],[
+  src('https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565&lang=es&p=20261001&tn=1#art122','Ley 39/2015, art. 122.1, texto consolidado consultado: un mes para recurrir en alzada cuando el acto es expreso; si no es expreso, puede interponerse desde el día siguiente a aquel en que se produzca el silencio, sin el plazo mensual de la resolución expresa.'),
+  src(a1,'Convocatoria GSI A1 2025, anexo I, tema 9: recursos administrativos.'),
+  src(a2,'Convocatoria GSI A2 2025, anexo IX, tema I.8: procedimiento administrativo común.')
+ ],null,'La opción B es la correcta: el mes se aplica a los actos expresos. Frente a un acto presunto, el art. 122.1 permite interponer alzada desde el día siguiente a la producción del silencio, por lo que las opciones «en cualquier caso» y «no existe plazo máximo» no describen con precisión la regla legal.','vigente'],
+ [6289,['8'],['I-8'],['Ley 39/2015','especialidades procedimiento','artículo 1.2','reglamento'],[
+  src('https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565&lang=es&p=20261001&tn=1#art1','Ley 39/2015, art. 1.2, texto consolidado consultado: por reglamento pueden establecerse especialidades procedimentales relativas a órganos competentes, plazos propios por razón de materia, iniciación/terminación, publicación e informes. Trámites adicionales o distintos solo mediante ley bajo las condiciones legales.'),
+  src(a1,'Convocatoria GSI A1 2025, anexo I, tema 8: procedimiento administrativo y régimen jurídico.'),
+  src(a2,'Convocatoria GSI A2 2025, anexo IX, tema I.8: Ley 39/2015 y procedimiento administrativo común.')
+ ],null,'La opción B reproduce la segunda frase del art. 1.2 de la Ley 39/2015: las especialidades enumeradas pueden fijarse reglamentariamente. No debe confundirse con la inclusión de trámites adicionales o distintos, que el mismo apartado reserva a la ley y sujeta a necesidad, proporcionalidad, eficacia y motivación.','vigente'],
+ [6290,['11'],[],['Ley 9/2017','LCSP','prohibiciones de contratar','artículo 71.1.d','obligaciones tributarias','Seguridad Social'],[
+  src('https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902&p=20251226&tn=1#art71','Ley 9/2017, LCSP, art. 71.1.d, texto consolidado consultado: es prohibición de contratar no hallarse al corriente de obligaciones tributarias o de Seguridad Social, además de los supuestos añadidos por la propia letra.'),
+  src('https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902&p=20251226&tn=1#art65','Ley 9/2017, art. 65: aptitud para contratar exige capacidad, ausencia de prohibición y solvencia o clasificación cuando proceda; diferencia esta condición de aptitud del catálogo del art. 71.'),
+  src(a1,'Convocatoria GSI A1 2025, anexo I, tema 11: contratación pública y Ley de Contratos del Sector Público.'),
+  src(a2,'La convocatoria GSI A2 2025 no incluye un tema específico de contratación pública; queda sin asignación A2 para no inventar equivalencia curricular.')
+ ],null,'La pregunta original era ambigua: tanto estar al corriente de obligaciones tributarias/Seguridad Social (art. 71.1.d) como incurrir en falsedad en declaraciones/datos (art. 71.1.e) son prohibiciones de contratar. Además, la falta de solvencia/clasificación es una condición de aptitud del art. 65, no debe mezclarse con aquel catálogo. Se reescribe para preguntar específicamente por la letra d), cuya respuesta es la opción A.','corregida']
+],edits:{
+ 6286:{texto:'Si las vacaciones de una funcionaria pública coinciden con un permiso de maternidad, una incapacidad temporal derivada del embarazo, parto o lactancia, o el riesgo durante el embarazo o la lactancia, ¿cuándo puede disfrutarlas conforme al EBEP?',opciones:['Pierde el derecho si termina el año natural.','Solo puede disfrutarlas si el calendario de trabajo de la Administración lo permite.','Puede disfrutarlas después del año natural, siempre dentro de los 18 meses siguientes al final del año en que se originaron.','Puede acumularlas sin límite temporal.'],respuesta_correcta:2},
+ 6288:{texto:'Según el artículo 122.1 de la Ley 39/2015, ¿cuál es el plazo para interponer recurso de alzada cuando el acto es expreso?',respuesta_correcta:1},
+ 6289:{texto:'Conforme al artículo 1.2 de la Ley 39/2015, ¿cómo pueden establecerse especialidades de procedimiento relativas a órganos competentes, plazos propios por razón de la materia, iniciación y terminación, publicación e informes?',respuesta_correcta:1},
+ 6290:{texto:'A efectos del artículo 71.1.d de la Ley 9/2017, ¿cuál de estas circunstancias constituye una prohibición de contratar?',opciones:['No hallarse al corriente de las obligaciones tributarias o con la Seguridad Social en los términos reglamentarios.','Haber sufrido la suspensión temporal de cualquier contrato, sin resolución firme por causa imputable.','No acreditar clasificación cuando la ley no la exige y aun reuniendo la solvencia requerida.','Presentar una oferta con precio superior al presupuesto base de licitación.'],respuesta_correcta:0}
+}});

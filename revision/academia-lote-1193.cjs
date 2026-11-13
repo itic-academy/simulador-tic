@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1193.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 6286:{url:'https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk',desc:'ITIC Academy, bloque 03 Actuación administrativa y Administración digital (2026.2): EBEP, vacaciones y permisos del personal funcionario; cobertura A1-24/A2-I-8.'},
+ 6287:{url:'https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk',desc:'ITIC Academy, bloque 01 Constitución, organización del Estado y AGE (2026.2): Corona y funciones constitucionales del Rey; cobertura A1-1/A2-I-1.'},
+ 6288:{url:'https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk',desc:'ITIC Academy, bloque 03 Actuación administrativa y Administración digital (2026.2): Ley 39/2015, revisión y recursos administrativos; cobertura A1-9/A2-I-8.'},
+ 6289:{url:'https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk',desc:'ITIC Academy, bloque 03 Actuación administrativa y Administración digital (2026.2): Ley 39/2015 y especialidades del procedimiento; cobertura A1-8/A2-I-8.'},
+ 6290:{url:'https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk',desc:'ITIC Academy, bloque 05 Contratación, presupuestos, convenios, subvenciones y compra TIC (2026.2): LCSP y prohibiciones de contratar; cobertura A1-11, sin equivalente en el programa A2.'}
+};
+const clean=s=>{s=(s||'').trim();const i=s.indexOf('Cotejo curricular de ITIC Academy:');return(i<0?s:s.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\.[^\n]*/,'').trim();};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&m,'Falta pregunta/mapeo '+c.id);q.clasificacion.bloque_academia=m.desc;const note='Cotejo curricular de ITIC Academy: '+m.desc+' Este cotejo acredita cobertura temática, no verifica por sí mismo la respuesta.';q.clasificacion.nota=(clean(q.clasificacion.nota)+' '+note).trim();q.comentarios=(clean(q.comentarios)+' '+note).trim();q.revision.observaciones=(clean(q.revision.observaciones)+' '+note).trim();if(!q.revision.fuentes.some(f=>f.url===m.url))q.revision.fuentes.push({url:m.url,referencia:'ITIC Academy: '+m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular ITIC Academy actualizado para IDs 6286–6290.');
