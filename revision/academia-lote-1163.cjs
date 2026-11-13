@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1163.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const drive='https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk';
+const docs={
+6136:{a1:[118],a2:['IV-8'],desc:'ITIC Academy, bloque 42 Redes, actualización 2026: dispositivos y topología LAN; la documentación técnica Cisco respalda el comportamiento específico de un hub.'},
+6137:{a1:[118],a2:['IV-8'],desc:'ITIC Academy, bloque 42 Redes, actualización 2026: infraestructura LAN y cableado estructurado; la delimitación distribuidor-toma se verifica con UIT-T L.76.'},
+6138:{a1:[108],a2:['IV-7'],desc:'ITIC Academy, bloque 42 Redes, actualización 2026: parámetros de transmisión/retardo; el cálculo de unidades se fundamenta en IETF RFC 6349.'},
+6139:{a1:[118],a2:['IV-8'],desc:'ITIC Academy, bloque 42 Redes, actualización 2026: cableado y conexión de dispositivos LAN; la condición MDI/MDI-X se verifica en manuales Cisco.'},
+6140:{a1:[118],a2:['IV-8'],desc:'ITIC Academy, bloque 42 Redes, actualización 2026: marco general de cableado LAN. Este encaje curricular no prueba el texto histórico de la cláusula EPHOS 2, que continúa pendiente de fuente primaria.'}
+};
+const valid=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=docs[c.id];assert.ok(q&&m,'Falta pregunta/mapeo '+c.id);for(const t of [...m.a1.map(n=>'A1-'+n),...m.a2.map(n=>'A2-'+n)])assert.ok(valid.has(t),t);q.clasificacion.A1=m.a1.map(n=>`A1-${n}`);q.clasificacion.A2=m.a2.map(n=>`A2-${n}`);q.clasificacion.bloque_academia=m.desc;const marker='Cotejo curricular ITIC Academy:';const clean=s=>{s=(s||'').trim();const i=s.indexOf(marker);return(i<0?s:s.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\. Una lista vacía no implica exclusión del programa\.?\s*/,'').trim();};const extra=`Cotejo curricular ITIC Academy: ${m.desc} Temas oficiales asociados: ${[...q.clasificacion.A1,...q.clasificacion.A2].join('/')}. El cotejo académico orienta la ubicación curricular; la evidencia técnica se cita por separado.`;q.clasificacion.nota=(clean(q.clasificacion.nota)+' '+extra).trim();q.comentarios=(clean(q.comentarios)+' '+extra).trim();q.revision.observaciones=(clean(q.revision.observaciones)+' '+extra).trim();if(!q.revision.fuentes.some(f=>f.url===drive))q.revision.fuentes.push({url:drive,referencia:m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular actualizado para IDs 6136–6140.');
