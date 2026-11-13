@@ -1,0 +1,22 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const file=path.join(__dirname,'README.md');let s=fs.readFileSync(file,'utf8');
+const old='Último lote secuencial: 1167 (IDs 6156–6160). Acumulado: 6.155 preguntas examinadas individualmente; 6.045 verificadas (1.184 vigentes, 4.419 corregidas y 442 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.968 sin revisar individualmente.';
+const neu='Último lote secuencial: 1168 (IDs 6161–6165). Acumulado: 6.160 preguntas examinadas individualmente; 6.050 verificadas (1.186 vigentes, 4.421 corregidas y 443 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.963 sin revisar individualmente.';
+const section=`## Lote 1168 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6161–6165: middleware como capa de integración, recuperación REST con GET, el módulo Sandesha2 en versiones antiguas de Axis2, los métodos admitidos por Jakarta REST y el papel de SOAP/XML y WSDL. Cuatro quedan verificadas como vigentes o corregidas; 6163 se conserva como referencia histórica, sin inferir mantenimiento actual de un proyecto cuya documentación es antigua.
+
+- **6161 — middleware:** **corregida**, respuesta C. Facilita la comunicación e integración entre aplicaciones/componentes heterogéneos; se reemplaza la descripción vaga de “compartir recursos de proceso de datos”. A1-58/A2-II.6.
+- **6162 — consulta de un recurso REST:** **vigente**, respuesta A (GET). RFC 9110 define GET como solicitud de transferencia de una representación actual y lo identifica como mecanismo primario de recuperación de información. A1-65/A2-III.12.
+- **6163 — mensajería fiable en Apache Axis2:** **histórica**, respuesta C (Sandesha2). Apache documenta Sandesha2 como módulo de Axis2 que implementa WS-ReliableMessaging, pero la documentación consultada corresponde a versiones antiguas y no demuestra soporte actual. El reactivo se limita expresamente a esas versiones. A1-58/A1-65/A2-II.6/III.12.
+- **6164 — métodos de recursos REST/Jakarta REST:** **corregida**, respuesta D (incorrecta). La especificación enumera designadores GET, POST, PUT, DELETE, PATCH, HEAD y OPTIONS, además de permitir extensiones; un recurso no está limitado a tres operaciones CRUD. JAX-RS es el nombre anterior de Jakarta REST y Jersey implementa la API. A1-65/A2-III.12.
+- **6165 — SOAP y WSDL:** **vigente**, respuesta C. SOAP define un marco de mensajería de información estructurada mediante XML; WSDL describe interfaces, operaciones y bindings. SOAP no queda restringido a HTTP. A1-65/A2-III.12.
+
+Fuentes primarias/técnicas: [RFC 9110 §9.3.1](https://www.rfc-editor.org/rfc/rfc9110.html); [Apache Sandesha2](https://axis.apache.org/axis2/java/sandesha/) y [guía oficial](https://axis.apache.org/axis2/java/sandesha/userGuide.html), documentación antigua de versiones; [Jakarta REST 4.0](https://jakarta.ee/specifications/restful-ws/4.0/jakarta-restful-ws-spec-4.0.html), [Eclipse Jersey](https://eclipse-ee4j.github.io/jersey/) y [W3C SOAP 1.2](https://www.w3.org/TR/soap12/)/[WSDL 2.0](https://www.w3.org/TR/wsdl/). Definición de middleware contrastada con [IBM](https://www.ibm.com/think/topics/middleware).
+
+Convocatorias cotejadas: [GSI A1 2025, anexo I, temas 58/65](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [GSI A2 2025, anexo IX, temas II.6/III.12](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo ITIC Academy: [bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026.1, 25-09-2026](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk), §§1.2, 1.4 y 2.5 (mecanismos de comunicación, middleware, SOA y servicios web). El temario de academia sirve para el encaje formativo; las fuentes técnicas sostienen las respuestas y el límite histórico indicado.
+
+Ejecutados revisar-lote-1168.cjs, academia-lote-1168.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 total; 6.160 examinadas; 6.050 verificadas; 110 pendientes (45 de fuente, 65 de ambigüedad); 5.963 sin revisar; cero errores estructurales.
+
+`;
+assert.ok(s.includes(old),'No coincide el resumen superior previo al lote 1168');assert.ok(s.includes('## Lote 1167 — 13 de noviembre de 2026'),'No se encontró la ubicación del lote previo');s=s.replace(old,neu).replace('## Lote 1167 — 13 de noviembre de 2026',section+'## Lote 1167 — 13 de noviembre de 2026');fs.writeFileSync(file,s);console.log('README del lote 1168 actualizado.');

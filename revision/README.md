@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1167 (IDs 6156–6160). Acumulado: 6.155 preguntas examinadas individualmente; 6.045 verificadas (1.184 vigentes, 4.419 corregidas y 442 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.968 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1168 (IDs 6161–6165). Acumulado: 6.160 preguntas examinadas individualmente; 6.050 verificadas (1.186 vigentes, 4.421 corregidas y 443 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.963 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `daf9fbf` (`daf9fbf149a1c4873c6c02d7df3b75e6eb01deb0`) completó correctamente [Deploy GitHub Pages, workflow run 43403676017](https://github.com/itic-academy/simulador-tic/actions/runs/43403676017). README, `cambios-lote-1167.json` e `inventario.json` respondieron HTTP 200; el contenido publicado refleja IDs 6156–6160 y el inventario de esta revisión.
 
@@ -43,6 +43,22 @@ Estado parcial, no revisión completa del banco. Publicación desde main mediant
 **Publicación verificada:** el commit `1f1da8aa2ca275c94634dc08013d7a4a1a5c0b22` de main ejecutó correctamente [Deploy GitHub Pages, run 43374867546](https://github.com/itic-academy/simulador-tic/actions/runs/43374867546). README, `cambios-lote-1145.json` e `inventario.json` respondieron HTTP 200; el registro publicado contiene 6046–6050 y el inventario confirma 6.045 examinadas y 6.078 aún sin revisar individualmente.
 
 **Publicación verificada:** el commit `88681c4a463e6363a427457e58eba4b7e81c0b71` de main ejecutó correctamente [Deploy GitHub Pages, run 43373957520](https://github.com/itic-academy/simulador-tic/actions/runs/43373957520). Tras desplegar, README, `cambios-lote-1144.json` e `inventario.json` respondieron HTTP 200; el README servido identifica el lote 1144, el registro contiene los IDs 6041–6045 y el inventario confirma 6.040 revisadas y 6.083 aún sin revisar individualmente.
+
+## Lote 1168 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6161–6165: middleware como capa de integración, recuperación REST con GET, el módulo Sandesha2 en versiones antiguas de Axis2, los métodos admitidos por Jakarta REST y el papel de SOAP/XML y WSDL. Cuatro quedan verificadas como vigentes o corregidas; 6163 se conserva como referencia histórica, sin inferir mantenimiento actual de un proyecto cuya documentación es antigua.
+
+- **6161 — middleware:** **corregida**, respuesta C. Facilita la comunicación e integración entre aplicaciones/componentes heterogéneos; se reemplaza la descripción vaga de “compartir recursos de proceso de datos”. A1-58/A2-II.6.
+- **6162 — consulta de un recurso REST:** **vigente**, respuesta A (GET). RFC 9110 define GET como solicitud de transferencia de una representación actual y lo identifica como mecanismo primario de recuperación de información. A1-65/A2-III.12.
+- **6163 — mensajería fiable en Apache Axis2:** **histórica**, respuesta C (Sandesha2). Apache documenta Sandesha2 como módulo de Axis2 que implementa WS-ReliableMessaging, pero la documentación consultada corresponde a versiones antiguas y no demuestra soporte actual. El reactivo se limita expresamente a esas versiones. A1-58/A1-65/A2-II.6/III.12.
+- **6164 — métodos de recursos REST/Jakarta REST:** **corregida**, respuesta D (incorrecta). La especificación enumera designadores GET, POST, PUT, DELETE, PATCH, HEAD y OPTIONS, además de permitir extensiones; un recurso no está limitado a tres operaciones CRUD. JAX-RS es el nombre anterior de Jakarta REST y Jersey implementa la API. A1-65/A2-III.12.
+- **6165 — SOAP y WSDL:** **vigente**, respuesta C. SOAP define un marco de mensajería de información estructurada mediante XML; WSDL describe interfaces, operaciones y bindings. SOAP no queda restringido a HTTP. A1-65/A2-III.12.
+
+Fuentes primarias/técnicas: [RFC 9110 §9.3.1](https://www.rfc-editor.org/rfc/rfc9110.html); [Apache Sandesha2](https://axis.apache.org/axis2/java/sandesha/) y [guía oficial](https://axis.apache.org/axis2/java/sandesha/userGuide.html), documentación antigua de versiones; [Jakarta REST 4.0](https://jakarta.ee/specifications/restful-ws/4.0/jakarta-restful-ws-spec-4.0.html), [Eclipse Jersey](https://eclipse-ee4j.github.io/jersey/) y [W3C SOAP 1.2](https://www.w3.org/TR/soap12/)/[WSDL 2.0](https://www.w3.org/TR/wsdl/). Definición de middleware contrastada con [IBM](https://www.ibm.com/think/topics/middleware).
+
+Convocatorias cotejadas: [GSI A1 2025, anexo I, temas 58/65](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [GSI A2 2025, anexo IX, temas II.6/III.12](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo ITIC Academy: [bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026.1, 25-09-2026](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk), §§1.2, 1.4 y 2.5 (mecanismos de comunicación, middleware, SOA y servicios web). El temario de academia sirve para el encaje formativo; las fuentes técnicas sostienen las respuestas y el límite histórico indicado.
+
+Ejecutados revisar-lote-1168.cjs, academia-lote-1168.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 total; 6.160 examinadas; 6.050 verificadas; 110 pendientes (45 de fuente, 65 de ambigüedad); 5.963 sin revisar; cero errores estructurales.
 
 ## Lote 1167 — 13 de noviembre de 2026
 
