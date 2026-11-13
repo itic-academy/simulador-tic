@@ -1,0 +1,20 @@
+const fs=require('node:fs'),path=require('node:path');
+const f=path.join(__dirname,'README.md');let s=fs.readFileSync(f,'utf8');
+const old='Último lote secuencial: 1130 (IDs 5971–5975); también se resolvió el pendiente histórico ID 77. Acumulado: 5.970 preguntas examinadas individualmente; 5.869 verificadas (1.123 vigentes, 4.315 corregidas y 431 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.153 sin revisar individualmente.';
+const next='Último lote secuencial: 1131 (IDs 5976–5980); también se resolvió el pendiente histórico ID 77. Acumulado: 5.975 preguntas examinadas individualmente; 5.874 verificadas (1.127 vigentes, 4.316 corregidas y 431 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.148 sin revisar individualmente.';
+if(!s.includes(old))throw Error('Resumen previo no coincide; no se sobrescribe.');s=s.replace(old,next);
+const section=`## Lote 1131 — 13 de noviembre de 2026
+
+IDs 5976–5980 contrastados con la Ley 39/2015 consolidada y el RGPD oficial de EUR-Lex. Se confirmó la prioridad de la primera notificación y la regla de acceso/rechazo electrónico; se hizo inequívoco el distractor sobre capacidad de obrar de menores. El plazo supletorio para trámites, la tramitación simplificada y la notificación de violaciones RGPD se cotejaron con sus preceptos vigentes. El [registro del lote 1131](cambios-lote-1131.json) conserva versiones originales, cambios, fuentes y respuestas.
+
+- **5976 — notificación por varios cauces:** **vigente**, respuesta B. Art. 41.7: cuenta la fecha de la notificación que se produjo primero; el aviso al correo/dispositivo no es la notificación. A1-8/A2-I.8.
+- **5977 — plazo supletorio para trámites:** **vigente**, respuesta A. Art. 73.1: diez días salvo que la norma fije otro plazo. A1-8/A2-I.8.
+- **5978 — notificación electrónica:** **vigente**, respuesta B. Art. 43.2: se practica al acceder al contenido; si es obligatoria o elegida, el rechazo presunto se produce tras diez días naturales, no hábiles. A1-8/A2-I.8.
+- **5979 — capacidad de obrar de menores:** **corregida**, respuesta B (incorrecta). El art. 3.b solo reconoce capacidad para los derechos cuya actuación permite el ordenamiento sin asistencia legal; se reformuló la opción falsa para eliminar la doble negación. A1-8/A2-I.8.
+- **5980 — notificación de brechas de datos:** **vigente**, respuesta A. RGPD art. 33.1: sin dilación indebida y, cuando sea factible, en un máximo de 72 horas desde que el responsable tiene constancia, salvo que sea improbable el riesgo. A1-27/A2-I.7.
+
+Fuentes primarias: [Ley 39/2015 consolidada al 29-09-2026](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565&p=20260929&tn=1), arts. 3, 41.6–7, 43.2 y 73.1; [Reglamento (UE) 2016/679, texto español en EUR-Lex](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32016R0679), art. 33.1. Convocatorias oficiales cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 8/27; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas I.7/I.8. Cotejo curricular en Drive: [ITIC Academy, bloque 03, Actuación administrativa y Administración digital, versión 2026.2](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk) para 5976–5979 y [bloque 08, Protección de datos, versión 2026.3](https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk) para 5980. Los temarios académicos ubican los epígrafes; las respuestas se basan en las fuentes oficiales.
+
+Ejecutados revisar-lote-1131.cjs, academia-lote-1131.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas, 5.975 examinadas individualmente, 101 pendientes explícitas, 6.148 sin revisar individualmente y cero errores estructurales. La comprobación automática no se confunde con la revisión sustantiva.
+`;
+const at=s.indexOf('## Lote 1130 —');if(at<0)throw Error('No se encuentra punto de inserción del lote 1130.');s=s.slice(0,at)+section+'\n'+s.slice(at);fs.writeFileSync(f,s);console.log('README actualizado para el lote 1131.');
