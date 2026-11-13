@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1188.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 6261:{url:'https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk',desc:'ITIC Academy, bloque 41 ITIL y COBIT (2026.1), cubre A1-106 (ITIL, gestión del servicio, métricas) y la parte correspondiente a A2-C2 sobre cambios/configuración, normalizada aquí al tema vigente A2-IV.4.'},
+ 6262:{url:'https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk',desc:'ITIC Academy, bloque 42 Redes (2026), medios de transmisión y fibra en A1-108/A1-112 y A2-C5, normalizado al tema vigente A2-IV.7.'},
+ 6263:{url:'https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk',desc:'ITIC Academy, bloque 43 Protocolos (2026.1), protocolos/servicios de red e Internet, cubre A1-109 y A2-C13, normalizado a A2-IV.13.'},
+ 6264:{url:'https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk',desc:'ITIC Academy, bloque 42 Redes (2026), LAN y equipos de interconexión, cubre A1-110/A1-118 y A2-C6, normalizado a A2-IV.8.'},
+ 6265:{url:'https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk',desc:'ITIC Academy, bloque 42 Redes (2026), topología y tipología de redes LAN, cubre A1-118 y A2-C6, normalizado a A2-IV.8.'}
+};
+const clean=s=>{s=(s||'').trim();const i=s.indexOf('Cotejo curricular de ITIC Academy:');return(i<0?s:s.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\.[^\n]*/,'').trim();};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&m,'Falta pregunta/mapeo '+c.id);q.clasificacion.bloque_academia=m.desc;const note='Cotejo curricular de ITIC Academy: '+m.desc+' El temario solo acredita cobertura curricular, no la respuesta.';q.clasificacion.nota=(clean(q.clasificacion.nota)+' '+note).trim();q.comentarios=(clean(q.comentarios)+' '+note).trim();q.revision.observaciones=(clean(q.revision.observaciones)+' '+note).trim();if(!q.revision.fuentes.some(f=>f.url===m.url))q.revision.fuentes.push({url:m.url,referencia:'ITIC Academy: '+m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular ITIC Academy actualizado para IDs 6261–6265.');
