@@ -2,7 +2,7 @@
 
 Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1161 (IDs 6126–6130). Acumulado: 6.125 preguntas examinadas individualmente; 6.021 verificadas (1.174 vigentes, 4.406 corregidas y 441 históricas); 104 pendientes documentadas (42 de fuente y 62 de ambigüedad); 5.998 sin revisar individualmente.
 
-**Publicación verificada:** PENDIENTE
+**Publicación verificada:** el contenido del commit `599565f3ec32bc69a5a7db35b8f7f7f2b00a0c34` ya está servido por GitHub Pages: README, `cambios-lote-1161.json` e `inventario.json` respondieron HTTP 200 al cotejarlos con URL sin caché. El registro público contiene los IDs 6126–6130; el inventario publicado confirma 6.125 examinadas, 6.021 verificadas y 5.998 sin revisar. La API de Actions limitó la consulta del identificador del run, por lo que se deja la comprobación basada en los artefactos públicos.
 
 **Publicación verificada:** el commit `3540afb6046320f5e2b2d4085e889bc105cf1cd6` completó correctamente [Deploy GitHub Pages, run `43391593684`](https://github.com/itic-academy/simulador-tic/actions/runs/43391593684). El workflow finalizó con “completed successfully”; README, `cambios-lote-1158.json` e `inventario.json` respondieron HTTP 200. El registro contiene los IDs 6111–6115 y el inventario confirma 6.110 examinadas, 6.007 verificadas y 6.013 aún sin revisar individualmente.
 
