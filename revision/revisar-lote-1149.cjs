@@ -1,0 +1,42 @@
+require('./aplicar-lote.cjs')({
+ numero:'1149',fecha:'2026-11-13',
+ records:[
+  [6066,[46],['I-9'],['NTI de Digitalización de Documentos','digitalización','resolución','píxeles por pulgada','ENI'],[
+   {url:'https://www.boe.es/eli/es/res/2011/07/19/(1)',referencia:'Resolución de 19 de julio de 2011 que aprueba la NTI de Digitalización de Documentos, apartado IV.2: establece un mínimo de 200 píxeles por pulgada para las imágenes en blanco y negro, color o escala de grises.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 46: NTI e interoperabilidad de documentos electrónicos.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema I.9: ENI y normas técnicas de interoperabilidad.'}
+  ],null,'La opción C es correcta: el apartado IV.2 fija el mínimo en 200 píxeles por pulgada en las tres modalidades citadas. Se conserva la unidad literal de la NTI («píxeles por pulgada»).','vigente'],
+  [6067,[22],['I-9'],['Registro Electrónico Común','Orden PRE/3523/2009','registro electrónico','intercambio registral','pregunta histórica'],[
+   {url:'https://www.boe.es/buscar/act.php?id=BOE-A-2009-21180',referencia:'Orden PRE/3523/2009, disposición adicional primera: permitía habilitar el REC para recibir solicitudes de competencia de otras Administraciones mediante los convenios correspondientes; norma derogada por Orden HAP/566/2013.'},
+   {url:'https://www.boe.es/buscar/doc.php?id=BOE-A-2013-3862',referencia:'Orden HAP/566/2013, disposición derogatoria única: derogó expresamente la Orden PRE/3523/2009; entró en vigor el 13 de abril de 2013.'},
+   {url:'https://www.boe.es/buscar/doc.php?id=BOE-A-2021-20477',referencia:'Orden PCM/1382/2021: regula el Registro Electrónico General en el ámbito de la AGE y establece SIR para intercambios registrales entre Administraciones; derogó la Orden HAP/566/2013.'},
+   {url:'https://www.boe.es/eli/es/l/2015/10/01/39/con',referencia:'Ley 39/2015, artículo 16, régimen legal vigente de los registros electrónicos y lugares de presentación.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 22: administración electrónica y servicios públicos.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema I.9: instrumentos para el acceso electrónico y gestión electrónica de procedimientos.'}
+  ],null,'La opción C describía una posibilidad prevista en la disposición adicional primera de la Orden PRE/3523/2009, pero no es una afirmación vigente: aquella orden fue derogada en 2013. El enunciado se fecha expresamente para conservar su valor de estudio histórico. En el régimen actual, la Ley 39/2015, art. 16, y la Orden PCM/1382/2021 regulan los registros de la AGE; los intercambios registrales entre Administraciones se canalizan por SIR conforme a esta última.','historica'],
+  [6068,[98],['III-13'],['ISO/IEC 25000','SQuaRE','calidad del software','evaluación de calidad','métricas'],[
+   {url:'https://committee.iso.org/sites/jtc1sc7/home/projects/flagship-standards/iso-25000-square-series.html',referencia:'ISO/IEC JTC 1/SC 7, página oficial de la serie ISO/IEC 25000 SQuaRE: Systems and software Quality Requirements and Evaluation, con divisiones de gestión, modelos, medición, requisitos y evaluación de calidad.'},
+   {url:'https://www.iso.org/standard/83467.html',referencia:'ISO/IEC 25040:2024, marco de evaluación de calidad de sistemas y software dentro de la serie SQuaRE.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 98: métricas y evaluación de la calidad del software.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema III.13: calidad del software y su medida.'}
+  ],null,'La respuesta B es correcta: SQuaRE significa Systems and software Quality Requirements and Evaluation y la serie ISO/IEC 25000 establece un marco común de modelos, medición, requisitos y evaluación de calidad de productos de sistemas y software. ISO/IEC 14030 trata de bonos verdes, no de mantenibilidad; ISO/IEC 20000 trata de gestión de servicios de TI, no es un estándar para gestionar infraestructuras críticas.','vigente'],
+  [6069,[5],[],['Horizonte Europa','Reglamento (UE) 2021/695','pilares','misiones de investigación','periodo 2021–2027'],[
+   {url:'https://eur-lex.europa.eu/eli/reg/2021/695/oj',referencia:'Reglamento (UE) 2021/695, que establece Horizonte Europa para el marco financiero plurianual 2021–2027; estructura el programa en tres pilares y una parte transversal. El anexo VI identifica «Salud del suelo y alimentación» como una de las áreas de misión posibles, no como pilar.'},
+   {url:'https://eur-lex.europa.eu/legal-content/EN/LSU/?uri=CELEX%3A32021R0695',referencia:'EUR-Lex, resumen legislativo oficial de Horizonte Europa: enumera los tres pilares (Excellent Science; Global Challenges and European Industrial Competitiveness; Innovative Europe) y las cinco áreas de posibles misiones, incluida Soil health and food.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 5: Unión Europea, tratados, instituciones y políticas.'}
+  ],null,'La respuesta D es correcta para Horizonte Europa 2021–2027: «Salud del suelo y alimentación» es un área de misión que figura en el anexo VI del Reglamento, mientras que los pilares son Ciencia excelente, Desafíos globales y competitividad industrial europea, y Europa innovadora. Se explicita el periodo del programa para evitar que la pregunta se interprete como una clasificación atemporal. El temario A1 aborda el marco general de la Unión Europea (tema 5); no se atribuye un tema A2 directo a este programa específico.','corregida'],
+  [6070,[106],['IV-9','IV-4'],['monitorización de servidores','Checkmk','Nagios','Zabbix','tmon','subsistema térmico Linux'],[
+   {url:'https://docs.checkmk.com/latest/en/intro_setup_monitor.html',referencia:'Documentación oficial de Checkmk: configuración de hosts y servicios monitorizados, incluidos servidores y dispositivos SNMP.'},
+   {url:'https://www.nagios.org/projects/nagios-core/features/',referencia:'Nagios Core, página oficial de funciones: incluye supervisión de red, servidores y servicios.'},
+   {url:'https://www.zabbix.com/server_monitoring/',referencia:'Zabbix, página oficial de monitorización de servidores e infraestructura.'},
+   {url:'https://manpages.debian.org/testing/linux-misc-tools/tmon.8.en.html',referencia:'Manual de tmon(8), paquete linux-misc-tools: describe tmon como herramienta de monitorización y prueba del subsistema térmico del kernel Linux (zonas térmicas, sensores y dispositivos de refrigeración), no como plataforma general de monitorización de servidores.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 106: gestión de servicios e infraestructuras TIC, incidencias y métricas.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema IV.9: administración y monitorización de redes locales; tema IV.4: monitorización del rendimiento de sistemas, infraestructuras y servicios.'}
+  ],null,'La respuesta C se mantiene después de precisar el alcance: tmon monitoriza y prueba el subsistema térmico del kernel Linux, mientras que Checkmk, Nagios y Zabbix son plataformas de supervisión general de infraestructura/servidores. Se corrige «Zabbíx» por el nombre oficial «Zabbix» y se evita afirmar que tmon no monitoriza nada en un servidor. El enunciado se limita a plataformas de propósito general.','corregida']
+ ],
+ edits:{
+  6067:{texto:'Bajo la Orden PRE/3523/2009, antes de su derogación en 2013, ¿qué afirmación describía correctamente la habilitación del Registro Electrónico Común para escritos dirigidos a otras Administraciones Públicas?',respuesta_correcta:2},
+  6069:{texto:'En Horizonte Europa, programa marco de investigación e innovación de la Unión Europea para el periodo 2021–2027, ¿cuál de las siguientes opciones NO es uno de sus tres pilares?',respuesta_correcta:3},
+  6070:{texto:'¿Cuál de las siguientes opciones NO es una plataforma de propósito general para monitorizar servidores e infraestructura TIC?',opciones:['Checkmk','Nagios','tmon','Zabbix'],respuesta_correcta:2}
+ }
+});
