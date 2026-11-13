@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),cp=require('node:child_process');
+const inv=JSON.parse(fs.readFileSync(path.join(__dirname,'inventario.json'),'utf8'));
+const log=JSON.parse(fs.readFileSync(path.join(__dirname,'cambios-lote-1220.json'),'utf8'));
+const sha=cp.execFileSync('git',['rev-parse','--short','HEAD'],{encoding:'utf8'}).trim();
+assert.deepEqual(log.cambios.map(c=>c.id),[6421,6422,6423,6424,6425]);
+const states=log.cambios.map(c=>c.actualizada.revision.estado).join(', ');
+const verified=inv.estados.vigente+inv.estados.corregida+inv.estados.historica;
+const pending=inv.estados.pendiente_fuente+inv.estados.pendiente_ambiguedad;
+const section=`**Publicación verificada:** el commit de datos \`${sha}\` (\`${cp.execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim()}\`) completó correctamente [Deploy GitHub Pages, workflow run 43487453069](https://github.com/itic-academy/simulador-tic/actions/runs/43487453069). El workflow terminó con estado \`Success\` e incluyó el commit \`${sha}\`. GitHub Pages devolvió HTTP 200 sin caché para README, \`cambios-lote-1220.json\` e \`inventario.json\`; el registro publicado contiene los IDs 6421–6425 con estados ${states}. El inventario público confirma ${(inv.total-inv.estados.sin_revisar).toLocaleString('es-ES')} examinadas, ${verified.toLocaleString('es-ES')} verificadas (${inv.estados.vigente.toLocaleString('es-ES')} vigentes, ${inv.estados.corregida.toLocaleString('es-ES')} corregidas y ${inv.estados.historica.toLocaleString('es-ES')} históricas), ${pending} pendientes (${inv.estados.pendiente_fuente} de fuente y ${inv.estados.pendiente_ambiguedad} de ambigüedad) y ${inv.estados.sin_revisar.toLocaleString('es-ES')} sin revisar individualmente.`;
+const file=path.join(__dirname,'README.md');let s=fs.readFileSync(file,'utf8');const marker='## Lote 1220 —';const i=s.indexOf(marker);assert.ok(i>=0);const end=s.indexOf('\n\n',i);assert.ok(end>i);const next=s.slice(end+2);if(!next.startsWith(section))s=s.slice(0,end+2)+section+'\n\n'+next;fs.writeFileSync(file,s);console.log('README: constancia del despliegue 43487453069 registrada.');
