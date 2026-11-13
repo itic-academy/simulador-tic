@@ -311760,7 +311760,7 @@
       "id": 6021,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuál de las firmas XAdES añade referencias a datos de verificación (certificados y listas de revocación) a los documentos firmados:",
+      "texto": "En la taxonomía histórica de XAdES definida por ETSI TS 101 903, ¿qué forma añadía a XAdES-T referencias completas a los certificados y a la información de revocación usados para validar la firma?",
       "opciones": [
         "XAdES-BES",
         "XAdES-T",
@@ -311768,55 +311768,210 @@
         "XAdES-EPES"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se conserva C como respuesta solo para la taxonomía histórica de ETSI TS 101 903: XAdES-C añadía referencias completas a certificados y datos de revocación. El enunciado ahora fecha expresamente ese modelo. No se presenta XAdES-C como nivel del perfil Baseline vigente: ETSI EN 319 132-1 define B-B/B-T/B-LT/B-LTA; el nivel B-LT aborda la incorporación de material de validación, aunque no debe equipararse sin matices a la denominación antigua. Cotejo curricular ITIC Academy: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1 (17/09/2026): formatos XAdES y propiedades de validación; clasificación A1-80/81 y A2-I-6. Reactivo histórico anclado expresamente en ETSI TS 101 903. Temas oficiales asociados: A1-80/A1-81/A2-I-6. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1 (17/09/2026): formatos XAdES y propiedades de validación; clasificación A1-80/81 y A2-I-6. Reactivo histórico anclado expresamente en ETSI TS 101 903.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1 (17/09/2026): formatos XAdES y propiedades de validación; clasificación A1-80/81 y A2-I-6. Reactivo histórico anclado expresamente en ETSI TS 101 903. Temas oficiales asociados: A1-80/A1-81/A2-I-6. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "XAdES",
+        "XAdES-C",
+        "CompleteCertificateRefs",
+        "CompleteRevocationRefs",
+        "firma electrónica histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.etsi.org/deliver/etsi_ts/101900_101999/101903/01.04.01_60/ts_101903v010401p.pdf",
+            "referencia": "ETSI TS 101 903 V1.4.1 (2009-06), XAdES-C: añade CompleteCertificateRefs y CompleteRevocationRefs a XAdES-T."
+          },
+          {
+            "url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.01_60/en_31913201v010301p.pdf",
+            "referencia": "ETSI EN 319 132-1 V1.3.1 (2024-07), §6.1: el perfil XAdES Baseline actual define B-B, B-T, B-LT y B-LTA; B-LT incorpora el material necesario para validar la firma."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36, criptografía y firma electrónica, versión 2026: formatos XAdES y propiedades de validación; clasificación A1-80/81 y A2-I-6. Reactivo histórico anclado expresamente en ETSI TS 101 903."
+          }
+        ],
+        "observaciones": "Se conserva C como respuesta solo para la taxonomía histórica de ETSI TS 101 903: XAdES-C añadía referencias completas a certificados y datos de revocación. El enunciado ahora fecha expresamente ese modelo. No se presenta XAdES-C como nivel del perfil Baseline vigente: ETSI EN 319 132-1 define B-B/B-T/B-LT/B-LTA; el nivel B-LT aborda la incorporación de material de validación, aunque no debe equipararse sin matices a la denominación antigua. Cotejo curricular ITIC Academy: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1 (17/09/2026): formatos XAdES y propiedades de validación; clasificación A1-80/81 y A2-I-6. Reactivo histórico anclado expresamente en ETSI TS 101 903. Temas oficiales asociados: A1-80/A1-81/A2-I-6. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias."
+      }
     },
     {
       "id": 6022,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los algoritmos de clave pública o asimétrica:",
+      "texto": "En un esquema de establecimiento de claves RSA, ¿qué problema computacional sustenta la seguridad del algoritmo?",
       "opciones": [
-        "no han alcanzado la perfección matemática, hay ataques más eficaces que la fuerza bruta",
-        "presentan altas tasas de cifrado y descifrado",
-        "su distribución usando directorios públicos es compleja",
-        "no son compatibles con el concepto de certificado"
+        "La dificultad de factorizar el módulo público, producto de dos primos secretos grandes.",
+        "La búsqueda exhaustiva de una clave simétrica de 56 bits.",
+        "La complejidad de distribuir una clave pública mediante un directorio.",
+        "La imposibilidad de usar certificados digitales con pares de claves."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se reemplaza el enunciado impreciso sobre «perfección matemática» y ataques «más eficaces que la fuerza bruta». Para RSA, la seguridad del esquema se vincula a la dificultad computacional de factorizar el módulo; esto no significa una prueba de imposibilidad matemática ni constituye una afirmación universal para todo algoritmo asimétrico. NIST SP 800-56B Rev. 2 especifica criptografía de factorización entera y NIST DLMF describe la asimetría de coste de factorizar frente a generar el producto. Los distractores se ajustan para que no haya una segunda respuesta defendible. Cotejo curricular ITIC Academy: ITIC Academy, bloque 36, criptografía y firma electrónica, versión 2026: claves públicas/privadas, criptografía asimétrica y RSA; clasificación A1-80/A2-I-6. Temas oficiales asociados: A1-80/A2-I-6. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36, criptografía y firma electrónica, versión 2026: claves públicas/privadas, criptografía asimétrica y RSA; clasificación A1-80/A2-I-6.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 36, criptografía y firma electrónica, versión 2026: claves públicas/privadas, criptografía asimétrica y RSA; clasificación A1-80/A2-I-6. Temas oficiales asociados: A1-80/A2-I-6. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "criptografía asimétrica",
+        "RSA",
+        "factorización",
+        "dificultad computacional",
+        "clave pública"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/56/b/r2/final",
+            "referencia": "NIST SP 800-56B Rev. 2, reafirmada como vigente en 2026: especifica esquemas RSA de establecimiento de claves basados en factorización entera y sus propiedades de seguridad."
+          },
+          {
+            "url": "https://dlmf.nist.gov/27.16",
+            "referencia": "NIST Digital Library of Mathematical Functions, §27.16: explica la aplicación criptográfica de la diferencia computacional entre construir números producto de primos grandes y factorizar el producto público."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/asymmetric_cryptography",
+            "referencia": "NIST CSRC Glossary: la criptografía asimétrica usa dos claves distintas, para cifrar/firmar y para descifrar/verificar."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36, criptografía y firma electrónica, versión 2026: claves públicas/privadas, criptografía asimétrica y RSA; clasificación A1-80/A2-I-6."
+          }
+        ],
+        "observaciones": "Se reemplaza el enunciado impreciso sobre «perfección matemática» y ataques «más eficaces que la fuerza bruta». Para RSA, la seguridad del esquema se vincula a la dificultad computacional de factorizar el módulo; esto no significa una prueba de imposibilidad matemática ni constituye una afirmación universal para todo algoritmo asimétrico. NIST SP 800-56B Rev. 2 especifica criptografía de factorización entera y NIST DLMF describe la asimetría de coste de factorizar frente a generar el producto. Los distractores se ajustan para que no haya una segunda respuesta defendible. Cotejo curricular ITIC Academy: ITIC Academy, bloque 36, criptografía y firma electrónica, versión 2026: claves públicas/privadas, criptografía asimétrica y RSA; clasificación A1-80/A2-I-6. Temas oficiales asociados: A1-80/A2-I-6. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias."
+      }
     },
     {
       "id": 6023,
       "bloque": 0,
       "tema": 0,
-      "texto": "Elija la respuesta correcta respecto Java EE 7:",
+      "texto": "En Java EE 7, ¿qué interfaz entrega el contenedor al inicializar un servlet y permite consultar sus parámetros de inicialización?",
       "opciones": [
-        "Para crear un nuevo servlet se debe invocar al procedimiento init ().",
-        "Para destruir un servlet se debe invocar al método destroy().",
-        "La clase ServletConfig sirve para pasarle información al servlet durante su inicialización.",
-        "La clase ServletSession proporciona a las aplicaciones las herramientas para la gestión de la sesión."
+        "ServletInit",
+        "ServletDestroy",
+        "ServletConfig",
+        "ServletSession"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La opción C sigue siendo la correcta, pero se sustituye «clase» por «interfaz» y se pregunta por la recepción del objeto de configuración, para no sugerir que B sea falsa: el contenedor también llama a destroy() cuando retira el servlet del servicio. ServletConfig contiene parámetros de inicialización específicos del servlet; ServletContext corresponde a la aplicación web. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30, Tecnologías de Sistemas de la Información, versión 2026.1 (31/08/2026): Java EE y ciclo de vida/configuración de servlets; clasificación A1-67/A2-III-10. Temas oficiales asociados: A1-67/A2-III-10. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30, Tecnologías de Sistemas de la Información, versión 2026.1 (31/08/2026): Java EE y ciclo de vida/configuración de servlets; clasificación A1-67/A2-III-10.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30, Tecnologías de Sistemas de la Información, versión 2026.1 (31/08/2026): Java EE y ciclo de vida/configuración de servlets; clasificación A1-67/A2-III-10. Temas oficiales asociados: A1-67/A2-III-10. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "Java EE 7",
+        "ServletConfig",
+        "Servlet",
+        "inicialización",
+        "parámetros de inicio"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javaee/7/api/javax/servlet/ServletConfig.html",
+            "referencia": "Java EE 7 API, interfaz javax.servlet.ServletConfig: objeto de configuración que el contenedor pasa al servlet durante su inicialización; expone los parámetros de inicio."
+          },
+          {
+            "url": "https://docs.oracle.com/javaee/7/api/javax/servlet/GenericServlet.html",
+            "referencia": "Java EE 7 API, GenericServlet.init(ServletConfig): el contenedor llama al método al poner el servlet en servicio y entrega el ServletConfig."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, versión 2026: Java EE y ciclo de vida/configuración de servlets; clasificación A1-67/A2-III-10."
+          }
+        ],
+        "observaciones": "La opción C sigue siendo la correcta, pero se sustituye «clase» por «interfaz» y se pregunta por la recepción del objeto de configuración, para no sugerir que B sea falsa: el contenedor también llama a destroy() cuando retira el servlet del servicio. ServletConfig contiene parámetros de inicialización específicos del servlet; ServletContext corresponde a la aplicación web. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30, Tecnologías de Sistemas de la Información, versión 2026.1 (31/08/2026): Java EE y ciclo de vida/configuración de servlets; clasificación A1-67/A2-III-10. Temas oficiales asociados: A1-67/A2-III-10. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias."
+      }
     },
     {
       "id": 6024,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un router IP puede intercambiar tráfico IP:",
+      "texto": "¿Puede un router IP reenviar datagramas entre una interfaz Ethernet y una interfaz STM-1 sobre SDH que use PPP, si ambas están configuradas con encapsulación compatible?",
       "opciones": [
-        "Entre un interfaz Ethernet y un interfaz STM-1",
-        "Sólo entre interfaces de un mismo nivel",
-        "Nunca si existen máquinas UNIX y Windows en cada una de las redes que conecta",
-        "Ninguna de las anteriores"
+        "Sí; IP puede transportarse sobre Ethernet y también sobre PPP en un enlace SDH.",
+        "No; el encaminamiento IP solo funciona entre interfaces del mismo nivel físico.",
+        "No; la presencia de sistemas UNIX y Windows impide el encaminamiento entre redes.",
+        "No; ninguna de las anteriores."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La respuesta A se mantiene bajo condiciones explícitas. Un router puede reenviar datagramas IP entre interfaces de tecnologías de enlace distintas si cada interfaz dispone de encapsulación y configuración compatibles: RFC 894 define IP sobre Ethernet y RFC 2615 define PPP sobre SONET/SDH. El soporte concreto depende del equipo; no se afirma que cualquier router tenga necesariamente una interfaz STM-1. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42, Redes, versión 2026.1 (29/09/2026): redes IP, interconexión, Ethernet, SDH/STM-1, PPP y encaminamiento; clasificación A1-108/115 y A2-II-8. Temas oficiales asociados: A1-108/A1-115/A2-II-8. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42, Redes, versión 2026.1 (29/09/2026): redes IP, interconexión, Ethernet, SDH/STM-1, PPP y encaminamiento; clasificación A1-108/115 y A2-II-8.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 42, Redes, versión 2026.1 (29/09/2026): redes IP, interconexión, Ethernet, SDH/STM-1, PPP y encaminamiento; clasificación A1-108/115 y A2-II-8. Temas oficiales asociados: A1-108/A1-115/A2-II-8. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "router IP",
+        "Ethernet",
+        "STM-1",
+        "SDH",
+        "PPP",
+        "encapsulación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc894.html",
+            "referencia": "IETF RFC 894: especifica la encapsulación y transmisión de datagramas IP en tramas Ethernet."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc2615.html",
+            "referencia": "IETF RFC 2615: especifica el transporte multiprotocolo mediante PPP sobre circuitos SONET/SDH."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42, Redes, versión 2026: redes IP, interconexión, Ethernet, SDH/STM-1, PPP y encaminamiento; clasificación A1-108/115 y A2-II-8."
+          }
+        ],
+        "observaciones": "La respuesta A se mantiene bajo condiciones explícitas. Un router puede reenviar datagramas IP entre interfaces de tecnologías de enlace distintas si cada interfaz dispone de encapsulación y configuración compatibles: RFC 894 define IP sobre Ethernet y RFC 2615 define PPP sobre SONET/SDH. El soporte concreto depende del equipo; no se afirma que cualquier router tenga necesariamente una interfaz STM-1. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42, Redes, versión 2026.1 (29/09/2026): redes IP, interconexión, Ethernet, SDH/STM-1, PPP y encaminamiento; clasificación A1-108/115 y A2-II-8. Temas oficiales asociados: A1-108/A1-115/A2-II-8. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias."
+      }
     },
     {
       "id": 6025,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo se denominan las aplicaciones móviles desarrolladas con un SDK concreto y optimizadas para ser utilizadas en un sistema operativo en particular?",
+      "texto": "¿Cómo se denominan las aplicaciones móviles implementadas para una plataforma concreta que utilizan las APIs de su sistema operativo y se compilan para ejecutarse como aplicaciones de esa plataforma?",
       "opciones": [
         "Aplicaciones móviles multiplataforma.",
         "Aplicaciones móviles híbridas.",
@@ -311824,7 +311979,44 @@
         "Aplicaciones móviles nativas."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La respuesta D (nativas) se mantiene, con un enunciado más preciso: se trata de software implementado para una plataforma móvil concreta mediante sus APIs/SDK y preparado como aplicación de esa plataforma. La documentación Android muestra el uso de sus APIs de framework y la compilación del proyecto con Android SDK. «SDK concreto» por sí solo no basta para distinguir una app nativa, pues herramientas multiplataforma también tienen SDK; se explicita la dependencia de APIs/plataforma. Cotejo curricular ITIC Academy: ITIC Academy, bloque 47, Aplicaciones móviles y Sistemas Operativos, versión 2026.1 (30/09/2026): aplicaciones nativas, SDK, APIs de plataforma y distribución; correspondencia A1-124 y A2-II-2 (sistemas operativos móviles). Temas oficiales asociados: A1-124/A2-II-2. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-124"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 47, Aplicaciones móviles y Sistemas Operativos, versión 2026.1 (30/09/2026): aplicaciones nativas, SDK, APIs de plataforma y distribución; correspondencia A1-124 y A2-II-2 (sistemas operativos móviles).",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 47, Aplicaciones móviles y Sistemas Operativos, versión 2026.1 (30/09/2026): aplicaciones nativas, SDK, APIs de plataforma y distribución; correspondencia A1-124 y A2-II-2 (sistemas operativos móviles). Temas oficiales asociados: A1-124/A2-II-2. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias."
+      },
+      "etiquetas": [
+        "aplicaciones móviles",
+        "aplicaciones nativas",
+        "SDK",
+        "APIs de plataforma",
+        "Android"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://developer.android.com/guide/platform",
+            "referencia": "Android Developers, Platform architecture: las APIs del framework constituyen los componentes básicos para crear aplicaciones Android y exponen funcionalidad del sistema."
+          },
+          {
+            "url": "https://developer.android.com/guide/components/fundamentals",
+            "referencia": "Android Developers, Application fundamentals: las herramientas del Android SDK compilan código y recursos en APK o Android App Bundle, formatos de aplicación instalable/distribuible en Android."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 47, Aplicaciones móviles, versión 2026: aplicaciones nativas, SDK, APIs de plataforma y distribución; correspondencia A1-124 y A2-II-2 (sistemas operativos móviles)."
+          }
+        ],
+        "observaciones": "La respuesta D (nativas) se mantiene, con un enunciado más preciso: se trata de software implementado para una plataforma móvil concreta mediante sus APIs/SDK y preparado como aplicación de esa plataforma. La documentación Android muestra el uso de sus APIs de framework y la compilación del proyecto con Android SDK. «SDK concreto» por sí solo no basta para distinguir una app nativa, pues herramientas multiplataforma también tienen SDK; se explicita la dependencia de APIs/plataforma. Cotejo curricular ITIC Academy: ITIC Academy, bloque 47, Aplicaciones móviles y Sistemas Operativos, versión 2026.1 (30/09/2026): aplicaciones nativas, SDK, APIs de plataforma y distribución; correspondencia A1-124 y A2-II-2 (sistemas operativos móviles). Temas oficiales asociados: A1-124/A2-II-2. La academia sirve para adscripción curricular; el fundamento de la respuesta son las fuentes técnicas primarias."
+      }
     },
     {
       "id": 6026,
