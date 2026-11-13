@@ -1,0 +1,22 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const file=path.join(__dirname,'README.md');let s=fs.readFileSync(file,'utf8');
+const old='Último lote secuencial: 1176 (IDs 6201–6205). Acumulado: 6.200 preguntas examinadas individualmente; 6.090 verificadas (1.194 vigentes, 4.451 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.923 sin revisar individualmente.';
+const neu='Último lote secuencial: 1177 (IDs 6206–6210). Acumulado: 6.205 preguntas examinadas individualmente; 6.095 verificadas (1.196 vigentes, 4.454 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.918 sin revisar individualmente.';
+const section=`## Lote 1177 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6206–6210 sobre pila de protocolos de servicios web, WSDL, estándares asociados, funciones de workflow y ESB. Tres se corrigen (6207–6209); 6206 y 6210 se mantienen vigentes.
+
+- **6206 — Web Service Protocol Stack:** **vigente**, respuesta A. «Web Service Protocol Stack» nombra el conjunto organizado de tecnologías/protocolos; SOAP, WSDL y UDDI son componentes con funciones distintas, no nombres del conjunto. La pila es un modelo explicativo: no toda implantación debe adoptar todas sus capas. A1-65/A2-III.12.
+- **6207 — WSDL:** **corregida**, respuesta A. Se corrige el error tipográfico WDSL → WSDL. WSDL es un documento/lenguaje XML que describe servicios e interfaces; no es el mensaje de cada llamada, el registro UDDI ni el lenguaje de orquestación WS-BPEL. A1-65/A2-III.12.
+- **6208 — estándares web:** **corregida**, respuesta C. El original usaba «XFSS», sigla sin alcance definido, lo que hacía débil el distractor. Se sustituye por ext4, sistema de archivos de Linux, ajeno a servicios web; SOAP, UDDI y HTTP sí están asociados a mensajería, descubrimiento y transporte/interacción web. A1-65/A2-III.12.
+- **6209 — workflow:** **corregida**, respuesta C. Se precisa que se pregunta por funciones internas de un motor. Interoperabilidad entre motores distintos es una capacidad de integración separada en Interface 4 de WfMC; ejecución/procedimientos, control/monitorización y asignación de tareas/roles son funciones del servicio workflow. A1-58/A2-II.16.
+- **6210 — ESB:** **vigente**, respuesta C: Enterprise Service Bus, infraestructura de integración/mediación de SOA. A1-58/A2-II.6.
+
+Fuentes primarias: [W3C Web Services Architecture](https://www.w3.org/TR/ws-arch/), [WSDL 2.0](https://www.w3.org/TR/wsdl/), [SOAP 1.2](https://www.w3.org/TR/soap12-part1/); [OASIS UDDI specifications](https://www.oasis-open.org/specs/) y [OASIS WS-BPEL 2.0](https://docs.oasis-open.org/wsbpel/2.0/OS/wsbpel-v2.0-OS.html); [IETF RFC 9110 HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html), [Linux kernel ext4 documentation](https://www.kernel.org/doc/html/latest/filesystems/ext4/overview.html); [WfMC Workflow Reference Model](https://wfmc.org/wp-content/uploads/2022/09/tc003v11.pdf) y [WfMC glossary](https://wfmc.org/wp-content/uploads/2022/09/TC-1011_term_glossary_v3.pdf); [IBM ESB documentation](https://www.ibm.com/docs/en/bpms/8.0.x?topic=manager-connecting-services-through-enterprise-service-bus).
+
+Convocatorias cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, temas 58 y 65; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas II.6, II.16 y III.12. Cotejo curricular ITIC Academy: [bloque 28 Arquitectura SOA](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk), temas SOAP/WSDL/ESB; [bloque 50 de workflow](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk), WfMC y áreas de interfaz. La academia da encaje temático, no sustituye las fuentes normativas/técnicas primarias.
+
+Ejecutados revisar-lote-1177.cjs, academia-lote-1177.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario esperado: 12.123 preguntas; 6.205 examinadas; 6.095 verificadas; 110 pendientes documentadas; 5.918 aún sin revisar; cero errores estructurales.
+
+`;
+assert.ok(s.includes(old),'No coincide el resumen previo al lote 1177');assert.ok(s.includes('## Lote 1176 — 13 de noviembre de 2026'),'No se encontró el lote anterior');s=s.replace(old,neu).replace('## Lote 1176 — 13 de noviembre de 2026',section+'## Lote 1176 — 13 de noviembre de 2026');fs.writeFileSync(file,s);console.log('README actualizado para el lote 1177.');
