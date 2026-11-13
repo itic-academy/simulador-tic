@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1129 (IDs 5966–5970); también se resolvió el pendiente histórico ID 77. Acumulado: 5.965 preguntas examinadas individualmente; 5.864 verificadas (1.120 vigentes, 4.313 corregidas y 431 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.158 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1130 (IDs 5971–5975); también se resolvió el pendiente histórico ID 77. Acumulado: 5.970 preguntas examinadas individualmente; 5.869 verificadas (1.123 vigentes, 4.315 corregidas y 431 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.153 sin revisar individualmente.
+
+## Lote 1130 — 13 de noviembre de 2026
+
+IDs 5971–5975 cotejados con el texto consolidado de la Ley 39/2015 y el RD 203/2021 en el BOE. Se despejó una segunda respuesta falsa en el ítem de retroactividad, se precisó el alcance de los actos de tramitación simplificada, y se corrigieron el erróneo número de RD y los plazos/estados de procedimiento en los distractores sobre comunicaciones electrónicas. El [registro del lote 1130](cambios-lote-1130.json) conserva originales y justificación por pregunta.
+
+- **5971 — ámbito de la Ley 39/2015:** **vigente**, respuesta D. Art. 2.1: AGE, Administraciones autonómicas, entidades locales y sector público institucional. A1-8/A2-I.8.
+- **5972 — retroactividad:** **corregida**, respuesta B (no es condición). Art. 39.3: se exige que los hechos necesarios existieran ya en la fecha retrotraída y que no se lesionen derechos o intereses legítimos de terceros; se arregló C, que negaba el requisito factual y generaba otro distractor falso. A1-8/A2-I.8.
+- **5973 — plazo para notificar resolución expresa:** **vigente**, respuesta C. Art. 21.2: se fija por la norma procedimental y no puede exceder seis meses salvo ley o Derecho de la UE. A1-8/A2-I.8.
+- **5974 — tramitación simplificada:** **vigente**, respuesta D (incorrecta). Art. 96.6 incluye, según proceda, informes/dictámenes y resolución además de inicio, subsanación, alegaciones y audiencia. A1-8/A2-I.8.
+- **5975 — comunicaciones electrónicas:** **corregida**, respuesta A. Art. 41.g RD 203/2021 incluye comunicar el requerimiento interadministrativo de anulación/revisión y su cumplimiento o resolución judicial. Se corrigió «RD 203/203» y se precisó el supuesto de comunicación obligatoria. A1-8/A2-I.8/I.9.
+
+Fuentes primarias: [Ley 39/2015 consolidada al 29-09-2026](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565&p=20260929&tn=1), arts. 2.1, 21.2, 31.2.c, 39.3 y 96; [RD 203/2021 consolidado al 02-04-2025](https://www.boe.es/buscar/act.php?id=BOE-A-2021-5032&p=20250402&tn=1), art. 41. Convocatorias oficiales cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), tema 8; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas I.8/I.9. Cotejo curricular con [ITIC Academy, bloque 03, Actuación administrativa y Administración digital (actualización 2026)](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk). La evidencia de respuesta es normativa primaria; la academia se usa para clasificar el contenido.
+
+Ejecutados revisar-lote-1130.cjs, academia-lote-1130.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas, 5.970 examinadas individualmente, 101 pendientes explícitas, 6.153 sin revisar individualmente y cero errores estructurales. El inventario no se considera sustituto de la revisión de contenido.
 
 ## Lote 1129 — 13 de noviembre de 2026
 
