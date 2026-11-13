@@ -1,0 +1,34 @@
+require('./aplicar-lote.cjs')({
+ numero:'1179',fecha:'2026-11-13',
+ records:[
+  [6216,[58],['II-7'],['microservicios','servicios autónomos','despliegue independiente','API','HTTP'],[
+   {url:'https://martinfowler.com/microservices/',referencia:'Martin Fowler, Microservices: caracteriza el estilo como una aplicación formada por servicios, cada uno en su propio proceso, comunicados mediante mecanismos ligeros (a menudo API HTTP), con despliegue independiente.'},
+   {url:'https://learn.microsoft.com/en-us/devops/deliver/what-are-microservices',referencia:'Microsoft Learn: describe microservicios como servicios separadamente desplegables que realizan funciones de negocio y se comunican por interfaces web; no exige un único protocolo.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 58: procesamiento cooperativo, cliente-servidor y SOA.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema II.7: arquitectura basada en contenedores y microservicios, despliegue, monitorización y escalado.'}
+  ],null,'La respuesta A corresponde a microservicios. Se corrige la redacción para no presentar «pequeño» ni HTTP como requisitos rígidos: lo distintivo es la autonomía y posibilidad de despliegue separado, con comunicación mediante interfaces/protocolos de red; los procesos separados y HTTP son patrones frecuentes.','corregida'],
+  [6217,[2],['I-2'],['Constitución Española','Tribunal Constitucional','artículo 159','Consejo General del Poder Judicial'],[
+   {url:'https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520',referencia:'Constitución Española consolidada en BOE, artículo 159.1: TC de 12 miembros, dos a propuesta del Consejo General del Poder Judicial.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 2: Tribunal Constitucional, naturaleza, organización y atribuciones.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema I.2: composición y atribuciones del Tribunal Constitucional.'}
+  ],null,'La opción C es correcta: de los doce miembros, dos son propuestos por el CGPJ; cuatro por el Congreso, cuatro por el Senado y dos por el Gobierno. La Fiscalía General del Estado no propone miembros conforme al artículo 159.1 CE.','vigente'],
+  [6218,[3],[],['Constitución Española','Haciendas locales','artículo 142','suficiencia financiera'],[
+   {url:'https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520',referencia:'Constitución Española consolidada en BOE, artículo 142: las Haciendas locales dispondrán de medios suficientes y se nutrirán fundamentalmente de tributos propios y participación en tributos estatales y autonómicos.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 3: organización territorial y regulación constitucional de la Administración local.'}
+  ],null,'La respuesta D es correcta. El artículo 142 CE garantiza medios suficientes para las funciones atribuidas y señala sus fuentes principales de financiación. No establece autosuficiencia financiera ni ausencia de recursos propios, y las Haciendas locales no sustituyen a las estatal o autonómicas. En el programa A2 no hay un tema específico equivalente de Hacienda local; no se fuerza esa clasificación.','vigente'],
+  [6219,[4],[],['Constitución Española','artículo 103.1','principios de actuación administrativa','descentralización','desconcentración','coordinación'],[
+   {url:'https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520',referencia:'Constitución Española consolidada en BOE, artículo 103.1: enumera eficacia, jerarquía, descentralización, desconcentración y coordinación; no centralización.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 4: principios constitucionales de la Administración pública.'}
+  ],null,'La opción A es correcta si se pregunta por la lista literal del artículo 103.1 CE: centralización no aparece; sí figuran eficacia, jerarquía, descentralización, desconcentración y coordinación. Se simplifica la opción C a «Descentralización» para evitar mezclar la enumeración constitucional con las modalidades funcional/territorial de la legislación organizativa.','corregida'],
+  [6220,[4],['I-8'],['Ley 40/2015','Ministerios','Subsecretaría','Secretaría General Técnica','servicios comunes','artículo 58'],[
+   {url:'https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566&p=20240802',referencia:'Ley 40/2015, texto consolidado BOE, artículo 58: los Ministerios contarán en todo caso con una Subsecretaría, y dependiendo de ella una Secretaría General Técnica, para gestionar servicios comunes.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 4: Administración pública y órganos centrales de la Administración General del Estado.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema I.8: Ley de Régimen Jurídico del Sector Público.'}
+  ],null,'La opción B es correcta y coincide con el artículo 58 de la Ley 40/2015: todo Ministerio cuenta con Subsecretaría y, dependiendo de esta, Secretaría General Técnica para la gestión de servicios comunes. No debe confundirse el orden de dependencia.','vigente']
+ ],
+ edits:{
+  6216:{texto:'¿Qué caracteriza principalmente a una arquitectura de microservicios?',opciones:['Una aplicación distribuida en servicios autónomos y desplegables por separado, que se comunican mediante interfaces de red; HTTP es una opción frecuente, no obligatoria.','Una única aplicación indivisible que solo puede compilarse y desplegarse como un bloque.','Una arquitectura de tres capas fijas: presentación, lógica y datos, desplegadas siempre juntas.','Un patrón de diseño que organiza exclusivamente las clases de la capa de presentación en modelo, vista y controlador.']},
+  6219:{texto:'Según la enumeración literal del artículo 103.1 de la Constitución Española, ¿qué principio no figura entre los principios de actuación de la Administración Pública?',opciones:['Centralización.','Desconcentración.','Descentralización.','Coordinación.']},
+  6220:{texto:'Según el artículo 58 de la Ley 40/2015, para la gestión de los servicios comunes los Ministerios contarán en todo caso con:',opciones:['Una Secretaría General Técnica y, dependiendo de ella, una Subsecretaría.','Una Subsecretaría y, dependiendo de ella, una Secretaría General Técnica.','Una Subsecretaría y, dependiendo de ella, una Secretaría General.','Una Secretaría de Estado y, dependiendo de ella, una Secretaría General Técnica.']}
+ }
+});
