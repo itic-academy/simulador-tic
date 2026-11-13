@@ -306890,7 +306890,40 @@
         "00:00:00:00:00:00"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Vigente, respuesta B. En Ethernet la dirección de destino de difusión es la dirección MAC de 48 bits formada por todos unos: FF:FF:FF:FF:FF:FF. IEEE la identifica como dirección de grupo que representa todas las estaciones de la red. Se normaliza el espaciado irregular de los distractores solo al explicar; se conserva el banco original. Cotejado con ITIC Academy, bloque 43, Ethernet y redes LAN. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, Ethernet, direcciones MAC y difusión en redes LAN. Temas oficiales asociados: A1-110/A2-IV-8. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-110"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 43, Ethernet, direcciones MAC y difusión en redes LAN.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, Ethernet, direcciones MAC y difusión en redes LAN. Temas oficiales asociados: A1-110/A2-IV-8. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas."
+      },
+      "etiquetas": [
+        "Ethernet",
+        "MAC",
+        "difusión",
+        "broadcast",
+        "IEEE 802.3"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/wp-content/uploads/import/documents/tutorials/eui.pdf",
+            "referencia": "IEEE Registration Authority, Guidelines for Use of EUI, OUI, and CID: la dirección de grupo MAC de todos unos FF-FF-FF-FF-FF-FF indica todas las estaciones de la red."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43, Ethernet, direcciones MAC y difusión en redes LAN."
+          }
+        ],
+        "observaciones": "Vigente, respuesta B. En Ethernet la dirección de destino de difusión es la dirección MAC de 48 bits formada por todos unos: FF:FF:FF:FF:FF:FF. IEEE la identifica como dirección de grupo que representa todas las estaciones de la red. Se normaliza el espaciado irregular de los distractores solo al explicar; se conserva el banco original. Cotejado con ITIC Academy, bloque 43, Ethernet y redes LAN. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, Ethernet, direcciones MAC y difusión en redes LAN. Temas oficiales asociados: A1-110/A2-IV-8. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas."
+      }
     },
     {
       "id": 5922,
@@ -306904,7 +306937,39 @@
         "Ninguna de los anteriores."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Vigente, respuesta A. La MIB (Management Information Base) es el almacén virtual que describe objetos gestionados; SNMP es el protocolo de gestión que normalmente permite acceder a esos objetos. NMS designa al sistema/estación de gestión, no a la base de objetos. Cotejado con ITIC Academy, bloque 43, gestión de redes y SNMP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, gestión SNMP y MIB de redes. Temas oficiales asociados: A1-118/A2-IV-9. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 43, gestión SNMP y MIB de redes.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, gestión SNMP y MIB de redes. Temas oficiales asociados: A1-118/A2-IV-9. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas."
+      },
+      "etiquetas": [
+        "SNMP",
+        "MIB",
+        "gestión de redes",
+        "objetos gestionados"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3418.html",
+            "referencia": "IETF RFC 3418, sección 1: los objetos gestionados se acceden mediante un almacén virtual de información llamado Management Information Base (MIB), generalmente mediante SNMP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43, gestión SNMP y MIB de redes."
+          }
+        ],
+        "observaciones": "Vigente, respuesta A. La MIB (Management Information Base) es el almacén virtual que describe objetos gestionados; SNMP es el protocolo de gestión que normalmente permite acceder a esos objetos. NMS designa al sistema/estación de gestión, no a la base de objetos. Cotejado con ITIC Academy, bloque 43, gestión de redes y SNMP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, gestión SNMP y MIB de redes. Temas oficiales asociados: A1-118/A2-IV-9. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas."
+      }
     },
     {
       "id": 5923,
@@ -306912,13 +306977,50 @@
       "tema": 0,
       "texto": "¿Se pueden controlar el número de impresiones que un usuario ha realizado en una impresora en red mediante el protocolo de gestión SNMP?",
       "opciones": [
-        "Sí, siempre y cuando en la MIB de la impresora se contemple este parámetro.",
+        "Sí, si la MIB expone el contador específico por usuario; el contador estándar de la impresora no lo atribuye.",
         "No, necesitaría una base de datos externa para almacenarlo.",
         "Sí, sólo mediante instalación de firmware nuevo en la impresora.",
         "Sí, pero con protocolos propietarios de la impresora."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida, respuesta A con alcance precisado. SNMP puede consultar por usuario si el agente de impresión expone en su MIB una métrica atribuible a cada usuario. El contador estandarizado prtMarkerLifeCount de Printer MIB cuenta unidades de la subunidad de marcado y no atribuye páginas a usuarios; para contabilidad individual hace falta una métrica por usuario (por ejemplo, del servidor de impresión o una extensión del fabricante). Se ajustó la opción correcta para no sugerir que el contador global estándar basta. Cotejado con ITIC Academy, bloque 43, gestión SNMP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, monitorización y gestión SNMP; el RFC de Printer MIB delimita qué contadores son por dispositivo y no por usuario. Temas oficiales asociados: A1-118/A2-IV-9. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 43, monitorización y gestión SNMP; el RFC de Printer MIB delimita qué contadores son por dispositivo y no por usuario.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, monitorización y gestión SNMP; el RFC de Printer MIB delimita qué contadores son por dispositivo y no por usuario. Temas oficiales asociados: A1-118/A2-IV-9. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas."
+      },
+      "etiquetas": [
+        "SNMP",
+        "MIB",
+        "impresora de red",
+        "contadores",
+        "contabilidad de impresión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3418.html",
+            "referencia": "IETF RFC 3418, sección 1: los objetos MIB se consultan generalmente mediante SNMP."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3805.html",
+            "referencia": "IETF RFC 3805 (Printer MIB v2), objeto prtMarkerLifeCount: contador acumulado por subunidad de marcado; es de la impresora, no identifica por sí solo a cada usuario."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43, monitorización y gestión SNMP; el RFC de Printer MIB delimita qué contadores son por dispositivo y no por usuario."
+          }
+        ],
+        "observaciones": "Corregida, respuesta A con alcance precisado. SNMP puede consultar por usuario si el agente de impresión expone en su MIB una métrica atribuible a cada usuario. El contador estandarizado prtMarkerLifeCount de Printer MIB cuenta unidades de la subunidad de marcado y no atribuye páginas a usuarios; para contabilidad individual hace falta una métrica por usuario (por ejemplo, del servidor de impresión o una extensión del fabricante). Se ajustó la opción correcta para no sugerir que el contador global estándar basta. Cotejado con ITIC Academy, bloque 43, gestión SNMP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, monitorización y gestión SNMP; el RFC de Printer MIB delimita qué contadores son por dispositivo y no por usuario. Temas oficiales asociados: A1-118/A2-IV-9. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas."
+      }
     },
     {
       "id": 5924,
@@ -306932,7 +307034,48 @@
         "1880-1900 MHz"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Vigente, respuesta D. La edición actual ETSI EN 301 406-1 V3.2.0 (enero de 2026) fija la banda de servicio DECT en 1880–1900 MHz; la decisión CEPT ERC/DEC/(94)03 sigue activa. Se cotejó además el CNAF vigente aprobado por Orden TDF/732/2026, que sustituyó al de 2021. Cotejado con ITIC Academy, bloque 43, sistemas inalámbricos/DECT. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, tecnologías inalámbricas/DECT; banda comprobada en ETSI EN 301 406-1 y decisión CEPT vigente. Temas oficiales asociados: A1-114/A2-IV-11. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-114"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 43, tecnologías inalámbricas/DECT; banda comprobada en ETSI EN 301 406-1 y decisión CEPT vigente.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, tecnologías inalámbricas/DECT; banda comprobada en ETSI EN 301 406-1 y decisión CEPT vigente. Temas oficiales asociados: A1-114/A2-IV-11. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas."
+      },
+      "etiquetas": [
+        "DECT",
+        "1880–1900 MHz",
+        "espectro radioeléctrico",
+        "CNAF",
+        "redes inalámbricas"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.etsi.org/deliver/etsi_en/301400_301499/30140601/03.02.00_20/en_30140601v030200ev.pdf",
+            "referencia": "ETSI EN 301 406-1 V3.2.0 (2026-01), tabla 1: la banda de servicio DECT para transmisión y recepción es 1 880–1 900 MHz."
+          },
+          {
+            "url": "https://docdb.cept.org/document/718",
+            "referencia": "CEPT ERC/DEC/(94)03, decisión activa: designa 1880–1900 MHz para DECT; registro ECO/CEPT, referencia ETSI EN 301 406."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15661",
+            "referencia": "BOE-A-2026-15661, Orden TDF/732/2026, CNAF vigente desde 18-07-2026; consultada como marco nacional actual de atribución de frecuencias."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43, tecnologías inalámbricas/DECT; banda comprobada en ETSI EN 301 406-1 y decisión CEPT vigente."
+          }
+        ],
+        "observaciones": "Vigente, respuesta D. La edición actual ETSI EN 301 406-1 V3.2.0 (enero de 2026) fija la banda de servicio DECT en 1880–1900 MHz; la decisión CEPT ERC/DEC/(94)03 sigue activa. Se cotejó además el CNAF vigente aprobado por Orden TDF/732/2026, que sustituyó al de 2021. Cotejado con ITIC Academy, bloque 43, sistemas inalámbricos/DECT. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, tecnologías inalámbricas/DECT; banda comprobada en ETSI EN 301 406-1 y decisión CEPT vigente. Temas oficiales asociados: A1-114/A2-IV-11. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas."
+      }
     },
     {
       "id": 5925,
@@ -306946,7 +307089,41 @@
         "EI UELC (User Equipment Location Controller) es el encargado de llevar a cabo las funciones de itinerancia (roaming) de las MSs (Mobile Station) en un área MSC (Mobile Switching Center)."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Vigente, respuesta B. Un RNS se compone de un RNC y uno o más Node B. Node B es el nodo responsable de la transmisión y recepción radio en una o más celdas hacia/desde el equipo de usuario (UE). El VLR no realiza la autenticación criptográfica descrita (interviene el AuC); UELC no es un elemento UTRAN. Cotejado con ITIC Academy, bloque 43, comunicaciones móviles UMTS. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, redes móviles UMTS/UTRAN; arquitectura cotejada con 3GPP TS 25.401 Release 19. Temas oficiales asociados: A1-123/A2-IV-15. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-123"
+        ],
+        "A2": [
+          "A2-IV-15"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 43, redes móviles UMTS/UTRAN; arquitectura cotejada con 3GPP TS 25.401 Release 19.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, redes móviles UMTS/UTRAN; arquitectura cotejada con 3GPP TS 25.401 Release 19. Temas oficiales asociados: A1-123/A2-IV-15. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas."
+      },
+      "etiquetas": [
+        "UMTS",
+        "UTRAN",
+        "RNS",
+        "RNC",
+        "Node B",
+        "redes móviles"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.etsi.org/deliver/etsi_ts/125400_125499/125401/19.00.00_60/ts_125401v190000p.pdf",
+            "referencia": "ETSI/3GPP TS 25.401 V19.0.0 Release 19 (2025-10), secciones 3 y 6: UTRAN está compuesta por RNC y Node B; cada RNS integra un RNC y uno o varios Node B; Node B realiza transmisión y recepción radio en una o más celdas con el UE."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43, redes móviles UMTS/UTRAN; arquitectura cotejada con 3GPP TS 25.401 Release 19."
+          }
+        ],
+        "observaciones": "Vigente, respuesta B. Un RNS se compone de un RNC y uno o más Node B. Node B es el nodo responsable de la transmisión y recepción radio en una o más celdas hacia/desde el equipo de usuario (UE). El VLR no realiza la autenticación criptográfica descrita (interviene el AuC); UELC no es un elemento UTRAN. Cotejado con ITIC Academy, bloque 43, comunicaciones móviles UMTS. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43, redes móviles UMTS/UTRAN; arquitectura cotejada con 3GPP TS 25.401 Release 19. Temas oficiales asociados: A1-123/A2-IV-15. La academia orienta la correspondencia curricular; la respuesta se contrastó con las especificaciones técnicas citadas."
+      }
     },
     {
       "id": 5926,
