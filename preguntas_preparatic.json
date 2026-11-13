@@ -324973,61 +324973,291 @@
         "Una familia de fuentes de caracteres"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "AWT significa Abstract Window Toolkit y es parte de Java para interfaces gráficas; Swing se construye sobre la arquitectura AWT, no al revés. La opción relativa a licencia IBM/Taligent y la de fuentes tipográficas no describen AWT. Respuesta B. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 4: Java SE y APIs; AWT/Swing se cotejan como contenido de Java A1-67 y A2-II.3. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 4: Java SE y APIs; AWT/Swing se cotejan como contenido de Java A1-67 y A2-II.3.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 4: Java SE y APIs; AWT/Swing se cotejan como contenido de Java A1-67 y A2-II.3. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+      },
+      "etiquetas": [
+        "Java",
+        "AWT",
+        "Abstract Window Toolkit",
+        "interfaces gráficas",
+        "Swing"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/8/docs/technotes/guides/awt/",
+            "referencia": "Oracle Java SE, guía oficial de Abstract Window Toolkit: AWT soporta programación de interfaces gráficas y proporciona componentes nativos, eventos, gráficos y herramientas de interfaz; Swing se construye sobre la arquitectura AWT."
+          },
+          {
+            "url": "https://docs.oracle.com/javase/8/docs/api/java/awt/package-summary.html",
+            "referencia": "Oracle Java SE API, paquete java.awt: contiene clases para crear interfaces de usuario y pintar gráficos/imágenes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 67: entorno de desarrollo Java."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.3: lenguajes y paradigmas actuales de programación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 4: Java SE y APIs; AWT/Swing se cotejan como contenido de Java A1-67 y A2-II.3."
+          }
+        ],
+        "observaciones": "AWT significa Abstract Window Toolkit y es parte de Java para interfaces gráficas; Swing se construye sobre la arquitectura AWT, no al revés. La opción relativa a licencia IBM/Taligent y la de fuentes tipográficas no describen AWT. Respuesta B. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 4: Java SE y APIs; AWT/Swing se cotejan como contenido de Java A1-67 y A2-II.3. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+      }
     },
     {
       "id": 6247,
       "bloque": 0,
       "tema": 0,
-      "texto": "En lenguaje Java, añadir metadatos al código fuente que están disponibles para la aplicación en tiempo de ejecución se consigue con una característica denominada:",
+      "texto": "En Java, ¿qué característica permite asociar metadatos a declaraciones y elementos del programa, pudiendo consultarlos en ejecución si se configura su retención como RUNTIME?",
       "opciones": [
         "CDATA.",
         "Closure.",
-        "Annotation.",
+        "Anotación (annotation).",
         "Enum."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se matiza la formulación: las anotaciones asocian metadatos a declaraciones y otros elementos del programa, pero no todas quedan disponibles en tiempo de ejecución. Para lectura mediante reflexión se requiere @Retention(RetentionPolicy.RUNTIME); por defecto la retención es CLASS. Respuesta C. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 4: Java SE y APIs; cotejo curricular A1-67/A2-II.3. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 4: Java SE y APIs; cotejo curricular A1-67/A2-II.3.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 4: Java SE y APIs; cotejo curricular A1-67/A2-II.3. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+      },
+      "etiquetas": [
+        "Java",
+        "anotaciones",
+        "metadatos",
+        "RetentionPolicy",
+        "reflexión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/annotation/RetentionPolicy.html",
+            "referencia": "Oracle Java SE 26 API: SOURCE se descarta, CLASS se graba en el class file sin obligación de conservarse en ejecución y RUNTIME permanece accesible por reflexión."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/26/docs/specs/jls/jls-9.html",
+            "referencia": "Java Language Specification 26, §9.6 y §9.6.4.2: declara las interfaces de anotación y las políticas de retención; una anotación solo queda disponible en ejecución por reflexión si se retiene con RUNTIME."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 67: entorno de desarrollo Java."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.3: lenguajes y paradigmas actuales de programación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 4: Java SE y APIs; cotejo curricular A1-67/A2-II.3."
+          }
+        ],
+        "observaciones": "Se matiza la formulación: las anotaciones asocian metadatos a declaraciones y otros elementos del programa, pero no todas quedan disponibles en tiempo de ejecución. Para lectura mediante reflexión se requiere @Retention(RetentionPolicy.RUNTIME); por defecto la retención es CLASS. Respuesta C. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información (2026.1), apartado 4: Java SE y APIs; cotejo curricular A1-67/A2-II.3. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+      }
     },
     {
       "id": 6248,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué sistema contiene datos almacenados en bruto?",
+      "texto": "¿Qué arquitectura de explotación de datos suele almacenar datos en bruto de diversas fuentes para explorarlos o procesarlos posteriormente?",
       "opciones": [
-        "Data Warehouse.",
+        "Data Warehouse, que contiene únicamente datos multidimensionales ya agregados.",
         "Data Lake.",
-        "Data Mesh.",
-        "Data Business Intelligence."
+        "Data Mesh, que es un motor de almacenamiento de objetos en bruto.",
+        "Business Intelligence, que es un formato de fichero para datos sin procesar."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se limita la afirmación: un data lake suele conservar datos en bruto de diversas fuentes antes o además de transformarlos; no significa que todos los datos permanezcan siempre sin procesar. Un data warehouse organiza datos integrados/estructurados para análisis y data mesh describe un enfoque sociotécnico distribuido, no un simple repositorio de datos crudos. Respuesta B. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 34 Business Intelligence y Big Data (2026.1), identifica expresamente data lake/data warehouse/data mesh en A1-75 y almacenes de datos/BI en A2-T4; la correspondencia vigente del temario se registra como A1-75/A2-II.4. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34 Business Intelligence y Big Data (2026.1), identifica expresamente data lake/data warehouse/data mesh en A1-75 y almacenes de datos/BI en A2-T4; la correspondencia vigente del temario se registra como A1-75/A2-II.4.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 34 Business Intelligence y Big Data (2026.1), identifica expresamente data lake/data warehouse/data mesh en A1-75 y almacenes de datos/BI en A2-T4; la correspondencia vigente del temario se registra como A1-75/A2-II.4. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+      },
+      "etiquetas": [
+        "data lake",
+        "datos en bruto",
+        "data warehouse",
+        "data mesh",
+        "analítica",
+        "plataforma de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://aws.amazon.com/what-is/data-cloud/",
+            "referencia": "Amazon Web Services, explicación de arquitecturas de datos: un data lake conserva datos en bruto y puede recibir datos de distintas fuentes/formas; contrasta con el data warehouse orientado a datos estructurados para usos analíticos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 75: tecnologías y sistemas de explotación de datos, data lake, data warehouse, lakehouse y data mesh."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.4: inteligencia de negocios, almacenes de datos, OLTP y OLAP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 34 Business Intelligence y Big Data (2026.1), identifica expresamente data lake/data warehouse/data mesh en A1-75 y almacenes de datos/BI en A2-T4; la correspondencia vigente del temario se registra como A1-75/A2-II.4."
+          }
+        ],
+        "observaciones": "Se limita la afirmación: un data lake suele conservar datos en bruto de diversas fuentes antes o además de transformarlos; no significa que todos los datos permanezcan siempre sin procesar. Un data warehouse organiza datos integrados/estructurados para análisis y data mesh describe un enfoque sociotécnico distribuido, no un simple repositorio de datos crudos. Respuesta B. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 34 Business Intelligence y Big Data (2026.1), identifica expresamente data lake/data warehouse/data mesh en A1-75 y almacenes de datos/BI en A2-T4; la correspondencia vigente del temario se registra como A1-75/A2-II.4. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+      }
     },
     {
       "id": 6249,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué se conoce por SHA-2?",
+      "texto": "¿Qué describe mejor SHA-2?",
       "opciones": [
-        "Una función de compresión",
-        "Un mecanismo de intercambio de claves",
-        "Una infraestructura de clave pública (PKI))",
-        "Un conjunto de funciones resumen"
+        "Una familia de algoritmos hash que produce resúmenes de longitud definida.",
+        "Un mecanismo de intercambio de claves públicas.",
+        "Una infraestructura de clave pública (PKI).",
+        "Un algoritmo de cifrado simétrico para proteger el contenido de un mensaje."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Se confirma que SHA-2 es una familia de funciones hash; no es intercambio de claves, PKI ni cifrado. Se corrige el paréntesis duplicado en la opción original y se distinguen los algoritmos concretos SHA-256/SHA-512 de la familia. Respuesta D. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma (2026.1), cubre función hash en A1-79 y seguridad criptográfica en A2-T13; la convocatoria vigente usa A2-II.13. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [
+          "A2-II-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma (2026.1), cubre función hash en A1-79 y seguridad criptográfica en A2-T13; la convocatoria vigente usa A2-II.13.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma (2026.1), cubre función hash en A1-79 y seguridad criptográfica en A2-T13; la convocatoria vigente usa A2-II.13. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+      },
+      "etiquetas": [
+        "SHA-2",
+        "funciones hash",
+        "resumen criptográfico",
+        "FIPS 180-4",
+        "SHA-256",
+        "SHA-512"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/Projects/Hash-Functions",
+            "referencia": "NIST CSRC, Hash Functions: FIPS 180-4 especifica la familia SHA-2 (SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224 y SHA-512/256) como funciones hash que generan resúmenes de mensajes."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/fips/180-4/upd1/final",
+            "referencia": "NIST FIPS 180-4, Secure Hash Standard: norma que especifica algoritmos hash para producir resúmenes de mensajes y detectar modificaciones."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 79: algoritmos de cifrado y función hash."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.13: seguridad física y lógica y herramientas en ciberseguridad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma (2026.1), cubre función hash en A1-79 y seguridad criptográfica en A2-T13; la convocatoria vigente usa A2-II.13."
+          }
+        ],
+        "observaciones": "Se confirma que SHA-2 es una familia de funciones hash; no es intercambio de claves, PKI ni cifrado. Se corrige el paréntesis duplicado en la opción original y se distinguen los algoritmos concretos SHA-256/SHA-512 de la familia. Respuesta D. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma (2026.1), cubre función hash en A1-79 y seguridad criptográfica en A2-T13; la convocatoria vigente usa A2-II.13. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+      }
     },
     {
       "id": 6250,
       "bloque": 0,
       "tema": 0,
-      "texto": "El certificado X.509 no:",
+      "texto": "Según la ficha oficial vigente de ITU-T, ¿qué afirmación describe correctamente la Recomendación X.509?",
       "opciones": [
-        "Fue definido por el antes denominado CCITT (actualmente ITU) en la recomendación X.509",
-        "En esta recomendación se define un modelo seguro para suministrar el servicio de autenticación a los usuarios del Directorio X.500 basado en criptografía de clave pública"
+        "La edición X.509 (10/2019), con componentes en vigor, define marcos de certificados de clave pública y de atributos.",
+        "La edición vigente define únicamente algoritmos de cifrado simétrico y no trata certificados.",
+        "X.509 es una función hash de la familia SHA-2.",
+        "La primera edición de 1988 sigue siendo la versión vigente y no ha sido sustituida."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "El reactivo original con “X.509 no:” estaba mal planteado: la atribución histórica al CCITT y la función de autenticación del Directorio podían ser verdaderas, de modo que no había una opción falsa inequívoca. Se sustituye por una afirmación verificable con el catálogo vigente: X.509 (2019), con sus componentes en vigor consultados en ITU-T, define marcos de certificados de clave pública y de atributos. La primera edición de 1988 como marco de autenticación del Directorio figura hoy como supersedida. Respuesta A. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma (2026.1), cubre certificados, claves y directorios X.500 en A1-80; el encaje jurídico vigente de identidad/firma se coteja con A2-I.6. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma (2026.1), cubre certificados, claves y directorios X.500 en A1-80; el encaje jurídico vigente de identidad/firma se coteja con A2-I.6.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma (2026.1), cubre certificados, claves y directorios X.500 en A1-80; el encaje jurídico vigente de identidad/firma se coteja con A2-I.6. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+      },
+      "etiquetas": [
+        "X.509",
+        "ITU-T",
+        "CCITT",
+        "certificados de clave pública",
+        "certificados de atributos",
+        "Directorio X.500"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/t-rec-x.509/en",
+            "referencia": "ITU-T Recommendation X.509, catálogo oficial: la versión X.509 (10/2019) y varios corrigenda/enmiendas figuran en vigor; la edición de 1988, “The Directory – Authentication framework”, está supersedida. La versión vigente se titula “Public-key and attribute certificate frameworks”."
+          },
+          {
+            "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=2999",
+            "referencia": "ITU-T, ficha histórica X.509 (11/1988): primera edición, aprobada el 25-11-1988 en el marco del CCITT, titulada “The Directory – Authentication framework”; estado actual: supersedida."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.509-201210-S%21%21PDF-E&lang=e&type=items",
+            "referencia": "Texto de Recomendación ITU-T X.509 | ISO/IEC 9594-8: define marcos para certificados de clave pública y de atributos, procedimientos de validación y revocación y componentes de PKI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 80: certificados digitales, claves, firma e identificación electrónica y directorios X.500."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema I.6: identidad y firma electrónica, eIDAS y DNI electrónico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma (2026.1), cubre certificados, claves y directorios X.500 en A1-80; el encaje jurídico vigente de identidad/firma se coteja con A2-I.6."
+          }
+        ],
+        "observaciones": "El reactivo original con “X.509 no:” estaba mal planteado: la atribución histórica al CCITT y la función de autenticación del Directorio podían ser verdaderas, de modo que no había una opción falsa inequívoca. Se sustituye por una afirmación verificable con el catálogo vigente: X.509 (2019), con sus componentes en vigor consultados en ITU-T, define marcos de certificados de clave pública y de atributos. La primera edición de 1988 como marco de autenticación del Directorio figura hoy como supersedida. Respuesta A. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma (2026.1), cubre certificados, claves y directorios X.500 en A1-80; el encaje jurídico vigente de identidad/firma se coteja con A2-I.6. El material académico solo ubica cobertura y no acredita por sí mismo la respuesta."
+      }
     },
     {
       "id": 6251,
