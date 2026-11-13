@@ -1,0 +1,20 @@
+const apply=require('./aplicar-lote.cjs');
+const quota='https://www.kernel.org/doc/html/latest/filesystems/quota.html';
+const androidNdk='https://developer.android.com/ndk/guides';
+const androidKotlin='https://developer.android.com/kotlin/overview';
+const nesc='https://github.com/tinyos/nesc';
+const pgIso='https://www.postgresql.org/docs/current/transaction-iso.html';
+const tsql='https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver17';
+const records=[
+ [5871,[60],['II-2','IV-1'],['Linux','cuotas de disco','usuarios','grupos','filesystem'],[{url:quota,referencia:'Linux Kernel Documentation, Quota subsystem: permite al administrador fijar límites de espacio y de inodos para usuarios y/o grupos, de forma independiente en cada sistema de ficheros.'}],null,'Vigente, respuesta A. El subsistema de cuotas de Linux permite limitar espacio usado e inodos por usuario o grupo en un sistema de ficheros; puede configurarse con límites blandos/duros y periodo de gracia.','vigente'],
+ [5872,[124],['II-2'],['Android','Android SDK','Android NDK','Java','Kotlin','C','C++'],[{url:androidNdk,referencia:'Android Developers, NDK: conjunto de herramientas para incorporar código C/C++ nativo a aplicaciones Android.'},{url:androidKotlin,referencia:'Android Developers, Kotlin overview: el desarrollo de Android se mantiene con soporte para Kotlin y Java.'}],null,'Corregida, respuesta D. El SDK de Android permite desarrollar con las APIs del framework en Java y Kotlin; el NDK permite incorporar código nativo C/C++. Se actualiza la opción para incluir Kotlin, ampliamente soportado actualmente, sin presentar Java como único lenguaje del SDK.','corregida'],
+ [5873,[117],['IV-13'],['TinyOS','nesC','sistemas embebidos','redes de sensores','IoT'],[{url:nesc,referencia:'Repositorio oficial tinyos/nesc: nesC es una extensión de C diseñada para reflejar el modelo de estructuración y ejecución de TinyOS; describe TinyOS como SO de nodos de redes de sensores con recursos limitados.'}],null,'Vigente, respuesta D (nesC). TinyOS fue diseñado para nodos de redes de sensores con recursos limitados; nesC es una extensión de C concebida para su modelo de componentes y concurrencia. Se trata de una tecnología histórica, pero la pregunta es factual y la clave continúa siendo correcta.','vigente'],
+ [5874,[64],['II-5'],['ANSI SQL-92','SQL','aislamiento de transacciones','Read Uncommitted','Read Committed','Repeatable Read','Serializable'],[{url:pgIso,referencia:'PostgreSQL Documentation, Transaction Isolation: identifica los cuatro niveles definidos por el estándar SQL: Read Uncommitted, Read Committed, Repeatable Read y Serializable.'}],null,'Corregida, respuesta A. Los cuatro niveles son Read Uncommitted, Read Committed, Repeatable Read y Serializable. Se corrige la ortografía inglesa de los nombres en la alternativa correcta; se conserva la clave.','corregida'],
+ [5875,[64],['II-5'],['Transact-SQL','T-SQL','SQL Server','lenguaje SQL'],[{url:tsql,referencia:'Microsoft Learn, Transact-SQL reference: T-SQL es el lenguaje central para trabajar con productos/servicios SQL de Microsoft y cuenta con una referencia propia; documenta además su conformidad con el estándar SQL.'}],null,'Corregida, respuesta B. Transact-SQL (T-SQL) es el dialecto y extensión de SQL utilizado por SQL Server y productos relacionados; incorpora sintaxis y características específicas de Microsoft, por lo que no es un SGBD ni una consulta SELECT por lotes. Se matiza la opción para definirlo con más precisión.','corregida']
+];
+const edits={
+ 5872:{opcion:[3,'Android SDK: Java y Kotlin con las API del framework Android; NDK: código nativo en C/C++.']},
+ 5874:{opcion:[0,'Lecturas no confirmadas (read uncommitted), lecturas confirmadas (read committed), lecturas repetibles (repeatable read), transacciones secuenciables (serializable).']},
+ 5875:{opcion:[1,'Un dialecto y extensión de SQL utilizado por Microsoft SQL Server y productos relacionados.']}
+};
+apply({numero:'1110',fecha:'2026-11-13',records,edits});
