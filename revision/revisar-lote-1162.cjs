@@ -1,0 +1,44 @@
+require('./aplicar-lote.cjs')({
+ numero:'1162',fecha:'2026-11-13',
+ records:[
+  [6131,[108],['IV-7'],['par trenzado','F/UTP','FTP','apantallamiento','ISO/IEC 11801'],[
+   {url:'https://webstore.iec.ch/en/publication/24578',referencia:'IEC 61156-9:2016, cableado de comunicaciones: trata cables con pantalla global y pares apantallados/no apantallados, incluida la notación X/UTP y U/FTP.'},
+   {url:'https://www.ieee802.org/3/bq/public/may13/flatman_01_0513_40GBT.pdf',referencia:'Contribución técnica del grupo IEEE 802.3bq sobre nomenclatura ISO/IEC 11801: ilustra U/UTP, F/UTP y S/FTP, y advierte que la norma de cableado no prescribe la construcción material completa.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 108: medios de transmisión.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema IV.7: medios guiados y elementos de cableado estructurado.'}
+  ],null,'Se mantiene C pero se usa el identificador actual F/UTP; FTP es una abreviatura comercial/informal y no precisa si el apantallamiento está en el cable completo o en cada par. SCP y HTP no son las designaciones del esquema ISO/IEC 11801; SSH es un protocolo.','corregida'],
+  [6132,[108],['IV-7'],['medios físicos','fibra monomodo','fibra multimodo','coste','microondas','ambigüedad'],[
+   {url:'https://www.itu.int/rec/T-REC-G.652/en',referencia:'UIT-T G.652, fibra monomodo: fija características y parámetros de transmisión, no una regla de precios relativos frente a multimodo.'},
+   {url:'https://www.itu.int/rec/T-REC-G.651.1-201811-I/en',referencia:'UIT-T G.651.1, fibra multimodo 50/125 µm: define atributos y aplicaciones de transmisión; no determina que su coste de adquisición o el coste del enlace completo sea siempre mayor o menor que el monomodo.'},
+   {url:'https://www.itu.int/rec/R-REC-P.530/en',referencia:'UIT-R P.530, propagación por trayectos terrenales de línea de vista: contempla efectos de lluvia, gases atmosféricos y otros fenómenos que afectan a enlaces de microondas.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 108: redes y medios de transmisión.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema IV.7: tipos y parámetros de medios guiados/no guiados.'}
+  ],null,'No se confirma la clave C como verdad universal. Las especificaciones UIT describen fibras monomodo y multimodo, pero el coste depende de qué se compara (cable, ópticas, instalación o enlace), prestaciones y mercado/fecha. Como el enunciado no fija ese alcance y los precios no son una propiedad normativa del medio, la afirmación de precio no permite una respuesta técnica única. Se conserva texto y clave originales como dato heredado y queda pendiente de ambigüedad; la opción D sobre afectación atmosférica a microondas es correcta.','pendiente_ambiguedad'],
+  [6133,[108],['IV-7'],['multiplexación por división en frecuencia','FDM','subbanda','ancho de banda asignado','bandas de guarda'],[
+   {url:'https://www.itu.int/dms_pub/itu-r/opb/rep/R-REP-M.2321-2014-PDF-E.pdf',referencia:'Informe UIT-R M.2321-0, §3: FDM coordina varios canales de radar mediante división de bandas asignadas en dos o más subbandas para evitar interferencia entre ellos.'},
+   {url:'https://technav.ieee.org/topic/frequency-division-multiplexing/',referencia:'IEEE Technology Navigator, FDM: asigna subportadoras/bandas a señales; en FDM analógico las bandas de guarda reducen la eficiencia espectral. Se usa como explicación conceptual complementaria.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 108: técnicas de transmisión y redes.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema IV.7: técnicas y parámetros de transmisión.'}
+  ],null,'La opción B es correcta en FDM convencional: cada señal ocupa simultáneamente su subbanda de frecuencias asignada; pueden reservarse bandas de guarda. Las opciones que asignan intervalos temporales describen TDM, no FDM.','vigente'],
+  [6134,[108],['IV-8'],['encaminador','direcciones de red','AppleTalk','OSI CLNS','TCP/IP','multiprotocolo'],[
+   {url:'https://www.rfc-editor.org/rfc/rfc1812.html',referencia:'IETF RFC 1812, requisitos para routers IPv4: define interfaces físicas/conectadas y la interfaz de red del router; el número de direcciones depende de cómo estén configurados los protocolos y las interfaces.'},
+   {url:'https://www.rfc-editor.org/rfc/rfc1243.html',referencia:'IETF RFC 1243, MIB de AppleTalk: define las direcciones AppleTalk de nodo y sus componentes de red/nodo.'},
+   {url:'https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/wan_smxl/configuration/15-s/wan-smxl-15-s-book/wan-cfg-smds.html',referencia:'Cisco IOS multiprotocol configuration: ejemplo de una interfaz configurada simultáneamente para IP, ISO CLNS y AppleTalk, con parámetros/direcciones específicos por protocolo.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 108: protocolos de encaminamiento e interconexión de redes.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema IV.8: protocolos y dispositivos de redes locales.'}
+  ],null,'Se mantiene la respuesta C (12) en el supuesto clásico de tres protocolos de red configurados y direccionados en cada una de las cuatro interfaces: 3 × 4. Se hace explícita esta premisa; en un router real no es un número universal, pues depende de protocolos habilitados, subinterfaces, direcciones secundarias y enlaces sin numerar. AppleTalk y CLNS se contextualizan como tecnologías históricas.','historica'],
+  [6135,[118],['IV-8'],['10BASE-T','hub','Ethernet','RJ-45','8P8C','conector modular'],[
+   {url:'https://www.cisco.com/c/en/us/td/docs/routers/access/hardware/notes/marcabl.html',referencia:'Cisco, especificaciones de cableado de routers modulares: identifica expresamente el conector 10BASE-T como RJ-45 y aporta el pinout Ethernet.'},
+   {url:'https://www.cisco.com/c/en/us/td/docs/routers/access/interfaces/nm/hardware/installation/guide/ConntEth.html',referencia:'Cisco, guía de interfaces Ethernet: documenta puertos 10BASE-T y su conexión con hubs/dispositivos Ethernet.'},
+   {url:'https://standards.ieee.org/ieee/802/10422/',referencia:'IEEE Std 802.3, estándar Ethernet activo, del que 10BASE-T forma parte.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Convocatoria GSI A1 2025, anexo I, tema 118: redes LAN y dispositivos de interconexión.'},
+   {url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Convocatoria GSI A2 2025, anexo IX, tema IV.8: redes locales, cableado y dispositivos.'}
+  ],null,'Se mantiene B. Se precisa que se trata del conector modular de ocho posiciones (8P8C), denominado habitualmente RJ-45 en documentación Ethernet; RJ-11 es un formato telefónico menor, RJ-37 no es la interfaz 10BASE-T y V.24 es una recomendación de interfaz ETD/DCE, no un conector Ethernet.','corregida']
+ ],
+ edits:{
+ 6131:{texto:'¿Cuál de las siguientes es una designación válida de cable de par trenzado según la nomenclatura de apantallamiento de ISO/IEC 11801?',opciones:['SCP.','HTP.','F/UTP (también denominado FTP de forma informal).','SSH.'],respuesta_correcta:2},
+ 6133:{texto:'En la multiplexación convencional por división en frecuencia (FDM), ¿cómo se separan las señales?',opciones:['Cada señal ocupa simultáneamente todo el ancho de banda disponible.','Cada señal ocupa simultáneamente la subbanda de frecuencias que se le asigna; pueden existir bandas de guarda.','Cada señal transmite en el intervalo de tiempo asignado usando todo el ancho de banda (TDM).','Cada señal transmite solo en su intervalo de tiempo y en su subbanda (combinación de TDM y FDM).'],respuesta_correcta:1},
+ 6134:{texto:'En un ejemplo clásico de router multiprotocolo, suponga cuatro interfaces físicas y que AppleTalk, OSI CLNS y TCP/IP están configurados y tienen dirección de red en cada interfaz. ¿Cuántas direcciones de nivel de red habrá en total?',opciones:['3.','4.','12.','1.'],respuesta_correcta:2},
+ 6135:{texto:'¿Qué conector modular se utiliza habitualmente para el puerto 10BASE-T de un hub Ethernet?',opciones:['RJ-11.','RJ-45 (conector de ocho posiciones, 8P8C).','RJ-37.','V.24.'],respuesta_correcta:1}
+ }
+});
