@@ -2,6 +2,8 @@
 
 Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1152 (IDs 6081–6085); también se resolvió el pendiente histórico ID 77. Acumulado: 6.080 preguntas examinadas individualmente; 5.977 verificadas (1.165 vigentes, 4.371 corregidas y 441 históricas); 103 pendientes documentadas (42 de fuente y 61 de ambigüedad); 6.043 sin revisar individualmente.
 
+**Publicación verificada:** el commit `95cce722f351385ce8d2592941650bf4bc7457ad` completó correctamente [Deploy GitHub Pages, run 43384024141](https://github.com/itic-academy/simulador-tic/actions/runs/43384024141). El registro del lote 1152, el inventario y este README respondieron HTTP 200; el registro contiene los IDs 6081–6085 y el inventario confirma 6.080 examinadas, 5.977 verificadas y 6.043 aún sin revisar individualmente.
+
 **Publicación verificada:** el commit `8f993768f5ca57e8ef280cb0aa3c754e14e943f2` completó correctamente [Deploy GitHub Pages, run 43383109763](https://github.com/itic-academy/simulador-tic/actions/runs/43383109763). El registro del lote 1151, el inventario y este README respondieron HTTP 200; el registro publicado contiene los IDs 6076–6080 y el inventario confirma 6.075 examinadas, 5.972 verificadas y 6.048 aún sin revisar individualmente.
 
 **Publicación verificada:** el commit `1d9b6194e54f93f37d287360fcd16b837b14848c` completó correctamente [Deploy GitHub Pages, run 43381962078](https://github.com/itic-academy/simulador-tic/actions/runs/43381962078). El registro del lote 1150, el inventario y este README respondieron HTTP 200; el registro publicado contiene los IDs 6071–6075 y el inventario confirma 6.070 examinadas, 5.967 verificadas y 6.053 aún sin revisar individualmente.
