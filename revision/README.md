@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1113 (IDs 5886–5890); también se resolvió el pendiente histórico ID 77. Acumulado: 5.885 preguntas examinadas individualmente; 5.784 verificadas (1.076 vigentes, 4.279 corregidas y 429 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.238 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1114 (IDs 5891–5895); también se resolvió el pendiente histórico ID 77. Acumulado: 5.890 preguntas examinadas individualmente; 5.789 verificadas (1.078 vigentes, 4.281 corregidas y 430 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.233 sin revisar individualmente.
+
+## Lote 1114 — 13 de noviembre de 2026
+
+IDs 5891–5895 revisados individualmente. Se contrastaron cuatro principios del Manifiesto Ágil; se acotó la pregunta sobre AGILD al conjunto de métodos reconocidos en el temario; se actualizó la grafía del rol Scrum Master, y se verificaron los elementos y reglas de conexión de los DFD. El [registro del lote 1114](cambios-lote-1114.json) conserva originales, ediciones, motivos, fuentes y clasificación.
+
+- **5891 — principios ágiles:** **corregida**, respuesta C. El manifiesto identifica software funcionando como medida principal del progreso; no lo es el avance de diseño sin software operativo. A1-37/A2-III-2.
+- **5892 — términos ágiles:** **corregida**, respuesta D (AGILD). Scrum, XP y DSDM están documentados como métodos/marcos; «AGILD» no es una denominación de esos marcos ni aparece en las fuentes consultadas. Se acotó la pregunta al ámbito de los métodos reconocidos en el temario, sin sostener una afirmación universal sobre cualquier posible uso del acrónimo. A1-37/A2-III-2.
+- **5893 — Scrum:** **corregida**, respuesta C (Scrum Master). La Guía Scrum 2020 asigna al Scrum Master causar la eliminación de impedimentos al progreso del Scrum Team; se normalizó la grafía del rol. A1-37/A2-III-2.
+- **5894 — DFD:** **vigente**, respuesta D (herencia). Los elementos de un DFD son procesos, flujos, almacenes y entidades externas; herencia corresponde a modelado orientado a objetos. A1-90/A2-III-2.
+- **5895 — conexiones DFD:** **vigente**, respuesta C (almacén–almacén). Dos almacenes no se conectan directamente; el flujo pasa a través de un proceso. A1-90/A2-III-2.
+
+Fuentes primarias y metodológicas: [principios del Manifiesto Ágil](https://agilemanifesto.org/principles), [Scrum Guide oficial, edición vigente 2020](https://scrumguides.org/scrum-guide.html), [historial oficial de versiones de Scrum Guide](https://scrumguides.org/download.html), [Agile Business Consortium, DSDM Agile Project Framework](https://www.agilebusiness.org/resource/the-dsdm-agile-project-framework/), [Kent Beck, Extreme Programming Explained (Pearson)](https://www.pearson.com/en-us/subject-catalog/p/extreme-programming-explained-embrace-change/P200000000118/9780321278654), [IRS, manual de análisis de sistemas, elementos DFD](https://www.irs.gov/irm/part2/irm_02-005-011). Convocatorias oficiales cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 37/88/90; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX III.2. Cotejo curricular: [ITIC Academy, bloque 15 «Metodologías ágiles y ciclo de vida», versión 2026](https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk): principios ágiles, Scrum/impedimentos, DFD y modelado de procesos; para el alcance del término AGILD se mantuvo una formulación acotada a ese marco de métodos, no una afirmación de inexistencia absoluta.
+
+Ejecutados revisar-lote-1114.cjs, academia-lote-1114.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas, 5.890 examinadas individualmente, 101 pendientes explícitas, 6.233 sin revisar individualmente y cero errores estructurales. La validación automática no se presenta como revisión de contenido restante.
 
 ## Lote 1113 — 13 de noviembre de 2026
 
