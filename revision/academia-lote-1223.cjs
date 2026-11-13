@@ -1,0 +1,12 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const file=path.join(__dirname,'cambios-lote-1223.json'),log=JSON.parse(fs.readFileSync(file,'utf8'));
+const matches={
+ 6436:[{url:'https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk',desc:'ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», edición 2026: amenazas, malware y prevención.'}],
+ 6437:[{url:'https://drive.google.com/file/d/15iokZokiVzk3qpTTQvMpDN0W27PL8tbv/view?usp=drivesdk',desc:'ITIC Academy, bloque 33 «E-learning y GIS», versión 2026.1: SIG y representación espacial; cotejo contextual. No se localizó un epígrafe dedicado específicamente a datums.'}],
+ 6438:[{url:'https://drive.google.com/file/d/15iokZokiVzk3qpTTQvMpDN0W27PL8tbv/view?usp=drivesdk',desc:'ITIC Academy, bloque 33 «E-learning y GIS», versión 2026.1: sistemas de información geográfica y representación espacial; cotejo curricular general.'}],
+ 6439:[{url:'https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk',desc:'ITIC Academy, bloque 50 «Videoconferencia, Single Sign-On y herramientas de trabajo colaborativo», edición 2026: gestión de identidades y SSO; cotejo curricular.'}],
+ 6440:[{url:'https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk',desc:'ITIC Academy, bloque 42 «Redes», actualización 2026: IPv6, protocolos de red y encaminamiento; cotejo curricular.'}]
+};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),list=matches[c.id];assert.ok(q&&list);assert.deepEqual(q,c.actualizada);const note='Cotejo curricular ITIC Academy/Drive: '+list.map(x=>x.desc).join(' ')+' La cobertura del material es orientativa; la respuesta se acredita con las fuentes técnicas primarias citadas.';q.clasificacion.bloque_academia=note;q.clasificacion.nota=(q.clasificacion.nota+' '+note).trim();q.comentarios=(q.comentarios+' '+note).trim();q.revision.observaciones=(q.revision.observaciones+' '+note).trim();c.actualizada=JSON.parse(JSON.stringify(q));}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(file,JSON.stringify(log,null,2)+'\n');console.log('Cotejados cinco registros con los temarios ITIC Academy de Drive.');

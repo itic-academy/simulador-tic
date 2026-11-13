@@ -1,12 +1,16 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1222 (IDs 6431–6435). Acumulado: 6430 preguntas examinadas individualmente; 6316 verificadas (1246 vigentes, 4612 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5693 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1223 (IDs 6436–6440). Acumulado: 6435 preguntas examinadas individualmente; 6321 verificadas (1247 vigentes, 4616 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5688 sin revisar individualmente.
 
 
 
 **Publicación verificada:** el commit de datos `a7489b2` (`a7489b2fba09dc5b126800dffe7f099d43ac9ae7)` completó correctamente [Deploy GitHub Pages, workflow run 43482543600](https://github.com/itic-academy/simulador-tic/actions/runs/43482543600). El workflow muestra estado `Success` y contiene el commit `a7489b2`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1217.json` e `inventario.json`; el registro servido contiene los IDs 6406–6410, todos corregidos. El inventario público confirma 6.405 examinadas, 6.291 verificadas (1.244 vigentes, 4.589 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.718 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `b054652` (`b05465205648a5d2a74965e9cf96385db816fbd1)` completó correctamente [Deploy GitHub Pages, workflow run 43484247774](https://github.com/itic-academy/simulador-tic/actions/runs/43484247774). El workflow terminó con estado `Success` e incluyó el commit `b054652`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1218.json` e `inventario.json`; el registro publicado contiene los IDs 6411–6415 con estados vigente, corregida, corregida, corregida y corregida. El inventario público confirma 6.410 examinadas, 6.296 verificadas (1.245 vigentes, 4.593 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.713 sin revisar individualmente.
+
+## Lote 1223 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6436–6440. Se precisó Loapi como troyano modular para Android, no limitado a DDoS; se reemplazó una definición simplista de datum geodésico por marco de referencia con superficie/elipsoide, origen y orientación; se definió UTM como proyección Transversa de Mercator por zonas; se afinó la federación de identidades con IdP/RP y dominios de confianza sin presentarla como necesariamente interdominio; y se comprobó que «Origin Options Header» no existe como cabecera de extensión IPv6 según RFC 8200/IANA. Se preservaron originales y se añadieron explicaciones, fuentes primarias, clasificación A1/A2 y cotejo ITIC Academy/Drive: bloques 48 (seguridad/malware), 33 (GIS), 50 (identidades/SSO) y 42 (redes/IPv6). Para datum y UTM no se fuerza un tema A2 ausente del anexo IX ni se afirma que el bloque de academia dedique un epígrafe específico al datum. Inventario local: 6435 examinadas, 6321 verificadas, 114 pendientes y 5688 sin revisar individualmente; inventario y verificador sin errores estructurales. Pendiente verificar la publicación de este lote.
 
 ## Lote 1222 — 13 de noviembre de 2026
 
