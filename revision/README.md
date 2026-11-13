@@ -1,12 +1,16 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1224 (IDs 6441–6445). Acumulado: 6440 preguntas examinadas individualmente; 6326 verificadas (1248 vigentes, 4620 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5683 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1225 (IDs 6446–6450). Acumulado: 6445 preguntas examinadas individualmente; 6331 verificadas (1249 vigentes, 4624 corregidas y 458 históricas); 114 pendientes documentadas (45 de fuente y 69 de ambigüedad); 5678 sin revisar individualmente.
 
 
 
 **Publicación verificada:** el commit de datos `a7489b2` (`a7489b2fba09dc5b126800dffe7f099d43ac9ae7)` completó correctamente [Deploy GitHub Pages, workflow run 43482543600](https://github.com/itic-academy/simulador-tic/actions/runs/43482543600). El workflow muestra estado `Success` y contiene el commit `a7489b2`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1217.json` e `inventario.json`; el registro servido contiene los IDs 6406–6410, todos corregidos. El inventario público confirma 6.405 examinadas, 6.291 verificadas (1.244 vigentes, 4.589 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.718 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `b054652` (`b05465205648a5d2a74965e9cf96385db816fbd1)` completó correctamente [Deploy GitHub Pages, workflow run 43484247774](https://github.com/itic-academy/simulador-tic/actions/runs/43484247774). El workflow terminó con estado `Success` e incluyó el commit `b054652`. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1218.json` e `inventario.json`; el registro publicado contiene los IDs 6411–6415 con estados vigente, corregida, corregida, corregida y corregida. El inventario público confirma 6.410 examinadas, 6.296 verificadas (1.245 vigentes, 4.593 corregidas y 458 históricas), 114 pendientes (45 de fuente y 69 de ambigüedad) y 5.713 sin revisar individualmente.
+
+## Lote 1225 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6446–6450. Se confirmó el registro de productos de MÉTRICA v3 con nombre, versión, estado y localización; se reformuló DOCSIS para distinguir claramente una técnica FDM de una recomendación/protocolo y de una arquitectura HFC; se acotó LAMP a su variante clásica PHP para evitar que las interpretaciones de P como Perl/Python vuelvan ambiguo el ítem; se corrigió «despligue» y se restringió la pregunta sobre despliegue al modelo de actividades de Dearle; y se reemplazó la clasificación engañosa de una herramienta workflow como comunicación asíncrona por su función de automatizar tareas bajo reglas. Se conservaron originales y se añadieron explicaciones, fuentes oficiales/técnicas, clasificación A1/A2 y cotejo del material ITIC Academy/Drive (bloques 39, 42, 30, 38 y 50). El material de academia sirve para situar el contenido en el temario y no sustituye las fuentes primarias. Inventario local: 6445 examinadas, 6331 verificadas, 114 pendientes y 5678 sin revisar individualmente; inventario y verificador sin errores estructurales. Pendiente verificar la publicación de este lote.
 
 ## Lote 1224 — 13 de noviembre de 2026
 
