@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1202.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 6331:{url:'https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk',desc:'ITIC Academy, bloque 27 Sistemas operativos, actualización 2026: fundamentos, procesos y administración; cotejo general del tema de interbloqueos.'},
+ 6332:{url:'https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk',desc:'ITIC Academy, bloque 17 Adquisición de sistemas y rentabilidad de inversiones, actualización 2026: evaluación de alternativas y decisión multicriterio.'},
+ 6333:{url:'https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk',desc:'ITIC Academy, bloque 30 Tecnologías de sistemas de información, actualización 2026: desarrollo web, APIs de cliente y JavaScript; cotejo curricular.'},
+ 6334:{url:'https://drive.google.com/file/d/1Nbz8x6yaWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk',desc:'ITIC Academy, bloque 43 Protocolos, actualización 2026: direccionamiento IP, IPv4/IPv6 y redes; cotejo curricular.'},
+ 6335:{url:'https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk',desc:'ITIC Academy, bloque 15 Metodologías ágiles y ciclos de vida, actualización 2026: Scrum, Kanban y coordinación ágil entre equipos.'}
+};
+const clean=s=>{s=(s||'').trim();const i=s.indexOf('Cotejo curricular de ITIC Academy:');return(i<0?s:s.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\.[^\n]*/,'').trim();};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&m,'Falta pregunta/mapeo '+c.id);q.clasificacion.bloque_academia=m.desc;const note='Cotejo curricular de ITIC Academy: '+m.desc+' El cotejo acredita cobertura temática del material cuando se localiza; no verifica por sí mismo la respuesta.';q.clasificacion.nota=(clean(q.clasificacion.nota)+' '+note).trim();q.comentarios=(clean(q.comentarios)+' '+note).trim();q.revision.observaciones=(clean(q.revision.observaciones)+' '+note).trim();if(!q.revision.fuentes.some(f=>f.url===m.url))q.revision.fuentes.push({url:m.url,referencia:'ITIC Academy/Drive: '+m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular Academy/Drive actualizado para IDs 6331–6335.');
