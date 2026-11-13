@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1191.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy={
+ 6276:{url:'https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk',desc:'ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles (temario 2026.1): generaciones y sistemas móviles; cobertura curricular general de DCS/GSM 1800 (A1-123/A2-IV.15).'},
+ 6277:{url:'https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5Z2N-W5oh82/view?usp=drivesdk',desc:'ITIC Academy, bloque 48 Seguridad en redes (temario 2026.1): mecanismos, criptografía y protocolos seguros; SSH relacionado con A1-125/A2-IV.12.'},
+ 6278:{url:'https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk',desc:'ITIC Academy, bloque 26 Hardware, servidores y CPD (temario 2026.1): continuidad, copias, recuperación y alta disponibilidad; relación temática con A1-128/A2-IV.3 e IV.6.'},
+ 6279:{url:'https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk',desc:'ITIC Academy, bloque 50 Videoconferencia, Single Sign-On y colaboración (temario 2026.1): códecs y videoconferencia, relacionado con A1-130/A2-IV.16.'},
+ 6280:{url:'https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk',desc:'ITIC Academy, bloque 50 Videoconferencia, Single Sign-On y colaboración (temario 2026.1): SSO e identidad federada, relacionado con A1-131/A2-IV.12.'}
+};
+const clean=s=>{s=(s||'').trim();const i=s.indexOf('Cotejo curricular de ITIC Academy:');return(i<0?s:s.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\.[^\n]*/,'').trim();};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=academy[c.id];assert.ok(q&&m,'Falta pregunta/mapeo '+c.id);q.clasificacion.bloque_academia=m.desc;const note='Cotejo curricular de ITIC Academy: '+m.desc+' Este cotejo solo documenta cobertura temática, no verifica la respuesta.';q.clasificacion.nota=(clean(q.clasificacion.nota)+' '+note).trim();q.comentarios=(clean(q.comentarios)+' '+note).trim();q.revision.observaciones=(clean(q.revision.observaciones)+' '+note).trim();if(!q.revision.fuentes.some(f=>f.url===m.url))q.revision.fuentes.push({url:m.url,referencia:'ITIC Academy: '+m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular ITIC Academy actualizado para IDs 6276–6280.');
