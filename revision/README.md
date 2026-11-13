@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1172 (IDs 6181–6185). Acumulado: 6.180 preguntas examinadas individualmente; 6.070 verificadas (1.190 vigentes, 4.435 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.943 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1173 (IDs 6186–6190). Acumulado: 6.185 preguntas examinadas individualmente; 6.075 verificadas (1.191 vigentes, 4.439 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.938 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `308cf86` (`308cf8699786fdeb8d5ce503657e39a55515cf53`) completó correctamente [Deploy GitHub Pages, workflow run 43409786383](https://github.com/itic-academy/simulador-tic/actions/runs/43409786383). El README, `cambios-lote-1172.json` e `inventario.json` respondieron HTTP 200; el contenido publicado confirma IDs 6181–6185, 6.180 examinadas, 6.070 verificadas y 5.943 aún sin revisar.
 
@@ -53,6 +53,22 @@ Estado parcial, no revisión completa del banco. Publicación desde main mediant
 **Publicación verificada:** el commit `1f1da8aa2ca275c94634dc08013d7a4a1a5c0b22` de main ejecutó correctamente [Deploy GitHub Pages, run 43374867546](https://github.com/itic-academy/simulador-tic/actions/runs/43374867546). README, `cambios-lote-1145.json` e `inventario.json` respondieron HTTP 200; el registro publicado contiene 6046–6050 y el inventario confirma 6.045 examinadas y 6.078 aún sin revisar individualmente.
 
 **Publicación verificada:** el commit `88681c4a463e6363a427457e58eba4b7e81c0b71` de main ejecutó correctamente [Deploy GitHub Pages, run 43373957520](https://github.com/itic-academy/simulador-tic/actions/runs/43373957520). Tras desplegar, README, `cambios-lote-1144.json` e `inventario.json` respondieron HTTP 200; el README servido identifica el lote 1144, el registro contiene los IDs 6041–6045 y el inventario confirma 6.040 revisadas y 6.083 aún sin revisar individualmente.
+
+## Lote 1173 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6186–6190 sobre SOAP/MTOM, arquitectura de tres capas, XPDL, organismos de estandarización de workflow/SOA y definición de SOAP. Cuatro quedan corregidas porque el reactivo original ofrecía varias respuestas verdaderas o confundía formato, notación, norma y entidad; una se mantiene vigente.
+
+- **6186 — MTOM:** **corregida**, respuesta D. El original tenía varias afirmaciones verdaderas; se convierte en pregunta específica sobre el mecanismo W3C. MTOM optimiza la transmisión de contenido binario en mensajes SOAP, apoyándose en XOP/MIME; no es un protocolo genérico de envío de archivos. A1-65/A2-III.12.
+- **6187 — arquitectura de tres capas:** **vigente**, respuesta C. Presentación, lógica de aplicación/negocio y datos/almacenamiento son las tres capas lógicas habituales. No implican necesariamente tres máquinas físicas distintas. A1-58/A2-II.6.
+- **6188 — XPDL:** **corregida**, respuesta D (incorrecta). XPDL es formato XML de intercambio de definiciones workflow asociado a WfMC y puede transportar disposición/coordenadas; no es la notación gráfica BPMN. BPMN facilita el modelado/comunicación visual. A1-58/A2-II.16.
+- **6189 — organismos y workflow:** **corregida**, respuesta D. Se elimina la confusión entre la iniciativa BPMI (cuyo trabajo se integró históricamente en OMG), OMG, OASIS y WfMC. La entidad ficticia «Microsoft-IBM Workflow Management Coalition» no es el nombre de WfMC, que es una coalición independiente centrada en workflow. A1-58/A2-II.16.
+- **6190 — SOAP:** **corregida**, respuesta B. SOAP 1.2 es un marco extensible de mensajería para intercambiar información estructurada con XML; no sustituye CORBA/RPC ni es un directorio de servicios. A1-65/A2-III.12.
+
+Fuentes primarias: [W3C SOAP MTOM](https://www.w3.org/TR/soap12-mtom/), [SOAP 1.2 Part 1](https://www.w3.org/TR/soap12-part1/) y [Web Services Architecture](https://www.w3.org/TR/ws-arch/); [Microsoft Azure Architecture Center, n-tier](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier); [WfMC XPDL](https://wfmc.org/xpdl/), [especificación XPDL 2.0](https://wfmc.org/vote_xpdl2/) y [OMG BPMN](https://www.omg.org/spec/BPMN/2.0/About-BPMN); [OMG FAQ sobre la integración de BPMI](https://www.omg.org/BPMI-OMG-Merger-FAQs.pdf); [WfMC, sitio institucional](https://wfmc.org/).
+
+Convocatorias cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 58 y 65; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas II.6, II.16 y III.12. Cotejo curricular ITIC Academy: [bloque 28 Arquitectura SOA, versión 2026.1](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk), apartados de SOAP y arquitectura multicapa; [bloque 50 de flujos de trabajo, versión 2026.1](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk), gestión documental y workflow. La academia se usa para encaje temático, no como fundamento técnico.
+
+Ejecutados revisar-lote-1173.cjs, academia-lote-1173.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas; 6.185 examinadas; 6.075 verificadas; 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.938 aún sin revisar individualmente; cero errores estructurales.
 
 ## Lote 1172 — 13 de noviembre de 2026
 
