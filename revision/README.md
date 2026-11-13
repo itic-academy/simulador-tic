@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1175 (IDs 6196–6200). Acumulado: 6.195 preguntas examinadas individualmente; 6.085 verificadas (1.193 vigentes, 4.447 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.928 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1176 (IDs 6201–6205). Acumulado: 6.200 preguntas examinadas individualmente; 6.090 verificadas (1.194 vigentes, 4.451 corregidas y 445 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.923 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `46f40c9` (`46f40c95858c798ac40ca9a9896ebc791a85cfb1`) completó correctamente [Deploy GitHub Pages, workflow run 43413276929](https://github.com/itic-academy/simulador-tic/actions/runs/43413276929). El README, `cambios-lote-1175.json` e `inventario.json` respondieron HTTP 200; el contenido publicado confirma IDs 6196–6200, 6.195 examinadas, 6.085 verificadas y 5.928 aún sin revisar.
 
@@ -59,6 +59,22 @@ Estado parcial, no revisión completa del banco. Publicación desde main mediant
 **Publicación verificada:** el commit `1f1da8aa2ca275c94634dc08013d7a4a1a5c0b22` de main ejecutó correctamente [Deploy GitHub Pages, run 43374867546](https://github.com/itic-academy/simulador-tic/actions/runs/43374867546). README, `cambios-lote-1145.json` e `inventario.json` respondieron HTTP 200; el registro publicado contiene 6046–6050 y el inventario confirma 6.045 examinadas y 6.078 aún sin revisar individualmente.
 
 **Publicación verificada:** el commit `88681c4a463e6363a427457e58eba4b7e81c0b71` de main ejecutó correctamente [Deploy GitHub Pages, run 43373957520](https://github.com/itic-academy/simulador-tic/actions/runs/43373957520). Tras desplegar, README, `cambios-lote-1144.json` e `inventario.json` respondieron HTTP 200; el README servido identifica el lote 1144, el registro contiene los IDs 6041–6045 y el inventario confirma 6.040 revisadas y 6.083 aún sin revisar individualmente.
+
+## Lote 1176 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6201–6205 sobre interfaces WfMC, ESB, patrones distribuidos, beneficios SOA y arquitectura de tres capas. Cuatro se corrigen (6201–6204); 6205 se mantiene vigente.
+
+- **6201 — interfaces WfMC:** **corregida**, respuesta D. El modelo oficial asigna Interfaz 1 al intercambio de definiciones, Interfaz 4 a interoperabilidad e Interfaz 5 a administración/monitorización; WAPI agrupa llamadas para las cinco áreas. El original daba más de una asociación falsa. A1-58/A2-II.16.
+- **6202 — Enterprise Service Bus:** **corregida**, respuesta D. Se pregunta por la infraestructura bus SOA que media proveedores y consumidores, enruta mensajes y puede adaptar protocolos/transformar formatos; se elimina la referencia imprecisa a una red WAN. A1-58/A2-II.6.
+- **6203 — patrones de sistemas distribuidos:** **corregida**, respuesta D. Cliente-servidor, P2P y proxy/caché aparecen en diseños distribuidos, aunque no son categorías taxonómicas del mismo nivel: proxy/caché suele ser un patrón intermediario dentro de otra arquitectura. A1-58/A2-II.6.
+- **6204 — beneficios de SOA:** **corregida**, respuesta B. SOA no busca acoplamiento fuerte; promueve interoperabilidad y reutilización. Reemplazar implementaciones sin afectar al proceso depende de conservar un contrato compatible, condición añadida al distractor. A1-58/A2-II.6.
+- **6205 — tres capas:** **vigente**, respuesta D. Presentación, lógica de negocio/aplicación y datos/acceso a datos son las responsabilidades habituales; capas lógicas no equivalen necesariamente a servidores físicos separados. A1-58/A2-II.6.
+
+Fuentes primarias: [WfMC Workflow Reference Model](https://wfmc.org/wp-content/uploads/2022/09/tc003v11.pdf), [WfMC Glossary](https://wfmc.org/wp-content/uploads/2022/09/TC-1011_term_glossary_v3.pdf); [IBM ESB: integración, mediación, enrutamiento y conversión](https://www.ibm.com/docs/en/bpms/8.0.x?topic=manager-connecting-services-through-enterprise-service-bus); [IBM modelos client/server y peer-to-peer](https://www.ibm.com/docs/en/txseries/10.1.0?topic=dtp-distributed-processes), [IETF RFC 9111, HTTP caching](https://www.rfc-editor.org/rfc/rfc9111.html); [OASIS SOA Reference Model](https://docs.oasis-open.org/soa-rm/v1.0/soa-rm.pdf) y [principios de arquitectura SOA](https://wiki-static.oasis-open.org/soa-rm/Architectural_Principles); [Microsoft Azure Architecture Center, estilos](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles) y [arquitectura n-tier](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier).
+
+Convocatorias cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), anexo I, tema 58; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas II.6 y II.16. Cotejo curricular ITIC Academy: [bloque 28 Arquitectura SOA](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk), secciones sobre ESB, principios SOA, comunicación y tres capas; [bloque 50 sobre workflow](https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk). La academia da encaje temático, no sustituye las especificaciones de las fuentes primarias.
+
+Ejecutados revisar-lote-1176.cjs, academia-lote-1176.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario esperado: 12.123 preguntas; 6.200 examinadas; 6.090 verificadas; 110 pendientes documentadas; 5.923 aún sin revisar; cero errores estructurales.
 
 ## Lote 1175 — 13 de noviembre de 2026
 
