@@ -1,0 +1,37 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const dir=__dirname,dataFile=path.join(dir,'..','preguntas_preparatic.json'),logFile=path.join(dir,'cambios-lote-1240.json');
+const inv=JSON.parse(fs.readFileSync(path.join(dir,'inventario.json'),'utf8'));
+const data=JSON.parse(fs.readFileSync(dataFile,'utf8')),log=JSON.parse(fs.readFileSync(logFile,'utf8'));
+const entries={
+ 6521:'Cotejo directo con ITIC Academy, bloque 38 «Análisis, diseño y construcción de sistemas de información», edición 2026: incluye UML y diagramas; encaje A1-88/A2-III.9.',
+ 6522:'Cotejo con ITIC Academy, bloque 39 «Calidad y mantenimiento», edición 2026, que integra modelos de calidad; se distingue el esquema histórico de agentes/resultados del marco EFQM vigente.',
+ 6523:'Cotejo con ITIC Academy, bloque 39 «Calidad y mantenimiento», edición 2026: recoge normas, modelos y evaluación de calidad; ISO 9001 refiere al sistema de gestión, no certifica producto.',
+ 6524:'Cotejo con ITIC Academy, bloque 17 «Adquisición de sistemas y rentabilidad de inversiones» (MÉTRICA v3) y bloque 38 «Análisis, diseño y construcción»: su mapa curricular se contrasta con los productos formales de ASI del manual público oficial.',
+ 6525:'Cotejo con ITIC Academy, bloque 27 «Sistemas operativos», edición 2026: z/OS se incluye en A1-62 y A2-T2; para el límite exacto del nombre JCL prevalece la documentación IBM.'
+};
+for(const [key,note] of Object.entries(entries)){
+ const id=Number(key),q=data.preguntas.find(x=>x.id===id),c=log.cambios.find(x=>x.id===id);assert.ok(q&&c,`Falta ${id}`);
+ q.clasificacion.bloque_academia=note;q.clasificacion.nota=note;c.actualizada.clasificacion.bloque_academia=note;c.actualizada.clasificacion.nota=note;
+ c.actualizada.revision.fuentes=structuredClone(q.revision.fuentes);c.actualizada.revision.observaciones=q.revision.observaciones;
+}
+fs.writeFileSync(dataFile,JSON.stringify(data,null,2)+'\n');fs.writeFileSync(logFile,JSON.stringify(log,null,2)+'\n');
+
+const file=path.join(dir,'README.md');let text=fs.readFileSync(file,'utf8');
+const fmt=n=>n.toLocaleString('es-ES'),examined=inv.total-inv.estados.sin_revisar,verified=inv.estados.vigente+inv.estados.corregida+inv.estados.historica,pending=inv.estados.pendiente_fuente+inv.estados.pendiente_ambiguedad;
+text=text.replace(/Último lote secuencial:.*?sin revisar individualmente\./,`Último lote secuencial: 1240 (IDs 6521–6525). Acumulado: ${fmt(examined)} preguntas examinadas individualmente; ${fmt(verified)} verificadas (${fmt(inv.estados.vigente)} vigentes, ${fmt(inv.estados.corregida)} corregidas y ${fmt(inv.estados.historica)} históricas); ${fmt(pending)} pendientes documentadas (${fmt(inv.estados.pendiente_fuente)} de fuente y ${fmt(inv.estados.pendiente_ambiguedad)} de ambigüedad); ${fmt(inv.estados.sin_revisar)} sin revisar individualmente.`);
+const section=`## Lote 1240 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6521–6525. Se precisó el diagrama UML de visión global de interacciones; se sustituyó una descripción desfasada del modelo EFQM por una comparación explícita entre su estructura histórica de Agentes/Resultados y el marco vigente; se aclaró que ISO 9001 certifica sistemas de gestión mediante entidades independientes, no productos ni por ISO; se contrastaron los productos de ASI en MÉTRICA v3 y se corrigió el conjunto de opciones de JCL, que no incluía el límite máximo válido de ocho caracteres. Se conservaron originales, explicaciones, clasificación y fuentes; se cotejó el temario de ITIC Academy en Drive y los programas oficiales A1/A2.
+
+- **6521 — UML, interacción global:** respuesta corregida A. El diagrama de interacción global organiza interacciones/usos de interacción con flujo similar al de actividad. A1-88/A2-III.9; Academy, bloque 38.
+- **6522 — EFQM:** respuesta corregida A. El modelo inicial separaba agentes facilitadores y resultados; el marco vigente se organiza en Dirección, Ejecución y Resultados. Se puntualiza que 14 dirigentes firmaron la carta de intención de 1988 y EFQM se constituyó en 1989 con 67 empresas. A1-98/A2-III.13; Academy, bloque 39.
+- **6523 — ISO 9001:** respuesta corregida B. La certificación de tercera parte evalúa el sistema de gestión de calidad de la organización, no certifica cada producto ni la emite ISO. A1-98/A2-III.13; Academy, bloque 39.
+- **6524 — MÉTRICA v3, ASI:** respuesta corregida D. La especificación de interfaz de usuario no es exclusiva del análisis OO; ASI 8.2, de perfiles y diálogos, es específica del análisis estructurado. A1-95/A2-III.2/III.9; Academy, bloques 17 y 38.
+- **6525 — nombre de job JCL:** respuesta corregida D (8 caracteres). La opción válida faltaba en el original; el nombre de job z/OS admite de uno a ocho caracteres bajo las restricciones de IBM. A1-62/A2-II.2; Academy, bloque 27.
+
+Fuentes: [OMG UML 2.5.1](https://www.omg.org/spec/UML/2.5.1/PDF) y [resumen oficial de diagramas UML](https://www.omg.org/UML/what-is-uml.htm); [historia oficial EFQM](https://efqm.org/our-history/) y [modelo EFQM vigente](https://efqm.org/the-efqm-model/); [ISO, certificación](https://www.iso.org/certification.html) y [qué es ISO 9001](https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100304.pdf); [MÉTRICA v3, Análisis del Sistema de Información](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Aad870327-56b7-4dfa-af15-e62222f45b90/METRICA_V3_Analisis_del_Sistema_de_Informacion.pdf); [IBM z/OS, sentencia JOB](https://www.ibm.com/docs/en/zos/3.1.0?topic=jobs-job-statement) y [reglas del campo nombre JCL](https://www.ibm.com/docs/en/zos-basic-skills?topic=jcl-coding-syntax-rules-name-field). Correspondencias oficiales: [A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo curricular Drive: [ITIC Academy, bloque 38](https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk), [bloque 39](https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk), [bloque 17](https://drive.google.com/file/d/17A2kewcUQkmIrI3N0MHp8fq8WT2Nv9P3/view?usp=drivesdk) y [bloque 27](https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk). El programa oficial y los documentos primarios prevalecen sobre resúmenes académicos.
+
+Inventario local: ${fmt(examined)} examinadas; ${fmt(verified)} verificadas (${fmt(inv.estados.vigente)} vigentes, ${fmt(inv.estados.corregida)} corregidas y ${fmt(inv.estados.historica)} históricas); ${fmt(pending)} pendientes (${fmt(inv.estados.pendiente_fuente)} de fuente y ${fmt(inv.estados.pendiente_ambiguedad)} de ambigüedad); ${fmt(inv.estados.sin_revisar)} sin revisar; errores estructurales ${inv.errores_estructurales.length}. Ejecutados inventario.cjs, verificar.cjs y git diff --check. Las restantes ${fmt(inv.estados.sin_revisar)} preguntas continúan idénticas al original; el inventario no se presenta como revisión de contenido. Pendiente verificar la publicación del lote.
+
+`;
+assert.ok(text.includes('## Lote 1239 —'));assert.ok(!text.includes('## Lote 1240 —'));const at=text.indexOf('## Lote 1239 —');text=text.slice(0,at)+section+text.slice(at);fs.writeFileSync(file,text);console.log(`README actualizado: ${examined} examinadas, ${verified} verificadas, ${pending} pendientes; ${inv.estados.sin_revisar} sin revisar.`);
