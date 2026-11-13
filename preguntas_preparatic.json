@@ -317190,71 +317190,301 @@
       "id": 6116,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuales de los elementos enumerados a continuación se consideran necesarios en un esquema seguro de acceso remoto a la red de una organización: 1)Acceso a una plataforma de firma digital para los usuarios de la organización. 2)Mecanismos de control de acceso a la red: portales cautivos, uso del protocolo 802.1X, etc. 3)Autenticación de usuarios y autorización: asegura la identidad y autorización de un usuario mediante el uso de protocolos de autenticación. 4)Protección de la conexión e integridad del tráfico: una vez que se establece una sesión, es necesario asegurar la confidencialidad e integridad del tráfico intercambiado entre las partes mediante cifrado. La respuesta correcta, que contiene los tres elementos necesarios es:",
+      "texto": "En una arquitectura de acceso remoto que combina control de acceso a la red, gestión de identidad/autorización y protección del canal, ¿qué conjunto recoge esos tres tipos de control? La firma digital no es un requisito técnico genérico de acceso remoto.",
       "opciones": [
-        "1, 2, 3.",
-        "1, 2, 4.",
-        "1, 3, 4.",
-        "2, 3, 4."
+        "1, 2 y 3.",
+        "1, 2 y 4.",
+        "1, 3 y 4.",
+        "2, 3 y 4."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se conserva la opción D (2, 3 y 4), pero se acota: son controles relevantes en una arquitectura que incorpora control de acceso a la red, identidad/autorización y protección del canal. La firma digital de usuarios no es un requisito genérico de acceso remoto. 802.1X y los portales cautivos se aplican en contextos de acceso concretos; ninguno es requisito universal de toda VPN. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, actualización 2026: encaje temático de controles de acceso remoto y seguridad de red. El documento orienta el temario; la guía NIST determina qué controles son aplicables y evita presentar 802.1X o firma electrónica como requisitos universales. Temas oficiales asociados: A1-125/A2-IV-12. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, actualización 2026: encaje temático de controles de acceso remoto y seguridad de red. El documento orienta el temario; la guía NIST determina qué controles son aplicables y evita presentar 802.1X o firma electrónica como requisitos universales.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, actualización 2026: encaje temático de controles de acceso remoto y seguridad de red. El documento orienta el temario; la guía NIST determina qué controles son aplicables y evita presentar 802.1X o firma electrónica como requisitos universales. Temas oficiales asociados: A1-125/A2-IV-12. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido."
+      },
+      "etiquetas": [
+        "acceso remoto",
+        "autenticación",
+        "autorización",
+        "VPN",
+        "control de acceso"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.nist.gov/publications/guide-enterprise-telework-remote-access-and-bring-your-own-device-byod-security",
+            "referencia": "NIST SP 800-46 Rev. 2, guía oficial de teletrabajo y acceso remoto: recomienda planificar la autenticación, autorización/control de acceso, proteger comunicaciones y asegurar los clientes; los controles concretos dependen de la arquitectura."
+          },
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-46r2.pdf",
+            "referencia": "NIST SP 800-46 Rev. 2, §§2–3: métodos de acceso remoto (túneles, portales, escritorio y aplicación), mecanismos de autenticación, autorización y protección criptográfica; no establece firma digital ni 802.1X como requisito universal."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4301.html",
+            "referencia": "IETF RFC 4301, arquitectura de seguridad IP: IPsec ofrece servicios de seguridad a nivel IP, usados por algunas arquitecturas VPN; la técnica depende de la solución elegida."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 125: seguridad en redes, control de accesos y técnicas criptográficas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.12: seguridad perimetral, control de accesos, protocolos seguros y VPN."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, actualización 2026: encaje temático de controles de acceso remoto y seguridad de red. El documento orienta el temario; la guía NIST determina qué controles son aplicables y evita presentar 802.1X o firma electrónica como requisitos universales."
+          }
+        ],
+        "observaciones": "Se conserva la opción D (2, 3 y 4), pero se acota: son controles relevantes en una arquitectura que incorpora control de acceso a la red, identidad/autorización y protección del canal. La firma digital de usuarios no es un requisito genérico de acceso remoto. 802.1X y los portales cautivos se aplican en contextos de acceso concretos; ninguno es requisito universal de toda VPN. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, actualización 2026: encaje temático de controles de acceso remoto y seguridad de red. El documento orienta el temario; la guía NIST determina qué controles son aplicables y evita presentar 802.1X o firma electrónica como requisitos universales. Temas oficiales asociados: A1-125/A2-IV-12. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido."
+      }
     },
     {
       "id": 6117,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál de las siguientes es una medida de centralidad en una red social:",
+      "texto": "En el análisis de centralidad de nodos de una red social, ¿cuál de las siguientes es una medida de centralidad?",
       "opciones": [
-        "Grado (degree)",
-        "Cercanía (closeness)",
-        "Intermediación (betweenness)",
-        "Todas son medidas de centralidad"
+        "Grado (degree).",
+        "Cercanía (closeness).",
+        "Intermediación (betweenness).",
+        "Todas son medidas de centralidad de nodos."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La respuesta D es correcta: grado, cercanía e intermediación son medidas de centralidad de nodos, basadas respectivamente en conexiones directas, distancias a otros nodos y participación en caminos geodésicos. Se precisa “de nodos” para distinguirlas de índices de centralización del grafo. La asociación con los temas oficiales de redes sociales es contextual; el temario no enumera esas fórmulas. Cotejo curricular ITIC Academy: ITIC Academy, bloque 50 Videoconferencia, SSO y herramientas de trabajo colaborativo, temario 2026: contexto de herramientas colaborativas y redes sociales. No se encontró en el contenido curricular consultado una exposición de fórmulas de centralidad; estas se acreditan con el artículo original de Freeman. Temas oficiales asociados: A1-133/A2-II-16. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido.",
+      "clasificacion": {
+        "A1": [
+          "A1-133"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 50 Videoconferencia, SSO y herramientas de trabajo colaborativo, temario 2026: contexto de herramientas colaborativas y redes sociales. No se encontró en el contenido curricular consultado una exposición de fórmulas de centralidad; estas se acreditan con el artículo original de Freeman.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 50 Videoconferencia, SSO y herramientas de trabajo colaborativo, temario 2026: contexto de herramientas colaborativas y redes sociales. No se encontró en el contenido curricular consultado una exposición de fórmulas de centralidad; estas se acreditan con el artículo original de Freeman. Temas oficiales asociados: A1-133/A2-II-16. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido."
+      },
+      "etiquetas": [
+        "redes sociales",
+        "análisis de redes",
+        "centralidad",
+        "grado",
+        "cercanía",
+        "intermediación"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1016/0378-8733(78)90021-7",
+            "referencia": "Freeman, L. C. (1978/1979), “Centrality in social networks: Conceptual clarification”, Social Networks 1(3), 215–239: desarrolla las medidas de grado, cercanía e intermediación como concepciones distintas de centralidad de posiciones/nodos."
+          },
+          {
+            "url": "https://www.albany.edu/~ravi/pdfs/freeman_1978.pdf",
+            "referencia": "Texto del artículo original de Freeman: define degree y expone closeness y betweenness como medidas distintas de centralidad de nodos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 133: herramientas de trabajo colaborativo y redes sociales; encaje curricular contextual, no temario formal de teoría de grafos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema II.16: trabajo colaborativo y redes sociales; asociación temática, no equivalencia a un epígrafe de análisis de redes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 50 Videoconferencia, SSO y herramientas de trabajo colaborativo, temario 2026: contexto de herramientas colaborativas y redes sociales. No se encontró en el contenido curricular consultado una exposición de fórmulas de centralidad; estas se acreditan con el artículo original de Freeman."
+          }
+        ],
+        "observaciones": "La respuesta D es correcta: grado, cercanía e intermediación son medidas de centralidad de nodos, basadas respectivamente en conexiones directas, distancias a otros nodos y participación en caminos geodésicos. Se precisa “de nodos” para distinguirlas de índices de centralización del grafo. La asociación con los temas oficiales de redes sociales es contextual; el temario no enumera esas fórmulas. Cotejo curricular ITIC Academy: ITIC Academy, bloque 50 Videoconferencia, SSO y herramientas de trabajo colaborativo, temario 2026: contexto de herramientas colaborativas y redes sociales. No se encontró en el contenido curricular consultado una exposición de fórmulas de centralidad; estas se acreditan con el artículo original de Freeman. Temas oficiales asociados: A1-133/A2-II-16. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido."
+      }
     },
     {
       "id": 6118,
       "bloque": 0,
       "tema": 0,
-      "texto": "10BaseT es:",
+      "texto": "Según IEEE 802.3i-1990, 10BASE-T identifica:",
       "opciones": [
-        "Un tipo de modem primario",
-        "Una variante del estándar IEEE 802.3 para trabajar sobre pares trenzados",
-        "Un método de acceso en contención",
-        "Un método de acceso por paso de testigo"
+        "Un tipo de módem primario.",
+        "Ethernet de 10 Mb/s sobre medio de par trenzado.",
+        "Un método de acceso por contención distinto de CSMA/CD.",
+        "Un método de acceso por paso de testigo."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se conserva la opción B y se precisa que 10BASE-T es la especificación Ethernet de 10 Mb/s sobre par trenzado, normalizada originalmente en IEEE 802.3i-1990 e integrada después en la familia IEEE 802.3. No es un método de acceso al medio ni un módem. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes, actualización 2026: LAN y medios de transmisión; adscripción curricular general. La especificación precisa se contrasta con IEEE 802.3i. Temas oficiales asociados: A1-118/A2-IV-8. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes, actualización 2026: LAN y medios de transmisión; adscripción curricular general. La especificación precisa se contrasta con IEEE 802.3i.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes, actualización 2026: LAN y medios de transmisión; adscripción curricular general. La especificación precisa se contrasta con IEEE 802.3i. Temas oficiales asociados: A1-118/A2-IV-8. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido."
+      },
+      "etiquetas": [
+        "Ethernet",
+        "10BASE-T",
+        "IEEE 802.3i",
+        "par trenzado",
+        "10 Mbit/s"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.3i/1068/",
+            "referencia": "IEEE Std 802.3i-1990, título oficial: MAU de par trenzado y medio de banda base tipo 10BASE-T, dentro de Ethernet de 10 Mb/s."
+          },
+          {
+            "url": "https://technav.ieee.org/topic/ethernet/",
+            "referencia": "IEEE Technology Navigator: 10BASE-T identifica Ethernet de 10 Mb/s sobre par trenzado; IEEE 802.3 especifica la familia Ethernet."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 118: LAN, medios de transmisión, métodos de acceso y dispositivos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.8: redes locales, protocolos y técnicas de transmisión."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 Redes, actualización 2026: LAN y medios de transmisión; adscripción curricular general. La especificación precisa se contrasta con IEEE 802.3i."
+          }
+        ],
+        "observaciones": "Se conserva la opción B y se precisa que 10BASE-T es la especificación Ethernet de 10 Mb/s sobre par trenzado, normalizada originalmente en IEEE 802.3i-1990 e integrada después en la familia IEEE 802.3. No es un método de acceso al medio ni un módem. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes, actualización 2026: LAN y medios de transmisión; adscripción curricular general. La especificación precisa se contrasta con IEEE 802.3i. Temas oficiales asociados: A1-118/A2-IV-8. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido."
+      }
     },
     {
       "id": 6119,
       "bloque": 0,
       "tema": 0,
-      "texto": "En las transmisiones de señales eléctricas, a las perturbaciones producidas en sistemas no lineales y que consisten en la aparición en el receptor de nuevas componentes espectrales de segundo orden se las llama:",
+      "texto": "Cuando dos señales de frecuencias f1 y f2 atraviesan una no linealidad y aparecen componentes nuevas en f1 + f2 y |f1 − f2|, el fenómeno se denomina:",
       "opciones": [
-        "Distorsión no lineal",
-        "Distorsión lineal de segundo orden",
-        "Intermodulación",
-        "Paradiafonía"
+        "Distorsión lineal.",
+        "Distorsión armónica exclusivamente.",
+        "Intermodulación de segundo orden.",
+        "Paradiafonía."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se conserva la opción C, pero se hace explícita la mezcla no lineal de dos o más señales: sus productos de intermodulación de segundo orden aparecen en frecuencias suma y diferencia (|f1 ± f2|). “Distorsión no lineal” es la categoría general; “paradiafonía” es acoplamiento entre pares, no este fenómeno. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes, actualización 2026: marco curricular de transmisión y fenómenos asociados a redes; no se usa como definición de productos IM2, que se comprueba en UIT-R SM.1446. Temas oficiales asociados: A1-108/A2-IV-7. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes, actualización 2026: marco curricular de transmisión y fenómenos asociados a redes; no se usa como definición de productos IM2, que se comprueba en UIT-R SM.1446.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes, actualización 2026: marco curricular de transmisión y fenómenos asociados a redes; no se usa como definición de productos IM2, que se comprueba en UIT-R SM.1446. Temas oficiales asociados: A1-108/A2-IV-7. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido."
+      },
+      "etiquetas": [
+        "intermodulación",
+        "no linealidad",
+        "productos de segundo orden",
+        "frecuencias suma y diferencia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/dms_pubrec/itu-r/rec/sm/R-REC-SM.1446-0-200004-I%21%21PDF-E.pdf",
+            "referencia": "Recomendación UIT-R SM.1446, §1: los productos de intermodulación nacen en no linealidades; para dos señales, los productos de segundo orden aparecen en |f1 ± f2|."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 108: redes de telecomunicaciones y medios de transmisión."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.7: medios de transmisión guiados y no guiados y parámetros significativos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 Redes, actualización 2026: marco curricular de transmisión y fenómenos asociados a redes; no se usa como definición de productos IM2, que se comprueba en UIT-R SM.1446."
+          }
+        ],
+        "observaciones": "Se conserva la opción C, pero se hace explícita la mezcla no lineal de dos o más señales: sus productos de intermodulación de segundo orden aparecen en frecuencias suma y diferencia (|f1 ± f2|). “Distorsión no lineal” es la categoría general; “paradiafonía” es acoplamiento entre pares, no este fenómeno. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes, actualización 2026: marco curricular de transmisión y fenómenos asociados a redes; no se usa como definición de productos IM2, que se comprueba en UIT-R SM.1446. Temas oficiales asociados: A1-108/A2-IV-7. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido."
+      }
     },
     {
       "id": 6120,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación con la transmisión en frecuencias radioeléctricas, el medio de transmisión influye en la propagación a través de un conjunto de fenómenos físicos. ¿Cuál NO es uno de ellos?",
+      "texto": "¿Cuál de estos términos designa específicamente el ensanchamiento de pulsos ópticos en fibra por la dependencia de la velocidad de grupo con la longitud de onda, y no uno de los mecanismos básicos que suelen enumerarse para la propagación radioeléctrica?",
       "opciones": [
-        "Reflexión",
-        "Dispersión cromática",
-        "Difracción",
-        "Absorción"
+        "Reflexión.",
+        "Dispersión cromática en fibra óptica.",
+        "Difracción.",
+        "Absorción radioeléctrica."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene B solo tras reformular el alcance. La dispersión cromática es el ensanchamiento de pulsos ópticos por dependencia de la velocidad de grupo con la longitud de onda en fibra; reflexión, difracción y absorción son fenómenos habituales que afectan enlaces radioeléctricos. No es correcto afirmar que la propagación radioeléctrica no pueda presentar ningún efecto dispersivo: UIT-R P.676 trata efectos de dispersión atmosférica. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes, actualización 2026: encaje curricular en medios y propagación. No se atribuye al material una exclusión general de dispersión radioeléctrica; el contraste se hace con UIT-R P.676 y la definición de fibra de UIT-T G.650.1. Temas oficiales asociados: A1-108/A2-IV-7. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes, actualización 2026: encaje curricular en medios y propagación. No se atribuye al material una exclusión general de dispersión radioeléctrica; el contraste se hace con UIT-R P.676 y la definición de fibra de UIT-T G.650.1.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes, actualización 2026: encaje curricular en medios y propagación. No se atribuye al material una exclusión general de dispersión radioeléctrica; el contraste se hace con UIT-R P.676 y la definición de fibra de UIT-T G.650.1. Temas oficiales asociados: A1-108/A2-IV-7. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido."
+      },
+      "etiquetas": [
+        "propagación radioeléctrica",
+        "reflexión",
+        "difracción",
+        "absorción",
+        "dispersión cromática",
+        "fibra óptica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-13",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/R-REC-P.526/en",
+            "referencia": "Recomendación UIT-R P.526-16 (11/2025), vigente: propagación radioeléctrica por difracción."
+          },
+          {
+            "url": "https://www.itu.int/rec/R-REC-P.676-13-202208-I/en",
+            "referencia": "Recomendación UIT-R P.676-13, vigente: atenuación por gases y efectos relacionados; también contempla efectos dispersivos en propagación radioeléctrica. Por ello no se afirma que la radio carezca de toda dispersión."
+          },
+          {
+            "url": "https://www.itu.int/epublications/publication/itu-t-g-650-1-2024-01-definitions-and-test-methods-for-linear-deterministic-attributes-of-single-mode-fibre-and-cable",
+            "referencia": "Recomendación UIT-T G.650.1 (01/2024), §3.4.2.1: define la dispersión cromática como ensanchamiento de un pulso de luz en fibra óptica por las distintas velocidades de grupo de sus longitudes de onda."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, anexo I, tema 108: medios de transmisión y redes de telecomunicaciones."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, anexo IX, tema IV.7: medios guiados/no guiados y parámetros de transmisión."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 42 Redes, actualización 2026: encaje curricular en medios y propagación. No se atribuye al material una exclusión general de dispersión radioeléctrica; el contraste se hace con UIT-R P.676 y la definición de fibra de UIT-T G.650.1."
+          }
+        ],
+        "observaciones": "Se mantiene B solo tras reformular el alcance. La dispersión cromática es el ensanchamiento de pulsos ópticos por dependencia de la velocidad de grupo con la longitud de onda en fibra; reflexión, difracción y absorción son fenómenos habituales que afectan enlaces radioeléctricos. No es correcto afirmar que la propagación radioeléctrica no pueda presentar ningún efecto dispersivo: UIT-R P.676 trata efectos de dispersión atmosférica. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42 Redes, actualización 2026: encaje curricular en medios y propagación. No se atribuye al material una exclusión general de dispersión radioeléctrica; el contraste se hace con UIT-R P.676 y la definición de fibra de UIT-T G.650.1. Temas oficiales asociados: A1-108/A2-IV-7. El cotejo académico orienta la ubicación; las fuentes oficiales/técnicas citadas justifican el contenido."
+      }
     },
     {
       "id": 6121,
