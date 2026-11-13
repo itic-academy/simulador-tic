@@ -1,6 +1,20 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1120 (IDs 5921–5925); también se resolvió el pendiente histórico ID 77. Acumulado: 5.920 preguntas examinadas individualmente; 5.819 verificadas (1.099 vigentes, 4.291 corregidas y 429 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.203 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1121 (IDs 5926–5930); también se resolvió el pendiente histórico ID 77. Acumulado: 5.925 preguntas examinadas individualmente; 5.824 verificadas (1.103 vigentes, 4.291 corregidas y 430 históricas); 101 pendientes documentadas (42 de fuente y 59 de ambigüedad); 6.198 sin revisar individualmente.
+
+## Lote 1121 — 13 de noviembre de 2026
+
+IDs 5926–5930 revisados individualmente. Se contrastaron cuatro cuestiones de Constitución y procedimiento administrativo con los artículos vigentes de la CE y la Ley 39/2015, y una pregunta histórica sobre systemd en Debian Stretch y RHEL 8. Se distinguieron la ley orgánica, la legislación delegada y el decreto-ley; los supuestos de tramitación simplificada, notificación dentro de plazo y anulabilidad; y se documentó que Debian 9 quedó fuera de soporte LTS. El [registro del lote 1121](cambios-lote-1121.json) mantiene los textos originales, evidencia y cambios.
+
+- **5926 — leyes orgánicas:** **vigente**, respuesta D. La CE incluye entre ellas las que aprueban Estatutos de Autonomía; las otras opciones describen delegación legislativa o decreto-ley. A1-7/A2-I-1.
+- **5927 — procedimiento simplificado en responsabilidad patrimonial:** **vigente**, respuesta B, artículo 96.4 de la Ley 39/2015. La regla de silencio es de seis meses, no tres. A1-8/A2-I-8.
+- **5928 — notificación para cumplir el plazo máximo:** **vigente**, respuesta D. El art. 40.4 exige el texto íntegro de la resolución y el intento de notificación acreditado. A1-8/A2-I-8.
+- **5929 — anulabilidad:** **vigente**, respuesta B. El art. 48.1 incluye cualquier infracción, incluso desviación de poder; las demás opciones son causas tasadas de nulidad del art. 47. A1-8/A2-I-8.
+- **5930 — inicio de Debian Stretch y RHEL 8:** **histórica**, respuesta A (systemd). Es la respuesta de esas versiones; Debian 9 terminó su soporte LTS en junio de 2022, por lo que la referencia se conserva como histórica y no como recomendación actual. A1-60/A2-II-2.
+
+Fuentes primarias: [Constitución Española, arts. 81, 82 y 86](https://boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20240217&tn=1), [Ley 39/2015 consolidada, arts. 40.4, 47, 48, 91.3 y 96.4](https://www.boe.es/eli/es/l/2015/10/01/39/con), [Debian: sistemas init predeterminados en Jessie/Stretch](https://wiki.debian.org/Init), [Debian 9 Stretch: fin del soporte](https://www.debian.org/releases/stretch/) y [Red Hat Enterprise Linux 8: gestor systemd](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-systemd_configuring-basic-system-settings). Convocatorias oficiales cotejadas: [GSI A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), temas 7, 8 y 60; [GSI A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), anexo IX, temas I.1, I.8 y II.2. Cotejo curricular con [ITIC Academy, bloque 03: Actuación administrativa (versión 2026.2, 01-10-2026)](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk) y [bloque 27: Sistemas operativos (versión 2026.1, 14-08-2026)](https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk). La clasificación temática no sustituye la comprobación literal de la normativa primaria.
+
+Ejecutados revisar-lote-1121.cjs, academia-lote-1121.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 preguntas, 5.925 examinadas individualmente, 101 pendientes explícitas, 6.198 sin revisar individualmente y cero errores estructurales. El inventario automático solo comprueba estructura, no sustituye la revisión del contenido restante.
 
 ## Lote 1120 — 13 de noviembre de 2026
 

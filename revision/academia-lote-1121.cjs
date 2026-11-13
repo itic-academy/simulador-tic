@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1121.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const admin='https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk';
+const os='https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk';
+const map={
+ 5926:{a1:[7],a2:['I-1'],doc:admin,desc:'ITIC Academy, bloque 03 (versión 2026.2, 01-10-2026), fuentes del Derecho: ley orgánica y Estatutos de Autonomía; alineado con A1-7 y A2-I-1.'},
+ 5927:{a1:[8],a2:['I-8'],doc:admin,desc:'ITIC Academy, bloque 03 (versión 2026.2), Ley 39/2015, responsabilidad patrimonial y tramitación simplificada; alineado con A1-8 y A2-I-8.'},
+ 5928:{a1:[8],a2:['I-8'],doc:admin,desc:'ITIC Academy, bloque 03 (versión 2026.2), notificación administrativa y artículo 40 de la Ley 39/2015; alineado con A1-8 y A2-I-8.'},
+ 5929:{a1:[8],a2:['I-8'],doc:admin,desc:'ITIC Academy, bloque 03 (versión 2026.2), validez, nulidad y anulabilidad de actos; alineado con A1-8 y A2-I-8.'},
+ 5930:{a1:[60],a2:['II-2'],doc:os,desc:'ITIC Academy, bloque 27 (versión 2026.1, 14-08-2026), fundamentos y administración de UNIX/Linux; alineado con A1-60 y A2-II-2. Se cotejó también la vigencia histórica de Debian Stretch.'}
+};
+const topics=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=map[c.id];assert.ok(q&&m,'Falta pregunta/mapeo '+c.id);for(const id of [...m.a1.map(x=>'A1-'+x),...m.a2.map(x=>'A2-'+x)])assert.ok(topics.has(id),id);q.clasificacion.A1=m.a1.map(n=>'A1-'+n);q.clasificacion.A2=m.a2.map(n=>'A2-'+n);const marker='Cotejo curricular ITIC Academy:';const trim=v=>{const raw=(v||'').trim(),i=raw.indexOf(marker);return (i<0?raw:raw.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\. Una lista vacía no implica exclusión del programa\.?\s*/,'').trim();};const note='Cotejo curricular ITIC Academy: '+m.desc+' Temas oficiales asociados: '+[...q.clasificacion.A1,...q.clasificacion.A2].join('/')+'. El material de academia se usa para ubicar el contenido en el temario; la respuesta se contrastó en legislación o documentación oficial.';q.clasificacion.bloque_academia=m.desc;q.clasificacion.nota=(trim(q.clasificacion.nota)+' '+note).trim();q.comentarios=(trim(q.comentarios)+' '+note).trim();q.revision.observaciones=(trim(q.revision.observaciones)+' '+note).trim();if(!q.revision.fuentes.some(f=>f.url===m.doc))q.revision.fuentes.push({url:m.doc,referencia:m.desc});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular A1/A2 actualizado para IDs 5926–5930.');
