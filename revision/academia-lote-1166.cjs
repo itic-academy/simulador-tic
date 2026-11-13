@@ -1,0 +1,16 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.join(__dirname,'..'),bank=JSON.parse(fs.readFileSync(path.join(root,'preguntas_preparatic.json'),'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1166.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const redes='https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk';
+const soa='https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk';
+const map={
+ 6151:{url:redes,a1:[118],a2:['IV-8'],desc:'ITIC Academy 2026, bloque 42 Redes, actualización 2026.1 (29-09-2026), §§3.1–3.2 sobre normativa y cableado estructurado; confirma el encaje curricular, no sustituye la edición primaria histórica TIA/EIA-568-B. La clave queda pendiente de localizar el texto oficial de esa edición.'},
+ 6152:{url:soa,a1:[58],a2:['II-7'],desc:'ITIC Academy 2026, bloque 28 Arquitectura SOA y requisitos no funcionales, versión 2026.1 (25-09-2026), §2.8 sobre microservicios; corresponde expresamente al temario A2-II.7 y se relaciona con sistemas distribuidos/SOA A1-58.'},
+ 6153:{url:soa,a1:[58],a2:['II-6'],desc:'ITIC Academy 2026, bloque 28 Arquitectura SOA, secciones 2 y 2.5 sobre arquitectura y servicios web; encaje A1-58/A2-II.6. La expansión de la organización se valida por separado en fuentes oficiales OASIS.'},
+ 6154:{url:soa,a1:[65],a2:['III-12'],desc:'ITIC Academy 2026, bloque 28, §2.5 «Servicios web», apartados SOAP y WSDL; corresponde al temario A2-III.12 de estándares y protocolos web y A1-65 de arquitectura de desarrollo web. La diferencia entre mensajería y descripción de interfaz se contrasta en W3C.'},
+ 6155:{url:soa,a1:[58,65],a2:['II-6','III-12'],desc:'ITIC Academy 2026, bloque 28, §§2.5 y 2.10, servicios web, estándares e interoperabilidad; encaje con A1-58/A1-65 y A2-II.6/III.12. La existencia de cada perfil se verifica en el catálogo oficial WS-I/OASIS.'}
+};
+const marker='Cotejo curricular de ITIC Academy:';
+const clean=s=>{s=(s||'').trim();const i=s.indexOf(marker);return(i<0?s:s.slice(0,i)).trim().replace(/^Bloque de academia pendiente de cotejo\. Una lista vacía no implica exclusión del programa\.?\s*/,'').trim();};
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),m=map[c.id];if(!q||!m)throw Error('Falta pregunta/mapeo '+c.id);q.clasificacion.A1=m.a1.map(n=>`A1-${n}`);q.clasificacion.A2=m.a2.map(n=>`A2-${n}`);q.clasificacion.bloque_academia=m.desc;const note=`${marker} ${m.desc} Temas oficiales asociados: ${[...q.clasificacion.A1,...q.clasificacion.A2].join('/')}. El temario formativo orienta el encaje; la evidencia técnica primaria sostiene la clave o explicita el pendiente.`;q.clasificacion.nota=(clean(q.clasificacion.nota)+' '+note).trim();q.comentarios=(clean(q.comentarios)+' '+note).trim();q.revision.observaciones=(clean(q.revision.observaciones)+' '+note).trim();if(!q.revision.fuentes.some(f=>f.url===m.url))q.revision.fuentes.push({url:m.url,referencia:`ITIC Academy: ${m.desc}`});c.actualizada=structuredClone(q);}
+fs.writeFileSync(path.join(root,'preguntas_preparatic.json'),JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular ITIC Academy actualizado para IDs 6151–6155.');

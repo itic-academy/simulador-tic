@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 13 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1165 (IDs 6146–6150). Acumulado: 6.145 preguntas examinadas individualmente; 6.036 verificadas (1.181 vigentes, 4.413 corregidas y 442 históricas); 109 pendientes documentadas (44 de fuente y 65 de ambigüedad); 5.978 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1166 (IDs 6151–6155). Acumulado: 6.150 preguntas examinadas individualmente; 6.040 verificadas (1.183 vigentes, 4.415 corregidas y 442 históricas); 110 pendientes documentadas (45 de fuente y 65 de ambigüedad); 5.973 sin revisar individualmente.
 
 **Publicación verificada:** el commit de datos `9e688fc` (documentado en `9e688fc4de7e571b03d52693da149015ab9d1ca3`) está servido por GitHub Pages: README, `cambios-lote-1165.json` e `inventario.json` respondieron HTTP 200. El registro contiene los IDs 6146–6150 y el inventario confirma 6.145 examinadas, 6.036 verificadas, 109 pendientes y 5.978 sin revisar. El workflow público de Deploy GitHub Pages para ese commit consta como completado correctamente.
 
@@ -39,6 +39,22 @@ Estado parcial, no revisión completa del banco. Publicación desde main mediant
 **Publicación verificada:** el commit `1f1da8aa2ca275c94634dc08013d7a4a1a5c0b22` de main ejecutó correctamente [Deploy GitHub Pages, run 43374867546](https://github.com/itic-academy/simulador-tic/actions/runs/43374867546). README, `cambios-lote-1145.json` e `inventario.json` respondieron HTTP 200; el registro publicado contiene 6046–6050 y el inventario confirma 6.045 examinadas y 6.078 aún sin revisar individualmente.
 
 **Publicación verificada:** el commit `88681c4a463e6363a427457e58eba4b7e81c0b71` de main ejecutó correctamente [Deploy GitHub Pages, run 43373957520](https://github.com/itic-academy/simulador-tic/actions/runs/43373957520). Tras desplegar, README, `cambios-lote-1144.json` e `inventario.json` respondieron HTTP 200; el README servido identifica el lote 1144, el registro contiene los IDs 6041–6045 y el inventario confirma 6.040 revisadas y 6.083 aún sin revisar individualmente.
+
+## Lote 1166 — 13 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6151–6155: se dejó pendiente la cita exacta de la histórica TIA/EIA-568-B por falta de acceso a su texto primario oficial; se verificaron microservicios y el nombre OASIS; se corrigió SOAP frente a WSDL; y se acotó el reactivo de perfiles WS-I, conservando como válida la opción D.
+
+- **6151 — TIA/EIA-568-B y longitudes de cableado:** **pendiente de fuente primaria**. Se conserva el enunciado, las opciones y la clave heredados. La serie TIA-568 actual se identifica en el sitio de TIA, pero no se pudo comprobar el texto íntegro de la edición B en una publicación primaria accesible; no se da por verificada la clave B ni se presenta esa edición como vigente. A1-118/A2-IV.8.
+- **6152 — definición de microservicios:** **vigente**, respuesta A. La descripción apunta a pequeños servicios en procesos separados que se comunican con mecanismos ligeros. A1-58/A2-II.7.
+- **6153 — significado de OASIS:** **vigente**, respuesta C. El nombre oficial es “Organization for the Advancement of Structured Information Standards”. A1-58/A2-II.6.
+- **6154 — mensajería de servicios web:** **corregida**, respuesta B (SOAP; antes WSDL). SOAP define el marco/formato de mensajes y sus patrones de intercambio; WSDL describe interfaces y operaciones. Se ajusta el enunciado porque SOAP es una especificación de mensajería, no un lenguaje de descripción de interfaz. A1-65/A2-III.12.
+- **6155 — perfiles WS-I:** **corregida**, respuesta D, conservada. Basic Profile, Basic Security Profile y Reliable Secure Profile figuran en los catálogos oficiales. Se precisa que la pregunta solicita una combinación válida, no una lista exhaustiva, ya que existen otros perfiles WS-I.
+
+Fuentes primarias: [TIA, familia de normas TIA-568](https://tiaonline.org/standard/tia-568/) y [comité TR-42](https://tiaonline.org/standard-committee/tr-42-i-telecommunications-cabling-systems/) (sin texto primario íntegro accesible de 568-B); [James Lewis y Martin Fowler, Microservices](https://martinfowler.com/articles/microservices.html); [OASIS, glosario con expansión oficial](https://docs.oasis-open.org/plcs/dexlib/cs01/data/terminology/sys/o.htm); [W3C SOAP 1.2](https://www.w3.org/TR/soap12/) y [WSDL 2.0](https://www.w3.org/TR/wsdl/); [WS-I, entregables](https://ws-i.org/), [WS-I Basic Security Profile 1.0](https://www.ws-i.org/Profiles/BasicSecurityProfile-1.0.html) y [archivo oficial de perfiles OASIS](https://www.oasis-open.org/standards/).
+
+Convocatorias cotejadas: [GSI A1 2025, anexo I, temas 58/65/118](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [GSI A2 2025, anexo IX, temas II.6/II.7/III.12/IV.8](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo ITIC Academy: [bloque 42 Redes, v2026.1](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) para el contexto de cableado de 6151 y [bloque 28 Arquitectura SOA y requisitos no funcionales, v2026.1](https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk) para microservicios/SOA/servicios web (6152–6155). El material de academia sirve para ubicar contenidos y no reemplaza las fuentes técnicas.
+
+Ejecutados revisar-lote-1166.cjs, academia-lote-1166.cjs, inventario.cjs, verificar.cjs y git diff --check. Inventario: 12.123 total; 6.150 examinadas individualmente; 6.040 verificadas; 110 pendientes (45 de fuente, 65 de ambigüedad); 5.973 sin revisar; cero errores estructurales.
 
 ## Lote 1165 — 13 de noviembre de 2026
 
