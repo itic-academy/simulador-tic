@@ -346188,21 +346188,73 @@
       "id": 6596,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la opción correcta sobre dispositivos de interconexión de redes:",
+      "texto": "¿Qué afirmación describe correctamente un repetidor Ethernet?",
       "opciones": [
-        "Un conmutador o switch retransmite cada trama recibida de un puerto al resto de puertos",
-        "Un router opera en la capa 4 del modelo OSI",
-        "Un concentrador o hub ofrece a cada nodo un ancho de banda efectivo independiente del número de nodos conectados",
-        "Un repetidor aumenta los riesgos de colisión y congestión"
+        "Un switch reenvía necesariamente cada trama recibida por todos sus puertos, aunque conozca la MAC de destino.",
+        "Un router IP opera, por definición, en la capa de transporte del modelo OSI.",
+        "Un hub proporciona a cada nodo un ancho de banda dedicado e independiente de los demás.",
+        "Un repetidor regenera o retransmite señales en la capa física; no filtra tramas por direcciones y mantiene los segmentos conectados dentro del mismo dominio de acceso compartido."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se conserva D. La formulación original atribuía al repetidor un aumento necesario de colisiones y congestión, algo dependiente de la topología y carga y técnicamente impreciso. El repetidor extiende/regenera el medio físico; no separa dominios de acceso como lo hace un puente o switch. El switch aprende MAC y normalmente dirige la trama al puerto asociado, inundando solo en situaciones como destino desconocido o broadcast. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): dispositivos Ethernet, interconexión de redes LAN y modelo de capas; encaje con A1 110/111/118 y A2 IV.8. Temas oficiales asociados: A1-110/A1-111/A1-118/A2-IV-8. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-110",
+          "A1-111",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes (edición 2026.1): dispositivos Ethernet, interconexión de redes LAN y modelo de capas; encaje con A1 110/111/118 y A2 IV.8.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): dispositivos Ethernet, interconexión de redes LAN y modelo de capas; encaje con A1 110/111/118 y A2 IV.8. Temas oficiales asociados: A1-110/A1-111/A1-118/A2-IV-8. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "redes LAN",
+        "switch",
+        "router",
+        "hub",
+        "repetidor",
+        "OSI"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc7387.html",
+            "referencia": "RFC 7387 §2.1: la conmutación Ethernet aprende direcciones MAC y reenvía según la dirección destino; se inundan, entre otros casos, destinos unicast desconocidos, multicast y broadcast, no toda trama conocida."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1812.html",
+            "referencia": "RFC 1812 §2.2.3 y §5: un router IP reenvía datagramas entre interfaces y redes usando información de capa de red (IP)."
+          },
+          {
+            "url": "https://standards.ieee.org/ieee/802.3bz/6003/",
+            "referencia": "IEEE 802.3: la especificación Ethernet incluye repetidores para topologías de medio compartido; el repetidor opera sobre la señal física y no filtra por direcciones MAC/IP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, temas 110 (cableado/interconexión), 111 (OSI) y 118 (LAN y dispositivos)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema IV.8: redes locales, técnicas de transmisión y dispositivos de interconexión."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): dispositivos Ethernet, interconexión de redes LAN y modelo de capas; encaje con A1 110/111/118 y A2 IV.8."
+          }
+        ],
+        "observaciones": "Se conserva D. La formulación original atribuía al repetidor un aumento necesario de colisiones y congestión, algo dependiente de la topología y carga y técnicamente impreciso. El repetidor extiende/regenera el medio físico; no separa dominios de acceso como lo hace un puente o switch. El switch aprende MAC y normalmente dirige la trama al puerto asociado, inundando solo en situaciones como destino desconocido o broadcast. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): dispositivos Ethernet, interconexión de redes LAN y modelo de capas; encaje con A1 110/111/118 y A2 IV.8. Temas oficiales asociados: A1-110/A1-111/A1-118/A2-IV-8. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas."
+      }
     },
     {
       "id": 6597,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes es un protocolo no orientado a conexión?",
+      "texto": "En la capa de transporte de TCP/IP, ¿cuál de estos protocolos ofrece un servicio de datagramas sin conexión?",
       "opciones": [
         "HTTP.",
         "UDP.",
@@ -346210,48 +346262,223 @@
         "TCP."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene B. UDP es un protocolo de transporte sin conexión que transmite datagramas sin establecer previamente una conexión y sin garantizar entrega u orden. TCP sí es orientado a conexión. HTTP y FTP son protocolos de aplicación, aunque HTTP/3 utiliza QUIC sobre UDP: eso no convierte a HTTP en un protocolo de transporte. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): modelos de red y protocolos de transporte; encaje con A1 111 y A2 II.8. Temas oficiales asociados: A1-111/A2-II-8. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-111"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes (edición 2026.1): modelos de red y protocolos de transporte; encaje con A1 111 y A2 II.8.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): modelos de red y protocolos de transporte; encaje con A1 111 y A2 II.8. Temas oficiales asociados: A1-111/A2-II-8. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "TCP/IP",
+        "UDP",
+        "transporte",
+        "datagramas",
+        "QUIC"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8095.html",
+            "referencia": "RFC 8095 §3.3: UDP es un protocolo de transporte sin conexión, con datagramas independientes y sin establecimiento de conexión."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc768.html",
+            "referencia": "RFC 768: define UDP como servicio de datagramas orientado a transacciones, sin garantía de entrega ni protección frente a duplicados."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+            "referencia": "RFC 9293 §2.2: TCP es un protocolo de transporte orientado a conexión."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 111: modelo OSI, capas y protocolos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema II.8: modelos TCP/IP y OSI, capas y protocolos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): modelos de red y protocolos de transporte; encaje con A1 111 y A2 II.8."
+          }
+        ],
+        "observaciones": "Se mantiene B. UDP es un protocolo de transporte sin conexión que transmite datagramas sin establecer previamente una conexión y sin garantizar entrega u orden. TCP sí es orientado a conexión. HTTP y FTP son protocolos de aplicación, aunque HTTP/3 utiliza QUIC sobre UDP: eso no convierte a HTTP en un protocolo de transporte. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): modelos de red y protocolos de transporte; encaje con A1 111 y A2 II.8. Temas oficiales asociados: A1-111/A2-II-8. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas."
+      }
     },
     {
       "id": 6598,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuáles son las ventajas de la fibra óptica comparadas con los cableados de cobre?",
+      "texto": "Frente al cableado eléctrico de cobre, ¿qué conjunto describe ventajas habituales de la fibra óptica en enlaces de alta capacidad y, especialmente, de larga distancia?",
       "opciones": [
-        "Mayor velocidad de transmisión, mayor ancho de banda, menor tamaño y peso, inmunidad al ruido electromagnético, ausencia de diafonía, menor atenuación",
-        "Mayor velocidad de transmisión, menor ancho de banda, menor tamaño y peso, inmunidad al ruido electromagnético, distancias menores entre repetidores",
-        "Menor velocidad de transmisión, menor ancho de banda, menor tamaño y peso, inmunidad al ruido electromagnético, ausencia de diafonía, mayor atenuación, distancias mayores entre repetidores",
-        "Mayor velocidad de transmisión, menor tamaño y peso, inmunidad al ruido electromagnético, ausencia de diafonía, mayor atenuación"
+        "Puede ofrecer gran capacidad y baja atenuación por kilómetro en los sistemas adecuados; no conduce corriente, es inmune a interferencias electromagnéticas y no presenta diafonía eléctrica, y el cable suele ser ligero y compacto.",
+        "Tiene necesariamente menor ancho de banda que el cobre, es sensible a interferencias electromagnéticas y requiere repetidores a distancias más cortas.",
+        "Transmite siempre más lentamente que el cobre y presenta mayor atenuación, aunque su cable sea más ligero.",
+        "Es inmune al ruido electromagnético, pero conduce corriente entre equipos y presenta diafonía eléctrica mayor que el cobre."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene A, con alcance delimitado. La fibra ofrece inmunidad a interferencia electromagnética y no sufre diafonía eléctrica; según tipo de fibra, longitud de onda, componentes y diseño, permite gran capacidad y baja atenuación en enlaces largos. Se retira la afirmación universal de que cualquier fibra tenga menor atenuación que todo cable de cobre: la atenuación es una propiedad del medio y del sistema concreto. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): fibra óptica y medios guiados; encaje con A1 108/112 y A2 IV.7. Temas oficiales asociados: A1-108/A1-112/A2-IV-7. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-112"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes (edición 2026.1): fibra óptica y medios guiados; encaje con A1 108/112 y A2 IV.7.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): fibra óptica y medios guiados; encaje con A1 108/112 y A2 IV.7. Temas oficiales asociados: A1-108/A1-112/A2-IV-7. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "fibra óptica",
+        "cobre",
+        "atenuación",
+        "interferencias electromagnéticas",
+        "diafonía"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.652-202408-I/en",
+            "referencia": "Recomendación ITU-T G.652 (08/2024), vigente: define características geométricas, mecánicas y de transmisión de fibra monomodo; especifica atenuación por longitud de onda y su uso para enlaces ópticos."
+          },
+          {
+            "url": "https://www.itu.int/epublications/publication/itu-t-g-suppl-39-2025-03-optical-system-design-and-engineering-considerations/en",
+            "referencia": "Suplemento ITU-T G Suppl. 39 (03/2025): consideraciones de diseño de sistemas ópticos y características de transmisión de fibra."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, temas 108 (medios de transmisión) y 112 (tecnologías de acceso por fibra)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema IV.7: medios guiados, parámetros significativos y cableado."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): fibra óptica y medios guiados; encaje con A1 108/112 y A2 IV.7."
+          }
+        ],
+        "observaciones": "Se mantiene A, con alcance delimitado. La fibra ofrece inmunidad a interferencia electromagnética y no sufre diafonía eléctrica; según tipo de fibra, longitud de onda, componentes y diseño, permite gran capacidad y baja atenuación en enlaces largos. Se retira la afirmación universal de que cualquier fibra tenga menor atenuación que todo cable de cobre: la atenuación es una propiedad del medio y del sistema concreto. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): fibra óptica y medios guiados; encaje con A1 108/112 y A2 IV.7. Temas oficiales asociados: A1-108/A1-112/A2-IV-7. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas."
+      }
     },
     {
       "id": 6599,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿A quién está dirigido el programa Oficinas de Transformación Digital (OTD)?",
+      "texto": "Según las bases de 2017 del programa de Red.es «Oficinas de Transformación Digital», ¿a quién se dirigían sus servicios de sensibilización y apoyo?",
       "opciones": [
-        "A las Administraciones",
-        "A las PYMES y autónomos",
-        "A los ciudadanos",
-        "A los inversores"
+        "A las Administraciones públicas.",
+        "A las PYMES y las personas trabajadoras autónomas.",
+        "A la ciudadanía en general.",
+        "A los inversores."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene B como dato histórico del programa regulado en 2017: sus destinatarios eran las PYMES y las personas autónomas, a quienes las OTD ayudaban en la incorporación de las TIC. La pregunta se fecha y atribuye a sus bases para no presentarlo como un programa necesariamente vigente. El temario A1 ofrece solo una correspondencia general con el impacto económico de las TIC; no se fuerza clasificación A2 ni se ha localizado cobertura específica del programa en el temario de academia. Cotejo curricular de ITIC Academy: Cotejado el temario ITIC Academy 2026 disponible en Drive: no se localizó cobertura específica del programa histórico de Oficinas de Transformación Digital. A1 19 es solo una correspondencia general con impacto económico de las TIC; sin tema A2 forzado. Temas oficiales asociados: A1-19. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-19"
+        ],
+        "A2": [],
+        "bloque_academia": "Cotejado el temario ITIC Academy 2026 disponible en Drive: no se localizó cobertura específica del programa histórico de Oficinas de Transformación Digital. A1 19 es solo una correspondencia general con impacto económico de las TIC; sin tema A2 forzado.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: Cotejado el temario ITIC Academy 2026 disponible en Drive: no se localizó cobertura específica del programa histórico de Oficinas de Transformación Digital. A1 19 es solo una correspondencia general con impacto económico de las TIC; sin tema A2 forzado. Temas oficiales asociados: A1-19. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "Oficinas de Transformación Digital",
+        "Red.es",
+        "pymes",
+        "autónomos",
+        "programa histórico"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/eli/es/res/2017/11/06/(3)",
+            "referencia": "Resolución de 6-11-2017, BOE-A-2017-13355, bases del programa Red.es: define la OTD como centro que sensibiliza y presta apoyo a autónomos y PYMES para incorporar TIC y optimizar su funcionamiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 19: impacto de las TIC en la economía y mercado de trabajo; correspondencia curricular amplia, no referencia literal al programa."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "El programa de GSI A2 2025 no contiene un tema específico sobre el antiguo programa OTD; se deja sin asignación para no forzar el encaje."
+          }
+        ],
+        "observaciones": "Se mantiene B como dato histórico del programa regulado en 2017: sus destinatarios eran las PYMES y las personas autónomas, a quienes las OTD ayudaban en la incorporación de las TIC. La pregunta se fecha y atribuye a sus bases para no presentarlo como un programa necesariamente vigente. El temario A1 ofrece solo una correspondencia general con el impacto económico de las TIC; no se fuerza clasificación A2 ni se ha localizado cobertura específica del programa en el temario de academia. Cotejo curricular de ITIC Academy: Cotejado el temario ITIC Academy 2026 disponible en Drive: no se localizó cobertura específica del programa histórico de Oficinas de Transformación Digital. A1 19 es solo una correspondencia general con impacto económico de las TIC; sin tema A2 forzado. Temas oficiales asociados: A1-19. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas."
+      }
     },
     {
       "id": 6600,
       "bloque": 0,
       "tema": 0,
-      "texto": "De entre los diferentes tipos de CSMA (Carrier Sense Multiple Access), se puede afirmar:",
+      "texto": "En CSMA 1-persistente, ¿qué hace una estación que encuentra ocupado el canal y después detecta que queda libre?",
       "opciones": [
-        "En CSMA 1-persistente, si el medio está libre, el emisor transmite, si no, espera un tiempo aleatorio.",
-        "En CSMA p-Persistente, el emisor escucha el canal y transmite tan pronto como éste esté libre.",
-        "En CSMA 1-persistente, el emisor escucha el canal y transmite tan pronto como éste esté libre."
+        "Espera un tiempo aleatorio sin seguir escuchando el canal y luego vuelve a sondearlo; esa conducta caracteriza el modo no persistente.",
+        "En un medio ranurado, cuando el canal está libre transmite con probabilidad p y, con probabilidad 1−p, difiere la decisión a la siguiente ranura; es la regla p-persistente.",
+        "Sigue escuchando el canal ocupado y transmite inmediatamente cuando detecta que queda libre; si varias estaciones esperan, pueden colisionar al intentar transmitir a la vez."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene C. La versión anterior describía de forma casi idéntica la persistencia 1 y p y confundía la regla de espera aleatoria con 1-persistente. En 1-persistente la estación sigue sensando el canal ocupado y transmite de inmediato cuando queda libre; el modo no persistente espera un intervalo aleatorio antes de volver a sondear, mientras que p-persistente usa la probabilidad p en un canal ranurado. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): redes locales y métodos de acceso al medio, incluido CSMA; encaje con A1 118 y A2 IV.8. Temas oficiales asociados: A1-118/A2-IV-8. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes (edición 2026.1): redes locales y métodos de acceso al medio, incluido CSMA; encaje con A1 118 y A2 IV.8.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): redes locales y métodos de acceso al medio, incluido CSMA; encaje con A1 118 y A2 IV.8. Temas oficiales asociados: A1-118/A2-IV-8. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "CSMA",
+        "1-persistente",
+        "p-persistente",
+        "no persistente",
+        "métodos de acceso"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.lk.cs.ucla.edu/data/files/Kleinrock/Packet%20Switching%20in%20Radio%20Channels%20Part.pdf",
+            "referencia": "Kleinrock y Tobagi, «Packet Switching in Radio Channels: Part I—Carrier Sense Multiple-Access Modes and Their Throughput-Delay Characteristics», IEEE Transactions on Communications, 1975: análisis original y diagramas de los modos 1-persistente, p-persistente y no persistente."
+          },
+          {
+            "url": "https://standards.ieee.org/ieee/802.3bz/6003/",
+            "referencia": "IEEE 802.3 especifica el acceso CSMA/CD Ethernet en medios compartidos half-duplex; fuente normativa sobre el método Ethernet relacionado."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 118: LAN y métodos de acceso al medio."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema IV.8: redes locales y métodos de acceso."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): redes locales y métodos de acceso al medio, incluido CSMA; encaje con A1 118 y A2 IV.8."
+          }
+        ],
+        "observaciones": "Se mantiene C. La versión anterior describía de forma casi idéntica la persistencia 1 y p y confundía la regla de espera aleatoria con 1-persistente. En 1-persistente la estación sigue sensando el canal ocupado y transmite de inmediato cuando queda libre; el modo no persistente espera un intervalo aleatorio antes de volver a sondear, mientras que p-persistente usa la probabilidad p en un canal ranurado. Cotejo curricular de ITIC Academy: ITIC Academy, bloque 42 Redes (edición 2026.1): redes locales y métodos de acceso al medio, incluido CSMA; encaje con A1 118 y A2 IV.8. Temas oficiales asociados: A1-118/A2-IV-8. La academia orienta la cobertura y clasificación; la verificación técnica se fundamenta en las fuentes primarias citadas."
+      }
     },
     {
       "id": 6601,
