@@ -1,0 +1,397 @@
+{
+  "fecha": "2026-11-14",
+  "alcance": "IDs 6706–6710; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 6706,
+      "original": {
+        "id": 6706,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los conceptos de switch zoning y LUN masking en una red de almacenamiento FC (Fiber Channel):",
+        "opciones": [
+          "Permiten restringir la conectividad de red entre clientes FC, y gestionar su máscara de red dinámicamente",
+          "Son utilizados en la administración de robóticas LTO para copias de seguridad de los discos virtuales",
+          "Permiten al administrador restringir la visibilidad entre clientes por puerto o WWN, así como el acceso a un disco virtual",
+          "Ambos conceptos son incompatibles en una red FC"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6706,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una SAN Fibre Channel, ¿qué funciones cumplen switch zoning y LUN masking?",
+        "opciones": [
+          "El zoning y el masking son ambos equivalentes a una máscara IP asignada dinámicamente a cada iniciador.",
+          "Se emplean para administrar robots LTO y copias de seguridad de discos virtuales.",
+          "El zoning limita qué puertos/WWN pueden comunicarse dentro del fabric; el LUN masking restringe qué unidades lógicas puede ver o utilizar un host iniciador.",
+          "Son mecanismos incompatibles y no pueden configurarse simultáneamente en una SAN."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C es correcta. El zoning segmenta la conectividad del fabric Fibre Channel entre miembros autorizados; el LUN masking configura en el almacenamiento qué LUN se presenta a qué iniciadores/hosts. Son controles distintos y complementarios, no una máscara de red IP ni funciones de robótica de cintas. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: §§ 7–8 cubren SAN, Fibre Channel, almacenamiento y virtualización. El propio mapa curricular enlaza A1-56 y A2 C5; la clasificación se expresa con el epígrafe A2-IV.5 del programa oficial 2025. Correspondencia oficial: A1-56/A2-IV-5. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: §§ 7–8 cubren SAN, Fibre Channel, almacenamiento y virtualización. El propio mapa curricular enlaza A1-56 y A2 C5; la clasificación se expresa con el epígrafe A2-IV.5 del programa oficial 2025.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: §§ 7–8 cubren SAN, Fibre Channel, almacenamiento y virtualización. El propio mapa curricular enlaza A1-56 y A2 C5; la clasificación se expresa con el epígrafe A2-IV.5 del programa oficial 2025. Correspondencia oficial: A1-56/A2-IV-5. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas."
+        },
+        "etiquetas": [
+          "Fibre Channel",
+          "SAN",
+          "switch zoning",
+          "LUN masking",
+          "WWN",
+          "almacenamiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg245444.pdf",
+              "referencia": "IBM Z Connectivity Handbook: zoning segmenta el fabric FC y limita la comunicación a miembros de la zona; el LUN masking restringe acceso a unidades lógicas mediante WWPN."
+            },
+            {
+              "url": "https://docs.netapp.com/us-en/ontap/san-config/fibre-channel-fcoe-zoning-concept.html",
+              "referencia": "NetApp ONTAP documentación técnica: zoning limita conectividad/visibilidad a los endpoints de una zona y puede definirse por WWN."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/system-center/vmm/storage-fibre-channel?view=sc-vmm-2025",
+              "referencia": "Microsoft Learn: distingue configuración de zonas Fibre Channel y registro/unmask de LUN para que un host pueda acceder al almacenamiento."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial GSI A1 2025, tema 56: almacenamiento para sistemas grandes/departamentales y virtualización del almacenamiento."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial GSI A2 2025, tema IV.5: arquitectura, componentes, protocolos, gestión y administración del almacenamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: §§ 7–8 cubren SAN, Fibre Channel, almacenamiento y virtualización. El propio mapa curricular enlaza A1-56 y A2 C5; la clasificación se expresa con el epígrafe A2-IV.5 del programa oficial 2025."
+            }
+          ],
+          "observaciones": "La respuesta C es correcta. El zoning segmenta la conectividad del fabric Fibre Channel entre miembros autorizados; el LUN masking configura en el almacenamiento qué LUN se presenta a qué iniciadores/hosts. Son controles distintos y complementarios, no una máscara de red IP ni funciones de robótica de cintas. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: §§ 7–8 cubren SAN, Fibre Channel, almacenamiento y virtualización. El propio mapa curricular enlaza A1-56 y A2 C5; la clasificación se expresa con el epígrafe A2-IV.5 del programa oficial 2025. Correspondencia oficial: A1-56/A2-IV-5. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas."
+        }
+      }
+    },
+    {
+      "id": 6707,
+      "original": {
+        "id": 6707,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El sistema operativo iOS presente en dispositivos Apple, cuenta con cuatro capas de abstracción, entre las que NO se encuentra:",
+        "opciones": [
+          "Capa núcleo (Core OS).",
+          "Capa de servicios principales.",
+          "Capa Cocoa Touch.",
+          "Capa de servicios de red."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6707,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo histórico de cuatro capas de abstracción de iOS descrito por Apple, ¿cuál de estas opciones no es una capa?",
+        "opciones": [
+          "Core OS.",
+          "Core Services.",
+          "Cocoa Touch.",
+          "Servicios de red."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La respuesta D es correcta para el modelo de arquitectura de iOS documentado por Apple: Core OS, Core Services, Media y Cocoa Touch. «Servicios de red» es una función/servicio que aparece en capas inferiores, no el nombre de una de esas cuatro capas. Se fecha como modelo histórico porque la referencia de Apple está archivada y no debe interpretarse como una taxonomía exhaustiva de las versiones actuales. Cotejo curricular ITIC Academy: ITIC Academy, bloque «Aplicaciones Móviles y Sistemas Operativos», actualización 2026: incluye Android/iOS y sistemas operativos móviles. El bloque recoge A1-124 y A2 C2 en su mapa; la pregunta sobre las cuatro capas de Apple se trata como histórica y la alineación oficial actual se clasifica en A1-62/A2-II.2. Correspondencia oficial: A1-62/A2-II-2. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-62"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque «Aplicaciones Móviles y Sistemas Operativos», actualización 2026: incluye Android/iOS y sistemas operativos móviles. El bloque recoge A1-124 y A2 C2 en su mapa; la pregunta sobre las cuatro capas de Apple se trata como histórica y la alineación oficial actual se clasifica en A1-62/A2-II.2.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque «Aplicaciones Móviles y Sistemas Operativos», actualización 2026: incluye Android/iOS y sistemas operativos móviles. El bloque recoge A1-124 y A2 C2 en su mapa; la pregunta sobre las cuatro capas de Apple se trata como histórica y la alineación oficial actual se clasifica en A1-62/A2-II.2. Correspondencia oficial: A1-62/A2-II-2. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas."
+        },
+        "etiquetas": [
+          "iOS",
+          "Core OS",
+          "Core Services",
+          "Media",
+          "Cocoa Touch",
+          "arquitectura histórica"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaFundamentals/WhatIsCocoa/WhatIsCocoa.html",
+              "referencia": "Apple Developer Documentation archivada: describe las cuatro capas del stack iOS de esa arquitectura —Core OS, Core Services, Media y Cocoa Touch— e identifica sus funciones."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial GSI A1 2025, tema 62: iOS y sistemas operativos para dispositivos móviles."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial GSI A2 2025, tema II.2: fundamentos y tipos de sistemas operativos, incluidos los móviles."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque «Aplicaciones Móviles y Sistemas Operativos», actualización 2026: incluye Android/iOS y sistemas operativos móviles. El bloque recoge A1-124 y A2 C2 en su mapa; la pregunta sobre las cuatro capas de Apple se trata como histórica y la alineación oficial actual se clasifica en A1-62/A2-II.2."
+            }
+          ],
+          "observaciones": "La respuesta D es correcta para el modelo de arquitectura de iOS documentado por Apple: Core OS, Core Services, Media y Cocoa Touch. «Servicios de red» es una función/servicio que aparece en capas inferiores, no el nombre de una de esas cuatro capas. Se fecha como modelo histórico porque la referencia de Apple está archivada y no debe interpretarse como una taxonomía exhaustiva de las versiones actuales. Cotejo curricular ITIC Academy: ITIC Academy, bloque «Aplicaciones Móviles y Sistemas Operativos», actualización 2026: incluye Android/iOS y sistemas operativos móviles. El bloque recoge A1-124 y A2 C2 en su mapa; la pregunta sobre las cuatro capas de Apple se trata como histórica y la alineación oficial actual se clasifica en A1-62/A2-II.2. Correspondencia oficial: A1-62/A2-II-2. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas."
+        }
+      }
+    },
+    {
+      "id": 6708,
+      "original": {
+        "id": 6708,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la opción correcta sobre el hash:",
+        "opciones": [
+          "La longitud del hash varía en función del tamaño del mensaje.",
+          "Para su implementación se considera más seguro emplear MD5 frente a SHA-2.",
+          "La función hash no es reversible, sino unidireccional.",
+          "Dos mensajes diferentes podrían producir la misma firma."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6708,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la afirmación correcta sobre una función hash criptográfica convencional.",
+        "opciones": [
+          "La longitud del resumen cambia necesariamente con la longitud del mensaje de entrada.",
+          "MD5 se considera más seguro que SHA-2 para nuevas aplicaciones criptográficas.",
+          "Produce un resumen de longitud fija para mensajes de longitud arbitraria y se diseña para que recuperar el mensaje original a partir del resumen sea computacionalmente inviable.",
+          "Es matemáticamente imposible que dos mensajes distintos produzcan el mismo resumen."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C es correcta para las funciones hash criptográficas convencionales. Las salidas tienen longitud fija y se busca resistencia a preimagen; no son cifrados reversibles. Las colisiones no pueden excluirse matemáticamente cuando el espacio de entrada es ilimitado y la salida finita, aunque una función segura debe hacerlas computacionalmente inviables de encontrar. MD5 no es adecuado para nuevas aplicaciones criptográficas. Cotejo curricular ITIC Academy: ITIC Academy, bloque «Seguridad. Criptografía. Identificación y Firma», edición 2026.1: §4 trata funciones hash. Correspondencia curricular directa con A1-79/A2-IV.12; propiedades y recomendaciones se validan con NIST. Correspondencia oficial: A1-79/A2-IV-12. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-79"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque «Seguridad. Criptografía. Identificación y Firma», edición 2026.1: §4 trata funciones hash. Correspondencia curricular directa con A1-79/A2-IV.12; propiedades y recomendaciones se validan con NIST.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque «Seguridad. Criptografía. Identificación y Firma», edición 2026.1: §4 trata funciones hash. Correspondencia curricular directa con A1-79/A2-IV.12; propiedades y recomendaciones se validan con NIST. Correspondencia oficial: A1-79/A2-IV-12. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas."
+        },
+        "etiquetas": [
+          "hash criptográfico",
+          "resumen de mensaje",
+          "longitud fija",
+          "resistencia a preimagen",
+          "colisiones",
+          "MD5",
+          "SHA-2"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/Projects/Hash-Functions",
+              "referencia": "NIST CSRC: las funciones hash aprobadas transforman mensajes de longitud arbitraria en resúmenes de longitud fija; explica resistencia a colisiones y a preimagen, y enumera familias SHA-2/SHA-3."
+            },
+            {
+              "url": "https://csrc.nist.gov/pubs/sp/800/131/a/r2/final",
+              "referencia": "NIST SP 800-131A Rev. 2: establece transiciones de algoritmos criptográficos y desaconseja MD5 para aplicaciones criptográficas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial GSI A1 2025, tema 79: cifrado simétrico/asimétrico y función hash."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial GSI A2 2025, tema IV.12: técnicas criptográficas, protocolos y mecanismos de firma digital."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque «Seguridad. Criptografía. Identificación y Firma», edición 2026.1: §4 trata funciones hash. Correspondencia curricular directa con A1-79/A2-IV.12; propiedades y recomendaciones se validan con NIST."
+            }
+          ],
+          "observaciones": "La respuesta C es correcta para las funciones hash criptográficas convencionales. Las salidas tienen longitud fija y se busca resistencia a preimagen; no son cifrados reversibles. Las colisiones no pueden excluirse matemáticamente cuando el espacio de entrada es ilimitado y la salida finita, aunque una función segura debe hacerlas computacionalmente inviables de encontrar. MD5 no es adecuado para nuevas aplicaciones criptográficas. Cotejo curricular ITIC Academy: ITIC Academy, bloque «Seguridad. Criptografía. Identificación y Firma», edición 2026.1: §4 trata funciones hash. Correspondencia curricular directa con A1-79/A2-IV.12; propiedades y recomendaciones se validan con NIST. Correspondencia oficial: A1-79/A2-IV-12. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas."
+        }
+      }
+    },
+    {
+      "id": 6709,
+      "original": {
+        "id": 6709,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre la tecnología Java WebStart es cierto que:",
+        "opciones": [
+          "Permite la instalación de la aplicación pero no su actualización.",
+          "Permite la distribución de aplicaciones Java sin instalación adicional y desde cualquier navegador web.",
+          "Utiliza JNLP (Java LaunchingProtocol) definido en la JSR-56 y basado en XML.",
+          "Las dos anteriores son ciertas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6709,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la tecnología histórica Java Web Start, ¿qué afirmación describe correctamente JNLP?",
+        "opciones": [
+          "Permite instalar la aplicación, pero el protocolo no admite actualizaciones.",
+          "Permite ejecutar cualquier aplicación Java directamente en cualquier navegador, sin entorno Java en el equipo.",
+          "JNLP (Java Network Launching Protocol) se especificó en JSR 56 y sus archivos de lanzamiento usan sintaxis XML.",
+          "Java Web Start forma parte del Oracle JDK 11 y sustituye al complemento Java para navegadores."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C es correcta: JNLP corresponde al Java Network Launching Protocol and API, estandarizado en JSR 56, y describe el lanzamiento mediante archivos XML. Las opciones A y B generalizan incorrectamente instalación, actualización y requisitos del entorno de ejecución. D es falsa: Oracle retiró Java Web Start de JDK 11. Se marca histórica porque la tecnología ya no se distribuye con los JDK actuales, aunque existan implementaciones compatibles externas. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de Sistemas de la Información», edición 2026.1: cubre entorno Java y tecnologías de despliegue; cotejo curricular para JNLP/Java Web Start histórico. Correspondencia A1-67/A2-III.10 y III.12. Correspondencia oficial: A1-67/A2-III-10/A2-III-12. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-III-10",
+            "A2-III-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de Sistemas de la Información», edición 2026.1: cubre entorno Java y tecnologías de despliegue; cotejo curricular para JNLP/Java Web Start histórico. Correspondencia A1-67/A2-III.10 y III.12.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de Sistemas de la Información», edición 2026.1: cubre entorno Java y tecnologías de despliegue; cotejo curricular para JNLP/Java Web Start histórico. Correspondencia A1-67/A2-III.10 y III.12. Correspondencia oficial: A1-67/A2-III-10/A2-III-12. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas."
+        },
+        "etiquetas": [
+          "Java Web Start",
+          "JNLP",
+          "JSR 56",
+          "XML",
+          "tecnología histórica",
+          "despliegue Java"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://jcp.org/aboutJava/communityprocess/final/jsr056/index.html",
+              "referencia": "Java Community Process, JSR-000056: especificación final del Java Network Launching Protocol and API (JNLP), con Java Web Start como implementación de referencia histórica."
+            },
+            {
+              "url": "https://www.oracle.com/java/technologies/javase/java-web-start-overview.html",
+              "referencia": "Oracle, Java Web Start Overview: define su relación con JSR-56/JNLP y describe el lanzamiento de aplicaciones Java desde infraestructura web."
+            },
+            {
+              "url": "https://docs.oracle.com/en/java/javase/11/migrate/",
+              "referencia": "Oracle JDK 11 Migration Guide: indica que Java Web Start y la pila de despliegue fueron eliminados de Oracle JDK 11."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial GSI A1 2025, tema 67: entorno de desarrollo Java."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial GSI A2 2025, temas III.10 (Java EE/Jakarta EE) y III.12 (aplicaciones web y tecnologías de programación)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de Sistemas de la Información», edición 2026.1: cubre entorno Java y tecnologías de despliegue; cotejo curricular para JNLP/Java Web Start histórico. Correspondencia A1-67/A2-III.10 y III.12."
+            }
+          ],
+          "observaciones": "La respuesta C es correcta: JNLP corresponde al Java Network Launching Protocol and API, estandarizado en JSR 56, y describe el lanzamiento mediante archivos XML. Las opciones A y B generalizan incorrectamente instalación, actualización y requisitos del entorno de ejecución. D es falsa: Oracle retiró Java Web Start de JDK 11. Se marca histórica porque la tecnología ya no se distribuye con los JDK actuales, aunque existan implementaciones compatibles externas. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de Sistemas de la Información», edición 2026.1: cubre entorno Java y tecnologías de despliegue; cotejo curricular para JNLP/Java Web Start histórico. Correspondencia A1-67/A2-III.10 y III.12. Correspondencia oficial: A1-67/A2-III-10/A2-III-12. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas."
+        }
+      }
+    },
+    {
+      "id": 6710,
+      "original": {
+        "id": 6710,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un modelo de datos Entidad / Relación, ¿qué se entiende por “entidad débil”?",
+        "opciones": [
+          "Una entidad que no se encuentra relacionada con otra.",
+          "Una entidad que hereda todos sus atributos de otra.",
+          "Una entidad cuya existencia depende de la existencia de otra.",
+          "Ninguna de las respuestas anteriores definen una entidad débil."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6710,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo Entidad/Relación, ¿qué caracteriza propiamente a una entidad débil?",
+        "opciones": [
+          "No mantiene ninguna relación con otras entidades.",
+          "Hereda automáticamente todos sus atributos de otra entidad mediante generalización.",
+          "No tiene una clave propia suficiente: se identifica respecto de una entidad propietaria mediante una relación identificadora y una clave parcial; su existencia depende de ella.",
+          "Es cualquier entidad que participe en una relación de cardinalidad muchos a muchos."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C es correcta. Una entidad débil carece de atributos que por sí solos formen una clave completa; su identificación combina la clave de una entidad propietaria con una clave parcial, a través de una relación identificadora. La dependencia de existencia es necesaria, pero por sí sola no basta para clasificar como débil a toda entidad dependiente si esta posee una clave propia completa. Cotejo curricular ITIC Academy: ITIC Academy, bloque «Bases de datos, SQL y modelado de datos», versión 2026.1: §4 incluye entidad débil, dependencia e identificación con clave del propietario. Correspondencia directa A1-89/A2-III.4; se apoya en bibliografía de bases de datos para precisar clave parcial y relación identificadora. Correspondencia oficial: A1-89/A2-III-4. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-89"
+          ],
+          "A2": [
+            "A2-III-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque «Bases de datos, SQL y modelado de datos», versión 2026.1: §4 incluye entidad débil, dependencia e identificación con clave del propietario. Correspondencia directa A1-89/A2-III.4; se apoya en bibliografía de bases de datos para precisar clave parcial y relación identificadora.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque «Bases de datos, SQL y modelado de datos», versión 2026.1: §4 incluye entidad débil, dependencia e identificación con clave del propietario. Correspondencia directa A1-89/A2-III.4; se apoya en bibliografía de bases de datos para precisar clave parcial y relación identificadora. Correspondencia oficial: A1-89/A2-III-4. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas."
+        },
+        "etiquetas": [
+          "modelo E/R",
+          "entidad débil",
+          "dependencia de existencia",
+          "entidad propietaria",
+          "clave parcial",
+          "identificación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://eecs.csuohio.edu/~sschung/cis430/Fundamentals-of-Database-Systems-Pearson-2015-Ramez-Elmasri-Shamkant-B.-Navathe.pdf",
+              "referencia": "Elmasri y Navathe, Fundamentals of Database Systems, §3.5: una entidad débil no tiene clave propia suficiente; se identifica mediante una entidad propietaria y una clave parcial, con participación total en la relación identificadora."
+            },
+            {
+              "url": "https://www.ibm.com/think/topics/entity-relationship-diagram",
+              "referencia": "IBM, introducción a diagramas entidad-relación: distingue entidad fuerte/débil y describe dependencia de existencia respecto de la entidad propietaria."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial GSI A1 2025, tema 89: análisis del dominio, modelo entidad-relación y modelos de clases."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial GSI A2 2025, tema III.4: modelado de datos, diseño de bases de datos y modelo lógico relacional."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque «Bases de datos, SQL y modelado de datos», versión 2026.1: §4 incluye entidad débil, dependencia e identificación con clave del propietario. Correspondencia directa A1-89/A2-III.4; se apoya en bibliografía de bases de datos para precisar clave parcial y relación identificadora."
+            }
+          ],
+          "observaciones": "La respuesta C es correcta. Una entidad débil carece de atributos que por sí solos formen una clave completa; su identificación combina la clave de una entidad propietaria con una clave parcial, a través de una relación identificadora. La dependencia de existencia es necesaria, pero por sí sola no basta para clasificar como débil a toda entidad dependiente si esta posee una clave propia completa. Cotejo curricular ITIC Academy: ITIC Academy, bloque «Bases de datos, SQL y modelado de datos», versión 2026.1: §4 incluye entidad débil, dependencia e identificación con clave del propietario. Correspondencia directa A1-89/A2-III.4; se apoya en bibliografía de bases de datos para precisar clave parcial y relación identificadora. Correspondencia oficial: A1-89/A2-III-4. La academia documenta la cobertura curricular; las respuestas técnicas se sustentan en las fuentes citadas."
+        }
+      }
+    }
+  ]
+}
