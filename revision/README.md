@@ -32,7 +32,9 @@ Fuentes primarias y técnicas: [AWS Glossary](https://docs.aws.amazon.com/glossa
 
 Clasificación oficial y cotejo de ITIC Academy: AWS/cloud (A1-55/A2-II.1; bloque 25); JSF y frameworks web/Java (A1-65/A1-67/A2-III.12; bloque 30); servidor web y software abierto (A1-65/A1-69/A2-III.12; bloque 30); certificados y servicios electrónicos de confianza (A1-80/A1-81/A2-I.6; bloque 36); sistemas Linux y BSD (A1-60/A1-69/A2-II.2; bloque 27). La academia acredita cobertura curricular; cada respuesta se valida con las fuentes oficiales citadas.
 
-Inventario tras el lote: 6700 examinadas; 6582 verificadas (1287 vigentes, 4811 corregidas y 484 históricas); 118 pendientes (46 de fuente y 72 de ambigüedad); 5423 aún sin revisar individualmente; errores estructurales: 0. Ejecutados inventario.cjs, verificar.cjs y git diff --check. Publicación pendiente de verificación.
+Inventario tras el lote: 6700 examinadas; 6582 verificadas (1287 vigentes, 4811 corregidas y 484 históricas); 118 pendientes (46 de fuente y 72 de ambigüedad); 5423 aún sin revisar individualmente; errores estructurales: 0. Ejecutados inventario.cjs, verificar.cjs y git diff --check.
+
+**Publicación verificada:** commit de datos `1f807e5` (`1f807e53e424e2f7d9db97bc77bf257530323244`) completó con estado **Success** el workflow [Deploy GitHub Pages 43649195781](https://github.com/itic-academy/simulador-tic/actions/runs/43649195781). GitHub Pages devolvió HTTP 200 sin caché para `revision/README.md`, `revision/cambios-lote-1276.json` y `revision/inventario.json`. El registro público incluye IDs 6701–6705, el README anuncia el lote 1276 y el inventario publicado confirma 6.700 examinadas, 6.582 verificadas (1.287 vigentes, 4.811 corregidas y 484 históricas), 118 pendientes (46 de fuente y 72 de ambigüedad), 5.423 aún sin revisar y cero errores estructurales.
 
 ## Lote 1275 — 14 de noviembre de 2026
 
