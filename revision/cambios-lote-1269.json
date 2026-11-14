@@ -1,0 +1,399 @@
+{
+  "fecha": "2026-11-14",
+  "alcance": "IDs 6666–6670; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 6666,
+      "original": {
+        "id": 6666,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es el tamaño de la cabecera del protocolo IPV6?",
+        "opciones": [
+          "64 bytes",
+          "40 bytes",
+          "80 bytes"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6666,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es la longitud de la cabecera base fija de IPv6, sin contar las cabeceras de extensión?",
+        "opciones": [
+          "64 octetos.",
+          "40 octetos.",
+          "80 octetos."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La clave B es correcta: la cabecera base IPv6 tiene 40 octetos (320 bits). Las cabeceras de extensión, si existen, van aparte y forman parte de la carga útil IPv6; no se suman al tamaño de la cabecera base. Se acota el enunciado para evitar confundir ambas longitudes. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, sección IPv6: distingue la cabecera base de 40 octetos de las cabeceras de extensión y sus campos. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Protocolos 2026.1, sección IPv6: distingue la cabecera base de 40 octetos de las cabeceras de extensión y sus campos.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, sección IPv6: distingue la cabecera base de 40 octetos de las cabeceras de extensión y sus campos. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        },
+        "etiquetas": [
+          "IPv6",
+          "cabecera base",
+          "cabeceras de extensión",
+          "RFC 8200"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8200.html#section-3",
+              "referencia": "IETF RFC 8200 §3: el encabezado base contiene campos cuya longitud total es 320 bits (40 octetos); la especificación separa las cabeceras de extensión, que se colocan después de la cabecera base."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 115: arquitectura IP y funcionalidades específicas de IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema II.8: modelos TCP/IP y OSI, capas, protocolos y direccionamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Protocolos 2026.1, sección IPv6: distingue la cabecera base de 40 octetos de las cabeceras de extensión y sus campos."
+            }
+          ],
+          "observaciones": "La clave B es correcta: la cabecera base IPv6 tiene 40 octetos (320 bits). Las cabeceras de extensión, si existen, van aparte y forman parte de la carga útil IPv6; no se suman al tamaño de la cabecera base. Se acota el enunciado para evitar confundir ambas longitudes. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, sección IPv6: distingue la cabecera base de 40 octetos de las cabeceras de extensión y sus campos. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6667,
+      "original": {
+        "id": 6667,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La diferencia esencial entre TCP y UDP es:",
+        "opciones": [
+          "A diferencia de UDP, TCP dispone de mecanismos para el control de flujo y la transmisión fiable de paquetes",
+          "A diferencia de UDP, TCP ofrece a la capa superior el servicio de multiplexación por puerto",
+          "A dferencia de UDP, TCP dispone de mecanismos para detectar errores de transmisión",
+          "Todas las anteriores son ciertas"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6667,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué servicio diferencia de forma esencial a TCP de UDP cuando la aplicación no lo implementa por sí misma?",
+        "opciones": [
+          "TCP proporciona un flujo de bytes fiable y ordenado, con control de flujo; UDP ofrece datagramas sin esas garantías de entrega.",
+          "Solo TCP usa números de puerto para multiplexar aplicaciones.",
+          "UDP no dispone de checksum ni de ningún mecanismo de detección de errores.",
+          "Todas las anteriores son ciertas."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La clave A es correcta. TCP ofrece a la aplicación un flujo fiable y ordenado y control de flujo. Tanto TCP como UDP usan puertos para multiplexar y ambos incluyen checksum (con la regla específica de UDP sobre IPv4); por ello los distractores B y C son falsos y «todas» no puede ser correcta. Se corrige la comparación imprecisa del original. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, §§4.2–4.3: compara transporte TCP/UDP, entrega, orden, control de flujo, puertos y checksums. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Protocolos 2026.1, §§4.2–4.3: compara transporte TCP/UDP, entrega, orden, control de flujo, puertos y checksums.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, §§4.2–4.3: compara transporte TCP/UDP, entrega, orden, control de flujo, puertos y checksums. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        },
+        "etiquetas": [
+          "TCP",
+          "UDP",
+          "fiabilidad",
+          "orden",
+          "control de flujo",
+          "multiplexación por puertos",
+          "checksum"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+              "referencia": "IETF RFC 9293, §2.2 y §3: TCP usa puertos y multiplexa conexiones; proporciona flujo de bytes fiable y ordenado, secuencias, ACK y retransmisiones y control de flujo por ventana."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc768.html",
+              "referencia": "IETF RFC 768: UDP también tiene puertos origen/destino y checksum; su entrega no garantiza orden ni fiabilidad, y su servicio es de datagramas."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8095.html",
+              "referencia": "IETF RFC 8095, comparación de protocolos de transporte: UDP proporciona multiplexación/demultiplexación por puertos; TCP ofrece entrega fiable y en orden."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 115: redes IP, arquitectura y protocolos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema II.8: protocolos de TCP/IP y OSI."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Protocolos 2026.1, §§4.2–4.3: compara transporte TCP/UDP, entrega, orden, control de flujo, puertos y checksums."
+            }
+          ],
+          "observaciones": "La clave A es correcta. TCP ofrece a la aplicación un flujo fiable y ordenado y control de flujo. Tanto TCP como UDP usan puertos para multiplexar y ambos incluyen checksum (con la regla específica de UDP sobre IPv4); por ello los distractores B y C son falsos y «todas» no puede ser correcta. Se corrige la comparación imprecisa del original. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, §§4.2–4.3: compara transporte TCP/UDP, entrega, orden, control de flujo, puertos y checksums. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6668,
+      "original": {
+        "id": 6668,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una compañía va a abrir una nueva sede asumiendo la subred 255.255.248.0, ¿Cuál de las siguientes direcciones IP se podría asignar a un ordenador de la nueva sede?",
+        "opciones": [
+          "a) 172.16.20.0",
+          "172.16.24.45",
+          "Ambas respuestas son correctas",
+          "Ninguna respuesta es correcta"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6668,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Se asigna la máscara 255.255.248.0 (/21). ¿Cuál de estas direcciones IPv4 puede configurarse como dirección de host? Se supone que no está ya asignada.",
+        "opciones": [
+          "172.16.20.0",
+          "172.16.24.45",
+          "Ambas direcciones.",
+          "Ninguna de las direcciones."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La clave C es correcta. Con /21, 172.16.20.0 pertenece a 172.16.16.0/21, cuyo rango de hosts es 172.16.16.1–172.16.23.254; no es la dirección de red. 172.16.24.45 pertenece a 172.16.24.0/21 y también es host válido. Están en subredes diferentes. Se explicita que basta ser asignable como host y que la dirección no está ocupada; la clase histórica /24 no prevalece sobre la máscara /21 indicada. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, sección de direccionamiento IPv4 y cálculo de subredes CIDR: prefijos, dirección de red, broadcast y hosts asignables. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Protocolos 2026.1, sección de direccionamiento IPv4 y cálculo de subredes CIDR: prefijos, dirección de red, broadcast y hosts asignables.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, sección de direccionamiento IPv4 y cálculo de subredes CIDR: prefijos, dirección de red, broadcast y hosts asignables. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        },
+        "etiquetas": [
+          "IPv4",
+          "máscara de subred",
+          "/21",
+          "172.16.20.0",
+          "172.16.24.45",
+          "direccionamiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+              "referencia": "IETF RFC 4632, CIDR: la longitud de prefijo determina qué bits son de red; las direcciones de host se interpretan según ese prefijo, no según una antigua clase A/B/C."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1878.html",
+              "referencia": "IETF RFC 1878, tabla de subredes IPv4: máscara 255.255.248.0 equivale a prefijo /21 y deja 11 bits de host."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1918.html",
+              "referencia": "IETF RFC 1918: 172.16.0.0/12 está reservado para uso privado; ambos ejemplos están dentro de ese bloque."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 115: direccionamiento y arquitectura de redes IP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema II.8: direccionamiento y encaminamiento TCP/IP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Protocolos 2026.1, sección de direccionamiento IPv4 y cálculo de subredes CIDR: prefijos, dirección de red, broadcast y hosts asignables."
+            }
+          ],
+          "observaciones": "La clave C es correcta. Con /21, 172.16.20.0 pertenece a 172.16.16.0/21, cuyo rango de hosts es 172.16.16.1–172.16.23.254; no es la dirección de red. 172.16.24.45 pertenece a 172.16.24.0/21 y también es host válido. Están en subredes diferentes. Se explicita que basta ser asignable como host y que la dirección no está ocupada; la clase histórica /24 no prevalece sobre la máscara /21 indicada. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, sección de direccionamiento IPv4 y cálculo de subredes CIDR: prefijos, dirección de red, broadcast y hosts asignables. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6669,
+      "original": {
+        "id": 6669,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El equipo que se encuentra en ambos extremos de una línea de transmisión, se denomina, según la nomenclatura española de la ITU-T:",
+        "opciones": [
+          "ETC o equipo terminal de datos",
+          "ETD o equipo terminal de datos",
+          "ETCD o equipo terminal del circuito digital",
+          "ETCD o equipo terminal del circuito de datos"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6669,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la terminología española de UIT-T para una estación de datos, ¿cómo se denomina el equipo que termina el circuito de datos y conecta el ETD con la línea o red?",
+        "opciones": [
+          "ETC: equipo terminal de comunicaciones.",
+          "ETD: equipo terminal de datos.",
+          "ETCD: equipo terminal del circuito digital.",
+          "ETCD: equipo de terminación del circuito de datos."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La clave D es correcta. La terminología UIT-T en español traduce DCE como equipo de terminación del circuito de datos (ETCD); el ETD (DTE) es el terminal que genera/recibe datos. Se corrige «equipo terminal» y «circuito digital» de los distractores, y se precisa que la función se repite en los extremos de una conexión, donde cada equipo de terminación se conecta a su ETD y a la red/línea. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, secciones OSI, interfaz y servicios: encaje del vocabulario ETD/ETCD; la denominación española exacta se toma de las fichas UIT-T. Correspondencia oficial asociada: A1-111/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-111"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Protocolos 2026.1, secciones OSI, interfaz y servicios: encaje del vocabulario ETD/ETCD; la denominación española exacta se toma de las fichas UIT-T.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, secciones OSI, interfaz y servicios: encaje del vocabulario ETD/ETCD; la denominación española exacta se toma de las fichas UIT-T. Correspondencia oficial asociada: A1-111/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        },
+        "etiquetas": [
+          "ETD",
+          "ETCD",
+          "DTE",
+          "DCE",
+          "ITU-T V.24",
+          "equipo de terminación del circuito de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/T-REC-V.24-200002-I/es",
+              "referencia": "ITU-T V.24 (02/2000), ficha oficial en español y en vigor: define circuitos de interfaz entre ETD (DTE) y equipo de terminación del circuito de datos ETCD (DCE)."
+            },
+            {
+              "url": "https://www.itu.int/rec/T-REC-X.21-199209-I/es",
+              "referencia": "ITU-T X.21 (09/1992), ficha oficial en español y en vigor: identifica la interfaz entre ETD y ETCD en la conexión síncrona a redes públicas de datos."
+            },
+            {
+              "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-V.24-200002-I%21%21PDF-S&lang=e&type=items",
+              "referencia": "Texto español de ITU-T V.24 (02/2000): traduce DCE como «equipo de terminación del circuito de datos»; ETCD es la sigla española."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 111: modelos OSI, interfaces y protocolos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema II.8: arquitectura OSI, capas e interfaces."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Protocolos 2026.1, secciones OSI, interfaz y servicios: encaje del vocabulario ETD/ETCD; la denominación española exacta se toma de las fichas UIT-T."
+            }
+          ],
+          "observaciones": "La clave D es correcta. La terminología UIT-T en español traduce DCE como equipo de terminación del circuito de datos (ETCD); el ETD (DTE) es el terminal que genera/recibe datos. Se corrige «equipo terminal» y «circuito digital» de los distractores, y se precisa que la función se repite en los extremos de una conexión, donde cada equipo de terminación se conecta a su ETD y a la red/línea. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, secciones OSI, interfaz y servicios: encaje del vocabulario ETD/ETCD; la denominación española exacta se toma de las fichas UIT-T. Correspondencia oficial asociada: A1-111/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6670,
+      "original": {
+        "id": 6670,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué características de seguridad presenta SNMPv3, tal y como se mencionan en la RFC 3418 (MIB for the SNMP Protocol)?",
+        "opciones": [
+          "Se recomienda que los implementadores usen el modelo de seguridad basado en usuario y el control de acceso basado en vistas.",
+          "Se obliga a que los implementadores usen el modelo basado en usuario y el control de acceso basado en vistas.",
+          "En dicha RFC no se menciona ningún elemento de seguridad.",
+          "En temas de seguridad, sólo hace mención al uso obligatorio del algoritmo de encriptación CBC (Cipher Block Chaining) de DES, conocido también por DES-56."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6670,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el apartado «Security Considerations» de RFC 3418, ¿qué recomienda considerar al implementar la seguridad de SNMP?",
+        "opciones": [
+          "El uso del modelo de seguridad basado en usuario (USM) y del modelo de control de acceso basado en vistas (VACM).",
+          "USM y VACM son obligatorios para todo agente y toda configuración SNMP.",
+          "RFC 3418 no trata la seguridad de la gestión SNMP.",
+          "La única recomendación obligatoria es cifrar con DES-CBC de 56 bits."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La clave A es correcta. RFC 3418 dice que se recomienda considerar las funciones del marco SNMPv3 y cita específicamente USM (RFC 3414) y VACM (RFC 3415). Es una recomendación del documento, no una obligación universal de implementar ambos modelos. El RFC no establece DES-CBC como único mecanismo obligatorio. Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1, apartado de gestión SNMP: MIB, arquitectura v3, USM/VACM, autenticación y confidencialidad. El valor normativo «recomendado, no obligatorio» se comprueba en RFC 3418. Correspondencia oficial asociada: A1-118/A2-IV-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Redes 2026.1, apartado de gestión SNMP: MIB, arquitectura v3, USM/VACM, autenticación y confidencialidad. El valor normativo «recomendado, no obligatorio» se comprueba en RFC 3418.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1, apartado de gestión SNMP: MIB, arquitectura v3, USM/VACM, autenticación y confidencialidad. El valor normativo «recomendado, no obligatorio» se comprueba en RFC 3418. Correspondencia oficial asociada: A1-118/A2-IV-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        },
+        "etiquetas": [
+          "SNMPv3",
+          "RFC 3418",
+          "USM",
+          "VACM",
+          "seguridad de gestión de redes"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3418.html#section-5",
+              "referencia": "IETF RFC 3418 §5, Security Considerations: recomienda que implementadores consideren las funciones de seguridad del marco SNMPv3 y, específicamente, recomienda USM (RFC 3414) y VACM (RFC 3415). No dice que sean obligatorios."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3414.html",
+              "referencia": "IETF RFC 3414: especifica el User-based Security Model (USM) para autenticación y privacidad en SNMPv3."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3415.html",
+              "referencia": "IETF RFC 3415: especifica View-based Access Control Model (VACM), control de acceso basado en vistas para SNMP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 118: monitorización, control de tráfico y gestión SNMP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema IV.8: redes y gestión/monitorización de redes locales."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Redes 2026.1, apartado de gestión SNMP: MIB, arquitectura v3, USM/VACM, autenticación y confidencialidad. El valor normativo «recomendado, no obligatorio» se comprueba en RFC 3418."
+            }
+          ],
+          "observaciones": "La clave A es correcta. RFC 3418 dice que se recomienda considerar las funciones del marco SNMPv3 y cita específicamente USM (RFC 3414) y VACM (RFC 3415). Es una recomendación del documento, no una obligación universal de implementar ambos modelos. El RFC no establece DES-CBC como único mecanismo obligatorio. Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1, apartado de gestión SNMP: MIB, arquitectura v3, USM/VACM, autenticación y confidencialidad. El valor normativo «recomendado, no obligatorio» se comprueba en RFC 3418. Correspondencia oficial asociada: A1-118/A2-IV-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        }
+      }
+    }
+  ]
+}
