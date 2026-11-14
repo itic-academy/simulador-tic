@@ -1,0 +1,7 @@
+const fs=require('node:fs'),path=require('node:path');
+const file=path.join(__dirname,'README.md');let s=fs.readFileSync(file,'utf8');
+const pending='Inventario local: 6650 examinadas; 6532 verificadas (1287 vigentes, 4768 corregidas, 477 históricas); 118 pendientes (46 de fuente y 72 de ambigüedad); 5473 sin revisar individualmente. Publicación pendiente de verificación.';
+const published='Inventario local: 6650 examinadas; 6532 verificadas (1287 vigentes, 4768 corregidas, 477 históricas); 118 pendientes (46 de fuente y 72 de ambigüedad); 5473 sin revisar individualmente.\n\nPublicación verificada: el commit de datos `22941f0` (`22941f0b17a48adcd719ac0c5256d7d3ccbe7c07`) completó correctamente [Deploy GitHub Pages, workflow 43639014704](https://github.com/itic-academy/simulador-tic/actions/runs/43639014704), estado **Success**. Se obtuvo HTTP 200 sin caché para README, inventario, banco y `cambios-lote-1266.json`; el registro publicado contiene 6651–6655 con estados corregida, vigente, corregida, corregida y corregida, y el inventario público coincide con los 6.650 examinados, 6.532 verificados, 118 pendientes y 5.473 aún sin revisar individualmente.';
+if(!s.includes(pending))throw Error('No se encontró exactamente el estado pendiente del lote 1266.');
+if(s.includes('workflow 43639014704'))throw Error('Ya consta verificada la publicación; evitar duplicar.');
+s=s.replace(pending,published);fs.writeFileSync(file,s);console.log('Publicación de datos del lote 1266 verificada y documentada.');
