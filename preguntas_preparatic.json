@@ -351818,71 +351818,309 @@
       "id": 6691,
       "bloque": 0,
       "tema": 0,
-      "texto": "Seleccione la afirmación correcta:",
+      "texto": "¿Qué afirmación sobre buses de datos es correcta?",
       "opciones": [
-        "Los buses paralelos permiten enviar mayor cantidad de información por unidad de tiempo que los buses serie",
-        "El bus MCA (Micro Channel Architecture) empleado en los IBM PS/2 tenía un ancho de palabra máximo de 16 bits",
-        "Los buses paralelos presentan una limitación de velocidad relacionada con la variación de retardo o jitter entre los diferentes bits de su ancho de palabra",
-        "El bus PCI es un bus paralelo pero sus evoluciones posteriores, PCI-X y PCIe son buses serie"
+        "Un bus paralelo siempre ofrece más caudal que uno serie, con independencia de su frecuencia, codificación y diseño.",
+        "El bus MCA de los IBM PS/2 tenía un ancho máximo de 16 bits.",
+        "En un bus paralelo de alta velocidad, las diferencias de retardo entre líneas pueden limitar la frecuencia de transferencia porque los bits no llegan alineados temporalmente.",
+        "PCI-X, al igual que PCI Express (PCIe), es un bus serie."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La respuesta C es correcta: el skew entre líneas de datos reduce el margen temporal de muestreo y limita la velocidad práctica de buses paralelos. No se afirma que toda solución paralela sea más lenta que toda solución serie. IBM documenta MCA de 32 bits en modelos PS/2 de gama alta; PCI-X conserva una interfaz paralela, mientras PCIe es serie. Se reformula «jitter» como diferencia de retardo entre líneas para no confundir el skew entre canales con la fluctuación temporal aleatoria de una señal. Cotejo curricular ITIC Academy: ITIC Academy, bloque Hardware 2026, arquitectura de ordenadores, buses y bridges: cotejo curricular general del contexto de buses de PC. No se le atribuye la explicación específica de skew; esta se comprueba en la nota técnica de Texas Instruments. Correspondencia oficial: A1-54/A2-II-1. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-54"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque Hardware 2026, arquitectura de ordenadores, buses y bridges: cotejo curricular general del contexto de buses de PC. No se le atribuye la explicación específica de skew; esta se comprueba en la nota técnica de Texas Instruments.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque Hardware 2026, arquitectura de ordenadores, buses y bridges: cotejo curricular general del contexto de buses de PC. No se le atribuye la explicación específica de skew; esta se comprueba en la nota técnica de Texas Instruments. Correspondencia oficial: A1-54/A2-II-1. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "buses",
+        "arquitectura de computadores",
+        "buses paralelos",
+        "skew",
+        "MCA",
+        "PCI-X",
+        "PCI Express"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.ti.com/lit/an/snla159/snla159.pdf",
+            "referencia": "Texas Instruments, Timing Analysis of Synchronous and Asynchronous Buses, §§ «Bus Propagation Delay and Settling Time» y «Clock Skew»: las diferencias de propagación y los requisitos temporales limitan el rendimiento alcanzable en buses."
+          },
+          {
+            "url": "https://www.ibm.com/history/ps-2",
+            "referencia": "IBM, historia del PS/2: en los modelos de gama alta, MCA incorporó un bus de 32 bits; esto descarta el distractor de 16 bits como máximo."
+          },
+          {
+            "url": "https://pcisig.com/what-features-are-introduced-pci-x-20-specification",
+            "referencia": "PCI-SIG, FAQ PCI-X 2.0: describe una versión PCI-X de 16 bits, confirmando que PCI-X pertenece a la familia paralela y no es un sucesor serie de PCI."
+          },
+          {
+            "url": "https://pcisig.com/what-pci-express-pcie-architecture",
+            "referencia": "PCI-SIG, arquitectura PCI Express: describe PCIe como una arquitectura de interconexión serie."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial GSI A1 2025, tema 54: equipos y arquitecturas de ordenadores."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial GSI A2 2025, tema II.1: tecnologías actuales de ordenadores, componentes y arquitecturas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque Hardware 2026, arquitectura de ordenadores, buses y bridges: cotejo curricular general del contexto de buses de PC. No se le atribuye la explicación específica de skew; esta se comprueba en la nota técnica de Texas Instruments."
+          }
+        ],
+        "observaciones": "La respuesta C es correcta: el skew entre líneas de datos reduce el margen temporal de muestreo y limita la velocidad práctica de buses paralelos. No se afirma que toda solución paralela sea más lenta que toda solución serie. IBM documenta MCA de 32 bits en modelos PS/2 de gama alta; PCI-X conserva una interfaz paralela, mientras PCIe es serie. Se reformula «jitter» como diferencia de retardo entre líneas para no confundir el skew entre canales con la fluctuación temporal aleatoria de una señal. Cotejo curricular ITIC Academy: ITIC Academy, bloque Hardware 2026, arquitectura de ordenadores, buses y bridges: cotejo curricular general del contexto de buses de PC. No se le atribuye la explicación específica de skew; esta se comprueba en la nota técnica de Texas Instruments. Correspondencia oficial: A1-54/A2-II-1. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas."
+      }
     },
     {
       "id": 6692,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cuál es el nombre corto del Reglamento (UE) 2022/868",
+      "texto": "¿Cuál es la denominación corta que aparece en el título del Reglamento (UE) 2022/868?",
       "opciones": [
-        "Data Act o Ley de datos",
-        "Open Data Act o Ley de datos abiertos",
-        "Data Governance Act o Ley de Gobernanza de Datos",
-        "Ninguna de las anteriores"
+        "Data Act.",
+        "Open Data Act.",
+        "Data Governance Act (DGA).",
+        "Reglamento (UE) 2018/1724."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La respuesta C reproduce el nombre corto incluido en el propio título del Reglamento (UE) 2022/868: Data Governance Act (DGA). No debe confundirse con el Data Act, Reglamento (UE) 2023/2854, ni con el Reglamento (UE) 2018/1724, que el acto de 2022 modifica. Cotejo curricular ITIC Academy: ITIC Academy, bloque 10 «Gobernanza TIC y Administración Digital» 2026.4: cotejo curricular de gobernanza y gestión de datos. No se afirma que el material incluya el nombre del Reglamento 2022/868; la denominación jurídica se contrasta en EUR-Lex. Correspondencia oficial: A1-31/A2-I-9. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-31"
+        ],
+        "A2": [
+          "A2-I-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 10 «Gobernanza TIC y Administración Digital» 2026.4: cotejo curricular de gobernanza y gestión de datos. No se afirma que el material incluya el nombre del Reglamento 2022/868; la denominación jurídica se contrasta en EUR-Lex.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 10 «Gobernanza TIC y Administración Digital» 2026.4: cotejo curricular de gobernanza y gestión de datos. No se afirma que el material incluya el nombre del Reglamento 2022/868; la denominación jurídica se contrasta en EUR-Lex. Correspondencia oficial: A1-31/A2-I-9. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "Reglamento de Gobernanza de Datos",
+        "Data Governance Act",
+        "DGA",
+        "EUR-Lex",
+        "gobernanza de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32022R0868",
+            "referencia": "EUR-Lex, Reglamento (UE) 2022/868, título y denominación corta parentética «Data Governance Act»; acto vigente sobre gobernanza europea de datos."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/LSU/?uri=CELEX:32022R0868",
+            "referencia": "EUR-Lex, resumen oficial del Reglamento (UE) 2022/868: denomina el acto «Data Governance Act (DGA)» y distingue su objeto de otras normas de datos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial GSI A1 2025, tema 31: reutilización de la información del sector público y políticas de datos abiertos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial GSI A2 2025, tema I.9: datos abiertos y normativa vigente de reutilización de información del sector público."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1alTzv7f2Katg4EdxJ72SYkLm6UScCCho/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 10 «Gobernanza TIC y Administración Digital» 2026.4: cotejo curricular de gobernanza y gestión de datos. No se afirma que el material incluya el nombre del Reglamento 2022/868; la denominación jurídica se contrasta en EUR-Lex."
+          }
+        ],
+        "observaciones": "La respuesta C reproduce el nombre corto incluido en el propio título del Reglamento (UE) 2022/868: Data Governance Act (DGA). No debe confundirse con el Data Act, Reglamento (UE) 2023/2854, ni con el Reglamento (UE) 2018/1724, que el acto de 2022 modifica. Cotejo curricular ITIC Academy: ITIC Academy, bloque 10 «Gobernanza TIC y Administración Digital» 2026.4: cotejo curricular de gobernanza y gestión de datos. No se afirma que el material incluya el nombre del Reglamento 2022/868; la denominación jurídica se contrasta en EUR-Lex. Correspondencia oficial: A1-31/A2-I-9. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas."
+      }
     },
     {
       "id": 6693,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el RGPD Reglamento (UE) 2016/679:",
+      "texto": "¿Qué exige el RGPD en materia de comprobación de la eficacia de las medidas de seguridad?",
       "opciones": [
-        "hay artículos sobre la obligatoriedad de la realización de auditorías periódicas",
-        "hay artículos sobre la obligatoriedad y la periodicidad de la realización de auditorías periódicas",
-        "a y b son correctas",
-        "a y b son incorrectas"
+        "Que todo responsable encargue una auditoría formal independiente en un intervalo fijo.",
+        "Que se establezca, cuando proceda, un proceso de verificación, evaluación y valoración regulares de la eficacia de las medidas de seguridad; el RGPD no fija para todos una periodicidad universal de auditoría formal.",
+        "Que se realice obligatoriamente una auditoría externa cada año.",
+        "Que el delegado de protección de datos tenga prohibido realizar o supervisar auditorías relacionadas con sus funciones."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "La respuesta B refleja el artículo 32.1.d del RGPD, que incluye un proceso de verificación, evaluación y valoración regulares de la eficacia de las medidas técnicas y organizativas. Esto no equivale a imponer a toda organización una auditoría formal externa en un calendario fijo. El artículo 39.1.b incluye auditorías relacionadas entre las funciones del delegado; el artículo 28.3.h regula derechos de auditoría del responsable frente al encargado. Cotejo curricular ITIC Academy: ITIC Academy, bloque 08 «Protección de Datos» 2026: cotejo curricular de RGPD, controles y auditoría de privacidad. La interpretación de los artículos 32, 39 y 28 se comprueba en el texto oficial de EUR-Lex. Correspondencia oficial: A1-27/A1-38/A1-82/A2-I-7/A2-II-11. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-27",
+          "A1-38",
+          "A1-82"
+        ],
+        "A2": [
+          "A2-I-7",
+          "A2-II-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 08 «Protección de Datos» 2026: cotejo curricular de RGPD, controles y auditoría de privacidad. La interpretación de los artículos 32, 39 y 28 se comprueba en el texto oficial de EUR-Lex.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 08 «Protección de Datos» 2026: cotejo curricular de RGPD, controles y auditoría de privacidad. La interpretación de los artículos 32, 39 y 28 se comprueba en el texto oficial de EUR-Lex. Correspondencia oficial: A1-27/A1-38/A1-82/A2-I-7/A2-II-11. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "RGPD",
+        "auditoría",
+        "artículo 32",
+        "pruebas periódicas",
+        "seguridad del tratamiento",
+        "artículo 39"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32016R0679",
+            "referencia": "EUR-Lex, Reglamento (UE) 2016/679, arts. 32.1.d, 39.1.b y 28.3.h: establece pruebas/evaluaciones regulares de eficacia, funciones de supervisión que pueden incluir auditorías y derechos contractuales de auditoría; no fija una periodicidad universal de auditoría formal."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial GSI A1 2025, temas 27, 38 y 82: protección de datos, auditoría informática y adaptación de sistemas a requisitos de privacidad y seguridad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial GSI A2 2025, temas I.7 y II.11: protección de datos y auditoría informática, incluida la auditoría de protección de datos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 08 «Protección de Datos» 2026: cotejo curricular de RGPD, controles y auditoría de privacidad. La interpretación de los artículos 32, 39 y 28 se comprueba en el texto oficial de EUR-Lex."
+          }
+        ],
+        "observaciones": "La respuesta B refleja el artículo 32.1.d del RGPD, que incluye un proceso de verificación, evaluación y valoración regulares de la eficacia de las medidas técnicas y organizativas. Esto no equivale a imponer a toda organización una auditoría formal externa en un calendario fijo. El artículo 39.1.b incluye auditorías relacionadas entre las funciones del delegado; el artículo 28.3.h regula derechos de auditoría del responsable frente al encargado. Cotejo curricular ITIC Academy: ITIC Academy, bloque 08 «Protección de Datos» 2026: cotejo curricular de RGPD, controles y auditoría de privacidad. La interpretación de los artículos 32, 39 y 28 se comprueba en el texto oficial de EUR-Lex. Correspondencia oficial: A1-27/A1-38/A1-82/A2-I-7/A2-II-11. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas."
+      }
     },
     {
       "id": 6694,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué es Doctrine?",
+      "texto": "¿Qué es Doctrine ORM?",
       "opciones": [
-        "Es un framework mapeador de objetos-relacional (ORM) escrito en PHP que proporciona una capa de persistencia para objetos PHP",
-        "Es un framework ORM para la plataforma Java",
-        "Es una base de datos NoSQL",
-        "Es un servidor web de software libre"
+        "Una biblioteca ORM para PHP que mapea objetos PHP a un modelo relacional y proporciona persistencia de entidades.",
+        "Un ORM de la plataforma Java que reemplaza a Jakarta Persistence.",
+        "Una base de datos NoSQL que almacena documentos JSON.",
+        "Un servidor HTTP de software libre."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La respuesta A es correcta para Doctrine ORM, el componente del proyecto Doctrine que ofrece mapeo objeto-relacional y persistencia para aplicaciones PHP. «Doctrine» también designa una familia de bibliotecas PHP, por lo que se precisa el nombre del componente y se evita definirlo genéricamente como un framework o confundirlo con DBAL, ODM o un servidor. Cotejo curricular ITIC Academy: ITIC Academy, bloque 29 «Bases de datos y modelado»: cotejo curricular de persistencia y bases de datos. Doctrine ORM y su mapeo de entidades PHP se verifican en la documentación oficial de Doctrine. Correspondencia oficial: A1-64/A1-65/A2-II-5/A2-III-12. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-64",
+          "A1-65"
+        ],
+        "A2": [
+          "A2-II-5",
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos y modelado»: cotejo curricular de persistencia y bases de datos. Doctrine ORM y su mapeo de entidades PHP se verifican en la documentación oficial de Doctrine.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 29 «Bases de datos y modelado»: cotejo curricular de persistencia y bases de datos. Doctrine ORM y su mapeo de entidades PHP se verifican en la documentación oficial de Doctrine. Correspondencia oficial: A1-64/A1-65/A2-II-5/A2-III-12. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "Doctrine ORM",
+        "PHP",
+        "mapeo objeto-relacional",
+        "persistencia",
+        "bases de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.doctrine-project.org/projects/orm.html",
+            "referencia": "Doctrine Project, Doctrine ORM: presenta Doctrine ORM como herramienta de mapeo objeto-relacional para PHP."
+          },
+          {
+            "url": "https://www.doctrine-project.org/projects/doctrine-orm/en/current/reference/architecture.html",
+            "referencia": "Doctrine ORM, arquitectura: explica el mapeo entre filas relacionales y el modelo de objetos PHP, y la persistencia de objetos PHP ordinarios."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial GSI A1 2025, temas 64 y 65: modelo relacional y arquitectura/desarrollo de aplicaciones web conectadas a bases de datos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial GSI A2 2025, temas II.5 y III.12: SGBD relacionales, aplicaciones web y tecnologías de programación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 29 «Bases de datos y modelado»: cotejo curricular de persistencia y bases de datos. Doctrine ORM y su mapeo de entidades PHP se verifican en la documentación oficial de Doctrine."
+          }
+        ],
+        "observaciones": "La respuesta A es correcta para Doctrine ORM, el componente del proyecto Doctrine que ofrece mapeo objeto-relacional y persistencia para aplicaciones PHP. «Doctrine» también designa una familia de bibliotecas PHP, por lo que se precisa el nombre del componente y se evita definirlo genéricamente como un framework o confundirlo con DBAL, ODM o un servidor. Cotejo curricular ITIC Academy: ITIC Academy, bloque 29 «Bases de datos y modelado»: cotejo curricular de persistencia y bases de datos. Doctrine ORM y su mapeo de entidades PHP se verifican en la documentación oficial de Doctrine. Correspondencia oficial: A1-64/A1-65/A2-II-5/A2-III-12. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas."
+      }
     },
     {
       "id": 6695,
       "bloque": 0,
       "tema": 0,
-      "texto": "El XSLT transforma:",
+      "texto": "¿Qué describe correctamente una transformación XSLT?",
       "opciones": [
-        "Sólo de XML a XML",
-        "De XML a otro documento",
-        "Sólo de XML a HTML",
-        "De un documento a XML"
+        "Solo puede convertir un documento XML en otro XML.",
+        "Transforma datos de entrada XML representados como un árbol y puede producir un resultado serializado, por ejemplo XML, HTML o texto.",
+        "Solo puede convertir XML en HTML.",
+        "Convierte cualquier tipo de documento de entrada a XML sin que la entrada tenga que ser XML."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La respuesta B es correcta. XSLT trabaja sobre una representación en árbol de la entrada XML y construye resultados; según las reglas de serialización, estos pueden escribirse como XML, HTML o texto. La opción no afirma que XSLT acepte arbitrariamente cualquier formato de entrada ni que haya una única forma de salida. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», actualización 2026: cotejo curricular general de tecnologías y lenguajes; no se atribuye al material un epígrafe específico de XSLT. La semántica de transformación/salida se verifica en W3C. Correspondencia oficial: A1-77/A2-II-9. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», actualización 2026: cotejo curricular general de tecnologías y lenguajes; no se atribuye al material un epígrafe específico de XSLT. La semántica de transformación/salida se verifica en W3C.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», actualización 2026: cotejo curricular general de tecnologías y lenguajes; no se atribuye al material un epígrafe específico de XSLT. La semántica de transformación/salida se verifica en W3C. Correspondencia oficial: A1-77/A2-II-9. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas."
+      },
+      "etiquetas": [
+        "XSLT",
+        "XML",
+        "transformación",
+        "serialización",
+        "HTML",
+        "texto"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/xslt-30/",
+            "referencia": "W3C, XSLT 3.0, §§ 2.3 y 2.7: XSLT transforma entradas basadas en árboles en resultados; la serialización puede producir documentos XML u otros formatos, como HTML."
+          },
+          {
+            "url": "https://www.w3.org/TR/xslt-10/",
+            "referencia": "W3C, XSLT 1.0, § 16: especifica métodos de salida XML, HTML y text."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial GSI A1 2025, tema 77: HTML, CSS, XML y lenguajes para redes globales."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial GSI A2 2025, tema II.9: lenguajes de marca, XML y sus derivaciones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», actualización 2026: cotejo curricular general de tecnologías y lenguajes; no se atribuye al material un epígrafe específico de XSLT. La semántica de transformación/salida se verifica en W3C."
+          }
+        ],
+        "observaciones": "La respuesta B es correcta. XSLT trabaja sobre una representación en árbol de la entrada XML y construye resultados; según las reglas de serialización, estos pueden escribirse como XML, HTML o texto. La opción no afirma que XSLT acepte arbitrariamente cualquier formato de entrada ni que haya una única forma de salida. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», actualización 2026: cotejo curricular general de tecnologías y lenguajes; no se atribuye al material un epígrafe específico de XSLT. La semántica de transformación/salida se verifica en W3C. Correspondencia oficial: A1-77/A2-II-9. La academia documenta cobertura curricular; la respuesta concreta se apoya en las fuentes primarias citadas."
+      }
     },
     {
       "id": 6696,
