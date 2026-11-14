@@ -32,7 +32,9 @@ Fuentes técnicas: [IBM Z Connectivity Handbook](https://www.redbooks.ibm.com/re
 
 Clasificación oficial y cotejo de ITIC Academy: SAN/Fibre Channel y masking (A1-56/A2-IV.5; bloque 26, §§7–8); sistemas operativos móviles (A1-62/A2-II.2; bloque «Aplicaciones Móviles y Sistemas Operativos», actualización 2026); hash criptográfico (A1-79/A2-IV.12; bloque «Seguridad. Criptografía. Identificación y Firma», §4); Java/JNLP (A1-67/A2-III.10 y III.12; bloque 30, tecnologías de sistemas de información); entidad débil (A1-89/A2-III.4; bloque «Bases de datos, SQL y modelado de datos», §4). El temario Academy acredita cobertura curricular, no sustituye la comprobación en fuentes técnicas primarias.
 
-Inventario tras el lote: 6705 examinadas; 6587 verificadas (1287 vigentes, 4814 corregidas y 486 históricas); 118 pendientes (46 de fuente y 72 de ambigüedad); 5418 aún sin revisar individualmente; errores estructurales: 0. Ejecutados inventario.cjs, verificar.cjs y git diff --check. Publicación pendiente de verificación.
+Inventario tras el lote: 6705 examinadas; 6587 verificadas (1287 vigentes, 4814 corregidas y 486 históricas); 118 pendientes (46 de fuente y 72 de ambigüedad); 5418 aún sin revisar individualmente; errores estructurales: 0. Ejecutados inventario.cjs, verificar.cjs y git diff --check.
+
+**Publicación verificada:** el commit de datos `f34d5d4` (`f34d5d4cb18ba1a33a027e8877e36f125b969ad3`) completó con estado **Success** el workflow [Deploy GitHub Pages 43650122458](https://github.com/itic-academy/simulador-tic/actions/runs/43650122458). GitHub Pages devolvió HTTP 200 sin caché para `revision/README.md`, `revision/cambios-lote-1277.json` y `revision/inventario.json`. El README servido anuncia el lote 1277; el registro incluye IDs 6706–6710 con claves 2, 3, 2, 2 y 2, y estados corregida, histórica, corregida, histórica y corregida; el inventario público confirma 6.705 examinadas, 6.587 verificadas (1.287 vigentes, 4.814 corregidas y 486 históricas), 118 pendientes (46 de fuente y 72 de ambigüedad), 5.418 aún sin revisar y cero errores estructurales.
 
 ## Lote 1276 — 14 de noviembre de 2026
 
