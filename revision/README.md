@@ -32,7 +32,9 @@ Fuentes primarias: [Texas Instruments, análisis temporal de buses y clock skew]
 
 Clasificación cotejada con el temario oficial A1/A2 y el material de ITIC Academy: buses y arquitectura de PC (A1-54/A2-II.1; bloque Hardware 2026, como cobertura general); gobernanza y reutilización de datos (A1-31/A2-I.9; bloque 10 de Gobernanza TIC); RGPD y auditoría (A1-27/38/82 y A2-I.7/II.11; bloque 08 de Protección de Datos); ORM y persistencia (A1-64/65 y A2-II.5/III.12; bloque 29 de Bases de datos y modelado); XML y transformación (A1-77/A2-II.9; bloque 30 como cobertura general de tecnologías y lenguajes). No se atribuye a la academia el texto de la norma ni detalles de XSLT que se verifican en fuentes primarias.
 
-Inventario local: 6690 examinadas; 6572 verificadas (1287 vigentes, 4803 corregidas y 482 históricas); 118 pendientes (46 de fuente y 72 de ambigüedad); 5433 aún sin revisión individual; errores estructurales: 0. Ejecutados inventario.cjs, verificar.cjs y git diff --check. Publicación pendiente de verificación.
+Inventario local: 6690 examinadas; 6572 verificadas (1287 vigentes, 4803 corregidas y 482 históricas); 118 pendientes (46 de fuente y 72 de ambigüedad); 5433 aún sin revisión individual; errores estructurales: 0. Ejecutados inventario.cjs, verificar.cjs y git diff --check.
+
+**Publicación verificada:** commit de datos `f69c2ab` (`f69c2ab712b9c8b9e2e4cb3cc7a907b8753c06a3`) completó con estado **Success** el workflow [Deploy GitHub Pages 43647277467](https://github.com/itic-academy/simulador-tic/actions/runs/43647277467). GitHub Pages devolvió HTTP 200 sin caché para `revision/README.md`, `revision/cambios-lote-1274.json` y `revision/inventario.json`. El changelog servido incluye IDs 6691–6695 y claves 2, 2, 1, 0 y 1; el inventario publicado refleja 6.690 examinadas, 6.572 verificadas (1.287 vigentes, 4.803 corregidas y 482 históricas), 118 pendientes (46 de fuente y 72 de ambigüedad), 5.433 sin revisar y cero errores estructurales.
 
 ## Lote 1273 — 14 de noviembre de 2026
 
