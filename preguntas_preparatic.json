@@ -353039,71 +353039,301 @@
       "id": 6711,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el Sistema operativo UNÍX la expresión que identifica la cuenta del “superusuario” (que puede llevar a cabo todas las facetas de la administración de sistemas) es…",
+      "texto": "En los sistemas UNIX/Linux, ¿qué nombre identifica convencionalmente la cuenta de superusuario?",
       "opciones": [
-        "Usuario daemon.",
-        "Usuario adm.",
-        "Usuario bin.",
-        "Usuario root."
+        "daemon",
+        "adm",
+        "bin",
+        "root"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se mantiene D (root). En UNIX/Linux, root es la cuenta privilegiada convencional; en Linux su UID es 0. Los nombres daemon, adm y bin se usan habitualmente para cuentas de servicio o del sistema, pero sus funciones concretas pueden variar entre sistemas. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas Operativos», versión 2026 actualizada: cubre fundamentos y administración de UNIX/Linux. Correspondencia directa A1-60/A2-II.2; la identificación de root y UID 0 se valida en Linux man-pages. Correspondencia oficial: A1-60/A2-II-2. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27 «Sistemas Operativos», versión 2026 actualizada: cubre fundamentos y administración de UNIX/Linux. Correspondencia directa A1-60/A2-II.2; la identificación de root y UID 0 se valida en Linux man-pages.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas Operativos», versión 2026 actualizada: cubre fundamentos y administración de UNIX/Linux. Correspondencia directa A1-60/A2-II.2; la identificación de root y UID 0 se valida en Linux man-pages. Correspondencia oficial: A1-60/A2-II-2. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas."
+      },
+      "etiquetas": [
+        "UNIX",
+        "Linux",
+        "root",
+        "superusuario",
+        "UID 0"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://man7.org/linux/man-pages/man5/passwd.5.html",
+            "referencia": "Linux man-pages, passwd(5), descripción del campo UID: la cuenta privilegiada root (superusuario) tiene UID 0; root es el nombre convencional de esa cuenta."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial GSI A1 2025, tema 60: sistemas operativos UNIX-LINUX, fundamentos y administración."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial GSI A2 2025, tema II.2: fundamentos, características y administración de sistemas operativos, incluidos Linux y Unix."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 27 «Sistemas Operativos», versión 2026 actualizada: cubre fundamentos y administración de UNIX/Linux. Correspondencia directa A1-60/A2-II.2; la identificación de root y UID 0 se valida en Linux man-pages."
+          }
+        ],
+        "observaciones": "Se mantiene D (root). En UNIX/Linux, root es la cuenta privilegiada convencional; en Linux su UID es 0. Los nombres daemon, adm y bin se usan habitualmente para cuentas de servicio o del sistema, pero sus funciones concretas pueden variar entre sistemas. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas Operativos», versión 2026 actualizada: cubre fundamentos y administración de UNIX/Linux. Correspondencia directa A1-60/A2-II.2; la identificación de root y UID 0 se valida en Linux man-pages. Correspondencia oficial: A1-60/A2-II-2. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas."
+      }
     },
     {
       "id": 6712,
       "bloque": 0,
       "tema": 0,
-      "texto": "Comparando el método HTTP GET con el método HTTP POST, se cumple que:",
+      "texto": "Según la semántica de métodos de HTTP definida en RFC 9110, ¿qué afirmación distingue correctamente GET y POST?",
       "opciones": [
-        "Sólo HTTP GET está definido como idempotente.",
-        "Ambos requieren declaración explícita al usarlos en un tag HTML form.",
-        "Sólo HTTP POST puede soportar el envío de varios parámetros en un form data set en una misma petición.",
-        "Sólo HTTP POST permite que el agente de usuario haga uso del mecanismo de conexiones persistentes del protocolo."
+        "GET solicita la transferencia de una representación del recurso; POST solicita que el recurso procese el contenido de la petición según su semántica específica.",
+        "GET es el único método HTTP definido como idempotente.",
+        "POST es seguro e idempotente por definición, mientras que GET no es seguro.",
+        "HTTP prohíbe que una petición GET incluya contenido en el mensaje."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se reformula y se cambia la clave a A. RFC 9110 define GET como transferencia de una representación actual del recurso y POST como procesamiento del contenido conforme a la semántica propia del recurso. La opción B es falsa porque PUT, DELETE y los métodos seguros son idempotentes; C confunde propiedades: GET es seguro e idempotente, mientras que POST no es seguro ni idempotente por definición. D también es falsa: RFC 9110 no prohíbe contenido en GET, aunque no le asigna semántica general y su uso puede causar problemas de interoperabilidad. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1: cotejo curricular de HTTP y aplicaciones web, alineado con A1-65/A2-III.12. La semántica concreta de los métodos se comprueba en RFC 9110. Correspondencia oficial: A1-65/A2-III-12. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1: cotejo curricular de HTTP y aplicaciones web, alineado con A1-65/A2-III.12. La semántica concreta de los métodos se comprueba en RFC 9110.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1: cotejo curricular de HTTP y aplicaciones web, alineado con A1-65/A2-III.12. La semántica concreta de los métodos se comprueba en RFC 9110. Correspondencia oficial: A1-65/A2-III-12. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas."
+      },
+      "etiquetas": [
+        "HTTP",
+        "GET",
+        "POST",
+        "RFC 9110",
+        "semántica de métodos",
+        "idempotencia",
+        "seguridad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+            "referencia": "IETF RFC 9110, §§9.3.1 y 9.3.3: GET solicita transferir una representación actual del recurso; POST solicita que el recurso procese el contenido de la petición conforme a semánticas específicas del recurso. §§9.2.1–9.2.2: GET es seguro e idempotente; PUT, DELETE y los métodos seguros son idempotentes. POST no es idempotente por definición, aunque un recurso particular puede implementarlo con efectos idempotentes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial GSI A1 2025, tema 65: arquitectura y desarrollo web, tecnologías front-end y de servidor."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial GSI A2 2025, tema III.12: aplicaciones web y servicios, estándares y protocolos asociados."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1: cotejo curricular de HTTP y aplicaciones web, alineado con A1-65/A2-III.12. La semántica concreta de los métodos se comprueba en RFC 9110."
+          }
+        ],
+        "observaciones": "Se reformula y se cambia la clave a A. RFC 9110 define GET como transferencia de una representación actual del recurso y POST como procesamiento del contenido conforme a la semántica propia del recurso. La opción B es falsa porque PUT, DELETE y los métodos seguros son idempotentes; C confunde propiedades: GET es seguro e idempotente, mientras que POST no es seguro ni idempotente por definición. D también es falsa: RFC 9110 no prohíbe contenido en GET, aunque no le asigna semántica general y su uso puede causar problemas de interoperabilidad. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026.1: cotejo curricular de HTTP y aplicaciones web, alineado con A1-65/A2-III.12. La semántica concreta de los métodos se comprueba en RFC 9110. Correspondencia oficial: A1-65/A2-III-12. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas."
+      }
     },
     {
       "id": 6713,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según el artículo 44 del RD 1671/2009, cuando la Administración realice copias electrónicas de documentos en soporte no electrónico, las imágenes electrónicas tendrán la naturaleza de copias electrónicas auténticas, siempre que se cumpla (señale la FALSA):",
+      "texto": "Pregunta histórica: conforme al artículo 44.3 del derogado Real Decreto 1671/2009, ¿qué referencia NO figuraba como requisito técnico para que ciertas imágenes electrónicas fueran copias auténticas?",
       "opciones": [
-        "Que el documento copiado sea un original o una copia auténtica.",
-        "Que la copia electrónica sea autorizada mediante firma electrónica.",
-        "Que las imágenes electrónicas estén codificadas conforme a alguno de los formatos y con los niveles de calidad y condiciones técnicas especificados en el Esquema Nacional de Seguridad.",
-        "Que la copia electrónica incluya su carácter de copia entre los metadatos asociados."
+        "Que el documento copiado fuese un original o una copia auténtica.",
+        "Que la copia se autorizase mediante firma electrónica conforme a los sistemas entonces previstos.",
+        "Que formatos, niveles de calidad y condiciones técnicas se ajustasen al Esquema Nacional de Seguridad (ENS).",
+        "Que la copia incluyese entre sus metadatos su carácter de copia."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se clasifica como histórica porque el RD 1671/2009 está derogado desde el 2 de abril de 2021. Se mantiene C como falsa para el antiguo artículo 44.3: este remitía al Esquema Nacional de Interoperabilidad (ENI), no al ENS. La pregunta se acota expresamente a esa disposición derogada. Para el marco vigente de copias auténticas, consultar el artículo 27 de la Ley 39/2015 y el RD 203/2021; no debe usarse este ítem como resumen de la normativa actual. Cotejo curricular ITIC Academy: ITIC Academy, bloque 03 «Actuación administrativa y Administración digital», versión 2026.2: cotejo curricular de copias/documentos y administración electrónica, con correspondencia A1-22/A2-I.9. El ítem queda histórico por referirse a una norma derogada; la corrección legal se apoya en BOE. Correspondencia oficial: A1-22/A2-I-9. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-22"
+        ],
+        "A2": [
+          "A2-I-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 03 «Actuación administrativa y Administración digital», versión 2026.2: cotejo curricular de copias/documentos y administración electrónica, con correspondencia A1-22/A2-I.9. El ítem queda histórico por referirse a una norma derogada; la corrección legal se apoya en BOE.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 03 «Actuación administrativa y Administración digital», versión 2026.2: cotejo curricular de copias/documentos y administración electrónica, con correspondencia A1-22/A2-I.9. El ítem queda histórico por referirse a una norma derogada; la corrección legal se apoya en BOE. Correspondencia oficial: A1-22/A2-I-9. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas."
+      },
+      "etiquetas": [
+        "copias electrónicas",
+        "digitalización",
+        "RD 1671/2009",
+        "ENI",
+        "ENS",
+        "normativa derogada",
+        "histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/pdf/2009/BOE-A-2009-18358-consolidado.pdf",
+            "referencia": "BOE, Real Decreto 1671/2009, antiguo artículo 44.3: enumeraba los requisitos para que imágenes electrónicas de documentos no electrónicos tuvieran carácter de copias auténticas. Su letra c remitía expresamente a los formatos, calidad y condiciones técnicas especificados en el Esquema Nacional de Interoperabilidad (ENI), no en el ENS."
+          },
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-5032&lang=es&p=&tn=1",
+            "referencia": "BOE, Real Decreto 203/2021, disposición derogatoria única: deroga expresamente el RD 1671/2009 desde la entrada en vigor del nuevo Reglamento."
+          },
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565&p=20241106&tn=1",
+            "referencia": "BOE, Ley 39/2015, texto consolidado, artículo 27: marco vigente para copias auténticas; su apartado 3 remite al ENI, al ENS y a sus normas técnicas, e incluye los requisitos para copias electrónicas de documentos en papel."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial GSI A1 2025, tema 22: legislación de sociedad de la información y administración electrónica en España y Europa."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial GSI A2 2025, tema I.9: gestión electrónica, ENS, ENI y normas técnicas de interoperabilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 03 «Actuación administrativa y Administración digital», versión 2026.2: cotejo curricular de copias/documentos y administración electrónica, con correspondencia A1-22/A2-I.9. El ítem queda histórico por referirse a una norma derogada; la corrección legal se apoya en BOE."
+          }
+        ],
+        "observaciones": "Se clasifica como histórica porque el RD 1671/2009 está derogado desde el 2 de abril de 2021. Se mantiene C como falsa para el antiguo artículo 44.3: este remitía al Esquema Nacional de Interoperabilidad (ENI), no al ENS. La pregunta se acota expresamente a esa disposición derogada. Para el marco vigente de copias auténticas, consultar el artículo 27 de la Ley 39/2015 y el RD 203/2021; no debe usarse este ítem como resumen de la normativa actual. Cotejo curricular ITIC Academy: ITIC Academy, bloque 03 «Actuación administrativa y Administración digital», versión 2026.2: cotejo curricular de copias/documentos y administración electrónica, con correspondencia A1-22/A2-I.9. El ítem queda histórico por referirse a una norma derogada; la corrección legal se apoya en BOE. Correspondencia oficial: A1-22/A2-I-9. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas."
+      }
     },
     {
       "id": 6714,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo se denomina a la replicación remota en la que no se completan ni reconocen las operaciones de escritura locales hasta que no se han completado y reconocido las operaciones de escritura remotas†",
+      "texto": "En una replicación remota de almacenamiento en modo síncrono, ¿cuándo se confirma normalmente una escritura a la aplicación de origen?",
       "opciones": [
-        "Replicación directa.",
-        "Replicación síncrona.",
-        "Replicación asincrona.",
-        "Replicación instantánea."
+        "Inmediatamente después de escribirla en el origen, antes de enviarla al destino.",
+        "Después de que el destino confirme que ha recibido y persistido la escritura replicada, además de completar el registro en origen según la implementación.",
+        "Solo cuando se genera una instantánea periódica, con independencia del destino.",
+        "La replicación síncrona no devuelve confirmaciones de escritura al sistema de origen."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se reformula para especificar la perspectiva de confirmación a la aplicación. En replicación síncrona, la latencia de ida y vuelta forma parte de la ruta de escritura: no se confirma la operación al origen hasta que el destino haya confirmado la escritura, con los detalles de persistencia condicionados por la implementación. En replicación asíncrona, el origen puede confirmar antes de completar la copia remota. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: cotejo curricular de almacenamiento y replicación. Correspondencia A1-56/A2-IV.5; el orden de confirmación se valida en documentación técnica de Microsoft. Correspondencia oficial: A1-56/A2-IV-5. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: cotejo curricular de almacenamiento y replicación. Correspondencia A1-56/A2-IV.5; el orden de confirmación se valida en documentación técnica de Microsoft.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: cotejo curricular de almacenamiento y replicación. Correspondencia A1-56/A2-IV.5; el orden de confirmación se valida en documentación técnica de Microsoft. Correspondencia oficial: A1-56/A2-IV-5. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas."
+      },
+      "etiquetas": [
+        "almacenamiento",
+        "replicación síncrona",
+        "replicación remota",
+        "confirmación de escritura",
+        "RPO"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-replica/storage-replica-overview",
+            "referencia": "Microsoft Learn, Storage Replica: en modo síncrono la escritura no se confirma inmediatamente al sistema origen; se replica y confirma en el destino y solo entonces la aplicación recibe la confirmación."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/reliability/concept-redundancy-replication-backup",
+            "referencia": "Microsoft Learn, Redundancy, Replication, and Backup: describe el flujo de confirmación del cambio en ambas réplicas antes de dar por completada la actualización."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial GSI A1 2025, tema 56: almacenamiento para sistemas grandes y departamentales, virtualización y copias de seguridad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial GSI A2 2025, tema IV.5: arquitectura, tipos, componentes, protocolos, gestión y administración del almacenamiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: cotejo curricular de almacenamiento y replicación. Correspondencia A1-56/A2-IV.5; el orden de confirmación se valida en documentación técnica de Microsoft."
+          }
+        ],
+        "observaciones": "Se reformula para especificar la perspectiva de confirmación a la aplicación. En replicación síncrona, la latencia de ida y vuelta forma parte de la ruta de escritura: no se confirma la operación al origen hasta que el destino haya confirmado la escritura, con los detalles de persistencia condicionados por la implementación. En replicación asíncrona, el origen puede confirmar antes de completar la copia remota. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: cotejo curricular de almacenamiento y replicación. Correspondencia A1-56/A2-IV.5; el orden de confirmación se valida en documentación técnica de Microsoft. Correspondencia oficial: A1-56/A2-IV-5. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas."
+      }
     },
     {
       "id": 6715,
       "bloque": 0,
       "tema": 0,
-      "texto": "Con las siglas SCSI se identifica:",
+      "texto": "En el contexto de interfaces y almacenamiento, ¿qué describe mejor SCSI (Small Computer System Interface)?",
       "opciones": [
-        "Un estándar de facto para la interconexión entre distintas capas de OSI",
-        "Un estándar para la comunicación entre el ordenador y los periféricos a él conectados",
-        "Una arquitectura de ordenadores",
-        "Una tarjeta de video"
+        "Una familia de estándares de interfaz, arquitectura y comandos/protocolos para la comunicación entre sistemas iniciadores y dispositivos destino, incluidos periféricos y almacenamiento.",
+        "Un estándar de facto para interconectar directamente las distintas capas del modelo OSI.",
+        "Una arquitectura de procesador que define el conjunto de instrucciones de los ordenadores personales.",
+        "Una tarjeta de vídeo dedicada a transferir gráficos entre el procesador y la pantalla."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Se reformula y se cambia la clave a A. SCSI es una familia de estándares que define arquitectura, protocolos y conjuntos de comandos para que iniciadores se comuniquen con dispositivos destino; no es una capa de OSI, una arquitectura de CPU ni una tarjeta de vídeo. La familia se usa en diferentes transportes y no se limita a una conexión física paralela directa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: cotejo curricular de interfaces y protocolos de almacenamiento. Correspondencia A1-56/A2-IV.5; se confirma la familia de arquitectura/comandos en el comité INCITS T10. Correspondencia oficial: A1-56/A2-IV-5. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: cotejo curricular de interfaces y protocolos de almacenamiento. Correspondencia A1-56/A2-IV.5; se confirma la familia de arquitectura/comandos en el comité INCITS T10.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: cotejo curricular de interfaces y protocolos de almacenamiento. Correspondencia A1-56/A2-IV.5; se confirma la familia de arquitectura/comandos en el comité INCITS T10. Correspondencia oficial: A1-56/A2-IV-5. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas."
+      },
+      "etiquetas": [
+        "SCSI",
+        "Small Computer System Interface",
+        "interfaces de almacenamiento",
+        "iniciador",
+        "destino",
+        "protocolos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.t10.org/drafts.htm",
+            "referencia": "INCITS Technical Committee T10, página de estándares/borradores: identifica SCSI como familia de estándares y enumera el modelo de arquitectura SAM, protocolos, comandos y estándares para dispositivos de almacenamiento."
+          },
+          {
+            "url": "https://www.t10.org/ftp/t10/document.02/02-153r0.pdf",
+            "referencia": "Documento técnico del comité T10 sobre el modelo de comunicación SCSI: representa dispositivos iniciador y destino, unidades lógicas, protocolos de aplicación y subsistemas de entrega de servicio."
+          },
+          {
+            "url": "https://www.t10.org/lists/stds-num.htm",
+            "referencia": "INCITS T10, catálogo de descriptores de estándares: identifica versiones publicadas del SCSI Architecture Model (SAM), comandos y protocolos de la familia SCSI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial GSI A1 2025, tema 56: sistemas de almacenamiento y sus componentes para sistemas grandes/departamentales."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial GSI A2 2025, tema IV.5: arquitectura, tipos, componentes y protocolos de almacenamiento."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: cotejo curricular de interfaces y protocolos de almacenamiento. Correspondencia A1-56/A2-IV.5; se confirma la familia de arquitectura/comandos en el comité INCITS T10."
+          }
+        ],
+        "observaciones": "Se reformula y se cambia la clave a A. SCSI es una familia de estándares que define arquitectura, protocolos y conjuntos de comandos para que iniciadores se comuniquen con dispositivos destino; no es una capa de OSI, una arquitectura de CPU ni una tarjeta de vídeo. La familia se usa en diferentes transportes y no se limita a una conexión física paralela directa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1: cotejo curricular de interfaces y protocolos de almacenamiento. Correspondencia A1-56/A2-IV.5; se confirma la familia de arquitectura/comandos en el comité INCITS T10. Correspondencia oficial: A1-56/A2-IV-5. El material académico se usa como cotejo curricular; la respuesta concreta se valida en las fuentes técnicas/normativas citadas."
+      }
     },
     {
       "id": 6716,
