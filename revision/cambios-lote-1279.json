@@ -1,0 +1,390 @@
+{
+  "fecha": "2026-11-15",
+  "alcance": "IDs 6716–6720; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 6716,
+      "original": {
+        "id": 6716,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se llama al módulo, del cual una única copia cargada en memoria puede ser utilizada simultáneamente por varios usuarios?",
+        "opciones": [
+          "Módulo concurrente",
+          "Módulo compartido",
+          "Módulo reentrante",
+          "Módulo reusable"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6716,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la terminología clásica de sistemas operativos, ¿qué caracteriza a un módulo reentrante?",
+        "opciones": [
+          "Cada usuario necesita una copia independiente del código y de los datos en memoria.",
+          "Una única copia de su código puede ejecutarse simultáneamente por varias tareas, manteniendo aislado el estado modificable de cada invocación.",
+          "Solo puede ejecutarse una vez durante la vida del sistema operativo.",
+          "Es cualquier módulo compartido, aunque sus invocaciones concurrentes puedan sobrescribir datos comunes."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se corrige la clave a B. «Compartido» solo expresa que una copia es accesible por varios usuarios/tareas; para ejecutarla concurrentemente sin interferencias el módulo debe ser reentrante. Las invocaciones deben mantener separados sus datos mutables o protegerlos según el diseño. IBM y Fujitsu describen explícitamente la posibilidad de compartir una sola copia de código y las condiciones de reentrancia. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas Operativos», versión 2026: cotejo curricular de fundamentos y arquitectura de sistemas operativos. La propiedad de reentrancia y la ejecución de una copia compartida se contrastan con documentación de IBM y Fujitsu. Correspondencia oficial: A1-60/A2-II-2. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 27 «Sistemas Operativos», versión 2026: cotejo curricular de fundamentos y arquitectura de sistemas operativos. La propiedad de reentrancia y la ejecución de una copia compartida se contrastan con documentación de IBM y Fujitsu.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas Operativos», versión 2026: cotejo curricular de fundamentos y arquitectura de sistemas operativos. La propiedad de reentrancia y la ejecución de una copia compartida se contrastan con documentación de IBM y Fujitsu. Correspondencia oficial: A1-60/A2-II-2. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas."
+        },
+        "etiquetas": [
+          "reentrancia",
+          "módulo reentrante",
+          "código compartido",
+          "concurrencia",
+          "datos privados por tarea"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.ibm.com/docs/en/zvm/7.3.0?topic=program-preparing-reentrant",
+              "referencia": "IBM z/VM Programming: reentrancy permite a más de un usuario compartir una copia del módulo cargable o reutilizarlo; el código no debe interferir entre invocaciones y el estado modificable se separa por usuario."
+            },
+            {
+              "url": "https://bs2manuals.ts.fujitsu.com/download/manual/20581",
+              "referencia": "Fujitsu BS2000, sección “Shareable programs”: una única copia de código compartido puede ejecutarse simultáneamente por varias tareas y debe estar programada como reentrante."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial GSI A1 2025, tema 60: sistemas operativos UNIX/Linux y administración."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial GSI A2 2025, tema II.2: fundamentos y características funcionales/de administración de sistemas operativos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 27 «Sistemas Operativos», versión 2026: cotejo curricular de fundamentos y arquitectura de sistemas operativos. La propiedad de reentrancia y la ejecución de una copia compartida se contrastan con documentación de IBM y Fujitsu."
+            }
+          ],
+          "observaciones": "Se corrige la clave a B. «Compartido» solo expresa que una copia es accesible por varios usuarios/tareas; para ejecutarla concurrentemente sin interferencias el módulo debe ser reentrante. Las invocaciones deben mantener separados sus datos mutables o protegerlos según el diseño. IBM y Fujitsu describen explícitamente la posibilidad de compartir una sola copia de código y las condiciones de reentrancia. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas Operativos», versión 2026: cotejo curricular de fundamentos y arquitectura de sistemas operativos. La propiedad de reentrancia y la ejecución de una copia compartida se contrastan con documentación de IBM y Fujitsu. Correspondencia oficial: A1-60/A2-II-2. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas."
+        }
+      }
+    },
+    {
+      "id": 6717,
+      "original": {
+        "id": 6717,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale qué tecnología estandarizada por el W3C permite la extracción de datos desde documentos XML:",
+        "opciones": [
+          "XML MyQueryLang.",
+          "XSQL Language.",
+          "XML QueryDataSet.",
+          "Xquery Language."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6717,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué lenguaje estandarizado por el W3C está diseñado para consultar y extraer datos de documentos o fuentes XML?",
+        "opciones": [
+          "XSQL, un lenguaje de administración de bases de datos relacionales.",
+          "XQuery (XML Query), lenguaje de consulta para datos estructurados como XML.",
+          "XML QueryDataSet, un formato de compresión de documentos.",
+          "XML MyQueryLang, el lenguaje de hojas de estilo del W3C."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Se corrige B y se elimina la denominación inventada «Xquery Language». XQuery es el lenguaje de consulta del W3C para consultar fuentes XML; XPath es una tecnología relacionada para navegar/seleccionar nodos, pero no sustituye la respuesta al enunciado. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, §9.4: incluye XPath, XSLT y XQuery dentro de XML y sus derivaciones. Alineación oficial A1-77/A2-II.9; definición validada en W3C. Correspondencia oficial: A1-77/A2-II-9. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-77"
+          ],
+          "A2": [
+            "A2-II-9"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, §9.4: incluye XPath, XSLT y XQuery dentro de XML y sus derivaciones. Alineación oficial A1-77/A2-II.9; definición validada en W3C.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, §9.4: incluye XPath, XSLT y XQuery dentro de XML y sus derivaciones. Alineación oficial A1-77/A2-II.9; definición validada en W3C. Correspondencia oficial: A1-77/A2-II-9. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas."
+        },
+        "etiquetas": [
+          "XML",
+          "XQuery",
+          "W3C Recommendation",
+          "consulta de datos",
+          "XPath"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.w3.org/TR/xquery-31/",
+              "referencia": "W3C Recommendation, XQuery 3.1: especifica XQuery como lenguaje de consulta aplicable a diversas fuentes XML; el modelo permite consultar nodos/estructuras y extraer los datos que satisfacen la expresión."
+            },
+            {
+              "url": "https://www.w3.org/TR/xquery-requirements/",
+              "referencia": "W3C XML Query Requirements: establece la consulta de documentos XML/colecciones para seleccionar documentos o subárboles según contenido/estructura y extraer información."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial GSI A1 2025, tema 77: lenguajes y herramientas para redes globales, incluidos XML y derivados."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial GSI A2 2025, tema II.9: lenguajes de marca, XML y sus derivaciones."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, §9.4: incluye XPath, XSLT y XQuery dentro de XML y sus derivaciones. Alineación oficial A1-77/A2-II.9; definición validada en W3C."
+            }
+          ],
+          "observaciones": "Se corrige B y se elimina la denominación inventada «Xquery Language». XQuery es el lenguaje de consulta del W3C para consultar fuentes XML; XPath es una tecnología relacionada para navegar/seleccionar nodos, pero no sustituye la respuesta al enunciado. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 «Tecnologías de sistemas de la información», versión 2026.1, §9.4: incluye XPath, XSLT y XQuery dentro de XML y sus derivaciones. Alineación oficial A1-77/A2-II.9; definición validada en W3C. Correspondencia oficial: A1-77/A2-II-9. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas."
+        }
+      }
+    },
+    {
+      "id": 6718,
+      "original": {
+        "id": 6718,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de éstas es la codificación en formato binario de un certificado X.509v3?",
+        "opciones": [
+          "DER",
+          "CERT",
+          "PME",
+          "Ninguno de los anteriores"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6718,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el formato ASN.1 definido por RFC 5280, ¿qué reglas de codificación se utilizan para representar el certificado X.509 (incluido el perfil v3)?",
+        "opciones": [
+          "DER (Distinguished Encoding Rules).",
+          "CERT, una codificación binaria normalizada para certificados.",
+          "PME, un método de codificación definido por X.509.",
+          "Ninguna: el estándar solo define certificados en texto ASCII."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se mantiene A, pero se precisa el contexto: DER es la codificación binaria ASN.1 del objeto certificado que exige el perfil de RFC 5280. Un archivo PEM es una representación textual Base64 con delimitadores que encapsula el objeto DER; no es una codificación binaria alternativa del certificado. Cotejo curricular ITIC Academy: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», edición 2026, sección 9: certificados digitales X.509 y PKI; correspondencia A1-80/A2-I.6. La codificación DER se valida en RFC 5280, no en el material académico. Correspondencia oficial: A1-80/A2-I-6. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-80"
+          ],
+          "A2": [
+            "A2-I-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», edición 2026, sección 9: certificados digitales X.509 y PKI; correspondencia A1-80/A2-I.6. La codificación DER se valida en RFC 5280, no en el material académico.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», edición 2026, sección 9: certificados digitales X.509 y PKI; correspondencia A1-80/A2-I.6. La codificación DER se valida en RFC 5280, no en el material académico. Correspondencia oficial: A1-80/A2-I-6. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas."
+        },
+        "etiquetas": [
+          "X.509",
+          "X.509v3",
+          "DER",
+          "ASN.1",
+          "certificado digital",
+          "codificación binaria"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc5280.html",
+              "referencia": "IETF RFC 5280, §4.1: define la estructura ASN.1 del certificado X.509 y dispone su codificación conforme a Distinguished Encoding Rules (DER)."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc7468.html",
+              "referencia": "IETF RFC 7468: distingue la forma textual encapsulada PEM (Base64 con delimitadores) de los objetos ASN.1 subyacentes codificados en DER."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial GSI A1 2025, tema 80: certificados digitales, claves públicas/privadas y formatos de firma electrónica."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial GSI A2 2025, tema I.6: identidad y firma electrónica, eIDAS y DNI electrónico."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», edición 2026, sección 9: certificados digitales X.509 y PKI; correspondencia A1-80/A2-I.6. La codificación DER se valida en RFC 5280, no en el material académico."
+            }
+          ],
+          "observaciones": "Se mantiene A, pero se precisa el contexto: DER es la codificación binaria ASN.1 del objeto certificado que exige el perfil de RFC 5280. Un archivo PEM es una representación textual Base64 con delimitadores que encapsula el objeto DER; no es una codificación binaria alternativa del certificado. Cotejo curricular ITIC Academy: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», edición 2026, sección 9: certificados digitales X.509 y PKI; correspondencia A1-80/A2-I.6. La codificación DER se valida en RFC 5280, no en el material académico. Correspondencia oficial: A1-80/A2-I-6. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas."
+        }
+      }
+    },
+    {
+      "id": 6719,
+      "original": {
+        "id": 6719,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El protocolo MESI es un protocolo de coherencia de caché y coherencia de memoria y sus siglas significan:",
+        "opciones": [
+          "Modified, Exclusive, Shared, Invalid.",
+          "Memory Extended Shared Interface.",
+          "Memory Exclusive Soft Index.",
+          "Multi Enviroment Shared Interface."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6719,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "MESI es un protocolo clásico de coherencia de caché. ¿Qué nombres corresponden a sus cuatro estados?",
+        "opciones": [
+          "Modified, Exclusive, Shared, Invalid.",
+          "Memory Extended Shared Interface.",
+          "Memory Exclusive Soft Index.",
+          "Multi Environment Shared Interface."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Se mantiene A. MESI nombra cuatro estados posibles de una línea en el protocolo clásico de coherencia de caché: Modified, Exclusive, Shared e Invalid. No se afirma que toda arquitectura moderna utilice exclusivamente MESI; existen variantes como MESIF y MOESI, entre otras. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026.1: cubre arquitectura de sistemas de altas prestaciones, procesadores y jerarquía de caché; alineación A1-52/A2-II.1. La definición de estados MESI se confirma en documentación de fabricante/estándar técnico. Correspondencia oficial: A1-52/A2-II-1. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-52"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026.1: cubre arquitectura de sistemas de altas prestaciones, procesadores y jerarquía de caché; alineación A1-52/A2-II.1. La definición de estados MESI se confirma en documentación de fabricante/estándar técnico.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026.1: cubre arquitectura de sistemas de altas prestaciones, procesadores y jerarquía de caché; alineación A1-52/A2-II.1. La definición de estados MESI se confirma en documentación de fabricante/estándar técnico. Correspondencia oficial: A1-52/A2-II-1. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas."
+        },
+        "etiquetas": [
+          "MESI",
+          "coherencia de caché",
+          "Modified",
+          "Exclusive",
+          "Shared",
+          "Invalid",
+          "multiprocesador"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.intel.com/content/www/us/en/developer/articles/technical/fast-core-to-core-communications.html",
+              "referencia": "Intel Developer, “Faster Core-to-Core Communications”: describe MESI como Modified, Exclusive, Shared e Invalid, y explica los estados como protocolo de coherencia de líneas de caché entre núcleos."
+            },
+            {
+              "url": "https://s3-eu-west-1.amazonaws.com/downloads-mips/documents/MD00605-2B-CMPCOHERE-AFP-01.01.pdf",
+              "referencia": "MIPS Coherence Protocol Specification, sección 3.1.1: define los cuatro estados MESI de una línea de caché y las reglas de transición para conservar coherencia entre cachés."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial GSI A1 2025, tema 52: sistemas de altas prestaciones, grid computing y mainframe."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial GSI A2 2025, tema II.1: arquitecturas escalables y de altas prestaciones, desde dispositivos hasta superordenadores."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026.1: cubre arquitectura de sistemas de altas prestaciones, procesadores y jerarquía de caché; alineación A1-52/A2-II.1. La definición de estados MESI se confirma en documentación de fabricante/estándar técnico."
+            }
+          ],
+          "observaciones": "Se mantiene A. MESI nombra cuatro estados posibles de una línea en el protocolo clásico de coherencia de caché: Modified, Exclusive, Shared e Invalid. No se afirma que toda arquitectura moderna utilice exclusivamente MESI; existen variantes como MESIF y MOESI, entre otras. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026.1: cubre arquitectura de sistemas de altas prestaciones, procesadores y jerarquía de caché; alineación A1-52/A2-II.1. La definición de estados MESI se confirma en documentación de fabricante/estándar técnico. Correspondencia oficial: A1-52/A2-II-1. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas."
+        }
+      }
+    },
+    {
+      "id": 6720,
+      "original": {
+        "id": 6720,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La compresión con pérdidas no sería adecuada para:",
+        "opciones": [
+          "Un ejecutable",
+          "Texto ASCII",
+          "Un facsímil",
+          "Las respuestas ‘a’ y ‘b’ son correctas"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6720,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si es necesario recuperar exactamente los datos originales, la compresión con pérdidas no es adecuada para:",
+        "opciones": [
+          "Un fichero ejecutable que debe conservar cada bit para seguir funcionando.",
+          "Un fichero de texto que debe reproducirse exactamente, sin alterar caracteres ni bytes.",
+          "Una imagen de facsímil cuya finalidad admita una aproximación visual con pérdida controlada.",
+          "Las respuestas A y B."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Se mantiene D y se incorpora la condición que faltaba en el original: que los datos deban recuperarse exactamente. Los ficheros ejecutables y el texto requieren preservar sus bits/contenido; se usa compresión sin pérdida. Un facsímil puede comprimirse con pérdidas si el uso acepta degradación visual, por lo que no se presenta como una prohibición absoluta. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026.1, §§7.4 y multimedia: cotejo curricular de compresión y tratamiento/almacenamiento de información. La exigencia de reconstrucción exacta se comprueba en fuentes de preservación digital y estándares técnicos. Correspondencia oficial: A1-56/A2-IV-5. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026.1, §§7.4 y multimedia: cotejo curricular de compresión y tratamiento/almacenamiento de información. La exigencia de reconstrucción exacta se comprueba en fuentes de preservación digital y estándares técnicos.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026.1, §§7.4 y multimedia: cotejo curricular de compresión y tratamiento/almacenamiento de información. La exigencia de reconstrucción exacta se comprueba en fuentes de preservación digital y estándares técnicos. Correspondencia oficial: A1-56/A2-IV-5. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas."
+        },
+        "etiquetas": [
+          "compresión",
+          "compresión con pérdidas",
+          "compresión sin pérdidas",
+          "ficheros ejecutables",
+          "texto",
+          "facsímil"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.archives.gov/preservation/technical/imaging-storage-report.html",
+              "referencia": "U.S. National Archives, Digital-Imaging Report: distingue compresión con y sin pérdidas; para documentos cuyo requisito es fidelidad exacta recomienda técnicas sin pérdida. La reconstrucción sin pérdida reproduce el original idéntico."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1951.html",
+              "referencia": "IETF RFC 1951, DEFLATE: especifica un formato de compresión de datos general sin pérdida, apto para reconstrucción exacta de flujos de octetos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial GSI A1 2025, tema 56: dispositivos para tratamiento de información multimedia y almacenamiento."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial GSI A2 2025, tema IV.5: almacenamiento de datos, componentes, protocolos y administración."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026.1, §§7.4 y multimedia: cotejo curricular de compresión y tratamiento/almacenamiento de información. La exigencia de reconstrucción exacta se comprueba en fuentes de preservación digital y estándares técnicos."
+            }
+          ],
+          "observaciones": "Se mantiene D y se incorpora la condición que faltaba en el original: que los datos deban recuperarse exactamente. Los ficheros ejecutables y el texto requieren preservar sus bits/contenido; se usa compresión sin pérdida. Un facsímil puede comprimirse con pérdidas si el uso acepta degradación visual, por lo que no se presenta como una prohibición absoluta. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», edición 2026.1, §§7.4 y multimedia: cotejo curricular de compresión y tratamiento/almacenamiento de información. La exigencia de reconstrucción exacta se comprueba en fuentes de preservación digital y estándares técnicos. Correspondencia oficial: A1-56/A2-IV-5. El cotejo académico acredita cobertura curricular; las respuestas se sostienen en las fuentes técnicas primarias citadas."
+        }
+      }
+    }
+  ]
+}
