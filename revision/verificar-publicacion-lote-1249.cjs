@@ -1,0 +1,16 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const assert=require('node:assert/strict');
+const file=path.join(__dirname,'README.md');
+let readme=fs.readFileSync(file,'utf8');
+const start=readme.indexOf('## Lote 1249 —');
+assert.ok(start>=0,'No se encuentra el lote 1249');
+const end=readme.indexOf('## Lote 1248 —',start);
+assert.ok(end>start,'No se encuentra el límite del lote anterior');
+let section=readme.slice(start,end);
+const proof='Publicación verificada: commit de datos `5ec1cf0` (`5ec1cf095be3b8d8f32cf4ff1b80bd076dd83e93`); [workflow Deploy GitHub Pages 43531914548](https://github.com/itic-academy/simulador-tic/actions/runs/43531914548) completado con estado **Success** e incluye ese commit. GitHub Pages devolvió HTTP 200 sin caché para README, `cambios-lote-1249.json`, `inventario.json` y el banco. El registro público contiene 6566–6570 con estados pendiente_ambiguedad, corregida, corregida, corregida e histórica; las respuestas servidas son 3, 1, 1, 1 y 1 (la clave del 6566 se conserva solo como dato original pendiente, no validado). El inventario público confirma 6.565 examinadas; 6.450 verificadas (1.277 vigentes, 4.706 corregidas y 467 históricas); 115 pendientes (45 de fuente y 70 de ambigüedad); 5.558 sin revisar; errores estructurales: 0.';
+if(section.includes('Pendiente verificar la publicación del lote.')) section=section.replace('Pendiente verificar la publicación del lote.',proof);
+else assert.ok(section.includes('43531914548'),'El lote no consta como verificado');
+readme=readme.slice(0,start)+section+readme.slice(end);
+fs.writeFileSync(file,readme);
+console.log('README: publicación del lote 1249 documentada.');
