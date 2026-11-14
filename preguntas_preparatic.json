@@ -350917,71 +350917,321 @@
       "id": 6676,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los conjuntos de escala de máquinas virtuales son un recurso de Proceso de Azure que se puede usar para implementar y administrar un conjunto de máquinas virtuales idénticas. ¿Cuántas máquinas virtuales puede tener en un conjunto de escala de máquinas virtuales?",
+      "texto": "Según la documentación actual de Azure VM Scale Sets, ¿qué límites máximos se aplican a imágenes estándar/galería y a la imagen administrada heredada?",
       "opciones": [
-        "10 si usa imágenes de plataforma que se puedan distribuir entre varias cuentas de almacenamiento. Si usa imágenes personalizadas, hasta 4.",
-        "25 si usa imágenes de plataforma que se puedan distribuir entre varias cuentas de almacenamiento. Si usa imágenes personalizadas, hasta 10.",
-        "50 si usa imágenes de plataforma que se puedan distribuir entre varias cuentas de almacenamiento. Si usa imágenes personalizadas, hasta 25.",
-        "100 si usa imágenes de plataforma que se puedan distribuir entre varias cuentas de almacenamiento. Si usa imágenes personalizadas, hasta 40."
+        "Hasta 1.000 instancias con imágenes estándar de Marketplace o imágenes personalizadas de Azure Compute Gallery; hasta 600 con una imagen administrada heredada.",
+        "100 instancias con imágenes de plataforma y 40 con cualquier imagen personalizada, sin importar el almacenamiento.",
+        "25 con imagen estándar y 10 con imagen personalizada.",
+        "El servicio no establece límites máximos de instancias."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "La clave A es correcta según la documentación consultada el 14-11-2026: hasta 1.000 instancias con imágenes estándar de Marketplace o imágenes de Azure Compute Gallery, y hasta 600 con la imagen administrada heredada. El límite no es una constante independiente del tipo de imagen, del modelo de almacenamiento, del modo de orquestación y de las cuotas aplicables. Se reemplaza la tabla antigua 100/40 por límites actuales y se identifica exactamente el escenario comparado. Cotejo curricular: ITIC Academy, bloque Hardware 2026, recursos de servidor/virtualización y capacidad: cotejo de encaje curricular general. No se confirma que el temario especifique cuotas de Azure VM Scale Sets; el límite se toma de Microsoft Learn. Correspondencia oficial: A1-55/A1-57/A2-II-6/A2-IV-6. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-55",
+          "A1-57"
+        ],
+        "A2": [
+          "A2-II-6",
+          "A2-IV-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque Hardware 2026, recursos de servidor/virtualización y capacidad: cotejo de encaje curricular general. No se confirma que el temario especifique cuotas de Azure VM Scale Sets; el límite se toma de Microsoft Learn.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque Hardware 2026, recursos de servidor/virtualización y capacidad: cotejo de encaje curricular general. No se confirma que el temario especifique cuotas de Azure VM Scale Sets; el límite se toma de Microsoft Learn. Correspondencia oficial: A1-55/A1-57/A2-II-6/A2-IV-6. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria."
+      },
+      "etiquetas": [
+        "Azure VM Scale Sets",
+        "máquinas virtuales",
+        "imágenes de Marketplace",
+        "Azure Compute Gallery",
+        "imagen administrada",
+        "cuotas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets",
+            "referencia": "Microsoft Learn, visión general y límites de Azure VM Scale Sets: hasta 1.000 instancias con imágenes Marketplace estándar y custom images de Azure Compute Gallery; hasta 600 si el conjunto se crea con managed image heredada."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/azure-subscription-service-limits#azure-virtual-machine-scale-sets-limits",
+            "referencia": "Microsoft Learn, cuotas de suscripción/VM Scale Sets: máximo documentado de 1.000 VMs por conjunto y 600 con una imagen VM personalizada administrada (legacy managed image)."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-design-overview",
+            "referencia": "Microsoft Learn, diseño de VM Scale Sets: distingue discos administrados de almacenamiento administrado por el usuario; las capacidades anteriores dependen del modo de almacenamiento/imagen."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, temas 55 (Cloud Computing) y 57 (servidores y virtualización de servidores)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, temas II.6 (arquitectura de sistemas cliente-servidor) y IV.6 (virtualización, consolidación y dimensionamiento de recursos)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Hardware 2026, recursos de servidor/virtualización y capacidad: cotejo de encaje curricular general. No se confirma que el temario especifique cuotas de Azure VM Scale Sets; el límite se toma de Microsoft Learn."
+          }
+        ],
+        "observaciones": "La clave A es correcta según la documentación consultada el 14-11-2026: hasta 1.000 instancias con imágenes estándar de Marketplace o imágenes de Azure Compute Gallery, y hasta 600 con la imagen administrada heredada. El límite no es una constante independiente del tipo de imagen, del modelo de almacenamiento, del modo de orquestación y de las cuotas aplicables. Se reemplaza la tabla antigua 100/40 por límites actuales y se identifica exactamente el escenario comparado. Cotejo curricular: ITIC Academy, bloque Hardware 2026, recursos de servidor/virtualización y capacidad: cotejo de encaje curricular general. No se confirma que el temario especifique cuotas de Azure VM Scale Sets; el límite se toma de Microsoft Learn. Correspondencia oficial: A1-55/A1-57/A2-II-6/A2-IV-6. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria."
+      }
     },
     {
       "id": 6677,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indica la opción que no, debería considerarse en la estimación del dimensionamiento de los servidores en una infraestructura virtualizada:",
+      "texto": "Al estimar los recursos de capacidad de un host de virtualización (cómputo, memoria, almacenamiento y red), ¿qué opción no es por sí misma una dimensión cuantitativa de esos recursos?",
       "opciones": [
-        "Estrategia de almacenamiento.",
-        "Ubicación física.",
-        "Memoria RAM.",
-        "Infraestructura LAN."
+        "La estrategia de almacenamiento y sus requisitos de capacidad/rendimiento.",
+        "La ubicación física del host, considerada como coordenada de emplazamiento.",
+        "La memoria RAM necesaria para las cargas virtualizadas.",
+        "La capacidad y el rendimiento de la infraestructura LAN."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "La clave B es correcta para el criterio delimitado: la capacidad del host se dimensiona en términos de recursos de cómputo, memoria, almacenamiento y red. El emplazamiento físico sí importa para ubicación, latencia, energía, zonas, resiliencia y cumplimiento, pero no es una magnitud de capacidad del servidor. La formulación original era ambigua porque «dimensionamiento» puede incluir el diseño global del CPD; ahora se precisa que se pregunta por dimensiones de recursos del host. Cotejo curricular: ITIC Academy, bloque Hardware 2026, dimensionamiento de servidores, recursos de cómputo, almacenamiento y virtualización: cotejo general. El reactivo se acota a capacidad cuantitativa del host, no al emplazamiento global del CPD. Correspondencia oficial: A1-28/A1-57/A2-IV-6. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-28",
+          "A1-57"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque Hardware 2026, dimensionamiento de servidores, recursos de cómputo, almacenamiento y virtualización: cotejo general. El reactivo se acota a capacidad cuantitativa del host, no al emplazamiento global del CPD.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque Hardware 2026, dimensionamiento de servidores, recursos de cómputo, almacenamiento y virtualización: cotejo general. El reactivo se acota a capacidad cuantitativa del host, no al emplazamiento global del CPD. Correspondencia oficial: A1-28/A1-57/A2-IV-6. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria."
+      },
+      "etiquetas": [
+        "dimensionamiento",
+        "virtualización",
+        "CPU",
+        "RAM",
+        "almacenamiento",
+        "red LAN",
+        "emplazamiento físico",
+        "capacidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/well-architected/design-guides/capacity-resilience",
+            "referencia": "Microsoft Azure Well-Architected, guía de capacidad: dimensionamiento de capacidad estima CPU, memoria, almacenamiento y ancho de banda de red para la demanda actual y prevista; la ubicación se trata aparte como criterio de latencia/emplazamiento."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-machines",
+            "referencia": "Microsoft Azure Well-Architected, arquitectura de VMs: el right-sizing usa demanda de cómputo, memoria, discos y red; la distribución geográfica/zonal afecta latencia y resiliencia, pero no es una dimensión cuantitativa de los recursos de cómputo del host."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, temas 28 (dimensionamiento eficiente de sistemas de información) y 57 (servidores/virtualización)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema IV.6: dimensionamiento de CPD, virtualización/consolidación y protección."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Hardware 2026, dimensionamiento de servidores, recursos de cómputo, almacenamiento y virtualización: cotejo general. El reactivo se acota a capacidad cuantitativa del host, no al emplazamiento global del CPD."
+          }
+        ],
+        "observaciones": "La clave B es correcta para el criterio delimitado: la capacidad del host se dimensiona en términos de recursos de cómputo, memoria, almacenamiento y red. El emplazamiento físico sí importa para ubicación, latencia, energía, zonas, resiliencia y cumplimiento, pero no es una magnitud de capacidad del servidor. La formulación original era ambigua porque «dimensionamiento» puede incluir el diseño global del CPD; ahora se precisa que se pregunta por dimensiones de recursos del host. Cotejo curricular: ITIC Academy, bloque Hardware 2026, dimensionamiento de servidores, recursos de cómputo, almacenamiento y virtualización: cotejo general. El reactivo se acota a capacidad cuantitativa del host, no al emplazamiento global del CPD. Correspondencia oficial: A1-28/A1-57/A2-IV-6. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria."
+      }
     },
     {
       "id": 6678,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la falsa a cerca de las obligaciones del encargado de la cuenta de Twitter de un Ministerio según la Guía de Comunicación Digital de la AGE:",
+      "texto": "Según el fascículo de Twitter de la Guía de Comunicación Digital de la AGE de 2013, ¿qué afirmación contradice sus recomendaciones obligatorias para las cuentas institucionales?",
       "opciones": [
-        "La denominación de las cuentas de departamentos o servicios se forma a partir del nombre propio del ámbito, servicio o marca y añadiendo el sufijo gob.es",
-        "Usar cuentas personales para que no puedan ser heredadas",
-        "Las cuentas se personalizarán con la imagen gráfica adecuada de acuerdo con los elementos de la imagen institucional",
-        "Cada cuenta debe estar asociada a un correo diferente"
+        "Usar una denominación institucional basada en el ámbito/servicio y el sufijo gob.es, conforme al formato descrito en esa edición.",
+        "Usar cuentas personales para evitar que la cuenta pueda heredarse entre equipos.",
+        "Asociar cada cuenta a una dirección de correo diferente, según la limitación que recogía aquella edición de Twitter.",
+        "Personalizar la cuenta con la imagen gráfica institucional adecuada."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La clave B es la afirmación contraria. El fascículo de 2013 pide cuentas genéricas y no personales precisamente para que puedan heredarse entre equipos; también recomienda una dirección de correo distinta para cada cuenta, una denominación institucional con gob.es e imagen corporativa. Se marca histórica: la pregunta está circunscrita a recomendaciones y detalles del documento de 2013, no describe requisitos actuales de X/Twitter ni la configuración vigente de identidad institucional, que fue actualizada posteriormente. Cotejo curricular: ITIC Academy, bloque 50, redes sociales y Guía de Comunicación Digital AGE: cotejo curricular. La pregunta es histórica y cita expresamente el fascículo de Twitter de 2013, no prácticas de X vigentes. Correspondencia oficial: A1-133/A2-III-14. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-133"
+        ],
+        "A2": [
+          "A2-III-14"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 50, redes sociales y Guía de Comunicación Digital AGE: cotejo curricular. La pregunta es histórica y cita expresamente el fascículo de Twitter de 2013, no prácticas de X vigentes.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 50, redes sociales y Guía de Comunicación Digital AGE: cotejo curricular. La pregunta es histórica y cita expresamente el fascículo de Twitter de 2013, no prácticas de X vigentes. Correspondencia oficial: A1-133/A2-III-14. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria."
+      },
+      "etiquetas": [
+        "Guía de Comunicación Digital AGE",
+        "Twitter",
+        "cuentas institucionales",
+        "cuentas genéricas",
+        "histórica",
+        "resolución 2013"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/pdf/2013/BOE-A-2013-3528-consolidado.pdf",
+            "referencia": "Guía de Comunicación Digital AGE aprobada por Resolución de 21-03-2013, fascículo Tecnología Web 2.0, sección Twitter, pp. 29–30: prescribe cuentas genéricas y no personales para facilitar su sucesión entre equipos; cada una con correo distinto; recomienda denominación institucional y personalización con imagen corporativa."
+          },
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A740910dd-55a0-49f5-9712-154084a09ebb/8-Guia-de-Comunicacion-Digital-para-la-AGE-Tecnologias-web-2-0-_25-02-2013_-.pdf",
+            "referencia": "Fascículo oficial de la Guía de Comunicación Digital AGE 2013, pp. 29–30: «utilizar siempre cuentas genéricas y no personales» para que puedan heredarse entre equipos; correo diferente por cuenta, sufijo gob.es e imagen institucional."
+          },
+          {
+            "url": "https://administracionelectronica.gob.es/documentacion/legislacion-nacional/leyes-normativas-basicas",
+            "referencia": "Portal de Administración Electrónica, ficha de la Guía: informa de la actualización de configuraciones de imagen institucional en 2022; por ello el reactivo queda limitado expresamente al texto histórico de 2013."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 133: herramientas colaborativas, redes sociales y Guía de Comunicación Digital de la AGE."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema III.14: accesibilidad, usabilidad y Guía de Comunicación Digital de la AGE."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 50, redes sociales y Guía de Comunicación Digital AGE: cotejo curricular. La pregunta es histórica y cita expresamente el fascículo de Twitter de 2013, no prácticas de X vigentes."
+          }
+        ],
+        "observaciones": "La clave B es la afirmación contraria. El fascículo de 2013 pide cuentas genéricas y no personales precisamente para que puedan heredarse entre equipos; también recomienda una dirección de correo distinta para cada cuenta, una denominación institucional con gob.es e imagen corporativa. Se marca histórica: la pregunta está circunscrita a recomendaciones y detalles del documento de 2013, no describe requisitos actuales de X/Twitter ni la configuración vigente de identidad institucional, que fue actualizada posteriormente. Cotejo curricular: ITIC Academy, bloque 50, redes sociales y Guía de Comunicación Digital AGE: cotejo curricular. La pregunta es histórica y cita expresamente el fascículo de Twitter de 2013, no prácticas de X vigentes. Correspondencia oficial: A1-133/A2-III-14. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria."
+      }
     },
     {
       "id": 6679,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes capas de iOS se encarga directamente de las funcionalidades relacionadas con la interfaz de usuario?:",
+      "texto": "Según el modelo por capas del manual archivado de arquitectura de iOS de Apple, ¿qué capa de frameworks de aplicación incluía UIKit y las funciones de interfaz de usuario?",
       "opciones": [
-        "Capa del núcleo (Core OS).",
-        "Capa de Servicios Principales (Core Services).",
-        "Capa de Medios (Media).",
-        "Capa Cocoa Touch."
+        "Core OS.",
+        "Core Services.",
+        "Media.",
+        "Cocoa Touch."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "La clave D es correcta dentro del modelo histórico que especifica el enunciado: Apple describía Cocoa Touch como la capa de frameworks de aplicación e incluía UIKit, framework que presenta objetos de interfaz y gestiona eventos. Se marca histórica porque la referencia es documentación archivada y Apple advierte que puede no representar las prácticas actuales; no se generaliza la taxonomía de cuatro capas a las versiones vigentes de iOS. Cotejo curricular: ITIC Academy, bloque 47, sistemas operativos móviles y desarrollo Objective-C/Swift para iOS: cotejo general del ecosistema; el nombre Cocoa Touch se contrasta con la documentación archivada de Apple. Correspondencia oficial: A1-62/A2-II-2. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-62"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 47, sistemas operativos móviles y desarrollo Objective-C/Swift para iOS: cotejo general del ecosistema; el nombre Cocoa Touch se contrasta con la documentación archivada de Apple.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 47, sistemas operativos móviles y desarrollo Objective-C/Swift para iOS: cotejo general del ecosistema; el nombre Cocoa Touch se contrasta con la documentación archivada de Apple. Correspondencia oficial: A1-62/A2-II-2. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria."
+      },
+      "etiquetas": [
+        "iOS",
+        "Cocoa Touch",
+        "UIKit",
+        "arquitectura histórica",
+        "documentación Apple archivada"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaFundamentals/WhatIsCocoa/WhatIsCocoa.html",
+            "referencia": "Apple, Cocoa Fundamentals Guide archivada, apartado «How Cocoa Fits into iOS»: la capa de frameworks de aplicación de iOS se denominaba Cocoa Touch; incluye UIKit, que provee objetos de interfaz y gestión de eventos."
+          },
+          {
+            "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Cocoa.html",
+            "referencia": "Apple Developer, Cocoa (Touch), marcado expresamente como documento retirado: UIKit se utiliza para crear interfaces de usuario en aplicaciones iOS. Se conserva la afirmación como modelo arquitectónico histórico."
+          },
+          {
+            "url": "https://developer.apple.com/documentation/uikit/views-and-controls",
+            "referencia": "Apple Developer, documentación actual de UIKit: las vistas y controles son los componentes visuales de la interfaz; se cita solo para corroborar la función UI, no para afirmar que la arquitectura actual use exactamente la taxonomía antigua de cuatro capas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 62: conceptos básicos de iOS y otros sistemas operativos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema II.2: fundamentos y sistemas operativos para dispositivos móviles."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1nXa2jkiUqpu31smkt5D8WswcTgEN7XlB/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 47, sistemas operativos móviles y desarrollo Objective-C/Swift para iOS: cotejo general del ecosistema; el nombre Cocoa Touch se contrasta con la documentación archivada de Apple."
+          }
+        ],
+        "observaciones": "La clave D es correcta dentro del modelo histórico que especifica el enunciado: Apple describía Cocoa Touch como la capa de frameworks de aplicación e incluía UIKit, framework que presenta objetos de interfaz y gestiona eventos. Se marca histórica porque la referencia es documentación archivada y Apple advierte que puede no representar las prácticas actuales; no se generaliza la taxonomía de cuatro capas a las versiones vigentes de iOS. Cotejo curricular: ITIC Academy, bloque 47, sistemas operativos móviles y desarrollo Objective-C/Swift para iOS: cotejo general del ecosistema; el nombre Cocoa Touch se contrasta con la documentación archivada de Apple. Correspondencia oficial: A1-62/A2-II-2. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria."
+      }
     },
     {
       "id": 6680,
       "bloque": 0,
       "tema": 0,
-      "texto": "En Java, la sentencia try-catch-throw se utiliza:",
+      "texto": "En Java, ¿para qué se utiliza principalmente una sentencia try con una o más cláusulas catch?",
       "opciones": [
-        "En sentencias switch para alterar el control de flujo.",
-        "Para manejar excepciones.",
-        "Como la sentencia while, para ejecutar bucles.",
-        "Para devolver el control del programa al final de un método."
+        "Para alterar el flujo de una sentencia switch.",
+        "Para gestionar excepciones: el bloque catch puede tratar las excepciones lanzadas desde el bloque try.",
+        "Para repetir instrucciones como un bucle while.",
+        "Para devolver el control al final de un método."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "La clave B es correcta. La sentencia try delimita código que puede lanzar excepciones y las cláusulas catch establecen manejadores para los tipos que capturan; throw es una sentencia separada que lanza explícitamente una excepción. Se corrige el nombre informal «try-catch-throw» del reactivo para distinguir los constructos del lenguaje. Cotejo curricular: ITIC Academy, bloque 30, tecnologías de sistemas de información y programación Java: cotejo curricular general; la sintaxis se establece según Java Language Specification SE 26. Correspondencia oficial: A1-67/A2-II-3. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30, tecnologías de sistemas de información y programación Java: cotejo curricular general; la sintaxis se establece según Java Language Specification SE 26.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: ITIC Academy, bloque 30, tecnologías de sistemas de información y programación Java: cotejo curricular general; la sintaxis se establece según Java Language Specification SE 26. Correspondencia oficial: A1-67/A2-II-3. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria."
+      },
+      "etiquetas": [
+        "Java",
+        "try",
+        "catch",
+        "throw",
+        "excepciones",
+        "JLS SE 26"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/specs/jls/se26/html/jls-11.html",
+            "referencia": "Java Language Specification SE 26, capítulo 11: las excepciones son lanzadas y capturadas; los handlers se establecen mediante cláusulas catch de sentencias try."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/26/docs/specs/jls/jls-14.html#jls-14.20",
+            "referencia": "Java Language Specification SE 26 §14.20: forma y funcionamiento de la sentencia try con bloques catch/finally."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/26/docs/specs/jls/jls-14.html#jls-14.18",
+            "referencia": "Java Language Specification SE 26 §14.18: throw es una sentencia independiente que lanza una excepción; no existe una construcción sintáctica llamada «try-catch-throw»."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 67: entorno de desarrollo Java."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema II.3: características técnicas de lenguajes y paradigmas actuales de programación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30, tecnologías de sistemas de información y programación Java: cotejo curricular general; la sintaxis se establece según Java Language Specification SE 26."
+          }
+        ],
+        "observaciones": "La clave B es correcta. La sentencia try delimita código que puede lanzar excepciones y las cláusulas catch establecen manejadores para los tipos que capturan; throw es una sentencia separada que lanza explícitamente una excepción. Se corrige el nombre informal «try-catch-throw» del reactivo para distinguir los constructos del lenguaje. Cotejo curricular: ITIC Academy, bloque 30, tecnologías de sistemas de información y programación Java: cotejo curricular general; la sintaxis se establece según Java Language Specification SE 26. Correspondencia oficial: A1-67/A2-II-3. La academia orienta cobertura y prioridad, pero no sustituye a la fuente primaria."
+      }
     },
     {
       "id": 6681,
