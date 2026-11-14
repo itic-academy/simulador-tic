@@ -32,7 +32,9 @@ Fuentes primarias y técnicas: [informe ANSI/X3/SPARC conservado en GovInfo](htt
 
 Clasificación oficial y cotejo de ITIC Academy: modelo conceptual/diseño de bases de datos (A1-64/A2-II.5/III.4; bloque 29); SIG (A1-74, sin tema A2 específico identificado; bloque 33); criptografía (A1-79/A2-IV.12; bloque 48); evaluación de modelos e IA (A1-70/A2-III.15; bloque 32); Android y sistemas móviles (A1-62/A2-II.2; bloque 47). La academia documenta cobertura curricular; las respuestas técnicas se comprueban en las fuentes citadas.
 
-Inventario local: 6695 examinadas; 6577 verificadas (1287 vigentes, 4807 corregidas y 483 históricas); 118 pendientes (46 de fuente y 72 de ambigüedad); 5428 aún sin revisión individual; errores estructurales: 0. Ejecutados inventario.cjs, verificar.cjs y git diff --check. Publicación pendiente de verificación.
+Inventario local: 6695 examinadas; 6577 verificadas (1287 vigentes, 4807 corregidas y 483 históricas); 118 pendientes (46 de fuente y 72 de ambigüedad); 5428 aún sin revisión individual; errores estructurales: 0. Ejecutados inventario.cjs, verificar.cjs y git diff --check.
+
+**Publicación verificada:** el commit de datos `26329e9` (`26329e98ef7591a448219945e2a055ea7d5a3fd0`) completó con estado **Success** el workflow [Deploy GitHub Pages 43648164879](https://github.com/itic-academy/simulador-tic/actions/runs/43648164879). GitHub Pages devolvió HTTP 200 sin caché para `revision/README.md`, `revision/cambios-lote-1275.json` y `revision/inventario.json`. El registro servido contiene IDs 6696–6700 y claves 3, 3, 0, 0 y 3; el inventario público refleja 6.695 examinadas, 6.577 verificadas (1.287 vigentes, 4.807 corregidas y 483 históricas), 118 pendientes (46 de fuente y 72 de ambigüedad), 5.428 sin revisar y cero errores estructurales.
 
 ## Lote 1274 — 14 de noviembre de 2026
 
