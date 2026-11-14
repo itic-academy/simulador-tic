@@ -1,0 +1,360 @@
+{
+  "fecha": "2026-11-14",
+  "alcance": "IDs 6681–6685; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 6681,
+      "original": {
+        "id": 6681,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la alternativa que contiene los operadores que, juntos, componen el operador ‘join’ del álgebra relacional:",
+        "opciones": [
+          "Selección, proyección y diferencia",
+          "Selección, proyección y producto cartesiano",
+          "Proyección, producto cartesiano y diferencia",
+          "Proyección, producto cartesiano y unión"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6681,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En álgebra relacional, ¿qué operadores permiten expresar un join natural de dos relaciones usando los operadores básicos?",
+        "opciones": [
+          "Producto cartesiano y selección; sin proyección, porque se conservan ambos atributos comunes.",
+          "Producto cartesiano, selección sobre la igualdad de los atributos comunes y proyección para conservar una sola copia de cada atributo común.",
+          "Producto cartesiano, unión y diferencia.",
+          "Selección, unión y diferencia."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La respuesta B es correcta para el join natural: se combinan las relaciones mediante producto cartesiano, se seleccionan las tuplas cuyos atributos comunes coinciden y se proyectan los atributos de salida eliminando las copias duplicadas. La pregunta original decía simplemente «join», término que también puede designar theta-join, expresable solo como selección sobre el producto cartesiano; se explicita «join natural» para que la proyección sea necesaria y la clave no dependa de una convención ambigua. Cotejo curricular: ITIC Academy, bloque 29 «Bases de datos», versión 2026: modelo relacional y lenguaje SQL; cotejo curricular general, mientras que la definición formal del join natural se sustenta en la fuente universitaria. Correspondencia oficial directa: A1-64/A2-II-5. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos», versión 2026: modelo relacional y lenguaje SQL; cotejo curricular general, mientras que la definición formal del join natural se sustenta en la fuente universitaria.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 29 «Bases de datos», versión 2026: modelo relacional y lenguaje SQL; cotejo curricular general, mientras que la definición formal del join natural se sustenta en la fuente universitaria. Correspondencia oficial directa: A1-64/A2-II-5. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria."
+        },
+        "etiquetas": [
+          "álgebra relacional",
+          "join natural",
+          "selección",
+          "proyección",
+          "producto cartesiano"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://users.informatik.uni-halle.de/~brass/db03/c4_relal.pdf",
+              "referencia": "Stefan Brass, Universität Halle, Database Systems, §4 Relational Algebra: el join natural puede expresarse con producto cartesiano, selección por igualdad en atributos comunes y proyección que elimina atributos duplicados."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 64: modelo relacional y lenguaje SQL."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema II.5: SGBD relacionales y lenguaje SQL."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos», versión 2026: modelo relacional y lenguaje SQL; cotejo curricular general, mientras que la definición formal del join natural se sustenta en la fuente universitaria."
+            }
+          ],
+          "observaciones": "La respuesta B es correcta para el join natural: se combinan las relaciones mediante producto cartesiano, se seleccionan las tuplas cuyos atributos comunes coinciden y se proyectan los atributos de salida eliminando las copias duplicadas. La pregunta original decía simplemente «join», término que también puede designar theta-join, expresable solo como selección sobre el producto cartesiano; se explicita «join natural» para que la proyección sea necesaria y la clave no dependa de una convención ambigua. Cotejo curricular: ITIC Academy, bloque 29 «Bases de datos», versión 2026: modelo relacional y lenguaje SQL; cotejo curricular general, mientras que la definición formal del join natural se sustenta en la fuente universitaria. Correspondencia oficial directa: A1-64/A2-II-5. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 6682,
+      "original": {
+        "id": 6682,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El comando de SQL 'DELETE', ¿qué hace?",
+        "opciones": [
+          "Borra una tabla determinada.",
+          "Borra un índice de una tabla.",
+          "Borra valores de una tabla.",
+          "Borra tanto valores de una tabla, la tabla entera como índices de una tabla según sea la sintaxis de la sentencia SQL."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6682,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En SQL, ¿qué efecto tiene la sentencia DELETE FROM tabla WHERE condición?",
+        "opciones": [
+          "Elimina la definición de la tabla y sus índices.",
+          "Elimina el índice de la tabla, pero conserva las filas.",
+          "Elimina las filas de la tabla que cumplen la condición; sin WHERE se eliminarían todas las filas, no la tabla.",
+          "Elimina solo los valores de las columnas indicadas y mantiene siempre las filas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C es correcta. DELETE elimina filas de la tabla que satisfacen WHERE; al omitir WHERE, se eliminan todas las filas, pero la estructura de la tabla sigue existiendo. DROP TABLE elimina la tabla y su definición. Se reemplaza «borrar valores» por la unidad afectada de forma precisa: filas. Cotejo curricular: ITIC Academy, bloque 29 «Bases de datos», versión 2026: SGBD relacionales, SQL y DML; cotejo curricular. Correspondencia oficial directa: A1-64/A2-II-5. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 «Bases de datos», versión 2026: SGBD relacionales, SQL y DML; cotejo curricular.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 29 «Bases de datos», versión 2026: SGBD relacionales, SQL y DML; cotejo curricular. Correspondencia oficial directa: A1-64/A2-II-5. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria."
+        },
+        "etiquetas": [
+          "SQL",
+          "DELETE",
+          "DML",
+          "eliminación de filas"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.postgresql.org/docs/current/dml-delete.html",
+              "referencia": "Documentación oficial de PostgreSQL 18, DML DELETE: DELETE elimina filas que cumplan WHERE; si WHERE se omite, elimina todas las filas, pero la tabla permanece."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 64: modelo relacional y lenguaje SQL."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema II.5: SGBD relacionales y lenguaje SQL."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 29 «Bases de datos», versión 2026: SGBD relacionales, SQL y DML; cotejo curricular."
+            }
+          ],
+          "observaciones": "La respuesta C es correcta. DELETE elimina filas de la tabla que satisfacen WHERE; al omitir WHERE, se eliminan todas las filas, pero la estructura de la tabla sigue existiendo. DROP TABLE elimina la tabla y su definición. Se reemplaza «borrar valores» por la unidad afectada de forma precisa: filas. Cotejo curricular: ITIC Academy, bloque 29 «Bases de datos», versión 2026: SGBD relacionales, SQL y DML; cotejo curricular. Correspondencia oficial directa: A1-64/A2-II-5. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 6683,
+      "original": {
+        "id": 6683,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es el comportamiento de una estructura de datos abstractos de tipo Plla (stack)?:",
+        "opciones": [
+          "First ín first output (FIFO)",
+          "Last in first output (LIFO)",
+          "Fírst out last output (FOLO)",
+          "Last in first input (LOFI)"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6683,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué política de acceso caracteriza a una pila (stack) como tipo abstracto de datos?",
+        "opciones": [
+          "FIFO: primero en entrar, primero en salir.",
+          "LIFO: último en entrar, primero en salir.",
+          "Acceso aleatorio: cualquier elemento se extrae en tiempo constante.",
+          "Prioridad: siempre se extrae el elemento con menor valor."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La respuesta B es correcta: una pila opera según LIFO (last in, first out). La inserción y extracción se realizan por la cima; por tanto, el elemento incorporado más recientemente es el primero que se recupera. Se corrigen la errata «Plla» y las expansiones incorrectas de FIFO/LIFO del original. Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026: programación, cotejo general. No se atribuye al material una definición específica de LIFO; la correspondencia oficial directa es A2-III.5 y el comportamiento se fundamenta en documentación de Python. Correspondencia oficial directa: A2-III-5. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria.",
+        "clasificacion": {
+          "A1": [],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026: programación, cotejo general. No se atribuye al material una definición específica de LIFO; la correspondencia oficial directa es A2-III.5 y el comportamiento se fundamenta en documentación de Python.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026: programación, cotejo general. No se atribuye al material una definición específica de LIFO; la correspondencia oficial directa es A2-III.5 y el comportamiento se fundamenta en documentación de Python. Correspondencia oficial directa: A2-III-5. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria."
+        },
+        "etiquetas": [
+          "estructuras de datos",
+          "pila",
+          "stack",
+          "LIFO"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks",
+              "referencia": "Python 3.14 tutorial, «Using Lists as Stacks»: el último elemento añadido es el primero recuperado (last-in, first-out); append añade a la cima y pop lo extrae."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema III.5: tipos abstractos de datos y estructuras de datos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026: programación, cotejo general. No se atribuye al material una definición específica de LIFO; la correspondencia oficial directa es A2-III.5 y el comportamiento se fundamenta en documentación de Python."
+            }
+          ],
+          "observaciones": "La respuesta B es correcta: una pila opera según LIFO (last in, first out). La inserción y extracción se realizan por la cima; por tanto, el elemento incorporado más recientemente es el primero que se recupera. Se corrigen la errata «Plla» y las expansiones incorrectas de FIFO/LIFO del original. Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», versión 2026: programación, cotejo general. No se atribuye al material una definición específica de LIFO; la correspondencia oficial directa es A2-III.5 y el comportamiento se fundamenta en documentación de Python. Correspondencia oficial directa: A2-III-5. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 6684,
+      "original": {
+        "id": 6684,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes no es una propiedad que debe cumplir una función resumen (hash)?",
+        "opciones": [
+          "Resistencia a la preimagen",
+          "Resistencia a la colisión Fuerte",
+          "Resistencia a la colisión Suave",
+          "Resistencia a la no colisión"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6684,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes NO es una propiedad de seguridad esperada para una función hash criptográfica?",
+        "opciones": [
+          "Resistencia a preimagen: dado un resumen objetivo, resulta computacionalmente inviable hallar una entrada que lo produzca.",
+          "Resistencia a segunda preimagen: dada una entrada, resulta inviable hallar otra distinta con el mismo resumen.",
+          "Resistencia a colisiones: resulta inviable encontrar dos entradas distintas con igual resumen.",
+          "Resistencia a la no colisión: propiedad que exige que no existan dos entradas diferentes con el mismo resumen."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La respuesta D es la que no corresponde: «resistencia a la no colisión» no es el nombre de una propiedad criptográfica y la exigencia de que no existan colisiones sería imposible para una función que asigna entradas de longitud arbitraria a salidas de longitud fija. NIST enumera resistencia a preimagen, segunda preimagen y colisiones. Se sustituyen las expresiones informales «colisión fuerte/suave» del original por terminología precisa. Cotejo curricular: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: funciones hash y criptografía, cotejo curricular; las propiedades se verifican con NIST. Correspondencia oficial directa: A1-79/A2-IV-12. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-79"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: funciones hash y criptografía, cotejo curricular; las propiedades se verifican con NIST.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: funciones hash y criptografía, cotejo curricular; las propiedades se verifican con NIST. Correspondencia oficial directa: A1-79/A2-IV-12. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria."
+        },
+        "etiquetas": [
+          "funciones hash",
+          "resistencia a preimagen",
+          "segunda preimagen",
+          "resistencia a colisiones",
+          "criptografía"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/glossary/term/cryptographic_hash_function",
+              "referencia": "NIST CSRC Glossary, entrada «Cryptographic hash function»: enumera resistencia a preimagen, segunda preimagen y colisiones como las tres propiedades esperadas."
+            },
+            {
+              "url": "https://csrc.nist.gov/pubs/fips/180-4/upd1/final",
+              "referencia": "NIST FIPS 180-4, Secure Hash Standard, estándar aprobado para funciones hash SHA; referencia normativa del conjunto de algoritmos, junto con las propiedades del glosario NIST."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 79: función hash."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema IV.12: técnicas criptográficas y protocolos seguros."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: funciones hash y criptografía, cotejo curricular; las propiedades se verifican con NIST."
+            }
+          ],
+          "observaciones": "La respuesta D es la que no corresponde: «resistencia a la no colisión» no es el nombre de una propiedad criptográfica y la exigencia de que no existan colisiones sería imposible para una función que asigna entradas de longitud arbitraria a salidas de longitud fija. NIST enumera resistencia a preimagen, segunda preimagen y colisiones. Se sustituyen las expresiones informales «colisión fuerte/suave» del original por terminología precisa. Cotejo curricular: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: funciones hash y criptografía, cotejo curricular; las propiedades se verifican con NIST. Correspondencia oficial directa: A1-79/A2-IV-12. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 6685,
+      "original": {
+        "id": 6685,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué desventaja tiene el formato de imágenes JPEG?",
+        "opciones": [
+          "La imagen pierde información cuando se comprime",
+          "La magnitud de compresión es pequeña y ocupa demasiado espacio de disco",
+          "Todos los programas que brindan soporte al formato JPEG han de pagar por el uso de la licencia del algoritmo de compresión que utiliza",
+          "No tiene ninguna desventaja"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6685,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la compresión JPEG convencional basada en DCT y con pérdidas, ¿qué desventaja tiene frente a una compresión sin pérdidas?",
+        "opciones": [
+          "La reconstrucción puede perder información del original; el grado depende de la cuantización y calidad elegida.",
+          "El formato no permite imágenes en color.",
+          "La compresión siempre aumenta el tamaño del archivo.",
+          "La codificación con pérdidas conserva exactamente todos los datos originales."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La respuesta A es correcta para los procesos JPEG DCT con pérdidas: la cuantización descarta información y la imagen reconstruida no es idéntica al original; el compromiso entre tamaño y calidad depende de los parámetros usados. Se limita el enunciado al modo convencional con pérdidas porque ITU-T T.81 también contempla un proceso JPEG sin pérdidas; no debe afirmarse que todos los modos JPEG pierden información. A1-56/83; no se fuerza una correspondencia A2 que no aparece de forma directa en el temario. Cotejo curricular: ITIC Academy, bloque 37 «Imágenes, OCR, biometría y gestión de contenidos», versión 2026.1, §§1.1 y 3: tratamiento de imagen, JPEG y DCT. La cobertura académica se limita al modo estudiado y no implica que todos los procesos JPEG tengan pérdidas. Correspondencia oficial directa: A1-56/A1-83. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-56",
+            "A1-83"
+          ],
+          "A2": [],
+          "bloque_academia": "ITIC Academy, bloque 37 «Imágenes, OCR, biometría y gestión de contenidos», versión 2026.1, §§1.1 y 3: tratamiento de imagen, JPEG y DCT. La cobertura académica se limita al modo estudiado y no implica que todos los procesos JPEG tengan pérdidas.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 37 «Imágenes, OCR, biometría y gestión de contenidos», versión 2026.1, §§1.1 y 3: tratamiento de imagen, JPEG y DCT. La cobertura académica se limita al modo estudiado y no implica que todos los procesos JPEG tengan pérdidas. Correspondencia oficial directa: A1-56/A1-83. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria."
+        },
+        "etiquetas": [
+          "JPEG",
+          "compresión con pérdidas",
+          "DCT",
+          "formatos de imagen"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/T-REC-T.81-199209-I",
+              "referencia": "Recomendación ITU-T T.81 (09/92), en vigor: especificación JPEG-1; contempla procesos de codificación con y sin pérdidas, por lo que la pregunta se limita al modo DCT habitual con pérdidas."
+            },
+            {
+              "url": "https://www.itu.int/rec/T-REC-T.80-199209-I",
+              "referencia": "Recomendación ITU-T T.80, §5.4: indica que T.81 soporta codificación con pérdidas y sin pérdidas y distingue la conservación exacta del flujo original de la reconstrucción con pérdida."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 56: tratamiento de información multimedia; tema 83: tratamiento de imágenes."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xTMCpPmwNi8hpb0nZ3sMqpgvrhLXT-yf/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 37 «Imágenes, OCR, biometría y gestión de contenidos», versión 2026.1, §§1.1 y 3: tratamiento de imagen, JPEG y DCT. La cobertura académica se limita al modo estudiado y no implica que todos los procesos JPEG tengan pérdidas."
+            }
+          ],
+          "observaciones": "La respuesta A es correcta para los procesos JPEG DCT con pérdidas: la cuantización descarta información y la imagen reconstruida no es idéntica al original; el compromiso entre tamaño y calidad depende de los parámetros usados. Se limita el enunciado al modo convencional con pérdidas porque ITU-T T.81 también contempla un proceso JPEG sin pérdidas; no debe afirmarse que todos los modos JPEG pierden información. A1-56/83; no se fuerza una correspondencia A2 que no aparece de forma directa en el temario. Cotejo curricular: ITIC Academy, bloque 37 «Imágenes, OCR, biometría y gestión de contenidos», versión 2026.1, §§1.1 y 3: tratamiento de imagen, JPEG y DCT. La cobertura académica se limita al modo estudiado y no implica que todos los procesos JPEG tengan pérdidas. Correspondencia oficial directa: A1-56/A1-83. El encaje académico orienta cobertura, pero no sustituye la fuente técnica primaria."
+        }
+      }
+    }
+  ]
+}
