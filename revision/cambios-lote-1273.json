@@ -1,0 +1,403 @@
+{
+  "fecha": "2026-11-14",
+  "alcance": "IDs 6686–6690; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 6686,
+      "original": {
+        "id": 6686,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo se denomina el módulo criptográfico necesario para poder operar con el DNI electrónico en un entorno UNIX?",
+        "opciones": [
+          "Cryptographic Service Provider (CSP).",
+          "PKCS#11.",
+          "PGP.",
+          "Smart Card Mini-Driver."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6686,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el portal oficial del DNI electrónico, ¿qué interfaz de módulo criptográfico permite utilizar el DNIe en GNU/Linux?",
+        "opciones": [
+          "CSP (Cryptographic Service Provider), interfaz propia de Windows.",
+          "PKCS#11, interfaz implementada por el módulo criptográfico del DNIe.",
+          "PGP, protocolo de cifrado de correo.",
+          "Smart Card Mini-Driver, arquitectura de controladores de Windows."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La respuesta B es correcta. El portal oficial del DNIe señala PKCS#11 para GNU/Linux y macOS. En sentido técnico estricto, PKCS#11 define una interfaz/API para tokens criptográficos; la biblioteca instalada implementa esa interfaz. CSP y Smart Card Mini-Driver son opciones asociadas principalmente a la plataforma Windows, mientras PGP no es el módulo DNIe. Cotejo curricular: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: identificación, tarjetas inteligentes y firma como cotejo curricular; el módulo PKCS#11 concreto se verifica en el portal oficial del DNIe. Correspondencia oficial: A1-81/A2-I-6. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-81"
+          ],
+          "A2": [
+            "A2-I-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: identificación, tarjetas inteligentes y firma como cotejo curricular; el módulo PKCS#11 concreto se verifica en el portal oficial del DNIe.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: identificación, tarjetas inteligentes y firma como cotejo curricular; el módulo PKCS#11 concreto se verifica en el portal oficial del DNIe. Correspondencia oficial: A1-81/A2-I-6. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria."
+        },
+        "etiquetas": [
+          "DNI electrónico",
+          "PKCS#11",
+          "GNU/Linux",
+          "módulo criptográfico",
+          "interfaz de token"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?id_menu=66&pag=REF_1110",
+              "referencia": "Portal oficial DNI electrónico de la Policía Nacional, v. 2026-05-05, «PKCS#11 para Sistemas Linux-Unix»: indica que GNU/Linux y macOS interactúan con el DNIe mediante un módulo criptográfico PKCS#11."
+            },
+            {
+              "url": "https://www.dnielectronico.es/PDFs/manuales_instalacion_unix/Manual_de_Instalacion_de_MulticardPKCS11_DNIE_V1.pdf",
+              "referencia": "Policía Nacional, manual de instalación de Multicard PKCS#11 para distribuciones Linux: identifica la biblioteca del módulo DNIe PKCS#11."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 81: mecanismos de identificación y firma, smart cards y DNI electrónico."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema I.6: identidad y firma electrónica, Reglamento eIDAS y DNI electrónico."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: identificación, tarjetas inteligentes y firma como cotejo curricular; el módulo PKCS#11 concreto se verifica en el portal oficial del DNIe."
+            }
+          ],
+          "observaciones": "La respuesta B es correcta. El portal oficial del DNIe señala PKCS#11 para GNU/Linux y macOS. En sentido técnico estricto, PKCS#11 define una interfaz/API para tokens criptográficos; la biblioteca instalada implementa esa interfaz. CSP y Smart Card Mini-Driver son opciones asociadas principalmente a la plataforma Windows, mientras PGP no es el módulo DNIe. Cotejo curricular: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: identificación, tarjetas inteligentes y firma como cotejo curricular; el módulo PKCS#11 concreto se verifica en el portal oficial del DNIe. Correspondencia oficial: A1-81/A2-I-6. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6687,
+      "original": {
+        "id": 6687,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los sistemas multiagentes:",
+        "opciones": [
+          "trabajan siempre asociados a arquitecturas de pizarra",
+          "tienen un control centralizado por lo que no tienen autonomía en los agentes",
+          "cada uno de los agentes es capaz de decidir por sí mismo",
+          "Ninguna de las anteriores"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6687,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un sistema multiagente cuyos componentes se modelan como agentes autónomos, ¿qué característica se espera de cada agente?",
+        "opciones": [
+          "Debe estar siempre conectado a una arquitectura de pizarra compartida.",
+          "Está sometido necesariamente a un único controlador central y no puede actuar por iniciativa propia.",
+          "Puede seleccionar y ejecutar acciones de manera independiente dentro de sus objetivos, e interactúa o se coordina con otros agentes.",
+          "No puede intercambiar información con los demás agentes."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "La respuesta C es correcta: autonomía significa que el agente puede elegir acciones para alcanzar sus objetivos sin recibir instrucciones paso a paso, aunque su autonomía tenga límites de diseño y el sistema coordine interacciones. No todo MAS requiere una arquitectura de pizarra ni control central. Se acota el enunciado a agentes autónomos para evitar generalizar esta propiedad a cualquier componente llamado agente. Cotejo curricular: ITIC Academy, bloque 32 «Inteligencia Artificial y Ciencia de Datos», versión 2026.1: agentes inteligentes/sistemas multiagentes como cobertura curricular; la definición de autonomía se fundamenta en literatura académica. Correspondencia oficial: A1-70/A2-III-5. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-70"
+          ],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 32 «Inteligencia Artificial y Ciencia de Datos», versión 2026.1: agentes inteligentes/sistemas multiagentes como cobertura curricular; la definición de autonomía se fundamenta en literatura académica.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 32 «Inteligencia Artificial y Ciencia de Datos», versión 2026.1: agentes inteligentes/sistemas multiagentes como cobertura curricular; la definición de autonomía se fundamenta en literatura académica. Correspondencia oficial: A1-70/A2-III-5. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria."
+        },
+        "etiquetas": [
+          "inteligencia artificial",
+          "sistemas multiagentes",
+          "agentes autónomos",
+          "cooperación",
+          "coordinación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.cs.ox.ac.uk/people/michael.wooldridge/pubs/imas/distrib/2up/lect01-2up.pdf",
+              "referencia": "Michael Wooldridge, An Introduction to MultiAgent Systems, capítulo 1, material docente de Oxford: define agente como sistema capaz de acción independiente/autónoma y MAS como varios agentes que interactúan y pueden cooperar, coordinarse y negociar."
+            },
+            {
+              "url": "https://www.nationalacademies.org/read/18844/chapter/7",
+              "referencia": "National Academies, capítulo sobre agentes y sistemas multiagente: describe la acción autónoma de agentes y la toma de decisiones local en el sistema."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 70: inteligencia artificial y agentes inteligentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema III.5: fundamentos de inteligencia artificial y estructuras/tecnologías asociadas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 32 «Inteligencia Artificial y Ciencia de Datos», versión 2026.1: agentes inteligentes/sistemas multiagentes como cobertura curricular; la definición de autonomía se fundamenta en literatura académica."
+            }
+          ],
+          "observaciones": "La respuesta C es correcta: autonomía significa que el agente puede elegir acciones para alcanzar sus objetivos sin recibir instrucciones paso a paso, aunque su autonomía tenga límites de diseño y el sistema coordine interacciones. No todo MAS requiere una arquitectura de pizarra ni control central. Se acota el enunciado a agentes autónomos para evitar generalizar esta propiedad a cualquier componente llamado agente. Cotejo curricular: ITIC Academy, bloque 32 «Inteligencia Artificial y Ciencia de Datos», versión 2026.1: agentes inteligentes/sistemas multiagentes como cobertura curricular; la definición de autonomía se fundamenta en literatura académica. Correspondencia oficial: A1-70/A2-III-5. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6688,
+      "original": {
+        "id": 6688,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Las siglas UDDI corresponden a:",
+        "opciones": [
+          "Universal Description and Discovery Interface",
+          "Universal Description, Discovery and Integration",
+          "Universal Definition, Discovery and Integration",
+          "Universal Definition and Discovery Interface"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6688,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la especificación OASIS UDDI v3.0.2, ¿qué desarrollan las siglas UDDI?",
+        "opciones": [
+          "Universal Definition, Discovery and Integration.",
+          "Universal Description, Discovery and Integration.",
+          "Universal Description and Discovery Interface.",
+          "Unified Description, Data and Integration."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La respuesta B es la expansión oficial: Universal Description, Discovery and Integration. Se delimita a la especificación OASIS UDDI v3.0.2 para no presentar el registro UDDI como una tecnología de adopción o recomendación actual. La entrada léxica sigue siendo válida como nombre del estándar histórico. Cotejo curricular: ITIC Academy, bloque 28 «Arquitectura SOA y requisitos no funcionales», versión 2026: servicios, SOA e interoperabilidad, cotejo contextual. No se presenta UDDI como tecnología de adopción actual; la expansión se ciñe al estándar OASIS 3.0.2. Correspondencia oficial: A1-58/A2-II-6/A2-III-12. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-58"
+          ],
+          "A2": [
+            "A2-II-6",
+            "A2-III-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 28 «Arquitectura SOA y requisitos no funcionales», versión 2026: servicios, SOA e interoperabilidad, cotejo contextual. No se presenta UDDI como tecnología de adopción actual; la expansión se ciñe al estándar OASIS 3.0.2.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 28 «Arquitectura SOA y requisitos no funcionales», versión 2026: servicios, SOA e interoperabilidad, cotejo contextual. No se presenta UDDI como tecnología de adopción actual; la expansión se ciñe al estándar OASIS 3.0.2. Correspondencia oficial: A1-58/A2-II-6/A2-III-12. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria."
+        },
+        "etiquetas": [
+          "UDDI",
+          "OASIS",
+          "servicios web",
+          "registro de servicios",
+          "interoperabilidad"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.oasis-open.org/committees/uddi-spec/doc/spec/v3/uddi_v3.htm",
+              "referencia": "OASIS UDDI Version 3.0.2, §1: expande Universal Description, Discovery & Integration y describe la publicación/descubrimiento de proveedores, servicios web e interfaces técnicas."
+            },
+            {
+              "url": "https://www.oasis-open.org/specs/",
+              "referencia": "OASIS, catálogo de estándares: registra UDDI v3.0.2 como especificación OASIS, publicada en 2005; la pregunta se identifica como conocimiento de esa especificación, no como recomendación de arquitectura moderna."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 58: arquitectura SOA y procesamiento cooperativo."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, temas II.6 y III.12: arquitectura de servicios web, estándares e interoperabilidad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Cnnzu7ZhGCn86GNkO9iabjZPNjmaIzHJ/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 28 «Arquitectura SOA y requisitos no funcionales», versión 2026: servicios, SOA e interoperabilidad, cotejo contextual. No se presenta UDDI como tecnología de adopción actual; la expansión se ciñe al estándar OASIS 3.0.2."
+            }
+          ],
+          "observaciones": "La respuesta B es la expansión oficial: Universal Description, Discovery and Integration. Se delimita a la especificación OASIS UDDI v3.0.2 para no presentar el registro UDDI como una tecnología de adopción o recomendación actual. La entrada léxica sigue siendo válida como nombre del estándar histórico. Cotejo curricular: ITIC Academy, bloque 28 «Arquitectura SOA y requisitos no funcionales», versión 2026: servicios, SOA e interoperabilidad, cotejo contextual. No se presenta UDDI como tecnología de adopción actual; la expansión se ciñe al estándar OASIS 3.0.2. Correspondencia oficial: A1-58/A2-II-6/A2-III-12. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6689,
+      "original": {
+        "id": 6689,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El Reglamento de Ejecución UE 2015/1502 define las especificaciones y procedimientos técnicos mínimos para los niveles de seguridad de los medios de identificación electrónicos. En particular, define el factor de autenticación inherente como:",
+        "opciones": [
+          "Aquél que se basa en un atributo físico de una persona física del cual el sujeto está obligado a demostrar su posesión.",
+          "Aquél en el que el sujeto está obligado a demostrar conocimiento del mismo.",
+          "Aquél en el que se utilizan dos o más factores para comprobar la identidad del sujeto.",
+          "Aquél en el que el sujeto está obligado a demostrar posesión del mismo."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6689,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Conforme al anexo, apartado 1.2(c), del Reglamento de Ejecución (UE) 2015/1502, ¿qué es un factor de autenticación inherente?",
+        "opciones": [
+          "Un factor basado en un atributo físico de una persona física, que el sujeto debe demostrar que posee.",
+          "Un factor basado en algo que el sujeto debe demostrar que conoce.",
+          "La combinación obligatoria de dos o más factores de categorías distintas.",
+          "Un factor basado en un objeto o secreto que el sujeto debe demostrar que posee."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La respuesta A reproduce el contenido de la definición del anexo 1.2(c): atributo físico de una persona física, cuya posesión debe demostrar el sujeto. Los factores de conocimiento y posesión corresponden a categorías separadas. Se comprueba la versión consolidada; EUR-Lex mantiene el Reglamento 2015/1502 en vigor (modificación 2022/960, corrección lingüística), aunque eIDAS haya sido actualizado posteriormente. Cotejo curricular: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: cotejo curricular de identificación, autenticación y firma; la definición jurídica vigente se contrasta en EUR-Lex. Correspondencia oficial: A1-80/A1-81/A2-I-6/A2-I-9. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-80",
+            "A1-81"
+          ],
+          "A2": [
+            "A2-I-6",
+            "A2-I-9"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: cotejo curricular de identificación, autenticación y firma; la definición jurídica vigente se contrasta en EUR-Lex.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: cotejo curricular de identificación, autenticación y firma; la definición jurídica vigente se contrasta en EUR-Lex. Correspondencia oficial: A1-80/A1-81/A2-I-6/A2-I-9. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria."
+        },
+        "etiquetas": [
+          "eIDAS",
+          "Reglamento UE 2015/1502",
+          "factor inherente",
+          "autenticación multifactor",
+          "biometría"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02015R1502-20220711",
+              "referencia": "EUR-Lex, Reglamento de Ejecución (UE) 2015/1502, versión consolidada: anexo, apartado 1, definición 2(c), factor de autenticación inherente; EUR-Lex mantiene el acto en vigor y refleja la corrección 2022/960."
+            },
+            {
+              "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32015R1502",
+              "referencia": "EUR-Lex, texto original en español del Reglamento de Ejecución (UE) 2015/1502, anexo 1.2(c): el factor inherente se basa en un atributo físico de una persona física y el sujeto debe demostrar que posee ese atributo."
+            },
+            {
+              "url": "https://eur-lex.europa.eu/browse/pdf/directories/legislation.html?classification=in-force&file=chapter%252013.pdf",
+              "referencia": "EUR-Lex, repertorio de legislación vigente, capítulo 13: identifica 2015/1502 como en vigor y modificado por 2022/960."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, temas 80 y 81: identificación electrónica, marco europeo, DNIe y mecanismos biométricos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, temas I.6 e I.9: régimen eIDAS e instrumentos de identificación y autenticación."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: cotejo curricular de identificación, autenticación y firma; la definición jurídica vigente se contrasta en EUR-Lex."
+            }
+          ],
+          "observaciones": "La respuesta A reproduce el contenido de la definición del anexo 1.2(c): atributo físico de una persona física, cuya posesión debe demostrar el sujeto. Los factores de conocimiento y posesión corresponden a categorías separadas. Se comprueba la versión consolidada; EUR-Lex mantiene el Reglamento 2015/1502 en vigor (modificación 2022/960, corrección lingüística), aunque eIDAS haya sido actualizado posteriormente. Cotejo curricular: ITIC Academy, bloque 36 «Seguridad, Criptografía, Identificación y Firma», versión 2026: cotejo curricular de identificación, autenticación y firma; la definición jurídica vigente se contrasta en EUR-Lex. Correspondencia oficial: A1-80/A1-81/A2-I-6/A2-I-9. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6690,
+      "original": {
+        "id": 6690,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto de Java y JavaScript, se puede decir:",
+        "opciones": [
+          "Los dos son lenguajes interpretados.",
+          "Java es compilado en tiempo de ejecución y JavaScript interpretado.",
+          "JavaScript es compilado en tiempo de ejecución y Java interpretado.",
+          "Ambos son compilados."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6690,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación describe correctamente la compilación y ejecución de Java y JavaScript sin confundir una propiedad del lenguaje con la implementación de un motor?",
+        "opciones": [
+          "Java suele compilarse a bytecode de la JVM; después, la JVM puede interpretarlo o compilarlo JIT. ECMAScript no obliga a JavaScript a ser solo interpretado: los motores pueden usar bytecode, interpretación y compilación JIT.",
+          "Java siempre se interpreta sin compilación previa y todo motor JavaScript ejecuta exclusivamente código máquina compilado antes del inicio.",
+          "JavaScript es, por definición del estándar ECMAScript, un lenguaje exclusivamente interpretado.",
+          "Java es, por definición, código máquina nativo y no utiliza una máquina virtual ni bytecode."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "La respuesta A es correcta. `javac` produce bytecode de JVM; en ejecución una JVM puede interpretar y/o compilar dinámicamente. ECMAScript especifica la semántica del lenguaje pero no obliga a un motor a interpretarlo exclusivamente: por ejemplo, V8 combina bytecode, interpretación y JIT. La oposición categórica «Java compilado / JavaScript interpretado» del original es ambigua y dependiente de la implementación, por lo que se sustituye por la ruta técnica concreta y acotada. Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», actualización 2026: Java y lenguajes de programación como cotejo curricular general. No se atribuye al temario una regla fija de ejecución JavaScript; el motor se contrasta con ECMA-262/V8. Correspondencia oficial: A1-67/A2-II-3. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-II-3"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», actualización 2026: Java y lenguajes de programación como cotejo curricular general. No se atribuye al temario una regla fija de ejecución JavaScript; el motor se contrasta con ECMA-262/V8.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», actualización 2026: Java y lenguajes de programación como cotejo curricular general. No se atribuye al temario una regla fija de ejecución JavaScript; el motor se contrasta con ECMA-262/V8. Correspondencia oficial: A1-67/A2-II-3. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria."
+        },
+        "etiquetas": [
+          "Java",
+          "JavaScript",
+          "ECMAScript",
+          "bytecode",
+          "JVM",
+          "JIT",
+          "compilación e interpretación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/en/java/javase/26/docs/specs/jvms/jvms-3.html",
+              "referencia": "Especificación de la JVM, Java SE 26, capítulo 3: `javac` compila el código Java fuente a instrucciones de bytecode de la JVM; una JVM puede compilar dinámicamente a instrucciones de la CPU."
+            },
+            {
+              "url": "https://docs.oracle.com/javase/8/docs/technotes/guides/javac/",
+              "referencia": "Oracle, compilador javac: describe la traducción de fuentes Java a archivos de clase/bytecode; referencia complementaria del proceso de compilación."
+            },
+            {
+              "url": "https://tc39.es/ecma262/",
+              "referencia": "Ecma International, ECMA-262, especificación del lenguaje ECMAScript (edición vigente): define semántica y comportamiento del lenguaje, no exige a las implementaciones un método único de ejecución/compilación."
+            },
+            {
+              "url": "https://v8.dev/docs/ignition",
+              "referencia": "Proyecto V8, documentación del intérprete Ignition: documenta una implementación JavaScript con bytecode e intérprete, junto con compiladores optimizadores JIT; no es una propiedad universal prescrita por ECMAScript."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 67: Java y tecnologías relacionadas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema II.3: características técnicas de lenguajes y paradigmas actuales."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30 «Tecnologías de sistemas de información», actualización 2026: Java y lenguajes de programación como cotejo curricular general. No se atribuye al temario una regla fija de ejecución JavaScript; el motor se contrasta con ECMA-262/V8."
+            }
+          ],
+          "observaciones": "La respuesta A es correcta. `javac` produce bytecode de JVM; en ejecución una JVM puede interpretar y/o compilar dinámicamente. ECMAScript especifica la semántica del lenguaje pero no obliga a un motor a interpretarlo exclusivamente: por ejemplo, V8 combina bytecode, interpretación y JIT. La oposición categórica «Java compilado / JavaScript interpretado» del original es ambigua y dependiente de la implementación, por lo que se sustituye por la ruta técnica concreta y acotada. Cotejo curricular: ITIC Academy, bloque 30 «Tecnologías de sistemas de información», actualización 2026: Java y lenguajes de programación como cotejo curricular general. No se atribuye al temario una regla fija de ejecución JavaScript; el motor se contrasta con ECMA-262/V8. Correspondencia oficial: A1-67/A2-II-3. La academia indica cobertura; el contenido técnico o normativo se valida en la fuente primaria."
+        }
+      }
+    }
+  ]
+}
