@@ -345296,70 +345296,295 @@
       "id": 6581,
       "bloque": 0,
       "tema": 0,
-      "texto": "Guillermo es un PSG al que el Servicio Gallego de Salud ha contratado temporalmente. Para firmar el contrato generado por la dirección de RRHH del área sanitaria contratante en formato electrónico (PDF), usará su DNIe. Según esto, seleccione la respuesta correcta:",
+      "texto": "Para firmar electrónicamente un documento PDF con el DNIe, ¿qué combinación es correcta?",
       "opciones": [
-        "Guillermo firmará el contrato usando la clave pública del certificado de firma de su DNIe, generando una firma en formato XAdES.",
-        "Guillermo firmará el contrato usando la clave pública del certificado de autenticación de su DNIe, generando una firma en formato PAdES.",
-        "Guillermo firmará el contrato usando la clave privada de su DNIe, generando una firma en formato XCAdES.",
-        "Guillermo firmará el contrato usando la clave privada de su DNIe, generando una firma en formato PAdES."
+        "Usar la clave pública del certificado de firma y generar una firma XAdES.",
+        "Usar la clave pública del certificado de autenticación y generar una firma PAdES.",
+        "Usar la clave privada del DNIe y generar una firma XCAdES.",
+        "Usar la clave privada asociada al certificado de firma del DNIe y generar una firma PAdES para el PDF."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se mantiene D y se elimina la distracción contextual sobre la contratación laboral. La operación de firma utiliza la clave privada asociada al certificado de firma, no una clave pública ni el certificado de autenticación. PAdES es la familia de perfiles de firma de documentos PDF; XAdES se basa en XML.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "DNIe",
+        "certificado de firma",
+        "clave privada",
+        "PAdES",
+        "firma de PDF"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_240",
+            "referencia": "Dirección General de la Policía, portal DNIe, «Características Chip DNIe», versión 2026-05-05: el certificado de firma y la clave privada de firma se usan para firmar documentos; el certificado de autenticación tiene otra finalidad."
+          },
+          {
+            "url": "https://www.etsi.org/technical-groups/esi/",
+            "referencia": "ETSI, Electronic Signatures and Trust Infrastructures: catálogo y versiones vigentes de EN 319 142-1 (PAdES digital signatures)."
+          },
+          {
+            "url": "https://www.etsi.org/deliver/etsi_EN/319100_319199/31914201/01.02.01_60/en_31914201v010201p.pdf",
+            "referencia": "ETSI EN 319 142-1 V1.2.1: las firmas PAdES son firmas PDF construidas sobre las firmas PDF de ISO 32000-1; documento técnico complementario a la versión vigente que ETSI publica en su catálogo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, temas 80–81: certificados, claves, formatos de firma, DNIe e identificación/firma."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema I.6: identidad y firma electrónica, eIDAS y DNI electrónico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Seguridad, Criptografía, Identificación y Firma, edición 2026: edición 2026.1: cubre A1-79/80/81 y certificados, claves y formatos de firma.; correspondencia curricular, no reemplaza la fuente técnica."
+          }
+        ],
+        "observaciones": "Se mantiene D y se elimina la distracción contextual sobre la contratación laboral. La operación de firma utiliza la clave privada asociada al certificado de firma, no una clave pública ni el certificado de autenticación. PAdES es la familia de perfiles de firma de documentos PDF; XAdES se basa en XML."
+      }
     },
     {
       "id": 6582,
       "bloque": 0,
       "tema": 0,
-      "texto": "La Tercera Parte de Confianza (TPC) de un entorno de clave pública, que se encarga de legitimar la relación de una clave pública con la identidad de un usuario o servicio es:",
+      "texto": "En una PKI, ¿qué entidad emite el certificado que vincula una clave pública con la identidad del sujeto y responde criptográficamente por esa vinculación?",
       "opciones": [
-        "Autoridad de Certificación (AC).",
-        "Autoridad de Validación (AV).",
-        "Autoridad de Registro (AR).",
-        "Autoridad de Revocación (AR)."
+        "Autoridad de Certificación (CA), que emite y firma el certificado.",
+        "Autoridad de Validación (VA), que consulta el estado de validez o revocación de certificados.",
+        "Autoridad de Registro (RA), que verifica o tramita la identidad y la solicitud, pero no es por ello quien emite el certificado.",
+        "Una «Autoridad de Revocación (RA)», denominación que sustituye a la CA en la emisión."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene A. La CA (AC) emite y firma el certificado que contiene la vinculación sujeto-clave pública. Una RA puede comprobar la identidad o tramitar la solicitud por delegación; una VA informa sobre el estado del certificado. Se corrigen siglas duplicadas y se distingue emisión de registro/validación.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "PKI",
+        "autoridad de certificación",
+        "autoridad de registro",
+        "certificado X.509",
+        "vinculación clave-identidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5280.html",
+            "referencia": "RFC 5280, PKIX Certificate and CRL Profile: define el certificado como estructura que vincula la clave pública con el sujeto y describe su emisión/validación bajo una autoridad emisora."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3647.html",
+            "referencia": "RFC 3647, glosario y marco de políticas PKI: la CA emite/gestiona certificados; la RA puede recibir y autenticar solicitudes y desempeñar funciones delegadas por la CA."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 80: certificados digitales y claves públicas/privadas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema I.6: certificados e identidad/firma electrónica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Seguridad, Criptografía, Identificación y Firma, edición 2026: edición 2026.1: cubre certificados, PKI y funciones de confianza.; correspondencia curricular, no reemplaza la fuente técnica."
+          }
+        ],
+        "observaciones": "Se mantiene A. La CA (AC) emite y firma el certificado que contiene la vinculación sujeto-clave pública. Una RA puede comprobar la identidad o tramitar la solicitud por delegación; una VA informa sobre el estado del certificado. Se corrigen siglas duplicadas y se distingue emisión de registro/validación."
+      }
     },
     {
       "id": 6583,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué tipo de filtro se emplea en imágenes digitales para detectar bordes?",
+      "texto": "En el filtrado clásico de imágenes, ¿qué tipo de filtro realza variaciones rápidas de intensidad y se utiliza para resaltar bordes?",
       "opciones": [
-        "Filtro paso bajo",
-        "Filtro paso alto",
-        "Filtro de mediana",
-        "Filtro de la moda"
+        "Un filtro paso bajo, que suaviza variaciones rápidas.",
+        "Un filtro paso alto, que realza componentes de alta frecuencia asociadas a transiciones y bordes.",
+        "Un filtro de mediana, cuyo uso principal es reducir ruido impulsivo preservando bordes.",
+        "Un filtro de la moda, que sustituye cada píxel por el valor más frecuente de su vecindad."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene B y se precisa que la asociación es de realce, no que cualquier filtro paso alto constituya por sí solo un detector completo. Los detectores de bordes suelen estimar gradientes/derivadas y pueden combinar suavizado, umbral y supresión de no máximos.",
+      "clasificacion": {
+        "A1": [
+          "A1-83"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "procesamiento digital de imágenes",
+        "realce de bordes",
+        "filtros paso alto",
+        "gradiente",
+        "frecuencias espaciales"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://docs.opencv.org/4.12.0/d2/d2c/tutorial_sobel_derivatives.html",
+            "referencia": "OpenCV, tutorial Sobel Derivatives: el gradiente mide cambios de intensidad; los máximos de la derivada permiten localizar bordes y el operador Sobel se usa como detector básico de bordes."
+          },
+          {
+            "url": "https://archive.nptel.ac.in/content/storage2/courses/105108077/module4/lecture16.pdf",
+            "referencia": "NPTEL, Digital Image Processing, filtrado y realce de bordes: los filtros paso alto realzan componentes de alta frecuencia; gradientes Prewitt/Sobel se utilizan para estimar bordes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 83: tratamiento de imágenes y tecnologías de digitalización."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xTMCpPmwNi8hpb0nZ3sMqpgvrhLXT-yf/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Tratamiento de imágenes, OCR, biometría y gestión de contenidos, edición 2026: edición 2026.1, incluye el tema oficial A1-83 y tratamiento de imágenes.; correspondencia curricular, no reemplaza la fuente técnica."
+          }
+        ],
+        "observaciones": "Se mantiene B y se precisa que la asociación es de realce, no que cualquier filtro paso alto constituya por sí solo un detector completo. Los detectores de bordes suelen estimar gradientes/derivadas y pueden combinar suavizado, umbral y supresión de no máximos."
+      }
     },
     {
       "id": 6584,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el proceso de reconocimiento de la voz, la fase en la que la información es grabada en formato digital es:",
+      "texto": "En una cadena básica de reconocimiento automático del habla, ¿en qué fase se adquiere la señal acústica y se convierte en audio digital antes de extraer características o reconocer palabras?",
       "opciones": [
-        "Captura de la información",
-        "Segmentación y análisis de la señal",
-        "Adaptación al entorno",
-        "Generar patrones"
+        "Captura o adquisición de la información.",
+        "Segmentación y análisis de la señal.",
+        "Adaptación al entorno o al hablante.",
+        "Generación/comparación de patrones para decidir la secuencia reconocida."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene A y se concreta el alcance: la captura/adquisición recoge la señal del micrófono y la digitaliza mediante conversión, muestreo y cuantificación; el análisis y la extracción de características ocurren después. El tema oficial roza multimedia/IVR, pero el programa no enumera expresamente esta fase ni se encontró una unidad de ITIC Academy sobre reconocimiento de voz; esa limitación curricular queda indicada.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-II-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "reconocimiento de voz",
+        "adquisición de audio",
+        "digitalización",
+        "muestreo y cuantificación",
+        "captura de señal"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://ocw.mit.edu/courses/mas-632-conversational-computer-systems-fall-2008/d6a7e14a217a7391596e4dc51ed359e8_schmandt_ch7.pdf",
+            "referencia": "MIT OpenCourseWare, capítulo «Speech Recognition»: la voz entrante se captura y digitaliza para convertirla a una representación interna antes de su análisis por el reconocedor."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.711",
+            "referencia": "UIT-T G.711, codificación de señales vocales: especifica representación digital de audio telefónico muestreado, como referencia técnica para la adquisición/digitalización de voz."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 56: dispositivos y tratamiento de información multimedia (adscripción próxima, pues no menciona explícitamente reconocimiento de voz)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema II.12: sistemas de respuesta de voz interactiva (IVR) y VoiceXML (relación con sistemas de voz, pero no enumera fases del reconocimiento)."
+          }
+        ],
+        "observaciones": "Se mantiene A y se concreta el alcance: la captura/adquisición recoge la señal del micrófono y la digitaliza mediante conversión, muestreo y cuantificación; el análisis y la extracción de características ocurren después. El tema oficial roza multimedia/IVR, pero el programa no enumera expresamente esta fase ni se encontró una unidad de ITIC Academy sobre reconocimiento de voz; esa limitación curricular queda indicada."
+      }
     },
     {
       "id": 6585,
       "bloque": 0,
       "tema": 0,
-      "texto": "De acuerdo al Estándar ISO 12207 de procesos del ciclo de vida del software:",
+      "texto": "Según ISO/IEC/IEEE 12207:2026, ¿qué opción identifica el proceso específico de adaptación de los procesos del estándar a las circunstancias de una organización o proyecto?",
       "opciones": [
-        "Existe un proceso específico para la adaptación del resto de procesos.",
-        "Para cumplir con el estándar es necesario adaptar los procesos a las circunstancias particulares de cada organización o proyecto.",
-        "Se puede utilizar cualquier proceso de adaptación, siempre y cuando esté justificado y documentado."
+        "El Anexo A define un proceso normativo de tailoring (adaptación).",
+        "El estándar obliga a aplicar sin cambios todos sus procesos en cualquier organización y proyecto.",
+        "La organización puede suprimir procesos sin aplicar ningún criterio ni dejar evidencia.",
+        "La adaptación se realiza exclusivamente mediante el proceso de gestión de configuración."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se mantiene A y se actualiza la referencia genérica a la edición vigente ISO/IEC/IEEE 12207:2026. Su Anexo A contiene el proceso de tailoring; no se trata de una autorización para suprimir procesos sin criterio/documentación. La pregunta original se refería a «ISO 12207» sin edición y circulaba en un contexto histórico, por lo que se conserva el original en el registro y se deja explícita la edición comprobada.",
+      "clasificacion": {
+        "A1": [
+          "A1-96"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ISO/IEC/IEEE 12207:2026",
+        "procesos del ciclo de vida del software",
+        "tailoring",
+        "adaptación de procesos",
+        "edición vigente"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/90219.html",
+            "referencia": "ISO/IEC/IEEE 12207:2026, edición 2 publicada en abril de 2026, página oficial: marco vigente de procesos del ciclo de vida del software aplicable a organizaciones y proyectos."
+          },
+          {
+            "url": "https://assets.vde-verlag.de/iec-normen/preview-pdf/info_isoiecieee12207%7Bed2.0%7Den.pdf",
+            "referencia": "Vista previa autorizada de ISO/IEC/IEEE 12207:2026: índice normativo incluye Anexo A, Tailoring process (proceso de adaptación). Se emplea solo para confirmar la existencia del proceso específico en la edición vigente."
+          },
+          {
+            "url": "https://www.iso.org/standard/63712.html",
+            "referencia": "ISO/IEC/IEEE 12207:2017, página oficial: identifica la edición anterior y enlaza a la nueva edición 2026; sirve para fechar preguntas que aludan a la edición 2017."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 96: procesos, estándares y garantía de calidad en desarrollo de software."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema III.13: calidad del software, modelos, métricas, normas y estándares."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Calidad y Mantenimiento, edición 2026: edición 2026: correspondencia curricular con A1-96/98 y A2-III.13; la búsqueda del texto exacto ISO 12207 en Drive no dio resultado.; correspondencia curricular, no reemplaza la fuente técnica."
+          }
+        ],
+        "observaciones": "Se mantiene A y se actualiza la referencia genérica a la edición vigente ISO/IEC/IEEE 12207:2026. Su Anexo A contiene el proceso de tailoring; no se trata de una autorización para suprimir procesos sin criterio/documentación. La pregunta original se refería a «ISO 12207» sin edición y circulaba en un contexto histórico, por lo que se conserva el original en el registro y se deja explícita la edición comprobada."
+      }
     },
     {
       "id": 6586,
