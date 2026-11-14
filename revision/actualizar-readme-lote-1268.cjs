@@ -1,0 +1,23 @@
+const fs=require('node:fs'),path=require('node:path');
+const file=path.join(__dirname,'README.md');let s=fs.readFileSync(file,'utf8');
+const old='Último lote secuencial: 1267 (IDs 6656–6660). Acumulado: 6655 preguntas examinadas individualmente; 6537 verificadas (1287 vigentes, 4772 corregidas y 478 históricas); 118 pendientes documentadas (46 de fuente y 72 de ambigüedad); 5468 sin revisar individualmente.';
+const next='Último lote secuencial: 1268 (IDs 6661–6665). Acumulado: 6660 preguntas examinadas individualmente; 6542 verificadas (1287 vigentes, 4776 corregidas y 479 históricas); 118 pendientes documentadas (46 de fuente y 72 de ambigüedad); 5463 sin revisar individualmente.';
+if(!s.includes(old))throw Error('No coincide resumen del lote 1267; no actualizar a ciegas.');s=s.replace(old,next);
+const section=`## Lote 1268 — 14 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6661–6665. Se sustituyó una pregunta TFTP de «todas las anteriores» por datos verificables de protocolo y seguridad; se distingue QUIC como transporte de HTTP/3 como aplicación; se concreta la encapsulación shim de MPLS; se delimita la relación entre IEEE 802.16 y WiMAX; y se registra 802.16e-2005 como una enmienda histórica ya consolidada en revisiones posteriores.
+
+- **6661 — TFTP:** corregida B. RFC 1350 define Trivial File Transfer Protocol: la petición inicial RRQ/WRQ usa UDP destino 69; el resto utiliza TIDs/puertos de sesión. No incluye autenticación ni control de acceso, por lo que se restringe el servicio y sus permisos. A1-109/A2-II.8; Academy bloque Protocolos 2026.1.
+- **6662 — QUIC:** corregida D. RFC 9000 lo define explícitamente como protocolo de transporte que viaja en datagramas UDP; HTTP/3 es la capa de aplicación sobre QUIC. A1-115/A2-II.8; Academy bloque Protocolos, §4.4.
+- **6663 — MPLS:** corregida B. En el encapsulado shim de RFC 3032, las etiquetas van tras la cabecera de enlace y antes de la cabecera de red. «Capa 2.5» es un atajo didáctico, no una capa OSI formal, y no describe todas las modalidades de MPLS. A1-113/A2-II.8/A2-IV.8; Academy Redes, §7.5.
+- **6664 — IEEE 802.16/WiMAX:** corregida D. IEEE 802.16 normaliza la interfaz aérea de acceso inalámbrico de banda ancha; WiMAX identifica el ecosistema de interoperabilidad basado en esa familia. A1-112/A2-IV.11; Academy Redes cubre el tema de acceso inalámbrico, mientras la atribución exacta se toma de IEEE.
+- **6665 — Mobile WiMAX:** histórica B. La enmienda IEEE 802.16e-2005 añadió operación fija y móvil; IEEE indica que fue integrada en revisiones posteriores y está sustituida como edición independiente. A1-112/A2-IV.11; Academy Redes 2026.1, cotejo temático de acceso inalámbrico.
+
+Fuentes primarias: [IETF RFC 1350, TFTP](https://www.rfc-editor.org/rfc/rfc1350.html) y [IANA, registro de puertos TFTP](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=tftp); [IETF RFC 9000, QUIC](https://www.rfc-editor.org/rfc/rfc9000.html) y [RFC 9114, HTTP/3](https://www.rfc-editor.org/rfc/rfc9114.html); [IETF RFC 3031, arquitectura MPLS](https://www.rfc-editor.org/rfc/rfc3031.html) y [RFC 3032, encapsulado de etiquetas](https://www.rfc-editor.org/rfc/rfc3032.html); [IEEE 802.16, familia WirelessMAN](https://standards.ieee.org/ieee/802.16/) y [Task Group e](https://www.ieee802.org/16/tge/); [IEEE Std 802.16e-2005, ficha y estado superseded](https://standards.ieee.org/ieee/802.16e/3659/). Correspondencias oficiales: [temario A1 GSI 2025, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) (temas 109, 112, 113 y 115) y [temario A2 GSI 2025, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) (II.8, IV.8 e IV.11). Cotejo ITIC Academy: [bloque Protocolos 2026.1](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk), donde se explican TFTP sin autenticación y sobre UDP/69, QUIC/HTTP/3, y MPLS/capas; [bloque Redes 2026.1](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk), que incluye redes inalámbricas, acceso y MPLS. El cotejo académico acredita encaje curricular; los hechos técnicos se verifican con RFC, IANA e IEEE.
+
+Inventario local: 6660 examinadas; 6542 verificadas (1287 vigentes, 4776 corregidas, 479 históricas); 118 pendientes (46 de fuente y 72 de ambigüedad); 5463 sin revisar individualmente. Publicación pendiente de verificación.
+
+`;
+if(s.includes('## Lote 1268'))throw Error('La sección 1268 ya existe.');
+const marker='## Lote 1267 — 14 de noviembre de 2026';if(!s.includes(marker))throw Error('No está la sección 1267.');
+s=s.replace(marker,section+marker);fs.writeFileSync(file,s);console.log('README actualizado para el lote 1268.');

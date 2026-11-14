@@ -1,0 +1,395 @@
+{
+  "fecha": "2026-11-14",
+  "alcance": "IDs 6661–6665; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 6661,
+      "original": {
+        "id": 6661,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El protocolo TFTP (sic):",
+        "opciones": [
+          "Significa Trivial FTP",
+          "Utiliza el conocido puerto 69",
+          "Debería ser protegido especificamente en el Firewall",
+          "Todas las anteriores respuestas son correctas"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6661,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre TFTP (Trivial File Transfer Protocol), ¿qué afirmación técnica es correcta?",
+        "opciones": [
+          "Las siglas significan «Transfer File Protocol» y el servidor escucha por defecto en TCP/21.",
+          "El RRQ/WRQ inicial se envía al puerto UDP 69; la transferencia continúa usando identificadores de transferencia (TID) y puertos elegidos para la sesión.",
+          "TFTP incorpora autenticación de usuario y cifrado de extremo a extremo.",
+          "TFTP solo funciona sobre TCP y no puede filtrarse por un cortafuegos."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La clave B es correcta. RFC 1350 define el protocolo como Trivial File Transfer Protocol, basado en UDP: la petición inicial RRQ/WRQ llega al puerto 69, pero las respuestas y el resto del intercambio usan TIDs negociados, por lo que una regla de cortafuegos debe considerar el comportamiento de la sesión y restringir el servicio. TFTP no aporta autenticación ni cifrado. Se reemplaza «todas las anteriores» y la recomendación vaga de firewall por hechos contrastables. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1: incluye TFTP como transferencia de ficheros sobre UDP/69 sin autenticación; se contrasta el destino inicial UDP/69 y los TIDs posteriores con RFC 1350/IANA. Corresponde al servicio Internet básico y al estudio de protocolos TCP/IP. Correspondencia oficial asociada: A1-109/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-109"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Protocolos 2026.1: incluye TFTP como transferencia de ficheros sobre UDP/69 sin autenticación; se contrasta el destino inicial UDP/69 y los TIDs posteriores con RFC 1350/IANA. Corresponde al servicio Internet básico y al estudio de protocolos TCP/IP.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1: incluye TFTP como transferencia de ficheros sobre UDP/69 sin autenticación; se contrasta el destino inicial UDP/69 y los TIDs posteriores con RFC 1350/IANA. Corresponde al servicio Internet básico y al estudio de protocolos TCP/IP. Correspondencia oficial asociada: A1-109/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        },
+        "etiquetas": [
+          "TFTP",
+          "UDP",
+          "puerto 69",
+          "servicios de Internet",
+          "cortafuegos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1350.html",
+              "referencia": "RFC 1350, título y §§2–4: TFTP significa Trivial File Transfer Protocol; usa UDP y el RRQ/WRQ inicial se dirige al puerto 69. La transferencia continúa mediante TIDs/puertos efímeros seleccionados para esa sesión."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1350.html#section-5",
+              "referencia": "RFC 1350 §5, consideraciones de seguridad: TFTP no incorpora autenticación ni control de acceso; el servicio debe limitarse y sus permisos proteger el sistema de ficheros."
+            },
+            {
+              "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=tftp",
+              "referencia": "IANA Service Name and Transport Protocol Port Number Registry: tftp está registrado en UDP/69."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 109: Internet y servicios básicos; encaje curricular para transferencia de ficheros."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema II.8: modelos TCP/IP y OSI, capas, protocolos y servicios."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Protocolos 2026.1: incluye TFTP como transferencia de ficheros sobre UDP/69 sin autenticación; se contrasta el destino inicial UDP/69 y los TIDs posteriores con RFC 1350/IANA. Corresponde al servicio Internet básico y al estudio de protocolos TCP/IP."
+            }
+          ],
+          "observaciones": "La clave B es correcta. RFC 1350 define el protocolo como Trivial File Transfer Protocol, basado en UDP: la petición inicial RRQ/WRQ llega al puerto 69, pero las respuestas y el resto del intercambio usan TIDs negociados, por lo que una regla de cortafuegos debe considerar el comportamiento de la sesión y restringir el servicio. TFTP no aporta autenticación ni cifrado. Se reemplaza «todas las anteriores» y la recomendación vaga de firewall por hechos contrastables. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1: incluye TFTP como transferencia de ficheros sobre UDP/69 sin autenticación; se contrasta el destino inicial UDP/69 y los TIDs posteriores con RFC 1350/IANA. Corresponde al servicio Internet básico y al estudio de protocolos TCP/IP. Correspondencia oficial asociada: A1-109/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6662,
+      "original": {
+        "id": 6662,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "QUIC es un protocolo de la capa de:",
+        "opciones": [
+          "Aplicación",
+          "Internet",
+          "Enlace",
+          "Transporte"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6662,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la especificación IETF, QUIC es un protocolo de la capa de:",
+        "opciones": [
+          "Aplicación; HTTP/3 es su transporte.",
+          "Internet (capa de red IP).",
+          "Enlace de datos.",
+          "Transporte; sus paquetes se encapsulan en datagramas UDP."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La clave D es correcta: RFC 9000 define QUIC explícitamente como un protocolo de transporte y lo encapsula en UDP. HTTP/3 es un protocolo de aplicación que se ejecuta sobre QUIC. Se conserva la clasificación por capas del modelo TCP/IP/OSI como una correspondencia funcional, no como un campo formal del RFC. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, §4.4: separa TCP/UDP/QUIC y HTTP/3; define QUIC como transporte sobre UDP y a HTTP/3 como protocolo de aplicación. Corresponde al tema de redes IP y a los modelos TCP/IP/OSI. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Protocolos 2026.1, §4.4: separa TCP/UDP/QUIC y HTTP/3; define QUIC como transporte sobre UDP y a HTTP/3 como protocolo de aplicación. Corresponde al tema de redes IP y a los modelos TCP/IP/OSI.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, §4.4: separa TCP/UDP/QUIC y HTTP/3; define QUIC como transporte sobre UDP y a HTTP/3 como protocolo de aplicación. Corresponde al tema de redes IP y a los modelos TCP/IP/OSI. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        },
+        "etiquetas": [
+          "QUIC",
+          "HTTP/3",
+          "transporte",
+          "UDP",
+          "IETF RFC 9000"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9000.html",
+              "referencia": "IETF RFC 9000, título, abstracto y §1: especifica QUIC como protocolo de transporte general, seguro y multiplexado; sus paquetes se transportan en datagramas UDP."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+              "referencia": "IETF RFC 9114: HTTP/3 es el protocolo de aplicación que usa QUIC; se diferencia HTTP/3 (aplicación) del transporte QUIC."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 115: redes IP, arquitectura y protocolos; QUIC se ubica como transporte sobre UDP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema II.8: modelos TCP/IP y OSI, capas y protocolos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Protocolos 2026.1, §4.4: separa TCP/UDP/QUIC y HTTP/3; define QUIC como transporte sobre UDP y a HTTP/3 como protocolo de aplicación. Corresponde al tema de redes IP y a los modelos TCP/IP/OSI."
+            }
+          ],
+          "observaciones": "La clave D es correcta: RFC 9000 define QUIC explícitamente como un protocolo de transporte y lo encapsula en UDP. HTTP/3 es un protocolo de aplicación que se ejecuta sobre QUIC. Se conserva la clasificación por capas del modelo TCP/IP/OSI como una correspondencia funcional, no como un campo formal del RFC. Cotejo curricular ITIC Academy: ITIC Academy, bloque Protocolos 2026.1, §4.4: separa TCP/UDP/QUIC y HTTP/3; define QUIC como transporte sobre UDP y a HTTP/3 como protocolo de aplicación. Corresponde al tema de redes IP y a los modelos TCP/IP/OSI. Correspondencia oficial asociada: A1-115/A2-II-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6663,
+      "original": {
+        "id": 6663,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El protocolo MPLS (Multiprotocol Label Switching), ¿entre qué capas del modelo OSI opera?",
+        "opciones": [
+          "Entre la capa física y la de enlace de datos.",
+          "Entre la capa de enlace de datos y la capa de red.",
+          "Entre la capa de red y la capa de transporte.",
+          "Entre la capa de transporte y las capas superiores."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6663,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la encapsulación MPLS de tipo «shim» sobre Ethernet, ¿dónde se insertan las etiquetas respecto de las cabeceras OSI?",
+        "opciones": [
+          "Antes de la cabecera de enlace de datos y por debajo de la capa física.",
+          "Entre la cabecera de enlace de datos y la cabecera del paquete de red (la descripción informal «capa 2.5»).",
+          "Entre la cabecera de red y la cabecera de transporte.",
+          "Después de los datos de aplicación."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La clave B describe el caso acotado por RFC 3032: la pila de etiquetas sigue a la cabecera de enlace y precede a la cabecera de red. «Capa 2.5» es una etiqueta didáctica, no una capa OSI formal. MPLS también puede transportar o codificar etiquetas de otras formas (por ejemplo, en tecnologías de enlace como ATM); no se afirma que toda implementación use siempre un shim Ethernet. Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1, §7.5: MPLS y conmutación por etiquetas; se encuentra en A1-113 y A2-C8. El bloque Protocolos ilustra el shim/capa didáctica 2.5; el orden exacto de cabeceras se comprueba en RFC 3031/3032. Correspondencia oficial asociada: A1-113/A2-II-8/A2-IV-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-113"
+          ],
+          "A2": [
+            "A2-II-8",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Redes 2026.1, §7.5: MPLS y conmutación por etiquetas; se encuentra en A1-113 y A2-C8. El bloque Protocolos ilustra el shim/capa didáctica 2.5; el orden exacto de cabeceras se comprueba en RFC 3031/3032.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1, §7.5: MPLS y conmutación por etiquetas; se encuentra en A1-113 y A2-C8. El bloque Protocolos ilustra el shim/capa didáctica 2.5; el orden exacto de cabeceras se comprueba en RFC 3031/3032. Correspondencia oficial asociada: A1-113/A2-II-8/A2-IV-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        },
+        "etiquetas": [
+          "MPLS",
+          "conmutación por etiquetas",
+          "capa 2.5",
+          "RFC 3031",
+          "RFC 3032"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3031.html",
+              "referencia": "IETF RFC 3031, §§2.1 y 3: la clase de equivalencia de reenvío se codifica en una etiqueta; los routers MPLS encaminan mediante intercambio de etiquetas, usando la información de red en el ingreso."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3032.html#section-2",
+              "referencia": "IETF RFC 3032 §2: en la encapsulación shim sobre medios LAN, la pila de etiquetas aparece después de la cabecera de enlace y antes de la cabecera de red."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, temas 108 y 113: redes, conmutación y redes de transporte MPLS."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, temas II.8 (modelos/capas) y IV.8 (redes, protocolos y técnicas de transmisión)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Redes 2026.1, §7.5: MPLS y conmutación por etiquetas; se encuentra en A1-113 y A2-C8. El bloque Protocolos ilustra el shim/capa didáctica 2.5; el orden exacto de cabeceras se comprueba en RFC 3031/3032."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Redes 2026.1, §7.5: MPLS y conmutación por etiquetas; se encuentra en A1-113 y A2-C8. El bloque Protocolos ilustra el shim/capa didáctica 2.5; el orden exacto de cabeceras se comprueba en RFC 3031/3032."
+            }
+          ],
+          "observaciones": "La clave B describe el caso acotado por RFC 3032: la pila de etiquetas sigue a la cabecera de enlace y precede a la cabecera de red. «Capa 2.5» es una etiqueta didáctica, no una capa OSI formal. MPLS también puede transportar o codificar etiquetas de otras formas (por ejemplo, en tecnologías de enlace como ATM); no se afirma que toda implementación use siempre un shim Ethernet. Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1, §7.5: MPLS y conmutación por etiquetas; se encuentra en A1-113 y A2-C8. El bloque Protocolos ilustra el shim/capa didáctica 2.5; el orden exacto de cabeceras se comprueba en RFC 3031/3032. Correspondencia oficial asociada: A1-113/A2-II-8/A2-IV-8. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6664,
+      "original": {
+        "id": 6664,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué estándar regula las redes de área metropolitana inalámbrica de banda ancha, conocidas informalmente como WiMAx?",
+        "opciones": [
+          "IEEE 802.11g",
+          "IEEE 802.15",
+          "IEEE 802.1Q",
+          "IEEE 802.16"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6664,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué familia de estándares IEEE se asocia con las redes metropolitanas inalámbricas de banda ancha conocidas comercialmente como WiMAX?",
+        "opciones": [
+          "IEEE 802.11, para redes WLAN.",
+          "IEEE 802.15, para redes de área personal.",
+          "IEEE 802.1Q, para VLAN Ethernet.",
+          "IEEE 802.16, para la interfaz aérea de acceso inalámbrico de banda ancha (WirelessMAN)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "La clave D es correcta. IEEE 802.16 especifica la interfaz aérea de sistemas de acceso inalámbrico de banda ancha metropolitanos; WiMAX identifica el ecosistema/perfiles de interoperabilidad basados en esa familia. La pregunta original confundía una denominación comercial y una familia de estándares; se precisa ese alcance y la grafía. Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1: cubre medios no guiados y tecnologías de acceso inalámbricas; la correspondencia es A1-112/A2-IV.11. IEEE 802.16 y la relación con WiMAX se verifican en fuentes oficiales IEEE. Correspondencia oficial asociada: A1-112/A2-IV-11. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-112"
+          ],
+          "A2": [
+            "A2-IV-11"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Redes 2026.1: cubre medios no guiados y tecnologías de acceso inalámbricas; la correspondencia es A1-112/A2-IV.11. IEEE 802.16 y la relación con WiMAX se verifican en fuentes oficiales IEEE.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1: cubre medios no guiados y tecnologías de acceso inalámbricas; la correspondencia es A1-112/A2-IV.11. IEEE 802.16 y la relación con WiMAX se verifican en fuentes oficiales IEEE. Correspondencia oficial asociada: A1-112/A2-IV-11. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        },
+        "etiquetas": [
+          "WiMAX",
+          "IEEE 802.16",
+          "WirelessMAN",
+          "banda ancha inalámbrica",
+          "redes metropolitanas"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://standards.ieee.org/ieee/802.16/",
+              "referencia": "IEEE SA, IEEE 802.16: familia de estándares de interfaz aérea para sistemas de acceso inalámbrico de banda ancha fijo y móvil; la ficha enlaza la revisión consolidada 802.16-2017."
+            },
+            {
+              "url": "https://www.ieee802.org/16/tge/",
+              "referencia": "IEEE 802.16 Task Group e, descripción oficial: IEEE 802.16e fue la enmienda WirelessMAN que añadió operación combinada fija y móvil a la familia de acceso inalámbrico de banda ancha."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 112: tecnologías de acceso de fibra, móviles e inalámbricas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema IV.11: redes inalámbricas, protocolos y características técnicas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Redes 2026.1: cubre medios no guiados y tecnologías de acceso inalámbricas; la correspondencia es A1-112/A2-IV.11. IEEE 802.16 y la relación con WiMAX se verifican en fuentes oficiales IEEE."
+            }
+          ],
+          "observaciones": "La clave D es correcta. IEEE 802.16 especifica la interfaz aérea de sistemas de acceso inalámbrico de banda ancha metropolitanos; WiMAX identifica el ecosistema/perfiles de interoperabilidad basados en esa familia. La pregunta original confundía una denominación comercial y una familia de estándares; se precisa ese alcance y la grafía. Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1: cubre medios no guiados y tecnologías de acceso inalámbricas; la correspondencia es A1-112/A2-IV.11. IEEE 802.16 y la relación con WiMAX se verifican en fuentes oficiales IEEE. Correspondencia oficial asociada: A1-112/A2-IV-11. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        }
+      }
+    },
+    {
+      "id": 6665,
+      "original": {
+        "id": 6665,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En referencia a WiMAX, seleccione cuál de las siguientes opciones se corresponde con WiMAX móvil:",
+        "opciones": [
+          "802.16i",
+          "802.16e",
+          "802.16f",
+          "802.16n"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 6665,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la evolución histórica de WiMAX, ¿qué enmienda IEEE introdujo soporte combinado para estaciones fijas y móviles, base de Mobile WiMAX?",
+        "opciones": [
+          "IEEE 802.16i.",
+          "IEEE 802.16e-2005.",
+          "IEEE 802.16f.",
+          "IEEE 802.16n."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "La clave B es histórica y se acota a la enmienda: IEEE 802.16e-2005 añadió operación combinada fija y móvil; fue integrada en revisiones posteriores de IEEE 802.16 y ya figura como sustituida. No se presenta 802.16e como el estándar consolidado vigente. Se corrigió la grafía WiMAX y se precisó el alcance temporal. Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1: encaje curricular en tecnologías de acceso inalámbricas (A1-112/A2-IV.11). El material actual no convierte 802.16e en estándar vigente independiente; el carácter histórico y la consolidación posterior se verifican en IEEE. Correspondencia oficial asociada: A1-112/A2-IV-11. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-112"
+          ],
+          "A2": [
+            "A2-IV-11"
+          ],
+          "bloque_academia": "ITIC Academy, bloque Redes 2026.1: encaje curricular en tecnologías de acceso inalámbricas (A1-112/A2-IV.11). El material actual no convierte 802.16e en estándar vigente independiente; el carácter histórico y la consolidación posterior se verifican en IEEE.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1: encaje curricular en tecnologías de acceso inalámbricas (A1-112/A2-IV.11). El material actual no convierte 802.16e en estándar vigente independiente; el carácter histórico y la consolidación posterior se verifican en IEEE. Correspondencia oficial asociada: A1-112/A2-IV-11. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        },
+        "etiquetas": [
+          "WiMAX móvil",
+          "IEEE 802.16e-2005",
+          "WirelessMAN",
+          "estándar histórico",
+          "IEEE 802.16-2009"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-14",
+          "fuentes": [
+            {
+              "url": "https://standards.ieee.org/ieee/802.16e/3659/",
+              "referencia": "IEEE SA, IEEE 802.16e-2005: enmienda para operación fija y móvil, aprobada/publicada en 2005/2006; la ficha registra estado superseded y la consolidación posterior en 802.16-2009/2012."
+            },
+            {
+              "url": "https://www.ieee802.org/16/tge/",
+              "referencia": "IEEE 802.16 Task Group e: define formalmente IEEE Std 802.16e-2005 como Physical and Medium Access Control Layers for Combined Fixed and Mobile Operation; documenta la aprobación el 7-12-2005."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria GSI A1 2025, tema 112: tecnologías de acceso inalámbricas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria GSI A2 2025, tema IV.11: redes inalámbricas, protocolos y características técnicas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque Redes 2026.1: encaje curricular en tecnologías de acceso inalámbricas (A1-112/A2-IV.11). El material actual no convierte 802.16e en estándar vigente independiente; el carácter histórico y la consolidación posterior se verifican en IEEE."
+            }
+          ],
+          "observaciones": "La clave B es histórica y se acota a la enmienda: IEEE 802.16e-2005 añadió operación combinada fija y móvil; fue integrada en revisiones posteriores de IEEE 802.16 y ya figura como sustituida. No se presenta 802.16e como el estándar consolidado vigente. Se corrigió la grafía WiMAX y se precisó el alcance temporal. Cotejo curricular ITIC Academy: ITIC Academy, bloque Redes 2026.1: encaje curricular en tecnologías de acceso inalámbricas (A1-112/A2-IV.11). El material actual no convierte 802.16e en estándar vigente independiente; el carácter histórico y la consolidación posterior se verifican en IEEE. Correspondencia oficial asociada: A1-112/A2-IV-11. La academia orienta cobertura y prioridad, no sustituye a la fuente primaria."
+        }
+      }
+    }
+  ]
+}
