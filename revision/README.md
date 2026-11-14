@@ -2,6 +2,8 @@
 
 Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1268 (IDs 6661–6665). Acumulado: 6660 preguntas examinadas individualmente; 6542 verificadas (1287 vigentes, 4776 corregidas y 479 históricas); 118 pendientes documentadas (46 de fuente y 72 de ambigüedad); 5463 sin revisar individualmente.
 
+**Publicación verificada:** commit `de04c2d` (`de04c2dc47e5385fb9d569337c90bdc4696e4d9d`); [Deploy GitHub Pages, workflow run 43640892137](https://github.com/itic-academy/simulador-tic/actions/runs/43640892137) terminó **Success** e incluye ese commit. GitHub Pages respondió HTTP 200 para README, `cambios-lote-1268.json` e `inventario.json`; el contenido servido refleja el lote 1268, los IDs 6661–6665 y el inventario con 6.660 examinadas, 6.542 verificadas (1.287 vigentes, 4.776 corregidas y 479 históricas), 118 pendientes (46 de fuente y 72 de ambigüedad) y 5.463 sin revisar individualmente.
+
 **Publicación verificada:** commit de datos `e1b856e` (`e1b856e9014127a23fbff955596a140d6ebeffcc`), [Deploy GitHub Pages, workflow run 43640145101](https://github.com/itic-academy/simulador-tic/actions/runs/43640145101), finalizado con estado **Success** e incluyendo ese commit. GitHub Pages respondió HTTP 200 para `revision/README.md`, `revision/cambios-lote-1267.json` y `revision/inventario.json`; se comprobó en los contenidos servidos que el README anuncia el lote 1267, el registro incluye los IDs 6656–6660 y el inventario publicado confirma 6.655 examinadas, 6.537 verificadas (1.287 vigentes, 4.772 corregidas y 478 históricas), 118 pendientes (46 de fuente y 72 de ambigüedad) y 5.468 sin revisar individualmente.
 
 
