@@ -344995,71 +344995,302 @@
       "id": 6576,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un problema del modelo dimensional es:",
+      "texto": "En un cubo OLAP basado en un modelo dimensional, ¿qué reto aparece cuando muchas combinaciones posibles de miembros de dimensiones no contienen hechos?",
       "opciones": [
-        "Data Expression.",
-        "Data Complexity.",
-        "Data Sparsity.",
-        "Data Compression."
+        "Data Expression: el cubo no puede representar expresiones calculadas.",
+        "Data Complexity: no se pueden agregar medidas entre dimensiones.",
+        "Data Sparsity (esparsidad): gran parte del espacio de combinaciones está vacío y debe representarse/almacenarse con eficiencia.",
+        "Data Compression: la compresión impide consultar las dimensiones."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene C y se acota a la esparsidad de cubos OLAP: muchas combinaciones dimensionales carecen de hechos. Es un reto de representación y almacenamiento; los motores OLAP pueden reconocer dimensiones sparse y optimizar su almacenamiento, por lo que no se afirma que toda dimensión sparse sea intrínsecamente ineficiente.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-III-15"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "OLAP",
+        "modelo dimensional",
+        "cubo multidimensional",
+        "esparsidad",
+        "almacenamiento analítico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/olaug/overview.html",
+            "referencia": "Oracle OLAP User Guide, modelo dimensional y cubos: las dimensiones/celdas pueden ser sparse; el motor OLAP puede aplicar índices y almacenamiento de tipo sparse. La esparsidad es un reto de representación/almacenamiento que el gestor puede optimizar, no una deficiencia inevitable."
+          },
+          {
+            "url": "https://docs.oracle.com/cd/B28359_01/owb.111/b31278/ref_dim_objects.htm",
+            "referencia": "Oracle Warehouse Builder, dimensional objects: define sparsity para cubos y describe que designarla mejora recuperación y reduce almacenamiento; la esparsidad corresponde a combinaciones no ocupadas en dimensiones."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 75: tecnologías de explotación de datos, data warehouse y sistemas analíticos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema III.15: procesamiento analítico en línea (OLAP), big data y bases NoSQL."
+          },
+          {
+            "url": "https://drive.google.com/file/d/10DHrDJ7834oPAD2JR8S0dh0Yext_0Gwp/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Business Intelligence y Big Data, edición 2026: edición 2026.1: cubre OLAP, Data Warehouse, hechos y dimensiones y los sistemas de explotación analítica.; cotejo curricular, no fuente técnica primaria."
+          }
+        ],
+        "observaciones": "Se mantiene C y se acota a la esparsidad de cubos OLAP: muchas combinaciones dimensionales carecen de hechos. Es un reto de representación y almacenamiento; los motores OLAP pueden reconocer dimensiones sparse y optimizar su almacenamiento, por lo que no se afirma que toda dimensión sparse sea intrínsecamente ineficiente."
+      }
     },
     {
       "id": 6577,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes NO es una etiqueta HTML?",
+      "texto": "Según HTML Living Standard, ¿cuál de estos nombres no corresponde a un elemento HTML estándar ni a un nombre válido de elemento personalizado?",
       "opciones": [
-        "<em></em>",
-        "<meta>",
-        "<tc></tc>",
-        "<body></body>"
+        "`em`",
+        "`meta`",
+        "`tc`",
+        "`body`"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se mantiene C y se precisa el criterio: `em`, `meta` y `body` son elementos estándar. `tc` no es elemento HTML estándar; tampoco cumple la regla de incluir un guion requerida para un nombre de elemento personalizado autónomo.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "HTML Living Standard",
+        "elementos HTML",
+        "HTML no estándar",
+        "elementos personalizados"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://html.spec.whatwg.org/multipage/",
+            "referencia": "WHATWG HTML Living Standard: índice y especificaciones de elementos estándar, entre ellos em, meta y body; no define un elemento HTML estándar `tc`."
+          },
+          {
+            "url": "https://html.spec.whatwg.org/multipage/custom-elements.html",
+            "referencia": "WHATWG HTML Living Standard, Custom elements: un nombre personalizado debe contener guion ASCII; `tc` no es nombre válido de elemento personalizado."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 77: HTML, CSS, XML y compatibilidad con estándares."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema II.9: lenguajes de marca o etiqueta, incluido HTML."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Tecnologías de Sistemas de la Información, edición 2026: edición 2026.1, cubre A1-77 (HTML, CSS, XML y compatibilidad con estándares).; cotejo curricular, no fuente técnica primaria."
+          }
+        ],
+        "observaciones": "Se mantiene C y se precisa el criterio: `em`, `meta` y `body` son elementos estándar. `tc` no es elemento HTML estándar; tampoco cumple la regla de incluir un guion requerida para un nombre de elemento personalizado autónomo."
+      }
     },
     {
       "id": 6578,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué tecnología utiliza patrones Xpath para búsqueda en ficheros XML?",
+      "texto": "¿Qué tecnología de transformación de XML emplea expresiones y patrones definidos mediante XPath para seleccionar nodos y producir un resultado transformado?",
       "opciones": [
-        "SAX",
-        "XSLT",
-        "DOM",
-        "JSAX"
+        "SAX, una API de análisis secuencial de XML.",
+        "XSLT, que utiliza XPath para seleccionar y transformar datos XML.",
+        "DOM, una representación del documento como árbol de objetos.",
+        "JSAX, nombre que no identifica el lenguaje estándar de transformación XML descrito."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se mantiene B. Se aclara que XSLT es el lenguaje de transformación y que XPath es el lenguaje de navegación/selección utilizado en expresiones y patrones; SAX y DOM son modelos/APIs de procesamiento, no sustitutos de XSLT.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9",
+          "A2-III-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "XML",
+        "XSLT",
+        "XPath",
+        "transformación XML",
+        "patrones y expresiones XPath"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/xslt-30/",
+            "referencia": "W3C Recommendation, XSL Transformations (XSLT) 3.0: las plantillas y expresiones de transformación usan XPath; la especificación define coincidencia de patrones y evaluación de expresiones XPath."
+          },
+          {
+            "url": "https://www.w3.org/TR/xpath-31/",
+            "referencia": "W3C Recommendation, XML Path Language (XPath) 3.1: lenguaje para seleccionar y procesar nodos y valores de documentos XML."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, temas 65 (arquitectura/desarrollo web) y 77 (HTML, CSS y XML)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, temas II.9 (lenguajes de marca, XML y scripts) y III.12 (aplicaciones web y tecnologías de programación)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Tecnologías de Sistemas de la Información, edición 2026: edición 2026.1: cubre los temas oficiales A1-65/77 y desarrollo/estándares web.; cotejo curricular, no fuente técnica primaria."
+          }
+        ],
+        "observaciones": "Se mantiene B. Se aclara que XSLT es el lenguaje de transformación y que XPath es el lenguaje de navegación/selección utilizado en expresiones y patrones; SAX y DOM son modelos/APIs de procesamiento, no sustitutos de XSLT."
+      }
     },
     {
       "id": 6579,
       "bloque": 0,
       "tema": 0,
-      "texto": "Al aplicar el algoritmo SHA-1 sobre una cadena de texto inicial obtendremos siempre un resultado:",
+      "texto": "¿Qué longitud produce el resumen de SHA-1, con independencia del tamaño del mensaje de entrada?",
       "opciones": [
-        "De menor longitud que la cadena inicial",
-        "De la misma longitud que la cadena inicial",
-        "De mayor longitud que la cadena inicial",
-        "Ninguna de las anteriores"
+        "128 bits.",
+        "160 bits.",
+        "256 bits.",
+        "Una longitud variable que depende de la entrada."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Se corrige la comparación ambigua entre longitud del digest y longitud de una «cadena» (caracteres, bytes o bits) y se formula en unidades. SHA-1 produce siempre 160 bits (20 bytes). Se documenta como algoritmo legado: este dato no recomienda utilizarlo en aplicaciones nuevas ni para resistencia a colisiones.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-82"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SHA-1",
+        "función hash",
+        "160 bits",
+        "digest de longitud fija",
+        "algoritmo histórico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.180-4.pdf",
+            "referencia": "NIST FIPS PUB 180-4, Secure Hash Standard: SHA-1 genera un resumen (message digest) de longitud fija de 160 bits, independientemente de la longitud del mensaje."
+          },
+          {
+            "url": "https://csrc.nist.gov/projects/hash-functions",
+            "referencia": "NIST CSRC, Hash Functions: resume los tamaños de salida de las funciones hash del estándar; SHA-1 tiene digest de 160 bits. La referencia es sobre la propiedad del algoritmo, no una recomendación de uso actual."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 80: certificados, claves y formatos de firma; tema 82: herramientas de cifrado y seguridad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema I.6: identidad y firma electrónica; encaje secundario por uso de funciones hash en firmas, no recomendación algorítmica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque Seguridad en Redes y en el Nivel de Aplicación, edición 2026: actualización 2026: criptografía y firma digital. Se coteja solo el encaje temático; NIST determina el tamaño y su condición de algoritmo legado.; cotejo curricular, no fuente técnica primaria."
+          }
+        ],
+        "observaciones": "Se corrige la comparación ambigua entre longitud del digest y longitud de una «cadena» (caracteres, bytes o bits) y se formula en unidades. SHA-1 produce siempre 160 bits (20 bytes). Se documenta como algoritmo legado: este dato no recomienda utilizarlo en aplicaciones nuevas ni para resistencia a colisiones."
+      }
     },
     {
       "id": 6580,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el estándar XADES de firma electrónica, el perfil que incluye un TimeStamp a las referencias de las CRLs, es:",
+      "texto": "En las formas históricas XAdES definidas por ETSI TS 101 903, ¿qué perfil añade una marca de tiempo sobre las referencias a datos completos de validación, como las referencias a CRL?",
       "opciones": [
-        "XADES-X",
-        "XADES-T",
-        "XADES-XL",
-        "XADES-C"
+        "XAdES-X.",
+        "XAdES-T, que incorpora una marca de tiempo de la firma.",
+        "XAdES-XL, que incorpora los valores de certificados y de revocación además de las referencias.",
+        "XAdES-C, que incorpora referencias completas de certificados y revocación, sin añadir por sí solo ese sello sobre las referencias."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva la clave A y se acota a la taxonomía histórica de ETSI TS 101 903: XAdES-C aporta referencias completas de validación; XAdES-X añade una marca de tiempo sobre ellas; XAdES-XL agrega los valores de certificados y revocación. Las implementaciones actuales emplean perfiles baseline con nomenclatura y niveles distintos, por lo que no se presenta XAdES-X como perfil actual.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "XAdES",
+        "ETSI TS 101 903",
+        "XAdES-X",
+        "marcas de tiempo",
+        "firma electrónica avanzada"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-14",
+        "fuentes": [
+          {
+            "url": "https://www.etsi.org/deliver/etsi_ts/101900_101999/101903/01.04.02_60/ts_101903v010402p.pdf",
+            "referencia": "ETSI TS 101 903 V1.4.2 (2010-12), XML Advanced Electronic Signatures, cláusula de formas XAdES-X: añade una marca de tiempo sobre las referencias de validación (incluidas las referencias completas de revocación); XAdES-XL incorpora los valores de certificados/datos de revocación. Se cita expresamente la versión histórica."
+          },
+          {
+            "url": "https://www.w3.org/TR/XAdES/",
+            "referencia": "W3C, XAdES overview de la familia ETSI TS 101 903: distingue XAdES-C (referencias completas de validación), XAdES-X (marca de tiempo sobre dichas referencias) y XAdES-XL (valores de validación). Material histórico explicativo, complementario al estándar ETSI."
+          },
+          {
+            "url": "https://www.etsi.org/deliver/etsi_EN/319100_319199/31913201/01.02.01_60/en_31913201v010201p.pdf",
+            "referencia": "ETSI EN 319 132-1 V1.2.1, especificación de firmas XAdES baseline vigente; se cita para distinguir sus niveles B-B, B-T, B-LT y B-LTA de la taxonomía histórica XAdES-X/XL."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria GSI A1 2025, tema 80: identificación y firma electrónica, certificados y formatos de firma."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria GSI A2 2025, tema I.6: identidad/firma electrónica, régimen eIDAS y DNIe."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 03, Actuación administrativa y Administración digital, edición 2026: edición 2026.2: incluye identidad y firma electrónica/eIDAS. La familia histórica XAdES se contrasta con ETSI, no con el resumen académico.; cotejo curricular, no fuente técnica primaria."
+          }
+        ],
+        "observaciones": "Se conserva la clave A y se acota a la taxonomía histórica de ETSI TS 101 903: XAdES-C aporta referencias completas de validación; XAdES-X añade una marca de tiempo sobre ellas; XAdES-XL agrega los valores de certificados y revocación. Las implementaciones actuales emplean perfiles baseline con nomenclatura y niveles distintos, por lo que no se presenta XAdES-X como perfil actual."
+      }
     },
     {
       "id": 6581,
