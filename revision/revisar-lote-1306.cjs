@@ -1,0 +1,40 @@
+const aplicar=require('./aplicar-lote.cjs');
+const edits={
+6851:{texto:'¿Qué iniciativa europea se denomina ICT Innovation for Manufacturing SMEs (I4MS) y apoya la adopción de TIC por las pymes manufactureras?',opciones:['I4MS.','SCALE.','CREMA.','Industry 4.0 for SMEs (SME 4.0).']},
+6852:{texto:'En 3GPP Release 13, ¿qué tecnología celular LPWAN ofrece una tasa teórica máxima de subida cercana a 62 kbit/s?',opciones:['LTE-M (Cat-M1).','NB-IoT (Cat-NB1).','Weightless.','Sigfox.']},
+6853:{texto:'Según los principios de diseño de Industrie 4.0 de Hermann, Pentek y Otto, ¿cuál de estas opciones NO es uno de los principios enumerados?',opciones:['Modularidad.','Virtualización.','Descentralización.','Todas las anteriores son principios del modelo.']},
+6854:{texto:'¿Qué conjunto corresponde a las cinco capas del modelo de plataforma de ciudad inteligente de UNE 178104:2017?',opciones:['Adquisición/interconexión, interoperabilidad, seguridad, servicios y soporte.','Adquisición/interconexión, conocimiento, interoperabilidad, servicios inteligentes y soporte.','Adquisición/interconexión, interoperabilidad, seguridad, administración, servicios y soporte.','Ninguna de las anteriores.']},
+6855:{texto:'¿Qué norma UNE lleva por título «Indicadores y herramientas de los destinos turísticos inteligentes»?',opciones:['UNE 178104.','UNE 178502.','UNE 178501.','UNE 178301.']}
+};
+const a1='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',a2='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262';
+const rec=[
+[6851,[117],[],['I4MS','ICT Innovation for Manufacturing SMEs','Industria 4.0','pymes manufactureras','CREMA','SME 4.0'],[
+{url:'https://cordis.europa.eu/programme/id/H2020_FOF-12-2017',referencia:'CORDIS/Comisión Europea identifica I4MS (ICT Innovation for Manufacturing SMEs) como iniciativa del programa Horizonte 2020 para apoyar la adopción de TIC avanzadas por pymes y empresas medianas manufactureras.'},
+{url:'https://cordis.europa.eu/project/id/637066',referencia:'Ficha CORDIS del proyecto H2020 CREMA, Cloud-based Rapid Elastic Manufacturing; es un proyecto de investigación financiado por la UE, no el nombre desarrollado de I4MS.'},
+{url:'https://cordis.europa.eu/project/id/734713',referencia:'Ficha CORDIS del proyecto SME 4.0, cuyo título comienza «Industry 4.0 for SMEs»; proyecto MSCA-RISE 2017–2022.'},
+{url:a1,referencia:'Convocatoria estatal A1 GSI 2025, anexo I, tema 117: transformación digital, Industria 4.0, ciudades inteligentes e IoT.'}
+],edits[6851],'Se corrige y estrecha la pregunta a la denominación expandida de I4MS para que la respuesta sea única. El antiguo enunciado mezclaba una iniciativa, varios proyectos europeos y un acrónimo genérico («SCALE»), lo que no permitía sostener una exclusión absoluta. CORDIS diferencia I4MS (iniciativa) de CREMA y SME 4.0 (proyectos).', 'corregida'],
+[6852,[117],['IV-13'],['NB-IoT','Cat-NB1','3GPP Release 13','LPWAN celular','62 kbit/s','uplink','tasa máxima teórica'],[
+{url:'https://www.gsma.com/newsroom/wp-content/uploads//TS.51-v2.0.pdf',referencia:'GSMA TS.51, tabla comparativa de tecnologías IoT celulares: NB-IoT Release 13, subida de 62 kbit/s; NB-IoT Rel.14 aumenta la tasa. El valor es de referencia/teórico, no caudal de aplicación garantizado.'},
+{url:'https://www.gsma.com/solutions-and-impact/industries/smart-mobility/gsma_resources/what-is-the-difference-in-data-throughput-between-lte-m-nb-iot-and-3g-or-4g/',referencia:'GSMA compara NB-IoT y LTE-M: velocidades máximas dependen de categoría/configuración; NB-IoT ofrece menor tasa y cobertura extendida, con tasas efectivas inferiores en condiciones de cobertura extrema.'},
+{url:'https://www.3gpp.org/images/presentations/3gpp_standards_for_iot.pdf',referencia:'3GPP, presentación de estándares IoT: identifica NB-IoT como tecnología 3GPP y describe sus modos de transmisión de banda estrecha; sustenta la identificación tecnológica.'},
+{url:a1,referencia:'Convocatoria estatal A1 GSI 2025, tema 117: Industria 4.0 e Internet de las Cosas.'},{url:a2,referencia:'Convocatoria estatal A2 GSI 2025, tema IV.13: Internet e IoT; correspondencia temática con conectividad celular de objetos.'}
+],edits[6852],'Se conserva NB-IoT como respuesta y se retira la distancia fija de 15 km: el alcance real depende de banda, configuración, potencia, emplazamiento y propagación, no es una prestación garantizada por el nombre de la tecnología. El dato se acota a tasa teórica de subida NB-IoT Cat-NB1 Release 13 (GSMA la redondea a 62 kbit/s).', 'corregida'],
+[6853,[117],[],['Industria 4.0','principios de diseño','modularidad','virtualización','descentralización','Hermann Pentek Otto'],[
+{url:'https://doi.org/10.1109/HICSS.2016.488',referencia:'Hermann, Pentek y Otto, «Design Principles for Industrie 4.0 Scenarios», HICSS 2016: enumera seis principios de diseño; modularidad, virtualización y descentralización forman parte de ellos.'},
+{url:'https://bibliographie.ub.rub.de/work/36547',referencia:'Catálogo académico institucional de Ruhr-Universität Bochum identifica autores, título, conferencia HICSS 2016 y DOI del trabajo original.'},
+{url:a1,referencia:'Convocatoria estatal A1 GSI 2025, anexo I, tema 117: Industria 4.0 y transformación digital.'}
+],edits[6853],'Se mantiene D, pero se limita la afirmación al conjunto de seis principios publicado por Hermann, Pentek y Otto (2016), evitando presentar una enumeración académica como lista normativa universal. En ese modelo, modularidad, virtualización y descentralización sí son principios.', 'corregida'],
+[6854,[117],[],['UNE 178104:2017','plataforma de ciudad inteligente','adquisición/interconexión','conocimiento','interoperabilidad','servicios inteligentes','soporte'],[
+{url:'https://tienda.aenor.com/es/p/norma-une-178104-2017-n0059471',referencia:'AENOR identifica UNE 178104:2017 como norma en vigor sobre requisitos de interoperabilidad para una plataforma de ciudad inteligente y modelo de capas.'},
+{url:'https://www.une.org/normalizacion_documentos/Programa_de_trabajo_2018_primer_semestre.pdf',referencia:'UNE describe el objeto de UNE 178104: identificar capacidades de una plataforma de ciudad inteligente, estructurarlas en un modelo de capas y ubicar componentes.'},
+{url:'https://plantl.digital.gob.es/planes-actuaciones/Bibliotecaciudadesinteligentes/Material%20complementario/interoperabilidad_parte_1_introduccion.pdf',referencia:'Material técnico institucional de la biblioteca de ciudades inteligentes explica el modelo UNE 178104 y las capas de Adquisición/Interconexión, Conocimiento, Interoperabilidad, Servicios Inteligentes y Soporte.'},
+{url:a1,referencia:'Convocatoria estatal A1 GSI 2025, tema 117: ciudades inteligentes e Industria 4.0.'}
+],edits[6854],'Se mantiene B y se normalizan los nombres completos de las cinco capas del modelo: Adquisición/Interconexión, Conocimiento, Interoperabilidad, Servicios Inteligentes y Soporte. La seguridad es una función transversal, no una capa adicional de la lista.', 'corregida'],
+[6855,[117],[],['UNE 178502:2022','indicadores','herramientas','destinos turísticos inteligentes','DTI'],[
+{url:'https://tienda.aenor.com/p/norma-une-178502-2022-n0068105',referencia:'AENOR da el título oficial de UNE 178502:2022: «Indicadores y herramientas de los destinos turísticos inteligentes».'},
+{url:'https://www.aenor.com/certificacion/empresas/administracion-publica/destino-turistico-inteligente',referencia:'AENOR confirma que los indicadores y herramientas de los DTI quedan recogidos en UNE 178502, frente a UNE 178501 para el sistema de gestión.'},
+{url:a1,referencia:'Convocatoria estatal A1 GSI 2025, tema 117: transformación digital y ciudades inteligentes; los destinos turísticos inteligentes se tratan como aplicación de smart city.'}
+],edits[6855],'Se mantiene B y se pregunta por el título exacto para evitar la formulación imprecisa «norma de indicadores». Se distingue de UNE 178501, que establece requisitos del sistema de gestión del destino turístico inteligente.', 'corregida']
+];
+aplicar({numero:'1306',fecha:'2026-11-15',records:rec});
