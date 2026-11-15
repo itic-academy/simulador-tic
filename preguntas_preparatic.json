@@ -380864,71 +380864,292 @@
       "id": 7186,
       "bloque": 0,
       "tema": 0,
-      "texto": "La interconexión de redes privadas a través de la red 'pública' Internet manteniendo sus propias direcciones IP se consigue por medio de:",
+      "texto": "Para interconectar redes privadas a través de Internet conservando las direcciones IP privadas originales dentro de cada paquete, se utiliza:",
       "opciones": [
-        "Firewalls",
-        "Proxies a nivel de aplicación",
-        "Tunneling o encapsulado",
-        "Cifrado de las cabeceras IP"
+        "Un cortafuegos, que por sí solo conserva y transporta las direcciones privadas entre redes.",
+        "Un proxy de aplicación, que encapsula el paquete IP original completo.",
+        "La tunelización: el paquete privado se encapsula dentro de otro paquete con cabeceras exteriores encaminables.",
+        "El cifrado de las cabeceras IP originales, sin encapsulación ni cabecera exterior."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida para precisar qué significa conservar las direcciones privadas: permanecen en la cabecera interna encapsulada; para cruzar Internet se encamina una cabecera IP exterior con direcciones alcanzables. La tunelización/encapsulado no implica por sí sola cifrado ni autenticación; estos dependen del protocolo (por ejemplo, IPsec). Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo directo: el epígrafe de seguridad de redes incluye redes privadas virtuales (VPN), encapsulado y protocolos seguros. El documento sirve para ubicar el contenido formativo; el efecto de conservar la cabecera IP interna se valida con RFC 4301.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo directo: el epígrafe de seguridad de redes incluye redes privadas virtuales (VPN), encapsulado y protocolos seguros. El documento sirve para ubicar el contenido formativo; el efecto de conservar la cabecera IP interna se valida con RFC 4301.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo directo: el epígrafe de seguridad de redes incluye redes privadas virtuales (VPN), encapsulado y protocolos seguros. El documento sirve para ubicar el contenido formativo; el efecto de conservar la cabecera IP interna se valida con RFC 4301."
+      },
+      "etiquetas": [
+        "VPN",
+        "tunelización",
+        "encapsulado IP",
+        "direcciones privadas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4301.html",
+            "referencia": "IETF RFC 4301, §§3.2–3.2.2: en modo túnel se encapsula el paquete IP interno completo en otro paquete IP; la cabecera exterior aporta direcciones encaminables y el paquete interior conserva las direcciones de la red privada."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 125: seguridad de redes, cortafuegos, control de accesos y técnicas criptográficas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV-12: protocolos seguros y redes privadas virtuales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1; cotejo: Cotejo directo: el epígrafe de seguridad de redes incluye redes privadas virtuales (VPN), encapsulado y protocolos seguros. El documento sirve para ubicar el contenido formativo; el efecto de conservar la cabecera IP interna se valida con RFC 4301."
+          }
+        ],
+        "observaciones": "Corregida para precisar qué significa conservar las direcciones privadas: permanecen en la cabecera interna encapsulada; para cruzar Internet se encamina una cabecera IP exterior con direcciones alcanzables. La tunelización/encapsulado no implica por sí sola cifrado ni autenticación; estos dependen del protocolo (por ejemplo, IPsec). Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo directo: el epígrafe de seguridad de redes incluye redes privadas virtuales (VPN), encapsulado y protocolos seguros. El documento sirve para ubicar el contenido formativo; el efecto de conservar la cabecera IP interna se valida con RFC 4301."
+      }
     },
     {
       "id": 7187,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la afirmación falsa en relación con el protocolo LDAP:",
+      "texto": "Señale la afirmación FALSA sobre LDAP:",
       "opciones": [
-        "LDAP envía los comandos y respuestas siguiendo la notación ASN.1",
-        "El desarrollo de la especificación LDAP se realiza a través del IETF",
-        "La función LAUTH permite autenticar al cliente frente al directorio",
-        "La unidad básica de información almacenada en el directorio es la entrada (entry)"
+        "Los mensajes LDAP se definen con ASN.1 y se transfieren usando un subconjunto de BER.",
+        "La especificación del protocolo LDAP se desarrolla en el IETF.",
+        "La operación estándar «LAUTH» autentica al cliente frente al directorio.",
+        "La entrada (entry) es la unidad básica de información del directorio."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida la alternativa A para distinguir la notación ASN.1 del mecanismo de transferencia BER y la C para hacer explícita la operación inexistente. La autenticación LDAP se solicita con Bind (BindRequest), simple o SASL según RFC 4511/4513; «LAUTH» no es una operación LDAP. Las otras tres afirmaciones son coherentes con los RFC 4511/4512. Cotejo curricular ITIC Academy: ITIC Academy, bloque 36 Identidad, directorios y seguridad, versión 2026.1. Cotejo directo: se desarrollan directorios X.500/LDAP y los servicios de identidad; la distinción precisa entre ASN.1/BER y la operación Bind se valida contra RFC 4511–4513.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 36 Identidad, directorios y seguridad, versión 2026.1. Cotejo directo: se desarrollan directorios X.500/LDAP y los servicios de identidad; la distinción precisa entre ASN.1/BER y la operación Bind se valida contra RFC 4511–4513.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 36 Identidad, directorios y seguridad, versión 2026.1. Cotejo directo: se desarrollan directorios X.500/LDAP y los servicios de identidad; la distinción precisa entre ASN.1/BER y la operación Bind se valida contra RFC 4511–4513."
+      },
+      "etiquetas": [
+        "LDAP",
+        "ASN.1",
+        "BER",
+        "Bind",
+        "autenticación de directorio"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4511.html",
+            "referencia": "IETF RFC 4511, §§4.1 y 4.2: LDAPMessage usa estructuras ASN.1 transferidas mediante BER; Bind es la operación de autenticación y su solicitud se denomina BindRequest."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4512.html",
+            "referencia": "IETF RFC 4512, §2: una entrada de directorio es una colección nombrada de información y la unidad básica del modelo de información LDAP."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4513.html",
+            "referencia": "IETF RFC 4513, §§5.1–5.2: la operación Bind admite los métodos simple y SASL; no define una operación «LAUTH»."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 80: protocolos de directorio basados en LDAP y X.500."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos y arquitectura de redes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 36 Identidad, directorios y seguridad, versión 2026.1; cotejo: Cotejo directo: se desarrollan directorios X.500/LDAP y los servicios de identidad; la distinción precisa entre ASN.1/BER y la operación Bind se valida contra RFC 4511–4513."
+          }
+        ],
+        "observaciones": "Corregida la alternativa A para distinguir la notación ASN.1 del mecanismo de transferencia BER y la C para hacer explícita la operación inexistente. La autenticación LDAP se solicita con Bind (BindRequest), simple o SASL según RFC 4511/4513; «LAUTH» no es una operación LDAP. Las otras tres afirmaciones son coherentes con los RFC 4511/4512. Cotejo curricular ITIC Academy: ITIC Academy, bloque 36 Identidad, directorios y seguridad, versión 2026.1. Cotejo directo: se desarrollan directorios X.500/LDAP y los servicios de identidad; la distinción precisa entre ASN.1/BER y la operación Bind se valida contra RFC 4511–4513."
+      }
     },
     {
       "id": 7188,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes métodos de posicionamiento móvil ofrece menor precisión?",
+      "texto": "En el posicionamiento clásico de redes GSM/GERAN, ¿qué método devuelve la identidad de la celda servidora junto con el valor de Timing Advance, sin calcular la posición mediante multilateración E-OTD?",
       "opciones": [
-        "A-GPS",
-        "E-OTD",
-        "CGI-TA",
-        "TOA"
+        "CGI-TA (Cell Global Identity–Timing Advance).",
+        "E-OTD (Enhanced Observed Time Difference).",
+        "A-GPS (Assisted Global Positioning System).",
+        "TOA (Time of Arrival)."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Corregida sustancialmente. Se retiró la comparación «menor precisión», que era demasiado absoluta: el resultado depende de la geometría celular, configuración y despliegue y la norma no establece una clasificación universal entre esos métodos. La pregunta ahora evalúa la diferencia protocolaria comprobable: TA devuelve la celda servidora y el Timing Advance; E-OTD estima mediante diferencias temporales de estaciones base. Cotejo curricular ITIC Academy: ITIC Academy, bloque temático Redes, versión 2026.1. El tema cubre redes celulares, acceso y comunicaciones móviles (A1-108/A1-123), pero el material localizado no desarrolla en detalle CGI-TA/E-OTD. Ese mecanismo histórico se comprobó individualmente en ETSI TS 43.059 Release 19.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-123"
+        ],
+        "A2": [
+          "A2-IV-15"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque temático Redes, versión 2026.1. El tema cubre redes celulares, acceso y comunicaciones móviles (A1-108/A1-123), pero el material localizado no desarrolla en detalle CGI-TA/E-OTD. Ese mecanismo histórico se comprobó individualmente en ETSI TS 43.059 Release 19.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque temático Redes, versión 2026.1. El tema cubre redes celulares, acceso y comunicaciones móviles (A1-108/A1-123), pero el material localizado no desarrolla en detalle CGI-TA/E-OTD. Ese mecanismo histórico se comprobó individualmente en ETSI TS 43.059 Release 19."
+      },
+      "etiquetas": [
+        "GERAN",
+        "GSM",
+        "posicionamiento móvil",
+        "Timing Advance",
+        "E-OTD",
+        "CGI-TA"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.etsi.org/deliver/etsi_ts/143000_143099/143059/19.00.00_60/ts_143059v190000p.pdf",
+            "referencia": "ETSI TS 143 059 V19.0.0 (3GPP TS 43.059 Release 19), §4.2: el mecanismo Timing Advance devuelve como resultado la celda servidora (Cell ID) junto con TA; E-OTD calcula la posición a partir de diferencias de tiempo observadas de pares de BTS y trilateración."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 108 (redes de telecomunicaciones e infraestructuras de acceso) y 123 (comunicaciones móviles)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV-15: sistemas y tecnologías de comunicaciones móviles."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque temático Redes, versión 2026.1; cotejo: El tema cubre redes celulares, acceso y comunicaciones móviles (A1-108/A1-123), pero el material localizado no desarrolla en detalle CGI-TA/E-OTD. Ese mecanismo histórico se comprobó individualmente en ETSI TS 43.059 Release 19."
+          }
+        ],
+        "observaciones": "Corregida sustancialmente. Se retiró la comparación «menor precisión», que era demasiado absoluta: el resultado depende de la geometría celular, configuración y despliegue y la norma no establece una clasificación universal entre esos métodos. La pregunta ahora evalúa la diferencia protocolaria comprobable: TA devuelve la celda servidora y el Timing Advance; E-OTD estima mediante diferencias temporales de estaciones base. Cotejo curricular ITIC Academy: ITIC Academy, bloque temático Redes, versión 2026.1. El tema cubre redes celulares, acceso y comunicaciones móviles (A1-108/A1-123), pero el material localizado no desarrolla en detalle CGI-TA/E-OTD. Ese mecanismo histórico se comprobó individualmente en ETSI TS 43.059 Release 19."
+      }
     },
     {
       "id": 7189,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuál debe ser la frecuencia mínima de muestreo de una señal analógica de voz transmitida por un canal telefónico para que pueda ser reconstruida con exactitud:",
+      "texto": "Según la recomendación UIT-T G.711 para PCM de señales de frecuencias vocales, ¿cuál es la frecuencia nominal de muestreo?",
       "opciones": [
-        "8 muestras/segundo.",
-        "8000 muestras/segundo.",
-        "16 muestras/segundo.",
-        "4000 muestras/segundo."
+        "8 muestras por segundo.",
+        "8.000 muestras por segundo.",
+        "16 muestras por segundo.",
+        "4.000 muestras por segundo."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Reformulada para no llamar «frecuencia mínima» al valor de 8 kHz: esa mínima dependería del ancho de banda asumido y del modelo ideal de reconstrucción. Lo que sí fija directamente G.711, recomendación vigente, es una frecuencia nominal de 8.000 muestras por segundo para PCM de voz. Cotejo curricular ITIC Academy: ITIC Academy, bloque 50 Vídeo, conferencia, colaboración y servicios de voz, versión 2026.1. El cotejo directo muestra una tabla de G.711/PCM con 8 kHz, 8 bits y 64 kbit/s y explica muestreo de voz. La frecuencia normativa se contrasta con la recomendación UIT-T G.711 vigente.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-14"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 50 Vídeo, conferencia, colaboración y servicios de voz, versión 2026.1. El cotejo directo muestra una tabla de G.711/PCM con 8 kHz, 8 bits y 64 kbit/s y explica muestreo de voz. La frecuencia normativa se contrasta con la recomendación UIT-T G.711 vigente.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 50 Vídeo, conferencia, colaboración y servicios de voz, versión 2026.1. El cotejo directo muestra una tabla de G.711/PCM con 8 kHz, 8 bits y 64 kbit/s y explica muestreo de voz. La frecuencia normativa se contrasta con la recomendación UIT-T G.711 vigente."
+      },
+      "etiquetas": [
+        "G.711",
+        "PCM",
+        "muestreo de voz",
+        "frecuencia de muestreo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=g.711",
+            "referencia": "UIT-T G.711 (11/1988), ficha de recomendación vigente y §2: para PCM de frecuencias vocales recomienda nominalmente 8.000 muestras por segundo."
+          },
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.711-198811-I%21%21PDF-E&lang=f&type=items",
+            "referencia": "UIT-T G.711, texto normativo §2: valor nominal de muestreo 8.000 muestras/s (tolerancia ±50 ppm); §3 especifica codificación PCM."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 108: redes de telecomunicaciones, medios de transmisión y calidad de servicio."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV-14: servicios convergentes, VoIP/ToIP y comunicaciones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 50 Vídeo, conferencia, colaboración y servicios de voz, versión 2026.1; cotejo: El cotejo directo muestra una tabla de G.711/PCM con 8 kHz, 8 bits y 64 kbit/s y explica muestreo de voz. La frecuencia normativa se contrasta con la recomendación UIT-T G.711 vigente."
+          }
+        ],
+        "observaciones": "Reformulada para no llamar «frecuencia mínima» al valor de 8 kHz: esa mínima dependería del ancho de banda asumido y del modelo ideal de reconstrucción. Lo que sí fija directamente G.711, recomendación vigente, es una frecuencia nominal de 8.000 muestras por segundo para PCM de voz. Cotejo curricular ITIC Academy: ITIC Academy, bloque 50 Vídeo, conferencia, colaboración y servicios de voz, versión 2026.1. El cotejo directo muestra una tabla de G.711/PCM con 8 kHz, 8 bits y 64 kbit/s y explica muestreo de voz. La frecuencia normativa se contrasta con la recomendación UIT-T G.711 vigente."
+      }
     },
     {
       "id": 7190,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones sobre el Protocolo SSL («Secure Socket Layer») es correcta?",
+      "texto": "Sobre TLS, sucesor de SSL (SSL es obsoleto), señale la afirmación correcta:",
       "opciones": [
-        "Solo proporciona servicios de seguridad para el protocolo HTTP («HyperText Transfer Protocol»).",
-        "Utiliza mecanismos de criptografía asimétrica para garantizar la confidencialidad de los datos a transmitir.",
-        "El protocolo se implementa entre los niveles de Transporte y de Red.",
-        "Los servicios de seguridad que proporciona son transparentes al usuario y a la aplicación."
+        "TLS solo puede proteger HTTP y no admite otros protocolos de aplicación.",
+        "La capa Record protege los datos de aplicación con cifrado simétrico autenticado usando claves de tráfico establecidas durante el handshake.",
+        "TLS se implementa por debajo de IP y cifra las cabeceras de red.",
+        "TLS elimina en cualquier configuración la necesidad de autenticar o verificar al servidor."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Sustituido el enunciado obsoleto sobre SSL por una pregunta actual sobre TLS. La opción correcta distingue el cifrado simétrico autenticado de la capa Record respecto al intercambio de claves y autenticación del handshake. TLS es independiente de la aplicación; se sitúa sobre un transporte fiable (habitualmente TCP), y la verificación de identidad depende de la configuración y de la autenticación del servidor. Se cita RFC 9846, actualización vigente de TLS 1.3 que reemplaza RFC 8446. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo directo del temario: redes y protocolos seguros, TLS 1.3, VPN y técnicas criptográficas. El detalle actual de handshake, derivación de claves y capa Record se ha contrastado con RFC 9846, vigente en 2026.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo directo del temario: redes y protocolos seguros, TLS 1.3, VPN y técnicas criptográficas. El detalle actual de handshake, derivación de claves y capa Record se ha contrastado con RFC 9846, vigente en 2026.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo directo del temario: redes y protocolos seguros, TLS 1.3, VPN y técnicas criptográficas. El detalle actual de handshake, derivación de claves y capa Record se ha contrastado con RFC 9846, vigente en 2026."
+      },
+      "etiquetas": [
+        "TLS",
+        "SSL obsoleto",
+        "handshake",
+        "cifrado simétrico",
+        "capa de registro"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9846.html",
+            "referencia": "IETF RFC 9846 (2026), TLS 1.3 vigente: §§2 y 7 describen negociación/autenticación opcional del cliente e intercambio de secretos durante el handshake; §§5 y 5.2 protegen los datos de aplicación en la capa Record mediante cifrado autenticado y claves derivadas."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8996.html",
+            "referencia": "IETF RFC 8996: TLS 1.0 y 1.1 están obsoletos y no deben negociarse; TLS es el protocolo actual, no SSL."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 125: seguridad de redes y protocolos de seguridad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV-12: protocolos seguros y técnicas criptográficas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1; cotejo: Cotejo directo del temario: redes y protocolos seguros, TLS 1.3, VPN y técnicas criptográficas. El detalle actual de handshake, derivación de claves y capa Record se ha contrastado con RFC 9846, vigente en 2026."
+          }
+        ],
+        "observaciones": "Sustituido el enunciado obsoleto sobre SSL por una pregunta actual sobre TLS. La opción correcta distingue el cifrado simétrico autenticado de la capa Record respecto al intercambio de claves y autenticación del handshake. TLS es independiente de la aplicación; se sitúa sobre un transporte fiable (habitualmente TCP), y la verificación de identidad depende de la configuración y de la autenticación del servidor. Se cita RFC 9846, actualización vigente de TLS 1.3 que reemplaza RFC 8446. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo directo del temario: redes y protocolos seguros, TLS 1.3, VPN y técnicas criptográficas. El detalle actual de handshake, derivación de claves y capa Record se ha contrastado con RFC 9846, vigente en 2026."
+      }
     },
     {
       "id": 7191,
