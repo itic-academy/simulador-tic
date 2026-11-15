@@ -16,7 +16,7 @@ Cotejo ITIC Academy en Drive: [Tema 079–081 Seguridad](https://drive.google.co
 
 Inventario tras el lote: 12.123 preguntas; 7.025 examinadas individualmente; 6.904 verificadas (1.341 vigentes, 5.057 corregidas y 506 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5.098 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1341.cjs`, `node revision/academia-lote-1341.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue:** pendiente de publicar y verificar el lote 1341.
+**Despliegue verificado:** el commit `bc6a7b7` se publicó en GitHub Pages mediante el workflow [run 43703265716](https://github.com/itic-academy/simulador-tic/actions/runs/43703265716), finalizado con éxito. Se consultaron sin caché `/`, `/revision/inventario.json`, `/revision/cambios-lote-1341.json`, `/preguntas_preparatic.json` y `/revision/README.md`; todos respondieron HTTP 200. El registro público contiene exactamente los IDs 7026–7030 y las claves/estados `7026 vigente C; 7027 corregida C; 7028 corregida B; 7029 corregida D; 7030 vigente C`, coincidentes con el banco. El inventario público coincide: total 12.123; revisadas individualmente 7.025; sin revisar 5.098; 0 errores estructurales.
 ## Lote 1340 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 7021–7025 con fuentes de Kaplan/Norton, CableLabs, Apple, IETF y Microsoft. Se cotejaron los programas oficiales A1/A2 de 2025 y los materiales 2026 de ITIC Academy en Drive.
