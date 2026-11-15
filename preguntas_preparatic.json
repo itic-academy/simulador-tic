@@ -377634,7 +377634,7 @@
       "id": 7131,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes direcciones IPv6 es correcta?",
+      "texto": "¿Cuál de estas cadenas es una dirección IPv6 sintácticamente válida, aunque no necesariamente esté escrita en su forma canónica?",
       "opciones": [
         ":FF56::12::13D4",
         "15::78A1:9982",
@@ -377642,13 +377642,58 @@
         "1234:5678:9012:3456:7890:1234:5678"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. RFC 4291 permite comprimir uno o más grupos consecutivos de ceros con un solo “::”. La opción 15::78A1:9982 es válida. Se aclara “sintácticamente válida” para distinguirla de las reglas de representación canónica RFC 5952. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.3 expone la representación IPv6 y el ejercicio de dirección válida; se distingue la sintaxis de la forma canónica tratada según RFC 5952. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.3 expone la representación IPv6 y el ejercicio de dirección válida; se distingue la sintaxis de la forma canónica tratada según RFC 5952. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.3 expone la representación IPv6 y el ejercicio de dirección válida; se distingue la sintaxis de la forma canónica tratada según RFC 5952. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas."
+      },
+      "etiquetas": [
+        "IPv6",
+        "notación hexadecimal",
+        "dirección válida",
+        "RFC 4291",
+        "RFC 5952"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+            "referencia": "RFC 4291 §2.2 define la representación: ocho grupos hexadecimales de 16 bits, con compresión de ceros mediante un único “::”. Por ello 15::78A1:9982 es sintácticamente válida; las demás contienen dos “::”, dígito no hexadecimal o solo siete grupos sin compresión."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5952.html",
+            "referencia": "RFC 5952 §4 define recomendaciones para la forma canónica de presentación. La pregunta se refiere a validez sintáctica, no a canonicalidad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 115: IPv4/IPv6 y funcionalidades específicas de IPv6."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos y direccionamiento TCP/IP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.3 expone la representación IPv6 y el ejercicio de dirección válida; se distingue la sintaxis de la forma canónica tratada según RFC 5952. Cotejo curricular."
+          }
+        ],
+        "observaciones": "Corregida B. RFC 4291 permite comprimir uno o más grupos consecutivos de ceros con un solo “::”. La opción 15::78A1:9982 es válida. Se aclara “sintácticamente válida” para distinguirla de las reglas de representación canónica RFC 5952. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.3 expone la representación IPv6 y el ejercicio de dirección válida; se distingue la sintaxis de la forma canónica tratada según RFC 5952. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas."
+      }
     },
     {
       "id": 7132,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué ASE (Elemento de Servicio de Aplicación) usan todas las aplicaciones?",
+      "texto": "En el modelo OSI, ¿qué elemento de servicio de aplicación proporciona funciones para establecer y liberar asociaciones entre entidades de aplicación?",
       "opciones": [
         "ACSE (Association Control Service Element).",
         "RTSE (Reliable Transfer Service Element).",
@@ -377656,49 +377701,248 @@
         "ATSE (Application Transfer Service Element)."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. ACSE (Association Control Service Element) proporciona servicios de control de asociación de aplicación en OSI. Se eliminó la generalización falsa “lo usan todas las aplicaciones”: una especificación de aplicación usa ACSE cuando lo define, pero no es requisito universal de toda aplicación. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El documento cubre la arquitectura OSI, servicios y elementos de servicio de aplicación. No cita ACSE por su nombre; el estándar X.217/X.227 se cotejó directamente con ITU-T, por lo que esta es correspondencia curricular general y no una afirmación de que la academia explique ACSE. Correspondencia oficial: A1-111/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-111"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El documento cubre la arquitectura OSI, servicios y elementos de servicio de aplicación. No cita ACSE por su nombre; el estándar X.217/X.227 se cotejó directamente con ITU-T, por lo que esta es correspondencia curricular general y no una afirmación de que la academia explique ACSE. Correspondencia oficial: A1-111/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El documento cubre la arquitectura OSI, servicios y elementos de servicio de aplicación. No cita ACSE por su nombre; el estándar X.217/X.227 se cotejó directamente con ITU-T, por lo que esta es correspondencia curricular general y no una afirmación de que la academia explique ACSE. Correspondencia oficial: A1-111/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas."
+      },
+      "etiquetas": [
+        "OSI",
+        "ACSE",
+        "ASE",
+        "asociación de aplicación",
+        "ITU-T X.217",
+        "ITU-T X.227"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-X.217",
+            "referencia": "ITU-T X.217 (04/1995), vigente: define el servicio ACSE para control de asociación entre entidades de aplicación; su propósito primario es establecer y liberar asociaciones de aplicación y determinar su contexto."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-X.227",
+            "referencia": "ITU-T X.227 (04/1995), vigente: especifica el protocolo orientado a conexión de ACSE para establecer y liberar asociaciones OSI de aplicación."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-X.200",
+            "referencia": "ITU-T X.200, modelo de referencia OSI; marco curricular donde se ubica el concepto de servicios y elementos de servicio de aplicación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 111: arquitectura, capas, interfaces y protocolos OSI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema T8: modelo TCP/IP y modelo OSI."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El documento cubre la arquitectura OSI, servicios y elementos de servicio de aplicación. No cita ACSE por su nombre; el estándar X.217/X.227 se cotejó directamente con ITU-T, por lo que esta es correspondencia curricular general y no una afirmación de que la academia explique ACSE. Cotejo curricular."
+          }
+        ],
+        "observaciones": "Corregida A. ACSE (Association Control Service Element) proporciona servicios de control de asociación de aplicación en OSI. Se eliminó la generalización falsa “lo usan todas las aplicaciones”: una especificación de aplicación usa ACSE cuando lo define, pero no es requisito universal de toda aplicación. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El documento cubre la arquitectura OSI, servicios y elementos de servicio de aplicación. No cita ACSE por su nombre; el estándar X.217/X.227 se cotejó directamente con ITU-T, por lo que esta es correspondencia curricular general y no una afirmación de que la academia explique ACSE. Correspondencia oficial: A1-111/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas."
+      }
     },
     {
       "id": 7133,
       "bloque": 0,
       "tema": 0,
-      "texto": "El protocolo IP:",
+      "texto": "Respecto de IP y su correspondencia con el modelo OSI, ¿qué afirmación es correcta?",
       "opciones": [
-        "Define el datagrama",
-        "Define el esquema de direccionamiento",
-        "Se corresponde aproximadamente con la capa 3 dentro del modelo OSI",
-        "Todas las respuestas anteriores son correctas"
+        "Define el formato del datagrama IP.",
+        "Define el direccionamiento lógico de origen y destino.",
+        "Su función se corresponde aproximadamente con la capa de red OSI.",
+        "Las tres afirmaciones anteriores son correctas."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. IPv4 e IPv6 especifican formatos de paquetes y direcciones IP; su función se suele asociar aproximadamente a la capa de red OSI. “Aproximadamente” evita presentar los dos modelos como equivalentes exactos. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; Los capítulos 1–3 explican OSI/TCP-IP, funciones de la capa de red y formato/direccionamiento IP; se deja explícita la diferencia entre modelos. Correspondencia oficial: A1-111, A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-111",
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; Los capítulos 1–3 explican OSI/TCP-IP, funciones de la capa de red y formato/direccionamiento IP; se deja explícita la diferencia entre modelos. Correspondencia oficial: A1-111, A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; Los capítulos 1–3 explican OSI/TCP-IP, funciones de la capa de red y formato/direccionamiento IP; se deja explícita la diferencia entre modelos. Correspondencia oficial: A1-111, A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas."
+      },
+      "etiquetas": [
+        "IP",
+        "datagrama",
+        "direccionamiento",
+        "capa de red",
+        "modelo OSI"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+            "referencia": "RFC 791 §§2–3: especifica el datagrama IPv4 y su cabecera, incluidos origen y destino IP."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+            "referencia": "RFC 8200 §§2–3: especifica el paquete/cabecera IPv6 y sus direcciones de origen y destino."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-X.200",
+            "referencia": "ITU-T X.200: el modelo OSI asigna a la capa de red servicios relacionados con transferencia y encaminamiento entre sistemas; situar IP aproximadamente en capa 3 es una correspondencia didáctica entre modelos distintos, no una identidad normativa."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 111 (OSI) y 115 (redes IP)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas T8 (OSI/TCP-IP) y II-8 (protocolos TCP/IP)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; Los capítulos 1–3 explican OSI/TCP-IP, funciones de la capa de red y formato/direccionamiento IP; se deja explícita la diferencia entre modelos. Cotejo curricular."
+          }
+        ],
+        "observaciones": "Corregida D. IPv4 e IPv6 especifican formatos de paquetes y direcciones IP; su función se suele asociar aproximadamente a la capa de red OSI. “Aproximadamente” evita presentar los dos modelos como equivalentes exactos. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; Los capítulos 1–3 explican OSI/TCP-IP, funciones de la capa de red y formato/direccionamiento IP; se deja explícita la diferencia entre modelos. Correspondencia oficial: A1-111, A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas."
+      }
     },
     {
       "id": 7134,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes características no se considera una mejora de IPv6 respecto a IPv4?",
+      "texto": "¿Cuál de estas afirmaciones sobre IPv6 es falsa?",
       "opciones": [
-        "Capacidad extendida del direccionamiento",
-        "Seguridad de nivel de aplicación obligatoria",
-        "Movilidad",
-        "Multicast"
+        "Amplía considerablemente el espacio de direccionamiento respecto a IPv4.",
+        "Obliga a todas las aplicaciones a incorporar seguridad en la capa de aplicación.",
+        "Existe una especificación de movilidad para IPv6, Mobile IPv6.",
+        "IPv6 define soporte para multicast."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. IPv6 no obliga a todas las aplicaciones a incorporar seguridad en la capa de aplicación. Se reescribió el enunciado: multicast también existe en IPv4, por lo que llamarlo sin más una mejora exclusiva de IPv6 habría dejado una segunda lectura posible. La antigua obligación de implementar IPsec en nodos IPv6 fue sustituida por una recomendación; no debe confundirse con seguridad de aplicación. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo 8.6 aborda seguridad y movilidad IPv6 y su resumen incluye multicast; se corrigió la ambigüedad potencial de atribuir multicast exclusivamente a IPv6. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo 8.6 aborda seguridad y movilidad IPv6 y su resumen incluye multicast; se corrigió la ambigüedad potencial de atribuir multicast exclusivamente a IPv6. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo 8.6 aborda seguridad y movilidad IPv6 y su resumen incluye multicast; se corrigió la ambigüedad potencial de atribuir multicast exclusivamente a IPv6. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas."
+      },
+      "etiquetas": [
+        "IPv6",
+        "seguridad",
+        "IPsec",
+        "movilidad",
+        "multicast"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+            "referencia": "RFC 4291 §2.7: define las direcciones IPv6 multicast."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+            "referencia": "RFC 8200, especificación IPv6: no incorpora como requisito una seguridad obligatoria de nivel de aplicación; las aplicaciones deben aportar la seguridad que necesiten."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8504.html",
+            "referencia": "RFC 8504 §§13.1 y 12: los requisitos actuales recomiendan la arquitectura IPsec (SHOULD) y tratan la movilidad mediante especificaciones de soporte opcionales; la antigua obligación de implementar IPsec ya no es vigente."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc6275.html",
+            "referencia": "RFC 6275 especifica Mobile IPv6 como protocolo de movilidad; el soporte es una funcionalidad definida por extensión/protocolo, no seguridad de aplicación obligatoria."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 115: funcionalidades específicas de IPv6."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos TCP/IP e IPv6."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo 8.6 aborda seguridad y movilidad IPv6 y su resumen incluye multicast; se corrigió la ambigüedad potencial de atribuir multicast exclusivamente a IPv6. Cotejo curricular."
+          }
+        ],
+        "observaciones": "Corregida B. IPv6 no obliga a todas las aplicaciones a incorporar seguridad en la capa de aplicación. Se reescribió el enunciado: multicast también existe en IPv4, por lo que llamarlo sin más una mejora exclusiva de IPv6 habría dejado una segunda lectura posible. La antigua obligación de implementar IPsec en nodos IPv6 fue sustituida por una recomendación; no debe confundirse con seguridad de aplicación. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo 8.6 aborda seguridad y movilidad IPv6 y su resumen incluye multicast; se corrigió la ambigüedad potencial de atribuir multicast exclusivamente a IPv6. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas."
+      }
     },
     {
       "id": 7135,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el protocolo Internet Protocol versión 6 (IPv6), ¿cuál es la afirmación INCORRECTA?",
+      "texto": "Según las especificaciones vigentes de IPv6, ¿cuál de estas afirmaciones es incorrecta?",
       "opciones": [
-        "Sólo se permite fragmentar en el origen.",
-        "No tiene un mecanismo equivalente al del bit Don't Fragment (DF) de IPv4.",
-        "Se requiere que todos los enlaces tengan un MTU de 1500 octetos o mayor.",
-        "Un jumbograma es un paquete IPv6 que contiene una carga útil (payload) mayor que 65535 octetos."
+        "La fragmentación IPv6 a nivel IP la realiza el nodo origen, no los routers intermedios.",
+        "IPv6 no incluye un bit de cabecera equivalente al bit DF de IPv4; la gestión del tamaño del camino usa Path MTU Discovery e ICMPv6.",
+        "Todo enlace IPv6 debe tener una MTU mínima de 1500 octetos; ese valor es un requisito, no una recomendación.",
+        "Un jumbograma IPv6 contiene una carga útil superior a 65.535 octetos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. RFC 8200 exige una MTU mínima IPv6 de 1280 octetos por enlace; recomienda configurar 1500 o más cuando sea posible, no lo exige. También se precisó que el jumbograma mide la carga útil y se aclaró la ausencia de un bit DF equivalente. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.6 detalla MTU mínima de 1280 octetos, recomendación de 1500 y jumbogramas; el apartado 8 explica fragmentación sólo en origen. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.6 detalla MTU mínima de 1280 octetos, recomendación de 1500 y jumbogramas; el apartado 8 explica fragmentación sólo en origen. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.6 detalla MTU mínima de 1280 octetos, recomendación de 1500 y jumbogramas; el apartado 8 explica fragmentación sólo en origen. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas."
+      },
+      "etiquetas": [
+        "IPv6",
+        "MTU mínima",
+        "fragmentación",
+        "jumbograma",
+        "RFC 8200",
+        "RFC 2675"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+            "referencia": "RFC 8200 §5: IPv6 exige MTU de enlace mínima de 1280 octetos. En enlaces configurables se exige al menos 1280; 1500 o más se recomienda para permitir encapsulación sin fragmentación IP."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc2675.html",
+            "referencia": "RFC 2675 §1: un jumbograma IPv6 contiene carga útil superior a 65.535 octetos y usa la opción Jumbo Payload."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 115: IPv6 y sus funcionalidades específicas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos y direccionamiento TCP/IP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.6 detalla MTU mínima de 1280 octetos, recomendación de 1500 y jumbogramas; el apartado 8 explica fragmentación sólo en origen. Cotejo curricular."
+          }
+        ],
+        "observaciones": "Corregida C. RFC 8200 exige una MTU mínima IPv6 de 1280 octetos por enlace; recomienda configurar 1500 o más cuando sea posible, no lo exige. También se precisó que el jumbograma mide la carga útil y se aclaró la ausencia de un bit DF equivalente. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.6 detalla MTU mínima de 1280 octetos, recomendación de 1500 y jumbogramas; el apartado 8 explica fragmentación sólo en origen. Correspondencia oficial: A1-115/A2-II-8. El currículo orienta cobertura; las fuentes normativas primarias determinan las respuestas."
+      }
     },
     {
       "id": 7136,
