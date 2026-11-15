@@ -1,6 +1,6 @@
 # Revisión del banco TIC — estado al 15 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1293 (IDs 6786–6790). Acumulado: 6785 preguntas examinadas individualmente; 6666 verificadas (1288 vigentes, 4889 corregidas y 489 históricas); 119 pendientes documentadas (46 de fuente y 73 de ambigüedad); 5338 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1294 (IDs 6791–6795). Acumulado: 6790 preguntas examinadas individualmente; 6670 verificadas (1288 vigentes, 4893 corregidas y 489 históricas); 120 pendientes documentadas (47 de fuente y 73 de ambigüedad); 5333 sin revisar individualmente.
 
 ## Lote 1290 — 15 de noviembre de 2026
 
@@ -17830,7 +17830,22 @@ Fuentes técnicas y normativas: [ASQ, ciclo PDCA](https://asq.org/quality-resour
 
 Ejecutados `node revision/revisar-lote-1293.cjs`, `node revision/academia-lote-1293.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 6.785 revisiones individuales, 6.666 verificadas, 119 pendientes documentadas y 5.338 preguntas sin revisión individual; errores estructurales: 0.
 
+
+
+Despliegue del lote 1293 verificado: commit de datos `ac7b00aacdfcbfec84139e821c46f44b4c065612` en main; [GitHub Actions, ejecución 43665831756](https://github.com/itic-academy/simulador-tic/actions/runs/43665831756) terminó con éxito. GitHub Pages respondió HTTP 200, con caché evitada, para inventario, registro del lote, banco y este README. El registro público contiene exactamente los IDs 6786–6790 y respuestas 3/1/2/2/1; el banco publicado conserva esas claves, estado corregida, explicación y clasificación A1/A2. El inventario público confirma 12.123 preguntas, 6.785 revisadas individualmente, 6.666 verificadas, 119 pendientes y 5.338 sin revisión individual.
+
+## Lote 1294 — 15 de noviembre de 2026
+
+Revisión individual de las preguntas 6791–6795. Se distinguió la certificación de sistemas ENS de la mención de los servicios soportados; se cotejó el reparto constitucional de competencias; el ítem sobre el curso selectivo INAP se deja expresamente pendiente por falta de su programa docente; se ancló el liderazgo M3/S3 a la formulación clásica; y se separó el runtime Deno de los motores de plantillas.
+
+- **6791 — conformidad ENS:** corregida A. Se certifica el sistema; los servicios soportados pueden enumerarse en el certificado, no se certifican como objeto autónomo según la ITS consultada. A1-48/A2-II.13; Academy, bloque 22.
+- **6792 — competencias constitucionales:** corregida D. La pesca en aguas interiores, marisqueo, acuicultura, caza y pesca fluvial aparecen en el artículo 148.1.11 como materias que las CCAA pueden asumir, no en la lista de competencias exclusivas del Estado del artículo 149.1. A1-3/A2-I.1; Academy, bloque 01.
+- **6793 — curso selectivo, promoción 28:** **pendiente de fuente**. El examen del INAP confirma la procedencia del ítem, pero no acredita el programa pedagógico del curso ni cuál afirmación era falsa. Se mantiene la clave original únicamente como no verificada; hace falta la guía docente oficial. El cotejo Academy del bloque 33 es contextual, no evidencia del curso.
+- **6794 — liderazgo situacional M3:** corregida D. En el modelo clásico, M3 (competente, compromiso variable/no dispuesto) se asocia a S3 participativo. A1-21; Academy, bloque 07.
+- **6795 — motores de plantillas:** corregida B. Thymeleaf, Pug y EJS son motores; Deno es un runtime que puede ejecutar motores como Eta. A2-III.12; Academy, bloque 30.
+
+Fuentes: [CCN, FAQ oficial ENS sobre certificación de servicios](https://ens.ccn.cni.es/es/que-es-el-ens/faq), [Real Decreto 311/2022](https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191) e [ITS de conformidad](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2016-10109); [Constitución Española, arts. 148–149](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229) y [Ley 3/2001 de Pesca Marítima](https://www.boe.es/buscar/act.php?id=BOE-A-2001-6008); [INAP, primer examen de la promoción 28](https://www.inap.es/documents/59312/2061887/20220514%2BPrimer%2BExamen%2B28%2BTribunal%2BCSSTIAE%2BRESUELTO.pdf/704705d6-1a02-e56c-9082-7f67520f9bda); [ERIC, texto de Hersey y Blanchard sobre M3/S3](https://files.eric.ed.gov/fulltext/ED243232.pdf); documentación oficial de [Deno Runtime](https://docs.deno.com/runtime/fundamentals/), [Deno y Eta](https://docs.deno.com/examples/html_templating/), [Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf), [Pug](https://pugjs.org/api/getting-started.html) y [EJS](https://ejs.co/). Programas: [A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262). Cotejo curricular ITIC Academy: [ENS/ciberseguridad, bloque 22](https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk), [Constitución/AGE, bloque 01](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), [e-learning, bloque 33](https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk), [liderazgo, bloque 07](https://drive.google.com/file/d/11xq0o8TLESDT7J2PLC_MVbZHGoqWmGa2/view?usp=drivesdk) y [tecnologías de sistemas, bloque 30](https://drive.google.com/file/d/1LuUHoQr8oDmptteHIQ72VdCvJFsnu3LF/view?usp=drivesdk). Academy es cotejo de cobertura, no sustituto de las fuentes constitucionales, de seguridad o técnicas.
+
+Ejecutados `node revision/revisar-lote-1294.cjs`, `node revision/academia-lote-1294.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros, 6.790 revisiones individuales, 6.670 verificadas, 120 pendientes documentadas (47 de fuente y 73 de ambigüedad) y 5.333 preguntas sin revisión individual; errores estructurales: 0. La pregunta 6793 se mantiene pendiente de evidencia concreta del curso.
+
 **Despliegue pendiente de comprobación pública.**
-
-
-Despliegue del lote 1293 verificado: commit de datos c7b00aacdfcbfec84139e821c46f44b4c065612 en main; [GitHub Actions, ejecución 43665831756](https://github.com/itic-academy/simulador-tic/actions/runs/43665831756) terminó con éxito. GitHub Pages respondió HTTP 200, con caché evitada, para inventario, registro del lote, banco y este README. El registro público contiene exactamente los IDs 6786–6790 y respuestas 3/1/2/2/1; el banco publicado conserva esas claves, estado corregida, explicación y clasificación A1/A2. El inventario público confirma 12.123 preguntas, 6.785 revisadas individualmente, 6.666 verificadas, 119 pendientes y 5.338 sin revisión individual.
