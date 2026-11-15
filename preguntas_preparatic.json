@@ -374173,71 +374173,284 @@
       "id": 7071,
       "bloque": 0,
       "tema": 0,
-      "texto": "Las memorias caché sirven para:",
+      "texto": "¿Cuál es la finalidad principal de la memoria caché del procesador?",
       "opciones": [
-        "Representar un sistema de almacenamiento secundario basado en jerarquía.",
-        "Representar un sistema de almacenamiento auxiliar basado en jerarquía.",
-        "Representar un sistema de almacenamiento secundario basado en la rapidez.",
-        "Representar un sistema de almacenamiento basado en la rapidez."
+        "Servir como almacenamiento secundario permanente para sustituir al disco.",
+        "Almacenar una copia de datos e instrucciones usados con frecuencia para reducir el tiempo medio de acceso del procesador.",
+        "Aumentar la capacidad total del almacenamiento auxiliar sin cambiar el disco.",
+        "Guardar exclusivamente los datos después de apagar el ordenador."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Corregida B. Se sustituyó la frase imprecisa «representar un sistema de almacenamiento basado en la rapidez» por la función concreta de la caché: guardar copias de datos/instrucciones que se prevé reutilizar, en una jerarquía más próxima y rápida que RAM, reduciendo accesos de mayor latencia. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 trata hardware y componentes; la función de caché como nivel rápido de la jerarquía se coteja con IBM. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-54"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 trata hardware y componentes; la función de caché como nivel rápido de la jerarquía se coteja con IBM. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 trata hardware y componentes; la función de caché como nivel rápido de la jerarquía se coteja con IBM. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias."
+      },
+      "etiquetas": [
+        "memoria caché",
+        "jerarquía de memoria",
+        "latencia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/aix/7.2.0?topic=implementation-design-coding-effective-use-caches",
+            "referencia": "IBM AIX, Design and coding for effective use of caches: la jerarquía ubica caché entre CPU y RAM; los niveles superiores son más rápidos, pequeños y costosos. La caché mantiene instrucciones y datos usados/probables para reducir accesos más lentos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 54: arquitectura y componentes de equipos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-1: componentes y funcionalidades de ordenadores."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; cotejo curricular. El bloque 26 trata hardware y componentes; la función de caché como nivel rápido de la jerarquía se coteja con IBM."
+          }
+        ],
+        "observaciones": "Corregida B. Se sustituyó la frase imprecisa «representar un sistema de almacenamiento basado en la rapidez» por la función concreta de la caché: guardar copias de datos/instrucciones que se prevé reutilizar, en una jerarquía más próxima y rápida que RAM, reduciendo accesos de mayor latencia. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 trata hardware y componentes; la función de caché como nivel rápido de la jerarquía se coteja con IBM. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias."
+      }
     },
     {
       "id": 7072,
       "bloque": 0,
       "tema": 0,
-      "texto": "El procesador intel i7 utiliza una jerarquía de cache de 3 niveles, L1, L2 y L3. Indicar la respuesta INCORRECTA:",
+      "texto": "Según la jerarquía de caché Nehalem de los Intel Core i7 documentada por Intel, señale la afirmación INCORRECTA:",
       "opciones": [
-        "Respecto al tamaño de la memoria, L1<L2<L3",
-        "Los tres niveles utilizan un tamaño de bloque de 64 bytes",
-        "El nivel 3, L3, es compartido por todos los cores del chip",
-        "El nivel 1, L1, presenta la latencia más alta"
+        "La capacidad de caché aumenta de L1 a L2 y de L2 a L3.",
+        "Las líneas de las cachés de datos L1, L2 y L3 tienen 64 bytes.",
+        "La caché L3 se comparte entre los núcleos del procesador.",
+        "La caché L1 presenta la latencia más alta de los tres niveles."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. Se acotó «Intel i7» a la microarquitectura Nehalem, porque tamaños, líneas y topología varían según generación/modelo. El manual de Intel documenta L1 32 KB/4 ciclos, L2 256 KB/10 ciclos y L3 compartida de 8 MB/35–40+ ciclos, con líneas de datos de 64 bytes. Por tanto, L1 tiene menor latencia, no la mayor. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 trata arquitectura y memoria de ordenador; los tamaños, latencias y líneas citados se limitan a Nehalem y se verifican con el manual de optimización de Intel. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-54"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 trata arquitectura y memoria de ordenador; los tamaños, latencias y líneas citados se limitan a Nehalem y se verifican con el manual de optimización de Intel. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 trata arquitectura y memoria de ordenador; los tamaños, latencias y líneas citados se limitan a Nehalem y se verifican con el manual de optimización de Intel. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias."
+      },
+      "etiquetas": [
+        "Intel Core i7",
+        "Nehalem",
+        "L1",
+        "L2",
+        "L3",
+        "latencia de caché"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.intel.com/content/dam/doc/manual/64-ia-32-architectures-optimization-manual.pdf",
+            "referencia": "Intel 64 and IA-32 Architectures Optimization Reference Manual, sección Nehalem y tabla de parámetros Core i7: L1 de datos 32 KB/4 ciclos, L2 256 KB/10 ciclos, L3 compartida de 8 MB/35–40+ ciclos; líneas de datos de 64 bytes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 54: arquitectura de equipos y procesadores."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-1: arquitectura y componentes de ordenadores."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; cotejo curricular. El bloque 26 trata arquitectura y memoria de ordenador; los tamaños, latencias y líneas citados se limitan a Nehalem y se verifican con el manual de optimización de Intel."
+          }
+        ],
+        "observaciones": "Corregida D. Se acotó «Intel i7» a la microarquitectura Nehalem, porque tamaños, líneas y topología varían según generación/modelo. El manual de Intel documenta L1 32 KB/4 ciclos, L2 256 KB/10 ciclos y L3 compartida de 8 MB/35–40+ ciclos, con líneas de datos de 64 bytes. Por tanto, L1 tiene menor latencia, no la mayor. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 trata arquitectura y memoria de ordenador; los tamaños, latencias y líneas citados se limitan a Nehalem y se verifican con el manual de optimización de Intel. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias."
+      }
     },
     {
       "id": 7073,
       "bloque": 0,
       "tema": 0,
-      "texto": "Entre las características de Applocker de un sistema operativo Windows se encuentra:",
+      "texto": "¿Qué permite hacer AppLocker en Windows?",
       "opciones": [
-        "Cifrar ficheros para impedir el acceso de un usuario determinado.",
-        "Crear reglas de excepción para impedir el uso de un proceso determinado.",
-        "Controla el comportamiento de las aplicaciones después de que estas se han ejecutado bloqueando usuarios y acciones especificadas.",
-        "Establecer una red virtual privada (VPN) entre los clientes y la red a que se conecta."
+        "Cifrar automáticamente archivos para impedir que los abra un usuario concreto.",
+        "Definir reglas de permitir o denegar la ejecución de aplicaciones para usuarios o grupos, con condiciones y excepciones.",
+        "Controlar y bloquear las acciones internas de una aplicación una vez que ya se está ejecutando.",
+        "Establecer automáticamente una VPN entre cada cliente y la red corporativa."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. Se reemplazó la afirmación de que AppLocker bloquea procesos «después de ejecutarse»: Microsoft lo describe como control de reglas para permitir/denegar aplicaciones y archivos antes de su ejecución; permite asignación a usuarios/grupos y excepciones. No es cifrado de archivos ni una solución VPN. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1; El bloque 48 cubre seguridad en redes y nivel de aplicación, incluidos controles preventivos. AppLocker se coteja como control de ejecución del endpoint con documentación Microsoft. Correspondencia oficial: A1-54/A2-II-2/A2-IV-12. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-54"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1; El bloque 48 cubre seguridad en redes y nivel de aplicación, incluidos controles preventivos. AppLocker se coteja como control de ejecución del endpoint con documentación Microsoft. Correspondencia oficial: A1-54/A2-II-2/A2-IV-12. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1; El bloque 48 cubre seguridad en redes y nivel de aplicación, incluidos controles preventivos. AppLocker se coteja como control de ejecución del endpoint con documentación Microsoft. Correspondencia oficial: A1-54/A2-II-2/A2-IV-12. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias."
+      },
+      "etiquetas": [
+        "AppLocker",
+        "control de ejecución",
+        "reglas de aplicación",
+        "Windows"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/applocker/what-is-applocker",
+            "referencia": "Microsoft Learn, What Is AppLocker: permite reglas allow/deny por archivo y usuario/grupo, para ejecutables, scripts, instaladores, DLL y apps empaquetadas; admite excepciones a reglas."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/applocker/security-considerations-for-applocker",
+            "referencia": "Microsoft Learn, Security considerations for AppLocker: AppLocker controla si archivos/aplicaciones pueden ejecutarse; no controla el comportamiento de una aplicación después de su lanzamiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 54: seguridad y gestión de equipos personales."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas II-2 (administración de sistemas operativos) y IV-12 (seguridad en el puesto del usuario)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1; cotejo curricular. El bloque 48 cubre seguridad en redes y nivel de aplicación, incluidos controles preventivos. AppLocker se coteja como control de ejecución del endpoint con documentación Microsoft."
+          }
+        ],
+        "observaciones": "Corregida B. Se reemplazó la afirmación de que AppLocker bloquea procesos «después de ejecutarse»: Microsoft lo describe como control de reglas para permitir/denegar aplicaciones y archivos antes de su ejecución; permite asignación a usuarios/grupos y excepciones. No es cifrado de archivos ni una solución VPN. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 «Seguridad en redes y en el nivel de aplicación», versión 2026.1; El bloque 48 cubre seguridad en redes y nivel de aplicación, incluidos controles preventivos. AppLocker se coteja como control de ejecución del endpoint con documentación Microsoft. Correspondencia oficial: A1-54/A2-II-2/A2-IV-12. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias."
+      }
     },
     {
       "id": 7074,
       "bloque": 0,
       "tema": 0,
-      "texto": "De entre las siguientes, ¿cuál NO es una funcionalidad habitual de las soluciones MDM?:",
+      "texto": "¿Cuál de estas funciones NO es normalmente una función básica de una plataforma MDM?",
       "opciones": [
-        "Instalación de aplicaciones en remoto",
-        "Bloqueo de funciones no deseadas",
-        "Gestión de tickets de incidencias",
-        "Borrado remoto del terminal"
+        "Desplegar o instalar aplicaciones en dispositivos gestionados.",
+        "Aplicar políticas que bloquean funciones no permitidas en el dispositivo.",
+        "Gestionar tickets de incidencias de la mesa de servicio como función central.",
+        "Ejecutar acciones remotas como bloquear o borrar un dispositivo, según plataforma y configuración."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. Se conserva la distinción funcional: MDM administra dispositivos, políticas, aplicaciones y acciones remotas; la gestión de tickets pertenece normalmente a ITSM/mesa de servicio. Una solución MDM puede integrarse con ITSM, pero esa integración no convierte el ticketing en función básica de administración del dispositivo. Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1; El bloque 46 incluye MDM/EMM/UEM en gestión móvil. Se diferencia la administración del dispositivo de ITSM/ticketing según documentación de Microsoft. Correspondencia oficial: A1-54/A2-IV-15. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-54"
+        ],
+        "A2": [
+          "A2-IV-15"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1; El bloque 46 incluye MDM/EMM/UEM en gestión móvil. Se diferencia la administración del dispositivo de ITSM/ticketing según documentación de Microsoft. Correspondencia oficial: A1-54/A2-IV-15. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1; El bloque 46 incluye MDM/EMM/UEM en gestión móvil. Se diferencia la administración del dispositivo de ITSM/ticketing según documentación de Microsoft. Correspondencia oficial: A1-54/A2-IV-15. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias."
+      },
+      "etiquetas": [
+        "MDM",
+        "gestión de dispositivos móviles",
+        "gestión de aplicaciones",
+        "ITSM"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/intune/device-security/overview",
+            "referencia": "Microsoft Intune, Protect data and devices: documenta acciones MDM habituales como instalación/gestión de aplicaciones, bloqueo remoto, retirada de datos corporativos y borrado completo, con alcance según plataforma y enrolamiento."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/intune/intune-service/apps/app-management",
+            "referencia": "Microsoft Intune, App management: la plataforma permite añadir, asignar, desplegar y seguir aplicaciones en dispositivos gestionados."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 54: administración y seguridad de dispositivos personales y móviles."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV-15: soluciones MDM, EMM y UEM."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1; cotejo curricular. El bloque 46 incluye MDM/EMM/UEM en gestión móvil. Se diferencia la administración del dispositivo de ITSM/ticketing según documentación de Microsoft."
+          }
+        ],
+        "observaciones": "Corregida C. Se conserva la distinción funcional: MDM administra dispositivos, políticas, aplicaciones y acciones remotas; la gestión de tickets pertenece normalmente a ITSM/mesa de servicio. Una solución MDM puede integrarse con ITSM, pero esa integración no convierte el ticketing en función básica de administración del dispositivo. Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1; El bloque 46 incluye MDM/EMM/UEM en gestión móvil. Se diferencia la administración del dispositivo de ITSM/ticketing según documentación de Microsoft. Correspondencia oficial: A1-54/A2-IV-15. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias."
+      }
     },
     {
       "id": 7075,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a las memorias RAM:",
+      "texto": "¿Qué significa que una memoria DRAM sea síncrona (SDRAM)?",
       "opciones": [
-        "las RAM estáticas no son más rápidas que las dinámicas",
-        "SDRAM (Synchronous Dynamic) es generalmente más rápida que EDORAM (Extended Data Output)",
-        "las RAM no pueden ser usadas para simular discos duros debido a su velocidad de acceso",
-        "las PBSRAM (pipeline burst static) no pueden proporcionar acceso simultáneo por la propia concepción de la máquina de Von Neumann"
+        "Que su funcionamiento se sincroniza con una señal de reloj del sistema.",
+        "Que conserva los datos al desconectarse la alimentación.",
+        "Que no necesita ciclos de refresco.",
+        "Que sólo permite lectura y no escritura."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Corregida A. El ítem original tenía varias respuestas falsas y afirmaciones imprecisas (SRAM/DRAM, RAM disk y PBSRAM). Se reemplazó por una pregunta directa sobre el rasgo definitorio de SDRAM: su interfaz trabaja sincronizada con el reloj; esto no implica no volatilidad ni ausencia de refresco. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 cubre memoria y componentes; la definición de SDRAM se verifica con Micron y JEDEC. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-54"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 cubre memoria y componentes; la definición de SDRAM se verifica con Micron y JEDEC. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 cubre memoria y componentes; la definición de SDRAM se verifica con Micron y JEDEC. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias."
+      },
+      "etiquetas": [
+        "SDRAM",
+        "memoria síncrona",
+        "reloj del sistema"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.micron.com/content/micron/us/en/products/memory/dram-components/ddr5-sdram.html",
+            "referencia": "Micron, DDR5 SDRAM FAQ: SDRAM significa Synchronous DRAM y opera sincronizada con el reloj del sistema; DDR es una variante de SDRAM que transfiere en ambos flancos."
+          },
+          {
+            "url": "https://www.jedec.org/standards-documents/docs/jesd79-5c",
+            "referencia": "JEDEC JESD79-5C, estándar DDR5 SDRAM: interfaz síncrona y temporización referida al reloj."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 54: memoria y componentes de equipos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-1: memoria y tecnologías actuales de ordenador."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; cotejo curricular. El bloque 26 cubre memoria y componentes; la definición de SDRAM se verifica con Micron y JEDEC."
+          }
+        ],
+        "observaciones": "Corregida A. El ítem original tenía varias respuestas falsas y afirmaciones imprecisas (SRAM/DRAM, RAM disk y PBSRAM). Se reemplazó por una pregunta directa sobre el rasgo definitorio de SDRAM: su interfaz trabaja sincronizada con el reloj; esto no implica no volatilidad ni ausencia de refresco. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 cubre memoria y componentes; la definición de SDRAM se verifica con Micron y JEDEC. Correspondencia oficial: A1-54/A2-II-1. La academia se usa para cotejar cobertura; las afirmaciones técnicas se respaldan con fuentes primarias."
+      }
     },
     {
       "id": 7076,
