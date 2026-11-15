@@ -16,6 +16,8 @@ Cotejo curricular ITIC Academy/Drive: [45_ITIC_Tema_122_Correo_Mensajeria_Direct
 
 Ejecutados `node revision/revisar-lote-1385.cjs`, `node revision/academia-lote-1385.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros válidos; 7.245 preguntas revisadas individualmente (1.387 vigentes, 5.222 corregidas y 514 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.878 aún sin revisión individual; 0 errores estructurales. El inventario estructural no se cuenta como revisión de contenido.
 
+**Despliegue de los datos del lote 1385 verificado:** commit `2fb035f` publicado en `main`; [GitHub Actions, ejecución 43741594275](https://github.com/itic-academy/simulador-tic/actions/runs/43741594275) terminó con **Success**. GitHub Pages respondió HTTP 200 para el inventario, el registro `cambios-lote-1385.json`, el banco y el README. Se compararon los IDs 7246–7250 del registro con el banco público: respuestas, estados y clasificaciones A1/A2 coinciden; el inventario publicado refleja 12.123 preguntas, 7.245 revisadas individualmente, 7.123 verificadas y 4.878 sin revisar. Esta verificación queda registrada en esta actualización.
+
 ## Lote 1384 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 7241–7245 sobre longitudes de cableado TIA-568, modulación ADSL2+, comunicación por líneas eléctricas y autoconfiguración/cabecera IPv6.
