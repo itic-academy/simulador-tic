@@ -1,0 +1,41 @@
+const aplicar=require('./aplicar-lote.cjs');
+const edits={
+  6806:{texto:'¿Cuál de estas opciones corresponde a Feature-Driven Development (FDD), una metodología ágil de desarrollo de software?',opciones:['XML.','Desarrollo impulsado por las características (DIC/FDD).','Modelo entidad-relación.','UML.']},
+  6807:{texto:'Según el tenor literal del artículo 35.1 de la Ley 34/2002 (LSSI-CE), ¿qué órgano controla con carácter general el cumplimiento de las obligaciones de esa Ley por los prestadores de servicios de la sociedad de la información?',opciones:['Las Fuerzas y Cuerpos de Seguridad del Estado.','La Inspección Financiera y Tributaria.','La Asociación de Usuarios de Internet.','El Ministerio de Asuntos Económicos y Transformación Digital.']},
+  6808:{texto:'En el desarrollo web, ¿qué significan las siglas CSS?',opciones:['Cooperative Standard Specification.','Crashing Stimulus Specification.','Cascading Style Sheets.','Commercial Spurious Simulation.']},
+  6809:{texto:'¿Cuál de los siguientes países cuenta actualmente con una decisión de adecuación de la Comisión Europea conforme al artículo 45 del RGPD para transferencias internacionales de datos personales?',opciones:['Suiza.','Argentina.','Reino Unido.','Todos los anteriores.']},
+  6810:{texto:'Conforme al artículo 149.1.15.ª de la Constitución Española, ¿cuál de estas materias es competencia exclusiva del Estado?',opciones:['La promoción del deporte y de la adecuada utilización del ocio.','El fomento y la coordinación general de la investigación científica y técnica.','Los montes y aprovechamientos forestales.','La ordenación del territorio, urbanismo y vivienda.']}
+};
+const records=[
+[6806,[88],['III-2'],['FDD','Feature-Driven Development','metodologías ágiles','desarrollo de software'],[
+{url:'https://www.agilealliance.org/wp-content/uploads/2021/02/AgilePracticeGuide.pdf',referencia:'Agile Practice Guide, anexo A3, FDD: lo caracteriza como proceso ágil de entrega de software guiado por modelos e iteraciones, con planificación, diseño y construcción por funcionalidades.'},
+{url:'https://agilealliance.org/Agile101/',referencia:'Agile Alliance, Agile 101: incluye Feature-Driven Development (FDD) entre los métodos ágiles de desarrollo de software.'},
+{url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Programa oficial A1 GSI 2025, tema 88: metodologías de desarrollo de sistemas y metodologías ágiles.'},
+{url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Programa oficial A2 GSI 2025, tema III.2: metodologías de desarrollo y gestión del proceso.'}
+],'Se explicita que DIC es FDD (Feature-Driven Development) y se pregunta por esa metodología concreta; XML, ER y UML son tecnologías/modelos/notaciones distintos, no la respuesta solicitada. El programa A1 enumera Scrum y Kanban como ejemplos, no como lista exhaustiva de métodos ágiles.','corregida'],
+[6807,[22],['I-6'],['LSSI-CE','Ley 34/2002','supervisión','sociedad de la información'],[
+{url:'https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758&p=20230509&tn=0',referencia:'Ley 34/2002, texto consolidado, art. 35.1: atribuye en su tenor literal al Ministerio de Asuntos Económicos y Transformación Digital el control general que se pregunta; art. 35.2 permite a los órganos citados realizar inspecciones y 35.3 preserva competencias sectoriales específicas.'},
+{url:'https://www.boe.es/buscar/act.php?id=BOE-A-2023-24842&p=20260729&tn=0',referencia:'Real Decreto 1009/2023, texto consolidado, art. 21: la denominación ministerial vigente es Ministerio para la Transformación Digital y de la Función Pública. Se cita para advertir la diferencia entre la denominación legal literal del art. 35.1 LSSI y la estructura ministerial actual.'},
+{url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Programa oficial A1 GSI 2025, tema 22: legislación de sociedad de la información y administración electrónica.'},
+{url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Programa oficial A2 GSI 2025, tema I.6: sociedad de la información.'}
+],'Se sustituye «funciones de inspección y control» (demasiado amplio, pues el art. 35.3 reserva competencias sectoriales) por el control general que el apartado 1 atribuye literalmente al Ministerio nombrado allí. La denominación del texto legal es histórica; la organización ministerial vigente es otra.','corregida'],
+[6808,[77],['III-12'],['CSS','hojas de estilo','tecnologías web','estándares W3C'],[
+{url:'https://www.w3.org/TR/css-2026/',referencia:'W3C CSS Snapshot 2026, §1.1: define Cascading Style Sheets (CSS) como lenguaje de hojas de estilo para describir la presentación/renderizado de documentos estructurados como HTML y XML.'},
+{url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Programa oficial A1 GSI 2025, tema 77: lenguajes y herramientas para redes globales; incluye expresamente HTML, CSS y XML.'},
+{url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Programa oficial A2 GSI 2025, tema III.12: aplicaciones web, diseño multidispositivo y tecnologías de desarrollo web.'}
+],'Se conserva la respuesta C y se formula una pregunta directa sobre el significado de la sigla. CSS es un lenguaje de hojas de estilo; la definición actual del W3C cubre la presentación de documentos estructurados y no altera el contenido semántico del lenguaje de marcado.','corregida'],
+[6809,[27],['I-7'],['RGPD','artículo 45','decisión de adecuación','transferencias internacionales','cloud'],[
+{url:'https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en',referencia:'Comisión Europea, Adequacy decisions, lista vigente de países reconocidos con nivel adecuado conforme al art. 45 RGPD: incluye Argentina, Suiza y Reino Unido (decisión británica renovada en diciembre de 2025).'},
+{url:'https://eur-lex.europa.eu/eli/reg/2016/679/oj',referencia:'Reglamento (UE) 2016/679 (RGPD), art. 45: la decisión de adecuación permite transferir datos al tercer país sin autorización específica adicional, dentro del alcance y condiciones de la decisión.'},
+{url:'https://eur-lex.europa.eu/eli/dec_impl/2025/2574/oj',referencia:'Decisión de Ejecución (UE) 2025/2574: renovación de la decisión de adecuación del Reino Unido bajo el RGPD.'},
+{url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Programa oficial A1 GSI 2025, tema 27: RGPD, protección de datos, obligaciones del responsable y encargado.'},
+{url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Programa oficial A2 GSI 2025, tema I.7: protección de datos personales y régimen jurídico.'}
+],'Las tres alternativas geográficas cuentan actualmente con decisión de adecuación, por lo que la opción D es correcta. Se elimina la falsa presuposición de que solo un país de la lista sería adecuado. Una decisión de adecuación no exime del RGPD en general ni del contrato responsable-encargado del art. 28 cuando proceda.','corregida'],
+[6810,[3],['I-1'],['Constitución Española','artículo 149.1.15','competencias estatales','investigación científica'],[
+{url:'https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229',referencia:'Constitución Española, texto consolidado, art. 149.1.15.ª: atribuye al Estado la competencia exclusiva sobre el fomento y la coordinación general de la investigación científica y técnica.'},
+{url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',referencia:'Programa oficial A1 GSI 2025, tema 3: organización política y administrativa de las Comunidades Autónomas y régimen territorial constitucional.'},
+{url:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262',referencia:'Programa oficial A2 GSI 2025, tema I.1: Constitución Española de 1978.'}
+],'Se confirma la respuesta B con la atribución expresa del art. 149.1.15.ª. Las opciones sobre deporte y montes aparecen en el catálogo de posibles competencias autonómicas del art. 148.1; territorio, urbanismo y vivienda también puede ser asumida por las CCAA.','corregida']
+];
+const mapped=records.map(([id,a1,a2,tags,sources,note,state])=>[id,a1,a2,tags,sources,edits[id],note,state]);
+aplicar({numero:'1297',fecha:'2026-11-15',records:mapped});
