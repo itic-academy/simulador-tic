@@ -18,7 +18,7 @@ Cotejo de ITIC Academy en Drive: [bloque 01 Constitución/organización del Esta
 
 Inventario tras el lote: 12.123 preguntas; 6.925 examinadas individualmente; 6.804 verificadas (1.303 vigentes, 5.006 corregidas y 495 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.198 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1321.cjs`, `node revision/academia-lote-1321.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue pendiente de comprobación:** después del commit del lote, confirmar los jobs `build` y `deploy` de GitHub Pages y comprobar en el inventario público que figuran `cambios-lote-1321.json` y los recuentos indicados.
+**Despliegue verificado:** el commit `184bd3f` publicó correctamente mediante GitHub Actions; los jobs `build` y `deploy` finalizaron con éxito. `https://itic-academy.github.io/simulador-tic/revision/inventario.json` responde HTTP 200, enumera `cambios-lote-1321.json` y muestra 1.303 vigentes, 5.006 corregidas, 495 históricas y 5.198 sin revisar.
 
 ## Lote 1320 — 15 de noviembre de 2026
 
