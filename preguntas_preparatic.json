@@ -372124,28 +372124,123 @@
       "id": 7036,
       "bloque": 0,
       "tema": 0,
-      "texto": "Acceso directo a memoria (DMA) es:",
+      "texto": "En una transferencia de entrada/salida por acceso directo a memoria (DMA), ¿qué hace el controlador DMA una vez configurada la operación?",
       "opciones": [
-        "Mecanismo por el que se transfieren datos entre un sistema de entrada/salida y el sistema de memoria sin la intervención de la CPU.",
-        "Un modo de funcionamiento opcional del hardware que permite acelerar el acceso a discos duros.",
-        "Un modo de funcionamiento opcional del software que permite acelerar el acceso a discos duros."
+        "Transfiere datos entre un dispositivo de E/S y memoria sin que la CPU tenga que copiar cada dato; la CPU prepara y supervisa la operación.",
+        "Acelera exclusivamente la lectura de discos duros y no puede usarse con otros dispositivos.",
+        "Es un modo de software que evita que el sistema operativo participe en la configuración de E/S."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. La clave heredada era esencialmente válida, pero «sin intervención de la CPU» podía entenderse como que esta nunca prepara ni supervisa la operación. Tras configurarse, el motor/controlador DMA mueve el bloque entre dispositivo y memoria sin que la CPU copie cada dato; aún puede intervenir al configurar, resolver coherencia de caché o atender la finalización. Se conservó esa distinción en el enunciado y distractores. A1-59; A2-II-2/IV-1. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); §4.2 trata interrupciones, DMA y E/S mapeada en memoria; el apartado sitúa acceso directo a memoria en fundamentos de E/S del SO. Correspondencia con el programa oficial: A1-59/A2-II-2/A2-IV-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-59"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); §4.2 trata interrupciones, DMA y E/S mapeada en memoria; el apartado sitúa acceso directo a memoria en fundamentos de E/S del SO. Correspondencia con el programa oficial: A1-59/A2-II-2/A2-IV-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); §4.2 trata interrupciones, DMA y E/S mapeada en memoria; el apartado sitúa acceso directo a memoria en fundamentos de E/S del SO. Correspondencia con el programa oficial: A1-59/A2-II-2/A2-IV-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "DMA",
+        "E/S",
+        "memoria",
+        "periférico",
+        "CPU"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.nxp.com/docs/en/application-note/AN2168.pdf",
+            "referencia": "NXP AN2168, DMA Controller: tras programar sus registros, el controlador DMA puede transferir bloques sin intervención de la CPU, incluidos movimientos hacia o desde periféricos; no significa que la CPU no configure ni gestione la operación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 59: conceptos y fundamentos de sistemas operativos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas II-2 (fundamentos de sistemas operativos) y IV-1 (administración del sistema operativo y software de base)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); cotejo de cobertura curricular. §4.2 trata interrupciones, DMA y E/S mapeada en memoria; el apartado sitúa acceso directo a memoria en fundamentos de E/S del SO."
+          }
+        ],
+        "observaciones": "Corregida A. La clave heredada era esencialmente válida, pero «sin intervención de la CPU» podía entenderse como que esta nunca prepara ni supervisa la operación. Tras configurarse, el motor/controlador DMA mueve el bloque entre dispositivo y memoria sin que la CPU copie cada dato; aún puede intervenir al configurar, resolver coherencia de caché o atender la finalización. Se conservó esa distinción en el enunciado y distractores. A1-59; A2-II-2/IV-1. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); §4.2 trata interrupciones, DMA y E/S mapeada en memoria; el apartado sitúa acceso directo a memoria en fundamentos de E/S del SO. Correspondencia con el programa oficial: A1-59/A2-II-2/A2-IV-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 7037,
       "bloque": 0,
       "tema": 0,
-      "texto": "El estándar BLE (Bluetooth Low Energy) consume menos energía que el Bluetooth clásico gracias a que:",
+      "texto": "Bluetooth Low Energy puede reducir el consumo frente a muchos usos de Bluetooth clásico principalmente porque su modo de operación permite:",
       "opciones": [
-        "Su distancia de alcance es menor.",
-        "Está en distintas bandas de frecuencia.",
-        "Utiliza un sistema de modulación diferente.",
-        "Permite la conexión de un único dispositivo."
+        "Usar un alcance necesariamente menor que el de cualquier dispositivo Bluetooth clásico.",
+        "Operar en una banda de frecuencia distinta de la banda ISM de 2,4 GHz.",
+        "Mantener la radio activa durante intervalos breves y dormir entre eventos de publicidad/conexión, con un ciclo activo bajo según la aplicación y su configuración.",
+        "Conectar como máximo un único dispositivo a cada radio."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. La explicación original atribuía el menor consumo a una modulación distinta, generalización incorrecta: Bluetooth LE usa GFSK y Bluetooth Classic Basic Rate también; ambos operan en 2,4 GHz. BLE permite transmisiones breves, intervalos configurables y latencia periférica/subrating para dormir u omitir eventos, reduciendo el tiempo activo según el patrón de tráfico. No garantiza menor consumo para cualquier configuración o carga. A1-114; A2-IV-11. Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1 (30/09/2026); §9.4 cubre Bluetooth Low Energy y §9.3 el bajo consumo; el bloque mapea Bluetooth a A1-114/A2-IV-11. La modulación y el balance energético concretos se validan con la especificación primaria de Bluetooth SIG. Correspondencia con el programa oficial: A1-114/A2-IV-11. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-114"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1 (30/09/2026); §9.4 cubre Bluetooth Low Energy y §9.3 el bajo consumo; el bloque mapea Bluetooth a A1-114/A2-IV-11. La modulación y el balance energético concretos se validan con la especificación primaria de Bluetooth SIG. Correspondencia con el programa oficial: A1-114/A2-IV-11. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1 (30/09/2026); §9.4 cubre Bluetooth Low Energy y §9.3 el bajo consumo; el bloque mapea Bluetooth a A1-114/A2-IV-11. La modulación y el balance energético concretos se validan con la especificación primaria de Bluetooth SIG. Correspondencia con el programa oficial: A1-114/A2-IV-11. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "Bluetooth",
+        "Bluetooth Low Energy",
+        "BLE",
+        "GFSK",
+        "consumo energético"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.bluetooth.com/bluetooth-le-primer/",
+            "referencia": "Bluetooth SIG, Bluetooth Low Energy Primer: define GFSK para los PHY LE básicos, la banda de 2,4 GHz, eventos de conexión e intervalos; la latencia periférica permite omitir eventos y ahorrar energía."
+          },
+          {
+            "url": "https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core_v7.0/out/en/architecture%2C-change-history%2C-and-conventions/architecture--arch-.html",
+            "referencia": "Bluetooth Core Specification 7.0, Architecture: LE y BR/EDR operan en la banda ISM de 2,4 GHz; describe la operación LE, sus PHY y la posibilidad de reducir el ciclo activo mediante subrating."
+          },
+          {
+            "url": "https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core_v7.0/out/en/low-energy-controller/radiophysical-layer-rfphy--specification.html",
+            "referencia": "Bluetooth Core Specification 7.0, LE Radio Physical Layer: LE 1M obligatorio y PHY LE básicos basados en GFSK."
+          },
+          {
+            "url": "https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core_v7.0/out/en/br-edr-controller/radiophysicallayer-rf--specification.html",
+            "referencia": "Bluetooth Core Specification 7.0, BR/EDR Radio Physical Layer: Basic Rate usa GFSK (EDR usa π/4-DQPSK u 8DPSK en la parte de carga útil); por tanto, la afirmación general de que BLE ahorra energía por usar otra modulación es falsa."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 114: Bluetooth y características de redes inalámbricas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV-11: redes inalámbricas, protocolos y características funcionales/técnicas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1 (30/09/2026); cotejo de cobertura curricular. §9.4 cubre Bluetooth Low Energy y §9.3 el bajo consumo; el bloque mapea Bluetooth a A1-114/A2-IV-11. La modulación y el balance energético concretos se validan con la especificación primaria de Bluetooth SIG."
+          }
+        ],
+        "observaciones": "Corregida C. La explicación original atribuía el menor consumo a una modulación distinta, generalización incorrecta: Bluetooth LE usa GFSK y Bluetooth Classic Basic Rate también; ambos operan en 2,4 GHz. BLE permite transmisiones breves, intervalos configurables y latencia periférica/subrating para dormir u omitir eventos, reduciendo el tiempo activo según el patrón de tráfico. No garantiza menor consumo para cualquier configuración o carga. A1-114; A2-IV-11. Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1 (30/09/2026); §9.4 cubre Bluetooth Low Energy y §9.3 el bajo consumo; el bloque mapea Bluetooth a A1-114/A2-IV-11. La modulación y el balance energético concretos se validan con la especificación primaria de Bluetooth SIG. Correspondencia con el programa oficial: A1-114/A2-IV-11. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 7038,
@@ -372159,35 +372254,168 @@
         "Es volátil"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Vigente B. La memoria SRAM es volátil, direccionable aleatoriamente y permite lectura/escritura, pero no requiere el refresco periódico característico de la DRAM; su contenido se mantiene mientras reciba alimentación. Se conserva la clave B. A1-52/54; A2-II-1. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31/08/2026); ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); Bloque 26 aporta el encuadre curricular de equipos/componentes de PC (A1-52/54 y A2-II-1); bloque 27 desarrolla fundamentos y gestión de memoria del sistema operativo. No se presenta el material académico como fuente técnica específica de la distinción SRAM/DRAM. Correspondencia con el programa oficial: A1-52/A1-54/A2-II-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-52",
+          "A1-54"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31/08/2026); ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); Bloque 26 aporta el encuadre curricular de equipos/componentes de PC (A1-52/54 y A2-II-1); bloque 27 desarrolla fundamentos y gestión de memoria del sistema operativo. No se presenta el material académico como fuente técnica específica de la distinción SRAM/DRAM. Correspondencia con el programa oficial: A1-52/A1-54/A2-II-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31/08/2026); ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); Bloque 26 aporta el encuadre curricular de equipos/componentes de PC (A1-52/54 y A2-II-1); bloque 27 desarrolla fundamentos y gestión de memoria del sistema operativo. No se presenta el material académico como fuente técnica específica de la distinción SRAM/DRAM. Correspondencia con el programa oficial: A1-52/A1-54/A2-II-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "SRAM",
+        "RAM",
+        "memoria volátil",
+        "refresco"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.micron.com/content/dam/micron/educatorhub/intro-to-memory/MicronIntroduction-to-Memory-Presentation.pdf",
+            "referencia": "Micron, Introduction to Memory: SRAM almacena el estado en biestables y no requiere refresco periódico; DRAM almacena carga en condensadores y sí requiere refresco. Ambas son volátiles."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 52 y 54: sistemas/equipos y dispositivos personales de PC."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-1: tecnologías y componentes actuales de ordenadores, desde dispositivos móviles hasta sistemas de altas prestaciones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31/08/2026); cotejo de cobertura curricular. Bloque 26 aporta el encuadre curricular de equipos/componentes de PC (A1-52/54 y A2-II-1); bloque 27 desarrolla fundamentos y gestión de memoria del sistema operativo. No se presenta el material académico como fuente técnica específica de la distinción SRAM/DRAM."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); cotejo de cobertura curricular. Bloque 26 aporta el encuadre curricular de equipos/componentes de PC (A1-52/54 y A2-II-1); bloque 27 desarrolla fundamentos y gestión de memoria del sistema operativo. No se presenta el material académico como fuente técnica específica de la distinción SRAM/DRAM."
+          }
+        ],
+        "observaciones": "Vigente B. La memoria SRAM es volátil, direccionable aleatoriamente y permite lectura/escritura, pero no requiere el refresco periódico característico de la DRAM; su contenido se mantiene mientras reciba alimentación. Se conserva la clave B. A1-52/54; A2-II-1. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1 (31/08/2026); ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); Bloque 26 aporta el encuadre curricular de equipos/componentes de PC (A1-52/54 y A2-II-1); bloque 27 desarrolla fundamentos y gestión de memoria del sistema operativo. No se presenta el material académico como fuente técnica específica de la distinción SRAM/DRAM. Correspondencia con el programa oficial: A1-52/A1-54/A2-II-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 7039,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué aplicaciones y tecnologías pueden utilizarse para mejorar la seguridad de los dispositivos móviles en una organización?",
+      "texto": "¿Qué tipo de plataforma permite a una organización administrar centralmente la configuración y el inventario de dispositivos móviles, aplicar controles de acceso y, conforme a sus políticas, iniciar acciones como bloquear o retirar datos corporativos?",
       "opciones": [
-        "Políticas BYOD.",
-        "Software MDM.",
-        "Jailbreak de los dispositivos móviles.",
-        "Adquisición de dispositivos más modernos."
+        "Una política BYOD por sí sola, sin controles técnicos ni plataforma de gestión.",
+        "Una plataforma MDM/EMM (o UEM, según alcance) integrada con los dispositivos y servicios de la organización.",
+        "El jailbreak de los dispositivos, para eliminar las restricciones del fabricante.",
+        "La compra de dispositivos más recientes, sin configurar controles de gestión."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. MDM/EMM/UEM permite aplicar y supervisar controles técnicos centralizados; no garantiza por sí sola la seguridad, que depende de políticas, configuración y operación. BYOD es un modelo de propiedad/uso que también necesita controles; no equivale a una plataforma de gestión. Las acciones de borrado deben limitarse al ámbito corporativo y respetar el modelo de propiedad, la política y las obligaciones aplicables. A1-54/125; A2-IV-15. Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1 (30/09/2026); §16 cubre MDM, EMM y UEM, ciclo de vida y gestión segura de dispositivos; el bloque mapea estas materias a A1-54/A1-125 y A2-IV-15. El alcance de borrado y controles se coteja con NIST SP 800-124 Rev. 2. Correspondencia con el programa oficial: A1-54/A1-125/A2-IV-15. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-54",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-15"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1 (30/09/2026); §16 cubre MDM, EMM y UEM, ciclo de vida y gestión segura de dispositivos; el bloque mapea estas materias a A1-54/A1-125 y A2-IV-15. El alcance de borrado y controles se coteja con NIST SP 800-124 Rev. 2. Correspondencia con el programa oficial: A1-54/A1-125/A2-IV-15. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1 (30/09/2026); §16 cubre MDM, EMM y UEM, ciclo de vida y gestión segura de dispositivos; el bloque mapea estas materias a A1-54/A1-125 y A2-IV-15. El alcance de borrado y controles se coteja con NIST SP 800-124 Rev. 2. Correspondencia con el programa oficial: A1-54/A1-125/A2-IV-15. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "seguridad móvil",
+        "MDM",
+        "EMM",
+        "UEM",
+        "BYOD"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/124/r2/final",
+            "referencia": "NIST SP 800-124 Rev. 2 (2023): guía vigente de seguridad de dispositivos móviles empresariales y gestión centralizada; contempla escenarios corporativos y BYOD."
+          },
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-124r2.pdf",
+            "referencia": "NIST SP 800-124 Rev. 2, §§4.3.12–4.3.13: gestión empresarial permite, conforme a políticas, revocar acceso, aplicar remedios y borrar datos/dispositivos; advierte que borrar datos personales ajenos a la empresa puede generar problemas legales."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 54 (seguridad/gestión de equipos personales y móviles) y 125 (medidas específicas para comunicaciones móviles)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV-15: comunicaciones móviles y soluciones de gestión MDM, EMM y UEM."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1 (30/09/2026); cotejo de cobertura curricular. §16 cubre MDM, EMM y UEM, ciclo de vida y gestión segura de dispositivos; el bloque mapea estas materias a A1-54/A1-125 y A2-IV-15. El alcance de borrado y controles se coteja con NIST SP 800-124 Rev. 2."
+          }
+        ],
+        "observaciones": "Corregida B. MDM/EMM/UEM permite aplicar y supervisar controles técnicos centralizados; no garantiza por sí sola la seguridad, que depende de políticas, configuración y operación. BYOD es un modelo de propiedad/uso que también necesita controles; no equivale a una plataforma de gestión. Las acciones de borrado deben limitarse al ámbito corporativo y respetar el modelo de propiedad, la política y las obligaciones aplicables. A1-54/125; A2-IV-15. Cotejo curricular ITIC Academy: ITIC Academy, bloque 46 «Redes inalámbricas y comunicaciones móviles», versión 2026.1 (30/09/2026); §16 cubre MDM, EMM y UEM, ciclo de vida y gestión segura de dispositivos; el bloque mapea estas materias a A1-54/A1-125 y A2-IV-15. El alcance de borrado y controles se coteja con NIST SP 800-124 Rev. 2. Correspondencia con el programa oficial: A1-54/A1-125/A2-IV-15. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 7040,
       "bloque": 0,
       "tema": 0,
-      "texto": "Se puede entender por 'driver':",
+      "texto": "En el contexto de los dispositivos de un ordenador, ¿qué es un controlador de dispositivo o driver?",
       "opciones": [
-        "Un tipo especial de programa supervisor",
-        "Un programa encargado de permitir el manejo de un determinado periférico por parte de una unidad central",
-        "Un lector/grabador de discos ópticos",
-        "Un lector/grabador de discos CD-ROM"
+        "Un programa supervisor especial que sustituye al sistema operativo.",
+        "Un componente de software mediante el que el sistema operativo se comunica con un dispositivo y tramita sus operaciones de entrada/salida.",
+        "Un lector y grabador de discos ópticos.",
+        "Un lector y grabador de discos CD-ROM."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. Un driver es un componente de software que permite al sistema operativo comunicarse con un dispositivo y gestionar las solicitudes de E/S mediante una interfaz específica. Puede haber controladores en varias capas, en modo usuario o núcleo; no siempre comunica directamente con el hardware. Se reemplazó la formulación antigua «manejo por parte de una unidad central», menos precisa que el modelo actual OS-dispositivo. A1-59; A2-II-2/IV-1. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); §4.1 aborda dispositivos, controladores y drivers; corresponde a fundamentos de SO y administración del software de base. Correspondencia con el programa oficial: A1-59/A2-II-2/A2-IV-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas.",
+      "clasificacion": {
+        "A1": [
+          "A1-59"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); §4.1 aborda dispositivos, controladores y drivers; corresponde a fundamentos de SO y administración del software de base. Correspondencia con el programa oficial: A1-59/A2-II-2/A2-IV-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); §4.1 aborda dispositivos, controladores y drivers; corresponde a fundamentos de SO y administración del software de base. Correspondencia con el programa oficial: A1-59/A2-II-2/A2-IV-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas."
+      },
+      "etiquetas": [
+        "controlador de dispositivo",
+        "driver",
+        "sistema operativo",
+        "hardware",
+        "E/S"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/what-is-a-driver-",
+            "referencia": "Microsoft Learn, What is a driver?: componente de software que permite al sistema operativo y a un dispositivo comunicarse; la pila puede incluir varios controladores y no todos se comunican directamente con el hardware."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 59: conceptos y fundamentos de sistemas operativos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas II-2 (fundamentos de SO) y IV-1 (administración del SO y software de base)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); cotejo de cobertura curricular. §4.1 aborda dispositivos, controladores y drivers; corresponde a fundamentos de SO y administración del software de base."
+          }
+        ],
+        "observaciones": "Corregida B. Un driver es un componente de software que permite al sistema operativo comunicarse con un dispositivo y gestionar las solicitudes de E/S mediante una interfaz específica. Puede haber controladores en varias capas, en modo usuario o núcleo; no siempre comunica directamente con el hardware. Se reemplazó la formulación antigua «manejo por parte de una unidad central», menos precisa que el modelo actual OS-dispositivo. A1-59; A2-II-2/IV-1. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1 (14/08/2026); §4.1 aborda dispositivos, controladores y drivers; corresponde a fundamentos de SO y administración del software de base. Correspondencia con el programa oficial: A1-59/A2-II-2/A2-IV-1. El material académico sirve de contraste curricular; la validación factual se apoya en las fuentes técnicas primarias citadas."
+      }
     },
     {
       "id": 7041,
