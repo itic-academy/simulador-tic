@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path');
+const file=path.join(__dirname,'README.md');let text=fs.readFileSync(file,'utf8');
+const wrong='1.346 vigentes, 5.067 corregidas y 506 históricas';
+const right='1.345 vigentes, 5.068 corregidas y 506 históricas';
+if((text.match(new RegExp(wrong,'g'))||[]).length!==2)throw Error('El resumen del lote debe contener exactamente dos recuentos por corregir.');
+text=text.replaceAll(wrong,right);
+const marker='Publicación pendiente de verificación.';
+const verified='Despliegue del lote verificado: commit `9c05470e2cdf3570955a3970f3c8822bd7c101a5` publicado por GitHub Actions, workflow [run 43706160726](https://github.com/itic-academy/simulador-tic/actions/runs/43706160726), conclusión success. Desde GitHub Pages, con consulta anti-caché, se recibieron HTTP 200 para /, revision/README.md, revision/inventario.json, revision/cambios-lote-1344.json y preguntas_preparatic.json. El log remoto declara IDs 7041–7045; el banco remoto contiene la reformulación de tasas de Thunderbolt 3; el inventario remoto indica 12.123 preguntas, 6.919 verificadas y 5.083 sin revisar. El desglose correcto, contrastado con revision/inventario.json, es 1.345 vigentes, 5.068 corregidas y 506 históricas.';
+if(!text.includes(marker))throw Error('No se encuentra el marcador de publicación pendiente.');
+text=text.replace(marker,verified);fs.writeFileSync(file,text);console.log('Recuento corregido según inventario y publicación verificada documentada.');
