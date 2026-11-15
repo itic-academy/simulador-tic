@@ -18,7 +18,7 @@ Cotejo Drive: [ITIC Academy, bloque 38, Análisis, diseño y construcción](http
 
 Inventario tras el lote: 12.123 preguntas; 6.870 examinadas individualmente; 6.750 verificadas (1.294 vigentes, 4.967 corregidas y 489 históricas); 120 pendientes (47 de fuente y 73 de ambigüedad); 5.253 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1310.cjs`, `node revision/academia-lote-1310.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue pendiente de verificación** hasta comprobar que Pages publica este lote y sus respuestas.
+**Despliegue pendiente de verificación:** el lote se envió a `main` en el commit `f65d75ef53d788e0f3085762893efee0797ee3c4`. En este ciclo, GitHub Actions y Pages no fueron accesibles por error de resolución DNS; no se da el despliegue por verificado hasta comprobar el contenido público.
 
 ## Lote 1309 — 15 de noviembre de 2026
 
