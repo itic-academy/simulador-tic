@@ -18,7 +18,7 @@ Cotejo Drive: [ITIC Academy, bloque Redes, actualización 2026.1](https://drive.
 
 Inventario tras el lote: 12.123 preguntas; 6.900 examinadas individualmente; 6.779 verificadas (1.296 vigentes, 4.989 corregidas y 494 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.223 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1316.cjs`, `node revision/academia-lote-1316.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue pendiente de verificación:** se conservan los intentos previos fallidos de resolución DNS de GitHub Pages; tras subir este lote se repetirá la comprobación pública. No se afirma que el sitio esté publicado/verificado sin resolución DNS y consulta HTTP satisfactoria.
+**Despliegue pendiente de verificación:** el lote 1316 quedó enviado a `main` en `58fe531`. La comprobación pública posterior volvió a fallar: `Resolve-DnsName itic-academy.github.io` devolvió «Acceso denegado» e `Invoke-WebRequest https://itic-academy.github.io/simulador-tic/revision/inventario.json` devolvió «Host desconocido. (itic-academy.github.io:443)». No fue posible validar contenido público ni el estado de Actions; no se afirma que este commit esté desplegado hasta recuperar DNS y obtener una respuesta HTTP verificable.
 
 ## Lote 1315 — 15 de noviembre de 2026
 
