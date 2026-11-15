@@ -16,7 +16,7 @@ Cotejo ITIC Academy en Drive: [bloque 12 Directivo TIC y Planificación Estraté
 
 Inventario tras el lote: 12.123 preguntas; 7.020 examinadas individualmente; 6.899 verificadas (1.339 vigentes, 5.054 corregidas y 506 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5.103 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1340.cjs`, `node revision/academia-lote-1340.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue:** se verificará después de publicar el lote.
+**Despliegue verificado:** el commit `cde6948` se publicó correctamente mediante GitHub Actions ([run 43702276822](https://github.com/itic-academy/simulador-tic/actions/runs/43702276822), finalizado con éxito). GitHub Pages respondió HTTP 200 sin caché para inventario, registro del lote y banco. Se cotejaron los IDs 7021–7025, sus estados `corregida/vigente/vigente/vigente/histórica` y las claves A/D/A/C/A; coinciden con el registro. El inventario público refleja 12.123 preguntas, con 1.339 vigentes, 5.054 corregidas, 506 históricas, 121 pendientes y 5.103 sin revisar; errores estructurales: 0.
 
 ## Lote 1339 — 15 de noviembre de 2026
 
