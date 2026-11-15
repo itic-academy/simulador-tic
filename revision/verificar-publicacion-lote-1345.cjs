@@ -1,0 +1,6 @@
+const fs=require('node:fs'),path=require('node:path');
+const file=path.join(__dirname,'README.md');let text=fs.readFileSync(file,'utf8');
+const marker='Publicación pendiente de verificación.';
+const verified='Despliegue del lote verificado: commit de datos `69a18871ccc30c15fac837d782747be3d7cce653` publicado por GitHub Actions; el workflow [run 43706938127](https://github.com/itic-academy/simulador-tic/actions/runs/43706938127) concluyó con Success en los jobs build y deploy. GitHub Pages respondió HTTP 200, con consulta anti-caché, para /, revision/README.md, revision/inventario.json, revision/cambios-lote-1345.json y preguntas_preparatic.json. El registro remoto contiene exactamente los IDs 7046–7050; el banco público refleja la pregunta EBCDIC revisada con clave 2 y estado corregida. El inventario remoto confirma 12.123 preguntas y el estado del lote; el desglose del registro local contrastado es 7.045 revisadas, 6.924 verificadas (1.346 vigentes, 5.072 corregidas, 506 históricas), 121 pendientes y 5.078 sin revisar.';
+if(!text.includes(marker))throw Error('No se encuentra el marcador de publicación pendiente.');
+text=text.replace(marker,verified);fs.writeFileSync(file,text);console.log('Despliegue del lote 1345 documentado tras verificación del workflow y recursos públicos.');
