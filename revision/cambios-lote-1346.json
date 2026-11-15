@@ -1,0 +1,399 @@
+{
+  "fecha": "2026-11-15",
+  "alcance": "IDs 7051–7055; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7051,
+      "original": {
+        "id": 7051,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Para realizar la actualización de los equipos cliente en un entorno seguro se utilizan herramientas que permiten actualizar los componentes de software de un sistema a su versión más reciente, de manera que, a la vez que se incorporan nuevas funcionalidades, se pueden corregir fallos o vulnerabilidades existentes. En este contexto, las herramientas que suelen conectarse periódicamente a un servidor centralizado para ver si existen nuevas actualizaciones y, en caso afirmativo, gestionar las descargas se conocen como:",
+        "opciones": [
+          "Basadas en clientes.",
+          "Basadas en agente.",
+          "Basadas en servidor.",
+          "Basadas en seguridad."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7051,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una herramienta de gestión de actualizaciones cuya arquitectura instala en cada equipo un componente local que consulta periódicamente un servidor central, ¿cómo se denomina el modelo?",
+        "opciones": [
+          "Basado en cliente/agente: el endpoint ejecuta el componente que consulta el servidor y gestiona la detección o descarga conforme a la política.",
+          "Basado exclusivamente en servidor: el endpoint no ejecuta un componente de actualización ni inicia consultas.",
+          "Basado en seguridad: nombre de una arquitectura de comunicación que no especifica dónde se ejecuta el cliente de actualización.",
+          "Basado en almacenamiento: el servidor sólo conserva copias de seguridad y no distribuye metadatos ni actualizaciones."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. «Basado en cliente» y «basado en agente» se usan aquí para describir el mismo patrón —un componente local consulta al servidor—, por lo que eran alternativas equivalentes en la pregunta original. Se fusionan en una opción y se explicita el comportamiento que define la arquitectura. Microsoft documenta este patrón con Software Updates Client Agent y Windows Update Agent conectándose a WSUS. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1; El bloque 27 incluye gestión y administración de sistemas operativos; la arquitectura cliente/agente de actualización se contrasta de forma independiente con documentación Microsoft sobre Windows Update Agent y WSUS. Correspondencia con el programa oficial: A1-61/A2-IV-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-61"
+          ],
+          "A2": [
+            "A2-IV-1"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1; El bloque 27 incluye gestión y administración de sistemas operativos; la arquitectura cliente/agente de actualización se contrasta de forma independiente con documentación Microsoft sobre Windows Update Agent y WSUS. Correspondencia con el programa oficial: A1-61/A2-IV-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1; El bloque 27 incluye gestión y administración de sistemas operativos; la arquitectura cliente/agente de actualización se contrasta de forma independiente con documentación Microsoft sobre Windows Update Agent y WSUS. Correspondencia con el programa oficial: A1-61/A2-IV-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas."
+        },
+        "etiquetas": [
+          "gestión de actualizaciones",
+          "Windows Update Agent",
+          "WSUS",
+          "cliente/agente"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/sccm/sum/understand/software-updates-introduction",
+              "referencia": "Microsoft Learn, Introduction to software updates: el Software Updates Client Agent inicia exploraciones programadas y el Windows Update Agent (WUA) del cliente contacta con WSUS para obtener metadatos; el cliente gestiona la detección y descarga según la directiva."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-server-update-services/plan/plan-your-wsus-deployment",
+              "referencia": "Microsoft Learn, Plan Your WSUS Deployment: Automatic Updates sondea periódicamente el servidor WSUS configurado y descarga las actualizaciones aprobadas según su política."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 61: fundamentos, administración, instalación y gestión de sistemas operativos Microsoft."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV-1: administración del sistema operativo y software de base."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1; cotejo curricular. El bloque 27 incluye gestión y administración de sistemas operativos; la arquitectura cliente/agente de actualización se contrasta de forma independiente con documentación Microsoft sobre Windows Update Agent y WSUS."
+            }
+          ],
+          "observaciones": "Corregida A. «Basado en cliente» y «basado en agente» se usan aquí para describir el mismo patrón —un componente local consulta al servidor—, por lo que eran alternativas equivalentes en la pregunta original. Se fusionan en una opción y se explicita el comportamiento que define la arquitectura. Microsoft documenta este patrón con Software Updates Client Agent y Windows Update Agent conectándose a WSUS. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 «Sistemas operativos», versión 2026.1; El bloque 27 incluye gestión y administración de sistemas operativos; la arquitectura cliente/agente de actualización se contrasta de forma independiente con documentación Microsoft sobre Windows Update Agent y WSUS. Correspondencia con el programa oficial: A1-61/A2-IV-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas."
+        }
+      }
+    },
+    {
+      "id": 7052,
+      "original": {
+        "id": 7052,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Mediante qué protocolos podemos conectar de forma inalámbrica una impresora a un pc?",
+        "opciones": [
+          "Bluetooth",
+          "Wifi Direct",
+          "Ambos",
+          "Ninguno de los anteriores"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7052,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué tecnologías pueden permitir imprimir desde un PC a una impresora sin conexión cableada, si ambos equipos y el modelo de impresora admiten el modo de impresión correspondiente?",
+        "opciones": [
+          "Bluetooth, cuando la impresora implementa un perfil de impresión compatible; el emparejamiento Bluetooth por sí solo no garantiza que permita imprimir.",
+          "Wi-Fi Direct, en una impresora compatible que ofrece conexión directa al equipo.",
+          "Ambas: Bluetooth con el perfil de impresión compatible o Wi-Fi Direct, si los equipos implementan esos modos.",
+          "Ninguna; para imprimir siempre es obligatorio un cable USB."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C. La respuesta «ambos» es válida sólo si la impresora y el PC soportan el método de impresión. Se explicitó que Bluetooth LE puede servir únicamente para configuración y que imprimir por Bluetooth requiere el perfil correspondiente; Wi-Fi Direct permite conexión directa en modelos compatibles. Así se evita generalizar que cualquier impresora con radio Bluetooth admite trabajos de impresión. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 encuadra componentes, periféricos e interfaces de equipos personales; los requisitos de impresión Bluetooth y Wi-Fi Direct se verifican con documentación técnica de Microsoft y HP. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-54"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 encuadra componentes, periféricos e interfaces de equipos personales; los requisitos de impresión Bluetooth y Wi-Fi Direct se verifican con documentación técnica de Microsoft y HP. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 encuadra componentes, periféricos e interfaces de equipos personales; los requisitos de impresión Bluetooth y Wi-Fi Direct se verifican con documentación técnica de Microsoft y HP. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas."
+        },
+        "etiquetas": [
+          "impresión inalámbrica",
+          "Bluetooth",
+          "Wi-Fi Direct",
+          "impresoras"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/print/bluetooth-printing",
+              "referencia": "Microsoft Learn, Bluetooth Printing: una impresora que admite impresión Bluetooth debe implementar el perfil de impresión requerido; Windows contempla Bluetooth como bus de impresión, pero el simple emparejamiento no basta."
+            },
+            {
+              "url": "https://support.hp.com/gb-en/document/ish_6044267-2906805-16",
+              "referencia": "HP Support, Set up HP Wi-Fi Direct printing: muestra la conexión directa de un equipo Windows a una impresora compatible con Wi-Fi Direct y el proceso de impresión."
+            },
+            {
+              "url": "https://www.hp.com/us-en/tech-takes/printers/glossary/printer-connectivity.html",
+              "referencia": "HP, Printer Connectivity: Wi-Fi Direct conecta directamente un equipo a una impresora compatible; algunas impresoras usan Bluetooth LE sólo para facilitar la configuración, no para transferir trabajos de impresión."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 54: dispositivos personales de PC, conectividad y periféricos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-1: tecnologías y componentes de ordenadores y dispositivos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; cotejo curricular. El bloque 26 encuadra componentes, periféricos e interfaces de equipos personales; los requisitos de impresión Bluetooth y Wi-Fi Direct se verifican con documentación técnica de Microsoft y HP."
+            }
+          ],
+          "observaciones": "Corregida C. La respuesta «ambos» es válida sólo si la impresora y el PC soportan el método de impresión. Se explicitó que Bluetooth LE puede servir únicamente para configuración y que imprimir por Bluetooth requiere el perfil correspondiente; Wi-Fi Direct permite conexión directa en modelos compatibles. Así se evita generalizar que cualquier impresora con radio Bluetooth admite trabajos de impresión. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 encuadra componentes, periféricos e interfaces de equipos personales; los requisitos de impresión Bluetooth y Wi-Fi Direct se verifican con documentación técnica de Microsoft y HP. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas."
+        }
+      }
+    },
+    {
+      "id": 7053,
+      "original": {
+        "id": 7053,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el ámbito de los conectores y cables USB, la extensión de USB 2.0 que posibilita a un dispositivo móvil actuar como host o anfitrión para otros dispositivos, se conoce como:",
+        "opciones": [
+          "USB ONT (On-New-Transmission).",
+          "USB OTG (On-The-Go).",
+          "USB OTG (Out-The-Ground).",
+          "USB Bluetooth."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7053,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el ámbito de los conectores y cables USB, la extensión de USB 2.0 que posibilita a un dispositivo móvil actuar como host o anfitrión para otros dispositivos, se conoce como:",
+        "opciones": [
+          "USB ONT (On-New-Transmission).",
+          "USB OTG (On-The-Go).",
+          "USB OTG (Out-The-Ground).",
+          "USB Bluetooth."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Vigente B. USB OTG significa On-The-Go. El suplemento al estándar USB amplía el uso de dispositivos portátiles como anfitriones USB para determinados periféricos; la clave B es correcta y se mantiene. La capacidad efectiva depende del dispositivo, cableado y roles soportados. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 aporta cobertura curricular de periféricos y conectividad de equipos. La definición precisa de USB On-The-Go se comprueba con el suplemento de USB-IF. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-54"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 aporta cobertura curricular de periféricos y conectividad de equipos. La definición precisa de USB On-The-Go se comprueba con el suplemento de USB-IF. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 aporta cobertura curricular de periféricos y conectividad de equipos. La definición precisa de USB On-The-Go se comprueba con el suplemento de USB-IF. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas."
+        },
+        "etiquetas": [
+          "USB OTG",
+          "USB On-The-Go",
+          "host USB",
+          "dispositivos móviles"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.usb.org/usb-on-the-go",
+              "referencia": "USB-IF, USB On-The-Go and Embedded Host Supplement: permite que dispositivos portátiles actúen como host USB para comunicarse con determinados periféricos, además de contemplar conexiones directas entre dispositivos OTG."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 54: dispositivos personales y conectividad."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-1: tecnologías de ordenadores y dispositivos móviles."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; cotejo curricular. El bloque 26 aporta cobertura curricular de periféricos y conectividad de equipos. La definición precisa de USB On-The-Go se comprueba con el suplemento de USB-IF."
+            }
+          ],
+          "observaciones": "Vigente B. USB OTG significa On-The-Go. El suplemento al estándar USB amplía el uso de dispositivos portátiles como anfitriones USB para determinados periféricos; la clave B es correcta y se mantiene. La capacidad efectiva depende del dispositivo, cableado y roles soportados. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 aporta cobertura curricular de periféricos y conectividad de equipos. La definición precisa de USB On-The-Go se comprueba con el suplemento de USB-IF. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas."
+        }
+      }
+    },
+    {
+      "id": 7054,
+      "original": {
+        "id": 7054,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el subsistema de almacenamiento de un ordenador, se define punto de memoria como:",
+        "opciones": [
+          "El elemento que almacena un bit",
+          "El elemento que almacena una palabra",
+          "El elemento que almacena un byte",
+          "El elemento que almacena una unidad de datos lógicos"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7054,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una celda elemental de memoria DRAM, ¿qué cantidad de información binaria se almacena?",
+        "opciones": [
+          "Un bit.",
+          "Una palabra completa en todos los diseños.",
+          "Un byte en todos los diseños.",
+          "Una unidad de datos lógica de tamaño variable."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. «Punto de memoria» no es una denominación suficientemente precisa y la respuesta depende de qué nivel de organización se pregunte. Se sustituyó por «celda elemental» y se acotó a una celda binaria SRAM/DRAM: almacena un bit; una palabra agrupa varias posiciones. No se extrapola esta afirmación a toda memoria Flash, cuyas celdas multinivel pueden representar varios bits. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 aporta el contexto curricular de memorias y componentes de equipos. La definición de una celda DRAM como almacenamiento de un bit se confirma específicamente con la diapositiva 41 del material técnico de Micron. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-54"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 aporta el contexto curricular de memorias y componentes de equipos. La definición de una celda DRAM como almacenamiento de un bit se confirma específicamente con la diapositiva 41 del material técnico de Micron. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 aporta el contexto curricular de memorias y componentes de equipos. La definición de una celda DRAM como almacenamiento de un bit se confirma específicamente con la diapositiva 41 del material técnico de Micron. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas."
+        },
+        "etiquetas": [
+          "memoria",
+          "celda de memoria",
+          "bit",
+          "palabra"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.micron.com/content/dam/micron/educatorhub/intro-to-memory/MicronIntroduction-to-Memory-Presentation.pdf",
+              "referencia": "Micron, Introduction to Memory, diapositiva 41, Basic DRAM Memory Cell: indica expresamente que una celda DRAM almacena un bit (0 o 1) y está formada por un transistor y un condensador."
+            },
+            {
+              "url": "https://www.micron.com/content/dam/micron/educatorhub/intro-to-memory/micron-intro-to-memory-presentation.pdf",
+              "referencia": "Micron, Introduction to Memory: explica que la memoria se organiza en arrays de celdas y distingue bits almacenados, palabras y anchura de datos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 54: componentes y dispositivos de equipos personales."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-1: componentes y funcionalidades de ordenadores."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; cotejo curricular. El bloque 26 aporta el contexto curricular de memorias y componentes de equipos. La definición de una celda DRAM como almacenamiento de un bit se confirma específicamente con la diapositiva 41 del material técnico de Micron."
+            }
+          ],
+          "observaciones": "Corregida A. «Punto de memoria» no es una denominación suficientemente precisa y la respuesta depende del nivel de organización. Se sustituyó por una pregunta concreta sobre una celda DRAM: almacena un bit (0 o 1); la diapositiva 41 de Micron muestra la celda elemental de un transistor y un condensador. La pregunta no generaliza a SRAM o a celdas Flash multinivel. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 aporta el contexto curricular de memorias y componentes de equipos. La definición de una celda DRAM como almacenamiento de un bit se confirma específicamente con la diapositiva 41 del material técnico de Micron. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas."
+        }
+      }
+    },
+    {
+      "id": 7055,
+      "original": {
+        "id": 7055,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "ISA, PCI, AGP, IDE, PCMCIA…, son:",
+        "opciones": [
+          "buses internos",
+          "buses externos",
+          "organismos de estandarización",
+          "estándares de almacenamiento"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7055,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "ISA, PCI, AGP, IDE/ATA y PCMCIA son ejemplos de:",
+        "opciones": [
+          "Buses o interfaces de interconexión de componentes, almacenamiento y tarjetas de expansión en equipos PC.",
+          "Protocolos de aplicación para acceder a servicios de Internet.",
+          "Organismos de normalización que publican estándares de hardware.",
+          "Sistemas de archivos que especifican cómo se almacenan directorios y ficheros."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. «Buses internos» era una etiqueta demasiado amplia: IDE/ATA es una interfaz de almacenamiento, PCMCIA/PC Card una interfaz/estándar de tarjetas, y ISA/PCI/AGP son buses o interfaces de expansión con distinto alcance. Se reformuló la pregunta para preguntar por su categoría común precisa: interfaces de interconexión de componentes, almacenamiento o tarjetas de expansión de PC, no por una supuesta equivalencia de diseño. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 cubre los componentes e interfaces de ordenador del temario. Se distingue la categoría común amplia de interconexión de los diferentes alcances de ISA/PCI/AGP, ATA y PCMCIA usando documentación de PCI-SIG, T13, Intel y Texas Instruments. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-54"
+          ],
+          "A2": [
+            "A2-II-1"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 cubre los componentes e interfaces de ordenador del temario. Se distingue la categoría común amplia de interconexión de los diferentes alcances de ISA/PCI/AGP, ATA y PCMCIA usando documentación de PCI-SIG, T13, Intel y Texas Instruments. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 cubre los componentes e interfaces de ordenador del temario. Se distingue la categoría común amplia de interconexión de los diferentes alcances de ISA/PCI/AGP, ATA y PCMCIA usando documentación de PCI-SIG, T13, Intel y Texas Instruments. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas."
+        },
+        "etiquetas": [
+          "ISA",
+          "PCI",
+          "AGP",
+          "IDE/ATA",
+          "PCMCIA",
+          "interfaces de PC"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://pcisig.com/specifications",
+              "referencia": "PCI-SIG, Specifications: el PCI Local Bus Specification define protocolo y características eléctricas/mecánicas de una interfaz de bus para interconectar componentes de PC."
+            },
+            {
+              "url": "https://www.t13.org/node/1",
+              "referencia": "INCITS T13, AT Attachment Technical Committee: responsable de estándares de interfaz ATA utilizados como interfaz de almacenamiento en equipos personales y móviles."
+            },
+            {
+              "url": "https://www.intel.com/content/dam/doc/datasheet/875p-chipset-datasheet.pdf",
+              "referencia": "Intel 875P Chipset Datasheet, §5.3: identifica AGP como interfaz gráfica de alta velocidad y remite a la especificación AGP."
+            },
+            {
+              "url": "https://www.ti.com/sc/docs/products/msp/intrface/pci/tech.htm",
+              "referencia": "Texas Instruments, PCI CardBus Controllers and PCI Bridges: describe PCMCIA/PC Card como estándar de tarjetas para expansión de ordenadores portátiles."
+            },
+            {
+              "url": "https://people.osmocom.org/laforge/tmp/Intel_ISA_Spec2.01_Sep89.pdf",
+              "referencia": "Intel ISA Bus Specification and Application Notes, rev. 2.01: define la interfaz paralela ISA derivada del bus de E/S del PC/AT."
+            },
+            {
+              "url": "https://pub.deadnet.se/Books_and_manuals_on_various_stuff/Science/Electronics/Dandamudi%20-%20Fundamentals%20of%20Computer%20Organization%20and%20Design%20%28Springer%2C%202005%29.pdf",
+              "referencia": "S. Dandamudi, Fundamentals of Computer Organization and Design, capítulo 5: clasifica ISA, PCI, AGP y PCMCIA entre ejemplos de buses de sistema; IDE corresponde específicamente a la interfaz de almacenamiento ATA."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 54: componentes y conectividad de equipos personales."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-1: componentes, funcionalidades y capacidades de ordenadores."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; cotejo curricular. El bloque 26 cubre los componentes e interfaces de ordenador del temario. Se distingue la categoría común amplia de interconexión de los diferentes alcances de ISA/PCI/AGP, ATA y PCMCIA usando documentación de PCI-SIG, T13, Intel y Texas Instruments."
+            }
+          ],
+          "observaciones": "Corregida A. «Buses internos» era una etiqueta demasiado amplia: IDE/ATA es una interfaz de almacenamiento, PCMCIA/PC Card una interfaz/estándar de tarjetas, y ISA/PCI/AGP son buses o interfaces de expansión con distinto alcance. Se reformuló la pregunta para preguntar por su categoría común precisa: interfaces de interconexión de componentes, almacenamiento o tarjetas de expansión de PC, no por una supuesta equivalencia de diseño. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 «Hardware, servidores, CPD, almacenamiento y virtualización», versión 2026.1; El bloque 26 cubre los componentes e interfaces de ordenador del temario. Se distingue la categoría común amplia de interconexión de los diferentes alcances de ISA/PCI/AGP, ATA y PCMCIA usando documentación de PCI-SIG, T13, Intel y Texas Instruments. Correspondencia con el programa oficial: A1-54/A2-II-1. El material académico se utiliza como cotejo curricular; la comprobación factual se apoya en las fuentes técnicas citadas."
+        }
+      }
+    }
+  ]
+}

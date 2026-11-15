@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankFile=path.join(root,'preguntas_preparatic.json');
+const logFile=path.join(__dirname,'cambios-lote-1346.json');
+const bank=JSON.parse(fs.readFileSync(bankFile,'utf8')),log=JSON.parse(fs.readFileSync(logFile,'utf8'));
+const q=bank.preguntas.find(x=>x.id===7054),entry=log.cambios.find(x=>x.id===7054);
+assert.ok(q&&entry);assert.deepEqual(q,entry.actualizada);
+const url='https://www.micron.com/content/dam/micron/educatorhub/intro-to-memory/MicronIntroduction-to-Memory-Presentation.pdf';
+q.texto='En una celda elemental de memoria DRAM, ¿qué cantidad de información binaria se almacena?';
+q.revision.fuentes=q.revision.fuentes.map(f=>f.url.includes('renesas.com')?{url,referencia:'Micron, Introduction to Memory, diapositiva 41, Basic DRAM Memory Cell: indica expresamente que una celda DRAM almacena un bit (0 o 1) y está formada por un transistor y un condensador.'}:f.url===url?{url,referencia:'Micron, Introduction to Memory, diapositiva 41, Basic DRAM Memory Cell: indica expresamente que una celda DRAM almacena un bit (0 o 1) y está formada por un transistor y un condensador.'}:f);
+q.revision.observaciones=q.revision.observaciones.replace(/«Punto de memoria»[\s\S]*?No se extrapola esta afirmación a toda memoria Flash, cuyas celdas multinivel pueden representar varios bits\./,'«Punto de memoria» no es una denominación suficientemente precisa y la respuesta depende del nivel de organización. Se sustituyó por una pregunta concreta sobre una celda DRAM: almacena un bit (0 o 1); la diapositiva 41 de Micron muestra la celda elemental de un transistor y un condensador. La pregunta no generaliza a SRAM o a celdas Flash multinivel.');
+q.revision.estado='corregida';entry.actualizada=structuredClone(q);
+const raw=fs.readFileSync(bankFile,'utf8');
+const output=raw.replace(/^    \{[\s\S]*?^    \}/gm,block=>{const old=JSON.parse(block);return old.id===7054?JSON.stringify(q,null,2).split('\n').map(l=>'    '+l).join('\n'):block});
+assert.deepEqual(JSON.parse(output),bank);fs.writeFileSync(bankFile,output);fs.writeFileSync(logFile,JSON.stringify(log,null,2)+'\n');
+console.log('Ajustada 7054: afirmación limitada a DRAM y respaldada por Micron, diapositiva 41.');
