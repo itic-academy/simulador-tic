@@ -1,0 +1,380 @@
+{
+  "fecha": "2026-11-15",
+  "alcance": "IDs 7086–7090; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7086,
+      "original": {
+        "id": 7086,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes protocolos es el encargado de generar mensajes de error en el caso de producirse fallos en el transporte de paquetes IP entre los diferentes gateways que comunican los host origen y destino?",
+        "opciones": [
+          "ICMP",
+          "RARP",
+          "ARP",
+          "DNS"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7086,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué protocolo IP proporciona mensajes de control y error como «Destination Unreachable» o «Time Exceeded» cuando un datagrama no puede alcanzar su destino?",
+        "opciones": [
+          "ICMP",
+          "RARP",
+          "ARP",
+          "DNS"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. ICMP no “genera todos los fallos de transporte”; comunica errores y condiciones de control de la capa IP, incluidos destino inalcanzable y tiempo excedido. El texto se ajustó para distinguirlo de los protocolos de transporte TCP/UDP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 desarrolla ICMP, los mensajes de error y el funcionamiento IP (sección 3.5). Correspondencia con el programa oficial: A1-115/A2-II-8.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 desarrolla ICMP, los mensajes de error y el funcionamiento IP (sección 3.5). Correspondencia con el programa oficial: A1-115/A2-II-8.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 desarrolla ICMP, los mensajes de error y el funcionamiento IP (sección 3.5). Correspondencia con el programa oficial: A1-115/A2-II-8."
+        },
+        "etiquetas": [
+          "ICMP",
+          "mensajes de error",
+          "Destination Unreachable",
+          "Time Exceeded"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc792.html",
+              "referencia": "RFC 792, Internet Control Message Protocol: define Destination Unreachable y Time Exceeded, emitidos cuando un datagrama no puede entregarse o se descarta por expiración del TTL."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+              "referencia": "RFC 1122 §3.2.2: requisitos de ICMP para hosts IPv4; los mensajes de error son de control y no garantizan la entrega del datagrama."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: redes IP, encaminamiento y funcionalidades IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: modelo TCP/IP, protocolos y encaminamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 desarrolla ICMP, los mensajes de error y el funcionamiento IP (sección 3.5). Cotejo curricular, no fuente técnica primaria."
+            }
+          ],
+          "observaciones": "Corregida A. ICMP no “genera todos los fallos de transporte”; comunica errores y condiciones de control de la capa IP, incluidos destino inalcanzable y tiempo excedido. El texto se ajustó para distinguirlo de los protocolos de transporte TCP/UDP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 desarrolla ICMP, los mensajes de error y el funcionamiento IP (sección 3.5). Correspondencia con el programa oficial: A1-115/A2-II-8."
+        }
+      }
+    },
+    {
+      "id": 7087,
+      "original": {
+        "id": 7087,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El protocolo ARP sirve para encontrar direcciones:",
+        "opciones": [
+          "NetBIOS.",
+          "IP.",
+          "DNS.",
+          "Ethernet (MAC)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7087,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una red Ethernet con IPv4, ¿qué dirección resuelve ARP a partir de una dirección IPv4 local?",
+        "opciones": [
+          "La dirección NetBIOS.",
+          "La dirección de un servidor DNS.",
+          "La dirección MAC/Ethernet correspondiente.",
+          "La dirección de red IP del router remoto."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C. Se especificó IPv4 sobre Ethernet y una dirección local: ARP obtiene la dirección de hardware Ethernet asociada a una dirección de protocolo, no “encuentra direcciones Ethernet” en cualquier contexto. IPv6 utiliza Neighbor Discovery en lugar de ARP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 desarrolla ARP y resolución de direcciones IPv4 (sección 3.6). Correspondencia con el programa oficial: A1-115/A2-II-8.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 desarrolla ARP y resolución de direcciones IPv4 (sección 3.6). Correspondencia con el programa oficial: A1-115/A2-II-8.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 desarrolla ARP y resolución de direcciones IPv4 (sección 3.6). Correspondencia con el programa oficial: A1-115/A2-II-8."
+        },
+        "etiquetas": [
+          "ARP",
+          "IPv4",
+          "dirección MAC",
+          "resolución de direcciones"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc826.html",
+              "referencia": "RFC 826, An Ethernet Address Resolution Protocol: describe la conversión de direcciones de protocolo (por ejemplo IPv4) en direcciones Ethernet de 48 bits para transmitir en Ethernet."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+              "referencia": "RFC 4861: en IPv6 la resolución de direcciones de capa de enlace forma parte de Neighbor Discovery; no se usa ARP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: arquitectura IP y funcionalidades IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: direccionamiento y protocolos TCP/IP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 desarrolla ARP y resolución de direcciones IPv4 (sección 3.6). Cotejo curricular, no fuente técnica primaria."
+            }
+          ],
+          "observaciones": "Corregida C. Se especificó IPv4 sobre Ethernet y una dirección local: ARP obtiene la dirección de hardware Ethernet asociada a una dirección de protocolo, no “encuentra direcciones Ethernet” en cualquier contexto. IPv6 utiliza Neighbor Discovery en lugar de ARP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 desarrolla ARP y resolución de direcciones IPv4 (sección 3.6). Correspondencia con el programa oficial: A1-115/A2-II-8."
+        }
+      }
+    },
+    {
+      "id": 7088,
+      "original": {
+        "id": 7088,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la afirmación correcta. La cabecera de IPv6 es:",
+        "opciones": [
+          "Menor que la de IPv4.",
+          "Mayor que la de IPv4.",
+          "Igual que la de IPv4.",
+          "No hay cabecera propiamente dicha."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7088,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Compare únicamente las cabeceras base: ¿cuál es la longitud de la cabecera fija IPv6 frente a la longitud mínima de una cabecera IPv4?",
+        "opciones": [
+          "IPv6: 40 octetos; IPv4 mínima: 20 octetos.",
+          "IPv6 es menor que toda cabecera IPv4.",
+          "Ambas tienen siempre exactamente la misma longitud.",
+          "IPv6 no tiene cabecera base."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. El original decía simplemente “la cabecera IPv6 es mayor que la de IPv4”, afirmación demasiado amplia porque una cabecera IPv4 puede crecer con opciones y IPv6 tiene cabeceras de extensión aparte. Se comparan ahora la cabecera base fija IPv6 (40 octetos) y la IPv4 mínima (20 octetos). Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre IPv6, cabeceras y transición IPv4/IPv6 (tema A1-115). Correspondencia con el programa oficial: A1-115/A2-II-8.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre IPv6, cabeceras y transición IPv4/IPv6 (tema A1-115). Correspondencia con el programa oficial: A1-115/A2-II-8.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre IPv6, cabeceras y transición IPv4/IPv6 (tema A1-115). Correspondencia con el programa oficial: A1-115/A2-II-8."
+        },
+        "etiquetas": [
+          "IPv6",
+          "cabecera base",
+          "40 octetos",
+          "IPv4",
+          "opciones"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+              "referencia": "RFC 8200 §3: la cabecera IPv6 base tiene longitud fija de 40 octetos; las cabeceras de extensión se encadenan después y no cambian el tamaño de la cabecera base."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+              "referencia": "RFC 791 §3.1: IHL especifica la longitud de cabecera IPv4 en palabras de 32 bits; el mínimo es 5, es decir, 20 octetos, y puede crecer si hay opciones."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: transición IPv4/IPv6 y funcionalidades IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos IP y arquitectura TCP/IP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre IPv6, cabeceras y transición IPv4/IPv6 (tema A1-115). Cotejo curricular, no fuente técnica primaria."
+            }
+          ],
+          "observaciones": "Corregida A. El original decía simplemente “la cabecera IPv6 es mayor que la de IPv4”, afirmación demasiado amplia porque una cabecera IPv4 puede crecer con opciones y IPv6 tiene cabeceras de extensión aparte. Se comparan ahora la cabecera base fija IPv6 (40 octetos) y la IPv4 mínima (20 octetos). Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre IPv6, cabeceras y transición IPv4/IPv6 (tema A1-115). Correspondencia con el programa oficial: A1-115/A2-II-8."
+        }
+      }
+    },
+    {
+      "id": 7089,
+      "original": {
+        "id": 7089,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale qué puerto estándar está asociado al protocolo HTTPS (HyperText Transfer Protocol):",
+        "opciones": [
+          "161",
+          "115",
+          "443",
+          "22"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7089,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué número de puerto registrado está asociado al servicio HTTPS?",
+        "opciones": [
+          "161",
+          "115",
+          "443",
+          "22"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C (se conserva la clave). IANA registra HTTPS/443 para TCP y UDP; HTTP/3 usa QUIC sobre UDP. El original se ajustó de “puerto estándar” a “número de puerto registrado” para no implicar que HTTPS sólo se transporte por TCP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre servicios de transporte, puertos, HTTPS y HTTP/3/QUIC. Correspondencia con el programa oficial: A1-109/A2-II-8.",
+        "clasificacion": {
+          "A1": [
+            "A1-109"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre servicios de transporte, puertos, HTTPS y HTTP/3/QUIC. Correspondencia con el programa oficial: A1-109/A2-II-8.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre servicios de transporte, puertos, HTTPS y HTTP/3/QUIC. Correspondencia con el programa oficial: A1-109/A2-II-8."
+        },
+        "etiquetas": [
+          "HTTPS",
+          "puerto 443",
+          "IANA",
+          "HTTP/3",
+          "QUIC"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=https",
+              "referencia": "IANA Service Name and Transport Protocol Port Number Registry: registra HTTPS en el puerto 443 tanto sobre TCP como sobre UDP."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+              "referencia": "RFC 9114, HTTP/3: HTTP/3 se transporta sobre QUIC, que utiliza UDP; por ello 443 no debe presentarse únicamente como TCP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 109: Internet y servicios básicos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos, servicios y puertos TCP/IP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre servicios de transporte, puertos, HTTPS y HTTP/3/QUIC. Cotejo curricular, no fuente técnica primaria."
+            }
+          ],
+          "observaciones": "Corregida C (se conserva la clave). IANA registra HTTPS/443 para TCP y UDP; HTTP/3 usa QUIC sobre UDP. El original se ajustó de “puerto estándar” a “número de puerto registrado” para no implicar que HTTPS sólo se transporte por TCP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre servicios de transporte, puertos, HTTPS y HTTP/3/QUIC. Correspondencia con el programa oficial: A1-109/A2-II-8."
+        }
+      }
+    },
+    {
+      "id": 7090,
+      "original": {
+        "id": 7090,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En IPv6, ¿que sustituye a ARP?",
+        "opciones": [
+          "ARP sigue existiendo en IPv6",
+          "SSAC",
+          "NDP",
+          "AH"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7090,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En IPv6, ¿qué mecanismo realiza la resolución de direcciones de capa de enlace que en IPv4 suele realizar ARP?",
+        "opciones": [
+          "ARP continúa utilizándose sin cambios en IPv6.",
+          "SSAC.",
+          "Neighbor Discovery (ND/NDP), mediante ICMPv6.",
+          "Authentication Header (AH)."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C. Se sustituyó la pregunta coloquial “qué sustituye a ARP” por la función concreta: Neighbor Discovery de IPv6 incluye resolución de direcciones de enlace mediante mensajes ICMPv6; no es un protocolo ARP renombrado. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre NDP/ICMPv6 y funcionalidades específicas IPv6. Correspondencia con el programa oficial: A1-115/A2-II-8.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre NDP/ICMPv6 y funcionalidades específicas IPv6. Correspondencia con el programa oficial: A1-115/A2-II-8.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre NDP/ICMPv6 y funcionalidades específicas IPv6. Correspondencia con el programa oficial: A1-115/A2-II-8."
+        },
+        "etiquetas": [
+          "IPv6",
+          "Neighbor Discovery",
+          "NDP",
+          "ICMPv6",
+          "ARP"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+              "referencia": "RFC 4861, Neighbor Discovery for IP version 6: ND realiza funciones que en IPv4 se resuelven con ARP, ICMP Router Discovery y Redirect, incluyendo la resolución de direcciones de enlace."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: funcionalidades específicas de IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos y funcionalidades IPv6/TCP-IP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre NDP/ICMPv6 y funcionalidades específicas IPv6. Cotejo curricular, no fuente técnica primaria."
+            }
+          ],
+          "observaciones": "Corregida C. Se sustituyó la pregunta coloquial “qué sustituye a ARP” por la función concreta: Neighbor Discovery de IPv6 incluye resolución de direcciones de enlace mediante mensajes ICMPv6; no es un protocolo ARP renombrado. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque 43 cubre NDP/ICMPv6 y funcionalidades específicas IPv6. Correspondencia con el programa oficial: A1-115/A2-II-8."
+        }
+      }
+    }
+  ]
+}
