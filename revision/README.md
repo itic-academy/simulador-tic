@@ -18,6 +18,8 @@ Cotejo curricular ITIC Academy/Drive: [bloque 1, Constitución, Organización de
 
 Ejecutados `node revision/revisar-lote-1388.cjs`, `node revision/academia-lote-1388.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros; 7.260 revisadas individualmente (1.393 vigentes, 5.230 corregidas y 515 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.863 aún sin revisión individual; 0 errores estructurales. El inventario no se interpreta como revisión de contenido.
 
+**Despliegue del lote 1388 verificado:** commit de datos `6713562` publicado en `main`; [GitHub Actions, ejecución 43744381616](https://github.com/itic-academy/simulador-tic/actions/runs/43744381616) terminó con **Success**. GitHub Pages devolvió HTTP 200 para portada, inventario, registro 1388, banco y README. El registro público contiene exactamente los IDs 7261–7265; las claves/estados del banco servido son `0/vigente`, `2/vigente`, `2/vigente`, `1/vigente` y `2/vigente`. El inventario público refleja 12.123 preguntas, 7.260 revisadas individualmente y 4.863 aún sin revisar; el README publicado contiene el lote 1388 y su progreso.
+
 ## Lote 1387 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 7256–7260 sobre notificaciones electrónicas, las funciones inspectoras de la AEPD, organización de la AGE, infracciones de la LSSI y el umbral de regulación armonizada de obras.
