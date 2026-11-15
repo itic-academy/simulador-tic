@@ -18,6 +18,8 @@ Cotejo curricular ITIC Academy/Drive: [bloque 42 Redes, edición 2026](https://d
 
 Ejecutados `node revision/revisar-lote-1392.cjs`, `node revision/academia-lote-1392.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros válidos; 7.280 revisadas individualmente (1.395 vigentes, 5.244 corregidas y 519 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.843 sin revisión individual; 0 errores estructurales. El inventario automático no se cuenta como revisión de contenido.
 
+**Despliegue del lote 1392 verificado:** commit de datos `71632bf` en `main`; [GitHub Actions, ejecución 43748382932](https://github.com/itic-academy/simulador-tic/actions/runs/43748382932) terminó con **Success**. Con caché evitada, GitHub Pages respondió HTTP 200 para `revision/cambios-lote-1392.json`, `preguntas_preparatic.json`, `revision/inventario.json` y `revision/README.md`. Se cotejaron los IDs públicos del lote (7281–7285) con las respuestas y estados del banco servido; coinciden. El inventario público informa 12.123 registros, 7.280 revisadas individualmente, 7.158 verificadas y 4.843 aún sin revisión individual.
+
 ## Lote 1391 — 15 de noviembre de 2026
 
 Revisión individual de las preguntas 7276–7280. Se cotejaron las definiciones de la restricción triple de proyectos, los enfoques Contract Net y blackboard, la derogación del RD 806/2014, la operación Intersect de SIG y la incorporación del operador `??` en PHP 7.
