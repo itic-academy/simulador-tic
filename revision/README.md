@@ -18,6 +18,8 @@ Cotejo curricular ITIC Academy/Drive: [tema 122 Correo, Mensajería y Directorio
 
 Ejecutados `node revision/revisar-lote-1394.cjs`, `node revision/academia-lote-1394.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros válidos; 7.290 revisadas individualmente (1.397 vigentes, 5.247 corregidas y 524 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.833 sin revisión individual; 0 errores estructurales. El inventario automático no se cuenta como revisión de contenido.
 
+**Despliegue del lote 1394 verificado:** commit de datos `b3919b3` en `main`; [GitHub Actions, ejecución 43750140019](https://github.com/itic-academy/simulador-tic/actions/runs/43750140019) terminó con **Success**. Con caché evitada, GitHub Pages respondió HTTP 200 para `revision/cambios-lote-1394.json`, `preguntas_preparatic.json`, `revision/inventario.json` y `revision/README.md`. Se cotejaron los IDs públicos 7291–7295 con las respuestas y estados del banco servido; coinciden. El inventario público informa 12.123 registros, 7.290 revisadas individualmente, 7.168 verificadas y 4.833 aún sin revisión individual.
+
 ## Lote 1393 — 15 de noviembre de 2026
 
 Revisión individual de las preguntas 7286–7290 sobre adaptación ATM, IEEE 802.11ad, pantallas táctiles APR, gestión de incidentes ITIL y XrML/DRM.
