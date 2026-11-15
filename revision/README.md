@@ -1,4 +1,20 @@
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1374 (IDs 7191–7195). Acumulado: 7.190 preguntas examinadas individualmente; 7.068 verificadas (1.374 vigentes, 5.184 corregidas y 510 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.933 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1375 (IDs 7196–7200). Acumulado: 7.195 preguntas examinadas individualmente; 7.073 verificadas (1.379 vigentes, 5.184 corregidas y 510 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.928 sin revisar individualmente.
+
+## Lote 1375 — 15 de noviembre de 2026
+
+Revisadas individualmente las preguntas 7196–7200 sobre cese de magistrados del Tribunal Constitucional, competencias aéreas estatales, límites territoriales a la potestad tributaria autonómica, referéndum estatutario del art. 151 CE y estructura de la Administración General del Estado.
+
+- **7196 — Cese de magistrados del TC:** vigente A. El art. 23 LOTC reserva mayoría simple del Pleno a incapacidad judicial e incompatibilidad sobrevenida; otros supuestos de cese requieren tres cuartas partes, mientras que renuncia y expiración los decreta el Presidente.
+- **7197 — Espacio aéreo y transporte aéreo:** vigente A. El art. 149.1.20.ª CE atribuye su control, tránsito y transporte aéreo a la competencia exclusiva del Estado.
+- **7198 — Tributación autonómica extraterritorial:** vigente A. El art. 157.2 CE prohíbe en todo caso adoptar medidas tributarias sobre bienes situados fuera del territorio autonómico, además de las que obstaculicen la libre circulación.
+- **7199 — Procedimiento autonómico del art. 151:** vigente B. La no aprobación del proyecto por una o varias provincias no impide que las restantes constituyan la Comunidad Autónoma proyectada.
+- **7200 — Estructura de la AGE:** vigente C. El art. 55.2 de la Ley 40/2015 enumera Organización Central, Organización Territorial y AGE en el exterior; «organización sectorial» no es un cuarto componente.
+
+Fuentes primarias: [LO 2/1979 del Tribunal Constitucional, art. 23](https://www.boe.es/buscar/act.php?id=BOE-A-1979-23709&p=20240802&tn=1); [Constitución Española, texto consolidado vigente a 20-05-2026](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520&tn=1), arts. 149.1.20.ª, 151.2.5.ª y 157.2; [Ley 40/2015, art. 55](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566&p=20260929&tn=1), texto consolidado. Clasificación contrastada con [A1 GSI 2025, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 GSI 2025, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y `revision/temario-oficial.json`: 7196 A1-2/A2-I-2; 7197 A1-3/A2-I-1; 7198 A1-3/A2-I-1; 7199 A1-3/A2-I-1; 7200 A1-4/A2-I-8.
+
+Cotejo ITIC Academy en Drive: [bloque 01 Constitución, Organización del Estado y AGE, actualización 2026](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), con Constitución, Tribunal Constitucional, organización territorial autonómica y estructura central/territorial/exterior de la AGE. El material se coteja para confirmar cobertura temática; los artículos y mayorías se comprobaron en los textos oficiales consolidados del BOE.
+
+Inventario tras el lote: 12.123 preguntas; 7.195 examinadas individualmente; 7.073 verificadas (1.379 vigentes, 5.184 corregidas y 510 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.928 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1375.cjs`, `node revision/academia-lote-1375.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
 ## Lote 1374 — 15 de noviembre de 2026
 
