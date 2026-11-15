@@ -377343,21 +377343,66 @@
       "id": 7126,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué es la MTU en un paquete IP?",
+      "texto": "En IP, ¿qué expresa la MTU de un enlace?",
       "opciones": [
-        "El máximo uso de transmisión",
-        "La mayor unidad posible de datos que puede ser enviada a través de un medio físico",
-        "El tamaño del paquete IP",
-        "Solo se utiliza en IPv6"
+        "El máximo uso de transmisión.",
+        "El tamaño máximo del paquete IP que el enlace puede transportar en una sola pieza, medido en octetos.",
+        "El tamaño de cualquier paquete IP, que es fijo.",
+        "Un parámetro utilizado sólo en IPv6."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. La MTU de enlace limita el tamaño máximo de un paquete IP que puede llevarse por ese enlace; no es el tamaño fijo de todo paquete ni una función exclusiva de IPv6. Se añadió “en una sola pieza” para precisar el concepto. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.6 cubre MTU y planificación de paquetes en enlaces. Correspondencia oficial: A1-108/A2-IV-8. La fuente primaria conserva autoridad para definir el estándar.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.6 cubre MTU y planificación de paquetes en enlaces. Correspondencia oficial: A1-108/A2-IV-8. La fuente primaria conserva autoridad para definir el estándar.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.6 cubre MTU y planificación de paquetes en enlaces. Correspondencia oficial: A1-108/A2-IV-8. La fuente primaria conserva autoridad para definir el estándar."
+      },
+      "etiquetas": [
+        "MTU",
+        "MTU de enlace",
+        "paquete IP",
+        "fragmentación",
+        "capa de enlace"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+            "referencia": "RFC 8200 §2: link MTU es el tamaño máximo, en octetos, del paquete que puede transportarse por un enlace. RFC 4821 §2 define MTU como el mayor paquete IP, incluida cabecera y carga útil; se excluyen cabeceras de enlace."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4821.html",
+            "referencia": "RFC 4821 §2: distingue MTU de enlace IP de las cabeceras/tramas de la capa de enlace."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 108: medios y técnicas de transmisión."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV-8: redes locales y técnicas de transmisión."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.6 cubre MTU y planificación de paquetes en enlaces. Cotejo curricular."
+          }
+        ],
+        "observaciones": "Corregida B. La MTU de enlace limita el tamaño máximo de un paquete IP que puede llevarse por ese enlace; no es el tamaño fijo de todo paquete ni una función exclusiva de IPv6. Se añadió “en una sola pieza” para precisar el concepto. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado 8.6 cubre MTU y planificación de paquetes en enlaces. Correspondencia oficial: A1-108/A2-IV-8. La fuente primaria conserva autoridad para definir el estándar."
+      }
     },
     {
       "id": 7127,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale cuál es el puerto por defecto de SMTP:",
+      "texto": "¿Qué puerto TCP utiliza SMTP de transferencia entre servidores por defecto?",
       "opciones": [
         "21",
         "23",
@@ -377365,49 +377410,225 @@
         "80"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. Se especificó SMTP de transferencia entre servidores: el puerto TCP convencional es 25. El puerto de submission por clientes suele ser 587, de modo que “SMTP por defecto” sin el contexto de uso podía ser ambiguo. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material lista SMTP entre los servicios de correo y protocolos de aplicación; el puerto de transferencia se contrasta con RFC 5321. Correspondencia oficial: A1-122/A2-II-8. La fuente primaria conserva autoridad para definir el estándar.",
+      "clasificacion": {
+        "A1": [
+          "A1-122"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material lista SMTP entre los servicios de correo y protocolos de aplicación; el puerto de transferencia se contrasta con RFC 5321. Correspondencia oficial: A1-122/A2-II-8. La fuente primaria conserva autoridad para definir el estándar.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material lista SMTP entre los servicios de correo y protocolos de aplicación; el puerto de transferencia se contrasta con RFC 5321. Correspondencia oficial: A1-122/A2-II-8. La fuente primaria conserva autoridad para definir el estándar."
+      },
+      "etiquetas": [
+        "SMTP",
+        "TCP/25",
+        "correo electrónico",
+        "MTA",
+        "RFC 5321"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+            "referencia": "RFC 5321 §§4.1.1 y 4.5.4.2: SMTP de transferencia/relé escucha por TCP/25; submission de usuario usa normalmente 587, especificado por RFC 6409."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc6409.html",
+            "referencia": "RFC 6409: puerto 587 se reserva para el servicio de envío/submission de mensajes."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 122: correo electrónico y servicios de mensajería."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos y servicios TCP/IP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material lista SMTP entre los servicios de correo y protocolos de aplicación; el puerto de transferencia se contrasta con RFC 5321. Cotejo curricular."
+          }
+        ],
+        "observaciones": "Corregida C. Se especificó SMTP de transferencia entre servidores: el puerto TCP convencional es 25. El puerto de submission por clientes suele ser 587, de modo que “SMTP por defecto” sin el contexto de uso podía ser ambiguo. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material lista SMTP entre los servicios de correo y protocolos de aplicación; el puerto de transferencia se contrasta con RFC 5321. Correspondencia oficial: A1-122/A2-II-8. La fuente primaria conserva autoridad para definir el estándar."
+      }
     },
     {
       "id": 7128,
       "bloque": 0,
       "tema": 0,
-      "texto": "Las cabeceras de extensión:",
+      "texto": "¿Qué cabecera de extensión IPv6 permite indicar uno o más nodos intermedios que debe visitar un paquete?",
       "opciones": [
-        "Pertenecen al protocolo ipv4",
-        "Son todas obligatorias",
-        "Perminten definir la ruta que siga un paquete IPv6",
-        "Definen las opciones en una red Token Ring"
+        "Cabecera de IPv4.",
+        "Cabecera Fragment.",
+        "Cabecera Routing (encaminamiento).",
+        "Campo de opciones Token Ring."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. No todas las cabeceras de extensión definen una ruta; RFC 8200 asigna esta función específicamente a Routing Header. Se acotó el enunciado para no atribuirla a todas las cabeceras de extensión. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque de IPv6 estudia cabeceras de extensión y Routing Header. Correspondencia oficial: A1-115/A2-II-8. La fuente primaria conserva autoridad para definir el estándar.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque de IPv6 estudia cabeceras de extensión y Routing Header. Correspondencia oficial: A1-115/A2-II-8. La fuente primaria conserva autoridad para definir el estándar.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque de IPv6 estudia cabeceras de extensión y Routing Header. Correspondencia oficial: A1-115/A2-II-8. La fuente primaria conserva autoridad para definir el estándar."
+      },
+      "etiquetas": [
+        "IPv6",
+        "cabeceras de extensión",
+        "Routing Header",
+        "encaminamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+            "referencia": "RFC 8200 §§4 y 4.4: IPv6 admite cabeceras de extensión; Routing Header es una cabecera de extensión que permite a un origen listar uno o más nodos intermedios a visitar."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 115: funcionalidades específicas de IPv6."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos y encaminamiento TCP/IP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque de IPv6 estudia cabeceras de extensión y Routing Header. Cotejo curricular."
+          }
+        ],
+        "observaciones": "Corregida C. No todas las cabeceras de extensión definen una ruta; RFC 8200 asigna esta función específicamente a Routing Header. Se acotó el enunciado para no atribuirla a todas las cabeceras de extensión. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque de IPv6 estudia cabeceras de extensión y Routing Header. Correspondencia oficial: A1-115/A2-II-8. La fuente primaria conserva autoridad para definir el estándar."
+      }
     },
     {
       "id": 7129,
       "bloque": 0,
       "tema": 0,
-      "texto": "La RFC 1918 regula los rangos de direcciones reservadas para redes privadas, según dicho RFC ¿cuál de los siguientes rangos sería INCORRECTO considerarlo como red privada?",
+      "texto": "Según RFC 1918, ¿cuál de estos rangos no pertenece al espacio IPv4 privado reservado?",
       "opciones": [
-        "10.0.0.0 a 10.255.255.255",
-        "192.168.0.0 a 192.168.255.255",
-        "169.16.0.0 a 169.31.255.255",
-        "172.16.0.0 a 172.31.255.255"
+        "10.0.0.0–10.255.255.255 (10/8)",
+        "192.168.0.0–192.168.255.255 (192.168/16)",
+        "169.16.0.0–169.31.255.255 (169.16/12)",
+        "172.16.0.0–172.31.255.255 (172.16/12)"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. El rango 169.16.0.0/12 no figura entre los bloques RFC 1918. Se aclaró su notación CIDR y se distinguió del rango link-local 169.254.0.0/16 de RFC 3927. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El resumen de IPv4 incluye de forma explícita los bloques privados RFC 1918 y distingue 169.254/16 link-local. Correspondencia oficial: A1-115/A2-II-8. La fuente primaria conserva autoridad para definir el estándar.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El resumen de IPv4 incluye de forma explícita los bloques privados RFC 1918 y distingue 169.254/16 link-local. Correspondencia oficial: A1-115/A2-II-8. La fuente primaria conserva autoridad para definir el estándar.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El resumen de IPv4 incluye de forma explícita los bloques privados RFC 1918 y distingue 169.254/16 link-local. Correspondencia oficial: A1-115/A2-II-8. La fuente primaria conserva autoridad para definir el estándar."
+      },
+      "etiquetas": [
+        "IPv4",
+        "RFC 1918",
+        "redes privadas",
+        "172.16.0.0/12",
+        "169.16.0.0/12"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1918.html",
+            "referencia": "RFC 1918 §3 reserva 10/8, 172.16/12 (172.16.0.0–172.31.255.255) y 192.168/16 para internets privados; 169.16.0.0/12 no pertenece a esos bloques."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3927.html",
+            "referencia": "RFC 3927 §2: 169.254.0.0/16, no 169.16.0.0/12, es el bloque IPv4 link-local; no se debe confundir con espacio privado RFC 1918."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 115: redes IP y direccionamiento."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-8: direccionamiento TCP/IP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El resumen de IPv4 incluye de forma explícita los bloques privados RFC 1918 y distingue 169.254/16 link-local. Cotejo curricular."
+          }
+        ],
+        "observaciones": "Corregida C. El rango 169.16.0.0/12 no figura entre los bloques RFC 1918. Se aclaró su notación CIDR y se distinguió del rango link-local 169.254.0.0/16 de RFC 3927. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El resumen de IPv4 incluye de forma explícita los bloques privados RFC 1918 y distingue 169.254/16 link-local. Correspondencia oficial: A1-115/A2-II-8. La fuente primaria conserva autoridad para definir el estándar."
+      }
     },
     {
       "id": 7130,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes respuestas define el formato de la trama en Ethernet II?",
+      "texto": "¿Cuál es el orden de campos en una trama Ethernet II, incluyendo la sincronización previa y el control de errores?",
       "opciones": [
-        "CRC, longitud trama, dirección origen, dirección destino, datos",
-        "Preámbulo, tipo trama, dirección origen, dirección destino, datos y CRC",
-        "Preámbulo, dirección destino, dirección origen, tipo trama, datos y CRC",
-        "Preámbulo, dirección origen, dirección destino, longitud trama, datos y CRC"
+        "CRC/FCS, longitud, origen, destino y datos.",
+        "Preámbulo, EtherType, origen, destino, datos y CRC/FCS.",
+        "Preámbulo, SFD, destino, origen, EtherType, datos y FCS/CRC.",
+        "Preámbulo, origen, destino, longitud, datos y CRC/FCS."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. El orden es preámbulo, delimitador SFD, dirección destino, dirección origen, EtherType, datos y FCS. Se añadió SFD y se precisó EtherType; el original omitía el delimitador y confundía el orden de direcciones en distractores. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de encapsulación explica el EtherType, las direcciones Ethernet y que Ethernet añade cabecera y FCS; la forma de los campos se contrasta con IEEE 802.3/RFC 894. Correspondencia oficial: A1-111/A2-IV-8. La fuente primaria conserva autoridad para definir el estándar.",
+      "clasificacion": {
+        "A1": [
+          "A1-111"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de encapsulación explica el EtherType, las direcciones Ethernet y que Ethernet añade cabecera y FCS; la forma de los campos se contrasta con IEEE 802.3/RFC 894. Correspondencia oficial: A1-111/A2-IV-8. La fuente primaria conserva autoridad para definir el estándar.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de encapsulación explica el EtherType, las direcciones Ethernet y que Ethernet añade cabecera y FCS; la forma de los campos se contrasta con IEEE 802.3/RFC 894. Correspondencia oficial: A1-111/A2-IV-8. La fuente primaria conserva autoridad para definir el estándar."
+      },
+      "etiquetas": [
+        "Ethernet II",
+        "IEEE 802.3",
+        "EtherType",
+        "direcciones MAC",
+        "FCS",
+        "SFD"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.ieee802.org/minutes/2011-March/802%20workshop/IEEE_802d3_Law_V1p1.pdf",
+            "referencia": "IEEE 802.3 frame format: Preamble, SFD, DA (destino), SA (origen), Length/Type, datos/padding y FCS; el preámbulo/SFD precede a los campos MAC del frame."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc894.html",
+            "referencia": "RFC 894 § frame format: la encapsulación Ethernet II coloca destino, origen, EtherType, datos y CRC en ese orden; Length/Type identifica el protocolo superior en Ethernet II."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 111: arquitectura OSI, interfaces y protocolos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV-8: redes locales y protocolos de enlace."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de encapsulación explica el EtherType, las direcciones Ethernet y que Ethernet añade cabecera y FCS; la forma de los campos se contrasta con IEEE 802.3/RFC 894. Cotejo curricular."
+          }
+        ],
+        "observaciones": "Corregida C. El orden es preámbulo, delimitador SFD, dirección destino, dirección origen, EtherType, datos y FCS. Se añadió SFD y se precisó EtherType; el original omitía el delimitador y confundía el orden de direcciones en distractores. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de encapsulación explica el EtherType, las direcciones Ethernet y que Ethernet añade cabecera y FCS; la forma de los campos se contrasta con IEEE 802.3/RFC 894. Correspondencia oficial: A1-111/A2-IV-8. La fuente primaria conserva autoridad para definir el estándar."
+      }
     },
     {
       "id": 7131,
