@@ -16,6 +16,8 @@ Cotejo ITIC Academy en Drive: [bloque 47 Aplicaciones móviles y sistemas operat
 
 Inventario tras el lote: 12.123 preguntas; 7.225 examinadas individualmente; 7.103 verificadas (1.387 vigentes, 5.204 corregidas, 512 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.898 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1381.cjs`, `node revision/academia-lote-1381.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
+**Estado de publicación (15-11-2026):** el workflow [43736743480](https://github.com/itic-academy/simulador-tic/actions/runs/43736743480) terminó `success` para el commit `885f3e8`; el deployment ID `7806508123` informa estado `success` y URL `https://itic-academy.github.io/simulador-tic/`. Sin embargo, comprobaciones HTTP sin caché contra la raíz y los cuatro artefactos (`revision/README.md`, `revision/inventario.json`, `revision/cambios-lote-1381.json` y `preguntas_preparatic.json`) devolvieron 404, y la API pública de GitHub Pages devolvió 404. Por ello la compilación/despliegue de Actions está confirmado, pero la disponibilidad externa del contenido no queda confirmada en este chequeo; se reintentará en el siguiente ciclo.
+
 ## Lote 1380 — 15 de noviembre de 2026
 
 ## Lote 1380 — 15 de noviembre de 2026
