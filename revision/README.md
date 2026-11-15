@@ -16,6 +16,8 @@ Cotejo curricular ITIC Academy/Drive: [46_Bloque_46_Tema_Redes_Inalambricas_2026
 
 Ejecutados `node revision/revisar-lote-1386.cjs`, `node revision/academia-lote-1386.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros válidos; 7.250 preguntas revisadas individualmente (1.387 vigentes, 5.226 corregidas y 515 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.873 aún sin revisión individual; 0 errores estructurales. El inventario estructural no se cuenta como revisión de contenido.
 
+**Despliegue del lote 1386 verificado:** commit de datos `a4bce88` publicado en `main`; [GitHub Actions, ejecución 43742436202](https://github.com/itic-academy/simulador-tic/actions/runs/43742436202) terminó con **Success**. GitHub Pages respondió HTTP 200 para inventario, registro `cambios-lote-1386.json`, banco y README. Se cotejaron públicamente los IDs 7251–7255 del registro con el banco; claves y estados coinciden, al igual que el resumen publicado: 12.123 preguntas, 7.250 revisadas individualmente y 4.873 aún sin revisar. Esta verificación se registra aquí.
+
 ## Lote 1385 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 7246–7250 sobre SONET/SDH, consistencia de directorios replicados, unidades X.400, TETRA y dimensionamiento DECT.
