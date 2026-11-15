@@ -18,6 +18,8 @@ Cotejo Drive: [ITIC Academy, bloque 05 Contratación/Presupuestos/Convenios/Comp
 
 Inventario tras el lote: 12.123 preguntas; 6.920 examinadas individualmente; 6.799 verificadas (1.300 vigentes, 5.004 corregidas y 495 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.203 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1320.cjs`, `node revision/academia-lote-1320.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
+**Despliegue verificado:** para `6308b8b`, la API de GitHub confirmó que los jobs `build` y `deploy` de “Deploy GitHub Pages” finalizaron correctamente. La URL pública `https://itic-academy.github.io/simulador-tic/revision/inventario.json` contiene `cambios-lote-1320.json` y los recuentos del lote (1.300 vigentes, 5.004 corregidas, 495 históricas y 5.203 sin revisar).
+
 ## Lote 1319 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 6916–6920. Se contrastaron artículos constitucionales y legislación administrativa consolidados, EUR-Lex y el temario A1/A2; se cotejaron las unidades de ITIC Academy localizadas en Drive.
