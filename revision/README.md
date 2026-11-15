@@ -16,7 +16,7 @@ Cotejo de ITIC Academy en Drive: [bloque 29 Bases de datos, SQL y modelado (A1 6
 
 Inventario tras el lote: 12.123 preguntas; 6.965 examinadas individualmente; 6.844 verificadas (1.313 vigentes, 5.033 corregidas y 498 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.158 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1329.cjs`, `node revision/academia-lote-1329.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue:** pendiente de comprobar tras publicar el commit de este lote.
+**Despliegue verificado:** el commit `77e27a6` completó correctamente el workflow de GitHub Actions (build y deploy, run `43694021228`). El inventario publicado responde HTTP 200 y refleja 12.123 preguntas: 1.313 vigentes, 5.033 corregidas, 498 históricas, 121 pendientes documentadas y 5.158 sin revisar individualmente; no hay errores estructurales.
 
 
 ## Lote 1328 — 15 de noviembre de 2026
