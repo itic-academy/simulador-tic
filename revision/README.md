@@ -16,7 +16,7 @@ Fuentes oficiales y técnicas: [LoRa Alliance, LoRaWAN for Developers](https://l
 
 Inventario tras el lote: 12.123 preguntas; 6.845 examinadas individualmente; 6.725 verificadas (1.294 vigentes, 4.942 corregidas y 489 históricas); 120 pendientes (47 de fuente y 73 de ambigüedad); 5.278 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1305.cjs`, `node revision/academia-lote-1305.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Publicación pendiente de verificación.**
+**Publicación verificada:** lote 1305 publicado desde `d43fc23600a0ab8f34e973d727aa24736063b1cc`. [GitHub Actions 43675294286](https://github.com/itic-academy/simulador-tic/actions/runs/43675294286) concluyó con Success en build y deploy. GitHub Pages respondió HTTP 200 para el registro del lote, inventario, README y banco; el registro público contiene exactamente los IDs 6846–6850 y el banco publicado refleja las claves A, C, A, C y C con estado `corregida`. El inventario publicado confirma 12.123 preguntas, 6.845 examinadas individualmente, 6.725 verificadas, 120 pendientes y 5.278 sin revisar individualmente.
 
 ## Lote 1304 — 15 de noviembre de 2026
 
