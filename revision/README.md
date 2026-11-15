@@ -16,7 +16,7 @@ Fuentes primarias y técnicas: [UNE, CTN 178 Ciudades inteligentes](https://revi
 
 Inventario tras el lote: 12.123 preguntas; 6.810 examinadas individualmente; 6.690 verificadas (1.288 vigentes, 4.913 corregidas y 489 históricas); 120 pendientes documentadas (47 de fuente y 73 de ambigüedad); 5.313 sin revisar individualmente; errores estructurales: 0. Ejecutados `node revision/revisar-lote-1298.cjs`, `node revision/academia-lote-1298.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Publicación:** pendiente de despliegue y comprobación pública.
+**Publicación verificada:** commit de datos `7e5e12b03821d2041af4d6ca71f303ccfeb8c05e`; [GitHub Actions 43670078010](https://github.com/itic-academy/simulador-tic/actions/runs/43670078010) concluyó con Success (build y deploy). GitHub Pages respondió HTTP 200 sin caché para el inventario, registro del lote 1298, banco y README. El registro público contiene exactamente los IDs 6811–6815; el banco publicado confirma los cinco estados corregida, claves A/D/B/C/A y las clasificaciones A1/A2 indicadas arriba. El inventario público confirma 12.123 preguntas, 6.810 examinadas individualmente, 6.690 verificadas, 120 pendientes y 5.313 sin revisión individual.
 
 ## Lote 1297 — 15 de noviembre de 2026
 
