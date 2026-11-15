@@ -1,4 +1,24 @@
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1383 (IDs 7236–7240). Acumulado: 7.235 preguntas examinadas individualmente; 7.113 verificadas (1.387 vigentes, 5.214 corregidas y 512 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.888 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1384 (IDs 7241–7245). Acumulado: 7.240 preguntas examinadas individualmente; 7.118 verificadas (1.387 vigentes, 5.218 corregidas y 513 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.883 sin revisar individualmente.
+
+## Lote 1384 — 15 de noviembre de 2026
+
+Revisadas individualmente las preguntas 7241–7245 sobre longitudes de cableado TIA-568, modulación ADSL2+, comunicación por líneas eléctricas y autoconfiguración/cabecera IPv6.
+
+- **7241 — TIA/EIA-568-B.1:** **histórica, respuesta B**. La edición B.1 fija 90 m como máxima distancia horizontal ordinaria entre cross-connect y toma; si se instala MUTOA, la cl. 6.4.1.4 reduce longitudes según cordones y calibre (tabla de 90 a 70 m). La pregunta original podía tener más de una respuesta verdadera al mezclar esa excepción con la longitud equipo–roseta; se reformuló y se identificó expresamente la edición, hoy sustituida dentro de la serie TIA-568.
+- **7242 — ADSL2+:** **corregida, respuesta A**. UIT-T G.992.5 define la interfaz ADSL2+ y usa DMT (Discrete MultiTone); WCDMA es acceso radio móvil, no el código de línea ADSL2+. Se sustituyó el «señale la falsa» con dos afirmaciones mezcladas por una pregunta directa sobre el estándar.
+- **7243 — PLC:** **corregida, respuesta A**. En el contexto explícito de transmisión de datos sobre la red eléctrica, PLC significa *Power Line Communication*. La especificación UIT-T K.159 (12/2025) define el puerto PLC conectado a la red de baja tensión para transferencia de datos; el acrónimo puede tener otros sentidos en otros campos.
+- **7244 — cabecera IPv6:** **corregida, respuesta C**. La cabecera base de RFC 8200 mide 320 bits = 40 octetos. Se pregunta por la cabecera base sin extensiones y se corrige el error tipográfico del original.
+- **7245 — IPv6 sin router:** **corregida, respuesta C**. RFC 4862 especifica que, en ausencia de routers, un host solo puede generar una dirección link-local, suficiente para comunicarse en ese enlace; RFC 4291 define el prefijo FE80::/10. Se aclara que no se obtiene por ello una dirección global.
+
+Fuentes primarias/técnicas: [ANSI/TIA/EIA-568-B.1 (texto, cl. 4.3 y 6.4.1.4)](https://www.csd.uoc.gr/~hy435/material/TIA-EIA-568-B.1.pdf), [serie vigente TIA-568](https://tiaonline.org/standard/tia-568/), [ITU-T G.992.5](https://www.itu.int/rec/T-REC-G.992.5/en), [UIT-T DSL: DMT en G.992.1/G.992.3/G.992.5](https://www.itu.int/dms_pub/itu-t/oth/0B/04/T0B040000150010PDFE.pdf), [ITU-T K.159 (12/2025), PLC](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-K.159-202512-I%21%21PDF-E&lang=e&type=items), [IETF RFC 8200](https://www.rfc-editor.org/rfc/rfc8200.html), [IETF RFC 4862](https://www.rfc-editor.org/rfc/rfc4862.html) y [RFC 4291](https://www.rfc-editor.org/rfc/rfc4291.html). Programas oficiales: [A1 GSI 2025, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) — A1-108/A1-110/A1-115; [A2 GSI 2025, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) — A2-IV-7/A2-IV-10/A2-II-8/A2-IV-13.
+
+Cotejo ITIC Academy/Drive: [42_Bloque_42_Tema_Redes_2026.pdf, versión 2026.1](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) (actualizado el 29-09-2026). Declara cubrir A1 108, 110, 113, 118–121 y A2 C5–C8/C11; su índice y contenido tratan cableado estructurado/normativa, medios guiados, acceso/xDSL, redes IP e IPv6. Alinea los cinco ítems (7241 A1-110/A2-IV-7; 7242 A1-108/A2-IV-7/IV-10; 7243 A1-108/A2-IV-7/IV-8; 7244–7245 A1-115/A2-II-8/IV-13). Se coteja como cobertura de academia, no sustituye las fuentes técnicas.
+
+Ejecutados `node revision/revisar-lote-1384.cjs`, `node revision/academia-lote-1384.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros válidos; 7.240 preguntas revisadas individualmente (1.387 vigentes, 5.218 corregidas y 513 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.883 aún sin revisión individual; 0 errores estructurales. El inventario estructural no se cuenta como revisión de contenido.
+
+**Despliegue:** pendiente de publicación y comprobación del lote 1384.
+
+## Lote 1383 — 15 de noviembre de 2026
 
 ## Lote 1383 — 15 de noviembre de 2026
 
