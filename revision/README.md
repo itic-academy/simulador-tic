@@ -18,7 +18,7 @@ Fuentes primarias y técnicas: [IETF RFC 7252, CoAP](https://www.rfc-editor.org/
 
 Inventario tras el lote: 12.123 preguntas; 6.815 examinadas individualmente; 6.695 verificadas (1.288 vigentes, 4.918 corregidas y 489 históricas); 120 pendientes documentadas (47 de fuente y 73 de ambigüedad); 5.308 sin revisar individualmente; errores estructurales: 0. Ejecutados `node revision/revisar-lote-1299.cjs`, `node revision/academia-lote-1299.cjs`, `node revision/corregir-clave-lote-1299.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Publicación:** pendiente de despliegue y comprobación pública.
+**Publicación verificada:** lote 1299 y corrección de clave publicados en `d58e3dc67bcd8be94373ddbd2a976d0a8ca8010e`; [GitHub Actions 43670896779](https://github.com/itic-academy/simulador-tic/actions/runs/43670896779) concluyó con Success (build y deploy). GitHub Pages respondió HTTP 200 sin caché para el inventario, el registro del lote 1299, el banco y este README. El registro público contiene exactamente los IDs 6816–6820 y la clave corregida D para 6818; el banco público confirma estados corregida y claves A/A/D/B/C. El inventario público confirma 12.123 preguntas, 6.815 examinadas individualmente, 6.695 verificadas, 120 pendientes y 5.308 sin revisar individualmente.
 
 ## Lote 1298 — 15 de noviembre de 2026
 
