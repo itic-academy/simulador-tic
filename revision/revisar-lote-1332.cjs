@@ -1,0 +1,48 @@
+const aplicar=require('./aplicar-lote.cjs');
+const a1='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',a2='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262';
+const redes='https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk';
+const correo='https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view?usp=drivesdk';
+const inalambricas='https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk';
+const seguridad='https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk';
+const edits={
+ 6981:{texto:'¿Qué estándar IEEE especifica, entre otras funciones, el funcionamiento de puentes VLAN?',opciones:['IEEE 802.1p, que trata la priorización de tráfico de puente.','IEEE 802.1Q, para puentes y redes VLAN.','IEEE 802.5, para redes Token Ring.','IEEE 802.11, para redes inalámbricas locales.'],respuesta_correcta:1},
+ 6982:{texto:'¿Qué designa el acrónimo DOCSIS (Data-Over-Cable Service Interface Specifications)?',opciones:['Una familia de especificaciones para prestar servicios de datos de banda ancha sobre redes de cable, incluidas redes híbridas de fibra y coaxial.','Un protocolo de capa de aplicación exclusivo para enviar vídeo con QoS.','Un estándar de vídeo de alta resolución para comunicaciones satelitales.','El estándar IEEE 802.11h para redes Wi-Fi.'],respuesta_correcta:0},
+ 6983:{texto:'¿Cuál describe correctamente SMTP y X.400 en los sistemas de correo electrónico?',opciones:['SMTP es un protocolo de transferencia de correo de Internet; X.400 es la serie de recomendaciones ITU-T para sistemas y servicios de tratamiento de mensajes.','SMTP sirve para descargar mensajes desde el buzón del usuario; X.400 es únicamente un servicio de directorio.','SMTP es un protocolo de resolución de nombres; X.400 especifica el encaminamiento IP.','SMTP y X.400 son protocolos equivalentes e intercambiables de una misma arquitectura.'],respuesta_correcta:0},
+ 6984:{texto:'En comunicaciones móviles, ¿qué describe mejor la formación de haces (beamforming) con una antena de elementos múltiples?',opciones:['El procesado coordinado de amplitud y/o fase en los elementos para dirigir el patrón de radiación y concentrar ganancia en una dirección.','La cancelación total de las pérdidas de propagación del canal para cualquier posición del receptor.','El direccionamiento físico de las antenas como sustituto del direccionamiento de red.','Un método de planificación que divide toda celda en celdas más pequeñas sin modificar el patrón de antena.'],respuesta_correcta:0},
+ 6985:{texto:'Sobre las funciones de cortafuegos, proxies y servicios FWaaS, señale la afirmación CORRECTA:',opciones:['Un cortafuegos nunca puede efectuar traducción de direcciones de red (NAT).','Un cortafuegos con proxy o inspección de aplicación puede analizar tráfico HTTP y aplicar reglas de capa de aplicación.','Un proxy abierto no puede ser utilizado abusivamente para retransmitir correo no solicitado.','FWaaS solo puede ejecutarse en equipos físicos instalados en las dependencias del cliente.'],respuesta_correcta:1}
+};
+const records=[
+ [6981,[118],['IV-8'],['IEEE 802.1Q','VLAN','puentes VLAN','IEEE 802.1p','redes locales'],[
+  {url:'https://standards.ieee.org/ieee/802.1q/10323/',referencia:'IEEE 802.1Q-2022 está activo y especifica puentes de red, incluidos los puentes VLAN, protocolos, gestión y algoritmos.'},
+  {url:redes,referencia:'ITIC Academy, bloque 42 Redes, actualización 2026: incluye VLAN en A1 tema 118 y redes locales/protocolos en A2 tema IV.8; cotejo curricular.'},
+  {url:a1,referencia:'Convocatoria oficial A1 GSI 2025, tema 118: redes locales, arquitectura, dispositivos y gestión/configuración de VLAN.'},
+  {url:a2,referencia:'Convocatoria oficial A2 GSI 2025, tema IV.8: redes locales, tipología, protocolos, transmisión y dispositivos.'}
+ ],undefined,'Vigente B. IEEE identifica 802.1Q como estándar activo que cubre puentes VLAN. Se precisó el enunciado: 802.1p trata priorización de tráfico y no es la respuesta solicitada; 802.5 es Token Ring.','vigente'],
+ [6982,[121],['IV-7'],['DOCSIS','Data-Over-Cable Service Interface Specifications','HFC','CATV','cable coaxial','fibra'],[
+  {url:'https://www.cablelabs.com/tech-vision/tech-policy/informed-insights-whitepapers/driving-gigabit-speeds-from-lab-to-consumer',referencia:'CableLabs explica que DOCSIS posibilita prestar banda ancha por redes HFC.'},
+  {url:'https://account.cablelabs.com/server/alfresco/f35af0d8-b087-48ec-bd61-81a9a0201887',referencia:'CableLabs, DOCSIS Radio Frequency Interface: contempla transferencia bidireccional transparente de tráfico IP entre cabecera y abonados por red coaxial o HFC.'},
+  {url:redes,referencia:'ITIC Academy, bloque 42 Redes, actualización 2026: CATV, estructura de red de cable y servicios en A1 tema 121; medios guiados en A2 tema IV.7; incluye la actualización DOCSIS 4.0.'},
+  {url:a1,referencia:'Convocatoria oficial A1 GSI 2025, tema 121: telecomunicaciones por cable (CATV), estructura y servicios.'},
+  {url:a2,referencia:'Convocatoria oficial A2 GSI 2025, tema IV.7: medios de transmisión guiados y parámetros significativos.'}
+ ],undefined,'Vigente A. DOCSIS significa Data-Over-Cable Service Interface Specifications y normaliza tecnología de acceso de datos sobre redes de cable coaxial/HFC. No es un protocolo de vídeo satelital ni Wi-Fi.','vigente'],
+ [6983,[122],[],['SMTP','X.400','ITU-T F.400','RFC 5321','mensajería','correo electrónico'],[
+  {url:'https://www.rfc-editor.org/rfc/rfc5321.html',referencia:'IETF RFC 5321, sección 2: SMTP establece transferencia de mensajes entre cliente y servidor SMTP; el contenido usa estructura de RFC 5322/MIME.'},
+  {url:'https://www.itu.int/rec/T-REC-F.400/en',referencia:'ITU-T F.400/X.400 (06/99) figura como vigente y ofrece la visión general de sistemas y servicios de tratamiento de mensajes; la serie X.400–X.499 trata sistemas MHS.'},
+  {url:correo,referencia:'ITIC Academy, bloque 45 Correo, mensajería y directorios, versión 2026.1: A1 tema 122; cubre SMTP/RFC 5321 y X.400; cotejo curricular.'},
+  {url:a1,referencia:'Convocatoria oficial A1 GSI 2025, tema 122: correo electrónico, servicios de mensajería y directorio.'}
+ ],undefined,'Corregida A. La clave original D era errónea: SMTP y X.400 no son equivalentes ni “protocolo de capa IP/TCP” es una descripción válida. SMTP transfiere correo en Internet; X.400 designa las recomendaciones ITU-T de sistemas/servicios de tratamiento de mensajes, no una mera definición del formato ni descarga POP/IMAP. Se reescribieron las opciones para que la diferencia sea precisa. No se asigna epígrafe A2 directo: el programa A2 solo tiene cruces transversales con correo, no un tema específico equivalente.','corregida'],
+ [6984,[114,123],['IV-11','IV-15'],['beamforming','formación de haces','antenas de matriz','ganancia direccional','comunicaciones móviles','radiación'],[
+  {url:'https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/18.00.00_60/tr_138901v180000p.pdf',referencia:'3GPP/ETSI TR 38.901, §7.3.1: modela antenas de matriz con pesos complejos y desplazamientos de fase para obtener inclinación/apuntamiento del haz; incluye ganancia direccional.'},
+  {url:inalambricas,referencia:'ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, versión 2026.1: A1 temas 114/123 y A2 temas IV.11/IV.15; incluye antenas, radiocomunicación y 5G/6G; cotejo curricular.'},
+  {url:a1,referencia:'Convocatoria oficial A1 GSI 2025, temas 114 y 123: redes inalámbricas y comunicaciones móviles.'},
+  {url:a2,referencia:'Convocatoria oficial A2 GSI 2025, temas IV.11/IV.15: redes inalámbricas y sistemas de comunicaciones móviles.'}
+ ],undefined,'Corregida A. El beamforming ajusta coherentemente las señales de los elementos de una antena de matriz (p. ej. sus fases y, según diseño, amplitudes) para conformar o dirigir el haz y elevar la ganancia en la dirección seleccionada; no elimina las pérdidas del canal. Se acotó “aumentar la ganancia” a una dirección concreta.','corregida'],
+ [6985,[125],['IV-12'],['cortafuegos','firewall','NAT','proxy de aplicación','HTTP','FWaaS','seguridad perimetral'],[
+  {url:'https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-41r1.pdf',referencia:'NIST SP 800-41 Rev. 1, §§2.1.4 y 3.2: los cortafuegos avanzados pueden incorporar proxy de aplicación; la mayoría puede efectuar NAT.'},
+  {url:'https://www.cisco.com/c/en/us/solutions/collateral/enterprise/design-zone-security/sase-sse-ag.pdf',referencia:'Cisco SASE/SSE Architecture Guide (2025): FWaaS es la entrega cloud de función de cortafuegos, con filtrado y funciones de aplicación.'},
+  {url:seguridad,referencia:'ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, actualización 2026: A1 tema 125 y A2 tema IV.12; cubre seguridad perimetral, cortafuegos y control de accesos.'},
+  {url:a1,referencia:'Convocatoria oficial A1 GSI 2025, tema 125: seguridad en redes, prevención, cortafuegos y control de accesos.'},
+  {url:a2,referencia:'Convocatoria oficial A2 GSI 2025, tema IV.12: seguridad de redes y perímetro.'}
+ ],undefined,'Corregida B. NIST indica expresamente que la mayoría de cortafuegos puede realizar NAT y que un proxy de aplicación inspecciona contenido para aplicar políticas. La inspección concreta de protocolos depende del producto y su configuración. Los proxies abiertos pueden abusarse y FWaaS, por definición, entrega funciones de firewall como servicio cloud; se sustituyeron afirmaciones absolutas o de mercado difíciles de verificar.','corregida']
+];
+aplicar({numero:'1332',fecha:'2026-11-15',records,edits});
