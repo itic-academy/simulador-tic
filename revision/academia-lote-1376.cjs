@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),file=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(file,'utf8'));
+const logFile=path.join(__dirname,'cambios-lote-1376.json'),log=JSON.parse(fs.readFileSync(logFile,'utf8'));
+const sources={
+  bloque01:{url:'https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk',title:'ITIC Academy, bloque 01 Constitución, Organización del Estado y AGE, actualización 2026',note:'El temario incluye principios constitucionales de la Administración pública (A1 tema 4). Se coteja la cobertura formativa; el literal del art. 103.1 CE se comprobó en BOE.'},
+  bloque06:{url:'https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk',title:'ITIC Academy, bloque 06 Economía, Sociedad, Empleo y Transformación Digital, versión 2026.2',note:'El temario enlaza sostenibilidad/Agenda 2030 con el tema 14 A1 y comercio/sectores productivos con el tema 15; también cubre igualdad en el tema 16 A1 y O5 A2. Para la pregunta estadística se coteja la cobertura, no se atribuye al manual un dato que no se verificó en su texto.'},
+  ley39:{url:'https://drive.google.com/file/d/18TH2YS6iMsBWPdHnP_xv1E66R3AWNs2M/view?usp=drivesdk',title:'ITIC Academy, Tema 22 Ley 39/2015 — Aspectos TIC',note:'El índice incluye expresamente representación (art. 5) y registros de apoderamientos (art. 6); la regla de mero trámite se verificó directamente en el art. 5.3 BOE.'}
+};
+const academy={7201:sources.bloque06,7202:sources.bloque01,7203:sources.ley39,7204:sources.bloque06,7205:sources.bloque06};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),d=academy[c.id];assert.ok(q?.revision,`Pregunta no revisada: ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2])assert.ok(official.has(id),id);const note=`Cotejo curricular ITIC Academy: ${d.title}. ${d.note}`;q.clasificacion.bloque_academia=note;q.clasificacion.nota=note;q.comentarios+=` ${note}`;q.revision.observaciones+=` ${note}`;q.revision.fuentes.push({url:d.url,referencia:`${d.title}; cotejo: ${d.note}`});c.actualizada.comentarios=q.comentarios;c.actualizada.revision=structuredClone(q.revision);c.actualizada.clasificacion=structuredClone(q.clasificacion)}
+fs.writeFileSync(file,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logFile,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular individual 7201–7205 registrado.');
