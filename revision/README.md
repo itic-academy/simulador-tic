@@ -18,7 +18,7 @@ Cotejo Drive: [ITIC Academy, bloque 38, Análisis, diseño y construcción (2026
 
 Inventario tras el lote: 12.123 preguntas; 6.895 examinadas individualmente; 6.774 verificadas (1.295 vigentes, 4.986 corregidas y 493 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.228 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1315.cjs`, `node revision/academia-lote-1315.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue pendiente de verificación:** en el ciclo anterior, Pages no se pudo consultar porque el entorno rechazó `Resolve-DnsName itic-academy.github.io` y `Invoke-WebRequest` devolvió «Host desconocido». Tras enviar este lote a `main` se repetirá el chequeo; no se considerará publicado hasta comprobar el contenido externo.
+**Despliegue pendiente de verificación:** el lote se envió a `main` en `0bfc530`. La comprobación posterior volvió a fallar: `Resolve-DnsName itic-academy.github.io` devolvió «Acceso denegado» y `Invoke-WebRequest https://itic-academy.github.io/simulador-tic/revision/inventario.json` devolvió «Host desconocido. (itic-academy.github.io:443)». Tampoco se pudo consultar GitHub Actions desde este entorno: la CLI `gh` no está instalada y la herramienta web rechazó las rutas de Pages/API en los chequeos anteriores. El commit está en `main`, pero el artefacto de Pages no se da por comprobado públicamente.
 
 ## Lote 1314 — 15 de noviembre de 2026
 
