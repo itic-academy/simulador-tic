@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),file=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(file,'utf8'));
+const logFile=path.join(__dirname,'cambios-lote-1377.json'),log=JSON.parse(fs.readFileSync(logFile,'utf8'));
+const sources={
+  bloque03:{url:'https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk',title:'ITIC Academy, bloque 03 Actuación Administrativa y Administración Digital, actualización 2026',note:'El programa y el material tratan Leyes 39/2015 y 40/2015, procedimiento, sociedad de la información, Administración electrónica y EBEP. El dato o literal jurídico concreto se comprobó adicionalmente en la fuente oficial citada en la pregunta.'},
+  bloque06:{url:'https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk',title:'ITIC Academy, bloque 06 Economía, Sociedad, Empleo y Transformación Digital, versión 2026.2',note:'El contenido programático coteja las políticas de igualdad de género con A1 tema 16 y A2 O5; la composición exacta de objetivos del III Plan se verificó en el acuerdo publicado en BOE.'},
+  bloque08:{url:'https://drive.google.com/file/d/11T-TKuGJGXeEKwwODM-FlF8pML3QMh_t/view?usp=drivesdk',title:'ITIC Academy, bloque 08 Protección de Datos, actualización 2026',note:'Abarca RGPD/LOPDGDD, responsabilidad proactiva, seguridad, auditoría de protección de datos y los temas A1 27/82 y A2 O7; los artículos y su alcance exacto se comprobaron en el texto del RGPD.'}
+};
+const academy={7206:sources.bloque06,7207:sources.bloque03,7208:sources.bloque03,7209:sources.bloque03,7210:sources.bloque08};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),d=academy[c.id];assert.ok(q?.revision,`Pregunta no revisada: ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2])assert.ok(official.has(id),id);const note=`Cotejo curricular ITIC Academy: ${d.title}. ${d.note}`;q.clasificacion.bloque_academia=note;q.clasificacion.nota=note;q.comentarios+=` ${note}`;q.revision.observaciones+=` ${note}`;q.revision.fuentes.push({url:d.url,referencia:`${d.title}; cotejo: ${d.note}`});c.actualizada.comentarios=q.comentarios;c.actualizada.revision=structuredClone(q.revision);c.actualizada.clasificacion=structuredClone(q.clasificacion)}
+fs.writeFileSync(file,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logFile,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular individual 7206–7210 registrado.');
