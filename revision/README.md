@@ -16,6 +16,8 @@ Cotejo ITIC Academy en Drive: [bloque 26 Hardware, servidores, CPD, almacenamien
 
 Inventario tras el lote: 12.123 preguntas; 7.220 examinadas individualmente; 7.098 verificadas (1.387 vigentes, 5.201 corregidas y 510 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.903 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1380.cjs`, `node revision/academia-lote-1380.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
+**Despliegue verificado:** el commit `566d0fa` se publicó correctamente en GitHub Pages mediante [workflow run 43735631586](https://github.com/itic-academy/simulador-tic/actions/runs/43735631586), finalizado con éxito. Sin caché, README, inventario, registro y banco respondieron HTTP 200. El changelog publicado contiene exactamente 7221–7225 y sus claves/estados `0/1/0/2/2` —corregida/corregida/corregida/vigente/corregida— coinciden con el banco. El inventario público refleja 12.123 preguntas, 7.220 examinadas individualmente, 4.903 aún sin revisar y 0 errores estructurales.
+
 ## Lote 1379 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 7216–7220 sobre originalidad protegible del software, técnicas WCAG, WAI-ARIA, recuperación ante desastres y POSIX.
