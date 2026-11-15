@@ -382718,43 +382718,150 @@
       "id": 7221,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dentro de una red FC existen una serie de servicios básicos para su correcto funcionamiento y que son implementadas automáticamente de forma distribuida entre todos los switches que componen la red. Son los siguientes:",
+      "texto": "En una fabric Fibre Channel conmutada, ¿qué opción reúne ejemplos de servicios de fabric y de notificación de cambios?",
       "opciones": [
-        "SNS, RCSN, Login, Servicio de gestión y Servicio de tiempos",
-        "Servicio de gestión y servicio de tiempos",
-        "Login",
-        "Servidor de nombres que asigna los FCID y permite traducir de WWN a FCID"
+        "Name/Simple Name Service (SNS), Registered State Change Notification (RSCN), fabric login, gestión y sincronización de reloj.",
+        "Únicamente los servicios de gestión y de tiempo.",
+        "Únicamente el inicio de sesión (fabric login).",
+        "Solo un servidor central que asigna todos los FCID y traduce WWN a FCID."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. Se corrige la sigla errónea «RCSN» por «RSCN» (Registered State Change Notification) y se evita afirmar que todos los servicios son copias automáticas idénticas en todos los switches. FCIA documenta servicios como fabric login, name server, fabric controller, gestión y sincronización; el Fabric Controller distribuye RSCN. La infraestructura de nombres/IDs es distribuida por fabric y no debe resumirse como un único servidor central universal. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión."
+      },
+      "etiquetas": [
+        "Fibre Channel",
+        "SAN",
+        "SNS",
+        "RSCN",
+        "servicios de fabric"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://fibrechannel.org/fibre-channel-services-faq/",
+            "referencia": "Fibre Channel Industry Association (FCIA), FAQ de servicios Fibre Channel: los servicios de fabric son necesarios para operar una fabric conmutada; el Name Server puede ser local a cada switch y el Fabric Login asigna N_Port_ID."
+          },
+          {
+            "url": "https://fibrechannel.org/wp-content/uploads/2020/02/Fibre-Channel-SAN-Workloads-Final.pdf",
+            "referencia": "FCIA, Fibre Channel SAN Workloads, tabla de servicios de fabric: Fabric Login, Name Server, Fabric Controller (gestiona/distribuye RSCN) y Management Server; distingue las notificaciones registradas (RSCN) de otros servicios."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026; cotejo: Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments."
+          }
+        ],
+        "observaciones": "Corregida A. Se corrige la sigla errónea «RCSN» por «RSCN» (Registered State Change Notification) y se evita afirmar que todos los servicios son copias automáticas idénticas en todos los switches. FCIA documenta servicios como fabric login, name server, fabric controller, gestión y sincronización; el Fabric Controller distribuye RSCN. La infraestructura de nombres/IDs es distribuida por fabric y no debe resumirse como un único servidor central universal. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión."
+      }
     },
     {
       "id": 7222,
       "bloque": 0,
       "tema": 0,
-      "texto": "Desde el punto de vista de la velocidad de acceso, ¿cuál es la diferencia entre cintas y discos?",
+      "texto": "¿Qué diferencia de acceso caracteriza normalmente a los discos frente a las cintas magnéticas?",
       "opciones": [
-        "La cinta está orientada al almacenamiento de grandes cantidades de datos en los que el tiempo de acceso es crítico",
-        "Los discos son adecuados para el almacenamiento de datos con acceso “on-line”",
-        "Las cintas prácticamente ya no se utilizan",
-        "Los discos representan el soporte auxiliar de la información"
+        "La cinta permite acceso aleatorio inmediato a cualquier bloque, mientras que el disco es estrictamente secuencial.",
+        "El disco permite acceso directo/aleatorio a ubicaciones; la cinta es un medio de acceso secuencial, común en backup y archivo.",
+        "La cinta ya no se utiliza en sistemas actuales.",
+        "Los discos solo sirven como soporte auxiliar y no para datos en línea."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. La diferencia examinable es el modo de acceso: los discos permiten localizar directamente bloques/archivos, mientras la cinta es secuencial y se emplea, entre otros usos, para respaldo y archivo. Se quita el distractor que llamaba crítica la latencia de acceso de cinta: la cinta actual puede tener alto rendimiento secuencial, pero no acceso aleatorio inmediato. No se afirma que la cinta esté obsoleta. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión."
+      },
+      "etiquetas": [
+        "almacenamiento",
+        "cinta magnética",
+        "disco",
+        "acceso secuencial",
+        "acceso directo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/zosbasics/com.ibm.zos.zconcepts/zconcepts_book.pdf",
+            "referencia": "IBM z/OS concepts, Where are data sets stored?: el disco admite acceso directo (DASD); la cinta es dispositivo de acceso secuencial."
+          },
+          {
+            "url": "https://www.ibm.com/docs/en/i/7.5.0?topic=solutions-tape",
+            "referencia": "IBM i, Tape: la cinta presenta acceso secuencial; para localizar un elemento puede requerir tiempo, y se usa habitualmente en almacenamiento removible/backup."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026; cotejo: Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments."
+          }
+        ],
+        "observaciones": "Corregida B. La diferencia examinable es el modo de acceso: los discos permiten localizar directamente bloques/archivos, mientras la cinta es secuencial y se emplea, entre otros usos, para respaldo y archivo. Se quita el distractor que llamaba crítica la latencia de acceso de cinta: la cinta actual puede tener alto rendimiento secuencial, pero no acceso aleatorio inmediato. No se afirma que la cinta esté obsoleta. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión."
+      }
     },
     {
       "id": 7223,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué es el UART?",
+      "texto": "¿Qué significa UART y cuál es su función básica?",
       "opciones": [
-        "Universal Asynchronous Receiver Transmitter. Es un microprocesador que actúa de interfaz entre el bus (paralelo) de la CPU y el puerto serie",
-        "Universal Asynchronous Receiver Transmitter. Es un dispositivo que adapta terminales asíncronos a una red X.25",
-        "Universal Audio Receiver Transmitter. Es un microprocesador incluido en la tarjeta de sonido que actúa como receptor y transmisor de las señales de audio",
-        "Ninguna de las respuestas anteriores es cierta"
+        "Universal Asynchronous Receiver/Transmitter: periférico/controlador que transmite y recibe datos serie asíncronos y los adapta a la interfaz interna del sistema.",
+        "Universal Asynchronous Receiver Transmitter: dispositivo que adapta terminales asíncronos a una red X.25.",
+        "Universal Audio Receiver Transmitter: procesador de señales de audio de una tarjeta de sonido.",
+        "Ninguna de las respuestas anteriores."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. Se conserva la expansión Universal Asynchronous Receiver/Transmitter, pero se elimina «es un microprocesador»: UART designa una función/bloque controlador de comunicación serie, normalmente un periférico integrado, con lógica de transmisión, recepción, temporización y comunicación con el bus/peripheral interface. No implica necesariamente un microprocesador independiente ni una interfaz X.25. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-54"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión."
+      },
+      "etiquetas": [
+        "UART",
+        "comunicación serie",
+        "periférico",
+        "bus de datos",
+        "interfaz hardware"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.ti.com/jp/lit/ug/spru997c/spru997c.pdf",
+            "referencia": "Texas Instruments, TMS320DM643x UART User Guide: UART significa Universal Asynchronous Receiver/Transmitter; documenta interfaz de bus de periférico, lógica receptora/transmisora, temporización y generación de baud rate."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026; cotejo: Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments."
+          }
+        ],
+        "observaciones": "Corregida A. Se conserva la expansión Universal Asynchronous Receiver/Transmitter, pero se elimina «es un microprocesador»: UART designa una función/bloque controlador de comunicación serie, normalmente un periférico integrado, con lógica de transmisión, recepción, temporización y comunicación con el bus/peripheral interface. No implica necesariamente un microprocesador independiente ni una interfaz X.25. Cotejo curricular ITIC Academy: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización, versión 2026. Cubre almacenamiento/SAN/Fibre Channel y backup en A1-56/A2-IV-5. Para cinta/disco y UART se coteja la cobertura general de hardware; el material recuperado no se usa como autoridad de la diferencia de acceso ni de la definición UART, contrastadas con IBM y Texas Instruments. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión."
+      }
     },
     {
       "id": 7224,
@@ -382768,7 +382875,44 @@
         "Contener métodos no abstractos"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Vigente C. En Java, una clase abstracta puede implementar interfaces y ser superclase; también puede mezclar métodos abstractos y concretos. Lo que no puede hacerse es instanciar directamente la clase abstracta. La pregunta conserva la clave única y se acota explícitamente a Java. Cotejo curricular ITIC Academy: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026.1. Incluye análisis/diseño orientado a objetos y UML para A2-III-9, y clases/modelado de dominio en A1-89; trata explícitamente la regla de que una clase abstracta puede contener métodos implementados y no se instancia directamente. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-89"
+        ],
+        "A2": [
+          "A2-III-9"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026.1. Incluye análisis/diseño orientado a objetos y UML para A2-III-9, y clases/modelado de dominio en A1-89; trata explícitamente la regla de que una clase abstracta puede contener métodos implementados y no se instancia directamente. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026.1. Incluye análisis/diseño orientado a objetos y UML para A2-III-9, y clases/modelado de dominio en A1-89; trata explícitamente la regla de que una clase abstracta puede contener métodos implementados y no se instancia directamente. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión."
+      },
+      "etiquetas": [
+        "programación orientada a objetos",
+        "clase abstracta",
+        "instanciación",
+        "interfaces",
+        "Java"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html",
+            "referencia": "Oracle Java Tutorials, Abstract Methods and Classes: una clase abstracta no se instancia; puede subclasificarse, tener métodos implementados e implementar interfaces."
+          },
+          {
+            "url": "https://docs.oracle.com/javase/specs/jls/se24/html/jls-8.html",
+            "referencia": "Java Language Specification, §8.1.1.1: es error de compilación instanciar directamente un tipo de clase abstracta; una clase abstracta puede declarar la cláusula implements."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026.1; cotejo: Incluye análisis/diseño orientado a objetos y UML para A2-III-9, y clases/modelado de dominio en A1-89; trata explícitamente la regla de que una clase abstracta puede contener métodos implementados y no se instancia directamente."
+          }
+        ],
+        "observaciones": "Vigente C. En Java, una clase abstracta puede implementar interfaces y ser superclase; también puede mezclar métodos abstractos y concretos. Lo que no puede hacerse es instanciar directamente la clase abstracta. La pregunta conserva la clave única y se acota explícitamente a Java. Cotejo curricular ITIC Academy: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026.1. Incluye análisis/diseño orientado a objetos y UML para A2-III-9, y clases/modelado de dominio en A1-89; trata explícitamente la regla de que una clase abstracta puede contener métodos implementados y no se instancia directamente. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión."
+      }
     },
     {
       "id": 7225,
@@ -382776,13 +382920,51 @@
       "tema": 0,
       "texto": "En relación con el desarrollo en JavaScript, ¿a qué hace referencia el acrónimo MEAN?",
       "opciones": [
-        "M es MySQL, E es Eclipse, A es Apache y N es Node.Js",
-        "M es MariaDB, E es Eclipse, A es ActiveX y N es Node.Js",
-        "M es MongoDB, E es Express, A es AngularJs y N es Node.Js",
-        "M es Microsoft, E es Entity Framework, A es ActiveX y N es .NET"
+        "M es MySQL, E es Eclipse, A es Apache y N es Node.js.",
+        "M es MariaDB, E es Eclipse, A es ActiveX y N es Node.js.",
+        "M es MongoDB, E es Express, A es Angular (históricamente AngularJS en algunas referencias) y N es Node.js.",
+        "M es Microsoft, E es Entity Framework, A es ActiveX y N es .NET."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. MEAN significa MongoDB, Express, Angular y Node.js. Se actualiza la denominación del framework Angular; AngularJS es el nombre histórico de la primera versión y aparece en material antiguo, pero no cambia la expansión usual del acrónimo. MEAN es una etiqueta de stack, no una norma ni un requisito obligatorio de desarrollo. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026.1. Cubre A1-65/A2-III-12, desarrollo web front-end, frameworks y JavaScript; incluye MEAN como MongoDB + Express + Angular + Node.js, y advierte que es un acrónimo de stack, no una norma. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026.1. Cubre A1-65/A2-III-12, desarrollo web front-end, frameworks y JavaScript; incluye MEAN como MongoDB + Express + Angular + Node.js, y advierte que es un acrónimo de stack, no una norma. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026.1. Cubre A1-65/A2-III-12, desarrollo web front-end, frameworks y JavaScript; incluye MEAN como MongoDB + Express + Angular + Node.js, y advierte que es un acrónimo de stack, no una norma. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión."
+      },
+      "etiquetas": [
+        "MEAN",
+        "MongoDB",
+        "Express",
+        "Angular",
+        "Node.js",
+        "JavaScript"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.mongodb.com/docs/drivers/node-frameworks/angular/",
+            "referencia": "MongoDB Docs, Integrate MongoDB with Angular: MEAN stack = MongoDB, Express, Angular y Node.js; distribuye base de datos, capa de aplicación y presentación."
+          },
+          {
+            "url": "https://www.mongodb.com/resources/languages/mean-stack",
+            "referencia": "MongoDB, What Is the MEAN Stack?: expande el acrónimo como MongoDB, Express, Angular y Node."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026.1; cotejo: Cubre A1-65/A2-III-12, desarrollo web front-end, frameworks y JavaScript; incluye MEAN como MongoDB + Express + Angular + Node.js, y advierte que es un acrónimo de stack, no una norma."
+          }
+        ],
+        "observaciones": "Corregida C. MEAN significa MongoDB, Express, Angular y Node.js. Se actualiza la denominación del framework Angular; AngularJS es el nombre histórico de la primera versión y aparece en material antiguo, pero no cambia la expansión usual del acrónimo. MEAN es una etiqueta de stack, no una norma ni un requisito obligatorio de desarrollo. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026.1. Cubre A1-65/A2-III-12, desarrollo web front-end, frameworks y JavaScript; incluye MEAN como MongoDB + Express + Angular + Node.js, y advierte que es un acrónimo de stack, no una norma. El material comprueba la cobertura del programa; los datos técnicos se verifican en las fuentes primarias señaladas en la revisión."
+      }
     },
     {
       "id": 7226,
