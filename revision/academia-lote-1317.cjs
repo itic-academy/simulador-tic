@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-1317.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const urls={redes:'https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk',protocolos:'https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk',comunes:'https://drive.google.com/file/d/1NWEg_hd3iDIC0kIitK-u8BpmJ20Jecmw/view?usp=drivesdk'};
+const academy={
+6906:['protocolos','ITIC Academy, bloque Protocolos (actualización 2026): cubre IPv4/IPv6, cabeceras, direccionamiento y aspectos de MTU/seguridad; las obligaciones RFC vigentes se cotejan con IETF.'],
+6907:['protocolos','ITIC Academy, bloque Protocolos (actualización 2026), §3.3: incluye cálculo de subredes IPv4/CIDR; el resultado .159 como broadcast de 95.25.46.128/27 se comprueba con RFC.'],
+6908:['protocolos','ITIC Academy, bloque Protocolos (actualización 2026): estudia cabecera IPv4, campos y protocolos encapsulados; los bits y funciones se comprueban en RFC 791.'],
+6909:['redes','ITIC Academy, bloque Redes (actualización 2026.1), secciones Ethernet/FCS y control de errores: documenta CRC-32 como detección, no corrección, para encuadrar el contraste con Hamming/Reed–Solomon. El material no se toma como respaldo de las capacidades algebraicas; se comprueban en fuentes técnicas primarias.'],
+6910:['comunes','ITIC Academy, bloque 49, Infraestructuras y Servicios Comunes (actualización 2026): cubre cooperación/interconexión entre administraciones y referencia Red SARA/sTESTA; se complementa con el bloque Redes §11, que trata sTESTA/TESTA-ng. La vigencia del servicio se comprueba en la Comisión Europea.']
+};
+const marker='Cotejo curricular ITIC Academy:';const strip=v=>{const s=(v||'').trim(),i=s.indexOf(marker);return i<0?s:s.slice(0,i).trim()};
+for(const item of log.cambios){const q=bank.preguntas.find(x=>x.id===item.id),[key,desc]=academy[item.id];assert.ok(q&&desc,`Falta cotejo ${item.id}`);const note=`${marker} ${desc} Correspondencia oficial: ${[...q.clasificacion.A1,...q.clasificacion.A2].join('/')}. Se coteja cobertura académica y no se sustituye a la fuente primaria técnica.`;q.clasificacion.bloque_academia=desc;q.clasificacion.nota=`${strip(q.clasificacion.nota)} ${note}`.trim();q.comentarios=`${strip(q.comentarios)} ${note}`.trim();q.revision.observaciones=`${strip(q.revision.observaciones)} ${note}`.trim();const url=urls[key];if(!q.revision.fuentes.some(x=>x.url===url))q.revision.fuentes.push({url,referencia:`Cotejo curricular ITIC Academy: ${desc}`});item.actualizada=structuredClone(q)}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo Academy aplicado a 6906–6910.');
