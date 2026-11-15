@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),logPath=path.join(__dirname,'cambios-lote-1315.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const urls={dev:'https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk', itil:'https://drive.google.com/file/d/13ohkITliw7Nrg6LKPinh9vliiwrgPdwr/view?usp=drivesdk'};
+const academy={
+6896:['dev','ITIC Academy, bloque 38, Análisis, diseño y construcción (2026): incluye MÉTRICA v3, prototipado y estrategias de desarrollo. El manual oficial distingue GPI 2.1 (selección de estrategia) de las técnicas de prototipado en ASI.'],
+6897:['dev','ITIC Academy, bloque 38, Análisis, diseño y construcción (2026): incluye MÉTRICA v3 y planificación/seguimiento de proyectos; la lista exacta de procesos GPS se comprueba en la guía oficial de MÉTRICA.'],
+6898:['dev','ITIC Academy, bloque 38, Análisis, diseño y construcción (2026): incluye modelos de integración continua, pipelines y herramientas; el rol concreto de Jenkins se contrasta en su documentación oficial.'],
+6899:['dev','ITIC Academy, bloque 38, Análisis, diseño y construcción (2026): cubre estimación y gestión de esfuerzo en desarrollo; no se localizó el factor específico de 152 horas en el material consultado, que se verifica en el manual COCOMO II.'],
+6900:['itil','ITIC Academy, bloque 41, ITIL y COBIT (2026): trata ITIL y gestión de servicios (edición actual centrada en ITIL 4/5); no se atribuye al temario moderno la taxonomía legada v3, que se comprueba en documentación ITIL 2011.']
+};
+const marker='Cotejo curricular ITIC Academy:';const strip=v=>{const s=(v||'').trim(),i=s.indexOf(marker);return i<0?s:s.slice(0,i).trim()};
+for(const item of log.cambios){const q=bank.preguntas.find(x=>x.id===item.id),[key,desc]=academy[item.id];assert.ok(q&&desc,`Falta cotejo ${item.id}`);const note=`${marker} ${desc} Correspondencia oficial: ${[...q.clasificacion.A1,...q.clasificacion.A2].join('/')||'sin epígrafe A2 directo'}. Se coteja cobertura y no se sustituye la fuente primaria.`;q.clasificacion.bloque_academia=desc;q.clasificacion.nota=`${strip(q.clasificacion.nota)} ${note}`.trim();q.comentarios=`${strip(q.comentarios)} ${note}`.trim();q.revision.observaciones=`${strip(q.revision.observaciones)} ${note}`.trim();const url=urls[key];if(!q.revision.fuentes.some(x=>x.url===url))q.revision.fuentes.push({url,referencia:`Cotejo curricular ITIC Academy: ${desc}`});item.actualizada=structuredClone(q)}
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');console.log('Cotejo Academy aplicado a 6896–6900.');
