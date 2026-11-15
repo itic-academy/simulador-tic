@@ -1,0 +1,350 @@
+{
+  "fecha": "2026-11-16",
+  "alcance": "IDs 7426–7430; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7426,
+      "original": {
+        "id": 7426,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una de las características básicas de ATM (Modo de transferencia asíncrono) es:",
+        "opciones": [
+          "Utiliza un formato de celda de longitud fija",
+          "El tamaño de la celda se negocia a nivel de enlace",
+          "El tamaño de la celda se negocia a través de red",
+          "El tamaño de la celda se negocia a través de transporte"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7426,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es una característica básica del modo de transferencia asíncrono (ATM)?",
+        "opciones": [
+          "Utiliza celdas de longitud fija: 53 octetos, con cabecera de 5 y campo de información de 48.",
+          "Negocia el tamaño de cada celda durante el establecimiento del enlace.",
+          "Negocia el tamaño de la celda a través de la capa de red.",
+          "Negocia el tamaño de la celda a través de la capa de transporte."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Reformulada A. ITU-T I.361 establece un tamaño fijo de 53 octetos (5 de cabecera y 48 de información); no es un parámetro negociado por enlace, red o transporte. Cotejo curricular: ITIC Academy, bloque 42 Redes, edición 2026. Correspondencia temática con redes de acceso y conmutación. La búsqueda específica de ATM no localizó una explicación literal de la estructura de celda de 53 octetos; se contrasta con ITU-T I.361.",
+        "clasificacion": {
+          "A1": [
+            "A1-113"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes, edición 2026: Correspondencia temática con redes de acceso y conmutación. La búsqueda específica de ATM no localizó una explicación literal de la estructura de celda de 53 octetos; se contrasta con ITU-T I.361.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular: ITIC Academy, bloque 42 Redes, edición 2026. Correspondencia temática con redes de acceso y conmutación. La búsqueda específica de ATM no localizó una explicación literal de la estructura de celda de 53 octetos; se contrasta con ITU-T I.361."
+        },
+        "etiquetas": [
+          "ATM",
+          "celda de longitud fija",
+          "53 octetos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/T-REC-I.361/en",
+              "referencia": "ITU-T I.361, B-ISDN ATM layer specification, §2.1 (edición en vigor): la celda ATM consta de cabecera de cinco octetos y campo de información de 48 octetos, total fijo de 53 octetos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, edición 2026. Correspondencia temática con redes de acceso y conmutación. La búsqueda específica de ATM no localizó una explicación literal de la estructura de celda de 53 octetos; se contrasta con ITU-T I.361."
+            }
+          ],
+          "observaciones": "Reformulada A. ITU-T I.361 establece un tamaño fijo de 53 octetos (5 de cabecera y 48 de información); no es un parámetro negociado por enlace, red o transporte. Cotejo curricular: ITIC Academy, bloque 42 Redes, edición 2026. Correspondencia temática con redes de acceso y conmutación. La búsqueda específica de ATM no localizó una explicación literal de la estructura de celda de 53 octetos; se contrasta con ITU-T I.361."
+        }
+      }
+    },
+    {
+      "id": 7427,
+      "original": {
+        "id": 7427,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique cuál de estas afirmaciones relativas al protocolo SNMP NO es cierta:",
+        "opciones": [
+          "SNMP es un protocolo asíncrono de petición-respuesta, por lo que una entidad no necesita esperar una respuesta después de enviar un mensaje",
+          "SNMPv3 proporciona las siguientes características de seguridad: autenticidad, integridad y control de acceso",
+          "La PDU GetBulkRequest permite a un gestor que utiliza SNMPv1, SNMPv2c o SNMPv3 solicitar una larga transmisión de datos, tal como la recuperación de largas tablas",
+          "La PDU GetNextRequest permite a un gestor descubrir dinámicamente la estructura de una MIB si no conoce a priori el conjunto de objetos que la componen"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7427,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación es correcta sobre GetBulkRequest en SNMP?",
+        "opciones": [
+          "Es una PDU exclusiva de SNMPv1.",
+          "Está definida en las operaciones SNMPv2; se usa también con SNMPv2c y SNMPv3, pero no forma parte de las PDU de SNMPv1.",
+          "Modifica valores de objetos de la MIB en el agente.",
+          "Es una notificación no solicitada enviada por el agente, sin respuesta del gestor."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. El original combinaba una frase ambigua sobre el patrón petición-respuesta y una afirmación errónea de compatibilidad de GetBulk con SNMPv1. RFC 3416 define GetBulk como operación SNMPv2 y RFC 1157 enumera para SNMPv1 cinco PDU que no la incluyen. SNMPv3 puede transportar las operaciones SNMPv2. Cotejo curricular: ITIC Academy, bloque 42 Redes, edición 2026. Correspondencia con redes y gestión de protocolos. La búsqueda específica del término GetBulk no localizó una sección literal; las versiones y PDU se verifican con RFC del IETF.",
+        "clasificacion": {
+          "A1": [
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-9"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes, edición 2026: Correspondencia con redes y gestión de protocolos. La búsqueda específica del término GetBulk no localizó una sección literal; las versiones y PDU se verifican con RFC del IETF.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular: ITIC Academy, bloque 42 Redes, edición 2026. Correspondencia con redes y gestión de protocolos. La búsqueda específica del término GetBulk no localizó una sección literal; las versiones y PDU se verifican con RFC del IETF."
+        },
+        "etiquetas": [
+          "SNMP",
+          "GetBulkRequest",
+          "SNMPv1",
+          "SNMPv2c",
+          "SNMPv3"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3416.html",
+              "referencia": "IETF RFC 3416, operaciones SNMPv2, §§1 y 4.2.3: define GetBulkRequest-PDU para recuperar eficazmente grandes cantidades de información/tablas como operación SNMPv2."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1157.html",
+              "referencia": "IETF RFC 1157, SNMPv1: lista sus cinco PDU obligatorias (Get, GetNext, Response, Set y Trap); no define GetBulkRequest."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3411.html",
+              "referencia": "IETF RFC 3411, arquitectura SNMP: SNMPv3 es un marco extensible que utiliza las operaciones y formatos de PDU SNMPv2 descritos en RFC 3416."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, edición 2026. Correspondencia con redes y gestión de protocolos. La búsqueda específica del término GetBulk no localizó una sección literal; las versiones y PDU se verifican con RFC del IETF."
+            }
+          ],
+          "observaciones": "Corregida B. El original combinaba una frase ambigua sobre el patrón petición-respuesta y una afirmación errónea de compatibilidad de GetBulk con SNMPv1. RFC 3416 define GetBulk como operación SNMPv2 y RFC 1157 enumera para SNMPv1 cinco PDU que no la incluyen. SNMPv3 puede transportar las operaciones SNMPv2. Cotejo curricular: ITIC Academy, bloque 42 Redes, edición 2026. Correspondencia con redes y gestión de protocolos. La búsqueda específica del término GetBulk no localizó una sección literal; las versiones y PDU se verifican con RFC del IETF."
+        }
+      }
+    },
+    {
+      "id": 7428,
+      "original": {
+        "id": 7428,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El MTBF asociado a la disponibilidad de un sistema formado por dos equipos idénticos que deben funcionar simultáneamente en todo momento:",
+        "opciones": [
+          "Es mayor que el de cualquiera de ellos individualmente",
+          "Es menor que el de cualquiera de ellos individualmente",
+          "Es igual al de cualquiera de ellos individualmente",
+          "No puede ser conocido a priori"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7428,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Dos equipos independientes e idénticos, cada uno con tasa de fallo constante y MTBF τ, deben funcionar simultáneamente; el fallo de cualquiera detiene el sistema. ¿Cuál es el MTBF del conjunto?",
+        "opciones": [
+          "2τ.",
+          "τ/2, menor que el de cada equipo.",
+          "τ.",
+          "No puede calcularse con estas hipótesis."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. Es un sistema en serie: con tasas de fallo independientes y constantes, λs=λ1+λ2=2/τ; por tanto MTBFs=1/λs=τ/2. Se explicitan las hipótesis y se evita confundir disponibilidad (que además requiere MTTR) con MTBF. Cotejo curricular: Convocatoria oficial A2 GSI 2025, BOE-A-2025-26262. La convocatoria incluye en el programa oficial la operación y mantenimiento de sistemas, continuidad y disponibilidad; se consigna esa relación temática. La búsqueda en los materiales Academy accesibles no localizó un tema específico de MTBF o sistemas en serie.",
+        "clasificacion": {
+          "A1": [
+            "A1-34"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": "Convocatoria oficial A2 GSI 2025, BOE-A-2025-26262: La convocatoria incluye en el programa oficial la operación y mantenimiento de sistemas, continuidad y disponibilidad; se consigna esa relación temática. La búsqueda en los materiales Academy accesibles no localizó un tema específico de MTBF o sistemas en serie.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular: Convocatoria oficial A2 GSI 2025, BOE-A-2025-26262. La convocatoria incluye en el programa oficial la operación y mantenimiento de sistemas, continuidad y disponibilidad; se consigna esa relación temática. La búsqueda en los materiales Academy accesibles no localizó un tema específico de MTBF o sistemas en serie."
+        },
+        "etiquetas": [
+          "MTBF",
+          "sistema en serie",
+          "tasa de fallo",
+          "disponibilidad"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr182.htm",
+              "referencia": "NIST/SEMATECH e-Handbook, modelo en serie: bajo independencia y fallo del sistema al fallar cualquier componente, las tasas de riesgo se suman; con tasas constantes, el MTBF total es el inverso de la suma."
+            },
+            {
+              "url": "https://ntrs.nasa.gov/api/citations/19780008276/downloads/19780008276.pdf",
+              "referencia": "NASA, System Reliability and Availability, §7.2.3: en un sistema en serie independiente, MTBF del sistema = 1/(suma de tasas de fallo) = (suma de inversos de los MTBF de componentes)^−1."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Cotejo curricular: Convocatoria oficial A2 GSI 2025, BOE-A-2025-26262. La convocatoria incluye en el programa oficial la operación y mantenimiento de sistemas, continuidad y disponibilidad; se consigna esa relación temática. La búsqueda en los materiales Academy accesibles no localizó un tema específico de MTBF o sistemas en serie."
+            }
+          ],
+          "observaciones": "Corregida B. Es un sistema en serie: con tasas de fallo independientes y constantes, λs=λ1+λ2=2/τ; por tanto MTBFs=1/λs=τ/2. Se explicitan las hipótesis y se evita confundir disponibilidad (que además requiere MTTR) con MTBF. Cotejo curricular: Convocatoria oficial A2 GSI 2025, BOE-A-2025-26262. La convocatoria incluye en el programa oficial la operación y mantenimiento de sistemas, continuidad y disponibilidad; se consigna esa relación temática. La búsqueda en los materiales Academy accesibles no localizó un tema específico de MTBF o sistemas en serie."
+        }
+      }
+    },
+    {
+      "id": 7429,
+      "original": {
+        "id": 7429,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Los satélites de comunicaciones utilizan frecuencias elevadas (bandas Ku y K) porque:",
+        "opciones": [
+          "Las ondas de mayor frecuencia permiten un mayor alcance y atravesar obstáculos",
+          "Las frecuencias altas permiten enviar mayor cantidad de información por segundo",
+          "En estas bandas la atenuación es menor",
+          "Aunque la atenuación es menor en estas frecuencias su alcance es mayor"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7429,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es una razón técnica para emplear bandas Ku/Ka en enlaces satelitales de alta capacidad?",
+        "opciones": [
+          "Las ondas de mayor frecuencia atraviesan mejor cualquier obstáculo y aumentan siempre el alcance.",
+          "Estas bandas suelen permitir canales de mayor ancho de banda y, con ello, mayores tasas de datos; a cambio, aumenta la sensibilidad a lluvia y otras pérdidas.",
+          "La atenuación atmosférica es siempre menor en Ku/Ka que en bandas inferiores.",
+          "La frecuencia portadora, por sí sola, garantiza más bits por segundo con independencia del ancho de banda y de la relación señal/ruido."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. La respuesta original atribuye demasiado directamente el caudal a la frecuencia. Ku/Ka se aprovechan para disponer de anchos de banda más amplios y aumentar la capacidad; el caudal también depende de modulación y relación señal/ruido. La propagación a frecuencias altas es más sensible a lluvia, no menos. Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, edición 2026. Correspondencia temática con radiocomunicaciones y espectro. Las búsquedas específicas de Ku/Ka no localizaron sección literal sobre bandas satelitales; capacidad y atenuación se contrastan con NASA, ESA e ITU-R.",
+        "clasificacion": {
+          "A1": [
+            "A1-108",
+            "A1-112",
+            "A1-113"
+          ],
+          "A2": [
+            "A2-IV-7",
+            "A2-IV-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, edición 2026: Correspondencia temática con radiocomunicaciones y espectro. Las búsquedas específicas de Ku/Ka no localizaron sección literal sobre bandas satelitales; capacidad y atenuación se contrastan con NASA, ESA e ITU-R.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, edición 2026. Correspondencia temática con radiocomunicaciones y espectro. Las búsquedas específicas de Ku/Ka no localizaron sección literal sobre bandas satelitales; capacidad y atenuación se contrastan con NASA, ESA e ITU-R."
+        },
+        "etiquetas": [
+          "Ku",
+          "K",
+          "ancho de banda",
+          "capacidad satelital",
+          "atenuación por lluvia"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.nasa.gov/smallsat-institute/sst-soa/ground-data-systems-and-mission-operations/",
+              "referencia": "NASA Small Spacecraft Systems Virtual Institute, Ground Data Systems and Mission Operations (2026): la demanda de mayores tasas de datos impulsa el uso de bandas superiores; estas pueden ofrecer anchos de banda mayores, aunque exigen apuntamiento más estricto."
+            },
+            {
+              "url": "https://www.esa.int/articles/satellite-frequency-bands",
+              "referencia": "ESA, Satellite frequency bands: las bandas más altas suelen ofrecer acceso a anchos de banda mayores y son más sensibles a degradación por lluvia (rain fade)."
+            },
+            {
+              "url": "https://www.itu.int/rec/T-REC-P.618/en",
+              "referencia": "ITU-R P.618, propagación en trayectos Tierra-espacio: métodos de predicción de atenuación por lluvia; el efecto aumenta con la frecuencia en las bandas aplicables."
+            },
+            {
+              "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, edición 2026. Correspondencia temática con radiocomunicaciones y espectro. Las búsquedas específicas de Ku/Ka no localizaron sección literal sobre bandas satelitales; capacidad y atenuación se contrastan con NASA, ESA e ITU-R."
+            }
+          ],
+          "observaciones": "Corregida B. La respuesta original atribuye demasiado directamente el caudal a la frecuencia. Ku/Ka se aprovechan para disponer de anchos de banda más amplios y aumentar la capacidad; el caudal también depende de modulación y relación señal/ruido. La propagación a frecuencias altas es más sensible a lluvia, no menos. Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, edición 2026. Correspondencia temática con radiocomunicaciones y espectro. Las búsquedas específicas de Ku/Ka no localizaron sección literal sobre bandas satelitales; capacidad y atenuación se contrastan con NASA, ESA e ITU-R."
+        }
+      }
+    },
+    {
+      "id": 7430,
+      "original": {
+        "id": 7430,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El protocolo IPv6, ¿cuántas direcciones de red distintas posibilita?",
+        "opciones": [
+          "2 elevado a 64",
+          "2 elevado a 128",
+          "2 elevado a 32",
+          "2 elevado a 256"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7430,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuántos valores distintos contiene el espacio de direcciones IPv6 de 128 bits?",
+        "opciones": [
+          "2^64.",
+          "2^128.",
+          "2^32.",
+          "2^256."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. Una dirección IPv6 tiene 128 bits, de modo que existen 2^128 patrones de bits. Se distingue el espacio matemático total de las direcciones unicast globales utilizables o de los prefijos de red, cuya cantidad depende de asignaciones y reservas. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Correspondencia curricular directa con IPv6 y protocolos de Internet; RFC 4291 precisa el tamaño de 128 bits y la arquitectura de direccionamiento.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8",
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 Protocolos, edición 2026: Correspondencia curricular directa con IPv6 y protocolos de Internet; RFC 4291 precisa el tamaño de 128 bits y la arquitectura de direccionamiento.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Correspondencia curricular directa con IPv6 y protocolos de Internet; RFC 4291 precisa el tamaño de 128 bits y la arquitectura de direccionamiento."
+        },
+        "etiquetas": [
+          "IPv6",
+          "128 bits",
+          "espacio de direcciones",
+          "prefijos de red"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+              "referencia": "IETF RFC 4291, IPv6 Addressing Architecture, §2: las direcciones IPv6 tienen 128 bits; el espacio de valores de dirección tiene cardinalidad 2^128. Los prefijos y ámbitos de uso no equivalen a direcciones unicast asignables."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+              "referencia": "IETF RFC 8200, IPv6 Specification: arquitectura de cabecera y soporte de direcciones IPv6 de 128 bits."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Correspondencia curricular directa con IPv6 y protocolos de Internet; RFC 4291 precisa el tamaño de 128 bits y la arquitectura de direccionamiento."
+            }
+          ],
+          "observaciones": "Corregida B. Una dirección IPv6 tiene 128 bits, de modo que existen 2^128 patrones de bits. Se distingue el espacio matemático total de las direcciones unicast globales utilizables o de los prefijos de red, cuya cantidad depende de asignaciones y reservas. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Correspondencia curricular directa con IPv6 y protocolos de Internet; RFC 4291 precisa el tamaño de 128 bits y la arquitectura de direccionamiento."
+        }
+      }
+    }
+  ]
+}
