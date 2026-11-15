@@ -18,6 +18,8 @@ Cotejo curricular ITIC Academy/Drive: [bloque 3, Actuación Administrativa y Adm
 
 Ejecutados `node revision/revisar-lote-1387.cjs`, `node revision/academia-lote-1387.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros; 7.255 revisadas individualmente (1.388 vigentes, 5.230 corregidas y 515 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.868 aún sin revisión individual; 0 errores estructurales. El inventario no se interpreta como revisión de contenido.
 
+**Despliegue del lote 1387 verificado:** commit de datos `7d27de7` publicado en `main`; [GitHub Actions, ejecución 43743705792](https://github.com/itic-academy/simulador-tic/actions/runs/43743705792) terminó con **Success**. GitHub Pages devolvió HTTP 200 para la portada, inventario, registro 1387, banco y README. El registro publicado contiene exactamente los IDs 7256–7260; el banco servido coincide en clave/estado (`2/corregida`, `3/corregida`, `1/corregida`, `1/vigente`, `0/corregida`). El inventario público confirma 12.123 preguntas y los estados actuales; el README publicado refleja el lote 1387, 7.255 revisadas y 4.868 sin revisar individualmente.
+
 ## Lote 1386 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 7251–7255 sobre ley de Cooper, EGPRS, DMZ, herramienta ADA del CCN-CERT y TLS.
