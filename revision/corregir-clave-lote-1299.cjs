@@ -1,0 +1,11 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const base=__dirname,bankPath=path.join(base,'..','preguntas_preparatic.json'),logPath=path.join(base,'cambios-lote-1299.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const q=bank.preguntas.find(x=>x.id===6818),c=log.cambios.find(x=>x.id===6818);
+assert.ok(q&&c,'No se encuentra la pregunta 6818 en el banco y registro');
+assert.equal(q.revision.estado,'corregida');assert.equal(q.texto,'En la solución IoT que Google presentó en 2015, señale la afirmación INCORRECTA sobre Brillo y Weave:');
+assert.equal(q.opciones[3],'Weave era el lenguaje de programación en el que se escribía el kernel de Brillo.');
+assert.equal(q.respuesta_correcta,0,'La clave actual no es la esperada; no sobrescribir un cambio concurrente');
+q.respuesta_correcta=3;c.actualizada.respuesta_correcta=3;
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');
+console.log('Clave 6818 ajustada a D según el nuevo enunciado; registro sincronizado.');
