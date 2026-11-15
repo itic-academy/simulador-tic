@@ -18,7 +18,7 @@ Cotejo de ITIC Academy en Drive: [bloque 10 Gobernanza TIC](https://drive.google
 
 Inventario tras el lote: 12.123 preguntas; 6.930 examinadas individualmente; 6.809 verificadas (1.303 vigentes, 5.010 corregidas y 496 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.193 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1322.cjs`, `node revision/academia-lote-1322.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue pendiente de verificación:** el lote 1322 aún no se ha publicado.
+**Despliegue verificado:** GitHub Actions completó correctamente los jobs `build` y `deploy` para `38e2a39`. `https://itic-academy.github.io/simulador-tic/revision/inventario.json` responde HTTP 200, incluye `cambios-lote-1322.json` y publica 1.303 vigentes, 5.010 corregidas, 496 históricas y 5.193 sin revisar individualmente.
 
 ## Lote 1321 — 15 de noviembre de 2026
 
