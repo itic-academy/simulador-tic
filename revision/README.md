@@ -1,4 +1,20 @@
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1354 (IDs 7091–7095). Acumulado: 7.090 preguntas examinadas individualmente; 6.969 verificadas (1.352 vigentes, 5.111 corregidas y 506 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5.033 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1355 (IDs 7096–7100). Acumulado: 7.095 preguntas examinadas individualmente; 6.974 verificadas (1.353 vigentes, 5.115 corregidas y 506 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5.028 sin revisar individualmente.
+
+## Lote 1355 — 15 de noviembre de 2026
+
+Revisadas individualmente las preguntas 7096–7100. Se matizó PSH conforme a TCP; se explicitó el cálculo /24→/28; se confirmó Telnet/23; se sustituyó una descripción de half-duplex que exigía una señalización no inherente; y se delimitó RFC 791 a IPv4.
+
+- **7096 — PSH de TCP:** corregida B. PSH identifica la función PUSH y petición de procesamiento/transmisión pronta, pero el estándar no garantiza que el receptor entregue inmediatamente el bit a la aplicación.
+- **7097 — subredes IPv4:** corregida B. Dividir 192.168.1.0/24 en /28 toma cuatro bits para subred (16 subredes) y deja cuatro bits de host (14 utilizables por subred en el esquema convencional).
+- **7098 — Telnet:** vigente C. El puerto de servidor estándar es 23; RFC 854 lo especifica para Telnet sobre TCP e IANA mantiene la asignación.
+- **7099 — half-duplex:** corregida C. Permite transmisión en ambos sentidos, pero no simultáneamente. No exige una modalidad de señalización única.
+- **7100 — RFC de IPv4:** corregida B. RFC 791 es la especificación original «Internet Protocol» de IPv4; el enunciado ya no confunde el origen de IPv4 con todos los desarrollos posteriores de IP.
+
+Fuentes primarias: [RFC 9293 §3.9.1, TCP/PUSH](https://www.rfc-editor.org/rfc/rfc9293.html); [RFC 4632, CIDR](https://www.rfc-editor.org/rfc/rfc4632.html) y [RFC 1878, tabla de subredes IPv4](https://www.rfc-editor.org/rfc/rfc1878.html); [IANA, asignación Telnet/23](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=telnet) y [RFC 854, Telnet](https://www.rfc-editor.org/rfc/rfc854.html); [ITU-T X.200, definición half-duplex](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.200-199407-I%21%21PDF-E&lang=e&type=items); [RFC 791, IPv4 Internet Protocol](https://www.rfc-editor.org/rfc/rfc791.html). Programas oficiales [A1 GSI, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), cotejados con revision/temario-oficial.json.
+
+Cotejo curricular ITIC Academy: [bloque 43 Protocolos, versión 2026.1](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk), documento de redes y protocolos que cubre TCP, puertos, IPv4/CIDR, transporte y capa de enlace. Correspondencia oficial A1-108/A1-115/A1-109 y A2-II-8/A2-IV-8. La academia sirve para cotejar temario; las respuestas se fundan en estándares RFC, IANA e ITU-T.
+
+Inventario tras el lote: 12.123 preguntas; 7.095 examinadas individualmente; 6.974 verificadas (1.353 vigentes, 5.115 corregidas y 506 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5.028 sin revisar individualmente; 0 errores estructurales. Ejecutados node revision/revisar-lote-1355.cjs, node revision/academia-lote-1355.cjs, node revision/inventario.cjs, node revision/verificar.cjs y git diff --check. Publicación pendiente de verificación.
 
 ## Lote 1354 — 15 de noviembre de 2026
 
