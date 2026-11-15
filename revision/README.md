@@ -1,6 +1,24 @@
-# Revisión del banco TIC — estado al 15 de noviembre de 2026
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1327 (IDs 6956–6960). Acumulado: 6955 preguntas examinadas individualmente; 6834 verificadas (1312 vigentes, 5024 corregidas y 498 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5168 sin revisar individualmente.
 
 Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1326 (IDs 6951–6955). Acumulado: 6950 preguntas examinadas individualmente; 6829 verificadas (1311 vigentes, 5020 corregidas y 498 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5173 sin revisar individualmente.
+
+## Lote 1327 — 15 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6956–6960, contrastando criterios de código abierto con OSI, módulos Hadoop con Apache, definiciones de aprendizaje móvil/ubicuo con UNESCO y literatura académica, y RSS con su especificación. Se cotejaron además los temas de la convocatoria oficial A1/A2 de 2025 (última convocatoria localizada en BOE para estos cuerpos) y los bloques de ITIC Academy en Drive.
+
+- **6956 — criterios de la Open Source Definition:** corregida D. El criterio de neutralidad tecnológica prohíbe que una disposición de la licencia dependa de una tecnología o estilo de interfaz; el campo de actividad tampoco puede discriminarse. Se precisó el stem para no describir a OSI simplemente como promotora de software «no propietario». A1-69; A2-II.14.
+- **6957 — módulos de Apache Hadoop:** corregida D. Hadoop enumera Common, HDFS, YARN y MapReduce. MLlib pertenece a Apache Spark. Se sustituyó el distractor tipográfico MapExtend por un componente real de Spark. A1-75; A2-III.15.
+- **6958 — mobile learning:** corregida B. M-learning es aprendizaje mediado por dispositivos/tecnología móvil que facilita acceso a recursos y actividades en distintos lugares y momentos; no exige modalidad semipresencial, adaptación automática al contexto ni diseño masivo. A1-73; sin epígrafe A2 específico.
+- **6959 — U-learning:** corregida A. U-learning se utiliza habitualmente como abreviatura de ubiquitous learning/aprendizaje ubicuo. Se acota que la literatura no establece una taxonomía universal única. A1-73; sin epígrafe A2 específico.
+- **6960 — sindicación RSS:** vigente B. RSS es un formato XML de sindicación web; SPARQL es un lenguaje de consulta RDF, CMS una categoría de sistemas de gestión de contenidos y WebQuest una actividad didáctica. A1-77; A2-II.16.
+
+Fuentes técnicas: [OSI, Open Source Definition](https://opensource.org/osd) y [licencias aprobadas](https://opensource.org/licenses); [Apache Hadoop, módulos](https://hadoop.apache.org/modules.html) y [Apache Spark MLlib](https://spark.apache.org/mllib/); [UNESCO, directrices de mobile learning](https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_c713d58b-f667-46b6-9291-133eba59b074?_=219641eng.pdf) y [ficha de mobile learning](https://www.unesco.org/en/query-list/m/mobile-learning); [Hwang, Tsai y Yang, estudio original sobre aprendizaje ubicuo (ERIC)](https://eric.ed.gov/?id=EJ814097) y [revisión sistemática](https://doi.org/10.1016/j.tele.2018.01.009); [RSS Advisory Board, RSS 2.0](https://www.rssboard.org/rss-specification). Programas oficiales: [A1 GSI, convocatoria BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), correspondencias comprobadas en revision/temario-oficial.json.
+
+Cotejo con ITIC Academy en Drive: [bloque 18, Protección jurídica, licencias y control del software (A1 43/A2 II.14), versión 2026.1](https://drive.google.com/file/d/1Og6yI-YaZ48UA3pBT-HQhTh7TfvdPW_C/view?usp=drivesdk); [bloque 34, Business Intelligence y Big Data (A1 71/75/76, A2 III.15), versión 2026.1](https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk); [bloque 33, E-learning y GIS (A1 73/74), versión 2026.1](https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk); y [bloque 40, Gestión documental (A1 104/105, A2 II.16), versión 2026.1](https://drive.google.com/file/d/17UpEFvYfjQ4iUrx8UNNTJIFcj5xO4vlz/view?usp=drivesdk). La academia se usa como cotejo curricular, no como fuente de autoridad técnica.
+
+Inventario tras el lote: 12.123 preguntas; 6.955 examinadas individualmente; 6.834 verificadas (1.312 vigentes, 5.024 corregidas y 498 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.168 sin revisar individualmente; 0 errores estructurales. Ejecutados node revision/revisar-lote-1327.cjs, node revision/academia-lote-1327.cjs, node revision/inventario.cjs, node revision/verificar.cjs y git diff --check.
+
+**Despliegue:** se verificará tras publicar el commit del lote.
 
 ## Lote 1326 — 15 de noviembre de 2026
 
