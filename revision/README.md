@@ -16,6 +16,8 @@ Cotejo ITIC Academy en Drive: [bloque 48 Seguridad en Redes y Aplicación, actua
 
 Inventario tras el lote: 12.123 preguntas; 7.210 examinadas individualmente; 7.088 verificadas (1.385 vigentes, 5.193 corregidas y 510 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.913 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1378.cjs`, `node revision/academia-lote-1378.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
+**Despliegue verificado:** commit `12ff9f2` publicado correctamente por GitHub Pages mediante [workflow run 43733815487](https://github.com/itic-academy/simulador-tic/actions/runs/43733815487), finalizado con éxito. Se consultaron sin caché la página de revisión, el banco, el inventario y `cambios-lote-1378.json`; todos respondieron HTTP 200. Los cinco IDs 7211–7215 aparecen en banco y registro con claves `0/1/3/3/0` y estados `corregida/corregida/corregida/vigente/vigente`, coincidentes. El inventario público refleja 12.123 preguntas, 7.210 examinadas individualmente, 4.913 aún sin revisar y 0 errores estructurales.
+
 ## Lote 1377 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 7206–7210 sobre el III Plan de Igualdad de la AGE, contratación electrónica, CSV para actuación administrativa automatizada, efectivos públicos y auditoría de protección de datos.
