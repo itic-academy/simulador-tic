@@ -18,6 +18,8 @@ Cotejo Drive: [ITIC Academy, bloque 01 Constitución/Estado/AGE (2026)](https://
 
 Inventario tras el lote: 12.123 preguntas; 6.915 examinadas individualmente; 6.794 verificadas (1.300 vigentes, 4.999 corregidas y 495 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.208 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1319.cjs`, `node revision/academia-lote-1319.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
+**Despliegue verificado:** GitHub Actions ejecutó para `ec763ae` el workflow “Deploy GitHub Pages” con los jobs `build` y `deploy` completados con éxito. La URL pública `https://itic-academy.github.io/simulador-tic/revision/inventario.json` respondió y contiene `cambios-lote-1319.json` y los recuentos locales del lote: 1.300 vigentes, 4.999 corregidas, 495 históricas y 5.208 sin revisar.
+
 ## Lote 1318 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 6911–6915, contrastadas con los epígrafes de las convocatorias A1/A2 GSI 2025 y el material de ITIC Academy disponible en Drive.
