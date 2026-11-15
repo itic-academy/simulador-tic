@@ -356564,70 +356564,296 @@
       "id": 6771,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuántos bits tiene el campo de la cabecera MPLS donde se almacena la etiqueta (Label)?",
+      "texto": "En una entrada de la pila MPLS definida por RFC 3032, ¿cuántos bits ocupa el campo Label?",
       "opciones": [
-        "16",
-        "20",
-        "32"
+        "16 bits.",
+        "20 bits.",
+        "32 bits."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Se conserva B. RFC 3032 especifica que Label ocupa 20 bits dentro de una entrada de 32 bits; los 12 restantes se distribuyen entre los campos TC/EXP, S y TTL. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42, redes y tecnologías de transporte: cotejo de MPLS; la anchura del campo se valida con IETF RFC 3032. Correspondencia oficial: A1-113/A2-IV-10. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-113"
+        ],
+        "A2": [
+          "A2-IV-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42, redes y tecnologías de transporte: cotejo de MPLS; la anchura del campo se valida con IETF RFC 3032.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 42, redes y tecnologías de transporte: cotejo de MPLS; la anchura del campo se valida con IETF RFC 3032. Correspondencia oficial: A1-113/A2-IV-10. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias."
+      },
+      "etiquetas": [
+        "MPLS",
+        "etiqueta",
+        "Label Stack Entry",
+        "RFC 3032"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3032.html",
+            "referencia": "IETF RFC 3032, sección 2.1 y figura 1: el campo Label de cada entrada de la pila MPLS ocupa 20 bits; los campos restantes son TC/EXP (3), S (1) y TTL (8)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I, tema 113: redes de transporte, MPLS y redes de agregación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX, tema IV.10: redes WAN y tecnologías MPLS/SD-WAN."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "ITIC Academy/Drive: ITIC Academy, bloque 42, redes y tecnologías de transporte: cotejo de MPLS; la anchura del campo se valida con IETF RFC 3032."
+          }
+        ],
+        "observaciones": "Se conserva B. RFC 3032 especifica que Label ocupa 20 bits dentro de una entrada de 32 bits; los 12 restantes se distribuyen entre los campos TC/EXP, S y TTL. Cotejo curricular ITIC Academy: ITIC Academy, bloque 42, redes y tecnologías de transporte: cotejo de MPLS; la anchura del campo se valida con IETF RFC 3032. Correspondencia oficial: A1-113/A2-IV-10. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias."
+      }
     },
     {
       "id": 6772,
       "bloque": 0,
       "tema": 0,
-      "texto": "Bitlocker sirve para:",
+      "texto": "¿Para qué sirve BitLocker Drive Encryption en Windows?",
       "opciones": [
-        "Optimizar el rendimiento de las unidades de almacenamiento",
-        "Cifrar ficheros individualmente mediante el algoritmo de cifrado AES",
-        "Localizar dispositivos extraviados o robados",
-        "Cifrar el disco duro en equipos con Sistema Operativo Windows"
+        "Optimizar el rendimiento de las unidades de almacenamiento.",
+        "Cifrar ficheros individuales mediante AES, uno a uno.",
+        "Localizar dispositivos extraviados o robados.",
+        "Cifrar volúmenes completos, incluidos los del sistema operativo o de datos, para proteger la información almacenada."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Se conserva D y se precisa el alcance: BitLocker cifra volúmenes completos; no es una función de cifrado individual de archivos ni de localización de dispositivos. Los algoritmos y modos concretos dependen de la versión y configuración de Windows. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27, sistemas operativos Windows/Linux: cotejo de administración y protección de volúmenes; la función BitLocker se contrasta con Microsoft Learn. Correspondencia oficial: A1-79/A2-II-2/A2-II-13. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-II-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27, sistemas operativos Windows/Linux: cotejo de administración y protección de volúmenes; la función BitLocker se contrasta con Microsoft Learn.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 27, sistemas operativos Windows/Linux: cotejo de administración y protección de volúmenes; la función BitLocker se contrasta con Microsoft Learn. Correspondencia oficial: A1-79/A2-II-2/A2-II-13. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias."
+      },
+      "etiquetas": [
+        "BitLocker",
+        "cifrado de volumen",
+        "cifrado de disco",
+        "Windows",
+        "AES"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview",
+            "referencia": "Microsoft Learn, BitLocker overview: BitLocker Drive Encryption cifra volúmenes completos en Windows, incluidos volúmenes del sistema operativo y unidades de datos; no es cifrado selectivo de archivos individuales."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/windows/security/book/operating-system-security-encryption-and-data-protection",
+            "referencia": "Microsoft Learn, Windows security book: describe el cifrado de volumen BitLocker y los algoritmos/modos usados en Windows; el alcance depende de volumen y configuración."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I, tema 79: cifrado y algoritmos simétricos/asimétricos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX, temas II.2 (administración de sistemas operativos Windows) y II.13 (seguridad lógica de sistemas)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "ITIC Academy/Drive: ITIC Academy, bloque 27, sistemas operativos Windows/Linux: cotejo de administración y protección de volúmenes; la función BitLocker se contrasta con Microsoft Learn."
+          }
+        ],
+        "observaciones": "Se conserva D y se precisa el alcance: BitLocker cifra volúmenes completos; no es una función de cifrado individual de archivos ni de localización de dispositivos. Los algoritmos y modos concretos dependen de la versión y configuración de Windows. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27, sistemas operativos Windows/Linux: cotejo de administración y protección de volúmenes; la función BitLocker se contrasta con Microsoft Learn. Correspondencia oficial: A1-79/A2-II-2/A2-II-13. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias."
+      }
     },
     {
       "id": 6773,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿En cuál de las siguientes modalidades de servicios en la nube se pueden encontrar servicios de correo electrónico o de paquetes ofimáticos?:",
+      "texto": "¿En qué modelo de servicio cloud se ofrecen habitualmente aplicaciones completas como correo electrónico web o paquetes ofimáticos en línea?",
       "opciones": [
-        "IasS.",
-        "PaaS.",
-        "SaaS.",
-        "HaaS."
+        "IaaS (infraestructura como servicio).",
+        "PaaS (plataforma como servicio).",
+        "SaaS (software como servicio).",
+        "HaaS (hardware como servicio)."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se conserva C. En SaaS el consumidor utiliza aplicaciones del proveedor ejecutadas sobre infraestructura cloud; el proveedor gestiona la aplicación y la infraestructura subyacente, con posibles ajustes limitados del usuario. Cotejo curricular ITIC Academy: ITIC Academy, bloque 25, Cloud Computing, edición 2026: cotejo de modelos IaaS/PaaS/SaaS y aplicaciones cloud; la definición se contrasta con NIST SP 800-145. Correspondencia oficial: A1-55/A2-II-1. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-55"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 25, Cloud Computing, edición 2026: cotejo de modelos IaaS/PaaS/SaaS y aplicaciones cloud; la definición se contrasta con NIST SP 800-145.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 25, Cloud Computing, edición 2026: cotejo de modelos IaaS/PaaS/SaaS y aplicaciones cloud; la definición se contrasta con NIST SP 800-145. Correspondencia oficial: A1-55/A2-II-1. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias."
+      },
+      "etiquetas": [
+        "computación en la nube",
+        "SaaS",
+        "software como servicio",
+        "correo electrónico",
+        "ofimática"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/software_as_a_service",
+            "referencia": "NIST CSRC, definición de Software as a Service (SaaS), basada en SP 800-145: el consumidor utiliza aplicaciones del proveedor que se ejecutan en infraestructura cloud; no administra la infraestructura subyacente."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+            "referencia": "NIST SP 800-145, The NIST Definition of Cloud Computing: definiciones de SaaS, PaaS e IaaS y sus diferencias de responsabilidad/control."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I, tema 55: computación en nube; IaaS, PaaS y SaaS."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX, tema II.1: computación en la nube, componentes, funcionalidades y capacidades."
+          },
+          {
+            "url": "https://drive.google.com/file/d/16Er3cneQ-Vik3zSjYq6zQUOfSKK4vxVu/view?usp=drivesdk",
+            "referencia": "ITIC Academy/Drive: ITIC Academy, bloque 25, Cloud Computing, edición 2026: cotejo de modelos IaaS/PaaS/SaaS y aplicaciones cloud; la definición se contrasta con NIST SP 800-145."
+          }
+        ],
+        "observaciones": "Se conserva C. En SaaS el consumidor utiliza aplicaciones del proveedor ejecutadas sobre infraestructura cloud; el proveedor gestiona la aplicación y la infraestructura subyacente, con posibles ajustes limitados del usuario. Cotejo curricular ITIC Academy: ITIC Academy, bloque 25, Cloud Computing, edición 2026: cotejo de modelos IaaS/PaaS/SaaS y aplicaciones cloud; la definición se contrasta con NIST SP 800-145. Correspondencia oficial: A1-55/A2-II-1. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias."
+      }
     },
     {
       "id": 6774,
       "bloque": 0,
       "tema": 0,
-      "texto": "En una red inalámbrica el SSID (Service Set Identifier):",
+      "texto": "Respecto del SSID de una red IEEE 802.11, señale la afirmación correcta.",
       "opciones": [
-        "Es una secuencia de un máximo de 32 caracteres.",
+        "El campo SSID tiene una longitud máxima de 32 octetos.",
         "No puede contener caracteres numéricos.",
-        "No es sensible a mayúsculas y minúsculas.",
-        "Es el nombre con el que se identifica a cada uno de los dispositivos que se conectan a dicha red."
+        "No distingue entre mayúsculas y minúsculas.",
+        "Identifica individualmente a cada dispositivo cliente conectado, no a la red."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Se conserva A y se cambia «32 caracteres» por «32 octetos», que es la unidad del campo en IEEE 802.11. El SSID identifica la red; puede incluir cifras y las especificaciones citadas indican que se trata como sensible a mayúsculas/minúsculas. Cotejo curricular ITIC Academy: ITIC Academy, bloque 46, redes inalámbricas, edición 2026: cotejo de SSID e IEEE 802.11; las propiedades y unidades del campo se contrastan con las especificaciones técnicas. Correspondencia oficial: A1-114/A2-IV-11. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-114"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 46, redes inalámbricas, edición 2026: cotejo de SSID e IEEE 802.11; las propiedades y unidades del campo se contrastan con las especificaciones técnicas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 46, redes inalámbricas, edición 2026: cotejo de SSID e IEEE 802.11; las propiedades y unidades del campo se contrastan con las especificaciones técnicas. Correspondencia oficial: A1-114/A2-IV-11. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias."
+      },
+      "etiquetas": [
+        "SSID",
+        "IEEE 802.11",
+        "redes inalámbricas",
+        "WLAN",
+        "identificador de red"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-lltd/364f7ef1-798f-4f46-93be-af7c154092a3",
+            "referencia": "Microsoft Open Specifications, MS-LLTD, atributo SSID: identifica la red WLAN asociada al punto de acceso, se trata como sensible a mayúsculas/minúsculas y su longitud máxima es 32 caracteres en la representación de este protocolo."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-qdp/b599bfb4-7c76-4ab9-b606-9da707588f7b",
+            "referencia": "Microsoft Open Specifications, MS-QDP: la longitud del SSID se expresa en octetos y el máximo del campo es 32 octetos."
+          },
+          {
+            "url": "https://standards.ieee.org/ieee/802.11/7028/",
+            "referencia": "IEEE Std 802.11, estándar de redes LAN inalámbricas: formato y límite del campo SSID (máximo 32 octetos)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I, tema 114: redes inalámbricas IEEE 802.11, características, modos y seguridad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX, tema IV.11: redes inalámbricas, protocolos, características y seguridad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "ITIC Academy/Drive: ITIC Academy, bloque 46, redes inalámbricas, edición 2026: cotejo de SSID e IEEE 802.11; las propiedades y unidades del campo se contrastan con las especificaciones técnicas."
+          }
+        ],
+        "observaciones": "Se conserva A y se cambia «32 caracteres» por «32 octetos», que es la unidad del campo en IEEE 802.11. El SSID identifica la red; puede incluir cifras y las especificaciones citadas indican que se trata como sensible a mayúsculas/minúsculas. Cotejo curricular ITIC Academy: ITIC Academy, bloque 46, redes inalámbricas, edición 2026: cotejo de SSID e IEEE 802.11; las propiedades y unidades del campo se contrastan con las especificaciones técnicas. Correspondencia oficial: A1-114/A2-IV-11. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias."
+      }
     },
     {
       "id": 6775,
       "bloque": 0,
       "tema": 0,
-      "texto": "El principio que establece que las resoluciones administrativas de carácter particular no podrán vulnerar lo establecido en una disposición de carácter general, aunque aquéllas procedan de un órgano de igual o superior jerarquía al que dictó la disposición general es:",
+      "texto": "El artículo 37 de la Ley 39/2015 prohíbe que una resolución particular vulnere una disposición general, incluso si procede de un órgano de igual o superior jerarquía. ¿Cómo se denomina este principio?",
       "opciones": [
-        "La reserva de Ley",
-        "La jerarquía normativa",
-        "La inderogabilidad singular de los reglamentos",
-        "La irretroactividad de las disposiciones sancionadoras o no favorables"
+        "Reserva de ley.",
+        "Jerarquía normativa.",
+        "Inderogabilidad singular de los reglamentos.",
+        "Irretroactividad de las disposiciones sancionadoras no favorables."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Se conserva C. La regla del artículo 37 de la Ley 39/2015 se denomina inderogabilidad singular: una resolución administrativa particular no puede excepcionar para un caso concreto lo establecido en una disposición general. Cotejo curricular ITIC Academy: ITIC Academy, bloque 03, Actuación Administrativa, edición 2026: cotejo de actos administrativos y Ley 39/2015; la denominación jurídica se comprueba en el artículo 37 del BOE. Correspondencia oficial: A1-7/A1-8/A2-I-8. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-7",
+          "A1-8"
+        ],
+        "A2": [
+          "A2-I-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 03, Actuación Administrativa, edición 2026: cotejo de actos administrativos y Ley 39/2015; la denominación jurídica se comprueba en el artículo 37 del BOE.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 03, Actuación Administrativa, edición 2026: cotejo de actos administrativos y Ley 39/2015; la denominación jurídica se comprueba en el artículo 37 del BOE. Correspondencia oficial: A1-7/A1-8/A2-I-8. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias."
+      },
+      "etiquetas": [
+        "Ley 39/2015",
+        "artículo 37",
+        "inderogabilidad singular de los reglamentos",
+        "resolución administrativa particular",
+        "disposición general"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565",
+            "referencia": "BOE, Ley 39/2015, texto consolidado vigente consultado, artículo 37: las resoluciones particulares no pueden vulnerar disposiciones generales, incluso si proceden de órgano de igual o superior jerarquía."
+          },
+          {
+            "url": "https://www.boe.es/buscar/pdf/2015/BOE-A-2015-10565-consolidado.pdf",
+            "referencia": "BOE, texto consolidado de la Ley 39/2015, artículo 37, «Inderogabilidad singular»: formulación legal de la regla preguntada."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "BOE-A-2025-25938, anexo I, temas 7–8: fuentes y jerarquía del Derecho administrativo, límites de los reglamentos y procedimiento administrativo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "BOE-A-2025-26262, anexo IX, tema I.8: Leyes de Procedimiento Administrativo Común y de Régimen Jurídico del Sector Público."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk",
+            "referencia": "ITIC Academy/Drive: ITIC Academy, bloque 03, Actuación Administrativa, edición 2026: cotejo de actos administrativos y Ley 39/2015; la denominación jurídica se comprueba en el artículo 37 del BOE."
+          }
+        ],
+        "observaciones": "Se conserva C. La regla del artículo 37 de la Ley 39/2015 se denomina inderogabilidad singular: una resolución administrativa particular no puede excepcionar para un caso concreto lo establecido en una disposición general. Cotejo curricular ITIC Academy: ITIC Academy, bloque 03, Actuación Administrativa, edición 2026: cotejo de actos administrativos y Ley 39/2015; la denominación jurídica se comprueba en el artículo 37 del BOE. Correspondencia oficial: A1-7/A1-8/A2-I-8. El cotejo académico acredita cobertura curricular; las afirmaciones específicas se contrastan con fuentes técnicas o jurídicas primarias."
+      }
     },
     {
       "id": 6776,
