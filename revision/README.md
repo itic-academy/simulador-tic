@@ -16,6 +16,8 @@ Fuentes primarias: [MÉTRICA v3, Gestión de Proyectos](https://administracionel
 
 Inventario tras el lote: 12.123 preguntas; 6.765 examinadas individualmente; 6.646 verificadas (1.288 vigentes, 4.869 corregidas y 489 históricas); 119 pendientes documentadas (46 de fuente y 73 de ambigüedad); 5.358 sin revisar individualmente; errores estructurales: 0. Ejecutados node revision/revisar-lote-1289.cjs, node revision/academia-lote-1289.cjs, node revision/inventario.cjs, node revision/verificar.cjs y git diff --check.
 
+**Publicación verificada:** commit de datos f6bf6d318e6611398fce992cd49b0c0ad9f6e757; [GitHub Actions 43662076232](https://github.com/itic-academy/simulador-tic/actions/runs/43662076232) terminó Success (build y deploy). GitHub Pages respondió HTTP 200 sin caché para este README, inventario, registro del lote y banco. El banco público contiene los cinco IDs 6766–6770, todos en estado corregida, con respuestas D, D, D, D y B y las clasificaciones A1/A2 indicadas arriba; el registro público contiene exactamente los cinco mismos IDs. El inventario desplegado confirma 12.123 preguntas, 6.765 examinadas individualmente, 6.646 verificadas, 119 pendientes y 5.358 sin revisar individualmente.
+
 ## Lote 1288 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 6761–6765. Se actualizó la identificación de servidores HTTP abiertos y hardware PowerEdge; se precisó el principio ISP; se desambiguó Docker Engine frente a Swarm; se sustituyó «data-driven» por caja negra en la definición basada en especificación; y se aplicó SemVer 2.0.0 a las reglas de versiones.
