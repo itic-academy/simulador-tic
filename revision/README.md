@@ -16,6 +16,8 @@ Fuentes primarias: [U.S. Department of Energy, guía de eficiencia de CPD, §5.1
 
 Inventario tras el lote: 12.123 preguntas; 6.750 examinadas individualmente; 6.631 verificadas (1.288 vigentes, 4.854 corregidas y 489 históricas); 119 pendientes documentadas (46 de fuente, 73 de ambigüedad); 5.373 sin revisión individual; errores estructurales: 0. Ejecutados `node revision/revisar-lote-1286.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
+**Publicación verificada:** commit de datos `aebff35` (`aebff35767ff9af6284ec2d801fc4931039bc517`), [Deploy GitHub Pages, workflow run 43659154895](https://github.com/itic-academy/simulador-tic/actions/runs/43659154895), completado con estado **Success** e incluyendo el commit. GitHub Pages respondió HTTP 200, solicitado sin caché, para `revision/`, `revision/cambios-lote-1286.json`, `revision/inventario.json`, `preguntas_preparatic.json` y `revision/README.md`. El registro público contiene los IDs 6751–6755; el banco servido refleja las claves C, C, C, A y A y el estado corregida en cada fila. El inventario publicado confirma 12.123 preguntas, 6.750 examinadas individualmente, 6.631 verificadas, 119 pendientes documentadas y 5.373 sin revisión individual.
+
 ## Lote 1285 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 6746–6750. Se precisó RMA como autorización de devolución sin prometer reembolso; se corrigió la confusión entre la Estrategia de Seguridad Nacional 2021 y la Estrategia Nacional de Ciberseguridad 2019; se ajustó la respuesta de la licencia Expat para incluir la conservación de avisos; se explicitó la excepción de elección y consentimiento del artículo 5.2 del DMA; y se contrastó LTO-9 con la matriz oficial del consorcio.
