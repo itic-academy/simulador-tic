@@ -16,7 +16,7 @@ Cotejo de ITIC Academy en Drive: [bloque 39 Calidad y mantenimiento (A1 96/98/10
 
 Inventario tras el lote: 12.123 preguntas; 6.970 examinadas individualmente; 6.849 verificadas (1.314 vigentes, 5.037 corregidas y 498 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.153 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1330.cjs`, `node revision/academia-lote-1330.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue:** se verificará después de publicar el lote.
+**Despliegue verificado:** el commit `b194fec` completó correctamente el workflow de GitHub Actions (build y deploy, run `43694678157`). El inventario publicado responde HTTP 200 y refleja 12.123 preguntas: 1.314 vigentes, 5.037 corregidas, 498 históricas, 121 pendientes documentadas y 5.153 sin revisar individualmente; no hay errores estructurales.
 
 ## Lote 1329 — 15 de noviembre de 2026
 
