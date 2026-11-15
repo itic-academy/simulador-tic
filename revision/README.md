@@ -18,7 +18,7 @@ Cotejo Drive: [ITIC Academy, bloque 27, Sistemas operativos (2026)](https://driv
 
 Inventario tras el lote: 12.123 preguntas; 6.880 examinadas individualmente; 6.759 verificadas (1.294 vigentes, 4.975 corregidas y 490 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.243 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1312.cjs`, `node revision/academia-lote-1312.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue pendiente de verificación tras este lote:** se actualizará aquí el SHA enviado a `main` y el resultado de la comprobación externa.
+**Despliegue pendiente de verificación:** el lote se envió a `main` en `891ed9357991ade19c3f1ca0f2bffa7985c699c3`. La comprobación posterior volvió a fallar por DNS (`Host desconocido. (itic-academy.github.io:443)`); la consulta web tampoco pudo abrir Pages ni la API de Actions. El contenido está enviado al repositorio, pero no se da el sitio publicado por verificado hasta comprobarlo en público.
 
 ## Lote 1311 — 15 de noviembre de 2026
 
