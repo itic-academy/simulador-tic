@@ -364838,7 +364838,7 @@
       "id": 6911,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale el códec que no aplica compresión de entre los siguientes:",
+      "texto": "¿Cuál de estos códecs de voz representa la señal mediante PCM telefónica a 64 kbit/s, sin reducción de la tasa de bits respecto de PCM convencional?",
       "opciones": [
         "G.711",
         "G.726",
@@ -364846,63 +364846,298 @@
         "iLBC"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida. «No aplica compresión» era impreciso: G.711 usa compansión logarítmica (A-law/µ-law), aunque mantiene el flujo PCM telefónico de 64 kbit/s; G.726, G.729 e iLBC reducen la tasa con ADPCM/CS-ACELP/iLBC. Se reescribe para preguntar por tasa de bits y distinguir compansión de codificación de menor tasa. Cotejo académico: ITIC Academy, bloque 50 Videoconferencia, §1.3 y tabla de códecs G.711/G.726/G.729; bloque 43 Protocolos para voz sobre IP. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 50 Videoconferencia, §1.3: H.323 y códecs vocales, incluida tabla G.711/G.726/G.729; el bloque 43 contextualiza voz sobre IP. El material identifica G.711 como PCM de 64 kbit/s. No sustituye a las Recomendaciones UIT-T ni al RFC que fija la tasa de iLBC. Correspondencia oficial: A1-108/A1-116/A2-IV-14. Se coteja la cobertura temática sin sustituir a la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-116"
+        ],
+        "A2": [
+          "A2-IV-14"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 50 Videoconferencia, §1.3: H.323 y códecs vocales, incluida tabla G.711/G.726/G.729; el bloque 43 contextualiza voz sobre IP. El material identifica G.711 como PCM de 64 kbit/s. No sustituye a las Recomendaciones UIT-T ni al RFC que fija la tasa de iLBC.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 50 Videoconferencia, §1.3: H.323 y códecs vocales, incluida tabla G.711/G.726/G.729; el bloque 43 contextualiza voz sobre IP. El material identifica G.711 como PCM de 64 kbit/s. No sustituye a las Recomendaciones UIT-T ni al RFC que fija la tasa de iLBC. Correspondencia oficial: A1-108/A1-116/A2-IV-14. Se coteja la cobertura temática sin sustituir a la fuente primaria."
+      },
+      "etiquetas": [
+        "VoIP",
+        "códecs de voz",
+        "PCM",
+        "G.711",
+        "G.726",
+        "G.729",
+        "iLBC"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.711/en",
+            "referencia": "UIT-T G.711: codificación de voz por PCM; tasa telefónica nominal de 64 kbit/s. La compansión A-law/µ-law es cuantificación no lineal, no reducción de la tasa a una tasa comprimida menor."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.726/en",
+            "referencia": "UIT-T G.726: ADPCM a 16, 24, 32 o 40 kbit/s."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.729/en",
+            "referencia": "UIT-T G.729: codificación CS-ACELP a 8 kbit/s."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3951.html",
+            "referencia": "IETF RFC 3951: iLBC opera a 13,33 kbit/s (tramas de 30 ms) o 15,2 kbit/s (20 ms)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 116: NGN/IMS, VoIP y comunicaciones unificadas; tema 108, redes de telecomunicaciones."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.14: NGN/IMS, VoIP y comunicaciones convergentes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 50 Videoconferencia, §1.3: H.323 y códecs vocales, incluida tabla G.711/G.726/G.729; el bloque 43 contextualiza voz sobre IP. El material identifica G.711 como PCM de 64 kbit/s. No sustituye a las Recomendaciones UIT-T ni al RFC que fija la tasa de iLBC."
+          }
+        ],
+        "observaciones": "Corregida. «No aplica compresión» era impreciso: G.711 usa compansión logarítmica (A-law/µ-law), aunque mantiene el flujo PCM telefónico de 64 kbit/s; G.726, G.729 e iLBC reducen la tasa con ADPCM/CS-ACELP/iLBC. Se reescribe para preguntar por tasa de bits y distinguir compansión de codificación de menor tasa. Cotejo académico: ITIC Academy, bloque 50 Videoconferencia, §1.3 y tabla de códecs G.711/G.726/G.729; bloque 43 Protocolos para voz sobre IP. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 50 Videoconferencia, §1.3: H.323 y códecs vocales, incluida tabla G.711/G.726/G.729; el bloque 43 contextualiza voz sobre IP. El material identifica G.711 como PCM de 64 kbit/s. No sustituye a las Recomendaciones UIT-T ni al RFC que fija la tasa de iLBC. Correspondencia oficial: A1-108/A1-116/A2-IV-14. Se coteja la cobertura temática sin sustituir a la fuente primaria."
+      }
     },
     {
       "id": 6912,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale de entre los siguientes, cuál no es un ataque en una red:",
+      "texto": "¿Cuál de los siguientes NO es una técnica de ataque dirigida a protocolos o infraestructura de red, sino un virus de macro que infecta documentos de Microsoft Word?",
       "opciones": [
         "Ping de la muerte",
-        "ARP poisoning",
+        "Envenenamiento ARP (ARP poisoning)",
         "Smurf",
-        "Snicker"
+        "Winword/Snicker"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida. El original podía llamar «ataque en una red» a cualquier malware que pudiera difundirse por red; se delimita a técnicas contra protocolos/infraestructura. Winword/Snicker es un virus histórico de macro para documentos Word, mientras que Ping of Death, ARP poisoning y Smurf son técnicas de ataque de red. Cotejo académico: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, que cubre amenazas y ataques; no se localizó en la unidad una ficha específica para el macrovirus histórico Snicker, que se comprueba en el catálogo de Sophos. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 48 Seguridad en redes y en el nivel de aplicación: amenazas, ataques y herramientas de prevención. La unidad ofrece cobertura de la categoría general, no una ficha sobre Winword/Snicker; el tipo de virus macro se acredita con el catálogo histórico Sophos. Correspondencia oficial: A1-125/A2-IV-12. Se coteja la cobertura temática sin sustituir a la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 48 Seguridad en redes y en el nivel de aplicación: amenazas, ataques y herramientas de prevención. La unidad ofrece cobertura de la categoría general, no una ficha sobre Winword/Snicker; el tipo de virus macro se acredita con el catálogo histórico Sophos.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 48 Seguridad en redes y en el nivel de aplicación: amenazas, ataques y herramientas de prevención. La unidad ofrece cobertura de la categoría general, no una ficha sobre Winword/Snicker; el tipo de virus macro se acredita con el catálogo histórico Sophos. Correspondencia oficial: A1-125/A2-IV-12. Se coteja la cobertura temática sin sustituir a la fuente primaria."
+      },
+      "etiquetas": [
+        "seguridad de redes",
+        "ataques de denegación de servicio",
+        "ARP poisoning",
+        "Smurf",
+        "Ping of Death",
+        "malware histórico",
+        "virus de macro"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.sei.cmu.edu/documents/505/1998_019_001_496180.pdf",
+            "referencia": "CERT Coordination Center, advisory CA-98.01, reproducido en la colección de advisories de SEI: Smurf es un ataque de denegación de servicio por ICMP/broadcast y spoofing."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc826.html",
+            "referencia": "IETF RFC 826: especificación de ARP; el envenenamiento ARP es una técnica de suplantación/manipulación de la resolución de direcciones en la LAN."
+          },
+          {
+            "url": "https://citeseerx.ist.psu.edu/document?doi=09bfc774dea6d80346255a2ee78010dcb7081f12&repid=rep1&type=pdf",
+            "referencia": "Sophos Reference Guide 1998/1999, sección macrovirus: Winword/Snicker es un virus de macro que infecta documentos Word; no es el nombre de una técnica de ataque de protocolos o infraestructura de red."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 125: seguridad en redes y tipos de ataques."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: seguridad en redes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 48 Seguridad en redes y en el nivel de aplicación: amenazas, ataques y herramientas de prevención. La unidad ofrece cobertura de la categoría general, no una ficha sobre Winword/Snicker; el tipo de virus macro se acredita con el catálogo histórico Sophos."
+          }
+        ],
+        "observaciones": "Corregida. El original podía llamar «ataque en una red» a cualquier malware que pudiera difundirse por red; se delimita a técnicas contra protocolos/infraestructura. Winword/Snicker es un virus histórico de macro para documentos Word, mientras que Ping of Death, ARP poisoning y Smurf son técnicas de ataque de red. Cotejo académico: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, que cubre amenazas y ataques; no se localizó en la unidad una ficha específica para el macrovirus histórico Snicker, que se comprueba en el catálogo de Sophos. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 48 Seguridad en redes y en el nivel de aplicación: amenazas, ataques y herramientas de prevención. La unidad ofrece cobertura de la categoría general, no una ficha sobre Winword/Snicker; el tipo de virus macro se acredita con el catálogo histórico Sophos. Correspondencia oficial: A1-125/A2-IV-12. Se coteja la cobertura temática sin sustituir a la fuente primaria."
+      }
     },
     {
       "id": 6913,
       "bloque": 0,
       "tema": 0,
-      "texto": "Sniffer de paquetes desarrollado por el FBI para la monitorización de las transmisiones electrónicas de criminales:",
+      "texto": "¿Qué sistema histórico de análisis y captura selectiva de paquetes desarrolló el FBI para ejecutar órdenes judiciales de interceptación de comunicaciones electrónicas?",
       "opciones": [
-        "Carnivore",
+        "Carnivore (DCS 1000)",
         "Internet Key Exchange (IKE)",
         "Kerberos",
-        "SSL"
+        "SSL/TLS"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Histórica. Carnivore (denominado después DCS 1000) fue un analizador/capturador selectivo de paquetes desarrollado por el FBI para apoyar interceptaciones autorizadas; el FBI dejó de desarrollarlo y pasó a una solución comercial. Se conserva como referencia histórica, no como herramienta actual. Cotejo académico: ITIC Academy, bloque 48 Seguridad en redes, cubre monitorización y herramientas de seguridad, pero no se localizó una referencia específica a Carnivore; la descripción histórica se verifica con el informe del DOJ y la comparecencia documental del FBI. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 48 Seguridad en redes y en el nivel de aplicación: monitorización y herramientas de seguridad. No se encontró mención literal a Carnivore/DCS 1000; la naturaleza y situación histórica se verifican con el informe del DOJ y documentación presentada por el FBI al Congreso. Correspondencia oficial: A1-125/A2-IV-12. Se coteja la cobertura temática sin sustituir a la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 48 Seguridad en redes y en el nivel de aplicación: monitorización y herramientas de seguridad. No se encontró mención literal a Carnivore/DCS 1000; la naturaleza y situación histórica se verifican con el informe del DOJ y documentación presentada por el FBI al Congreso.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 48 Seguridad en redes y en el nivel de aplicación: monitorización y herramientas de seguridad. No se encontró mención literal a Carnivore/DCS 1000; la naturaleza y situación histórica se verifican con el informe del DOJ y documentación presentada por el FBI al Congreso. Correspondencia oficial: A1-125/A2-IV-12. Se coteja la cobertura temática sin sustituir a la fuente primaria."
+      },
+      "etiquetas": [
+        "Carnivore",
+        "DCS 1000",
+        "FBI",
+        "captura de paquetes",
+        "interceptación judicial",
+        "sistema histórico"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.justice.gov/archive/jmd/carniv_final.pdf",
+            "referencia": "Departamento de Justicia de EE. UU., revisión técnica de Carnivore (2000): describe el sistema especializado del FBI, su filtrado de paquetes y salvaguardas respecto de órdenes judiciales."
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CHRG-107shrg86517/pdf/CHRG-107shrg86517.pdf",
+            "referencia": "Testimonio/documentación del FBI presentada al Congreso en 2002: la solución comercial pasó a ser el sistema primario de recopilación y el FBI decidió terminar el desarrollo de Carnivore/DCS 1000 por mantenimiento y coste; justifica tratarlo como tecnología histórica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 125: seguridad en redes y herramientas de control/interceptación como contexto técnico."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.12: seguridad en redes."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 48 Seguridad en redes y en el nivel de aplicación: monitorización y herramientas de seguridad. No se encontró mención literal a Carnivore/DCS 1000; la naturaleza y situación histórica se verifican con el informe del DOJ y documentación presentada por el FBI al Congreso."
+          }
+        ],
+        "observaciones": "Histórica. Carnivore (denominado después DCS 1000) fue un analizador/capturador selectivo de paquetes desarrollado por el FBI para apoyar interceptaciones autorizadas; el FBI dejó de desarrollarlo y pasó a una solución comercial. Se conserva como referencia histórica, no como herramienta actual. Cotejo académico: ITIC Academy, bloque 48 Seguridad en redes, cubre monitorización y herramientas de seguridad, pero no se localizó una referencia específica a Carnivore; la descripción histórica se verifica con el informe del DOJ y la comparecencia documental del FBI. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 48 Seguridad en redes y en el nivel de aplicación: monitorización y herramientas de seguridad. No se encontró mención literal a Carnivore/DCS 1000; la naturaleza y situación histórica se verifican con el informe del DOJ y documentación presentada por el FBI al Congreso. Correspondencia oficial: A1-125/A2-IV-12. Se coteja la cobertura temática sin sustituir a la fuente primaria."
+      }
     },
     {
       "id": 6914,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si hablamos de virtualización ¿cuál de las siguientes afirmaciones es correcta?",
+      "texto": "¿Qué afirmación describe correctamente la virtualización a nivel de sistema operativo?",
       "opciones": [
-        "La virtualización del sistema operativo ofrece un conjunto de librerías que hace que las aplicaciones que se ejecutan aparenten que lo hacen en una máquina dedicada",
-        "La virtualización del sistema operativo es la mejor solución para configuraciones heterogéneas",
-        "La virtualización del sistema operativo hace que las aplicaciones funcionen siempre igual de rápido que en el mismo sistema dedicado",
-        "En emulación hardware o VMM las aplicaciones no pueden migrarse entre máquinas diferentes"
+        "Varios entornos aislados comparten el kernel del sistema anfitrión, aunque cada entorno mantiene su espacio de procesos y recursos aislado.",
+        "Cada entorno ejecuta necesariamente un kernel independiente sobre hardware virtualizado.",
+        "Los entornos de sistema operativo permiten ejecutar sin adaptación cualquier kernel incompatible con el del anfitrión.",
+        "El aislamiento garantiza siempre el mismo rendimiento que una máquina física dedicada."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida. El original atribuía a la virtualización del sistema operativo una capa de librerías que simula una máquina dedicada y ofrecía como correctas opciones absolutas o falsas. Se reescribe: los contenedores aíslan entornos de usuario pero comparten el kernel anfitrión; no son máquinas virtuales con kernel independiente y su rendimiento no queda garantizado como idéntico al físico. Cotejo académico: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización (2026), sección de contenedores y contraste con máquinas virtuales; la propiedad de kernel compartido se confirma en documentación Docker. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización: incluye virtualización de sistemas/servidores y diferencia contenedores de máquinas virtuales. La precisión del kernel compartido se coteja con documentación técnica oficial de Docker. Correspondencia oficial: A1-132/A2-IV-6. Se coteja la cobertura temática sin sustituir a la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-132"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": "ITIC Academy 2026, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización: incluye virtualización de sistemas/servidores y diferencia contenedores de máquinas virtuales. La precisión del kernel compartido se coteja con documentación técnica oficial de Docker.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización: incluye virtualización de sistemas/servidores y diferencia contenedores de máquinas virtuales. La precisión del kernel compartido se coteja con documentación técnica oficial de Docker. Correspondencia oficial: A1-132/A2-IV-6. Se coteja la cobertura temática sin sustituir a la fuente primaria."
+      },
+      "etiquetas": [
+        "virtualización",
+        "virtualización a nivel de sistema operativo",
+        "contenedores",
+        "kernel compartido",
+        "aislamiento"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://docs.docker.com/learn/content/what-is-a-container/",
+            "referencia": "Docker Docs, What is a container?: los contenedores son procesos aislados y comparten el kernel del anfitrión; a diferencia de una máquina virtual, no arrancan un sistema operativo/ kernel propio."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 132: virtualización de sistemas, centros de datos y puestos de trabajo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV.6: virtualización y consolidación de servidores y recursos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización: incluye virtualización de sistemas/servidores y diferencia contenedores de máquinas virtuales. La precisión del kernel compartido se coteja con documentación técnica oficial de Docker."
+          }
+        ],
+        "observaciones": "Corregida. El original atribuía a la virtualización del sistema operativo una capa de librerías que simula una máquina dedicada y ofrecía como correctas opciones absolutas o falsas. Se reescribe: los contenedores aíslan entornos de usuario pero comparten el kernel anfitrión; no son máquinas virtuales con kernel independiente y su rendimiento no queda garantizado como idéntico al físico. Cotejo académico: ITIC Academy, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización (2026), sección de contenedores y contraste con máquinas virtuales; la propiedad de kernel compartido se confirma en documentación Docker. Cotejo curricular ITIC Academy: ITIC Academy 2026, bloque 26 Hardware, servidores, CPD, almacenamiento y virtualización: incluye virtualización de sistemas/servidores y diferencia contenedores de máquinas virtuales. La precisión del kernel compartido se coteja con documentación técnica oficial de Docker. Correspondencia oficial: A1-132/A2-IV-6. Se coteja la cobertura temática sin sustituir a la fuente primaria."
+      }
     },
     {
       "id": 6915,
       "bloque": 0,
       "tema": 0,
-      "texto": "De acuerdo con la Constitución Española, ¿quién está legitimado, entre otros, para interponer el recurso de inconstitucionalidad?:",
+      "texto": "Según el artículo 162.1.a de la Constitución Española, ¿quién está legitimado para interponer un recurso de inconstitucionalidad?",
       "opciones": [
-        "Cualquier persona natural o jurídica que invoque un interés legítimo.",
-        "40 diputados.",
+        "Cualquier persona física o jurídica que invoque un interés legítimo.",
+        "40 Diputados del Congreso.",
         "El Presidente del Gobierno.",
         "El Ministerio Fiscal."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida. Se mantienen las opciones con un único acierto: el Presidente del Gobierno está legitimado conforme al art. 162.1.a CE. Se explicita el error de las 40 diputadas/os (la Constitución exige 50) y se separa la legitimación para amparo de personas físicas o jurídicas con interés legítimo (art. 162.1.b). Cotejo académico: la unidad de ITIC Academy consultada sobre Constitución aborda organización autonómica y local y no desarrolla el art. 162 ni la legitimación ante el TC; se registra esa laguna de cobertura específica y se comprueba el texto directamente en el BOE. Cotejo curricular ITIC Academy: ITIC Academy, unidad constitucional disponible: organización territorial/autonómica y local; no trata de forma específica el artículo 162 CE ni la legitimación para el recurso de inconstitucionalidad. Por ello, se declara la laguna de cobertura concreta y se usa el texto consolidado oficial del BOE para la respuesta. Correspondencia oficial: A1-2/A2-I-2. Se coteja la cobertura temática sin sustituir a la fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-2"
+        ],
+        "A2": [
+          "A2-I-2"
+        ],
+        "bloque_academia": "ITIC Academy, unidad constitucional disponible: organización territorial/autonómica y local; no trata de forma específica el artículo 162 CE ni la legitimación para el recurso de inconstitucionalidad. Por ello, se declara la laguna de cobertura concreta y se usa el texto consolidado oficial del BOE para la respuesta.",
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, unidad constitucional disponible: organización territorial/autonómica y local; no trata de forma específica el artículo 162 CE ni la legitimación para el recurso de inconstitucionalidad. Por ello, se declara la laguna de cobertura concreta y se usa el texto consolidado oficial del BOE para la respuesta. Correspondencia oficial: A1-2/A2-I-2. Se coteja la cobertura temática sin sustituir a la fuente primaria."
+      },
+      "etiquetas": [
+        "Constitución Española",
+        "Tribunal Constitucional",
+        "recurso de inconstitucionalidad",
+        "legitimación",
+        "artículo 162"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+            "referencia": "Constitución Española, art. 162.1.a, texto consolidado BOE: legitimados el Presidente del Gobierno, Defensor del Pueblo, 50 Diputados, 50 Senadores, órganos ejecutivos colegiados autonómicos y, cuando proceda, sus Asambleas. El interés legítimo individual corresponde al recurso de amparo del art. 162.1.b, no a la acción de inconstitucionalidad."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 2: Constitución, Poder Judicial, Ministerio Fiscal y Tribunal Constitucional."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema I.2: Cortes Generales, Tribunal Constitucional y Defensor del Pueblo."
+          },
+          {
+            "url": "https://docs.google.com/document/d/1xBMfULSkmKGKsCPZLqmkEoU-eqJ9ymd4/edit?usp=drivesdk&ouid=107088454749630873035&rtp=1",
+            "referencia": "Cotejo curricular ITIC Academy: ITIC Academy, unidad constitucional disponible: organización territorial/autonómica y local; no trata de forma específica el artículo 162 CE ni la legitimación para el recurso de inconstitucionalidad. Por ello, se declara la laguna de cobertura concreta y se usa el texto consolidado oficial del BOE para la respuesta."
+          }
+        ],
+        "observaciones": "Corregida. Se mantienen las opciones con un único acierto: el Presidente del Gobierno está legitimado conforme al art. 162.1.a CE. Se explicita el error de las 40 diputadas/os (la Constitución exige 50) y se separa la legitimación para amparo de personas físicas o jurídicas con interés legítimo (art. 162.1.b). Cotejo académico: la unidad de ITIC Academy consultada sobre Constitución aborda organización autonómica y local y no desarrolla el art. 162 ni la legitimación ante el TC; se registra esa laguna de cobertura específica y se comprueba el texto directamente en el BOE. Cotejo curricular ITIC Academy: ITIC Academy, unidad constitucional disponible: organización territorial/autonómica y local; no trata de forma específica el artículo 162 CE ni la legitimación para el recurso de inconstitucionalidad. Por ello, se declara la laguna de cobertura concreta y se usa el texto consolidado oficial del BOE para la respuesta. Correspondencia oficial: A1-2/A2-I-2. Se coteja la cobertura temática sin sustituir a la fuente primaria."
+      }
     },
     {
       "id": 6916,
