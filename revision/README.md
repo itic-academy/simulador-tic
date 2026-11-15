@@ -17832,3 +17832,5 @@ Ejecutados `node revision/revisar-lote-1293.cjs`, `node revision/academia-lote-1
 
 **Despliegue pendiente de comprobación pública.**
 
+
+Despliegue del lote 1293 verificado: commit de datos c7b00aacdfcbfec84139e821c46f44b4c065612 en main; [GitHub Actions, ejecución 43665831756](https://github.com/itic-academy/simulador-tic/actions/runs/43665831756) terminó con éxito. GitHub Pages respondió HTTP 200, con caché evitada, para inventario, registro del lote, banco y este README. El registro público contiene exactamente los IDs 6786–6790 y respuestas 3/1/2/2/1; el banco publicado conserva esas claves, estado corregida, explicación y clasificación A1/A2. El inventario público confirma 12.123 preguntas, 6.785 revisadas individualmente, 6.666 verificadas, 119 pendientes y 5.338 sin revisión individual.
