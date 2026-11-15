@@ -1,0 +1,16 @@
+const fs=require('node:fs'),path=require('node:path');
+const file=path.join(__dirname,'README.md');let text=fs.readFileSync(file,'utf8');
+const sha=process.env.DATA_SHA;
+if(!sha||sha!=='cf6cf8cb76ddaf296d48901968af8c3d1f9b525e')throw Error('DATA_SHA debe ser el commit de datos publicado.');
+const start=text.indexOf('## Lote 1284 — 15 de noviembre de 2026');
+const end=text.indexOf('## Lote 1281 — 15 de noviembre de 2026',start);
+if(start<0||end<0)throw Error('No se encuentran los límites de la sección 1284.');
+const marker='**Publicación pendiente de verificación.**';
+const proof=`**Publicación verificada:** commit de datos \`cf6cf8c\` (\`${sha}\`) incluido con estado **Success** en [Deploy GitHub Pages, workflow run 43657465169](https://github.com/itic-academy/simulador-tic/actions/runs/43657465169). GitHub Pages respondió HTTP 200, solicitado sin caché, para \`revision/\`, \`revision/cambios-lote-1284.json\`, \`revision/inventario.json\`, \`preguntas_preparatic.json\` y \`revision/README.md\`. El registro servido contiene exactamente los IDs 6741–6745. El banco publicado refleja las claves 6741=D, 6742=B, 6743=C, 6744=la clave original sin certificar y 6745=D, junto con sus estados y clasificaciones. El inventario publicado confirma 12.123 preguntas, 6.740 revisadas individualmente, 6.621 verificadas (1.288 vigentes, 4.844 corregidas y 489 históricas), 119 pendientes (46 de fuente y 73 de ambigüedad), 5.383 sin revisión individual y cero errores estructurales.`;
+const section=text.slice(start,end);
+if(section.includes(marker))text=text.slice(0,start)+section.replace(marker,proof)+text.slice(end);
+else if(!section.includes('workflow run 43657465169'))throw Error('No hay marcador ni evidencia previa del lote 1284.');
+const summary='Último lote secuencial: 1284 (IDs 6741–6745). Acumulado: 6740 preguntas examinadas individualmente; 6621 verificadas (1288 vigentes, 4844 corregidas y 489 históricas); 119 pendientes documentadas (46 de fuente y 73 de ambigüedad); 5383 sin revisar individualmente.';
+if(!text.includes(summary))throw Error('No coincide el resumen actualizado del README.');
+if(!text.split('\n').slice(0,8).join('\n').includes('workflow run 43657465169'))text=text.replace(summary,summary+'\n\n'+proof);
+fs.writeFileSync(file,text);console.log('README actualizado con la verificación pública del lote 1284.');
