@@ -18,7 +18,7 @@ Cotejo de academia en Drive: [ITIC Academy, bloque 44, IoT/Industria 4.0, edici�
 
 Inventario tras el lote: 12.123 preguntas; 6.850 examinadas individualmente; 6.730 verificadas (1.294 vigentes, 4.947 corregidas y 489 históricas); 120 pendientes (47 de fuente y 73 de ambigüedad); 5.273 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1306.cjs`, `node revision/academia-lote-1306.cjs`, `node revision/fix-key-lote-1306.cjs` (control de consistencia de la clave de 6851), `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Publicación pendiente de verificación.**
+**Publicación verificada:** lote 1306 y corrección de clave de la pregunta 6851 publicados desde `ba30904f758966bee53493a933c1ed336fdf3c13`. [GitHub Actions 43676649131](https://github.com/itic-academy/simulador-tic/actions/runs/43676649131) concluyó con Success en build y deploy. GitHub Pages respondió HTTP 200 para el registro, inventario, README y banco. El registro público contiene exactamente 6851–6855; las claves publicadas son A, B, D, B y B, todas con estado `corregida`. El inventario público confirma 12.123 preguntas, 6.850 examinadas individualmente, 6.730 verificadas, 120 pendientes y 5.273 sin revisar individualmente.
 
 ## Lote 1305 — 15 de noviembre de 2026
 
