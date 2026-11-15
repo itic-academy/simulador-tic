@@ -1,6 +1,24 @@
 # Revisión del banco TIC — estado al 15 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1323 (IDs 6936–6940). Acumulado: 6935 preguntas examinadas individualmente; 6814 verificadas (1305 vigentes, 5013 corregidas y 496 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5188 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1324 (IDs 6941–6945). Acumulado: 6940 preguntas examinadas individualmente; 6819 verificadas (1308 vigentes, 5015 corregidas y 496 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5183 sin revisar individualmente.
+
+## Lote 1324 — 15 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6941–6945 con las NTI publicadas en BOE, el ENS vigente, servicios oficiales CCN-CERT, los programas A1/A2 y los bloques 2026 de ITIC Academy localizados en Drive.
+
+- **6941 — NTI de copiado auténtico y conversión:** vigente C. El objeto de la NTI es establecer reglas para generar copias electrónicas auténticas y copias papel auténticas de documentos públicos administrativos electrónicos, y para convertir formatos. No regula simplemente la compulsa o las solicitudes. A1-46; A2-I.9.
+- **6942 — metadatos mínimos de documento electrónico:** vigente D. El anexo I de la NTI enumera «Identificador», «Órgano» y «Fecha de captura»; esta última es la fecha de alta en el sistema de gestión documental. A1-46; A2-I.9.
+- **6943 — auditoría ENS:** corregida D. La pregunta citaba el derogado RD 3/2010, por lo que se actualizó al RD 311/2022 y se retiró la limitación innecesaria a sistemas de categoría alta. El art. 31 fija auditoría ordinaria bienal y extraordinaria tras cambios sustanciales; el responsable de seguridad analiza el informe y presenta conclusiones al responsable del sistema. A1-48; A2-I.9/II.11.
+- **6944 — servicios del CCN-CERT:** vigente A. CCN-CERT presta SAT-SARA, junto al gestor de Red SARA, y SAT-INET a organismos adscritos para alerta temprana. No se afirma que sea un servicio universal para cualquier organización. A1-48/127; A2-I.9/II.13.
+- **6945 — conformidad con el ENS:** corregida A. Se precisó el art. 38 del RD 311/2022: la categoría básica declara conformidad mediante autoevaluación; las categorías media y alta requieren auditoría para certificación. A1-48; A2-I.9/II.11.
+
+Fuentes primarias: [NTI de Procedimientos de copiado auténtico y conversión, objeto](https://www.boe.es/eli/es/res/2011/07/19/(6)); [NTI de Documento Electrónico, anexo I, metadatos mínimos](https://www.boe.es/buscar/act.php?id=BOE-A-2011-13169&p=20110730); [Real Decreto 311/2022, arts. 31 y 38, ENS consolidado](https://www.boe.es/eli/es/rd/2022/05/03/311/con); [CCN-CERT, SAT-SARA](https://www.ccn-cert.cni.es/es/guias-futuro.html?catid=11&id=2003%3Asat-sara-2&view=article) y [SAT-INET](https://www.ccn-cert.cni.es/es/gestion-de-incidentes/sistema-de-alerta-temprana-sat/sat-inet.html); [programas oficiales A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), cotejados con `temario-oficial.json`.
+
+Cotejo de ITIC Academy en Drive: [bloque de Interoperabilidad, temas A1 45–46 (versión 2026.2)](https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view?usp=drivesdk), apartados de NTI de documento, metadatos, copiado auténtico y conversión; [bloque 22 de Seguridad, ENS y Ciberseguridad (versión 2026.2)](https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk), que desarrolla el RD 311/2022, auditorías, conformidad, CCN-CERT y SAT. La academia emplea códigos A2 internos O9/T11/T13; se aplicaron los códigos oficiales A2 I.9/II.11/II.13. El cotejo académico comprueba cobertura curricular y no sustituye la norma ni las fuentes oficiales.
+
+Inventario tras el lote: 12.123 preguntas; 6.940 examinadas individualmente; 6.819 verificadas (1.308 vigentes, 5.015 corregidas y 496 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.183 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1324.cjs`, `node revision/academia-lote-1324.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
+
+**Despliegue pendiente de verificación:** el lote 1324 se ha preparado para publicar desde `main`; se actualizará este registro después de comprobar GitHub Actions y el inventario público.
 
 ## Lote 1323 — 15 de noviembre de 2026
 
