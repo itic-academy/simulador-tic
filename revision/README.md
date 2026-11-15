@@ -16,6 +16,8 @@ Cotejo ITIC Academy en Drive: [bloque 38 Análisis, Diseño y Construcción de S
 
 Inventario tras el lote: 12.123 preguntas; 7.230 examinadas individualmente; 7.108 verificadas (1.387 vigentes, 5.209 corregidas y 512 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.893 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1382.cjs`, `node revision/academia-lote-1382.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
+**Despliegue verificado:** el workflow [43738151752](https://github.com/itic-academy/simulador-tic/actions/runs/43738151752) finalizó `success` para el commit `50c1dab`. La raíz, `revision/README.md`, el inventario, el registro 1382 y el banco respondieron HTTP 200 mediante solicitudes sin caché. El inventario publicado refleja 12.123 preguntas, 7.108 verificadas y 4.893 aún sin revisar. La bitácora y el banco remotos contienen exactamente 7231–7235, todos con estado `corregida` y claves `2/1/1/2/1`; las clasificaciones A1/A2 remotas coinciden con los datos locales.
+
 ## Lote 1381 — 15 de noviembre de 2026
 
 ## Lote 1381 — 15 de noviembre de 2026
