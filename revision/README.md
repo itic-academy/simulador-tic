@@ -16,7 +16,7 @@ Fuentes primarias: [Real Decreto 250/2025, art. 1](https://www.boe.es/diario_boe
 
 Inventario tras el lote: 12.123 preguntas; 6.820 examinadas individualmente; 6.700 verificadas (1.288 vigentes, 4.923 corregidas y 489 históricas); 120 pendientes documentadas (47 de fuente y 73 de ambigüedad); 5.303 sin revisar individualmente; errores estructurales: 0. Ejecutados `node revision/revisar-lote-1300.cjs`, `node revision/academia-lote-1300.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Publicación pendiente:** el lote 1300 aún no se ha publicado ni verificado en GitHub Pages.
+**Publicación verificada:** lote 1300 publicado desde `eb3b61a1d48088480cca4deb83b19209a513929a`. [GitHub Actions 43671556294](https://github.com/itic-academy/simulador-tic/actions/runs/43671556294) concluyó con Success. GitHub Pages respondió HTTP 200 sin caché para el inventario, el registro del lote, el banco y este README. El registro público contiene exactamente los IDs 6821–6825; el banco público confirma los cinco en estado corregido y las claves A/C/A/C/A. El inventario público confirma 12.123 preguntas, 6.820 examinadas individualmente, 6.700 verificadas, 120 pendientes y 5.303 sin revisar individualmente.
 
 ## Lote 1299 — 15 de noviembre de 2026
 
