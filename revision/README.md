@@ -18,7 +18,7 @@ Cotejo de Drive: se leyeron los PDF [ITIC Academy, bloque 44, IoT y territorios 
 
 Inventario tras el lote: 12.123 preguntas; 6.835 examinadas individualmente; 6.715 verificadas (1.294 vigentes, 4.932 corregidas y 489 históricas); 120 pendientes (47 de fuente y 73 de ambigüedad); 5.288 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1303.cjs`, `node revision/academia-lote-1303.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`. El inventario estructural no acredita la revisión de contenido.
 
-**Publicación pendiente de verificación.**
+**Publicación verificada:** lote 1303 publicado desde `0bb100d66a532531f672c0653e0fb878ce7ca164`. [GitHub Actions 43673864876](https://github.com/itic-academy/simulador-tic/actions/runs/43673864876) concluyó con Success. GitHub Pages respondió HTTP 200 sin caché para el registro del lote, el inventario, el banco y este README. El registro público contiene exactamente los IDs 6836–6840 y las cinco claves publicadas concuerdan con las opciones correctas: D, C, A, B y C. El inventario público confirma 12.123 preguntas, 6.835 examinadas individualmente, 6.715 verificadas, 120 pendientes y 5.288 sin revisar individualmente.
 
 ## Lote 1302 — 15 de noviembre de 2026
 
