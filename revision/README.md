@@ -16,6 +16,8 @@ Cotejo ITIC Academy en Drive: [bloque 18 Protección jurídica, licencias y cont
 
 Inventario tras el lote: 12.123 preguntas; 7.215 examinadas individualmente; 7.093 verificadas (1.386 vigentes, 5.197 corregidas y 510 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.908 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1379.cjs`, `node revision/academia-lote-1379.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
+**Despliegue verificado:** commit `b8fb8ce` se publicó correctamente en GitHub Pages mediante [workflow run 43734806732](https://github.com/itic-academy/simulador-tic/actions/runs/43734806732), finalizado con éxito. Sin caché, el README, inventario, registro del lote y banco respondieron HTTP 200. El changelog contiene exactamente los IDs 7216–7220; sus claves `3/0/3/0/0` y estados `corregida/corregida/vigente/corregida/corregida` coinciden con el banco publicado. El inventario publicado refleja 12.123 preguntas, 7.215 examinadas individualmente, 4.908 aún sin revisar y 0 errores estructurales.
+
 ## Lote 1378 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 7211–7215 sobre integridad/disponibilidad, niveles de sistemas de información, competencias para la transformación digital, ITIL 4 y contratación centralizada.
