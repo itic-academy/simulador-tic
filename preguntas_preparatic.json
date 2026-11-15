@@ -381155,29 +381155,126 @@
       "id": 7191,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indicar cuál de las siguientes ventajas corresponde al uso de una pasarela de aplicación como cortafuegos:",
+      "texto": "¿Cuál es una ventaja habitual de una pasarela cortafuegos de nivel de aplicación frente al filtrado básico de paquetes?",
       "opciones": [
-        "Simplicidad",
-        "Facilidad de control",
-        "Rapidez",
-        "Transparencia"
+        "Su configuración siempre es más sencilla porque no necesita reglas específicas por aplicación.",
+        "Permite aplicar un control más granular basado en el protocolo y el contenido de aplicación que entiende.",
+        "Reenvía el tráfico con menor latencia que un filtro básico de paquetes en cualquier carga.",
+        "Es completamente transparente y no actúa como intermediaria de las conexiones."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida para precisar la comparación. Un proxy de aplicación puede inspeccionar el protocolo de aplicación y aplicar políticas más específicas, pero normalmente introduce coste, complejidad y latencia; no es una ventaja universal en rendimiento ni necesariamente es transparente. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo curricular de cortafuegos de aplicación, proxies, autenticación/autorización y control de acceso en redes; los conceptos y la comparación entre tecnologías se validan contra NIST.",
+      "clasificacion": {
+        "A1": [
+          "A1-48",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-II-13",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo curricular de cortafuegos de aplicación, proxies, autenticación/autorización y control de acceso en redes; los conceptos y la comparación entre tecnologías se validan contra NIST.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo curricular de cortafuegos de aplicación, proxies, autenticación/autorización y control de acceso en redes; los conceptos y la comparación entre tecnologías se validan contra NIST."
+      },
+      "etiquetas": [
+        "cortafuegos",
+        "pasarela de aplicación",
+        "proxy",
+        "filtrado de paquetes"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/41/r1/final",
+            "referencia": "NIST SP 800-41 Rev. 1, cap. 3: las pasarelas proxy trabajan en la capa de aplicación y pueden aplicar reglas de control más específicas; se comparan sus ventajas y costes, incluida la latencia y la complejidad."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/Application_Proxy_Gateway",
+            "referencia": "NIST CSRC, definición de Application-Proxy Gateway basada en SP 800-41 Rev. 1: combina control de acceso de capas inferiores con funcionalidad de aplicación y actúa como intermediario."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 48 (ENS) y 125 (seguridad en redes y cortafuegos)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas II-13 (seguridad lógica) y IV-12 (seguridad perimetral y control de accesos)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1; cotejo: Cotejo curricular de cortafuegos de aplicación, proxies, autenticación/autorización y control de acceso en redes; los conceptos y la comparación entre tecnologías se validan contra NIST."
+          }
+        ],
+        "observaciones": "Corregida para precisar la comparación. Un proxy de aplicación puede inspeccionar el protocolo de aplicación y aplicar políticas más específicas, pero normalmente introduce coste, complejidad y latencia; no es una ventaja universal en rendimiento ni necesariamente es transparente. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo curricular de cortafuegos de aplicación, proxies, autenticación/autorización y control de acceso en redes; los conceptos y la comparación entre tecnologías se validan contra NIST."
+      }
     },
     {
       "id": 7192,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si quiero autorizar a un usuario:",
+      "texto": "Tras identificar y autenticar a un usuario, para decidir si puede realizar una acción concreta sobre un recurso se debe:",
       "opciones": [
-        "Le pido su nombre",
-        "Le pido su DNI",
-        "Compruebo la existencia de su nombre en una lista",
-        "Le pregunto su número de DNI"
+        "Pedirle que repita su nombre, sin comprobar privilegios.",
+        "Comprobar si su DNI figura en un registro de identidad, sin considerar el recurso solicitado.",
+        "Evaluar la política de acceso o lista de control aplicable al usuario, a la acción y al recurso.",
+        "Preguntarle su número de DNI y conceder el acceso si lo facilita."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida. La versión original confundía la autorización con comprobar si existe un nombre en una lista y ni siquiera indicaba a qué recurso se solicitaba acceso. La autorización requiere una decisión de permiso/denegación respecto de una acción y un recurso para el sujeto identificado; una ACL es un mecanismo común, no el único. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo curricular de cortafuegos de aplicación, proxies, autenticación/autorización y control de acceso en redes; los conceptos y la comparación entre tecnologías se validan contra NIST.",
+      "clasificacion": {
+        "A1": [
+          "A1-48",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-II-13",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo curricular de cortafuegos de aplicación, proxies, autenticación/autorización y control de acceso en redes; los conceptos y la comparación entre tecnologías se validan contra NIST.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo curricular de cortafuegos de aplicación, proxies, autenticación/autorización y control de acceso en redes; los conceptos y la comparación entre tecnologías se validan contra NIST."
+      },
+      "etiquetas": [
+        "autorización",
+        "control de acceso",
+        "ACL",
+        "identificación",
+        "autenticación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/authorization",
+            "referencia": "NIST CSRC Glossary, authorization: decisión de permitir o denegar que un sujeto acceda a objetos del sistema, o privilegio concedido para un recurso."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/access_control_list",
+            "referencia": "NIST CSRC Glossary, Access Control List: lista de sujetos/usuarios y tipos de acceso que se les permiten sobre un recurso."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/162/upd2/final",
+            "referencia": "NIST SP 800-162, Guide to Attribute Based Access Control: la autorización decide sobre sujeto, acción, recurso y atributos/política de acceso."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, temas 48 (seguridad de sistemas) y 125 (control de accesos)."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas II-13 (seguridad lógica) y IV-12 (control de accesos)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1; cotejo: Cotejo curricular de cortafuegos de aplicación, proxies, autenticación/autorización y control de acceso en redes; los conceptos y la comparación entre tecnologías se validan contra NIST."
+          }
+        ],
+        "observaciones": "Corregida. La versión original confundía la autorización con comprobar si existe un nombre en una lista y ni siquiera indicaba a qué recurso se solicitaba acceso. La autorización requiere una decisión de permiso/denegación respecto de una acción y un recurso para el sujeto identificado; una ACL es un mecanismo común, no el único. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y Aplicación, versión 2026.1. Cotejo curricular de cortafuegos de aplicación, proxies, autenticación/autorización y control de acceso en redes; los conceptos y la comparación entre tecnologías se validan contra NIST."
+      }
     },
     {
       "id": 7193,
@@ -381191,21 +381288,111 @@
         "Vidalytics"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "La respuesta Flowplayer es correcta: Wowza anunció oficialmente su adquisición el 6 de septiembre de 2022 y describió Flowplayer como solución de reproducción de vídeo. La pregunta está expresamente anclada a un hecho fechado; no se interpreta como afirmación de que la marca o el producto mantengan hoy idéntico catálogo o propiedad. Cotejo curricular ITIC Academy: ITIC Academy, bloque 50 Vídeo, conferencia, Single Sign-On y herramientas de trabajo colaborativo, temario 2026. El documento cubre servicios de vídeo, conferencia y colaboración; no se encontró en él el hecho corporativo concreto de adquisición de Flowplayer. Ese dato fechado se contrastó con el anuncio oficial de Wowza.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 50 Vídeo, conferencia, Single Sign-On y herramientas de trabajo colaborativo, temario 2026. El documento cubre servicios de vídeo, conferencia y colaboración; no se encontró en él el hecho corporativo concreto de adquisición de Flowplayer. Ese dato fechado se contrastó con el anuncio oficial de Wowza.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 50 Vídeo, conferencia, Single Sign-On y herramientas de trabajo colaborativo, temario 2026. El documento cubre servicios de vídeo, conferencia y colaboración; no se encontró en él el hecho corporativo concreto de adquisición de Flowplayer. Ese dato fechado se contrastó con el anuncio oficial de Wowza."
+      },
+      "etiquetas": [
+        "reproductor de vídeo",
+        "Wowza",
+        "Flowplayer",
+        "historia de productos web"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.wowza.com/blog/announcing-wowza-acquires-flowplayer",
+            "referencia": "Anuncio corporativo oficial de Wowza, 6 de septiembre de 2022: comunica la adquisición de Flowplayer y lo describe como solución de reproductor de vídeo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 77: herramientas para la utilización de redes globales y tecnologías web."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III-12: aplicaciones y servicios web."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 50 Vídeo, conferencia, Single Sign-On y herramientas de trabajo colaborativo, temario 2026; cotejo: El documento cubre servicios de vídeo, conferencia y colaboración; no se encontró en él el hecho corporativo concreto de adquisición de Flowplayer. Ese dato fechado se contrastó con el anuncio oficial de Wowza."
+          }
+        ],
+        "observaciones": "La respuesta Flowplayer es correcta: Wowza anunció oficialmente su adquisición el 6 de septiembre de 2022 y describió Flowplayer como solución de reproducción de vídeo. La pregunta está expresamente anclada a un hecho fechado; no se interpreta como afirmación de que la marca o el producto mantengan hoy idéntico catálogo o propiedad. Cotejo curricular ITIC Academy: ITIC Academy, bloque 50 Vídeo, conferencia, Single Sign-On y herramientas de trabajo colaborativo, temario 2026. El documento cubre servicios de vídeo, conferencia y colaboración; no se encontró en él el hecho corporativo concreto de adquisición de Flowplayer. Ese dato fechado se contrastó con el anuncio oficial de Wowza."
+      }
     },
     {
       "id": 7194,
       "bloque": 0,
       "tema": 0,
-      "texto": "Para la generación de contenidos de un sitio web público se necesitan diversos perfiles. Indique cuál NO es uno de ellos:",
+      "texto": "Sobre los perfiles y permisos de un sistema de gestión de contenidos (CMS), señale la afirmación correcta:",
       "opciones": [
-        "Generador de contenidos.",
-        "Publicador de contenidos.",
-        "Administrador de contenidos.",
-        "Aprobador de contenidos."
+        "Todos los CMS deben implementar exactamente los perfiles generador, publicador y administrador, definidos por un estándar universal.",
+        "El perfil aprobador no puede existir en un CMS porque la aprobación siempre corresponde al administrador.",
+        "Los roles, permisos y etapas de aprobación dependen del producto y del workflow configurado; un CMS puede separar creación, revisión y publicación.",
+        "En cualquier CMS, quien crea un contenido puede publicarlo y modificar cualquier contenido de otros usuarios."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "Corregida. La pregunta original daba por universal una taxonomía de perfiles y trataba como falsa la figura del aprobador, pero los roles no son una lista normalizada común a todos los CMS. La documentación primaria de Drupal y WordPress muestra modelos distintos y configurables; un workflow puede separar autoría, revisión y publicación. Cotejo curricular ITIC Academy: ITIC Academy, bloque temático 37 Imágenes, OCR, biometría y gestión de contenidos, versión 2026.1. Cotejo directo: incluye el tema A2-II-16 de sistemas de gestión documental y de contenidos, y apartados específicos sobre CMS, roles, workflow editorial y publicación. El documento no define una lista universal de perfiles; los ejemplos de Drupal y WordPress confirman que los roles/permisos dependen de producto y configuración.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-16",
+          "A2-III-12"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque temático 37 Imágenes, OCR, biometría y gestión de contenidos, versión 2026.1. Cotejo directo: incluye el tema A2-II-16 de sistemas de gestión documental y de contenidos, y apartados específicos sobre CMS, roles, workflow editorial y publicación. El documento no define una lista universal de perfiles; los ejemplos de Drupal y WordPress confirman que los roles/permisos dependen de producto y configuración.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque temático 37 Imágenes, OCR, biometría y gestión de contenidos, versión 2026.1. Cotejo directo: incluye el tema A2-II-16 de sistemas de gestión documental y de contenidos, y apartados específicos sobre CMS, roles, workflow editorial y publicación. El documento no define una lista universal de perfiles; los ejemplos de Drupal y WordPress confirman que los roles/permisos dependen de producto y configuración."
+      },
+      "etiquetas": [
+        "CMS",
+        "gestión de contenidos",
+        "roles",
+        "permisos",
+        "flujo editorial"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.drupal.org/docs/user_guide/en/user-concept.html",
+            "referencia": "Drupal User Guide, concepto 7.1: roles agrupan permisos; los nombres, concesiones y acciones permitidas pertenecen a la configuración del producto/sitio."
+          },
+          {
+            "url": "https://www.drupal.org/docs/8/core/modules/content-moderation/overview",
+            "referencia": "Drupal Content Moderation overview: el flujo editorial puede separar autor y editor/aprobador; las acciones y estados dependen del workflow configurado."
+          },
+          {
+            "url": "https://wordpress.org/documentation/article/roles-and-capabilities/",
+            "referencia": "WordPress Documentation, Roles and Capabilities: enumera roles predefinidos propios (Administrator, Editor, Author, Contributor, etc.) y permite añadir o retirar roles/capabilities; confirma que los perfiles varían según CMS."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 77: lenguajes y herramientas web."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas II-16 (sistemas de gestión de contenidos y workflows) y III-12 (aplicaciones web)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xTMCpPmwNi8hpb0nZ3sMqpgvrhLXT-yf/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque temático 37 Imágenes, OCR, biometría y gestión de contenidos, versión 2026.1; cotejo: Cotejo directo: incluye el tema A2-II-16 de sistemas de gestión documental y de contenidos, y apartados específicos sobre CMS, roles, workflow editorial y publicación. El documento no define una lista universal de perfiles; los ejemplos de Drupal y WordPress confirman que los roles/permisos dependen de producto y configuración."
+          }
+        ],
+        "observaciones": "Corregida. La pregunta original daba por universal una taxonomía de perfiles y trataba como falsa la figura del aprobador, pero los roles no son una lista normalizada común a todos los CMS. La documentación primaria de Drupal y WordPress muestra modelos distintos y configurables; un workflow puede separar autoría, revisión y publicación. Cotejo curricular ITIC Academy: ITIC Academy, bloque temático 37 Imágenes, OCR, biometría y gestión de contenidos, versión 2026.1. Cotejo directo: incluye el tema A2-II-16 de sistemas de gestión documental y de contenidos, y apartados específicos sobre CMS, roles, workflow editorial y publicación. El documento no define una lista universal de perfiles; los ejemplos de Drupal y WordPress confirman que los roles/permisos dependen de producto y configuración."
+      }
     },
     {
       "id": 7195,
@@ -381219,7 +381406,51 @@
         "Creación."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "La respuesta A es literal del artículo 22.3 de la Constitución: la inscripción se realiza a los solos efectos de publicidad. No es un requisito constitutivo de autorización previa; la LO 1/2002, art. 5.2, reconoce personalidad jurídica desde el otorgamiento del acta fundacional. Cotejo curricular ITIC Academy: ITIC Academy, bloque 01 Constitución, Estado y AGE, versión 2026. Cotejo curricular del texto constitucional y los derechos fundamentales; el art. 22.3 se comprueba directamente en la Constitución publicada en el BOE.",
+      "clasificacion": {
+        "A1": [
+          "A1-1"
+        ],
+        "A2": [
+          "A2-I-1"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 01 Constitución, Estado y AGE, versión 2026. Cotejo curricular del texto constitucional y los derechos fundamentales; el art. 22.3 se comprueba directamente en la Constitución publicada en el BOE.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 01 Constitución, Estado y AGE, versión 2026. Cotejo curricular del texto constitucional y los derechos fundamentales; el art. 22.3 se comprueba directamente en la Constitución publicada en el BOE."
+      },
+      "etiquetas": [
+        "Constitución Española",
+        "derecho de asociación",
+        "registro de asociaciones",
+        "artículo 22.3"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&lang=es",
+            "referencia": "Constitución Española, art. 22.3: las asociaciones constituidas al amparo del artículo deben inscribirse en un registro a los solos efectos de publicidad."
+          },
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-5852&p=20250628&tn=1",
+            "referencia": "Ley Orgánica 1/2002, art. 10.1–2, texto consolidado: inscripción a efectos de publicidad; hace pública la constitución y los estatutos, sin constituir autorización previa."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 1: Constitución Española y derechos fundamentales."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema I-1: Constitución Española, derechos y deberes fundamentales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 01 Constitución, Estado y AGE, versión 2026; cotejo: Cotejo curricular del texto constitucional y los derechos fundamentales; el art. 22.3 se comprueba directamente en la Constitución publicada en el BOE."
+          }
+        ],
+        "observaciones": "La respuesta A es literal del artículo 22.3 de la Constitución: la inscripción se realiza a los solos efectos de publicidad. No es un requisito constitutivo de autorización previa; la LO 1/2002, art. 5.2, reconoce personalidad jurídica desde el otorgamiento del acta fundacional. Cotejo curricular ITIC Academy: ITIC Academy, bloque 01 Constitución, Estado y AGE, versión 2026. Cotejo curricular del texto constitucional y los derechos fundamentales; el art. 22.3 se comprueba directamente en la Constitución publicada en el BOE."
+      }
     },
     {
       "id": 7196,
