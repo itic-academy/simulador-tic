@@ -18,6 +18,8 @@ Cotejo curricular ITIC Academy/Drive: [bloque 12 Directivo TIC y Planificación 
 
 Ejecutados `node revision/revisar-lote-1391.cjs`, `node revision/academia-lote-1391.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros válidos; 7.275 revisadas individualmente (1.395 vigentes, 5.240 corregidas y 518 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.848 sin revisión individual; 0 errores estructurales. El inventario automático no se cuenta como revisión de contenido.
 
+**Despliegue del lote 1391 verificado:** commit de datos `e5cf494` en `main`; [GitHub Actions, ejecución 43747597101](https://github.com/itic-academy/simulador-tic/actions/runs/43747597101) terminó con **Success**. Con parámetro de caché nuevo, GitHub Pages respondió HTTP 200 para `revision/cambios-lote-1391.json`, `preguntas_preparatic.json`, `revision/inventario.json` y `revision/README.md`. Se cotejaron los IDs públicos del log (7276–7280) con las respuestas, estados y temas del banco servido; coinciden. El inventario público informa 12.123 registros, 7.275 revisadas individualmente, 7.153 verificadas y 4.848 aún sin revisión individual.
+
 ## Lote 1390 — 15 de noviembre de 2026
 
 Revisión individual de las preguntas 7271–7275. Se contrastaron el artículo original de Royce sobre el desarrollo secuencial, los documentos oficiales de MÉTRICA v3, material técnico de PMI, el Reglamento eIDAS con su reforma de 2024 y la documentación oficial de Node.js. Se reformularon preguntas con categorías mezcladas o respuestas no inequívocas; los originales y las respuestas iniciales quedan preservados en el registro del lote.
