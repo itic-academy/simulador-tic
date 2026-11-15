@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 15 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1318 (IDs 6911–6915). Acumulado: 6910 preguntas examinadas individualmente; 6789 verificadas (1297 vigentes, 4997 corregidas y 495 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5213 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1319 (IDs 6916–6920). Acumulado: 6915 preguntas examinadas individualmente; 6794 verificadas (1300 vigentes, 4999 corregidas y 495 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5208 sin revisar individualmente.
+
+## Lote 1319 — 15 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6916–6920. Se contrastaron artículos constitucionales y legislación administrativa consolidados, EUR-Lex y el temario A1/A2; se cotejaron las unidades de ITIC Academy localizadas en Drive.
+
+- **6916 — reparto Estado/Comunidades Autónomas:** corregida C. Se concreta la regla del art. 149.3 CE: materias no atribuidas expresamente al Estado pueden corresponder a las CCAA en virtud de sus Estatutos. El art. 148 no es una lista exhaustiva de todo lo asumible y el art. 150.2 permite transferencias o delegaciones por ley orgánica. A1-3; A2-I.1 como encuadre constitucional general.
+- **6917 — principios de actuación administrativa:** vigente A. Coordinación figura literalmente en el art. 103.1 CE, junto con eficacia, jerarquía, descentralización y desconcentración. A1-4; A2-I.8.
+- **6918 — Tratado de Maastricht:** vigente C. Se precisa que el Tratado de la Unión Europea se firmó en 1992, entró en vigor en 1993 y tuvo naturaleza constitutiva al crear la Unión Europea; no fue un tratado de adhesión o ampliación. A1-5; el programa oficial A2 consultado no contiene epígrafe específico de Unión Europea, por lo que no se fuerza una etiqueta A2.
+- **6919 — Subdelegado del Gobierno:** vigente A. La Ley 40/2015 le atribuye nivel de Subdirector General y carácter de órgano directivo; la Ley 3/2015 excluye a los Subdirectores Generales y asimilados de la condición de alto cargo. A1-6; A2-I.8.
+- **6920 — fuentes del ordenamiento:** corregida C. El art. 1.1 CC enumera como fuentes la ley, la costumbre y los principios generales del Derecho; el art. 1.6 dispone que la jurisprudencia complementa el ordenamiento con la doctrina reiterada del Tribunal Supremo. Se reformula el enunciado para expresar esta distinción legal y evitar una etiqueta doctrinal sin criterio. A1-7; A2-I.8 como marco de legislación administrativa.
+
+Fuentes primarias: [Constitución Española consolidada, arts. 103, 148–150](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520); [Ley 40/2015 consolidada, organización de la AGE y Subdelegados](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566&p=20260929); [Ley 3/2015 consolidada, concepto y exclusiones de alto cargo](https://www.boe.es/buscar/act.php?id=BOE-A-2015-3444&p=20260918); [Código Civil consolidado, art. 1.1 y 1.6](https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763&p=20250103); [EUR-Lex, Tratado de Maastricht/TUE, fechas y estado](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex:12002M). Clasificación cotejada con [programa A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [programa A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), contrastados contra `temario-oficial.json`.
+
+Cotejo Drive: [ITIC Academy, bloque 01 Constitución/Estado/AGE (2026)](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), arts. 148–150, art. 103, organización territorial y subdelegados; [bloque 02 Unión Europea](https://drive.google.com/file/d/1KTz7CNz88u_4zyVLC2oYQBnmJRHIG7J7/view?usp=drivesdk), cronología y contenido de Maastricht; [bloque 03 Actuación Administrativa](https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk), fuentes administrativas, Ley 40/2015 y principios del art. 103. El material académico acredita la cobertura curricular; las respuestas legales se comprueban con los textos consolidados del BOE y EUR-Lex.
+
+Inventario tras el lote: 12.123 preguntas; 6.915 examinadas individualmente; 6.794 verificadas (1.300 vigentes, 4.999 corregidas y 495 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.208 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1319.cjs`, `node revision/academia-lote-1319.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
 ## Lote 1318 — 15 de noviembre de 2026
 
