@@ -18,7 +18,7 @@ Cotejo de Drive: se leyeron [ITIC Academy, bloque 44, IoT y territorios intelige
 
 Inventario tras el lote: 12.123 preguntas; 6.840 examinadas individualmente; 6.720 verificadas (1.294 vigentes, 4.937 corregidas y 489 históricas); 120 pendientes (47 de fuente y 73 de ambigüedad); 5.283 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1304.cjs`, `node revision/academia-lote-1304.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`. El inventario estructural no acredita la revisión de contenido.
 
-**Publicación pendiente de verificación.**
+**Publicación verificada:** lote 1304 publicado desde `233520c6e232561a58f4d37d896b50f4099324f4`. [GitHub Actions 43674481833](https://github.com/itic-academy/simulador-tic/actions/runs/43674481833) concluyó con Success (build y deploy). Pages respondió HTTP 200 sin caché para el registro, el banco, el inventario y este README. El registro contiene exactamente los IDs 6841–6845; las claves y opciones publicadas son C, A, B, C y C, concordantes con el análisis. El inventario confirma 12.123 preguntas, 6.840 examinadas individualmente, 6.720 verificadas, 120 pendientes y 5.283 sin revisar individualmente.
 
 ## Lote 1303 — 15 de noviembre de 2026
 
