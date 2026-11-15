@@ -18,7 +18,7 @@ Cotejo de ITIC Academy en Drive: [bloque de Interoperabilidad (A1 45–46, 2026.
 
 Inventario tras el lote: 12.123 preguntas; 6.945 examinadas individualmente; 6.824 verificadas (1.309 vigentes, 5.018 corregidas y 497 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.178 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1325.cjs`, `node revision/academia-lote-1325.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue pendiente de verificación:** el lote 1325 se publicará desde `main`; se actualizará este registro tras comprobar GitHub Actions y el inventario público.
+**Despliegue verificado:** el commit `30f2ecc` se publicó correctamente mediante GitHub Actions (`build` y `deploy` completados con éxito). `https://itic-academy.github.io/simulador-tic/revision/inventario.json` responde HTTP 200 y refleja 12.123 preguntas: 1.309 vigentes, 5.018 corregidas, 497 históricas y 5.178 sin revisar individualmente; permanecen 121 pendientes documentadas y cero errores estructurales.
 
 ## Lote 1324 — 15 de noviembre de 2026
 
