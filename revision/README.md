@@ -18,6 +18,8 @@ Cotejo curricular ITIC Academy/Drive: [bloque 42 Redes, edición 2026](https://d
 
 Ejecutados `node revision/revisar-lote-1393.cjs`, `node revision/academia-lote-1393.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros válidos; 7.285 revisadas individualmente (1.395 vigentes, 5.245 corregidas y 523 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.838 sin revisión individual; 0 errores estructurales. El inventario automático no se cuenta como revisión de contenido.
 
+**Despliegue del lote 1393 verificado:** commit de datos `9ec8635` en `main`; [GitHub Actions, ejecución 43749287612](https://github.com/itic-academy/simulador-tic/actions/runs/43749287612) terminó con **Success**. Con caché evitada, GitHub Pages respondió HTTP 200 para `revision/cambios-lote-1393.json`, `preguntas_preparatic.json`, `revision/inventario.json` y `revision/README.md`. Se cotejaron los IDs públicos del lote (7286–7290) con las respuestas y estados del banco servido; coinciden. El inventario público informa 12.123 registros, 7.285 revisadas individualmente, 7.163 verificadas y 4.838 aún sin revisión individual.
+
 ## Lote 1392 — 15 de noviembre de 2026
 
 Revisión individual de las preguntas 7281–7285 sobre dominios de broadcast y VLAN, spoofing, historia de CATV, hilos de ejecución y objetivos/actividades de planificación de contingencia.
