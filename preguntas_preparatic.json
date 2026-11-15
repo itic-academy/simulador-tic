@@ -379701,42 +379701,184 @@
       "id": 7166,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si decimos que JEE permite utilizar el concepto de sandbox (Java Sandbox), nos estamos refiriendo a que:",
+      "texto": "En el modelo clásico de seguridad de Java conocido como sandbox (por ejemplo, applets con Security Manager), ¿qué se pretendía conseguir?",
       "opciones": [
-        "Cada proceso se ejecuta limitado en los recursos proporcionados por la Java Virtual Machine, y no puede afectar a otros recursos del equipo.",
-        "A la posibilidad de pasar parámetros por valor en cada mensaje.",
-        "Al entorno de pruebas integrado en la arquitectura JEE 5."
+        "Aplicar a código no confiable una política de permisos que limitase su acceso a operaciones y recursos sensibles del equipo.",
+        "Garantizar que cada proceso Java tuviera una cuota fija de CPU y memoria e impedir cualquier interferencia entre procesos.",
+        "Proporcionar un entorno de pruebas integrado en Java EE 5."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Histórica A. El enunciado original confundía aislamiento con una limitación general de CPU/memoria por proceso. El sandbox clásico aplicaba permisos de seguridad a operaciones sensibles; el Security Manager quedó permanentemente deshabilitado en Java SE 24. La pregunta se conserva como conocimiento histórico y no como mecanismo de aislamiento recomendado actualmente. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El bloque cubre Java/Jakarta EE y HTML. Para HTML puntualiza que WHATWG mantiene el HTML Living Standard, que W3C colabora en una versión común y conserva relevancia en estándares web. También advierte que el Security Manager quedó deshabilitado en Java SE 24; el sandbox citado en navegador se refiere a aislamiento web y no acredita cuotas de recursos de una JVM. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-II-13",
+          "A2-III-10"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El bloque cubre Java/Jakarta EE y HTML. Para HTML puntualiza que WHATWG mantiene el HTML Living Standard, que W3C colabora en una versión común y conserva relevancia en estándares web. También advierte que el Security Manager quedó deshabilitado en Java SE 24; el sandbox citado en navegador se refiere a aislamiento web y no acredita cuotas de recursos de una JVM. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El bloque cubre Java/Jakarta EE y HTML. Para HTML puntualiza que WHATWG mantiene el HTML Living Standard, que W3C colabora en una versión común y conserva relevancia en estándares web. También advierte que el Security Manager quedó deshabilitado en Java SE 24; el sandbox citado en navegador se refiere a aislamiento web y no acredita cuotas de recursos de una JVM. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas."
+      },
+      "etiquetas": [
+        "Java Sandbox",
+        "Java Security Manager",
+        "política de seguridad",
+        "permisos",
+        "código no confiable"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://docs.oracle.com/en/java/javase/24/security/security-manager-is-permanently-disabled.html",
+            "referencia": "Oracle Java SE 24 Security Developer Guide: el Security Manager está permanentemente deshabilitado; la política java.security.policy y el mecanismo de descarga remota de código dejan de funcionar."
+          },
+          {
+            "url": "https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/SecurityManager.html",
+            "referencia": "Oracle Java SE 24 API: SecurityManager fue especificado originalmente para permitir aplicar una política de seguridad a operaciones sensibles; la API está deshabilitada en JDK 24."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 67: entorno de desarrollo Java."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, temas II-13 (seguridad lógica) y III-10 (arquitectura Java EE/Jakarta EE)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2; El bloque cubre Java/Jakarta EE y HTML. Para HTML puntualiza que WHATWG mantiene el HTML Living Standard, que W3C colabora en una versión común y conserva relevancia en estándares web. También advierte que el Security Manager quedó deshabilitado en Java SE 24; el sandbox citado en navegador se refiere a aislamiento web y no acredita cuotas de recursos de una JVM."
+          }
+        ],
+        "observaciones": "Histórica A. El enunciado original confundía aislamiento con una limitación general de CPU/memoria por proceso. El sandbox clásico aplicaba permisos de seguridad a operaciones sensibles; el Security Manager quedó permanentemente deshabilitado en Java SE 24. La pregunta se conserva como conocimiento histórico y no como mecanismo de aislamiento recomendado actualmente. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El bloque cubre Java/Jakarta EE y HTML. Para HTML puntualiza que WHATWG mantiene el HTML Living Standard, que W3C colabora en una versión común y conserva relevancia en estándares web. También advierte que el Security Manager quedó deshabilitado en Java SE 24; el sandbox citado en navegador se refiere a aislamiento web y no acredita cuotas de recursos de una JVM. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas."
+      }
     },
     {
       "id": 7167,
       "bloque": 0,
       "tema": 0,
-      "texto": "HTML está estandarizado por:",
+      "texto": "¿Qué organización mantiene actualmente la especificación HTML Living Standard?",
       "opciones": [
-        "World Wide Web Consortium - W3C.",
-        "Internet Engineering Task Force - IETF.",
-        "Institute os Management Accountants - IMA.",
-        "International Accounting Standard Board - IASB."
+        "World Wide Web Consortium (W3C), como único mantenedor.",
+        "Internet Engineering Task Force (IETF).",
+        "Institute of Management Accountants (IMA).",
+        "International Accounting Standards Board (IASB).",
+        "WHATWG, en colaboración con W3C conforme al acuerdo de 2019."
       ],
-      "respuesta_correcta": 0,
-      "comentarios": ""
+      "respuesta_correcta": 4,
+      "comentarios": "Corregida E. La pregunta original atribuye sin matices la estandarización actual de HTML al W3C. Hoy WHATWG mantiene HTML como Living Standard; WHATWG y W3C acordaron colaborar en una versión común. Se reescribió la pregunta para diferenciar mantenimiento actual de la especificación y participación histórica/técnica del W3C. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El bloque cubre Java/Jakarta EE y HTML. Para HTML puntualiza que WHATWG mantiene el HTML Living Standard, que W3C colabora en una versión común y conserva relevancia en estándares web. También advierte que el Security Manager quedó deshabilitado en Java SE 24; el sandbox citado en navegador se refiere a aislamiento web y no acredita cuotas de recursos de una JVM. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-II-9"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El bloque cubre Java/Jakarta EE y HTML. Para HTML puntualiza que WHATWG mantiene el HTML Living Standard, que W3C colabora en una versión común y conserva relevancia en estándares web. También advierte que el Security Manager quedó deshabilitado en Java SE 24; el sandbox citado en navegador se refiere a aislamiento web y no acredita cuotas de recursos de una JVM. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El bloque cubre Java/Jakarta EE y HTML. Para HTML puntualiza que WHATWG mantiene el HTML Living Standard, que W3C colabora en una versión común y conserva relevancia en estándares web. También advierte que el Security Manager quedó deshabilitado en Java SE 24; el sandbox citado en navegador se refiere a aislamiento web y no acredita cuotas de recursos de una JVM. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas."
+      },
+      "etiquetas": [
+        "HTML",
+        "WHATWG",
+        "HTML Living Standard",
+        "W3C",
+        "estandarización web"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://html.spec.whatwg.org/multipage/introduction.html",
+            "referencia": "WHATWG HTML Living Standard, introducción e historia: WHATWG mantiene la especificación viva; el acuerdo WHATWG-W3C de 2019 establece colaboración sobre una versión común de HTML."
+          },
+          {
+            "url": "https://www.w3.org/2019/04/WHATWG-W3C-MOU.html",
+            "referencia": "Memorando de entendimiento W3C-WHATWG, 2019: colaboración para desarrollar y publicar una única versión de HTML y DOM."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 77: HTML, CSS, XML y compatibilidad con estándares."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema II-9: lenguajes de marca, HTML y derivaciones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2; El bloque cubre Java/Jakarta EE y HTML. Para HTML puntualiza que WHATWG mantiene el HTML Living Standard, que W3C colabora en una versión común y conserva relevancia en estándares web. También advierte que el Security Manager quedó deshabilitado en Java SE 24; el sandbox citado en navegador se refiere a aislamiento web y no acredita cuotas de recursos de una JVM."
+          }
+        ],
+        "observaciones": "Corregida E. La pregunta original atribuye sin matices la estandarización actual de HTML al W3C. Hoy WHATWG mantiene HTML como Living Standard; WHATWG y W3C acordaron colaborar en una versión común. Se reescribió la pregunta para diferenciar mantenimiento actual de la especificación y participación histórica/técnica del W3C. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El bloque cubre Java/Jakarta EE y HTML. Para HTML puntualiza que WHATWG mantiene el HTML Living Standard, que W3C colabora en una versión común y conserva relevancia en estándares web. También advierte que el Security Manager quedó deshabilitado en Java SE 24; el sandbox citado en navegador se refiere a aislamiento web y no acredita cuotas de recursos de una JVM. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas."
+      }
     },
     {
       "id": 7168,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de estos estándares o métodos pertenece a la criptografía de clave pública?",
+      "texto": "¿Cuál de los siguientes es un algoritmo de criptografía de clave pública (asimétrica)?",
       "opciones": [
-        "Triple DES (Estándaride Encriptación de Datos)",
-        "AES (Estándar de Entriptación Avanzada)",
-        "El método RSA (iniciales de Rivest, Shamir y Adleman)",
-        "HES (Estándar de Encriptación Holística)"
+        "Triple DES (3DES), cifrador simétrico por bloques.",
+        "AES, cifrador simétrico por bloques.",
+        "RSA, algoritmo de clave pública.",
+        "ChaCha20, cifrador simétrico de flujo."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. Se normalizaron erratas y se sustituyeron opciones confusas por algoritmos identificables. RSA es de clave pública; 3DES, AES y ChaCha20 son cifradores simétricos. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El material trata cifrado simétrico/asimétrico, algoritmos, técnicas criptográficas y seguridad de aplicaciones; el cotejo curricular no reemplaza las definiciones NIST/IETF. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El material trata cifrado simétrico/asimétrico, algoritmos, técnicas criptográficas y seguridad de aplicaciones; el cotejo curricular no reemplaza las definiciones NIST/IETF. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El material trata cifrado simétrico/asimétrico, algoritmos, técnicas criptográficas y seguridad de aplicaciones; el cotejo curricular no reemplaza las definiciones NIST/IETF. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas."
+      },
+      "etiquetas": [
+        "criptografía asimétrica",
+        "clave pública",
+        "RSA",
+        "AES",
+        "Triple DES",
+        "ChaCha20"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/RSA",
+            "referencia": "NIST CSRC Glossary: RSA es un algoritmo de clave pública empleado para establecimiento de claves y generación/verificación de firmas digitales."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/public_key_cryptography",
+            "referencia": "NIST CSRC Glossary: la criptografía de clave pública usa pares público/privado para cifrado y/o firma."
+          },
+          {
+            "url": "https://www.nist.gov/publications/advanced-encryption-standard-aes",
+            "referencia": "NIST FIPS 197: AES es un cifrador simétrico por bloques."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 79: algoritmos de cifrado simétricos y asimétricos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV-12: técnicas criptográficas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026; El material trata cifrado simétrico/asimétrico, algoritmos, técnicas criptográficas y seguridad de aplicaciones; el cotejo curricular no reemplaza las definiciones NIST/IETF."
+          }
+        ],
+        "observaciones": "Corregida C. Se normalizaron erratas y se sustituyeron opciones confusas por algoritmos identificables. RSA es de clave pública; 3DES, AES y ChaCha20 son cifradores simétricos. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El material trata cifrado simétrico/asimétrico, algoritmos, técnicas criptográficas y seguridad de aplicaciones; el cotejo curricular no reemplaza las definiciones NIST/IETF. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas."
+      }
     },
     {
       "id": 7169,
@@ -379750,13 +379892,62 @@
         "De funciones y de flujo."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Vigente B. Los cifradores simétricos se clasifican habitualmente en cifradores por bloques y cifradores de flujo. Se mantiene la respuesta original y se explicita que se trata de clases de cifradores simétricos. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El material trata cifrado simétrico/asimétrico, algoritmos, técnicas criptográficas y seguridad de aplicaciones; el cotejo curricular no reemplaza las definiciones NIST/IETF. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas.",
+      "clasificacion": {
+        "A1": [
+          "A1-79"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El material trata cifrado simétrico/asimétrico, algoritmos, técnicas criptográficas y seguridad de aplicaciones; el cotejo curricular no reemplaza las definiciones NIST/IETF. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El material trata cifrado simétrico/asimétrico, algoritmos, técnicas criptográficas y seguridad de aplicaciones; el cotejo curricular no reemplaza las definiciones NIST/IETF. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas."
+      },
+      "etiquetas": [
+        "criptografía simétrica",
+        "cifrador de bloque",
+        "cifrador de flujo",
+        "AES",
+        "ChaCha20"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/block_cipher",
+            "referencia": "NIST CSRC Glossary: un cifrador por bloques es un algoritmo de clave simétrica que transforma bloques de información usando una clave."
+          },
+          {
+            "url": "https://csrc.nist.gov/glossary/term/stream_cipher",
+            "referencia": "NIST CSRC Glossary: los cifradores de flujo procesan una secuencia de símbolos; recoge la distinción habitual entre cifradores por bloques y de flujo."
+          },
+          {
+            "url": "https://www.nist.gov/publications/advanced-encryption-standard-aes",
+            "referencia": "NIST FIPS 197: AES es un ejemplo de cifrador simétrico por bloques."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 79: cifrado simétrico y asimétrico."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema IV-12: técnicas criptográficas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026; El material trata cifrado simétrico/asimétrico, algoritmos, técnicas criptográficas y seguridad de aplicaciones; el cotejo curricular no reemplaza las definiciones NIST/IETF."
+          }
+        ],
+        "observaciones": "Vigente B. Los cifradores simétricos se clasifican habitualmente en cifradores por bloques y cifradores de flujo. Se mantiene la respuesta original y se explicita que se trata de clases de cifradores simétricos. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El material trata cifrado simétrico/asimétrico, algoritmos, técnicas criptográficas y seguridad de aplicaciones; el cotejo curricular no reemplaza las definiciones NIST/IETF. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas."
+      }
     },
     {
       "id": 7170,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los conceptos de calidad de un sistema de identificación biométrica está relacionado con la conveniencia para el usuario?:",
+      "texto": "Entre los indicadores siguientes, ¿cuál refleja más directamente la fricción para el usuario legítimo causada por rechazos erróneos en un sistema biométrico?",
       "opciones": [
         "Attack Presentation Classification Error Rate (APCER).",
         "Impostor Attack Presentation Acceptance Rate (IAPAR).",
@@ -379764,7 +379955,55 @@
         "False Match Rate (FMR)."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. FRR cuantifica rechazos erróneos de personas legítimas y, por ello, afecta directamente a la comodidad de uso. APCER/IAPAR describen ataques de presentación; FMR mide comparaciones impostoras que resultan en coincidencia. En comparaciones de algoritmo se usa también FNMR, que no es idéntico en toda definición operacional a FRR. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El índice incluye biometría y el material cubre FAR, FRR, EER, APCER e IAPAR. FRR se relaciona con rechazos de usuarios legítimos; los indicadores de ataques de presentación miden otro error. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas.",
+      "clasificacion": {
+        "A1": [
+          "A1-84"
+        ],
+        "A2": [
+          "A2-III-14"
+        ],
+        "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El índice incluye biometría y el material cubre FAR, FRR, EER, APCER e IAPAR. FRR se relaciona con rechazos de usuarios legítimos; los indicadores de ataques de presentación miden otro error. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas.",
+        "estado": "revisada",
+        "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El índice incluye biometría y el material cubre FAR, FRR, EER, APCER e IAPAR. FRR se relaciona con rechazos de usuarios legítimos; los indicadores de ataques de presentación miden otro error. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas."
+      },
+      "etiquetas": [
+        "biometría",
+        "FRR",
+        "False Rejection Rate",
+        "usabilidad",
+        "rechazo de usuario legítimo",
+        "FMR",
+        "APCER",
+        "IAPAR"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-15",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-76-2.pdf",
+            "referencia": "NIST SP 800-76-2, sección de rendimiento de autenticación operacional: FRR mide la proporción de titulares legítimos incorrectamente rechazados; define también FAR como aceptación de impostores."
+          },
+          {
+            "url": "https://pages.nist.gov/SOFA/SOFA.html",
+            "referencia": "NIST SOFA: FNMR indica la frecuencia con que un usuario legítimo es rechazado y sirve como medida de conveniencia/usabilidad; diferencia errores de comparación de métricas de presentación de ataques."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1 GSI 2025, tema 84: reconocimiento biométrico."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2 GSI 2025, tema III-14: accesibilidad, diseño universal y usabilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026; El índice incluye biometría y el material cubre FAR, FRR, EER, APCER e IAPAR. FRR se relaciona con rechazos de usuarios legítimos; los indicadores de ataques de presentación miden otro error."
+          }
+        ],
+        "observaciones": "Corregida C. FRR cuantifica rechazos erróneos de personas legítimas y, por ello, afecta directamente a la comodidad de uso. APCER/IAPAR describen ataques de presentación; FMR mide comparaciones impostoras que resultan en coincidencia. En comparaciones de algoritmo se usa también FNMR, que no es idéntico en toda definición operacional a FRR. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. El índice incluye biometría y el material cubre FAR, FRR, EER, APCER e IAPAR. FRR se relaciona con rechazos de usuarios legítimos; los indicadores de ataques de presentación miden otro error. La cobertura académica sitúa el contenido en el temario; las definiciones técnicas se comprueban con las fuentes primarias registradas."
+      }
     },
     {
       "id": 7171,
