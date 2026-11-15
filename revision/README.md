@@ -18,7 +18,7 @@ Cotejo de ITIC Academy en Drive: [bloque Hardware, servidores y dispositivos (A1
 
 Inventario tras el lote: 12.123 preguntas; 6.950 examinadas individualmente; 6.829 verificadas (1.311 vigentes, 5.020 corregidas y 498 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.173 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1326.cjs`, `node revision/academia-lote-1326.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue pendiente de verificación:** el lote 1326 se publicará desde `main`; se actualizará este registro después de comprobar GitHub Actions y el inventario público.
+**Despliegue verificado:** el commit `242a7b0` completó correctamente el workflow de GitHub Actions (`build` y `deploy`). El inventario público responde HTTP 200 con 12.123 preguntas: 1.311 vigentes, 5.020 corregidas, 498 históricas y 5.173 sin revisar individualmente; siguen documentadas 121 pendientes y no hay errores estructurales.
 
 ## Lote 1325 — 15 de noviembre de 2026
 
