@@ -16,7 +16,7 @@ Fuentes primarias: [Arm Mbed OS](https://os.mbed.com/mbed-os/) y [aviso oficial 
 
 Inventario tras el lote: 12.123 preguntas; 6.830 examinadas individualmente; 6.710 verificadas (1.294 vigentes, 4.927 corregidas y 489 históricas); 120 pendientes documentadas (47 de fuente y 73 de ambigüedad); 5.293 sin revisar individualmente; errores estructurales: 0. Ejecutados `node revision/revisar-lote-1302.cjs`, `node revision/academia-lote-1302.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Publicación pendiente:** el lote 1302 y el ajuste de clave de 6833 aún no se han publicado ni verificado juntos en GitHub Pages.
+**Publicación verificada:** lote 1302 y corrección de clave publicados desde `8336ea2e683f21fdb8fa4ef0fafeb0b1e469564d`. [GitHub Actions 43673200240](https://github.com/itic-academy/simulador-tic/actions/runs/43673200240) concluyó con Success (build y deploy). GitHub Pages respondió HTTP 200 sin caché para el inventario, el registro del lote, el banco y este README. El registro público contiene exactamente los IDs 6831–6835; el banco publicado confirma los estados y claves C/A/B/C/C, incluida la clave B (índice 1) ya corregida para 6833. El inventario público confirma 12.123 preguntas, 6.830 examinadas individualmente, 6.710 verificadas, 120 pendientes y 5.293 sin revisar individualmente.
 
 ## Lote 1301 — 15 de noviembre de 2026
 
