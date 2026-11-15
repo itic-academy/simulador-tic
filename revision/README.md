@@ -16,7 +16,7 @@ Fuentes primarias: [ITU-T Y.4000, recomendación en vigor](https://www.itu.int/r
 
 Inventario tras el lote: 12.123 preguntas; 6.825 examinadas individualmente; 6.705 verificadas (1.292 vigentes, 4.924 corregidas y 489 históricas); 120 pendientes documentadas (47 de fuente y 73 de ambigüedad); 5.298 sin revisar individualmente; errores estructurales: 0. Ejecutados `node revision/revisar-lote-1301.cjs`, `node revision/academia-lote-1301.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Publicación pendiente:** el lote 1301 aún no se ha publicado ni verificado en GitHub Pages.
+**Publicación verificada:** lote 1301 publicado desde `0859b7eecc34b1787c83088425975a0017be54a9`. [GitHub Actions 43672209911](https://github.com/itic-academy/simulador-tic/actions/runs/43672209911) concluyó con Success (build y deploy). GitHub Pages respondió HTTP 200 sin caché para el inventario, el registro del lote, el banco y este README. El registro público contiene exactamente los IDs 6826–6830; el banco publicado confirma los cinco estados y claves C/B/B/A/D. El inventario público confirma 12.123 preguntas, 6.825 examinadas individualmente, 6.705 verificadas, 120 pendientes y 5.298 sin revisar individualmente.
 
 ## Lote 1300 — 15 de noviembre de 2026
 
