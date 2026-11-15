@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),file=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(file,'utf8'));
+const logFile=path.join(__dirname,'cambios-lote-1368.json'),log=JSON.parse(fs.readFileSync(logFile,'utf8'));
+const docs={
+ os:['https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk','ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1','El índice del material incluye memoria virtual, localidad, working set y thrashing (secciones 3.3 y 3.7); sirve de cotejo curricular, no sustituye la explicación de teoría de sistemas operativos.'],
+ security:['https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk','ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026','La sección de seguridad de bases de datos distingue TDE para ficheros de datos, registros y copias, transparente al acceso de la base, de Always Encrypted/cifrado de columna.'],
+ tech:['https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk','ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2','El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core.']
+};
+const map={7161:'os',7162:'security',7163:'tech',7164:'tech',7165:'tech'};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id),d=docs[map[c.id]];assert.ok(q?.revision&&d,`Cotejo ausente: ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2])assert.ok(official.has(id),id);const note=`Cotejo curricular ITIC Academy: ${d[1]}. ${d[2]} La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria.`;q.clasificacion.bloque_academia=note;q.clasificacion.nota=note;q.comentarios+=` ${note}`;q.revision.observaciones+=` ${note}`;q.revision.fuentes.push({url:d[0],referencia:`${d[1]}; ${d[2]}`});c.actualizada.comentarios=q.comentarios;c.actualizada.revision=structuredClone(q.revision);c.actualizada.clasificacion=structuredClone(q.clasificacion)}
+fs.writeFileSync(file,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logFile,JSON.stringify(log,null,2)+'\n');console.log('Cotejo curricular individual 7161–7165 registrado.');

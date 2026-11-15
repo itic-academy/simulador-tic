@@ -1,0 +1,386 @@
+{
+  "fecha": "2026-11-15",
+  "alcance": "IDs 7161–7165; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7161,
+      "original": {
+        "id": 7161,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Considere un sistema con memoria virtual cuya CPU tiene una utilización del 15% y donde el dispositivo de paginación está ocupado el 97% del tiempo. ¿Qué indican estas medidas?",
+        "opciones": [
+          "El grado de multiprogramación es demasiado bajo",
+          "El dispositivo de paginación es demasiado pequeño",
+          "La CPU es demasiado lenta",
+          "El grado de multiprogramación es demasiado alto"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7161,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Considere un sistema con memoria virtual cuya CPU tiene una utilización del 15% y donde el dispositivo de paginación está ocupado el 97% del tiempo. ¿Qué indican estas medidas?",
+        "opciones": [
+          "El grado de multiprogramación es demasiado bajo",
+          "El dispositivo de paginación es demasiado pequeño",
+          "La CPU es demasiado lenta",
+          "El grado de multiprogramación es demasiado alto"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Vigente D. Utilización de CPU muy baja junto con el dispositivo de paginación casi continuamente ocupado es el patrón clásico de thrashing: los procesos pasan tiempo esperando páginas. La respuesta operativa entre las ofrecidas es que el grado de multiprogramación es demasiado alto; reducirlo disminuye la contención de memoria y paginación. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1. El índice del material incluye memoria virtual, localidad, working set y thrashing (secciones 3.3 y 3.7); sirve de cotejo curricular, no sustituye la explicación de teoría de sistemas operativos. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-59"
+          ],
+          "A2": [
+            "A2-IV-1"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1. El índice del material incluye memoria virtual, localidad, working set y thrashing (secciones 3.3 y 3.7); sirve de cotejo curricular, no sustituye la explicación de teoría de sistemas operativos. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1. El índice del material incluye memoria virtual, localidad, working set y thrashing (secciones 3.3 y 3.7); sirve de cotejo curricular, no sustituye la explicación de teoría de sistemas operativos. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria."
+        },
+        "etiquetas": [
+          "memoria virtual",
+          "paginación",
+          "thrashing",
+          "grado de multiprogramación",
+          "utilización de CPU"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.eng.biu.ac.il/~wimers/files/courses/Old%20Courses/Operating_Systems/Books/Silberschatz%209th%20edition.pdf",
+              "referencia": "Operating System Concepts, capítulo de memoria virtual: un grado de multiprogramación excesivo provoca thrashing; el tiempo esperando al dispositivo de paginación hace caer la utilización de CPU."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/aix/7.1.0?topic=manager-virtual-memory-memory-load-control-facility",
+              "referencia": "IBM AIX VMM: en thrashing el sistema pasa la mayor parte del tiempo paginando en lugar de ejecutar instrucciones útiles."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 59: fundamentos de sistemas operativos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV-1: administración de sistemas operativos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1; El índice del material incluye memoria virtual, localidad, working set y thrashing (secciones 3.3 y 3.7); sirve de cotejo curricular, no sustituye la explicación de teoría de sistemas operativos."
+            }
+          ],
+          "observaciones": "Vigente D. Utilización de CPU muy baja junto con el dispositivo de paginación casi continuamente ocupado es el patrón clásico de thrashing: los procesos pasan tiempo esperando páginas. La respuesta operativa entre las ofrecidas es que el grado de multiprogramación es demasiado alto; reducirlo disminuye la contención de memoria y paginación. Cotejo curricular ITIC Academy: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026.1. El índice del material incluye memoria virtual, localidad, working set y thrashing (secciones 3.3 y 3.7); sirve de cotejo curricular, no sustituye la explicación de teoría de sistemas operativos. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 7162,
+      "original": {
+        "id": 7162,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una de las características de seguridad en SQL Server 2008 es el cifrado transparente de datos. Señala la afirmación correcta:",
+        "opciones": [
+          "SQL Server no puede cifrar información a nivel de archivos de registro.",
+          "SQL Server ofrece la capacidad de buscar dentro de los datos cifrados.",
+          "Para trabajar con datos cifrados utilizando esta característica hay que introducir cambios en las aplicaciones.",
+          "SQL Server no puede cifrar información a nivel de archivos de datos."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7162,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre el cifrado transparente de datos (TDE) de SQL Server, señale la afirmación correcta:",
+        "opciones": [
+          "TDE no cifra los ficheros de registro de transacciones.",
+          "TDE es transparente para las aplicaciones: el motor cifra los ficheros en reposo y descifra los datos al leerlos para procesar consultas.",
+          "Para consultar con TDE los datos de una base de datos hay que modificar las aplicaciones para descifrar cada valor.",
+          "TDE no cifra los ficheros de datos de la base."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. Se eliminó la referencia a SQL Server 2008 para que el ítem exprese la propiedad general vigente de TDE. El cifrado protege los datos en reposo y el motor realiza E/S transparente; la consulta no exige que la aplicación descifre columna por columna. El alcance concreto de ficheros/logs tiene matices por versión y estado de la base, por lo que se evitó formular una afirmación absoluta sobre todos los registros. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. La sección de seguridad de bases de datos distingue TDE para ficheros de datos, registros y copias, transparente al acceso de la base, de Always Encrypted/cifrado de columna. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-79"
+          ],
+          "A2": [
+            "A2-II-13"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. La sección de seguridad de bases de datos distingue TDE para ficheros de datos, registros y copias, transparente al acceso de la base, de Always Encrypted/cifrado de columna. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. La sección de seguridad de bases de datos distingue TDE para ficheros de datos, registros y copias, transparente al acceso de la base, de Always Encrypted/cifrado de columna. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria."
+        },
+        "etiquetas": [
+          "SQL Server",
+          "cifrado transparente de datos",
+          "TDE",
+          "datos en reposo",
+          "ficheros de datos",
+          "registro de transacciones"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver16",
+              "referencia": "Microsoft Learn, SQL Server TDE: cifra los ficheros de datos y ofrece cifrado y descifrado de E/S transparente para la aplicación; las consultas ordinarias se ejecutan en el motor sobre páginas descifradas en memoria."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-ver17",
+              "referencia": "Microsoft Learn, mover bases protegidas por TDE: describe el cifrado y descifrado de E/S en tiempo real de los ficheros de datos y registro."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 79: cifrado y algoritmos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-13: seguridad lógica de sistemas y herramientas de ciberseguridad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026; La sección de seguridad de bases de datos distingue TDE para ficheros de datos, registros y copias, transparente al acceso de la base, de Always Encrypted/cifrado de columna."
+            }
+          ],
+          "observaciones": "Corregida B. Se eliminó la referencia a SQL Server 2008 para que el ítem exprese la propiedad general vigente de TDE. El cifrado protege los datos en reposo y el motor realiza E/S transparente; la consulta no exige que la aplicación descifre columna por columna. El alcance concreto de ficheros/logs tiene matices por versión y estado de la base, por lo que se evitó formular una afirmación absoluta sobre todos los registros. Cotejo curricular ITIC Academy: ITIC Academy, bloque 48 Seguridad en Redes y en el Nivel de Aplicación, actualización 2026. La sección de seguridad de bases de datos distingue TDE para ficheros de datos, registros y copias, transparente al acceso de la base, de Always Encrypted/cifrado de columna. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 7163,
+      "original": {
+        "id": 7163,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "A partir de ASP.NET 2.0, ¿en qué carpeta se guarda el código compilado para controles, componentes y otro código que pueda ser referenciado por la aplicación (los archivos dll)?",
+        "opciones": [
+          "App_Data",
+          "Bin",
+          "App_WebReferences",
+          "Compilation"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7163,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una aplicación clásica ASP.NET Web Forms que despliega ensamblados compilados (DLL) referenciados por la aplicación, ¿en qué carpeta se alojan?",
+        "opciones": [
+          "App_Data.",
+          "Bin.",
+          "App_WebReferences.",
+          "Compilation."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Histórica B. Bin es la respuesta correcta para el modelo ASP.NET Web Forms clásico, y así queda acotado el contexto. Se marca histórica porque el enunciado de origen citaba ASP.NET 2.0, tecnología heredada; no debe interpretarse como una regla de despliegue de ASP.NET Core. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-65",
+            "A1-66"
+          ],
+          "A2": [
+            "A2-III-11",
+            "A2-III-12"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria."
+        },
+        "etiquetas": [
+          "ASP.NET Web Forms",
+          "carpeta Bin",
+          "ensamblados",
+          "DLL",
+          "tecnología heredada"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/previous-versions/aspnet/aa983464(v=vs.100)",
+              "referencia": "Microsoft Learn, compilación de proyectos ASP.NET Web Application: por defecto, el ensamblado compilado se guarda en Bin."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/dotnet/api/vswebsite.webfoldertype?view=visualstudiosdk-2022",
+              "referencia": "Microsoft Learn, webFolderTypeBin: Bin es la carpeta que contiene los ensamblados referenciados por la aplicación web."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, temas 65 y 66: desarrollo web y entorno Microsoft .NET."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, temas III-11 (.NET) y III-12 (aplicaciones web)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2; El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core."
+            }
+          ],
+          "observaciones": "Histórica B. Bin es la respuesta correcta para el modelo ASP.NET Web Forms clásico, y así queda acotado el contexto. Se marca histórica porque el enunciado de origen citaba ASP.NET 2.0, tecnología heredada; no debe interpretarse como una regla de despliegue de ASP.NET Core. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 7164,
+      "original": {
+        "id": 7164,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cómo son los tipos de datos en Java?",
+        "opciones": [
+          "Pese a estar orientado a objetos el lenguaje, los tipos no están orientados a objetos",
+          "Al estar orientado a objetos el lenguaje, los tipos están orientados a objetos",
+          "Algunos de los tipos son orientados a objetos y otros no",
+          "Debido a las peculiares características de Java, los tipos de datos no pueden clasificarse en ninguna de las dos categorías"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7164,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué categorías principales distingue la especificación del lenguaje Java para los tipos?",
+        "opciones": [
+          "Todos los tipos Java son tipos de objeto.",
+          "Java solo tiene tipos primitivos.",
+          "Java distingue tipos primitivos y tipos de referencia; los valores primitivos no son objetos.",
+          "Los tipos Java no pueden clasificarse como primitivos o de referencia."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C. La frase original “algunos tipos son orientados a objetos” era imprecisa. La JLS distingue formalmente tipos primitivos y de referencia; las referencias pueden designar objetos o arrays, mientras que los valores primitivos no son objetos. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-II-3"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria."
+        },
+        "etiquetas": [
+          "Java",
+          "tipos primitivos",
+          "tipos de referencia",
+          "objetos",
+          "Java Language Specification"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://docs.oracle.com/javase/specs/jls/se26/html/jls-4.html",
+              "referencia": "Java Language Specification, capítulo 4: divide los tipos Java en tipos primitivos y tipos de referencia; los objetos son instancias de clases o arrays, no los valores primitivos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 67: entorno de desarrollo Java."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-3: características técnicas de lenguajes y paradigmas de programación."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2; El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core."
+            }
+          ],
+          "observaciones": "Corregida C. La frase original “algunos tipos son orientados a objetos” era imprecisa. La JLS distingue formalmente tipos primitivos y de referencia; las referencias pueden designar objetos o arrays, mientras que los valores primitivos no son objetos. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria."
+        }
+      }
+    },
+    {
+      "id": 7165,
+      "original": {
+        "id": 7165,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según JAVA EE 5, ¿qué tipo de Enterprise Bean puede recibir mensajes JMS (Java Message Service)?",
+        "opciones": [
+          "Message-Driven Bean.",
+          "Stateful Session Bean.",
+          "Stateless Session Bean.",
+          "Message-Oriented Bean."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7165,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Jakarta EE, ¿qué tipo de Enterprise Bean está destinado a consumir mensajes JMS/Jakarta Messaging de forma asíncrona?",
+        "opciones": [
+          "Message-Driven Bean.",
+          "Stateful Session Bean.",
+          "Stateless Session Bean.",
+          "Message-Oriented Bean."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. Se actualizó el marco Java EE 5 al nombre vigente Jakarta EE y se explicitó la recepción asíncrona. Los Message-Driven Beans son el tipo de Enterprise Bean diseñado para consumir mensajes; los session beans pueden participar en operaciones síncronas, pero no son el endpoint asíncrono estándar. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-III-10"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria.",
+          "estado": "revisada",
+          "nota": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria."
+        },
+        "etiquetas": [
+          "Jakarta EE",
+          "Java EE",
+          "Enterprise Beans",
+          "Message-Driven Bean",
+          "JMS",
+          "mensajería asíncrona"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://jakarta.ee/specifications/enterprise-beans/4.0/jakarta-enterprise-beans-spec-core-4.0.html",
+              "referencia": "Especificación Jakarta Enterprise Beans 4.0: el modelo Message-Driven Bean procesa asíncronamente mensajes entrantes mediante el contenedor."
+            },
+            {
+              "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/entbeans/ejb-intro/ejb-intro.html",
+              "referencia": "Jakarta EE Tutorial, Enterprise Beans: un message-driven bean permite procesar mensajes de Jakarta Messaging de forma asíncrona; session beans no los reciben de forma asíncrona."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 67: entorno de desarrollo Java."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema III-10: arquitectura Java EE/Jakarta EE."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2; El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core."
+            }
+          ],
+          "observaciones": "Corregida A. Se actualizó el marco Java EE 5 al nombre vigente Jakarta EE y se explicitó la recepción asíncrona. Los Message-Driven Beans son el tipo de Enterprise Bean diseñado para consumir mensajes; los session beans pueden participar en operaciones síncronas, pero no son el endpoint asíncrono estándar. Cotejo curricular ITIC Academy: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.2. El material aborda ASP.NET Core y .NET, tipos primitivos y referencias en Java, Jakarta EE y Enterprise Beans/Jakarta Messaging. La pregunta de Bin se mantiene delimitada al despliegue clásico ASP.NET Web Forms, sin extrapolarla a ASP.NET Core. La correspondencia con el programa oficial se identifica por epígrafe; la respuesta se fundamenta en documentación técnica primaria."
+        }
+      }
+    }
+  ]
+}
