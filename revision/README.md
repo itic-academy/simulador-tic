@@ -16,7 +16,7 @@ Fuentes jurídicas y técnicas: [BOE, LSSI-CE consolidada, arts. 35–36](https:
 
 Inventario local tras el lote: 12.123 preguntas; 6.805 examinadas individualmente; 6.685 verificadas (1.288 vigentes, 4.908 corregidas y 489 históricas); 120 pendientes documentadas (47 de fuente y 73 de ambigüedad); 5.318 sin revisar individualmente; errores estructurales: 0. Ejecutados `node revision/revisar-lote-1297.cjs`, `node revision/academia-lote-1297.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Publicación pendiente de verificación** tras el push de este lote.
+**Publicación verificada:** commit de datos `d5bc9a0419152e3f37331b5450fc7a0451f2ebc3`; [GitHub Actions 43669154446](https://github.com/itic-academy/simulador-tic/actions/runs/43669154446) concluyó con Success (build y deploy). GitHub Pages respondió HTTP 200 sin caché para el inventario, registro del lote 1297, banco y README. El registro público contiene exactamente los IDs 6806–6810; el banco confirma estados corregida, claves B/D/C/D/B y sus clasificaciones A1/A2. El inventario público confirma 12.123 preguntas, 6.805 revisadas individualmente, 6.685 verificadas, 120 pendientes y 5.318 sin revisión individual.
 
 ## Lote 1290 — 15 de noviembre de 2026
 
