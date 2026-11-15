@@ -16,7 +16,7 @@ Cotejo ITIC Academy en Drive: [bloque 47 Aplicaciones móviles y sistemas operat
 
 Inventario tras el lote: 12.123 preguntas; 7.030 examinadas individualmente; 6.909 verificadas (1.343 vigentes, 5.060 corregidas y 506 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5.093 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1342.cjs`, `node revision/academia-lote-1342.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue:** pendiente de publicar y verificar el lote 1342.
+**Despliegue verificado:** el commit `4706c45` se publicó en GitHub Pages mediante el workflow [run 43704054084](https://github.com/itic-academy/simulador-tic/actions/runs/43704054084), finalizado con éxito. Se consultaron sin caché `/`, `/revision/inventario.json`, `/revision/cambios-lote-1342.json`, `/preguntas_preparatic.json` y `/revision/README.md`; todos respondieron HTTP 200. El registro público contiene los IDs 7031–7035 y estados/claves `7031 vigente A; 7032 corregida C; 7033 vigente B; 7034 corregida B; 7035 corregida C`, coincidentes con el banco. El inventario público coincide: 12.123 preguntas, 7.030 revisadas individualmente, 5.093 sin revisar y 0 errores estructurales.
 ## Lote 1341 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 7026–7030 con fichas y repositorios oficiales de Administración Digital, documentación de ISO, QGIS, GNU/FSF y el manual MÉTRICA v3. Se cotejaron los programas oficiales A1/A2 de 2025 y los documentos temáticos de ITIC Academy en Drive.
