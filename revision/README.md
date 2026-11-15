@@ -18555,4 +18555,4 @@ Fuentes: [Consejo Europeo, presidencia actual](https://www.consilium.europa.eu/e
 
 Ejecutados `node revision/revisar-lote-1334.cjs`, `node revision/academia-lote-1334.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas válidas; 6.990 revisadas individualmente (1.325 vigentes, 5.046 corregidas y 498 históricas); 121 pendientes documentadas (74 ambigüedad y 47 fuente); 5.133 aún sin revisión individual; errores estructurales: 0. La pregunta 6991 queda ligada a fecha explícita porque es información temporal.
 
-Despliegue del lote 1334: pendiente de publicación y comprobación de GitHub Pages.
+**Despliegue del lote 1334 verificado:** commit `5694061` publicado en `main`; [GitHub Actions, ejecución 43696993376](https://github.com/itic-academy/simulador-tic/actions/runs/43696993376) terminó con **Success** en `build` y `deploy`. GitHub Pages respondió HTTP 200 para inventario y registro de cambios, con caché evitada. El inventario público incluye el lote 1334 y confirma 12.123 preguntas, 6.990 revisadas individualmente, 6.869 verificadas, 121 pendientes documentadas y 5.133 sin revisión individual.
