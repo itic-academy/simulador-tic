@@ -18,7 +18,7 @@ Cotejo con ITIC Academy en Drive: [bloque 18, Protección jurídica, licencias y
 
 Inventario tras el lote: 12.123 preguntas; 6.955 examinadas individualmente; 6.834 verificadas (1.312 vigentes, 5.024 corregidas y 498 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.168 sin revisar individualmente; 0 errores estructurales. Ejecutados node revision/revisar-lote-1327.cjs, node revision/academia-lote-1327.cjs, node revision/inventario.cjs, node revision/verificar.cjs y git diff --check.
 
-**Despliegue:** se verificará tras publicar el commit del lote.
+**Despliegue verificado:** el commit 41751ad se publicó correctamente mediante GitHub Actions (jobs build y deploy completados con éxito). El inventario público responde HTTP 200 y refleja 12.123 preguntas: 1.312 vigentes, 5.024 corregidas, 498 históricas, 121 pendientes documentadas y 5.168 sin revisar individualmente; no hay errores estructurales.
 
 ## Lote 1326 — 15 de noviembre de 2026
 
