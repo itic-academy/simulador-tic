@@ -18,6 +18,8 @@ Cotejo Drive: [ITIC Academy, bloque 50 Videoconferencia](https://drive.google.co
 
 Inventario tras el lote: 12.123 preguntas; 6.910 examinadas individualmente; 6.789 verificadas (1.297 vigentes, 4.997 corregidas y 495 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.213 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1318.cjs`, `node revision/academia-lote-1318.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
+**Despliegue verificado:** el commit `186c496` activó el workflow “Deploy GitHub Pages”; la API de GitHub confirmó sus jobs `build` y `deploy` completados con éxito. Después, la URL pública `https://itic-academy.github.io/simulador-tic/revision/inventario.json` respondió HTTP 200 y devolvió 12.123 preguntas, 4.997 corregidas, 495 históricas y 5.213 sin revisar; el inventario público incluye `cambios-lote-1318.json`. Queda confirmada la publicación de este lote en Pages.
+
 ## Lote 1317 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 6906–6910. Se actualizaron las distinciones IPv4/IPv6 a requisitos RFC vigentes; se aclararon las preguntas de subred y del campo Protocol de IPv4; se delimitó lo que un código de distancia mínima 3 puede detectar o corregir; y se actualizó TESTA a la infraestructura TESTA-ng en el estado europeo actual.
