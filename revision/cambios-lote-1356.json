@@ -1,0 +1,379 @@
+{
+  "fecha": "2026-11-15",
+  "alcance": "IDs 7101–7105; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7101,
+      "original": {
+        "id": 7101,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué protocolo se utiliza para conocer la dirección IP asociada a una dirección Ethernet (MAC)?",
+        "opciones": [
+          "ARP",
+          "NAT",
+          "RARP"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7101,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué protocolo histórico se diseñó para que un equipo que sólo conoce su dirección Ethernet/MAC obtenga su dirección de protocolo (por ejemplo, IPv4)?",
+        "opciones": [
+          "ARP",
+          "NAT",
+          "RARP"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C. RARP resuelve el caso inverso a ARP: obtiene una dirección de protocolo a partir de la dirección hardware del cliente. Se añadió “histórico” porque BOOTP y DHCP reemplazaron en la práctica su uso para la configuración de hosts. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque cubre ARP, direcciones IPv4 y protocolos de configuración; el cotejo separa la función histórica de RARP de DHCP actual. Correspondencia oficial: A1-115/A2-II-8. No se usa la academia como sustituto de RFC/ITU.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque cubre ARP, direcciones IPv4 y protocolos de configuración; el cotejo separa la función histórica de RARP de DHCP actual. Correspondencia oficial: A1-115/A2-II-8. No se usa la academia como sustituto de RFC/ITU.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque cubre ARP, direcciones IPv4 y protocolos de configuración; el cotejo separa la función histórica de RARP de DHCP actual. Correspondencia oficial: A1-115/A2-II-8. No se usa la academia como sustituto de RFC/ITU."
+        },
+        "etiquetas": [
+          "RARP",
+          "MAC",
+          "dirección IP",
+          "BOOTP",
+          "DHCP"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc903.html",
+              "referencia": "RFC 903: RARP permite que una estación que conoce su dirección hardware obtenga su dirección de protocolo (por ejemplo IP); es un protocolo normalizado histórico."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+              "referencia": "RFC 2131: DHCP ofrece configuración dinámica de hosts y es la solución de uso moderno; el ítem se formula como identificación histórica de RARP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: direccionamiento y protocolos IP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos TCP/IP y direccionamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque cubre ARP, direcciones IPv4 y protocolos de configuración; el cotejo separa la función histórica de RARP de DHCP actual. Cotejo curricular."
+            }
+          ],
+          "observaciones": "Corregida C. RARP resuelve el caso inverso a ARP: obtiene una dirección de protocolo a partir de la dirección hardware del cliente. Se añadió “histórico” porque BOOTP y DHCP reemplazaron en la práctica su uso para la configuración de hosts. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque cubre ARP, direcciones IPv4 y protocolos de configuración; el cotejo separa la función histórica de RARP de DHCP actual. Correspondencia oficial: A1-115/A2-II-8. No se usa la academia como sustituto de RFC/ITU."
+        }
+      }
+    },
+    {
+      "id": 7102,
+      "original": {
+        "id": 7102,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un administrador de red ha de asignar direcciones IP estáticas a los servidores en la subred 192.168.20.24/29. Teniendo en cuenta que al router se le asigna la primera de las direcciones útiles de dicha subred, ¿cuál sería la configuración IP a definir en uno de los citados servidores si se le quiere reservar la última dirección IP asignable dentro de dicho rango?",
+        "opciones": [
+          "Dirección IP: 192.168.20.31. Máscara de red: 255.255.255.248. Puerta de enlace predeterminada: 192.168.20.25.",
+          "Dirección IP: 192.168.20.254. Máscara de red: 255.255.255.0. Puerta de enlace predeterminada: 192.168.20.1.",
+          "Dirección IP: 192.168.20.30. Máscara de red: 255.255.255.248. Puerta de enlace predeterminada: 192.168.20.25.",
+          "Dirección IP: 192.168.20.28. Máscara de red: 255.255.255.248. Puerta de enlace predeterminada: 192.168.20.1."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7102,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un administrador de red ha de asignar direcciones IP estáticas a los servidores en la subred 192.168.20.24/29. Teniendo en cuenta que al router se le asigna la primera de las direcciones útiles de dicha subred, ¿cuál sería la configuración IP a definir en uno de los citados servidores si se le quiere reservar la última dirección IP asignable dentro de dicho rango?",
+        "opciones": [
+          "Dirección IP: 192.168.20.31. Máscara de red: 255.255.255.248. Puerta de enlace predeterminada: 192.168.20.25.",
+          "Dirección IP: 192.168.20.254. Máscara de red: 255.255.255.0. Puerta de enlace predeterminada: 192.168.20.1.",
+          "Dirección IP: 192.168.20.30. Máscara de red: 255.255.255.248. Puerta de enlace predeterminada: 192.168.20.25.",
+          "Dirección IP: 192.168.20.28. Máscara de red: 255.255.255.248. Puerta de enlace predeterminada: 192.168.20.1."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Vigente C. Máscara /29 = 255.255.255.248 y bloque de ocho: red 192.168.20.24, hosts .25–.30, broadcast .31. Si el router usa la primera dirección útil (.25), la última asignable al servidor es .30. La opción correcta ya está marcada. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El documento cubre IPv4/CIDR y cálculo de subredes; se verifica el rango /29. Correspondencia oficial: A1-115/A2-II-8, A2-IV-8. No se usa la academia como sustituto de RFC/ITU.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El documento cubre IPv4/CIDR y cálculo de subredes; se verifica el rango /29. Correspondencia oficial: A1-115/A2-II-8, A2-IV-8. No se usa la academia como sustituto de RFC/ITU.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El documento cubre IPv4/CIDR y cálculo de subredes; se verifica el rango /29. Correspondencia oficial: A1-115/A2-II-8, A2-IV-8. No se usa la academia como sustituto de RFC/ITU."
+        },
+        "etiquetas": [
+          "IPv4",
+          "subred /29",
+          "192.168.20.24/29",
+          "gateway",
+          "broadcast"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1878.html",
+              "referencia": "RFC 1878, tabla de subredes: /29 contiene 8 direcciones totales y 6 direcciones de host utilizables bajo la convención IPv4 normal (red/broadcast reservados). Para 192.168.20.24/29: red .24, hosts .25–.30, broadcast .31."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: direccionamiento y redes IP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, temas II-8 y IV-8: direccionamiento IP y redes locales."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El documento cubre IPv4/CIDR y cálculo de subredes; se verifica el rango /29. Cotejo curricular."
+            }
+          ],
+          "observaciones": "Vigente C. Máscara /29 = 255.255.255.248 y bloque de ocho: red 192.168.20.24, hosts .25–.30, broadcast .31. Si el router usa la primera dirección útil (.25), la última asignable al servidor es .30. La opción correcta ya está marcada. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El documento cubre IPv4/CIDR y cálculo de subredes; se verifica el rango /29. Correspondencia oficial: A1-115/A2-II-8, A2-IV-8. No se usa la academia como sustituto de RFC/ITU."
+        }
+      }
+    },
+    {
+      "id": 7103,
+      "original": {
+        "id": 7103,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Podemos definir ARP poisoning como:",
+        "opciones": [
+          "Alteración de la tabla ARP para que una dirección IP se corresponda con una MAC distinta a la que tenía",
+          "Con este ataque no se puede redirigir el tráfico al ordenador del atacante",
+          "A y B son correctas",
+          "A y B son incorrectas"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7103,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué describe mejor un ataque de envenenamiento de caché ARP (ARP spoofing)?",
+        "opciones": [
+          "El atacante envía mensajes ARP falsos para que la víctima almacene una asociación IP–MAC manipulada; esto puede facilitar interceptación, redirección o denegación de tráfico en la red local.",
+          "El atacante modifica registros DNS públicos sin tener acceso a la red local.",
+          "El ataque cifra necesariamente todo el tráfico con un protocolo de extremo a extremo.",
+          "Es una técnica para traducir una dirección privada mediante NAT."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. El ítem original afirmaba sin matiz que la manipulación de la tabla es la definición y contenía la negación falsa de que no puede redirigir tráfico. Ahora explica que una asociación falsificada puede posibilitar interceptación/redirección en el segmento, aunque el impacto depende de la topología y del reenvío del atacante. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material trata seguridad de redes y ataques de capa 2/ARP poisoning. Correspondencia oficial: A1-125/A2-IV-12. No se usa la academia como sustituto de RFC/ITU.",
+        "clasificacion": {
+          "A1": [
+            "A1-125"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material trata seguridad de redes y ataques de capa 2/ARP poisoning. Correspondencia oficial: A1-125/A2-IV-12. No se usa la academia como sustituto de RFC/ITU.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material trata seguridad de redes y ataques de capa 2/ARP poisoning. Correspondencia oficial: A1-125/A2-IV-12. No se usa la academia como sustituto de RFC/ITU."
+        },
+        "etiquetas": [
+          "ARP poisoning",
+          "ARP spoofing",
+          "envenenamiento de caché",
+          "man-in-the-middle"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.cisco.com/web/fw/tools/cisco-business/emulators/switch/catalyst/c1300-24mgp-4x/html/cat1k/english/1300/c_arp_inspection.html",
+              "referencia": "Cisco, ARP Inspection: una respuesta ARP falsificada puede instalar una asociación IP–MAC falsa en las cachés y colocar al atacante en el flujo de tráfico (MITM)."
+            },
+            {
+              "url": "https://attack.mitre.org/techniques/T1557/002/",
+              "referencia": "MITRE ATT&CK T1557.002, ARP Cache Poisoning: un adversario puede falsificar asociaciones en la caché ARP para interceptar tráfico."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 125: seguridad en redes y ataques."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema IV-12: seguridad en redes y controles."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material trata seguridad de redes y ataques de capa 2/ARP poisoning. Cotejo curricular."
+            }
+          ],
+          "observaciones": "Corregida A. El ítem original afirmaba sin matiz que la manipulación de la tabla es la definición y contenía la negación falsa de que no puede redirigir tráfico. Ahora explica que una asociación falsificada puede posibilitar interceptación/redirección en el segmento, aunque el impacto depende de la topología y del reenvío del atacante. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material trata seguridad de redes y ataques de capa 2/ARP poisoning. Correspondencia oficial: A1-125/A2-IV-12. No se usa la academia como sustituto de RFC/ITU."
+        }
+      }
+    },
+    {
+      "id": 7104,
+      "original": {
+        "id": 7104,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Suponiendo que con el protocolo HDLC tuvieramos un tamaño de ventana de 6000, se hubieran enviado 2000 paquetes y recibido 1001 reconocimientos. ¿Cuántos paquete podriamos seguir enviando?",
+        "opciones": [
+          "3000",
+          "6000",
+          "5000",
+          "4000"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7104,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Suponiendo que con el protocolo HDLC tuvieramos un tamaño de ventana de 6000, se hubieran enviado 2000 paquetes y recibido 1001 reconocimientos. ¿Cuántos paquete podriamos seguir enviando?",
+        "opciones": [
+          "3000",
+          "6000",
+          "5000",
+          "4000"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Pendiente de ambigüedad. No se puede validar la clave propuesta (5000) porque el supuesto central no es compatible con el mecanismo HDLC descrito en los estándares: RFC 1663 limita la ventana PPP/HDLC a 1–127, mientras los formatos HDLC clásicos usan numeración módulo 8 o 128. Además, “1001 acknowledgements” no define si es cuenta de tramas confirmadas o número N(R), ni el esquema de numeración/ventana. Con la lectura aritmética simplificada (6000 máximo en vuelo, 2000 enviados y 1001 tramas confirmadas) quedarían 999 sin confirmar y cabrían 5001 más, cifra que no aparece en opciones; por ello se conserva como pendiente y no se declara verificada. Para resolverlo, el enunciado debe cambiar a una ventana válida e indicar el ACK acumulativo y el modelo de ARQ. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque cubre HDLC/protocolos de enlace y ventanas; el ítem queda pendiente porque una ventana 6000 excede el límite normativo citado. Correspondencia oficial: A1-108/A2-II-8, A2-IV-8. No se usa la academia como sustituto de RFC/ITU.",
+        "clasificacion": {
+          "A1": [
+            "A1-108"
+          ],
+          "A2": [
+            "A2-II-8",
+            "A2-IV-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque cubre HDLC/protocolos de enlace y ventanas; el ítem queda pendiente porque una ventana 6000 excede el límite normativo citado. Correspondencia oficial: A1-108/A2-II-8, A2-IV-8. No se usa la academia como sustituto de RFC/ITU.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque cubre HDLC/protocolos de enlace y ventanas; el ítem queda pendiente porque una ventana 6000 excede el límite normativo citado. Correspondencia oficial: A1-108/A2-II-8, A2-IV-8. No se usa la academia como sustituto de RFC/ITU."
+        },
+        "etiquetas": [
+          "HDLC",
+          "ventana deslizante",
+          "N(S)",
+          "N(R)",
+          "modulo 8",
+          "modulo 128"
+        ],
+        "revision": {
+          "estado": "pendiente_ambiguedad",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1663.html",
+              "referencia": "RFC 1663 §2.1: la ventana HDLC/PPP negociada va de 1 a 127; si es menor de 8 se usa secuenciación módulo 8 y, en otro caso, módulo 128. Una ventana de 6000 no es válida en este mecanismo."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1662.html",
+              "referencia": "RFC 1662: HDLC-like framing para PPP; la numeración de secuencia y los campos de control están limitados por el formato de control negociado."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 108: redes de telecomunicaciones, transmisión y protocolos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, temas II-8/IV-8: modelo TCP/IP y redes locales/protocolos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque cubre HDLC/protocolos de enlace y ventanas; el ítem queda pendiente porque una ventana 6000 excede el límite normativo citado. Cotejo curricular."
+            }
+          ],
+          "observaciones": "Pendiente de ambigüedad. No se puede validar la clave propuesta (5000) porque el supuesto central no es compatible con el mecanismo HDLC descrito en los estándares: RFC 1663 limita la ventana PPP/HDLC a 1–127, mientras los formatos HDLC clásicos usan numeración módulo 8 o 128. Además, “1001 acknowledgements” no define si es cuenta de tramas confirmadas o número N(R), ni el esquema de numeración/ventana. Con la lectura aritmética simplificada (6000 máximo en vuelo, 2000 enviados y 1001 tramas confirmadas) quedarían 999 sin confirmar y cabrían 5001 más, cifra que no aparece en opciones; por ello se conserva como pendiente y no se declara verificada. Para resolverlo, el enunciado debe cambiar a una ventana válida e indicar el ACK acumulativo y el modelo de ARQ. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El bloque cubre HDLC/protocolos de enlace y ventanas; el ítem queda pendiente porque una ventana 6000 excede el límite normativo citado. Correspondencia oficial: A1-108/A2-II-8, A2-IV-8. No se usa la academia como sustituto de RFC/ITU."
+        }
+      }
+    },
+    {
+      "id": 7105,
+      "original": {
+        "id": 7105,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Funciones como contabilidad, enrutamiento, control de flujo, control de congestión o direccionamiento pertenecen al:",
+        "opciones": [
+          "nivel de transporte",
+          "nivel de enlace",
+          "nivel de red",
+          "son funciones presentes en varios niveles"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7105,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una arquitectura de comunicaciones por capas, funciones como control de flujo, control de congestión, direccionamiento y contabilidad:",
+        "opciones": [
+          "pertenecen exclusivamente al nivel de transporte.",
+          "pertenecen exclusivamente al nivel de enlace.",
+          "pertenecen exclusivamente al nivel de red.",
+          "pueden aparecer en diferentes niveles o capas, según el servicio y la arquitectura."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. Se sustituyó la generalización de que toda la lista pertenece a varias capas por una formulación que afirma únicamente que el conjunto no se asigna exclusivamente a un nivel. Por ejemplo, el control de flujo se trata en enlace y transporte; el direccionamiento y encaminamiento tienen roles de red y de otros niveles según la arquitectura. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material desarrolla modelo OSI, funciones por capas, direccionamiento y control de tráfico. Correspondencia oficial: A1-111, A1-115/A2-II-8. No se usa la academia como sustituto de RFC/ITU.",
+        "clasificacion": {
+          "A1": [
+            "A1-111",
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material desarrolla modelo OSI, funciones por capas, direccionamiento y control de tráfico. Correspondencia oficial: A1-111, A1-115/A2-II-8. No se usa la academia como sustituto de RFC/ITU.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material desarrolla modelo OSI, funciones por capas, direccionamiento y control de tráfico. Correspondencia oficial: A1-111, A1-115/A2-II-8. No se usa la academia como sustituto de RFC/ITU."
+        },
+        "etiquetas": [
+          "modelo OSI",
+          "funciones de red",
+          "control de flujo",
+          "congestión",
+          "direccionamiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.200-199407-I%21%21PDF-E&lang=e&type=items",
+              "referencia": "ITU-T X.200, modelo OSI: define servicios y funciones por capas; ciertas funciones como control de flujo existen en más de una capa, mientras enrutamiento se asocia principalmente a red. La lista no es exclusiva de una única capa."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, temas 111/115: modelo OSI y redes IP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: capas, protocolos, direccionamiento y encaminamiento."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material desarrolla modelo OSI, funciones por capas, direccionamiento y control de tráfico. Cotejo curricular."
+            }
+          ],
+          "observaciones": "Corregida D. Se sustituyó la generalización de que toda la lista pertenece a varias capas por una formulación que afirma únicamente que el conjunto no se asigna exclusivamente a un nivel. Por ejemplo, el control de flujo se trata en enlace y transporte; el direccionamiento y encaminamiento tienen roles de red y de otros niveles según la arquitectura. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material desarrolla modelo OSI, funciones por capas, direccionamiento y control de tráfico. Correspondencia oficial: A1-111, A1-115/A2-II-8. No se usa la academia como sustituto de RFC/ITU."
+        }
+      }
+    }
+  ]
+}

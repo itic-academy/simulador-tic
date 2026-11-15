@@ -1,4 +1,20 @@
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1355 (IDs 7096–7100). Acumulado: 7.095 preguntas examinadas individualmente; 6.974 verificadas (1.353 vigentes, 5.115 corregidas y 506 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5.028 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1356 (IDs 7101–7105). Acumulado: 7.100 preguntas examinadas individualmente; 6.978 verificadas (1.353 vigentes, 5.119 corregidas y 506 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 5.023 sin revisar individualmente.
+
+## Lote 1356 — 15 de noviembre de 2026
+
+Revisadas individualmente las preguntas 7101–7105. Se acotó RARP a su uso histórico; se comprobó el direccionamiento de la subred /29; se sustituyó una definición incompleta de ARP poisoning por su mecanismo y posibles efectos; se documentó una pregunta HDLC inválida/ambigua como pendiente; y se reformularon las funciones de red para evitar una asignación exclusiva incorrecta.
+
+- **7101 — RARP:** corregida C. RARP obtenía una dirección de protocolo a partir de una MAC; se conserva como identificación histórica, pues BOOTP/DHCP asumieron la configuración dinámica moderna.
+- **7102 — subred /29:** vigente C. El rango 192.168.20.24/29 tiene red .24, hosts .25–.30 y broadcast .31; con gateway .25, la última IP de servidor es .30.
+- **7103 — ARP poisoning:** corregida A. Mensajes ARP falsos pueden envenenar la caché y facilitar interceptación/redirección en la LAN; el efecto depende de la topología. Se eliminó la afirmación falsa de que no puede redirigir tráfico.
+- **7104 — ventana HDLC:** pendiente de ambigüedad. RFC 1663 limita la ventana negociada a 1–127 (numeración módulo 8/128), así que 6000 no es un parámetro HDLC válido en el mecanismo citado. Además, no se especifica si 1001 es contador de ACKs o N(R); el cálculo simplificado daría 5001, que no figura entre las opciones. No se marca como verificada.
+- **7105 — funciones de capas:** corregida D. Se indica que el conjunto de funciones no pertenece de forma exclusiva a una capa; control de flujo aparece, por ejemplo, tanto en enlace como transporte.
+
+Fuentes: [RFC 903, Reverse Address Resolution Protocol](https://www.rfc-editor.org/rfc/rfc903.html), [RFC 2131, DHCP](https://www.rfc-editor.org/rfc/rfc2131.html); [RFC 1878, tabla IPv4 (/29)](https://www.rfc-editor.org/rfc/rfc1878.html); [Cisco, ARP cache poisoning y MITM](https://www.cisco.com/web/fw/tools/cisco-business/emulators/switch/catalyst/c1300-24mgp-4x/html/cat1k/english/1300/c_arp_inspection.html) y [MITRE ATT&CK T1557.002](https://attack.mitre.org/techniques/T1557/002/); [RFC 1663 §2.1, ventana numerada HDLC/PPP y límite 1–127](https://www.rfc-editor.org/rfc/rfc1663.html); [ITU-T X.200, modelo OSI y funciones por capas](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.200-199407-I%21%21PDF-E&lang=e&type=items). Programas oficiales [A1 GSI, BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI, BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262), cotejados con revision/temario-oficial.json.
+
+Cotejo ITIC Academy: [bloque 43 Protocolos, versión 2026.1](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk), cuyo extracto aborda ARP, IPv4/CIDR, capas de protocolos y enlace/HDLC. Correspondencia oficial: A1-115/A1-125/A1-108/A1-111 y A2-II-8/A2-IV-8/A2-IV-12. El cotejo académico apoya cobertura curricular, no sustituye las normas técnicas.
+
+Inventario tras el lote: 12.123 preguntas; 7.100 examinadas individualmente; 6.978 verificadas (1.353 vigentes, 5.119 corregidas y 506 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 5.023 sin revisar individualmente; 0 errores estructurales. Ejecutados node revision/revisar-lote-1356.cjs, node revision/academia-lote-1356.cjs, node revision/inventario.cjs, node revision/verificar.cjs y git diff --check. Publicación pendiente de verificación.
 
 ## Lote 1355 — 15 de noviembre de 2026
 
