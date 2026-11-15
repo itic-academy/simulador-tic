@@ -1,0 +1,12 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankFile=path.join(root,'preguntas_preparatic.json');
+const logFile=path.join(__dirname,'cambios-lote-1306.json');
+const bank=JSON.parse(fs.readFileSync(bankFile,'utf8')),log=JSON.parse(fs.readFileSync(logFile,'utf8'));
+const q=bank.preguntas.find(x=>x.id===6851),change=log.cambios.find(x=>x.id===6851);
+assert.ok(q&&change,'Pregunta 6851 o registro ausente');
+assert.equal(q.respuesta_correcta,1,'La respuesta ya cambió o el lote no está en el estado esperado');
+assert.equal(change.actualizada.respuesta_correcta,1,'El log no coincide con el estado esperado');
+q.respuesta_correcta=0;change.actualizada.respuesta_correcta=0;
+fs.writeFileSync(bankFile,JSON.stringify(bank,null,2)+'\n');
+fs.writeFileSync(logFile,JSON.stringify(log,null,2)+'\n');
+console.log('Clave de 6851 corregida a A; ahora coincide con el enunciado y la fuente CORDIS.');

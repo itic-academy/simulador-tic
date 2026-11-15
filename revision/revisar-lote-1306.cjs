@@ -1,6 +1,6 @@
 const aplicar=require('./aplicar-lote.cjs');
 const edits={
-6851:{texto:'¿Qué iniciativa europea se denomina ICT Innovation for Manufacturing SMEs (I4MS) y apoya la adopción de TIC por las pymes manufactureras?',opciones:['I4MS.','SCALE.','CREMA.','Industry 4.0 for SMEs (SME 4.0).']},
+6851:{texto:'¿Qué iniciativa europea se denomina ICT Innovation for Manufacturing SMEs (I4MS) y apoya la adopción de TIC por las pymes manufactureras?',opciones:['I4MS.','SCALE.','CREMA.','Industry 4.0 for SMEs (SME 4.0).'],respuesta_correcta:0},
 6852:{texto:'En 3GPP Release 13, ¿qué tecnología celular LPWAN ofrece una tasa teórica máxima de subida cercana a 62 kbit/s?',opciones:['LTE-M (Cat-M1).','NB-IoT (Cat-NB1).','Weightless.','Sigfox.']},
 6853:{texto:'Según los principios de diseño de Industrie 4.0 de Hermann, Pentek y Otto, ¿cuál de estas opciones NO es uno de los principios enumerados?',opciones:['Modularidad.','Virtualización.','Descentralización.','Todas las anteriores son principios del modelo.']},
 6854:{texto:'¿Qué conjunto corresponde a las cinco capas del modelo de plataforma de ciudad inteligente de UNE 178104:2017?',opciones:['Adquisición/interconexión, interoperabilidad, seguridad, servicios y soporte.','Adquisición/interconexión, conocimiento, interoperabilidad, servicios inteligentes y soporte.','Adquisición/interconexión, interoperabilidad, seguridad, administración, servicios y soporte.','Ninguna de las anteriores.']},
