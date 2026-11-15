@@ -17814,3 +17814,5 @@ Fuentes: [EDPB, PET aplicadas a sistemas con datos personales](https://www.edpb.
 
 Ejecutados `node revision/revisar-lote-1292.cjs`, `node revision/academia-lote-1292.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas válidas, 6.780 revisadas individualmente, 6.661 verificadas, 119 pendientes documentadas y 5.343 sin revisión individual. Integridad estructural no equivale a revisión del contenido pendiente.
 
+Despliegue del lote 1292 comprobado: commit `311ef587f6eeab7240a448e7c298fab54aaf1713` en `main`; [Deploy GitHub Pages, ejecución 43664679299](https://github.com/itic-academy/simulador-tic/actions/runs/43664679299) concluyó con éxito. Sin caché, respondieron HTTP 200 el README, inventario, registro del lote y banco publicados. Se encontraron las preguntas 6781–6785, las respuestas 3/3/0/2/2 y el cotejo académico; el inventario público refleja 12.123 totales, 6.780 revisadas, 6.661 verificadas, 119 pendientes y 5.343 sin revisar individualmente.
+
