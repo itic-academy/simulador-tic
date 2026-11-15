@@ -16,7 +16,7 @@ Cotejo de ITIC Academy en Drive: [bloque 20 Interoperabilidad de sistemas, versi
 
 Inventario tras el lote: 12.123 preguntas; 7.015 examinadas individualmente; 6.894 verificadas (1.336 vigentes, 5.053 corregidas y 505 históricas); 121 pendientes documentadas (47 de fuente y 74 de ambigüedad); 5.108 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1339.cjs`, `node revision/academia-lote-1339.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue:** se verificará después de publicar el lote.
+**Despliegue verificado:** el commit `e26eda6` se publicó correctamente mediante GitHub Actions ([run 43701419188](https://github.com/itic-academy/simulador-tic/actions/runs/43701419188), finalizado con éxito). GitHub Pages respondió HTTP 200 sin caché para inventario, registro del lote y banco. Se cotejaron los IDs 7016–7020, sus estados `histórica/corregida/corregida/vigente/vigente` y las claves D/A/C/C/A; coinciden con el registro. El inventario público refleja 12.123 preguntas, con 1.336 vigentes, 5.053 corregidas, 505 históricas, 121 pendientes y 5.108 sin revisar; errores estructurales: 0.
 
 ## Lote 1331 — 15 de noviembre de 2026
 
