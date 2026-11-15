@@ -4,7 +4,7 @@ Estado parcial, no revisión completa del banco. Publicación desde main mediant
 
 ## Lote 1302 — 15 de noviembre de 2026
 
-Revisadas individualmente las preguntas 6831–6835. Se distinguió Go como lenguaje de los sistemas operativos IoT, reflejando además que Mbed OS llegó a fin de vida en julio de 2026; se confirmó en una fuente reciente de Telefónica el nombre Thinking City; se fechó una pregunta organizativa del CTN 178 para evitar mezclar presidencias históricas; se citó la especificación IETF de XMPP; y se acotó la descripción de Arduino a su plataforma abierta de electrónica y usos IoT.
+Revisadas individualmente las preguntas 6831–6835. Se distinguió Go como lenguaje de los sistemas operativos IoT, reflejando además que Mbed OS llegó a fin de vida en julio de 2026; se confirmó en una fuente reciente de Telefónica el nombre Thinking City; se fechó una pregunta organizativa del CTN 178 para evitar mezclar presidencias históricas; se citó la especificación IETF de XMPP; y se acotó la descripción de Arduino a su plataforma abierta de electrónica y usos IoT. La comprobación del banco publicado detectó que 6833 aún conservaba el índice de la clave original; se ajustó a B (índice 1) conforme al enunciado reformulado y se sincronizó el registro de cambios antes del despliegue final.
 
 - **6831 — sistemas operativos para IoT:** corregida C. Mbed OS (aunque terminó su ciclo de vida en julio de 2026), Contiki-NG y RIOT OS son sistemas operativos para microcontroladores/IoT; Go (Golang) es un lenguaje de programación. La respuesta no implica que Mbed siga mantenido o soportado. A1-117; A2-IV.13. Academy, bloque 47 (sistemas operativos y aplicaciones móviles).
 - **6832 — plataforma de Telefónica para ciudades inteligentes:** vigente A, Thinking City. Telefónica la identifica en 2026 como su plataforma de inteligencia urbana para integrar interoperabilidad, analítica y gestión de datos. A1-117; A2-IV.13. Academy, bloque 44 (IoT y territorios inteligentes).
@@ -16,7 +16,7 @@ Fuentes primarias: [Arm Mbed OS](https://os.mbed.com/mbed-os/) y [aviso oficial 
 
 Inventario tras el lote: 12.123 preguntas; 6.830 examinadas individualmente; 6.710 verificadas (1.294 vigentes, 4.927 corregidas y 489 históricas); 120 pendientes documentadas (47 de fuente y 73 de ambigüedad); 5.293 sin revisar individualmente; errores estructurales: 0. Ejecutados `node revision/revisar-lote-1302.cjs`, `node revision/academia-lote-1302.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Publicación pendiente:** el lote 1302 aún no se ha publicado ni verificado en GitHub Pages.
+**Publicación pendiente:** el lote 1302 y el ajuste de clave de 6833 aún no se han publicado ni verificado juntos en GitHub Pages.
 
 ## Lote 1301 — 15 de noviembre de 2026
 

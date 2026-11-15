@@ -1,0 +1,12 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const base=__dirname,bankPath=path.join(base,'..','preguntas_preparatic.json'),logPath=path.join(base,'cambios-lote-1302.json');
+const bank=JSON.parse(fs.readFileSync(bankPath,'utf8')),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const q=bank.preguntas.find(x=>x.id===6833),c=log.cambios.find(x=>x.id===6833);
+assert.ok(q&&c,'No se encuentra la pregunta 6833 en banco y registro');
+assert.equal(q.revision.estado,'corregida');
+assert.equal(q.texto,'Según la descripción del CTN 178 publicada por UNE en 2021, ¿quién era presidente del comité?');
+assert.equal(q.opciones[1],'Enrique Martínez Marín, presidente de SEGITTUR.');
+assert.equal(q.respuesta_correcta,0,'La clave no es la anterior; no sobrescribir un cambio concurrente');
+q.respuesta_correcta=1;c.actualizada.respuesta_correcta=1;
+fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');
+console.log('Clave 6833 ajustada a B (índice 1), conforme al enunciado acotado a la fuente UNE de 2021.');
