@@ -22,7 +22,7 @@ const records=[
 {url:a1,referencia:'Convocatoria A1 GSI 2025, anexo I, temas 37 y 88: metodologías ágiles/lean y mención expresa de Kanban.'},
 {url:a2,referencia:'Convocatoria A2 GSI 2025, tema III.2: planificación y metodologías de desarrollo.'}
 ],edits[6871],'Se reemplaza «reglas» genéricas por una distinción verificable entre prácticas y métrica. Visualizar, limitar WIP y gestionar flujo son prácticas; el tiempo de entrega/lead time es una medida de flujo, no una práctica. La guía Kanban 2025 denomina sus cuatro métricas básicas WIP, throughput, work item age y cycle time; se conserva lead time como término usado en documentación Kanban anterior/glosario.', 'corregida'],
-[6872,[79,80,82,125],['II-12'],['función hash','huella digital','resumen criptográfico','integridad','criptografía'],[
+[6872,[79,80,82,125],['IV-12'],['función hash','huella digital','resumen criptográfico','integridad','criptografía'],[
 {url:nistHash,referencia:'NIST CSRC Glossary, Cryptographic hash function: función que obtiene un valor numérico dependiente del contenido de un archivo o mensaje; puede considerarse su huella digital.'},
 {url:fips,referencia:'NIST FIPS 180-4, Secure Hash Standard: especifica funciones hash que producen message digests de longitud fija para detectar cambios en mensajes.'},
 {url:a1,referencia:'Convocatoria A1 GSI 2025, temas 79, 80 y 82: hash, firma electrónica, claves y herramientas criptográficas.'},
