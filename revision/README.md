@@ -18,7 +18,7 @@ Cotejo de ITIC Academy en Drive: [bloque 17, Adquisición, alternativas y rentab
 
 Inventario tras el lote: 12.123 preguntas; 6.935 examinadas individualmente; 6.814 verificadas (1.305 vigentes, 5.013 corregidas y 496 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.188 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1323.cjs`, `node revision/academia-lote-1323.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue pendiente de verificación** hasta completar publicación del commit de este lote y comprobar el inventario público.
+**Despliegue verificado:** GitHub Actions completó correctamente los jobs `build` y `deploy` para `70fc0dc`. `https://itic-academy.github.io/simulador-tic/revision/inventario.json` responde HTTP 200 y publica 1.305 vigentes, 5.013 corregidas, 496 históricas y 5.188 sin revisar individualmente (12.123 en total); 121 pendientes documentadas y cero errores estructurales.
 
 ## Lote 1322 — 15 de noviembre de 2026
 
