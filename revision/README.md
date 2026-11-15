@@ -18,7 +18,7 @@ Cotejo Drive: [ITIC Academy, bloque 24, Organismos de normalización (2026)](htt
 
 Inventario tras el lote: 12.123 preguntas; 6.875 examinadas individualmente; 6.754 verificadas (1.294 vigentes, 4.971 corregidas y 489 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.248 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1311.cjs`, `node revision/academia-lote-1311.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue por verificar tras el envío a main:** no se cuenta como publicado hasta comprobar que GitHub Actions/Pages muestran esta revisión y el inventario actualizado.
+**Despliegue pendiente de verificación:** el commit del lote `bda8c93f90ad7ef2a91be46d319424daec1f8bd0` se envió a `main`. La comprobación inmediata volvió a fallar por resolución DNS (`Host desconocido. (itic-academy.github.io:443)`); la consulta web tampoco pudo abrir Pages ni la API de Actions. No se afirma que el despliegue esté activo hasta comprobar externamente el banco/inventario y la ejecución correspondiente.
 
 ## Lote 1310 — 15 de noviembre de 2026
 
