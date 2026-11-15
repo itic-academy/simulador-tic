@@ -20,7 +20,7 @@ Cotejo Drive: [ITIC Academy, bloque 30, Tecnologías de sistemas de información
 
 Inventario tras el lote: 12.123 preguntas; 6.885 examinadas individualmente; 6.764 verificadas (1.294 vigentes, 4.979 corregidas y 491 históricas); 121 pendientes (47 de fuente y 74 de ambigüedad); 5.238 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1313.cjs`, `node revision/academia-lote-1313.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
 
-**Despliegue pendiente de verificación:** el commit anterior `7a51a068c2060ad09d1c25e3072b90707b2c7e7f` ya había sido enviado a `main`, pero la última comprobación externa falló por resolución DNS del dominio de GitHub Pages (`itic-academy.github.io`). El nuevo lote y la corrección de trazabilidad quedan sujetos al mismo despliegue; no se afirmará que estén visibles en producción hasta recuperar la comprobación pública.
+**Despliegue pendiente de verificación:** el lote y la corrección de trazabilidad están enviados a `main` en `e2dc7ff`. La comprobación posterior volvió a fallar: `Resolve-DnsName itic-academy.github.io` devolvió «Acceso denegado» y `Invoke-WebRequest https://itic-academy.github.io/simulador-tic/revision/inventario.json` devolvió «Host desconocido. (itic-academy.github.io:443)». No se pudo comprobar el contenido público ni Actions, y no se afirma que este commit esté desplegado hasta recuperar resolución DNS y consultar la URL.
 
 ## Lote 1312 — 15 de noviembre de 2026
 
