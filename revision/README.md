@@ -1,6 +1,22 @@
 # Revisión del banco TIC — estado al 15 de noviembre de 2026
 
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1304 (IDs 6841–6845). Acumulado: 6840 preguntas examinadas individualmente; 6720 verificadas (1294 vigentes, 4937 corregidas y 489 históricas); 120 pendientes documentadas (47 de fuente y 73 de ambigüedad); 5283 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1305 (IDs 6846–6850). Acumulado: 6845 preguntas examinadas individualmente; 6725 verificadas (1294 vigentes, 4942 corregidas y 489 históricas); 120 pendientes documentadas (47 de fuente y 73 de ambigüedad); 5278 sin revisar individualmente.
+
+## Lote 1305 — 15 de noviembre de 2026
+
+Revisadas individualmente las preguntas 6846–6850. Se distinguió LoRa de LoRaWAN; se contextualizó IoT como acción complementaria del plan de territorios inteligentes; se separó el programa de EOI «12 Retos» de Industria Conectada 4.0; se precisó FIWARE y su Context Broker; y se delimitó el modelo de seis C de Big Data en Industria 4.0 como un marco conceptual concreto, no una taxonomía normativa universal.
+
+- **6846 — LoRaWAN:** corregida A. LoRaWAN es el protocolo de red LPWAN para IoT promovido por LoRa Alliance; LoRa designa la modulación/capa física. Se evita tratar ambos nombres como sinónimos. A1-117; A2-IV.13.
+- **6847 — Plan Nacional de Territorios Inteligentes:** corregida C. En el plan 2017–2020, IoT aplicado a servicios se incluye entre las actuaciones complementarias. Es un plan histórico y finalizado, no normativa ni estrategia vigente. A1-117; relación temática con A2-IV.13.
+- **6848 — EOI «12 Retos de Industria 4.0»:** corregida A. El programa de EOI identifica doce retos tecnológicos de empresas industriales y los conecta con startups mediante innovación abierta, con participación de EOI y Barrabés. La opción rechazada mezcla este programa concreto con una descripción general de la estrategia Industria Conectada 4.0 y sus líneas de actuación. A1-117; no se fuerza correspondencia A2.
+- **6849 — FIWARE:** corregida C. FIWARE es un ecosistema/framework abierto de componentes y APIs comunes para soluciones inteligentes; Orion es un Context Broker (no «Onion»). Se diferencia Orion NGSI-v2 de Orion-LD/NGSI-LD. A1-117; A2-IV.13.
+- **6850 — seis C de Big Data e Industria 4.0:** corregida C. Para el marco al que alude la pregunta, las seis C son Connection, Cloud, Cyber, Content/Context, Community y Customization. Al tratarse de un marco conceptual de literatura, no se presenta como lista universal o impuesta por norma. A1-117; sin epígrafe A2 específico.
+
+Fuentes oficiales y técnicas: [LoRa Alliance, LoRaWAN for Developers](https://lora-alliance.org/lorawan-for-developers/); [Plan Nacional de Territorios Inteligentes 2017–2020](https://avance.digital.gob.es/programas-avance-digital/agenda-digital/DescargasAgendaDigital/Planes%20espec%C3%ADficos/Plan-ADpE-11_Plan-Nacional-Territorios-Inteligentes.pdf); [EOI, programa 12 Retos de Industria 4.0](https://www.eoi.es/es/empresas/emprendedores/12-retos-de-industria-40) y [presentación de resultados del programa](https://www.eoi.es/es/noticias/presentacion-de-resultados-del-programa-12-retos-de-la-industria-40); [FIWARE, About us](https://www.fiware.org/about-us/) y [catálogo de componentes](https://fiware.org/catalogue/); modelo 6C descrito en el [Journal of Industry 4.0](https://bit.nkust.edu.tw/~joi4/2019/vol1/JOI4-2019-V1N1_03.pdf). Programas oficiales: [A1 GSI 2025, tema 117](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 GSI 2025, tema IV.13](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); el registro `temario-oficial.json` coteja la correspondencia temática. ITIC Academy edición 2026, [bloque 44, IoT y territorios inteligentes](https://drive.google.com/file/d/1w3UwQPDtDE9GXacSYNUGUcO6KirAQ8xf/view?usp=drivesdk), consultado como material de academia, no como fuente técnica/normativa. En ese documento se observó una formulación ambigua sobre la vigencia del PNTI; prevalece su alcance temporal expreso 2017–2020.
+
+Inventario tras el lote: 12.123 preguntas; 6.845 examinadas individualmente; 6.725 verificadas (1.294 vigentes, 4.942 corregidas y 489 históricas); 120 pendientes (47 de fuente y 73 de ambigüedad); 5.278 sin revisar individualmente; 0 errores estructurales. Ejecutados `node revision/revisar-lote-1305.cjs`, `node revision/academia-lote-1305.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`.
+
+**Publicación pendiente de verificación.**
 
 ## Lote 1304 — 15 de noviembre de 2026
 
