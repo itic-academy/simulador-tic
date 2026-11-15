@@ -1,0 +1,392 @@
+{
+  "fecha": "2026-11-15",
+  "alcance": "IDs 7121–7125; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7121,
+      "original": {
+        "id": 7121,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El campo 'versión' de la cabecera del protocolo IPv4 puede contener:",
+        "opciones": [
+          "Desde 0000 hasta 1111.",
+          "0100 ó 0110.",
+          "4 y 6 en complemento a 1.",
+          "Siempre 1111."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7121,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué valores binarios de 4 bits identifican las versiones IPv4 e IPv6 en el campo Version de sus cabeceras?",
+        "opciones": [
+          "Desde 0000 hasta 1111.",
+          "0100 ó 0110.",
+          "4 y 6 en complemento a 1.",
+          "Siempre 1111."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. IPv4 usa el valor 4 (0100) e IPv6 el valor 6 (0110). Se reformuló porque el enunciado original preguntaba sólo por IPv4, aunque su opción correcta incluía ambas versiones. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material trata la versión de IP y sus cabeceras, contrasta explícitamente los valores de IPv4 e IPv6. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material trata la versión de IP y sus cabeceras, contrasta explícitamente los valores de IPv4 e IPv6. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material trata la versión de IP y sus cabeceras, contrasta explícitamente los valores de IPv4 e IPv6. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes."
+        },
+        "etiquetas": [
+          "IPv4",
+          "IPv6",
+          "campo Version",
+          "cabecera IP"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+              "referencia": "RFC 791 §3.1: el campo Version de la cabecera IPv4 tiene 4 bits y el valor decimal 4, representado 0100. RFC 8200 §3 define para IPv6 valor 6 (0110)."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+              "referencia": "RFC 8200 §3: Version es un campo de 4 bits; su valor para IPv6 es 6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: IPv4/IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos de Internet."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material trata la versión de IP y sus cabeceras, contrasta explícitamente los valores de IPv4 e IPv6. Cotejo curricular."
+            }
+          ],
+          "observaciones": "Corregida B. IPv4 usa el valor 4 (0100) e IPv6 el valor 6 (0110). Se reformuló porque el enunciado original preguntaba sólo por IPv4, aunque su opción correcta incluía ambas versiones. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El material trata la versión de IP y sus cabeceras, contrasta explícitamente los valores de IPv4 e IPv6. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes."
+        }
+      }
+    },
+    {
+      "id": 7122,
+      "original": {
+        "id": 7122,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Para establecer una comunicación punto a punto según TCP/IP es necesario conocer:",
+        "opciones": [
+          "dirección y puerto origen",
+          "dirección y puerto destino",
+          "sólo direcciones origen y destino",
+          "las respuestas a) y b) son correctas"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7122,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué información identifica los extremos de una conexión TCP?",
+        "opciones": [
+          "Dirección IP y puerto de origen.",
+          "Dirección IP y puerto de destino.",
+          "Sólo las direcciones IP de origen y destino.",
+          "La dirección IP y el puerto de cada extremo: origen y destino."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. RFC 9293 define una conexión TCP por el par de sockets; cada socket combina una dirección IP y un puerto. Se explicitó que la pregunta se refiere a identificar ambos extremos, no a los requisitos generales para enviar cualquier paquete IP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de transporte y puertos explica los sockets y la identificación de extremos TCP por IP/puerto. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de transporte y puertos explica los sockets y la identificación de extremos TCP por IP/puerto. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de transporte y puertos explica los sockets y la identificación de extremos TCP por IP/puerto. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes."
+        },
+        "etiquetas": [
+          "TCP",
+          "socket",
+          "dirección IP",
+          "puerto",
+          "extremos de conexión"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+              "referencia": "RFC 9293, glosario y §3.4: un socket incluye dirección IP y puerto; una conexión TCP se identifica mediante el par de sockets de sus extremos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: redes IP y protocolos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: capas, protocolos y direccionamiento TCP/IP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de transporte y puertos explica los sockets y la identificación de extremos TCP por IP/puerto. Cotejo curricular."
+            }
+          ],
+          "observaciones": "Corregida D. RFC 9293 define una conexión TCP por el par de sockets; cada socket combina una dirección IP y un puerto. Se explicitó que la pregunta se refiere a identificar ambos extremos, no a los requisitos generales para enviar cualquier paquete IP. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de transporte y puertos explica los sockets y la identificación de extremos TCP por IP/puerto. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes."
+        }
+      }
+    },
+    {
+      "id": 7123,
+      "original": {
+        "id": 7123,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es el prefijo de una dirección de tipo Link-Local?:",
+        "opciones": [
+          "FE80.",
+          "EC02.",
+          "2002.",
+          "FF00."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7123,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué prefijo identifica las direcciones unicast IPv6 de enlace local?",
+        "opciones": [
+          "FE80::/10",
+          "EC02::/10",
+          "2002::/16",
+          "FF00::/8"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. El prefijo normativo completo es FE80::/10; se amplió la opción original “FE80” que omitía longitud y terminador de prefijo. FF00::/8 corresponde a multicast. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado de IPv6 presenta los prefijos unicast, link-local y multicast. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado de IPv6 presenta los prefijos unicast, link-local y multicast. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado de IPv6 presenta los prefijos unicast, link-local y multicast. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes."
+        },
+        "etiquetas": [
+          "IPv6",
+          "link-local",
+          "FE80::/10",
+          "unicast"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+              "referencia": "RFC 4291 §2.4 y §2.5.6: las direcciones unicast link-local usan el prefijo FE80::/10."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8415.html",
+              "referencia": "RFC 8415, configuración automática IPv6; usa direcciones link-local como parte del funcionamiento local de DHCPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: IPv6 y direccionamiento."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: protocolos y direccionamiento IP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado de IPv6 presenta los prefijos unicast, link-local y multicast. Cotejo curricular."
+            }
+          ],
+          "observaciones": "Corregida A. El prefijo normativo completo es FE80::/10; se amplió la opción original “FE80” que omitía longitud y terminador de prefijo. FF00::/8 corresponde a multicast. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El apartado de IPv6 presenta los prefijos unicast, link-local y multicast. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes."
+        }
+      }
+    },
+    {
+      "id": 7124,
+      "original": {
+        "id": 7124,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indicar cuál de los siguientes no es protocolo de la capa de aplicación del modelo TCP/IP:",
+        "opciones": [
+          "UDP",
+          "FTP",
+          "SMTP"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7124,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes es un protocolo de la capa de transporte del modelo TCP/IP, no de la capa de aplicación?",
+        "opciones": [
+          "UDP",
+          "FTP",
+          "SMTP"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. UDP pertenece a transporte; FTP y SMTP son protocolos de aplicación. Se afinó el enunciado para evitar la afirmación ambigua de capas como si fueran compartimentos independientes en toda arquitectura. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de transporte distingue UDP/TCP de aplicaciones como FTP y SMTP. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de transporte distingue UDP/TCP de aplicaciones como FTP y SMTP. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de transporte distingue UDP/TCP de aplicaciones como FTP y SMTP. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes."
+        },
+        "etiquetas": [
+          "TCP/IP",
+          "UDP",
+          "FTP",
+          "SMTP",
+          "capa de transporte",
+          "capa de aplicación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+              "referencia": "RFC 1122 §1.1.3 y capítulo 4: TCP y UDP son protocolos de transporte; RFC 1123 aborda los requisitos de aplicaciones y protocolos de soporte."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc768.html",
+              "referencia": "RFC 768: UDP es un protocolo de transporte sobre IP."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc959.html",
+              "referencia": "RFC 959: FTP es un protocolo de transferencia de archivos de aplicación."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+              "referencia": "RFC 5321: SMTP es protocolo de transporte de correo a nivel de aplicación."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: arquitectura y protocolos de Internet."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: modelos y protocolos TCP/IP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de transporte distingue UDP/TCP de aplicaciones como FTP y SMTP. Cotejo curricular."
+            }
+          ],
+          "observaciones": "Corregida A. UDP pertenece a transporte; FTP y SMTP son protocolos de aplicación. Se afinó el enunciado para evitar la afirmación ambigua de capas como si fueran compartimentos independientes en toda arquitectura. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El capítulo de transporte distingue UDP/TCP de aplicaciones como FTP y SMTP. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes."
+        }
+      }
+    },
+    {
+      "id": 7125,
+      "original": {
+        "id": 7125,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la arquitectura TCP/IP, ¿cuál de los siguientes protocolos no tiene estrictamente TCP/UDP en una capa más baja?",
+        "opciones": [
+          "ICMP.",
+          "SNMP.",
+          "SMTP.",
+          "MIME."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7125,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de estos protocolos de control se transporta directamente en IP, sin usar TCP o UDP como protocolo de transporte?",
+        "opciones": [
+          "ICMP",
+          "SNMP",
+          "SMTP",
+          "HTTP"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. RFC 1122 clasifica ICMP en la capa de Internet y lo considera parte integral de IP; sus mensajes van encapsulados directamente en datagramas IP. Se sustituyó MIME, que es un estándar de formato de contenido y no un protocolo de transporte, para que exista una única respuesta. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El texto clasifica ICMP como protocolo de capa Internet/parte integral de IP y lo distingue de los protocolos de aplicación. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El texto clasifica ICMP como protocolo de capa Internet/parte integral de IP y lo distingue de los protocolos de aplicación. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes.",
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El texto clasifica ICMP como protocolo de capa Internet/parte integral de IP y lo distingue de los protocolos de aplicación. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes."
+        },
+        "etiquetas": [
+          "ICMP",
+          "IP",
+          "TCP",
+          "UDP",
+          "capa de Internet",
+          "control de red"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-15",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+              "referencia": "RFC 1122 §1.1.3 y §3.2.2: ICMP es parte integral de IP, se clasifica arquitectónicamente en la capa Internet y sus mensajes se encapsulan directamente en datagramas IP."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc792.html",
+              "referencia": "RFC 792: define ICMP como protocolo de control utilizado junto con IP; los mensajes ICMP se envían en datagramas IP."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+              "referencia": "RFC 9110, HTTP semantics: HTTP es protocolo de aplicación; su mapeo usa un protocolo de transporte, por ejemplo TCP o QUIC."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1 GSI 2025, tema 115: arquitectura y protocolos IP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2 GSI 2025, tema II-8: modelos y protocolos TCP/IP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El texto clasifica ICMP como protocolo de capa Internet/parte integral de IP y lo distingue de los protocolos de aplicación. Cotejo curricular."
+            }
+          ],
+          "observaciones": "Corregida A. RFC 1122 clasifica ICMP en la capa de Internet y lo considera parte integral de IP; sus mensajes van encapsulados directamente en datagramas IP. Se sustituyó MIME, que es un estándar de formato de contenido y no un protocolo de transporte, para que exista una única respuesta. Cotejo curricular ITIC Academy: ITIC Academy, bloque 43 «Protocolos», versión 2026.1; El texto clasifica ICMP como protocolo de capa Internet/parte integral de IP y lo distingue de los protocolos de aplicación. Correspondencia oficial: A1-115/A2-II-8. Se valida el contenido técnico con RFC vigentes."
+        }
+      }
+    }
+  ]
+}
