@@ -16,7 +16,7 @@ Cotejo ITIC Academy/Drive: [42_Bloque_42_Tema_Redes_2026.pdf, versión 2026.1](h
 
 Ejecutados `node revision/revisar-lote-1384.cjs`, `node revision/academia-lote-1384.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros válidos; 7.240 preguntas revisadas individualmente (1.387 vigentes, 5.218 corregidas y 513 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.883 aún sin revisión individual; 0 errores estructurales. El inventario estructural no se cuenta como revisión de contenido.
 
-**Despliegue:** pendiente de publicación y comprobación del lote 1384.
+**Despliegue del lote 1384 verificado:** commit de datos `5fd01f0` publicado en `main`; [GitHub Actions, ejecución 43740680508](https://github.com/itic-academy/simulador-tic/actions/runs/43740680508) terminó con **Success** el 15-11-2026. GitHub Pages devolvió HTTP 200 para el README, el inventario (`12.123` registros; 5.218 corregidas, 513 históricas y 4.883 aún sin revisión individual), el registro `cambios-lote-1384.json` (IDs 7241–7245) y el banco. Esta comprobación se registra en este commit.
 
 ## Lote 1383 — 15 de noviembre de 2026
 
