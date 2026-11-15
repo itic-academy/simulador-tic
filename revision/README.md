@@ -16,6 +16,8 @@ Fuentes primarias: [IETF RFC 3032](https://www.rfc-editor.org/rfc/rfc3032.html);
 
 Inventario tras el lote: 12.123 preguntas; 6.770 examinadas individualmente; 6.651 verificadas (1.288 vigentes, 4.874 corregidas y 489 históricas); 119 pendientes documentadas (46 de fuente y 73 de ambigüedad); 5.353 sin revisar individualmente; errores estructurales: 0. Ejecutados node revision/revisar-lote-1290.cjs, node revision/academia-lote-1290.cjs, node revision/inventario.cjs, node revision/verificar.cjs y git diff --check.
 
+**Publicación verificada:** commit de datos a37e9f25d50532535dc39aba165e34b744453e0f; [GitHub Actions 43662709933](https://github.com/itic-academy/simulador-tic/actions/runs/43662709933) terminó Success (build y deploy). GitHub Pages respondió HTTP 200 sin caché para README, inventario, registro del lote y banco. El banco publicado contiene exactamente los IDs 6771–6775, todos corregidos, con claves B, D, C, A y C y sus clasificaciones A1/A2 documentadas arriba. El inventario público confirma 12.123 preguntas, 6.770 examinadas individualmente, 6.651 verificadas, 119 pendientes y 5.353 sin revisar individualmente.
+
 ## Lote 1289 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 6766–6770. Se eliminaron ambigüedades sobre las técnicas de planificación de MÉTRICA v3; se cotejó la lista legal vigente de modificaciones presupuestarias; se precisó que la topología espacial depende del modelo/implementación del SIG; se matizaron requisitos típicos frente a recomendaciones de diseño para clústeres Windows Server; y se ajustó la pregunta SLA a la definición de ITIL 4.
