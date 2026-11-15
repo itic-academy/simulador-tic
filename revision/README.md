@@ -18,6 +18,8 @@ Cotejo curricular ITIC Academy/Drive: [bloque 3 Actuación Administrativa y Admi
 
 Ejecutados `node revision/revisar-lote-1389.cjs`, `node revision/academia-lote-1389.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros; 7.265 revisadas individualmente (1.394 vigentes, 5.233 corregidas y 516 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.858 aún sin revisión individual; 0 errores estructurales. El inventario no se interpreta como revisión de contenido.
 
+**Despliegue del lote 1389 verificado:** commit de datos `b974d5a` publicado en `main`; [GitHub Actions, ejecución 43745464892](https://github.com/itic-academy/simulador-tic/actions/runs/43745464892) terminó con **Success**. GitHub Pages devolvió HTTP 200 para portada, inventario, registro 1389, banco y README. El registro publicado contiene exactamente los IDs 7266–7270; el banco servido coincide en claves/estados: `3/corregida`, `2/corregida`, `0/vigente`, `2/corregida` y `0/historica`. El inventario público refleja 12.123 registros, 7.265 preguntas revisadas individualmente y 4.858 sin revisión individual; el README público incluye el lote 1389.
+
 ## Lote 1388 — 15 de noviembre de 2026
 
 Revisadas individualmente las preguntas 7261–7265 sobre controles constitucionales de las comunidades autónomas, soberanía nacional, reparto de competencias, restricciones de la LSSI y clasificación de ingresos presupuestarios.
