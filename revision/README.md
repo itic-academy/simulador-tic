@@ -1,4 +1,22 @@
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1387 (IDs 7256–7260). Acumulado: 7.255 preguntas examinadas individualmente; 7.133 verificadas (1.388 vigentes, 5.230 corregidas y 515 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.868 sin revisar individualmente.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1388 (IDs 7261–7265). Acumulado: 7.260 preguntas examinadas individualmente; 7.138 verificadas (1.393 vigentes, 5.230 corregidas y 515 históricas); 122 pendientes documentadas (47 de fuente y 75 de ambigüedad); 4.863 sin revisar individualmente.
+
+## Lote 1388 — 15 de noviembre de 2026
+
+Revisadas individualmente las preguntas 7261–7265 sobre controles constitucionales de las comunidades autónomas, soberanía nacional, reparto de competencias, restricciones de la LSSI y clasificación de ingresos presupuestarios.
+
+- **7261 — control de las comunidades autónomas:** vigente A. El art. 153 CE enumera los controles del Tribunal Constitucional, el Gobierno en funciones delegadas, la jurisdicción contencioso-administrativa y el Tribunal de Cuentas. No atribuye un control general al Tribunal Supremo; se matiza que el art. 152.1 conserva la jurisdicción del TS en los términos allí previstos.
+- **7262 — soberanía nacional:** vigente C. El art. 1.2 CE la sitúa en el pueblo español, del que emanan los poderes del Estado. Se distingue titularidad de soberanía de la función representativa de las Cortes.
+- **7263 — propiedad intelectual e industrial:** vigente C. La legislación sobre estas materias es competencia exclusiva del Estado conforme al art. 149.1.9.ª CE. Las otras opciones describen materias que las comunidades pueden asumir conforme al art. 148.1.
+- **7264 — restricciones LSSI:** vigente B. El art. 8.1 de la Ley 34/2002 enumera orden público/investigación penal/seguridad/defensa, salud pública y consumidores, dignidad/no discriminación, juventud/infancia y propiedad intelectual. La expresión genérica «interés general» no aparece como principio autónomo en esa lista; no se importa aquí la terminología distinta del art. 155 CE.
+- **7265 — operaciones financieras del estado de ingresos:** vigente C. El art. 41 de la Ley 47/2003 distingue activos financieros y pasivos financieros. Enajenación de inversiones reales y transferencias de capital son ingresos de capital, no clases de operaciones financieras.
+
+Fuentes primarias: [Constitución Española, arts. 1.2, 148, 149, 152 y 153, texto consolidado a 20-05-2026](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20260520); [Ley 34/2002 (LSSI), art. 8](https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758); [Ley 47/2003, General Presupuestaria, art. 41](https://www.boe.es/buscar/act.php?id=BOE-A-2003-21614).
+
+Clasificación oficial: [A1 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938): temas 1, 3, 12 y 22; [A2 GSI 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262): I-1 e I-6. Para 7265 no se fuerza epígrafe A2: el programa no incluye un tema de PGE equivalente al A1-12.
+
+Cotejo curricular ITIC Academy/Drive: [bloque 1, Constitución, Organización del Estado y AGE, actualización 2026](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), que trata Constitución y organización territorial; [bloque 3, Actuación Administrativa y Administración Digital, versión 2026.2 (01-10-2026)](https://docs.google.com/document/d/11f2yckNnR_tuq63G9CLQFlsitwLhj4pV/edit?usp=drivesdk&ouid=107088454749630873035&rtpof=true&sd=true), que incluye A1 temas 7/8/22 y LSSI-CE; [bloque 5, Contratación, Presupuestos y Compra TIC, versión 2026.2 (01-10-2026)](https://docs.google.com/document/d/1PsTULo7b5iqnrNx7LQ2mPfkMPyecv6iF/edit?usp=drivesdk&ouid=107088454749630873035&rtpof=true&sd=true), que desarrolla PGE y su clasificación económica (A1 temas 11/12/13/39; sin equivalente A2 directo). Los materiales de academia solo se usan para cotejar cobertura del temario; las respuestas se fundamentan en BOE y en el texto constitucional.
+
+Ejecutados `node revision/revisar-lote-1388.cjs`, `node revision/academia-lote-1388.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros; 7.260 revisadas individualmente (1.393 vigentes, 5.230 corregidas y 515 históricas); 122 pendientes documentadas (75 de ambigüedad y 47 de fuente); 4.863 aún sin revisión individual; 0 errores estructurales. El inventario no se interpreta como revisión de contenido.
 
 ## Lote 1387 — 15 de noviembre de 2026
 
