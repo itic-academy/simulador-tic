@@ -397727,21 +397727,74 @@
       "id": 7501,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la afirmación correcta en relación con SMTP (Simple Mail Transfer Protocol), definido en la RFC 821:",
+      "texto": "¿Cuál era una restricción de la especificación SMTP original, RFC 821 (1982), respecto a los datos de mensaje?",
       "opciones": [
-        "Puede transmitir ficheros ejecutables y objetos binarios en general.",
-        "Se crea para superar las deficiencias de MIME (Multipurpose Internet Mail Extensión).",
-        "Se limita a caracteres ASCII de 7 bits.",
-        "Es un protocolo de nivel de Presentación del modelo OSI."
+        "Permitía transmitir directamente cualquier dato binario sin codificación ni extensiones.",
+        "Se creó para sustituir MIME, que apareció antes que SMTP.",
+        "Limitaba los datos transmitidos a caracteres US-ASCII de 7 bits; MIME y posteriores extensiones resolvieron necesidades de contenido más amplio.",
+        "Era un protocolo de la capa de Presentación del modelo OSI."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. RFC 821 especificaba SMTP con datos US-ASCII de 7 bits; MIME definió formatos y codificaciones para contenido 8-bit/binario. Se fecha la afirmación porque 8BITMIME (RFC 6152) y SMTPUTF8 (RFC 6531) amplían las capacidades mediante extensiones negociadas. SMTP es protocolo de aplicación, no de presentación OSI. Cotejo curricular: ITIC Academy, Tema 121: Correo electrónico y servicios de directorio, edición 2026. Cotejo curricular con correo electrónico y servicios de mensajería. El mapa de convocatoria vigente sitúa los servicios básicos de Internet en A1-109 y A2-IV-13; el tema de academia conserva la numeración histórica 121 y su documento incluye C6/C7/C10 de A2. La respuesta normativa se contrasta con RFC, no se toma la academia como fuente primaria.",
+      "clasificacion": {
+        "A1": [
+          "A1-109"
+        ],
+        "A2": [
+          "A2-IV-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SMTP",
+        "RFC 821",
+        "ASCII",
+        "MIME",
+        "correo electrónico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc821.html",
+            "referencia": "RFC 821, especificación histórica original de SMTP (1982): los datos de mensaje se transmitían como caracteres ASCII de 7 bits; el enunciado se fecha expresamente porque la especificación SMTP y sus extensiones han evolucionado."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc2045.html",
+            "referencia": "RFC 2045, MIME: explica que RFC 821 restringía mensajes a US-ASCII de 7 bits y define codificaciones de transferencia para transportar contenidos de 8 bits o binarios a través de transportes restringidos."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc6152.html",
+            "referencia": "RFC 6152, extensión SMTP 8BITMIME: muestra que SMTP moderno puede negociar transporte de datos MIME de 8 bits; no debe generalizarse la restricción histórica de RFC 821 a todas las implementaciones actuales."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc6531.html",
+            "referencia": "RFC 6531, SMTPUTF8: define extensiones para correo internacionalizado; la compatibilidad requiere negociación entre cliente y servidor."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1y8QAt955aL_65VRCmo-ijgttcj0xiYTn/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, Tema 121: Correo electrónico y servicios de directorio, edición 2026. Cotejo curricular con correo electrónico y servicios de mensajería. El mapa de convocatoria vigente sitúa los servicios básicos de Internet en A1-109 y A2-IV-13; el tema de academia conserva la numeración histórica 121 y su documento incluye C6/C7/C10 de A2. La respuesta normativa se contrasta con RFC, no se toma la academia como fuente primaria."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; temas asignados: A1-109."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; temas asignados: A2-IV-13."
+          }
+        ],
+        "observaciones": "Corregida C. RFC 821 especificaba SMTP con datos US-ASCII de 7 bits; MIME definió formatos y codificaciones para contenido 8-bit/binario. Se fecha la afirmación porque 8BITMIME (RFC 6152) y SMTPUTF8 (RFC 6531) amplían las capacidades mediante extensiones negociadas. SMTP es protocolo de aplicación, no de presentación OSI. Cotejo curricular: Cotejo curricular: ITIC Academy, Tema 121: Correo electrónico y servicios de directorio, edición 2026. Cotejo curricular con correo electrónico y servicios de mensajería. El mapa de convocatoria vigente sitúa los servicios básicos de Internet en A1-109 y A2-IV-13; el tema de academia conserva la numeración histórica 121 y su documento incluye C6/C7/C10 de A2. La respuesta normativa se contrasta con RFC, no se toma la academia como fuente primaria."
+      }
     },
     {
       "id": 7502,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, la conducta no deseada relacionada con la discapacidad de una persona, que tenga como objetivo o consecuencia atentar contra su dignidad o crear un entorno intimidatorio, hostil, degradante, humillante y ofensivo, se denomina:",
+      "texto": "Conforme al artículo 2.f) del texto refundido aprobado por el Real Decreto Legislativo 1/2013, ¿cómo se denomina la conducta no deseada relacionada con la discapacidad de una persona que tiene como objetivo o consecuencia atentar contra su dignidad o crear un entorno intimidatorio, hostil, degradante, humillante u ofensivo?",
       "opciones": [
         "Discriminación directa.",
         "Acoso.",
@@ -397749,49 +397802,208 @@
         "Discriminación por asociación."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Vigente B. La definición reproduce el artículo 2.f) del Real Decreto Legislativo 1/2013; se identifica el apartado concreto y se mantiene la terminología legal. Cotejo curricular: ITIC Academy, bloque 6: Economía, sociedad, empleo y transformación digital, edición 2026.2. El índice curricular incluye políticas de igualdad, discapacidad y dependencia (A1-16; mapeo A2 O5, relacionado con A2-I-5). La definición concreta de acoso se coteja en el artículo 2.f) del texto consolidado del RDL 1/2013.",
+      "clasificacion": {
+        "A1": [
+          "A1-16"
+        ],
+        "A2": [
+          "A2-I-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "discapacidad",
+        "acoso",
+        "igualdad de trato",
+        "RDL 1/2013"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12632",
+            "referencia": "Texto consolidado del Real Decreto Legislativo 1/2013, artículo 2.f): define acoso como conducta no deseada relacionada con la discapacidad, con el objetivo o consecuencia descritos en el enunciado. El artículo 4.3 considera el acoso por razón de discapacidad acto discriminatorio."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 6: Economía, sociedad, empleo y transformación digital, edición 2026.2. El índice curricular incluye políticas de igualdad, discapacidad y dependencia (A1-16; mapeo A2 O5, relacionado con A2-I-5). La definición concreta de acoso se coteja en el artículo 2.f) del texto consolidado del RDL 1/2013."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; temas asignados: A1-16."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; temas asignados: A2-I-5."
+          }
+        ],
+        "observaciones": "Vigente B. La definición reproduce el artículo 2.f) del Real Decreto Legislativo 1/2013; se identifica el apartado concreto y se mantiene la terminología legal. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 6: Economía, sociedad, empleo y transformación digital, edición 2026.2. El índice curricular incluye políticas de igualdad, discapacidad y dependencia (A1-16; mapeo A2 O5, relacionado con A2-I-5). La definición concreta de acoso se coteja en el artículo 2.f) del texto consolidado del RDL 1/2013."
+      }
     },
     {
       "id": 7503,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo contribuyó en VABpm el sector TIC al total del PIB español en el año 2019, según el informe anual del sector TIC, los medios y los servicios audiovisuales en España 2020 publicado por ONTSI?",
+      "texto": "Según el Informe anual del sector TIC, los medios y los servicios audiovisuales en España 2020 de ONTSI, ¿qué porcentaje del PIB español representó en 2019 el VAB a precios básicos (VABpm) del sector TIC?",
       "opciones": [
-        "1,5% PIB",
-        "2,33% PIB",
-        "3,23% PIB",
-        "3,88% PIB"
+        "1,5 % del PIB.",
+        "2,33 % del PIB.",
+        "3,23 % del PIB.",
+        "3,88 % del PIB."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Vigente C para la serie histórica que cita el informe. ONTSI informa de 40.211 millones de euros de VAB TIC en 2019, equivalentes al 3,23 % del PIB. Se explicita año de referencia, indicador y fuente para no presentarlo como dato actual. Cotejo curricular: ITIC Academy, bloque 6: Economía, sociedad, empleo y transformación digital, edición 2026.2. El propio temario enumera el impacto de las TIC en la economía y sus principales magnitudes (A1-19). No identifica equivalente específico A2 para esta magnitud macroeconómica. El dato de 2019 se coteja con la publicación original de ONTSI.",
+      "clasificacion": {
+        "A1": [
+          "A1-19"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ONTSI",
+        "VABpm",
+        "PIB",
+        "sector TIC",
+        "estadística histórica"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.ontsi.es/es/publicaciones/Informe-Anual-del-sector-de-las-TIC%2C-los-medios-y-los-servicios-audiovisuales-2020",
+            "referencia": "ONTSI, Informe anual del sector TIC, los medios y los servicios audiovisuales 2020: para el año de referencia 2019 informa un VAB del sector TIC de 40.211 millones de euros y un peso sobre el PIB nacional del 3,23 %."
+          },
+          {
+            "url": "https://www.ontsi.es/sites/ontsi/files/2021-03/InformeSectorTIC2020_0.pdf",
+            "referencia": "Informe ONTSI 2020, edición íntegra: documento histórico con datos de 2019; la pregunta depende de la serie y metodología de esa edición, no de una magnitud actual."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1uZ17alMtMUTSxIg6IxRdfmA9DHhzPVKE/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 6: Economía, sociedad, empleo y transformación digital, edición 2026.2. El propio temario enumera el impacto de las TIC en la economía y sus principales magnitudes (A1-19). No identifica equivalente específico A2 para esta magnitud macroeconómica. El dato de 2019 se coteja con la publicación original de ONTSI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; temas asignados: A1-19."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; temas asignados: sin tema específico A2 asignado."
+          }
+        ],
+        "observaciones": "Vigente C para la serie histórica que cita el informe. ONTSI informa de 40.211 millones de euros de VAB TIC en 2019, equivalentes al 3,23 % del PIB. Se explicita año de referencia, indicador y fuente para no presentarlo como dato actual. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 6: Economía, sociedad, empleo y transformación digital, edición 2026.2. El propio temario enumera el impacto de las TIC en la economía y sus principales magnitudes (A1-19). No identifica equivalente específico A2 para esta magnitud macroeconómica. El dato de 2019 se coteja con la publicación original de ONTSI."
+      }
     },
     {
       "id": 7504,
       "bloque": 0,
       "tema": 0,
-      "texto": "Son causas de nulidad de los contratos de las Administraciones Públicas:",
+      "texto": "Conforme a los artículos 38 y 39.2 de la Ley 9/2017, ¿qué afirmaciones identifican causas de nulidad de pleno derecho de los contratos celebrados por poderes adjudicadores?",
       "opciones": [
-        "La falta de publicación del anuncio de licitación en el perfil de contratante alojado en la Plataforma de Contratación del Sector Público o en los servicios de información similares de las Comunidades Autónomas, en el DOUE o en el medio de publicidad en que sea preceptivo, de conformidad con el artículo 135.",
-        "La nulidad de un acto que no sea preparatorio del contrato.",
-        "La falta de capacidad de obrar o de solvencia económica, financiera, técnica o profesional.",
-        "Las respuestas a) y c) son correctas."
+        "La falta de publicación del anuncio de licitación en el medio preceptivo, conforme al artículo 135.",
+        "La nulidad de cualquier acto que no sea preparatorio del contrato constituye por sí sola una causa autónoma de nulidad del contrato.",
+        "La falta de capacidad de obrar o de solvencia del adjudicatario.",
+        "Las respuestas A y C son correctas."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. Los supuestos A y C corresponden, respectivamente, al artículo 39.2.c) y a) de la LCSP. La formulación B era imprecisa: el artículo 38 trata la invalidez de contratos por invalidez de actos preparatorios o del procedimiento de adjudicación, no establece como causa autónoma la nulidad de cualquier acto no preparatorio. Se acota también el ámbito subjetivo del artículo 39.2 a contratos de poderes adjudicadores. Cotejo curricular: ITIC Academy, bloque 5: Contratación, presupuestos y compra TIC, edición 2026. El bloque contiene la Ley 9/2017 y asigna los contratos públicos a A1-11; el propio mapa indica que no tiene equivalente en temario A2. La respuesta se contrasta con los artículos 38 y 39 LCSP consolidados.",
+      "clasificacion": {
+        "A1": [
+          "A1-11"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "LCSP",
+        "Ley 9/2017",
+        "nulidad",
+        "contratación pública"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902",
+            "referencia": "Texto consolidado de la Ley 9/2017, artículos 38 y 39.2.a) y c): son causas de nulidad de pleno derecho de contratos celebrados por poderes adjudicadores la falta de capacidad/solvencia del adjudicatario y la falta de publicación del anuncio cuando era preceptiva conforme al artículo 135. El artículo 38 regula la invalidez cuando resulte inválido un acto preparatorio o de adjudicación; no convierte cualquier acto no preparatorio en causa autónoma."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 5: Contratación, presupuestos y compra TIC, edición 2026. El bloque contiene la Ley 9/2017 y asigna los contratos públicos a A1-11; el propio mapa indica que no tiene equivalente en temario A2. La respuesta se contrasta con los artículos 38 y 39 LCSP consolidados."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; temas asignados: A1-11."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; temas asignados: sin tema específico A2 asignado."
+          }
+        ],
+        "observaciones": "Corregida D. Los supuestos A y C corresponden, respectivamente, al artículo 39.2.c) y a) de la LCSP. La formulación B era imprecisa: el artículo 38 trata la invalidez de contratos por invalidez de actos preparatorios o del procedimiento de adjudicación, no establece como causa autónoma la nulidad de cualquier acto no preparatorio. Se acota también el ámbito subjetivo del artículo 39.2 a contratos de poderes adjudicadores. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 5: Contratación, presupuestos y compra TIC, edición 2026. El bloque contiene la Ley 9/2017 y asigna los contratos públicos a A1-11; el propio mapa indica que no tiene equivalente en temario A2. La respuesta se contrasta con los artículos 38 y 39 LCSP consolidados."
+      }
     },
     {
       "id": 7505,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto de las fuentes del derecho administrativo en España, señale la incorrecta:",
+      "texto": "Conforme al artículo 1 del Código Civil, señale la afirmación correcta sobre la costumbre y los principios generales del derecho:",
       "opciones": [
-        "La costumbre sólo regirá en defecto de ley aplicable, siempre que no sea contraria a la moral o al orden público y que resulte probada.",
-        "Los usos jurídicos que no sean meramente interpretativos de una declaración de voluntad tendrán la consideración de costumbre.",
-        "Los principios generales del derecho se aplicarán en defecto de ley o costumbre, sin perjuicio de su carácter informador del ordenamiento jurídico.",
-        "Todas son correctas."
+        "La costumbre rige aunque exista ley aplicable y no necesita ser probada.",
+        "Los usos jurídicos meramente interpretativos de una declaración de voluntad tienen siempre la consideración de costumbre.",
+        "Los principios generales se aplican en defecto de ley o costumbre, sin perjuicio de su carácter informador del ordenamiento jurídico.",
+        "Todas las afirmaciones anteriores son correctas."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "Corregida C. El enunciado original pedía señalar la afirmación incorrecta, pero las tres proposiciones sustantivas reproducían correctamente el artículo 1.3 y 1.4 del Código Civil, por lo que la clave «todas son correctas» no respondía a lo solicitado. Se formula ahora una pregunta positiva inequívoca y se mantiene como respuesta la regla del artículo 1.4. Cotejo curricular: ITIC Academy, bloque 3: Actuación administrativa y Administración digital, edición 2026. El bloque incluye fuentes del Derecho administrativo y el mapa asigna el contenido a A1-7; para A2 no se identifica equivalencia curricular específica de fuentes del Derecho. El precepto se verifica en el artículo 1 del Código Civil consolidado.",
+      "clasificacion": {
+        "A1": [
+          "A1-7"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "fuentes del derecho",
+        "costumbre",
+        "principios generales",
+        "Código Civil"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763",
+            "referencia": "Texto consolidado del Código Civil, artículo 1.3 y 1.4: regula los requisitos y aplicación subsidiaria de la costumbre, asimila a ella determinados usos jurídicos y establece la aplicación subsidiaria e informadora de los principios generales del derecho."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 3: Actuación administrativa y Administración digital, edición 2026. El bloque incluye fuentes del Derecho administrativo y el mapa asigna el contenido a A1-7; para A2 no se identifica equivalencia curricular específica de fuentes del Derecho. El precepto se verifica en el artículo 1 del Código Civil consolidado."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; temas asignados: A1-7."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; temas asignados: sin tema específico A2 asignado."
+          }
+        ],
+        "observaciones": "Corregida C. El enunciado original pedía señalar la afirmación incorrecta, pero las tres proposiciones sustantivas reproducían correctamente el artículo 1.3 y 1.4 del Código Civil, por lo que la clave «todas son correctas» no respondía a lo solicitado. Se formula ahora una pregunta positiva inequívoca y se mantiene como respuesta la regla del artículo 1.4. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 3: Actuación administrativa y Administración digital, edición 2026. El bloque incluye fuentes del Derecho administrativo y el mapa asigna el contenido a A1-7; para A2 no se identifica equivalencia curricular específica de fuentes del Derecho. El precepto se verifica en el artículo 1 del Código Civil consolidado."
+      }
     },
     {
       "id": 7506,
