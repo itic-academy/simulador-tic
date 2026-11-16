@@ -417060,71 +417060,273 @@
       "id": 7831,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál sería el algoritmo óptimo de reemplazo de páginas?",
+      "texto": "En el algoritmo óptimo teórico de reemplazo de páginas (OPT o Belady), ¿qué página se elige para expulsar cuando hace falta un marco?",
       "opciones": [
-        "Aquel que escoge para reemplazar la próxima página que va a ser usada",
-        "Aquel que selecciona para reemplazar la página que más tiempo va a tardar en volver a ser usada",
-        "Aquel que escoge para reemplazar la última página que ha sido usada",
-        "Aquel que selecciona para su reemplazo la página que más tiempo lleva en memoria"
+        "La que se solicitó más recientemente.",
+        "La cuyo próximo uso está más lejano en el futuro, o que no volverá a usarse.",
+        "La que lleva más tiempo residente, sin atender a futuras referencias.",
+        "Una página elegida siempre al azar."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. OPT/Belady elige la página cuyo próximo acceso queda más lejos en la secuencia futura (o que ya no volverá a utilizarse). Es un óptimo teórico porque conocer de antemano las referencias no suele ser posible en un sistema real. Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026. El material reproduce el epígrafe oficial A1-59 de fundamentos de sistemas operativos, donde se encuadra paginación y reemplazo de páginas; la definición exacta de OPT se contrasta con la fuente universitaria citada en la revisión.",
+      "clasificacion": {
+        "A1": [
+          "A1-59"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "bloque 27 Sistemas Operativos, versión 2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El material reproduce el epígrafe oficial A1-59 de fundamentos de sistemas operativos, donde se encuadra paginación y reemplazo de páginas; la definición exacta de OPT se contrasta con la fuente universitaria citada en la revisión."
+      },
+      "etiquetas": [
+        "reemplazo de páginas",
+        "memoria virtual",
+        "Belady OPT",
+        "algoritmo óptimo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://pages.cs.wisc.edu/~solomon/cs537/html/paging.html",
+            "referencia": "University of Wisconsin–Madison CS 537, Memory Management: OPT/Belady reemplaza la página cuyo siguiente uso queda más lejos en el futuro; requiere conocer la secuencia futura, por lo que es una referencia teórica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026. El material reproduce el epígrafe oficial A1-59 de fundamentos de sistemas operativos, donde se encuadra paginación y reemplazo de páginas; la definición exacta de OPT se contrasta con la fuente universitaria citada en la revisión."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-59."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-2."
+          }
+        ],
+        "observaciones": "Corregida B. OPT/Belady elige la página cuyo próximo acceso queda más lejos en la secuencia futura (o que ya no volverá a utilizarse). Es un óptimo teórico porque conocer de antemano las referencias no suele ser posible en un sistema real. Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026. El material reproduce el epígrafe oficial A1-59 de fundamentos de sistemas operativos, donde se encuadra paginación y reemplazo de páginas; la definición exacta de OPT se contrasta con la fuente universitaria citada en la revisión."
+      }
     },
     {
       "id": 7832,
       "bloque": 0,
       "tema": 0,
-      "texto": "El dividendo digital es:",
+      "texto": "En política de telecomunicaciones, ¿qué designa el “dividendo digital” asociado a la transición de la televisión terrestre analógica a la digital?",
       "opciones": [
-        "El elemento que se divide por un número primo corno operación criptográfica previa que se realiza en el cifrado AES",
-        "El conjunto de frecuencias que han quedado libres por la migración de la televisión analógica a la digital",
-        "El resultado económico de una inversión en Bitcoin o de otra divisa digital",
-        "Uno de los tres componentes de la unidad de cálculo en los procesadores de arquitectura x86"
+        "La parte del espectro radioeléctrico que queda disponible al realizar la transición y usar el espectro con más eficiencia.",
+        "La clave simétrica que se divide antes de aplicar AES.",
+        "El rendimiento económico de una moneda virtual.",
+        "Un registro interno de la unidad aritmético-lógica de una CPU."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Vigente A. El término se refiere al espectro radioeléctrico liberado gracias a la mayor eficiencia espectral de la televisión digital terrestre frente a la analógica. Su asignación posterior a otros servicios inalámbricos depende de la planificación de espectro; no significa que todo ese espectro permanezca siempre libre. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026. El bloque incluye telecomunicaciones, espectro/medios de transmisión y sistemas inalámbricos (A1-108); el glosario de la Comisión Europea aporta la definición específica de dividendo digital.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": "bloque 42 Redes, actualización 2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El bloque incluye telecomunicaciones, espectro/medios de transmisión y sistemas inalámbricos (A1-108); el glosario de la Comisión Europea aporta la definición específica de dividendo digital."
+      },
+      "etiquetas": [
+        "dividendo digital",
+        "espectro radioeléctrico",
+        "radiodifusión digital",
+        "telecomunicaciones inalámbricas"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/digital-connectivity-glossary",
+            "referencia": "Comisión Europea, Digital connectivity glossary, entrada “Digital Dividend”: espectro radioeléctrico que queda disponible al pasar la televisión terrestre de analógica a digital, que aprovecha el espectro con mayor eficiencia."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026. El bloque incluye telecomunicaciones, espectro/medios de transmisión y sistemas inalámbricos (A1-108); el glosario de la Comisión Europea aporta la definición específica de dividendo digital."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-11."
+          }
+        ],
+        "observaciones": "Vigente A. El término se refiere al espectro radioeléctrico liberado gracias a la mayor eficiencia espectral de la televisión digital terrestre frente a la analógica. Su asignación posterior a otros servicios inalámbricos depende de la planificación de espectro; no significa que todo ese espectro permanezca siempre libre. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026. El bloque incluye telecomunicaciones, espectro/medios de transmisión y sistemas inalámbricos (A1-108); el glosario de la Comisión Europea aporta la definición específica de dividendo digital."
+      }
     },
     {
       "id": 7833,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué se entiende por quantum?",
+      "texto": "En planificación de CPU con tiempo compartido, ¿qué es el quantum o time slice?",
       "opciones": [
-        "El porcentaje de tiempo durante el cual dos o más componentes están siendo utilizados simultáneamente",
-        "El porcentaje de tiempo durante el cual los distintos dispositivos del sistema están siendo utilizados en tareas del sistema",
-        "La cantidad de tiempo ininterrumpido de la CPU que un sistema de tiempo compartido asigna a los diferentes trabajos",
-        "El número de programas sacados de memoria por unidad de tiempo a causa de falta de espacio o para reorganizar el mismo"
+        "El porcentaje de tiempo en que dos componentes se usan simultáneamente.",
+        "El número de procesos que salen de memoria por unidad de tiempo.",
+        "El intervalo máximo de CPU asignado a un proceso o hilo antes de que el planificador pueda ceder el procesador.",
+        "El tiempo total que un proceso permanece almacenado en disco."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. Quantum/time slice es el intervalo de ejecución concedido antes de que opere la planificación por turnos; el proceso puede ceder antes si se bloquea o termina. Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026. El material cubre los fundamentos del sistema operativo y la gestión del procesador bajo A1-59; la equivalencia quantum/time slice se contrasta con el manual universitario de sistemas operativos citado.",
+      "clasificacion": {
+        "A1": [
+          "A1-59"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": "bloque 27 Sistemas Operativos, versión 2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El material cubre los fundamentos del sistema operativo y la gestión del procesador bajo A1-59; la equivalencia quantum/time slice se contrasta con el manual universitario de sistemas operativos citado."
+      },
+      "etiquetas": [
+        "planificación de CPU",
+        "sistemas operativos",
+        "tiempo compartido",
+        "quantum",
+        "time slice"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.cs.utexas.edu/~ans/classes/cs439/osm-rev1.3.1.pdf",
+            "referencia": "University of Texas at Austin, Operating Systems and Middleware, sección de planificación: el intervalo durante el que un hilo puede ejecutarse antes del cambio también se denomina quantum o time slice."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026. El material cubre los fundamentos del sistema operativo y la gestión del procesador bajo A1-59; la equivalencia quantum/time slice se contrasta con el manual universitario de sistemas operativos citado."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-59."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-2."
+          }
+        ],
+        "observaciones": "Corregida C. Quantum/time slice es el intervalo de ejecución concedido antes de que opere la planificación por turnos; el proceso puede ceder antes si se bloquea o termina. Cotejo curricular: ITIC Academy, bloque 27 Sistemas Operativos, versión 2026. El material cubre los fundamentos del sistema operativo y la gestión del procesador bajo A1-59; la equivalencia quantum/time slice se contrasta con el manual universitario de sistemas operativos citado."
+      }
     },
     {
       "id": 7834,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los tipos de documentos según XML son:",
+      "texto": "Según XML 1.0, ¿qué requisito adicional distingue a un documento válido de uno que es únicamente bien formado?",
       "opciones": [
-        "Inválido y válido",
-        "Inválido y bien formado",
-        "Inválido, bien formado y válido",
-        "lnválido, bien formado, válido y completo"
+        "Que se ajuste también a las restricciones de validez de su declaración de tipo de documento (DTD).",
+        "Que use exclusivamente UTF-8 y no contenga elementos anidados.",
+        "Que tenga una hoja de estilos CSS asociada.",
+        "Que carezca de declaración XML y de elementos vacíos."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Corregida A. “Bien formado” significa que satisface la sintaxis y las restricciones de buena formación de XML. Un documento “válido” es bien formado y además satisface las restricciones de validez declaradas en su DTD. Por ello, “inválido, bien formado y válido” no es una taxonomía coherente de tipos excluyentes. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026. Incluye expresamente el epígrafe A1-77, HTML/CSS/XML y compatibilidad con estándares. Las condiciones formales de documento bien formado y válido se cotejan con la Recomendación XML 1.0 del W3C.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "bloque 30 Tecnologías de Sistemas de la Información, versión 2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Incluye expresamente el epígrafe A1-77, HTML/CSS/XML y compatibilidad con estándares. Las condiciones formales de documento bien formado y válido se cotejan con la Recomendación XML 1.0 del W3C."
+      },
+      "etiquetas": [
+        "XML",
+        "documento bien formado",
+        "documento válido",
+        "DTD",
+        "W3C"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.w3.org/TR/xml/",
+            "referencia": "W3C, Extensible Markup Language (XML) 1.0, §2.8: todo documento válido es bien formado; además debe ajustarse a las restricciones de validez de una declaración de tipo de documento (DTD). La especificación también presenta documentos bien formados que no son válidos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026. Incluye expresamente el epígrafe A1-77, HTML/CSS/XML y compatibilidad con estándares. Las condiciones formales de documento bien formado y válido se cotejan con la Recomendación XML 1.0 del W3C."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-77."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-III-12."
+          }
+        ],
+        "observaciones": "Corregida A. “Bien formado” significa que satisface la sintaxis y las restricciones de buena formación de XML. Un documento “válido” es bien formado y además satisface las restricciones de validez declaradas en su DTD. Por ello, “inválido, bien formado y válido” no es una taxonomía coherente de tipos excluyentes. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de la Información, versión 2026. Incluye expresamente el epígrafe A1-77, HTML/CSS/XML y compatibilidad con estándares. Las condiciones formales de documento bien formado y válido se cotejan con la Recomendación XML 1.0 del W3C."
+      }
     },
     {
       "id": 7835,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según la metodología métrica v3, ¿Cuál de las siguientes funciones NO le corresponde al Jefe de Proyecto?",
+      "texto": "Según los perfiles de participantes de MÉTRICA v3, ¿qué función corresponde al perfil Consultor y no al Jefe de Proyecto?",
       "opciones": [
-        "Seleccionar la estrategia de desarrollo (modelo de ciclo de vida) y determinar los procesos, actividades y tareas que integran el proyecto (mapa de actividades).",
-        "Ofrecer una opinión experta relativa a los requisitos del negocio, técnicos y de usuario que han de tenerse en cuenta en el desarrollo del sistema de información.",
-        "Estimar el esfuerzo necesario para llevar a cabo el proyecto.",
-        "Le corresponden todas las funciones anteriores."
+        "Seleccionar la estrategia de desarrollo y definir el mapa de actividades del proyecto.",
+        "Aportar una opinión experta sobre requisitos de negocio, técnicos o de usuario desde su ámbito de conocimiento.",
+        "Estimar el esfuerzo necesario para planificar y controlar el proyecto.",
+        "Dirigir la planificación, el seguimiento y la coordinación general del proyecto."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. MÉTRICA v3 asigna al perfil Consultor (incluido el Especialista en Comunicaciones) la aportación de experiencia especializada; la selección de estrategia, estimación y coordinación general pertenecen a funciones del Jefe de Proyecto. Cotejo curricular: ITIC Academy, Tema 093 MÉTRICA v3. El material identifica al Especialista en Comunicaciones dentro del perfil Consultor y recoge su asesoramiento especializado sobre requisitos; se contrasta con el manual original de Gestión de Proyectos de MÉTRICA v3.",
+      "clasificacion": {
+        "A1": [
+          "A1-95"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": "Tema 093 MÉTRICA v3",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El material identifica al Especialista en Comunicaciones dentro del perfil Consultor y recoge su asesoramiento especializado sobre requisitos; se contrasta con el manual original de Gestión de Proyectos de MÉTRICA v3."
+      },
+      "etiquetas": [
+        "MÉTRICA v3",
+        "perfil consultor",
+        "Especialista en Comunicaciones",
+        "roles de proyecto"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A0f07660d-1044-489e-a3be-3a94b80fbb16/METRICA_V3_Gestion_de_Proyectos.pdf",
+            "referencia": "MÉTRICA v3, Gestión de Proyectos, participantes y perfiles: el perfil Consultor incluye perfiles especializados de consultoría y comunicaciones, incluido el Especialista en Comunicaciones; su función es aportar conocimiento/asesoramiento experto."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1hPYYrCoVBKhiEgMaqVBi5mpdUEm4_vV5/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, Tema 093 MÉTRICA v3. El material identifica al Especialista en Comunicaciones dentro del perfil Consultor y recoge su asesoramiento especializado sobre requisitos; se contrasta con el manual original de Gestión de Proyectos de MÉTRICA v3."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-95."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-III-2."
+          }
+        ],
+        "observaciones": "Corregida B. MÉTRICA v3 asigna al perfil Consultor (incluido el Especialista en Comunicaciones) la aportación de experiencia especializada; la selección de estrategia, estimación y coordinación general pertenecen a funciones del Jefe de Proyecto. Cotejo curricular: ITIC Academy, Tema 093 MÉTRICA v3. El material identifica al Especialista en Comunicaciones dentro del perfil Consultor y recoge su asesoramiento especializado sobre requisitos; se contrasta con el manual original de Gestión de Proyectos de MÉTRICA v3."
+      }
     },
     {
       "id": 7836,
