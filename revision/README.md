@@ -1,4 +1,18 @@
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1472 (IDs 7661–7665). Acumulado: **7.660** preguntas examinadas individualmente; **7.532 verificadas** (1.449 vigentes, 5.544 corregidas y 539 históricas); **128 pendientes documentadas** (48 de fuente y 80 de ambigüedad); **4.463 sin revisar individualmente**. Una pregunta marcada como pendiente sí fue examinada y su bloqueo queda registrado; el inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1473 (IDs 7666–7670). Acumulado: **7.665** preguntas examinadas individualmente; **7.537 verificadas** (1.450 vigentes, 5.548 corregidas y 539 históricas); **128 pendientes documentadas** (48 de fuente y 80 de ambigüedad); **4.458 sin revisar individualmente**. Una pregunta marcada como pendiente sí fue examinada y su bloqueo queda registrado; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1473 — 16 de noviembre de 2026
+
+Revisión individual de las preguntas 7666–7670. Se precisó la sincronización carácter por carácter de la transmisión start-stop asíncrona; se sustituyó la descripción vaga de H.323 por su alcance packet-based y su aprobación inicial en 1996; se acotó la alta disponibilidad a redundancia y failover; se actualizó SMTP de la RFC 821 histórica a la RFC 5321 vigente; y se definió MX como el host de intercambio de correo del dominio.
+
+- **7666 — transmisión asíncrona:** **vigente C**. La transmisión start-stop delimita cada carácter con inicio y parada; no requiere un flujo continuo de reloj compartido. A1-108/110; A2-IV-7/8.
+- **7667 — H.323:** **corregida D**. La primera versión de H.323 se aprobó en 1996 para videotelefonía en LAN con QoS no garantizada; el marco se amplió a multimedia sobre redes de paquetes. A1-116; A2-IV-14.
+- **7668 — distribución y disponibilidad:** **corregida C**. Desplegar software en varias máquinas no garantiza por sí mismo disponibilidad; con redundancia y failover bien configurados puede aumentarla. A1-53/119; A2-IV-6.
+- **7669 — SMTP 501:** **corregida C**. Según RFC 5321, 501 significa error de sintaxis en parámetros o argumentos; es 5xx, no temporal. Se reemplazó la referencia obsoleta RFC 821. A1-109; A2-II-8/IV-13.
+- **7670 — registro DNS MX:** **corregida C**. MX designa un host que acepta correo para el dominio y permite ordenar varios intercambios por preferencia; no designa el servidor DNS ni web. A1-109; A2-IV-13.
+
+El cotejo curricular se realizó con los bloques 42 (Redes), 43 (Protocolos) y Hardware/Servidores/CPD de ITIC Academy, edición 2026, y los temarios oficiales A1/A2 de las convocatorias BOE-A-2025-25938 y BOE-A-2025-26262. Fuentes primarias: [ITU-T V.14](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-V.14-199303-I%21%21PDF-E&lang=e&type=items), [ITU-T H.323](https://www.itu.int/rec/T-REC-H.323/e), [NIST SP 800-34 Rev. 1](https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final), [RFC 5321](https://www.rfc-editor.org/rfc/rfc5321.html), [RFC 1035](https://www.rfc-editor.org/rfc/rfc1035.html) y [RFC 974](https://www.rfc-editor.org/rfc/rfc974.html).
+
+Ejecutados `node revision/revisar-lote-1473.cjs`, `node revision/academia-lote-1473.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros; 7.665 revisadas individualmente (1.450 vigentes, 5.548 corregidas, 539 históricas); 128 pendientes documentadas (80 de ambigüedad y 48 de fuente); 4.458 sin revisar individualmente; errores estructurales: 0. El inventario estructural no equivale a revisión de contenido.
 
 ## Lote 1472 — 16 de noviembre de 2026
 

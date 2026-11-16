@@ -407471,71 +407471,290 @@
       "id": 7666,
       "bloque": 0,
       "tema": 0,
-      "texto": "Una transmisión asíncrona se caracteriza porque:",
+      "texto": "En una transmisión serie asíncrona con caracteres start-stop, ¿cómo se establece el sincronismo?",
       "opciones": [
-        "Los caracteres se reciben a un ritmo diferente del que se transmiten",
-        "El terminal receptor funciona a velocidad diferente del emisor",
-        "Cada carácter incorpora su propio sincronismo",
-        "Se utilizan caracteres de sincronización sin periodicidad fija"
+        "Los caracteres recibidos tienen necesariamente otra velocidad que los transmitidos.",
+        "El terminal receptor debe funcionar a una velocidad distinta de la del emisor.",
+        "Cada carácter incluye elementos de inicio y parada que permiten recuperar su sincronismo localmente.",
+        "Se insertan caracteres de sincronización a intervalos periódicos fijos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Vigente C. En la transmisión asíncrona start-stop, cada carácter lleva su propio delimitador de inicio y parada; no hace falta sincronismo de carácter continuo ni transmitir caracteres de sincronización en intervalos periódicos. Se reemplazó el impreciso “incorpora su propio sincronismo” por la descripción de los elementos que lo proporcionan. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026. Cubre medios de transmisión y técnicas de transmisión; encaje curricular para transmisión serie asíncrona. ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye arquitectura y transmisión de protocolos; cotejo con A1-108/110 y A2-IV-7/8.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-110"
+        ],
+        "A2": [
+          "A2-IV-7",
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "transmisión asíncrona",
+        "start-stop",
+        "sincronización por carácter"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-V.14-199303-I%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T V.14, §1 y §7: define caracteres start-stop con elemento de inicio y parada; la recepción se sincroniza al inicio de cada carácter, sin reloj de carácter continuo compartido."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026. Cubre medios de transmisión y técnicas de transmisión; encaje curricular para transmisión serie asíncrona."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye arquitectura y transmisión de protocolos; cotejo con A1-108/110 y A2-IV-7/8."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-108, A1-110."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-IV-7, A2-IV-8."
+          }
+        ],
+        "observaciones": "Vigente C. En la transmisión asíncrona start-stop, cada carácter lleva su propio delimitador de inicio y parada; no hace falta sincronismo de carácter continuo ni transmitir caracteres de sincronización en intervalos periódicos. Se reemplazó el impreciso “incorpora su propio sincronismo” por la descripción de los elementos que lo proporcionan. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026. Cubre medios de transmisión y técnicas de transmisión; encaje curricular para transmisión serie asíncrona. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye arquitectura y transmisión de protocolos; cotejo con A1-108/110 y A2-IV-7/8."
+      }
     },
     {
       "id": 7667,
       "bloque": 0,
       "tema": 0,
-      "texto": "La recomendación para VoIP, definida en 1996 por la UIT es el:",
+      "texto": "¿Qué Recomendación UIT-T, cuya primera versión se aprobó en 1996, normaliza sistemas multimedia para redes de paquetes y se convirtió en un marco temprano para VoIP?",
       "opciones": [
-        "H.261.",
-        "H.320.",
-        "H.221.",
-        "H.323."
+        "H.261, que codifica vídeo para servicios audiovisuales.",
+        "H.320, para comunicaciones audiovisuales en RDSI de banda estrecha.",
+        "H.221, para multiplexación de señales audiovisuales.",
+        "H.323, para comunicaciones multimedia sobre redes de paquetes."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. Se precisa el alcance y el contexto histórico: H.323 v1 fue aprobado en 1996 para equipos de videotelefonía en redes de área local con QoS no garantizada; las versiones posteriores cubren sistemas multimedia sobre redes de paquetes. No se presenta como “la” única recomendación VoIP actual. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye VoIP, señalización y protocolos de comunicaciones convergentes; correspondencia directa con A1-116 y A2-IV-14.",
+      "clasificacion": {
+        "A1": [
+          "A1-116"
+        ],
+        "A2": [
+          "A2-IV-14"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ITU-T H.323",
+        "VoIP",
+        "redes conmutadas por paquetes",
+        "historia"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-H.323/e",
+            "referencia": "ITU-T, ficha oficial H.323: la primera versión (11/1996) figura como visual telephone systems and equipment for LANs con QoS no garantizada; las versiones posteriores amplían el alcance a comunicaciones multimedia sobre redes de paquetes."
+          },
+          {
+            "url": "https://www.itu.int/itudoc/itu-t/workshop/e-health/s6-01.pdf",
+            "referencia": "ITU-T Study Group 16, Evolutionary History of H.323: indica que la versión 1 se aprobó en 1996 con foco en voz, vídeo y colaboración de datos empresarial."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye VoIP, señalización y protocolos de comunicaciones convergentes; correspondencia directa con A1-116 y A2-IV-14."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-116."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-IV-14."
+          }
+        ],
+        "observaciones": "Corregida D. Se precisa el alcance y el contexto histórico: H.323 v1 fue aprobado en 1996 para equipos de videotelefonía en redes de área local con QoS no garantizada; las versiones posteriores cubren sistemas multimedia sobre redes de paquetes. No se presenta como “la” única recomendación VoIP actual. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye VoIP, señalización y protocolos de comunicaciones convergentes; correspondencia directa con A1-116 y A2-IV-14."
+      }
     },
     {
       "id": 7668,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué beneficios puede tener la distribución del software en varias máquinas?",
+      "texto": "Cuando una aplicación se despliega con redundancia y conmutación por error entre varias máquinas, ¿qué beneficio puede obtenerse?",
       "opciones": [
-        "Normalmente no presenta beneficios pero en algunas ocasiones es necesario",
-        "Nunca tiene beneficios",
-        "Es más optimo que los sistemas SMP",
-        "Mayor disponibilidad"
+        "Menor complejidad en todos los casos.",
+        "La eliminación automática de cualquier fallo.",
+        "Mayor disponibilidad del servicio, si la arquitectura está diseñada para tolerar fallos.",
+        "Un rendimiento siempre superior al de un sistema SMP."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "Corregida C. La distribución de componentes por sí sola no garantiza disponibilidad, sencillez ni mejor rendimiento que SMP. El beneficio citado se obtiene cuando hay redundancia y failover; NIST describe estos mecanismos como forma de maximizar disponibilidad. Cotejo curricular: ITIC Academy, bloque de Hardware, Servidores, CPD, Almacenamiento y Virtualización, edición 2026. Cubre servidores, granjas, escalabilidad y continuidad; encaje con A1-53/119 y el tema A2-IV-6 de disponibilidad y balanceo.",
+      "clasificacion": {
+        "A1": [
+          "A1-53",
+          "A1-119"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "sistemas distribuidos",
+        "replicación",
+        "redundancia",
+        "alta disponibilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+            "referencia": "NIST SP 800-34 Rev. 1, §5.1.6 y §5.6: la alta disponibilidad incorpora redundancia y failover para aumentar disponibilidad; en sistemas distribuidos describe réplicas de datos en servidores, a la vez que advierte que distribución por sí sola exige coordinación y medidas de contingencia."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque de Hardware, Servidores, CPD, Almacenamiento y Virtualización, edición 2026. Cubre servidores, granjas, escalabilidad y continuidad; encaje con A1-53/119 y el tema A2-IV-6 de disponibilidad y balanceo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-53, A1-119."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-IV-6."
+          }
+        ],
+        "observaciones": "Corregida C. La distribución de componentes por sí sola no garantiza disponibilidad, sencillez ni mejor rendimiento que SMP. El beneficio citado se obtiene cuando hay redundancia y failover; NIST describe estos mecanismos como forma de maximizar disponibilidad. Cotejo curricular: ITIC Academy, bloque de Hardware, Servidores, CPD, Almacenamiento y Virtualización, edición 2026. Cubre servidores, granjas, escalabilidad y continuidad; encaje con A1-53/119 y el tema A2-IV-6 de disponibilidad y balanceo."
+      }
     },
     {
       "id": 7669,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si el código de respuesta de un servidor SMTP, que cumple la RFC 821, es 501, podemos decir que:",
+      "texto": "Según la especificación SMTP vigente (RFC 5321), si un servidor devuelve el código 501 al recibir un comando, significa que:",
       "opciones": [
-        "La operación se ha realizado con éxito.",
-        "Se ha producido un Error Temporal. Es posible que, volver a mandar el comando, con el mismo formato pasado un tiempo, produzca un resultado satisfactorio.",
-        "Se ha producido un Error, debido a que los parametros del comando enviado no tienen la sintaxis correcta.",
-        "No podemos decir nada."
+        "La operación se ha completado correctamente.",
+        "Hay un error temporal que puede resolverse repitiendo sin cambios el comando más tarde.",
+        "Existe un error de sintaxis en los parámetros o argumentos del comando.",
+        "El código no permite deducir nada sobre el tipo de respuesta."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. RFC 5321 define 501 como error de sintaxis en parámetros o argumentos; es un código 5xx de fallo permanente de la solicitud, a diferencia de los 4xx temporales. Se sustituyó la referencia histórica RFC 821 por la especificación SMTP vigente. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Cubre SMTP y servicios/aplicaciones de Internet; la semántica exacta de 501 se coteja con RFC 5321 vigente y se registra RFC 821 como histórica.",
+      "clasificacion": {
+        "A1": [
+          "A1-109"
+        ],
+        "A2": [
+          "A2-II-8",
+          "A2-IV-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SMTP",
+        "código 501",
+        "sintaxis de parámetros",
+        "RFC 5321"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+            "referencia": "IETF RFC 5321, §4.2.3: 501 significa “Syntax error in parameters or arguments”; es un error permanente de sintaxis, no el error temporal 4xx. Esta norma actualiza y reemplaza RFC 821."
+          },
+          {
+            "url": "https://www.rfc-editor.org/info/rfc821/",
+            "referencia": "IETF RFC 821, SMTP histórico de 1982; hoy está obsoleto. El enunciado se actualiza a la especificación vigente RFC 5321 para no basar el aprendizaje en una RFC sustituida."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Cubre SMTP y servicios/aplicaciones de Internet; la semántica exacta de 501 se coteja con RFC 5321 vigente y se registra RFC 821 como histórica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-109."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-II-8, A2-IV-13."
+          }
+        ],
+        "observaciones": "Corregida C. RFC 5321 define 501 como error de sintaxis en parámetros o argumentos; es un código 5xx de fallo permanente de la solicitud, a diferencia de los 4xx temporales. Se sustituyó la referencia histórica RFC 821 por la especificación SMTP vigente. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Cubre SMTP y servicios/aplicaciones de Internet; la semántica exacta de 501 se coteja con RFC 5321 vigente y se registra RFC 821 como histórica."
+      }
     },
     {
       "id": 7670,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un registro MX en un servidor DNS, ¿a qué hace referencia?",
+      "texto": "En DNS, ¿qué identifica un registro MX de un dominio?",
       "opciones": [
-        "Al servidor DNS principal.",
-        "Al servidor web asociado al dominio.",
-        "Al servidor de correo asociado al dominio.",
-        "Al servidor seguro asociado al dominio."
+        "Su servidor DNS primario autoritativo (registro SOA).",
+        "El servidor web asociado al dominio.",
+        "Un host designado para recibir o encaminar el correo electrónico del dominio.",
+        "El servidor web seguro asociado al dominio."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. MX identifica un servidor de intercambio de correo (mail exchanger), no un servidor DNS autoritativo ni necesariamente un servidor web. La prioridad relativa de varios MX se expresa mediante el campo preference. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Cubre servicios de Internet y arquitectura de protocolos; el registro MX se verifica en RFC 1035/974 y se encuadra en A1-109 y A2-IV-13.",
+      "clasificacion": {
+        "A1": [
+          "A1-109"
+        ],
+        "A2": [
+          "A2-IV-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "DNS",
+        "registro MX",
+        "enrutamiento de correo",
+        "RFC 1035"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+            "referencia": "IETF RFC 1035, §§3.2.2 y 3.3.9: MX significa mail exchange; el registro asocia el dominio de correo con un host que acepta correo para ese dominio e incluye una preferencia."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc974.html",
+            "referencia": "IETF RFC 974, §2: describe el uso de registros MX de DNS para localizar y ordenar los hosts de intercambio a los que se entrega el correo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Cubre servicios de Internet y arquitectura de protocolos; el registro MX se verifica en RFC 1035/974 y se encuadra en A1-109 y A2-IV-13."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-109."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-IV-13."
+          }
+        ],
+        "observaciones": "Corregida C. MX identifica un servidor de intercambio de correo (mail exchanger), no un servidor DNS autoritativo ni necesariamente un servidor web. La prioridad relativa de varios MX se expresa mediante el campo preference. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Cubre servicios de Internet y arquitectura de protocolos; el registro MX se verifica en RFC 1035/974 y se encuadra en A1-109 y A2-IV-13."
+      }
     },
     {
       "id": 7671,
