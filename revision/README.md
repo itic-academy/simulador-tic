@@ -1,6 +1,22 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1495 (IDs 7776–7780). Acumulado: **7.775** preguntas examinadas individualmente; **7.647 verificadas** (1.480 vigentes, 5.621 corregidas y 546 históricas); **128 pendientes documentadas** (48 de fuente, 80 de ambigüedad); **4.348 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1496 (IDs 7781–7785). Acumulado: **7.780** preguntas examinadas individualmente; **7.652 verificadas** (1.481 vigentes, 5.624 corregidas y 547 históricas); **128 pendientes documentadas** (48 de fuente, 80 de ambigüedad); **4.343 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
 
-## Lote 1495 — 16 de noviembre de 2026
+## Lote 1496 — 16 de noviembre de 2026
+
+Revisión individual de las preguntas 7781–7785: registros regionales de Internet, clase FEC de MPLS, acceso CSMA/CA de IEEE 802.11, cálculo de hosts IPv4 en /28 y referencia histórica de la especificación IPv6. Se precisaron los enunciados con fuentes primarias actuales, conservando la trazabilidad del contenido original.
+
+- **7781 — RIR:** **corregida B**. IANA reconoce AFRINIC, APNIC, ARIN, LACNIC y RIPE NCC; el RIR europeo es RIPE NCC, no «EUNIC». Se normalizó AFRINIC. A1-109/115; A2-II-8/IV-13.
+- **7782 — MPLS/FEC:** **corregida A**. Una FEC agrupa paquetes que se reenvían del mismo modo; no es el LSP ni un protocolo de distribución de etiquetas. A1-113; A2-IV-10.
+- **7783 — Wi-Fi:** **corregida B**. La DCF de IEEE 802.11 utiliza CSMA/CA. El enunciado ya no promete que las colisiones desaparezcan: el método reduce su probabilidad. A1-114; A2-IV-11.
+- **7784 — IPv4 /28:** **vigente B**. El bloque contiene 16 direcciones; al excluir red y broadcast quedan 14 hosts asignables (.33–.46). A1-115; A2-II-8.
+- **7785 — IPv6/RFC:** **histórica A**. RFC 2460 publicó la especificación de IPv6 en 1998 y RFC 8200 la sustituyó en 2017; se enmarca la pregunta explícitamente como histórica. A1-115; A2-II-8.
+
+Cotejo curricular individual en Drive: [ITIC Academy, bloque 42 Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) (7781 y 7784: arquitectura de Internet, RIR y redes IP/subredes); [bloque 43 Protocolos](https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk) (7782, 7784 y 7785: apartado MPLS/FEC-LSP, direccionamiento IPv4/IPv6 y RFC obsoletas); [bloque 46 Redes inalámbricas](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk) (7783: apartado 7.1 DCF/CSMA/CA). El temario de academia se usó solo como cotejo curricular, no como autoridad normativa. Clasificación cotejada con las convocatorias oficiales [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
+
+Fuentes primarias: [IANA, Number Resources (cinco RIR y cobertura)](https://www.iana.org/numbers); [IETF RFC 3031, MPLS Architecture (FEC)](https://www.rfc-editor.org/info/rfc3031); [IEEE 802.11 Working Group (MAC CSMA/CA)](https://www.ieee802.org/11/main.html); [IETF RFC 1878 (tabla de subredes IPv4)](https://www.rfc-editor.org/info/rfc1878); [IETF RFC 2460](https://www.rfc-editor.org/info/rfc2460) y [RFC 8200](https://www.rfc-editor.org/info/rfc8200) (especificación IPv6 y obsolescencia).
+
+Ejecutados `node revision/revisar-lote-1496.cjs`, `node revision/academia-lote-1496.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros; 7.780 revisadas individualmente (1.481 vigentes, 5.624 corregidas, 547 históricas); 128 pendientes documentadas (80 de ambigüedad y 48 de fuente); 4.343 sin revisar individualmente; errores estructurales: 0. El inventario estructural no equivale a revisión de contenido.
+
+## Lote 1495 — 16 de noviembre de 2026## Lote 1495 — 16 de noviembre de 2026
 
 Revisión individual de las preguntas 7776–7780: interfaz de Gestión de Proyectos de MÉTRICA v.3; símbolo de los parámetros de control en estructuras modulares; diagramas de despliegue; sigla SLA; y método CSMA de acceso al medio. Se concretaron las preguntas para distinguir formalmente GPI 2 de PSI, el círculo de control del símbolo de dato, y CSMA de Token Ring/Aloha.
 
@@ -21118,3 +21134,5 @@ Fuentes primarias: [Ley 40/2015 en el BOE, BOE-A-2015-10566](https://www.boe.es/
 Cotejo ITIC Academy/Drive: [Bloque 3 Actuación administrativa y Administración digital, versión 2026.2 (1/10/2026)](https://docs.google.com/document/d/11f2yckNnR_tuq63G9CLQFlsitwLhj4pV/edit?usp=drivesdk&ouid=107088454749630873035&rtpof=true&sd=true), que incluye Leyes 39/2015 y 40/2015 (7621 y 7625; clasificación A1-8/10 y A2-I-8 cotejada también con BOE). [Bloque 2 Unión Europea, versión 2026.1](https://drive.google.com/file/d/1FAP2AizgAOnbPYOugoWDgThYwZJKCe-C/view?usp=drivesdk), cubre A1-5 y declara A2 «NO APLICA» (7622). [Bloque 1 Constitución, organización del Estado y AGE, versión 2026.2](https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk), cubre organización central/territorial y Delegados/Subdelegados del Gobierno (7623–7624); la Ley 40/2015 para A2 se cotejó además en el Bloque 3.
 
 Ejecutados `node revision/revisar-lote-1464.cjs`, `node revision/academia-lote-1464.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros; **7.620 revisados individualmente** (1.439 vigentes, 5.514 corregidas y 539 históricas); **128 pendientes documentadas** (80 de ambigüedad y 48 de fuente); **4.503 sin revisar individualmente**; errores estructurales: 0. El inventario no se interpreta como revisión del contenido pendiente.
+
+\n
