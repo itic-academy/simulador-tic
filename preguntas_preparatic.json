@@ -418468,49 +418468,186 @@
       "id": 7856,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes NO es una regla de Codd?",
+      "texto": "En la lista de las doce reglas de Codd para un SGBD relacional, ¿cuál de estas denominaciones NO corresponde a una regla?",
       "opciones": [
-        "Regla del Acceso Garantizado",
-        "Regla de Actualización de Vistas",
-        "Independencia Lógica de Datos",
-        "Regla de la Subversión"
+        "Regla del acceso garantizado (Guaranteed Access).",
+        "Regla de actualización de vistas (View Updating).",
+        "Independencia lógica de los datos (Logical Data Independence).",
+        "Regla de la subversión (Subversion Rule); la denominación correcta de la regla 12 es Nonsubversion Rule."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. La lista denomina la regla 12 Nonsubversion Rule, no “Rule of Subversion”. El enunciado ahora compara los nombres y reproduce la denominación inglesa para evitar traducciones inconsistentes. Las otras opciones corresponden a reglas conocidas. Cotejo curricular: ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, edición 2026. El material cubre SGBD y modelo relacional/reglas de Codd; correspondencia A1-63/A1-64 y A2-II-5. Los nombres de las reglas se verifican con la fuente de Codd/Computerworld.",
+      "clasificacion": {
+        "A1": [
+          "A1-63",
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, edición 2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El material cubre SGBD y modelo relacional/reglas de Codd; correspondencia A1-63/A1-64 y A2-II-5. Los nombres de las reglas se verifican con la fuente de Codd/Computerworld."
+      },
+      "etiquetas": [
+        "E. F. Codd",
+        "modelo relacional",
+        "regla 12",
+        "nonsubversion"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.computerworld.com/article/1381158/codd-s-12-rules.html",
+            "referencia": "Computerworld, “Codd’s 12 Rules”: reproduce los nombres de las reglas de Codd; la regla 12 se denomina Nonsubversion Rule. “Rule of Subversion” no es la denominación de una regla."
+          },
+          {
+            "url": "https://www.softwaregems.com.au/Documents/Article/Database/Relational%20Model/Codd%20E%20F/Relational%20Database%20Practical%20Foundation%20Turing%20Award.pdf",
+            "referencia": "E. F. Codd, Relational Database: A Practical Foundation for Productivity: autor explica el objetivo y origen de sus doce reglas para distinguir sistemas relacionales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, edición 2026. El material cubre SGBD y modelo relacional/reglas de Codd; correspondencia A1-63/A1-64 y A2-II-5. Los nombres de las reglas se verifican con la fuente de Codd/Computerworld."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-63, A1-64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-5."
+          }
+        ],
+        "observaciones": "Corregida D. La lista denomina la regla 12 Nonsubversion Rule, no “Rule of Subversion”. El enunciado ahora compara los nombres y reproduce la denominación inglesa para evitar traducciones inconsistentes. Las otras opciones corresponden a reglas conocidas. Cotejo curricular: ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, edición 2026. El material cubre SGBD y modelo relacional/reglas de Codd; correspondencia A1-63/A1-64 y A2-II-5. Los nombres de las reglas se verifican con la fuente de Codd/Computerworld."
+      }
     },
     {
       "id": 7857,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué supone habilitar el procesamiento de bucle invertido en una política de grupo (GPO) de un entorno Microsoft?",
+      "texto": "En Windows, ¿qué efecto tiene habilitar el procesamiento loopback de directiva de grupo en un equipo?",
       "opciones": [
-        "Las opciones de configuración recogidas en la GPO se aplicarán en orden inverso al especificado.",
-        "Permite especificar un conjunto de políticas de usuario que se aplicarán a todos los usuarios que inicien sesión en un servidor determinado.",
-        "Aplicará las opciones de configuración recogidas en la GPO a los usuarios no pertenecientes a un grupo determinado.",
-        "Ninguna de las anteriores es correcta."
+        "Invierte el orden LSDOU de procesamiento de GPO.",
+        "Hace que la configuración de usuario pueda determinarse por las GPO aplicables al equipo, con independencia del usuario que inicie sesión; el modo Merge/Replace define cómo se combina con las GPO del usuario.",
+        "Aplica la directiva solo a usuarios excluidos de un grupo de seguridad.",
+        "Impide aplicar cualquier configuración de usuario proveniente de GPO."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. Loopback hace que se procesen configuraciones de usuario a partir del ámbito del equipo independientemente de la identidad que inicia sesión. En Merge se agrega la lista de GPO del equipo tras la del usuario y sus ajustes prevalecen ante conflicto; en Replace se usa únicamente la lista derivada del equipo para la configuración de usuario. No es una inversión del orden normal ni un filtro de pertenencia a grupos. Cotejo curricular: ITIC Academy, bloque 27, Sistemas Operativos, versión 2026 actualizada. Cubre administración de sistemas Microsoft y servicios de red, con encaje A1-61/A2-II-2 y A2-IV-1. El comportamiento exacto de loopback, Merge y Replace se verifica en Microsoft Learn.",
+      "clasificacion": {
+        "A1": [
+          "A1-61"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27, Sistemas Operativos, versión 2026 actualizada",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Cubre administración de sistemas Microsoft y servicios de red, con encaje A1-61/A2-II-2 y A2-IV-1. El comportamiento exacto de loopback, Merge y Replace se verifica en Microsoft Learn."
+      },
+      "etiquetas": [
+        "Windows Server",
+        "Group Policy",
+        "GPO",
+        "loopback",
+        "Merge",
+        "Replace"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-policy/group-policy-processing",
+            "referencia": "Microsoft Learn, Group Policy processing: el modo loopback aplica User Configuration de GPO vinculados al equipo con independencia de quién inicie sesión; distingue Merge y Replace y explica sus precedencias."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 27, Sistemas Operativos, versión 2026 actualizada. Cubre administración de sistemas Microsoft y servicios de red, con encaje A1-61/A2-II-2 y A2-IV-1. El comportamiento exacto de loopback, Merge y Replace se verifica en Microsoft Learn."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-61."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-2, A2-IV-1."
+          }
+        ],
+        "observaciones": "Corregida B. Loopback hace que se procesen configuraciones de usuario a partir del ámbito del equipo independientemente de la identidad que inicia sesión. En Merge se agrega la lista de GPO del equipo tras la del usuario y sus ajustes prevalecen ante conflicto; en Replace se usa únicamente la lista derivada del equipo para la configuración de usuario. No es una inversión del orden normal ni un filtro de pertenencia a grupos. Cotejo curricular: ITIC Academy, bloque 27, Sistemas Operativos, versión 2026 actualizada. Cubre administración de sistemas Microsoft y servicios de red, con encaje A1-61/A2-II-2 y A2-IV-1. El comportamiento exacto de loopback, Merge y Replace se verifica en Microsoft Learn."
+      }
     },
     {
       "id": 7858,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la opción que enumera tres de las especificaciones más robustas en el sector del e-learning:",
+      "texto": "¿Qué opción reúne tres especificaciones históricas reconocibles de interoperabilidad para contenidos o sistemas de e-learning?",
       "opciones": [
-        "AICC, IMS y SCORM",
-        "AICC, EL-XML y SCORM",
-        "ELEARN, FCC y SCORM",
-        "SCORM, ELEARN y AICC"
+        "AICC, IMS y SCORM.",
+        "AICC, EL-XML y SCORM.",
+        "ELEARN, FCC y SCORM.",
+        "SCORM, ELEARN y AICC."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. AICC/CMI, las especificaciones de la familia IMS/1EdTech y SCORM son denominaciones reconocidas en la historia de la interoperabilidad e-learning. Se eliminó el calificativo subjetivo “más robustas”; AICC se describe como legado y no se equipara su estado actual con el de especificaciones mantenidas. Cotejo curricular: ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, edición 2026.1. El apartado de estándares e interoperabilidad de contenidos de e-learning incluye SCORM y especificaciones relacionadas; encaje A1-73/A2-III-6. El estado y el alcance de cada organismo/especificación se cotejan en ADL, 1EdTech e índice AICC.",
+      "clasificacion": {
+        "A1": [
+          "A1-73"
+        ],
+        "A2": [
+          "A2-III-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, edición 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El apartado de estándares e interoperabilidad de contenidos de e-learning incluye SCORM y especificaciones relacionadas; encaje A1-73/A2-III-6. El estado y el alcance de cada organismo/especificación se cotejan en ADL, 1EdTech e índice AICC."
+      },
+      "etiquetas": [
+        "e-learning",
+        "AICC",
+        "IMS",
+        "SCORM",
+        "interoperabilidad"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.adlnet.gov/projects/scorm/",
+            "referencia": "Advanced Distributed Learning (ADL), SCORM: conjunto de especificaciones y estándares para interoperabilidad de contenidos de aprendizaje y sistemas LMS."
+          },
+          {
+            "url": "https://www.1edtech.org/specifications",
+            "referencia": "1EdTech, catálogo de estándares de interoperabilidad educativa: publica especificaciones abiertas de tecnología educativa; IMS es la denominación histórica de la organización y familia de especificaciones."
+          },
+          {
+            "url": "https://www.aicc.org/pages/down-docs-index.html",
+            "referencia": "AICC, índice oficial de documentos: conserva CMI-001, guías de interoperabilidad del modelo Computer Managed Instruction; AICC es una especificación histórica/legacy, no una afirmación de vigencia equivalente a SCORM actual."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, edición 2026.1. El apartado de estándares e interoperabilidad de contenidos de e-learning incluye SCORM y especificaciones relacionadas; encaje A1-73/A2-III-6. El estado y el alcance de cada organismo/especificación se cotejan en ADL, 1EdTech e índice AICC."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-73."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-III-6."
+          }
+        ],
+        "observaciones": "Corregida A. AICC/CMI, las especificaciones de la familia IMS/1EdTech y SCORM son denominaciones reconocidas en la historia de la interoperabilidad e-learning. Se eliminó el calificativo subjetivo “más robustas”; AICC se describe como legado y no se equipara su estado actual con el de especificaciones mantenidas. Cotejo curricular: ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, edición 2026.1. El apartado de estándares e interoperabilidad de contenidos de e-learning incluye SCORM y especificaciones relacionadas; encaje A1-73/A2-III-6. El estado y el alcance de cada organismo/especificación se cotejan en ADL, 1EdTech e índice AICC."
+      }
     },
     {
       "id": 7859,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué normativa vigente está relacionada con la calidad de la formación virtual?",
+      "texto": "Según el catálogo de AENOR consultado, ¿qué edición de la norma española UNE 66181, “Gestión de la calidad. Calidad de la formación virtual”, figura vigente?",
       "opciones": [
         "UNE 66181:2022.",
         "UNE 66181:2008.",
@@ -418518,21 +418655,109 @@
         "UNE 66181:2012."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. AENOR marca UNE 66181:2012 como vigente y señala que cancela la edición 2008. ISO 29994:2021 también es una norma vigente sobre requisitos de servicios de aprendizaje a distancia, pero es una norma ISO distinta; el enunciado ahora pregunta específicamente por la edición de UNE 66181 y evita una respuesta doble. Cotejo curricular: ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, edición 2026.1. Cotejo curricular de calidad y servicios de formación virtual; encaje A1-73/A2-III-6. La vigencia y cancelación de versiones de UNE se comprueban directamente en el catálogo de AENOR, no se deducen del manual.",
+      "clasificacion": {
+        "A1": [
+          "A1-73"
+        ],
+        "A2": [
+          "A2-III-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, edición 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Cotejo curricular de calidad y servicios de formación virtual; encaje A1-73/A2-III-6. La vigencia y cancelación de versiones de UNE se comprueban directamente en el catálogo de AENOR, no se deducen del manual."
+      },
+      "etiquetas": [
+        "UNE 66181",
+        "formación virtual",
+        "calidad",
+        "AENOR"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://tienda.aenor.com/en/p/norma-une-66181-2012-n0049661",
+            "referencia": "Catálogo oficial de AENOR, UNE 66181:2012 “Gestión de la calidad. Calidad de la formación virtual”: edición de 18-07-2012, estado In Force; indica que cancela UNE 66181:2008."
+          },
+          {
+            "url": "https://committee.iso.org/standard/54663.html?browse=ics",
+            "referencia": "ISO, ficha ISO 29994:2021: norma vigente de requisitos para servicios de aprendizaje a distancia; existe además de UNE 66181. Por ello se acota el enunciado a identificar la edición vigente de la norma española UNE 66181."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1RMeoTk_pDMBXS4TRc2URS5940kaOmb4X/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, edición 2026.1. Cotejo curricular de calidad y servicios de formación virtual; encaje A1-73/A2-III-6. La vigencia y cancelación de versiones de UNE se comprueban directamente en el catálogo de AENOR, no se deducen del manual."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-73."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-III-6."
+          }
+        ],
+        "observaciones": "Corregida D. AENOR marca UNE 66181:2012 como vigente y señala que cancela la edición 2008. ISO 29994:2021 también es una norma vigente sobre requisitos de servicios de aprendizaje a distancia, pero es una norma ISO distinta; el enunciado ahora pregunta específicamente por la edición de UNE 66181 y evita una respuesta doble. Cotejo curricular: ITIC Academy, bloque 33, E-learning y Sistemas de Información Geográfica, edición 2026.1. Cotejo curricular de calidad y servicios de formación virtual; encaje A1-73/A2-III-6. La vigencia y cancelación de versiones de UNE se comprueban directamente en el catálogo de AENOR, no se deducen del manual."
+      }
     },
     {
       "id": 7860,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué es PostScript?",
+      "texto": "En impresión digital, ¿qué es PostScript según Adobe?",
       "opciones": [
-        "Un formato de datos para las impresoras",
-        "Un estándar de comunicación con periféricos de impresión",
-        "Un lenguaje de especificación de documentos",
-        "Nada de lo anterior"
+        "Un formato propietario de datos binarios para impresoras, sin semántica de página.",
+        "Un estándar físico de comunicación por cable entre el ordenador y cualquier periférico de impresión.",
+        "Un lenguaje de descripción de páginas que expresa la apariencia del texto, los gráficos y las imágenes para su interpretación/renderizado.",
+        "Un protocolo de red que asigna direcciones IP a impresoras."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. PostScript es un lenguaje de descripción de páginas que especifica la apariencia de contenido gráfico/textual y puede ser interpretado por impresoras u otros dispositivos. El enunciado elimina la ambigüedad de opciones que también llamaban al PostScript “formato de datos” o lo reducían a comunicación con periféricos. Cotejo curricular: ITIC Academy, bloque 50, Videoconferencia, SSO y trabajo colaborativo, edición 2026.1. El apartado de gestión documental y formatos aporta el contexto curricular; encaje A1-83/A2-II-16. La naturaleza de PostScript como lenguaje de descripción de páginas se contrasta con Adobe.",
+      "clasificacion": {
+        "A1": [
+          "A1-83"
+        ],
+        "A2": [
+          "A2-II-16"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 50, Videoconferencia, SSO y trabajo colaborativo, edición 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El apartado de gestión documental y formatos aporta el contexto curricular; encaje A1-83/A2-II-16. La naturaleza de PostScript como lenguaje de descripción de páginas se contrasta con Adobe."
+      },
+      "etiquetas": [
+        "PostScript",
+        "lenguaje de descripción de páginas",
+        "impresión",
+        "Adobe"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://helpx.adobe.com/indesign/desktop/print/print-production-and-file-creation/about-postscript-and-eps-files.html",
+            "referencia": "Adobe, About PostScript and EPS files: PostScript es un lenguaje de descripción de páginas que define la apariencia del texto, gráficos e imágenes y puede ser interpretado por dispositivos de impresión."
+          },
+          {
+            "url": "https://www.adobe.com/jp/print/postscript/pdfs/PLRM.pdf",
+            "referencia": "Adobe, PostScript Language Reference, tercera edición: especificación del lenguaje de descripción de páginas PostScript."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TQCcsTrdpowIxSNiTOts2RvjpJ3AGeVn/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 50, Videoconferencia, SSO y trabajo colaborativo, edición 2026.1. El apartado de gestión documental y formatos aporta el contexto curricular; encaje A1-83/A2-II-16. La naturaleza de PostScript como lenguaje de descripción de páginas se contrasta con Adobe."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-83."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-16."
+          }
+        ],
+        "observaciones": "Corregida C. PostScript es un lenguaje de descripción de páginas que especifica la apariencia de contenido gráfico/textual y puede ser interpretado por impresoras u otros dispositivos. El enunciado elimina la ambigüedad de opciones que también llamaban al PostScript “formato de datos” o lo reducían a comunicación con periféricos. Cotejo curricular: ITIC Academy, bloque 50, Videoconferencia, SSO y trabajo colaborativo, edición 2026.1. El apartado de gestión documental y formatos aporta el contexto curricular; encaje A1-83/A2-II-16. La naturaleza de PostScript como lenguaje de descripción de páginas se contrasta con Adobe."
+      }
     },
     {
       "id": 7861,
