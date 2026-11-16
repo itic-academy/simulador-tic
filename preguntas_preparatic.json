@@ -400939,71 +400939,303 @@
       "id": 7556,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la opción correcta según el estándar TIA-942 respecto a la certificación 'Tier'",
+      "texto": "Según los niveles Rated de la certificación ANSI/TIA-942, ¿qué caracteriza principalmente a Rated-3?",
       "opciones": [
-        "La certificación 'Tier I' exige el mayor grado de disponibilidad, y 'Tier IV' el menor.",
-        "Para obtener la certificación 'Tier IV' los centros de datos deben lograr una disponibilidad del 99,995%.",
-        "Los centros de datos 'Tier III' y 'Tier IV' pueden interrumpir la actividad para realizar tareas rutinarias de mantenimiento.",
-        "Todas las clasificaciones 'Tier' obligan a incluir sistemas redundantes, suelos elevados y generadores auxiliares de energía."
+        "Infraestructura básica con poca o ninguna redundancia.",
+        "Infraestructura mantenible concurrentemente: se puede mantener cualquier componente único de energía, refrigeración o cableado sin interrumpir las operaciones de TI.",
+        "Infraestructura con tolerancia a fallos, que mantiene las operaciones automáticamente ante el fallo de un equipo.",
+        "Infraestructura con redundancia limitada y puntos únicos de fallo en los sistemas principales."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. TIA emplea «Rated-1» a «Rated-4», no los «Tier» de Uptime Institute. Rated-3 significa mantenibilidad concurrente; Rated-4 aporta tolerancia a fallos. La cifra 99,995 % no se atribuye aquí a TIA-942: las opciones confunden marcos de clasificación y la fuente oficial de TIA describe capacidades de infraestructura sin dar ese porcentaje. Se conserva la trazabilidad del enunciado original y se acota la pregunta al rating vigente. Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD, almacenamiento y virtualización, edición 2026. El temario incluye explícitamente A1-53 (servidores y CPD) y A2-C6 (dimensionamiento, centros de datos y alta disponibilidad), que contextualizan la clasificación de infraestructura; la definición Rated-3 se verifica en TIA.",
+      "clasificacion": {
+        "A1": [
+          "A1-53"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "TIA-942",
+        "centro de datos",
+        "Rated-3",
+        "mantenibilidad concurrente",
+        "certificación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://tiaonline.org/our-work/certifications/tia-942-certification/certifications-and-ratings/",
+            "referencia": "TIA, Certifications and Ratings: Rated-3 es mantenible concurrentemente; permite intervenir un componente único de energía, refrigeración o cableado sin interrumpir las operaciones de TI. Rated-4 es tolerante a fallos."
+          },
+          {
+            "url": "https://tiaonline.org/standard/tia-942/",
+            "referencia": "ANSI/TIA-942, página oficial de la revisión C: el estándar especifica requisitos de infraestructura de centros de datos; la certificación emplea ratings 1 a 4. La página de TIA no asigna a cada rating un porcentaje fijo de disponibilidad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD, almacenamiento y virtualización, edición 2026. El temario incluye explícitamente A1-53 (servidores y CPD) y A2-C6 (dimensionamiento, centros de datos y alta disponibilidad), que contextualizan la clasificación de infraestructura; la definición Rated-3 se verifica en TIA."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-53."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-IV-6."
+          }
+        ],
+        "observaciones": "Corregida B. TIA emplea «Rated-1» a «Rated-4», no los «Tier» de Uptime Institute. Rated-3 significa mantenibilidad concurrente; Rated-4 aporta tolerancia a fallos. La cifra 99,995 % no se atribuye aquí a TIA-942: las opciones confunden marcos de clasificación y la fuente oficial de TIA describe capacidades de infraestructura sin dar ese porcentaje. Se conserva la trazabilidad del enunciado original y se acota la pregunta al rating vigente. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD, almacenamiento y virtualización, edición 2026. El temario incluye explícitamente A1-53 (servidores y CPD) y A2-C6 (dimensionamiento, centros de datos y alta disponibilidad), que contextualizan la clasificación de infraestructura; la definición Rated-3 se verifica en TIA."
+      }
     },
     {
       "id": 7557,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un sistema UNIX, el comando lpstat -d:",
+      "texto": "En un sistema UNIX que utiliza CUPS, el comando `lpstat -d`:",
       "opciones": [
-        "Devuelve los trabajos de impresión pendientes.",
-        "Devuelve la impresora por defecto del sistema.",
+        "Lista los trabajos de impresión pendientes.",
+        "Muestra el destino (impresora o clase) predeterminado actual.",
         "Deshabilita la cola de impresión.",
-        "Devuelve el /dev de la cola de impresión."
+        "Muestra el dispositivo `/dev` asociado a la cola."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. En CUPS, `lpstat -d` muestra el destino de impresión predeterminado. La opción `-o` es la que lista trabajos; para evitar generalizar a todas las implementaciones UNIX, se especifica CUPS. Cotejo curricular: ITIC Academy, bloque 27: Sistemas operativos, edición 2026. El programa incluye A1-60 (UNIX-LINUX) y A2-T2/C1 (sistemas operativos y administración). La sintaxis concreta de lpstat se comprueba en CUPS.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UNIX",
+        "CUPS",
+        "lpstat",
+        "impresión",
+        "impresora predeterminada"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.cups.org/doc/options.html",
+            "referencia": "CUPS, Command-Line Printing and Options: la opción -d de lpstat informa de la impresora o clase predeterminada actual."
+          },
+          {
+            "url": "https://www.cups.org/doc/man-lpstat.html",
+            "referencia": "CUPS lpstat(1): -d muestra el destino predeterminado actual; -o lista los trabajos de impresión."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 27: Sistemas operativos, edición 2026. El programa incluye A1-60 (UNIX-LINUX) y A2-T2/C1 (sistemas operativos y administración). La sintaxis concreta de lpstat se comprueba en CUPS."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-60."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-II-2, A2-IV-1."
+          }
+        ],
+        "observaciones": "Corregida B. En CUPS, `lpstat -d` muestra el destino de impresión predeterminado. La opción `-o` es la que lista trabajos; para evitar generalizar a todas las implementaciones UNIX, se especifica CUPS. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 27: Sistemas operativos, edición 2026. El programa incluye A1-60 (UNIX-LINUX) y A2-T2/C1 (sistemas operativos y administración). La sintaxis concreta de lpstat se comprueba en CUPS."
+      }
     },
     {
       "id": 7558,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el sistema operativo Windows 10, la combinación de teclas Win+Pausa:",
+      "texto": "En Windows 10, ¿qué abre normalmente la combinación Win+Pausa (Win+Pause/Break)?",
       "opciones": [
-        "Bloquea la sesión de Windows.",
-        "No tiene efecto.",
-        "Abre la ventana lateral de notificaciones.",
-        "Abre la ventana con información Acerca de con las especificaciones del dispositivo y de Windows."
+        "Bloquea la sesión.",
+        "No tiene efecto en Windows 10.",
+        "Abre el panel lateral de notificaciones.",
+        "Muestra información del sistema: Propiedades del sistema en versiones anteriores o la página Acerca de en versiones posteriores."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. La combinación abre información del sistema. La denominación de la interfaz cambia según la compilación: Microsoft documenta el cuadro Propiedades del sistema y las versiones posteriores de Windows 10 redirigen la consulta del dispositivo a Configuración > Sistema > Acerca de. Se explicita la variación para que no parezca que existe una única ventana idéntica en todas las compilaciones. Cotejo curricular: ITIC Academy, bloque 27: Sistemas operativos, edición 2026. El temario incluye A1-61 (sistemas operativos Microsoft) y A2-T2 (Windows y administración), donde se contextualizan los atajos del sistema; la variación de interfaz se documenta con Microsoft. ITIC Academy, bloque 26: Hardware y dispositivos personales, edición 2026. A1-54 incluye PC y dispositivos personales; sirve como cotejo complementario de la pregunta de información del equipo.",
+      "clasificacion": {
+        "A1": [
+          "A1-54"
+        ],
+        "A2": [
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Windows 10",
+        "atajos de teclado",
+        "Win+Pause",
+        "Acerca de",
+        "Propiedades del sistema"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/answers/questions/2327211/where-is-the-instruction-manual",
+            "referencia": "Microsoft Learn Q&A reproduce la tabla de atajos de Windows: Windows+Pause abre el cuadro Propiedades del sistema. En versiones posteriores de Windows 10, la página de información del equipo se presenta también en Configuración > Sistema > Acerca de."
+          },
+          {
+            "url": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+            "referencia": "Microsoft Support, Keyboard shortcuts in Windows: referencia oficial de combinaciones de teclas de Windows; se documenta que los atajos y su destino dependen de las versiones admitidas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 27: Sistemas operativos, edición 2026. El temario incluye A1-61 (sistemas operativos Microsoft) y A2-T2 (Windows y administración), donde se contextualizan los atajos del sistema; la variación de interfaz se documenta con Microsoft."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 26: Hardware y dispositivos personales, edición 2026. A1-54 incluye PC y dispositivos personales; sirve como cotejo complementario de la pregunta de información del equipo."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-54."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-II-2."
+          }
+        ],
+        "observaciones": "Corregida D. La combinación abre información del sistema. La denominación de la interfaz cambia según la compilación: Microsoft documenta el cuadro Propiedades del sistema y las versiones posteriores de Windows 10 redirigen la consulta del dispositivo a Configuración > Sistema > Acerca de. Se explicita la variación para que no parezca que existe una única ventana idéntica en todas las compilaciones. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 27: Sistemas operativos, edición 2026. El temario incluye A1-61 (sistemas operativos Microsoft) y A2-T2 (Windows y administración), donde se contextualizan los atajos del sistema; la variación de interfaz se documenta con Microsoft. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 26: Hardware y dispositivos personales, edición 2026. A1-54 incluye PC y dispositivos personales; sirve como cotejo complementario de la pregunta de información del equipo."
+      }
     },
     {
       "id": 7559,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un cluster failover Windows Server 2016, ¿cómo se llama al recurso en el que se almacena la configuración del cluster?",
+      "texto": "En un clúster de conmutación por error de Windows Server 2016 configurado con quórum Node and Disk Majority, ¿qué recurso designado almacena una copia de la base de datos de configuración del clúster?",
       "opciones": [
-        "Quorum.",
-        "Cluster.",
-        "Config.",
-        "Failover."
+        "El testigo de disco del quórum.",
+        "El servicio Cluster como recurso de software.",
+        "El recurso de nombre de clúster.",
+        "El servicio Failover como recurso independiente."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. La pregunta original era ambigua al no especificar el tipo de quórum: la base de datos se mantiene en cada nodo, y solo el testigo de disco conserva una copia en el almacenamiento de quórum; los testigos de recurso compartido y de nube no guardan la base de datos completa. Se delimita al modo Node and Disk Majority de Windows Server 2016. Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD y virtualización, edición 2026. El programa cubre servidores y centros de proceso de datos (A1-53/A1-57) y disponibilidad/recuperación de infraestructuras (A2-C6); la semántica del testigo se verifica con Microsoft Learn.",
+      "clasificacion": {
+        "A1": [
+          "A1-53",
+          "A1-57"
+        ],
+        "A2": [
+          "A2-IV-6",
+          "A2-II-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Windows Server 2016",
+        "Failover Cluster",
+        "quorum",
+        "disk witness",
+        "base de datos de configuración"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/what-is-quorum-witness",
+            "referencia": "Microsoft Learn, What is a failover cluster quorum witness?: aplica explícitamente a Windows Server 2016; un testigo de disco almacena la base de datos de configuración del clúster, mientras que los testigos de recurso compartido y nube no conservan una copia completa."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/previous-versions/windows/desktop/mscs/cluster-database",
+            "referencia": "Microsoft, Cluster Database: cada nodo mantiene una copia sincronizada de la base de datos del clúster; el recurso de quórum también conserva una copia actualizada."
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/deploy-two-node-clustered-file-server",
+            "referencia": "Microsoft Learn: en el modo Node and Disk Majority, los nodos y el disco testigo contienen copias de la base de datos de configuración del clúster."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD y virtualización, edición 2026. El programa cubre servidores y centros de proceso de datos (A1-53/A1-57) y disponibilidad/recuperación de infraestructuras (A2-C6); la semántica del testigo se verifica con Microsoft Learn."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-53, A1-57."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-IV-6, A2-II-2."
+          }
+        ],
+        "observaciones": "Corregida A. La pregunta original era ambigua al no especificar el tipo de quórum: la base de datos se mantiene en cada nodo, y solo el testigo de disco conserva una copia en el almacenamiento de quórum; los testigos de recurso compartido y de nube no guardan la base de datos completa. Se delimita al modo Node and Disk Majority de Windows Server 2016. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD y virtualización, edición 2026. El programa cubre servidores y centros de proceso de datos (A1-53/A1-57) y disponibilidad/recuperación de infraestructuras (A2-C6); la semántica del testigo se verifica con Microsoft Learn."
+      }
     },
     {
       "id": 7560,
       "bloque": 0,
       "tema": 0,
-      "texto": "Se pretende desarrollar una nueva aplicación web utilizando tecnologías Adobe Flash. Como programador, indique la respuesta correcta:",
+      "texto": "En 2026 se plantea desarrollar una nueva aplicación web con Adobe Flash Player. ¿Cuál es la recomendación adecuada?",
       "opciones": [
-        "Estas tecnologías se están potenciando en la actualidad para desarrollo de aplicaciones web.",
-        "Estas tecnologías no presentan vulnerabilidades inherentes al modelo tecnológico empleado.",
-        "No hay alternativas mejores para el desarrollo de aplicaciones web.",
-        "Deben plantearse otras alternativas no obsoletas para el desarrollo de aplicaciones web."
+        "Adoptar Flash porque Adobe continúa publicando actualizaciones de seguridad.",
+        "Usar Flash, ya que no presenta riesgos inherentes ni ha sido retirado.",
+        "Usar Flash porque los estándares web actuales no ofrecen alternativas.",
+        "Descartar Flash Player: terminó su soporte y ejecución en 2021; se deben elegir tecnologías web actuales y mantenidas."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. Adobe finalizó el soporte de Flash Player el 31 de diciembre de 2020 y bloqueó su ejecución en Flash Player desde el 12 de enero de 2021; recomienda retirarlo. HTML5, WebGL y WebAssembly son alternativas abiertas viables mencionadas por Adobe, que no deben confundirse con una recomendación de migrar a un reemplazo propietario único. Cotejo curricular: ITIC Academy, bloque 30: Tecnologías de sistemas de información, edición 2026. Cotejo curricular directo con A1-77 (HTML, CSS, XML, navegadores y compatibilidad) y A2-D12 (aplicaciones web y tecnologías de desarrollo). El estado EOL de Flash se verifica separadamente en Adobe.",
+      "clasificacion": {
+        "A1": [
+          "A1-77"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Adobe Flash",
+        "fin de soporte",
+        "obsolescencia",
+        "HTML5",
+        "seguridad web"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.adobe.com/uk/products/flashplayer/end-of-life.html",
+            "referencia": "Adobe, Flash Player End of Life: el soporte terminó el 31 de diciembre de 2020 y el contenido Flash fue bloqueado en Flash Player desde el 12 de enero de 2021; Adobe recomienda desinstalarlo. La página menciona HTML5, WebGL y WebAssembly como alternativas abiertas viables."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 30: Tecnologías de sistemas de información, edición 2026. Cotejo curricular directo con A1-77 (HTML, CSS, XML, navegadores y compatibilidad) y A2-D12 (aplicaciones web y tecnologías de desarrollo). El estado EOL de Flash se verifica separadamente en Adobe."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-77."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-III-12."
+          }
+        ],
+        "observaciones": "Corregida D. Adobe finalizó el soporte de Flash Player el 31 de diciembre de 2020 y bloqueó su ejecución en Flash Player desde el 12 de enero de 2021; recomienda retirarlo. HTML5, WebGL y WebAssembly son alternativas abiertas viables mencionadas por Adobe, que no deben confundirse con una recomendación de migrar a un reemplazo propietario único. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 30: Tecnologías de sistemas de información, edición 2026. Cotejo curricular directo con A1-77 (HTML, CSS, XML, navegadores y compatibilidad) y A2-D12 (aplicaciones web y tecnologías de desarrollo). El estado EOL de Flash se verifica separadamente en Adobe."
+      }
     },
     {
       "id": 7561,
