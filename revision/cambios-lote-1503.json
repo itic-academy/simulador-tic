@@ -1,0 +1,379 @@
+{
+  "fecha": "2026-11-16",
+  "alcance": "IDs 7816–7820; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7816,
+      "original": {
+        "id": 7816,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo E-R de Chen, las interrelaciones entre entidades se clasifican en unarias, binarias o n-arias en función del:",
+        "opciones": [
+          "Grado",
+          "Tipo de correspondencia",
+          "Cardinalidad",
+          "Ninguna de las anteriores"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7816,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo entidad-relación de Chen, una interrelación es unaria, binaria, ternaria o n-aria según el número de tipos de entidad que participan. ¿Qué propiedad determina esa clasificación?",
+        "opciones": [
+          "El grado de la interrelación.",
+          "El tipo de correspondencia (1:1, 1:N o N:M).",
+          "La cardinalidad máxima de participación de una entidad.",
+          "La obligatoriedad de la participación."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Vigente A. El grado cuenta los tipos de entidad participantes en la relación: uno, dos, tres o n. No debe confundirse con la cardinalidad/tipo de correspondencia, que expresa restricciones sobre cuántas entidades pueden asociarse. Cotejo curricular: ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1. Cotejo del área de modelado de datos y bases de datos; la distinción precisa entre grado y cardinalidad se contrasta con la fuente académica citada.",
+        "clasificacion": {
+          "A1": [
+            "A1-63"
+          ],
+          "A2": [
+            "A2-III-4"
+          ],
+          "bloque_academia": "bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Cotejo del área de modelado de datos y bases de datos; la distinción precisa entre grado y cardinalidad se contrasta con la fuente académica citada."
+        },
+        "etiquetas": [
+          "modelo entidad-relación",
+          "Chen",
+          "interrelación",
+          "grado",
+          "cardinalidad"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1145/320434.320440",
+              "referencia": "Chen, P. P.-S. (1976), The Entity-Relationship Model—Toward a Unified View of Data, ACM Transactions on Database Systems 1(1), pp. 9–36. Artículo original que presenta el modelo E-R."
+            },
+            {
+              "url": "https://courses.cs.vt.edu/cs4604/Spring21/pdfs/2-ermodel1.pdf",
+              "referencia": "Virginia Tech, CS 4604, notas sobre el modelo E-R, apartado Degree and Roles: el grado es el número de tipos de entidad participantes; uno es unary, dos binary y tres ternary. Se diferencia del tipo de correspondencia/cardinalidad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1. Cotejo del área de modelado de datos y bases de datos; la distinción precisa entre grado y cardinalidad se contrasta con la fuente académica citada."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-63."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-III-4."
+            }
+          ],
+          "observaciones": "Vigente A. El grado cuenta los tipos de entidad participantes en la relación: uno, dos, tres o n. No debe confundirse con la cardinalidad/tipo de correspondencia, que expresa restricciones sobre cuántas entidades pueden asociarse. Cotejo curricular: ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1. Cotejo del área de modelado de datos y bases de datos; la distinción precisa entre grado y cardinalidad se contrasta con la fuente académica citada."
+        }
+      }
+    },
+    {
+      "id": 7817,
+      "original": {
+        "id": 7817,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Seleccionar la correcta:",
+        "opciones": [
+          "Tanto los router como los switches definen dominios de colisión y difusión",
+          "Los router definen dominios de colisión pero no de difusión",
+          "Los router definen dominios de difusión y de colisión",
+          "Los switches definen dominios de colisión y difusión"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7817,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una red Ethernet conmutada, ¿qué afirmación describe correctamente la separación de dominios de difusión?",
+        "opciones": [
+          "Un router o dispositivo de capa 3 separa dominios de difusión; cada VLAN delimita también su propio dominio de difusión.",
+          "Un switch de capa 2 reenvía por defecto las tramas de difusión entre todas las VLAN.",
+          "Un router de capa 3 reenvía las difusiones de capa 2 entre sus interfaces sin configuración adicional.",
+          "Un switch y un router son equivalentes y no delimitan dominios de difusión."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. El enunciado original “Seleccionar la correcta” permitía varias interpretaciones y mezclaba dos conceptos. Se sustituye por una pregunta inequívoca sobre dominios de difusión. Un switch tradicional separa los dominios de colisión por puerto en Ethernet compartida/half-duplex; un enlace conmutado full-duplex punto a punto es collisionless. Las VLAN delimitan dominios de difusión, y el tráfico entre VLAN requiere encaminamiento de capa 3. Cotejo curricular: ITIC Academy, bloque 42 Redes, versión 2026.1. Cubre las LAN, los dispositivos de interconexión, VLAN y redes locales (A1-118/A2-IV-8); la precisión sobre dominios se verifica con documentación técnica de Cisco.",
+        "clasificacion": {
+          "A1": [
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "bloque 42 Redes, versión 2026.1",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Cubre las LAN, los dispositivos de interconexión, VLAN y redes locales (A1-118/A2-IV-8); la precisión sobre dominios se verifica con documentación técnica de Cisco."
+        },
+        "etiquetas": [
+          "redes LAN",
+          "switch",
+          "router",
+          "dominio de difusión",
+          "dominio de colisión",
+          "VLAN"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/virtual-lans-vlan-trunking-protocol-vlans-vtp/23637-slow-int-vlan-connect.html",
+              "referencia": "Cisco, Common Causes of Slow IntraVLAN and InterVLAN Connectivity in Campus Switch Networks: un dispositivo conectado a puerto de switch en full-duplex tiene enlace punto a punto sin colisiones; cada VLAN constituye un dominio de difusión separado y el encaminamiento de capa 3 conecta VLAN."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, versión 2026.1. Cubre las LAN, los dispositivos de interconexión, VLAN y redes locales (A1-118/A2-IV-8); la precisión sobre dominios se verifica con documentación técnica de Cisco."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-118."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-8."
+            }
+          ],
+          "observaciones": "Corregida A. El enunciado original “Seleccionar la correcta” permitía varias interpretaciones y mezclaba dos conceptos. Se sustituye por una pregunta inequívoca sobre dominios de difusión. Un switch tradicional separa los dominios de colisión por puerto en Ethernet compartida/half-duplex; un enlace conmutado full-duplex punto a punto es collisionless. Las VLAN delimitan dominios de difusión, y el tráfico entre VLAN requiere encaminamiento de capa 3. Cotejo curricular: ITIC Academy, bloque 42 Redes, versión 2026.1. Cubre las LAN, los dispositivos de interconexión, VLAN y redes locales (A1-118/A2-IV-8); la precisión sobre dominios se verifica con documentación técnica de Cisco."
+        }
+      }
+    },
+    {
+      "id": 7818,
+      "original": {
+        "id": 7818,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es el propósito de la cláusula GROUP BY en SQL?:",
+        "opciones": [
+          "Agrupar registros en función de una condición específica.",
+          "Agregar registros duplicados en una tabla.",
+          "Agrupar filas en función de los valores de una o más columnas.",
+          "Ordenar los resultados de una consulta de manera ascendente."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7818,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una consulta SQL, ¿qué hace GROUP BY cuando se especifican una o más columnas?",
+        "opciones": [
+          "Agrupa las filas que comparten los mismos valores en esas columnas, normalmente para producir resultados por grupo y calcular agregados.",
+          "Inserta en la tabla una copia de cada registro repetido.",
+          "Ordena las filas por las columnas indicadas, en orden ascendente por defecto.",
+          "Filtra individualmente las filas antes de formar los grupos, función propia de WHERE."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. GROUP BY reúne filas con iguales valores en las columnas indicadas; puede acompañarse de funciones agregadas. El filtrado previo corresponde a WHERE, el filtrado de grupos a HAVING y la ordenación a ORDER BY. Cotejo curricular: ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1. Cubre el modelo relacional, SQL y la interoperabilidad entre SGBD (A1-64/A2-II-5); la semántica GROUP BY se comprueba con la documentación oficial de PostgreSQL.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Cubre el modelo relacional, SQL y la interoperabilidad entre SGBD (A1-64/A2-II-5); la semántica GROUP BY se comprueba con la documentación oficial de PostgreSQL."
+        },
+        "etiquetas": [
+          "SQL",
+          "GROUP BY",
+          "agrupación",
+          "filas",
+          "agregados"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.postgresql.org/docs/current/queries-table-expressions.html",
+              "referencia": "PostgreSQL Documentation, SELECT / GROUP BY: agrupa filas que comparten los mismos valores en las columnas enumeradas y produce una fila por grupo; se usa para reducir redundancia o calcular agregados."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1. Cubre el modelo relacional, SQL y la interoperabilidad entre SGBD (A1-64/A2-II-5); la semántica GROUP BY se comprueba con la documentación oficial de PostgreSQL."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-5."
+            }
+          ],
+          "observaciones": "Corregida A. GROUP BY reúne filas con iguales valores en las columnas indicadas; puede acompañarse de funciones agregadas. El filtrado previo corresponde a WHERE, el filtrado de grupos a HAVING y la ordenación a ORDER BY. Cotejo curricular: ITIC Academy, bloque 29 Bases de datos, SQL y modelado de datos, versión 2026.1. Cubre el modelo relacional, SQL y la interoperabilidad entre SGBD (A1-64/A2-II-5); la semántica GROUP BY se comprueba con la documentación oficial de PostgreSQL."
+        }
+      }
+    },
+    {
+      "id": 7819,
+      "original": {
+        "id": 7819,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Indique a partir de qué versión del sistema operativo Android se introdujo la posibilidad de que el usuario pudiera gestionar la concesión de permisos para cada aplicación:",
+        "opciones": [
+          "Lollipop",
+          "Jelly Bean",
+          "Marshmallow",
+          "KitKat"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7819,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Históricamente, ¿qué versión de Android introdujo para los permisos peligrosos el modelo por el que la persona usuaria podía concederlos o revocarlos individualmente durante la ejecución?",
+        "opciones": [
+          "Android 5.0 Lollipop.",
+          "Android 4.1 Jelly Bean.",
+          "Android 6.0 Marshmallow.",
+          "Android 4.4 KitKat."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Histórica C. Android 6.0 Marshmallow (API 23) introdujo la gestión de permisos peligrosos en tiempo de ejecución. Se conserva como hecho de una versión histórica, no como descripción exhaustiva del modelo de permisos de Android actual. Cotejo curricular: ITIC Academy, bloque 27 Sistemas operativos, temas 59–62, versión 2026. Incluye expresamente Android y sistemas operativos para dispositivos móviles (A1-62/A2-II-2); la fecha/versionado de los permisos se comprueba con Android Developers.",
+        "clasificacion": {
+          "A1": [
+            "A1-62"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "bloque 27 Sistemas operativos, temas 59–62, versión 2026",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Incluye expresamente Android y sistemas operativos para dispositivos móviles (A1-62/A2-II-2); la fecha/versionado de los permisos se comprueba con Android Developers."
+        },
+        "etiquetas": [
+          "Android",
+          "Android 6.0",
+          "Marshmallow",
+          "permisos de ejecución",
+          "permisos de aplicaciones"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://developer.android.com/about/versions/marshmallow/android-6.0-changes",
+              "referencia": "Android Developers, Android 6.0 Changes, Runtime Permissions: Marshmallow (Android 6.0, API 23) introdujo el modelo en que las personas pueden conceder o revocar individualmente permisos peligrosos para aplicaciones instaladas, durante la ejecución."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 27 Sistemas operativos, temas 59–62, versión 2026. Incluye expresamente Android y sistemas operativos para dispositivos móviles (A1-62/A2-II-2); la fecha/versionado de los permisos se comprueba con Android Developers."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-62."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-2."
+            }
+          ],
+          "observaciones": "Histórica C. Android 6.0 Marshmallow (API 23) introdujo la gestión de permisos peligrosos en tiempo de ejecución. Se conserva como hecho de una versión histórica, no como descripción exhaustiva del modelo de permisos de Android actual. Cotejo curricular: ITIC Academy, bloque 27 Sistemas operativos, temas 59–62, versión 2026. Incluye expresamente Android y sistemas operativos para dispositivos móviles (A1-62/A2-II-2); la fecha/versionado de los permisos se comprueba con Android Developers."
+        }
+      }
+    },
+    {
+      "id": 7820,
+      "original": {
+        "id": 7820,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Entre las características de AppLocker del sistema operativo Windows se encuentra:",
+        "opciones": [
+          "Cifrar archivos para impedir el acceso de un usuario determinado.",
+          "Crear reglas de excepción para impedir el uso de un proceso determinado.",
+          "Controla el comportamiento de las aplicaciones después de que estas se han ejecutado bloqueando usuarios o acciones especificadas.",
+          "Establecer una red virtual privada (VPN) entre los clientes y la red a que se conecta."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7820,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué mecanismo permite AppLocker para controlar qué aplicaciones pueden ejecutar determinados usuarios o grupos?",
+        "opciones": [
+          "Cifrar directamente los archivos para que un usuario concreto no pueda abrirlos.",
+          "Crear reglas de permitir o denegar por editor, ruta o hash, y configurar excepciones de archivos o carpetas a una regla.",
+          "Inspeccionar el comportamiento de cualquier proceso después de ejecutarse y bloquear acciones dentro de él.",
+          "Establecer por sí mismo una VPN entre los clientes y la red."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. AppLocker aplica control de ejecución mediante reglas por editor, ruta o hash sobre tipos de archivos y usuarios/grupos; una excepción excluye archivos o carpetas del alcance de la regla. No es cifrado de archivos, control de comportamiento en ejecución ni una VPN. Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, versión 2026. Cubre seguridad lógica y control de accesos (A1-61/A1-125/A2-II-13); la clasificación concreta de reglas y excepciones de AppLocker se verifica exclusivamente con Microsoft Learn.",
+        "clasificacion": {
+          "A1": [
+            "A1-61",
+            "A1-125"
+          ],
+          "A2": [
+            "A2-II-2",
+            "A2-II-13"
+          ],
+          "bloque_academia": "bloque 48 Seguridad en redes y en el nivel de aplicación, versión 2026",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Cubre seguridad lógica y control de accesos (A1-61/A1-125/A2-II-13); la clasificación concreta de reglas y excepciones de AppLocker se verifica exclusivamente con Microsoft Learn."
+        },
+        "etiquetas": [
+          "Windows",
+          "AppLocker",
+          "control de aplicaciones",
+          "reglas de editor",
+          "reglas de ruta",
+          "reglas hash",
+          "excepciones"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/applocker/working-with-applocker-rules",
+              "referencia": "Microsoft Learn, Working with AppLocker rules: AppLocker permite crear reglas de permitir o denegar según editor, ruta o hash de archivo y aplicarlas a usuarios/grupos y colecciones de ejecutables, scripts, instaladores Windows, DLL y aplicaciones empaquetadas."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/applocker/configure-exceptions-for-an-applocker-rule",
+              "referencia": "Microsoft Learn, Add exceptions for an AppLocker rule: las excepciones permiten excluir archivos o carpetas del alcance de una regla; el artículo describe su configuración en las propiedades de la regla."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, versión 2026. Cubre seguridad lógica y control de accesos (A1-61/A1-125/A2-II-13); la clasificación concreta de reglas y excepciones de AppLocker se verifica exclusivamente con Microsoft Learn."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-61, A1-125."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-2, A2-II-13."
+            }
+          ],
+          "observaciones": "Corregida B. AppLocker aplica control de ejecución mediante reglas por editor, ruta o hash sobre tipos de archivos y usuarios/grupos; una excepción excluye archivos o carpetas del alcance de la regla. No es cifrado de archivos, control de comportamiento en ejecución ni una VPN. Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y en el nivel de aplicación, versión 2026. Cubre seguridad lógica y control de accesos (A1-61/A1-125/A2-II-13); la clasificación concreta de reglas y excepciones de AppLocker se verifica exclusivamente con Microsoft Learn."
+        }
+      }
+    }
+  ]
+}
