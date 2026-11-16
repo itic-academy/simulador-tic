@@ -407175,71 +407175,297 @@
       "id": 7661,
       "bloque": 0,
       "tema": 0,
-      "texto": "El nivel 6 del modelo OSI es:",
+      "texto": "En el modelo de referencia OSI de ISO/ITU-T, ¿qué función corresponde a la capa 6?",
       "opciones": [
-        "Transporte",
-        "Presentación",
-        "Sesión",
-        "Aplicación"
+        "Transporte.",
+        "Presentación.",
+        "Sesión.",
+        "Aplicación."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Vigente B. ITU-T X.200 enumera explícitamente la capa de presentación como nivel 6; la de sesión es la 5 y la de aplicación la 7. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Contiene arquitectura OSI, capas, interfaces y protocolos; encaje directo con A1-111 y A2-IV-8.",
+      "clasificacion": {
+        "A1": [
+          "A1-111"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "OSI",
+        "modelo de referencia",
+        "capa de presentación"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.200-199407-I%21%21PDF-E&lang=s&type=items",
+            "referencia": "ITU-T X.200, cláusula 6.1.2 y figura 11: enumera Presentation como capa 6, entre Session (5) y Application (7)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Contiene arquitectura OSI, capas, interfaces y protocolos; encaje directo con A1-111 y A2-IV-8."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-111."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-II-8."
+          }
+        ],
+        "observaciones": "Vigente B. ITU-T X.200 enumera explícitamente la capa de presentación como nivel 6; la de sesión es la 5 y la de aplicación la 7. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Contiene arquitectura OSI, capas, interfaces y protocolos; encaje directo con A1-111 y A2-IV-8."
+      }
     },
     {
       "id": 7662,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el acceso a líneas y redes de comunicaciones, desde el bucle de abonado constituido por pares de cobre, la tecnología que permite separar el flujo de datos del tráfico telefónico en origen, es:",
+      "texto": "En un bucle de abonado de un par de cobre que transporta simultáneamente datos y voz de banda vocal, ¿qué tecnología de acceso se utiliza para separar ambos servicios por bandas de frecuencia?",
       "opciones": [
-        "RDSI",
-        "ADSL",
-        "RTC",
-        "TCP-IP"
+        "RDSI.",
+        "ADSL, con filtros/splitter que separan las bandas de voz y datos.",
+        "RTC analógica, sin una portadora de datos DSL.",
+        "TCP/IP, que es un protocolo de transporte sobre la línea."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. Se concreta que la separación se logra por bandas de frecuencia y filtros/splitter; ADSL es la tecnología DSL que permite coexistir con voz en el mismo par. El enunciado original atribuía la separación en origen a la tecnología sin mencionar el filtro, y “en origen” podía significar el extremo del abonado o de la central. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026. Cubre infraestructuras de acceso, medios y redes de telecomunicaciones; la recomendación ITU-T G.992.x se cita como fuente primaria para la coexistencia de ADSL y voz en un mismo par. ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye tecnologías de acceso y arquitectura de redes; apoyo curricular para A1-108/112 y A2-IV-8.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-112"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ADSL",
+        "bucle de abonado",
+        "par de cobre",
+        "separación voz/datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/T-REC-G.992.1",
+            "referencia": "ITU-T G.992.1 vigente: ADSL transmite sobre el par metálico y puede coexistir simultáneamente en ese mismo par con el servicio de banda vocal; especifica la interfaz física entre ATU-C y ATU-R."
+          },
+          {
+            "url": "https://www.itu.int/dms_pubrec/itu-t/rec/g/T-REC-G.992.3-200904-I%21%21SUM-HTM-E.htm",
+            "referencia": "ITU-T G.992.3: un par telefónico puede transportar simultáneamente bearers ADSL y el canal POTS/ISDN; la separación de bandas y filtros/splitter permiten coexistencia."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026. Cubre infraestructuras de acceso, medios y redes de telecomunicaciones; la recomendación ITU-T G.992.x se cita como fuente primaria para la coexistencia de ADSL y voz en un mismo par."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye tecnologías de acceso y arquitectura de redes; apoyo curricular para A1-108/112 y A2-IV-8."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-108, A1-112."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-IV-8."
+          }
+        ],
+        "observaciones": "Corregida B. Se concreta que la separación se logra por bandas de frecuencia y filtros/splitter; ADSL es la tecnología DSL que permite coexistir con voz en el mismo par. El enunciado original atribuía la separación en origen a la tecnología sin mencionar el filtro, y “en origen” podía significar el extremo del abonado o de la central. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026. Cubre infraestructuras de acceso, medios y redes de telecomunicaciones; la recomendación ITU-T G.992.x se cita como fuente primaria para la coexistencia de ADSL y voz en un mismo par. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye tecnologías de acceso y arquitectura de redes; apoyo curricular para A1-108/112 y A2-IV-8."
+      }
     },
     {
       "id": 7663,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación con las tecnologías Bluetooth y Zigbee, señale la respuesta INCORRECTA:",
+      "texto": "Sobre Zigbee y Bluetooth clásico BR/EDR, señale la afirmación incorrecta:",
       "opciones": [
-        "Zigbee es una tecnología más orientada a la domótica.",
-        "Zigbee tiene mayor consumo eléctrico que Bluetooth.",
-        "Zigbee tiene una velocidad inferior a Bluetooth.",
-        "Una subred Zigbee puede constar de más nodos que una piconet con Bluetooth."
+        "Zigbee se utiliza con frecuencia en domótica e IoT de baja potencia.",
+        "Zigbee consume siempre más energía que cualquier modalidad de Bluetooth, con independencia del dispositivo y de su configuración.",
+        "Zigbee ofrece tasas de transmisión inferiores a las de Bluetooth BR/EDR.",
+        "Una red Zigbee puede admitir cientos de nodos, mientras que una piconet BR/EDR admite hasta siete periféricos activos."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. El consumo energético no se puede ordenar universalmente sin especificar perfiles, modo, potencia, tráfico y hardware; Zigbee se define como solución de baja potencia. Para evitar comparar sin alcance una familia Zigbee completa con todas las modalidades Bluetooth, se especifica BR/EDR para rendimiento y límite de periféricos, y la opción incorrecta pasa a ser la generalización absoluta sobre consumo. Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, actualización 2026. Incluye Bluetooth, sistemas de acceso y dispositivos inalámbricos; el documento cubre el marco curricular A1-114 y A2-IV-11. La precisión comparativa de consumo se limita mediante especificación Bluetooth BR/EDR y guía Zigbee CSA.",
+      "clasificacion": {
+        "A1": [
+          "A1-114"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Zigbee",
+        "Bluetooth BR/EDR",
+        "redes de baja potencia",
+        "comparación de consumo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://csa-iot.org/all-solutions/zigbee/zigbee-faq/",
+            "referencia": "Connectivity Standards Alliance, FAQ oficial Zigbee: solución mesh de baja potencia; el tamaño lógico depende de la banda, tráfico y tolerancia a pérdidas, y la dirección puede soportar cientos de nodos."
+          },
+          {
+            "url": "https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core-62/out/en/br-edr-controller/baseband-specification.html",
+            "referencia": "Bluetooth Core Specification 6.2, BR/EDR Baseband, §8.6: permite hasta siete periféricos en modo activo en una piconet. No establece una regla universal de consumo energético frente a Zigbee."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, actualización 2026. Incluye Bluetooth, sistemas de acceso y dispositivos inalámbricos; el documento cubre el marco curricular A1-114 y A2-IV-11. La precisión comparativa de consumo se limita mediante especificación Bluetooth BR/EDR y guía Zigbee CSA."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-114."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-IV-11."
+          }
+        ],
+        "observaciones": "Corregida B. El consumo energético no se puede ordenar universalmente sin especificar perfiles, modo, potencia, tráfico y hardware; Zigbee se define como solución de baja potencia. Para evitar comparar sin alcance una familia Zigbee completa con todas las modalidades Bluetooth, se especifica BR/EDR para rendimiento y límite de periféricos, y la opción incorrecta pasa a ser la generalización absoluta sobre consumo. Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, actualización 2026. Incluye Bluetooth, sistemas de acceso y dispositivos inalámbricos; el documento cubre el marco curricular A1-114 y A2-IV-11. La precisión comparativa de consumo se limita mediante especificación Bluetooth BR/EDR y guía Zigbee CSA."
+      }
     },
     {
       "id": 7664,
       "bloque": 0,
       "tema": 0,
-      "texto": "En UMTS un terminal puede comunicarse simultáneamente a través de dos celdas diferentes. Esto:",
+      "texto": "En UTRA FDD (una modalidad de UMTS), el soft handover puede mantener al terminal conectado simultáneamente a varias celdas del conjunto activo. Esta característica:",
       "opciones": [
-        "Es cierto también en GSM",
-        "Es cierto también en GPRS",
-        "Es cierto sólo en UMTS",
-        "Ninguna de las anteriores"
+        "También caracteriza al handover GSM.",
+        "También caracteriza al handover GPRS.",
+        "Es propia del soft handover UTRA FDD entre las opciones anteriores; GSM/GPRS realizan cambio de celda mediante otros procedimientos.",
+        "No está soportada por UMTS."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. Se especifica UTRA FDD: 3GPP define soft handover con el UE conectado a varios puntos de acceso y enlaces de radio del conjunto activo. El enunciado original generalizaba a todo UMTS, aunque UTRA TDD no emplea ese soft handover; también se precisa que la diferencia no significa que GSM/GPRS carezcan de movilidad o handover. Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, actualización 2026. Desarrolla generaciones móviles y acceso radio; encaje en A1-123 y A2-IV-15. La condición concreta de soft handover se comprueba en 3GPP UTRA FDD.",
+      "clasificacion": {
+        "A1": [
+          "A1-123"
+        ],
+        "A2": [
+          "A2-IV-15"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "UMTS",
+        "UTRA FDD",
+        "soft handover",
+        "GSM",
+        "GPRS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.3gpp.org/ftp/tsg_ran/TSG_RAN/TSGR_11/Docs/PDFs/RP-010091.pdf",
+            "referencia": "3GPP TS 25.133 Release 99, §5.1: en UTRA FDD el soft handover mantiene al UE conectado a varios puntos de acceso UTRAN mediante el procedimiento ACTIVE SET UPDATE."
+          },
+          {
+            "url": "https://www.etsi.org/deliver/etsi_TS/123000_123099/123009/19.00.00_60/ts_123009v190000p.pdf",
+            "referencia": "3GPP TS 23.009 / ETSI TS 123 009, procedimientos de handover GSM: el cambio GSM se realiza mediante procedimientos de handover entre canales/celdas; no es el soft handover multi-enlace característico de UTRA FDD."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, actualización 2026. Desarrolla generaciones móviles y acceso radio; encaje en A1-123 y A2-IV-15. La condición concreta de soft handover se comprueba en 3GPP UTRA FDD."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-123."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-IV-15."
+          }
+        ],
+        "observaciones": "Corregida C. Se especifica UTRA FDD: 3GPP define soft handover con el UE conectado a varios puntos de acceso y enlaces de radio del conjunto activo. El enunciado original generalizaba a todo UMTS, aunque UTRA TDD no emplea ese soft handover; también se precisa que la diferencia no significa que GSM/GPRS carezcan de movilidad o handover. Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas y comunicaciones móviles, actualización 2026. Desarrolla generaciones móviles y acceso radio; encaje en A1-123 y A2-IV-15. La condición concreta de soft handover se comprueba en 3GPP UTRA FDD."
+      }
     },
     {
       "id": 7665,
       "bloque": 0,
       "tema": 0,
-      "texto": "La cabecera de IPv6, en términos absolutos, es más grande que la de IPv4:",
+      "texto": "Comparada con la cabecera IPv4 mínima, ¿qué tamaño tiene la cabecera base fija de IPv6, sin contar cabeceras de extensión?",
       "opciones": [
-        "Cierto, porque ocupa el doble de octetos",
-        "Falso, ya que en IPv6 se ha simplificado el formato de la cabecera",
-        "Cierto, porque el número de direcciones pasa de 32 a 128 bits",
-        "Falso, ya que la cabecera de IPv6 utiliza 8 campos y la de IPv4 utiliza 16 campos"
+        "40 octetos, el doble que los 20 octetos mínimos de IPv4.",
+        "20 octetos, pues IPv6 elimina todos los campos de dirección.",
+        "60 octetos en todos los paquetes IPv6.",
+        "40 bits, porque las direcciones IPv6 tienen 128 bits."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. La cabecera base IPv6 tiene longitud fija de 40 octetos. Se aclaró la referencia a la cabecera IPv4 mínima (20 octetos): la IPv4 puede medir hasta 60 octetos con opciones, por lo que la frase absoluta original podía ser falsa si se comparaba con una IPv4 con opciones. Las cabeceras de extensión IPv6 no se cuentan dentro de esos 40 octetos. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye IPv4/IPv6, cabecera IPv6, extensiones y transición; encaje directo en A1-115 y A2-II-8.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "IPv6",
+        "cabecera base",
+        "IPv4",
+        "tamaño de cabecera",
+        "RFC 8200"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+            "referencia": "IETF RFC 8200, §3: define la cabecera base IPv6 de longitud fija de 40 octetos; §8.3 compara esos 40 octetos con los 20 de la cabecera IPv4 mínima."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+            "referencia": "IETF RFC 791, §3.1: la cabecera IPv4 tiene longitud variable expresada en IHL; tamaño mínimo 20 octetos y máximo 60."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9098.html",
+            "referencia": "IETF RFC 9098, §2: confirma que IPv4 admite cabeceras de 20 a 60 octetos, mientras IPv6 separa la información opcional en cabeceras de extensión."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye IPv4/IPv6, cabecera IPv6, extensiones y transición; encaje directo en A1-115 y A2-II-8."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-115."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-II-8."
+          }
+        ],
+        "observaciones": "Corregida A. La cabecera base IPv6 tiene longitud fija de 40 octetos. Se aclaró la referencia a la cabecera IPv4 mínima (20 octetos): la IPv4 puede medir hasta 60 octetos con opciones, por lo que la frase absoluta original podía ser falsa si se comparaba con una IPv4 con opciones. Las cabeceras de extensión IPv6 no se cuentan dentro de esos 40 octetos. Cotejo curricular: ITIC Academy, bloque 43 Protocolos, edición 2026. Incluye IPv4/IPv6, cabecera IPv6, extensiones y transición; encaje directo en A1-115 y A2-II-8."
+      }
     },
     {
       "id": 7666,
