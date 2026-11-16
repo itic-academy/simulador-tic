@@ -1,8 +1,22 @@
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1478 (IDs 7691–7695). Acumulado: **7.690** preguntas examinadas individualmente; **7.562 verificadas** (1.457 vigentes, 5.564 corregidas y 541 históricas); **128 pendientes documentadas** (48 de fuente y 80 de ambigüedad); **4.433 sin revisar individualmente**. Una pregunta marcada como pendiente sí fue examinada y su bloqueo queda registrado; el inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1479 (IDs 7696–7700). Acumulado: **7.695** preguntas examinadas individualmente; **7.567 verificadas** (1.457 vigentes, 5.569 corregidas y 541 históricas); **128 pendientes documentadas** (48 de fuente y 80 de ambigüedad); **4.428 sin revisar individualmente**. Una pregunta marcada como pendiente sí fue examinada y su bloqueo queda registrado; el inventario estructural no equivale a revisión de contenido.
 
 
 
 
+
+## Lote 1479 — 16 de noviembre de 2026
+
+Revisión individual de las preguntas 7696–7700: funciones de sesión OSI, alcance de IEEE 802.16, estándar VLAN, lectura de una ruta LDAP/Active Directory y arquitectura de red móvil. Se corrigieron formulaciones ambiguas y distractores que podían ser ciertos bajo alguna generación o despliegue.
+
+- **7696 — servicios OSI de sesión:** **corregida C**. Sincronización, control del diálogo y gestión de tokens corresponden a sesión. La representación y negociación de sintaxis abstractas corresponde a presentación según ITU-T X.200.
+- **7697 — IEEE 802.16:** **corregida A**. Es acceso inalámbrico de banda ancha fijo/móvil, incluido punto a multipunto para redes metropolitanas WirelessMAN; se distinguen las redes PAN de corto alcance.
+- **7698 — VLAN:** **corregida A (IEEE 802.1Q)**. Se sustituyó “solventar problemas de VLAN” por una pregunta precisa sobre la norma que especifica puentes VLAN y redes puenteadas. La edición 802.1Q-2022 figura activa en IEEE.
+- **7699 — DN de Active Directory:** **corregida C**. El DN textual enumera primero la entrada más específica y después sus superiores; cn=Pepe está bajo ou=departamentoB, que cuelga de ou=departamentoA. Se aclaró que el CN no demuestra que sea una OU ni que un usuario deba estar bajo cn=Users.
+- **7700 — telefonía móvil celular:** **corregida C**. Es una red de acceso radio organizado en celdas conectadas con un núcleo. Se precisó que el alcance cambia entre macroestaciones y small cells y que no hay velocidad universal; los distractores absolutos ya no se confunden con afirmaciones ciertas para ciertos despliegues.
+
+Cotejo curricular con ITIC Academy 2026: bloque 42 Redes y comunicaciones para OSI, WirelessMAN, VLAN y redes móviles (A1-111/112/118/123; A2-II-8/IV-8/IV-11/IV-15); bloque 45 Correo, mensajería y servicios de directorio para Active Directory/LDAP (A1-80/122; A2-II-2). Contraste con los programas oficiales A1 BOE-A-2025-25938 y A2 BOE-A-2025-26262.
+
+Fuentes primarias: [ITU-T X.200, modelo OSI](https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.200-199407-I%21%21PDF-E&lang=e&type=items), [IEEE SA, P802.16, acceso inalámbrico de banda ancha](https://standards.ieee.org/ieee/802.16/11951/), [IEEE 802.16 Working Group, WirelessMAN](https://grouper.ieee.org/groups/802/16/), [IEEE SA, IEEE 802.1Q-2022](https://standards.ieee.org/ieee/802.1q/10323/), [IETF RFC 4514, representación textual de DN](https://www.rfc-editor.org/rfc/rfc4514.html), [IETF RFC 4512, nombres relativos de entradas LDAP](https://www.rfc-editor.org/rfc/rfc4512.html), [ITU, estaciones móviles y conexión al núcleo](https://www.itu.int/net4/mob/ituemf/en/emfguide_m.html), [ITU-T L.1210 (2025), macroceldas y small cells](https://www.itu.int/epublications/publication/itu-t-l-1210-2025-12-sustainable-power-feeding-solutions-for-imt-2020-networks), [convocatoria A1](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [convocatoria A2](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
 ## Lote 1478 — 16 de noviembre de 2026
 
 Revisión individual de las preguntas 7691–7695. Se aclaró la disciplina del modelo de despliegue en RUP; se identificó como histórica la taxonomía de cambios de ISO/IEC 20000-1:2011; se revisaron routers WAN, una cuestión de afirmación falsa que contenía más de un error, y los mensajes ICMP de error.
