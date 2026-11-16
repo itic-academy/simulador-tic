@@ -1,0 +1,33 @@
+const apply = require('./aplicar-lote.cjs');
+
+const xapi = 'https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-About.md';
+const ley4042 = 'https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566';
+const hacienda = 'https://sede.hacienda.gob.es/es-es/paginas/aaSellosCSV';
+const pyport = 'https://docs.python.org/3.12/howto/pyporting.html';
+const pylex = 'https://docs.python.org/3/reference/lexical_analysis.html';
+const rfc5208 = 'https://www.rfc-editor.org/rfc/rfc5208.html';
+const rfc8017 = 'https://www.rfc-editor.org/rfc/rfc8017.html';
+const canvas = 'https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/canvas';
+
+const records = [
+  [7841, [73], ['III-6'], ['xAPI', 'Experience API', 'e-learning', 'learning records'], [
+    { url: xapi, referencia: 'Advanced Distributed Learning Initiative, Experience API (xAPI) specification: permite intercambiar Learning Records, que registran experiencias de aprendizaje, entre proveedores y servicios compatibles.' }
+  ], { texto: '¿Qué describe con mayor precisión xAPI (Experience API) en el ámbito del aprendizaje digital?', opciones: ['Una API de navegador para instalar extensiones del navegador.','Una API de Java para leer y escribir cualquier archivo XML.','Una especificación para registrar e intercambiar experiencias de aprendizaje mediante Learning Records entre sistemas compatibles.','Una biblioteca JavaScript que implementa exclusivamente el patrón modelo-vista-controlador.'], respuesta_correcta: 2 }, 'Corregida C. xAPI es una especificación para registrar e intercambiar experiencias de aprendizaje; no es una API genérica de XML ni un framework de interfaz. Los registros se almacenan/intercambian en el ecosistema de proveedores y Learning Record Stores conformes.', 'corregida'],
+  [7842, [80], ['I-9'], ['Ley 40/2015', 'actuación administrativa automatizada', 'sello electrónico', 'CSV', 'firma electrónica'], [
+    { url: ley4042, referencia: 'Ley 40/2015, artículo 42: para la actuación administrativa automatizada contempla sistemas de firma basados en sello electrónico de la Administración o código seguro de verificación (CSV), en los términos legales.' },
+    { url: hacienda, referencia: 'Ministerio de Hacienda, Actuaciones automatizadas, sellos y CSV: resume los dos supuestos del artículo 42 de la Ley 40/2015.' }
+  ], { texto: 'Conforme al artículo 42 de la Ley 40/2015, ¿qué sistemas pueden emplearse como firma electrónica en una actuación administrativa automatizada?', opciones: ['Un sello electrónico basado en certificado, en los términos legales.','Un código seguro de verificación (CSV) vinculado a la Administración y verificable en su sede, en los términos legales.','Cualquiera de los dos sistemas anteriores, según se establezca para la actuación.','Ninguno: la actuación automatizada siempre requiere firma manuscrita de un empleado público.'], respuesta_correcta: 2 }, 'Corregida C. El artículo 42 contempla como sistemas de firma tanto el sello electrónico como el CSV, cada uno sujeto a sus condiciones legales; no significa que deban utilizarse ambos simultáneamente en toda actuación.', 'corregida'],
+  [7843, [], ['II-3'], ['Python', 'lenguajes de programación', 'Python 2', 'Python 3', 'indentación'], [
+    { url: pyport, referencia: 'Python Software Foundation, Porting Python 2 Code to Python 3: el cambio de la rama 2 a 3 exige portar/revisar código; no existe compatibilidad plena y automática.' },
+    { url: pylex, referencia: 'Python Language Reference, Lexical analysis: la indentación determina bloques INDENT/DEDENT; la continuación implícita dentro de delimitadores permite que la sangría de líneas continuadas no sea significativa.' }
+  ], { texto: 'Señale la afirmación FALSA acerca de Python:', opciones: ['Admite programación orientada a objetos y estructurada.','Todo programa escrito para Python 2 es plenamente compatible con Python 3 sin cambios.','La indentación delimita bloques sintácticos; en continuaciones implícitas dentro de delimitadores, la sangría de las líneas continuadas no determina el bloque.','Admite técnicas de metaprogramación.'], respuesta_correcta: 1 }, 'Corregida B. Python 2 y Python 3 no son plenamente compatibles entre sí; la documentación oficial proporciona una guía de portabilidad que implica adaptar código. Se afinó la afirmación sobre indentación: esta define bloques, aunque la indentación de líneas dentro de una expresión entre delimitadores no es significativa.', 'corregida'],
+  [7844, [80, 81], ['IV-12'], ['PKCS', 'PKCS #8', 'RFC 5208', 'private key information', 'claves privadas'], [
+    { url: rfc5208, referencia: 'RFC 5208, PKCS #8: Private-Key Information Syntax Standard, define las estructuras PrivateKeyInfo y EncryptedPrivateKeyInfo para representar información de clave privada y su forma cifrada.' },
+    { url: rfc8017, referencia: 'RFC 8017, PKCS #1: especificación criptográfica RSA, incluidos formatos de claves y operaciones RSA.' }
+  ], { texto: '¿Qué define PKCS #8 (RFC 5208)?', opciones: ['Las especificaciones criptográficas de RSA y sus operaciones.','El formato de negociación de claves Diffie–Hellman PKCS #3.','Una sintaxis para representar información de claves privadas y, opcionalmente, su envoltura cifrada.','Un único algoritmo de cifrado simétrico que cifra directamente cualquier clave privada sin formato ni metadatos.'], respuesta_correcta: 2 }, 'Corregida C. PKCS #8 define una sintaxis de información de clave privada y una estructura EncryptedPrivateKeyInfo. No es por sí mismo “cifrado con clave privada” ni un algoritmo de cifrado; para el cifrado de la estructura se identifican un algoritmo y los datos cifrados.', 'corregida'],
+  [7845, [77], ['II-9'], ['HTML', 'canvas', 'gráficos rasterizados', 'JavaScript', 'SVG'], [
+    { url: canvas, referencia: 'MDN Web Docs, elemento HTML canvas: ofrece una superficie bitmap para dibujar gráficos y animaciones mediante Canvas API/WebGL desde scripts; SVG es una alternativa vectorial distinta.' }
+  ], { texto: '¿Qué elemento HTML proporciona una superficie bitmap en la que un script puede dibujar gráficos o animaciones?', opciones: ['<svg>, que describe gráficos vectoriales mediante elementos.','<nav>, que identifica una sección de navegación.','<canvas>, que expone una superficie bitmap a la Canvas API o WebGL.','<graphic>, elemento HTML estándar para dibujar escenas.'], respuesta_correcta: 2 }, 'Corregida C. Canvas es la superficie bitmap programable por scripts. SVG también permite gráficos vectoriales dinámicos mediante scripts, por lo que el enunciado original, que preguntaba por cualquier gráfico dinámico, no separaba ambos mecanismos.', 'corregida']
+];
+
+apply({ numero: '1508', fecha: '2026-11-16', records });
