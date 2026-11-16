@@ -396799,71 +396799,302 @@
       "id": 7486,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un programador tiene que codificar un procedimiento que actúa sobre un conjunto de datos de N elementos. Para ello conoce tres posibles algoritmos: Alfa, Beta y Gamma. El algoritmo Alfa tiene un rendimiento en tiempo de Nlog10N (logaritmo decimal). Beta rinde 2^N (dos elevado a N), y Gamma produce un rendimiento igual a N(N-1)/2. ¿Cuál de los tres algoritmos es más eficiente si el resto de condiciones son idénticas?",
+      "texto": "Suponiendo costes constantes comparables y un tamaño de entrada suficientemente grande, ¿qué algoritmo tiene mejor orden de crecimiento temporal entre T₁(n)=n·log₁₀(n), T₂(n)=2ⁿ y T₃(n)=n(n−1)/2?",
       "opciones": [
-        "Alfa.",
-        "Beta.",
-        "Gamma.",
-        "No se puede determinar."
+        "Alfa (n·log₁₀ n).",
+        "Beta (2ⁿ).",
+        "Gamma (n(n−1)/2).",
+        "No se puede determinar el orden asintótico."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. El ítem original no indicaba que se comparaba el crecimiento asintótico ni precisaba el tamaño de la entrada; la eficiencia en tiempo real también depende de constantes, máquina e implementación. Para n grande, n·log₁₀ n pertenece a Θ(n log n), frente a Θ(n²) para Gamma y crecimiento exponencial 2ⁿ para Beta; la base fija del logaritmo solo cambia una constante. Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo de encaje con fundamentos de análisis/construcción del software y con el programa oficial A2-III-5 (estrategias de diseño y análisis de algoritmos); el temario de academia se usa como mapa curricular, y la comparación de cotas se comprueba independientemente con MIT OpenCourseWare.",
+      "clasificacion": {
+        "A1": [],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026: Cotejo de encaje con fundamentos de análisis/construcción del software y con el programa oficial A2-III-5 (estrategias de diseño y análisis de algoritmos); el temario de academia se usa como mapa curricular, y la comparación de cotas se comprueba independientemente con MIT OpenCourseWare.",
+        "estado": "revisada",
+        "nota": "Cotejo de Academy registrado. Cotejo de encaje con fundamentos de análisis/construcción del software y con el programa oficial A2-III-5 (estrategias de diseño y análisis de algoritmos); el temario de academia se usa como mapa curricular, y la comparación de cotas se comprueba independientemente con MIT OpenCourseWare."
+      },
+      "etiquetas": [
+        "complejidad algorítmica",
+        "notación asintótica",
+        "N log N",
+        "exponencial",
+        "cuadrática"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://ocw.mit.edu/courses/6-046j-introduction-to-algorithms-sma-5503-fall-2005/4d7515b05934929969bfa586e76adb15_lec1.pdf",
+            "referencia": "MIT OpenCourseWare, 6.046J Introduction to Algorithms, Lecture 1: la notación asintótica compara el crecimiento del coste con el tamaño de entrada; para tamaños suficientemente grandes, una función Θ(n log n) crece más lentamente que Θ(n²) y que 2ⁿ. Las constantes y casos pequeños afectan tiempos reales."
+          },
+          {
+            "url": "https://web.mit.edu/16.070/www/lecture/big_o.pdf",
+            "referencia": "MIT, Big O notation: formaliza el orden de crecimiento de costes en función del tamaño de entrada y la diferencia entre coste exacto y cota asintótica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo de encaje con fundamentos de análisis/construcción del software y con el programa oficial A2-III-5 (estrategias de diseño y análisis de algoritmos); el temario de academia se usa como mapa curricular, y la comparación de cotas se comprueba independientemente con MIT OpenCourseWare."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; correspondencia curricular con sin tema específico A1 asignado."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; correspondencia curricular con A2-III-5."
+          }
+        ],
+        "observaciones": "Corregida A. El ítem original no indicaba que se comparaba el crecimiento asintótico ni precisaba el tamaño de la entrada; la eficiencia en tiempo real también depende de constantes, máquina e implementación. Para n grande, n·log₁₀ n pertenece a Θ(n log n), frente a Θ(n²) para Gamma y crecimiento exponencial 2ⁿ para Beta; la base fija del logaritmo solo cambia una constante. Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo de encaje con fundamentos de análisis/construcción del software y con el programa oficial A2-III-5 (estrategias de diseño y análisis de algoritmos); el temario de academia se usa como mapa curricular, y la comparación de cotas se comprueba independientemente con MIT OpenCourseWare."
+      }
     },
     {
       "id": 7487,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué características son propias de la programación orientada a objetos?",
+      "texto": "¿Qué conjunto reúne los cuatro conceptos comúnmente considerados fundamentales en la programación orientada a objetos?",
       "opciones": [
-        "La modularidad, el principio de ocultación y la reutilización.",
-        "La abstracción, el anidamiento y la parametrización.",
-        "El encapsulamiento, la herencia y el polimorfismo.",
-        "Ninguna de las respuestas es correcta."
+        "Modularidad, ocultación de información y reutilización, sin abstracción ni herencia.",
+        "Abstracción, encapsulación, herencia y polimorfismo.",
+        "Anidamiento, parametrización, compilación y modularidad.",
+        "Ninguna de las anteriores."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Corregida B. La opción A original también describía propiedades vinculadas a OOP (modularidad, ocultación y reutilización), así que el ítem admitía más de una respuesta razonable. Se pregunta ahora por el conjunto de cuatro conceptos fundamentales y se distingue de esos beneficios/características generales. Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo curricular de diseño orientado a objetos (A1-93/A2-II-3/III-9); los conceptos y principios se contrastan con documentación de Oracle y Eiffel.",
+      "clasificacion": {
+        "A1": [
+          "A1-93"
+        ],
+        "A2": [
+          "A2-II-3",
+          "A2-III-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026: Cotejo curricular de diseño orientado a objetos (A1-93/A2-II-3/III-9); los conceptos y principios se contrastan con documentación de Oracle y Eiffel.",
+        "estado": "revisada",
+        "nota": "Cotejo de Academy registrado. Cotejo curricular de diseño orientado a objetos (A1-93/A2-II-3/III-9); los conceptos y principios se contrastan con documentación de Oracle y Eiffel."
+      },
+      "etiquetas": [
+        "programación orientada a objetos",
+        "abstracción",
+        "encapsulación",
+        "herencia",
+        "polimorfismo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.oracle.com/java/technologies/object-oriented.html",
+            "referencia": "Oracle, The Java Language Environment: expone abstracción, encapsulación, modularidad y polimorfismo como conceptos centrales de la orientación a objetos y explica la reutilización mediante herencia."
+          },
+          {
+            "url": "https://www.oracle.com/topics/technologies/newtojava/javaterminology-glossary.html",
+            "referencia": "Oracle Java Technology Terminology: enumera como conceptos primarios de OOP abstracción, encapsulación, polimorfismo y herencia."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo curricular de diseño orientado a objetos (A1-93/A2-II-3/III-9); los conceptos y principios se contrastan con documentación de Oracle y Eiffel."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; correspondencia curricular con A1-93."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; correspondencia curricular con A2-II-3, A2-III-9."
+          }
+        ],
+        "observaciones": "Corregida B. La opción A original también describía propiedades vinculadas a OOP (modularidad, ocultación y reutilización), así que el ítem admitía más de una respuesta razonable. Se pregunta ahora por el conjunto de cuatro conceptos fundamentales y se distingue de esos beneficios/características generales. Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo curricular de diseño orientado a objetos (A1-93/A2-II-3/III-9); los conceptos y principios se contrastan con documentación de Oracle y Eiffel."
+      }
     },
     {
       "id": 7488,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el diseño de interfaces de usuario ha de tenerse en cuenta la Ley de Hick según la cual...",
+      "texto": "Según la ley de Hick-Hyman, en una tarea de elección el tiempo de decisión tiende a aumentar aproximadamente con…",
       "opciones": [
-        "El tiempo que el usuario requiere para alcanzar a pulsar un objetivo en la interfaz depende de una relación logarítmica entre su superficie y la distancia a la que se encuentra.",
-        "El tiempo que se tarda en tomar una decisión aumenta a medida que se incrementa el número de alternativas.",
-        "a) y b) son correctas.",
-        "La ley de Hick no aplica para el diseño de interfaces de usuario."
+        "La distancia al objetivo y la relación entre esa distancia y su anchura, según la ley de Fitts.",
+        "El logaritmo del número de alternativas disponibles, bajo las condiciones del modelo.",
+        "El tamaño del botón únicamente, sin relación con la tarea de elección.",
+        "Ninguna relación con el número o la incertidumbre de las alternativas."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. Hick-Hyman modela el tiempo de elección en función de la información/número de alternativas; la relación entre tiempo de apuntado, distancia y tamaño del objetivo corresponde a Fitts. La pregunta original mezclaba en el mismo enunciado ambas leyes y mencionaba «alcanzar a pulsar», haciendo plausible la alternativa Fitts. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026. Cotejo general de diseño de interfaces y tecnologías de cliente; la correspondencia oficial específica es A1-44/A2-III-14 (usabilidad/UX). La diferencia Hick-Hyman/Fitts se valida con fuentes de HCI. Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo curricular de diseño de interfaces de usuario y prototipos; no se atribuye al material una fórmula psicológica concreta.",
+      "clasificacion": {
+        "A1": [
+          "A1-44"
+        ],
+        "A2": [
+          "A2-III-14"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026: Cotejo general de diseño de interfaces y tecnologías de cliente; la correspondencia oficial específica es A1-44/A2-III-14 (usabilidad/UX). La diferencia Hick-Hyman/Fitts se valida con fuentes de HCI. ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026: Cotejo curricular de diseño de interfaces de usuario y prototipos; no se atribuye al material una fórmula psicológica concreta.",
+        "estado": "revisada",
+        "nota": "Cotejo de Academy registrado. Cotejo general de diseño de interfaces y tecnologías de cliente; la correspondencia oficial específica es A1-44/A2-III-14 (usabilidad/UX). La diferencia Hick-Hyman/Fitts se valida con fuentes de HCI. Cotejo curricular de diseño de interfaces de usuario y prototipos; no se atribuye al material una fórmula psicológica concreta."
+      },
+      "etiquetas": [
+        "Ley de Hick-Hyman",
+        "Ley de Fitts",
+        "tiempo de decisión",
+        "alternativas",
+        "interfaz"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://people.engr.tamu.edu/pcr/courses/csce431/winter20/UniversalPrinciplesOfDesign.pdf",
+            "referencia": "Lidwell, Holden y Butler, Universal Principles of Design: formula la Ley de Hick como aumento del tiempo de elección al crecer el número de alternativas igualmente probables; referencia los trabajos experimentales de Hick (1952) y Hyman (1953)."
+          },
+          {
+            "url": "https://www.yorku.ca/mack/hhci2018.html",
+            "referencia": "York University, Human-Computer Interaction: distingue Hick-Hyman (tiempo de elección) de Fitts (tiempo de apuntado según distancia y tamaño del objetivo), ambos aplicables al diseño de interfaces."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026. Cotejo general de diseño de interfaces y tecnologías de cliente; la correspondencia oficial específica es A1-44/A2-III-14 (usabilidad/UX). La diferencia Hick-Hyman/Fitts se valida con fuentes de HCI."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo curricular de diseño de interfaces de usuario y prototipos; no se atribuye al material una fórmula psicológica concreta."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; correspondencia curricular con A1-44."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; correspondencia curricular con A2-III-14."
+          }
+        ],
+        "observaciones": "Corregida B. Hick-Hyman modela el tiempo de elección en función de la información/número de alternativas; la relación entre tiempo de apuntado, distancia y tamaño del objetivo corresponde a Fitts. La pregunta original mezclaba en el mismo enunciado ambas leyes y mencionaba «alcanzar a pulsar», haciendo plausible la alternativa Fitts. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026. Cotejo general de diseño de interfaces y tecnologías de cliente; la correspondencia oficial específica es A1-44/A2-III-14 (usabilidad/UX). La diferencia Hick-Hyman/Fitts se valida con fuentes de HCI. Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo curricular de diseño de interfaces de usuario y prototipos; no se atribuye al material una fórmula psicológica concreta."
+      }
     },
     {
       "id": 7489,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a la construcción de un prototipo podemos decir:",
+      "texto": "¿Qué propiedad caracteriza específicamente a un prototipo evolutivo de software?",
       "opciones": [
-        "Es el proceso que facilita al programador la creación del modelo de software a construir",
-        "Puede adoptar la forma de un 'prototipo que funcione' que describa la interacción hombre-máquina, de forma que facilite al usuario la comprensión de cómo funcionará tal trabajo",
-        "Puede adoptar la forma de 'un prototipo que funcione' que implementa algunos subconjuntos de la funcionalidad requerida al software deseado",
-        "Todas las respuestas anteriores son ciertas"
+        "Es exclusivamente una descripción documental que nunca se modifica.",
+        "Debe implementar desde el primer momento toda la funcionalidad final, completa y lista para producción.",
+        "Es una implementación funcional inicial, quizá parcial, que se revisa y amplía iterativamente hasta evolucionar hacia el sistema final.",
+        "Es un modelo de interfaz que se descarta necesariamente antes del desarrollo."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 2,
+      "comentarios": "Corregida C. Las afirmaciones originales podían ser ciertas para distintos usos de prototipos (mockups de interfaz, simulaciones o implementaciones parciales), por lo que «todas» era defendible. Se delimita la pregunta al prototipo evolutivo: funcionalidad inicial parcial que se refina hasta formar parte del producto final, a diferencia del desechable. Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo curricular de prototipado e interacción durante análisis/diseño (A1-94/A2-III-3); la diferencia entre prototipo evolutivo y desechable se contrasta con NIST y SEI.",
+      "clasificacion": {
+        "A1": [
+          "A1-94"
+        ],
+        "A2": [
+          "A2-III-3"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026: Cotejo curricular de prototipado e interacción durante análisis/diseño (A1-94/A2-III-3); la diferencia entre prototipo evolutivo y desechable se contrasta con NIST y SEI.",
+        "estado": "revisada",
+        "nota": "Cotejo de Academy registrado. Cotejo curricular de prototipado e interacción durante análisis/diseño (A1-94/A2-III-3); la diferencia entre prototipo evolutivo y desechable se contrasta con NIST y SEI."
+      },
+      "etiquetas": [
+        "prototipado",
+        "prototipo evolutivo",
+        "funcionalidad parcial",
+        "requisitos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-148.pdf",
+            "referencia": "NIST Special Publication 500-148, Application Software Prototyping and Fourth Generation Languages: describe el prototipado evolutivo como técnica cuyo prototipo se refina y transforma progresivamente en el sistema final; prototipos pueden simular funcionalidad para aclarar requisitos."
+          },
+          {
+            "url": "https://www.sei.cmu.edu/blog/prototyping-for-developing-big-data-systems/",
+            "referencia": "Software Engineering Institute, Carnegie Mellon University: distingue prototipos desechables de prototipos evolutivos, donde componentes funcionales se refinan incrementalmente hacia el producto."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo curricular de prototipado e interacción durante análisis/diseño (A1-94/A2-III-3); la diferencia entre prototipo evolutivo y desechable se contrasta con NIST y SEI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; correspondencia curricular con A1-94."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; correspondencia curricular con A2-III-3."
+          }
+        ],
+        "observaciones": "Corregida C. Las afirmaciones originales podían ser ciertas para distintos usos de prototipos (mockups de interfaz, simulaciones o implementaciones parciales), por lo que «todas» era defendible. Se delimita la pregunta al prototipo evolutivo: funcionalidad inicial parcial que se refina hasta formar parte del producto final, a diferencia del desechable. Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, edición 2026. Cotejo curricular de prototipado e interacción durante análisis/diseño (A1-94/A2-III-3); la diferencia entre prototipo evolutivo y desechable se contrasta con NIST y SEI."
+      }
     },
     {
       "id": 7490,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Para cuál de los siguientes supuestos no vale la calidad de software?",
+      "texto": "¿Qué afirmación es demasiado absoluta para describir el aseguramiento de la calidad del software?",
       "opciones": [
-        "Para dar confianza.",
-        "Para asegurar que el software funciona.",
-        "Para evaluar el proceso de desarrollo de software.",
-        "Para hacer los resultados del proceso más predecibles."
+        "Proporcionar confianza, basada en evaluación, de que se satisfacen requisitos de calidad definidos.",
+        "Garantizar que el software estará libre de defectos y funcionará en cualquier condición, entorno y uso.",
+        "Evaluar tanto productos de software como procesos de desarrollo frente a requisitos y planes establecidos.",
+        "Ayudar, mediante procesos y mediciones definidos, a obtener resultados más consistentes y previsibles."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "Corregida B. La clave original marcaba «hacer los resultados del proceso más predecibles» como aquello para lo que no vale la calidad, lo que no resulta defendible en general: la gestión de calidad busca procesos consistentes. Se redefine el ítem como una afirmación excesiva: QA ofrece confianza evaluable y conformidad con requisitos, pero no garantiza que el software carezca de todo defecto o funcione en cualquier circunstancia. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento del Software, edición 2026. Cotejo curricular de calidad del producto, evaluación y aseguramiento de procesos (A1-98/A2-III-13); la interpretación se contrasta con ISO/IEC 25010 y procesos de QA.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 39 Calidad y Mantenimiento del Software, edición 2026: Cotejo curricular de calidad del producto, evaluación y aseguramiento de procesos (A1-98/A2-III-13); la interpretación se contrasta con ISO/IEC 25010 y procesos de QA.",
+        "estado": "revisada",
+        "nota": "Cotejo de Academy registrado. Cotejo curricular de calidad del producto, evaluación y aseguramiento de procesos (A1-98/A2-III-13); la interpretación se contrasta con ISO/IEC 25010 y procesos de QA."
+      },
+      "etiquetas": [
+        "calidad del software",
+        "aseguramiento de calidad",
+        "evaluación",
+        "conformidad",
+        "confianza"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/78176.html",
+            "referencia": "ISO/IEC 25010:2023, modelo de calidad de producto: establece un modelo para especificar requisitos y evaluar la calidad del producto durante su ciclo de vida por desarrolladores, adquirentes, aseguramiento/control de calidad y evaluadores."
+          },
+          {
+            "url": "https://www.iteh.eu/catalog/standards/iso/65ce2d16-a3ae-4cae-8454-e883b2cbe09e/iso-iec-90003-2014",
+            "referencia": "ISO/IEC 90003, directrices para aplicar ISO 9001 al software: el aseguramiento de la calidad proporciona confianza de que se cumplirán requisitos de calidad; se basa en actividades planificadas, evaluación y mejora, no en garantía absoluta de ausencia de defectos en cualquier contexto."
+          },
+          {
+            "url": "https://www.dote.osd.mil/Portals/97/docs/TEMPGuide/IEEE_EIA_12207.2_1997.pdf",
+            "referencia": "IEEE/EIA 12207.2, guía de implementación de procesos de ciclo de vida: el objetivo de QA es asegurar conformidad de productos y procesos con requisitos y planes establecidos; no establece garantía absoluta de que el software siempre funcionará."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento del Software, edición 2026. Cotejo curricular de calidad del producto, evaluación y aseguramiento de procesos (A1-98/A2-III-13); la interpretación se contrasta con ISO/IEC 25010 y procesos de QA."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; correspondencia curricular con A1-98."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; correspondencia curricular con A2-III-13."
+          }
+        ],
+        "observaciones": "Corregida B. La clave original marcaba «hacer los resultados del proceso más predecibles» como aquello para lo que no vale la calidad, lo que no resulta defendible en general: la gestión de calidad busca procesos consistentes. Se redefine el ítem como una afirmación excesiva: QA ofrece confianza evaluable y conformidad con requisitos, pero no garantiza que el software carezca de todo defecto o funcione en cualquier circunstancia. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento del Software, edición 2026. Cotejo curricular de calidad del producto, evaluación y aseguramiento de procesos (A1-98/A2-III-13); la interpretación se contrasta con ISO/IEC 25010 y procesos de QA."
+      }
     },
     {
       "id": 7491,
