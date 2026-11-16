@@ -419373,71 +419373,297 @@
       "id": 7871,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué son las Java EE Blueprints?",
+      "texto": "¿Qué describen mejor las Java EE BluePrints?",
       "opciones": [
-        "Un conjunto de prácticas obligatorias al desarrollar en Java",
-        "Un conjunto de buenas prácticas al desarrollar en Java",
-        "Una API de desarrollo en Java",
-        "Java EE Blueprints no existe"
+        "Reglas obligatorias que cualquier aplicación Java debe cumplir para poder ejecutarse.",
+        "Guías, patrones de diseño y aplicaciones de referencia que ilustran prácticas recomendadas para desarrollar con Java EE.",
+        "Una API de Java EE que sustituye a los servlets y componentes de negocio.",
+        "Una especificación normativa que define el lenguaje Java."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. Java BluePrints no es una API ni una norma con requisitos obligatorios: Oracle las publicó como guías, patrones y soluciones de referencia que ilustran prácticas recomendadas para construir aplicaciones empresariales Java. Se sustituyó el término impreciso “buenas prácticas” por el alcance documentado por Oracle. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de la Información, versión 2026.1. El bloque incluye entorno de desarrollo Java (A1-67) y arquitectura Java EE (A2-III-10). Java BluePrints se coteja como práctica histórica de diseño/referencia; Oracle, no el material docente, sustenta que son guías y patrones no obligatorios.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30, Tecnologías de Sistemas de la Información, versión 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El bloque incluye entorno de desarrollo Java (A1-67) y arquitectura Java EE (A2-III-10). Java BluePrints se coteja como práctica histórica de diseño/referencia; Oracle, no el material docente, sustenta que son guías y patrones no obligatorios."
+      },
+      "etiquetas": [
+        "Java EE BluePrints",
+        "Java Blueprints",
+        "design patterns",
+        "reference applications"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.oracle.com/java/technologies/java-blueprints-guidelines.html",
+            "referencia": "Oracle Java BluePrints, Guidelines, Patterns and Code: describes the BluePrints Solutions Catalog and its platform guidance/reference solutions for Java EE; these are non-mandatory design guidance, not an API or obligatory rules."
+          },
+          {
+            "url": "https://www.oracle.com/java/technologies/patterns.html",
+            "referencia": "Oracle Java BluePrints Patterns: patterns are documented proven solutions to recurring design problems, with context, forces and consequences."
+          },
+          {
+            "url": "https://www.oracle.com/java/technologies/java-blueprint.html",
+            "referencia": "Oracle, Java BluePrints: reference applications and guidelines illustrate how to design/develop applications on Java EE platforms."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de la Información, versión 2026.1. El bloque incluye entorno de desarrollo Java (A1-67) y arquitectura Java EE (A2-III-10). Java BluePrints se coteja como práctica histórica de diseño/referencia; Oracle, no el material docente, sustenta que son guías y patrones no obligatorios."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-67."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-III-10."
+          }
+        ],
+        "observaciones": "Corregida B. Java BluePrints no es una API ni una norma con requisitos obligatorios: Oracle las publicó como guías, patrones y soluciones de referencia que ilustran prácticas recomendadas para construir aplicaciones empresariales Java. Se sustituyó el término impreciso “buenas prácticas” por el alcance documentado por Oracle. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de la Información, versión 2026.1. El bloque incluye entorno de desarrollo Java (A1-67) y arquitectura Java EE (A2-III-10). Java BluePrints se coteja como práctica histórica de diseño/referencia; Oracle, no el material docente, sustenta que son guías y patrones no obligatorios."
+      }
     },
     {
       "id": 7872,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones es la correcta dentro de un sistema de cifrado simétrico?",
+      "texto": "¿Cuál es una característica del cifrado simétrico?",
       "opciones": [
-        "Se utiliza un par de claves, una para cifrar y otra para descifrar.",
-        "Los extremos que se comunican deben conocer la clave privada.",
-        "Utilizan longitudes de claves mayores que el cifrado asimétrico.",
-        "Es más lento que el cifrado asimétrico."
+        "Emplea dos claves distintas, una pública para cifrar y otra privada para descifrar.",
+        "Las partes autorizadas comparten una misma clave secreta para cifrar y descifrar; su distribución y custodia deben protegerse.",
+        "La clave simétrica suele tener que ser más larga que la clave pública de un algoritmo asimétrico para alcanzar seguridad equivalente.",
+        "En general es más lento que el cifrado asimétrico para proteger grandes volúmenes de datos."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. En criptografía simétrica, el algoritmo usa la misma clave secreta para cifrar y descifrar. La denominación “clave privada” se reserva normalmente para la clave secreta de un par asimétrico y podía inducir a confusión. Los algoritmos simétricos suelen ser más eficientes y, a igual nivel de seguridad, usan claves más cortas que las claves públicas asimétricas; la distribución segura de la clave es un reto central. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El tema comprende cifrado simétrico/asimétrico (A1-79) y seguridad de redes (A1-125/A2-IV-12). La definición de clave simétrica, custodia y comparación de longitudes se comprueba directamente con NIST.",
+      "clasificacion": {
+        "A1": [
+          "A1-79",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El tema comprende cifrado simétrico/asimétrico (A1-79) y seguridad de redes (A1-125/A2-IV-12). La definición de clave simétrica, custodia y comparación de longitudes se comprueba directamente con NIST."
+      },
+      "etiquetas": [
+        "cifrado simétrico",
+        "clave secreta compartida",
+        "clave de cifrado",
+        "NIST"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/glossary/term/symmetric_key_algorithm",
+            "referencia": "NIST CSRC Glossary, symmetric key algorithm: emplea la misma clave secreta para una operación y su inversa, por ejemplo cifrado y descifrado."
+          },
+          {
+            "url": "https://csrc.nist.gov/news/2012/new-nist-document-offers-guidance-on-cryptographic-key-generation",
+            "referencia": "NIST, SP 800-133 announcement: las claves simétricas se usan para cifrar y descifrar; los algoritmos simétricos operan rápidamente y su clave debe mantenerse secreta."
+          },
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+            "referencia": "NIST SP 800-57 Part 1 Rev. 5: recomienda gestión de claves simétricas y compara resistencia/longitud de clave; no es correcto afirmar de forma general que estas claves son más largas que las asimétricas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El tema comprende cifrado simétrico/asimétrico (A1-79) y seguridad de redes (A1-125/A2-IV-12). La definición de clave simétrica, custodia y comparación de longitudes se comprueba directamente con NIST."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-79, A1-125."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-12."
+          }
+        ],
+        "observaciones": "Corregida B. En criptografía simétrica, el algoritmo usa la misma clave secreta para cifrar y descifrar. La denominación “clave privada” se reserva normalmente para la clave secreta de un par asimétrico y podía inducir a confusión. Los algoritmos simétricos suelen ser más eficientes y, a igual nivel de seguridad, usan claves más cortas que las claves públicas asimétricas; la distribución segura de la clave es un reto central. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El tema comprende cifrado simétrico/asimétrico (A1-79) y seguridad de redes (A1-125/A2-IV-12). La definición de clave simétrica, custodia y comparación de longitudes se comprueba directamente con NIST."
+      }
     },
     {
       "id": 7873,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué elemento de X.500 es el conjunto de toda la información disponible en el Servicio de Directorio?",
+      "texto": "En la terminología X.500, ¿cómo se denomina el conjunto de información que mantiene el Directory?",
       "opciones": [
-        "DIB",
-        "DSA",
-        "DUA",
-        "DISP"
+        "DIB (Directory Information Base), formada por entradas y atributos del directorio.",
+        "DSA (Directory System Agent), que es el agente que presta el servicio de directorio.",
+        "DUA (Directory User Agent), que es el proceso cliente que accede al servicio.",
+        "DIT (Directory Information Tree), el árbol que organiza las entradas del directorio."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Vigente A. El DIB es el conjunto de información mantenida por el Directory, compuesto por entradas y atributos. Se distingue del DIT, que representa la organización jerárquica de las entradas, y de DSA/DUA, que son componentes de sistema/cliente. Se cotejó la terminología de la recomendación X.500 y se precisó el reactivo para no confundir base de información con el árbol que la organiza. Cotejo curricular: ITIC Academy, bloque 45, Correo, Mensajería y Servicios de Directorio, versión 2026.1. El bloque actualizado cubre X.500 y LDAP, con encaje en servicios de directorio A1-122; el A1-80 menciona además expresamente LDAP/X.500. No se asigna epígrafe A2 específico: el cotejo de temario-oficial.json no encontró una mención directa en el programa A2.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-122"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 45, Correo, Mensajería y Servicios de Directorio, versión 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El bloque actualizado cubre X.500 y LDAP, con encaje en servicios de directorio A1-122; el A1-80 menciona además expresamente LDAP/X.500. No se asigna epígrafe A2 específico: el cotejo de temario-oficial.json no encontró una mención directa en el programa A2."
+      },
+      "etiquetas": [
+        "X.500",
+        "DIB",
+        "Directory Information Base",
+        "servicio de directorio"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.500-201210-S%21%21PDF-E&lang=e&type=items",
+            "referencia": "ITU-T Recommendation X.500, §7: la información mantenida en el Directory se denomina colectivamente Directory Information Base (DIB), compuesta por entradas y atributos."
+          },
+          {
+            "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?id=14031",
+            "referencia": "ITU-T X.500 (10/2019), ficha de recomendación en vigor: introduce los conceptos de Directory y DIB; identifica la norma internacional ISO/IEC 9594-1."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1nHGBMG4P3il5v4hZ1-RKdHmGzUPiwqnA/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 45, Correo, Mensajería y Servicios de Directorio, versión 2026.1. El bloque actualizado cubre X.500 y LDAP, con encaje en servicios de directorio A1-122; el A1-80 menciona además expresamente LDAP/X.500. No se asigna epígrafe A2 específico: el cotejo de temario-oficial.json no encontró una mención directa en el programa A2."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-80, A1-122."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): sin asignación directa."
+          }
+        ],
+        "observaciones": "Vigente A. El DIB es el conjunto de información mantenida por el Directory, compuesto por entradas y atributos. Se distingue del DIT, que representa la organización jerárquica de las entradas, y de DSA/DUA, que son componentes de sistema/cliente. Se cotejó la terminología de la recomendación X.500 y se precisó el reactivo para no confundir base de información con el árbol que la organiza. Cotejo curricular: ITIC Academy, bloque 45, Correo, Mensajería y Servicios de Directorio, versión 2026.1. El bloque actualizado cubre X.500 y LDAP, con encaje en servicios de directorio A1-122; el A1-80 menciona además expresamente LDAP/X.500. No se asigna epígrafe A2 específico: el cotejo de temario-oficial.json no encontró una mención directa en el programa A2."
+      }
     },
     {
       "id": 7874,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los comandos y distribución de memoria de una tarjeta criptográfica se especifican en el estándar:",
+      "texto": "¿Qué parte de ISO/IEC 7816 especifica la organización, seguridad y comandos para el intercambio con tarjetas de circuito integrado?",
       "opciones": [
-        "ISO 7816-2",
-        "ISO 7816-3",
-        "ISO 7816-4",
-        "ISO 7816-5"
+        "ISO/IEC 7816-2, dimensiones y ubicación de los contactos.",
+        "ISO/IEC 7816-3, señales eléctricas y protocolos de transmisión por contactos.",
+        "ISO/IEC 7816-4, organización, seguridad y comandos para el intercambio.",
+        "ISO/IEC 7816-5, identificadores de aplicación y procedimientos de registro."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. ISO/IEC 7816-4:2020 define la organización, seguridad y comandos para el intercambio con tarjetas; incluye pares comando-respuesta, estructuras de aplicaciones/datos, acceso a ficheros y derechos de acceso. Se reemplazó “distribución de memoria”, que era demasiado amplia y podía sugerir la organización física interna, fuera del alcance de la interfaz que describe la parte 4. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. Cotejo curricular en A1-81 y A2-I-6 sobre tarjetas inteligentes, DNIe y mecanismos de identificación; la división exacta de ISO/IEC 7816 se verificó en la ficha oficial del estándar, no se atribuye esa descripción detallada al manual.",
+      "clasificacion": {
+        "A1": [
+          "A1-81"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Cotejo curricular en A1-81 y A2-I-6 sobre tarjetas inteligentes, DNIe y mecanismos de identificación; la división exacta de ISO/IEC 7816 se verificó en la ficha oficial del estándar, no se atribuye esa descripción detallada al manual."
+      },
+      "etiquetas": [
+        "ISO/IEC 7816-4",
+        "smart card",
+        "comandos de intercambio",
+        "estructura de archivos",
+        "APDU"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://committee.iso.org/cms/live/live/en/sites/isoorg/contents/data/standard/07/71/77180.html",
+            "referencia": "ISO/IEC 7816-4:2020, ficha oficial, edición actual confirmada en 2025: especifica pares comando-respuesta intercambiados con la tarjeta, estructuras de aplicaciones y datos, acceso a ficheros y arquitectura de seguridad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. Cotejo curricular en A1-81 y A2-I-6 sobre tarjetas inteligentes, DNIe y mecanismos de identificación; la división exacta de ISO/IEC 7816 se verificó en la ficha oficial del estándar, no se atribuye esa descripción detallada al manual."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-81."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-I-6."
+          }
+        ],
+        "observaciones": "Corregida C. ISO/IEC 7816-4:2020 define la organización, seguridad y comandos para el intercambio con tarjetas; incluye pares comando-respuesta, estructuras de aplicaciones/datos, acceso a ficheros y derechos de acceso. Se reemplazó “distribución de memoria”, que era demasiado amplia y podía sugerir la organización física interna, fuera del alcance de la interfaz que describe la parte 4. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. Cotejo curricular en A1-81 y A2-I-6 sobre tarjetas inteligentes, DNIe y mecanismos de identificación; la división exacta de ISO/IEC 7816 se verificó en la ficha oficial del estándar, no se atribuye esa descripción detallada al manual."
+      }
     },
     {
       "id": 7875,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el ámbito de la Unión Europea, ¿tiene validez jurídica la firma electrónica?",
+      "texto": "Conforme al artículo 25 del Reglamento eIDAS, ¿qué regla general se aplica a las firmas electrónicas en procedimientos judiciales?",
       "opciones": [
-        "Solamente si es firma reconocida",
-        "Solamente si es firma cualificada",
-        "Siempre será admisible como prueba en el procedimiento judicial",
-        "Ninguna de las anteriores es correcta"
+        "Solo las firmas cualificadas son admisibles como prueba en cualquier Estado miembro.",
+        "Toda firma electrónica tiene automáticamente el mismo efecto que una firma manuscrita y no puede ser impugnada.",
+        "No se puede negar efecto jurídico ni admisibilidad probatoria a una firma únicamente por ser electrónica o por no ser cualificada; la firma cualificada tiene efecto equivalente a la manuscrita.",
+        "Las firmas electrónicas carecen de validez si no se imprimen y aportan en papel."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. El artículo 25.1 de eIDAS impide negar efectos jurídicos y admisibilidad probatoria únicamente por la forma electrónica o por no ser cualificada. El apartado 2 equipara la firma cualificada a la manuscrita. La sentencia C-466/22 aclara que esto no convierte cualquier firma electrónica en prueba irrefutable ni impide impugnar su validez conforme al derecho procesal aplicable; se corrigió así el absoluto “siempre será admisible”. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El material cubre marco europeo/nacional eIDAS, certificado, identidad y firma electrónica (A1-80/A2-I-6). El alcance probatorio del artículo 25 y su interpretación por el TJUE se verificaron en EUR-Lex, no se deducen del temario académico.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El material cubre marco europeo/nacional eIDAS, certificado, identidad y firma electrónica (A1-80/A2-I-6). El alcance probatorio del artículo 25 y su interpretación por el TJUE se verificaron en EUR-Lex, no se deducen del temario académico."
+      },
+      "etiquetas": [
+        "eIDAS",
+        "firma electrónica",
+        "admisibilidad como prueba",
+        "firma cualificada",
+        "artículo 25"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2014/910/2024-05-20/eng",
+            "referencia": "Reglamento eIDAS (UE) 910/2014, texto consolidado a 20/05/2024, artículo 25: una firma electrónica no puede ser privada de efecto jurídico ni admisibilidad probatoria únicamente por ser electrónica o no cualificada; una firma cualificada tiene efecto equivalente a manuscrita."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=ecli%3AECLI%3AEU%3AC%3A2024%3A185",
+            "referencia": "TJUE, asunto C-466/22, V.B. Trade, sentencia de 29/02/2024: el artículo 25(1) prohíbe negar efecto probatorio solo por la forma electrónica, pero no impide impugnar la validez con arreglo al derecho procesal nacional; la firma cualificada se equipara a la manuscrita en los términos del artículo 25(2)."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El material cubre marco europeo/nacional eIDAS, certificado, identidad y firma electrónica (A1-80/A2-I-6). El alcance probatorio del artículo 25 y su interpretación por el TJUE se verificaron en EUR-Lex, no se deducen del temario académico."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-80."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-I-6."
+          }
+        ],
+        "observaciones": "Corregida C. El artículo 25.1 de eIDAS impide negar efectos jurídicos y admisibilidad probatoria únicamente por la forma electrónica o por no ser cualificada. El apartado 2 equipara la firma cualificada a la manuscrita. La sentencia C-466/22 aclara que esto no convierte cualquier firma electrónica en prueba irrefutable ni impide impugnar su validez conforme al derecho procesal aplicable; se corrigió así el absoluto “siempre será admisible”. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El material cubre marco europeo/nacional eIDAS, certificado, identidad y firma electrónica (A1-80/A2-I-6). El alcance probatorio del artículo 25 y su interpretación por el TJUE se verificaron en EUR-Lex, no se deducen del temario académico."
+      }
     },
     {
       "id": 7876,
