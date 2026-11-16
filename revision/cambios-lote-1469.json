@@ -1,0 +1,386 @@
+{
+  "fecha": "2026-11-16",
+  "alcance": "IDs 7646–7650; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7646,
+      "original": {
+        "id": 7646,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En relación al servicio de directorio LDAP, es CIERTO:",
+        "opciones": [
+          "LDAP representa la información mediante estructuras ASN.1.",
+          "La unidad básica de información almacenada en el directorio es el atributo.",
+          "La operación Abandon permite cerrar la sesión.",
+          "LDAP utiliza TCP/IP en lugar de los protocolos OSI."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7646,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En LDAPv3, ¿qué solicita al servidor la operación Abandon?",
+        "opciones": [
+          "Que cierre la sesión LDAP y la conexión de transporte.",
+          "Que abandone, si puede, una operación previa todavía no completada; no termina por sí misma la sesión.",
+          "Que elimine del directorio la entrada asociada al identificador de mensaje.",
+          "Que desvincule al usuario autenticado y cierre la sesión como hace Unbind."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. El enunciado original tenía más de una opción verdadera: LDAP usa BER, que se basa en ASN.1, y se transporta habitualmente sobre TCP/IP; por tanto no podía sostener una única respuesta. La nueva pregunta examina una distinción inequívoca del RFC 4511: Abandon solicita interrumpir una operación pendiente, mientras que Unbind finaliza la sesión. La petición Abandon no recibe respuesta y el servidor puede no completar el abandono. Cotejo curricular: ITIC Academy, bloque 36 Seguridad, criptografía e identificación y firma, versión 2026.1. El temario incluye en A1-80 los protocolos de directorio LDAP/X.500 y certificados; encaje curricular directo. Las operaciones concretas del protocolo se comprobaron en RFC 4511/4512.",
+        "clasificacion": {
+          "A1": [
+            "A1-80",
+            "A1-122"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "LDAP",
+          "Abandon",
+          "Unbind",
+          "sesión LDAP",
+          "RFC 4511"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4511.html",
+              "referencia": "IETF RFC 4511, §§4.3, 4.11, 5.2 y 5.3: Abandon solicita que se abandone una operación pendiente; Unbind termina la sesión. LDAPMessage se transporta sobre TCP con codificación BER. La opción sobre ASN.1 es asimismo defendible si se pregunta por la codificación, por lo que se sustituyó la pregunta general por una cuestión concreta sobre Abandon."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4512.html",
+              "referencia": "IETF RFC 4512, §§2.1–2.2: la unidad básica del directorio es la entrada; una entrada está formada por atributos. Esto confirma por qué no es correcta la opción que llama unidad básica al atributo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 36 Seguridad, criptografía e identificación y firma, versión 2026.1. El temario incluye en A1-80 los protocolos de directorio LDAP/X.500 y certificados; encaje curricular directo. Las operaciones concretas del protocolo se comprobaron en RFC 4511/4512."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-80, A1-122."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-II-8."
+            }
+          ],
+          "observaciones": "Corregida B. El enunciado original tenía más de una opción verdadera: LDAP usa BER, que se basa en ASN.1, y se transporta habitualmente sobre TCP/IP; por tanto no podía sostener una única respuesta. La nueva pregunta examina una distinción inequívoca del RFC 4511: Abandon solicita interrumpir una operación pendiente, mientras que Unbind finaliza la sesión. La petición Abandon no recibe respuesta y el servidor puede no completar el abandono. Cotejo curricular: ITIC Academy, bloque 36 Seguridad, criptografía e identificación y firma, versión 2026.1. El temario incluye en A1-80 los protocolos de directorio LDAP/X.500 y certificados; encaje curricular directo. Las operaciones concretas del protocolo se comprobaron en RFC 4511/4512."
+        }
+      }
+    },
+    {
+      "id": 7647,
+      "original": {
+        "id": 7647,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Servicios de una Autoridad de Certificación esenciales son:",
+        "opciones": [
+          "Generación y gestión de claves criptográficas",
+          "Servicios de directorio",
+          "Registro de usuarios mediante el que se acredita la identidad",
+          "Todas las respuestas anteriores son correctas"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7647,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué conjunto puede formar parte de los servicios y funciones de una infraestructura de clave pública (PKI), aunque no todos los preste necesariamente la propia CA?",
+        "opciones": [
+          "Generación e instalación o gestión del ciclo de vida de claves, según la arquitectura.",
+          "Publicación y consulta de certificados o información de estado mediante un directorio o repositorio.",
+          "Registro y comprobación de identidad del solicitante, normalmente mediante una RA u otra función delegada.",
+          "Todas las respuestas anteriores describen funciones posibles del ecosistema PKI."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. El original atribuía indiscriminadamente a la Autoridad de Certificación servicios que en una PKI pueden distribuirse entre CA, RA, repositorio, solicitante y otros componentes. Se reformuló para preguntar por la infraestructura PKI: sus funciones incluyen la gestión de claves, la comprobación de identidad y la publicación/consulta de certificados, pero su reparto depende del diseño. Cotejo curricular: ITIC Academy, bloque 36 Seguridad, criptografía e identificación y firma, versión 2026.1. Cubre A1-81, certificados digitales e infraestructura PKI. El reparto de responsabilidades CA/RA/repositorio y gestión de claves se contrastó con RFC 3647 y NIST SP 800-57.",
+        "clasificacion": {
+          "A1": [
+            "A1-81"
+          ],
+          "A2": [
+            "A2-I-6",
+            "A2-IV-12"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "PKI",
+          "Autoridad de Certificación",
+          "Autoridad de Registro",
+          "ciclo de vida del certificado",
+          "RFC 3647"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc3647.html",
+              "referencia": "IETF RFC 3647, §§1, 3.2–3.3, 4.3 y 6: marco de política y prácticas de certificación que distingue CA, RA y repositorio, y describe identificación/autenticación de solicitantes, emisión, publicación y gestión de certificados."
+            },
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt2r1.pdf",
+              "referencia": "NIST SP 800-57 Part 2 Rev. 1, §§5–6: describe funciones PKI y señala que la RA recoge y verifica la identidad; la generación/instalación de claves es una función de gestión que puede recaer en distintos componentes según la arquitectura."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 36 Seguridad, criptografía e identificación y firma, versión 2026.1. Cubre A1-81, certificados digitales e infraestructura PKI. El reparto de responsabilidades CA/RA/repositorio y gestión de claves se contrastó con RFC 3647 y NIST SP 800-57."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-81."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-I-6, A2-IV-12."
+            }
+          ],
+          "observaciones": "Corregida D. El original atribuía indiscriminadamente a la Autoridad de Certificación servicios que en una PKI pueden distribuirse entre CA, RA, repositorio, solicitante y otros componentes. Se reformuló para preguntar por la infraestructura PKI: sus funciones incluyen la gestión de claves, la comprobación de identidad y la publicación/consulta de certificados, pero su reparto depende del diseño. Cotejo curricular: ITIC Academy, bloque 36 Seguridad, criptografía e identificación y firma, versión 2026.1. Cubre A1-81, certificados digitales e infraestructura PKI. El reparto de responsabilidades CA/RA/repositorio y gestión de claves se contrastó con RFC 3647 y NIST SP 800-57."
+        }
+      }
+    },
+    {
+      "id": 7648,
+      "original": {
+        "id": 7648,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Algunas de las ventajas a la hora de utilizar software general para la realización de las auditorías son:",
+        "opciones": [
+          "Economicidad",
+          "Coste inicial alto",
+          "No se verifican procesos particulares sino genéricos",
+          "Todas las respuestas anteriores son incorrectas"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7648,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué ventaja puede ofrecer el software generalizado de auditoría cuando se reutiliza en distintos encargos?",
+        "opciones": [
+          "Economicidad: una herramienta multipropósito reutilizable puede reducir el coste marginal frente a desarrollar una herramienta distinta para cada encargo.",
+          "Un coste inicial necesariamente alto, incluso si la herramienta ya está disponible.",
+          "La imposibilidad de analizar datos o procesos de aplicaciones concretas.",
+          "Todas las respuestas anteriores son incorrectas."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. Se acotó la economicidad como ventaja potencial de la reutilización, no como garantía universal: el licenciamiento, la implantación y la capacitación pueden cambiar el coste total. El software generalizado se caracteriza por tareas multipropósito como selección, cotejo, recálculo e informes; que sea general no significa que no examine datos de aplicaciones concretas. Cotejo curricular: ITIC Academy, bloque 16 Auditoría informática, versión 2026.2. Cotejo directo con A1-38 y A2-T11: objetivos, alcance, técnicas y herramientas de auditoría; el bloque incorpora herramientas de análisis y su eficiencia. La afirmación concreta sobre reutilización se valida además con ISACA.",
+        "clasificacion": {
+          "A1": [
+            "A1-38",
+            "A1-82"
+          ],
+          "A2": [
+            "A2-II-11"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "software general de auditoría",
+          "GAS",
+          "herramientas de auditoría",
+          "eficiencia",
+          "economicidad"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.isaca.org/resources/isaca-journal/issues/2017/volume-5/barriers-and-enablers-to-auditors-accepting-generalized-audit-software",
+              "referencia": "ISACA Journal, “Barriers and Enablers to Auditors Accepting Generalized Audit Software”: define GAS como software multipropósito para selección, cotejo, recálculo e informes y recoge que estas herramientas pueden mejorar eficiencia y eficacia de auditorías. La reutilización puede hacer económica su aplicación en distintos encargos; el coste total depende de licencias, implantación y capacitación."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1D93MNUzOWGwD6IyuWdxIMnHaL7aXvYhp/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 16 Auditoría informática, versión 2026.2. Cotejo directo con A1-38 y A2-T11: objetivos, alcance, técnicas y herramientas de auditoría; el bloque incorpora herramientas de análisis y su eficiencia. La afirmación concreta sobre reutilización se valida además con ISACA."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-38, A1-82."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-II-11."
+            }
+          ],
+          "observaciones": "Corregida A. Se acotó la economicidad como ventaja potencial de la reutilización, no como garantía universal: el licenciamiento, la implantación y la capacitación pueden cambiar el coste total. El software generalizado se caracteriza por tareas multipropósito como selección, cotejo, recálculo e informes; que sea general no significa que no examine datos de aplicaciones concretas. Cotejo curricular: ITIC Academy, bloque 16 Auditoría informática, versión 2026.2. Cotejo directo con A1-38 y A2-T11: objetivos, alcance, técnicas y herramientas de auditoría; el bloque incorpora herramientas de análisis y su eficiencia. La afirmación concreta sobre reutilización se valida además con ISACA."
+        }
+      }
+    },
+    {
+      "id": 7649,
+      "original": {
+        "id": 7649,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el anexo del RD 4/2010 por el que se regula el Esquema Nacional de Interoperabilidad, la digitalización es:",
+        "opciones": [
+          "El proceso tecnológico que permite convertir un documento en soporte papel en uno o varios ficheros electrónicos que contienen la imagen codificada del documento",
+          "El proceso tecnológico que permite convertir un documento en soporte papel en uno o varios ficheros electrónicos que contienen la imagen codificada, fiel e íntegra del documento",
+          "El proceso tecnológico que permite convertir un documento en soporte papel o en otro soporte no electrónico en uno o varios ficheros electrónicos que contienen la imagen codificada, fiel e íntegra del documento",
+          "El proceso tecnológico que permite convertir un documento en soporte digital, en soporte papel o en otro soporte no electrónico en uno o varios ficheros electrónicos que contienen la imagen codificada, fiel e íntegra del documento"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7649,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según la definición del anexo del Real Decreto 4/2010, ¿qué es la digitalización?",
+        "opciones": [
+          "Convertir solo papel en un fichero electrónico, sin requisito de fidelidad de imagen.",
+          "Convertir papel u otro soporte no electrónico en uno o varios ficheros electrónicos con una imagen codificada, fiel e íntegra del documento.",
+          "Convertir cualquier fichero digital a papel y conservar una copia en el expediente.",
+          "Escanear un documento electrónico para producir exclusivamente una copia impresa."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. El texto del anexo incluye tanto papel como otro soporte no electrónico, admite uno o varios ficheros electrónicos y exige que contengan la imagen codificada, fiel e íntegra. Se sustituyó la respuesta histórica correcta de índice 2 por una lista nueva y más clara, conservando el contenido normativo exacto. El art. 24 complementa la definición con aspectos que desarrolla la norma técnica de interoperabilidad. Cotejo curricular: ITIC Academy, bloque 03 Actuación administrativa y administración digital, versión 2026.2. Cubre el marco de administración electrónica y el ENI. Sirve de contexto curricular; la definición literal de digitalización se comprobó en el anexo del RD 4/2010 y sus requisitos en el art. 24.",
+        "clasificacion": {
+          "A1": [
+            "A1-83"
+          ],
+          "A2": [
+            "A2-I-9"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "digitalización",
+          "ENI",
+          "Real Decreto 4/2010",
+          "imagen fiel e íntegra",
+          "NTI de digitalización"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-1331",
+              "referencia": "BOE, Real Decreto 4/2010, anexo (definición de «Digitalización»): proceso que convierte un documento en soporte papel u otro soporte no electrónico en uno o varios ficheros electrónicos con la imagen codificada, fiel e íntegra. El art. 24 remite a la NTI para formatos, resolución, fidelidad e metadatos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 03 Actuación administrativa y administración digital, versión 2026.2. Cubre el marco de administración electrónica y el ENI. Sirve de contexto curricular; la definición literal de digitalización se comprobó en el anexo del RD 4/2010 y sus requisitos en el art. 24."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-83."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-I-9."
+            }
+          ],
+          "observaciones": "Corregida B. El texto del anexo incluye tanto papel como otro soporte no electrónico, admite uno o varios ficheros electrónicos y exige que contengan la imagen codificada, fiel e íntegra. Se sustituyó la respuesta histórica correcta de índice 2 por una lista nueva y más clara, conservando el contenido normativo exacto. El art. 24 complementa la definición con aspectos que desarrolla la norma técnica de interoperabilidad. Cotejo curricular: ITIC Academy, bloque 03 Actuación administrativa y administración digital, versión 2026.2. Cubre el marco de administración electrónica y el ENI. Sirve de contexto curricular; la definición literal de digitalización se comprobó en el anexo del RD 4/2010 y sus requisitos en el art. 24."
+        }
+      }
+    },
+    {
+      "id": 7650,
+      "original": {
+        "id": 7650,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál no es una metodología de Desarrollo Orientada a Objetos?",
+        "opciones": [
+          "Merise",
+          "Booch",
+          "OMT",
+          "RUP"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7650,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la clasificación clásica de metodologías de análisis y diseño, ¿cuál de estas no es un método OOAD (orientado a objetos)?",
+        "opciones": [
+          "Merise, metodología de análisis y diseño de sistemas de información.",
+          "El método Booch.",
+          "Object Modeling Technique (OMT).",
+          "Rational Unified Process (RUP), proceso unificado orientado a objetos."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. Booch y OMT son métodos OOAD clásicos; RUP es un proceso unificado cuyo desarrollo se vincula a la consolidación de enfoques orientados a objetos. Merise es una metodología de análisis y diseño de sistemas de información, no uno de esos métodos OOAD en la taxonomía clásica del temario. Se precisó el alcance temporal/taxonómico para no convertir la respuesta en una afirmación sobre todas las extensiones posteriores de Merise. Cotejo curricular: ITIC Academy, bloque 38 Análisis, diseño y construcción de sistemas de información, versión 2026.1. Incluye análisis funcional, metodologías de desarrollo y análisis/diseño orientado a objetos; encaje directo del contraste entre métodos OOAD. ITIC Academy, bloque 15 Metodologías ágiles y ciclo de vida, actualización 2026. Incluye modelos de ciclo de vida y RUP; se usa como contexto para la clasificación histórica. La adscripción de Merise, Booch y OMT se contrastó con literatura académica y SEI.",
+        "clasificacion": {
+          "A1": [
+            "A1-88"
+          ],
+          "A2": [
+            "A2-III-9"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Merise",
+          "Booch",
+          "OMT",
+          "RUP",
+          "análisis y diseño orientado a objetos",
+          "metodologías de desarrollo"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/0378720683900320",
+              "referencia": "Artículos académicos de investigación de sistemas clasifican Merise como metodología de análisis, diseño y desarrollo de sistemas de información; el estudio clásico de Nanci y Espinasse lleva precisamente ese título y no la caracteriza como método OOAD."
+            },
+            {
+              "url": "https://www.sei.cmu.edu/blog/the-method-framework-for-engineering-system-architectures/",
+              "referencia": "Software Engineering Institute de Carnegie Mellon, “The Method Framework for Engineering System Architectures”: identifica Booch y OMT como métodos clásicos de análisis y diseño orientados a objetos, y RUP como un proceso unificado posterior que consolidó métodos OO."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 38 Análisis, diseño y construcción de sistemas de información, versión 2026.1. Incluye análisis funcional, metodologías de desarrollo y análisis/diseño orientado a objetos; encaje directo del contraste entre métodos OOAD."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1D62OE6Sw-ZB46S_2tvGophVTKgS3ip22/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 15 Metodologías ágiles y ciclo de vida, actualización 2026. Incluye modelos de ciclo de vida y RUP; se usa como contexto para la clasificación histórica. La adscripción de Merise, Booch y OMT se contrastó con literatura académica y SEI."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-88."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-III-9."
+            }
+          ],
+          "observaciones": "Corregida A. Booch y OMT son métodos OOAD clásicos; RUP es un proceso unificado cuyo desarrollo se vincula a la consolidación de enfoques orientados a objetos. Merise es una metodología de análisis y diseño de sistemas de información, no uno de esos métodos OOAD en la taxonomía clásica del temario. Se precisó el alcance temporal/taxonómico para no convertir la respuesta en una afirmación sobre todas las extensiones posteriores de Merise. Cotejo curricular: ITIC Academy, bloque 38 Análisis, diseño y construcción de sistemas de información, versión 2026.1. Incluye análisis funcional, metodologías de desarrollo y análisis/diseño orientado a objetos; encaje directo del contraste entre métodos OOAD. Cotejo curricular: ITIC Academy, bloque 15 Metodologías ágiles y ciclo de vida, actualización 2026. Incluye modelos de ciclo de vida y RUP; se usa como contexto para la clasificación histórica. La adscripción de Merise, Booch y OMT se contrastó con literatura académica y SEI."
+        }
+      }
+    }
+  ]
+}
