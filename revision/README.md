@@ -1,5 +1,20 @@
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1486 (IDs 7731–7735). Acumulado: **7.730** preguntas examinadas individualmente; **7.602 verificadas** (1.466 vigentes, 5.593 corregidas y 543 históricas); **128 pendientes documentadas** (48 de fuente y 80 de ambigüedad); **4.393 sin revisar individualmente**. Una pregunta marcada como pendiente sí fue examinada y su bloqueo queda registrado; el inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1487 (IDs 7736–7740). Acumulado: **7.735** preguntas examinadas individualmente; **7.607 verificadas** (1.467 vigentes, 5.597 corregidas y 543 históricas); **128 pendientes documentadas** (48 de fuente y 80 de ambigüedad); **4.388 sin revisar individualmente**. Una pregunta marcada como pendiente sí fue examinada y su bloqueo queda registrado; el inventario estructural no equivale a revisión de contenido.
 
+## Lote 1487 — 16 de noviembre de 2026
+
+Revisión individual de las preguntas 7736–7740: categoría UBR de ATM, PoE+, vocabulario de MPLS, expansión de XML y coordinación de incidentes del ENS. Se distinguió una designación histórica de un estándar consolidado, y se enlazó la atribución a CCN-CERT con la normativa vigente.
+
+- **7736 — ATM UBR:** **corregida C**. UBR no garantiza una tasa mínima ni un retardo máximo (ni límites de pérdida); UBR+ es una variante distinta. A1-108/113; A2-IV-8.
+- **7737 — PoE+:** **corregida B**. IEEE 802.3at-2009 identificó originalmente PoE+; la materia se incorporó después a la norma consolidada IEEE 802.3. A1-110/118; A2-IV-8.
+- **7738 — MPLS:** **corregida C**. ILM significa Incoming Label Map, no “Mode”; las otras expansiones recogidas son conformes a RFC 3031. A1-113; A2-IV-8.
+- **7739 — XML:** **vigente A**. Significa Extensible Markup Language. A1-77; A2-II-9.
+- **7740 — CCN-CERT:** **corregida B**. Los artículos 33–34 del RD 311/2022 atribuyen al CCN la coordinación nacional de los CSIRT públicos y al CCN-CERT el soporte y coordinación para vulnerabilidades e incidentes en entidades del ámbito ENS; las administraciones conservan sus propias capacidades. A1-125; A2-I-9/II-13.
+
+Cotejo curricular con [ITIC Academy, bloque 42 Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) (7736–7738); [bloque 30 Tecnologías de sistemas de información](https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk) (7739); y [bloque 48 Seguridad en redes y en el nivel de aplicación](https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk) (7740). Clasificación cotejada con convocatorias oficiales [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
+
+Fuentes primarias: [IETF RFC 2761 (UBR)](https://datatracker.ietf.org/doc/html/rfc2761), [IEEE 802.3at-2009](https://standards.ieee.org/ieee/802.3at/4553/), [IEEE Task Force P802.3at](https://grouper.ieee.org/groups/802/3/at/index.html), [IETF RFC 3031](https://datatracker.ietf.org/doc/html/rfc3031), [W3C XML 1.0](https://www.w3.org/TR/xml/) y [RD 311/2022, artículos 33–34](https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191).
+
+Ejecutados node revision/revisar-lote-1487.cjs, node revision/academia-lote-1487.cjs, node revision/inventario.cjs, node revision/verificar.cjs y git diff --check: 12.123 registros; 7.735 revisadas individualmente (1.467 vigentes, 5.597 corregidas, 543 históricas); 128 pendientes documentadas (80 de ambigüedad y 48 de fuente); 4.388 sin revisar individualmente; errores estructurales: 0. El inventario estructural no equivale a revisión de contenido.
 ## Lote 1486 — 16 de noviembre de 2026
 
 Revisión individual de las preguntas 7731–7735: contenedor PKCS #12, ventajas de EDI, origen de MariaDB, compilación en .NET y elementos estructurales de UML. Se corrigieron formulaciones imprecisas y se contrastaron estándares y fuentes de fabricante.
