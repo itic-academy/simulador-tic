@@ -1,0 +1,411 @@
+{
+  "fecha": "2026-11-16",
+  "alcance": "IDs 7701–7705; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7701,
+      "original": {
+        "id": 7701,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una organización que desea proporcionar un servicio Telnet a un conjunto restringido de usuarios autenticados previamente, necesita disponer de un cortafuegos basado en:",
+        "opciones": [
+          "Filtros de paquetes tradicionales.",
+          "Combinación de filtros de paquetes tradicionales con filtros con memoria de estado.",
+          "Filtros con memoria de estado.",
+          "Combinación de filtros de paquetes con pasarelas de aplicación."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7701,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si debe mantenerse un servicio Telnet heredado para un grupo restringido de usuarios autenticados, ¿qué arquitectura de cortafuegos puede aplicar autenticación por usuario antes de permitir el acceso?",
+        "opciones": [
+          "Únicamente filtros tradicionales de paquetes.",
+          "Filtros tradicionales con seguimiento de estado, sin inspección de aplicación ni autenticación de usuario.",
+          "Únicamente filtros con memoria de estado.",
+          "Filtros de paquetes combinados con una pasarela de aplicación/proxy que admita autenticación de usuario."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. Los filtros de paquetes y el estado de conexión no autentican necesariamente a cada usuario a nivel de aplicación. Una pasarela/proxy puede combinar control de capas inferiores con autenticación individual. Se limita el ejemplo a Telnet heredado: Telnet transmite una sesión TCP y no debe confundirse con una recomendación actual frente a SSH. Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, versión 2026. Cotejo del uso de firewalls, filtrado y pasarelas/proxies de aplicación (A1-125 y A2-IV-12). El material sirve para cobertura curricular; NIST verifica la autenticación de usuario.",
+        "clasificacion": {
+          "A1": [
+            "A1-125"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "cortafuegos",
+          "Telnet",
+          "pasarela de aplicación",
+          "proxy autenticado",
+          "filtrado de paquetes"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-41r1.pdf",
+              "referencia": "NIST SP 800-41 Rev. 1, §2.1.4: application-proxy gateways combinan control de acceso de capas inferiores con proxy de aplicación; algunos exigen autenticar a cada usuario. La tabla 4.1 contempla Telnet con Application Proxy with User Authentication."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc854.html",
+              "referencia": "IETF RFC 854: especificación de Telnet sobre TCP; se conserva como contexto histórico del servicio, no como recomendación de uso seguro."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, versión 2026. Cotejo del uso de firewalls, filtrado y pasarelas/proxies de aplicación (A1-125 y A2-IV-12). El material sirve para cobertura curricular; NIST verifica la autenticación de usuario."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-125."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-IV-12."
+            }
+          ],
+          "observaciones": "Corregida D. Los filtros de paquetes y el estado de conexión no autentican necesariamente a cada usuario a nivel de aplicación. Una pasarela/proxy puede combinar control de capas inferiores con autenticación individual. Se limita el ejemplo a Telnet heredado: Telnet transmite una sesión TCP y no debe confundirse con una recomendación actual frente a SSH. Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y nivel de aplicación, versión 2026. Cotejo del uso de firewalls, filtrado y pasarelas/proxies de aplicación (A1-125 y A2-IV-12). El material sirve para cobertura curricular; NIST verifica la autenticación de usuario."
+        }
+      }
+    },
+    {
+      "id": 7702,
+      "original": {
+        "id": 7702,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Teniendo en cuenta que RPO es recoverypoint objective y RTO es recovery time, indique la opción falsa:",
+        "opciones": [
+          "RPO especifica el intervalo de tiempo entre dos copias de seguridad.",
+          "El periodo de retención de las copias de seguridad vienen definidos por el RTO.",
+          "RTO influirá en el tipo de dispositivo donde se realizará la copia de seguridad."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7702,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto a los objetivos de recuperación RPO (Recovery Point Objective) y RTO (Recovery Time Objective), señale la afirmación falsa:",
+        "opciones": [
+          "El RPO fija el punto temporal hasta el que deben recuperarse los datos y cuantifica la pérdida de datos tolerable, expresada en tiempo.",
+          "El periodo de retención de las copias de seguridad viene definido por el RTO.",
+          "El RTO puede influir en la tecnología de almacenamiento y recuperación necesaria para restaurar el servicio a tiempo."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. RPO marca el punto temporal recuperable y limita la pérdida de datos tolerable; RTO limita el tiempo para recuperar el servicio. La retención depende de requisitos organizativos, legales y de negocio, no la define el RTO. También se precisó la opción A: el RPO no es simplemente el intervalo entre dos copias, aunque condiciona la frecuencia de replicación/copia. Cotejo curricular: ITIC Academy, bloque 26 Hardware, almacenamiento, servidores y copias de seguridad, versión 2026. Incluye copias, almacenamiento y recuperación (A1-56/A1-105; A2-IV-3). ITIC Academy, bloque 22 ENS y Ciberseguridad, versión 2026. Cotejo con continuidad y recuperación de los servicios (A1-128/A2-IV-6); las definiciones exactas RPO/RTO se contrastan con NIST.",
+        "clasificacion": {
+          "A1": [
+            "A1-56",
+            "A1-105",
+            "A1-128"
+          ],
+          "A2": [
+            "A2-IV-3",
+            "A2-IV-6"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "RPO",
+          "RTO",
+          "objetivos de recuperación",
+          "copias de seguridad",
+          "retención"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/glossary/term/recovery_point_objective",
+              "referencia": "NIST CSRC Glossary, Recovery Point Objective: punto temporal al que deben recuperarse los datos tras una interrupción."
+            },
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-34r1.pdf",
+              "referencia": "NIST SP 800-34 Rev. 1: diferencia RPO (punto temporal de recuperación de datos) y RTO (máximo tiempo de indisponibilidad); ambos orientan selección de tecnologías, mientras que retención/frecuencia se planifican por separado."
+            },
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-209.pdf",
+              "referencia": "NIST SP 800-209, requisitos RA-SS-R5–R7: probar la restauración frente al RTO y establecer separadamente frecuencia de copia, retención y RPO."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, almacenamiento, servidores y copias de seguridad, versión 2026. Incluye copias, almacenamiento y recuperación (A1-56/A1-105; A2-IV-3)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 22 ENS y Ciberseguridad, versión 2026. Cotejo con continuidad y recuperación de los servicios (A1-128/A2-IV-6); las definiciones exactas RPO/RTO se contrastan con NIST."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-56, A1-105, A1-128."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-IV-3, A2-IV-6."
+            }
+          ],
+          "observaciones": "Corregida B. RPO marca el punto temporal recuperable y limita la pérdida de datos tolerable; RTO limita el tiempo para recuperar el servicio. La retención depende de requisitos organizativos, legales y de negocio, no la define el RTO. También se precisó la opción A: el RPO no es simplemente el intervalo entre dos copias, aunque condiciona la frecuencia de replicación/copia. Cotejo curricular: ITIC Academy, bloque 26 Hardware, almacenamiento, servidores y copias de seguridad, versión 2026. Incluye copias, almacenamiento y recuperación (A1-56/A1-105; A2-IV-3). Cotejo curricular: ITIC Academy, bloque 22 ENS y Ciberseguridad, versión 2026. Cotejo con continuidad y recuperación de los servicios (A1-128/A2-IV-6); las definiciones exactas RPO/RTO se contrastan con NIST."
+        }
+      }
+    },
+    {
+      "id": 7703,
+      "original": {
+        "id": 7703,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una de las opciones de que dispone el entorno de virtualización de vmware para ofrecer tolerancia ante un fallo hardware en sus máquinas virtuales (vm) es la replicación de las mismas en distintos hosts ESXi. Indique cuál de las siguientes afirmaciones respecto a esta característica es falsa:",
+        "opciones": [
+          "El entorno de virtualización asegura que la replicación del almacenamiento entre las vm replicadas está continuamente sincronizado.",
+          "El estado de ejecución de las réplicas es el mismo. Incluido el contenido de la memoria activa de las vm.",
+          "En el caso de caída, el entorno de virtualización se encarga de notificar al switch la nueva MAC en la siguiente ARP-reply de respuesta a un ARP-request para que se actualicen sus tablas.",
+          "Las réplicas son lógicamente iguales pero físicamente distintas. Cada una tiene su propio conjunto de ficheros (vmx y vmdk) que no es compartido entre ellas."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7703,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En VMware vSphere 6 Fault Tolerance, que mantiene una máquina virtual primaria y una secundaria sincronizadas en hosts ESXi diferentes, ¿qué afirmación es falsa?",
+        "opciones": [
+          "La función mantiene continuamente sincronizada la réplica de ejecución en el otro host.",
+          "El estado de ejecución de primaria y secundaria se sincroniza, incluido el estado activo de memoria requerido para continuar sin reiniciar la carga.",
+          "Tras activar la secundaria, el host espera una solicitud ARP y solo en la respuesta ARP correspondiente informa al switch de la nueva ubicación MAC.",
+          "Cada réplica dispone de sus propios ficheros de configuración y disco virtual, que la función mantiene sincronizados."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Histórica C. El alcance se fija en vSphere 6 FT para no generalizar detalles dependientes de la versión. VMware documenta que el host secundario anuncia el failover mediante un gratuitous ARP; no espera una solicitud ARP para responder. En una GARP el anuncio no ha sido provocado por una consulta ARP. La sincronización de estado/memoria y los ficheros de la secundaria son características descritas para esa generación de FT. Cotejo curricular: ITIC Academy, bloque 26 Hardware, almacenamiento, servidores y copias de seguridad, versión 2026. Cotejo con virtualización y almacenamiento de máquinas virtuales (A1-56, A2-IV-6). ITIC Academy, bloque 22 ENS y Ciberseguridad, versión 2026. Cotejo curricular con continuidad y recuperación ante fallos (A1-128, A2-IV-6); el comportamiento concreto de vSphere FT se verifica con documentación de VMware.",
+        "clasificacion": {
+          "A1": [
+            "A1-56",
+            "A1-128"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "VMware",
+          "vSphere Fault Tolerance",
+          "réplica secundaria",
+          "failover",
+          "estado de ejecución",
+          "ARP"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.vmware.com/docs/vmware-vsphere6-ft-arch-perf",
+              "referencia": "VMware, vSphere 6 Fault Tolerance: Architecture and Performance: la secundaria sincronizada se mantiene en host distinto; las réplicas conservan el estado de ejecución/red, usan archivos propios y, al activarse la secundaria, el host envía un gratuitous ARP al switch."
+            },
+            {
+              "url": "https://www.vmware.com/docs/vsphere-esxi-vcenter-server-67-performance-best-practices",
+              "referencia": "VMware vSphere 6.7 Performance Best Practices, sección Fault Tolerance: describe memoria reservada y ficheros de configuración/discos completos de la VM secundaria sincronizados con los primarios."
+            },
+            {
+              "url": "https://knowledge.broadcom.com/external/article/343401/ip-to-mac-mapping-garp-rarp-and-notify-s.html",
+              "referencia": "Broadcom KB 343401, actualización de conectividad en ESXi: diferencia GARP (no provocado por una solicitud ARP) y RARP/avisos de cambio de ubicación MAC del vSwitch; no es un ARP reply condicionado a un ARP request."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 26 Hardware, almacenamiento, servidores y copias de seguridad, versión 2026. Cotejo con virtualización y almacenamiento de máquinas virtuales (A1-56, A2-IV-6)."
+            },
+            {
+              "url": "https://drive.google.com/file/d/18tJzWuBHyd4FbkzQIE5fIbSCRdlrt_1U/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 22 ENS y Ciberseguridad, versión 2026. Cotejo curricular con continuidad y recuperación ante fallos (A1-128, A2-IV-6); el comportamiento concreto de vSphere FT se verifica con documentación de VMware."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-56, A1-128."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-IV-6."
+            }
+          ],
+          "observaciones": "Histórica C. El alcance se fija en vSphere 6 FT para no generalizar detalles dependientes de la versión. VMware documenta que el host secundario anuncia el failover mediante un gratuitous ARP; no espera una solicitud ARP para responder. En una GARP el anuncio no ha sido provocado por una consulta ARP. La sincronización de estado/memoria y los ficheros de la secundaria son características descritas para esa generación de FT. Cotejo curricular: ITIC Academy, bloque 26 Hardware, almacenamiento, servidores y copias de seguridad, versión 2026. Cotejo con virtualización y almacenamiento de máquinas virtuales (A1-56, A2-IV-6). Cotejo curricular: ITIC Academy, bloque 22 ENS y Ciberseguridad, versión 2026. Cotejo curricular con continuidad y recuperación ante fallos (A1-128, A2-IV-6); el comportamiento concreto de vSphere FT se verifica con documentación de VMware."
+        }
+      }
+    },
+    {
+      "id": 7704,
+      "original": {
+        "id": 7704,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Quién puede realizar servicios de certificación?",
+        "opciones": [
+          "Una persona física",
+          "Una persona jurídica",
+          "Ambas",
+          "Sólo el Estado"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7704,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el Reglamento eIDAS vigente, ¿quién puede ser prestador de servicios de confianza que incluya servicios de certificación?",
+        "opciones": [
+          "Una persona física.",
+          "Una persona jurídica.",
+          "Una persona física o jurídica, sujeta a los requisitos aplicables al servicio prestado.",
+          "Solo el Estado."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C. Se actualiza la denominación histórica “servicios de certificación” a “servicios de confianza” eIDAS: un prestador puede ser persona física o jurídica. La condición de prestador cualificado y los requisitos del servicio añaden obligaciones, pero no alteran la definición general del artículo 3.19. Cotejo curricular: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026.1. Cubre A1-80/81 y A2-I-6 (certificados, firma electrónica, PKI y eIDAS). La definición legal se contrasta con EUR-Lex y el BOE.",
+        "clasificacion": {
+          "A1": [
+            "A1-80",
+            "A1-81"
+          ],
+          "A2": [
+            "A2-I-6"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "eIDAS",
+          "prestador de servicios de confianza",
+          "certificados",
+          "persona física",
+          "persona jurídica",
+          "servicios electrónicos de confianza"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18",
+              "referencia": "Reglamento (UE) 910/2014 consolidado tras la reforma del Reglamento (UE) 2024/1183, art. 3.19: prestador de servicios de confianza es una persona física o jurídica que presta uno o más servicios de confianza, cualificados o no cualificados."
+            },
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-5032",
+              "referencia": "Real Decreto 203/2021, definición de prestador de servicios de confianza: persona física o jurídica que presta uno o más servicios según eIDAS."
+            },
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046",
+              "referencia": "Ley 6/2020, servicios electrónicos de confianza y obligaciones aplicables a prestadores en España."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026.1. Cubre A1-80/81 y A2-I-6 (certificados, firma electrónica, PKI y eIDAS). La definición legal se contrasta con EUR-Lex y el BOE."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-80, A1-81."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-I-6."
+            }
+          ],
+          "observaciones": "Corregida C. Se actualiza la denominación histórica “servicios de certificación” a “servicios de confianza” eIDAS: un prestador puede ser persona física o jurídica. La condición de prestador cualificado y los requisitos del servicio añaden obligaciones, pero no alteran la definición general del artículo 3.19. Cotejo curricular: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma, versión 2026.1. Cubre A1-80/81 y A2-I-6 (certificados, firma electrónica, PKI y eIDAS). La definición legal se contrasta con EUR-Lex y el BOE."
+        }
+      }
+    },
+    {
+      "id": 7705,
+      "original": {
+        "id": 7705,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Conforme a lo dispuesto en el artículo 20.5 de la Constitución Española de 1978, sólo podrá acordarse el secuestro de publicaciones, grabaciones y otros medios de información en virtud de resolución:",
+        "opciones": [
+          "Administrativa.",
+          "Judicial.",
+          "Social.",
+          "Las respuestas a, b, y c no son correctas."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7705,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Conforme al artículo 20.5 de la Constitución Española, solo podrá acordarse el secuestro de publicaciones, grabaciones y otros medios de información en virtud de resolución:",
+        "opciones": [
+          "Administrativa.",
+          "Judicial.",
+          "Social.",
+          "Ninguna de las anteriores."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Vigente B. El artículo 20.5 de la Constitución lo establece expresamente; se conserva la respuesta correcta y se normaliza la formulación del enunciado. Cotejo curricular: ITIC Academy, bloque 1 Constitución, Estado y AGE, versión 2026. Cubre los derechos fundamentales y sus garantías, A1-1/A2-I-1; el tenor literal vigente se verifica directamente en el BOE.",
+        "clasificacion": {
+          "A1": [
+            "A1-1"
+          ],
+          "A2": [
+            "A2-I-1"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Constitución Española",
+          "artículo 20.5",
+          "secuestro de publicaciones",
+          "resolución judicial",
+          "libertad de información"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+              "referencia": "Constitución Española, texto consolidado en BOE, art. 20.5: solo puede acordarse el secuestro de publicaciones, grabaciones y otros medios de información en virtud de resolución judicial."
+            },
+            {
+              "url": "https://www.boe.es/legislacion/derechos_fundamentales.php?id_articulo=20.5",
+              "referencia": "BOE, ficha del artículo 20.5 y jurisprudencia constitucional asociada: reproduce el requisito de resolución judicial."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1lZqyfGQmLTVsrhls2-XXsfbB_pygV_CN/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 1 Constitución, Estado y AGE, versión 2026. Cubre los derechos fundamentales y sus garantías, A1-1/A2-I-1; el tenor literal vigente se verifica directamente en el BOE."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: A1-1."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: A2-I-1."
+            }
+          ],
+          "observaciones": "Vigente B. El artículo 20.5 de la Constitución lo establece expresamente; se conserva la respuesta correcta y se normaliza la formulación del enunciado. Cotejo curricular: ITIC Academy, bloque 1 Constitución, Estado y AGE, versión 2026. Cubre los derechos fundamentales y sus garantías, A1-1/A2-I-1; el tenor literal vigente se verifica directamente en el BOE."
+        }
+      }
+    }
+  ]
+}

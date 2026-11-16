@@ -1,9 +1,23 @@
-Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1479 (IDs 7696–7700). Acumulado: **7.695** preguntas examinadas individualmente; **7.567 verificadas** (1.457 vigentes, 5.569 corregidas y 541 históricas); **128 pendientes documentadas** (48 de fuente y 80 de ambigüedad); **4.428 sin revisar individualmente**. Una pregunta marcada como pendiente sí fue examinada y su bloqueo queda registrado; el inventario estructural no equivale a revisión de contenido.
+Estado parcial, no revisión completa del banco. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1480 (IDs 7701–7705). Acumulado: **7.700** preguntas examinadas individualmente; **7.572 verificadas** (1.458 vigentes, 5.572 corregidas y 542 históricas); **128 pendientes documentadas** (48 de fuente y 80 de ambigüedad); **4.423 sin revisar individualmente**. Una pregunta marcada como pendiente sí fue examinada y su bloqueo queda registrado; el inventario estructural no equivale a revisión de contenido.
 
 
 
 
 
+
+## Lote 1480 — 16 de noviembre de 2026
+
+Revisión individual de 7701–7705: arquitectura de cortafuegos para autenticación de Telnet heredado, diferencia RPO/RTO, VMware Fault Tolerance, prestadores eIDAS y artículo 20.5 CE.
+
+- **7701 — cortafuegos y autenticación de usuarios:** **corregida D**. Una pasarela/proxy de aplicación puede combinar reglas de capas inferiores y autenticación de cada usuario. Se acota a un servicio Telnet heredado y se señala que el ejemplo no recomienda Telnet para nuevas instalaciones.
+- **7702 — RPO y RTO:** **corregida B (falsa)**. RPO fija hasta qué punto temporal se recuperan los datos y limita la pérdida tolerable; RTO limita indisponibilidad. La retención de copias se determina separadamente por requisitos organizativos, legales y de negocio. Se corrigió la definición imprecisa de RPO como mero intervalo entre copias.
+- **7703 — vSphere 6 Fault Tolerance:** **histórica C (falsa)**. La secundaria se sincroniza, mantiene estado de ejecución/memoria y ficheros propios de configuración/disco. VMware especifica que, al activarla, el host anuncia la ubicación de red mediante gratuitous ARP; no espera una solicitud y una respuesta ARP ordinaria.
+- **7704 — prestadores de servicios de confianza:** **corregida C**. Se actualizó la terminología de “servicios de certificación” a eIDAS: el prestador puede ser persona física o jurídica y prestar servicios cualificados o no cualificados, sujeto a los requisitos que correspondan.
+- **7705 — secuestro de publicaciones:** **vigente B (resolución judicial)**. El artículo 20.5 de la Constitución lo dispone expresamente; se cotejó el texto consolidado del BOE.
+
+Cotejo curricular con ITIC Academy 2026: bloque 48 Seguridad de redes y aplicación para cortafuegos/proxies (A1-125, A2-IV-12); bloques 26 Hardware y 22 ENS/Ciberseguridad para copias, recuperación, virtualización y continuidad (A1-56/105/128, A2-IV-3/IV-6); bloque 36 Identidad, criptografía y firma para eIDAS (A1-80/81, A2-I-6); bloque 1 Constitución para derechos fundamentales (A1-1, A2-I-1). Las clasificaciones se comprobaron con los programas oficiales A1/A2 BOE-A-2025-25938 y BOE-A-2025-26262.
+
+Fuentes primarias: [NIST SP 800-41 Rev. 1, pasarelas de aplicación y autenticación de usuario](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-41r1.pdf), [IETF RFC 854, protocolo Telnet](https://www.rfc-editor.org/rfc/rfc854.html), [NIST SP 800-34 Rev. 1, RPO/RTO](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-34r1.pdf), [NIST SP 800-209, copias, retención y objetivos de recuperación](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-209.pdf), [VMware vSphere 6 FT: Architecture and Performance](https://www.vmware.com/docs/vmware-vsphere6-ft-arch-perf), [VMware vSphere 6.7 Performance Best Practices](https://www.vmware.com/docs/vsphere-esxi-vcenter-server-67-performance-best-practices), [Broadcom, GARP/RARP y aviso de cambio MAC](https://knowledge.broadcom.com/external/article/343401/ip-to-mac-mapping-garp-rarp-and-notify-s.html), [eIDAS consolidado, artículo 3.19](https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18), [RD 203/2021, definición de prestador](https://www.boe.es/buscar/act.php?id=BOE-A-2021-5032), [Ley 6/2020](https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046), [Constitución Española consolidada, artículo 20.5](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229) y [ficha BOE del artículo 20.5](https://www.boe.es/legislacion/derechos_fundamentales.php?id_articulo=20.5).
 ## Lote 1479 — 16 de noviembre de 2026
 
 Revisión individual de las preguntas 7696–7700: funciones de sesión OSI, alcance de IEEE 802.16, estándar VLAN, lectura de una ruta LDAP/Active Directory y arquitectura de red móvil. Se corrigieron formulaciones ambiguas y distractores que podían ser ciertos bajo alguna generación o despliegue.
