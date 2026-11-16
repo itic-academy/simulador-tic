@@ -1,0 +1,403 @@
+{
+  "fecha": "2026-11-16",
+  "alcance": "IDs 7866–7870; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7866,
+      "original": {
+        "id": 7866,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Como podría hacer que un usuario de una base de datos ANSI SQL solo pudiera tener acceso a dos columnas de cada fila de una tabla:",
+        "opciones": [
+          "Utilizando la sentencia GRANT para conceder derechos al usuario sobre esas dos filas",
+          "Creando una vista al efecto con solo esas dos columnas",
+          "Utilizando la sentencia ALTER TABLE",
+          "A y B son ciertas"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7866,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En SQL, ¿qué puede limitar el acceso de un usuario a dos columnas concretas de una tabla?",
+        "opciones": [
+          "Conceder SELECT únicamente sobre esas columnas mediante privilegios de columna.",
+          "Crear una vista que exponga solo esas columnas y conceder SELECT sobre la vista, sin permiso directo sobre la tabla base.",
+          "Usar ALTER TABLE para convertir las demás columnas en filas ocultas.",
+          "A y B son mecanismos posibles, si el SGBD implementa privilegios por columna y se controla el acceso a la tabla base."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. La pregunta original confundía columnas con filas: GRANT permite asignar SELECT a columnas concretas, y una vista de proyección también puede exponer solo las columnas seleccionadas si el usuario no conserva acceso directo a la tabla. La eficacia de la vista depende de los privilegios y de las reglas de seguridad del SGBD. Cotejo curricular: ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, edición 2026.1. Cotejo temático con los temas de SGBD, modelo relacional y SQL (A1-63/64 y A2-II-5). El comportamiento exacto de privilegios de columna y vistas se acredita con documentación SQL de PostgreSQL y Microsoft, no se atribuye específicamente al manual académico.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-II-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, edición 2026.1",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Cotejo temático con los temas de SGBD, modelo relacional y SQL (A1-63/64 y A2-II-5). El comportamiento exacto de privilegios de columna y vistas se acredita con documentación SQL de PostgreSQL y Microsoft, no se atribuye específicamente al manual académico."
+        },
+        "etiquetas": [
+          "SQL",
+          "GRANT SELECT",
+          "privilegios por columna",
+          "vista"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.postgresql.org/docs/current/sql-grant.html",
+              "referencia": "PostgreSQL, GRANT: la sintaxis permite otorgar SELECT sobre columnas concretas; por ejemplo, GRANT SELECT (col1, col2) ON tabla TO usuario. Se usa como implementación documentada de la capacidad SQL de privilegios por columna."
+            },
+            {
+              "url": "https://www.postgresql.org/docs/current/sql-createview.html",
+              "referencia": "PostgreSQL, CREATE VIEW: una vista puede exponer una proyección de columnas; el acceso a la vista se concede separadamente, sin conceder al usuario acceso directo a la tabla base."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/sql/t-sql/statements/grant-object-permissions-transact-sql?view=sql-server-ver17",
+              "referencia": "Microsoft Learn, GRANT object permissions: documenta permisos SELECT a nivel de columna; se cita como confirmación independiente de que GRANT se refiere a privilegios sobre columnas, no a “dos filas”."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, edición 2026.1. Cotejo temático con los temas de SGBD, modelo relacional y SQL (A1-63/64 y A2-II-5). El comportamiento exacto de privilegios de columna y vistas se acredita con documentación SQL de PostgreSQL y Microsoft, no se atribuye específicamente al manual académico."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-5."
+            }
+          ],
+          "observaciones": "Corregida D. La pregunta original confundía columnas con filas: GRANT permite asignar SELECT a columnas concretas, y una vista de proyección también puede exponer solo las columnas seleccionadas si el usuario no conserva acceso directo a la tabla. La eficacia de la vista depende de los privilegios y de las reglas de seguridad del SGBD. Cotejo curricular: ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, edición 2026.1. Cotejo temático con los temas de SGBD, modelo relacional y SQL (A1-63/64 y A2-II-5). El comportamiento exacto de privilegios de columna y vistas se acredita con documentación SQL de PostgreSQL y Microsoft, no se atribuye específicamente al manual académico."
+        }
+      }
+    },
+    {
+      "id": 7867,
+      "original": {
+        "id": 7867,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale cuál de las siguientes respuestas es incorrecta:",
+        "opciones": [
+          "Los ordenadores de segunda generación, basados en circuitos integrados y multiprogramación, se programaban en FORTRAN y lenguaje ensamblador, y se usaban para cálculos científicos u de ingeniería",
+          "En los sistemas operativos de 4 generación se desarrolla por primera vez la técnica de multiprogramación, una variante de los sistemas de tiempo compartido",
+          "La primera generación de sistemas operativos surge como consecuencia de los exitosos trabajos realizados por Babbage al desarrollar su máquina analítica"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7867,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la taxonomía didáctica habitual de generaciones de computadores y sistemas operativos, ¿qué combinación se asocia con la tercera generación?",
+        "opciones": [
+          "Válvulas de vacío y operación manual o por lotes.",
+          "Transistores y procesamiento por lotes como rasgos característicos de la segunda generación.",
+          "Circuitos integrados y desarrollo de la multiprogramación.",
+          "Microprocesadores y computadores personales como rasgos característicos de la cuarta generación."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C. El reactivo original era irresoluble: atribuía circuitos integrados y multiprogramación a la segunda generación, situaba el inicio de la multiprogramación en la cuarta y vinculaba los primeros sistemas operativos con Babbage; contenía varias afirmaciones falsas. Se reemplazó por una pregunta positiva y se señala que “generaciones” es una clasificación histórica convencional cuyos límites pueden variar entre manuales. Cotejo curricular: ITIC Academy, bloque 27, Sistemas Operativos, versión 2026.1. El bloque cubre fundamentos y evolución de los sistemas operativos (A1-59/A2-II-2). La asociación concreta entre tercera generación, circuitos integrados y multiprogramación se cotejó además con materiales docentes universitarios; no se presenta la taxonomía como estándar universal.",
+        "clasificacion": {
+          "A1": [
+            "A1-59"
+          ],
+          "A2": [
+            "A2-II-2"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 27, Sistemas Operativos, versión 2026.1",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: El bloque cubre fundamentos y evolución de los sistemas operativos (A1-59/A2-II-2). La asociación concreta entre tercera generación, circuitos integrados y multiprogramación se cotejó además con materiales docentes universitarios; no se presenta la taxonomía como estándar universal."
+        },
+        "etiquetas": [
+          "historia de sistemas operativos",
+          "generaciones de computadoras",
+          "circuitos integrados",
+          "multiprogramación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://courses.grainger.illinois.edu/cs241/fa2011/lectures/04-OS-Structure.pdf",
+              "referencia": "University of Illinois Urbana-Champaign, CS 241, Operating Systems: material docente que vincula la tercera generación con circuitos integrados y multiprogramación; se usa como taxonomía didáctica convencional, no como periodización universal."
+            },
+            {
+              "url": "https://www.cise.ufl.edu/~mssz/OpSysUNIX/OpSysOvw.html",
+              "referencia": "University of Florida, Survey of Operating Systems: Overview, sección de historia, identifica la tercera generación como circuitos integrados y multiprogramación; distingue el trabajo mecánico de Babbage de los sistemas operativos electrónicos posteriores."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 27, Sistemas Operativos, versión 2026.1. El bloque cubre fundamentos y evolución de los sistemas operativos (A1-59/A2-II-2). La asociación concreta entre tercera generación, circuitos integrados y multiprogramación se cotejó además con materiales docentes universitarios; no se presenta la taxonomía como estándar universal."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-59."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-2."
+            }
+          ],
+          "observaciones": "Corregida C. El reactivo original era irresoluble: atribuía circuitos integrados y multiprogramación a la segunda generación, situaba el inicio de la multiprogramación en la cuarta y vinculaba los primeros sistemas operativos con Babbage; contenía varias afirmaciones falsas. Se reemplazó por una pregunta positiva y se señala que “generaciones” es una clasificación histórica convencional cuyos límites pueden variar entre manuales. Cotejo curricular: ITIC Academy, bloque 27, Sistemas Operativos, versión 2026.1. El bloque cubre fundamentos y evolución de los sistemas operativos (A1-59/A2-II-2). La asociación concreta entre tercera generación, circuitos integrados y multiprogramación se cotejó además con materiales docentes universitarios; no se presenta la taxonomía como estándar universal."
+        }
+      }
+    },
+    {
+      "id": 7868,
+      "original": {
+        "id": 7868,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "De entre los siguientes, ¿cuál no es uno de los servicios de certificación ofrecidos actualmente por la Fábrica Nacional de Moneda y Timbre?",
+        "opciones": [
+          "Fechado digital.",
+          "Validación on-line de certificados.",
+          "Voto electrónico en Juntas Generales de Sociedades.",
+          "Login único en sistemas Windows, Linux y Unix."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7868,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de estas prestaciones aparece en el catálogo vigente de servicios esenciales de certificación de FNMT-CERES?",
+        "opciones": [
+          "Emisión y renovación de certificados electrónicos de usuario y de representación.",
+          "Verificación de la validez de certificados por OCSP y otros mecanismos publicados.",
+          "Servicio cualificado de sellado de tiempo.",
+          "Todas las anteriores."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. El reactivo original preguntaba qué servicio no se ofrecía “actualmente”, pero mezclaba opciones de distinta época: el sellado de tiempo (también llamado fechado digital), la validación y el voto electrónico en juntas aparecen en materiales históricos de CERES, mientras que el catálogo vigente consultado ya no los presenta todos con el mismo alcance; “login único” se documentó históricamente para Windows, no como servicio universal para Windows/Linux/Unix. Se sustituyó por una pregunta positiva sobre prestaciones que el catálogo vigente sí enumera. La clasificación se limita a certificados, identidad y servicios de confianza. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El bloque aborda identidad electrónica, certificados, PKI y servicios de confianza (A1-80/81 y A2-I-6). La relación de servicios actualmente ofrecidos se verificó en el catálogo FNMT-CERES, no se infirió del temario.",
+        "clasificacion": {
+          "A1": [
+            "A1-80",
+            "A1-81"
+          ],
+          "A2": [
+            "A2-I-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: El bloque aborda identidad electrónica, certificados, PKI y servicios de confianza (A1-80/81 y A2-I-6). La relación de servicios actualmente ofrecidos se verificó en el catálogo FNMT-CERES, no se infirió del temario."
+        },
+        "etiquetas": [
+          "FNMT-CERES",
+          "OCSP",
+          "validación de certificados",
+          "servicios de confianza"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.cert.fnmt.es/catalogo-de-servicios",
+              "referencia": "FNMT-RCM/CERES, Catálogo de Servicios consultado el 16/11/2026: incluye el servicio de verificación de validez de certificados mediante OCSP, URL/HTTP y directorio LDAP, además de emisión, revocación y sellado de tiempo."
+            },
+            {
+              "url": "https://www.cert.fnmt.es/catalogo-de-servicios/validacion-de-certificados/ocsp",
+              "referencia": "FNMT-RCM/CERES, OCSP: describe la consulta remota de la validez de certificados y la respuesta firmada del servicio."
+            },
+            {
+              "url": "https://www.cert.fnmt.es/catalogo-de-servicios/sellado-de-tiempo",
+              "referencia": "FNMT-RCM/CERES, Sellado de Tiempo Cualificado: servicio actual de sellado temporal, históricamente denominado también fechado digital."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El bloque aborda identidad electrónica, certificados, PKI y servicios de confianza (A1-80/81 y A2-I-6). La relación de servicios actualmente ofrecidos se verificó en el catálogo FNMT-CERES, no se infirió del temario."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-80, A1-81."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-I-6."
+            }
+          ],
+          "observaciones": "Corregida D. El reactivo original preguntaba qué servicio no se ofrecía “actualmente”, pero mezclaba opciones de distinta época: el sellado de tiempo (también llamado fechado digital), la validación y el voto electrónico en juntas aparecen en materiales históricos de CERES, mientras que el catálogo vigente consultado ya no los presenta todos con el mismo alcance; “login único” se documentó históricamente para Windows, no como servicio universal para Windows/Linux/Unix. Se sustituyó por una pregunta positiva sobre prestaciones que el catálogo vigente sí enumera. La clasificación se limita a certificados, identidad y servicios de confianza. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. El bloque aborda identidad electrónica, certificados, PKI y servicios de confianza (A1-80/81 y A2-I-6). La relación de servicios actualmente ofrecidos se verificó en el catálogo FNMT-CERES, no se infirió del temario."
+        }
+      }
+    },
+    {
+      "id": 7869,
+      "original": {
+        "id": 7869,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre la criptografía híbrida:",
+        "opciones": [
+          "El transmisor cifra el mensaje con una clave simétrica o de sesión, y a su vez cifra esa clave simétrica con la clave privada del destinatario.",
+          "Es utilizada por Pretty Good Privacy.",
+          "También se conocen como “sobre digital”.",
+          "B) y C) son correctas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7869,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sobre el cifrado híbrido de mensajes, señale la opción correcta:",
+        "opciones": [
+          "Se cifra el mensaje con una clave de sesión simétrica y se cifra esa clave con la clave privada del destinatario.",
+          "PGP/OpenPGP combina cifrado simétrico del contenido con protección de la clave de sesión mediante clave pública.",
+          "La clave de sesión puede cifrarse con la clave pública del destinatario, que la recupera usando su clave privada; al conjunto se le suele llamar sobre digital.",
+          "B y C son correctas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. El cifrado híbrido protege el contenido con una clave simétrica de sesión y cifra o encapsula esa clave para el destinatario con su clave pública. El destinatario usa la clave privada correspondiente para recuperarla. La opción A invertía el uso de claves; OpenPGP es un ejemplo normalizado de este esquema. “Sobre digital” se presenta como denominación habitual, no como término obligatorio de todas las normas. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. Se revisaron los apartados de criptografía simétrica/asimétrica y cifrado híbrido, con encaje A1-79/A1-125 y A2-IV-12. La construcción concreta de OpenPGP se contrastó con los RFC vigentes del IETF. Fuente terminológica del sobre digital: IETF RFC 4949.",
+        "clasificacion": {
+          "A1": [
+            "A1-79",
+            "A1-125"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: Se revisaron los apartados de criptografía simétrica/asimétrica y cifrado híbrido, con encaje A1-79/A1-125 y A2-IV-12. La construcción concreta de OpenPGP se contrastó con los RFC vigentes del IETF."
+        },
+        "etiquetas": [
+          "criptografía híbrida",
+          "PGP",
+          "OpenPGP",
+          "clave de sesión",
+          "sobre digital"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9580.html",
+              "referencia": "IETF RFC 9580, OpenPGP: especifica paquetes de clave de sesión cifrada con clave pública y cifrado simétrico del mensaje; el receptor descifra la clave de sesión con su clave privada."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1991.html",
+              "referencia": "IETF RFC 1991, PGP Message Exchange Formats: describe PGP cifrando el mensaje con una clave de sesión simétrica y protegiendo dicha clave con la clave pública del destinatario; fuente histórica para el término PGP."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9180.html",
+              "referencia": "IETF RFC 9180, Hybrid Public Key Encryption: norma la combinación de encapsulación de claves de clave pública y cifrado simétrico del texto."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. Se revisaron los apartados de criptografía simétrica/asimétrica y cifrado híbrido, con encaje A1-79/A1-125 y A2-IV-12. La construcción concreta de OpenPGP se contrastó con los RFC vigentes del IETF."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-79, A1-125."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-12."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4949.html",
+              "referencia": "IETF RFC 4949, Internet Security Glossary, definition of digital envelope: encrypted content plus the recipient-prepared encrypted content-encryption key; its tutorial identifies digital enveloping as a hybrid encryption scheme."
+            }
+          ],
+          "observaciones": "Corregida D. El cifrado híbrido protege el contenido con una clave simétrica de sesión y cifra o encapsula esa clave para el destinatario con su clave pública. El destinatario usa la clave privada correspondiente para recuperarla. La opción A invertía el uso de claves; OpenPGP es un ejemplo normalizado de este esquema. “Sobre digital” se presenta como denominación habitual, no como término obligatorio de todas las normas. Cotejo curricular: ITIC Academy, bloque 36, Seguridad, Criptografía, Identificación y Firma, versión 2026.1. Se revisaron los apartados de criptografía simétrica/asimétrica y cifrado híbrido, con encaje A1-79/A1-125 y A2-IV-12. La construcción concreta de OpenPGP se contrastó con los RFC vigentes del IETF."
+        }
+      }
+    },
+    {
+      "id": 7870,
+      "original": {
+        "id": 7870,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Sin perjuicio de otras que garanticen los mismos derechos, ¿qué licencia recomienda el Esquema Nacional de Interoperabilidad para las aplicaciones de las cuales las Administraciones públicas sean titulares de los derechos de propiedad intelectual?",
+        "opciones": [
+          "DWPL (Do Whatever Public Licence)",
+          "GPL (General Public License)",
+          "EUPL (Licencia Pública de la Unión Europea)",
+          "FOSS (Free and Open Source Software)"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7870,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el artículo 16.3 del Esquema Nacional de Interoperabilidad vigente, para aplicaciones de fuente abierta cuyos derechos pertenezcan a una Administración Pública:",
+        "opciones": [
+          "Se debe emplear exclusivamente GPL, sin aceptar licencias equivalentes.",
+          "Se prohíbe que otra Administración reutilice la aplicación.",
+          "Se procurará aplicar la EUPL, sin perjuicio de otras licencias que garanticen los mismos derechos previstos en el artículo.",
+          "FOSS es la licencia específica recomendada por el ENI."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C. El artículo 16.3 consolidado del ENI no impone EUPL como licencia única: dispone que se procurará su aplicación, sin perjuicio de otras licencias que garanticen los mismos derechos exigidos. Se actualizó la referencia al texto vigente, modificado por el RD 203/2021. Cotejo curricular: ITIC Academy, bloque 20, Interoperabilidad de sistemas, versión 2026.2. El bloque incluye el ENI y reutilización de aplicaciones, y explica que el uso de EUPL se procura sin convertirla en licencia única; encaje A1-45/A2-I-9. La respuesta jurídica se comprobó en el ENI consolidado en BOE.",
+        "clasificacion": {
+          "A1": [
+            "A1-45"
+          ],
+          "A2": [
+            "A2-I-9"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 20, Interoperabilidad de sistemas, versión 2026.2",
+          "estado": "revisada",
+          "nota": "Cotejo curricular: El bloque incluye el ENI y reutilización de aplicaciones, y explica que el uso de EUPL se procura sin convertirla en licencia única; encaje A1-45/A2-I-9. La respuesta jurídica se comprobó en el ENI consolidado en BOE."
+        },
+        "etiquetas": [
+          "ENI",
+          "EUPL",
+          "reutilización de software público",
+          "licencias de fuente abierta"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-1331&p=20210331&tn=0",
+              "referencia": "Real Decreto 4/2010, de 8 de enero, ENI, artículo 16.3 consolidado tras RD 203/2021: para las aplicaciones declaradas de fuentes abiertas de las que una Administración es titular de derechos, se procurará aplicar la EUPL, sin excluir otras licencias que aseguren las mismas garantías."
+            },
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-5032",
+              "referencia": "Real Decreto 203/2021, artículo cuarto, modificación del artículo 16 del ENI: actualiza las condiciones de licenciamiento y mantiene la fórmula “se procurará” para EUPL."
+            },
+            {
+              "url": "https://interoperable-europe.ec.europa.eu/collection/eupl/eupl-text-eupl-12",
+              "referencia": "Comisión Europea, European Union Public Licence 1.2, texto oficial de la licencia y garantías de reutilización."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1zdx_PRBfKM9tRy61Boz_yPekU-D-b_6S/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 20, Interoperabilidad de sistemas, versión 2026.2. El bloque incluye el ENI y reutilización de aplicaciones, y explica que el uso de EUPL se procura sin convertirla en licencia única; encaje A1-45/A2-I-9. La respuesta jurídica se comprobó en el ENI consolidado en BOE."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-45."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-I-9."
+            }
+          ],
+          "observaciones": "Corregida C. El artículo 16.3 consolidado del ENI no impone EUPL como licencia única: dispone que se procurará su aplicación, sin perjuicio de otras licencias que garanticen los mismos derechos exigidos. Se actualizó la referencia al texto vigente, modificado por el RD 203/2021. Cotejo curricular: ITIC Academy, bloque 20, Interoperabilidad de sistemas, versión 2026.2. El bloque incluye el ENI y reutilización de aplicaciones, y explica que el uso de EUPL se procura sin convertirla en licencia única; encaje A1-45/A2-I-9. La respuesta jurídica se comprobó en el ENI consolidado en BOE."
+        }
+      }
+    }
+  ]
+}
