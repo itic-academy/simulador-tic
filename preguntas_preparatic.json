@@ -414798,71 +414798,283 @@
       "id": 7791,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si accedemos a un sitio https y recibimos un aviso de que la autoridad de certificación que ha emitido el certificado de servidor no es reconocida por nosotros, y aun así aceptamos establecer comunicación con ese servidor, ¿la comunicación entre cliente y servidor será cifrada?",
+      "texto": "Si un navegador permite continuar tras avisar de que no confía en la autoridad certificadora del servidor y el handshake TLS termina correctamente, ¿qué afirmación es correcta?",
       "opciones": [
-        "No, puesto que el certificado no es válido.",
-        "Sí, puesto que el certificado permite cifrar esa comunicación, aunque haya sido emitido por una autoridad en la que no confiamos.",
-        "No, puesto que aunque hayamos aceptado ese certificado no podemos utilizarlo para hacer el cifrado de información.",
-        "Sí, porque al aceptar el cifrado se va a realizar con un certificado de cliente."
+        "El canal no puede cifrarse porque la cadena del certificado no es de confianza.",
+        "El canal puede quedar cifrado con claves de sesión, pero no queda validada de forma fiable la identidad del servidor mediante una cadena de confianza.",
+        "Aceptar el aviso hace que el certificado del servidor se use como certificado de cliente.",
+        "El certificado por sí mismo cifra toda la comunicación, sin negociación de claves."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. TLS deriva claves de tráfico durante el handshake y cifra/protege los datos posteriores aunque la aplicación permita continuar tras una alerta de confianza. La cadena no confiable afecta a la autenticación de la identidad del servidor; el certificado no es, por sí solo, la clave de cifrado de todo el canal. Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y aplicaciones, actualización 2026. El índice incluye PKI/certificados (apartado 4.1) y TLS/HTTPS (apartado 8.2); se coteja el área temática, mientras que el efecto de una CA no confiable sobre autenticación y cifrado se fundamenta en RFC 8446.",
+      "clasificacion": {
+        "A1": [
+          "A1-80",
+          "A1-82",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-IV-12"
+        ],
+        "bloque_academia": "bloque 48 Seguridad en redes y aplicaciones, actualización 2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El índice incluye PKI/certificados (apartado 4.1) y TLS/HTTPS (apartado 8.2); se coteja el área temática, mientras que el efecto de una CA no confiable sobre autenticación y cifrado se fundamenta en RFC 8446."
+      },
+      "etiquetas": [
+        "TLS",
+        "HTTPS",
+        "certificados X.509",
+        "confianza de CA",
+        "cifrado de sesión",
+        "autenticación de servidor"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/info/rfc8446",
+            "referencia": "IETF RFC 8446, TLS 1.3, secciones 2, 4 y 5: el handshake negocia modos criptográficos y establece material de claves compartido; la autenticación del servidor y el canal cifrado son propiedades relacionadas pero distintas. Tras completar el handshake, el protocolo de registros protege los datos con claves de tráfico."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y aplicaciones, actualización 2026. El índice incluye PKI/certificados (apartado 4.1) y TLS/HTTPS (apartado 8.2); se coteja el área temática, mientras que el efecto de una CA no confiable sobre autenticación y cifrado se fundamenta en RFC 8446."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-80, A1-82, A1-125."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-12."
+          }
+        ],
+        "observaciones": "Corregida B. TLS deriva claves de tráfico durante el handshake y cifra/protege los datos posteriores aunque la aplicación permita continuar tras una alerta de confianza. La cadena no confiable afecta a la autenticación de la identidad del servidor; el certificado no es, por sí solo, la clave de cifrado de todo el canal. Cotejo curricular: ITIC Academy, bloque 48 Seguridad en redes y aplicaciones, actualización 2026. El índice incluye PKI/certificados (apartado 4.1) y TLS/HTTPS (apartado 8.2); se coteja el área temática, mientras que el efecto de una CA no confiable sobre autenticación y cifrado se fundamenta en RFC 8446."
+      }
     },
     {
       "id": 7792,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la Ley 40/2015, el principio de neutralidad relativo a la sede electrónica, pretende garantizar:",
+      "texto": "Conforme al artículo 2.a) del Real Decreto 203/2021, el principio de neutralidad tecnológica y adaptabilidad pretende garantizar:",
       "opciones": [
-        "la independencia en la elección de las alternativas tecnológicas por los ciudadanos y por las Administraciones públicas.",
-        "la igualdad de los ciudadanos cuando se relacionen con las Administraciones públicas usen medios electrónicos o no.",
+        "la independencia en la elección de alternativas tecnológicas para relacionarse con las Administraciones por las personas interesadas y el sector público, así como la libertad de desarrollar e implantar avances tecnológicos.",
+        "la igualdad de las personas cuando se relacionen con las Administraciones por medios electrónicos o no electrónicos.",
         "el acceso a la información sin dependencias de huso horario.",
-        "el acceso a la información, sin dependencia de los idiomas naturales de usuario y Administraciones."
+        "el acceso a la información sin dependencia de los idiomas naturales de usuarios y Administraciones."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. La Ley 40/2015 incluye neutralidad entre los principios de las sedes electrónicas; el artículo 2.a) del RD 203/2021 concreta su contenido en independencia de elección tecnológica y libertad de desarrollo e implantación de avances. Cotejo curricular: ITIC Academy, bloque 03 Actuación administrativa y administración digital, versión 2026.2. El temario incluye A1-22 y A2-O8; su apartado 2.9 trata el funcionamiento electrónico del sector público. El cotejo académico es curricular y la definición jurídica se apoya en Ley 40/2015 y RD 203/2021.",
+      "clasificacion": {
+        "A1": [
+          "A1-22"
+        ],
+        "A2": [
+          "A2-I-9"
+        ],
+        "bloque_academia": "bloque 03 Actuación administrativa y administración digital, versión 2026.2",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El temario incluye A1-22 y A2-O8; su apartado 2.9 trata el funcionamiento electrónico del sector público. El cotejo académico es curricular y la definición jurídica se apoya en Ley 40/2015 y RD 203/2021."
+      },
+      "etiquetas": [
+        "Administración electrónica",
+        "neutralidad tecnológica",
+        "sede electrónica",
+        "RD 203/2021",
+        "Ley 40/2015"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566",
+            "referencia": "Ley 40/2015, artículo 38.3: incluye la neutralidad entre los principios que rigen las sedes electrónicas."
+          },
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-5032",
+            "referencia": "Real Decreto 203/2021, artículo 2.a): neutralidad tecnológica y adaptabilidad garantizan la independencia al elegir alternativas tecnológicas necesarias para relacionarse con las Administraciones y la libertad de desarrollar e implantar avances."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1VhLN803FteKuJ9zVjQSomuig_1x9fBSP/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 03 Actuación administrativa y administración digital, versión 2026.2. El temario incluye A1-22 y A2-O8; su apartado 2.9 trata el funcionamiento electrónico del sector público. El cotejo académico es curricular y la definición jurídica se apoya en Ley 40/2015 y RD 203/2021."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-22."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-I-9."
+          }
+        ],
+        "observaciones": "Corregida A. La Ley 40/2015 incluye neutralidad entre los principios de las sedes electrónicas; el artículo 2.a) del RD 203/2021 concreta su contenido en independencia de elección tecnológica y libertad de desarrollo e implantación de avances. Cotejo curricular: ITIC Academy, bloque 03 Actuación administrativa y administración digital, versión 2026.2. El temario incluye A1-22 y A2-O8; su apartado 2.9 trata el funcionamiento electrónico del sector público. El cotejo académico es curricular y la definición jurídica se apoya en Ley 40/2015 y RD 203/2021."
+      }
     },
     {
       "id": 7793,
       "bloque": 0,
       "tema": 0,
-      "texto": "El crédito presupuestario es...",
+      "texto": "Según el artículo 35.1 de la Ley 47/2003, General Presupuestaria, un crédito presupuestario es:",
       "opciones": [
-        "El sujeto que realiza el gasto",
-        "El fin que se persigue con la realización del gasto",
-        "El dinero que se asigna a la realización del gasto",
-        "El concepto del gasto, es decir: aquello en lo que se realiza el gasto"
+        "el órgano o sujeto que realiza el gasto.",
+        "la finalidad general que se persigue al ejecutar el presupuesto.",
+        "cada asignación individualizada de gasto aprobada en el presupuesto y puesta a disposición de un centro gestor para cubrir la necesidad correspondiente.",
+        "la clasificación económica del gasto, es decir, aquello en lo que se gasta."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. Se sustituye la definición coloquial como “dinero asignado” por la definición legal: asignación individualizada de gasto puesta a disposición del centro gestor para la necesidad aprobada. Cotejo curricular: ITIC Academy, bloque 05 Contratación, presupuestos, convenios y compra TIC, actualización 2026. El temario se declara A1 y recoge en el tema 12 los Presupuestos Generales del Estado, estructura, ejecución del gasto y control. El cotejo confirma pertinencia curricular del bloque, no una definición literal del crédito; esta se contrasta con el artículo 35 de la Ley 47/2003.",
+      "clasificacion": {
+        "A1": [
+          "A1-12"
+        ],
+        "A2": [],
+        "bloque_academia": "bloque 05 Contratación, presupuestos, convenios y compra TIC, actualización 2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El temario se declara A1 y recoge en el tema 12 los Presupuestos Generales del Estado, estructura, ejecución del gasto y control. El cotejo confirma pertinencia curricular del bloque, no una definición literal del crédito; esta se contrasta con el artículo 35 de la Ley 47/2003."
+      },
+      "etiquetas": [
+        "presupuestos",
+        "crédito presupuestario",
+        "Ley 47/2003",
+        "ejecución del gasto"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-21614",
+            "referencia": "Ley 47/2003, General Presupuestaria, artículo 35.1: crédito presupuestario es cada asignación individualizada de gasto que figura en los presupuestos y se pone a disposición de centros gestores para cubrir las necesidades para las que fue aprobada."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 05 Contratación, presupuestos, convenios y compra TIC, actualización 2026. El temario se declara A1 y recoge en el tema 12 los Presupuestos Generales del Estado, estructura, ejecución del gasto y control. El cotejo confirma pertinencia curricular del bloque, no una definición literal del crédito; esta se contrasta con el artículo 35 de la Ley 47/2003."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-12."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): sin correspondencia directa."
+          }
+        ],
+        "observaciones": "Corregida C. Se sustituye la definición coloquial como “dinero asignado” por la definición legal: asignación individualizada de gasto puesta a disposición del centro gestor para la necesidad aprobada. Cotejo curricular: ITIC Academy, bloque 05 Contratación, presupuestos, convenios y compra TIC, actualización 2026. El temario se declara A1 y recoge en el tema 12 los Presupuestos Generales del Estado, estructura, ejecución del gasto y control. El cotejo confirma pertinencia curricular del bloque, no una definición literal del crédito; esta se contrasta con el artículo 35 de la Ley 47/2003."
+      }
     },
     {
       "id": 7794,
       "bloque": 0,
       "tema": 0,
-      "texto": "Con respecto a la revisión de la solvencia de las empresas clasificadas:",
+      "texto": "Al acreditar la solvencia técnica o profesional en contratos de suministro o de servicios, ¿qué periodo de experiencia previa se toma como regla general?",
       "opciones": [
-        "La solvencia económica y financiera se revisa cada tres años",
-        "La solvencia técnica se revisa cada año",
-        "El plazo de cómputo de la experiencia para la solvencia técnica es de tres años en suministros y servicios",
-        "La solvencia técnica y la solvencia económico-financiera se revisarán cada año"
+        "Las prestaciones realizadas en los últimos doce meses.",
+        "Las prestaciones realizadas en los últimos cinco años, sin excepciones.",
+        "Los principales suministros o servicios pertinentes ejecutados en los tres últimos años; en los supuestos legales puede admitirse experiencia anterior para garantizar competencia adecuada.",
+        "No se puede utilizar la experiencia previa como medio de acreditación."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. El enunciado original mezclaba el periodo de referencia de experiencia técnica en suministros/servicios (arts. 89 y 90 LCSP) con la revisión periódica de solvencia para conservar una clasificación empresarial (art. 82.2: solvencia financiera anual y técnica cada tres años). Se separan ambos conceptos y se enuncia la regla general con su excepción de competencia. Cotejo curricular: ITIC Academy, bloque 05 Contratación, presupuestos, convenios y compra TIC, actualización 2026. El tema 11 del programa A1 cubre contratos del sector público y la solvencia empresarial; cotejo curricular con el bloque de contratación. La separación entre acreditación de experiencia (arts. 89–90) y mantenimiento de clasificación (art. 82.2) se resuelve con el texto vigente de la LCSP, no se atribuye al temario de academia.",
+      "clasificacion": {
+        "A1": [
+          "A1-11"
+        ],
+        "A2": [],
+        "bloque_academia": "bloque 05 Contratación, presupuestos, convenios y compra TIC, actualización 2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El tema 11 del programa A1 cubre contratos del sector público y la solvencia empresarial; cotejo curricular con el bloque de contratación. La separación entre acreditación de experiencia (arts. 89–90) y mantenimiento de clasificación (art. 82.2) se resuelve con el texto vigente de la LCSP, no se atribuye al temario de academia."
+      },
+      "etiquetas": [
+        "LCSP",
+        "clasificación empresarial",
+        "solvencia técnica",
+        "suministros",
+        "servicios",
+        "experiencia previa"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902",
+            "referencia": "Ley 9/2017, de Contratos del Sector Público, artículos 89.1.a) y 90.1.a): para acreditar solvencia técnica/profesional en suministros y servicios se atiende, como regla general, a la relación de los principales suministros o servicios ejecutados en los tres últimos años; si es necesario para garantizar competencia adecuada, puede admitirse prueba de prestaciones pertinentes más antiguas."
+          },
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902",
+            "referencia": "Ley 9/2017, artículo 82.2: una cuestión distinta es la conservación de la clasificación empresarial; exige justificar anualmente el mantenimiento de solvencia económica-financiera y cada tres años el de solvencia técnica-profesional."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1yES3Mqsnk5LotPBx4HKU7pCiPfVD5ciZ/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 05 Contratación, presupuestos, convenios y compra TIC, actualización 2026. El tema 11 del programa A1 cubre contratos del sector público y la solvencia empresarial; cotejo curricular con el bloque de contratación. La separación entre acreditación de experiencia (arts. 89–90) y mantenimiento de clasificación (art. 82.2) se resuelve con el texto vigente de la LCSP, no se atribuye al temario de academia."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-11."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): sin correspondencia directa."
+          }
+        ],
+        "observaciones": "Corregida C. El enunciado original mezclaba el periodo de referencia de experiencia técnica en suministros/servicios (arts. 89 y 90 LCSP) con la revisión periódica de solvencia para conservar una clasificación empresarial (art. 82.2: solvencia financiera anual y técnica cada tres años). Se separan ambos conceptos y se enuncia la regla general con su excepción de competencia. Cotejo curricular: ITIC Academy, bloque 05 Contratación, presupuestos, convenios y compra TIC, actualización 2026. El tema 11 del programa A1 cubre contratos del sector público y la solvencia empresarial; cotejo curricular con el bloque de contratación. La separación entre acreditación de experiencia (arts. 89–90) y mantenimiento de clasificación (art. 82.2) se resuelve con el texto vigente de la LCSP, no se atribuye al temario de academia."
+      }
     },
     {
       "id": 7795,
       "bloque": 0,
       "tema": 0,
-      "texto": "Entre los vocales del Consejo Consultivo de la Agencia de Protección de Datos existirá:",
+      "texto": "Según el artículo 49.1 de la Ley Orgánica 3/2018, el Consejo Consultivo de la Agencia Española de Protección de Datos incluye:",
       "opciones": [
-        "Un diputado nombrado a propuesta del Congreso de los Diputados y un senador nombrado a propuesta del Senado",
-        "Un vocal nombrado a propuesta del Consejo Superior de Informática",
-        "Un magistrado nombrado a propuesta del Consejo General del Poder Judicial",
-        "Un abogado del Estado"
+        "un diputado propuesto por el Congreso y un senador propuesto por el Senado.",
+        "un vocal propuesto por el Consejo Superior de Informática.",
+        "necesariamente un magistrado designado por el Consejo General del Poder Judicial.",
+        "un abogado del Estado como miembro cuya presencia exige expresamente el artículo 49."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. El artículo 49.1.a) y b) dispone un diputado propuesto por el Congreso y un senador propuesto por el Senado. Se precisó el enunciado porque la ley habla de un representante designado por el CGPJ y no exige la condición de magistrado; también se evita presentar como obligatoria la presencia de un abogado del Estado. Cotejo curricular: ITIC Academy, bloque 08 Protección de datos, actualización 2026.3. El programa A1-27 y A2-O7 incluye el régimen jurídico y autoridades de protección de datos; el bloque dedica el apartado 8.1 a la AEPD. El cotejo acredita cobertura temática, mientras que la composición concreta se confirma con el artículo 49 de la LO 3/2018.",
+      "clasificacion": {
+        "A1": [
+          "A1-27"
+        ],
+        "A2": [
+          "A2-I-7"
+        ],
+        "bloque_academia": "bloque 08 Protección de datos, actualización 2026.3",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El programa A1-27 y A2-O7 incluye el régimen jurídico y autoridades de protección de datos; el bloque dedica el apartado 8.1 a la AEPD. El cotejo acredita cobertura temática, mientras que la composición concreta se confirma con el artículo 49 de la LO 3/2018."
+      },
+      "etiquetas": [
+        "AEPD",
+        "Consejo Consultivo",
+        "LOPDGDD",
+        "LO 3/2018",
+        "protección de datos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673",
+            "referencia": "Ley Orgánica 3/2018, artículo 49.1.a) y b): integran el Consejo Consultivo de la AEPD un diputado propuesto por el Congreso y un senador propuesto por el Senado; el artículo no exige que el representante del CGPJ sea magistrado."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1uS8S8axBSb22s9Dbv2mTsFaHUUVlowiM/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 08 Protección de datos, actualización 2026.3. El programa A1-27 y A2-O7 incluye el régimen jurídico y autoridades de protección de datos; el bloque dedica el apartado 8.1 a la AEPD. El cotejo acredita cobertura temática, mientras que la composición concreta se confirma con el artículo 49 de la LO 3/2018."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-27."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-I-7."
+          }
+        ],
+        "observaciones": "Corregida A. El artículo 49.1.a) y b) dispone un diputado propuesto por el Congreso y un senador propuesto por el Senado. Se precisó el enunciado porque la ley habla de un representante designado por el CGPJ y no exige la condición de magistrado; también se evita presentar como obligatoria la presencia de un abogado del Estado. Cotejo curricular: ITIC Academy, bloque 08 Protección de datos, actualización 2026.3. El programa A1-27 y A2-O7 incluye el régimen jurídico y autoridades de protección de datos; el bloque dedica el apartado 8.1 a la AEPD. El cotejo acredita cobertura temática, mientras que la composición concreta se confirma con el artículo 49 de la LO 3/2018."
+      }
     },
     {
       "id": 7796,
