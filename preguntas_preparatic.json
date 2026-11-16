@@ -414512,71 +414512,287 @@
       "id": 7786,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes redes WAN está orientada a conexión?",
+      "texto": "¿Qué tecnología WAN de conmutación de paquetes ofrece un entorno conmutado mediante circuitos virtuales y, en ese sentido, es orientada a conexión?",
       "opciones": [
-        "Una red IP.",
-        "Una red ATM.",
+        "Una red IP de datagramas.",
+        "Una red ATM (Asynchronous Transfer Mode).",
         "Una red UMTS.",
         "Ninguna de las anteriores."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. El enunciado delimita la propiedad a la conmutación WAN basada en circuitos virtuales: ATM establece conexiones virtuales (PVC/SVC). IP de datagramas es sin conexión; UMTS abarca dominios y servicios distintos y no sirve como distractor para la propiedad concreta de ATM. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. Apartado 7.2 ATM: modo de transferencia asíncrono y redes WAN de transporte/conmutación; cotejado con el tratamiento de circuitos virtuales de la fuente IETF.",
+      "clasificacion": {
+        "A1": [
+          "A1-108",
+          "A1-113"
+        ],
+        "A2": [
+          "A2-IV-10"
+        ],
+        "bloque_academia": "bloque 42 Redes, actualización 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Apartado 7.2 ATM: modo de transferencia asíncrono y redes WAN de transporte/conmutación; cotejado con el tratamiento de circuitos virtuales de la fuente IETF."
+      },
+      "etiquetas": [
+        "WAN",
+        "ATM",
+        "Asynchronous Transfer Mode",
+        "circuitos virtuales",
+        "conmutación orientada a conexión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/info/rfc2225",
+            "referencia": "IETF RFC 2225, Classical IP and ARP over ATM: ATM ofrece un entorno conmutado por conexiones virtuales (VC); contempla PVC y SVC."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. Apartado 7.2 ATM: modo de transferencia asíncrono y redes WAN de transporte/conmutación; cotejado con el tratamiento de circuitos virtuales de la fuente IETF."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-108, A1-113."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-10."
+          }
+        ],
+        "observaciones": "Corregida B. El enunciado delimita la propiedad a la conmutación WAN basada en circuitos virtuales: ATM establece conexiones virtuales (PVC/SVC). IP de datagramas es sin conexión; UMTS abarca dominios y servicios distintos y no sirve como distractor para la propiedad concreta de ATM. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. Apartado 7.2 ATM: modo de transferencia asíncrono y redes WAN de transporte/conmutación; cotejado con el tratamiento de circuitos virtuales de la fuente IETF."
+      }
     },
     {
       "id": 7787,
       "bloque": 0,
       "tema": 0,
-      "texto": "En una trama Ethernet, ¿qué valor en binario toma el campo delimitador de inicio de trama?",
+      "texto": "En el formato MAC de Ethernet de IEEE 802.3, ¿qué secuencia de bits identifica el campo Start Frame Delimiter (SFD)?",
       "opciones": [
-        "10101011",
-        "10101010",
-        "11111111",
-        "01111110"
+        "10101011.",
+        "10101010.",
+        "11111111.",
+        "01111110."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Vigente A. El preámbulo repite 10101010; el octeto SFD que lo sigue es 10101011. Se añadió el nombre completo y la referencia a IEEE 802.3 para fijar el formato al que se refiere la secuencia. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. Cotejo curricular con Ethernet/IEEE 802.3 y redes de área local; el material consultado no desarrolla explícitamente el patrón binario SFD, por lo que ese detalle se verificó en el estándar IEEE.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "bloque 42 Redes, actualización 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Cotejo curricular con Ethernet/IEEE 802.3 y redes de área local; el material consultado no desarrolla explícitamente el patrón binario SFD, por lo que ese detalle se verificó en el estándar IEEE."
+      },
+      "etiquetas": [
+        "Ethernet",
+        "IEEE 802.3",
+        "trama",
+        "SFD",
+        "Start Frame Delimiter",
+        "delimitador de inicio"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.3/10422/",
+            "referencia": "IEEE Std 802.3-2022, Standard for Ethernet, MAC frame: el campo Start Frame Delimiter sigue al preámbulo y usa la secuencia de bits 10101011."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. Cotejo curricular con Ethernet/IEEE 802.3 y redes de área local; el material consultado no desarrolla explícitamente el patrón binario SFD, por lo que ese detalle se verificó en el estándar IEEE."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-118."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-8."
+          }
+        ],
+        "observaciones": "Vigente A. El preámbulo repite 10101010; el octeto SFD que lo sigue es 10101011. Se añadió el nombre completo y la referencia a IEEE 802.3 para fijar el formato al que se refiere la secuencia. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. Cotejo curricular con Ethernet/IEEE 802.3 y redes de área local; el material consultado no desarrolla explícitamente el patrón binario SFD, por lo que ese detalle se verificó en el estándar IEEE."
+      }
     },
     {
       "id": 7788,
       "bloque": 0,
       "tema": 0,
-      "texto": "La autonegociación Ethernet determina:",
+      "texto": "En la autonegociación Ethernet, ¿cuál de estos parámetros del enlace puede acordarse entre extremos compatibles?",
       "opciones": [
-        "El modo de spanning tree a utilizar.",
+        "El modo de spanning tree.",
         "El modo dúplex.",
-        "La calidad de servicio.",
-        "La tasa de errores máxima soportada por el enlace."
+        "La política de calidad de servicio de la red.",
+        "La tasa máxima de errores admisible."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. La autonegociación anuncia capacidades y resuelve parámetros compatibles como velocidad y dúplex (y, para 1000BASE-T, MASTER/SLAVE). Se precisa que el dúplex es uno de esos parámetros, no el único que se negocia. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. El texto explica que la autonegociación (cláusula 28) acuerda velocidad y modo dúplex en enlaces de par trenzado; se comprobó también el alcance para 1000BASE-T en la interpretación IEEE.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "bloque 42 Redes, actualización 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El texto explica que la autonegociación (cláusula 28) acuerda velocidad y modo dúplex en enlaces de par trenzado; se comprobó también el alcance para 1000BASE-T en la interpretación IEEE."
+      },
+      "etiquetas": [
+        "Ethernet",
+        "IEEE 802.3",
+        "autonegociación",
+        "dúplex",
+        "velocidad de enlace"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.3/10422/",
+            "referencia": "IEEE Std 802.3, cláusulas 28/40: la autonegociación comunica capacidades y permite resolver los parámetros comunes del enlace; en 1000BASE-T se negocian velocidad y modo dúplex."
+          },
+          {
+            "url": "https://www.ieee802.org/3/interp/interp-2-0705.pdf",
+            "referencia": "IEEE 802.3 Interpretation 2-07/05, cláusulas 37 y 40.5.1: describe la negociación de velocidad, dúplex y, en 1000BASE-T, la selección MASTER/SLAVE."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. El texto explica que la autonegociación (cláusula 28) acuerda velocidad y modo dúplex en enlaces de par trenzado; se comprobó también el alcance para 1000BASE-T en la interpretación IEEE."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-118."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-8."
+          }
+        ],
+        "observaciones": "Corregida B. La autonegociación anuncia capacidades y resuelve parámetros compatibles como velocidad y dúplex (y, para 1000BASE-T, MASTER/SLAVE). Se precisa que el dúplex es uno de esos parámetros, no el único que se negocia. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. El texto explica que la autonegociación (cláusula 28) acuerda velocidad y modo dúplex en enlaces de par trenzado; se comprobó también el alcance para 1000BASE-T en la interpretación IEEE."
+      }
     },
     {
       "id": 7789,
       "bloque": 0,
       "tema": 0,
-      "texto": "Según el Reglamento Técnico y de Prestación del Servicio de Telecomunicaciones por Cable (RD 2066/96), ¿qué se entiende por servicio de vídeo bajo demanda?",
+      "texto": "Según la definición histórica del artículo 42.b del Reglamento aprobado por el Real Decreto 2066/1996, ¿qué se entendía por servicio de vídeo bajo demanda?",
       "opciones": [
-        "Consiste en la difusión mediante redes de cable de imágenes no permanentes con su sonido asociado, transmitidas en un solo sentido, codificadas o no, que constituyen una programación prefijada dirigida de forma simultánea a una multiplicidad de usuarios sin posibilidad de interactuar sobre el servicio.",
-        "Consiste en la distribución de un programa audiovisual en el que el usuario final interactúa con la red para seleccionar el programa deseado y el momento del suministro.",
-        "Consiste en la difusión de programas audiovisuales en el que el usuario final interactúa con la red para acceder al programa deseado, que le es suministrado en un momento prefijado por la red.",
-        "Servicio de valor añadido de telecomunicaciones por cable consistente en la distribución o intercambio de información bajo la forma de imágenes, sonidos, textos, gráficos o combinación de ellos que requieren de un canal de retorno para su prestación."
+        "Difusión lineal simultánea de una programación prefijada, sin interacción del usuario.",
+        "Distribución de un programa en la que el usuario interactúa con la red para seleccionar el programa y el momento de suministro.",
+        "Difusión interactiva en la que la red fija el momento de suministro del programa elegido.",
+        "Servicio de valor añadido de telecomunicaciones por cable que requiere un canal de retorno."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Histórica B. Es la definición del artículo 42.b del RD 2066/1996. No debe confundirse con la difusión lineal del apartado a), ni con vídeo a la carta del apartado c), donde el momento de suministro lo fija la red; se explicita que la referencia es histórica y sectorial. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. Apartado 8.3, Telecomunicaciones por cable/CATV (A1-121): incluye vídeo bajo demanda entre los servicios prestados sobre redes de cable. La definición del distractor/respuesta se confirmó únicamente en el artículo 42.b del BOE.",
+      "clasificacion": {
+        "A1": [
+          "A1-121"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": "bloque 42 Redes, actualización 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Apartado 8.3, Telecomunicaciones por cable/CATV (A1-121): incluye vídeo bajo demanda entre los servicios prestados sobre redes de cable. La definición del distractor/respuesta se confirmó únicamente en el artículo 42.b del BOE."
+      },
+      "etiquetas": [
+        "CATV",
+        "telecomunicaciones por cable",
+        "vídeo bajo demanda",
+        "vídeo a la carta",
+        "RD 2066/1996",
+        "servicio audiovisual"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-21311",
+            "referencia": "Real Decreto 2066/1996, Reglamento de Telecomunicaciones por Cable, artículo 42.b: define históricamente vídeo bajo demanda como distribución en que el usuario interactúa para seleccionar programa y momento del suministro."
+          },
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-11311",
+            "referencia": "Ley 13/2022, General de Comunicación Audiovisual: marco legal actual de los servicios de comunicación audiovisual; la pregunta se conserva como definición histórica expresamente atribuida al RD 2066/1996, no como clasificación normativa actual."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. Apartado 8.3, Telecomunicaciones por cable/CATV (A1-121): incluye vídeo bajo demanda entre los servicios prestados sobre redes de cable. La definición del distractor/respuesta se confirmó únicamente en el artículo 42.b del BOE."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-121."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-7."
+          }
+        ],
+        "observaciones": "Histórica B. Es la definición del artículo 42.b del RD 2066/1996. No debe confundirse con la difusión lineal del apartado a), ni con vídeo a la carta del apartado c), donde el momento de suministro lo fija la red; se explicita que la referencia es histórica y sectorial. Cotejo curricular: ITIC Academy, bloque 42 Redes, actualización 2026.1. Apartado 8.3, Telecomunicaciones por cable/CATV (A1-121): incluye vídeo bajo demanda entre los servicios prestados sobre redes de cable. La definición del distractor/respuesta se confirmó únicamente en el artículo 42.b del BOE."
+      }
     },
     {
       "id": 7790,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué banda de frecuencias tiene asignada la tecnología DECT 6.0 comúnmente en Europa?",
+      "texto": "¿Cuál es la banda de frecuencias más comúnmente asignada a DECT en Europa?",
       "opciones": [
-        "900MHz.",
-        "1880-1900MHz.",
-        "1920-1930MHz.",
-        "2,4GHz - 5,8GHz."
+        "900 MHz.",
+        "1880–1900 MHz.",
+        "1920–1930 MHz.",
+        "2,4–5,8 GHz."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. ETSI identifica 1880–1900 MHz como la asignación DECT más común y describe bandas adicionales en otras regiones. Se retiró “DECT 6.0”, denominación regional que podía inducir a confundir el plan europeo con otros planes de frecuencia. Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas, actualización 2026. Cotejo de proximidad con redes y acceso inalámbricos; el texto extraído no contiene la tecnología DECT ni su banda, así que se documenta como cobertura curricular adyacente/no explícita y no como correspondencia verificada.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": "bloque 46 Redes inalámbricas, actualización 2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Cotejo de proximidad con redes y acceso inalámbricos; el texto extraído no contiene la tecnología DECT ni su banda, así que se documenta como cobertura curricular adyacente/no explícita y no como correspondencia verificada."
+      },
+      "etiquetas": [
+        "DECT",
+        "telefonía inalámbrica",
+        "espectro radioeléctrico",
+        "Europa",
+        "1880-1900 MHz"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.etsi.org/deliver/etsi_en/300100_300199/30017502/02.09.01_60/en_30017502v020901p.pdf",
+            "referencia": "ETSI EN 300 175-2 V2.9.1, anexo F: presenta la asignación 1880–1900 MHz como la más común para DECT, con asignaciones distintas según región."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas, actualización 2026. Cotejo de proximidad con redes y acceso inalámbricos; el texto extraído no contiene la tecnología DECT ni su banda, así que se documenta como cobertura curricular adyacente/no explícita y no como correspondencia verificada."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-11."
+          }
+        ],
+        "observaciones": "Corregida B. ETSI identifica 1880–1900 MHz como la asignación DECT más común y describe bandas adicionales en otras regiones. Se retiró “DECT 6.0”, denominación regional que podía inducir a confundir el plan europeo con otros planes de frecuencia. Cotejo curricular: ITIC Academy, bloque 46 Redes inalámbricas, actualización 2026. Cotejo de proximidad con redes y acceso inalámbricos; el texto extraído no contiene la tecnología DECT ni su banda, así que se documenta como cobertura curricular adyacente/no explícita y no como correspondencia verificada."
+      }
     },
     {
       "id": 7791,

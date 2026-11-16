@@ -1,5 +1,20 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1496 (IDs 7781–7785). Acumulado: **7.780** preguntas examinadas individualmente; **7.652 verificadas** (1.481 vigentes, 5.624 corregidas y 547 históricas); **128 pendientes documentadas** (48 de fuente, 80 de ambigüedad); **4.343 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1497 (IDs 7786–7790). Acumulado: **7.785** preguntas examinadas individualmente; **7.657 verificadas** (1.482 vigentes, 5.627 corregidas y 548 históricas); **128 pendientes documentadas** (48 de fuente, 80 de ambigüedad); **4.338 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
 
+## Lote 1497 — 16 de noviembre de 2026
+
+Revisión individual de las preguntas 7786–7790: ATM y conexiones virtuales, delimitador de trama Ethernet, autonegociación Ethernet, definición histórica de vídeo bajo demanda en el reglamento de cable de 1996 y banda europea de DECT. Se ajustaron los enunciados que mezclaban tecnologías o podían leerse como afirmaciones completas, y se distinguió el marco histórico de las especificaciones actuales.
+
+- **7786 — ATM/WAN:** **corregida B**. ATM conmuta mediante conexiones virtuales (PVC/SVC); el enunciado se acota a ese rasgo para no comparar de forma ambigua redes heterogéneas IP, ATM y UMTS. A1-108/113; A2-IV-10.
+- **7787 — Ethernet/SFD:** **vigente A**. El campo Start Frame Delimiter de IEEE 802.3 es 10101011; el preámbulo usa 10101010. A1-118; A2-IV-8.
+- **7788 — autonegociación:** **corregida B**. Entre los parámetros que puede acordar están velocidad y modo dúplex; el nuevo enunciado indica que el dúplex es uno de ellos, no el único. A1-118; A2-IV-8.
+- **7789 — vídeo bajo demanda:** **histórica B**. El art. 42.b del RD 2066/1996 define históricamente la selección interactiva del programa y del momento de suministro; la opción se separa de la emisión lineal y del vídeo a la carta. A1-121; A2-IV-7 (correspondencia con el medio cableado, sin tema A2 específico de CATV).
+- **7790 — DECT:** **corregida B**. ETSI identifica 1880–1900 MHz como asignación DECT más común; se retiró “DECT 6.0”, etiqueta regional que podía confundir planes de frecuencia. A1-108; A2-IV-11.
+
+Cotejo curricular individual: [ITIC Academy, bloque 42 Redes](https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk) (7786: apartado 7.2 ATM; 7787–7788: LAN/Ethernet y autonegociación de cláusula 28; 7789: apartado 8.3 CATV y servicios de vídeo bajo demanda). En el material consultado no aparece el patrón SFD binario, que se verificó en IEEE, ni DECT y su banda; para 7790 se registra solo correspondencia curricular adyacente con [bloque 46 Redes inalámbricas](https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk), no cobertura explícita. Clasificación contrastada con las convocatorias oficiales [A1 BOE-A-2025-25938](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2 BOE-A-2025-26262](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262); la correspondencia A2-IV-7 de la pregunta de CATV es por el soporte cableado, ya que el programa A2 no contiene epígrafe específico CATV.
+
+Fuentes primarias: [IETF RFC 2225, ATM y conexiones virtuales](https://www.rfc-editor.org/info/rfc2225); [IEEE Std 802.3-2022, Ethernet](https://standards.ieee.org/ieee/802.3/10422/) y [interpretación IEEE de autonegociación, cláusulas 37/40.5.1](https://www.ieee802.org/3/interp/interp-2-0705.pdf); [RD 2066/1996, art. 42.b](https://www.boe.es/buscar/act.php?id=BOE-A-1996-21311) y [Ley 13/2022, General de Comunicación Audiovisual](https://www.boe.es/buscar/act.php?id=BOE-A-2022-11311); [ETSI EN 300 175-2 V2.9.1, anexo F](https://www.etsi.org/deliver/etsi_en/300100_300199/30017502/02.09.01_60/en_30017502v020901p.pdf).
+
+Ejecutados `node revision/revisar-lote-1497.cjs`, `node revision/academia-lote-1497.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros; 7.785 revisadas individualmente (1.482 vigentes, 5.627 corregidas, 548 históricas); 128 pendientes documentadas (80 de ambigüedad y 48 de fuente); 4.338 sin revisar individualmente; errores estructurales: 0. El inventario estructural no equivale a revisión de contenido.
 ## Lote 1496 — 16 de noviembre de 2026
 
 Revisión individual de las preguntas 7781–7785: registros regionales de Internet, clase FEC de MPLS, acceso CSMA/CA de IEEE 802.11, cálculo de hosts IPv4 en /28 y referencia histórica de la especificación IPv6. Se precisaron los enunciados con fuentes primarias actuales, conservando la trazabilidad del contenido original.
@@ -16,7 +31,7 @@ Fuentes primarias: [IANA, Number Resources (cinco RIR y cobertura)](https://www.
 
 Ejecutados `node revision/revisar-lote-1496.cjs`, `node revision/academia-lote-1496.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 registros; 7.780 revisadas individualmente (1.481 vigentes, 5.624 corregidas, 547 históricas); 128 pendientes documentadas (80 de ambigüedad y 48 de fuente); 4.343 sin revisar individualmente; errores estructurales: 0. El inventario estructural no equivale a revisión de contenido.
 
-## Lote 1495 — 16 de noviembre de 2026## Lote 1495 — 16 de noviembre de 2026
+## Lote 1495 — 16 de noviembre de 2026
 
 Revisión individual de las preguntas 7776–7780: interfaz de Gestión de Proyectos de MÉTRICA v.3; símbolo de los parámetros de control en estructuras modulares; diagramas de despliegue; sigla SLA; y método CSMA de acceso al medio. Se concretaron las preguntas para distinguir formalmente GPI 2 de PSI, el círculo de control del símbolo de dato, y CSMA de Token Ring/Aloha.
 
