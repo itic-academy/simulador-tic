@@ -402758,71 +402758,300 @@
       "id": 7586,
       "bloque": 0,
       "tema": 0,
-      "texto": "Refiriéndonos a medidas de protección ante malware avanzado, si necesitamos en nuestra organización una herramienta que se pueda aplicar a los puestos cliente y que nos permita realizar un análisis forense, nos permita detectar ataques en tiempo real y responder de manera rápida y efectiva a esos ataques, qué tipo de herramienta deberá implementar:",
+      "texto": "Una organización necesita en los puestos cliente una herramienta que monitorice la actividad, detecte y permita investigar ataques y apoyar una respuesta rápida. ¿Qué tipo de solución de seguridad de endpoint se ajusta mejor?",
       "opciones": [
-        "EPP.",
-        "EDR.",
-        "Antivirus tradicional.",
-        "Sandbox."
+        "EPP, centrada en prevenir amenazas en el endpoint.",
+        "EDR, centrada en detectar, investigar y responder a incidentes en el endpoint.",
+        "Un antivirus tradicional, limitado a firmas y prevención básica.",
+        "Una sandbox, que ejecuta objetos sospechosos en un entorno aislado."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. EDR (Endpoint Detection and Response) recopila y analiza telemetría de los endpoints para detectar actividad sospechosa, facilitar la investigación —incluida evidencia forense— y apoyar la contención/respuesta. EPP agrupa principalmente capacidades preventivas; antivirus y sandbox tienen funciones distintas y una sandbox no monitoriza por sí sola la flota de puestos. Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y nivel de aplicación, edición 2026. Cotejo con A1-125/A2-II-13: herramientas de ciberseguridad y detección/respuesta ante incidentes; las capacidades específicas EDR se verifican en documentación CISA.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-II-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "EDR",
+        "detección y respuesta",
+        "telemetría de endpoint",
+        "análisis forense"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.cisa.gov/sites/default/files/2023-11/HPH-Sector-Mitigation-Guide-TLP-CLEAR_508c.pdf",
+            "referencia": "CISA, HPH Sector Cybersecurity Mitigation Guide: EDR monitoriza continuamente endpoints para detectar comportamiento sospechoso, aportar contexto y apoyar la respuesta."
+          },
+          {
+            "url": "https://www.cisa.gov/sites/default/files/publications/cdm-technical-capabilities-vol2-v24.pdf",
+            "referencia": "CISA CDM Technical Capabilities, volumen 2: capacidades EDR incluyen recopilación de datos forenses y respuesta configurable a eventos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y nivel de aplicación, edición 2026. Cotejo con A1-125/A2-II-13: herramientas de ciberseguridad y detección/respuesta ante incidentes; las capacidades específicas EDR se verifican en documentación CISA."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-125."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-II-13."
+          }
+        ],
+        "observaciones": "Corregida B. EDR (Endpoint Detection and Response) recopila y analiza telemetría de los endpoints para detectar actividad sospechosa, facilitar la investigación —incluida evidencia forense— y apoyar la contención/respuesta. EPP agrupa principalmente capacidades preventivas; antivirus y sandbox tienen funciones distintas y una sandbox no monitoriza por sí sola la flota de puestos. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y nivel de aplicación, edición 2026. Cotejo con A1-125/A2-II-13: herramientas de ciberseguridad y detección/respuesta ante incidentes; las capacidades específicas EDR se verifican en documentación CISA."
+      }
     },
     {
       "id": 7587,
       "bloque": 0,
       "tema": 0,
-      "texto": "Si estamos recibiendo un ataque basado en HTTP Flood que intenta inundar de peticiones HTTP (GET y POST) nuestras aplicaciones web, que tipo de sistema es el más adecuado para protegernos y parar este tipo de ataques:",
+      "texto": "Una aplicación web está sufriendo un HTTP flood distribuido de peticiones GET y POST que agota sus recursos. ¿Qué servicio especializado es la primera opción para absorber y mitigar un ataque de denegación de servicio distribuido?",
       "opciones": [
-        "Sistemas antivirus.",
-        "Sistemas antispam.",
-        "Sistemas de detección de intrusiones (IDS).",
-        "Sistemas anti-DDoS."
+        "Un antivirus de endpoint.",
+        "Un filtro antispam.",
+        "Un IDS, que alerta sobre actividad sospechosa pero no proporciona por sí solo capacidad de absorción/mitigación.",
+        "Un servicio de protección y mitigación anti-DDoS, complementado según el caso con WAF y limitación de tasa."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. Un HTTP flood GET/POST es un DDoS de capa de aplicación. Se requiere capacidad de mitigación anti-DDoS; para los ataques HTTP pueden añadirse controles L7 como WAF, limitación de tasa y filtrado. Un IDS detecta/alerta, pero no equivale a un servicio de absorción y mitigación. Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y nivel de aplicación, edición 2026. Cotejo con A1-125/126 y A2-II-13: ataques de red y de aplicación y herramientas de protección; la mitigación HTTP flood se precisa con la guía CISA.",
+      "clasificacion": {
+        "A1": [
+          "A1-125",
+          "A1-126"
+        ],
+        "A2": [
+          "A2-II-13"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "HTTP flood",
+        "DDoS",
+        "capa de aplicación",
+        "mitigación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.cisa.gov/uscert/sites/default/files/publications/DDoS%20Quick%20Guide.pdf",
+            "referencia": "CISA, Understanding and Responding to Distributed Denial-of-Service Attacks: describe HTTP GET/POST flood como ataques DDoS de capa de aplicación que agotan recursos del servicio."
+          },
+          {
+            "url": "https://www.cisa.gov/news-events/news/understanding-denial-service-attacks",
+            "referencia": "CISA, Understanding Denial-of-Service Attacks: recomendaciones de preparación y mitigación de ataques DoS/DDoS."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y nivel de aplicación, edición 2026. Cotejo con A1-125/126 y A2-II-13: ataques de red y de aplicación y herramientas de protección; la mitigación HTTP flood se precisa con la guía CISA."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-125, A1-126."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-II-13."
+          }
+        ],
+        "observaciones": "Corregida D. Un HTTP flood GET/POST es un DDoS de capa de aplicación. Se requiere capacidad de mitigación anti-DDoS; para los ataques HTTP pueden añadirse controles L7 como WAF, limitación de tasa y filtrado. Un IDS detecta/alerta, pero no equivale a un servicio de absorción y mitigación. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y nivel de aplicación, edición 2026. Cotejo con A1-125/126 y A2-II-13: ataques de red y de aplicación y herramientas de protección; la mitigación HTTP flood se precisa con la guía CISA."
+      }
     },
     {
       "id": 7588,
       "bloque": 0,
       "tema": 0,
-      "texto": "En cuanto a las medidas de prevención contra un incidente de ransomware, cual será de las siguientes la medida más adecuada a tomar y que nos evitará, en caso de que el ransomware haya actuado, perder todos los datos o tener que pagar el rescate por recuperar la información:",
+      "texto": "¿Qué medida de resiliencia permite recuperar los datos tras un ransomware que haya cifrado los sistemas de producción?",
       "opciones": [
-        "Disponer de un buen sistema antispam ya que la mayoría de los ransomware entran por correo electrónico.",
-        "Disponer de un buen antivirus, pues el proteger los pcs es fundamental.",
-        "Disponer de copias de seguridad fuera de línea.",
-        "Disponer de shadow-copies activadas en los volúmenes de disco."
+        "Confiar en el filtro antispam, que reduce algunos vectores de entrada pero no recupera datos cifrados.",
+        "Confiar solo en el antivirus de los puestos.",
+        "Mantener copias de seguridad offline (y protegidas), verificar su integridad y probar periódicamente la restauración.",
+        "Depender exclusivamente de las shadow copies locales del mismo sistema afectado."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. Las copias offline y protegidas reducen la posibilidad de que el ransomware cifre o elimine también los backups; su recuperación debe probarse. Antispam y antivirus son capas preventivas, no mecanismos de recuperación garantizados, y las copias locales accesibles pueden ser atacadas. Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y nivel de aplicación, edición 2026. Cotejo con A1-125/A2-II-13 sobre prevención y respuesta a incidentes de seguridad. ITIC Academy, bloque 26: Hardware, CPD, almacenamiento y virtualización, edición 2026. Cotejo con A1-56/A2-IV-3, sistemas de almacenamiento y copias de seguridad; se contrasta offline y recuperabilidad con la guía CISA.",
+      "clasificacion": {
+        "A1": [
+          "A1-56",
+          "A1-125"
+        ],
+        "A2": [
+          "A2-II-13",
+          "A2-IV-3"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ransomware",
+        "copias offline",
+        "backup",
+        "recuperación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_MS-ISAC_Ransomware%20Guide_S508C_.pdf",
+            "referencia": "CISA/MS-ISAC, #StopRansomware Guide: mantener copias de seguridad offline, cifradas y probar periódicamente su restauración; el malware puede borrar copias accesibles."
+          },
+          {
+            "url": "https://www.cisa.gov/stopransomware/ransomware-guide",
+            "referencia": "CISA, StopRansomware Guide: buenas prácticas de prevención, respuesta y recuperación ante ransomware."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y nivel de aplicación, edición 2026. Cotejo con A1-125/A2-II-13 sobre prevención y respuesta a incidentes de seguridad."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 26: Hardware, CPD, almacenamiento y virtualización, edición 2026. Cotejo con A1-56/A2-IV-3, sistemas de almacenamiento y copias de seguridad; se contrasta offline y recuperabilidad con la guía CISA."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-56, A1-125."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-II-13, A2-IV-3."
+          }
+        ],
+        "observaciones": "Corregida C. Las copias offline y protegidas reducen la posibilidad de que el ransomware cifre o elimine también los backups; su recuperación debe probarse. Antispam y antivirus son capas preventivas, no mecanismos de recuperación garantizados, y las copias locales accesibles pueden ser atacadas. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y nivel de aplicación, edición 2026. Cotejo con A1-125/A2-II-13 sobre prevención y respuesta a incidentes de seguridad. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 26: Hardware, CPD, almacenamiento y virtualización, edición 2026. Cotejo con A1-56/A2-IV-3, sistemas de almacenamiento y copias de seguridad; se contrasta offline y recuperabilidad con la guía CISA."
+      }
     },
     {
       "id": 7589,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es la variable más importante en un modelo PERT?",
+      "texto": "En PERT clásico, ¿qué magnitud se estima para las actividades mediante estimaciones optimista, más probable y pesimista?",
       "opciones": [
-        "riesgo",
-        "coste",
-        "impacto",
-        "tiempo"
+        "El riesgo agregado del proyecto.",
+        "El coste de cada recurso.",
+        "El impacto organizativo de la actividad.",
+        "La duración o tiempo de ejecución de la actividad."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. PERT (Program Evaluation and Review Technique) modela incertidumbre en la duración de las actividades mediante tres estimaciones temporales: optimista, más probable y pesimista. El enunciado original preguntaba por una supuesta «variable más importante» sin definir el criterio; se sustituyó por la magnitud que PERT efectivamente estima. Cotejo curricular: ITIC Academy, bloque 15: Metodologías de desarrollo y gestión de proyectos, edición 2026. Cotejo con A1-35/36 y A2-III-2, planificación y técnicas predictivas de proyectos; la definición de las tres estimaciones de duración PERT se comprueba en PMI.",
+      "clasificacion": {
+        "A1": [
+          "A1-35",
+          "A1-36"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "PERT",
+        "estimación temporal",
+        "duración de actividades",
+        "planificación de proyectos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.pmi.org/learning/library/project-management-techniques-determination-10335",
+            "referencia": "Project Management Institute, Project management techniques for project planning: PERT usa estimaciones de duración optimista, más probable y pesimista para las actividades."
+          },
+          {
+            "url": "https://www.pmi.org/learning/library/program-evaluation-stochastic-network-analysis-5688",
+            "referencia": "Project Management Institute, PERT/CPM: trata el tiempo/duración de actividades como variable probabilística y emplea tres estimaciones temporales."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 15: Metodologías de desarrollo y gestión de proyectos, edición 2026. Cotejo con A1-35/36 y A2-III-2, planificación y técnicas predictivas de proyectos; la definición de las tres estimaciones de duración PERT se comprueba en PMI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-35, A1-36."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-III-2."
+          }
+        ],
+        "observaciones": "Corregida D. PERT (Program Evaluation and Review Technique) modela incertidumbre en la duración de las actividades mediante tres estimaciones temporales: optimista, más probable y pesimista. El enunciado original preguntaba por una supuesta «variable más importante» sin definir el criterio; se sustituyó por la magnitud que PERT efectivamente estima. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 15: Metodologías de desarrollo y gestión de proyectos, edición 2026. Cotejo con A1-35/36 y A2-III-2, planificación y técnicas predictivas de proyectos; la definición de las tres estimaciones de duración PERT se comprueba en PMI."
+      }
     },
     {
       "id": 7590,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el contexto de las técnicas y herramientas de planificación de proyectos, indicar cuál de las siguientes afirmaciones es correcta",
+      "texto": "¿Cuál afirmación describe correctamente un diagrama de Gantt?",
       "opciones": [
-        "El diagrama de Gantt muestra el tiempo en el eje de abscisas, mientras en cada línea del eje de ordenadas se disponen todas las actividades que conforman el proyecto",
-        "El diagrama de Gantt se queda a nivel de actividades mientras el diagrama de PERT desciende a Actividades, Grupos de Tareas y Tareas",
-        "El diagrama de PERT muestra el tiempo en el eje de abscisas, mientras en cada línea del eje de ordenadas se disponen todas las actividades que conforman el proyecto",
-        "El diagrama de PERT requiere únicamente dos niveles de duración de actividades (máximo y mínimo)"
+        "Representa las actividades como filas y su duración/planificación mediante barras sobre un eje temporal horizontal.",
+        "Representa necesariamente la red de precedencias como flechas entre eventos, formato propio de una red PERT/CPM.",
+        "Coloca el tiempo en el eje vertical y agrupa las actividades en el eje horizontal.",
+        "Utiliza exclusivamente tres estimaciones probabilísticas de duración por actividad, sin eje temporal."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. En Gantt las actividades se disponen en filas y sus barras se sitúan sobre una escala temporal horizontal, mostrando duración y calendario. La representación de dependencias como red corresponde a PERT/CPM; las tres estimaciones temporales describen PERT, no Gantt. Cotejo curricular: ITIC Academy, bloque 15: Metodologías de desarrollo y gestión de proyectos, edición 2026. Cotejo con A1-35/36 y A2-III-2, técnicas de planificación Gantt y PERT; la descripción gráfica se contrasta con PMI.",
+      "clasificacion": {
+        "A1": [
+          "A1-35",
+          "A1-36"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "diagrama de Gantt",
+        "PERT",
+        "planificación de proyectos",
+        "duración"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.pmi.org/learning/library/project-management-techniques-determination-10335",
+            "referencia": "Project Management Institute, Project management techniques for project planning: compara diagramas de barras Gantt y red PERT/CPM."
+          },
+          {
+            "url": "https://www.pmi.org/learning/library/harmonogram-overlooked-method-scheduling-work-5666",
+            "referencia": "Project Management Institute, Harmonogram: explica Gantt como representación temporal de actividades y PERT como red de eventos/actividades."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1XhxuoYyCTIYuffLG2O8NwOcgQkrDI3EW/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 15: Metodologías de desarrollo y gestión de proyectos, edición 2026. Cotejo con A1-35/36 y A2-III-2, técnicas de planificación Gantt y PERT; la descripción gráfica se contrasta con PMI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-35, A1-36."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-III-2."
+          }
+        ],
+        "observaciones": "Corregida A. En Gantt las actividades se disponen en filas y sus barras se sitúan sobre una escala temporal horizontal, mostrando duración y calendario. La representación de dependencias como red corresponde a PERT/CPM; las tres estimaciones temporales describen PERT, no Gantt. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 15: Metodologías de desarrollo y gestión de proyectos, edición 2026. Cotejo con A1-35/36 y A2-III-2, técnicas de planificación Gantt y PERT; la descripción gráfica se contrasta con PMI."
+      }
     },
     {
       "id": 7591,
