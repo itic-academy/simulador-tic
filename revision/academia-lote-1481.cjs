@@ -43,6 +43,8 @@ for (const c of log.cambios) {
   );
   q.revision.observaciones = [prior, ...notes].filter(Boolean).join(' Cotejo curricular: ');
   q.comentarios = `${comments} Cotejo curricular: ${notes.join(' ')}`;
+  q.clasificacion.bloque_academia = docs[c.id].map(d => d.title.replace('ITIC Academy, ', '')).join(' + ');
+  q.clasificacion.nota = `Cotejo curricular completado: ${notes.join(' ')}${q.clasificacion.A2.length ? '' : ' Sin tema A2 directo específico; no equivale a exclusión del contenido.'}`;
   c.actualizada = structuredClone(q);
 }
 fs.writeFileSync(logPath, JSON.stringify(log, null, 2) + '\n');
