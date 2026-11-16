@@ -1,0 +1,48 @@
+const apply = require('./aplicar-lote.cjs');
+
+const records = [
+  [7876, [81], ['I-6'], ['PKI', 'infraestructura de clave pública', 'autoridad de certificación', 'revocación', 'validación de certificados'], [
+    { url: 'https://csrc.nist.gov/pubs/sp/800/15/final', referencia: 'NIST SP 800-15, MISPC: una PKI incluye CA que emiten/revocan certificados, RA que verifican la vinculación identidad-clave, clientes que validan firmas/cadenas y repositorios que publican certificados y CRL.' },
+    { url: 'https://www.rfc-editor.org/rfc/rfc5280.html', referencia: 'IETF RFC 5280, apartados 3, 4 y 6: modelo PKIX; validación de la ruta de certificación, comprobaciones de uso y estado de revocación (CRL/OCSP u otro mecanismo).' }
+  ], { texto: '¿Cuál de las siguientes actividades queda fuera de las funciones de una PKI, aunque pueda utilizarla?', opciones: [
+    'Emitir certificados digitales que vinculan una clave pública con una identidad y atributos.',
+    'Publicar información sobre la revocación de certificados y permitir su consulta.',
+    'Validar una ruta de certificación y comprobar el uso previsto y el estado del certificado.',
+    'Tramitar el contenido de un procedimiento administrativo concreto, por ejemplo conceder una licencia o resolver una solicitud.'
+  ], respuesta_correcta: 3 }, 'Corregida D. La PKI proporciona componentes y servicios para emitir, administrar, publicar, revocar y validar certificados. La autenticación o firma puede habilitar trámites, pero el flujo funcional y la resolución de un procedimiento administrativo pertenecen a la aplicación/servicio público que consume la PKI. Se corrigió también el original, que llamaba “registro” a la emisión del certificado y mezclaba funciones de CA, RA y cliente validador. Cotejo curricular: ITIC Academy, bloque 36 Seguridad, Criptografía, Identificación y Firma, edición 2026.1; incluye PKI, autoridades, X.509 y validación de certificados. El alcance concreto se verifica con NIST e IETF, no se atribuye sin más al manual académico.', 'corregida'],
+  [7877, [65, 77], ['II-6', 'III-12'], ['UDDI', 'registro de servicios web', 'publicación y descubrimiento', 'XML', 'WSDL'], [
+    { url: 'https://www.oasis-open.org/committees/uddi-spec/doc/spec/v3/uddi_v3.htm', referencia: 'OASIS UDDI v3.0.2 Specification: define un servicio de registro para describir y descubrir proveedores, servicios web e interfaces técnicas; utiliza estructuras XML y APIs de registro.' },
+    { url: 'https://www.oasis-open.org/committees/uddi-spec/faq.php', referencia: 'OASIS UDDI FAQ: UDDI define servicios de registro para servicios web; especifica esquemas XML para modelo de datos y mensajes SOAP, con definiciones WSDL de las APIs SOAP.' },
+    { url: 'https://www.oasis-open.org/specs/index.php', referencia: 'OASIS Standards and Other Approved Work: UDDI v3.0.2 figura entre los estándares aprobados de OASIS.' }
+  ], { texto: '¿Qué estándar se asocia con un registro que permite publicar y descubrir proveedores y servicios web?', opciones: [
+    'UDDI, que define un registro y APIs para publicar y consultar información de proveedores, servicios e interfaces.',
+    'WSDL, que describe interfaces y bindings de servicios web, pero no define el registro de publicación/descubrimiento.',
+    'SOAP, protocolo de mensajería que puede usar una API de UDDI, pero no es el registro.',
+    'JAXP, APIs de Java para procesar XML.'
+  ], respuesta_correcta: 0 }, 'Corregida A. UDDI (Universal Description, Discovery and Integration) define el servicio de registro para publicar y localizar proveedores, servicios e interfaces técnicas. Las estructuras se expresan en XML; las APIs UDDI usan SOAP y se describen con WSDL. Se afinó el enunciado original “registro basado en XML”, que podía llevar a confundir el registro con el formato o sus protocolos. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1, trata servicios web, XML y estándares de interoperabilidad; la definición normativa procede de OASIS.', 'corregida'],
+  [7878, [75], ['II-4', 'III-15'], ['OLAP', 'medida calculada', 'MDX', 'data warehouse', 'Business Intelligence'], [
+    { url: 'https://learn.microsoft.com/en-us/analysis-services/multidimensional-models-olap-logical-cube-objects/calculations?view=sql-analysis-services-2025', referencia: 'Microsoft Learn, Calculations in Analysis Services OLAP: una medida calculada es un miembro calculado de la dimensión Measures, cuyo valor se define mediante una expresión MDX; puede combinar medidas existentes y se evalúa al consultar el cubo.' },
+    { url: 'https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/create-measures-and-measure-groups-in-multidimensional-models?view=sql-analysis-services-2025', referencia: 'Microsoft Learn, Create Measures and Measure Groups: una medida puede derivarse de una expresión MDX y de otras medidas del cubo.' }
+  ], { texto: 'En un cubo OLAP multidimensional, ¿qué caracteriza a una medida calculada?', opciones: [
+    'Es una dimensión cuyo valor solo puede ser una cadena.',
+    'Es un miembro de la dimensión Measures cuyo valor se obtiene mediante una expresión, por ejemplo combinando datos o medidas existentes.',
+    'Es una medida que necesita más de una dimensión para poder almacenarse.',
+    'Es un dato que no puede consultarse ni representarse.'
+  ], respuesta_correcta: 1 }, 'Corregida B. El original preguntaba por “variables complejas”, expresión que no es una categoría general normalizada en OLAP y no permitía validar con seguridad la clave “tipo complejo”. Se preservó íntegro en el registro y se reemplazó por una noción contrastable: en Analysis Services, una medida calculada es un miembro de Measures definido mediante una expresión MDX, a menudo calculada a partir de medidas existentes. El ejemplo de implementación es específico de Analysis Services; no se presenta como taxonomía universal de todos los OLAP. Cotejo curricular: ITIC Academy, bloque 34 Business Intelligence y Big Data, versión 2026.1, incluye explícitamente OLAP y almacenes de datos; no se halló una definición docente de “variables complejas”, por lo que la explicación se apoya en documentación oficial de Analysis Services.', 'corregida'],
+  [7879, [56], ['IV-5'], ['almacenamiento de objetos', 'Amazon S3', 'NFS', 'SMB', 'object storage'], [
+    { url: 'https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingObjects.html', referencia: 'Amazon S3 User Guide, Objects overview: Amazon S3 se define como object store; almacena objetos identificados por clave dentro de buckets.' },
+    { url: 'https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html', referencia: 'AWS Overview, Storage services: distingue Amazon S3 como almacenamiento de objetos de servicios de archivos como Amazon EFS/FSx.' }
+  ], null, 'Vigente C. Amazon documenta S3 como almacén de objetos, donde cada objeto se recupera mediante una clave y se guarda en buckets. NFS y SMB son protocolos/espacios de nombres de archivos compartidos, no el producto de almacenamiento de objetos pedido. Cotejo curricular: ITIC Academy, bloque 26 Hardware, Servidores, CPD, Almacenamiento y Virtualización, versión 2026.1, cubre sistemas de almacenamiento (A1-56/A2-IV-5); la clasificación específica de S3 se basa en la documentación de AWS.', 'vigente'],
+  [7880, [65, 77], ['III-12'], ['ECMAScript', 'ECMA-262', 'Internet Explorer 11', 'compatibilidad de estándares'], [
+    { url: 'https://learn.microsoft.com/en-us/openspecs/ie_standards/ms-es51/e2dd434f-a126-4d8f-aba0-9ebcfd0d1bd8', referencia: 'Microsoft Standards Support, MS-ES51: Internet Explorer 10 y posterior implementa ECMA-262, edición 5.1, sin variaciones (salvo las variaciones al ES5 descritas en MS-ES5).' },
+    { url: 'https://learn.microsoft.com/en-us/openspecs/ie_standards/ms-es6/992dd9a3-ae56-49ab-8f12-44df48db7200', referencia: 'Microsoft Standards Support, MS-ES6: IE11 implementa solo parte de ECMA-262, sexta edición; la ficha describe las variaciones y modos de documento, no conformidad completa con ES6.' },
+    { url: 'https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge', referencia: 'Microsoft Lifecycle FAQ: la aplicación de escritorio IE11 dejó de recibir soporte en determinados sistemas desde el 15/06/2022; se conserva aquí solo como producto histórico objeto de la pregunta.' }
+  ], { texto: 'Según la documentación de compatibilidad de Microsoft, ¿con qué edición de ECMA-262 es conforme Internet Explorer 10 y posterior sin variaciones propias (salvo las variaciones de ES5 documentadas)?', opciones: [
+    'ECMAScript 3, edición 3 de ECMA-262.',
+    'ECMAScript 5.1, edición 5.1 de ECMA-262.',
+    'ECMAScript 6, edición 6 de ECMA-262, implementada íntegramente por IE11.',
+    'IE11 no implementa ECMAScript.'
+  ], respuesta_correcta: 1 }, 'Corregida B. Se precisó la edición: IE10 y posterior implementa ECMA-262 5.1 sin variaciones específicas respecto de esa edición, con las variaciones heredadas de ES5 detalladas en MS-ES5. IE11 implementa solo una parte de la sexta edición, por lo que el enunciado original, que decía simplemente “soporta ECMAScript 5”, era impreciso y el distractor “soporta todos los estándares” demasiado absoluto. El navegador es ya una tecnología histórica sin soporte de escritorio general: se cita el dato para resolver la pregunta, no como recomendación actual. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, versión 2026.1, incluye JavaScript del lado cliente y navegadores/compatibilidad con estándares.', 'corregida']
+];
+
+apply({ numero: '1515', fecha: '2026-11-16', records });
