@@ -420886,63 +420886,297 @@
         "Muestra las hebras y las identificaciones de los archivos abiertos por el usuario."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Vigente A. El comando `id` muestra la identidad y pertenencias a grupos; sin argumento informa las credenciales del usuario/proceso actual y con usuario consulta sus identificadores y grupos. Se amplía la respuesta, que omitía IDs efectivos y grupos suplementarios. Cotejo curricular: ITIC Academy, bloque 27, Sistemas Operativos, versión 2026.1. Cotejo del ámbito Unix/Linux y administración del sistema (A1-60/A2-II-2/IV-1); la salida exacta de `id` se verificó en documentación GNU y Linux.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 27, Sistemas Operativos, versión 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Cotejo del ámbito Unix/Linux y administración del sistema (A1-60/A2-II-2/IV-1); la salida exacta de `id` se verificó en documentación GNU y Linux."
+      },
+      "etiquetas": [
+        "Unix",
+        "Linux",
+        "id",
+        "UID",
+        "GID",
+        "grupos suplementarios"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.gnu.org/software/coreutils/manual/html_node/id-invocation.html",
+            "referencia": "GNU Coreutils 9.11, id invocation: imprime los identificadores de usuario y grupo reales/efectivos y los grupos suplementarios; admite consultar un usuario indicado."
+          },
+          {
+            "url": "https://man7.org/linux/man-pages/man1/id.1.html",
+            "referencia": "Linux man-pages, id(1): describe la utilidad id y sus opciones para mostrar UID, GID y grupos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-6ZS4MZmc7BjkT6tCk_LmWAgB3pIzZE3/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 27, Sistemas Operativos, versión 2026.1. Cotejo del ámbito Unix/Linux y administración del sistema (A1-60/A2-II-2/IV-1); la salida exacta de `id` se verificó en documentación GNU y Linux."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-60."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-2, A2-IV-1."
+          }
+        ],
+        "observaciones": "Vigente A. El comando `id` muestra la identidad y pertenencias a grupos; sin argumento informa las credenciales del usuario/proceso actual y con usuario consulta sus identificadores y grupos. Se amplía la respuesta, que omitía IDs efectivos y grupos suplementarios. Cotejo curricular: ITIC Academy, bloque 27, Sistemas Operativos, versión 2026.1. Cotejo del ámbito Unix/Linux y administración del sistema (A1-60/A2-II-2/IV-1); la salida exacta de `id` se verificó en documentación GNU y Linux."
+      }
     },
     {
       "id": 7897,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es la diferencia entre una arquitectura WAMP y una LAMP?",
+      "texto": "En las denominaciones tradicionales LAMP y WAMP para pilas de desarrollo web, ¿qué diferencia indica la primera letra?",
       "opciones": [
-        "LAMP se refiere a un entorno Linux y WAMP a un entorno Windows",
-        "WAMP es igual que LAMP pero optimizado para WEB",
-        "WAMP no existe",
-        "WAMP se ejecuta en un sistema operativo Windows por lo que requiere siempre tener instalado IIS"
+        "LAMP identifica un entorno basado en Linux y WAMP uno basado en Windows; las demás letras suelen aludir a servidor web, base de datos y lenguaje, con variantes.",
+        "LAMP requiere Linux y Apache; WAMP es una variante que necesariamente utiliza IIS en lugar de Apache.",
+        "WAMP no existe como nombre de una pila o plataforma para Windows.",
+        "WAMP solo designa una optimización para sitios web y no identifica el sistema operativo."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. La respuesta original acertaba la diferencia principal, pero no advertía que las pilas no son normas cerradas y que WAMP no exige IIS: WampServer ofrece Apache en Windows. Se conservó la respuesta correcta y se precisó que la inicial distingue Linux/Windows en las denominaciones usuales, mientras las otras letras y componentes pueden variar (por ejemplo, Perl o Python en LAMP). Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, versión 2026.1. Contextualiza desarrollo web y PHP (A1-65/68; A2-III-12). El significado de LAMP/WAMP se acotó a documentación Ubuntu y al proyecto WampServer.",
+      "clasificacion": {
+        "A1": [
+          "A1-65",
+          "A1-68"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, versión 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Contextualiza desarrollo web y PHP (A1-65/68; A2-III-12). El significado de LAMP/WAMP se acotó a documentación Ubuntu y al proyecto WampServer."
+      },
+      "etiquetas": [
+        "LAMP",
+        "WAMP",
+        "Linux",
+        "Windows",
+        "Apache",
+        "PHP",
+        "MySQL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://ubuntu.com/server/docs/how-to/web-services/install-apache2/",
+            "referencia": "Ubuntu Server documentation: LAMP se expande como Linux + Apache + MySQL + PHP/Perl/Python; es una pila de tecnologías, no una implementación única obligatoria."
+          },
+          {
+            "url": "https://wampserver.net/",
+            "referencia": "WampServer, sitio oficial: describe una plataforma de desarrollo web para Windows con Apache, PHP y MySQL."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, versión 2026.1. Contextualiza desarrollo web y PHP (A1-65/68; A2-III-12). El significado de LAMP/WAMP se acotó a documentación Ubuntu y al proyecto WampServer."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-65, A1-68."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-III-12."
+          }
+        ],
+        "observaciones": "Corregida A. La respuesta original acertaba la diferencia principal, pero no advertía que las pilas no son normas cerradas y que WAMP no exige IIS: WampServer ofrece Apache en Windows. Se conservó la respuesta correcta y se precisó que la inicial distingue Linux/Windows en las denominaciones usuales, mientras las otras letras y componentes pueden variar (por ejemplo, Perl o Python en LAMP). Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, versión 2026.1. Contextualiza desarrollo web y PHP (A1-65/68; A2-III-12). El significado de LAMP/WAMP se acotó a documentación Ubuntu y al proyecto WampServer."
+      }
     },
     {
       "id": 7898,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es la afirmación CORRECTA cuando se habla de un servidor web?",
+      "texto": "En una interacción HTTP convencional entre cliente y servidor web, ¿qué afirmación es correcta?",
       "opciones": [
-        "Las peticiones al servidor suelen realizarse mediante HTTP utilizando el método de petición POST, en el que el recurso se solicita a través de la URL al servidor Web.",
-        "Los servidores Web reciben a través de su propio navegador las peticiones realizadas por el cliente.",
-        "Los servidores web usan el protocolo HTTP y los servidores de aplicaciones usan protocolo HTTPS.",
-        "Las conexiones de los servidores web con los clientes pueden ser bidireccionales o unidireccionales, síncronas o asíncronas."
+        "El cliente envía una petición con un método y un destino; POST solicita que el recurso procese la representación incluida en el mensaje, mientras GET tiene semántica de recuperación.",
+        "POST significa siempre recuperar el recurso indicado en la URL y no puede incluir contenido en la petición.",
+        "Los servidores web solo reciben peticiones originadas por el navegador que ejecutan ellos mismos.",
+        "HTTP se utiliza exclusivamente entre servidor web y cliente; un servidor de aplicaciones debe usar HTTPS como protocolo distinto."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Corregida A. El enunciado original mezclaba POST, el acceso mediante URL, las diferencias entre servidores web/de aplicaciones y características de las conexiones sin especificar versión ni modalidad; su clave sobre bidireccionalidad/sincronía era imprecisa. Se centró en la semántica estable de HTTP: método/destino en la petición y diferencia entre GET y POST según RFC 9110. HTTP y HTTPS no son protocolos asignados respectivamente a tipos de servidor; HTTPS es HTTP protegido mediante TLS. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, versión 2026.1. Cubre arquitectura web/cliente-servidor y servicios web (A1-65/A2-II-6/III-12); la semántica de métodos HTTP se contrasta con IETF RFC 9110.",
+      "clasificacion": {
+        "A1": [
+          "A1-65"
+        ],
+        "A2": [
+          "A2-II-6",
+          "A2-III-12"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, versión 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Cubre arquitectura web/cliente-servidor y servicios web (A1-65/A2-II-6/III-12); la semántica de métodos HTTP se contrasta con IETF RFC 9110."
+      },
+      "etiquetas": [
+        "HTTP",
+        "servidor web",
+        "cliente-servidor",
+        "métodos HTTP",
+        "POST",
+        "petición-respuesta"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+            "referencia": "IETF RFC 9110, HTTP Semantics: el cliente envía al servidor una petición con método y destino; POST pide que el recurso de destino procese la representación incluida en el mensaje. No equivale en general a “solicitar un recurso por su URL”."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9113.html",
+            "referencia": "IETF RFC 9113, HTTP/2: define la semántica de las solicitudes y respuestas HTTP sobre conexiones y flujos; los protocolos no se distinguen por asignar HTTP a servidores web y HTTPS a servidores de aplicaciones."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, versión 2026.1. Cubre arquitectura web/cliente-servidor y servicios web (A1-65/A2-II-6/III-12); la semántica de métodos HTTP se contrasta con IETF RFC 9110."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-65."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-6, A2-III-12."
+          }
+        ],
+        "observaciones": "Corregida A. El enunciado original mezclaba POST, el acceso mediante URL, las diferencias entre servidores web/de aplicaciones y características de las conexiones sin especificar versión ni modalidad; su clave sobre bidireccionalidad/sincronía era imprecisa. Se centró en la semántica estable de HTTP: método/destino en la petición y diferencia entre GET y POST según RFC 9110. HTTP y HTTPS no son protocolos asignados respectivamente a tipos de servidor; HTTPS es HTTP protegido mediante TLS. Cotejo curricular: ITIC Academy, bloque 30, Tecnologías de Sistemas de Información, versión 2026.1. Cubre arquitectura web/cliente-servidor y servicios web (A1-65/A2-II-6/III-12); la semántica de métodos HTTP se contrasta con IETF RFC 9110."
+      }
     },
     {
       "id": 7899,
       "bloque": 0,
       "tema": 0,
-      "texto": "La fase de planificación de un SGCN abarca:",
+      "texto": "Según ISO 22301:2019, ¿qué actividad corresponde a la cláusula 6 de planificación del sistema de gestión de continuidad del negocio (SGCN)?",
       "opciones": [
-        "alineación con objetivos y documentación, entre otros",
-        "la obligatoriedad de la mejora continua",
-        "el establecimiento de indicadores para los procesos",
-        "la revisión de la dirección"
+        "Determinar acciones ante riesgos y oportunidades y establecer objetivos de continuidad, planificando cómo alcanzarlos y conservando la información documentada requerida.",
+        "Realizar exclusivamente la revisión por la dirección, que pertenece al seguimiento y evaluación del desempeño.",
+        "Tratar la mejora continua como una obligación aislada que sustituye a la planificación de objetivos.",
+        "Definir solo indicadores operativos; la norma no contempla objetivos de continuidad ni planes para alcanzarlos."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. El original usaba “fase de planificación” de forma informal y ofrecía fragmentos solapados: mejora continua es también una finalidad del sistema, los indicadores pueden formar parte del seguimiento y la revisión por la dirección pertenece a evaluación del desempeño, no caracteriza por sí sola la planificación. Se acotó a la cláusula 6 de ISO 22301:2019: acciones frente a riesgos/oportunidades y objetivos de continuidad con planificación para lograrlos. El texto se contrastó con la ficha oficial ISO y la guía de implementación de NQA; no se reproduce una traducción extensa del estándar. Cotejo curricular: ITIC Academy, bloque 26, Hardware, Servidores, CPD, Almacenamiento y Virtualización, versión 2026.1. Como relación próxima, el bloque aborda continuidad, RTO/RPO, backup/recuperación y disaster recovery (A2-IV-6/C3/C6). No se halló una sección dedicada a ISO 22301 cláusula 6 en el resultado consultado; esa afirmación se verificó aparte en el catálogo ISO y guía NQA.",
+      "clasificacion": {
+        "A1": [
+          "A1-128"
+        ],
+        "A2": [
+          "A2-IV-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 26, Hardware, Servidores, CPD, Almacenamiento y Virtualización, versión 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Como relación próxima, el bloque aborda continuidad, RTO/RPO, backup/recuperación y disaster recovery (A2-IV-6/C3/C6). No se halló una sección dedicada a ISO 22301 cláusula 6 en el resultado consultado; esa afirmación se verificó aparte en el catálogo ISO y guía NQA."
+      },
+      "etiquetas": [
+        "continuidad de negocio",
+        "SGCN",
+        "ISO 22301",
+        "planificación",
+        "objetivos de continuidad",
+        "recuperación ante desastres"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.iso.org/standard/75106.html",
+            "referencia": "ISO 22301:2019, Security and resilience — Business continuity management systems — Requirements: ficha oficial de la norma y de su alcance."
+          },
+          {
+            "url": "https://www.nqa.com/getmedia/e26620d1-340f-4f52-bf8b-652f63c79f9f/NQA-ISO-22301-Implementation-Guide_2.pdf",
+            "referencia": "NQA, ISO 22301:2019 Implementation Guide, cláusula 6 (Planning): resume acciones ante riesgos y oportunidades, objetivos de continuidad y planificación para alcanzarlos; las revisiones de dirección y evaluación del desempeño se sitúan en evaluación del desempeño, cláusula 9."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 26, Hardware, Servidores, CPD, Almacenamiento y Virtualización, versión 2026.1. Como relación próxima, el bloque aborda continuidad, RTO/RPO, backup/recuperación y disaster recovery (A2-IV-6/C3/C6). No se halló una sección dedicada a ISO 22301 cláusula 6 en el resultado consultado; esa afirmación se verificó aparte en el catálogo ISO y guía NQA."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-128."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-6."
+          }
+        ],
+        "observaciones": "Corregida A. El original usaba “fase de planificación” de forma informal y ofrecía fragmentos solapados: mejora continua es también una finalidad del sistema, los indicadores pueden formar parte del seguimiento y la revisión por la dirección pertenece a evaluación del desempeño, no caracteriza por sí sola la planificación. Se acotó a la cláusula 6 de ISO 22301:2019: acciones frente a riesgos/oportunidades y objetivos de continuidad con planificación para lograrlos. El texto se contrastó con la ficha oficial ISO y la guía de implementación de NQA; no se reproduce una traducción extensa del estándar. Cotejo curricular: ITIC Academy, bloque 26, Hardware, Servidores, CPD, Almacenamiento y Virtualización, versión 2026.1. Como relación próxima, el bloque aborda continuidad, RTO/RPO, backup/recuperación y disaster recovery (A2-IV-6/C3/C6). No se halló una sección dedicada a ISO 22301 cláusula 6 en el resultado consultado; esa afirmación se verificó aparte en el catálogo ISO y guía NQA."
+      }
     },
     {
       "id": 7900,
       "bloque": 0,
       "tema": 0,
-      "texto": "En SQL, los comandos GRANT y REVOKE pertenecen al lenguaje:",
+      "texto": "En la clasificación didáctica habitual de las sentencias SQL, ¿a qué categoría se adscriben GRANT y REVOKE, que conceden y retiran privilegios?",
       "opciones": [
-        "DATA COMMAND LANGUAGE.",
-        "DATA CONFIGURATION LANGUAGE.",
-        "DATA CONSTRAINT LANGUAGE.",
-        "DATA CONTROL LANGUAGE."
+        "Data Definition Language (DDL).",
+        "Data Manipulation Language (DML).",
+        "Transaction Control Language (TCL).",
+        "Data Control Language (DCL)."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. GRANT y REVOKE sirven para conceder y retirar privilegios; en la clasificación didáctica habitual se agrupan en DCL (Data Control Language). Se normalizó la expansión inglesa que en el original aparecía como “DATA CONTROL LANGUAGE” y se añadió la función semántica para que no dependa solo de memorizar siglas. La clasificación por familias DDL/DML/DCL/TCL es didáctica; las funciones concretas de privilegios se comprobaron en la documentación oficial de PostgreSQL. Cotejo curricular: ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, versión 2026.1. El bloque incluye SQL (A1-64/A2-II-5) y contempla explícitamente la clasificación didáctica DDL/DML/DCL/TCL; los efectos de GRANT y REVOKE se cotejaron con documentación del SGBD.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, versión 2026.1",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El bloque incluye SQL (A1-64/A2-II-5) y contempla explícitamente la clasificación didáctica DDL/DML/DCL/TCL; los efectos de GRANT y REVOKE se cotejaron con documentación del SGBD."
+      },
+      "etiquetas": [
+        "SQL",
+        "GRANT",
+        "REVOKE",
+        "DCL",
+        "privilegios",
+        "control de acceso"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.postgresql.org/docs/current/sql-grant.html",
+            "referencia": "PostgreSQL, GRANT: concede privilegios sobre objetos o membresía en roles."
+          },
+          {
+            "url": "https://www.postgresql.org/docs/current/sql-revoke.html",
+            "referencia": "PostgreSQL, REVOKE: revoca privilegios u opciones de concesión previamente otorgados."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, versión 2026.1. El bloque incluye SQL (A1-64/A2-II-5) y contempla explícitamente la clasificación didáctica DDL/DML/DCL/TCL; los efectos de GRANT y REVOKE se cotejaron con documentación del SGBD."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-64."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-5."
+          }
+        ],
+        "observaciones": "Corregida D. GRANT y REVOKE sirven para conceder y retirar privilegios; en la clasificación didáctica habitual se agrupan en DCL (Data Control Language). Se normalizó la expansión inglesa que en el original aparecía como “DATA CONTROL LANGUAGE” y se añadió la función semántica para que no dependa solo de memorizar siglas. La clasificación por familias DDL/DML/DCL/TCL es didáctica; las funciones concretas de privilegios se comprobaron en la documentación oficial de PostgreSQL. Cotejo curricular: ITIC Academy, bloque 29, Bases de Datos, SQL y Modelado de Datos, versión 2026.1. El bloque incluye SQL (A1-64/A2-II-5) y contempla explícitamente la clasificación didáctica DDL/DML/DCL/TCL; los efectos de GRANT y REVOKE se cotejaron con documentación del SGBD."
+      }
     },
     {
       "id": 7901,
