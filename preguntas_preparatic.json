@@ -421474,71 +421474,284 @@
       "id": 7906,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es el orden de pasos para implantar una blockchain sobre Ethereum?",
+      "texto": "En el modo de desarrollo de Geth actual, ¿qué afirmación describe correctamente la red de pruebas que se inicia?",
       "opciones": [
-        "Instalar el software sobre los nodos, crear la configuración del bloque de génesis, arrancar todos los nodos, publicitar los nodos, arrancar las tareas de minado y realizar el testing de funcionamiento.",
-        "Instalar el software sobre los nodos, arrancar las tareas de minado, crear la configuración del bloque de génesis, arrancar todos los nodos, publicitar los nodos y realizar el testing de funcionamiento.",
-        "Instalar el software sobre los nodos, arrancar los nodos, arrancar las tereas de minado, crear la configuración del bloque de génesis, publicitar los nodos y realizar el testing de funcionamiento.",
-        "Ninguna de las anteriores es cierta."
+        "Crea una red de prueba Ethereum de un solo nodo, inicializada con un génesis de pruebas y sin conexión a pares externos.",
+        "Exige configurar minería PoW y publicar los nodos en Ethereum Mainnet.",
+        "Arranca automáticamente una red pública de validadores sin configuración de consenso.",
+        "Todas las redes privadas Ethereum requieren minar antes de configurar el bloque génesis."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. El enunciado original pedía un orden universal para “implantar blockchain sobre Ethereum” y mezclaba génesis, arranque de nodos, publicidad y minería, pasos que no forman una secuencia estándar. Se sustituyó por un hecho reproducible de Geth: el modo dev crea una red local de un nodo y usa un génesis de pruebas, sin pares externos. En redes privadas multidispositivo se configura un genesis y network ID y se conectan los nodos; la red y el consenso dependen del diseño. No se debe enseñar minería PoW como requisito actual de Ethereum: Mainnet pasó a PoS en The Merge (2022). Cotejo curricular: ITIC Academy, Tema 85 Blockchain, v2025. El material trata blockchain y contratos inteligentes, correspondencia directa con A1-85; la configuración concreta de Geth se comprobó en documentación oficial actual.",
+      "clasificacion": {
+        "A1": [
+          "A1-85"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, Tema 85 Blockchain, v2025",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El material trata blockchain y contratos inteligentes, correspondencia directa con A1-85; la configuración concreta de Geth se comprobó en documentación oficial actual."
+      },
+      "etiquetas": [
+        "Ethereum",
+        "Geth",
+        "red privada",
+        "red de desarrollo",
+        "genesis",
+        "proof of stake"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://geth.ethereum.org/docs/developers/dapp-developer/dev-mode",
+            "referencia": "Documentación oficial de Geth, Developer mode: el modo dev inicia una red de desarrollo Ethereum de un solo nodo, inicializa un bloque génesis de pruebas y no conecta con pares externos."
+          },
+          {
+            "url": "https://geth.ethereum.org/docs/fundamentals/private-network",
+            "referencia": "Documentación oficial de Geth, Private Networks: configuración de una red privada mediante genesis personalizado, inicialización de datos y conexión de nodos; Geth actual funciona con consenso PoS."
+          },
+          {
+            "url": "https://ethereum.org/roadmap/merge/",
+            "referencia": "Ethereum.org, The Merge: el 15-09-2022 Ethereum sustituyó definitivamente la prueba de trabajo por prueba de participación; la minería PoW dejó de producir bloques en Mainnet."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1dZeM6nHsrfoseFfduoy9SVCQXvAZK7OO/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, Tema 85 Blockchain, v2025. El material trata blockchain y contratos inteligentes, correspondencia directa con A1-85; la configuración concreta de Geth se comprobó en documentación oficial actual."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-85."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): sin asignación directa."
+          }
+        ],
+        "observaciones": "Corregida A. El enunciado original pedía un orden universal para “implantar blockchain sobre Ethereum” y mezclaba génesis, arranque de nodos, publicidad y minería, pasos que no forman una secuencia estándar. Se sustituyó por un hecho reproducible de Geth: el modo dev crea una red local de un nodo y usa un génesis de pruebas, sin pares externos. En redes privadas multidispositivo se configura un genesis y network ID y se conectan los nodos; la red y el consenso dependen del diseño. No se debe enseñar minería PoW como requisito actual de Ethereum: Mainnet pasó a PoS en The Merge (2022). Cotejo curricular: ITIC Academy, Tema 85 Blockchain, v2025. El material trata blockchain y contratos inteligentes, correspondencia directa con A1-85; la configuración concreta de Geth se comprobó en documentación oficial actual."
+      }
     },
     {
       "id": 7907,
       "bloque": 0,
       "tema": 0,
-      "texto": "Wimax (Worlwide Interoperabilty for Microwave Access):",
+      "texto": "WiMAX es una familia de tecnologías de acceso inalámbrico de banda ancha asociada principalmente a la familia de estándares:",
       "opciones": [
-        "Es una tecnología definida por el estándar IEEE 802.12.",
-        "Permite el acceso a internet por satélite.",
-        "Es un protocolo de telecomunicaciones que proporciona acceso a internet a puntos fijos o móviles a grandes distancias.",
-        "Tiene una distancia de cobertura menor que wifi."
+        "IEEE 802.12.",
+        "IEEE 802.11 exclusivamente.",
+        "IEEE 802.16, para sistemas de acceso inalámbrico de banda ancha fijos y móviles.",
+        "IEEE 802.3."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. Se enmendó la errata del nombre y la caracterización técnica: WiMAX corresponde a tecnologías de acceso inalámbrico de banda ancha basadas en IEEE 802.16, que abarca sistemas fijos y móviles punto a multipunto. La comparación genérica de coberturas con Wi‑Fi se retiró porque depende de despliegue, banda y condiciones; no distingue correctamente la tecnología. Cotejo curricular: ITIC Academy, bloque 42 Redes, v2026. Cubre redes inalámbricas y de acceso (A1-108/A2-IV-11); la familia de estándares de WiMAX se verificó específicamente en IEEE 802.16.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes, v2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Cubre redes inalámbricas y de acceso (A1-108/A2-IV-11); la familia de estándares de WiMAX se verificó específicamente en IEEE 802.16."
+      },
+      "etiquetas": [
+        "WiMAX",
+        "IEEE 802.16",
+        "acceso inalámbrico de banda ancha",
+        "BWA"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.16/6996/",
+            "referencia": "IEEE SA, IEEE 802.16-2017: interfaz aérea MAC/PHY de sistemas de acceso inalámbrico de banda ancha punto a multipunto, fijos y móviles."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, v2026. Cubre redes inalámbricas y de acceso (A1-108/A2-IV-11); la familia de estándares de WiMAX se verificó específicamente en IEEE 802.16."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-11."
+          }
+        ],
+        "observaciones": "Corregida C. Se enmendó la errata del nombre y la caracterización técnica: WiMAX corresponde a tecnologías de acceso inalámbrico de banda ancha basadas en IEEE 802.16, que abarca sistemas fijos y móviles punto a multipunto. La comparación genérica de coberturas con Wi‑Fi se retiró porque depende de despliegue, banda y condiciones; no distingue correctamente la tecnología. Cotejo curricular: ITIC Academy, bloque 42 Redes, v2026. Cubre redes inalámbricas y de acceso (A1-108/A2-IV-11); la familia de estándares de WiMAX se verificó específicamente en IEEE 802.16."
+      }
     },
     {
       "id": 7908,
       "bloque": 0,
       "tema": 0,
-      "texto": "En terminología propia de la Infraestructura Común de Telecomunicaciones (ICT). ¿Qué significan las siglas RITI?",
+      "texto": "En el Reglamento español de infraestructuras comunes de telecomunicaciones en edificios, ¿qué significan las siglas RITI?",
       "opciones": [
-        "RITI (Recinto de Instalaciones de Telecomunicaciones Interior).",
-        "RITI (Recinto de Instalaciones de Telecomunicaciones Incluyente).",
-        "RITI (Recinto de Instalaciones de Telecomunicaciones Inferior).",
+        "Recinto de Instalaciones de Telecomunicación Interior.",
+        "Recinto de Instalaciones de Telecomunicación Incluyente.",
+        "Recinto de Instalaciones de Telecomunicación Inferior.",
         "Todas las respuestas anteriores son falsas."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. La expansión oficial es “recinto de instalaciones de telecomunicación inferior”; se corrigieron el plural y la respuesta incorrecta “Interior”. Verificado en el texto consolidado vigente del Real Decreto 346/2011. Cotejo curricular: ITIC Academy, bloque 42 Redes, v2026. Cubre redes e infraestructuras de acceso; para la expansión normativa exacta RITI se acudió al reglamento oficial de ICT, pues no se atribuye al temario académico una cita literal no localizada.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes, v2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Cubre redes e infraestructuras de acceso; para la expansión normativa exacta RITI se acudió al reglamento oficial de ICT, pues no se atribuye al temario académico una cita literal no localizada."
+      },
+      "etiquetas": [
+        "ICT",
+        "RITI",
+        "infraestructura común de telecomunicaciones",
+        "recinto inferior"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-5834&p=20261105&tn=1",
+            "referencia": "Real Decreto 346/2011, texto consolidado consultado a 05-11-2026: desarrolla la denominación “recinto de instalaciones de telecomunicación inferior (RITI)” en el reglamento de ICT."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 42 Redes, v2026. Cubre redes e infraestructuras de acceso; para la expansión normativa exacta RITI se acudió al reglamento oficial de ICT, pues no se atribuye al temario académico una cita literal no localizada."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-IV-8."
+          }
+        ],
+        "observaciones": "Corregida C. La expansión oficial es “recinto de instalaciones de telecomunicación inferior”; se corrigieron el plural y la respuesta incorrecta “Interior”. Verificado en el texto consolidado vigente del Real Decreto 346/2011. Cotejo curricular: ITIC Academy, bloque 42 Redes, v2026. Cubre redes e infraestructuras de acceso; para la expansión normativa exacta RITI se acudió al reglamento oficial de ICT, pues no se atribuye al temario académico una cita literal no localizada."
+      }
     },
     {
       "id": 7909,
       "bloque": 0,
       "tema": 0,
-      "texto": "Al conjunto de metodologías, aplicaciones y tecnologías que permiten reunir, depurar y transformar datos de los sistemas transaccionales e información desestructurada en información estructurada, para su explotación directa o para su análisis y conversión en conocimiento de soporte a la toma de decisiones sobre el negocio se denomina:",
+      "texto": "¿Qué concepto comprende procesos y tecnologías para recopilar, gestionar y analizar datos de una organización con el fin de obtener información que apoye sus decisiones y operaciones?",
       "opciones": [
-        "Inteligencia de negocio.",
-        "Big Data.",
-        "Cuadro de mando integral o estratégico.",
-        "Minería de datos."
+        "Inteligencia de negocio (Business Intelligence, BI).",
+        "Big Data, entendido exclusivamente como almacenamiento de grandes volúmenes sin análisis.",
+        "Cuadro de mando integral, que es solo una herramienta concreta de seguimiento estratégico.",
+        "Minería de datos, que es una técnica analítica específica y no el conjunto de capacidades descrito."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. La descripción original asociaba BI con una secuencia ETL/almacén y afirmaba como regla que toda información desestructurada se transforma primero en estructurada, simplificación que no define el campo completo. Se reformuló conforme a la definición de BI como procesos tecnológicos de recopilación, gestión y análisis de datos para producir información útil a decisiones y operaciones. Big Data, cuadro de mando y minería de datos pueden relacionarse con BI, pero no son equivalentes a su alcance general. Cotejo curricular: ITIC Academy, bloque 34 Business Intelligence y Big Data, v2026. El título y los contenidos localizados abordan BI/Big Data, en relación con A1-75 y A2-II-4. La definición corregida se contrastó además con IBM.",
+      "clasificacion": {
+        "A1": [
+          "A1-75"
+        ],
+        "A2": [
+          "A2-II-4"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 34 Business Intelligence y Big Data, v2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: El título y los contenidos localizados abordan BI/Big Data, en relación con A1-75 y A2-II-4. La definición corregida se contrastó además con IBM."
+      },
+      "etiquetas": [
+        "inteligencia de negocio",
+        "business intelligence",
+        "BI",
+        "análisis de datos",
+        "toma de decisiones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/think/topics/business-intelligence",
+            "referencia": "IBM, What is business intelligence (BI)?: describe BI como procesos tecnológicos para recopilar, gestionar y analizar datos de la organización y obtener información útil para estrategias y operaciones; puede trabajar con datos actuales/históricos, internos/externos y semiestructurados/no estructurados."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1S8Dn0VtGFN0nxCvI8CAv6Q1R-5Z2sgHw/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 34 Business Intelligence y Big Data, v2026. El título y los contenidos localizados abordan BI/Big Data, en relación con A1-75 y A2-II-4. La definición corregida se contrastó además con IBM."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-75."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-II-4."
+          }
+        ],
+        "observaciones": "Corregida A. La descripción original asociaba BI con una secuencia ETL/almacén y afirmaba como regla que toda información desestructurada se transforma primero en estructurada, simplificación que no define el campo completo. Se reformuló conforme a la definición de BI como procesos tecnológicos de recopilación, gestión y análisis de datos para producir información útil a decisiones y operaciones. Big Data, cuadro de mando y minería de datos pueden relacionarse con BI, pero no son equivalentes a su alcance general. Cotejo curricular: ITIC Academy, bloque 34 Business Intelligence y Big Data, v2026. El título y los contenidos localizados abordan BI/Big Data, en relación con A1-75 y A2-II-4. La definición corregida se contrastó además con IBM."
+      }
     },
     {
       "id": 7910,
       "bloque": 0,
       "tema": 0,
-      "texto": "Asociado a un cambio, existen según Metrica v3: 1. un catálogo de peticiones; 2. un plan de acción; 3. un plan de pruebas de regresión; 4. una evaluación del cambio; 5. una propuesta de solución; 6. un analisis de impacto.",
+      "texto": "En MÉTRICA v3, ¿cuál de estas afirmaciones describe mejor los productos asociados al proceso de mantenimiento y cambio?",
       "opciones": [
-        "1, 3, 4, 5",
-        "1, 2, 3, 5",
-        "1, 3, 5, 6",
-        "Todas"
+        "El Catálogo de Peticiones, el análisis de impacto, la propuesta de solución, el plan de acción, el plan de pruebas de regresión y la evaluación del cambio aparecen en distintas tareas del proceso.",
+        "Todos se producen exclusivamente al registrar la petición inicial.",
+        "MÉTRICA v3 no contempla pruebas de regresión ni evaluación posterior del cambio.",
+        "El análisis de impacto se realiza después de la evaluación final y no interviene en la solución propuesta."
       ],
-      "respuesta_correcta": 3,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "Corregida A. La opción “Todas” era defendible para la lista original, pero la pregunta no aclaraba que los artefactos pertenecen a tareas diferentes y no se generan simultáneamente. Se reformuló para hacer explícita la distribución: registro/catálogo (MSI 1), análisis de impacto y propuesta de solución (MSI 2), preparación del plan de acción y pruebas de regresión (MSI 3), y evaluación (MSI 4). La guía oficial MÉTRICA v3 de Mantenimiento respalda estos productos y tareas. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, v2026. Cubre calidad, cambios y mantenimiento (A1-96/A1-102 y A2-III-7/A2-III-8); la asignación de productos y tareas se verificó contra la guía oficial MÉTRICA v3.",
+      "clasificacion": {
+        "A1": [
+          "A1-96",
+          "A1-102"
+        ],
+        "A2": [
+          "A2-III-7",
+          "A2-III-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 39 Calidad y Mantenimiento, v2026",
+        "estado": "revisada",
+        "nota": "Cotejo curricular: Cubre calidad, cambios y mantenimiento (A1-96/A1-102 y A2-III-7/A2-III-8); la asignación de productos y tareas se verificó contra la guía oficial MÉTRICA v3."
+      },
+      "etiquetas": [
+        "MÉTRICA v3",
+        "gestión de cambios",
+        "mantenimiento",
+        "catálogo de peticiones",
+        "impacto",
+        "regresión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr%3Ae15c0c5b-dd9c-4e48-82e3-9e36ba18e839/METRICA_V3_Mantenimiento_de_Sistemas_de_Informacion.pdf",
+            "referencia": "Administración electrónica, metodología MÉTRICA versión 3, Mantenimiento de Sistemas de Información: MSI 1 registra la petición y crea el Catálogo de Peticiones; MSI 2 analiza impacto y solución propuesta; MSI 3 prepara la modificación, el plan de acción y las pruebas de regresión; MSI 4 evalúa el cambio."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, v2026. Cubre calidad, cambios y mantenimiento (A1-96/A1-102 y A2-III-7/A2-III-8); la asignación de productos y tareas se verificó contra la guía oficial MÉTRICA v3."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial A1 BOE-A-2025-25938; epígrafe(s): A1-96, A1-102."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial A2 BOE-A-2025-26262; epígrafe(s): A2-III-7, A2-III-8."
+          }
+        ],
+        "observaciones": "Corregida A. La opción “Todas” era defendible para la lista original, pero la pregunta no aclaraba que los artefactos pertenecen a tareas diferentes y no se generan simultáneamente. Se reformuló para hacer explícita la distribución: registro/catálogo (MSI 1), análisis de impacto y propuesta de solución (MSI 2), preparación del plan de acción y pruebas de regresión (MSI 3), y evaluación (MSI 4). La guía oficial MÉTRICA v3 de Mantenimiento respalda estos productos y tareas. Cotejo curricular: ITIC Academy, bloque 39 Calidad y Mantenimiento, v2026. Cubre calidad, cambios y mantenimiento (A1-96/A1-102 y A2-III-7/A2-III-8); la asignación de productos y tareas se verificó contra la guía oficial MÉTRICA v3."
+      }
     },
     {
       "id": 7911,
