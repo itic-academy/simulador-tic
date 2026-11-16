@@ -396174,71 +396174,318 @@
       "id": 7476,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes formatos de firma permite la adición de sellos de tiempo periódicos para garantizar la integridad de la firma archivada?",
+      "texto": "En la nomenclatura histórica de perfiles XAdES, ¿qué forma incorpora datos de validación archivística y sellos de tiempo de archivo que pueden renovarse periódicamente?",
       "opciones": [
-        "AdES - T",
-        "AdES - XL",
-        "AdES - A",
-        "AdES C"
+        "XAdES-T (con sello de tiempo de firma).",
+        "XAdES-XL (con datos de validación a largo plazo).",
+        "XAdES-A (forma archivística con ArchiveTimeStamp).",
+        "XAdES-C (con referencias completas a datos de validación)."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. La nomenclatura heredada XAdES-A identifica la forma archivística con uno o más ArchiveTimeStamp, que pueden repetirse a medida que se debilita la protección anterior. Los perfiles base actuales expresan la conservación archivística mediante el nivel LTA; se explicita que la pregunta se refiere a la nomenclatura histórica para no presentarla como el único perfil contemporáneo. Cotejo curricular: ITIC Academy, temas 79/80/81 Seguridad, Criptografía, Identificación y Firma, edición 2026. Cotejo curricular de formatos de firma electrónica y criptografía (A1-80/A2-I-6/A2-IV-12). La distinción entre nomenclatura histórica XAdES-A y el perfil actual LTA se fundamenta en ETSI.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, temas 79/80/81 Seguridad, Criptografía, Identificación y Firma, edición 2026: Cotejo curricular de formatos de firma electrónica y criptografía (A1-80/A2-I-6/A2-IV-12). La distinción entre nomenclatura histórica XAdES-A y el perfil actual LTA se fundamenta en ETSI.",
+        "estado": "revisada",
+        "nota": "Cotejo de Academy registrado. Cotejo curricular de formatos de firma electrónica y criptografía (A1-80/A2-I-6/A2-IV-12). La distinción entre nomenclatura histórica XAdES-A y el perfil actual LTA se fundamenta en ETSI."
+      },
+      "etiquetas": [
+        "AdES",
+        "XAdES",
+        "XAdES-A",
+        "firma electrónica",
+        "sello de tiempo",
+        "archivo"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.etsi.org/deliver/etsi_ts/101700_101799/101903/01.02.02_60/ts_101903v010202p.pdf",
+            "referencia": "ETSI TS 101 903 v1.2.2, XAdES, §B.3: la forma de archivo XAdES-A incorpora datos de validación y uno o más ArchiveTimeStamp; los sellos sucesivos protegen el material archivado y pueden añadirse al debilitarse algoritmos/medios criptográficos."
+          },
+          {
+            "url": "https://www.etsi.org/deliver/etsi_ts/103100_103199/103171/02.01.01_60/ts_103171v020101p.pdf",
+            "referencia": "ETSI TS 103 171, XAdES Baseline Profile: el nivel LTA incorpora uno o varios ArchiveTimeStamp al nivel LT para conservar la validabilidad a largo plazo; nomenclatura actual del perfil base."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, temas 79/80/81 Seguridad, Criptografía, Identificación y Firma, edición 2026. Cotejo curricular de formatos de firma electrónica y criptografía (A1-80/A2-I-6/A2-IV-12). La distinción entre nomenclatura histórica XAdES-A y el perfil actual LTA se fundamenta en ETSI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; correspondencia curricular con A1-80."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; correspondencia curricular con A2-I-6, A2-IV-12."
+          }
+        ],
+        "observaciones": "Corregida C. La nomenclatura heredada XAdES-A identifica la forma archivística con uno o más ArchiveTimeStamp, que pueden repetirse a medida que se debilita la protección anterior. Los perfiles base actuales expresan la conservación archivística mediante el nivel LTA; se explicita que la pregunta se refiere a la nomenclatura histórica para no presentarla como el único perfil contemporáneo. Cotejo curricular: ITIC Academy, temas 79/80/81 Seguridad, Criptografía, Identificación y Firma, edición 2026. Cotejo curricular de formatos de firma electrónica y criptografía (A1-80/A2-I-6/A2-IV-12). La distinción entre nomenclatura histórica XAdES-A y el perfil actual LTA se fundamenta en ETSI."
+      }
     },
     {
       "id": 7477,
       "bloque": 0,
       "tema": 0,
-      "texto": "PKCS#7 se centra en:",
+      "texto": "¿Qué tipo de contenido de PKCS #7/CMS representa un sobre digital con contenido cifrado destinado a uno o más destinatarios?",
       "opciones": [
-        "El formato del sobre digital",
-        "La especificación de un interfaz de acceso a dispositivos que almacenan información",
-        "Especificar un formato portable para almacenar o transportar las claves privadas de un usuario",
-        "Todas las respuestas anteriores son correctas"
+        "EnvelopedData.",
+        "Una interfaz de acceso a dispositivos de almacenamiento criptográfico (PKCS #11).",
+        "Un paquete portable de clave privada asimétrica (PKCS #8/Asymmetric Key Package).",
+        "X.509 SubjectPublicKeyInfo sin contenido encapsulado."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. PKCS #7 (sustituido en gran medida por CMS, RFC 5652) define varios tipos de contenido, uno de ellos EnvelopedData, utilizado para encapsular contenido cifrado y la información de claves para destinatarios. El enunciado se acota a ese tipo; PKCS #7 en conjunto no se reduce solo al sobre. PKCS #11 trata interfaces a dispositivos y los formatos de clave privada pertenecen a otras especificaciones. Cotejo curricular: ITIC Academy, temas 79/80/81 Seguridad, Criptografía, Identificación y Firma, edición 2026. Cotejo curricular de sintaxis criptográfica, claves y firma digital (A1-80/A2-I-6/A2-IV-12); los tipos de contenido se verifican en RFC 2315/5652.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6",
+          "A2-IV-12"
+        ],
+        "bloque_academia": "ITIC Academy, temas 79/80/81 Seguridad, Criptografía, Identificación y Firma, edición 2026: Cotejo curricular de sintaxis criptográfica, claves y firma digital (A1-80/A2-I-6/A2-IV-12); los tipos de contenido se verifican en RFC 2315/5652.",
+        "estado": "revisada",
+        "nota": "Cotejo de Academy registrado. Cotejo curricular de sintaxis criptográfica, claves y firma digital (A1-80/A2-I-6/A2-IV-12); los tipos de contenido se verifican en RFC 2315/5652."
+      },
+      "etiquetas": [
+        "PKCS#7",
+        "CMS",
+        "EnvelopedData",
+        "sobre digital",
+        "criptografía"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc2315",
+            "referencia": "IETF RFC 2315, PKCS #7: define sintaxis de mensajes criptográficos y tipos de contenido, entre ellos EnvelopedData para contenido cifrado dirigido a destinatarios. PKCS#7 no se limita a un único tipo de sobre."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5652",
+            "referencia": "IETF RFC 5652, Cryptographic Message Syntax (CMS), sucesor de PKCS#7: especifica EnvelopedData y el procesamiento de contenido cifrado para uno o más destinatarios."
+          },
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5958",
+            "referencia": "IETF RFC 5958, Asymmetric Key Packages: describe la estructura de paquete de clave privada asimétrica, diferenciándola de CMS EnvelopedData."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, temas 79/80/81 Seguridad, Criptografía, Identificación y Firma, edición 2026. Cotejo curricular de sintaxis criptográfica, claves y firma digital (A1-80/A2-I-6/A2-IV-12); los tipos de contenido se verifican en RFC 2315/5652."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; correspondencia curricular con A1-80."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; correspondencia curricular con A2-I-6, A2-IV-12."
+          }
+        ],
+        "observaciones": "Corregida A. PKCS #7 (sustituido en gran medida por CMS, RFC 5652) define varios tipos de contenido, uno de ellos EnvelopedData, utilizado para encapsular contenido cifrado y la información de claves para destinatarios. El enunciado se acota a ese tipo; PKCS #7 en conjunto no se reduce solo al sobre. PKCS #11 trata interfaces a dispositivos y los formatos de clave privada pertenecen a otras especificaciones. Cotejo curricular: ITIC Academy, temas 79/80/81 Seguridad, Criptografía, Identificación y Firma, edición 2026. Cotejo curricular de sintaxis criptográfica, claves y firma digital (A1-80/A2-I-6/A2-IV-12); los tipos de contenido se verifican en RFC 2315/5652."
+      }
     },
     {
       "id": 7478,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la respuesta falsa en relación a Ethereum:",
+      "texto": "¿Qué afirmación es falsa sobre Go y Ethereum?",
       "opciones": [
-        "Solidity, GO, C++ o Java son lenguajes empleados para desarrollar su funcionalidad.",
-        "GO es un lenguaje de programación inspirando en la sintaxis de Java desarrollado por Google.",
-        "Ethereum ejecuta de manera descentralizada una máquina virtual (EVM) que está presente en cada nodo.",
-        "Serpent y Solidity son lenguajes Turing completo."
+        "Solidity se emplea para escribir contratos inteligentes; Go y C++ también se usan en implementaciones de clientes, y existen clientes escritos en Java.",
+        "Go fue creado en Google y su sintaxis básica está inspirada principalmente en Java.",
+        "Los clientes de ejecución de Ethereum implementan la EVM para ejecutar transiciones de estado de la cadena.",
+        "Solidity y el lenguaje histórico Serpent se diseñaron para expresar contratos inteligentes con capacidad computacional general."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. Go nació en Google, pero su FAQ oficial describe su sintaxis como perteneciente principalmente a la familia C, junto con influencias de Pascal/Modula/Oberon y lenguajes CSP; no está inspirada principalmente en Java. Se acota la afirmación EVM a clientes de ejecución (no a cualquier tipo de nodo) y se presenta Serpent como lenguaje histórico, no como recomendación vigente. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026. Cotejo curricular con el temario A1-85 sobre blockchain y smart contracts, y A2-II-3/A2-III-5 sobre lenguajes y fundamentos de programación/algoritmos. La historia y capacidades de Go, clientes Ethereum y Solidity se contrastan en sus fuentes primarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-85"
+        ],
+        "A2": [
+          "A2-II-3",
+          "A2-III-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026: Cotejo curricular con el temario A1-85 sobre blockchain y smart contracts, y A2-II-3/A2-III-5 sobre lenguajes y fundamentos de programación/algoritmos. La historia y capacidades de Go, clientes Ethereum y Solidity se contrastan en sus fuentes primarias.",
+        "estado": "revisada",
+        "nota": "Cotejo de Academy registrado. Cotejo curricular con el temario A1-85 sobre blockchain y smart contracts, y A2-II-3/A2-III-5 sobre lenguajes y fundamentos de programación/algoritmos. La historia y capacidades de Go, clientes Ethereum y Solidity se contrastan en sus fuentes primarias."
+      },
+      "etiquetas": [
+        "Ethereum",
+        "Go",
+        "EVM",
+        "Solidity",
+        "Serpent",
+        "blockchain"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://go.dev/doc/faq",
+            "referencia": "Go FAQ oficial: Go se desarrolló en Google; su sintaxis básica pertenece principalmente a la familia C, con influencias de Pascal/Modula/Oberon y CSP, y no está inspirada en la sintaxis de Java."
+          },
+          {
+            "url": "https://ethereum.org/developers/docs/evm/",
+            "referencia": "ethereum.org, Ethereum Virtual Machine: los clientes de ejecución implementan la EVM, que aplica el estado de la cadena; no se afirma que toda clase de nodo ejecute indistintamente una EVM."
+          },
+          {
+            "url": "https://ethereum.org/developers/docs/nodes-and-clients/",
+            "referencia": "ethereum.org, Nodes and clients: distingue clientes de ejecución y consenso y sus responsabilidades; las implementaciones de cliente pueden estar escritas en varios lenguajes."
+          },
+          {
+            "url": "https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html",
+            "referencia": "Solidity documentation, Introduction to Smart Contracts: los lenguajes de contratos inteligentes de Ethereum son Turing-completos y Solidity es el lenguaje moderno de alto nivel documentado; Serpent es histórico/obsoleto, no se recomienda para desarrollo nuevo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026. Cotejo curricular con el temario A1-85 sobre blockchain y smart contracts, y A2-II-3/A2-III-5 sobre lenguajes y fundamentos de programación/algoritmos. La historia y capacidades de Go, clientes Ethereum y Solidity se contrastan en sus fuentes primarias."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; correspondencia curricular con A1-85."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; correspondencia curricular con A2-II-3, A2-III-5."
+          }
+        ],
+        "observaciones": "Corregida B. Go nació en Google, pero su FAQ oficial describe su sintaxis como perteneciente principalmente a la familia C, junto con influencias de Pascal/Modula/Oberon y lenguajes CSP; no está inspirada principalmente en Java. Se acota la afirmación EVM a clientes de ejecución (no a cualquier tipo de nodo) y se presenta Serpent como lenguaje histórico, no como recomendación vigente. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026. Cotejo curricular con el temario A1-85 sobre blockchain y smart contracts, y A2-II-3/A2-III-5 sobre lenguajes y fundamentos de programación/algoritmos. La historia y capacidades de Go, clientes Ethereum y Solidity se contrastan en sus fuentes primarias."
+      }
     },
     {
       "id": 7479,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál no es una innovación aplicable al modelo en cascada que permita mejorar algunas de las deficiencias del modelo y aumentar su eficacia?",
+      "texto": "Si se pregunta por modificaciones del proceso secuencial en cascada —no por técnicas de implementación o prueba dentro de sus fases—, ¿cuál de estas opciones pertenece a otro nivel de decisión?",
       "opciones": [
-        "Utilización de herramientas CASE",
-        "Codificación y pruebas de los módulos de más bajo nivel en primer lugar",
-        "Realización de fases en paralelo",
-        "Utilizar técnicas de análisis de riesgos y de coste-beneficio"
+        "Aplicar herramientas CASE para apoyar actividades de análisis, diseño o construcción.",
+        "Codificar e integrar primero módulos de bajo nivel mediante una estrategia ascendente de implementación y pruebas.",
+        "Solapar determinadas fases, como en variantes de cascada con fases concurrentes.",
+        "Incorporar análisis explícito de riesgos y de coste-beneficio para decidir sobre el ciclo de vida."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. El original llamaba «innovación del modelo» a varias medidas heterogéneas y dejaba la respuesta dependiente de cómo se clasificara el desarrollo bottom-up. Se explicita ahora el criterio: las herramientas CASE, el solapamiento de fases y la gestión de riesgos son cambios/apoyos al proceso; codificar e integrar módulos de abajo arriba es una estrategia de implementación y pruebas dentro de las fases, no un cambio del modelo de ciclo de vida. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026. Cotejo curricular del ciclo de vida de sistemas y sus modelos (A1-86/A2-III-1); las fases del ciclo se contrastan con la guía de ingeniería de software de NASA. Cotejo curricular: ITIC Academy, bloque 12 Planificación Estratégica, edición 2026. Cotejo curricular de planificación, seguimiento y gestión de proyectos TIC (A1-35/A2-III-2); la distinción entre modelo de proceso y técnica de implementación se contrasta con fuentes de ingeniería de software.",
+      "clasificacion": {
+        "A1": [
+          "A1-86"
+        ],
+        "A2": [
+          "A2-III-1",
+          "A2-III-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026: Cotejo curricular del ciclo de vida de sistemas y sus modelos (A1-86/A2-III-1); las fases del ciclo se contrastan con la guía de ingeniería de software de NASA. ITIC Academy, bloque 12 Planificación Estratégica, edición 2026: Cotejo curricular de planificación, seguimiento y gestión de proyectos TIC (A1-35/A2-III-2); la distinción entre modelo de proceso y técnica de implementación se contrasta con fuentes de ingeniería de software.",
+        "estado": "revisada",
+        "nota": "Cotejo de Academy registrado. Cotejo curricular del ciclo de vida de sistemas y sus modelos (A1-86/A2-III-1); las fases del ciclo se contrastan con la guía de ingeniería de software de NASA. Cotejo curricular de planificación, seguimiento y gestión de proyectos TIC (A1-35/A2-III-2); la distinción entre modelo de proceso y técnica de implementación se contrasta con fuentes de ingeniería de software."
+      },
+      "etiquetas": [
+        "cascada",
+        "ciclo de vida",
+        "integración",
+        "CASE",
+        "riesgos"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://swehb.nasa.gov/spaces/SWEHBVB/pages/32604451/SWE-019+Software+Life+Cycle",
+            "referencia": "NASA Software Engineering Handbook SWE-019: describe modelos de ciclo de vida, fases de cascada, prototipado y análisis de riesgos propio del modelo espiral; ayuda a diferenciar modelos/procesos de técnicas de implementación y pruebas."
+          },
+          {
+            "url": "https://voyager.gsfc.nasa.gov/Library/Software_Guide_HSTX.pdf",
+            "referencia": "NASA Goddard Software Engineering Guidebook, §3-2: presenta el ciclo de vida y fases del modelo en cascada, incluida codificación y pruebas unitarias, como actividades de fase; el orden de integración de módulos es una estrategia de implementación/prueba, no una modificación del modelo de proceso."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026. Cotejo curricular del ciclo de vida de sistemas y sus modelos (A1-86/A2-III-1); las fases del ciclo se contrastan con la guía de ingeniería de software de NASA."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 12 Planificación Estratégica, edición 2026. Cotejo curricular de planificación, seguimiento y gestión de proyectos TIC (A1-35/A2-III-2); la distinción entre modelo de proceso y técnica de implementación se contrasta con fuentes de ingeniería de software."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; correspondencia curricular con A1-86."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; correspondencia curricular con A2-III-1, A2-III-2."
+          }
+        ],
+        "observaciones": "Corregida B. El original llamaba «innovación del modelo» a varias medidas heterogéneas y dejaba la respuesta dependiente de cómo se clasificara el desarrollo bottom-up. Se explicita ahora el criterio: las herramientas CASE, el solapamiento de fases y la gestión de riesgos son cambios/apoyos al proceso; codificar e integrar módulos de abajo arriba es una estrategia de implementación y pruebas dentro de las fases, no un cambio del modelo de ciclo de vida. Cotejo curricular: ITIC Academy, bloque 30 Tecnologías de Sistemas de Información, edición 2026. Cotejo curricular del ciclo de vida de sistemas y sus modelos (A1-86/A2-III-1); las fases del ciclo se contrastan con la guía de ingeniería de software de NASA. Cotejo curricular: ITIC Academy, bloque 12 Planificación Estratégica, edición 2026. Cotejo curricular de planificación, seguimiento y gestión de proyectos TIC (A1-35/A2-III-2); la distinción entre modelo de proceso y técnica de implementación se contrasta con fuentes de ingeniería de software."
+      }
     },
     {
       "id": 7480,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuáles de las siguientes no es una fase definida en la planificación estratégica?",
+      "texto": "En un ciclo de planificación estratégica que incluye análisis de situación, formulación de objetivos y evaluación/selección de alternativas, ¿cuál de estas opciones es una posible decisión organizativa y no una fase del proceso de planificación?",
       "opciones": [
-        "Formulación de objetivos organizacionales",
-        "Análisis de las fortalezas y limitaciones de la empresa",
-        "Reestructuración de la empresa",
-        "Formulación de alternativas estratégicas"
+        "Formular los objetivos organizacionales.",
+        "Analizar fortalezas y limitaciones internas de la organización.",
+        "Reestructurar la organización.",
+        "Formular y comparar alternativas estratégicas."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. El original mezclaba una lista genérica de etapas y acciones posibles. Se acota a fases del análisis y formulación estratégica: definir objetivos, analizar capacidades internas y formular opciones son actividades de planificación; reestructurar puede resultar de una decisión estratégica, pero es una intervención organizativa, no una fase universal del proceso. Cotejo curricular: ITIC Academy, bloque 12 Planificación Estratégica, edición 2026. Cotejo curricular de planificación estratégica organizacional (A1-35/A2-III-2); el ciclo de objetivos, opciones y selección se contrasta con guías públicas de planificación estratégica.",
+      "clasificacion": {
+        "A1": [
+          "A1-35"
+        ],
+        "A2": [
+          "A2-III-2"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 12 Planificación Estratégica, edición 2026: Cotejo curricular de planificación estratégica organizacional (A1-35/A2-III-2); el ciclo de objetivos, opciones y selección se contrasta con guías públicas de planificación estratégica.",
+        "estado": "revisada",
+        "nota": "Cotejo de Academy registrado. Cotejo curricular de planificación estratégica organizacional (A1-35/A2-III-2); el ciclo de objetivos, opciones y selección se contrasta con guías públicas de planificación estratégica."
+      },
+      "etiquetas": [
+        "planificación estratégica",
+        "objetivos",
+        "análisis interno",
+        "alternativas",
+        "reestructuración"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-16",
+        "fuentes": [
+          {
+            "url": "https://assets.publishing.service.gov.uk/media/57a08975ed915d622c00021b/EoD_Topic_Guide_Infrastructure_Maintenance_June2015.pdf",
+            "referencia": "UK Department for International Development, Topic Guide: Infrastructure Maintenance, sección Strategic planning: el ciclo comprende diagnóstico de situación, objetivos/resultados, opciones estratégicas, selección e implementación; una reestructuración organizativa puede ser una intervención o resultado, no una fase analítica/formulativa de ese ciclo."
+          },
+          {
+            "url": "https://www.gov.uk/government/publications/effective-practice-in-strategic-planning-in-further-education/guide-to-effective-practice-in-strategic-planning-in-further-education",
+            "referencia": "UK Department for Education, Guide to effective practice in strategic planning: presenta análisis de contexto (incluida metodología SWOT), objetivos estratégicos y planes/estrategias de apoyo; la reestructuración se trata como cuestión organizativa a abordar, no como fase estándar de formulación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view?usp=drivesdk",
+            "referencia": "Cotejo curricular: ITIC Academy, bloque 12 Planificación Estratégica, edición 2026. Cotejo curricular de planificación estratégica organizacional (A1-35/A2-III-2); el ciclo de objetivos, opciones y selección se contrasta con guías públicas de planificación estratégica."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria oficial Cuerpo Superior TIC, A1, BOE-A-2025-25938; correspondencia curricular con A1-35."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria oficial Cuerpo de Gestión de Sistemas e Informática, A2, BOE-A-2025-26262; correspondencia curricular con A2-III-2."
+          }
+        ],
+        "observaciones": "Corregida C. El original mezclaba una lista genérica de etapas y acciones posibles. Se acota a fases del análisis y formulación estratégica: definir objetivos, analizar capacidades internas y formular opciones son actividades de planificación; reestructurar puede resultar de una decisión estratégica, pero es una intervención organizativa, no una fase universal del proceso. Cotejo curricular: ITIC Academy, bloque 12 Planificación Estratégica, edición 2026. Cotejo curricular de planificación estratégica organizacional (A1-35/A2-III-2); el ciclo de objetivos, opciones y selección se contrasta con guías públicas de planificación estratégica."
+      }
     },
     {
       "id": 7481,
