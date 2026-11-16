@@ -1,0 +1,415 @@
+{
+  "fecha": "2026-11-16",
+  "alcance": "IDs 7581–7585; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7581,
+      "original": {
+        "id": 7581,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si necesitamos vincular una dirección MAC o dirección física con una dirección IP, ¿qué protocolo deberíamos usar?",
+        "opciones": [
+          "UDP.",
+          "SNMP",
+          "TCP.",
+          "ARP."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7581,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una LAN IPv4 sobre Ethernet, ¿qué protocolo obtiene la dirección MAC asociada a la dirección IPv4 del siguiente salto?",
+        "opciones": [
+          "UDP.",
+          "SNMP.",
+          "TCP.",
+          "ARP."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. ARP resuelve IPv4 a una dirección de hardware/MAC en el enlace local. La consulta se formula en dirección IPv4→MAC, que es el uso operativo típico al enviar una trama Ethernet. La pregunta se limita a IPv4: IPv6 usa Neighbor Discovery (NDP), no ARP. Cotejo curricular: ITIC Academy, bloque 43: Protocolos, edición 2026. Cotejo con A1-115/A2-T8 sobre protocolos IP; el caso se acota a resolución IPv4 sobre Ethernet. La LAN y resolución de enlace se incluyen además en A2-C6. ITIC Academy, bloque 42: Redes, edición 2026. El programa aborda A1-118 y A2-C6, redes locales y sus protocolos/dispositivos.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8",
+            "A2-IV-8"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "ARP",
+          "IPv4",
+          "dirección MAC",
+          "resolución de direcciones",
+          "capa de enlace"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc826.html",
+              "referencia": "IETF RFC 826, Ethernet Address Resolution Protocol: resuelve una dirección de protocolo (por ejemplo, IPv4) en una dirección de hardware Ethernet y permite mantener la correspondencia en una tabla."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+              "referencia": "IETF RFC 4861, Neighbor Discovery for IP version 6 (IPv6): IPv6 utiliza Neighbor Discovery para resolución de direcciones de enlace; no usa ARP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 43: Protocolos, edición 2026. Cotejo con A1-115/A2-T8 sobre protocolos IP; el caso se acota a resolución IPv4 sobre Ethernet. La LAN y resolución de enlace se incluyen además en A2-C6."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 42: Redes, edición 2026. El programa aborda A1-118 y A2-C6, redes locales y sus protocolos/dispositivos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-115."
+            },
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-II-8, A2-IV-8."
+            }
+          ],
+          "observaciones": "Corregida D. ARP resuelve IPv4 a una dirección de hardware/MAC en el enlace local. La consulta se formula en dirección IPv4→MAC, que es el uso operativo típico al enviar una trama Ethernet. La pregunta se limita a IPv4: IPv6 usa Neighbor Discovery (NDP), no ARP. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 43: Protocolos, edición 2026. Cotejo con A1-115/A2-T8 sobre protocolos IP; el caso se acota a resolución IPv4 sobre Ethernet. La LAN y resolución de enlace se incluyen además en A2-C6. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 42: Redes, edición 2026. El programa aborda A1-118 y A2-C6, redes locales y sus protocolos/dispositivos."
+        }
+      }
+    },
+    {
+      "id": 7582,
+      "original": {
+        "id": 7582,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Estamos instalando un sistema de almacenamiento basado en IP con múltiples nodos de computación/almacenamiento (servidores) en el que para ahorrar cableado le pondremos unos switches en el mismo rack conectando todos los nodos de ese rack y con unos uplinks al core de la red. Para instalar esto estaremos hablando de una topología de switches:",
+        "opciones": [
+          "ToR.",
+          "EoR.",
+          "Spine.",
+          "MoR."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7582,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En un centro de datos, ¿cómo se denomina la topología en la que un switch situado en cada rack conecta los servidores del rack y enlaza mediante uplinks con la red de agregación?",
+        "opciones": [
+          "Top of Rack (ToR).",
+          "End of Row (EoR).",
+          "Spine, que es el nombre del switch ubicado en cada rack.",
+          "Middle of Row (MoR)."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. En ToR el switch se instala dentro de cada rack, conecta los equipos de ese rack y proporciona uplinks a la red superior. EoR/MoR sitúan la conmutación fuera del rack o junto a varios racks; spine designa una capa de una arquitectura leaf-spine, no la ubicación local del switch. Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD, almacenamiento y virtualización, edición 2026. Cotejo directo con A1-53 y A2-C6, planificación física/dimensionamiento de CPD y servidores. ITIC Academy, bloque 42: Redes, edición 2026. A1-110/118 y A2-C6 cubren switches, equipos de interconexión y redes de área local.",
+        "clasificacion": {
+          "A1": [
+            "A1-53",
+            "A1-110",
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-6",
+            "A2-IV-8"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "centro de datos",
+          "top of rack",
+          "ToR",
+          "servidores",
+          "conmutación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.dell.com/en-us/infohub/articles/dell-powerrack-for-networking-a-resilient-networking-foundation-for-ai-factories-large-scale-model-training-inference-and-high-performance-computing-white-paper",
+              "referencia": "Dell Technologies, guía de red PowerRack: define ToR (Top-of-Rack) como switch situado dentro del rack y que conecta los dispositivos de ese rack."
+            },
+            {
+              "url": "https://solutions.arista.com/hubfs/Arista/Datasheets/Cloud_Networking__Scaling_Out_Data_Center_Networks.pdf.pdf",
+              "referencia": "Arista, Cloud Networking: Scaling Out Data Center Networks: muestra un switch ToR/leaf en cada rack, conectado a servidores y con uplinks hacia la capa spine."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD, almacenamiento y virtualización, edición 2026. Cotejo directo con A1-53 y A2-C6, planificación física/dimensionamiento de CPD y servidores."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 42: Redes, edición 2026. A1-110/118 y A2-C6 cubren switches, equipos de interconexión y redes de área local."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-53, A1-110, A1-118."
+            },
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-IV-6, A2-IV-8."
+            }
+          ],
+          "observaciones": "Corregida A. En ToR el switch se instala dentro de cada rack, conecta los equipos de ese rack y proporciona uplinks a la red superior. EoR/MoR sitúan la conmutación fuera del rack o junto a varios racks; spine designa una capa de una arquitectura leaf-spine, no la ubicación local del switch. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD, almacenamiento y virtualización, edición 2026. Cotejo directo con A1-53 y A2-C6, planificación física/dimensionamiento de CPD y servidores. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 42: Redes, edición 2026. A1-110/118 y A2-C6 cubren switches, equipos de interconexión y redes de área local."
+        }
+      }
+    },
+    {
+      "id": 7583,
+      "original": {
+        "id": 7583,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si en un centro de proceso de datos tenemos una arquitectura spine-leaf compuesta por 2 switches de spine y 4 switches de leafs, cuál de las siguientes afirmaciones será CORRECTA:",
+        "opciones": [
+          "Debemos conectar los 6 switches en el mismo rack por razones de ancho de banda de las conexiones entre switches.",
+          "Podemos conectar 1 switch de spine y 2 de leaf en racks diferentes, pero debemos obligatoriamente conectar los spine entre sí con anchos de banda muy altos.",
+          "Podemos conectar los switches en cualquier rack del CPD pero debemos obligatoriamente conectar todos los leafs entre sí.",
+          "Podemos conectar los switches en cualquier rack del CPD pero debemos obligatoriamente conectar todos los leafs con todos los spine."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7583,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una arquitectura spine-leaf con 2 switches spine y 4 leaf, ¿qué conexión define la topología básica?",
+        "opciones": [
+          "Los seis switches deben instalarse en el mismo rack.",
+          "Los dos spine deben conectarse entre sí con enlaces obligatoriamente de ancho de banda muy alto.",
+          "Todos los leaf deben interconectarse entre sí.",
+          "Cada switch leaf debe disponer de enlaces hacia todos los switches spine."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. En una topología spine-leaf de dos niveles, cada leaf se conecta a cada spine para que haya rutas de igual número de saltos entre leafs. No es requisito que los spine se enlacen entre sí ni que todos los leaf formen una malla directa; la ubicación en racks puede distribuirse según el diseño. Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD, almacenamiento y virtualización, edición 2026. Cotejo con A1-53 y A2-C6 sobre arquitectura de CPD, racks, alta disponibilidad y diseño de redes de servidores. ITIC Academy, bloque 42: Redes, edición 2026. Cotejo con A1-110/118 y A2-C6 sobre topologías, switches y conexiones de red local.",
+        "clasificacion": {
+          "A1": [
+            "A1-53",
+            "A1-110",
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-6",
+            "A2-IV-8"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "spine-leaf",
+          "leaf",
+          "spine",
+          "malla completa",
+          "centro de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.dell.com/en-us/infohub/articles/sonic-smartfabric-manager-for-powerflex-deployment-guide",
+              "referencia": "Dell Technologies, guía de despliegue PowerFlex: en la topología leaf-spine, cada leaf se conecta a cada spine; los switches leaf pueden estar distribuidos entre distintos racks."
+            },
+            {
+              "url": "https://solutions.arista.com/hubfs/Arista/Datasheets/Cloud_Networking__Scaling_Out_Data_Center_Networks.pdf.pdf",
+              "referencia": "Arista, Cloud Networking: Scaling Out Data Center Networks: ejemplifica la topología de dos niveles con uplinks de cada leaf hacia los switches spine y racks de servidores separados."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD, almacenamiento y virtualización, edición 2026. Cotejo con A1-53 y A2-C6 sobre arquitectura de CPD, racks, alta disponibilidad y diseño de redes de servidores."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 42: Redes, edición 2026. Cotejo con A1-110/118 y A2-C6 sobre topologías, switches y conexiones de red local."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-53, A1-110, A1-118."
+            },
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-IV-6, A2-IV-8."
+            }
+          ],
+          "observaciones": "Corregida D. En una topología spine-leaf de dos niveles, cada leaf se conecta a cada spine para que haya rutas de igual número de saltos entre leafs. No es requisito que los spine se enlacen entre sí ni que todos los leaf formen una malla directa; la ubicación en racks puede distribuirse según el diseño. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 26: Hardware, servidores, CPD, almacenamiento y virtualización, edición 2026. Cotejo con A1-53 y A2-C6 sobre arquitectura de CPD, racks, alta disponibilidad y diseño de redes de servidores. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 42: Redes, edición 2026. Cotejo con A1-110/118 y A2-C6 sobre topologías, switches y conexiones de red local."
+        }
+      }
+    },
+    {
+      "id": 7584,
+      "original": {
+        "id": 7584,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Hablando de tecnologías de acceso y más en concreto en redes de telefonía móvil, ¿cuál de las siguientes es la que nos dará el menor ancho de banda para la conexión de un centro del Servicio Gallego de Salud?",
+        "opciones": [
+          "5G.",
+          "Edge.",
+          "HSPA.",
+          "GPRS."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7584,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Entre las tecnologías móviles indicadas, ¿cuál tiene la menor tasa máxima teórica de transferencia de datos?",
+        "opciones": [
+          "5G.",
+          "EDGE (EGPRS).",
+          "HSPA.",
+          "GPRS."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. En las especificaciones comparables, GPRS ofrece una tasa máxima muy inferior a EDGE, HSPA y 5G (por ejemplo, ITU-R SM.2351 recoge aproximadamente 172 kbit/s para GPRS frente a 491 kbit/s para EGPRS, tasas de Mbit/s para HSPA y valores de Gbit/s para IMT-2020). Se pregunta por tasa máxima teórica de la tecnología, no por el rendimiento real de una conexión concreta, que depende de versión, terminal, cobertura, congestión y operador. Cotejo curricular: ITIC Academy, bloque 46: Redes inalámbricas y comunicaciones móviles, edición 2026. Cotejo directo con A1-123 y A2-C13, generaciones de tecnologías celulares y comunicaciones móviles; la comparación de tasa teórica se comprueba con ITU-R/ETSI.",
+        "clasificacion": {
+          "A1": [
+            "A1-112",
+            "A1-123"
+          ],
+          "A2": [
+            "A2-IV-15"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "telefonía móvil",
+          "GPRS",
+          "EDGE",
+          "HSPA",
+          "5G",
+          "velocidad de datos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/dms_pub/itu-r/opb/rep/R-REP-SM.2351-3-2021-PDF-E.pdf",
+              "referencia": "Informe ITU-R SM.2351-3, tabla A1.8: compara tasas máximas de tecnologías celulares; GPRS se sitúa en el orden de centenas de kbit/s, EGPRS/EDGE por encima, HSPA en Mbit/s y LTE/5G en tasas superiores."
+            },
+            {
+              "url": "https://www.itu.int/en/ITU-R/Documents/ITU-R-FAQ-IMT_2021.pdf",
+              "referencia": "ITU-R, FAQ sobre IMT: identifica IMT-2020 (5G) y sus requisitos de prestaciones, incluido pico de 20 Gbit/s en bajada bajo condiciones ideales."
+            },
+            {
+              "url": "https://portal.etsi.org/new3g/specs/specs.htm",
+              "referencia": "ETSI, especificaciones 3GPP: indica que la familia de especificaciones GSM comprende GPRS y EDGE, y que 3GPP mantiene especificaciones de tecnologías móviles."
+            },
+            {
+              "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 46: Redes inalámbricas y comunicaciones móviles, edición 2026. Cotejo directo con A1-123 y A2-C13, generaciones de tecnologías celulares y comunicaciones móviles; la comparación de tasa teórica se comprueba con ITU-R/ETSI."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-112, A1-123."
+            },
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-IV-15."
+            }
+          ],
+          "observaciones": "Corregida D. En las especificaciones comparables, GPRS ofrece una tasa máxima muy inferior a EDGE, HSPA y 5G (por ejemplo, ITU-R SM.2351 recoge aproximadamente 172 kbit/s para GPRS frente a 491 kbit/s para EGPRS, tasas de Mbit/s para HSPA y valores de Gbit/s para IMT-2020). Se pregunta por tasa máxima teórica de la tecnología, no por el rendimiento real de una conexión concreta, que depende de versión, terminal, cobertura, congestión y operador. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 46: Redes inalámbricas y comunicaciones móviles, edición 2026. Cotejo directo con A1-123 y A2-C13, generaciones de tecnologías celulares y comunicaciones móviles; la comparación de tasa teórica se comprueba con ITU-R/ETSI."
+        }
+      }
+    },
+    {
+      "id": 7585,
+      "original": {
+        "id": 7585,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una organización que dispone de múltiples elementos de seguridad que generan eventos propios como pueden ser firewalls, IPS, proxy, antivirus o servidores, que herramienta podemos implementar que nos recopile toda la información de forma centralizada para poder realizar un análisis profundo y poder correlar alertas provenientes de distintos sistemas:",
+        "opciones": [
+          "SIEM.",
+          "WAF.",
+          "Antispam.",
+          "Escáner de vulnerabilidades."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7585,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una organización quiere centralizar eventos y registros de firewalls, IPS, antivirus, proxies y servidores para correlacionarlos y apoyar el análisis de seguridad. ¿Qué tipo de herramienta responde mejor a esa necesidad?",
+        "opciones": [
+          "Un SIEM (gestión de información y eventos de seguridad).",
+          "Un WAF, que protege específicamente aplicaciones web.",
+          "Un filtro antispam.",
+          "Un escáner de vulnerabilidades, que analiza configuraciones y software en busca de debilidades."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. Un SIEM centraliza y normaliza registros/eventos de múltiples fuentes y los correlaciona para detectar actividad relevante. No necesariamente almacena toda la telemetría de cada dispositivo, ni sustituye a un WAF o a un escáner de vulnerabilidades; se ajusta el enunciado para evitar prometer una recopilación universal. Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y en el nivel de aplicación, edición 2026. Cotejo con A1-125 y A2-T13, herramientas de ciberseguridad y tratamiento/correlación de eventos; las funciones concretas de SIEM se contrastan con NIST.",
+        "clasificacion": {
+          "A1": [
+            "A1-125"
+          ],
+          "A2": [
+            "A2-II-13"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "SIEM",
+          "centralización de eventos",
+          "correlación",
+          "monitorización de seguridad",
+          "registros"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-16",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/glossary/term/security_information_and_event_management",
+              "referencia": "NIST CSRC Glossary, SIEM: programa que proporciona capacidades de registro centralizado para diferentes tipos de logs; remite a NIST SP 800-92."
+            },
+            {
+              "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=50951",
+              "referencia": "NIST SP 800-94, sección 8.2.2: el software SIEM importa logs de distintas fuentes de seguridad y correlaciona eventos; puede normalizar campos e identificar actividad maliciosa."
+            },
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-92.pdf",
+              "referencia": "NIST SP 800-92, sección 3.4: describe SIEM como software de registro centralizado con servidores que analizan y almacenan logs."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y en el nivel de aplicación, edición 2026. Cotejo con A1-125 y A2-T13, herramientas de ciberseguridad y tratamiento/correlación de eventos; las funciones concretas de SIEM se contrastan con NIST."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria oficial A1, BOE-A-2025-25938; temas: A1-125."
+            },
+            {
+              "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria oficial A2, BOE-A-2025-26262; temas: A2-II-13."
+            }
+          ],
+          "observaciones": "Corregida A. Un SIEM centraliza y normaliza registros/eventos de múltiples fuentes y los correlaciona para detectar actividad relevante. No necesariamente almacena toda la telemetría de cada dispositivo, ni sustituye a un WAF o a un escáner de vulnerabilidades; se ajusta el enunciado para evitar prometer una recopilación universal. Cotejo curricular: Cotejo curricular: ITIC Academy, bloque 48: Seguridad en redes y en el nivel de aplicación, edición 2026. Cotejo con A1-125 y A2-T13, herramientas de ciberseguridad y tratamiento/correlación de eventos; las funciones concretas de SIEM se contrastan con NIST."
+        }
+      }
+    }
+  ]
+}
