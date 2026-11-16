@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),bankPath=path.join(root,'preguntas_preparatic.json'),bank=JSON.parse(fs.readFileSync(bankPath,'utf8'));
+const logPath=path.join(__dirname,'cambios-lote-1494.json'),log=JSON.parse(fs.readFileSync(logPath,'utf8'));
+const academy='https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk';
+const docs={
+ 7771:'Cotejo curricular con ciclo de vida y modelos de desarrollo; el modelo espiral de Boehm se ubica como modelo iterativo y basado en riesgo.',
+ 7772:'Cotejo curricular con análisis de procesos y modelado DFD de MÉTRICA v.3; se diferencia el proceso primitivo de los procesos anómalos sin entrada o salida.',
+ 7773:'Cotejo curricular con construcción, implantación y aceptación en MÉTRICA v.3; formación y migración se preparan en CSI, y la puesta en producción se realiza en IAS.',
+ 7774:'Cotejo curricular con diseño modular, cohesión y acoplamiento en MÉTRICA v.3; “común” designa un tipo de acoplamiento, no de cohesión.',
+ 7775:'Cotejo curricular con la estructura de MÉTRICA v.3 y sus procesos e interfaces; mantenimiento es proceso principal, distinto de las cuatro interfaces de apoyo.'
+};
+const official=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'),'utf8')).programas.flatMap(p=>p.temas.map(t=>t.id)));
+const a1='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',a2='https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262';assert.equal(log.cambios.length,5);
+for(const c of log.cambios){const q=bank.preguntas.find(x=>x.id===c.id);assert.ok(q?.revision,`Falta revisión ${c.id}`);for(const id of [...q.clasificacion.A1,...q.clasificacion.A2])assert.ok(official.has(id),`Tema no oficial ${id}`);const note=docs[c.id];assert.ok(note);q.revision.fuentes=q.revision.fuentes.filter(x=>!x.referencia.startsWith('Cotejo curricular:')&&!x.referencia.startsWith('Convocatoria oficial A1 BOE-')&&!x.referencia.startsWith('Convocatoria oficial A2 BOE-'));q.revision.fuentes.push({url:academy,referencia:`Cotejo curricular: ITIC Academy, bloque 38 Análisis, Diseño y Construcción de Sistemas de Información, versión 2026. ${note}`},{url:a1,referencia:`Convocatoria oficial A1 BOE-A-2025-25938; epígrafes: ${q.clasificacion.A1.join(', ')}.`},{url:a2,referencia:`Convocatoria oficial A2 BOE-A-2025-26262; epígrafes: ${q.clasificacion.A2.join(', ')}.`});q.revision.observaciones=[q.revision.observaciones.split(' Cotejo curricular:')[0],`Cotejo curricular: ITIC Academy, bloque 38. ${note}`].filter(Boolean).join(' ');q.comentarios=`${q.comentarios.split(' Cotejo curricular:')[0]} Cotejo curricular: ITIC Academy, bloque 38. ${note}`.trim();q.clasificacion.bloque_academia='38 Análisis, Diseño y Construcción de Sistemas de Información';q.clasificacion.nota=`Cotejo curricular completado: ${note}`;c.actualizada=structuredClone(q)}
+fs.writeFileSync(logPath,JSON.stringify(log,null,2)+'\n');fs.writeFileSync(bankPath,JSON.stringify(bank,null,2)+'\n');console.log('Cotejo curricular con ITIC Academy y programas oficiales A1/A2 añadido a cinco preguntas.');
