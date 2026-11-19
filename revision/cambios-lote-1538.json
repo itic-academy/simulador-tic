@@ -1,0 +1,369 @@
+{
+  "fecha": "2026-11-19",
+  "alcance": "IDs 7991–7995; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 7991,
+      "original": {
+        "id": 7991,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Identifique cuál de las siguientes características del protocolo IPv6 NO es cierta:",
+        "opciones": [
+          "Dispone de una cabecera de encaminamiento que contiene una lista de uno o más nodos intermedios por los que se pasa en el camino a su destino",
+          "No existen direcciones broadcast",
+          "Las direcciones pueden obtenerse de forma manual (stateful) o de forma automática (stateless)",
+          "Emplea una cabecera de datagrama de formato fijo donde todos los campos excepto las opciones ocupan un número de octetos fijos a partir de un cierto offset"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7991,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Identifique la afirmación que NO es cierta sobre IPv6:",
+        "opciones": [
+          "Puede incluir una cabecera de extensión Routing con nodos intermedios que deben visitarse.",
+          "No define direcciones broadcast; se emplea multicast para esas funciones.",
+          "Las direcciones pueden configurarse manualmente, mediante autoconfiguración stateless o mediante configuración stateful.",
+          "Las opciones se alojan dentro de la cabecera base fija de IPv6, como campos de longitud variable."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. La cabecera base de IPv6 es fija; la información opcional se traslada a cabeceras de extensión. Se corrige además la falsa equivalencia original entre configuración manual y stateful. Cotejo curricular: bloque 42 Redes.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-IV-11"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "IPv6",
+          "cabecera base",
+          "cabeceras de extensión",
+          "SLAAC"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+              "referencia": "RFC 8200: IPv6 tiene cabecera base fija y codifica información opcional en cabeceras de extensión separadas, incluida Routing."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+              "referencia": "RFC 4291: IPv6 no define direcciones broadcast; su función se reemplaza por multicast."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4862.html",
+              "referencia": "RFC 4862: define autoconfiguración stateless de direcciones IPv6, coexistente con configuración manual o stateful."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Redes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-115."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-11."
+            }
+          ],
+          "observaciones": "Corregida D. La cabecera base de IPv6 es fija; la información opcional se traslada a cabeceras de extensión. Se corrige además la falsa equivalencia original entre configuración manual y stateful. Cotejo curricular: bloque 42 Redes."
+        }
+      }
+    },
+    {
+      "id": 7992,
+      "original": {
+        "id": 7992,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La técnica usada para llevar a los visitantes a una nueva página web cuando un URL ha cambiado se llama:",
+        "opciones": [
+          "Redirección",
+          "CGI",
+          "Identificador Uniforme de Recursos",
+          "ASP"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7992,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En HTTP, ¿cómo se denomina el mecanismo que dirige al agente de usuario a otro URI, por ejemplo tras cambiar la dirección de un recurso?",
+        "opciones": [
+          "Redirección mediante una respuesta 3xx y, cuando corresponda, el campo Location.",
+          "CGI.",
+          "Identificador uniforme de recursos.",
+          "ASP."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. Se acota al mecanismo HTTP normalizado: una respuesta 3xx puede indicar el nuevo URI mediante Location. CGI, URI y ASP no son nombres del mecanismo. Cotejo curricular: bloque 30 Tecnologías web.",
+        "clasificacion": {
+          "A1": [
+            "A1-65"
+          ],
+          "A2": [
+            "A2-III-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 Tecnologías web",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "HTTP",
+          "redirección",
+          "3xx",
+          "Location"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+              "referencia": "RFC 9110, §15.4: los códigos 3xx indican redirección; 301, 302, 307 y 308 usan Location para señalar otro URI."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 30 Tecnologías web."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-65."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-III-12."
+            }
+          ],
+          "observaciones": "Corregida A. Se acota al mecanismo HTTP normalizado: una respuesta 3xx puede indicar el nuevo URI mediante Location. CGI, URI y ASP no son nombres del mecanismo. Cotejo curricular: bloque 30 Tecnologías web."
+        }
+      }
+    },
+    {
+      "id": 7993,
+      "original": {
+        "id": 7993,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "A la máxima cantidad de datos que se pueden perder en caso de desastres se le denomina:",
+        "opciones": [
+          "RTO",
+          "RPO",
+          "SDO",
+          "RDO"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7993,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué objetivo expresa el punto temporal anterior a una interrupción hasta el que deben recuperarse los datos y, por tanto, la pérdida de datos tolerable medida en tiempo?",
+        "opciones": [
+          "RTO.",
+          "RPO.",
+          "SDO.",
+          "RDO."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. El RPO delimita el punto de recuperación de datos; el RTO mide el tiempo objetivo para restablecer el servicio. Se precisa que la pérdida se expresa como intervalo temporal. Cotejo curricular: bloque 48 Seguridad y continuidad.",
+        "clasificacion": {
+          "A1": [
+            "A1-128"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 48 Seguridad y continuidad",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "RPO",
+          "continuidad",
+          "pérdida de datos",
+          "recuperación"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf",
+              "referencia": "NIST SP 800-34 Rev. 1: Recovery Point Objective es el punto temporal anterior a una interrupción hasta el cual deben recuperarse los datos."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 48 Seguridad y continuidad."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-128."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-6."
+            }
+          ],
+          "observaciones": "Corregida B. El RPO delimita el punto de recuperación de datos; el RTO mide el tiempo objetivo para restablecer el servicio. Se precisa que la pérdida se expresa como intervalo temporal. Cotejo curricular: bloque 48 Seguridad y continuidad."
+        }
+      }
+    },
+    {
+      "id": 7994,
+      "original": {
+        "id": 7994,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué método de ordenación de alternativas atiende únicamente al criterio de mayor peso y mayor puntuación, resolviendo los empates con el siguiente de mayor peso?",
+        "opciones": [
+          "Concordancia",
+          "Método lexicográfico",
+          "Ponderación lineal",
+          "Ninguno de los anteriores"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7994,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué método de ordenación de alternativas atiende únicamente al criterio de mayor peso y mayor puntuación, resolviendo los empates con el siguiente de mayor peso?",
+        "opciones": [
+          "Concordancia",
+          "Método lexicográfico",
+          "Ponderación lineal",
+          "Ninguno de los anteriores"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Vigente B. El método lexicográfico atiende primero al criterio de mayor prioridad y solo usa los siguientes para desempatar; no agrega compensatoriamente todas las puntuaciones. Cotejo curricular: bloque 12 Evaluación de alternativas.",
+        "clasificacion": {
+          "A1": [
+            "A1-42"
+          ],
+          "A2": [
+            "A2-II-15"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 12 Evaluación de alternativas",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "método lexicográfico",
+          "evaluación de alternativas",
+          "criterios",
+          "decisión multicriterio"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://doi.org/10.1155/2015/481950",
+              "referencia": "Estudio de decisión multicriterio: el método lexicográfico ordena criterios por importancia, compara primero el más importante y resuelve empates con el siguiente."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fti1UIhEIqK3pY8GBENi-4rTKwoEG8tF/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 12 Evaluación de alternativas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-42."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-II-15."
+            }
+          ],
+          "observaciones": "Vigente B. El método lexicográfico atiende primero al criterio de mayor prioridad y solo usa los siguientes para desempatar; no agrega compensatoriamente todas las puntuaciones. Cotejo curricular: bloque 12 Evaluación de alternativas."
+        }
+      }
+    },
+    {
+      "id": 7995,
+      "original": {
+        "id": 7995,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El Esquema Nacional de Seguridad establece que las líneas de defensa han de estar constituidas por medidas de distinto tipo, ¿Cuál de las siguientes no es una de ellas?",
+        "opciones": [
+          "Organizativa",
+          "Semántica",
+          "Lógica",
+          "Física"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 7995,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según el artículo 9.2 del Real Decreto 311/2022, ¿cuál NO es una de las naturalezas de las medidas que constituyen las líneas de defensa del ENS?",
+        "opciones": [
+          "Organizativa.",
+          "Semántica.",
+          "Lógica.",
+          "Física."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. El ENS enumera medidas organizativas, físicas y lógicas; «semántica» no forma parte de esa lista. Se cita el artículo y la norma vigente. Cotejo curricular: bloque 48 Seguridad y ENS.",
+        "clasificacion": {
+          "A1": [
+            "A1-48"
+          ],
+          "A2": [
+            "A2-I-9"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 48 Seguridad y ENS",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "ENS",
+          "líneas de defensa",
+          "seguridad",
+          "Real Decreto 311/2022"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191",
+              "referencia": "Real Decreto 311/2022, artículo 9.2: las líneas de defensa se constituyen por medidas de naturaleza organizativa, física y lógica."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 48 Seguridad y ENS."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-48."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-I-9."
+            }
+          ],
+          "observaciones": "Corregida B. El ENS enumera medidas organizativas, físicas y lógicas; «semántica» no forma parte de esa lista. Se cita el artículo y la norma vigente. Cotejo curricular: bloque 48 Seguridad y ENS."
+        }
+      }
+    }
+  ]
+}

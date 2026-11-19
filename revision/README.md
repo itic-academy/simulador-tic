@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1537 (IDs 7986–7990). Acumulado: **7.985** preguntas examinadas individualmente; **7.856 verificadas** (1.512 vigentes, 5.778 corregidas y 566 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.138 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1538 (IDs 7991–7995). Acumulado: **7.990** preguntas examinadas individualmente; **7.861 verificadas** (1.513 vigentes, 5.782 corregidas y 566 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.133 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1538 — 19 de noviembre de 2026
+
+Revisión individual de 7991–7995, con originales en [cambios-lote-1538.json](cambios-lote-1538.json): cuatro **corregidas** y una **vigente**. Se separan cabecera base y extensiones IPv6 y se corrige la configuración manual/stateful; se precisa la redirección HTTP 3xx con `Location`; se diferencia RPO de RTO; se confirma el método lexicográfico; y se actualizan las líneas de defensa del ENS al artículo 9.2 del Real Decreto 311/2022. Cotejo curricular en Drive: bloques 42, 30, 48 y 12, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 7.990 revisadas, 7.861 verificadas, 129 pendientes, 4.133 sin revisar y cero errores.
 
 ## Lote 1537 — 19 de noviembre de 2026
 
