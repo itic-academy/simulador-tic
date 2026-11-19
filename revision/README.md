@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1541 (IDs 8006–8010). Acumulado: **8.005** preguntas examinadas individualmente; **7.876 verificadas** (1.515 vigentes, 5.793 corregidas y 568 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.118 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1542 (IDs 8011–8015). Acumulado: **8.010** preguntas examinadas individualmente; **7.881 verificadas** (1.516 vigentes, 5.797 corregidas y 568 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.113 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1542 — 19 de noviembre de 2026
+
+Revisión individual de 8011–8015, con originales en [cambios-lote-1542.json](cambios-lote-1542.json): cuatro **corregidas** y una **vigente**. Se confirma la teoría de colas como método analítico de capacidad; se acota la preferencia por menor payback al criterio simple; se distingue TrueCrypt de WAVE, TAW y validadores CSS; se actualiza ISO/IEC 27002 a la edición 2022 y su título vigente; y se separan los servicios de validación de @firma/TS@ de la expedición de certificados. Cotejo curricular en Drive: bloques 9, 17, 44, 48 y 23, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.010 revisadas, 7.881 verificadas, 129 pendientes, 4.113 sin revisar y cero errores.
 
 ## Lote 1541 — 19 de noviembre de 2026
 
