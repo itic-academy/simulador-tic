@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1532 (IDs 7961–7965). Acumulado: **7.960** preguntas examinadas individualmente; **7.831 verificadas** (1.512 vigentes, 5.755 corregidas y 564 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.163 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1533 (IDs 7966–7970). Acumulado: **7.965** preguntas examinadas individualmente; **7.836 verificadas** (1.512 vigentes, 5.760 corregidas y 564 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.158 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1533 — 19 de noviembre de 2026
+
+Revisión individual de 7966–7970, con originales en [cambios-lote-1533.json](cambios-lote-1533.json): cinco **corregidas**. 7966 separa RPO de RTO/MTD; 7967 confirma AJAX como Asynchronous JavaScript and XML; 7968 actualiza la norma retirada de 2017 a **UNE-EN ISO/IEC 27001:2023**; 7969 identifica la arquitectura modular como producto del enfoque estructurado de MÉTRICA v3, no del OO; 7970 acota al hub Ethernet clásico como dispositivo de capa física. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 7.965 revisadas, 7.836 verificadas, 129 pendientes, 4.158 sin revisar y cero errores.
 
 ## Lote 1532 — 19 de noviembre de 2026
 
