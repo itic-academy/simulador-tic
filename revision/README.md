@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1539 (IDs 7996–8000). Acumulado: **7.995** preguntas examinadas individualmente; **7.866 verificadas** (1.513 vigentes, 5.787 corregidas y 566 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.128 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1540 (IDs 8001–8005). Acumulado: **8.000** preguntas examinadas individualmente; **7.871 verificadas** (1.514 vigentes, 5.790 corregidas y 567 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.123 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1540 — 19 de noviembre de 2026
+
+Revisión individual de 8001–8005, con originales en [cambios-lote-1540.json](cambios-lote-1540.json): tres **corregidas**, una **vigente** y una **histórica**. Se reemplaza la simplificación de «cifrar la huella» por el proceso de firma de FIPS 186-5; se confirma WAV como audio; se reformula la autenticación como combinación de factores distintos; se actualiza el cese de prestadores cualificados a la Ley 6/2020; y se contextualiza como vencido el plazo transitorio de 24 meses del ENS, que incluía sistemas de contratistas privados. Cotejo curricular en Drive: bloques 36, 37 y 48, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.000 revisadas, 7.871 verificadas, 129 pendientes, 4.123 sin revisar y cero errores.
 
 ## Lote 1539 — 19 de noviembre de 2026
 

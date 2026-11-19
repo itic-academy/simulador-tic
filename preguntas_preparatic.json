@@ -426705,71 +426705,269 @@
       "id": 8001,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un documento firmado digitalmente incluye la huella digital:",
+      "texto": "En un esquema de firma digital conforme a FIPS 186-5, ¿qué afirmación describe correctamente el proceso habitual?",
       "opciones": [
-        "De la clave del firmante, cifrada con su clave pública.",
-        "De la clave pública del firmante, cifrada con su clave privada.",
-        "Del documento firmado, cifrada con la clave del firmante.",
-        "Del documento firmado, cifrada con la clave pública del firmante."
+        "Se firma la huella de la clave privada usando la clave pública.",
+        "Se cifra la clave pública del firmante con su clave privada.",
+        "Se calcula un resumen del documento y se genera sobre él un valor de firma mediante el algoritmo y la clave privada del firmante.",
+        "Se cifra el documento completo con la clave pública del firmante para crear la firma."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. Una firma no se describe de forma general como «cifrar la huella»: el resumen del documento es entrada del algoritmo de firma con la clave privada, y la clave pública permite verificar. Cotejo curricular: bloque 36 Firma y criptografía.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Firma y criptografía",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuente primaria para contenido."
+      },
+      "etiquetas": [
+        "firma digital",
+        "resumen",
+        "clave privada",
+        "FIPS 186-5"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-19",
+        "fuentes": [
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf",
+            "referencia": "NIST FIPS 186-5: la generación usa la clave privada; normalmente un hash produce el resumen del mensaje que entra al algoritmo de firma, y la verificación usa la clave pública."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 36 Firma y criptografía."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-80."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-I-6."
+          }
+        ],
+        "observaciones": "Corregida C. Una firma no se describe de forma general como «cifrar la huella»: el resumen del documento es entrada del algoritmo de firma con la clave privada, y la clave pública permite verificar. Cotejo curricular: bloque 36 Firma y criptografía."
+      }
     },
     {
       "id": 8002,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuál de los siguientes es un formato de sonido:",
+      "texto": "¿Cuál de las siguientes extensiones corresponde a un formato contenedor de audio WAVE?",
       "opciones": [
-        "gif",
-        "blob",
-        "wav",
-        "rar"
+        ".gif",
+        ".blob",
+        ".wav",
+        ".rar"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Vigente C. WAV/WAVE es un formato contenedor de audio; GIF es imagen, RAR es archivo comprimido y blob no identifica aquí un formato de sonido concreto. Cotejo curricular: bloque 37 Multimedia.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [],
+        "bloque_academia": "ITIC Academy, bloque 37 Multimedia",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuente primaria para contenido."
+      },
+      "etiquetas": [
+        "WAV",
+        "WAVE",
+        "audio",
+        "formato"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-19",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc2361.html",
+            "referencia": "RFC 2361 registra WAVE como formato de audio y sus identificadores de códec, incluido audio/vnd.wave."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1xTMCpPmwNi8hpb0nZ3sMqpgvrhLXT-yf/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 37 Multimedia."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-56."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: sin asignación."
+          }
+        ],
+        "observaciones": "Vigente C. WAV/WAVE es un formato contenedor de audio; GIF es imagen, RAR es archivo comprimido y blob no identifica aquí un formato de sonido concreto. Cotejo curricular: bloque 37 Multimedia."
+      }
     },
     {
       "id": 8003,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál es el método de autenticación mejor?",
+      "texto": "¿Cuál de estas opciones combina dos factores de autenticación de categorías distintas?",
       "opciones": [
-        "Algo que alguien sabe",
-        "Algo que alguien es",
-        "Algo que alguien tiene",
-        "Lo que una persona sabe y es"
+        "Solo algo que la persona sabe.",
+        "Solo algo que la persona es.",
+        "Solo algo que la persona tiene.",
+        "Algo que la persona sabe y algo que la persona es."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. No existe un método universalmente «mejor» sin contexto de riesgo; la opción D sí combina conocimiento e inherencia y, por tanto, es multifactor. Cotejo curricular: bloque 36 Identificación y autenticación.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Identificación y autenticación",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuente primaria para contenido."
+      },
+      "etiquetas": [
+        "autenticación multifactor",
+        "MFA",
+        "factor de conocimiento",
+        "biometría"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-19",
+        "fuentes": [
+          {
+            "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+            "referencia": "NIST SP 800-63B-4: AAL2 requiere dos factores de autenticación distintos, mediante un autenticador multifactor o dos autenticadores separados."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 36 Identificación y autenticación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-80."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-I-6."
+          }
+        ],
+        "observaciones": "Corregida D. No existe un método universalmente «mejor» sin contexto de riesgo; la opción D sí combina conocimiento e inherencia y, por tanto, es multifactor. Cotejo curricular: bloque 36 Identificación y autenticación."
+      }
     },
     {
       "id": 8004,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los prestadores de servicios de certificación con carácter previo al cese definitivo de su actividad, ¿qué gestión deberán realizar?",
+      "texto": "Según el artículo 9.3.c de la Ley 6/2020, antes del cese de un prestador cualificado de servicios electrónicos de confianza, ¿a quién debe comunicarlo con al menos dos meses de antelación?",
       "opciones": [
-        "Comunicarlo al organo de supervisión",
-        "Comunicarlo a sus clientes",
-        "Realizar la transferencia de los clientes a otro prestador cualificado",
-        "A y B son correctas"
+        "Solo al órgano de supervisión.",
+        "Solo a sus clientes.",
+        "Obligatoriamente debe transferir a todos los clientes sin recabar consentimiento.",
+        "A sus clientes y al órgano de supervisión."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. La norma vigente exige comunicar el cese tanto a clientes como al órgano de supervisión. Se actualiza la terminología desde prestador de certificación a prestador cualificado de servicios electrónicos de confianza. Cotejo curricular: bloque 36 Firma y servicios de confianza.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-6"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 36 Firma y servicios de confianza",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuente primaria para contenido."
+      },
+      "etiquetas": [
+        "servicios electrónicos de confianza",
+        "cese",
+        "Ley 6/2020",
+        "supervisión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-19",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046",
+            "referencia": "Ley 6/2020, artículo 9.3.c: el prestador cualificado que vaya a cesar debe comunicarlo a sus clientes y al órgano de supervisión con al menos dos meses de antelación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1ijxn_uwd6ZDkbj3oNBpmxjuqee4SeseN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 36 Firma y servicios de confianza."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-80."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-I-6."
+          }
+        ],
+        "observaciones": "Corregida D. La norma vigente exige comunicar el cese tanto a clientes como al órgano de supervisión. Se actualiza la terminología desde prestador de certificación a prestador cualificado de servicios electrónicos de confianza. Cotejo curricular: bloque 36 Firma y servicios de confianza."
+      }
     },
     {
       "id": 8005,
       "bloque": 0,
       "tema": 0,
-      "texto": "En virtud de la Disposición Transitoria del Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad (ENS), los sistemas de información del ámbito de aplicación de este real decreto, preexistentes a su entrada en vigor, dispondrán de:",
+      "texto": "Históricamente, ¿qué plazo concedió la disposición transitoria única del Real Decreto 311/2022 a los sistemas preexistentes para su plena adecuación al ENS?",
       "opciones": [
-        "Veinticuatro meses para alcanzar su plena adecuación al ENS, incluidos aquellos de los que sean titulares los contratistas del sector privado en los términos señalados en el artículo 2.",
-        "Veinticuatro meses para alcanzar su plena adecuación al ENS, a excepción de aquellos de los que sean titulares los contratistas del sector privado en los términos señalados en el artículo 2.",
-        "Dieciocho meses para alcanzar su plena adecuación al ENS, a excepción de aquellos de los que sean titulares los contratistas del sector privado en los términos señalados en el artículo 2.",
-        "Doce meses para alcanzar su plena adecuación al ENS, a excepción de aquellos de los que sean titulares los contratistas del sector privado en los términos señalados en el artículo 2."
+        "Veinticuatro meses, incluidos los sistemas de contratistas del sector privado comprendidos en el artículo 2.",
+        "Veinticuatro meses, excluyendo siempre los sistemas de contratistas privados.",
+        "Dieciocho meses, excluyendo a los contratistas privados.",
+        "Doce meses, excluyendo a los contratistas privados."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Histórica A. La disposición concedió 24 meses e incluyó expresamente los sistemas de contratistas privados del artículo 2. Se formula en pasado porque el plazo transitorio ya venció. Cotejo curricular: bloque 48 Seguridad y ENS.",
+      "clasificacion": {
+        "A1": [
+          "A1-48"
+        ],
+        "A2": [
+          "A2-I-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 48 Seguridad y ENS",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuente primaria para contenido."
+      },
+      "etiquetas": [
+        "ENS",
+        "Real Decreto 311/2022",
+        "disposición transitoria",
+        "adecuación"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-19",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/boe/dias/2022/05/04/pdfs/BOE-A-2022-7191.pdf",
+            "referencia": "Real Decreto 311/2022, disposición transitoria única: los sistemas preexistentes, incluidos los de contratistas privados del artículo 2, dispusieron de 24 meses para la plena adecuación."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1fmk-QAA8Lz6ATA2WxXzF5_Z2N-W5oh82/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 48 Seguridad y ENS."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-48."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-I-9."
+          }
+        ],
+        "observaciones": "Histórica A. La disposición concedió 24 meses e incluyó expresamente los sistemas de contratistas privados del artículo 2. Se formula en pasado porque el plazo transitorio ya venció. Cotejo curricular: bloque 48 Seguridad y ENS."
+      }
     },
     {
       "id": 8006,
