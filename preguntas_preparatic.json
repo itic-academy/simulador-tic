@@ -431530,66 +431530,284 @@
       "id": 8086,
       "bloque": 0,
       "tema": 0,
-      "texto": "Una posible definición de 'Tipo Abstracto de Datos' sería cualquier estructura compuesta de:",
+      "texto": "¿Qué define un tipo abstracto de datos (TAD o ADT)?",
       "opciones": [
-        "Datos vectoriales y datos escalares",
-        "Datos estructurados y no estructurados",
-        "Datos y operaciones que se pueden realizar sobre esos datos"
+        "Una combinación obligatoria de datos vectoriales y escalares.",
+        "Una mezcla de datos estructurados y no estructurados.",
+        "Un conjunto de valores y las operaciones asociadas, especificados independientemente de su implementación concreta."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. Un TAD especifica valores y operaciones observables con independencia de la representación concreta. No se define por combinar datos vectoriales/escalares ni estructurados/no estructurados. Se sustituye «cualquier estructura» por una definición precisa. Cotejo curricular: bloque 32 IA, estructuras de datos y algoritmos.",
+      "clasificacion": {
+        "A1": [],
+        "A2": [
+          "A2-III-5"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 32 IA, estructuras de datos y algoritmos",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "tipo abstracto de datos",
+        "TAD",
+        "ADT",
+        "datos",
+        "operaciones"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-20",
+        "fuentes": [
+          {
+            "url": "https://xlinux.nist.gov/dads/HTML/abstractDataType.html",
+            "referencia": "NIST Dictionary of Algorithms and Data Structures: un tipo abstracto de datos es un conjunto de valores y operaciones asociadas especificados con independencia de una implementación concreta."
+          },
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub184.pdf",
+            "referencia": "NIST FIPS PUB 184, definición de data type: conjunto abstracto de valores, características y operaciones aplicables."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 32 IA, estructuras de datos y algoritmos."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: sin asignación."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-III-5."
+          }
+        ],
+        "observaciones": "Corregida C. Un TAD especifica valores y operaciones observables con independencia de la representación concreta. No se define por combinar datos vectoriales/escalares ni estructurados/no estructurados. Se sustituye «cualquier estructura» por una definición precisa. Cotejo curricular: bloque 32 IA, estructuras de datos y algoritmos."
+      }
     },
     {
       "id": 8087,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué relación existe entre la complejidad ciclomática de un fragmento de código y el riesgo de errores en ese fragmento?",
+      "texto": "En la métrica de McCabe, ¿qué implica que aumente la complejidad ciclomática de un módulo?",
       "opciones": [
-        "A mayor complejidad ciclomática, mayor riesgo.",
-        "A mayor complejidad ciclomática, menor riesgo.",
-        "La complejidad ciclomática no está relacionada con el riesgo, sino con la estimación de horas-persona necesarias para desarrollar el código."
+        "Aumenta el número de caminos linealmente independientes del flujo de control y, en general, el esfuerzo necesario para probarlos y mantenerlos.",
+        "Disminuye necesariamente el número de decisiones y caminos de prueba.",
+        "Mide directamente las horas-persona del proyecto, con independencia del flujo de control."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. La complejidad ciclomática mide caminos independientes del grafo de control; valores mayores suelen exigir más esfuerzo de prueba y dificultar mantenimiento. No prueba por sí sola que vaya a ocurrir un error ni estima directamente horas-persona, por lo que se elimina la causalidad absoluta del original. Cotejo curricular: bloque 39 Calidad y métricas.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 39 Calidad y métricas",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "complejidad ciclomática",
+        "McCabe",
+        "caminos independientes",
+        "pruebas"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-20",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1109/TSE.1976.233837",
+            "referencia": "McCabe, A Complexity Measure, IEEE TSE 1976: introduce una medida del flujo de control igual al número de caminos linealmente independientes y la aplica a pruebas y mantenibilidad."
+          },
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8289.pdf",
+            "referencia": "NIST IR 8289: define V(G) como número de caminos linealmente independientes del grafo de flujo de control."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 39 Calidad y métricas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-98."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-III-13."
+          }
+        ],
+        "observaciones": "Corregida A. La complejidad ciclomática mide caminos independientes del grafo de control; valores mayores suelen exigir más esfuerzo de prueba y dificultar mantenimiento. No prueba por sí sola que vaya a ocurrir un error ni estima directamente horas-persona, por lo que se elimina la causalidad absoluta del original. Cotejo curricular: bloque 39 Calidad y métricas."
+      }
     },
     {
       "id": 8088,
       "bloque": 0,
       "tema": 0,
-      "texto": "Con respecto a las técnicas de prueba, señale la respuesta incorrecta:",
+      "texto": "Respecto a las técnicas de prueba, señale la afirmación incorrecta:",
       "opciones": [
-        "Las técnicas de caja negra requieren conocer la lógica interna del programa.",
-        "Entre las pruebas de caja blanca tenemos aquellas que tratan de ejecutar todas las instrucciones del código.",
-        "En las pruebas de caja negra se comprueba el correcto funcionamiento del software, analizando las entradas y salidas y verificando que el resultado es el esperado."
+        "Las técnicas de caja negra requieren conocer la lógica interna del programa para derivar los casos de prueba.",
+        "La cobertura de sentencias es una técnica de caja blanca que busca ejecutar las sentencias del código.",
+        "Las pruebas de caja negra comparan el comportamiento observado ante entradas con el resultado especificado, sin basarse en la estructura interna."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. Caja negra se basa en especificaciones y comportamiento observable, no requiere conocer la lógica interna para derivar los casos. La cobertura de sentencias es caja blanca. Se normaliza la terminología y se evita afirmar que ejecutar sentencias demuestra por sí solo funcionamiento completo. Cotejo curricular: bloque 39 Calidad y pruebas.",
+      "clasificacion": {
+        "A1": [
+          "A1-96"
+        ],
+        "A2": [
+          "A2-III-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 39 Calidad y pruebas",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "pruebas de software",
+        "caja negra",
+        "caja blanca",
+        "cobertura de sentencias"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-20",
+        "fuentes": [
+          {
+            "url": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+            "referencia": "ISTQB CTFL v4.0.1, §4: caja negra deriva pruebas del comportamiento especificado sin usar estructura interna; caja blanca toma en cuenta la implementación y mide cobertura de sentencias o ramas."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 39 Calidad y pruebas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-96."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-III-7."
+          }
+        ],
+        "observaciones": "Corregida A. Caja negra se basa en especificaciones y comportamiento observable, no requiere conocer la lógica interna para derivar los casos. La cobertura de sentencias es caja blanca. Se normaliza la terminología y se evita afirmar que ejecutar sentencias demuestra por sí solo funcionamiento completo. Cotejo curricular: bloque 39 Calidad y pruebas."
+      }
     },
     {
       "id": 8089,
       "bloque": 0,
       "tema": 0,
-      "texto": "En relación al desarrollo dirigido por pruebas, señale la respuesta correcta:",
+      "texto": "¿Qué afirmación describe correctamente el desarrollo dirigido por pruebas (TDD)?",
       "opciones": [
-        "Al estar toda la metodología dirigida por pruebas no se diseñan pruebas unitarias.",
-        "El desarrollo dirigido por pruebas está relacionado con la programación extrema y las metodologías ágiles.",
-        "La técnica de refactorización de código no se emplea en el desarrollo dirigido por pruebas."
+        "Como está dirigido por pruebas, no utiliza pruebas unitarias automatizadas.",
+        "Está relacionado con Extreme Programming y ciclos cortos en los que se escribe primero una prueba, se hace pasar y se refactoriza.",
+        "Excluye la refactorización una vez que una prueba pasa."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. TDD se asocia a XP y al ciclo red-green-refactor: prueba que falla, código mínimo para hacerla pasar y refactorización manteniendo las pruebas verdes. Por tanto, utiliza pruebas automatizadas y no excluye refactorizar. Cotejo curricular: bloque 15 Metodologías ágiles y ciclo de vida.",
+      "clasificacion": {
+        "A1": [
+          "A1-88",
+          "A1-96"
+        ],
+        "A2": [
+          "A2-III-2",
+          "A2-III-7"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 15 Metodologías ágiles y ciclo de vida",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "TDD",
+        "desarrollo dirigido por pruebas",
+        "Extreme Programming",
+        "refactorización"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-20",
+        "fuentes": [
+          {
+            "url": "https://www.informit.com/content/images/9780321146533/samplepages/0321146530.pdf",
+            "referencia": "Kent Beck, Test-Driven Development: By Example, muestra el ciclo red-green-refactor: escribir una prueba que falla, hacerla pasar y refactorizar."
+          },
+          {
+            "url": "https://doi.org/10.1109/TSE.2012.28",
+            "referencia": "IEEE TSE, meta-análisis de TDD: lo describe como práctica central de Extreme Programming, combinando test-first y refactorización."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1G11WsRpkh7MPpvxiCEVQmbLc8JzuWvJN/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 15 Metodologías ágiles y ciclo de vida."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-88, A1-96."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-III-2, A2-III-7."
+          }
+        ],
+        "observaciones": "Corregida B. TDD se asocia a XP y al ciclo red-green-refactor: prueba que falla, código mínimo para hacerla pasar y refactorización manteniendo las pruebas verdes. Por tanto, utiliza pruebas automatizadas y no excluye refactorizar. Cotejo curricular: bloque 15 Metodologías ágiles y ciclo de vida."
+      }
     },
     {
       "id": 8090,
       "bloque": 0,
       "tema": 0,
-      "texto": "La complejidad de un proyecto informático está relacionada con la dimensión del código fuente producido, a este respecto E.N. Yourdon (Yourdon, 1979) denomina nivel de complejidad “complejo” al código fuente entre:",
+      "texto": "Respecto al tamaño del código y la complejidad del software, ¿qué afirmación es correcta?",
       "opciones": [
-        "10.000 y 100.000 instrucciones.",
-        "100.000 y 1.000.000 instrucciones.",
-        "Más de 1.000.000 de instrucciones."
+        "Las líneas o instrucciones de código miden tamaño físico, pero no determinan por sí solas la complejidad del flujo de control ni el riesgo del proyecto.",
+        "Todo programa entre 100.000 y 1.000.000 de instrucciones tiene necesariamente la misma complejidad.",
+        "Superar un millón de instrucciones determina por sí solo la fiabilidad y mantenibilidad del sistema."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida A. Se retira la escala atribuida a «Yourdon, 1979» porque no se localizó una fuente primaria verificable que respalde esos umbrales y porque clasificar un proyecto solo por LOC es insuficiente. LOC mide tamaño; McCabe muestra que la complejidad del flujo depende de decisiones y caminos, no solo de longitud. El original queda conservado en el registro de cambios. Cotejo curricular: bloque 39 Calidad y métricas.",
+      "clasificacion": {
+        "A1": [
+          "A1-98"
+        ],
+        "A2": [
+          "A2-III-13"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 39 Calidad y métricas",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "métricas de software",
+        "líneas de código",
+        "complejidad ciclomática",
+        "Yourdon",
+        "clasificación histórica"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-20",
+        "fuentes": [
+          {
+            "url": "https://doi.org/10.1109/TSE.1976.233837",
+            "referencia": "McCabe 1976 demuestra que la complejidad del flujo de control es independiente del tamaño físico: añadir sentencias funcionales no altera necesariamente V(G)."
+          },
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5459.pdf",
+            "referencia": "NIST IR 5459: distingue métricas de tamaño y complejidad y documenta la complejidad ciclomática mediante el grafo de control."
+          },
+          {
+            "url": "https://drive.google.com/file/d/17PDaqPVVwhzfeplx9bzp8XjEXm_qlami/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 39 Calidad y métricas."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-98."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-III-13."
+          }
+        ],
+        "observaciones": "Corregida A. Se retira la escala atribuida a «Yourdon, 1979» porque no se localizó una fuente primaria verificable que respalde esos umbrales y porque clasificar un proyecto solo por LOC es insuficiente. LOC mide tamaño; McCabe muestra que la complejidad del flujo depende de decisiones y caminos, no solo de longitud. El original queda conservado en el registro de cambios. Cotejo curricular: bloque 39 Calidad y métricas."
+      }
     },
     {
       "id": 8091,

@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1556 (IDs 8081–8085). Acumulado: **8.080** preguntas examinadas individualmente; **7.951 verificadas** (1.530 vigentes, 5.840 corregidas y 581 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.043 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1557 (IDs 8086–8090). Acumulado: **8.085** preguntas examinadas individualmente; **7.956 verificadas** (1.530 vigentes, 5.845 corregidas y 581 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.038 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1557 — 20 de noviembre de 2026
+
+Revisión individual de 8086–8090, con originales en [cambios-lote-1557.json](cambios-lote-1557.json): cinco **corregidas**. Se define TAD mediante valores y operaciones; se sustituye la causalidad absoluta entre complejidad ciclomática y errores por caminos y esfuerzo de prueba; se precisan caja negra/blanca y TDD; y se retira una escala LOC atribuida a Yourdon sin fuente primaria verificable, reemplazándola por la distinción entre tamaño físico y complejidad de control. Cotejo curricular en Drive: bloques 15, 32 y 39, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.085 revisadas, 7.956 verificadas, 129 pendientes, 4.038 sin revisar y cero errores.
 
 ## Lote 1556 — 20 de noviembre de 2026
 
