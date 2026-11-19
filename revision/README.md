@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1535 (IDs 7976–7980). Acumulado: **7.975** preguntas examinadas individualmente; **7.846 verificadas** (1.512 vigentes, 5.769 corregidas y 565 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.148 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1536 (IDs 7981–7985). Acumulado: **7.980** preguntas examinadas individualmente; **7.851 verificadas** (1.512 vigentes, 5.773 corregidas y 566 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.143 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1536 — 19 de noviembre de 2026
+
+Revisión individual de 7981–7985, con originales en [cambios-lote-1536.json](cambios-lote-1536.json): cuatro **corregidas** y una **histórica**. Se distingue APK instalable de AAB; se confirma `DispatcherServlet` como controlador frontal de Spring MVC; ISO/IEC 9126-1 se contextualiza como norma retirada; JPEG progresivo se explica por barridos de selección espectral o aproximación sucesiva; y SQL injection se define conforme a CWE-89. Cotejo curricular en Drive: bloques 47, 30, 39, 37 y 48, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 7.980 revisadas, 7.851 verificadas, 129 pendientes, 4.143 sin revisar y cero errores.
 
 ## Lote 1535 — 19 de noviembre de 2026
 
