@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1534 (IDs 7971–7975). Acumulado: **7.970** preguntas examinadas individualmente; **7.841 verificadas** (1.512 vigentes, 5.764 corregidas y 565 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.153 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1535 (IDs 7976–7980). Acumulado: **7.975** preguntas examinadas individualmente; **7.846 verificadas** (1.512 vigentes, 5.769 corregidas y 565 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.148 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1535 — 19 de noviembre de 2026
+
+Revisión individual de 7976–7980, con originales en [cambios-lote-1535.json](cambios-lote-1535.json): cinco **corregidas**. 7976 incorpora notificación, contactos, responsables y escalado al plan de contingencia; 7977 fecha y actualiza el directorio de miembros españoles de ETSI (UNE figura como organismo nacional, no AENOR); 7978 confirma las categorías de reglas de transformación de MÉTRICA v3; 7979 define la arquitectura blade por los recursos compartidos del chasis; y 7980 aclara que el análisis coste/beneficio incluye costes de mantenimiento. Fuentes primarias/técnicas: NIST SP 800-34 Rev. 1, directorio oficial ETSI, MÉTRICA v3 y HPE. Cotejo curricular en Drive: bloques 48, 43, 38, 26 y 12, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 7.975 revisadas, 7.846 verificadas, 129 pendientes, 4.148 sin revisar y cero errores.
 
 ## Lote 1534 — 19 de noviembre de 2026
 
