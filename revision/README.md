@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1555 (IDs 8076–8080). Acumulado: **8.075** preguntas examinadas individualmente; **7.946 verificadas** (1.530 vigentes, 5.835 corregidas y 581 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.048 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1556 (IDs 8081–8085). Acumulado: **8.080** preguntas examinadas individualmente; **7.951 verificadas** (1.530 vigentes, 5.840 corregidas y 581 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.043 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1556 — 20 de noviembre de 2026
+
+Revisión individual de 8081–8085, con originales en [cambios-lote-1556.json](cambios-lote-1556.json): cinco **corregidas**. Se corrige la confusión entre modelo iterativo e «interactivo»; se actualiza la responsabilidad del Scrum Master conforme a Scrum Guide 2020; se delimita JAD como técnica de obtención consensuada de requisitos; se distingue la orientación a objetos de la programación dirigida por eventos; y se precisa el concepto de entidad en el modelo E-R. Cotejo curricular en Drive: bloques 15, 29 y 38, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.080 revisadas, 7.951 verificadas, 129 pendientes, 4.043 sin revisar y cero errores.
 
 ## Lote 1555 — 20 de noviembre de 2026
 
