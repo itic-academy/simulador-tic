@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1533 (IDs 7966–7970). Acumulado: **7.965** preguntas examinadas individualmente; **7.836 verificadas** (1.512 vigentes, 5.760 corregidas y 564 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.158 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1534 (IDs 7971–7975). Acumulado: **7.970** preguntas examinadas individualmente; **7.841 verificadas** (1.512 vigentes, 5.764 corregidas y 565 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.153 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1534 — 19 de noviembre de 2026
+
+Revisión individual de 7971–7975, con originales en [cambios-lote-1534.json](cambios-lote-1534.json): PSI 4 y sus técnicas; cálculo de 460 PF con ratios dados; corrección de la arquitectura tecnológica a PSI 7; 100VG-AnyLAN/IEEE 802.12 como contenido histórico; y GPS como análisis medios-fines con subproblemas. Resultado: cuatro corregidas y una histórica. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 7.970 revisadas, 7.841 verificadas, 129 pendientes, 4.153 sin revisar y cero errores.
 
 ## Lote 1533 — 19 de noviembre de 2026
 
