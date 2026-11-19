@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1528 (IDs 7941–7945). Acumulado: **7.940** preguntas examinadas individualmente; **7.812 verificadas** (1.508 vigentes, 5.742 corregidas y 562 históricas); **128 pendientes documentadas** (48 de fuente, 80 de ambigüedad); **4.183 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1529 (IDs 7946–7950). Acumulado: **7.945** preguntas examinadas individualmente; **7.817 verificadas** (1.509 vigentes, 5.746 corregidas y 562 históricas); **128 pendientes documentadas** (48 de fuente, 80 de ambigüedad); **4.178 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1529 — 19 de noviembre de 2026
+
+Revisión individual de 7946–7950, con trazabilidad en [cambios-lote-1529.json](cambios-lote-1529.json): **7946 corregida A**, se distinguen IBM UrbanCode Deploy, AWS CodeDeploy y Octopus Deploy; **7947 corregida D**, Proof of Capacity y Proof of Space acreditan almacenamiento, sin tratarlos como implementaciones idénticas; **7948 corregida A**, fundadores de la CEE: Bélgica, Francia, RFA, Italia, Luxemburgo y Países Bajos; **7949 vigente C**, el interesado RGPD es persona física identificada o identificable; **7950 corregida D**, Landsat 8 es misión NASA-USGS y USGS opera, recibe, archiva y distribuye sus datos. Cotejo curricular: A1-101/A2-III-8, A1-107, A1-1/A2-I-1, A1-27/82/A2-I-7 y A1-74, respectivamente. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 7.945 revisadas, 7.817 verificadas, 128 pendientes, 4.178 sin revisar y cero errores.
 
 ## Lote 1528 — 19 de noviembre de 2026
 
