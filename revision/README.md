@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1550 (IDs 8051–8055). Acumulado: **8.050** preguntas examinadas individualmente; **7.921 verificadas** (1.521 vigentes, 5.824 corregidas y 576 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.073 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1551 (IDs 8056–8060). Acumulado: **8.055** preguntas examinadas individualmente; **7.926 verificadas** (1.522 vigentes, 5.827 corregidas y 577 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.068 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1551 — 19 de noviembre de 2026
+
+Revisión individual de 8056–8060, con originales en [cambios-lote-1551.json](cambios-lote-1551.json): tres **corregidas**, una **vigente** y una **histórica**. Se confirma 802.11g con OFDM y 54 Mbit/s; se distingue la clave WEP manual de la PSK de WPA2-Personal; se verifica que END no es un flag TCP; se precisa que una dirección IP unicast identifica normalmente una interfaz; y se acota G.729 a la familia con anexos D/E para justificar 6,4, 8 y 11,8 kbit/s. Cotejo curricular en Drive: bloques 42 y 45, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.055 revisadas, 7.926 verificadas, 129 pendientes, 4.068 sin revisar y cero errores.
 
 ## Lote 1550 — 19 de noviembre de 2026
 
