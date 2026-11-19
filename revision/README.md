@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1545 (IDs 8026–8030). Acumulado: **8.025** preguntas examinadas individualmente; **7.896 verificadas** (1.517 vigentes, 5.809 corregidas y 570 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.098 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1546 (IDs 8031–8035). Acumulado: **8.030** preguntas examinadas individualmente; **7.901 verificadas** (1.518 vigentes, 5.813 corregidas y 570 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.093 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1546 — 19 de noviembre de 2026
+
+Revisión individual de 8031–8035, con originales en [cambios-lote-1546.json](cambios-lote-1546.json): cuatro **corregidas** y una **vigente**. Se precisa la notación sin flechas de Nassi-Shneiderman; se comprueban las tareas de planificación GPI 2; se confirma la elaboración de manuales de usuario en CSI; se acota la participación del usuario a UAT; y se concreta la diferencia entre JRP y JAD por participantes y productos. Cotejo curricular en Drive: bloques 38 y 39, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.030 revisadas, 7.901 verificadas, 129 pendientes, 4.093 sin revisar y cero errores.
 
 ## Lote 1545 — 19 de noviembre de 2026
 
