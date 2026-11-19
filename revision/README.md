@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1551 (IDs 8056–8060). Acumulado: **8.055** preguntas examinadas individualmente; **7.926 verificadas** (1.522 vigentes, 5.827 corregidas y 577 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.068 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1552 (IDs 8061–8065). Acumulado: **8.060** preguntas examinadas individualmente; **7.931 verificadas** (1.523 vigentes, 5.829 corregidas y 579 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.063 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1552 — 19 de noviembre de 2026
+
+Revisión individual de 8061–8065, con originales en [cambios-lote-1552.json](cambios-lote-1552.json): dos **corregidas**, una **vigente** y dos **históricas**. Se corrige «Agente-SMAP» a agente SNMP y se delimitan los componentes de gestión; se confirma la secuencia GSM–UMTS–HSDPA–HSUPA; se sustituye la vaga idea de «efecto retardado» de una bomba lógica por su activación condicionada; se verifica G.726 como ADPCM; y se reformula Web 2.0 como conjunto histórico de principios y patrones. Cotejo curricular en Drive: bloques 42, 45, 48 y 50, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.060 revisadas, 7.931 verificadas, 129 pendientes, 4.063 sin revisar y cero errores.
 
 ## Lote 1551 — 19 de noviembre de 2026
 
