@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1540 (IDs 8001–8005). Acumulado: **8.000** preguntas examinadas individualmente; **7.871 verificadas** (1.514 vigentes, 5.790 corregidas y 567 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.123 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1541 (IDs 8006–8010). Acumulado: **8.005** preguntas examinadas individualmente; **7.876 verificadas** (1.515 vigentes, 5.793 corregidas y 568 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.118 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1541 — 19 de noviembre de 2026
+
+Revisión individual de 8006–8010, con originales en [cambios-lote-1541.json](cambios-lote-1541.json): tres **corregidas**, una **vigente** y una **histórica**. Se confirma el dominio de un atributo en el modelo relacional; se reconstruye la pregunta CASE, que solo contenía una afirmación y «Todas las anteriores»; se precisa la aprobación formal de cambios por el CCB; se explica subnetting mediante extensión jerárquica del prefijo; y se actualiza el contenido mínimo de sedes electrónicas al artículo 11 del Real Decreto 203/2021. Fuentes primarias/técnicas: Codd, NIST SP 500-208 y SP 800-128, IEEE 828, RFC 1812/2072 y BOE. Cotejo curricular en Drive: bloques 29, 38, 39, 42 y 3, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.005 revisadas, 7.876 verificadas, 129 pendientes, 4.118 sin revisar y cero errores.
 
 ## Lote 1540 — 19 de noviembre de 2026
 
