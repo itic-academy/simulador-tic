@@ -1,4 +1,20 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1526 (IDs 7931–7935). Acumulado: **7.930** preguntas examinadas individualmente; **7.802 verificadas** (1.506 vigentes, 5.737 corregidas y 559 históricas); **128 pendientes documentadas** (48 de fuente, 80 de ambigüedad); **4.193 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1527 (IDs 7936–7940). Acumulado: **7.935** preguntas examinadas individualmente; **7.807 verificadas** (1.507 vigentes, 5.740 corregidas y 560 históricas); **128 pendientes documentadas** (48 de fuente, 80 de ambigüedad); **4.188 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1527 — 19 de noviembre de 2026
+
+Revisión individual de las preguntas 7936–7940: `git pull`; relación entre RTO y MTD; categorías especiales del RGPD; estados de producto en MÉTRICA v3; y factor de sostenibilidad de las pensiones. Se preservaron los originales completos en [cambios-lote-1527.json](cambios-lote-1527.json).
+
+- **7936 — Git:** **corregida C**. `git pull` obtiene cambios del repositorio remoto y los integra en la rama actual; se especificaron herramienta y comando completos.
+- **7937 — RTO/MTD:** **corregida D**. El RTO debe ser normalmente inferior al MTD/MTPD para no exceder la interrupción total tolerable; se eliminó una alternativa original también cierta pero no discriminante.
+- **7938 — RGPD, artículo 9.1:** **vigente A**. El DNI no es por sí mismo una categoría especial; afiliación sindical, datos genéticos y biométricos para identificación unívoca sí figuran en la lista.
+- **7939 — MÉTRICA v3:** **corregida C**. Los estados mínimos son en elaboración, revisado, aprobado e implantado; se corrigieron sintaxis y orden.
+- **7940 — factor de sostenibilidad:** **histórica B**. La Ley 23/2013 lo vinculó a la evolución de la esperanza de vida. Se sustituyó la formulación vaga original y se documentó su derogación por la Ley 21/2021.
+
+Fuentes: [Git, `git pull`](https://git-scm.com/docs/git-pull.html); [NIST SP 800-34 Rev. 1](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf); [RGPD, artículo 9.1](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32016R0679); [MÉTRICA v3, Gestión de la Configuración](https://administracionelectronica.gob.es/pae_Home/dam/jcr%3A1f321d6d-fb6a-46ed-a369-617c0080c51d/METRICA_V3_Gestion_de_Configuracion.pdf); [Ley 23/2013](https://www.boe.es/eli/es/l/2013/12/23/23/dof/spa/pdf) y [Ley 21/2021](https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652).
+
+Cotejo curricular en Drive: bloques 39 Calidad y Mantenimiento, 48 Seguridad, 8 Protección de Datos, 38 Análisis/diseño/construcción y 6 Economía/Sociedad. Correspondencias verificadas con las convocatorias oficiales A1 y A2: 7936 A1-100/102 y A2-IV-4; 7937 A1-128/A2-IV-6; 7938 A1-27/82/A2-I-7; 7939 A1-95/102/A2-III-2/IV-4; 7940 A1-13/16 sin epígrafe A2 directo.
+
+Ejecutados `node revision/revisar-lote-1527.cjs`, `node revision/academia-lote-1527.cjs`, `node revision/inventario.cjs`, `node revision/verificar.cjs` y `git diff --check`: 12.123 preguntas válidas; **7.935 revisadas individualmente**, **7.807 verificadas**, **128 pendientes documentadas**, **4.188 sin revisar individualmente** y cero errores estructurales. El inventario no sustituye revisión de contenido.
 
 ## Lote 1526 — 19 de noviembre de 2026
 
