@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1544 (IDs 8021–8025). Acumulado: **8.020** preguntas examinadas individualmente; **7.891 verificadas** (1.516 vigentes, 5.805 corregidas y 570 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.103 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1545 (IDs 8026–8030). Acumulado: **8.025** preguntas examinadas individualmente; **7.896 verificadas** (1.517 vigentes, 5.809 corregidas y 570 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.098 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1545 — 19 de noviembre de 2026
+
+Revisión individual de 8026–8030, con originales en [cambios-lote-1545.json](cambios-lote-1545.json): cuatro **corregidas** y una **vigente**. Se confirma que `<help>` captura el evento de ayuda en VoiceXML 2.0; se corrigen y acotan las afirmaciones sobre DTMF, TTS, ASR y MSCML; se desambigua RDS como Remote Desktop Services frente a XP, Scrum y FDD; se reformula la clasificación de requisitos no funcionales sin mezclar el precio como restricción de proyecto; y se adopta la palabra clave UML `«extend»`. Cotejo curricular en Drive: bloques 15, 30 y 38, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.025 revisadas, 7.896 verificadas, 129 pendientes, 4.098 sin revisar y cero errores.
 
 ## Lote 1544 — 19 de noviembre de 2026
 
