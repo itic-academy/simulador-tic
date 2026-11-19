@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1536 (IDs 7981–7985). Acumulado: **7.980** preguntas examinadas individualmente; **7.851 verificadas** (1.512 vigentes, 5.773 corregidas y 566 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.143 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1537 (IDs 7986–7990). Acumulado: **7.985** preguntas examinadas individualmente; **7.856 verificadas** (1.512 vigentes, 5.778 corregidas y 566 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.138 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1537 — 19 de noviembre de 2026
+
+Revisión individual de 7986–7990, con originales en [cambios-lote-1537.json](cambios-lote-1537.json): cinco **corregidas**. Se atribuye correctamente a TIA-568 el canal de 90 m de enlace permanente y 10 m combinados de cordones; se distinguen acoplamiento y cohesión y se confirma que el acoplamiento máximo no es deseable; se actualizan bloques y replicación de HDFS; y se identifica el enlazador o montador como responsable de combinar objetos y resolver símbolos. Cotejo curricular en Drive: bloques 42, 38, 34 y 27, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 7.985 revisadas, 7.856 verificadas, 129 pendientes, 4.138 sin revisar y cero errores.
 
 ## Lote 1536 — 19 de noviembre de 2026
 
