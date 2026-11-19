@@ -1,0 +1,357 @@
+{
+  "fecha": "2026-11-20",
+  "alcance": "IDs 8096–8100; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 8096,
+      "original": {
+        "id": 8096,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El funcionamiento de las redes MPLS para establecer los caminos por la red se basa en",
+        "opciones": [
+          "En la asignación e intercambio de etiquetas",
+          "En el descubrimiento del camino más corto",
+          "En el establecimiento de un camino por defecto"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8096,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿En qué mecanismo se basa el reenvío de paquetes a lo largo de un camino MPLS?",
+        "opciones": [
+          "En la asignación, distribución e intercambio de etiquetas asociadas a clases de equivalencia de reenvío.",
+          "Exclusivamente en recalcular el camino más corto para cada paquete.",
+          "En enviar siempre todo el tráfico por una ruta por defecto."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. MPLS clasifica paquetes en FEC, les asocia etiquetas y los LSR reenvían mediante operaciones sobre la pila de etiquetas. El camino subyacente puede derivarse de encaminamiento o ser explícito, pero el mecanismo distintivo de reenvío MPLS es label switching. Cotejo curricular: bloque 43 Protocolos y redes MPLS.",
+        "clasificacion": {
+          "A1": [
+            "A1-113"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 Protocolos y redes MPLS",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "MPLS",
+          "etiquetas",
+          "label swapping",
+          "LSP",
+          "RFC 3031"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-20",
+          "fuentes": [
+            {
+              "url": "https://datatracker.ietf.org/doc/html/rfc3031",
+              "referencia": "IETF RFC 3031, arquitectura MPLS: los LSR reenvían paquetes examinando la etiqueta superior y realizan operaciones push, swap o pop sobre la pila de etiquetas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 43 Protocolos y redes MPLS."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-113."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-10."
+            }
+          ],
+          "observaciones": "Corregida A. MPLS clasifica paquetes en FEC, les asocia etiquetas y los LSR reenvían mediante operaciones sobre la pila de etiquetas. El camino subyacente puede derivarse de encaminamiento o ser explícito, pero el mecanismo distintivo de reenvío MPLS es label switching. Cotejo curricular: bloque 43 Protocolos y redes MPLS."
+        }
+      }
+    },
+    {
+      "id": 8097,
+      "original": {
+        "id": 8097,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El Modo infraestructura utiliza los siguientes elementos principales:",
+        "opciones": [
+          "Terminales de Usuario, Punto de Acceso",
+          "Terminales de Usuario, Punto de Acceso y Controlador de acceso",
+          "Terminales de Usuario, Controlador de acceso"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8097,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una WLAN IEEE 802.11 en modo infraestructura, ¿qué elementos son imprescindibles en el BSS básico?",
+        "opciones": [
+          "Estaciones o terminales y un punto de acceso.",
+          "Estaciones, punto de acceso y, obligatoriamente, un controlador WLAN independiente.",
+          "Estaciones y controlador, sin punto de acceso."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida A; se cambia la clave original B. El modo infraestructura requiere estaciones asociadas a un punto de acceso. Puede existir un controlador en arquitecturas centralizadas, pero no es requisito universal del BSS ni del modo infraestructura. Cotejo curricular: bloque 45 Redes inalámbricas.",
+        "clasificacion": {
+          "A1": [
+            "A1-114"
+          ],
+          "A2": [
+            "A2-IV-11"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 45 Redes inalámbricas",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "IEEE 802.11",
+          "modo infraestructura",
+          "punto de acceso",
+          "estación",
+          "WLAN"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-20",
+          "fuentes": [
+            {
+              "url": "https://www.cisco.com/c/en/us/td/docs/wireless/controller/technotes/8-6/b_80211_Basis/m_80211_Basis_chapter_01.html",
+              "referencia": "Cisco, fundamentos IEEE 802.11: un infrastructure BSS contiene un punto de acceso y estaciones asociadas; un controlador WLAN es una opción de arquitectura de despliegue, no un elemento obligatorio del modo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 45 Redes inalámbricas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-114."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-11."
+            }
+          ],
+          "observaciones": "Corregida A; se cambia la clave original B. El modo infraestructura requiere estaciones asociadas a un punto de acceso. Puede existir un controlador en arquitecturas centralizadas, pero no es requisito universal del BSS ni del modo infraestructura. Cotejo curricular: bloque 45 Redes inalámbricas."
+        }
+      }
+    },
+    {
+      "id": 8098,
+      "original": {
+        "id": 8098,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "IP Móvil o Mobile IP es un protocolo estándar creado por:",
+        "opciones": [
+          "Comité Européen de Normalisation Electrotechnique (CENELEC)",
+          "International Association of Plumbing and Mechanical Officials (IAPMO)",
+          "Internet Engineering Task Force (IETF)"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8098,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué organización de estándares publicó Mobile IP para IPv4, actualmente especificado en RFC 5944?",
+        "opciones": [
+          "CENELEC.",
+          "IAPMO.",
+          "Internet Engineering Task Force (IETF)."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Vigente C. RFC 5944 es un estándar del IETF para movilidad IPv4 y sustituyó RFC 3344. CENELEC e IAPMO no son responsables de este protocolo de Internet. Cotejo curricular: bloque 43 Protocolos de Internet.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 Protocolos de Internet",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "Mobile IP",
+          "IETF",
+          "RFC 5944",
+          "movilidad IP"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-20",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc5944.html",
+              "referencia": "RFC 5944, IP Mobility Support for IPv4, Revised: documento Standards Track producto del IETF y aprobado por el IESG."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 43 Protocolos de Internet."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-115."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-II-8."
+            }
+          ],
+          "observaciones": "Vigente C. RFC 5944 es un estándar del IETF para movilidad IPv4 y sustituyó RFC 3344. CENELEC e IAPMO no son responsables de este protocolo de Internet. Cotejo curricular: bloque 43 Protocolos de Internet."
+        }
+      }
+    },
+    {
+      "id": 8099,
+      "original": {
+        "id": 8099,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Las siglas DC-Iot corresponden:",
+        "opciones": [
+          "Dynamic Coalition on the Internet of Things",
+          "Domain Compute on the Internet of Things",
+          "Decision Collaborative on the Internet of Thing"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8099,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el contexto del Internet Governance Forum (IGF), ¿qué significan las siglas DC-IoT?",
+        "opciones": [
+          "Dynamic Coalition on the Internet of Things.",
+          "Domain Compute on the Internet of Things.",
+          "Decision Collaborative on the Internet of Thing."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. DC-IoT es la Dynamic Coalition on the Internet of Things del IGF. Se añade el contexto institucional, porque las siglas aisladas no constituyen una denominación técnica universal. Cotejo curricular: bloque 32 IoT y tecnologías emergentes.",
+        "clasificacion": {
+          "A1": [
+            "A1-117"
+          ],
+          "A2": [
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 32 IoT y tecnologías emergentes",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "DC-IoT",
+          "Internet Governance Forum",
+          "Internet de las cosas",
+          "coalición dinámica"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-20",
+          "fuentes": [
+            {
+              "url": "https://intgovforum.org/en/content/dynamic-coalition-on-the-internet-of-things",
+              "referencia": "Internet Governance Forum: identifica DC-IoT como Dynamic Coalition on the Internet of Things, activa desde el IGF de Hyderabad de 2008."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 32 IoT y tecnologías emergentes."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-117."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-13."
+            }
+          ],
+          "observaciones": "Corregida A. DC-IoT es la Dynamic Coalition on the Internet of Things del IGF. Se añade el contexto institucional, porque las siglas aisladas no constituyen una denominación técnica universal. Cotejo curricular: bloque 32 IoT y tecnologías emergentes."
+        }
+      }
+    },
+    {
+      "id": 8100,
+      "original": {
+        "id": 8100,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Uno de los protocolos que se definen en el modelo TCP/IP es el denominado FTP (File Transfer Protocol), o Protocolo de Transmisión de Ficheros. ¿A qué capa pertenece este protocolo?",
+        "opciones": [
+          "Capa de Red (o Network)",
+          "Capa de Transporte (o Transport)",
+          "Capa de Aplicación (o Application)"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8100,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el modelo TCP/IP, ¿a qué capa pertenece FTP (File Transfer Protocol)?",
+        "opciones": [
+          "Capa de Internet o red.",
+          "Capa de transporte.",
+          "Capa de aplicación."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Vigente C. FTP es un protocolo de aplicación que utiliza TCP para sus conexiones. El hecho de apoyarse en TCP no lo convierte en un protocolo de transporte. Cotejo curricular: bloque 43 Protocolos y servicios de Internet.",
+        "clasificacion": {
+          "A1": [
+            "A1-109"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 Protocolos y servicios de Internet",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "FTP",
+          "TCP/IP",
+          "capa de aplicación",
+          "RFC 959"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-20",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc959.html",
+              "referencia": "IETF RFC 959: FTP define el protocolo de transferencia de ficheros y sus conexiones de control/datos sobre TCP."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc1123.html",
+              "referencia": "RFC 1123, requisitos para hosts, aplicaciones: incluye FTP entre los protocolos de la capa de aplicación."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 43 Protocolos y servicios de Internet."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-109."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-II-8."
+            }
+          ],
+          "observaciones": "Vigente C. FTP es un protocolo de aplicación que utiliza TCP para sus conexiones. El hecho de apoyarse en TCP no lo convierte en un protocolo de transporte. Cotejo curricular: bloque 43 Protocolos y servicios de Internet."
+        }
+      }
+    }
+  ]
+}

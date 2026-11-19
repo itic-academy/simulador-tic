@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1558 (IDs 8091–8095). Acumulado: **8.090** preguntas examinadas individualmente; **7.961 verificadas** (1.531 vigentes, 5.848 corregidas y 582 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.033 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1559 (IDs 8096–8100). Acumulado: **8.095** preguntas examinadas individualmente; **7.966 verificadas** (1.533 vigentes, 5.851 corregidas y 582 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.028 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1559 — 20 de noviembre de 2026
+
+Revisión individual de 8096–8100, con originales en [cambios-lote-1559.json](cambios-lote-1559.json): tres **corregidas** y dos **vigentes**. Se precisa el intercambio de etiquetas MPLS; se corrige la clave del modo infraestructura 802.11 porque el controlador no es obligatorio; se verifica Mobile IP como estándar IETF; se contextualiza DC-IoT dentro del IGF; y se confirma FTP en la capa de aplicación. Cotejo curricular en Drive: bloques 32, 43 y 45, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.095 revisadas, 7.966 verificadas, 129 pendientes, 4.028 sin revisar y cero errores.
 
 ## Lote 1558 — 20 de noviembre de 2026
 
