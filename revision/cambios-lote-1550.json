@@ -1,0 +1,376 @@
+{
+  "fecha": "2026-11-19",
+  "alcance": "IDs 8051–8055; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 8051,
+      "original": {
+        "id": 8051,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Un socket necesita, para estar correctamente definido, especificar el protocolo de nivel de:",
+        "opciones": [
+          "Enlace.",
+          "Red.",
+          "Transporte.",
+          "Aplicación."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8051,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Al crear un socket de Internet para una comunicación ordinaria, la elección entre TCP (SOCK_STREAM) y UDP (SOCK_DGRAM) especifica un protocolo de qué nivel del modelo OSI?",
+        "opciones": [
+          "Enlace.",
+          "Red.",
+          "Transporte.",
+          "Aplicación."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C. TCP y UDP son protocolos de transporte. Se acota el enunciado a sockets de Internet ordinarios porque la API socket también permite sockets raw y otros protocolos; un socket completo no queda definido únicamente por decir «transporte», sino por familia, tipo, protocolo y, al enlazarlo, direcciones/puertos. Cotejo curricular: bloque 42 Redes, TCP/IP y sockets.",
+        "clasificacion": {
+          "A1": [
+            "A1-109"
+          ],
+          "A2": [
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes, TCP/IP y sockets",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "socket",
+          "TCP",
+          "UDP",
+          "protocolo de transporte",
+          "Winsock"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/windows/win32/api/winsock2/nf-winsock2-socket",
+              "referencia": "Microsoft Winsock, socket(): crea un socket para una combinación de familia de direcciones, tipo y protocolo; en AF_INET/AF_INET6, SOCK_STREAM usa TCP y SOCK_DGRAM usa UDP, ambos protocolos de transporte."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Redes, TCP/IP y sockets."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-109."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-13."
+            }
+          ],
+          "observaciones": "Corregida C. TCP y UDP son protocolos de transporte. Se acota el enunciado a sockets de Internet ordinarios porque la API socket también permite sockets raw y otros protocolos; un socket completo no queda definido únicamente por decir «transporte», sino por familia, tipo, protocolo y, al enlazarlo, direcciones/puertos. Cotejo curricular: bloque 42 Redes, TCP/IP y sockets."
+        }
+      }
+    },
+    {
+      "id": 8052,
+      "original": {
+        "id": 8052,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La longitud de onda alrededor de la cual un medio de transmisión basado en fibra óptica se dice que está trabajando en 3ª ventana es:",
+        "opciones": [
+          "750 nm.",
+          "820 nm.",
+          "1310 nm.",
+          "1550 nm."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8052,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la nomenclatura tradicional de ventanas de transmisión de fibra óptica, ¿alrededor de qué longitud de onda se sitúa la tercera ventana?",
+        "opciones": [
+          "750 nm.",
+          "820–850 nm.",
+          "1310 nm.",
+          "1550 nm."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Histórica D. La tercera ventana se sitúa alrededor de 1550 nm, región de baja atenuación. Se presenta como nomenclatura tradicional: las recomendaciones actuales especifican bandas y regiones operativas con mayor precisión que la simple numeración de ventanas. Cotejo curricular: bloque 42 Medios de transmisión y fibra.",
+        "clasificacion": {
+          "A1": [
+            "A1-112"
+          ],
+          "A2": [
+            "A2-IV-7"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Medios de transmisión y fibra",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "fibra óptica",
+          "tercera ventana",
+          "1550 nm",
+          "G.652"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/epublications/publication/itu-t-g-652-2024-08-characteristics-of-a-single-mode-optical-fibre-and-cable",
+              "referencia": "ITU-T G.652 (2024): la fibra monomodo puede usarse en las regiones de 1310 y 1550 nm y caracteriza expresamente la ventana de 1550 nm."
+            },
+            {
+              "url": "https://www.itu.int/epublications/es/publication/itu-t-g-suppl-42-2018-10-guide-on-the-use-of-the-itu-t-recommendations-related-to-optical-fibres-and-systems-technology",
+              "referencia": "ITU-T G Supplement 42: describe la evolución de sistemas de tercera fase/ventana alrededor de 1550 nm y las fibras optimizadas para esa región."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Medios de transmisión y fibra."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-112."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-7."
+            }
+          ],
+          "observaciones": "Histórica D. La tercera ventana se sitúa alrededor de 1550 nm, región de baja atenuación. Se presenta como nomenclatura tradicional: las recomendaciones actuales especifican bandas y regiones operativas con mayor precisión que la simple numeración de ventanas. Cotejo curricular: bloque 42 Medios de transmisión y fibra."
+        }
+      }
+    },
+    {
+      "id": 8053,
+      "original": {
+        "id": 8053,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Dentro del nivel AAL de ATM, AAL2 se caracteriza por tener:",
+        "opciones": [
+          "Retardo constante y tasa de bit variable.",
+          "Retardo variable y tasa de bit constante.",
+          "Retardo variable y tasa de bit variable.",
+          "Retardo constante y tasa de bit constante."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8053,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En la clasificación clásica de servicios ATM, ¿qué combinación se asociaba a AAL2 para tráfico en tiempo real comprimido?",
+        "opciones": [
+          "Relación temporal requerida (retardo acotado) y tasa de bits variable.",
+          "Relación temporal no requerida y tasa de bits constante.",
+          "Relación temporal no requerida y tasa de bits variable.",
+          "Relación temporal requerida y tasa de bits constante."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Histórica A. AAL2 se diseñó para tráfico variable y sensible al retardo, como voz comprimida. Se sustituye «retardo constante» por «relación temporal requerida/retardo acotado», formulación más precisa, y se contextualiza ATM/AAL2 como tecnología clásica. Cotejo curricular: bloque 42 Redes ATM.",
+        "clasificacion": {
+          "A1": [
+            "A1-113"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes ATM",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "ATM",
+          "AAL2",
+          "tasa variable",
+          "retardo",
+          "B-ISDN"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/rec/T-REC-I.363.2",
+              "referencia": "ITU-T I.363.2: especificación de la ATM Adaptation Layer tipo 2 para B-ISDN, orientada al transporte eficiente de paquetes cortos y de longitud variable en aplicaciones sensibles al retardo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Redes ATM."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-113."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-10."
+            }
+          ],
+          "observaciones": "Histórica A. AAL2 se diseñó para tráfico variable y sensible al retardo, como voz comprimida. Se sustituye «retardo constante» por «relación temporal requerida/retardo acotado», formulación más precisa, y se contextualiza ATM/AAL2 como tecnología clásica. Cotejo curricular: bloque 42 Redes ATM."
+        }
+      }
+    },
+    {
+      "id": 8054,
+      "original": {
+        "id": 8054,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes NO es una tecnología xDSL?",
+        "opciones": [
+          "VDSL.",
+          "DDSL.",
+          "HDSL.",
+          "ADSL."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8054,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de estas siglas no identifica una familia xDSL normalizada por ITU-T en sus recomendaciones de acceso sobre par de cobre?",
+        "opciones": [
+          "VDSL.",
+          "DDSL.",
+          "HDSL.",
+          "ADSL."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. ITU-T normaliza ADSL, HDSL/SHDSL y VDSL/VDSL2, entre otras; DDSL no aparece como denominación de una familia xDSL normalizada. Se acota la pregunta a las recomendaciones ITU-T para evitar que un acrónimo usado local o comercialmente se trate como categoría universal. Cotejo curricular: bloque 42 Tecnologías de acceso xDSL.",
+        "clasificacion": {
+          "A1": [
+            "A1-112"
+          ],
+          "A2": [
+            "A2-IV-7"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Tecnologías de acceso xDSL",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "xDSL",
+          "ADSL",
+          "HDSL",
+          "VDSL",
+          "DDSL"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/epublications/en/publication/itu-t-k-93-2023-07-immunity-of-home-network-devices-to-electromagnetic-disturbances",
+              "referencia": "ITU-T K.93, tabla A.1: enumera recomendaciones para sistemas xDSL ADSL, HDSL, SHDSL y VDSL; no incluye una familia normalizada denominada DDSL."
+            },
+            {
+              "url": "https://www.itu.int/dms_pub/itu-t/oth/0B/04/T0B040000150012PDFM03.pdf",
+              "referencia": "ITU-T, The leader on DSL Recommendations: recoge las familias normalizadas HDSL, ADSL y VDSL."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Tecnologías de acceso xDSL."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-112."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-7."
+            }
+          ],
+          "observaciones": "Corregida B. ITU-T normaliza ADSL, HDSL/SHDSL y VDSL/VDSL2, entre otras; DDSL no aparece como denominación de una familia xDSL normalizada. Se acota la pregunta a las recomendaciones ITU-T para evitar que un acrónimo usado local o comercialmente se trate como categoría universal. Cotejo curricular: bloque 42 Tecnologías de acceso xDSL."
+        }
+      }
+    },
+    {
+      "id": 8055,
+      "original": {
+        "id": 8055,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿En qué banda de frecuencias y hasta qué velocidad funciona el estándar 802.11a?",
+        "opciones": [
+          "2,4 GHz y hasta 11Mbps.",
+          "5 GHz y hasta 54Mbps.",
+          "2,4 GHz y hasta 54 Mbps.",
+          "5 GHz y hasta 11 Mbps."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8055,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En su especificación original de 1999, ¿en qué banda operaba IEEE 802.11a y cuál era su velocidad física máxima nominal?",
+        "opciones": [
+          "2,4 GHz y 11 Mbit/s.",
+          "5 GHz y 54 Mbit/s.",
+          "2,4 GHz y 54 Mbit/s.",
+          "5 GHz y 11 Mbit/s."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Histórica B. IEEE 802.11a introdujo OFDM en 5 GHz y una tasa física nominal máxima de 54 Mbit/s. Se explicita la especificación original y que se trata de velocidad PHY nominal, no de rendimiento útil actual. Cotejo curricular: bloque 45 Redes inalámbricas.",
+        "clasificacion": {
+          "A1": [
+            "A1-114"
+          ],
+          "A2": [
+            "A2-IV-11"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 45 Redes inalámbricas",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "IEEE 802.11a",
+          "5 GHz",
+          "54 Mbit/s",
+          "Wi-Fi"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://technav.ieee.org/topic/ieee-80211-standards/",
+              "referencia": "IEEE Technology Navigator: la enmienda IEEE 802.11a de 1999 operó en 5 GHz con OFDM y alcanzó 54 Mbit/s."
+            },
+            {
+              "url": "https://standards.ieee.org/ieee/802.11/7028/",
+              "referencia": "IEEE SA, IEEE 802.11a-1999: enmienda para una capa física de alta velocidad en la banda de 5 GHz."
+            },
+            {
+              "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 45 Redes inalámbricas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-114."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-11."
+            }
+          ],
+          "observaciones": "Histórica B. IEEE 802.11a introdujo OFDM en 5 GHz y una tasa física nominal máxima de 54 Mbit/s. Se explicita la especificación original y que se trata de velocidad PHY nominal, no de rendimiento útil actual. Cotejo curricular: bloque 45 Redes inalámbricas."
+        }
+      }
+    }
+  ]
+}

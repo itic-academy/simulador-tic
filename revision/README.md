@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1549 (IDs 8046–8050). Acumulado: **8.045** preguntas examinadas individualmente; **7.916 verificadas** (1.521 vigentes, 5.822 corregidas y 573 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.078 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1550 (IDs 8051–8055). Acumulado: **8.050** preguntas examinadas individualmente; **7.921 verificadas** (1.521 vigentes, 5.824 corregidas y 576 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.073 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1550 — 19 de noviembre de 2026
+
+Revisión individual de 8051–8055, con originales en [cambios-lote-1550.json](cambios-lote-1550.json): dos **corregidas** y tres **históricas**. Se acota la asociación de sockets con TCP/UDP al transporte; se contextualizan la tercera ventana óptica de 1550 nm y AAL2 para tráfico variable sensible al retardo; se descarta DDSL frente a familias xDSL normalizadas por ITU-T; y se confirma el IEEE 802.11a original en 5 GHz y 54 Mbit/s. Cotejo curricular en Drive: bloques 42 y 45, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.050 revisadas, 7.921 verificadas, 129 pendientes, 4.073 sin revisar y cero errores.
 
 ## Lote 1549 — 19 de noviembre de 2026
 
