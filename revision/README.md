@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1553 (IDs 8066–8070). Acumulado: **8.065** preguntas examinadas individualmente; **7.936 verificadas** (1.527 vigentes, 5.830 corregidas y 579 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.058 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1554 (IDs 8071–8075). Acumulado: **8.070** preguntas examinadas individualmente; **7.941 verificadas** (1.530 vigentes, 5.831 corregidas y 580 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.053 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1554 — 19 de noviembre de 2026
+
+Revisión individual de 8071–8075, con originales en [cambios-lote-1554.json](cambios-lote-1554.json): tres **vigentes**, una **corregida** y una **histórica**. Se precisa la autoría y mantenimiento de MAGERIT/PILAR; se actualiza PUE a ISO/IEC 30134-2:2026 y a consumo energético; se confirma `mkdir` en GNU/Linux; se distingue la lectura sucia de la no repetible; y se contextualizan EJB, servlets, applets y JavaServer Faces en Java EE 7 frente a Jakarta EE. Cotejo curricular en Drive: bloques 26, 27, 29, 30 y 48, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.070 revisadas, 7.941 verificadas, 129 pendientes, 4.053 sin revisar y cero errores.
 
 ## Lote 1553 — 19 de noviembre de 2026
 
