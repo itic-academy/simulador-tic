@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1546 (IDs 8031–8035). Acumulado: **8.030** preguntas examinadas individualmente; **7.901 verificadas** (1.518 vigentes, 5.813 corregidas y 570 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.093 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1547 (IDs 8036–8040). Acumulado: **8.035** preguntas examinadas individualmente; **7.906 verificadas** (1.520 vigentes, 5.815 corregidas y 571 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.088 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1547 — 19 de noviembre de 2026
+
+Revisión individual de 8036–8040, con originales en [cambios-lote-1547.json](cambios-lote-1547.json): dos **vigentes**, dos **corregidas** y una **histórica**. Se confirma el objetivo de las pruebas de regresión; se desambigua PERT frente a diagramas de Gantt modernos; se limita «mantenimiento evolutivo» a la taxonomía histórica de MÉTRICA v3; y se verifican dos funciones del Grupo de Aseguramiento de la Calidad relativas al plan de pruebas y a las desviaciones. Cotejo curricular en Drive: bloques 15 y 39, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.035 revisadas, 7.906 verificadas, 129 pendientes, 4.088 sin revisar y cero errores.
 
 ## Lote 1546 — 19 de noviembre de 2026
 
