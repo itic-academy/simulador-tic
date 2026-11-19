@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1547 (IDs 8036–8040). Acumulado: **8.035** preguntas examinadas individualmente; **7.906 verificadas** (1.520 vigentes, 5.815 corregidas y 571 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.088 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1548 (IDs 8041–8045). Acumulado: **8.040** preguntas examinadas individualmente; **7.911 verificadas** (1.521 vigentes, 5.818 corregidas y 572 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.083 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1548 — 19 de noviembre de 2026
+
+Revisión individual de 8041–8045, con originales en [cambios-lote-1548.json](cambios-lote-1548.json): tres **corregidas**, una **vigente** y una **histórica**. Se actualiza el nivel 5 de CMMI a su formulación vigente; se distingue JUnit de las herramientas de carga y rendimiento web; se precisa el ciclo de vida de la gestión documental; se confirma throughput como trabajo por unidad de tiempo; y se contextualiza IGRP como protocolo histórico sin soporte VLSM. Cotejo curricular en Drive: bloques 39, 40 y 42, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.040 revisadas, 7.911 verificadas, 129 pendientes, 4.083 sin revisar y cero errores.
 
 ## Lote 1547 — 19 de noviembre de 2026
 
