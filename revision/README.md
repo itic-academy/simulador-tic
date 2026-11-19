@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1552 (IDs 8061–8065). Acumulado: **8.060** preguntas examinadas individualmente; **7.931 verificadas** (1.523 vigentes, 5.829 corregidas y 579 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.063 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1553 (IDs 8066–8070). Acumulado: **8.065** preguntas examinadas individualmente; **7.936 verificadas** (1.527 vigentes, 5.830 corregidas y 579 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.058 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1553 — 19 de noviembre de 2026
+
+Revisión individual de 8066–8070, con originales en [cambios-lote-1553.json](cambios-lote-1553.json): cuatro **vigentes** y una **corregida**. Se verifica el control judicial del artículo 106 CE; se precisan las dos modalidades del apoderamiento apud acta; se confirma como grave el supuesto del artículo 73.c LOPDGDD; se delimita el régimen autoral del software en el título VII del TRLPI sin excluir invenciones técnicas implementadas por ordenador; y se confirma el objeto de la NTI de Expediente Electrónico. Cotejo curricular en Drive: bloques 03, 08, 43 y 45–46, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.065 revisadas, 7.936 verificadas, 129 pendientes, 4.058 sin revisar y cero errores.
 
 ## Lote 1552 — 19 de noviembre de 2026
 
