@@ -1,4 +1,12 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1527 (IDs 7936–7940). Acumulado: **7.935** preguntas examinadas individualmente; **7.807 verificadas** (1.507 vigentes, 5.740 corregidas y 560 históricas); **128 pendientes documentadas** (48 de fuente, 80 de ambigüedad); **4.188 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1528 (IDs 7941–7945). Acumulado: **7.940** preguntas examinadas individualmente; **7.812 verificadas** (1.508 vigentes, 5.742 corregidas y 562 históricas); **128 pendientes documentadas** (48 de fuente, 80 de ambigüedad); **4.183 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1528 — 19 de noviembre de 2026
+
+Revisión individual de 7941–7945, con originales en [cambios-lote-1528.json](cambios-lote-1528.json): **7941 vigente A**, la fuente de los datos no se exige en el artículo 13 RGPD cuando se obtienen del interesado; **7942 corregida B**, el artículo 41 LGP establece clasificaciones orgánica y económica; **7943 histórica D**, RFC era la propuesta formal de cambio en ITIL v3; **7944 histórica B**, el segundo dividendo digital liberó 700 MHz de la TDT para banda ancha móvil/5G y terminó en 2020; **7945 corregida D**, actuar fuera de plazo no causa por sí solo nulidad de pleno derecho y únicamente implica anulabilidad cuando lo impone la naturaleza del plazo.
+
+Fuentes primarias/técnicas: [RGPD](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32016R0679), [Ley 47/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-21614), [glosarios ITIL de AXELOS](https://www.axelos.com/resource-hub/glossary/itil-glossaries-of-terms), [RD 250/2025](https://www.boe.es/buscar/act.php?id=BOE-A-2025-6004), [RD 391/2019](https://www.boe.es/buscar/act.php?id=BOE-A-2019-9513), [Ley 39/2015](https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565) y [Ley 9/2017](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902). Cotejo Drive: bloques 8, 5, 41, 46 y 3; programas oficiales: 7941 A1-27/82 y A2-I-7; 7942 A1-12; 7943 A1-106; 7944 A1-112/A2-IV-15; 7945 A1-8/11 y A2-I-8.
+
+Ejecutados revisores, cotejo académico, inventario, verificador y `git diff --check`: 12.123 válidas; **7.940 revisadas**, **7.812 verificadas**, **128 pendientes**, **4.183 sin revisar**, cero errores estructurales. El inventario no sustituye revisión de contenido.
 
 ## Lote 1527 — 19 de noviembre de 2026
 
