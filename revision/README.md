@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1543 (IDs 8016–8020). Acumulado: **8.015** preguntas examinadas individualmente; **7.886 verificadas** (1.516 vigentes, 5.801 corregidas y 569 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.108 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1544 (IDs 8021–8025). Acumulado: **8.020** preguntas examinadas individualmente; **7.891 verificadas** (1.516 vigentes, 5.805 corregidas y 570 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.103 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1544 — 19 de noviembre de 2026
+
+Revisión individual de 8021–8025, con originales en [cambios-lote-1544.json](cambios-lote-1544.json): cuatro **corregidas** y una **histórica**. Se corrige k-medoids y se identifica PAM como clustering; se precisa el voto de k-NN; se confirma ART como familia neuronal; se explicita el supuesto de una clave AES exclusiva por pareja para obtener 105 claves; y se contextualiza XAdES-X-L como perfil histórico frente a B-LT/B-LTA actuales. Cotejo curricular en Drive: bloques 32 y 36, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.020 revisadas, 7.891 verificadas, 129 pendientes, 4.103 sin revisar y cero errores.
 
 ## Lote 1543 — 19 de noviembre de 2026
 
