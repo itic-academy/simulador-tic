@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1530 (IDs 7951–7955). Acumulado: **7.950** preguntas examinadas individualmente; **7.821 verificadas** (1.509 vigentes, 5.749 corregidas y 563 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.173 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1531 (IDs 7956–7960). Acumulado: **7.955** preguntas examinadas individualmente; **7.826 verificadas** (1.510 vigentes, 5.753 corregidas y 563 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.168 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1531 — 19 de noviembre de 2026
+
+Revisión individual de 7956–7960, trazada en [cambios-lote-1531.json](cambios-lote-1531.json): **7956 corregida B**, la LCSP incluye a las entidades locales y se actualizaron libertad de pactos/perfección; **7957 corregida C**, la LOPDGDD excluye tratamientos sometidos a normativa de materias clasificadas; **7958 corregida C**, la regla del artículo 21 LPAC obliga a resolver y notificar cualquiera que sea la iniciación, con sus excepciones expresas; **7959 vigente A**, la Ley 20/2013 se aplica en cualquier lugar del territorio nacional; **7960 corregida C**, el artículo 158.2 CE crea el Fondo de Compensación para gastos de inversión. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 7.955 revisadas, 7.826 verificadas, 129 pendientes, 4.168 sin revisar y cero errores.
 
 ## Lote 1530 — 19 de noviembre de 2026
 
