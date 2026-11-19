@@ -1,0 +1,24 @@
+const apply = require('./aplicar-lote.cjs');
+
+const records = [
+  [7931, [100,102], ['IV-4'], ['gestión de la configuración','ISO 10007','IEEE 828','estándares'], [
+    {url:'https://www.iso.org/standard/70400.html', referencia:'ISO 10007:2017, Quality management — Guidelines for configuration management; edición vigente confirmada por ISO en 2023.'},
+    {url:'https://standards.ieee.org/ieee/828/10549/', referencia:'IEEE SA, IEEE 828-2012, Standard for Configuration Management in Systems and Software Engineering; establece requisitos mínimos para procesos de gestión de configuración.'}
+  ], {texto:'¿Qué pareja identifica correctamente referencias específicas sobre gestión de la configuración?', opciones:['ISO 10009 e IEEE 838-2012.','ISO 10007:2017 e IEEE 828-2012.','ISO 10007:2017 e IEEE 848-2012.','ISO 9001 e IEEE 830-1998.'], respuesta_correcta:1}, 'Corregida B. ISO 10007:2017 ofrece directrices de gestión de la configuración y IEEE 828-2012 establece requisitos para la gestión de configuración de sistemas y software. El original acertaba con ISO 10007, pero llamaba estándares a una mezcla con el área de proceso de CMMI y ofrecía números IEEE inexistentes o erróneos; se reformuló con referencias inequívocas.', 'corregida'],
+  [7932, [14], [], ['Estrategia Europa 2020','empleo','I+D','clima y energía','educación','pobreza'], [
+    {url:'https://ec.europa.eu/eu2020/pdf/COMPLET%20EN%20BARROSO%20%20%20007%20-%20Europe%202020%20-%20EN%20version.pdf', referencia:'Comisión Europea, COM(2010) 2020, Europe 2020: los cinco objetivos principales abarcan empleo, I+D, clima y energía, educación y pobreza/exclusión social.'}
+  ], null, 'Histórica C. La Estrategia Europa 2020 fijó cinco objetivos principales en empleo, I+D, cambio climático y energía, educación y pobreza o exclusión social. Se conserva como pregunta histórica: la estrategia tenía horizonte 2020 y ya no constituye el marco estratégico vigente.', 'historica'],
+  [7933, [5], [], ['eurozona','zona euro','Suecia','Unión Europea'], [
+    {url:'https://european-union.europa.eu/institutions-law-budget/euro/countries-using-euro_en', referencia:'Unión Europea, países que usan el euro: en 2026 la zona euro comprende 21 Estados; Suecia figura entre los países de la UE que aún no han adoptado el euro.'},
+    {url:'https://economy-finance.ec.europa.eu/euro/eu-countries-and-euro/sweden-and-euro_en', referencia:'Comisión Europea, Sweden and the euro: Suecia todavía no pertenece a la zona euro y conserva la corona sueca.'}
+  ], {texto:'A fecha de 2026, ¿cuál de los siguientes países de la Unión Europea no pertenece a la zona euro?'}, 'Vigente A. Suecia no ha adoptado el euro; Chipre, Luxemburgo y Bélgica sí pertenecen a la zona euro. Se corrigió la redacción y se añadió referencia temporal, relevante tras la incorporación de Bulgaria en 2026.', 'vigente'],
+  [7934, [58], ['II-6'], ['sistemas distribuidos','transparencia de acceso','transparencia de ubicación','transparencia de red'], [
+    {url:'https://www.iso.org/standard/25488.html', referencia:'ISO/IEC 14752:2000, Open Distributed Processing: el soporte de interacciones distribuidas contempla transparencia de acceso y de ubicación.'},
+    {url:'https://www.omg.org/gettingstarted/orb_basics.htm', referencia:'Object Management Group, ORB Basics: un ORB facilita invocaciones remotas y proporciona transparencia de ubicación.'}
+  ], {texto:'En un sistema distribuido, ¿qué pareja de transparencias permite usar un recurso con las mismas operaciones y ocultar dónde está situado?', opciones:['Fallo y replicación.','Prestaciones y escalado.','Acceso y ubicación.','Concurrencia y movilidad.'], respuesta_correcta:2}, 'Corregida C. La transparencia de acceso oculta diferencias de representación o invocación, y la de ubicación oculta dónde reside el recurso. Se sustituyó el enunciado fragmentario original por una definición comprobable y se mantuvo la pareja correcta.', 'corregida'],
+  [7935, [37,88], ['III-2'], ['Scrum','eventos Scrum','Sprint Planning','Daily Scrum','burndown'], [
+    {url:'https://scrumguides.org/scrum-guide.html', referencia:'Scrum Guide 2020, versión oficial vigente: el Sprint contiene Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective; no define una reunión “Burndown”.'}
+  ], {texto:'Según la Guía Scrum 2020, ¿cuál de las siguientes no es un evento de Scrum?', opciones:['Sprint Planning.','Daily Scrum.','Burndown meeting.','Sprint Retrospective.'], respuesta_correcta:2}, 'Corregida C. La Guía Scrum define el Sprint como evento contenedor y, dentro de él, Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective. “Burndown meeting” no es un evento Scrum. Se eliminó “Sprint gromming”, errata que además introducía una segunda alternativa discutible.', 'corregida']
+];
+
+apply({numero:'1526', fecha:'2026-11-19', records});
