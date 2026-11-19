@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1557 (IDs 8086–8090). Acumulado: **8.085** preguntas examinadas individualmente; **7.956 verificadas** (1.530 vigentes, 5.845 corregidas y 581 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.038 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1558 (IDs 8091–8095). Acumulado: **8.090** preguntas examinadas individualmente; **7.961 verificadas** (1.531 vigentes, 5.848 corregidas y 582 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.033 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1558 — 20 de noviembre de 2026
+
+Revisión individual de 8091–8095, con originales en [cambios-lote-1558.json](cambios-lote-1558.json): tres **corregidas**, una **vigente** y una **histórica**. Se verifican los nombres de niveles CMMI; se fecha Availability Management en Service Design de ITIL v3; se define Telnet conforme a RFC 854; se confirma CWD de FTP conforme a RFC 959; y se aclara la comunicación lógica horizontal frente a la transferencia efectiva por la pila OSI. Cotejo curricular en Drive: bloques 39, 41 y 43, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.090 revisadas, 7.961 verificadas, 129 pendientes, 4.033 sin revisar y cero errores.
 
 ## Lote 1557 — 20 de noviembre de 2026
 
