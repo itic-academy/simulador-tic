@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1531 (IDs 7956–7960). Acumulado: **7.955** preguntas examinadas individualmente; **7.826 verificadas** (1.510 vigentes, 5.753 corregidas y 563 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.168 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1532 (IDs 7961–7965). Acumulado: **7.960** preguntas examinadas individualmente; **7.831 verificadas** (1.512 vigentes, 5.755 corregidas y 564 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.163 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1532 — 19 de noviembre de 2026
+
+Revisión individual de 7961–7965, con originales en [cambios-lote-1532.json](cambios-lote-1532.json): **7961 corregida C**, atenciones protocolarias se especifican conforme a su clasificación económica; **7962 vigente B**, las CCAA pueden asumir alteraciones de términos municipales; **7963 histórica B**, CORA presentó el informe el 21 de junio de 2013; **7964 corregida A**, se actualiza el artículo 214 LGSS tras el RDL 11/2024: un año de demora da 45 %, no el antiguo 50 % general; **7965 vigente B**, valores superiores del artículo 1 CE. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 7.960 revisadas, 7.831 verificadas, 129 pendientes, 4.163 sin revisar y cero errores.
 
 ## Lote 1531 — 19 de noviembre de 2026
 
