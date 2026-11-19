@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1554 (IDs 8071–8075). Acumulado: **8.070** preguntas examinadas individualmente; **7.941 verificadas** (1.530 vigentes, 5.831 corregidas y 580 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.053 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1555 (IDs 8076–8080). Acumulado: **8.075** preguntas examinadas individualmente; **7.946 verificadas** (1.530 vigentes, 5.835 corregidas y 581 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.048 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1555 — 20 de noviembre de 2026
+
+Revisión individual de 8076–8080, con originales en [cambios-lote-1555.json](cambios-lote-1555.json): cuatro **corregidas** y una **histórica**. Se acota Kotlin a Kotlin Multiplatform para Android/iOS; se sustituye un modelo topológico particular por la definición general del vectorial; se precisan roll-up y slice-and-dice en OLAP; y se fecha la novedad de `header`, `article` y `bdi` respecto de HTML4. Cotejo curricular en Drive: bloques 30, 33, 34 y 47, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.075 revisadas, 7.946 verificadas, 129 pendientes, 4.048 sin revisar y cero errores.
 
 ## Lote 1554 — 19 de noviembre de 2026
 
