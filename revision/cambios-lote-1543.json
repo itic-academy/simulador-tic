@@ -1,0 +1,364 @@
+{
+  "fecha": "2026-11-19",
+  "alcance": "IDs 8016–8020; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 8016,
+      "original": {
+        "id": 8016,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes afirmaciones sobre iSCSI es FALSA?",
+        "opciones": [
+          "Es un estándar de la IETF.",
+          "Utiliza por defecto los puertos TCP 860 y TCP 3260.",
+          "Necesita una arquitectura de cableado independiente.",
+          "Usa CHAP como principal método de autenticación."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8016,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Conforme a RFC 7143, ¿cuál de estas afirmaciones sobre iSCSI es falsa?",
+        "opciones": [
+          "Es un protocolo estandarizado por el IETF que transporta SCSI sobre TCP.",
+          "El puerto TCP predeterminado es 3260; el 860 solo puede usarse si se especifica expresamente.",
+          "Exige una infraestructura de cableado físico independiente de cualquier red TCP/IP existente.",
+          "Las implementaciones conformes deben implementar el método de autenticación CHAP, aunque su uso se negocia."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C. iSCSI funciona sobre TCP/IP y puede aprovechar infraestructura IP existente, por lo que no exige cableado independiente. El original también hacía falsa la opción sobre puertos al llamar predeterminados tanto al 860 como al 3260; RFC 7143 solo permite 3260 por defecto. Cotejo curricular: bloque 26 Almacenamiento.",
+        "clasificacion": {
+          "A1": [
+            "A1-56"
+          ],
+          "A2": [
+            "A2-IV-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 26 Almacenamiento",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "iSCSI",
+          "TCP",
+          "puerto 3260",
+          "CHAP",
+          "almacenamiento"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc7143.html",
+              "referencia": "RFC 7143, estándar IETF consolidado de iSCSI: transporta SCSI sobre TCP, el puerto predeterminado es 3260 (860 solo si se especifica) y las implementaciones conformes deben implementar CHAP."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1xwthhXbCj-TsATaIDQSI21MsALa-a-FA/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 26 Almacenamiento."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-56."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-5."
+            }
+          ],
+          "observaciones": "Corregida C. iSCSI funciona sobre TCP/IP y puede aprovechar infraestructura IP existente, por lo que no exige cableado independiente. El original también hacía falsa la opción sobre puertos al llamar predeterminados tanto al 860 como al 3260; RFC 7143 solo permite 3260 por defecto. Cotejo curricular: bloque 26 Almacenamiento."
+        }
+      }
+    },
+    {
+      "id": 8017,
+      "original": {
+        "id": 8017,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de los siguientes niveles de aislamiento previene de los problemas de lecturas sucias y lecturas no repetibles, pero NO evita las lecturas fantasmas?",
+        "opciones": [
+          "Read Commited (lectura confirmada)",
+          "Serializable",
+          "Read uncornmited (lectura no confirmada)",
+          "Repeatable read (lectura repetible)"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8017,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según los fenómenos mínimos definidos por el estándar SQL, ¿qué nivel impide lecturas sucias y lecturas no repetibles, pero todavía puede permitir lecturas fantasma?",
+        "opciones": [
+          "Read Committed (lectura confirmada).",
+          "Serializable.",
+          "Read Uncommitted (lectura no confirmada).",
+          "Repeatable Read (lectura repetible)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. La respuesta corresponde a la tabla del estándar SQL. Se corrigen erratas y se explicita el marco, porque PostgreSQL implementa Repeatable Read con una garantía superior que también evita fantasmas. Cotejo curricular: bloque 29 Bases de datos.",
+        "clasificacion": {
+          "A1": [
+            "A1-64"
+          ],
+          "A2": [
+            "A2-III-4"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 29 Bases de datos",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "SQL",
+          "aislamiento",
+          "Repeatable Read",
+          "lectura fantasma"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.postgresql.org/docs/18/transaction-iso.html",
+              "referencia": "PostgreSQL 18, tabla 13.1: según el mínimo del estándar SQL, Repeatable Read impide lecturas sucias y no repetibles pero permite fantasmas; PostgreSQL ofrece una garantía más fuerte y tampoco permite fantasmas."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1-wKuG48GY5sRyLdbCrJU5gWxyILwNiqJ/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 29 Bases de datos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-64."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-III-4."
+            }
+          ],
+          "observaciones": "Corregida D. La respuesta corresponde a la tabla del estándar SQL. Se corrigen erratas y se explicita el marco, porque PostgreSQL implementa Repeatable Read con una garantía superior que también evita fantasmas. Cotejo curricular: bloque 29 Bases de datos."
+        }
+      }
+    },
+    {
+      "id": 8018,
+      "original": {
+        "id": 8018,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Dentro de los productos que engloba la plataforma .NET, las funciones de un servidor web las realiza:",
+        "opciones": [
+          "IIS (Internet Information Services)",
+          "Apache",
+          "Joomla",
+          "Microsoft Web Server"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8018,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Windows Server, ¿qué producto de Microsoft proporciona el rol de servidor web y puede hospedar aplicaciones ASP.NET?",
+        "opciones": [
+          "IIS (Internet Information Services).",
+          "Apache HTTP Server.",
+          "Joomla.",
+          "Un producto denominado oficialmente «Microsoft Web Server»."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. IIS es el servidor web de Microsoft que hospeda aplicaciones ASP.NET en Windows. Se sustituye la vaga formulación histórica «dentro de los productos .NET» y se distinguen un servidor de terceros, un CMS y un nombre no oficial. Cotejo curricular: bloque 30 Tecnologías de sistemas de información.",
+        "clasificacion": {
+          "A1": [
+            "A1-66"
+          ],
+          "A2": [
+            "A2-III-11"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "IIS",
+          "ASP.NET",
+          "servidor web",
+          "Microsoft"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://learn.microsoft.com/en-us/iis/application-frameworks/scenario-build-an-aspnet-website-on-iis/planning-step-1-plan-iis-web-server-and-aspnet-modules-installation",
+              "referencia": "Microsoft Learn, planificación de IIS y módulos ASP.NET: IIS proporciona el rol de servidor web en Windows y hospeda aplicaciones ASP.NET mediante los módulos correspondientes."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 30 Tecnologías de sistemas de información."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-66."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-III-11."
+            }
+          ],
+          "observaciones": "Corregida A. IIS es el servidor web de Microsoft que hospeda aplicaciones ASP.NET en Windows. Se sustituye la vaga formulación histórica «dentro de los productos .NET» y se distinguen un servidor de terceros, un CMS y un nombre no oficial. Cotejo curricular: bloque 30 Tecnologías de sistemas de información."
+        }
+      }
+    },
+    {
+      "id": 8019,
+      "original": {
+        "id": 8019,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La compañía que desarrolló la tecnología JSP es:",
+        "opciones": [
+          "Sun Microsystems.",
+          "Microsoft.",
+          "Google.",
+          "IBM."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8019,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Históricamente, ¿qué empresa lideró el desarrollo de la especificación JavaServer Pages (JSP)?",
+        "opciones": [
+          "Sun Microsystems.",
+          "Microsoft.",
+          "Google.",
+          "IBM."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Histórica A. Sun Microsystems lideró la iniciativa que desarrolló JSP. Se formula en pasado porque Sun dejó de existir como empresa independiente tras su adquisición por Oracle. Cotejo curricular: bloque 30 Tecnologías de sistemas de información.",
+        "clasificacion": {
+          "A1": [
+            "A1-67"
+          ],
+          "A2": [
+            "A2-III-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 Tecnologías de sistemas de información",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "JSP",
+          "JavaServer Pages",
+          "Sun Microsystems",
+          "historia Java"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.oracle.com/java/technologies/javaserver-faq.html",
+              "referencia": "Oracle, FAQ de JavaServer Pages: la especificación JSP se desarrolló mediante una iniciativa sectorial liderada por Sun Microsystems."
+            },
+            {
+              "url": "https://www.oracle.com/java/technologies/javaserver-white-paper.html",
+              "referencia": "White paper conservado por Oracle: Sun Microsystems desarrolló la especificación JSP en cooperación con proveedores y la comunidad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1skUPcsGKh1eClZx6ixj2anHUVzEqy9qm/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 30 Tecnologías de sistemas de información."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-67."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-III-10."
+            }
+          ],
+          "observaciones": "Histórica A. Sun Microsystems lideró la iniciativa que desarrolló JSP. Se formula en pasado porque Sun dejó de existir como empresa independiente tras su adquisición por Oracle. Cotejo curricular: bloque 30 Tecnologías de sistemas de información."
+        }
+      }
+    },
+    {
+      "id": 8020,
+      "original": {
+        "id": 8020,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál de las siguientes estructuras de datos requiere más capacidad de almacenamiento de información?",
+        "opciones": [
+          "Árbol Binario.",
+          "Lista.",
+          "Lista enlazada.",
+          "Árbol-B."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8020,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué estructura de datos es un árbol de búsqueda balanceado multiway cuyos nodos pueden contener varias claves y referencias a varios hijos?",
+        "opciones": [
+          "Árbol binario.",
+          "Lista secuencial.",
+          "Lista enlazada.",
+          "Árbol B (B-tree)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. Un árbol B es multiway y almacena varias claves/referencias por nodo. Se elimina la afirmación original de que siempre requiere «más capacidad»: el consumo total depende del número de elementos, orden, ocupación y representación concreta. Cotejo curricular: bloque 32 Estructuras de datos y algoritmos.",
+        "clasificacion": {
+          "A1": [],
+          "A2": [
+            "A2-III-5"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 32 Estructuras de datos y algoritmos",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "B-tree",
+          "estructura de datos",
+          "árbol balanceado",
+          "nodos multiway"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://xlinux.nist.gov/dads/HTML/btree.html",
+              "referencia": "NIST Dictionary of Algorithms and Data Structures, B-tree: árbol de búsqueda balanceado en el que cada nodo tiene entre ⌈m/2⌉ y m hijos para un orden fijo m."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1DGX9XaBUaMhlIyYdzcACLHMC1hqIyyIM/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 32 Estructuras de datos y algoritmos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: sin asignación."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-III-5."
+            }
+          ],
+          "observaciones": "Corregida D. Un árbol B es multiway y almacena varias claves/referencias por nodo. Se elimina la afirmación original de que siempre requiere «más capacidad»: el consumo total depende del número de elementos, orden, ocupación y representación concreta. Cotejo curricular: bloque 32 Estructuras de datos y algoritmos."
+        }
+      }
+    }
+  ]
+}

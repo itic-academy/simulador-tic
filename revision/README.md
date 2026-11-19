@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1542 (IDs 8011–8015). Acumulado: **8.010** preguntas examinadas individualmente; **7.881 verificadas** (1.516 vigentes, 5.797 corregidas y 568 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.113 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1543 (IDs 8016–8020). Acumulado: **8.015** preguntas examinadas individualmente; **7.886 verificadas** (1.516 vigentes, 5.801 corregidas y 569 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.108 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1543 — 19 de noviembre de 2026
+
+Revisión individual de 8016–8020, con originales en [cambios-lote-1543.json](cambios-lote-1543.json): cuatro **corregidas** y una **histórica**. Se corrige la doble falsedad sobre puertos iSCSI y se confirma TCP/3260/CHAP; se acota Repeatable Read a los mínimos del estándar SQL frente a la garantía más fuerte de PostgreSQL; se identifica IIS como servidor web para ASP.NET; se contextualiza el liderazgo histórico de Sun en JSP; y se sustituye una comparación indeterminada de consumo de memoria por la definición verificable de árbol B. Cotejo curricular en Drive: bloques 26, 29, 30 y 32, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.015 revisadas, 7.886 verificadas, 129 pendientes, 4.108 sin revisar y cero errores.
 
 ## Lote 1542 — 19 de noviembre de 2026
 
