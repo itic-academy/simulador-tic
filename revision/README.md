@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1538 (IDs 7991–7995). Acumulado: **7.990** preguntas examinadas individualmente; **7.861 verificadas** (1.513 vigentes, 5.782 corregidas y 566 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.133 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1539 (IDs 7996–8000). Acumulado: **7.995** preguntas examinadas individualmente; **7.866 verificadas** (1.513 vigentes, 5.787 corregidas y 566 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.128 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1539 — 19 de noviembre de 2026
+
+Revisión individual de 7996–8000, con originales en [cambios-lote-1539.json](cambios-lote-1539.json): cinco **corregidas**. Se define ASiC conforme a ETSI EN 319 162; se acota la función de un CMS web; se actualiza SonarQube sin generalizar sobre licencias; se identifica Eclipse GlassFish como servidor Jakarta EE abierto; y se explica la ventana temporal de las CRL frente a una respuesta OCSP suficientemente reciente, incluyendo las limitaciones de caché de OCSP. Cotejo curricular en Drive: bloques 36, 40, 39 y 30, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 7.995 revisadas, 7.866 verificadas, 129 pendientes, 4.128 sin revisar y cero errores.
 
 ## Lote 1538 — 19 de noviembre de 2026
 
