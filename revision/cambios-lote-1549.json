@@ -1,0 +1,381 @@
+{
+  "fecha": "2026-11-19",
+  "alcance": "IDs 8046–8050; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 8046,
+      "original": {
+        "id": 8046,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Cuál de los siguientes estados NO corresponde con ninguno de los estados en los que puede estar un puerto de un dispositivo de interconexión, según lo definido en el estándar 802.1D para el protocolo Spanning Tree:",
+        "opciones": [
+          "Blocking (Bloqueando).",
+          "Listening (Escuchando).",
+          "Learning (Aprendiendo).",
+          "Receiving (Recibiendo)."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8046,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el Spanning Tree Protocol clásico de IEEE 802.1D, ¿cuál de estas denominaciones NO es uno de los cinco estados de puerto?",
+        "opciones": [
+          "Blocking.",
+          "Listening.",
+          "Learning.",
+          "Receiving."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Histórica D. Los cinco estados del STP clásico son Disabled, Blocking, Listening, Learning y Forwarding; «Receiving» no es un estado. Se explicita que se trata de la nomenclatura clásica de 802.1D, distinta de modelos posteriores de RSTP/MSTP. Cotejo curricular: bloque 42 Redes y conmutación.",
+        "clasificacion": {
+          "A1": [
+            "A1-110"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes y conmutación",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "IEEE 802.1D",
+          "Spanning Tree",
+          "port states",
+          "STP"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.ieee802.org/1/files/public/docs1998/hasten7.pdf",
+              "referencia": "Documento del grupo IEEE 802.1: IEEE 802.1D identifica cinco estados de puerto en STP clásico: Disabled, Blocking, Listening, Learning y Forwarding."
+            },
+            {
+              "url": "https://www.ieee802.org/1/files/public/maint/requests/maint_0022.pdf",
+              "referencia": "Solicitud de mantenimiento IEEE 802.1: enumera Disabled, Listening, Learning, Forwarding y Blocking y remite a IEEE 802.1D para el estado del puerto."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Redes y conmutación."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-110."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-8."
+            }
+          ],
+          "observaciones": "Histórica D. Los cinco estados del STP clásico son Disabled, Blocking, Listening, Learning y Forwarding; «Receiving» no es un estado. Se explicita que se trata de la nomenclatura clásica de 802.1D, distinta de modelos posteriores de RSTP/MSTP. Cotejo curricular: bloque 42 Redes y conmutación."
+        }
+      }
+    },
+    {
+      "id": 8047,
+      "original": {
+        "id": 8047,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una desventaja de la topología física de estrella es que:",
+        "opciones": [
+          "Requiere más cable que la topología de bus.",
+          "Se requieren terminadores.",
+          "Es difícil conectar nuevos nodos a la red.",
+          "Toda la red se caería si hubiera una ruptura en el cable principal."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8047,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Comparada con una topología física de bus que comparte un único troncal, ¿qué desventaja suele tener una estrella cableada con un enlace dedicado desde cada nodo al dispositivo central?",
+        "opciones": [
+          "Requiere más longitud total de cable.",
+          "Necesita terminadores en ambos extremos de un bus común.",
+          "Dificulta añadir nuevos nodos aunque queden puertos libres.",
+          "Una rotura en cualquier cable de un nodo derriba necesariamente toda la red."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. La estrella necesita un tendido dedicado desde cada nodo al centro y suele usar más cable que un bus compartido. No requiere los terminadores del bus, facilita la ampliación y una rotura en el ramal de un nodo normalmente afecta solo a ese nodo; el dispositivo central sí es un punto crítico. Cotejo curricular: bloque 42 Topologías de red.",
+        "clasificacion": {
+          "A1": [
+            "A1-110"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Topologías de red",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "topología estrella",
+          "topología bus",
+          "cableado",
+          "red local"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.cisco.com/c/en/us/td/docs/solutions/Verticals/Industrial_Automation/IA_Horizontal/DG/Industrial-AutomationDG/Industrial-AutomationDG.html",
+              "referencia": "Cisco Design and Implementation Guide: las topologías de estrella con enlaces directos requieren cableado adicional, mientras otras topologías pueden reducir la complejidad de cableado; la estrella aporta facilidad de diseño y aislamiento de enlaces."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Topologías de red."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-110."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-8."
+            }
+          ],
+          "observaciones": "Corregida A. La estrella necesita un tendido dedicado desde cada nodo al centro y suele usar más cable que un bus compartido. No requiere los terminadores del bus, facilita la ampliación y una rotura en el ramal de un nodo normalmente afecta solo a ese nodo; el dispositivo central sí es un punto crítico. Cotejo curricular: bloque 42 Topologías de red."
+        }
+      }
+    },
+    {
+      "id": 8048,
+      "original": {
+        "id": 8048,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La autoridad encargada de la asignación de nombres de dominio de primer nivel genéricos (gTLD) y de códigos de países (ocTLD) únicos en lnternet es:",
+        "opciones": [
+          "IANA.",
+          "NIST.",
+          "ICANN.",
+          "IETF."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8048,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué organización coordina globalmente los identificadores únicos de Internet, la zona raíz del DNS y las funciones IANA relacionadas con los dominios de nivel superior?",
+        "opciones": [
+          "NIST.",
+          "IETF.",
+          "ICANN.",
+          "W3C."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "Corregida C. ICANN coordina el sistema de identificadores y la zona raíz y, mediante su afiliada PTI, presta las funciones IANA. Se corrige «ocTLD» por «ccTLD» y se evita atribuir a una sola entidad la asignación directa de cada dominio: los TLD tienen operadores y procesos de delegación específicos. Cotejo curricular: bloque 42 Internet y DNS.",
+        "clasificacion": {
+          "A1": [
+            "A1-109"
+          ],
+          "A2": [
+            "A2-IV-13"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Internet y DNS",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "ICANN",
+          "IANA",
+          "DNS",
+          "gTLD",
+          "ccTLD",
+          "root zone"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.icann.org/resources/pages/about-icann",
+              "referencia": "ICANN: coordina los identificadores únicos de Internet, la zona raíz del DNS y desempeña las funciones IANA para nombres de dominio, números y parámetros de protocolo."
+            },
+            {
+              "url": "https://www.icann.org/en/governance/bylaws",
+              "referencia": "Estatutos de ICANN, art. 1.1: su misión incluye coordinar la asignación de nombres en la zona raíz del DNS y las políticas de gTLD."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Internet y DNS."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-109."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-13."
+            }
+          ],
+          "observaciones": "Corregida C. ICANN coordina el sistema de identificadores y la zona raíz y, mediante su afiliada PTI, presta las funciones IANA. Se corrige «ocTLD» por «ccTLD» y se evita atribuir a una sola entidad la asignación directa de cada dominio: los TLD tienen operadores y procesos de delegación específicos. Cotejo curricular: bloque 42 Internet y DNS."
+        }
+      }
+    },
+    {
+      "id": 8049,
+      "original": {
+        "id": 8049,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El cable UTP (Unshielded Twisted Pair):",
+        "opciones": [
+          "No es tan susceptible a las interferencias electromagnéticas como el cable STP (Shielded Twisted Pair).",
+          "Es más barato y fácil de manipular que el STP.",
+          "Tiene una lámina externa de aluminio o de cobre trenzado alrededor del conjunto de pares.",
+          "Tiene una pantalla protectora para cada par de hilos."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8049,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Frente a un cable de par trenzado apantallado (STP), ¿qué afirmación describe correctamente al UTP?",
+        "opciones": [
+          "Es menos susceptible a interferencias electromagnéticas.",
+          "Suele ser más barato, ligero y fácil de instalar, pero ofrece menos protección frente a interferencias.",
+          "Incorpora una pantalla metálica global obligatoria alrededor de todos los pares.",
+          "Incorpora obligatoriamente una pantalla individual para cada par."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. UTP carece del apantallamiento propio de STP, por lo que suele ser más económico y manejable, pero también más sensible a interferencias. Se añade el coste técnico de esa ventaja para evitar una comparación incompleta. Cotejo curricular: bloque 42 Cableado.",
+        "clasificacion": {
+          "A1": [
+            "A1-110"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Cableado",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "UTP",
+          "STP",
+          "par trenzado",
+          "apantallamiento",
+          "cableado"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.cisco.com/E-Learning/bulk/guest/celc/fwl/ch1/1_2_2/content.html",
+              "referencia": "Cisco, medios de red: STP incorpora apantallamiento, ofrece mayor protección frente a interferencias y resulta más caro, voluminoso y difícil de instalar que UTP."
+            },
+            {
+              "url": "https://www.cisco.com/E-Learning/bulk/guest/celc/fwl/ch1/1_2_3/content.html",
+              "referencia": "Cisco, cable UTP: es fácil de instalar y menos caro que otros medios, pero más susceptible al ruido e interferencias que medios apantallados."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Cableado."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-110."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-8."
+            }
+          ],
+          "observaciones": "Corregida B. UTP carece del apantallamiento propio de STP, por lo que suele ser más económico y manejable, pero también más sensible a interferencias. Se añade el coste técnico de esa ventaja para evitar una comparación incompleta. Cotejo curricular: bloque 42 Cableado."
+        }
+      }
+    },
+    {
+      "id": 8050,
+      "original": {
+        "id": 8050,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Hablando del modelo OSI ¿Cuál de las siguientes parejas NO es correcta?",
+        "opciones": [
+          "Nivel 4 - HDLC.",
+          "Nivel 1 - CSMA/CD.",
+          "Nivel 3 - X.25.",
+          "Nivel 2 - LAPB."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8050,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Respecto del modelo OSI, ¿cuál de estas asociaciones de protocolo o mecanismo con capa es incorrecta?",
+        "opciones": [
+          "Capa 4 (transporte) — HDLC.",
+          "Capa 2 (enlace, subcapa MAC) — CSMA/CD.",
+          "Capa 3 (red) — nivel de paquete X.25.",
+          "Capa 2 (enlace) — LAPB."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. HDLC es un protocolo de enlace de datos (capa 2), no de transporte (capa 4). Se corrige la segunda opción del original: CSMA/CD pertenece a la subcapa MAC de la capa 2, por lo que asociarlo a capa 1 hacía que hubiera dos respuestas incorrectas. Cotejo curricular: bloque 42 Modelo OSI y protocolos.",
+        "clasificacion": {
+          "A1": [
+            "A1-111"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Modelo OSI y protocolos",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuente primaria para contenido."
+        },
+        "etiquetas": [
+          "modelo OSI",
+          "HDLC",
+          "CSMA/CD",
+          "X.25",
+          "LAPB"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-19",
+          "fuentes": [
+            {
+              "url": "https://www.itu.int/epublications/publication/itu-t-l-1395-2025-07-monitoring-and-control-interface-for-power-cooling-and-building-environment-systems-in-telecommunication-networks-generic-interfa",
+              "referencia": "ITU-T L.1395: sitúa HDLC en la capa 2 de enlace, CSMA/CD en la subcapa MAC de enlace y X.25 en la capa 3 de red."
+            },
+            {
+              "url": "https://www.itu.int/itudoc/itu-d/question/studygr2/q16-2-2.pdf",
+              "referencia": "ITU-D, X.25 Layers: X.25 packet layer corresponde a capa 3 y LAPB implementa la capa 2 de enlace."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Modelo OSI y protocolos."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-111."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-8."
+            }
+          ],
+          "observaciones": "Corregida A. HDLC es un protocolo de enlace de datos (capa 2), no de transporte (capa 4). Se corrige la segunda opción del original: CSMA/CD pertenece a la subcapa MAC de la capa 2, por lo que asociarlo a capa 1 hacía que hubiera dos respuestas incorrectas. Cotejo curricular: bloque 42 Modelo OSI y protocolos."
+        }
+      }
+    }
+  ]
+}

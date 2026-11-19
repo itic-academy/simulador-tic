@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1548 (IDs 8041–8045). Acumulado: **8.040** preguntas examinadas individualmente; **7.911 verificadas** (1.521 vigentes, 5.818 corregidas y 572 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.083 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1549 (IDs 8046–8050). Acumulado: **8.045** preguntas examinadas individualmente; **7.916 verificadas** (1.521 vigentes, 5.822 corregidas y 573 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.078 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1549 — 19 de noviembre de 2026
+
+Revisión individual de 8046–8050, con originales en [cambios-lote-1549.json](cambios-lote-1549.json): cuatro **corregidas** y una **histórica**. Se contextualizan los cinco estados clásicos de STP 802.1D; se precisa el mayor cableado de la estrella frente al bus; se corrige ccTLD y se distingue la coordinación de ICANN de las funciones IANA; se compara UTP con STP incluyendo coste e interferencias; y se corrige CSMA/CD a la capa 2 para que HDLC-capa 4 sea la única asociación errónea. Cotejo curricular en Drive: bloque 42, además de las convocatorias A1/A2. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 8.045 revisadas, 7.916 verificadas, 129 pendientes, 4.078 sin revisar y cero errores.
 
 ## Lote 1548 — 19 de noviembre de 2026
 
