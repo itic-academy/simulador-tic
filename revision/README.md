@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1529 (IDs 7946–7950). Acumulado: **7.945** preguntas examinadas individualmente; **7.817 verificadas** (1.509 vigentes, 5.746 corregidas y 562 históricas); **128 pendientes documentadas** (48 de fuente, 80 de ambigüedad); **4.178 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1530 (IDs 7951–7955). Acumulado: **7.950** preguntas examinadas individualmente; **7.821 verificadas** (1.509 vigentes, 5.749 corregidas y 563 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.173 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1530 — 19 de noviembre de 2026
+
+Revisión individual de 7951–7955, con originales en [cambios-lote-1530.json](cambios-lote-1530.json): **7951 corregida D**, un IPS puede detectar e intentar detener actividad intrusiva, a diferencia de un IDS limitado a detectar/alertar; **7952 pendiente de fuente**, porque no se identifica la metodología que atribuye limpieza, coherencia y capacidad a un supuesto equipo de gestión de entornos; **7953 corregida C**, Nagios monitoriza infraestructura mientras PERT, Gantt y COCOMO II apoyan planificación/estimación; **7954 histórica A**, el INE publicó 20,4 % para ventas electrónicas en 2018; **7955 corregida C**, el artículo 56.1 de la Ley 40/2015 designa las unidades administrativas como elementos organizativos básicos. Ejecutados inventario, verificador y `git diff --check`: 12.123 válidas, 7.950 revisadas, 7.821 verificadas, 129 pendientes, 4.173 sin revisar y cero errores.
 
 ## Lote 1529 — 19 de noviembre de 2026
 
