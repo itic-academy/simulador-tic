@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1575 (IDs 8176–8180). Acumulado: **8.175** preguntas examinadas individualmente; **8.046 verificadas** (1.545 vigentes, 5.909 corregidas y 592 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.948 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1576 (IDs 8181–8185). Acumulado: **8.180** preguntas examinadas individualmente; **8.051 verificadas** (1.546 vigentes, 5.912 corregidas y 593 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.943 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1576 — 20 de noviembre de 2026
+
+Revisión individual de 8181–8185, con originales en [cambios-lote-1576.json](cambios-lote-1576.json): tres **corregidas**, una **vigente** y una **histórica**. Se define SOAP mediante la recomendación W3C; se acotan los puertos FTP al modo activo; se confirma Red SARA; se fecha RFC 821 como SMTP original ya obsoleto; y se precisa la interfaz cooperativa de la paravirtualización. Cotejo curricular en Drive: bloques 10, 26, 30 y 43, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.180 revisadas, 8.051 verificadas, 129 pendientes, 3.943 sin revisar y cero errores.
 
 ## Lote 1575 — 20 de noviembre de 2026
 
