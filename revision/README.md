@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1576 (IDs 8181–8185). Acumulado: **8.180** preguntas examinadas individualmente; **8.051 verificadas** (1.546 vigentes, 5.912 corregidas y 593 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.943 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1577 (IDs 8186–8190). Acumulado: **8.185** preguntas examinadas individualmente; **8.056 verificadas** (1.547 vigentes, 5.916 corregidas y 593 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.938 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1577 — 20 de noviembre de 2026
+
+Revisión individual de 8186–8190, con originales en [cambios-lote-1577.json](cambios-lote-1577.json): cuatro **corregidas** y una **vigente**. Se precisa la recuperación POP3; se define trunk con IEEE 802.1Q; se verifica OVF; se delimita el puente Ethernet en capa 2; y se corrige la secuencia EHLO/HELO de SMTP. Cotejo curricular en Drive: bloques 26, 42 y 43, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.185 revisadas, 8.056 verificadas, 129 pendientes, 3.938 sin revisar y cero errores.
 
 ## Lote 1576 — 20 de noviembre de 2026
 
