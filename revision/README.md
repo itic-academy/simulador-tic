@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1579 (IDs 8196–8200). Acumulado: **8.195** preguntas examinadas individualmente; **8.066 verificadas** (1.549 vigentes, 5.923 corregidas y 594 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.928 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1580 (IDs 8201–8205). Acumulado: **8.200** preguntas examinadas individualmente; **8.071 verificadas** (1.549 vigentes, 5.927 corregidas y 595 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.923 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1580 — 20 de noviembre de 2026
+
+Revisión individual de 8201–8205, con originales en [cambios-lote-1580.json](cambios-lote-1580.json): cuatro **corregidas** y una **histórica**. Se vincula ping con ICMP Echo; se precisan LLC y MAC; se confirma FCAPS; se explica el filtrado de bridges por aprendizaje MAC; y se fecha el rol de administrador de contenidos de la Guía de Comunicación Digital. Cotejo curricular en Drive: bloques 30, 42, 43 y 44, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.200 revisadas, 8.071 verificadas, 129 pendientes, 3.923 sin revisar y cero errores.
 
 ## Lote 1579 — 20 de noviembre de 2026
 
