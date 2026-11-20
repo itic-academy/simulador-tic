@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1560 (IDs 8101–8105). Acumulado: **8.100** preguntas examinadas individualmente; **7.971 verificadas** (1.533 vigentes, 5.856 corregidas y 582 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.023 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1561 (IDs 8106–8110). Acumulado: **8.105** preguntas examinadas individualmente; **7.976 verificadas** (1.533 vigentes, 5.857 corregidas y 586 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.018 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1561 — 20 de noviembre de 2026
+
+Revisión individual de 8106–8110, con originales en [cambios-lote-1561.json](cambios-lote-1561.json): una **corregida** y cuatro **históricas**. Se fecha correctamente el efecto de los registros electrónicos de la Ley 39/2015; se contextualiza HDSL como primera generación simétrica; se reemplaza una comparación coyuntural de cobertura FTTx por la diferencia técnica FTTH/FTTB; y se identifican IEEE 802.20 MBWA e IEEE 802.11e QoS como trabajos históricos ya terminados o incorporados al estándar base. Cotejo curricular en Drive: bloques 07, 42 y 46, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.105 revisadas, 7.976 verificadas, 129 pendientes, 4.018 sin revisar y cero errores.
 
 ## Lote 1560 — 20 de noviembre de 2026
 
