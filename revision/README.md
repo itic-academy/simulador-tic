@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1577 (IDs 8186–8190). Acumulado: **8.185** preguntas examinadas individualmente; **8.056 verificadas** (1.547 vigentes, 5.916 corregidas y 593 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.938 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1578 (IDs 8191–8195). Acumulado: **8.190** preguntas examinadas individualmente; **8.061 verificadas** (1.549 vigentes, 5.918 corregidas y 594 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.933 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1578 — 20 de noviembre de 2026
+
+Revisión individual de 8191–8195, con originales en [cambios-lote-1578.json](cambios-lote-1578.json): dos **vigentes**, dos **corregidas** y una **histórica**. Se sitúa Ethernet en capas física y enlace; se verifica el mapeo multicast IPv4→MAC; se precisan clase E y 250 MHz para categoría 6; se confirma el encaminamiento en capa 3 OSI; y se contextualiza WiMAX como IEEE 802.16 sin cifras universales. Cotejo curricular en Drive: bloques 42, 43 y 46, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.190 revisadas, 8.061 verificadas, 129 pendientes, 3.933 sin revisar y cero errores.
 
 ## Lote 1577 — 20 de noviembre de 2026
 

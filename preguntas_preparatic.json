@@ -437465,70 +437465,289 @@
       "id": 8191,
       "bloque": 0,
       "tema": 0,
-      "texto": "En cuál de las siguientes capas del modelo OSI se encuadra el estándar Ethernet",
+      "texto": "¿En qué capas del modelo OSI se encuadran principalmente las especificaciones Ethernet IEEE 802.3?",
       "opciones": [
-        "Enlace y Red.",
-        "Sesión y Aplicación.",
-        "Físico y Enlace."
+        "Enlace de datos y red.",
+        "Sesión y aplicación.",
+        "Física y enlace de datos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Vigente C. IEEE 802.3 define PHY de capa física y MAC de capa de enlace. El encaminamiento de capa de red, sesión y aplicación quedan fuera del alcance básico de Ethernet. Cotejo curricular: bloque 42 Redes; Ethernet y OSI.",
+      "clasificacion": {
+        "A1": [
+          "A1-109",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-II-8",
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes; Ethernet y OSI",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "Ethernet",
+        "IEEE 802.3",
+        "OSI",
+        "capa física",
+        "enlace de datos"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-20",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.3/10422/",
+            "referencia": "IEEE Std 802.3-2022: especifica Ethernet en la capa física y en la subcapa MAC de enlace de datos."
+          },
+          {
+            "url": "https://www.itu.int/rec/T-REC-X.200/en",
+            "referencia": "UIT-T X.200 / ISO 7498-1: modelo OSI de siete capas y funciones de física y enlace de datos."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 42 Redes; Ethernet y OSI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-109, A1-118."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-II-8, A2-IV-8."
+          }
+        ],
+        "observaciones": "Vigente C. IEEE 802.3 define PHY de capa física y MAC de capa de enlace. El encaminamiento de capa de red, sesión y aplicación quedan fuera del alcance básico de Ethernet. Cotejo curricular: bloque 42 Redes; Ethernet y OSI."
+      }
     },
     {
       "id": 8192,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿A qué dirección MAC multicast corresponde la dirección IP 239.15.16.30?",
+      "texto": "¿A qué dirección MAC Ethernet multicast se mapea la dirección IPv4 239.15.16.30 según RFC 1112?",
       "opciones": [
-        "01-00-5E-0F-10-1E",
-        "10-00-00-0F-10-1E",
-        "01-00-00-0F-10-1E",
-        "FF-FF-FF-0F-10-1E"
+        "01-00-5E-0F-10-1E.",
+        "10-00-00-0F-10-1E.",
+        "01-00-00-0F-10-1E.",
+        "FF-FF-FF-0F-10-1E."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Vigente A. El prefijo Ethernet multicast IPv4 es 01-00-5E y se anexan los 23 bits inferiores de 239.15.16.30, que producen 0F-10-1E. El bit superior del cuarto octeto MAC queda a cero. Cotejo curricular: bloque 43 Protocolos; multicast.",
+      "clasificacion": {
+        "A1": [
+          "A1-115",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-II-8",
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 43 Protocolos; multicast",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "IPv4 multicast",
+        "dirección MAC",
+        "RFC 1112",
+        "01-00-5E",
+        "23 bits"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-20",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1112.html",
+            "referencia": "IETF RFC 1112, §6.4: una dirección IPv4 multicast se mapea a 01-00-5E seguido de los 23 bits menos significativos de la dirección IP."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 43 Protocolos; multicast."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-115, A1-118."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-II-8, A2-IV-8."
+          }
+        ],
+        "observaciones": "Vigente A. El prefijo Ethernet multicast IPv4 es 01-00-5E y se anexan los 23 bits inferiores de 239.15.16.30, que producen 0F-10-1E. El bit superior del cuarto octeto MAC queda a cero. Cotejo curricular: bloque 43 Protocolos; multicast."
+      }
     },
     {
       "id": 8193,
       "bloque": 0,
       "tema": 0,
-      "texto": "El cable de categoría 6 según la norma ANSI:",
+      "texto": "¿Qué afirmación describe correctamente el cableado balanceado de categoría 6?",
       "opciones": [
-        "Equivale al cable clase E de ISO",
-        "Es el cable adecuado para transmisiones de 100 Mbps",
-        "Su rango de funcionamiento alcanza los 100 MHz",
-        "Se trata de una categoría obsoleta"
+        "Sus componentes se asocian a canales clase E de ISO/IEC 11801 y se especifican hasta 250 MHz.",
+        "Solo es adecuado para 100 Mbit/s y no para Gigabit Ethernet.",
+        "Su frecuencia máxima especificada es 100 MHz, igual que categoría 5e.",
+        "Es una categoría obsoleta retirada de las normas actuales."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "Corregida A. Categoría 6 se corresponde con canal clase E y se especifica hasta 250 MHz. Admite 1000BASE-T en un canal conforme y sigue normalizada; 100 MHz corresponde a categoría 5e/clase D. Cotejo curricular: bloque 42 Redes; cableado categoría 6.",
+      "clasificacion": {
+        "A1": [
+          "A1-110",
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-7",
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes; cableado categoría 6",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "categoría 6",
+        "ANSI/TIA-568",
+        "ISO clase E",
+        "250 MHz",
+        "cableado estructurado"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-20",
+        "fuentes": [
+          {
+            "url": "https://tiaonline.org/standard/tia-568-2-d/",
+            "referencia": "ANSI/TIA-568.2-D: norma de componentes y cableado balanceado de telecomunicaciones, incluida categoría 6."
+          },
+          {
+            "url": "https://www.iso.org/standard/66182.html",
+            "referencia": "ISO/IEC 11801-1: cableado genérico; relaciona el rendimiento de canal clase E con componentes categoría 6."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 42 Redes; cableado categoría 6."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-110, A1-118."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-IV-7, A2-IV-8."
+          }
+        ],
+        "observaciones": "Corregida A. Categoría 6 se corresponde con canal clase E y se especifica hasta 250 MHz. Admite 1000BASE-T en un canal conforme y sigue normalizada; 100 MHz corresponde a categoría 5e/clase D. Cotejo curricular: bloque 42 Redes; cableado categoría 6."
+      }
     },
     {
       "id": 8194,
       "bloque": 0,
       "tema": 0,
-      "texto": "Dentro del modelo OSI, podemos afirmar que:",
+      "texto": "Dentro del modelo de referencia OSI, ¿qué afirmación es correcta?",
       "opciones": [
-        "El nivel 2 no hay control de flujo",
-        "El nivel 3 se enfrenta a problemas de encaminamiento",
-        "El nivel 4 se encarga de los problemas de interconexión de redes",
-        "En el nivel 5 se tratan los aspectos sintáctico y semántico de la información"
+        "La capa 2 nunca realiza control de flujo.",
+        "La capa 3 o de red aborda la selección de rutas y el encaminamiento.",
+        "La capa 4 es la responsable de interconectar redes mediante routers.",
+        "La capa 5 trata la representación sintáctica y semántica; esa función corresponde a presentación, capa 6."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Corregida B. La capa de red resuelve encaminamiento y selección de ruta. La capa de enlace puede incorporar control de flujo; transporte ofrece comunicación extremo a extremo, y sintaxis/semántica pertenecen a presentación, no a sesión. Cotejo curricular: bloque 43 Protocolos; modelo OSI.",
+      "clasificacion": {
+        "A1": [
+          "A1-109"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 43 Protocolos; modelo OSI",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "OSI",
+        "capa de red",
+        "encaminamiento",
+        "capa de transporte",
+        "presentación"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-20",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-X.200-199407-I!!PDF-E&lang=e&type=items",
+            "referencia": "UIT-T X.200 / ISO 7498-1, §6: la capa de red proporciona medios para establecer, mantener y terminar conexiones de red e incluye selección de ruta; presentación trata sintaxis y semántica."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 43 Protocolos; modelo OSI."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-109."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-II-8."
+          }
+        ],
+        "observaciones": "Corregida B. La capa de red resuelve encaminamiento y selección de ruta. La capa de enlace puede incorporar control de flujo; transporte ofrece comunicación extremo a extremo, y sintaxis/semántica pertenecen a presentación, no a sesión. Cotejo curricular: bloque 43 Protocolos; modelo OSI."
+      }
     },
     {
       "id": 8195,
       "bloque": 0,
       "tema": 0,
-      "texto": "La norma llamada WiMAX es:",
+      "texto": "¿Qué afirmación describe correctamente WiMAX en su contexto histórico?",
       "opciones": [
-        "La norma IEEE 802.12",
-        "Una norma WLAN europea elaborada por el Instituto Europeo de Normas de Telecomunicaciones (ETSI) y es similar a IEEE 802.11a",
-        "Una norma inalámbrica fija en condiciones de transmitir 32-56 km con velocidades máximas de datos cercanas a 70 Mbit/s",
-        "Ninguna de las anteriores es cierta"
+        "Es IEEE 802.12.",
+        "Es una variante WLAN europea de ETSI equivalente a IEEE 802.11a.",
+        "Es la denominación comercial de sistemas de acceso inalámbrico metropolitano basados en la familia IEEE 802.16; alcance y tasa dependen del perfil y despliegue.",
+        "Ninguna de las anteriores."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Histórica C. WiMAX se basó en IEEE 802.16/WirelessMAN. Se eliminan cifras universales de 32–56 km y 70 Mbit/s: alcance y capacidad dependen de versión, espectro, canalización, antenas, propagación y perfil. Se conserva como contexto tecnológico histórico. Cotejo curricular: bloque 46 Comunicaciones móviles; WiMAX.",
+      "clasificacion": {
+        "A1": [
+          "A1-123"
+        ],
+        "A2": [
+          "A2-IV-15"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 46 Comunicaciones móviles; WiMAX",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "WiMAX",
+        "IEEE 802.16",
+        "WirelessMAN",
+        "acceso inalámbrico metropolitano",
+        "tecnología histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-20",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.16/7744/",
+            "referencia": "IEEE Std 802.16-2017: interfaz radio para sistemas de acceso inalámbrico de banda ancha, conocida como WirelessMAN; base técnica de WiMAX."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 46 Comunicaciones móviles; WiMAX."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-123."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-IV-15."
+          }
+        ],
+        "observaciones": "Histórica C. WiMAX se basó en IEEE 802.16/WirelessMAN. Se eliminan cifras universales de 32–56 km y 70 Mbit/s: alcance y capacidad dependen de versión, espectro, canalización, antenas, propagación y perfil. Se conserva como contexto tecnológico histórico. Cotejo curricular: bloque 46 Comunicaciones móviles; WiMAX."
+      }
     },
     {
       "id": 8196,
