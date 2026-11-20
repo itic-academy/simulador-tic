@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1565 (IDs 8126–8130). Acumulado: **8.125** preguntas examinadas individualmente; **7.996 verificadas** (1.538 vigentes, 5.870 corregidas y 588 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.998 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1566 (IDs 8131–8135). Acumulado: **8.130** preguntas examinadas individualmente; **8.001 verificadas** (1.538 vigentes, 5.875 corregidas y 588 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.993 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1566 — 20 de noviembre de 2026
+
+Revisión individual de 8131–8135, con originales en [cambios-lote-1566.json](cambios-lote-1566.json): cinco **corregidas**. Se acota el papel de las interfaces RF en enlaces ópticos; se precisan OFDMA/SC-FDMA en LTE; se explica la ventaja capacidad-distancia de la fibra monomodo; se corrige la exigencia de medio en Gigabit Ethernet; y se normalizan las dimensiones habituales de fibra. Cotejo curricular en Drive: bloques 42 y 46, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.130 revisadas, 8.001 verificadas, 129 pendientes, 3.993 sin revisar y cero errores.
 
 ## Lote 1565 — 20 de noviembre de 2026
 
