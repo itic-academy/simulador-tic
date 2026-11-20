@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1562 (IDs 8111–8115). Acumulado: **8.110** preguntas examinadas individualmente; **7.981 verificadas** (1.534 vigentes, 5.861 corregidas y 586 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.013 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1563 (IDs 8116–8120). Acumulado: **8.115** preguntas examinadas individualmente; **7.986 verificadas** (1.535 vigentes, 5.865 corregidas y 586 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.008 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1563 — 20 de noviembre de 2026
+
+Revisión individual de 8116–8120, con originales en [cambios-lote-1563.json](cambios-lote-1563.json): cuatro **corregidas** y una **vigente**. Se precisa G.fast como acceso gigabit agregado sobre pares cortos; se define OTT por su entrega sobre Internet pública sin atribuirle una exención regulatoria; se verifica EDFA; se eliminan velocidades VDSL2 absolutas dependientes del bucle; y se sustituye el supuesto diámetro de núcleo por el diámetro de campo modal normalizado de G.652. Cotejo curricular en Drive: bloques 42 y 49, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.115 revisadas, 7.986 verificadas, 129 pendientes, 4.008 sin revisar y cero errores.
 
 ## Lote 1562 — 20 de noviembre de 2026
 
