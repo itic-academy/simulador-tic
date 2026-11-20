@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1567 (IDs 8136–8140). Acumulado: **8.135** preguntas examinadas individualmente; **8.006 verificadas** (1.539 vigentes, 5.879 corregidas y 588 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.988 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1568 (IDs 8141–8145). Acumulado: **8.140** preguntas examinadas individualmente; **8.011 verificadas** (1.541 vigentes, 5.881 corregidas y 589 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.983 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1568 — 20 de noviembre de 2026
+
+Revisión individual de 8141–8145, con originales en [cambios-lote-1568.json](cambios-lote-1568.json): dos **vigentes**, dos **corregidas** y una **histórica**. Se verifica la combinación asimétrica GPON; se corrige la modulación de ADSL a DMT; se contextualiza el menor alcance de CDDI; se confirma G.993.2 para VDSL2; y se precisa el servicio AAA de RADIUS. Cotejo curricular en Drive: bloques 42 y 48, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.140 revisadas, 8.011 verificadas, 129 pendientes, 3.983 sin revisar y cero errores.
 
 ## Lote 1567 — 20 de noviembre de 2026
 
