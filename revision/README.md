@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1561 (IDs 8106–8110). Acumulado: **8.105** preguntas examinadas individualmente; **7.976 verificadas** (1.533 vigentes, 5.857 corregidas y 586 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.018 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1562 (IDs 8111–8115). Acumulado: **8.110** preguntas examinadas individualmente; **7.981 verificadas** (1.534 vigentes, 5.861 corregidas y 586 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.013 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1562 — 20 de noviembre de 2026
+
+Revisión individual de 8111–8115, con originales en [cambios-lote-1562.json](cambios-lote-1562.json): cuatro **corregidas** y una **vigente**. Se distingue OFDMA descendente de SC-FDMA ascendente en LTE; se elimina la ambigüedad de WDMT al comparar técnicas DSL normalizadas; se reemplaza una supuesta confidencialidad inherente de la fibra por su inmunidad electromagnética; se precisan las múltiples bandas US/DS de VDSL2; y se confirma el significado de MIMO. Cotejo curricular en Drive: bloques 42 y 46, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.110 revisadas, 7.981 verificadas, 129 pendientes, 4.013 sin revisar y cero errores.
 
 ## Lote 1561 — 20 de noviembre de 2026
 
