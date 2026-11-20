@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1572 (IDs 8161–8165). Acumulado: **8.160** preguntas examinadas individualmente; **8.031 verificadas** (1.543 vigentes, 5.898 corregidas y 590 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.963 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1573 (IDs 8166–8170). Acumulado: **8.165** preguntas examinadas individualmente; **8.036 verificadas** (1.543 vigentes, 5.903 corregidas y 590 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.958 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1573 — 20 de noviembre de 2026
+
+Revisión individual de 8166–8170, con originales en [cambios-lote-1573.json](cambios-lote-1573.json): cinco **corregidas**. Se sustituye una propuesta HFC/DOCSIS ambigua por FTTB con G.fast; se condicionan los 24 Mbit/s nominales de ADSL2+; se corrige el significado de k= en DKIM; se delimita el troyano de acceso remoto; y se verifica el multipath de Shortest Path Bridging. Cotejo curricular en Drive: bloques 42 y 48, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.165 revisadas, 8.036 verificadas, 129 pendientes, 3.958 sin revisar y cero errores.
 
 ## Lote 1572 — 20 de noviembre de 2026
 
