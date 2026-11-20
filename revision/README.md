@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1568 (IDs 8141–8145). Acumulado: **8.140** preguntas examinadas individualmente; **8.011 verificadas** (1.541 vigentes, 5.881 corregidas y 589 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.983 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1569 (IDs 8146–8150). Acumulado: **8.145** preguntas examinadas individualmente; **8.016 verificadas** (1.542 vigentes, 5.885 corregidas y 589 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.978 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1569 — 20 de noviembre de 2026
+
+Revisión individual de 8146–8150, con originales en [cambios-lote-1569.json](cambios-lote-1569.json): cuatro **corregidas** y una **vigente**. Se distingue la inmunidad a diafonía de las degradaciones propias de la fibra; se verifican MIMO, FDD y TDD en LTE; se aclara la ambigüedad de FTTS; se confirma la radiodifusión FM como simplex; y se define la dispersión cromática. Cotejo curricular en Drive: bloques 42 y 46, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.145 revisadas, 8.016 verificadas, 129 pendientes, 3.978 sin revisar y cero errores.
 
 ## Lote 1568 — 20 de noviembre de 2026
 
