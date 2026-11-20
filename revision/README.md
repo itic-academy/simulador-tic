@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1563 (IDs 8116–8120). Acumulado: **8.115** preguntas examinadas individualmente; **7.986 verificadas** (1.535 vigentes, 5.865 corregidas y 586 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.008 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1564 (IDs 8121–8125). Acumulado: **8.120** preguntas examinadas individualmente; **7.991 verificadas** (1.536 vigentes, 5.869 corregidas y 586 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.003 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1564 — 20 de noviembre de 2026
+
+Revisión individual de 8121–8125, con originales en [cambios-lote-1564.json](cambios-lote-1564.json): cuatro **corregidas** y una **vigente**. Se acota CWDM a su rejilla amplia y aplicaciones metropolitanas de coste contenido; se verifica la emisión incoherente del LED; se diferencia DWDM de WDM genérico; se corrige «NSDPA» por HSDPA y se confirma HARQ; y se precisan inmunidad electromagnética, conversiones E/O–O/E y dispersión modal en fibra. Cotejo curricular en Drive: bloques 42 y 46, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.120 revisadas, 7.991 verificadas, 129 pendientes, 4.003 sin revisar y cero errores.
 
 ## Lote 1563 — 20 de noviembre de 2026
 
