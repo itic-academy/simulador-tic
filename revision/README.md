@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1571 (IDs 8156–8160). Acumulado: **8.155** preguntas examinadas individualmente; **8.026 verificadas** (1.542 vigentes, 5.894 corregidas y 590 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.968 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1572 (IDs 8161–8165). Acumulado: **8.160** preguntas examinadas individualmente; **8.031 verificadas** (1.543 vigentes, 5.898 corregidas y 590 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.963 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1572 — 20 de noviembre de 2026
+
+Revisión individual de 8161–8165, con originales en [cambios-lote-1572.json](cambios-lote-1572.json): cuatro **corregidas** y una **vigente**. Se precisa la banda ascendente GPON en torno a 1310 nm; se condiciona la tasa ADSL al bucle; se desambigua la modulación óptica directa; se confirma G.992.5 para ADSL2+; y se formula la relación entre tasa binaria y baudios para modulación M-aria ideal. Cotejo curricular en Drive: bloque 42 y convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.160 revisadas, 8.031 verificadas, 129 pendientes, 3.963 sin revisar y cero errores.
 
 ## Lote 1571 — 20 de noviembre de 2026
 
