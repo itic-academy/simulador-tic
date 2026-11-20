@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1559 (IDs 8096–8100). Acumulado: **8.095** preguntas examinadas individualmente; **7.966 verificadas** (1.533 vigentes, 5.851 corregidas y 582 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.028 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1560 (IDs 8101–8105). Acumulado: **8.100** preguntas examinadas individualmente; **7.971 verificadas** (1.533 vigentes, 5.856 corregidas y 582 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.023 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1560 — 20 de noviembre de 2026
+
+Revisión individual de 8101–8105, con originales en [cambios-lote-1560.json](cambios-lote-1560.json): cinco **corregidas**. Se delimita IVR a diálogo automático por voz/DTMF; se distingue la dirección de loopback 127.0.0.1 del nombre especial `localhost`; se descompone ITSI en MCC, MNC y SSI conforme a ETSI; se sustituye Xamarin, ya sin soporte, por .NET MAUI; y se define honeypot como recurso señuelo controlado. Cotejo curricular en Drive: bloques 30, 43, 46, 47 y 48, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.100 revisadas, 7.971 verificadas, 129 pendientes, 4.023 sin revisar y cero errores.
 
 ## Lote 1559 — 20 de noviembre de 2026
 
