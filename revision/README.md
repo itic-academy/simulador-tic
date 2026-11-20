@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1570 (IDs 8151–8155). Acumulado: **8.150** preguntas examinadas individualmente; **8.021 verificadas** (1.542 vigentes, 5.890 corregidas y 589 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.973 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1571 (IDs 8156–8160). Acumulado: **8.155** preguntas examinadas individualmente; **8.026 verificadas** (1.542 vigentes, 5.894 corregidas y 590 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.968 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1571 — 20 de noviembre de 2026
+
+Revisión individual de 8156–8160, con originales en [cambios-lote-1571.json](cambios-lote-1571.json): cuatro **corregidas** y una **histórica**. Se condiciona la ventaja económica de WDM; se diferencia DWDM de CWDM; se fecha WiMAX 2/IEEE 802.16m; se reemplaza el criterio comercial de «fibra más popular» por G.652; y se reconstruye un enunciado truncado sobre FTTB. Cotejo curricular en Drive: bloques 42 y 46, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.155 revisadas, 8.026 verificadas, 129 pendientes, 3.968 sin revisar y cero errores.
 
 ## Lote 1570 — 20 de noviembre de 2026
 
