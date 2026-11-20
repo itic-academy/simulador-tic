@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1574 (IDs 8171–8175). Acumulado: **8.170** preguntas examinadas individualmente; **8.041 verificadas** (1.544 vigentes, 5.906 corregidas y 591 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.953 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1575 (IDs 8176–8180). Acumulado: **8.175** preguntas examinadas individualmente; **8.046 verificadas** (1.545 vigentes, 5.909 corregidas y 592 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.948 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1575 — 20 de noviembre de 2026
+
+Revisión individual de 8176–8180, con originales en [cambios-lote-1575.json](cambios-lote-1575.json): tres **corregidas**, una **vigente** y una **histórica**. Se precisa el acceso remoto seguro a la intranet; se verifican OSPF e IS-IS como estado de enlace; se distingue RPO de RTO; se contextualiza el máximo teórico de GPRS; y se atribuye a Shannon la teoría matemática de la información. Cotejo curricular en Drive: bloques 42, 43, 46 y 48, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.175 revisadas, 8.046 verificadas, 129 pendientes, 3.948 sin revisar y cero errores.
 
 ## Lote 1574 — 20 de noviembre de 2026
 
