@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1569 (IDs 8146–8150). Acumulado: **8.145** preguntas examinadas individualmente; **8.016 verificadas** (1.542 vigentes, 5.885 corregidas y 589 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.978 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1570 (IDs 8151–8155). Acumulado: **8.150** preguntas examinadas individualmente; **8.021 verificadas** (1.542 vigentes, 5.890 corregidas y 589 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.973 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1570 — 20 de noviembre de 2026
+
+Revisión individual de 8151–8155, con originales en [cambios-lote-1570.json](cambios-lote-1570.json): cinco **corregidas**. Se precisa la inmunidad electromagnética de la fibra; se explica el uso de monomodo en larga distancia; se verifica la ventana de 1550 nm; se condiciona el alcance de 10 Gigabit Ethernet a medio y PHY; y se aclara la comparación FTTN/FTTC/FTTB/FTTH. Cotejo curricular en Drive: bloque 42 y convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.150 revisadas, 8.021 verificadas, 129 pendientes, 3.973 sin revisar y cero errores.
 
 ## Lote 1569 — 20 de noviembre de 2026
 
