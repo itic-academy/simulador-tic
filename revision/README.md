@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1566 (IDs 8131–8135). Acumulado: **8.130** preguntas examinadas individualmente; **8.001 verificadas** (1.538 vigentes, 5.875 corregidas y 588 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.993 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1567 (IDs 8136–8140). Acumulado: **8.135** preguntas examinadas individualmente; **8.006 verificadas** (1.539 vigentes, 5.879 corregidas y 588 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.988 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1567 — 20 de noviembre de 2026
+
+Revisión individual de 8136–8140, con originales en [cambios-lote-1567.json](cambios-lote-1567.json): cuatro **corregidas** y una **vigente**. Se confirma G.992.3 como ADSL2; se elimina una doble respuesta sobre la elección de fibra; se precisan las limitaciones atmosféricas de los enlaces FSO; se actualizan los modos funcionales NFC; y se explica el filtrado del splitter ADSL. Cotejo curricular en Drive: bloques 42 y 46, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.135 revisadas, 8.006 verificadas, 129 pendientes, 3.988 sin revisar y cero errores.
 
 ## Lote 1566 — 20 de noviembre de 2026
 
