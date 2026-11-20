@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1578 (IDs 8191–8195). Acumulado: **8.190** preguntas examinadas individualmente; **8.061 verificadas** (1.549 vigentes, 5.918 corregidas y 594 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.933 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1579 (IDs 8196–8200). Acumulado: **8.195** preguntas examinadas individualmente; **8.066 verificadas** (1.549 vigentes, 5.923 corregidas y 594 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.928 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1579 — 20 de noviembre de 2026
+
+Revisión individual de 8196–8200, con originales en [cambios-lote-1579.json](cambios-lote-1579.json): cinco **corregidas**. Se actualiza UTP/BS a SF/UTP; se distingue XSN de SPARQL/OWL/DCAT; se precisa que el hub regenera pero no filtra; se elimina una doble falsedad sobre capas OSI; y se acota la función MAC de un CMTS a capa 2. Cotejo curricular en Drive: bloques 30, 42 y 43, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.195 revisadas, 8.066 verificadas, 129 pendientes, 3.928 sin revisar y cero errores.
 
 ## Lote 1578 — 20 de noviembre de 2026
 
