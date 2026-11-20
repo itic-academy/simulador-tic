@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1573 (IDs 8166–8170). Acumulado: **8.165** preguntas examinadas individualmente; **8.036 verificadas** (1.543 vigentes, 5.903 corregidas y 590 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.958 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1574 (IDs 8171–8175). Acumulado: **8.170** preguntas examinadas individualmente; **8.041 verificadas** (1.544 vigentes, 5.906 corregidas y 591 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.953 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1574 — 20 de noviembre de 2026
+
+Revisión individual de 8171–8175, con originales en [cambios-lote-1574.json](cambios-lote-1574.json): tres **corregidas**, una **vigente** y una **histórica**. Se distinguen access y refresh token en OAuth 2.0; se verifican los códigos HTTP 4xx; se precisa el FCS Ethernet de 32 bits; se define la transformada de Fourier; y se fecha el principio Web 2.0 de software multidispositivo. Cotejo curricular en Drive: bloques 30, 42 y 48, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.170 revisadas, 8.041 verificadas, 129 pendientes, 3.953 sin revisar y cero errores.
 
 ## Lote 1573 — 20 de noviembre de 2026
 

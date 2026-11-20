@@ -1,0 +1,368 @@
+{
+  "fecha": "2026-11-20",
+  "alcance": "IDs 8171–8175; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 8171,
+      "original": {
+        "id": 8171,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué tipos de token están establecidos en OAuth 2.0 (RFC 6749)?:",
+        "opciones": [
+          "Token de acceso y token de actualización.",
+          "Token de acceso, ID token y JWT autofirmados.",
+          "Token Kerberos, token SAML y JSON Web Token (JWT).",
+          "Token federado y token de portador."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8171,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué tipos de token define expresamente el marco OAuth 2.0 de RFC 6749?",
+        "opciones": [
+          "Token de acceso y token de actualización (refresh token).",
+          "Token de acceso, ID token y JWT autofirmado; el ID token pertenece a OpenID Connect, no a RFC 6749.",
+          "Token Kerberos, aserción SAML y JWT.",
+          "Token federado y token de portador como únicas dos categorías."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. RFC 6749 define access tokens y refresh tokens. No exige que el formato sea JWT y no define el ID token de OpenID Connect. Bearer es un modo de uso/tipo de access token desarrollado por RFC 6750, no la pareja de tipos solicitada. Cotejo curricular: bloque 48 Seguridad; OAuth.",
+        "clasificacion": {
+          "A1": [
+            "A1-125"
+          ],
+          "A2": [
+            "A2-IV-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 48 Seguridad; OAuth",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "OAuth 2.0",
+          "RFC 6749",
+          "access token",
+          "refresh token",
+          "OpenID Connect"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-20",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc6749.html",
+              "referencia": "IETF RFC 6749, §§1.4–1.5: OAuth 2.0 define access token y refresh token; el segundo es opcional y se usa para obtener nuevos access tokens."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1nY-Tsxl9jCcpR49qO-3g29cGg_93D8SP/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 48 Seguridad; OAuth."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-125."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-12."
+            }
+          ],
+          "observaciones": "Corregida A. RFC 6749 define access tokens y refresh tokens. No exige que el formato sea JWT y no define el ID token de OpenID Connect. Bearer es un modo de uso/tipo de access token desarrollado por RFC 6750, no la pareja de tipos solicitada. Cotejo curricular: bloque 48 Seguridad; OAuth."
+        }
+      }
+    },
+    {
+      "id": 8172,
+      "original": {
+        "id": 8172,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Señale la afirmación correcta en cuanto a los códigos HTTP:",
+        "opciones": [
+          "Los códigos que comienzan por 4 (4xx) informan de un error en el cliente",
+          "El código 401 informa que el recurso no se ha encontrado",
+          "El código 403 informa de una redirección en el recurso accedido",
+          "El código 404 indica que no hay autorización para acceder al recurso"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8172,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según RFC 9110, ¿qué afirmación sobre los códigos de estado HTTP es correcta?",
+        "opciones": [
+          "Los códigos 4xx indican que la solicitud del cliente contiene un error o no puede satisfacerse por una causa atribuida a ella.",
+          "401 significa que no se ha encontrado el recurso.",
+          "403 es un código de redirección.",
+          "404 significa específicamente que faltan credenciales de autenticación."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Vigente A. RFC 9110 agrupa los 4xx como errores del cliente. 401 requiere autenticación, 403 indica que el servidor entiende la solicitud pero rehúsa atenderla y 404 indica que no encuentra el recurso o no desea revelar su existencia. Cotejo curricular: bloque 30 Tecnologías web; HTTP.",
+        "clasificacion": {
+          "A1": [
+            "A1-65"
+          ],
+          "A2": [
+            "A2-III-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 Tecnologías web; HTTP",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "HTTP",
+          "RFC 9110",
+          "4xx",
+          "401",
+          "403",
+          "404"
+        ],
+        "revision": {
+          "estado": "vigente",
+          "fecha": "2026-11-20",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5",
+              "referencia": "IETF RFC 9110, §15.5: la clase 4xx indica error del cliente; 401 es Unauthorized, 403 Forbidden y 404 Not Found."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1UsdnGeUYNrLZJD3Dn6Jbrj6UhuSfLrws/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 30 Tecnologías web; HTTP."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-65."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-III-12."
+            }
+          ],
+          "observaciones": "Vigente A. RFC 9110 agrupa los 4xx como errores del cliente. 401 requiere autenticación, 403 indica que el servidor entiende la solicitud pero rehúsa atenderla y 404 indica que no encuentra el recurso o no desea revelar su existencia. Cotejo curricular: bloque 30 Tecnologías web; HTTP."
+        }
+      }
+    },
+    {
+      "id": 8173,
+      "original": {
+        "id": 8173,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿De qué tamaño en bits es el campo de comprobación de erorres en la tecnología Ethernet?",
+        "opciones": [
+          "16",
+          "32",
+          "64",
+          "48"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8173,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué tamaño tiene el campo Frame Check Sequence (FCS) de una trama MAC Ethernet IEEE 802.3?",
+        "opciones": [
+          "16 bits.",
+          "32 bits (4 octetos).",
+          "64 bits.",
+          "48 bits."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. El FCS Ethernet ocupa cuatro octetos, es decir, 32 bits, y contiene el valor CRC usado para detectar errores de transmisión. Se corrige «erorres» y se identifica el campo por su nombre normalizado. Cotejo curricular: bloque 42 Redes; Ethernet.",
+        "clasificacion": {
+          "A1": [
+            "A1-118"
+          ],
+          "A2": [
+            "A2-IV-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes; Ethernet",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "Ethernet",
+          "FCS",
+          "CRC-32",
+          "IEEE 802.3",
+          "32 bits"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-20",
+          "fuentes": [
+            {
+              "url": "https://standards.ieee.org/ieee/802.3/10422/",
+              "referencia": "IEEE Std 802.3-2022: la trama MAC Ethernet incluye un Frame Check Sequence (FCS) de 4 octetos calculado mediante CRC."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Redes; Ethernet."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-118."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-8."
+            }
+          ],
+          "observaciones": "Corregida B. El FCS Ethernet ocupa cuatro octetos, es decir, 32 bits, y contiene el valor CRC usado para detectar errores de transmisión. Se corrige «erorres» y se identifica el campo por su nombre normalizado. Cotejo curricular: bloque 42 Redes; Ethernet."
+        }
+      }
+    },
+    {
+      "id": 8174,
+      "original": {
+        "id": 8174,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En telecomunicaciones se emplea mucho el concepto matemático de 'transformada'. ¿Podría decir a qué se refiere este concepto?",
+        "opciones": [
+          "Es un cambio en la modulación de la señal al pasar por las bobinas de 4 hilos.",
+          "Es una operación matemática que expresa una ecuación en otros términos mucho más fácilmente tratables por un ordenador y más intuitivamente comprensibles por el ser humano.",
+          "Es un cambio de base de las cantidades para poder operar con ellas en lógica digital.",
+          "Nada de lo anterior es cierto."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8174,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En análisis de señales, ¿qué hace una transformada de Fourier?",
+        "opciones": [
+          "Cambia físicamente la modulación al atravesar una bobina de cuatro hilos.",
+          "Representa una señal del dominio temporal en el dominio de la frecuencia, donde determinadas operaciones y componentes espectrales son más fáciles de analizar.",
+          "Cambia necesariamente la base numérica a binario para que funcione un ordenador.",
+          "No es una operación matemática aplicable a telecomunicaciones."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "Corregida B. Una transformada es una operación matemática que cambia la representación; la de Fourier lleva una señal entre dominios temporal y frecuencial. Se sustituye la definición vaga de «ecuación en otros términos» por el caso concreto usado en telecomunicaciones. Cotejo curricular: bloque 42 Redes; señales y transformadas.",
+        "clasificacion": {
+          "A1": [
+            "A1-121"
+          ],
+          "A2": [
+            "A2-IV-10"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes; señales y transformadas",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "transformada de Fourier",
+          "dominio temporal",
+          "dominio frecuencial",
+          "señales"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-20",
+          "fuentes": [
+            {
+              "url": "https://dlmf.nist.gov/1.14",
+              "referencia": "NIST Digital Library of Mathematical Functions, §1.14: define transformadas integrales, incluida la transformada de Fourier y su inversa."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Redes; señales y transformadas."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-121."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-10."
+            }
+          ],
+          "observaciones": "Corregida B. Una transformada es una operación matemática que cambia la representación; la de Fourier lleva una señal entre dominios temporal y frecuencial. Se sustituye la definición vaga de «ecuación en otros términos» por el caso concreto usado en telecomunicaciones. Cotejo curricular: bloque 42 Redes; señales y transformadas."
+        }
+      }
+    },
+    {
+      "id": 8175,
+      "original": {
+        "id": 8175,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Identifique cuál de los siguientes no es uno de los siete principios de la Web 2.0:",
+        "opciones": [
+          "World Wide Web como plataforma de trabajo.",
+          "Las experiencias enriquecedoras de los usuarios.",
+          "El fin del ciclo de las actualizaciones de versiones del software.",
+          "El software limitado a un solo dispositivo."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8175,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el marco histórico de principios Web 2.0 difundido por Tim O’Reilly, ¿cuál NO es uno de esos principios?",
+        "opciones": [
+          "La web como plataforma.",
+          "Experiencias de usuario enriquecidas.",
+          "El fin del ciclo tradicional de publicaciones de versiones de software.",
+          "El software limitado a un único dispositivo."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Histórica D. O’Reilly formuló precisamente «software above the level of a single device», no software limitado a uno. La web como plataforma, los servicios en mejora continua y las experiencias enriquecidas forman parte de ese marco histórico, que no constituye un estándar técnico vigente. Cotejo curricular: bloque 30 Tecnologías web; Web 2.0.",
+        "clasificacion": {
+          "A1": [
+            "A1-65",
+            "A1-133"
+          ],
+          "A2": [
+            "A2-II-6",
+            "A2-III-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 Tecnologías web; Web 2.0",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "Web 2.0",
+          "Tim O’Reilly",
+          "software multidispositivo",
+          "web como plataforma",
+          "historia de la web"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-20",
+          "fuentes": [
+            {
+              "url": "https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html",
+              "referencia": "Tim O’Reilly, What Is Web 2.0 (2005): enumera la web como plataforma, el fin del ciclo de versiones y el software por encima del nivel de un solo dispositivo."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1UsdnGeUYNrLZJD3Dn6Jbrj6UhuSfLrws/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 30 Tecnologías web; Web 2.0."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-65, A1-133."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-II-6, A2-III-12."
+            }
+          ],
+          "observaciones": "Histórica D. O’Reilly formuló precisamente «software above the level of a single device», no software limitado a uno. La web como plataforma, los servicios en mejora continua y las experiencias enriquecidas forman parte de ese marco histórico, que no constituye un estándar técnico vigente. Cotejo curricular: bloque 30 Tecnologías web; Web 2.0."
+        }
+      }
+    }
+  ]
+}
