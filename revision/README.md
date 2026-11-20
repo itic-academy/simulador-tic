@@ -1,4 +1,8 @@
-Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1564 (IDs 8121–8125). Acumulado: **8.120** preguntas examinadas individualmente; **7.991 verificadas** (1.536 vigentes, 5.869 corregidas y 586 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **4.003 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+Estado parcial; revisión del banco en curso. Publicación desde main mediante GitHub Actions. Último lote secuencial: 1565 (IDs 8126–8130). Acumulado: **8.125** preguntas examinadas individualmente; **7.996 verificadas** (1.538 vigentes, 5.870 corregidas y 588 históricas); **129 pendientes documentadas** (49 de fuente, 80 de ambigüedad); **3.998 sin revisar individualmente**. No se marca como verificada una pregunta pendiente; el inventario estructural no equivale a revisión de contenido.
+
+## Lote 1565 — 20 de noviembre de 2026
+
+Revisión individual de 8126–8130, con originales en [cambios-lote-1565.json](cambios-lote-1565.json): una **corregida**, dos **vigentes** y dos **históricas**. Se confirma el orden de las siete capas OSI; se contextualiza el límite de 12 MHz de VDSL G.993.1; se verifica la banda histórica IR-14 de LMDS/FWA; se precisa la reserva de camino en conmutación de circuitos; y se sustituye «fibra más popular» por los parámetros de campo modal/revestimiento de G.652. Cotejo curricular en Drive: bloques 42, 43 y 49, además de las convocatorias A1/A2. Ejecutados inventario y verificador: 12.123 válidas, 8.125 revisadas, 7.996 verificadas, 129 pendientes, 3.998 sin revisar y cero errores.
 
 ## Lote 1564 — 20 de noviembre de 2026
 
