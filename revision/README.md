@@ -22017,3 +22017,17 @@ Revisión individual de 8261–8265. Se verificó 10GBASE-T sobre categoría 6A;
 Fuentes: Fluke Networks sobre 10GBASE-T; EUR-Lex [89/336/CEE](https://eur-lex.europa.eu/eli/dir/1989/336/oj/eng) y [2014/30/UE](https://eur-lex.europa.eu/eli/dir/2014/30/oj/spa); UIT-T X.680; IEEE Technology Navigator para ATM y 802.11g. Cotejo Academy: bloques 42, 49, 43 y 46 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.260 revisadas** (1.559 vigentes, 5.961 corregidas y 611 históricas), 129 pendientes y **3.863 sin revisar**; errores estructurales: 0.
+
+## Lote 1593 — 21 de noviembre de 2026
+
+Revisión individual de 8266–8270. Se fechó correctamente P802.1p, se verificaron el tamaño ATM y la velocidad STM-4, se reparó una pregunta ambigua de topologías SDH y se separó contabilidad de rendimiento en FCAPS. El [registro 1593](cambios-lote-1593.json) conserva originales y trazabilidad.
+
+- **8266:** **histórica B**. P802.1p trató prioridad y filtrado multicast dinámico; su contenido se integró en otros estándares 802.1. A1-118/A2-IV-8.
+- **8267:** **histórica B**. Una celda ATM tiene 53 bytes. A1-112/A2-IV-9.
+- **8268:** **histórica B**. STM-4 transmite a 622,080 Mbit/s. A1-112/A2-IV-9.
+- **8269:** **corregida D**. Anillo, punto a punto y malla son topologías; el original mezclaba términos que podían describir configuraciones válidas. A1-112/A2-IV-9.
+- **8270:** **corregida D**. Rendimiento y QoS pertenecen a Performance Management; Accounting trata uso, cuotas, costes o facturación. A1-130/A2-IV-11.
+
+Fuentes: IEEE 802.1; IEEE Technology Navigator para ATM; UIT-R S.1149-2 y handbook SDH; UIT-T M.3400. Cotejo Academy: bloques 42, 43 y 44 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.265 revisadas** (1.559 vigentes, 5.963 corregidas y 614 históricas), 129 pendientes y **3.858 sin revisar**; errores estructurales: 0.
