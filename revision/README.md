@@ -22115,3 +22115,17 @@ Revisión individual de 8296–8300. Se verificaron la planificación de proyect
 Fuentes: documentación y [biblioteca oficiales de Administración electrónica](https://administracionelectronica.gob.es/actualidad/pae-biblioteca/pae-publicacionespropias/monografias-administracion-electronica) sobre MÉTRICA v3. Cotejo Academy: bloque 38 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.295 revisadas** (1.559 vigentes, 5.968 corregidas y 639 históricas), 129 pendientes y **3.828 sin revisar**; errores estructurales: 0.
+
+## Lote 1600 — 21 de noviembre de 2026
+
+Revisión individual de 8301–8305. Se verificó una regla de nivelación de DFD y se contrastaron directamente con BOE el reparto legislativo Estado–comunidades autónomas, las medidas provisionales, la igualdad en medios públicos y el Título I constitucional. El [registro 1600](cambios-lote-1600.json) conserva originales y trazabilidad.
+
+- **8301:** **histórica B**. Un almacén aparece en el nivel donde acceden a él dos o más procesos. A1-90/95; A2-III-2.
+- **8302:** **vigente B**. Pueden concurrir legislación básica estatal y desarrollo legislativo autonómico según materia y Estatuto. A1-3.
+- **8303:** **vigente D**. El peritaje técnico no figura en la lista de medidas provisionales del artículo 56.3 de la Ley 39/2015. A1-8; A2-I-8.
+- **8304:** **vigente A**. El artículo 36 de la LO 3/2007 atribuye ese mandato a los medios de titularidad pública. A1-16; A2-I-5.
+- **8305:** **vigente A**. El Título I se denomina «De los derechos y deberes fundamentales». A1-1; A2-I-1.
+
+Fuentes: documentación oficial MÉTRICA v3; Constitución Española, Ley 39/2015 y Ley Orgánica 3/2007 consolidadas en BOE. Cotejo Academy: bloques 38, Constitución 2026.2, Actuación Administrativa y Economía/Igualdad en Drive, además de convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.300 revisadas** (1.563 vigentes, 5.968 corregidas y 640 históricas), 129 pendientes y **3.823 sin revisar**; errores estructurales: 0.
