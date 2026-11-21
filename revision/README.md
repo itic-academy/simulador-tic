@@ -22157,3 +22157,17 @@ Revisión individual de 8311–8315. Se verificaron el plazo legal de conservaci
 Fuentes: Ley 25/2007 y Reales Decretos 806/2014 y 1125/2024 en BOE; RFC 4301 y RFC 4303 de IETF; documentación oficial de Microsoft Learn y Mono; NBSIR 75-780 y material de teoría de colas de la Universidad Pontificia Comillas. Cotejo Academy: bloques 08, 03, 48 y 30 en Drive; no se localizó un bloque directo de teoría de colas. Clasificación cotejada con las convocatorias A1/A2 vigentes.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.310 revisadas** (1.569 vigentes, 5.971 corregidas y 641 históricas), 129 pendientes y **3.813 sin revisar**; errores estructurales: 0.
+
+## Lote 1603 — 21 de noviembre de 2026
+
+Revisión individual de 8316–8320. Se contrastaron la categorización ENS, los elementos de casos de uso UML, las redes blockchain sin permisos, la arquitectura de seguridad OSI y el control de acceso obligatorio. Se corrigieron la ambigüedad de una opción ENS y las generalizaciones indebidas sobre toda blockchain. El [registro 1603](cambios-lote-1603.json) conserva originales y trazabilidad.
+
+- **8316:** **corregida C**. Una dimensión no afectada no se adscribe a ningún nivel; categoría MEDIA exige que ninguna dimensión alcance ALTO. A1-48; A2-I-9.
+- **8317:** **vigente A**. Interface no es un elemento propio del diagrama de casos de uso; sí lo son actores, casos y relaciones, organizables en paquetes. A1-88/93; A2-III-9.
+- **8318:** **corregida A**. Una red blockchain permissionless no requiere autorización central para publicar bloques; se diferencia de las redes permissioned. A1-85.
+- **8319:** **vigente D**. Un servicio de seguridad puede suministrarse mediante varios mecanismos conforme a X.800/ISO 7498-2. A1-125; A2-IV-12.
+- **8320:** **vigente B**. MAC impone centralmente el acceso según etiquetas de sensibilidad y autorizaciones formales. A1-47/125; A2-II-13/IV-12.
+
+Fuentes: RD 311/2022 consolidado en BOE; especificación OMG UML 2.5.1; NISTIR 8202 y glosario NIST CSRC; recomendación ITU-T X.800. Cotejo Academy: bloques 22, 38, tema 85 y bloque 48 en Drive, además de las convocatorias A1/A2 vigentes.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.315 revisadas** (1.572 vigentes, 5.973 corregidas y 641 históricas), 129 pendientes y **3.808 sin revisar**; errores estructurales: 0.
