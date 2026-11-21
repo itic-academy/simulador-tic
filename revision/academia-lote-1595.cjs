@@ -1,0 +1,8 @@
+const fs=require('fs'),path=require('path'),assert=require('assert');
+const bp=path.join(__dirname,'..','preguntas_preparatic.json'),lp=path.join(__dirname,'cambios-lote-1595.json'),b=JSON.parse(fs.readFileSync(bp)),l=JSON.parse(fs.readFileSync(lp));
+const drive='https://drive.google.com/file/d/1UiTG2T4TSlmpyXgU6v5KVP1Z1ERmyGzN/view?usp=drivesdk';
+const topics={8276:'bloque 38 MÉTRICA v3; productos de DSI',8277:'bloque 38 MÉTRICA v3; requisitos y casos de uso',8278:'bloque 38 MÉTRICA v3; mantenimiento y regresión',8279:'bloque 38 MÉTRICA v3; diseño físico de datos',8280:'bloque 38 MÉTRICA v3; participantes'};
+const u={A1:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938',A2:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262'},off=new Set(JSON.parse(fs.readFileSync(path.join(__dirname,'temario-oficial.json'))).programas.flatMap(p=>p.temas.map(t=>t.id)));
+assert.equal(l.cambios.length,5);
+for(const c of l.cambios){const q=b.preguntas.find(x=>x.id===c.id),t=topics[c.id];for(const id of [...q.clasificacion.A1,...q.clasificacion.A2])assert.ok(off.has(id),id);q.revision.fuentes.push({url:drive,referencia:`Cotejo curricular ITIC Academy: ${t}.`},{url:u.A1,referencia:`Convocatoria A1: ${q.clasificacion.A1.join(', ')}.`},{url:u.A2,referencia:`Convocatoria A2: ${q.clasificacion.A2.join(', ')}.`});q.revision.observaciones+=` Cotejo curricular: ${t}.`;q.comentarios+=` Cotejo curricular: ${t}.`;q.clasificacion.bloque_academia=`ITIC Academy, ${t}`;q.clasificacion.nota='Academia para encaje; documentación oficial MÉTRICA v3 para contenido.';c.actualizada=structuredClone(q)}
+fs.writeFileSync(bp,JSON.stringify(b,null,2)+'\n');fs.writeFileSync(lp,JSON.stringify(l,null,2)+'\n');console.log('Cotejo lote 1595: 5.');

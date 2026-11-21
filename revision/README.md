@@ -22045,3 +22045,17 @@ Revisión individual de 8271–8275. Se verificó la anchura del bloque DAB clá
 Fuentes: ETSI ETS 300 401 para DAB; documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html); MAGERIT v2. Cotejo Academy: bloques 46 y 38 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.270 revisadas** (1.559 vigentes, 5.964 corregidas y 618 históricas), 129 pendientes y **3.853 sin revisar**; errores estructurales: 0.
+
+## Lote 1595 — 21 de noviembre de 2026
+
+Revisión individual de 8276–8280. Se contrastaron productos de DSI, uso de casos de uso, participantes en pruebas de regresión, aplicación de DSI 6 y perfiles de participantes de MÉTRICA v3. El [registro 1595](cambios-lote-1595.json) conserva originales y trazabilidad.
+
+- **8276:** **histórica B**. El Resultado del Análisis de Consistencia es entrada procedente de ASI y salida actualizada de DSI. A1-95; A2-III-2.
+- **8277:** **histórica B**. Los casos de uso son opcionales en estructurado y obligatorios en orientación a objetos. A1-90/95; A2-III-2/III-9.
+- **8278:** **histórica D**. En las pruebas de regresión participan mantenimiento y el jefe de proyecto, no los usuarios expertos. A1-95; A2-III-2.
+- **8279:** **histórica A**. DSI 6 también se aplica en orientación a objetos, partiendo del modelo de clases. A1-90/95; A2-III-2/III-9.
+- **8280:** **corregida C**. MÉTRICA v3 define ocho perfiles generales de participantes, no los cinco que marcaba el original. A1-95; A2-III-2.
+
+Fuentes: documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/documentacion/metodologias-guias) y su volumen oficial de Diseño del Sistema de Información. Cotejo Academy: bloque 38 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.275 revisadas** (1.559 vigentes, 5.965 corregidas y 622 históricas), 129 pendientes y **3.848 sin revisar**; errores estructurales: 0.
