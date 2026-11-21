@@ -22129,3 +22129,17 @@ Revisión individual de 8301–8305. Se verificó una regla de nivelación de DF
 Fuentes: documentación oficial MÉTRICA v3; Constitución Española, Ley 39/2015 y Ley Orgánica 3/2007 consolidadas en BOE. Cotejo Academy: bloques 38, Constitución 2026.2, Actuación Administrativa y Economía/Igualdad en Drive, además de convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.300 revisadas** (1.563 vigentes, 5.968 corregidas y 640 históricas), 129 pendientes y **3.823 sin revisar**; errores estructurales: 0.
+
+## Lote 1601 — 21 de noviembre de 2026
+
+Revisión individual de 8306–8310. Se corrigió la atribución legal de la responsabilidad del representante en protección de datos y se contrastaron en BOE el valor estimado, el responsable del contrato, los medios propios y el Título II de la Ley 39/2015. El [registro 1601](cambios-lote-1601.json) conserva originales y trazabilidad.
+
+- **8306:** **corregida B**. La solidaridad del representante procede del artículo 30 LOPDGDD, bajo las condiciones del artículo 3.2 RGPD. A1-27; A2-I-7.
+- **8307:** **vigente D**. El valor estimado excluye IVA, incorpora prórrogas y modificaciones previstas y determina umbrales SARA. A1-11.
+- **8308:** **vigente D**. El responsable supervisa la ejecución y adopta decisiones e instrucciones dentro de sus facultades. A1-11.
+- **8309:** **vigente A**. El artículo 86 de la Ley 40/2015 regula los medios propios en conexión con la LCSP. A1-13; A2-I-8.
+- **8310:** **vigente B**. El artículo 13 sobre derechos de las personas está en el Título II de la Ley 39/2015. A1-8; A2-I-8.
+
+Fuentes: LO 3/2018, Ley 9/2017, Ley 40/2015 y Ley 39/2015 consolidadas en BOE. Cotejo Academy: bloques 08 Protección de Datos, 05 Contratación y 03 Actuación Administrativa en Drive, además de convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.305 revisadas** (1.567 vigentes, 5.969 corregidas y 640 históricas), 129 pendientes y **3.818 sin revisar**; errores estructurales: 0.
