@@ -21905,3 +21905,17 @@ Revisión individual de 8221–8225. Se fechó la asociación LMDS–26 GHz fren
 Fuentes: BOE [IR-14 de 2005](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2005-21020) y [CNAF UN-92](https://www.boe.es/buscar/doc.php?id=BOE-A-2023-14422); IETF [RFC 5321](https://www.rfc-editor.org/rfc/rfc5321.html); IEEE, [802.11g](https://technav.ieee.org/topic/ieee-80211g-standard/); CableLabs, [evolución DOCSIS](https://www.cablelabs.com/blog/docsis-technology-evolution); NIST [SP 800-207](https://csrc.nist.gov/pubs/sp/800/207/final). Cotejo curricular: Academy bloques 46, 43 y 42 en Drive; convocatorias [A1](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.220 revisadas** (1.550 vigentes, 5.941 corregidas, 600 históricas), 129 pendientes y **3.903 sin revisar**; errores estructurales: 0.
+
+## Lote 1585 — 21 de noviembre de 2026
+
+Revisión individual de 8226–8230 con Constitución, Ley 3/2015, jurisprudencia del TJUE, LCSP e INE. Se precisó la presidencia regia del Consejo de Ministros, el ámbito de alto cargo, la primacía del Derecho de la Unión y la periodicidad de solvencia; además, se corrigió el año de la cifra 8,81 % de Big Data. El [registro 1585](cambios-lote-1585.json) conserva originales y trazabilidad.
+
+- **8226 — Rey y Consejo de Ministros:** **corregida C**. Art. 62.g CE: para ser informado de asuntos de Estado, cuando lo estime oportuno y a petición del Presidente del Gobierno. A1-1/A2-I-1.
+- **8227 — alto cargo:** **corregida A**. La Ley 3/2015 incluye Gobierno, Secretarios de Estado, Delegados y Directores Generales, pero no a los Subdirectores Generales por ese solo cargo. A1-4/A2-I-8.
+- **8228 — Derecho UE:** **corregida B**. En conflicto, el principio operativo es la primacía del Derecho de la Unión aplicable; se evita una opción «todas» con conceptos de alcance distinto. A1-5; sin tema A2 específico.
+- **8229 — solvencia técnica:** **vigente B**. Art. 82.2 LCSP: cada tres años; la económica y financiera se justifica anualmente. A1-11; sin equivalente A2 específico.
+- **8230 — Big Data empresarial:** **histórica D**. El 8,81 % corresponde al periodo 2017 para empresas de 10 o más empleados, no a 2019 como decía el original. A1-71/A2-III-15.
+
+Fuentes: [Constitución, art. 62.g](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229); [Ley 3/2015, art. 1.2](https://www.boe.es/buscar/act.php?id=BOE-A-2015-3444); TJUE, [casos fundamentales](https://curia.europa.eu/site/jcms/qua1_5960/en/fundamental-cases-at-the-court-of-justice); [Ley 9/2017, art. 82](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902); INE, [tabla de análisis de Big Data](https://ine.es/jaxiPx/Tabla.htm?L=0&tpx=32838). Cotejo Academy: bloques 1, 2, 5 y 34 en Drive y convocatorias A1/A2 vigentes.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.225 revisadas** (1.551 vigentes, 5.944 corregidas y 601 históricas), 129 pendientes y **3.898 sin revisar**; errores estructurales: 0.
