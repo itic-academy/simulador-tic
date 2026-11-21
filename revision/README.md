@@ -21891,3 +21891,17 @@ Revisión individual de las preguntas 8216–8220. Se fechó la función del mon
 Fuentes: Cisco, [Token Ring Troubleshooting](https://www.cisco.com/en/US/docs/internetworking/troubleshooting/guide/tr1906.html) e [IBM Research](https://research.ibm.com/publications/architecture-and-design-of-a-reliable-token-ring-network); W3C [Push API](https://www.w3.org/TR/push-api/); NIST, [The Server Farms](https://csrc.nist.gov/files/pubs/conference/1998/10/08/proceedings-of-the-21st-nissc-1998/final/docs/paperd2.pdf) e IBM sobre balanceo; IETF [RFC 5321](https://www.rfc-editor.org/rfc/rfc5321.html), [RFC 854](https://www.rfc-editor.org/rfc/rfc854.html), [RFC 4253](https://www.rfc-editor.org/rfc/rfc4253.html) y [RFC 4291](https://www.rfc-editor.org/rfc/rfc4291.html). Clasificación cotejada con [A1 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938), [A2 2025](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262) y los bloques Academy 42, 30, tema 119 y 43 disponibles en Drive.
 
 Ejecutados inventario y verificador: 12.123 preguntas válidas; **8.215 revisadas individualmente** (1.550 vigentes, 5.938 corregidas y 598 históricas); **129 pendientes documentadas**; **3.908 sin revisión individual**; errores estructurales: 0.
+
+## Lote 1584 — 21 de noviembre de 2026
+
+Revisión individual de 8221–8225. Se fechó la asociación LMDS–26 GHz frente al uso actual más amplio; se verificaron los relays SMTP; se trató 802.11g como contenido histórico; se precisó la naturaleza de CableLabs; y se retiró una jerarquía de seguridad basada solo en topología. El [registro 1584](cambios-lote-1584.json) conserva los originales.
+
+- **8221 — 26 GHz y LMDS:** **histórica B**. IR-14 (2005) vinculaba LMDS/FWA con 24,5–26,5 GHz; el CNAF actual contempla un marco más amplio para banda ancha/5G. A1-108/A2-IV-11.
+- **8222 — SMTP:** **corregida D**. RFC 5321 permite entrega directa o una serie de relays/gateways; no exige una única conexión original–final. A1-115/A2-II-8.
+- **8223 — 802.11g:** **histórica C**. En 2,4 GHz alcanzó 54 Mbit/s y conservó compatibilidad con 802.11b de 11 Mbit/s; la enmienda fue integrada en revisiones posteriores. A1-108/A2-IV-11.
+- **8224 — CableLabs:** **corregida C**. Es una organización de I+D sin ánimo de lucro sustentada por operadores miembros e impulsora de DOCSIS, no un regulador ni un fabricante único. A1-112/A2-IV-9.
+- **8225 — topología y seguridad:** **corregida D**. Bus, anillo o estrella no determinan por sí solos la seguridad; importan controles, protocolos, segmentación, configuración y amenazas. A1-118/A2-IV-8.
+
+Fuentes: BOE [IR-14 de 2005](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2005-21020) y [CNAF UN-92](https://www.boe.es/buscar/doc.php?id=BOE-A-2023-14422); IETF [RFC 5321](https://www.rfc-editor.org/rfc/rfc5321.html); IEEE, [802.11g](https://technav.ieee.org/topic/ieee-80211g-standard/); CableLabs, [evolución DOCSIS](https://www.cablelabs.com/blog/docsis-technology-evolution); NIST [SP 800-207](https://csrc.nist.gov/pubs/sp/800/207/final). Cotejo curricular: Academy bloques 46, 43 y 42 en Drive; convocatorias [A1](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938) y [A2](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262).
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.220 revisadas** (1.550 vigentes, 5.941 corregidas, 600 históricas), 129 pendientes y **3.903 sin revisar**; errores estructurales: 0.

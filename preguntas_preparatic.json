@@ -439226,71 +439226,290 @@
       "id": 8221,
       "bloque": 0,
       "tema": 0,
-      "texto": "La banda de 26 GHz se utiliza para:",
+      "texto": "En el contexto histórico de la interfaz radioeléctrica española IR-14 de 2005, ¿qué tecnología de acceso inalámbrico fijo se asoció a la banda de 24,5–26,5 GHz?",
       "opciones": [
         "UMTS.",
-        "LMDS.",
-        "WiFi.",
+        "LMDS/FWA.",
+        "Wi‑Fi.",
         "Bluetooth."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Histórica B. La interfaz IR-14 de 2005 se refería expresamente a LMDS/FWA en 24,5–26,5 GHz. Se fecha el enunciado porque el marco actual de la banda de 26 GHz es más amplio y está armonizado también para sistemas terrenales de banda ancha/5G; no es hoy una banda exclusiva de LMDS. Cotejo curricular: bloque 46 Redes inalámbricas; acceso fijo y espectro.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 46 Redes inalámbricas; acceso fijo y espectro",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "26 GHz",
+        "LMDS",
+        "FWA",
+        "5G",
+        "espectro",
+        "histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-21",
+        "fuentes": [
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2005-21020",
+            "referencia": "Resolución de 22-11-2005: interfaz IR-14 para sistemas LMDS/FWA en 24,5–26,5 GHz."
+          },
+          {
+            "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-14422",
+            "referencia": "CNAF UN-92 actualizado: 24,25–27,5 GHz se destina de forma no exclusiva a sistemas terrenales de comunicaciones electrónicas de banda ancha, en el marco armonizado europeo."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 46 Redes inalámbricas; acceso fijo y espectro."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-IV-11."
+          }
+        ],
+        "observaciones": "Histórica B. La interfaz IR-14 de 2005 se refería expresamente a LMDS/FWA en 24,5–26,5 GHz. Se fecha el enunciado porque el marco actual de la banda de 26 GHz es más amplio y está armonizado también para sistemas terrenales de banda ancha/5G; no es hoy una banda exclusiva de LMDS. Cotejo curricular: bloque 46 Redes inalámbricas; acceso fijo y espectro."
+      }
     },
     {
       "id": 8222,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la opción incorrecta respecto a SMTP:",
+      "texto": "Según RFC 5321, ¿qué afirmación sobre el transporte SMTP es incorrecta?",
       "opciones": [
-        "SMTP es capaz de transportar correo a través de múltiples redes: entre nodos conectados por TCP en Internet, entre nodos conectados en una Intranet TCP/IP aislados por un cortafuegos, o entre nodos en un entorno LAN o WAN que estén usando un protocolo de nivel de transporte distinto a TCP.",
-        "Usando SMTP, un proceso puede transferir correo a otro proceso en la misma red o a otra red mediante un proceso gateway accesible en las dos redes.",
-        "En SMTP un mensaje de correo puede pasar por una serie de nodos gateway intermedios en su camino desde el emisor al receptor último, sirviéndose de mecanismos para decidir el siguiente salto como el sistema de resolución de nombres de dominio de Internet.",
-        "En SMTP la transferencia de mensaje ocurre siempre en una conexión única entre el emisor SMTP y el receptor final SMTP."
+        "SMTP permite transportar correo entre redes mediante relays o gateways.",
+        "Un relay recibe correo como servidor y después actúa como cliente hacia otro servidor.",
+        "Los registros DNS MX ayudan a identificar el siguiente destino SMTP apropiado.",
+        "Todo mensaje se transfiere siempre mediante una única conexión directa entre el emisor original y el receptor final."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Corregida D. SMTP puede entregar directamente o mediante una serie de relays/gateways, cada uno con su propia transferencia. Por ello no existe la obligación de una única conexión extremo a extremo entre el emisor original y el servidor final. Cotejo curricular: bloque 43 Protocolos; SMTP.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 43 Protocolos; SMTP",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "SMTP",
+        "relay",
+        "gateway",
+        "MX",
+        "correo electrónico"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-21",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+            "referencia": "IETF RFC 5321 §§2.3.10, 3.6 y 5: SMTP admite relays y gateways; un mensaje puede recorrer varios saltos y los registros MX ayudan a localizar el siguiente servidor."
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 43 Protocolos; SMTP."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-115."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-II-8."
+          }
+        ],
+        "observaciones": "Corregida D. SMTP puede entregar directamente o mediante una serie de relays/gateways, cada uno con su propia transferencia. Por ello no existe la obligación de una única conexión extremo a extremo entre el emisor original y el servidor final. Cotejo curricular: bloque 43 Protocolos; SMTP."
+      }
     },
     {
       "id": 8223,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué estándar WIFI es el que soporta simultáneamente las velocidades de 11Mbps y 54Mbps?",
+      "texto": "Históricamente, ¿qué enmienda IEEE 802.11 en 2,4 GHz alcanzaba 54 Mbit/s y mantenía compatibilidad con equipos 802.11b de hasta 11 Mbit/s?",
       "opciones": [
-        "802.11a",
-        "802.11b",
-        "802.11g",
-        "802.11x"
+        "IEEE 802.11a.",
+        "IEEE 802.11b.",
+        "IEEE 802.11g.",
+        "IEEE 802.1X."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Histórica C. 802.11g llevó OFDM y hasta 54 Mbit/s a 2,4 GHz y mantuvo compatibilidad con 802.11b. 802.1X es control de acceso, no una variante PHY Wi‑Fi. La enmienda quedó integrada en revisiones posteriores del estándar. Cotejo curricular: bloque 46 Redes inalámbricas; IEEE 802.11.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-11"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 46 Redes inalámbricas; IEEE 802.11",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "IEEE 802.11g",
+        "Wi-Fi",
+        "54 Mbit/s",
+        "802.11b",
+        "histórica"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-21",
+        "fuentes": [
+          {
+            "url": "https://technav.ieee.org/topic/ieee-80211g-standard/",
+            "referencia": "IEEE Technology Navigator: 802.11g extendió 802.11b en 2,4 GHz hasta 54 Mbit/s y mantuvo compatibilidad con equipos 802.11b."
+          },
+          {
+            "url": "https://standards.ieee.org/ieee/802.11g/3092/",
+            "referencia": "IEEE 802.11g-2003 figura como enmienda histórica, posteriormente incorporada y sustituida por revisiones de 802.11."
+          },
+          {
+            "url": "https://drive.google.com/file/d/18FstfKb36qYtXt3fBySXcZ1D5ZeeUWSu/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 46 Redes inalámbricas; IEEE 802.11."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-108."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-IV-11."
+          }
+        ],
+        "observaciones": "Histórica C. 802.11g llevó OFDM y hasta 54 Mbit/s a 2,4 GHz y mantuvo compatibilidad con 802.11b. 802.1X es control de acceso, no una variante PHY Wi‑Fi. La enmienda quedó integrada en revisiones posteriores del estándar. Cotejo curricular: bloque 46 Redes inalámbricas; IEEE 802.11."
+      }
     },
     {
       "id": 8224,
       "bloque": 0,
       "tema": 0,
-      "texto": "CableLabs es:",
+      "texto": "¿Qué es CableLabs en relación con la industria del cable y DOCSIS?",
       "opciones": [
-        "El grupo creador del estándar DOCSIS",
-        "La empresa principal que conforma MCNS",
-        "Un consorcio formado por operadores de cable",
-        "Ninguno de los anteriores"
+        "Un fabricante único de cablemódems.",
+        "Una empresa operadora que absorbe a todas las demás.",
+        "Una organización de I+D sin ánimo de lucro fundada y sostenida por operadores miembros, impulsora de las especificaciones DOCSIS.",
+        "Un organismo regulador gubernamental de espectro."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Corregida C. CableLabs es una organización/consorcio de I+D de la industria, con operadores de cable como miembros, que desarrolla y mantiene tecnologías y especificaciones como DOCSIS. No es un regulador ni un fabricante u operador único. Cotejo curricular: bloque 42 Redes; redes de cable y DOCSIS.",
+      "clasificacion": {
+        "A1": [
+          "A1-112"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes; redes de cable y DOCSIS",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "CableLabs",
+        "DOCSIS",
+        "operadores de cable",
+        "consorcio",
+        "MCNS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-21",
+        "fuentes": [
+          {
+            "url": "https://www.cablelabs.com/about-us",
+            "referencia": "CableLabs se presenta como organización de I+D sin ánimo de lucro fundada por operadores miembros de la industria del cable."
+          },
+          {
+            "url": "https://www.cablelabs.com/blog/docsis-technology-evolution",
+            "referencia": "CableLabs describe la evolución de DOCSIS desarrollada con un ecosistema de operadores y proveedores."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 42 Redes; redes de cable y DOCSIS."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-112."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-IV-9."
+          }
+        ],
+        "observaciones": "Corregida C. CableLabs es una organización/consorcio de I+D de la industria, con operadores de cable como miembros, que desarrolla y mantiene tecnologías y especificaciones como DOCSIS. No es un regulador ni un fabricante u operador único. Cotejo curricular: bloque 42 Redes; redes de cable y DOCSIS."
+      }
     },
     {
       "id": 8225,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes topologías tiene un mayor nivel de seguridad?",
+      "texto": "Respecto a bus, anillo y estrella, ¿qué afirmación sobre seguridad es técnicamente correcta?",
       "opciones": [
-        "Bus",
-        "Anillo",
-        "Estrella",
-        "Las 3 anteriores topologías tienen un nivel de seguridad similar"
+        "La topología bus es siempre la más segura.",
+        "La topología anillo es siempre la más segura.",
+        "La topología estrella es siempre la más segura por su forma física.",
+        "No puede deducirse un nivel de seguridad solo de la topología; depende de protocolos, controles, configuración, segmentación y amenazas."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 3,
+      "comentarios": "Corregida D. La topología influye en operación, puntos de fallo y posibilidades de control, pero no determina por sí sola la seguridad. Una estrella puede facilitar control centralizado y aun así ser insegura si los controles son deficientes; no existe una jerarquía universal bus/anillo/estrella. Cotejo curricular: bloque 42 Redes; topologías y controles.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": "ITIC Academy, bloque 42 Redes; topologías y controles",
+        "estado": "revisada",
+        "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+      },
+      "etiquetas": [
+        "topología de red",
+        "seguridad",
+        "estrella",
+        "bus",
+        "anillo",
+        "controles"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-21",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+            "referencia": "NIST SP 800-207: la ubicación o topología de red no otorga confianza implícita; la seguridad depende de autenticación, autorización, segmentación, configuración y monitorización."
+          },
+          {
+            "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+            "referencia": "Cotejo curricular ITIC Academy: bloque 42 Redes; topologías y controles."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+            "referencia": "Convocatoria A1: A1-118."
+          },
+          {
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+            "referencia": "Convocatoria A2: A2-IV-8."
+          }
+        ],
+        "observaciones": "Corregida D. La topología influye en operación, puntos de fallo y posibilidades de control, pero no determina por sí sola la seguridad. Una estrella puede facilitar control centralizado y aun así ser insegura si los controles son deficientes; no existe una jerarquía universal bus/anillo/estrella. Cotejo curricular: bloque 42 Redes; topologías y controles."
+      }
     },
     {
       "id": 8226,
