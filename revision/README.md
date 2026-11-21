@@ -22171,3 +22171,17 @@ Revisión individual de 8316–8320. Se contrastaron la categorización ENS, los
 Fuentes: RD 311/2022 consolidado en BOE; especificación OMG UML 2.5.1; NISTIR 8202 y glosario NIST CSRC; recomendación ITU-T X.800. Cotejo Academy: bloques 22, 38, tema 85 y bloque 48 en Drive, además de las convocatorias A1/A2 vigentes.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.315 revisadas** (1.572 vigentes, 5.973 corregidas y 641 históricas), 129 pendientes y **3.808 sin revisar**; errores estructurales: 0.
+
+## Lote 1604 — 21 de noviembre de 2026
+
+Revisión individual de 8321–8325. Se verificaron el perfil de Jefe de Proyecto de MÉTRICA v3, frameworks PHP, la arquitectura histórica TESTA II, los objetos de negocio en tres capas y la tramitación urgente del PRTR. Se acotaron tres enunciados cuyo marco original era incompleto o dependiente de terminología histórica. El [registro 1604](cambios-lote-1604.json) conserva originales y trazabilidad.
+
+- **8321:** **histórica D**. El Jefe de Proyecto estima esfuerzo, selecciona estrategia, estructura el proyecto y fija hitos y entregas en MÉTRICA v3. A1-35/95; A2-III-2.
+- **8322:** **vigente D**. Laravel, Symfony y CakePHP son frameworks PHP; Quarkus es un framework Java. A1-65/68; A2-III-12.
+- **8323:** **histórica C**. TESTA II se componía de Local Domain, EuroDomain y EuroGate; EuroNet no pertenecía a esa terna. A1-120; A2-I-10.
+- **8324:** **corregida B**. Los objetos que representan entidades y comportamiento del dominio en la capa intermedia tradicional son objetos de negocio. A1-119; A2-II-6.
+- **8325:** **corregida B**. El artículo 50.1.a permite reducir plazos del procedimiento abierto en contratos PRTR con urgencia justificada, respetando el mínimo de quince días para proposiciones. A1-11.
+
+Fuentes: documentación oficial MÉTRICA v3; sitios oficiales de Quarkus, Laravel, Symfony y CakePHP; documentación de TESTA II y Comisión Europea; Microsoft Learn sobre arquitectura de tres capas; RDL 36/2020 consolidado en BOE. Cotejo Academy: bloques 38, 30, 49 y 05 en Drive, y convocatorias A1/A2 vigentes.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.320 revisadas** (1.573 vigentes, 5.975 corregidas y 643 históricas), 129 pendientes y **3.803 sin revisar**; errores estructurales: 0.
