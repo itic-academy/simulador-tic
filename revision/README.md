@@ -22101,3 +22101,17 @@ Revisión individual de 8291–8295. Se verificaron la relación PSI–EVS, el a
 Fuentes: documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/documentacion/metodologias-guias). Cotejo Academy: bloque 38 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.290 revisadas** (1.559 vigentes, 5.968 corregidas y 634 históricas), 129 pendientes y **3.833 sin revisar**; errores estructurales: 0.
+
+## Lote 1599 — 21 de noviembre de 2026
+
+Revisión individual de 8296–8300. Se verificaron la planificación de proyectos, las actividades y perspectiva de PSI, el inicio de la arquitectura tecnológica y el alcance público de MÉTRICA v3. El [registro 1599](cambios-lote-1599.json) conserva originales y trazabilidad.
+
+- **8296:** **histórica B**. La coordinación continuada de agentes corresponde a seguimiento y control, no a Planificación. A1-95; A2-III-2.
+- **8297:** **histórica C**. PSI no contiene una actividad denominada Definición de un Plan de Riesgo. A1-95; A2-III-2.
+- **8298:** **histórica D**. La perspectiva de PSI es estratégica y operativa, no meramente tecnológica. A1-95; A2-III-2.
+- **8299:** **histórica A**. PSI 7 inicia la arquitectura tecnológica de alto nivel; DSI la concreta por sistema. A1-42/95; A2-III-2.
+- **8300:** **histórica B**. MÉTRICA v3 puede utilizarse fuera de la Administración; su documentación es pública. A1-95; A2-III-2.
+
+Fuentes: documentación y [biblioteca oficiales de Administración electrónica](https://administracionelectronica.gob.es/actualidad/pae-biblioteca/pae-publicacionespropias/monografias-administracion-electronica) sobre MÉTRICA v3. Cotejo Academy: bloque 38 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.295 revisadas** (1.559 vigentes, 5.968 corregidas y 639 históricas), 129 pendientes y **3.828 sin revisar**; errores estructurales: 0.
