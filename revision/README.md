@@ -22073,3 +22073,17 @@ Revisión individual de 8281–8285. Se verificaron el inicio de un desarrollo e
 Fuentes: documentación y [biblioteca oficiales de Administración electrónica](https://administracionelectronica.gob.es/actualidad/pae-biblioteca/pae-publicacionespropias/monografias-administracion-electronica) sobre MÉTRICA v3. Cotejo Academy: bloque 38 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.280 revisadas** (1.559 vigentes, 5.966 corregidas y 626 históricas), 129 pendientes y **3.843 sin revisar**; errores estructurales: 0.
+
+## Lote 1597 — 21 de noviembre de 2026
+
+Revisión individual de 8286–8290. Se verificaron los elementos y conexiones de un DFD y las diez actividades del DSI estructurado; se corrigieron los perfiles de MÉTRICA v3 y una pregunta defectuosa sobre problemas del análisis de requisitos. El [registro 1597](cambios-lote-1597.json) conserva originales y trazabilidad.
+
+- **8286:** **histórica B**. Un DFD usa entidades externas, procesos, almacenes y flujos de datos. A1-90/95; A2-III-2.
+- **8287:** **histórica D**. Consulta, actualización y diálogo son conexiones proceso-almacén; sincronización no lo es. A1-90/95; A2-III-2.
+- **8288:** **corregida B**. MÉTRICA v3 contempla ocho perfiles generales, ausentes de las opciones originales. A1-95; A2-III-2.
+- **8289:** **corregida D**. Elicitación, complejidad y cambio son retos reales; no cabe presumir requisitos completos e inmutables. A1-88; A2-III-3.
+- **8290:** **histórica B**. El DSI estructurado contiene diez actividades; DSI 3 y 4 son propias del enfoque orientado a objetos. A1-95; A2-III-2.
+
+Fuentes: documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/documentacion/metodologias-guias), su volumen de DSI e IEEE Computer Society, SWEBOK v4. Cotejo Academy: bloque 38 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.285 revisadas** (1.559 vigentes, 5.968 corregidas y 629 históricas), 129 pendientes y **3.838 sin revisar**; errores estructurales: 0.
