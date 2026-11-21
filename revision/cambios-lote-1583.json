@@ -1,0 +1,386 @@
+{
+  "fecha": "2026-11-21",
+  "alcance": "IDs 8216–8220; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 8216,
+      "original": {
+        "id": 8216,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En Token Ring, un monitor activo:",
+        "opciones": [
+          "Transmite mensajes de monitorización a cada servidor en el anillo para facilitar el balance de carga entre ellos",
+          "Espera por los mensajes de error, entonces envía mensajes de notificación para limitar (o reordenar) el tráfico",
+          "Escucha la prioridad del testigo y cuando se detecta, reserva la prioridad para la estación emisora",
+          "Elimina las tramas no recogidas y es el punto central de información de 'timing' para un anillo"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8216,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el Token Ring clásico IEEE 802.5, ¿qué funciones correspondían al monitor activo?",
+        "opciones": [
+          "Balancear carga entre servidores del anillo.",
+          "Esperar únicamente mensajes de error para reordenar tráfico.",
+          "Reservar la prioridad del testigo para la estación emisora.",
+          "Proporcionar la referencia de temporización del anillo y eliminar tramas que circulasen sin ser retiradas."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Histórica D. El monitor activo mantenía funciones de temporización y recuperación del anillo, incluida la eliminación de tramas huérfanas o persistentes. No era un balanceador de servidores ni un planificador general del tráfico. Se fecha porque Token Ring/IEEE 802.5 es tecnología retirada. Cotejo curricular: bloque 42 Redes; Token Ring histórico.",
+        "clasificacion": {
+          "A1": [
+            "A1-118"
+          ],
+          "A2": [],
+          "bloque_academia": "ITIC Academy, bloque 42 Redes; Token Ring histórico",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "Token Ring",
+          "monitor activo",
+          "timing",
+          "tramas huérfanas",
+          "IEEE 802.5",
+          "histórica"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-21",
+          "fuentes": [
+            {
+              "url": "https://www.cisco.com/en/US/docs/internetworking/troubleshooting/guide/tr1906.html",
+              "referencia": "Cisco Internetworking Troubleshooting Guide, Token Ring: describe al monitor activo, la temporización del anillo y la retirada de tramas huérfanas."
+            },
+            {
+              "url": "https://research.ibm.com/publications/architecture-and-design-of-a-reliable-token-ring-network",
+              "referencia": "IBM Research describe la función de monitor para recuperar errores del protocolo de acceso Token Ring."
+            },
+            {
+              "url": "https://drive.google.com/file/d/12Yp-woyL0LxoCD7MZhhQgd6Yf2UIVggH/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 42 Redes; Token Ring histórico."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-118."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: sin asignación."
+            }
+          ],
+          "observaciones": "Histórica D. El monitor activo mantenía funciones de temporización y recuperación del anillo, incluida la eliminación de tramas huérfanas o persistentes. No era un balanceador de servidores ni un planificador general del tráfico. Se fecha porque Token Ring/IEEE 802.5 es tecnología retirada. Cotejo curricular: bloque 42 Redes; Token Ring histórico."
+        }
+      }
+    },
+    {
+      "id": 8217,
+      "original": {
+        "id": 8217,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "La tecnología PUSH permite:",
+        "opciones": [
+          "Proteger la información mediante cifrado de la misma",
+          "Establecer una conexión con un ordenador remoto",
+          "Encaminar los datagramas a su destino",
+          "Envío de información del servidor al cliente, sin requerir petición expresa"
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8217,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En el contexto de Web Push, ¿qué permite la tecnología push una vez que la aplicación se ha suscrito y cuenta con los permisos necesarios?",
+        "opciones": [
+          "Cifrar por sí sola cualquier información almacenada.",
+          "Abrir una sesión remota de terminal.",
+          "Encaminar datagramas IP entre redes.",
+          "Entregar al cliente mensajes iniciados por el servidor sin que cada entrega requiera una petición de contenido del cliente."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. Web Push permite entregas asíncronas iniciadas por el servidor a una suscripción del cliente. No significa envío sin consentimiento: requiere suscripción, permisos y mecanismos de seguridad; tampoco sustituye cifrado general, acceso remoto o encaminamiento. Cotejo curricular: bloque 30 Tecnologías web; comunicación push.",
+        "clasificacion": {
+          "A1": [
+            "A1-77"
+          ],
+          "A2": [
+            "A2-II-16",
+            "A2-III-12"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 30 Tecnologías web; comunicación push",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "Push API",
+          "Web Push",
+          "servidor",
+          "cliente",
+          "suscripción"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-21",
+          "fuentes": [
+            {
+              "url": "https://www.w3.org/TR/push-api/",
+              "referencia": "W3C Push API: permite que un servidor de aplicación entregue mensajes a una aplicación web mediante un servicio push y una suscripción."
+            },
+            {
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Push_API",
+              "referencia": "MDN documenta que una aplicación suscrita puede recibir mensajes enviados por el servidor incluso sin estar en primer plano."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1UsdnGeUYNrLZJD3Dn6Jbrj6UhuSfLrws/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 30 Tecnologías web; comunicación push."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-77."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-II-16, A2-III-12."
+            }
+          ],
+          "observaciones": "Corregida D. Web Push permite entregas asíncronas iniciadas por el servidor a una suscripción del cliente. No significa envío sin consentimiento: requiere suscripción, permisos y mecanismos de seguridad; tampoco sustituye cifrado general, acceso remoto o encaminamiento. Cotejo curricular: bloque 30 Tecnologías web; comunicación push."
+        }
+      }
+    },
+    {
+      "id": 8218,
+      "original": {
+        "id": 8218,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una granja de servidores:",
+        "opciones": [
+          "Los servidores suelen estar en localizaciones distintas.",
+          "Los servidores se reparten las tareas que podría ejecutar un solo servidor.",
+          "Suele haber equipos de respaldo (backup).",
+          "Ninguna de las anteriores."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8218,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué afirmación describe correctamente una granja de servidores?",
+        "opciones": [
+          "Exige que todos los servidores estén en ciudades distintas.",
+          "Agrupa servidores que pueden repartirse la carga de servicios.",
+          "Puede incorporar redundancia y equipos de respaldo para aumentar disponibilidad.",
+          "Son correctas B y C."
+        ],
+        "respuesta_correcta": 3,
+        "comentarios": "Corregida D. Una granja agrupa servidores para prestar servicios, repartir carga y, según el diseño, aportar redundancia o respaldo. La dispersión geográfica puede existir en arquitecturas concretas, pero no define por sí sola una granja. La pregunta original admitía simultáneamente B y C. Cotejo curricular: tema 119 Granjas de servidores y balanceo.",
+        "clasificacion": {
+          "A1": [
+            "A1-53",
+            "A1-119"
+          ],
+          "A2": [
+            "A2-IV-6"
+          ],
+          "bloque_academia": "ITIC Academy, tema 119 Granjas de servidores y balanceo",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "granja de servidores",
+          "balanceo de carga",
+          "redundancia",
+          "alta disponibilidad",
+          "servidores"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-21",
+          "fuentes": [
+            {
+              "url": "https://csrc.nist.gov/files/pubs/conference/1998/10/08/proceedings-of-the-21st-nissc-1998/final/docs/paperd2.pdf",
+              "referencia": "NIST, The Server Farms: describe granjas como segmentos controlados que alojan servidores y concentran servicios/tráfico."
+            },
+            {
+              "url": "https://www.ibm.com/docs/en/power10/9786-42H?topic=balancing-load",
+              "referencia": "IBM Documentation: el balanceo distribuye solicitudes o trabajo entre varios servidores y puede combinarse con alta disponibilidad."
+            },
+            {
+              "url": "https://drive.google.com/file/d/13GD1KKUpJAcvUdMGjI244Hy3WFQE-PA8/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: tema 119 Granjas de servidores y balanceo."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-53, A1-119."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-IV-6."
+            }
+          ],
+          "observaciones": "Corregida D. Una granja agrupa servidores para prestar servicios, repartir carga y, según el diseño, aportar redundancia o respaldo. La dispersión geográfica puede existir en arquitecturas concretas, pero no define por sí sola una granja. La pregunta original admitía simultáneamente B y C. Cotejo curricular: tema 119 Granjas de servidores y balanceo."
+        }
+      }
+    },
+    {
+      "id": 8219,
+      "original": {
+        "id": 8219,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Si ejecutamos el comando telnet para acceder a un servidor que tenga configurado lo necesario, ¿Cuál de las afirmaciones es correcta?",
+        "opciones": [
+          "Accediendo al puerto 25 (smtp) sería posible enviar e-mails.",
+          "Accediendo al puerto 22 (ssh) es posible securizar la comunicación.",
+          "Accediendo a cualquier puerto diferente del 23 el servidor reconoce el protocolo y redirige la comunicación al puerto 23(telnet)."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8219,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Al usar un cliente telnet como herramienta de diagnóstico para conectar al puerto TCP 25 de un servidor SMTP, ¿qué afirmación es correcta?",
+        "opciones": [
+          "Puede abrirse una conversación SMTP en texto y emitir comandos si el servidor lo permite; la aceptación o entrega del correo dependerá de sus políticas.",
+          "Conectar al puerto 22 convierte Telnet automáticamente en una sesión SSH cifrada.",
+          "Cualquier puerto distinto del 23 redirige automáticamente al servicio Telnet.",
+          "El cliente telnet cifra por defecto la conversación SMTP."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. Un cliente telnet puede abrir una conexión TCP al puerto 25 y permitir una conversación SMTP manual, si el servidor la admite. Esto no garantiza relay ni entrega: autenticación, STARTTLS y políticas pueden limitarla. SSH es otro protocolo y no se obtiene cambiando de puerto. Cotejo curricular: bloque 43 Protocolos; Telnet, SMTP y SSH.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 Protocolos; Telnet, SMTP y SSH",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "Telnet",
+          "SMTP",
+          "TCP 25",
+          "SSH",
+          "puertos"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-21",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+              "referencia": "IETF RFC 5321: SMTP usa TCP y el puerto 25 para recepción/relay entre servidores; el servidor decide qué comandos y mensajes acepta."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc854.html",
+              "referencia": "IETF RFC 854 define el protocolo Telnet; indicar otro puerto a un cliente telnet solo abre una conexión TCP y no convierte el servicio remoto en Telnet."
+            },
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4253.html",
+              "referencia": "IETF RFC 4253 define el transporte SSH y su negociación criptográfica, distinta del protocolo Telnet."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 43 Protocolos; Telnet, SMTP y SSH."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-115."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-II-8."
+            }
+          ],
+          "observaciones": "Corregida A. Un cliente telnet puede abrir una conexión TCP al puerto 25 y permitir una conversación SMTP manual, si el servidor la admite. Esto no garantiza relay ni entrega: autenticación, STARTTLS y políticas pueden limitarla. SSH es otro protocolo y no se obtiene cambiando de puerto. Cotejo curricular: bloque 43 Protocolos; Telnet, SMTP y SSH."
+        }
+      }
+    },
+    {
+      "id": 8220,
+      "original": {
+        "id": 8220,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En IPv6, los tipos de direcciones son:",
+        "opciones": [
+          "Multicast, Unicast y Anycast",
+          "Multicast y Unicast",
+          "Broadcast y Unicast",
+          "Broadcast, Unicast y Anycast"
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 8220,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué tipos de direcciones define la arquitectura de direccionamiento IPv6?",
+        "opciones": [
+          "Unicast, anycast y multicast.",
+          "Solo unicast y multicast.",
+          "Broadcast y unicast.",
+          "Broadcast, unicast y anycast."
+        ],
+        "respuesta_correcta": 0,
+        "comentarios": "Corregida A. RFC 4291 define unicast, anycast y multicast. IPv6 no tiene direcciones broadcast; sus funciones se sustituyen mediante multicast en los grupos apropiados. Cotejo curricular: bloque 43 Protocolos; direccionamiento IPv6.",
+        "clasificacion": {
+          "A1": [
+            "A1-115"
+          ],
+          "A2": [
+            "A2-II-8"
+          ],
+          "bloque_academia": "ITIC Academy, bloque 43 Protocolos; direccionamiento IPv6",
+          "estado": "revisada",
+          "nota": "Academia para encaje; fuentes primarias y documentación oficial para contenido."
+        },
+        "etiquetas": [
+          "IPv6",
+          "unicast",
+          "anycast",
+          "multicast",
+          "broadcast"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-21",
+          "fuentes": [
+            {
+              "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+              "referencia": "IETF RFC 4291 §2: IPv6 reconoce direcciones unicast, anycast y multicast y no dispone de direcciones broadcast."
+            },
+            {
+              "url": "https://drive.google.com/file/d/1Nbz8x6yaXWFh_4_d1emVOYOIpRj_xiLw/view?usp=drivesdk",
+              "referencia": "Cotejo curricular ITIC Academy: bloque 43 Protocolos; direccionamiento IPv6."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-25938",
+              "referencia": "Convocatoria A1: A1-115."
+            },
+            {
+              "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+              "referencia": "Convocatoria A2: A2-II-8."
+            }
+          ],
+          "observaciones": "Corregida A. RFC 4291 define unicast, anycast y multicast. IPv6 no tiene direcciones broadcast; sus funciones se sustituyen mediante multicast en los grupos apropiados. Cotejo curricular: bloque 43 Protocolos; direccionamiento IPv6."
+        }
+      }
+    }
+  ]
+}
