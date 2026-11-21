@@ -22213,3 +22213,17 @@ Revisión individual de 8331–8335. Se verificaron la biometría del DNIe, la a
 Fuentes: portal oficial DNIe; RD 311/2022 consolidado en BOE; modelo de referencia ANSI/SPARC publicado por NBS; RFC 894 y RFC 4638; documentación oficial MÉTRICA v3. Cotejo Academy: bloques 36, 22, 29, 42 y 38 en Drive, y convocatorias A1/A2 vigentes.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.330 revisadas** (1.577 vigentes, 5.980 corregidas y 644 históricas), 129 pendientes y **3.793 sin revisar**; errores estructurales: 0.
+
+## Lote 1607 — 21 de noviembre de 2026
+
+Revisión individual de 8336–8340. Se contrastaron la tipología de servicios documentales, las subcapas IEEE 802, el cálculo hexadecimal, ROLAP y los métodos de `HttpServlet`. Se corrigió una errata y se documentaron con fuentes técnicas primarias las respuestas. El [registro 1607](cambios-lote-1607.json) conserva originales y trazabilidad.
+
+- **8336:** **vigente B**. Los directorios contienen referencias, a veces extractos, de información no publicada. A1-76; A2-II-16.
+- **8337:** **vigente A**. MAC abstrae ante el nivel superior las particularidades de acceso de las distintas capas físicas. A1-118; A2-II-8/IV-8.
+- **8338:** **vigente C**. `(0xFFFF)² = 0xFFFE0001`. A1-52; A2-II-1.
+- **8339:** **vigente B**. ROLAP no suele superar a MOLAP en rapidez de respuesta; consulta almacenamiento relacional. A1-75; A2-II-4/III-15.
+- **8340:** **corregida D**. `HttpServlet` define `doGet`, `doDelete` y `doPut`; se corrige una errata gramatical. A1-67; A2-III-10.
+
+Fuentes: Library of Congress; IEEE SA; NIST; Microsoft Learn; especificación y API oficiales de Jakarta Servlet. Cotejo Academy: bloques 29, 42, 26, 34 y 38 en Drive, además de convocatorias A1/A2 vigentes.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.335 revisadas** (1.581 vigentes, 5.981 corregidas y 644 históricas), 129 pendientes y **3.788 sin revisar**; errores estructurales: 0.
