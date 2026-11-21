@@ -21919,3 +21919,17 @@ Revisión individual de 8226–8230 con Constitución, Ley 3/2015, jurisprudenci
 Fuentes: [Constitución, art. 62.g](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229); [Ley 3/2015, art. 1.2](https://www.boe.es/buscar/act.php?id=BOE-A-2015-3444); TJUE, [casos fundamentales](https://curia.europa.eu/site/jcms/qua1_5960/en/fundamental-cases-at-the-court-of-justice); [Ley 9/2017, art. 82](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902); INE, [tabla de análisis de Big Data](https://ine.es/jaxiPx/Tabla.htm?L=0&tpx=32838). Cotejo Academy: bloques 1, 2, 5 y 34 en Drive y convocatorias A1/A2 vigentes.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.225 revisadas** (1.551 vigentes, 5.944 corregidas y 601 históricas), 129 pendientes y **3.898 sin revisar**; errores estructurales: 0.
+
+## Lote 1586 — 21 de noviembre de 2026
+
+Revisión individual de 8231–8235. Se explicitaron los acrónimos de negociación; se fecharon tres hitos normativos de administración electrónica; se corrigió el umbral de las misiones internacionales en servicios especiales; se precisó la denominación DUE; y se verificó la obligación de designar DPD en autoridades y organismos públicos. El [registro 1586](cambios-lote-1586.json) conserva originales y trazabilidad.
+
+- **8231 — negociación:** **corregida D**. BATNA, ZOPA y MAPAN describen alternativas o espacio de acuerdo; GRID no es uno de esos conceptos. A1-21; sin tema A2 específico.
+- **8232 — marco de administración electrónica:** **histórica D**. Los RD 522/2006, 523/2006 y 1553/2005 corresponden a los tres hitos indicados; el enunciado se formula en pasado. A1-22/A2-I-9.
+- **8233 — servicios especiales:** **vigente B**. El art. 87.1.b TREBEP exige una misión superior a seis meses, no a tres. A1-24/A2-I-8.
+- **8234 — DUE:** **corregida B**. La denominación oficial es Documento Único Electrónico; su origen normativo es anterior a la Ley 14/2013. A1-26/A2-I-9.
+- **8235 — DPD en el sector público:** **vigente B**. El art. 37.1.a RGPD obliga a designarlo, salvo respecto de los tribunales en ejercicio de su función judicial. A1-27/A2-I-7.
+
+Fuentes: BOE, [RD 522/2006](https://www.boe.es/eli/es/rd/2006/04/28/522), [RD 523/2006](https://www.boe.es/eli/es/rd/2006/04/28/523), [RD 1553/2005](https://www.boe.es/eli/es/rd/2005/12/23/1553), [TREBEP](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719) y [RD 682/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-11988); [RGPD, art. 37](https://eur-lex.europa.eu/eli/reg/2016/679/oj/spa); [PAE Electrónico, CIRCE](https://paeelectronico.es/es-es/CreaEmpresaPorTiMismo/Paginas/Circe.aspx); Harvard Program on Negotiation para BATNA y ZOPA. Cotejo Academy: bloques 07, 03 y 08 en Drive y convocatorias A1/A2 vigentes.
+
+Ejecutados los scripts de lote, inventario y verificador: 12.123 válidas; **8.230 revisadas** (1.553 vigentes, 5.946 corregidas y 602 históricas), 129 pendientes y **3.893 sin revisar**; errores estructurales: 0. El inventario no equivale a verificación del contenido pendiente.
