@@ -22031,3 +22031,17 @@ Revisión individual de 8266–8270. Se fechó correctamente P802.1p, se verific
 Fuentes: IEEE 802.1; IEEE Technology Navigator para ATM; UIT-R S.1149-2 y handbook SDH; UIT-T M.3400. Cotejo Academy: bloques 42, 43 y 44 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.265 revisadas** (1.559 vigentes, 5.963 corregidas y 614 históricas), 129 pendientes y **3.858 sin revisar**; errores estructurales: 0.
+
+## Lote 1594 — 21 de noviembre de 2026
+
+Revisión individual de 8271–8275. Se verificó la anchura del bloque DAB clásico; se corrigió el concepto de maqueta virtual; y se documentaron las actividades MSI, la diferenciación de ASI y las interfaces de MÉTRICA v3. El [registro 1594](cambios-lote-1594.json) conserva originales y trazabilidad.
+
+- **8271:** **histórica B**. Un bloque DAB clásico ocupa nominalmente 1,536 MHz. A1-123; A2-IV-15.
+- **8272:** **corregida B**. Una maqueta virtual es un prototipo o representación simulada de la aplicación o de su interfaz, no un emulador de terminal. A1-88/93; A2-III-3/III-9.
+- **8273:** **histórica A**. MSI comprende registro, análisis, preparación de la implementación y seguimiento/evaluación hasta la aceptación. A1-95; A2-III-2.
+- **8274:** **histórica B**. ASI diferencia actividades y productos según el enfoque estructurado u orientado a objetos. A1-90/95; A2-III-2/III-9.
+- **8275:** **histórica D**. Gestión de la Configuración es una de las cuatro interfaces de MÉTRICA v3. A1-95/102; A2-IV-4.
+
+Fuentes: ETSI ETS 300 401 para DAB; documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html); MAGERIT v2. Cotejo Academy: bloques 46 y 38 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.270 revisadas** (1.559 vigentes, 5.964 corregidas y 618 históricas), 129 pendientes y **3.853 sin revisar**; errores estructurales: 0.
