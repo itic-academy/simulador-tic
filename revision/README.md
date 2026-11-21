@@ -22143,3 +22143,17 @@ Revisión individual de 8306–8310. Se corrigió la atribución legal de la res
 Fuentes: LO 3/2018, Ley 9/2017, Ley 40/2015 y Ley 39/2015 consolidadas en BOE. Cotejo Academy: bloques 08 Protección de Datos, 05 Contratación y 03 Actuación Administrativa en Drive, además de convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.305 revisadas** (1.567 vigentes, 5.969 corregidas y 640 históricas), 129 pendientes y **3.818 sin revisar**; errores estructurales: 0.
+
+## Lote 1602 — 21 de noviembre de 2026
+
+Revisión individual de 8311–8315. Se verificaron el plazo legal de conservación de datos, la antigua Comisión de Estrategia TIC, las asociaciones de seguridad IPsec, Mono y la capacidad en la notación de Kendall. Se corrigieron dos formulaciones ambiguas y se acotó expresamente una pregunta al régimen derogado. El [registro 1602](cambios-lote-1602.json) conserva originales y trazabilidad.
+
+- **8311:** **vigente C**. El artículo 5 de la Ley 25/2007 fija doce meses como plazo general, modulable reglamentariamente entre seis meses y dos años. A1-27; A2-I-7.
+- **8312:** **histórica B**. El RD 806/2014 atribuía a la Comisión el impulso de la colaboración con comunidades autónomas y entidades locales; fue derogado por el RD 1125/2024. A1-30; A2-I-10.
+- **8313:** **corregida B**. Una SA IPsec es unidireccional; normalmente se emplean dos para proteger ambos sentidos. A1-125; A2-IV-12.
+- **8314:** **corregida C**. Mono es una implementación libre y multiplataforma de .NET Framework; se evita confundirla con el .NET moderno, que también es abierto. A1-66; A2-III-11.
+- **8315:** **vigente B**. En M/M/3/20, 3 indica los servidores y 20 la capacidad total del sistema, incluyendo espera y servicio. A1-34/35; A2-IV-4.
+
+Fuentes: Ley 25/2007 y Reales Decretos 806/2014 y 1125/2024 en BOE; RFC 4301 y RFC 4303 de IETF; documentación oficial de Microsoft Learn y Mono; NBSIR 75-780 y material de teoría de colas de la Universidad Pontificia Comillas. Cotejo Academy: bloques 08, 03, 48 y 30 en Drive; no se localizó un bloque directo de teoría de colas. Clasificación cotejada con las convocatorias A1/A2 vigentes.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.310 revisadas** (1.569 vigentes, 5.971 corregidas y 641 históricas), 129 pendientes y **3.813 sin revisar**; errores estructurales: 0.
