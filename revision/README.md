@@ -21975,3 +21975,17 @@ Revisión individual de 8246–8250. Se fechó el modelo de JRE de Java SE 8, se
 Fuentes: Oracle [Java SE 8 Technology Guides](https://docs.oracle.com/javase/8/docs/technotes/guides/index.html), [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html) y tutorial de polimorfismo; [Jakarta EE Platform](https://jakarta.ee/specifications/platform/10/jakarta-platform-spec-10.0); [NOAA LiDAR](https://www.ngs.noaa.gov/RESEARCH/RSD/main/lidar/lidar.html), [USGS LiDAR](https://dmsdata.cr.usgs.gov/lidar-monitoring/what-is-lidar) y glosario ráster de USGS. Cotejo Academy: bloques 30, 38 y 34 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.245 revisadas** (1.557 vigentes, 5.955 corregidas y 604 históricas), 129 pendientes y **3.878 sin revisar**; errores estructurales: 0.
+
+## Lote 1590 — 21 de noviembre de 2026
+
+Revisión individual de 8251–8255. Se desambiguó PIECES, se actualizó Scrum a la terminología de marco de trabajo, se explicitó el sentido de las cardinalidades de generalización, se verificó Facade y se corrigió la ubicación rígida del prototipado en el modelo en espiral. El [registro 1590](cambios-lote-1590.json) conserva originales y trazabilidad.
+
+- **8251:** **corregida D**. PIECES significa rendimiento, información, economía, control, eficiencia y servicio; precio no es categoría independiente. A1-88/A2-III-3.
+- **8252:** **corregida B**. Scrum es un marco ligero, ágil y adaptativo, no una metodología secuencial cerrada. A1-37/88; A2-III-2.
+- **8253:** **corregida C**. Todo subtipo pertenece a un único supertipo; un supertipo puede no pertenecer a un subtipo concreto. A1-90/95; A2-III-9.
+- **8254:** **vigente A**. Facade es un patrón estructural. A1-93/A2-III-9.
+- **8255:** **corregida B**. En la espiral, los prototipos se usan cuando ayudan a resolver riesgos y pueden aparecer en distintos ciclos; no son obligatorios ni se limitan a una fase fija. A1-86/A2-III-1.
+
+Fuentes: marco PIECES basado en Whitten; [Guía Scrum](https://scrumguides.org/scrum-guide.html); documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html); catálogo Facade; [Boehm, Spiral Model](https://faculty.washington.edu/hazeline/misc/reserve/boehm_spiralmodel.pdf). Cotejo Academy: bloques 38 y 15 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.250 revisadas** (1.558 vigentes, 5.959 corregidas y 604 históricas), 129 pendientes y **3.873 sin revisar**; errores estructurales: 0.
