@@ -21989,3 +21989,17 @@ Revisión individual de 8251–8255. Se desambiguó PIECES, se actualizó Scrum 
 Fuentes: marco PIECES basado en Whitten; [Guía Scrum](https://scrumguides.org/scrum-guide.html); documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html); catálogo Facade; [Boehm, Spiral Model](https://faculty.washington.edu/hazeline/misc/reserve/boehm_spiralmodel.pdf). Cotejo Academy: bloques 38 y 15 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.250 revisadas** (1.558 vigentes, 5.959 corregidas y 604 históricas), 129 pendientes y **3.873 sin revisar**; errores estructurales: 0.
+
+## Lote 1591 — 21 de noviembre de 2026
+
+Revisión individual de 8256–8260. Se verificó el registro de configuración de MÉTRICA v3; se fecharon CMMI-DEV 1.3, COCOMO 81 y COBIT 5; y se actualizó el alcance CI/CD de Jenkins. El [registro 1591](cambios-lote-1591.json) conserva originales y trazabilidad.
+
+- **8256:** **histórica C**. El registro mínimo incluye nombre, versión, estado y localización, no fecha de creación. A1-95/102; A2-IV-4.
+- **8257:** **histórica B**. CMMI-DEV 1.3 incluía RD, TS, PI, VER y VAL en Ingeniería, no Continuous Deployment. A1-98/A2-III-13.
+- **8258:** **corregida C**. Jenkins automatiza construcción, pruebas y entrega/despliegue en prácticas CI/CD. A1-97/A2-III-6.
+- **8259:** **histórica C**. En COCOMO 81, el modelo detallado aplica factores de coste según la fase. A1-40/42; A2-II-15.
+- **8260:** **histórica C**. COBIT 5 usa DSS, Deliver, Service and Support, no «Deliver, Serve and Report». A1-106.
+
+Fuentes: documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html); CMMI-DEV 1.3; [Jenkins](https://www.jenkins.io/doc/) y sus tutoriales; Boehm, COCOMO 81; ISACA/COBIT 5. Cotejo Academy: bloques 38, 15, 30 y 44 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.255 revisadas** (1.558 vigentes, 5.960 corregidas y 608 históricas), 129 pendientes y **3.868 sin revisar**; errores estructurales: 0.
