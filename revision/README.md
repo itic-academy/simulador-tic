@@ -22059,3 +22059,17 @@ Revisión individual de 8276–8280. Se contrastaron productos de DSI, uso de ca
 Fuentes: documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/documentacion/metodologias-guias) y su volumen oficial de Diseño del Sistema de Información. Cotejo Academy: bloque 38 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.275 revisadas** (1.559 vigentes, 5.965 corregidas y 622 históricas), 129 pendientes y **3.848 sin revisar**; errores estructurales: 0.
+
+## Lote 1596 — 21 de noviembre de 2026
+
+Revisión individual de 8281–8285. Se verificaron el inicio de un desarrollo en EVS, el alcance de las pruebas del sistema, la transformación de relaciones 1:N y el paralelismo de PSI; además, se corrigió el órgano promotor de MÉTRICA v3. El [registro 1596](cambios-lote-1596.json) conserva originales y trazabilidad.
+
+- **8281:** **histórica A**. EVS es el primer proceso de un desarrollo concreto; PSI es planificación estratégica separada. A1-95; A2-III-1/III-2.
+- **8282:** **histórica C**. Las pruebas del sistema verifican el funcionamiento global del sistema completo. A1-96; A2-III-7.
+- **8283:** **histórica A**. En una asociación 1:N, la clave del lado 1 se propaga al lado N como clave ajena. A1-57/95; A2-III-4.
+- **8284:** **corregida A**. MÉTRICA v3 fue promovida por el Consejo Superior de Informática, respuesta ausente en el original. A1-95; A2-III-2.
+- **8285:** **histórica B**. PSI 3, PSI 4 y PSI 5 pueden realizarse en paralelo con realimentación. A1-95; A2-III-2.
+
+Fuentes: documentación y [biblioteca oficiales de Administración electrónica](https://administracionelectronica.gob.es/actualidad/pae-biblioteca/pae-publicacionespropias/monografias-administracion-electronica) sobre MÉTRICA v3. Cotejo Academy: bloque 38 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.280 revisadas** (1.559 vigentes, 5.966 corregidas y 626 históricas), 129 pendientes y **3.843 sin revisar**; errores estructurales: 0.
