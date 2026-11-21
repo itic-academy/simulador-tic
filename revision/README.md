@@ -21961,3 +21961,17 @@ Revisión individual de 8241–8245. Se verificó la lista de procesos de la NTI
 Fuentes: [NTI de Política de gestión de documentos electrónicos](https://www.boe.es/buscar/act.php?id=BOE-A-2012-10048); Microsoft Patterns & Practices; documentación de Intel y [Linux DMA API](https://docs.kernel.org/core-api/dma-api.html); manual MySQL sobre [InnoDB](https://dev.mysql.com/doc/refman/8.4/en/innodb-introduction.html) y [FULLTEXT](https://dev.mysql.com/doc/refman/8.4/en/innodb-fulltext-index.html). Cotejo Academy: bloques 49, 30, 26, 27 y 28 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.240 revisadas** (1.556 vigentes, 5.952 corregidas y 603 históricas), 129 pendientes y **3.883 sin revisar**; errores estructurales: 0.
+
+## Lote 1589 — 21 de noviembre de 2026
+
+Revisión individual de 8246–8250. Se fechó el modelo de JRE de Java SE 8, se precisó la herencia simple de clases en Java, se verificó el empaquetado EAR y se actualizaron las definiciones de LiDAR y ráster. El [registro 1589](cambios-lote-1589.json) conserva originales y trazabilidad.
+
+- **8246:** **histórica D**. El JRE de Java SE 8 incluía tecnologías de interfaz, despliegue e integración; se fecha por el cambio del modelo de distribución. A1-67/A2-III-10.
+- **8247:** **vigente B**. Las clases tienen herencia simple y Java soporta polimorfismo; las interfaces permiten herencia múltiple de tipos. A1-67/A2-III-9/10.
+- **8248:** **corregida A**. EAR es un archivo de aplicación empresarial basado en formato JAR que puede contener módulos. A1-67/A2-III-10.
+- **8249:** **corregida C**. LiDAR es teledetección activa por pulsos láser que genera mediciones/nubes de puntos 3D. A1-74.
+- **8250:** **corregida D**. El modelo espacial basado en una matriz de celdas es ráster; shapefile es vectorial. A1-74.
+
+Fuentes: Oracle [Java SE 8 Technology Guides](https://docs.oracle.com/javase/8/docs/technotes/guides/index.html), [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html) y tutorial de polimorfismo; [Jakarta EE Platform](https://jakarta.ee/specifications/platform/10/jakarta-platform-spec-10.0); [NOAA LiDAR](https://www.ngs.noaa.gov/RESEARCH/RSD/main/lidar/lidar.html), [USGS LiDAR](https://dmsdata.cr.usgs.gov/lidar-monitoring/what-is-lidar) y glosario ráster de USGS. Cotejo Academy: bloques 30, 38 y 34 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.245 revisadas** (1.557 vigentes, 5.955 corregidas y 604 históricas), 129 pendientes y **3.878 sin revisar**; errores estructurales: 0.
