@@ -22003,3 +22003,17 @@ Revisión individual de 8256–8260. Se verificó el registro de configuración 
 Fuentes: documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html); CMMI-DEV 1.3; [Jenkins](https://www.jenkins.io/doc/) y sus tutoriales; Boehm, COCOMO 81; ISACA/COBIT 5. Cotejo Academy: bloques 38, 15, 30 y 44 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.255 revisadas** (1.558 vigentes, 5.960 corregidas y 608 históricas), 129 pendientes y **3.868 sin revisar**; errores estructurales: 0.
+
+## Lote 1592 — 21 de noviembre de 2026
+
+Revisión individual de 8261–8265. Se verificó 10GBASE-T sobre categoría 6A; se fechó la antigua Directiva EMC; se precisó el papel de ASN.1 en OSI; y se documentaron las estructuras heredadas de ATM y 802.11g. El [registro 1592](cambios-lote-1592.json) conserva originales y trazabilidad.
+
+- **8261:** **vigente B**. Categoría 6A soporta 10GBASE-T hasta 100 m; categoría 6 queda limitada a distancias menores. A1-118/A2-IV-8.
+- **8262:** **histórica A**. 89/336/CEE fue la primera Directiva EMC general; hoy rige 2014/30/UE. A1-50.
+- **8263:** **corregida A**. ASN.1 define sintaxis abstracta y, en OSI, se asocia a las funciones de presentación y sintaxis de transferencia. A1-115/A2-II-8.
+- **8264:** **histórica D**. Una celda ATM contiene 5 bytes de cabecera y 48 de carga. A1-112/A2-IV-9.
+- **8265:** **histórica D**. 802.11g usa OFDM para velocidades altas y conserva compatibilidad DSSS/CCK con 802.11b. A1-108/A2-IV-11.
+
+Fuentes: Fluke Networks sobre 10GBASE-T; EUR-Lex [89/336/CEE](https://eur-lex.europa.eu/eli/dir/1989/336/oj/eng) y [2014/30/UE](https://eur-lex.europa.eu/eli/dir/2014/30/oj/spa); UIT-T X.680; IEEE Technology Navigator para ATM y 802.11g. Cotejo Academy: bloques 42, 49, 43 y 46 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.260 revisadas** (1.559 vigentes, 5.961 corregidas y 611 históricas), 129 pendientes y **3.863 sin revisar**; errores estructurales: 0.
