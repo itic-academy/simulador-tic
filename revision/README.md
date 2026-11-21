@@ -22087,3 +22087,17 @@ Revisión individual de 8286–8290. Se verificaron los elementos y conexiones d
 Fuentes: documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/documentacion/metodologias-guias), su volumen de DSI e IEEE Computer Society, SWEBOK v4. Cotejo Academy: bloque 38 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.285 revisadas** (1.559 vigentes, 5.968 corregidas y 629 históricas), 129 pendientes y **3.838 sin revisar**; errores estructurales: 0.
+
+## Lote 1598 — 21 de noviembre de 2026
+
+Revisión individual de 8291–8295. Se verificaron la relación PSI–EVS, el alcance de MSI, las actividades de PSI, la precedencia del entorno de construcción y la ubicación del plan de regresión. El [registro 1598](cambios-lote-1598.json) conserva originales y trazabilidad.
+
+- **8291:** **histórica C**. EVS recibe los resultados de PSI al iniciar el desarrollo de una solución. A1-95; A2-III-1/III-2.
+- **8292:** **histórica C**. MSI obtiene una nueva versión por problemas o mejoras y cubre mantenimiento correctivo y evolutivo. A1-95; A2-III-8.
+- **8293:** **histórica B**. El estudio de alternativas pertenece a EVS, no a PSI. A1-95; A2-III-2.
+- **8294:** **histórica B**. El entorno de generación y construcción debe prepararse antes de construir componentes. A1-95/97; A2-III-2/III-6.
+- **8295:** **histórica D**. El Plan de Pruebas de Regresión se especifica en MSI 3.3. A1-95/96; A2-III-7/III-8.
+
+Fuentes: documentación oficial [MÉTRICA v3](https://administracionelectronica.gob.es/documentacion/metodologias-guias). Cotejo Academy: bloque 38 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.290 revisadas** (1.559 vigentes, 5.968 corregidas y 634 históricas), 129 pendientes y **3.833 sin revisar**; errores estructurales: 0.
