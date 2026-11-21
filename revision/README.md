@@ -21933,3 +21933,17 @@ Revisión individual de 8231–8235. Se explicitaron los acrónimos de negociaci
 Fuentes: BOE, [RD 522/2006](https://www.boe.es/eli/es/rd/2006/04/28/522), [RD 523/2006](https://www.boe.es/eli/es/rd/2006/04/28/523), [RD 1553/2005](https://www.boe.es/eli/es/rd/2005/12/23/1553), [TREBEP](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719) y [RD 682/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-11988); [RGPD, art. 37](https://eur-lex.europa.eu/eli/reg/2016/679/oj/spa); [PAE Electrónico, CIRCE](https://paeelectronico.es/es-es/CreaEmpresaPorTiMismo/Paginas/Circe.aspx); Harvard Program on Negotiation para BATNA y ZOPA. Cotejo Academy: bloques 07, 03 y 08 en Drive y convocatorias A1/A2 vigentes.
 
 Ejecutados los scripts de lote, inventario y verificador: 12.123 válidas; **8.230 revisadas** (1.553 vigentes, 5.946 corregidas y 602 históricas), 129 pendientes y **3.893 sin revisar**; errores estructurales: 0. El inventario no equivale a verificación del contenido pendiente.
+
+## Lote 1587 — 21 de noviembre de 2026
+
+Revisión individual de 8236–8240. Se trató Pareto como heurística, se definió con precisión la organización matricial, se delimitaron los objetivos lean, se separó un requisito técnico obligatorio de un criterio de adjudicación y se verificaron las funciones de la Unidad Responsable de Accesibilidad. El [registro 1587](cambios-lote-1587.json) conserva originales y trazabilidad.
+
+- **8236:** **corregida A**. Pareto expresa concentración aproximada de efectos en pocas causas, no una proporción universal exacta. A1-33/35.
+- **8237:** **corregida B**. La matriz superpone dimensión funcional y de proyecto/producto, con autoridad compartida. A1-34.
+- **8238:** **corregida D**. Lean persigue valor, menos desperdicio y coste, mejor calidad y flujo y menor tiempo de entrega. A1-37.
+- **8239:** **corregida C**. Si MÉTRICA v3 se exige como condición técnica, se expresa como requisito obligatorio del PPT; no se confunde con una mejora o criterio de adjudicación. A1-11/39/95; A2-III-2.
+- **8240:** **vigente D**. El art. 16.3.c, f y g del RD 1112/2018 recoge las tres funciones. A1-44/A2-III-14.
+
+Fuentes: [ASQ, Pareto](https://asq.org/quality-resources/pareto); [PMI Lexicon](https://www.pmi.org/-/media/pmi/documents/registered/pdf/pmbok-standards/pmi-lexicon-pm-terms.pdf); [Lean Enterprise Institute](https://www.lean.org/explore-lean/what-is-lean/); [LCSP](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902); [MÉTRICA v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html); [RD 1112/2018](https://www.boe.es/buscar/act.php?id=BOE-A-2018-12699). Cotejo Academy: bloques 15, 09, 05 y 30 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.235 revisadas** (1.554 vigentes, 5.950 corregidas y 602 históricas), 129 pendientes y **3.888 sin revisar**; errores estructurales: 0.
