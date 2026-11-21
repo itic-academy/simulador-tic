@@ -22185,3 +22185,17 @@ Revisión individual de 8321–8325. Se verificaron el perfil de Jefe de Proyect
 Fuentes: documentación oficial MÉTRICA v3; sitios oficiales de Quarkus, Laravel, Symfony y CakePHP; documentación de TESTA II y Comisión Europea; Microsoft Learn sobre arquitectura de tres capas; RDL 36/2020 consolidado en BOE. Cotejo Academy: bloques 38, 30, 49 y 05 en Drive, y convocatorias A1/A2 vigentes.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.320 revisadas** (1.573 vigentes, 5.975 corregidas y 643 históricas), 129 pendientes y **3.803 sin revisar**; errores estructurales: 0.
+
+## Lote 1605 — 21 de noviembre de 2026
+
+Revisión individual de 8326–8330. Se actualizaron los formatos de plantilla de Word, se verificaron el bajo acoplamiento, los modos OLAP, el tamaño mínimo de trama Ethernet y el uso de JDBC. Se corrigieron dos enunciados que omitían versión o punto de medida. El [registro 1605](cambios-lote-1605.json) conserva originales y trazabilidad.
+
+- **8326:** **corregida B**. .dot es el formato binario de plantilla Word 97–2003; las plantillas modernas usan .dotx o .dotm. A1-69.
+- **8327:** **vigente A**. Bajo acoplamiento significa baja interdependencia entre módulos. A1-93; A2-III-9.
+- **8328:** **vigente D**. MOLAP, ROLAP y HOLAP son modos documentados; ZOLAP no lo es. A1-75; A2-II-4/III-15.
+- **8329:** **corregida D**. La trama MAC Ethernet mínima mide 64 octetos desde dirección destino hasta FCS, sin preámbulo ni SFD. A1-110/118; A2-IV-8.
+- **8330:** **vigente C**. JDBC permite a programas Java conectar con bases de datos, enviar sentencias y procesar resultados. A1-67; A2-III-10.
+
+Fuentes: Microsoft Learn/Support para formatos Word y Analysis Services; SWEBOK v4 y vocabulario IEEE; documentos IEEE 802 sobre trama Ethernet; API Java SE y tutorial JDBC de Oracle. Cotejo Academy: bloques 38, 34, 42 y 30 en Drive; no se localizó un bloque específico de formatos Word. Clasificación contrastada con las convocatorias A1/A2 vigentes.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.325 revisadas** (1.576 vigentes, 5.977 corregidas y 643 históricas), 129 pendientes y **3.798 sin revisar**; errores estructurales: 0.
