@@ -22199,3 +22199,17 @@ Revisión individual de 8326–8330. Se actualizaron los formatos de plantilla d
 Fuentes: Microsoft Learn/Support para formatos Word y Analysis Services; SWEBOK v4 y vocabulario IEEE; documentos IEEE 802 sobre trama Ethernet; API Java SE y tutorial JDBC de Oracle. Cotejo Academy: bloques 38, 34, 42 y 30 en Drive; no se localizó un bloque específico de formatos Word. Clasificación contrastada con las convocatorias A1/A2 vigentes.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.325 revisadas** (1.576 vigentes, 5.977 corregidas y 643 históricas), 129 pendientes y **3.798 sin revisar**; errores estructurales: 0.
+
+## Lote 1606 — 21 de noviembre de 2026
+
+Revisión individual de 8331–8335. Se verificaron la biometría del DNIe, la auditoría ENS, la arquitectura ANSI/SPARC, la MTU Ethernet y la elaboración de manuales en MÉTRICA v3. Se corrigieron tres formulaciones para incorporar restricciones o eliminar ambigüedades técnicas. El [registro 1606](cambios-lote-1606.json) conserva originales y trazabilidad.
+
+- **8331:** **corregida D**. El DNIe permite identificación por huella dactilar en puntos de acceso controlados. A1-81; A2-I-6.
+- **8332:** **vigente B**. Los sistemas ENS de categoría BÁSICA no necesitan auditoría; realizan autoevaluación documentada. A1-48; A2-I-9.
+- **8333:** **corregida D**. ANSI/SPARC define los esquemas externo, conceptual e interno para favorecer independencia de datos. A1-63; A2-II-5.
+- **8334:** **corregida D**. La MTU IP convencional de Ethernet es 1500 octetos; el tamaño jumbo no es universal y requiere soporte coherente. A1-118; A2-IV-8.
+- **8335:** **histórica A**. MÉTRICA v3 elabora los manuales de usuario en Construcción del Sistema de Información. A1-95; A2-III-2.
+
+Fuentes: portal oficial DNIe; RD 311/2022 consolidado en BOE; modelo de referencia ANSI/SPARC publicado por NBS; RFC 894 y RFC 4638; documentación oficial MÉTRICA v3. Cotejo Academy: bloques 36, 22, 29, 42 y 38 en Drive, y convocatorias A1/A2 vigentes.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.330 revisadas** (1.577 vigentes, 5.980 corregidas y 644 históricas), 129 pendientes y **3.793 sin revisar**; errores estructurales: 0.
