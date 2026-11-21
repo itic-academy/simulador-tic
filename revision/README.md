@@ -21947,3 +21947,17 @@ Revisión individual de 8236–8240. Se trató Pareto como heurística, se defin
 Fuentes: [ASQ, Pareto](https://asq.org/quality-resources/pareto); [PMI Lexicon](https://www.pmi.org/-/media/pmi/documents/registered/pdf/pmbok-standards/pmi-lexicon-pm-terms.pdf); [Lean Enterprise Institute](https://www.lean.org/explore-lean/what-is-lean/); [LCSP](https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902); [MÉTRICA v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html); [RD 1112/2018](https://www.boe.es/buscar/act.php?id=BOE-A-2018-12699). Cotejo Academy: bloques 15, 09, 05 y 30 en Drive y convocatorias A1/A2.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.235 revisadas** (1.554 vigentes, 5.950 corregidas y 602 históricas), 129 pendientes y **3.888 sin revisar**; errores estructurales: 0.
+
+## Lote 1588 — 21 de noviembre de 2026
+
+Revisión individual de 8241–8245. Se verificó la lista de procesos de la NTI documental; se fechó Microsoft DNA como arquitectura heredada; se confirmaron las técnicas de correspondencia de caché; se reparó una opción ambigua sobre DMA; y se actualizó InnoDB conforme a MySQL actual. El [registro 1588](cambios-lote-1588.json) conserva originales y trazabilidad.
+
+- **8241:** **vigente D**. La NTI enumera acceso, descripción y calificación, pero no «correspondencia». A1-46/A2-I-9.
+- **8242:** **histórica B**. Microsoft DNA promovía arquitecturas distribuidas de varios niveles; no exigía por definición clientes exclusivamente Microsoft. A1-58/A2-II-6.
+- **8243:** **vigente D**. Directa, totalmente asociativa y asociativa por conjuntos son las técnicas clásicas; «suprayectiva» no lo es. A1-52/59; A2-II-1.
+- **8244:** **corregida B**. DMA programa memoria, longitud, sentido y dispositivo/canal; se sustituye «tamaño de palabra», que podía ser un parámetro real, por un distractor inequívoco. A1-59/A2-II-1/II-2.
+- **8245:** **corregida B**. InnoDB es el motor predeterminado de MySQL y actualmente admite FULLTEXT. A1-63/64; A2-II-5.
+
+Fuentes: [NTI de Política de gestión de documentos electrónicos](https://www.boe.es/buscar/act.php?id=BOE-A-2012-10048); Microsoft Patterns & Practices; documentación de Intel y [Linux DMA API](https://docs.kernel.org/core-api/dma-api.html); manual MySQL sobre [InnoDB](https://dev.mysql.com/doc/refman/8.4/en/innodb-introduction.html) y [FULLTEXT](https://dev.mysql.com/doc/refman/8.4/en/innodb-fulltext-index.html). Cotejo Academy: bloques 49, 30, 26, 27 y 28 en Drive y convocatorias A1/A2.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.240 revisadas** (1.556 vigentes, 5.952 corregidas y 603 históricas), 129 pendientes y **3.883 sin revisar**; errores estructurales: 0.
