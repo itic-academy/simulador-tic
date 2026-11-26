@@ -23027,3 +23027,9 @@ Revisión de 8991–8995: enfoque basado en recursos, decisiones estratégicas, 
 Revisión de 8996–9000: carga ETL, análisis de datos, integración, sistemas de información y planificación estratégica. Véase el [registro 1739](cambios-lote-1739.json).
 
 **8.995 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.128 sin revisar**.
+
+## Lote 1740 — 27 de noviembre de 2026
+
+Revisión de 9001–9005: planificación de sistemas, OLAP, módulos ERP, Gibson y Nolan y transacciones operacionales. Véase el [registro 1740](cambios-lote-1740.json).
+
+**9.000 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.123 sin revisar**.
