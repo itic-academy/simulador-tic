@@ -22847,3 +22847,9 @@ Revisión de 8841–8845: MantisBT, gestión de servicios y de la calidad, norma
 Revisión de 8846–8850: concentración de defectos, repositorios Git, TestLink, aseguramiento de la calidad y CMMI. Véase el [registro 1709](cambios-lote-1709.json).
 
 **8.845 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.278 sin revisar**.
+
+## Lote 1710 — 26 de noviembre de 2026
+
+Revisión de 8851–8855: gestión de calidad del software, CMMI, regresión, eficiencia y detección de defectos. Véase el [registro 1710](cambios-lote-1710.json).
+
+**8.850 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.273 sin revisar**.
