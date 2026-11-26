@@ -22373,3 +22373,9 @@ Revisión de 8446–8450: puenteo MAC, cableado horizontal, designaciones de cab
 Revisión de 8451–8455: 10BASE5, baudios, 40GBASE-LR4, troncal de edificio y ventanas ópticas. El [registro 1630](cambios-lote-1630.json) conserva originales y fuentes.
 
 **8.450 con revisión registrada**, incluidas 137 pendientes de resolución, y **3.673 sin revisar**.
+
+## Lote 1631 — 26 de noviembre de 2026
+
+Revisión de 8456–8460. Se precisaron las categorías de par trenzado, la directividad para una apertura fija y las vías del conector. Quedan documentadas dos ambigüedades sobre PCM y fallos de topología. El [registro 1631](cambios-lote-1631.json) conserva originales y trazabilidad.
+
+**8.455 con revisión registrada**, incluidas 139 pendientes de resolución, y **3.668 sin revisar**.
