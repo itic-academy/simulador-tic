@@ -22607,3 +22607,9 @@ Revisión de 8641–8645: DECT, Configuration Manager, bases jerárquicas, heren
 Revisión de 8646–8650: IEEE 830, consistencia de bases de datos, visión histórica de la Estrategia TIC, espacio de usuario en Linux y guía Scrum. El [registro 1669](cambios-lote-1669.json) conserva originales y fuentes.
 
 **8.645 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.478 sin revisar**.
+
+## Lote 1670 — 26 de noviembre de 2026
+
+Revisión de 8651–8655: dirección administrativa, presidencia rotatoria del Consejo, disponibilidad, PNG y cese del Gobierno. El [registro 1670](cambios-lote-1670.json) conserva originales y fuentes.
+
+**8.650 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.473 sin revisar**.
