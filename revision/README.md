@@ -22733,3 +22733,9 @@ Revisión de 8746–8750: Bluetooth LE, zonas NGA blancas, VLAN estáticas, bala
 Revisión de 8751–8755: continuidad del negocio, MIME, Ethernet coaxial, BGP y WPA3. Véase el [registro 1690](cambios-lote-1690.json).
 
 **8.750 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.373 sin revisar**.
+
+## Lote 1691 — 26 de noviembre de 2026
+
+Revisión de 8756–8760: topología en estrella, direcciones MAC, disponibilidad, IMAP y códecs de voz. Véase el [registro 1691](cambios-lote-1691.json).
+
+**8.755 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.368 sin revisar**.
