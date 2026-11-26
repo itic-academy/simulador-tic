@@ -22973,3 +22973,9 @@ Revisión de 8946–8950: sector público estatal, presupuestos, ODS 8, deberes 
 Revisión de 8951–8955: actuaciones de la AEPD, contratación, propiedad intelectual, portabilidad y salvaguardas. Véase el [registro 1730](cambios-lote-1730.json).
 
 **8.950 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.173 sin revisar**.
+
+## Lote 1731 — 26 de noviembre de 2026
+
+Revisión de 8956–8960: trazabilidad, representación en ISO, vigilancia tecnológica, transacciones y planificación de CPU. Véase el [registro 1731](cambios-lote-1731.json).
+
+**8.955 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.168 sin revisar**.
