@@ -22481,3 +22481,9 @@ Revisión de 8536–8540: publicidad de la contratación, competencia para el re
 Revisión de 8541–8545: notificación electrónica, nulidad de preceptos sobre unidad de mercado, mandato de la AEPD, propuesta de Estrategia TIC y DAFO. El [registro 1648](cambios-lote-1648.json) conserva originales y fuentes.
 
 **8.540 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.583 sin revisar**.
+
+## Lote 1649 — 26 de noviembre de 2026
+
+Revisión de 8546–8550: garantía por precios unitarios, duración de derechos sobre software, vulnerabilidad y objetivos de MAGERIT. La normalización de puntuaciones queda pendiente de una definición reproducible. Véase el [registro 1649](cambios-lote-1649.json).
+
+**8.545 con revisión registrada**, incluidas 143 pendientes de resolución, y **3.578 sin revisar**.
