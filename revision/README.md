@@ -22907,3 +22907,9 @@ Revisión de 8891–8895: cuadro de mando integral, objetivos SMART, EDT, diagra
 Revisión de 8896–8900: análisis DAFO, objetivos SMART, Qlik Sense y cuadro de mando integral. Véase el [registro 1719](cambios-lote-1719.json).
 
 **8.895 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.228 sin revisar**.
+
+## Lote 1720 — 26 de noviembre de 2026
+
+Revisión de 8901–8905: factores críticos de éxito, cuadro de mando público, DAFO, KPI y objetivos medibles. Véase el [registro 1720](cambios-lote-1720.json).
+
+**8.900 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.223 sin revisar**.
