@@ -22889,3 +22889,9 @@ Revisión de 8876–8880: evaluación de procesos, Software CMM, regresión, JUn
 Revisión de 8881–8885: cobertura, niveles de prueba, ruta crítica, DAFO e indicadores. Véase el [registro 1716](cambios-lote-1716.json).
 
 **8.880 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.243 sin revisar**.
+
+## Lote 1717 — 26 de noviembre de 2026
+
+Revisión de 8886–8890: Pareto, DAFO, estructura de desglose del trabajo y cuadro de mando integral. Véase el [registro 1717](cambios-lote-1717.json).
+
+**8.885 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.238 sin revisar**.
