@@ -22511,3 +22511,9 @@ Revisión de 8561–8565: actividades e interfaces de MÉTRICA v3, integración 
 Revisión de 8566–8570: ramas en Subversion, criterio 7 de EFQM 2013, circuito permanente X.25, BGP y puertos TCP. El [registro 1653](cambios-lote-1653.json) conserva originales y fuentes.
 
 **8.565 con revisión registrada**, incluidas 143 pendientes de resolución, y **3.558 sin revisar**.
+
+## Lote 1654 — 26 de noviembre de 2026
+
+Revisión de 8571–8575. Se confirmaron loopback, RTP, SNMP y TRAP. La 8573 queda pendiente de una arquitectura de referencia que permita evaluar la clave. Véase el [registro 1654](cambios-lote-1654.json).
+
+**8.570 con revisión registrada**, incluidas 144 pendientes de resolución, y **3.553 sin revisar**.
