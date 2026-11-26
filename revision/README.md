@@ -22553,3 +22553,9 @@ Revisión de 8596–8600: modelos LDAP, aprobación de Cl@ve, finalidad del ENS,
 Revisión de 8601–8605: norma europea, autoridad de certificación, valor en ITIL 4, pruebas de caja negra y APNG. El [registro 1660](cambios-lote-1660.json) conserva originales y fuentes.
 
 **8.600 con revisión registrada**, incluidas 146 pendientes de resolución, y **3.523 sin revisar**.
+
+## Lote 1661 — 26 de noviembre de 2026
+
+Revisión de 8606–8610: seguridad de documentos de identidad, gestión continua de riesgos, aprobación de Cl@ve, normalización europea y DDoS. Véase el [registro 1661](cambios-lote-1661.json).
+
+**8.605 con revisión registrada**, incluidas 146 pendientes de resolución, y **3.518 sin revisar**.
