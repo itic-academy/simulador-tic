@@ -22343,3 +22343,9 @@ Revisión de 8421–8425: multiplexación, modos de fibra, 100BASE-TX y ruido t�
 Revisión de 8426–8430. Se verificaron decibelio, conversión A/D, revisión TIA-568 y degradación de señales. La comparación general de UTP y STP queda pendiente. El [registro 1625](cambios-lote-1625.json) conserva originales y fuentes.
 
 **8.425 con revisión registrada**, incluidas 136 pendientes de resolución, y **3.698 sin revisar**.
+
+## Lote 1626 — 26 de noviembre de 2026
+
+Revisión de 8431–8435: codificación Manchester, coaxial Ethernet, cruce MDI, relación entre ancho de banda y velocidad, y coexistencia de ADSL y telefonía. El [registro 1626](cambios-lote-1626.json) conserva originales y fuentes.
+
+**8.430 con revisión registrada**, incluidas 136 pendientes de resolución, y **3.693 sin revisar**.

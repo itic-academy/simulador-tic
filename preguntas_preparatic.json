@@ -449556,19 +449556,44 @@
       "tema": 0,
       "texto": "La codificación Manchester se caracteriza por:",
       "opciones": [
-        "Usar 1 V para el valor “1” y -1 V para el valor “0”",
-        "Dividir cada bit en dos intervalos iguales de 1 V y -1 V comenzando en el valor positivo para el “1” y en el valor negativo para el “0”",
-        "Indicar el valor “1” con ausencia de tránsito en la tensión eléctrica y el “0” con una transición",
-        "La opción anterior, suprimiendo una de cada dos transiciones"
+        "Representar cada bit con un nivel constante.",
+        "Introducir una transición en el centro de cada bit, de dirección distinta para 0 y 1.",
+        "Usar exclusivamente una transición al inicio de cada bit.",
+        "Eliminar las transiciones periódicas del código."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. La transición central facilita recuperar el reloj. La convención asigna su sentido y el medio determina los niveles eléctricos.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Manchester"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.3/10422/",
+            "referencia": "Manchester"
+          }
+        ],
+        "observaciones": "B. La transición central facilita recuperar el reloj. La convención asigna su sentido y el medio determina los niveles eléctricos."
+      }
     },
     {
       "id": 8432,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿En cuál de las siguientes especificaciones de medio del estándar IEEE 802.3, el cable, cuando es de tipo coaxial, tiene una impedancia característica de 50 Ohmios?",
+      "texto": "En las variantes históricas de IEEE 802.3, ¿qué dos medios Ethernet en banda base usaban cable coaxial de 50 ohmios?",
       "opciones": [
         "Especificaciones de medio 10BASE2 y 10BASE5.",
         "Especificación de medio 10BASE-FL.",
@@ -449576,27 +449601,77 @@
         "Especificación de medio 10BROAD36."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. 10BASE2 y 10BASE5 usaban coaxial de 50 Ω. 10BASE-T usa par trenzado, 10BASE-FL fibra y 10BROAD36 coaxial de 75 Ω.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "coaxial Ethernet"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.3/10422/",
+            "referencia": "coaxial Ethernet"
+          }
+        ],
+        "observaciones": "A. 10BASE2 y 10BASE5 usaban coaxial de 50 Ω. 10BASE-T usa par trenzado, 10BASE-FL fibra y 10BROAD36 coaxial de 75 Ω."
+      }
     },
     {
       "id": 8433,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique cómo podría interconectar dos ordenadores personales según la tecnología Ethernet:",
+      "texto": "¿Qué cable permite conectar directamente dos interfaces Ethernet 10/100BASE-T de tipo MDI sin Auto-MDI/MDIX?",
       "opciones": [
-        "Mediante un cable cruzado",
-        "Mediante un cable sin cruzar o cable plano",
-        "Mediante un dado de interconexión",
-        "Mediante cualquiera de las tres opciones indicadas"
+        "Un cable cruzado.",
+        "Un cable directo.",
+        "Un cable coaxial terminado en BNC.",
+        "Un cable serie."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. Dos interfaces MDI fijas necesitan cruzar transmisión y recepción. Auto-MDI/MDIX permite adaptar el cruce automáticamente.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MDI"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst2960/software/release/15-0_2_se/configuration/guide/scg2960/swint.html",
+            "referencia": "MDI"
+          }
+        ],
+        "observaciones": "A. Dos interfaces MDI fijas necesitan cruzar transmisión y recepción. Auto-MDI/MDIX permite adaptar el cruce automáticamente."
+      }
     },
     {
       "id": 8434,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones es correcta cuando se estudia la relación entre la velocidad de transmisión de una señal digital y la frecuencia máxima de la señal?",
+      "texto": "En un canal ideal en banda base, con el mismo número de niveles de señal, ¿cómo cambia la tasa binaria máxima de Nyquist si disminuye el ancho de banda?",
       "opciones": [
         "No existe ninguna relación directa",
         "Cuanto mayor sea el ancho de banda de la señal, menor es la velocidad de transmisión",
@@ -449604,21 +449679,71 @@
         "Cuanto menor sea el ancho de banda, menor es la velocidad de transmisión"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "D. Para M niveles fijos y ancho de banda B, la tasa máxima ideal es 2B log₂(M). Disminuye al reducir B.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Nyquist"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.lirmm.fr/~strauss/MasterEEA/Echantillonnage/Publi%20Nyquist.pdf",
+            "referencia": "Nyquist"
+          }
+        ],
+        "observaciones": "D. Para M niveles fijos y ancho de banda B, la tasa máxima ideal es 2B log₂(M). Disminuye al reducir B."
+      }
     },
     {
       "id": 8435,
       "bloque": 0,
       "tema": 0,
-      "texto": "De las siguientes opciones señale la que no corresponde a una característica de las redes de banda ancha:",
+      "texto": "En ADSL sobre el mismo par de cobre que la telefonía analógica, ¿qué permite usar ambos servicios simultáneamente?",
       "opciones": [
-        "Se cambia la información de impulsos digitales por ondas moduladas.",
-        "Conexión permanente, permitiendo a su vez la utilización de otra banda diferente del medio para otros fines.",
-        "Las señales digitales pueden ser transmitidas directamente sin actuar sobre ellas.",
-        "Se utilizan dos o más canales de datos simultáneos en una única conexión."
+        "Enviar voz y datos sin separar sus espectros.",
+        "Sustituir el par de cobre por fibra hasta el usuario.",
+        "Separar las bandas de frecuencia de voz y datos.",
+        "Interrumpir los datos mientras se habla."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "C. ADSL puede coexistir con telefonía analógica en el mismo par mediante separación espectral. Las características del enunciado original no se aplicaban a toda conexión de banda ancha.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ADSL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/itu-t/recommendations/rec.aspx?lang=en&rec=4718",
+            "referencia": "ADSL"
+          }
+        ],
+        "observaciones": "C. ADSL puede coexistir con telefonía analógica en el mismo par mediante separación espectral. Las características del enunciado original no se aplicaban a toda conexión de banda ancha."
+      }
     },
     {
       "id": 8436,
