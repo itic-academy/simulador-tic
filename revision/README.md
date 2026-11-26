@@ -22361,3 +22361,9 @@ Revisión de 8436–8440: sincronización digital, latencia Ethernet, pantallas 
 Revisión de 8441–8445: segmentación Ethernet, familias normativas, velocidades 802.3bz y UTP. La clasificación de distribuidores queda pendiente de referencia normativa directa. El [registro 1628](cambios-lote-1628.json) conserva originales y fuentes.
 
 **8.440 con revisión registrada**, incluidas 137 pendientes de resolución, y **3.683 sin revisar**.
+
+## Lote 1629 — 26 de noviembre de 2026
+
+Revisión de 8446–8450: puenteo MAC, cableado horizontal, designaciones de cable, Erlang C y fibra OM3. El [registro 1629](cambios-lote-1629.json) conserva originales y fuentes.
+
+**8.445 con revisión registrada**, incluidas 137 pendientes de resolución, y **3.678 sin revisar**.
