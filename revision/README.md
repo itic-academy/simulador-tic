@@ -22313,3 +22313,9 @@ Revisión de 8396–8400: concurrencia transaccional, protocolos de almacenamien
 Revisión de 8401–8405: objetivos SMART, PLC interior, digitalización de documentos en oficinas de asistencia, modelos de despliegue en nube y visibilidad en UML. El [registro 1620](cambios-lote-1620.json) conserva originales y fuentes. Cotejo directo con Academy pendiente.
 
 **8.400 con revisión registrada**, incluidas 132 pendientes de resolución, y **3.723 sin revisar**.
+
+## Lote 1621 — 26 de noviembre de 2026
+
+Revisión de 8406–8410. Se precisaron el apantallamiento electromagnético y la función de UTRAN. Se verificaron CDI, LINQ y el uso de JSTL y EL en JSP. El [registro 1621](cambios-lote-1621.json) conserva originales y fuentes. Cotejo directo con Academy pendiente.
+
+**8.405 con revisión registrada**, incluidas 132 pendientes de resolución, y **3.718 sin revisar**.
