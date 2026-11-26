@@ -22931,3 +22931,9 @@ Revisión de 8911–8915: cotización, valor ganado, WCAG, interoperabilidad sem
 Revisión de 8916–8920: NVMe, registro de instrucción, planificación, Android 9 e IntelliSense. Véase el [registro 1723](cambios-lote-1723.json).
 
 **8.915 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.208 sin revisar**.
+
+## Lote 1724 — 26 de noviembre de 2026
+
+Revisión de 8921–8925: Angular, shadow IT, Scrum, Observer y microservicios. Véase el [registro 1724](cambios-lote-1724.json).
+
+**8.920 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.203 sin revisar**.
