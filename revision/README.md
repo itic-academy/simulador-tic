@@ -22265,3 +22265,9 @@ Inventario y verificador ejecutados: **8.355 con revisión registrada**, incluid
 Revisión individual de 8361–8365. Se precisaron el cálculo de la renta nacional bruta, los requisitos de relación electrónica, el límite general de los acuerdos marco y la diferencia entre elección y nombramiento del presidente autonómico. Se confirmó la atribución estatutaria sobre órganos directivos. El [registro 1612](cambios-lote-1612.json) conserva originales y fuentes de Eurostat y BOE. El cotejo directo con Academy sigue pendiente.
 
 Inventario y verificador ejecutados: **8.360 con revisión registrada**, incluidas 129 pendientes de resolución, y **3.763 sin revisar**. Cero errores estructurales.
+
+## Lote 1613 — 26 de noviembre de 2026
+
+Revisión individual de 8366–8370. Se contrastaron la organización territorial, el papel de los principios generales del derecho, el cifrado híbrido y la remisión de asientos en GEISER. La 8369 queda pendiente de una fuente primaria que acredite la taxonomía de granularidad de la clave original. El [registro 1613](cambios-lote-1613.json) conserva originales y trazabilidad. Cotejo directo con Academy pendiente.
+
+Inventario y verificador ejecutados: **8.365 con revisión registrada**, incluidas 130 pendientes de resolución, y **3.758 sin revisar**. Cero errores estructurales.
