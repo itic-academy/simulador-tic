@@ -22565,3 +22565,9 @@ Revisión de 8606–8610: seguridad de documentos de identidad, gestión continu
 Revisión de 8611–8615: NRC, listas de confianza, criterios EFQM 2013 y Red SARA. ITIL v3 queda pendiente de glosario de la edición. Véase el [registro 1662](cambios-lote-1662.json).
 
 **8.610 con revisión registrada**, incluidas 147 pendientes de resolución, y **3.513 sin revisar**.
+
+## Lote 1663 — 26 de noviembre de 2026
+
+Revisión de 8616–8620: campos estáticos Java, gestión de servicios ITIL, primitivas OSI, ejes de España Digital 2025 e interfaces de usuario en MÉTRICA v3. Véase el [registro 1663](cambios-lote-1663.json).
+
+**8.615 con revisión registrada**, incluidas 147 pendientes de resolución, y **3.508 sin revisar**.
