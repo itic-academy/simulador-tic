@@ -22781,3 +22781,9 @@ Revisión de 8786–8790: inventario de puertos, selección de banda Wi-Fi y pri
 Revisión de 8791–8795: composición de la Comisión Europea, fuentes del derecho, imparcialidad, órganos de contratación y prioridad de la deuda pública. Véase el [registro 1698](cambios-lote-1698.json).
 
 **8.790 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.333 sin revisar**.
+
+## Lote 1699 — 26 de noviembre de 2026
+
+Revisión de 8796–8800: desindexación, esperanza de vida, ERTE, burocracia y reutilización de información. Véase el [registro 1699](cambios-lote-1699.json).
+
+**8.795 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.328 sin revisar**.
