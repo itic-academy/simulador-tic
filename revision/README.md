@@ -22277,3 +22277,9 @@ Inventario y verificador ejecutados: **8.365 con revisión registrada**, incluid
 Revisión individual de 8371–8375. Se precisaron la pérdida en espacio libre, la auditoría ordinaria ENS, las APIs web, las claves de RSA y la no volatilidad en almacenes de datos. El [registro 1614](cambios-lote-1614.json) conserva originales, explicaciones y fuentes. Cotejo directo con Academy pendiente.
 
 Inventario y verificador ejecutados: **8.370 con revisión registrada**, incluidas 130 pendientes de resolución, y **3.753 sin revisar**. Cero errores estructurales.
+
+## Lote 1615 — 26 de noviembre de 2026
+
+Revisión individual de 8376–8380. Se precisaron los parámetros de RC5, se confirmó la gestión de continuidad, se sustituyeron las opciones erróneas sobre Apache HTTP Server y se distinguió el bloque link-local IPv6 del formato de las direcciones. La recomendación tipográfica de la 8379 queda pendiente de localizar en una edición y un apartado concretos de la guía oficial. El [registro 1615](cambios-lote-1615.json) conserva originales y fuentes. Cotejo directo con Academy pendiente.
+
+Inventario y verificador ejecutados: **8.375 con revisión registrada**, incluidas 131 pendientes de resolución, y **3.748 sin revisar**. Cero errores estructurales.
