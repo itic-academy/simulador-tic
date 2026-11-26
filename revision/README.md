@@ -22661,3 +22661,9 @@ Revisión de 8686–8690: medios alternativos del ENS, Mage.exe, NFC del DNI 3.0
 Revisión de 8691–8695: planificación de pruebas, IAX2, virtualización de aplicaciones y servidores e instrucciones técnicas del ENS. Véase el [registro 1678](cambios-lote-1678.json).
 
 **8.690 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.433 sin revisar**.
+
+## Lote 1679 — 26 de noviembre de 2026
+
+Revisión de 8696–8700: dimensiones y conformidad del ENS, guías CCN-STIC y Estrategia Nacional de Ciberseguridad 2019. Véase el [registro 1679](cambios-lote-1679.json).
+
+**8.695 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.428 sin revisar**.
