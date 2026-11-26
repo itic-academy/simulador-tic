@@ -22385,3 +22385,9 @@ Revisión de 8456–8460. Se precisaron las categorías de par trenzado, la dire
 Revisión de 8461–8465: tiempo de transmisión, Franck–Condon, 1000BASE-CX, muestreo y fragmentación IPv4. Se corrigió la clave del router de tránsito. El [registro 1632](cambios-lote-1632.json) conserva originales y fuentes.
 
 **8.460 con revisión registrada**, incluidas 139 pendientes de resolución, y **3.663 sin revisar**.
+
+## Lote 1633 — 26 de noviembre de 2026
+
+Revisión de 8466–8470. Se precisaron el ámbito de ISO/IEC 11801-2, el relleno de bits, 1000BASE-CX y la atenuación óptica. La 8467 queda pendiente de acreditar la terminología en una edición concreta de EN 50173. El [registro 1633](cambios-lote-1633.json) conserva originales y fuentes.
+
+**8.465 con revisión registrada**, incluidas 140 pendientes de resolución, y **3.658 sin revisar**.
