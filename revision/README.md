@@ -22227,3 +22227,17 @@ Revisión individual de 8336–8340. Se contrastaron la tipología de servicios 
 Fuentes: Library of Congress; IEEE SA; NIST; Microsoft Learn; especificación y API oficiales de Jakarta Servlet. Cotejo Academy: bloques 29, 42, 26, 34 y 38 en Drive, además de convocatorias A1/A2 vigentes.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.335 revisadas** (1.581 vigentes, 5.981 corregidas y 644 históricas), 129 pendientes y **3.788 sin revisar**; errores estructurales: 0.
+
+## Lote 1608 — 21 de noviembre de 2026
+
+Revisión individual de 8341–8345. Se verificaron herramientas y componentes MLOps, jerarquías y operadores OLAP, el diagrama de contexto DFD y el alcance de ISO 9001. Se precisaron cuatro formulaciones ambiguas o defectuosas y se identificó la edición de ISO 9001. El [registro 1608](cambios-lote-1608.json) conserva originales y trazabilidad.
+
+- **8341:** **corregida D**. Jupyter, ONNX y Metaflow pueden intervenir en distintas fases de un flujo MLOps. A1-71; A2-III-15.
+- **8342:** **vigente A**. Las jerarquías permiten consultar OLAP a distintos niveles de detalle. A1-75; A2-II-4/III-15.
+- **8343:** **corregida C**. El contexto DFD contiene entidades externas, un proceso que representa el sistema y flujos. A1-88; A2-III-3.
+- **8344:** **corregida A**. Duck no es una operación OLAP; sí drill, roll-up y slice/dice. A1-75; A2-II-4/III-15.
+- **8345:** **corregida A**. ISO 9001:2015 contiene requisitos genéricos; la guía detallada para pequeñas empresas se publica aparte. A1-103; A2-III-13.
+
+Fuentes: proyectos oficiales Jupyter, ONNX y Metaflow; Microsoft Learn; MÉTRICA v3; ISO e ISO/TC 176. Clasificación según el temario oficial del repositorio. Pendiente el cotejo directo con los bloques 34 y 38 de Academy en Drive.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.340 revisadas** (1.582 vigentes, 5.985 corregidas y 644 históricas), 129 pendientes y **3.783 sin revisar**; errores estructurales: 0.
