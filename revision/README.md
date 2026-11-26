@@ -22757,3 +22757,9 @@ Revisión de 8766–8770: bandas prioritarias 5G, firmas SOAP, TETRA, retransmis
 Revisión de 8771–8775: APT, arquitectura WAP, directorio X.500, titulado accesible y centros alternativos. Véase el [registro 1694](cambios-lote-1694.json).
 
 **8.770 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.353 sin revisar**.
+
+## Lote 1695 — 26 de noviembre de 2026
+
+Revisión de 8776–8780: PAdES, Wake on LAN, NFC, CMIP y Erlang B. Véase el [registro 1695](cambios-lote-1695.json).
+
+**8.775 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.348 sin revisar**.
