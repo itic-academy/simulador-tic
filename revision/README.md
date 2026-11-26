@@ -22739,3 +22739,9 @@ Revisión de 8751–8755: continuidad del negocio, MIME, Ethernet coaxial, BGP y
 Revisión de 8756–8760: topología en estrella, direcciones MAC, disponibilidad, IMAP y códecs de voz. Véase el [registro 1691](cambios-lote-1691.json).
 
 **8.755 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.368 sin revisar**.
+
+## Lote 1692 — 26 de noviembre de 2026
+
+Revisión de 8761–8765: fibra óptica, DMZ, HomeRF, DHCP y direcciones de loopback. Véase el [registro 1692](cambios-lote-1692.json).
+
+**8.760 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.363 sin revisar**.
