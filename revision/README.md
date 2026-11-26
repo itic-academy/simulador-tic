@@ -22463,3 +22463,9 @@ Revisión de 8521–8525: encapsulado MPLS, recursos GMPLS, alcance de SDH, orde
 Revisión de 8526–8530: clases de reenvío MPLS, categorías ATM, LANE y AAL5, y artículo 9.2 de la Constitución. El [registro 1645](cambios-lote-1645.json) conserva originales y fuentes.
 
 **8.525 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.598 sin revisar**.
+
+## Lote 1646 — 26 de noviembre de 2026
+
+Revisión de 8531–8535: composición del Congreso, Ley Orgánica del Poder Judicial, instituciones de la UE, relación electrónica y procedimientos de adjudicación. El [registro 1646](cambios-lote-1646.json) conserva originales y fuentes.
+
+**8.530 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.593 sin revisar**.
