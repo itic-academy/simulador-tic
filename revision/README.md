@@ -22787,3 +22787,9 @@ Revisión de 8791–8795: composición de la Comisión Europea, fuentes del dere
 Revisión de 8796–8800: desindexación, esperanza de vida, ERTE, burocracia y reutilización de información. Véase el [registro 1699](cambios-lote-1699.json).
 
 **8.795 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.328 sin revisar**.
+
+## Lote 1700 — 26 de noviembre de 2026
+
+Revisión de 8801–8805: suministro, gestión documental, España Digital 2026, OpenStack y Linux en Azure. Véase el [registro 1700](cambios-lote-1700.json).
+
+**8.800 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.323 sin revisar**.
