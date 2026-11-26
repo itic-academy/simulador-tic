@@ -1,0 +1,8 @@
+const apply = require('./aplicar-lote.cjs');
+apply({numero:'1645',fecha:'2026-11-26',records:[
+[8526,[115],["IV-9"],["MPLS"],[{"url":"https://www.rfc-editor.org/rfc/rfc3031.html","referencia":"Fuente primaria del ítem"}],{"texto":"En MPLS, ¿cómo se denomina la clase de paquetes a los que se aplica un tratamiento de reenvío equivalente?"},"C. FEC significa Forwarding Equivalence Class. Las etiquetas representan el tratamiento de reenvío en su contexto y pueden cambiar entre saltos.","corregida"],
+[8527,[108],[],["ATM"],[{"url":"https://www.rfc-editor.org/rfc/rfc2761.html","referencia":"Fuente primaria del ítem"}],{"texto":"¿Cuál de las siguientes siglas no identifica una categoría de servicio ATM en la terminología del RFC 2761?"},"B. CBR, UBR y nrt-VBR son categorías documentadas. HBR no figura entre ellas.","corregida"],
+[8528,[108],[],["ATM"],[{"url":"https://www.broadband-forum.org/download/af-lane-0021.000.pdf","referencia":"Fuente primaria del ítem"}],{"texto":"¿Cómo se denomina la emulación de redes LAN sobre ATM especificada por ATM Forum?"},"A. LANE significa LAN Emulation. Permite que equipos conectados mediante ATM usen un servicio similar al de una LAN.","corregida"],
+[8529,[108],[],["ATM"],[{"url":"https://www.broadband-forum.org/download/af-lane-0021.000.pdf","referencia":"Fuente primaria del ítem"}],{"texto":"¿Qué capa de adaptación ATM utiliza la especificación LANE 1.0 para transportar datos?"},"D. LANE utiliza AAL5 para adaptar sus unidades de datos a las celdas ATM.","corregida"],
+[8530,[1],["I-1"],["Constitución"],[{"url":"https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a9","referencia":"Fuente primaria del ítem"}],null,"C. El artículo 9.2 atribuye ese mandato a los poderes públicos en su conjunto.","vigente"]
+]});
