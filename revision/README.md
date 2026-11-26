@@ -22379,3 +22379,9 @@ Revisión de 8451–8455: 10BASE5, baudios, 40GBASE-LR4, troncal de edificio y v
 Revisión de 8456–8460. Se precisaron las categorías de par trenzado, la directividad para una apertura fija y las vías del conector. Quedan documentadas dos ambigüedades sobre PCM y fallos de topología. El [registro 1631](cambios-lote-1631.json) conserva originales y trazabilidad.
 
 **8.455 con revisión registrada**, incluidas 139 pendientes de resolución, y **3.668 sin revisar**.
+
+## Lote 1632 — 26 de noviembre de 2026
+
+Revisión de 8461–8465: tiempo de transmisión, Franck–Condon, 1000BASE-CX, muestreo y fragmentación IPv4. Se corrigió la clave del router de tránsito. El [registro 1632](cambios-lote-1632.json) conserva originales y fuentes.
+
+**8.460 con revisión registrada**, incluidas 139 pendientes de resolución, y **3.663 sin revisar**.

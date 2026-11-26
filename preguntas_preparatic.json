@@ -450714,7 +450714,7 @@
       "id": 8461,
       "bloque": 0,
       "tema": 0,
-      "texto": "En una red Ethernet 10BASE-T, un paquete de 1000 KBytes se transmite en:",
+      "texto": "¿Cuánto se tarda idealmente en transmitir 1000 KiB a 10 Mbit/s, sin contar cabeceras ni intervalos entre tramas?",
       "opciones": [
         "0,81 ms",
         "8,19 ms",
@@ -450722,27 +450722,77 @@
         "81,9 ms"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "C. 1000 × 1024 × 8 / 10 000 000 s = 819,2 ms. Se trata de un volumen repartido en tramas.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "transmisión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.3/10422/",
+            "referencia": "Fuente técnica primaria"
+          }
+        ],
+        "observaciones": "C. 1000 × 1024 × 8 / 10 000 000 s = 819,2 ms. Se trata de un volumen repartido en tramas."
+      }
     },
     {
       "id": 8462,
       "bloque": 0,
       "tema": 0,
-      "texto": "El principio de Frank-Condon, de especial importancia en las comunicaciones ópticas basadas en láser de semiconductor, establece que:",
+      "texto": "¿Qué aproximación recoge el principio de Franck–Condon para una transición electrónica molecular?",
       "opciones": [
-        "La atenuación de la señal disminuye con el cuadrado de la longitud de onda.",
-        "Sólo son posibles transiciones con emisión de fotones cuando no hay cambio en la cantidad de movimiento del electrón.",
-        "El ruido nodal es máximo en la fibra monomodo.",
-        "El ruido nodal es mínimo en la fibra monomodo."
+        "La atenuación depende del cuadrado de la longitud de onda.",
+        "Las posiciones de los núcleos apenas varían durante la transición.",
+        "El ruido modal es máximo en fibra monomodo.",
+        "La transición exige que la molécula carezca de vibraciones."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. La transición electrónica es rápida respecto al movimiento nuclear. La pregunta original confundía esta aproximación con una condición de momento en semiconductores.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "transmisión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://old.goldbook.iupac.org/html/F/F02510.html",
+            "referencia": "Fuente técnica primaria"
+          }
+        ],
+        "observaciones": "B. La transición electrónica es rápida respecto al movimiento nuclear. La pregunta original confundía esta aproximación con una condición de momento en semiconductores."
+      }
     },
     {
       "id": 8463,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes estándares de redes de área local se caracterizan por ir sobre 2 pares trenzados apantallados?",
+      "texto": "¿Qué variante histórica de Gigabit Ethernet utiliza un cable balanceado apantallado de dos pares?",
       "opciones": [
         "1000BaseLX",
         "1000BaseSX",
@@ -450750,35 +450800,110 @@
         "1000BaseT"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "C. 1000BASE-CX contempla un cable balanceado apantallado de alcance corto. LX y SX emplean fibra y 1000BASE-T utiliza cuatro pares.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "transmisión"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://standards.ieee.org/ieee/802.3/10422/",
+            "referencia": "Fuente técnica primaria"
+          }
+        ],
+        "observaciones": "C. 1000BASE-CX contempla un cable balanceado apantallado de alcance corto. LX y SX emplean fibra y 1000BASE-T utiliza cuatro pares."
+      }
     },
     {
       "id": 8464,
       "bloque": 0,
       "tema": 0,
-      "texto": "El teorema del muestreo, que nos indica la frecuencia con la que debemos muestrear una señal para no perder información al digitalizarla, es debido a:",
+      "texto": "Para una señal ideal en banda base limitada a B Hz, ¿qué tasa de muestreo permite reconstruirla según el teorema de muestreo?",
       "opciones": [
-        "Shannon",
-        "Oppenheim",
-        "Shafer",
-        "Nyquist"
+        "B/2 muestras por segundo.",
+        "B muestras por segundo.",
+        "Cualquier tasa positiva.",
+        "Una tasa superior a 2B muestras por segundo."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "D. Muestrear por encima de 2B evita el solapamiento espectral en las condiciones ideales del teorema. Se evita la atribución exclusiva del original.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [
+          "A2-IV-7"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "transmisión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.math.unl.edu/~bdeng1/Teaching/math943/Topics/Genetics/Shannon1949.pdf",
+            "referencia": "Fuente técnica primaria"
+          }
+        ],
+        "observaciones": "D. Muestrear por encima de 2B evita el solapamiento espectral en las condiciones ideales del teorema. Se evita la atribución exclusiva del original."
+      }
     },
     {
       "id": 8465,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes afirmaciones es correcta para un sistema intermedio o encaminador (router) de una red IP?",
+      "texto": "En el reenvío IPv4 ordinario, ¿qué puede hacer un router con un datagrama de tránsito respecto de la fragmentación?",
       "opciones": [
-        "Un encaminador o router no puede fragmentar un datagrama",
-        "Puede fragmentar un datagrama si es necesario pero no puede reensamblar los fragmentos",
-        "Puede tanto fragmentar un datagrama como reensamblar los fragmentos",
-        "Solo puede reensamblar los paquetes TCP orientados a conexión"
+        "Nunca puede fragmentarlo.",
+        "Puede fragmentarlo si se permite y hace falta, pero no lo reensambla antes de reenviarlo.",
+        "Debe reensamblar siempre los fragmentos de tránsito.",
+        "Solo puede reensamblarlo si transporta TCP."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 1,
+      "comentarios": "B. En IPv4 importa la MTU y el bit DF. El reensamblado ordinario se realiza en el destino. En IPv6 solo fragmenta el origen.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "transmisión"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc1812.html#section-5.2.6",
+            "referencia": "Fuente técnica primaria"
+          }
+        ],
+        "observaciones": "B. En IPv4 importa la MTU y el bit DF. El reensamblado ordinario se realiza en el destino. En IPv6 solo fragmenta el origen."
+      }
     },
     {
       "id": 8466,
