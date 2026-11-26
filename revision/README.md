@@ -22325,3 +22325,9 @@ Revisión de 8406–8410. Se precisaron el apantallamiento electromagnético y l
 Revisión de 8411–8415: detección con honeypots, contactos USB-C, trenzado UTP y transmisión óptica. La prescripción de rosetas AGE de la 8415 queda pendiente de edición y apartado verificables. El [registro 1622](cambios-lote-1622.json) conserva originales y trazabilidad.
 
 **8.410 con revisión registrada**, incluidas 133 pendientes de resolución, y **3.713 sin revisar**.
+
+## Lote 1623 — 26 de noviembre de 2026
+
+Revisión de 8416–8420. Se precisaron la difusión limitada IPv4, el puenteo MAC y el carácter embarcado del subsistema de energía. Se confirmó el comando de IOS para ver la configuración activa. La 8418 requiere definir el medio y las condiciones de comparación. El [registro 1623](cambios-lote-1623.json) conserva originales y trazabilidad.
+
+**8.415 con revisión registrada**, incluidas 134 pendientes de resolución, y **3.708 sin revisar**.
