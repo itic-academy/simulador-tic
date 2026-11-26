@@ -22595,3 +22595,9 @@ Revisión de 8631–8635: integración y despliegue continuo, altos cargos, pres
 Revisión de 8636–8640: modelo entidad–relación, amparo, capacidad de procesos en COBIT 5, mandato del Parlamento Europeo y elementos de DFD. El [registro 1667](cambios-lote-1667.json) conserva originales y fuentes.
 
 **8.635 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.488 sin revisar**.
+
+## Lote 1668 — 26 de noviembre de 2026
+
+Revisión de 8641–8645: DECT, Configuration Manager, bases jerárquicas, herencia en Java y Gestión de Capacidad en ITIL 2011. El [registro 1668](cambios-lote-1668.json) conserva originales y fuentes.
+
+**8.640 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.483 sin revisar**.
