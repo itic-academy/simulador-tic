@@ -22469,3 +22469,9 @@ Revisión de 8526–8530: clases de reenvío MPLS, categorías ATM, LANE y AAL5,
 Revisión de 8531–8535: composición del Congreso, Ley Orgánica del Poder Judicial, instituciones de la UE, relación electrónica y procedimientos de adjudicación. El [registro 1646](cambios-lote-1646.json) conserva originales y fuentes.
 
 **8.530 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.593 sin revisar**.
+
+## Lote 1647 — 26 de noviembre de 2026
+
+Revisión de 8536–8540: publicidad de la contratación, competencia para el recurso especial, software a medida, articulado presupuestario y ayudas Cervera. El [registro 1647](cambios-lote-1647.json) conserva originales y fuentes del BOE y el CDTI.
+
+**8.535 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.588 sin revisar**.
