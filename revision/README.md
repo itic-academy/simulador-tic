@@ -22487,3 +22487,9 @@ Revisión de 8541–8545: notificación electrónica, nulidad de preceptos sobre
 Revisión de 8546–8550: garantía por precios unitarios, duración de derechos sobre software, vulnerabilidad y objetivos de MAGERIT. La normalización de puntuaciones queda pendiente de una definición reproducible. Véase el [registro 1649](cambios-lote-1649.json).
 
 **8.545 con revisión registrada**, incluidas 143 pendientes de resolución, y **3.578 sin revisar**.
+
+## Lote 1650 — 26 de noviembre de 2026
+
+Revisión de 8551–8555: ESB, Mercurial, perceptrón, OGC SOS y RDF/XML. El [registro 1650](cambios-lote-1650.json) conserva originales y fuentes.
+
+**8.550 con revisión registrada**, incluidas 143 pendientes de resolución, y **3.573 sin revisar**.
