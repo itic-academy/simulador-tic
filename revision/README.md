@@ -22967,3 +22967,9 @@ Revisión de 8941–8945: resolución y notificación, representación, derechos
 Revisión de 8946–8950: sector público estatal, presupuestos, ODS 8, deberes del personal y vía administrativa de la AEPD. Véase el [registro 1729](cambios-lote-1729.json).
 
 **8.945 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.178 sin revisar**.
+
+## Lote 1730 — 26 de noviembre de 2026
+
+Revisión de 8951–8955: actuaciones de la AEPD, contratación, propiedad intelectual, portabilidad y salvaguardas. Véase el [registro 1730](cambios-lote-1730.json).
+
+**8.950 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.173 sin revisar**.
