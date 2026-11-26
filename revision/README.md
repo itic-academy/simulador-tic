@@ -22601,3 +22601,9 @@ Revisión de 8636–8640: modelo entidad–relación, amparo, capacidad de proce
 Revisión de 8641–8645: DECT, Configuration Manager, bases jerárquicas, herencia en Java y Gestión de Capacidad en ITIL 2011. El [registro 1668](cambios-lote-1668.json) conserva originales y fuentes.
 
 **8.640 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.483 sin revisar**.
+
+## Lote 1669 — 26 de noviembre de 2026
+
+Revisión de 8646–8650: IEEE 830, consistencia de bases de datos, visión histórica de la Estrategia TIC, espacio de usuario en Linux y guía Scrum. El [registro 1669](cambios-lote-1669.json) conserva originales y fuentes.
+
+**8.645 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.478 sin revisar**.
