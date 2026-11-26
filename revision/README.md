@@ -22913,3 +22913,9 @@ Revisión de 8896–8900: análisis DAFO, objetivos SMART, Qlik Sense y cuadro d
 Revisión de 8901–8905: factores críticos de éxito, cuadro de mando público, DAFO, KPI y objetivos medibles. Véase el [registro 1720](cambios-lote-1720.json).
 
 **8.900 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.223 sin revisar**.
+
+## Lote 1721 — 26 de noviembre de 2026
+
+Revisión de 8906–8910: cuestión de confianza, regencia, inmunidad y gobernanza de la Agenda 2030. Véase el [registro 1721](cambios-lote-1721.json).
+
+**8.905 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.218 sin revisar**.
