@@ -22691,3 +22691,9 @@ Revisión de 8711–8715: notificación de incidentes, autenticación, integrida
 Revisión de 8716–8720: Consejo de Seguridad Nacional, principios del ENS, incidentes, auditoría y autenticidad. Véase el [registro 1683](cambios-lote-1683.json).
 
 **8.715 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.408 sin revisar**.
+
+## Lote 1684 — 26 de noviembre de 2026
+
+Revisión de 8721–8725: dimensiones y requisitos del ENS, estrategia de ciberseguridad de 2019, autoevaluación y selección de medidas. Véase el [registro 1684](cambios-lote-1684.json).
+
+**8.720 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.403 sin revisar**.
