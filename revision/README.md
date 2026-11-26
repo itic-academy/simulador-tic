@@ -22529,3 +22529,9 @@ Revisión de 8576–8580: DOCSIS, smishing, DECT, aplicaciones híbridas y presi
 Revisión de 8581–8585: hipervisores, ámbito de la Guía de Comunicación Digital, relación institucional de la AEPD, software a medida y crecimiento sostenible. Véase el [registro 1656](cambios-lote-1656.json).
 
 **8.580 con revisión registrada**, incluidas 144 pendientes de resolución, y **3.543 sin revisar**.
+
+## Lote 1657 — 26 de noviembre de 2026
+
+Revisión de 8586–8590: cuestiones incidentales, medios propios, consentimiento de menores y recusación. El nivel M3 queda pendiente de identificar la edición y la fuente primaria. Véase el [registro 1657](cambios-lote-1657.json).
+
+**8.585 con revisión registrada**, incluidas 145 pendientes de resolución, y **3.538 sin revisar**.
