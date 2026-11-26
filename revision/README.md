@@ -22307,3 +22307,9 @@ Revisión de 8391–8395. Se confirmó la distinción entre validación y verifi
 Revisión de 8396–8400: concurrencia transaccional, protocolos de almacenamiento, diagramas de flujo de datos, Open Mobile Alliance y direccionamiento histórico por clases. El [registro 1619](cambios-lote-1619.json) conserva originales y fuentes. Cotejo directo con Academy pendiente.
 
 **8.395 con revisión registrada**, incluidas 132 pendientes de resolución, y **3.728 sin revisar**.
+
+## Lote 1620 — 26 de noviembre de 2026
+
+Revisión de 8401–8405: objetivos SMART, PLC interior, digitalización de documentos en oficinas de asistencia, modelos de despliegue en nube y visibilidad en UML. El [registro 1620](cambios-lote-1620.json) conserva originales y fuentes. Cotejo directo con Academy pendiente.
+
+**8.400 con revisión registrada**, incluidas 132 pendientes de resolución, y **3.723 sin revisar**.
