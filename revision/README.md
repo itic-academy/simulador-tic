@@ -22865,3 +22865,9 @@ Revisión de 8856–8860: CMMI, aseguramiento de calidad, SQuaRE, caja negra y S
 Revisión de 8861–8865: pruebas tempranas, evaluación CMMI, Software CMM, TMMi e información documentada en ISO 9001. Véase el [registro 1712](cambios-lote-1712.json).
 
 **8.860 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.263 sin revisar**.
+
+## Lote 1713 — 26 de noviembre de 2026
+
+Revisión de 8866–8870: CMMI, integración continua, TDD y procesos de prueba. Véase el [registro 1713](cambios-lote-1713.json).
+
+**8.865 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.258 sin revisar**.
