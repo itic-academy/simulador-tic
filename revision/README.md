@@ -22655,3 +22655,9 @@ Revisión de 8681–8685: responsabilidad patrimonial, valor público, CIRCE, re
 Revisión de 8686–8690: medios alternativos del ENS, Mage.exe, NFC del DNI 3.0, zero client y planificación de sistemas en Métrica v3. Véase el [registro 1677](cambios-lote-1677.json).
 
 **8.685 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.438 sin revisar**.
+
+## Lote 1678 — 26 de noviembre de 2026
+
+Revisión de 8691–8695: planificación de pruebas, IAX2, virtualización de aplicaciones y servidores e instrucciones técnicas del ENS. Véase el [registro 1678](cambios-lote-1678.json).
+
+**8.690 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.433 sin revisar**.
