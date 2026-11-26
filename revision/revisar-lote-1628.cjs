@@ -1,0 +1,8 @@
+const apply = require('./aplicar-lote.cjs');
+apply({numero:'1628',fecha:'2026-11-26',records:[
+[8441,[118],["IV-8"],["Ethernet compartida"],[{"url":"https://www.cisco.com/en/US/docs/internetworking/troubleshooting/guide/tr1904.html","referencia":"Ethernet compartida"}],{"texto":"En una LAN Ethernet compartida y semidúplex con colisiones frecuentes, ¿qué medida reduce la contención en cada dominio de colisión?"},"A. Segmentar mediante un conmutador separa los dominios de colisión. En enlaces punto a punto full-duplex no se usa CSMA/CD.","corregida"],
+[8442,[118],["IV-7"],["cableado estructurado"],[{"url":"https://www.iso.org/standard/70636.html","referencia":"cableado estructurado"}],null,"D. ISO/IEC 20000 se refiere a gestión de servicios. Las otras tres familias tratan cableado genérico o estructurado.","vigente"],
+[8443,[118],["IV-8"],["802.3bz"],[{"url":"https://www.ieee802.org/3/bz/","referencia":"802.3bz"}],{"texto":"¿Qué velocidades nominales introdujo IEEE 802.3bz-2016 para Ethernet sobre par trenzado?","opciones":["5 y 10 Gbit/s.","1 y 2,5 Gbit/s.","10 y 25 Gbit/s.","2,5 y 5 Gbit/s."]},"D. La enmienda definió 2.5GBASE-T y 5GBASE-T. La longitud y categoría admisibles dependen de las especificaciones del canal.","corregida"],
+[8444,[118],["IV-7"],["par trenzado"],[{"url":"https://www.iso.org/standard/66182.html","referencia":"par trenzado"}],null,"B. UTP significa Unshielded Twisted Pair. OM1, en cambio, designa una categoría de fibra multimodo.","vigente"],
+[8445,[118],["IV-7"],["distribuidores"],[],null,"Pendiente. Falta verificar la edición y el apartado normativo que enumera los distribuidores del modelo genérico de campus, edificio y planta.","pendiente_fuente"]
+]});

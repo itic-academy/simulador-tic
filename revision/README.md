@@ -22355,3 +22355,9 @@ Revisión de 8431–8435: codificación Manchester, coaxial Ethernet, cruce MDI,
 Revisión de 8436–8440: sincronización digital, latencia Ethernet, pantallas del cableado y conectores ópticos y modulares. El [registro 1627](cambios-lote-1627.json) conserva las preguntas originales y las referencias.
 
 **8.435 con revisión registrada**, incluidas 136 pendientes de resolución, y **3.688 sin revisar**.
+
+## Lote 1628 — 26 de noviembre de 2026
+
+Revisión de 8441–8445: segmentación Ethernet, familias normativas, velocidades 802.3bz y UTP. La clasificación de distribuidores queda pendiente de referencia normativa directa. El [registro 1628](cambios-lote-1628.json) conserva originales y fuentes.
+
+**8.440 con revisión registrada**, incluidas 137 pendientes de resolución, y **3.683 sin revisar**.
