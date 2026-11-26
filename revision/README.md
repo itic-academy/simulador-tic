@@ -22547,3 +22547,9 @@ Revisión de 8591–8595: objeto de la LSSI, cabecera UDP, ocupación de cubos y
 Revisión de 8596–8600: modelos LDAP, aprobación de Cl@ve, finalidad del ENS, Red SARA y cuarta forma normal. Véase el [registro 1659](cambios-lote-1659.json).
 
 **8.595 con revisión registrada**, incluidas 146 pendientes de resolución, y **3.528 sin revisar**.
+
+## Lote 1660 — 26 de noviembre de 2026
+
+Revisión de 8601–8605: norma europea, autoridad de certificación, valor en ITIL 4, pruebas de caja negra y APNG. El [registro 1660](cambios-lote-1660.json) conserva originales y fuentes.
+
+**8.600 con revisión registrada**, incluidas 146 pendientes de resolución, y **3.523 sin revisar**.
