@@ -22751,3 +22751,9 @@ Revisión de 8761–8765: fibra óptica, DMZ, HomeRF, DHCP y direcciones de loop
 Revisión de 8766–8770: bandas prioritarias 5G, firmas SOAP, TETRA, retransmisión de enlace y SIP. Véase el [registro 1693](cambios-lote-1693.json).
 
 **8.765 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.358 sin revisar**.
+
+## Lote 1694 — 26 de noviembre de 2026
+
+Revisión de 8771–8775: APT, arquitectura WAP, directorio X.500, titulado accesible y centros alternativos. Véase el [registro 1694](cambios-lote-1694.json).
+
+**8.770 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.353 sin revisar**.
