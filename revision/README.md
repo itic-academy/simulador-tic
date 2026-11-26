@@ -22853,3 +22853,9 @@ Revisión de 8846–8850: concentración de defectos, repositorios Git, TestLink
 Revisión de 8851–8855: gestión de calidad del software, CMMI, regresión, eficiencia y detección de defectos. Véase el [registro 1710](cambios-lote-1710.json).
 
 **8.850 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.273 sin revisar**.
+
+## Lote 1711 — 26 de noviembre de 2026
+
+Revisión de 8856–8860: CMMI, aseguramiento de calidad, SQuaRE, caja negra y SonarQube. Véase el [registro 1711](cambios-lote-1711.json).
+
+**8.855 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.268 sin revisar**.
