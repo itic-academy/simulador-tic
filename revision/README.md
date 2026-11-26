@@ -22475,3 +22475,9 @@ Revisión de 8531–8535: composición del Congreso, Ley Orgánica del Poder Jud
 Revisión de 8536–8540: publicidad de la contratación, competencia para el recurso especial, software a medida, articulado presupuestario y ayudas Cervera. El [registro 1647](cambios-lote-1647.json) conserva originales y fuentes del BOE y el CDTI.
 
 **8.535 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.588 sin revisar**.
+
+## Lote 1648 — 26 de noviembre de 2026
+
+Revisión de 8541–8545: notificación electrónica, nulidad de preceptos sobre unidad de mercado, mandato de la AEPD, propuesta de Estrategia TIC y DAFO. El [registro 1648](cambios-lote-1648.json) conserva originales y fuentes.
+
+**8.540 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.583 sin revisar**.
