@@ -22241,3 +22241,9 @@ Revisión individual de 8341–8345. Se verificaron herramientas y componentes M
 Fuentes: proyectos oficiales Jupyter, ONNX y Metaflow; Microsoft Learn; MÉTRICA v3; ISO e ISO/TC 176. Clasificación según el temario oficial del repositorio. Pendiente el cotejo directo con los bloques 34 y 38 de Academy en Drive.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.340 revisadas** (1.582 vigentes, 5.985 corregidas y 644 históricas), 129 pendientes y **3.783 sin revisar**; errores estructurales: 0.
+
+## Lote 1609 — 26 de noviembre de 2026
+
+Revisión individual de 8346–8350. Se precisaron el efecto de una avería en 2PC y el cambio de direccionamiento en IPv6. Se confirmaron la sintaxis de atributos XML, Redis como almacén clave-valor y la definición de RTO. El [registro 1609](cambios-lote-1609.json) conserva originales, fuentes primarias y clasificación A1/A2. Queda pendiente el cotejo directo con Academy.
+
+Inventario y verificador ejecutados: 12.123 válidas; **8.345 con revisión registrada** (1.585 vigentes, 5.987 corregidas, 644 históricas y 129 pendientes de resolución), **3.778 sin revisar** y cero errores estructurales.
