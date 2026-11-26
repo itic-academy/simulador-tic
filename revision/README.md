@@ -22637,3 +22637,9 @@ Revisión de 8666–8670: conservación de datos, decretos-leyes, especializaci�
 Revisión de 8671–8675: abstención, gobernanza TIC, sistemas operativos, NIS y PermGen. Véase el [registro 1674](cambios-lote-1674.json).
 
 **8.670 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.453 sin revisar**.
+
+## Lote 1675 — 26 de noviembre de 2026
+
+Revisión de 8676–8680: sede del Parlamento Europeo, autonomía financiera, Defensor del Pueblo Europeo, competencias de la Unión y registro electrónico. Véase el [registro 1675](cambios-lote-1675.json).
+
+**8.675 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.448 sin revisar**.
