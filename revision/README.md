@@ -22955,3 +22955,9 @@ Revisión de 8931–8935: CMMI, gestión documental, ICMP, prevención de fugas 
 Revisión de 8936–8940: multicast IPv4, HMAC, exclusividad jurisdiccional, Tribunal Constitucional y altos cargos. Véase el [registro 1727](cambios-lote-1727.json).
 
 **8.935 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.188 sin revisar**.
+
+## Lote 1728 — 26 de noviembre de 2026
+
+Revisión de 8941–8945: resolución y notificación, representación, derechos, alzada y clasificación de contratistas. Véase el [registro 1728](cambios-lote-1728.json).
+
+**8.940 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.183 sin revisar**.
