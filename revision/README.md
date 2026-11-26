@@ -22901,3 +22901,9 @@ Revisión de 8886–8890: Pareto, DAFO, estructura de desglose del trabajo y cua
 Revisión de 8891–8895: cuadro de mando integral, objetivos SMART, EDT, diagrama de Pareto y ruta crítica. Véase el [registro 1718](cambios-lote-1718.json).
 
 **8.890 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.233 sin revisar**.
+
+## Lote 1719 — 26 de noviembre de 2026
+
+Revisión de 8896–8900: análisis DAFO, objetivos SMART, Qlik Sense y cuadro de mando integral. Véase el [registro 1719](cambios-lote-1719.json).
+
+**8.895 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.228 sin revisar**.
