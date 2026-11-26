@@ -22295,3 +22295,9 @@ Revisión de 8381–8385: formato JSON, límites de NTFS, origen de IKEv1, prop�
 Revisión de 8386–8390: planificación estratégica, duración de derechos sobre software, aprobación de planes de numeración, contratación centralizada y requisitos según IEEE 830-1998. El [registro 1617](cambios-lote-1617.json) conserva originales, explicaciones y fuentes. Cotejo directo con Academy pendiente.
 
 **8.385 con revisión registrada**, incluidas 131 pendientes de resolución, y **3.738 sin revisar**.
+
+## Lote 1618 — 26 de noviembre de 2026
+
+Revisión de 8391–8395. Se confirmó la distinción entre validación y verificación y el encaje de PLCP. Se corrigió la clave sobre el IESG y se acotó el informe técnico al artículo 13.4 del RD 1125/2024. CMMI queda pendiente de fuente y edición. El [registro 1618](cambios-lote-1618.json) conserva originales y trazabilidad. Cotejo directo con Academy pendiente.
+
+**8.390 con revisión registrada**, incluidas 132 pendientes de resolución, y **3.733 sin revisar**.
