@@ -22721,3 +22721,9 @@ Revisión de 8736–8740: regulación y requisitos del ENS, informe del estado d
 Revisión de 8741–8745: guías y auditorías del ENS, CPSTIC, Red SARA y CIFS. Véase el [registro 1688](cambios-lote-1688.json).
 
 **8.740 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.383 sin revisar**.
+
+## Lote 1689 — 26 de noviembre de 2026
+
+Revisión de 8746–8750: Bluetooth LE, zonas NGA blancas, VLAN estáticas, balanceo mediante ADC y HDLC. Véase el [registro 1689](cambios-lote-1689.json).
+
+**8.745 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.378 sin revisar**.
