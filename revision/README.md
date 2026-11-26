@@ -22673,3 +22673,9 @@ Revisión de 8696–8700: dimensiones y conformidad del ENS, guías CCN-STIC y E
 Revisión de 8701–8705: ámbito y principios del ENS, confidencialidad, CCN-STIC 801 y borrado seguro. Véase el [registro 1680](cambios-lote-1680.json).
 
 **8.700 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.423 sin revisar**.
+
+## Lote 1681 — 26 de noviembre de 2026
+
+Revisión de 8706–8710: PILAR, criptología del ENS, GLORIA, dimensiones del ENS y funciones del CCN-CERT. Véase el [registro 1681](cambios-lote-1681.json).
+
+**8.705 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.418 sin revisar**.
