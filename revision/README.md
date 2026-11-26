@@ -22619,3 +22619,9 @@ Revisión de 8651–8655: dirección administrativa, presidencia rotatoria del C
 Revisión de 8656–8660: control de versiones, plan europeo 2016–2020, mayoría de leyes orgánicas, legitimación en el recurso por omisión y ley de Okun. El [registro 1671](cambios-lote-1671.json) conserva originales y fuentes.
 
 **8.655 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.468 sin revisar**.
+
+## Lote 1672 — 26 de noviembre de 2026
+
+Revisión de 8661–8665: cooperación en igualdad, Manifiesto Ágil, señalización X.25, SCSP y Comisión Europea. Véase el [registro 1672](cambios-lote-1672.json).
+
+**8.660 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.463 sin revisar**.
