@@ -22769,3 +22769,9 @@ Revisión de 8776–8780: PAdES, Wake on LAN, NFC, CMIP y Erlang B. Véase el [r
 Revisión de 8781–8785: mashups, RTP, inicio de sesión único, calidad en RDSI y bandas 5G. Véase el [registro 1696](cambios-lote-1696.json).
 
 **8.780 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.343 sin revisar**.
+
+## Lote 1697 — 26 de noviembre de 2026
+
+Revisión de 8786–8790: inventario de puertos, selección de banda Wi-Fi y principios constitucionales. Véase el [registro 1697](cambios-lote-1697.json).
+
+**8.785 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.338 sin revisar**.
