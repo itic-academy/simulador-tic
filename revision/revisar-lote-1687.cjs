@@ -1,0 +1,10 @@
+const apply = require('./aplicar-lote.cjs');
+const ens = 'https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191';
+
+apply({numero:'1687',fecha:'2026-11-26',records:[
+[8736,[48],['I-9'],['ENS'],[{url:ens,referencia:'Real Decreto 311/2022, título y artículo 1'}],null,'D. El Real Decreto 311/2022, de 3 de mayo, regula el Esquema Nacional de Seguridad. El Real Decreto 4/2010 regula el Esquema Nacional de Interoperabilidad.','vigente'],
+[8737,[48],['I-9'],['ENS','líneas de defensa'],[{url:ens+'#a12',referencia:'Real Decreto 311/2022, artículos 5, 9 y 12.6'}],null,'A. Las líneas de defensa son un principio básico desarrollado en el artículo 9. Profesionalidad, análisis y gestión de los riesgos y mínimo privilegio figuran en la lista de requisitos mínimos del artículo 12.6.','vigente'],
+[8738,[48],['I-9'],['ENS','informe del estado de la seguridad'],[{url:ens+'#a32',referencia:'Real Decreto 311/2022, artículo 32.1'}],{opciones:['El Centro Criptológico Nacional.','El Consejo Superior de Administración Electrónica.','La Comisión Sectorial de Administración Electrónica.','La Comisión Interministerial de Administración Electrónica.']},'C. La Comisión Sectorial recoge la información sobre el estado de las variables de seguridad. El CCN articula los procedimientos de recogida y consolidación.','corregida'],
+[8739,[48],[],['Estrategia Nacional de Ciberseguridad'],[{url:'https://www.boe.es/buscar/doc.php?id=BOE-A-2019-6347',referencia:'Orden PCI/487/2019, publicación en el BOE de 30 de abril de 2019'}],{texto:'¿En qué año se publicó la Estrategia Nacional de Ciberseguridad mediante la Orden PCI/487/2019?'},'D. La orden se publicó el 30 de abril de 2019.','corregida'],
+[8740,[48],['I-9'],['ENS','consolidación de información'],[{url:ens+'#a32',referencia:'Real Decreto 311/2022, artículo 32.2'}],{texto:'Según el artículo 32.2 del ENS, ¿quién articula los procedimientos para recoger y consolidar la información del informe del estado de la seguridad?'},'B. El CCN articula los procedimientos y los aspectos metodológicos para tratar y explotar la información. El apartado 1 atribuye a la Comisión Sectorial la recogida de la información.','corregida']
+]});

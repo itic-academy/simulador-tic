@@ -22709,3 +22709,9 @@ Revisión de 8726–8730: niveles de seguridad de los servicios, notificación d
 Revisión de 8731–8735: adecuación al ENS, gobernanza de ciberseguridad, ISO/IEC 27001, RTO y principios básicos. Véase el [registro 1686](cambios-lote-1686.json).
 
 **8.730 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.393 sin revisar**.
+
+## Lote 1687 — 26 de noviembre de 2026
+
+Revisión de 8736–8740: regulación y requisitos del ENS, informe del estado de la seguridad y Estrategia Nacional de Ciberseguridad 2019. Véase el [registro 1687](cambios-lote-1687.json).
+
+**8.735 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.388 sin revisar**.
