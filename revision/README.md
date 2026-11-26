@@ -22541,3 +22541,9 @@ Revisión de 8586–8590: cuestiones incidentales, medios propios, consentimient
 Revisión de 8591–8595: objeto de la LSSI, cabecera UDP, ocupación de cubos y Julia. Forma2 queda pendiente de una referencia oficial del INAP. Véase el [registro 1658](cambios-lote-1658.json).
 
 **8.590 con revisión registrada**, incluidas 146 pendientes de resolución, y **3.533 sin revisar**.
+
+## Lote 1659 — 26 de noviembre de 2026
+
+Revisión de 8596–8600: modelos LDAP, aprobación de Cl@ve, finalidad del ENS, Red SARA y cuarta forma normal. Véase el [registro 1659](cambios-lote-1659.json).
+
+**8.595 con revisión registrada**, incluidas 146 pendientes de resolución, y **3.528 sin revisar**.
