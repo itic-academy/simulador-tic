@@ -22745,3 +22745,9 @@ Revisión de 8756–8760: topología en estrella, direcciones MAC, disponibilida
 Revisión de 8761–8765: fibra óptica, DMZ, HomeRF, DHCP y direcciones de loopback. Véase el [registro 1692](cambios-lote-1692.json).
 
 **8.760 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.363 sin revisar**.
+
+## Lote 1693 — 26 de noviembre de 2026
+
+Revisión de 8766–8770: bandas prioritarias 5G, firmas SOAP, TETRA, retransmisión de enlace y SIP. Véase el [registro 1693](cambios-lote-1693.json).
+
+**8.765 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.358 sin revisar**.
