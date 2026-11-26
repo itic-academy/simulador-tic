@@ -22613,3 +22613,9 @@ Revisión de 8646–8650: IEEE 830, consistencia de bases de datos, visión hist
 Revisión de 8651–8655: dirección administrativa, presidencia rotatoria del Consejo, disponibilidad, PNG y cese del Gobierno. El [registro 1670](cambios-lote-1670.json) conserva originales y fuentes.
 
 **8.650 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.473 sin revisar**.
+
+## Lote 1671 — 26 de noviembre de 2026
+
+Revisión de 8656–8660: control de versiones, plan europeo 2016–2020, mayoría de leyes orgánicas, legitimación en el recurso por omisión y ley de Okun. El [registro 1671](cambios-lote-1671.json) conserva originales y fuentes.
+
+**8.655 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.468 sin revisar**.
