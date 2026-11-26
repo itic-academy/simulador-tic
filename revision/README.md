@@ -22835,3 +22835,9 @@ Revisión de 8831–8835: X.400, LDIF, GPRS, H.323 e inicio de sesión único. V
 Revisión de 8836–8840: Kerberos, reajuste accesible, prueba del camino básico, CMMI y calidad del producto. Véase el [registro 1707](cambios-lote-1707.json).
 
 **8.835 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.288 sin revisar**.
+
+## Lote 1708 — 26 de noviembre de 2026
+
+Revisión de 8841–8845: MantisBT, gestión de servicios y de la calidad, normas de pruebas e integración sándwich. Véase el [registro 1708](cambios-lote-1708.json).
+
+**8.840 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.283 sin revisar**.
