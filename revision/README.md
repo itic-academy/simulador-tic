@@ -22421,3 +22421,9 @@ Revisión de 8486–8490: celdas ATM, servicios Carrier Ethernet, extremos MPLS,
 Revisión de 8491–8495: apertura TCP, multiplexación ATM, jerarquía SDH, caminos MPLS y campo GFC. El [registro 1638](cambios-lote-1638.json) conserva originales y fuentes del IETF y la UIT.
 
 **8.490 con revisión registrada**, incluidas 141 pendientes de resolución, y **3.633 sin revisar**.
+
+## Lote 1639 — 26 de noviembre de 2026
+
+Revisión de 8496–8500. Se precisaron la compatibilidad SDH/SONET, la atenuación óptica y el concepto de LSP. Se confirmó la nomenclatura de las celdas ATM. La pregunta sobre licencias LMDS queda pendiente de adjudicaciones oficiales. Véase el [registro 1639](cambios-lote-1639.json).
+
+**8.495 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.628 sin revisar**.
