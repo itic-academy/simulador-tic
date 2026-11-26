@@ -23033,3 +23033,9 @@ Revisión de 8996–9000: carga ETL, análisis de datos, integración, sistemas 
 Revisión de 9001–9005: planificación de sistemas, OLAP, módulos ERP, Gibson y Nolan y transacciones operacionales. Véase el [registro 1740](cambios-lote-1740.json).
 
 **9.000 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.123 sin revisar**.
+
+## Lote 1741 — 27 de noviembre de 2026
+
+Revisión de 9006–9010: planificación tecnológica, flujos de datos, unidades TIC, conocimiento tácito y COBIT. Véase el [registro 1741](cambios-lote-1741.json).
+
+**9.005 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.118 sin revisar**.
