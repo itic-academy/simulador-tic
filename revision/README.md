@@ -22397,3 +22397,9 @@ Revisión de 8466–8470. Se precisaron el ámbito de ISO/IEC 11801-2, el rellen
 Revisión de 8471–8475. Se documentaron el paso de testigo, 1000BASE-ZX, el apantallamiento de pares y las celdas ATM. La banda del coaxial requiere especificar cable y condiciones. Véase el [registro 1634](cambios-lote-1634.json).
 
 **8.470 con revisión registrada**, incluidas 141 pendientes de resolución, y **3.653 sin revisar**.
+
+## Lote 1635 — 26 de noviembre de 2026
+
+Revisión de 8476–8480. Se verificaron el alcance de VPI/VCI, la cabecera ATM, el campo TTL de MPLS, la dirección del LSP básico y el servicio Ethernet multipunto VPLS. El [registro 1635](cambios-lote-1635.json) conserva originales y referencias de UIT e IETF.
+
+**8.475 con revisión registrada**, incluidas 141 pendientes de resolución, y **3.648 sin revisar**.

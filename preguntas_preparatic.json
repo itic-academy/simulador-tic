@@ -451295,7 +451295,30 @@
         "solo entre el terminal y el switch ATM"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "C. El par VPI/VCI identifica el canal virtual en la interfaz y dirección correspondientes. Sus valores pueden cambiar al conmutar.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ATM"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-I.150-199511-S%21%21PDF-E&lang=s&type=items",
+            "referencia": "ATM"
+          }
+        ],
+        "observaciones": "C. El par VPI/VCI identifica el canal virtual en la interfaz y dirección correspondientes. Sus valores pueden cambiar al conmutar."
+      }
     },
     {
       "id": 8477,
@@ -451309,13 +451332,38 @@
         "Se compone de 16 bits"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. El campo TTL de cada entrada de la pila MPLS ocupa ocho bits.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "TTL"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3032.html#section-2.1",
+            "referencia": "TTL"
+          }
+        ],
+        "observaciones": "B. El campo TTL de cada entrada de la pila MPLS ocupa ocho bits."
+      }
     },
     {
       "id": 8478,
       "bloque": 0,
       "tema": 0,
-      "texto": "ATM (modo de transferencia asíncrono) es un protocolo de nivel 2 utilizado en las redes de operadores sobre el que se encapsulan protocolos de niveles superiores en celdas de 53 octetos. Indique cuál de las siguientes capas es la encargada de añadir los últimos 5 bytes de overhead o sobrecarga de protocolo a los 48 bytes restántes para completar la celda ATM:",
+      "texto": "En el modelo de referencia ATM, ¿qué capa incorpora la cabecera de cinco octetos al campo de información de 48 octetos?",
       "opciones": [
         "Capa AAL1",
         "Capa CBR",
@@ -451323,35 +451371,108 @@
         "Capa ATM"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "D. La capa ATM incorpora la cabecera de la celda. AAL adapta los datos de capas superiores y CBR es una categoría de servicio.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ATM"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=4561",
+            "referencia": "ATM"
+          }
+        ],
+        "observaciones": "D. La capa ATM incorpora la cabecera de la celda. AAL adapta los datos de capas superiores y CBR es una categoría de servicio."
+      }
     },
     {
       "id": 8479,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la respuesta incorrecta respecto a MPLS y VPLS:",
+      "texto": "¿Qué afirmación sobre un LSP MPLS convencional de RFC 3031 es incorrecta?",
       "opciones": [
-        "RSVP-TE y LDP son protocolos de establecimiento de camino",
-        "En MPLS el camino establecido es bidireccional",
-        "VPLS permite conexiones muchos a muchos mientras que MPLS es punto a punto",
-        "El campo de etiqueta en MPLS es de 20 bits"
+        "Es un camino de conmutación de etiquetas.",
+        "Es bidireccional por definición.",
+        "Tiene un sentido de avance de entrada a salida.",
+        "Los nodos intermedios pueden conmutar la etiqueta."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. El LSP básico tiene una dirección. Para comunicación en ambos sentidos se pueden establecer caminos en sentidos opuestos. La comparación general con VPLS del original era imprecisa.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MPLS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3031.html",
+            "referencia": "MPLS"
+          }
+        ],
+        "observaciones": "B. El LSP básico tiene una dirección. Para comunicación en ambos sentidos se pueden establecer caminos en sentidos opuestos. La comparación general con VPLS del original era imprecisa."
+      }
     },
     {
       "id": 8480,
       "bloque": 0,
       "tema": 0,
-      "texto": "Indique la afirmación correcta respecto a VPLS:",
+      "texto": "¿Qué servicio proporciona VPLS según el RFC 4762?",
       "opciones": [
-        "Sólo permite establecer enlaces VPN punto a punto.",
-        "Ofrece un servicio VPN de capa 4.",
-        "Permite establecer Calidad de Servicio (QoS) utilizando el campo EXP.",
-        "Sólo es útil en un contexto LAN."
+        "Una VPN exclusivamente punto a punto.",
+        "Una VPN de capa de transporte.",
+        "Un servicio Ethernet multipunto de capa 2 sobre una red de proveedor.",
+        "Un servicio limitado a un único conmutador físico."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "C. VPLS emula una LAN Ethernet entre sedes. La gestión de QoS en un transporte MPLS es una cuestión distinta del servicio VPLS.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "VPLS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc4762.html",
+            "referencia": "VPLS"
+          }
+        ],
+        "observaciones": "C. VPLS emula una LAN Ethernet entre sedes. La gestión de QoS en un transporte MPLS es una cuestión distinta del servicio VPLS."
+      }
     },
     {
       "id": 8481,
