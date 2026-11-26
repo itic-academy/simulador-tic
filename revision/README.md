@@ -22331,3 +22331,9 @@ Revisión de 8411–8415: detección con honeypots, contactos USB-C, trenzado UT
 Revisión de 8416–8420. Se precisaron la difusión limitada IPv4, el puenteo MAC y el carácter embarcado del subsistema de energía. Se confirmó el comando de IOS para ver la configuración activa. La 8418 requiere definir el medio y las condiciones de comparación. El [registro 1623](cambios-lote-1623.json) conserva originales y trazabilidad.
 
 **8.415 con revisión registrada**, incluidas 134 pendientes de resolución, y **3.708 sin revisar**.
+
+## Lote 1624 — 26 de noviembre de 2026
+
+Revisión de 8421–8425: multiplexación, modos de fibra, 100BASE-TX y ruido térmico. La 8424 queda pendiente de una edición y cláusula verificables de ISO/IEC 11801. El [registro 1624](cambios-lote-1624.json) conserva originales y fuentes.
+
+**8.420 con revisión registrada**, incluidas 135 pendientes de resolución, y **3.703 sin revisar**.
