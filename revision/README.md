@@ -22643,3 +22643,9 @@ Revisión de 8671–8675: abstención, gobernanza TIC, sistemas operativos, NIS 
 Revisión de 8676–8680: sede del Parlamento Europeo, autonomía financiera, Defensor del Pueblo Europeo, competencias de la Unión y registro electrónico. Véase el [registro 1675](cambios-lote-1675.json).
 
 **8.675 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.448 sin revisar**.
+
+## Lote 1676 — 26 de noviembre de 2026
+
+Revisión de 8681–8685: responsabilidad patrimonial, valor público, CIRCE, reutilización y conservación documental. Véase el [registro 1676](cambios-lote-1676.json).
+
+**8.680 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.443 sin revisar**.
