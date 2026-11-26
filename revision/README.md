@@ -22523,3 +22523,9 @@ Revisión de 8571–8575. Se confirmaron loopback, RTP, SNMP y TRAP. La 8573 que
 Revisión de 8576–8580: DOCSIS, smishing, DECT, aplicaciones híbridas y presidencia del Consejo Nacional de Ciberseguridad. El [registro 1655](cambios-lote-1655.json) conserva originales y fuentes.
 
 **8.575 con revisión registrada**, incluidas 144 pendientes de resolución, y **3.548 sin revisar**.
+
+## Lote 1656 — 26 de noviembre de 2026
+
+Revisión de 8581–8585: hipervisores, ámbito de la Guía de Comunicación Digital, relación institucional de la AEPD, software a medida y crecimiento sostenible. Véase el [registro 1656](cambios-lote-1656.json).
+
+**8.580 con revisión registrada**, incluidas 144 pendientes de resolución, y **3.543 sin revisar**.
