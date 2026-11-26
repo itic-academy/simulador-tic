@@ -22979,3 +22979,9 @@ Revisión de 8951–8955: actuaciones de la AEPD, contratación, propiedad intel
 Revisión de 8956–8960: trazabilidad, representación en ISO, vigilancia tecnológica, transacciones y planificación de CPU. Véase el [registro 1731](cambios-lote-1731.json).
 
 **8.955 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.168 sin revisar**.
+
+## Lote 1732 — 26 de noviembre de 2026
+
+Revisión de 8961–8965: credenciales en RODC, IMS jerárquico, experiencia de usuario, beans con estado y LibreOffice Draw. Véase el [registro 1732](cambios-lote-1732.json).
+
+**8.960 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.163 sin revisar**.
