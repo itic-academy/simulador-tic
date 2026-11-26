@@ -22577,3 +22577,9 @@ Revisión de 8616–8620: campos estáticos Java, gestión de servicios ITIL, pr
 Revisión de 8621–8625: manejadores JSP, autorización de contratos PRTR, separación dúplex GSM 900 y CPU Ready. La equivalencia de métricas ITIL queda pendiente de comprobar en el glosario original. Véase el [registro 1664](cambios-lote-1664.json).
 
 **8.620 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.503 sin revisar**.
+
+## Lote 1665 — 26 de noviembre de 2026
+
+Revisión de 8626–8630: ECMA, Habilit@, IEEE 802.11p, anualidad presupuestaria y estrategia europea de 2015. El [registro 1665](cambios-lote-1665.json) conserva originales y fuentes.
+
+**8.625 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.498 sin revisar**.
