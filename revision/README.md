@@ -22811,3 +22811,9 @@ Revisión de 8811–8815: almacén de datos, HTML, DNIe, oráculos y diseño en 
 Revisión de 8816–8820: RUP, diseño estructurado, diagramas de flujo de datos y cohesión. Véase el [registro 1703](cambios-lote-1703.json).
 
 **8.815 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.308 sin revisar**.
+
+## Lote 1704 — 26 de noviembre de 2026
+
+Revisión de 8821–8825: Glade, maquetas de interfaz, puntos de función, PDCA y diafonía. Véase el [registro 1704](cambios-lote-1704.json).
+
+**8.820 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.303 sin revisar**.
