@@ -22535,3 +22535,9 @@ Revisión de 8581–8585: hipervisores, ámbito de la Guía de Comunicación Dig
 Revisión de 8586–8590: cuestiones incidentales, medios propios, consentimiento de menores y recusación. El nivel M3 queda pendiente de identificar la edición y la fuente primaria. Véase el [registro 1657](cambios-lote-1657.json).
 
 **8.585 con revisión registrada**, incluidas 145 pendientes de resolución, y **3.538 sin revisar**.
+
+## Lote 1658 — 26 de noviembre de 2026
+
+Revisión de 8591–8595: objeto de la LSSI, cabecera UDP, ocupación de cubos y Julia. Forma2 queda pendiente de una referencia oficial del INAP. Véase el [registro 1658](cambios-lote-1658.json).
+
+**8.590 con revisión registrada**, incluidas 146 pendientes de resolución, y **3.533 sin revisar**.
