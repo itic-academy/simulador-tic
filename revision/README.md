@@ -22289,3 +22289,9 @@ Inventario y verificador ejecutados: **8.375 con revisión registrada**, incluid
 Revisión de 8381–8385: formato JSON, límites de NTFS, origen de IKEv1, propósito de ASI y media queries. El [registro 1616](cambios-lote-1616.json) conserva originales y fuentes. Cotejo directo con Academy pendiente.
 
 **8.380 con revisión registrada**, incluidas 131 pendientes de resolución, y **3.743 sin revisar**.
+
+## Lote 1617 — 26 de noviembre de 2026
+
+Revisión de 8386–8390: planificación estratégica, duración de derechos sobre software, aprobación de planes de numeración, contratación centralizada y requisitos según IEEE 830-1998. El [registro 1617](cambios-lote-1617.json) conserva originales, explicaciones y fuentes. Cotejo directo con Academy pendiente.
+
+**8.385 con revisión registrada**, incluidas 131 pendientes de resolución, y **3.738 sin revisar**.
