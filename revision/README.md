@@ -22817,3 +22817,9 @@ Revisión de 8816–8820: RUP, diseño estructurado, diagramas de flujo de datos
 Revisión de 8821–8825: Glade, maquetas de interfaz, puntos de función, PDCA y diafonía. Véase el [registro 1704](cambios-lote-1704.json).
 
 **8.820 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.303 sin revisar**.
+
+## Lote 1705 — 26 de noviembre de 2026
+
+Revisión de 8826–8830: HTTPS, cabeceras IPv6, ARP, MTU de ruta y MGCP. Véase el [registro 1705](cambios-lote-1705.json).
+
+**8.825 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.298 sin revisar**.

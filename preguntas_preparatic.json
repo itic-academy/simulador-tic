@@ -464887,21 +464887,47 @@
       "id": 8826,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a SSL:",
+      "texto": "¿Qué esquema de URI identifica el acceso a un recurso HTTP mediante una conexión protegida con TLS?",
       "opciones": [
-        "Es un protocolo promovido por IETF",
-        "Se diferencia de TSL en las técnicas criptográficas empleadas",
-        "Cuando HTTP se usa sobre un canal SSL se denomina HTTPS",
-        "Está restringido a su uso en browsers"
+        "ftp",
+        "http",
+        "https",
+        "smtp"
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "C. HTTPS protege la comunicación HTTP mediante TLS. SSL es el predecesor obsoleto de TLS.",
+      "clasificacion": {
+        "A1": [
+          "A1-125"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "HTTPS",
+        "TLS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-4.2.2",
+            "referencia": "RFC 9110, sección 4.2.2"
+          }
+        ],
+        "observaciones": "C. HTTPS protege la comunicación HTTP mediante TLS. SSL es el predecesor obsoleto de TLS."
+      }
     },
     {
       "id": 8827,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de las siguientes cabeceras de extensión de IPv6 ha de ser examinada por los nodos intermedios de la red y aparece inmediatamente después de la cabecera IPv6?",
+      "texto": "¿Qué cabecera de extensión, si está presente, debe aparecer inmediatamente después de la cabecera IPv6?",
       "opciones": [
         "Authentication header.",
         "Fragment header.",
@@ -464909,13 +464935,38 @@
         "Routing header."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "C. Hop-by-Hop Options debe ocupar esa posición. Los nodos intermedios pueden procesarla si están configurados para ello.",
+      "clasificacion": {
+        "A1": [
+          "A1-112"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "IPv6"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8200.html#section-4.3",
+            "referencia": "RFC 8200, sección 4.3"
+          }
+        ],
+        "observaciones": "C. Hop-by-Hop Options debe ocupar esa posición. Los nodos intermedios pueden procesarla si están configurados para ello."
+      }
     },
     {
       "id": 8828,
       "bloque": 0,
       "tema": 0,
-      "texto": "Cuando un sistema en una red local envía un datagrama IP a otro sistema en una subred distinta, utiliza el protocolo ARP para obtener:",
+      "texto": "Al enviar un datagrama IPv4 por Ethernet a una subred remota, ¿qué dirección obtiene el emisor mediante ARP si la ruta seleccionada pasa por su router local?",
       "opciones": [
         "La dirección MAC del sistema final destino.",
         "La dirección IP del sistema final destino.",
@@ -464923,13 +464974,39 @@
         "La dirección MAC del router."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "D. ARP resuelve la dirección IPv4 del siguiente salto en el enlace local a su dirección MAC.",
+      "clasificacion": {
+        "A1": [
+          "A1-112"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ARP",
+        "IPv4"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc826.html",
+            "referencia": "RFC 826"
+          }
+        ],
+        "observaciones": "D. ARP resuelve la dirección IPv4 del siguiente salto en el enlace local a su dirección MAC."
+      }
     },
     {
       "id": 8829,
       "bloque": 0,
       "tema": 0,
-      "texto": "La MTU del enlace es igual al:",
+      "texto": "¿Cómo se determina la MTU de una ruta a partir de las MTU de sus enlaces?",
       "opciones": [
         "AI valor de MTU más alto de los posibles a lo largo de una ruta",
         "AI valor de MTU más bajo de los posibles a lo largo de una ruta",
@@ -464937,21 +465014,71 @@
         "AI valor que haya sido definido en el PC que inicia la comunicación"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. La MTU de ruta es la menor de las MTU de sus enlaces.",
+      "clasificacion": {
+        "A1": [
+          "A1-112"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MTU de ruta"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc8201.html",
+            "referencia": "RFC 8201"
+          }
+        ],
+        "observaciones": "B. La MTU de ruta es la menor de las MTU de sus enlaces."
+      }
     },
     {
       "id": 8830,
       "bloque": 0,
       "tema": 0,
-      "texto": "Entre las ventajas del protocolo de control MGCP (Media Gateway Control Protocol) NO se encuentra:",
+      "texto": "¿Qué función cumple MGCP?",
       "opciones": [
-        "Escalabilidad",
-        "Dependencia del fabricante",
-        "Fiabilidad",
-        "Tiempo de desarrollo reducido"
+        "Distribuye direcciones IP a los terminales.",
+        "Permite a un agente de llamadas controlar pasarelas de medios.",
+        "Transporta las muestras de voz como carga útil.",
+        "Resuelve nombres de dominio."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. MGCP permite que un agente de llamadas controle los puntos terminales y las conexiones de una pasarela de medios.",
+      "clasificacion": {
+        "A1": [
+          "A1-116"
+        ],
+        "A2": [
+          "A2-IV-14"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MGCP"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3435.html",
+            "referencia": "RFC 3435"
+          }
+        ],
+        "observaciones": "B. MGCP permite que un agente de llamadas controle los puntos terminales y las conexiones de una pasarela de medios."
+      }
     },
     {
       "id": 8831,
