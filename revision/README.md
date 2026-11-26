@@ -22871,3 +22871,9 @@ Revisión de 8861–8865: pruebas tempranas, evaluación CMMI, Software CMM, TMM
 Revisión de 8866–8870: CMMI, integración continua, TDD y procesos de prueba. Véase el [registro 1713](cambios-lote-1713.json).
 
 **8.865 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.258 sin revisar**.
+
+## Lote 1714 — 26 de noviembre de 2026
+
+Revisión de 8871–8875: pruebas beta, SonarQube, integración continua, cobertura y aseguramiento de calidad. Véase el [registro 1714](cambios-lote-1714.json).
+
+**8.870 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.253 sin revisar**.
