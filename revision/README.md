@@ -22649,3 +22649,9 @@ Revisión de 8676–8680: sede del Parlamento Europeo, autonomía financiera, De
 Revisión de 8681–8685: responsabilidad patrimonial, valor público, CIRCE, reutilización y conservación documental. Véase el [registro 1676](cambios-lote-1676.json).
 
 **8.680 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.443 sin revisar**.
+
+## Lote 1677 — 26 de noviembre de 2026
+
+Revisión de 8686–8690: medios alternativos del ENS, Mage.exe, NFC del DNI 3.0, zero client y planificación de sistemas en Métrica v3. Véase el [registro 1677](cambios-lote-1677.json).
+
+**8.685 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.438 sin revisar**.
