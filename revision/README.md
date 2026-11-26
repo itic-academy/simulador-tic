@@ -22625,3 +22625,9 @@ Revisión de 8656–8660: control de versiones, plan europeo 2016–2020, mayor�
 Revisión de 8661–8665: cooperación en igualdad, Manifiesto Ágil, señalización X.25, SCSP y Comisión Europea. Véase el [registro 1672](cambios-lote-1672.json).
 
 **8.660 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.463 sin revisar**.
+
+## Lote 1673 — 26 de noviembre de 2026
+
+Revisión de 8666–8670: conservación de datos, decretos-leyes, especialización de entidades, estimación y DDL. Véase el [registro 1673](cambios-lote-1673.json).
+
+**8.665 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.458 sin revisar**.
