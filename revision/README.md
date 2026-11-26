@@ -23021,3 +23021,9 @@ Revisión de 8986–8990: códecs de voz, TLS, VPN, contenedores Docker y nivel 
 Revisión de 8991–8995: enfoque basado en recursos, decisiones estratégicas, seguimiento de objetivos, escalabilidad y ERP. Véase el [registro 1738](cambios-lote-1738.json).
 
 **8.990 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.133 sin revisar**.
+
+## Lote 1739 — 27 de noviembre de 2026
+
+Revisión de 8996–9000: carga ETL, análisis de datos, integración, sistemas de información y planificación estratégica. Véase el [registro 1739](cambios-lote-1739.json).
+
+**8.995 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.128 sin revisar**.
