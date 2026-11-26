@@ -22895,3 +22895,9 @@ Revisión de 8881–8885: cobertura, niveles de prueba, ruta crítica, DAFO e in
 Revisión de 8886–8890: Pareto, DAFO, estructura de desglose del trabajo y cuadro de mando integral. Véase el [registro 1717](cambios-lote-1717.json).
 
 **8.885 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.238 sin revisar**.
+
+## Lote 1718 — 26 de noviembre de 2026
+
+Revisión de 8891–8895: cuadro de mando integral, objetivos SMART, EDT, diagrama de Pareto y ruta crítica. Véase el [registro 1718](cambios-lote-1718.json).
+
+**8.890 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.233 sin revisar**.
