@@ -23015,3 +23015,9 @@ Revisión de 8981–8985: gestión de problemas, Ethernet conmutado, origen de l
 Revisión de 8986–8990: códecs de voz, TLS, VPN, contenedores Docker y nivel operacional. Véase el [registro 1737](cambios-lote-1737.json).
 
 **8.985 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.138 sin revisar**.
+
+## Lote 1738 — 27 de noviembre de 2026
+
+Revisión de 8991–8995: enfoque basado en recursos, decisiones estratégicas, seguimiento de objetivos, escalabilidad y ERP. Véase el [registro 1738](cambios-lote-1738.json).
+
+**8.990 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.133 sin revisar**.
