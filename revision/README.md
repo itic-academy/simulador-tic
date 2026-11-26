@@ -22499,3 +22499,9 @@ Revisión de 8551–8555: ESB, Mercurial, perceptrón, OGC SOS y RDF/XML. El [re
 Revisión de 8556–8560: inicio de proyecto en MÉTRICA, oportunidades DAFO, DFD, pseudocódigo y diferencia entre alcance y cronograma. El [registro 1651](cambios-lote-1651.json) conserva originales y fuentes.
 
 **8.555 con revisión registrada**, incluidas 143 pendientes de resolución, y **3.568 sin revisar**.
+
+## Lote 1652 — 26 de noviembre de 2026
+
+Revisión de 8561–8565: actividades e interfaces de MÉTRICA v3, integración continua, modo orgánico de COCOMO 81 y líneas base. El [registro 1652](cambios-lote-1652.json) conserva originales, explicaciones y fuentes.
+
+**8.560 con revisión registrada**, incluidas 143 pendientes de resolución, y **3.563 sin revisar**.
