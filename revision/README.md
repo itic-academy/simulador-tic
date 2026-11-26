@@ -22937,3 +22937,9 @@ Revisión de 8916–8920: NVMe, registro de instrucción, planificación, Androi
 Revisión de 8921–8925: Angular, shadow IT, Scrum, Observer y microservicios. Véase el [registro 1724](cambios-lote-1724.json).
 
 **8.920 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.203 sin revisar**.
+
+## Lote 1725 — 26 de noviembre de 2026
+
+Revisión de 8926–8930: diagramas de interacción, JAD, Selenium, aceptación de usuario y Apache Flume. Véase el [registro 1725](cambios-lote-1725.json).
+
+**8.925 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.198 sin revisar**.
