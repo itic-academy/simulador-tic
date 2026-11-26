@@ -22319,3 +22319,9 @@ Revisión de 8401–8405: objetivos SMART, PLC interior, digitalización de docu
 Revisión de 8406–8410. Se precisaron el apantallamiento electromagnético y la función de UTRAN. Se verificaron CDI, LINQ y el uso de JSTL y EL en JSP. El [registro 1621](cambios-lote-1621.json) conserva originales y fuentes. Cotejo directo con Academy pendiente.
 
 **8.405 con revisión registrada**, incluidas 132 pendientes de resolución, y **3.718 sin revisar**.
+
+## Lote 1622 — 26 de noviembre de 2026
+
+Revisión de 8411–8415: detección con honeypots, contactos USB-C, trenzado UTP y transmisión óptica. La prescripción de rosetas AGE de la 8415 queda pendiente de edición y apartado verificables. El [registro 1622](cambios-lote-1622.json) conserva originales y trazabilidad.
+
+**8.410 con revisión registrada**, incluidas 133 pendientes de resolución, y **3.713 sin revisar**.
