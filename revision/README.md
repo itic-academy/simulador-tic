@@ -22859,3 +22859,9 @@ Revisión de 8851–8855: gestión de calidad del software, CMMI, regresión, ef
 Revisión de 8856–8860: CMMI, aseguramiento de calidad, SQuaRE, caja negra y SonarQube. Véase el [registro 1711](cambios-lote-1711.json).
 
 **8.855 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.268 sin revisar**.
+
+## Lote 1712 — 26 de noviembre de 2026
+
+Revisión de 8861–8865: pruebas tempranas, evaluación CMMI, Software CMM, TMMi e información documentada en ISO 9001. Véase el [registro 1712](cambios-lote-1712.json).
+
+**8.860 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.263 sin revisar**.
