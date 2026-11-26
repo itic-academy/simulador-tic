@@ -22271,3 +22271,9 @@ Inventario y verificador ejecutados: **8.360 con revisión registrada**, incluid
 Revisión individual de 8366–8370. Se contrastaron la organización territorial, el papel de los principios generales del derecho, el cifrado híbrido y la remisión de asientos en GEISER. La 8369 queda pendiente de una fuente primaria que acredite la taxonomía de granularidad de la clave original. El [registro 1613](cambios-lote-1613.json) conserva originales y trazabilidad. Cotejo directo con Academy pendiente.
 
 Inventario y verificador ejecutados: **8.365 con revisión registrada**, incluidas 130 pendientes de resolución, y **3.758 sin revisar**. Cero errores estructurales.
+
+## Lote 1614 — 26 de noviembre de 2026
+
+Revisión individual de 8371–8375. Se precisaron la pérdida en espacio libre, la auditoría ordinaria ENS, las APIs web, las claves de RSA y la no volatilidad en almacenes de datos. El [registro 1614](cambios-lote-1614.json) conserva originales, explicaciones y fuentes. Cotejo directo con Academy pendiente.
+
+Inventario y verificador ejecutados: **8.370 con revisión registrada**, incluidas 130 pendientes de resolución, y **3.753 sin revisar**. Cero errores estructurales.
