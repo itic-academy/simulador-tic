@@ -22589,3 +22589,9 @@ Revisión de 8626–8630: ECMA, Habilit@, IEEE 802.11p, anualidad presupuestaria
 Revisión de 8631–8635: integración y despliegue continuo, altos cargos, presencia equilibrada, programación presupuestaria y mapa de riesgos. El [registro 1666](cambios-lote-1666.json) conserva originales y fuentes.
 
 **8.630 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.493 sin revisar**.
+
+## Lote 1667 — 26 de noviembre de 2026
+
+Revisión de 8636–8640: modelo entidad–relación, amparo, capacidad de procesos en COBIT 5, mandato del Parlamento Europeo y elementos de DFD. El [registro 1667](cambios-lote-1667.json) conserva originales y fuentes.
+
+**8.635 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.488 sin revisar**.
