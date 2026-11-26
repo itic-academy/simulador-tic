@@ -22247,3 +22247,9 @@ Inventario y verificador ejecutados: 12.123 válidas; **8.340 revisadas** (1.582
 Revisión individual de 8346–8350. Se precisaron el efecto de una avería en 2PC y el cambio de direccionamiento en IPv6. Se confirmaron la sintaxis de atributos XML, Redis como almacén clave-valor y la definición de RTO. El [registro 1609](cambios-lote-1609.json) conserva originales, fuentes primarias y clasificación A1/A2. Queda pendiente el cotejo directo con Academy.
 
 Inventario y verificador ejecutados: 12.123 válidas; **8.345 con revisión registrada** (1.585 vigentes, 5.987 corregidas, 644 históricas y 129 pendientes de resolución), **3.778 sin revisar** y cero errores estructurales.
+
+## Lote 1610 — 26 de noviembre de 2026
+
+Revisión individual de 8351–8355. Se distinguieron S-HTTP y SSL 3.0, el análisis de registros y las pruebas de carga, y el tamaño de una entrada MPLS frente al de la pila. Se verificaron el alcance histórico de ISO 9000-3:1997 y los criterios EFQM 2013. El [registro 1610](cambios-lote-1610.json) conserva originales y fuentes. Sigue pendiente el cotejo directo con Academy.
+
+Inventario y verificador ejecutados: **8.350 con revisión registrada**, incluidas 129 pendientes de resolución, y **3.773 sin revisar**. Cero errores estructurales.
