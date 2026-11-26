@@ -22631,3 +22631,9 @@ Revisión de 8661–8665: cooperación en igualdad, Manifiesto Ágil, señalizac
 Revisión de 8666–8670: conservación de datos, decretos-leyes, especialización de entidades, estimación y DDL. Véase el [registro 1673](cambios-lote-1673.json).
 
 **8.665 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.458 sin revisar**.
+
+## Lote 1674 — 26 de noviembre de 2026
+
+Revisión de 8671–8675: abstención, gobernanza TIC, sistemas operativos, NIS y PermGen. Véase el [registro 1674](cambios-lote-1674.json).
+
+**8.670 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.453 sin revisar**.
