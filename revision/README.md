@@ -22799,3 +22799,9 @@ Revisión de 8801–8805: suministro, gestión documental, España Digital 2026,
 Revisión de 8806–8810: nube híbrida, RAID 0, empaquetado Jakarta EE, PHP y MOOC. Véase el [registro 1701](cambios-lote-1701.json).
 
 **8.805 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.318 sin revisar**.
+
+## Lote 1702 — 26 de noviembre de 2026
+
+Revisión de 8811–8815: almacén de datos, HTML, DNIe, oráculos y diseño en Métrica v3. Véase el [registro 1702](cambios-lote-1702.json).
+
+**8.810 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.313 sin revisar**.
