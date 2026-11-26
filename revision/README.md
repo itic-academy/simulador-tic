@@ -22823,3 +22823,9 @@ Revisión de 8821–8825: Glade, maquetas de interfaz, puntos de función, PDCA 
 Revisión de 8826–8830: HTTPS, cabeceras IPv6, ARP, MTU de ruta y MGCP. Véase el [registro 1705](cambios-lote-1705.json).
 
 **8.825 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.298 sin revisar**.
+
+## Lote 1706 — 26 de noviembre de 2026
+
+Revisión de 8831–8835: X.400, LDIF, GPRS, H.323 e inicio de sesión único. Véase el [registro 1706](cambios-lote-1706.json).
+
+**8.830 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.293 sin revisar**.
