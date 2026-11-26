@@ -22349,3 +22349,9 @@ Revisión de 8426–8430. Se verificaron decibelio, conversión A/D, revisión T
 Revisión de 8431–8435: codificación Manchester, coaxial Ethernet, cruce MDI, relación entre ancho de banda y velocidad, y coexistencia de ADSL y telefonía. El [registro 1626](cambios-lote-1626.json) conserva originales y fuentes.
 
 **8.430 con revisión registrada**, incluidas 136 pendientes de resolución, y **3.693 sin revisar**.
+
+## Lote 1627 — 26 de noviembre de 2026
+
+Revisión de 8436–8440: sincronización digital, latencia Ethernet, pantallas del cableado y conectores ópticos y modulares. El [registro 1627](cambios-lote-1627.json) conserva las preguntas originales y las referencias.
+
+**8.435 con revisión registrada**, incluidas 136 pendientes de resolución, y **3.688 sin revisar**.
