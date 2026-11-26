@@ -22685,3 +22685,9 @@ Revisión de 8706–8710: PILAR, criptología del ENS, GLORIA, dimensiones del E
 Revisión de 8711–8715: notificación de incidentes, autenticación, integridad, plan de adecuación y requisitos mínimos del ENS. Véase el [registro 1682](cambios-lote-1682.json).
 
 **8.710 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.413 sin revisar**.
+
+## Lote 1683 — 26 de noviembre de 2026
+
+Revisión de 8716–8720: Consejo de Seguridad Nacional, principios del ENS, incidentes, auditoría y autenticidad. Véase el [registro 1683](cambios-lote-1683.json).
+
+**8.715 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.408 sin revisar**.
