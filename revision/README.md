@@ -22571,3 +22571,9 @@ Revisión de 8611–8615: NRC, listas de confianza, criterios EFQM 2013 y Red SA
 Revisión de 8616–8620: campos estáticos Java, gestión de servicios ITIL, primitivas OSI, ejes de España Digital 2025 e interfaces de usuario en MÉTRICA v3. Véase el [registro 1663](cambios-lote-1663.json).
 
 **8.615 con revisión registrada**, incluidas 147 pendientes de resolución, y **3.508 sin revisar**.
+
+## Lote 1664 — 26 de noviembre de 2026
+
+Revisión de 8621–8625: manejadores JSP, autorización de contratos PRTR, separación dúplex GSM 900 y CPU Ready. La equivalencia de métricas ITIL queda pendiente de comprobar en el glosario original. Véase el [registro 1664](cambios-lote-1664.json).
+
+**8.620 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.503 sin revisar**.
