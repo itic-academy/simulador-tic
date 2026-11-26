@@ -451675,55 +451675,151 @@
         "Tamaño variable: 5 bytes de cabecera y entre 48 y 56 bytes de información."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. La celda ATM mide 53 octetos: 5 de cabecera y 48 de información.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "I.361"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=4561",
+            "referencia": "I.361"
+          }
+        ],
+        "observaciones": "B. La celda ATM mide 53 octetos: 5 de cabecera y 48 de información."
+      }
     },
     {
       "id": 8487,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a los servicios soportados por carrier Ethernet, señale la respuesta falsa:",
+      "texto": "¿Cuál no es un tipo de servicio Ethernet de abonado en MEF 6.3?",
       "opciones": [
-        "Ethernet Virtual Private Line o E-Line",
-        "Ethernet Virtual Private LAN o E-LAN",
-        "Ethernet Virtual Private Tree o E-Tree",
-        "Ethernet Virtual Private MAN o E-MAN"
+        "E-Line.",
+        "E-LAN.",
+        "E-Tree.",
+        "E-MAN."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "D. MEF define E-Line punto a punto, E-LAN multipunto y E-Tree multipunto con raíz. EVPL es una modalidad de E-Line.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MEF 6.3"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.mef.net/wp-content/uploads/2019/11/MEF-6-3.pdf",
+            "referencia": "MEF 6.3"
+          }
+        ],
+        "observaciones": "D. MEF define E-Line punto a punto, E-LAN multipunto y E-Tree multipunto con raíz. EVPL es una modalidad de E-Line."
+      }
     },
     {
       "id": 8488,
       "bloque": 0,
       "tema": 0,
-      "texto": "En una red MPLS el elemento que inicia o termina el túnel se denomina:",
+      "texto": "¿Cómo se denominan los LSR que constituyen respectivamente la entrada y la salida de un LSP?",
       "opciones": [
-        "LER (Label Edge Router)",
-        "LSR (Label Switching Router)",
-        "LDR (Label Distribution Router)",
-        "LFR (Label Forwarding Router)"
+        "LSR de ingreso y LSR de egreso.",
+        "Dos LSR de tránsito.",
+        "LDR emisor y LFR receptor.",
+        "Dos routers de egreso."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. Los extremos son LSR de ingreso y egreso. LER describe un router de borde y LSR es un término que también abarca los nodos de tránsito.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "RFC 3031"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3031.html",
+            "referencia": "RFC 3031"
+          }
+        ],
+        "observaciones": "A. Los extremos son LSR de ingreso y egreso. LER describe un router de borde y LSR es un término que también abarca los nodos de tránsito."
+      }
     },
     {
       "id": 8489,
       "bloque": 0,
       "tema": 0,
-      "texto": "El modo de transporte del primer estándar ADSL, UIT-T/G.992.1 de 1999, era el ATM, a cuyo efecto, una trama Ethernet de 1.300 bytes se convertía en (aproximadamente):",
+      "texto": "Si el campo de datos de una PDU AAL5 mide 1300 octetos y la cola AAL5 añade 8 antes del relleno, ¿cuántas celdas ATM se necesitan?",
       "opciones": [
-        "1300 x 53 = 68.900 celdas ATM",
-        "1300 / 48 = 27,1? 28 celdas ATM",
-        "1300 / 53 = 24,5? 25 celdas ATM",
-        "Ninguna de las anteriores"
+        "68.900.",
+        "28.",
+        "25.",
+        "27."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. El techo de (1300 + 8) / 48 es 28. Se añaden 36 octetos de relleno para completar 1344. Los 5 octetos de cabecera de cada celda no transportan la PDU.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "RFC 2684"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc2684.html",
+            "referencia": "RFC 2684"
+          }
+        ],
+        "observaciones": "B. El techo de (1300 + 8) / 48 es 28. Se añaden 36 octetos de relleno para completar 1344. Los 5 octetos de cabecera de cada celda no transportan la PDU."
+      }
     },
     {
       "id": 8490,
       "bloque": 0,
       "tema": 0,
-      "texto": "En la tecnología Modo de Transferencia Asíncrono (Asynchronous Transfer Mode o ATM), diferentes categorías de tráfico son convertidas en celdas AM vía la Capa de Adaptación ATM (ATM Adaptation Layer o AAL). ¿Cuál es la capa AAL más adecuada para la transmisión de audio y video comprimido?",
+      "texto": "¿Qué tipo de AAL se diseñó para paquetes cortos y de longitud variable, de bajo caudal y sensibles al retardo?",
       "opciones": [
         "AAL1.",
         "AAL2.",
@@ -451731,7 +451827,30 @@
         "AAL5."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. AAL2 multiplexa flujos de paquetes breves y variables en una conexión ATM. El formato de audio o vídeo por sí solo no determina la AAL.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "I.363.2"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/dms_pubrec/itu-t/rec/i/T-REC-I.363.2-200011-I%21%21SUM-HTM-E.htm",
+            "referencia": "I.363.2"
+          }
+        ],
+        "observaciones": "B. AAL2 multiplexa flujos de paquetes breves y variables en una conexión ATM. El formato de audio o vídeo por sí solo no determina la AAL."
+      }
     },
     {
       "id": 8491,

@@ -22409,3 +22409,9 @@ Revisión de 8476–8480. Se verificaron el alcance de VPI/VCI, la cabecera ATM,
 Revisión de 8481–8485: trama STM-1, alcance de LSR, celda ATM, etiqueta nula explícita IPv6 y funciones de equipos SDH. El [registro 1636](cambios-lote-1636.json) conserva originales y fuentes UIT-T e IETF.
 
 **8.480 con revisión registrada**, incluidas 141 pendientes de resolución, y **3.643 sin revisar**.
+
+## Lote 1637 — 26 de noviembre de 2026
+
+Revisión de 8486–8490: celdas ATM, servicios Carrier Ethernet, extremos MPLS, segmentación AAL5 y uso de AAL2. El [registro 1637](cambios-lote-1637.json) conserva originales y fuentes.
+
+**8.485 con revisión registrada**, incluidas 141 pendientes de resolución, y **3.638 sin revisar**.
