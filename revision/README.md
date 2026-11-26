@@ -22259,3 +22259,9 @@ Inventario y verificador ejecutados: **8.350 con revisión registrada**, incluid
 Revisión individual de 8356–8360: referencia ISO del modelo OSI, significado histórico de COLD, reunión natural, cese del personal funcionario interino y contenido del perfil de contratante. El [registro 1611](cambios-lote-1611.json) conserva originales, explicaciones y referencias a ISO, NARA, PostgreSQL y BOE. Pendiente el cotejo directo con Academy.
 
 Inventario y verificador ejecutados: **8.355 con revisión registrada**, incluidas 129 pendientes de resolución, y **3.768 sin revisar**. Cero errores estructurales.
+
+## Lote 1612 — 26 de noviembre de 2026
+
+Revisión individual de 8361–8365. Se precisaron el cálculo de la renta nacional bruta, los requisitos de relación electrónica, el límite general de los acuerdos marco y la diferencia entre elección y nombramiento del presidente autonómico. Se confirmó la atribución estatutaria sobre órganos directivos. El [registro 1612](cambios-lote-1612.json) conserva originales y fuentes de Eurostat y BOE. El cotejo directo con Academy sigue pendiente.
+
+Inventario y verificador ejecutados: **8.360 con revisión registrada**, incluidas 129 pendientes de resolución, y **3.763 sin revisar**. Cero errores estructurales.
