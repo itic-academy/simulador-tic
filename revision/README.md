@@ -22367,3 +22367,9 @@ Revisión de 8441–8445: segmentación Ethernet, familias normativas, velocidad
 Revisión de 8446–8450: puenteo MAC, cableado horizontal, designaciones de cable, Erlang C y fibra OM3. El [registro 1629](cambios-lote-1629.json) conserva originales y fuentes.
 
 **8.445 con revisión registrada**, incluidas 137 pendientes de resolución, y **3.678 sin revisar**.
+
+## Lote 1630 — 26 de noviembre de 2026
+
+Revisión de 8451–8455: 10BASE5, baudios, 40GBASE-LR4, troncal de edificio y ventanas ópticas. El [registro 1630](cambios-lote-1630.json) conserva originales y fuentes.
+
+**8.450 con revisión registrada**, incluidas 137 pendientes de resolución, y **3.673 sin revisar**.
