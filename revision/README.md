@@ -23003,3 +23003,9 @@ Revisión de 8971–8975: cifrado de clave pública, modelo en espiral, componen
 Revisión de 8976–8980: diagramas de contexto, MVVM, Java RMI, interfaces de Métrica v3 y OnBase. Véase el [registro 1735](cambios-lote-1735.json).
 
 **8.975 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.148 sin revisar**.
+
+## Lote 1736 — 27 de noviembre de 2026
+
+Revisión de 8981–8985: gestión de problemas, Ethernet conmutado, origen de la web, interfaces IP y anycast. Véase el [registro 1736](cambios-lote-1736.json).
+
+**8.980 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.143 sin revisar**.
