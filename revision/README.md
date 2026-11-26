@@ -22391,3 +22391,9 @@ Revisión de 8461–8465: tiempo de transmisión, Franck–Condon, 1000BASE-CX, 
 Revisión de 8466–8470. Se precisaron el ámbito de ISO/IEC 11801-2, el relleno de bits, 1000BASE-CX y la atenuación óptica. La 8467 queda pendiente de acreditar la terminología en una edición concreta de EN 50173. El [registro 1633](cambios-lote-1633.json) conserva originales y fuentes.
 
 **8.465 con revisión registrada**, incluidas 140 pendientes de resolución, y **3.658 sin revisar**.
+
+## Lote 1634 — 26 de noviembre de 2026
+
+Revisión de 8471–8475. Se documentaron el paso de testigo, 1000BASE-ZX, el apantallamiento de pares y las celdas ATM. La banda del coaxial requiere especificar cable y condiciones. Véase el [registro 1634](cambios-lote-1634.json).
+
+**8.470 con revisión registrada**, incluidas 141 pendientes de resolución, y **3.653 sin revisar**.
