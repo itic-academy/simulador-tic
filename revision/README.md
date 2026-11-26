@@ -22961,3 +22961,9 @@ Revisión de 8936–8940: multicast IPv4, HMAC, exclusividad jurisdiccional, Tri
 Revisión de 8941–8945: resolución y notificación, representación, derechos, alzada y clasificación de contratistas. Véase el [registro 1728](cambios-lote-1728.json).
 
 **8.940 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.183 sin revisar**.
+
+## Lote 1729 — 26 de noviembre de 2026
+
+Revisión de 8946–8950: sector público estatal, presupuestos, ODS 8, deberes del personal y vía administrativa de la AEPD. Véase el [registro 1729](cambios-lote-1729.json).
+
+**8.945 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.178 sin revisar**.
