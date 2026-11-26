@@ -22919,3 +22919,9 @@ Revisión de 8901–8905: factores críticos de éxito, cuadro de mando público
 Revisión de 8906–8910: cuestión de confianza, regencia, inmunidad y gobernanza de la Agenda 2030. Véase el [registro 1721](cambios-lote-1721.json).
 
 **8.905 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.218 sin revisar**.
+
+## Lote 1722 — 26 de noviembre de 2026
+
+Revisión de 8911–8915: cotización, valor ganado, WCAG, interoperabilidad semántica e IaaS. Véase el [registro 1722](cambios-lote-1722.json).
+
+**8.910 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.213 sin revisar**.
