@@ -22985,3 +22985,9 @@ Revisión de 8956–8960: trazabilidad, representación en ISO, vigilancia tecno
 Revisión de 8961–8965: credenciales en RODC, IMS jerárquico, experiencia de usuario, beans con estado y LibreOffice Draw. Véase el [registro 1732](cambios-lote-1732.json).
 
 **8.960 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.163 sin revisar**.
+
+## Lote 1733 — 26 de noviembre de 2026
+
+Revisión de 8966–8970: marcos de conocimiento, Contract Net, letra de control, SAX y AJAX. Véase el [registro 1733](cambios-lote-1733.json).
+
+**8.965 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.158 sin revisar**.
