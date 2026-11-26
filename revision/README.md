@@ -22415,3 +22415,9 @@ Revisión de 8481–8485: trama STM-1, alcance de LSR, celda ATM, etiqueta nula 
 Revisión de 8486–8490: celdas ATM, servicios Carrier Ethernet, extremos MPLS, segmentación AAL5 y uso de AAL2. El [registro 1637](cambios-lote-1637.json) conserva originales y fuentes.
 
 **8.485 con revisión registrada**, incluidas 141 pendientes de resolución, y **3.638 sin revisar**.
+
+## Lote 1638 — 26 de noviembre de 2026
+
+Revisión de 8491–8495: apertura TCP, multiplexación ATM, jerarquía SDH, caminos MPLS y campo GFC. El [registro 1638](cambios-lote-1638.json) conserva originales y fuentes del IETF y la UIT.
+
+**8.490 con revisión registrada**, incluidas 141 pendientes de resolución, y **3.633 sin revisar**.

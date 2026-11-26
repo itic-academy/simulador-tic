@@ -451856,7 +451856,7 @@
       "id": 8491,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Qué mensajes son necesarios para establecer una conexión TCP?",
+      "texto": "En la apertura TCP habitual, iniciada por un extremo ante un servidor a la escucha, ¿qué secuencia completa el establecimiento?",
       "opciones": [
         "SYN y ACK",
         "SYN, SYN-ACK y ACK",
@@ -451864,21 +451864,69 @@
         "Ninguna de las anteriores"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. El iniciador envía SYN, el servidor responde SYN-ACK y el iniciador confirma con ACK. La apertura simultánea es un caso distinto.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "TCP"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5",
+            "referencia": "TCP"
+          }
+        ],
+        "observaciones": "B. El iniciador envía SYN, el servidor responde SYN-ACK y el iniciador confirma con ACK. La apertura simultánea es un caso distinto."
+      }
     },
     {
       "id": 8492,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cómo se denomina la tecnología de multiplexación utilizada por ATM?",
+      "texto": "¿Cómo se comparten las oportunidades de envío de celdas entre conexiones ATM?",
       "opciones": [
-        "Multiplexación por división en el tiempo",
-        "Multiplexación estadística",
-        "Multiplexación por división en la frecuencia",
-        "Ninguna de las anteriores"
+        "Mediante ranuras fijas reservadas periódicamente a cada conexión.",
+        "Mediante multiplexación estadística, sin una ranura periódica fija para cada conexión.",
+        "Mediante bandas de frecuencia separadas.",
+        "Mediante longitudes de onda distintas para cada celda."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. ATM usa multiplexación temporal asíncrona. Acotar la comparación evita solapamiento con la opción genérica de división temporal.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ATM"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-I.150-199902-I%21%21PDF-E&lang=e&type=items",
+            "referencia": "ATM"
+          }
+        ],
+        "observaciones": "B. ATM usa multiplexación temporal asíncrona. Acotar la comparación evita solapamiento con la opción genérica de división temporal."
+      }
     },
     {
       "id": 8493,
@@ -451892,13 +451940,36 @@
         "un conjunto de estándares americanos de transporte de señales digitales entre sistemas digitales"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. SDH define tasas de transmisión, estructuras de trama y reglas para mapear y multiplexar señales tributarias en estructuras STM-N.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SDH"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?lang=en&rec=8981",
+            "referencia": "SDH"
+          }
+        ],
+        "observaciones": "B. SDH define tasas de transmisión, estructuras de trama y reglas para mapear y multiplexar señales tributarias en estructuras STM-N."
+      }
     },
     {
       "id": 8494,
       "bloque": 0,
       "tema": 0,
-      "texto": "En una red MPLS (Multiprotocol Label Switching), el camino virtual predefinido entre dos puntos se denomina:",
+      "texto": "En MPLS, ¿cómo se denomina el camino de reenvío por conmutación de etiquetas?",
       "opciones": [
         "LSP (Label Switched Path).",
         "LSR (Label Switched Route).",
@@ -451906,7 +451977,32 @@
         "FER (Forwarding Exchange Route)."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. LSP significa Label Switched Path. Un LSR es un router de conmutación de etiquetas y una FEC agrupa paquetes que reciben un tratamiento de reenvío equivalente.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MPLS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3031.html",
+            "referencia": "MPLS"
+          }
+        ],
+        "observaciones": "A. LSP significa Label Switched Path. Un LSR es un router de conmutación de etiquetas y una FEC agrupa paquetes que reciben un tratamiento de reenvío equivalente."
+      }
     },
     {
       "id": 8495,
@@ -451919,7 +452015,30 @@
         "Proporciona la sincronización entre celdas"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. GFC ocupa cuatro bits en la cabecera UNI. La cabecera entre nodos de red NNI emplea esos bits como parte de VPI.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "GFC"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-I.361-199902-I%21%21PDF-E&lang=e&type=items",
+            "referencia": "GFC"
+          }
+        ],
+        "observaciones": "A. GFC ocupa cuatro bits en la cabecera UNI. La cabecera entre nodos de red NNI emplea esos bits como parte de VPI."
+      }
     },
     {
       "id": 8496,
