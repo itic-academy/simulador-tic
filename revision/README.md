@@ -22517,3 +22517,9 @@ Revisión de 8566–8570: ramas en Subversion, criterio 7 de EFQM 2013, circuito
 Revisión de 8571–8575. Se confirmaron loopback, RTP, SNMP y TRAP. La 8573 queda pendiente de una arquitectura de referencia que permita evaluar la clave. Véase el [registro 1654](cambios-lote-1654.json).
 
 **8.570 con revisión registrada**, incluidas 144 pendientes de resolución, y **3.553 sin revisar**.
+
+## Lote 1655 — 26 de noviembre de 2026
+
+Revisión de 8576–8580: DOCSIS, smishing, DECT, aplicaciones híbridas y presidencia del Consejo Nacional de Ciberseguridad. El [registro 1655](cambios-lote-1655.json) conserva originales y fuentes.
+
+**8.575 con revisión registrada**, incluidas 144 pendientes de resolución, y **3.548 sin revisar**.
