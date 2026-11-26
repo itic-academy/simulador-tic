@@ -22829,3 +22829,9 @@ Revisión de 8826–8830: HTTPS, cabeceras IPv6, ARP, MTU de ruta y MGCP. Véase
 Revisión de 8831–8835: X.400, LDIF, GPRS, H.323 e inicio de sesión único. Véase el [registro 1706](cambios-lote-1706.json).
 
 **8.830 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.293 sin revisar**.
+
+## Lote 1707 — 26 de noviembre de 2026
+
+Revisión de 8836–8840: Kerberos, reajuste accesible, prueba del camino básico, CMMI y calidad del producto. Véase el [registro 1707](cambios-lote-1707.json).
+
+**8.835 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.288 sin revisar**.
