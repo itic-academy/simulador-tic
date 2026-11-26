@@ -22775,3 +22775,9 @@ Revisión de 8781–8785: mashups, RTP, inicio de sesión único, calidad en RDS
 Revisión de 8786–8790: inventario de puertos, selección de banda Wi-Fi y principios constitucionales. Véase el [registro 1697](cambios-lote-1697.json).
 
 **8.785 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.338 sin revisar**.
+
+## Lote 1698 — 26 de noviembre de 2026
+
+Revisión de 8791–8795: composición de la Comisión Europea, fuentes del derecho, imparcialidad, órganos de contratación y prioridad de la deuda pública. Véase el [registro 1698](cambios-lote-1698.json).
+
+**8.790 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.333 sin revisar**.
