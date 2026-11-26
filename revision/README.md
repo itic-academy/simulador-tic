@@ -22949,3 +22949,9 @@ Revisión de 8926–8930: diagramas de interacción, JAD, Selenium, aceptación 
 Revisión de 8931–8935: CMMI, gestión documental, ICMP, prevención de fugas y acceso al medio Wi-Fi. Véase el [registro 1726](cambios-lote-1726.json).
 
 **8.930 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.193 sin revisar**.
+
+## Lote 1727 — 26 de noviembre de 2026
+
+Revisión de 8936–8940: multicast IPv4, HMAC, exclusividad jurisdiccional, Tribunal Constitucional y altos cargos. Véase el [registro 1727](cambios-lote-1727.json).
+
+**8.935 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.188 sin revisar**.
