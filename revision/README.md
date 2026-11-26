@@ -22433,3 +22433,9 @@ Revisión de 8496–8500. Se precisaron la compatibilidad SDH/SONET, la atenuaci
 Revisión de 8501–8505: VPN sobre MPLS, señalización SS7, dirección del LSP básico, identificadores ATM y tamaño de las entradas MPLS. El [registro 1640](cambios-lote-1640.json) conserva originales y fuentes.
 
 **8.500 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.623 sin revisar**.
+
+## Lote 1641 — 26 de noviembre de 2026
+
+Revisión de 8506–8510: espera de transmisión en ATM, clasificación FEC, dirección de LSP en GMPLS, CSMA/CD y puertos LDP. El [registro 1641](cambios-lote-1641.json) conserva originales y fuentes.
+
+**8.505 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.618 sin revisar**.

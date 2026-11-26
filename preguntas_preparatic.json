@@ -452423,21 +452423,44 @@
       "id": 8506,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Por qué se usan celdas de tamaño fijo en ATM?",
+      "texto": "¿Qué efecto tienen las celdas ATM cortas de tamaño fijo cuando una celda prioritaria debe esperar a que termine la transmisión en curso?",
       "opciones": [
-        "Porque se reduce la sobrecarga de cabeceras de protocolo",
-        "Porque se reduce el tiempo que una trama de alta prioridad deberá esperar en cola",
-        "Porque mejora el enrutamiento",
-        "Por analogía con Ethernet"
+        "Eliminan la cabecera.",
+        "Acotan la espera debida a la unidad que ya se está transmitiendo.",
+        "Eliminan cualquier espera en cola.",
+        "Hacen innecesaria la multiplexación."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. A velocidad fija, la transmisión de una celda dura un tiempo fijo y breve. El retardo total sigue dependiendo de las colas y de la planificación.",
+      "clasificacion": {
+        "A1": [
+          "A1-108"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "ATM"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc2761.html",
+            "referencia": "Documentación técnica del protocolo"
+          }
+        ],
+        "observaciones": "B. A velocidad fija, la transmisión de una celda dura un tiempo fijo y breve. El retardo total sigue dependiendo de las colas y de la planificación."
+      }
     },
     {
       "id": 8507,
       "bloque": 0,
       "tema": 0,
-      "texto": "En MPLS, la asignación de un paquete a un FEC (Forwarding Equivalence Class) tiene lugar:",
+      "texto": "En el modelo básico de reenvío MPLS del RFC 3031, ¿cuándo se clasifica inicialmente un paquete en una FEC?",
       "opciones": [
         "Sólo una vez, cuando el paquete entra en la red MPLS.",
         "Antes de entrar en la red MPLS, en el último router convencional conectado antes del primer nodo MPLS.",
@@ -452445,27 +452468,77 @@
         "Cuando el primer paquete abandona la red MPLS, y se ha podido descubrir la ruta por medios convencionales."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. El LSR de ingreso clasifica e impone una etiqueta. En el interior, el reenvío usa la etiqueta en lugar de repetir la clasificación de red en cada salto.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "FEC"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3031.html#section-2.1",
+            "referencia": "Documentación técnica del protocolo"
+          }
+        ],
+        "observaciones": "A. El LSR de ingreso clasifica e impone una etiqueta. En el interior, el reenvío usa la etiqueta en lugar de repetir la clasificación de red en cada salto."
+      }
     },
     {
       "id": 8508,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a los LSP (Label Switched Path) en GMPLS, señale la respuesta correcta:",
+      "texto": "¿Qué permite GMPLS respecto de la dirección de un LSP?",
       "opciones": [
-        "Son bidireccionales.",
-        "Son simplex.",
-        "Son half duplex.",
-        "Ninguna de las anteriores es correcta."
+        "Establecer LSP bidireccionales, además de los unidireccionales.",
+        "Establecer exclusivamente LSP unidireccionales.",
+        "Establecer exclusivamente LSP semidúplex.",
+        "Establecer exclusivamente LSP bidireccionales."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. GMPLS admite señalizar un LSP bidireccional mediante una etiqueta para el sentido inverso. También admite LSP unidireccionales.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "GMPLS"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc3471.html#section-3",
+            "referencia": "Documentación técnica del protocolo"
+          }
+        ],
+        "observaciones": "A. GMPLS admite señalizar un LSP bidireccional mediante una etiqueta para el sentido inverso. También admite LSP unidireccionales."
+      }
     },
     {
       "id": 8509,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Con qué está relacionado CSMA/CD?",
+      "texto": "¿Qué familia IEEE especifica la Ethernet clásica de medio compartido y semidúplex que usa CSMA/CD?",
       "opciones": [
         "802.4",
         "802.3",
@@ -452473,7 +452546,32 @@
         "802.6"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. Corresponde a IEEE 802.3. Los enlaces Ethernet full-duplex no usan CSMA/CD.",
+      "clasificacion": {
+        "A1": [
+          "A1-118"
+        ],
+        "A2": [
+          "A2-IV-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "CSMA/CD"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.cisco.com/en/US/docs/internetworking/troubleshooting/guide/tr1904.html",
+            "referencia": "Documentación técnica del protocolo"
+          }
+        ],
+        "observaciones": "B. Corresponde a IEEE 802.3. Los enlaces Ethernet full-duplex no usan CSMA/CD."
+      }
     },
     {
       "id": 8510,
@@ -452487,7 +452585,32 @@
         "El 647 en TCP y UDP."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. LDP usa UDP 646 para descubrimiento y TCP 646 para establecer la sesión e intercambiar mensajes de distribución de etiquetas.",
+      "clasificacion": {
+        "A1": [
+          "A1-115"
+        ],
+        "A2": [
+          "A2-IV-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "LDP"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5036.html",
+            "referencia": "Documentación técnica del protocolo"
+          }
+        ],
+        "observaciones": "A. LDP usa UDP 646 para descubrimiento y TCP 646 para establecer la sesión e intercambiar mensajes de distribución de etiquetas."
+      }
     },
     {
       "id": 8511,
