@@ -22883,3 +22883,9 @@ Revisión de 8871–8875: pruebas beta, SonarQube, integración continua, cobert
 Revisión de 8876–8880: evaluación de procesos, Software CMM, regresión, JUnit y Selenium. Véase el [registro 1715](cambios-lote-1715.json).
 
 **8.875 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.248 sin revisar**.
+
+## Lote 1716 — 26 de noviembre de 2026
+
+Revisión de 8881–8885: cobertura, niveles de prueba, ruta crítica, DAFO e indicadores. Véase el [registro 1716](cambios-lote-1716.json).
+
+**8.880 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.243 sin revisar**.
