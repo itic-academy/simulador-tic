@@ -22583,3 +22583,9 @@ Revisión de 8621–8625: manejadores JSP, autorización de contratos PRTR, sepa
 Revisión de 8626–8630: ECMA, Habilit@, IEEE 802.11p, anualidad presupuestaria y estrategia europea de 2015. El [registro 1665](cambios-lote-1665.json) conserva originales y fuentes.
 
 **8.625 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.498 sin revisar**.
+
+## Lote 1666 — 26 de noviembre de 2026
+
+Revisión de 8631–8635: integración y despliegue continuo, altos cargos, presencia equilibrada, programación presupuestaria y mapa de riesgos. El [registro 1666](cambios-lote-1666.json) conserva originales y fuentes.
+
+**8.630 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.493 sin revisar**.
