@@ -22727,3 +22727,9 @@ Revisión de 8741–8745: guías y auditorías del ENS, CPSTIC, Red SARA y CIFS.
 Revisión de 8746–8750: Bluetooth LE, zonas NGA blancas, VLAN estáticas, balanceo mediante ADC y HDLC. Véase el [registro 1689](cambios-lote-1689.json).
 
 **8.745 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.378 sin revisar**.
+
+## Lote 1690 — 26 de noviembre de 2026
+
+Revisión de 8751–8755: continuidad del negocio, MIME, Ethernet coaxial, BGP y WPA3. Véase el [registro 1690](cambios-lote-1690.json).
+
+**8.750 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.373 sin revisar**.
