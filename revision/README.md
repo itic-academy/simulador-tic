@@ -22679,3 +22679,9 @@ Revisión de 8701–8705: ámbito y principios del ENS, confidencialidad, CCN-ST
 Revisión de 8706–8710: PILAR, criptología del ENS, GLORIA, dimensiones del ENS y funciones del CCN-CERT. Véase el [registro 1681](cambios-lote-1681.json).
 
 **8.705 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.418 sin revisar**.
+
+## Lote 1682 — 26 de noviembre de 2026
+
+Revisión de 8711–8715: notificación de incidentes, autenticación, integridad, plan de adecuación y requisitos mínimos del ENS. Véase el [registro 1682](cambios-lote-1682.json).
+
+**8.710 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.413 sin revisar**.
