@@ -22703,3 +22703,9 @@ Revisión de 8721–8725: dimensiones y requisitos del ENS, estrategia de cibers
 Revisión de 8726–8730: niveles de seguridad de los servicios, notificación de incidentes, mínimo privilegio y categoría MEDIA. Véase el [registro 1685](cambios-lote-1685.json).
 
 **8.725 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.398 sin revisar**.
+
+## Lote 1686 — 26 de noviembre de 2026
+
+Revisión de 8731–8735: adecuación al ENS, gobernanza de ciberseguridad, ISO/IEC 27001, RTO y principios básicos. Véase el [registro 1686](cambios-lote-1686.json).
+
+**8.730 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.393 sin revisar**.
