@@ -464102,43 +464102,119 @@
       "id": 8806,
       "bloque": 0,
       "tema": 0,
-      "texto": "Entre las opciones que posee una organización para obtener servicios en la nube:",
+      "texto": "Según NIST SP 800-145, ¿qué caracteriza a una nube híbrida?",
       "opciones": [
-        "La nube comunitaria implica menor complejidad en la integración de la solución cloud.",
-        "El retorno de la inversión es más lento en la nube pública que en la nube privada.",
-        "La nube híbrida permite compaginar la auto-provisión de procesos críticos y ganar flexibilidad en aquellos que tienen menor criticidad.",
-        "La nube pública nos da la posibilidad de aprovechar las infraestructuras ya existentes en la organización."
+        "Está reservada a una comunidad con requisitos comunes.",
+        "Toda su infraestructura es pública.",
+        "Combina infraestructuras de nube diferenciadas mediante tecnología que permite la portabilidad de datos y aplicaciones.",
+        "Se instala necesariamente en un único centro de datos."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "C. Las infraestructuras de nube mantienen su identidad y se integran para permitir la portabilidad. Una combinación posible es nube privada y pública.",
+      "clasificacion": {
+        "A1": [
+          "A1-55"
+        ],
+        "A2": [
+          "A2-II-1"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "nube híbrida"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+            "referencia": "NIST SP 800-145, modelos de despliegue"
+          }
+        ],
+        "observaciones": "C. Las infraestructuras de nube mantienen su identidad y se integran para permitir la portabilidad. Una combinación posible es nube privada y pública."
+      }
     },
     {
       "id": 8807,
       "bloque": 0,
       "tema": 0,
-      "texto": "Respecto a RAID, una de las siguientes afirmaciones es falsa:",
+      "texto": "¿Qué nivel RAID distribuye los datos entre discos sin aportar redundancia?",
       "opciones": [
-        "RAID 0 no ofrece protección de datos, sólo mejora el tiempo de acceso",
-        "RAID 2 es similar al RAID 1 pero añadiendo redundancia",
-        "RAID 10 y RAID 6 son los más comunes en entornos empresariales",
-        "RAID 4 es similar a RAID 0 pero con corrección de errores"
+        "RAID 0.",
+        "RAID 1.",
+        "RAID 5.",
+        "RAID 6."
       ],
-      "respuesta_correcta": 1,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "A. RAID 0 reparte los datos entre discos. Al carecer de réplica y paridad, el fallo de un disco puede dejar inaccesible el conjunto.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [
+          "A2-IV-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "RAID 0"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.ibm.com/docs/en/power9/9009-42G?topic=srl-raid-0",
+            "referencia": "IBM Power Systems, RAID 0"
+          }
+        ],
+        "observaciones": "A. RAID 0 reparte los datos entre discos. Al carecer de réplica y paridad, el fallo de un disco puede dejar inaccesible el conjunto."
+      }
     },
     {
       "id": 8808,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes NO es un formato válido para el empaquetamiento de aplicaciones en J2EE (Java 2 Enterprise Edition)?",
+      "texto": "¿Qué formato de archivo se utiliza para empaquetar un módulo web en Jakarta EE?",
       "opciones": [
         "WAR (Web Archive).",
         "EAR (Enterprise Archive).",
         "BAR (Bean Archive).",
-        "JAR (Java Archive)."
+        "RAR (Resource Adapter Archive)."
       ],
-      "respuesta_correcta": 2,
-      "comentarios": ""
+      "respuesta_correcta": 0,
+      "comentarios": "A. Un módulo web se empaqueta en un WAR. Un EAR puede agrupar varios módulos, incluido un WAR.",
+      "clasificacion": {
+        "A1": [
+          "A1-67"
+        ],
+        "A2": [
+          "A2-III-10"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Jakarta EE",
+        "WAR"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/platform/packaging/packaging.html",
+            "referencia": "Jakarta EE Tutorial, Packaging"
+          }
+        ],
+        "observaciones": "A. Un módulo web se empaqueta en un WAR. Un EAR puede agrupar varios módulos, incluido un WAR."
+      }
     },
     {
       "id": 8809,
@@ -464152,21 +464228,71 @@
         "Las variables se asignan por valor, no estando permitida la asignación por referencia"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. Las variables superglobales están disponibles en todos los ámbitos del script sin una declaración global, incluso dentro de funciones.",
+      "clasificacion": {
+        "A1": [
+          "A1-68"
+        ],
+        "A2": [
+          "A2-III-12"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "PHP",
+        "superglobales"
+      ],
+      "revision": {
+        "estado": "vigente",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://www.php.net/manual/en/language.variables.superglobals.php",
+            "referencia": "Manual de PHP, Superglobals"
+          }
+        ],
+        "observaciones": "B. Las variables superglobales están disponibles en todos los ámbitos del script sin una declaración global, incluso dentro de funciones."
+      }
     },
     {
       "id": 8810,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál no es un requisito de los MOOC (Massive Open Online Course)?",
+      "texto": "¿Qué características reúne un curso denominado MOOC?",
       "opciones": [
-        "Ser un curso",
-        "Tener carácter masivo",
-        "Online",
-        "Todas las anteriores son requisitos"
+        "Presencial y con plazas reducidas.",
+        "Privado y limitado a una organización.",
+        "Individual y por correspondencia.",
+        "Masivo, abierto y en línea."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "D. MOOC significa Massive Open Online Course. Se ofrece en línea y está diseñado para admitir una participación amplia.",
+      "clasificacion": {
+        "A1": [
+          "A1-51"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "MOOC",
+        "formación en línea"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-26",
+        "fuentes": [
+          {
+            "url": "https://connect.unevoc.unesco.org/home/TVETipedia%2BGlossary/lang%3Den/show%3Dterm/term%3DMassive%2Bopen%2Bonline%2Bcourse",
+            "referencia": "UNESCO-UNEVOC, definición de MOOC"
+          }
+        ],
+        "observaciones": "D. MOOC significa Massive Open Online Course. Se ofrece en línea y está diseñado para admitir una participación amplia."
+      }
     },
     {
       "id": 8811,

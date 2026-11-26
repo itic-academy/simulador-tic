@@ -22793,3 +22793,9 @@ Revisión de 8796–8800: desindexación, esperanza de vida, ERTE, burocracia y 
 Revisión de 8801–8805: suministro, gestión documental, España Digital 2026, OpenStack y Linux en Azure. Véase el [registro 1700](cambios-lote-1700.json).
 
 **8.800 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.323 sin revisar**.
+
+## Lote 1701 — 26 de noviembre de 2026
+
+Revisión de 8806–8810: nube híbrida, RAID 0, empaquetado Jakarta EE, PHP y MOOC. Véase el [registro 1701](cambios-lote-1701.json).
+
+**8.805 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.318 sin revisar**.
