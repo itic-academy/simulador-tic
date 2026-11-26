@@ -22493,3 +22493,9 @@ Revisión de 8546–8550: garantía por precios unitarios, duración de derechos
 Revisión de 8551–8555: ESB, Mercurial, perceptrón, OGC SOS y RDF/XML. El [registro 1650](cambios-lote-1650.json) conserva originales y fuentes.
 
 **8.550 con revisión registrada**, incluidas 143 pendientes de resolución, y **3.573 sin revisar**.
+
+## Lote 1651 — 26 de noviembre de 2026
+
+Revisión de 8556–8560: inicio de proyecto en MÉTRICA, oportunidades DAFO, DFD, pseudocódigo y diferencia entre alcance y cronograma. El [registro 1651](cambios-lote-1651.json) conserva originales y fuentes.
+
+**8.555 con revisión registrada**, incluidas 143 pendientes de resolución, y **3.568 sin revisar**.
