@@ -22715,3 +22715,9 @@ Revisión de 8731–8735: adecuación al ENS, gobernanza de ciberseguridad, ISO/
 Revisión de 8736–8740: regulación y requisitos del ENS, informe del estado de la seguridad y Estrategia Nacional de Ciberseguridad 2019. Véase el [registro 1687](cambios-lote-1687.json).
 
 **8.735 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.388 sin revisar**.
+
+## Lote 1688 — 26 de noviembre de 2026
+
+Revisión de 8741–8745: guías y auditorías del ENS, CPSTIC, Red SARA y CIFS. Véase el [registro 1688](cambios-lote-1688.json).
+
+**8.740 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.383 sin revisar**.
