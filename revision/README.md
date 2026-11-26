@@ -22841,3 +22841,9 @@ Revisión de 8836–8840: Kerberos, reajuste accesible, prueba del camino básic
 Revisión de 8841–8845: MantisBT, gestión de servicios y de la calidad, normas de pruebas e integración sándwich. Véase el [registro 1708](cambios-lote-1708.json).
 
 **8.840 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.283 sin revisar**.
+
+## Lote 1709 — 26 de noviembre de 2026
+
+Revisión de 8846–8850: concentración de defectos, repositorios Git, TestLink, aseguramiento de la calidad y CMMI. Véase el [registro 1709](cambios-lote-1709.json).
+
+**8.845 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.278 sin revisar**.
