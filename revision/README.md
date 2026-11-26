@@ -22451,3 +22451,9 @@ Revisión de 8511–8515: vídeo de tasa variable en ATM, arquitectura H-VPLS, f
 Revisión de 8516–8520: arquitectura GMPLS, interfaces físicas ATM, planos del modelo, tráfico de tiempo real y PTI. El [registro 1643](cambios-lote-1643.json) conserva originales y fuentes.
 
 **8.515 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.608 sin revisar**.
+
+## Lote 1644 — 26 de noviembre de 2026
+
+Revisión de 8521–8525: encapsulado MPLS, recursos GMPLS, alcance de SDH, orden de celdas y categorías ATM. El [registro 1644](cambios-lote-1644.json) conserva originales y fuentes.
+
+**8.520 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.603 sin revisar**.
