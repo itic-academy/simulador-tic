@@ -22763,3 +22763,9 @@ Revisión de 8771–8775: APT, arquitectura WAP, directorio X.500, titulado acce
 Revisión de 8776–8780: PAdES, Wake on LAN, NFC, CMIP y Erlang B. Véase el [registro 1695](cambios-lote-1695.json).
 
 **8.775 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.348 sin revisar**.
+
+## Lote 1696 — 26 de noviembre de 2026
+
+Revisión de 8781–8785: mashups, RTP, inicio de sesión único, calidad en RDSI y bandas 5G. Véase el [registro 1696](cambios-lote-1696.json).
+
+**8.780 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.343 sin revisar**.
