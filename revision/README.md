@@ -22403,3 +22403,9 @@ Revisión de 8471–8475. Se documentaron el paso de testigo, 1000BASE-ZX, el ap
 Revisión de 8476–8480. Se verificaron el alcance de VPI/VCI, la cabecera ATM, el campo TTL de MPLS, la dirección del LSP básico y el servicio Ethernet multipunto VPLS. El [registro 1635](cambios-lote-1635.json) conserva originales y referencias de UIT e IETF.
 
 **8.475 con revisión registrada**, incluidas 141 pendientes de resolución, y **3.648 sin revisar**.
+
+## Lote 1636 — 26 de noviembre de 2026
+
+Revisión de 8481–8485: trama STM-1, alcance de LSR, celda ATM, etiqueta nula explícita IPv6 y funciones de equipos SDH. El [registro 1636](cambios-lote-1636.json) conserva originales y fuentes UIT-T e IETF.
+
+**8.480 con revisión registrada**, incluidas 141 pendientes de resolución, y **3.643 sin revisar**.
