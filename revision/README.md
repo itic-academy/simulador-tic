@@ -22301,3 +22301,9 @@ Revisión de 8386–8390: planificación estratégica, duración de derechos sob
 Revisión de 8391–8395. Se confirmó la distinción entre validación y verificación y el encaje de PLCP. Se corrigió la clave sobre el IESG y se acotó el informe técnico al artículo 13.4 del RD 1125/2024. CMMI queda pendiente de fuente y edición. El [registro 1618](cambios-lote-1618.json) conserva originales y trazabilidad. Cotejo directo con Academy pendiente.
 
 **8.390 con revisión registrada**, incluidas 132 pendientes de resolución, y **3.733 sin revisar**.
+
+## Lote 1619 — 26 de noviembre de 2026
+
+Revisión de 8396–8400: concurrencia transaccional, protocolos de almacenamiento, diagramas de flujo de datos, Open Mobile Alliance y direccionamiento histórico por clases. El [registro 1619](cambios-lote-1619.json) conserva originales y fuentes. Cotejo directo con Academy pendiente.
+
+**8.395 con revisión registrada**, incluidas 132 pendientes de resolución, y **3.728 sin revisar**.
