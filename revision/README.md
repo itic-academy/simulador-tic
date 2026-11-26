@@ -22559,3 +22559,9 @@ Revisión de 8601–8605: norma europea, autoridad de certificación, valor en I
 Revisión de 8606–8610: seguridad de documentos de identidad, gestión continua de riesgos, aprobación de Cl@ve, normalización europea y DDoS. Véase el [registro 1661](cambios-lote-1661.json).
 
 **8.605 con revisión registrada**, incluidas 146 pendientes de resolución, y **3.518 sin revisar**.
+
+## Lote 1662 — 26 de noviembre de 2026
+
+Revisión de 8611–8615: NRC, listas de confianza, criterios EFQM 2013 y Red SARA. ITIL v3 queda pendiente de glosario de la edición. Véase el [registro 1662](cambios-lote-1662.json).
+
+**8.610 con revisión registrada**, incluidas 147 pendientes de resolución, y **3.513 sin revisar**.
