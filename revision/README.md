@@ -22997,3 +22997,9 @@ Revisión de 8966–8970: marcos de conocimiento, Contract Net, letra de control
 Revisión de 8971–8975: cifrado de clave pública, modelo en espiral, componentes COTS, DAFO y control de versiones. Véase el [registro 1734](cambios-lote-1734.json).
 
 **8.970 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.153 sin revisar**.
+
+## Lote 1735 — 26 de noviembre de 2026
+
+Revisión de 8976–8980: diagramas de contexto, MVVM, Java RMI, interfaces de Métrica v3 y OnBase. Véase el [registro 1735](cambios-lote-1735.json).
+
+**8.975 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.148 sin revisar**.
