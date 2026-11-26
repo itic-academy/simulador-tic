@@ -22427,3 +22427,9 @@ Revisión de 8491–8495: apertura TCP, multiplexación ATM, jerarquía SDH, cam
 Revisión de 8496–8500. Se precisaron la compatibilidad SDH/SONET, la atenuación óptica y el concepto de LSP. Se confirmó la nomenclatura de las celdas ATM. La pregunta sobre licencias LMDS queda pendiente de adjudicaciones oficiales. Véase el [registro 1639](cambios-lote-1639.json).
 
 **8.495 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.628 sin revisar**.
+
+## Lote 1640 — 26 de noviembre de 2026
+
+Revisión de 8501–8505: VPN sobre MPLS, señalización SS7, dirección del LSP básico, identificadores ATM y tamaño de las entradas MPLS. El [registro 1640](cambios-lote-1640.json) conserva originales y fuentes.
+
+**8.500 con revisión registrada**, incluidas 142 pendientes de resolución, y **3.623 sin revisar**.
