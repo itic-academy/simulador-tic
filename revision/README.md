@@ -23719,3 +23719,9 @@ Revisión de 9581–9585 sobre el Senado, los Estatutos de Autonomía, el Plan N
 Revisión de 9586–9590 sobre directivas, arquitectura cliente-servidor, el modelo de Booch, el tiempo máximo tolerable de interrupción y la continuidad del servicio en ITIL 4. Véase el [registro 1857](cambios-lote-1857.json). Queda pendiente el cotejo con la academia.
 
 **9.585 con revisión registrada**, incluidas 149 pendientes, y **2.538 sin revisar**.
+
+## Lote 1858 — 27 de noviembre de 2026
+
+Revisión de 9591–9595 sobre profundidad de píxel, SSD-AAPP, acoplamiento por contenido, activación de un plan de contingencia y camino crítico. Véase el [registro 1858](cambios-lote-1858.json). Queda pendiente el cotejo con la academia y la adscripción específica de la profundidad de píxel.
+
+**9.590 con revisión registrada**, incluidas 149 pendientes, y **2.533 sin revisar**.
