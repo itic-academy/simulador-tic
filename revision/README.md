@@ -23389,3 +23389,9 @@ Revisión de 9306–9310 sobre sanciones y procedimiento de reutilización, cons
 Revisión de 9311–9315 sobre LAMP, API de HTML, ACID, SQL Server y SaaS. Véase el [registro 1802](cambios-lote-1802.json). Pendientes el cotejo de academia y el encaje curricular específico de LAMP.
 
 **9.310 con revisión registrada**, incluidas 149 pendientes, y **2.813 sin revisar**.
+
+## Lote 1803 — 27 de noviembre de 2026
+
+Revisión de 9316–9320 sobre Internet Explorer, OLAP, Jamstack, JavaScript y SOAP. Véase el [registro 1803](cambios-lote-1803.json). Pendiente el cotejo con la academia.
+
+**9.315 con revisión registrada**, incluidas 149 pendientes, y **2.808 sin revisar**.
