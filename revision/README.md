@@ -23437,3 +23437,9 @@ Revisión de 9346–9350 sobre JBoss EAP, ASP, SIG, Struts y persistencia. Véas
 Revisión de 9351–9355 sobre PKCS #7, flujos de trabajo, reconocimiento del hablante, JPA y .NET Framework. Véase el [registro 1810](cambios-lote-1810.json). Pendientes el cotejo de academia y la adscripción específica de workflow, biometría de voz y .NET Framework.
 
 **9.350 con revisión registrada**, incluidas 149 pendientes, y **2.773 sin revisar**.
+
+## Lote 1811 — 27 de noviembre de 2026
+
+Revisión de 9356–9360 sobre certificados, normalización, reforma constitucional y organización territorial. Véase el [registro 1811](cambios-lote-1811.json). Pendiente el cotejo con la academia.
+
+**9.355 con revisión registrada**, incluidas 149 pendientes, y **2.768 sin revisar**.
