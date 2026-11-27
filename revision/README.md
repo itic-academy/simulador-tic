@@ -23141,3 +23141,9 @@ Revisión de 9086–9090 sobre requisitos funcionales, eventos y artefactos de S
 Revisión de 9091–9095 sobre interfaces externas, cambios de requisitos en el Manifiesto Ágil, Sprint Review, descomposición lógica y MoSCoW. Véase el [registro 1758](cambios-lote-1758.json). Queda pendiente el cotejo de academia.
 
 **9.090 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.033 sin revisar**.
+
+## Lote 1759 — 27 de noviembre de 2026
+
+Revisión de 9096–9100 sobre casos de uso, descomposición funcional, programación estructurada de Jackson, interrupciones en Linux y VTAM. Véase el [registro 1759](cambios-lote-1759.json). Queda pendiente el cotejo de academia.
+
+**9.095 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.028 sin revisar**.
