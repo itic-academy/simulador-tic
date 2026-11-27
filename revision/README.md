@@ -23797,3 +23797,9 @@ Revisión de 9646–9650 sobre el CGPJ, los altos cargos de la AGE, el ámbito d
 Revisión de 9651–9655 sobre LSSI, TREBEP, RGPD, organización de equipos y Kanban. Véase el [registro 1870](cambios-lote-1870.json). Queda pendiente el cotejo con la academia.
 
 **9.650 con revisión registrada**, incluidas 150 pendientes, y **2.473 sin revisar**.
+
+## Lote 1871 — 27 de noviembre de 2026
+
+Revisión de 9656–9660 sobre informes de contratación TIC, referencias a documentos en el ENI, homologación y origen del lenguaje C. Véase el [registro 1871](cambios-lote-1871.json). Queda pendiente el cotejo con la academia.
+
+**9.655 con revisión registrada**, incluidas 150 pendientes, y **2.468 sin revisar**.
