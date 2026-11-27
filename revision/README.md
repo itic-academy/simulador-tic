@@ -23623,3 +23623,9 @@ Revisión de 9501–9505 sobre applets, complementos, mashups, HTML5 y JPEG. Vé
 Revisión de 9506–9510 sobre Angular Material, ActiveX, interfaces web, WebSocket y MVC. Véase el [registro 1841](cambios-lote-1841.json). Pendiente el cotejo con la academia.
 
 **9.505 con revisión registrada**, incluidas 149 pendientes, y **2.618 sin revisar**.
+
+## Lote 1842 — 27 de noviembre de 2026
+
+Revisión de 9511–9515 sobre ECMAScript, CSS adaptable, TypeScript y el origen de JavaScript. Véase el [registro 1842](cambios-lote-1842.json). Pendiente el cotejo con la academia.
+
+**9.510 con revisión registrada**, incluidas 149 pendientes, y **2.613 sin revisar**.
