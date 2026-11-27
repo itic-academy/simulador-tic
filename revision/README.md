@@ -23629,3 +23629,9 @@ Revisión de 9506–9510 sobre Angular Material, ActiveX, interfaces web, WebSoc
 Revisión de 9511–9515 sobre ECMAScript, CSS adaptable, TypeScript y el origen de JavaScript. Véase el [registro 1842](cambios-lote-1842.json). Pendiente el cotejo con la academia.
 
 **9.510 con revisión registrada**, incluidas 149 pendientes, y **2.613 sin revisar**.
+
+## Lote 1843 — 27 de noviembre de 2026
+
+Revisión de 9516–9520 sobre Web Starter Kit, AJAX, WebAuthn, Fetch y Spring. Véase el [registro 1843](cambios-lote-1843.json). Pendiente el cotejo con la academia.
+
+**9.515 con revisión registrada**, incluidas 149 pendientes, y **2.608 sin revisar**.
