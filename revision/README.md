@@ -23063,3 +23063,9 @@ Revisión de 9021–9025 sobre DSS orientados a modelos, procesamiento de transa
 Revisión de 9026–9030. Se precisan la entrada de datos, las funciones de un sistema contable, la recuperación documental y los DSS orientados a modelos. La pregunta 9029 queda pendiente de identificar la clasificación original para distinguir las dos opciones sobre estructura horizontal. Véase el [registro 1745](cambios-lote-1745.json). Queda pendiente el cotejo de academia del lote.
 
 **9.025 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.098 sin revisar**.
+
+## Lote 1746 — 27 de noviembre de 2026
+
+Revisión de 9031–9035 sobre la Agenda 2030, la calificación soberana histórica de S&P, la Ley de Economía Sostenible y la lectura del indicador S80/S20. Véase el [registro 1746](cambios-lote-1746.json). Queda pendiente el cotejo de academia del lote.
+
+**9.030 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.093 sin revisar**.
