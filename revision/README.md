@@ -23641,3 +23641,9 @@ Revisión de 9516–9520 sobre Web Starter Kit, AJAX, WebAuthn, Fetch y Spring. 
 Revisión de 9521–9525 sobre Angular, dApps, depuración, JSX y Markdown. Véase el [registro 1844](cambios-lote-1844.json). Pendiente el cotejo con la academia.
 
 **9.520 con revisión registrada**, incluidas 149 pendientes, y **2.603 sin revisar**.
+
+## Lote 1845 — 27 de noviembre de 2026
+
+Revisión de 9526–9530 sobre ActiveX, IIS, calidad geográfica, planificación de procesos y Cassandra. Véase el [registro 1845](cambios-lote-1845.json). Pendiente el cotejo con la academia.
+
+**9.525 con revisión registrada**, incluidas 149 pendientes, y **2.598 sin revisar**.
