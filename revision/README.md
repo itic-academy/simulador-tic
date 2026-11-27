@@ -23791,3 +23791,9 @@ Revisión de 9641–9645 sobre la estrategia de ciberseguridad de 2019, firma di
 Revisión de 9646–9650 sobre el CGPJ, los altos cargos de la AGE, el ámbito de la LCSP, el umbral de regulación armonizada y el peso del turismo en el PIB de 2024. Véase el [registro 1869](cambios-lote-1869.json). Quedan pendientes el cotejo con la academia y la adscripción oficial de la pregunta sobre turismo.
 
 **9.645 con revisión registrada**, incluidas 150 pendientes, y **2.478 sin revisar**.
+
+## Lote 1870 — 27 de noviembre de 2026
+
+Revisión de 9651–9655 sobre LSSI, TREBEP, RGPD, organización de equipos y Kanban. Véase el [registro 1870](cambios-lote-1870.json). Queda pendiente el cotejo con la academia.
+
+**9.650 con revisión registrada**, incluidas 150 pendientes, y **2.473 sin revisar**.
