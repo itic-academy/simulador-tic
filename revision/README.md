@@ -23743,3 +23743,9 @@ Revisión de 9601–9605 sobre SHA-1, SIP, SW-CMM, eIDAS y RIP. Véase el [regis
 Revisión de 9606–9610 sobre subredes IPv4, X.25, SATA, SICRES 4.0 e integridad referencial. Véase el [registro 1861](cambios-lote-1861.json). Queda pendiente el cotejo con la academia.
 
 **9.605 con revisión registrada**, incluidas 150 pendientes, y **2.518 sin revisar**.
+
+## Lote 1862 — 27 de noviembre de 2026
+
+Revisión de 9611–9615 sobre contadores de CPU, clases abstractas, tablas de dimensión, Ministerio Fiscal y la Agenda Estratégica 2019–2024. Véase el [registro 1862](cambios-lote-1862.json). Queda pendiente el cotejo con la academia.
+
+**9.610 con revisión registrada**, incluidas 150 pendientes, y **2.513 sin revisar**.
