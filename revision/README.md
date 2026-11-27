@@ -23111,3 +23111,9 @@ Revisión de 9061–9065 sobre productividad aparente del trabajo en 2008, adopc
 Revisión de 9066–9070 sobre eficiencia en el uso de recursos públicos, desempleo estructural, Scrum Master, diagramas de interacción UML y puntos de historia. Véase el [registro 1753](cambios-lote-1753.json). Queda pendiente el cotejo de academia.
 
 **9.065 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.058 sin revisar**.
+
+## Lote 1754 — 27 de noviembre de 2026
+
+Revisión de 9071–9075 sobre métodos de ingeniería del software, profundidad de herencia, análisis orientado a objetos, planificación en XP y requisitos verificables. Véase el [registro 1754](cambios-lote-1754.json). Queda pendiente el cotejo de academia.
+
+**9.070 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.053 sin revisar**.
