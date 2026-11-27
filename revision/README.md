@@ -23869,3 +23869,9 @@ Revisión de 9706–9710 sobre clasificación económica, PPTP, PLATA, COCOMO y 
 Revisión de 9711–9715 sobre recomendaciones de la UE, Service Locator, Mi Carpeta Ciudadana, bastanteo y política de empleo. Véase el [registro 1882](cambios-lote-1882.json). Quedan pendientes el cotejo con la academia y la adscripción oficial de la pregunta de empleo.
 
 **9.710 con revisión registrada**, incluidas 150 pendientes, y **2.413 sin revisar**.
+
+## Lote 1883 — 28 de noviembre de 2026
+
+Revisión de 9716–9720 sobre la EPA, transferencias de funcionarios, escaños del Parlamento Europeo, consentimiento y umbral de contratación. Véase el [registro 1883](cambios-lote-1883.json). Quedan pendientes el cotejo con la academia y la adscripción oficial de la EPA.
+
+**9.715 con revisión registrada**, incluidas 150 pendientes, y **2.408 sin revisar**.
