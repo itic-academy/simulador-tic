@@ -23737,3 +23737,9 @@ Revisión de 9596–9600 sobre despliegues, aprobación de las NTI, cardinalidad
 Revisión de 9601–9605 sobre SHA-1, SIP, SW-CMM, eIDAS y RIP. Véase el [registro 1860](cambios-lote-1860.json). Queda pendiente el cotejo con la academia.
 
 **9.600 con revisión registrada**, incluidas 150 pendientes, y **2.523 sin revisar**.
+
+## Lote 1861 — 27 de noviembre de 2026
+
+Revisión de 9606–9610 sobre subredes IPv4, X.25, SATA, SICRES 4.0 e integridad referencial. Véase el [registro 1861](cambios-lote-1861.json). Queda pendiente el cotejo con la academia.
+
+**9.605 con revisión registrada**, incluidas 150 pendientes, y **2.518 sin revisar**.
