@@ -23785,3 +23785,9 @@ Revisión de 9636–9640 sobre SIEM, sesiones JRP de MÉTRICA v3, confidencialid
 Revisión de 9641–9645 sobre la estrategia de ciberseguridad de 2019, firma digital, mediación y arbitraje en propiedad intelectual, transacciones y escáneres. Véase el [registro 1868](cambios-lote-1868.json). Quedan pendientes el cotejo con la academia y la adscripción específica de la pregunta sobre la Comisión de Propiedad Intelectual.
 
 **9.640 con revisión registrada**, incluidas 150 pendientes, y **2.483 sin revisar**.
+
+## Lote 1869 — 27 de noviembre de 2026
+
+Revisión de 9646–9650 sobre el CGPJ, los altos cargos de la AGE, el ámbito de la LCSP, el umbral de regulación armonizada y el peso del turismo en el PIB de 2024. Véase el [registro 1869](cambios-lote-1869.json). Quedan pendientes el cotejo con la academia y la adscripción oficial de la pregunta sobre turismo.
+
+**9.645 con revisión registrada**, incluidas 150 pendientes, y **2.478 sin revisar**.
