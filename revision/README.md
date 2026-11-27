@@ -23713,3 +23713,9 @@ Revisión de 9576–9580 sobre excedencia, oficinas de enlace del Parlamento Eur
 Revisión de 9581–9585 sobre el Senado, los Estatutos de Autonomía, el Plan Nacional de Ciudades Inteligentes de 2015, la evaluación de impacto y el mandato en la AEPD. Véase el [registro 1856](cambios-lote-1856.json). Queda pendiente el cotejo con la academia.
 
 **9.580 con revisión registrada**, incluidas 149 pendientes, y **2.543 sin revisar**.
+
+## Lote 1857 — 27 de noviembre de 2026
+
+Revisión de 9586–9590 sobre directivas, arquitectura cliente-servidor, el modelo de Booch, el tiempo máximo tolerable de interrupción y la continuidad del servicio en ITIL 4. Véase el [registro 1857](cambios-lote-1857.json). Queda pendiente el cotejo con la academia.
+
+**9.585 con revisión registrada**, incluidas 149 pendientes, y **2.538 sin revisar**.
