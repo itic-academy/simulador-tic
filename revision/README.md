@@ -23129,3 +23129,9 @@ Revisión de 9076–9080 sobre Planning Poker, Crystal, casos de uso UML, taller
 Revisión de 9081–9085 sobre OOSE, requisitos funcionales, origen de los casos de uso, SADT y el Manifiesto Ágil. Véase el [registro 1756](cambios-lote-1756.json). Queda pendiente el cotejo de academia.
 
 **9.080 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.043 sin revisar**.
+
+## Lote 1757 — 27 de noviembre de 2026
+
+Revisión de 9086–9090 sobre requisitos funcionales, eventos y artefactos de Scrum, progreso ágil, especificación funcional y la variante ágil de MSF. Véase el [registro 1757](cambios-lote-1757.json). Queda pendiente el cotejo de academia.
+
+**9.085 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.038 sin revisar**.
