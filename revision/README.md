@@ -23371,3 +23371,9 @@ Revisión de 9291–9295 sobre el ámbito, las modalidades y los costes de reuti
 Revisión de 9296–9300 sobre condiciones y plazos de reutilización, catálogo nacional y gobernanza de datos. Véase el [registro 1799](cambios-lote-1799.json). Pendiente el cotejo de academia.
 
 **9.295 con revisión registrada**, incluidas 149 pendientes, y **2.828 sin revisar**.
+
+## Lote 1800 — 27 de noviembre de 2026
+
+Revisión de 9301–9305 sobre infracciones, licencias, catálogo y búsqueda multilingüe en la reutilización de información pública. Véase el [registro 1800](cambios-lote-1800.json). Pendiente el cotejo de academia.
+
+**9.300 con revisión registrada**, incluidas 149 pendientes, y **2.823 sin revisar**.
