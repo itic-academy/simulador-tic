@@ -23665,3 +23665,9 @@ Revisión de 9536–9540 sobre servicios de confianza, mantenimiento del núcleo
 Revisión de 9541–9545 sobre comparación con plantillas, arquitectura en capas, Azure, RSA y applets. Véase el [registro 1848](cambios-lote-1848.json). Pendientes el cotejo con la academia y la adscripción específica del OCR.
 
 **9.540 con revisión registrada**, incluidas 149 pendientes, y **2.583 sin revisar**.
+
+## Lote 1849 — 27 de noviembre de 2026
+
+Revisión de 9546–9550 sobre cifrado, Oracle SQL, SOAP, planificación de CPU y planes de ejecución. Véase el [registro 1849](cambios-lote-1849.json). Pendiente el cotejo con la academia.
+
+**9.545 con revisión registrada**, incluidas 149 pendientes, y **2.578 sin revisar**.
