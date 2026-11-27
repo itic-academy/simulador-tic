@@ -23461,3 +23461,9 @@ Revisión de 9366–9370 sobre la Dirección General del Dato, EDT, liderazgo, c
 Revisión de 9371–9375 sobre SMED, SSD-AAPP, accesibilidad y el ENI. Véase el [registro 1814](cambios-lote-1814.json). Pendientes el cotejo con la academia y el encaje específico de SMED.
 
 **9.370 con revisión registrada**, incluidas 149 pendientes, y **2.753 sin revisar**.
+
+## Lote 1815 — 27 de noviembre de 2026
+
+Revisión de 9376–9380 sobre controles preventivos, Portal de Entidades Locales, RS-232, Escritorio remoto y administración de bases de datos. Véase el [registro 1815](cambios-lote-1815.json). Pendientes el cotejo con la academia y el encaje curricular específico del cliente RDS.
+
+**9.375 con revisión registrada**, incluidas 149 pendientes, y **2.748 sin revisar**.
