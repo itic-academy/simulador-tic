@@ -23815,3 +23815,9 @@ Revisión de 9661–9665 sobre SMB, planes SQL, agrupación, cartografía temát
 Revisión de 9666–9670 sobre certificados cualificados, diagramas UML, prototipado, pruebas de implantación y EFQM. Véase el [registro 1873](cambios-lote-1873.json). Queda pendiente el cotejo con la academia.
 
 **9.665 con revisión registrada**, incluidas 150 pendientes, y **2.458 sin revisar**.
+
+## Lote 1874 — 27 de noviembre de 2026
+
+Revisión de 9671–9675 sobre BGP, routers de borde OSPF, SNMPv3, AAA y el objetivo mínimo de continuidad. Véase el [registro 1874](cambios-lote-1874.json). Queda pendiente el cotejo con la academia.
+
+**9.670 con revisión registrada**, incluidas 150 pendientes, y **2.453 sin revisar**.
