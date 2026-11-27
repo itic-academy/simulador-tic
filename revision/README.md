@@ -23207,3 +23207,9 @@ Revisión de 9141–9145 sobre Ubuntu TV, Phonon, fstab, copias auténticas y se
 Revisión de 9146–9150 sobre créditos extraordinarios, permiso por lactancia, haciendas locales, inventario de tratamientos y brouter. Véase el [registro 1769](cambios-lote-1769.json). Pendiente el cotejo con el temario de academia.
 
 **9.145 con revisión registrada**, incluidas 149 pendientes de resolución, y **2.978 sin revisar**.
+
+## Lote 1770 — 27 de noviembre de 2026
+
+Revisión de 9151–9155 sobre demanda en ITIL 2011, vistas materializadas, tuplas de Python, paquetes de Java y ámbito de la NTI de Documento Electrónico. Véase el [registro 1770](cambios-lote-1770.json). Pendiente el cotejo con el temario de academia y el encaje curricular específico de Python.
+
+**9.150 con revisión registrada**, incluidas 149 pendientes de resolución, y **2.973 sin revisar**.
