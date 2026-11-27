@@ -23695,3 +23695,9 @@ Revisión de 9561–9565 sobre XAdES-T, cifrado simétrico, SAS, realce logarít
 Revisión de 9566–9570 sobre TLS en Java, servidores blade, eIDAS, INSPIRE y atributos NTFS. Véase el [registro 1853](cambios-lote-1853.json). Queda pendiente el cotejo con la academia.
 
 **9.565 con revisión registrada**, incluidas 149 pendientes, y **2.558 sin revisar**.
+
+## Lote 1854 — 27 de noviembre de 2026
+
+Revisión de 9571–9575 sobre SOA, Angular, BizTalk, la taxonomía de Flynn y el Consejo Consultivo de la AEPD. Véase el [registro 1854](cambios-lote-1854.json). Queda pendiente el cotejo con la academia.
+
+**9.570 con revisión registrada**, incluidas 149 pendientes, y **2.553 sin revisar**.
