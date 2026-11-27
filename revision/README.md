@@ -23231,3 +23231,9 @@ Revisión de 9161–9165 sobre Drupal, data lakes, tratamiento del riesgo en MAG
 Revisión de 9166–9170 sobre S1-MME, navegación coherente, reutilización de información, máquinas de estados y Consejo Europeo. Véase el [registro 1773](cambios-lote-1773.json). Pendiente el cotejo de academia.
 
 **9.165 con revisión registrada**, incluidas 149 pendientes, y **2.958 sin revisar**.
+
+## Lote 1774 — 27 de noviembre de 2026
+
+Revisión de 9171–9175 sobre registro distribuido e identificación, ART, DQDB, IPv6 e instituciones de la UE. Véase el [registro 1774](cambios-lote-1774.json). Pendiente el cotejo de academia.
+
+**9.170 con revisión registrada**, incluidas 149 pendientes, y **2.953 sin revisar**.
