@@ -23347,3 +23347,9 @@ Revisión de 9271–9275 sobre applets históricos, metadatos geográficos, X.50
 Revisión de 9276–9280 sobre encapsulación, acoplamiento, diccionario de datos, MÉTRICA v3 y estimación del esfuerzo. Véase el [registro 1795](cambios-lote-1795.json). Pendientes el cotejo de academia y el encaje curricular específico del acoplamiento por contenido.
 
 **9.275 con revisión registrada**, incluidas 149 pendientes, y **2.848 sin revisar**.
+
+## Lote 1796 — 27 de noviembre de 2026
+
+Revisión de 9281–9285 sobre EFQM, COBIT, ITIL, BGP e IPv6. Véase el [registro 1796](cambios-lote-1796.json). Pendiente el cotejo de academia.
+
+**9.280 con revisión registrada**, incluidas 149 pendientes, y **2.843 sin revisar**.
