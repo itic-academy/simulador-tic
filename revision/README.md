@@ -23575,3 +23575,9 @@ Revisión de 9461–9465 sobre RTO, municipios, contratación, impacto normativo
 Revisión de 9466–9470 sobre responsabilidad patrimonial, impresoras matriciales, medios propios, navegación accesible y recursos. Véase el [registro 1833](cambios-lote-1833.json). Pendientes el cotejo con la academia y el encaje específico de las impresoras matriciales.
 
 **9.465 con revisión registrada**, incluidas 149 pendientes, y **2.658 sin revisar**.
+
+## Lote 1834 — 27 de noviembre de 2026
+
+Revisión de 9471–9475 sobre PAC, PHP, Lean, nulidad y jurisdicción contencioso-administrativa. Véase el [registro 1834](cambios-lote-1834.json). Pendientes el cotejo con la academia y la clasificación específica de la PAC.
+
+**9.470 con revisión registrada**, incluidas 149 pendientes, y **2.653 sin revisar**.
