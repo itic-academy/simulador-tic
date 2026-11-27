@@ -23247,3 +23247,8 @@ Revisión de 9176–9180 sobre la naturaleza de la AEPD, el Fondo de Contingenci
 Revisión de 9181–9185 sobre clasificación en suministros, igualdad de oportunidades, racionalización de la contratación, webmail y ATM. Véase el [registro 1776](cambios-lote-1776.json). Pendiente el cotejo de academia.
 
 **9.180 con revisión registrada**, incluidas 149 pendientes, y **2.943 sin revisar**.
+## Lote 1777 — 27 de noviembre de 2026
+
+Revisión de 9186–9190 sobre X.500, banda de Wi-Fi 5, gobierno del dato, VLR e inyección de dependencias. Véase el [registro 1777](cambios-lote-1777.json). Pendiente el cotejo de academia.
+
+**9.185 con revisión registrada**, incluidas 149 pendientes, y **2.938 sin revisar**.
