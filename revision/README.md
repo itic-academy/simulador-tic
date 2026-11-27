@@ -23302,3 +23302,8 @@ Revisión de 9231–9235 sobre empaquetado y ejecución SCORM, declaraciones xAP
 Revisión de 9236–9240 sobre MOOC, licencia de Moodle, repositorios de objetos de aprendizaje y funciones de los LMS. Véase el [registro 1787](cambios-lote-1787.json). Pendiente el cotejo de academia.
 
 **9.235 con revisión registrada**, incluidas 149 pendientes, y **2.888 sin revisar**.
+## Lote 1788 — 27 de noviembre de 2026
+
+Revisión de 9241–9245 sobre AICC, ADL, OLAP, LOOCV y validación de modelos. Véase el [registro 1788](cambios-lote-1788.json). Pendiente el cotejo de academia.
+
+**9.240 con revisión registrada**, incluidas 149 pendientes, y **2.883 sin revisar**.
