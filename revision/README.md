@@ -23653,3 +23653,9 @@ Revisión de 9526–9530 sobre ActiveX, IIS, calidad geográfica, planificación
 Revisión de 9531–9535 sobre JScript, RLE, PMML, PDF y RDF. Véase el [registro 1846](cambios-lote-1846.json). Pendientes el cotejo con la academia y la adscripción específica de PDF.
 
 **9.530 con revisión registrada**, incluidas 149 pendientes, y **2.593 sin revisar**.
+
+## Lote 1847 — 27 de noviembre de 2026
+
+Revisión de 9536–9540 sobre servicios de confianza, mantenimiento del núcleo, RMAN, GPL y álgebra relacional. Véase el [registro 1847](cambios-lote-1847.json). Pendientes el cotejo con la academia y la adscripción específica de GPL.
+
+**9.535 con revisión registrada**, incluidas 149 pendientes, y **2.588 sin revisar**.
