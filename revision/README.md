@@ -23845,3 +23845,9 @@ Revisión de 9686–9690 sobre la EPA, la Regencia, el Diseño del Servicio en I
 Revisión de 9691–9695 sobre carga de la prueba, Estatutos de Autonomía, análisis de impacto, el plan digital 2015–2020 y mantenimiento adaptativo. Véase el [registro 1878](cambios-lote-1878.json). Queda pendiente el cotejo con la academia.
 
 **9.690 con revisión registrada**, incluidas 150 pendientes, y **2.433 sin revisar**.
+
+## Lote 1879 — 27 de noviembre de 2026
+
+Revisión de 9696–9700 sobre paging, ZODB, el sistema de producción de Toyota, la convocatoria del Consejo de la UE y la patentabilidad de programas. Véase el [registro 1879](cambios-lote-1879.json). Queda pendiente el cotejo con la academia.
+
+**9.695 con revisión registrada**, incluidas 150 pendientes, y **2.428 sin revisar**.
