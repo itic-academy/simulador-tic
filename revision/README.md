@@ -23515,3 +23515,9 @@ Revisión de 9411–9415 sobre estrategia TIC, evaluación de inversiones, WCAG,
 Revisión de 9416–9420 sobre RAID, granularidad de hechos, AES, X.509 y eIDAS. Véase el [registro 1823](cambios-lote-1823.json). Pendiente el cotejo con la academia.
 
 **9.415 con revisión registrada**, incluidas 149 pendientes, y **2.708 sin revisar**.
+
+## Lote 1824 — 27 de noviembre de 2026
+
+Revisión de 9421–9425 sobre tarjetas inteligentes, OCR, Code-and-Fix, atributos y puntos de función. Véase el [registro 1824](cambios-lote-1824.json). Pendientes el cotejo con la academia y la adscripción específica de OCR.
+
+**9.420 con revisión registrada**, incluidas 149 pendientes, y **2.703 sin revisar**.
