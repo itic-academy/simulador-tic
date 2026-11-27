@@ -23485,3 +23485,9 @@ Revisión de 9386–9390 sobre idCAT, ASSI-RGPD, el modelo en espiral, MÉTRICA 
 Revisión de 9391–9395 sobre MÉTRICA v3 y puntos de función. Véase el [registro 1818](cambios-lote-1818.json). Pendiente el cotejo con la academia.
 
 **9.390 con revisión registrada**, incluidas 149 pendientes, y **2.733 sin revisar**.
+
+## Lote 1819 — 27 de noviembre de 2026
+
+Revisión de 9396–9400 sobre OSI, Wi-Fi, registros de acceso y DAC. Véase el [registro 1819](cambios-lote-1819.json). Pendiente el cotejo con la academia.
+
+**9.395 con revisión registrada**, incluidas 149 pendientes, y **2.728 sin revisar**.
