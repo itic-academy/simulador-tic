@@ -23189,3 +23189,9 @@ Revisión de 9126–9130 sobre encaminamiento, demonios, bloques indirectos, mem
 Revisión de 9131–9135 sobre FHS, su, grep, showrgb en X11 y el envío de trabajos mediante lpr en CUPS. Véase el [registro 1766](cambios-lote-1766.json). Queda pendiente el cotejo de academia.
 
 **9.130 con revisión registrada**, incluidas 149 pendientes de resolución, y **2.993 sin revisar**.
+
+## Lote 1767 — 27 de noviembre de 2026
+
+Revisión de 9136–9140 sobre cuentas locales, servidor X11, mantenimiento LTS, origen de Motif y JCL. Véase el [registro 1767](cambios-lote-1767.json). Queda pendiente el cotejo de academia.
+
+**9.135 con revisión registrada**, incluidas 149 pendientes de resolución, y **2.988 sin revisar**.
