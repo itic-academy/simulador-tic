@@ -23857,3 +23857,9 @@ Revisión de 9696–9700 sobre paging, ZODB, el sistema de producción de Toyota
 Revisión de 9701–9705 sobre Nueva Gestión Pública, Scrum, unidades administrativas, partidos políticos y programación de la UE. Véase el [registro 1880](cambios-lote-1880.json). Queda pendiente el cotejo con la academia.
 
 **9.700 con revisión registrada**, incluidas 150 pendientes, y **2.423 sin revisar**.
+
+## Lote 1881 — 28 de noviembre de 2026
+
+Revisión de 9706–9710 sobre clasificación económica, PPTP, PLATA, COCOMO y grupos políticos del Parlamento Europeo. Véase el [registro 1881](cambios-lote-1881.json). Queda pendiente el cotejo con la academia.
+
+**9.705 con revisión registrada**, incluidas 150 pendientes, y **2.418 sin revisar**.
