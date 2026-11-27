@@ -23262,3 +23262,8 @@ Revisión de 9191–9195 sobre QFD, estrategia de ciberseguridad de 2019, EVS 3,
 Revisión de 9196–9200 sobre mesas de contratación, control de cambios, canal telefónico en ADSL, transporte OSI y respuestas JSON en XMLHttpRequest. Véase el [registro 1779](cambios-lote-1779.json). Pendiente el cotejo de academia.
 
 **9.195 con revisión registrada**, incluidas 149 pendientes, y **2.928 sin revisar**.
+## Lote 1780 — 27 de noviembre de 2026
+
+Revisión de 9201–9205 sobre normalización europea, IKE, Bluetooth, derechos de explotación de software y sectores de la UIT. Véase el [registro 1780](cambios-lote-1780.json). Pendiente el cotejo de academia y el encaje curricular específico de 9204.
+
+**9.200 con revisión registrada**, incluidas 149 pendientes, y **2.923 sin revisar**.
