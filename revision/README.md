@@ -23599,3 +23599,9 @@ Revisión de 9481–9485 sobre política monetaria, convenios, Log4j, accesibili
 Revisión de 9486–9490 sobre AJAX, Bootstrap, filtros de servlet, Django y jQuery. Véase el [registro 1837](cambios-lote-1837.json). Pendiente el cotejo con la academia.
 
 **9.485 con revisión registrada**, incluidas 149 pendientes, y **2.638 sin revisar**.
+
+## Lote 1838 — 27 de noviembre de 2026
+
+Revisión de 9491–9495 sobre Markdown, promesas, RxJS, Postman y AJAX. Véase el [registro 1838](cambios-lote-1838.json). Pendiente el cotejo con la academia.
+
+**9.490 con revisión registrada**, incluidas 149 pendientes, y **2.633 sin revisar**.
