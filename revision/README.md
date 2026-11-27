@@ -23153,3 +23153,9 @@ Revisión de 9096–9100 sobre casos de uso, descomposición funcional, programa
 Revisión de 9101–9105 sobre Synaptic, administración de software POSIX, /proc, DNF y recuento de sesiones. Véase el [registro 1760](cambios-lote-1760.json). Queda pendiente el cotejo de academia.
 
 **9.100 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.023 sin revisar**.
+
+## Lote 1761 — 27 de noviembre de 2026
+
+Revisión de 9106–9110 sobre interfaces de red, cambio de contraseña, OpenZFS, modos de ejecución y origen de Unix. Véase el [registro 1761](cambios-lote-1761.json). Queda pendiente el cotejo de academia.
+
+**9.105 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.018 sin revisar**.
