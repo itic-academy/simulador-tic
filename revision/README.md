@@ -23431,3 +23431,9 @@ Revisión de 9341–9345 sobre XPath, biometría, geodesia, bibliotecas .NET y S
 Revisión de 9346–9350 sobre JBoss EAP, ASP, SIG, Struts y persistencia. Véase el [registro 1809](cambios-lote-1809.json). Pendientes el cotejo de academia y la adscripción específica de ASP clásico.
 
 **9.345 con revisión registrada**, incluidas 149 pendientes, y **2.778 sin revisar**.
+
+## Lote 1810 — 27 de noviembre de 2026
+
+Revisión de 9351–9355 sobre PKCS #7, flujos de trabajo, reconocimiento del hablante, JPA y .NET Framework. Véase el [registro 1810](cambios-lote-1810.json). Pendientes el cotejo de academia y la adscripción específica de workflow, biometría de voz y .NET Framework.
+
+**9.350 con revisión registrada**, incluidas 149 pendientes, y **2.773 sin revisar**.
