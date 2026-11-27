@@ -23659,3 +23659,9 @@ Revisión de 9531–9535 sobre JScript, RLE, PMML, PDF y RDF. Véase el [registr
 Revisión de 9536–9540 sobre servicios de confianza, mantenimiento del núcleo, RMAN, GPL y álgebra relacional. Véase el [registro 1847](cambios-lote-1847.json). Pendientes el cotejo con la academia y la adscripción específica de GPL.
 
 **9.535 con revisión registrada**, incluidas 149 pendientes, y **2.588 sin revisar**.
+
+## Lote 1848 — 27 de noviembre de 2026
+
+Revisión de 9541–9545 sobre comparación con plantillas, arquitectura en capas, Azure, RSA y applets. Véase el [registro 1848](cambios-lote-1848.json). Pendientes el cotejo con la academia y la adscripción específica del OCR.
+
+**9.540 con revisión registrada**, incluidas 149 pendientes, y **2.583 sin revisar**.
