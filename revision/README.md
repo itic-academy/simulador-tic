@@ -23147,3 +23147,9 @@ Revisión de 9091–9095 sobre interfaces externas, cambios de requisitos en el 
 Revisión de 9096–9100 sobre casos de uso, descomposición funcional, programación estructurada de Jackson, interrupciones en Linux y VTAM. Véase el [registro 1759](cambios-lote-1759.json). Queda pendiente el cotejo de academia.
 
 **9.095 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.028 sin revisar**.
+
+## Lote 1760 — 27 de noviembre de 2026
+
+Revisión de 9101–9105 sobre Synaptic, administración de software POSIX, /proc, DNF y recuento de sesiones. Véase el [registro 1760](cambios-lote-1760.json). Queda pendiente el cotejo de academia.
+
+**9.100 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.023 sin revisar**.
