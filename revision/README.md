@@ -23521,3 +23521,9 @@ Revisión de 9416–9420 sobre RAID, granularidad de hechos, AES, X.509 y eIDAS.
 Revisión de 9421–9425 sobre tarjetas inteligentes, OCR, Code-and-Fix, atributos y puntos de función. Véase el [registro 1824](cambios-lote-1824.json). Pendientes el cotejo con la academia y la adscripción específica de OCR.
 
 **9.420 con revisión registrada**, incluidas 149 pendientes, y **2.703 sin revisar**.
+
+## Lote 1825 — 27 de noviembre de 2026
+
+Revisión de 9426–9430 sobre Subversion, gestión de la configuración, ITIL 4 y capas OSI. Véase el [registro 1825](cambios-lote-1825.json). Pendiente el cotejo con la academia.
+
+**9.425 con revisión registrada**, incluidas 149 pendientes, y **2.698 sin revisar**.
