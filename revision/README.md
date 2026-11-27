@@ -23335,3 +23335,9 @@ Revisión de 9261–9265 sobre aprendizaje no supervisado, ingeniería de datos,
 Revisión de 9266–9270 sobre extracción web, Ley 34/2002, pantallas de visualización, ETSI y SQL. Véase el [registro 1793](cambios-lote-1793.json). Pendientes el cotejo de academia y el encaje curricular específico de extracción web y prevención en puestos con pantallas.
 
 **9.265 con revisión registrada**, incluidas 149 pendientes, y **2.858 sin revisar**.
+
+## Lote 1794 — 27 de noviembre de 2026
+
+Revisión de 9271–9275 sobre applets históricos, metadatos geográficos, X.509, JPEG y DPCM. Véase el [registro 1794](cambios-lote-1794.json). Pendientes el cotejo de academia y el encaje curricular específico de JPEG y DPCM.
+
+**9.270 con revisión registrada**, incluidas 149 pendientes, y **2.853 sin revisar**.
