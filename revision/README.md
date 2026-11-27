@@ -23312,3 +23312,8 @@ Revisión de 9241–9245 sobre AICC, ADL, OLAP, LOOCV y validación de modelos. 
 Revisión de 9246–9250 sobre ETL, limpieza, minería, YARN y técnicas de análisis. Véase el [registro 1789](cambios-lote-1789.json). Pendiente el cotejo de academia y el encaje curricular específico de YARN.
 
 **9.245 con revisión registrada**, incluidas 149 pendientes, y **2.878 sin revisar**.
+## Lote 1790 — 27 de noviembre de 2026
+
+Revisión de 9251–9255 sobre bibliotecas de Python, MLOps, reglas de asociación, CRISP-DM y tipos de aprendizaje. Véase el [registro 1790](cambios-lote-1790.json). Pendiente el cotejo de academia.
+
+**9.250 con revisión registrada**, incluidas 149 pendientes, y **2.873 sin revisar**.
