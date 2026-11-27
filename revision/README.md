@@ -23539,3 +23539,9 @@ Revisión de 9431–9435 sobre ICMP, puentes Ethernet, XHTML, DOCSIS y HSDPA. V�
 Revisión de 9436–9440 sobre RTP, LDAP, concesiones, prototipado y el CGPJ. Véase el [registro 1827](cambios-lote-1827.json). Pendiente el cotejo con la academia.
 
 **9.435 con revisión registrada**, incluidas 149 pendientes, y **2.688 sin revisar**.
+
+## Lote 1828 — 27 de noviembre de 2026
+
+Revisión de 9441–9445 sobre contingencia, protección de datos, Agenda Digital, EPA y responsabilidad patrimonial. Véase el [registro 1828](cambios-lote-1828.json). Pendiente el cotejo con la academia.
+
+**9.440 con revisión registrada**, incluidas 149 pendientes, y **2.683 sin revisar**.
