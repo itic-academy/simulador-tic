@@ -23533,3 +23533,9 @@ Revisión de 9426–9430 sobre Subversion, gestión de la configuración, ITIL 4
 Revisión de 9431–9435 sobre ICMP, puentes Ethernet, XHTML, DOCSIS y HSDPA. Véase el [registro 1826](cambios-lote-1826.json). Pendiente el cotejo con la academia.
 
 **9.430 con revisión registrada**, incluidas 149 pendientes, y **2.693 sin revisar**.
+
+## Lote 1827 — 27 de noviembre de 2026
+
+Revisión de 9436–9440 sobre RTP, LDAP, concesiones, prototipado y el CGPJ. Véase el [registro 1827](cambios-lote-1827.json). Pendiente el cotejo con la academia.
+
+**9.435 con revisión registrada**, incluidas 149 pendientes, y **2.688 sin revisar**.
