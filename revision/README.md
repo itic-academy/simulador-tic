@@ -23701,3 +23701,9 @@ Revisión de 9566–9570 sobre TLS en Java, servidores blade, eIDAS, INSPIRE y a
 Revisión de 9571–9575 sobre SOA, Angular, BizTalk, la taxonomía de Flynn y el Consejo Consultivo de la AEPD. Véase el [registro 1854](cambios-lote-1854.json). Queda pendiente el cotejo con la academia.
 
 **9.570 con revisión registrada**, incluidas 149 pendientes, y **2.553 sin revisar**.
+
+## Lote 1855 — 27 de noviembre de 2026
+
+Revisión de 9576–9580 sobre excedencia, oficinas de enlace del Parlamento Europeo, contratación y la vigencia histórica de los certificados del DNIe. Véase el [registro 1855](cambios-lote-1855.json). Queda pendiente el cotejo con la academia.
+
+**9.575 con revisión registrada**, incluidas 149 pendientes, y **2.548 sin revisar**.
