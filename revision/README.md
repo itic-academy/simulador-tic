@@ -23237,3 +23237,8 @@ Revisión de 9166–9170 sobre S1-MME, navegación coherente, reutilización de 
 Revisión de 9171–9175 sobre registro distribuido e identificación, ART, DQDB, IPv6 e instituciones de la UE. Véase el [registro 1774](cambios-lote-1774.json). Pendiente el cotejo de academia.
 
 **9.170 con revisión registrada**, incluidas 149 pendientes, y **2.953 sin revisar**.
+## Lote 1775 — 27 de noviembre de 2026
+
+Revisión de 9176–9180 sobre la naturaleza de la AEPD, el Fondo de Contingencia, la ejecución del presupuesto europeo, el consentimiento de menores y el Tribunal Constitucional. Véase el [registro 1775](cambios-lote-1775.json). Pendiente el cotejo de academia.
+
+**9.175 con revisión registrada**, incluidas 149 pendientes, y **2.948 sin revisar**.
