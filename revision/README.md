@@ -23473,3 +23473,9 @@ Revisión de 9376–9380 sobre controles preventivos, Portal de Entidades Locale
 Revisión de 9381–9385 sobre SQL, mashups, Calligra Sheets, TIN y sellos de tiempo. Véase el [registro 1816](cambios-lote-1816.json). Pendientes el cotejo con la academia y la clasificación específica de Calligra Sheets.
 
 **9.380 con revisión registrada**, incluidas 149 pendientes, y **2.743 sin revisar**.
+
+## Lote 1817 — 27 de noviembre de 2026
+
+Revisión de 9386–9390 sobre idCAT, ASSI-RGPD, el modelo en espiral, MÉTRICA v3 y escalabilidad. Véase el [registro 1817](cambios-lote-1817.json). Pendiente el cotejo con la academia.
+
+**9.385 con revisión registrada**, incluidas 149 pendientes, y **2.738 sin revisar**.
