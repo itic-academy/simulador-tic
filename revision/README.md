@@ -23287,3 +23287,8 @@ Revisión de 9216–9220 sobre IPv6, Delphi, SAAJ, aplicaciones híbridas y acce
 Revisión de 9221–9225 sobre aprendizaje semipresencial, WBT, MOOC, SCORM y Ganesha. Véase el [registro 1784](cambios-lote-1784.json). Pendiente el cotejo de academia.
 
 **9.220 con revisión registrada**, incluidas 149 pendientes, y **2.903 sin revisar**.
+## Lote 1785 — 27 de noviembre de 2026
+
+Revisión de 9226–9230 sobre recursos en LMS, xAPI, Moodle, finalización de cursos y SCORM. Véase el [registro 1785](cambios-lote-1785.json). Pendiente el cotejo de academia.
+
+**9.225 con revisión registrada**, incluidas 149 pendientes, y **2.898 sin revisar**.
