@@ -23225,3 +23225,9 @@ Revisión de 9156–9160 sobre Kerberos, señalización SMS en GSM, Nodo B, norm
 Revisión de 9161–9165 sobre Drupal, data lakes, tratamiento del riesgo en MAGERIT, hexadecimal y accesibilidad de los CMS. Véase el [registro 1772](cambios-lote-1772.json). Pendiente el cotejo de academia.
 
 **9.160 con revisión registrada**, incluidas 149 pendientes, y **2.963 sin revisar**.
+
+## Lote 1773 — 27 de noviembre de 2026
+
+Revisión de 9166–9170 sobre S1-MME, navegación coherente, reutilización de información, máquinas de estados y Consejo Europeo. Véase el [registro 1773](cambios-lote-1773.json). Pendiente el cotejo de academia.
+
+**9.165 con revisión registrada**, incluidas 149 pendientes, y **2.958 sin revisar**.
