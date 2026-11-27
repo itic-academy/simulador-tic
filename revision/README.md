@@ -23383,3 +23383,9 @@ Revisión de 9301–9305 sobre infracciones, licencias, catálogo y búsqueda mu
 Revisión de 9306–9310 sobre sanciones y procedimiento de reutilización, conservación de facultades del organismo y TLS en Java. Véase el [registro 1801](cambios-lote-1801.json). Pendiente el cotejo de academia.
 
 **9.305 con revisión registrada**, incluidas 149 pendientes, y **2.818 sin revisar**.
+
+## Lote 1802 — 27 de noviembre de 2026
+
+Revisión de 9311–9315 sobre LAMP, API de HTML, ACID, SQL Server y SaaS. Véase el [registro 1802](cambios-lote-1802.json). Pendientes el cotejo de academia y el encaje curricular específico de LAMP.
+
+**9.310 con revisión registrada**, incluidas 149 pendientes, y **2.813 sin revisar**.
