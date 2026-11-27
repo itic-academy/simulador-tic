@@ -23839,3 +23839,9 @@ Revisión de 9681–9685 sobre revocación, EGEO, acreditación de violencia de 
 Revisión de 9686–9690 sobre la EPA, la Regencia, el Diseño del Servicio en ITIL v3, la FNBC y la potestad reglamentaria. Véase el [registro 1877](cambios-lote-1877.json). Quedan pendientes el cotejo con la academia y la adscripción oficial de la EPA.
 
 **9.685 con revisión registrada**, incluidas 150 pendientes, y **2.438 sin revisar**.
+
+## Lote 1878 — 27 de noviembre de 2026
+
+Revisión de 9691–9695 sobre carga de la prueba, Estatutos de Autonomía, análisis de impacto, el plan digital 2015–2020 y mantenimiento adaptativo. Véase el [registro 1878](cambios-lote-1878.json). Queda pendiente el cotejo con la academia.
+
+**9.690 con revisión registrada**, incluidas 150 pendientes, y **2.433 sin revisar**.
