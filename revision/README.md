@@ -23779,3 +23779,9 @@ Revisión de 9631–9635 sobre resultados en ITIL, seguimiento de hitos en MÉTR
 Revisión de 9636–9640 sobre SIEM, sesiones JRP de MÉTRICA v3, confidencialidad en SNMPv3, la Agencia Estatal de Administración Digital y la cocreación de valor en ITIL. Véase el [registro 1867](cambios-lote-1867.json). Queda pendiente el cotejo con la academia.
 
 **9.635 con revisión registrada**, incluidas 150 pendientes, y **2.488 sin revisar**.
+
+## Lote 1868 — 27 de noviembre de 2026
+
+Revisión de 9641–9645 sobre la estrategia de ciberseguridad de 2019, firma digital, mediación y arbitraje en propiedad intelectual, transacciones y escáneres. Véase el [registro 1868](cambios-lote-1868.json). Quedan pendientes el cotejo con la academia y la adscripción específica de la pregunta sobre la Comisión de Propiedad Intelectual.
+
+**9.640 con revisión registrada**, incluidas 150 pendientes, y **2.483 sin revisar**.
