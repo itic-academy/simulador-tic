@@ -23045,3 +23045,9 @@ Revisión de 9006–9010: planificación tecnológica, flujos de datos, unidades
 Revisión de 9011–9015 sobre sistemas de información ejecutiva, gestión táctica, la hipótesis de Nolan de 1973, DAFO y aprobación de la Estrategia TIC. Véase el [registro 1742](cambios-lote-1742.json). Queda pendiente el cotejo de academia del lote.
 
 **9.010 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.113 sin revisar**.
+
+## Lote 1743 — 27 de noviembre de 2026
+
+Revisión de 9016–9020 sobre el modelo de Gibson y Nolan de 1974, el horizonte temporal de los planes estratégicos, funciones y componentes de los sistemas de información y procesamiento de ventas. Véase el [registro 1743](cambios-lote-1743.json). Queda pendiente el cotejo de academia del lote.
+
+**9.015 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.108 sin revisar**.
