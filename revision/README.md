@@ -23821,3 +23821,9 @@ Revisión de 9666–9670 sobre certificados cualificados, diagramas UML, prototi
 Revisión de 9671–9675 sobre BGP, routers de borde OSPF, SNMPv3, AAA y el objetivo mínimo de continuidad. Véase el [registro 1874](cambios-lote-1874.json). Queda pendiente el cotejo con la academia.
 
 **9.670 con revisión registrada**, incluidas 150 pendientes, y **2.453 sin revisar**.
+
+## Lote 1875 — 27 de noviembre de 2026
+
+Revisión de 9676–9680 sobre H.245, Estatutos de Autonomía, igualdad efectiva y el plan de ejecución de MAGERIT. Véase el [registro 1875](cambios-lote-1875.json). Queda pendiente el cotejo con la academia.
+
+**9.675 con revisión registrada**, incluidas 150 pendientes, y **2.448 sin revisar**.
