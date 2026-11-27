@@ -23219,3 +23219,9 @@ Revisión de 9151–9155 sobre demanda en ITIL 2011, vistas materializadas, tupl
 Revisión de 9156–9160 sobre Kerberos, señalización SMS en GSM, Nodo B, normalización lineal y puertos UDP. En 9159 se explicita la normalización por rango que produce el resultado original. Véase el [registro 1771](cambios-lote-1771.json). Pendiente el cotejo de academia.
 
 **9.155 con revisión registrada**, incluidas 149 pendientes, y **2.968 sin revisar**.
+
+## Lote 1772 — 27 de noviembre de 2026
+
+Revisión de 9161–9165 sobre Drupal, data lakes, tratamiento del riesgo en MAGERIT, hexadecimal y accesibilidad de los CMS. Véase el [registro 1772](cambios-lote-1772.json). Pendiente el cotejo de academia.
+
+**9.160 con revisión registrada**, incluidas 149 pendientes, y **2.963 sin revisar**.
