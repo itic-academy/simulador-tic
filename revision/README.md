@@ -23407,3 +23407,9 @@ Revisión de 9321–9325 sobre Ada, Reglamento de Datos, elasticidad, claves aje
 Revisión de 9326–9330 sobre informes de Exchange, Java, índices de texto, síntesis de voz y portlets. Véase el [registro 1805](cambios-lote-1805.json). Pendientes el cotejo de academia y la adscripción específica de informes de Exchange y síntesis de voz.
 
 **9.325 con revisión registrada**, incluidas 149 pendientes, y **2.798 sin revisar**.
+
+## Lote 1806 — 27 de noviembre de 2026
+
+Revisión de 9331–9335 sobre OLE DB, pruebas de integración, ordenación por burbuja, Jakarta Faces y SOAP. Véase el [registro 1806](cambios-lote-1806.json). Pendientes el cotejo de academia y el encaje curricular específico de la ordenación por burbuja.
+
+**9.330 con revisión registrada**, incluidas 149 pendientes, y **2.793 sin revisar**.
