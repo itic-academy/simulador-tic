@@ -23401,3 +23401,9 @@ Revisión de 9316–9320 sobre Internet Explorer, OLAP, Jamstack, JavaScript y S
 Revisión de 9321–9325 sobre Ada, Reglamento de Datos, elasticidad, claves ajenas y virtualización. Véase el [registro 1804](cambios-lote-1804.json). Pendientes el cotejo de academia y el encaje curricular específico de Ada.
 
 **9.320 con revisión registrada**, incluidas 149 pendientes, y **2.803 sin revisar**.
+
+## Lote 1805 — 27 de noviembre de 2026
+
+Revisión de 9326–9330 sobre informes de Exchange, Java, índices de texto, síntesis de voz y portlets. Véase el [registro 1805](cambios-lote-1805.json). Pendientes el cotejo de academia y la adscripción específica de informes de Exchange y síntesis de voz.
+
+**9.325 con revisión registrada**, incluidas 149 pendientes, y **2.798 sin revisar**.
