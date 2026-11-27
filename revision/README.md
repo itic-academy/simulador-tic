@@ -23563,3 +23563,9 @@ Revisión de 9451–9455 sobre Git, Ministerio Fiscal, WebView, subvenciones y D
 Revisión de 9456–9460 sobre potestad jurisdiccional, CTT, provincias, subvenciones y Android Runtime. Véase el [registro 1831](cambios-lote-1831.json). Pendiente el cotejo con la academia.
 
 **9.455 con revisión registrada**, incluidas 149 pendientes, y **2.668 sin revisar**.
+
+## Lote 1832 — 27 de noviembre de 2026
+
+Revisión de 9461–9465 sobre RTO, municipios, contratación, impacto normativo e indemnización por daños en la Administración de Justicia. Véase el [registro 1832](cambios-lote-1832.json). Pendientes el cotejo con la academia y la adscripción específica de RTO.
+
+**9.460 con revisión registrada**, incluidas 149 pendientes, y **2.663 sin revisar**.
