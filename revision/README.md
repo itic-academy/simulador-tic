@@ -23617,3 +23617,9 @@ Revisión de 9496–9500 sobre historial web, REST, HTTP, Node.js y GIF. Véase 
 Revisión de 9501–9505 sobre applets, complementos, mashups, HTML5 y JPEG. Véase el [registro 1840](cambios-lote-1840.json). Pendientes el cotejo con la academia y el encaje específico de JPEG.
 
 **9.500 con revisión registrada**, incluidas 149 pendientes, y **2.623 sin revisar**.
+
+## Lote 1841 — 27 de noviembre de 2026
+
+Revisión de 9506–9510 sobre Angular Material, ActiveX, interfaces web, WebSocket y MVC. Véase el [registro 1841](cambios-lote-1841.json). Pendiente el cotejo con la academia.
+
+**9.505 con revisión registrada**, incluidas 149 pendientes, y **2.618 sin revisar**.
