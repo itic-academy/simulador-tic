@@ -23272,3 +23272,8 @@ Revisión de 9201–9205 sobre normalización europea, IKE, Bluetooth, derechos 
 Revisión de 9206–9210 sobre despacho virtual, NAPT, MSI 3, líneas base y modularidad. Véase el [registro 1781](cambios-lote-1781.json). Pendiente el cotejo de academia.
 
 **9.205 con revisión registrada**, incluidas 149 pendientes, y **2.918 sin revisar**.
+## Lote 1782 — 27 de noviembre de 2026
+
+Revisión de 9211–9215 sobre normalización de FORTRAN, SAX, W-CDMA, misión de ICANN y contingencia. Véase el [registro 1782](cambios-lote-1782.json). Pendiente el cotejo de academia y el encaje curricular específico de la pregunta histórica sobre FORTRAN.
+
+**9.210 con revisión registrada**, incluidas 149 pendientes, y **2.913 sin revisar**.
