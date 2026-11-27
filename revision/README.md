@@ -23292,3 +23292,8 @@ Revisión de 9221–9225 sobre aprendizaje semipresencial, WBT, MOOC, SCORM y Ga
 Revisión de 9226–9230 sobre recursos en LMS, xAPI, Moodle, finalización de cursos y SCORM. Véase el [registro 1785](cambios-lote-1785.json). Pendiente el cotejo de academia.
 
 **9.225 con revisión registrada**, incluidas 149 pendientes, y **2.898 sin revisar**.
+## Lote 1786 — 27 de noviembre de 2026
+
+Revisión de 9231–9235 sobre empaquetado y ejecución SCORM, declaraciones xAPI, aprendizaje asíncrono y Dokeos. Véase el [registro 1786](cambios-lote-1786.json). Pendiente el cotejo de academia.
+
+**9.230 con revisión registrada**, incluidas 149 pendientes, y **2.893 sin revisar**.
