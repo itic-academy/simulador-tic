@@ -23069,3 +23069,9 @@ Revisión de 9026–9030. Se precisan la entrada de datos, las funciones de un s
 Revisión de 9031–9035 sobre la Agenda 2030, la calificación soberana histórica de S&P, la Ley de Economía Sostenible y la lectura del indicador S80/S20. Véase el [registro 1746](cambios-lote-1746.json). Queda pendiente el cotejo de academia del lote.
 
 **9.030 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.093 sin revisar**.
+
+## Lote 1747 — 27 de noviembre de 2026
+
+Revisión de 9036–9040 sobre la EPA de 2022, el Mecanismo Conectar Europa, el carácter procíclico de los flujos, la adhesión a las Comunidades Europeas y la aprobación de la Agenda 2030. Véase el [registro 1747](cambios-lote-1747.json). Queda pendiente el cotejo de academia del lote.
+
+**9.035 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.088 sin revisar**.
