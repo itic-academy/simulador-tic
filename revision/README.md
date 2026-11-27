@@ -23297,3 +23297,8 @@ Revisión de 9226–9230 sobre recursos en LMS, xAPI, Moodle, finalización de c
 Revisión de 9231–9235 sobre empaquetado y ejecución SCORM, declaraciones xAPI, aprendizaje asíncrono y Dokeos. Véase el [registro 1786](cambios-lote-1786.json). Pendiente el cotejo de academia.
 
 **9.230 con revisión registrada**, incluidas 149 pendientes, y **2.893 sin revisar**.
+## Lote 1787 — 27 de noviembre de 2026
+
+Revisión de 9236–9240 sobre MOOC, licencia de Moodle, repositorios de objetos de aprendizaje y funciones de los LMS. Véase el [registro 1787](cambios-lote-1787.json). Pendiente el cotejo de academia.
+
+**9.235 con revisión registrada**, incluidas 149 pendientes, y **2.888 sin revisar**.
