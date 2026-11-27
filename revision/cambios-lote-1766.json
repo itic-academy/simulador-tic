@@ -1,0 +1,291 @@
+{
+  "fecha": "2026-11-27",
+  "alcance": "IDs 9131–9135; revisión individual con fuentes y pendientes explícitos.",
+  "cambios": [
+    {
+      "id": 9131,
+      "original": {
+        "id": 9131,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Una distibución UNIX/LINUX incorpora por defecto una serie de directorios. Señale cuál NO es uno de ellos, conforme al Filesystem Hierarchy Standard (FHS 3.0):",
+        "opciones": [
+          "/etc",
+          "/temp",
+          "/dev",
+          "/lib"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 9131,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "Según FHS 3.0, ¿qué directorio se destina a archivos temporales?",
+        "opciones": [
+          "/etc",
+          "/tmp",
+          "/dev",
+          "/lib"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "B. FHS reserva /tmp para archivos temporales. Los programas deben prever que su contenido se pueda eliminar entre ejecuciones.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2",
+            "A2-IV-1"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "Linux Foundation, FHS 3.0, /tmp"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-27",
+          "fuentes": [
+            {
+              "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s18.html",
+              "referencia": "Linux Foundation, FHS 3.0, /tmp"
+            }
+          ],
+          "observaciones": "B. FHS reserva /tmp para archivos temporales. Los programas deben prever que su contenido se pueda eliminar entre ejecuciones."
+        }
+      }
+    },
+    {
+      "id": 9132,
+      "original": {
+        "id": 9132,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En una terminal de Linux, una forma de ejecutar comandos con privilegios de root desde una cuenta “usuario” sin privilegios es:",
+        "opciones": [
+          "Utilizar “sudo su” introduciendo la contraseña de root para iniciar una nueva shell desde la que seejecutarían comandos con privilegios de root",
+          "Utilizar “su root” introduciendo la contraseña de root para invocar una nueva shell desde la que se ejecutarían comandos con privilegios de root",
+          "Utilizar “sudo X”, donde X es el comando a ejecutar con privilegios de root, introduciendo la contraseña de root, siempre y cuando sudo se encuentre instalado y “usuario” esté autorizado en el archivo “sudoers”",
+          "Utilizar “su - root -c X”, donde X es el comando a ejecutar con privilegios de root, introduciendo la contraseña de “usuario”"
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 9132,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Para qué sirve su en util-linux cuando la política de autenticación permite el cambio de identidad?",
+        "opciones": [
+          "Para consultar los grupos de la cuenta actual.",
+          "Para ejecutar una orden o iniciar un intérprete con la identidad de otra cuenta.",
+          "Para modificar el propietario de un archivo.",
+          "Para consultar permisos de archivos."
+        ],
+        "respuesta_correcta": 1,
+        "comentarios": "B. su ejecuta órdenes con otra identidad de usuario y grupo. En util-linux, PAM gestiona la autenticación, la cuenta y la sesión.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2",
+            "A2-IV-1"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "util-linux, su(1)"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-27",
+          "fuentes": [
+            {
+              "url": "https://manpages.debian.org/bookworm/util-linux/su.1.en.html",
+              "referencia": "util-linux, su(1)"
+            }
+          ],
+          "observaciones": "B. su ejecuta órdenes con otra identidad de usuario y grupo. En util-linux, PAM gestiona la autenticación, la cuenta y la sesión."
+        }
+      }
+    },
+    {
+      "id": 9133,
+      "original": {
+        "id": 9133,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En linux, el comando grep:",
+        "opciones": [
+          "Permite cambiar de directorio.",
+          "Muestra el listado de ficheros en la ruta actual.",
+          "Permite buscar una cadena o patrón de texto dentro de un fichero.",
+          "Muestra un listado con los comandos ejecutados anteriormente por el usuario."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 9133,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Cuál es la función predeterminada de grep al recibir un patrón y un fichero?",
+        "opciones": [
+          "Cambiar de directorio.",
+          "Listar los archivos del directorio actual.",
+          "Mostrar las líneas del fichero que coinciden con el patrón.",
+          "Mostrar el historial del intérprete."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "C. grep busca coincidencias con el patrón y, de forma predeterminada, imprime las líneas que coinciden.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2",
+            "A2-IV-1"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "GNU Grep, Invoking grep"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-27",
+          "fuentes": [
+            {
+              "url": "https://www.gnu.org/software/grep/manual/grep.html",
+              "referencia": "GNU Grep, Invoking grep"
+            }
+          ],
+          "observaciones": "C. grep busca coincidencias con el patrón y, de forma predeterminada, imprime las líneas que coinciden."
+        }
+      }
+    },
+    {
+      "id": 9134,
+      "original": {
+        "id": 9134,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "El comando Linux que permite listar los colores reconocidos en el sistema y su valor RGB es:",
+        "opciones": [
+          "listrg",
+          "statrg",
+          "showrg",
+          "no existe ese comando en Linux"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 9134,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "¿Qué utilidad de X11 R6.4 convierte a texto una base compilada de nombres de colores RGB?",
+        "opciones": [
+          "xev",
+          "xset",
+          "showrgb",
+          "xwininfo"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "C. showrgb lee la base de nombres de colores y escribe en la salida estándar su representación textual.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2",
+            "A2-IV-1"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "X Version 11 Release 6.4, showrgb(1)"
+        ],
+        "revision": {
+          "estado": "historica",
+          "fecha": "2026-11-27",
+          "fuentes": [
+            {
+              "url": "https://www.x.org/docs/man/man.pdf",
+              "referencia": "X Version 11 Release 6.4, showrgb(1)"
+            }
+          ],
+          "observaciones": "C. showrgb lee la base de nombres de colores y escribe en la salida estándar su representación textual."
+        }
+      }
+    },
+    {
+      "id": 9135,
+      "original": {
+        "id": 9135,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En UNIX, ¿quién es el dueño del proceso una vez ejecutada la instrucción lpr?",
+        "opciones": [
+          "root",
+          "el usuario que la ha ejecutado",
+          "el programa de control de la cola de impresora",
+          "scheduler"
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": ""
+      },
+      "actualizada": {
+        "id": 9135,
+        "bloque": 0,
+        "tema": 0,
+        "texto": "En CUPS, ¿qué hace lpr al recibir un fichero como argumento?",
+        "opciones": [
+          "Cambia el propietario del fichero a root.",
+          "Abre el fichero en un visor de documentos.",
+          "Envía el fichero como trabajo a la impresora indicada o a la predeterminada.",
+          "Muestra el estado de todos los trabajos de impresión."
+        ],
+        "respuesta_correcta": 2,
+        "comentarios": "C. lpr envía archivos a imprimir y utiliza el destino predeterminado cuando no se especifica otro.",
+        "clasificacion": {
+          "A1": [
+            "A1-60"
+          ],
+          "A2": [
+            "A2-II-2",
+            "A2-IV-1"
+          ],
+          "bloque_academia": null,
+          "estado": "revisada",
+          "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+        },
+        "etiquetas": [
+          "CUPS, lpr(1)"
+        ],
+        "revision": {
+          "estado": "corregida",
+          "fecha": "2026-11-27",
+          "fuentes": [
+            {
+              "url": "https://www.cups.org/doc/man-lpr.html",
+              "referencia": "CUPS, lpr(1)"
+            }
+          ],
+          "observaciones": "C. lpr envía archivos a imprimir y utiliza el destino predeterminado cuando no se especifica otro."
+        }
+      }
+    }
+  ]
+}
