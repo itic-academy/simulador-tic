@@ -23611,3 +23611,9 @@ Revisión de 9491–9495 sobre Markdown, promesas, RxJS, Postman y AJAX. Véase 
 Revisión de 9496–9500 sobre historial web, REST, HTTP, Node.js y GIF. Véase el [registro 1839](cambios-lote-1839.json). Pendientes el cotejo con la academia y el encaje específico de GIF.
 
 **9.495 con revisión registrada**, incluidas 149 pendientes, y **2.628 sin revisar**.
+
+## Lote 1840 — 27 de noviembre de 2026
+
+Revisión de 9501–9505 sobre applets, complementos, mashups, HTML5 y JPEG. Véase el [registro 1840](cambios-lote-1840.json). Pendientes el cotejo con la academia y el encaje específico de JPEG.
+
+**9.500 con revisión registrada**, incluidas 149 pendientes, y **2.623 sin revisar**.
