@@ -23635,3 +23635,9 @@ Revisión de 9511–9515 sobre ECMAScript, CSS adaptable, TypeScript y el origen
 Revisión de 9516–9520 sobre Web Starter Kit, AJAX, WebAuthn, Fetch y Spring. Véase el [registro 1843](cambios-lote-1843.json). Pendiente el cotejo con la academia.
 
 **9.515 con revisión registrada**, incluidas 149 pendientes, y **2.608 sin revisar**.
+
+## Lote 1844 — 27 de noviembre de 2026
+
+Revisión de 9521–9525 sobre Angular, dApps, depuración, JSX y Markdown. Véase el [registro 1844](cambios-lote-1844.json). Pendiente el cotejo con la academia.
+
+**9.520 con revisión registrada**, incluidas 149 pendientes, y **2.603 sin revisar**.
