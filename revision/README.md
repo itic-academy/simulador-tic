@@ -23491,3 +23491,9 @@ Revisión de 9391–9395 sobre MÉTRICA v3 y puntos de función. Véase el [regi
 Revisión de 9396–9400 sobre OSI, Wi-Fi, registros de acceso y DAC. Véase el [registro 1819](cambios-lote-1819.json). Pendiente el cotejo con la academia.
 
 **9.395 con revisión registrada**, incluidas 149 pendientes, y **2.728 sin revisar**.
+
+## Lote 1820 — 27 de noviembre de 2026
+
+Revisión de 9401–9405 sobre continuidad, trabajo a distancia, Tribunal Constitucional, Delegaciones y principios administrativos. Véase el [registro 1820](cambios-lote-1820.json). Pendiente el cotejo con la academia.
+
+**9.400 con revisión registrada**, incluidas 149 pendientes, y **2.723 sin revisar**.
