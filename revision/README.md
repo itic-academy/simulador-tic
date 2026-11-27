@@ -23117,3 +23117,9 @@ Revisión de 9066–9070 sobre eficiencia en el uso de recursos públicos, desem
 Revisión de 9071–9075 sobre métodos de ingeniería del software, profundidad de herencia, análisis orientado a objetos, planificación en XP y requisitos verificables. Véase el [registro 1754](cambios-lote-1754.json). Queda pendiente el cotejo de academia.
 
 **9.070 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.053 sin revisar**.
+
+## Lote 1755 — 27 de noviembre de 2026
+
+Revisión de 9076–9080 sobre Planning Poker, Crystal, casos de uso UML, talleres JAD y puntos de función. Véase el [registro 1755](cambios-lote-1755.json). Queda pendiente el cotejo de academia.
+
+**9.075 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.048 sin revisar**.
