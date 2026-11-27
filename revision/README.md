@@ -23323,3 +23323,9 @@ Revisión de 9251–9255 sobre bibliotecas de Python, MLOps, reglas de asociaci�
 Revisión de 9256–9260 sobre minería, ETL, Selenium, limpieza de datos y lenguajes de análisis. Véase el [registro 1791](cambios-lote-1791.json). Pendientes el cotejo de academia y el encaje curricular específico de Selenium.
 
 **9.255 con revisión registrada**, incluidas 149 pendientes, y **2.868 sin revisar**.
+
+## Lote 1792 — 27 de noviembre de 2026
+
+Revisión de 9261–9265 sobre aprendizaje no supervisado, ingeniería de datos, minería y detección de anomalías. Véase el [registro 1792](cambios-lote-1792.json). Pendiente el cotejo de academia.
+
+**9.260 con revisión registrada**, incluidas 149 pendientes, y **2.863 sin revisar**.
