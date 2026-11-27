@@ -23075,3 +23075,9 @@ Revisión de 9031–9035 sobre la Agenda 2030, la calificación soberana histór
 Revisión de 9036–9040 sobre la EPA de 2022, el Mecanismo Conectar Europa, el carácter procíclico de los flujos, la adhesión a las Comunidades Europeas y la aprobación de la Agenda 2030. Véase el [registro 1747](cambios-lote-1747.json). Queda pendiente el cotejo de academia del lote.
 
 **9.035 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.088 sin revisar**.
+
+## Lote 1748 — 27 de noviembre de 2026
+
+Revisión de 9041–9045 sobre el ODS 9, la adopción de la Agenda 2030, la Agenda del Cambio de febrero de 2019, la publicación de la reforma constitucional y la firma de los Pactos de la Moncloa. Véase el [registro 1748](cambios-lote-1748.json). Queda pendiente el cotejo de academia del lote.
+
+**9.040 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.083 sin revisar**.
