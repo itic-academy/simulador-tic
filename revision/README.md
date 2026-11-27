@@ -23359,3 +23359,9 @@ Revisión de 9281–9285 sobre EFQM, COBIT, ITIL, BGP e IPv6. Véase el [registr
 Revisión de 9286–9290 sobre RTP y RTCP, DHCP, SNMP, datos.gob.es y reutilización de información pública. Véase el [registro 1797](cambios-lote-1797.json). Pendiente el cotejo de academia.
 
 **9.285 con revisión registrada**, incluidas 149 pendientes, y **2.838 sin revisar**.
+
+## Lote 1798 — 27 de noviembre de 2026
+
+Revisión de 9291–9295 sobre el ámbito, las modalidades y los costes de reutilización de información pública y la transposición de la Directiva (UE) 2019/1024. Véase el [registro 1798](cambios-lote-1798.json). Pendiente el cotejo de academia.
+
+**9.290 con revisión registrada**, incluidas 149 pendientes, y **2.833 sin revisar**.
