@@ -23425,3 +23425,9 @@ Revisión de 9336–9340 sobre bases de datos en red, sistemas multiusuario, con
 Revisión de 9341–9345 sobre XPath, biometría, geodesia, bibliotecas .NET y Sendmail. Véase el [registro 1808](cambios-lote-1808.json). Pendientes el cotejo de academia y la adscripción específica de las bibliotecas .NET y Sendmail.
 
 **9.340 con revisión registrada**, incluidas 149 pendientes, y **2.783 sin revisar**.
+
+## Lote 1809 — 27 de noviembre de 2026
+
+Revisión de 9346–9350 sobre JBoss EAP, ASP, SIG, Struts y persistencia. Véase el [registro 1809](cambios-lote-1809.json). Pendientes el cotejo de academia y la adscripción específica de ASP clásico.
+
+**9.345 con revisión registrada**, incluidas 149 pendientes, y **2.778 sin revisar**.
