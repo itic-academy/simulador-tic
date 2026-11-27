@@ -23413,3 +23413,9 @@ Revisión de 9326–9330 sobre informes de Exchange, Java, índices de texto, s�
 Revisión de 9331–9335 sobre OLE DB, pruebas de integración, ordenación por burbuja, Jakarta Faces y SOAP. Véase el [registro 1806](cambios-lote-1806.json). Pendientes el cotejo de academia y el encaje curricular específico de la ordenación por burbuja.
 
 **9.330 con revisión registrada**, incluidas 149 pendientes, y **2.793 sin revisar**.
+
+## Lote 1807 — 27 de noviembre de 2026
+
+Revisión de 9336–9340 sobre bases de datos en red, sistemas multiusuario, contrafirma, RSA y aislamiento. Véase el [registro 1807](cambios-lote-1807.json). Pendientes el cotejo de academia y el encaje específico de sistemas multiusuario.
+
+**9.335 con revisión registrada**, incluidas 149 pendientes, y **2.788 sin revisar**.
