@@ -23443,3 +23443,9 @@ Revisión de 9351–9355 sobre PKCS #7, flujos de trabajo, reconocimiento del ha
 Revisión de 9356–9360 sobre certificados, normalización, reforma constitucional y organización territorial. Véase el [registro 1811](cambios-lote-1811.json). Pendiente el cotejo con la academia.
 
 **9.355 con revisión registrada**, incluidas 149 pendientes, y **2.768 sin revisar**.
+
+## Lote 1812 — 27 de noviembre de 2026
+
+Revisión de 9361–9365 sobre nulidad, contratación, subvenciones, derechos sociales y unidad de mercado. Véase el [registro 1812](cambios-lote-1812.json). Pendientes el cotejo con la academia y la adscripción específica del Pilar Europeo.
+
+**9.360 con revisión registrada**, incluidas 149 pendientes, y **2.763 sin revisar**.
