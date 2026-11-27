@@ -23099,3 +23099,9 @@ Revisión de 9051–9055 sobre estabilidad presupuestaria, adopción del euro en
 Revisión de 9056–9060 sobre adaptación climática, definición estadística de deuda privada, reforma del IVA en 2014, efectivo en euros y tablón edictal. Se sustituye en 9057 una cifra sin fecha por una definición de Eurostat. Véase el [registro 1751](cambios-lote-1751.json). Queda pendiente el cotejo de academia.
 
 **9.055 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.068 sin revisar**.
+
+## Lote 1752 — 27 de noviembre de 2026
+
+Revisión de 9061–9065 sobre productividad aparente del trabajo en 2008, adopción de la moneda única, adaptación climática en España, denominación de Sareb y Fondo de Transición Justa. En 9061 se corrige la confusión entre productividad aparente y productividad total de los factores. Véase el [registro 1752](cambios-lote-1752.json). Queda pendiente el cotejo de academia.
+
+**9.060 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.063 sin revisar**.
