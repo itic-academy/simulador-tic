@@ -23755,3 +23755,9 @@ Revisión de 9611–9615 sobre contadores de CPU, clases abstractas, tablas de d
 Revisión de 9616–9620 sobre negociación, policía judicial, notificaciones electrónicas, prescripción y reserva de funciones públicas. Véase el [registro 1863](cambios-lote-1863.json). Queda pendiente el cotejo con la academia.
 
 **9.615 con revisión registrada**, incluidas 150 pendientes, y **2.508 sin revisar**.
+
+## Lote 1864 — 27 de noviembre de 2026
+
+Revisión de 9621–9625 sobre control autonómico, grupos políticos del Parlamento Europeo, organización de la AGE, SIP y convergencia de RIP. Véase el [registro 1864](cambios-lote-1864.json). Queda pendiente el cotejo con la academia.
+
+**9.620 con revisión registrada**, incluidas 150 pendientes, y **2.503 sin revisar**.
