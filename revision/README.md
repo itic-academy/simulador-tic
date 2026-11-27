@@ -23051,3 +23051,9 @@ Revisión de 9011–9015 sobre sistemas de información ejecutiva, gestión tác
 Revisión de 9016–9020 sobre el modelo de Gibson y Nolan de 1974, el horizonte temporal de los planes estratégicos, funciones y componentes de los sistemas de información y procesamiento de ventas. Véase el [registro 1743](cambios-lote-1743.json). Queda pendiente el cotejo de academia del lote.
 
 **9.015 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.108 sin revisar**.
+
+## Lote 1744 — 27 de noviembre de 2026
+
+Revisión de 9021–9025 sobre DSS orientados a modelos, procesamiento de transacciones, niveles de decisión, conocimiento organizativo y perímetro de autorización. Véase el [registro 1744](cambios-lote-1744.json). Queda pendiente el cotejo de academia del lote.
+
+**9.020 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.103 sin revisar**.
