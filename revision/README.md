@@ -23467,3 +23467,9 @@ Revisión de 9371–9375 sobre SMED, SSD-AAPP, accesibilidad y el ENI. Véase el
 Revisión de 9376–9380 sobre controles preventivos, Portal de Entidades Locales, RS-232, Escritorio remoto y administración de bases de datos. Véase el [registro 1815](cambios-lote-1815.json). Pendientes el cotejo con la academia y el encaje curricular específico del cliente RDS.
 
 **9.375 con revisión registrada**, incluidas 149 pendientes, y **2.748 sin revisar**.
+
+## Lote 1816 — 27 de noviembre de 2026
+
+Revisión de 9381–9385 sobre SQL, mashups, Calligra Sheets, TIN y sellos de tiempo. Véase el [registro 1816](cambios-lote-1816.json). Pendientes el cotejo con la academia y la clasificación específica de Calligra Sheets.
+
+**9.380 con revisión registrada**, incluidas 149 pendientes, y **2.743 sin revisar**.
