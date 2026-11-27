@@ -23677,3 +23677,9 @@ Revisión de 9546–9550 sobre cifrado, Oracle SQL, SOAP, planificación de CPU 
 Revisión de 9551–9555 sobre SIG, reglas de Codd, memoria JVM, protección de datos en telecomunicaciones y JSF. Véase el [registro 1850](cambios-lote-1850.json). Pendiente el cotejo con la academia.
 
 **9.550 con revisión registrada**, incluidas 149 pendientes, y **2.573 sin revisar**.
+
+## Lote 1851 — 27 de noviembre de 2026
+
+Revisión de 9556–9560 sobre resolución de imagen, vistas materializadas, escáneres, Essbase y servlets. Véase el [registro 1851](cambios-lote-1851.json). Pendientes el cotejo con la academia y el encaje específico de cámaras y escáneres.
+
+**9.555 con revisión registrada**, incluidas 149 pendientes, y **2.568 sin revisar**.
