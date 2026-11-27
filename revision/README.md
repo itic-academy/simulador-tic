@@ -23551,3 +23551,9 @@ Revisión de 9441–9445 sobre contingencia, protección de datos, Agenda Digita
 Revisión de 9446–9450 sobre Turespaña, CGPJ, provincias, EPA y certificación de DPD. Véase el [registro 1829](cambios-lote-1829.json). Pendiente el cotejo con la academia.
 
 **9.445 con revisión registrada**, incluidas 149 pendientes, y **2.678 sin revisar**.
+
+## Lote 1830 — 27 de noviembre de 2026
+
+Revisión de 9451–9455 sobre Git, Ministerio Fiscal, WebView, subvenciones y DAFO. Véase el [registro 1830](cambios-lote-1830.json). Pendiente el cotejo con la academia.
+
+**9.450 con revisión registrada**, incluidas 149 pendientes, y **2.673 sin revisar**.
