@@ -23365,3 +23365,9 @@ Revisión de 9286–9290 sobre RTP y RTCP, DHCP, SNMP, datos.gob.es y reutilizac
 Revisión de 9291–9295 sobre el ámbito, las modalidades y los costes de reutilización de información pública y la transposición de la Directiva (UE) 2019/1024. Véase el [registro 1798](cambios-lote-1798.json). Pendiente el cotejo de academia.
 
 **9.290 con revisión registrada**, incluidas 149 pendientes, y **2.833 sin revisar**.
+
+## Lote 1799 — 27 de noviembre de 2026
+
+Revisión de 9296–9300 sobre condiciones y plazos de reutilización, catálogo nacional y gobernanza de datos. Véase el [registro 1799](cambios-lote-1799.json). Pendiente el cotejo de academia.
+
+**9.295 con revisión registrada**, incluidas 149 pendientes, y **2.828 sin revisar**.
