@@ -23449,3 +23449,9 @@ Revisión de 9356–9360 sobre certificados, normalización, reforma constitucio
 Revisión de 9361–9365 sobre nulidad, contratación, subvenciones, derechos sociales y unidad de mercado. Véase el [registro 1812](cambios-lote-1812.json). Pendientes el cotejo con la academia y la adscripción específica del Pilar Europeo.
 
 **9.360 con revisión registrada**, incluidas 149 pendientes, y **2.763 sin revisar**.
+
+## Lote 1813 — 27 de noviembre de 2026
+
+Revisión de 9366–9370 sobre la Dirección General del Dato, EDT, liderazgo, cuadro de mando integral y lecciones aprendidas. Véase el [registro 1813](cambios-lote-1813.json). Pendiente el cotejo con la academia.
+
+**9.365 con revisión registrada**, incluidas 149 pendientes, y **2.758 sin revisar**.
