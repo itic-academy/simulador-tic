@@ -23213,3 +23213,9 @@ Revisión de 9146–9150 sobre créditos extraordinarios, permiso por lactancia,
 Revisión de 9151–9155 sobre demanda en ITIL 2011, vistas materializadas, tuplas de Python, paquetes de Java y ámbito de la NTI de Documento Electrónico. Véase el [registro 1770](cambios-lote-1770.json). Pendiente el cotejo con el temario de academia y el encaje curricular específico de Python.
 
 **9.150 con revisión registrada**, incluidas 149 pendientes de resolución, y **2.973 sin revisar**.
+
+## Lote 1771 — 27 de noviembre de 2026
+
+Revisión de 9156–9160 sobre Kerberos, señalización SMS en GSM, Nodo B, normalización lineal y puertos UDP. En 9159 se explicita la normalización por rango que produce el resultado original. Véase el [registro 1771](cambios-lote-1771.json). Pendiente el cotejo de academia.
+
+**9.155 con revisión registrada**, incluidas 149 pendientes, y **2.968 sin revisar**.
