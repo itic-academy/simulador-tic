@@ -23282,3 +23282,8 @@ Revisión de 9211–9215 sobre normalización de FORTRAN, SAX, W-CDMA, misión d
 Revisión de 9216–9220 sobre IPv6, Delphi, SAAJ, aplicaciones híbridas y accesibilidad de emisiones en directo. Véase el [registro 1783](cambios-lote-1783.json). Pendiente el cotejo de academia.
 
 **9.215 con revisión registrada**, incluidas 149 pendientes, y **2.908 sin revisar**.
+## Lote 1784 — 27 de noviembre de 2026
+
+Revisión de 9221–9225 sobre aprendizaje semipresencial, WBT, MOOC, SCORM y Ganesha. Véase el [registro 1784](cambios-lote-1784.json). Pendiente el cotejo de academia.
+
+**9.220 con revisión registrada**, incluidas 149 pendientes, y **2.903 sin revisar**.
