@@ -23057,3 +23057,9 @@ Revisión de 9016–9020 sobre el modelo de Gibson y Nolan de 1974, el horizonte
 Revisión de 9021–9025 sobre DSS orientados a modelos, procesamiento de transacciones, niveles de decisión, conocimiento organizativo y perímetro de autorización. Véase el [registro 1744](cambios-lote-1744.json). Queda pendiente el cotejo de academia del lote.
 
 **9.020 con revisión registrada**, incluidas 148 pendientes de resolución, y **3.103 sin revisar**.
+
+## Lote 1745 — 27 de noviembre de 2026
+
+Revisión de 9026–9030. Se precisan la entrada de datos, las funciones de un sistema contable, la recuperación documental y los DSS orientados a modelos. La pregunta 9029 queda pendiente de identificar la clasificación original para distinguir las dos opciones sobre estructura horizontal. Véase el [registro 1745](cambios-lote-1745.json). Queda pendiente el cotejo de academia del lote.
+
+**9.025 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.098 sin revisar**.
