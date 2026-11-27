@@ -23123,3 +23123,9 @@ Revisión de 9071–9075 sobre métodos de ingeniería del software, profundidad
 Revisión de 9076–9080 sobre Planning Poker, Crystal, casos de uso UML, talleres JAD y puntos de función. Véase el [registro 1755](cambios-lote-1755.json). Queda pendiente el cotejo de academia.
 
 **9.075 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.048 sin revisar**.
+
+## Lote 1756 — 27 de noviembre de 2026
+
+Revisión de 9081–9085 sobre OOSE, requisitos funcionales, origen de los casos de uso, SADT y el Manifiesto Ágil. Véase el [registro 1756](cambios-lote-1756.json). Queda pendiente el cotejo de academia.
+
+**9.080 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.043 sin revisar**.
