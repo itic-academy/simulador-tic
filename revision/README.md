@@ -23707,3 +23707,9 @@ Revisión de 9571–9575 sobre SOA, Angular, BizTalk, la taxonomía de Flynn y e
 Revisión de 9576–9580 sobre excedencia, oficinas de enlace del Parlamento Europeo, contratación y la vigencia histórica de los certificados del DNIe. Véase el [registro 1855](cambios-lote-1855.json). Queda pendiente el cotejo con la academia.
 
 **9.575 con revisión registrada**, incluidas 149 pendientes, y **2.548 sin revisar**.
+
+## Lote 1856 — 27 de noviembre de 2026
+
+Revisión de 9581–9585 sobre el Senado, los Estatutos de Autonomía, el Plan Nacional de Ciudades Inteligentes de 2015, la evaluación de impacto y el mandato en la AEPD. Véase el [registro 1856](cambios-lote-1856.json). Queda pendiente el cotejo con la academia.
+
+**9.580 con revisión registrada**, incluidas 149 pendientes, y **2.543 sin revisar**.
