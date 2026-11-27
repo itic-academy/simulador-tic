@@ -23242,3 +23242,8 @@ Revisión de 9171–9175 sobre registro distribuido e identificación, ART, DQDB
 Revisión de 9176–9180 sobre la naturaleza de la AEPD, el Fondo de Contingencia, la ejecución del presupuesto europeo, el consentimiento de menores y el Tribunal Constitucional. Véase el [registro 1775](cambios-lote-1775.json). Pendiente el cotejo de academia.
 
 **9.175 con revisión registrada**, incluidas 149 pendientes, y **2.948 sin revisar**.
+## Lote 1776 — 27 de noviembre de 2026
+
+Revisión de 9181–9185 sobre clasificación en suministros, igualdad de oportunidades, racionalización de la contratación, webmail y ATM. Véase el [registro 1776](cambios-lote-1776.json). Pendiente el cotejo de academia.
+
+**9.180 con revisión registrada**, incluidas 149 pendientes, y **2.943 sin revisar**.
