@@ -23875,3 +23875,9 @@ Revisión de 9711–9715 sobre recomendaciones de la UE, Service Locator, Mi Car
 Revisión de 9716–9720 sobre la EPA, transferencias de funcionarios, escaños del Parlamento Europeo, consentimiento y umbral de contratación. Véase el [registro 1883](cambios-lote-1883.json). Quedan pendientes el cotejo con la academia y la adscripción oficial de la EPA.
 
 **9.715 con revisión registrada**, incluidas 150 pendientes, y **2.408 sin revisar**.
+
+## Lote 1884 — 28 de noviembre de 2026
+
+Revisión de 9721–9725 sobre necesidad e idoneidad del contrato, estabilidad presupuestaria, concesión de servicios, MIB y MAGERIT. Véase el [registro 1884](cambios-lote-1884.json). Queda pendiente el cotejo con la academia.
+
+**9.720 con revisión registrada**, incluidas 150 pendientes, y **2.403 sin revisar**.
