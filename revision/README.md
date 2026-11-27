@@ -23377,3 +23377,9 @@ Revisión de 9296–9300 sobre condiciones y plazos de reutilización, catálogo
 Revisión de 9301–9305 sobre infracciones, licencias, catálogo y búsqueda multilingüe en la reutilización de información pública. Véase el [registro 1800](cambios-lote-1800.json). Pendiente el cotejo de academia.
 
 **9.300 con revisión registrada**, incluidas 149 pendientes, y **2.823 sin revisar**.
+
+## Lote 1801 — 27 de noviembre de 2026
+
+Revisión de 9306–9310 sobre sanciones y procedimiento de reutilización, conservación de facultades del organismo y TLS en Java. Véase el [registro 1801](cambios-lote-1801.json). Pendiente el cotejo de academia.
+
+**9.305 con revisión registrada**, incluidas 149 pendientes, y **2.818 sin revisar**.
