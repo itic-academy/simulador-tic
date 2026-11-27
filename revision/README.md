@@ -23177,3 +23177,9 @@ Revisión de 9116–9120 sobre la reescritura de Unix en C, top, dmesg, GRUB y p
 Revisión de 9121–9125 sobre rutas POSIX, el shell, CORBA en GNOME 2, Kali Linux y Multics. En 9121 se precisa el modelo de rutas POSIX porque el original no identificaba el modelo de nodos. Véase el [registro 1764](cambios-lote-1764.json). Queda pendiente el cotejo de academia.
 
 **9.120 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.003 sin revisar**.
+
+## Lote 1765 — 27 de noviembre de 2026
+
+Revisión de 9126–9130 sobre encaminamiento, demonios, bloques indirectos, memoria virtual y tuberías POSIX. Véase el [registro 1765](cambios-lote-1765.json). Queda pendiente el cotejo de academia.
+
+**9.125 con revisión registrada**, incluidas 149 pendientes de resolución, y **2.998 sin revisar**.

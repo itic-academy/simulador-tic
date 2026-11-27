@@ -476464,71 +476464,201 @@
       "id": 9126,
       "bloque": 0,
       "tema": 0,
-      "texto": "En Linux, si queremos añadir una entrada en la tabla de rutas IPs del kernel, utilizamos el comando:",
+      "texto": "¿Qué subcomando de iproute2 añade una ruta a una tabla de encaminamiento del núcleo Linux?",
       "opciones": [
-        "route add",
-        "traceroute add",
-        "ifconfig -a",
-        "wget -a"
+        "ip route add",
+        "ip route show",
+        "ip route get",
+        "ip link show"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. ip route add incorpora una entrada. ip route show lista rutas e ip route get consulta la decisión de encaminamiento para un destino.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "iproute2, ip-route(8)"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://manpages.debian.org/bookworm/iproute2/ip-route.8.en.html",
+            "referencia": "iproute2, ip-route(8)"
+          }
+        ],
+        "observaciones": "A. ip route add incorpora una entrada. ip route show lista rutas e ip route get consulta la decisión de encaminamiento para un destino."
+      }
     },
     {
       "id": 9127,
       "bloque": 0,
       "tema": 0,
-      "texto": "En el sistema operativo UNIX la expresión “daemon” se refiere a un proceso del sistema que:",
+      "texto": "En Unix y Linux, ¿qué describe mejor a un daemon?",
       "opciones": [
-        "Siempre se ejecuta en segundo plano (background).",
-        "Siempre es de corta duración.",
-        "Está siempre ejecutándose.",
-        "Nunca se ejecuta bajo control de los subsistemas de temporalización."
+        "Un proceso de servicio que suele funcionar en segundo plano.",
+        "Una orden que siempre termina inmediatamente.",
+        "Un proceso que debe permanecer activo durante todo el arranque y hasta el apagado.",
+        "Una aplicación que requiere interacción continua con un terminal."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. Un daemon presta un servicio al sistema o a otros procesos, normalmente sin interactuar con un usuario en una terminal.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "systemd, daemon(7)"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://manpages.debian.org/bookworm/systemd/daemon.7.en.html",
+            "referencia": "systemd, daemon(7)"
+          }
+        ],
+        "observaciones": "A. Un daemon presta un servicio al sistema o a otros procesos, normalmente sin interactuar con un usuario en una terminal."
+      }
     },
     {
       "id": 9128,
       "bloque": 0,
       "tema": 0,
-      "texto": "Un sistema de ficheros tipo Unix tiene un tamaño de bloque de 2 KB y nodos-i con doce direcciones directas, una indirecta simple, una indirecta doble y una indirecta triple. Además utiliza direcciones de bloque de 4 bytes. Para representar un fichero de 2 MB:",
+      "texto": "Un inodo usa 12 punteros directos y uno de cada nivel de indirección. Con bloques de 2 KiB y punteros de 4 bytes, ¿cuántos bloques de índices necesita un archivo denso de 2 MiB?",
       "opciones": [
-        "Se utilizarán un bloque de indexación simple y uno de indexación doble.",
-        "Se utilizarán un bloque de indexación simple y dos de indexación doble.",
-        "Se utilizarán dos bloques de indexación simple y uno de indexación doble.",
-        "Se utilizarán dos bloques de indexación simple."
+        "Uno de indirección simple y uno de doble.",
+        "Uno de indirección simple y dos de doble.",
+        "Dos de indirección simple y uno de doble.",
+        "Dos de indirección simple y ninguno de doble."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "C. Hay 1.024 bloques de datos. Los punteros directos cubren 12 y el bloque de indirección simple cubre 512. Los 500 restantes requieren un bloque de doble indirección que apunta a otro bloque de indirección simple.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Documentación del núcleo Linux, esquema de bloques directos e indirectos de ext2/3"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://docs.kernel.org/filesystems/ext4/ifork.html",
+            "referencia": "Documentación del núcleo Linux, esquema de bloques directos e indirectos de ext2/3"
+          }
+        ],
+        "observaciones": "C. Hay 1.024 bloques de datos. Los punteros directos cubren 12 y el bloque de indirección simple cubre 512. Los 500 restantes requieren un bloque de doble indirección que apunta a otro bloque de indirección simple."
+      }
     },
     {
       "id": 9129,
       "bloque": 0,
       "tema": 0,
-      "texto": "Los procesos en UNIX que están en ejecución:",
+      "texto": "En Linux con memoria virtual paginada y espacio de intercambio, ¿qué puede ocurrir con las páginas anónimas de un proceso activo?",
       "opciones": [
-        "Tienen que residir en memoria",
-        "Pueden tener páginas en memoria y páginas en disco",
-        "Tienen que estar en memoria aun cuando no se estén ejecutando",
-        "Ninguna de las anteriores"
+        "Todas deben permanecer en RAM mientras exista el proceso.",
+        "Algunas pueden permanecer en RAM y otras trasladarse al área de intercambio.",
+        "Todas deben trasladarse al área de intercambio al cambiar de proceso.",
+        "Sus páginas se mantienen siempre en un fichero ejecutable."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. El núcleo puede trasladar páginas anónimas inactivas al espacio de intercambio y recuperarlas cuando vuelvan a ser necesarias.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Documentación del núcleo Linux, Memory Management Concepts"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://docs.kernel.org/admin-guide/mm/concepts.html",
+            "referencia": "Documentación del núcleo Linux, Memory Management Concepts"
+          }
+        ],
+        "observaciones": "B. El núcleo puede trasladar páginas anónimas inactivas al espacio de intercambio y recuperarlas cuando vuelvan a ser necesarias."
+      }
     },
     {
       "id": 9130,
       "bloque": 0,
       "tema": 0,
-      "texto": "La comunicación síncrona entre procesos UNIX tiene lugar mediante...",
+      "texto": "¿Qué mecanismo POSIX proporciona un par de descriptores para que un proceso escriba bytes y otro pueda leerlos?",
       "opciones": [
-        "Pipes",
-        "Signals",
-        "Events",
-        "Semáforos"
+        "Una tubería creada con pipe().",
+        "Una señal.",
+        "Un temporizador.",
+        "Un semáforo."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. pipe() crea un extremo de lectura y otro de escritura para transportar bytes entre procesos.",
+      "clasificacion": {
+        "A1": [
+          "A1-60"
+        ],
+        "A2": [
+          "A2-II-2",
+          "A2-IV-1"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "POSIX.1-2024, pipe()"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/pipe.html",
+            "referencia": "POSIX.1-2024, pipe()"
+          }
+        ],
+        "observaciones": "A. pipe() crea un extremo de lectura y otro de escritura para transportar bytes entre procesos."
+      }
     },
     {
       "id": 9131,
