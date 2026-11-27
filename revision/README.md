@@ -23171,3 +23171,9 @@ Revisión de 9111–9115 sobre PID 0 en FreeBSD, cron en RHEL 4, el editor vi, W
 Revisión de 9116–9120 sobre la reescritura de Unix en C, top, dmesg, GRUB y particiones lógicas MBR. Véase el [registro 1763](cambios-lote-1763.json). Queda pendiente el cotejo de academia.
 
 **9.115 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.008 sin revisar**.
+
+## Lote 1764 — 27 de noviembre de 2026
+
+Revisión de 9121–9125 sobre rutas POSIX, el shell, CORBA en GNOME 2, Kali Linux y Multics. En 9121 se precisa el modelo de rutas POSIX porque el original no identificaba el modelo de nodos. Véase el [registro 1764](cambios-lote-1764.json). Queda pendiente el cotejo de academia.
+
+**9.120 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.003 sin revisar**.
