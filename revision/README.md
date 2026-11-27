@@ -23329,3 +23329,9 @@ Revisión de 9256–9260 sobre minería, ETL, Selenium, limpieza de datos y leng
 Revisión de 9261–9265 sobre aprendizaje no supervisado, ingeniería de datos, minería y detección de anomalías. Véase el [registro 1792](cambios-lote-1792.json). Pendiente el cotejo de academia.
 
 **9.260 con revisión registrada**, incluidas 149 pendientes, y **2.863 sin revisar**.
+
+## Lote 1793 — 27 de noviembre de 2026
+
+Revisión de 9266–9270 sobre extracción web, Ley 34/2002, pantallas de visualización, ETSI y SQL. Véase el [registro 1793](cambios-lote-1793.json). Pendientes el cotejo de academia y el encaje curricular específico de extracción web y prevención en puestos con pantallas.
+
+**9.265 con revisión registrada**, incluidas 149 pendientes, y **2.858 sin revisar**.
