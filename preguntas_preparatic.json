@@ -487474,7 +487474,7 @@
       "id": 9416,
       "bloque": 0,
       "tema": 0,
-      "texto": "Señale la opción correcta respecto a RAID, Redundant Array of Independent (or Inexpensive) Disks:",
+      "texto": "¿De qué formas puede implementarse un sistema RAID?",
       "opciones": [
         "RAID se puede implementar por software o hardware",
         "RAID se puede implementar sólo por software",
@@ -487482,13 +487482,36 @@
         "RAID no se puede implementar por software y hardware a la vez"
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. RAID puede gestionarse mediante software del sistema o mediante una controladora de hardware.",
+      "clasificacion": {
+        "A1": [
+          "A1-56"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "RAID"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://www.redbooks.ibm.com/redbooks/pdfs/sg247286.pdf",
+            "referencia": "IBM Redbooks, Linux on POWER"
+          }
+        ],
+        "observaciones": "A. RAID puede gestionarse mediante software del sistema o mediante una controladora de hardware."
+      }
     },
     {
       "id": 9417,
       "bloque": 0,
       "tema": 0,
-      "texto": "En SQL Server, la cardinalidad máxima de una tabla de hechos que es la tabla central de n tablas dimensionales es:",
+      "texto": "Si una tabla de hechos tiene, como máximo, una fila por cada combinación de claves de sus n dimensiones, ¿cuál es la cota superior de su número de filas?",
       "opciones": [
         "La multiplicación de las cardinalidades de cada una de las n tablas dimensionales.",
         "La suma de las cardinalidades de cada una de las n tablas dimensionales.",
@@ -487496,41 +487519,110 @@
         "La mayor de las cardinalidades presentes en las n tablas dimensionales elevado a n."
       ],
       "respuesta_correcta": 0,
-      "comentarios": ""
+      "comentarios": "A. La cota es el producto de las cardinalidades de las dimensiones. Depende de que la granularidad permita como máximo una fila por combinación.",
+      "clasificacion": {
+        "A1": [],
+        "A2": [
+          "A2-III-15"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "modelado dimensional"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+            "referencia": "Microsoft Learn, Star schema"
+          }
+        ],
+        "observaciones": "A. La cota es el producto de las cardinalidades de las dimensiones. Depende de que la granularidad permita como máximo una fila por combinación."
+      }
     },
     {
       "id": 9418,
       "bloque": 0,
       "tema": 0,
-      "texto": "El algoritmo de cifrado Rijndael puede ser especificado por una clave:",
+      "texto": "¿Qué longitudes de clave admite AES según FIPS 197?",
       "opciones": [
-        "Fija de 256 bits",
-        "Con un mínimo de 128 bits y un máximo de 256 bits",
-        "Fija de 128 bits",
-        "Con un mínimo de 256 bits y un máximo de 1024 bits"
+        "Solo 256 bits.",
+        "128, 192 y 256 bits.",
+        "Solo 128 bits.",
+        "256, 512 y 1024 bits."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. AES selecciona tres variantes de Rijndael. Todas usan bloques de 128 bits y se distinguen por la longitud de clave.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "AES"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://csrc.nist.gov/pubs/fips/197/final",
+            "referencia": "NIST FIPS 197"
+          }
+        ],
+        "observaciones": "B. AES selecciona tres variantes de Rijndael. Todas usan bloques de 128 bits y se distinguen por la longitud de clave."
+      }
     },
     {
       "id": 9419,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Cuál de los siguientes tipos de información no está contenida obligatoriamente en un certificado digital X.509?",
+      "texto": "¿Qué dato no es obligatorio en la estructura básica de un certificado X.509 según RFC 5280?",
       "opciones": [
-        "La clave pública del titular.",
-        "Datos personales de identificación del titular.",
-        "La URL del directorio LDAP contenedor de claves públicas.",
-        "La firma electrónica de la Autoridad de Certificación que emitió el certificado."
+        "La clave pública del sujeto.",
+        "El período de validez.",
+        "La URL de un directorio LDAP.",
+        "El valor de la firma del emisor."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "C. La estructura básica incluye la información de clave pública, la validez y la firma. Una URL LDAP puede aparecer como información adicional.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "X.509"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://www.rfc-editor.org/rfc/rfc5280.html#section-4.1",
+            "referencia": "RFC 5280, sección 4.1"
+          }
+        ],
+        "observaciones": "C. La estructura básica incluye la información de clave pública, la validez y la firma. Una URL LDAP puede aparecer como información adicional."
+      }
     },
     {
       "id": 9420,
       "bloque": 0,
       "tema": 0,
-      "texto": "El Reglamento (UE) 910/2014 entra en vigor:",
+      "texto": "Según el artículo 52.1 del Reglamento (UE) 910/2014, ¿cuándo entró en vigor el reglamento?",
       "opciones": [
         "Al día siguiente de su publicación en el Diario Oficial de la Unión Europea (DOUE)",
         "A los 20 días de su publicación en el Diario Oficial de la Unión Europea (DOUE)",
@@ -487538,7 +487630,32 @@
         "A partir del 1 de julio de 2016"
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "B. Entró en vigor a los veinte días de su publicación. El 1 de julio de 2016 fue su fecha general de aplicación, con las excepciones del propio artículo 52.",
+      "clasificacion": {
+        "A1": [
+          "A1-80"
+        ],
+        "A2": [
+          "A2-I-9"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "eIDAS"
+      ],
+      "revision": {
+        "estado": "historica",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2014/910/oj/spa",
+            "referencia": "Reglamento (UE) 910/2014, art. 52"
+          }
+        ],
+        "observaciones": "B. Entró en vigor a los veinte días de su publicación. El 1 de julio de 2016 fue su fecha general de aplicación, con las excepciones del propio artículo 52."
+      }
     },
     {
       "id": 9421,

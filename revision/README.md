@@ -23509,3 +23509,9 @@ Revisión de 9406–9410 sobre contratación, fiscalización, empleo, gobernanza
 Revisión de 9411–9415 sobre estrategia TIC, evaluación de inversiones, WCAG, contingencia e itinerancia. Véase el [registro 1822](cambios-lote-1822.json). Pendiente el cotejo con la academia.
 
 **9.410 con revisión registrada**, incluidas 149 pendientes, y **2.713 sin revisar**.
+
+## Lote 1823 — 27 de noviembre de 2026
+
+Revisión de 9416–9420 sobre RAID, granularidad de hechos, AES, X.509 y eIDAS. Véase el [registro 1823](cambios-lote-1823.json). Pendiente el cotejo con la academia.
+
+**9.415 con revisión registrada**, incluidas 149 pendientes, y **2.708 sin revisar**.
