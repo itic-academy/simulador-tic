@@ -23881,3 +23881,9 @@ Revisión de 9716–9720 sobre la EPA, transferencias de funcionarios, escaños 
 Revisión de 9721–9725 sobre necesidad e idoneidad del contrato, estabilidad presupuestaria, concesión de servicios, MIB y MAGERIT. Véase el [registro 1884](cambios-lote-1884.json). Queda pendiente el cotejo con la academia.
 
 **9.720 con revisión registrada**, incluidas 150 pendientes, y **2.403 sin revisar**.
+
+## Lote 1885 — 28 de noviembre de 2026
+
+Revisión de 9726–9730 sobre JAR, despacho dinámico, BGP, VDI y migración de datos en MÉTRICA v3. Véase el [registro 1885](cambios-lote-1885.json). Queda pendiente el cotejo con la academia.
+
+**9.725 con revisión registrada**, incluidas 150 pendientes, y **2.398 sin revisar**.
