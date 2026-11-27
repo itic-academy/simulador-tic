@@ -23159,3 +23159,9 @@ Revisión de 9101–9105 sobre Synaptic, administración de software POSIX, /pro
 Revisión de 9106–9110 sobre interfaces de red, cambio de contraseña, OpenZFS, modos de ejecución y origen de Unix. Véase el [registro 1761](cambios-lote-1761.json). Queda pendiente el cotejo de academia.
 
 **9.105 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.018 sin revisar**.
+
+## Lote 1762 — 27 de noviembre de 2026
+
+Revisión de 9111–9115 sobre PID 0 en FreeBSD, cron en RHEL 4, el editor vi, Wine y estadísticas de vmstat. Véase el [registro 1762](cambios-lote-1762.json). Queda pendiente el cotejo de academia.
+
+**9.110 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.013 sin revisar**.
