@@ -23683,3 +23683,9 @@ Revisión de 9551–9555 sobre SIG, reglas de Codd, memoria JVM, protección de 
 Revisión de 9556–9560 sobre resolución de imagen, vistas materializadas, escáneres, Essbase y servlets. Véase el [registro 1851](cambios-lote-1851.json). Pendientes el cotejo con la academia y el encaje específico de cámaras y escáneres.
 
 **9.555 con revisión registrada**, incluidas 149 pendientes, y **2.568 sin revisar**.
+
+## Lote 1852 — 27 de noviembre de 2026
+
+Revisión de 9561–9565 sobre XAdES-T, cifrado simétrico, SAS, realce logarítmico y bases de datos distribuidas. Véase el [registro 1852](cambios-lote-1852.json). Pendientes el cotejo con la academia y la adscripción específica del realce de imágenes.
+
+**9.560 con revisión registrada**, incluidas 149 pendientes, y **2.563 sin revisar**.
