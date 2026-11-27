@@ -23497,3 +23497,9 @@ Revisión de 9396–9400 sobre OSI, Wi-Fi, registros de acceso y DAC. Véase el 
 Revisión de 9401–9405 sobre continuidad, trabajo a distancia, Tribunal Constitucional, Delegaciones y principios administrativos. Véase el [registro 1820](cambios-lote-1820.json). Pendiente el cotejo con la academia.
 
 **9.400 con revisión registrada**, incluidas 149 pendientes, y **2.723 sin revisar**.
+
+## Lote 1821 — 27 de noviembre de 2026
+
+Revisión de 9406–9410 sobre contratación, fiscalización, empleo, gobernanza y emprendimiento. Véase el [registro 1821](cambios-lote-1821.json). Pendiente el cotejo con la academia.
+
+**9.405 con revisión registrada**, incluidas 149 pendientes, y **2.718 sin revisar**.
