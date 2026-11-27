@@ -23851,3 +23851,9 @@ Revisión de 9691–9695 sobre carga de la prueba, Estatutos de Autonomía, aná
 Revisión de 9696–9700 sobre paging, ZODB, el sistema de producción de Toyota, la convocatoria del Consejo de la UE y la patentabilidad de programas. Véase el [registro 1879](cambios-lote-1879.json). Queda pendiente el cotejo con la academia.
 
 **9.695 con revisión registrada**, incluidas 150 pendientes, y **2.428 sin revisar**.
+
+## Lote 1880 — 28 de noviembre de 2026
+
+Revisión de 9701–9705 sobre Nueva Gestión Pública, Scrum, unidades administrativas, partidos políticos y programación de la UE. Véase el [registro 1880](cambios-lote-1880.json). Queda pendiente el cotejo con la academia.
+
+**9.700 con revisión registrada**, incluidas 150 pendientes, y **2.423 sin revisar**.
