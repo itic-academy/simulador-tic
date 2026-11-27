@@ -23761,3 +23761,9 @@ Revisión de 9616–9620 sobre negociación, policía judicial, notificaciones e
 Revisión de 9621–9625 sobre control autonómico, grupos políticos del Parlamento Europeo, organización de la AGE, SIP y convergencia de RIP. Véase el [registro 1864](cambios-lote-1864.json). Queda pendiente el cotejo con la academia.
 
 **9.620 con revisión registrada**, incluidas 150 pendientes, y **2.503 sin revisar**.
+
+## Lote 1865 — 27 de noviembre de 2026
+
+Revisión de 9626–9630 sobre data marts, pruebas de restauración, Mercado Único Digital, configuración de servicios en ITIL 4 y QZSS. Véase el [registro 1865](cambios-lote-1865.json). Queda pendiente el cotejo con la academia.
+
+**9.625 con revisión registrada**, incluidas 150 pendientes, y **2.498 sin revisar**.
