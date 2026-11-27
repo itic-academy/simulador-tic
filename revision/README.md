@@ -23087,3 +23087,9 @@ Revisión de 9041–9045 sobre el ODS 9, la adopción de la Agenda 2030, la Agen
 Revisión de 9046–9050 sobre ingresos públicos, Pacto Verde, empleo temporal en la crisis de 2008, objetivo climático para 2030 y Plan de Estabilización. En 9046 se sustituye una previsión sin indicador definido por la serie definitiva de ingresos públicos sobre el PIB. Véase el [registro 1749](cambios-lote-1749.json). Queda pendiente el cotejo de academia del lote.
 
 **9.045 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.078 sin revisar**.
+
+## Lote 1750 — 27 de noviembre de 2026
+
+Revisión de 9051–9055 sobre estabilidad presupuestaria, adopción del euro en Malta, déficit de 2022 comunicado en marzo de 2023, valores de referencia de la UE y Natura 2000. Véase el [registro 1750](cambios-lote-1750.json). Queda pendiente el cotejo de academia.
+
+**9.050 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.073 sin revisar**.
