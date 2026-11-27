@@ -23419,3 +23419,9 @@ Revisión de 9331–9335 sobre OLE DB, pruebas de integración, ordenación por 
 Revisión de 9336–9340 sobre bases de datos en red, sistemas multiusuario, contrafirma, RSA y aislamiento. Véase el [registro 1807](cambios-lote-1807.json). Pendientes el cotejo de academia y el encaje específico de sistemas multiusuario.
 
 **9.335 con revisión registrada**, incluidas 149 pendientes, y **2.788 sin revisar**.
+
+## Lote 1808 — 27 de noviembre de 2026
+
+Revisión de 9341–9345 sobre XPath, biometría, geodesia, bibliotecas .NET y Sendmail. Véase el [registro 1808](cambios-lote-1808.json). Pendientes el cotejo de academia y la adscripción específica de las bibliotecas .NET y Sendmail.
+
+**9.340 con revisión registrada**, incluidas 149 pendientes, y **2.783 sin revisar**.
