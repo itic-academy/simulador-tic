@@ -23081,3 +23081,9 @@ Revisión de 9036–9040 sobre la EPA de 2022, el Mecanismo Conectar Europa, el 
 Revisión de 9041–9045 sobre el ODS 9, la adopción de la Agenda 2030, la Agenda del Cambio de febrero de 2019, la publicación de la reforma constitucional y la firma de los Pactos de la Moncloa. Véase el [registro 1748](cambios-lote-1748.json). Queda pendiente el cotejo de academia del lote.
 
 **9.040 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.083 sin revisar**.
+
+## Lote 1749 — 27 de noviembre de 2026
+
+Revisión de 9046–9050 sobre ingresos públicos, Pacto Verde, empleo temporal en la crisis de 2008, objetivo climático para 2030 y Plan de Estabilización. En 9046 se sustituye una previsión sin indicador definido por la serie definitiva de ingresos públicos sobre el PIB. Véase el [registro 1749](cambios-lote-1749.json). Queda pendiente el cotejo de academia del lote.
+
+**9.045 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.078 sin revisar**.
