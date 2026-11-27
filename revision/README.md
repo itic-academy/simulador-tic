@@ -23267,3 +23267,8 @@ Revisión de 9196–9200 sobre mesas de contratación, control de cambios, canal
 Revisión de 9201–9205 sobre normalización europea, IKE, Bluetooth, derechos de explotación de software y sectores de la UIT. Véase el [registro 1780](cambios-lote-1780.json). Pendiente el cotejo de academia y el encaje curricular específico de 9204.
 
 **9.200 con revisión registrada**, incluidas 149 pendientes, y **2.923 sin revisar**.
+## Lote 1781 — 27 de noviembre de 2026
+
+Revisión de 9206–9210 sobre despacho virtual, NAPT, MSI 3, líneas base y modularidad. Véase el [registro 1781](cambios-lote-1781.json). Pendiente el cotejo de academia.
+
+**9.205 con revisión registrada**, incluidas 149 pendientes, y **2.918 sin revisar**.
