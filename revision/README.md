@@ -23527,3 +23527,9 @@ Revisión de 9421–9425 sobre tarjetas inteligentes, OCR, Code-and-Fix, atribut
 Revisión de 9426–9430 sobre Subversion, gestión de la configuración, ITIL 4 y capas OSI. Véase el [registro 1825](cambios-lote-1825.json). Pendiente el cotejo con la academia.
 
 **9.425 con revisión registrada**, incluidas 149 pendientes, y **2.698 sin revisar**.
+
+## Lote 1826 — 27 de noviembre de 2026
+
+Revisión de 9431–9435 sobre ICMP, puentes Ethernet, XHTML, DOCSIS y HSDPA. Véase el [registro 1826](cambios-lote-1826.json). Pendiente el cotejo con la academia.
+
+**9.430 con revisión registrada**, incluidas 149 pendientes, y **2.693 sin revisar**.
