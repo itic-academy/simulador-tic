@@ -23479,3 +23479,9 @@ Revisión de 9381–9385 sobre SQL, mashups, Calligra Sheets, TIN y sellos de ti
 Revisión de 9386–9390 sobre idCAT, ASSI-RGPD, el modelo en espiral, MÉTRICA v3 y escalabilidad. Véase el [registro 1817](cambios-lote-1817.json). Pendiente el cotejo con la academia.
 
 **9.385 con revisión registrada**, incluidas 149 pendientes, y **2.738 sin revisar**.
+
+## Lote 1818 — 27 de noviembre de 2026
+
+Revisión de 9391–9395 sobre MÉTRICA v3 y puntos de función. Véase el [registro 1818](cambios-lote-1818.json). Pendiente el cotejo con la academia.
+
+**9.390 con revisión registrada**, incluidas 149 pendientes, y **2.733 sin revisar**.
