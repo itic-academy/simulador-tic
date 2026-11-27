@@ -23863,3 +23863,9 @@ Revisión de 9701–9705 sobre Nueva Gestión Pública, Scrum, unidades administ
 Revisión de 9706–9710 sobre clasificación económica, PPTP, PLATA, COCOMO y grupos políticos del Parlamento Europeo. Véase el [registro 1881](cambios-lote-1881.json). Queda pendiente el cotejo con la academia.
 
 **9.705 con revisión registrada**, incluidas 150 pendientes, y **2.418 sin revisar**.
+
+## Lote 1882 — 28 de noviembre de 2026
+
+Revisión de 9711–9715 sobre recomendaciones de la UE, Service Locator, Mi Carpeta Ciudadana, bastanteo y política de empleo. Véase el [registro 1882](cambios-lote-1882.json). Quedan pendientes el cotejo con la academia y la adscripción oficial de la pregunta de empleo.
+
+**9.710 con revisión registrada**, incluidas 150 pendientes, y **2.413 sin revisar**.
