@@ -23587,3 +23587,9 @@ Revisión de 9471–9475 sobre PAC, PHP, Lean, nulidad y jurisdicción contencio
 Revisión de 9476–9480 sobre DPD, empleo público, subvenciones, revisión de oficio y unidad de mercado. Véase el [registro 1835](cambios-lote-1835.json). Pendiente el cotejo con la academia.
 
 **9.475 con revisión registrada**, incluidas 149 pendientes, y **2.648 sin revisar**.
+
+## Lote 1836 — 27 de noviembre de 2026
+
+Revisión de 9481–9485 sobre política monetaria, convenios, Log4j, accesibilidad y SOAP. Véase el [registro 1836](cambios-lote-1836.json). Pendiente el cotejo con la academia.
+
+**9.480 con revisión registrada**, incluidas 149 pendientes, y **2.643 sin revisar**.
