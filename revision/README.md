@@ -23105,3 +23105,9 @@ Revisión de 9056–9060 sobre adaptación climática, definición estadística 
 Revisión de 9061–9065 sobre productividad aparente del trabajo en 2008, adopción de la moneda única, adaptación climática en España, denominación de Sareb y Fondo de Transición Justa. En 9061 se corrige la confusión entre productividad aparente y productividad total de los factores. Véase el [registro 1752](cambios-lote-1752.json). Queda pendiente el cotejo de academia.
 
 **9.060 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.063 sin revisar**.
+
+## Lote 1753 — 27 de noviembre de 2026
+
+Revisión de 9066–9070 sobre eficiencia en el uso de recursos públicos, desempleo estructural, Scrum Master, diagramas de interacción UML y puntos de historia. Véase el [registro 1753](cambios-lote-1753.json). Queda pendiente el cotejo de academia.
+
+**9.065 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.058 sin revisar**.
