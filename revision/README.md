@@ -23252,3 +23252,8 @@ Revisión de 9181–9185 sobre clasificación en suministros, igualdad de oportu
 Revisión de 9186–9190 sobre X.500, banda de Wi-Fi 5, gobierno del dato, VLR e inyección de dependencias. Véase el [registro 1777](cambios-lote-1777.json). Pendiente el cotejo de academia.
 
 **9.185 con revisión registrada**, incluidas 149 pendientes, y **2.938 sin revisar**.
+## Lote 1778 — 27 de noviembre de 2026
+
+Revisión de 9191–9195 sobre QFD, estrategia de ciberseguridad de 2019, EVS 3, SDA 25/2022 y nombres LDAP. Véase el [registro 1778](cambios-lote-1778.json). Pendiente el cotejo de academia.
+
+**9.190 con revisión registrada**, incluidas 149 pendientes, y **2.933 sin revisar**.
