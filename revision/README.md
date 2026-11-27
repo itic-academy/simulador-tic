@@ -23731,3 +23731,9 @@ Revisión de 9591–9595 sobre profundidad de píxel, SSD-AAPP, acoplamiento por
 Revisión de 9596–9600 sobre despliegues, aprobación de las NTI, cardinalidad, MAGERIT y semántica en el ENI. La pregunta 9596 queda pendiente de localizar el manual original y recuperar una opción duplicada. Véase el [registro 1859](cambios-lote-1859.json). Queda pendiente el cotejo con la academia.
 
 **9.595 con revisión registrada**, incluidas 150 pendientes, y **2.528 sin revisar**.
+
+## Lote 1860 — 27 de noviembre de 2026
+
+Revisión de 9601–9605 sobre SHA-1, SIP, SW-CMM, eIDAS y RIP. Véase el [registro 1860](cambios-lote-1860.json). Queda pendiente el cotejo con la academia.
+
+**9.600 con revisión registrada**, incluidas 150 pendientes, y **2.523 sin revisar**.
