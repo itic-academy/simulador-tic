@@ -23767,3 +23767,9 @@ Revisión de 9621–9625 sobre control autonómico, grupos políticos del Parlam
 Revisión de 9626–9630 sobre data marts, pruebas de restauración, Mercado Único Digital, configuración de servicios en ITIL 4 y QZSS. Véase el [registro 1865](cambios-lote-1865.json). Queda pendiente el cotejo con la academia.
 
 **9.625 con revisión registrada**, incluidas 150 pendientes, y **2.498 sin revisar**.
+
+## Lote 1866 — 27 de noviembre de 2026
+
+Revisión de 9631–9635 sobre resultados en ITIL, seguimiento de hitos en MÉTRICA v3, recurso especial en contratación, particiones de equivalencia y mantenimiento. Véase el [registro 1866](cambios-lote-1866.json). Queda pendiente el cotejo con la academia.
+
+**9.630 con revisión registrada**, incluidas 150 pendientes, y **2.493 sin revisar**.
