@@ -23503,3 +23503,9 @@ Revisión de 9401–9405 sobre continuidad, trabajo a distancia, Tribunal Consti
 Revisión de 9406–9410 sobre contratación, fiscalización, empleo, gobernanza y emprendimiento. Véase el [registro 1821](cambios-lote-1821.json). Pendiente el cotejo con la academia.
 
 **9.405 con revisión registrada**, incluidas 149 pendientes, y **2.718 sin revisar**.
+
+## Lote 1822 — 27 de noviembre de 2026
+
+Revisión de 9411–9415 sobre estrategia TIC, evaluación de inversiones, WCAG, contingencia e itinerancia. Véase el [registro 1822](cambios-lote-1822.json). Pendiente el cotejo con la academia.
+
+**9.410 con revisión registrada**, incluidas 149 pendientes, y **2.713 sin revisar**.
