@@ -23165,3 +23165,9 @@ Revisión de 9106–9110 sobre interfaces de red, cambio de contraseña, OpenZFS
 Revisión de 9111–9115 sobre PID 0 en FreeBSD, cron en RHEL 4, el editor vi, Wine y estadísticas de vmstat. Véase el [registro 1762](cambios-lote-1762.json). Queda pendiente el cotejo de academia.
 
 **9.110 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.013 sin revisar**.
+
+## Lote 1763 — 27 de noviembre de 2026
+
+Revisión de 9116–9120 sobre la reescritura de Unix en C, top, dmesg, GRUB y particiones lógicas MBR. Véase el [registro 1763](cambios-lote-1763.json). Queda pendiente el cotejo de academia.
+
+**9.115 con revisión registrada**, incluidas 149 pendientes de resolución, y **3.008 sin revisar**.
