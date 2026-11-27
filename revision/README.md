@@ -23557,3 +23557,9 @@ Revisión de 9446–9450 sobre Turespaña, CGPJ, provincias, EPA y certificació
 Revisión de 9451–9455 sobre Git, Ministerio Fiscal, WebView, subvenciones y DAFO. Véase el [registro 1830](cambios-lote-1830.json). Pendiente el cotejo con la academia.
 
 **9.450 con revisión registrada**, incluidas 149 pendientes, y **2.673 sin revisar**.
+
+## Lote 1831 — 27 de noviembre de 2026
+
+Revisión de 9456–9460 sobre potestad jurisdiccional, CTT, provincias, subvenciones y Android Runtime. Véase el [registro 1831](cambios-lote-1831.json). Pendiente el cotejo con la academia.
+
+**9.455 con revisión registrada**, incluidas 149 pendientes, y **2.668 sin revisar**.
