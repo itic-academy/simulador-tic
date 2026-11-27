@@ -23569,3 +23569,9 @@ Revisión de 9456–9460 sobre potestad jurisdiccional, CTT, provincias, subvenc
 Revisión de 9461–9465 sobre RTO, municipios, contratación, impacto normativo e indemnización por daños en la Administración de Justicia. Véase el [registro 1832](cambios-lote-1832.json). Pendientes el cotejo con la academia y la adscripción específica de RTO.
 
 **9.460 con revisión registrada**, incluidas 149 pendientes, y **2.663 sin revisar**.
+
+## Lote 1833 — 27 de noviembre de 2026
+
+Revisión de 9466–9470 sobre responsabilidad patrimonial, impresoras matriciales, medios propios, navegación accesible y recursos. Véase el [registro 1833](cambios-lote-1833.json). Pendientes el cotejo con la academia y el encaje específico de las impresoras matriciales.
+
+**9.465 con revisión registrada**, incluidas 149 pendientes, y **2.658 sin revisar**.
