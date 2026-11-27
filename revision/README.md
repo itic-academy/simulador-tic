@@ -23827,3 +23827,9 @@ Revisión de 9671–9675 sobre BGP, routers de borde OSPF, SNMPv3, AAA y el obje
 Revisión de 9676–9680 sobre H.245, Estatutos de Autonomía, igualdad efectiva y el plan de ejecución de MAGERIT. Véase el [registro 1875](cambios-lote-1875.json). Queda pendiente el cotejo con la academia.
 
 **9.675 con revisión registrada**, incluidas 150 pendientes, y **2.448 sin revisar**.
+
+## Lote 1876 — 27 de noviembre de 2026
+
+Revisión de 9681–9685 sobre revocación, EGEO, acreditación de violencia de género, el Tribunal de Primera Instancia y fragmentación externa. Véase el [registro 1876](cambios-lote-1876.json). Queda pendiente el cotejo con la academia.
+
+**9.680 con revisión registrada**, incluidas 150 pendientes, y **2.443 sin revisar**.
