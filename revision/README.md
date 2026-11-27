@@ -23725,3 +23725,9 @@ Revisión de 9586–9590 sobre directivas, arquitectura cliente-servidor, el mod
 Revisión de 9591–9595 sobre profundidad de píxel, SSD-AAPP, acoplamiento por contenido, activación de un plan de contingencia y camino crítico. Véase el [registro 1858](cambios-lote-1858.json). Queda pendiente el cotejo con la academia y la adscripción específica de la profundidad de píxel.
 
 **9.590 con revisión registrada**, incluidas 149 pendientes, y **2.533 sin revisar**.
+
+## Lote 1859 — 27 de noviembre de 2026
+
+Revisión de 9596–9600 sobre despliegues, aprobación de las NTI, cardinalidad, MAGERIT y semántica en el ENI. La pregunta 9596 queda pendiente de localizar el manual original y recuperar una opción duplicada. Véase el [registro 1859](cambios-lote-1859.json). Queda pendiente el cotejo con la academia.
+
+**9.595 con revisión registrada**, incluidas 150 pendientes, y **2.528 sin revisar**.
