@@ -23749,3 +23749,9 @@ Revisión de 9606–9610 sobre subredes IPv4, X.25, SATA, SICRES 4.0 e integrida
 Revisión de 9611–9615 sobre contadores de CPU, clases abstractas, tablas de dimensión, Ministerio Fiscal y la Agenda Estratégica 2019–2024. Véase el [registro 1862](cambios-lote-1862.json). Queda pendiente el cotejo con la academia.
 
 **9.610 con revisión registrada**, incluidas 150 pendientes, y **2.513 sin revisar**.
+
+## Lote 1863 — 27 de noviembre de 2026
+
+Revisión de 9616–9620 sobre negociación, policía judicial, notificaciones electrónicas, prescripción y reserva de funciones públicas. Véase el [registro 1863](cambios-lote-1863.json). Queda pendiente el cotejo con la academia.
+
+**9.615 con revisión registrada**, incluidas 150 pendientes, y **2.508 sin revisar**.
