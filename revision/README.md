@@ -23195,3 +23195,9 @@ Revisión de 9131–9135 sobre FHS, su, grep, showrgb en X11 y el envío de trab
 Revisión de 9136–9140 sobre cuentas locales, servidor X11, mantenimiento LTS, origen de Motif y JCL. Véase el [registro 1767](cambios-lote-1767.json). Queda pendiente el cotejo de academia.
 
 **9.135 con revisión registrada**, incluidas 149 pendientes de resolución, y **2.988 sin revisar**.
+
+## Lote 1768 — 27 de noviembre de 2026
+
+Revisión de 9141–9145 sobre Ubuntu TV, Phonon, fstab, copias auténticas y secretarías generales técnicas. Véase el [registro 1768](cambios-lote-1768.json). Pendiente el cotejo con el temario de academia.
+
+**9.140 con revisión registrada**, incluidas 149 pendientes de resolución, y **2.983 sin revisar**.
