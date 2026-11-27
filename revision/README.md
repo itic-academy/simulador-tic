@@ -23647,3 +23647,9 @@ Revisión de 9521–9525 sobre Angular, dApps, depuración, JSX y Markdown. Véa
 Revisión de 9526–9530 sobre ActiveX, IIS, calidad geográfica, planificación de procesos y Cassandra. Véase el [registro 1845](cambios-lote-1845.json). Pendiente el cotejo con la academia.
 
 **9.525 con revisión registrada**, incluidas 149 pendientes, y **2.598 sin revisar**.
+
+## Lote 1846 — 27 de noviembre de 2026
+
+Revisión de 9531–9535 sobre JScript, RLE, PMML, PDF y RDF. Véase el [registro 1846](cambios-lote-1846.json). Pendientes el cotejo con la academia y la adscripción específica de PDF.
+
+**9.530 con revisión registrada**, incluidas 149 pendientes, y **2.593 sin revisar**.
