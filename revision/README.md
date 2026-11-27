@@ -23341,3 +23341,9 @@ Revisión de 9266–9270 sobre extracción web, Ley 34/2002, pantallas de visual
 Revisión de 9271–9275 sobre applets históricos, metadatos geográficos, X.509, JPEG y DPCM. Véase el [registro 1794](cambios-lote-1794.json). Pendientes el cotejo de academia y el encaje curricular específico de JPEG y DPCM.
 
 **9.270 con revisión registrada**, incluidas 149 pendientes, y **2.853 sin revisar**.
+
+## Lote 1795 — 27 de noviembre de 2026
+
+Revisión de 9276–9280 sobre encapsulación, acoplamiento, diccionario de datos, MÉTRICA v3 y estimación del esfuerzo. Véase el [registro 1795](cambios-lote-1795.json). Pendientes el cotejo de academia y el encaje curricular específico del acoplamiento por contenido.
+
+**9.275 con revisión registrada**, incluidas 149 pendientes, y **2.848 sin revisar**.
