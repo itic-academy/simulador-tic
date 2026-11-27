@@ -23803,3 +23803,9 @@ Revisión de 9651–9655 sobre LSSI, TREBEP, RGPD, organización de equipos y Ka
 Revisión de 9656–9660 sobre informes de contratación TIC, referencias a documentos en el ENI, homologación y origen del lenguaje C. Véase el [registro 1871](cambios-lote-1871.json). Queda pendiente el cotejo con la academia.
 
 **9.655 con revisión registrada**, incluidas 150 pendientes, y **2.468 sin revisar**.
+
+## Lote 1872 — 27 de noviembre de 2026
+
+Revisión de 9661–9665 sobre SMB, planes SQL, agrupación, cartografía temática y data marts dependientes. Véase el [registro 1872](cambios-lote-1872.json). Queda pendiente el cotejo con la academia.
+
+**9.660 con revisión registrada**, incluidas 150 pendientes, y **2.463 sin revisar**.

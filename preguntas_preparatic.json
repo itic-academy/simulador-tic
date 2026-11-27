@@ -496795,35 +496795,85 @@
       "id": 9661,
       "bloque": 0,
       "tema": 0,
-      "texto": "En un Directorio Activo Windows con DNS y clientes Windows 7 o superior, para desactivar NetBios es requisito suficiente que:",
+      "texto": "¿Qué puerto TCP utiliza SMB cuando se aloja directamente sobre TCP/IP, sin NetBIOS?",
       "opciones": [
-        "La versión de SMB usada sea 2.0 o superior.",
-        "Se habilite al menos un DC como servidor WINS.",
-        "Se habilite NBT (NetBios over TCP/IP).",
-        "El responsable lo autorice."
+        "139.",
+        "137.",
+        "138.",
+        "445."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "El alojamiento directo usa TCP 445. El servicio de sesión NetBIOS usa TCP 139.",
+      "clasificacion": {
+        "A1": [
+          "A1-111"
+        ],
+        "A2": [
+          "A2-II-8"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SMB"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/direct-hosting-of-smb-over-tcpip",
+            "referencia": "Microsoft, Direct host SMB over TCP/IP"
+          }
+        ],
+        "observaciones": "El alojamiento directo usa TCP 445. El servicio de sesión NetBIOS usa TCP 139."
+      }
     },
     {
       "id": 9662,
       "bloque": 0,
       "tema": 0,
-      "texto": "¿Por qué el recorrido completo de tablas de gran tamaño es un asunto crítico en la definición de sentencias SQL?",
+      "texto": "¿Cuándo puede resultar más barato un recorrido secuencial que un acceso por índice en PostgreSQL?",
       "opciones": [
-        "Porque es indicativo de una futura ejecución óptima",
-        "Porque es muy probable que se requiera adaptaciones para el uso de índices",
-        "Porque el recorrido completo de tablas debería ser normalizado desde el diseño de la base de datos",
-        "Porque el recorrido completo de una tabla nunca es óptimo"
+        "Siempre que exista un índice.",
+        "Cuando la consulta necesita leer una fracción grande de la tabla.",
+        "Solo cuando la tabla está vacía.",
+        "Cuando la consulta devuelve una única fila y el índice tiene un coste menor."
       ],
       "respuesta_correcta": 1,
-      "comentarios": ""
+      "comentarios": "Si se necesitan muchas filas, el coste de recorrer el índice y visitar las páginas de la tabla puede superar el de leer la tabla secuencialmente.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Plan de ejecución"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://www.postgresql.org/docs/current/using-explain.html",
+            "referencia": "PostgreSQL, Using EXPLAIN"
+          }
+        ],
+        "observaciones": "Si se necesitan muchas filas, el coste de recorrer el índice y visitar las páginas de la tabla puede superar el de leer la tabla secuencialmente."
+      }
     },
     {
       "id": 9663,
       "bloque": 0,
       "tema": 0,
-      "texto": "La cláusula GROUP BY se utiliza para:",
+      "texto": "¿Qué hace GROUP BY en una consulta SQL?",
       "opciones": [
         "Agrupar varios atributos para formar una clave",
         "Formar una vista con elementos de varias tablas",
@@ -496831,35 +496881,106 @@
         "Obtener en una sentencia SELECT grupos de tuplas en lugar de tuplas individuales"
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "Agrupa las filas con los mismos valores en las expresiones de agrupación. Las funciones de agregación pueden calcular un resultado para cada grupo.",
+      "clasificacion": {
+        "A1": [
+          "A1-64"
+        ],
+        "A2": [
+          "A2-II-5"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "SQL"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://www.postgresql.org/docs/current/queries-table-expressions.html",
+            "referencia": "PostgreSQL, Table Expressions, §7.2.3"
+          }
+        ],
+        "observaciones": "Agrupa las filas con los mismos valores en las expresiones de agrupación. Las funciones de agregación pueden calcular un resultado para cada grupo."
+      }
     },
     {
       "id": 9664,
       "bloque": 0,
       "tema": 0,
-      "texto": "Son tipos de mapas:",
+      "texto": "¿Qué tipo de mapa muestra la distribución espacial de un fenómeno como la densidad de población?",
       "opciones": [
-        "Topográfico, topológico, temático y superficial.",
-        "Topográfico, azimutal, temático y plano.",
-        "Referencial, topológico, temático y plano.",
-        "Cilíndrico, azimutal, cónico y estereográfico."
+        "Topográfico general.",
+        "Carta náutica.",
+        "Temático.",
+        "Plano parcelario."
       ],
       "respuesta_correcta": 2,
-      "comentarios": ""
+      "comentarios": "Un mapa temático representa un fenómeno concreto sobre el territorio, como la densidad de población.",
+      "clasificacion": {
+        "A1": [
+          "A1-74"
+        ],
+        "A2": [],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Cartografía"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://educativo.ign.es/atlas-didactico/cartografia-bach/tipos_de_mapas.html",
+            "referencia": "IGN, Atlas Didáctico, Tipos de mapas"
+          }
+        ],
+        "observaciones": "Un mapa temático representa un fenómeno concreto sobre el territorio, como la densidad de población."
+      }
     },
     {
       "id": 9665,
       "bloque": 0,
       "tema": 0,
-      "texto": "De acuerdo a las operaciones que se requieran desarrollar, los Data Marts pueden adoptar diversas arquitecturas, señale la característica correspondiente a la arquitectura Top-Down:",
+      "texto": "En una arquitectura descendente (top-down), ¿de dónde obtienen sus datos los data marts dependientes?",
       "opciones": [
-        "Se definen previamente los Data Marts (DM) y luego se integran en un Data Warehouse (DW) centralizado. Los DM se cargan a través de procesos ETL.",
-        "Se define previamente un DW y un DM principal que se cargan a través de procesos ETL. El DW alimentará a otros DW, y el DM principal alimentará a otros DM.",
-        "Se define una base de datos (BD) principal que se carga mediante procesos ETL desde todas las BD corporativas, esta BD alimenta en exclusiva a todos los DM y DW existentes.",
-        "Primero se define el DW, el cual es cargado a través de procesos ETL y luego este alimenta a los diferentes DM. Cada DM recibirá los datos que correspondan al tema/departamento que traten."
+        "De otros data marts autónomos que integran después el almacén.",
+        "De un repositorio sin relación con el almacén corporativo.",
+        "Exclusivamente de archivos operacionales de cada departamento.",
+        "Del almacén de datos corporativo."
       ],
       "respuesta_correcta": 3,
-      "comentarios": ""
+      "comentarios": "El almacén corporativo integra los datos y los data marts dependientes obtienen de él los datos pertinentes para su ámbito de análisis.",
+      "clasificacion": {
+        "A1": [],
+        "A2": [
+          "A2-II-4"
+        ],
+        "bloque_academia": null,
+        "estado": "revisada",
+        "nota": "Bloque de academia pendiente de cotejo. Una lista vacía no implica exclusión del programa."
+      },
+      "etiquetas": [
+        "Data marts"
+      ],
+      "revision": {
+        "estado": "corregida",
+        "fecha": "2026-11-27",
+        "fuentes": [
+          {
+            "url": "https://redbooks.ibm.com/redbooks/pdfs/sg246653.pdf",
+            "referencia": "IBM Redbooks, Data Mart Consolidation"
+          }
+        ],
+        "observaciones": "El almacén corporativo integra los datos y los data marts dependientes obtienen de él los datos pertinentes para su ámbito de análisis."
+      }
     },
     {
       "id": 9666,
