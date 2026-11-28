@@ -24019,3 +24019,9 @@ Revisión de 9831–9835 sobre protección de datos, Tribunal de Cuentas, clasif
 Revisión de 9836–9840 sobre derechos de explotación del software, cardinalidad, datagramas IP, JNLP e ITIL. Véase el [registro 1907](cambios-lote-1907.json). Queda pendiente el cotejo con la academia.
 
 **9.835 con revisión registrada**, incluidas 150 pendientes, y **2.288 sin revisar**.
+
+## Lote 1908 — 28 de noviembre de 2026
+
+Revisión de 9841–9845 sobre almacenes de datos, SICRES 3.0, MÉTRICA v3, WTLS y la certificación Professional Scrum Master I. Véase el [registro 1908](cambios-lote-1908.json). Queda pendiente el cotejo con la academia.
+
+**9.840 con revisión registrada**, incluidas 150 pendientes, y **2.283 sin revisar**.
