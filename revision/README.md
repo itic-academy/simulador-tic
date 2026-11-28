@@ -23893,3 +23893,9 @@ Revisión de 9726–9730 sobre JAR, despacho dinámico, BGP, VDI y migración de
 Revisión de 9731–9735 sobre compatibilidad entre navegadores, PILAR, notificaciones SNMP, matrices de teselas y claves de visualización de Zcash. Véase el [registro 1886](cambios-lote-1886.json). Quedan pendientes el cotejo con la academia y la adscripción oficial de la pregunta de Zcash.
 
 **9.730 con revisión registrada**, incluidas 150 pendientes, y **2.393 sin revisar**.
+
+## Lote 1887 — 28 de noviembre de 2026
+
+Revisión de 9736–9740 sobre IPv6, cliente-servidor, cartografía, mantenimiento y EFQM. Véase el [registro 1887](cambios-lote-1887.json). Queda pendiente el cotejo con la academia.
+
+**9.735 con revisión registrada**, incluidas 150 pendientes, y **2.388 sin revisar**.
