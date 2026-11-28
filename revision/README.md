@@ -23887,3 +23887,9 @@ Revisión de 9721–9725 sobre necesidad e idoneidad del contrato, estabilidad p
 Revisión de 9726–9730 sobre JAR, despacho dinámico, BGP, VDI y migración de datos en MÉTRICA v3. Véase el [registro 1885](cambios-lote-1885.json). Queda pendiente el cotejo con la academia.
 
 **9.725 con revisión registrada**, incluidas 150 pendientes, y **2.398 sin revisar**.
+
+## Lote 1886 — 28 de noviembre de 2026
+
+Revisión de 9731–9735 sobre compatibilidad entre navegadores, PILAR, notificaciones SNMP, matrices de teselas y claves de visualización de Zcash. Véase el [registro 1886](cambios-lote-1886.json). Quedan pendientes el cotejo con la academia y la adscripción oficial de la pregunta de Zcash.
+
+**9.730 con revisión registrada**, incluidas 150 pendientes, y **2.393 sin revisar**.
