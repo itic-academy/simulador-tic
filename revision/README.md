@@ -24061,3 +24061,9 @@ Revisión de 9866–9870 sobre HSM, agentes colaborativos, AGP, herencia de clas
 Revisión de 9871–9875 sobre política de seguridad, intercambio de expedientes electrónicos, ACL IPv4, Fedora Workstation y SSO. Véase el [registro 1914](cambios-lote-1914.json). Queda pendiente el cotejo con la academia.
 
 **9.870 con revisión registrada**, incluidas 150 pendientes, y **2.253 sin revisar**.
+
+## Lote 1915 — 28 de noviembre de 2026
+
+Revisión de 9876–9880 sobre OSI, EIGRP, acuses TCP, consulta de documentos y dispositivos de red. Véase el [registro 1915](cambios-lote-1915.json). Queda pendiente el cotejo con la academia.
+
+**9.875 con revisión registrada**, incluidas 150 pendientes, y **2.248 sin revisar**.
