@@ -24085,3 +24085,9 @@ Revisión de 9886–9890 sobre acceso físico a CPD, metadatos comunes, Autentic
 Revisión de 9891–9895 sobre subsunción, burbuja puntocom, Europa Interoperable, cuentas Oracle y registros GSM. Véase el [registro 1918](cambios-lote-1918.json). Queda pendiente el cotejo con la academia.
 
 **9.890 con revisión registrada**, incluidas 150 pendientes, y **2.233 sin revisar**.
+
+## Lote 1919 — 28 de noviembre de 2026
+
+Revisión de 9896–9900 sobre UML, HFC, FRONTUR y gestión de configuración. Véase el [registro 1919](cambios-lote-1919.json). Queda pendiente el cotejo con la academia.
+
+**9.895 con revisión registrada**, incluidas 150 pendientes, y **2.228 sin revisar**.
