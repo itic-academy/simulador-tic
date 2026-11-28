@@ -24055,3 +24055,9 @@ Revisión de 9861–9865 sobre moción de censura, iniciativa legislativa europe
 Revisión de 9866–9870 sobre HSM, agentes colaborativos, AGP, herencia de clases y la capa de red OSI. Véase el [registro 1913](cambios-lote-1913.json). Queda pendiente el cotejo con la academia.
 
 **9.865 con revisión registrada**, incluidas 150 pendientes, y **2.258 sin revisar**.
+
+## Lote 1914 — 28 de noviembre de 2026
+
+Revisión de 9871–9875 sobre política de seguridad, intercambio de expedientes electrónicos, ACL IPv4, Fedora Workstation y SSO. Véase el [registro 1914](cambios-lote-1914.json). Queda pendiente el cotejo con la academia.
+
+**9.870 con revisión registrada**, incluidas 150 pendientes, y **2.253 sin revisar**.
