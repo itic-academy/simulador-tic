@@ -24031,3 +24031,9 @@ Revisión de 9841–9845 sobre almacenes de datos, SICRES 3.0, MÉTRICA v3, WTLS
 Revisión de 9846–9850 sobre ITIL v3, señuelos de seguridad, EFQM 2013, las CMAD y el diseño de clases en MÉTRICA v3. Véase el [registro 1909](cambios-lote-1909.json). Queda pendiente el cotejo con la academia.
 
 **9.845 con revisión registrada**, incluidas 150 pendientes, y **2.278 sin revisar**.
+
+## Lote 1910 — 28 de noviembre de 2026
+
+Revisión de 9851–9855 sobre iSCSI, transporte OSI, SMI, Apache TomEE y derechos morales de autor. Véase el [registro 1910](cambios-lote-1910.json). Queda pendiente el cotejo con la academia.
+
+**9.850 con revisión registrada**, incluidas 150 pendientes, y **2.273 sin revisar**.
