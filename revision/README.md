@@ -23947,3 +23947,9 @@ Revisión de 9771–9775 sobre precedencia IPv4, Zabbix, Meltdown y Spectre, se�
 Revisión de 9776–9780 sobre FACe, perfil de contratante, generación de crédito, EPA y diferenciación de responsabilidades en el ENS. Véase el [registro 1895](cambios-lote-1895.json). Quedan pendientes el cotejo con la academia y la adscripción oficial de la EPA.
 
 **9.775 con revisión registrada**, incluidas 150 pendientes, y **2.348 sin revisar**.
+
+## Lote 1896 — 28 de noviembre de 2026
+
+Revisión de 9781–9785 sobre multilingüismo, PILAR, intermediación de datos, nube híbrida y GPO. Véase el [registro 1896](cambios-lote-1896.json). Queda pendiente el cotejo con la academia.
+
+**9.780 con revisión registrada**, incluidas 150 pendientes, y **2.343 sin revisar**.
