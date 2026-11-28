@@ -23929,3 +23929,9 @@ Revisión de 9756–9760 sobre REYES, FIRe, la versión del núcleo Linux, Andro
 Revisión de 9761–9765 sobre copyleft, OLAP, HTML, biometría e implantación. Véase el [registro 1892](cambios-lote-1892.json). Queda pendiente el cotejo con la academia.
 
 **9.760 con revisión registrada**, incluidas 150 pendientes, y **2.363 sin revisar**.
+
+## Lote 1893 — 28 de noviembre de 2026
+
+Revisión de 9766–9770 sobre cohesión, rendimiento, IEEE 830 y prefijos binarios. Véase el [registro 1893](cambios-lote-1893.json). Quedan pendientes el cotejo con la academia y el encaje oficial de los prefijos binarios.
+
+**9.765 con revisión registrada**, incluidas 150 pendientes, y **2.358 sin revisar**.
