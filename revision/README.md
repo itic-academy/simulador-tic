@@ -24067,3 +24067,9 @@ Revisión de 9871–9875 sobre política de seguridad, intercambio de expediente
 Revisión de 9876–9880 sobre OSI, EIGRP, acuses TCP, consulta de documentos y dispositivos de red. Véase el [registro 1915](cambios-lote-1915.json). Queda pendiente el cotejo con la academia.
 
 **9.875 con revisión registrada**, incluidas 150 pendientes, y **2.248 sin revisar**.
+
+## Lote 1916 — 28 de noviembre de 2026
+
+Revisión de 9881–9885 sobre formatos de firma, IMS, NAT, SSD-AAPP y el método de Jackson. Véase el [registro 1916](cambios-lote-1916.json). Queda pendiente el cotejo con la academia.
+
+**9.880 con revisión registrada**, incluidas 150 pendientes, y **2.243 sin revisar**.
