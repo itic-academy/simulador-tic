@@ -24043,3 +24043,9 @@ Revisión de 9851–9855 sobre iSCSI, transporte OSI, SMI, Apache TomEE y derech
 Revisión de 9856–9860 sobre NAPT, diagramas UML, contratación de emergencia, delegación legislativa e igualdad ante la ley. Véase el [registro 1911](cambios-lote-1911.json). Queda pendiente el cotejo con la academia.
 
 **9.855 con revisión registrada**, incluidas 150 pendientes, y **2.268 sin revisar**.
+
+## Lote 1912 — 28 de noviembre de 2026
+
+Revisión de 9861–9865 sobre moción de censura, iniciativa legislativa europea, versiones de Android, propiedad intelectual del software y RIPv2. Véase el [registro 1912](cambios-lote-1912.json). Queda pendiente el cotejo con la academia.
+
+**9.860 con revisión registrada**, incluidas 150 pendientes, y **2.263 sin revisar**.
