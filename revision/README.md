@@ -24037,3 +24037,9 @@ Revisión de 9846–9850 sobre ITIL v3, señuelos de seguridad, EFQM 2013, las C
 Revisión de 9851–9855 sobre iSCSI, transporte OSI, SMI, Apache TomEE y derechos morales de autor. Véase el [registro 1910](cambios-lote-1910.json). Queda pendiente el cotejo con la academia.
 
 **9.850 con revisión registrada**, incluidas 150 pendientes, y **2.273 sin revisar**.
+
+## Lote 1911 — 28 de noviembre de 2026
+
+Revisión de 9856–9860 sobre NAPT, diagramas UML, contratación de emergencia, delegación legislativa e igualdad ante la ley. Véase el [registro 1911](cambios-lote-1911.json). Queda pendiente el cotejo con la academia.
+
+**9.855 con revisión registrada**, incluidas 150 pendientes, y **2.268 sin revisar**.
