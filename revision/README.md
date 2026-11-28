@@ -24097,3 +24097,9 @@ Revisión de 9896–9900 sobre UML, HFC, FRONTUR y gestión de configuración. V
 Revisión de 9901–9905 sobre pruebas de carga, FTTH, ITIL 4, contingencia y categorías especiales del RGPD. Véase el [registro 1920](cambios-lote-1920.json). Queda pendiente el cotejo con la academia.
 
 **9.900 con revisión registrada**, incluidas 150 pendientes, y **2.223 sin revisar**.
+
+## Lote 1921 — 28 de noviembre de 2026
+
+Revisión de 9906–9910 sobre geometría en SIG, PON, servidores blade, gestión de problemas y GeoNetwork. Véase el [registro 1921](cambios-lote-1921.json). Queda pendiente el cotejo con la academia.
+
+**9.905 con revisión registrada**, incluidas 150 pendientes, y **2.218 sin revisar**.
