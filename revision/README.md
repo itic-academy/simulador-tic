@@ -24091,3 +24091,9 @@ Revisión de 9891–9895 sobre subsunción, burbuja puntocom, Europa Interoperab
 Revisión de 9896–9900 sobre UML, HFC, FRONTUR y gestión de configuración. Véase el [registro 1919](cambios-lote-1919.json). Queda pendiente el cotejo con la academia.
 
 **9.895 con revisión registrada**, incluidas 150 pendientes, y **2.228 sin revisar**.
+
+## Lote 1920 — 28 de noviembre de 2026
+
+Revisión de 9901–9905 sobre pruebas de carga, FTTH, ITIL 4, contingencia y categorías especiales del RGPD. Véase el [registro 1920](cambios-lote-1920.json). Queda pendiente el cotejo con la academia.
+
+**9.900 con revisión registrada**, incluidas 150 pendientes, y **2.223 sin revisar**.
