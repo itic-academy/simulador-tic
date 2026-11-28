@@ -24049,3 +24049,9 @@ Revisión de 9856–9860 sobre NAPT, diagramas UML, contratación de emergencia,
 Revisión de 9861–9865 sobre moción de censura, iniciativa legislativa europea, versiones de Android, propiedad intelectual del software y RIPv2. Véase el [registro 1912](cambios-lote-1912.json). Queda pendiente el cotejo con la academia.
 
 **9.860 con revisión registrada**, incluidas 150 pendientes, y **2.263 sin revisar**.
+
+## Lote 1913 — 28 de noviembre de 2026
+
+Revisión de 9866–9870 sobre HSM, agentes colaborativos, AGP, herencia de clases y la capa de red OSI. Véase el [registro 1913](cambios-lote-1913.json). Queda pendiente el cotejo con la academia.
+
+**9.865 con revisión registrada**, incluidas 150 pendientes, y **2.258 sin revisar**.
