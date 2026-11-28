@@ -23941,3 +23941,9 @@ Revisión de 9766–9770 sobre cohesión, rendimiento, IEEE 830 y prefijos binar
 Revisión de 9771–9775 sobre precedencia IPv4, Zabbix, Meltdown y Spectre, señalización IMS y comparecencias. Véase el [registro 1894](cambios-lote-1894.json). Queda pendiente el cotejo con la academia.
 
 **9.770 con revisión registrada**, incluidas 150 pendientes, y **2.353 sin revisar**.
+
+## Lote 1895 — 28 de noviembre de 2026
+
+Revisión de 9776–9780 sobre FACe, perfil de contratante, generación de crédito, EPA y diferenciación de responsabilidades en el ENS. Véase el [registro 1895](cambios-lote-1895.json). Quedan pendientes el cotejo con la academia y la adscripción oficial de la EPA.
+
+**9.775 con revisión registrada**, incluidas 150 pendientes, y **2.348 sin revisar**.
