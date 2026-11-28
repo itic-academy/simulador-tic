@@ -24025,3 +24025,9 @@ Revisión de 9836–9840 sobre derechos de explotación del software, cardinalid
 Revisión de 9841–9845 sobre almacenes de datos, SICRES 3.0, MÉTRICA v3, WTLS y la certificación Professional Scrum Master I. Véase el [registro 1908](cambios-lote-1908.json). Queda pendiente el cotejo con la academia.
 
 **9.840 con revisión registrada**, incluidas 150 pendientes, y **2.283 sin revisar**.
+
+## Lote 1909 — 28 de noviembre de 2026
+
+Revisión de 9846–9850 sobre ITIL v3, señuelos de seguridad, EFQM 2013, las CMAD y el diseño de clases en MÉTRICA v3. Véase el [registro 1909](cambios-lote-1909.json). Queda pendiente el cotejo con la academia.
+
+**9.845 con revisión registrada**, incluidas 150 pendientes, y **2.278 sin revisar**.
