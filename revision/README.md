@@ -23935,3 +23935,9 @@ Revisión de 9761–9765 sobre copyleft, OLAP, HTML, biometría e implantación.
 Revisión de 9766–9770 sobre cohesión, rendimiento, IEEE 830 y prefijos binarios. Véase el [registro 1893](cambios-lote-1893.json). Quedan pendientes el cotejo con la academia y el encaje oficial de los prefijos binarios.
 
 **9.765 con revisión registrada**, incluidas 150 pendientes, y **2.358 sin revisar**.
+
+## Lote 1894 — 28 de noviembre de 2026
+
+Revisión de 9771–9775 sobre precedencia IPv4, Zabbix, Meltdown y Spectre, señalización IMS y comparecencias. Véase el [registro 1894](cambios-lote-1894.json). Queda pendiente el cotejo con la academia.
+
+**9.770 con revisión registrada**, incluidas 150 pendientes, y **2.353 sin revisar**.
