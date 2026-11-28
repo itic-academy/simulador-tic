@@ -24073,3 +24073,9 @@ Revisión de 9876–9880 sobre OSI, EIGRP, acuses TCP, consulta de documentos y 
 Revisión de 9881–9885 sobre formatos de firma, IMS, NAT, SSD-AAPP y el método de Jackson. Véase el [registro 1916](cambios-lote-1916.json). Queda pendiente el cotejo con la academia.
 
 **9.880 con revisión registrada**, incluidas 150 pendientes, y **2.243 sin revisar**.
+
+## Lote 1917 — 28 de noviembre de 2026
+
+Revisión de 9886–9890 sobre acceso físico a CPD, metadatos comunes, AutenticA, OpenDocument y puentes Ethernet. Véase el [registro 1917](cambios-lote-1917.json). Queda pendiente el cotejo con la academia.
+
+**9.885 con revisión registrada**, incluidas 150 pendientes, y **2.238 sin revisar**.
