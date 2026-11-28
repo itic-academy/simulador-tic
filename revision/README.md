@@ -23923,3 +23923,9 @@ Revisión de 9751–9755 sobre órganos de la AGE, discriminación directa, regi
 Revisión de 9756–9760 sobre REYES, FIRe, la versión del núcleo Linux, Android Oreo (Go edition) y transacciones NoSQL. Véase el [registro 1891](cambios-lote-1891.json). Queda pendiente el cotejo con la academia.
 
 **9.755 con revisión registrada**, incluidas 150 pendientes, y **2.368 sin revisar**.
+
+## Lote 1892 — 28 de noviembre de 2026
+
+Revisión de 9761–9765 sobre copyleft, OLAP, HTML, biometría e implantación. Véase el [registro 1892](cambios-lote-1892.json). Queda pendiente el cotejo con la academia.
+
+**9.760 con revisión registrada**, incluidas 150 pendientes, y **2.363 sin revisar**.
