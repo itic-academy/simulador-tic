@@ -23965,3 +23965,9 @@ Revisión de 9786–9790 sobre Angular, el ámbito de un bean en JSP, el manifie
 Revisión de 9791–9795 sobre XML, blockchain gestionada, modelado de datos, bloqueos de fila y diseño estructurado. Véase el [registro 1898](cambios-lote-1898.json). Queda pendiente el cotejo con la academia.
 
 **9.790 con revisión registrada**, incluidas 150 pendientes, y **2.333 sin revisar**.
+
+## Lote 1899 — 28 de noviembre de 2026
+
+Revisión de 9796–9800 sobre mundos virtuales, vector distancia, X.28, CSMA/CD y DOCTYPE. Véase el [registro 1899](cambios-lote-1899.json). Queda pendiente el cotejo con la academia.
+
+**9.795 con revisión registrada**, incluidas 150 pendientes, y **2.328 sin revisar**.
