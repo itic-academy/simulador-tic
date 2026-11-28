@@ -24013,3 +24013,9 @@ Revisión de 9826–9830 sobre antenas Cassegrain, SIP, X.400, paquetes de iOS y
 Revisión de 9831–9835 sobre protección de datos, Tribunal de Cuentas, clasificación empresarial, responsabilidad patrimonial y WCAG. Véase el [registro 1906](cambios-lote-1906.json). Queda pendiente el cotejo con la academia.
 
 **9.830 con revisión registrada**, incluidas 150 pendientes, y **2.293 sin revisar**.
+
+## Lote 1907 — 28 de noviembre de 2026
+
+Revisión de 9836–9840 sobre derechos de explotación del software, cardinalidad, datagramas IP, JNLP e ITIL. Véase el [registro 1907](cambios-lote-1907.json). Queda pendiente el cotejo con la academia.
+
+**9.835 con revisión registrada**, incluidas 150 pendientes, y **2.288 sin revisar**.
