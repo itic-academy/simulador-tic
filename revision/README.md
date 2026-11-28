@@ -23911,3 +23911,9 @@ Revisión de 9741–9745 sobre IEEE 802.16, WFS, modelo entidad-relación, subca
 Revisión de 9746–9750 sobre SCSP, tramas 802.11, reutilización de aplicaciones, requisitos del ENS y Neo4j. Véase el [registro 1889](cambios-lote-1889.json). Queda pendiente el cotejo con la academia.
 
 **9.745 con revisión registrada**, incluidas 150 pendientes, y **2.378 sin revisar**.
+
+## Lote 1890 — 28 de noviembre de 2026
+
+Revisión de 9751–9755 sobre órganos de la AGE, discriminación directa, registro de tratamientos, principios ágiles y análisis forense. Véase el [registro 1890](cambios-lote-1890.json). Queda pendiente el cotejo con la academia.
+
+**9.750 con revisión registrada**, incluidas 150 pendientes, y **2.373 sin revisar**.
