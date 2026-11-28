@@ -23917,3 +23917,9 @@ Revisión de 9746–9750 sobre SCSP, tramas 802.11, reutilización de aplicacion
 Revisión de 9751–9755 sobre órganos de la AGE, discriminación directa, registro de tratamientos, principios ágiles y análisis forense. Véase el [registro 1890](cambios-lote-1890.json). Queda pendiente el cotejo con la academia.
 
 **9.750 con revisión registrada**, incluidas 150 pendientes, y **2.373 sin revisar**.
+
+## Lote 1891 — 28 de noviembre de 2026
+
+Revisión de 9756–9760 sobre REYES, FIRe, la versión del núcleo Linux, Android Oreo (Go edition) y transacciones NoSQL. Véase el [registro 1891](cambios-lote-1891.json). Queda pendiente el cotejo con la academia.
+
+**9.755 con revisión registrada**, incluidas 150 pendientes, y **2.368 sin revisar**.
