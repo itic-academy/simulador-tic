@@ -23905,3 +23905,9 @@ Revisión de 9736–9740 sobre IPv6, cliente-servidor, cartografía, mantenimien
 Revisión de 9741–9745 sobre IEEE 802.16, WFS, modelo entidad-relación, subcapa MAC y JAXP. Véase el [registro 1888](cambios-lote-1888.json). Queda pendiente el cotejo con la academia.
 
 **9.740 con revisión registrada**, incluidas 150 pendientes, y **2.383 sin revisar**.
+
+## Lote 1889 — 28 de noviembre de 2026
+
+Revisión de 9746–9750 sobre SCSP, tramas 802.11, reutilización de aplicaciones, requisitos del ENS y Neo4j. Véase el [registro 1889](cambios-lote-1889.json). Queda pendiente el cotejo con la academia.
+
+**9.745 con revisión registrada**, incluidas 150 pendientes, y **2.378 sin revisar**.
