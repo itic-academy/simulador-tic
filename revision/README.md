@@ -23995,3 +23995,9 @@ Revisión de 9811–9815 sobre RTT, Zigbee, IEEE 802.14, Ecma y la trama Etherne
 Revisión de 9816–9820 sobre pruebas unitarias, OCSP, sincronización de relojes, WAI y máquinas virtuales de Azure. Véase el [registro 1903](cambios-lote-1903.json). Queda pendiente el cotejo con la academia.
 
 **9.815 con revisión registrada**, incluidas 150 pendientes, y **2.308 sin revisar**.
+
+## Lote 1904 — 28 de noviembre de 2026
+
+Revisión de 9821–9825 sobre MAGERIT, TLS, IaaS, UEFI y el Pleno de la Comisión de Estrategia TIC. Véase el [registro 1904](cambios-lote-1904.json). Queda pendiente el cotejo con la academia.
+
+**9.820 con revisión registrada**, incluidas 150 pendientes, y **2.303 sin revisar**.
