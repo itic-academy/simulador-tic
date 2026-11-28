@@ -24079,3 +24079,9 @@ Revisión de 9881–9885 sobre formatos de firma, IMS, NAT, SSD-AAPP y el métod
 Revisión de 9886–9890 sobre acceso físico a CPD, metadatos comunes, AutenticA, OpenDocument y puentes Ethernet. Véase el [registro 1917](cambios-lote-1917.json). Queda pendiente el cotejo con la academia.
 
 **9.885 con revisión registrada**, incluidas 150 pendientes, y **2.238 sin revisar**.
+
+## Lote 1918 — 28 de noviembre de 2026
+
+Revisión de 9891–9895 sobre subsunción, burbuja puntocom, Europa Interoperable, cuentas Oracle y registros GSM. Véase el [registro 1918](cambios-lote-1918.json). Queda pendiente el cotejo con la academia.
+
+**9.890 con revisión registrada**, incluidas 150 pendientes, y **2.233 sin revisar**.
