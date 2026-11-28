@@ -23899,3 +23899,9 @@ Revisión de 9731–9735 sobre compatibilidad entre navegadores, PILAR, notifica
 Revisión de 9736–9740 sobre IPv6, cliente-servidor, cartografía, mantenimiento y EFQM. Véase el [registro 1887](cambios-lote-1887.json). Queda pendiente el cotejo con la academia.
 
 **9.735 con revisión registrada**, incluidas 150 pendientes, y **2.388 sin revisar**.
+
+## Lote 1888 — 28 de noviembre de 2026
+
+Revisión de 9741–9745 sobre IEEE 802.16, WFS, modelo entidad-relación, subcapa MAC y JAXP. Véase el [registro 1888](cambios-lote-1888.json). Queda pendiente el cotejo con la academia.
+
+**9.740 con revisión registrada**, incluidas 150 pendientes, y **2.383 sin revisar**.
