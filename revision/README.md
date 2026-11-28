@@ -23989,3 +23989,9 @@ Revisión de 9806–9810 sobre permisos por nacimiento, RTVE, ASP clásica, el m
 Revisión de 9811–9815 sobre RTT, Zigbee, IEEE 802.14, Ecma y la trama Ethernet. Véase el [registro 1902](cambios-lote-1902.json). Queda pendiente el cotejo con la academia.
 
 **9.810 con revisión registrada**, incluidas 150 pendientes, y **2.313 sin revisar**.
+
+## Lote 1903 — 28 de noviembre de 2026
+
+Revisión de 9816–9820 sobre pruebas unitarias, OCSP, sincronización de relojes, WAI y máquinas virtuales de Azure. Véase el [registro 1903](cambios-lote-1903.json). Queda pendiente el cotejo con la academia.
+
+**9.815 con revisión registrada**, incluidas 150 pendientes, y **2.308 sin revisar**.
