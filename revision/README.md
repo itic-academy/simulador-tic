@@ -23983,3 +23983,9 @@ Revisión de 9801–9805 sobre recepción de suministros, sucesión de interesad
 Revisión de 9806–9810 sobre permisos por nacimiento, RTVE, ASP clásica, el modelo en espiral e ITIL 4. Véase el [registro 1901](cambios-lote-1901.json). Queda pendiente el cotejo con la academia.
 
 **9.805 con revisión registrada**, incluidas 150 pendientes, y **2.318 sin revisar**.
+
+## Lote 1902 — 28 de noviembre de 2026
+
+Revisión de 9811–9815 sobre RTT, Zigbee, IEEE 802.14, Ecma y la trama Ethernet. Véase el [registro 1902](cambios-lote-1902.json). Queda pendiente el cotejo con la academia.
+
+**9.810 con revisión registrada**, incluidas 150 pendientes, y **2.313 sin revisar**.
