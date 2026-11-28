@@ -23977,3 +23977,9 @@ Revisión de 9796–9800 sobre mundos virtuales, vector distancia, X.28, CSMA/CD
 Revisión de 9801–9805 sobre recepción de suministros, sucesión de interesados, firma asistida, expedientes y registro de jornada. Véase el [registro 1900](cambios-lote-1900.json). Quedan pendientes el cotejo con la academia y el encaje oficial de la pregunta de jornada.
 
 **9.800 con revisión registrada**, incluidas 150 pendientes, y **2.323 sin revisar**.
+
+## Lote 1901 — 28 de noviembre de 2026
+
+Revisión de 9806–9810 sobre permisos por nacimiento, RTVE, ASP clásica, el modelo en espiral e ITIL 4. Véase el [registro 1901](cambios-lote-1901.json). Queda pendiente el cotejo con la academia.
+
+**9.805 con revisión registrada**, incluidas 150 pendientes, y **2.318 sin revisar**.
