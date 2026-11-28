@@ -23953,3 +23953,9 @@ Revisión de 9776–9780 sobre FACe, perfil de contratante, generación de créd
 Revisión de 9781–9785 sobre multilingüismo, PILAR, intermediación de datos, nube híbrida y GPO. Véase el [registro 1896](cambios-lote-1896.json). Queda pendiente el cotejo con la academia.
 
 **9.780 con revisión registrada**, incluidas 150 pendientes, y **2.343 sin revisar**.
+
+## Lote 1897 — 28 de noviembre de 2026
+
+Revisión de 9786–9790 sobre Angular, el ámbito de un bean en JSP, el manifiesto de un JAR, la inserción en Vector y XQuery. Véase el [registro 1897](cambios-lote-1897.json). Queda pendiente el cotejo con la academia.
+
+**9.785 con revisión registrada**, incluidas 150 pendientes, y **2.338 sin revisar**.
